@@ -25,7 +25,7 @@ manager: "wpickett"
 # Type of member &#39;&lt;membername&gt;&#39; is not CLS-compliant
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The data type specified for this member is not part of the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS). This is not an error within your component, because the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] and [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] support this data type. However, another component written in strictly CLS-compliant code might not support this data type. Such a component might not be able to interact successfully with your component.  
+The data type specified for this member is not part of the [Language Independence and Language-Independent Components](~/docs/standard/language-independence-and-language-independent-components.md) (CLS). This is not an error within your component, because the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] and [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] support this data type. However, another component written in strictly CLS-compliant code might not support this data type. Such a component might not be able to interact successfully with your component.  
   
  The following [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] data types are not CLS-compliant:  
   
@@ -52,5 +52,5 @@ The data type specified for this member is not part of the [Language Independenc
 -   If you are interfacing with Automation or COM objects, keep in mind that some types have different data widths than in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. For example, `uint` is often 16 bits in other environments. If you are passing a 16-bit argument to such a component, declare it as `UShort` instead of `UInteger` in your managed [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] code.  
   
 ## See Also  
- [Reflection](../Topic/Reflection%20in%20the%20.NET%20Framework.md)   
+ [Reflection](~/docs/framework/reflection-and-codedom/reflection.md)   
  [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

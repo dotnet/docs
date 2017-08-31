@@ -42,4 +42,4 @@ class Test
 ```  
   
 ## See Also  
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+ [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

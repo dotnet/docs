@@ -27,7 +27,7 @@ manager: "wpickett"
 
 A variable, property, or function return is declared with a data type that is not CLS-compliant.  
   
- For an application to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), it must use only CLS-compliant types.  
+ For an application to be compliant with the [Language Independence and Language-Independent Components](~/docs/standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types.  
   
  The following [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] data types are not CLS-compliant:  
   

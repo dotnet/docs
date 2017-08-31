@@ -84,7 +84,7 @@ Grouping is one of the most powerful capabilities of [!INCLUDE[vbteclinq](../../
 ## Compiling the Code  
  Copy and paste each method that you want to test into the `StudentClass` class. Add a calling statement for the method to the `Main` method and press F5.  
   
- When you adapt these methods to your own application, remember that LINQ requires version 3.5 or 4 of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], and that the project must contain a reference to System.Core.dll and a using directive for System.Linq. LINQ to SQL, LINQ to XML, and LINQ to DataSet types require additional using directives and references. For more information, see [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+ When you adapt these methods to your own application, remember that LINQ requires version 3.5 or 4 of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], and that the project must contain a reference to System.Core.dll and a using directive for System.Linq. LINQ to SQL, LINQ to XML, and LINQ to DataSet types require additional using directives and references. For more information, see [How to: Create a LINQ Project](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).  
   
 ## See Also  
  <xref:System.Linq.Enumerable.GroupBy%2A>   
@@ -94,4 +94,4 @@ Grouping is one of the most powerful capabilities of [!INCLUDE[vbteclinq](../../
  [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)   
  [How to: Perform a Subquery on a Grouping Operation](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md)   
  [How to: Create a Nested Group](../../../csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md)   
- [Grouping Data](../Topic/Grouping%20Data.md)
+ [Grouping Data](http://msdn.microsoft.com/library/43892bd5-1634-479c-8249-bb7525d87c5d)

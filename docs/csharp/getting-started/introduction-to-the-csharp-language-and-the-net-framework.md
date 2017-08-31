@@ -55,7 +55,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 -   For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
   
--   For more information about [!INCLUDE[vbteclinq](../../includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md).  
+-   For more information about [!INCLUDE[vbteclinq](../../includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
 -   To find the latest articles and resources from the Visual C# team, see the [Visual C# Developer Center](http://go.microsoft.com/fwlink/?LinkId=47811).  
   

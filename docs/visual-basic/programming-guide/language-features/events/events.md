@@ -114,6 +114,6 @@ While you might visualize a [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)
 |[How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)|Demonstrates how to define a custom event that allows its event handlers to be called asynchronously.|  
 |[How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|Demonstrates how to define a custom event that uses memory only when the event is handled.|  
 |[Troubleshooting Inherited Event Handlers in Visual Basic](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|Lists common issues that arise with event handlers in inherited components.|  
-|[Events](../Topic/Handling%20and%20Raising%20Events.md)|Provides an overview of the event model in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].|  
-|[Creating Event Handlers in Windows Forms](../Topic/Creating%20Event%20Handlers%20in%20Windows%20Forms.md)|Describes how to work with events associated with Windows Forms objects.|  
+|[Events](~/docs/standard/events/index.md)|Provides an overview of the event model in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].|  
+|[Creating Event Handlers in Windows Forms](~/docs/framework/winforms/creating-event-handlers-in-windows-forms.md)|Describes how to work with events associated with Windows Forms objects.|  
 |[Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)|Provides an overview of delegates in Visual Basic.|

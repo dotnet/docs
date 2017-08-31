@@ -20,7 +20,7 @@ manager: "wpickett"
 # Reflection (C#)
 [!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
 
-Reflection provides objects (of type <xref:System.Type>) that describe assemblies, modules and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using attributes in your code, reflection enables you to access them. For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+Reflection provides objects (of type <xref:System.Type>) that describe assemblies, modules and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using attributes in your code, reflection enables you to access them. For more information, see [Attributes](~/docs/standard/attributes/index.md).  
   
  Here's a simple example of reflection using the static method `GetType` - inherited by all types from the `Object` base class - to obtain the type of a variable:  
   
@@ -53,27 +53,27 @@ System.Console.WriteLine(info);
 ## Reflection Overview  
  Reflection is useful in the following situations:  
   
--   When you have to access attributes in your program's metadata. For more information, see [Retrieving Information Stored in Attributes](../Topic/Retrieving%20Information%20Stored%20in%20Attributes.md).  
+-   When you have to access attributes in your program's metadata. For more information, see [Retrieving Information Stored in Attributes](~/docs/standard/attributes/retrieving-information-stored-in-attributes.md).  
   
 -   For examining and instantiating types in an assembly.  
   
 -   For building new types at runtime. Use classes in <xref:System.Reflection.Emit>.  
   
--   For performing late binding, accessing methods on types created at run time. See the topic [Dynamically Loading and Using Types](../Topic/Dynamically%20Loading%20and%20Using%20Types.md).  
+-   For performing late binding, accessing methods on types created at run time. See the topic [Dynamically Loading and Using Types](~/docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
   
 ## Related Sections  
  For more information:  
   
--   [Reflection](../Topic/Reflection%20in%20the%20.NET%20Framework.md)  
+-   [Reflection](~/docs/framework/reflection-and-codedom/reflection.md)  
   
--   [Viewing Type Information](../Topic/Viewing%20Type%20Information.md)  
+-   [Viewing Type Information](~/docs/framework/reflection-and-codedom/viewing-type-information.md)  
   
--   [Reflection and Generic Types](../Topic/Reflection%20and%20Generic%20Types.md)  
+-   [Reflection and Generic Types](~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md)  
   
 -   <xref:System.Reflection.Emit>  
   
--   [Retrieving Information Stored in Attributes](../Topic/Retrieving%20Information%20Stored%20in%20Attributes.md)  
+-   [Retrieving Information Stored in Attributes](~/docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)
+ [Assemblies in the Common Language Runtime](~/docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

@@ -88,7 +88,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  Provides links to topics that describe how to use XML in Visual Basic.  
   
 ## Related Sections  
- [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
  Describes some of the types of collections that are provided by the .NET Framework. Demonstrates how to use simple collections and collections of key/value pairs.  
   
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  

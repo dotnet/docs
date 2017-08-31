@@ -96,9 +96,9 @@ In relational database terms, an *inner join* produces a result set in which eac
 ## See Also  
  <xref:System.Linq.Enumerable.Join%2A>   
  <xref:System.Linq.Enumerable.GroupJoin%2A>   
- [Join Operations](../Topic/Join%20Operations.md)   
+ [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)   
  [How to: Perform Grouped Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)   
  [How to: Perform Left Outer Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md)   
- [How to: Join Two Collections](../Topic/How%20to:%20Join%20Two%20Collections%20\(C%23\)%20\(LINQ%20to%20XML\).md)   
+ [How to: Join Two Collections](http://msdn.microsoft.com/library/c006ea6a-a93c-4cf7-9e79-0fc4fc397288)   
  [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)   
  [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

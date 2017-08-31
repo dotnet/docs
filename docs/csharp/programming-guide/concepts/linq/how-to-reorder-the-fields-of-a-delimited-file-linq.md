@@ -91,4 +91,4 @@ class CSVFiles
 ## See Also  
  [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)   
  [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)   
- [How to: Generate XML from CSV Files](../Topic/How%20to:%20Generate%20XML%20from%20CSV%20Files.md)
+ [How to: Generate XML from CSV Files](http://msdn.microsoft.com/library/dd7bab8c-96fa-4343-94d0-9739dd6a74fd)

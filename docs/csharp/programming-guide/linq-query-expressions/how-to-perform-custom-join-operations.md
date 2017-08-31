@@ -58,7 +58,7 @@ This example shows how to perform join operations that are not possible with the
   
 -   Replace the `Program` class with the code in the previous example.  
   
--   Follow the instructions in [How to: Join Content from Dissimilar Files (LINQ)](../Topic/How%20to:%20Join%20Content%20from%20Dissimilar%20Files%20\(LINQ\).md) to set up the data files, scores.csv and names.csv.  
+-   Follow the instructions in [How to: Join Content from Dissimilar Files (LINQ)](http://msdn.microsoft.com/library/9ce5ce84-b38f-4e48-bf15-382e7a488f0b) to set up the data files, scores.csv and names.csv.  
   
 -   Press F5 to compile and run the program.  
   
@@ -67,5 +67,5 @@ This example shows how to perform join operations that are not possible with the
 ## See Also  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [join clause](../../../csharp/language-reference/keywords/join-clause.md)   
- [Join Operations](../Topic/Join%20Operations.md)   
+ [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)   
  [How to: Order the Results of a Join Clause](../../../csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)

@@ -38,4 +38,4 @@ In the Visual Studio debugger, an expression specifies a procedure call, but the
  [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)   
  [How to: Stop Debugging or Stop Execution](http://msdn.microsoft.com/en-us/03c68f95-aa96-481b-990e-467e065453a5)   
  [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)   
- [Expressions in Visual Basic](../Topic/Expressions%20in%20Visual%20Basic.md)
+ [Expressions in Visual Basic](http://msdn.microsoft.com/library/f4d78220-b566-488f-8548-2976f1c3e429)

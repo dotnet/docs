@@ -24,17 +24,17 @@ When you include asynchronous code in your app, you should consider and possibly
   
  **In this topic**  
   
--   [Recognizing Reentrancy](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_RecognizingReentrancy)  
+-   [Recognizing Reentrancy](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
--   [Handling Reentrancy](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_HandlingReentrancy)  
+-   [Handling Reentrancy](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
-    -   [Disable the Start Button](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_DisableTheStartButton)  
+    -   [Disable the Start Button](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
-    -   [Cancel and Restart the Operation](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_CancelAndRestart)  
+    -   [Cancel and Restart the Operation](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
-    -   [Run Multiple Operations and Queue the Output](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_RunMultipleOperations)  
+    -   [Run Multiple Operations and Queue the Output](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
--   [Reviewing and Running the Example App](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMD_SettingUpTheExample)  
+-   [Reviewing and Running the Example App](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
 > [!NOTE]
 >  To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
@@ -94,20 +94,20 @@ TOTAL bytes returned:  890591
 TOTAL bytes returned:  890591  
 ```  
   
- You can review the code that produces this output by scrolling to the end of this topic. You can experiment with the code by downloading the solution to your local computer and then running the WebsiteDownload project or by using the code at the end of this topic to create your own project For more information and instructions, see [Reviewing and Running the Example App](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMD_SettingUpTheExample).  
+ You can review the code that produces this output by scrolling to the end of this topic. You can experiment with the code by downloading the solution to your local computer and then running the WebsiteDownload project or by using the code at the end of this topic to create your own project For more information and instructions, see [Reviewing and Running the Example App](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645).  
   
 ##  <a name="BKMK_HandlingReentrancy"></a> Handling Reentrancy  
  You can handle reentrancy in a variety of ways, depending on what you want your app to do. This topic presents the following examples:  
   
--   [Disable the Start Button](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_DisableTheStartButton)  
+-   [Disable the Start Button](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
      Disable the **Start** button while the operation is running so that the user can't interrupt it.  
   
--   [Cancel and Restart the Operation](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_CancelAndRestart)  
+-   [Cancel and Restart the Operation](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
      Cancel any operation that is still running when the user chooses the **Start** button again, and then let the most recently requested operation continue.  
   
--   [Run Multiple Operations and Queue the Output](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_RunMultipleOperations)  
+-   [Run Multiple Operations and Queue the Output](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
      Allow all requested operations to run asynchronously, but coordinate the display of output so that the results from each operation appear together and in order.  
   
@@ -145,7 +145,7 @@ End Sub
   
  For more information about cancellation, see [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md).  
   
- To set up this scenario, make the following changes to the basic code that is provided in [Reviewing and Running the Example App](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMD_SettingUpTheExample). You also can download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](http://go.microsoft.com/fwlink/?LinkId=266571). The name of this project is CancelAndRestart.  
+ To set up this scenario, make the following changes to the basic code that is provided in [Reviewing and Running the Example App](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645). You also can download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](http://go.microsoft.com/fwlink/?LinkId=266571). The name of this project is CancelAndRestart.  
   
 1.  Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that’s in scope for all methods.  
   
@@ -302,11 +302,11 @@ TOTAL bytes returned:  890591
  To eliminate the partial lists, uncomment the first line of code in `StartButton_Click` to clear the text box each time the user restarts the operation.  
   
 ###  <a name="BKMK_RunMultipleOperations"></a> Run Multiple Operations and Queue the Output  
- This third example is the most complicated in that the app starts another asynchronous operation each time that the user chooses the **Start** button, and all the operations run to completion. All the requested operations download websites from the list asynchronously, but the output from the operations is presented sequentially. That is, the actual downloading activity is interleaved, as the output in [Recognizing Reentrancy](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_RecognizingReentrancy) shows, but the list of results for each group is presented separately.  
+ This third example is the most complicated in that the app starts another asynchronous operation each time that the user chooses the **Start** button, and all the operations run to completion. All the requested operations download websites from the list asynchronously, but the output from the operations is presented sequentially. That is, the actual downloading activity is interleaved, as the output in [Recognizing Reentrancy](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645) shows, but the list of results for each group is presented separately.  
   
  The operations share a global <xref:System.Threading.Tasks.Task>, `pendingWork`, which serves as a gatekeeper for the display process.  
   
- You can run this example by pasting the changes into the code in [Building the App](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_BuildingTheApp), or you can follow the instructions in [Downloading the App](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_DownloadingTheApp) to download the sample and then run the QueueResults project.  
+ You can run this example by pasting the changes into the code in [Building the App](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645), or you can follow the instructions in [Downloading the App](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645) to download the sample and then run the QueueResults project.  
   
  The following output shows the result if the user chooses the **Start** button only once. The letter label, A, indicates that the result is from the first time the **Start** button is chosen. The numbers show the order of the URLs in the list of download targets.  
   
@@ -492,7 +492,7 @@ Private Async Function FinishOneGroupAsync(urls As List(Of String), contentTasks
 End Function  
 ```  
   
- You can run this example by pasting the changes into the code in [Building the App](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_BuildingTheApp), or you can follow the instructions in [Downloading the App](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_DownloadingTheApp) to download the sample, and then run the QueueResults project.  
+ You can run this example by pasting the changes into the code in [Building the App](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645), or you can follow the instructions in [Downloading the App](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645) to download the sample, and then run the QueueResults project.  
   
 #### Points of Interest  
  The information lines that start with a pound sign (#) in the output clarify how this example works.  
@@ -693,7 +693,7 @@ End Function
   
 11. Choose the CTRL+F5 keys to run the program, and then choose the **Start** button several times.  
   
-12. Make the changes from [Disable the Start Button](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_DisableTheStartButton), [Cancel and Restart the Operation](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_CancelAndRestart), or [Run Multiple Operations and Queue the Output](../Topic/Handling%20Reentrancy%20in%20Async%20Apps%20\(C%23%20and%20Visual%20Basic\).md#BKMK_RunMultipleOperations) to handle the reentrancy.  
+12. Make the changes from [Disable the Start Button](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645), [Cancel and Restart the Operation](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645), or [Run Multiple Operations and Queue the Output](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645) to handle the reentrancy.  
   
 ## See Also  
  [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   

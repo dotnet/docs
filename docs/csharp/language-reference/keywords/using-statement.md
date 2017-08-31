@@ -54,5 +54,5 @@ Provides a convenient syntax that ensures the correct use of <xref:System.IDispo
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [using Directive](../../../csharp/language-reference/keywords/using-directive.md)   
- [Garbage Collection](../Topic/Garbage%20Collection.md)   
- [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md)
+ [Garbage Collection](~/docs/standard/garbage-collection/index.md)   
+ [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md)

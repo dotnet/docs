@@ -37,9 +37,9 @@ Specifies that a function or `Get` accessor is an iterator.
   
  An iterator cannot occur in an event, instance constructor, static constructor, or static destructor.  
   
- An iterator can be an anonymous function. For more information, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ An iterator can be an anonymous function. For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
- For more information about iterators, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about iterators, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
 ## Usage  
  The `Iterator` modifier can be used in these contexts:  
@@ -58,9 +58,9 @@ Specifies that a function or `Get` accessor is an iterator.
   
  [!code-vb[VbVbalrStatements#99](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
- For additional examples, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ For additional examples, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>   
- [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
  [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)

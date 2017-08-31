@@ -222,7 +222,7 @@ End Sub
   
  An `Async` procedure can't declare any [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) parameters.  
   
- For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md), [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md), and [Async Return Types](../Topic/Async%20Return%20Types%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7), [Control Flow in Async Programs](http://msdn.microsoft.com/library/1128936d-d012-48e6-a7a5-cf199eed6fff), and [Async Return Types](http://msdn.microsoft.com/library/e9252062-12ac-42d5-b897-849a6aca2ee4).  
   
 ## Example  
  The following example uses the `Sub` statement to define the name, parameters, and code that form the body of a `Sub` procedure.  

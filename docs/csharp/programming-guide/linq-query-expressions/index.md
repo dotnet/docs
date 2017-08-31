@@ -46,13 +46,13 @@ manager: "wpickett"
   
 -   A query is not executed until you iterate over the query variable in a `foreach` statement. For more information, see [Introduction to LINQ Queries (C#)](../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
--   At compile time, query expressions are converted to Standard Query Operator method calls according to the rules set forth in the C# specification. Any query that can be expressed by using query syntax can also be expressed by using method syntax. However, in most cases query syntax is more readable and concise. For more information, see [C# Language Specification](../../../csharp/language-reference/language-specification.md) and [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md).  
+-   At compile time, query expressions are converted to Standard Query Operator method calls according to the rules set forth in the C# specification. Any query that can be expressed by using query syntax can also be expressed by using method syntax. However, in most cases query syntax is more readable and concise. For more information, see [C# Language Specification](../../../csharp/language-reference/language-specification.md) and [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
   
 -   As a rule when you write [!INCLUDE[vbteclinq](../../../includes/vbteclinq-md.md)] queries, we recommend that you use query syntax whenever possible and method syntax whenever necessary. There is no semantic or performance difference between the two different forms. Query expressions are often more readable than equivalent expressions written in method syntax.  
   
 -   Some query operations, such as <xref:System.Linq.Enumerable.Count%2A> or <xref:System.Linq.Enumerable.Max%2A>, have no equivalent query expression clause and must therefore be expressed as a method call. Method syntax can be combined with query syntax in various ways. For more information, see [Query Syntax and Method Syntax in LINQ](../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md).  
   
--   Query expressions can be compiled to expression trees or to delegates, depending on the type that the query is applied to. <xref:System.Collections.Generic.IEnumerable%601> queries are compiled to delegates. <xref:System.Linq.IQueryable> and <xref:System.Linq.IQueryable%601> queries are compiled to expression trees. For more information, see [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md).  
+-   Query expressions can be compiled to expression trees or to delegates, depending on the type that the query is applied to. <xref:System.Collections.Generic.IEnumerable%601> queries are compiled to delegates. <xref:System.Linq.IQueryable> and <xref:System.Linq.IQueryable%601> queries are compiled to expression trees. For more information, see [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b).  
   
  The following table lists topics that provide additional information about queries and code examples for common tasks.  
   
@@ -61,7 +61,7 @@ manager: "wpickett"
 |[Query Expression Basics](../../../csharp/programming-guide/linq-query-expressions/query-expression-basics.md)|Introduces fundamental query concepts and provides examples of C# query syntax.|  
 |[How to: Write LINQ Queries in C#](../../../csharp/programming-guide/linq-query-expressions/how-to-write-linq-queries.md)|Provides examples of several basic types of query expressions.|  
 |[How to: Handle Exceptions in Query Expressions](../../../csharp/programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md)|How and when to move potential exception-throwing code outside a query expression.|  
-|[How to: Populate Object Collections from Multiple Sources (LINQ)](../Topic/How%20to:%20Populate%20Object%20Collections%20from%20Multiple%20Sources%20\(LINQ\).md)|How to use the `select` statement to merge data from different sources into a new type.|  
+|[How to: Populate Object Collections from Multiple Sources (LINQ)](http://msdn.microsoft.com/library/a9972a9c-e7c1-41d4-8b33-911cbe3c82ad)|How to use the `select` statement to merge data from different sources into a new type.|  
 |[How to: Group Query Results](../../../csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md)|Shows different ways to use the `group` clause.|  
 |[How to: Create a Nested Group](../../../csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md)|Shows how to create nested groups.|  
 |[How to: Perform a Subquery on a Grouping Operation](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md)|Shows how to use a sub-expression in a query as a data source for a new query.|  
@@ -79,11 +79,11 @@ manager: "wpickett"
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Walkthrough: Writing Queries in C#](../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)   
  [Basic LINQ Query Operations](../../../csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)   
  [Query Syntax and Method Syntax in LINQ](../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md)   
- [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md)   
+ [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)   
  [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
  [How Linq to Objects Queries Work](http://go.microsoft.com/fwlink/?LinkId=112389)   
  [Reading and Writing Queries](http://go.microsoft.com/fwlink/?LinkId=112391)   

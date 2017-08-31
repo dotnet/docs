@@ -96,7 +96,7 @@ int numCount = numbers.Where(n => n < 3 || n > 7).Count();
 ```  
   
 ## See Also  
- [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Walkthrough: Writing Queries in C#](../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [where clause](../../../csharp/language-reference/keywords/where-clause.md)

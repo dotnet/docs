@@ -31,7 +31,7 @@ For generic type parameters, the `out` keyword specifies that the type parameter
   
  A covariant delegate can be assigned another delegate of the same type, but with a more derived generic type parameter.  
   
- For more information, see [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information, see [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8).  
   
 ## Example  
  The following example shows how to declare, extend, and implement a covariant generic interface. It also shows how to use implicit conversion for classes that implement a covariant interface.  
@@ -43,7 +43,7 @@ For generic type parameters, the `out` keyword specifies that the type parameter
 -   The type parameter is used only as a return type of interface methods and not used as a type of method arguments.  
   
     > [!NOTE]
-    >  There is one exception to this rule. If in a covariant interface you have a contravariant generic delegate as a method parameter, you can use the covariant type as a generic type parameter for this delegate. For more information about covariant and contravariant generic delegates, see [Variance in Delegates](../Topic/Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md) and [Using Variance for Func and Action Generic Delegates](../Topic/Using%20Variance%20for%20Func%20and%20Action%20Generic%20Delegates%20\(C%23%20and%20Visual%20Basic\).md).  
+    >  There is one exception to this rule. If in a covariant interface you have a contravariant generic delegate as a method parameter, you can use the covariant type as a generic type parameter for this delegate. For more information about covariant and contravariant generic delegates, see [Variance in Delegates](http://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca) and [Using Variance for Func and Action Generic Delegates](http://msdn.microsoft.com/library/e69c4f39-09aa-4c6d-a752-08cc767d8290).  
   
 -   The type parameter is not used as a generic constraint for the interface methods.  
   
@@ -58,6 +58,6 @@ For generic type parameters, the `out` keyword specifies that the type parameter
  [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
- [Variance in Generic Interfaces](../Topic/Variance%20in%20Generic%20Interfaces%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Variance in Generic Interfaces](http://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a)   
  [in](../../../csharp/language-reference/keywords/in-generic-modifier.md)   
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

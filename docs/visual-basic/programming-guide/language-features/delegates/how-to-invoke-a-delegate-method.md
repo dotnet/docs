@@ -56,4 +56,4 @@ This example shows how to associate a method with a delegate and then invoke tha
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
  [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
  [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)   
- [Multithreaded Applications](../Topic/Multithreaded%20Applications%20\(C%23%20and%20Visual%20Basic\).md)
+ [Multithreaded Applications](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6)

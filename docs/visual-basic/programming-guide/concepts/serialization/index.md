@@ -66,7 +66,7 @@ Serialization is the process of converting an object into a stream of bytes in o
  If you want your object to be deserialized in a custom manner as well, you must use a custom constructor.  
   
 ## Designer Serialization  
- Designer serialization is a special form of serialization that involves the kind of object persistence usually associated with development tools. Designer serialization is the process of converting an object graph into a source file that can later be used to recover the object graph. A source file can contain code, markup, or even SQL table information. For more information, see [Designer Serialization Overview](../Topic/Designer%20Serialization%20Overview.md).  
+ Designer serialization is a special form of serialization that involves the kind of object persistence usually associated with development tools. Designer serialization is the process of converting an object graph into a source file that can later be used to recover the object graph. A source file can contain code, markup, or even SQL table information. For more information, see [Designer Serialization Overview](http://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a).  
   
 ##  <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
  [Walkthrough: Persisting an Object in Visual Studio (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md)  

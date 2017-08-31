@@ -53,7 +53,7 @@ join...on new {Name = o.CustomerName, ID = o.CustID} equals
   
 -   To compile and run this code, follow these steps:  
   
--   Open [How to: Connect to the Northwind Database](../Topic/How%20to:%20Connect%20to%20the%20Northwind%20Database.md) and follow the instructions to set up the project and create the database connection. For more information, see [How to: Install Sample Databases](../Topic/How%20to:%20Install%20Sample%20Databases.md).  
+-   Open [How to: Connect to the Northwind Database](http://msdn.microsoft.com/library/cc6cb79f-d035-41f8-b398-8d4a45922bfb) and follow the instructions to set up the project and create the database connection. For more information, see [How to: Install Sample Databases](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e).  
   
 -   In samples.cs, create a new empty method that takes a Northwind input parameter named db (similar to the other methods in that file). Paste the code from this example into the method body.  
   

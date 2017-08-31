@@ -27,7 +27,7 @@ manager: "wpickett"
 
 You can format numeric results by using the <xref:System.String.Format%2A?displayProperty=fullName> method, or through the <xref:System.Console.Write%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName> method, which calls `String.Format`. The format is specified by using format strings. The following table contains the supported standard format strings. The format string takes the following form: `Axx`, where `A` is the format specifier and `xx` is the precision specifier. The format specifier controls the type of formatting applied to the numeric value, and the precision specifier controls the number of significant digits or decimal places of the formatted output. The value of the precision specifier ranges from 0 to 99.  
   
- For more information about standard and custom formatting strings, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md). For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=fullName>.  
+ For more information about standard and custom formatting strings, see [Formatting Types](~/docs/standard/base-types/formatting-types.md). For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=fullName>.  
   
 |Format Specifier|Description|Examples|Output|  
 |----------------------|-----------------|--------------|------------|  
@@ -42,6 +42,6 @@ You can format numeric results by using the <xref:System.String.Format%2A?displa
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md)   
+ [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md)   
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)   
  [string](../../../csharp/language-reference/keywords/string.md)

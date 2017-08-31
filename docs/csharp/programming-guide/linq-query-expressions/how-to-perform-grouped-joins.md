@@ -44,7 +44,7 @@ The group join is useful for producing hierarchical data structures. It pairs ea
 ## Example  
   
 ### Group Join to Create XML Example  
- Group joins are ideal for creating XML by using [!INCLUDE[sqltecxlinq](../../../includes/sqltecxlinq-md.md)]. The following example is similar to the previous example except that instead of creating anonymous types, the result selector function creates XML elements that represent the joined objects. For more information about [!INCLUDE[sqltecxlinq](../../../includes/sqltecxlinq-md.md)], see [LINQ to XML](../Topic/LINQ%20to%20XML.md).  
+ Group joins are ideal for creating XML by using [!INCLUDE[sqltecxlinq](../../../includes/sqltecxlinq-md.md)]. The following example is similar to the previous example except that instead of creating anonymous types, the result selector function creates XML elements that represent the joined objects. For more information about [!INCLUDE[sqltecxlinq](../../../includes/sqltecxlinq-md.md)], see [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13).  
   
  [!code-csharp[CsLINQProgJoining#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQProgJoining/CS/joins.cs#6)]  
   
@@ -63,9 +63,9 @@ The group join is useful for producing hierarchical data structures. It pairs ea
 ## See Also  
  <xref:System.Linq.Enumerable.Join%2A>   
  <xref:System.Linq.Enumerable.GroupJoin%2A>   
- [Join Operations](../Topic/Join%20Operations.md)   
+ [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)   
  [How to: Perform Inner Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md)   
  [How to: Perform Left Outer Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md)   
- [LINQ to XML](../Topic/LINQ%20to%20XML.md)   
+ [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)   
  [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)   
  [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

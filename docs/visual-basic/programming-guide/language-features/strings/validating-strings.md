@@ -42,4 +42,4 @@ This section discusses how to validate strings in [!INCLUDE[vbprvb](../../../../
   
 ## See Also  
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)   
- [MaskedTextBox Control](../Topic/MaskedTextBox%20Control%20\(Windows%20Forms\).md)
+ [MaskedTextBox Control](~/docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)

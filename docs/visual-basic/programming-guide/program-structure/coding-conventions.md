@@ -36,7 +36,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ## Naming Conventions  
   
--   For information about naming guidelines, see [Naming Guidelines](../Topic/Naming%20Guidelines.md) topic.  
+-   For information about naming guidelines, see [Naming Guidelines](~/docs/standard/design-guidelines/naming-guidelines.md) topic.  
   
 -   Do not use "My" or "my" as part of a variable name. This practice creates confusion with the `My` objects.  
   
@@ -216,4 +216,4 @@ Microsoft develops samples and documentation that follow the guidelines in this 
      [!code-vb[VbVbalrGuidelines#34](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#34)]  
   
 ## See Also  
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)
+ [Secure Coding Guidelines](~/docs/standard/security/secure-coding-guidelines.md)

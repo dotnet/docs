@@ -75,7 +75,7 @@ End Class
 ## See Also  
  <xref:System.Reflection>   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Writing Custom Attributes](../Topic/Writing%20Custom%20Attributes.md)   
+ [Writing Custom Attributes](~/docs/standard/attributes/writing-custom-attributes.md)   
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
  [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes-visual-basic.md)   
  [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)   

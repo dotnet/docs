@@ -64,5 +64,5 @@ End Sub
 ```  
   
 ## See Also  
- [Events](../Topic/Handling%20and%20Raising%20Events.md)   
- [Event Handlers Overview](../Topic/Event%20Handlers%20Overview%20\(Windows%20Forms\).md)
+ [Events](~/docs/standard/events/index.md)   
+ [Event Handlers Overview](~/docs/framework/winforms/event-handlers-overview-windows-forms.md)

@@ -37,7 +37,7 @@ For many applications, you want to create and manage groups of related objects. 
   
 -   [Using a Simple Collection](#BKMK_SimpleCollection)  
   
--   [Kinds of Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md#BKMK_KindsOfCollections)  
+-   [Kinds of Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
   
     -   [System.Collections.Generic Classes](#BKMK_Generic)  
   
@@ -206,12 +206,12 @@ End Class
 |<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|  
 |<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|  
   
- For additional information, see [Commonly Used Collection Types](../Topic/Commonly%20Used%20Collection%20Types.md), [Selecting a Collection Class](../Topic/Selecting%20a%20Collection%20Class.md), and <xref:System.Collections.Generic?displayProperty=fullName>.  
+ For additional information, see [Commonly Used Collection Types](~/docs/standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](~/docs/standard/collections/selecting-a-collection-class.md), and <xref:System.Collections.Generic?displayProperty=fullName>.  
   
 ###  <a name="BKMK_Concurrent"></a> System.Collections.Concurrent Classes  
  In the .NET Framework 4 or newer, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.  
   
- The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../Topic/Thread-Safe%20Collections.md) and <xref:System.Collections.Concurrent>.  
+ The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](~/docs/standard/collections/thread-safe/index.md) and <xref:System.Collections.Concurrent>.  
   
  Some classes included in the <xref:System.Collections.Concurrent> namespace are <xref:System.Collections.Concurrent.BlockingCollection%601>, <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, and <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
   
@@ -465,7 +465,7 @@ End Class
 ##  <a name="BKMK_CustomCollection"></a> Defining a Custom Collection  
  You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [Enumerating a Collection](http://msdn.microsoft.com/en-us/71807ea7-9180-48a6-916f-35a5251d477f).  
   
- Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md#BKMK_KindsOfCollections) earlier in this topic.  
+ Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b) earlier in this topic.  
   
  The following example defines a custom collection class named `AllColors`. This class implements the <xref:System.Collections.IEnumerable> interface, which requires that the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method be implemented.  
   
@@ -575,9 +575,9 @@ End Function
  [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)   
- [Parallel LINQ (PLINQ)](../Topic/Parallel%20LINQ%20\(PLINQ\).md)   
- [Collections and Data Structures](../Topic/Collections%20and%20Data%20Structures.md)   
+ [Parallel LINQ (PLINQ)](~/docs/standard/parallel-programming/parallel-linq-plinq.md)   
+ [Collections and Data Structures](~/docs/standard/collections/index.md)   
  [Creating and Manipulating Collections](http://msdn.microsoft.com/en-us/2065398e-eb1a-4821-9188-75f16e42e069)   
- [Selecting a Collection Class](../Topic/Selecting%20a%20Collection%20Class.md)   
- [Comparisons and Sorts Within Collections](../Topic/Comparisons%20and%20Sorts%20Within%20Collections.md)   
- [When to Use Generic Collections](../Topic/When%20to%20Use%20Generic%20Collections.md)
+ [Selecting a Collection Class](~/docs/standard/collections/selecting-a-collection-class.md)   
+ [Comparisons and Sorts Within Collections](~/docs/standard/collections/comparisons-and-sorts-within-collections.md)   
+ [When to Use Generic Collections](~/docs/standard/collections/when-to-use-generic-collections.md)

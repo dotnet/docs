@@ -206,10 +206,10 @@ End Class
 ####  <a name="Destructors"></a> Destructors  
  Destructors are used to destruct instances of classes. In the .NET Framework, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need destructors to clean up any unmanaged resources that your application creates. There can be only one destructor for a class.  
   
- For more information about destructors and garbage collection in the .NET Framework, see [Garbage Collection](../Topic/Garbage%20Collection.md).  
+ For more information about destructors and garbage collection in the .NET Framework, see [Garbage Collection](~/docs/standard/garbage-collection/index.md).  
   
 ####  <a name="Events"></a> Events  
- Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+ Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](~/docs/standard/events/index.md).  
   
 -   To declare events, use the [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
   
@@ -419,7 +419,7 @@ sampleObject.Field = "Sample string"
   
  For more information, see:  
   
--   [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)  
+-   [Generics](~/docs/standard/generics/index.md)  
   
 -   [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
   
@@ -427,7 +427,7 @@ sampleObject.Field = "Sample string"
  A *delegate* is a type that defines a method signature, and can provide a reference to any method with a compatible signature. You can invoke (or call) the method through the delegate. Delegates are used to pass methods as arguments to other methods.  
   
 > [!NOTE]
->  Event handlers are nothing more than methods that are invoked through delegates. For more information about using delegates in event handling, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+>  Event handlers are nothing more than methods that are invoked through delegates. For more information about using delegates in event handling, see [Events](~/docs/standard/events/index.md).  
   
  To create a delegate:  
   

@@ -64,7 +64,7 @@ Specifies which version of the common language runtime (CLR) can run the assembl
   
  The **anycpu32bitpreferred** setting is valid only for executable (.EXE) files, and it requires the .NET Framework 4.5.  
   
- For more information about developing an application to run on a Windows 64-bit operating system, see [64-bit Applications](../Topic/64-bit%20Applications.md).  
+ For more information about developing an application to run on a Windows 64-bit operating system, see [64-bit Applications](~/docs/framework/64-bit-apps.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

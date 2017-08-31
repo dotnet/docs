@@ -48,7 +48,7 @@ Causes the compiler to generate debugging information and place it in the output
   
  By default, debugging information is not emitted (`/debug-`). To emit debugging information, specify `/debug` or `/debug+`.  
   
- For information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../Topic/Making%20an%20Image%20Easier%20to%20Debug.md).  
+ For information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](~/docs/framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   
 ||  
 |-|  

@@ -39,4 +39,4 @@ Specifies that an attribute at the beginning of a source file applies to the ent
   
 ## See Also  
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+ [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

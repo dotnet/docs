@@ -34,4 +34,4 @@ A strong-named assembly could not be created from the specified key file.
 1.  Verify that the correct key file has been specified, and that it is not locked by another application.  
   
 ## See Also  
- [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md)
+ [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md)

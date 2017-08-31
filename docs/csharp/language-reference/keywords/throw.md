@@ -37,7 +37,7 @@ class MyException : System.Exception {}
 throw new MyException();  
 ```  
   
- Usually the `throw` statement is used with `try-catch` or `try-finally` statements.  A [throw](../../../csharp/language-reference/keywords/throw.md) statement can be used in a `catch` block to re-throw the exception that the `catch` block caught.  In this case, the [throw](../../../csharp/language-reference/keywords/throw.md) statement does not take an exception operand.  For more information and examples, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [How to: Explicitly Throw Exceptions](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md).  
+ Usually the `throw` statement is used with `try-catch` or `try-finally` statements.  A [throw](../../../csharp/language-reference/keywords/throw.md) statement can be used in a `catch` block to re-throw the exception that the `catch` block caught.  In this case, the [throw](../../../csharp/language-reference/keywords/throw.md) statement does not take an exception operand.  For more information and examples, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [How to: Explicitly Throw Exceptions](~/docs/standard/exceptions/how-to-explicitly-throw-exceptions.md).  
   
 ## Example  
  This example demonstrates how to throw an exception using the `throw` statement.  
@@ -45,7 +45,7 @@ throw new MyException();
  [!code-csharp[csrefKeywordsExceptions#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#5)]  
   
 ## Code Example  
- See the examples in [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [How to: Explicitly Throw Exceptions](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md).  
+ See the examples in [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [How to: Explicitly Throw Exceptions](~/docs/standard/exceptions/how-to-explicitly-throw-exceptions.md).  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
@@ -57,4 +57,4 @@ throw new MyException();
  [The try, catch, and throw Statements in C++](../../../csharp/language-reference/keywords/try-catch.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
- [How to: Explicitly Throw Exceptions](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)
+ [How to: Explicitly Throw Exceptions](~/docs/standard/exceptions/how-to-explicitly-throw-exceptions.md)

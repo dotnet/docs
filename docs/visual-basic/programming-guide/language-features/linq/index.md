@@ -56,9 +56,9 @@ This section contains overviews, examples, and background information that will 
  Provides an example of how to return the results of a LINQ query as a specific type instead of as an anonymous type.  
   
 ## See Also  
- [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
- [LINQ to DataSet Overview](../Topic/LINQ%20to%20DataSet%20Overview.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [LINQ Samples](../Topic/LINQ%20Samples.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)
+ [LINQ to DataSet Overview](~/docs/framework/data/adonet/linq-to-dataset-overview.md)   
+ [LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)   
+ [LINQ Samples](http://msdn.microsoft.com/library/5d7a4189-fb3f-49ef-924f-8625b132ec77)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)

@@ -104,5 +104,5 @@ End SyncLock
 ## See Also  
  <xref:System.Threading>   
  <xref:System.Threading.Monitor>   
- [Thread Synchronization](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md)   
- [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md)
+ [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4)   
+ [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)

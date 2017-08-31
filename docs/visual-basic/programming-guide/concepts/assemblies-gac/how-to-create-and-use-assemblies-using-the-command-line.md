@@ -130,4 +130,4 @@ vbc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.vb
 ## See Also  
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache-visual-basic.md)   
- [Creating a Class to Hold DLL Functions](../Topic/Creating%20a%20Class%20to%20Hold%20DLL%20Functions.md)
+ [Creating a Class to Hold DLL Functions](~/docs/framework/interop/creating-a-class-to-hold-dll-functions.md)

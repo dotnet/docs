@@ -34,4 +34,4 @@ In C# 2.0 and later, single-dimensional arrays that have a lower bound of zero a
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Generics](../../../csharp/programming-guide/generics/index.md)   
  [Arrays](../../../csharp/programming-guide/arrays/index.md)   
- [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)
+ [Generics](~/docs/standard/generics/index.md)

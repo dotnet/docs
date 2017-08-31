@@ -33,13 +33,13 @@ The [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] compiler calls the Assemb
   
 1.  Examine the quoted error message and consult the topic [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b) for further explanation and advice.  
   
-2.  Try signing the assembly manually, using either the [Al.exe (Assembly Linker)](../Topic/Al.exe%20\(Assembly%20Linker\).md) or the [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md).  
+2.  Try signing the assembly manually, using either the [Al.exe (Assembly Linker)](~/docs/framework/tools/al-exe-assembly-linker.md) or the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md).  
   
 3.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ### To sign the assembly manually  
   
-1.  Use the [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) to create a public/private key pair file.  
+1.  Use the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md) to create a public/private key pair file.  
   
      This file has a .snk extension.  
   
@@ -66,8 +66,8 @@ The [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] compiler calls the Assemb
 6.  In [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], add a .NET Assembly reference to the file you just created.  
   
 ## See Also  
- [Al.exe (Assembly Linker)](../Topic/Al.exe%20\(Assembly%20Linker\).md)   
+ [Al.exe (Assembly Linker)](~/docs/framework/tools/al-exe-assembly-linker.md)   
  [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
- [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md)   
- [How to: Create a Public-Private Key Pair](../Topic/How%20to:%20Create%20a%20Public-Private%20Key%20Pair.md)   
+ [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md)   
+ [How to: Create a Public-Private Key Pair](~/docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)   
  [Talk to Us](/visual-studio/ide/talk-to-us)

@@ -29,7 +29,7 @@ You can use the `My.Application.Log` and `My.Log` objects to write information a
   
  You cannot write to the Security log. In order to write to the System log, you must be a member of the LocalSystem or Administrator account.  
   
- To view an event log, you can use **Server Explorer** or **Windows Event Viewer**. For more information, see [ETW Events in the .NET Framework](../Topic/ETW%20Events%20in%20the%20.NET%20Framework.md).  
+ To view an event log, you can use **Server Explorer** or **Windows Event Viewer**. For more information, see [ETW Events in the .NET Framework](~/docs/framework/performance/etw-events.md).  
   
 > [!NOTE]
 >  Event logs are not supported on Windows 95, Windows 98, or Windows Millennium Edition.  

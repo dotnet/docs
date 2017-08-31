@@ -40,6 +40,6 @@ The [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] compiler calls the Assemb
 ## See Also  
  [How to: Sign an Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
  [Signing Page, Project Designer](/visual-studio/ide/reference/signing-page-project-designer)   
- [Al.exe (Assembly Linker)](../Topic/Al.exe%20\(Assembly%20Linker\).md)   
+ [Al.exe (Assembly Linker)](~/docs/framework/tools/al-exe-assembly-linker.md)   
  [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
  [Talk to Us](/visual-studio/ide/talk-to-us)

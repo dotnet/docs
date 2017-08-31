@@ -27,16 +27,16 @@ manager: "wpickett"
 This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] class library.  
   
 ## Related Sections  
- [Getting Started](../Topic/Getting%20Started%20with%20the%20.NET%20Framework.md)  
+ [Getting Started](~/docs/framework/get-started/index.md)  
  Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   
- [Class Library Overview](../Topic/.NET%20Framework%20Class%20Library%20Overview.md)  
+ [Class Library Overview](~/docs/standard/class-library-overview.md)  
  Introduces the classes, interfaces, and value types that help expedite and optimize the development process and provide access to system functionality.  
   
- [Development Guide](../Topic/.NET%20Framework%20Development%20Guide.md)  
+ [Development Guide](~/docs/framework/development-guide.md)  
  Provides a guide to all key technology areas and tasks for application development, including creating, configuring, debugging, securing, and deploying your application. This topic also provides information about dynamic programming, interoperability, extensibility, memory management, and threading.  
   
- [Tools](../Topic/.NET%20Framework%20Tools.md)  
+ [Tools](~/docs/framework/tools/index.md)  
  Describes the tools that you can use to develop, configure, and deploy applications by using .NET Framework technologies.  
   
  [.NET Framework Samples](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)  

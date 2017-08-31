@@ -68,5 +68,5 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
   
 ## See Also  
  <xref:System.IO>   
- [LINQ and File Directories](../Topic/LINQ%20and%20File%20Directories.md)   
+ [LINQ and File Directories](http://msdn.microsoft.com/library/5a5d516c-0279-4a84-ac84-b87f54caa808)   
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)

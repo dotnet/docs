@@ -39,10 +39,10 @@ Visual Basic settings are designed to optimize the user experience and to maximi
 |[Output Window](/visual-studio/ide/reference/output-window)|Yes, when build starts.||  
 |[Properties Window](/visual-studio/ide/reference/properties-window)|Yes||  
 |`Solution Explorer`|Yes||  
-|[Server Explorer](../Topic/Server%20Explorer.md)|No|Displays data connections and available system services.|  
+|[Server Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)|No|Displays data connections and available system services.|  
 |[Start Page](/visual-studio/ide/customizing-the-start-page-for-visual-studio)|Yes|Appears the first time you start the IDE. You can customize it.|  
 |[\<Pave Over> Task List (Visual Studio)](http://msdn.microsoft.com/en-us/ce97c0e2-5011-499a-b60a-dc5b9cc22654)|Yes, when compile errors or warnings exist.||  
-|[Team Explorer](../Topic/Connect%20to%20team%20projects%20in%20Team%20Foundation%20Server.md)|Yes|You can use Team Explorer to access your team projects and use the application lifecycle management features of Team Foundation. These include version control, builds, project management, integrated reports, and dashboards.|  
+|[Team Explorer](http://msdn.microsoft.com/library/1372e56c-b34f-42c2-b72c-94b57620c75c)|Yes|You can use Team Explorer to access your team projects and use the application lifecycle management features of Team Foundation. These include version control, builds, project management, integrated reports, and dashboards.|  
 |[Toolbox](/visual-studio/ide/reference/toolbox)|Yes|Displays controls and components in alphabetical order.|  
   
  In addition, the following elements have certain behaviors enabled when you select **Visual Basic Development Settings**.  

@@ -153,5 +153,5 @@ Fibonacci(27) = 196418
  <xref:System.Threading.ManualResetEvent>   
  [Thread Pooling (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)   
  [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)   
- [Monitors](../Topic/Monitors.md)   
- [Security](../Topic/Security%20in%20the%20.NET%20Framework.md)
+ [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)   
+ [Security](~/docs/standard/security/index.md)

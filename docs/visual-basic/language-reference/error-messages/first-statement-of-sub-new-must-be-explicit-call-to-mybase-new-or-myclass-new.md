@@ -40,4 +40,4 @@ A class constructor does not explicitly call a base class constructor, and the i
 2.  Include a call to `MyBase.New()` or `MyClass.New()` as the first statement of the `Sub New` in the derived class.  
   
 ## See Also  
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+ [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -46,4 +46,4 @@ This example shows how to order the results of a join operation. Note that the o
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [orderby clause](../../../csharp/language-reference/keywords/orderby-clause.md)   
  [join clause](../../../csharp/language-reference/keywords/join-clause.md)   
- [Join Operations](../Topic/Join%20Operations.md)
+ [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)

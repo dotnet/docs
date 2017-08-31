@@ -103,5 +103,5 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)   
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

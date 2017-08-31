@@ -22,7 +22,7 @@ manager: "wpickett"
 
 LINQ can be used to query and transform strings and collections of strings. It can be especially useful with semi-structured data in text files. LINQ queries can be combined with traditional string functions and regular expressions. For example, you can use the <xref:System.String.Split%2A> or <xref:System.Text.RegularExpressions.Regex.Split%2A> method to create an array of strings that you can then query or modify by using LINQ. You can use the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> method in the `where` clause of a LINQ query. And you can use LINQ to query or modify the <xref:System.Text.RegularExpressions.MatchCollection> results returned by a regular expression.  
   
- You can also use the techniques described in this section to transform semi-structured text data to XML. For more information, see [How to: Generate XML from CSV Files](../Topic/How%20to:%20Generate%20XML%20from%20CSV%20Files.md).  
+ You can also use the techniques described in this section to transform semi-structured text data to XML. For more information, see [How to: Generate XML from CSV Files](http://msdn.microsoft.com/library/dd7bab8c-96fa-4343-94d0-9739dd6a74fd).  
   
  The examples in this section fall into two categories:  
   
@@ -32,7 +32,7 @@ LINQ can be used to query and transform strings and collections of strings. It c
  [How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md)  
  Shows how to use LINQ for simple querying over text.  
   
- [How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)](../Topic/How%20to:%20Query%20for%20Sentences%20that%20Contain%20a%20Specified%20Set%20of%20Words%20\(LINQ\)%20\(Visual%20Basic\)2.md)  
+ [How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)](http://msdn.microsoft.com/library/12eb44b2-f826-4864-ada0-af154e4267e9)  
  Shows how to split text files on arbitrary boundaries and how to perform queries against each part.  
   
  [How to: Query for Characters in a String (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md)  
@@ -70,4 +70,4 @@ LINQ can be used to query and transform strings and collections of strings. It c
   
 ## See Also  
  [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)   
- [How to: Generate XML from CSV Files](../Topic/How%20to:%20Generate%20XML%20from%20CSV%20Files.md)
+ [How to: Generate XML from CSV Files](http://msdn.microsoft.com/library/dd7bab8c-96fa-4343-94d0-9739dd6a74fd)

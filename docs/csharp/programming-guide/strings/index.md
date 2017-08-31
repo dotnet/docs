@@ -84,7 +84,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
   
  [!code-csharp[csProgGuideStrings#26](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#26)]  
   
- One overload of the <xref:System.Console.WriteLine%2A> method takes a format string as a parameter. Therefore, you can just embed a format string literal without an explicit call to the method. However, if you use the <xref:System.Diagnostics.Trace.WriteLine%2A> method to display debug output in the Visual Studio **Output** window, you have to explicitly call the <xref:System.String.Format%2A> method because <xref:System.Diagnostics.Trace.WriteLine%2A> only accepts a string, not a format string. For more information about format strings, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ One overload of the <xref:System.Console.WriteLine%2A> method takes a format string as a parameter. Therefore, you can just embed a format string literal without an explicit call to the method. However, if you use the <xref:System.Diagnostics.Trace.WriteLine%2A> method to display debug output in the Visual Studio **Output** window, you have to explicitly call the <xref:System.String.Format%2A> method because <xref:System.Diagnostics.Trace.WriteLine%2A> only accepts a string, not a format string. For more information about format strings, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
 ## Substrings  
  A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and does not modify the original string. For more information, see [How to: Search Strings Using String Methods](../../../csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md) and [How to: Modify String Contents](../../../csharp/programming-guide/strings/how-to-modify-string-contents.md).  
@@ -121,7 +121,7 @@ string s = String.Empty;
  [!code-csharp[csProgGuideStrings#15](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#15)]  
   
 ## Strings, Extension Methods and LINQ  
- Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](../../../includes/vbteclinq-md.md)] query expressions on strings. For more information, see [LINQ and Strings](../Topic/LINQ%20and%20Strings.md).  
+ Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](../../../includes/vbteclinq-md.md)] query expressions on strings. For more information, see [LINQ and Strings](http://msdn.microsoft.com/library/6c34169f-7a39-436a-98d8-9a7283043942).  
   
 ## Related Topics  
   
@@ -135,11 +135,11 @@ string s = String.Empty;
 |[How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)|Explains how to use regular expressions to search strings.|  
 |[How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
 |[How to: Convert a String to a DateTime](../../../csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=fullName> object.|  
-|[Basic String Operations](../Topic/Basic%20String%20Operations%20in%20the%20.NET%20Framework.md)|Provides links to topics that use <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> methods to perform basic string operations.|  
-|[Parsing Strings](../Topic/Parsing%20Strings%20in%20the%20.NET%20Framework.md)|Describes how to insert characters or empty spaces into a string.|  
-|[Comparing Strings](../Topic/Comparing%20Strings%20in%20the%20.NET%20Framework.md)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
-|[Using the StringBuilder Class](../Topic/Using%20the%20StringBuilder%20Class%20in%20the%20.NET%20Framework.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
-|[LINQ and Strings](../Topic/LINQ%20and%20Strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
+|[Basic String Operations](~/docs/standard/base-types/basic-string-operations.md)|Provides links to topics that use <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> methods to perform basic string operations.|  
+|[Parsing Strings](~/docs/standard/base-types/parsing-strings.md)|Describes how to insert characters or empty spaces into a string.|  
+|[Comparing Strings](~/docs/standard/base-types/comparing.md)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
+|[Using the StringBuilder Class](~/docs/standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
+|[LINQ and Strings](http://msdn.microsoft.com/library/6c34169f-7a39-436a-98d8-9a7283043942)|Provides information about how to perform various string operations by using LINQ queries.|  
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to topics that explain programming constructs in C#.|  
   
 ## Featured Book Chapter  

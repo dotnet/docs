@@ -104,5 +104,5 @@ Dim listObjects As IEnumerable(Of Object) = New List(Of String)
 ## See Also  
  [Using Variance in Interfaces for Generic Collections (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)   
  [Creating Variant Generic Interfaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)   
- [Generic Interfaces](../Topic/Generic%20Interfaces.md)   
+ [Generic Interfaces](~/docs/standard/generics/interfaces.md)   
  [Variance in Delegates (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)

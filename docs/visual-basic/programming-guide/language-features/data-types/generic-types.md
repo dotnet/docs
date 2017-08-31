@@ -167,5 +167,5 @@ Screwdriver set as a generic tool
  [Of](../../../../visual-basic/language-reference/statements/of-clause.md)   
  [As](../../../../visual-basic/language-reference/statements/as-clause.md)   
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
- [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)   
- [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)
+ [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
+ [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)

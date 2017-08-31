@@ -27,7 +27,7 @@ manager: "wpickett"
 
 A [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] program is built up from standard building blocks. A *solution* comprises one or more projects. A *project* in turn can contain one or more assemblies. Each *assembly* is compiled from one or more source files. A *source file* provides the definition and implementation of classes, structures, modules, and interfaces, which ultimately contain all your code.  
   
- For more information about these building blocks of a [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] program, see [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio) and [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about these building blocks of a [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] program, see [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio) and [Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/35127020-6dd6-4a2a-8db8-4b2ceb658b28).  
   
 ## File-Level Programming Elements  
  When you start a project or file and open the code editor, you see some code already in place and in the correct order. Any code that you write should follow the following sequence:  

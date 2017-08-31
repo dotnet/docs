@@ -24,7 +24,7 @@ manager: "wpickett"
 
 The following tables list the classes commonly used for .NET Framework file I/O, categorized into file I/O classes, classes used for creating streams, and classes used to read and write to streams.  
   
- To enter the [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)] documentation and find a more comprehensive listing, see [Class Library Overview](../Topic/.NET%20Framework%20Class%20Library%20Overview.md).  
+ To enter the [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)] documentation and find a more comprehensive listing, see [Class Library Overview](~/docs/standard/class-library-overview.md).  
   
 ## Basic I/O Classes for Files, Drives, and Directories  
  The following table lists and describes the main classes used for file I/O.  
@@ -67,7 +67,7 @@ The following tables list the classes commonly used for .NET Framework file I/O,
 |<xref:System.IO.StringWriter?displayProperty=fullName>|Writes characters to a `String`. Output can be either a stream in any encoding or a `String`.|  
   
 ## See Also  
- [Composing Streams](../Topic/Composing%20Streams.md)   
- [File and Stream I-O](../Topic/File%20and%20Stream%20I-O.md)   
- [Asynchronous File I/O](../Topic/Asynchronous%20File%20I-O.md)   
+ [Composing Streams](~/docs/standard/io/composing-streams.md)   
+ [File and Stream I-O](~/docs/standard/io/index.md)   
+ [Asynchronous File I/O](~/docs/standard/io/asynchronous-file-i-o.md)   
  [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-i-o-and-the-file-system-visual-basic.md)

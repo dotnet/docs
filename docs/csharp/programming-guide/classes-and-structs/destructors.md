@@ -75,9 +75,9 @@ protected override void Finalize()
   
  For more details about cleaning up resources, see the following topics:  
   
--   [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md)  
+-   [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md)  
   
--   [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md)  
+-   [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md)  
   
 -   [using Statement](../../../csharp/language-reference/keywords/using-statement.md)  
   
@@ -93,4 +93,4 @@ protected override void Finalize()
  <xref:System.IDisposable>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Garbage Collection](../Topic/Garbage%20Collection.md)
+ [Garbage Collection](~/docs/standard/garbage-collection/index.md)

@@ -84,4 +84,4 @@ manager: "wpickett"
   
 ## See Also  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Converting Data Types](../Topic/Converting%20Data%20Types.md)
+ [Converting Data Types](http://msdn.microsoft.com/library/d39e96ca-8d4d-4971-ad09-a6d7e881bafe)

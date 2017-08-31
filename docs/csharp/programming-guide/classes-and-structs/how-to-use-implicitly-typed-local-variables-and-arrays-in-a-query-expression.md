@@ -39,6 +39,6 @@ You can use implicitly typed local variables whenever you want the compiler to d
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)   
- [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [var](../../../csharp/language-reference/keywords/var.md)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

@@ -30,11 +30,11 @@ The following sections describe features and classes that can be used to synchro
   
  For background information on multithreaded programming, see:  
   
--   [Managed Threading Basics](../Topic/Managed%20Threading%20Basics.md)  
+-   [Managed Threading Basics](~/docs/standard/threading/managed-threading-basics.md)  
   
--   [Using Threads and Threading](../Topic/Using%20Threads%20and%20Threading.md)  
+-   [Using Threads and Threading](~/docs/standard/threading/using-threads-and-threading.md)  
   
--   [Managed Threading Best Practices](../Topic/Managed%20Threading%20Best%20Practices.md)  
+-   [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md)  
   
 ## The lock Keyword  
  The C# `lock` statement can be used to ensure that a block of code runs to completion without interruption by other threads. This is accomplished by obtaining a mutual-exclusion lock for a given object for the duration of the code block.  
@@ -66,7 +66,7 @@ public class TestThreading
   
 -   [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)  
   
--   [Monitors](../Topic/Monitors.md)  
+-   [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
   
 ## Monitors  
  Like the `lock` keyword, monitors prevent blocks of code from simultaneous execution by multiple threads. The <xref:System.Threading.Monitor.Enter%2A> method allows one and only one thread to proceed into the following statements; all other threads are blocked until the executing thread calls <xref:System.Threading.Monitor.Exit%2A>. This is just like using the `lock` keyword. For example:  
@@ -141,7 +141,7 @@ class ThreadingExample
   
  When used for inter-process synchronization, a mutex is called a *named mutex* because it is to be used in another application, and therefore it cannot be shared by means of a global or static variable. It must be given a name so that both applications can access the same mutex object.  
   
- Although a mutex can be used for intra-process thread synchronization, using <xref:System.Threading.Monitor> is generally preferred, because monitors were designed specifically for the .NET Framework and therefore make better use of resources. In contrast, the <xref:System.Threading.Mutex> class is a wrapper to a Win32 construct. While it is more powerful than a monitor, a mutex requires interop transitions that are more computationally expensive than those required by the <xref:System.Threading.Monitor> class. For an example of using a mutex, see [Mutexes](../Topic/Mutexes.md).  
+ Although a mutex can be used for intra-process thread synchronization, using <xref:System.Threading.Monitor> is generally preferred, because monitors were designed specifically for the .NET Framework and therefore make better use of resources. In contrast, the <xref:System.Threading.Mutex> class is a wrapper to a Win32 construct. While it is more powerful than a monitor, a mutex requires interop transitions that are more computationally expensive than those required by the <xref:System.Threading.Monitor> class. For an example of using a mutex, see [Mutexes](~/docs/standard/threading/mutexes.md).  
   
 ## Interlocked Class  
  You can use the methods of the <xref:System.Threading.Interlocked> class to prevent problems that can occur when multiple threads attempt to simultaneously update or compare the same value. The methods of this class let you safely increment, decrement, exchange, and compare values from any thread.  
@@ -171,8 +171,8 @@ class ThreadingExample
  <xref:System.Threading.EventWaitHandle.Set%2A>   
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)   
- [Mutexes](../Topic/Mutexes.md)   
- [Monitors](../Topic/Monitors.md)   
- [Interlocked Operations](../Topic/Interlocked%20Operations.md)   
- [AutoResetEvent](../Topic/AutoResetEvent.md)   
- [Synchronizing Data for Multithreading](../Topic/Synchronizing%20Data%20for%20Multithreading.md)
+ [Mutexes](~/docs/standard/threading/mutexes.md)   
+ [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)   
+ [Interlocked Operations](~/docs/standard/threading/interlocked-operations.md)   
+ [AutoResetEvent](~/docs/standard/threading/autoresetevent.md)   
+ [Synchronizing Data for Multithreading](~/docs/standard/threading/synchronizing-data-for-multithreading.md)

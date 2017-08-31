@@ -155,4 +155,4 @@ Module: CLSCompliant(True)>
 ## See Also  
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
- [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)
+ [Attributes](~/docs/standard/attributes/index.md)

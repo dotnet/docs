@@ -33,7 +33,7 @@ For generic type parameters, the `in` keyword specifies that the type parameter 
   
  A contravariant delegate can be assigned another delegate of the same type, but with a less derived generic type parameter.  
   
- For more information, see [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information, see [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8).  
   
 ## Example  
  The following example shows how to declare, extend, and implement a contravariant generic interface. It also shows how you can use implicit conversion for classes that implement this interface.  
@@ -50,5 +50,5 @@ For generic type parameters, the `in` keyword specifies that the type parameter 
   
 ## See Also  
  [out](../../../csharp/language-reference/keywords/out-generic-modifier.md)   
- [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

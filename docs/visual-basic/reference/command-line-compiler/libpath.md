@@ -69,6 +69,6 @@ vbc /libpath:c:\;"c:\New Assemblies" /reference:t2.dll t2.vb
 ```  
   
 ## See Also  
- [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/35127020-6dd6-4a2a-8db8-4b2ceb658b28)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

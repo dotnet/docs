@@ -51,7 +51,7 @@ The `volatile` keyword indicates that a field might be modified by multiple thre
  [!code-csharp[csrefKeywordsModifiers#24](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#24)]  
   
 ## Example  
- The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For background information about multithreading, see [Threading](../Topic/Managed%20Threading.md) and [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md).  
+ The following example demonstrates how an auxiliary or worker thread can be created and used to perform processing in parallel with that of the primary thread. For background information about multithreading, see [Threading](~/docs/standard/threading/index.md) and [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c).  
   
  [!code-csharp[csProgGuideThreading#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideThreading/Cs/Threading.cs#1)]  
   

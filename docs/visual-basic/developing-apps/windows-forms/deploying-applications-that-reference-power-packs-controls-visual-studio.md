@@ -40,6 +40,6 @@ If you want to deploy an application that references the Power Packs controls (<
   
 ## See Also  
  [How to: Install Prerequisites in Windows Installer Deployment](http://msdn.microsoft.com/en-us/653fc868-2486-429c-b75e-2f9d0c7f6619)   
- [How to: Install Prerequisites with a ClickOnce Application](../Topic/How%20to:%20Install%20Prerequisites%20with%20a%20ClickOnce%20Application.md)   
+ [How to: Install Prerequisites with a ClickOnce Application](http://msdn.microsoft.com/library/e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5)   
  [Not in Build: Choosing a Deployment Strategy](http://msdn.microsoft.com/en-us/ecd632d8-063c-4028-b785-81bba045107b)   
  [Visual Basic Power Packs Controls](../../../visual-basic/developing-apps/windows-forms/power-packs-controls.md)

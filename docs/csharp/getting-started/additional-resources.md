@@ -76,6 +76,6 @@ The following sites can help you find answers to common problems.
  [C#](../../csharp/csharp.md)   
  [Getting Started with C#](../../csharp/getting-started/getting-started-with-csharp.md)   
  [Customizing the Editor](/visual-studio/ide/customizing-the-editor)   
- [How to: Get Involved in the Developer Community](../Topic/How%20to:%20Get%20Involved%20in%20the%20Developer%20Community.md)   
- [How to: Send Feedback](../Topic/How%20to:%20Send%20Feedback%20About%20Visual%20Studio.md)   
+ [How to: Get Involved in the Developer Community](http://msdn.microsoft.com/library/f1503d98-7a64-41b6-a6c7-0e42a533e9c5)   
+ [How to: Send Feedback](http://msdn.microsoft.com/library/c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209)   
  [Talk to Us](/visual-studio/ide/talk-to-us)

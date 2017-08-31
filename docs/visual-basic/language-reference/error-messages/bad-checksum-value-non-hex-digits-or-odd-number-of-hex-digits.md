@@ -42,5 +42,5 @@ A checksum value contains invalid hexadecimal digits or has an odd number of dig
 3.  If the warning still persists, or if you are not using ASP.NET, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
- [ASP.NET Overview](../Topic/ASP.NET%20Overview.md)   
+ [ASP.NET Overview](http://msdn.microsoft.com/library/63389df5-8867-43e0-ad7e-41c19ba98ea4)   
  [Talk to Us](/visual-studio/ide/talk-to-us)

@@ -41,7 +41,7 @@ This method checks for some strong-password characteristics and updates a string
 -   Access to the members of the <xref:System.Text.RegularExpressions> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## Security  
- If you are moving the password across a network, you need to use a secure method for transferring data. For more information, see [ASP.NET Web Application Security](../Topic/ASP.NET%20Web%20Application%20Security.md).  
+ If you are moving the password across a network, you need to use a secure method for transferring data. For more information, see [ASP.NET Web Application Security](http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8).  
   
  You can improve the accuracy of the `ValidatePassword` function by adding additional complexity checks:  
   
@@ -55,4 +55,4 @@ This method checks for some strong-password characteristics and updates a string
   
 ## See Also  
  <xref:System.Text.RegularExpressions.Regex>   
- [ASP.NET Web Application Security](../Topic/ASP.NET%20Web%20Application%20Security.md)
+ [ASP.NET Web Application Security](http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8)

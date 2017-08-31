@@ -56,7 +56,7 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
 |||  
 |-|-|  
 |Term|Definition|  
-|`genericmodifier`|Optional. Can be used only in generic interfaces and delegates. You can declare a type covariant by using the [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md) keyword or contravariant by using the [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md) keyword. See [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md).|  
+|`genericmodifier`|Optional. Can be used only in generic interfaces and delegates. You can declare a type covariant by using the [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md) keyword or contravariant by using the [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md) keyword. See [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8).|  
 |`typename`|Required. Name of the type parameter. This is a placeholder, to be replaced by a defined type supplied by the corresponding type argument.|  
 |`constraintlist`|Optional. List of requirements that constrain the data type that can be supplied for `typename`. If you have multiple constraints, enclose them in curly braces (`{ }`) and separate them with commas. You must introduce the constraint list with the [As](../../../visual-basic/language-reference/statements/as-clause.md) keyword. You use `As` only once, at the beginning of the list.|  
   
@@ -113,6 +113,6 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
- [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

@@ -41,7 +41,7 @@ A *join* of two data sources is the association of objects in one data source wi
  <xref:System.Linq>   
  [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)   
- [Formulate Joins and Cross-Product Queries](../Topic/Formulate%20Joins%20and%20Cross-Product%20Queries.md)   
+ [Formulate Joins and Cross-Product Queries](~/docs/framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)   
  [join clause](../../../../csharp/language-reference/keywords/join-clause.md)   
  [How to: Join by Using Composite Keys](../../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)   
  [How to: Join Content from Dissimilar Files (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)   

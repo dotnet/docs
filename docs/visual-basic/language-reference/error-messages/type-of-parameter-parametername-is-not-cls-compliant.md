@@ -27,7 +27,7 @@ manager: "wpickett"
 
 A procedure is marked as `<CLSCompliant(True)>` but declares a parameter with a type that is marked as `<CLSCompliant(False)>`, is not marked, or does not qualify because it is a noncompliant type.  
   
- For a procedure to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), it must use only CLS-compliant types. This applies to the types of the parameters, the return type, and the types of all its local variables.  
+ For a procedure to be compliant with the [Language Independence and Language-Independent Components](~/docs/standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types. This applies to the types of the parameters, the return type, and the types of all its local variables.  
   
  The following [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] data types are not CLS-compliant:  
   

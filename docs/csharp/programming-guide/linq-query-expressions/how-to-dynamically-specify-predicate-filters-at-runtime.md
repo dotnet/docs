@@ -92,7 +92,7 @@ In some cases you do not know until run time how many predicates you have to app
   
 ### To use this method in your own applications  
   
--   When you adapt this method to your own application, remember that LINQ requires version 3.5 or 4 of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], and that the project must contain a reference to System.Core.dll and a `using` directive for `System.Linq`. LINQ to SQL, LINQ to XML, and LINQ to DataSet types require additional `using` directives and references. For more information, see [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+-   When you adapt this method to your own application, remember that LINQ requires version 3.5 or 4 of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], and that the project must contain a reference to System.Core.dll and a `using` directive for `System.Linq`. LINQ to SQL, LINQ to XML, and LINQ to DataSet types require additional `using` directives and references. For more information, see [How to: Create a LINQ Project](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).  
   
 ## See Also  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   

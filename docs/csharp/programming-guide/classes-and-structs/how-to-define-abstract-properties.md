@@ -67,4 +67,4 @@ The following example shows how to define [abstract](../../../csharp/language-re
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)   
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)   
- [How to: Create and Use Assemblies Using the Command Line](../Topic/How%20to:%20Create%20and%20Use%20Assemblies%20Using%20the%20Command%20Line%20\(C%23%20and%20Visual%20Basic\).md)
+ [How to: Create and Use Assemblies Using the Command Line](http://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4)

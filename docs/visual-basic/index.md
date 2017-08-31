@@ -55,13 +55,13 @@ Visual Basic is engineered for productively building type-safe and object-orient
  [Application Development in Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  Discusses the shared tools that enable you to design, develop, debug, and deploy applications.  
   
- [Client Applications](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md)  
+ [Client Applications](~/docs/framework/develop-client-apps.md)  
  Provides links to topics that describe the various types of Windows applications that you can create with Visual Studio.  
   
- [ASP.NET Overview](../Topic/ASP.NET%20Overview.md)  
+ [ASP.NET Overview](http://msdn.microsoft.com/library/63389df5-8867-43e0-ad7e-41c19ba98ea4)  
  Provides general information about ASP.NET and discusses factors that you should consider when you create a website by using ASP.NET.  
   
- [Development Guide](../Topic/.NET%20Framework%20Development%20Guide.md)  
+ [Development Guide](~/docs/framework/development-guide.md)  
  Provides information about key technology areas and tasks for application development, including creating, configuring, debugging, securing, and deploying your application. The topic also provides information about dynamic programming, interoperability, extensibility, memory management, and threading.  
   
  [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  

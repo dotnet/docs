@@ -101,4 +101,4 @@ End Class
   
 ## See Also  
  [Covariance and Contravariance (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md)   
- [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)
+ [Generics](~/docs/standard/generics/index.md)

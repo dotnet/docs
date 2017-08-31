@@ -67,7 +67,7 @@ Dim db As New DataContext("C:\Northwind\Northwnd.mdf")
 Dim customers As Table(Of Customer) = db.GetTable(Of Customer)  
 ```  
   
- For more information about how to create specific types of data sources, see the documentation for the various [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] providers. (For a list of these providers, see [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md).) The basic rule is simple: a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] data source is any object that supports the generic <xref:System.Collections.Generic.IEnumerable%601> interface, or an interface that inherits from it.  
+ For more information about how to create specific types of data sources, see the documentation for the various [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] providers. (For a list of these providers, see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).) The basic rule is simple: a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] data source is any object that supports the generic <xref:System.Collections.Generic.IEnumerable%601> interface, or an interface that inherits from it.  
   
 > [!NOTE]
 >  Types such as <xref:System.Collections.ArrayList> that support the non-generic <xref:System.Collections.IEnumerable> interface can also be used as [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] data sources. For an example that uses an <xref:System.Collections.ArrayList>, see [How to: Query an ArrayList with LINQ (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md).  
@@ -108,7 +108,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
  `0  10  2  22  8`  
   
 ### Immediate Execution  
- In deferred execution of queries, the query definition is stored in a query variable for later execution. In immediate execution, the query is executed at the time of its definition. Execution is triggered when you apply a method that requires access to individual elements of the query result. Immediate execution often is forced by using one of the standard query operators that return single values. Examples are `Count`, `Max`, `Average`, and `First`. These standard query operators execute the query as soon as they are applied in order to calculate and return a singleton result. For more information about standard query operators that return single values, see [Aggregation Operations](../Topic/Aggregation%20Operations.md), [Element Operations](../Topic/Element%20Operations.md), and [Quantifier Operations](../Topic/Quantifier%20Operations.md).  
+ In deferred execution of queries, the query definition is stored in a query variable for later execution. In immediate execution, the query is executed at the time of its definition. Execution is triggered when you apply a method that requires access to individual elements of the query result. Immediate execution often is forced by using one of the standard query operators that return single values. Examples are `Count`, `Max`, `Average`, and `First`. These standard query operators execute the query as soon as they are applied in order to calculate and return a singleton result. For more information about standard query operators that return single values, see [Aggregation Operations](http://msdn.microsoft.com/library/36d97c83-5de5-457d-971d-10a69365e7c4), [Element Operations](http://msdn.microsoft.com/library/55792912-59c7-44db-a67b-ec98a8f16438), and [Quantifier Operations](http://msdn.microsoft.com/library/0917704d-c4c0-40aa-af9e-597c4f4f76d6).  
   
  The following query returns a count of the even numbers in an array of integers. The query definition is not saved, and `numEvens` is a simple `Integer`.  
   
@@ -124,7 +124,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  In the previous examples, `evensQuery3` is a query variable, but `evensList` is a list and `evensArray` is an array.  
   
- Using `ToList` or `ToArray` to force immediate execution is especially useful in scenarios in which you want to execute the query immediately and cache the results in a single collection object. For more information about these methods, see [Converting Data Types](../Topic/Converting%20Data%20Types.md).  
+ Using `ToList` or `ToArray` to force immediate execution is especially useful in scenarios in which you want to execute the query immediately and cache the results in a single collection object. For more information about these methods, see [Converting Data Types](http://msdn.microsoft.com/library/d39e96ca-8d4d-4971-ad09-a6d7e881bafe).  
   
  You can also cause a query to be executed by using an `IEnumerable` method such as the <xref:Microsoft.VisualBasic.Collection.System%23Collections%23IEnumerable%23GetEnumerator%2A> method.  
   

@@ -28,7 +28,7 @@ manager: "wpickett"
 
 A common usage of `catch` and `finally` together is to obtain and use resources in a `try` block, deal with exceptional circumstances in a `catch` block, and release the resources in the `finally` block.  
   
- For more information and examples on re-throwing exceptions, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [Throwing Exceptions](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md). For more information about the `finally` block, see [try-finally](../../../csharp/language-reference/keywords/try-finally.md).  
+ For more information and examples on re-throwing exceptions, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [Throwing Exceptions](~/docs/standard/exceptions/how-to-explicitly-throw-exceptions.md). For more information about the `finally` block, see [try-finally](../../../csharp/language-reference/keywords/try-finally.md).  
   
 ## Example  
  [!code-csharp[csrefKeywordsExceptions#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#1)]  
@@ -43,5 +43,5 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
  [try, throw, and catch Statements (C++)](/visual-cpp/cpp/try-throw-and-catch-statements-cpp)   
  [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
  [throw](../../../csharp/language-reference/keywords/throw.md)   
- [How to: Explicitly Throw Exceptions](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)   
+ [How to: Explicitly Throw Exceptions](~/docs/standard/exceptions/how-to-explicitly-throw-exceptions.md)   
  [using Statement](../../../csharp/language-reference/keywords/using-statement.md)

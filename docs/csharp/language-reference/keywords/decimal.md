@@ -107,4 +107,4 @@ Console.WriteLine((double)dec + dub);
  [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
- [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md)
+ [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md)

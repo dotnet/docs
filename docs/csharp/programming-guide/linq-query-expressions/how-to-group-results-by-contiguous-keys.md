@@ -60,4 +60,4 @@ The following example shows how to group elements into chunks that represent sub
   
 ## See Also  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [Classification of Standard Query Operators by Manner of Execution](../Topic/Classification%20of%20Standard%20Query%20Operators%20by%20Manner%20of%20Execution.md)
+ [Classification of Standard Query Operators by Manner of Execution](http://msdn.microsoft.com/library/67bf1ae5-e632-44a8-a5d6-3b78b6d0e73e)

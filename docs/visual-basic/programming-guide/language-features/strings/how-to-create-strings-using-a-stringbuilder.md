@@ -31,9 +31,9 @@ This example constructs a long string from many smaller strings using the <xref:
  [!code-vb[VbVbalrStrings#70](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#70)]  
   
 ## See Also  
- [Using the StringBuilder Class](../Topic/Using%20the%20StringBuilder%20Class%20in%20the%20.NET%20Framework.md)   
+ [Using the StringBuilder Class](~/docs/standard/base-types/stringbuilder.md)   
  [&= Operator](../../../../visual-basic/language-reference/operators/and-assignment-operator.md)   
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)   
- [Creating New Strings](../Topic/Creating%20New%20Strings%20in%20the%20.NET%20Framework.md)   
- [Manipulating Strings](../Topic/Manipulating%20Strings%20in%20the%20.NET%20Framework.md)   
+ [Creating New Strings](~/docs/standard/base-types/creating-new.md)   
+ [Manipulating Strings](~/docs/standard/base-types/manipulating-strings.md)   
  [Strings Sample](http://msdn.microsoft.com/en-us/be9e82a3-dc95-4aaa-9396-61b66e467e02)

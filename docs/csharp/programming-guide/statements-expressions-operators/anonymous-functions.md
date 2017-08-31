@@ -49,4 +49,4 @@ An anonymous function is an "inline" statement or expression that can be used wh
  [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)   
  [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
  [Delegates](../../../csharp/programming-guide/delegates/index.md)   
- [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md)
+ [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)

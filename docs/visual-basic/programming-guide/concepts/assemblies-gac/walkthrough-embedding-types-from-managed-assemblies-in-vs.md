@@ -235,5 +235,5 @@ If you embed type information from a strong-named managed assembly, you can loos
 ## See Also  
  [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link-visual-basic.md)   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Programming with Assemblies](../Topic/Programming%20with%20Assemblies.md)   
+ [Programming with Assemblies](~/docs/framework/app-domains/programming-with-assemblies.md)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache-visual-basic.md)

@@ -63,6 +63,6 @@ These examples show you how to perform the following tasks:
  [!code-csharp[csProgGuideTypes#38](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#38)]  
   
 ## See Also  
- [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md)   
+ [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md)   
  [Types](../../../csharp/programming-guide/types/index.md)   
  [How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

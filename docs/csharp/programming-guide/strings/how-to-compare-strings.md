@@ -53,5 +53,5 @@ When you compare strings, you are producing a result that says one string is gre
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>   
  <xref:System.StringComparer?displayProperty=fullName>   
  [Strings](../../../csharp/programming-guide/strings/index.md)   
- [Comparing Strings](../Topic/Comparing%20Strings%20in%20the%20.NET%20Framework.md)   
+ [Comparing Strings](~/docs/standard/base-types/comparing.md)   
  [Globalizing and Localizing Applications](/visual-studio/ide/globalizing-and-localizing-applications)

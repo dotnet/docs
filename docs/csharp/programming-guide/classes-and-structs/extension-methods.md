@@ -89,13 +89,13 @@ using System.Linq;
   
 -   Extension methods are brought into scope at the namespace level. For example, if you have multiple static classes that contain extension methods in a single namespace named `Extensions`, they will all be brought into scope by the `using Extensions;` directive.  
   
- For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](../Topic/Assembly%20Versioning.md).  
+ For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](~/docs/framework/app-domains/assembly-versioning.md).  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Parallel Programming Samples (these include many example extension methods)](http://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)   
  [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
- [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md)   
+ [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)   
  [Conversion rules for Instance parameters and their impact](http://go.microsoft.com/fwlink/?LinkId=112385)   
  [Extension methods Interoperability between languages](http://go.microsoft.com/fwlink/?LinkId=112386)   
  [Extension methods and Curried Delegates](http://go.microsoft.com/fwlink/?LinkId=112387)   

@@ -39,7 +39,7 @@ This section of the documentation helps you get started with Visual Basic applic
  Provides download links for Visual Studio versions that include Visual basic support, including free versions.  
   
 ## Related Sections  
- [Object-Oriented Programming](../Topic/Object-Oriented%20Programming%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)  
  Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.  
   
  [Samples](../../visual-basic/sample-applications.md)  

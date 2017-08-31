@@ -29,7 +29,7 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
   
  When you create a custom class or struct, you should override the <xref:System.Object.ToString%2A> method in order to provide information about your type to client code.  
   
- For information about how to use format strings and other types of custom formatting with the `ToString` method, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ For information about how to use format strings and other types of custom formatting with the `ToString` method, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
 > [!IMPORTANT]
 >  When you decide what information to provide through this method, consider whether your class or struct will ever be used by untrusted code. Be careful to ensure that you do not provide any information that could be exploited by malicious code.  
@@ -61,4 +61,4 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
  [new](../../../csharp/language-reference/keywords/new.md)   
  [override](../../../csharp/language-reference/keywords/override.md)   
  [virtual](../../../csharp/language-reference/keywords/virtual.md)   
- [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md)
+ [Formatting Types](~/docs/standard/base-types/formatting-types.md)

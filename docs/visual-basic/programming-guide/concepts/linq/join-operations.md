@@ -41,7 +41,7 @@ A *join* of two data sources is the association of objects in one data source wi
  <xref:System.Linq>   
  [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Formulate Joins and Cross-Product Queries](../Topic/Formulate%20Joins%20and%20Cross-Product%20Queries.md)   
+ [Formulate Joins and Cross-Product Queries](~/docs/framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)   
  [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)   
  [How to: Join Content from Dissimilar Files (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)   
  [How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)

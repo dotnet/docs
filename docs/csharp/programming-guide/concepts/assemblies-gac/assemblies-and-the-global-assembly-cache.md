@@ -22,13 +22,13 @@ manager: "wpickett"
 
 Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET-based application. Assemblies take the form of an executable (.exe) file or dynamic link library (.dll) file, and are the building blocks of the .NET Framework. They provide the common language runtime with the information it needs to be aware of type implementations. You can think of an assembly as a collection of types and resources that form a logical unit of functionality and are built to work together.  
   
- Assemblies can contain one or more modules. For example, larger projects may be planned in such a way that several individual developers work on separate modules, all coming together to create a single assembly. For more information about modules, see the topic [How to: Build a Multifile Assembly](../Topic/How%20to:%20Build%20a%20Multifile%20Assembly.md).  
+ Assemblies can contain one or more modules. For example, larger projects may be planned in such a way that several individual developers work on separate modules, all coming together to create a single assembly. For more information about modules, see the topic [How to: Build a Multifile Assembly](~/docs/framework/app-domains/how-to-build-a-multifile-assembly.md).  
   
  Assemblies have the following properties:  
   
 -   Assemblies are implemented as .exe or .dll files.  
   
--   You can share an assembly between applications by putting it in the global assembly cache. Assemblies must be strong-named before they can be included in the global assembly cache. For more information, see [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md).  
+-   You can share an assembly between applications by putting it in the global assembly cache. Assemblies must be strong-named before they can be included in the global assembly cache. For more information, see [Strong-Named Assemblies](~/docs/framework/app-domains/strong-named-assemblies.md).  
   
 -   Assemblies are only loaded into memory if they are required. If they are not used, they are not loaded. This means that assemblies can be an efficient way to manage resources in larger projects.  
   
@@ -47,7 +47,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
   
  Because assemblies contain information about content, versioning, and dependencies, the applications you create with C# do not rely on Windows registry values to function properly. Assemblies reduce .dll conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer.  
   
- For more information see [Assembly Manifest](../Topic/Assembly%20Manifest.md).  
+ For more information see [Assembly Manifest](~/docs/framework/app-domains/assembly-manifest.md).  
   
 ## Adding a Reference to an Assembly  
  To use an assembly, you must add a reference to it. Next, you use the [using directive](../../../../csharp/language-reference/keywords/using-directive.md) to choose the namespace of the items you want to use. Once an assembly is referenced and imported, all the accessible classes, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.  
@@ -62,7 +62,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
   
 ## See Also  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)   
+ [Assemblies in the Common Language Runtime](~/docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)   
  [Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
  [How to: Share an Assembly with Other Applications (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-share-an-assembly-with-other-applications.md)   
  [How to: Load and Unload Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md)   

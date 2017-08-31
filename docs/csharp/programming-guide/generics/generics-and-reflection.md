@@ -25,7 +25,7 @@ manager: "wpickett"
 
 Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md).  
   
- In the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
+ In the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  For a list of the invariant conditions for terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property remarks.  
   
@@ -57,5 +57,5 @@ Because the Common Language Runtime (CLR) has access to generic type information
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Generics](../../../csharp/programming-guide/generics/index.md)   
- [Reflection and Generic Types](../Topic/Reflection%20and%20Generic%20Types.md)   
- [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)
+ [Reflection and Generic Types](~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md)   
+ [Generics](~/docs/standard/generics/index.md)

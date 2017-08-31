@@ -48,18 +48,18 @@ Specifies the name of the assembly that this module will be a part of.
   
 -   The referenced assembly has granted friend assembly access to the assembly into which the module will be built.  
   
- For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target-visual-basic.md). For more information about friend assemblies, see [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target-visual-basic.md). For more information about friend assemblies, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
   
 > [!NOTE]
 >  The `/moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
 ## See Also  
- [How to: Build a Multifile Assembly](../Topic/How%20to:%20Build%20a%20Multifile%20Assembly.md)   
+ [How to: Build a Multifile Assembly](~/docs/framework/app-domains/how-to-build-a-multifile-assembly.md)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target-visual-basic.md)   
  [/main](../../../visual-basic/reference/command-line-compiler/main.md)   
  [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference-visual-basic.md)   
  [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
- [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/35127020-6dd6-4a2a-8db8-4b2ceb658b28)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)
+ [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)

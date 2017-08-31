@@ -45,4 +45,4 @@ This topic discusses the pure functional transformation approach to modifying XM
 ## See Also  
  [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
  [LINQ to XML vs. Other XML Technologies](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md)   
- [LINQ to XML vs. Other XML Technologies](../Topic/LINQ%20to%20XML%20vs.%20Other%20XML%20Technologies1.md)
+ [LINQ to XML vs. Other XML Technologies](http://msdn.microsoft.com/library/7ba1eecf-f09a-42de-bc80-22ca5b2e42d3)

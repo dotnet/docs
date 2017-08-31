@@ -23,7 +23,7 @@ manager: "wpickett"
 # Generics and Attributes (C# Programming Guide)
 [!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
 
-Attributes can be applied to generic types in the same way as non-generic types. For more information on applying attributes, see [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md).  
+Attributes can be applied to generic types in the same way as non-generic types. For more information on applying attributes, see [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
   
  Custom attributes are only permitted to reference open generic types, which are generic types for which no type arguments are supplied, and closed constructed generic types, which supply arguments for all type parameters.  
   
@@ -56,4 +56,4 @@ Attributes can be applied to generic types in the same way as non-generic types.
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Generics](../../../csharp/programming-guide/generics/index.md)   
- [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)
+ [Attributes](~/docs/standard/attributes/index.md)

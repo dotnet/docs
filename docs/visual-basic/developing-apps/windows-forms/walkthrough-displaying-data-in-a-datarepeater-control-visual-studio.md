@@ -27,7 +27,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
 ## Prerequisite  
  This walkthrough requires the Northwind sample database.  
   
- If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). For instructions, see [Downloading Sample Databases](../Topic/Downloading%20Sample%20Databases.md).  
+ If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). For instructions, see [Downloading Sample Databases](~/docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
 ## Overview  
  The first part of this walkthrough consists of four main tasks:  

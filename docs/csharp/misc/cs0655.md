@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0655
 'parameter' is not a valid named attribute argument because it is not a valid attribute parameter type  
   
- See [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md) for a discussion of valid parameter types for an attribute.  
+ See [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205) for a discussion of valid parameter types for an attribute.  
   
 ## Example  
  The following sample generates CS0655:  

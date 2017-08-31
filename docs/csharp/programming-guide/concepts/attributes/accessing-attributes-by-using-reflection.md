@@ -127,7 +127,7 @@ class TestAuthorAttribute
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Retrieving Information Stored in Attributes](../Topic/Retrieving%20Information%20Stored%20in%20Attributes.md)   
+ [Retrieving Information Stored in Attributes](~/docs/standard/attributes/retrieving-information-stored-in-attributes.md)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [Creating Custom Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)

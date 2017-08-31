@@ -173,6 +173,6 @@ manager: "wpickett"
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
- [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md)
+ [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)

@@ -54,4 +54,4 @@ C# (pronounced "C sharp") is a programming language that is designed for buildin
   
 ## See Also  
  [Getting Started with Visual C# and Visual Basic](/visual-studio/ide/getting-started-with-visual-csharp-and-visual-basic)   
- [.NET Development](../Topic/.NET%20Development.md)
+ [.NET Development](http://msdn.microsoft.com/library/43e22490-fb00-409c-8301-585a03034ae2)

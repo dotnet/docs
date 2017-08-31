@@ -47,7 +47,7 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullNa
  If you don't want to download the project, you can review the MainWindow.xaml.vb file at the end of this topic.  
   
 ## Building the Example  
- The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks](../Topic/Cancel%20an%20Async%20Task%20or%20a%20List%20of%20Tasks%20\(C%23%20and%20Visual%20Basic\).md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
+ The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks](http://msdn.microsoft.com/library/d6e4e801-df64-4705-98fc-df725a577fb0) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
   
  To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**. Add the changes in this topic to that project.  
   

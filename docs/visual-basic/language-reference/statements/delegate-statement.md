@@ -81,6 +81,6 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
  [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

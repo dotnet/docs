@@ -42,7 +42,7 @@ This section contains topics describing the `My.Settings` object and the tasks i
   
 ## See Also  
  [Managing Application Settings (.NET)](/visual-studio/ide/managing-application-settings-dotnet)   
- [How To: Read Settings at Run Time With C#](../Topic/How%20To:%20Read%20Settings%20at%20Run%20Time%20With%20C%23.md)   
- [How To: Write User Settings at Run Time with C#](../Topic/How%20To:%20Write%20User%20Settings%20at%20Run%20Time%20with%20C%23.md)   
+ [How To: Read Settings at Run Time With C#](~/docs/framework/winforms/advanced/how-to-read-settings-at-run-time-with-csharp.md)   
+ [How To: Write User Settings at Run Time with C#](~/docs/framework/winforms/advanced/how-to-write-user-settings-at-run-time-with-csharp.md)   
  [Managing Application Settings (.NET)](/visual-studio/ide/managing-application-settings-dotnet)   
  [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)

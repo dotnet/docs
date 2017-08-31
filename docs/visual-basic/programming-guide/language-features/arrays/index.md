@@ -264,7 +264,7 @@ Dim prices(3, 4, 5) As Long
   
  If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.  
   
- For more information about collections, see [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about collections, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
 ### Example  
  The following example uses the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=fullName> to create a list collection of `Customer` objects.  

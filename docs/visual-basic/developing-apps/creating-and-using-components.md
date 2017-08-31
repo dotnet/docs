@@ -39,7 +39,7 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
   
 -   If your component cannot derive from one of the base implementations due to single inheritance, implement <xref:System.ComponentModel.IComponent>.  
   
- For more information about design-time support, see [Design-Time Attributes for Components](../Topic/Design-Time%20Attributes%20for%20Components.md) and [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+ For more information about design-time support, see [Design-Time Attributes for Components](http://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3) and [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
 ## Component Classes  
  The <xref:System.ComponentModel> namespace provides classes that are used to implement the run-time and design-time behavior of components and controls. This namespace includes the base classes and interfaces for implementing attributes and type converters, binding to data sources, and licensing components.  
@@ -71,22 +71,22 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
 -   <xref:System.ComponentModel.PropertyDescriptor>. Provides information about a property.  
   
 ## Related Sections  
- [Class vs. Component vs. Control](../Topic/Class%20vs.%20Component%20vs.%20Control.md)  
+ [Class vs. Component vs. Control](http://msdn.microsoft.com/library/db8b842e-44d9-40cc-a0f8-70fd189632c3)  
  Defines *component* and *control*, and discusses the differences between them and classes.  
   
- [Component Authoring](../Topic/Component%20Authoring.md)  
+ [Component Authoring](http://msdn.microsoft.com/library/4a5a5e49-0378-4a31-83bc-24da0f1a727d)  
  Roadmap for getting started with components.  
   
- [Component Authoring Walkthroughs](../Topic/Component%20Authoring%20Walkthroughs.md)  
+ [Component Authoring Walkthroughs](http://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)  
  Links to topics that provide step-by-step instruction for component programming.  
   
- [Component Classes](../Topic/Component%20Classes.md)  
+ [Component Classes](http://msdn.microsoft.com/library/ce2e5647-e673-4c2b-8125-ffebbd9d71bc)  
  Describes what makes a class a component, ways to expose component functionality, controlling access to components, and controlling how component instances are created.  
   
- [Troubleshooting Control and Component Authoring](../Topic/Troubleshooting%20Control%20and%20Component%20Authoring.md)  
+ [Troubleshooting Control and Component Authoring](~/docs/framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
  Explains how to fix common problems.  
   
 ## See Also  
- [How to: Access Design-Time Support in Windows Forms](../Topic/How%20to:%20Access%20Design-Time%20Support%20in%20Windows%20Forms.md)   
- [How to: Extend the Appearance and Behavior of Controls in Design Mode](../Topic/How%20to:%20Extend%20the%20Appearance%20and%20Behavior%20of%20Controls%20in%20Design%20Mode.md)   
- [How to: Perform Custom Initialization for Controls in Design Mode](../Topic/How%20to:%20Perform%20Custom%20Initialization%20for%20Controls%20in%20Design%20Mode.md)
+ [How to: Access Design-Time Support in Windows Forms](http://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)   
+ [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b)   
+ [How to: Perform Custom Initialization for Controls in Design Mode](http://msdn.microsoft.com/library/914eaa03-092f-4556-9160-b8a2a40641d9)

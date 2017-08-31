@@ -77,7 +77,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Delegates](../../../csharp/programming-guide/delegates/index.md)   
- [Using Variance in Delegates](../Topic/Using%20Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md)   
- [Variance in Delegates](../Topic/Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md)   
- [Using Variance for Func and Action Generic Delegates](../Topic/Using%20Variance%20for%20Func%20and%20Action%20Generic%20Delegates%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Using Variance in Delegates](http://msdn.microsoft.com/library/e6acad03-93e0-4efb-a158-8696d5eb4ecf)   
+ [Variance in Delegates](http://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)   
+ [Using Variance for Func and Action Generic Delegates](http://msdn.microsoft.com/library/e69c4f39-09aa-4c6d-a752-08cc767d8290)   
  [Events](../../../csharp/programming-guide/events/index.md)

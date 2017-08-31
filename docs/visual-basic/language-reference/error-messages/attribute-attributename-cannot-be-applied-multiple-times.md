@@ -41,5 +41,5 @@ The attribute can only be applied once. The `AttributeUsage` attribute determine
   
 ## See Also  
  <xref:System.AttributeUsageAttribute>   
- [Creating Custom Attributes](../Topic/Creating%20Custom%20Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
- [AttributeUsage](../Topic/AttributeUsage%20\(C%23%20and%20Visual%20Basic\).md)
+ [Creating Custom Attributes](http://msdn.microsoft.com/library/fc00eedc-e6b8-4056-8d6f-3545e7957717)   
+ [AttributeUsage](http://msdn.microsoft.com/library/72da2d8a-6512-4204-8929-d00a2e34163c)

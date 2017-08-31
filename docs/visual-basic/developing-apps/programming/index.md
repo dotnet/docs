@@ -49,6 +49,6 @@ This section discusses programming tasks that you may want to learn more about a
   
 ## See Also  
  [Visual Basic Language Features](../../../visual-basic/programming-guide/language-features/index.md)   
- [Programming Concepts](../Topic/Programming%20Concepts.md)   
- [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Programming Concepts](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)   
+ [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

@@ -52,7 +52,7 @@ This page lists key feature names for each version of C# with descriptions of th
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
  [String Interpolation](../../csharp/language-reference/keywords/interpolated-strings.md)  
- You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  C# creates a string by replacing the expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  C# creates a string by replacing the expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
  [Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
  You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  

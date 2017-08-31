@@ -24,7 +24,7 @@ manager: "wpickett"
 # COM Interoperability in .NET Framework Applications (Visual Basic)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-When you want to use COM objects and .NET Framework objects in the same application, you need to address the differences in how the objects exist in memory. A .NET Framework object is located in managed memory—the memory controlled by the common language runtime—and may be moved by the runtime as needed. A COM object is located in unmanaged memory and is not expected to move to another memory location. [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] and the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provide tools to control the interaction of these managed and unmanaged components. For more information about managed code, see [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md).  
+When you want to use COM objects and .NET Framework objects in the same application, you need to address the differences in how the objects exist in memory. A .NET Framework object is located in managed memory—the memory controlled by the common language runtime—and may be moved by the runtime as needed. A COM object is located in unmanaged memory and is not expected to move to another memory location. [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] and the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provide tools to control the interaction of these managed and unmanaged components. For more information about managed code, see [Common Language Runtime](~/docs/standard/clr.md).  
   
  In addition to using COM objects in .NET applications, you may also want to use [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] to develop objects accessible from unmanaged code through COM.  
   
@@ -37,14 +37,14 @@ When you want to use COM objects and .NET Framework objects in the same applicat
  [COM Interop Wrapper Error](/visual-cpp/misc/com-interop-wrapper-error)  
  Describes the consequences and options if the project system cannot create a COM interoperability wrapper for a particular component.  
   
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)  
+ [Interoperating with Unmanaged Code](~/docs/framework/interop/index.md)  
  Briefly describes some of the interaction issues between managed and unmanaged code, and provides links for further study.  
   
- [COM Wrappers](../Topic/COM%20Wrappers.md)  
+ [COM Wrappers](~/docs/framework/interop/com-wrappers.md)  
  Discusses runtime callable wrappers, which allow managed code to call COM methods, and COM callable wrappers, which allow COM clients to call .NET object methods.  
   
  [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
  Provides links to topics covering COM interoperability with respect to wrappers, exceptions, inheritance, threading, events, conversions, and marshaling.  
   
- [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)  
+ [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md)  
  Discusses the tool you can use to convert the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly.

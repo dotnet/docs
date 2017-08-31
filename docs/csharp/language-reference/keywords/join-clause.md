@@ -76,7 +76,7 @@ The `join` clause is useful for associating elements from different source seque
 ## Joins on object collections vs. relational tables  
  In a [!INCLUDE[vbteclinq](../../../includes/vbteclinq-md.md)] query expression, join operations are performed on object collections. Object collections cannot be "joined" in exactly the same way as two relational tables. In [!INCLUDE[vbteclinq](../../../includes/vbteclinq-md.md)], explicit `join` clauses are only required when two source sequences are not tied by any relationship. When working with [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)], foreign key tables are represented in the object model as properties of the primary table. For example, in the Northwind database, the Customer table has a foreign key relationship with the Orders table. When you map the tables to the object model, the Customer class has an Orders property that contains the collection of Orders associated with that Customer. In effect, the join has already been done for you.  
   
- For more information about querying across related tables in the context of [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)], see [How to: Map Database Relationships](../Topic/How%20to:%20Map%20Database%20Relationships.md).  
+ For more information about querying across related tables in the context of [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)], see [How to: Map Database Relationships](~/docs/framework/data/adonet/sql/linq/how-to-map-database-relationships.md).  
   
 ## Composite Keys  
  You can test for equality of multiple values by using a composite key. For more information, see [How to: Join by Using Composite Keys](../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md). Composite keys can be also used in a `group` clause.  
@@ -92,11 +92,11 @@ The `join` clause is useful for associating elements from different source seque
 ## See Also  
  [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [Join Operations](../Topic/Join%20Operations.md)   
+ [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)   
  [group clause](../../../csharp/language-reference/keywords/group-clause.md)   
  [How to: Perform Left Outer Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md)   
  [How to: Perform Inner Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md)   
  [How to: Perform Grouped Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)   
  [How to: Order the Results of a Join Clause](../../../csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)   
  [How to: Join by Using Composite Keys](../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)   
- [How to: Install Sample Databases](../Topic/How%20to:%20Install%20Sample%20Databases.md)
+ [How to: Install Sample Databases](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e)

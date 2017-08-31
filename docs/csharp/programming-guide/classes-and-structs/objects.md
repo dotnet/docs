@@ -39,7 +39,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
  [!code-csharp[csProgGuideStatements#31](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#31)]  
   
- The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it is declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object have gone out of scope. It is not possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], see [Garbage Collection](../Topic/Garbage%20Collection.md).  
+ The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it is declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object have gone out of scope. It is not possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], see [Garbage Collection](~/docs/standard/garbage-collection/index.md).  
   
 > [!NOTE]
 >  The allocation and deallocation of memory on the managed heap is highly optimized in the common language runtime. In most cases there is no significant difference in the performance cost of allocating a class instance on the heap versus allocating a struct instance on the stack.  
@@ -77,4 +77,4 @@ A class or struct definition is like a blueprint that specifies what the type ca
  [class](../../../csharp/language-reference/keywords/class.md)   
  [struct](../../../csharp/language-reference/keywords/struct.md)   
  [new Operator](../../../csharp/language-reference/keywords/new-operator.md)   
- [Common Type System](../Topic/Common%20Type%20System.md)
+ [Common Type System](~/docs/standard/base-types/common-type-system.md)

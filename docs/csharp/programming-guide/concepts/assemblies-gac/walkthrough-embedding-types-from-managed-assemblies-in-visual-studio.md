@@ -245,5 +245,5 @@ If you embed type information from a strong-named managed assembly, you can loos
 ## See Also  
  [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-csharp-compiler-options.md)   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Programming with Assemblies](../Topic/Programming%20with%20Assemblies.md)   
+ [Programming with Assemblies](~/docs/framework/app-domains/programming-with-assemblies.md)   
  [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)

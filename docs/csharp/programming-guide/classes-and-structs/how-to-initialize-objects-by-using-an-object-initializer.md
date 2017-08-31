@@ -40,7 +40,7 @@ You can use object initializers to initialize type objects in a declarative mann
  [!code-csharp[csProgGuideLINQ#36](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csRef30LangFeatures_2.cs#36)]  
   
 ## Compiling the Code  
- To run this code, copy and paste the class into a Visual C# console application project that has been created in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]. For more information, see [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+ To run this code, copy and paste the class into a Visual C# console application project that has been created in [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]. For more information, see [How to: Create a LINQ Project](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

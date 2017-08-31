@@ -57,5 +57,5 @@ csc /addmodule:metad1.netmodule;metad2.netmodule /out:out.exe input.cs
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
- [Multifile Assemblies](../Topic/Multifile%20Assemblies.md)   
- [How to: Build a Multifile Assembly](../Topic/How%20to:%20Build%20a%20Multifile%20Assembly.md)
+ [Multifile Assemblies](~/docs/framework/app-domains/multifile-assemblies.md)   
+ [How to: Build a Multifile Assembly](~/docs/framework/app-domains/how-to-build-a-multifile-assembly.md)

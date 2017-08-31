@@ -26,6 +26,6 @@ Version 2.0 of the .NET Framework class library provides a new namespace, <xref:
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [When to Use Generic Collections](../Topic/When%20to%20Use%20Generic%20Collections.md)   
- [Collections and Data Structures](../Topic/Collections%20and%20Data%20Structures.md)   
+ [When to Use Generic Collections](~/docs/standard/collections/when-to-use-generic-collections.md)   
+ [Collections and Data Structures](~/docs/standard/collections/index.md)   
  [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)

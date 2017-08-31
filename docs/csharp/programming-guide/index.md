@@ -62,7 +62,7 @@ This section provides detailed information on key C# language features and featu
   
  [Generics](../../csharp/programming-guide/generics/index.md)  
   
- [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)  
   
  [LINQ Query Expressions](../../csharp/programming-guide/linq-query-expressions/index.md)  
   
@@ -79,11 +79,11 @@ This section provides detailed information on key C# language features and featu
 ## Platform Sections  
  [Application Domains (C# and Visual Basic)](http://msdn.microsoft.com/en-us/1bc2939a-79db-4a4a-a677-4a2ce6de2b1e)  
   
- [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/35127020-6dd6-4a2a-8db8-4b2ceb658b28)  
   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)  
   
- [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
   
  [Exceptions and Exception Handling](../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)  
   
@@ -91,7 +91,7 @@ This section provides detailed information on key C# language features and featu
   
  [Interoperability](../../csharp/programming-guide/interop/interoperability.md)  
   
- [Reflection](../Topic/Reflection%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Reflection](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)  
   
 ## Featured Book Chapter  
  [Advanced C#](http://go.microsoft.com/fwlink/?LinkId=195407) in [C# 3.0 in a Nutshell, Third Edition: A Desktop Quick Reference](http://go.microsoft.com/fwlink/?LinkId=195406)  

@@ -41,7 +41,7 @@ Holds signed 8-bit (1-byte) integers that range in value from -128 through 127.
   
 ## Programming Tips  
   
--   **CLS Compliance.** The `SByte` data type is not part of the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), so CLS-compliant code cannot consume a component that uses it.  
+-   **CLS Compliance.** The `SByte` data type is not part of the [Language Independence and Language-Independent Components](~/docs/standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot consume a component that uses it.  
   
 -   **Widening.** The `SByte` data type widens to `Short`, `Integer`, `Long`, `Decimal`, `Single`, and `Double`. This means you can convert `SByte` to any of these types without encountering a <xref:System.OverflowException?displayProperty=fullName> error.  
   

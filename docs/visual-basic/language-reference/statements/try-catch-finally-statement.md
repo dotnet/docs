@@ -130,7 +130,7 @@ End Try
  Ensure that code in `Catch` blocks can properly report exceptions to users, whether through thread-safe logging or appropriate messages. Otherwise, exceptions might remain unknown.  
   
 ## Async Methods  
- If you mark a method with the [Async](../../../visual-basic/language-reference/modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the method. A statement with the `Await` operator suspends execution of the method until the awaited task completes. The task represents ongoing work. When the task that's associated with the `Await` operator finishes, execution resumes in the same method. For more information, see [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md).  
+ If you mark a method with the [Async](../../../visual-basic/language-reference/modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the method. A statement with the `Await` operator suspends execution of the method until the awaited task completes. The task represents ongoing work. When the task that's associated with the `Await` operator finishes, execution resumes in the same method. For more information, see [Control Flow in Async Programs](http://msdn.microsoft.com/library/1128936d-d012-48e6-a7a5-cf199eed6fff).  
   
  A task returned by an Async method may end in a faulted state, indicating that it completed due to an unhandled exception. A task may also end in a canceled state, which results in an `OperationCanceledException` being thrown out of the await expression. To catch either type of exception, place the `Await` expression that's associated with the task in a `Try` block, and catch the exception in the `Catch` block. An example is provided later in this topic.  
   
@@ -141,7 +141,7 @@ End Try
 ## Iterators  
  An iterator function or `Get` accessor performs a custom iteration over a collection. An iterator uses a [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element of the collection one at a time. You call an iterator function by using a [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md).  
   
- A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. See the "Try Blocks in Visual Basic" section of [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md) for an example.  
+ A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. See the "Try Blocks in Visual Basic" section of [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7) for an example.  
   
  A `Yield` statement cannot be inside a `Catch` block or a `Finally` block.  
   
@@ -198,5 +198,5 @@ End Try
  [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
  [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)   
  [Best Practices for Using Code Snippets](/visual-studio/ide/best-practices-for-using-code-snippets)   
- [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md)   
+ [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md)   
  [Throw Statement](../../../visual-basic/language-reference/statements/throw-statement.md)

@@ -20,7 +20,7 @@ manager: "wpickett"
 # Interpolated Strings (C# and Visual Basic Reference)
 [!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
 
-Used to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string expression creates a string by replacing the contained expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../Topic/Composite%20Formatting.md).  Here is an example of an interpolated string:  
+Used to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string expression creates a string by replacing the contained expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  Here is an example of an interpolated string:  
   
 ```csharp  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}")  

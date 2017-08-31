@@ -93,4 +93,4 @@ class Program
   
 ## See Also  
  [Covariance and Contravariance (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/index.md)   
- [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)
+ [Generics](~/docs/standard/generics/index.md)

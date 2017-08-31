@@ -37,4 +37,4 @@ The following simple example shows the standard way to declare events in a base 
  [Events](../../../csharp/programming-guide/events/index.md)   
  [Delegates](../../../csharp/programming-guide/delegates/index.md)   
  [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
- [Creating Event Handlers in Windows Forms](../Topic/Creating%20Event%20Handlers%20in%20Windows%20Forms.md)
+ [Creating Event Handlers in Windows Forms](~/docs/framework/winforms/creating-event-handlers-in-windows-forms.md)

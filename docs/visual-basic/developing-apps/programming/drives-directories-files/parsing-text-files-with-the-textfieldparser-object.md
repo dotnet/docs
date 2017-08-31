@@ -58,4 +58,4 @@ The `TextFieldParser` object allows you to parse and process very large file tha
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TrimWhiteSpace%2A>   
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>   
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A>   
- [Troubleshooting Exceptions: Microsoft.VisualBasic.FileIO.TextFieldParser.MalformedLineException](../Topic/Troubleshooting%20Exceptions:%20Microsoft.VisualBasic.FileIO.TextFieldParser.MalformedLineException.md)
+ [Troubleshooting Exceptions: Microsoft.VisualBasic.FileIO.TextFieldParser.MalformedLineException](http://msdn.microsoft.com/library/d780b8cc-c3f1-45ed-8f8e-3f8728a4b770)

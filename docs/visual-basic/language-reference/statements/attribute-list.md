@@ -47,7 +47,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ## Remarks  
  You can apply one or more attributes to nearly any programming element (types, procedures, properties, and so forth). Attributes appear in your assembly's metadata, and they can help you annotate your code or specify how to use a particular programming element. You can apply attributes defined by Visual Basic and the .NET Framework, and you can define your own attributes.  
   
- For more information on when to use attributes, see [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md). For information on attribute names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
+ For more information on when to use attributes, see [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205). For information on attribute names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
   
 ## Rules  
   
@@ -71,5 +71,5 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ## See Also  
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)   
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

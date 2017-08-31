@@ -37,7 +37,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
  Required. File that contains the key. If the file name contains a space, enclose the name in quotation marks (" ").  
   
 ## Remarks  
- The compiler inserts the public key into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. For more information, see [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md).  
+ The compiler inserts the public key into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. For more information, see [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md).  
   
  If you compile with `/target:module`, the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly with [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md).  
   
@@ -49,7 +49,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
   
  Note that a key file might contain only the public key.  
   
- See [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](~/docs/framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
   
 > [!NOTE]
 >  The `/keyfile` option is not available from within the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] development environment; it is available only when compiling from the command line.  
@@ -62,7 +62,7 @@ vbc /keyfile:myfile.sn input.vb
 ```  
   
 ## See Also  
- [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/35127020-6dd6-4a2a-8db8-4b2ceb658b28)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference-visual-basic.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

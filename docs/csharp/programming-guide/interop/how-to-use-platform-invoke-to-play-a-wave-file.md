@@ -58,4 +58,4 @@ The following C# code example illustrates how to use platform invoke services to
  [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)   
  [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)   
  [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)   
- [Marshaling Data with Platform Invoke](../Topic/Marshaling%20Data%20with%20Platform%20Invoke.md)
+ [Marshaling Data with Platform Invoke](~/docs/framework/interop/marshaling-data-with-platform-invoke.md)

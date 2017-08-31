@@ -4,7 +4,7 @@ description: Unit testing has never been easier. See how to use unit testing in 
 keywords: .NET, .NET Core, .NET Standard, unit testing
 author: ardalis
 ms.author: wiwagn
-ms.date: 08/23/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -30,12 +30,20 @@ When writing unit tests, be careful you don’t accidentally introduce dependenc
 
 Learn more about unit testing in .NET Core projects:
 
-* Try this [walkthrough creating unit tests with xUnit and the .NET Core CLI](unit-testing-with-dotnet-test.md). 
+Unit Test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](http://xunit.github.io) and [MSTest](https://github.com/Microsoft/vstest-docs).
+
+You can read about those combinations in these walk-througs:
+
+* Create unit tests using [*XUnit* and *C#* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
+* Create unit tests using [*MSTest* and *C#* with the .NET Core CLI](unit-testing-with-mstest.md).
+* Create unit tests using [*XUnit* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-dotnet-test.md).
+* Create unit tests using [*MSTest* and *F#* with the .NET Core CLI](unit-testing-with-mstest.md).
+* Create unit tests using [*XUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
+* Create unit tests using [*MSTest* and *Visual Basic* with the .NET Core CLI](unit-testing-with-mstest.md).
+
+You can choose different languages for your class libraries and your unit test libraries. You can learn how by mixing and matching the walk-throughs referenced above.
+
+* If you are using Visual Studio, checkout [Live Unit Testing in .NET Core]()
+* For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](selective-unit-tests.md).
 * The XUnit team has written a tutorial that shows
 [how to use xUnit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
-* If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET Core CLI](unit-testing-with-mstest.md).
-* If you prefer F#, try this [walkthrough creating xunit tests with F# and .NET Core]() or [try it with MSTest]()
-* For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](selective-unit-tests.md).
-* If you are using Visual Studio, checkout [Live Unit Testing in .NET Core]()
-
-<!-- visual-basic and csharp are the tab names -->

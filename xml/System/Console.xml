@@ -3486,7 +3486,7 @@
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
         <block subset="none" type="usage">
-          <para>This method is not called by C++ code. The C++ compiler resolves calls to <see cref="Overload:System.Console.Write" /> that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to <see cref="Overload:System.Console.Write" /> that include a string and an object array as a call to <see cref="M:System.Console.Write(System.String,System.Object)" />.</para>
+          <para>This method is not called by C++ code. The C++ compiler resolves calls to [System.Console.Write](xref:System.Console.Write*) that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to [System.Console.Write](xref:System.Console.Write*) that include a string and an object array as a call to <see cref="M:System.Console.Write(System.String,System.Object)" />.</para>
         </block>
       </Docs>
     </Member>
@@ -4601,7 +4601,7 @@
         <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
         <block subset="none" type="usage">
-          <para>This method is not called by C++ code. The C++ compiler resolves calls to <see cref="Overload:System.Console.WriteLine" /> that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to <see cref="Overload:System.Console.WriteLine" /> that include a string and an object array as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object)" />.</para>
+          <para>This method is not called by C++ code. The C++ compiler resolves calls to [System.Console.WriteLine](xref:System.Console.WriteLine*) that include a string and a list of four or more object parameters as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" />. It resolves calls to [System.Console.WriteLine](xref:System.Console.WriteLine*) that include a string and an object array as a call to <see cref="M:System.Console.WriteLine(System.String,System.Object)" />.</para>
         </block>
       </Docs>
     </Member>

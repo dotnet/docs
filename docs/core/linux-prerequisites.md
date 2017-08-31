@@ -4,7 +4,7 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, Linux, debian, ubuntu, RHEL, centOS,
 author: jralexander
 ms.author: johalex
-ms.date: 08/30/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -134,6 +134,7 @@ To install .NET Core on RHEL 7:
     ```bash
     yum install scl-utils
     ```
+    
 3. Install .NET Core
 
 # [.NET Core 2.x](#tab/netcore2x)
@@ -154,13 +155,13 @@ Enable .NET Core 2.0 SDK/Runtime for your environment:
 
 **.NET Core 1.1**
 
-Install .NET Core 1.1 SDK and Runtime:
+   Install .NET Core 1.1 SDK and Runtime:
 
    ```bash
    yum install rh-dotnetcore11
    ```
 
-Enable .NET Core 1.1 SDK and Runtime for your environment:
+   Enable .NET Core 1.1 SDK and Runtime for your environment:
 
    ```bash
    scl enable rh-dotnetcore11 bash
@@ -168,13 +169,13 @@ Enable .NET Core 1.1 SDK and Runtime for your environment:
 
 **.NET Core 1.0**
 
-Install .NET Core 1.0 SDK and Runtime:
+   Install .NET Core 1.0 SDK and Runtime:
 
    ```bash
    yum install rh-dotnetcore10
    ```
 
-Enable .NET Core 1.0 SDK and Runtime for your environment:
+   Enable .NET Core 1.0 SDK and Runtime for your environment:
 
    ```bash
    scl enable rh-dotnetcore10 bash
@@ -287,9 +288,9 @@ To install .NET Core on Debian 8 or Debian 9 (64 bit):
 
 2. Get the prerequisites.
 
-```bash
-sudo apt-get install curl libunwind8 gettext
-```
+   ```bash
+   sudo apt-get install curl libunwind8 gettext
+   ```
 
 > [!Note]
 > A user-controlled directory is required for Linux system installs from tar.gz.
@@ -352,7 +353,8 @@ To Install .NET Core for Fedora 26, Fedora 25 (.NET Core 2.x) or Fedora 24 (.NET
    ```bash
    sudo dnf install libunwind libicu
    ```
-> [!Note]
+   
+> [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
 # [.NET Core 2.x](#tab/netcore2x)
@@ -419,7 +421,7 @@ To Install .NET Core for CentOS 7.1 (64 bit) & Oracle Linux 7.1 (64 bit):
     sudo yum install libunwind libicu
     ```
 
-> [!Note]
+> [!NOTE]
 > A user-controlled directory is required for Linux system installs from tar.gz.
 
 # [.NET Core 2.x](#tab/netcore2x)
@@ -489,11 +491,13 @@ To Install .NET Core 2.x for SUSE Linux Enterprise Server (SLES) 12 SP2 (64 bit)
    ```
 
 4. Extract the .NET Core SDK binaries.
+
     ```bash
     mkdir -p ~/dotnet && tar zxf dotnet.tar.gz -C ~/dotnet
     ```
 
 5. Add dotnet to your PATH.
+
     ```bash
    export PATH=$PATH:$HOME/dotnet
     ```

@@ -139,13 +139,13 @@ To install .NET Core on RHEL 7:
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-Install .NET Core 2.0 SDK and Runtime:
+a. Install .NET Core 2.0 SDK and Runtime:
 
    ```bash
    yum install rh-dotnet20
    ```
 
-Enable .NET Core 2.0 SDK/Runtime for your environment:
+b. Enable .NET Core 2.0 SDK/Runtime for your environment:
 
    ```bash
    scl enable rh-dotnet20 bash
@@ -155,13 +155,13 @@ Enable .NET Core 2.0 SDK/Runtime for your environment:
 
 **.NET Core 1.1**
 
-   Install .NET Core 1.1 SDK and Runtime:
+a. Install .NET Core 1.1 SDK and Runtime:
 
    ```bash
    yum install rh-dotnetcore11
    ```
 
-   Enable .NET Core 1.1 SDK and Runtime for your environment:
+b. Enable .NET Core 1.1 SDK and Runtime for your environment:
 
    ```bash
    scl enable rh-dotnetcore11 bash
@@ -169,13 +169,13 @@ Enable .NET Core 2.0 SDK/Runtime for your environment:
 
 **.NET Core 1.0**
 
-   Install .NET Core 1.0 SDK and Runtime:
+a. Install .NET Core 1.0 SDK and Runtime:
 
    ```bash
    yum install rh-dotnetcore10
    ```
 
-   Enable .NET Core 1.0 SDK and Runtime for your environment:
+b. Enable .NET Core 1.0 SDK and Runtime for your environment:
 
    ```bash
    scl enable rh-dotnetcore10 bash

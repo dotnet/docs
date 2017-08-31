@@ -106,7 +106,7 @@ Class D(Of V, W)
 End Class  
 ```  
   
-```cpp#  
+```cpp  
 generic<typename T, typename U> ref class B {};  
 generic<typename V, typename W> ref class D : B<int, V> {};  
 ```  

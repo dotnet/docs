@@ -1,13 +1,13 @@
 ---
-title: "How to: Call a Stored Procedure by Using LINQ (Visual Basic)"
+title: "How to: Call a Stored Procedure by Using LINQ (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,32 +18,20 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: 6436d384-d1e0-40aa-8afd-451007477260
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Call a Stored Procedure by Using LINQ (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Language-Integrated Query (LINQ) makes it easy to access database information, including database objects such as stored procedures.  
   
  The following example shows how to create an application that calls a stored procedure in a SQL Server database. The sample shows how to call two different stored procedures in the database. Each procedure returns the results of a query. One procedure takes input parameters, and the other procedure does not take parameters.  
   
- The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](https://msdn.microsoft.com/library/bb399411).  
+ The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](../Topic/Downloading%20Sample%20Databases.md).  
   
-[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../../../../includes/note-settings-general-md.md)]  
   
 ### To create a connection to a database  
   
@@ -85,14 +73,15 @@ Language-Integrated Query (LINQ) makes it easy to access database information, i
   
      Add the following code to the `Load` event to call either of the stored procedures exposed as methods for your data context.  
   
-     [!code-vb[VbLINQtoSQLHowTos#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-call-a-stored-procedure-by-using-linq_1.vb)]  
-    [!code-vb[VbLINQtoSQLHowTos#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-call-a-stored-procedure-by-using-linq_2.vb)]  
+     [!code-vb[VbLINQtoSQLHowTos#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form3.vb#1)]  
+    [!code-vb[VbLINQtoSQLHowTos#2](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form3.vb#2)]  
   
 4.  Press F5 to run your project and view the results.  
   
 ## See Also  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)   
- [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](http://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [DataContext Methods (O/R Designer)](/visual-studio/data-tools/datacontext-methods-o-r-designer)   
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../Topic/How%20to:%20Assign%20stored%20procedures%20to%20perform%20updates,%20inserts,%20and%20deletes%20\(O-R%20Designer\).md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)

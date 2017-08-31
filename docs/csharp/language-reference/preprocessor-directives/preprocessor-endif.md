@@ -1,9 +1,13 @@
 ---
-title: "#endif (C# Reference)"
+title: "#endif (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#endif"
@@ -15,26 +19,16 @@ ms.assetid: 6a5fca55-5aee-441f-86f6-1c99fbe9ec05
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # #endif (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 `#endif` specifies the end of a conditional directive, which began with the [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive. For example,  
   
-```csharp
-#define DEBUG  
+```  
+  
+      #define DEBUG  
 // ...  
 #if DEBUG  
     Console.WriteLine("Debug version");  

@@ -1,13 +1,13 @@
 ---
-title: "MustOverride (Visual Basic)"
-
+title: "MustOverride (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.MustOverride"
@@ -26,25 +26,13 @@ helpviewer_keywords:
   - "properties [Visual Basic], overriding"
 ms.assetid: 6e9d9ad6-bb64-433f-b32b-3ef84293bf96
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # MustOverride (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies that a property or procedure is not implemented in this class and must be overridden in a derived class before it can be used.  
   
 ## Remarks  

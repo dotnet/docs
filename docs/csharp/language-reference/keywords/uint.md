@@ -1,9 +1,13 @@
 ---
-title: "uint (C# Reference)"
-ms.date: "2017-03-14"
-ms.prod: .net
+title: "uint (C# Reference) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "uint"
@@ -16,22 +20,10 @@ ms.assetid: e93e42c6-ec72-4b0b-89df-2fd8d36f7a7b
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # uint (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
 
 The `uint` keyword signifies an integral type that stores values according to the size and range shown in the following table.  
   
@@ -42,41 +34,46 @@ The `uint` keyword signifies an integral type that stores values according to th
  **Note** The `uint` type is not CLS-compliant. Use `int` whenever possible.  
   
 ## Literals  
-
-You can declare and initialize a `uint` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. If the integer literal is outside the range of `uint` (that is, if it is less than <xref:System.UInt32.MinValue?displayProperty=fullName> or greater than <xref:System.UInt32.MaxValue?displayProperty=fullName>), a compilation error occurs.
-
-In the following example, integers equal to 3,000,000,000 that are represented as decimal, hexadecimal, and binary literals are assigned to `uint` values.  
+ You can declare and initialize a variable of the type `uint` like this example:  
   
-[!code-cs[uint](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#UInt)]  
-
-> [!NOTE] 
-> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix. 
-
-Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
-
-[!code-cs[uint](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#UIntS)]  
- 
- Integer literals can also include a suffix that denotes the type. The suffix `U` or 'u' denotes either a `uint` or a `ulong`, depending on the numeric value of the literal. The following example uses the `u` suffix to denote an unsigned integer of both types. Note that the first literal is a `uint` because its value is less than <xref:System.UInt32.MaxValue?displayProperty=fullName>, while the second is a `ulong` because its value is greater than <xref:System.UInt32.MaxValue?displayProperty=fullName>.
-
-[!code-cs[usuffix](../../../../samples/snippets/csharp/language-reference/keywords/numeric-suffixes.cs#1)]  
- 
-If an integer literal has no suffix, its type is the first of the following types in which its value can be represented: 
-
-1. [int](int.md)
-2. `uint`
-3. [long](../../../csharp/language-reference/keywords/long.md)
-4. [ulong](../../../csharp/language-reference/keywords/ulong.md) 
+```  
+  
+uint myUint = 4294967290;  
+```  
+  
+ When an integer literal has no suffix, its type is the first of these types in which its value can be represented: [int](../../../csharp/language-reference/keywords/int.md), `uint`, [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md). In this example, it is `uint`:  
+  
+```  
+  
+uint uInt1 = 123;  
+```  
+  
+ You can also use the suffix u or U, such as this:  
+  
+```  
+  
+uint uInt2 = 123U;  
+```  
+  
+ When you use the suffix `U` or `u`, the type of the literal is determined to be either `uint` or `ulong` according to the numeric value of the literal. For example:  
+  
+```  
+Console.WriteLine(44U.GetType());  
+Console.WriteLine(323442434344U.GetType());  
+```  
+  
+ This code displays `System.UInt32`, followed by `System.UInt64` -- the underlying types for `uint` and `ulong` respectively -- because the second literal is too large to be stored by the `uint` type.  
   
 ## Conversions  
  There is a predefined implicit conversion from `uint` to [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). For example:  
   
-```csharp  
+```  
 float myFloat = 4294967290;   // OK: implicit conversion to float  
 ```  
   
  There is a predefined implicit conversion from [byte](../../../csharp/language-reference/keywords/byte.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), or [char](../../../csharp/language-reference/keywords/char.md) to `uint`. Otherwise you must use a cast. For example, the following assignment statement will produce a compilation error without a cast:  
   
-```csharp  
+```  
 long aLong = 22;  
 // Error -- no implicit conversion from long:  
 uint uInt1 = aLong;   
@@ -86,7 +83,7 @@ uint uInt2 = (uint)aLong;
   
  Notice also that there is no implicit conversion from floating-point types to `uint`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```csharp  
+```  
 // Error -- no implicit conversion from double:  
 uint x = 3.0;  
 // OK -- explicit conversion:  
@@ -98,7 +95,7 @@ uint y = (uint)3.0;
  For more information about implicit numeric conversion rules, see the [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md).  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.UInt32>   

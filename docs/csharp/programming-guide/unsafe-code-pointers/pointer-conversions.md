@@ -1,13 +1,13 @@
 ---
-title: "Pointer Conversions (C# Programming Guide)"
-
+title: "Pointer Conversions (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,23 +17,11 @@ ms.assetid: f0e87502-477a-4ede-a31f-7a3e262e46fb
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Pointer Conversions (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The following table shows the predefined implicit pointer conversions. Implicit conversions might occur in many situations, including method invoking and assignment statements.  
   
 ## Implicit pointer conversions  
@@ -56,9 +44,9 @@ The following table shows the predefined implicit pointer conversions. Implicit 
 ## Example  
  In the following example, a pointer to `int` is converted to a pointer to `byte`. Notice that the pointer points to the lowest addressed byte of the variable. When you successively increment the result, up to the size of `int` (4 bytes), you can display the remaining bytes of the variable.  
   
- [!code-cs[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-conversions_1.cs)]  
+ [!code-csharp[csProgGuidePointers#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers2.cs#3)]  
   
- [!code-cs[csProgGuidePointers#4](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-conversions_2.cs)]  
+ [!code-csharp[csProgGuidePointers#4](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#4)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

@@ -1,13 +1,13 @@
 ---
-title: "^= Operator (Visual Basic)"
-
+title: "^= Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.^="
@@ -20,30 +20,19 @@ helpviewer_keywords:
   - "compound assignment statements"
 ms.assetid: 397da132-2d96-4a85-a7bc-f7c730a608c9
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # ^= Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Raises the value of a variable or property to the power of an expression and assigns the result back to the variable or property.  
   
 ## Syntax  
   
 ```  
+  
 variableorproperty ^= expression  
 ```  
   
@@ -69,7 +58,7 @@ variableorproperty ^= expression
 ## Example  
  The following example uses the `^=` operator to raise the value of one `Integer` variable to the power of a second variable and assign the result to the first variable.  
   
- [!code-vb[VbVbalrOperators#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/exponentiation-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#21](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#21)]  
   
 ## See Also  
  [^ Operator](../../../visual-basic/language-reference/operators/exponentiation-operator.md)   

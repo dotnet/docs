@@ -1,13 +1,13 @@
 ---
-title: "Introduction to LINQ (C#)"
+title: "Introduction to LINQ (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 54874feb-55e5-4ca8-a9d6-1c1127fd7fb1
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Introduction to LINQ (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framework version 3.5 that bridges the gap between the world of objects and the world of data.  
   
  Traditionally, queries against data are expressed as simple strings without type checking at compile time or IntelliSense support. Furthermore, you have to learn a different query language for each type of data source: SQL databases, XML documents, various Web services, and so on. LINQ makes a *query* a first-class language construct in C#. You write queries against strongly typed collections of objects by using language keywords and familiar operators.  
@@ -33,16 +30,16 @@ Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framewo
   
  The following illustration from Visual Studio shows a partially-completed LINQ query against a SQL Server database in both C# and Visual Basic with full type checking and IntelliSense support.  
   
- ![LINQ query with Intellisense](../../../../csharp/programming-guide/concepts/linq/media/query_intell.png "Query_Intell")  
+ ![LINQ query with Intellisense](../../../../csharp/programming-guide/concepts/linq/media/query-intell.png "Query_Intell")  
   
 ## Next Steps  
  To learn more details about LINQ, start by becoming familiar with some basic concepts in the Getting Started section [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md), and then read the documentation for the LINQ technology in which you are interested:  
   
--   SQL Server databases: [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
+-   SQL Server databases: [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)  
   
 -   XML documents: [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
   
--   ADO.NET Datasets: [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
+-   ADO.NET Datasets: [LINQ to DataSet](../Topic/LINQ%20to%20DataSet.md)  
   
 -   .NET collections, files, strings and so on: [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
   

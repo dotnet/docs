@@ -1,13 +1,13 @@
 ---
-title: "Expression of type &lt;type&gt; is not queryable"
-
+title: "Expression of type &lt;type&gt; is not queryable | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc36593"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC36593"
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
 caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Expression of type &lt;type&gt; is not queryable
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Expression of type \<type> is not queryable. Make sure you are not missing an assembly reference and/or namespace import for the LINQ provider.  
   
  Queryable types are defined in the <xref:System.Linq>, <xref:System.Data.Linq>, and <xref:System.Xml.Linq> namespaces. You must import one or more of these namespaces to perform LINQ queries.  
@@ -49,7 +37,7 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
   
  **Error ID:** BC36593  
   
-## To correct this error  
+### To correct this error  
   
 1.  Add an `Import` statement for the <xref:System.Linq>, <xref:System.Data.Linq>, or <xref:System.Xml.Linq> namespace to your code file. You can also import namespaces for your project by using the **References** page of the Project Designer (**My Project**).  
   
@@ -64,4 +52,4 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)   
  [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)   
  [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
- [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
+ [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)

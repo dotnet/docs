@@ -1,13 +1,13 @@
 ---
-title: "Projection Operations (C#)"
+title: "Projection Operations (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 98df573a-aad9-4b8c-9a71-844be2c4fb41
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Projection Operations (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Projection refers to the operation of transforming an object into a new form that often consists only of those properties that will be subsequently used. By using projection, you can construct a new type that is built from each object. You can project a property and perform a mathematical function on it. You can also project the original object without changing it.  
   
  The standard query operator methods that perform projection are listed in the following section.  

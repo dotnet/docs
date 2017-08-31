@@ -1,13 +1,13 @@
 ---
-title: "&lt;example&gt; (Visual Basic)"
+title: "&lt;example&gt; (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,30 +16,18 @@ helpviewer_keywords:
   - "<example> XML tag"
 ms.assetid: 90eeda1c-3fc4-427c-879c-5046d265a97c
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &lt;example&gt; (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies an example for the member.  
   
 ## Syntax  
   
-```xml  
+```  
 <example>description</example>  
 ```  
   
@@ -55,7 +43,7 @@ Specifies an example for the member.
 ## Example  
  This example uses the `<example>` tag to include an example for using the `ID` field.  
   
- [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/example_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#2)]  
   
 ## See Also  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

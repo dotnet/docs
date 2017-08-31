@@ -1,8 +1,8 @@
 ---
-title: "How to: Modify an Office Open XML Document (Visual Basic)"
+title: "How to: Modify an Office Open XML Document (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 1cefd7f5-8e39-44c4-869c-f8021538a777
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Modify an Office Open XML Document (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic presents an example that opens an Office Open XML document, modifies it, and saves it.  
   
  For more information on Office Open XML, see [www.openxmldeveloper.org](http://go.microsoft.com/fwlink/?LinkID=95573).  

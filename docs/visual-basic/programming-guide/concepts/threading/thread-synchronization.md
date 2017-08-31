@@ -1,8 +1,8 @@
 ---
-title: "Thread Synchronization (Visual Basic)"
+title: "Thread Synchronization (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 04f485d1-8333-4510-9e72-c334e7427e7e
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Thread Synchronization (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The following sections describe features and classes that can be used to synchronize access to resources in multithreaded applications.  
   
  One of the benefits of using multiple threads in an application is that each thread executes asynchronously. For Windows applications, this allows time-consuming tasks to be performed in the background while the application window and controls remain responsive. For server applications, multithreading provides the ability to handle each incoming request with a different thread. Otherwise, each new request would not get serviced until the previous request had been fully satisfied.  
@@ -33,11 +30,11 @@ The following sections describe features and classes that can be used to synchro
   
  For background information on multithreaded programming, see:  
   
--   [Managed Threading Basics](../../../../standard/threading/managed-threading-basics.md)  
+-   [Managed Threading Basics](../Topic/Managed%20Threading%20Basics.md)  
   
--   [Using Threads and Threading](../../../../standard/threading/using-threads-and-threading.md)  
+-   [Using Threads and Threading](../Topic/Using%20Threads%20and%20Threading.md)  
   
--   [Managed Threading Best Practices](../../../../standard/threading/managed-threading-best-practices.md)  
+-   [Managed Threading Best Practices](../Topic/Managed%20Threading%20Best%20Practices.md)  
   
 ## The lock and SyncLock Keywords  
  The Visual Basic `SyncLock` statement can be used to ensure that a block of code runs to completion without interruption by other threads. This is accomplished by obtaining a mutual-exclusion lock for a given object for the duration of the code block.  
@@ -64,7 +61,7 @@ End Class
   
 -   [SyncLock Statement](../../../../visual-basic/language-reference/statements/synclock-statement.md)  
   
--   @System.Threading.Monitor  
+-   [Monitors](../Topic/Monitors.md)  
   
 ## Monitors  
  Like the `SyncLock` keyword, monitors prevent blocks of code from simultaneous execution by multiple threads. The <xref:System.Threading.Monitor.Enter%2A> method allows one and only one thread to proceed into the following statements; all other threads are blocked until the executing thread calls <xref:System.Threading.Monitor.Exit%2A>. This is just like using the `SyncLock` keyword. For example:  
@@ -131,7 +128,7 @@ End Module
   
  When used for inter-process synchronization, a mutex is called a *named mutex* because it is to be used in another application, and therefore it cannot be shared by means of a global or static variable. It must be given a name so that both applications can access the same mutex object.  
   
- Although a mutex can be used for intra-process thread synchronization, using <xref:System.Threading.Monitor> is generally preferred, because monitors were designed specifically for the .NET Framework and therefore make better use of resources. In contrast, the <xref:System.Threading.Mutex> class is a wrapper to a Win32 construct. While it is more powerful than a monitor, a mutex requires interop transitions that are more computationally expensive than those required by the <xref:System.Threading.Monitor> class. For an example of using a mutex, see [Mutexes](../../../../standard/threading/mutexes.md).  
+ Although a mutex can be used for intra-process thread synchronization, using <xref:System.Threading.Monitor> is generally preferred, because monitors were designed specifically for the .NET Framework and therefore make better use of resources. In contrast, the <xref:System.Threading.Mutex> class is a wrapper to a Win32 construct. While it is more powerful than a monitor, a mutex requires interop transitions that are more computationally expensive than those required by the <xref:System.Threading.Monitor> class. For an example of using a mutex, see [Mutexes](../Topic/Mutexes.md).  
   
 ## Interlocked Class  
  You can use the methods of the <xref:System.Threading.Interlocked> class to prevent problems that can occur when multiple threads attempt to simultaneously update or compare the same value. The methods of this class let you safely increment, decrement, exchange, and compare values from any thread.  
@@ -161,8 +158,8 @@ End Module
  <xref:System.Threading.EventWaitHandle.Set%2A>   
  [Multithreaded Applications (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)   
  [SyncLock Statement](../../../../visual-basic/language-reference/statements/synclock-statement.md)   
- [Mutexes](../../../../standard/threading/mutexes.md)   
- @System.Threading.Monitor   
- [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)   
- [AutoResetEvent](../../../../standard/threading/autoresetevent.md)   
- [Synchronizing Data for Multithreading](../../../../standard/threading/synchronizing-data-for-multithreading.md)
+ [Mutexes](../Topic/Mutexes.md)   
+ [Monitors](../Topic/Monitors.md)   
+ [Interlocked Operations](../Topic/Interlocked%20Operations.md)   
+ [AutoResetEvent](../Topic/AutoResetEvent.md)   
+ [Synchronizing Data for Multithreading](../Topic/Synchronizing%20Data%20for%20Multithreading.md)

@@ -1,13 +1,13 @@
 ---
-title: "Number of indices exceeds the number of dimensions of the indexed array"
-
+title: "Number of indices exceeds the number of dimensions of the indexed array | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30106"
@@ -18,34 +18,23 @@ helpviewer_keywords:
   - "BC30106"
 ms.assetid: 2c5363e1-62c2-4f5a-b675-c7337aeb363d
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Number of indices exceeds the number of dimensions of the indexed array
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The number of indices used to access an array element must be exactly the same as the rank of the array, that is, the number of dimensions declared for it.  
   
  **Error ID:** BC30106  
   
-## To correct this error  
+### To correct this error  
   
 -   Remove subscripts from the array reference until the total number of subscripts equals the rank of the array. For example:  
   
-    ```vb  
+    ```  
+    [Visual Basic]  
     Dim gameBoard(3, 3) As String  
   
     ' Incorrect code. The array has two dimensions.  

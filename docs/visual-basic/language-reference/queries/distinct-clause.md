@@ -1,13 +1,13 @@
 ---
-title: "Distinct Clause (Visual Basic)"
-
+title: "Distinct Clause (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryDistinct"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "queries [Visual Basic], Distinct"
 ms.assetid: 86f42614-0d8f-4ffc-b888-ce8a37a8d36a
 caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Distinct Clause (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Restricts the values of the current range variable to eliminate duplicate values in subsequent query clauses.  
   
 ## Syntax  
@@ -52,7 +40,7 @@ Distinct
 ## Example  
  The following query expression joins a list of customers and a list of customer orders. The `Distinct` clause is included to return a list of unique customer names and order dates.  
   
- [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#20](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#20)]  
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

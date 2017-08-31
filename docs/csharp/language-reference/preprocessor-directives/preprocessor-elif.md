@@ -1,9 +1,13 @@
 ---
-title: "#elif (C# Reference)"
+title: "#elif (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#elif"
@@ -15,25 +19,14 @@ ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # #elif (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 `#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If a `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:  
   
-```csharp
+```  
 #define VC7  
 //...  
 #if debug  
@@ -48,7 +41,7 @@ translation.priority.ht:
 ## Remarks  
  `#elif` is equivalent to using:  
   
-```csharp
+```  
 #else  
 #if  
 ```  

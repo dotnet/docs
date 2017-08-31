@@ -1,13 +1,13 @@
 ---
-title: "Conversion Summary (Visual Basic)"
-
+title: "Conversion Summary (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,27 +18,14 @@ helpviewer_keywords:
   - "type conversion, keywords"
 ms.assetid: ae2c79a7-2d62-4fbe-8585-14360d11f987
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Conversion Summary (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+[!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  
 |------------|----------------------|  

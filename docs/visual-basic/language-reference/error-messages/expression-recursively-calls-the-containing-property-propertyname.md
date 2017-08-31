@@ -1,13 +1,13 @@
 ---
-title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
-
+title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39; | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc42026"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC42026"
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A statement in the `Set` procedure of a property definition stores a value into the name of the property.  
   
  The recommended approach to holding the value of a property is to define a `Private` variable in the property's container and use it in both the `Get` and `Set` procedures. The `Set` procedure should then store the incoming value in this `Private` variable.  
@@ -77,11 +65,11 @@ Public Class illustrateProperties
 End Class  
 ```  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42026  
   
-## To correct this error  
+### To correct this error  
   
 -   Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
   

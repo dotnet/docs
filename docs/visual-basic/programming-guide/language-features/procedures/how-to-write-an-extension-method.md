@@ -1,13 +1,13 @@
 ---
-title: "How to: Write an Extension Method (Visual Basic)"
+title: "How to: Write an Extension Method (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "extension methods [Visual Basic]"
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Write an Extension Method (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Extension methods enable you to add methods to an existing class. The extension method can be called as if it were an instance of that class.  
   
 ### To define an extension method  
@@ -95,6 +83,7 @@ Module Module1
     End Sub  
   
 End Module  
+  
 ```  
   
  Notice that the method is defined with two parameters and called with only one. The first parameter, `aString`, in the method definition is bound to `example`, the instance of `String` that calls the method. The output of the example is as follows:  
@@ -105,7 +94,7 @@ End Module
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.ExtensionAttribute>   
- [Extension Methods](./extension-methods.md)   
+ [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)   
  [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
+ [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

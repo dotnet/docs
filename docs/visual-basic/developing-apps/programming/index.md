@@ -1,13 +1,13 @@
 ---
-title: "Programming in Visual Basic"
-
+title: "Programming in Visual Basic | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,29 +16,17 @@ helpviewer_keywords:
   - "programming"
 ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Programming in Visual Basic
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 This section discusses programming tasks that you may want to learn more about as you create your Visual Basic application.  
   
-## In this section  
- [Accessing Computer Resources](../../../visual-basic/developing-apps/programming/computer-resources/computer-resources.md)  
+## In This Section  
+ [Accessing Computer Resources](../../../visual-basic/developing-apps/programming/computer-resources/index.md)  
  Contains documentation on how to use the `My.Computer` object to access information about the computer on which an application runs and how to control the computer.  
   
  [Logging Information from the Application](../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)  
@@ -56,11 +44,11 @@ This section discusses programming tasks that you may want to learn more about a
  [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)  
  Contains documentation on accessing an application's settings using the `My.Settings` object.  
   
- [Processing Drives, Directories, and Files](../../../visual-basic/developing-apps/programming/drives-directories-files/processing.md)  
+ [Processing Drives, Directories, and Files](../../../visual-basic/developing-apps/programming/drives-directories-files/index.md)  
  Contains documentation on how to access the file system using the `My.Computer.FileSystem` object.  
   
 ## See Also  
  [Visual Basic Language Features](../../../visual-basic/programming-guide/language-features/index.md)   
- [Programming Concepts](../../../visual-basic/programming-guide/concepts/index.md)   
- [Collections](../../../visual-basic/programming-guide/concepts/collections.md)   
+ [Programming Concepts](../Topic/Programming%20Concepts.md)   
+ [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)   
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

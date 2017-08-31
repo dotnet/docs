@@ -1,13 +1,13 @@
 ---
-title: "How to: Call an Extension Method (Visual Basic)"
+title: "How to: Call an Extension Method (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,26 +16,14 @@ helpviewer_keywords:
   - "extension methods [Visual Basic]"
 ms.assetid: df07750f-40f4-4c07-a79e-1113a27cfbea
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Call an Extension Method (Visual Basic)
-Extension methods enable you to add methods to an existing class. After an extension method is declared and brought into scope, you can call it like an instance method of the type that it extends. For more information about how to write an extension method, see [How to: Write an Extension Method](./how-to-write-an-extension-method.md).  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+Extension methods enable you to add methods to an existing class. After an extension method is declared and brought into scope, you can call it like an instance method of the type that it extends. For more information about how to write an extension method, see [How to: Write an Extension Method](../../../../visual-basic/programming-guide/language-features/procedures/how-to-write-an-extension-method.md).  
   
  The following instructions refer to extension method `PrintAndPunctuate`, which will display the string instance that invokes it, followed by whatever value is sent in for the second parameter, `punc`.  
   
@@ -50,6 +38,7 @@ Module StringExtensions
     End Sub  
   
 End Module  
+  
 ```  
   
  The method must be in scope when it is called.  
@@ -117,6 +106,6 @@ End Module
 ```  
   
 ## See Also  
- [How to: Write an Extension Method](./how-to-write-an-extension-method.md)   
- [Extension Methods](./extension-methods.md)   
+ [How to: Write an Extension Method](../../../../visual-basic/programming-guide/language-features/procedures/how-to-write-an-extension-method.md)   
+ [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)   
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

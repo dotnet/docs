@@ -1,7 +1,10 @@
 ---
-title: "Sorry, we don&#39;t have specifics on this Visual Basic error"
+title: "Sorry, we don&#39;t have specifics on this Visual Basic error | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
@@ -3052,42 +3055,27 @@ dev_langs:
   - "VB"
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
 caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Sorry, we don&#39;t have specifics on this Visual Basic error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or, you can ask other developers using one of these forums:  
   
  [Visual Basic Language](http://go.microsoft.com/fwlink/?LinkId=145963)  
- Provides a forum for questions about and general discussions of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language syntax and compiler.  
+ Provides a forum for questions about and general discussions of the [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] language syntax and compiler.  
   
  [Visual Basic Interop and Upgrade](http://go.microsoft.com/fwlink/?LinkId=145966)  
- Provides a forum for questions about and issues with upgrading to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] and working with interoperability features.  
+ Provides a forum for questions about and issues with upgrading to [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] and working with interoperability features.  
   
  [Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)  
- Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] environment.  
+ Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environment.  
   
  [Visual Basic General](http://go.microsoft.com/fwlink/?LinkId=145973)  
- Provides a forum for questions about and issues with [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that are not discussed in other forums.  
+ Provides a forum for questions about and issues with [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] that are not discussed in other forums.  
   
  [StackOverflow](http://stackoverflow.com/questions/tagged/vb.net)  
- Provides a forum for questions about and issues with [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Provides a forum for questions about and issues with [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)].  
   
  Also see:  
  [Additional Resources for Visual Basic Programmers](../../visual-basic/getting-started/additional-resources.md)  

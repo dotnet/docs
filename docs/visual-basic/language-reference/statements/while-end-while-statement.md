@@ -1,13 +1,13 @@
 ---
-title: "While...End While Statement (Visual Basic)"
-
+title: "While...End While Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.While"
@@ -20,43 +20,32 @@ helpviewer_keywords:
   - "While...End While statements"
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # While...End While Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Runs a series of statements as long as a given condition is `True`.  
   
 ## Syntax  
   
 ```  
 While condition  
-    [ statements ]  
+    [ statements ]  
     [ Continue While ]  
     [ statements ]  
-    [ Exit While ]  
-    [ statements ]  
+    [ Exit While ]  
+    [ statements ]  
 End While  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`condition`|Required. `Boolean` expression. If `condition` is `Nothing`, Visual Basic treats it as `False`.|  
 |`statements`|Optional. One or more statements following `While`, which run every time `condition` is `True`.|  
 |`Continue While`|Optional. Transfers control to the next iteration of the `While` block.|  
@@ -91,17 +80,17 @@ End While
 ## Example  
  In the following example, the statements in the loop continue to run until the `index` variable is greater than 10.  
   
- [!code-vb[VbVbalrStatements#171](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#171](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#171)]  
   
 ## Example  
  The following example illustrates the use of the `Continue While` and `Exit While` statements.  
   
- [!code-vb[VbVbalrStatements#172](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#172](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#172)]  
   
 ## Example  
  The following example reads all lines in a text file. The <xref:System.IO.File.OpenText%2A> method opens the file and returns a <xref:System.IO.StreamReader> that reads the characters. In the `While` condition, the <xref:System.IO.StreamReader.Peek%2A> method of the `StreamReader` determines whether the file contains additional characters.  
   
- [!code-vb[VbVbalrStatements#173](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#173](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
   
 ## See Also  
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   

@@ -1,8 +1,8 @@
 ---
-title: "How to: Create a Variable that Does Not Change in Value (Visual Basic)"
+title: "How to: Create a Variable that Does Not Change in Value (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "variables [Visual Basic], constant value"
 ms.assetid: 86b59266-25df-4635-ae15-9b59c411d036
 caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Create a Variable that Does Not Change in Value (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The notion of a variable that does not change its value might appear to be contradictory. But there are situations when a constant is not feasible and it is useful to have a variable with a fixed value. In such a case you can define a member variable with the [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md) keyword.  
   
  You cannot use the [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md) to declare and assign a constant value in the following circumstances:  
@@ -50,6 +38,7 @@ The notion of a variable that does not change its value might appear to be contr
 1.  At module level, declare a member variable with the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md), and include the [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md) keyword.  
   
     ```  
+  
     Dim ReadOnly timeStarted  
     ```  
   

@@ -1,13 +1,13 @@
 ---
-title: "Differences Between Shadowing and Overriding (Visual Basic)"
+title: "Differences Between Shadowing and Overriding (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "overriding, vs. shadowing"
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
 caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Differences Between Shadowing and Overriding (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 When you define a class that inherits from a base class, you sometimes want to redefine one or more of the base class elements in the derived class. Shadowing and overriding are both available for this purpose.  
   
 ## Comparison  
@@ -43,7 +31,7 @@ When you define a class that inherits from a base class, you sometimes want to r
  The following table compares shadowing with overriding.  
   
 ||||  
-|---|---|---|  
+|-|-|-|  
 |Point of comparison|Shadowing|Overriding|  
 |Purpose|Protects against a subsequent base-class modification that introduces a member you have already defined in your derived class|Achieves polymorphism by defining a different implementation of a procedure or property with the same calling sequence<sup>1</sup>|  
 |Redefined element|Any declared element type|Only a procedure (`Function`, `Sub`, or `Operator`) or property|  

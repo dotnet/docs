@@ -1,13 +1,13 @@
 ---
-title: "How to: Return a LINQ Query Result as a Specific Type (Visual Basic)"
+title: "How to: Return a LINQ Query Result as a Specific Type (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -20,32 +20,20 @@ helpviewer_keywords:
   - "query samples [Visual Basic]"
 ms.assetid: 621bb10a-e5d7-44fb-a025-317964b19d92
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Return a LINQ Query Result as a Specific Type (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries. By default, LINQ queries return a list of objects as an anonymous type. You can also specify that a query return a list of a specific type by using the `Select` clause.  
   
  The following example shows how to create a new application that performs queries against a SQL Server database and projects the results as a specific named type. For more information, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md) and [Select Clause](../../../../visual-basic/language-reference/queries/select-clause.md).  
   
- The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](https://msdn.microsoft.com/library/bb399411).  
+ The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](../Topic/Downloading%20Sample%20Databases.md).  
   
-[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../../../../includes/note-settings-general-md.md)]  
   
 ### To create a connection to a database  
   
@@ -85,7 +73,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 3.  After the `End Class` statement of the Form1 class, add the following code to create a `CustomerInfo` type to hold the query results for this sample.  
   
-     [!code-vb[VbLINQToSQLHowTos#16](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_1.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#16](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form8.vb#16)]  
   
 4.  When you added tables to the O/R Designer, the designer added a <xref:System.Data.Linq.DataContext> object to your project. This object contains the code that you must have to access those tables, and to access individual objects and collections for each table. The <xref:System.Data.Linq.DataContext> object for your project is named based on the name of your .dbml file. For this project, the <xref:System.Data.Linq.DataContext> object is named `northwindDataContext`.  
   
@@ -93,12 +81,13 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
      In the `Load` event of the Form1 class, add the following code to query the tables that are exposed as properties of your data context. The `Select` clause of the query will create a new `CustomerInfo` type instead of an anonymous type for each item of the query result.  
   
-     [!code-vb[VbLINQToSQLHowTos#15](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_2.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#15](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form8.vb#15)]  
   
 5.  Press F5 to run your project and view the results.  
   
 ## See Also  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [DataContext Methods (O/R Designer)](/visual-studio/data-tools/datacontext-methods-o-r-designer)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)

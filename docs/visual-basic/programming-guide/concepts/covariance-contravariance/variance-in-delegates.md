@@ -1,8 +1,8 @@
 ---
-title: "Variance in Delegates (Visual Basic)"
+title: "Variance in Delegates (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 38e9353f-74f8-4211-a8f0-7a495414df4a
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Variance in Delegates (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 .NET Framework 3.5 introduced variance support for matching method signatures with delegate types in all delegates in C# and Visual Basic. This means that you can assign to delegates not only methods that have matching signatures, but also methods that return more derived types (covariance) or that accept parameters that have less derived types (contravariance) than that specified by the delegate type. This includes both generic and non-generic delegates.  
   
  For example, consider the following code, which has two classes and two delegates: generic and non-generic.  
@@ -181,7 +178,7 @@ dvariant("test")
  You should not combine variant delegates. The <xref:System.Delegate.Combine%2A> method does not support variant delegate conversion and expects delegates to be of exactly the same type. This can lead to a run-time exception when you combine delegates either by using the <xref:System.Delegate.Combine%2A> method (in C# and Visual Basic) or by using the `+` operator (in C#), as shown in the following code example.  
   
 ```vb  
-Dim actObj As Action(Of Object) = Sub(x) Console.WriteLine("object: {0}", x)  
+im actObj As Action(Of Object) = Sub(x) Console.WriteLine("object: {0}", x)  
 Dim actStr As Action(Of String) = Sub(x) Console.WriteLine("string: {0}", x)  
   
 ' The following statement throws an exception at run time.  
@@ -217,5 +214,5 @@ End Sub
  Relaxed delegate conversion enables more flexibility in matching method signatures with delegate types. For example, it lets you omit parameter specifications and omit function return values when you assign a method to a delegate. For more information, see [Relaxed Delegate Conversion](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
   
 ## See Also  
- [Generics](~/docs/standard/generics/index.md)   
+ [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)   
  [Using Variance for Func and Action Generic Delegates (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)

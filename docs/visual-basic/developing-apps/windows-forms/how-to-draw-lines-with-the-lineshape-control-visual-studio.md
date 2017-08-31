@@ -1,13 +1,13 @@
 ---
-title: "How to: Draw Lines with the LineShape Control (Visual Studio)"
-
+title: "How to: Draw Lines with the LineShape Control (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "lines, drawing"
 ms.assetid: 83e71b4e-aa76-4f9b-b547-8704309fd1e5
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Draw Lines with the LineShape Control (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 You can use the <xref:Microsoft.VisualBasic.PowerPacks.LineShape> control to draw horizontal, vertical, or diagonal lines on a form or container, both at design time and at run time.  
   
  **Note** Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -57,18 +45,18 @@ You can use the <xref:Microsoft.VisualBasic.PowerPacks.LineShape> control to dra
   
 3.  In the **Code Editor**, add an `Imports` or `using` statement at the top of the module:  
   
-```vb  
-Imports Microsoft.VisualBasic.PowerPacks  
-```  
+    ```vb  
+    Imports Microsoft.VisualBasic.PowerPacks  
+    ```  
   
-```csharp  
-using Microsoft.VisualBasic.PowerPacks;  
-```  
+    ```csharp  
+    using Microsoft.VisualBasic.PowerPacks;  
+    ```  
   
 4.  Add the following code in an `Event` procedure:  
   
-     [!code-cs[VbPowerPacksLine#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-draw-lines-with-the-lineshape-control-visual-studio_1.cs)]
-     [!code-vb[VbPowerPacksLine#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-draw-lines-with-the-lineshape-control-visual-studio_1.vb)]  
+     [!code-csharp[VbPowerPacksLine#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksLine/CS/VbPowerpacksLine.cs#1)]
+     [!code-vb[VbPowerPacksLine#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksLine/VB/VBPowerpacksLine.vb#1)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.PowerPacks.LineShape>   

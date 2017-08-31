@@ -1,13 +1,13 @@
 ---
-title: "Overloaded Properties and Methods (Visual Basic)"
+title: "Overloaded Properties and Methods (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -23,41 +23,29 @@ helpviewer_keywords:
   - "Overloads keyword, overloaded members"
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Overloaded Properties and Methods (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Overloading is the creation of more than one procedure, instance constructor, or property in a class with the same name but different argument types.  
   
 ## Overloading Usage  
  Overloading is especially useful when your object model dictates that you employ identical names for procedures that operate on different data types. For example, a class that can display several different data types could have `Display` procedures that look like this:  
   
- [!code-vb[VbVbalrOOP#64](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_1.vb)]  
+ [!code-vb[VbVbalrOOP#64](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#64)]  
   
  Without overloading, you would need to create distinct names for each procedure, even though they do the same thing, as shown next:  
   
- [!code-vb[VbVbalrOOP#65](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_2.vb)]  
+ [!code-vb[VbVbalrOOP#65](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#65)]  
   
  Overloading makes it easier to use properties or methods because it provides a choice of data types that can be used. For example, the overloaded `Display` method discussed previously can be called with any of the following lines of code:  
   
- [!code-vb[VbVbalrOOP#66](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_3.vb)]  
+ [!code-vb[VbVbalrOOP#66](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#66)]  
   
- At run time, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] calls the correct procedure based on the data types of the parameters you specify.  
+ At run time, [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] calls the correct procedure based on the data types of the parameters you specify.  
   
 ## Overloading Rules  
  You create an overloaded member for a class by adding two or more properties or methods with the same name. Except for overloaded derived members, each overloaded member must have different parameter lists, and the following items cannot be used as a differentiating feature when overloading a property or procedure:  
@@ -85,11 +73,11 @@ Overloading is the creation of more than one procedure, instance constructor, or
   
 2.  Add the following code to the `TaxClass` class.  
   
-     [!code-vb[VbVbalrOOP#67](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_4.vb)]  
+     [!code-vb[VbVbalrOOP#67](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#67)]  
   
 3.  Add the following procedure to your form.  
   
-     [!code-vb[VbVbalrOOP#68](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_5.vb)]  
+     [!code-vb[VbVbalrOOP#68](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#68)]  
   
 4.  Add a button to your form and call the `ShowTax` procedure from the `Button1_Click` event of the button.  
   

@@ -1,8 +1,8 @@
 ---
-title: "Creating Variant Generic Interfaces (Visual Basic)"
+title: "Creating Variant Generic Interfaces (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: d4037dd2-dfe9-4811-9150-93d4e8b20113
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Creating Variant Generic Interfaces (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You can declare generic type parameters in interfaces as covariant or contravariant. *Covariance* allows interface methods to have more derived return types than that defined by the generic type parameters. *Contravariance* allows interface methods to have argument types that are less derived than that specified by the generic parameters. A generic interface that has covariant or contravariant generic type parameters is called *variant*.  
   
 > [!NOTE]

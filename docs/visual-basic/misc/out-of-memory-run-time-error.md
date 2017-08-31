@@ -1,41 +1,26 @@
 ---
-title: "Out of memory (Visual Basic Run-Time Error)"
-
+title: "Out of memory (Visual Basic Run-Time Error) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID7"
 ms.assetid: 96cc12e1-d40a-425f-b365-1ac39e5ddcb0
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Out of memory (Visual Basic Run-Time Error)
 More memory was required than is available.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Close unnecessary applications, documents, or source files that are open.  
   

@@ -1,13 +1,13 @@
 ---
-title: "How to: Convert Hexadecimal Strings to Numbers (Visual Basic)"
+title: "How to: Convert Hexadecimal Strings to Numbers (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "string conversion, hexadecimal to numbers"
 ms.assetid: 76675807-eadb-4c08-bd50-e6c6ff4b8ced
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Convert Hexadecimal Strings to Numbers (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example converts a hexadecimal string to an integer using the <xref:System.Convert.ToInt32%2A> method.  
   
 ### To convert a hexadecimal string to a number  
@@ -46,7 +34,7 @@ This example converts a hexadecimal string to an integer using the <xref:System.
   
      The first argument of the <xref:System.Convert.ToInt32%2A> method is the string to convert. The second argument describes what base the number is expressed in; hexadecimal is base 16.  
   
-     [!code-vb[VbVbalrStrings#62](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-hexadecimal-strings-to-numbers_1.vb)]  
+     [!code-vb[VbVbalrStrings#62](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#62)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Conversion.Hex%2A>   

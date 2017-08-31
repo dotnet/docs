@@ -1,8 +1,8 @@
 ---
-title: "Retrieving the Paragraphs and Their Styles (Visual Basic)"
+title: "Retrieving the Paragraphs and Their Styles (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: d9ed2238-d38e-4ad4-b88b-db7859df9bde
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Retrieving the Paragraphs and Their Styles (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 In this example, we write a query that retrieves the paragraph nodes from a WordprocessingML document. It also identifies the style of each paragraph.  
   
  This query builds on the query in the previous example, [Finding the Default Paragraph Style (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/finding-the-default-paragraph-style.md), which retrieves the default style from the list of styles. This information is required so that the query can identify the style of paragraphs that do not have a style explicitly set. Paragraph styles are set through the `w:pPr` element; if a paragraph does not contain this element, it is formatted with the default style.  

@@ -1,13 +1,13 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; is not defined"
-
+title: "Type &#39;&lt;typename&gt;&#39; is not defined | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30002"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC30002"
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Type &#39;&lt;typename&gt;&#39; is not defined
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The statement has made reference to a type that has not been defined. You can define a type in a declaration statement such as `Enum`, `Structure`, `Class`, or `Interface`.  
   
  **Error ID:** BC30002  
   
-## To correct this error  
+### To correct this error  
   
 -   Ensure that the type definition and its reference both use the same spelling.  
   
@@ -49,9 +37,9 @@ The statement has made reference to a type that has not been defined. You can de
   
 -   Ensure that the namespace of the type is not redefined within your project. If it is, use the `Global` keyword to fully qualify the type name. For example, if a project defines a namespace named `System`, the <xref:System.Object?displayProperty=fullName> type cannot be accessed unless it is fully qualified with the `Global` keyword: `Global.System.Object`.  
   
--   If the type is defined, but the object library or type library in which it is defined is not registered in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], click **Add Reference** on the **Project** menu, and then select the appropriate object library or type library.  
+-   If the type is defined, but the object library or type library in which it is defined is not registered in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], click **Add Reference** on the **Project** menu, and then select the appropriate object library or type library.  
   
--   Ensure that the type is in an assembly that is part of the targeted .NET Framework profile. For more information, see [Troubleshooting .NET Framework Targeting Errors](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
+-   Ensure that the type is in an assembly that is part of the targeted .NET Framework profile. For more information, see [Troubleshooting .NET Framework Targeting Errors](/visual-studio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
   
 ## See Also  
  [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)   
@@ -59,4 +47,4 @@ The statement has made reference to a type that has not been defined. You can de
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
  [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)

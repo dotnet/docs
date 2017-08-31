@@ -1,13 +1,13 @@
 ---
-title: "Directives (Visual Basic)"
-
+title: "Directives (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "directives"
 ms.assetid: 20d5fe65-490a-4c23-88c2-ee4f490ed762
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Directives (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The topics in this section document the Visual Basic source code compiler directives.  
   
 ## In This Section  
@@ -55,6 +43,7 @@ The topics in this section document the Visual Basic source code compiler direct
         Console.WriteLine("testing")  
     End Function  
 #Enable Warning BC42356  
+  
 ```  
   
  You can disable and enable a comma-separated list of warning codes too.  

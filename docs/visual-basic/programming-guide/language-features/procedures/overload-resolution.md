@@ -1,13 +1,13 @@
 ---
-title: "Overload Resolution (Visual Basic)"
+title: "Overload Resolution (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,26 +21,14 @@ helpviewer_keywords:
   - "overloads, resolution"
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Overload Resolution (Visual Basic)
-When the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler encounters a call to a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to call. It does this by performing the following steps:  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+When the [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] compiler encounters a call to a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to call. It does this by performing the following steps:  
   
 1.  **Accessibility.** It eliminates any overload with an access level that prevents the calling code from calling it.  
   
@@ -58,14 +46,14 @@ When the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler encounters a call 
   
  The following illustration shows the process that determines which of a set of overloaded versions to call.  
   
- ![Flow diagram of overload resolution process](./media/overloadres.gif "OverloadRes")  
+ ![Flow diagram of overload resolution process](../../../../visual-basic/programming-guide/language-features/procedures/media/overloadres.gif "OverloadRes")  
 Resolving among overloaded versions  
   
  The following example illustrates this overload resolution process.  
   
- [!code-vb[VbVbcnProcedures#62](./codesnippet/VisualBasic/overload-resolution_1.vb)]  
+ [!code-vb[VbVbcnProcedures#62](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#62)]  
   
- [!code-vb[VbVbcnProcedures#63](./codesnippet/VisualBasic/overload-resolution_2.vb)]  
+ [!code-vb[VbVbcnProcedures#63](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#63)]  
   
  In the first call, the compiler eliminates the first overload because the type of the first argument (`Short`) narrows to the type of the corresponding parameter (`Byte`). It then eliminates the third overload because each argument type in the second overload (`Short` and `Single`) widens to the corresponding type in the third overload (`Integer` and `Single`). The second overload requires less widening, so the compiler uses it for the call.  
   
@@ -74,22 +62,23 @@ Resolving among overloaded versions
 ## Overloaded Optional and ParamArray Arguments  
  If two overloads of a procedure have identical signatures except that the last parameter is declared [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) in one and [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) in the other, the compiler resolves a call to that procedure as follows:  
   
+|||  
+|-|-|  
 |If the call supplies the last argument as|The compiler resolves the call to the overload declaring the last argument as|  
-|---|---|  
 |No value (argument omitted)|`Optional`|  
 |A single value|`Optional`|  
 |Two or more values in a comma-separated list|`ParamArray`|  
 |An array of any length (including an empty array)|`ParamArray`|  
   
 ## See Also  
- [Optional Parameters](./optional-parameters.md)   
- [Parameter Arrays](./parameter-arrays.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Troubleshooting Procedures](./troubleshooting-procedures.md)   
- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)   
- [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)   
- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)   
- [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)   
- [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)   
+ [Optional Parameters](../../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
+ [Parameter Arrays](../../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)   
+ [Procedure Overloading](../../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
+ [Troubleshooting Procedures](../../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   
+ [How to: Define Multiple Versions of a Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-multiple-versions-of-a-procedure.md)   
+ [How to: Call an Overloaded Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-overloaded-procedure.md)   
+ [How to: Overload a Procedure that Takes Optional Parameters](../../../../visual-basic/programming-guide/language-features/procedures/how-to-overload-a-procedure-that-takes-optional-parameters.md)   
+ [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](../../../../visual-basic/programming-guide/language-features/procedures/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)   
+ [Considerations in Overloading Procedures](../../../../visual-basic/programming-guide/language-features/procedures/considerations-in-overloading-procedures.md)   
  [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)   
- [Extension Methods](./extension-methods.md)
+ [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)

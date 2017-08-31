@@ -1,13 +1,13 @@
 ---
-title: "How to: Call an Operator Procedure (Visual Basic)"
+title: "How to: Call an Operator Procedure (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,28 +22,16 @@ helpviewer_keywords:
   - "operator overloading"
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Call an Operator Procedure (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You call an operator procedure by using the operator symbol in an expression. In the case of a conversion operator, you call the [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) to convert a value from one data type to another.  
   
- You do not call operator procedures explicitly. You just use the operator, or the `CType` function, in an assignment statement or an expression, the same way you ordinarily use an operator. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] makes the call to the operator procedure.  
+ You do not call operator procedures explicitly. You just use the operator, or the `CType` function, in an assignment statement or an expression, the same way you ordinarily use an operator. [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] makes the call to the operator procedure.  
   
  Defining an operator on a class or structure is also called *overloading* the operator.  
   
@@ -66,19 +54,19 @@ You call an operator procedure by using the operator symbol in an expression. In
 ## Example  
  The following example creates two <xref:System.TimeSpan> structures, adds them together, and stores the result in a third <xref:System.TimeSpan> structure. The <xref:System.TimeSpan> structure defines operator procedures to overload several standard operators.  
   
- [!code-vb[VbVbcnProcedures#29](./codesnippet/VisualBasic/how-to-call-an-operator-procedure_1.vb)]  
+ [!code-vb[VbVbcnProcedures#29](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#29)]  
   
  Because <xref:System.TimeSpan> overloads the standard `+` operator, the previous example calls an operator procedure when it calculates the value of `combinedSpan`.  
   
- For an example of calling a conversation operator procedure, see [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md).  
+ For an example of calling a conversation operator procedure, see [How to: Use a Class that Defines Operators](../../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md).  
   
 ## Compiling the Code  
  Be sure the class or structure you are using defines the operator you want to use.  
   
 ## See Also  
- [Operator Procedures](./operator-procedures.md)   
- [How to: Define an Operator](./how-to-define-an-operator.md)   
- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)   
+ [Operator Procedures](../../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
+ [How to: Define an Operator](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
+ [How to: Define a Conversion Operator](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)   
  [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)   
  [Widening](../../../../visual-basic/language-reference/modifiers/widening.md)   
  [Narrowing](../../../../visual-basic/language-reference/modifiers/narrowing.md)   

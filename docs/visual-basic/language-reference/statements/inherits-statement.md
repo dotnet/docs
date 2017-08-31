@@ -1,13 +1,13 @@
 ---
-title: "Inherits Statement"
-
+title: "Inherits Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Inherits"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "Inherits statement, syntax"
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Inherits Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Causes the current class or interface to inherit the attributes, variables, properties, procedures, and events from another class or set of interfaces.  
   
 ## Syntax  
@@ -48,8 +36,9 @@ Inherits basetypenames
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`basetypenames`|Required. The name of the class from which this class derives.<br /><br /> -or-<br /><br /> The names of the interfaces from which this interface derives. Use commas to separate multiple names.|  
   
 ## Remarks  
@@ -76,12 +65,12 @@ Inherits basetypenames
 ## Example  
  The following example uses the `Inherits` statement to show how a class named `thisClass` can inherit all the members of a base class named `anotherClass`.  
   
- [!code-vb[VbVbalrStatements#37](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#37](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#37)]  
   
 ## Example  
  The following example shows inheritance of multiple interfaces.  
   
- [!code-vb[VbVbalrStatements#38](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#38](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#38)]  
   
  The interface named `thisInterface` now includes all the definitions in the <xref:System.IComparable>, <xref:System.IDisposable>, and <xref:System.IFormattable> interfaces The inherited members provide respectively for type-specific comparison of two objects, releasing allocated resources, and expressing the value of an object as a `String`. A class that implements `thisInterface` must implement every member of every base interface.  
   

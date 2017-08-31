@@ -1,8 +1,8 @@
 ---
-title: "LINQ to XML Axes Overview (Visual Basic)"
+title: "LINQ to XML Axes Overview (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,18 +13,20 @@ dev_langs:
   - "VB"
 ms.assetid: 9161f151-cfa8-4408-94ba-08a9ba3a486d
 caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # LINQ to XML Axes Overview (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 After you have created an XML tree or loaded an XML document into an XML tree, you can query it to find elements and attributes and retrieve their values. You retrieve collections through the *axis methods*, also called *axes*. Some of the axes are methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes that return <xref:System.Collections.Generic.IEnumerable%601> collections. Some of the axes are extension methods in the <xref:System.Xml.Linq.Extensions> class. The axes that are implemented as extension methods operate on collections, and return collections.  
   
- As described in [XElement Class Overview](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec), an <xref:System.Xml.Linq.XElement> object represents a single element node. The content of an element can be complex (sometimes called structured content), or it can be a simple element. A simple element can be empty or can contain a value. If the node contains structured content, you can use the various axis methods to retrieve enumerations of descendant elements. The most commonly used axis methods are <xref:System.Xml.Linq.XContainer.Elements%2A> and <xref:System.Xml.Linq.XContainer.Descendants%2A>.  
+ As described in [XElement Class Overview](../Topic/XElement%20Class%20Overview.md), an <xref:System.Xml.Linq.XElement> object represents a single element node. The content of an element can be complex (sometimes called structured content), or it can be a simple element. A simple element can be empty or can contain a value. If the node contains structured content, you can use the various axis methods to retrieve enumerations of descendant elements. The most commonly used axis methods are <xref:System.Xml.Linq.XContainer.Elements%2A> and <xref:System.Xml.Linq.XContainer.Descendants%2A>.  
   
- In addition to the axis methods, which return collections, there are two more methods that you will commonly use in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries. The <xref:System.Xml.Linq.XContainer.Element%2A> method returns a single <xref:System.Xml.Linq.XElement>. The <xref:System.Xml.Linq.XElement.Attribute%2A> method returns a single <xref:System.Xml.Linq.XAttribute>.  
+ In addition to the axis methods, which return collections, there are two more methods that you will commonly use in [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] queries. The <xref:System.Xml.Linq.XContainer.Element%2A> method returns a single <xref:System.Xml.Linq.XElement>. The <xref:System.Xml.Linq.XElement.Attribute%2A> method returns a single <xref:System.Xml.Linq.XAttribute>.  
   
- For many purposes, [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries provide the most powerful way to examine a tree, extract data from it, and transform it. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries operate on objects that implement <xref:System.Collections.Generic.IEnumerable%601>, and the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] axes return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement> collections, and <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XAttribute> collections. You need these collections to perform your queries.  
+ For many purposes, [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] queries provide the most powerful way to examine a tree, extract data from it, and transform it. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] queries operate on objects that implement <xref:System.Collections.Generic.IEnumerable%601>, and the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] axes return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement> collections, and <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XAttribute> collections. You need these collections to perform your queries.  
   
  In addition to the axis methods that retrieve collections of elements and attributes, there are axis methods that allow you to iterate through the tree in great detail. For example, instead of dealing with elements and attributes, you can work with the nodes of the tree. Nodes are a finer level of granularity than elements and attributes. When working with nodes, you can examine XML comments, text nodes, processing instructions, and more. This functionality is important, for example, to someone who is writing a word processor and wants to save documents as XML. However, the majority of XML programmers are primarily concerned with elements, attributes, and their values.  
   

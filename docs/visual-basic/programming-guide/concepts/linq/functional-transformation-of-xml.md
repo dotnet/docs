@@ -1,8 +1,8 @@
 ---
-title: "Functional Transformation of XML (Visual Basic)"
+title: "Functional Transformation of XML (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: fdbe5b91-f457-4b4e-a11b-def4bdd77bab
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Functional Transformation of XML (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic discusses the pure functional transformation approach to modifying XML documents, and contrasts it with a procedural approach.  
   
 ## Modifying an XML Document  
@@ -43,4 +45,4 @@ This topic discusses the pure functional transformation approach to modifying XM
 ## See Also  
  [Introduction to Pure Functional Transformations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
  [LINQ to XML vs. Other XML Technologies](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md)   
- [LINQ to XML vs. Other XML Technologies](http://msdn.microsoft.com/library/7ba1eecf-f09a-42de-bc80-22ca5b2e42d3)
+ [LINQ to XML vs. Other XML Technologies](../Topic/LINQ%20to%20XML%20vs.%20Other%20XML%20Technologies1.md)

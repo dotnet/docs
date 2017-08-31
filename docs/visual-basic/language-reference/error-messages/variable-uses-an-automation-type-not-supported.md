@@ -1,13 +1,13 @@
 ---
-title: "Variable uses an Automation type not supported in Visual Basic"
-
+title: "Variable uses an Automation type not supported in Visual Basic | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID458"
@@ -15,30 +15,18 @@ dev_langs:
   - "VB"
 ms.assetid: bde4f4da-493b-452c-b6e4-1d370edba4cd
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Variable uses an Automation type not supported in Visual Basic
-You tried to use a variable defined in a type library or object library that has a data type not supported by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+You tried to use a variable defined in a type library or object library that has a data type not supported by [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
   
-## To correct this error  
+### To correct this error  
   
--   Use a variable of a type recognized by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+-   Use a variable of a type recognized by [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
   
      -or-  
   

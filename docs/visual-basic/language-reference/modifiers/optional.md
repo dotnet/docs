@@ -1,13 +1,13 @@
 ---
-title: "Optional (Visual Basic)"
-
+title: "Optional (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Optional"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "Optional keyword"
 ms.assetid: 4571ce88-a539-4115-b230-54eb277c6aa7
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Optional (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies that a procedure argument can be omitted when the procedure is called.  
   
 ## Remarks  
@@ -86,7 +74,7 @@ End Function
 ## Example  
  The following example demonstrates how to call a procedure with arguments passed by position and with arguments passed by name. The procedure has two optional parameters.  
   
- [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/VisualBasic/optional_1.vb)]  
+ [!code-vb[VbVbalrKeywords#21](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class8.vb#21)]  
   
 ## See Also  
  [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   

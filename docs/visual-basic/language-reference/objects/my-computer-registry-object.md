@@ -1,13 +1,13 @@
 ---
-title: "My.Computer.Registry Object"
-
+title: "My.Computer.Registry Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "My.Computer.Registry object"
 ms.assetid: afd9edf9-ef9b-438b-a390-d71a02dc8203
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.Computer.Registry Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides properties and methods for manipulating the registry.  
   
 ## Remarks  
@@ -50,7 +38,7 @@ Provides properties and methods for manipulating the registry.
   
  **Class:** <xref:Microsoft.VisualBasic.MyServices.RegistryProxy> (provides access to <xref:Microsoft.Win32.Registry>)  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](../../../includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

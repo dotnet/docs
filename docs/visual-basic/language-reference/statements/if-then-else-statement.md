@@ -1,13 +1,13 @@
 ---
-title: "If...Then...Else Statement (Visual Basic)"
-
+title: "If...Then...Else Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.ElseIf"
@@ -32,25 +32,13 @@ helpviewer_keywords:
   - "Else statement [Visual Basic]"
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
 caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # If...Then...Else Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Conditionally executes a group of statements, depending on the value of an expression.  
   
 ## Syntax  
@@ -115,17 +103,17 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 ## Example  
  The following example illustrates the use of the multiple-line syntax of the `If`...`Then`...`Else` statement.  
   
- [!code-vb[VbVbalrStatements#101](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#101](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#101)]  
   
 ## Example  
  The following example contains nested `If`...`Then`...`Else` statements.  
   
- [!code-vb[VbVbalrStatements#102](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#102](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#102)]  
   
 ## Example  
  The following example illustrates the use of the single-line syntax.  
   
- [!code-vb[VbVbalrStatements#103](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/if-then-else-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#103](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#103)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Interaction.Choose%2A>   

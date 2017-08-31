@@ -1,13 +1,13 @@
 ---
-title: "Modules (Visual Basic)"
-
+title: "Modules (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,29 +15,17 @@ helpviewer_keywords:
   - "modules, Visual Basic"
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Modules (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
+[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)].  
   
 |||  
-|---|---|  
+|-|-|  
 |<xref:Microsoft.VisualBasic.Constants>|Contains miscellaneous constants. These constants can be used anywhere in your code.|  
 |<xref:Microsoft.VisualBasic.ControlChars>|Contains constant control characters for printing and displaying text.|  
 |<xref:Microsoft.VisualBasic.Conversion>|Contains members that convert decimal numbers to other bases, numbers to strings, strings to numbers, and one data type to another.|  

@@ -1,13 +1,13 @@
 ---
-title: "Collections (C#)"
-
+title: "Collections (C#) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
 caps.latest.revision: 6
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Collections (C#)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.  
   
  Arrays are most useful for creating and working with a fixed number of strongly-typed objects. For information about arrays, see [Arrays](../../../csharp/programming-guide/arrays/index.md).  
@@ -34,13 +31,13 @@ For many applications, you want to create and manage groups of related objects. 
  If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.  
   
 > [!NOTE]
->  For the examples in this topic, include [using](../../../csharp/language-reference/keywords/using-directive.md) directives for the `System.Collections.Generic` and `System.Linq` namespaces.  
+>  For the examples in this topic, include[using](../../../csharp/language-reference/keywords/using-directive.md) directives for the `System.Collections.Generic` and `System.Linq` namespaces.  
   
  **In this topic**  
   
 -   [Using a Simple Collection](#BKMK_SimpleCollection)  
   
--   [Kinds of Collections](#BKMK_KindsOfCollections)  
+-   [Kinds of Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md#BKMK_KindsOfCollections)  
   
     -   [System.Collections.Generic Classes](#BKMK_Generic)  
   
@@ -58,8 +55,7 @@ For many applications, you want to create and manage groups of related objects. 
   
 -   [Iterators](#BKMK_Iterators)  
   
-<a name="BKMK_SimpleCollection"></a>
-## Using a Simple Collection  
+##  <a name="BKMK_SimpleCollection"></a> Using a Simple Collection  
  The examples in this section use the generic <xref:System.Collections.Generic.List%601> class, which enables you to work with a strongly typed list of objects.  
   
  The following example creates a list of strings and then iterates through the strings by using a or [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement.  
@@ -187,45 +183,41 @@ public class Galaxy
     public int MegaLightYears { get; set; }  
 }  
 ```  
-
-<a name="BKMK_KindsOfCollections"></a>
-## Kinds of Collections 
- Many common collections are provided by the .NET Framework. Each type of collection is designed for a specific purpose.  
+  
+##  <a name="BKMK_KindsOfCollections"></a> Kinds of Collections  
+ Many common collections are provided by the .NET Framework. For a complete list, see [collections namespace](System.Collections%20namespaces.xml).  Each type of collection is designed for a specific purpose.  
   
  Some of the common collection classes are described in this section:  
   
--   @System.Collections.Generic classes  
+-   `System.Collections.Generic` classes  
   
--   @System.Collections.Concurrent classes  
+-   `System.Collections.Concurrent` classes  
   
--   @System.Collections classes  
+-   `System.Collections` classes  
   
-<a name="BKMK_Generic"></a>
-### System.Collections.Generic Classes  
+###  <a name="BKMK_Generic"></a> System.Collections.Generic Classes  
  You can create a generic collection by using one of the classes in the <xref:System.Collections.Generic> namespace. A generic collection is useful when every item in the collection has the same data type. A generic collection enforces strong typing by allowing only the desired data type to be added.  
   
  The following table lists some of the frequently used classes of the <xref:System.Collections.Generic?displayProperty=fullName> namespace:  
 
 |Class|Description| 
-|---|---|  
+|-|-|  
 |<xref:System.Collections.Generic.Dictionary%602>|Represents a collection of key/value pairs that are organized based on the key.|  
 |<xref:System.Collections.Generic.List%601>|Represents a list of objects that can be accessed by index. Provides methods to search, sort, and modify lists.|  
 |<xref:System.Collections.Generic.Queue%601>|Represents a first in, first out (FIFO) collection of objects.|  
 |<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|  
 |<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|  
   
- For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and @System.Collections.Generic.  
+ For additional information, see [Commonly Used Collection Types](../Topic/Commonly%20Used%20Collection%20Types.md), [Selecting a Collection Class](../Topic/Selecting%20a%20Collection%20Class.md), and <xref:System.Collections.Generic?displayProperty=fullName>.  
   
-<a name="BKMK_Concurrent"></a>
-### System.Collections.Concurrent Classes  
+###  <a name="BKMK_Concurrent"></a> System.Collections.Concurrent Classes  
  In the .NET Framework 4 or newer, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.  
   
- The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../../../standard/collections/thread-safe/index.md) and <xref:System.Collections.Concurrent>.  
+ The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../Topic/Thread-Safe%20Collections.md) and <xref:System.Collections.Concurrent>.  
   
  Some classes included in the <xref:System.Collections.Concurrent> namespace are <xref:System.Collections.Concurrent.BlockingCollection%601>, <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, and <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
   
-<a name="BKMK_Collections"></a>
-### System.Collections Classes  
+###  <a name="BKMK_Collections"></a> System.Collections Classes  
  The classes in the <xref:System.Collections?displayProperty=fullName> namespace do not store elements as specifically typed objects, but as objects of type `Object`.  
   
  Whenever possible, you should use the generic collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace or the <xref:System.Collections.Concurrent> namespace instead of the legacy types in the `System.Collections` namespace.  
@@ -233,16 +225,15 @@ public class Galaxy
  The following table lists some of the frequently used classes in the `System.Collections` namespace:  
   
 |Class|Description|  
-|---|---|  
+|-|-|  
 |<xref:System.Collections.ArrayList>|Represents an array of objects whose size is dynamically increased as required.|  
 |<xref:System.Collections.Hashtable>|Represents a collection of key/value pairs that are organized based on the hash code of the key.|  
 |<xref:System.Collections.Queue>|Represents a first in, first out (FIFO) collection of objects.|  
 |<xref:System.Collections.Stack>|Represents a last in, first out (LIFO) collection of objects.|  
   
  The <xref:System.Collections.Specialized> namespace provides specialized and strongly typed collection classes, such as string-only collections and linked-list and hybrid dictionaries.  
-
-<a name="BKMK_KeyValuePairs"></a>
-## Implementing a Collection of Key/Value Pairs  
+  
+##  <a name="BKMK_KeyValuePairs"></a> Implementing a Collection of Key/Value Pairs  
  The <xref:System.Collections.Generic.Dictionary%602> generic collection enables you to access to elements in a collection by using the key of each element. Each addition to the dictionary consists of a value and its associated key. Retrieving a value by using its key is fast because the `Dictionary` class is implemented as a hash table.  
   
  The following example creates a `Dictionary` collection and iterates through the dictionary by using a `foreach` statement.  
@@ -250,9 +241,9 @@ public class Galaxy
 ```csharp  
 private static void IterateThruDictionary()  
 {  
-    Dictionary<string, Element> elements = BuildDictionary();  
+    Dictionary\<string, Element> elements = BuildDictionary();  
   
-    foreach (KeyValuePair<string, Element> kvp in elements)  
+    foreach (KeyValuePair\<string, Element> kvp in elements)  
     {  
         Element theElement = kvp.Value;  
   
@@ -262,9 +253,9 @@ private static void IterateThruDictionary()
     }  
 }  
   
-private static Dictionary<string, Element> BuildDictionary()  
+private static Dictionary\<string, Element> BuildDictionary()  
 {  
-    var elements = new Dictionary<string, Element>();  
+    var elements = new Dictionary\<string, Element>();  
   
     AddToDictionary(elements, "K", "Potassium", 19);  
     AddToDictionary(elements, "Ca", "Calcium", 20);  
@@ -274,7 +265,7 @@ private static Dictionary<string, Element> BuildDictionary()
     return elements;  
 }  
   
-private static void AddToDictionary(Dictionary<string, Element> elements,  
+private static void AddToDictionary(Dictionary\<string, Element> elements,  
     string symbol, string name, int atomicNumber)  
 {  
     Element theElement = new Element();  
@@ -297,9 +288,9 @@ public class Element
  To instead use a collection initializer to build the `Dictionary` collection, you can replace the `BuildDictionary` and `AddToDictionary` methods with the following method.  
   
 ```csharp  
-private static Dictionary<string, Element> BuildDictionary2()  
+private static Dictionary\<string, Element> BuildDictionary2()  
 {  
-    return new Dictionary<string, Element>  
+    return new Dictionary\<string, Element>  
     {  
         {"K",  
             new Element() { Symbol="K", Name="Potassium", AtomicNumber=19}},  
@@ -318,7 +309,7 @@ private static Dictionary<string, Element> BuildDictionary2()
 ```csharp  
 private static void FindInDictionary(string symbol)  
 {  
-    Dictionary<string, Element> elements = BuildDictionary();  
+    Dictionary\<string, Element> elements = BuildDictionary();  
   
     if (elements.ContainsKey(symbol) == false)  
     {  
@@ -337,7 +328,7 @@ private static void FindInDictionary(string symbol)
 ```csharp  
 private static void FindInDictionary2(string symbol)  
 {  
-    Dictionary<string, Element> elements = BuildDictionary();  
+    Dictionary\<string, Element> elements = BuildDictionary();  
   
     Element theElement = null;  
     if (elements.TryGetValue(symbol, out theElement) == false)  
@@ -346,9 +337,8 @@ private static void FindInDictionary2(string symbol)
         Console.WriteLine("found: " + theElement.Name);  
 }  
 ```  
-
-<a name="BKMK_LINQ"></a>
-## Using LINQ to Access a Collection  
+  
+##  <a name="BKMK_LINQ"></a> Using LINQ to Access a Collection  
  LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see  [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md).  
   
  The following example runs a LINQ query against a generic `List`. The LINQ query returns a different collection that contains the results.  
@@ -393,9 +383,8 @@ public class Element
     public int AtomicNumber { get; set; }  
 }  
 ```  
-
-<a name="BKMK_Sorting"></a>
-## Sorting a Collection  
+  
+##  <a name="BKMK_Sorting"></a> Sorting a Collection  
  The following example illustrates a procedure for sorting a collection. The example sorts instances of the `Car` class that are stored in a <xref:System.Collections.Generic.List%601>. The `Car` class implements the <xref:System.IComparable%601> interface, which requires that the <xref:System.IComparable%601.CompareTo%2A> method be implemented.  
   
  Each call to the <xref:System.IComparable%601.CompareTo%2A> method makes a single comparison that is used for sorting. User-written code in the `CompareTo` method returns a value for each comparison of the current object with another object. The value returned is less than zero if the current object is less than the other object, greater than zero if the current object is greater than the other object, and zero if they are equal. This enables you to define in code the criteria for greater than, less than, and equal.  
@@ -472,11 +461,10 @@ public class Car : IComparable<Car>
 }  
 ```  
   
-<a name="BKMK_CustomCollection"></a>
-## Defining a Custom Collection  
+##  <a name="BKMK_CustomCollection"></a> Defining a Custom Collection  
  You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [How to: Access a Collection Class with foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md).  
   
- Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](#BKMK_KindsOfCollections) earlier in this topic.  
+ Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md#BKMK_KindsOfCollections) earlier in this topic.  
   
  The following example defines a custom collection class named `AllColors`. This class implements the <xref:System.Collections.IEnumerable> interface, which requires that the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method be implemented.  
   
@@ -552,9 +540,8 @@ public class Color
     public string Name { get; set; }  
 }  
 ```  
-
-<a name="BKMK_Iterators"></a> 
-##  Iterators  
+  
+##  <a name="BKMK_Iterators"></a> Iterators  
  An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../../../csharp/language-reference/keywords/yield.md) statement to return each element of the collection one at a time.  
   
  You call an iterator by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.  
@@ -593,10 +580,10 @@ private static IEnumerable<int> EvenSequence(
  [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)   
- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)   
- [Collections and Data Structures](../../../standard/collections/index.md)   
+ [Parallel LINQ (PLINQ)](../Topic/Parallel%20LINQ%20\(PLINQ\).md)   
+ [Collections and Data Structures](../Topic/Collections%20and%20Data%20Structures.md)   
  [Creating and Manipulating Collections](http://msdn.microsoft.com/en-us/2065398e-eb1a-4821-9188-75f16e42e069)   
- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)   
- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)   
- [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)   
+ [Selecting a Collection Class](../Topic/Selecting%20a%20Collection%20Class.md)   
+ [Comparisons and Sorts Within Collections](../Topic/Comparisons%20and%20Sorts%20Within%20Collections.md)   
+ [When to Use Generic Collections](../Topic/When%20to%20Use%20Generic%20Collections.md)   
  [How to: Access a Collection Class with foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md)

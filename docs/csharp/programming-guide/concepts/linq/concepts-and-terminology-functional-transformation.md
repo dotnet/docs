@@ -1,13 +1,13 @@
 ---
-title: "Concepts and Terminology (Functional Transformation) (C#)"
+title: "Concepts and Terminology (Functional Transformation) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Concepts and Terminology (Functional Transformation) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic introduces the concepts and terminology of pure functional transformations. The functional transformation approach to transforming data yields code that is often quicker to program, more expressive, and easier to debug and maintain than more traditional, imperative programming.  
   
  Note that the topics in this section are not intended to fully explain functional programming. Instead, these topics identify some of the functional programming capabilities that make it easier to transform XML from one shape to another.  
@@ -44,7 +46,7 @@ This topic introduces the concepts and terminology of pure functional transforma
  For more information about functional programming, see [Functional Programming vs. Imperative Programming (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md).  
   
 #### Domain-Specific FP Languages  
- Although general functional programming languages have not been widely adopted, specific domain-specific functional programming languages have had better success. For example, Cascading Style Sheets (CSS) are used to determine the look and feel of many Web pages, and Extensible Stylesheet Language Transformations (XSLT) style sheets are used extensively in XML data manipulation. For more information about XSLT, see [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md).  
+ Although general functional programming languages have not been widely adopted, specific domain-specific functional programming languages have had better success. For example, Cascading Style Sheets (CSS) are used to determine the look and feel of many Web pages, and Extensible Stylesheet Language Transformations (XSLT) style sheets are used extensively in XML data manipulation. For more information about XSLT, see [XSLT Transformations](../Topic/XSLT%20Transformations.md).  
   
 ## Terminology  
  The following table defines some terms related to functional transformations.  

@@ -1,41 +1,26 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; must be in the range of -32768 to 65535"
-
+title: "Argument &#39;&lt;argumentname&gt;&#39; must be in the range of -32768 to 65535 | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_RangeTwoBytes1"
 ms.assetid: d1ab6767-8334-4d7c-bb99-c837a793ed69
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; must be in the range of -32768 to 65535
 An argument's value falls outside the allowable range of -32,768 to 65,535.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Ensure that the argument's value falls within the valid range.  
   

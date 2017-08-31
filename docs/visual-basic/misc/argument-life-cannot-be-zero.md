@@ -1,41 +1,26 @@
 ---
-title: "Argument &#39;Life&#39; cannot be zero"
-
+title: "Argument &#39;Life&#39; cannot be zero | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_LifeNEZero"
 ms.assetid: c402da97-a2b2-4219-a83a-0cebbfdffef2
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Argument &#39;Life&#39; cannot be zero
 An argument for `Life`, which must be a `Double` that specifies the length of useful life of the asset, is not valid.  
   
-## To correct this error  
+### To correct this error  
   
 -   Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   

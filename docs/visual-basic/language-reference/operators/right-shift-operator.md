@@ -1,13 +1,13 @@
 ---
-title: "&gt;&gt; Operator (Visual Basic)"
-
+title: "&gt;&gt; Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.>>"
@@ -21,30 +21,19 @@ helpviewer_keywords:
   - "right shift operators"
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &gt;&gt; Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Performs an arithmetic right shift on a bit pattern.  
   
 ## Syntax  
   
 ```  
+  
 result = pattern >> amount  
 ```  
   
@@ -82,7 +71,7 @@ result = pattern >> amount
 ## Example  
  The following example uses the `>>` operator to perform arithmetic right shifts on integral values. The result always has the same data type as that of the expression being shifted.  
   
- [!code-vb[VbVbalrOperators#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#14](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#14)]  
   
  The results of the preceding example are as follows:  
   
@@ -100,7 +89,7 @@ result = pattern >> amount
   
  The following example shows arithmetic shifts on a negative value.  
   
- [!code-vb[VbVbalrOperators#55](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#55](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#55)]  
   
  The results of the preceding example are as follows:  
   

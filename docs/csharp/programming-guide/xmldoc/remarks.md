@@ -1,13 +1,13 @@
 ---
-title: "&lt;remarks&gt; (C# Programming Guide)"
-
+title: "&lt;remarks&gt; (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "remarks"
@@ -21,26 +21,14 @@ ms.assetid: f8641391-31f3-4735-af7a-c502a5b6a251
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &lt;remarks&gt; (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 ## Syntax  
   
-```xml  
+```  
 <remarks>description</remarks>  
 ```  
   
@@ -51,10 +39,10 @@ translation.priority.ht:
 ## Remarks  
  The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md). This information is displayed in the Object Browser window.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#9](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/remarks_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#9](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#9)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

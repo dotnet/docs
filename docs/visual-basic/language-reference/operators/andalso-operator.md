@@ -1,13 +1,13 @@
 ---
-title: "AndAlso Operator (Visual Basic)"
-
+title: "AndAlso Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.AndAlso"
@@ -22,37 +22,27 @@ helpviewer_keywords:
   - "short-circuit evaluation"
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # AndAlso Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Performs short-circuiting logical conjunction on two expressions.  
   
 ## Syntax  
   
 ```  
+  
 result = expression1 AndAlso expression2  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`result`|Required. Any `Boolean` expression. The result is the `Boolean` result of comparison of the two expressions.|  
 |`expression1`|Required. Any `Boolean` expression.|  
 |`expression2`|Required. Any `Boolean` expression.|  
@@ -62,8 +52,9 @@ result = expression1 AndAlso expression2
   
  If both expressions evaluate to `True`, `result` is `True`. The following table illustrates how `result` is determined.  
   
+||||  
+|-|-|-|  
 |If `expression1` is|And `expression2` is|The value of `result` is|  
-|---|---|---|  
 |`True`|`True`|`True`|  
 |`True`|`False`|`False`|  
 |`False`|(not evaluated)|`False`|  
@@ -77,17 +68,17 @@ result = expression1 AndAlso expression2
 ## Example  
  The following example uses the `AndAlso` operator to perform a logical conjunction on two expressions. The result is a `Boolean` value that represents whether the entire conjoined expression is true. If the first expression is `False`, the second is not evaluated.  
   
- [!code-vb[VbVbalrOperators#24](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#24](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#24)]  
   
  The preceding example produces results of `True`, `False`, and `False`, respectively. In the calculation of `secondCheck`, the second expression is not evaluated because the first is already `False`. However, the second expression is evaluated in the calculation of `thirdCheck`.  
   
 ## Example  
  The following example shows a `Function` procedure that searches for a given value among the elements of an array. If the array is empty, or if the array length has been exceeded, the `While` statement does not test the array element against the search value.  
   
- [!code-vb[VbVbalrOperators#25](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#25](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#25)]  
   
 ## See Also  
- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)   
+ [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators-visual-basic.md)   
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
  [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
  [And Operator](../../../visual-basic/language-reference/operators/and-operator.md)   

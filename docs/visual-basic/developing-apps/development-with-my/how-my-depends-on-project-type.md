@@ -1,13 +1,13 @@
 ---
-title: "How My Depends on Project Type (Visual Basic)"
-
+title: "How My Depends on Project Type (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,25 +15,13 @@ helpviewer_keywords:
   - "_MYTYPE"
 ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How My Depends on Project Type (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 `My` exposes only those objects required by a particular project type. For example, the `My.Forms` object is available in a Windows Forms application but not available in a console application. This topic describes which `My` objects are available in different project types.  
   
 ## My in Windows Applications and Web Sites  
@@ -50,8 +38,9 @@ translation.priority.ht:
   
  There are three versions of the `My.Application` object, two versions of the `My.Computer` object, and two versions of `My.User` object; details about these versions are given in the footnotes after the table.  
   
+||||||||||  
+|-|-|-|-|-|-|-|-|-|  
 |My Object|Windows Application|Class Library|Console Application|Windows Control Library|Web Control Library|Windows Service|Empty|Web Site|  
-|---|---|---|---|---|---|---|---|---|  
 |`My.Application`|**Yes** <sup>1</sup>|**Yes** <sup>2</sup>|**Yes** <sup>3</sup>|**Yes** <sup>2</sup>|No|**Yes** <sup>3</sup>|No|No|  
 |`My.Computer`|**Yes** <sup>4</sup>|**Yes** <sup>4</sup>|**Yes** <sup>4</sup>|**Yes** <sup>4</sup>|**Yes** <sup>5</sup>|**Yes** <sup>4</sup>|No|**Yes** <sup>5</sup>|  
 |`My.Forms`|**Yes**|No|No|**Yes**|No|No|No|No|  
@@ -63,7 +52,7 @@ translation.priority.ht:
 |`My.User`|**Yes** <sup>6</sup>|**Yes** <sup>6</sup>|**Yes** <sup>6</sup>|**Yes** <sup>6</sup>|**Yes** <sup>7</sup>|**Yes** <sup>6</sup>|No|**Yes** <sup>7</sup>|  
 |`My.WebServices`|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|No|  
   
- <sup>1</sup> Windows Forms version of `My.Application`. Derives from the console version (see Note 3); adds support for interacting with the application's windows and provides the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model.  
+ <sup>1</sup> Windows Forms version of `My.Application`. Derives from the console version (see Note 3); adds support for interacting with the application's windows and provides the [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] Application model.  
   
  <sup>2</sup> Library version of `My.Application`. Provides the basic functionality needed by an application: provides members for writing to the application log and accessing application information.  
   
@@ -84,7 +73,7 @@ translation.priority.ht:
  <xref:Microsoft.VisualBasic.ApplicationServices.User>   
  [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)   
  [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)   
+ [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define-visual-basic.md)   
  [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)   
  [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)   
  [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)   

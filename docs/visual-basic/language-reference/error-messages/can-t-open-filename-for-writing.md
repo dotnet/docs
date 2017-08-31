@@ -1,13 +1,13 @@
 ---
-title: "Can&#39;t open &#39;&lt;filename&gt;&#39; for writing"
-
+title: "Can&#39;t open &#39;&lt;filename&gt;&#39; for writing | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc2012"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC2012"
 ms.assetid: 73270fe4-a638-42c7-be21-5e156e2b18f6
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Can&#39;t open &#39;&lt;filename&gt;&#39; for writing
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The specified file cannot be opened for writing, perhaps because it has already been opened.  
   
  **Error ID:** BC2012  
   
-## To correct this error  
+### To correct this error  
   
 1.  Close the file and reopen it.  
   

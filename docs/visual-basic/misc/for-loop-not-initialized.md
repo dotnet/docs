@@ -1,41 +1,26 @@
 ---
-title: "For loop not initialized (Visual Basic)"
-
+title: "For loop not initialized (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID92"
 ms.assetid: 7f5b8b87-1a28-474d-8639-9de97922ceab
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # For loop not initialized (Visual Basic)
 You jumped into the middle of a `For...Next` loop.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Remove the jump into the loop.  
   

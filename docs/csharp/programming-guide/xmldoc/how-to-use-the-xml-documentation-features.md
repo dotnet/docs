@@ -1,13 +1,13 @@
 ---
-title: "How to: Use the XML Documentation Features (C# Programming Guide)"
-
+title: "How to: Use the XML Documentation Features (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,27 +18,15 @@ ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Use the XML Documentation Features (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The following sample provides a basic overview of a type that has been documented.  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/how-to-use-the-xml-documentation-features_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#15](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#15)]  
   
  **// This .xml file was generated with the previous code sample.**  
 **\<?xml version="1.0"?>**  
@@ -116,5 +104,5 @@ The following sample provides a basic overview of a type that has been documente
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
+ [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md)   
  [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

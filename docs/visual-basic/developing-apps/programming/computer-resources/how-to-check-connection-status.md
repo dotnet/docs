@@ -1,13 +1,13 @@
 ---
-title: "How to: Check Connection Status in Visual Basic"
+title: "How to: Check Connection Status in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,36 +18,24 @@ helpviewer_keywords:
   - "connection status"
 ms.assetid: 4d9ee8ab-9a6f-4279-ace4-b75afc976a74
 caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Check Connection Status in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property can be used to determine whether the computer has a working network or Internet connection.  
   
-[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../../../../includes/note-settings-general-md.md)]  
   
 ### To check whether a computer has a working connection  
   
 -   Determine whether the `IsAvailable` property is `True` or `False`. The following code checks the property's status and reports it:  
   
-     [!code-vb[VbResourceTasks#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-check-connection-status_1.vb)]  
+     [!code-vb[VbResourceTasks#3](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#3)]  
   
-     This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
+     This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visual-studio/ide/code-snippets).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Network?displayProperty=fullName>   

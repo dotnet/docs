@@ -1,13 +1,13 @@
 ---
-title: "&lt;list&gt; (C# Programming Guide)"
-
+title: "&lt;list&gt; (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "list"
@@ -25,26 +25,14 @@ ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &lt;list&gt; (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 ## Syntax  
   
-```xml  
+```  
 <list type="bullet" | "number" | "table">  
     <listheader>  
         <term>term</term>  
@@ -71,10 +59,10 @@ translation.priority.ht:
   
  A list or table can have as many \<item> blocks as needed.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#6](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/list_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#6)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

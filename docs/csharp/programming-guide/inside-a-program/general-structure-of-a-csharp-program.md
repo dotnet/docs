@@ -1,13 +1,13 @@
 ---
-title: "General Structure of a C# Program (C# Programming Guide)"
-
+title: "General Structure of a C# Program (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,26 +17,14 @@ ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # General Structure of a C# Program (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 C# programs can consist of one or more files. Each file can contain zero or more namespaces. A namespace can contain types such as classes, structs, interfaces, enumerations, and delegates, in addition to other namespaces. The following is the skeleton of a C# program that contains all of these elements.  
   
- [!code-cs[csProgGuide#34](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/general-structure-of-a-csharp-program_1.cs)]  
+ [!code-csharp[csProgGuide#34](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS/class2.cs#34)]  
   
 ## Related Sections  
  For more information:  
@@ -52,7 +40,7 @@ C# programs can consist of one or more files. Each file can contain zero or more
 -   [Delegates](../../../csharp/programming-guide/delegates/index.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

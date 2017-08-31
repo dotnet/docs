@@ -1,13 +1,13 @@
 ---
-title: "&lt;exception&gt; (Visual Basic)"
+title: "&lt;exception&gt; (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,30 +16,18 @@ helpviewer_keywords:
   - "exception XML tag"
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &lt;exception&gt; (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies which exceptions can be thrown.  
   
 ## Syntax  
   
-```xml  
+```  
 <exception cref="member">description</exception>  
 ```  
   
@@ -58,7 +46,7 @@ Specifies which exceptions can be thrown.
 ## Example  
  This example uses the `<exception>` tag to describe an exception that the `IntDivide` function can throw.  
   
- [!code-vb[VbVbcnXmlDocComments#3](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/exception_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#3)]  
   
 ## See Also  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

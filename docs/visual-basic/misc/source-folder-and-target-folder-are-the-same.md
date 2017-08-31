@@ -1,39 +1,24 @@
 ---
-title: "Source folder and target folder are the same"
-
+title: "Source folder and target folder are the same | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d4e6f996-8bbe-45f2-b662-f26b4474f44d
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Source folder and target folder are the same
 An attempt has been made to copy or move a file, but the specified source directory and target directory are the same. This may be a result of incorrectly parsing a file path.  
   
-## To correct this error  
+### To correct this error  
   
 -   Make sure you supplied the correct source and target directories.  
   

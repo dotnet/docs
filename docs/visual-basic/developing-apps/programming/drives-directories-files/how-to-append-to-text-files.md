@@ -1,13 +1,13 @@
 ---
-title: "How to: Append to Text Files in Visual Basic"
+title: "How to: Append to Text Files in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "I/O [Visual Basic], WriteAllText method"
 ms.assetid: bbbd7fb5-f169-41a9-b53f-520ea9613913
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Append to Text Files in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> method can be used to append to a text file by specifying that the `append` parameter is set to `True`.  
   
 ### To append to a text file  
@@ -44,7 +32,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> method can be
   
      This example writes the string `"This is a test string."` to the file named `Testfile.txt`.  
   
-     [!code-vb[VbFileIOWrite#6](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-append-to-text-files_1.vb)]  
+     [!code-vb[VbFileIOWrite#6](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOWrite/VB/Class1.vb#6)]  
   
 ## Robust Programming  
  The following conditions may cause an exception:  

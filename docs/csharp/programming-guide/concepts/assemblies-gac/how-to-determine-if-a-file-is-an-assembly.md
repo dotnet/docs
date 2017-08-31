@@ -1,13 +1,13 @@
 ---
-title: "How to: Determine If a File Is an Assembly (C#)"
+title: "How to: Determine If a File Is an Assembly (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,23 +15,20 @@ ms.assetid: ea5186bb-5bff-4dcb-bde9-d6ba4e2edd00
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Determine If a File Is an Assembly (C#)
-A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](https://msdn.microsoft.com/library/1w45z383).  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](../Topic/Assembly%20Manifest.md).  
   
 ### How to manually determine if a file is an assembly  
   
-1.  Start the [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1).  
+1.  Start the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
   
 2.  Load the file you wish to test.  
   
-3.  If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../../../../framework/app-domains/how-to-view-assembly-contents.md).  
+3.  If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../Topic/How%20to:%20View%20Assembly%20Contents.md).  
   
 ### How to programmatically determine if a file is an assembly  
   
@@ -82,4 +79,4 @@ class TestAssembly
 ## See Also  
  <xref:System.Reflection.AssemblyName>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)
+ [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)

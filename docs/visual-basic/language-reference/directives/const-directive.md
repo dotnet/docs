@@ -1,13 +1,13 @@
 ---
-title: "#Const Directive"
-
+title: "#Const Directive | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.#Const"
@@ -26,25 +26,13 @@ helpviewer_keywords:
   - "declaring constants, #const directive"
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # #Const Directive
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Defines conditional compiler constants for Visual Basic.  
   
 ## Syntax  
@@ -68,10 +56,10 @@ Defines conditional compiler constants for Visual Basic.
 ## Example  
  This example uses the `#Const` directive.  
   
- [!code-vb[VbVbalrConditionalComp#3](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/const-directive_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#3)]  
   
 ## See Also  
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)   
+ [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define-visual-basic.md)   
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
  [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)   
  [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   

@@ -1,8 +1,8 @@
 ---
-title: "How to: Transform the Shape of an XML Tree (Visual Basic)"
+title: "How to: Transform the Shape of an XML Tree (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 84b60854-48b2-452c-87f2-77d53e1d653a
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Transform the Shape of an XML Tree (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The *shape* of an XML document refers to its element names, attribute names, and the characteristics of its hierarchy.  
   
  Sometimes you will have to change the shape of an XML document. For example, you might have to send an existing XML document to another system that requires different element and attribute names. You could go through the document, deleting and renaming elements as required, but using functional construction results in more readable and maintainable code. For more information about functional construction, see [Functional Construction (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-construction-linq-to-xml.md).  
@@ -64,6 +66,7 @@ Console.WriteLine(newCustOrd)
  This code produces the following output:  
   
 ```xml  
+  
         <Root>  
 <Customer CustomerID="GREAL">  
   <CompanyName>Great Lakes Food Market</CompanyName>  
@@ -133,6 +136,7 @@ Sub Main()
         </PO>  
     Console.WriteLine(newPo)  
 End Sub  
+  
 ```  
   
  This code produces the following output:  

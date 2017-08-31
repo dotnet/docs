@@ -1,9 +1,13 @@
 ---
-title: "Formatting Numeric Results Table (C# Reference)"
+title: "Formatting Numeric Results Table (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -16,26 +20,14 @@ ms.assetid: 120ba537-4448-4c62-8676-7a8fdd98f496
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Formatting Numeric Results Table (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 You can format numeric results by using the <xref:System.String.Format%2A?displayProperty=fullName> method, or through the <xref:System.Console.Write%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName> method, which calls `String.Format`. The format is specified by using format strings. The following table contains the supported standard format strings. The format string takes the following form: `Axx`, where `A` is the format specifier and `xx` is the precision specifier. The format specifier controls the type of formatting applied to the numeric value, and the precision specifier controls the number of significant digits or decimal places of the formatted output. The value of the precision specifier ranges from 0 to 99.  
   
- For more information about standard and custom formatting strings, see [Formatting Types](../../../standard/base-types/formatting-types.md). For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=fullName>.  
+ For more information about standard and custom formatting strings, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md). For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=fullName>.  
   
 |Format Specifier|Description|Examples|Output|  
 |----------------------|-----------------|--------------|------------|  
@@ -50,6 +42,6 @@ You can format numeric results by using the <xref:System.String.Format%2A?displa
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)   
+ [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md)   
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)   
  [string](../../../csharp/language-reference/keywords/string.md)

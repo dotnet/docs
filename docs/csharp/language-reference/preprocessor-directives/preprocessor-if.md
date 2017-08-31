@@ -1,9 +1,13 @@
 ---
-title: "#if (C# Reference)"
+title: "#if (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#if"
@@ -15,25 +19,14 @@ ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # #if (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 When the C# compiler encounters an `#if` directive, followed eventually by an [#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md) directive, it will compile the code between the directives only if the specified symbol is defined.  Unlike C and C++, you cannot assign a numeric value to a symbol; the #if statement in C# is Boolean and only tests whether the symbol has been defined or not. For example,  
   
-```csharp
+```  
 #define DEBUG  
 // ...  
 #if DEBUG  
@@ -50,7 +43,7 @@ When the C# compiler encounters an `#if` directive, followed eventually by an [#
   
  `#define` lets you define a symbol, such that, by using the symbol as the expression passed to the `#if` directive, the expression will evaluate to `true`.  
   
- You can also define a symbol with the [/define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
+ You can also define a symbol with the [/define](../../../csharp/language-reference/compiler-options/define-csharp-compiler-options.md) compiler option. You can undefine a symbol with [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
   
  A symbol that you define with `/define` or with `#define` does not conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive and a symbol can only be evaluated by a preprocessor directive.  
   
@@ -58,7 +51,7 @@ When the C# compiler encounters an `#if` directive, followed eventually by an [#
   
 ## Example  
   
-```csharp
+```  
 // preprocessor_if.cs  
 #define DEBUG#define MYTEST  
 using System;  

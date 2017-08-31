@@ -1,13 +1,13 @@
 ---
-title: "Sub Statement (Visual Basic)"
-
+title: "Sub Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Sub"
@@ -40,35 +40,23 @@ helpviewer_keywords:
   - "Visual Basic code, Sub procedures"
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
 caps.latest.revision: 52
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Sub Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Declares the name, parameters, and code that define a `Sub` procedure.  
   
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ Partial ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async ]  
-Sub name [ (Of typeparamlist) ] [ (parameterlist) ] [ Implements implementslist | Handles eventlist ]  
-    [ statements ]  
-    [ Exit Sub ]  
-    [ statements ]  
+[ <attributelist> ] [ Partial ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async ]  
+Sub name [ (Of typeparamlist) ] [ (parameterlist) ] [ Implements implementslist | Handles eventlist ]  
+    [ statements ]  
+    [ Exit Sub ]  
+    [ statements ]  
 End Sub  
 ```  
   
@@ -76,7 +64,7 @@ End Sub
   
 -   `attributelist`  
   
-     Optional. See [Attribute List](attribute-list.md).  
+     Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).  
   
 -   `Partial`  
   
@@ -86,31 +74,31 @@ End Sub
   
      Optional. Can be one of the following:  
   
-    -   [Public](../modifiers/public.md)  
+    -   [Public](../../../visual-basic/language-reference/modifiers/public.md)  
   
-    -   [Protected](../modifiers/protected.md)  
+    -   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
   
-    -   [Friend](../modifiers/friend.md)  
+    -   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
   
-    -   [Private](../modifiers/private.md)  
+    -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
     -   `Protected Friend`  
   
-     See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+     See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 -   `proceduremodifiers`  
   
      Optional. Can be one of the following:  
   
-    -   [Overloads](../modifiers/overloads.md)  
+    -   [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)  
   
-    -   [Overrides](../modifiers/overrides.md)  
+    -   [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
   
-    -   [Overridable](../modifiers/overridable.md)  
+    -   [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
   
-    -   [NotOverridable](../modifiers/notoverridable.md)  
+    -   [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
   
-    -   [MustOverride](../modifiers/mustoverride.md)  
+    -   [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
   
     -   `MustOverride Overrides`  
   
@@ -118,15 +106,15 @@ End Sub
   
 -   `Shared`  
   
-     Optional. See [Shared](../modifiers/shared.md).  
+     Optional. See [Shared](../../../visual-basic/language-reference/modifiers/shared.md).  
   
 -   `Shadows`  
   
-     Optional. See [Shadows](../modifiers/shadows.md).  
+     Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).  
   
 -   `Async`  
   
-     Optional. See [Async](../modifiers/async.md).  
+     Optional. See [Async](../../../visual-basic/language-reference/modifiers/async.md).  
   
 -   `name`  
   
@@ -134,15 +122,15 @@ End Sub
   
 -   `typeparamlist`  
   
-     Optional. List of type parameters for a generic procedure. See [Type List](type-list.md).  
+     Optional. List of type parameters for a generic procedure. See [Type List](../../../visual-basic/language-reference/statements/type-list.md).  
   
 -   `parameterlist`  
   
-     Optional. List of local variable names representing the parameters of this procedure. See [Parameter List](parameter-list.md).  
+     Optional. List of local variable names representing the parameters of this procedure. See [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md).  
   
 -   `Implements`  
   
-     Optional. Indicates that this procedure implements one or more `Sub` procedures, each one defined in an interface implemented by this procedure's containing class or structure. See [Implements Statement](implements-statement.md).  
+     Optional. Indicates that this procedure implements one or more `Sub` procedures, each one defined in an interface implemented by this procedure's containing class or structure. See [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md).  
   
 -   `implementslist`  
   
@@ -154,14 +142,15 @@ End Sub
   
      `interface.definedname`  
   
+    |||  
+    |-|-|  
     |Part|Description|  
-    |---|---|  
     |`interface`|Required. Name of an interface implemented by this procedure's containing class or structure.|  
     |`definedname`|Required. Name by which the procedure is defined in `interface`.|  
   
 -   `Handles`  
   
-     Optional. Indicates that this procedure can handle one or more specific events. See [Handles](handles-clause.md).  
+     Optional. Indicates that this procedure can handle one or more specific events. See [Handles](../../../visual-basic/language-reference/statements/handles-clause.md).  
   
 -   `eventlist`  
   
@@ -173,8 +162,9 @@ End Sub
   
      `eventvariable.event`  
   
+    |||  
+    |-|-|  
     |Part|Description|  
-    |---|---|  
     |`eventvariable`|Required. Object variable declared with the data type of the class or structure that raises the event.|  
     |`event`|Required. Name of the event this procedure handles.|  
   
@@ -190,7 +180,7 @@ End Sub
  All executable code must be inside a procedure. Use a `Sub` procedure when you don't want to return a value to the calling code. Use a `Function` procedure when you want to return a value.  
   
 ## Defining a Sub Procedure  
- You can define a `Sub` procedure only at the module level. The declaration context for a sub procedure must, therefore, be a class, a structure, a module, or an interface and can't be a source file, a namespace, a procedure, or a block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).  
+ You can define a `Sub` procedure only at the module level. The declaration context for a sub procedure must, therefore, be a class, a structure, a module, or an interface and can't be a source file, a namespace, a procedure, or a block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).  
   
  `Sub` procedures default to public access. You can adjust their access levels by using the access modifiers.  
   
@@ -214,45 +204,45 @@ End Sub
   
  A `Sub` procedure and a `Function` procedure  can have parameters and perform a series of statements. However, a `Function` procedure returns a value, and a `Sub` procedure doesn't. Therefore, you can't use a `Sub` procedure in an expression.  
   
- You can use the `Call` keyword when you call a `Sub` procedure, but that keyword isn't recommended for most uses. For more information, see [Call Statement](call-statement.md).  
+ You can use the `Call` keyword when you call a `Sub` procedure, but that keyword isn't recommended for most uses. For more information, see [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md).  
   
  Visual Basic sometimes rearranges arithmetic expressions to increase internal efficiency. For that reason, if your argument list includes expressions that call other procedures, you shouldn't assume that those expressions will be called in a particular order.  
   
 ## Async Sub Procedures  
  By using the Async feature, you can invoke asynchronous functions without using explicit callbacks or manually splitting your code across multiple functions or lambda expressions.  
   
- If you mark a procedure with the [Async](../modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the procedure. When control reaches an `Await` expression in the `Async` procedure, control returns to the caller, and progress in the procedure is suspended until the awaited task completes. When the task is complete, execution can resume in the procedure.  
+ If you mark a procedure with the [Async](../../../visual-basic/language-reference/modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the procedure. When control reaches an `Await` expression in the `Async` procedure, control returns to the caller, and progress in the procedure is suspended until the awaited task completes. When the task is complete, execution can resume in the procedure.  
   
 > [!NOTE]
 >  An `Async` procedure returns to the caller when either the first awaited object that’s not yet complete is encountered or the end of the `Async` procedure is reached, whichever occurs first.  
   
- You can also mark a [Function Statement](function-statement.md) with the `Async` modifier. An `Async` function can have a return type of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.Task>. An example later in this topic shows an `Async` function that has a return type of <xref:System.Threading.Tasks.Task%601>.  
+ You can also mark a [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md) with the `Async` modifier. An `Async` function can have a return type of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.Task>. An example later in this topic shows an `Async` function that has a return type of <xref:System.Threading.Tasks.Task%601>.  
   
  `Async` `Sub` procedures are primarily used for event handlers, where a value can't be returned. An `Async``Sub` procedure can't be awaited, and the caller of an `Async``Sub` procedure can't catch exceptions that the `Sub` procedure throws.  
   
- An `Async` procedure can't declare any [ByRef](../modifiers/byref.md) parameters.  
+ An `Async` procedure can't declare any [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) parameters.  
   
- For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md), [Control Flow in Async Programs](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).  
+ For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md), [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md), and [Async Return Types](../Topic/Async%20Return%20Types%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## Example  
  The following example uses the `Sub` statement to define the name, parameters, and code that form the body of a `Sub` procedure.  
   
- [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/sub-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#58](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#58)]  
   
 ## Example  
  In the following example, `DelayAsync` is an an `Async``Function` that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `Return` statement that returns an integer. Therefore, the function declaration of `DelayAsync` must have a return type of `Task(Of Integer)`. Because the return type is `Task(Of Integer)`, the evaluation of the `Await` expression in `DoSomethingAsync` produces an integer, as the following statement shows: `Dim result As Integer = Await delayTask`.  
   
  The `startButton_Click` procedure is an example of an `Async Sub` procedure. Because `DoSomethingAsync` is an `Async` function, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `Await DoSomethingAsync()`. The `startButton_Click``Sub` procedure must be defined with the `Async` modifier because it has an `Await` expression.  
   
- [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
+ [!code-vb[csAsyncMethod#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]  
   
 ## See Also  
- [Implements Statement](implements-statement.md)   
- [Function Statement](function-statement.md)   
- [Parameter List](parameter-list.md)   
- [Dim Statement](dim-statement.md)   
- [Call Statement](call-statement.md)   
- [Of](of-clause.md)   
+ [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
+ [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   
+ [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
+ [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)   
+ [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
  [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
  [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   

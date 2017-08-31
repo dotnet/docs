@@ -1,13 +1,13 @@
 ---
-title: "Implicit and Explicit Conversions (Visual Basic)"
+title: "Implicit and Explicit Conversions (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -31,26 +31,14 @@ helpviewer_keywords:
   - "implicit data type conversions"
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
 caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Implicit and Explicit Conversions (Visual Basic)
-An *implicit conversion* does not require any special syntax in the source code. In the following example, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] implicitly converts the value of `k` to a single-precision floating-point value before assigning it to `q`.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+An *implicit conversion* does not require any special syntax in the source code. In the following example, [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] implicitly converts the value of `k` to a single-precision floating-point value before assigning it to `q`.  
   
 ```  
 Dim k As Integer  
@@ -60,7 +48,7 @@ k = 432
 q = k  
 ```  
   
- An *explicit conversion* uses a type conversion keyword. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides several such keywords, which coerce an expression in parentheses to the desired data type. These keywords act like functions, but the compiler generates the code inline, so execution is slightly faster than with a function call.  
+ An *explicit conversion* uses a type conversion keyword. [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] provides several such keywords, which coerce an expression in parentheses to the desired data type. These keywords act like functions, but the compiler generates the code inline, so execution is slightly faster than with a function call.  
   
  In the following extension of the preceding example, the `CInt` keyword converts the value of `q` back to an integer before assigning it to `k`.  
   
@@ -74,8 +62,9 @@ k = CInt(q)
 ## Conversion Keywords  
  The following table shows the available conversion keywords.  
   
+||||  
+|-|-|-|  
 |Type conversion keyword|Converts an expression to data type|Allowable data types of expression to be converted|  
-|---|---|---|  
 |`CBool`|[Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)|Any numeric type (including `Byte`, `SByte`, and enumerated types), `String`, `Object`|  
 |`CByte`|[Byte Data Type](../../../../visual-basic/language-reference/data-types/byte-data-type.md)|Any numeric type (including `SByte` and enumerated types), `Boolean`, `String`, `Object`|  
 |`CChar`|[Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)|`String`, `Object`|  

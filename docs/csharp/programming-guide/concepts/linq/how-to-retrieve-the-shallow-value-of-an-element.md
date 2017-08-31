@@ -1,13 +1,13 @@
 ---
-title: "How to: Retrieve the Shallow Value of an Element (C#)"
+title: "How to: Retrieve the Shallow Value of an Element (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 924a2699-72f6-4be1-aaa6-de62f8ec73b9
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Retrieve the Shallow Value of an Element (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to get the shallow value of an element. The shallow value is the value of the specific element only, as opposed to the deep value, which includes the values of all descendent elements concatenated into a single string.  
   
  When you retrieve an element value by using either casting or the <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName> property, you retrieve the deep value. To retrieve the shallow value, you can use the `ShallowValue` extension method, as shown in the follwing example. Retrieving the shallow value is useful when you want to select elements based on their content.  
@@ -27,7 +29,7 @@ This topic shows how to get the shallow value of an element. The shallow value i
 ## Example  
  The following text file, Report.xml, is the source for this example.  
   
-```xml  
+```  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Report>  
   <Section>  

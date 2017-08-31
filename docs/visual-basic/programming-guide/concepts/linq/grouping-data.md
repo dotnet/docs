@@ -1,8 +1,8 @@
 ---
-title: "Grouping Data (Visual Basic)"
+title: "Grouping Data (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,21 +13,18 @@ dev_langs:
   - "VB"
 ms.assetid: 8f3a0871-6958-4aef-8f6f-493e189fd57d
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Grouping Data (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Grouping refers to the operation of putting data into groups so that the elements in each group share a common attribute.  
   
  The following illustration shows the results of grouping a sequence of characters. The key for each group is the character.  
   
- ![LINQ Grouping Operations](../../../../csharp/programming-guide/concepts/linq/media/linq_group.png "LINQ_Group")  
+ ![LINQ Grouping Operations](../../../../csharp/programming-guide/concepts/linq/media/linq-group.png "LINQ_Group")  
   
  The standard query operator methods that group data elements are listed in the following section.  
   

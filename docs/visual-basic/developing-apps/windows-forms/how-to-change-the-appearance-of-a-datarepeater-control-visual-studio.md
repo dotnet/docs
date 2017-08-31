@@ -1,13 +1,13 @@
 ---
-title: "How to: Change the Appearance of a DataRepeater Control (Visual Studio)"
-
+title: "How to: Change the Appearance of a DataRepeater Control (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "DataRepeater, changing run time appearance"
 ms.assetid: 2af6dfce-760b-489e-b863-8da967f315c3
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Change the Appearance of a DataRepeater Control (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 You can change the appearance of a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control at design time by setting properties or at run time by handling the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DrawItem> event.  
   
  Properties that you set at design time when the item template section of the control is selected will be repeated for each <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterItem> at run time. Appearance-related properties of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control itself will be visible at run time only if a part of the container is left uncovered (for example, if the <xref:System.Windows.Forms.Control.Padding%2A> property is set to a large value).  
@@ -53,14 +41,14 @@ You can change the appearance of a <xref:Microsoft.VisualBasic.PowerPacks.DataRe
   
 2.  In the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DrawItem> event handler, add code to set the properties:  
   
-     [!code-cs[VbPowerPacksDataRepeaterAppearance#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_1.cs)]
-     [!code-vb[VbPowerPacksDataRepeaterAppearance#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_1.vb)]  
+     [!code-csharp[VbPowerPacksDataRepeaterAppearance#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterAppearance/CS/VbPowerPacksDataRepeaterAppearance.cs#1)]
+     [!code-vb[VbPowerPacksDataRepeaterAppearance#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterAppearance/VB/VbPowerPacksDataRepeaterAppearance.vb#1)]  
   
 ## Example  
  Some common customizations for the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control include displaying the rows in alternating colors and changing the color of a field based on a condition. The following example shows how to perform these customizations. This example assumes that you have a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control that is bound to the Products table in the Northwind database.  
   
- [!code-vb[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_2.vb)]
- [!code-cs[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_2.cs)]  
+ [!code-csharp[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterAlternateBackColor/CS/AlternateBackColor.cs#1)]
+ [!code-vb[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterAlternateBackColor/VB/AlternateBackColor.vb#1)]  
   
  Note that for both of these customizations, you must provide code to set the properties for both sides of the condition. If you do not specify the `Else` condition, you will see unexpected results at run time.  
   

@@ -1,13 +1,13 @@
 ---
-title: "Ordinal is not valid"
-
+title: "Ordinal is not valid | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID452"
@@ -15,25 +15,13 @@ dev_langs:
   - "VB"
 ms.assetid: 7459562b-cd4f-4590-95e0-6126ae3589a5
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Ordinal is not valid
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Your call to a dynamic-link library (DLL) indicated to use a number instead of a procedure name, using the `#num` syntax. This error has the following possible causes:  
   
 -   An attempt to convert the `#num` expression to an ordinal failed.  
@@ -42,7 +30,7 @@ Your call to a dynamic-link library (DLL) indicated to use a number instead of a
   
 -   A type library has an invalid declaration resulting in internal use of an invalid ordinal number.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Make sure the expression represents a valid number, or call the procedure by name.  
   

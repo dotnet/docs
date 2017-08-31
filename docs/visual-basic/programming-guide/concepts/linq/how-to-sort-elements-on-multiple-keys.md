@@ -1,8 +1,8 @@
 ---
-title: "How to: Sort Elements on Multiple Keys (Visual Basic)"
+title: "How to: Sort Elements on Multiple Keys (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 0c4c1462-3047-4766-b9e2-7e0e9cc7f421
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Sort Elements on Multiple Keys (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how to sort on multiple keys.  
   
 ## Example  
@@ -40,6 +42,7 @@ For Each r In result
     Console.WriteLine("CustomerID:{0} EmployeeID:{1} ShipPostalCode:{2} OrderDate:{3:d}", _  
                 r.CustomerID, r.EmployeeID, r.ShipPostalCode, r.OrderDate)  
 Next  
+  
 ```  
   
  This code produces the following output:  

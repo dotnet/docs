@@ -1,13 +1,13 @@
 ---
-title: "ByRef (Visual Basic)"
-
+title: "ByRef (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.ByRef"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "ByRef keyword, contexts"
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # ByRef (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies that an argument is passed in such a way that the called procedure can change the value of a variable underlying the argument in the calling code.  
   
 ## Remarks  

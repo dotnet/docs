@@ -1,13 +1,13 @@
 ---
-title: "How to: Get Information About Files, Folders, and Drives  (C# Programming Guide)"
-
+title: "How to: Get Information About Files, Folders, and Drives  (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,23 +17,11 @@ ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Get Information About Files, Folders, and Drives  (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 In the .NET Framework, you can access file system information by using the following classes:  
   
 -   <xref:System.IO.FileInfo?displayProperty=fullName>  
@@ -59,7 +47,7 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## Example  
  The following example shows various ways to access information about files and folders.  
   
- [!code-cs[csFilesandFolders#6](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-get-information-about-files-folders-and-drives_1.cs)]  
+ [!code-csharp[csFilesandFolders#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#6)]  
   
 ## Robust Programming  
  When you process user-specified path strings, you should also handle exceptions for the following conditions:  
@@ -77,4 +65,4 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)

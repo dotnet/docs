@@ -1,13 +1,13 @@
 ---
-title: "How to: Convert RTF to Plain Text (C# Programming Guide)"
-
+title: "How to: Convert RTF to Plain Text (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,24 +17,11 @@ ms.assetid: 3b386a87-899d-4d98-bc82-a980526ddaac
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Convert RTF to Plain Text (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Rich Text Format (RTF) is a document format developed by Microsoft in the late 1980s to enable the exchange of documents across operating systems. Both Microsoft Word and WordPad can read and write RTF documents. In the .NET Framework, you can use the <xref:System.Windows.Forms.RichTextBox> control to create a word processor that supports RTF and enables a user to apply formatting to text in a WYSIWIG manner.  
   
  You can also use the <xref:System.Windows.Forms.RichTextBox> control to programmatically remove the RTF formatting codes from a document and convert it to plain text. You do not need to embed the control in a Windows Form to perform this kind of operation.  
@@ -53,9 +40,10 @@ Rich Text Format (RTF) is a document format developed by Microsoft in the late 1
 ```  
 The Greek word for "psyche" is spelled ψυχή. The Greek letters are encoded in Unicode.  
 These characters are from the extended ASCII character set (Windows code page 1252):  âäӑå  
+  
 ```  
   
- [!code-cs[csProgGuideStrings#33](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-rtf-to-plain-text_1.cs)]  
+ [!code-csharp[csProgGuideStrings#33](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#33)]  
   
  RTF characters are encoded in eight bits. However, users can specify Unicode characters in addition to extended ASCII characters from specified code pages. Because the <xref:System.Windows.Forms.RichTextBox.Text%2A?displayProperty=fullName> property is of type [string](../../../csharp/language-reference/keywords/string.md), the characters are encoded as Unicode UTF-16. Any extended ASCII characters and Unicode characters from the source RTF document are correctly encoded in the text output.  
   

@@ -1,9 +1,13 @@
 ---
-title: "Selection Statements (C# Reference)"
+title: "Selection Statements (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -13,22 +17,11 @@ ms.assetid: cf21cfa2-34fb-48b0-9cbc-8bb4537a9a05
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Selection Statements (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 A selection statement causes the program control to be transferred to a specific flow based upon whether a certain condition is `true` or not.  
   
  The following keywords are used in selection statements:  
@@ -42,7 +35,10 @@ A selection statement causes the program control to be transferred to a specific
 -   [case](../../../csharp/language-reference/keywords/switch.md)  
   
 -   [default](../../../csharp/language-reference/keywords/switch.md)  
-
+  
+## Featured Book Chapter  
+ [Flow Control](http://go.microsoft.com/fwlink/?LinkId=221229) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
+  
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

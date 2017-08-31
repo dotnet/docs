@@ -1,13 +1,13 @@
 ---
-title: "How to: Compare the Contents of Two Folders (LINQ) (C#)"
+title: "How to: Compare the Contents of Two Folders (LINQ) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Compare the Contents of Two Folders (LINQ) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This example demonstrates three ways to compare two file listings:  
   
 -   By querying for a Boolean value that specifies whether the two file lists are identical.  

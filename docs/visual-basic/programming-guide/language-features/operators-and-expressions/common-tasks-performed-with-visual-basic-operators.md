@@ -1,13 +1,13 @@
 ---
-title: "Common Tasks Performed with Visual Basic Operators"
+title: "Common Tasks Performed with Visual Basic Operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -24,38 +24,27 @@ helpviewer_keywords:
   - "operators [Visual Basic], short-circuiting logical"
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Common Tasks Performed with Visual Basic Operators
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Operators perform many common tasks involving one or more expressions called *operands*.  
   
 ## Arithmetic and Bit-shift Tasks  
  The following table summarizes the available arithmetic and bit-shift operations.  
   
+|||  
+|-|-|  
 |To|See|  
-|---|---|  
 |Add one numeric value to another|[+ Operator](../../../../visual-basic/language-reference/operators/addition-operator.md)|  
-|Subtract one numeric value from another|[- Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)|  
-|Reverse the sign of a numeric value|[- Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)|  
+|Subtract one numeric value from another|[- Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/operator-visual-basic.md)|  
+|Reverse the sign of a numeric value|[- Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/operator-visual-basic.md)|  
 |Multiply one numeric value by another|[* Operator](../../../../visual-basic/language-reference/operators/multiplication-operator.md)|  
-|Divide one numeric value into another|[/ Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/floating-point-division-operator.md)|  
-|Find the quotient of one numeric value divided by another (without the remainder)|[\ Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/integer-division-operator.md)|  
+|Divide one numeric value into another|[/ Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/operator-visual-basic.md)|  
+|Find the quotient of one numeric value divided by another (without the remainder)|[\ Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/operator-visual-basic.md)|  
 |Find the remainder of one numeric value divided by another (without the quotient)|[Mod Operator](../../../../visual-basic/language-reference/operators/mod-operator.md)|  
 |Raise one numeric value to the power of another|[^ Operator](../../../../visual-basic/language-reference/operators/exponentiation-operator.md)|  
 |Shift the bit pattern of a numeric value to the left|[<\< Operator](../../../../visual-basic/language-reference/operators/left-shift-operator.md)|  
@@ -64,8 +53,9 @@ Operators perform many common tasks involving one or more expressions called *op
 ## Comparison Tasks  
  The following table summarizes the available comparison operations.  
   
+|||  
+|-|-|  
 |To|See|  
-|---|---|  
 |Determine whether two values are equal|`=` Operator ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
 |Determine whether two values are unequal|`<>` Operator ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
 |Determine whether one value is less than another|`<` Operator ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
@@ -79,16 +69,18 @@ Operators perform many common tasks involving one or more expressions called *op
 ## Concatenation Tasks  
  The following table summarizes the available concatenation operations.  
   
+|||  
+|-|-|  
 |To|See|  
-|---|---|  
 |Join multiple strings into a single string|`&` Operator ([Concatenation Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
 |Join numeric values with string values|`+` Operator ([Concatenation Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
   
 ## Logical and Bitwise Tasks  
  The following table summarizes the available logical and bitwise operations.  
   
+|||  
+|-|-|  
 |To|See|  
-|---|---|  
 |Perform logical negation on a Boolean value|[Not Operator](../../../../visual-basic/language-reference/operators/not-operator.md)|  
 |Perform logical conjunction on two Boolean values|[And Operator](../../../../visual-basic/language-reference/operators/and-operator.md)|  
 |Perform inclusive logical disjunction on two Boolean values|[Or Operator](../../../../visual-basic/language-reference/operators/or-operator.md)|  

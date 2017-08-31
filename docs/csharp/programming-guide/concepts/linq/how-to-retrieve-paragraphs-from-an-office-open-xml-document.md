@@ -1,13 +1,13 @@
 ---
-title: "How to: Retrieve Paragraphs from an Office Open XML Document (C#)"
+title: "How to: Retrieve Paragraphs from an Office Open XML Document (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Retrieve Paragraphs from an Office Open XML Document (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic presents an example that opens an Office Open XML document, and retrieves a collection of all of the paragraphs in the document.  
   
  For more information on Office Open XML, see [www.openxmldeveloper.org](http://go.microsoft.com/fwlink/?LinkID=95573).  

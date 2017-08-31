@@ -1,13 +1,13 @@
 ---
-title: "/noconfig"
-
+title: "-noconfig | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,26 +17,14 @@ helpviewer_keywords:
   - "/noconfig compiler option [Visual Basic]"
 ms.assetid: a7405067-bd21-4171-adf4-a126fa3ad6c3
 caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /noconfig
-Specifies that the compiler should not automatically reference the commonly used [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies or import the `System` and `Microsoft.VisualBasic` namespaces.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+Specifies that the compiler should not automatically reference the commonly used [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] assemblies or import the `System` and `Microsoft.VisualBasic` namespaces.  
   
 ## Syntax  
   
@@ -45,7 +33,7 @@ Specifies that the compiler should not automatically reference the commonly used
 ```  
   
 ## Remarks  
- The `/noconfig` option tells the compiler not to compile with the Vbc.rsp file, which is located in the same directory as the Vbc.exe file. The Vbc.rsp file references the commonly used [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies and imports the `System` and `Microsoft.VisualBasic` namespaces. The compiler implicitly references the System.dll assembly unless the `/nostdlib` option is specified. The `/nostdlib` option tells the compiler not to compile with Vbc.rsp or automatically reference the System.dll assembly.  
+ The `/noconfig` option tells the compiler not to compile with the Vbc.rsp file, which is located in the same directory as the Vbc.exe file. The Vbc.rsp file references the commonly used [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] assemblies and imports the `System` and `Microsoft.VisualBasic` namespaces. The compiler implicitly references the System.dll assembly unless the `/nostdlib` option is specified. The `/nostdlib` option tells the compiler not to compile with Vbc.rsp or automatically reference the System.dll assembly.  
   
 > [!NOTE]
 >  The Mscorlib.dll and Microsoft.VisualBasic.dll assemblies are always referenced.  
@@ -58,7 +46,7 @@ Specifies that the compiler should not automatically reference the commonly used
 >  The `/noconfig` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## See Also  
- [/nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib.md)   
+ [/nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib-visual-basic.md)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)   
- [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference-visual-basic.md)

@@ -1,13 +1,13 @@
 ---
-title: "Common Attributes (C#)"
+title: "Common Attributes (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 785a0526-6c0e-4599-8c61-ccdc88dd9965
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Common Attributes (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic describes the attributes that are most commonly used in C# programs.  
   
 -   [Global Attributes](#Global)  
@@ -51,7 +48,7 @@ This topic describes the attributes that are most commonly used in C# programs.
 -   Assembly manifest attributes  
   
 ### Assembly Identity Attributes  
- Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
+ Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visual-studio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
   
  The following table shows the identity attributes.  
   
@@ -189,18 +186,16 @@ static void DoIfAorB()
   
  To achieve the effect of logically linking symbols by using the AND operator, you can define serial conditional methods. For example, the second method below will execute only if both `A` and `B` are defined:  
   
-```csharp
-[Conditional("A")]  
-static void DoIfA()  
-{  
-    DoIfAandB();  
-}  
+```csharp  
+<Conditional("A")>   
+Shared Sub DoIfA()  
+    DoIfAandB()  
+End Sub  
   
-[Conditional("B")]  
-static void DoIfAandB()  
-{  
-    // Code to execute when both A and B are defined...  
-}  
+<Conditional("B")>   
+Shared Sub DoIfAandB()  
+    ' Code to execute when both A and B are defined...  
+End Sub  
 ```  
   
 ### Using Conditional with Attribute Classes  
@@ -234,8 +229,9 @@ class SampleClass
   
  To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace:  
   
+||||  
+|-|-|-|  
 |Attribute|Description|Type|  
-|---|---|---|  
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the path at compile time.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|  
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md).|`String`|  
@@ -246,6 +242,6 @@ class SampleClass
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
+ [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

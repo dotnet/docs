@@ -1,13 +1,13 @@
 ---
-title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML) (C#)"
+title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: dbef9d89-a5c4-431f-80cc-7a2ebf323f86
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find an Attribute of the Parent (XPath-LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to navigate to the parent element and find an attribute of it.  
   
  The XPath expression is:  

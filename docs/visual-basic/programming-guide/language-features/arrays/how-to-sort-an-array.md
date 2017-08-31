@@ -1,13 +1,13 @@
 ---
-title: "How to: Sort An Array in Visual Basic"
+title: "How to: Sort An Array in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Array.Sort"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "examples [Visual Basic], arrays"
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Sort An Array in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example declares an array of `String` objects named `zooAnimals`, populates it, and then sorts it alphabetically.  
   
 ## Example  
@@ -69,5 +57,5 @@ End Sub
  <xref:System.Array.Sort%2A?displayProperty=fullName>   
  [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
  [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
+ [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)   
  [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)

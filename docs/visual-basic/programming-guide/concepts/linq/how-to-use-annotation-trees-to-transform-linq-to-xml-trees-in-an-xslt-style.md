@@ -1,8 +1,8 @@
 ---
-title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (Visual Basic)"
+title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 08e91fa2-dac2-4463-9ef1-87b1ac3fa890
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Annotations can be used to facilitate transforms of an XML tree.  
   
  Some XML documents are "document centric with mixed content." With such documents, you don't necessarily know the shape of child nodes of an element. For instance, a node that contains text may look like this:  
@@ -31,7 +28,7 @@ Annotations can be used to facilitate transforms of an XML tree.
 <text>A phrase with <b>bold</b> and <i>italic</i> text.</text>  
 ```  
   
- For any given text node, there may be any number of child `<b>` and `<i>` elements. This approach extends to a number of other situations: such as, pages that can contain a variety of child elements, such as regular paragraphs, bulleted paragraphs, and bitmaps. Cells in a table may contain text, drop down lists, or bitmaps. One of the primary characteristics of document centric XML is that you do not know which child element any particular element will have.  
+ For any given text node, there may be any number of child `<b>` and `<i>` elements. This approach extends to a number of other situations: i.e. pages that can contain a variety of child elements, such as regular paragraphs, bulleted paragraphs, and bitmaps. Cells in a table may contain text, drop down lists, or bitmaps. One of the primary characteristics of document centric XML is that you do not know which child element any particular element will have.  
   
  If you want to transform elements in a tree where you don't necessarily know much about the children of the elements that you want to transform, then this approach that uses annotations is an effective approach.  
   

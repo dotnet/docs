@@ -1,13 +1,13 @@
 ---
-title: "Module &lt;keyword&gt; (Visual Basic)"
-
+title: "Module &lt;keyword&gt; (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.ModuleAttribute"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "attribute blocks, Module keyword"
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Module &lt;keyword&gt; (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies that an attribute at the beginning of a source file applies to the current assembly module.  
   
 ## Remarks  
@@ -50,5 +38,4 @@ Specifies that an attribute at the beginning of a source file applies to the cur
 ## See Also  
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
-
+ [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)

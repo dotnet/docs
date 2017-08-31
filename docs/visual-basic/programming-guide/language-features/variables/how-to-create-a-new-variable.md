@@ -1,8 +1,8 @@
 ---
-title: "How to: Create a New Variable (Visual Basic)"
+title: "How to: Create a New Variable (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "variables [Visual Basic], creating"
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
 caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Create a New Variable (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You create a variable with a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md).  
   
 ### To create a new variable  
@@ -42,6 +30,7 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
 1.  Declare the variable in a `Dim` statement.  
   
     ```  
+  
     Dim newCustomer  
     ```  
   
@@ -53,7 +42,7 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
   
      You do not need the `Dim` keyword if you use other keywords in the declaration.  
   
-3.  Follow the specifications with the variable's name, which must follow [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] rules and conventions. For more information, see [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
+3.  Follow the specifications with the variable's name, which must follow [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] rules and conventions. For more information, see [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
   
     ```  
     Public Static newCustomer  
@@ -69,7 +58,7 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
   
 5.  Follow the `As` clause with an equal sign (`=`) and follow the equal sign with the variable's initial value.  
   
-     [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] assigns the specified value to the variable every time it runs the `Dim` statement. If you do not specify an initial value, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] assigns the default initial value for the variable's data type when it first enters the code that contains the `Dim` statement.  
+     [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] assigns the specified value to the variable every time it runs the `Dim` statement. If you do not specify an initial value, [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] assigns the default initial value for the variable's data type when it first enters the code that contains the `Dim` statement.  
   
      If the variable is a reference type, you can create an instance of its class by including the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword in the `As` clause. If you do not use `New`, the initial value of the variable is [Nothing](../../../../visual-basic/language-reference/nothing.md).  
   

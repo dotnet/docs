@@ -1,13 +1,13 @@
 ---
-title: "Generic Delegates (C# Programming Guide)"
-
+title: "Generic Delegates (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,42 +18,30 @@ ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Generic Delegates (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define its own type parameters. Code that references the generic delegate can specify the type argument to create a closed constructed type, just like when instantiating a generic class or calling a generic method, as shown in the following example:  
   
- [!code-cs[csProgGuideGenerics#36](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_1.cs)]  
+ [!code-csharp[csProgGuideGenerics#36](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#36)]  
   
  C# version 2.0 has a new feature called method group conversion, which applies to concrete as well as generic delegate types, and enables you to write the previous line with this simplified syntax:  
   
- [!code-cs[csProgGuideGenerics#37](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_2.cs)]  
+ [!code-csharp[csProgGuideGenerics#37](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#37)]  
   
  Delegates defined within a generic class can use the generic class type parameters in the same way that class methods do.  
   
- [!code-cs[csProgGuideGenerics#38](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_3.cs)]  
+ [!code-csharp[csProgGuideGenerics#38](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#38)]  
   
  Code that references the delegate must specify the type argument of the containing class, as follows:  
   
- [!code-cs[csProgGuideGenerics#39](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_4.cs)]  
+ [!code-csharp[csProgGuideGenerics#39](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#39)]  
   
  Generic delegates are especially useful in defining events based on the typical design pattern because the sender argument can be strongly typed and no longer has to be cast to and from <xref:System.Object>.  
   
- [!code-cs[csProgGuideGenerics#40](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_5.cs)]  
+ [!code-csharp[csProgGuideGenerics#40](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#40)]  
   
 ## See Also  
  <xref:System.Collections.Generic>   
@@ -63,4 +51,4 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define
  [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)   
  [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)   
  [Delegates](../../../csharp/programming-guide/delegates/index.md)   
- [Generics](~/docs/standard/generics/index.md)
+ [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)

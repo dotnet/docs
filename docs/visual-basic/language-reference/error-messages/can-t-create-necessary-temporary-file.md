@@ -1,13 +1,13 @@
 ---
-title: "Can&#39;t create necessary temporary file"
-
+title: "Can&#39;t create necessary temporary file | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID322"
@@ -15,28 +15,16 @@ dev_langs:
   - "VB"
 ms.assetid: 53617b5b-eb06-4188-b4c2-8607cb9fbc79
 caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Can&#39;t create necessary temporary file
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Either the drive is full that contains the directory specified by the TEMP environment variable, or the TEMP environment variable specifies an invalid or read-only drive or directory.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Delete files from the drive, if full.  
   

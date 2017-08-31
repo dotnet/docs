@@ -1,13 +1,13 @@
 ---
-title: "How to: Read From Text Files in Visual Basic"
+title: "How to: Read From Text Files in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "text files, reading"
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
 caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Read From Text Files in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText%2A> method of the `My.Computer.FileSystem` object allows you to read from a text file. The file encoding can be specified if the contents of the file use an encoding such as ASCII or UTF-8.  
   
  If you are reading from a file with extended characters, you will need to specify the file encoding.  
@@ -49,13 +37,13 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText%2A> metho
   
 -   Use the `ReadAllText` method of the `My.Computer.FileSystem` object to read the contents of a text file into a string, supplying the path. The following example reads the contents of test.txt into a string and then displays it in a message box.  
   
-     [!code-vb[VbFileIORead#2](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-text-files_1.vb)]  
+     [!code-vb[VbFileIORead#2](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#2)]  
   
 ### To read from a text file that is encoded  
   
 -   Use the `ReadAllText` method of the `My.Computer.FileSystem` object to read the contents of a text file into a string, supplying the path and file encoding type. The following example reads the contents of the UTF32 file test.txt into a string and then displays it in a message box.  
   
-     [!code-vb[VbFileIORead#3](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-text-files_2.vb)]  
+     [!code-vb[VbFileIORead#3](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#3)]  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
@@ -76,7 +64,7 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText%2A> metho
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
- Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] source file.  
+ Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] source file.  
   
  Verify all inputs before using the data in your application. The contents of the file may not be what is expected, and methods to read from the file may fail.  
   

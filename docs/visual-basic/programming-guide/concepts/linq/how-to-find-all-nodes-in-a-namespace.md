@@ -1,8 +1,8 @@
 ---
-title: "How to: Find All Nodes in a Namespace (Visual Basic)"
+title: "How to: Find All Nodes in a Namespace (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: b735d7da-5727-48a3-ab57-a16378adc32e
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find All Nodes in a Namespace (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You can filter on the namespace of each element or attribute to find all nodes in that particular namespace.  
   
 ## Example  
@@ -49,6 +51,7 @@ Module Module1
         Next  
     End Sub  
 End Module  
+  
 ```  
   
  This code produces the following output:  
@@ -79,6 +82,7 @@ Module Module1
         Console.WriteLine(newTree)  
     End Sub  
 End Module  
+  
 ```  
   
  This code produces the following output:  

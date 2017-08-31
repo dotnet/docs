@@ -1,13 +1,13 @@
 ---
-title: "Type Characters (Visual Basic)"
+title: "Type Characters (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -47,33 +47,19 @@ helpviewer_keywords:
   - "literal types, default"
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
-# Type characters (Visual Basic)
+# Type Characters (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
 
-In addition to specifying a data type in a declaration statement, you can force the data type of some programming elements with a *type character*. The type character must immediately follow the element, with no intervening characters of any kind.
-
-The type character is not part of the name of the element. An element defined with a type character can be referenced without the type character.
-
-## Identifier type characters
-
-Visual Basic supplies a set of *identifier type characters* that you can use in a declaration to specify the data type of a variable or constant. The following table shows the available identifier type characters with examples of usage.
+In addition to specifying a data type in a declaration statement, you can force the data type of some programming elements with a *type character*. The type character must immediately follow the element, with no intervening characters of any kind.  
+  
+ The type character is not part of the name of the element. An element defined with a type character can be referenced without the type character.  
+  
+## Identifier Type Characters  
+ [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] supplies a set of *identifier type characters*, which you can use in a declaration to specify the data type of a variable or constant. The following table shows the available identifier type characters with examples of usage.  
   
 |Identifier type character|Data type|Example|  
 |-------------------------------|---------------|-------------|  
@@ -84,19 +70,17 @@ Visual Basic supplies a set of *identifier type characters* that you can use in 
 |`#`|`Double`|`Dim X#`|  
 |`$`|`String`|`Dim V$ = "Secret"`|  
   
- No identifier type characters exist for the `Boolean`, `Byte`, `Char`, `Date`, `Object`, `SByte`, `Short`, `UInteger`, `ULong`, or `UShort` data types, or for any composite data types such as arrays or structures.
-
-In some cases, you can append the `$` character to a Visual Basic function, for example `Left$` instead of `Left`, to obtain a returned value of type `String`.
-
-In all cases, the identifier type character must immediately follow the identifier name.
-
-## Literal type characters
-
-A *literal* is a textual representation of a particular value of a data type.  
-
-### Default literal types
-
-The form of a literal as it appears in your code ordinarily determines its data type. The following table shows these default types.  
+ No identifier type characters exist for the `Boolean`, `Byte`, `Char`, `Date`, `Object`, `SByte`, `Short`, `UInteger`, `ULong`, or `UShort` data types, or for any composite data types such as arrays or structures.  
+  
+ In some cases, you can append the `$` character to a [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] function, for example `Left$` instead of `Left`, to obtain a returned value of type `String`.  
+  
+ In all cases, the identifier type character must immediately follow the identifier name.  
+  
+## Literal Type Characters  
+ A *literal* is a textual representation of a particular value of a data type.  
+  
+### Default Literal Types  
+ The form of a literal as it appears in your code ordinarily determines its data type. The following table shows these default types.  
   
 |Textual form of literal|Default data type|Example|  
 |-----------------------------|-----------------------|-------------|  
@@ -105,57 +89,47 @@ The form of a literal as it appears in your code ordinarily determines its data 
 |Numeric, fractional part|`Double`|`1.2`|  
 |Enclosed in double quotation marks|`String`|`"A"`|  
 |Enclosed within number signs|`Date`|`#5/17/1993 9:32 AM#`|  
-
-### Forced literal types
-
-Visual Basic supplies a set of *literal type characters*, which you can use to force a literal to assume a data type other than the one its form indicates. You do this by appending the character to the end of the literal. The following table shows the available literal type characters with examples of usage.
+  
+### Forced Literal Types  
+ [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] supplies a set of *literal type characters*, which you can use to force a literal to assume a data type other than the one its form indicates. You do this by appending the character to the end of the literal. The following table shows the available literal type characters with examples of usage.  
   
 |Literal type character|Data type|Example|  
 |----------------------------|---------------|-------------|  
-|`S`|`Short`|`I = 347S`|
-|`I`|`Integer`|`J = 347I`|
-|`L`|`Long`|`K = 347L`|
-|`D`|`Decimal`|`X = 347D`|
-|`F`|`Single`|`Y = 347F`|
-|`R`|`Double`|`Z = 347R`|
-|`US`|`UShort`|`L = 347US`|
-|`UI`|`UInteger`|`M = 347UI`|
-|`UL`|`ULong`|`N = 347UL`|
-|`C`|`Char`|`Q = "."C`|
-
-No literal type characters exist for the `Boolean`, `Byte`, `Date`, `Object`, `SByte`, or `String` data types, or for any composite data types such as arrays or structures.
-
-Literals can also use the identifier type characters (`%`, `&`, `@`, `!`, `#`, `$`), as can variables, constants, and expressions. However, the literal type characters (`S`, `I`, `L`, `D`, `F`, `R`, `C`) can be used only with literals.
-
-In all cases, the literal type character must immediately follow the literal value.
-
-## Hexadecimal, binary, and octal literals
-
-The compiler normally interprets an integer literal to be in the decimal (base 10) number system. You can also define an integer literal as a hexadecimal (base 16) number with the `&H` prefix, as a binary (base 2) number with the `&B` prefix, and as an octal (base 8) number with the `&O` prefix. The digits that follow the prefix must be appropriate for the number system. The following table illustrates this.  
+|`S`|`Short`|`I = 347S`|  
+|`I`|`Integer`|`J = 347I`|  
+|`L`|`Long`|`K = 347L`|  
+|`D`|`Decimal`|`X = 347D`|  
+|`F`|`Single`|`Y = 347F`|  
+|`R`|`Double`|`Z = 347R`|  
+|`US`|`UShort`|`L = 347US`|  
+|`UI`|`UInteger`|`M = 347UI`|  
+|`UL`|`ULong`|`N = 347UL`|  
+|`C`|`Char`|`Q = "."C`|  
   
-|Number base|Prefix|Valid digit values|Example|
-|-----------------|------------|------------------------|-------------|
-|Hexadecimal (base 16)|`&H`|0-9 and A-F|`&HFFFF`|
-|Binary (base 2)|`0B`|0-1|`&B01111100`|
-|Octal (base 8)|`&O`|0-7|`&O77`|
-
-Starting in Visual Basic 2017, you can use the underscore character (`_`) as a group separator to enhance the readability of an integral literal. The following example uses the `_` character to group a binary literal into 8-bit groups:
-
-```vb
-Dim number As Integer = &B00100010_11000101_11001111_11001101
-```
-
-You can follow a prefixed literal with a literal type character. The following example shows this.
-
-```vb
-Dim counter As Short = &H8000S
-Dim flags As UShort = &H8000US
-```
-
-In the previous example, `counter` has the decimal value of -32768, and `flags` has the decimal value of +32768.
-
-## See Also
-
+ No literal type characters exist for the `Boolean`, `Byte`, `Date`, `Object`, `SByte`, or `String` data types, or for any composite data types such as arrays or structures.  
+  
+ Literals can also use the identifier type characters (`%`, `&`, `@`, `!`, `#`, `$`), as can variables, constants, and expressions. However, the literal type characters (`S`, `I`, `L`, `D`, `F`, `R`, `C`) can be used only with literals.  
+  
+ In all cases, the literal type character must immediately follow the literal value.  
+  
+## Hexadecimal and Octal Literals  
+ The compiler normally construes an integer literal to be in the decimal (base 10) number system. You can force an integer literal to be hexadecimal (base 16) with the `&H` prefix, and you can force it to be octal (base 8) with the `&O` prefix. The digits that follow the prefix must be appropriate for the number system. The following table illustrates this.  
+  
+|Number base|Prefix|Valid digit values|Example|  
+|-----------------|------------|------------------------|-------------|  
+|Hexadecimal (base 16)|`&H`|0-9 and A-F|`&HFFFF`|  
+|Octal (base 8)|`&O`|0-7|`&O77`|  
+  
+ You can follow a prefixed literal with a literal type character. The following example shows this.  
+  
+```  
+Dim counter As Short = &H8000S  
+Dim flags As UShort = &H8000US  
+```  
+  
+ In the previous example, `counter` has the decimal value of -32768, and `flags` has the decimal value of +32768.  
+  
+## See Also  
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   

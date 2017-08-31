@@ -1,13 +1,13 @@
 ---
-title: "Variance in Generic Interfaces (C#)"
+title: "Variance in Generic Interfaces (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 4828a8f9-48c0-4128-9749-7fcd6bf19a06
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Variance in Generic Interfaces (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 .NET Framework 4 introduced variance support for several existing generic interfaces. Variance support enables implicit conversion of classes that implement these interfaces. The following interfaces are now variant:  
   
 -   <xref:System.Collections.Generic.IEnumerable%601> (T is covariant)  
@@ -105,5 +102,5 @@ IEnumerable<Object> listObjects = new List<String>();
 ## See Also  
  [Using Variance in Interfaces for Generic Collections (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)   
  [Creating Variant Generic Interfaces (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)   
- [Generic Interfaces](../../../../standard/generics/interfaces.md)   
+ [Generic Interfaces](../Topic/Generic%20Interfaces.md)   
  [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)

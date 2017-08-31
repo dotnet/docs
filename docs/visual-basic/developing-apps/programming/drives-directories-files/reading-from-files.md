@@ -1,13 +1,13 @@
 ---
-title: "Reading from Files in Visual Basic"
+title: "Reading from Files in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "reading files"
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Reading from Files in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This section explains how to perform tasks that are associated with reading from files.  
   
 ## In This Section  
@@ -86,4 +74,4 @@ This section explains how to perform tasks that are associated with reading from
  Demonstrates how to use the `My` feature with files and directories.  
   
  [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- Demonstrates how to use [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods with files and directories.
+ Demonstrates how to use [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] methods with files and directories.

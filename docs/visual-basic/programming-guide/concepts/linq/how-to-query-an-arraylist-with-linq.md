@@ -1,8 +1,8 @@
 ---
-title: "How to: Query an ArrayList with LINQ (Visual Basic)"
+title: "How to: Query an ArrayList with LINQ (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,21 +13,20 @@ dev_langs:
   - "VB"
 ms.assetid: 176358a9-d765-4b57-9557-7feb4428138d
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Query an ArrayList with LINQ (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 When using LINQ to query non-generic <xref:System.Collections.IEnumerable> collections such as <xref:System.Collections.ArrayList>, you must explicitly declare the type of the range variable to reflect the specific type of the objects in the collection. For example, if you have an <xref:System.Collections.ArrayList> of `Student` objects, your [From Clause](../../../../visual-basic/language-reference/queries/from-clause.md) should look like this:  
   
 ```  
+  
 Dim query = From student As Student In arrList   
 ...  
+  
 ```  
   
  By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.  

@@ -1,13 +1,13 @@
 ---
-title: "Adding Printable Reports to Visual Studio Applications"
-
+title: "Adding Printable Reports to Visual Studio Applications | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "reports, printing in Visual Studio"
 ms.assetid: 93928405-ef41-495e-bce2-9d43d5a7080a
 caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Adding Printable Reports to Visual Studio Applications
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Visual Studio supports a variety of reporting solutions to help you add rich data reporting to your Visual Basic applications. You can create and add reports using ReportViewer controls, Crystal Reports, or SQL Server Reporting Services.  
   
 > [!NOTE]
@@ -71,8 +59,9 @@ Visual Studio supports a variety of reporting solutions to help you add rich dat
   
  The Visual Studio Report Designer does not include report preview functionality. To preview your report, run the application and preview the report embedded in it.  
   
+||  
+|-|  
 |To add basic report functionality to your application|  
-|---|    
 |1.  Drag a ReportViewer control from the **Data** tab of the **Toolbox** onto your form.<br />2.  On the **Project** menu, choose **Add New Item**. In the **Add New Item** dialog box, select the **Report** icon and click **Add**.<br />     The Report Designer opens in the development environment, and a report (.rdlc) file is added to the project.<br />3.  Drag report items from the **Toolbox** on the report layout and arrange them as you want.<br />4.  Drag fields from the **Data Sources** window to the report items in the report layout.|  
   
 ## Using Reporting Services in Visual Basic Applications  
@@ -106,8 +95,9 @@ Visual Studio supports a variety of reporting solutions to help you add rich dat
   
  Report definitions that you build for the control or the report server can be reused in either technology.  
   
+||  
+|-|  
 |To create a report that runs on a report server|  
-|---|    
 |1.  On the **File** menu, choose **New**.<br />     The **New Project** dialog box opens.<br />2.  In the **Project types** pane, click **Business Intelligence Projects**.<br />3.  In the Templates pane, select **Report Server Project** or **Report Server Project Wizard**.|  
   
 ## Using ReportViewer Controls and SQL Server Reporting Services Together  

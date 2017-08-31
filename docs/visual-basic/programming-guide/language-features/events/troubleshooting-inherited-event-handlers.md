@@ -1,13 +1,13 @@
 ---
-title: "Troubleshooting Inherited Event Handlers in Visual Basic"
+title: "Troubleshooting Inherited Event Handlers in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "event handlers, troubleshooting"
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Troubleshooting Inherited Event Handlers in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic lists common issues that arise with event handlers in inherited components.  
   
 ## Procedures  
@@ -46,9 +34,9 @@ This topic lists common issues that arise with event handlers in inherited compo
   
 -   An inherited event handler must not include a [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) clause. The method in the base class is already associated with the event and will fire accordingly. Remove the `Handles` clause from the inherited method.  
   
-     [!code-vb[VbVbalrEvents#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/troubleshooting-inherited-event-handlers_1.vb)]  
+     [!code-vb[VbVbalrEvents#32](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#32)]  
   
 -   If the inherited method does not have a `Handles` keyword, verify that your code does not contain an extra [AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md) or any additional methods that handle the same event.  
   
 ## See Also  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+ [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)

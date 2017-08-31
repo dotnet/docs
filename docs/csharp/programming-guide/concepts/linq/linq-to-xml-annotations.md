@@ -1,13 +1,13 @@
 ---
-title: "LINQ to XML Annotations3"
+title: "LINQ to XML Annotations3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,10 +15,12 @@ ms.assetid: 54e7b9d0-07f5-488f-9065-b6e6b870f810
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # LINQ to XML Annotations
-Annotations in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] enable you to associate any arbitrary object of any arbitrary type with any XML component in an XML tree.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+Annotations in [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] enable you to associate any arbitrary object of any arbitrary type with any XML component in an XML tree.  
   
  To add an annotation to an XML component, such as an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute>, you call the <xref:System.Xml.Linq.XObject.AddAnnotation%2A> method. You retrieve annotations by type.  
   

@@ -1,13 +1,13 @@
 ---
-title: "My.WebServices Object"
-
+title: "My.WebServices Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "My.WebServices"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "My.WebServices object"
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.WebServices Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides properties for creating and accessing a single instance of each XML Web service referenced by the current project.  
   
 ## Remarks  
@@ -64,7 +52,7 @@ Provides properties for creating and accessing a single instance of each XML Web
 ## Example  
  This example calls the `FahrenheitToCelsius` method of the `TemperatureConverter` XML Web service, and returns the result.  
   
- [!code-vb[VbVbalrMyWebService#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-webservices-object_1.vb)]  
+ [!code-vb[VbVbalrMyWebService#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWebService/VB/Form1.vb#1)]  
   
  For this example to work, your project must reference a Web service named `Converter`, and that Web service must expose the `ConvertTemperature` method. For more information, see [Accessing Application Web Services](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md).  
   
@@ -74,8 +62,9 @@ Provides properties for creating and accessing a single instance of each XML Web
   
 ### Availability by Project Type  
   
+|||  
+|-|-|  
 |Project type|Available|  
-|---|---|  
 |Windows Application|**Yes**|  
 |Class Library|**Yes**|  
 |Console Application|**Yes**|  

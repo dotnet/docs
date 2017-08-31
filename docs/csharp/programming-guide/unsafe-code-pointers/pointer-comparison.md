@@ -1,13 +1,13 @@
 ---
-title: "Pointer Comparison (C# Programming Guide)"
-
+title: "Pointer Comparison (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,23 +17,11 @@ ms.assetid: fcafd514-7405-4deb-8490-cc58efda5495
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Pointer Comparison (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 You can apply the following operators to compare pointers of any type:  
   
  **==   !=   \<   >   \<=   >=**  
@@ -41,9 +29,9 @@ You can apply the following operators to compare pointers of any type:
  The comparison operators compare the addresses of the two operands as if they are unsigned integers.  
   
 ## Example  
- [!code-cs[csProgGuidePointers#16](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-comparison_1.cs)]  
+ [!code-csharp[csProgGuidePointers#16](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers2.cs#16)]  
   
- [!code-cs[csProgGuidePointers#17](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-comparison_2.cs)]  
+ [!code-csharp[csProgGuidePointers#17](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#17)]  
   
 ## Sample Output  
  `True`  

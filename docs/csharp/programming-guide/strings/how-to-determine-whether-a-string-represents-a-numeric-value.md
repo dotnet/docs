@@ -1,13 +1,13 @@
 ---
-title: "How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide)"
-
+title: "How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,23 +19,11 @@ ms.assetid: a4e84e10-ea0a-489f-a868-503dded9d85f
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 To determine whether a string is a valid representation of a specified numeric type, use the static `TryParse` method that is implemented by all primitive numeric types and also by types such as <xref:System.DateTime> and <xref:System.Net.IPAddress>. The following example shows how to determine whether "108" is a valid [int](../../../csharp/language-reference/keywords/int.md).  
   
 ```  
@@ -52,7 +40,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 ## Example  
  The following examples show how to use `TryParse` with string representations of `long`, `byte`, and `decimal` values.  
   
- [!code-cs[csProgGuideStrings#14](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-determine-whether-a-string-represents-a-numeric-value_1.cs)]  
+ [!code-csharp[csProgGuideStrings#14](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#14)]  
   
 ## Robust Programming  
  Primitive numeric types also implement the `Parse` static method, which throws an exception if the string is not a valid number. `TryParse` is generally more efficient because it just returns false if the number is not valid.  
@@ -64,5 +52,5 @@ bool result = int.TryParse(s, out i); //i now = 108
  [How to: Convert a byte Array to an int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)   
  [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)   
  [How to: Convert Between Hexadecimal Strings and Numeric Types](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)   
- [Parsing Numeric Strings](../../../standard/base-types/parsing-numeric.md)   
- [Formatting Types](../../../standard/base-types/formatting-types.md)
+ [Parsing Numeric Strings](../Topic/Parsing%20Numeric%20Strings%20in%20the%20.NET%20Framework.md)   
+ [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md)

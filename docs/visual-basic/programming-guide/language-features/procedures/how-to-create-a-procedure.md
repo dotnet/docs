@@ -1,13 +1,13 @@
 ---
-title: "How to: Create a Procedure (Visual Basic)"
+title: "How to: Create a Procedure (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "procedures, about procedures"
 ms.assetid: 4f779247-0b50-47e8-9e5c-ab5cf39ac0d2
 caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Create a Procedure (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You enclose a procedure between a starting declaration statement (`Sub` or `Function`) and an ending declaration statement (`End Sub` or `End Function`). All the procedure's code lies between these statements.  
   
  A procedure cannot contain another procedure, so its starting and ending statements must be outside any other procedure.  
@@ -73,16 +61,16 @@ You enclose a procedure between a starting declaration statement (`Sub` or `Func
 ## Example  
  The following `Function` procedure calculates the longest side, or hypotenuse, of a right triangle, given the values for the other two sides.  
   
- [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-create-a-procedure_1.vb)]  
+ [!code-vb[VbVbcnProcedures#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#1)]  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Recursive Procedures](./recursive-procedures.md)   
- [Procedure Overloading](./procedure-overloading.md)   
+ [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
+ [Sub Procedures](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)   
+ [Function Procedures](../../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
+ [Property Procedures](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+ [Operator Procedures](../../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
+ [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
+ [Recursive Procedures](../../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)   
+ [Procedure Overloading](../../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)
+ [Object-Oriented Programming](../Topic/Object-Oriented%20Programming%20\(C%23%20and%20Visual%20Basic\).md)

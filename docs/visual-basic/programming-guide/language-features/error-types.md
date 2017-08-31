@@ -1,13 +1,13 @@
 ---
-title: "Error Types (Visual Basic)"
+title: "Error Types (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions, types"
@@ -19,29 +19,17 @@ helpviewer_keywords:
   - "syntax errors, Visual Basic"
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Error Types (Visual Basic)
-In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], errors (also called *exceptions*) fall into one of three categories: syntax errors, run-time errors, and logic errors.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+In [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], errors (also called *exceptions*) fall into one of three categories: syntax errors, run-time errors, and logic errors.  
   
 ## Syntax Errors  
- *Syntax errors* are those that appear while you write code. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] checks your code as you type it in the **Code Editor** window and alerts you if you make a mistake, such as misspelling a word or using a language element improperly. Syntax errors are the most common type of errors. You can fix them easily in the coding environment as soon as they occur.  
+ *Syntax errors* are those that appear while you write code. [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] checks your code as you type it in the **Code Editor** window and alerts you if you make a mistake, such as misspelling a word or using a language element improperly. Syntax errors are the most common type of errors. You can fix them easily in the coding environment as soon as they occur.  
   
 > [!NOTE]
 >  The `Option Explicit` statement is one means of avoiding syntax errors. It forces you to declare, in advance, all the variables to be used in the application. Therefore, when those variables are used in the code, any typographic errors are caught immediately and can be fixed.  
@@ -54,4 +42,4 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], errors (also called *exceptions*
   
 ## See Also  
  [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
- [Debugger Basics](/visualstudio/debugger/debugger-basics)
+ [Debugger Basics](/visual-studio/debugger/debugger-basics)

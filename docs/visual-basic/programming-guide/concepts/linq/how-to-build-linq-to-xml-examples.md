@@ -1,8 +1,8 @@
 ---
-title: "How to: Build LINQ to XML Examples (Visual Basic)"
+title: "How to: Build LINQ to XML Examples (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 565bca7a-ac8b-497f-8d8d-3323b3d7799e
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Build LINQ to XML Examples (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The various snippets and examples in this documentation use classes and types from a variety of namespaces. When compiling Visual Basic code, you need to supply appropriate `Imports` statements.  
   
 ## Example  

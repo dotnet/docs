@@ -1,13 +1,13 @@
 ---
-title: "Indexers in Interfaces (C# Programming Guide)"
-
+title: "Indexers in Interfaces (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,23 +18,11 @@ ms.assetid: e16b54bd-4a83-4f52-bd75-65819fca79e8
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Indexers in Interfaces (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Indexers can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). Accessors of interface indexers differ from the accessors of [class](../../../csharp/language-reference/keywords/class.md) indexers in the following ways:  
   
 -   Interface accessors do not use modifiers.  
@@ -45,14 +33,14 @@ Indexers can be declared on an [interface](../../../csharp/language-reference/ke
   
  The following is an example of an interface indexer accessor:  
   
- [!code-cs[csProgGuideIndexers#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_1.cs)]  
+ [!code-csharp[csProgGuideIndexers#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#3)]  
   
  The signature of an indexer must differ from the signatures of all other indexers declared in the same interface.  
   
 ## Example  
  The following example shows how to implement interface indexers.  
   
- [!code-cs[csProgGuideIndexers#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_2.cs)]  
+ [!code-csharp[csProgGuideIndexers#4](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#4)]  
   
  In the preceding example, you could use the explicit interface member implementation by using the fully qualified name of the interface member. For example:  
   

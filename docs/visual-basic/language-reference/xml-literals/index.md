@@ -1,13 +1,13 @@
 ---
-title: "XML Literals (Visual Basic)"
-
+title: "XML Literals (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -20,26 +20,14 @@ helpviewer_keywords:
   - "literals [Visual Basic], XML"
 ms.assetid: 16b28c40-8768-423f-bd9c-22ff10de2b54
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # XML Literals (Visual Basic)
-The topics in this section document the syntax of XML literals in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The XML literal syntax enables you to incorporate XML directly in your code.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The topics in this section document the syntax of XML literals in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]. The XML literal syntax enables you to incorporate XML directly in your code.  
   
 ## In This Section  
   

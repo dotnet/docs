@@ -1,8 +1,8 @@
 ---
-title: "LINQ to XML Security (Visual Basic)"
+title: "LINQ to XML Security (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: d99b4af2-d447-4a3b-991b-6da0231a8637
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # LINQ to XML Security (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic describes security issues associated with LINQ to XML. In addition, it provides some guidance for mitigating security exposure.  
   
 ## LINQ to XML Security Overview  

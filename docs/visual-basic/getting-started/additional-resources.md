@@ -1,13 +1,13 @@
 ---
-title: "Additional Resources for Visual Basic Programmers"
-
+title: "Additional Resources for Visual Basic Programmers | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -24,25 +24,13 @@ helpviewer_keywords:
   - "Visual Basic, videos"
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Additional Resources for Visual Basic Programmers
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 The following web sites provide guidance and can help you find answers to common problems.  
   
 ## Microsoft Resources  
@@ -69,11 +57,11 @@ The following web sites provide guidance and can help you find answers to common
   
 |Term|Definition|  
 |----------|----------------|  
-|[Visual Basic Language](http://go.microsoft.com/fwlink/?LinkId=145963)|Discusses the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language syntax and compiler.|  
-|[Visual Basic Interop and Upgrade](http://go.microsoft.com/fwlink/?LinkId=145966)|Discusses upgrading to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] and working with interoperability features.|  
-|[Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)|Discusses working in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment.|  
+|[Visual Basic Language](http://go.microsoft.com/fwlink/?LinkId=145963)|Discusses the [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] language syntax and compiler.|  
+|[Visual Basic Interop and Upgrade](http://go.microsoft.com/fwlink/?LinkId=145966)|Discusses upgrading to [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] and working with interoperability features.|  
+|[Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)|Discusses working in the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment.|  
 |[Visual Basic Power Packs](http://social.msdn.microsoft.com/Forums/vbpowerpacks/threads)|Discusses the add-ins, controls, components, samples and tools that are part of the Visual Basic Power Packs.|  
-|[Visual Basic General](http://go.microsoft.com/fwlink/?LinkId=145973)|Discusses issues with [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that are not discussed in other forums.|  
+|[Visual Basic General](http://go.microsoft.com/fwlink/?LinkId=145973)|Discusses issues with [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] that are not discussed in other forums.|  
   
 ### Chats and Discussion Groups  
   
@@ -102,8 +90,8 @@ The following web sites provide guidance and can help you find answers to common
 |Term|Definition|  
 |----------|----------------|  
 |[DevX Visual Basic Zone](http://go.microsoft.com/fwlink/?LinkId=145978)|Provides in-depth technical articles for today's Visual Basic developer.|  
-|[vb.dotnet.technical](http://go.microsoft.com/fwlink/?LinkId=145986)|Provides a forum for discussion of new features in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] in the DevX forums.|  
+|[vb.dotnet.technical](http://go.microsoft.com/fwlink/?LinkId=145986)|Provides a forum for discussion of new features in [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] in the DevX forums.|  
   
 ## See Also  
  [Getting Started](../../visual-basic/getting-started/index.md)   
- [Talk to Us](/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visual-studio/ide/talk-to-us)

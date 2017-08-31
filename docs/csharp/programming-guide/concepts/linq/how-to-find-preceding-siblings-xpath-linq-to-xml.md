@@ -1,13 +1,13 @@
 ---
-title: "How to: Find Preceding Siblings (XPath-LINQ to XML) (C#)"
+title: "How to: Find Preceding Siblings (XPath-LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,10 +15,12 @@ ms.assetid: b281ff99-d08a-43d0-bea1-eff831b2f8ae
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find Preceding Siblings (XPath-LINQ to XML) (C#)
-This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] child <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> axis.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] child <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> axis.  
   
  The XPath expression is:  
   
@@ -29,7 +31,7 @@ This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxl
 ## Example  
  The following example finds the `FullAddress` element, and then retrieves the previous elements using the `preceding-sibling` axis.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md).  
   
 ```csharp  
 XElement co = XElement.Load("CustomersOrders.xml");  

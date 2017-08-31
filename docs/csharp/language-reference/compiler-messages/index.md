@@ -1,9 +1,13 @@
 ---
-title: "C# Compiler Errors"
+title: "C# Compiler Errors | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 dev_langs: 
   - "CSharp"
@@ -16,39 +20,28 @@ ms.assetid: 57262ab1-6c50-4f9c-81ad-9fba48477416
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # C# Compiler Errors
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Some C# compiler errors have corresponding topics that explain why the error is generated, and, in some cases, how to fix the error. Use one of the following steps to see whether help is available for a particular error message.  
   
--   Find the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then search for it on MSDN.  
+-   Find the error number (for example, CS0029) in the [Output Window](/visual-studio/ide/reference/output-window), and then search for it on MSDN.  
   
--   Choose the error number (for example, CS0029) in the [Output Window](/visualstudio/ide/reference/output-window), and then choose the F1 key.  
+-   Choose the error number (for example, CS0029) in the [Output Window](/visual-studio/ide/reference/output-window), and then choose the F1 key.  
   
 -   In the Index, enter the error number in the **Look for** box.  
   
  If none of these steps leads to information about your error, go to the end of this page, and send feedback that includes the number or text of the error.  
   
- For information about how to configure error and warning options in C#, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
+ For information about how to configure error and warning options in C#, see [Build Page, Project Designer (C#)](/visual-studio/ide/reference/build-page-project-designer-csharp).  
   
-[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../../../includes/note-settings-general-md.md)]  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [Sorry, we don't have specifics on this C# error](../../../csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md)   
- [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)   
- [/warn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/warn-compiler-option.md)   
- [/nowarn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md)
+ [Build Page, Project Designer (C#)](/visual-studio/ide/reference/build-page-project-designer-csharp)   
+ [/warn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/warn-csharp-compiler-options.md)   
+ [/nowarn (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowarn-csharp-compiler-options.md)

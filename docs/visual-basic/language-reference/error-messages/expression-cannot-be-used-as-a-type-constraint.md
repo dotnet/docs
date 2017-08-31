@@ -1,13 +1,13 @@
 ---
-title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint"
-
+title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc32061"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC32061"
 ms.assetid: b17821b7-fa14-4397-a211-6e2a14079f09
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &#39;&lt;expression&gt;&#39; cannot be used as a type constraint
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A constraint list includes an expression that does not represent a valid constraint on a type parameter.  
   
  A constraint list imposes requirements on the type argument passed to the type parameter. You can specify the following requirements in any combination:  
@@ -57,7 +45,7 @@ A constraint list includes an expression that does not represent a valid constra
   
  **Error ID:** BC32061  
   
-## To correct this error  
+### To correct this error  
   
 -   Verify that the expression and its elements are spelled correctly.  
   

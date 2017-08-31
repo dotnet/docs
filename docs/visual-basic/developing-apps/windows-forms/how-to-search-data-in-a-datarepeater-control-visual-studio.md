@@ -1,13 +1,13 @@
 ---
-title: "How to: Search Data in a DataRepeater Control (Visual Studio)"
-
+title: "How to: Search Data in a DataRepeater Control (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "DataRepeater, searching data"
 ms.assetid: a8ab5d17-b94f-43c4-8dd7-d0450226d73f
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Search Data in a DataRepeater Control (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 When you are using a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control that contains many records, you may want to let users search for a specific record. Rather than searching the data in the control itself, you can implement a search by querying the underlying <xref:System.Windows.Forms.BindingSource>. If the item is found, you can then use the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.CurrentItemIndex%2A> property to select the item and scroll it into view.  
   
 ### To implement search  
@@ -49,8 +37,8 @@ When you are using a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> contro
   
 5.  Double-click the <xref:System.Windows.Forms.Button> control to open the Code Editor, and add the following code to the `SearchButton_Click` event handler.  
   
-     [!code-vb[VbPowerPacksDataRepeaterSearch#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-search-data-in-a-datarepeater-control-visual-studio_1.vb)]
-     [!code-cs[VbPowerPacksDataRepeaterSearch#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-search-data-in-a-datarepeater-control-visual-studio_1.cs)]  
+     [!code-csharp[VbPowerPacksDataRepeaterSearch#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterSearch/CS/DataRepeaterSearch.cs#1)]
+     [!code-vb[VbPowerPacksDataRepeaterSearch#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterSearch/VB/DataRepeaterSearch.vb#1)]  
   
      Replace *ProductsBindingSource* with the name of the <xref:System.Windows.Forms.BindingSource> for your <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>, and replace *ProductID* with the name of the field that you want to search.  
   

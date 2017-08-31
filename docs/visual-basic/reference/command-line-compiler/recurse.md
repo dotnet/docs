@@ -1,13 +1,13 @@
 ---
-title: "/recurse"
-
+title: "-recurse | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "recurse compiler option [Visual Basic]"
 ms.assetid: 84a0b670-33ae-44c4-a46a-b90388809317
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /recurse
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Compiles source-code files in all child directories of either the specified directory or the project directory.  
   
 ## Syntax  
@@ -58,13 +46,13 @@ Compiles source-code files in all child directories of either the specified dire
 >  The `/recurse` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
- The following code compiles all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files in the current directory.  
+ The following code compiles all [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] files in the current directory.  
   
 ```  
 vbc *.vb  
 ```  
   
- The following code compiles all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files in the `Test\ABC` directory and any directories below it, and then generates `Test.ABC.dll`.  
+ The following code compiles all [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] files in the `Test\ABC` directory and any directories below it, and then generates `Test.ABC.dll`.  
   
 ```  
 vbc /target:library /out:Test.ABC.dll /recurse:Test\ABC\*.vb  
@@ -72,5 +60,5 @@ vbc /target:library /out:Test.ABC.dll /recurse:Test\ABC\*.vb
   
 ## See Also  
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)   
+ [/out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out-visual-basic.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

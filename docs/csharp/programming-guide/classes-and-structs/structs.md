@@ -1,13 +1,13 @@
 ---
-title: "Structs (C# Programming Guide)"
-
+title: "Structs (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,32 +18,20 @@ ms.assetid: b7cf4ff2-0eb7-4e5c-93d5-b2196b4f5d89
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Structs (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Structs are defined by using the [struct](../../../csharp/language-reference/keywords/struct.md) keyword, for example:  
   
- [!code-cs[csProgGuideObjects#39](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/structs_1.cs)]  
+ [!code-csharp[csProgGuideObjects#39](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#39)]  
   
  Structs share most of the same syntax as classes, although structs are more limited than classes:  
   
 -   Within a struct declaration, fields cannot be initialized unless they are declared as const or static.  
   
--   A struct cannot declare a default constructor (a constructor without parameters) or a finalizer.  
+-   A struct cannot declare a default constructor (a constructor without parameters) or a destructor.  
   
 -   Structs are copied on assignment. When a struct is assigned to a new variable, all the data is copied, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with collections of value types such as Dictionary\<string, myStruct>.  
   
@@ -71,6 +59,8 @@ Structs are defined by using the [struct](../../../csharp/language-reference/key
 -   [How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method](../../../csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md)  
   
 -   [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
+  
+-   [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

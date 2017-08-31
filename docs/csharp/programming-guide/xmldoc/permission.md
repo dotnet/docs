@@ -1,13 +1,13 @@
 ---
-title: "&lt;permission&gt; (C# Programming Guide)"
-
+title: "&lt;permission&gt; (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "permission"
@@ -21,26 +21,14 @@ ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &lt;permission&gt; (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 ## Syntax  
   
-```xml  
+```  
 <permission cref="member">description</permission>  
 ```  
   
@@ -56,10 +44,10 @@ translation.priority.ht:
 ## Remarks  
  The \<permission> tag lets you document the access of a member. The <xref:System.Security.PermissionSet> class lets you specify access to a member.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#8](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/permission_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#8](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#8)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

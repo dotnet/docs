@@ -1,40 +1,25 @@
 ---
-title: "Visual Basic Run-Time Messages"
-
+title: "Visual Basic Run-Time Messages | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "errors [Visual Basic], run-time"
   - "run-time errors, Visual Basic"
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Visual Basic Run-Time Messages
-This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at run time.  
+This section contains the [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] error messages that occur at run time.  
   
  [\<address> is not a valid remote file address](../../visual-basic/misc/address-is-not-a-valid-remote-file-address.md)  
   
@@ -252,7 +237,7 @@ This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error mess
   
  [File format not valid](../../visual-basic/misc/file-format-not-valid.md)  
   
- [File I/O of a structure with field '\<fieldname>' of type '\<typename>' is not valid](../../visual-basic/misc/file-io-of-a-structure-with-field-fieldname-of-type-typename-is-not-valid.md)  
+ [File I/O of a structure with field '\<fieldname>' of type '\<typename>' is not valid](../../visual-basic/misc/file-i-o-of-a-structure-with-field-fieldname-of-type-typename-is-not-valid.md)  
   
  [File I/O with type '\<typename>' is not valid](../../visual-basic/misc/file-i-o-with-type-typename-is-not-valid.md)  
   

@@ -1,13 +1,13 @@
 ---
-title: "How to: Control the Availability of a Variable (Visual Basic)"
+title: "How to: Control the Availability of a Variable (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,32 +22,20 @@ helpviewer_keywords:
   - "Protected keyword, accessing variables"
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Control the Availability of a Variable (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You control the availability of a variable by specifying its *access level*. The access level determines what code has permission to read or write to the variable.  
   
 -   *Member variables* (defined at module level and outside any procedure) default to public access, which means any code that can see them can access them. You can change this by specifying an access modifier.  
   
 -   *Local variables* (defined inside a procedure) nominally have public access, although only code within their procedure can access them. You cannot change the access level of a local variable, but you can change the access level of the procedure that contains it.  
   
- For more information, see [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ For more information, see [Access Levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 ## Private and Public Access  
   
@@ -109,7 +97,7 @@ Private numberForMeOnly As Integer
  The more restrictive the access level of a variable, the smaller the chances that malicious code can make improper use of it.  
   
 ## See Also  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access Levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)   
  [Public](../../../../visual-basic/language-reference/modifiers/public.md)   
  [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)   

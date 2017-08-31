@@ -1,13 +1,13 @@
 ---
-title: "XML axis properties do not support late binding"
-
+title: "XML axis properties do not support late binding | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc31168"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC31168"
 ms.assetid: 45707363-55e4-4151-892d-d8729106355b
 caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # XML axis properties do not support late binding
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An XML axis property has been referenced for an untyped object.  
   
  **Error ID:** BC31168  
   
-## To correct this error  
+### To correct this error  
   
 -   Ensure that the object is a strong-typed <xref:System.Xml.Linq.XElement> object before referencing the XML axis property.  
   

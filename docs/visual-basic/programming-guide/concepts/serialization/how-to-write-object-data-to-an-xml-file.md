@@ -1,8 +1,8 @@
 ---
-title: "How to: Write Object Data to an XML File (Visual Basic)"
+title: "How to: Write Object Data to an XML File (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,17 +13,14 @@ dev_langs:
   - "VB"
 ms.assetid: f7966480-5ed2-43ac-9894-33427436de2a
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Write Object Data to an XML File (Visual Basic)
-This example writes the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+TThis example writes the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
 ## Example  
   

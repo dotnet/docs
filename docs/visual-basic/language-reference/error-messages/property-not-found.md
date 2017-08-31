@@ -1,13 +1,13 @@
 ---
-title: "Property not found"
-
+title: "Property not found | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID422"
@@ -15,28 +15,16 @@ dev_langs:
   - "VB"
 ms.assetid: 127e0f5f-0997-4ac5-b9af-2e6a2eb513a2
 caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Property not found
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 This object does not support the specified property.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Check the spelling of the property's name.  
   

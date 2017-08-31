@@ -1,13 +1,13 @@
 ---
-title: "How to: Read From a Text File (C# Programming Guide)"
-
+title: "How to: Read From a Text File (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "StreamReader.ReadToEnd"
@@ -22,23 +22,11 @@ ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Read From a Text File (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 This example reads the contents of a text file by using the static methods <xref:System.IO.File.ReadAllText%2A> and <xref:System.IO.File.ReadAllLines%2A> from the <xref:System.IO.File?displayProperty=fullName> class.  
   
  For an example that uses <xref:System.IO.StreamReader>, see [How to: Read a Text File One Line at a Time](../../../csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md).  
@@ -47,7 +35,7 @@ This example reads the contents of a text file by using the static methods <xref
 >  The files that are used in this example are created in the topic [How to: Write to a Text File](../../../csharp/programming-guide/file-system/how-to-write-to-a-text-file.md).  
   
 ## Example  
- [!code-cs[csFilesandFolders#4](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-read-from-a-text-file_1.cs)]  
+ [!code-csharp[csFilesandFolders#4](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#4)]  
   
 ## Compiling the Code  
  Copy the code and paste it into a C# console application.  
@@ -65,4 +53,4 @@ This example reads the contents of a text file by using the static methods <xref
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)

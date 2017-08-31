@@ -1,8 +1,8 @@
 ---
-title: "Validating Strings in Visual Basic"
+title: "Validating Strings in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,26 +18,14 @@ helpviewer_keywords:
   - "validation, strings"
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
 caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Validating Strings in Visual Basic
-This section discusses how to validate strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+This section discusses how to validate strings in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)].  
   
 ## In This Section  
  [How to: Validate File Names and Paths in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/how-to-validate-file-names-and-paths.md)  
@@ -54,4 +42,4 @@ This section discusses how to validate strings in [!INCLUDE[vbprvb](~/includes/v
   
 ## See Also  
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)   
- [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+ [MaskedTextBox Control](../Topic/MaskedTextBox%20Control%20\(Windows%20Forms\).md)

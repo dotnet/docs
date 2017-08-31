@@ -1,13 +1,13 @@
 ---
-title: "For...Next Statement (Visual Basic)"
-
+title: "For...Next Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Step"
@@ -34,38 +34,25 @@ helpviewer_keywords:
   - "For statement"
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
 caps.latest.revision: 64
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # For...Next Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Repeats a group of statements a specified number of times.  
   
 ## Syntax  
   
 ```  
-For counter [ As datatype ] = start To end [ Step step ]  
-    [ statements ]  
+For counter [ As datatype ] = start To end [ Step step ]  
+    [ statements ]  
     [ Continue For ]  
     [ statements ]  
-    [ Exit For ]  
-    [ statements ]  
-Next [ counter ]  
+    [ Exit For ]  
+    [ statements ]  
+Next [ counter ]  
 ```  
   
 ## Parts  
@@ -90,11 +77,11 @@ Next [ counter ]
   
  In the following example, the `index` variable starts with a value of 1 and is incremented with each iteration of the loop, ending after the value of `index` reaches 5.  
   
- [!code-vb[VbVbalrStatements#111](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#111](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#111)]  
   
  In the following example, the `number` variable starts at 2 and is reduced by 0.25 on each iteration of the loop, ending after the value of `number` reaches 0. The `Step` argument of `-.25` reduces the value by 0.25 on each iteration of the loop.  
   
- [!code-vb[VbVbalrStatements#112](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#112](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#112)]  
   
 > [!TIP]
 >  A [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md) or [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md) works well when you don't know in advance how many times to run the statements in the loop. However, when you expect to run the loop a specific number of times, a `For`...`Next` loop is a better choice. You determine the number of iterations when you first enter the loop.  
@@ -102,7 +89,7 @@ Next [ counter ]
 ## Nesting Loops  
  You can nest `For` loops by putting one loop within another. The following example demonstrates nested `For`...`Next` structures that have different step values. The outer loop creates a string for every iteration of the loop. The inner loop decrements a loop counter variable for every iteration of the loop.  
   
- [!code-vb[VbVbalrStatements#113](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#113](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#113)]  
   
  When nesting loops, each loop must have a unique `counter` variable.  
   
@@ -115,7 +102,7 @@ Next [ counter ]
   
  The following example illustrates the use of the `Continue For` and `Exit For` statements.  
   
- [!code-vb[VbVbalrStatements#115](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#115](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#115)]  
   
  You can put any number of `Exit For` statements in a `For`…`Next` loop. When used within nested `For`…`Next` loops, `Exit For` exits the innermost loop and transfers control to the next higher level of nesting.  
   
@@ -183,17 +170,17 @@ Next [ counter ]
 ## Example  
  The following example removes all elements from a generic list. Instead of a [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md), the example shows a `For`...`Next` statement that iterates in descending order. The example uses this technique because the `removeAt` method causes elements after the removed element to have a lower index value.  
   
- [!code-vb[VbVbalrStatements#114](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_5.vb)]  
+ [!code-vb[VbVbalrStatements#114](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#114)]  
   
 ## Example  
  The following example iterates through an enumeration that's declared by using an [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md).  
   
- [!code-vb[VbVbalrStatements#116](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_6.vb)]  
+ [!code-vb[VbVbalrStatements#116](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#116)]  
   
 ## Example  
  In the following example, the statement parameters use a class that has operator overloads for the `+`, `-`, `>=`, and `<=` operators.  
   
- [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_7.vb)]  
+ [!code-vb[VbVbalrStatements#117](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#117)]  
   
 ## See Also  
  <xref:System.Collections.Generic.List%601>   
@@ -202,4 +189,4 @@ Next [ counter ]
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   
  [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
  [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)
+ [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)

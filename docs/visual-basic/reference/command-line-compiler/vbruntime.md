@@ -1,13 +1,13 @@
 ---
-title: "/vbruntime"
-
+title: "-vbruntime | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbruntime"
@@ -20,25 +20,13 @@ helpviewer_keywords:
   - "/vbruntime compiler option [Visual Basic]"
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /vbruntime
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies that the compiler should compile without a reference to the Visual Basic Runtime Library, or with a reference to a specific runtime library.  
   
 ## Syntax  

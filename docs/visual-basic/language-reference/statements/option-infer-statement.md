@@ -1,13 +1,13 @@
 ---
-title: "Option Infer Statement"
-
+title: "Option Infer Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.OptionInfer"
@@ -22,25 +22,13 @@ helpviewer_keywords:
   - "inferred variable declaration"
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
 caps.latest.revision: 72
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Option Infer Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Enables the use of local type inference in declaring variables.  
   
 ## Syntax  
@@ -51,8 +39,9 @@ Option Infer { On | Off }
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`On`|Optional. Enables local type inference.|  
 |`Off`|Optional. Disables local type inference.|  
   
@@ -66,20 +55,20 @@ Option Infer { On | Off }
  ![IntelliSense view of the declaration.](../../../visual-basic/language-reference/statements/media/optioninferasinteger.png "optionInferAsInteger")  
 IntelliSense when Option Infer is on  
   
- In the following illustration, `Option Infer` is turned off. The variable in the declaration `Dim someVar = 2` is declared as an `Object` by type inference. In this example, the **Option Strict** setting is set to **Off** on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
+ In the following illustration, `Option Infer` is turned off. The variable in the declaration `Dim someVar = 2` is declared as an `Object` by type inference. In this example, the **Option Strict** setting is set to **Off** on the [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic).  
   
  ![IntelliSense view of the declaration.](../../../visual-basic/language-reference/statements/media/optioninferasobject.png "optionInferAsObject")  
 IntelliSense when Option Infer is off  
   
 > [!NOTE]
->  When a variable is declared as an `Object`, the run-time type can change while the program is running. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).
+>  When a variable is declared as an `Object`, the run-time type can change while the program is running. [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification.md).  
   
  Type inference applies at the procedure level, and does not apply outside a procedure in a class, structure, module, or interface.  
   
  For additional information, see [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).  
   
 ## When an Option Infer Statement Is Not Present  
- If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option is used.  
+ If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option is used.  
   
 #### To set Option Infer in the IDE  
   
@@ -98,8 +87,9 @@ IntelliSense when Option Infer is off
 ## Default Data Types and Values  
  The following table describes the results of various combinations of specifying the data type and initializer in a `Dim` statement.  
   
+|||||  
+|-|-|-|-|  
 |Data type specified?|Initializer specified?|Example|Result|  
-|---|---|---|---|  
 |No|No|`Dim qty`|If `Option Strict` is off (the default), the variable is set to `Nothing`.<br /><br /> If `Option Strict` is on, a compile-time error occurs.|  
 |No|Yes|`Dim qty = 5`|If `Option Infer` is on (the default), the variable takes the data type of the initializer. See [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).<br /><br /> If `Option Infer` is off and `Option Strict` is off, the variable takes the data type of `Object`.<br /><br /> If `Option Infer` is off and `Option Strict` is on, a compile-time error occurs.|  
 |Yes|No|`Dim qty As Integer`|The variable is initialized to the default value for the data type. For more information, see [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).|  
@@ -108,12 +98,12 @@ IntelliSense when Option Infer is off
 ## Example  
  The following examples demonstrate how the `Option Infer` statement enables local type inference.  
   
- [!code-vb[VbVbalrTypeInference#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#6](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#6)]  
   
 ## Example  
  The following example demonstrates that the run-time type can differ when a variable is identified as an `Object`.  
   
- [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  
+ [!code-vb[VbVbalrTypeInference#11](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#11)]  
   
 ## See Also  
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
@@ -121,6 +111,6 @@ IntelliSense when Option Infer is off
  [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
  [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)   
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visual-studio/ide/reference/visual-basic-defaults-projects-options-dialog-box)   
  [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
  [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

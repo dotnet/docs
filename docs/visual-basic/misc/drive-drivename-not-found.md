@@ -1,41 +1,26 @@
 ---
-title: "Drive &#39;&lt;drivename&gt;&#39; not found"
-
+title: "Drive &#39;&lt;drivename&gt;&#39; not found | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrFileSystem_DriveNotFound1"
 ms.assetid: 0250e9f2-3470-4fe4-8fda-be4fbf2e2a30
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Drive &#39;&lt;drivename&gt;&#39; not found
 The drive cannot be found. Either your network connection has been lost, or the drive you are trying to access is offline or does not exist.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Check power to the drive.  
   

@@ -1,13 +1,13 @@
 ---
-title: "GetType Operator (Visual Basic)"
-
+title: "GetType Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.GetType"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "GetType keyword"
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # GetType Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Returns a <xref:System.Type> object for the specified type. The <xref:System.Type> object provides information about the type such as its properties, methods, and events.  
   
 ## Syntax  
@@ -47,8 +35,9 @@ GetType(typename)
   
 #### Parameters  
   
+|||  
+|-|-|  
 |Parameter|Description|  
-|---|---|  
 |`typename`|The name of the type for which you desire information.|  
   
 ## Remarks  
@@ -77,7 +66,7 @@ GetType(typename)
 ## Example  
  The following examples show the `GetType` operator in use.  
   
- [!code-vb[VbVbalrOperators#26](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/gettype-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#26](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#26)]  
   
 ## See Also  
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   

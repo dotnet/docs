@@ -1,13 +1,13 @@
 ---
-title: "&lt;list&gt; (Visual Basic)"
-
+title: "&lt;list&gt; (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -24,30 +24,18 @@ helpviewer_keywords:
   - "<term> XML tag"
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &lt;list&gt; (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Defines a list or table.  
   
 ## Syntax  
   
-```xml  
+```  
 <list type="type">  
    <listheader>  
       <term>term</term>  
@@ -82,7 +70,7 @@ Defines a list or table.
 ## Example  
  This example uses the `<list>` tag to define a bulleted list in the remarks section.  
   
- [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/list_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#5)]  
   
 ## See Also  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

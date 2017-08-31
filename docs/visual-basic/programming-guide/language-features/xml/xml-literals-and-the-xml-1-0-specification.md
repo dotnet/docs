@@ -1,8 +1,8 @@
 ---
-title: "XML Literals and the XML 1.0 Specification (Visual Basic)"
+title: "XML Literals and the XML 1.0 Specification (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,26 +15,14 @@ helpviewer_keywords:
   - "XML literals [Visual Basic], XML 1.0 specification"
 ms.assetid: 46f046e5-293c-41a3-b893-4e5f6e32e78a
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # XML Literals and the XML 1.0 Specification (Visual Basic)
-The XML literal syntax in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supports most of the Extensible Markup Language (XML) 1.0 specification. For details about the XML 1.0 specification, see [Extensible Markup Language (XML) 1.0](http://go.microsoft.com/fwlink/?LinkId=73927) on the W3C Web site.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The XML literal syntax in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] supports most of the Extensible Markup Language (XML) 1.0 specification. For details about the XML 1.0 specification, see [Extensible Markup Language (XML) 1.0](http://go.microsoft.com/fwlink/?LinkId=73927) on the W3C Web site.  
   
 ## What Visual Basic Does Not Support  
   

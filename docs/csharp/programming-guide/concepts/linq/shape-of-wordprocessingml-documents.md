@@ -1,13 +1,13 @@
 ---
-title: "Shape of WordprocessingML Documents (C#)"
+title: "Shape of WordprocessingML Documents (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Shape of WordprocessingML Documents (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic introduces the XML shape of a WordprocessingML document.  
   
 ## Microsoft Office Formats  

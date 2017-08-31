@@ -1,41 +1,29 @@
 ---
-title: "A-E Statements"
-
+title: "A-E Statements | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: af97c2bf-dddb-48a8-8eb6-798cd219430b
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # A-E Statements
-The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The following table contains a listing of [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] language statements.  
   
 |||||  
-|---|---|---|---|  
+|-|-|-|-|  
 |[AddHandler](../../../visual-basic/language-reference/statements/addhandler-statement.md)|[Call](../../../visual-basic/language-reference/statements/call-statement.md)|[Class](../../../visual-basic/language-reference/statements/class-statement.md)|[Const](../../../visual-basic/language-reference/statements/const-statement.md)|  
 |[Continue](../../../visual-basic/language-reference/statements/continue-statement.md)|[Declare](../../../visual-basic/language-reference/statements/declare-statement.md)|[Delegate](../../../visual-basic/language-reference/statements/delegate-statement.md)|[Dim](../../../visual-basic/language-reference/statements/dim-statement.md)|  
 |[Do...Loop](../../../visual-basic/language-reference/statements/do-loop-statement.md)|[Else](../../../visual-basic/language-reference/statements/else-statement.md)|[End](../../../visual-basic/language-reference/statements/end-statement.md)|[End \<keyword>](../../../visual-basic/language-reference/statements/end-keyword-statement.md)|  

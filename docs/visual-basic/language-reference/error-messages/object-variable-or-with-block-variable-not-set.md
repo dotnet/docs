@@ -1,13 +1,13 @@
 ---
-title: "Object variable or With block variable not set"
-
+title: "Object variable or With block variable not set | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID91"
@@ -15,26 +15,13 @@ dev_langs:
   - "VB"
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Object variable or With block variable not set
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An invalid object variable is being referenced.   This error can occur for several reasons:  
   
 -   A variable was declared without specifying a type. If a variable is declared without specifying a type, it defaults to type `Object`.  
@@ -57,14 +44,14 @@ An invalid object variable is being referenced.   This error can occur for sever
 > [!NOTE]
 >  In earlier versions of Visual Basic or VBA this error was also triggered by assigning a value to a variable without using the `Set` keyword (`x = "name"` instead of `Set x = "name"`). The `Set` keyword is no longer valid in Visual Basic .Net.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Set `Option Strict` to `On` by adding the following code to the beginning of the file:  
   
-```vb  
-Option Strict On  
-```  
-
+    ```vb  
+    Option Strict On  
+    ```  
+  
      When you run the project, a compiler error will appear in the **Error List** for any variable that was specified without a type.  
   
 2.  If you don't want to enable `Option Strict`, search your code for any variables that were specified without a type (`Dim x` instead of `Dim x As String`) and add the intended type to the declaration.  

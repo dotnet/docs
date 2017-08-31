@@ -1,41 +1,26 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; must be greater than zero"
-
+title: "Argument &#39;&lt;argumentname&gt;&#39; must be greater than zero | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_GTZero1"
 ms.assetid: f9939fbd-6c4f-4871-9452-9ea0267e948e
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; must be greater than zero
 An argument is not valid because it is less than or equal to zero.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   

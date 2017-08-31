@@ -1,13 +1,13 @@
 ---
-title: "XML Value Property (Visual Basic)"
-
+title: "XML Value Property (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyExtensionValue"
@@ -20,37 +20,27 @@ helpviewer_keywords:
   - "XML Value property [Visual Basic]"
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # XML Value Property (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides access to the value of the first element of a collection of <xref:System.Xml.Linq.XElement> objects.  
   
 ## Syntax  
   
 ```  
+  
 object.Value  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`object`|Required. Collection of <xref:System.Xml.Linq.XElement> objects.|  
   
 ## Return Value  
@@ -72,7 +62,7 @@ object.Value
 ## Example  
  The following example shows how to use the <xref:System.Xml.Linq.XElement.Value%2A> property to access the first node in a collection of <xref:System.Xml.Linq.XElement> objects. The example uses the child axis property to get the collection of all child nodes named `phone` that are in the `contact` object.  
   
- [!code-vb[VbXMLSamples#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_1.vb)]  
+ [!code-vb[VbXMLSamples#15](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples7.vb#15)]  
   
  This code displays the following text:  
   
@@ -81,7 +71,7 @@ object.Value
 ## Example  
  The following example shows how to get the value of an XML attribute from a collection of <xref:System.Xml.Linq.XAttribute> objects. The example uses the attribute axis property to display the value of the `type` attribute for all of the the `phone` elements.  
   
- [!code-vb[VbXMLSamples#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_2.vb)]  
+ [!code-vb[VbXMLSamples#16](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples7.vb#16)]  
   
  This code displays the following text:  
   

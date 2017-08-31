@@ -1,9 +1,13 @@
 ---
-title: "Query Keywords (C# Reference)"
+title: "Query Keywords (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -14,22 +18,11 @@ ms.assetid: 6c9bec16-dbd7-4a7c-a060-fe4600b2021f
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Query Keywords (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 This section contains the contextual keywords used in query expressions.  
   
 ## In This Section  
@@ -37,7 +30,7 @@ This section contains the contextual keywords used in query expressions.
 |Clause|Description|  
 |------------|-----------------|  
 |[from](../../../csharp/language-reference/keywords/from-clause.md)|Specifies a data source and a range variable (similar to an iteration variable).|  
-|[where](../../../csharp/language-reference/keywords/where-clause.md)|Filters source elements based on one or more Boolean expressions separated by logical AND and OR operators ( `&&` or <code>&#124;&#124;</code> ).|  
+|[where](../../../csharp/language-reference/keywords/where-clause.md)|Filters source elements based on one or more Boolean expressions separated by logical AND and OR operators ( `&&` or `&#124;&#124;` ).|  
 |[select](../../../csharp/language-reference/keywords/select-clause.md)|Specifies the type and shape that the elements in the returned sequence will have when the query is executed.|  
 |[group](../../../csharp/language-reference/keywords/group-clause.md)|Groups query results according to a specified key value.|  
 |[into](../../../csharp/language-reference/keywords/into.md)|Provides an identifier that can serve as a reference to the results of a join, group or select clause.|  
@@ -53,6 +46,6 @@ This section contains the contextual keywords used in query expressions.
   
 ## See Also  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
+ [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

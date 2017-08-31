@@ -1,9 +1,13 @@
 ---
-title: "Compiler Warning CS3024"
-ms.date: "2015-07-20"
-ms.prod: .net
+title: "Compiler Warning CS3024 | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/28/2017"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CS3024"
@@ -15,21 +19,7 @@ ms.assetid: fef9db31-9a7f-42d5-ad37-3e7faf661f95
 caps.latest.revision: 7
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Compiler Warning CS3024
 Constraint type 'type' is not CLS-compliant.  

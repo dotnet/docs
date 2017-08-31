@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 10
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VbVbalrTypeEquivalence", "VbVbalrTypeEquivalence\VbVbalrTypeEquivalence.vbproj", "{C6E380F6-9D30-4841-A993-6321C7B12633}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TypeEquivalenceInterface", "TypeEquivalenceInterface\TypeEquivalenceInterface.vbproj", "{41A9D7E1-CA7B-49AD-AAE2-BFBC35877265}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TypeEquivalenceRuntime", "TypeEquivalenceRuntime\TypeEquivalenceRuntime.vbproj", "{2189A9F9-CE2B-48A0-9057-516306A25572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6E380F6-9D30-4841-A993-6321C7B12633}.Debug|x86.ActiveCfg = Debug|x86
+		{C6E380F6-9D30-4841-A993-6321C7B12633}.Debug|x86.Build.0 = Debug|x86
+		{C6E380F6-9D30-4841-A993-6321C7B12633}.Release|x86.ActiveCfg = Release|x86
+		{C6E380F6-9D30-4841-A993-6321C7B12633}.Release|x86.Build.0 = Release|x86
+		{41A9D7E1-CA7B-49AD-AAE2-BFBC35877265}.Debug|x86.ActiveCfg = Debug|x86
+		{41A9D7E1-CA7B-49AD-AAE2-BFBC35877265}.Debug|x86.Build.0 = Debug|x86
+		{41A9D7E1-CA7B-49AD-AAE2-BFBC35877265}.Release|x86.ActiveCfg = Release|x86
+		{41A9D7E1-CA7B-49AD-AAE2-BFBC35877265}.Release|x86.Build.0 = Release|x86
+		{2189A9F9-CE2B-48A0-9057-516306A25572}.Debug|x86.ActiveCfg = Debug|x86
+		{2189A9F9-CE2B-48A0-9057-516306A25572}.Debug|x86.Build.0 = Debug|x86
+		{2189A9F9-CE2B-48A0-9057-516306A25572}.Release|x86.ActiveCfg = Release|x86
+		{2189A9F9-CE2B-48A0-9057-516306A25572}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

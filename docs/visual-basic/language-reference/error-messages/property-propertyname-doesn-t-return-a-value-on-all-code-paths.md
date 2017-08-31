@@ -1,13 +1,13 @@
 ---
-title: "Property &#39;&lt;propertyname&gt;&#39; doesn&#39;t return a value on all code paths"
-
+title: "Property &#39;&lt;propertyname&gt;&#39; doesn&#39;t return a value on all code paths | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc42107"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC42107"
 ms.assetid: 06800966-9c3b-4844-9f13-83ac95607d32
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Property &#39;&lt;propertyname&gt;&#39; doesn&#39;t return a value on all code paths
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Property '\<propertyname>' doesn't return a value on all code paths. A null reference exception could occur at run time when the result is used.  
   
  A property `Get` procedure has at least one possible path through its code that does not return a value.  
@@ -51,11 +39,11 @@ Property '\<propertyname>' doesn't return a value on all code paths. A null refe
   
  If control passes to `Exit Property` or `End Get` and you have not assigned any value to the property name, the `Get` procedure returns the default value of the property's data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42107  
   
-## To correct this error  
+### To correct this error  
   
 -   Check your control flow logic and make sure you assign a value before every statement that causes a return.  
   

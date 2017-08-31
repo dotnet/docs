@@ -1,13 +1,13 @@
 ---
-title: "Visual Basic Language Features"
+title: "Visual Basic Language Features | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,30 +16,18 @@ helpviewer_keywords:
   - "Visual Basic code"
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Visual Basic Language Features
-The following topics introduce and discuss the essential components of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], an object-oriented programming language. After creating the user interface for your application using forms and controls, you need to write the code that defines the application's behavior. As with any modern programming language, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supports a number of common programming constructs and language elements.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The following topics introduce and discuss the essential components of [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], an object-oriented programming language. After creating the user interface for your application using forms and controls, you need to write the code that defines the application's behavior. As with any modern programming language, [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] supports a number of common programming constructs and language elements.  
   
- If you have programmed in other languages, much of the material covered in this section might seem familiar. While most of the constructs are similar to those in other languages, the event-driven nature of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] introduces some subtle differences.  
+ If you have programmed in other languages, much of the material covered in this section might seem familiar. While most of the constructs are similar to those in other languages, the event-driven nature of [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] introduces some subtle differences.  
   
- If you are new to programming, the material in this section serves as an introduction to the basic building blocks for writing code. Once you understand the basics, you can create powerful applications using [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ If you are new to programming, the material in this section serves as an introduction to the basic building blocks for writing code. Once you understand the basics, you can create powerful applications using [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
   
 ## In This Section  
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
@@ -60,23 +48,23 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
  Covers programming elements you can declare, their names and characteristics, and how the compiler resolves references to them.  
   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  
  Provides an introduction to delegates and how they are used in Visual Basic.  
   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)  
  Describes binding, which is performed by the compiler when an object is assigned to an object variable, and the differences between early-bound and late-bound objects.  
   
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
  Provides an overview of syntax errors, run-time errors, and logic errors.  
   
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
+ [Events](../../../visual-basic/programming-guide/language-features/events/events.md)  
  Shows how to declare and use events.  
   
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
  Describes what interfaces are and how you can use them in your applications.  
   
  [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
- Provides links to topics that introduce [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] features and programming.  
+ Provides links to topics that introduce [!INCLUDE[vbteclinqext](../../../includes/vbteclinqext-md.md)] features and programming.  
   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
  Provides an overview of objects and classes, how they are used, their relationships to each other, and the properties, methods, and events they expose.  
@@ -100,8 +88,8 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  Provides links to topics that describe how to use XML in Visual Basic.  
   
 ## Related Sections  
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+ [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)  
  Describes some of the types of collections that are provided by the .NET Framework. Demonstrates how to use simple collections and collections of key/value pairs.  
   
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
- Provides reference information on various aspects of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] programming.
+ Provides reference information on various aspects of [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] programming.

@@ -1,8 +1,8 @@
 ---
-title: "How to: Control the Type of a Projection (Visual Basic)"
+title: "How to: Control the Type of a Projection (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: a0171276-0b46-4817-aee5-a8d5191b12fe
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Control the Type of a Projection (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Projection is the process of taking one set of data, filtering it, changing its shape, and even changing its type. Most query expressions perform projections. Most of the query expressions shown in this section evaluate to <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, but you can control the type of the projection to create collections of other types. This topic shows how to do this.  
   
 ## Example  
@@ -83,6 +85,7 @@ Sub Main()
         Console.WriteLine(cust)  
     Next  
 End Sub  
+  
 ```  
   
  This code produces the following output:  

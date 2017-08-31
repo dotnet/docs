@@ -1,13 +1,13 @@
 ---
-title: "Constructor &#39;&lt;name&gt;&#39; cannot call itself"
-
+title: "Constructor &#39;&lt;name&gt;&#39; cannot call itself | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30298"
@@ -18,32 +18,20 @@ helpviewer_keywords:
   - "BC30298"
 ms.assetid: 2d77b7f4-0640-4f89-9c65-f101fd2847c0
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Constructor &#39;&lt;name&gt;&#39; cannot call itself
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A `Sub New` procedure in a class or structure calls itself.  
   
  The purpose of a constructor is to initialize an instance of a class or structure when it is first created. A class or structure can have several constructors, provided they all have different parameter lists. A constructor is permitted to call another constructor to perform its functionality in addition to its own. But it is meaningless for a constructor to call itself, and in fact it would result in infinite recursion if permitted.  
   
  **Error ID:** BC30298  
   
-## To correct this error  
+### To correct this error  
   
 1.  Check the parameter list of the constructor being called. It should be different from that of the constructor making the call.  
   

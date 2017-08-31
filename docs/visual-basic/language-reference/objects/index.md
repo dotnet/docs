@@ -1,13 +1,13 @@
 ---
-title: "Objects (Visual Basic)"
-
+title: "Objects (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,31 +15,19 @@ helpviewer_keywords:
   - "objects [Visual Basic]"
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Objects (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 This topic provides links to other topics that document the Visual Basic run-time objects and contain tables of their member procedures, properties, and events.  
   
 ## Visual Basic Run-time Objects  
   
 |||  
-|---|---|  
+|-|-|  
 |<xref:Microsoft.VisualBasic.Collection>|Provides a convenient way to see a related group of items as a single object.|  
 |<xref:Microsoft.VisualBasic.Information.Err%2A>|Contains information about run-time errors.|  
 |The `My.Application` object consists of the following classes:<br /><br /> <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> provides members that are available in all projects.<br /><br /> <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> provides members available in Windows Forms applications.<br /><br /> <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase> provides members available in console applications.|Provides data that is associated only with the current application or DLL. No system-level information can be altered with `My.Application`.<br /><br /> Some members are available only for Windows Forms or console applications.|  
@@ -59,9 +47,9 @@ This topic provides links to other topics that document the Visual Basic run-tim
 |`My.Computer.Registry` (<xref:Microsoft.VisualBasic.MyServices.RegistryProxy>)|Provides properties and methods for manipulating the registry.|  
 |[My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)|Provides properties for accessing an instance of each Windows Form declared in the current project.|  
 |`My.Log` (<xref:Microsoft.VisualBasic.Logging.AspLog>)|Provides a property and methods for writing event and exception information to the application's log listeners for Web applications.|  
-|[My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)|Gets the <xref:System.Web.HttpRequest> object for the requested page. The `My.Request` object contains information about the current HTTP request.<br /><br /> The `My.Request` object is available only for [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications.|  
+|[My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)|Gets the <xref:System.Web.HttpRequest> object for the requested page. The `My.Request` object contains information about the current HTTP request.<br /><br /> The `My.Request` object is available only for [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications.|  
 |[My.Resources Object](../../../visual-basic/language-reference/objects/my-resources-object.md)|Provides properties and classes for accessing an application's resources.|  
-|[My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)|Gets the <xref:System.Web.HttpResponse> object that is associated with the <xref:System.Web.UI.Page>. This object allows you to send HTTP response data to a client and contains information about that response.<br /><br /> The `My.Response` object is available only for [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications.|  
+|[My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)|Gets the <xref:System.Web.HttpResponse> object that is associated with the <xref:System.Web.UI.Page>. This object allows you to send HTTP response data to a client and contains information about that response.<br /><br /> The `My.Response` object is available only for [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications.|  
 |[My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md)|Provides properties and methods for accessing an application's settings.|  
 |`My.User` (<xref:Microsoft.VisualBasic.ApplicationServices.User>)|Provides access to information about the current user.|  
 |[My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)|Provides properties for creating and accessing a single instance of each Web service that is referenced by the current project.|  

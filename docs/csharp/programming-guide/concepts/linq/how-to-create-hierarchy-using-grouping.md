@@ -1,13 +1,13 @@
 ---
-title: "How to: Create Hierarchy Using Grouping (C#)"
+title: "How to: Create Hierarchy Using Grouping (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 0213d59e-5f76-438c-9cab-4bf11f7b971d
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Create Hierarchy Using Grouping (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This example shows how to group data, and then generate XML based on the grouping.  
   
 ## Example  

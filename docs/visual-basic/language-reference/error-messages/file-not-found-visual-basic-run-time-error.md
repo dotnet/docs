@@ -1,13 +1,13 @@
 ---
-title: "File not found (Visual Basic Run-Time Error)"
-
+title: "File not found (Visual Basic Run-Time Error) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID53"
@@ -15,25 +15,13 @@ dev_langs:
   - "VB"
 ms.assetid: 57addb16-6f9a-444d-8af8-dda52431daca
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # File not found (Visual Basic Run-Time Error)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The file was not found where specified. The error has the following possible causes:  
   
 -   A statement refers to a file that does not exist.  
@@ -42,7 +30,7 @@ The file was not found where specified. The error has the following possible cau
   
 -   You attempted to open a project or load a text file that does not exist.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Check the spelling of the file name and the path specification.  
   

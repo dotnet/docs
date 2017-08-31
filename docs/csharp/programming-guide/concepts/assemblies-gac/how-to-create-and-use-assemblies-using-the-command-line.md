@@ -1,13 +1,13 @@
 ---
-title: "How to: Create and Use Assemblies Using the Command Line (C#)"
+title: "How to: Create and Use Assemblies Using the Command Line (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 408ddce3-89e3-4e12-8353-34a49beeb72b
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Create and Use Assemblies Using the Command Line (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 An assembly, or a dynamic linking library (DLL), is linked to your program at run time. To demonstrate building and using a DLL, consider the following scenario:  
   
 -   `MathLibrary.DLL`: The library file that contains the methods to be called at run time. In this example, the DLL contains two methods, `Add` and `Multiply`.  
@@ -123,7 +120,7 @@ UtilityMethods.MultiplyClass.Multiply(num1, num2);
 csc /target:library /out:MathLibrary.DLL Add.cs Mult.cs  
 ```  
   
- The [/target:library](../../../../csharp/language-reference/compiler-options/target-library-compiler-option.md) compiler option tells the compiler to output a DLL instead of an EXE file. The [/out](../../../../csharp/language-reference/compiler-options/out-compiler-option.md) compiler option followed by a file name is used to specify the DLL file name. Otherwise, the compiler uses the first file (`Add.cs`) as the name of the DLL.  
+ The [/target:library](../../../../csharp/language-reference/compiler-options/target-library-csharp-compiler-options.md) compiler option tells the compiler to output a DLL instead of an EXE file. The [/out](../../../../csharp/language-reference/compiler-options/out-csharp-compiler-options.md) compiler option followed by a file name is used to specify the DLL file name. Otherwise, the compiler uses the first file (`Add.cs`) as the name of the DLL.  
   
  To build the executable file, `TestCode.exe`, use the following command line:  
   
@@ -131,11 +128,11 @@ csc /target:library /out:MathLibrary.DLL Add.cs Mult.cs
 csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs  
 ```  
   
- The **/out** compiler option tells the compiler to output an EXE file and specifies the name of the output file (`TestCode.exe`). This compiler option is optional. The [/reference](../../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option specifies the DLL file or files that this program uses. For more information, see [/reference](../../../../csharp/language-reference/compiler-options/reference-compiler-option.md).  
+ The **/out** compiler option tells the compiler to output an EXE file and specifies the name of the output file (`TestCode.exe`). This compiler option is optional. The [/reference](../../../../csharp/language-reference/compiler-options/reference-csharp-compiler-options.md) compiler option specifies the DLL file or files that this program uses. For more information, see [/reference](../../../../csharp/language-reference/compiler-options/reference-csharp-compiler-options.md).  
   
  For more information about building from the command line, see [Command-line Building With csc.exe](../../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
   
 ## See Also  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)   
- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)
+ [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)   
+ [Creating a Class to Hold DLL Functions](../Topic/Creating%20a%20Class%20to%20Hold%20DLL%20Functions.md)

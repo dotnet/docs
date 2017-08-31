@@ -1,8 +1,8 @@
 ---
-title: "How to: Work with Dictionaries Using LINQ to XML (Visual Basic)"
+title: "How to: Work with Dictionaries Using LINQ to XML (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 6cb3f969-1986-414a-b850-87418712edea
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Work with Dictionaries Using LINQ to XML (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 It is often convenient to convert varieties of data structures to XML, and XML back to other data structures. This topic shows a specific implementation of this general approach by converting a <xref:System.Collections.Generic.Dictionary%602> to XML and back.  
   
 ## Example  
@@ -40,6 +42,7 @@ Console.WriteLine(root)
  This code produces the following output:  
   
 ```xml  
+  
           <Root>  
   <Child1>Value1</Child1>  
   <Child2>Value2</Child2>  

@@ -1,41 +1,26 @@
 ---
-title: "Unable to ping because a network connection is not available"
-
+title: "Unable to ping because a network connection is not available | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_NetworkNotAvailable"
 ms.assetid: 8d2bac12-bc6a-42ae-b28b-80b026dfabce
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Unable to ping because a network connection is not available
 The operation cannot be performed because no network connection is available.  
   
-## To correct this error  
+### To correct this error  
   
 -   Connect to the network and reattempt the operation.  
   

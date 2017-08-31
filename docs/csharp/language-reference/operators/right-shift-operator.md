@@ -1,9 +1,13 @@
 ---
-title: "&gt;&gt; Operator (C# Reference)"
+title: "&gt;&gt; Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - ">>_CSharpKeyword"
@@ -16,22 +20,11 @@ ms.assetid: a07f8679-d318-4ef8-b38b-65903efb8056
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &gt;&gt; Operator (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The right-shift operator (`>>`) shifts its first operand right by the number of bits specified by its second operand.  
   
 ## Remarks  
@@ -41,10 +34,10 @@ The right-shift operator (`>>`) shifts its first operand right by the number of 
   
  If the first operand is an [int](../../../csharp/language-reference/keywords/int.md) or [long](../../../csharp/language-reference/keywords/long.md), the right-shift is an arithmetic shift (high-order empty bits are set to the sign bit). If the first operand is of type [uint](../../../csharp/language-reference/keywords/uint.md) or [ulong](../../../csharp/language-reference/keywords/ulong.md), the right-shift is a logical shift (high-order bits are zero-filled).  
   
- User-defined types can overload the `>>` operator; the type of the first operand must be the user-defined type, and the type of the second operand must be [int](../../../csharp/language-reference/keywords/int.md). For more information, see [operator](../../../csharp/language-reference/keywords/operator.md). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
+ User-defined types can overload the `>>` operator; the type of the first operand must be the user-defined type, and the type of the second operand must be [int](../../../csharp/language-reference/keywords/int.md). For more information, see [operator](../../../csharp/language-reference/keywords/operator-csharp-reference.md). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#26](../../../csharp/language-reference/operators/codesnippet/CSharp/right-shift-operator_1.cs)]  
+ [!code-csharp[csRefOperators#26](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#26)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -1,8 +1,8 @@
 ---
-title: "LINQ to XML Events (Visual Basic)"
+title: "LINQ to XML Events (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,21 +13,18 @@ dev_langs:
   - "VB"
 ms.assetid: 34923928-b99c-4004-956e-38f6db25e910
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # LINQ to XML Events (Visual Basic)
-[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] events enable you to be notified when an XML tree is altered.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+[!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] events enable you to be notified when an XML tree is altered.  
   
  You can add events to an instance of any <xref:System.Xml.Linq.XObject>. The event handler will then receive events for modifications to that <xref:System.Xml.Linq.XObject> and any of its descendants. For example, you can add an event handler to the root of the tree, and handle all modifications to the tree from that event handler.  
   
- For examples of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] events, see <xref:System.Xml.Linq.XObject.Changing> and <xref:System.Xml.Linq.XObject.Changed>.  
+ For examples of [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] events, see <xref:System.Xml.Linq.XObject.Changing> and <xref:System.Xml.Linq.XObject.Changed>.  
   
 ## Types and Events  
  You use the following types when working with events:  

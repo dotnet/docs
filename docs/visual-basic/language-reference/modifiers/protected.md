@@ -1,13 +1,13 @@
 ---
-title: "Protected (Visual Basic)"
-
+title: "Protected (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Protected"
@@ -21,25 +21,13 @@ helpviewer_keywords:
   - "Protected keyword"
 ms.assetid: 74ad3d56-309f-49d2-b60c-1d0157d010e8
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Protected (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies that one or more declared programming elements are accessible only from within their own class or from a derived class.  
   
 ## Remarks  
@@ -57,7 +45,7 @@ Specifies that one or more declared programming elements are accessible only fro
   
      Protected access is not a superset or subset of friend access.  
   
--   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+-   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  The `Protected` modifier can be used in these contexts:  
   
@@ -89,7 +77,7 @@ Specifies that one or more declared programming elements are accessible only fro
  [Public](../../../visual-basic/language-reference/modifiers/public.md)   
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)   
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

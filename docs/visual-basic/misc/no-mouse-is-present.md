@@ -1,41 +1,26 @@
 ---
-title: "No mouse is present"
-
+title: "No mouse is present | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrMouse_NoMouseIsPresent"
 ms.assetid: 4472fd57-4217-4463-9d3c-dc4a8fe88f1b
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # No mouse is present
 One of the properties of the `My.Computer.Mouse` object was called, but the computer has no mouse or mouse port installed.  
   
-## To correct this error  
+### To correct this error  
   
 -   Add a `Try...Catch` block around the call to the property of the `My.Computer.Mouse` object.  
   

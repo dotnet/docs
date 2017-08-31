@@ -1,41 +1,26 @@
 ---
-title: "Length of argument &#39;&lt;argumentname&gt;&#39; must be greater than zero"
-
+title: "Length of argument &#39;&lt;argumentname&gt;&#39; must be greater than zero | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_LengthGTZero1"
 ms.assetid: 709bc232-f8fe-4864-9842-e064795da0f5
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Length of argument &#39;&lt;argumentname&gt;&#39; must be greater than zero
 An argument has a value that is equal to or less than zero.  
   
-## To correct this error  
+### To correct this error  
   
 -   Supply an argument that is greater than zero.  
   

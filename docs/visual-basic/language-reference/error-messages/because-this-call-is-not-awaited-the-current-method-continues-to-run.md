@@ -1,13 +1,13 @@
 ---
-title: "Because this call is not awaited, the current method continues to run before the call is completed"
-
+title: "Because this call is not awaited, the current method continues to run before the call is completed | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc42358"
@@ -16,26 +16,13 @@ helpviewer_keywords:
   - "BC42358"
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Because this call is not awaited, the current method continues to run before the call is completed
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'Await' operator to the result of the call.  
   
  The current method calls an async method that returns a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Task%601> and doesn’t apply the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator to the result. The call to the async method starts an asynchronous task. However, because no `Await` operator is applied, the program continues without waiting for the task to complete. In most cases, that behavior isn't expected. Usually other aspects of the calling method depend on the results of the call or, minimally, the called method is expected to complete before you return from the method that contains the call.  
@@ -44,7 +31,7 @@ Because this call is not awaited, execution of the current method continues befo
   
  As a best practice, you should always await the call.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42358  
   
@@ -100,11 +87,13 @@ Because this call is not awaited, execution of the current method continues befo
         Await Task.Delay(howLong)  
         ResultsTextBox.Text &= vbCrLf & "    Task.Delay is finished--returning from called method."  
     End Function  
+  
     ```  
   
      In the example, if you choose Call #1 or Call #2, the unawaited async method (`CalledMethodAsync`) finishes after both its caller (`CallingMethodAsync`) and the caller's caller (`StartButton_Click`) are complete. The last line in the following output shows you when the called method finishes. Entry to and exit from the event handler that calls `CallingMethodAsync` in the full example are marked in the output.  
   
     ```  
+  
     Entering the Click event handler.  
       Entering calling method.  
         Entering called method, starting and awaiting Task.Delay.  
@@ -134,15 +123,17 @@ Because this call is not awaited, execution of the current method continues befo
             <TextBox x:Name="ResultsTextBox" Margin="0,80,0,0" TextWrapping="Wrap" FontFamily="Lucida Console"/>  
         </Grid>  
     </Window>  
+  
     ```  
   
      A simple window that contains a button and a text box appears in the **Design** view of MainWindow.xaml.  
   
-     For more information about the XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). For information about how to build your own simple UI, see the "To create a WPF application" and "To design a simple WPF MainWindow" sections of [Walkthrough: Accessing the Web by Using Async and Await](http://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042).  
+     For more information about the XAML Designer, see [Creating a UI by using XAML Designer](/visual-studio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). For information about how to build your own simple UI, see the "To create a WPF application" and "To design a simple WPF MainWindow" sections of [Walkthrough: Accessing the Web by Using Async and Await](../Topic/Walkthrough:%20Accessing%20the%20Web%20by%20Using%20Async%20and%20Await%20(C%23%20and%20Visual%20Basic).md).  
   
 4.  Replace the code in MainWindow.xaml.vb with the following code.  
   
     ```vb  
+  
     Class MainWindow   
   
         Private Async Sub StartButton_Click(sender As Object, e As RoutedEventArgs)  
@@ -226,4 +217,4 @@ Because this call is not awaited, execution of the current method continues befo
   
 ## See Also  
  [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)   
- [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)
+ [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md)

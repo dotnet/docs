@@ -1,8 +1,8 @@
 ---
-title: "How to: Chain Axis Method Calls (LINQ to XML) (Visual Basic)"
+title: "How to: Chain Axis Method Calls (LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: e4e22942-39bd-460f-b3c0-9f09e53d3aa9
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Chain Axis Method Calls (LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 A common pattern that you will use in your code is to call an axis method, then call one of the extension method axes.  
   
  There are two axes with the name of `Elements` that return a collection of elements: the <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=fullName> method and the <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=fullName> method. You can combine these two axes to find all elements of a specified name at a given depth in the tree.  
@@ -39,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```xml  
+```  
 <Name>Ellen Adams</Name>  
 <Name>Tai Yee</Name>  
 <Name>Cristian Osorio</Name>  
@@ -88,7 +90,7 @@ Next
   
  This example produces the following output:  
   
-```xml  
+```  
 <ConfigParameter>FirstConfigParameter</ConfigParameter>  
 <ConfigParameter>SecondConfigParameter</ConfigParameter>  
 ```  
@@ -116,7 +118,7 @@ End Module
   
  This example produces the following output:  
   
-```xml  
+```  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Ellen Adams</aw:Name>  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Tai Yee</aw:Name>  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Cristian Osorio</aw:Name>  

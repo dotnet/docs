@@ -1,13 +1,13 @@
 ---
-title: "Access Modifiers (C# Programming Guide)"
-
+title: "Access Modifiers (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,23 +18,11 @@ ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Access Modifiers (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 All types and type members have an accessibility level, which controls whether they can be used from other code in your assembly or other assemblies. You can use the following access modifiers to specify the accessibility of a type or member when you declare it:  
   
  [public](../../../csharp/language-reference/keywords/public.md)  
@@ -54,7 +42,7 @@ All types and type members have an accessibility level, which controls whether t
   
  The following examples demonstrate how to specify access modifiers on a type and member:  
   
- [!code-cs[csProgGuideObjects#72](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/access-modifiers_1.cs)]  
+ [!code-csharp[csProgGuideObjects#72](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#72)]  
   
  Not all access modifiers can be used by all types or members in all contexts, and in some cases the accessibility of a type member is constrained by the accessibility of its containing type. The following sections provide more details about accessibility.  
   
@@ -65,7 +53,7 @@ All types and type members have an accessibility level, which controls whether t
   
  Derived classes cannot have greater accessibility than their base types. In other words, you cannot have a public class `B` that derives from an internal class `A`. If this were allowed, it would have the effect of making `A` public, because all protected or internal members of `A` are accessible from the derived class.  
   
- You can enable specific other assemblies to access your internal types by using the InternalsVisibleToAttribute. For more information, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
+ You can enable specific other assemblies to access your internal types by using the InternalsVisibleToAttribute. For more information, see [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## Class and Struct Member Accessibility  
  Class members (including nested classes and structs) can be declared with any of the five types of access. Struct members cannot be declared as protected because structs do not support inheritance.  
@@ -74,13 +62,13 @@ All types and type members have an accessibility level, which controls whether t
   
  The type of any member that is a field, property, or event must be at least as accessible as the member itself. Similarly, the return type and the parameter types of any member that is a method, indexer, or delegate must be at least as accessible as the member itself. For example, you cannot have a public method `M` that returns a class `C` unless `C` is also public. Likewise, you cannot have a protected property of type `A` if `A` is declared as private.  
   
- User-defined operators must always be declared as public. For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md).  
+ User-defined operators must always be declared as public. For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator-csharp-reference.md).  
   
- Finalizers cannot have accessibility modifiers.  
+ Destructors cannot have accessibility modifiers.  
   
  To set the access level for a class or struct member, add the appropriate keyword to the member declaration, as shown in the following example.  
   
- [!code-cs[csProgGuideObjects#73](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/access-modifiers_2.cs)]  
+ [!code-csharp[csProgGuideObjects#73](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#73)]  
   
 > [!NOTE]
 >  The protected internal accessibility level means protected OR internal, not protected AND internal. In other words, a protected internal member can be accessed from any class in the same assembly, including derived classes. To limit accessibility to only derived classes in the same assembly, declare the class itself internal, and declare its members as protected.  
@@ -93,7 +81,7 @@ All types and type members have an accessibility level, which controls whether t
  Delegates behave like classes and structs. By default, they have internal access when declared directly within a namespace, and private access when nested.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

@@ -1,9 +1,13 @@
 ---
-title: "% Operator (C# Reference)"
+title: "% Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "%_CSharpKeyword"
@@ -16,29 +20,18 @@ ms.assetid: 3b74f4f9-fd9c-45e7-84fa-c8d71a0dfad7
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # % Operator (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The `%` operator computes the remainder after dividing its first operand by its second. All numeric types have predefined remainder operators.  
   
 ## Remarks  
- User-defined types can overload the `%` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
+ User-defined types can overload the `%` operator (see [operator](../../../csharp/language-reference/keywords/operator-csharp-reference.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#9](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-operator_1.cs)]  
+ [!code-csharp[csRefOperators#9](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#9)]  
   
 ## Comments  
  Note the round-off errors associated with the double type.  

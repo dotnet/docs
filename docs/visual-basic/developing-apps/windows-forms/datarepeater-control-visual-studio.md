@@ -1,13 +1,13 @@
 ---
-title: "DataRepeater Control (Visual Studio)"
-
+title: "DataRepeater Control (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,26 +15,13 @@ helpviewer_keywords:
   - "DataRepeater, topic list"
 ms.assetid: 68e0cf5e-e2cb-480a-80cc-d13eb6c9b3dd
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # DataRepeater Control (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The Visual Basic Power Packs <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control is a scrollable container for controls that display repeated data, for example, rows in a database table. It can be used as an alternative to the <xref:System.Windows.Forms.DataGridView> control when you need more control over the layout of the data.  
   
  The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
@@ -64,7 +51,7 @@ The Visual Basic Power Packs <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater
  [How to: Search Data in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md)  
  Demonstrates how to implement search capabilities in a `DataRepeater` control.  
   
- [How to: Create a Master/Detail Form by Using Two DataRepeater Controls (Visual Studio)](../../../visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md)  
+ [How to: Create a Master/Detail Form by Using Two DataRepeater Controls (Visual Studio)](../../../visual-basic/developing-apps/windows-forms/eec43ae3-05d8-45a1-8d41-3803c6359dbe.md)  
  Demonstrates how to display related records by using two `DataRepeater` controls.  
   
  [Walkthrough: Displaying Data in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio.md)  

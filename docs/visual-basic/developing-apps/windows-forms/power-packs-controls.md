@@ -1,13 +1,13 @@
 ---
-title: "Visual Basic Power Packs Controls"
-
+title: "Visual Basic Power Packs Controls | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "Power Packs"
 ms.assetid: 5e53a2d2-f200-4357-8b20-430f8f4860a4
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Visual Basic Power Packs Controls
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Visual Basic Power Packs controls are additional Windows Forms controls. They are not included in Visual Studio.  You can [download them](http://go.microsoft.com/fwlink/?LinkId=321343), but they are provided as-is, without support.  
   
 ## In This Section  

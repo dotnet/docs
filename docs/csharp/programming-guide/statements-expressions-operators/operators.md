@@ -1,13 +1,13 @@
 ---
-title: "Operators (C# Programming Guide)"
-
+title: "Operators (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,33 +19,20 @@ ms.assetid: 214e7b83-1a41-4f7c-9867-64e9c0bab39f
 caps.latest.revision: 42
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Operators (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 In C#, an *operator* is a program element that is applied to one or more *operands* in an expression or statement. Operators that take one operand, such as the increment operator (`++`) or `new`, are referred to as *unary* operators. Operators that take two operands, such as arithmetic operators (`+`,`-`,`*`,`/`), are referred to as *binary* operators. One operator, the conditional operator (`?:`), takes three operands and is the sole ternary operator in C#.  
   
  The following C# statement contains a single unary operator and a single operand. The increment operator, `++`, modifies the value of the operand `y`.  
   
- [!code-cs[csProgGuideStatements#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/operators_1.cs)]  
+ [!code-csharp[csProgGuideStatements#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#5)]  
   
  The following C# statement contains two binary operators, each with two operands. The assignment operator, `=`, has the integer variable `y` and the expression `2 + 3` as operands. The expression `2 + 3` itself consists of the addition operator and two operands, `2` and `3`.  
   
- [!code-cs[csProgGuideStatements#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/operators_2.cs)]  
+ [!code-csharp[csProgGuideStatements#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#6)]  
   
 ## Operators, Evaluation, and Operator Precedence  
  An operand can be a valid expression that is composed of any length of code, and it can comprise any number of sub expressions. In an expression that contains multiple operators, the order in which the operators are applied is determined by *operator precedence*, *associativity*, and parentheses.  
@@ -64,7 +51,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |----------------|-----------------|  
 |x[.](../../../csharp/language-reference/operators/member-access-operator.md)y<br /><br /> x?.y|Member access<br /><br /> Conditional member access|  
 |f[(x)](../../../csharp/language-reference/operators/invocation-operator.md)|Method and delegate invocation|  
-|a[&#91;x&#93;](../../../csharp/language-reference/operators/index-operator.md)<br /><br /> a?[x]|Array and indexer access<br /><br /> Conditional array and indexer access|  
+|a[&#91;x&#93;](../../../csharp/language-reference/operators/operator-csharp-reference.md)<br /><br /> a?[x]|Array and indexer access<br /><br /> Conditional array and indexer access|  
 |x[++](../../../csharp/language-reference/operators/increment-operator.md)|Post-increment|  
 |x[--](../../../csharp/language-reference/operators/decrement-operator.md)|Post-decrement|  
 |[new](../../../csharp/language-reference/keywords/new-operator.md) T(...)|Object and delegate creation|  
@@ -82,7 +69,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Expression|Description|  
 |----------------|-----------------|  
 |[+](../../../csharp/language-reference/operators/addition-operator.md)x|Identity|  
-|[-](../../../csharp/language-reference/operators/subtraction-operator.md)x|Negation|  
+|[-](../../../csharp/language-reference/operators/operator-csharp-reference.md)x|Negation|  
 |[!](../../../csharp/language-reference/operators/logical-negation-operator.md)x|Logical negation|  
 |[~](../../../csharp/language-reference/operators/bitwise-complement-operator.md)x|Bitwise negation|  
 |[++](../../../csharp/language-reference/operators/increment-operator.md)x|Pre-increment|  
@@ -94,7 +81,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Expression|Description|  
 |----------------|-----------------|  
 |[*](../../../csharp/language-reference/operators/multiplication-operator.md)|Multiplication|  
-|[/](../../../csharp/language-reference/operators/division-operator.md)|Division|  
+|[/](../../../csharp/language-reference/operators/operator-csharp-reference.md)|Division|  
 |[%](../../../csharp/language-reference/operators/modulus-operator.md)|Remainder|  
   
  **Additive Operators**  
@@ -102,7 +89,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Expression|Description|  
 |----------------|-----------------|  
 |x [+](../../../csharp/language-reference/operators/addition-operator.md) y|Addition, string concatenation, delegate combination|  
-|x [-](../../../csharp/language-reference/operators/subtraction-operator.md) y|Subtraction, delegate removal|  
+|x [-](../../../csharp/language-reference/operators/operator-csharp-reference.md) y|Subtraction, delegate removal|  
   
  **Shift Operators**  
   
@@ -146,7 +133,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Expression|Description|  
 |----------------|-----------------|  
 |[=](../../../csharp/language-reference/operators/assignment-operator.md)|Assignment|  
-|x op= y|Compound assignment. Supports these operators: [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [!=](../../../csharp/language-reference/operators/not-equal-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
+|x op= y|Compound assignment. Supports these operators: [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/operator-csharp-reference.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/operator-csharp-reference.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [!=](../../../csharp/language-reference/operators/not-equal-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
 |(T x) [=>](../../../csharp/language-reference/operators/lambda-operator.md) y|Anonymous function (lambda expression)|  
   
 ## Associativity  

@@ -1,39 +1,24 @@
 ---
-title: "Target folder is a file"
-
+title: "Target folder is a file | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c5e40bcb-2414-4484-b2b9-a9c391ad0029
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Target folder is a file
 You are specifying a file while attempting to perform a folder-related action.  
   
-## To correct this error  
+### To correct this error  
   
 -   Check the path you are supplying to make sure you are specifying a folder rather than a file.  
   

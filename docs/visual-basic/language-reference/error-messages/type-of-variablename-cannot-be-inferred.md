@@ -1,13 +1,13 @@
 ---
-title: "Type of &#39;&lt;variablename&gt;&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type"
-
+title: "Type of &#39;&lt;variablename&gt;&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30982"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC30982"
 ms.assetid: 741e85d9-a747-42ad-a1e1-a3f1928aaff5
 caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Type of &#39;&lt;variablename&gt;&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 You have written a `For...Next` loop in which the compiler cannot infer a data type for the loop control variable because the following conditions are true:  
   
 -   The data type of the loop control variable is not specified with an `As` clause.  
@@ -62,7 +50,7 @@ Dim n = 20
   
  **Error ID:** BC30982  
   
-## To correct this error  
+### To correct this error  
   
 -   Change the types of the loop bounds and step variable as necessary so that at least one of them is a type that the others widen to. In the preceding example, change the type of `stepVar` to `Integer`.  
   

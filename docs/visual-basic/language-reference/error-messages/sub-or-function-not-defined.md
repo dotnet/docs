@@ -1,13 +1,13 @@
 ---
-title: "Sub or Function not defined (Visual Basic)"
-
+title: "Sub or Function not defined (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID35"
@@ -15,25 +15,13 @@ dev_langs:
   - "VB"
 ms.assetid: 661fdb90-ee7d-40ce-b30b-5e7267bd957a
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Sub or Function not defined (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A `Sub` or `Function` must be defined in order to be called. Possible causes of this error include:  
   
 -   Misspelling the procedure name.  
@@ -44,7 +32,7 @@ A `Sub` or `Function` must be defined in order to be called. Possible causes of 
   
 -   Declaring a Windows dynamic-link library (DLL) routine or Macintosh code-resource routine that is not in the specified library or code resource.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Make sure that the procedure name is spelled correctly.  
   
@@ -54,6 +42,6 @@ A `Sub` or `Function` must be defined in order to be called. Possible causes of 
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)

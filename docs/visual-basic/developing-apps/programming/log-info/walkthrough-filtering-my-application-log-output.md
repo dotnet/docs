@@ -1,13 +1,13 @@
 ---
-title: "Filtering My.Application.Log Output (Visual Basic)"
+title: "Walkthrough: Filtering My.Application.Log Output (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,26 +17,13 @@ helpviewer_keywords:
   - "application event logs, output filtering"
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Walkthrough: Filtering My.Application.Log Output (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This walkthrough demonstrates how to change the default log filtering for the `My.Application.Log` object, to control what information is passed from the `Log` object to the listeners and what information is written by the listeners. You can change the logging behavior even after building the application, because the configuration information is stored in the application's configuration file.  
   
 ## Getting Started  
@@ -44,13 +31,13 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 #### To build the sample application  
   
-1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project.  
+1.  Open a new [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] Windows Application project.  
   
 2.  Add a button named Button1 to Form1.  
   
 3.  In the <xref:System.Windows.Forms.Control.Click> event handler for Button1, add the following code:  
   
-     [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-filtering-my-application-log-output_1.vb)]  
+     [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyApplicationLogFiltering/VB/Form1.vb#1)]  
   
 4.  Run the application in the debugger.  
   
@@ -64,7 +51,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 6.  Close the application.  
   
-     For information on how to view the application's debug output window, see [Output Window](/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
+     For information on how to view the application's debug output window, see [Output Window](/visual-studio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
   
     > [!NOTE]
     >  By default, the application flushes the log-file output when the application closes.  
@@ -76,8 +63,9 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
  This table shows the severity level required for Log to write a message to the listeners, given a particular `DefaultSwitch` setting.  
   
+|||  
+|-|-|  
 |DefaultSwitch Value|Message severity required for output|  
-|---|---| 
 |`Critical`|`Critical`|  
 |`Error`|`Critical` or `Error`|  
 |`Warning`|`Critical`, `Error`, or `Warning`|  
@@ -158,7 +146,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
 9. Change the value of the `value` attribute back to "Information".  
   
     > [!NOTE]
-    >  The `DefaultSwitch` switch setting controls only `My.Application.Log`. It does not change how the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.Diagnostics.Trace?displayProperty=fullName> and <xref:System.Diagnostics.Debug?displayProperty=fullName> classes behave.  
+    >  The `DefaultSwitch` switch setting controls only `My.Application.Log`. It does not change how the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] <xref:System.Diagnostics.Trace?displayProperty=fullName> and <xref:System.Diagnostics.Debug?displayProperty=fullName> classes behave.  
   
 ## Individual Filtering For My.Application.Log Listeners  
  The previous example shows how to change the filtering for all `My.Application.Log` output. This example demonstrates how to filter an individual log listener. By default, an application has two listeners that write to the application's debug output and the log file.  
@@ -275,5 +263,5 @@ This walkthrough demonstrates how to change the default log filtering for the `M
  [Walkthrough: Changing Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)   
  [Walkthrough: Creating Custom Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)   
  [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
- [Trace Switches](../../../../framework/debug-trace-profile/trace-switches.md)   
+ [Trace Switches](../Topic/Trace%20Switches.md)   
  [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)

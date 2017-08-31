@@ -1,13 +1,13 @@
 ---
-title: "Function Expression (Visual Basic)"
-
+title: "Function Expression (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,41 +17,31 @@ helpviewer_keywords:
   - "lambda expressions [Visual Basic], function expression"
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Function Expression (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Declares the parameters and code that define a function lambda expression.  
   
 ## Syntax  
   
 ```  
-Function ( [ parameterlist ] ) expression  
+Function ( [ parameterlist ] ) expression  
 - or -  
-Function ( [ parameterlist ] )  
-  [ statements ]  
+Function ( [ parameterlist ] )  
+  [ statements ]  
 End Function  
+  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`parameterlist`|Optional. A list of local variable names that represent the parameters of this procedure. The parentheses must be present even when the list is empty. See [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md).|  
 |`expression`|Required. A single expression. The type of the expression is the return type of the function.|  
 |`statements`|Required. A list of statements that returns a value by using the `Return` statement. (See [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).) The type of the value returned is the return type of the function.|  
@@ -79,22 +69,22 @@ End Function
 ## Example  
  The following examples show two ways to create simple lambda expressions. The first uses a `Dim` to provide a name for the function. To call the function, you send in a value for the parameter.  
   
- [!code-vb[VbVbalrLambdas#1](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_1.vb)]  
+ [!code-vb[VbVbalrLambdas#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#1)]  
   
- [!code-vb[VbVbalrLambdas#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_2.vb)]  
+ [!code-vb[VbVbalrLambdas#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#2)]  
   
 ## Example  
  Alternatively, you can declare and run the function at the same time.  
   
- [!code-vb[VbVbalrLambdas#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_3.vb)]  
+ [!code-vb[VbVbalrLambdas#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#3)]  
   
 ## Example  
  Following is an example of a lambda expression that increments its argument and returns the value. The example shows both the single-line and multiline lambda expression syntax for a function. For more examples, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
- [!code-vb[VbVbalrLambdas#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_4.vb)]  
+ [!code-vb[VbVbalrLambdas#14](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#14)]  
   
 ## Example  
- Lambda expressions underlie many of the query operators in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)], and can be used explicitly in method-based queries. The following example shows a typical [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, followed by the translation of the query into method format.  
+ Lambda expressions underlie many of the query operators in [!INCLUDE[vbteclinqext](../../../includes/vbteclinqext-md.md)], and can be used explicitly in method-based queries. The following example shows a typical [!INCLUDE[vbteclinq](../../../includes/vbteclinq-md.md)] query, followed by the translation of the query into method format.  
   
 ```vb  
 Dim londonCusts = From cust In db.Customers  
@@ -107,7 +97,7 @@ Dim londonCusts = db.Customers.
                   Select(Function(cust) cust)  
 ```  
   
- For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/queries.md). For more information about standard query operators, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
+ For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/queries.md). For more information about standard query operators, see [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md).  
   
 ## See Also  
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   

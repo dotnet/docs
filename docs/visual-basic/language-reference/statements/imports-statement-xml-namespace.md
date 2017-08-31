@@ -1,13 +1,13 @@
 ---
-title: "Imports Statement (XML Namespace)"
-
+title: "Imports Statement (XML Namespace) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.ImportsXmlns"
@@ -20,25 +20,13 @@ helpviewer_keywords:
   - "namespaces [Visual Basic], importing"
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Imports Statement (XML Namespace)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Imports XML namespace prefixes for use in XML literals and XML axis properties.  
   
 ## Syntax  
@@ -63,18 +51,18 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
  XML namespaces that are defined in an XML literal, which are called *local XML namespaces*, take precedence over XML namespaces that are defined by the `Imports` statement as global. XML namespaces that are defined by the `Imports` statement take precedence over XML namespaces imported for a Visual Basic project. If an XML literal defines an XML namespace, that local namespace does not apply to embedded expressions.  
   
- Global XML namespaces follow the same scoping and definition rules as .NET Framework namespaces. As a result, you can include an `Imports` statement to define a global XML namespace anywhere you can import a .NET Framework namespace. This includes both code files and project-level imported namespaces. For information about project-level imported namespaces, see [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
+ Global XML namespaces follow the same scoping and definition rules as .NET Framework namespaces. As a result, you can include an `Imports` statement to define a global XML namespace anywhere you can import a .NET Framework namespace. This includes both code files and project-level imported namespaces. For information about project-level imported namespaces, see [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic).  
   
  Each source file can contain any number of `Imports` statements. These must follow option declarations, such as the `Option Strict` statement, and they must precede programming element declarations, such as `Module` or `Class` statements.  
   
 ## Example  
  The following example imports a default XML namespace and an XML namespace identified with the prefix `ns`. It then creates XML literals that use both namespaces.  
   
- [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_1.vb)]  
+ [!code-vb[VbXMLSamples#45](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/Module1.vb#45)]  
   
  This code displays the following text:  
   
-```xml  
+```  
 <ns:outer xmlns="http://DefaultNamespace"   
           xmlns:ns="http://NewNamespace">  
   <ns:innerElement></ns:innerElement>  
@@ -86,11 +74,11 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports the XML namespace prefix `ns`. It then creates an XML literal that uses the namespace prefix and displays the element's final form.  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_2.vb)]  
+ [!code-vb[VbXMLSamples#22](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples10.vb#22)]  
   
  This code displays the following text:  
   
-```xml  
+```  
 <ns:outer xmlns:ns="http://SomeNamespace">  
   <ns:middle xmlns:ns="http://NewNamespace">  
     <ns:inner1 />  
@@ -104,7 +92,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Example  
  The following example imports the XML namespace prefix `ns`. It then uses the prefix of the namespace to create an XML literal and access the first child node with the qualified name `ns:name`.  
   
- [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_3.vb)]  
+ [!code-vb[VbXMLSamples#19](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples8.vb#19)]  
   
  This code displays the following text:  
   

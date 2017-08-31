@@ -1,13 +1,13 @@
 ---
-title: "Parameter Arrays (Visual Basic)"
+title: "Parameter Arrays (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,25 +21,13 @@ helpviewer_keywords:
   - "arrays [Visual Basic], parameter arrays"
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Parameter Arrays (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Usually, you cannot call a procedure with more arguments than the procedure declaration specifies. When you need an indefinite number of arguments, you can declare a *parameter array*, which allows a procedure to accept an array of values for a parameter. You do not have to know the number of elements in the parameter array when you define the procedure. The array size is determined individually by each call to the procedure.  
   
 ## Declaring a ParamArray  
@@ -70,21 +58,21 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
 ## Example  
  The following example defines and calls the function `calcSum`. The `ParamArray` modifier for the parameter `args` enables the function to accept a variable number of arguments.  
   
- [!code-vb[VbVbalrStatements#26](../../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-arrays_1.vb)]  
+ [!code-vb[VbVbalrStatements#26](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  
   
  The following example defines a procedure with a parameter array, and outputs the values of all the array elements passed to the parameter array.  
   
- [!code-vb[VbVbcnProcedures#48](./codesnippet/VisualBasic/parameter-arrays_2.vb)]  
+ [!code-vb[VbVbcnProcedures#48](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#48)]  
   
- [!code-vb[VbVbcnProcedures#49](./codesnippet/VisualBasic/parameter-arrays_3.vb)]  
+ [!code-vb[VbVbcnProcedures#49](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#49)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Information.UBound%2A>   
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)   
- [Optional Parameters](./optional-parameters.md)   
- [Procedure Overloading](./procedure-overloading.md)   
+ [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
+ [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
+ [Passing Arguments by Value and by Reference](../../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)   
+ [Passing Arguments by Position and by Name](../../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)   
+ [Optional Parameters](../../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
+ [Procedure Overloading](../../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
  [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
  [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)

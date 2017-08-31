@@ -1,13 +1,13 @@
 ---
-title: "Creating Custom Log Listeners (Visual Basic)"
+title: "Walkthrough: Creating Custom Log Listeners (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "My.Application.Log object, custom log listeners"
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Walkthrough: Creating Custom Log Listeners (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This walkthrough demonstrates how to create a custom log listener and configure it to listen to the output of the `My.Application.Log` object.  
   
 ## Getting Started  
@@ -44,7 +32,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 -   In your application, create a class named `SimpleListener` that inherits from <xref:System.Diagnostics.TraceListener>.  
   
-     [!code-vb[VbVbalrMyApplicationLog#16](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_1.vb)]  
+     [!code-vb[VbVbalrMyApplicationLog#16](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#16)]  
   
      The <xref:System.Diagnostics.TraceListener.Write%2A> and <xref:System.Diagnostics.TraceListener.WriteLine%2A> methods, required by the base class, call `MsgBox` to display their input.  
   
@@ -55,7 +43,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
  To ensure that `My.Application.Log` uses your log listener, you should strongly name the assembly that contains your log listener.  
   
- The next procedure provides some simple steps for creating a strongly named log-listener assembly. For more information, see [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617).  
+ The next procedure provides some simple steps for creating a strongly named log-listener assembly. For more information, see [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md).  
   
 #### To strongly name the log-listener assembly  
   
@@ -88,7 +76,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 -   The following code shows how to determine the strongly named type name for `SimpleListener`.  
   
-     [!code-vb[VbVbalrMyApplicationLog#17](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_2.vb)]  
+     [!code-vb[VbVbalrMyApplicationLog#17](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#17)]  
   
      The strong name of the type depends on your project.  
   
@@ -112,7 +100,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 3.  Add this element to the `<listeners>` section:  
   
-    ```xml  
+    ```  
     <add name="SimpleLog" />  
     ```  
   
@@ -120,7 +108,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 5.  Add this element to that `<sharedListeners>` section:  
   
-    ```xml  
+    ```  
     <add name="SimpleLog" type="SimpleLogStrongName" />  
     ```  
   

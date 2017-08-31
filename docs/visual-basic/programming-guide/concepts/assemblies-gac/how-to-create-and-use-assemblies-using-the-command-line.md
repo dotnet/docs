@@ -1,8 +1,8 @@
 ---
-title: "How to: Create and Use Assemblies Using the Command Line (Visual Basic)"
+title: "How to: Create and Use Assemblies Using the Command Line (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 229ff9fb-1bd1-403b-946b-526104864c60
 caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Create and Use Assemblies Using the Command Line (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 An assembly, or a dynamic linking library (DLL), is linked to your program at run time. To demonstrate building and using a DLL, consider the following scenario:  
   
 -   `MathLibrary.DLL`: The library file that contains the methods to be called at run time. In this example, the DLL contains two methods, `Add` and `Multiply`.  
@@ -118,7 +115,7 @@ UtilityMethods.MultiplyClass.Multiply(num1, num2)
 vbc /target:library /out:MathLibrary.DLL Add.vb Mult.vb  
 ```  
   
- The [/target (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/target.md) compiler option tells the compiler to output a DLL instead of an EXE file. The [/out (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/out.md) compiler option followed by a file name is used to specify the DLL file name. Otherwise, the compiler uses the first file (`Add.vb`) as the name of the DLL.  
+ The [/target (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/target-visual-basic.md) compiler option tells the compiler to output a DLL instead of an EXE file. The [/out (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/out-visual-basic.md) compiler option followed by a file name is used to specify the DLL file name. Otherwise, the compiler uses the first file (`Add.vb`) as the name of the DLL.  
   
  To build the executable file, `TestCode.exe`, use the following command line:  
   
@@ -126,11 +123,11 @@ vbc /target:library /out:MathLibrary.DLL Add.vb Mult.vb
 vbc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.vb  
 ```  
   
- The **/out** compiler option tells the compiler to output an EXE file and specifies the name of the output file (`TestCode.exe`). This compiler option is optional. The [/reference (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/reference.md) compiler option specifies the DLL file or files that this program uses.  
+ The **/out** compiler option tells the compiler to output an EXE file and specifies the name of the output file (`TestCode.exe`). This compiler option is optional. The [/reference (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/reference-visual-basic.md) compiler option specifies the DLL file or files that this program uses.  
   
  For more information about building from the command line, see  and [Building from the Command Line](../../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
 ## See Also  
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)
+ [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache-visual-basic.md)   
+ [Creating a Class to Hold DLL Functions](../Topic/Creating%20a%20Class%20to%20Hold%20DLL%20Functions.md)

@@ -1,13 +1,13 @@
 ---
-title: "How Culture Affects Strings in Visual Basic"
+title: "How Culture Affects Strings in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,26 +16,14 @@ helpviewer_keywords:
   - "strings [Visual Basic], locale dependence"
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
 caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How Culture Affects Strings in Visual Basic
-This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses culture information to perform string conversions and comparisons.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+This Help page discusses how [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] uses culture information to perform string conversions and comparisons.  
   
 ## When to Use Culture-Specific Strings  
  Typically, you should use culture-specific strings for all data presented to and read from users, and use culture-invariant strings for your application's internal data.  
@@ -45,7 +33,7 @@ This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses cu
  However, if the application uploads the date to a central server, it should format the string according to one specific culture, to prevent confusion between potentially different date formats.  
   
 ## Culture-Sensitive Functions  
- All of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] string-conversion functions (except for the `Str` and `Val` functions) use the application's culture information to make sure that the conversions and comparisons are appropriate for the culture of the application's user.  
+ All of the [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] string-conversion functions (except for the `Str` and `Val` functions) use the application's culture information to make sure that the conversions and comparisons are appropriate for the culture of the application's user.  
   
  The key to successfully using string-conversion functions in applications that run on computers with different culture settings is to understand which functions use a specific culture setting, and which use the current culture setting. Notice that the application's culture settings are, by default, inherited from the culture settings of the operating system. For more information, see <xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>, <xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Conversion.Hex%2A>, <xref:Microsoft.VisualBasic.Conversion.Oct%2A>, and [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md).  
   
@@ -60,13 +48,13 @@ This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses cu
 ## Using a Specific Culture  
  Imagine that you are developing an application that sends a date (formatted as a string) to a Web service. In this case, your application must use a specific culture for the string conversion. To illustrate why, consider the result of using the date's <xref:System.DateTime.ToString> method: If your application uses that method to format the date July 4, 2005, it returns "7/4/2005 12:00:00 AM" when run with the United States English (en-US) culture, but it returns "04.07.2005 00:00:00" when run with the German (de-DE) culture.  
   
- When you need to perform a string conversion in a specific culture format, you should use the `CultureInfo` class that is built into the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You can create a new `CultureInfo` object for a specific culture by passing the culture's name to the <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor. The supported culture names are listed in the <xref:System.Globalization.CultureInfo> class Help page.  
+ When you need to perform a string conversion in a specific culture format, you should use the `CultureInfo` class that is built into the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]. You can create a new `CultureInfo` object for a specific culture by passing the culture's name to the <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor. The supported culture names are listed in the <xref:System.Globalization.CultureInfo> class Help page.  
   
  Alternatively, you can get an instance of the *invariant culture* from the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property. The invariant culture is based on the English culture, but there are some differences. For example, the invariant culture specifies a 24-hour clock instead of a 12-hour clock.  
   
  To convert a date to the culture's string, pass the <xref:System.Globalization.CultureInfo> object to the date object's <xref:System.DateTime.ToString%28System.IFormatProvider%29> method. For example, the following code displays "07/04/2005 00:00:00", regardless of the application's culture settings.  
   
- [!code-vb[VbVbalrConcepts#1](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)]  
+ [!code-vb[VbVbalrConcepts#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConcepts/VB/Class1.vb#1)]  
   
 > [!NOTE]
 >  Date literals are always interpreted according to the English culture.  
@@ -78,20 +66,21 @@ This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses cu
   
 -   **Determining if two application-internal strings exactly match (typically for security purposes).** Use operations that disregard the current culture.  
   
- You can perform both types of comparisons with the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Strings.StrComp%2A> function. Specify the optional `Compare` argument to control the type of comparison: `Text` for most input and output `Binary` for determining exact matches.  
+ You can perform both types of comparisons with the [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Strings.StrComp%2A> function. Specify the optional `Compare` argument to control the type of comparison: `Text` for most input and output `Binary` for determining exact matches.  
   
  The `StrComp` function returns an integer that indicates the relationship between the two compared strings based on the sorting order. A positive value for the result indicates that the first string is greater than the second string. A negative result indicates the first string is smaller, and zero indicates equality between the strings.  
   
- [!code-vb[VbVbalrStrings#22](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
+ [!code-vb[VbVbalrStrings#22](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#22)]  
   
- You can also use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] partner of the `StrComp` function, the <xref:System.String.Compare%2A?displayProperty=fullName> method. This is a static, overloaded method of the base string class. The following example illustrates how this method is used:  
+ You can also use the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] partner of the `StrComp` function, the <xref:System.String.Compare%2A?displayProperty=fullName> method. This is a static, overloaded method of the base string class. The following example illustrates how this method is used:  
   
- [!code-vb[VbVbalrStrings#48](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
+ [!code-vb[VbVbalrStrings#48](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#48)]  
   
  For finer control over how the comparisons are performed, you can use additional overloads of the <xref:System.String.Compare%2A> method. With the <xref:System.String.Compare%2A?displayProperty=fullName> method, you can use the `comparisonType` argument to specify which type of comparison to use.  
   
+||||  
+|-|-|-|  
 |Value for `comparisonType` argument|Type of comparison|When to use|  
-|---|---|---|  
 |`Ordinal`|Comparison based on strings' component bytes.|Use this value when comparing: case-sensitive identifiers, security-related settings, or other non-linguistic identifiers where the bytes must match exactly.|  
 |`OrdinalIgnoreCase`|Comparison based on strings' component bytes.<br /><br /> `OrdinalIgnoreCase` uses the invariant culture information to determine when two characters differ only in capitalization.|Use this value when comparing: case-insensitive identifiers, security-related settings, and data stored in Windows.|  
 |`CurrentCulture` or `CurrentCultureIgnoreCase`|Comparison based on the strings' interpretation in the current culture.|Use these values when comparing: data that is displayed to the user, most user input, and other data that requires linguistic interpretation.|  

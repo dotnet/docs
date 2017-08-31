@@ -1,13 +1,13 @@
 ---
-title: "Thread Synchronization (C#)"
+title: "Thread Synchronization (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: e42b1be6-c93c-479f-a148-be0759f1a4e1
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Thread Synchronization (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 The following sections describe features and classes that can be used to synchronize access to resources in multithreaded applications.  
   
  One of the benefits of using multiple threads in an application is that each thread executes asynchronously. For Windows applications, this allows time-consuming tasks to be performed in the background while the application window and controls remain responsive. For server applications, multithreading provides the ability to handle each incoming request with a different thread. Otherwise, each new request would not get serviced until the previous request had been fully satisfied.  
@@ -33,11 +30,11 @@ The following sections describe features and classes that can be used to synchro
   
  For background information on multithreaded programming, see:  
   
--   [Managed Threading Basics](../../../../standard/threading/managed-threading-basics.md)  
+-   [Managed Threading Basics](../Topic/Managed%20Threading%20Basics.md)  
   
--   [Using Threads and Threading](../../../../standard/threading/using-threads-and-threading.md)  
+-   [Using Threads and Threading](../Topic/Using%20Threads%20and%20Threading.md)  
   
--   [Managed Threading Best Practices](../../../../standard/threading/managed-threading-best-practices.md)  
+-   [Managed Threading Best Practices](../Topic/Managed%20Threading%20Best%20Practices.md)  
   
 ## The lock Keyword  
  The C# `lock` statement can be used to ensure that a block of code runs to completion without interruption by other threads. This is accomplished by obtaining a mutual-exclusion lock for a given object for the duration of the code block.  
@@ -69,7 +66,7 @@ public class TestThreading
   
 -   [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)  
   
--   @System.Threading.Monitor  
+-   [Monitors](../Topic/Monitors.md)  
   
 ## Monitors  
  Like the `lock` keyword, monitors prevent blocks of code from simultaneous execution by multiple threads. The <xref:System.Threading.Monitor.Enter%2A> method allows one and only one thread to proceed into the following statements; all other threads are blocked until the executing thread calls <xref:System.Threading.Monitor.Exit%2A>. This is just like using the `lock` keyword. For example:  
@@ -96,7 +93,7 @@ finally
 }  
 ```  
   
- Using the `lock` keyword is generally preferred over using the <xref:System.Threading.Monitor> class directly, both because `lock` is more concise, and because `lock` insures that the underlying monitor is released, even if the protected code throws an exception. This is accomplished with the `finally` keyword, which executes its associated code block regardless of whether an exception is thrown.  
+ Using the `lock`keyword is generally preferred over using the <xref:System.Threading.Monitor> class directly, both because `lock` is more concise, and because `lock` insures that the underlying monitor is released, even if the protected code throws an exception. This is accomplished with the `finally` keyword, which executes its associated code block regardless of whether an exception is thrown.  
   
 ## Synchronization Events and Wait Handles  
  Using a lock or monitor is useful for preventing the simultaneous execution of thread-sensitive blocks of code, but these constructs do not allow one thread to communicate an event to another. This requires *synchronization events*, which are objects that have one of two states, signaled and un-signaled, that can be used to activate and suspend threads. Threads can be suspended by being made to wait on a synchronization event that is unsignaled, and can be activated by changing the event state to signaled. If a thread attempts to wait on an event that is already signaled, then the thread continues to execute without delay.  
@@ -144,7 +141,7 @@ class ThreadingExample
   
  When used for inter-process synchronization, a mutex is called a *named mutex* because it is to be used in another application, and therefore it cannot be shared by means of a global or static variable. It must be given a name so that both applications can access the same mutex object.  
   
- Although a mutex can be used for intra-process thread synchronization, using <xref:System.Threading.Monitor> is generally preferred, because monitors were designed specifically for the .NET Framework and therefore make better use of resources. In contrast, the <xref:System.Threading.Mutex> class is a wrapper to a Win32 construct. While it is more powerful than a monitor, a mutex requires interop transitions that are more computationally expensive than those required by the <xref:System.Threading.Monitor> class. For an example of using a mutex, see [Mutexes](../../../../standard/threading/mutexes.md).  
+ Although a mutex can be used for intra-process thread synchronization, using <xref:System.Threading.Monitor> is generally preferred, because monitors were designed specifically for the .NET Framework and therefore make better use of resources. In contrast, the <xref:System.Threading.Mutex> class is a wrapper to a Win32 construct. While it is more powerful than a monitor, a mutex requires interop transitions that are more computationally expensive than those required by the <xref:System.Threading.Monitor> class. For an example of using a mutex, see [Mutexes](../Topic/Mutexes.md).  
   
 ## Interlocked Class  
  You can use the methods of the <xref:System.Threading.Interlocked> class to prevent problems that can occur when multiple threads attempt to simultaneously update or compare the same value. The methods of this class let you safely increment, decrement, exchange, and compare values from any thread.  
@@ -174,8 +171,8 @@ class ThreadingExample
  <xref:System.Threading.EventWaitHandle.Set%2A>   
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [lock Statement](../../../../csharp/language-reference/keywords/lock-statement.md)   
- [Mutexes](../../../../standard/threading/mutexes.md)   
- @System.Threading.Monitor   
- [Interlocked Operations](../../../../standard/threading/interlocked-operations.md)   
- [AutoResetEvent](../../../../standard/threading/autoresetevent.md)   
- [Synchronizing Data for Multithreading](../../../../standard/threading/synchronizing-data-for-multithreading.md)
+ [Mutexes](../Topic/Mutexes.md)   
+ [Monitors](../Topic/Monitors.md)   
+ [Interlocked Operations](../Topic/Interlocked%20Operations.md)   
+ [AutoResetEvent](../Topic/AutoResetEvent.md)   
+ [Synchronizing Data for Multithreading](../Topic/Synchronizing%20Data%20for%20Multithreading.md)

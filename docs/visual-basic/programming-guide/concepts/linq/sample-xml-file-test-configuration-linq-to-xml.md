@@ -1,8 +1,8 @@
 ---
-title: "Sample XML File: Test Configuration (LINQ to XML)"
+title: "Sample XML File: Test Configuration (LINQ to XML)2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,17 +13,14 @@ dev_langs:
   - "VB"
 ms.assetid: 2e0e19f2-83e4-42ad-958a-6b3e34c9bf17
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Sample XML File: Test Configuration (LINQ to XML)
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This is a test configuration file.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This is a test configuration file.  
   
 ## TestConfig.xml  
   

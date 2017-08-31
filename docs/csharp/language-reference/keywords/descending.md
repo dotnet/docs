@@ -1,9 +1,13 @@
 ---
-title: "descending (C# Reference)"
+title: "descending (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "descending"
@@ -16,28 +20,17 @@ ms.assetid: 8d2cd1e5-9c1c-4dfc-b84c-60e2d3240927
 caps.latest.revision: 6
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # descending (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The `descending` contextual keyword is used in the [orderby clause](../../../csharp/language-reference/keywords/orderby-clause.md) in query expressions to specify that the sort order is from largest to smallest.  
   
 ## Example  
  The following example shows the use of `descending` in an [orderby clause](../../../csharp/language-reference/keywords/orderby-clause.md).  
   
- [!code-cs[csrefKeywordsContextual#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/descending_1.cs)]  
+ [!code-csharp[csrefKeywordsContextual#11](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#11)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -1,8 +1,8 @@
 ---
-title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: a958af40-f754-4409-85f9-7746978d4cb3
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find Descendants of a Child Element (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how to get the descendant elements of a child element with a particular name.  
   
  The XPath expression is:  
@@ -68,6 +70,7 @@ Else
     Console.WriteLine("Results differ")  
 End If  
 Console.WriteLine(str2)  
+  
 ```  
   
  This example produces the following output:  

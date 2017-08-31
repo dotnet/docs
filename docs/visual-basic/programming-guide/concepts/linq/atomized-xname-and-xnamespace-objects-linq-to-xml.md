@@ -1,8 +1,8 @@
 ---
-title: "Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)"
+title: "Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 <xref:System.Xml.Linq.XName> and <xref:System.Xml.Linq.XNamespace> objects are *atomized*; that is, if they contain the same qualified name, they refer to the same object. This yields performance benefits for queries: When you compare two atomized names for equality, the underlying intermediate language only has to determine whether the two references point to the same object. The underlying code does not have to do string comparisons, which would be time consuming.  
   
 ## Atomization Semantics  
@@ -47,6 +49,7 @@ If DirectCast(n, Object) = DirectCast(r1.Name, Object) Then
 Else  
 	Console.WriteLine("Different")  
 End If  
+  
 ```  
   
  This example produces the following output:  
@@ -72,7 +75,7 @@ Next
   
  This example produces the following output:  
   
-```xml  
+```  
 <C1>1</C1>  
 <C1>1</C1>  
 ```  

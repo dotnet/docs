@@ -1,13 +1,13 @@
 ---
-title: "Objects (C# Programming Guide)"
-
+title: "Objects (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,23 +18,11 @@ ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Objects (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 A class or struct definition is like a blueprint that specifies what the type can do. An object is basically a block of memory that has been allocated and configured according to the blueprint. A program may create many objects of the same class. Objects are also called instances, and they can be stored in either a named variable or in an array or collection. Client code is the code that uses these variables to call the methods and access the public properties of the object. In an object-oriented language such as C#, a typical program consists of multiple objects interacting dynamically.  
   
 > [!NOTE]
@@ -45,13 +33,13 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
  Instances of classes are created by using the [new operator](../../../csharp/language-reference/keywords/new-operator.md). In the following example, `Person` is the type and `person1` and `person 2` are instances, or objects, of that type.  
   
- [!code-cs[csProgGuideStatements#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_1.cs)]  
+ [!code-csharp[csProgGuideStatements#30](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   
  Because structs are value types, a variable of a struct object holds a copy of the entire object. Instances of structs can also be created by using the `new` operator, but this is not required, as shown in the following example:  
   
- [!code-cs[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_2.cs)]  
+ [!code-csharp[csProgGuideStatements#31](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#31)]  
   
- The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it is declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object have gone out of scope. It is not possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], see [Garbage Collection](../../../standard/garbage-collection/index.md).  
+ The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it is declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object have gone out of scope. It is not possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], see [Garbage Collection](../Topic/Garbage%20Collection.md).  
   
 > [!NOTE]
 >  The allocation and deallocation of memory on the managed heap is highly optimized in the common language runtime. In most cases there is no significant difference in the performance cost of allocating a class instance on the heap versus allocating a struct instance on the stack.  
@@ -63,7 +51,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   To determine whether the instance fields in two struct instances have the same values, use the <xref:System.ValueType.Equals%2A?displayProperty=fullName> method. Because all structs implicitly inherit from <xref:System.ValueType?displayProperty=fullName>, you call the method directly on your object as shown in the following example:  
   
- [!code-cs[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_3.cs)]  
+ [!code-csharp[csProgGuideStatements#32](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
  The <xref:System.ValueType?displayProperty=fullName> implementation of `Equals` uses reflection because it must be able to determine what the fields are in any struct. When creating your own structs, override the `Equals` method to provide an efficient equality algorithm that is specific to your type.  
   
@@ -78,7 +66,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+-   [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
   
 -   [Events](../../../csharp/programming-guide/events/index.md)  
   
@@ -89,4 +77,4 @@ A class or struct definition is like a blueprint that specifies what the type ca
  [class](../../../csharp/language-reference/keywords/class.md)   
  [struct](../../../csharp/language-reference/keywords/struct.md)   
  [new Operator](../../../csharp/language-reference/keywords/new-operator.md)   
- [Common Type System](../../../standard/base-types/common-type-system.md)
+ [Common Type System](../Topic/Common%20Type%20System.md)

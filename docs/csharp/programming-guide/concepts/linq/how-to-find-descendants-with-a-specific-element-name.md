@@ -1,13 +1,13 @@
 ---
-title: "How to: Find Descendants with a Specific Element Name (C#)"
+title: "How to: Find Descendants with a Specific Element Name (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: f684da20-bee9-47f5-9607-7e3fd7e67470
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find Descendants with a Specific Element Name (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Sometimes you want to find all descendants with a particular name. You could write code to iterate through all of the descendants, but it is easier to use the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis.  
   
 ## Example  

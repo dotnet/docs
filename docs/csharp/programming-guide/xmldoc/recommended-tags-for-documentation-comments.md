@@ -1,13 +1,13 @@
 ---
-title: "Recommended Tags for Documentation Comments (C# Programming Guide)"
-
+title: "Recommended Tags for Documentation Comments (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,25 +18,12 @@ ms.assetid: 6e98f7a9-38f4-4d74-b644-1ff1b23320fd
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Recommended Tags for Documentation Comments (C# Programming Guide)
-The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](https://github.com/EWSoftware/SHFB).  
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
+The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](http://shfb.codeplex.com/).  
   
  Tags are processed on code constructs such as types and type members.  
   
@@ -48,7 +35,7 @@ The C# compiler processes documentation comments in your code and formats them a
 ## Tags  
   
 ||||  
-|---|---|---|  
+|-|-|-|  
 |[\<c>](../../../csharp/programming-guide/xmldoc/code-inline.md)|[\<para>](../../../csharp/programming-guide/xmldoc/para.md)|[\<see>](../../../csharp/programming-guide/xmldoc/see.md)*|  
 |[\<code>](../../../csharp/programming-guide/xmldoc/code.md)|[\<param>](../../../csharp/programming-guide/xmldoc/param.md)*|[\<seealso>](../../../csharp/programming-guide/xmldoc/seealso.md)*|  
 |[\<example>](../../../csharp/programming-guide/xmldoc/example.md)|[\<paramref>](../../../csharp/programming-guide/xmldoc/paramref.md)|[\<summary>](../../../csharp/programming-guide/xmldoc/summary.md)|  
@@ -67,5 +54,5 @@ The C# compiler processes documentation comments in your code and formats them a
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
+ [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md)   
  [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

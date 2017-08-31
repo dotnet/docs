@@ -1,13 +1,13 @@
 ---
-title: "Generics and Reflection (C# Programming Guide)"
-
+title: "Generics and Reflection (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,26 +18,14 @@ ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Generics and Reflection (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md).  
   
- In the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
+ In the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
   
  For a list of the invariant conditions for terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property remarks.  
   
@@ -69,5 +57,5 @@ Because the Common Language Runtime (CLR) has access to generic type information
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Generics](../../../csharp/programming-guide/generics/index.md)   
- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)   
- [Generics](~/docs/standard/generics/index.md)
+ [Reflection and Generic Types](../Topic/Reflection%20and%20Generic%20Types.md)   
+ [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)

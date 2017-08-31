@@ -1,13 +1,13 @@
 ---
-title: "How to: Create a File or Folder (C# Programming Guide)"
-
+title: "How to: Create a File or Folder (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -20,27 +20,15 @@ ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Create a File or Folder (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 You can programmatically create a folder on your computer, create a subfolder, create a file in the subfolder, and write data to the file.  
   
 ## Example  
- [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
+ [!code-csharp[csFilesandFolders#10](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#10)]  
   
  If the folder already exists, <xref:System.IO.Directory.CreateDirectory%2A> does nothing, and no exception is thrown. However, <xref:System.IO.File.Create%2A?displayProperty=fullName> replaces an existing file with a new file. The example uses an `if`-`else` statement to prevent an existing file from being replaced.  
   
@@ -54,6 +42,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
     // Replace that line with the following assignment.  
     string fileName = "MyNewFile.txt";  
+  
     ```  
   
 -   Replace the `if`-`else` statement with the `using` statement in the following code.  
@@ -66,6 +55,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
             fs.WriteByte(i);  
         }  
     }  
+  
     ```  
   
  Run the example several times to verify that data is added to the file each time.  
@@ -92,4 +82,4 @@ You can programmatically create a folder on your computer, create a subfolder, c
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)

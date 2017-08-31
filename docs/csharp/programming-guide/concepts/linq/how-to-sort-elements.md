@@ -1,13 +1,13 @@
 ---
-title: "How to: Sort Elements (C#)"
+title: "How to: Sort Elements (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Sort Elements (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This example shows how to write a query that sorts its results.  
   
 ## Example  

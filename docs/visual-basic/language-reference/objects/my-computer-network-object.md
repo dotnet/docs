@@ -1,13 +1,13 @@
 ---
-title: "My.Computer.Network Object"
-
+title: "My.Computer.Network Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,25 +15,13 @@ helpviewer_keywords:
   - "My.Computer.Network object"
 ms.assetid: 94ddbade-aff1-42f8-a6c8-88b78c28c0db
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.Computer.Network Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides a property, event, and methods for interacting with the network to which the computer is connected.  
   
 ## Remarks  

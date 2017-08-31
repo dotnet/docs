@@ -1,9 +1,13 @@
 ---
-title: "&lt;&lt; Operator (C# Reference)"
+title: "&lt;&lt; Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "<<_CSharpKeyword"
@@ -16,22 +20,11 @@ ms.assetid: a654eb56-1ff7-4bf3-9064-b631be0cdccc
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &lt;&lt; Operator (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The left-shift operator (`<<`) shifts its first operand left by the number of bits specified by its second operand. The type of the second operand must be an [int](../../../csharp/language-reference/keywords/int.md) or a type that has a predefined implicit numeric conversion to `int`.  
   
 ## Remarks  
@@ -41,10 +34,10 @@ The left-shift operator (`<<`) shifts its first operand left by the number of bi
   
  Any high-order bits that are not within the range of the type of the first operand after the shift are discarded, and the low-order empty bits are zero-filled. Shift operations never cause overflows.  
   
- User-defined types can overload the `<<` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)); the type of the first operand must be the user-defined type, and the type of the second operand must be `int`. When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
+ User-defined types can overload the `<<` operator (see [operator](../../../csharp/language-reference/keywords/operator-csharp-reference.md)); the type of the first operand must be the user-defined type, and the type of the second operand must be `int`. When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#14](../../../csharp/language-reference/operators/codesnippet/CSharp/left-shift-operator_1.cs)]  
+ [!code-csharp[csRefOperators#14](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#14)]  
   
 ## Comments  
  Note that `i<<1` and `i<<33` give the same result, because 1 and 33 have the same low-order five bits.  

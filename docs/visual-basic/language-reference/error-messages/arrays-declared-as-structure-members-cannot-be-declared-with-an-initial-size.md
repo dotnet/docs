@@ -1,13 +1,13 @@
 ---
-title: "Arrays declared as structure members cannot be declared with an initial size"
-
+title: "Arrays declared as structure members cannot be declared with an initial size | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc31043"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC31043"
 ms.assetid: 5bd90c71-1b78-444b-91e1-4789451ef085
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Arrays declared as structure members cannot be declared with an initial size
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An array in a structure is declared with an initial size. You cannot initialize any structure element, and declaring an array size is one form of initialization.  
   
  **Error ID:** BC31043  
   
-## To correct this error  
+### To correct this error  
   
 1.  Define the array in your structure as dynamic (no initial size).  
   

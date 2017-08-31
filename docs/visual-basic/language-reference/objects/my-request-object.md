@@ -1,13 +1,13 @@
 ---
-title: "My.Request Object"
-
+title: "My.Request Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "My.MyWebExtension.Request"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "My.Request object"
 ms.assetid: 93d5f0e2-6b60-4a2c-8652-d90216f6ad10
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.Request Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Gets the <xref:System.Web.HttpRequest> object for the requested page.  
   
 ## Remarks  
@@ -47,7 +35,7 @@ Gets the <xref:System.Web.HttpRequest> object for the requested page.
 ## Example  
  The following example gets the header collection from the `My.Request` object and uses the `My.Response` object to write it to the ASP.NET page.  
   
- [!code-vb[VbVbalrMyWeb#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-request-object_1.aspx)]  
+ [!code-vb[VbVbalrMyWeb#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWeb/VB/Default.aspx#1)]  
   
 ## See Also  
  <xref:System.Web.HttpRequest>   

@@ -1,13 +1,13 @@
 ---
-title: "Customizing Which Objects are Available in My (Visual Basic)"
-
+title: "Customizing Which Objects are Available in My (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,26 +16,14 @@ helpviewer_keywords:
   - "My namespace"
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Customizing Which Objects are Available in My (Visual Basic)
-This topic describes how you can control which `My` objects are enabled by setting your project's `_MYTYPE` conditional-compilation constant. The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Integrated Development Environment (IDE) keeps the `_MYTYPE` conditional-compilation constant for a project in sync with the project's type.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+This topic describes how you can control which `My` objects are enabled by setting your project's `_MYTYPE` conditional-compilation constant. The [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Integrated Development Environment (IDE) keeps the `_MYTYPE` conditional-compilation constant for a project in sync with the project's type.  
   
 ## Predefined _MYTYPE Values  
  You must use the `/define` compiler option to set the `_MYTYPE` conditional-compilation constant. When specifying your own value for the `_MYTYPE` constant, you must enclose the string value in backslash/quotation mark (\\") sequences. For example, you could use:  
@@ -98,7 +86,7 @@ This topic describes how you can control which `My` objects are enabled by setti
  <xref:Microsoft.VisualBasic.ApplicationServices.User>   
  [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)   
  [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)   
+ [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define-visual-basic.md)   
  [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)   
  [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)   
  [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)   

@@ -1,13 +1,13 @@
 ---
-title: "XDocument Class Overview (C#)"
+title: "XDocument Class Overview (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 63305603-ab54-49fc-84e4-f76eecc59549
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # XDocument Class Overview (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic introduces the <xref:System.Xml.Linq.XDocument> class.  
   
 ## Overview of the XDocument class  
@@ -47,10 +44,10 @@ This topic introduces the <xref:System.Xml.Linq.XDocument> class.
   
  When you serialize an <xref:System.Xml.Linq.XDocument>, even if `XDocument.Declaration` is `null`, the output will have an XML declaration if the writer has `Writer.Settings.OmitXmlDeclaration` set to `false` (the default).  
   
- By default, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] sets the version to "1.0", and sets the encoding to "utf-8".  
+ By default, [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] sets the version to "1.0", and sets the encoding to "utf-8".  
   
 ## Using XElement without XDocument  
- As previously mentioned, the <xref:System.Xml.Linq.XElement> class is the main class in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming interface. In many cases, your application will not require that you create a document. By using the <xref:System.Xml.Linq.XElement> class, you can create an XML tree, add other XML trees to it, modify the XML tree, and save it.  
+ As previously mentioned, the <xref:System.Xml.Linq.XElement> class is the main class in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] programming interface. In many cases, your application will not require that you create a document. By using the <xref:System.Xml.Linq.XElement> class, you can create an XML tree, add other XML trees to it, modify the XML tree, and save it.  
   
 ## Using XDocument  
  To construct an <xref:System.Xml.Linq.XDocument>, use functional construction, just like you do to construct <xref:System.Xml.Linq.XElement> objects.  

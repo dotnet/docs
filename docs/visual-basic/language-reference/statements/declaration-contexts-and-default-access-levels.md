@@ -1,13 +1,13 @@
 ---
-title: "Declaration Contexts and Default Access Levels (Visual Basic)"
-
+title: "Declaration Contexts and Default Access Levels (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -20,25 +20,13 @@ helpviewer_keywords:
   - "access levels, default levels"
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Declaration Contexts and Default Access Levels (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 This topic describes which Visual Basic types can be declared within which other types, and what their access levels default to if not specified.  
   
 ## Declaration Context Levels  
@@ -71,7 +59,7 @@ This topic describes which Visual Basic types can be declared within which other
 |Event ([Event Statement](../../../visual-basic/language-reference/statements/event-statement.md))|Not allowed|`Public`|Not allowed|  
 |Delegate ([Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md))|`Friend`|`Public`|Not allowed|  
   
- For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ For more information, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 ## See Also  
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   

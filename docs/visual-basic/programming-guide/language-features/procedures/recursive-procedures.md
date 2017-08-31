@@ -1,13 +1,13 @@
 ---
-title: "Recursive Procedures (Visual Basic)"
+title: "Recursive Procedures (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,30 +21,18 @@ helpviewer_keywords:
   - "recursion"
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Recursive Procedures (Visual Basic)
-A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] code.  
   
  The following procedure uses recursion to calculate the factorial of its original argument.  
   
- [!code-vb[VbVbcnProcedures#51](./codesnippet/VisualBasic/recursive-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#51](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#51)]  
   
 ## Considerations with Recursive Procedures  
  **Limiting Conditions**. You must design a recursive procedure to test for at least one condition that can terminate the recursion, and you must also handle the case where no such condition is satisfied within a reasonable number of recursive calls. Without at least one condition that can be met without fail, your procedure runs a high risk of executing in an infinite loop.  
@@ -61,13 +49,13 @@ A *recursive* procedure is one that calls itself. In general, this is not the mo
   
 ## See Also  
  <xref:System.StackOverflowException>   
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Troubleshooting Procedures](./troubleshooting-procedures.md)   
+ [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
+ [Sub Procedures](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)   
+ [Function Procedures](../../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
+ [Property Procedures](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+ [Operator Procedures](../../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
+ [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
+ [Procedure Overloading](../../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
+ [Troubleshooting Procedures](../../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   
  [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
- [Troubleshooting Exceptions: System.StackOverflowException](http://msdn.microsoft.com/library/51b71217-c507-4f5b-bc35-0236180d7968)
+ [Troubleshooting Exceptions: System.StackOverflowException](../Topic/Troubleshooting%20Exceptions:%20System.StackOverflowException.md)

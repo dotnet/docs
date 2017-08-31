@@ -1,8 +1,8 @@
 ---
-title: "Friend Assemblies (Visual Basic)"
+title: "Friend Assemblies (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 9b3d5716-e6e4-47a7-a3e9-084d7fba5c28
 caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Friend Assemblies (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 A *friend assembly* is an assembly that can access another assembly's [Friend](../../../../visual-basic/language-reference/modifiers/friend.md) types and members. If you identify an assembly as a friend assembly, you no longer have to mark types and members as public in order for them to be accessed by other assemblies. This is especially convenient in the following scenarios:  
   
 -   During unit testing, when test code runs in a separate assembly but requires access to members in the assembly being tested that are marked as `Friend`.  
@@ -33,7 +30,7 @@ A *friend assembly* is an assembly that can access another assembly's [Friend](.
  You can use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to identify one or more friend assemblies for a given assembly. The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute in assembly A and specifies assembly `AssemblyB` as a friend assembly. This gives assembly `AssemblyB` access to all types and members in assembly A that are marked as `Friend`.  
   
 > [!NOTE]
->  When you compile an assembly (assembly `AssemblyB`) that will access internal types or internal members of another assembly (assembly *A*), you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/out.md).  
+>  When you compile an assembly (assembly `AssemblyB`) that will access internal types or internal members of another assembly (assembly *A*), you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/out-visual-basic.md).  
   
 ```vb  
 Imports System.Runtime.CompilerServices  
@@ -53,6 +50,7 @@ Public Class ClassWithFriendMethod
         Console.WriteLine("Sample Method")  
     End Sub  
 End Class  
+  
 ```  
   
  Only assemblies that you explicitly specify as friends can access `Friend` types and members. For example, if assembly B is a friend of assembly A and assembly C references assembly B, C does not have access to `Friend` types in A.  
@@ -82,5 +80,5 @@ End Class
  <xref:System.Security.Permissions.StrongNameIdentityPermission>   
  [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)   
  [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)   
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache-visual-basic.md)   
+ [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

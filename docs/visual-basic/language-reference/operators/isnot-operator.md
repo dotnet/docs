@@ -1,13 +1,13 @@
 ---
-title: "IsNot Operator (Visual Basic)"
-
+title: "IsNot Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.isnot"
@@ -17,30 +17,19 @@ helpviewer_keywords:
   - "IsNot operator"
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # IsNot Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Compares two object reference variables.  
   
 ## Syntax  
   
 ```  
+  
 result = object1 IsNot object2  
 ```  
   
@@ -67,7 +56,7 @@ result = object1 IsNot object2
 ## Example  
  The following code example uses both the `Is` operator and the `IsNot` operator to accomplish the same comparison.  
   
- [!code-vb[VbVbalrOperators#29](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/isnot-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#29](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#29)]  
   
 ## See Also  
  [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)   

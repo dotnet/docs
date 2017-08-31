@@ -1,13 +1,13 @@
 ---
-title: "Bad file mode"
-
+title: "Bad file mode | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID54"
@@ -15,25 +15,13 @@ dev_langs:
   - "VB"
 ms.assetid: 74891e96-884b-4c8d-872d-cd11ae272372
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Bad file mode
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Statements used in manipulating file contents must be appropriate to the mode in which the file was opened. Possible causes include:  
   
 -   A `FilePutObject` or `FileGetObject` statement specifies a sequential file.  
@@ -44,7 +32,7 @@ Statements used in manipulating file contents must be appropriate to the mode in
   
 -   An attempt to write to a read-only file.  
   
-## To correct this error  
+### To correct this error  
   
 -   Make sure `FilePutObject` and `FileGetObject` are only referring to files open for `Random` or `Binary` access.  
   

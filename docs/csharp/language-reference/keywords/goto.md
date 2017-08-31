@@ -1,9 +1,13 @@
 ---
-title: "goto (C# Reference)"
+title: "goto (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "goto_CSharpKeyword"
@@ -16,22 +20,11 @@ ms.assetid: 2c03c9c1-8119-44ef-b740-fb3d287a42fe
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # goto (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The `goto` statement transfers the program control directly to a labeled statement.  
   
  A common use of `goto` is to transfer control to a specific switch-case label or the default label in a `switch` statement.  
@@ -41,19 +34,19 @@ The `goto` statement transfers the program control directly to a labeled stateme
 ## Example  
  The following example demonstrates using `goto` in a [switch](../../../csharp/language-reference/keywords/switch.md) statement.  
   
- [!code-cs[csrefKeywordsJump#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/goto_1.cs)]  
+ [!code-csharp[csrefKeywordsJump#4](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#4)]  
   
 ## Example  
  The following example demonstrates using `goto` to break out from nested loops.  
   
- [!code-cs[csrefKeywordsJump#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/goto_2.cs)]  
+ [!code-csharp[csrefKeywordsJump#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#5)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [goto Statement](/cpp/cpp/goto-statement-cpp)   
+ [goto Statement](/visual-cpp/cpp/goto-statement-cpp)   
  [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

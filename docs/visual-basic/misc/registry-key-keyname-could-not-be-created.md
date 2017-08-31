@@ -1,41 +1,26 @@
 ---
-title: "Registry key &#39;&lt;keyname&gt;&#39; could not be created"
-
+title: "Registry key &#39;&lt;keyname&gt;&#39; could not be created | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrInteraction_ResKeyNotCreated1"
 ms.assetid: 465ccd53-dfdc-47ec-8b3f-9a65ba739314
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Registry key &#39;&lt;keyname&gt;&#39; could not be created
 The specified registry key could not be created, possibly because of insufficient security permissions.  
   
-## To correct this error  
+### To correct this error  
   
 -   Ensure that you have sufficient security permissions to access the key.  
   

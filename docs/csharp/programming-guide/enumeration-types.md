@@ -1,13 +1,13 @@
 ---
-title: "Enumeration Types (C# Programming Guide)"
-
+title: "Enumeration Types (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -20,26 +20,14 @@ ms.assetid: 64a9b731-9e3c-4336-8a09-018db2aa10b7
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Enumeration Types (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../includes/csharpbanner.md)]
+
 An enumeration type (also named an enumeration or an enum) provides an efficient way to define a set of named integral constants that may be assigned to a variable. For example, assume that you have to define a variable whose value will represent a day of the week. There are only seven meaningful values which that variable will ever store. To define those values, you can use an enumeration type, which is declared by using the [enum](../../csharp/language-reference/keywords/enum.md) keyword.  
   
- [!code-cs[csProgGuideEnums#1](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_1.cs)]  
+ [!code-csharp[csProgGuideEnums#1](../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#1)]  
   
  By default the underlying type of each element in the enum is [int](../../csharp/language-reference/keywords/int.md). You can specify another integral numeric type by using a colon, as shown in the previous example. For a full list of possible types, see [enum (C# Reference)](../../csharp/language-reference/keywords/enum.md).  
   
@@ -63,20 +51,20 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
 -   You clearly specify for client code which values are valid for the variable.  
   
--   In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], IntelliSense lists the defined values.  
+-   In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], IntelliSense lists the defined values.  
   
  When you do not specify values for the elements in the enumerator list, the values are automatically incremented by 1. In the previous example, `Days.Sunday` has a value of 0, `Days.Monday` has a value of 1, and so on. When you create a new `Days` object, it will have a default value of `Days.Sunday` (0) if you do not explicitly assign it a value. When you create an enum, select the most logical default value and give it a value of zero. That will cause all enums to have that default value if they are not explicitly assigned a value when they are created.  
   
  If the variable `meetingDay` is of type `Days`, then (without an explicit cast) you can only assign it one of the values defined by `Days`. And if the meeting day changes, you can assign a new value from `Days` to `meetingDay`:  
   
- [!code-cs[csProgGuideEnums#4](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_2.cs)]  
+ [!code-csharp[csProgGuideEnums#4](../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#4)]  
   
 > [!NOTE]
 >  It is possible to assign any arbitrary integer value to `meetingDay`. For example, this line of code does not produce an error: `meetingDay = (Days) 42`. However, you should not do this because the implicit expectation is that an enum variable will only hold one of the values defined by the enum. To assign an arbitrary value to a variable of an enumeration type is to introduce a high risk for errors.  
   
  You can assign any values to the elements in the enumerator list of an enumeration type, and you can also use computed values:  
   
- [!code-cs[csProgGuideEnums#3](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_3.cs)]  
+ [!code-csharp[csProgGuideEnums#3](../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#3)]  
   
 ## Enumeration Types as Bit Flags  
  You can use an enumeration type to define bit flags, which enables an instance of the enumeration type to store any combination of the values that are defined in the enumerator list. (Of course, some combinations may not be meaningful or allowed in your program code.)  
@@ -85,27 +73,30 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
  In the following example, another version of the `Days` enum, which is named `Days2`, is defined. `Days2` has the `Flags` attribute and each value is assigned the next greater power of 2. This enables you to create a `Days2` variable whose value is `Days2.Tuesday` and `Days2.Thursday`.  
   
- [!code-cs[csProgGuideEnums#2](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_4.cs)]  
+ [!code-csharp[csProgGuideEnums#2](../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#2)]  
   
  To set a flag on an enum, use the bitwise `OR` operator as shown in the following example:  
   
- [!code-cs[csProgGuideEnums#6](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_5.cs)]  
+ [!code-csharp[csProgGuideEnums#6](../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#6)]  
   
  To determine whether a specific flag is set, use a bitwise `AND` operation, as shown in the following example:  
   
- [!code-cs[csProgGuideEnums#7](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_6.cs)]  
+ [!code-csharp[csProgGuideEnums#7](../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#7)]  
   
  For more information about what to consider when you define enumeration types with the <xref:System.FlagsAttribute?displayProperty=fullName> attribute, see <xref:System.Enum?displayProperty=fullName>.  
   
 ## Using the System.Enum Methods to Discover and Manipulate Enum Values  
  All enums are instances of the <xref:System.Enum?displayProperty=fullName> type. You cannot derive new classes from <xref:System.Enum?displayProperty=fullName>, but you can use its methods to discover information about and manipulate values in an enum instance.  
   
- [!code-cs[csProgGuideEnums#5](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_7.cs)]  
+ [!code-csharp[csProgGuideEnums#5](../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#5)]  
   
  For more information, see <xref:System.Enum?displayProperty=fullName>.  
   
  You can also create a new method for an enum by using an extension method. For more information, see [How to: Create a New Method for an Enumeration](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).  
-
+  
+## Featured Book Chapter  
+ [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
+  
 ## See Also  
  <xref:System.Enum?displayProperty=fullName>   
  [C# Programming Guide](../../csharp/programming-guide/index.md)   

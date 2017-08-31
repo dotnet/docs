@@ -1,13 +1,13 @@
 ---
-title: "Variance in Delegates (C#)"
+title: "Variance in Delegates (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 19de89d2-8224-4406-8964-2965b732b890
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Variance in Delegates (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 .NET Framework 3.5 introduced variance support for matching method signatures with delegate types in all delegates in C#. This means that you can assign to delegates not only methods that have matching signatures, but also methods that return more derived types (covariance) or that accept parameters that have less derived types (contravariance) than that specified by the delegate type. This includes both generic and non-generic delegates.  
   
  For example, consider the following code, which has two classes and two delegates: generic and non-generic.  
@@ -210,6 +207,6 @@ public static void Test()
 ```  
   
 ## See Also  
- [Generics](~/docs/standard/generics/index.md)   
+ [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)   
  [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)   
  [How to: Combine Delegates (Multicast Delegates)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

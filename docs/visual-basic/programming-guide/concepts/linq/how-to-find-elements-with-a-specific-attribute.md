@@ -1,8 +1,8 @@
 ---
-title: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 4bb38d2c-bc7c-4196-8909-aaf41fb86b28
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Sometimes you want to find all elements that have a specific attribute. You are not concerned about the contents of the attribute. Instead, you want to select based on the existence of the attribute.  
   
  The XPath expression is:  
@@ -57,6 +59,7 @@ End If
 For Each el As XElement In list1  
     Console.WriteLine(el)  
 Next  
+  
 ```  
   
  This example produces the following output:  

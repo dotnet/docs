@@ -1,13 +1,13 @@
 ---
-title: "PrintForm Component (Visual Basic)"
-
+title: "PrintForm Component (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,27 +15,14 @@ helpviewer_keywords:
   - "PrintForm component [Visual Basic]"
 ms.assetid: 03de98b8-b54c-4764-91d7-83c64e974750
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # PrintForm Component (Visual Basic)
-The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component for [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] enables you to print an image of a Windows Form at run time. Its behavior replaces that of the `PrintForm` method in earlier versions of Visual Basic.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component for [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] enables you to print an image of a Windows Form at run time. Its behavior replaces that of the `PrintForm` method in earlier versions of Visual Basic.  
   
  The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
   
@@ -59,7 +46,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component for [!I
   
      The `PrintOption` parameter of the overloaded method determines the underlying implementation used to print the form, whether the form's title bar, scroll bars, and border are printed, and whether scrollable parts of the form are printed.  
   
- The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property is a key property of the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component. This property determines whether the output is sent to a printer, displayed in a print preview window, or saved as an Encapsulated PostScript file. If the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property is set to <xref:System.Drawing.Printing.PrintAction.PrintToFile>, the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintFileName%2A> property specifies the path and file name.  
+ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property is a key property of the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component. This property determines whether the output is sent to a printer, displayed in a print preview window, or saved as an Encapsulated PostScript file. If the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property is set to <xref:System.Drawing.Printing.PrintAction>, the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintFileName%2A> property specifies the path and file name.  
   
  The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrinterSettings%2A> property provides access to an underlying <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A> object that enables you to specify such settings as the printer to use and the number of copies to print. You can also query the printer's capabilities, such as color or duplex support. This property does not appear in the **Properties** window; it can be accessed only from code.  
   

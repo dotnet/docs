@@ -1,8 +1,8 @@
 ---
-title: "Modifying XML Trees (LINQ to XML) (Visual Basic)"
+title: "Modifying XML Trees (LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,12 +13,14 @@ dev_langs:
   - "VB"
 ms.assetid: 4ae511a5-4fc9-4178-9c8e-761357deae3f
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Modifying XML Trees (LINQ to XML) (Visual Basic)
-[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is an in-memory store for an XML tree. After you load or parse an XML tree from a source, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] lets you modify that tree in place, and then serialize the tree, perhaps saving it to a file or sending it to a remote server.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+[!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] is an in-memory store for an XML tree. After you load or parse an XML tree from a source, [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] lets you modify that tree in place, and then serialize the tree, perhaps saving it to a file or sending it to a remote server.  
   
  When you modify a tree in place, you use certain methods, such as <xref:System.Xml.Linq.XContainer.Add%2A>.  
   
@@ -32,7 +34,7 @@ ms.author: dotnetcontent
 |[Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/adding-elements-attributes-and-nodes-to-an-xml-tree.md)|Provides information about adding elements, attributes, or nodes to an XML tree.|  
 |[Modifying Elements, Attributes, and Nodes in an XML Tree](../../../../visual-basic/programming-guide/concepts/linq/modifying-elements-attributes-and-nodes-in-an-xml-tree.md)|Provides information about modifying existing elements, attributes, or nodes.|  
 |[Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/removing-elements-attributes-and-nodes-from-an-xml-tree.md)|Provides information about removing elements, attributes, or nodes from the XML tree.|  
-|[Maintaining Name/Value Pairs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/maintaining-name-value-pairs.md)|Describes how to maintain application information that is best kept as name/value pairs, such as configuration information or global settings.|  
+|[Maintaining Name/Value Pairs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/maintaining-name-value-pairs-visual-basic.md)|Describes how to maintain application information that is best kept as name/value pairs, such as configuration information or global settings.|  
 |[How to: Change the Namespace for an Entire XML Tree (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md)|Shows how to move an XML tree from one namespace into another.|  
   
 ## See Also  

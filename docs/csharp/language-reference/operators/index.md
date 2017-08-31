@@ -1,9 +1,13 @@
 ---
-title: "C# Operators"
-ms.date: "2017-03-09"
-ms.prod: .net
+title: "C# Operators | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "cs.operators"
@@ -27,22 +31,11 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 caps.latest.revision: 40
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # C# Operators
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 C# provides many operators, which are symbols that specify which operations (math, indexing, function call, etc.) to perform in an expression.  You can [overload](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) many operators to change their meaning when applied to a user-defined type.  
   
  Operations on integral types (such as `==`, `!=`, `<`, `>`, `&`, `|`) are generally allowed on enumeration (`enum`) types.  
@@ -54,31 +47,31 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x.y](../../../csharp/language-reference/operators/member-access-operator.md) – member access.  
   
- [x?.y](../../../csharp/language-reference/operators/null-conditional-operators.md) – null conditional member access.  Returns `null` if the left-hand operand is `null`.  
- 
- [x?[y]](../../../csharp/language-reference/operators/null-conditional-operators.md) - null conditional index access. Returns `null` if the left-hand operand is `null`.
- 
+ [x?.y](../../../csharp/language-reference/operators/null-conditional-operators.md) – null conditional member access.  Returns null if the left hand operand is null.  
+  
  [f(x)](../../../csharp/language-reference/operators/invocation-operator.md) – function invocation.  
   
- [a&#91;x&#93;](../../../csharp/language-reference/operators/index-operator.md) – aggregate object indexing.  
-   
+ [a&#91;x&#93;](../../../csharp/language-reference/operators/operator-csharp-reference.md) – aggregate object indexing.  
+  
+ [a?&#91;x&#93;](../../../csharp/language-reference/operators/null-conditional-operators.md) – null conditional indexing.  Returns null if the left hand operand is null.  
+  
  [x++](../../../csharp/language-reference/operators/increment-operator.md) – postfix increment.  Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).  
   
  [x--](../../../csharp/language-reference/operators/decrement-operator.md) –  postfix decrement.  Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).  
   
- [new](../../../csharp/language-reference/keywords/new-operator.md) – type instantiation.  
+ [New](../../../csharp/language-reference/keywords/new-operator.md) – type instantiation.  
   
- [typeof](../../../csharp/language-reference/keywords/typeof.md) – returns the System.Type object representing the operand.  
+ [Typeof](../../../csharp/language-reference/keywords/typeof.md) – returns the System.Type object representing the operand.  
   
- [checked](../../../csharp/language-reference/keywords/checked.md) – enables overflow checking for integer operations.  
+ [Checked](../../../csharp/language-reference/keywords/checked.md) – enables overflow checking for integer operations.  
   
- [unchecked](../../../csharp/language-reference/keywords/unchecked.md) – disables overflow checking for integer operations.  This is the default compiler behavior.  
+ [Unchecked](../../../csharp/language-reference/keywords/unchecked.md) – disables overflow checking for integer operations.  This is the default compiler behavior.  
   
- [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – returns the default value of type T, `null` for reference types, zero for numeric types, and zero/`null` filled in members for struct types.  
+ [default(T)](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md) – returns the default initialized value of type T, null for reference types, zero for numeric types, and zero/null filled in members for struct types.  
   
- [delegate](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.  
+ [Delegate](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.  
   
- [sizeof](../../../csharp/language-reference/keywords/sizeof.md) – returns the size in bytes of the type operand.  
+ [Sizeof](../../../csharp/language-reference/keywords/sizeof.md) – returns the size in bytes of the type operand.  
   
  [->](../../../csharp/language-reference/operators/dereference-operator.md) – pointer dereferencing combined with member access.  
   
@@ -87,7 +80,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [+x](../../../csharp/language-reference/operators/addition-operator.md) – returns the value of x.  
   
- [-x](../../../csharp/language-reference/operators/subtraction-operator.md) – numeric negation.  
+ [-x](../../../csharp/language-reference/operators/operator-csharp-reference.md) – numeric negation.  
   
  [!x](../../../csharp/language-reference/operators/logical-negation-operator.md) – logical negation.  
   
@@ -99,7 +92,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [(T)x](../../../csharp/language-reference/operators/invocation-operator.md) – type casting.  
   
- [await](../../../csharp/language-reference/keywords/await.md) – awaits a `Task`.  
+ [Await](../../../csharp/language-reference/keywords/await.md) – awaits a `Task`.  
   
  [&x](../../../csharp/language-reference/operators/and-operator.md) – address of.  
   
@@ -110,7 +103,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x * y](../../../csharp/language-reference/operators/multiplication-operator.md) – multiplication.  
   
- [x / y](../../../csharp/language-reference/operators/division-operator.md) – division.  If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).  
+ [x / y](../../../csharp/language-reference/operators/operator-csharp-reference.md) – division.  If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).  
   
  [x % y](../../../csharp/language-reference/operators/modulus-operator.md) – modulus.  If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.  
   
@@ -119,7 +112,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x + y](../../../csharp/language-reference/operators/addition-operator.md) – addition.  
   
- [x – y](../../../csharp/language-reference/operators/subtraction-operator.md) – subtraction.  
+ [x – y](../../../csharp/language-reference/operators/operator-csharp-reference.md) – subtraction.  
   
 ## Shift Operators  
  These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
@@ -139,9 +132,9 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x >= y](../../../csharp/language-reference/operators/greater-than-equal-operator.md) – greater than or equal to.  
   
- [is](../../../csharp/language-reference/keywords/is.md) – type compatibility.  Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).  
+ [Is](../../../csharp/language-reference/keywords/is.md) – type compatibility.  Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).  
   
- [as](../../../csharp/language-reference/keywords/as.md) – type conversion.  Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.  
+ [As](../../../csharp/language-reference/keywords/as.md) – type conversion.  Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.  
   
 ## Equality Operators  
  These operators have higher precedence than the next section and lower precedence than the previous section.  NOTE, you can click on the operators to go the detailed pages with examples.  
@@ -192,11 +185,11 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x += y](../../../csharp/language-reference/operators/addition-assignment-operator.md) – increment.  Add the value of `y` to the value of `x`, store the result in `x`, and return the new value.  If `x` designates an `event`, then `y` must be an appropriate function that C# adds as an event handler.  
   
- [x -= y](../../../csharp/language-reference/operators/subtraction-assignment-operator.md) – decrement.  Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value.  If `x` designates an `event`, then `y` must be an appropriate function that C# removes as an event handler  
+ [x -= y](../../../csharp/language-reference/operators/operator-csharp-reference.md) – decrement.  Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value.  If `x` designates an `event`, then `y` must be an appropriate function that C# removes as an event handler  
   
  [x *= y](../../../csharp/language-reference/operators/multiplication-assignment-operator.md) – multiplication assignment.  Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.  
   
- [x /= y](../../../csharp/language-reference/operators/division-assignment-operator.md) – division assignment.  Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.  
+ [x /= y](../../../csharp/language-reference/operators/operator-csharp-reference.md) – division assignment.  Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.  
   
  [x %= y](../../../csharp/language-reference/operators/modulus-assignment-operator.md) – modulus assignment.  Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.  
   
@@ -213,18 +206,17 @@ C# provides many operators, which are symbols that specify which operations (mat
  [=>](../../../csharp/language-reference/operators/lambda-operator.md) – lambda declaration.  
   
 ## Arithmetic Overflow  
- The arithmetic operators ([+](../../../csharp/language-reference/operators/addition-operator.md), [-](../../../csharp/language-reference/operators/subtraction-operator.md), [*](../../../csharp/language-reference/operators/multiplication-operator.md), [/](../../../csharp/language-reference/operators/division-operator.md)) can produce results that are outside the range of possible values for the numeric type involved. You should refer to the section on a particular operator for details, but in general:  
+ The arithmetic operators ([+](../../../csharp/language-reference/operators/addition-operator.md), [-](../../../csharp/language-reference/operators/operator-csharp-reference.md), [*](../../../csharp/language-reference/operators/multiplication-operator.md), [/](../../../csharp/language-reference/operators/operator-csharp-reference.md)) can produce results that are outside the range of possible values for the numeric type involved. You should refer to the section on a particular operator for details, but in general:  
   
-- Integer arithmetic overflow either throws an <xref:System.OverflowException> or discards the most significant bits of the result. Integer division by zero always throws a @System.DivideByZeroException.  
-
-   When integer overflow occurs, what happens depends on the execution context, which can be [checked or unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md). In a checked context, an <xref:System.OverflowException> is thrown. In an unchecked context, the most significant bits of the result are discarded and execution continues. Thus, C# gives you the choice of handling or ignoring overflow. By default, arithmetic operations occur in an *unchecked* context. 
-
-   In addition to the arithmetic operations, integral-type to integral-type casts can cause overflow (such as when you cast a [long](../../../csharp/language-reference/keywords/long.md) to an [int](../../../csharp/language-reference/keywords/int.md)), and are subject to checked or unchecked execution. However, bitwise operators and shift operators never cause overflow.  
-   
+-   Integer arithmetic overflow either throws an <xref:System.OverflowException> or discards the most significant bits of the result. Integer division by zero always throws a `DivideByZeroException`.  
+  
 -   Floating-point arithmetic overflow or division by zero never throws an exception, because floating-point types are based on IEEE 754 and so have provisions for representing infinity and NaN (Not a Number).  
   
 -   [Decimal](../../../csharp/language-reference/keywords/decimal.md) arithmetic overflow always throws an <xref:System.OverflowException>. Decimal division by zero always throws a <xref:System.DivideByZeroException>.  
   
+ When integer overflow occurs, what happens depends on the execution context, which can be [checked or unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md). In a checked context, an <xref:System.OverflowException> is thrown. In an unchecked context, the most significant bits of the result are discarded and execution continues. Thus, C# gives you the choice of handling or ignoring overflow.  
+  
+ In addition to the arithmetic operators, integral-type to integral-type casts can cause overflow, for example, casting a [long](../../../csharp/language-reference/keywords/long.md) to an [int](../../../csharp/language-reference/keywords/int.md), and are subject to checked or unchecked execution. However, bitwise operators and shift operators never cause overflow.  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -1,13 +1,13 @@
 ---
-title: "How to: Find the Set Difference Between Two Lists (LINQ) (C#)"
+title: "How to: Find the Set Difference Between Two Lists (LINQ) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 8e8945f0-4aba-439d-8d5d-c8d1eeef4e71
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Find the Set Difference Between Two Lists (LINQ) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This example shows how to use LINQ to compare two lists of strings and output those lines that are in names1.txt but not in names2.txt.  
   
 ### To create the data files  

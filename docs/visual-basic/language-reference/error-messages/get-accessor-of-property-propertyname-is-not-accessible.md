@@ -1,13 +1,13 @@
 ---
-title: "&#39;Get&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible"
-
+title: "&#39;Get&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc31103"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC31103"
 ms.assetid: 3c346c32-7669-4b04-841d-7a9df9cb703e
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &#39;Get&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A statement attempts to retrieve the value of a property when it does not have access to the property's `Get` procedure.  
   
  If the [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md) is marked with a more restrictive access level than its [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md), an attempt to read the property value could fail in the following cases:  
@@ -49,7 +37,7 @@ A statement attempts to retrieve the value of a property when it does not have a
   
  **Error ID:** BC31103  
   
-## To correct this error  
+### To correct this error  
   
 -   If you have control of the source code defining the property, consider declaring the `Get` procedure with the same access level as the property itself.  
   

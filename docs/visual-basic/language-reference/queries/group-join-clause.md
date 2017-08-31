@@ -1,13 +1,13 @@
 ---
-title: "Group Join Clause (Visual Basic)"
-
+title: "Group Join Clause (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryGroupJoinIn"
@@ -22,25 +22,13 @@ helpviewer_keywords:
   - "queries [Visual Basic], Group Join"
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
 caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Group Join Clause (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Combines two collections into a single hierarchical collection. The join operation is based on matching keys.  
   
 ## Syntax  
@@ -53,8 +41,9 @@ Group Join element [As type] In collection _
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`element`|Required. The control variable for the collection being joined.|  
 |`type`|Optional. The type of `element`. If no `type` is specified, the type of `element` is inferred from `collection`.|  
 |`collection`|Required. The collection to combine with the collection that is on the left side of the `Group Join` operator. A `Group Join` clause can be nested in a `Join` clause or in another `Group Join` clause.|  
@@ -75,7 +64,7 @@ Group Join element [As type] In collection _
 ## Example  
  The following code example joins two collections by using the `Group Join` clause.  
   
- [!code-vb[VbSimpleQuerySamples#14](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/group-join-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#14](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#14)]  
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

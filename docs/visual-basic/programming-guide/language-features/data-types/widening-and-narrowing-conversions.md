@@ -1,13 +1,13 @@
 ---
-title: "Widening and Narrowing Conversions (Visual Basic)"
+title: "Widening and Narrowing Conversions (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -30,25 +30,13 @@ helpviewer_keywords:
   - "conversions, widening"
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
 caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Widening and Narrowing Conversions (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 An important consideration with a type conversion is whether the result of the conversion is within the range of the destination data type.  
   
  A *widening conversion* changes a value to a data type that can allow for any possible value of the original data.  Widening conversions preserve the source value but can change its representation. This occurs if you convert from an integral type to `Decimal`, or from `Char` to `String`.  
@@ -58,8 +46,9 @@ An important consideration with a type conversion is whether the result of the c
 ## Widening Conversions  
  The following table shows the standard widening conversions.  
   
+|||  
+|-|-|  
 |Data type|Widens to data types <sup>1</sup>|  
-|---|---|  
 |[SByte](../../../../visual-basic/language-reference/data-types/sbyte-data-type.md)|`SByte`, `Short`, `Integer`, `Long`, `Decimal`, `Single`, `Double`|  
 |[Byte](../../../../visual-basic/language-reference/data-types/byte-data-type.md)|`Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, `Double`|  
 |[Short](../../../../visual-basic/language-reference/data-types/short-data-type.md)|`Short`, `Integer`, `Long`, `Decimal`, `Single`, `Double`|  
@@ -115,7 +104,7 @@ An important consideration with a type conversion is whether the result of the c
   
 -   <xref:System.OverflowException> — (integral types only) if the converted value is too large for the target type  
   
- If a class or structure defines a [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) to serve as a conversion operator to or from that class or structure, that `CType` can throw any exception it deems appropriate. In addition, that `CType` might call [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] functions or [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods, which in turn could throw a variety of exceptions.  
+ If a class or structure defines a [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) to serve as a conversion operator to or from that class or structure, that `CType` can throw any exception it deems appropriate. In addition, that `CType` might call [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] functions or [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] methods, which in turn could throw a variety of exceptions.  
   
 ## Changes During Reference Type Conversions  
  A conversion from a *reference type* copies only the pointer to the value. The value itself is neither copied nor changed in any way. The only thing that can change is the data type of the variable holding the pointer. In the following example, the data type is converted from the derived class to its base class, but the object that both variables now point to is unchanged.  

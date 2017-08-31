@@ -1,13 +1,13 @@
 ---
-title: "Differences Between Parameters and Arguments (Visual Basic)"
+title: "Differences Between Parameters and Arguments (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,25 +22,13 @@ helpviewer_keywords:
   - "parameters, definition"
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Differences Between Parameters and Arguments (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 In most cases, a procedure must have some information about the circumstances in which it has been called. A procedure that performs repeated or shared tasks uses different information for each call. This information consists of variables, constants, and expressions that you pass to the procedure when you call it.  
   
  To communicate this information to the procedure, the procedure defines a *parameter*, and the calling code passes an *argument* to that parameter. You can think of the parameter as a parking space and the argument as an automobile. Just as different automobiles can park in a parking space at different times, the calling code can pass a different argument to the same parameter every time that it calls the procedure.  
@@ -60,13 +48,13 @@ In most cases, a procedure must have some information about the circumstances in
  In contrast to parameter definition, arguments do not have names. Each argument is an expression, which can contain zero or more variables, constants, and literals. The data type of the evaluated expression should typically match the data type defined for the corresponding parameter, and in any case it must be convertible to the parameter type.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [How to: Define a Parameter for a Procedure](./how-to-define-a-parameter-for-a-procedure.md)   
- [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
- [Recursive Procedures](./recursive-procedures.md)   
- [Procedure Overloading](./procedure-overloading.md)
+ [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
+ [Sub Procedures](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)   
+ [Function Procedures](../../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
+ [Property Procedures](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+ [Operator Procedures](../../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
+ [How to: Define a Parameter for a Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-parameter-for-a-procedure.md)   
+ [How to: Pass Arguments to a Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-pass-arguments-to-a-procedure.md)   
+ [Passing Arguments by Value and by Reference](../../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)   
+ [Recursive Procedures](../../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)   
+ [Procedure Overloading](../../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)

@@ -1,8 +1,8 @@
 ---
-title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 9d2572fd-27d4-426c-b079-16854cb9ec7d
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find an Attribute of the Parent (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how to navigate to the parent element and find an attribute of it.  
   
  The XPath expression is:  
@@ -46,6 +48,7 @@ Else
     Console.WriteLine("Results differ")  
 End If  
 Console.WriteLine(att1)  
+  
 ```  
   
  This example produces the following output:  

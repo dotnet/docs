@@ -1,8 +1,8 @@
 ---
-title: "Local Type Inference (Visual Basic)"
+title: "Local Type Inference (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,28 +23,16 @@ helpviewer_keywords:
   - "type inference [Visual Basic]"
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
 caps.latest.revision: 43
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Local Type Inference (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The Visual Basic compiler uses *type inference* to determine the data types of local variables declared without an `As` clause. The compiler infers the type of the variable from the type of the initialization expression. This enables you to declare variables without explicitly stating a type, as shown in the following example. As a result of the declarations, both `num1` and `num2` are strongly typed as integers.  
   
- [!code-vb[VbVbalrTypeInference#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#1)]  
   
 > [!NOTE]
 >  If you do not want `num2` in the previous example to be typed as an `Integer`, you can specify another type by using a declaration like `Dim num3 As Object = 3` or `Dim num4 As Double = 3`.  
@@ -59,23 +47,23 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
 ## Examples  
  Type inference occurs when a local variable is declared without an `As` clause and initialized. The compiler uses the type of the assigned initial value as the type of the variable. For example, each of the following lines of code declares a variable of type `String`.  
   
- [!code-vb[VbVbalrTypeInference#2](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_2.vb)]  
+ [!code-vb[VbVbalrTypeInference#2](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#2)]  
   
  The following code demonstrates two equivalent ways to create an array of integers.  
   
- [!code-vb[VbVbalrTypeInference#3](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_3.vb)]  
+ [!code-vb[VbVbalrTypeInference#3](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#3)]  
   
  It is convenient to use type inference to determine the type of a loop control variable. In the following code, the compiler infers that `number` is an `Integer` because `someNumbers2` from the previous example is an array of integers.  
   
- [!code-vb[VbVbalrTypeInference#4](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_4.vb)]  
+ [!code-vb[VbVbalrTypeInference#4](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#4)]  
   
  Local type inference can be used in `Using` statements to establish the type of the resource name, as the following example demonstrates.  
   
- [!code-vb[VbVbalrTypeInference#7](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_5.vb)]  
+ [!code-vb[VbVbalrTypeInference#7](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#7)]  
   
  The type of a variable can also be inferred from the return values of functions, as the following example demonstrates. Both `pList1` and `pList2` are arrays of processes because `Process.GetProcesses` returns an array of processes.  
   
- [!code-vb[VbVbalrTypeInference#5](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_6.vb)]  
+ [!code-vb[VbVbalrTypeInference#5](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#5)]  
   
 ## Option Infer  
  `Option Infer` enables you specify whether local type inference is allowed in a particular file. To enable or to block the option, type one of the following statements at the start of the file.  
@@ -84,18 +72,18 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
  `Option Infer Off`  
   
- If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. For projects upgraded from [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)] or earlier, the compiler default is `Option Infer Off`.  
+ If you do not specify a value for `Option Infer` in your code, the compiler default is `Option Infer On`. For projects upgraded from [!INCLUDE[vb_orcas_long](../../../../includes/vb-orcas-long-md.md)] or earlier, the compiler default is `Option Infer Off`.  
   
  If the value set for `Option Infer` in a file conflicts with the value set in the IDE or on the command line, the value in the file has precedence.  
   
- For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
+ For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## Restrictions  
  Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.  
   
 ## See Also  
  [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
+ [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
  [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
  [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md)   
  [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)   

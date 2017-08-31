@@ -1,39 +1,24 @@
 ---
-title: "TargetFilePath specifies an existing folder"
-
+title: "TargetFilePath specifies an existing folder | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2334f49e-d080-4ee2-b036-f95c7f76c3ec
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # TargetFilePath specifies an existing folder
 The parameter `TargetFilePath` specifies an existing directory but must specify the new directory's name.  
   
-## To correct this error  
+### To correct this error  
   
 -   Change `TargetFilePath` to specify a new, rather than existing, directory.  
   

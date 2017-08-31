@@ -1,13 +1,13 @@
 ---
-title: "File Access with Visual Basic"
+title: "File Access with Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -25,26 +25,14 @@ helpviewer_keywords:
   - "sequential access"
 ms.assetid: 231533bf-d049-4345-befa-3fb78fe6517d
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # File Access with Visual Basic
-The `My.Computer.FileSystem` object provides tools for working with files and folders. Its properties, methods, and events allow you to create, copy, move, investigate, and delete files and folders. `My.Computer.FileSystem` provides better performance than the legacy functions (`FileOpen`, `FileClose`, `Input`, `InputString`, `LineInput`, etc.) that are provided by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] for backward compatibility.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The `My.Computer.FileSystem` object provides tools for working with files and folders. Its properties, methods, and events allow you to create, copy, move, investigate, and delete files and folders. `My.Computer.FileSystem` provides better performance than the legacy functions (`FileOpen`, `FileClose`, `Input`, `InputString`, `LineInput`, etc.) that are provided by [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] for backward compatibility.  
   
 ## In This Section  
  [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  

@@ -1,13 +1,13 @@
 ---
-title: "Event Statement"
-
+title: "Event Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Event"
@@ -29,25 +29,13 @@ helpviewer_keywords:
   - "declaring user-defined events"
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
 caps.latest.revision: 33
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Event Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Declares a user-defined event.  
   
 ## Syntax  
@@ -78,8 +66,9 @@ End Event
   
 ## Parts  
   
+|||  
+|-|-|  
 |Part|Description|  
-|---|---|  
 |`attrlist`|Optional. List of attributes that apply to this event. Multiple attributes are separated by commas. You must enclose the [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets ("`<`" and "`>`").|  
 |`accessmodifier`|Optional. Specifies what code can access the event. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)—any code that can access the element that declares it can access it.<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)—only code within its class or a derived class can access it.<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)—only code in the same assembly can access it.<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)—only code in the element that declares it can access it.<br /><br /> You can specify `Protected Friend` to enable access from code in the event's class, a derived class, or the same assembly.|  
 |`Shared`|Optional. Specifies that this event is not associated with a specific instance of a class or structure.|  
@@ -104,7 +93,7 @@ End Event
 ## Remarks  
  Once the event has been declared, use the `RaiseEvent` statement to raise the event. A typical event might be declared and raised as shown in the following fragments:  
   
- [!code-vb[VbVbalrEvents#13](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_1.vb)]  
+ [!code-vb[VbVbalrEvents#13](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#13)]  
   
 > [!NOTE]
 >  You can declare event arguments just as you do arguments of procedures, with the following exceptions: events cannot have named arguments, `ParamArray` arguments, or `Optional` arguments. Events do not have return values.  
@@ -128,21 +117,21 @@ End Event
   
  Add a `WithEvents` variable to the declarations section of the `Form1` class:  
   
- [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_2.vb)]  
+ [!code-vb[VbVbalrEvents#14](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   
  Add the following code to the code for `Form1`. Replace any duplicate procedures that may exist, such as `Form_Load` or `Button_Click`.  
   
- [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_3.vb)]  
+ [!code-vb[VbVbalrEvents#15](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#15)]  
   
  Press F5 to run the previous example, and click the button labeled **Start**. The first text box starts to count down the seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
   
 > [!NOTE]
->  The `My.Application.DoEvents` method does not process events in the same way the form does. To enable the form to handle the events directly, you can use multithreading. For more information, see [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c).  
+>  The `My.Application.DoEvents` method does not process events in the same way the form does. To enable the form to handle the events directly, you can use multithreading. For more information, see [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## See Also  
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
  [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)   
+ [Events](../../../visual-basic/programming-guide/language-features/events/events.md)   
  [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)   
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   

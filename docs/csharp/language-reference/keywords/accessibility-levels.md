@@ -1,9 +1,13 @@
 ---
-title: "Accessibility Levels (C# Reference)"
+title: "Accessibility Levels (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -14,22 +18,11 @@ ms.assetid: dc083921-0073-413e-8936-a613e8bb7df4
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Accessibility Levels (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Use the access modifiers, [public](../../../csharp/language-reference/keywords/public.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or [private](../../../csharp/language-reference/keywords/private.md), to specify one of the following declared accessibility levels for members.  
   
 |Declared accessibility|Meaning|  
@@ -37,10 +30,10 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |`public`|Access is not restricted.|  
 |`protected`|Access is limited to the containing class or types derived from the containing class.|  
 |`internal`|Access is limited to the current assembly.|  
-|`protected internal`|Access is limited to the current assembly or types derived from the containing class.|  
+|`protected` `internal`|Access is limited to the current assembly or types derived from the containing class.|  
 |`private`|Access is limited to the containing type.|  
   
- Only one access modifier is allowed for a member or type, except when you use the `protected internal` combination.  
+ Only one access modifier is allowed for a member or type, except when you use the `protected` `internal` combination.  
   
  Access modifiers are not allowed on namespaces. Namespaces have no access restrictions.  
   
@@ -53,14 +46,14 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |Members of|Default member accessibility|Allowed declared accessibility of the member|  
 |----------------|----------------------------------|--------------------------------------------------|  
 |`enum`|`public`|None|  
-|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal`|  
+|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected` `internal`|  
 |`interface`|`public`|None|  
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
   
  The accessibility of a nested type depends on its [accessibility domain](../../../csharp/language-reference/keywords/accessibility-domain.md), which is determined by both the declared accessibility of the member and the accessibility domain of the immediately containing type. However, the accessibility domain of a nested type cannot exceed that of the containing type.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -1,9 +1,13 @@
 ---
-title: "#define (C# Reference)"
+title: "#define (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#define"
@@ -15,22 +19,11 @@ ms.assetid: 23638b8f-779c-450e-b600-d55682de7d01
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # #define (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive, the expression will evaluate to `true`, as the following example shows:  
   
  `#`  `define`   `DEBUG`  
@@ -44,7 +37,7 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
   
  You can define a symbol, but you cannot assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives.  
   
- You can also define a symbol with the [/define](../../../csharp/language-reference/compiler-options/define-compiler-option.md) compiler option. You can undefine a symbol with [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
+ You can also define a symbol with the [/define](../../../csharp/language-reference/compiler-options/define-csharp-compiler-options.md) compiler option. You can undefine a symbol with [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md).  
   
  A symbol that you define with `/define` or with `#define` does not conflict with a variable of the same name. That is, a variable name should not be passed to a preprocessor directive and a symbol can only be evaluated by a preprocessor directive.  
   
@@ -83,6 +76,6 @@ public class TestDefine
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)   
  [const](../../../csharp/language-reference/keywords/const.md)   
- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)   
+ [How to: Compile Conditionally with Trace and Debug](../Topic/How%20to:%20Compile%20Conditionally%20with%20Trace%20and%20Debug.md)   
  [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)   
  [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)

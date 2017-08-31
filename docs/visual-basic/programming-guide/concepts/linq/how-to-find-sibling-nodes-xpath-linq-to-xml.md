@@ -1,8 +1,8 @@
 ---
-title: "How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 73082738-2113-4438-8545-98d5df0927cb
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You might want to find all siblings of a node that have a specific name. The resulting collection might include the context node if the context node also has the specific name.  
   
  The XPath expression is:  
@@ -48,6 +50,7 @@ End If
 For Each el As XElement In list1  
     Console.WriteLine(el)  
 Next  
+  
 ```  
   
  This example produces the following output:  

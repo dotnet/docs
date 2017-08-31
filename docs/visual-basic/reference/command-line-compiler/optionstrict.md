@@ -1,13 +1,13 @@
 ---
-title: "/optionstrict"
-
+title: "-optionstrict | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/optionstrict"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "/optionstrict compiler option [Visual Basic]"
 ms.assetid: c7b10086-0fa4-49db-b3c8-4ae0db5957da
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /optionstrict
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Enforces strict type semantics to restrict implicit type conversions.  
   
 ## Syntax  
@@ -84,7 +72,7 @@ vbc /optionstrict+ test.vb
  [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)   
  [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
  [/nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md)   
- [/warnaserror (Visual Basic)](../../../visual-basic/reference/command-line-compiler/warnaserror.md)   
+ [/warnaserror (Visual Basic)](../../../visual-basic/reference/command-line-compiler/warnaserror-visual-basic.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visual-studio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

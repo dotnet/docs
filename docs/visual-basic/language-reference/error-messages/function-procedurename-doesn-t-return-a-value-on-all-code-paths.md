@@ -1,13 +1,13 @@
 ---
-title: "Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths"
-
+title: "Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc42105"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC42105"
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Function '\<procedurename>' doesn't return a value on all code paths. Are you missing a 'Return' statement?  
   
  A `Function` procedure has at least one possible path through its code that does not return a value.  
@@ -51,11 +39,11 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
   
  If control passes to `Exit Function` or `End Function` and you have not assigned any value to the procedure name, the procedure returns the default value of the return data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42105  
   
-## To correct this error  
+### To correct this error  
   
 -   Check your control flow logic and make sure you assign a value before every statement that causes a return.  
   
@@ -64,4 +52,4 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
 ## See Also  
  [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
+ [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic)

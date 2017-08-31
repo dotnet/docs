@@ -1,13 +1,13 @@
 ---
-title: "/optionexplicit"
-
+title: "-optionexplicit | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/optionexplicit"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "-optionexplicit compiler option [Visual Basic]"
 ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /optionexplicit
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Causes the compiler to report errors if variables are not declared before they are used.  
   
 ## Syntax  
@@ -64,7 +52,7 @@ Causes the compiler to report errors if variables are not declared before they a
 ## Example  
  The following code compiles when `/optionexplicit-` is used.  
   
- [!code-vb[VbVbalrCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/optionexplicit_1.vb)]  
+ [!code-vb[VbVbalrCompiler#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionExplicitOff.vb#5)]  
   
 ## See Also  
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
@@ -73,4 +61,4 @@ Causes the compiler to report errors if variables are not declared before they a
  [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visual-studio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

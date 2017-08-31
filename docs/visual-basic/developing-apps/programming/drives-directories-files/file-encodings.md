@@ -1,13 +1,13 @@
 ---
-title: "File Encodings (Visual Basic)"
+title: "File Encodings (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "file encoding"
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # File Encodings (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 File encodings, also known as character encodings, specify how to represent characters when text processing. One encoding may be preferable over another in terms of which language characters it can or cannot handle, although Unicode is usually preferred.  
   
  When reading from or writing to files, improperly matching file encodings may result in exceptions or incorrect results.  
@@ -49,8 +37,9 @@ File encodings, also known as character encodings, specify how to represent char
 ## Encoding Class  
  The <xref:System.Text.Encoding> class represents a character encoding. This table lists the type of encodings available and describes each.  
   
-|Name|Description|
-|---|---|    
+|||  
+|-|-|  
+|Name|Description|  
 |<xref:System.Text.ASCIIEncoding>|Represents an ASCII character encoding of Unicode characters.|  
 |<xref:System.Text.UnicodeEncoding>|Represents a UTF-16 encoding of Unicode characters.|  
 |<xref:System.Text.UTF32Encoding>|Represents a UTF-32 encoding of Unicode characters.|  

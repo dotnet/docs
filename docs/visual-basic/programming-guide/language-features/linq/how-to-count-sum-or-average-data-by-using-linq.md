@@ -1,13 +1,13 @@
 ---
-title: "How to: Count, Sum, or Average Data by Using LINQ (Visual Basic)"
+title: "How to: Count, Sum, or Average Data by Using LINQ (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -26,32 +26,20 @@ helpviewer_keywords:
   - "count operator [LINQ in Visual Basic]"
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Count, Sum, or Average Data by Using LINQ (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
  The following example shows how to create a new application that performs queries against a SQL Server database. The sample counts, sums, and averages the results by using the `Aggregate` and `Group By` clauses. For more information, see [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md) and [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md).  
   
- The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](https://msdn.microsoft.com/library/bb399411).  
+ The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](../Topic/Downloading%20Sample%20Databases.md).  
   
-[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../../../../includes/note-settings-general-md.md)]  
   
 ### To create a connection to a database  
   
@@ -95,14 +83,15 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
      Add the following code to the `Load` event to query the tables that are exposed as properties of your <xref:System.Data.Linq.DataContext> and count, sum, and average the results. The sample uses the `Aggregate` clause to query for a single result, and the `Group By` clause to show an average for grouped results.  
   
-     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-count-sum-or-average-data-by-using-linq_1.vb)]  
+     [!code-vb[VbLINQToSQLHowTos#13](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form6.vb#13)]  
   
 4.  Press F5 to run your project and view the results.  
   
 ## See Also  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)  
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [DataContext Methods (O/R Designer)](/visual-studio/data-tools/datacontext-methods-o-r-designer)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
  [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)   
  [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md)

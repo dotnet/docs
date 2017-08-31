@@ -1,13 +1,13 @@
 ---
-title: "Bad DLL calling convention"
-
+title: "Bad DLL calling convention | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID49"
@@ -15,28 +15,16 @@ dev_langs:
   - "VB"
 ms.assetid: 7c7def45-b0ab-450f-ad3f-4383dfd9aed7
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Bad DLL calling convention
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Arguments passed to a dynamic-link library (DLL) must exactly match those expected by the routine. Calling conventions deal with number, type, and order of arguments. Your program may be calling a routine in a DLL that is being passed the wrong type or number of arguments.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Make sure all argument types agree with those specified in the declaration of the routine that you are calling.  
   

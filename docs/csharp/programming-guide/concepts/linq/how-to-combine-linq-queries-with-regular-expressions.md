@@ -1,13 +1,13 @@
 ---
-title: "How to: Combine LINQ Queries with Regular Expressions (C#)"
+title: "How to: Combine LINQ Queries with Regular Expressions (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 6b003b65-20a4-4ca2-929e-2ee3f215aecc
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Combine LINQ Queries with Regular Expressions (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This example shows how to use the <xref:System.Text.RegularExpressions.Regex> class to create a regular expression for more complex matching in text strings. The LINQ query makes it easy to filter on exactly the files that you want to search with the regular expression, and to shape the results.  
   
 ## Example  
@@ -33,16 +30,18 @@ class QueryWithRegEx
     public static void Main()  
     {  
         // Modify this path as necessary so that it accesses your version of Visual Studio.  
-        string startFolder = @"C:\Program Files (x86)\Microsoft Visual Studio 14.0\";  
+        string startFolder = @"c:\program files\Microsoft Visual Studio 9.0\";  
         // One of the following paths may be more appropriate on your computer.  
-        //string startFolder = @"C:\Program Files (x86)\Microsoft Visual Studio\2017\";  
+        //string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 9.0\";  
+        //string startFolder = @"c:\program files\Microsoft Visual Studio 10.0\";  
+        //string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 10.0\";  
   
         // Take a snapshot of the file system.  
         IEnumerable<System.IO.FileInfo> fileList = GetFiles(startFolder);  
   
         // Create the regular expression to find all things "Visual".  
         System.Text.RegularExpressions.Regex searchTerm =  
-            new System.Text.RegularExpressions.Regex(@"Visual (Basic|C#|C\+\+|Studio)");  
+            new System.Text.RegularExpressions.Regex(@"Visual (Basic|C#|C\+\+|J#|SourceSafe|Studio)");  
   
         // Search the contents of each .htm file.  
         // Remove the where clause to find even more matchedValues!  

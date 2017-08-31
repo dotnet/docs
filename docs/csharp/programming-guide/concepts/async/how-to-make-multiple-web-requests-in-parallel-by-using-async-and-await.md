@@ -1,13 +1,13 @@
 ---
-title: "How to: Make Multiple Web Requests in Parallel by Using async and await (C#)"
+title: "How to: Make Multiple Web Requests in Parallel by Using async and await (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 19745899-f97a-4499-a7c7-e813d1447580
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Make Multiple Web Requests in Parallel by Using async and await (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 In an async method, tasks are started when they’re created. The [await](../../../../csharp/language-reference/keywords/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
   
 ```csharp  
@@ -41,6 +38,7 @@ var myTask = someWebAccessMethodAsync(url);
   
 // The application of await suspends the rest of this method until the task is complete.  
 var result = await myTask;  
+  
 ```  
   
  Between starting a task and awaiting it, you can start other tasks. The additional tasks implicitly run in parallel, but no additional threads are created.  
@@ -131,9 +129,9 @@ var result = await myTask;
         Task<int> download1 =   
             ProcessURLAsync("http://msdn.microsoft.com", client);  
         Task<int> download2 =   
-            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
+            ProcessURLAsync("http://msdn.microsoft.com/en-us/library/hh156528(VS.110).aspx", client);  
         Task<int> download3 =   
-            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client);  
+            ProcessURLAsync("http://msdn.microsoft.com/en-us/library/67w7t67f.aspx", client);  
   
         // Await each task.  
         int length1 = await download1;  
@@ -202,9 +200,9 @@ namespace AsyncExample_MultipleTasks
             Task<int> download1 =   
                 ProcessURLAsync("http://msdn.microsoft.com", client);  
             Task<int> download2 =   
-                ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
+                ProcessURLAsync("http://msdn.microsoft.com/en-us/library/hh156528(VS.110).aspx", client);  
             Task<int> download3 =   
-                ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client);  
+                ProcessURLAsync("http://msdn.microsoft.com/en-us/library/67w7t67f.aspx", client);  
   
             // Await each task.  
             int length1 = await download1;  
@@ -241,5 +239,5 @@ namespace AsyncExample_MultipleTasks
   
 ## See Also  
  [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
+ [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
  [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)

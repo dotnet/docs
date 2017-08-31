@@ -1,13 +1,13 @@
 ---
-title: "Delimiters for Documentation Tags (C# Programming Guide)"
-
+title: "Delimiters for Documentation Tags (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,30 +19,18 @@ ms.assetid: 9b2bdd18-4f5c-4c0b-988e-fb992e0d233e
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Delimiters for Documentation Tags (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The use of XML doc comments requires delimiters, which indicate to the compiler where a documentation comment begins and ends. You can use the following kinds of delimiters with the XML documentation tags:  
   
  `///`  
  Single-line delimiter. This is the form that is shown in documentation examples and used by the Visual C# project templates. If there is a white space character following the delimiter, that character is not included in the XML output.  
   
 > [!NOTE]
->  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and \</summary> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. Access this feature from the [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting) in your project property pages.  
+>  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and \</summary> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. Access this feature from the [Options, Text Editor, C#, Formatting](/visual-studio/ide/reference/options-text-editor-csharp-formatting) in your project property pages.  
   
  `/** */`  
  Multiline delimiters.  
@@ -69,6 +57,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
     /**   
      * <summary>text</summary>   
     */  
+  
     ```  
   
 -   The compiler identifies a common pattern of " * " at the beginning of the second and third lines. The pattern is not included in the output.  
@@ -102,5 +91,5 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)   
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
+ [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md)   
  [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

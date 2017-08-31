@@ -1,34 +1,19 @@
 ---
-title: "File&#39;s open mode wasn&#39;t set to a valid value"
-
+title: "File&#39;s open mode wasn&#39;t set to a valid value | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 969541f6-9ff6-4804-ba61-0d17370060ef
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # File&#39;s open mode wasn&#39;t set to a valid value
 The value supplied for the file's open mode was not valid. The following table shows valid values for the <xref:Microsoft.VisualBasic.OpenMode> enumeration.  
@@ -41,7 +26,7 @@ The value supplied for the file's open mode was not valid. The following table s
 |8|`OpenMode.Append`|  
 |32|`OpenMode.Binary`|  
   
-## To correct this error  
+### To correct this error  
   
 -   Verify the value being supplied for the file's open mode.  
   

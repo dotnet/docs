@@ -1,9 +1,13 @@
 ---
-title: "&lt;= Operator (C# Reference)"
+title: "&lt;= Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "<=_CSharpKeyword"
@@ -16,29 +20,18 @@ ms.assetid: bb0caec9-d253-4105-b8bc-5252233251e4
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &lt;= Operator (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 All numeric and enumeration types define a "less than or equal" relational operator (`<=`) that returns `true` if the first operand is less than or equal to the second, `false` otherwise.  
   
 ## Remarks  
- User-defined types can overload the `<=` operator. For more information, see [operator](../../../csharp/language-reference/keywords/operator.md). If `<=` is overloaded, [>=](../../../csharp/language-reference/operators/greater-than-equal-operator.md) must also be overloaded. Operations on integral types are generally allowed on enumeration.  
+ User-defined types can overload the `<=` operator. For more information, see [operator](../../../csharp/language-reference/keywords/operator-csharp-reference.md). If `<=` is overloaded, [>=](../../../csharp/language-reference/operators/greater-than-equal-operator.md) must also be overloaded. Operations on integral types are generally allowed on enumeration.  
   
 ## Example  
- [!code-cs[csRefOperators#32](../../../csharp/language-reference/operators/codesnippet/CSharp/less-than-equal-operator_1.cs)]  
+ [!code-csharp[csRefOperators#32](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#32)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

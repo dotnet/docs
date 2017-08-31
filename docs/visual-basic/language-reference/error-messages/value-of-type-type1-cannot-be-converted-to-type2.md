@@ -1,13 +1,13 @@
 ---
-title: "Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39;"
-
+title: "Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39; | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc31194"
@@ -18,32 +18,20 @@ helpviewer_keywords:
   - "BC31194"
 ms.assetid: 03d50c31-addd-4c90-9c53-725b84f9782e
 caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39;
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' property to get the string value of the first element of '\<parentElement>'.  
   
  An attempt has been made to implicitly cast an XML literal to a specific type. The XML literal cannot be implicitly cast to the specified type.  
   
  **Error ID:** BC31194  
   
-## To correct this error  
+### To correct this error  
   
 -   Use the `Value` property of the XML literal to reference its value as a `String`. Use the `CType` function, another type conversion function, or the <xref:System.Convert> class to cast the value as the specified type.  
   

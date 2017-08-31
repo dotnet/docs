@@ -1,13 +1,13 @@
 ---
-title: "Parameters and Return Values for Multithreaded Procedures (C#)"
+title: "Parameters and Return Values for Multithreaded Procedures (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: ba63c30c-d9f0-4962-b5c7-9d83ba851e6a
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Parameters and Return Values for Multithreaded Procedures (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Supplying and returning values in a multithreaded application is complicated because the constructor for the thread class must be passed a reference to a procedure that takes no arguments and returns no value. The following sections show some simple ways to supply parameters and return values from procedures on separate threads.  
   
 ## Supplying Parameters for Multithreaded Procedures  
@@ -137,4 +134,4 @@ private void BackgroundWorker1_RunWorkerCompleted(
  [Events](../../../../csharp/programming-guide/events/index.md)   
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [Delegates](../../../../csharp/programming-guide/delegates/index.md)   
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)
+ [Multithreading in Components](../Topic/Multithreading%20in%20Components.md)

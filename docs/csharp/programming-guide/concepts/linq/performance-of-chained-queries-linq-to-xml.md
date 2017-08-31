@@ -1,13 +1,13 @@
 ---
-title: "Performance of Chained Queries (LINQ to XML) (C#)"
+title: "Performance of Chained Queries (LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: b2f1d715-8946-4dc0-8d56-fb3d1bba54a6
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Performance of Chained Queries (LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 One of the most important benefits of LINQ (and LINQ to XML) is that chained queries can perform as well as a single larger, more complicated query.  
   
  A chained query is a query that uses another query as its source. For example, in the following simple code, `query2` has `query1` as its source:  
@@ -62,7 +64,7 @@ foreach (var i in query2)
   
  For more information on iterators, see [yield](../../../../csharp/language-reference/keywords/yield.md).  
   
- For a more detailed tutorial on chaining queries together, see [Tutorial: Chaining Queries Together](http://msdn.microsoft.com/library/c08d228a-f07a-4c98-810f-1bf0e8f2257c).  
+ For a more detailed tutorial on chaining queries together, see [Tutorial: Chaining Queries Together](../Topic/Tutorial:%20Chaining%20Queries%20Together.md).  
   
 ## See Also  
  [Performance (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)

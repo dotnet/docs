@@ -1,41 +1,26 @@
 ---
-title: "Unable to read fixed width fields because FieldWidths is Nothing or empty"
-
+title: "Unable to read fixed width fields because FieldWidths is Nothing or empty | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_FieldWidthsNothing"
 ms.assetid: 623e0825-5640-4e47-8341-7eeec80fc145
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Unable to read fixed width fields because FieldWidths is Nothing or empty
 The `TextFieldParser` is unable to read fixed-width fields because the `FieldWidths` property is set to `Nothing` or is empty.  
   
-## To correct this error  
+### To correct this error  
   
 -   Set `FieldWidths` to a valid value.  
   

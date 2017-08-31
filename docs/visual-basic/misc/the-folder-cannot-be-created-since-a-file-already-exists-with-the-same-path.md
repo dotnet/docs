@@ -1,39 +1,24 @@
 ---
-title: "The folder cannot be created since a file already exists with the same path"
-
+title: "The folder cannot be created since a file already exists with the same path | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1085c60d-4d38-4d67-a149-d3923eef0cfd
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # The folder cannot be created since a file already exists with the same path
 An attempt has been made to create a directory, but a file already exists with that path. This may be a result of incorrectly parsing paths, particularly when working with relative paths.  
   
-## To correct this error  
+### To correct this error  
   
 -   Check that you are supplying the correct path.  
   

@@ -1,8 +1,8 @@
 ---
-title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 83b3ddca-830a-4b71-9756-9e4bdf907302
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how to find all attributes of the siblings of the context node. Only attributes with a specific name are returned in the collection.  
   
  The XPath expression is:  
@@ -52,6 +54,7 @@ End If
 For Each el As XAttribute In list1  
     Console.WriteLine(el)  
 Next  
+  
 ```  
   
  This example produces the following output:  

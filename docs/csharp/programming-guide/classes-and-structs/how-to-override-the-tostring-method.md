@@ -1,13 +1,13 @@
 ---
-title: "How to: Override the ToString Method (C# Programming Guide)"
-
+title: "How to: Override the ToString Method (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,30 +18,18 @@ ms.assetid: 8016db69-1f19-420c-8e17-98e8bebb7749
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Override the ToString Method (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Every class or struct in C# implicitly inherits the <xref:System.Object> class. Therefore, every object in C# gets the <xref:System.Object.ToString%2A> method, which returns a string representation of that object. For example, all variables of type `int` have a `ToString` method, which enables them to return their contents as a string:  
   
- [!code-cs[csProgGuideInheritance#37](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_1.cs)]  
+ [!code-csharp[csProgGuideInheritance#37](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#37)]  
   
  When you create a custom class or struct, you should override the <xref:System.Object.ToString%2A> method in order to provide information about your type to client code.  
   
- For information about how to use format strings and other types of custom formatting with the `ToString` method, see [Formatting Types](../../../standard/base-types/formatting-types.md).  
+ For information about how to use format strings and other types of custom formatting with the `ToString` method, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
   
 > [!IMPORTANT]
 >  When you decide what information to provide through this method, consider whether your class or struct will ever be used by untrusted code. Be careful to ensure that you do not provide any information that could be exploited by malicious code.  
@@ -58,11 +46,11 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
   
      The following example returns the name of the class in addition to the data specific to a particular instance of the class.  
   
-     [!code-cs[csProgGuideInheritance#36](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_2.cs)]  
+     [!code-csharp[csProgGuideInheritance#36](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#36)]  
   
      You can test the `ToString` method as shown in the following code example:  
   
-     [!code-cs[csProgGuideInheritance#38](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_3.cs)]  
+     [!code-csharp[csProgGuideInheritance#38](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#38)]  
   
 ## See Also  
  <xref:System.IFormattable>   
@@ -73,4 +61,4 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
  [new](../../../csharp/language-reference/keywords/new.md)   
  [override](../../../csharp/language-reference/keywords/override.md)   
  [virtual](../../../csharp/language-reference/keywords/virtual.md)   
- [Formatting Types](../../../standard/base-types/formatting-types.md)
+ [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md)

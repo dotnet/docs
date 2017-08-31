@@ -1,8 +1,8 @@
 ---
-title: "How to: Find Descendant Elements (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Descendant Elements (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: e7e2dc9e-bda9-420d-a5b1-4fabf1cca46b
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find Descendant Elements (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how to get the descendant elements with a particular name.  
   
  The XPath expression is `//Name`.  
@@ -28,6 +30,7 @@ This topic shows how to get the descendant elements with a particular name.
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
+  
       Dim po As XDocument = XDocument.Load("PurchaseOrders.xml")  
   
 ' LINQ to XML query  

@@ -1,28 +1,25 @@
 ---
-title: "Iterators (Visual Basic)"
+title: "Iterators (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: f26b5c1e-fe9d-4004-b287-da7919d717ae
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Iterators (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An *iterator* can be used to step through collections such as lists and arrays.  
   
  An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element one at a time. When a `Yield` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.  
@@ -424,6 +421,7 @@ Public Class Stack(Of T)
         Next  
     End Function  
 End Class  
+  
 ```  
   
 ##  <a name="BKMK_SyntaxInformation"></a> Syntax Information  
@@ -446,7 +444,7 @@ End Class
   
  Iterators do not support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method. To re-iterate from the start, you must obtain a new iterator.  
   
- For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).  
+ For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification.md).  
   
 ##  <a name="BKMK_UseOfIterators"></a> Use of Iterators  
  Iterators enable you to maintain the simplicity of a `For Each` loop when you need to use complex code to populate a list sequence. This can be useful when you want to do the following:  

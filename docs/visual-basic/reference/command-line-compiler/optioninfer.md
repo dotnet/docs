@@ -1,13 +1,13 @@
 ---
-title: "/optioninfer"
-
+title: "-optioninfer | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/optioninfer"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "optioninfer compiler option [Visual Basic]"
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /optioninfer
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Enables the use of local type inference in variable declarations.  
   
 ## Syntax  
@@ -48,8 +36,9 @@ Enables the use of local type inference in variable declarations.
   
 ## Arguments  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`+` &#124; `-`|Optional. Specify `/optioninfer+` to enable local type inference, or `/optioninfer-` to block it. The `/optioninfer` option, with no value specified, is the same as `/optioninfer+`. The default value when the `/optioninfer` switch is not present is also `/optioninfer+`. The default value is set in the Vbc.rsp response file.|  
   
 > [!NOTE]
@@ -79,7 +68,7 @@ vbc /optioninfer+ test.vb
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)   
  [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)   
- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)   
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visual-studio/ide/reference/visual-basic-defaults-projects-options-dialog-box)   
+ [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic)   
  [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)   
  [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)

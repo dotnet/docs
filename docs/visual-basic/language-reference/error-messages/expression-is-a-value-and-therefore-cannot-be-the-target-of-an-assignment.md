@@ -1,13 +1,13 @@
 ---
-title: "Expression is a value and therefore cannot be the target of an assignment"
-
+title: "Expression is a value and therefore cannot be the target of an assignment | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30068"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC30068"
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
 caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Expression is a value and therefore cannot be the target of an assignment
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A statement attempts to assign a value to an expression. You can assign a value only to a writable variable, property, or array element at run time. The following example illustrates how this error can occur.  
   
 ```  
@@ -69,7 +57,7 @@ exitButton.Location = exitLocation
   
  **Error ID:** BC30068  
   
-## To correct this error  
+### To correct this error  
   
 -   If the statement assigns a value to an expression, replace the expression with a single writable variable, property, or array element.  
   

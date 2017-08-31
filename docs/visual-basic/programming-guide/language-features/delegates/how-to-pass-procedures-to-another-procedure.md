@@ -1,13 +1,13 @@
 ---
-title: "How to: Pass Procedures to Another Procedure in Visual Basic"
+title: "How to: Pass Procedures to Another Procedure in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,28 +16,16 @@ helpviewer_keywords:
   - "delegates [Visual Basic], passing procedures"
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Pass Procedures to Another Procedure in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example shows how to use delegates to pass a procedure to another procedure.  
   
- A delegate is a type that you can use like any other type in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The `AddressOf` operator returns a delegate object when applied to a procedure name.  
+ A delegate is a type that you can use like any other type in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)]. The `AddressOf` operator returns a delegate object when applied to a procedure name.  
   
  This example has a procedure with a delegate parameter that can take a reference to another procedure, obtained with the `AddressOf` operator.  
   
@@ -45,30 +33,30 @@ This example shows how to use delegates to pass a procedure to another procedure
   
 1.  Create a delegate named `MathOperator`.  
   
-     [!code-vb[VbVbalrDelegates#1](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_1.vb)]  
+     [!code-vb[VbVbalrDelegates#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#1)]  
   
 2.  Create a procedure named `AddNumbers` with parameters and return value that match those of `MathOperator`, so that the signatures match.  
   
-     [!code-vb[VbVbalrDelegates#2](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_2.vb)]  
+     [!code-vb[VbVbalrDelegates#2](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#2)]  
   
 3.  Create a procedure named `SubtractNumbers` with a signature that matches `MathOperator`.  
   
-     [!code-vb[VbVbalrDelegates#3](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_3.vb)]  
+     [!code-vb[VbVbalrDelegates#3](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#3)]  
   
 4.  Create a procedure named `DelegateTest` that takes a delegate as a parameter.  
   
      This procedure can accept a reference to `AddNumbers` or `SubtractNumbers`, because their signatures match the `MathOperator` signature.  
   
-     [!code-vb[VbVbalrDelegates#4](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_4.vb)]  
+     [!code-vb[VbVbalrDelegates#4](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#4)]  
   
 5.  Create a procedure named `Test` that calls `DelegateTest` once with the delegate for `AddNumbers` as a parameter, and again with the delegate for `SubtractNumbers` as a parameter.  
   
-     [!code-vb[VbVbalrDelegates#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_5.vb)]  
+     [!code-vb[VbVbalrDelegates#5](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#5)]  
   
      When `Test` is called, it first displays the result of `AddNumbers` acting on `5` and `3`, which is 8. Then the result of `SubtractNumbers` acting on `9` and `3` is displayed, which is 6.  
   
 ## See Also  
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
  [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
  [How to: Invoke a Delegate Method](../../../../visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)

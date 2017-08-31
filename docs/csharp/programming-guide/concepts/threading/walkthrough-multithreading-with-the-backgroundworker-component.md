@@ -1,13 +1,13 @@
 ---
-title: "Walkthrough: Multithreading with the BackgroundWorker Component (C#)"
+title: "Walkthrough: Multithreading with the BackgroundWorker Component (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: ff670fbf-a0ac-40c1-ab08-9ed53768f880
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Walkthrough: Multithreading with the BackgroundWorker Component (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This walkthrough demonstrates how to create a multithreaded Windows Forms application that searches a text file for occurrences of a word. It demonstrates:  
   
 -   Defining a class with a method that can be called by the <xref:System.ComponentModel.BackgroundWorker> component.  

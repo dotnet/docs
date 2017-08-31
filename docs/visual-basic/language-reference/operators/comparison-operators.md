@@ -1,13 +1,13 @@
 ---
-title: "Comparison Operators (Visual Basic)"
-
+title: "Comparison Operators (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.<>"
@@ -41,25 +41,13 @@ helpviewer_keywords:
   - "comparison operators, Visual Basicl"
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
 caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Comparison Operators (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The following are the comparison operators defined in Visual Basic.  
   
  `<` operator  
@@ -85,6 +73,7 @@ The following are the comparison operators defined in Visual Basic.
 ## Syntax  
   
 ```  
+  
       result = expression1 comparisonoperator expression2  
 result = object1 [Is | IsNot] object2  
 result = string Like pattern  
@@ -168,7 +157,7 @@ result = string Like pattern
 ## Example  
  The following example shows various uses of relational comparison operators, which you use to compare expressions. Relational comparison operators return a `Boolean` result that represents whether or not the stated expression evaluates to `True`. When you apply the `>` and `<` operators to strings, the comparison is made using the normal alphabetical sorting order of the strings. This order can be dependent on your locale setting. Whether the sort is case-sensitive or not depends on the [Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md) setting.  
   
- [!code-vb[VbVbalrOperators#1](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#1)]  
   
  In the preceding example, the first comparison returns `False` and the remaining comparisons return `True`.  
   

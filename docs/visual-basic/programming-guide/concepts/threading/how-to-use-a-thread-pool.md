@@ -1,8 +1,8 @@
 ---
-title: "How to: Use a Thread Pool (Visual Basic)"
+title: "How to: Use a Thread Pool (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 90a0bb24-39f8-41f5-a217-b52a7d4fed0b
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Use a Thread Pool (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 *Thread pooling* is a form of multithreading in which tasks are added to a queue and automatically started when threads are created. For more information, see [Thread Pooling (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md).  
   
  The following example uses the .NET Framework thread pool to calculate the `Fibonacci` result for ten numbers between 20 and 40. Each `Fibonacci` result is represented by the `Fibonacci` class, which provides a method named `ThreadPoolCallback` that performs the calculation. An object that represents each `Fibonacci` value is created, and the `ThreadPoolCallback` method is passed to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>, which assigns an available thread in the pool to execute the method.  
@@ -156,5 +153,5 @@ Fibonacci(27) = 196418
  <xref:System.Threading.ManualResetEvent>   
  [Thread Pooling (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)   
  [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)   
- @System.Threading.Monitor   
- [Security](../../../../standard/security/index.md)
+ [Monitors](../Topic/Monitors.md)   
+ [Security](../Topic/Security%20in%20the%20.NET%20Framework.md)

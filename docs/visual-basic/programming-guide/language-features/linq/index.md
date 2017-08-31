@@ -1,13 +1,13 @@
 ---
-title: "LINQ in Visual Basic"
+title: "LINQ in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,31 +15,18 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # LINQ in Visual Basic
-This section contains overviews, examples, and background information that will help you understand and use Visual Basic and [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)].  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+This section contains overviews, examples, and background information that will help you understand and use Visual Basic and [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)].  
   
 ## In This Section  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- Provides an introduction to [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] providers, operators, query structure, and language features.  
+ Provides an introduction to [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] providers, operators, query structure, and language features.  
   
  [How to: Query a Database](../../../../visual-basic/programming-guide/language-features/linq/how-to-query-a-database-by-using-linq.md)  
  Provides an example of how to connect to a SQL Server database and execute a query by using LINQ.  
@@ -69,7 +56,9 @@ This section contains overviews, examples, and background information that will 
  Provides an example of how to return the results of a LINQ query as a specific type instead of as an anonymous type.  
   
 ## See Also  
- [LINQ (Language-Integrated Query)](../../../../visual-basic/programming-guide/concepts/linq/index.md)   
+ [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
- [LINQ to DataSet Overview](https://msdn.microsoft.com/library/bb399399)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)
+ [LINQ to DataSet Overview](../Topic/LINQ%20to%20DataSet%20Overview.md)   
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [LINQ Samples](../Topic/LINQ%20Samples.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)

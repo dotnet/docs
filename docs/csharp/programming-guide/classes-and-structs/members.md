@@ -1,13 +1,13 @@
 ---
-title: "Members (C# Programming Guide)"
-
+title: "Members (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,24 +18,12 @@ ms.assetid: 4a30a4ab-d690-4936-9124-92ce9448665a
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Members (C# Programming Guide)
-Classes and structs have members that represent their data and behavior. A class's members include all the members declared in the class, along with all members (except constructors and finalizers) declared in all classes in its inheritance hierarchy. Private members in base classes are inherited but are not accessible from derived classes.  
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
+Classes and structs have members that represent their data and behavior. A class's members include all the members declared in the class, along with all members (except constructors and destructors) declared in all classes in its inheritance hierarchy. Private members in base classes are inherited but are not accessible from derived classes.  
   
  The following table lists the kinds of members a class or struct may contain:  
   
@@ -49,7 +37,7 @@ Classes and structs have members that represent their data and behavior. A class
 |[Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)|Overloaded operators are considered class members. When you overload an operator, you define it as a public static method in a class. The predefined operators (`+`, `*`, `<`, and so on) are not considered members. For more information, see [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md).|  
 |[Indexers](../../../csharp/programming-guide/indexers/index.md)|Indexers enable an object to be indexed in a manner similar to arrays.|  
 |[Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)|Constructors are methods that are called when the object is first created. They are often used to initialize the data of an object.|  
-|[Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)|Finalizers are used very rarely in C#. They are methods that are called by the runtime execution engine when the object is about to be removed from memory. They are generally used to make sure that any resources which must be released are handled appropriately.|  
+|[Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)|Destructors are used very rarely in C#. They are methods that are called by the runtime execution engine when the object is about to be removed from memory. They are generally used to make sure that any resources which must be released are handled appropriately.|  
 |[Nested Types](../../../csharp/programming-guide/classes-and-structs/nested-types.md)|Nested types are types declared within another type. Nested types are often used to describe objects that are used only by the types that contain them.|  
   
 ## See Also  
@@ -57,7 +45,7 @@ Classes and structs have members that represent their data and behavior. A class
  [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)   
  [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)   
  [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)   
  [Indexers](../../../csharp/programming-guide/indexers/index.md)   

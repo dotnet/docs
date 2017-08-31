@@ -1,13 +1,13 @@
 ---
-title: "COM Interop (Visual Basic)"
+title: "COM Interop (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,26 +16,14 @@ helpviewer_keywords:
   - "COM interop, in Visual Basic"
 ms.assetid: 3ffd1bdf-1b8d-47f5-87eb-75b659f64294
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # COM Interop (Visual Basic)
-The Component Object Model (COM) allows an object to expose its functionality to other components and to host applications. Most of today's software includes COM objects. Although .NET assemblies are the best choice for new applications, you may at times need to employ COM objects. This section covers some of the issues associated with creating and using COM objects with [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The Component Object Model (COM) allows an object to expose its functionality to other components and to host applications. Most of today's software includes COM objects. Although .NET assemblies are the best choice for new applications, you may at times need to employ COM objects. This section covers some of the issues associated with creating and using COM objects with [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
   
 ## In This Section  
  [Introduction to COM Interop](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)  
@@ -45,7 +33,7 @@ The Component Object Model (COM) allows an object to expose its functionality to
  Covers how to add references to COM objects that have type libraries.  
   
  [How to: Work with ActiveX Controls](../../../visual-basic/programming-guide/com-interop/how-to-work-with-activex-controls.md)  
- Demonstrates how to use existing ActiveX controls to add features to the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Toolbox.  
+ Demonstrates how to use existing ActiveX controls to add features to the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Toolbox.  
   
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
  Steps you through the process of calling the APIs that are part of the Windows operating system.  
@@ -69,14 +57,14 @@ The Component Object Model (COM) allows an object to expose its functionality to
  Describes using existing COM objects as the basis for new objects.  
   
 ## Related Sections  
- [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)  
+ [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)  
  Describes interoperability services provided by the common language runtime.  
   
- [Exposing COM Components to the .NET Framework](http://msdn.microsoft.com/library/e78b14f1-e487-43cd-9c6d-1a07483f1730)  
+ [Exposing COM Components to the .NET Framework](../Topic/Exposing%20COM%20Components%20to%20the%20.NET%20Framework.md)  
  Describes the process of calling COM types through COM interop.  
   
- [Exposing .NET Framework Components to COM](http://msdn.microsoft.com/library/e42a65f7-1e61-411f-b09a-aca1bbce24c6)  
+ [Exposing .NET Framework Components to COM](../Topic/Exposing%20.NET%20Framework%20Components%20to%20COM.md)  
  Describes the preparation and use of managed types from COM.  
   
- [Applying Interop Attributes](https://msdn.microsoft.com/library/d4w8x20h)  
+ [Applying Interop Attributes](../Topic/Applying%20Interop%20Attributes.md)  
  Covers attributes you can use when working with unmanaged code.

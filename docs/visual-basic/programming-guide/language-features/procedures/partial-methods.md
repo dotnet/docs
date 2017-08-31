@@ -1,13 +1,13 @@
 ---
-title: "Partial Methods (Visual Basic)"
+title: "Partial Methods (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.PartialMethod"
@@ -22,25 +22,13 @@ helpviewer_keywords:
   - "inserting custom logic into code"
 ms.assetid: 74b3368b-b348-44a0-a326-7d7dc646f4e9
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Partial Methods (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Partial methods enable developers to insert custom logic into code. Typically, the code is part of a designer-generated class. Partial methods are defined in a partial class that is created by a code generator, and they are commonly used to provide notification that something has been changed. They enable the developer to specify custom behavior in response to the change.  
   
  The designer of the code generator defines only the method signature and one or more calls to the method. Developers can then provide implementations for the method if they want to customize the behavior of the generated code. When no implementation is provided, calls to the method are removed by the compiler, resulting in no additional performance overhead.  
@@ -78,15 +66,15 @@ End Sub
 ## Example  
  In a file named Product.Designer.vb, define a `Product` class that has a `Quantity` property.  
   
- [!code-vb[VbVbalrPartialMeths#4](./codesnippet/VisualBasic/partial-methods_1.vb)]  
+ [!code-vb[VbVbalrPartialMeths#4](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrPartialMeths/VB/Class1.vb#4)]  
   
  In a file named Product.vb, provide an implementation for `QuantityChanged`.  
   
- [!code-vb[VbVbalrPartialMeths#5](./codesnippet/VisualBasic/partial-methods_2.vb)]  
+ [!code-vb[VbVbalrPartialMeths#5](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrPartialMeths/VB/Class1.vb#5)]  
   
  Finally, in the Main method of a project, declare a `Product` instance and provide an initial value for its `Quantity` property.  
   
- [!code-vb[VbVbalrPartialMeths#6](./codesnippet/VisualBasic/partial-methods_3.vb)]  
+ [!code-vb[VbVbalrPartialMeths#6](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrPartialMeths/VB/Class1.vb#6)]  
   
  A message box should appear that displays this message:  
   
@@ -94,8 +82,8 @@ End Sub
   
 ## See Also  
  [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Optional Parameters](./optional-parameters.md)   
+ [Sub Procedures](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)   
+ [Optional Parameters](../../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
  [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)   
- [Code Generation in LINQ to SQL](https://msdn.microsoft.com/library/bb399400)   
- [Adding Business Logic By Using Partial Methods](https://msdn.microsoft.com/library/bb546176)
+ [Code Generation in LINQ to SQL](../Topic/Code%20Generation%20in%20LINQ%20to%20SQL.md)   
+ [Adding Business Logic By Using Partial Methods](../Topic/Adding%20Business%20Logic%20By%20Using%20Partial%20Methods.md)

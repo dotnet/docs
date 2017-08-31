@@ -1,13 +1,13 @@
 ---
-title: "CType Function (Visual Basic)"
-
+title: "CType Function (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.CType"
@@ -20,26 +20,13 @@ helpviewer_keywords:
   - "conversions, expression"
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # CType Function (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Returns the result of explicitly converting an expression to a specified data type, object, structure, class, or interface.  
   
 ## Syntax  
@@ -80,7 +67,7 @@ CType(expression, typename)
 ## Example  
  The following example uses the `CType` function to convert an expression to the `Single` data type.  
   
- [!code-vb[VbVbalrFunctions#24](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/ctype-function_1.vb)]  
+ [!code-vb[VbVbalrFunctions#24](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#24)]  
   
  For additional examples, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).  
   
@@ -91,4 +78,4 @@ CType(expression, typename)
  [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)   
  [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)   
  [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)   
- [Type Conversion in the .NET Framework](http://msdn.microsoft.com/library/ba36154f-064c-47d3-9f05-72f93a7ca96d)
+ [Type Conversion in the .NET Framework](../Topic/Type%20Conversion%20in%20the%20.NET%20Framework.md)

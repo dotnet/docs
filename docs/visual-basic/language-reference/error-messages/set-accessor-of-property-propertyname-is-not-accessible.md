@@ -1,13 +1,13 @@
 ---
-title: "&#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible"
-
+title: "&#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc31102"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC31102"
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A statement attempts to store the value of a property when it does not have access to the property's `Set` procedure.  
   
  If the [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md) is marked with a more restrictive access level than its [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md), an attempt to set the property value could fail in the following cases:  
@@ -49,7 +37,7 @@ A statement attempts to store the value of a property when it does not have acce
   
  **Error ID:** BC31102  
   
-## To correct this error  
+### To correct this error  
   
 -   If you have control of the source code defining the property, consider declaring the `Set` procedure with the same access level as the property itself.  
   

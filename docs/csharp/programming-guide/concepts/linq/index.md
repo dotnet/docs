@@ -1,13 +1,13 @@
 ---
-title: "Language-Integrated Query (LINQ) (C#)"
+title: "Language-Integrated Query (LINQ) (C#) | Microsoft Docs"
 ms.custom: ""
-ms.date: 02-02-2017
-ms.prod: .net
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,54 +15,34 @@ ms.assetid: 19dd1782-905b-4a9d-a3e9-618453037fa2
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
+# Language-Integrated Query (LINQ) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
 
-# Language Integrated Query (LINQ)
-
-Language-Integrated Query (LINQ) is the name for a set of technologies based on the integration of query capabilities directly into the C# language. Traditionally, queries against data are expressed as simple strings without type checking at compile time or IntelliSense support. Furthermore, you have to learn a different query language for each type of data source: SQL databases, XML documents, various Web services, and so on. With LINQ, a query is a first-class language construct, just like classes, methods, events.
-
-For a developer who writes queries, the most visible "language-integrated" part of LINQ is the query expression. Query expressions are written in a declarative *query syntax*. By using query syntax, you can perform filtering, ordering, and grouping operations on data sources with a minimum of code. You use the same basic query expression patterns to query and transform data in SQL databases, ADO .NET Datasets, XML documents and streams, and .NET collections.
-
-The following example shows the complete query operation. The complete operation includes creating a data source, defining the query expression, and executing the query in a `foreach` statement.
-
-[!code-cs[csProgGuideLINQ#11](../../../../../samples/snippets/csharp/concepts/linq/index_1.cs)]
-
-## Query expression overview
-
--   Query expressions can be used to query and to transform data from any LINQ-enabled data source. For example, a single query can retrieve data from a SQL database, and produce an XML stream as output.  
+LINQ is a set of features that extends powerful query capabilities to the language syntax of C#. LINQ introduces standard, easily-learned patterns for querying and updating data, and the technology can be extended to support potentially any kind of data store.  The .NET Framework includes LINQ provider assemblies that enable the use of LINQ with .NET Framework collections, SQL Server databases, ADO.NET Datasets, and XML documents.  
   
--   Query expressions are easy to master because they use many familiar C# language constructs.  
+## In This Section  
+ [Introduction to LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq.md)  
+ Provides a general introduction to the kinds of applications that you can write and the kinds of problems that you can solve with LINQ queries.  
   
--   The variables in a query expression are all strongly typed, although in many cases you do not have to provide the type explicitly because the compiler can infer it. For more information, see [Type relationships in LINQ query operations](type-relationships-in-linq-query-operations.md).  
+ [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+ Describes the basic facts you should know in order to understand the C# documentation and samples.  
   
--   A query is not executed until you iterate over the query variable, for example, in a `foreach` statement. For more information, see [Introduction to LINQ queries](introduction-to-linq-queries.md).  
+ [Visual Studio IDE and Tools Support for LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md)  
+ Describes Visual Studio's Object Relational Designer, debugger support for queries, and other IDE features related to LINQ.  
   
--   At compile time, query expressions are converted to Standard Query Operator method calls according to the rules set forth in the C# specification. Any query that can be expressed by using query syntax can also be expressed by using method syntax. However, in most cases query syntax is more readable and concise. For more information, see [C# language specification](../../../language-reference/language-specification/index.md) and [Standard query operators overview](standard-query-operators-overview.md).  
+ [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+ Provides an introduction to the standard query operators. It also provides links to topics that have more information about each type of query operation.  
   
--   As a rule when you write LINQ queries, we recommend that you use query syntax whenever possible and method syntax whenever necessary. There is no semantic or performance difference between the two different forms. Query expressions are often more readable than equivalent expressions written in method syntax.  
+ [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
+ Includes links to topics that explain how to use LINQ to Objects to access in-memory data structures,  
   
--   Some query operations, such as <xref:System.Linq.Enumerable.Count%2A> or <xref:System.Linq.Enumerable.Max%2A>, have no equivalent query expression clause and must therefore be expressed as a method call. Method syntax can be combined with query syntax in various ways. For more information, see [Query syntax and method syntax in LINQ](query-syntax-and-method-syntax-in-linq.md).  
+ [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
+ Includes links to topics that explain how to use LINQ to XML, which provides the in-memory document modification capabilities of the Document Object Model (DOM), and supports LINQ query expressions.  
   
--   Query expressions can be compiled to expression trees or to delegates, depending on the type that the query is applied to. <xref:System.Collections.Generic.IEnumerable%601> queries are compiled to delegates. <xref:System.Linq.IQueryable> and <xref:System.Linq.IQueryable%601> queries are compiled to expression trees. For more information, see [Expression trees](../../../expression-trees.md).  
-
-## Next steps
-
-To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](../../../linq/query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:   
--   XML documents: [LINQ to XML](linq-to-xml.md)  
+ [LINQ to ADO.NET (Portal Page)](../../../../csharp/programming-guide/concepts/linq/linq-to-ado-net-portal-page.md)  
+ Provides an entry point for documentation about LINQ to DataSet, LINQ to SQL, and LINQ to Entities. LINQ to DataSet enables you to build richer query capabilities into <xref:System.Data.DataSet> by using the same query functionality that is available for other data sources. LINQ to SQL provides a run-time infrastructure for managing relational data as objects. LINQ to Entities enables developers to write queries against the Entity Framework conceptual model by using C#.  
   
--   ADO.NET Entity Framework: [LINQ to entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md)  
-  
--   .NET collections, files, strings and so on: [LINQ to objects](linq-to-objects.md)
-
-To gain a deeper understanding of LINQ in general, see [LINQ in C#](../../../linq/linq-in-csharp.md).
-
-To start working with LINQ in C#, see the tutorial [Working with LINQ](../../../tutorials/working-with-linq.md).
-
-
-
+ [Enabling a Data Source for LINQ Querying](../../../../csharp/programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying.md)  
+ Provides an introduction to custom LINQ providers, LINQ expression trees, and other ways to extend LINQ.

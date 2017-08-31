@@ -1,13 +1,13 @@
 ---
-title: "&lt;include&gt; (C# Programming Guide)"
-
+title: "&lt;include&gt; (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "include"
@@ -21,26 +21,14 @@ ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &lt;include&gt; (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 ## Syntax  
   
-```xml  
+```  
 <include file='filename' path='tagpath[@name="id"]' />  
 ```  
   
@@ -65,11 +53,11 @@ translation.priority.ht:
 ## Example  
  This is a multifile example. The first file, which uses \<include>, is listed below:  
   
- [!code-cs[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#5)]  
   
  The second file, xml_include_tag.doc, contains the following documentation comments:  
   
-```xml  
+```  
 <MyDocs>  
   
 <MyMembers name="test">  
@@ -88,9 +76,9 @@ The summary for this other type.
 ```  
   
 ## Program Output  
- The following output is generated when you compile the Test and Test2 classes with the following command line: `/doc:DocFileName.xml.` In Visual Studio, you specify the XML doc comments option in the Build pane of the Project Designer. When the C# compiler sees the \<include> tag, it will search for documentation comments in xml_include_tag.doc instead of the current source file. The compiler then generates DocFileName.xml, and this is the file that is consumed by documentation tools such as [Sandcastle](https://github.com/EWSoftware/SHFB) to produce the final documentation.  
+ The following output is generated when you compile the Test and Test2 classes with the following command line: `/doc:DocFileName.xml.` In Visual Studio, you specify the XML doc comments option in the Build pane of the Project Designer. When the C# compiler sees the \<inclue> tag, it will search for documentation comments in xml_include_tag.doc instead of the current source file. The compiler then generates DocFileName.xml, and this is the file that is consumed by documentation tools such as [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) to produce the final documentation.  
   
-```xml  
+```  
 <?xml version="1.0"?>   
 <doc>   
     <assembly>   

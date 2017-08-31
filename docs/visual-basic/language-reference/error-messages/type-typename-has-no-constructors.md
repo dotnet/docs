@@ -1,13 +1,13 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; has no constructors"
-
+title: "Type &#39;&lt;typename&gt;&#39; has no constructors | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30251"
@@ -18,39 +18,27 @@ helpviewer_keywords:
   - "BC30251"
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Type &#39;&lt;typename&gt;&#39; has no constructors
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A type does not support a call to `Sub New()`. One possible cause is a corrupted compiler or binary file.  
   
  **Error ID:** BC30251  
   
-## To correct this error  
+### To correct this error  
   
 1.  If the type is in a different project or in a referenced file, reinstall the project or file.  
   
 2.  If the type is in the same project, recompile the assembly containing the type.  
   
-3.  If the error recurs, reinstall the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler.  
+3.  If the error recurs, reinstall the [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] compiler.  
   
 4.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
- [Talk to Us](/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visual-studio/ide/talk-to-us)

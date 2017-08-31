@@ -1,13 +1,13 @@
 ---
-title: "Handles Clause (Visual Basic)"
-
+title: "Handles Clause (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Handles"
@@ -18,30 +18,19 @@ helpviewer_keywords:
   - "Handles keyword"
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Handles Clause (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Declares that a procedure handles a specified event.  
   
 ## Syntax  
   
 ```  
+  
 proceduredeclaration Handles eventlist  
 ```  
   
@@ -60,21 +49,21 @@ proceduredeclaration Handles eventlist
  For custom events, the application invokes the event's `AddHandler` accessor when it adds the procedure as an event handler. For more information on custom events, see [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
   
 ## Example  
- [!code-vb[VbVbalrEvents#2](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_1.vb)]  
+ [!code-vb[VbVbalrEvents#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#2)]  
   
  The following example demonstrates how a derived class can use the `Handles` statement to handle an event from a base class.  
   
- [!code-vb[VbVbalrEvents#3](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_2.vb)]  
+ [!code-vb[VbVbalrEvents#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#3)]  
   
 ## Example  
  The following example contains two button event handlers for a **WPF Application** project.  
   
- [!code-vb[VbVbalrEvents#41](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_3.vb)]  
+ [!code-vb[VbVbalrEvents#41](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/class3.vb#41)]  
   
 ## Example  
  The following example is equivalent to the previous example. The `eventlist` in the `Handles` clause contains the events for both buttons.  
   
- [!code-vb[VbVbalrEvents#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_4.vb)]  
+ [!code-vb[VbVbalrEvents#42](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/class3.vb#42)]  
   
 ## See Also  
  [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)   
@@ -82,4 +71,4 @@ proceduredeclaration Handles eventlist
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/events.md)

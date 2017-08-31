@@ -1,13 +1,13 @@
 ---
-title: "Differences Between Properties and Variables in Visual Basic"
+title: "Differences Between Properties and Variables in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -25,25 +25,13 @@ helpviewer_keywords:
   - "properties [Visual Basic], and variables"
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Differences Between Properties and Variables in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Variables and properties both represent values that you can access. However, there are differences in storage and implementation.  
   
 ## Variables  
@@ -67,13 +55,13 @@ Variables and properties both represent values that you can access. However, the
  <sup>1</sup> Unlike a variable, the value of a property might not correspond directly to a single item of storage. The storage might be split into pieces for convenience or security, or the value might be stored in an encrypted form. In these cases the `Get` procedure would assemble the pieces or decrypt the stored value, and the `Set` procedure would encrypt the new value or split it into the constituent storage. A property value might be ephemeral, like time of day, in which case the `Get` procedure would calculate it on the fly each time you access the property.  
   
 ## See Also  
- [Property Procedures](./property-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
+ [Property Procedures](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+ [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
  [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)   
  [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)   
- [How to: Create a Property](./how-to-create-a-property.md)   
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)   
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)   
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)   
- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)   
- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)
+ [How to: Create a Property](../../../../visual-basic/programming-guide/language-features/procedures/how-to-create-a-property.md)   
+ [How to: Declare a Property with Mixed Access Levels](../../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)   
+ [How to: Call a Property Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-call-a-property-procedure.md)   
+ [How to: Declare and Call a Default Property in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)   
+ [How to: Put a Value in a Property](../../../../visual-basic/programming-guide/language-features/procedures/how-to-put-a-value-in-a-property.md)   
+ [How to: Get a Value from a Property](../../../../visual-basic/programming-guide/language-features/procedures/how-to-get-a-value-from-a-property.md)

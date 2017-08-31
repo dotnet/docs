@@ -1,13 +1,13 @@
 ---
-title: "Statement is not valid inside a method-multiline lambda"
-
+title: "Statement is not valid inside a method-multiline lambda | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30024"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC30024"
 ms.assetid: 758e7a8f-429b-42c1-9a78-778e5b480e04
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Statement is not valid inside a method/multiline lambda
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The statement is not valid within a `Sub`, `Function`, property `Get`, or property `Set` procedure. Some statements can be placed at the module or class level. Others, such as `Option Strict`, must be at namespace level and precede all other declarations.  
   
  **Error ID:** BC30024  
   
-## To correct this error  
+### To correct this error  
   
 -   Remove the statement from the procedure.  
   

@@ -1,8 +1,8 @@
 ---
-title: "Sample XML File: Customers and Orders (LINQ to XML)"
+title: "Sample XML File: Customers and Orders (LINQ to XML)1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,17 +13,14 @@ dev_langs:
   - "VB"
 ms.assetid: ed319807-c432-4f8e-9694-dad4c7648310
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Sample XML File: Customers and Orders (LINQ to XML)
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file contains customers and orders.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This file contains customers and orders.  
   
  The topic [Sample XSD File: Customers and Orders](../../../../visual-basic/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders.md) contains an XSD that can be used to validate this document. It uses the `xs:key` and `xs:keyref` features of XSD to establish that the `CustomerID` attribute of the `Customer` element is a key, and to establish a relationship between the `CustomerID` element in each `Order` element and the `CustomerID` attribute in each `Customer` element.  
   

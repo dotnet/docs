@@ -1,13 +1,13 @@
 ---
-title: "Continue Statement (Visual Basic)"
-
+title: "Continue Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.continue"
@@ -18,31 +18,19 @@ helpviewer_keywords:
   - "loops, transferring to next iteration"
 ms.assetid: 3ad00103-358b-4af3-a3a8-1b9ea0e995d3
 caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Continue Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Transfers control immediately to the next iteration of a loop.  
   
 ## Syntax  
   
 ```  
-Continue { Do | For | While }  
+Continue { Do | For | While }  
 ```  
   
 ## Remarks  
@@ -59,7 +47,7 @@ Continue { Do | For | While }
 ## Example  
  The following code example uses the `Continue While` statement to skip to the next column of an array if a divisor is zero. The `Continue While` is inside a `For` loop. It transfers to the `While col < lastcol` statement, which is the next iteration of the innermost `While` loop that contains the `For` loop.  
   
- [!code-vb[VbVbalrStatements#14](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/continue-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#14](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#14)]  
   
 ## See Also  
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   

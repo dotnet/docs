@@ -1,13 +1,13 @@
 ---
-title: "How to: Generate XML from CSV Files (C#)"
+title: "How to: Generate XML from CSV Files (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,13 +15,15 @@ ms.assetid: 57b9ccde-f983-4a21-ae61-70ecede30307
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Generate XML from CSV Files (C#)
-This example shows how to use [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+This example shows how to use [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] and [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.  
   
 ## Example  
- The following code performs a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query on an array of strings.  
+ The following code performs a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] query on an array of strings.  
   
  The query uses the `let` clause to split each string into an array of fields.  
   

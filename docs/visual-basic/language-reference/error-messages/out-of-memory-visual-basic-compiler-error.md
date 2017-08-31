@@ -1,13 +1,13 @@
 ---
-title: "Out of memory (Visual Basic Compiler Error)"
-
+title: "Out of memory (Visual Basic Compiler Error) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc2004"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC2004"
 ms.assetid: 6bc0939c-e279-4875-a91c-f4076860b5b9
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Out of memory (Visual Basic Compiler Error)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 More memory was required than is available.  
   
  **Error ID:** BC2004  
   
-## To correct this error  
+### To correct this error  
   
 -   Close unnecessary applications, documents and source files.  
   

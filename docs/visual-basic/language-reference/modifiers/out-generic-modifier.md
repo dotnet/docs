@@ -1,9 +1,13 @@
 ---
-title: "Out (Generic Modifier) (Visual Basic)"
+title: "Out (Generic Modifier) (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.VarianceOut"
@@ -14,30 +18,19 @@ helpviewer_keywords:
   - "covariance, Out keyword [Visual Basic]"
 ms.assetid: c4418369-1518-4a46-9a1e-054c61038eca
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Out (Generic Modifier) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 For generic type parameters, the `Out` keyword specifies that the type is covariant.  
   
 ## Remarks  
  Covariance enables you to use a more derived type than that specified by the generic parameter. This allows for implicit conversion of classes that implement variant interfaces and implicit conversion of delegate types.  
   
- For more information, see [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md).  
+ For more information, see [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## Rules  
  You can use the `Out` keyword in generic interfaces and delegates.  
@@ -47,7 +40,7 @@ For generic type parameters, the `Out` keyword specifies that the type is covari
 -   The type parameter is used only as a return type of interface methods and not used as a type of method arguments.  
   
     > [!NOTE]
-    >  There is one exception to this rule. If in a covariant interface you have a contravariant generic delegate as a method parameter, you can use the covariant type as a generic type parameter for this delegate. For more information about covariant and contravariant generic delegates, see [Variance in Delegates](http://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca) and [Using Variance for Func and Action Generic Delegates](http://msdn.microsoft.com/library/e69c4f39-09aa-4c6d-a752-08cc767d8290).  
+    >  There is one exception to this rule. If in a covariant interface you have a contravariant generic delegate as a method parameter, you can use the covariant type as a generic type parameter for this delegate. For more information about covariant and contravariant generic delegates, see [Variance in Delegates](../Topic/Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md) and [Using Variance for Func and Action Generic Delegates](../Topic/Using%20Variance%20for%20Func%20and%20Action%20Generic%20Delegates%20\(C%23%20and%20Visual%20Basic\).md).  
   
 -   The type parameter is not used as a generic constraint for the interface methods.  
   
@@ -65,13 +58,13 @@ For generic type parameters, the `Out` keyword specifies that the type is covari
 ## Example  
  The following example shows how to declare, extend, and implement a covariant generic interface. It also shows how to use implicit conversion for classes that implement a covariant interface.  
   
- [!code-vb[vbVarianceKeywords#3](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_1.vb)]  
+ [!code-vb[vbVarianceKeywords#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#3)]  
   
 ## Example  
  The following example shows how to declare, instantiate, and invoke a covariant generic delegate. It also shows how you can use implicit conversion for delegate types.  
   
- [!code-vb[vbVarianceKeywords#4](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_2.vb)]  
+ [!code-vb[vbVarianceKeywords#4](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#4)]  
   
 ## See Also  
- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)   
+ [Variance in Generic Interfaces](../Topic/Variance%20in%20Generic%20Interfaces%20\(C%23%20and%20Visual%20Basic\).md)   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)

@@ -1,13 +1,13 @@
 ---
-title: "&lt;summary&gt; (C# Programming Guide)"
-
+title: "&lt;summary&gt; (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "<summary>"
@@ -21,27 +21,14 @@ ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # &lt;summary&gt; (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 ## Syntax  
   
-```xml  
+```  
 <summary>description</summary>  
 ```  
   
@@ -50,18 +37,18 @@ translation.priority.mt:
  A summary of the object.  
   
 ## Remarks  
- The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](../../../csharp/programming-guide/xmldoc/remarks.md) to add supplemental information to a type description. Use the [cref Attribute](../../../csharp/programming-guide/xmldoc/cref-attribute.md) to enable documentation tools such as [Sandcastle](https://github.com/EWSoftware/SHFB) to create internal hyperlinks to documentation pages for code elements.  
+ The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](../../../csharp/programming-guide/xmldoc/remarks.md) to add supplemental information to a type description. Use the [cref Attribute](../../../csharp/programming-guide/xmldoc/cref-attribute.md) to enable documentation tools such as [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) to create internal hyperlinks to documentation pages for code elements.  
   
  The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser Window.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](https://github.com/EWSoftware/SHFB).  
+ Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061).  
   
 ## Example  
- [!code-cs[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#12](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#12)]  
   
  The previous example produces the following XML file.  
   
-```xml  
+```  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  
@@ -87,11 +74,11 @@ translation.priority.mt:
 ## Example  
  The following example shows how to make a `cref` reference to a generic type.  
   
- [!code-cs[csProgGuideDocComments#11](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_2.cs)]  
+ [!code-csharp[csProgGuideDocComments#11](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#11)]  
   
  The previous example produces the following XML file.  
   
-```xml  
+```  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  
@@ -113,6 +100,7 @@ translation.priority.mt:
         </member>  
     </members>  
 </doc>  
+  
 ```  
   
 ## See Also  

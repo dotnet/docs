@@ -1,13 +1,13 @@
 ---
-title: "How to: Catch Parsing Errors (C#)"
+title: "How to: Catch Parsing Errors (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,17 +15,14 @@ ms.assetid: bfb612d4-5605-48ef-8c93-915cf9d5dcfb
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Catch Parsing Errors (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to detect badly formed or invalid XML.  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is implemented using <xref:System.Xml.XmlReader>. If badly formed or invalid XML is passed to [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], the underlying <xref:System.Xml.XmlReader> class will throw an exception. The various methods that parse XML, such as <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=fullName>, do not catch the exception; the exception can then be caught by your application.  
+ [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] is implemented using <xref:System.Xml.XmlReader>. If badly formed or invalid XML is passed to [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)], the underlying <xref:System.Xml.XmlReader> class will throw an exception. The various methods that parse XML, such as <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=fullName>, do not catch the exception; the exception can then be caught by your application.  
   
 ## Example  
  The following code tries to parse invalid XML:  

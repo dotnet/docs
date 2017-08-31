@@ -1,41 +1,26 @@
 ---
-title: "Could not obtain memory information due to internal error"
-
+title: "Could not obtain memory information due to internal error | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrDiagnosticInfo_Memory"
 ms.assetid: 1ba8f774-5858-438e-914e-99fddc9e5e7e
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Could not obtain memory information due to internal error
 A call to one of the memory-information properties of the `My.Computer.Info` object failed.  
   
-## To correct this error  
+### To correct this error  
   
 -   Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
   

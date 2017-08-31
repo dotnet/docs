@@ -1,13 +1,13 @@
 ---
-title: "Expression Trees (C#)"
+title: "Expression Trees (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,19 +15,16 @@ ms.assetid: 7d0ac21a-6d90-4e2e-8903-528cb78615b7
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Expression Trees (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Expression trees represent code in a tree-like data structure, where each node is an expression, for example, a method call or a binary operation such as `x < y`.  
   
  You can compile and run code represented by expression trees. This enables dynamic modification of executable code, the execution of LINQ queries in various databases, and the creation of dynamic queries. For more information about expression trees in LINQ, see [How to: Use Expression Trees to Build Dynamic Queries (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md).  
   
- Expression trees are also used in the dynamic language runtime (DLR) to provide interoperability between dynamic languages and the .NET Framework and to enable compiler writers to emit expression trees instead of Microsoft intermediate language (MSIL). For more information about the DLR, see [Dynamic Language Runtime Overview](https://msdn.microsoft.com/library/dd233052).  
+ Expression trees are also used in the dynamic language runtime (DLR) to provide interoperability between dynamic languages and the .NET Framework and to enable compiler writers to emit expression trees instead of Microsoft intermediate language (MSIL). For more information about the DLR, see [Dynamic Language Runtime Overview](../Topic/Dynamic%20Language%20Runtime%20Overview.md).  
   
  You can have the C# or Visual Basic compiler create an expression tree for you based on an anonymous lambda expression, or you can create expression trees manually by using the <xref:System.Linq.Expressions> namespace.  
   
@@ -102,9 +99,9 @@ int factorial = Expression.Lambda<Func<int, int>>(block, value).Compile()(5);
   
 Console.WriteLine(factorial);  
 // Prints 120.  
-```
-
-For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010](http://go.microsoft.com/fwlink/p/?LinkId=169513), which also applies to later versions of Visual Studio.
+```  
+  
+ For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010 (or later)](http://go.microsoft.com/fwlink/?LinkId=169513).  
   
 ## Parsing Expression Trees  
  The following code example demonstrates how the expression tree that represents the lambda expression `num => num < 5` can be decomposed into its parts.  
@@ -165,5 +162,5 @@ Console.WriteLine(expr.Compile()(4));
  [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)   
  [How to: Modify Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)   
  [Lambda Expressions](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
- [Dynamic Language Runtime Overview](https://msdn.microsoft.com/library/dd233052)   
+ [Dynamic Language Runtime Overview](../Topic/Dynamic%20Language%20Runtime%20Overview.md)   
  [Programming Concepts (C#)](../../../../csharp/programming-guide/concepts/index.md)

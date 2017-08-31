@@ -1,13 +1,13 @@
 ---
-title: "Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39; (Multiple file references)"
-
+title: "Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39; (Multiple file references) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30961"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC30961"
 ms.assetid: 8be5aa0d-d236-4ac3-aa9c-5044f9f6562b
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39; (Multiple file references)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatch could be due to mixing a file reference to '\<filepath1>' in project '\<projectname1>' with a file reference to '\<filepath2>' in project '\<projectname2>'. If both assemblies are identical, try replacing these references so both references are from the same location.  
   
  In a situation where a project makes more than one file reference to an assembly, the compiler cannot guarantee that one type can be converted to another.  
@@ -47,7 +35,7 @@ Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatc
   
  **Error ID:** BC30961  
   
-## To correct this error  
+### To correct this error  
   
 -   If the referenced assemblies have the same assembly identity, then remove or replace one of the file references so that there is only a single file reference.  
   
@@ -55,5 +43,5 @@ Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatc
   
 ## See Also  
  [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

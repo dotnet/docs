@@ -1,13 +1,13 @@
 ---
-title: "Filtering Data (C#)"
+title: "Filtering Data (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,19 +15,16 @@ ms.assetid: fbaece0d-0f23-47f7-89c5-f3ea8db692b6
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Filtering Data (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Filtering refers to the operation of restricting the result set to contain only those elements that satisfy a specified condition. It is also known as selection.  
   
  The following illustration shows the results of filtering a sequence of characters. The predicate for the filtering operation specifies that the character must be 'A'.  
   
- ![LINQ Filtering Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_filter.png "LINQ_Filter")  
+ ![LINQ Filtering Operation](../../../../csharp/programming-guide/concepts/linq/media/linq-filter.png "LINQ_Filter")  
   
  The standard query operator methods that perform selection are listed in the following section.  
   

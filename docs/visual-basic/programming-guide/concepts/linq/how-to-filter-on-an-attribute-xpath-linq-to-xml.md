@@ -1,8 +1,8 @@
 ---
-title: "How to: Filter on an Attribute (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Filter on an Attribute (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: ffefb9d6-45ec-4677-a396-dd9c2b36298f
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Filter on an Attribute (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how to get the descendant elements with a specified name, and with an attribute with a specified value.  
   
  The XPath expression is:  

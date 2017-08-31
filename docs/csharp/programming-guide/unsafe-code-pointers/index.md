@@ -1,13 +1,13 @@
 ---
-title: "Unsafe Code and Pointers (C# Programming Guide)"
-
+title: "Unsafe Code and Pointers (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -23,24 +23,11 @@ ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Unsafe Code and Pointers (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 To maintain type safety and security, C# does not support pointer arithmetic, by default. However, by using the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword, you can define an unsafe context in which pointers can be used. For more information about pointers, see the topic [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md).  
   
 > [!NOTE]
@@ -57,7 +44,7 @@ To maintain type safety and security, C# does not support pointer arithmetic, by
   
 -   Using unsafe code introduces security and stability risks.  
   
--   In order for C# to compile unsafe code, the application must be compiled with [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md).  
+-   In order for C# to compile unsafe code, the application must be compiled with [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-csharp-compiler-options.md).  
   
 ## Related Sections  
  For more information, see:  
@@ -71,7 +58,7 @@ To maintain type safety and security, C# does not support pointer arithmetic, by
 -   [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

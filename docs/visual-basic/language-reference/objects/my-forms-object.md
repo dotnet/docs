@@ -1,13 +1,13 @@
 ---
-title: "My.Forms Object"
-
+title: "My.Forms Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "My.Forms"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "My.Forms object"
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.Forms Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides properties for accessing an instance of each Windows form declared in the current project.  
   
 ## Remarks  
@@ -68,7 +56,7 @@ Provides properties for accessing an instance of each Windows form declared in t
 ## Example  
  This example changes the title of the default `SidebarMenu` form.  
   
- [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-forms-object_1.vb)]  
+ [!code-vb[VbVbalrMyForms#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyForms/VB/Class1.vb#2)]  
   
  For this example to work, your project must have a form named `SidebarMenu`. For more information, see [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/en-us/3d7bb25f-fd90-47cf-9378-fa0d764686c1).  
   
@@ -78,8 +66,9 @@ Provides properties for accessing an instance of each Windows form declared in t
   
 ### Availability by Project Type  
   
+|||  
+|-|-|  
 |Project type|Available|  
-|---|---|  
 |Windows Application|**Yes**|  
 |Class Library|No|  
 |Console Application|No|  

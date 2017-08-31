@@ -1,41 +1,26 @@
 ---
-title: "Line &lt;number&gt; cannot be parsed using the current FieldWidths"
-
+title: "Line &lt;number&gt; cannot be parsed using the current FieldWidths | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedFixedWidthLine"
 ms.assetid: 84e14245-dfdf-4b62-8b84-e83a31608899
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Line &lt;number&gt; cannot be parsed using the current FieldWidths
 The specified line cannot be parsed because its fields have widths other than those specified.  
   
-## To correct this error  
+### To correct this error  
   
 -   Adjust `FieldWidths` so the line can be parsed correctly, or insert exception-handling code in order to handle the line.  
   

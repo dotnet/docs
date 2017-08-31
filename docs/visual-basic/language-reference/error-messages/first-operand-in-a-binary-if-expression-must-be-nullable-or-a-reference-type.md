@@ -1,13 +1,13 @@
 ---
-title: "First operand in a binary &#39;If&#39; expression must be nullable or a reference type"
-
+title: "First operand in a binary &#39;If&#39; expression must be nullable or a reference type | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc33107"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC33107"
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
 caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # First operand in a binary &#39;If&#39; expression must be nullable or a reference type
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An `If` expression can take either two or three arguments. When you send only two arguments, the first argument must be a reference type or a nullable type. If the first argument evaluates to anything other than `Nothing`, its value is returned. If the first argument evaluates to `Nothing`, the second argument is evaluated and returned.  
   
  For example, the following code contains two `If` expressions, one with three arguments and one with two arguments. The expressions calculate and return the same value.  
@@ -66,14 +54,14 @@ Dim booleanVar = True
   
  **Error ID:** BC33107  
   
-## To correct this error  
+### To correct this error  
   
 -   If you cannot change the code so that the first argument is a nullable type or reference type, consider converting to a three-argument `If` expression, or to an `If...Then...Else` statement.  
   
-```vb  
-Console.WriteLine(If(choice1 < choice2, 1, 2))  
-Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
-```  
+    ```vb  
+    Console.WriteLine(If(choice1 < choice2, 1, 2))  
+    Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
+    ```  
   
 ## See Also  
  [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)   

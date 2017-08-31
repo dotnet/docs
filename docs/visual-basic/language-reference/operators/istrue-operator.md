@@ -1,13 +1,13 @@
 ---
-title: "IsTrue Operator (Visual Basic)"
-
+title: "IsTrue Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.istrue"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "OrElse operator [Visual Basic]"
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # IsTrue Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Determines whether an expression is `True`.  
   
  You cannot call `IsTrue` explicitly in your code, but the Visual Basic compiler can use it to generate code from `OrElse` clauses. If you define a class or structure and then use a variable of that type in an `OrElse` clause, you must define `IsTrue` on that class or structure.  
@@ -64,7 +52,7 @@ Determines whether an expression is `True`.
 ## Example  
  The following code example defines the outline of a structure that includes definitions for the `IsFalse` and `IsTrue` operators.  
   
- [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#28](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#28)]  
   
 ## See Also  
  [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)   

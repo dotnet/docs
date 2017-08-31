@@ -1,13 +1,13 @@
 ---
-title: "Miscellaneous Operators (Visual Basic)"
-
+title: "Miscellaneous Operators (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,26 +16,14 @@ helpviewer_keywords:
   - "operators [Visual Basic], miscellaneous"
 ms.assetid: 2423b3c5-fc3f-479c-bcd2-2c6ebe92814f
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Miscellaneous Operators (Visual Basic)
-The following are miscellaneous operators defined in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The following are miscellaneous operators defined in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
   
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
   

@@ -1,13 +1,13 @@
 ---
-title: "How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)"
-
+title: "How to: Subscribe to and Unsubscribe from Events (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,23 +19,11 @@ ms.assetid: 6319f39f-282c-4173-8a62-6c4657cf51cd
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 You subscribe to an event that is published by another class when you want to write custom code that is called when that event is raised. For example, you might subscribe to a button's `click` event in order to make your application do something useful when the user clicks the button.  
   
 ### To subscribe to events by using the Visual Studio IDE  
@@ -46,9 +34,9 @@ You subscribe to an event that is published by another class when you want to wr
   
 3.  Double-click the event that you want to create, for example the `Load` event.  
   
-     [!INCLUDE[csprcs](~/includes/csprcs-md.md)] creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
+     [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
   
-     [!code-cs[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-subscribe-to-and-unsubscribe-from-events_1.cs)]  
+     [!code-csharp[csProgGuideEvents#11](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#11)]  
   
      The line of code that is required to subscribe to the event is also automatically generated in the `InitializeComponent` method in the Form1.Designer.cs file in your project. It resembles this:  
   
@@ -124,5 +112,5 @@ You subscribe to an event that is published by another class when you want to wr
  [Events](../../../csharp/programming-guide/events/index.md)   
  [event](../../../csharp/language-reference/keywords/event.md)   
  [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)   
- [-= Operator (C# Reference)](../../language-reference/operators/subtraction-assignment-operator.md)   
+ [-= Operator (C# Reference)](../../../csharp/language-reference/operators/operator-csharp-reference.md)   
  [+= Operator](../../../csharp/language-reference/operators/addition-assignment-operator.md)

@@ -1,41 +1,26 @@
 ---
-title: "Specified DLL function not found"
-
+title: "Specified DLL function not found | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID453"
 ms.assetid: c0a308ee-5876-40af-be4b-1979397835df
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Specified DLL function not found
 The dynamic-link library (DLL) in a user library reference was found, but the DLL function specified was not found within the DLL.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Specify a valid ordinal in the function declaration.  
   

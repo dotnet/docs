@@ -1,13 +1,13 @@
 ---
-title: "Object-Oriented Programming (C#)"
-
+title: "Object-Oriented Programming (C#) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Object-Oriented Programming (C#)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 C# provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.  
   
  *Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.  
@@ -43,7 +40,7 @@ C# provides full support for object-oriented programming including encapsulation
   
          [Constructors](#Constructors)  
   
-         [Finalizers](#Finalizers)  
+         [Destructors](#Destructors)  
   
          [Events](#Events)  
   
@@ -197,13 +194,13 @@ public class SampleClass
   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md).  
   
-####  <a name="Finalizers"></a> Finalizers  
- Finalizers are used to destruct instances of classes. In the .NET Framework, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need finalizers to clean up any unmanaged resources that your application creates. There can be only one finalizers for a class.  
+####  <a name="Destructors"></a> Destructors  
+ Destructors are used to destruct instances of classes. In the .NET Framework, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need destructors to clean up any unmanaged resources that your application creates. There can be only one destructor for a class.  
   
- For more information about finalizers and garbage collection in the .NET Framework, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
+ For more information about destructors and garbage collection in the .NET Framework, see [Garbage Collection](../Topic/Garbage%20Collection.md).  
   
 ####  <a name="Events"></a> Events  
- Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../../../standard/events/index.md).  
+ Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
   
 -   To declare an event in a class, use the [event](../../../csharp/language-reference/keywords/event.md) keyword.  
   
@@ -314,7 +311,7 @@ var sampleObject =
  Inheritance enables you to create a new class that reuses, extends, and modifies the behavior that is defined in another class. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. However, all classes in C# implicitly inherit from the <xref:System.Object> class that supports .NET class hierarchy and provides low-level services to all classes.  
   
 > [!NOTE]
->  C# doesn't support multiple inheritance. That is, you can specify only one base class for a derived class.  
+>  C# doesn't support multiple inheritance, i.e. you can specify only one base class for a derived class.  
   
  To inherit from a base class:  
   
@@ -405,7 +402,7 @@ sampleObject.Field = "Sample string";
   
  For more information, see:  
   
--   [Generics](~/docs/standard/generics/index.md)  
+-   [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)  
   
 -   [Generics](../../../csharp/programming-guide/generics/index.md)  
   
@@ -413,7 +410,7 @@ sampleObject.Field = "Sample string";
  A *delegate* is a type that defines a method signature, and can provide a reference to any method with a compatible signature. You can invoke (or call) the method through the delegate. Delegates are used to pass methods as arguments to other methods.  
   
 > [!NOTE]
->  Event handlers are nothing more than methods that are invoked through delegates. For more information about using delegates in event handling, see [Events](../../../standard/events/index.md).  
+>  Event handlers are nothing more than methods that are invoked through delegates. For more information about using delegates in event handling, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
   
  To create a delegate:  
   

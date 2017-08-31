@@ -1,13 +1,13 @@
 ---
-title: "Operator Precedence in Visual Basic"
-
+title: "Operator Precedence in Visual Basic | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -25,25 +25,13 @@ helpviewer_keywords:
   - "order of precedence"
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Operator Precedence in Visual Basic
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 When several operations occur in an expression, each part is evaluated and resolved in a predetermined order called *operator precedence*.  
   
 ## Precedence Rules  
@@ -110,10 +98,10 @@ Dim n3 As Integer = 96 / (8 / 4)
   
  The first expression evaluates the division 96 / 8 (which results in 12) and then the division 12 / 4, which results in three. Because the compiler evaluates the operations for `n1` from left to right, the evaluation is the same when that order is explicitly indicated for `n2`. Both `n1` and `n2` have a result of three. By contrast, `n3` has a result of 48, because the parentheses force the compiler to evaluate 8 / 4 first.  
   
- Because of this behavior, operators are said to be *left associative* in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ Because of this behavior, operators are said to be *left associative* in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
   
 ## Overriding Precedence and Associativity  
- You can use parentheses to force some parts of an expression to be evaluated before others. This can override both the order of precedence and the left associativity. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] always performs operations that are enclosed in parentheses before those outside. However, within parentheses, it maintains ordinary precedence and associativity, unless you use parentheses within the parentheses. The following example illustrates this.  
+ You can use parentheses to force some parts of an expression to be evaluated before others. This can override both the order of precedence and the left associativity. [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] always performs operations that are enclosed in parentheses before those outside. However, within parentheses, it maintains ordinary precedence and associativity, unless you use parentheses within the parentheses. The following example illustrates this.  
   
 ```  
 Dim a, b, c, d, e, f, g As Double  

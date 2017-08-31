@@ -1,13 +1,13 @@
 ---
-title: "My.Computer.Ports Object"
-
+title: "My.Computer.Ports Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "Ports object"
 ms.assetid: 244ede4e-25b7-445b-9fd6-163550cce193
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.Computer.Ports Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides a property and a method for accessing the computer's serial ports.  
   
 ## Remarks  
@@ -50,7 +38,7 @@ Provides a property and a method for accessing the computer's serial ports.
   
  **Class:** <xref:Microsoft.VisualBasic.Devices.Ports>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](../../../includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

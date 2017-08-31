@@ -1,13 +1,13 @@
 ---
-title: "Partial (Visual Basic)"
-
+title: "Partial (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Partial"
@@ -25,25 +25,13 @@ helpviewer_keywords:
   - "type promotion"
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
 caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Partial (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Indicates that a type declaration is a partial definition of the type.  
   
  You can divide the definition of a type among several declarations by using the `Partial` keyword. You can use as many partial declarations as you want, in as many different source files as you want. However, all the declarations must be in the same assembly and the same namespace.  
@@ -54,21 +42,22 @@ Indicates that a type declaration is a partial definition of the type.
 ## Syntax  
   
 ```  
-[ <attrlist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] _  
-Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]  
-    [ Inherits classname ]  
-    [ Implements interfacenames ]  
-    [ variabledeclarations ]  
-    [ proceduredeclarations ]  
-{ End Class | End Structure }  
+[ <attrlist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] _  
+Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]  
+    [ Inherits classname ]  
+    [ Implements interfacenames ]  
+    [ variabledeclarations ]  
+    [ proceduredeclarations ]  
+{ End Class | End Structure }  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`attrlist`|Optional. List of attributes that apply to this type. You must enclose the [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets (`< >`).|  
-|`accessmodifier`|Optional. Specifies what code can access this type. See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Optional. Specifies what code can access this type. See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).|  
 |`MustInherit`|Optional. See [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md).|  
 |`NotInheritable`|Optional. See [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md).|  
@@ -111,7 +100,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
 ## Example  
  The following example splits the definition of class `sampleClass` into two declarations, each of which defines a different `Sub` procedure.  
   
- [!code-vb[VbVbalrKeywords#3](../../../visual-basic/language-reference/codesnippet/VisualBasic/partial_1.vb)]  
+ [!code-vb[VbVbalrKeywords#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#3)]  
   
  The two partial definitions in the preceding example could be in the same source file or in two different source files.  
   

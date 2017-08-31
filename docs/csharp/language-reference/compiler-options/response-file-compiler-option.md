@@ -1,13 +1,18 @@
 ---
-title: "@ (C# Compiler Options)"
+title: "@ (C# Compiler Options) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "@"
 dev_langs: 
+  - "CSharp"
   - "CSharp"
 helpviewer_keywords: 
   - "response files, specifying for compilation [C#]"
@@ -16,22 +21,11 @@ ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # @ (C# Compiler Options)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The @ option lets you specify a file that contains compiler options and source code files to compile.  
   
 ## Syntax  
@@ -59,14 +53,14 @@ The @ option lets you specify a file that contains compiler options and source c
   
  The compiler processes the command options as they are encountered. Therefore, command line arguments can override previously listed options in response files. Conversely, options in a response file will override options listed previously on the command line or in other response files.  
   
- C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) for more information on csc.rsp.  
+ C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-csharp-compiler-options.md) for more information on csc.rsp.  
   
  This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
   
 ## Example  
  The following are a few lines from a sample response file:  
   
-```console  
+```  
 # build the first output file  
 /target:exe /out:MyExe.exe source1.cs source2.cs  
 ```  

@@ -1,13 +1,13 @@
 ---
-title: "Keywords (Visual Basic)"
-
+title: "Keywords (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,27 +21,14 @@ helpviewer_keywords:
   - "Visual Basic, keywords"
 ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
 caps.latest.revision: 43
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Keywords (Visual Basic)
-The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The following tables list all [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] language keywords.  
   
 ## Reserved Keywords  
  The following keywords are *reserved*, which means that you cannot use them as names for programming elements such as variables or procedures. You can bypass this restriction by enclosing the name in brackets (`[``]`). For more information, see "Escaped Names" in [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
@@ -50,7 +37,7 @@ The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] langua
 >  We do not recommend that you use escaped names, because it can make your code hard to read, and it can lead to subtle errors that can be difficult to find.  
   
 |||||  
-|---|---|---|---|  
+|-|-|-|-|  
 |[AddHandler](../../../visual-basic/language-reference/statements/addhandler-statement.md)|[AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md)|[Alias](../../../visual-basic/language-reference/statements/alias-clause.md)|[And](../../../visual-basic/language-reference/operators/and-operator.md)|  
 |[AndAlso](../../../visual-basic/language-reference/operators/andalso-operator.md)|[As](../../../visual-basic/language-reference/statements/as-clause.md)|[Boolean](../../../visual-basic/language-reference/data-types/boolean-data-type.md)|[ByRef](../../../visual-basic/language-reference/modifiers/byref.md)|  
 |[Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md)|[ByVal](../../../visual-basic/language-reference/modifiers/byval.md)|[Call](../../../visual-basic/language-reference/statements/call-statement.md)|[Case](../../../visual-basic/language-reference/statements/select-case-statement.md)|  
@@ -94,19 +81,19 @@ The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] langua
 |[With](../../../visual-basic/language-reference/statements/with-end-with-statement.md)|[WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)|[WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)|[Xor](../../../visual-basic/language-reference/operators/xor-operator.md)|  
 |[#Const](../../../visual-basic/language-reference/directives/const-directive.md)|[#Else](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|[#ElseIf](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|[#End](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|  
 |[#If](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|[=](../../../visual-basic/language-reference/operators/assignment-operator.md)|[&](../../../visual-basic/language-reference/operators/concatenation-operator.md)|[&=](../../../visual-basic/language-reference/operators/and-assignment-operator.md)|  
-|[*](../../../visual-basic/language-reference/operators/multiplication-operator.md)|[*=](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)|[/](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)|[/=](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)|  
-|[\\](../../../visual-basic/language-reference/operators/integer-division-operator.md)|[\\=](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)|[^](../../../visual-basic/language-reference/operators/exponentiation-operator.md)|[^=](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)|  
-|[+](../../../visual-basic/language-reference/operators/addition-operator.md)|[+=](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)|[-](../../../visual-basic/language-reference/operators/subtraction-operator.md)|[-=](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)|  
+|[*](../../../visual-basic/language-reference/operators/multiplication-operator.md)|[*=](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)|[/](../../../visual-basic/language-reference/operators/operator-visual-basic.md)|[/=](../../../visual-basic/language-reference/operators/operator-visual-basic.md)|  
+|[\\](../Topic/-%20Operator%20\(Visual%20Basic\)2.md)|[\\=](../../../visual-basic/language-reference/operators/operator.md)|[^](../../../visual-basic/language-reference/operators/exponentiation-operator.md)|[^=](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)|  
+|[+](../../../visual-basic/language-reference/operators/addition-operator.md)|[+=](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)|[-](../../../visual-basic/language-reference/operators/operator-visual-basic.md)|[-=](../../../visual-basic/language-reference/operators/operator-visual-basic.md)|  
 |[>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)|[>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)|[<<](../../../visual-basic/language-reference/operators/left-shift-operator.md)|[<\<=](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)|  
   
 > [!NOTE]
->  `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
+>  `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
   
 ## Unreserved Keywords  
  The following keywords are not reserved, which means you can use them as names for your programming elements. However, doing this is not recommended, because it can make your code hard to read and can lead to subtle errors that can be difficult to find.  
   
 |||||  
-|---|---|---|---|  
+|-|-|-|-|  
 |[Aggregate](../../../visual-basic/language-reference/queries/aggregate-clause.md)|[Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)|[Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)|[Async](../../../visual-basic/language-reference/modifiers/async.md)|  
 |[Auto](../../../visual-basic/language-reference/modifiers/auto.md)|[Await](../../../visual-basic/language-reference/operators/await-operator.md)|[Binary](../../../visual-basic/language-reference/statements/option-compare-statement.md)|[Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md)|  
 |[Custom](../../../visual-basic/language-reference/statements/event-statement.md)|[Distinct](../../../visual-basic/language-reference/queries/distinct-clause.md)|[Equals](../../../visual-basic/language-reference/queries/equals-clause.md)|[Explicit](../../../visual-basic/language-reference/statements/option-explicit-statement.md)|  

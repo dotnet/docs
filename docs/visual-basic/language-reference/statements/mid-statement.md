@@ -1,13 +1,13 @@
 ---
-title: "Mid Statement"
-
+title: "Mid Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.MidB"
@@ -21,26 +21,13 @@ helpviewer_keywords:
   - "strings [Visual Basic], replacing"
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
 caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Mid Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Replaces a specified number of characters in a `String` variable with characters from another string.  
   
 ## Syntax  
@@ -83,14 +70,14 @@ Mid( _
 ## Example  
  This example uses the `Mid` statement to replace a specified number of characters in a string variable with characters from another string.  
   
- [!code-vb[VbVbalrStrings#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/mid-statement_1.vb)]  
+ [!code-vb[VbVbalrStrings#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#5)]  
   
 ## Requirements  
  **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
   
  **Module:** `Strings`  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](../../../includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Strings.Mid%2A>   

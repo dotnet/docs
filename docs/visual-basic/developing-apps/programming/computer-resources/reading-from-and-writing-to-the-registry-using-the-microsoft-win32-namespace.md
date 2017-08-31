@@ -1,13 +1,13 @@
 ---
-title: "Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)"
+title: "Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,27 +15,14 @@ helpviewer_keywords:
   - "registry, Visual Basic"
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
 caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)
-Although `My.Computer.Registry` should cover your basic needs when programming against the registry, you can also use the <xref:Microsoft.Win32.Registry> and <xref:Microsoft.Win32.RegistryKey> classes in the <xref:Microsoft.Win32> namespace of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+Although `My.Computer.Registry` should cover your basic needs when programming against the registry, you can also use the <xref:Microsoft.Win32.Registry> and <xref:Microsoft.Win32.RegistryKey> classes in the <xref:Microsoft.Win32> namespace of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
   
 ## Keys in the Registry Class  
  The <xref:Microsoft.Win32.Registry> class supplies the base registry keys that can be used to access subkeys and their values. The base keys themselves are read-only. The following table lists and describes the seven keys exposed by the <xref:Microsoft.Win32.Registry> class.  
@@ -56,11 +43,11 @@ Although `My.Computer.Registry` should cover your basic needs when programming a
 ## Reading a Value from the Registry  
  The following code shows how to read a string from HKEY_CURRENT_USER.  
   
- [!code-vb[VbResourceTasks#20](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace_1.vb)]  
+ [!code-vb[VbResourceTasks#20](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#20)]  
   
  The following code reads, increments, and then writes a string to HKEY_CURRENT_USER.  
   
- [!code-vb[VbResourceTasks#21](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace_2.vb)]  
+ [!code-vb[VbResourceTasks#21](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#21)]  
   
 ## See Also  
  <xref:System.SystemException>   

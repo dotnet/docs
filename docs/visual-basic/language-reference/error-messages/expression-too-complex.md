@@ -1,13 +1,13 @@
 ---
-title: "Expression too complex"
-
+title: "Expression too complex | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID16"
@@ -15,28 +15,16 @@ dev_langs:
   - "VB"
 ms.assetid: 736847d1-5e03-44c8-95e4-3ed2cef2746b
 caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Expression too complex
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A floating-point expression contains too many nested subexpressions.  
   
-## To correct this error  
+### To correct this error  
   
 -   Break the expression into as many separate expressions as necessary to prevent the error from occurring.  
   

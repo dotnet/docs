@@ -1,13 +1,13 @@
 ---
-title: "How to: Debug Empty Query Results Sets (C#)"
+title: "How to: Debug Empty Query Results Sets (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Debug Empty Query Results Sets (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 One of the most common problems when querying XML trees is that if the XML tree has a default namespace, the developer sometimes writes the query as though the XML were not in a namespace.  
   
  The first set of examples in this topic shows a typical way that XML in a default namespace is loaded, and is queried improperly.  

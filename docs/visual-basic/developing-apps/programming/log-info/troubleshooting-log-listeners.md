@@ -1,13 +1,13 @@
 ---
-title: "Troubleshooting: Log Listeners (Visual Basic)"
+title: "Troubleshooting: Log Listeners (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "troubleshooting event logs"
 ms.assetid: ac6eb760-3d5d-461e-aedd-40599ee22e49
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Troubleshooting: Log Listeners (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application.  
   
  To determine which log listeners receive those messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
@@ -48,15 +36,15 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 1.  Import the <xref:System.Diagnostics> namespace at the beginning of the code file. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
-     [!code-vb[VbVbalrMyApplicationLog#13](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/troubleshooting-log-listeners_1.vb)]  
+     [!code-vb[VbVbalrMyApplicationLog#13](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#13)]  
   
 2.  Create a function that returns a string consisting of information for each of the log's listeners.  
   
-     [!code-vb[VbVbalrMyApplicationLog#14](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/troubleshooting-log-listeners_2.vb)]  
+     [!code-vb[VbVbalrMyApplicationLog#14](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#14)]  
   
 3.  Pass the collection of the log's trace listeners to the `GetListeners` function, and display the return value.  
   
-     [!code-vb[VbVbalrMyApplicationLog#19](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/troubleshooting-log-listeners_3.vb)]  
+     [!code-vb[VbVbalrMyApplicationLog#19](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#19)]  
   
      For more information, see <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A>.  
   

@@ -1,13 +1,13 @@
 ---
-title: "How to: Convert a String to a DateTime (C# Programming Guide)"
-
+title: "How to: Convert a String to a DateTime (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,24 +17,11 @@ ms.assetid: 88abef11-3a06-4b49-8dd2-61ed0e876fc3
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Convert a String to a DateTime (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 It is common for programs to enable users to enter dates as string values. To convert a string-based date to a <xref:System.DateTime?displayProperty=fullName> object, you can use the <xref:System.Convert.ToDateTime%28System.String%29?displayProperty=fullName> method or the <xref:System.DateTime.Parse%28System.String%29?displayProperty=fullName> static method, as shown in the following example.  
   
  **Culture**.  Different cultures in the world write date strings in different ways.  For example, in the US 01/20/2008 is January 20th, 2008.  In France this will throw an InvalidFormatException. This is because France reads date-times as Day/Month/Year, and in the US it is Month/Day/Year.  
@@ -69,7 +56,7 @@ Press any key to continue . . .
 ```  
   
 ## Example  
- [!code-cs[csProgGuideStrings#13](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-a-string-to-a-datetime_1.cs)]  
+ [!code-csharp[csProgGuideStrings#13](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#13)]  
   
 ## See Also  
  [Strings](../../../csharp/programming-guide/strings/index.md)

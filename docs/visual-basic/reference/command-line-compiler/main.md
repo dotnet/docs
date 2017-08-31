@@ -1,13 +1,13 @@
 ---
-title: "/main"
-
+title: "-main | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "-main compiler option [Visual Basic]"
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /main
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies the class or module that contains the `Sub Main` procedure.  
   
 ## Syntax  
@@ -55,7 +43,7 @@ Specifies the class or module that contains the `Sub Main` procedure.
   
  When `location` is a class that inherits from <xref:System.Windows.Forms.Form>, the compiler provides a default `Main` procedure that starts the application if the class has no `Main` procedure. This lets you compile code at the command line that was created in the development environment.  
   
- [!code-vb[VbVbalrCompiler#16](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/main_1.vb)]  
+ [!code-vb[VbVbalrCompiler#16](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/Class1.vb#16)]  
   
 ### To set /main in the Visual Studio integrated development environment  
   
@@ -78,7 +66,7 @@ vbc t2.vb t3.vb /main:Test2
   
 ## See Also  
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target-visual-basic.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [NIB: Visual Basic Version of Hello, World](http://msdn.microsoft.com/en-us/9d030b60-e148-4366-a462-69532f02294c)   
  [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)

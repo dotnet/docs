@@ -1,41 +1,26 @@
 ---
-title: "Line &lt;number&gt; cannot be parsed using the current Delimiters"
-
+title: "Line &lt;number&gt; cannot be parsed using the current Delimiters | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedDelimitedLine"
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Line &lt;number&gt; cannot be parsed using the current Delimiters
 The specified line cannot be parsed because it uses delimiters other than those specified.  
   
-## To correct this error  
+### To correct this error  
   
 -   Adjust `Delimiters` so the line can be parsed correctly, or insert exception-handling code in order to handle the line.  
   

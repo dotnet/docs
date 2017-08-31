@@ -1,8 +1,8 @@
 ---
-title: "How to: Find a Union of Two Location Paths (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find a Union of Two Location Paths (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: c82c09b4-cb0a-47ec-8cc3-a124144c2788
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find a Union of Two Location Paths (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 XPath allows you to find the union of the results of two XPath location paths.  
   
  The XPath expression is:  
@@ -27,7 +29,7 @@ XPath allows you to find the union of the results of two XPath location paths.
  You can achieve the same results by using the <xref:System.Linq.Enumerable.Concat%2A> standard query operator.  
   
 ## Example  
- This example finds all of the `Category` elements and all of the `Price` elements, and concatenates them into a single collection. Note that the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query calls <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> to order the results. The results of the XPath expression evaluation are also in document order.  
+ This example finds all of the `Category` elements and all of the `Price` elements, and concatenates them into a single collection. Note that the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] query calls <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> to order the results. The results of the XPath expression evaluation are also in document order.  
   
  This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
   
@@ -51,6 +53,7 @@ End If
 For Each el As XElement In list1  
     Console.WriteLine(el)  
 Next  
+  
 ```  
   
  This example produces the following output:  

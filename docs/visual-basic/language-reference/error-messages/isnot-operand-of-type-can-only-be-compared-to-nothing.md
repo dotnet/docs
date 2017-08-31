@@ -1,13 +1,13 @@
 ---
-title: "&#39;IsNot&#39; operand of type &#39;typename&#39; can only be compared to &#39;Nothing&#39;, because &#39;typename&#39; is a nullable type"
-
+title: "&#39;IsNot&#39; operand of type &#39;typename&#39; can only be compared to &#39;Nothing&#39;, because &#39;typename&#39; is a nullable type | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc32128"
@@ -18,42 +18,30 @@ helpviewer_keywords:
   - "BC32128"
 ms.assetid: 1155b23a-ad75-4bab-b9da-73f35c767a36
 caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &#39;IsNot&#39; operand of type &#39;typename&#39; can only be compared to &#39;Nothing&#39;, because &#39;typename&#39; is a nullable type
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A variable declared as nullable has been compared to an expression other than `Nothing` using the `IsNot` operator.  
   
  **Error ID:** BC32128  
   
-## To correct this error  
+### To correct this error  
   
 1.  To compare a nullable type to an expression other than `Nothing` by using the `IsNot` operator, call the `GetType` method on the nullable type and compare the result to the expression, as shown in the following example.  
   
-```vb  
-Dim number? As Integer = 5  
+    ```vb  
+    Dim number? As Integer = 5  
   
-If number IsNot Nothing Then  
-  If number.GetType() IsNot Type.GetType("System.Int32") Then   
+    If number IsNot Nothing Then  
+      If number.GetType() IsNot Type.GetType("System.Int32") Then   
   
-  End If  
-End If  
-```  
+      End If  
+    End If  
+    ```  
   
 ## See Also  
  [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)   

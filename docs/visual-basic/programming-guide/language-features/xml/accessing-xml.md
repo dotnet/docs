@@ -1,8 +1,8 @@
 ---
-title: "Accessing XML in Visual Basic"
+title: "Accessing XML in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,28 +19,16 @@ helpviewer_keywords:
   - "XML [Visual Basic], accessing"
 ms.assetid: c47f88b2-3cbc-4bb1-b4b9-be60f71ffc6a
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Accessing XML in Visual Basic
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides XML axis properties for accessing and navigating [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] structures. These properties use a special syntax to enable you to access elements and attributes by specifying the XML names.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+[!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] provides XML axis properties for accessing and navigating [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] structures. These properties use a special syntax to enable you to access elements and attributes by specifying the XML names.  
   
- The following table lists the language features that enable you to access XML elements and attributes in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+ The following table lists the language features that enable you to access XML elements and attributes in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)].  
   
 ### XML Axis Properties  
   
@@ -70,7 +58,7 @@ translation.priority.ht:
  Provides links to sections describing the various XML access properties.  
   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  
- Provides an introduction to using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] in Visual Basic.  
+ Provides an introduction to using [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] in Visual Basic.  
   
  [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  Provides an introduction to using XML literals in Visual Basic.  
@@ -79,4 +67,4 @@ translation.priority.ht:
  Provides links to sections about loading and modifying XML in Visual Basic.  
   
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
- Provides links to sections describing how to use [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] in Visual Basic.
+ Provides links to sections describing how to use [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] in Visual Basic.

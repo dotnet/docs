@@ -1,13 +1,13 @@
 ---
-title: "With...End With Statement (Visual Basic)"
-
+title: "With...End With Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.With"
@@ -26,39 +26,28 @@ helpviewer_keywords:
   - "End keyword, With...End With statements"
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
 caps.latest.revision: 34
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # With...End With Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Executes a series of statements that repeatedly refer to a single object or structure so that the statements can use a simplified syntax when accessing members of the object or structure.  When using a structure, you can only read the values of members or invoke methods, and you get an error if you try to assign values to members of a structure used in a `With...End With` statement.  
   
 ## Syntax  
   
 ```  
 With objectExpression  
-    [ statements ]  
+    [ statements ]  
 End With  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`objectExpression`|Required. An expression that evaluates to an object. The expression may be arbitrarily complex and is evaluated only once. The expression can evaluate to any data type, including elementary types.|  
 |`statements`|Optional. One or more statements between `With` and `End With` that may refer to members of an object that's produced by the evaluation of `objectExpression`.|  
 |`End With`|Required. Terminates the definition of the `With` block.|  
@@ -94,12 +83,12 @@ End With
 ## Example  
  In the following example, each `With` block executes a series of statements on a single object.  
   
- [!code-vb[VbVbalrWithStatement#2](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/with-end-with-statement_1.vb)]  
+ [!code-vb[VbVbalrWithStatement#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#2)]  
   
 ## Example  
  The following example nests `With…End With` statements. Within the nested `With` statement, the syntax refers to the inner object.  
   
- [!code-vb[VbVbalrWithStatement#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/with-end-with-statement_2.vb)]  
+ [!code-vb[VbVbalrWithStatement#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#1)]  
   
 ## See Also  
  <xref:System.Collections.Generic.List%601>   

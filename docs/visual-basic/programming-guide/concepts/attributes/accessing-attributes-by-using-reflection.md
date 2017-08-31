@@ -1,8 +1,8 @@
 ---
-title: "Accessing Attributes by Using Reflection (Visual Basic)"
+title: "Accessing Attributes by Using Reflection (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: c56e41da-5433-464f-a7bf-2a722e78bc9f
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Accessing Attributes by Using Reflection (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The fact that you can define custom attributes and place them in your source code would be of little value without some way of retrieving that information and acting on it. By using reflection, you can retrieve the information that was defined with custom attributes. The key method is `GetCustomAttributes`, which returns an array of objects that are the run-time equivalents of the source code attributes. This method has several overloaded versions. For more information, see <xref:System.Attribute>.  
   
  An attribute specification such as:  
@@ -116,7 +113,7 @@ End Class
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Retrieving Information Stored in Attributes](../../../../standard/attributes/retrieving-information-stored-in-attributes.md)   
+ [Retrieving Information Stored in Attributes](../Topic/Retrieving%20Information%20Stored%20in%20Attributes.md)   
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
- [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)   
+ [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes-visual-basic.md)   
  [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)

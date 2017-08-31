@@ -1,13 +1,13 @@
 ---
-title: "AddHandler Statement"
-
+title: "AddHandler Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.AddHandlerMethod"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "AddHandler statement"
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
 caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # AddHandler Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Associates an event with an event handler at run time.  
   
 ## Syntax  
@@ -64,10 +52,10 @@ AddHandler event, AddressOf eventhandler
 >  For custom events, the `AddHandler` statement invokes the event's `AddHandler` accessor. For more information on custom events, see [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
   
 ## Example  
- [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
+ [!code-vb[VbVbalrEvents#17](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]  
   
 ## See Also  
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/events.md)

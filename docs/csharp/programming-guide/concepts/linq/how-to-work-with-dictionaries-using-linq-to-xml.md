@@ -1,13 +1,13 @@
 ---
-title: "How to: Work with Dictionaries Using LINQ to XML (C#)"
+title: "How to: Work with Dictionaries Using LINQ to XML (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 57bcefe3-8433-4d3b-935a-511c9bcbdfa8
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Work with Dictionaries Using LINQ to XML (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 It is often convenient to convert varieties of data structures to XML, and XML back to other data structures. This topic shows a specific implementation of this general approach by converting a <xref:System.Collections.Generic.Dictionary%602> to XML and back.  
   
 ## Example  

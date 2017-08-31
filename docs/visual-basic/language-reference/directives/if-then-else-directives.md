@@ -1,13 +1,13 @@
 ---
-title: "#If...Then...#Else Directives"
-
+title: "#If...Then...#Else Directives | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.#EndIf"
@@ -29,25 +29,13 @@ helpviewer_keywords:
   - "#Else directive [Visual Basic]"
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # #If...Then...#Else Directives
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Conditionally compiles selected blocks of Visual Basic code.  
   
 ## Syntax  
@@ -88,7 +76,7 @@ Conditionally compiles selected blocks of Visual Basic code.
 ## Example  
  This example uses the `#If...Then...#Else` construct to determine whether to compile certain statements.  
   
- [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#1)]  
   
 ## See Also  
  [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)   

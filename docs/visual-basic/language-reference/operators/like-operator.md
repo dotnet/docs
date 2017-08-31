@@ -1,13 +1,13 @@
 ---
-title: "Like Operator (Visual Basic)"
-
+title: "Like Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Like"
@@ -33,30 +33,19 @@ helpviewer_keywords:
   - "string comparison [Visual Basic], Like operators"
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Like Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Compares a string against a pattern.  
   
 ## Syntax  
   
 ```  
+  
 result = string Like pattern  
 ```  
   
@@ -84,8 +73,8 @@ result = string Like pattern
 |`?`|Any single character|  
 |`*`|Zero or more characters|  
 |`#`|Any single digit (0–9)|  
-|`[charlist]`|Any single character in `charlist`|  
-|`[!charlist]`|Any single character not in `charlist`|  
+|`[` `charlist` `]`|Any single character in `charlist`|  
+|`[!` `charlist` `]`|Any single character not in `charlist`|  
   
 ## Character Lists  
  A group of one or more characters (`charlist`) enclosed in brackets (`[ ]`) can be used to match any single character in `string` and can include almost any character code, including digits.  
@@ -122,7 +111,7 @@ result = string Like pattern
 ## Example  
  This example uses the `Like` operator to compare strings to various patterns. The results go into a `Boolean` variable indicating whether each string satisfies the pattern.  
   
- [!code-vb[VbVbalrOperators#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/like-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#30](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#30)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Strings.InStr%2A>   

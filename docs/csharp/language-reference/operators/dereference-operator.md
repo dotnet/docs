@@ -1,9 +1,13 @@
 ---
-title: "-&gt; Operator (C# Reference)"
+title: "-&gt; Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "->_CSharpKeyword"
@@ -16,22 +20,11 @@ ms.assetid: e39ccdc1-f1ff-4a92-bf1d-ac2c8c11316a
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # -&gt; Operator (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The `->` operator combines pointer dereferencing and member access.  
   
 ## Remarks  
@@ -52,7 +45,7 @@ x->y
  The `->` operator cannot be overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#15](../../../csharp/language-reference/operators/codesnippet/CSharp/dereference-operator_1.cs)]  
+ [!code-csharp[csRefOperators#15](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#15)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

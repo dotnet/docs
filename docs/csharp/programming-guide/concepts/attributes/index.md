@@ -1,13 +1,13 @@
 ---
-title: "Attributes (C#)"
+title: "Attributes (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: f148f13f-a0d5-4f22-9c87-4b73d5dde270
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Attributes (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Attributes provide a powerful method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using a technique called *reflection*. For more information, see [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md).  
   
  Attributes have the following properties:  
@@ -178,7 +175,7 @@ int Method3() { return 0; }
   
 -   [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
   
--   [How to: Create a C/C++ Union by Using Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)  
+-   [How to: Create a C/C++ Union by Using Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/how-to-create-a-c-c-union-by-using-attributes-csharp.md)  
   
 -   [Common Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/common-attributes.md)  
   
@@ -187,4 +184,4 @@ int Method3() { return 0; }
 ## See Also  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)
+ [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)

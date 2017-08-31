@@ -1,13 +1,13 @@
 ---
-title: "TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded"
-
+title: "TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_BufferExceededMaxSize"
@@ -15,28 +15,16 @@ dev_langs:
   - "VB"
 ms.assetid: 36565e82-8458-4a08-86af-d9a7a2c32937
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The operation cannot be completed because the maximum buffer size (10,000,000 bytes) has been exceeded.  
   
-## To correct this error  
+### To correct this error  
   
 -   Make sure there are no malformed fields in the file.  
   

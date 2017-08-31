@@ -1,13 +1,13 @@
 ---
-title: "Structure of a Visual Basic Program"
+title: "Structure of a Visual Basic Program | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,28 +18,16 @@ helpviewer_keywords:
   - "Visual Basic code, program structure"
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Structure of a Visual Basic Program
-A [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program is built up from standard building blocks. A *solution* comprises one or more projects. A *project* in turn can contain one or more assemblies. Each *assembly* is compiled from one or more source files. A *source file* provides the definition and implementation of classes, structures, modules, and interfaces, which ultimately contain all your code.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+A [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] program is built up from standard building blocks. A *solution* comprises one or more projects. A *project* in turn can contain one or more assemblies. Each *assembly* is compiled from one or more source files. A *source file* provides the definition and implementation of classes, structures, modules, and interfaces, which ultimately contain all your code.  
   
- For more information about these building blocks of a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio) and [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md).  
+ For more information about these building blocks of a [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] program, see [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio) and [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## File-Level Programming Elements  
  When you start a project or file and open the code editor, you see some code already in place and in the correct order. Any code that you write should follow the following sequence:  
@@ -115,6 +103,7 @@ A [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program is built up from standard 
  The most common variety of this procedure is `Sub Main()`. For more information, see [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md).  
   
 ## See Also  
+ [NIB: Visual Basic Version of Hello, World](http://msdn.microsoft.com/en-us/9d030b60-e148-4366-a462-69532f02294c)   
  [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)   
  [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)   
  [Visual Basic Limitations](../../../visual-basic/programming-guide/program-structure/limitations.md)

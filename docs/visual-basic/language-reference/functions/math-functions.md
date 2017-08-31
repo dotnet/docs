@@ -1,13 +1,13 @@
 ---
-title: "Math Functions (Visual Basic)"
-
+title: "Math Functions (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,26 +18,13 @@ helpviewer_keywords:
   - "Atn function"
 ms.assetid: 4d2d82e7-6924-42fe-a4a7-b4dd5bebbd0c
 caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Math Functions (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The methods of the <xref:System.Math?displayProperty=fullName> class provide trigonometric, logarithmic, and other common mathematical functions.  
   
 ## Remarks  

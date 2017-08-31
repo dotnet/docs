@@ -1,8 +1,8 @@
 ---
-title: "How to: Determine If a File Is an Assembly (Visual Basic)"
+title: "How to: Determine If a File Is an Assembly (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,27 +13,24 @@ dev_langs:
   - "VB"
 ms.assetid: de26f410-9bd1-4b55-a343-cc82f81684be
 caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Determine If a File Is an Assembly (Visual Basic)
-A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](https://msdn.microsoft.com/library/1w45z383).  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata. For more information on assemblies and metadata, see the topic [Assembly Manifest](../Topic/Assembly%20Manifest.md).  
   
-## How to manually determine if a file is an assembly  
+### How to manually determine if a file is an assembly  
   
-1.  Start the [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1).  
+1.  Start the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
   
 2.  Load the file you wish to test.  
   
-3.  If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../../../../framework/app-domains/how-to-view-assembly-contents.md).  
+3.  If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../Topic/How%20to:%20View%20Assembly%20Contents.md).  
   
-## How to programmatically determine if a file is an assembly  
+### How to programmatically determine if a file is an assembly  
   
 1.  Call the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method, passing the full file path and name of the file you are testing.  
   
@@ -42,7 +39,7 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
 ## Example  
  This example tests a DLL to see if it is an assembly.  
   
-```vb  
+```  
 Module Module1  
     Sub Main()  
         Try  
@@ -61,11 +58,11 @@ Module Module1
 End Module  
 ' Output (with .NET Framework 3.5 installed):  
 '        Yes, the file is an Assembly.  
-```
+```  
   
  The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
 ## See Also  
  <xref:System.Reflection.AssemblyName>   
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
- [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)
+ [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache-visual-basic.md)

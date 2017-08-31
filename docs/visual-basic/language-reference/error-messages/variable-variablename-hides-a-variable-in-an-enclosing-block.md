@@ -1,13 +1,13 @@
 ---
-title: "Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block"
-
+title: "Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30616"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC30616"
 ms.assetid: e7658ebc-da45-451b-a409-a0f8915f0beb
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A variable enclosed in a block has the same name as another local variable.  
   
  **Error ID:** BC30616  
   
-## To correct this error  
+### To correct this error  
   
 -   Rename the variable in the enclosed block so that it is not the same as any other local variables. For example:  
   

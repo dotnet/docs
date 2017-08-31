@@ -1,13 +1,13 @@
 ---
-title: "Sample XML File: Multiple Purchase Orders in a Namespace2"
+title: "Sample XML File: Multiple Purchase Orders in a Namespace2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,15 +15,12 @@ ms.assetid: 595024f2-374a-4615-acb5-64fa1600f377
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Sample XML File: Multiple Purchase Orders in a Namespace
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file contains several purchase orders. The XML is in a namespace.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This file contains several purchase orders. The XML is in a namespace.  
   
 ## PurchaseOrdersInNamespace.xml  
   

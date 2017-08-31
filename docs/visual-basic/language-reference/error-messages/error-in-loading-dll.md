@@ -1,13 +1,13 @@
 ---
-title: "Error in loading DLL (Visual Basic)"
-
+title: "Error in loading DLL (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID48"
@@ -15,25 +15,13 @@ dev_langs:
   - "VB"
 ms.assetid: 4226cd1f-028c-477d-88a5-cb57f7e0cdc8
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Error in loading DLL (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A dynamic-link library (DLL) is a library specified in the `Lib` clause of a `Declare` statement. Possible causes for this error include:  
   
 -   The file is not DLL executable.  
@@ -44,7 +32,7 @@ A dynamic-link library (DLL) is a library specified in the `Lib` clause of a `De
   
 -   The DLL or referenced DLL is not in a directory specified in the path.  
   
-## To correct this error  
+### To correct this error  
   
 -   If the file is a source-text file and therefore not DLL executable, it must be compiled and linked to a DLL-executable form.  
   

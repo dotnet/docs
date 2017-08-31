@@ -1,13 +1,13 @@
 ---
-title: "Loop Structures (Visual Basic)"
+title: "Loop Structures (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,26 +21,14 @@ helpviewer_keywords:
   - "conditional statements, loop structures"
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Loop Structures (Visual Basic)
-[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is `True`, until a condition is `False`, a specified number of times, or once for each element in a collection.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+[!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] loop structures allow you to run one or more lines of code repetitively. You can repeat the statements in a loop structure until a condition is `True`, until a condition is `False`, a specified number of times, or once for each element in a collection.  
   
  The following illustration shows a loop structure that runs a set of statements until a condition becomes true.  
   

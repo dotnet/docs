@@ -1,8 +1,8 @@
 ---
-title: "How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)"
+title: "How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 5e8b2a2b-0b1d-4933-8a2b-03e91dfaf77f
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example shows one way to merge the contents of two files and then create a set of new files that organize the data in a new way.  
   
 ### To create the data files  

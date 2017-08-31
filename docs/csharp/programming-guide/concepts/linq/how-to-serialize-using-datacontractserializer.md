@@ -1,13 +1,13 @@
 ---
-title: "How to: Serialize Using DataContractSerializer (C#)"
+title: "How to: Serialize Using DataContractSerializer (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 3320ecbf-cdbe-480e-979c-2c14bbef9988
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Serialize Using DataContractSerializer (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows an example that serializes and deserializes using <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## Example  

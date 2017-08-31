@@ -1,8 +1,8 @@
 ---
-title: "How to: Generate XML from CSV Files (Visual Basic)"
+title: "How to: Generate XML from CSV Files (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,17 +13,20 @@ dev_langs:
   - "VB"
 ms.assetid: fe4dbc87-7b0d-40bf-88c3-5d706ee89a4d
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Generate XML from CSV Files (Visual Basic)
-This example shows how to use [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+This example shows how to use [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] and [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.  
   
 ## Example  
- The following code performs a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query on an array of strings.  
+ The following code performs a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] query on an array of strings.  
   
 ```vb  
+  
       ' Create the text file.  
 Dim csvString As String = "GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,(503) 555-7555,2732 Baker Blvd.,Eugene,OR,97403,USA" & vbCrLf & _  
     "HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,(503) 555-6874,City Center Plaza 516 Main St.,Elgin,OR,97827,USA" & vbCrLf & _  
@@ -54,6 +57,7 @@ Dim cust As XElement = _
         %>  
     </Root>  
 Console.WriteLine(cust)  
+  
 ```  
   
  This code produces the following output:  

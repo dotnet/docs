@@ -1,8 +1,8 @@
 ---
-title: "How to: Create Unsigned Friend Assemblies (Visual Basic)"
+title: "How to: Create Unsigned Friend Assemblies (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 5735eb79-9729-4c46-ac1f-537ada3acaa7
 caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Create Unsigned Friend Assemblies (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example shows how to use friend assemblies with assemblies that are unsigned.  
   
 ### To create an assembly and a friend assembly  
@@ -99,7 +96,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>   
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache-visual-basic.md)   
  [Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
  [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)   
- [Programming Guide Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+ [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

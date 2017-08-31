@@ -1,13 +1,13 @@
 ---
-title: "/moduleassemblyname"
-
+title: "-moduleassemblyname | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "-moduleassemblyname compiler option [Visual Basic]"
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /moduleassemblyname
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies the name of the assembly that this module will be a part of.  
   
 ## Syntax  
@@ -46,8 +34,9 @@ Specifies the name of the assembly that this module will be a part of.
   
 ## Arguments  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`assembly_name`|The name of the assembly that this module will be a part of.|  
   
 ## Remarks  
@@ -59,18 +48,18 @@ Specifies the name of the assembly that this module will be a part of.
   
 -   The referenced assembly has granted friend assembly access to the assembly into which the module will be built.  
   
- For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md). For more information about friend assemblies, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
+ For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target-visual-basic.md). For more information about friend assemblies, see [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
   
 > [!NOTE]
 >  The `/moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
 ## See Also  
- [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)   
+ [How to: Build a Multifile Assembly](../Topic/How%20to:%20Build%20a%20Multifile%20Assembly.md)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target-visual-basic.md)   
  [/main](../../../visual-basic/reference/command-line-compiler/main.md)   
- [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference-visual-basic.md)   
  [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
+ [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)
+ [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)

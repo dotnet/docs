@@ -1,13 +1,13 @@
 ---
-title: "My.Computer.FileSystem Object"
-
+title: "My.Computer.FileSystem Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -23,25 +23,13 @@ helpviewer_keywords:
   - "FileOpen function"
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
 caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.Computer.FileSystem Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides properties and methods for working with drives, files, and directories.  
   
 ## Remarks  

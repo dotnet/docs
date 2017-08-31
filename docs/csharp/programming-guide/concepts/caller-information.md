@@ -1,13 +1,13 @@
 ---
-title: "Caller Information (C#)"
-
+title: "Caller Information (C#) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,20 +15,18 @@ ms.assetid: ffad3d24-2fb7-4641-9124-53b5bc91d339
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Caller Information (C#)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain file path of the source code, the line number in the source code, and the member name of the caller. This information is helpful for tracing, debugging, and creating diagnostic tools.  
   
  To obtain this information, you use attributes that are applied to optional parameters, each of which has a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace:  
   
+||||  
+|-|-|-|  
 |Attribute|Description|Type|  
-|---|---|---|  
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the file path at compile time.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file at which the method is called.|`Integer`|  
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method or property name of the caller. See [Member Names](#MEMBERNAMES) later in this topic.|`String`|  

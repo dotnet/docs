@@ -1,8 +1,8 @@
 ---
-title: "Validating Passwords Complexity (Visual Basic)"
+title: "Walkthrough: Validating That Passwords Are Complex (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,25 +15,13 @@ helpviewer_keywords:
   - "String data type, validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Walkthrough: Validating That Passwords Are Complex (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This method checks for some strong-password characteristics and updates a string parameter with information about which checks the password fails.  
   
  Passwords can be used in a secure system to authorize a user. However, the passwords must be difficult for unauthorized users to guess. Attackers can use a *dictionary attack* program, which iterates through all of the words in a dictionary (or multiple dictionaries in different languages) and tests whether any of the words work as a user's password. Weak passwords such as "Yankees" or "Mustang" can be guessed quickly. Stronger passwords, such as "?You'L1N3vaFiNdMeyeP@sSWerd!", are much less likely to be guessed. A password-protected system should ensure that users choose strong passwords.  
@@ -43,7 +31,7 @@ This method checks for some strong-password characteristics and updates a string
 ## Example  
   
 ### Code  
- [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/walkthrough-validating-that-passwords-are-complex_1.vb)]  
+ [!code-vb[VbVbcnRegEx#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnRegEx/VB/Class1.vb#1)]  
   
 ## Compiling the Code  
  Call this method by passing the string that contains that password.  
@@ -53,7 +41,7 @@ This method checks for some strong-password characteristics and updates a string
 -   Access to the members of the <xref:System.Text.RegularExpressions> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## Security  
- If you are moving the password across a network, you need to use a secure method for transferring data. For more information, see [ASP.NET Web Application Security](https://msdn.microsoft.com/library/330a99hc).  
+ If you are moving the password across a network, you need to use a secure method for transferring data. For more information, see [ASP.NET Web Application Security](../Topic/ASP.NET%20Web%20Application%20Security.md).  
   
  You can improve the accuracy of the `ValidatePassword` function by adding additional complexity checks:  
   
@@ -67,4 +55,4 @@ This method checks for some strong-password characteristics and updates a string
   
 ## See Also  
  <xref:System.Text.RegularExpressions.Regex>   
- [ASP.NET Web Application Security](https://msdn.microsoft.com/library/330a99hc)
+ [ASP.NET Web Application Security](../Topic/ASP.NET%20Web%20Application%20Security.md)

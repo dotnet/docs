@@ -1,9 +1,13 @@
 ---
-title: "|| Operator (C# Reference)"
+title: "|| Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "||_CSharpKeyword"
@@ -17,22 +21,11 @@ ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # || Operator (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The conditional-OR operator (`||`) performs a logical-OR of its `bool` operands. If the first operand evaluates to `true`, the second operand isn't evaluated. If the first operand evaluates to `false`, the second operator determines whether the OR expression as a whole evaluates to `true` or `false`.  
   
 ## Remarks  
@@ -55,7 +48,7 @@ x | y
 ## Example  
  In the following examples, the expression that uses `||` evaluates only the first operand. The expression that uses `|` evaluates both operands. In the second example, a run-time exception occurs if both operands are evaluated.  
   
- [!code-cs[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
+ [!code-csharp[csRefOperators#52](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#52)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

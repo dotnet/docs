@@ -1,13 +1,13 @@
 ---
-title: "Cancel an Async Task or a List of Tasks (C#)"
+title: "Cancel an Async Task or a List of Tasks (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Cancel an Async Task or a List of Tasks (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 You can set up a button that you can use to cancel an async application if you don't want to wait for it to finish. By following the examples in this topic, you can add a cancellation button to an application that downloads the contents of one website or a list of websites.  
   
  The examples use the UI that [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md) describes.  
@@ -127,7 +124,7 @@ You can set up a button that you can use to cancel an async application if you d
   
         // GetAsync returns a Task<HttpResponseMessage>.   
         // ***The ct argument carries the message if the Cancel button is chosen.  
-        HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct);  
+        HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/en-us/library/dd470362.aspx", ct);  
   
         // Retrieve the website contents from the HttpResponseMessage.  
         byte[] urlContents = await response.Content.ReadAsByteArrayAsync();  
@@ -183,12 +180,12 @@ You can set up a button that you can use to cancel an async application if you d
         List<string> urls = new List<string>   
         {   
             "http://msdn.microsoft.com",  
-            "http://msdn.microsoft.com/library/hh290138.aspx",  
-            "http://msdn.microsoft.com/library/hh290140.aspx",  
-            "http://msdn.microsoft.com/library/dd470362.aspx",  
-            "http://msdn.microsoft.com/library/aa578028.aspx",  
-            "http://msdn.microsoft.com/library/ms404677.aspx",  
-            "http://msdn.microsoft.com/library/ff730837.aspx"  
+            "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
+            "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
+            "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
+            "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
+            "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
+            "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
         };  
         return urls;  
     }  
@@ -235,6 +232,7 @@ You can set up a button that you can use to cancel an async application if you d
 5.  If you don’t cancel the program, it produces the following output.  
   
     ```  
+  
     Length of the downloaded string: 35939.  
   
     Length of the downloaded string: 237682.  
@@ -250,6 +248,7 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 145790.  
   
     Downloads complete.  
+  
     ```  
   
      If you choose the **Cancel** button before the downloads are complete, the output contains the lengths of the downloads that completed before the cancellation.  
@@ -262,6 +261,7 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 128607.  
   
     Downloads canceled.  
+  
     ```  
   
 ##  <a name="BKMK_CompleteExamples"></a> Complete Examples  
@@ -356,7 +356,7 @@ namespace CancelATask
   
             // GetAsync returns a Task<HttpResponseMessage>.   
             // ***The ct argument carries the message if the Cancel button is chosen.  
-            HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct);  
+            HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/en-us/library/dd470362.aspx", ct);  
   
             // Retrieve the website contents from the HttpResponseMessage.  
             byte[] urlContents = await response.Content.ReadAsByteArrayAsync();  
@@ -484,12 +484,12 @@ namespace CancelAListOfTasks
             List<string> urls = new List<string>   
             {   
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
             };  
             return urls;  
         }  
@@ -528,6 +528,6 @@ namespace CancelAListOfTasks
 ## See Also  
  <xref:System.Threading.CancellationTokenSource>   
  <xref:System.Threading.CancellationToken>   
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
+ [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
  [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)   
  [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)

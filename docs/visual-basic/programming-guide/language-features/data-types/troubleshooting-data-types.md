@@ -1,13 +1,13 @@
 ---
-title: "Troubleshooting Data Types (Visual Basic)"
+title: "Troubleshooting Data Types (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -30,25 +30,13 @@ helpviewer_keywords:
   - "floating-point numbers"
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
 caps.latest.revision: 29
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Troubleshooting Data Types (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This page lists some common problems that can occur when you perform operations on intrinsic data types.  
   
 ## Floating-Point Expressions Do Not Compare as Equal  
@@ -57,12 +45,12 @@ This page lists some common problems that can occur when you perform operations 
  Because of this imprecision, you cannot rely on exact results when you operate on floating-point values. In particular, two values that are theoretically equal might have slightly different representations.  
   
 | To compare floating-point quantities | 
-|---| 
+|-| 
 |1.  Calculate the absolute value of their difference by using the <xref:System.Math.Abs%2A> method of the <xref:System.Math> class in the <xref:System> namespace.<br />2.  Determine an acceptable maximum difference, such that you can consider the two quantities to be equal for practical purposes if their difference is no larger.<br />3.  Compare the absolute value of the difference to the acceptable difference.|  
   
  The following example demonstrates both incorrect and correct comparison of two `Double` values.  
   
- [!code-vb[VbVbalrDataTypes#10](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#10](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#10)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better  precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -72,12 +60,12 @@ This page lists some common problems that can occur when you perform operations 
  The [Decimal Data Type](../../../../visual-basic/language-reference/data-types/decimal-data-type.md) does not use floating-point representation. Many numbers that are inexact in `Single` and `Double` are exact in `Decimal` (for example 0.2 and 0.3). Although arithmetic is slower in `Decimal` than in floating-point, it might be worth the performance decrease to achieve better precision.  
   
 |To find the integer remainder of floating-point quantities|  
-|---|  
+|-|  
 |1.  Declare variables as `Decimal`.<br />2.  Use the literal type character `D` to force literals to `Decimal`, in case their values are too large for the `Long` data type.|  
   
  The following example demonstrates the potential imprecision of floating-point operands.  
   
- [!code-vb[VbVbalrDataTypes#11](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#11](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#11)]  
   
  The previous example uses the <xref:System.Double.ToString%2A> method of the <xref:System.Double> structure so that it can specify better precision than the `CStr` keyword uses. The default is 15 digits, but the "G17" format extends it to 17 digits.  
   
@@ -88,7 +76,7 @@ This page lists some common problems that can occur when you perform operations 
  Note that it is not sufficient to declare `decimalRemainder` as `Decimal`. You must also force the literals to `Decimal`, or they use `Double` by default and `decimalRemainder` receives the same inaccurate value as `doubleRemainder`.  
   
 ## Boolean Type Does Not Convert to Numeric Type Accurately  
- [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides conversion keywords ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods.  
+ [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] provides conversion keywords ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] methods.  
   
  You should never write code that relies on equivalent numeric values for `True` and `False`. Whenever possible, you should restrict usage of `Boolean` variables to the logical values for which they are designed. If you must mix `Boolean` and numeric values, make sure that you understand the conversion method that you select.  
   
@@ -101,24 +89,24 @@ This page lists some common problems that can occur when you perform operations 
  If you must convert a `Boolean` value to a numeric data type, be careful about which conversion method you use.  
   
 ## Character Literal Generates Compiler Error  
- In the absence of any type characters, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] assumes default data types for literals. The default type for a character literal — enclosed in quotation marks (`" "`) — is `String`.  
+ In the absence of any type characters, [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] assumes default data types for literals. The default type for a character literal — enclosed in quotation marks (`" "`) — is `String`.  
   
  The `String` data type does not widen to the [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md). This means that if you want to assign a literal to a `Char` variable, you must either make a narrowing conversion or force the literal to the `Char` type.  
 
 |To create a Char literal to assign to a variable or constant|
-|---|  
+|-|  
 |1.  Declare the variable or constant as `Char`.<br />2.  Enclose the character value in quotation marks (`" "`).<br />3.  Follow the closing double quotation mark with the literal type character `C` to force the literal to `Char`. This is necessary if the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `On`, and it is desirable in any case.|  
   
  The following example demonstrates both unsuccessful and successful assignments of a literal to a `Char` variable.  
   
- [!code-vb[VbVbalrDataTypes#12](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#12](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#12)]  
   
  There is always a risk in using narrowing conversions, because they can fail at run time. For example, a conversion from `String` to `Char` can fail if the `String` value contains more than one character. Therefore, it is better programming to use the `C` type character.  
   
 ## String Conversion Fails at Run Time  
  The [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md) participates in very few widening conversions. `String` widens only to itself and `Object`, and only `Char` and `Char()` (a `Char` array) widen to `String`. This is because `String` variables and constants can contain values that other data types cannot contain.  
   
- When the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `On`, the compiler disallows all implicit narrowing conversions. This includes those involving `String`. Your code can still use conversion keywords such as `CStr` and [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), which direct the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to attempt the conversion.  
+ When the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `On`, the compiler disallows all implicit narrowing conversions. This includes those involving `String`. Your code can still use conversion keywords such as `CStr` and [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), which direct the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] to attempt the conversion.  
   
 > [!NOTE]
 >  The narrowing-conversion error is suppressed for conversions from the elements in a `For Each…Next` collection to the loop control variable. For more information and examples, see the "Narrowing Conversions" section in [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md).  

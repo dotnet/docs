@@ -1,13 +1,13 @@
 ---
-title: "Attribute List (Visual Basic)"
-
+title: "Attribute List (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,31 +16,19 @@ helpviewer_keywords:
   - "attributes [Visual Basic], applying"
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Attribute List (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies the attributes to be applied to a declared programming element. Multiple attributes are separated by commas. Following is the syntax for one attribute.  
   
 ## Syntax  
   
 ```  
-[ attributemodifier ] attributename [ ( attributearguments | attributeinitializer ) ]  
+[ attributemodifier ] attributename [ ( attributearguments | attributeinitializer ) ]  
 ```  
   
 ## Parts  
@@ -58,8 +46,8 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
 ## Remarks  
  You can apply one or more attributes to nearly any programming element (types, procedures, properties, and so forth). Attributes appear in your assembly's metadata, and they can help you annotate your code or specify how to use a particular programming element. You can apply attributes defined by Visual Basic and the .NET Framework, and you can define your own attributes.  
-
- For more information on when to use attributes, see [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md). For information on attribute names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
+  
+ For more information on when to use attributes, see [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md). For information on attribute names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
   
 ## Rules  
   
@@ -76,12 +64,12 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ## Example  
  The following example applies the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute to a skeleton definition of a `Function` procedure.  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/attribute-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]  
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> indicates that the attributed procedure represents an entry point in an unmanaged dynamic-link library (DLL). The attribute supplies the DLL name as a positional argument and the other information as variable initializers.  
   
 ## See Also  
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

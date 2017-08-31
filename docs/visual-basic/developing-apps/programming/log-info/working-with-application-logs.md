@@ -1,13 +1,13 @@
 ---
-title: "Working with Application Logs in Visual Basic"
+title: "Working with Application Logs in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,26 +17,13 @@ helpviewer_keywords:
   - "application event logs"
 ms.assetid: 2581afd1-5791-4bc4-86b2-46244e9fe468
 caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Working with Application Logs in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The `My.Applicaton.Log` and `My.Log` objects make it easy to write logging and tracing information to logs.  
   
 ## How Messages are Logged  
@@ -53,7 +40,7 @@ The `My.Applicaton.Log` and `My.Log` objects make it easy to write logging and t
 ## Where Messages are Logged  
  If the assembly has no configuration file, the `My.Application.Log` and `My.Log` objects write to the application's debug output (through the <xref:System.Diagnostics.DefaultTraceListener> class). In addition, the `My.Application.Log` object writes to the assembly's log file (through the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class), while the `My.Log` object writes to the ASP.NET Web page's output (through the <xref:System.Web.WebPageTraceListener> class).  
   
- The debug output can be viewed in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] **Output** window when running your application in debug mode. To open the **Output** window, click the **Debug** menu item, point to **Windows**, and then click **Output**. In the **Output** window, select **Debug** from the **Show output from** box.  
+ The debug output can be viewed in the [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] **Output** window when running your application in debug mode. To open the **Output** window, click the **Debug** menu item, point to **Windows**, and then click **Output**. In the **Output** window, select **Debug** from the **Show output from** box.  
   
  By default, `My.Application.Log` writes the log file in the path for the user's application data. You can get the path from the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName%2A> property of the <xref:Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter%2A> object. The format of that path is as follows:  
   
@@ -80,7 +67,7 @@ The `My.Applicaton.Log` and `My.Log` objects make it easy to write logging and t
   
  Examples of `<sources>`, `<switches>`, and `<sharedListeners>` nodes are shown in the following code:  
   
-```xml  
+```  
 <configuration>  
   <system.diagnostics>  
     <sources>  

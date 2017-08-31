@@ -1,13 +1,13 @@
 ---
-title: "Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39;"
-
+title: "Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30955"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC30955"
 ms.assetid: 966b61eb-441e-48b0-bedf-ca95384ecb8b
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39;
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatch could be due to the mixing of a file reference with a project reference to assembly '\<assemblyname>'. Try replacing the file reference to '\<filepath>' in project '\<projectname1>' with a project reference to '\<projectname2>'.  
   
  In a situation where a project makes both a project reference and a file reference, the compiler cannot guarantee that one type can be converted to another.  
@@ -77,11 +65,11 @@ Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatc
   
  **Error ID:** BC30955  
   
-## To correct this error  
+### To correct this error  
   
 -   Change the file reference to a project reference.  
   
 ## See Also  
  [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

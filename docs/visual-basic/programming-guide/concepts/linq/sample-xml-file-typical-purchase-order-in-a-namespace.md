@@ -1,8 +1,8 @@
 ---
-title: "Sample XML File: Typical Purchase Order in a Namespace3"
+title: "Sample XML File: Typical Purchase Order in a Namespace3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,17 +13,14 @@ dev_langs:
   - "VB"
 ms.assetid: 38260901-c9f9-4240-9cbf-652c8b05021d
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Sample XML File: Typical Purchase Order in a Namespace
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file is a typical purchase order. The XML is in a namespace.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This file is a typical purchase order. The XML is in a namespace.  
   
 ## PurchaseOrderInNamespace.xml  
   

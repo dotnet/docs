@@ -1,13 +1,13 @@
 ---
-title: "Parameter List (Visual Basic)"
-
+title: "Parameter List (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,32 +21,20 @@ helpviewer_keywords:
   - "procedures, parameter lists"
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Parameter List (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies the parameters a procedure expects when it is called. Multiple parameters are separated by commas. The following is the syntax for one parameter.  
   
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ Optional ] [{ ByVal | ByRef }] [ ParamArray ]   
-parametername[( )] [ As parametertype ] [ = defaultvalue ]  
+[ <attributelist> ] [ Optional ] [{ ByVal | ByRef }] [ ParamArray ]   
+parametername[( )] [ As parametertype ] [ = defaultvalue ]  
 ```  
   
 ## Parts  
@@ -106,7 +94,7 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 ## Example  
  The following example shows a `Function` procedure that defines two parameters.  
   
- [!code-vb[VbVbalrStatements#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#2)]  
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
@@ -115,5 +103,5 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

@@ -1,13 +1,13 @@
 ---
-title: "How to: Match a String against a Pattern (Visual Basic)"
+title: "How to: Match a String against a Pattern (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -24,25 +24,13 @@ helpviewer_keywords:
   - "operators [Visual Basic], comparison"
 ms.assetid: 19a83804-b5af-4739-928b-ac93e64e457f
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Match a String against a Pattern (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 If you want to find out if an expression of the [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md) satisfies a pattern, then you can use the [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md).  
   
  `Like` takes two operands. The left operand is a string expression, and the right operand is a string containing the pattern to be used for matching. `Like` returns a `Boolean` value indicating whether the string expression satisfies the pattern.  
@@ -55,7 +43,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists exactly of the single character `H`.  
   
-     [!code-vb[VbVbalrOperators#70](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_1.vb)]  
+     [!code-vb[VbVbalrOperators#70](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#70)]  
   
 ### To match a character in the string expression against a wildcard character  
   
@@ -63,7 +51,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists of the single character `W` followed by exactly two characters of any values.  
   
-     [!code-vb[VbVbalrOperators#71](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_2.vb)]  
+     [!code-vb[VbVbalrOperators#71](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#71)]  
   
 ### To match a character in the string expression against a list of characters  
   
@@ -71,7 +59,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists of any valid character followed by exactly one of the characters `A`, `C`, or `E`.  
   
-     [!code-vb[VbVbalrOperators#72](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_3.vb)]  
+     [!code-vb[VbVbalrOperators#72](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#72)]  
   
      Note that this match is case-sensitive.  
   
@@ -81,7 +69,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests whether `myString` consists of the characters `num` followed by exactly one of the characters `i`, `j`, `k`, `l`, `m`, or `n`.  
   
-     [!code-vb[VbVbalrOperators#73](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_4.vb)]  
+     [!code-vb[VbVbalrOperators#73](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#73)]  
   
      Note that this match is case-sensitive.  
   
@@ -98,7 +86,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
   
      The following example tests the seven-digit telephone number `phoneNum` for exactly three numeric digits, followed by a space, a hyphen (`–`), a period (`.`), or no character at all, followed by exactly four numeric digits.  
   
-     [!code-vb[VbVbalrOperators#74](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_5.vb)]  
+     [!code-vb[VbVbalrOperators#74](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#74)]  
   
 ## See Also  
  [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)   

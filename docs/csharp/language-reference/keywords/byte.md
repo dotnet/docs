@@ -1,9 +1,13 @@
 ---
-title: "byte (C# Reference)"
-ms.date: "2017-03-14"
-ms.prod: .net
+title: "byte (C# Reference) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "byte"
@@ -16,50 +20,33 @@ ms.assetid: 111f1db9-ca32-4f0e-b497-4783517eda47
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # byte (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
 
-`byte` denotes an integral type that stores values as indicated in the following table.  
+The `byte` keyword denotes an integral type that stores values as indicated in the following table.  
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
 |`byte`|0 to 255|Unsigned 8-bit integer|<xref:System.Byte?displayProperty=fullName>|  
   
 ## Literals  
-
- You can declare and initialize a `byte` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. If the integer literal is outside the range of `byte` (that is, if it is less than <xref:System.Byte.MinValue?displayProperty=fullName> or greater than <xref:System.Byte.MaxValue?displayProperty=fullName>), a compilation error occurs.
-
-In the following example, integers equal to 201 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `byte` values.    
+ You can declare and initialize a `byte` variable like this example:  
   
-[!code-cs[Byte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Byte)]  
-
-> [!NOTE] 
-> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix.
-
-Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
-
-[!code-cs[Byte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#ByteS)]  
- 
+```  
+byte myByte = 255;  
+```  
+  
+ In the preceding declaration, the integer literal `255` is implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `byte`. If the integer literal exceeds the range of `byte`, a compilation error will occur.  
+  
 ## Conversions  
  There is a predefined implicit conversion from `byte` to [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md).  
   
  You cannot implicitly convert non-literal numeric types of larger storage size to `byte`. For more information on the storage sizes of integral types, see [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md). Consider, for example, the following two `byte` variables `x` and `y`:  
   
 ```  
+  
 byte x = 10, y = 20;  
 ```  
   
@@ -115,7 +102,7 @@ SampleMethod((byte)5);
  For more information on implicit numeric conversion rules, see the [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md).  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Byte>   

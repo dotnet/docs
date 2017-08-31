@@ -1,13 +1,13 @@
 ---
-title: "How to: Calculate Intermediate Values (C#)"
+title: "How to: Calculate Intermediate Values (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 7fd3001f-f8f9-4bce-879f-d4c7af8a04fe
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Calculate Intermediate Values (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This example shows how to calculate intermediate values that can be used in sorting, filtering, and selecting.  
   
 ## Example  

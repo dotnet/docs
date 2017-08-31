@@ -1,13 +1,13 @@
 ---
-title: "Out of stack space (Visual Basic)"
-
+title: "Out of stack space (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID28"
@@ -15,28 +15,16 @@ dev_langs:
   - "VB"
 ms.assetid: bfcd792b-ac29-4158-81fc-ea0c13f4ffa2
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Out of stack space (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The stack is a working area of memory that grows and shrinks dynamically with the demands of your executing program. Its limits have been exceeded.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Check that procedures are not nested too deeply.  
   
@@ -48,7 +36,7 @@ The stack is a working area of memory that grows and shrinks dynamically with th
   
 5.  Check the number of nested `DoEvents` function calls, by using the `Calls` dialog box to view which procedures are active on the stack.  
   
-6.  Make sure you did not cause an "event cascade" by triggering an event that calls an event procedure already on the stack. An event cascade is similar to an unterminated recursive procedure call, but it is less obvious, since the call is made by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] rather than an explicit call in the code. Use the `Calls` dialog box to view which procedures are active on the stack.  
+6.  Make sure you did not cause an "event cascade" by triggering an event that calls an event procedure already on the stack. An event cascade is similar to an unterminated recursive procedure call, but it is less obvious, since the call is made by [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] rather than an explicit call in the code. Use the `Calls`dialog box to view which procedures are active on the stack.  
   
 ## See Also  
- [Memory Windows](/visualstudio/debugger/memory-windows)
+ [Memory Windows](/visual-studio/debugger/memory-windows)

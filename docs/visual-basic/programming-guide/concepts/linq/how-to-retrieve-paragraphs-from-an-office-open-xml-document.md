@@ -1,8 +1,8 @@
 ---
-title: "How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic)"
+title: "How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 66053f21-9217-473c-a6f3-a0897be07756
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic presents an example that opens an Office Open XML document, and retrieves a collection of all of the paragraphs in the document.  
   
  For more information on Office Open XML, see [www.openxmldeveloper.org](http://go.microsoft.com/fwlink/?LinkID=95573).  

@@ -1,13 +1,13 @@
 ---
-title: "How to: Filter on Element Names (LINQ to XML) (C#)"
+title: "How to: Filter on Element Names (LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,15 +15,17 @@ ms.assetid: 1849fb03-f075-421f-863c-e8fb32773cdf
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Filter on Element Names (LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 When you call one of the methods that return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, you can filter on the element name.  
   
 ## Example  
  This example retrieves a collection of descendants that is filtered to contain only descendants with the specified name.  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md).  
   
 ```csharp  
 XElement po = XElement.Load("PurchaseOrder.xml");  

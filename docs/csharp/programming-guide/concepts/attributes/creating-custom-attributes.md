@@ -1,13 +1,13 @@
 ---
-title: "Creating Custom Attributes (C#)"
+title: "Creating Custom Attributes (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 500e1977-c6de-462d-abce-78a0eb1eda22
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Creating Custom Attributes (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 You can create your own custom attributes by defining an attribute class, a class that derives directly or indirectly from <xref:System.Attribute>, which makes identifying attribute definitions in metadata fast and easy. Suppose you want to tag types with the name of the programmer who wrote the type. You might define a custom `Author` attribute class:  
   
 ```csharp  
@@ -82,7 +79,7 @@ class SampleClass
 ## See Also  
  <xref:System.Reflection>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Writing Custom Attributes](../../../../standard/attributes/writing-custom-attributes.md)   
+ [Writing Custom Attributes](../Topic/Writing%20Custom%20Attributes.md)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)   

@@ -1,9 +1,13 @@
 ---
-title: "In (Generic Modifier) (Visual Basic)"
+title: "In (Generic Modifier) (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.VarianceIn"
@@ -14,30 +18,19 @@ helpviewer_keywords:
   - "In keyword [Visual Basic]"
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # In (Generic Modifier) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 For generic type parameters, the `In` keyword specifies that the type parameter is contravariant.  
   
 ## Remarks  
  Contravariance enables you to use a less derived type than that specified by the generic parameter. This allows for implicit conversion of classes that implement variant interfaces and implicit conversion of delegate types.  
   
- For more information, see [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md).  
+ For more information, see [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## Rules  
  You can use the `In` keyword in generic interfaces and delegates.  
@@ -56,13 +49,13 @@ For generic type parameters, the `In` keyword specifies that the type parameter 
 ## Example  
  The following example shows how to declare, extend, and implement a contravariant generic interface. It also shows how you can use implicit conversion for classes that implement this interface.  
   
- [!code-vb[vbVarianceKeywords#1](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/in-generic-modifier_1.vb)]  
+ [!code-vb[vbVarianceKeywords#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#1)]  
   
 ## Example  
  The following example shows how to declare, instantiate, and invoke a contravariant generic delegate. It also shows how you can implicitly convert a delegate type.  
   
- [!code-vb[vbVarianceKeywords#2](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/in-generic-modifier_2.vb)]  
+ [!code-vb[vbVarianceKeywords#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#2)]  
   
 ## See Also  
- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)   
+ [Variance in Generic Interfaces](../Topic/Variance%20in%20Generic%20Interfaces%20\(C%23%20and%20Visual%20Basic\).md)   
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

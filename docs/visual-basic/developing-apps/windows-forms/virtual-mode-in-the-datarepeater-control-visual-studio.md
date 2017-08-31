@@ -1,13 +1,13 @@
 ---
-title: "Virtual Mode in the DataRepeater Control (Visual Studio)"
-
+title: "Virtual Mode in the DataRepeater Control (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "DataRepeater, virtual mode"
 ms.assetid: 5fb805dc-2d8b-4139-b1e3-86e4c2667221
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Virtual Mode in the DataRepeater Control (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 When you want to display large quantities of tabular data in a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control, you can improve performance by setting the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.VirtualMode%2A> property to `True` and explicitly managing the control's interaction with its data source. The <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control provides several events that you can handle to interact with your data source and display the data as needed at run time.  
   
 ## How Virtual Mode Works  
@@ -49,7 +37,7 @@ When you want to display large quantities of tabular data in a <xref:Microsoft.V
   
  If the user adds a new item, the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.NewItemNeeded> event is raised. Use this event's handler to create a new record in your data source. To prevent unintended changes, you must also monitor the <xref:System.Windows.Forms.Control.KeyDown> event for each control and call <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.CancelEdit%2A> if the user presses the ESC key.  
   
- If your data source changes, you can refresh the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control by calling the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.BeginResetItemTemplate%2A> and <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.EndResetItemTemplate%2A> methods. Both methods must be called in order.  
+ If your data source changes, you can refresh the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control by calling the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.BeginResetTemplateItem%2A> and <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.EndResetTemplateItem%2A> methods. Both methods must be called in order.  
   
  Finally, you must implement event handlers for the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemsRemoved> event, which occurs when an item is deleted, and optionally for the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.UserDeletingItems> and <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.UserDeletedItems> events, which occur whenever a user deletes an item by pressing the DELETE key.  
   
@@ -64,33 +52,33 @@ When you want to display large quantities of tabular data in a <xref:Microsoft.V
   
 3.  Implement a handler for the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValueNeeded> event to provide values for each control. This event is raised when a new <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterItem> is scrolled into view. The code will resemble the following example, which is for a data source named `Employees`.  
   
-     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/virtual-mode-in-the-datarepeater-control-visual-studio_1.vb)]
-     [!code-cs[VbPowerPacksDataRepeaterVirtualMode#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_1.cs)]  
+     [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/CS/VbPowerPacksDataRepeaterVirtualMode.cs#1)]
+     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/VB/VbPowerPacksDataRepeaterVirtualMode.vb#1)]  
   
 4.  Implement a handler for the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValuePushed> event to store the data. This event is raised when the user commits changes to a child control of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterItem>. The code will resemble the following example, which is for a data source named `Employees`.  
   
-     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/virtual-mode-in-the-datarepeater-control-visual-studio_2.vb)]
-     [!code-cs[VbPowerPacksDataRepeaterVirtualMode#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_2.cs)]  
+     [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#2](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/CS/VbPowerPacksDataRepeaterVirtualMode.cs#2)]
+     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/VB/VbPowerPacksDataRepeaterVirtualMode.vb#2)]  
   
 5.  Implement a handler for each child control's <xref:System.Windows.Forms.Control.KeyDown> event and monitor the ESC key. Call the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.CancelEdit%2A> method to prevent the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValuePushed> event from being raised. The code will resemble the following example.  
   
-     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#3](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/virtual-mode-in-the-datarepeater-control-visual-studio_3.vb)]
-     [!code-cs[VbPowerPacksDataRepeaterVirtualMode#3](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_3.cs)]  
+     [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/CS/VbPowerPacksDataRepeaterVirtualMode.cs#3)]
+     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/VB/VbPowerPacksDataRepeaterVirtualMode.vb#3)]  
   
 6.  Implement a handler for the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.NewItemNeeded> event. This event is raised when the user adds a new item to the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control. The code will resemble the following example, which is for a data source named `Employees`.  
   
-     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#4](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/virtual-mode-in-the-datarepeater-control-visual-studio_4.vb)]
-     [!code-cs[VbPowerPacksDataRepeaterVirtualMode#4](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_4.cs)]  
+     [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#4](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/CS/VbPowerPacksDataRepeaterVirtualMode.cs#4)]
+     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#4](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/VB/VbPowerPacksDataRepeaterVirtualMode.vb#4)]  
   
 7.  Implement a handler for the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemsRemoved> event. This event occurs when a user deletes an existing item. The code will resemble the following example, which is for a data source named `Employees`.  
   
-     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#5](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/virtual-mode-in-the-datarepeater-control-visual-studio_5.vb)]
-     [!code-cs[VbPowerPacksDataRepeaterVirtualMode#5](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_5.cs)]  
+     [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/CS/VbPowerPacksDataRepeaterVirtualMode.cs#5)]
+     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/VB/VbPowerPacksDataRepeaterVirtualMode.vb#5)]  
   
 8.  For control-level validation, optionally implement handlers for the <xref:System.Windows.Forms.Control.Validating> events of the child controls. The code will resemble the following example.  
   
-     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#6](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/virtual-mode-in-the-datarepeater-control-visual-studio_6.vb)]
-     [!code-cs[VbPowerPacksDataRepeaterVirtualMode#6](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_6.cs)]  
+     [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/CS/VbPowerPacksDataRepeaterVirtualMode.cs#6)]
+     [!code-vb[VbPowerPacksDataRepeaterVirtualMode#6](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterVirtualMode/VB/VbPowerPacksDataRepeaterVirtualMode.vb#6)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValuePushed>   

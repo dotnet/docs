@@ -1,13 +1,13 @@
 ---
-title: "/win32resource"
-
+title: "-win32resource | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/win32resource"
@@ -20,25 +20,13 @@ helpviewer_keywords:
   - "win32resource compiler option [Visual Basic]"
 ms.assetid: e226946d-19ce-4cc9-91f5-aed24f77aa2b
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # /win32resource
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Inserts a Win32 resource file in the output file.  
   
 ## Syntax  
@@ -56,7 +44,7 @@ Inserts a Win32 resource file in the output file.
   
  A Win32 resource can contain version or bitmap (icon) information that helps identify your application in **File Explorer**. If you do not specify `/win32resource`, the compiler generates version information based on the assembly version. The `/win32resource` and `/win32icon` options are mutually exclusive.  
   
- See [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md) to reference a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file, or [/resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md) to attach a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file.  
+ See [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource-visual-basic.md) to reference a [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] resource file, or [/resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource-visual-basic.md) to attach a [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] resource file.  
   
 > [!NOTE]
 >  The `/win32resource` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  

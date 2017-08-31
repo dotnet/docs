@@ -1,9 +1,13 @@
 ---
-title: "lock Statement (C# Reference)"
+title: "lock Statement (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "lock_CSharpKeyword"
@@ -16,25 +20,15 @@ ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # lock Statement (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The `lock` keyword marks a statement block as a critical section by obtaining the mutual-exclusion lock for a given object, executing a statement, and then releasing the lock. The following example includes a `lock` statement.  
   
-```csharp  
+```  
+  
 class Account  
 {  
     decimal balance;  
@@ -52,14 +46,15 @@ class Account
         }  
     }  
 }  
+  
 ```  
   
- For more information, see [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4).  
+ For more information, see [Thread Synchronization](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## Remarks  
  The `lock` keyword ensures that one thread does not enter a critical section of code while another thread is in the critical section. If another thread tries to enter a locked code, it will wait, block, until the object is released.  
   
- The section [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c) discusses threading.  
+ The section [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md) discusses threading.  
   
  The `lock` keyword calls <xref:System.Threading.Monitor.Enter%2A> at the start of the block and <xref:System.Threading.Monitor.Exit%2A> at the end of the block. A <xref:System.Threading.ThreadInterruptedException> is thrown if <xref:System.Threading.Thread.Interrupt%2A> interrupts a thread that is waiting to enter a `lock` statement.  
   
@@ -78,25 +73,25 @@ class Account
 ## Example  
  The following sample shows a simple use of threads without locking in C#.  
   
- [!code-cs[csrefKeywordsFixedLock#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_1.cs)]  
+ [!code-csharp[csrefKeywordsFixedLock#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsFixedLock/CS/csrefKeywordsFixedLock.cs#5)]  
   
 ## Example  
  The following sample uses threads and `lock`. As long as the `lock` statement is present, the statement block is a critical section and `balance` will never become a negative number.  
   
- [!code-cs[csrefKeywordsFixedLock#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_2.cs)]  
+ [!code-csharp[csrefKeywordsFixedLock#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsFixedLock/CS/csrefKeywordsFixedLock.cs#6)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Reflection.MethodImplAttributes>   
  <xref:System.Threading.Mutex>   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
+ [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)   
- @System.Threading.Monitor   
- [Interlocked Operations](../../../standard/threading/interlocked-operations.md)   
- [AutoResetEvent](../../../standard/threading/autoresetevent.md)   
- [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4)
+ [Monitors](../Topic/Monitors.md)   
+ [Interlocked Operations](../Topic/Interlocked%20Operations.md)   
+ [AutoResetEvent](../Topic/AutoResetEvent.md)   
+ [Thread Synchronization](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md)

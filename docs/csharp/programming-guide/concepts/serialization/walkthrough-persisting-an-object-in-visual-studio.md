@@ -1,13 +1,13 @@
 ---
-title: "Walkthrough: Persisting an Object in Visual Studio (C#)"
+title: "Walkthrough: Persisting an Object in Visual Studio (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
 dev_langs: 
   - "CSharp"
@@ -15,20 +15,17 @@ ms.assetid: a544ce46-ee25-49da-afd4-457a3d59bf63
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Walkthrough: Persisting an Object in Visual Studio (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Although you can set an object's properties to default values at design time, any values entered at run time are lost when the object is destroyed. You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.  
   
  In this walkthrough, you will create a simple `Loan` object and persist its data to a file. You will then retrieve the data from the file when you re-create the object.  
   
 > [!IMPORTANT]
->  This example creates a new file if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
+>  This example creates a new file, if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
   
 > [!IMPORTANT]
 >  This example stores data in a binary format file. These formats should not be used for sensitive data, such as passwords or credit-card information.  
@@ -39,9 +36,9 @@ Although you can set an object's properties to default values at design time, an
 ## Creating the Loan Object  
  The first step is to create a `Loan` class and a test application that uses the class.  
   
-### To create the Loan class  
+#### To create the Loan class  
   
-1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).  
+1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](/visual-studio/ide/creating-solutions-and-projects).  
   
 2.  In **Solution Explorer**, open the shortcut menu for the Class1 file and choose **Rename**. Rename the file to `Loan` and press ENTER. Renaming the file will also rename the class to `Loan`.  
   
@@ -83,9 +80,9 @@ Although you can set an object's properties to default values at design time, an
   
  You will also have to create a simple application that uses the `Loan` class.  
   
-### To create a test application  
+#### To create a test application  
   
-1.  To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**, **New Project**.  
+1.  To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**,**New Project**.  
   
 2.  In the **Add New Project** dialog box, choose **Windows Forms Application**, and enter `LoanApp` as the name of the project, and then click **OK** to close the dialog box.  
   
@@ -132,7 +129,7 @@ Although you can set an object's properties to default values at design time, an
 ## Using Serialization to Persist the Object  
  In order to persist the values for the Loan class, you must first mark the class with the `Serializable` attribute.  
   
-### To mark a class as serializable  
+#### To mark a class as serializable  
   
 -   Change the class declaration for the Loan class as follows:  
   
@@ -144,7 +141,7 @@ Although you can set an object's properties to default values at design time, an
   
  The `Serializable` attribute tells the compiler that everything in the class can be persisted to a file. Because the `PropertyChanged` event is handled by a Windows Form object, it cannot be serialized. The `NonSerialized` attribute can be used to mark class members that should not be persisted.  
   
-### To prevent a member from being serialized  
+#### To prevent a member from being serialized  
   
 -   Change the declaration for the `PropertyChanged` event as follows:  
   
@@ -155,7 +152,7 @@ Although you can set an object's properties to default values at design time, an
   
  The next step is to add the serialization code to the LoanApp application. In order to serialize the class and write it to a file, you will use the <xref:System.IO> and <xref:System.Xml.Serialization> namespaces. To avoid typing the fully qualified names, you can add references to the necessary class libraries.  
   
-### To add references to namespaces  
+#### To add references to namespaces  
   
 -   Add the following statements to the top of the `Form1` class:  
   
@@ -168,7 +165,7 @@ Although you can set an object's properties to default values at design time, an
   
  The next step is to add code to deserialize the object from the file when the object is created.  
   
-### To deserialize an object  
+#### To deserialize an object  
   
 1.  Add a constant to the class for the serialized data's file name.  
   
@@ -204,7 +201,7 @@ Although you can set an object's properties to default values at design time, an
   
  Next you must add code to save the data entered in the text boxes to the `Loan` class, and then you must serialize the class to a file.  
   
-### To save the data and serialize the class  
+#### To save the data and serialize the class  
   
 -   Add the following code to the `Form1_FormClosing` event procedure:  
   

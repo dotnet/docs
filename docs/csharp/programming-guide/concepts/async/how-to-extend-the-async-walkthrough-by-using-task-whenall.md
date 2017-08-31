@@ -1,13 +1,13 @@
 ---
-title: "How to: Extend the async Walkthrough by Using Task.WhenAll (C#)"
+title: "How to: Extend the async Walkthrough by Using Task.WhenAll (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Extend the async Walkthrough by Using Task.WhenAll (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 You can improve the performance of the async solution in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md) by using the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> method. This method asynchronously awaits multiple asynchronous operations, which are represented as a collection of tasks.  
   
  You might have noticed in the walkthrough that the websites download at different rates. Sometimes one of the websites is very slow, which delays all the remaining downloads. When you run the asynchronous solutions that you build in the walkthrough, you can end the program easily if you don't want to wait, but a better option would be to start all the downloads at the same time and let faster downloads continue without waiting for the one that’s delayed.  
@@ -74,7 +71,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Create a collection of tasks. The following code defines a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Create a collection of tasks. The following code defines a [query](../Topic/LINQ%20\(Language-Integrated%20Query\).md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.  
   
@@ -149,7 +146,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Define a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Define a [query](../Topic/LINQ%20\(Language-Integrated%20Query\).md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.  
   
@@ -178,7 +175,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
 5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
     ```csharp  
-    int total = lengths.Sum();
+    Dim total = lengths.Sum()  
     ```  
   
 ### To test the Task.WhenAll solutions  
@@ -268,14 +265,14 @@ namespace AsyncExampleWPF_WhenAll
             {   
                 "http://msdn.microsoft.com",  
                 "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
             };  
             return urls;  
         }  
@@ -414,14 +411,14 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
             List<string> urls = new List<string>   
             {   
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
             };  
             return urls;  
         }  

@@ -1,13 +1,13 @@
 ---
-title: "Is Operator (Visual Basic)"
-
+title: "Is Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.is"
@@ -20,30 +20,19 @@ helpviewer_keywords:
   - "Is operator [Visual Basic]"
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Is Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Compares two object reference variables.  
   
 ## Syntax  
   
 ```  
+  
 result = object1 Is object2  
 ```  
   
@@ -68,7 +57,7 @@ result = object1 Is object2
 ## Example  
  The following example uses the `Is` operator to compare pairs of object references. The results are assigned to a `Boolean` value representing whether the two objects are identical.  
   
- [!code-vb[VbVbalrOperators#27](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/is-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#27](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#27)]  
   
  As the preceding example demonstrates, you can use the `Is` operator to test both early bound and late bound objects.  
   

@@ -1,13 +1,13 @@
 ---
-title: "Constants must be of an intrinsic or enumerated type, not a class, structure, type parameter, or array type"
-
+title: "Constants must be of an intrinsic or enumerated type, not a class, structure, type parameter, or array type | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30424"
@@ -18,32 +18,20 @@ helpviewer_keywords:
   - "BC30424"
 ms.assetid: 2d402c2f-27ad-428b-b699-d45cd62f7196
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Constants must be of an intrinsic or enumerated type, not a class, structure, type parameter, or array type
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 You have attempted to declare a constant as a class, structure, or array type, or as a type parameter defined by a containing generic type.  
   
  Constants must be of an intrinsic type (`Boolean`, `Byte`, `Date`, `Decimal`, `Double`, `Integer`, `Long`, `Object`, `SByte`, `Short`, `Single`, `String`, `UInteger`, `ULong`, or `UShort`), or an `Enum` type based on one of the integral types.  
   
  **Error ID:** BC30424  
   
-## To correct this error  
+### To correct this error  
   
 1.  Declare the constant as an intrinsic or `Enum` type.  
   

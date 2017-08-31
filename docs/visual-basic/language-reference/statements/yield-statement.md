@@ -1,13 +1,13 @@
 ---
-title: "Yield Statement (Visual Basic)"
-
+title: "Yield Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Yield"
@@ -17,26 +17,13 @@ helpviewer_keywords:
   - "Yield statement [Visual Basic]"
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
 caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Yield Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Sends the next element of a collection to a `For Each...Next` statement.  
   
 ## Syntax  
@@ -47,8 +34,9 @@ Yield expression
   
 #### Parameters  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`expression`|Required. An expression that is implicitly convertible to the type of the iterator function or `Get` accessor that contains the `Yield` statement.|  
   
 ## Remarks  
@@ -62,7 +50,7 @@ Yield expression
   
  "Yield" is not a reserved word and has special meaning only when it is used in an `Iterator` function or `Get` accessor.  
   
- For more information about iterator functions and `Get` accessors, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For more information about iterator functions and `Get` accessors, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## Iterator Functions and Get Accessors  
  The declaration of an iterator function or `Get` accessor must meet the following requirements:  
@@ -75,7 +63,7 @@ Yield expression
   
  An iterator function cannot occur in an event, instance constructor, static constructor, or static destructor.  
   
- An iterator function can be an anonymous function. For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ An iterator function can be an anonymous function. For more information, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
   
 ## Exception Handling  
  A `Yield` statement can be inside a `Try` block of a [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.  
@@ -105,15 +93,18 @@ Next
   
  The return type of the iterator method is <xref:System.Collections.Generic.IEnumerable%601>, an iterator interface type. When the iterator method is called, it returns an enumerable object that contains the powers of a number.  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## Example  
  The following example demonstrates a `Get` accessor that is an iterator. The property declaration includes an `Iterator` modifier.  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
- For additional examples, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For additional examples, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+  
+## Requirements  
+ [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)]  
   
 ## See Also  
- [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
+ [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)   
  [Statements](../../../visual-basic/language-reference/statements/index.md)

@@ -1,8 +1,8 @@
 ---
-title: "Multithreading with the BackgroundWorker Component (Visual Basic)"
+title: "Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: e4cd9b2a-f924-470e-a16e-50274709b40e
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This walkthrough demonstrates how to create a multithreaded Windows Forms application that searches a text file for occurrences of a word. It demonstrates:  
   
 -   Defining a class with a method that can be called by the <xref:System.ComponentModel.BackgroundWorker> component.  
@@ -282,5 +279,5 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
   
 ## See Also  
  [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)   
- [Walkthrough: Authoring a Simple Multithreaded Component with Visual Basic](http://msdn.microsoft.com/library/05693b70-3566-4d91-9f2c-c9bc4ccb3001)   
+ [Walkthrough: Authoring a Simple Multithreaded Component with Visual Basic](../Topic/Walkthrough:%20Authoring%20a%20Simple%20Multithreaded%20Component%20with%20Visual%20Basic.md)   
  [How to: Subscribe to and Unsubscribe from Events](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)

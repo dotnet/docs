@@ -1,39 +1,24 @@
 ---
-title: "Argument &#39;&lt;argumentname1&gt;&#39; must be less than or equal the length of argument &#39;&lt;argumentname2&gt;&#39;"
-
+title: "Argument &#39;&lt;argumentname1&gt;&#39; must be less than or equal the length of argument &#39;&lt;argumentname2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 55a2401f-a44d-4671-b35e-878f48594162
 caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Argument &#39;&lt;argumentname1&gt;&#39; must be less than or equal the length of argument &#39;&lt;argumentname2&gt;&#39;
 The length of a supplied argument exceeds the length of the argument it is replacing.  
   
-## To correct this error  
+### To correct this error  
   
 -   Make the length of the first argument less than or equal to the length of the second argument.  
   

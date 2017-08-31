@@ -1,13 +1,13 @@
 ---
-title: "Anonymous type member name can be inferred only from a simple or qualified name with no arguments"
-
+title: "Anonymous type member name can be inferred only from a simple or qualified name with no arguments | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc36556"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC36556"
 ms.assetid: e3ba1f33-3a71-4f03-9b04-ed5ec17de17c
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Anonymous type member name can be inferred only from a simple or qualified name with no arguments
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 You cannot infer an anonymous type member name from a complex expression.  
   
 ```vb  
@@ -49,7 +37,7 @@ Dim numbers() As Integer = {1, 2, 3, 4, 5}
   
  **Error ID:** BC36556  
   
-## To correct this error  
+### To correct this error  
   
 -   Assign the expression to a member name, as shown in the following code:  
   

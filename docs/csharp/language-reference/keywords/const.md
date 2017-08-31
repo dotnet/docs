@@ -1,9 +1,13 @@
 ---
-title: "const (C# Reference)"
+title: "const (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "const_CSharpKeyword"
@@ -16,26 +20,16 @@ ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # const (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 You use the `const` keyword to declare a constant field or a constant local. Constant fields and locals aren't variables and may not be modified. Constants can be numbers, Boolean values, strings, or a null reference. Don’t create a constant to represent information that you expect to change at any time. For example, don’t use a constant field to store the price of a service, a product version number, or the brand name of a company. These values can change over time, and because compilers propagate constants, other code compiled with your libraries will have to be recompiled to see the changes. See also the [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword. For example:  
   
-```csharp
-const int x = 0;  
+```  
+  
+      const int x = 0;  
 public const double gravitationalConstant = 6.673e-11;  
 private const string productName = "Visual C#";  
 ```  
@@ -47,7 +41,7 @@ private const string productName = "Visual C#";
   
  The constant declaration can declare multiple constants, such as:  
   
-```csharp
+```  
 public const double x = 1.0, y = 2.0, z = 3.0;  
 ```  
   
@@ -55,7 +49,7 @@ public const double x = 1.0, y = 2.0, z = 3.0;
   
  A constant can participate in a constant expression, as follows:  
   
-```csharp
+```  
 public const int c1 = 5;  
 public const int c2 = c1 + 100;  
 ```  
@@ -64,15 +58,15 @@ public const int c2 = c1 + 100;
 >  The [readonly](../../../csharp/language-reference/keywords/readonly.md) keyword differs from the `const` keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be initialized either at the declaration or in a constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, although a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants, as in this line: `public static readonly uint l1 = (uint)DateTime.Now.Ticks;`  
   
 ## Example  
- [!code-cs[csrefKeywordsModifiers#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#5)]  
   
 ## Example  
  This example demonstrates how to use constants as local variables.  
   
- [!code-cs[csrefKeywordsModifiers#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_2.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#6)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

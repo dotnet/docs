@@ -1,8 +1,8 @@
 ---
-title: "Valid Content of XElement and XDocument Objects2"
+title: "Valid Content of XElement and XDocument Objects2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 400bb692-478a-40b6-ac1b-4ccbb4cbbd02
 caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Valid Content of XElement and XDocument Objects
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic describes the valid arguments that can be passed to constructors and methods that you use to add content to elements and documents.  
   
 ## Valid Content  

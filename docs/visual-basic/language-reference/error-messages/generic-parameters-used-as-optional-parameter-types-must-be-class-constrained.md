@@ -1,13 +1,13 @@
 ---
-title: "Generic parameters used as optional parameter types must be class constrained"
-
+title: "Generic parameters used as optional parameter types must be class constrained | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc32124"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC32124"
 ms.assetid: 55aa8b2a-9ce3-4620-a710-2f9b0feb6143
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Generic parameters used as optional parameter types must be class constrained
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A procedure is declared with an optional parameter that uses a type parameter that is not constrained to be a reference type.  
   
  You must always supply a default value for each optional parameter. If the parameter is of a reference type, the optional value must be `Nothing`, which is a valid value for any reference type. However, if the parameter is of a value type, that type must be an elementary data type predefined by Visual Basic. This is because a composite value type, such as a user-defined structure, has no valid default value.  
@@ -45,7 +33,7 @@ A procedure is declared with an optional parameter that uses a type parameter th
   
  **Error ID:** BC32124  
   
-## To correct this error  
+### To correct this error  
   
 -   Constrain the type parameter to accept only a reference type, or do not use it for the optional parameter.  
   

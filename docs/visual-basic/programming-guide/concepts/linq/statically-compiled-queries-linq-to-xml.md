@@ -1,8 +1,8 @@
 ---
-title: "Statically Compiled Queries (LINQ to XML) (Visual Basic)"
+title: "Statically Compiled Queries (LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 3f4825c7-c3b0-48da-ba4e-8e97fb2a2f34
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Statically Compiled Queries (LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 One of the most important performance benefits LINQ to XML, as opposed to <xref:System.Xml.XmlDocument>, is that queries in LINQ to XML are statically compiled, whereas XPath queries must be interpreted at run time. This feature is built in to LINQ to XML, so you do not have to perform extra steps to take advantage of it, but it is helpful to understand the distinction when choosing between the two technologies. This topic explains the difference.  
   
 ## Statically Compiled Queries vs. XPath  
@@ -38,6 +40,7 @@ Dim list1 = From el In po.Descendants("Address")
 For Each el In list1  
     Console.WriteLine(el)  
 Next  
+  
 ```  
   
  The query expression in this example is re-written by the compiler to method-based query syntax. The following example, which is written in method-based query syntax, produces the same results as the previous one:  
@@ -81,6 +84,7 @@ For Each n As Xml.XmlNode In nl
     Console.WriteLine(n.OuterXml)  
 Next  
 reader.Close()  
+  
 ```  
   
  This query returns the same output as the examples that use LINQ to XML; the only difference is that LINQ to XML indents the printed XML, whereas <xref:System.Xml.XmlDocument> does not.  

@@ -1,13 +1,13 @@
 ---
-title: "Using Variance in Delegates (C#)"
+title: "Using Variance in Delegates (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 1638c95d-dc8b-40c1-972c-c2dcf84be55e
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Using Variance in Delegates (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 When you assign a method to a delegate, *covariance* and *contravariance* provide flexibility for matching a delegate type with a method signature. Covariance permits a method to have return type that is more derived than that defined in the delegate. Contravariance permits a method that has parameter types that are less derived than those in the delegate type.  
   
 ## Example 1: Covariance  
@@ -69,7 +66,7 @@ class Program
 ### Code  
   
 ```csharp  
-// Event handler that accepts a parameter of the EventArgs type.  
+// Event hander that accepts a parameter of the EventArgs type.  
 private void MultiHandler(object sender, System.EventArgs e)  
 {  
     label1.Text = System.DateTime.Now.ToString();  

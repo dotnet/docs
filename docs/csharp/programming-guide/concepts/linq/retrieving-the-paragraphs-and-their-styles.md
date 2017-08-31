@@ -1,13 +1,13 @@
 ---
-title: "Retrieving the Paragraphs and Their Styles (C#)"
+title: "Retrieving the Paragraphs and Their Styles (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: c2f767f8-57b1-4b4b-af04-89ffb1f7067d
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Retrieving the Paragraphs and Their Styles (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 In this example, we write a query that retrieves the paragraph nodes from a WordprocessingML document. It also identifies the style of each paragraph.  
   
  This query builds on the query in the previous example, [Finding the Default Paragraph Style (C#)](../../../../csharp/programming-guide/concepts/linq/finding-the-default-paragraph-style.md), which retrieves the default style from the list of styles. This information is required so that the query can identify the style of paragraphs that do not have a style explicitly set. Paragraph styles are set through the `w:pPr` element; if a paragraph does not contain this element, it is formatted with the default style.  

@@ -1,13 +1,13 @@
 ---
-title: "How to: Disable Adding and Deleting DataRepeater Items (Visual Studio)"
-
+title: "How to: Disable Adding and Deleting DataRepeater Items (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "DataRepeater, disabling add"
 ms.assetid: 298d8f60-ddfe-4361-ab66-cf76d0df5220
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Disable Adding and Deleting DataRepeater Items (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 By default, users can add and delete items in a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control. Users can add a new item by pressing CTRL+N when a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterItemEventArgs.DataRepeaterItem%2A> has focus or by clicking the **AddNewItem** button on the <xref:System.Windows.Forms.BindingNavigator> control. Users can delete an item by pressing DELETE when a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterItemEventArgs.DataRepeaterItem%2A> has focus or by clicking the **DeleteItem** button on the <xref:System.Windows.Forms.BindingNavigator> control.  
   
  You can disable adding and/or deleting at design time or at run time.  
@@ -68,8 +56,8 @@ By default, users can add and delete items in a <xref:Microsoft.VisualBasic.Powe
   
 12. Add the following code to the `BindingNavigatorDeleteItem_EnabledChanged` event handler:  
   
-     [!code-cs[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio_1.cs)]
-     [!code-vb[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio_1.vb)]  
+     [!code-csharp[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterDisableAddDelete/CS/DisableAddDelete.cs#1)]
+     [!code-vb[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterDisableAddDelete/vb/form1.vb#1)]  
   
     > [!NOTE]
     >  This step is necessary because the <xref:System.Windows.Forms.BindingSource> will enable the **DeleteItem** button every time that the current record changes.  
@@ -80,13 +68,13 @@ By default, users can add and delete items in a <xref:Microsoft.VisualBasic.Powe
   
 2.  Add the following code to the `Form_Load` event:  
   
-     [!code-cs[VbPowerPacksDataRepeaterDisableAddDelete#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio_2.cs)]
-     [!code-vb[VbPowerPacksDataRepeaterDisableAddDelete#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio_2.vb)]  
+     [!code-csharp[VbPowerPacksDataRepeaterDisableAddDelete#2](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterDisableAddDelete/CS/DisableAddDelete.cs#2)]
+     [!code-vb[VbPowerPacksDataRepeaterDisableAddDelete#2](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterDisableAddDelete/vb/form1.vb#2)]  
   
 3.  Add the following code to the `BindingNavigatorDeleteItem_EnabledChanged` event handler:  
   
-     [!code-cs[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio_1.cs)]
-     [!code-vb[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio_1.vb)]  
+     [!code-csharp[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterDisableAddDelete/CS/DisableAddDelete.cs#1)]
+     [!code-vb[VbPowerPacksDataRepeaterDisableAddDelete#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterDisableAddDelete/vb/form1.vb#1)]  
   
     > [!NOTE]
     >  This step is necessary because the <xref:System.Windows.Forms.BindingSource> will enable the **DeleteItem** button every time that the current record changes.  

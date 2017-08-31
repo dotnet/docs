@@ -1,13 +1,13 @@
 ---
-title: "Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class"
-
+title: "Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30369"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "BC30369"
 ms.assetid: 39d9466b-c1f3-4406-91a5-3d6c52d23a3d
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 You have tried to refer to a non-shared member of a class from within a shared procedure. The following example demonstrates such a situation.  
   
 ```  
@@ -57,7 +45,7 @@ End Class
   
  **Error ID:** BC30369  
   
-## To correct this error  
+### To correct this error  
   
 1.  Decide whether you want the member to be shared among all instances of the class, or kept individual for each instance.  
   

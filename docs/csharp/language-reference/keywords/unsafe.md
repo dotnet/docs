@@ -1,9 +1,13 @@
 ---
-title: "unsafe (C# Reference)"
+title: "unsafe (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "unsafe_CSharpKeyword"
@@ -16,27 +20,17 @@ ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # unsafe (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The `unsafe` keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md).  
   
  You can use the `unsafe` modifier in the declaration of a type or a member. The entire textual extent of the type or member is therefore considered an unsafe context. For example, the following is a method declared with the `unsafe` modifier:  
   
 ```  
+  
       unsafe static void FastCopy(byte[] src, byte[] dst, int count)  
 {  
     // Unsafe context: can use pointers here.  
@@ -46,25 +40,27 @@ The `unsafe` keyword denotes an unsafe context, which is required for any operat
  The scope of the unsafe context extends from the parameter list to the end of the method, so pointers can also be used in the parameter list:  
   
 ```  
+  
 unsafe static void FastCopy ( byte* ps, byte* pd, int count ) {...}  
 ```  
   
  You can also use an unsafe block to enable the use of an unsafe code inside this block. For example:  
   
 ```  
+  
       unsafe  
 {  
     // Unsafe context: can use pointers here.  
 }  
 ```  
   
- To compile unsafe code, you must specify the [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md) compiler option. Unsafe code is not verifiable by the common language runtime.  
+ To compile unsafe code, you must specify the [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-csharp-compiler-options.md) compiler option. Unsafe code is not verifiable by the common language runtime.  
   
 ## Example  
- [!code-cs[csrefKeywordsModifiers#22](../../../csharp/language-reference/keywords/codesnippet/CSharp/unsafe_1.cs)]  
+ [!code-csharp[csrefKeywordsModifiers#22](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#22)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -1,13 +1,13 @@
 ---
-title: "How to: Print a Form by Using the PrintForm Component (Visual Basic)"
-
+title: "How to: Print a Form by Using the PrintForm Component (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,26 +15,13 @@ helpviewer_keywords:
   - "Form, printing"
 ms.assetid: df963bf6-3ee1-49f4-8b2e-1d95d1beb0be
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Print a Form by Using the PrintForm Component (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables you to quickly print an image of a form exactly as it appears on screen without using a <xref:System.Drawing.Printing.PrintDocument> component. The following procedures show how to print a form to a printer, to a print preview window, and to an Encapsulated PostScript file.  
   
  The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
@@ -45,7 +32,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables
   
      The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component is added to the component tray.  
   
-2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction.PrintToPrinter>.  
+2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction>.  
   
 3.  Add the following code in the appropriate event handler (for example, in the `Click` event handler for a **Print**`Button`).  
   
@@ -59,7 +46,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables
   
      The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component is added to the component tray.  
   
-2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction.PrintToPreview>.  
+2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction>.  
   
 3.  Add the following code in the appropriate event handler (for example, in the `Click` event handler for a **Print**`Button`).  
   
@@ -73,7 +60,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables
   
      The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component is added to the component tray.  
   
-2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction.PrintToFile>.  
+2.  In the **Properties** window, set the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A> property to <xref:System.Drawing.Printing.PrintAction>.  
   
 3.  Optionally, select the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintFileName%2A> property and type the full path and file name for the destination file.  
   

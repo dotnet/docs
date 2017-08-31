@@ -1,13 +1,13 @@
 ---
-title: "Line is too long"
-
+title: "Line is too long | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30494"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC30494"
 ms.assetid: 27270ec3-82a4-4693-a948-dd4664a5f060
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Line is too long
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Source text lines cannot exceed 65535 characters.  
   
  **Error ID:** BC30494  
   
-## To correct this error  
+### To correct this error  
   
 -   Shorten the length of the line to 65535 characters or fewer.  
   

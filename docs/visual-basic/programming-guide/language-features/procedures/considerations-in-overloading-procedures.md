@@ -1,13 +1,13 @@
 ---
-title: "Considerations in Overloading Procedures (Visual Basic)"
+title: "Considerations in Overloading Procedures (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -36,26 +36,14 @@ helpviewer_keywords:
   - "procedures, parameter lists"
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
 caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Considerations in Overloading Procedures (Visual Basic)
-When you overload a procedure, you must use a different *signature* for each overloaded version. This usually means each version must specify a different parameter list. For more information, see "Different Signature" in [Procedure Overloading](./procedure-overloading.md).  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+When you overload a procedure, you must use a different *signature* for each overloaded version. This usually means each version must specify a different parameter list. For more information, see "Different Signature" in [Procedure Overloading](../../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md).  
   
  You can overload a `Function` procedure with a `Sub` procedure, and vice versa, provided they have different signatures. Two overloads cannot differ only in that one has a return value and the other does not.  
   
@@ -64,7 +52,7 @@ When you overload a procedure, you must use a different *signature* for each ove
 ## Alternatives to Overloaded Versions  
  You sometimes have alternatives to overloaded versions, particularly when the presence of arguments is optional or their number is variable.  
   
- Keep in mind that optional arguments are not necessarily supported by all languages, and parameter arrays are limited to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. If you are writing a procedure that is likely to be called from code written in any of several different languages, overloaded versions offer the greatest flexibility.  
+ Keep in mind that optional arguments are not necessarily supported by all languages, and parameter arrays are limited to [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)]. If you are writing a procedure that is likely to be called from code written in any of several different languages, overloaded versions offer the greatest flexibility.  
   
 ### Overloads and Optional Arguments  
  When the calling code can optionally supply or omit one or more arguments, you can define multiple overloaded versions or use optional parameters.  
@@ -81,7 +69,7 @@ When you overload a procedure, you must use a different *signature* for each ove
   
 -   The only required action when the calling code does not supply an optional argument is to set the parameter to a default value. In such a case, the procedure code can be less complicated if you define a single version with one or more `Optional` parameters.  
   
- For more information, see [Optional Parameters](./optional-parameters.md).  
+ For more information, see [Optional Parameters](../../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md).  
   
 ### Overloads and ParamArrays  
  When the calling code can pass a variable number of arguments, you can define multiple overloaded versions or use a parameter array.  
@@ -102,16 +90,16 @@ When you overload a procedure, you must use a different *signature* for each ove
   
 -   The procedure logic lends itself to iterating through all the values the calling code passes, performing essentially the same operations on every value.  
   
- For more information, see [Parameter Arrays](./parameter-arrays.md).  
+ For more information, see [Parameter Arrays](../../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md).  
   
 ## Implicit Overloads for Optional Parameters  
  A procedure with an [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) parameter is equivalent to two overloaded procedures, one with the optional parameter and one without it. You cannot overload such a procedure with a parameter list corresponding to either of these. The following declarations illustrate this.  
   
- [!code-vb[VbVbcnProcedures#58](./codesnippet/VisualBasic/considerations-in-overloading-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#58](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#58)]  
   
- [!code-vb[VbVbcnProcedures#60](./codesnippet/VisualBasic/considerations-in-overloading-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#60](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#60)]  
   
- [!code-vb[VbVbcnProcedures#61](./codesnippet/VisualBasic/considerations-in-overloading-procedures_3.vb)]  
+ [!code-vb[VbVbcnProcedures#61](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#61)]  
   
  For a procedure with more than one optional parameter, there is a set of implicit overloads, arrived at by logic similar to that in the preceding example.  
   
@@ -126,13 +114,13 @@ When you overload a procedure, you must use a different *signature* for each ove
   
  The following declarations illustrate these implicit overloads.  
   
- [!code-vb[VbVbcnProcedures#68](./codesnippet/VisualBasic/considerations-in-overloading-procedures_4.vb)]  
+ [!code-vb[VbVbcnProcedures#68](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#68)]  
   
- [!code-vb[VbVbcnProcedures#70](./codesnippet/VisualBasic/considerations-in-overloading-procedures_5.vb)]  
+ [!code-vb[VbVbcnProcedures#70](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#70)]  
   
  You cannot overload such a procedure with a parameter list that takes a one-dimensional array for the parameter array. However, you can use the signatures of the other implicit overloads. The following declarations illustrate this.  
   
- [!code-vb[VbVbcnProcedures#71](./codesnippet/VisualBasic/considerations-in-overloading-procedures_6.vb)]  
+ [!code-vb[VbVbcnProcedures#71](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#71)]  
   
 ## Typeless Programming as an Alternative to Overloading  
  If you want to allow the calling code to pass different data types to a parameter, an alternative approach is typeless programming. You can set the type checking switch to `Off` with either the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) or the [/optionstrict](../../../../visual-basic/reference/command-line-compiler/optionstrict.md) compiler option. Then you do not have to declare the parameter's data type. However, this approach has the following disadvantages compared to overloading:  
@@ -144,12 +132,12 @@ When you overload a procedure, you must use a different *signature* for each ove
 -   The compiler cannot signal an error if the calling code passes a data type that the procedure does not support.  
   
 ## See Also  
- [Procedures](./index.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Troubleshooting Procedures](./troubleshooting-procedures.md)   
- [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)   
- [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)   
- [How to: Overload a Procedure that Takes Optional Parameters](./how-to-overload-a-procedure-that-takes-optional-parameters.md)   
- [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)   
- [Overload Resolution](./overload-resolution.md)   
+ [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
+ [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
+ [Troubleshooting Procedures](../../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   
+ [How to: Define Multiple Versions of a Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-multiple-versions-of-a-procedure.md)   
+ [How to: Call an Overloaded Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-overloaded-procedure.md)   
+ [How to: Overload a Procedure that Takes Optional Parameters](../../../../visual-basic/programming-guide/language-features/procedures/how-to-overload-a-procedure-that-takes-optional-parameters.md)   
+ [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](../../../../visual-basic/programming-guide/language-features/procedures/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)   
+ [Overload Resolution](../../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)   
  [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)

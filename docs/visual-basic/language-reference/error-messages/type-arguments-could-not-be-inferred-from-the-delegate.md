@@ -1,13 +1,13 @@
 ---
-title: "Type arguments could not be inferred from the delegate"
-
+title: "Type arguments could not be inferred from the delegate | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc36564"
@@ -18,32 +18,20 @@ helpviewer_keywords:
   - "BC36564"
 ms.assetid: 21312807-e1cd-4ac1-ae1c-c28a9c25164d
 caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Type arguments could not be inferred from the delegate
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An assignment statement uses `AddressOf` to assign the address of a generic procedure to a delegate, but it does not supply any type arguments to the generic procedure.  
   
  Normally, when you invoke a generic type, you supply a type argument for each type parameter that the generic type defines. If you do not supply any type arguments, the compiler attempts to infer the types to be passed to the type parameters. If the context does not provide enough information for the compiler to infer the types, an error is generated.  
   
  **Error ID:** BC36564  
   
-## To correct this error  
+### To correct this error  
   
 -   Specify the type arguments for the generic procedure in the `AddressOf` expression.  
   

@@ -1,13 +1,13 @@
 ---
-title: "Sample XML File: Books (LINQ to XML)"
+title: "Sample XML File: Books (LINQ to XML)1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,15 +15,12 @@ ms.assetid: b75ab1a2-fb76-4df9-bd01-c45ec22a29ef
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Sample XML File: Books (LINQ to XML)
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. The file contains information about books.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. The file contains information about books.  
   
 ## books.xml  
   

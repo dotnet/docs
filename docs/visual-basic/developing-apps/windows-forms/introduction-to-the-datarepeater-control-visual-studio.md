@@ -1,13 +1,13 @@
 ---
-title: "Introduction to the DataRepeater Control (Visual Studio)"
-
+title: "Introduction to the DataRepeater Control (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "DataRepeater"
 ms.assetid: 78a52a1d-65f0-4ecb-97ff-53bc114300c5
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Introduction to the DataRepeater Control (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The Visual Basic Power Packs <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control is a scrollable container for controls that display repeated data, for example, rows in a database table. It can be used as an alternative to the <xref:System.Windows.Forms.DataGridView> control when you need more control over the layout of the data. The <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> "repeats" a group of related controls by creating multiple instances in a scrolling view. This enables users to view several records at the same time.  
   
 ## Overview  
@@ -43,7 +31,7 @@ The Visual Basic Power Packs <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater
   
  At run time, the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate%2A> is copied to a virtual <xref:Microsoft.VisualBasic.PowerPacks.DataRepeaterItem> object that is used to display the data when each record is scrolled into view. You can customize the display of individual records in the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DrawItem> event, for example, highlighting a field based on the value that it contains. For more information, see [How to: Change the Appearance of a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md).  
   
- The most common use for a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control is to display data from a database table or other bound data source. In addition to [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data objects, the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control can bind to any class that implements the <xref:System.Collections.IList> interface (including arrays), any class that implements the <xref:System.ComponentModel.IListSource> interface, any class that implements the <xref:System.ComponentModel.IBindingList> interface, or any class that implements the <xref:System.ComponentModel.IBindingListView> interface.  
+ The most common use for a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control is to display data from a database table or other bound data source. In addition to [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] data objects, the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control can bind to any class that implements the <xref:System.Collections.IList> interface (including arrays), any class that implements the <xref:System.ComponentModel.IListSource> interface, any class that implements the <xref:System.ComponentModel.IBindingList> interface, or any class that implements the <xref:System.ComponentModel.IBindingListView> interface.  
   
 ### Data Binding  
  Typically, you accomplish data binding by dragging fields from the **Data Sources** window onto the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control. For more information, see [How to: Display Bound Data in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md).  
@@ -64,7 +52,7 @@ The Visual Basic Power Packs <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater
   
  Note that some properties apply to the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control itself whereas others apply only to the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate%2A>. Make sure that you have the correct section of the control selected before you set properties. For more information, see [How to: Change the Appearance of a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md).  
   
- Other customizations include controlling the ability to add or delete records, adding search capabilities, and displaying related data in a master and detail format. For more information, see [How to: Disable Adding and Deleting DataRepeater Items](../../../visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md), [How to: Search Data in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md), and [How to: Create a Master/Detail Form by Using Two DataRepeater Controls (Visual Studio)](../../../visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md).  
+ Other customizations include controlling the ability to add or delete records, adding search capabilities, and displaying related data in a master and detail format. For more information, see [How to: Disable Adding and Deleting DataRepeater Items](../../../visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md), [How to: Search Data in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md), and [How to: Create a Master/Detail Form by Using Two DataRepeater Controls (Visual Studio)](../../../visual-basic/developing-apps/windows-forms/eec43ae3-05d8-45a1-8d41-3803c6359dbe.md).  
   
 ## See Also  
  [DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/datarepeater-control-visual-studio.md)   

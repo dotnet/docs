@@ -1,13 +1,13 @@
 ---
-title: "Type parameters cannot be used as qualifiers"
-
+title: "Type parameters cannot be used as qualifiers | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc32098"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC32098"
 ms.assetid: bab05325-dde8-4621-a5f6-368b5b7b2d76
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Type parameters cannot be used as qualifiers
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A programming element is qualified with a qualification string that includes a type parameter.  
   
  A type parameter represents a requirement for a type that is to be supplied when the generic type is constructed. It does not represent a specific defined type. A qualification string must include only elements that are defined at compile time.  
@@ -54,7 +42,7 @@ End Function
   
  **Error ID:** BC32098  
   
-## To correct this error  
+### To correct this error  
   
 1.  Remove the type parameter from the qualification string, or replace it with a defined type.  
   

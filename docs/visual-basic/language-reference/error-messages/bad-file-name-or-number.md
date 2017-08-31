@@ -1,13 +1,13 @@
 ---
-title: "Bad file name or number"
-
+title: "Bad file name or number | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID52"
@@ -15,25 +15,13 @@ dev_langs:
   - "VB"
 ms.assetid: d0e96aea-7621-48f6-a78b-5d37d18aaa4e
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Bad file name or number
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An error occurred while trying to access the specified file. Among the possible causes for this error are:  
   
 -   A statement refers to a file with a file name or number that was not specified in the `FileOpen` statement or that was specified in a `FileOpen` statement but was subsequently closed.  
@@ -42,7 +30,7 @@ An error occurred while trying to access the specified file. Among the possible 
   
 -   A statement refers to a file name or number that is not valid.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Make sure the file name is specified in a `FileOpen` statement. Note that if you invoked the `FileClose` statement without arguments, you may have inadvertently closed all open files.  
   

@@ -1,39 +1,24 @@
 ---
-title: "File information cannot be queried if the file does not exist"
-
+title: "File information cannot be queried if the file does not exist | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2bf50d79-2a74-403f-833c-6cabd2c213ce
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # File information cannot be queried if the file does not exist
 An attempt has been made to query a <xref:System.IO.FileInfo> object for information about a file that does not exist. Usually this is due to a mistake made when supplying the file name.  
   
-## To correct this error  
+### To correct this error  
   
 -   Check that you are supplying the correct file name.  
   

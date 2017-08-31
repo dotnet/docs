@@ -1,8 +1,8 @@
 ---
-title: "How to: Enable XML IntelliSense in Visual Basic"
+title: "How to: Enable XML IntelliSense in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "IntelliSense [Visual Basic], XML"
 ms.assetid: af67d0ee-a4a6-4abf-9c07-5a8cfe80d111
 caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Enable XML IntelliSense in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 XML IntelliSense in Visual Basic provides word completion for elements that are defined in an XML schema. To enable XML IntelliSense in Visual Basic, you must do the following:  
   
 1.  Obtain the XML schema (XSD) file or files for the XML files that your application will read from or write to.  
@@ -46,9 +34,9 @@ XML IntelliSense in Visual Basic provides word completion for elements that are 
   
      To import a target namespace, use the `Imports` statement, or add a namespace for all code files in a project by using the **References** page of the Project Designer.  
   
- For more information on the capabilities of XML IntelliSense in Visual Basic, see [XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md). For more information on importing XML namespaces, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) or [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
+ For more information on the capabilities of XML IntelliSense in Visual Basic, see [XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md). For more information on importing XML namespaces, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) or [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic).  
   
-[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../../../../includes/note-settings-general-md.md)]  
   
  ![link to video](../../../../visual-basic/programming-guide/language-features/xml/media/playvideo.gif "PlayVideo") For a video version of this topic, see [Video How to: Enable XML IntelliSense in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=102466). For a related video demonstration, see [How Do I Enable XML IntelliSense and Use XML Namespaces?](http://go.microsoft.com/fwlink/?LinkId=143035).  
   
@@ -96,11 +84,11 @@ XML IntelliSense in Visual Basic provides word completion for elements that are 
   
 2.  At the beginning of the code file, add an `Imports` statement for the target XML namespace, as shown in the following example.  
   
-     [!code-vb[VbXMLSamples#1](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-enable-xml-intellisense_1.vb)]  
+     [!code-vb[VbXMLSamples#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples1.vb#1)]  
   
      To import an XML namespace as the default namespace, that is, the namespace that is applied to XML elements and attributes that do not have a namespace prefix, add an `Imports` statement for the target default XML namespace. Do not specify a namespace prefix. Following is an example of an `Imports` statement.  
   
-     [!code-vb[VbXmlSamples#50](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-enable-xml-intellisense_2.vb)]  
+     [!code-vb[VbXmlSamples#50](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples1.vb#50)]  
   
 #### To import an XML namespace for all files in a project  
   
@@ -112,5 +100,5 @@ XML IntelliSense in Visual Basic provides word completion for elements that are 
   
 ## See Also  
  [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)   
- [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)   
+ [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)   
  [XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md)

@@ -1,13 +1,13 @@
 ---
-title: "How to: Add Custom Methods for LINQ Queries (C#)"
+title: "How to: Add Custom Methods for LINQ Queries (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 1a500f60-2e10-49fb-8b2a-d8d08e4817cb
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Add Custom Methods for LINQ Queries (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 You can extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, in addition to the standard average or maximum operations, you can create a custom aggregate method to compute a single value from a sequence of values. You can also create a method that works as a custom filter or a specific data transform for a sequence of values and returns a new sequence. Examples of such methods are <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A>, and <xref:System.Linq.Enumerable.Reverse%2A>.  
   
  When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md).  
@@ -73,7 +70,7 @@ var query1 = numbers1.Median();
   
 Console.WriteLine("double: Median = " + query1);  
 ```  
-
+  
 ```csharp  
 /*  
  This code produces the following output:  
@@ -95,7 +92,8 @@ public static double Median(this IEnumerable<int> source)
 {  
     return (from num in source select (double)num).Median();  
 }  
-```   
+```  
+  
  You can now call the `Median` overloads for both `integer` and `double` types, as shown in the following code:  
   
 ```csharp  
@@ -122,7 +120,7 @@ Console.WriteLine("int: Median = " + query2);
  Integer: Median = 3  
 */  
 ```  
-
+  
 #### To create a generic overload  
  You can also create an overload that accepts a sequence of generic objects. This overload takes a delegate as a parameter and uses it to convert a sequence of objects of a generic type to a specific type.  
   
@@ -169,7 +167,8 @@ Console.WriteLine("String: Median = " + query4);
  Integer: Median = 3  
  String: Median = 4  
 */  
-```   
+```  
+  
 ## Adding a Method That Returns a Collection  
  You can extend the <xref:System.Collections.Generic.IEnumerable%601> interface with a custom query method that returns a sequence of values. In this case, the method must return a collection of type <xref:System.Collections.Generic.IEnumerable%601>. Such methods can be used to apply filters or data transforms to a sequence of values.  
   
@@ -198,6 +197,7 @@ public static IEnumerable<T> AlternateElements<T>(this IEnumerable<T> source)
     return list;  
 }  
 ```  
+  
  You can call this extension method for any enumerable collection just as you would call other methods from the <xref:System.Collections.Generic.IEnumerable%601> interface, as shown in the following code:  
   
 ```csharp  

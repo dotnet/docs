@@ -1,13 +1,13 @@
 ---
-title: "Error Statement"
-
+title: "Error Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.error"
@@ -21,25 +21,13 @@ helpviewer_keywords:
   - "errors [Visual Basic], simulating"
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Error Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Simulates the occurrence of an error.  
   
 ## Syntax  

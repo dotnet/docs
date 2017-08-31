@@ -1,37 +1,25 @@
 ---
-title: "How to: Invoke a Delegate Method (Visual Basic)"
+title: "How to: Invoke a Delegate Method (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: b56866ae-abf9-4a5a-a855-486359455e9c
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Invoke a Delegate Method (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example shows how to associate a method with a delegate and then invoke that method through the delegate.  
   
 ### Create the delegate and matching procedures  
@@ -66,6 +54,6 @@ This example shows how to associate a method with a delegate and then invoke tha
   
 ## See Also  
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)   
- [Multithreaded Applications](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6)
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)   
+ [Multithreaded Applications](../Topic/Multithreaded%20Applications%20\(C%23%20and%20Visual%20Basic\).md)

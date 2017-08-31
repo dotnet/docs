@@ -1,9 +1,13 @@
 ---
-title: "&amp; Operator (C# Reference)"
+title: "&amp; Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "&_CSharpKeyword"
@@ -18,23 +22,11 @@ ms.assetid: afa346d5-90ec-4b1f-a2c8-3881f018741d
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # &amp; Operator (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The & operator can function as either a unary or a binary operator.  
   
 ## Remarks  
@@ -44,12 +36,12 @@ The & operator can function as either a unary or a binary operator.
   
  The `&` operator evaluates both operators regardless of the first one's value. For example:  
   
- [!code-cs[csRefOperators#37](../../../csharp/language-reference/operators/codesnippet/CSharp/and-operator_1.cs)]  
+ [!code-csharp[csRefOperators#37](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#37)]  
   
- User-defined types can overload the binary `&` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). Operations on integral types are generally allowed on enumeration. When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
+ User-defined types can overload the binary `&` operator (see [operator](../../../csharp/language-reference/keywords/operator-csharp-reference.md)). Operations on integral types are generally allowed on enumeration. When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   
 ## Example  
- [!code-cs[csRefOperators#38](../../../csharp/language-reference/operators/codesnippet/CSharp/and-operator_2.cs)]  
+ [!code-csharp[csRefOperators#38](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#38)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

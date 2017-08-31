@@ -1,8 +1,8 @@
 ---
-title: "How to: Find the Set Difference Between Two Lists (LINQ) (Visual Basic)"
+title: "How to: Find the Set Difference Between Two Lists (LINQ) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: b5b25474-10a8-4df6-aab5-75621bb6b68e
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find the Set Difference Between Two Lists (LINQ) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example shows how to use LINQ to compare two lists of strings and output those lines that are in names1.txt but not in names2.txt.  
   
 ### To create the data files  

@@ -1,13 +1,13 @@
 ---
-title: "Join Clause (Visual Basic)"
-
+title: "Join Clause (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryJoinIn"
@@ -21,25 +21,13 @@ helpviewer_keywords:
   - "Join clause"
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Join Clause (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Combines two collections into a single collection. The join operation is based on matching keys and uses the `Equals` operator.  
   
 ## Syntax  
@@ -81,12 +69,12 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 ## Example  
  The following code example performs an implicit join to combine a list of customers with their orders.  
   
- [!code-vb[VbSimpleQuerySamples#13](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#13](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#13)]  
   
 ## Example  
  The following code example joins two collections by using the `Join` clause.  
   
- [!code-vb[VbSimpleQuerySamples#12](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_2.vb)]  
+ [!code-vb[VbSimpleQuerySamples#12](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples2.vb#12)]  
   
  This example will produce output similar to the following:  
   
@@ -99,7 +87,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 ## Example  
  The following code example joins two collections by using the `Join` clause with two key columns.  
   
- [!code-vb[VbSimpleQuerySamples#17](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_3.vb)]  
+ [!code-vb[VbSimpleQuerySamples#17](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples3.vb#17)]  
   
  The example will produce output similar to the following:  
   

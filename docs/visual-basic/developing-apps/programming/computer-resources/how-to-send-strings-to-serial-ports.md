@@ -1,13 +1,13 @@
 ---
-title: "How to: Send Strings to Serial Ports in Visual Basic"
+title: "How to: Send Strings to Serial Ports in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,26 +18,14 @@ helpviewer_keywords:
   - "serial ports, sending strings to"
 ms.assetid: 6ebf46cd-b2d0-4b2c-9a1f-be177b22ad52
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Send Strings to Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to send strings to the computer's serial ports in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+This topic describes how to use `My.Computer.Ports` to send strings to the computer's serial ports in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)].  
   
 ## Example  
  This example sends a string to the COM1 serial port. You may need to use a different serial port on your computer.  
@@ -48,7 +36,7 @@ This topic describes how to use `My.Computer.Ports` to send strings to the compu
   
  The <xref:System.IO.Ports.SerialPort.WriteLine%2A> method sends the data to the serial port.  
   
- [!code-vb[VbVbalrMyComputer#33](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-send-strings-to-serial-ports_1.vb)]  
+ [!code-vb[VbVbalrMyComputer#33](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#33)]  
   
 ## Compiling the Code  
   

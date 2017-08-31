@@ -1,8 +1,8 @@
 ---
-title: "Multithreaded Applications (Visual Basic)"
+title: "Multithreaded Applications (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,22 +13,19 @@ dev_langs:
   - "VB"
 ms.assetid: 02b0444b-2e68-4f2c-bc28-28c046004017
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Multithreaded Applications (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 With Visual Basic, you can write applications that perform multiple tasks at the same time. Tasks with the potential of holding up other tasks can execute on separate threads, a process known as *multithreading* or *free threading*.  
   
  Applications that use multithreading are more responsive to user input because the user interface stays active as processor-intensive tasks execute on separate threads. Multithreading is also useful when you create scalable applications, because you can add threads as the workload increases.  
   
 ## Creating and Using Threads  
- If you need more control over the behavior of your application's threads, you can manage the threads yourself. However, realize that writing correct multithreaded applications can be difficult: Your application may stop responding or experience transient errors caused by race conditions. For more information, see [Thread-Safe Components](http://msdn.microsoft.com/library/4f7c7377-a782-4bd0-aaa3-9db8c12945ee).  
+ If you need more control over the behavior of your application's threads, you can manage the threads yourself. However, realize that writing correct multithreaded applications can be difficult: Your application may stop responding or experience transient errors caused by race conditions. For more information, see [Thread-Safe Components](../Topic/Thread-Safe%20Components.md).  
   
  You create a new thread by declaring a variable of type <xref:System.Threading.Thread> and calling the constructor, providing the name of the procedure or method that you want to execute on the new thread. The following code provides an example.  
   

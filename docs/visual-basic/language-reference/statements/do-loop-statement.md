@@ -1,13 +1,13 @@
 ---
-title: "Do...Loop Statement (Visual Basic)"
-
+title: "Do...Loop Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Do"
@@ -31,51 +31,40 @@ helpviewer_keywords:
   - "Loop keyword, Do...Loop statement"
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
 caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Do...Loop Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Repeats a block of statements while a `Boolean` condition is `True` or until the condition becomes `True`.  
   
 ## Syntax  
   
 ```  
-Do { While | Until } condition  
-    [ statements ]  
+Do { While | Until } condition  
+    [ statements ]  
     [ Continue Do ]  
     [ statements ]  
-    [ Exit Do ]  
-    [ statements ]  
+    [ Exit Do ]  
+    [ statements ]  
 Loop  
 -or-  
 Do  
-    [ statements ]  
+    [ statements ]  
     [ Continue Do ]  
     [ statements ]  
-    [ Exit Do ]  
-    [ statements ]  
-Loop { While | Until } condition  
+    [ Exit Do ]  
+    [ statements ]  
+Loop { While | Until } condition  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`Do`|Required. Starts the definition of the `Do` loop.|  
 |`While`|Required unless `Until` is used. Repeat the loop until `condition` is `False`.|  
 |`Until`|Required unless `While` is used. Repeat the loop until `condition` is `True`.|  
@@ -111,22 +100,22 @@ Loop { While | Until } condition
 ## Example  
  In the following example, the statements in the loop continue to run until the `index` variable is greater than 10. The `Until` clause is at the end of the loop.  
   
- [!code-vb[VbVbalrStatements#131](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#131](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#131)]  
   
 ## Example  
  The following example uses a `While` clause instead of an `Until` clause, and `condition` is tested at the start of the loop instead of at the end.  
   
- [!code-vb[VbVbalrStatements#132](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#132](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#132)]  
   
 ## Example  
  In the following example, `condition` stops the loop when the `index` variable is greater than 100. The `If` statement in the loop, however, causes the `Exit Do` statement to stop the loop when the index variable is greater than 10.  
   
- [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#133](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#133)]  
   
 ## Example  
  The following example reads all lines in a text file. The <xref:System.IO.File.OpenText%2A> method opens the file and returns a <xref:System.IO.StreamReader> that reads the characters. In the `Do...Loop` condition, the <xref:System.IO.StreamReader.Peek%2A> method of the `StreamReader` determines whether there are any additional characters.  
   
- [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#134](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#134)]  
   
 ## See Also  
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   

@@ -1,13 +1,13 @@
 ---
-title: "Set Statement (Visual Basic)"
-
+title: "Set Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Set"
@@ -21,32 +21,20 @@ helpviewer_keywords:
   - "properties [Visual Basic], write-only"
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Set Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Declares a `Set` property procedure used to assign a value to a property.  
   
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
-    [ statements ]  
+[ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
+    [ statements ]  
 End Set  
 ```  
   
@@ -65,7 +53,7 @@ End Set
   
 -   `Protected Friend`  
   
- See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  `value`  
  Required. Parameter containing the new value for the property.  
@@ -107,7 +95,7 @@ End Set
 ## Example  
  The following example uses the `Set` statement to set the value of a property.  
   
- [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/set-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#55](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#55)]  
   
 ## See Also  
  [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)   

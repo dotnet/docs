@@ -1,13 +1,13 @@
 ---
-title: "Nullable type inference is not supported in this context"
-
+title: "Nullable type inference is not supported in this context | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc36629"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC36629"
 ms.assetid: 0a1e2dbc-d9a4-433d-9306-c5540782b81d
 caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Nullable type inference is not supported in this context
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Value types and structures can be declared nullable.  
   
 ```vb  
@@ -54,7 +42,7 @@ Dim b As Integer?
   
  **Error ID:** BC36629  
   
-## To correct this error  
+### To correct this error  
   
 -   Use an `As` clause to declare the variable as nullable.  
   

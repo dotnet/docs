@@ -1,8 +1,8 @@
 ---
-title: "How to: Add Custom Methods for LINQ Queries (Visual Basic)"
+title: "How to: Add Custom Methods for LINQ Queries (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Add Custom Methods for LINQ Queries (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You can extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, in addition to the standard average or maximum operations, you can create a custom aggregate method to compute a single value from a sequence of values. You can also create a method that works as a custom filter or a specific data transform for a sequence of values and returns a new sequence. Examples of such methods are <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A>, and <xref:System.Linq.Enumerable.Reverse%2A>.  
   
  When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md).  
@@ -82,7 +79,6 @@ Console.WriteLine("Double: Median = " & query1)
 ' Double: Median = 4.85  
 ```  
   
-
 ### Overloading an Aggregate Method to Accept Various Types  
  You can overload your aggregate method so that it accepts sequences of various types. The standard approach is to create an overload for each type. Another approach is to create an overload that will take a generic type and convert it to a specific type by using a delegate. You can also combine both approaches.  
   
@@ -97,6 +93,7 @@ Function Median(ByVal source As IEnumerable(Of Integer)) As Double
     Return Aggregate num In source Select CDbl(num) Into med = Median()  
 End Function  
 ```  
+  
  You can now call the `Median` overloads for both `integer` and `double` types, as shown in the following code:  
   
 ```vb  
@@ -122,7 +119,6 @@ Console.WriteLine("Integer: Median = " & query2)
 ' Integer: Median = 3  
 ```  
   
- 
 #### To create a generic overload  
  You can also create an overload that accepts a sequence of generic objects. This overload takes a delegate as a parameter and uses it to convert a sequence of objects of a generic type to a specific type.  
   
@@ -167,6 +163,7 @@ Console.WriteLine("String: Median = " & query4)
 ' Integer: Median = 3  
 ' String: Median = 4  
 ```  
+  
 ## Adding a Method That Returns a Collection  
  You can extend the <xref:System.Collections.Generic.IEnumerable%601> interface with a custom query method that returns a sequence of values. In this case, the method must return a collection of type <xref:System.Collections.Generic.IEnumerable%601>. Such methods can be used to apply filters or data transforms to a sequence of values.  
   
@@ -192,6 +189,7 @@ Function AlternateElements(Of T)(
     Return list  
 End Function  
 ```  
+  
  You can call this extension method for any enumerable collection just as you would call other methods from the <xref:System.Collections.Generic.IEnumerable%601> interface, as shown in the following code:  
   
 ```vb  

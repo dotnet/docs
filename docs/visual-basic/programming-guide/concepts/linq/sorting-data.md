@@ -1,8 +1,8 @@
 ---
-title: "Sorting Data (Visual Basic)"
+title: "Sorting Data (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,21 +13,18 @@ dev_langs:
   - "VB"
 ms.assetid: 6f81065c-0c89-4bf3-a6d8-442273f8810e
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Sorting Data (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.  
   
  The following illustration shows the results of an alphabetical sort operation on a sequence of characters.  
   
- ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_ordering.png "LINQ_Ordering")  
+ ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq-ordering.png "LINQ_Ordering")  
   
  The standard query operator methods that sort data are listed in the following section.  
   

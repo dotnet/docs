@@ -1,13 +1,13 @@
 ---
-title: "Value Types and Reference Types"
+title: "Value Types and Reference Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,26 +21,14 @@ helpviewer_keywords:
   - "data types [Visual Basic], reference types"
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Value Types and Reference Types
-In Visual Basic, data types are implemented based on their classification. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+In Visual Basic, data types are implemented based on their classification. The [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
   
 ## Value Types  
  A data type is a *value type* if it holds the data within its own memory allocation. Value types include the following:  
@@ -68,7 +56,7 @@ In Visual Basic, data types are implemented based on their classification. The [
   
 -   Delegates  
   
- A class is a *reference type*. For this reason, reference types such as `Object` and `String` are supported by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] classes. Note that every array is a reference type, even if its members are value types.  
+ A class is a *reference type*. For this reason, reference types such as `Object` and `String` are supported by [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] classes. Note that every array is a reference type, even if its members are value types.  
   
  Since every reference type represents an underlying .NET Framework class, you must use the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword when you initialize it. The following statement initializes an array.  
   

@@ -1,8 +1,8 @@
 ---
-title: "Object Variable Values (Visual Basic)"
+title: "Object Variable Values (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,29 +18,17 @@ helpviewer_keywords:
   - "variables [Visual Basic], object"
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
 caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Object Variable Values (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 A variable of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md) can refer to data of any type. The value you store in an `Object` variable is kept elsewhere in memory, while the variable itself holds a pointer to the data.  
   
 ## Object Classifier Functions  
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies functions that return information about what an `Object` variable refers to, as shown in the following table.  
+ [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] supplies functions that return information about what an `Object` variable refers to, as shown in the following table.  
   
 |Function|Returns True if the Object variable refers to|  
 |--------------|---------------------------------------------------|  

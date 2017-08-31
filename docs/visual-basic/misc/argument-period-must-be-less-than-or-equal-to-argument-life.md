@@ -1,41 +1,26 @@
 ---
-title: "Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39;"
-
+title: "Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39; | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_PeriodLELife"
 ms.assetid: dc575d41-b376-4b05-bbbe-6de1e98385f1
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39;
 The value of the `Period` argument, which specifies the period for which asset depreciation is calculated, is greater than the value of the `Life` argument.  
   
-## To correct this error  
+### To correct this error  
   
 -   Ensure that the `Life` and `Period` arguments are expressed in the same units. For example, if `Life` is measured in months, `Period` should be as well.  
   

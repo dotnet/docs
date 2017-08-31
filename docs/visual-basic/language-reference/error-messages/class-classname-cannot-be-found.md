@@ -1,13 +1,13 @@
 ---
-title: "Class &#39;&lt;classname&gt;&#39; cannot be found"
-
+title: "Class &#39;&lt;classname&gt;&#39; cannot be found | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc31098"
@@ -18,40 +18,28 @@ helpviewer_keywords:
   - "BC31098"
 ms.assetid: 72528d02-77b7-4b4c-8b9e-d12f666f92ef
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Class &#39;&lt;classname&gt;&#39; cannot be found
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Class '\<classname>' cannot be found. This condition is usually the result of a mismatched 'Microsoft.VisualBasic.dll'.  
   
  A defined member could not be located.  
   
  **Error ID:** BC31098  
   
-## To correct this error  
+### To correct this error  
   
 1.  Compile the program again to see if the error recurs.  
   
-2.  If the error recurs, save your work and restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+2.  If the error recurs, save your work and restart [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
   
-3.  If the error persists, reinstall [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+3.  If the error persists, reinstall [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
   
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
 ## See Also  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visual-studio/ide/talk-to-us)

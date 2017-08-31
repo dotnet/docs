@@ -1,13 +1,13 @@
 ---
-title: "Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field"
-
+title: "Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc36548"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC36548"
 ms.assetid: 27de068f-080e-4160-86bf-1ec23fd1925a
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The compiler does not accept conversion of an anonymous to an expression tree when one property of the anonymous type is used to initialize another property of the anonymous type. For example, in the following code, `Prop1` is declared in the initialization list and then used as the initial value for `Prop2`.  
   
 ```vb  
@@ -55,7 +43,7 @@ End Module
   
  **Error ID:** BC36548  
   
-## To correct this error  
+### To correct this error  
   
 -   Assign the initial value for `Prop1` to a local variable. Assign that variable to both `Prop1` and `Prop2`, as shown in the following code.  
   
@@ -70,5 +58,5 @@ End Module
   
 ## See Also  
  [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)   
- [How to: Use Expression Trees to Build Dynamic Queries](http://msdn.microsoft.com/library/1e37e0cc-eef3-48bb-8b69-3adabf322735)
+ [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md)   
+ [How to: Use Expression Trees to Build Dynamic Queries](../Topic/How%20to:%20Use%20Expression%20Trees%20to%20Build%20Dynamic%20Queries%20\(C%23%20and%20Visual%20Basic\).md)

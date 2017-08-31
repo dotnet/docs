@@ -1,13 +1,13 @@
 ---
-title: "How to: Chain Axis Method Calls (LINQ to XML) (C#)"
+title: "How to: Chain Axis Method Calls (LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Chain Axis Method Calls (LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 A common pattern that you will use in your code is to call an axis method, then call one of the extension method axes.  
   
  There are two axes with the name of `Elements` that return a collection of elements: the <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=fullName> method and the <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=fullName> method. You can combine these two axes to find all elements of a specified name at a given depth in the tree.  
@@ -41,7 +43,7 @@ foreach (XElement e in names)
   
  This example produces the following output:  
   
-```xml  
+```  
 <Name>Ellen Adams</Name>  
 <Name>Tai Yee</Name>  
 <Name>Cristian Osorio</Name>  
@@ -90,7 +92,7 @@ foreach (XElement cp in configParameters)
   
  This example produces the following output:  
   
-```xml  
+```  
 <ConfigParameter>FirstConfigParameter</ConfigParameter>  
 <ConfigParameter>SecondConfigParameter</ConfigParameter>  
 ```  
@@ -115,7 +117,7 @@ foreach (XElement e in names)
   
  This example produces the following output:  
   
-```xml  
+```  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Ellen Adams</aw:Name>  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Tai Yee</aw:Name>  
 <aw:Name xmlns:aw="http://www.adventure-works.com">Cristian Osorio</aw:Name>  

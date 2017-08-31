@@ -1,13 +1,13 @@
 ---
-title: "My.Computer.Mouse Object"
-
+title: "My.Computer.Mouse Object | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,25 +15,13 @@ helpviewer_keywords:
   - "My.Computer.Mouse object"
 ms.assetid: da473357-2120-47dd-bd42-c63d695157eb
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # My.Computer.Mouse Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides properties for getting information about the format and configuration of the mouse installed on the local computer.  
   
 ## Remarks  

@@ -1,13 +1,13 @@
 ---
-title: "Module Statement"
-
+title: "Module Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Module"
@@ -24,32 +24,20 @@ helpviewer_keywords:
   - "declarations, modules"
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
 caps.latest.revision: 24
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Module Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Declares the name of a module and introduces the definition of the variables, properties, events, and procedures that the module comprises.  
   
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ]  Module name  
-    [ statements ]  
+[ <attributelist> ] [ accessmodifier ]  Module name  
+    [ statements ]  
 End Module  
 ```  
   
@@ -64,7 +52,7 @@ End Module
   
 -   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
   
- See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  `name`  
  Required. Name of this module. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
@@ -82,7 +70,7 @@ End Module
   
  A module has the same lifetime as your program. Because its members are all `Shared`, they also have lifetimes equal to that of the program.  
   
- Modules default to [Friend](../../../visual-basic/language-reference/modifiers/friend.md) access. You can adjust their access levels with the access modifiers. For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ Modules default to [Friend](../../../visual-basic/language-reference/modifiers/friend.md) access. You can adjust their access levels with the access modifiers. For more information, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  All members of a module are implicitly `Shared`.  
   
@@ -116,7 +104,7 @@ End Module
 -   **Qualification.** You can have multiple modules in a project, and you can declare members with the same name in two or more modules. However, you must qualify any reference to such a member with the appropriate module name if the reference is from outside that module. For more information, see [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
   
 ## Example  
- [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#69](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#69)]  
   
 ## See Also  
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   

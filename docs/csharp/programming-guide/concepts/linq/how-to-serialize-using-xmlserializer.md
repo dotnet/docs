@@ -1,13 +1,13 @@
 ---
-title: "How to: Serialize Using XmlSerializer (C#)"
+title: "How to: Serialize Using XmlSerializer (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Serialize Using XmlSerializer (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows an example that serializes and deserializes using <xref:System.Xml.Serialization.XmlSerializer>.  
   
 ## Example  

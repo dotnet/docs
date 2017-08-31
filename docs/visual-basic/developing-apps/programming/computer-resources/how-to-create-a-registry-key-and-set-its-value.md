@@ -1,13 +1,13 @@
 ---
-title: "How to: Create a Registry Key and Set Its Value in Visual Basic"
+title: "How to: Create a Registry Key and Set Its Value in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "RegistryKey.CreateSubKey"
@@ -22,25 +22,13 @@ helpviewer_keywords:
   - "examples [Visual Basic], registry"
 ms.assetid: d3e40f74-c283-480c-ab18-e5e9052cd814
 caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Create a Registry Key and Set Its Value in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The `CreateSubKey` method of the `My.Computer.Registry` object can be used to create a registry key.  
   
 ## Procedure  
@@ -49,22 +37,22 @@ The `CreateSubKey` method of the `My.Computer.Registry` object can be used to cr
   
 -   Use the `CreateSubKey` method, specifying which hive to place the key under as well as the name of the key. The parameter `Subkey` is not case-sensitive. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
   
-     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_1.vb)]  
+     [!code-vb[VbResourceTasks#17](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#17)]  
   
 #### To create a registry key and set a value in it  
   
 1.  Use the `CreateSubkey` method, specifying which hive to place the key under as well as the name of the key. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
   
-     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_1.vb)]  
+     [!code-vb[VbResourceTasks#17](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#17)]  
   
 2.  Set the value with the `SetValue` method. This example sets the string value. "MyTestKeyValue" to "This is a test value".  
   
-     [!code-vb[VbResourceTasks#14](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_2.vb)]  
+     [!code-vb[VbResourceTasks#14](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#14)]  
   
 ## Example  
  This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER and then sets the string value `MyTestKeyValue` to `This is a test value`.  
   
- [!code-vb[VbResourceTasks#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_3.vb)]  
+ [!code-vb[VbResourceTasks#15](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#15)]  
   
 ## Robust Programming  
  Examine the registry structure to find a suitable location for your key. For example, you may want to open the HKEY_CURRENT_USER\Software key of the current user, and create a key with your company's name. Then add the registry values to your company's key.  
@@ -90,11 +78,11 @@ The `CreateSubKey` method of the `My.Computer.Registry` object can be used to cr
 -   The registry key is read-only (<xref:System.UnauthorizedAccessException>).  
   
 ## .NET Framework Security  
- To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8).  
+ To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](../Topic/Code%20Access%20Security%20Basics.md).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>   
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser%2A>   
  <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A>   
  [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)   
- [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8)
+ [Code Access Security Basics](../Topic/Code%20Access%20Security%20Basics.md)

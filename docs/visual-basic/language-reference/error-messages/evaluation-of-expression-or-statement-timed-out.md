@@ -1,13 +1,13 @@
 ---
-title: "Evaluation of expression or statement timed out"
-
+title: "Evaluation of expression or statement timed out | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30722"
@@ -18,34 +18,22 @@ helpviewer_keywords:
   - "BC30722"
 ms.assetid: 6f452da8-6ef8-41fd-9ab8-6f681cf7d433
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Evaluation of expression or statement timed out
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The evaluation of an expression did not complete in a timely manner.  
   
  **Error ID:** BC30722  
   
-## To correct this error  
+### To correct this error  
   
 1.  Verify that the entered code is correct.  
   
 2.  Simplify your expression so that it takes less time to execute.  
   
 ## See Also  
- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

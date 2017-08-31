@@ -1,13 +1,13 @@
 ---
-title: "DirectCast Operator (Visual Basic)"
-
+title: "DirectCast Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.directCast"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "DirectCast keyword"
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
 caps.latest.revision: 23
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # DirectCast Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Introduces a type conversion operation based on inheritance or implementation.  
   
 ## Remarks  
@@ -50,8 +38,9 @@ Introduces a type conversion operation based on inheritance or implementation.
 ## Conversion Keywords  
  A comparison of the type conversion keywords is as follows.  
   
+|||||  
+|-|-|-|-|  
 |Keyword|Data types|Argument relationship|Run-time failure|  
-|---|---|---|---|  
 |[CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
 |`DirectCast`|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
 |[TryCast Operator](../../../visual-basic/language-reference/operators/trycast-operator.md)|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../../../visual-basic/language-reference/nothing.md)|  
@@ -59,7 +48,7 @@ Introduces a type conversion operation based on inheritance or implementation.
 ## Example  
  The following example demonstrates two uses of `DirectCast`, one that fails at run time and one that succeeds.  
   
- [!code-vb[VbVbalrKeywords#1](../../../visual-basic/language-reference/codesnippet/VisualBasic/directcast-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#1)]  
   
  In the preceding example, the run-time type of `q` is `Double`. `CType` succeeds because `Double` can be converted to `Integer`. However, the first `DirectCast` fails at run time because the run-time type of `Double` has no inheritance relationship with `Integer`, even though a conversion exists. The second `DirectCast` succeeds because it converts from type <xref:System.Windows.Forms.Form> to type <xref:System.Windows.Forms.Control>, from which <xref:System.Windows.Forms.Form> inherits.  
   

@@ -1,34 +1,19 @@
 ---
-title: "Specified registry path does not start with a valid hive name"
-
+title: "Specified registry path does not start with a valid hive name | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: afb1a03b-4516-450b-aab1-827a93f9e99d
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Specified registry path does not start with a valid hive name
 The specified registry path does not begin with a valid hive name. Valid hive names are:  
@@ -47,11 +32,11 @@ The specified registry path does not begin with a valid hive name. Valid hive na
   
 -   `HKEY_USERS`  
   
-## To correct this error  
+### To correct this error  
   
 -   Verify that you are supplying a valid hive name.  
   
 ## See Also  
- [Manipulating Strings](../../standard/base-types/manipulating-strings.md)   
+ [Manipulating Strings](../Topic/Manipulating%20Strings%20in%20the%20.NET%20Framework.md)   
  [Common Registry Tasks (Visual Basic)](http://msdn.microsoft.com/en-us/0bde9f77-b38b-4c76-bac2-ff6cda3087c4)   
  [My.Computer.Registry Object](../../visual-basic/language-reference/objects/my-computer-registry-object.md)

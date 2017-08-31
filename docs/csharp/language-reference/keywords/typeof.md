@@ -1,9 +1,13 @@
 ---
-title: "typeof (C# Reference)"
+title: "typeof (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "typeof"
@@ -16,22 +20,11 @@ ms.assetid: 0c08d880-515e-46bb-8cd2-48b8dd62c08d
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # typeof (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Used to obtain the `System.Type` object for a type. A `typeof` expression takes the following form:  
   
 ```  
@@ -56,15 +49,15 @@ string s = method.ReturnType.GetInterface
 ```  
   
 ## Example  
- [!code-cs[csrefKeywordsOperator#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_1.cs)]  
+ [!code-csharp[csrefKeywordsOperator#12](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#12)]  
   
 ## Example  
  This sample uses the <xref:System.Object.GetType%2A> method to determine the type that is used to contain the result of a numeric calculation. This depends on the storage requirements of the resulting number.  
   
- [!code-cs[csrefKeywordsOperator#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_2.cs)]  
+ [!code-csharp[csrefKeywordsOperator#13](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#13)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Type?displayProperty=fullName>   

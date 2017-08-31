@@ -1,13 +1,13 @@
 ---
-title: "Registry Summary (Visual Basic)"
-
+title: "Registry Summary (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,26 +15,14 @@ helpviewer_keywords:
   - "registry, Visual Basic"
 ms.assetid: 6e90eb8a-1a4e-4387-8a68-9287dc7875e8
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Registry Summary (Visual Basic)
-[!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
  Using the `My` feature provides you with greater productivity and performance in registry operations than these elements. For more information, see <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>.  
   

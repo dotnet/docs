@@ -1,13 +1,13 @@
 ---
-title: "Properties (Visual Basic)"
-
+title: "Properties (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,31 +15,19 @@ helpviewer_keywords:
   - "properties [Visual Basic]"
 ms.assetid: c995caf9-8d0e-4fb8-ae02-e9e6087d7651
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Properties (Visual Basic)
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 This page lists the properties that are members of Visual Basic modules. Other properties that are members of specific Visual Basic objects are listed in [Objects](../../visual-basic/language-reference/objects/index.md).  
   
 ## Visual Basic Properties  
   
 |||  
-|---|---|  
+|-|-|  
 |<xref:Microsoft.VisualBasic.DateAndTime.DateString%2A>|Returns or sets a `String` value representing the current date according to your system.|  
 |<xref:Microsoft.VisualBasic.DateAndTime.Now%2A>|Returns a `Date` value containing the current date and time according to your system.|  
 |<xref:Microsoft.VisualBasic.Globals.ScriptEngine%2A>|Returns a `String` representing the runtime currently in use.|  

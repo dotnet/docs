@@ -1,13 +1,13 @@
 ---
-title: "Creating, Deleting, and Moving Files and Directories in Visual Basic"
+title: "Creating, Deleting, and Moving Files and Directories in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -33,25 +33,13 @@ helpviewer_keywords:
   - "I/O [Visual Basic], moving files"
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Creating, Deleting, and Moving Files and Directories in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This section lists tasks associated with creating, deleting, moving, and renaming files and directories in Visual Basic.  
   
 ## In This Section  

@@ -1,13 +1,13 @@
 ---
-title: "How to: Call Windows APIs (Visual Basic)"
+title: "How to: Call Windows APIs (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,29 +18,17 @@ helpviewer_keywords:
   - "calls, stored procedures"
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Call Windows APIs (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 This example defines and calls the `MessageBox` function in user32.dll and then passes a string to it.  
   
 ## Example  
- [!code-vb[VbVbalrInterop#1](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/how-to-call-windows-apis_1.vb)]  
+ [!code-vb[VbVbalrInterop#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#1)]  
   
 ## Compiling the Code  
  This example requires:  
@@ -58,8 +46,8 @@ This example defines and calls the `MessageBox` function in user32.dll and then 
   
 ## See Also  
  [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)   
- [Platform Invoke Examples](../../../framework/interop/platform-invoke-examples.md)   
- [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md)   
+ [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md)   
+ [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md)   
  [Defining a Method with Reflection Emit](http://msdn.microsoft.com/en-us/84fd3bf6-628f-41aa-83d9-b990cf926e81)   
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)   
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)

@@ -1,13 +1,13 @@
 ---
-title: "&lt;code&gt; (C# Programming Guide)"
-
+title: "&lt;code&gt; (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "code"
@@ -21,26 +21,14 @@ ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &lt;code&gt; (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 ## Syntax  
   
-```xml  
+```  
 <code>content</code>  
 ```  
   
@@ -51,7 +39,7 @@ translation.priority.ht:
 ## Remarks  
  The \<code> tag gives you a way to indicate multiple lines as code. Use [\<c>](../../../csharp/programming-guide/xmldoc/code-inline.md) to indicate that text within a description should be marked as code.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-csharp-compiler-options.md) to process documentation comments to a file.  
   
 ## Example  
  See the [\<example>](../../../csharp/programming-guide/xmldoc/example.md) topic for an example of how to use the \<code> tag.  

@@ -1,13 +1,13 @@
 ---
-title: "TryCast Operator (Visual Basic)"
-
+title: "TryCast Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.trycast"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "TryCast keyword"
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # TryCast Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Introduces a type conversion operation that does not throw an exception.  
   
 ## Remarks  
@@ -50,8 +38,9 @@ Introduces a type conversion operation that does not throw an exception.
 ## Conversion Keywords  
  A comparison of the type conversion keywords is as follows.  
   
+|||||  
+|-|-|-|-|  
 |Keyword|Data types|Argument relationship|Run-time failure|  
-|---|---|---|---|  
 |[CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
 |[DirectCast Operator](../../../visual-basic/language-reference/operators/directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
 |`TryCast`|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../../../visual-basic/language-reference/nothing.md)|  
@@ -59,7 +48,7 @@ Introduces a type conversion operation that does not throw an exception.
 ## Example  
  The following example shows how to use `TryCast`.  
   
- [!code-vb[VbVbalrKeywords#6](../../../visual-basic/language-reference/codesnippet/VisualBasic/trycast-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#6](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#6)]  
   
 ## See Also  
  [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   

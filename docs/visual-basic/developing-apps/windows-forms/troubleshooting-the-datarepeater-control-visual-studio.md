@@ -1,13 +1,13 @@
 ---
-title: "Troubleshooting the DataRepeater Control (Visual Studio)"
-
+title: "Troubleshooting the DataRepeater Control (Visual Studio) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,25 +15,13 @@ helpviewer_keywords:
   - "DataRepeater, troubleshooting"
 ms.assetid: c0ab9469-eced-4f52-aa18-4bd8dd4f1a9a
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Troubleshooting the DataRepeater Control (Visual Studio)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 This topic lists common issues that may occur when you are working with the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control.  
   
 ## DataRepeater Keyboard and Mouse Events Are Not Raised  
@@ -61,8 +49,8 @@ dataRepeater1.Top = productsBindingNavigator.Height;
   
  You can fix problems such as this by restoring the missing properties in the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemCloned> event, which occurs after the default cloning is completed. The following example demonstrates how to repair the <xref:System.Windows.Forms.ListBox.Items%2A> collection of a <xref:System.Windows.Forms.ListBox> control in the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemCloned> event handler.  
   
- [!code-cs[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/troubleshooting-the-datarepeater-control-visual-studio_1.cs)]
- [!code-vb[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/troubleshooting-the-datarepeater-control-visual-studio_1.vb)]  
+ [!code-csharp[VbPowerPacksDataRepeaterItemCloned#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterItemCloned/CS/ItemCloned.cs#1)]
+ [!code-vb[VbPowerPacksDataRepeaterItemCloned#1](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbPowerPacksDataRepeaterItemCloned/VB/ItemCloned.vb#1)]  
   
 ## The Selection Symbol on the Item Header Is Missing  
  When you change the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.SelectionColor%2A> property of the item header in a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control, some color choices may cause the selection symbol to disappear. Changing the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemHeaderSize%2A> property may also cause the selection symbol to disappear.  
@@ -86,4 +74,4 @@ dataRepeater1.Top = productsBindingNavigator.Height;
  [How to: Display Item Headers in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-display-item-headers-in-a-datarepeater-control-visual-studio.md)   
  [How to: Disable Adding and Deleting DataRepeater Items](../../../visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md)   
  [How to: Search Data in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md)   
- [How to: Create a Master/Detail Form by Using Two DataRepeater Controls (Visual Studio)](../../../visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md)
+ [How to: Create a Master/Detail Form by Using Two DataRepeater Controls (Visual Studio)](../../../visual-basic/developing-apps/windows-forms/eec43ae3-05d8-45a1-8d41-3803c6359dbe.md)

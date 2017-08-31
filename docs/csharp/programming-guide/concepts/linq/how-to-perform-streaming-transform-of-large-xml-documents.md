@@ -1,13 +1,13 @@
 ---
-title: "How to: Perform Streaming Transform of Large XML Documents (C#)"
+title: "How to: Perform Streaming Transform of Large XML Documents (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,21 +15,18 @@ ms.assetid: 5f16d1f8-5370-4b55-b0c8-e497df163037
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Perform Streaming Transform of Large XML Documents (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Sometimes you have to transform large XML files, and write your application so that the memory footprint of the application is predictable. If you try to populate an XML tree with a very large XML file, your memory usage will be proportional to the size of the file (that is, excessive). Therefore, you should use a streaming technique instead.  
   
  Streaming techniques are best applied in situations where you need to process the source document only once, and you can process the elements in document order. Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. Note that if you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint for your application.  
   
  Even if you use the technique described in [How to: Stream XML Fragments with Access to Header Information (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md), if you try to assemble an XML tree that contains the transformed document, memory usage will be too great.  
   
- There are two main approaches. One approach is to use the deferred processing characteristics of <xref:System.Xml.Linq.XStreamingElement>. Another approach is to create an <xref:System.Xml.XmlWriter>, and use the capabilities of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to write elements to an <xref:System.Xml.XmlWriter>. This topic demonstrates both approaches.  
+ There are two main approaches. One approach is to use the deferred processing characteristics of <xref:System.Xml.Linq.XStreamingElement>. Another approach is to create an <xref:System.Xml.XmlWriter>, and use the capabilities of [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] to write elements to an <xref:System.Xml.XmlWriter>. This topic demonstrates both approaches.  
   
 ## Example  
  The following example builds on the example in [How to: Stream XML Fragments with Access to Header Information (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md).  
@@ -204,7 +201,7 @@ static void Main(string[] args)
 ## Example  
  The following example also builds on the example in [How to: Stream XML Fragments with Access to Header Information (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md).  
   
- This example uses the capability of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to write elements to an <xref:System.Xml.XmlWriter>. This example can transform a very large document while maintaining a small memory footprint.  
+ This example uses the capability of [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] to write elements to an <xref:System.Xml.XmlWriter>. This example can transform a very large document while maintaining a small memory footprint.  
   
  Note that the custom axis (`StreamCustomerItem`) is specifically written so that it expects a document that has `Customer`, `Name`, and `Item` elements, and that those elements will be arranged as in the following Source.xml document. A more robust implementation, however, would either validate the source document with an XSD, or would be prepared to parse an invalid document.  
   

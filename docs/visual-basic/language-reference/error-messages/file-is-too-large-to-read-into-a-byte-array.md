@@ -1,42 +1,30 @@
 ---
-title: "File is too large to read into a byte array"
-
+title: "File is too large to read into a byte array | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 686630a6-a439-46c7-8d7b-34613ae4c5d8
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # File is too large to read into a byte array
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 The size of the file you are attempting to read into a byte array exceeds 4 GB. The `My.Computer.FileSystem.ReadAllBytes` method cannot read a file that exceeds this size.  
   
-## To correct this error  
+### To correct this error  
   
--   Use a <xref:System.IO.StreamReader> to read the file. For more information, see [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md).  
+-   Use a <xref:System.IO.StreamReader> to read the file. For more information, see [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-i-o-and-the-file-system-visual-basic.md).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllBytes%2A>   

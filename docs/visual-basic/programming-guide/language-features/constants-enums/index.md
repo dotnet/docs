@@ -1,13 +1,13 @@
 ---
-title: "Constants and Enumerations in Visual Basic"
+title: "Constants and Enumerations in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,40 +22,30 @@ helpviewer_keywords:
   - "Visual Basic code, improving readability with constants"
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Constants and Enumerations in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Constants are a way to use meaningful names in place of a value that does not change. Constants store values that, as the name implies, remain constant throughout the execution of an application. You can use constants to provide meaningful names, instead of numbers, making your code more readable.  
   
  Enumerations provide a convenient way to work with sets of related constants, and to associate constant values with names. For example, you can declare an enumeration for a set of integer constants associated with the days of the week, and then use the names of the days rather than their integer values in your code.  
   
 ## In This Section  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |[Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)|Topics in this section describe constants and their uses.|  
 |[Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)|Topics in this section describe enumerations and their uses.|  
   
 ## Related Sections  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |[Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)|Describes the `Const` statement, which is used to declare constants.|  
 |[Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)|Describes the `Enum` statement, which is used to create enumerations.|  
 |[Option Explicit Statement](../../../../visual-basic/language-reference/statements/option-explicit-statement.md)|Describes the `Option Explicit` statement, which is used at module level to force explicit declaration of all variables in that module.|  

@@ -1,8 +1,8 @@
 ---
-title: "XML IntelliSense in Visual Basic"
+title: "XML IntelliSense in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,32 +18,20 @@ helpviewer_keywords:
   - "IntelliSense [Visual Basic], XML"
 ms.assetid: 59506ce9-d64e-417e-90fc-e9fe19f0a8fa
 caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # XML IntelliSense in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The Visual Basic Code Editor includes IntelliSense features for XML that provide word completion for elements defined in an XML schema. If you include an XML Schema Definition (XSD) file in your project and import the target namespace of the schema by using the `Imports` statement, the Code Editor will include elements from the XSD schema in the IntelliSense list of valid member variables for <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> objects. The following illustration shows the IntelliSense members list for an <xref:System.Xml.Linq.XElement> object.  
   
- ![XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/media/xml_intellisense.png "XML_Intellisense")  
+ ![XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/media/xml-intellisense.png "XML_Intellisense")  
 XML IntelliSense  
   
 ## Enabling XML IntelliSense in Visual Basic  
- To enable XML IntelliSense in Visual Basic, you must include an XSD schema file in your Visual Basic project. You must also import the target namespace for the XSD schema into your code file by using the `Imports` statement. Alternatively, you can add the target namespace to the project-level namespace list by using the **References** page of the Visual Basic Project Designer. For examples, see [How to: Enable XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md). For more information, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) and [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
+ To enable XML IntelliSense in Visual Basic, you must include an XSD schema file in your Visual Basic project. You must also import the target namespace for the XSD schema into your code file by using the `Imports` statement. Alternatively, you can add the target namespace to the project-level namespace list by using the **References** page of the Visual Basic Project Designer. For examples, see [How to: Enable XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md). For more information, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) and [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic).  
   
  Note that by default you cannot see XSD schema files in Visual Basic projects. You may have to click the **Show All Files** button to select an XSD file to include in your project.  
   
@@ -59,8 +47,9 @@ XML IntelliSense
 ## Member List  
  After you type a period (.) to delimit an instance of an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object (or an instance of `IEnumerable(Of XElement)` or `IEnumerable(Of XDocument)`), Visual Basic IntelliSense displays a list of possible object members. The initial list includes three options that represent XML axis properties, as described in the following list.  
   
+|||  
+|-|-|  
 |Option|Description|  
-|---|---|  
 |**\< >**|Select this option to show a list of possible child elements. For more information, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md) and the <xref:System.Xml.Linq.XContainer.Elements%2A> method.|  
 |**@**|Select this option to show a list of possible attributes. For more information, see [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md).This option is available only for objects of type <xref:System.Xml.Linq.XElement>.|  
 |**…\< >**|Select this option to show a list of possible descendant elements. For more information, see [How to: Access XML Descendant Elements](../../../../visual-basic/programming-guide/language-features/xml/how-to-access-xml-descendant-elements.md) and the <xref:System.Xml.Linq.XContainer.Elements%2A> method.|  
@@ -69,7 +58,7 @@ XML IntelliSense
   
  For example, consider the following XSD schema.  
   
-```xml  
+```  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema attributeFormDefault="unqualified"   
            elementFormDefault="qualified"   
@@ -97,7 +86,7 @@ XML IntelliSense
   
  Valid XML for the XSD schema would resemble the following.  
   
-```xml  
+```  
 <?xml version="1.0"?>  
 <PurchaseOrders xmlns="http://SamplePurchaseOrder">  
   <PurchaseOrder PurchaseOrderNumber="12345" OrderDate="2000-1-1">  
@@ -131,4 +120,4 @@ po.<
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
  [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)   
  [XML Descendant Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-descendant-axis-property.md)   
- [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
+ [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)

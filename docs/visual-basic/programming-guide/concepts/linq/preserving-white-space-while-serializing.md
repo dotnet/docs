@@ -1,8 +1,8 @@
 ---
-title: "Preserving White Space While Serializing2"
+title: "Preserving White Space While Serializing2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,21 +13,18 @@ dev_langs:
   - "VB"
 ms.assetid: 2d7abbd4-37f4-422b-89dd-0a694b5edc17
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Preserving White Space While Serializing
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic describes how to control white space when serializing an XML tree.  
   
- A common scenario is to read indented XML, create an in-memory XML tree without any white space text nodes (that is, not preserving white space), perform some operations on the XML, and then save the XML with indentation. When you serialize the XML with formatting, only significant white space in the XML tree is preserved. This is the default behavior for [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
+ A common scenario is to read indented XML, create an in-memory XML tree without any white space text nodes (that is, not preserving white space), perform some operations on the XML, and then save the XML with indentation. When you serialize the XML with formatting, only significant white space in the XML tree is preserved. This is the default behavior for [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)].  
   
- Another common scenario is to read and modify XML that has already been intentionally indented. You might not want to change this indentation in any way. To do this in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you preserve white space when you load or parse the XML and disable formatting when you serialize the XML.  
+ Another common scenario is to read and modify XML that has already been intentionally indented. You might not want to change this indentation in any way. To do this in [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)], you preserve white space when you load or parse the XML and disable formatting when you serialize the XML.  
   
 ## White Space Behavior of Methods that Serialize XML Trees  
  The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes serialize an XML tree. You can serialize an XML tree to a file, a <xref:System.IO.TextReader>, or an <xref:System.Xml.XmlReader>. The `ToString` method serializes to a string.  

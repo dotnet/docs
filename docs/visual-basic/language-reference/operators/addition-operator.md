@@ -1,13 +1,13 @@
 ---
-title: "+ Operator (Visual Basic)"
-
+title: "+ Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.+"
@@ -21,30 +21,19 @@ helpviewer_keywords:
   - "sum operator"
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
 caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # + Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Adds two numbers or returns the positive value of a numeric expression. Can also be used to concatenate two string expressions.  
   
 ## Syntax  
   
 ```  
+  
       expression1 + expression2  
 - or -  
 + expression1  
@@ -52,8 +41,9 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`expression1`|Required. Any numeric or string expression.|  
 |`expression2`|Required unless the `+` operator is calculating a negative value. Any numeric or string expression.|  
   
@@ -74,8 +64,9 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
   
  If neither expression is an `Object`, Visual Basic takes the following actions.  
   
+|||  
+|-|-|  
 |Data types of expressions|Action by compiler|  
-|---|---|  
 |Both expressions are numeric data types (`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, or `Double`)|Add. The result data type is a numeric type appropriate for the data types of `expression1` and `expression2`. See the "Integer Arithmetic" tables in [Data Types of Operator Results](../../../visual-basic/language-reference/operators/data-types-of-operator-results.md).|  
 |Both expressions are of type `String`|Concatenate.|  
 |One expression is a numeric data type and the other is a string|If `Option Strict` is `On`, then generate a compiler error.<br /><br /> If `Option Strict` is `Off`, then implicitly convert the `String` to `Double` and add.<br /><br /> If the `String` cannot be converted to `Double`, then throw an <xref:System.InvalidCastException> exception.|  
@@ -84,8 +75,9 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
   
  If one expression is an `Object` expression, Visual Basic takes the following actions.  
   
+|||  
+|-|-|  
 |Data types of expressions|Action by compiler|  
-|---|---|  
 |`Object` expression holds a numeric value and the other is a numeric data type|If `Option Strict` is `On`, then generate a compiler error.<br /><br /> If `Option Strict` is `Off`, then add.|  
 |`Object` expression holds a numeric value and the other is of type `String`|If `Option Strict` is `On`, then generate a compiler error.<br /><br /> If `Option Strict` is `Off`, then implicitly convert the `String` to `Double` and add.<br /><br /> If the `String` cannot be converted to `Double`, then throw an <xref:System.InvalidCastException> exception.|  
 |`Object` expression holds a string and the other is a numeric data type|If `Option Strict` is `On`, then generate a compiler error.<br /><br /> If `Option Strict` is `Off`, then implicitly convert the string `Object` to `Double` and add.<br /><br /> If the string `Object` cannot be converted to `Double`, then throw an <xref:System.InvalidCastException> exception.|  
@@ -93,8 +85,9 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
   
  If both expressions are `Object` expressions, Visual Basic takes the following actions (`Option Strict Off` only).  
   
+|||  
+|-|-|  
 |Data types of expressions|Action by compiler|  
-|---|---|  
 |Both `Object` expressions hold numeric values|Add.|  
 |Both `Object` expressions are of type `String`|Concatenate.|  
 |One `Object` expression holds a numeric value and the other holds a string|Implicitly convert the string `Object` to `Double` and add.<br /><br /> If the string `Object` cannot be converted to a numeric value, then throw an <xref:System.InvalidCastException> exception.|  
@@ -110,23 +103,23 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
 ## Example  
  The following example uses the `+` operator to add numbers. If the operands are both numeric, Visual Basic computes the arithmetic result. The arithmetic result represents the sum of the two operands.  
   
- [!code-vb[VbVbalrOperators#6](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#6](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#6)]  
   
  You can also use the `+` operator to concatenate strings. If the operands are both strings, Visual Basic concatenates them. The concatenation result represents a single string consisting of the contents of the two operands one after the other.  
   
  If the operands are of mixed types, the result depends on the setting of the [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md). The following example illustrates the result when `Option Strict` is `On`.  
   
- [!code-vb[VbVbalrOperators#53](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#53](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class3.vb#53)]  
   
- [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_3.vb)]  
-[!code-vb[VbVbalrOperators#51](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_4.vb)]  
+ [!code-vb[VbVbalrOperators#50](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class2.vb#50)]  
+[!code-vb[VbVbalrOperators#51](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class2.vb#51)]  
   
  The following example illustrates the result when `Option Strict` is `Off`.  
   
- [!code-vb[VbVbalrOperators#54](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_5.vb)]  
+ [!code-vb[VbVbalrOperators#54](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class2.vb#54)]  
   
- [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_3.vb)]  
-[!code-vb[VbVbalrOperators#52](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_6.vb)]  
+ [!code-vb[VbVbalrOperators#50](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class2.vb#50)]  
+[!code-vb[VbVbalrOperators#52](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class2.vb#52)]  
   
  To eliminate ambiguity, you should use the `&` operator instead of `+` for concatenation.  
   

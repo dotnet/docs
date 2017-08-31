@@ -1,13 +1,13 @@
 ---
-title: "Covariance and Contravariance (C#)"
+title: "Covariance and Contravariance (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 066d9a3c-aab7-4ea6-826d-0b1a85399c74
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Covariance and Contravariance (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 In C#, covariance and contravariance enable implicit reference conversion for array types, delegate types, and generic type arguments. Covariance preserves assignment compatibility and contravariance reverses it.  
   
  The following code demonstrates the difference between assignment compatibility, covariance, and contravariance.  

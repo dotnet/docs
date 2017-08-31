@@ -1,13 +1,13 @@
 ---
-title: "XML Comment Literal (Visual Basic)"
-
+title: "XML Comment Literal (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralComment"
@@ -20,37 +20,26 @@ helpviewer_keywords:
   - "XML literals [Visual Basic], comment"
 ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # XML Comment Literal (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A literal representing an <xref:System.Xml.Linq.XComment> object.  
   
 ## Syntax  
   
-```xml  
+```  
 <!-- content -->  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`<!--`|Required. Denotes the start of the XML comment.|  
 |`content`|Required. Text to appear in the XML comment. Cannot contain a series of two hyphens (--) or end with a hyphen adjacent to the closing tag.|  
 |`-->`|Required. Denotes the end of the XML comment.|  
@@ -68,14 +57,14 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
  You can assign an XML comment literal to a variable, or you can include it in an XML element literal.  
   
 > [!NOTE]
->  An XML literal can span multiple lines without using line continuation characters. This feature enables you to copy content from an XML document and paste it directly into a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program.  
+>  An XML literal can span multiple lines without using line continuation characters. This feature enables you to copy content from an XML document and paste it directly into a [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] program.  
   
- The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler converts the XML comment literal to a call to the <xref:System.Xml.Linq.XComment.%23ctor%2A> constructor.  
+ The [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] compiler converts the XML comment literal to a call to the <xref:System.Xml.Linq.XComment.%23ctor%2A> constructor.  
   
 ## Example  
  The following example creates an XML comment that contains the text "This is a comment".  
   
- [!code-vb[VbXMLSamples#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-comment-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#9](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples4.vb#9)]  
   
 ## See Also  
  <xref:System.Xml.Linq.XComment>   

@@ -1,13 +1,13 @@
 ---
-title: "Using the iteration variable in a lambda expression may have unexpected results"
-
+title: "Using the iteration variable in a lambda expression may have unexpected results | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc42324"
@@ -18,25 +18,13 @@ helpviewer_keywords:
   - "BC42324"
 ms.assetid: b5c2c4bd-3b2a-4a73-aaeb-55728eb03b68
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Using the iteration variable in a lambda expression may have unexpected results
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Using the iteration variable in a lambda expression may have unexpected results. Instead, create a local variable within the loop and assign it the value of the iteration variable.  
   
  This warning appears when you use a loop iteration variable in a lambda expression that is declared inside the loop. For example, the following example causes the warning to appear.  
@@ -79,31 +67,31 @@ End Module
   
  `5`  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42324  
   
-## To correct this error  
+### To correct this error  
   
 -   Assign the value of the iteration variable to a local variable, and use the local variable in the lambda expression.  
   
-```vb  
-Module Module1  
-    Sub Main()  
-        Dim array1 As Func(Of Integer)() = New Func(Of Integer)(4) {}  
+    ```vb  
+    Module Module1  
+        Sub Main()  
+            Dim array1 As Func(Of Integer)() = New Func(Of Integer)(4) {}  
   
-        For i As Integer = 0 To 4  
-            Dim j = i  
-            array1(i) = Function() j  
-        Next  
+            For i As Integer = 0 To 4  
+                Dim j = i  
+                array1(i) = Function() j  
+            Next  
   
-        For Each funcElement In array1  
-            System.Console.WriteLine(funcElement())  
-        Next  
+            For Each funcElement In array1  
+                System.Console.WriteLine(funcElement())  
+            Next  
   
-    End Sub  
-End Module  
-```  
+        End Sub  
+    End Module  
+    ```  
   
 ## See Also  
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)

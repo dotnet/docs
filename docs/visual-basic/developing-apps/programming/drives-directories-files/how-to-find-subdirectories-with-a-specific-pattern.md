@@ -1,13 +1,13 @@
 ---
-title: "How to: Find Subdirectories with a Specific Pattern in Visual Basic"
+title: "How to: Find Subdirectories with a Specific Pattern in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,25 +16,13 @@ helpviewer_keywords:
   - "folders, finding"
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find Subdirectories with a Specific Pattern in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A> method returns a read-only collection of strings representing the path names for the subdirectories in a directory. You can use the `wildCards` parameter to specify a specific pattern. If you would like to include the contents of subdirectories in the search, set the `searchType` parameter to `SearchOption.SearchAllSubDirectories`.  
   
  An empty collection is returned if no directories matching the specified pattern are found.  
@@ -43,7 +31,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A> method retu
   
 -   Use the `GetDirectories` method, supplying the name and path of the directory you want to search. The following example returns all the directories in the directory structure that contain the word "Logs" in their name, and adds them to `ListBox1`.  
   
-     [!code-vb[VbVbcnFileAccess#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-find-subdirectories-with-a-specific-pattern_1.vb)]  
+     [!code-vb[VbVbcnFileAccess#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnFileAccess/VB/Class1.vb#1)]  
   
 ## Robust Programming  
  The following conditions may cause an exception:  

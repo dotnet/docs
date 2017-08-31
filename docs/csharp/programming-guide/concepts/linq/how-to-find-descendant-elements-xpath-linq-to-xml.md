@@ -1,13 +1,13 @@
 ---
-title: "How to: Find Descendant Elements (XPath-LINQ to XML) (C#)"
+title: "How to: Find Descendant Elements (XPath-LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: b318da39-bb8b-4c56-a019-e13b12b01831
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find Descendant Elements (XPath-LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to get the descendant elements with a particular name.  
   
  The XPath expression is `//Name`.  

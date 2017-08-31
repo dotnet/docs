@@ -1,13 +1,13 @@
 ---
-title: "How to: Create a File in Visual Basic"
+title: "How to: Create a File in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -16,29 +16,17 @@ helpviewer_keywords:
   - "files, creating"
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
 caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Create a File in Visual Basic
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example creates an empty text file at the specified path using the <xref:System.IO.File.Create%2A> method in the <xref:System.IO.File> class.  
   
 ## Example  
- [!code-vb[VbFileIOMisc#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-file_1.vb)]  
+ [!code-vb[VbFileIOMisc#1](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/class2.vb#1)]  
   
 ## Compiling the Code  
  Use the `file` variable to write to the file.  
@@ -70,5 +58,5 @@ This example creates an empty text file at the specified path using the <xref:Sy
 ## See Also  
  <xref:System.IO>   
  <xref:System.IO.File.Create%2A>   
- [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)   
- [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8)
+ [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md)   
+ [Code Access Security Basics](../Topic/Code%20Access%20Security%20Basics.md)

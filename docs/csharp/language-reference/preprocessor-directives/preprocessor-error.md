@@ -1,9 +1,13 @@
 ---
-title: "#error (C# Reference)"
+title: "#error (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#error"
@@ -15,25 +19,14 @@ ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # #error (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 `#error` lets you generate an error from a specific location in your code. For example:  
   
-```csharp
+```  
 #error Deprecated code in this method.  
 ```  
   
@@ -44,7 +37,7 @@ translation.priority.ht:
   
 ## Example  
   
-```csharp
+```  
 // preprocessor_error.cs  
 // CS1029 expected  
 #define DEBUG  

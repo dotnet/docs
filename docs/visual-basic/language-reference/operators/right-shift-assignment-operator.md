@@ -1,13 +1,13 @@
 ---
-title: "&gt;&gt;= Operator (Visual Basic)"
-
+title: "&gt;&gt;= Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.>>="
@@ -21,30 +21,19 @@ helpviewer_keywords:
   - ">>= operator [Visual Basic]"
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &gt;&gt;= Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Performs an arithmetic right shift on the value of a variable or property and assigns the result back to the variable or property.  
   
 ## Syntax  
   
 ```  
+  
 variableorproperty >>= amount  
 ```  
   
@@ -68,7 +57,7 @@ variableorproperty >>= amount
 ## Example  
  The following example uses the `>>=` operator to shift the bit pattern of an `Integer` variable right by the specified amount and assign the result to the variable.  
   
- [!code-vb[VbVbalrOperators#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#15](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#15)]  
   
 ## See Also  
  [>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)   

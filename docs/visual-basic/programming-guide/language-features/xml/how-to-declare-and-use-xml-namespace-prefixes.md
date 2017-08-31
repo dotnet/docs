@@ -1,8 +1,8 @@
 ---
-title: "How to: Declare and Use XML Namespace Prefixes (Visual Basic)"
+title: "How to: Declare and Use XML Namespace Prefixes (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,29 +16,17 @@ helpviewer_keywords:
   - "XML namespace prefixes [Visual Basic]"
 ms.assetid: 4292e1d9-eb8f-49d6-a3aa-f05a5fbe24d1
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Declare and Use XML Namespace Prefixes (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example shows how to import the XML namespace prefix `ns` and use it in an XML literal and XML axis properties.  
   
 ## Example  
- [!code-vb[VbXMLSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-declare-and-use-xml-namespace-prefixes_1.vb)]  
+ [!code-vb[VbXMLSamples#8](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples3.vb#8)]  
   
 ## Compiling the Code  
  This example requires:  

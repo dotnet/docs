@@ -1,13 +1,13 @@
 ---
-title: "How to: Query an ArrayList with LINQ (C#)"
+title: "How to: Query an ArrayList with LINQ (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,19 +15,18 @@ ms.assetid: 2bfb471c-6e9a-4e60-bd83-4a1778abde11
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Query an ArrayList with LINQ (C#)
-When using LINQ to query non-generic <xref:System.Collections.IEnumerable> collections such as <xref:System.Collections.ArrayList>, you must explicitly declare the type of the range variable to reflect the specific type of the objects in the collection. For example, if you have an <xref:System.Collections.ArrayList> of `Student` objects, your [from clause](../../../../csharp/language-reference/keywords/from-clause.md) should look like this:  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+When using LINQ to query non-generic <xref:System.Collections.IEnumerable> collections such as <xref:System.Collections.ArrayList>, you must explicitly declare the type of the range variable to reflect the specific type of the objects in the collection. For example, if you have an <xref:System.Collections.ArrayList> of `Student` objects, your [from clause](../../../../csharp/language-reference/keywords/from-clause.md)should look like this:  
   
 ```  
+  
 var query = from Student s in arrList  
 ...  
+  
 ```  
   
  By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.  

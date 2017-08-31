@@ -1,13 +1,13 @@
 ---
-title: "Labels that are numbers must be followed by colons"
-
+title: "Labels that are numbers must be followed by colons | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc30801"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC30801"
 ms.assetid: 67743319-2d1c-496e-bfd9-22b046b43b5a
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Labels that are numbers must be followed by colons
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Line numbers follow the same rules as other kinds of labels, and must contain a colon.  
   
  **Error ID:** BC30801  
   
-## To correct this error  
+### To correct this error  
   
 -   Place the number followed by a colon at the start of a line of code; for example:  
   

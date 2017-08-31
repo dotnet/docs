@@ -1,39 +1,24 @@
 ---
-title: "Key cannot be deleted because it has subkeys"
-
+title: "Key cannot be deleted because it has subkeys | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 71d7f28f-42ef-4eb7-a39e-512c40b79977
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Key cannot be deleted because it has subkeys
 The key cannot be deleted because it has subkeys.  
   
-## To correct this error  
+### To correct this error  
   
 -   Determine and delete the specified key's subkeys before attempting this operation.  
   

@@ -1,8 +1,8 @@
 ---
-title: "Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)"
+title: "Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,19 +13,16 @@ dev_langs:
   - "VB"
 ms.assetid: 26b44286-5066-4ad4-8e6a-c24902be347c
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 If you embed type information in an application that references COM objects, you can eliminate the need for a primary interop assembly (PIA). Additionally, the embedded type information enables you to achieve version independence for your application. That is, your program can be written to use types from multiple versions of a COM library without requiring a specific PIA for each version. This is a common scenario for applications that use objects from Microsoft Office libraries. Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers without the need to redeploy either the program or the PIA for each version of Microsoft Office.  
   
-[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../../../../includes/note-settings-general-md.md)]  
   
 ## Prerequisites  
  This walkthrough requires the following:  
@@ -114,7 +111,7 @@ If you embed type information in an application that references COM objects, you
   
 1.  Open the project created by this walkthrough in Visual Studio.  
   
-2.  On the **Build** menu, choose **Publish CreateExcelWorkbook**. Follow the steps of the Publish Wizard to create an installable version of the application. For more information, see [Publish Wizard (Office Development in Visual Studio)](https://msdn.microsoft.com/library/bb625071).  
+2.  On the **Build** menu, choose **Publish CreateExcelWorkbook**. Follow the steps of the Publish Wizard to create an installable version of the application. For more information, see [Publish Wizard (Office Development in Visual Studio)](/office-dev/office-dev/publish-wizard-office-development-in-visual-studio).  
   
 3.  Install the application on a computer on which the .NET Framework 4 or higher and a different version of Excel are installed.  
   
@@ -124,4 +121,4 @@ If you embed type information in an application that references COM objects, you
   
 ## See Also  
  [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)   
- [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)
+ [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link-visual-basic.md)

@@ -1,8 +1,8 @@
 ---
-title: "How to: Determine Whether Two Objects Are Identical (Visual Basic)"
+title: "How to: Determine Whether Two Objects Are Identical (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,28 +17,16 @@ helpviewer_keywords:
   - "object variables, determining identity"
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Determine Whether Two Objects Are Identical (Visual Basic)
-In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], two variable references are considered identical if their pointers are the same, that is, if both variables point to the same class instance in memory. For example, in a Windows Forms application, you might want to make a comparison to determine whether the current instance (`Me`) is the same as a particular instance, such as `Form2`.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+In [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], two variable references are considered identical if their pointers are the same, that is, if both variables point to the same class instance in memory. For example, in a Windows Forms application, you might want to make a comparison to determine whether the current instance (`Me`) is the same as a particular instance, such as `Form2`.  
   
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides two operators to compare pointers. The [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) returns `True` if the objects are identical, and the [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md) returns `True` if they are not.  
+ [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] provides two operators to compare pointers. The [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) returns `True` if the objects are identical, and the [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md) returns `True` if they are not.  
   
 ## Determining if Two Objects Are Identical  
   
@@ -64,7 +52,7 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], two variable references are cons
 ## Example  
  The following example tests pairs of `Object` variables to see if they point to the same class instance.  
   
- [!code-vb[VbVbalrKeywords#14](../../../../visual-basic/language-reference/codesnippet/VisualBasic/how-to-determine-whether-two-objects-are-identical_1.vb)]  
+ [!code-vb[VbVbalrKeywords#14](../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#14)]  
   
  The preceding example displays the following output.  
   

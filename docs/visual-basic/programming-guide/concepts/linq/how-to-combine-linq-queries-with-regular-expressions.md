@@ -1,8 +1,8 @@
 ---
-title: "How to: Combine LINQ Queries with Regular Expressions (Visual Basic)"
+title: "How to: Combine LINQ Queries with Regular Expressions (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 3da1bd10-b0d8-4d5b-a637-966891c13592
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Combine LINQ Queries with Regular Expressions (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example shows how to use the <xref:System.Text.RegularExpressions.Regex> class to create a regular expression for more complex matching in text strings. The LINQ query makes it easy to filter on exactly the files that you want to search with the regular expression, and to shape the results.  
   
 ## Example  
@@ -34,16 +31,18 @@ Class LinqRegExVB
   
         ' Root folder to query, along with all subfolders.  
         ' Modify this path as necessary so that it accesses your Visual Studio folder.  
-        Dim startFolder As String = "C:\Program Files (x86)\Microsoft Visual Studio 14.0\"
+        Dim startFolder As String = "C:\program files\Microsoft Visual Studio 9.0\"  
         ' One of the following paths may be more appropriate on your computer.  
-        'Dim startFolder As String = "C:\Program Files (x86)\Microsoft Visual Studio\2017\"
+        'string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 9.0\";  
+        'string startFolder = @"c:\program files\Microsoft Visual Studio 10.0\";  
+        'string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 10.0\";  
   
         ' Take a snapshot of the file system.  
         Dim fileList As IEnumerable(Of System.IO.FileInfo) = GetFiles(startFolder)  
   
         ' Create a regular expression to find all things "Visual".  
         Dim searchTerm As System.Text.RegularExpressions.Regex =   
-            New System.Text.RegularExpressions.Regex("Visual (Basic|C#|C\+\+|Studio)")  
+            New System.Text.RegularExpressions.Regex("Visual (Basic|C#|C\+\+|J#|SourceSafe|Studio)")  
   
         ' Search the contents of each .htm file.  
         ' Remove the where clause to find even more matches!  

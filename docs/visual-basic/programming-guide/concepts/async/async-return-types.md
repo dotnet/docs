@@ -1,8 +1,8 @@
 ---
-title: "Async Return Types (Visual Basic)"
+title: "Async Return Types (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,17 +13,14 @@ dev_langs:
   - "VB"
 ms.assetid: 07890291-ee72-42d3-932a-fa4d312f2c60
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Async Return Types (Visual Basic)
-Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md).  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
   
  Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
@@ -192,6 +189,7 @@ End Sub
   
         </Grid>  
     </Window>  
+  
     ```  
   
      A simple window that contains a text box and a button appears in the **Design** window of MainWindow.xaml.  

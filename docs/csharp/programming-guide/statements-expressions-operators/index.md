@@ -1,13 +1,13 @@
 ---
-title: "Statements, Expressions, and Operators (C# Programming Guide)"
-
+title: "Statements, Expressions, and Operators (C# Programming Guide) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -22,23 +22,11 @@ ms.assetid: 20f8469d-5a6a-4084-ad90-0856b7e97e45
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Statements, Expressions, and Operators (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The C# code that comprises an application consists of statements made up of keywords, expressions and operators. This section contains information regarding these fundamental elements of a C# program.  
   
  For more information, see:  
@@ -47,8 +35,6 @@ The C# code that comprises an application consists of statements made up of keyw
   
 -   [Expressions](../../../csharp/programming-guide/statements-expressions-operators/expressions.md)  
   
-    -   [Expression-bodied members](expression-bodied-members.md)
- 
 -   [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
   
 -   [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)  
@@ -66,7 +52,7 @@ The C# code that comprises an application consists of statements made up of keyw
 -   [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

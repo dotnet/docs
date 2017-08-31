@@ -1,13 +1,13 @@
 ---
-title: "Option Explicit Statement (Visual Basic)"
-
+title: "Option Explicit Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Explicit"
@@ -22,25 +22,13 @@ helpviewer_keywords:
   - "Option Explicit statement"
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
 caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Option Explicit Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Forces explicit declaration of all variables in a file, or allows implicit declarations of variables.  
   
 ## Syntax  
@@ -65,7 +53,7 @@ Option Explicit { On | Off }
 >  Setting `Option Explicit` to `Off` is generally not a good practice. You could misspell a variable name in one or more locations, which would cause unexpected results when the program is run.  
   
 ## When an Option Explicit Statement Is Not Present  
- If the source code does not contain an `Option Explicit` statement, the **Option Explicit** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option is used.  
+ If the source code does not contain an `Option Explicit` statement, the **Option Explicit** setting on the [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option is used.  
   
 #### To set Option Explicit in the IDE  
   
@@ -84,9 +72,9 @@ Option Explicit { On | Off }
 ## Example  
  The following example uses the `Option Explicit` statement to force explicit declaration of all variables. Attempting to use an undeclared variable causes an error at compile time.  
   
- [!code-vb[VbVbalrStatements#47](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#47](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#47)]  
   
- [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#48](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#48)]  
   
 ## See Also  
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
@@ -96,4 +84,4 @@ Option Explicit { On | Off }
  [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)   
  [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)   
  [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visual-studio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

@@ -1,13 +1,13 @@
 ---
-title: "* Operator (Visual Basic)"
-
+title: "* Operator (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.*"
@@ -21,37 +21,27 @@ helpviewer_keywords:
   - "math operators"
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
 caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # * Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Multiplies two numbers.  
   
 ## Syntax  
   
 ```  
+  
 number1 * number2  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`number1`|Required. Any numeric expression.|  
 |`number2`|Required. Any numeric expression.|  
   
@@ -64,8 +54,9 @@ number1 * number2
 ## Remarks  
  The data type of the result depends on the types of the operands. The following table shows how the data type of the result is determined.  
   
+|||  
+|-|-|  
 |Operand data types|Result data type|  
-|---|---|  
 |Both expressions are integral data types ([SByte](../../../visual-basic/language-reference/data-types/sbyte-data-type.md), [Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md), [Short](../../../visual-basic/language-reference/data-types/short-data-type.md), [UShort](../../../visual-basic/language-reference/data-types/ushort-data-type.md), [Integer](../../../visual-basic/language-reference/data-types/integer-data-type.md), [UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md), [Long](../../../visual-basic/language-reference/data-types/long-data-type.md), [ULong](../../../visual-basic/language-reference/data-types/ulong-data-type.md))|A numeric data type appropriate for the data types of `number1` and `number2`. See the "Integer Arithmetic" tables in [Data Types of Operator Results](../../../visual-basic/language-reference/operators/data-types-of-operator-results.md).|  
 |Both expressions are [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md)|`Decimal`|  
 |Both expressions are [Single](../../../visual-basic/language-reference/data-types/single-data-type.md)|`Single`|  
@@ -79,7 +70,7 @@ number1 * number2
 ## Example  
  This example uses the `*` operator to multiply two numbers. The result is the product of the two operands.  
   
- [!code-vb[VbVbalrOperators#4](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/multiplication-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#4](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#4)]  
   
 ## See Also  
  [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)   

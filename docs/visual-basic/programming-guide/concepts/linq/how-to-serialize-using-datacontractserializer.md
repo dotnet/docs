@@ -1,8 +1,8 @@
 ---
-title: "How to: Serialize Using DataContractSerializer (Visual Basic)"
+title: "How to: Serialize Using DataContractSerializer (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: ecaea518-8a0f-4249-b4e5-9b3fb0cdd8ad
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Serialize Using DataContractSerializer (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows an example that serializes and deserializes using <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## Example  
@@ -83,6 +80,7 @@ Public Class XElementNullContainer
         member = Nothing  
     End Sub  
 End Class  
+  
 ```  
   
  This example produces the following output:  

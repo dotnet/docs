@@ -1,8 +1,8 @@
 ---
-title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,18 +13,20 @@ dev_langs:
   - "VB"
 ms.assetid: 6831e1db-5e97-444f-a7a1-d0a87104b005
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Find Child Elements Based on Position (XPath-LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Sometimes you want to find elements based on their position. You might want to find the second element, or you might want to find the third through the fifth element.  
   
  The XPath expression is:  
   
  `Test[position() >= 2 and position() <= 4]`  
   
- There are two approaches to writing this [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query in a lazy way. You can use the <xref:System.Linq.Enumerable.Skip%2A> and <xref:System.Linq.Enumerable.Take%2A> operators, or you can use the <xref:System.Linq.Enumerable.Where%2A> overload that takes an index. When you use the <xref:System.Linq.Enumerable.Where%2A> overload, you use a lambda expression that takes two arguments. The following example shows both methods of selecting based on position.  
+ There are two approaches to writing this [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] query in a lazy way. You can use the <xref:System.Linq.Enumerable.Skip%2A> and <xref:System.Linq.Enumerable.Take%2A> operators, or you can use the <xref:System.Linq.Enumerable.Where%2A> overload that takes an index. When you use the <xref:System.Linq.Enumerable.Where%2A> overload, you use a lambda expression that takes two arguments. The following example shows both methods of selecting based on position.  
   
 ## Example  
  This example finds the second through the fourth `Test` element. The result is a collection of elements.  
@@ -60,6 +62,7 @@ End If
 For Each el As XElement In list1  
     Console.WriteLine(el)  
 Next  
+  
 ```  
   
  This example produces the following output:  

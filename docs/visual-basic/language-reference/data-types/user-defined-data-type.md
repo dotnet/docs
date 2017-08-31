@@ -1,13 +1,13 @@
 ---
-title: "User-Defined Data Type"
-
+title: "User-Defined Data Type | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "UserDefined"
@@ -34,25 +34,13 @@ helpviewer_keywords:
   - "types [Visual Basic], user-defined"
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
 caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # User-Defined Data Type
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Holds data in a format you define. The `Structure` statement defines the format.  
   
  Previous versions of Visual Basic support the user-defined type (UDT). The current version expands the UDT to a *structure*. A structure is a concatenation of one or more *members* of various data types. Visual Basic treats a structure as a single unit, although you can also access its members individually.  

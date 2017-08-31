@@ -1,41 +1,26 @@
 ---
-title: "&lt;address&gt; is not a valid remote file address"
-
+title: "&lt;address&gt; is not a valid remote file address | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2c312242-6c42-4754-a1f5-7e801a542604
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # &lt;address&gt; is not a valid remote file address
 \<address> is not a valid remote file address. A valid address should include a protocol, a path and a filename.  
   
  An invalid address has been specified for an uploading or downloading operation. Addresses must include a protocol, such as `ftp` or `http`, a valid path, and the file name. This error may be a result of parsing file paths incorrectly.  
   
-## To correct this error  
+### To correct this error  
   
 -   Check the address you have specified to determine where it fails, and supply the necessary information.  
   

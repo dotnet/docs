@@ -1,8 +1,8 @@
 ---
-title: "Common Attributes (Visual Basic)"
+title: "Common Attributes (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Common Attributes (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic describes the attributes that are most commonly used in Visual Basic programs.  
   
 -   [Global Attributes](#Global)  
@@ -42,7 +39,7 @@ This topic describes the attributes that are most commonly used in Visual Basic 
 <Assembly: AssemblyVersion("1.0.0.0")>  
 ```  
   
- Global attributes appear in the source code after any top-level `Imports` statements and before any type, module, or namespace declarations. Global attributes can appear in multiple source files, but the files must be compiled in a single compilation pass. For Visual Basic projects, global attributes are generally put in the AssemblyInfo.vb file (the file is created automatically when you create a project in Visual Studio).  
+ Global attributes appear in the source code after any top-level`Imports` statements and before any type, module, or namespace declarations. Global attributes can appear in multiple source files, but the files must be compiled in a single compilation pass. For Visual Basic projects, global attributes are generally put in the AssemblyInfo.vb file (the file is created automatically when you create a project in Visual Studio).  
   
  Assembly attributes are values that provide information about an assembly. They fall into the following categories:  
   
@@ -53,7 +50,7 @@ This topic describes the attributes that are most commonly used in Visual Basic 
 -   Assembly manifest attributes  
   
 ### Assembly Identity Attributes  
- Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
+ Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visual-studio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
   
  The following table shows the identity attributes.  
   
@@ -227,8 +224,9 @@ End Class
   
  To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace:  
   
+||||  
+|-|-|-|  
 |Attribute|Description|Type|  
-|---|---|---|  
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the path at compile time.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|  
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md).|`String`|  
@@ -271,6 +269,6 @@ End Structure
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
+ [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)   
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
  [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

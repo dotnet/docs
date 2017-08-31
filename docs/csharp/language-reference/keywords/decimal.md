@@ -1,9 +1,13 @@
 ---
-title: "decimal (C# Reference)"
+title: "decimal (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "decimal_CSharpKeyword"
@@ -16,32 +20,22 @@ ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # decimal (C# Reference)
-The `decimal` keyword indicates a 128-bit data type. Compared to other floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
+The `decimal` keyword indicates a 128-bit data type. Compared to floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  
   
 |Type|Approximate Range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=fullName>|  
+|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0 to 28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=fullName>|  
   
 ## Literals  
  If you want a numeric real literal to be treated as `decimal`, use the suffix m or M, for example:  
   
-```csharp
+```  
+  
 decimal myMoney = 300.5m;  
 ```  
   
@@ -50,19 +44,21 @@ decimal myMoney = 300.5m;
 ## Conversions  
  The integral types are implicitly converted to `decimal` and the result evaluates to `decimal`. Therefore you can initialize a decimal variable using an integer literal, without the suffix, as follows:  
   
-```csharp
+```  
+  
 decimal myMoney = 300;  
 ```  
   
- There is no implicit conversion between other floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
+ There is no implicit conversion between floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
   
-```csharp
-decimal myMoney = 99.9m;  
+```  
+  
+      decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
 ```  
   
- You can also mix `decimal` and numeric integral types in the same expression. However, mixing `decimal` and other floating-point types without a cast causes a compilation error.  
+ You can also mix `decimal` and numeric integral types in the same expression. However, mixing `decimal` and floating-point types without a cast causes a compilation error.  
   
  For more information about implicit numeric conversions, see [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md).  
   
@@ -83,6 +79,7 @@ Console.WriteLine(dec + dub);
 // You can fix the error by using explicit casting of either operand.  
 Console.WriteLine(dec + (decimal)dub);  
 Console.WriteLine((double)dec + dub);  
+  
 ```  
   
  The result is the following error:  
@@ -91,15 +88,15 @@ Console.WriteLine((double)dec + dub);
   
  In this example, a `decimal` and an [int](../../../csharp/language-reference/keywords/int.md) are mixed in the same expression. The result evaluates to the `decimal` type.  
   
- [!code-cs[csrefKeywordsTypes#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_1.cs)]  
+ [!code-csharp[csrefKeywordsTypes#6](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#6)]  
   
 ## Example  
  In this example, the output is formatted by using the currency format string. Notice that `x` is rounded because the decimal places exceed $0.99. The variable `y`, which represents the maximum exact digits, is displayed exactly in the correct format.  
   
- [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_2.cs)]  
+ [!code-csharp[csrefKeywordsTypes#7](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#7)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Decimal>   
@@ -110,4 +107,4 @@ Console.WriteLine((double)dec + dub);
  [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
+ [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md)

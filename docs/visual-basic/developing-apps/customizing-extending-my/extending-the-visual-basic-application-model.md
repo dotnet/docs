@@ -1,13 +1,13 @@
 ---
-title: "Extending the Visual Basic Application Model"
-
+title: "Extending the Visual Basic Application Model | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,25 +15,13 @@ helpviewer_keywords:
   - "Visual Basic Application Model, extending"
 ms.assetid: e91d3bed-4c27-40e3-871d-2be17467c72c
 caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Extending the Visual Basic Application Model
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 You can add functionality to the application model by overriding the `Overridable` members of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class. This technique allows you to customize the behavior of the application model and add calls to your own methods as the application starts up and shuts down.  
   
 ## Visual Overview of the Application Model  
@@ -41,13 +29,13 @@ You can add functionality to the application model by overriding the `Overridabl
   
  The following graphic shows the application model call sequence in a normal Visual Basic Windows Forms application. The sequence starts when the `Sub Main` procedure calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A> method.  
   
- ![Visual Basic Application Model &#45;&#45; Run](../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelrun.gif "VB_ModelRun")  
+ ![Visual Basic Application Model &#45;&#45; Run](../../../visual-basic/developing-apps/customizing-extending-my/media/vb-modelrun.gif "VB_ModelRun")  
   
  The Visual Basic Application Model also provides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> and <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> events. The following graphics show the mechanism for raising these events.  
   
- ![Visual Basic Application Model &#45;&#45; Next Instance](../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelnext.gif "VB_ModelNext")  
+ ![Visual Basic Application Model &#45;&#45; Next Instance](../../../visual-basic/developing-apps/customizing-extending-my/media/vb-modelnext.gif "VB_ModelNext")  
   
- ![Visual Basic Application Model Unhandled Exception](../../../visual-basic/developing-apps/customizing-extending-my/media/vb_unhandex.gif "VB_UnhandEx")  
+ ![Visual Basic Application Model Unhandled Exception](../../../visual-basic/developing-apps/customizing-extending-my/media/vb-unhandex.gif "VB_UnhandEx")  
   
 ## Overriding the Base Methods  
  The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A> method defines the order in which the `Application` methods run. By default, the `Sub Main` procedure for a Windows Forms application calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A> method.  
@@ -66,11 +54,11 @@ You can add functionality to the application model by overriding the `Overridabl
   
     2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A>. Allows a designer to emit code that initializes the splash screen.  
   
-         By default, this method does nothing. If you select a splash screen for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
+         By default, this method does nothing. If you select a splash screen for your application in the [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
   
 2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A>. Provides an extensibility point for raising the `Startup` event. The application startup sequence stops if this function returns `False`.  
   
-     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the @System.ComponentModel.CancelEventArgs.Cancel property of the event argument to `True`, the method returns `False` to cancel the application startup.  
+     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the event argument to `True`, the method returns `False` to cancel the application startup.  
   
 3.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A>. Provides the starting point for when the main application is ready to start running, after the initialization is done.  
   
@@ -78,7 +66,7 @@ You can add functionality to the application model by overriding the `Overridabl
   
     1.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A>. Provides a way for a designer to emit code that initializes the main form.  
   
-         By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
+         By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
   
     2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A>. If application has a splash screen defined and it is open, this method closes the splash screen.  
   
@@ -97,16 +85,17 @@ You can add functionality to the application model by overriding the `Overridabl
      By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event as long as a debugger is not attached and the application is handling the `UnhandledException` event.  
   
  If the application is a single-instance application, and the application is already running, the subsequent instance of the application calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A> method on the original instance of the application, and then exits.  
- 
- The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)> constructor calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to determine which text rendering engine to use for the application's forms. By default, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property returns `False`, indicating that the GDI text rendering engine be used, which is the default in [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)]. You can override the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to return `True`, which indicates that the GDI+ text rendering engine be used, which is the default in Visual Basic .NET 2002 and Visual Basic .NET 2003.  
+  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> constructor calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to determine which text rendering engine to use for the application's forms. By default, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property returns `False`, indicating that the GDI text rendering engine be used, which is the default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)]. You can override the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to return `True`, which indicates that the GDI+ text rendering engine be used, which is the default in Visual Basic .NET 2002 and Visual Basic .NET 2003.  
   
 ## Configuring the Application  
- As a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering> class provides protected properties that configure the application. These properties should be set in the constructor of the implementing class.  
+ As a part of the [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] Application model, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class provides protected properties that configure the application. These properties should be set in the constructor of the implementing class.  
   
  In a default Windows Forms project, the **Project Designer** creates code to set the properties with the designer settings. The properties are used only when the application is starting; setting them after the application starts has no effect.  
   
+||||  
+|-|-|-|  
 |Property|Determines|Setting in the Application pane of  the Project Designer|  
-|---|---|---|  
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A>|Whether the application runs as a single-instance or multiple-instance application.|**Make single instance application** check box|  
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A>|If the application will use visual styles that match Windows XP.|**Enable XP visual styles** check box|  
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A>|If application automatically saves application's user-settings changes when the application exits.|**Save My.Settings on Shutdown** check box|  
@@ -119,6 +108,6 @@ You can add functionality to the application model by overriding the `Overridabl
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException>   
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown>   
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged>   
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged>   
+ <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>   
  [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)   
- [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)
+ [Application Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/application-page-project-designer-visual-basic)

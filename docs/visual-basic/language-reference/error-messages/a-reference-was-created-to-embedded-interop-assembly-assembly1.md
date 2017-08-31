@@ -1,13 +1,13 @@
 ---
-title: "A reference was created to embedded interop assembly &#39;&lt;assembly1&gt;&#39; because of an indirect reference to that assembly from assembly &#39;&lt;assembly2&gt;&#39;"
-
+title: "A reference was created to embedded interop assembly &#39;&lt;assembly1&gt;&#39; because of an indirect reference to that assembly from assembly &#39;&lt;assembly2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbc40059"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "BC40059"
 ms.assetid: 520e39cb-8ab6-46f5-aa00-08afd51b4b7c
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # A reference was created to embedded interop assembly &#39;&lt;assembly1&gt;&#39; because of an indirect reference to that assembly from assembly &#39;&lt;assembly2&gt;&#39;
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A reference was created to embedded interop assembly '\<assembly1>' because of an indirect reference to that assembly from assembly '\<assembly2>'. Consider changing the 'Embed Interop Types' property on either assembly.  
   
  You have added a reference to an assembly (assembly1) that has the `Embed Interop Types` property set to `True`. This instructs the compiler to embed interop type information from that assembly. However, the compiler cannot embed interop type information from that assembly because another assembly that you have referenced (assembly2) also references that assembly (assembly1) and has the `Embed Interop Types` property set to `False`.  
@@ -52,5 +40,5 @@ A reference was created to embedded interop assembly '\<assembly1>' because of a
 -   To remove the warning, you can set the `Embed Interop Types` property of assembly1 to `False`. In this case, interop type information is provided by a primary interop assembly (PIA).  
   
 ## See Also  
- [/link (Visual Basic)](../../../visual-basic/reference/command-line-compiler/link.md)   
+ [/link (Visual Basic)](../../../visual-basic/reference/command-line-compiler/link-visual-basic.md)   
  [Programming with Primary Interop Assemblies](http://msdn.microsoft.com/en-us/306fa1d6-0703-4004-9e93-d0a57f1be81e)

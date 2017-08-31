@@ -1,13 +1,13 @@
 ---
-title: "Array subscript expression missing"
-
+title: "Array subscript expression missing | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30306"
@@ -18,30 +18,18 @@ helpviewer_keywords:
   - "BC30306"
 ms.assetid: 3c0d9732-ee37-436f-a1df-29d65712f48a
 caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Array subscript expression missing
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 An array initialization leaves out one or more of the subscripts that define the array bounds. For example, the statement might contain the expression `myArray (5,5,,10)`, which leaves out the third subscript.  
   
  **Error ID:** BC30306  
   
-## To correct this error  
+### To correct this error  
   
 -   Supply the missing subscript.  
   

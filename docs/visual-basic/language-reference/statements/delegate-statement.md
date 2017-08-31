@@ -1,9 +1,13 @@
 ---
-title: "Delegate Statement"
+title: "Delegate Statement | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Delegate"
@@ -14,24 +18,13 @@ helpviewer_keywords:
   - "Delegate statement"
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Delegate Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Used to declare a delegate. A delegate is a reference type that refers to a `Shared` method of a type or to an instance method of an object. Any procedure with matching parameter and return types can be used to create an instance of this delegate class. The procedure can then later be invoked by means of the delegate instance.  
   
 ## Syntax  
@@ -43,8 +36,9 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`attrlist`|Optional. List of attributes that apply to this delegate. Multiple attributes are separated by commas. You must enclose the [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets ("`<`" and "`>`").|  
 |`accessmodifier`|Optional. Specifies what code can access the delegate. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md). Any code that can access the element that declares the delegate can access it.<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md). Only code within the delegate's class or a derived class can access it.<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md). Only code within the same assembly can access the delegate.<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md). Only code within the element that declares the delegate can access it.<br /><br /> You can specify `Protected Friend` to enable access from code within the delegate's class, a derived class, or the same assembly.|  
 |`Shadows`|Optional. Indicates that this delegate redeclares and hides an identically named programming element, or set of overloaded elements, in a base class. You can shadow any kind of declared element with any other kind.<br /><br /> A shadowed element is unavailable from within the derived class that shadows it, except from where the shadowing element is inaccessible. For example, if a `Private` element shadows a base class element, code that does not have permission to access the `Private` element accesses the base class element instead.|  
@@ -74,19 +68,19 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
   
  The signature of the function must match that of the delegate type. For more information about lambda expressions, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
- For more information about delegates, see [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md).  
+ For more information about delegates, see [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md).  
   
 ## Example  
  The following example uses the `Delegate` statement to declare a delegate for operating on two numbers and returning a number. The `DelegateTest` method takes an instance of a delegate of this type and uses it to operate on pairs of numbers.  
   
- [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
+ [!code-vb[VbVbalrDelegates#14](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#14)]  
   
 ## See Also  
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)   
+ [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

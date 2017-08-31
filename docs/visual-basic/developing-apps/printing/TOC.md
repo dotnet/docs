@@ -1,0 +1,8 @@
+# [How to: Print a Form by Using the PrintForm Component (Visual Basic)](how-to-print-a-form-by-using-the-printform-component.md)
+# [Adding Printable Reports to Visual Studio Applications](adding-printable-reports-to-visual-studio-applications.md)
+# [PrintForm Component (Visual Basic)](printform-component.md)
+# [How to: Print a Scrollable Form (Visual Basic)](how-to-print-a-scrollable-form.md)
+# [Deploying Applications That Reference the PrintForm Component (Visual Basic)](deploying-applications-that-reference-the-printform-component.md)
+# [Printing and Reporting (Visual Basic)](printing-and-reporting.md)
+# [How to: Print the Client Area of a Form (Visual Basic)](how-to-print-the-client-area-of-a-form.md)
+# [How to: Print Client and Non-Client Areas of a Form (Visual Basic)](how-to-print-client-and-non-client-areas-of-a-form.md)

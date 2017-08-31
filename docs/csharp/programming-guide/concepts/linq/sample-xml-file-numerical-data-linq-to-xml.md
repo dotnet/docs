@@ -1,13 +1,13 @@
 ---
-title: "Sample XML File: Numerical Data (LINQ to XML)"
+title: "Sample XML File: Numerical Data (LINQ to XML)3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,15 +15,12 @@ ms.assetid: 365cae86-a166-46df-b56a-0209d9771c27
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Sample XML File: Numerical Data (LINQ to XML)
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. This file contains numerical data for summing, averaging, and grouping.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This file contains numerical data for summing, averaging, and grouping.  
   
 ## Data.xml  
   

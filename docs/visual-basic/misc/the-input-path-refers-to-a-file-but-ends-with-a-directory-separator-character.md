@@ -1,39 +1,24 @@
 ---
-title: "The input path refers to a file but ends with a directory separator character"
-
+title: "The input path refers to a file but ends with a directory separator character | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 319181c1-a015-4038-a23f-f53c0d91d806
 caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # The input path refers to a file but ends with a directory separator character
 An operation was attempted requiring that a filename be supplied, but the supplied name ends with a directory separator character (`\`). This may be the result of an incorrectly parsed file path.  
   
-## To correct this error  
+### To correct this error  
   
 -   Check the file path you supplied to ensure it is correct.  
   

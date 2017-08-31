@@ -1,13 +1,13 @@
 ---
-title: "How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (C#)"
+title: "How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: c4cdce49-b1c8-4420-b12a-9ff7e6671368
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 The following example shows how LINQ can be used with reflection to retrieve specific metadata about methods that match a specified search criterion. In this case, the query will find the names of all the methods in the assembly that return enumerable types such as arrays.  
   
 ## Example  

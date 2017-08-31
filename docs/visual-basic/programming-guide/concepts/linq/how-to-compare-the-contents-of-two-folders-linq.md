@@ -1,8 +1,8 @@
 ---
-title: "How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)"
+title: "How to: Compare the Contents of Two Folders (LINQ) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,16 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 903c7e9a-f48d-4a07-a8a8-5450d2646efa
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This example demonstrates three ways to compare two file listings:  
   
 -   By querying for a Boolean value that specifies whether the two file lists are identical.  

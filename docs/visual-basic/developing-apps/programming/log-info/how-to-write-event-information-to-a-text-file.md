@@ -1,13 +1,13 @@
 ---
-title: "How to: Write Event Information to a Text File (Visual Basic)"
+title: "How to: Write Event Information to a Text File (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,25 +17,13 @@ helpviewer_keywords:
   - "events [Visual Basic], writing event information to a text file"
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
 caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Write Event Information to a Text File (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application. This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information to a log file.  
   
 ### To add and configure the file log listener  
@@ -58,7 +46,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 3.  Add this element to that `<listeners>` section:  
   
-    ```xml  
+    ```  
     <add name="FileLogListener" />  
     ```  
   
@@ -66,7 +54,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 5.  Add this element to that `<sharedListeners>` section:  
   
-    ```xml  
+    ```  
     <add name="FileLogListener"   
         type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
               Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral,   

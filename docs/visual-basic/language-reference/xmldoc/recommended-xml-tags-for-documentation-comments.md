@@ -1,13 +1,13 @@
 ---
-title: "Recommended XML Tags for Documentation Comments (Visual Basic)"
+title: "Recommended XML Tags for Documentation Comments (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlDocComment"
@@ -19,26 +19,14 @@ helpviewer_keywords:
   - "comments, recommended XML tags"
 ms.assetid: 294e0736-ff1e-498e-af83-6db71ed41a72
 caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Recommended XML Tags for Documentation Comments (Visual Basic)
-The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler can process documentation comments in your code to an XML file. You can use additional tools to process the XML file into documentation.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] compiler can process documentation comments in your code to an XML file. You can use additional tools to process the XML file into documentation.  
   
  XML comments are allowed on code constructs such as types and type members. For partial types, only one part of the type can have XML comments, although there is no restriction on commenting its members.  
   
@@ -48,7 +36,7 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler can process documentati
  The compiler processes any tag that is valid XML. The following tags provide commonly used functionality in user documentation.  
   
 ||||  
-|---|---|---|  
+|-|-|-|  
 |[\<c>](../../../visual-basic/language-reference/xmldoc/c.md)|[\<code>](../../../visual-basic/language-reference/xmldoc/code.md)|[\<example>](../../../visual-basic/language-reference/xmldoc/example.md)|  
 |[\<exception>](../../../visual-basic/language-reference/xmldoc/exception.md) <sup>1</sup>|[\<include>](../../../visual-basic/language-reference/xmldoc/include.md) <sup>1</sup>|[\<list>](../../../visual-basic/language-reference/xmldoc/list.md)|  
 |[\<para>](../../../visual-basic/language-reference/xmldoc/para.md)|[\<param>](../../../visual-basic/language-reference/xmldoc/param.md) <sup>1</sup>|[\<paramref>](../../../visual-basic/language-reference/xmldoc/paramref.md)|  

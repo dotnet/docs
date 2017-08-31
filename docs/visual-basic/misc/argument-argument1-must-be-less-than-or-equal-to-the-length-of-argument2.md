@@ -1,41 +1,26 @@
 ---
-title: "Argument &#39;&lt;argument1&gt;&#39; must be less than or equal to the length of argument &#39;&lt;argument2&gt;&#39;"
-
+title: "Argument &#39;&lt;argument1&gt;&#39; must be less than or equal to the length of argument &#39;&lt;argument2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_IndexLELength2"
 ms.assetid: 10765f81-79c5-44c2-89c5-888253105b78
 caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Argument &#39;&lt;argument1&gt;&#39; must be less than or equal to the length of argument &#39;&lt;argument2&gt;&#39;
 An argument's length exceeds the allowable limit, which is determined by the second argument's length.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Ensure that the length of the argument's value falls within the valid range.  
   

@@ -1,13 +1,13 @@
 ---
-title: "Let Clause (Visual Basic)"
-
+title: "Let Clause (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryLet"
@@ -19,25 +19,13 @@ helpviewer_keywords:
   - "Let statement"
 ms.assetid: 981aa516-16eb-4c53-b1f1-5aa3e82f316e
 caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Let Clause (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Computes a value and assigns it to a new variable within the query.  
   
 ## Syntax  
@@ -48,8 +36,9 @@ Let variable = expression [, ...]
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`variable`|Required. An alias that can be used to reference the results of the supplied expression.|  
 |`expression`|Required. An expression that will be evaluated and assigned to the specified variable.|  
   
@@ -61,7 +50,7 @@ Let variable = expression [, ...]
 ## Example  
  The following code example uses the `Let` clause to compute a 10 percent discount on products.  
   
- [!code-vb[VbSimpleQuerySamples#16](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/let-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#16](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#16)]  
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

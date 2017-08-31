@@ -1,8 +1,8 @@
 ---
-title: "How to: Write a Query that Finds Elements Based on Context (Visual Basic)"
+title: "How to: Write a Query that Finds Elements Based on Context (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,11 +13,13 @@ dev_langs:
   - "VB"
 ms.assetid: 0b085290-ddc1-4126-aaa0-e4c95a3d9a09
 caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # How to: Write a Query that Finds Elements Based on Context (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Sometimes you might have to write a query that selects elements based on their context. You might want to filter based on preceding or following sibling elements. You might want to filter based on child or ancestor elements.  
   
  You can do this by writing a query and using the results of the query in the `where` clause. If you have to first test against null, and then test the value, it is more convenient to do the query in a `let` clause, and then use the results in the `where` clause.  
@@ -55,6 +57,7 @@ Dim items As IEnumerable(Of XElement) = _
 For Each e As XElement In items  
     Console.WriteLine("id = {0}", e.@<id>)  
 Next  
+  
 ```  
   
  This code produces the following output:  

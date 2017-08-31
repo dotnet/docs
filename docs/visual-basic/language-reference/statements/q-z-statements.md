@@ -1,41 +1,29 @@
 ---
-title: "Q-Z Statements"
-
+title: "Q-Z Statements | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 32a9e547-c1b7-40f2-8118-7eef1d19649e
 caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Q-Z Statements
-The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The following table contains a listing of [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] language statements.  
   
 |||||  
-|---|---|---|---|  
+|-|-|-|-|  
 |[RaiseEvent](../../../visual-basic/language-reference/statements/raiseevent-statement.md)|[ReDim](../../../visual-basic/language-reference/statements/redim-statement.md)|[REM](../../../visual-basic/language-reference/statements/rem-statement.md)|[RemoveHandler](../../../visual-basic/language-reference/statements/removehandler-statement.md)|  
 |[Resume](../../../visual-basic/language-reference/statements/resume-statement.md)|[Return](../../../visual-basic/language-reference/statements/return-statement.md)|[Select...Case](../../../visual-basic/language-reference/statements/select-case-statement.md)|[Set](../../../visual-basic/language-reference/statements/set-statement.md)|  
 |[Stop](../../../visual-basic/language-reference/statements/stop-statement.md)|[Structure](../../../visual-basic/language-reference/statements/structure-statement.md)|[Sub](../../../visual-basic/language-reference/statements/sub-statement.md)|[SyncLock](../../../visual-basic/language-reference/statements/synclock-statement.md)|  

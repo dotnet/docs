@@ -1,41 +1,26 @@
 ---
-title: "Division by zero (Visual Basic Run-Time Error)"
-
+title: "Division by zero (Visual Basic Run-Time Error) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID11"
 ms.assetid: 5b9bc5d6-792e-48bc-a974-012e07ad95f3
 caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Division by zero (Visual Basic Run-Time Error)
 An expression being used as a divisor has a value of zero.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Check the spelling of variables in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   

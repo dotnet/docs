@@ -1,13 +1,13 @@
 ---
-title: "Using Statement (Visual Basic)"
-
+title: "Using Statement (Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.using"
@@ -20,39 +20,28 @@ helpviewer_keywords:
   - "Using statement"
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
 caps.latest.revision: 36
-author: dotnet-bot
-ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 # Using Statement (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Declares the beginning of a `Using` block and optionally acquires the system resources that the block controls.  
   
 ## Syntax  
   
 ```  
-Using { resourcelist | resourceexpression }  
-    [ statements ]  
+Using { resourcelist | resourceexpression }  
+    [ statements ]  
 End Using  
 ```  
   
 ## Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`resourcelist`|Required if you do not supply `resourceexpression`. List of one or more system resources that this `Using` block controls, separated by commas.|  
 |`resourceexpression`|Required if you do not supply `resourcelist`. Reference variable or expression referring to a system resource to be controlled by this `Using` block.|  
 |`statements`|Optional. Block of statements that the `Using` block runs.|  
@@ -68,8 +57,9 @@ End Using
   
 ## resourcelist Parts  
   
+|||  
+|-|-|  
 |Term|Definition|  
-|---|---|  
 |`resourcename`|Required. Reference variable that refers to a system resource that the `Using` block controls.|  
 |`New`|Required if the `Using` statement acquires the resource. If you have already acquired the resource, use the second syntax alternative.|  
 |`resourcetype`|Required. The class of the resource. The class must implement the <xref:System.IDisposable> interface.|  
@@ -129,7 +119,7 @@ End Try
   
  Because the <xref:System.IO.TextWriter> and <xref:System.IO.TextReader> classes implement the <xref:System.IDisposable> interface, the code can use `Using` statements to ensure that the file is correctly closed after the write and read operations.  
   
- [!code-vb[VbVbalrStatements#50](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/using-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#50](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#50)]  
   
 ## See Also  
  <xref:System.IDisposable>   

@@ -37,7 +37,7 @@ You can read about those combinations in these walk-througs:
 * Create unit tests using [*XUnit* and *C#* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
 * Create unit tests using [*MSTest* and *C#* with the .NET Core CLI](unit-testing-with-mstest.md).
 * Create unit tests using [*XUnit* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-dotnet-test.md).
-* Create unit tests using [*MSTest* and *F#* with the .NET Core CLI](unit-testing-with-mstest.md).
+* Create unit tests using [*MSTest* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-mstest.md).
 * Create unit tests using [*XUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
 * Create unit tests using [*MSTest* and *Visual Basic* with the .NET Core CLI](unit-testing-with-mstest.md).
 

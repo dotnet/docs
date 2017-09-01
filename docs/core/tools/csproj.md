@@ -37,7 +37,7 @@ Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicit
 * If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
     * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
 * If you need a specific version of the `NetStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
-* Do not explicitly add or update references to either the `Microsoft.NETCore.App` or `NetStandard.Library` metapackage in .NET Framework projects. If any version of `NetStandard.Library` should really be needed when using a .NET Standard based NuGet package, NuGet will automatically install the needed version.
+* Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NetStandard.Library` metapackage in .NET Framework projects. If any version of `NetStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs the needed version.
 
 ## Default compilation includes in .NET Core projects
 With the move to the *csproj* format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files. This means that you no longer need to specify these items in your project file. 

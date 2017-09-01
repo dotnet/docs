@@ -1,6 +1,7 @@
 Imports Microsoft.VisualStudio.TestTools.UnitTesting
 
 Namespace PrimeService.Tests
+    '<SampleTestCode>
     <TestClass>
     Public Class PrimeService_IsPrimeShould
         Private _primeService As Prime.Services.PrimeService = New Prime.Services.PrimeService()
@@ -37,4 +38,5 @@ Namespace PrimeService.Tests
             Assert.IsFalse(result, $"{value} should not be prime")
         End Sub
     End Class
+    '</SampleTestCode>
 End Namespace

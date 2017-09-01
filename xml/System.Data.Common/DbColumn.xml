@@ -109,7 +109,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the base column name; otherwise,                  <see langword="null" /> if no value is set. Can be set to either the column name             or <see langword="null" /> when overridden in a derived class.</summary>
+        <summary>Gets the base column name; otherwise, <see langword="null" /> if no value is set. Can be set to either the column name             or <see langword="null" /> when overridden in a derived class.</summary>
         <value>The base column name; otherwise, a null reference (<see langword="Nothing" /> in Visual Basic) if no value is set.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,8 +550,8 @@
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the numeric precision of the column data; otherwise,                  <see langword="null" /> if no value is set. Can be set to either an                 <see langword="int32" /> value to specify the numeric precision of the column data or                   <see langword="null" /> when overridden in a derived class.</summary>
-        <value>An                 <see langword="int32" /> value that specifies the precision of the column data, if the data is numeric; otherwise, a null reference (                  <see langword="Nothing" /> in Visual Basic) if no value is set.</value>
+        <summary>Gets the numeric precision of the column data; otherwise, <see langword="null" /> if no value is set. Can be set to either an <see langword="int32" /> value to specify the numeric precision of the column data or <see langword="null" /> when overridden in a derived class.</summary>
+        <value>An <see langword="int32" /> value that specifies the precision of the column data, if the data is numeric; otherwise, a null reference (<see langword="Nothing" /> in Visual Basic) if no value is set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -53,7 +53,7 @@ When the lifetime of an `IDisposable` object is limited to a single method, you 
   
  [!code-cs[csrefKeywordsNamespace#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_4.cs)]  
   
-For more information on disposing of `IDisposable` objects, see the "Using an object that implements IDisposable" section in the <xref:System.IDisposable> topic.
+For more information on disposing of `IDisposable` objects, see [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md).
 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
@@ -64,5 +64,5 @@ For more information on disposing of `IDisposable` objects, see the "Using an ob
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [using Directive](../../../csharp/language-reference/keywords/using-directive.md)   
  [Garbage Collection](../../../standard/garbage-collection/index.md)   
- [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)
+ [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)   
  [IDisposable interface](xref:System.IDisposable)

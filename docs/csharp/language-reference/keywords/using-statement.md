@@ -64,5 +64,5 @@ For more information on disposing of `IDisposable` objects, see the "Using an ob
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [using Directive](../../../csharp/language-reference/keywords/using-directive.md)   
  [Garbage Collection](../../../standard/garbage-collection/index.md)   
- [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
+ [Using objects that implement IDisposable](../../../standard/garbage-collection/using-objects.md)
  [IDisposable interface](xref:System.IDisposable)

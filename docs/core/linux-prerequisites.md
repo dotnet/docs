@@ -22,25 +22,26 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 .NET Core 2.x is supported on the following Linux distributions/versions:
 
- * Red Hat Enterprise Linux 7 x64
- * CentOS 7 x64
- * Oracle Linux 7 x64
- * Fedora 25, 26 x64
- * Debian 9, 8.7+ x64 
- * Ubuntu 17.04, 16.04, 14.04  x64
- * Linux Mint 18, 17 x64
- * openSUSE 42.2+ x64
- * SUSE Enterprise Linux (SLES) 12 SP2+ x64
+ * Red Hat Enterprise Linux 7 x86_64
+ * CentOS 7 x86_64
+ * Oracle Linux 7 x86_64
+ * Fedora 25, 26 64-bit
+ * Debian 9, 8.7+ 64-bit
+ * Ubuntu 17.04, 16.04, 14.04 64-bit
+ * Linux Mint 18, 17 64-bit
+ * openSUSE 42.2+ x86_64
+ * SUSE Enterprise Linux (SLES) 12 SP2+ Intel-64
 
 .NET Core 1.x is supported on the following Linux distributions/versions:
 
-* Red Hat Enterprise Linux / CentOS / Oracle Linux 7 x64
-* Fedora 24 x64
-* Debian 8.2+ x64
-* Ubuntu / Linux Mint 14.04, 16.04, 16.10*, 17 x64
+* Red Hat Enterprise Linux / CentOS / Oracle Linux 7 x86_64
+* Fedora 24 64-bit
+* Debian 8.2+ 64-bit
+* Ubuntu 14.04, 16.04, 16.10 64-bit
+* Linux Mint 17 64-bit
 * openSUSE 42.1 (1.1) x64
 > [!NOTE]
-> Ubuntu / Linux 16.10 is supported by the latest patch release of .NET Core 1.1
+> Ubuntu 16.10 is supported by the latest patch release of .NET Core 1.1
 
 See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
 

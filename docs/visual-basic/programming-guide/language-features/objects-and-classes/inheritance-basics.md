@@ -5,47 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "derived classes, inheritance"
-  - "MyClass keyword, using"
-  - "MyBase keyword, using"
-  - "Inherits statement, inheritance"
-  - "overriding, Overridable keyword"
-  - "MustInherit keyword, using"
-  - "Overrides keyword, using"
-  - "inheritance"
-  - "MustInherit classes"
-  - "MustOverride keyword, using"
-  - "classes [Visual Basic], derived"
-  - "NotInheritable keyword, using"
-  - "base classes, extending properties and methods"
-  - "NotOverridable keyword, using"
-  - "base classes, inheritance"
-  - "abstract classes, inheritance"
-  - "overriding, Overrides keyword"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""derived classes [VB], inheritance"", ""MyClass keyword [VB], using"", ""MyBase keyword [VB], using"", ""Inherits statement [VB], inheritance"", ""overriding [VB], Overridable keyword [VB]"", ""MustInherit keyword [VB], using"", ""Overrides keyword [VB], using"", ""inheritance [VB]"", ""MustInherit classes [VB]"", ""MustOverride keyword [VB], using"", ""classes [VB], derived"", ""NotInheritable keyword [VB], using"", ""base classes [VB], extending properties and methods"", ""NotOverridable keyword [VB], using"", ""base classes [VB], inheritance"", ""abstract classes [VB], inheritance"", ""overriding [VB], Overrides keyword [VB]""]"]
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Inheritance Basics (Visual Basic)
 The `Inherits` statement is used to declare a new class, called a *derived class*, based on an existing class, known as a *base class*. Derived classes inherit, and can extend, the properties, methods, events, fields, and constants defined in the base class. The following section describes some of the rules for inheritance, and the modifiers you can use to change the way classes inherit or are inherited:  

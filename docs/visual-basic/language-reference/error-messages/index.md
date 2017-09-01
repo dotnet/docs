@@ -1,40 +1,18 @@
 ---
 title: "Error Messages (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "errors [Visual Basic]"
-  - "error messages"
-  - "trappable errors"
-  - "errors [Visual Basic], trappable"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""errors [VB]"", ""error messages [VB]"", ""trappable errors [VB]"", ""errors [VB], trappable""]"]
 ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Error Messages (Visual Basic)
 When you write, compile, or run a Visual Basic application, the following types of errors can occur:  

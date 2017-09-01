@@ -1,38 +1,17 @@
 ---
 title: "My.Computer.FileSystem.SpecialDirectories Object | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My.Computer.FileSystem.SpecialDirectories object"
-  - "SpecialDirectories object"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""My.Computer.FileSystem.SpecialDirectories object"", ""SpecialDirectories object [VB]""]"]
 ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # My.Computer.FileSystem.SpecialDirectories Object
 Provides properties for accessing commonly referenced directories.  

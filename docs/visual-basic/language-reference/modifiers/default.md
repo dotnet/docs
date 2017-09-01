@@ -1,43 +1,18 @@
 ---
 title: "Default (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Default"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "defaults, properties"
-  - "properties [Visual Basic], default"
-  - "default properties, in Visual Basic"
-  - "Default keyword [Visual Basic]"
-  - "default properties"
+f1_keywords: ["vb.Default"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""defaults [VB]""  properties [VB]"", ""properties [VB], default"", ""default properties, in Visual Basic"", ""Default keyword [VB]"", ""default properties [VB]"" ]"]
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Default (Visual Basic)
 Identifies a property as the default property of its class, structure, or interface.  

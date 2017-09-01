@@ -1,70 +1,17 @@
 ---
 title: "Data Type Summary (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Boolean data type, supported types in Visual Basic"
-  - "storage, order of storage"
-  - "data types [Visual Basic], Visual Basic"
-  - "Single data type, supported types in Visual Basic"
-  - "notation, scientific"
-  - "memory requirements, data types"
-  - "user-defined data types, Visual Basic"
-  - "Date data type, Visual Basic"
-  - "Visual Basic, data types"
-  - "storage, allocation"
-  - "Integer data type, Visual Basic data types"
-  - "storage, space"
-  - "Variant data types, supported types in Visual Basic"
-  - "Char data type, Visual Basic data types"
-  - "intrinsic data types"
-  - "memory consumption, data types"
-  - "single-precision numbers"
-  - "data types [Visual Basic], order of storage"
-  - "Long data type, supported types in Visual Basic"
-  - "String data type, Visual Basic data types"
-  - "storage order, data types"
-  - "StructLayoutAttribute class, Visual Basic data type storage"
-  - "scientific notation"
-  - "Double data type, Visual Basic data types"
-  - "Byte data type, Visual Basic data types"
-  - "Object data type, supported types in Visual Basic"
-  - "data types [Visual Basic], storage allocation"
-  - "double-precision numbers"
-  - "data types [Visual Basic], summary"
-  - "dates [Visual Basic], data types"
-  - "strings [Visual Basic], data types"
-  - "memory consumption"
-  - "storage order, controlling in Visual Basic"
-  - "data types [Visual Basic], memory requirements"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Boolean data type [VB], supported types in Visual Basic"", ""storage, order of storage"", ""data types [VB], Visual Basic"", ""Single data type [VB], supported types in Visual Basic"", ""notation, scientific"", ""memory requirements [VB], data types"", ""user-defined data types, Visual Basic"", ""Date data type [VB], Visual Basic"", ""Visual Basic, data types"", ""storage, allocation"", ""Integer data type [VB], Visual Basic data types"", ""storage, space"", ""Variant data types, supported types in Visual Basic"", ""Char data type [VB], Visual Basic data types"", ""intrinsic data types [VB]"", ""memory consumption, data types"", ""single-precision numbers [VB]"", ""data types [VB], order of storage"", ""Long data type [VB], supported types in Visual Basic"", ""String data type [VB], Visual Basic data types"", ""storage order, data types"", ""StructLayoutAttribute class, Visual Basic data type storage"", ""scientific notation [VB]"", ""Double data type [VB], Visual Basic data types"", ""Byte data type [VB], Visual Basic data types"", ""Object data type [VB], supported types in Visual Basic"", ""data types [VB], storage allocation"", ""double-precision numbers [VB]"", ""data types [VB], summary"", ""dates [VB], data types"", ""strings [VB], data types"", ""memory consumption [VB]"", ""storage order, controlling in Visual Basic"", ""data types [VB], memory requirements""]"]
 ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Data Type Summary (Visual Basic)
 The following table shows the Visual Basic data types, their supporting common language runtime types, their nominal storage allocation, and their value ranges.  

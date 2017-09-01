@@ -1,40 +1,18 @@
 ---
 title: "Assignment Operators (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "assignment operators, Visual Basic"
-  - "operators [Visual Basic], assignment"
-  - "= assignment statements [Visual Basic]"
-  - "assignment operators"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""assignment operators [VB], Visual Basic"", ""operators [VB], assignment"", ""= assignment statements [VB]"", ""assignment operators [VB]""]"]
 ms.assetid: 43b7e40c-b7af-45f6-b100-198a90f2561e
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Assignment Operators (Visual Basic)
 The following are the assignment operators defined in Visual Basic.  

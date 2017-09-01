@@ -1,39 +1,18 @@
 ---
 title: "/nowin32manifest (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/nowin32manifest compiler option [Visual Basic]"
-  - "nowin32manifest compiler option [Visual Basic]"
-  - "-nowin32manifest compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""/nowin32manifest compiler option [VB]"", ""nowin32manifest compiler option [VB]"", ""-nowin32manifest compiler option [VB]""]"]
 ms.assetid: c0528aae-83b3-4425-99f0-19448e9843e3
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /nowin32manifest (Visual Basic)
 Instructs the compiler not to embed any application manifest into the executable file.  

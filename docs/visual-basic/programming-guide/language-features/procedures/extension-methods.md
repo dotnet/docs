@@ -5,37 +5,17 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.ExtensionMethods"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "extending data types"
-  - "extension methods [Visual Basic]"
+f1_keywords: ["vb.ExtensionMethods"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""extending data types [VB]"", ""extension methods [VB]""]"]
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Extension Methods (Visual Basic)
 Extension methods enable developers to add custom functionality to data types that are already defined without creating a new derived type. Extension methods make it possible to write a method that can be called as if it were an instance method of the existing type.  

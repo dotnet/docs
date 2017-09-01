@@ -1,43 +1,19 @@
 ---
 title: "-= Operator (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.-="
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "-= operator [Visual Basic]"
-  - "assignment statements, compound"
-  - "statements [Visual Basic], compound assignment"
-  - "operator -="
-  - "compound assignment statements"
+f1_keywords: ["vb.-="]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""-= operator [VB]"", ""assignment statements [VB], compound"", ""statements [VB], compound assignment"", ""operator -= [VB]"", ""compound assignment statements [VB]"" ]"]
 ms.assetid: 5ead0c37-ae50-48f7-8435-8e341d81cae1
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # -= Operator (Visual Basic)
 Subtracts the value of an expression from the value of a variable or property and assigns the result to the variable or property.  

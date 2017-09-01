@@ -5,52 +5,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.constant"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Integer data type, declaring constants"
-  - "Single data type, declaring constants"
-  - "Const statement [Visual Basic], declaring constants"
-  - "procedures, declaration"
-  - "data types [Visual Basic], constants"
-  - "Long data type, declaring constants"
-  - "Visual Basic code, declaring variables and constants"
-  - "Double data type, declaring constants"
-  - "Boolean data type, declaring constants"
-  - "modules, declaring constants"
-  - "Byte data type, declaring constants"
-  - "constants, declaring"
-  - "Date data type, declaring constants"
-  - "String data type, declaring constants"
-  - "declaring constants, const keyword"
-  - "Currency data type, declaring constants and variants"
-  - "module-level constants and variables"
-  - "Object data type, declaring constants"
+f1_keywords: ["vb.constant"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Integer data type [VB], declaring constants"", ""Single data type [VB], declaring constants"", ""Const statement [VB], declaring constants"", ""procedures [VB], declaration"", ""data types [VB], constants"", ""Long data type [VB], declaring constants"", ""Visual Basic code, declaring variables and constants"", ""Double data type [VB], declaring constants"", ""Boolean data type [VB], declaring constants"", ""modules [VB], declaring constants"", ""Byte data type [VB], declaring constants"", ""constants [VB], declaring"", ""Date data type [VB], declaring constants"", ""String data type [VB], declaring constants"", ""declaring constants [VB], const keyword"", ""Currency data type [VB], declaring constants and variants"", ""module-level constants and variables [VB]"", ""Object data type [VB], declaring constants""]"]
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Declare A Constant (Visual Basic)
 You use the `Const` statement to declare a constant and set its value. By declaring a constant, you assign a meaningful name to a value. Once a constant is declared, it cannot be modified or assigned a new value.  

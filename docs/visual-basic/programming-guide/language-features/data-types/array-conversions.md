@@ -5,41 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "arrays [Visual Basic], converting type"
-  - "type conversion, arrays"
-  - "conversions, type"
-  - "arrays [Visual Basic], data types"
-  - "conversions, data type"
-  - "object arrays, converting type"
-  - "data type conversion, array conversions"
-  - "conversions, array types"
-  - "object arrays"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""arrays [VB], converting type"", ""type conversion [VB],  arrays"" , ""conversions [VB], type"", ""arrays [VB], data types"", ""conversions [VB], data type"", ""object arrays, converting type"", ""data type conversion [VB],  array conversions"", ""conversions [VB], array types"", ""object arrays [VB]"" ]"]
 ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Array Conversions (Visual Basic)
 You can convert an array type to a different array type provided you meet the following conditions:  

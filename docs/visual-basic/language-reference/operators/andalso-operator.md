@@ -1,44 +1,19 @@
 ---
 title: "AndAlso Operator (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.AndAlso"
-  - "AndAlso"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "short-circuiting"
-  - "AndAlso operator"
-  - "operators [Visual Basic], short-circuiting"
-  - "operators [Visual Basic], conjunction"
-  - "short-circuit evaluation"
+f1_keywords: ["vb.AndAlso", "AndAlso"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""short-circuiting"", ""AndAlso operator [VB]"", ""operators [VB], short-circuiting"", ""operators [VB], conjunction"", ""short-circuit evaluation""]"]
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # AndAlso Operator (Visual Basic)
 Performs short-circuiting logical conjunction on two expressions.  

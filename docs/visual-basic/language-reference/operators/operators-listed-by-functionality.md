@@ -1,37 +1,18 @@
 ---
 title: "Operators Listed by Functionality (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "operators [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""operators [VB]""]"]
 ms.assetid: d1fb027c-872b-4ccc-afc8-2380e3f65d4a
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Operators Listed by Functionality (Visual Basic)
 See one of the categories listed below, or open this portion of the Help table of contents to see an alphabetical list of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] operators.  

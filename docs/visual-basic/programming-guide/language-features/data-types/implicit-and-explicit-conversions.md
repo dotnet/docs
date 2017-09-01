@@ -5,49 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "conversions, type"
-  - "variables [Visual Basic], changing data type"
-  - "casting"
-  - "conversions, data type"
-  - "type conversion, implicit conversions"
-  - "CType function, conversions"
-  - "casting, data types"
-  - "data type conversion, explicit"
-  - "type conversion, explicit conversions"
-  - "data types [Visual Basic], casting"
-  - "conversions, implicit"
-  - "explicit data type conversions"
-  - "conversions"
-  - "changing data types"
-  - "conversions, explicit"
-  - "data type conversion, implicit"
-  - "implicit data type conversions"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""conversions [VB], type"", ""variables [VB], changing data type"", ""casting [VB]"", ""conversions [VB], data type"", ""type conversion [VB],  implicit conversions"", ""CType function, conversions"", ""casting, data types"", ""data type conversion [VB],  explicit"", ""type conversion [VB],  explicit conversions"", ""data types [VB], casting"", ""conversions [VB], implicit"", ""explicit data type conversions [VB]"", ""conversions [VB]"", ""changing data types [VB]"", ""conversions [VB], explicit"", ""data type conversion [VB],  implicit"", ""implicit data type conversions [VB]""]"]
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Implicit and Explicit Conversions (Visual Basic)
 An *implicit conversion* does not require any special syntax in the source code. In the following example, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] implicitly converts the value of `k` to a single-precision floating-point value before assigning it to `q`.  

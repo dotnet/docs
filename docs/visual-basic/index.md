@@ -1,39 +1,17 @@
 ---
 title: "Visual Basic | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "programming, Visual Basic"
-  - "Visual Basic"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""programming, Visual Basic"", ""Visual Basic [VB]""]"]
 ms.assetid: 5cc578fe-d9e5-4015-937d-b34b83207072
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Visual Basic
 Visual Basic is engineered for productively building type-safe and object-oriented applications. Visual Basic enables developers to target Windows, Web, and mobile devices. As with all languages targeting the Microsoft .NET Framework, programs written in Visual Basic benefit from security and language interoperability.  

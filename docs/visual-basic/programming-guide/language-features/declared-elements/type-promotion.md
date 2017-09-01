@@ -5,39 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "declared elements, scope"
-  - "visibility, declared elements"
-  - "Partial keyword, unexpected results with type promotion"
-  - "scope, declared elements"
-  - "scope, Visual Basic"
-  - "type promotion"
-  - "declared elements, visibility"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""declared elements [VB], scope"", ""visibility [VB], declared elements"", ""Partial keyword [VB], unexpected results with type promotion"", ""scope [VB], declared elements"", ""scope [VB], Visual Basic"", ""type promotion [VB]"", ""declared elements [VB], visibility""]"]
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Type Promotion (Visual Basic)
 When you declare a programming element in a module, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] promotes its scope to the namespace containing the module. This is known as *type promotion*.  

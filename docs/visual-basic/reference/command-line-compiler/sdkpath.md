@@ -1,42 +1,19 @@
 ---
 title: "/sdkpath | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "sdkpath"
-  - "/sdkpath"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "-sdkpath compiler option [Visual Basic]"
-  - "/sdkpath compiler option [Visual Basic]"
-  - "sdkpath compiler option [Visual Basic]"
+f1_keywords: ["sdkpath", "/sdkpath"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""-sdkpath compiler option [VB]"", ""/sdkpath compiler option [VB]"", ""sdkpath compiler option [VB]""]"]
 ms.assetid: fec8a3f1-b791-4a37-8af7-344859f8212d
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /sdkpath
 Specifies the location of Mscorlib.dll and Microsoft.VisualBasic.dll.  

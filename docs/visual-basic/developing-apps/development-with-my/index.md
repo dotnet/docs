@@ -1,42 +1,18 @@
 ---
 title: "Development with My (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "My.MyWpfExtension.Windows"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My object"
-  - "My namespace"
-  - "My feature"
-  - "Visual Basic, programming in"
+f1_keywords: ["My.MyWpfExtension.Windows"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""My object [VB]"", ""My namespace [VB]"", ""My feature [VB]"", ""Visual Basic, programming in""]"]
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Development with My (Visual Basic)
 Visual Basic provides new features for rapid application development that improve productivity and ease of use while delivering power. One of these features, called `My`, provides access to information and default object instances that are related to the application and its run-time environment. This information is organized in a format that is discoverable through IntelliSense and logically delineated according to use.  

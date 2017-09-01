@@ -1,39 +1,19 @@
 ---
 title: "Option &lt;keyword&gt; Statement | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.option"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Option keyword"
+f1_keywords: ["vb.option"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Option keyword [VB]""]"]
 ms.assetid: 6b2f41c4-2403-43b6-8a14-94a3775e5b47
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Option &lt;keyword&gt; Statement
 Introduces a statement that specifies a compiler option that applies to the entire source file.  

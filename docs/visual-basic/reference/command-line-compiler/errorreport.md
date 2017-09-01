@@ -1,40 +1,19 @@
 ---
 title: "/errorreport | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "-errorreport compiler option [Visual Basic]"
-  - "/errorreport compiler option [Visual Basic]"
-  - "errorreport compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""-errorreport compiler option [VB]"", ""/errorreport compiler option [VB]"", ""errorreport compiler option [VB]""]"]
 ms.assetid: a7fe83a2-a6d8-460c-8dad-79a8f433f501
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /errorreport
 Specifies how the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler should report internal compiler errors.  

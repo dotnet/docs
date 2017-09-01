@@ -1,50 +1,19 @@
 ---
 title: "\\ Operator (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.\\"
-  - "\\"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "division operator, integer"
-  - "integer division operator"
-  - "zero, division by zero"
-  - "arithmetic operators, division"
-  - "division, by zero"
-  - "backslash (\\) [Visual Basic]"
-  - "\\ operator [Visual Basic]"
-  - "integer quotient"
-  - "math operators"
-  - "quotients, integer"
-  - "truncation, integer division"
+f1_keywords: ["vb.\\", "\\"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""division operator [VB], integer"", ""integer division operator [VB]"", ""zero, division by zero"", ""arithmetic operators [VB], division"", ""division, by zero"", ""backslash (\\) [VB]"", ""\\ operator [VB]"", ""integer quotient [VB]"", ""math operators [VB]"", ""quotients, integer"", ""truncation, integer division""]"]
 ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # \ Operator (Visual Basic)
 Divides two numbers and returns an integer result.  

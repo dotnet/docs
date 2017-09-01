@@ -1,55 +1,19 @@
 ---
 title: "On Error Statement (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.OnError"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, control flow"
-  - "Resume Next statement"
-  - "errors [Visual Basic], trapping"
-  - "error handling, On Error statement"
-  - "Next statement, On Error"
-  - "control flow, branching"
-  - "Error keyword"
-  - "execution, conditional"
-  - "Resume statement, and On Error statement"
-  - "Error statement, and On Error statement"
-  - "GoTo statement, and On Error statement"
-  - "branching, on error"
-  - "conditional statements, On Error"
-  - "On Error statement, syntax"
-  - "On keyword"
-  - "run-time errors, handling"
-  - "On Error statement"
+f1_keywords: ["vb.OnError"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Visual Basic code, control flow"", ""Resume Next statement [VB]"", ""errors [VB], trapping"", ""error handling, On Error statement"", ""Next statement [VB], On Error"", ""control flow [VB], branching"", ""Error keyword [VB]"", ""execution [VB], conditional"", ""Resume statement [VB], and On Error statement"", ""Error statement [VB], and On Error statement"", ""GoTo statement [VB], and On Error statement"", ""branching [VB], on error"", ""conditional statements [VB], On Error"", ""On Error statement [VB], syntax"", ""On keyword [VB]"", ""run-time errors [VB], handling"", ""On Error statement [VB]""]"]
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # On Error Statement (Visual Basic)
 Enables an error-handling routine and specifies the location of the routine within a procedure; can also be used to disable an error-handling routine.  

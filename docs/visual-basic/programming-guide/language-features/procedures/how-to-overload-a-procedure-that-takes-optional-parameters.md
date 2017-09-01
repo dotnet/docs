@@ -5,39 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "procedures, parameters"
-  - "procedure overloading, optional parameters"
-  - "procedures, defining"
-  - "Visual Basic code, procedures"
-  - "procedure parameters"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""procedures [VB], parameters"", ""procedure overloading [VB], optional parameters"", ""procedures [VB], defining"", ""Visual Basic code, procedures"", ""procedure parameters [VB]"", ""procedures [VB], overloading"", ""procedures [VB], multiple versions""]"]
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Overload a Procedure that Takes Optional Parameters (Visual Basic)
 If a procedure has one or more [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) parameters, you cannot define an overloaded version matching any of its implicit overloads. For more information, see "Implicit Overloads for Optional Parameters" in [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  

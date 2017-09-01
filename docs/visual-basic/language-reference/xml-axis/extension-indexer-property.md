@@ -1,42 +1,19 @@
 ---
 title: "Extension Indexer Property (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.XmlPropertyExtensionIndexer"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, accessing XML"
-  - "XML extension indexer [Visual Basic]"
-  - "extension indexer [Visual Basic]"
-  - "XML [Visual Basic], accessing"
+f1_keywords: ["vb.XmlPropertyExtensionIndexer"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Visual Basic code, accessing XML"", ""XML extension indexer [VB]"", ""extension indexer [VB]"", ""XML [VB], accessing""]"]
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Extension Indexer Property (Visual Basic)
 Provides access to individual elements in a collection.  

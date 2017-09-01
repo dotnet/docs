@@ -5,37 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "exceptions, types"
-  - "errors [Visual Basic], types"
-  - "errors [Visual Basic], logic"
-  - "errors [Visual Basic], syntax"
-  - "logic errors, Visual Basic"
-  - "run-time errors, types of errors"
-  - "syntax errors, Visual Basic"
+helpviewer_keywords: ["[""exceptions, types"", ""errors [VB], types"", ""errors [VB], logic"", ""errors [VB], syntax"", ""logic errors [VB], Visual Basic"", ""run-time errors [VB], types of errors"", ""syntax errors [VB], Visual Basic""]"]
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Error Types (Visual Basic)
 In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], errors (also called *exceptions*) fall into one of three categories: syntax errors, run-time errors, and logic errors.  

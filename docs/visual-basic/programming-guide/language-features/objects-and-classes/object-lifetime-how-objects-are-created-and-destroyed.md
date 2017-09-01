@@ -5,51 +5,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Constructor"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "destructors, object lifetime"
-  - "Sub Finalize destructor"
-  - "objects [Visual Basic], destroying"
-  - "lifetime, objects"
-  - "Sub New constructor, object lifetime"
-  - "Finalize method, object lifetime"
-  - "objects [Visual Basic], creating"
-  - "Class_Terminate"
-  - "Dispose method, object lifetime"
-  - "Class_Initialize"
-  - "object creation, object lifetime"
-  - "parameterized constructors"
-  - "objects [Visual Basic], lifetime"
-  - "objects [Visual Basic], garbage collection"
-  - "constructors [Visual Basic], object lifetime"
-  - "Sub Dispose destructor"
-  - "garbage collection, Visual Basic"
+f1_keywords: ["vb.Constructor"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""destructors [VB], object lifetime"", ""Sub Finalize destructor [VB]"", ""objects [VB], destroying"", ""lifetime [VB], objects"", ""Sub New constructor, object lifetime"", ""Finalize method, object lifetime"", ""objects [VB], creating"", ""Class_Terminate"", ""Dispose method, object lifetime"", ""Class_Initialize"", ""object creation, object lifetime"", ""parameterized constructors [VB]"", ""objects [VB], lifetime"", ""objects [VB], garbage collection"", ""constructors [VB], object lifetime"", ""Sub Dispose destructor [VB]"", ""garbage collection, Visual Basic""]"]
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)
 An instance of a class, an object, is created by using the `New` keyword. Initialization tasks often must be performed on new objects before they are used. Common initialization tasks include opening files, connecting to databases, and reading values of registry keys. Visual Basic controls the initialization of new objects using procedures called *constructors* (special methods that allow control over initialization).  

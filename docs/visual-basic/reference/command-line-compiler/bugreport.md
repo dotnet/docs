@@ -1,39 +1,18 @@
 ---
 title: "/bugreport | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "-bugreport compiler option [Visual Basic]"
-  - "bugreport compiler option [Visual Basic]"
-  - "/bugreport compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""-bugreport compiler option [VB]"", ""bugreport compiler option [VB]"", ""/bugreport compiler option [VB]""]"]
 ms.assetid: e4325406-8dbd-4b48-b311-9ee0799e48bb
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /bugreport
 Creates a file that you can use when you file a bug report.  

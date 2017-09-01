@@ -1,40 +1,18 @@
 ---
 title: "/optimize | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "optimize compiler option [Visual Basic]"
-  - "/optimize compiler option [Visual Basic]"
-  - "optimization, enabling"
-  - "-optimize compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""optimize compiler option [VB]"", ""/optimize compiler option [VB]"", ""optimization, enabling"", ""-optimize compiler option [VB]""]"]
 ms.assetid: fcba4a97-3622-4b87-a891-0f77deab4998
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /optimize
 Enables or disables compiler optimizations.  

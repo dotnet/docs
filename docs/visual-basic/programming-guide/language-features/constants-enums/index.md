@@ -5,40 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "enumerations [Visual Basic]"
-  - "Visual Basic code, constants"
-  - "constants"
-  - "object libraries, Object Browser"
-  - "Visual Basic code, enumerations"
-  - "declaring constants, enumerations"
-  - "naming conventions, constants"
-  - "Visual Basic code, improving readability with constants"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""enumerations [VB]"", ""Visual Basic code, constants"", ""constants [VB]"", ""object libraries, Object Browser"", ""Visual Basic code, enumerations"", ""declaring constants [VB], enumerations"", ""naming conventions [VB], constants"", ""Visual Basic code, improving readability with constants""]"]
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Constants and Enumerations in Visual Basic
 Constants are a way to use meaningful names in place of a value that does not change. Constants store values that, as the name implies, remain constant throughout the execution of an application. You can use constants to provide meaningful names, instead of numbers, making your code more readable.  

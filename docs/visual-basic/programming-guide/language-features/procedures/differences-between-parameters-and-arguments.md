@@ -5,40 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
-  - "parameters, and arguments"
-  - "procedure arguments"
-  - "Visual Basic code, procedures"
-  - "arguments [Visual Basic], and parameters"
-  - "procedure parameters"
-  - "parameters, definition"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""procedures [VB], arguments"", ""procedures [VB], parameters"", ""parameters [VB], and arguments"", ""procedure arguments [VB]"", ""Visual Basic code, procedures"", ""arguments [VB], and parameters"", ""procedure parameters [VB]"", ""parameters [VB], definition""]"]
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Differences Between Parameters and Arguments (Visual Basic)
 In most cases, a procedure must have some information about the circumstances in which it has been called. A procedure that performs repeated or shared tasks uses different information for each call. This information consists of variables, constants, and expressions that you pass to the procedure when you call it.  

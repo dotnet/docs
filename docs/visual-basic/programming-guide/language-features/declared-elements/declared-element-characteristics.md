@@ -5,42 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "declared elements, lifetime"
-  - "access levels, declared elements"
-  - "declared elements, scope"
-  - "visibility, declared elements"
-  - "elements, programming"
-  - "scope, declared elements"
-  - "lifetime, declared elements"
-  - "declared elements, access level"
-  - "data types [Visual Basic], declared elements"
-  - "declared elements, visibility"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""declared elements [VB], lifetime"", ""access levels [VB], declared elements"", ""declared elements [VB], scope"", ""visibility [VB], declared elements"", ""elements [VB], programming"", ""scope [VB], declared elements"", ""lifetime [VB], declared elements"", ""declared elements [VB], access level"", ""data types [VB], declared elements"", ""declared elements [VB], visibility""]"]
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Declared Element Characteristics (Visual Basic)
 A *characteristic* of a declared element is an aspect of that element that affects how code can interact with it. Every declared element has one or more of the following characteristics associated with it:  

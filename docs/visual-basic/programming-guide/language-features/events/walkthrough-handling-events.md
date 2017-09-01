@@ -5,38 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "event handling [Visual Basic], walkthroughs"
-  - "walkthroughs [Visual Basic], event handling"
-  - "variables [Visual Basic], WithEvents"
-  - "events [Visual Basic], walkthroughs"
-  - "WithEvents keyword, walkthroughs"
-  - "event handlers [Visual Basic], walkthroughs"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""event handling [VB], walkthroughs"", ""walkthroughs [VB], event handling"", ""variables [VB], WithEvents"", ""events [VB], walkthroughs"", ""WithEvents keyword [VB], walkthroughs"", ""event handlers [VB], walkthroughs""]"]
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Walkthrough: Handling Events (Visual Basic)
 This is the second of two topics that demonstrate how to work with events. The first topic, [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md), shows how to declare and raise events. This section uses the form and class from that walkthrough to show how to handle events when they take place.  

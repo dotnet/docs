@@ -5,44 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "variables [Visual Basic], declaring"
-  - "colons (:)"
-  - "constants, defining"
-  - "underlines"
-  - "constants, statements"
-  - "blue underline"
-  - "procedures, statements"
-  - "variables [Visual Basic], assigning"
-  - "line breaks, in code"
-  - "executable statements"
-  - "variables [Visual Basic], defining"
-  - "statements [Visual Basic], about statements"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""variables [VB], declaring"", ""colons (:)"", ""constants [VB], defining"", ""underlines [VB]"", ""constants [VB], statements"", ""blue underline [VB]"", ""procedures [VB], statements"", ""variables [VB], assigning"", ""line breaks, in code"", ""executable statements [VB]"", ""variables [VB], defining"", ""statements [VB], about statements""]"]
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Statements in Visual Basic
 A statement in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is a complete instruction. It can contain keywords, operators, variables, constants, and expressions. Each statement belongs to one of the following categories:  

@@ -5,37 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "troubleshooting Visual Basic, procedures"
-  - "procedures, troubleshooting"
-  - "Visual Basic code, procedures"
-  - "troubleshooting procedures"
-  - "procedures, about procedures"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""troubleshooting Visual Basic, procedures"", ""procedures [VB], troubleshooting"", ""Visual Basic code, procedures"", ""troubleshooting procedures [VB]"", ""procedures [VB], about procedures""]"]
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Troubleshooting Procedures (Visual Basic)
 This page lists some common problems that can occur when working with procedures.  

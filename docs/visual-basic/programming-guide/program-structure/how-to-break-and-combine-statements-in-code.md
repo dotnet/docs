@@ -5,51 +5,17 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb._"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "colons (:)"
-  - "line continuation"
-  - "_ line-continuation character"
-  - ": line separator character"
-  - "Visual Basic code, line breaks in"
-  - "Visual Basic code, line breaks"
-  - "Visual Basic code, line continuation"
-  - "long lines of code"
-  - "line terminator"
-  - "line-continuation sequence"
-  - "underscores, in code"
-  - "statements [Visual Basic], line continuation in"
-  - "line breaks, in code"
-  - "line-continuation character"
-  - "Visual Basic code, line continuation in"
-  - "statements [Visual Basic], line breaks in"
+f1_keywords: ["vb._"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""colons (:)"", ""line continuation [VB]"", ""_ line-continuation character"", "": line separator character"", ""Visual Basic code, line breaks in"", ""Visual Basic code, line breaks"", ""Visual Basic code, line continuation"", ""long lines of code [VB]"", ""line terminator [VB]"", ""line-continuation sequence"", ""underscores, in code"", ""statements [VB], line continuation in"", ""line breaks, in code"", ""line-continuation character"", ""Visual Basic code, line continuation in"", ""statements [VB], line breaks in""]"]
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Break and Combine Statements in Code (Visual Basic)
 When writing your code, you might at times create lengthy statements that necessitate horizontal scrolling in the Code Editor. Although this doesn't affect the way your code runs, it makes it difficult for you or anyone else to read the code as it appears on the monitor. In such cases, you should consider breaking the single long statement into several lines.  

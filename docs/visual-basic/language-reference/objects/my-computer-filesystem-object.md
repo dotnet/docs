@@ -1,45 +1,17 @@
 ---
 title: "My.Computer.FileSystem Object | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "FileSystem module"
-  - "FileClose function"
-  - "FileGet function"
-  - "My.Computer.FileSystem object"
-  - "FilePutObject function"
-  - "FilePut function"
-  - "FileGetObject function"
-  - "Seek function"
-  - "FileOpen function"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""FileSystem module [VB]"", ""FileClose function [VB]"", ""FileGet function [VB]"", ""My.Computer.FileSystem object"", ""FilePutObject function [VB]"", ""FilePut function [VB]"", ""FileGetObject function [VB]"", ""Seek function [VB]"", ""FileOpen function [VB]""]"]
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # My.Computer.FileSystem Object
 Provides properties and methods for working with drives, files, and directories.  

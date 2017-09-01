@@ -5,38 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "query samples [LINQ]"
-  - "database querying [LINQ]"
-  - "queries [LINQ in Visual Basic], database querying"
-  - "querying databases [LINQ]"
-  - "queries [LINQ in Visual Basic], how-to topics"
-  - "query samples [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""query samples [LINQ]"", ""database querying [LINQ]"", ""queries [LINQ in Visual Basic], database querying"", ""querying databases [LINQ]"", ""queries [LINQ in Visual Basic], how-to topics"", ""query samples [VB]""]"]
 ms.assetid: bcf5e9c3-a236-4399-9a7f-3991eca7cf56
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Query a Database by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  

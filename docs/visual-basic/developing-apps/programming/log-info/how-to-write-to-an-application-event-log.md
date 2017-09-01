@@ -5,37 +5,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Computer.EventLog element"
-  - "WriteEntry method"
-  - "My.Computer.EventLog element"
-  - "event logs, writing to"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Computer.EventLog element"", ""WriteEntry method [VB]"", ""My.Computer.EventLog element"", ""event logs, writing to""]"]
 ms.assetid: cadbc8c1-87af-4746-934e-55b79a4f6e2b
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Write to an Application Event Log (Visual Basic)
 You can use the `My.Application.Log` and `My.Log` objects to write information about events that occur in your application. This example shows how to configure an event log listener so `My.Application.Log` writes tracing information to the Application event log.  

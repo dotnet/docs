@@ -1,40 +1,18 @@
 ---
 title: "In (Generic Modifier) (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.VarianceIn"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "contravariance, In keyword [Visual Basic]"
-  - "In keyword [Visual Basic]"
+f1_keywords: ["vb.VarianceIn"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""contravariance [VB], In keyword [VB]"", ""In keyword [VB]""]"]
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # In (Generic Modifier) (Visual Basic)
 For generic type parameters, the `In` keyword specifies that the type parameter is contravariant.  

@@ -1,39 +1,16 @@
 ---
 title: ".NET Framework Reference Information (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "language reference, .NET Framework"
-  - ".NET Framework, reference"
-  - ".NET Framework class library, reference information"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""language reference [VB], .NET Framework"", "".NET Framework, reference"", "".NET Framework class library, reference information""]"]
 ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # .NET Framework Reference Information (Visual Basic)
 This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  

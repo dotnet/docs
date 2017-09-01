@@ -1,48 +1,18 @@
 ---
 title: "Date Data Type (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Date"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Date data type"
-  - "dates, Visual Basic data types"
-  - "times, Date data type"
-  - "Date literals"
-  - "data values"
-  - "times, Visual Basic data types"
-  - "dates, Date data type"
-  - "data types [Visual Basic], assigning"
-  - "literals, Date"
-  - "# specifier for Date literals"
+f1_keywords: ["vb.Date"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Date data type [VB]"", ""dates, Visual Basic data types"", ""times, Date data type"", ""Date literals [VB]"", ""data values [VB]"", ""times, Visual Basic data types"", ""dates, Date data type"", ""data types [VB], assigning"", ""literals, Date"", ""# specifier for Date literals""]"]
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Date Data Type (Visual Basic)
 Holds IEEE 64-bit (8-byte) values that represent dates ranging from January 1 of the year 0001 through December 31 of the year 9999, and times from 12:00:00 AM (midnight) through 11:59:59.9999999 PM. Each increment represents 100 nanoseconds of elapsed time since the beginning of January 1 of the year 1 in the Gregorian calendar. The maximum value represents 100 nanoseconds before the beginning of January 1 of the year 10000.  

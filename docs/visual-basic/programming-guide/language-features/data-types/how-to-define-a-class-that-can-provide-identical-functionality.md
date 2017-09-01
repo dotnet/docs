@@ -5,56 +5,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "data type arguments, using"
-  - "type parameters, defining"
-  - "data type arguments, defining"
-  - "arguments [Visual Basic], data types"
-  - "Of keyword, using"
-  - "constraints, Visual Basic generic types"
-  - "generic parameters"
-  - "data type parameters"
-  - "data type parameters, using"
-  - "generics [Visual Basic], defining classes with type parameters"
-  - "data types [Visual Basic], as parameters"
-  - "data types [Visual Basic], as arguments"
-  - "parameters, type"
-  - "type arguments"
-  - "types [Visual Basic], generic"
-  - "parameters, generic"
-  - "type parameters"
-  - "data type arguments"
-  - "parameters, data type"
-  - "generics [Visual Basic], defining generic types"
-  - "data type parameters, defining"
-  - "type arguments, defining"
-  - "arguments [Visual Basic], type"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""data type arguments [VB], using"", ""type parameters [VB], defining"", ""data type arguments [VB], defining"", ""arguments [VB], data types"", ""Of keyword [VB], using"", ""constraints, Visual Basic generic types"", ""generic parameters [VB]"", ""data type parameters [VB]"", ""data type parameters [VB], using"", ""generics [VB], defining classes with type parameters"", ""data types [VB], as parameters"", ""data types [VB], as arguments"", ""parameters [VB], type"", ""type arguments [VB]"", ""types [VB], generic"", ""parameters [VB], generic"", ""type parameters [VB]"", ""data type arguments [VB]"", ""parameters [VB], data type"", ""generics [VB], defining generic types"", ""data type parameters [VB], defining"", ""type arguments [VB], defining"", ""arguments [VB], type""]"]
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)
 You can define a class from which you can create objects that provide identical functionality on different data types. To do this, you specify one or more *type parameters* in the definition. The class can then serve as a template for objects that use various data types. A class defined in this way is called a *generic class*.  

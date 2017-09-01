@@ -5,51 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "examples [Visual Basic], moving files and directories"
-  - "I/O [Visual Basic], deleting folders"
-  - "I/O [Visual Basic], moving directories"
-  - "I/O [Visual Basic], copying directories"
-  - "examples [Visual Basic], creating files and directories"
-  - "I/O [Visual Basic], copying folders"
-  - "I/O [Visual Basic], moving folders"
-  - "examples [Visual Basic], copying files and directories"
-  - "I/O [Visual Basic], deleting directories"
-  - "I/O [Visual Basic], copying files"
-  - "examples [Visual Basic], renaming files and directories"
-  - "I/O [Visual Basic], creating folders"
-  - "I/O [Visual Basic], renaming files"
-  - "I/O [Visual Basic], deleting files"
-  - "I/O [Visual Basic], creating directories"
-  - "I/O [Visual Basic], creating files"
-  - "I/O [Visual Basic], renaming directories"
-  - "I/O [Visual Basic], renaming folders"
-  - "I/O [Visual Basic], moving files"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""examples [VB], moving files and directories"", ""I/O [VB], deleting folders"", ""I/O [VB], moving directories"", ""I/O [VB], copying directories"", ""examples [VB], creating files and directories"", ""I/O [VB], copying folders"", ""I/O [VB], moving folders"", ""examples [VB], copying files and directories"", ""I/O [VB], deleting directories"", ""I/O [VB], copying files"", ""examples [VB], renaming files and directories"", ""I/O [VB], creating folders"", ""I/O [VB], renaming files"", ""I/O [VB], deleting files"", ""I/O [VB], creating directories"", ""I/O [VB], creating files"", ""I/O [VB], renaming directories"", ""I/O [VB], renaming folders"", ""I/O [VB], moving files""]"]
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Creating, Deleting, and Moving Files and Directories in Visual Basic
 This section lists tasks associated with creating, deleting, moving, and renaming files and directories in Visual Basic.  

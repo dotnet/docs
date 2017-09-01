@@ -1,46 +1,19 @@
 ---
 title: "And Operator (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.And"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "operators [Visual Basic], bitwise"
-  - "logical conjunction"
-  - "bitwise AND operator [Visual Basic]"
-  - "conjunction operator"
-  - "And operator [Visual Basic]"
-  - "bitwise operators, AND operator"
-  - "operators [Visual Basic], conjunction"
-  - "bitwise comparison"
+f1_keywords: ["vb.And"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""operators [VB], bitwise"", ""logical conjunction [VB]"", ""bitwise AND operator [VB]"", ""conjunction operator [VB]"", ""And operator [VB]"", ""bitwise operators [VB], AND operator"", ""operators [VB], conjunction"", ""bitwise comparison [VB]""]"]
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # And Operator (Visual Basic)
 Performs a logical conjunction on two `Boolean` expressions, or a bitwise conjunction on two numeric expressions.  

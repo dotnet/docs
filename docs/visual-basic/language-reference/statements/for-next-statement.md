@@ -1,57 +1,20 @@
 ---
 title: "For...Next Statement (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Step"
-  - "vb.Next"
-  - "vb.To"
-  - "vb.for"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "infinite loops"
-  - "Next keyword, For...Next statements"
-  - "For keyword [Visual Basic], For...Next statements"
-  - "Step keyword, For...Next statements"
-  - "operator overloading, For...Next statement"
-  - "To keyword, For...Next statements"
-  - "endless loops"
-  - "loops, endless"
-  - "instructions, repeating"
-  - "Next statement, For...Next"
-  - "For...Next statements"
-  - "loop structures, For...Next"
-  - "loops, infinite"
-  - "Exit statement, For...Next statements"
-  - "For statement"
+f1_keywords: ["vb.Step", "vb.Next", "vb.To", "vb.for"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""infinite loops [VB]"", ""Next keyword [VB], For...Next statements"", ""For keyword [VB], For...Next statements"", ""Step keyword [VB], For...Next statements"", ""operator overloading [VB], For...Next statement"", ""To keyword [VB], For...Next statements [VB]"", ""endless loops [VB]"", ""loops [VB], endless"", ""instructions, repeating"", ""Next statement [VB], For...Next"", ""For...Next statements [VB]"", ""loop structures [VB], For...Next"", ""loops [VB], infinite"", ""Exit statement [VB], For...Next statements"", ""For statement [VB]""]"]
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # For...Next Statement (Visual Basic)
 Repeats a group of statements a specified number of times.  

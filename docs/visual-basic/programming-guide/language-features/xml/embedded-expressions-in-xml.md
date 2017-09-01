@@ -5,37 +5,17 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vb.XmlEmbeddedExpression"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "embedded expressions [Visual Basic]"
-  - "LINQ to XML [Visual Basic], embedded expressions"
-  - "XML literals [Visual Basic], embedded expressions"
+f1_keywords: ["vb.XmlEmbeddedExpression"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""embedded expressions [VB]"", ""LINQ to XML [VB], embedded expressions"", ""XML literals [VB], embedded expressions""]"]
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Embedded Expressions in XML (Visual Basic)
 Embedded expressions enable you to create XML literals that contain expressions that are evaluated at run time. The syntax for an embedded expression is `<%=` `expression` `%>`, which is the same as the syntax used in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)].  

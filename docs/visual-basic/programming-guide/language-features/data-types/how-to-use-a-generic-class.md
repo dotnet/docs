@@ -5,51 +5,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "type parameters, defining"
-  - "data type arguments, defining"
-  - "arguments [Visual Basic], data types"
-  - "Of keyword, using"
-  - "generic parameters"
-  - "data type parameters"
-  - "generics [Visual Basic], about generics"
-  - "data types [Visual Basic], as parameters"
-  - "data types [Visual Basic], as arguments"
-  - "parameters, type"
-  - "types [Visual Basic], generic"
-  - "parameters, generic"
-  - "generics [Visual Basic], creating generic types"
-  - "data type arguments"
-  - "parameters, data type"
-  - "data type parameters, defining"
-  - "type arguments, defining"
-  - "arguments [Visual Basic], type"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""type parameters [VB], defining"", ""data type arguments [VB], defining"", ""arguments [VB], data types"", ""Of keyword [VB], using"", ""generic parameters [VB]"", ""data type parameters [VB]"", ""generics [VB], about generics"", ""data types [VB], as parameters"", ""data types [VB], as arguments"", ""parameters [VB], type"", ""types [VB], generic"", ""parameters [VB], generic"", ""generics [VB], creating generic types"", ""data type arguments [VB]"", ""parameters [VB], data type"", ""data type parameters [VB], defining"", ""type arguments [VB], defining"", ""arguments [VB], type""]"]
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Use a Generic Class (Visual Basic)
 A class that takes *type parameters* is called a *generic class*. If you are using a generic class, you can generate a *constructed class* from it by supplying a *type argument* for each of these parameters. You can then declare a variable of the constructed class type, and you can create an instance of the constructed class and assign it to that variable.  

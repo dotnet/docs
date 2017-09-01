@@ -4,44 +4,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.ImplementsClause"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "interface implementation, reimplementation"
-  - "interface members, reimplementation"
-  - "interface members, Implements keyword"
-  - "interface members"
-  - "members, reimplementation"
-  - "interface implementation, Implements keyword"
-  - "interface members, implementing"
-  - "Implements keyword"
-  - "Implements statement, about Implements"
-  - "members, implementing"
-  - "members, Implements keyword"
-  - "reimplementation"
+f1_keywords: ["vb.ImplementsClause"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""interface implementation, reimplementation"", ""interface members [VB],  reimplementation"", ""interface members [VB],  Implements keyword [VB]"", ""interface members [VB]""  , ""members [VB],  reimplementation"", ""interface implementation, Implements keyword"", ""interface members [VB],  implementing"", ""Implements keyword [VB]"", ""Implements statement [VB], about Implements"", ""members [VB],  implementing"", ""members [VB],  Implements keyword"", ""reimplementation [VB]""]"]
 ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Implements Clause (Visual Basic)
 Indicates that a class or structure member is providing the implementation for a member defined in an interface.  

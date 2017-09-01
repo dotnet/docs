@@ -1,42 +1,18 @@
 ---
 title: "/help, -? (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/? compiler option [Visual Basic]"
-  - "-help compiler option [Visual Basic]"
-  - "/help compiler option [Visual Basic]"
-  - "help compiler option [Visual Basic]"
-  - "-? compiler option [Visual Basic]"
-  - "? compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""/? compiler option [VB]"", ""-help compiler option [VB]"", ""/help compiler option [VB]"", ""help compiler option [VB]"", ""-? compiler option [VB]"", ""? compiler option [VB]""]"]
 ms.assetid: eb984aa5-ac98-4d0b-a0d2-24238d7bc8dc
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /help, /? (Visual Basic)
 Displays the compiler options.  

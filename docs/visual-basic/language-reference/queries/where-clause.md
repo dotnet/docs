@@ -1,41 +1,19 @@
 ---
 title: "Where Clause (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.QueryWhere"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Where statement"
-  - "queries [Visual Basic], Where"
-  - "Where clause"
+f1_keywords: ["vb.QueryWhere"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Where statement [VB]"", ""queries [VB], Where"", ""Where clause [VB]""]"]
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Where Clause (Visual Basic)
 Specifies the filtering condition for a query.  

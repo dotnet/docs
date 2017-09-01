@@ -1,47 +1,19 @@
 ---
 title: "Throw Statement (Visual Basic) | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Throw"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "structured exception handling, throw statements"
-  - "try-catch exception handling, throw statements"
-  - "throw statement, about throw statements"
-  - "throwing exceptions, throw statement"
-  - "exception handling, throw statement"
-  - "On Error statement, throwing exceptions"
-  - "throwing exceptions"
-  - "exception handling, unstructured"
-  - "throw statement"
+f1_keywords: ["vb.Throw"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""structured exception handling, throw statements"", ""try-catch exception handling, throw statements"", ""throw statement [VB], about throw statements"", ""throwing exceptions, throw statement"", ""exception handling, throw statement"", ""On Error statement [VB], throwing exceptions"", ""throwing exceptions [VB]"", ""exception handling, unstructured"", ""throw statement [VB]""]"]
 ms.assetid: a6e07406-5c8a-4498-87a2-8339f3651d62
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Throw Statement (Visual Basic)
 Throws an exception within a procedure.  

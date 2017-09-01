@@ -5,47 +5,17 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "variables [Visual Basic], declaring"
-  - "member variables, declarations"
-  - "Dim statement, variable declaration"
-  - "declaring variables"
-  - "variables [Visual Basic], scope"
-  - "variables [Visual Basic], data types"
-  - "data types [Visual Basic], variable declarations"
-  - "lifetime, variables"
-  - "variables [Visual Basic], lifetime"
-  - "access levels, variables"
-  - "scope, declaration statements"
-  - "variables [Visual Basic], access level"
-  - "local variables, declarations"
-  - "scope, variables"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""variables [VB], declaring"", ""member variables [VB], declarations"", ""Dim statement [VB], variable declaration"", ""declaring variables [VB]"", ""variables [VB], scope"", ""variables [VB], data types"", ""data types [VB], variable declarations"", ""lifetime [VB], variables"", ""variables [VB], lifetime"", ""access levels [VB], variables"", ""scope [VB], declaration statements"", ""variables [VB], access level"", ""local variables [VB], declarations"", ""scope [VB], variables""]"]
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Variable Declaration in Visual Basic
 You declare a variable to specify its name and characteristics. The declaration statement for variables is the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md). Its location and contents determine the variable's characteristics.  

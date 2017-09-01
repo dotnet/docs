@@ -5,40 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "DLLs, calling"
-  - "Windows API, walkthroughs"
-  - "platform invoke, walkthroughs"
-  - "API calls, walkthroughs [Visual Basic]"
-  - "Windows API, calling"
-  - "walkthroughs [Visual Basic], API calls"
-  - "DllImport attribute, calling Windows API"
-  - "Declare statement, declaring DLL functions"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""DLLs, calling"", ""Windows API, walkthroughs"", ""platform invoke [VB], walkthroughs"", ""API calls [VB], walkthroughs"", ""Windows API, calling"", ""walkthroughs [VB], API calls"", ""DllImport attribute, calling Windows API"", ""Declare statement [VB], declaring DLL functions""]"]
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Walkthrough: Calling Windows APIs (Visual Basic)
 Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows operating system. You use them to perform tasks when it is difficult to write equivalent procedures of your own. For example, Windows provides a function named `FlashWindowEx` that lets you make the title bar for an application alternate between light and dark shades.  

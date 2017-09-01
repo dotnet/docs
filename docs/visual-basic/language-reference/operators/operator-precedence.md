@@ -1,47 +1,18 @@
 ---
 title: "Operator Precedence in Visual Basic | Microsoft Docs"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "arithmetic operators, precedence"
-  - "operator precedence"
-  - "logical operators, precedence"
-  - "operators [Visual Basic], associativity"
-  - "operators [Visual Basic], resolution"
-  - "associativity of operators"
-  - "operators [Visual Basic], precedence"
-  - "precedence, of operators"
-  - "comparison operators, precedence"
-  - "math operators"
-  - "order of precedence"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""arithmetic operators [VB], precedence"", ""operator precedence [VB]"", ""logical operators [VB], precedence"", ""operators [VB], associativity"", ""operators [VB], resolution"", ""associativity of operators [VB]"", ""operators [VB], precedence"", ""precedence, of operators [VB]"", ""comparison operators [VB], precedence"", ""math operators [VB]"", ""order of precedence [VB]""]"]
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Operator Precedence in Visual Basic
 When several operations occur in an expression, each part is evaluated and resolved in a predetermined order called *operator precedence*.  

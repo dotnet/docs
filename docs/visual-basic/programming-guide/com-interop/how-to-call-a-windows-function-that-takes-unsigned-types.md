@@ -5,43 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Windows functions, calling"
-  - "unsigned data types"
-  - "UShort data type, using"
-  - "functions [Visual Basic], calling Windows functions"
-  - "ULong data type, using"
-  - "UInteger data type, using"
-  - "data types [Visual Basic], using"
-  - "unsigned types"
-  - "data types [Visual Basic], unsigned"
-  - "data types [Visual Basic], numeric"
-  - "unsigned types, using"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Windows functions, calling"", ""unsigned data types [VB]"", ""UShort data type [VB], using"", ""functions [VB], calling Windows functions"", ""ULong data type [VB], using"", ""UInteger data type [VB], using"", ""data types [VB], using"", ""unsigned types [VB]"", ""data types [VB], unsigned"", ""data types [VB], numeric"", ""unsigned types, using""]"]
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Call a Windows Function that Takes Unsigned Types (Visual Basic)
 If you are consuming a class, module, or structure that has members of unsigned integer types, you can access these members with [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  

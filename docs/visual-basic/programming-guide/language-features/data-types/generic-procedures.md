@@ -5,41 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "generic methods, type inference"
-  - "generics [Visual Basic], type inference"
-  - "procedures, generic"
-  - "generic procedures"
-  - "type inference, generics"
-  - "generic methods"
-  - "type inference"
-  - "generics [Visual Basic], procedures"
-  - "generic procedures, type inference"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""generic methods, type inference"", ""generics [VB], type inference"", ""procedures [VB], generic"", ""generic procedures [VB]"", ""type inference, generics"", ""generic methods [VB]"", ""type inference [VB]"", ""generics [VB], procedures"", ""generic procedures [VB], type inference""]"]
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Generic Procedures in Visual Basic
 A *generic procedure*, also called a *generic method*, is a procedure defined with at least one type parameter. This allows the calling code to tailor the data types to its requirements each time it calls the procedure.  

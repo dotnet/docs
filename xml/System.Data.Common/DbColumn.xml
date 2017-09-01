@@ -109,7 +109,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the base column name; otherwise, <see langword="null" /> if no value is set. Can be set to either the column name             or <see langword="null" /> when overridden in a derived class.</summary>
+        <summary>Gets the base column name; otherwise, <see langword="null" /> if no value is set. Can be set to either the column name or <see langword="null" /> when overridden in a derived class.</summary>
         <value>The base column name; otherwise, a null reference (<see langword="Nothing" /> in Visual Basic) if no value is set.</value>
         <remarks>To be added.</remarks>
       </Docs>

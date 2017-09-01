@@ -86,7 +86,7 @@ Doesn't perform an implicit restore when running the command.
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
-If a relative path is provided to this option, the output directory is relative to the project file location, not to the current working directory.
+If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
 
 `--self-contained`
 
@@ -125,7 +125,7 @@ Specifies one or several [target manifests](../deploying/runtime-store.md) to us
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
-If a relative path is provided to this option, the output directory is relative to the project file location, not to the current working directory.
+If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

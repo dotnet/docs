@@ -66,7 +66,7 @@ This section provides reference material about C# keywords, operators, special c
  [C# KB articles in the Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?LinkId=70368)  
  Opens a Microsoft search page for Knowledge Base articles that are available on MSDN.  
   
- [C#](../../csharp/csharp.md)  
+ [C#](../../csharp/index.md)
  Provides a portal to Visual C# documentation.  
   
  [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  

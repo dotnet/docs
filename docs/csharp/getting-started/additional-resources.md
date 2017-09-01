@@ -1,5 +1,6 @@
 ---
 title: "Additional Resources for Visual C# Programmers"
+description: Further resources that help you learn C# and .NET
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -34,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Additional Resources for Visual C# Programmers
-The following sites can help you find answers to common problems.  
+The following sites can help you find answers to common problems.
   
 ## Microsoft Resources  
   
@@ -80,8 +81,8 @@ The following sites can help you find answers to common problems.
  MSDN's Web site provides information about current third-party sites and newsgroups of interest. For the most current list of resources available, see the [MSDN C# Community Web site](http://go.microsoft.com/fwlink/?LinkId=165945).  
   
 ## See Also  
- [C#](../../csharp/csharp.md)   
- [Getting Started with C#](../../csharp/getting-started/getting-started-with-csharp.md)   
+ [C#](../../csharp/index.md)
+ [Getting Started with C#](index.md)   
  [Customizing the Editor](/visualstudio/ide/customizing-the-editor)   
  [How to: Get Involved in the Developer Community](http://msdn.microsoft.com/library/f1503d98-7a64-41b6-a6c7-0e42a533e9c5)   
  [How to: Send Feedback](http://msdn.microsoft.com/library/c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209)   

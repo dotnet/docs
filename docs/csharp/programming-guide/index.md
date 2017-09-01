@@ -109,4 +109,4 @@ This section provides detailed information on key C# language features and featu
   
 ## See Also  
  [C# Reference](../../csharp/language-reference/index.md)   
- [C#](../../csharp/csharp.md)
+ [C#](../../csharp/index.md)

@@ -75,9 +75,10 @@ code block
 </td><td>
 
 ```
-<expression1>
-<expression2>
-...
+(
+    <expression1>
+    <expression2>
+)
 ```
 
 </td><td>

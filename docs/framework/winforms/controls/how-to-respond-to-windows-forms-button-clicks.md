@@ -50,7 +50,7 @@ The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control
     }  
     ```  
   
-    ```cpp#  
+    ```cpp  
     private:  
        void button1_Click(System::Object ^ sender,  
           System::EventArgs ^ e)  

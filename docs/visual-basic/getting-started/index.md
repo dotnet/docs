@@ -78,7 +78,7 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
  [Visual Studio](/visualstudio/)  
  Provides links into the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] documentation.  
   
- [C#](../../csharp/csharp.md)  
+ [C#](../../csharp/index.md)
  Provides links into the documentation on application development with [!INCLUDE[csprcs](~/includes/csprcs-md.md)].  
   
  [Visual C++](/cpp/)  

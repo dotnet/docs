@@ -11,18 +11,15 @@ type TestClass () =
     member this.TestMethodPassing() =
         Assert.IsTrue(true)
 
-    [<TestMethod>]
-    member this.FailEveryTime() = Assert.IsTrue(false)
+    //[<TestMethod>]
+    // member this.FailEveryTime() = Assert.IsTrue(false)
 
-    // Won't compile because AreEquivalent needs ICollection.
     [<TestMethod>]
     member this.TestEvenSequence() = 
-        let expected = Seq.empty<int>
+        let expected = Seq.empty<int> |> Seq.toList
         let actual = MyMath.sumOfSquares [2; 4; 6; 8; 10]
-        CollectionAssert.AreEquivalent(expected, actual)
+        Assert.AreEqual(expected, actual)
 
-
-    // Fails because Assert.Equal is using reference equality.
     [<TestMethod>]
     member public this.SumOnesAndEvens() =
         let expected = [1; 1; 1; 1]

@@ -8,6 +8,7 @@ module MyMath =
         xs 
         |> Seq.filter isOdd 
         |> Seq.map square
+        |> Seq.toList
 
 module Say =
     let hello name =

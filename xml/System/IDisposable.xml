@@ -50,7 +50,7 @@
  For a detailed discussion about how this interface and the <xref:System.Object.Finalize%2A?displayProperty=fullName> method are used, see the [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md) topics.  
   
 ## Using an object that implements IDisposable  
- Implement <xref:System.IDisposable> only if you are using unmanaged resources directly. If your app simply uses an object that implements <xref:System.IDisposable>, don't provide an <xref:System.IDisposable> implementation. Instead, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation when you are finished using it. Depending on your programming language, you can do this in one of two ways:  
+ If your app simply uses an object that implements the <xref:System.IDisposable> interface, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation when you are finished using it. Depending on your programming language, you can do this in one of two ways:  
   
 -   By using a language construct such as the `using` statement in C# and Visual Basic.  
   

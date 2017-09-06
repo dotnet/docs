@@ -14,9 +14,9 @@ This tutorial takes you through an interactive experience building a sample solu
 ## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-using-dotnet-test* to hold the solution.
-Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create a new solution. This
+Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create a new solution. This practice
 makes it easier to manage both the class library and the unit test project.
-Inside the solution directory, create a *PrimeService* directory. The directory structure thus far is shown below:
+Inside the solution directory, create a *PrimeService* directory. You have the following directory structure thus far:
 
 ```
 /unit-testing-using-dotnet-test
@@ -24,7 +24,7 @@ Inside the solution directory, create a *PrimeService* directory. The directory 
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib -lang VB`](../tools/dotnet-new.md) to create the source project. Rename *Class1.VB* to *PrimeService.VB*. To use test-driven development (TDD), you'll create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib -lang VB`](../tools/dotnet-new.md) to create the source project. Rename *Class1.VB* to *PrimeService.VB*. To use test-driven development (TDD), you create a failing implementation of the `PrimeService` class:
 
 ```vb
 Imports System
@@ -52,7 +52,7 @@ to add the class library project to the solution. Next, create the *PrimeService
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit -lang VB`](../tools/dotnet-new.md). This creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.vbproj*:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit -lang VB`](../tools/dotnet-new.md). This command creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.vbproj*:
 
 ```xml
 <ItemGroup>
@@ -78,7 +78,7 @@ Another option is to edit the *PrimeService.Tests.vbproj* file. Directly under t
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-vb-using-dotnet-test/PrimeService.Tests/PrimeService.Tests.vbproj) on GitHub.
 
-The following shows the final solution layout:
+You have the following final folder layout:
 
 ```
 /unit-testing-using-dotnet-test
@@ -144,6 +144,6 @@ Run `dotnet test`, and two of these tests fail. To make all of the tests pass, c
 if candidate < 2
 ```
 
-Continue to iterate by adding more tests, more theories, and more code in the main library. You'll have the [finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-vb-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.vb) and the [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-vb-using-dotnet-test/PrimeService/PrimeService.vb).
+Continue to iterate by adding more tests, more theories, and more code in the main library. You have the [finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-vb-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.vb) and the [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-vb-using-dotnet-test/PrimeService/PrimeService.vb).
 
-You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is seamless. You concentrate most of your time and effort on solving the goals of the application.
+You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is part of the normal workflow. You concentrate most of your time and effort on solving the goals of the application.

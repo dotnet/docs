@@ -71,7 +71,7 @@ Another option is to edit the *PrimeService.Tests.fsproj* file. Directly under t
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-with-fsharp/MathService.Tests/MathService.Tests.fsproj) on GitHub.
 
-The following shows the final solution layout:
+You have the following final solution layout:
 
 ```
 /unit-testing-with-fsharp
@@ -101,7 +101,7 @@ let ``Fail every time`` () = Assert.True(false)
 
 The `[<Fact>]` attribute denotes a method as a single test. From the *unit-testing-with-fsharp*, execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The xUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
-These two tests show the most basic passing and failing tests. `My test` will pass, and `Fail every time` will fail. Now, create a test for the `sumOfSquares` method. The `sumOfSquares` method will return the sum of the square of all odd integer values that are part of the input sequence. Rather than trying to write all of those functions at once, you can iteratively create tests that validate the functionality. Making each test pass means creating the necessary functionality for the method.
+These two tests show the most basic passing and failing tests. `My test` passes, and `Fail every time` fails. Now, create a test for the `sumOfSquares` method. The `sumOfSquares` method returns the sum of the square of all odd integer values that are part of the input sequence. Rather than trying to write all of those functions at once, you can iteratively create tests that validate the functionality. Making each test pass means creating the necessary functionality for the method.
 
 The simplest test we can write is to call `sumOfSquares` with all even numbers, where the result should be an empty sequence of integers.  Here's that test:
 
@@ -134,7 +134,7 @@ let ``Sum of sequences of Ones and Evens`` () =
     Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
 ```
 
-Executing `dotnet test` will fail the new test. You need to add update sumOfSquares method to handle this new test. You need to filter all the even numbers out of the sequence to make this test pass. You can do that by writing a small filter function and using `Seq.filter`:
+Executing `dotnet test` runs your tests and shows you that the new test fails. Now, update the `sumOfSquares` method to handle this new test. You filter all the even numbers out of the sequence to make this test pass. You can do that by writing a small filter function and using `Seq.filter`:
 
 ```fsharp
 let private isOdd x = x % 2 <> 0
@@ -154,7 +154,7 @@ let ``SquaresOfOdds works`` () =
     Assert.Equal(expected, actual)
 ```
 
-You can fix the test by piping the the filtered sequence through a map operation to compute the square of each odd number:
+You can fix the test by piping the filtered sequence through a map operation to compute the square of each odd number:
 
 ```fsharp
 let private square x = x * x
@@ -166,4 +166,4 @@ let sumOfSquares xs =
     |> Seq.map square
 ```
 
-You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is seamless. You concentrate most of your time and effort on solving the goals of the application.
+You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is part of the normal workflow. You concentrate most of your time and effort on solving the goals of the application.

@@ -54,7 +54,7 @@
   
 -   By using a language construct such as the `using` statement in C# and Visual Basic.  
   
--   By wrapping the call to the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation in a `try`/`catch` block.  
+-   By wrapping the call to the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation in a `try`/`finally` block.  
   
 > [!NOTE]
 >  Documentation for types that implement <xref:System.IDisposable> note that fact and include a reminder to call its <xref:System.IDisposable.Dispose%2A> implementation.  
@@ -66,12 +66,12 @@
  [!code-csharp[System.IDisposable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/calling1.cs#1)]
  [!code-vb[System.IDisposable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/calling1.vb#1)]  
   
- The `using` statement is actually a syntactic convenience. At compile time, the language compiler implements the intermediate language (IL) for a `try`/`catch` block.  
+ The `using` statement is actually a syntactic convenience. At compile time, the language compiler implements the intermediate language (IL) for a `try`/`finally` block.  
   
  For more information about the `using` statement, see the [Using Statement](~/docs/visual-basic/language-reference/statements/using-statement.md) or [using Statement](~/docs/csharp/language-reference/keywords/using-statement.md) topics.  
   
-### The Try/Catch block  
- If your programming language does not support a construct like the `using` statement in C# or Visual Basic, or if you prefer not to use it, you can call the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation from the `finally` block of a `try`/`catch` statement. The following example replaces the `using` block in the previous example with a `try`/`catch`/`finally` block.  
+### The Try/Finally block  
+ If your programming language does not support a construct like the `using` statement in C# or Visual Basic, or if you prefer not to use it, you can call the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation from the `finally` block of a `try`/`finally` statement. The following example replaces the `using` block in the previous example with a `try`/`finally` block.  
   
  [!code-csharp[System.IDisposable#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/calling2.cs#2)]
  [!code-vb[System.IDisposable#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/calling2.vb#2)]  

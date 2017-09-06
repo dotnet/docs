@@ -55,7 +55,7 @@ class TestStringSplit
 {  
     static void Main()  
     {  
-        char[] separatingChars = { "<<", "..." };  
+        string[] separatingChars = { "<<", "..." };  
   
         string text = "one<<two......three<four";  
         System.Console.WriteLine("Original text: '{0}'", text);  

@@ -56,7 +56,7 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
 > [!IMPORTANT]
 >  For application startup code, the only way to control apartment state is to apply the <xref:System.MTAThreadAttribute> or the <xref:System.STAThreadAttribute> to the entry point procedure. In the .NET Framework 1.0 and 1.1, the <xref:System.Threading.Thread.ApartmentState%2A> property can be set as the first line of code. This is not permitted in the .NET Framework 2.0.  
   
- Managed objects that are exposed to COM behave as if they had aggregated the free-threaded marshaler. In other words, they can be called from any COM apartment in a free-threaded manner. The only managed objects that do not exhibit this free-threaded behavior are those objects that derive from <xref:System.EnterpriseServices.ServicedComponent>or <xref:System.Runtime.InteropServices.StandardOleMarshalObject>.  
+ Managed objects that are exposed to COM behave as if they had aggregated the free-threaded marshaler. In other words, they can be called from any COM apartment in a free-threaded manner. The only managed objects that do not exhibit this free-threaded behavior are those objects that derive from <xref:System.EnterpriseServices.ServicedComponent> or <xref:System.Runtime.InteropServices.StandardOleMarshalObject>.  
   
  In the managed world, there is no support for the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> unless you use contexts and context-bound managed instances. If you are using Enterprise Services, then your object must derive from <xref:System.EnterpriseServices.ServicedComponent> (which is itself derived from <xref:System.ContextBoundObject>).  
   

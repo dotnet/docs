@@ -235,7 +235,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
 -   <xref:System.Activities.Tracking.CancelRequestedQuery> - Use this to track requests to cancel a child activity by the parent activity. The query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.CancelRequestedRecord> objects.  
   
-     The configuration and code used to subscribe to records related to activity cancellation using <xref:System.Activities.Tracking.CancelRequestedQuery>is shown in the following example.  
+     The configuration and code used to subscribe to records related to activity cancellation using <xref:System.Activities.Tracking.CancelRequestedQuery> is shown in the following example.  
   
     ```xml  
     <cancelRequestedQueries>  

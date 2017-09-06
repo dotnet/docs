@@ -27,7 +27,7 @@ A <xref:System.TimeSpan> format string defines the string representation of a <x
 > [!IMPORTANT]
 >  The custom <xref:System.TimeSpan> format specifiers do not include placeholder separator symbols, such as the symbols that separate days from hours, hours from minutes, or seconds from fractional seconds. Instead, these symbols must be included in the custom format string as string literals. For example, `"dd\.hh\:mm"` defines a period (.) as the separator between days and hours, and a colon (:) as the separator between hours and minutes.  
 >   
->  Custom<xref:System.TimeSpan> format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other Characters](#Other) section includes an example.  
+>  Custom <xref:System.TimeSpan> format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other Characters](#Other) section includes an example.  
   
  The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=fullName> method, and by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=fullName>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of custom format strings in formatting operations.  
   

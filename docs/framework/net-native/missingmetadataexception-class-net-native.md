@@ -61,7 +61,7 @@ manager: "wpickett"
 |`protected void Finalize()`|Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from <xref:System.Object>.)|  
 |`public Exception GetBaseException()`|Returns the exception that is the root cause of one or more subsequent exceptions. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
 |`public int GetHashCode()`|Returns a hash code for a `MissingMetadataException` instance.   (Inherited from <xref:System.Object>.)|  
-|`public void GetObjectData(SerializationInfo info, StreamingContext context)`|Sets a <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  (Inherited from<xref:System.TypeLoadException>.)|  
+|`public void GetObjectData(SerializationInfo info, StreamingContext context)`|Sets a <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  (Inherited from <xref:System.TypeLoadException>.)|  
 |`public Type GetType()`|Gets the runtime type of the current instance. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
 |`protected Object MemberwiseClone()`|Creates a shallow copy of the current object. (Inherited from <xref:System.Object>.)|  
 |`public string ToString()`|Returns the string representation of the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  

@@ -30,9 +30,16 @@ COM interop provides support for both using COM objects from managed code and ex
   
 -   [Type Library Exporter (Tlbexp.exe)](../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md), which produces a COM type library from an assembly and generates a wrapper that performs marshaling during method calls.  
   
- The following topics describe the processes for customizing interop wrappers when you can (or must) supply the marshaler with additional type information.  
+ The following sections link to topics that describe the processes for customizing interop wrappers when you can (or must) supply the marshaler with additional type information.  
   
 ## In This Section  
+[How to: Create Wrappers Manually](how-to-create-wrappers-manually.md)   
+Describes how to create a COM wrapper manually in managed source code. 
+ 
+ [How to: Migrate Managed-Code DCOM to WCF](../../../docs/framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md)  
+ Describes how to migrate managed DCOM code to WCF for the most secure solution.  
+  
+## Related Sections  
  [COM Data Types](https://msdn.microsoft.com/en-us/library/sak564ww(v=vs.100).aspx)  
  Provides corresponding managed and unmanaged data types.  
   
@@ -42,10 +49,6 @@ COM interop provides support for both using COM objects from managed code and ex
  [Customizing Runtime Callable Wrappers](https://msdn.microsoft.com/en-us/library/e753eftz(v=vs.100).aspx)  
  Describes how to adjust the marshaling behavior of types in an interop assembly and how to define COM types manually.  
   
- [How to: Migrate Managed-Code DCOM to WCF](../../../docs/framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md)  
- Described how to migrate managed DCOM code to WCF for the most secure solution.  
-  
-## Related Sections  
  [Advanced COM Interoperability](https://msdn.microsoft.com/en-us/library/bd9cdfyx(v=vs.100).aspx)  
  Provides links to more information about incorporating COM components into your .NET Framework application.  
   

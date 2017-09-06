@@ -75,7 +75,7 @@ Prints out a short help for the command.
 `--launch-profile <NAME>`
 
 The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`,
-`Staging` and `Production`. For more information, see [Working with multiple environments](/aspnetcore/fundamentals/environments).
+`Staging` and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
 `--no-build`
 

@@ -1272,7 +1272,7 @@
 > [!NOTE]
 >  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus.Continue>.  
 >   
->  For every column that you propagate to the data source on<xref:System.Data.Common.DataAdapter.Update%2A>, a parameter should be added to the `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The `SourceColumn` property of the parameter should be set to the name of the column. This setting indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
+>  For every column that you propagate to the data source on <xref:System.Data.Common.DataAdapter.Update%2A>, a parameter should be added to the `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The `SourceColumn` property of the parameter should be set to the name of the column. This setting indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
   
    
   

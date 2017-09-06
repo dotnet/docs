@@ -183,7 +183,7 @@
   
  The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#1)]
  [!code-vb[System.Globalization.Calendar.AddMethods#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#1)]  
@@ -247,7 +247,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#2)]
  [!code-vb[System.Globalization.Calendar.AddMethods#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#2)]  
@@ -311,7 +311,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#3)]
  [!code-vb[System.Globalization.Calendar.AddMethods#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#3)]  
@@ -375,7 +375,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#4)]
  [!code-vb[System.Globalization.Calendar.AddMethods#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#4)]  
@@ -443,7 +443,7 @@
   
  If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
  [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
@@ -507,7 +507,7 @@
   
  The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#6)]
  [!code-vb[System.Globalization.Calendar.AddMethods#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#6)]  
@@ -573,7 +573,7 @@
   
  In all .NET Framework classes derived from the <xref:System.Globalization.Calendar> class, a week is defined as seven days.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#7)]
  [!code-vb[System.Globalization.Calendar.AddMethods#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#7)]  
@@ -641,7 +641,7 @@
   
  If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
  [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  

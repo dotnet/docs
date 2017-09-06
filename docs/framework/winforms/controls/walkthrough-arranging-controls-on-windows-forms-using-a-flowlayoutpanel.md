@@ -163,7 +163,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 #### To insert a control using the caret  
   
-1.  Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.FlowLayoutPanel> control and point to the space between two <xref:System.Windows.Forms.Button> controls. Note that an insertion bar is drawn, indicating where the <xref:System.Windows.Forms.Button> will be placed when it is dropped into the<xref:System.Windows.Forms.FlowLayoutPanel> control. Before you drop the new <xref:System.Windows.Forms.Button> control into the <xref:System.Windows.Forms.FlowLayoutPanel> control, move the mouse pointer around to observe how the insertion bar moves.  
+1.  Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.FlowLayoutPanel> control and point to the space between two <xref:System.Windows.Forms.Button> controls. Note that an insertion bar is drawn, indicating where the <xref:System.Windows.Forms.Button> will be placed when it is dropped into the <xref:System.Windows.Forms.FlowLayoutPanel> control. Before you drop the new <xref:System.Windows.Forms.Button> control into the <xref:System.Windows.Forms.FlowLayoutPanel> control, move the mouse pointer around to observe how the insertion bar moves.  
   
 2.  Drop the new <xref:System.Windows.Forms.Button> control into the <xref:System.Windows.Forms.FlowLayoutPanel> control. Note that the new <xref:System.Windows.Forms.Button> control is not aligned with the others, because its <xref:System.Windows.Forms.Control.Margin%2A> property has a different value.  
   

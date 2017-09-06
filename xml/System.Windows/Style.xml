@@ -184,7 +184,7 @@
    
   
 ## Examples  
- There are several ways that styles in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] can be extended or inherited. Styles can be based on other styles through this property. When you use this property, the new style will inherit the values of the original style that are not explicitly redefined in the new style. In the following example, `Style2` inherits the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName>value of `Yellow`, and adds a <xref:System.Windows.Controls.Control.Foreground%2A?displayProperty=fullName>value of `Blue`.  
+ There are several ways that styles in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] can be extended or inherited. Styles can be based on other styles through this property. When you use this property, the new style will inherit the values of the original style that are not explicitly redefined in the new style. In the following example, `Style2` inherits the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName> value of `Yellow`, and adds a <xref:System.Windows.Controls.Control.Foreground%2A?displayProperty=fullName> value of `Blue`.  
   
  [!code-xaml[StyleOvw01#ExtendingStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#extendingstyle)]   
   

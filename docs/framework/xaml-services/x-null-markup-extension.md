@@ -39,7 +39,7 @@ Specifies `null` as a value for a XAML member.
   
  The `x:Null` markup extension has no settable properties.  
   
- A null usage is often associated with the XAML member exposure of a CLR <xref:System.Nullable%601>value.  
+ A null usage is often associated with the XAML member exposure of a CLR <xref:System.Nullable%601> value.  
   
  The `x:Null` markup extension, like all XAML markup extensions, uses the braces (`{,}`) for escaping the handling of attribute values to be other than literals or event-handler references. Attribute syntax is the syntax most frequently used with this markup extension. An object element syntax `<x:Null />` is technically possible, but is rarely used because the `x:Null` markup extension has no positional parameters or construction arguments.  
   

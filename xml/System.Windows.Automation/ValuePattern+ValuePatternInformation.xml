@@ -40,7 +40,7 @@
    
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.ValuePattern>control pattern has its <xref:System.Windows.Automation.RangeValuePattern.ValueProperty> set to a user-specified value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.ValuePattern> control pattern has its <xref:System.Windows.Automation.RangeValuePattern.ValueProperty> set to a user-specified value.  
   
  [!code-csharp[UIAValuePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAValuePattern_snip/CSharp/UIAValuePattern_snippets.cs#103)]
  [!code-vb[UIAValuePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAValuePattern_snip/VisualBasic/UIAValuePattern_snippets.vb#103)]  
@@ -68,11 +68,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Single-line edit controls support programmatic access to their contents through <xref:System.Windows.Automation.ValuePattern>. However, multi-line edit controls do not support the <xref:System.Windows.Automation.ValuePattern>control pattern.  
+ Single-line edit controls support programmatic access to their contents through <xref:System.Windows.Automation.ValuePattern>. However, multi-line edit controls do not support the <xref:System.Windows.Automation.ValuePattern> control pattern.  
   
- To retrieve the textual contents of multi-line edit controls the controls must support the <xref:System.Windows.Automation.TextPattern>control pattern. However, <xref:System.Windows.Automation.TextPattern> does not support setting the value of a control.  
+ To retrieve the textual contents of multi-line edit controls the controls must support the <xref:System.Windows.Automation.TextPattern> control pattern. However, <xref:System.Windows.Automation.TextPattern> does not support setting the value of a control.  
   
- <xref:System.Windows.Automation.ValuePattern> does not support the retrieval of formatting information or substring values. The <xref:System.Windows.Automation.TextPattern>control pattern must be used in these scenarios.  
+ <xref:System.Windows.Automation.ValuePattern> does not support the retrieval of formatting information or substring values. The <xref:System.Windows.Automation.TextPattern> control pattern must be used in these scenarios.  
   
    
   

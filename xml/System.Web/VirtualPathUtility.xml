@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Web.VirtualPathUtility.Combine%2A> method returns the value of the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> property if the relative path is exactly a tilde (~).  
+ The <xref:System.Web.VirtualPathUtility.Combine%2A> method returns the value of the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> property if the relative path is exactly a tilde (~).  
   
  The <xref:System.Web.VirtualPathUtility.Combine%2A> method uses the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> property value rather than the base path, if the relative path starts with a tilde and a slash mark (~/); otherwise, the <xref:System.Web.VirtualPathUtility.Combine%2A> method uses the base path.  
   

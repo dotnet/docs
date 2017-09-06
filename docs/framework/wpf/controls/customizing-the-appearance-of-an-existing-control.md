@@ -58,7 +58,7 @@ A CheckBox that uses the default control template
  ![A checkbox with a custom control template.](../../../../docs/framework/wpf/controls/media/ndp-checkboxcustom.png "NDP_CheckBoxCustom")  
 A CheckBox that uses a custom control template  
   
- The<xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.CheckBox> in this sample is relatively complex, so this topic uses a simpler example of creating a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  
+ The <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.CheckBox> in this sample is relatively complex, so this topic uses a simpler example of creating a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  
   
 <a name="changing_the_visual_structure_of_a_control"></a>   
 ## Changing the Visual Structure of a Control  

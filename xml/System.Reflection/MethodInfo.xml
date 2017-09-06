@@ -50,7 +50,7 @@
   
 -   You can determine the method's visibility by retrieving the values of the <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, <xref:System.Reflection.MethodBase.IsPrivate%2A>, and <xref:System.Reflection.MethodBase.IsPublic%2A> properties.  
   
--   You can discover what attributes are applied to the method by retrieving the value of the <xref:System.Reflection.MethodBase.Attributes%2A> property or calling the <xref:System.Reflection.Assembly.GetCustomAttributes%2A>method.  
+-   You can discover what attributes are applied to the method by retrieving the value of the <xref:System.Reflection.MethodBase.Attributes%2A> property or calling the <xref:System.Reflection.Assembly.GetCustomAttributes%2A> method.  
   
 -   You can determine whether the method is a generic method, an open constructed generic method, or a closed constructed generic method, by retrieving the values of the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> and <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> properties.  
   

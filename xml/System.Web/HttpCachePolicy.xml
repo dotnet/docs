@@ -46,7 +46,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Web.HttpCachePolicy.AddValidationCallback%2A> method provides a mechanism to check the response programmatically in the cache before the response is returned to the client by the output cache.  
+ The <xref:System.Web.HttpCachePolicy.AddValidationCallback%2A> method provides a mechanism to check the response programmatically in the cache before the response is returned to the client by the output cache.  
   
  Before the response is served from the Web server cache, all registered handlers are queried to ensure resource validity. If any handler sets a flag indicating that the cached response is not valid, the entry is marked as not valid and expelled from the cache. In this case, as well as when any handler indicates that the cached response should be ignored for this request, the request is then handled as if it were a cache miss.  
   
@@ -679,7 +679,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Web.HttpCachePolicy.SetETagFromFileDependencies%2A> method sets the `ETag` header by retrieving the last modified time stamps of all files on which the handler is dependent, combining all file names and time stamps into a single string, then hashing that string into a single digest that is used as the `ETag`.  
+ The <xref:System.Web.HttpCachePolicy.SetETagFromFileDependencies%2A> method sets the `ETag` header by retrieving the last modified time stamps of all files on which the handler is dependent, combining all file names and time stamps into a single string, then hashing that string into a single digest that is used as the `ETag`.  
   
  <xref:System.Web.HttpCachePolicy.SetETagFromFileDependencies%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   

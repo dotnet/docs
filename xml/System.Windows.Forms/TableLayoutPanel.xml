@@ -262,7 +262,7 @@
 ## Remarks  
  You can specify both the <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> and the <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> properties for layouts with a known and fixed number of cells. You can also specify one property or the other if you expect the number of cells in your layout to grow, assuming that the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property allows for such growth. If the value of <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> is 0, the panel will grow by adding rows, and if the value of <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> is 0, the panel will grow by adding columns. Specifying panel growth with the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property is preferred to setting <xref:System.Windows.Forms.TableLayoutPanel.RowCount%2A> or <xref:System.Windows.Forms.TableLayoutPanel.ColumnCount%2A> to 0, however.  
   
- Controls can be added or deleted from the table using the <xref:System.Windows.Forms.TableLayoutPanel.Controls%2A>property.  
+ Controls can be added or deleted from the table using the <xref:System.Windows.Forms.TableLayoutPanel.Controls%2A> property.  
   
  ]]></format>
         </remarks>

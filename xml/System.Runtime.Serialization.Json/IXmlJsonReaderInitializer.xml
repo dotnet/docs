@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XmlDictionaryReader> objects created by one of the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader%2A> methods implement this interface and are initialized ready to read JSON-encoded data. But if a user wants to reuse the same <xref:System.Xml.XmlDictionaryReader> object to read other JSON-encoded data, then the reader must be initialized to the second dataset to be read by using one of the <xref:System.Runtime.Serialization.Json.IXmlJsonReaderInitializer.SetInput%2A>methods.  
+ The <xref:System.Xml.XmlDictionaryReader> objects created by one of the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader%2A> methods implement this interface and are initialized ready to read JSON-encoded data. But if a user wants to reuse the same <xref:System.Xml.XmlDictionaryReader> object to read other JSON-encoded data, then the reader must be initialized to the second dataset to be read by using one of the <xref:System.Runtime.Serialization.Json.IXmlJsonReaderInitializer.SetInput%2A> methods.  
   
  ]]></format>
     </remarks>

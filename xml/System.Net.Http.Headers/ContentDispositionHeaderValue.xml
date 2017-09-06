@@ -234,7 +234,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> property uses IETF RFC 5987 encoding. The <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName%2A> and  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> properties differ only in that<xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> uses the encoding defined in IETF RFC 5987, allowing the use   of characters not present in the ISO-8859-1 character set.  
+ The  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> property uses IETF RFC 5987 encoding. The <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName%2A> and  <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> properties differ only in that <xref:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar%2A> uses the encoding defined in IETF RFC 5987, allowing the use   of characters not present in the ISO-8859-1 character set.  
   
  ]]></format>
         </remarks>

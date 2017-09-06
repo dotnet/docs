@@ -867,7 +867,7 @@
 ## Remarks  
  The alpha channel of a <xref:System.Windows.Media.Color> structure determines the amount of transparency the <xref:System.Windows.Media.Color> has.  An alpha value of 1 indicates the <xref:System.Windows.Media.Color> is completely opaque and a value of 0 indicates the color is completely transparent.  
   
- The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.A%2A>, the `sRGB` alpha channel, is modified, the `ScRGB` alpha channel, <xref:System.Windows.Media.Color.ScA%2A>is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.A%2A>, the `sRGB` alpha channel, is modified, the `ScRGB` alpha channel, <xref:System.Windows.Media.Color.ScA%2A> is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
   
  ]]></format>
         </remarks>
@@ -917,7 +917,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.G%2A>, the `sRGB` green channel, is modified, the `ScRGB` green channel, <xref:System.Windows.Media.Color.ScG%2A>is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.G%2A>, the `sRGB` green channel, is modified, the `ScRGB` green channel, <xref:System.Windows.Media.Color.ScG%2A> is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
   
  ]]></format>
         </remarks>

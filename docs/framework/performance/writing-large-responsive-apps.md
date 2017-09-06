@@ -415,7 +415,7 @@ class Compilation { /*...*/
   
  **Fix for example 6**  
   
- To remove the completed <xref:System.Threading.Tasks.Task>allocation, you can cache the Task object with the completed result:  
+ To remove the completed <xref:System.Threading.Tasks.Task> allocation, you can cache the Task object with the completed result:  
   
 ```csharp  
 class Compilation { /*...*/  

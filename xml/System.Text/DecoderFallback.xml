@@ -118,7 +118,7 @@
 ## Remarks  
  This method returns an object derived from <xref:System.Text.DecoderFallbackBuffer> that is responsible for performing the fallback operation. For example, of the predefined <xref:System.Text.DecoderFallback> implementations in the .NET Framework, the <xref:System.Text.DecoderReplacementFallback.CreateFallbackBuffer%2A?displayProperty=fullName> method returns a <xref:System.Text.DecoderReplacementFallbackBuffer> object, and the <xref:System.Text.DecoderExceptionFallback.CreateFallbackBuffer%2A?displayProperty=fullName> method returns a <xref:System.Text.DecoderExceptionFallbackBuffer> object.  
   
- The<xref:System.Text.DecoderFallback.CreateFallbackBuffer%2A> method is called by a decoder when it encounters the first byte that it is unable to decode. The <xref:System.Text.DecoderFallbackBuffer> object returned by this method provides the fallback implementation and is responsible for returning the string that replaces the byte or bytes that could not be decoded.  
+ The <xref:System.Text.DecoderFallback.CreateFallbackBuffer%2A> method is called by a decoder when it encounters the first byte that it is unable to decode. The <xref:System.Text.DecoderFallbackBuffer> object returned by this method provides the fallback implementation and is responsible for returning the string that replaces the byte or bytes that could not be decoded.  
   
  ]]></format>
         </remarks>

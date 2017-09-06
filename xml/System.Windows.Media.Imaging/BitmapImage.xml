@@ -493,7 +493,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is not set, the aspect ratio remains the same.  
+ If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is not set, the aspect ratio remains the same.  
   
  The [!INCLUDE[TLA#tla_jpeg](~/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
   

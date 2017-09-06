@@ -4279,7 +4279,7 @@
 ## Remarks  
  The length of a <xref:System.Text.StringBuilder> object is defined by its number of <xref:System.Char> objects.  
   
- Like the<xref:System.String.Length%2A?displayProperty=fullName> property, the <xref:System.Text.StringBuilder.Length%2A> property indicates the length of the current string object. Unlike the <xref:System.String.Length%2A?displayProperty=fullName> property, which is read-only, the <xref:System.Text.StringBuilder.Length%2A> property allows you to modify the length of the string stored to the <xref:System.Text.StringBuilder> object.  
+ Like the <xref:System.String.Length%2A?displayProperty=fullName> property, the <xref:System.Text.StringBuilder.Length%2A> property indicates the length of the current string object. Unlike the <xref:System.String.Length%2A?displayProperty=fullName> property, which is read-only, the <xref:System.Text.StringBuilder.Length%2A> property allows you to modify the length of the string stored to the <xref:System.Text.StringBuilder> object.  
   
  If the specified length is less than the current length, the current <xref:System.Text.StringBuilder> object is truncated to the specified length. If the specified length is greater than the current length, the end of the string value of the current <xref:System.Text.StringBuilder> object is padded with the Unicode NULL character (U+0000).  
   

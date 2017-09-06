@@ -189,7 +189,7 @@
    
   
 ## Examples  
- The following example demonstrates calling the <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A>method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.Marshal> class.  
+ The following example demonstrates calling the <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.Marshal> class.  
   
  [!code-cpp[Marshal#4](~/samples/snippets/cpp/VS_Snippets_CLR/Marshal/cpp/marshal.cpp#4)]
  [!code-csharp[Marshal#4](~/samples/snippets/csharp/VS_Snippets_CLR/Marshal/CS/Marshal.cs#4)]
@@ -495,7 +495,7 @@
    
   
 ## Examples  
- The following example copies an array to unmanaged memory by using the <xref:System.Runtime.InteropServices.Marshal.Copy%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.IntPtr%2CSystem.Int32%29> overload, and then copies the unmanaged array back to managed memory by using the <xref:System.Runtime.InteropServices.Marshal.Copy%28System.IntPtr%2CSystem.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29>overload.  
+ The following example copies an array to unmanaged memory by using the <xref:System.Runtime.InteropServices.Marshal.Copy%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.IntPtr%2CSystem.Int32%29> overload, and then copies the unmanaged array back to managed memory by using the <xref:System.Runtime.InteropServices.Marshal.Copy%28System.IntPtr%2CSystem.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> overload.  
   
  [!code-csharp[Runtime.InteropServices.Marshal.Copy-byte#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.InteropServices.Marshal.Copy-byte/cs/sample.cs#1)]
  [!code-vb[Runtime.InteropServices.Marshal.Copy-byte#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.InteropServices.Marshal.Copy-byte/vb/sample.vb#1)]  
@@ -1466,7 +1466,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Runtime.InteropServices.Marshal.CreateAggregatedObject%2A> method aggregates the inner managed pointer of a managed object of a specified type with the specified outer pointer, and returns an inner [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer of the managed object.  
+ The <xref:System.Runtime.InteropServices.Marshal.CreateAggregatedObject%2A> method aggregates the inner managed pointer of a managed object of a specified type with the specified outer pointer, and returns an inner [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer of the managed object.  
   
  ]]></format>
         </remarks>
@@ -2148,7 +2148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29>lets you specify whether to apply query interface customization. Use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%29> overload to apply query interface customization by default.  
+ <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> lets you specify whether to apply query interface customization. Use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%29> overload to apply query interface customization by default.  
   
  ]]></format>
         </remarks>
@@ -2214,11 +2214,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns an interface pointer that represents the `TInterface` interface on the specified object. It is particularly useful if you have an unmanaged method that expects to be passed an interface pointer. Calling an object with this method causes the reference count to increment on the interface pointer before the pointer is returned. Always use the <xref:System.Runtime.InteropServices.Marshal.Release%2A?displayProperty=fullName>method to decrement the reference count when you have finished with the pointer. You must adhere to the rules defined by COM when using raw COM interface pointers.  
+ This method returns an interface pointer that represents the `TInterface` interface on the specified object. It is particularly useful if you have an unmanaged method that expects to be passed an interface pointer. Calling an object with this method causes the reference count to increment on the interface pointer before the pointer is returned. Always use the <xref:System.Runtime.InteropServices.Marshal.Release%2A?displayProperty=fullName> method to decrement the reference count when you have finished with the pointer. You must adhere to the rules defined by COM when using raw COM interface pointers.  
   
- <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> is useful when calling a method that exposes a COM object parameter as an <xref:System.IntPtr> type, or with custom marshaling. You can also use this method on a managed object to obtain a pointer to the object's COM callable wrapper, although this is less common. For example, you can use<xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> on a managed object that is exported to COM to obtain an interface pointer for <xref:System.Runtime.InteropServices.UCOMIConnectionPointContainer?displayProperty=fullName>.  
+ <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> is useful when calling a method that exposes a COM object parameter as an <xref:System.IntPtr> type, or with custom marshaling. You can also use this method on a managed object to obtain a pointer to the object's COM callable wrapper, although this is less common. For example, you can use <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> on a managed object that is exported to COM to obtain an interface pointer for <xref:System.Runtime.InteropServices.UCOMIConnectionPointContainer?displayProperty=fullName>.  
   
- The<xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
+ The <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
   
  For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
   
@@ -2481,9 +2481,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the<xref:System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer%60%601%28System.IntPtr%29> and<xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%60%601%28%60%600%29>methods to marshal delegates in both directions.  
+ You can use the <xref:System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer%60%601%28System.IntPtr%29> and <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%60%601%28%60%600%29> methods to marshal delegates in both directions.  
   
- The<xref:System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer%60%601%28System.IntPtr%29> method has the following restrictions:  
+ The <xref:System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer%60%601%28System.IntPtr%29> method has the following restrictions:  
   
 -   You cannot pass an invalid function pointer to this method.  
   
@@ -3198,7 +3198,7 @@
    
   
 ## Examples  
- The following example demonstrates calling the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>method. The example first demonstrates calling the method with no error present and then demonstrates calling the method with an error present.  
+ The following example demonstrates calling the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method. The example first demonstrates calling the method with no error present and then demonstrates calling the method with an error present.  
   
  [!code-csharp[Runtime.InteropServices.Marshal.GetLastWin32Error#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.InteropServices.Marshal.GetLastWin32Error/cs/example.cs#1)]
  [!code-vb[Runtime.InteropServices.Marshal.GetLastWin32Error#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.InteropServices.Marshal.GetLastWin32Error/vb/example.vb#1)]  
@@ -3535,7 +3535,7 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%60%601%28System.IntPtr%29> returns a managed object of type `T` that corresponds to a raw pointer to an unmanaged VARIANT type. The interopmarshaler performs the identical transformation when exposing a VARIANT type to managed code.  
   
- <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%60%601%28System.IntPtr%29> provides the opposite functionality of<xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject%60%601%28%60%600%2CSystem.IntPtr%29>.  
+ <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%60%601%28System.IntPtr%29> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject%60%601%28%60%600%2CSystem.IntPtr%29>.  
   
  ]]></format>
         </remarks>
@@ -4152,7 +4152,7 @@
 ## Remarks  
  The name returned by this method is the identifier used with the library statement, such as ADODB for the Microsoft ADO type library. The name is not a file name.  
   
- You can also retrieve the type library name by calling the<xref:System.Runtime.InteropServices.UCOMITypeInfo.GetDocumentation%2A?displayProperty=fullName> method and passing -1 for its first parameter.  
+ You can also retrieve the type library name by calling the <xref:System.Runtime.InteropServices.UCOMITypeInfo.GetDocumentation%2A?displayProperty=fullName> method and passing -1 for its first parameter.  
   
  ]]></format>
         </remarks>
@@ -5745,7 +5745,7 @@
    
   
 ## Examples  
- The following example demonstrates how to read and write to an unmanaged array using the <xref:System.Runtime.InteropServices.Marshal.ReadInt32%2A> and <xref:System.Runtime.InteropServices.Marshal.WriteInt32%2A>methods.  
+ The following example demonstrates how to read and write to an unmanaged array using the <xref:System.Runtime.InteropServices.Marshal.ReadInt32%2A> and <xref:System.Runtime.InteropServices.Marshal.WriteInt32%2A> methods.  
   
  [!code-csharp[System.Runtime.interopServices.Marshal.Read-Write val#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.interopServices.Marshal.Read-Write val/cs/sample.cs#5)]
  [!code-vb[System.Runtime.interopServices.Marshal.Read-Write val#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.interopServices.Marshal.Read-Write val/vb/sample.vb#5)]  
@@ -7377,7 +7377,7 @@
   
  A formatted class is a reference type whose layout is specified by the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, as either <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> or <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.  
   
- <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=fullName>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A?displayProperty=fullName>method before you free the memory block.  
+ <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=fullName>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A?displayProperty=fullName> method before you free the memory block.  
   
  If you use the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> method to copy a different instance to the memory block at a later time, specify `true` for `fDeleteOld` to remove reference counts for reference types in the previous instance. Otherwise, the managed reference typesand unmanaged copies are effectively leaked.  
   
@@ -7464,11 +7464,11 @@
   
  <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%60%601%28%60%600%2CSystem.IntPtr%2CSystem.Boolean%29> copies the contents of `structure` to the pre-allocated block of memory that the `ptr` parameter points to. If `structure` contains reference types that marshal to COM interface pointers (interfaces, classes without layout, and <xref:System.Object?displayProperty=fullName>), the managed objects are kept alive with reference counts. All other reference types (for example, strings and arrays) are marshaled to copies. To release these managed or unmanaged objects, you must call the <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%60%601%28System.IntPtr%29> method before you free the memory block.  
   
- If you use the<xref:System.Runtime.InteropServices.Marshal.StructureToPtr%60%601%28%60%600%2CSystem.IntPtr%2CSystem.Boolean%29> method to copy a different instance to the memory block at a later time, specify `true` for `fDeleteOld` to remove reference counts for reference types in the previous instance. Otherwise, the managed reference types and unmanaged copies are effectively leaked.  
+ If you use the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%60%601%28%60%600%2CSystem.IntPtr%2CSystem.Boolean%29> method to copy a different instance to the memory block at a later time, specify `true` for `fDeleteOld` to remove reference counts for reference types in the previous instance. Otherwise, the managed reference types and unmanaged copies are effectively leaked.  
   
- The overall pattern for using<xref:System.Runtime.InteropServices.Marshal.StructureToPtr%60%601%28%60%600%2CSystem.IntPtr%2CSystem.Boolean%29> is as follows:  
+ The overall pattern for using <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%60%601%28%60%600%2CSystem.IntPtr%2CSystem.Boolean%29> is as follows:  
   
-1.  On the first call to the<xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> method after a memory block has been allocated, `fDeleteOld` must be `false`, because there are no contents to clear.  
+1.  On the first call to the <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> method after a memory block has been allocated, `fDeleteOld` must be `false`, because there are no contents to clear.  
   
     > [!IMPORTANT]
     >  Specify `true` for `fDeleteOld` only if the block contains valid data.  
@@ -8061,7 +8061,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
    
   
 ## Examples  
- The following example demonstrates how to read and write to an unmanaged array using the <xref:System.Runtime.InteropServices.Marshal.ReadInt16%2A> and <xref:System.Runtime.InteropServices.Marshal.WriteInt16%2A>methods.  
+ The following example demonstrates how to read and write to an unmanaged array using the <xref:System.Runtime.InteropServices.Marshal.ReadInt16%2A> and <xref:System.Runtime.InteropServices.Marshal.WriteInt16%2A> methods.  
   
  [!code-csharp[System.Runtime.interopServices.Marshal.Read-Write val#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.interopServices.Marshal.Read-Write val/cs/sample.cs#4)]
  [!code-vb[System.Runtime.interopServices.Marshal.Read-Write val#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.interopServices.Marshal.Read-Write val/vb/sample.vb#4)]  

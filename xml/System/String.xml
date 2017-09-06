@@ -603,7 +603,7 @@
   
 <a name="Params"></a>   
 ## Parameters  
- Here is a complete list of parameters used by <xref:System.String>constructors that do not include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
+ Here is a complete list of parameters used by <xref:System.String> constructors that do not include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
   
 |Parameter|Type|Description|  
 |---------------|----------|-----------------|  
@@ -613,7 +613,7 @@
 |`length`|<xref:System.Int32>|The number of characters in `value` to include in the new string.<br /><br /> Default value: <xref:System.Array.Length%2A?displayProperty=fullName>|  
 |`count`|<xref:System.Int32>|The number of times the character `c` is repeated in the new string. If `count` is zero, the value of the new object is <xref:System.String.Empty?displayProperty=fullName>.|  
   
- Here is a complete list of parameters used by <xref:System.String>constructors that include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
+ Here is a complete list of parameters used by <xref:System.String> constructors that include a pointer parameter. For the parameters used by each overload, see the overload syntax above.  
   
 |Parameter|Type|Description|  
 |---------------|----------|-----------------|  
@@ -673,7 +673,7 @@
   
      The array must contain Unicode characters. In C++, this means that the character array must be defined either as the managed <xref:System.Char>[] type or the unmanaged`wchar_t`[] type.  
   
-     If the <xref:System.String.%23ctor%28System.Char%2A%29> overload is called and the array is not null-terminated, or if the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called and `startIndex` + `length`-1 includes a range that it outside the memory allocated for the sequence of characters, the behavior of the constructor is system-dependent, and an access violation may occur. In addition, on the Intel Itanium processor, calls to the<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>constructor may throw a <xref:System.DataMisalignedException> exception. If this occurs, call the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> instead.  
+     If the <xref:System.String.%23ctor%28System.Char%2A%29> overload is called and the array is not null-terminated, or if the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> overload is called and `startIndex` + `length`-1 includes a range that it outside the memory allocated for the sequence of characters, the behavior of the constructor is system-dependent, and an access violation may occur. In addition, on the Intel Itanium processor, calls to the <xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29> constructor may throw a <xref:System.DataMisalignedException> exception. If this occurs, call the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> instead.  
   
 -   From a pointer to a signed byte array. Either the entire array or a specified range can be used to initialize the string. The sequence of bytes can be interpreted by using the default code page encoding, or an encoding can be specified in the constructor call. If the constructor tries to instantiate a string from an entire array that is not null-terminated, or if the range of the array from `value` + `startIndex` to `value` + `startIndex` + `length` -1 is outside of the memory allocated for the array, the behavior of this constructor is system-dependent, and an access violation may occur.  
   
@@ -1319,7 +1319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All overloads of the <xref:System.String.Compare%2A>method return a 32-bit signed integer indicating the lexical relationship between the two comparands.  
+ All overloads of the <xref:System.String.Compare%2A> method return a 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
 |Value|Condition|  
 |-----------|---------------|  
@@ -1395,7 +1395,7 @@
  The comparison is performed using word sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>.  
   
 > [!WARNING]
->  When comparing strings, you should call the<xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
+>  When comparing strings, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  One or both comparands can be `null`. By definition, any string, including the empty string (""), compares greater than a null reference; and two null references compare equal to each other.  
   
@@ -2476,7 +2476,7 @@
 ## Remarks  
  This method performs a case-sensitive comparison using ordinal sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>. To perform a case-insensitive comparison using ordinal sort rules, call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with the `comparisonType` argument set to <xref:System.StringComparison?displayProperty=fullName>.  
   
- Because <xref:System.String.CompareOrdinal%28System.String%2CSystem.String%29>is a static method, `strA` and `strB` can be `null`. If both values are `null`, the method returns 0 (zero), which indicates that `strA` and `strB` are equal. If only one of the values is `null`, the method considers the non-null value to be greater.  
+ Because <xref:System.String.CompareOrdinal%28System.String%2CSystem.String%29> is a static method, `strA` and `strB` can be `null`. If both values are `null`, the method returns 0 (zero), which indicates that `strA` and `strB` are equal. If only one of the values is `null`, the method considers the non-null value to be greater.  
   
    
   
@@ -2562,7 +2562,7 @@
   
  The number of characters compared is the lesser of the length of `strA` less `indexA`, the length of `strB` less `indexB`, and `length`.  
   
- This method performs a case-sensitive comparison using ordinal sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>. To perform a case-insensitive comparison using ordinal sort rules, call the<xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29>method with the `comparisonType` argument set to<xref:System.StringComparison?displayProperty=fullName>.  
+ This method performs a case-sensitive comparison using ordinal sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>. To perform a case-insensitive comparison using ordinal sort rules, call the <xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29> method with the `comparisonType` argument set to <xref:System.StringComparison?displayProperty=fullName>.  
   
  Because <xref:System.String.CompareOrdinal%28System.String%2CSystem.String%29> is a static method, `strA` and `strB` can be `null`. If both values are `null`, the method returns 0 (zero), which indicates that `strA` and `strB` are equal. If only one of the values is `null`, the method considers the non-null value to be greater.  
   
@@ -2601,7 +2601,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Both overloads of the<xref:System.String.CompareTo%2A> method perform culture-sensitive and case-sensitive comparison. You cannot use this method to perform culture-insensitive or ordinal comparisons. For code clarity, we recommend that you avoid the <xref:System.String.CompareTo%2A> method and call the <xref:System.String.Compare%2A> method instead.  
+ Both overloads of the <xref:System.String.CompareTo%2A> method perform culture-sensitive and case-sensitive comparison. You cannot use this method to perform culture-insensitive or ordinal comparisons. For code clarity, we recommend that you avoid the <xref:System.String.CompareTo%2A> method and call the <xref:System.String.Compare%2A> method instead.  
   
  ]]></format>
         </remarks>
@@ -2758,7 +2758,7 @@
   
  For more information about the behavior of this method, see the Remarks section of the <xref:System.String.Compare%28System.String%2CSystem.String%29> method.  
   
- This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.String.CompareTo%28System.Object%29?displayProperty=fullName> method, because it does not have to determine whether the `strB` argument is a mutable value type that must be boxed, and it does not have to cast its parameter from an <xref:System.Object>to a<xref:System.String>.  
+ This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.String.CompareTo%28System.Object%29?displayProperty=fullName> method, because it does not have to determine whether the `strB` argument is a mutable value type that must be boxed, and it does not have to cast its parameter from an <xref:System.Object> to a <xref:System.String>.  
   
    
   
@@ -3577,7 +3577,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.String.Copy%2A> method returns a <xref:System.String> object that has the same value as the original string but represents a different object reference. It differs from an assignment operation, which assigns an existing string reference to an additional object variable. The example illustrates the difference.  
+ The <xref:System.String.Copy%2A> method returns a <xref:System.String> object that has the same value as the original string but represents a different object reference. It differs from an assignment operation, which assigns an existing string reference to an additional object variable. The example illustrates the difference.  
   
    
   
@@ -4370,8 +4370,8 @@ A copy of `format` in which the format items have been replaced by the string re
   
 |To|Call|  
 |--------|----------|  
-|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining<xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you do not have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method.|  
-|Format one or more objects by using the conventions of a specific culture.|Each<xref:System.String.Format%2A>overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you do not have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method.|  
+|Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining <xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you do not have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29> method.|  
+|Format one or more objects by using the conventions of a specific culture.|Each <xref:System.String.Format%2A> overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you do not have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler will call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method.|  
 |Perform a custom formatting operation either with an <xref:System.ICustomFormatter> implementation or an <xref:System.IFormattable> implementation.|Any of the four overloads with a `provider` parameter. compiler will select the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list.|  
   
 <a name="Format_Brief"></a>   
@@ -4465,7 +4465,7 @@ index[,alignment][ :formatString] }
   
 <a name="Format_Custom"></a>   
 ## Custom formatting operations  
- You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the<xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
+ You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
   
  For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
@@ -5397,7 +5397,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  This method performs a word (case-sensitive and culture-sensitive) search using the current culture. The search begins at the first character position of this instance and continues until the last character position.  
   
- Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive comparison. In a culture-sensitive search, if `value` contains an ignorable character, the result is equivalent to searching with that character removed. If `value` consists only of one or more ignorable characters, the<xref:System.String.IndexOf%28System.String%29> method always returns 0 (zero) to indicate that the match is found at the beginning of the current instance. In the following example, the <xref:System.String.IndexOf%28System.String%29> method is used to find three substrings (a soft hyphen (U+00AD), a soft hyphen followed by "n", and a soft hyphen followed by "m") in two strings. Only one of the strings contains a soft hyphen. If the example is run on the [!INCLUDE[netfx40_short](~/includes/netfx40-short-md.md)] or later, in each case, because the soft hyphen is an ignorable character, the result is the same as if the soft hyphen had not been included in `value`. When searching for a soft hyphen only, the method returns 0 (zero) to indicate that it has found a match at the beginning of the string.  
+ Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive comparison. In a culture-sensitive search, if `value` contains an ignorable character, the result is equivalent to searching with that character removed. If `value` consists only of one or more ignorable characters, the <xref:System.String.IndexOf%28System.String%29> method always returns 0 (zero) to indicate that the match is found at the beginning of the current instance. In the following example, the <xref:System.String.IndexOf%28System.String%29> method is used to find three substrings (a soft hyphen (U+00AD), a soft hyphen followed by "n", and a soft hyphen followed by "m") in two strings. Only one of the strings contains a soft hyphen. If the example is run on the [!INCLUDE[netfx40_short](~/includes/netfx40-short-md.md)] or later, in each case, because the soft hyphen is an ignorable character, the result is the same as if the soft hyphen had not been included in `value`. When searching for a soft hyphen only, the method returns 0 (zero) to indicate that it has found a match at the beginning of the string.  
   
  [!code-csharp[System.String.IndexOf#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.IndexOf/CS/ignorable21.cs#21)]
  [!code-vb[System.String.IndexOf#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.IndexOf/VB/ignorable21.vb#21)]  
@@ -6246,7 +6246,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Performance Considerations  
  If you are trying to reduce the total amount of memory your application allocates, keep in mind that interning a string has two unwanted side effects. First, the memory allocated for interned <xref:System.String> objects is not likely be released until the common language runtime (CLR) terminates. The reason is that the CLR's reference to the interned <xref:System.String> object can persist after your application, or even your application domain, terminates. Second, to intern a string, you must first create the string. The memory used by the <xref:System.String> object must still be allocated, even though the memory will eventually be garbage collected.  
   
- The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations?displayProperty=fullName>enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of run time, strings are not interned across modules.  
+ The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations?displayProperty=fullName> enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations.NoStringInterning> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of run time, strings are not interned across modules.  
   
    
   
@@ -7962,7 +7962,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
 2.  Call the <xref:System.String.Normalize> method to normalize the strings to normalization form C.  
   
-3.  To compare two strings, call a method that supports ordinal string comparison, such as the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, and supply a value of <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison?displayProperty=fullName>as the <xref:System.StringComparison> argument. To sort an array of normalized strings, pass a `comparer` value of <xref:System.StringComparer.Ordinal%2A?displayProperty=fullName> or <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=fullName> to an appropriate overload of <xref:System.Array.Sort%2A?displayProperty=fullName>.  
+3.  To compare two strings, call a method that supports ordinal string comparison, such as the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, and supply a value of <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison?displayProperty=fullName> as the <xref:System.StringComparison> argument. To sort an array of normalized strings, pass a `comparer` value of <xref:System.StringComparer.Ordinal%2A?displayProperty=fullName> or <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=fullName> to an appropriate overload of <xref:System.Array.Sort%2A?displayProperty=fullName>.  
   
 4.  Emit the strings in the sorted output based on the order indicated by the previous step.  
   
@@ -8210,7 +8210,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.PadLeft%28System.Int32%29> method pads the beginning of the returned string. This means that, when used with right-to-left languages, it pads the right portion of the string.  
   
 > [!NOTE]
->  If the <xref:System.String.PadLeft%2A>method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with leading white space so that its total length is `totalWidth` characters.  
+>  If the <xref:System.String.PadLeft%2A> method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with leading white space so that its total length is `totalWidth` characters.  
   
    
   
@@ -8326,7 +8326,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.PadRight%28System.Int32%29> method pads the end of the returned string. This means that, when used with right-to-left languages, it pads the left portion of the string.  
   
 > [!NOTE]
->  If the<xref:System.String.PadRight%2A> method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with trailing white space so that its total length is `totalWidth` characters.  
+>  If the <xref:System.String.PadRight%2A> method pads the current instance with whitespace characters, this method does not modify the value of the current instance. Instead, it returns a new string that is padded with trailing white space so that its total length is `totalWidth` characters.  
   
    
   
@@ -8932,7 +8932,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |`([^\[\]]+)`|Match any character that is not an opening or a closing bracket one or more times. This is the first capturing group.|  
 |`\]`|Match a closing bracket.|  
   
- The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> method is almost identical to <xref:System.String.Split%2A?displayProperty=fullName>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName>method to split a string that contains substrings delimited by various combinations of hyphens and other characters.  
+ The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> method is almost identical to <xref:System.String.Split%2A?displayProperty=fullName>, except that it splits a string based on a regular expression pattern instead of a fixed character set. For example, the following example uses the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> method to split a string that contains substrings delimited by various combinations of hyphens and other characters.  
   
  [!code-csharp[System.String.Split#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt3.cs#10)]
  [!code-vb[System.String.Split#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt3.vb#10)]  
@@ -8964,7 +8964,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-vb[System.String.Split#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt4.vb#11)]  
   
 ## Performance Considerations  
- The<xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method. You also have the option of using the <xref:System.String.Compare%2A> method to locate a substring within a string.  
+ The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method. You also have the option of using the <xref:System.String.Compare%2A> method to locate a substring within a string.  
   
  To split a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. To split a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
   
@@ -9071,7 +9071,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |"Darb\nSmarba" (C#)<br /><br /> "Darb" & vbLf & "Smarba" (Visual Basic)|new Char[] null (C#)<br /><br /> Char() = Nothing|100|{"Darb", "Smarba"}|  
   
 ## Performance Considerations  
- The<xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
+ The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
   
@@ -9172,7 +9172,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.Split%2A> method looks for delimiters by performing comparisons using case-sensitive ordinal sort rules. For more information about word, string, and ordinal sorts, see the <xref:System.Globalization.CompareOptions?displayProperty=fullName> enumeration.  
   
 ## Performance Considerations  
- The<xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
+ The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
   
@@ -9328,7 +9328,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Split#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/split7.cs#7)]
  [!code-vb[System.String.Split#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/split7.vb#7)]  
   
- Note that the method is called with the `options` argument set to <xref:System.StringSplitOptions?displayProperty=fullName>. This prevents the returned array from including<xref:System.String.Empty?displayProperty=fullName> values that represent empty substring matches between punctuation marks and white-space characters.  
+ Note that the method is called with the `options` argument set to <xref:System.StringSplitOptions?displayProperty=fullName>. This prevents the returned array from including <xref:System.String.Empty?displayProperty=fullName> values that represent empty substring matches between punctuation marks and white-space characters.  
   
  ]]></format>
         </remarks>
@@ -9427,7 +9427,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  If `count` is greater than the number of substrings, the available substrings are returned and no exception is thrown.  
   
 ## Performance Considerations  
- The<xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
+ The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
   
@@ -9559,7 +9559,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  However, if the first element of `separator` was "bcd" and the second element was "bc", the result of the split operation would be "a" and "ef". This is because "bcd" is the first delimiter in `separator` that matches a delimiter in the instance. If the order of the separators was reversed so the first element was "bc" and the second element was "bcd", the result would be "a" and "def".  
   
 ## Performance considerations  
- The<xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
+ The <xref:System.String.Split%2A> methods allocate memory for the returned array object and a <xref:System.String> object for each array element. If your application requires optimal performance or if managing memory allocation is critical in your application, consider using the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method, and optionally the <xref:System.String.Compare%2A> method, to locate a substring within a string.  
   
  If you are splitting a string at a separator character, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate a separator character in the string. If you are splitting a string at a separator string, use the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOfAny%2A> method to locate the first character of the separator string. Then use the <xref:System.String.Compare%2A> method to determine whether the characters after that first character are equal to the remaining characters of the separator string.  
   

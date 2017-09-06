@@ -409,7 +409,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the command is enabled, this will cause the <xref:System.Windows.Controls.DataGrid.BeginningEdit> and <xref:System.Windows.Controls.DataGrid.PreparingCellForEdit>overrides and events to occur.  
+ If the command is enabled, this will cause the <xref:System.Windows.Controls.DataGrid.BeginningEdit> and <xref:System.Windows.Controls.DataGrid.PreparingCellForEdit> overrides and events to occur.  
   
  ]]></format>
         </remarks>
@@ -439,7 +439,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the command is enabled, this will cause the <xref:System.Windows.Controls.DataGrid.BeginningEdit> and <xref:System.Windows.Controls.DataGrid.PreparingCellForEdit>overrides and events to occur.  
+ If the command is enabled, this will cause the <xref:System.Windows.Controls.DataGrid.BeginningEdit> and <xref:System.Windows.Controls.DataGrid.PreparingCellForEdit> overrides and events to occur.  
   
  ]]></format>
         </remarks>
@@ -1550,7 +1550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value returned is a structure that provides information about the cell and the data item associated with the cell. It is not an actual reference to the <xref:System.Windows.Controls.DataGridCell>container.  
+ The value returned is a structure that provides information about the cell and the data item associated with the cell. It is not an actual reference to the <xref:System.Windows.Controls.DataGridCell> container.  
   
  To set properties on the selected cells, you can set a trigger in the <xref:System.Windows.Controls.DataGrid.CellStyle%2A> property. For more information, see <xref:System.Windows.Controls.DataGrid.CellStyle%2A>.  
   
@@ -2347,7 +2347,7 @@
 ## Remarks  
  To improve performance, the <xref:System.Windows.Controls.DataGrid.EnableRowVirtualization%2A> property is set to `true` by default. When the <xref:System.Windows.Controls.DataGrid.EnableRowVirtualization%2A> property is set to `true`, the <xref:System.Windows.Controls.DataGrid> does not instantiate a <xref:System.Windows.Controls.DataGridRow> object for each data item in the bound data source. Instead, the <xref:System.Windows.Controls.DataGrid> creates <xref:System.Windows.Controls.DataGridRow> objects only when they are needed, and reuses them as much as it can. For example, the <xref:System.Windows.Controls.DataGrid> creates a <xref:System.Windows.Controls.DataGridRow> object for each data item that is currently in view and recycles the row when it scrolls out of view.  
   
- This event enables you to make any necessary changes to a row before it is used. To undo these customizations before a row is reused, handle the <xref:System.Windows.Controls.DataGrid.UnloadingRow>event.  
+ This event enables you to make any necessary changes to a row before it is used. To undo these customizations before a row is reused, handle the <xref:System.Windows.Controls.DataGrid.UnloadingRow> event.  
   
  ]]></format>
         </remarks>
@@ -2377,7 +2377,7 @@
   
 -   The row <xref:System.Windows.Controls.DataGridRow.DetailsTemplate%2A> property value is `null` and the <xref:System.Windows.Controls.DataGrid.RowDetailsTemplate%2A> property value changes.  
   
- This event enables you to make any necessary changes to the row details element before it is used. To undo these customizations before the row details element is reused, handle the <xref:System.Windows.Controls.DataGrid.UnloadingRowDetails>event.  
+ This event enables you to make any necessary changes to the row details element before it is used. To undo these customizations before the row details element is reused, handle the <xref:System.Windows.Controls.DataGrid.UnloadingRowDetails> event.  
   
  ]]></format>
         </remarks>
@@ -2947,7 +2947,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.DataGrid> requires that the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property of all columns must be unique integers from 0 to<xref:System.Windows.Controls.DataGrid.Columns%2A><xref:System.Windows.Controls.ColumnDefinitionCollection.Count%2A> -1. Therefore, when the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of one column changes, the change will typically cause the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of other columns to change too.  
+ <xref:System.Windows.Controls.DataGrid> requires that the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property of all columns must be unique integers from 0 to <xref:System.Windows.Controls.DataGrid.Columns%2A><xref:System.Windows.Controls.ColumnDefinitionCollection.Count%2A> -1. Therefore, when the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of one column changes, the change will typically cause the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of other columns to change too.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   

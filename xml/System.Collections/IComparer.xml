@@ -111,7 +111,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Collections.IComparer> interface to sort an <xref:System.Collections.ArrayList> object. In this example, the <xref:System.Collections.IComparer> interface is implemented using the <xref:System.Collections.CaseInsensitiveComparer>class to reverse the order of the contents of the <xref:System.Collections.ArrayList>.  
+ The following code example demonstrates the use of the <xref:System.Collections.IComparer> interface to sort an <xref:System.Collections.ArrayList> object. In this example, the <xref:System.Collections.IComparer> interface is implemented using the <xref:System.Collections.CaseInsensitiveComparer> class to reverse the order of the contents of the <xref:System.Collections.ArrayList>.  
   
  [!code-cpp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CPP/arraylist_sort2.cpp#1)]
  [!code-csharp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CS/arraylist_sort2.cs#1)]

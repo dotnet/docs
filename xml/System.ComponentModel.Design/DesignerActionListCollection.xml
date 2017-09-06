@@ -193,7 +193,7 @@
 ## Remarks  
  The new elements are added to the end of the internal list.  
   
- After validating the `value` parameter, the <xref:System.ComponentModel.Design.DesignerActionListCollection.AddRange%2A>method makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
+ After validating the `value` parameter, the <xref:System.ComponentModel.Design.DesignerActionListCollection.AddRange%2A> method makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
   
  ]]></format>
         </remarks>

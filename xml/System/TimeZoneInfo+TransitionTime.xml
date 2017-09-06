@@ -736,7 +736,7 @@
 ## Remarks  
  The value of the <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property is used only for time changes with floating-date rules. Valid values can range from 1 to 5.  
   
- The<xref:System.TimeZoneInfo.TransitionTime.Month%2A> property defines the month in which the time change occurs. The <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property determines the week on which the transition occurs. The <xref:System.TimeZoneInfo.TransitionTime.DayOfWeek%2A> property defines the day of the week on which the transition occurs. The value of the <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property is determined as shown in the following table.  
+ The <xref:System.TimeZoneInfo.TransitionTime.Month%2A> property defines the month in which the time change occurs. The <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property determines the week on which the transition occurs. The <xref:System.TimeZoneInfo.TransitionTime.DayOfWeek%2A> property defines the day of the week on which the transition occurs. The value of the <xref:System.TimeZoneInfo.TransitionTime.Week%2A> property is determined as shown in the following table.  
   
 |If the Week property value is|The transition occurs on|  
 |-----------------------------------|------------------------------|  

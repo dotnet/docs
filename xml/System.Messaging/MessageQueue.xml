@@ -1550,7 +1550,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
 ## Remarks  
  You can use this overload to create a transactional queue in Message Queuing. You can create a non-transactional queue, by setting the `transactional` parameter to `false` or by calling the other overload of <xref:System.Messaging.MessageQueue.Create%28System.String%29>.  
   
- To create a new instance of the <xref:System.Messaging.MessageQueue> class in your application and bind it to an existing queue, use the <xref:System.Messaging.MessageQueue.%23ctor%2A>constructor. To create a new queue in Message Queuing, call <xref:System.Messaging.MessageQueue.Create%28System.String%29>.  
+ To create a new instance of the <xref:System.Messaging.MessageQueue> class in your application and bind it to an existing queue, use the <xref:System.Messaging.MessageQueue.%23ctor%2A> constructor. To create a new queue in Message Queuing, call <xref:System.Messaging.MessageQueue.Create%28System.String%29>.  
   
  The syntax for the `path` parameter depends on the type of queue it references, as shown in the following table.  
   

@@ -1242,7 +1242,7 @@ C:\Users\UserName\AppData\Local\Temp\
  The array returned from this method is not guaranteed to contain the complete set of characters that are invalid in file and directory names. The full set of invalid characters can vary by file system. For example, on Windows-based desktop platforms, invalid path characters might include ASCII/Unicode characters 1 through 31, as well as quote ("), less than (\<), greater than (>), pipe (&#124;), backspace (\b), null (\0) and tab (\t).  
   
 > [!CAUTION]
->  Do not use<xref:System.IO.Path.InvalidPathChars> if you think your code might execute in the same application domain as untrusted code. <xref:System.IO.Path.InvalidPathChars> is an array, so its elements can be overwritten. If untrusted code overwrites elements of <xref:System.IO.Path.InvalidPathChars>, it might cause your code to malfunction in ways that could be exploited.  
+>  Do not use <xref:System.IO.Path.InvalidPathChars> if you think your code might execute in the same application domain as untrusted code. <xref:System.IO.Path.InvalidPathChars> is an array, so its elements can be overwritten. If untrusted code overwrites elements of <xref:System.IO.Path.InvalidPathChars>, it might cause your code to malfunction in ways that could be exploited.  
   
    
   

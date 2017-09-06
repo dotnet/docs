@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Web.HttpTaskAsyncHandler> class provides a simplified way to handle asynchronous tasks without having to implement the <xref:System.Web.IHttpAsyncHandler.BeginProcessRequest%2A> and <xref:System.Web.IHttpAsyncHandler.EndProcessRequest%2A> methods.  To create a handler for an asynchronous task, you can override the <xref:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync%2A> method and implement custom task handling code.  
+ The <xref:System.Web.HttpTaskAsyncHandler> class provides a simplified way to handle asynchronous tasks without having to implement the <xref:System.Web.IHttpAsyncHandler.BeginProcessRequest%2A> and <xref:System.Web.IHttpAsyncHandler.EndProcessRequest%2A> methods.  To create a handler for an asynchronous task, you can override the <xref:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync%2A> method and implement custom task handling code.  
   
  ]]></format>
     </remarks>

@@ -46,7 +46,7 @@
 ## Remarks  
  A time zone is a geographical region in which the same time is used.  
   
- The<xref:System.TimeZoneInfo> class offers significant enhancements over the <xref:System.TimeZone> class, which provides only limited functionality.  
+ The <xref:System.TimeZoneInfo> class offers significant enhancements over the <xref:System.TimeZone> class, which provides only limited functionality.  
   
  The <xref:System.TimeZone> class recognizes only the local time zone, and can convert times between Coordinated Universal Time (UTC) and local time. A <xref:System.TimeZoneInfo> object can represent any time zone, and methods of the <xref:System.TimeZoneInfo> class can be used to convert the time in one time zone to the corresponding time in any other time zone. The members of the <xref:System.TimeZoneInfo> class support the following operations:  
   
@@ -2079,9 +2079,9 @@
 |<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Utc`|Converts `dateTime` from Coordinated Universal Time (UTC) to local time and determines whether it is daylight saving time.|  
 |<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Unspecified`|Assumes that `dateTime` represents local time and determines whether it is daylight saving time.|  
 |<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|`DateTimeKind.Local`, `DateTimeKind.Unspecified`, or `DateTimeKind.Utc`|Returns `false` (UTC does not support daylight saving time).|  
-|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Local`|Converts the local time to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
-|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Utc`|Converts UTC to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
-|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Unspecified`|Determines whether `dateTime` is daylight saving time.|  
+|Any other <xref:System.TimeZoneInfo> object.|`DateTimeKind.Local`|Converts the local time to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
+|Any other <xref:System.TimeZoneInfo> object.|`DateTimeKind.Utc`|Converts UTC to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
+|Any other <xref:System.TimeZoneInfo> object.|`DateTimeKind.Unspecified`|Determines whether `dateTime` is daylight saving time.|  
   
  If the time zone represented by the <xref:System.TimeZoneInfo> object does not support daylight saving time, the method always returns `false`. A number of time zones, including <xref:System.TimeZoneInfo.Utc%2A>, do not observe daylight saving time.  To determine whether a time zone supports daylight saving time, retrieve the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
   

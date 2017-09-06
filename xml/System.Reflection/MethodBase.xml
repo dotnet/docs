@@ -1168,7 +1168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a type member has <xref:System.Reflection.MethodAttributes?displayProperty=fullName>visibility, it can be called from any member in a derived class or any member in the same assembly, but not from any other type.  
+ If a type member has <xref:System.Reflection.MethodAttributes?displayProperty=fullName> visibility, it can be called from any member in a derived class or any member in the same assembly, but not from any other type.  
   
  The actual visibility of a method is limited by the visibility of its type. The <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property might be `true` for a method, but if it is a method of a private nested type then the method is not visible outside the containing type.  
   

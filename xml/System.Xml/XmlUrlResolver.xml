@@ -215,7 +215,7 @@ resolver.Credentials = myCache;
  For the asynchronous version of this method, see <xref:System.Xml.XmlUrlResolver.GetEntityAsync%2A>.  
   
 > [!IMPORTANT]
->  Your application can mitigate memory denial of service threats to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method by implementing IStream<xref:System.Runtime.InteropServices.ComTypes.IStream> to limit the number of bytes read. This helps guard against situations where malicious code attempts to pass an infinite stream of bytes to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method.  
+>  Your application can mitigate memory denial of service threats to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method by implementing IStream <xref:System.Runtime.InteropServices.ComTypes.IStream> to limit the number of bytes read. This helps guard against situations where malicious code attempts to pass an infinite stream of bytes to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method.  
   
    
   

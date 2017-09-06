@@ -1262,7 +1262,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is like the <xref:System.Guid.Parse%2A> method, except that instead of returning the parsed GUID, it returns `false` if `input` is `null` or not in a recognized format, and doesn't throw an exception. It trims any leading or trailing white space from `input` and converts strings in any of the five formats recognized by the <xref:System.Guid.ToString%28System.String%29> and <xref:System.Guid.ToString%28System.String%2CSystem.IFormatProvider%29>methods, as shown in the following table.  
+ This method is like the <xref:System.Guid.Parse%2A> method, except that instead of returning the parsed GUID, it returns `false` if `input` is `null` or not in a recognized format, and doesn't throw an exception. It trims any leading or trailing white space from `input` and converts strings in any of the five formats recognized by the <xref:System.Guid.ToString%28System.String%29> and <xref:System.Guid.ToString%28System.String%2CSystem.IFormatProvider%29> methods, as shown in the following table.  
   
 |Specifier|Description|Format|  
 |---------------|-----------------|------------|  

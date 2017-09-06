@@ -131,7 +131,7 @@
 ## Remarks  
  In previous versions of WCF, metadata retrieval was accomplished using HTTP GET to access the service help page through a web browser. Only the <xref:System.ServiceModel.Channels.HttpTransportBindingElement> was  supported.  For metadata retrieval using HTTPS GET, only the <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> was supported.   The HttpGetBinding and HttpsGetBinding properties enable the usage of bindings for metadata retrieval using HTTP GET (or HTTPS GET) and the bindings used to access service web pages to be configurable, either programmatically or through configuration files.  
   
- For more information about retrieving help pages, use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding%2A>and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding%2A>properties.  
+ For more information about retrieving help pages, use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding%2A> and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -238,7 +238,7 @@
 ## Remarks  
  In previous versions of WCF, metadata retrieval was accomplished using HTTP GET to access the service help page through a web browser. Only the <xref:System.ServiceModel.Channels.HttpTransportBindingElement> was  supported.  For metadata retrieval using HTTPS GET, only the <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> was supported.   The HttpGetBinding and HttpsGetBinding properties enable the usage of bindings for metadata retrieval using HTTP GET (or HTTPS GET) and the bindings used to access service web pages to be configurable, either programmatically or through configuration files.  
   
- For more information about retrieving help pages, use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding%2A>and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding%2A>properties.  
+ For more information about retrieving help pages, use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding%2A> and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding%2A> properties.  
   
  ]]></format>
         </remarks>

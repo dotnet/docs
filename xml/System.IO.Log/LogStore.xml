@@ -545,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.IO.Log.LogStore> instance stores its data in a collection of disk extents, represented by <xref:System.IO.Log.LogExtent> instances. The extents in a given <xref:System.IO.Log.LogStore> instance are all of uniform size, and space is added to and removed from a <xref:System.IO.Log.LogStore> instance in extent increments. To add and remove log extents, use the <xref:System.IO.Log.LogExtentCollection.Add%2A>and<xref:System.IO.Log.LogExtentCollection.Remove%2A> methods of the <xref:System.IO.Log.LogExtentCollection> object, which is returned by this property.  
+ A <xref:System.IO.Log.LogStore> instance stores its data in a collection of disk extents, represented by <xref:System.IO.Log.LogExtent> instances. The extents in a given <xref:System.IO.Log.LogStore> instance are all of uniform size, and space is added to and removed from a <xref:System.IO.Log.LogStore> instance in extent increments. To add and remove log extents, use the <xref:System.IO.Log.LogExtentCollection.Add%2A> and <xref:System.IO.Log.LogExtentCollection.Remove%2A> methods of the <xref:System.IO.Log.LogExtentCollection> object, which is returned by this property.  
   
  ]]></format>
         </remarks>

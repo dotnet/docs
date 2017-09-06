@@ -67,7 +67,7 @@
   
  Note, however, that although the <xref:System.ArraySegment%601> structure can be used to divide an array into distinct segments, the segments are not completely independent of one another. The <xref:System.ArraySegment%601.Array%2A> property returns the entire original array, not a copy of the array; therefore, changes made to the array returned by the <xref:System.ArraySegment%601.Array%2A> property are made to the original array. If this is undesirable, you should perform operations on a copy of the array, rather than an <xref:System.ArraySegment%601> object that represents a portion of the array.  
   
- The<xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
+ The <xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
   
 -   Reference the same array.  
   

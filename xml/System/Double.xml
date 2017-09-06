@@ -556,7 +556,7 @@
  Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](~/docs/standard/base-types/conversion-tables.md) topic.  
   
 ## Precision in Comparisons  
- The<xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .333333 and the <xref:System.Double> value returned by dividing 1 by 3 are unequal.  
+ The <xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .333333 and the <xref:System.Double> value returned by dividing 1 by 3 are unequal.  
   
  [!code-csharp[System.Double.Epsilon#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.Epsilon/cs/Equals_25051.cs#1)]
  [!code-vb[System.Double.Epsilon#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/Equals_25051.vb#1)]  
@@ -625,7 +625,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .3333 and the <xref:System.Double> returned by dividing 1 by 3 are unequal.  
+ The <xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .3333 and the <xref:System.Double> returned by dividing 1 by 3 are unequal.  
   
  [!code-csharp[System.Double.Epsilon#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.Epsilon/cs/Equals_25051.cs#3)]
  [!code-vb[System.Double.Epsilon#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/Equals_25051.vb#3)]  

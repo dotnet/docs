@@ -35,7 +35,7 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A>property of the <xref:System.ServiceModel.ServiceContractAttribute> to specify that the `IMyService` service contract requires bindings that support session state.  
+ The following code example shows how to use the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property of the <xref:System.ServiceModel.ServiceContractAttribute> to specify that the `IMyService` service contract requires bindings that support session state.  
   
  [!code-csharp[SCA.Session#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/services.cs#1)]
  [!code-vb[SCA.Session#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.session/vb/services.vb#1)]  

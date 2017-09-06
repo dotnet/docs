@@ -288,7 +288,7 @@
   
  The <xref:System.Web.UI.Design.ControlDesigner> class implementation of the <xref:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml%2A> method returns a table with two rows, as follows:  
   
--   The first row contains the type name and site name for the <xref:System.ComponentModel.Design.ComponentDesigner.Component%2A> property of the <xref:System.Web.UI.Design.ControlDesigner>object.  
+-   The first row contains the type name and site name for the <xref:System.ComponentModel.Design.ComponentDesigner.Component%2A> property of the <xref:System.Web.UI.Design.ControlDesigner> object.  
   
 -   The second row contains the input error message and the <xref:System.Exception.Message%2A> string of the exception.  
   

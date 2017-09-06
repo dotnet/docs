@@ -38,7 +38,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates how to obtain a <xref:System.RuntimeTypeHandle>from a type or from an object, and how to turn the handle back into a type.  
+ The following example demonstrates how to obtain a <xref:System.RuntimeTypeHandle> from a type or from an object, and how to turn the handle back into a type.  
   
  [!code-cpp[Type_GetTypeHandle#1](~/samples/snippets/cpp/VS_Snippets_CLR/Type_GetTypeHandle/CPP/Type_GetTypeHandle.cpp#1)]
  [!code-csharp[Type_GetTypeHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/Type_GetTypeHandle/CS/type_gettypehandle.cs#1)]

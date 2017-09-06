@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Overloads", "Overloads"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Overloads keyword [VB]"", ""hiding by signature [VB]"", ""Shadows keyword [VB]"", ""signature, hiding by""]"]
+helpviewer_keywords: ["Overloads keyword [VB]", "hiding by signature [VB]", "Shadows keyword [VB]", "signature, hiding by"]
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
 caps.latest.revision: 15
 author: dotnet-bot

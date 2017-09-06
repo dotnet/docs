@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.EndDefinition"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""End keyword [VB]""]"]
+helpviewer_keywords: ["End keyword [VB]"]
 ms.assetid: 42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f
 caps.latest.revision: 17
 author: dotnet-bot

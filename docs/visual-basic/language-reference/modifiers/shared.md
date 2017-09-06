@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Shared"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Shared keyword [VB]"", ""members [VB],  shared"", ""shared members [VB]""  , ""nonshared [VB]"", ""shared elements [VB]"", ""elements [VB], shared""]"]
+helpviewer_keywords: ["Shared keyword [VB]", "members [VB],  shared", "shared members [VB]""  , "nonshared [VB]", "shared elements [VB]", "elements [VB], shared"]
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
 caps.latest.revision: 16
 author: dotnet-bot

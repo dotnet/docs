@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""members [VB],  accessing in Visual Basic"", ""Friend access modifier [VB]"", ""access levels [VB], declared elements"", ""access levels [VB]"", ""access modifiers [VB]"", ""Public access modifier [VB]"", ""Protected access modifier [VB]"", ""Protected Friend access modifier [VB]"", ""Private access modifier [VB]"", ""declared elements [VB], access level""]"]
+helpviewer_keywords: ["members [VB],  accessing in Visual Basic", "Friend access modifier [VB]", "access levels [VB], declared elements", "access levels [VB]", "access modifiers [VB]", "Public access modifier [VB]", "Protected access modifier [VB]", "Protected Friend access modifier [VB]", "Private access modifier [VB]", "declared elements [VB], access level"]
 ms.assetid: 6e06c1ab-fd78-47f0-83a8-1152780b5e1a
 caps.latest.revision: 16
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""declarations [XML in Visual Basic]"", ""element names [XML in Visual Basic]"", ""names in XML literals [VB]"", ""attribute names [XML in Visual Basic]"", ""XML literals [VB], element names""]"]
+helpviewer_keywords: ["declarations [XML in Visual Basic]", "element names [XML in Visual Basic]", "names in XML literals [VB]", "attribute names [XML in Visual Basic]", "XML literals [VB], element names"]
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
 caps.latest.revision: 13
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""character encodings [VB]"", ""files [VB], encoding"", ""Unicode [VB], file encoding"", ""file encoding [VB]""]"]
+helpviewer_keywords: ["character encodings [VB]", "files [VB], encoding", "Unicode [VB], file encoding", "file encoding [VB]"]
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
 caps.latest.revision: 8
 author: dotnet-bot

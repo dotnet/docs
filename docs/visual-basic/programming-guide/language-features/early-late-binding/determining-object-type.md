@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""classes [VB], discovering which an object belongs to"", ""types [VB], determining Visual Basic object types"", ""object variables [VB], testing values"", ""TypeOf...Is expression, object type at run time"", ""TypeName function [VB]"", ""objects [VB], type determining""]"]
+helpviewer_keywords: ["classes [VB], discovering which an object belongs to", "types [VB], determining Visual Basic object types", "object variables [VB], testing values", "TypeOf...Is expression, object type at run time", "TypeName function [VB]", "objects [VB], type determining"]
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
 caps.latest.revision: 13
 author: dotnet-bot

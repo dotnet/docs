@@ -4,7 +4,7 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-helpviewer_keywords: ["[""errors [VB], run-time"", ""run-time errors [VB], Visual Basic""]"]
+helpviewer_keywords: ["errors [VB], run-time", "run-time errors [VB], Visual Basic"]
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
 caps.latest.revision: 8
 author: dotnet-bot

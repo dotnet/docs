@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""short-circuiting"", ""Boolean expressions [VB]"", ""logical operators [VB], Boolean expressions"", ""expressions [VB], Boolean"", ""expression evaluation, Boolean expressions"", ""operators [VB], short-circuiting"", ""Visual Basic code, operators [VB]"", ""short-circuit evaluation"", ""logical operators [VB], short-circuiting"", ""operators [VB], Boolean"", ""Visual Basic code, expressions""]"]
+helpviewer_keywords: ["short-circuiting", "Boolean expressions [VB]", "logical operators [VB], Boolean expressions", "expressions [VB], Boolean", "expression evaluation, Boolean expressions", "operators [VB], short-circuiting", "Visual Basic code, operators [VB]", "short-circuit evaluation", "logical operators [VB], short-circuiting", "operators [VB], Boolean", "Visual Basic code, expressions"]
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
 caps.latest.revision: 19
 author: dotnet-bot

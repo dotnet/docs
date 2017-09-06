@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.-="]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""-= operator [VB]"", ""assignment statements [VB], compound"", ""statements [VB], compound assignment"", ""operator -= [VB]"", ""compound assignment statements [VB]"" ]"]
+helpviewer_keywords: ["-= operator [VB]", "assignment statements [VB], compound", "statements [VB], compound assignment", "operator -= [VB]", "compound assignment statements [VB]"" ]"]
 ms.assetid: 5ead0c37-ae50-48f7-8435-8e341d81cae1
 caps.latest.revision: 19
 author: dotnet-bot

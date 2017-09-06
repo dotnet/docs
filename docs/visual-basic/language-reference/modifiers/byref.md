@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ByRef", "ByRef"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""ByRef keyword [VB]"", ""ByRef keyword [VB], contexts""]"]
+helpviewer_keywords: ["ByRef keyword [VB]", "ByRef keyword [VB], contexts"]
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
 caps.latest.revision: 10
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Erase"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Erase keyword [VB]"", ""Erase statement [VB]""]"]
+helpviewer_keywords: ["Erase keyword [VB]", "Erase statement [VB]"]
 ms.assetid: 7a8133d7-b750-4d74-8b66-ba1dd9778d4b
 caps.latest.revision: 9
 author: dotnet-bot

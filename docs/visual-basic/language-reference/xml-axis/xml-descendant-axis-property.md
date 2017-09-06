@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlPropertyDescendantsAxis"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, accessing XML"", ""XML descendant axis property [VB]"", ""descendant axis property [Visual Baisc]"", ""XML axis [VB], descendant"", ""XML [VB], accessing""]"]
+helpviewer_keywords: ["Visual Basic code, accessing XML", "XML descendant axis property [VB]", "descendant axis property [Visual Baisc]", "XML axis [VB], descendant", "XML [VB], accessing"]
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
 caps.latest.revision: 14
 author: dotnet-bot

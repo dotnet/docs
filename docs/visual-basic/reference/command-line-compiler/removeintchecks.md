@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["removeintchecks", "/removeintchecks"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""removeintchecks compiler option [VB]"", ""/removeintchecks compiler option [VB]"", ""-removeintchecks compiler option [VB]""]"]
+helpviewer_keywords: ["removeintchecks compiler option [VB]", "/removeintchecks compiler option [VB]", "-removeintchecks compiler option [VB]"]
 ms.assetid: c1835bd5-1e38-4fba-bd2f-6984774765d4
 caps.latest.revision: 14
 author: dotnet-bot

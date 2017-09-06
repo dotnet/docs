@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""information functions [VB]"", ""interaction functions [VB]""]"]
+helpviewer_keywords: ["information functions [VB]", "interaction functions [VB]"]
 ms.assetid: 6e698461-e944-4c0f-ae48-87429f1fe740
 caps.latest.revision: 12
 author: dotnet-bot

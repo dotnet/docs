@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.MustOverride", "MustOverride"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""virtual elements [VB], pure"", ""elements [VB], pure virtual"", ""properties [VB], redefining"", ""procedures [VB], overriding"", ""overriding [VB], MustOverride keyword"", ""procedures [VB], redefining"", ""pure virtual elements [VB]"", ""MustOverride keyword [VB]"", ""properties [VB], overriding""]"]
+helpviewer_keywords: ["virtual elements [VB], pure", "elements [VB], pure virtual", "properties [VB], redefining", "procedures [VB], overriding", "overriding [VB], MustOverride keyword", "procedures [VB], redefining", "pure virtual elements [VB]", "MustOverride keyword [VB]", "properties [VB], overriding"]
 ms.assetid: 6e9d9ad6-bb64-433f-b32b-3ef84293bf96
 caps.latest.revision: 17
 author: dotnet-bot

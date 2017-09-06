@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ElseIf", "vb.Then", "vb.If", "vb.EndIf"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""ElseIf statement [VB], If...Then...Else"", ""Then statement [VB], If...Then...Else"", ""control flow [VB], branching"", ""execution [VB], conditional"", ""TypeOf...Is expression, and If...Then...Else statements"", ""If...Then...Else statements [VB]"", ""If statement [VB], If...Then...Else"", ""If statement [VB]"", ""Is operator [VB], in If...Then...Else statements"", ""If Operator [VB]"", ""branching [VB], conditional"", ""IIf function, and If...Then...Else statements"", ""Else statement [VB]""]"]
+helpviewer_keywords: ["ElseIf statement [VB], If...Then...Else", "Then statement [VB], If...Then...Else", "control flow [VB], branching", "execution [VB], conditional", "TypeOf...Is expression, and If...Then...Else statements", "If...Then...Else statements [VB]", "If statement [VB], If...Then...Else", "If statement [VB]", "Is operator [VB], in If...Then...Else statements", "If Operator [VB]", "branching [VB], conditional", "IIf function, and If...Then...Else statements", "Else statement [VB]"]
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
 caps.latest.revision: 29
 author: dotnet-bot

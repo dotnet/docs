@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/reference compiler option [VB]"", ""r compiler option [VB]"", ""-reference compiler option [VB]"", ""/r compiler option [VB]"", ""reference compiler option [VB]"", ""-r compiler option [VB]""]"]
+helpviewer_keywords: ["/reference compiler option [VB]", "r compiler option [VB]", "-reference compiler option [VB]", "/r compiler option [VB]", "reference compiler option [VB]", "-r compiler option [VB]"]
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
 caps.latest.revision: 16
 author: dotnet-bot

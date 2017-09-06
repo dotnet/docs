@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""conversions [VB], type"", ""data types [VB], changing"", ""variables [VB], changing data type"", ""type conversion [VB]"", ""conversions [VB], data type"", ""changing data types [VB]"", ""data type conversion [VB]""]"]
+helpviewer_keywords: ["conversions [VB], type", "data types [VB], changing", "variables [VB], changing data type", "type conversion [VB]", "conversions [VB], data type", "changing data types [VB]", "data type conversion [VB]"]
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
 caps.latest.revision: 13
 author: dotnet-bot

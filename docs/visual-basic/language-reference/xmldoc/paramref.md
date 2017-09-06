@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""paramref XML tag [VB]"", ""<paramref> XML tag""]"]
+helpviewer_keywords: ["paramref XML tag [VB]", "<paramref> XML tag"]
 ms.assetid: 8979d53b-beb1-41b7-b41e-6bbea1c17a03
 caps.latest.revision: 9
 author: dotnet-bot

@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""forms [VB], communicating between"", ""application forms [VB], accessing"", ""forms [VB], accessing one from another"", ""My.Forms object"", ""forms [VB], accessing all open""]"]
+helpviewer_keywords: ["forms [VB], communicating between", "application forms [VB], accessing", "forms [VB], accessing one from another", "My.Forms object", "forms [VB], accessing all open"]
 ms.assetid: 9aaf5aaf-2012-4f97-89c7-6e62b9d17863
 caps.latest.revision: 16
 author: dotnet-bot

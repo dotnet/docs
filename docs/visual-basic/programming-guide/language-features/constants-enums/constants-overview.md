@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""constants [VB]""]"]
+helpviewer_keywords: ["constants [VB]"]
 ms.assetid: 29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9
 caps.latest.revision: 14
 author: dotnet-bot

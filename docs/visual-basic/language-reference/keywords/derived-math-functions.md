@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""arithmetic operations, derived math functions"", ""cosecant function [VB]"", ""arcsecant function [VB]"", ""arccotangent function [VB]"", ""functions [VB], derived math functions"", ""inverse functions [VB]"", ""math functions, derived"", ""derived math functions [VB]"", ""cotangent function [VB]"", ""angles [VB]"", ""secant function [VB]"", ""trigonometric functions [VB]"", ""logarithms [VB]"", ""arccosecant function [VB]"", ""hyperbolic functions [VB]"", ""arcsine function [VB]"", ""degrees [VB]"", ""arccosine function [VB]""]"]
+helpviewer_keywords: ["arithmetic operations, derived math functions", "cosecant function [VB]", "arcsecant function [VB]", "arccotangent function [VB]", "functions [VB], derived math functions", "inverse functions [VB]", "math functions, derived", "derived math functions [VB]", "cotangent function [VB]", "angles [VB]", "secant function [VB]", "trigonometric functions [VB]", "logarithms [VB]", "arccosecant function [VB]", "hyperbolic functions [VB]", "arcsine function [VB]", "degrees [VB]", "arccosine function [VB]"]
 ms.assetid: 63e449d8-9444-44fb-8db1-6d9cf346e2aa
 caps.latest.revision: 11
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["WriteOnly", "vb.WriteOnly"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""write-only properties [VB]"", ""WriteOnly keyword [VB]"", ""sensitive data, protecting"", ""properties [VB], write-only"", ""sensitive data [VB]""]"]
+helpviewer_keywords: ["write-only properties [VB]", "WriteOnly keyword [VB]", "sensitive data, protecting", "properties [VB], write-only", "sensitive data [VB]"]
 ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
 caps.latest.revision: 16
 author: dotnet-bot

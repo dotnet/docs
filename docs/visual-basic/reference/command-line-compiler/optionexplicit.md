@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["/optionexplicit"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/optionexplicit compiler option [VB]"", ""optionexplicit compiler option [VB]"", ""-optionexplicit compiler option [VB]""]"]
+helpviewer_keywords: ["/optionexplicit compiler option [VB]", "optionexplicit compiler option [VB]", "-optionexplicit compiler option [VB]"]
 ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
 caps.latest.revision: 16
 author: dotnet-bot

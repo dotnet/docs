@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""comparison operators [VB], comparing strings"", ""pattern matching [VB]"", ""strings [VB], comparing"", ""string comparison [VB], operators"", ""Visual Basic code, operators"", ""pattern matching [VB], ""string comparison [VB]"", ""Like operator [VB], pattern matching"", ""pattern matching [VB]""empty strings [VB]"", ""operators [VB], comparison""]"]
+helpviewer_keywords: ["comparison operators [VB], comparing strings", "pattern matching [VB]", "strings [VB], comparing", "string comparison [VB], operators", "Visual Basic code, operators", "pattern matching [VB], "string comparison [VB]", "Like operator [VB], pattern matching", "pattern matching [VB]""empty strings [VB]", "operators [VB], comparison"]
 ms.assetid: 19a83804-b5af-4739-928b-ac93e64e457f
 caps.latest.revision: 8
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""conditional compilation [VB], about conditional compilation"", ""compilation [VB], conditional""]"]
+helpviewer_keywords: ["conditional compilation [VB], about conditional compilation", "compilation [VB], conditional"]
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
 caps.latest.revision: 15
 author: dotnet-bot

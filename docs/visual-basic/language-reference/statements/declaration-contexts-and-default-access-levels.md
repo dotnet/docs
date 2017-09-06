@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""module level [VB], defined"", ""declaration contexts, Visual Basic"", ""procedure level [VB], defined"", ""namespace level [VB], defined"", ""access levels [VB], Visual Basic"", ""access levels [VB], default levels""]"]
+helpviewer_keywords: ["module level [VB], defined", "declaration contexts, Visual Basic", "procedure level [VB], defined", "namespace level [VB], defined", "access levels [VB], Visual Basic", "access levels [VB], default levels"]
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
 caps.latest.revision: 8
 author: dotnet-bot

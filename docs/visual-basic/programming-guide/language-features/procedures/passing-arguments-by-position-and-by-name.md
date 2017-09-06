@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""arguments [VB], passing by name"", ""procedures [VB], arguments"", "":= passing arguments"", ""procedure arguments [VB]"", ""Visual Basic code, procedures"", ""named arguments [VB], passing arguments"", ""arguments [VB], passing by position"", ""Function procedures [VB], passing arguments"", ""named parameters [VB], passing arguments"", ""named arguments [VB]"", ""passing parameters [VB], named parameter arguments"", ""passing parameters [VB], by position"", ""procedures [VB], calling"", ""named parameters [VB]"", ""Sub procedures [VB], passing arguments"", ""argument passing [VB]"", ""passing parameters [VB], by name"", ""argument passing, by position"", ""arguments [VB], listing by name""]"]
+helpviewer_keywords: ["arguments [VB], passing by name", "procedures [VB], arguments", ":= passing arguments", "procedure arguments [VB]", "Visual Basic code, procedures", "named arguments [VB], passing arguments", "arguments [VB], passing by position", "Function procedures [VB], passing arguments", "named parameters [VB], passing arguments", "named arguments [VB]", "passing parameters [VB], named parameter arguments", "passing parameters [VB], by position", "procedures [VB], calling", "named parameters [VB]", "Sub procedures [VB], passing arguments", "argument passing [VB]", "passing parameters [VB], by name", "argument passing, by position", "arguments [VB], listing by name"]
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
 caps.latest.revision: 13
 author: dotnet-bot

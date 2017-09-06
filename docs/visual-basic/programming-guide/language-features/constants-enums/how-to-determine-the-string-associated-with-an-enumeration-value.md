@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""enumerations [VB]"", ""strings [VB], enumeration values"", ""values [VB], enumeration members""]"]
+helpviewer_keywords: ["enumerations [VB]", "strings [VB], enumeration values", "values [VB], enumeration members"]
 ms.assetid: 9253e7c8-579c-49a2-8f26-392b20ea99eb
 caps.latest.revision: 12
 author: dotnet-bot

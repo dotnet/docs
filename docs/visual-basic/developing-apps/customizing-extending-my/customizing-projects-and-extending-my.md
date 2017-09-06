@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My namespace [VB], customizing"", ""My namespace [VB]"", ""My namespace [VB], extending""]"]
+helpviewer_keywords: ["My namespace [VB], customizing", "My namespace [VB]", "My namespace [VB], extending"]
 ms.assetid: 06ca80b9-1192-4eb5-8537-8ef5edfb9be0
 caps.latest.revision: 12
 author: dotnet-bot

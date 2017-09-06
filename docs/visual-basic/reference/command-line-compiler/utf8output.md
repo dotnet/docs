@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""-utf8output compiler option [VB]"", ""utf8output compiler option [VB]"", ""/utf8output compiler option [VB]""]"]
+helpviewer_keywords: ["-utf8output compiler option [VB]", "utf8output compiler option [VB]", "/utf8output compiler option [VB]"]
 ms.assetid: 8ab36b1e-027a-49ac-85b4-f48997d9e4d6
 caps.latest.revision: 11
 author: dotnet-bot

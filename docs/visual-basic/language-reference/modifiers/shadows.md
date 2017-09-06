@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Shadows", "shadows"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""shadowing [VB]"", ""duplicate names [VB]"", ""scope [VB], shadowing"", ""Shadows keyword [VB]"", ""names [VB], shadowing""]"]
+helpviewer_keywords: ["shadowing [VB]", "duplicate names [VB]", "scope [VB], shadowing", "Shadows keyword [VB]", "names [VB], shadowing"]
 ms.assetid: 6bf687cd-0544-4797-b51b-911125ec57c6
 caps.latest.revision: 16
 author: dotnet-bot

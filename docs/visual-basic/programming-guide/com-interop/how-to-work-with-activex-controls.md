@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Toolbox, assemebadding controls"", ""ActiveX controls [VB], adding to Toolbox""]"]
+helpviewer_keywords: ["Toolbox, assemebadding controls", "ActiveX controls [VB], adding to Toolbox"]
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
 caps.latest.revision: 10
 author: dotnet-bot

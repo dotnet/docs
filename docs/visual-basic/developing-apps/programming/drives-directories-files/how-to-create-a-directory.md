@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""directories [VB], creating"", ""folders [VB], creating""]"]
+helpviewer_keywords: ["directories [VB], creating", "folders [VB], creating"]
 ms.assetid: 0351a2ca-24d8-43b5-bb39-9b99e6401cff
 caps.latest.revision: 19
 author: dotnet-bot

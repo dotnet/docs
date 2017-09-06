@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic language reference [VB]"", ""run-time libraries, Visual Basic"", ""libraries, Visual Basic run-time"", ""Visual Basic code, run-time libraries"", ""Visual Basic code, language reference"", ""language reference, Visual Basic"", ""Visual Basic, language reference""]"]
+helpviewer_keywords: ["Visual Basic language reference [VB]", "run-time libraries, Visual Basic", "libraries, Visual Basic run-time", "Visual Basic code, run-time libraries", "Visual Basic code, language reference", "language reference, Visual Basic", "Visual Basic, language reference"]
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
 caps.latest.revision: 17
 author: dotnet-bot

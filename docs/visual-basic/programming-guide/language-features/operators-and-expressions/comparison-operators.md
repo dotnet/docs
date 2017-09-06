@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""comparison operators [VB], comparing strings"", ""comparison operators [VB], comparing objects"", ""strings [VB], comparing"", ""comparison operators [VB]"", ""string comparison [VB], operators [VB]"", ""objects [VB], comparing"", ""numbers [VB], comparing"", ""Visual Basic code, operators [VB]"", ""string comparison [VB]"", ""numeric values [VB], comparing"", ""comparison operators [VB], comparing numeric values"", ""operators [VB], comparison""]"]
+helpviewer_keywords: ["comparison operators [VB], comparing strings", "comparison operators [VB], comparing objects", "strings [VB], comparing", "comparison operators [VB]", "string comparison [VB], operators [VB]", "objects [VB], comparing", "numbers [VB], comparing", "Visual Basic code, operators [VB]", "string comparison [VB]", "numeric values [VB], comparing", "comparison operators [VB], comparing numeric values", "operators [VB], comparison"]
 ms.assetid: 0b570339-5407-474f-8421-e183a8b303ee
 caps.latest.revision: 13
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""keyboards, accessing [VB]"", ""My.Computer.Keyboard object, tasks"", ""keystrokes [VB]"", ""CapsLock property [VB]""]"]
+helpviewer_keywords: ["keyboards, accessing [VB]", "My.Computer.Keyboard object, tasks", "keystrokes [VB]", "CapsLock property [VB]"]
 ms.assetid: aa37d54c-5c98-4b44-b98a-c26d2a03c038
 caps.latest.revision: 11
 author: dotnet-bot

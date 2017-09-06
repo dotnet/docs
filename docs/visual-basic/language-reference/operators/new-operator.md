@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.new", "vb.NewConstraint"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""constraints, Visual Basic generic types"", ""generics [VB], constraints"", ""constraints, New keyword"", ""New constraint [VB]"", ""New keyword [VB]""]"]
+helpviewer_keywords: ["constraints, Visual Basic generic types", "generics [VB], constraints", "constraints, New keyword", "New constraint [VB]", "New keyword [VB]"]
 ms.assetid: d7d566d7-fe0e-4336-91f7-641a542de4d0
 caps.latest.revision: 23
 author: dotnet-bot

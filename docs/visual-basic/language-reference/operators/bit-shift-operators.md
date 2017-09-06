@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""shift operators [VB], bit"", ""operators [VB], shift"", ""bit shift operators [VB]""]"]
+helpviewer_keywords: ["shift operators [VB], bit", "operators [VB], shift", "bit shift operators [VB]"]
 ms.assetid: 64889319-a057-471b-85d8-69fcd4af6230
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""LINQ to XML [VB], XML namespace prefixes"", ""XML namespace prefixes [VB]""]"]
+helpviewer_keywords: ["LINQ to XML [VB], XML namespace prefixes", "XML namespace prefixes [VB]"]
 ms.assetid: 4292e1d9-eb8f-49d6-a3aa-f05a5fbe24d1
 caps.latest.revision: 11
 author: dotnet-bot

@@ -678,7 +678,7 @@ End Function
             ' Global Monospace.  
   
             ' Strip off the "http:'".  
-            Dim displayURL = url.Replace("http://", "")  
+            Dim displayURL = url.Replace("http://", ")  
             ' Display position in the URL list, the URL, and the number of bytes.  
             ResultsTextBox.Text &= String.Format(vbCrLf & "{0}. {1,-58} {2,8}", pos, displayURL, content.Length)  
         End Sub  

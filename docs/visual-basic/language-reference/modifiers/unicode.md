@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Unicode"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Unicode [VB], external references"", ""Declare statement [VB], marshaling strings"", ""Unicode keyword [VB]"", ""Unicode [VB], marshaling strings""]"]
+helpviewer_keywords: ["Unicode [VB], external references", "Declare statement [VB], marshaling strings", "Unicode keyword [VB]", "Unicode [VB], marshaling strings"]
 ms.assetid: 0021d5ff-3209-444e-8497-420f3e6ee075
 caps.latest.revision: 14
 author: dotnet-bot

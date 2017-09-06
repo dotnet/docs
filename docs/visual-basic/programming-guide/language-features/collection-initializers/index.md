@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.CollectionInitializer"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""collection initializers [VB]""]"]
+helpviewer_keywords: ["collection initializers [VB]"]
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
 caps.latest.revision: 23
 author: dotnet-bot

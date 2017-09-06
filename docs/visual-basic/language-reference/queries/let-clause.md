@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryLet"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [VB], Let"", ""Let clause [VB]"", ""Let statement [VB]""]"]
+helpviewer_keywords: ["queries [VB], Let", "Let clause [VB]", "Let statement [VB]"]
 ms.assetid: 981aa516-16eb-4c53-b1f1-5aa3e82f316e
 caps.latest.revision: 16
 author: dotnet-bot

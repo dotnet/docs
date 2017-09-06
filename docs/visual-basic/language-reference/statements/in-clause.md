@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.In"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""In keyword [VB]""]"]
+helpviewer_keywords: ["In keyword [VB]"]
 ms.assetid: 2f003a85-8fb6-4280-822b-6ac12839b915
 caps.latest.revision: 14
 author: dotnet-bot

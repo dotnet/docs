@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""access levels [VB], declared elements"", ""Private keyword [VB], accessing variables"", ""access levels [VB], variables"", ""Public keyword [VB], accessing variables"", ""Friend keyword [VB], accessing variables"", ""variables [VB], access level"", ""declared elements [VB], access level"", ""Protected keyword [VB], accessing variables""]"]
+helpviewer_keywords: ["access levels [VB], declared elements", "Private keyword [VB], accessing variables", "access levels [VB], variables", "Public keyword [VB], accessing variables", "Friend keyword [VB], accessing variables", "variables [VB], access level", "declared elements [VB], access level", "Protected keyword [VB], accessing variables"]
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
 caps.latest.revision: 14
 author: dotnet-bot

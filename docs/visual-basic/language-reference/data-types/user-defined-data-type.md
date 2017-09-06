@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["UserDefined", "UDT", "vb.UDT", "User-Defined", "vb.UserDefined", "vb.User-Defined"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""user-defined data types, Visual Basic"", ""user-defined types"", ""structures [VB], as user-defined data types"", ""user-defined types, Visual Basic"", ""user-defined types, structure declaration"", ""user-defined types, structures in Visual Basic"", ""user-defined data types, structure declaration"", ""data types [VB], assigning"", ""Structure statement [VB]"", ""data types [VB], user-defined"", ""user-defined data types, structures in Visual Basic"", ""user-defined data types"", ""types [VB], user-defined""]"]
+helpviewer_keywords: ["user-defined data types, Visual Basic", "user-defined types", "structures [VB], as user-defined data types", "user-defined types, Visual Basic", "user-defined types, structure declaration", "user-defined types, structures in Visual Basic", "user-defined data types, structure declaration", "data types [VB], assigning", "Structure statement [VB]", "data types [VB], user-defined", "user-defined data types, structures in Visual Basic", "user-defined data types", "types [VB], user-defined"]
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic, additional resources"", ""Help [VB]"", ""resources [VB], additional"", ""Help, newsgroups"", ""Web sites, Visual Studio"", ""webcasts [VB]"", ""Help, Visual Basic Web sites"", ""newsgroups, Visual Studio"", ""support, Visual Studio sites"", ""Visual Basic, videos""]"]
+helpviewer_keywords: ["Visual Basic, additional resources", "Help [VB]", "resources [VB], additional", "Help, newsgroups", "Web sites, Visual Studio", "webcasts [VB]", "Help, Visual Basic Web sites", "newsgroups, Visual Studio", "support, Visual Studio sites", "Visual Basic, videos"]
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
 caps.latest.revision: 22
 author: dotnet-bot

@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""registry [VB], Visual Basic""]"]
+helpviewer_keywords: ["registry [VB], Visual Basic"]
 ms.assetid: 6e90eb8a-1a4e-4387-8a68-9287dc7875e8
 caps.latest.revision: 14
 author: dotnet-bot

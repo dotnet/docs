@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""inserting rows [LINQ to SQL]"", ""deleting rows [LINQ to SQL]"", ""updating rows [LINQ to SQL]"", ""inserting data [VB]"", ""deleting data [VB]"", ""data [VB], updating"", ""updating data [LINQ]"", ""queries [LINQ in Visual Basic], data changes in database"", ""queries [LINQ in Visual Basic], how-to topics""]"]
+helpviewer_keywords: ["inserting rows [LINQ to SQL]", "deleting rows [LINQ to SQL]", "updating rows [LINQ to SQL]", "inserting data [VB]", "deleting data [VB]", "data [VB], updating", "updating data [LINQ]", "queries [LINQ in Visual Basic], data changes in database", "queries [LINQ in Visual Basic], how-to topics"]
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
 caps.latest.revision: 15
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""system sounds [VB], playing"", ""system sounds [VB]"", ""playing sounds [VB], Visual Basic"", ""sound loops [VB]"", ""My.Computer.Audio object, tasks"", ""sounds [VB], playing"", ""sounds [VB], background"", ""playing sounds [VB]""]"]
+helpviewer_keywords: ["system sounds [VB], playing", "system sounds [VB]", "playing sounds [VB], Visual Basic", "sound loops [VB]", "My.Computer.Audio object, tasks", "sounds [VB], playing", "sounds [VB], background", "playing sounds [VB]"]
 ms.assetid: f0d9e4ab-57c7-47b6-86d3-99ff07078040
 caps.latest.revision: 21
 author: dotnet-bot

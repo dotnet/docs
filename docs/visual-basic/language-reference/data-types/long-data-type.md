@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Long"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""identifier type characters [VB], &"", ""numbers [VB], whole"", ""whole numbers [VB]"", ""integral data types [VB]"", ""& identifier type character"", ""integer numbers [VB]"", ""literal type characters [VB], L"", ""numbers [VB], integer"", ""integers [VB], data types"", ""L literal type character [VB]"", ""integers [VB], types"", ""Long keyword [VB]"", ""data types [VB], integral"", ""data types [VB], assigning"", ""Long data type [VB]""]"]
+helpviewer_keywords: ["identifier type characters [VB], &", "numbers [VB], whole", "whole numbers [VB]", "integral data types [VB]", "& identifier type character", "integer numbers [VB]", "literal type characters [VB], L", "numbers [VB], integer", "integers [VB], data types", "L literal type character [VB]", "integers [VB], types", "Long keyword [VB]", "data types [VB], integral", "data types [VB], assigning", "Long data type [VB]"]
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
 author: "rpetrusha"
 ms.author: "ronpet"

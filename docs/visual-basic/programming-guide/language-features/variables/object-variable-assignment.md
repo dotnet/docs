@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Nothing keyword [VB], object variable assignment"", ""object variables [VB], initializing"", ""variables [VB], initializing"", ""objects [VB], current instance"", ""object variables [VB], assigning"", ""variables [VB], object variables"", ""current instance, defined"", ""variables [VB], assigning"", ""assignment statements [VB], object variable assignment"", ""Me keyword [VB], as object variable""]"]
+helpviewer_keywords: ["Nothing keyword [VB], object variable assignment", "object variables [VB], initializing", "variables [VB], initializing", "objects [VB], current instance", "object variables [VB], assigning", "variables [VB], object variables", "current instance, defined", "variables [VB], assigning", "assignment statements [VB], object variable assignment", "Me keyword [VB], as object variable"]
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
 caps.latest.revision: 19
 author: dotnet-bot

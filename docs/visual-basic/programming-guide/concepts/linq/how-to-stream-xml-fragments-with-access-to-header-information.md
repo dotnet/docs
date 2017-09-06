@@ -169,7 +169,7 @@ Public Class StreamCustomerItemEnumerator
                                 _reader.Name = "Name" Then  
   
                                 name = TryCast(XElement.ReadFrom(_reader), XElement)  
-                                _customerName = If(name IsNot Nothing, name.Value, "")  
+                                _customerName = If(name IsNot Nothing, name.Value, ")  
                                 Exit While  
                             End If  
   

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Dim", "Dim"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Public keyword [VB], in Dim statement"", ""Dim statement [VB]"", ""fixed-length strings [VB], declaring"", ""variables [VB], declaring"", ""WithEvents keyword [VB], Dim statement"", ""dynamic arrays, Dim statement"", ""variables [VB], initializing"", ""{} braces"", ""fields, as member variables"", ""declarations [VB], dynamic arrays"", ""member variables [VB]"", ""default values [VB]"", ""data types [VB], assigning"", ""braces {}"", ""As keyword [VB], in Dim statement"", ""arrays [VB], declaring"", ""New keyword [VB], Dim statement"", ""To keyword [VB], in Dim statement"", ""storage, allocating"", ""local variables [VB]"", ""declaration statements [VB]"", ""Dim statement [VB], syntax"", ""variables [VB], member and local""]"]
+helpviewer_keywords: ["Public keyword [VB], in Dim statement", "Dim statement [VB]", "fixed-length strings [VB], declaring", "variables [VB], declaring", "WithEvents keyword [VB], Dim statement", "dynamic arrays, Dim statement", "variables [VB], initializing", "{} braces", "fields, as member variables", "declarations [VB], dynamic arrays", "member variables [VB]", "default values [VB]", "data types [VB], assigning", "braces {}", "As keyword [VB], in Dim statement", "arrays [VB], declaring", "New keyword [VB], Dim statement", "To keyword [VB], in Dim statement", "storage, allocating", "local variables [VB]", "declaration statements [VB]", "Dim statement [VB], syntax", "variables [VB], member and local"]
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
 caps.latest.revision: 72
 author: dotnet-bot

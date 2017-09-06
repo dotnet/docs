@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Decimal"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""literal type characters [VB], D"", ""trailing zeros [VB]"", ""real numbers [VB]"", ""trailing 0 characters"", ""Decimal data type [VB]"", ""D literal type character [VB]"", ""decimals [VB], Decimal data type"", ""0 characters [VB], trailing"", ""data types [VB], assigning"", ""decimal keyword [VB]"", ""numbers [VB], real"", ""variable-precision numbers [VB]"", ""zeros [VB], trailing"", ""@ identifier type character [VB]"", ""identifier type characters [VB], @""]"]
+helpviewer_keywords: ["literal type characters [VB], D", "trailing zeros [VB]", "real numbers [VB]", "trailing 0 characters", "Decimal data type [VB]", "D literal type character [VB]", "decimals [VB], Decimal data type", "0 characters [VB], trailing", "data types [VB], assigning", "decimal keyword [VB]", "numbers [VB], real", "variable-precision numbers [VB]", "zeros [VB], trailing", "@ identifier type character [VB]", "identifier type characters [VB], @"]
 ms.assetid: 1d855b45-afe2-45b0-a623-96b6f63a43d5
 caps.latest.revision: 20
 author: dotnet-bot

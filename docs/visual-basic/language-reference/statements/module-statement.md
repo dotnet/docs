@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["Module", "vb.Module"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""modules [VB], classes"", ""modules [VB]"", ""Module statement [VB]"", ""modules [VB], declaring"", ""standard modules [VB]"", ""classes [VB], vs. modules"", ""declarations [VB], modules""]"]
+helpviewer_keywords: ["modules [VB], classes", "modules [VB]", "Module statement [VB]", "modules [VB], declaring", "standard modules [VB]", "classes [VB], vs. modules", "declarations [VB], modules"]
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
 caps.latest.revision: 24
 author: dotnet-bot

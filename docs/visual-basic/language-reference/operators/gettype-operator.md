@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.GetType"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""GetType operator [VB]"", ""GetType keyword [VB]""]"]
+helpviewer_keywords: ["GetType operator [VB]", "GetType keyword [VB]"]
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
 caps.latest.revision: 17
 author: dotnet-bot

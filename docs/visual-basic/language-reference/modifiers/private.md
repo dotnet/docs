@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Private"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Private keyword [VB]"", ""Private keyword [VB], syntax""]"]
+helpviewer_keywords: ["Private keyword [VB]", "Private keyword [VB], syntax"]
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
 caps.latest.revision: 13
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""expressions [VB], parentheses"", ""operators [VB], associativity"", ""expressions [VB], operators [VB]"", ""operators [VB], precedence"", ""Visual Basic code, operators [VB]"", ""Visual Basic code, expressions"", ""operators [VB], complex expressions"", ""expressions [VB], complex"", ""parentheses, complex expressions"", ""numeric expressions [VB]""]"]
+helpviewer_keywords: ["expressions [VB], parentheses", "operators [VB], associativity", "expressions [VB], operators [VB]", "operators [VB], precedence", "Visual Basic code, operators [VB]", "Visual Basic code, expressions", "operators [VB], complex expressions", "expressions [VB], complex", "parentheses, complex expressions", "numeric expressions [VB]"]
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
 caps.latest.revision: 12
 author: dotnet-bot

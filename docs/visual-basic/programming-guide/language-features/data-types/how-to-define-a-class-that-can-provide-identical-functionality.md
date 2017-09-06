@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""data type arguments [VB], using"", ""type parameters [VB], defining"", ""data type arguments [VB], defining"", ""arguments [VB], data types"", ""Of keyword [VB], using"", ""constraints, Visual Basic generic types"", ""generic parameters [VB]"", ""data type parameters [VB]"", ""data type parameters [VB], using"", ""generics [VB], defining classes with type parameters"", ""data types [VB], as parameters"", ""data types [VB], as arguments"", ""parameters [VB], type"", ""type arguments [VB]"", ""types [VB], generic"", ""parameters [VB], generic"", ""type parameters [VB]"", ""data type arguments [VB]"", ""parameters [VB], data type"", ""generics [VB], defining generic types"", ""data type parameters [VB], defining"", ""type arguments [VB], defining"", ""arguments [VB], type""]"]
+helpviewer_keywords: ["data type arguments [VB], using", "type parameters [VB], defining", "data type arguments [VB], defining", "arguments [VB], data types", "Of keyword [VB], using", "constraints, Visual Basic generic types", "generic parameters [VB]", "data type parameters [VB]", "data type parameters [VB], using", "generics [VB], defining classes with type parameters", "data types [VB], as parameters", "data types [VB], as arguments", "parameters [VB], type", "type arguments [VB]", "types [VB], generic", "parameters [VB], generic", "type parameters [VB]", "data type arguments [VB]", "parameters [VB], data type", "generics [VB], defining generic types", "data type parameters [VB], defining", "type arguments [VB], defining", "arguments [VB], type"]
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
 caps.latest.revision: 29
 author: dotnet-bot

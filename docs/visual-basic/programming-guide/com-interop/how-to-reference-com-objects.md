@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""COM interop [VB], referencing COM objects"", ""referencing objects, COM objects from Visual Basic"", ""objects [VB], referencing"", ""COM objects, referencing"", ""interop assemblies [VB]"" ]"]
+helpviewer_keywords: ["COM interop [VB], referencing COM objects", "referencing objects, COM objects from Visual Basic", "objects [VB], referencing", "COM objects, referencing", "interop assemblies [VB]"" ]"]
 ms.assetid: 9c518fb4-27d9-4112-9e6a-5a7d0210af6f
 caps.latest.revision: 13
 author: dotnet-bot

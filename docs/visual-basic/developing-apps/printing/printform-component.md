@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""PrintForm component [VB]""]"]
+helpviewer_keywords: ["PrintForm component [VB]"]
 ms.assetid: 03de98b8-b54c-4764-91d7-83c64e974750
 caps.latest.revision: 19
 author: dotnet-bot

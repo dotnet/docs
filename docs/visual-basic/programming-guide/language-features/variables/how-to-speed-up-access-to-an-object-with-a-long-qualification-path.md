@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""variables [VB], accessing"", ""variables [VB], object"", ""With statement [VB]"", ""With block [VB]"", ""object variables [VB], accessing""]"]
+helpviewer_keywords: ["variables [VB], accessing", "variables [VB], object", "With statement [VB]", "With block [VB]", "object variables [VB], accessing"]
 ms.assetid: 3eb7657f-c9fe-4e05-8bc3-4bb14d5ae585
 caps.latest.revision: 13
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""execution [VB], ending"", ""objects [VB], initializing"", ""Initialize event [VB]"", ""files [VB], closing"", ""programs, quitting"", ""code, exiting"", ""objects [VB], creating"", ""program termination [VB]"", ""classes [VB], walkthroughs"", ""class modules [VB], walkthroughs"", ""Terminate event [VB]"", ""execution [VB], stopping""]"]
+helpviewer_keywords: ["execution [VB], ending", "objects [VB], initializing", "Initialize event [VB]", "files [VB], closing", "programs, quitting", "code, exiting", "objects [VB], creating", "program termination [VB]", "classes [VB], walkthroughs", "class modules [VB], walkthroughs", "Terminate event [VB]", "execution [VB], stopping"]
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
 caps.latest.revision: 21
 author: dotnet-bot

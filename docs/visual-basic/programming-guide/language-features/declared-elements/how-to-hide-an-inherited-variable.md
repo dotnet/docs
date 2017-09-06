@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""qualification, of element names"", ""element names [VB], qualification"", ""references [VB], declared elements"", ""declaration statements [VB], declared elements"", ""referencing declared elements [VB]"", ""declared elements [VB], referencing"", ""declared elements [VB], about declared elements"", ""variables [VB], hiding inherited""]"]
+helpviewer_keywords: ["qualification, of element names", "element names [VB], qualification", "references [VB], declared elements", "declaration statements [VB], declared elements", "referencing declared elements [VB]", "declared elements [VB], referencing", "declared elements [VB], about declared elements", "variables [VB], hiding inherited"]
 ms.assetid: 765728d9-7351-4a30-999d-b5f34f024412
 caps.latest.revision: 17
 author: dotnet-bot

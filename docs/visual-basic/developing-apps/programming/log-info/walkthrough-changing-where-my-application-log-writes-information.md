@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Application.Log object, walkthroughs"", ""event logs, changing output location""]"]
+helpviewer_keywords: ["My.Application.Log object, walkthroughs", "event logs, changing output location"]
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
 caps.latest.revision: 20
 author: dotnet-bot

@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""errors [VB]""]"]
+helpviewer_keywords: ["errors [VB]"]
 ms.assetid: 2557da60-c6dc-4e99-8128-fceb6f8a0736
 caps.latest.revision: 13
 author: dotnet-bot

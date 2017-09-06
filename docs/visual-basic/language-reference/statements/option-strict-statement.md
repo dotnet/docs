@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Strict", "vb.OptionStrict"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Strict keyword [VB]"", ""Option Strict statement [VB]"", ""conversions [VB], implicit"", ""late binding [VB]"", ""implicit conversions [VB]""]"]
+helpviewer_keywords: ["Strict keyword [VB]", "Option Strict statement [VB]", "conversions [VB], implicit", "late binding [VB]", "implicit conversions [VB]"]
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
 caps.latest.revision: 49
 author: dotnet-bot

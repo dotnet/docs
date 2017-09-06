@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""serial ports [VB], availability"", ""My.Computer.Ports.SerialPortNames property"", ""My.Computer.Ports object"", ""ports [VB], serial port availability""]"]
+helpviewer_keywords: ["serial ports [VB], availability", "My.Computer.Ports.SerialPortNames property", "My.Computer.Ports object", "ports [VB], serial port availability"]
 ms.assetid: eaf2ee5a-8103-4e10-a205-ed1d4db120ba
 caps.latest.revision: 20
 author: dotnet-bot

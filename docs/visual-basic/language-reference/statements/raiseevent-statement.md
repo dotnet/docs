@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.RaiseEventMethod", "vb.RaiseEvent", "RaiseEvent"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""raising events [VB], RaiseEvent statement"", ""RaiseEvent statement [VB]"", ""event handlers [VB], connecting events to""]"]
+helpviewer_keywords: ["raising events [VB], RaiseEvent statement", "RaiseEvent statement [VB]", "event handlers [VB], connecting events to"]
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 caps.latest.revision: 19
 author: dotnet-bot

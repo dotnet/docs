@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""reading application settings [VB]"", ""My.Settings object, reading application settings"", ""application settings, reading""]"]
+helpviewer_keywords: ["reading application settings [VB]", "My.Settings object, reading application settings", "application settings, reading"]
 ms.assetid: eb3428ef-115e-49a8-a878-e0613183fee0
 caps.latest.revision: 12
 author: dotnet-bot

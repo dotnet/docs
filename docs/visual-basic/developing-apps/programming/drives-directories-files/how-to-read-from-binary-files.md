@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""binary files [VB], reading from"", ""I/O [VB], reading from binary files"", ""ReadAllBytes method, reading from binary files"", ""My.Computer.FileSystem object, reading from binary files""]"]
+helpviewer_keywords: ["binary files [VB], reading from", "I/O [VB], reading from binary files", "ReadAllBytes method, reading from binary files", "My.Computer.FileSystem object, reading from binary files"]
 ms.assetid: d2b1269e-24b6-42e0-9414-ae708db282d8
 caps.latest.revision: 16
 author: dotnet-bot

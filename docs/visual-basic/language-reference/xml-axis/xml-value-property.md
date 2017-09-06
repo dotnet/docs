@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlPropertyExtensionValue"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Value property [VB]"", ""Visual Basic code, accessing XML"", ""XML axis [VB], Value"", ""XML Value property [VB]""]"]
+helpviewer_keywords: ["Value property [VB]", "Visual Basic code, accessing XML", "XML axis [VB], Value", "XML Value property [VB]"]
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
 caps.latest.revision: 18
 author: dotnet-bot

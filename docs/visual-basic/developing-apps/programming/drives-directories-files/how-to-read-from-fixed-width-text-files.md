@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""fixed-width text file"", ""reading text files [VB], fixed-width"", ""files [VB], parsing"", ""text files [VB], tasks"", ""text files [VB], reading""]"]
+helpviewer_keywords: ["fixed-width text file", "reading text files [VB], fixed-width", "files [VB], parsing", "text files [VB], tasks", "text files [VB], reading"]
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
 caps.latest.revision: 24
 author: dotnet-bot

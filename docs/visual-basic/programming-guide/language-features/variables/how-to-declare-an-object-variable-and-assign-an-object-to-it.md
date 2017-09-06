@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""object variables [VB], declaring"", ""declaring object variables [VB]""]"]
+helpviewer_keywords: ["object variables [VB], declaring", "declaring object variables [VB]"]
 ms.assetid: 2fa77dde-1fb2-439a-80d4-3e9787649fad
 caps.latest.revision: 11
 author: dotnet-bot

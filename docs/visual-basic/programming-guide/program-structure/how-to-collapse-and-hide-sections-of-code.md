@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic, code collapsing"", ""Visual Basic, code hiding"", ""Visual Basic code, collapsing and hiding""]"]
+helpviewer_keywords: ["Visual Basic, code collapsing", "Visual Basic, code hiding", "Visual Basic code, collapsing and hiding"]
 ms.assetid: b770e8f5-e07d-491a-ab4b-a977980f9ba2
 caps.latest.revision: 11
 author: dotnet-bot

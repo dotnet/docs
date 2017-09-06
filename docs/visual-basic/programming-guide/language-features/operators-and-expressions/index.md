@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operators [VB], operands"", ""operators [VB]"", ""operands, definition"", ""Visual Basic code, operators"", ""Visual Basic code, expressions"", ""operands [VB]"", ""expressions [VB]""]"]
+helpviewer_keywords: ["operators [VB], operands", "operators [VB]", "operands, definition", "Visual Basic code, operators", "Visual Basic code, expressions", "operands [VB]", "expressions [VB]"]
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
 caps.latest.revision: 18
 author: dotnet-bot

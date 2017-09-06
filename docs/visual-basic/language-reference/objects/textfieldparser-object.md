@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""TextFieldParser object [VB]"", ""TextFieldParser class, aboutTextFieldParser class"", ""TextFieldParser class [VB]""]"]
+helpviewer_keywords: ["TextFieldParser object [VB]", "TextFieldParser class, aboutTextFieldParser class", "TextFieldParser class [VB]"]
 ms.assetid: d44bd2b0-7dfc-410b-a48b-534c1e97460b
 caps.latest.revision: 19
 author: dotnet-bot

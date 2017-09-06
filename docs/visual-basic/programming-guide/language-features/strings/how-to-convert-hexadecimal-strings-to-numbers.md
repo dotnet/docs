@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""numbers [VB], hexadecimals"", ""hexadecimals [VB], decimals"", ""examples [VB], string conversion"", ""decimals [VB], hexadecimals"", ""string conversion [VB],  hexadecimal to numbers [VB]""]"]
+helpviewer_keywords: ["numbers [VB], hexadecimals", "hexadecimals [VB], decimals", "examples [VB], string conversion", "decimals [VB], hexadecimals", "string conversion [VB],  hexadecimal to numbers [VB]"]
 ms.assetid: 76675807-eadb-4c08-bd50-e6c6ff4b8ced
 caps.latest.revision: 9
 author: dotnet-bot

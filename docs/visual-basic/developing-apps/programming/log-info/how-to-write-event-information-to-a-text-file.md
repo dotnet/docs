@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""event logs [Visual Studio], writing event information"", ""text files [VB], writing event information to a text file"", ""events [VB], writing event information to a text file""]"]
+helpviewer_keywords: ["event logs [Visual Studio], writing event information", "text files [VB], writing event information to a text file", "events [VB], writing event information to a text file"]
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
 caps.latest.revision: 20
 author: dotnet-bot

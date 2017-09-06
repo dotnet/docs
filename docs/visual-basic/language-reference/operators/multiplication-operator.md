@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.*"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""arithmetic operators [VB], multiplication"", ""operators [VB], multiplication"", ""* operator [VB]"", ""multiplication operator [VB], syntax"", ""math operators [VB]""]"]
+helpviewer_keywords: ["arithmetic operators [VB], multiplication", "operators [VB], multiplication", "* operator [VB]", "multiplication operator [VB], syntax", "math operators [VB]"]
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
 caps.latest.revision: 19
 author: dotnet-bot

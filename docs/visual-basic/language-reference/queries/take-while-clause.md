@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryTakeWhile"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [VB], Take While"", ""Take While clause [VB]"", ""Take While statement [VB]""]"]
+helpviewer_keywords: ["queries [VB], Take While", "Take While clause [VB]", "Take While statement [VB]"]
 ms.assetid: db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11
 caps.latest.revision: 14
 author: dotnet-bot

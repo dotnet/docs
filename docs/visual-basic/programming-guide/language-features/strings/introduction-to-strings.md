@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""strings [VB], about strings""]"]
+helpviewer_keywords: ["strings [VB], about strings"]
 ms.assetid: c1b0f6b4-9717-426b-a3db-957e57a60764
 caps.latest.revision: 13
 author: dotnet-bot

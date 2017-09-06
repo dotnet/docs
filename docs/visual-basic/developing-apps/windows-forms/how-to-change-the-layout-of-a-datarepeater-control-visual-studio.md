@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater [VB], changing layout style"", ""DataRepeater [VB], changing orientation""]"]
+helpviewer_keywords: ["DataRepeater [VB], changing layout style", "DataRepeater [VB], changing orientation"]
 ms.assetid: 33aa8fd5-ac63-4bd0-ba13-8c2ab17e7824
 caps.latest.revision: 10
 author: dotnet-bot

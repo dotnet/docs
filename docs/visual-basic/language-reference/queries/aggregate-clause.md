@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryAggregateIn", "vb.QueryAggregate", "vb.QueryAggregateInto"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Aggregate clause [VB]"", ""Aggregate statement [VB]"", ""queries [VB], Aggregate""]"]
+helpviewer_keywords: ["Aggregate clause [VB]", "Aggregate statement [VB]", "queries [VB], Aggregate"]
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
 caps.latest.revision: 25
 author: dotnet-bot

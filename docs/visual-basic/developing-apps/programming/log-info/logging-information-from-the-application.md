@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Log object [VB]"", ""My.Log object"", ""applications [VB], logging information from"", ""logging [VB]"", ""My.Application.Log object"", ""examples [VB], logging application information""]"]
+helpviewer_keywords: ["Log object [VB]", "My.Log object", "applications [VB], logging information from", "logging [VB]", "My.Application.Log object", "examples [VB], logging application information"]
 ms.assetid: 8bf4f047-22d6-48d6-aec5-93b98ad5b8e8
 caps.latest.revision: 12
 author: dotnet-bot

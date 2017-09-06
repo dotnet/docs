@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.option"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Option keyword [VB]""]"]
+helpviewer_keywords: ["Option keyword [VB]"]
 ms.assetid: 6b2f41c4-2403-43b6-8a14-94a3775e5b47
 caps.latest.revision: 12
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""data types [VB], declaring"", ""typing [VB]"", ""data types [VB]"", ""Visual Basic code, data types"", ""data types [VB], improving speed with""]"]
+helpviewer_keywords: ["data types [VB], declaring", "typing [VB]", "data types [VB]", "Visual Basic code, data types", "data types [VB], improving speed with"]
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
 caps.latest.revision: 28
 author: dotnet-bot

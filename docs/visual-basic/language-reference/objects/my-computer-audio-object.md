@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Audio object [VB]"", ""My.Computer.Audio object""]"]
+helpviewer_keywords: ["Audio object [VB]", "My.Computer.Audio object"]
 ms.assetid: ab5bdd04-b0ce-48b2-91c5-6404ceca31d0
 caps.latest.revision: 25
 author: dotnet-bot

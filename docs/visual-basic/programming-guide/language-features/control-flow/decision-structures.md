@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""statements [VB], control flow"", ""If statement [VB], decision structures"", ""If statement [VB], If...Then...Else"", ""control flow [VB], decision structures"", ""decision structures [VB]"", ""conditional statements [VB], decision structures""]"]
+helpviewer_keywords: ["statements [VB], control flow", "If statement [VB], decision structures", "If statement [VB], If...Then...Else", "control flow [VB], decision structures", "decision structures [VB]", "conditional statements [VB], decision structures"]
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
 caps.latest.revision: 29
 author: dotnet-bot

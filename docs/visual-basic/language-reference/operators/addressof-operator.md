@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["AddressOf", "vb.AddressOf"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""AddressOf operator [VB]"", ""addresses, passing to API procedures""]"]
+helpviewer_keywords: ["AddressOf operator [VB]", "addresses, passing to API procedures"]
 ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
 caps.latest.revision: 11
 author: dotnet-bot

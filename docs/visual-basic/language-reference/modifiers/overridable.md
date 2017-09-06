@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["Overridable", "vb.Overridable"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""elements [VB], concrete"", ""properties [VB], redefining"", ""overriding [VB], Overridable keyword"", ""elements [VB], virtual"", ""virtual elements [VB]"", ""procedures [VB], overriding"", ""concrete elements [VB]"", ""procedures [VB], redefining"", ""Overridable keyword [VB]"", ""properties [VB], overriding""]"]
+helpviewer_keywords: ["elements [VB], concrete", "properties [VB], redefining", "overriding [VB], Overridable keyword", "elements [VB], virtual", "virtual elements [VB]", "procedures [VB], overriding", "concrete elements [VB]", "procedures [VB], redefining", "Overridable keyword [VB]", "properties [VB], overriding"]
 ms.assetid: 612581e7-8a4c-4a5d-beff-3402fffa6f35
 caps.latest.revision: 17
 author: dotnet-bot

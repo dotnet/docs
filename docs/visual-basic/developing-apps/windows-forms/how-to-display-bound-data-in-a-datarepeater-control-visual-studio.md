@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater [VB], data-binding"", ""DataRepeater [VB], displaying bound controls""]"]
+helpviewer_keywords: ["DataRepeater [VB], data-binding", "DataRepeater [VB], displaying bound controls"]
 ms.assetid: 56a15326-1334-4275-af4e-075cad79e6f7
 caps.latest.revision: 11
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""shadowing, vs. overriding"", ""overriding [VB], vs. shadowing""]"]
+helpviewer_keywords: ["shadowing, vs. overriding", "overriding [VB], vs. shadowing"]
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
 caps.latest.revision: 24
 author: dotnet-bot

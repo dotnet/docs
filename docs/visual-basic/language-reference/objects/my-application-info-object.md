@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Application.Info object"", ""My.Application.AssemblyInfo object""]"]
+helpviewer_keywords: ["My.Application.Info object", "My.Application.AssemblyInfo object"]
 ms.assetid: 2f4782ed-3da2-4d88-b341-0c6f480fb7bb
 caps.latest.revision: 22
 author: dotnet-bot

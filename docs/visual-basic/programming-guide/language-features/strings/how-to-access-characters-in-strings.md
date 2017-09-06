@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""strings [VB], accessing characters"", ""characters [VB], accessing in strings""]"]
+helpviewer_keywords: ["strings [VB], accessing characters", "characters [VB], accessing in strings"]
 ms.assetid: 02c5206c-ffab-494d-b648-3b2ea358dc34
 caps.latest.revision: 8
 author: dotnet-bot

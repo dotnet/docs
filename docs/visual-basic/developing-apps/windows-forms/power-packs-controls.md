@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""controls [VB], Power Packs"", ""components [VB], Power Packs"", ""Power Packs [VB]""]"]
+helpviewer_keywords: ["controls [VB], Power Packs", "components [VB], Power Packs", "Power Packs [VB]"]
 ms.assetid: 5e53a2d2-f200-4357-8b20-430f8f4860a4
 caps.latest.revision: 10
 author: dotnet-bot

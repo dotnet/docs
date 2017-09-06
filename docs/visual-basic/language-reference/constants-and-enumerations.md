@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""enumerations [VB]"", ""constants [VB]"", ""constants [VB], list of""]"]
+helpviewer_keywords: ["enumerations [VB]", "constants [VB]", "constants [VB], list of"]
 ms.assetid: 309c0ad5-83e4-4f96-99ea-83cd95107417
 caps.latest.revision: 18
 author: dotnet-bot

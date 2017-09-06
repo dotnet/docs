@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""pattern matching [VB]"", ""folders, finding""]"]
+helpviewer_keywords: ["pattern matching [VB]", "folders, finding"]
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
 caps.latest.revision: 16
 author: dotnet-bot

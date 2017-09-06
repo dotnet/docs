@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Or"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Or operator [VB]"", ""operators [VB], bitwise"", ""inclusive Or operator [VB]"", ""bitwise operators [VB], OR operator"", ""Or keyword [VB]"", ""operators [VB], inclusive or"", ""operators [VB], disjunction"", ""bitwise comparison [VB]"", ""logical disjunction [VB]"", ""disjunction operator [VB]"" ]"]
+helpviewer_keywords: ["Or operator [VB]", "operators [VB], bitwise", "inclusive Or operator [VB]", "bitwise operators [VB], OR operator", "Or keyword [VB]", "operators [VB], inclusive or", "operators [VB], disjunction", "bitwise comparison [VB]", "logical disjunction [VB]", "disjunction operator [VB]"" ]"]
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
 caps.latest.revision: 12
 author: dotnet-bot

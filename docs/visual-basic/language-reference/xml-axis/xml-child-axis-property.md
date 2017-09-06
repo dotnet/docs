@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlPropertyChildAxis"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, accessing XML"", ""XML axis [VB], child"", ""child axis property [VB]"", ""XML child axis property [VB]"", ""XML [VB], accessing""]"]
+helpviewer_keywords: ["Visual Basic code, accessing XML", "XML axis [VB], child", "child axis property [VB]", "XML child axis property [VB]", "XML [VB], accessing"]
 ms.assetid: 89a59d00-985e-4f5c-b59f-29b47bad11cb
 caps.latest.revision: 18
 author: dotnet-bot

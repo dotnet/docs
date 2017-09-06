@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Char data type [VB], converting"", ""Decimal data type [VB], conversions"", ""data types [VB], troubleshooting"", ""literals, default types"", ""type characters [VB], literal"", ""Mod operator [VB], in floating-point operations"", ""troubleshooting Visual Basic, data types"", ""troubleshooting data types [VB]"", ""floating-point numbers [VB], precision"", ""Boolean data type [VB], converting"", ""literal types [VB]"", ""literal type characters [VB]"", ""floating-point numbers [VB], imprecision"", ""String data type [VB], converting"", ""floating-point numbers [VB], comparison"", ""floating-point numbers [VB]""]"]
+helpviewer_keywords: ["Char data type [VB], converting", "Decimal data type [VB], conversions", "data types [VB], troubleshooting", "literals, default types", "type characters [VB], literal", "Mod operator [VB], in floating-point operations", "troubleshooting Visual Basic, data types", "troubleshooting data types [VB]", "floating-point numbers [VB], precision", "Boolean data type [VB], converting", "literal types [VB]", "literal type characters [VB]", "floating-point numbers [VB], imprecision", "String data type [VB], converting", "floating-point numbers [VB], comparison", "floating-point numbers [VB]"]
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
 caps.latest.revision: 29
 author: dotnet-bot

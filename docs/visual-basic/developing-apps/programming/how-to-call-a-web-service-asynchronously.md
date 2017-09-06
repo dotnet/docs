@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""asynchronous calls [VB]"", ""Web services, accessing""]"]
+helpviewer_keywords: ["asynchronous calls [VB]", "Web services, accessing"]
 ms.assetid: ff8046f4-f1f2-4d8b-90b7-95e3f7415418
 caps.latest.revision: 14
 author: dotnet-bot

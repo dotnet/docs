@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operators [VB], logical"", ""operators [VB], string concatenation"", ""operators [VB], bitwise"", ""operators [VB], bit-shift"", ""operators [VB], arithmetic"", ""operators [VB], string comparison"", ""operators [VB], concatenation"", ""Visual Basic code, operators [VB]"", ""operators [VB], comparison"", ""operators [VB], short-circuiting logical""]"]
+helpviewer_keywords: ["operators [VB], logical", "operators [VB], string concatenation", "operators [VB], bitwise", "operators [VB], bit-shift", "operators [VB], arithmetic", "operators [VB], string comparison", "operators [VB], concatenation", "Visual Basic code, operators [VB]", "operators [VB], comparison", "operators [VB], short-circuiting logical"]
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
 caps.latest.revision: 9
 author: dotnet-bot

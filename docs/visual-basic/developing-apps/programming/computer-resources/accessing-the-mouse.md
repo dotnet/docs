@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Computer.Mouse object, tasks"", ""mouse, accessing [VB]""]"]
+helpviewer_keywords: ["My.Computer.Mouse object, tasks", "mouse, accessing [VB]"]
 ms.assetid: 6d31a3d2-d860-459d-9d13-3aa192d62ba2
 caps.latest.revision: 9
 author: dotnet-bot

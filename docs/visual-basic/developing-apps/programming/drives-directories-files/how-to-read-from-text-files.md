@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""extended characters [VB], reading"", ""reading text files [VB]"", ""reading data, text files"", ""examples [VB], reading text files"", ""text files [VB], reading""]"]
+helpviewer_keywords: ["extended characters [VB], reading", "reading text files [VB]", "reading data, text files", "examples [VB], reading text files", "text files [VB], reading"]
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
 caps.latest.revision: 27
 author: dotnet-bot

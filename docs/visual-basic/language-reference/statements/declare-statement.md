@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Declare", "vb.Lib", "vb.Any"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Lib keyword [VB]"", ""declaring procedures [VB], Declare statement"", ""functions [VB], function procedures"", ""declarations [VB], procedures"", ""procedures [VB], declaration"", ""procedures [VB], external"", ""Alias keyword [VB]"", ""external references [VB], Visual Basic"", ""DLLs, declaring procedures"", ""Declare statement [VB]"", ""declarations [VB], external"", ""Visual Basic code, Function procedures"", ""As keyword [VB], in Declare statement"", ""resources [VB], declaring"", ""Public keyword [VB], Declare statement"", ""platform invoke [VB], Visual Basic external references"", ""Sub procedures [VB], declarations"", ""APIs, declaring API functions"", ""Visual Basic code, Sub procedures"", ""Function procedures [VB], declaring""]"]
+helpviewer_keywords: ["Lib keyword [VB]", "declaring procedures [VB], Declare statement", "functions [VB], function procedures", "declarations [VB], procedures", "procedures [VB], declaration", "procedures [VB], external", "Alias keyword [VB]", "external references [VB], Visual Basic", "DLLs, declaring procedures", "Declare statement [VB]", "declarations [VB], external", "Visual Basic code, Function procedures", "As keyword [VB], in Declare statement", "resources [VB], declaring", "Public keyword [VB], Declare statement", "platform invoke [VB], Visual Basic external references", "Sub procedures [VB], declarations", "APIs, declaring API functions", "Visual Basic code, Sub procedures", "Function procedures [VB], declaring"]
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
 caps.latest.revision: 30
 author: dotnet-bot

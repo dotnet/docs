@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""XML comments [VB]"", ""XML documentation, creating""]"]
+helpviewer_keywords: ["XML comments [VB]", "XML documentation, creating"]
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
 caps.latest.revision: 17
 author: dotnet-bot

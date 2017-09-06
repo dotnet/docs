@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Computer.Mouse object""]"]
+helpviewer_keywords: ["My.Computer.Mouse object"]
 ms.assetid: da473357-2120-47dd-bd42-c63d695157eb
 caps.latest.revision: 19
 author: dotnet-bot

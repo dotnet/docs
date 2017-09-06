@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Constructor"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""destructors [VB], object lifetime"", ""Sub Finalize destructor [VB]"", ""objects [VB], destroying"", ""lifetime [VB], objects"", ""Sub New constructor, object lifetime"", ""Finalize method, object lifetime"", ""objects [VB], creating"", ""Class_Terminate"", ""Dispose method, object lifetime"", ""Class_Initialize"", ""object creation, object lifetime"", ""parameterized constructors [VB]"", ""objects [VB], lifetime"", ""objects [VB], garbage collection"", ""constructors [VB], object lifetime"", ""Sub Dispose destructor [VB]"", ""garbage collection, Visual Basic""]"]
+helpviewer_keywords: ["destructors [VB], object lifetime", "Sub Finalize destructor [VB]", "objects [VB], destroying", "lifetime [VB], objects", "Sub New constructor, object lifetime", "Finalize method, object lifetime", "objects [VB], creating", "Class_Terminate", "Dispose method, object lifetime", "Class_Initialize", "object creation, object lifetime", "parameterized constructors [VB]", "objects [VB], lifetime", "objects [VB], garbage collection", "constructors [VB], object lifetime", "Sub Dispose destructor [VB]", "garbage collection, Visual Basic"]
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
 caps.latest.revision: 22
 author: dotnet-bot

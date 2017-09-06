@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Friend"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Friend keyword [VB]"", ""Friend access modifier [VB]"", ""Friend keyword [VB], syntax"", ""Protected Friend keyword combination [VB]"", ""Friend keyword [VB], and Protected""]"]
+helpviewer_keywords: ["Friend keyword [VB]", "Friend access modifier [VB]", "Friend keyword [VB], syntax", "Protected Friend keyword combination [VB]", "Friend keyword [VB], and Protected"]
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
 caps.latest.revision: 25
 author: dotnet-bot

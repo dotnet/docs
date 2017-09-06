@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""event logs, troubleshooting"", ""troubleshooting Visual Basic, event logs"", ""troubleshooting event logs [VB]""]"]
+helpviewer_keywords: ["event logs, troubleshooting", "troubleshooting Visual Basic, event logs", "troubleshooting event logs [VB]"]
 ms.assetid: ac6eb760-3d5d-461e-aedd-40599ee22e49
 caps.latest.revision: 11
 author: dotnet-bot

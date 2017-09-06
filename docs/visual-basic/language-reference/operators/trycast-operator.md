@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.trycast", "trycast"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""TryCast keyword [VB]""]"]
+helpviewer_keywords: ["TryCast keyword [VB]"]
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
 caps.latest.revision: 17
 author: dotnet-bot

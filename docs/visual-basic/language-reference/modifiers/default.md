@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Default"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""defaults [VB]""  properties [VB]"", ""properties [VB], default"", ""default properties, in Visual Basic"", ""Default keyword [VB]"", ""default properties [VB]"" ]"]
+helpviewer_keywords: ["defaults [VB]""  properties [VB]", "properties [VB], default", "default properties, in Visual Basic", "Default keyword [VB]", "default properties [VB]"" ]"]
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
 caps.latest.revision: 15
 author: dotnet-bot

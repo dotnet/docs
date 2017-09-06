@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.>>"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operator>> [VB]"", "">> operator [VB]"", ""bit shift operators [VB]"", ""operator >> [VB]"", ""right shift operators [VB]""]"]
+helpviewer_keywords: ["operator>> [VB]", ">> operator [VB]", "bit shift operators [VB]", "operator >> [VB]", "right shift operators [VB]"]
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
 caps.latest.revision: 14
 author: dotnet-bot

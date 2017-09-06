@@ -9,7 +9,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 f1_keywords: ["vb.Short"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""numbers [VB], whole"", ""whole numbers [VB]"", ""integral data types [VB]"", ""integer numbers [VB]"", ""numbers [VB], integer"", ""integers [VB], data types"", ""integers [VB], types"", ""data types [VB], integral"", ""S literal type character [VB]"", ""Short data type [VB]"", ""literal type characters [VB], S""]"]
+helpviewer_keywords: ["numbers [VB], whole", "whole numbers [VB]", "integral data types [VB]", "integer numbers [VB]", "numbers [VB], integer", "integers [VB], data types", "integers [VB], types", "data types [VB], integral", "S literal type character [VB]", "Short data type [VB]", "literal type characters [VB], S"]
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 author: "rpetrusha"
 ms.author: "ronpet"

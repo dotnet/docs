@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Computer.FileSystem.SpecialDirectories object"", ""SpecialDirectories object [VB]""]"]
+helpviewer_keywords: ["My.Computer.FileSystem.SpecialDirectories object", "SpecialDirectories object [VB]"]
 ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
 caps.latest.revision: 17
 author: dotnet-bot

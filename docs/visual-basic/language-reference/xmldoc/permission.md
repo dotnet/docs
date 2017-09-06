@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""<permission> XML tag"", ""permission XML tag [VB]""]"]
+helpviewer_keywords: ["<permission> XML tag", "permission XML tag [VB]"]
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
 caps.latest.revision: 9
 author: dotnet-bot

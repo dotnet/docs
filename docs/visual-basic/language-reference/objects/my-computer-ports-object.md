@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Computer.Ports object"", ""Ports object [VB]""]"]
+helpviewer_keywords: ["My.Computer.Ports object", "Ports object [VB]"]
 ms.assetid: 244ede4e-25b7-445b-9fd6-163550cce193
 caps.latest.revision: 22
 author: dotnet-bot

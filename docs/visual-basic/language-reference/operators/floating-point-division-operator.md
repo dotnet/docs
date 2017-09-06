@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb./"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""division operator [VB], floating point"", ""floating-point numbers [VB], division operator"", ""slash (/) operator [VB]"", ""zero, division by zero"", ""operators [VB], arithmetic"", ""arithmetic operators [VB], division"", ""division, by zero"", ""operators [VB], division"", ""division operator [VB], syntax"", ""/ operator [VB]"", ""math operators [VB]""]"]
+helpviewer_keywords: ["division operator [VB], floating point", "floating-point numbers [VB], division operator", "slash (/) operator [VB]", "zero, division by zero", "operators [VB], arithmetic", "arithmetic operators [VB], division", "division, by zero", "operators [VB], division", "division operator [VB], syntax", "/ operator [VB]", "math operators [VB]"]
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
 caps.latest.revision: 18
 author: dotnet-bot

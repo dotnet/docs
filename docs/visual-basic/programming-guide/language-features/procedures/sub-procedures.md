@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Sub procedures [VB], about Sub procedures"", ""statement blocks [VB]"", ""Sub procedures [VB], calling"", ""procedures [VB], calling"", ""Sub procedures [VB], syntax"", ""Sub procedures [VB]"", ""procedures [VB], Sub"", ""syntax [VB], Sub procedures""]"]
+helpviewer_keywords: ["Sub procedures [VB], about Sub procedures", "statement blocks [VB]", "Sub procedures [VB], calling", "procedures [VB], calling", "Sub procedures [VB], syntax", "Sub procedures [VB]", "procedures [VB], Sub", "syntax [VB], Sub procedures"]
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
 caps.latest.revision: 21
 author: dotnet-bot

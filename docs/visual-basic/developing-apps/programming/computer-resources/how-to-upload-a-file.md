@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""networks [VB], uploading files"", ""files [VB], uploading"", ""uploading files [VB]"", ""UploadFile method [VB]"", ""My.Computer.Network.UploadFile method""]"]
+helpviewer_keywords: ["networks [VB], uploading files", "files [VB], uploading", "uploading files [VB]", "UploadFile method [VB]", "My.Computer.Network.UploadFile method"]
 ms.assetid: a8b37924-c523-4fd3-b5ca-cb0074df29cd
 caps.latest.revision: 22
 author: dotnet-bot

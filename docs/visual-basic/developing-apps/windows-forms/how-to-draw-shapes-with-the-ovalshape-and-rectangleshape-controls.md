@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""OvalShape control [VB]"", ""shapes, drawing"", ""RectangleShape control [VB]""]"]
+helpviewer_keywords: ["OvalShape control [VB]", "shapes, drawing", "RectangleShape control [VB]"]
 ms.assetid: 0275b4c6-7a13-46c8-90f3-61db308c6b5d
 caps.latest.revision: 15
 author: dotnet-bot

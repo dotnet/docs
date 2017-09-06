@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operator precedence [VB]"", ""operators [VB]"", ""expressions [VB], numeric"", ""calculations, numeric expressions"", ""precedence, of operators [VB]"", ""Visual Basic code, operators"", ""Visual Basic code, expressions"", ""numeric expressions [VB]""]"]
+helpviewer_keywords: ["operator precedence [VB]", "operators [VB]", "expressions [VB], numeric", "calculations, numeric expressions", "precedence, of operators [VB]", "Visual Basic code, operators", "Visual Basic code, expressions", "numeric expressions [VB]"]
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
 caps.latest.revision: 13
 author: dotnet-bot

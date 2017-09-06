@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Log object, output location"", ""output, application log location"", ""My.Application.Log object, outpout location"", ""event logs, determining output location"", ""application event logs, output location"", ""applications [VB], output location""]"]
+helpviewer_keywords: ["My.Log object, output location", "output, application log location", "My.Application.Log object, outpout location", "event logs, determining output location", "application event logs, output location", "applications [VB], output location"]
 ms.assetid: 5b70143a-7741-45f2-ae1d-03324a3a4189
 caps.latest.revision: 24
 author: dotnet-bot

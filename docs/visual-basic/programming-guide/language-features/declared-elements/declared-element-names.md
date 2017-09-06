@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""declared elements [VB], case sensitivity"", ""names [VB], Visual Basic rules"", ""naming conventions [VB]"", ""element names [VB]"", ""declared elements [VB], identifiers"", ""declarations [VB], elements"", ""declared elements [VB], valid names"", ""[] escape characters [VB]"", ""names [VB], elements"", ""declaration statements [VB], declared elements"", ""declaring elements [VB]"", ""identifiers, declared elements"", ""case sensitivity, declared element names"", ""escape characters [VB]"", ""names [VB], declared elements"", ""declared elements [VB], about declared elements"", ""escaped names [VB]"", ""declared elements [VB], names"", ""names [VB], naming conventions"", ""identifiers, elements""]"]
+helpviewer_keywords: ["declared elements [VB], case sensitivity", "names [VB], Visual Basic rules", "naming conventions [VB]", "element names [VB]", "declared elements [VB], identifiers", "declarations [VB], elements", "declared elements [VB], valid names", "[] escape characters [VB]", "names [VB], elements", "declaration statements [VB], declared elements", "declaring elements [VB]", "identifiers, declared elements", "case sensitivity, declared element names", "escape characters [VB]", "names [VB], declared elements", "declared elements [VB], about declared elements", "escaped names [VB]", "declared elements [VB], names", "names [VB], naming conventions", "identifiers, elements"]
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
 caps.latest.revision: 27
 author: dotnet-bot

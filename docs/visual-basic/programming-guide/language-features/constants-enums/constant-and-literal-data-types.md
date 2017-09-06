@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""declaring constants [VB], literal data types"", ""data types [VB], declaring"", ""constants [VB], declaring"", ""explicit declarations [VB]"", ""literals, coercing data type"", ""declarations [VB], data types""]"]
+helpviewer_keywords: ["declaring constants [VB], literal data types", "data types [VB], declaring", "constants [VB], declaring", "explicit declarations [VB]", "literals, coercing data type", "declarations [VB], data types"]
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
 caps.latest.revision: 19
 author: dotnet-bot

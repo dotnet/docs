@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.widening"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""conversions [VB], type"", ""type conversion [VB]"", ""conversions [VB], data type"", ""Widening keyword [VB]"", ""data type conversion [VB]""]"]
+helpviewer_keywords: ["conversions [VB], type", "type conversion [VB]", "conversions [VB], data type", "Widening keyword [VB]", "data type conversion [VB]"]
 ms.assetid: 646ae263-94d3-40a2-b0cc-64f619292f56
 caps.latest.revision: 15
 author: dotnet-bot

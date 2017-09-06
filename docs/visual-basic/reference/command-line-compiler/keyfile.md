@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/keyfile compiler option [VB]"", ""keyfile compiler option [VB]"", ""-keyfile compiler option [VB]""]"]
+helpviewer_keywords: ["/keyfile compiler option [VB]", "keyfile compiler option [VB]", "-keyfile compiler option [VB]"]
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
 caps.latest.revision: 17
 author: dotnet-bot

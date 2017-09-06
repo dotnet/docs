@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""LINQ to XML [VB], accessing XML"", ""Visual Basic code, XML"", ""accessing XML [VB], axis properties"", ""XML [VB], axis properties"", ""XML [VB], accessing""]"]
+helpviewer_keywords: ["LINQ to XML [VB], accessing XML", "Visual Basic code, XML", "accessing XML [VB], axis properties", "XML [VB], axis properties", "XML [VB], accessing"]
 ms.assetid: c47f88b2-3cbc-4bb1-b4b9-be60f71ffc6a
 caps.latest.revision: 18
 author: dotnet-bot

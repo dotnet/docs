@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Object data type [VB], data types"", ""data types [VB], choosing""]"]
+helpviewer_keywords: ["Object data type [VB], data types", "data types [VB], choosing"]
 ms.assetid: 64c71a12-9057-4dbf-baca-7379c4aada69
 caps.latest.revision: 22
 author: dotnet-bot

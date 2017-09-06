@@ -53,7 +53,7 @@ Public Class Program
   
     Shared Sub Main()  
         Dim schemas As New XmlSchemaSet()  
-        schemas.Add("", "CustomersOrders.xsd")  
+        schemas.Add(","CustomersOrders.xsd")  
   
         Console.Write("Attempting to validate, ")  
         Dim custOrdDoc As XDocument = XDocument.Load("CustomersOrders.xml")  

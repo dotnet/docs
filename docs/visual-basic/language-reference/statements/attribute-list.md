@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""attribute list [VB]"", ""attributes [VB], applying""]"]
+helpviewer_keywords: ["attribute list [VB]", "attributes [VB], applying"]
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
 caps.latest.revision: 18
 author: dotnet-bot

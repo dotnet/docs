@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""troubleshooting events [VB]"", ""inherited events [VB]"", ""troubleshooting Visual Basic, event handlers"", ""event handling, troubleshooting"", ""event handlers [VB], troubleshooting""]"]
+helpviewer_keywords: ["troubleshooting events [VB]", "inherited events [VB]", "troubleshooting Visual Basic, event handlers", "event handling, troubleshooting", "event handlers [VB], troubleshooting"]
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
 caps.latest.revision: 11
 author: dotnet-bot

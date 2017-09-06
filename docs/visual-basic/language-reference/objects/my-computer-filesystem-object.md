@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""FileSystem module [VB]"", ""FileClose function [VB]"", ""FileGet function [VB]"", ""My.Computer.FileSystem object"", ""FilePutObject function [VB]"", ""FilePut function [VB]"", ""FileGetObject function [VB]"", ""Seek function [VB]"", ""FileOpen function [VB]""]"]
+helpviewer_keywords: ["FileSystem module [VB]", "FileClose function [VB]", "FileGet function [VB]", "My.Computer.FileSystem object", "FilePutObject function [VB]", "FilePut function [VB]", "FileGetObject function [VB]", "Seek function [VB]", "FileOpen function [VB]"]
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
 caps.latest.revision: 24
 author: dotnet-bot

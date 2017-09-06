@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.PartialMethod", "PartialMethod"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""custom logic into code [VB]"", ""partial methods [VB]"", ""partial, methods [VB]"", ""methods [VB], partial methods"", ""inserting custom logic into code [VB]""]"]
+helpviewer_keywords: ["custom logic into code [VB]", "partial methods [VB]", "partial, methods [VB]", "methods [VB], partial methods", "inserting custom logic into code [VB]"]
 ms.assetid: 74b3368b-b348-44a0-a326-7d7dc646f4e9
 caps.latest.revision: 16
 author: dotnet-bot

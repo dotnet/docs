@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Call"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], Call statement"", ""Call statement [VB]"", ""procedures [VB], calling""]"]
+helpviewer_keywords: ["procedures [VB], Call statement", "Call statement [VB]", "procedures [VB], calling"]
 ms.assetid: e5b31571-6867-406f-b8e7-a3f9aae4723a
 caps.latest.revision: 13
 author: dotnet-bot

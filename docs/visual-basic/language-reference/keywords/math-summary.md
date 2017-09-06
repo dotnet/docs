@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""math functions, summary"", ""mathematical functions [VB]"", ""math functions, Visual Basic"", ""math functions [VB]""]"]
+helpviewer_keywords: ["math functions, summary", "mathematical functions [VB]", "math functions, Visual Basic", "math functions [VB]"]
 ms.assetid: 6abf2dd7-92d2-488a-8e2b-819be9b30c3f
 caps.latest.revision: 12
 author: dotnet-bot

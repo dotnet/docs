@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""module scope [VB]"", ""scope [VB], levels"", ""module level [VB]"", ""procedures [VB], scope"", ""declared elements [VB], scope"", ""namespaces [VB], scope"", ""scope [VB], declared elements"", ""scope [VB], about scope"", ""levels of scope [VB]"", ""block scope [VB]"", ""scope [VB], Visual Basic"", ""procedure scope [VB]""]"]
+helpviewer_keywords: ["module scope [VB]", "scope [VB], levels", "module level [VB]", "procedures [VB], scope", "declared elements [VB], scope", "namespaces [VB], scope", "scope [VB], declared elements", "scope [VB], about scope", "levels of scope [VB]", "block scope [VB]", "scope [VB], Visual Basic", "procedure scope [VB]"]
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
 caps.latest.revision: 17
 author: dotnet-bot

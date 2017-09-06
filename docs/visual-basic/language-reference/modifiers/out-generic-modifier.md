@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.VarianceOut"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Out keyword [VB]"", ""covariance [VB], Out keyword [VB]""]"]
+helpviewer_keywords: ["Out keyword [VB]", "covariance [VB], Out keyword [VB]"]
 ms.assetid: c4418369-1518-4a46-9a1e-054c61038eca
 caps.latest.revision: 14
 author: dotnet-bot

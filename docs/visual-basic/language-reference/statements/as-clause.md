@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.as"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""constraints, Visual Basic generic types"", ""As keyword [VB], statement syntax"", ""As keyword [VB]""]"]
+helpviewer_keywords: ["constraints, Visual Basic generic types", "As keyword [VB], statement syntax", "As keyword [VB]"]
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
 caps.latest.revision: 19
 author: dotnet-bot

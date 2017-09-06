@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["File.Copy"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Computer.FileSystem.CopyFile method, copying files [VB]"", ""files [VB], copying"", ""CopyFile method, copying files in Visual Basic"", ""I/O [VB], copying files""]"]
+helpviewer_keywords: ["My.Computer.FileSystem.CopyFile method, copying files [VB]", "files [VB], copying", "CopyFile method, copying files in Visual Basic", "I/O [VB], copying files"]
 ms.assetid: b2fdda86-e666-42c2-9706-9527e9fa68ff
 caps.latest.revision: 21
 author: dotnet-bot

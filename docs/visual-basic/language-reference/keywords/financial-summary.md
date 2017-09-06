@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""financial functions [VB]"", ""payment [VB]""]"]
+helpviewer_keywords: ["financial functions [VB]", "payment [VB]"]
 ms.assetid: 474f973e-7103-42b7-aa4d-367c935e07e1
 caps.latest.revision: 10
 author: dotnet-bot

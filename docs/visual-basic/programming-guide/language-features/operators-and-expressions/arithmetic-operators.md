@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""type safety [VB]"", ""operators [VB], bitwise"", ""operators [VB], bit-shift"", ""bitwise operators [VB]"", ""bit-shift operators [VB]"", ""zero, division by zero"", ""operators [VB], arithmetic"", ""division, by zero"", ""Visual Basic code, operators [VB]"", ""arithmetic operators [VB], about arithmetic operators [VB]""]"]
+helpviewer_keywords: ["type safety [VB]", "operators [VB], bitwise", "operators [VB], bit-shift", "bitwise operators [VB]", "bit-shift operators [VB]", "zero, division by zero", "operators [VB], arithmetic", "division, by zero", "Visual Basic code, operators [VB]", "arithmetic operators [VB], about arithmetic operators [VB]"]
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
 caps.latest.revision: 20
 author: dotnet-bot

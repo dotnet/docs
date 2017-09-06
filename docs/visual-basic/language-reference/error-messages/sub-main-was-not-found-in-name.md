@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vbc30420", "bc30420"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""BC30420"", ""Sub Main error message [VB]""]"]
+helpviewer_keywords: ["BC30420", "Sub Main error message [VB]"]
 ms.assetid: a006d57d-4dd3-46a7-9026-ca9a31470da7
 caps.latest.revision: 19
 author: dotnet-bot

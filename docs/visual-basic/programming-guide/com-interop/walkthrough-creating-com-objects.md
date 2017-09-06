@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""COM interop [VB], creating COM objects"", ""COM objects [VB], creating"", ""COM interop [VB], walkthroughs"", ""object creation [VB], COM objects"", ""COM objects, walkthroughs""]"]
+helpviewer_keywords: ["COM interop [VB], creating COM objects", "COM objects [VB], creating", "COM interop [VB], walkthroughs", "object creation [VB], COM objects", "COM objects, walkthroughs"]
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
 caps.latest.revision: 30
 author: dotnet-bot

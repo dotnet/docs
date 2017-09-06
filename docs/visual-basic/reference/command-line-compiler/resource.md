@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/resource compiler option [VB]"", ""-resource compiler option [VB]"", ""/res compiler option [VB]"", ""res compiler option [VB]"", ""-res compiler option [VB]"", ""resource compiler option [VB]""]"]
+helpviewer_keywords: ["/resource compiler option [VB]", "-resource compiler option [VB]", "/res compiler option [VB]", "res compiler option [VB]", "-res compiler option [VB]", "resource compiler option [VB]"]
 ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
 caps.latest.revision: 19
 author: dotnet-bot

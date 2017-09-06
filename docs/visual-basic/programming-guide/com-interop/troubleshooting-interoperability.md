@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""interop [VB], deploying assemblies"", ""assemblies [VB]"", ""interop [VB], installing assemblies that share components"", ""COM objects, troubleshooting"", ""interop [VB], sharing components"", ""troubleshooting interoperability [VB]"", ""interoperability [VB], troubleshooting"", ""COM interop [VB], troubleshooting"", ""assemblies [VB], deploying"", ""troubleshooting Visual Basic, interoperability"", ""interop assemblies [VB]"", ""interoperability [VB], sharing components"", ""shared components [VB], using with assemblies""]"]
+helpviewer_keywords: ["interop [VB], deploying assemblies", "assemblies [VB]", "interop [VB], installing assemblies that share components", "COM objects, troubleshooting", "interop [VB], sharing components", "troubleshooting interoperability [VB]", "interoperability [VB], troubleshooting", "COM interop [VB], troubleshooting", "assemblies [VB], deploying", "troubleshooting Visual Basic, interoperability", "interop assemblies [VB]", "interoperability [VB], sharing components", "shared components [VB], using with assemblies"]
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
 caps.latest.revision: 21
 author: dotnet-bot

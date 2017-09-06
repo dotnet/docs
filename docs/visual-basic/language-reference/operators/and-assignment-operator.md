@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.&="]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operator &="", ""assignment statements [VB], compound"", ""statements [VB], compound assignment"", ""&= operator [VB]"", ""compound assignment statements [VB]"" ]"]
+helpviewer_keywords: ["operator &=", "assignment statements [VB], compound", "statements [VB], compound assignment", "&= operator [VB]", "compound assignment statements [VB]"" ]"]
 ms.assetid: 0cf262fc-1a05-419a-a503-60013f111c8a
 caps.latest.revision: 15
 author: dotnet-bot

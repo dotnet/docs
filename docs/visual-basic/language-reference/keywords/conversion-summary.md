@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""data type conversion [VB],  keywords"", ""reference, type conversions"", ""conversions [VB], Visual Basic"", ""type conversion [VB],  keywords""]"]
+helpviewer_keywords: ["data type conversion [VB],  keywords", "reference, type conversions", "conversions [VB], Visual Basic", "type conversion [VB],  keywords"]
 ms.assetid: ae2c79a7-2d62-4fbe-8585-14360d11f987
 caps.latest.revision: 13
 author: dotnet-bot

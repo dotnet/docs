@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""limits [VB]"", ""limitations, Visual Basic"", ""limitations [VB]"", ""limits, Visual Basic code"", ""Visual Basic code, limitations""]"]
+helpviewer_keywords: ["limits [VB]", "limitations, Visual Basic", "limitations [VB]", "limits, Visual Basic code", "Visual Basic code, limitations"]
 ms.assetid: cf1646b7-5d24-48c6-9616-bda8a4849d91
 caps.latest.revision: 14
 author: dotnet-bot

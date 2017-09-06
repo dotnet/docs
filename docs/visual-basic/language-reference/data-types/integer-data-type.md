@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Integer", "Integer"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""numbers [VB], whole"", ""enumerated values [VB]"", ""whole numbers [VB]"", ""integral data types [VB]"", ""integer numbers [VB]"", ""numbers [VB], integer"", ""integers [VB], data types"", ""literal type characters [VB], I"", ""integers [VB], types"", ""data types [VB], integral"", ""% identifier type character"", ""data types [VB], assigning"", ""identifier type characters [VB], %"", ""I literal type character [VB]"", ""Integer data type [VB]""]"]
+helpviewer_keywords: ["numbers [VB], whole", "enumerated values [VB]", "whole numbers [VB]", "integral data types [VB]", "integer numbers [VB]", "numbers [VB], integer", "integers [VB], data types", "literal type characters [VB], I", "integers [VB], types", "data types [VB], integral", "% identifier type character", "data types [VB], assigning", "identifier type characters [VB], %", "I literal type character [VB]", "Integer data type [VB]"]
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 author: "rpetrusha"
 ms.author: "ronpet"

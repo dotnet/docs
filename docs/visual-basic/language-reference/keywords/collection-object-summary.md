@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Collection object, summary""]"]
+helpviewer_keywords: ["Collection object, summary"]
 ms.assetid: c4586369-d817-4453-9cb0-1a272fc66737
 caps.latest.revision: 13
 author: dotnet-bot

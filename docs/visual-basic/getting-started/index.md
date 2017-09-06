@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""getting started, Visual Basic"", ""Visual Basic, getting started""]"]
+helpviewer_keywords: ["getting started, Visual Basic", "Visual Basic, getting started"]
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
 caps.latest.revision: 36
 author: dotnet-bot

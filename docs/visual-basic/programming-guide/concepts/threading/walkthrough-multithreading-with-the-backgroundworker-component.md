@@ -45,8 +45,8 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
     |------------|--------------|-------------|  
     |First button|`Name`, `Text`|Start, Start|  
     |Second button|`Name`, `Text`|Cancel, Cancel|  
-    |First text box|`Name`, `Text`|SourceFile, ""|  
-    |Second text box|`Name`, `Text`|CompareString, ""|  
+    |First text box|`Name`, `Text`|SourceFile, "|  
+    |Second text box|`Name`, `Text`|CompareString, "|  
     |Third text box|`Name`, `Text`|WordsCounted, "0"|  
     |Fourth text box|`Name`, `Text`|LinesCounted, "0"|  
   

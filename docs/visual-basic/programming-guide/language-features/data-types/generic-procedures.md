@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""generic methods, type inference"", ""generics [VB], type inference"", ""procedures [VB], generic"", ""generic procedures [VB]"", ""type inference, generics"", ""generic methods [VB]"", ""type inference [VB]"", ""generics [VB], procedures"", ""generic procedures [VB], type inference""]"]
+helpviewer_keywords: ["generic methods, type inference", "generics [VB], type inference", "procedures [VB], generic", "generic procedures [VB]", "type inference, generics", "generic methods [VB]", "type inference [VB]", "generics [VB], procedures", "generic procedures [VB], type inference"]
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
 caps.latest.revision: 11
 author: dotnet-bot

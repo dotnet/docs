@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-helpviewer_keywords: ["[""highentropyva compiler option (Visual Basic)"", ""/highentropyva compiler option (Visual Basic)""]"]
+helpviewer_keywords: ["highentropyva compiler option (Visual Basic)", "/highentropyva compiler option (Visual Basic)"]
 ms.assetid: ff25f20a-6ca2-467b-9e52-5cf439f5028e
 caps.latest.revision: 12
 author: dotnet-bot

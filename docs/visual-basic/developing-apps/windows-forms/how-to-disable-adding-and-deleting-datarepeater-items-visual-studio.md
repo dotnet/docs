@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater [VB], disabling delete"", ""DataRepeater [VB], disabling add""]"]
+helpviewer_keywords: ["DataRepeater [VB], disabling delete", "DataRepeater [VB], disabling add"]
 ms.assetid: 298d8f60-ddfe-4361-ab66-cf76d0df5220
 caps.latest.revision: 9
 author: dotnet-bot

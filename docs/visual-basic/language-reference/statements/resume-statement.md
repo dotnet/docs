@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Resume", "vb.ResumeNext"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Next statement [VB], Resume"", ""Resume Next statement [VB]"", ""execution [VB], resuming"", ""run-time errors [VB], resuming after"", ""Resume statement [VB], syntax"", ""errors [VB], resuming after"", ""Error statement [VB], and Resume statement"", ""execution [VB]"", ""Resume statement [VB]""]"]
+helpviewer_keywords: ["Next statement [VB], Resume", "Resume Next statement [VB]", "execution [VB], resuming", "run-time errors [VB], resuming after", "Resume statement [VB], syntax", "errors [VB], resuming after", "Error statement [VB], and Resume statement", "execution [VB]", "Resume statement [VB]"]
 ms.assetid: e24d058b-1a5c-4274-acb9-7d295d3ea537
 caps.latest.revision: 16
 author: dotnet-bot

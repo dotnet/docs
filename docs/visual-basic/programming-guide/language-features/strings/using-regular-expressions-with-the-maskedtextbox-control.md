@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""strings [VB], regular expressions"", ""strings [VB], masked edit""]"]
+helpviewer_keywords: ["strings [VB], regular expressions", "strings [VB], masked edit"]
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
 caps.latest.revision: 10
 author: dotnet-bot

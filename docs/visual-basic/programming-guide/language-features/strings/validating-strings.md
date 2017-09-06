@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic, strings"", ""Visual Basic code, strings"", ""strings [VB], validating"", ""validation, strings""]"]
+helpviewer_keywords: ["Visual Basic, strings", "Visual Basic code, strings", "strings [VB], validating", "validation, strings"]
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
 caps.latest.revision: 15
 author: dotnet-bot

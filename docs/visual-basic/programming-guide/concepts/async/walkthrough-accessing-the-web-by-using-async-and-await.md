@@ -229,7 +229,7 @@ You can write asynchronous programs more easily and intuitively by using async/a
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
         ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        Dim displayURL = url.Replace("http://", ")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
     ```  
@@ -586,7 +586,7 @@ Class MainWindow
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
         ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        Dim displayURL = url.Replace("http://", ")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
   
@@ -679,7 +679,7 @@ Class MainWindow
         ' Lucida Console or Global Monospace.  
         Dim bytes = content.Length  
         ' Strip off the "http://".  
-        Dim displayURL = url.Replace("http://", "")  
+        Dim displayURL = url.Replace("http://", ")  
         resultsTextBox.Text &= String.Format(vbCrLf & "{0,-58} {1,8}", displayURL, bytes)  
     End Sub  
   

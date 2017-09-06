@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""reading files [VB], text"", ""text, reading from files"", ""reading text from files [VB]"", ""files [VB], reading""]"]
+helpviewer_keywords: ["reading files [VB], text", "text, reading from files", "reading text from files [VB]", "files [VB], reading"]
 ms.assetid: 384033c6-18f9-4d59-9610-36371226558f
 caps.latest.revision: 18
 author: dotnet-bot

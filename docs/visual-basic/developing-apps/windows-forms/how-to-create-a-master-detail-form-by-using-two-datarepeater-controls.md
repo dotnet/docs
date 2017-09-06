@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater [VB], master/detail tables""]"]
+helpviewer_keywords: ["DataRepeater [VB], master/detail tables"]
 ms.assetid: eec43ae3-05d8-45a1-8d41-3803c6359dbe
 caps.latest.revision: 7
 author: dotnet-bot

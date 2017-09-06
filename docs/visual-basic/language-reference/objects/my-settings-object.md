@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["My.MySettingsProperty.Settings", "My.Settings"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Settings object""]"]
+helpviewer_keywords: ["My.Settings object"]
 ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
 caps.latest.revision: 16
 author: dotnet-bot

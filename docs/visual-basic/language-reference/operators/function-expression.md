@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Function expression [VB]"", ""functions [VB], function expressions"", ""lambda expressions [VB], function expression""]"]
+helpviewer_keywords: ["Function expression [VB]", "functions [VB], function expressions", "lambda expressions [VB], function expression"]
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
 caps.latest.revision: 18
 author: dotnet-bot

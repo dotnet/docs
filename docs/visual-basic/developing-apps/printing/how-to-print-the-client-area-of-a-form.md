@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""client area [VB], printing""]"]
+helpviewer_keywords: ["client area [VB], printing"]
 ms.assetid: c06c9c0e-bc07-48cd-9596-e29a2ff96236
 caps.latest.revision: 15
 author: dotnet-bot

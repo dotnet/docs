@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""downloading Internet resources [VB], files"", ""downloading files [VB]"", ""remote computers, downloading from"", ""files [VB], downloading"", ""files [VB], transferring""]"]
+helpviewer_keywords: ["downloading Internet resources [VB], files", "downloading files [VB]", "remote computers, downloading from", "files [VB], downloading", "files [VB], transferring"]
 ms.assetid: ac479f81-c0e2-4b99-af73-217f446b73da
 caps.latest.revision: 22
 author: dotnet-bot

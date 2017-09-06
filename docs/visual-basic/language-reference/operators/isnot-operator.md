@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.isnot"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""IsNot operator [VB]"" ]"]
+helpviewer_keywords: ["IsNot operator [VB]"" ]"]
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
 caps.latest.revision: 13
 author: dotnet-bot

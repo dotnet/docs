@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, interfaces"", ""interfaces, Visual Basic"", ""interfaces [VB]"", ""interfaces [VB]""]"]
+helpviewer_keywords: ["Visual Basic code, interfaces", "interfaces, Visual Basic", "interfaces [VB]", "interfaces [VB]"]
 ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
 caps.latest.revision: 11
 author: dotnet-bot

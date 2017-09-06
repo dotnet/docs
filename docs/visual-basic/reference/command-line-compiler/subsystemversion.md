@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-helpviewer_keywords: ["[""/subsystemversion compiler option [VB]"", ""-subsystemversion compiler option [VB]"", ""subsystemversion compiler option [VB]""]"]
+helpviewer_keywords: ["/subsystemversion compiler option [VB]", "-subsystemversion compiler option [VB]", "subsystemversion compiler option [VB]"]
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
 caps.latest.revision: 9
 author: dotnet-bot

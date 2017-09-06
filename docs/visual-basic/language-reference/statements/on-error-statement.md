@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.OnError"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, control flow"", ""Resume Next statement [VB]"", ""errors [VB], trapping"", ""error handling, On Error statement"", ""Next statement [VB], On Error"", ""control flow [VB], branching"", ""Error keyword [VB]"", ""execution [VB], conditional"", ""Resume statement [VB], and On Error statement"", ""Error statement [VB], and On Error statement"", ""GoTo statement [VB], and On Error statement"", ""branching [VB], on error"", ""conditional statements [VB], On Error"", ""On Error statement [VB], syntax"", ""On keyword [VB]"", ""run-time errors [VB], handling"", ""On Error statement [VB]""]"]
+helpviewer_keywords: ["Visual Basic code, control flow", "Resume Next statement [VB]", "errors [VB], trapping", "error handling, On Error statement", "Next statement [VB], On Error", "control flow [VB], branching", "Error keyword [VB]", "execution [VB], conditional", "Resume statement [VB], and On Error statement", "Error statement [VB], and On Error statement", "GoTo statement [VB], and On Error statement", "branching [VB], on error", "conditional statements [VB], On Error", "On Error statement [VB], syntax", "On keyword [VB]", "run-time errors [VB], handling", "On Error statement [VB]"]
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
 caps.latest.revision: 22
 author: dotnet-bot

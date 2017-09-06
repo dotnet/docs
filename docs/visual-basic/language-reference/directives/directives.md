@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""directives, Visual Basic compiler"", ""Visual Basic code, directives"", ""directives [VB]""]"]
+helpviewer_keywords: ["directives, Visual Basic compiler", "Visual Basic code, directives", "directives [VB]"]
 ms.assetid: 20d5fe65-490a-4c23-88c2-ee4f490ed762
 caps.latest.revision: 9
 author: dotnet-bot

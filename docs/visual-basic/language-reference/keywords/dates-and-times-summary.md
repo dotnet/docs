@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""dates, Visual Basic data types"", ""dates, run-time library members"", ""dates, Visual Basic keywords"", ""times, Visual Basic"", ""Data data type [VB], Visual Basic"", ""time, Visual Basic keywords and run-time library members"", ""time data types [VB]""]"]
+helpviewer_keywords: ["dates, Visual Basic data types", "dates, run-time library members", "dates, Visual Basic keywords", "times, Visual Basic", "Data data type [VB], Visual Basic", "time, Visual Basic keywords and run-time library members", "time data types [VB]"]
 ms.assetid: 914d0563-b53c-492c-ac62-d833ce805f2f
 caps.latest.revision: 12
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""<exception> XML tag"", ""exception XML tag [VB]""]"]
+helpviewer_keywords: ["<exception> XML tag", "exception XML tag [VB]"]
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
 caps.latest.revision: 9
 author: dotnet-bot

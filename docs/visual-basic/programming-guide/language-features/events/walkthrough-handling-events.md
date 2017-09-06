@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""event handling [VB], walkthroughs"", ""walkthroughs [VB], event handling"", ""variables [VB], WithEvents"", ""events [VB], walkthroughs"", ""WithEvents keyword [VB], walkthroughs"", ""event handlers [VB], walkthroughs""]"]
+helpviewer_keywords: ["event handling [VB], walkthroughs", "walkthroughs [VB], event handling", "variables [VB], WithEvents", "events [VB], walkthroughs", "WithEvents keyword [VB], walkthroughs", "event handlers [VB], walkthroughs"]
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
 caps.latest.revision: 18
 author: dotnet-bot

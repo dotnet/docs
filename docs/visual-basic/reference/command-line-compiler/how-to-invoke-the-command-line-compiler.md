@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""command-line arguments"", ""vbc.exe"", ""Visual Basic compiler, starting"", ""command line, arguments""]"]
+helpviewer_keywords: ["command-line arguments", "vbc.exe", "Visual Basic compiler, starting", "command line, arguments"]
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
 caps.latest.revision: 28
 author: dotnet-bot

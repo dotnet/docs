@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""XML literals [VB], about XML literals"", ""declaring XML literals [VB]"", ""LINQ to XML [VB], XML literals"", ""literals [VB], XML""]"]
+helpviewer_keywords: ["XML literals [VB], about XML literals", "declaring XML literals [VB]", "LINQ to XML [VB], XML literals", "literals [VB], XML"]
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
 caps.latest.revision: 27
 author: dotnet-bot

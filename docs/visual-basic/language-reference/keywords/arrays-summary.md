@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""arrays [VB]""]"]
+helpviewer_keywords: ["arrays [VB]"]
 ms.assetid: 167f77d4-7cb2-4a31-9dc9-0fd0b26fda7e
 caps.latest.revision: 13
 author: dotnet-bot

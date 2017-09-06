@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""attribute axis property [VB]"", ""XML attribute axis property [VB]"", ""XML axis [VB], attribute"", ""XML [VB], accessing""]"]
+helpviewer_keywords: ["attribute axis property [VB]", "XML attribute axis property [VB]", "XML axis [VB], attribute", "XML [VB], accessing"]
 ms.assetid: 66cd704f-990c-4f8d-9b49-2b6aa76ca8fd
 caps.latest.revision: 18
 author: dotnet-bot

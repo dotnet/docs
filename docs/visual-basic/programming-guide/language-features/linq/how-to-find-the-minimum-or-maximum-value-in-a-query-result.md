@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""max operator [LINQ in Visual Basic]"", ""aggregate operator [LINQ in Visual Basic]"", ""aggregate queries [VB]"", ""minimum values [LINQ in Visual Basic]"", ""min operator [LINQ in Visual Basic]"", ""queries [LINQ in Visual Basic], minimum and maximum values"", ""Max property [VB]"", ""maximum values [LINQ in Visual Basic]"", ""Aggregate clause [VB]"", ""queries [LINQ in Visual Basic], aggregate queries"", ""queries [LINQ in Visual Basic], how-to topics""]"]
+helpviewer_keywords: ["max operator [LINQ in Visual Basic]", "aggregate operator [LINQ in Visual Basic]", "aggregate queries [VB]", "minimum values [LINQ in Visual Basic]", "min operator [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], minimum and maximum values", "Max property [VB]", "maximum values [LINQ in Visual Basic]", "Aggregate clause [VB]", "queries [LINQ in Visual Basic], aggregate queries", "queries [LINQ in Visual Basic], how-to topics"]
 ms.assetid: 238b763b-7dcd-4b14-8050-b65500a4f71c
 caps.latest.revision: 6
 author: dotnet-bot

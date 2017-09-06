@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/win32manifest compiler option [VB]"", ""win32manifest compiler option [VB]"", ""-win32manifest compiler option [VB]""]"]
+helpviewer_keywords: ["/win32manifest compiler option [VB]", "win32manifest compiler option [VB]", "-win32manifest compiler option [VB]"]
 ms.assetid: 9e3191b4-90db-41c8-966a-28036fd20005
 caps.latest.revision: 9
 author: dotnet-bot

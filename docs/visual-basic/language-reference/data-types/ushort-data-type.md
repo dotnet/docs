@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ushort"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""numbers [VB], whole"", ""literal type characters [VB], US"", ""whole numbers [VB]"", ""integral data types [VB]"", ""integer numbers [VB]"", ""numbers [VB], integer"", ""integers [VB], data types"", ""integers [VB], types"", ""data types [VB], integral"", ""UShort data type [VB]"", ""US literal type characters [VB]""]"]
+helpviewer_keywords: ["numbers [VB], whole", "literal type characters [VB], US", "whole numbers [VB]", "integral data types [VB]", "integer numbers [VB]", "numbers [VB], integer", "integers [VB], data types", "integers [VB], types", "data types [VB], integral", "UShort data type [VB]", "US literal type characters [VB]"]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
 caps.latest.revision: 16
 author: "rpetrusha"

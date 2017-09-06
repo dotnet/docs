@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""platform compiler option [VB]"", ""/platform compiler option [VB]"", ""-platform compiler option [VB]""]"]
+helpviewer_keywords: ["platform compiler option [VB]", "/platform compiler option [VB]", "-platform compiler option [VB]"]
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
 caps.latest.revision: 34
 author: dotnet-bot

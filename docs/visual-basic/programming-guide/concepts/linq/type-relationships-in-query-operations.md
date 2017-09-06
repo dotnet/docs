@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""variable relationships [LINQ in Visual Basic]"", ""type information inferred [LINQ in Visual Basic]"", ""type relationships [LINQ in Visual Basic]"", ""queries [LINQ in Visual Basic], type relationships"", ""data sources [LINQ in Visual Basic], type relationships"", ""LINQ [VB], type relationships"", ""inferring type information [LINQ in Visual Basic]"", ""relationships [LINQ in Visual Basic]""]"]
+helpviewer_keywords: ["variable relationships [LINQ in Visual Basic]", "type information inferred [LINQ in Visual Basic]", "type relationships [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], type relationships", "data sources [LINQ in Visual Basic], type relationships", "LINQ [VB], type relationships", "inferring type information [LINQ in Visual Basic]", "relationships [LINQ in Visual Basic]"]
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
 caps.latest.revision: 34
 author: dotnet-bot

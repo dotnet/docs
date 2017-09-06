@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater [VB], item headers"", ""DataRepeater [VB], selection indicators""]"]
+helpviewer_keywords: ["DataRepeater [VB], item headers", "DataRepeater [VB], selection indicators"]
 ms.assetid: 37321447-0ffa-43e1-bdc9-0480e392b90f
 caps.latest.revision: 7
 author: dotnet-bot

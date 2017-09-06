@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["NotInheritable", "vb.NotInheritable"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""classes [VB], final"", ""NotInheritable keyword [VB]"", ""classes [VB], sealed"", ""elements [VB], sealed"", ""sealed elements [VB]"", ""inheritance [VB], NotInheritable keyword"", ""final classes [VB]"", ""sealed classes [VB]"", ""classes [VB], not inheritable""]"]
+helpviewer_keywords: ["classes [VB], final", "NotInheritable keyword [VB]", "classes [VB], sealed", "elements [VB], sealed", "sealed elements [VB]", "inheritance [VB], NotInheritable keyword", "final classes [VB]", "sealed classes [VB]", "classes [VB], not inheritable"]
 ms.assetid: 5c4da7c9-9562-4653-a947-1972e992f9f9
 caps.latest.revision: 9
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""members [VB],  accessing"", ""object variables [VB], accessing members""]"]
+helpviewer_keywords: ["members [VB],  accessing", "object variables [VB], accessing members"]
 ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
 caps.latest.revision: 20
 author: dotnet-bot

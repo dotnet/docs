@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ForEach", "vb.ForEachNext", "vb.Each", "ForEachNext"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""infinite loops [VB]"", ""Next statement [VB], For Each...Next"", ""endless loops [VB]"", ""loop structures [VB], For Each...Next"", ""loops [VB], endless"", ""Each keyword [VB]"", ""instructions, repeating"", ""For Each statement [VB]"", ""collections [VB], instruction repetition"", ""loops [VB], infinite"", ""For Each...Next statements [VB]"", ""For keyword [VB], For Each...Next statements"", ""Exit statement [VB], For Each...Next statements"", ""iteration [VB]""]"]
+helpviewer_keywords: ["infinite loops [VB]", "Next statement [VB], For Each...Next", "endless loops [VB]", "loop structures [VB], For Each...Next", "loops [VB], endless", "Each keyword [VB]", "instructions, repeating", "For Each statement [VB]", "collections [VB], instruction repetition", "loops [VB], infinite", "For Each...Next statements [VB]", "For keyword [VB], For Each...Next statements", "Exit statement [VB], For Each...Next statements", "iteration [VB]"]
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
 caps.latest.revision: 56
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], defining"", ""Visual Basic code, procedures"", ""operators [VB], defining"", ""procedures [VB], operator"", ""Visual Basic code, operators"", ""syntax [VB], Operator procedures"", ""operators [VB], overloading"", ""operator procedures [VB], about operator procedures"", ""return values [VB], Operator procedures"", ""operator overloading [VB]"" ]"]
+helpviewer_keywords: ["procedures [VB], defining", "Visual Basic code, procedures", "operators [VB], defining", "procedures [VB], operator", "Visual Basic code, operators", "syntax [VB], Operator procedures", "operators [VB], overloading", "operator procedures [VB], about operator procedures", "return values [VB], Operator procedures", "operator overloading [VB]"" ]"]
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
 caps.latest.revision: 15
 author: dotnet-bot

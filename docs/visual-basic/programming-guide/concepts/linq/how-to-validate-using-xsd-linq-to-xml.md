@@ -49,7 +49,7 @@ Sub Main()
             </xsd:element>  
         </xsd:schema>  
     Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-    schemas.Add("", xsdMarkup.CreateReader)  
+    schemas.Add(",xsdMarkup.CreateReader)  
   
     Dim doc1 As XDocument = _  
         <?xml version='1.0'?>  
@@ -106,7 +106,7 @@ End Sub
   
 Sub Main()  
     Dim schemas As XmlSchemaSet = New XmlSchemaSet()  
-    schemas.Add("", "CustomersOrders.xsd")  
+    schemas.Add(","CustomersOrders.xsd")  
   
     Console.WriteLine("Attempting to validate")  
     Dim custOrdDoc As XDocument = XDocument.Load("CustomersOrders.xml")  

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryGroupJoinIn", "vb.QueryGroupJoinOn", "vb.QueryGroupJoin", "vb.QueryGroupJoinInto"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Group Join clause [VB]"", ""Group Join statement [VB]"", ""queries [VB], Group Join""]"]
+helpviewer_keywords: ["Group Join clause [VB]", "Group Join statement [VB]", "queries [VB], Group Join"]
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
 caps.latest.revision: 24
 author: dotnet-bot

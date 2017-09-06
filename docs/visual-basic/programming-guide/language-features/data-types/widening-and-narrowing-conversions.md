@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""widening conversions [VB]"", ""narrowing conversions [VB]"", ""conversions [VB], type"", ""data types [VB], changing"", ""variables [VB], changing data type"", ""conversions [VB], exceptions during conversion"", ""type conversion [VB],  exceptions during conversion"", ""conversions [VB], data type"", ""conversions [VB], narrowing"", ""type conversion [VB],  narrowing"", ""data type conversion [VB],  widening"", ""data type conversion [VB],  narrowing"", ""changing data types [VB]"", ""type conversion [VB],  widening"", ""data type conversion [VB],  exceptions during conversion"", ""conversions [VB], widening""]"]
+helpviewer_keywords: ["widening conversions [VB]", "narrowing conversions [VB]", "conversions [VB], type", "data types [VB], changing", "variables [VB], changing data type", "conversions [VB], exceptions during conversion", "type conversion [VB],  exceptions during conversion", "conversions [VB], data type", "conversions [VB], narrowing", "type conversion [VB],  narrowing", "data type conversion [VB],  widening", "data type conversion [VB],  narrowing", "changing data types [VB]", "type conversion [VB],  widening", "data type conversion [VB],  exceptions during conversion", "conversions [VB], widening"]
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
 caps.latest.revision: 27
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""variables [VB], read-only"", ""variables [VB], constant value""]"]
+helpviewer_keywords: ["variables [VB], read-only", "variables [VB], constant value"]
 ms.assetid: 86b59266-25df-4635-ae15-9b59c411d036
 caps.latest.revision: 15
 author: dotnet-bot

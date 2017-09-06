@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlLiteralCdata"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""CDATA literal [VB]"", ""XML CDATA literal [VB]"", ""XML literals [VB], CDATA""]"]
+helpviewer_keywords: ["CDATA literal [VB]", "XML CDATA literal [VB]", "XML literals [VB], CDATA"]
 ms.assetid: 9eafb6a4-dd9d-4866-85e8-0654c65abc44
 caps.latest.revision: 16
 author: dotnet-bot

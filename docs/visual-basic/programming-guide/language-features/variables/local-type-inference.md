@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["local type inference", "vb.TypeInfer"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Option Infer statement [VB]"", ""local type inference [VB]"", ""implicitly-typed local variables [VB]"", ""variables [VB], type inference"", ""inference [VB]"", ""type inference [VB]""]"]
+helpviewer_keywords: ["Option Infer statement [VB]", "local type inference [VB]", "implicitly-typed local variables [VB]", "variables [VB], type inference", "inference [VB]", "type inference [VB]"]
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
 caps.latest.revision: 43
 author: dotnet-bot

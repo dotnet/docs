@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""conversions [VB], conversion functions"", ""conversion functions [VB]"", ""string conversion [VB],  conversion functions"", ""data types [VB], converting"", ""declaring functions, conversion functions"", ""data types [VB], assigning"", ""numbers [VB], converting"", ""functions [VB], conversion"", ""dates, converting""]"]
+helpviewer_keywords: ["conversions [VB], conversion functions", "conversion functions [VB]", "string conversion [VB],  conversion functions", "data types [VB], converting", "declaring functions, conversion functions", "data types [VB], assigning", "numbers [VB], converting", "functions [VB], conversion", "dates, converting"]
 ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 caps.latest.revision: 10
 author: dotnet-bot

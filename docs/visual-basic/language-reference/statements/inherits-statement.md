@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Inherits", "Inherits"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Inherits statement [VB]"", ""Inherits statement [VB], syntax""]"]
+helpviewer_keywords: ["Inherits statement [VB]", "Inherits statement [VB], syntax"]
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
 caps.latest.revision: 16
 author: dotnet-bot

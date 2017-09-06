@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["My.Resources", "My.Resources.MyResources.ResourceManager", "My.Resources.MyResources.Culture"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Resources object""]"]
+helpviewer_keywords: ["My.Resources object"]
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
 caps.latest.revision: 22
 author: dotnet-bot

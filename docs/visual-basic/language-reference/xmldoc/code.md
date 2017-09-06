@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""code XML tag [VB]"", ""<code> XML tag""]"]
+helpviewer_keywords: ["code XML tag [VB]", "<code> XML tag"]
 ms.assetid: 925e5342-be05-45f2-bf66-7398bbd6710e
 caps.latest.revision: 10
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Negate", "vb.-"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operator [VB]"", ""operators [VB], subtraction"", ""operators [VB], difference"", ""negation operator [VB]"", ""operators [VB], arithmetic"", ""subtraction operator [VB], syntax"", ""arithmetic operators [VB], subtraction"", ""difference operator [VB]"", ""math operators [VB]"", ""operators [VB], negation"", ""minus operator [VB]""]"]
+helpviewer_keywords: ["operator [VB]", "operators [VB], subtraction", "operators [VB], difference", "negation operator [VB]", "operators [VB], arithmetic", "subtraction operator [VB], syntax", "arithmetic operators [VB], subtraction", "difference operator [VB]", "math operators [VB]", "operators [VB], negation", "minus operator [VB]"]
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
 caps.latest.revision: 14
 author: dotnet-bot

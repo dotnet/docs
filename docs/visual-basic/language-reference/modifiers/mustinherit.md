@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["MustInherit", "vb.MustInherit"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""classes [VB], abstract"", ""MustInherit classes [VB], MustInherit keyword"", ""abstract classes [VB], MustInherit class"", ""MustInherit keyword [VB]""]"]
+helpviewer_keywords: ["classes [VB], abstract", "MustInherit classes [VB], MustInherit keyword", "abstract classes [VB], MustInherit class", "MustInherit keyword [VB]"]
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
 caps.latest.revision: 15
 author: dotnet-bot

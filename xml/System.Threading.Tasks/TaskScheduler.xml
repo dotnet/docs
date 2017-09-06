@@ -178,7 +178,7 @@
 ## Remarks  
  When not called from within a task, <xref:System.Threading.Tasks.TaskScheduler.Current%2A> will return the <xref:System.Threading.Tasks.TaskScheduler.Default%2A> scheduler.  
   
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see <xref:System.Threading.Tasks.TaskScheduler>.  
   
  ]]></format>
         </remarks>

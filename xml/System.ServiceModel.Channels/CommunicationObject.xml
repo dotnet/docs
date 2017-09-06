@@ -621,7 +621,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.Channels.CommunicationObject.BeginClose%2A> method calls <xref:System.ServiceModel.Channels.CommunicationObject.OnBeginClose%2A> if the communication object is initially in the <xref:System.ServiceModel.CommunicationState.Opened> state.  
   
- To insert processing after a communication object transitions to a closing state due to the invocation of a synchronous <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A> operation, use the <xref:System.ServiceModel.Channels.CommunicationObject.OnClose%28System.TimeSpan%29>method.  
+ To insert processing after a communication object transitions to a closing state due to the invocation of a synchronous <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A> operation, use the <xref:System.ServiceModel.Channels.CommunicationObject.OnClose%28System.TimeSpan%29> method.  
   
  ]]></format>
         </remarks>
@@ -979,7 +979,7 @@
   
  In the  
   
- <xref:System.ServiceModel.CommunicationState.Opened> state, the <xref:System.ServiceModel.Channels.CommunicationObject>is usable (for example, messages can be received), but it is no longer configurable.  
+ <xref:System.ServiceModel.CommunicationState.Opened> state, the <xref:System.ServiceModel.Channels.CommunicationObject> is usable (for example, messages can be received), but it is no longer configurable.  
   
  There is also an asynchronous version of the open method that is initiated by calling <xref:System.ServiceModel.Channels.CommunicationObject.OnBeginOpen%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> and completed by calling <xref:System.ServiceModel.Channels.CommunicationObject.EndOpen%2A>.  
   

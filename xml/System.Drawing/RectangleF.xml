@@ -841,7 +841,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.op_Implicit%2A>, <xref:System.Drawing.RectangleF.%23ctor%2A>and <xref:System.Drawing.RectangleF.op_Equality%2A> members. This example is designed for use with a Windows Form. Paste this code into a form and call the `ConvertRectangleToRectangleF` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.op_Implicit%2A>, <xref:System.Drawing.RectangleF.%23ctor%2A> and <xref:System.Drawing.RectangleF.op_Equality%2A> members. This example is designed for use with a Windows Form. Paste this code into a form and call the `ConvertRectangleToRectangleF` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-cpp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#6)]
  [!code-csharp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#6)]

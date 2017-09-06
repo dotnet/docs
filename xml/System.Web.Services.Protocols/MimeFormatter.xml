@@ -203,7 +203,7 @@
 ## Remarks  
  An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method.  
   
- The static <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializers%2A>method causes the invocation of the <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> method belonging to the derived class specified by the `type` parameter.  
+ The static <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializers%2A> method causes the invocation of the <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> method belonging to the derived class specified by the `type` parameter.  
   
  ]]></format>
         </remarks>

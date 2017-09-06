@@ -162,7 +162,7 @@
   
  The thread safety mode of a <xref:System.Lazy%601> instance that is initialized with this constructor is <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>. The thread safety mode describes the behavior when multiple threads try to initialize the <xref:System.Lazy%601> instance.  
   
- A <xref:System.Lazy%601> instance that is created with this constructor does not cache exceptions. For more information, see the <xref:System.Lazy%601>class or the <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> enumeration.  
+ A <xref:System.Lazy%601> instance that is created with this constructor does not cache exceptions. For more information, see the <xref:System.Lazy%601> class or the <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> enumeration.  
   
    
   
@@ -226,7 +226,7 @@
 ## Remarks  
  The thread safety mode of a <xref:System.Lazy%601> instance that is initialized with this constructor is <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> if `isThreadSafe` is `true`; otherwise, the mode is <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>. The thread safety mode describes the behavior when multiple threads try to initialize the <xref:System.Lazy%601> instance. To specify the <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> mode, use the <xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%2CSystem.Threading.LazyThreadSafetyMode%29> or <xref:System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29> constructor.  
   
- A <xref:System.Lazy%601> instance that is created with this constructor does not cache exceptions. For more information, see the<xref:System.Lazy%601> class or the <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> enumeration.  
+ A <xref:System.Lazy%601> instance that is created with this constructor does not cache exceptions. For more information, see the <xref:System.Lazy%601> class or the <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> enumeration.  
   
    
   
@@ -455,7 +455,7 @@
    
   
 ## Examples  
- The following example demonstrates the use of this constructor to provide lazy initialization with exception caching, in a scenario with a single thread. It also demonstrates the use of the  <xref:System.Lazy%601.%23ctor%2A>constructor (specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> for `mode`). To switch to that constructor, just change which constructor is commented out.  
+ The following example demonstrates the use of this constructor to provide lazy initialization with exception caching, in a scenario with a single thread. It also demonstrates the use of the  <xref:System.Lazy%601.%23ctor%2A> constructor (specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> for `mode`). To switch to that constructor, just change which constructor is commented out.  
   
 > [!NOTE]
 >  For code that demonstrates how to use this constructor in multithreaded scenarios (specifying `true` for `isThreadSafe`), see the example for the <xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%29> constructor.  
@@ -613,7 +613,7 @@
 ## Remarks  
  When lazy initialization occurs for a <xref:System.Lazy%601> instance, it may result in either a value being created or an exception being thrown. If an exception is thrown, subsequent behavior of the <xref:System.Lazy%601> instance depends on whether exception caching is in effect. If the <xref:System.Lazy%601> instance was created by using a constructor that does not specify an initialization function, then exception caching is not in effect. A subsequent attempt to initialize the <xref:System.Lazy%601> might succeed, and after successful initialization the <xref:System.Lazy%601.IsValueCreated%2A> property returns `true`. If the <xref:System.Lazy%601> instance was created with an initialization function (specified by the `valueFactory` parameter of the <xref:System.Lazy%601> constructor), then exception caching is controlled by the thread safety mode.  
   
--   If the mode is <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> or <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>, there is no second chance to initialize the <xref:System.Lazy%601> instance. If an exception occurs and is unhandled in the initialization function, that exception is cached and rethrown on subsequent accesses of the <xref:System.Lazy%601.Value%2A?displayProperty=fullName>property. No value is created if an exception is thrown, so in such cases <xref:System.Lazy%601.IsValueCreated%2A> returns `false`.  
+-   If the mode is <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> or <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>, there is no second chance to initialize the <xref:System.Lazy%601> instance. If an exception occurs and is unhandled in the initialization function, that exception is cached and rethrown on subsequent accesses of the <xref:System.Lazy%601.Value%2A?displayProperty=fullName> property. No value is created if an exception is thrown, so in such cases <xref:System.Lazy%601.IsValueCreated%2A> returns `false`.  
   
 -   If the mode is <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>, the first thread that succeeds in running the initialization function (or the default constructor) creates the value for the <xref:System.Lazy%601> instance. If the initialization function throws an exception on one thread, other threads can still try to initialize the <xref:System.Lazy%601> instance. Until the value is created, the <xref:System.Lazy%601.IsValueCreated%2A> property returns `false`.  
   

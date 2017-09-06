@@ -1377,7 +1377,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following console application creates a <xref:System.Data.DataTable> instance. The example then passes the filled <xref:System.Data.DataTable>to a procedure that calls the <xref:System.Data.DataTable.CreateDataReader%2A> method, which iterates through the results contained within the <xref:System.Data.DataTableReader>.  
+ The following console application creates a <xref:System.Data.DataTable> instance. The example then passes the filled <xref:System.Data.DataTable> to a procedure that calls the <xref:System.Data.DataTable.CreateDataReader%2A> method, which iterates through the results contained within the <xref:System.Data.DataTableReader>.  
   
  [!code-csharp[DataWorks DataTable.CreateDataReader#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.CreateDataReader/CS/source.cs#1)]
  [!code-vb[DataWorks DataTable.CreateDataReader#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.CreateDataReader/VB/source.vb#1)]  
@@ -2194,7 +2194,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.DataTable.Load%2A>method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=fullName> method.  
+ The <xref:System.Data.DataTable.Load%2A> method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=fullName> method.  
   
  The <xref:System.Data.DataTable.Load%2A> method must take into account three specific issues when loading the data from an <xref:System.Data.IDataReader> instance: schema, data, and event operations. When working with the schema, the <xref:System.Data.DataTable.Load%2A> method may encounter conditions as described in the following table. The schema operations take place for all imported result sets, even those containing no data.  
   

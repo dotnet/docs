@@ -126,7 +126,7 @@ public GrammarBuilder ChoicesContructor2 ()
    
   
 ## Examples  
- The following example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder>objects to create a phrase that can be used to recognize speech input such as "Call Anne on her cell" and "Call James on his work phone". The example uses implicit casts from <xref:System.Speech.Recognition.Choices> and <xref:System.String> to <xref:System.Speech.Recognition.GrammarBuilder>.  
+ The following example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create a phrase that can be used to recognize speech input such as "Call Anne on her cell" and "Call James on his work phone". The example uses implicit casts from <xref:System.Speech.Recognition.Choices> and <xref:System.String> to <xref:System.Speech.Recognition.GrammarBuilder>.  
   
 ```csharp  
 public Grammar CreatePhonePhrase()  

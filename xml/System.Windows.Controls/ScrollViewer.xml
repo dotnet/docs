@@ -1454,7 +1454,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> property specifies whether the <xref:System.Windows.Controls.ScrollViewer> scroll horizontally, vertically, or both. The <xref:System.Windows.Controls.ScrollViewer> will scroll when a user drags a finger on the control on a touch device that supports Windows Touch.  
+ The <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> property specifies whether the <xref:System.Windows.Controls.ScrollViewer> scroll horizontally, vertically, or both. The <xref:System.Windows.Controls.ScrollViewer> will scroll when a user drags a finger on the control on a touch device that supports Windows Touch.  
   
  <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> can be either set directly on a <xref:System.Windows.Controls.ScrollViewer> or used as an attached property.  When a control contains a <xref:System.Windows.Controls.ScrollViewer> in its <xref:System.Windows.Controls.ControlTemplate>, use <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property to specify the behavior of the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate>. When you use a <xref:System.Windows.Controls.ScrollViewer> outside of a <xref:System.Windows.Controls.ControlTemplate>, set <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> directly on the <xref:System.Windows.Controls.ScrollViewer>.  
   

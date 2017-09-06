@@ -317,7 +317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.StringComparer> returned by the <xref:System.StringComparer.CurrentCulture%2A> property can be used when strings are linguistically relevant. For example, if strings are displayed to the user, or if strings are the result of user interaction, culture-sensitive string comparison should be used to order the string data.  
+ The <xref:System.StringComparer> returned by the <xref:System.StringComparer.CurrentCulture%2A> property can be used when strings are linguistically relevant. For example, if strings are displayed to the user, or if strings are the result of user interaction, culture-sensitive string comparison should be used to order the string data.  
   
  The current culture is the <xref:System.Globalization.CultureInfo> object associated with the current thread.  
   
@@ -376,7 +376,7 @@
 ## Remarks  
  The current culture is the <xref:System.Globalization.CultureInfo> object associated with the current thread.  
   
- The<xref:System.StringComparer> returned by the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property can be used when strings are linguistically relevant but their case is not. For example, if strings are displayed to the user but case is unimportant, culture-sensitive, case-insensitive string comparison should be used to order the string data.  
+ The <xref:System.StringComparer> returned by the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property can be used when strings are linguistically relevant but their case is not. For example, if strings are displayed to the user but case is unimportant, culture-sensitive, case-insensitive string comparison should be used to order the string data.  
   
  The <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
   
@@ -615,7 +615,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.StringComparer> returned by the <xref:System.StringComparer.InvariantCulture%2A> property compares strings in a linguistically relevant manner, but it is not suitable for display in any particular culture. Its major application is to order strings in a way that will be identical across cultures.  
+ The <xref:System.StringComparer> returned by the <xref:System.StringComparer.InvariantCulture%2A> property compares strings in a linguistically relevant manner, but it is not suitable for display in any particular culture. Its major application is to order strings in a way that will be identical across cultures.  
   
  The invariant culture is the <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
@@ -662,7 +662,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.StringComparer> returned by the <xref:System.StringComparer.InvariantCultureIgnoreCase%2A> property compares strings in a linguistically relevant manner that ignores case, but it is not suitable for display in any particular culture. Its major application is to order strings in a way that will be identical across cultures.  
+ The <xref:System.StringComparer> returned by the <xref:System.StringComparer.InvariantCultureIgnoreCase%2A> property compares strings in a linguistically relevant manner that ignores case, but it is not suitable for display in any particular culture. Its major application is to order strings in a way that will be identical across cultures.  
   
  The invariant culture is the <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
@@ -751,7 +751,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.StringComparer> returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A> property treats the characters in the strings to compare as if they were converted to uppercase using the conventions of the invariant culture, and then performs a simple byte comparison that is independent of language. This is most appropriate when comparing strings that are generated programmatically or when comparing case-insensitive resources such as paths and filenames.  
+ The <xref:System.StringComparer> returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A> property treats the characters in the strings to compare as if they were converted to uppercase using the conventions of the invariant culture, and then performs a simple byte comparison that is independent of language. This is most appropriate when comparing strings that are generated programmatically or when comparing case-insensitive resources such as paths and filenames.  
   
  The <xref:System.StringComparer.OrdinalIgnoreCase%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
   

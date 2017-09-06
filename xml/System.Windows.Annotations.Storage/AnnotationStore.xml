@@ -253,7 +253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method is called by the public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>and <xref:System.Object.Finalize%2A> methods.  The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> invokes the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter set to `true`.  <xref:System.Object.Finalize%2A> invokes <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> with `disposing` set to `false`.  
+ This protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method is called by the public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> and <xref:System.Object.Finalize%2A> methods.  The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> invokes the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter set to `true`.  <xref:System.Object.Finalize%2A> invokes <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> with `disposing` set to `false`.  
   
  When the `disposing` parameter is `true`, <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> releases all resources held by any managed objects that the <xref:System.Windows.Annotations.Storage.AnnotationStore> references.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> also invokes the `Dispose()` method of each referenced object.  
   

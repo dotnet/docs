@@ -31,7 +31,7 @@
 ## Remarks  
  The compressed stack is a compact representation of all the code access security information on the call stack, such as <xref:System.Security.CodeAccessPermission.Deny%2A> and <xref:System.Security.CodeAccessPermission.Assert%2A> actions. For example, if a <xref:System.Security.CodeAccessPermission.Deny%2A> action is two stack frames up from the current frame and there are no other code access security annotations between there and the current frame, the compressed stack records only that information, without having to serialize the entire call stack.  
   
- The <xref:System.Threading.CompressedStack>class is used internally by the <xref:System.Security.SecurityContext> class. For example, the <xref:System.Security.SecurityContext.Capture%2A?displayProperty=fullName> method captures the compressed stack for the current call stack, along with impersonation and culture information. The <xref:System.Security.SecurityContext> class is used in turn by the <xref:System.Threading.ExecutionContext> class to flow context across threads, for example when scheduling thread pool tasks.  
+ The <xref:System.Threading.CompressedStack> class is used internally by the <xref:System.Security.SecurityContext> class. For example, the <xref:System.Security.SecurityContext.Capture%2A?displayProperty=fullName> method captures the compressed stack for the current call stack, along with impersonation and culture information. The <xref:System.Security.SecurityContext> class is used in turn by the <xref:System.Threading.ExecutionContext> class to flow context across threads, for example when scheduling thread pool tasks.  
   
  This class is not used in ordinary application programming.  
   

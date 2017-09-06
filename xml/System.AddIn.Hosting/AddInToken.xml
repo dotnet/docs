@@ -365,7 +365,7 @@
    
   
 ## Examples  
- The following example displays the value of the <xref:System.AddIn.Hosting.AddInToken.Name%2A>, <xref:System.AddIn.Hosting.AddInToken.AddInFullName%2A>, <xref:System.AddIn.Hosting.AddInToken.Description%2A>, <xref:System.AddIn.Hosting.AddInToken.AssemblyName%2A>, <xref:System.AddIn.Hosting.AddInToken.Publisher%2A>, and <xref:System.AddIn.Hosting.AddInToken.Version%2A> properties to the console. This code example is part of a larger example provided for the <xref:System.AddIn.Hosting.AddInToken>class.  
+ The following example displays the value of the <xref:System.AddIn.Hosting.AddInToken.Name%2A>, <xref:System.AddIn.Hosting.AddInToken.AddInFullName%2A>, <xref:System.AddIn.Hosting.AddInToken.Description%2A>, <xref:System.AddIn.Hosting.AddInToken.AssemblyName%2A>, <xref:System.AddIn.Hosting.AddInToken.Publisher%2A>, and <xref:System.AddIn.Hosting.AddInToken.Version%2A> properties to the console. This code example is part of a larger example provided for the <xref:System.AddIn.Hosting.AddInToken> class.  
   
  [!code-csharp[AddInP3Host#7](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#7)]
  [!code-vb[AddInP3Host#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#7)]  
@@ -646,7 +646,7 @@
 ## Remarks  
  Use this property to obtain data that has been applied to pipeline segments with the <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute. You can use this data to identify and work with the types that compose your pipelines.  
   
- This property returns a dictionary of dictionaries. The top dictionary always has six keys. Each key is an <xref:System.AddIn.Hosting.AddInSegmentType> value for a segment in the pipeline. Each value is a generic <xref:System.Collections.Generic.IDictionary%602>of strings with string keys that contains the segment's qualification data.  
+ This property returns a dictionary of dictionaries. The top dictionary always has six keys. Each key is an <xref:System.AddIn.Hosting.AddInSegmentType> value for a segment in the pipeline. Each value is a generic <xref:System.Collections.Generic.IDictionary%602> of strings with string keys that contains the segment's qualification data.  
   
  The keys and values of these inner dictionaries are the names and values specified in the <xref:System.AddIn.Pipeline.QualificationDataAttribute> attributes for the segments. If no qualification data has been applied to a segment, its dictionary is empty.  
   

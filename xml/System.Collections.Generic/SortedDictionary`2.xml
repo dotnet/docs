@@ -341,7 +341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also use the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Generic.SortedDictionary%602>; for example, `myCollection["myNonexistentKey"] = myValue` (in Visual Basic, `myCollection("myNonexistantKey") = myValue`). However, if the specified key already exists in the <xref:System.Collections.Generic.SortedDictionary%602>, setting the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.Add%2A>method throws an exception if an element with the specified key already exists.  
+ You can also use the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Generic.SortedDictionary%602>; for example, `myCollection["myNonexistentKey"] = myValue` (in Visual Basic, `myCollection("myNonexistantKey") = myValue`). However, if the specified key already exists in the <xref:System.Collections.Generic.SortedDictionary%602>, setting the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.Add%2A> method throws an exception if an element with the specified key already exists.  
   
  A key cannot be `null`, but a value can be, if the value type `TValue` is a reference type.  
   
@@ -1268,7 +1268,7 @@
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- The <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23ICollection%23SyncRoot%2A>property returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock the object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
+ The <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23ICollection%23SyncRoot%2A> property returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock the object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
   
 ```csharp  
 ICollection ic = ...;  
@@ -1339,7 +1339,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also use the <xref:System.Collections.IDictionary.Item%2A>property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+ You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
   
  This method is an O(log `n`) operation, where `n` is <xref:System.Collections.Generic.SortedDictionary%602.Count%2A>.  
   
@@ -1615,7 +1615,7 @@ finally
 ## Remarks  
  This property provides the ability to access a specific element in the collection by using the following C# syntax: `myCollection[key]` (`myCollection(key)` in Visual Basic).  
   
- You can also use the <xref:System.Collections.IDictionary.Item%2A>property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method does not modify existing elements.  
+ You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method does not modify existing elements.  
   
  The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Item%2A> as a default property, which provides the same indexing functionality.  
   

@@ -444,7 +444,7 @@
    
   
 ## Examples  
- The following example calls the <xref:System.BitConverter.GetBytes%2A> method to convert each element in an <xref:System.Int64> array to a<xref:System.Byte> arrays.  
+ The following example calls the <xref:System.BitConverter.GetBytes%2A> method to convert each element in an <xref:System.Int64> array to a <xref:System.Byte> arrays.  
   
  [!code-cpp[System.BitConverter.GetBytes.SInts#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.BitConverter.GetBytes.SInts/CPP/bytesint64.cpp#1)]
  [!code-csharp[System.BitConverter.GetBytes.SInts#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.BitConverter.GetBytes.SInts/CS/bytesint64.cs#1)]

@@ -86,7 +86,7 @@
   
 -   If positive, the time in millisecond to pause  
   
--   If negative a member of the <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak>enumeration  
+-   If negative a member of the <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak> enumeration  
   
  If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value specified by the `action` argument is not <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Silence>`emphasis` argument must be of type <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord>.  
   

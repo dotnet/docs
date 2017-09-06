@@ -128,7 +128,7 @@
    
   
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.TogglePattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to toggle the <xref:System.Windows.Automation.AutomationElement>.  
+ In the following example, a <xref:System.Windows.Automation.TogglePattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to toggle the <xref:System.Windows.Automation.AutomationElement>.  
   
  [!code-csharp[UIATogglePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#101)]
  [!code-vb[UIATogglePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#101)]  

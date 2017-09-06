@@ -1348,7 +1348,7 @@ http://myUrl/
 ## Remarks  
  For IPv6 addresses, the brackets ([]) are removed and the <xref:System.Net.IPAddress.ScopeId%2A> property is set, if one was specified when this instance was constructed.  
   
- The <xref:System.Uri.DnsSafeHost%2A> property is dependent on configuration settings, as discussed later in this topic. Configuration settings cannot be changed by Windows Store applications, which can lead to inconsistent results when using <xref:System.Uri.DnsSafeHost%2A>. The <xref:System.Uri.IdnHost%2A>property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current app.config settings might be.  
+ The <xref:System.Uri.DnsSafeHost%2A> property is dependent on configuration settings, as discussed later in this topic. Configuration settings cannot be changed by Windows Store applications, which can lead to inconsistent results when using <xref:System.Uri.DnsSafeHost%2A>. The <xref:System.Uri.IdnHost%2A> property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current app.config settings might be.  
   
  The <xref:System.Uri.DnsSafeHost%2A> property has been extended in .NET Framework v3.5, 3.0 SP1, and 2.0 SP1 to provide International Resource Identifier (IRI) support based on RFC 3987. Current users will not see any change from the .NET Framework 2.0 behavior unless they specifically enable IRI. This ensures application compatibility with prior versions of the .NET Framework.  
   

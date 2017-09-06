@@ -310,7 +310,7 @@
   
 -   The "F" (full date / long time) standard format string, which maps directly to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property. Because we have not explicitly set this property value, it is generated dynamically by concatenating the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> and <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> properties.  
   
- The example also shows how to change the era name for a culture whose calendar has a single era. In this case, the en-US culture uses the Gregorian calendar, which is represented by a <xref:System.Globalization.GregorianCalendar> object. The <xref:System.Globalization.GregorianCalendar> class supports a single era, which it names A.D. (Anno Domini). The example changes the era name to C.E. (Common Era) by replacing the "g" custom format specifier in the format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A>property with a literal string. The use of a literal string is necessary, because the era name is typically returned by the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> method from private data in the culture tables supplied by either the .NET Framework or the Windows operating system.  
+ The example also shows how to change the era name for a culture whose calendar has a single era. In this case, the en-US culture uses the Gregorian calendar, which is represented by a <xref:System.Globalization.GregorianCalendar> object. The <xref:System.Globalization.GregorianCalendar> class supports a single era, which it names A.D. (Anno Domini). The example changes the era name to C.E. (Common Era) by replacing the "g" custom format specifier in the format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property with a literal string. The use of a literal string is necessary, because the era name is typically returned by the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> method from private data in the culture tables supplied by either the .NET Framework or the Windows operating system.  
   
  [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/example4.cs#11)]
  [!code-vb[System.Globalization.DateTimeFormatInfo.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example4.vb#11)]  
@@ -612,7 +612,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> property is used for all times from 0:00:00 (midnight) to 11:59:59.999.  
+ The <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> property is used for all times from 0:00:00 (midnight) to 11:59:59.999.  
   
  If a custom format string includes the "tt" format specifier and the time is before noon, the <xref:System.DateTime.ToString%2A?displayProperty=fullName> or <xref:System.DateTimeOffset.ToString%2A> method includes the value of the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> property in place of "tt" in the result string. If the custom format string includes the "t" custom format specifier, only the first character of the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> property value is included. You should use "tt" for languages for which it is necessary to maintain the distinction between A.M. and P.M. An example is Japanese, in which the A.M. and P.M. designators differ in the second character instead of the first character.  
   
@@ -1793,7 +1793,7 @@
   
  You should set the date separator in the long date pattern to an exact string instead of using the date separator placeholder. For example, to obtain the pattern MM-DD-yyyy, set the long date pattern to "MM-DD-yyyy".  
   
- The value of this property may change if the calendar used by a culture changes. For instance, the following example shows how the<xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property of a <xref:System.Globalization.CultureInfo> object that represents the Arabic (Syria) culture changes when the <xref:System.Globalization.Calendar> object used by the culture changes.  
+ The value of this property may change if the calendar used by a culture changes. For instance, the following example shows how the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property of a <xref:System.Globalization.CultureInfo> object that represents the Arabic (Syria) culture changes when the <xref:System.Globalization.Calendar> object used by the culture changes.  
   
  [!code-csharp[System.Globalization.DateTimeFormatInfo.LongDatePattern#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/CS/longdatepattern2.cs#3)]
  [!code-vb[System.Globalization.DateTimeFormatInfo.LongDatePattern#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/VB/longdatepattern2.vb#3)]  
@@ -2102,7 +2102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A> property is used for all times from 12:00:00 (noon) to 23:59:59.999.  
+ The <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A> property is used for all times from 12:00:00 (noon) to 23:59:59.999.  
   
  If the custom pattern includes the format pattern "tt" and the time is after noon, <xref:System.DateTime.ToString%2A?displayProperty=fullName> displays the value of <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A> in place of the "tt" in the format pattern. If the custom pattern includes the format pattern "t", only the first character of <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A> is displayed. Your application should use "tt" for languages for which it is necessary to maintain the distinction between AM and PM. An example is Japanese, for which the AM and PM designators differ in the second character instead of the first character.  
   

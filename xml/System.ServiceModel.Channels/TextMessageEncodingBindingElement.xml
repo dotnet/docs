@@ -224,7 +224,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.ServiceModel.Channels.MessageEncoder> objects that the factory produces can read messages from a stream and write them to a stream for specific types of message encoding.  
+ The <xref:System.ServiceModel.Channels.MessageEncoder> objects that the factory produces can read messages from a stream and write them to a stream for specific types of message encoding.  
   
  ]]></format>
         </remarks>
@@ -514,7 +514,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29>method.  
+ The <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29> method.  
   
  ]]></format>
         </remarks>

@@ -382,7 +382,7 @@
 ## Remarks  
  This method works only for locks that are acquired by using the methods of the <xref:System.Threading.Monitor> class, or by using the C# `lock` statement or the Visual Basic `SyncLock` statement, which are implemented with <xref:System.Threading.Monitor>.  
   
- Use this method with diagnostic tools, such as the <xref:System.Diagnostics.Debug.Assert%2A> method and the <xref:System.Diagnostics.Contracts.Contract> class, to debug locking issues that involve the <xref:System.Threading.Monitor>class.  
+ Use this method with diagnostic tools, such as the <xref:System.Diagnostics.Debug.Assert%2A> method and the <xref:System.Diagnostics.Contracts.Contract> class, to debug locking issues that involve the <xref:System.Threading.Monitor> class.  
   
  ]]></format>
         </remarks>

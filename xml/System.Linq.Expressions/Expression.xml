@@ -1423,7 +1423,7 @@
 ## Remarks  
  Each element of `indexes` must have <xref:System.Linq.Expressions.Expression.Type%2A> equal to <xref:System.Int32>. The <xref:System.Linq.Expressions.Expression.Type%2A> property of `array` must represent an array type whose rank matches the number of elements in `indexes`.  
   
- If the rank of `array`.Type is 1, this method returns a <xref:System.Linq.Expressions.BinaryExpression>. The <xref:System.Linq.Expressions.BinaryExpression.Left%2A> property is set to `array` and the <xref:System.Linq.Expressions.BinaryExpression.Right%2A> property is set to the single element of `indexes`. The <xref:System.Linq.Expressions.Expression.Type%2A> property of the<xref:System.Linq.Expressions.BinaryExpression> represents the element type of `array`.Type.  
+ If the rank of `array`.Type is 1, this method returns a <xref:System.Linq.Expressions.BinaryExpression>. The <xref:System.Linq.Expressions.BinaryExpression.Left%2A> property is set to `array` and the <xref:System.Linq.Expressions.BinaryExpression.Right%2A> property is set to the single element of `indexes`. The <xref:System.Linq.Expressions.Expression.Type%2A> property of the <xref:System.Linq.Expressions.BinaryExpression> represents the element type of `array`.Type.  
   
  If the rank of `array`.Type is more than one, this method returns a <xref:System.Linq.Expressions.MethodCallExpression>. The <xref:System.Linq.Expressions.MethodCallExpression.Method%2A> property is set to the <xref:System.Reflection.MethodInfo> that describes the public instance method `Get` on the type represented by the <xref:System.Linq.Expressions.Expression.Type%2A> property of `array`.  
   
@@ -8755,7 +8755,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.ElementInit%5B%5D%29> method to create a <xref:System.Linq.Expressions.ListInitExpression>that represents the initialization of a new dictionary instance with two key-value pairs.  
+ The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.ElementInit%5B%5D%29> method to create a <xref:System.Linq.Expressions.ListInitExpression> that represents the initialization of a new dictionary instance with two key-value pairs.  
   
  [!code-csharp[System.Linq.Expressions.Expression#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#7)]
  [!code-vb[System.Linq.Expressions.Expression#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#7)]  
@@ -8819,7 +8819,7 @@
   
  In order to use this overload of <xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.Expression%5B%5D%29>, `newExpression`.Type or its base type must declare a single method named "Add" (case insensitive) that takes exactly one argument. The type of the argument must be assignable from the type represented by the <xref:System.Linq.Expressions.Expression.Type%2A> property of the first element of `initializers`.  
   
- The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression>contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> represents the add method that was discovered on `newExpression`.Type or its base type.  
+ The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression> contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> represents the add method that was discovered on `newExpression`.Type or its base type.  
   
  The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.ListInitExpression> is equal to `newExpression`.Type.  
   
@@ -8966,7 +8966,7 @@
   
  If `addMethod` is `null`, `newExpression`.Type or its base type must declare a single method named "Add" (case insensitive) that takes exactly one argument. If `addMethod` is not `null`, it must represent an instance method named "Add" (case insensitive) that has exactly one parameter. The type represented by the <xref:System.Linq.Expressions.Expression.Type%2A> property of each element of `initializers` must be assignable to the argument type of the add method.  
   
- The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression>contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is equal to `addMethod`.  
+ The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression> contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is equal to `addMethod`.  
   
  The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.ListInitExpression> is equal to `newExpression`.Type.  
   
@@ -12659,7 +12659,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting <xref:System.Linq.Expressions.BinaryExpression> has the <xref:System.Linq.Expressions.BinaryExpression.Method%2A> property set to the implementing method. The <xref:System.Linq.Expressions.Expression.Type%2A> property is set to the type of the node. If the node is lifted, the <xref:System.Linq.Expressions.BinaryExpression.IsLifted%2A> and <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull%2A> properties are both `true`. Otherwise, they are `false`. The <xref:System.Linq.Expressions.BinaryExpression.Conversion%2A>property is `null`.  
+ The resulting <xref:System.Linq.Expressions.BinaryExpression> has the <xref:System.Linq.Expressions.BinaryExpression.Method%2A> property set to the implementing method. The <xref:System.Linq.Expressions.Expression.Type%2A> property is set to the type of the node. If the node is lifted, the <xref:System.Linq.Expressions.BinaryExpression.IsLifted%2A> and <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull%2A> properties are both `true`. Otherwise, they are `false`. The <xref:System.Linq.Expressions.BinaryExpression.Conversion%2A> property is `null`.  
   
  The following information describes the implementing method, the node type, and whether a node is lifted.  
   
@@ -13476,7 +13476,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.MemberExpression>is equal to the <xref:System.Reflection.PropertyInfo.PropertyType%2A> property of the <xref:System.Reflection.PropertyInfo> that represents the property denoted by `propertyName`.  
+ The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.MemberExpression> is equal to the <xref:System.Reflection.PropertyInfo.PropertyType%2A> property of the <xref:System.Reflection.PropertyInfo> that represents the property denoted by `propertyName`.  
   
  This method searches `expression`.Type and its base types for a property that has the name `propertyName`. Public properties are given preference over non-public properties. If a matching property is found, this method passes `expression` and the <xref:System.Reflection.PropertyInfo> that represents that property to <xref:System.Linq.Expressions.Expression.Property%2A>.  
   

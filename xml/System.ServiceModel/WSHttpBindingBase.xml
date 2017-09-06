@@ -111,7 +111,7 @@
   
  Setting the <xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> property determines whether endpoints configured with the <xref:System.ServiceModel.WSHttpBindingBase> use the proxy server when accessing local resources.  
   
- If <xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> is `true`, requests to local Internet resources do not use the proxy server. When<xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> is `false`, all Internet requests are made through the proxy server.  
+ If <xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> is `true`, requests to local Internet resources do not use the proxy server. When <xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> is `false`, all Internet requests are made through the proxy server.  
   
    
   

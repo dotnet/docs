@@ -59,7 +59,7 @@
   
  The <xref:System.Windows.Forms.Control> class implements very basic functionality required by classes that display information to the user. It handles user input through the keyboard and pointing devices. It handles message routing and security. It defines the bounds of a control (its position and size), although it does not implement painting. It provides a window handle (`hWnd`).  
   
- Windows Forms controls use ambient properties so child controls can appear like their surrounding environment. An *ambient property* is a control property that, if not set, is retrieved from the parent control. If the control does not have a <xref:System.Windows.Forms.Control.Parent%2A>, and the property is not set, the control attempts to determine the value of the ambient property through the <xref:System.Windows.Forms.Control.Site%2A> property. If the control is not sited, if the site does not support ambient properties, or if the property is not set on the <xref:System.Windows.Forms.AmbientProperties>, the control uses its own default values. Typically, an ambient property represents a characteristic of a control, such as <xref:System.Windows.Forms.Control.BackColor%2A>, that is communicated to a child control. For example, a <xref:System.Windows.Forms.Button> will have the same <xref:System.Windows.Forms.Control.BackColor%2A> as its parent <xref:System.Windows.Forms.Form> by default. Ambient properties provided by the <xref:System.Windows.Forms.Control>class include: <xref:System.Windows.Forms.Control.Cursor%2A>, <xref:System.Windows.Forms.Control.Font%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.ForeColor%2A>, and <xref:System.Windows.Forms.Control.RightToLeft%2A>.  
+ Windows Forms controls use ambient properties so child controls can appear like their surrounding environment. An *ambient property* is a control property that, if not set, is retrieved from the parent control. If the control does not have a <xref:System.Windows.Forms.Control.Parent%2A>, and the property is not set, the control attempts to determine the value of the ambient property through the <xref:System.Windows.Forms.Control.Site%2A> property. If the control is not sited, if the site does not support ambient properties, or if the property is not set on the <xref:System.Windows.Forms.AmbientProperties>, the control uses its own default values. Typically, an ambient property represents a characteristic of a control, such as <xref:System.Windows.Forms.Control.BackColor%2A>, that is communicated to a child control. For example, a <xref:System.Windows.Forms.Button> will have the same <xref:System.Windows.Forms.Control.BackColor%2A> as its parent <xref:System.Windows.Forms.Form> by default. Ambient properties provided by the <xref:System.Windows.Forms.Control> class include: <xref:System.Windows.Forms.Control.Cursor%2A>, <xref:System.Windows.Forms.Control.Font%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.ForeColor%2A>, and <xref:System.Windows.Forms.Control.RightToLeft%2A>.  
   
 > [!NOTE]
 >  To make your Windows Forms application support visual styles, be sure to set the <xref:System.Windows.Forms.FlatStyle> property to `System` and include a manifest with your executable. A manifest is an XML file that is included either as a resource within your application executable or as a separate file that resides in the same directory as the executable file. For an example of a manifest, see the Example section of the <xref:System.Windows.Forms.FlatStyle> enumeration. For more information about using visual styles, see[Visual Styles](http://msdn.microsoft.com/library/windows/desktop/bb773187.aspx).  
@@ -190,7 +190,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.Control> class is the base class for all controls used in a Windows Forms application. Because this class is not typically used to create an instance of the class, this constructor is typically not called directly but is instead called by a derived class.  
   
- This version of the <xref:System.Windows.Forms.Control.%23ctor%2A> constructor sets the initial <xref:System.Windows.Forms.Control.Text%2A>property value to the `text` parameter value. The initial <xref:System.Windows.Forms.Control.Size%2A> and <xref:System.Windows.Forms.Control.Location%2A> of the control are determined by the `left`, `top`, `width` and `height` parameter values.  
+ This version of the <xref:System.Windows.Forms.Control.%23ctor%2A> constructor sets the initial <xref:System.Windows.Forms.Control.Text%2A> property value to the `text` parameter value. The initial <xref:System.Windows.Forms.Control.Size%2A> and <xref:System.Windows.Forms.Control.Location%2A> of the control are determined by the `left`, `top`, `width` and `height` parameter values.  
   
 > [!NOTE]
 >  To maintain better performance, do not set the size of a control in its constructor. The preferred method is to override the <xref:System.Windows.Forms.Control.DefaultSize%2A> property.  
@@ -800,7 +800,7 @@
 ## Examples  
  The following code example is an event handler that is executed when the <xref:System.Windows.Forms.Control.Text%2A> property value changes. The <xref:System.Windows.Forms.Control> class has several methods with the name pattern *PropertyName*`Changed` that are raised when the corresponding *PropertyName* value changes (*PropertyName* represents the name of the corresponding property).  
   
- The following code example changes the <xref:System.Windows.Forms.Control.ForeColor%2A> of a <xref:System.Windows.Forms.TextBox> displaying currency data. The example converts the text to a decimal number and changes the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.Color.Red%2A?displayProperty=fullName> if the number is negative and to <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> if the number is positive. This example requires that you have a <xref:System.Windows.Forms.Form>that contains a <xref:System.Windows.Forms.TextBox>.  
+ The following code example changes the <xref:System.Windows.Forms.Control.ForeColor%2A> of a <xref:System.Windows.Forms.TextBox> displaying currency data. The example converts the text to a decimal number and changes the <xref:System.Windows.Forms.Control.ForeColor%2A> to <xref:System.Drawing.Color.Red%2A?displayProperty=fullName> if the number is negative and to <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> if the number is positive. This example requires that you have a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.TextBox>.  
   
  [!code-cpp[Windows.Forms.Control_PropertyChangedEvents#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control_PropertyChangedEvents/CPP/propertychangedevents.cpp#1)]
  [!code-csharp[Windows.Forms.Control_PropertyChangedEvents#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control_PropertyChangedEvents/CS/propertychangedevents.cs#1)]
@@ -1113,7 +1113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingContext> of a <xref:System.Windows.Forms.Control> is used to return a single<xref:System.Windows.Forms.BindingManagerBase> for all data-bound controls contained by the <xref:System.Windows.Forms.Control>. The <xref:System.Windows.Forms.BindingManagerBase> keeps all controls that are bound to the same data source synchronized. For example, setting the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property of the <xref:System.Windows.Forms.BindingManagerBase> specifies the item in the underlying list that all data-bound controls point to.  
+ The <xref:System.Windows.Forms.BindingContext> of a <xref:System.Windows.Forms.Control> is used to return a single <xref:System.Windows.Forms.BindingManagerBase> for all data-bound controls contained by the <xref:System.Windows.Forms.Control>. The <xref:System.Windows.Forms.BindingManagerBase> keeps all controls that are bound to the same data source synchronized. For example, setting the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property of the <xref:System.Windows.Forms.BindingManagerBase> specifies the item in the underlying list that all data-bound controls point to.  
   
  For more information about creating a new <xref:System.Windows.Forms.BindingContext> and assigning it to the <xref:System.Windows.Forms.Control.BindingContext%2A> property, see the <xref:System.Windows.Forms.BindingContext.%23ctor%2A>.  
   
@@ -1247,7 +1247,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The bounds of the control include the nonclient elements such as scroll bars, borders, title bars, and menus. The <xref:System.Windows.Forms.Control.SetBoundsCore%2A> method is called to set the <xref:System.Windows.Forms.Control.Bounds%2A> property. The <xref:System.Windows.Forms.Control.Bounds%2A>property is not always changed through its `set` method so you should override the <xref:System.Windows.Forms.Control.SetBoundsCore%2A> method to ensure that your code is executed when the <xref:System.Windows.Forms.Control.Bounds%2A> property is set.  
+ The bounds of the control include the nonclient elements such as scroll bars, borders, title bars, and menus. The <xref:System.Windows.Forms.Control.SetBoundsCore%2A> method is called to set the <xref:System.Windows.Forms.Control.Bounds%2A> property. The <xref:System.Windows.Forms.Control.Bounds%2A> property is not always changed through its `set` method so you should override the <xref:System.Windows.Forms.Control.SetBoundsCore%2A> method to ensure that your code is executed when the <xref:System.Windows.Forms.Control.Bounds%2A> property is set.  
   
    
   
@@ -1539,7 +1539,7 @@
    
   
 ## Examples  
- The following code example uses the derived class<xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. One of the buttons on the form has its <xref:System.Windows.Forms.Control.CausesValidation%2A> property set to `false`. Clicking or setting focus to this button does not trigger validation. This example requires that a <xref:System.Windows.Forms.TextBox>, an <xref:System.Windows.Forms.ErrorProvider> control, and a <xref:System.Windows.Forms.Button> have been created on a form.  
+ The following code example uses the derived class <xref:System.Windows.Forms.TextBox> and validates an e-mail address that the user enters. If the e-mail address is not in the standard format (containing "@" and "."), the validation fails, an <xref:System.Windows.Forms.ErrorProvider> icon is displayed, and the event is canceled. One of the buttons on the form has its <xref:System.Windows.Forms.Control.CausesValidation%2A> property set to `false`. Clicking or setting focus to this button does not trigger validation. This example requires that a <xref:System.Windows.Forms.TextBox>, an <xref:System.Windows.Forms.ErrorProvider> control, and a <xref:System.Windows.Forms.Button> have been created on a form.  
   
  [!code-cpp[Control.Validating#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Validating/CPP/validating.cpp#2)]
  [!code-csharp[Control.Validating#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Validating/CS/validating.cs#2)]
@@ -1668,7 +1668,7 @@
   
  A double-click is determined by the mouse settings of the user's operating system. The user can set the time between clicks of a mouse button that should be considered a double-click rather than two clicks. The <xref:System.Windows.Forms.Control.Click> event is raised every time a control is double-clicked. For example, if you have event handlers for the <xref:System.Windows.Forms.Control.Click> and <xref:System.Windows.Forms.Control.DoubleClick> events of a <xref:System.Windows.Forms.Form>, the <xref:System.Windows.Forms.Control.Click> and <xref:System.Windows.Forms.Control.DoubleClick> events are raised when the form is double-clicked and both methods are called. If a control is double-clicked and that control does not support the <xref:System.Windows.Forms.Control.DoubleClick> event, the <xref:System.Windows.Forms.Control.Click> event might be raised twice.  
   
- You must set the `StandardClick` value of<xref:System.Windows.Forms.ControlStyles> to `true` for this event to be raised.  
+ You must set the `StandardClick` value of <xref:System.Windows.Forms.ControlStyles> to `true` for this event to be raised.  
   
 > [!NOTE]
 >  The following events are not raised for the <xref:System.Windows.Forms.TabControl> class unless there is at least one <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection: <xref:System.Windows.Forms.Control.Click>, <xref:System.Windows.Forms.Control.DoubleClick>, <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseUp>, <xref:System.Windows.Forms.Control.MouseHover>, <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseLeave> and <xref:System.Windows.Forms.Control.MouseMove>. If there is at least one <xref:System.Windows.Forms.TabPage> in the collection, and the user interacts with the tab control's header (where the <xref:System.Windows.Forms.TabPage> names appear), the <xref:System.Windows.Forms.TabControl> raises the appropriate event. However, if the user interaction is within the client area of the tab page, the <xref:System.Windows.Forms.TabPage> raises the appropriate event.  
@@ -1986,7 +1986,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The client area of a control is the bounds of the control, minus the nonclient elements such as scroll bars, borders, title bars, and menus. The <xref:System.Windows.Forms.Control.SetClientSizeCore%2A> method is called to set the <xref:System.Windows.Forms.Control.ClientSize%2A>property. The <xref:System.Windows.Forms.Control.ClientSize%2A> property is not always changed through its `set` method so you should override the <xref:System.Windows.Forms.Control.SetClientSizeCore%2A> method to ensure that your code is executed when the <xref:System.Windows.Forms.Control.ClientSize%2A> property is set.  
+ The client area of a control is the bounds of the control, minus the nonclient elements such as scroll bars, borders, title bars, and menus. The <xref:System.Windows.Forms.Control.SetClientSizeCore%2A> method is called to set the <xref:System.Windows.Forms.Control.ClientSize%2A> property. The <xref:System.Windows.Forms.Control.ClientSize%2A> property is not always changed through its `set` method so you should override the <xref:System.Windows.Forms.Control.SetClientSizeCore%2A> method to ensure that your code is executed when the <xref:System.Windows.Forms.Control.ClientSize%2A> property is set.  
   
  The <xref:System.Drawing.Size.Width%2A?displayProperty=fullName> and <xref:System.Drawing.Size.Height%2A?displayProperty=fullName> properties represent the width and height of the client area of the control. You can use this property to obtain the size of the client area of the control for tasks such as drawing on the surface of the control.  
   
@@ -2778,7 +2778,7 @@
    
   
 ## Examples  
- The following code example demonstrates changing the mouse cursor using the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.Cursor> class, and the <xref:System.Windows.Forms.Cursors> class. The example creates a form that contains a <xref:System.Windows.Forms.ComboBox> control, a <xref:System.Windows.Forms.Panel> control, and a <xref:System.Windows.Forms.ListView> control. The<xref:System.Windows.Forms.ComboBox> contains all cursors provided by the <xref:System.Windows.Forms.Cursors> class. When the user selects a mouse cursor in the <xref:System.Windows.Forms.ComboBox>, the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property is set to the selected cursor, which updates the cursor for the <xref:System.Windows.Forms.Panel>. The <xref:System.Windows.Forms.ListView> is updated every time the <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=fullName> event occurs.  
+ The following code example demonstrates changing the mouse cursor using the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.Cursor> class, and the <xref:System.Windows.Forms.Cursors> class. The example creates a form that contains a <xref:System.Windows.Forms.ComboBox> control, a <xref:System.Windows.Forms.Panel> control, and a <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ComboBox> contains all cursors provided by the <xref:System.Windows.Forms.Cursors> class. When the user selects a mouse cursor in the <xref:System.Windows.Forms.ComboBox>, the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=fullName> property is set to the selected cursor, which updates the cursor for the <xref:System.Windows.Forms.Panel>. The <xref:System.Windows.Forms.ListView> is updated every time the <xref:System.Windows.Forms.Control.CursorChanged?displayProperty=fullName> event occurs.  
   
  [!code-cpp[System.Windows.Forms.Cursors#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursors/CPP/cursorexample.cpp#1)]
  [!code-csharp[System.Windows.Forms.Cursors#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursors/CS/cursorexample.cs#1)]
@@ -2921,7 +2921,7 @@
   
  MS Shell Dlg maps to a font set in the system registry.  
   
- If the previous fonts are not installed, the default font is Tahoma, 8 point. If Tahoma, 8 point, is not installed, <xref:System.Windows.Forms.Control.DefaultFont%2A>returns the value of the <xref:System.Drawing.FontFamily.GenericSansSerif%2A> property  
+ If the previous fonts are not installed, the default font is Tahoma, 8 point. If Tahoma, 8 point, is not installed, <xref:System.Windows.Forms.Control.DefaultFont%2A> returns the value of the <xref:System.Drawing.FontFamily.GenericSansSerif%2A> property  
   
    
   
@@ -3322,7 +3322,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property returns `true`, the base<xref:System.Windows.Forms.Control> class is in the process of disposing. After the control is disposed of, it can no longer be referenced as a valid Windows control. Even though the instance of a control is disposed of, it is still maintained in memory until it is removed from memory through garbage collection. When a control is disposed of, you cannot call its <xref:System.Windows.Forms.Control.RecreateHandle%2A> method.  
+ When this property returns `true`, the base <xref:System.Windows.Forms.Control> class is in the process of disposing. After the control is disposed of, it can no longer be referenced as a valid Windows control. Even though the instance of a control is disposed of, it is still maintained in memory until it is removed from memory through garbage collection. When a control is disposed of, you cannot call its <xref:System.Windows.Forms.Control.RecreateHandle%2A> method.  
   
  ]]></format>
         </remarks>
@@ -3918,7 +3918,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
 -   If the mouse moves but stays within the same control, the <xref:System.Windows.Forms.Control.DragOver> event is raised.  
   
- If there is a change in the keyboard or mouse button state, the<xref:System.Windows.Forms.Control.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
+ If there is a change in the keyboard or mouse button state, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
   
 -   If the value of <xref:System.Windows.Forms.DragAction> is `Continue`, the <xref:System.Windows.Forms.Control.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.Control.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
@@ -4061,7 +4061,7 @@ Point clientPoint = targetControl.PointToClient(new Point(de.X, de.Y));
   
 -   If the mouse moves but stays within the same control, the <xref:System.Windows.Forms.Control.DragOver> event is raised.  
   
- If there is a change in the keyboard or mouse button state, the<xref:System.Windows.Forms.Control.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
+ If there is a change in the keyboard or mouse button state, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
   
 -   If the value of <xref:System.Windows.Forms.DragAction> value is `Continue`, the <xref:System.Windows.Forms.Control.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.Control.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
@@ -5255,7 +5255,7 @@ MyControl.Font = New Font(MyControl.Font, _
 ## Examples  
  The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.HandleCreated> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button>or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.HandleCreated> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.HandleCreated> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#37](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#37)]
  [!code-vb[System.Windows.Forms.EventExamples#37](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#37)]  
@@ -6097,7 +6097,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
  If the control's handle does not yet exist, <xref:System.Windows.Forms.Control.InvokeRequired%2A> searches up the control's parent chain until it finds a control or form that does have a window handle. If no appropriate handle can be found, the <xref:System.Windows.Forms.Control.InvokeRequired%2A> method returns `false`.  
   
- This means that <xref:System.Windows.Forms.Control.InvokeRequired%2A>can return `false` if <xref:System.Windows.Forms.Control.Invoke%2A> is not required (the call occurs on the same thread), or if the control was created on a different thread but the control's handle has not yet been created.  
+ This means that <xref:System.Windows.Forms.Control.InvokeRequired%2A> can return `false` if <xref:System.Windows.Forms.Control.Invoke%2A> is not required (the call occurs on the same thread), or if the control was created on a different thread but the control's handle has not yet been created.  
   
  In the case where the control's handle has not yet been created, you should not simply call properties, methods, or events on the control. This might cause the control's handle to be created on the background thread, isolating the control on a thread without a message pump and making the application unstable.  
   
@@ -6435,7 +6435,7 @@ MyControl.Font = New Font(MyControl.Font, _
   
 3.  <xref:System.Windows.Forms.Control.KeyUp>  
   
- To handle keyboard events only at the form level and not enable other controls to receive keyboard events, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=fullName> property in your form's <xref:System.Windows.Forms.Control.KeyPress> event-handling method to `true`. Certain keys, such as the TAB, RETURN, ESC, and arrow keys are handled by controls automatically. To have these keys raise the <xref:System.Windows.Forms.Control.KeyDown> event, you must override the <xref:System.Windows.Forms.Control.IsInputKey%2A> method in each control on your form. The code for the override of the <xref:System.Windows.Forms.Control.IsInputKey%2A> would need to determine if one of the special keys is pressed and return a value of `true`. Instead of overriding the <xref:System.Windows.Forms.Control.IsInputKey%2A> method, you can handle the <xref:System.Windows.Forms.Control.PreviewKeyDown> event and set the <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey%2A>property to `true`. For a code example, see the <xref:System.Windows.Forms.Control.PreviewKeyDown> event.  
+ To handle keyboard events only at the form level and not enable other controls to receive keyboard events, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=fullName> property in your form's <xref:System.Windows.Forms.Control.KeyPress> event-handling method to `true`. Certain keys, such as the TAB, RETURN, ESC, and arrow keys are handled by controls automatically. To have these keys raise the <xref:System.Windows.Forms.Control.KeyDown> event, you must override the <xref:System.Windows.Forms.Control.IsInputKey%2A> method in each control on your form. The code for the override of the <xref:System.Windows.Forms.Control.IsInputKey%2A> would need to determine if one of the special keys is pressed and return a value of `true`. Instead of overriding the <xref:System.Windows.Forms.Control.IsInputKey%2A> method, you can handle the <xref:System.Windows.Forms.Control.PreviewKeyDown> event and set the <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey%2A> property to `true`. For a code example, see the <xref:System.Windows.Forms.Control.PreviewKeyDown> event.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -6757,7 +6757,7 @@ MyControl.Font = New Font(MyControl.Font, _
    
   
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.GroupBox> and sets some of its common properties. The example creates a <xref:System.Windows.Forms.TextBox>and sets its <xref:System.Windows.Forms.Control.Location%2A> within the group box. Next, it sets the <xref:System.Windows.Forms.Control.Text%2A> property of the group box, and docks the group box to the top of the form. Lastly, it disables the group box by setting the <xref:System.Windows.Forms.Control.Enabled%2A> property to `false`, which causes all controls contained within the group box to be disabled.  
+ The following code example creates a <xref:System.Windows.Forms.GroupBox> and sets some of its common properties. The example creates a <xref:System.Windows.Forms.TextBox> and sets its <xref:System.Windows.Forms.Control.Location%2A> within the group box. Next, it sets the <xref:System.Windows.Forms.Control.Text%2A> property of the group box, and docks the group box to the top of the form. Lastly, it disables the group box by setting the <xref:System.Windows.Forms.Control.Enabled%2A> property to `false`, which causes all controls contained within the group box to be disabled.  
   
  [!code-cpp[Windows.Forms.Control Properties#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CPP/controlproperties.cpp#2)]
  [!code-csharp[Windows.Forms.Control Properties#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CS/controlproperties.cs#2)]
@@ -11651,7 +11651,7 @@ MyControl.Font = New Font(MyControl.Font, _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some key presses, such as the TAB, RETURN, ESC, and arrow keys, are typically ignored by some controls because they are not considered input key presses. For example, by default, a <xref:System.Windows.Controls.Button> control ignores the arrow keys. Pressing the arrow keys typically causes the focus to move to the previous or next control. The arrow keys are considered navigation keys and pressing these keys typically do not raise the <xref:System.Windows.Forms.Control.KeyDown> event for a<xref:System.Windows.Controls.Button>. However, pressing the arrow keys for a <xref:System.Windows.Controls.Button> does raise the <xref:System.Windows.Forms.Control.PreviewKeyDown> event. By handling the <xref:System.Windows.Forms.Control.PreviewKeyDown> event for a <xref:System.Windows.Controls.Button> and setting the <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey%2A> property to `true`, you can raise the <xref:System.Windows.Forms.Control.KeyDown> event when the arrow keys are pressed. However, if you handle the arrow keys, the focus will no longer move to the previous or next control.  
+ Some key presses, such as the TAB, RETURN, ESC, and arrow keys, are typically ignored by some controls because they are not considered input key presses. For example, by default, a <xref:System.Windows.Controls.Button> control ignores the arrow keys. Pressing the arrow keys typically causes the focus to move to the previous or next control. The arrow keys are considered navigation keys and pressing these keys typically do not raise the <xref:System.Windows.Forms.Control.KeyDown> event for a <xref:System.Windows.Controls.Button>. However, pressing the arrow keys for a <xref:System.Windows.Controls.Button> does raise the <xref:System.Windows.Forms.Control.PreviewKeyDown> event. By handling the <xref:System.Windows.Forms.Control.PreviewKeyDown> event for a <xref:System.Windows.Controls.Button> and setting the <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey%2A> property to `true`, you can raise the <xref:System.Windows.Forms.Control.KeyDown> event when the arrow keys are pressed. However, if you handle the arrow keys, the focus will no longer move to the previous or next control.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -12118,7 +12118,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
 -   If the mouse moves but stays within the same control, the <xref:System.Windows.Forms.Control.DragOver> event is raised.  
   
- If there is a change in the keyboard or mouse button state, the<xref:System.Windows.Forms.Control.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
+ If there is a change in the keyboard or mouse button state, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
   
 -   If the value of <xref:System.Windows.Forms.DragAction> is `Continue`, the <xref:System.Windows.Forms.Control.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.Control.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
@@ -12290,7 +12290,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Control.RecreateHandle%2A> method is called whenever parameters are needed for a new control, but using a call from <xref:System.Windows.Forms.Control.UpdateStyles%2A> to <xref:System.Windows.Forms.Control.CreateParams%2A> is insufficient. This method also calls <xref:System.Windows.Forms.Control.DestroyHandle%2A> and<xref:System.Windows.Forms.Control.CreateHandle%2A> and sets <xref:System.Windows.Forms.Control.RecreatingHandle%2A> to `true`.  
+ The <xref:System.Windows.Forms.Control.RecreateHandle%2A> method is called whenever parameters are needed for a new control, but using a call from <xref:System.Windows.Forms.Control.UpdateStyles%2A> to <xref:System.Windows.Forms.Control.CreateParams%2A> is insufficient. This method also calls <xref:System.Windows.Forms.Control.DestroyHandle%2A> and <xref:System.Windows.Forms.Control.CreateHandle%2A> and sets <xref:System.Windows.Forms.Control.RecreatingHandle%2A> to `true`.  
   
  ]]></format>
         </remarks>
@@ -13742,7 +13742,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code exampleshows the<xref:System.Windows.Forms.Control.SelectNextControl%2A> method being used in a form that has some controls. Each time that you click the form, the next control is activated. The <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> property gets the currently active control in the container control.  
+ The following code exampleshows the <xref:System.Windows.Forms.Control.SelectNextControl%2A> method being used in a form that has some controls. Each time that you click the form, the next control is activated. The <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> property gets the currently active control in the container control.  
   
  [!code-csharp[System.Windows.Forms.Control.SelectNextControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/system.windows.forms.control.selectnextcontrol/cs/form1.cs#1)]
  [!code-vb[System.Windows.Forms.Control.SelectNextControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.windows.forms.control.selectnextcontrol/vb/form1.vb#1)]  
@@ -14049,7 +14049,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you call the <xref:System.Windows.Forms.Control.SetTopLevel%2A> method of a <xref:System.Windows.Forms.Form> and pass in a value of `false`, the form will not be visible until you call <xref:System.Windows.Forms.Control.SetTopLevel%2A>again, passing in a value of `true`.  
+ If you call the <xref:System.Windows.Forms.Control.SetTopLevel%2A> method of a <xref:System.Windows.Forms.Form> and pass in a value of `false`, the form will not be visible until you call <xref:System.Windows.Forms.Control.SetTopLevel%2A> again, passing in a value of `true`.  
   
  ]]></format>
         </remarks>
@@ -14261,7 +14261,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example adds a <xref:System.Windows.Forms.Button> to a form and sets some of its common properties. The example anchors the button to the bottom-right corner of the form so it keeps its relative position as the form is resized. Next it sets the <xref:System.Windows.Forms.Control.BackgroundImage%2A> and resizes the button to the same size as the<xref:System.Drawing.Image>. The example then sets the <xref:System.Windows.Forms.Control.TabStop%2A> to `true` and sets the <xref:System.Windows.Forms.Control.TabIndex%2A> property. Lastly, it adds an event handler to handle the <xref:System.Windows.Forms.Control.Click> event of the button. This example requires that you have an <xref:System.Windows.Forms.ImageList> named `imageList1`.  
+ The following code example adds a <xref:System.Windows.Forms.Button> to a form and sets some of its common properties. The example anchors the button to the bottom-right corner of the form so it keeps its relative position as the form is resized. Next it sets the <xref:System.Windows.Forms.Control.BackgroundImage%2A> and resizes the button to the same size as the <xref:System.Drawing.Image>. The example then sets the <xref:System.Windows.Forms.Control.TabStop%2A> to `true` and sets the <xref:System.Windows.Forms.Control.TabIndex%2A> property. Lastly, it adds an event handler to handle the <xref:System.Windows.Forms.Control.Click> event of the button. This example requires that you have an <xref:System.Windows.Forms.ImageList> named `imageList1`.  
   
  [!code-cpp[Windows.Forms.Control Properties#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CPP/controlproperties.cpp#3)]
  [!code-csharp[Windows.Forms.Control Properties#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Properties/CS/controlproperties.cs#3)]
@@ -15256,7 +15256,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you change the focus by using the keyboard (TAB, SHIFT+TAB, and so on), by calling the <xref:System.Windows.Forms.Control.Select%2A>or <xref:System.Windows.Forms.Control.SelectNextControl%2A> methods, or by setting the <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A?displayProperty=fullName> property to the current form, focus events occur in the following order:  
+ When you change the focus by using the keyboard (TAB, SHIFT+TAB, and so on), by calling the <xref:System.Windows.Forms.Control.Select%2A> or <xref:System.Windows.Forms.Control.SelectNextControl%2A> methods, or by setting the <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A?displayProperty=fullName> property to the current form, focus events occur in the following order:  
   
 1.  <xref:System.Windows.Forms.Control.Enter>  
   

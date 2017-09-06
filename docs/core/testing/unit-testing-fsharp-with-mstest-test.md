@@ -122,7 +122,9 @@ member this.TestEvenSequence() =
     Assert.AreEqual(expected, actual)
 ```
 
-Your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `Matservice` class that works:
+Notice that the `expected` sequence has been converted to a list. The MSTest library relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>. 
+
+When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `Mathservice` class that works:
 
 ```csharp
 let sumOfSquares xs =
@@ -152,6 +154,8 @@ let sumOfSquares xs =
     xs
     |> Seq.filter isOdd |> Seq.toList
 ```
+
+Notice the call to `Seq.toList`. That creates a list, which implements the <xref:System.Collections.ICollection> interface.
 
 There's one more step to go: square each of the odd numbers. Start by writing a new test:
 

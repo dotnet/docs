@@ -204,7 +204,7 @@ dotnet new -u C:/Users/<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate
 ```
 
 > [!NOTE]
-> To uninstall the template from your local file system, you will need to fully-qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
+> To uninstall the template from your local file system, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
 > Additionally, do not include a final terminating directory slash on your template path.
 
 ## See also

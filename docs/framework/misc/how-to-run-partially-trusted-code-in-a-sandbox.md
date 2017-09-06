@@ -121,7 +121,7 @@ AppDomain.CreateDomain( string friendlyName,
   
     -   Use the <xref:System.Activator.CreateInstanceFrom%2A> method to create an instance of a class derived from <xref:System.MarshalByRefObject> in the new <xref:System.AppDomain>.  
   
-     The second method is preferable, because it makes it easier to pass parameters to the new <xref:System.AppDomain> instance. The<xref:System.Activator.CreateInstanceFrom%2A> method provides two important features:  
+     The second method is preferable, because it makes it easier to pass parameters to the new <xref:System.AppDomain> instance. The <xref:System.Activator.CreateInstanceFrom%2A> method provides two important features:  
   
     -   You can use a code base that points to a location that does not contain your assembly.  
   

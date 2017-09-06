@@ -62,7 +62,7 @@ Be sure to choose your collection class carefully. Using the wrong type can rest
   
     -   The <xref:System.Collections.Hashtable> class sorts its elements by their hash codes.  
   
-    -   The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602>generic classes sort their elements by the key, based on implementations of the <xref:System.Collections.IComparer> interface and the <xref:System.Collections.Generic.IComparer%601> generic interface.  
+    -   The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602> generic classes sort their elements by the key, based on implementations of the <xref:System.Collections.IComparer> interface and the <xref:System.Collections.Generic.IComparer%601> generic interface.  
   
     -   <xref:System.Collections.ArrayList> provides a <xref:System.Collections.ArrayList.Sort%2A> method that takes an <xref:System.Collections.IComparer> implementation as a parameter. Its generic counterpart, the <xref:System.Collections.Generic.List%601> generic class, provides a <xref:System.Collections.Generic.List%601.Sort%2A> method that takes an implementation of the <xref:System.Collections.Generic.IComparer%601> generic interface as a parameter.  
   

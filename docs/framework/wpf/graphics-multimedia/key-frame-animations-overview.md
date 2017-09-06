@@ -251,7 +251,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
 ### Special Value, Paced  
  Use <xref:System.Windows.Media.Animation.KeyTime.Paced%2A> timing when you want to animate at a constant rate.  
   
- A <xref:System.Windows.Media.Animation.KeyTime.Paced%2A> key time allocates the available time according to the length of each of the key frames to determine the duration of each frame.  This will provide the behavior that the velocity or pace of the animation remains constant.  The following example shows an animation with a duration of 10 seconds and three key frames whose key times are specified as<xref:System.Windows.Media.Animation.KeyTime.Paced%2A>.  
+ A <xref:System.Windows.Media.Animation.KeyTime.Paced%2A> key time allocates the available time according to the length of each of the key frames to determine the duration of each frame.  This will provide the behavior that the velocity or pace of the animation remains constant.  The following example shows an animation with a duration of 10 seconds and three key frames whose key times are specified as <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>.  
   
  [!code-xaml[keyframes_ovw_snippet#PacedKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/KeyTimesExample.xaml#pacedkeytimeexample)]  
   

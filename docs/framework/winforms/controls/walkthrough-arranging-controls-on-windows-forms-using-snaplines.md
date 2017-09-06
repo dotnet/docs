@@ -181,7 +181,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 4.  Move the <xref:System.Windows.Forms.Label> control to the left of the <xref:System.Windows.Forms.TextBox> control, so it is aligned with the bottom edge of the <xref:System.Windows.Forms.TextBox> control. Note the snapline that appears along the bottom edges of the two controls.  
   
-5.  Move the <xref:System.Windows.Forms.Label>control slightly upward, until the <xref:System.Windows.Forms.Label>text and the <xref:System.Windows.Forms.TextBox> text are aligned. Note the differently styled snapline that appears, indicating when the text fields of both controls are aligned.  
+5.  Move the <xref:System.Windows.Forms.Label> control slightly upward, until the <xref:System.Windows.Forms.Label> text and the <xref:System.Windows.Forms.TextBox> text are aligned. Note the differently styled snapline that appears, indicating when the text fields of both controls are aligned.  
   
 ## Using Snaplines with Keyboard Navigation  
  Snaplines help you align controls when you are arranging them using the keyboard's arrow keys.  
@@ -243,7 +243,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 -   Try nesting a <xref:System.Windows.Forms.GroupBox> control within another <xref:System.Windows.Forms.GroupBox> control. Place a <xref:System.Windows.Forms.Button> control within the child <xref:System.Windows.Forms.GroupBox> control, and another within the parent <xref:System.Windows.Forms.GroupBox> control. Move the <xref:System.Windows.Forms.Button> controls around to see how the snaplines cross container boundaries.  
   
--   Create a column of <xref:System.Windows.Forms.TextBox> controls and a corresponding column of <xref:System.Windows.Forms.Label> controls. Set the value of the <xref:System.Windows.Forms.Label>controls' <xref:System.Windows.Forms.Control.AutoSize%2A> property to `true`. Use snaplines to move the <xref:System.Windows.Forms.Label>controls so their displayed text is aligned with the text in the <xref:System.Windows.Forms.TextBox> controls.  
+-   Create a column of <xref:System.Windows.Forms.TextBox> controls and a corresponding column of <xref:System.Windows.Forms.Label> controls. Set the value of the <xref:System.Windows.Forms.Label> controls' <xref:System.Windows.Forms.Control.AutoSize%2A> property to `true`. Use snaplines to move the <xref:System.Windows.Forms.Label> controls so their displayed text is aligned with the text in the <xref:System.Windows.Forms.TextBox> controls.  
   
  For information about Windows user interface design, see the book *Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers* Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1).  
   

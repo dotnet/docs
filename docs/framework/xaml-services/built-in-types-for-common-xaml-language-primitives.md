@@ -124,7 +124,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib">
  For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.15 and 5.4.9](http://go.microsoft.com/fwlink/?LinkId=114525).  
   
 ### x:Byte  
- For CLR backing, the `x:Byte` primitive corresponds to <xref:System.Byte>. A<xref:System.Byte> / `x:Byte` is treated as unsigned.  
+ For CLR backing, the `x:Byte` primitive corresponds to <xref:System.Byte>. A <xref:System.Byte> / `x:Byte` is treated as unsigned.  
   
  For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.10 and 5.4.4](http://go.microsoft.com/fwlink/?LinkId=114525).  
   

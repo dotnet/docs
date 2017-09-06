@@ -49,7 +49,7 @@ The [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] introduc
   
 |Title|Description|  
 |-----------|-----------------|  
-|[BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)|Describes the functionality provided by the <xref:System.Collections.Concurrent.BlockingCollection%601>type.|  
+|[BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)|Describes the functionality provided by the <xref:System.Collections.Concurrent.BlockingCollection%601> type.|  
 |[How to: Add and Remove Items from a ConcurrentDictionary](../../../../docs/standard/collections/thread-safe/how-to-add-and-remove-items.md)|Describes how to add and remove elements from a <xref:System.Collections.Concurrent.ConcurrentDictionary%602>|  
 |[How to: Add and Take Items Individually from a BlockingCollection](../../../../docs/standard/collections/thread-safe/how-to-add-and-take-items.md)|Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.|  
 |[How to: Add Bounding and Blocking Functionality to a Collection](../../../../docs/standard/collections/thread-safe/how-to-add-bounding-and-blocking.md)|Describes how to use any collection class as the underlying storage mechanism for an <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> collection.|  

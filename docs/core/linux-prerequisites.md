@@ -24,7 +24,7 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 .NET Core 2.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distros.
 
-NET Core 2.x is supported on the following Linux x64 distributions/versions:
+NET Core 2.x is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:
 
  * Red Hat Enterprise Linux 7
  * CentOS 7
@@ -40,7 +40,7 @@ See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-.NET Core 1.x is supported on the following Linux x64 distributions/versions:
+.NET Core 1.x is supported on the following Linux 64-bit (`x86_64` or `amd64`) distributions/versions:
 
 * Red Hat Enterprise Linux 7
 * CentOS 7

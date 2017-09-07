@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""file access, file I/O in Visual Basic"", ""file attributes, determining"", ""streams, fundamental operations"", ""file permissions"", ""streams"", ""streams, definition""]"]
+helpviewer_keywords: ["file access, file I/O in Visual Basic", "file attributes, determining", "streams, fundamental operations", "file permissions", "streams", "streams, definition"]
 ms.assetid: 49d837c0-cf28-416f-8606-4d83d7b479ef
 caps.latest.revision: 30
 author: dotnet-bot

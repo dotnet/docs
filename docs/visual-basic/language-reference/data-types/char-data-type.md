@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Char"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""literal type characters [VB], C"", ""Char data type"", ""C literal type character [VB]"", ""data types [VB], assigning"", ""Char data type [VB], character literals""]"]
+helpviewer_keywords: ["literal type characters [VB], C", "Char data type", "C literal type character [VB]", "data types [VB], assigning", "Char data type [VB], character literals"]
 ms.assetid: cd7547a9-7855-4e8e-b216-35d74a362657
 caps.latest.revision: 17
 author: dotnet-bot

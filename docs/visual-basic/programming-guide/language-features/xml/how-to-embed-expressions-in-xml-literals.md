@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""embedded expressions [VB]"", ""XML literals [VB], embedded expressions""]"]
+helpviewer_keywords: ["embedded expressions [VB]", "XML literals [VB], embedded expressions"]
 ms.assetid: 75016fad-0141-42de-8564-5051be29487e
 caps.latest.revision: 16
 author: dotnet-bot

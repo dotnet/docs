@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, elements of"", ""Visual Basic code""]"]
+helpviewer_keywords: ["Visual Basic code, elements of", "Visual Basic code"]
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
 caps.latest.revision: 18
 author: dotnet-bot

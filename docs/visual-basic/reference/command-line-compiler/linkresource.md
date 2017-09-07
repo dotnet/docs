@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/linkresource compiler option [VB]"", ""-linkresource compiler option [VB]"", ""linkresource compiler option [VB]"", ""/linkres compiler option [VB]"", ""linkres compiler option [VB]"", ""-linkres compiler option [VB]""]"]
+helpviewer_keywords: ["/linkresource compiler option [VB]", "-linkresource compiler option [VB]", "linkresource compiler option [VB]", "/linkres compiler option [VB]", "linkres compiler option [VB]", "-linkres compiler option [VB]"]
 ms.assetid: cf4dcad8-17b7-404c-9184-29358aa05b15
 caps.latest.revision: 16
 author: dotnet-bot

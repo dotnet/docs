@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""structures [VB]"", ""user-defined data types [VB], structures"", ""user-defined types [VB], about user-defined types"", ""data types [VB], user-defined"", ""user-defined data types [VB], about user-defined data types"", ""types [VB], user-defined""]"]
+helpviewer_keywords: ["structures [VB]", "user-defined data types [VB], structures", "user-defined types [VB], about user-defined types", "data types [VB], user-defined", "user-defined data types [VB], about user-defined data types", "types [VB], user-defined"]
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
 caps.latest.revision: 13
 author: dotnet-bot

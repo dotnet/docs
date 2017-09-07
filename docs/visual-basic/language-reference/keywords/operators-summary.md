@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operators [VB], about operators [VB]"", ""symbols, operators"", ""Visual Basic code, operators""]"]
+helpviewer_keywords: ["operators [VB], about operators [VB]", "symbols, operators", "Visual Basic code, operators"]
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
 caps.latest.revision: 13
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DLLs, calling"", ""Windows API, walkthroughs"", ""platform invoke, walkthroughs"", ""API calls [VB], walkthroughs [VB]"", ""Windows API, calling"", ""walkthroughs [VB], API calls"", ""DllImport attribute, calling Windows API"", ""Declare statement [VB], declaring DLL functions""]"]
+helpviewer_keywords: ["DLLs, calling", "Windows API, walkthroughs", "platform invoke, walkthroughs", "API calls [VB], walkthroughs [VB]", "Windows API, calling", "walkthroughs [VB], API calls", "DllImport attribute, calling Windows API", "Declare statement [VB], declaring DLL functions"]
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
 caps.latest.revision: 20
 author: dotnet-bot

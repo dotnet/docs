@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater, walkthrough""]"]
+helpviewer_keywords: ["DataRepeater, walkthrough"]
 ms.assetid: 65dcdb95-6c3e-47cc-987d-190000f71653
 caps.latest.revision: 12
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""files [VB], parsing"", ""text files [VB], tasks"", ""reading text files [VB], comma-delimited"", ""text files [VB], reading""]"]
+helpviewer_keywords: ["files [VB], parsing", "text files [VB], tasks", "reading text files [VB], comma-delimited", "text files [VB], reading"]
 ms.assetid: a8413fe4-0dba-49c8-8692-44fb67a9ec4f
 caps.latest.revision: 19
 author: dotnet-bot

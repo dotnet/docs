@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/recurse compiler option [VB]"", ""-recurse compiler option [VB]"", ""recurse compiler option [VB]""]"]
+helpviewer_keywords: ["/recurse compiler option [VB]", "-recurse compiler option [VB]", "recurse compiler option [VB]"]
 ms.assetid: 84a0b670-33ae-44c4-a46a-b90388809317
 caps.latest.revision: 12
 author: dotnet-bot

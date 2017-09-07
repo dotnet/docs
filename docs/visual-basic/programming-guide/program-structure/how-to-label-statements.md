@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""colons (:)"", ""statements [VB], labels"", "": separator character"", ""Visual Basic code, labeling statements""]"]
+helpviewer_keywords: ["colons (:)", "statements [VB], labels", ": separator character", "Visual Basic code, labeling statements"]
 ms.assetid: 38f1ff43-2054-42cb-963b-1998e60c6ed4
 caps.latest.revision: 18
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operators [VB], arithmetic"", ""arithmetic operators [VB]"", ""math operators [VB]""]"]
+helpviewer_keywords: ["operators [VB], arithmetic", "arithmetic operators [VB]", "math operators [VB]"]
 ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
 caps.latest.revision: 11
 author: dotnet-bot

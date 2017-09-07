@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [LINQ in Visual Basic], about LINQ in Visual Basic queries"", ""query execution [LINQ in Visual Basic]"", ""range variables [VB]"", ""LINQ [VB]"", ""LINQ [VB], about LINQ in Visual Basic"", ""query expressions [LINQ in Visual Basic]"", ""LINQ"", ""deferred execution"", ""iteration variables [VB]""]"]
+helpviewer_keywords: ["queries [LINQ in Visual Basic], about LINQ in Visual Basic queries", "query execution [LINQ in Visual Basic]", "range variables [VB]", "LINQ [VB]", "LINQ [VB], about LINQ in Visual Basic", "query expressions [LINQ in Visual Basic]", "LINQ", "deferred execution", "iteration variables [VB]"]
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
 caps.latest.revision: 28
 author: dotnet-bot

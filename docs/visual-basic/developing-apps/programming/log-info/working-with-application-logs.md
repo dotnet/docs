@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""logs, application"", ""application event logs, Visual Basic"", ""application event logs""]"]
+helpviewer_keywords: ["logs, application", "application event logs, Visual Basic", "application event logs"]
 ms.assetid: 2581afd1-5791-4bc4-86b2-46244e9fe468
 caps.latest.revision: 21
 author: dotnet-bot

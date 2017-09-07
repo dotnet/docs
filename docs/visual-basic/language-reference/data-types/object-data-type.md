@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Object", "vb.Variant"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""object variables [VB], Object type"", ""data types [VB], assigning"", ""Object data type"", ""Object data type [VB], reference""]"]
+helpviewer_keywords: ["object variables [VB], Object type", "data types [VB], assigning", "Object data type", "Object data type [VB], reference"]
 ms.assetid: 61ea4a7c-3b3d-48d4-adc4-eacfa91779b2
 caps.latest.revision: 19
 author: dotnet-bot

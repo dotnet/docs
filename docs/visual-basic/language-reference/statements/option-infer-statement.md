@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.OptionInfer", "vb.Infer"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""variables [VB], declaring"", ""Option Infer statement [VB]"", ""Infer keyword [VB]"", ""declaring variables [VB], inferred"", ""inferred variable declaration""]"]
+helpviewer_keywords: ["variables [VB], declaring", "Option Infer statement [VB]", "Infer keyword [VB]", "declaring variables [VB], inferred", "inferred variable declaration"]
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
 caps.latest.revision: 72
 author: dotnet-bot

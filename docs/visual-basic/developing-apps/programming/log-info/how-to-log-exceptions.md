@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""exceptions, logging"", ""exceptions, tracking""]"]
+helpviewer_keywords: ["exceptions, logging", "exceptions, tracking"]
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
 caps.latest.revision: 19
 author: dotnet-bot

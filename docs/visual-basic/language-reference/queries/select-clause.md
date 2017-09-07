@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QuerySelect"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Select statement [VB]"", ""Select clause [VB]"", ""queries [VB], Select""]"]
+helpviewer_keywords: ["Select statement [VB]", "Select clause [VB]", "queries [VB], Select"]
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
 caps.latest.revision: 21
 author: dotnet-bot

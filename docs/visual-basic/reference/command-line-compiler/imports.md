@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/imports compiler option [VB]"", ""imports compiler option [VB]"", ""-imports compiler option [VB]""]"]
+helpviewer_keywords: ["/imports compiler option [VB]", "imports compiler option [VB]", "-imports compiler option [VB]"]
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
 caps.latest.revision: 15
 author: dotnet-bot

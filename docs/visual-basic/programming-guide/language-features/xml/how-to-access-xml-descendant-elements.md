@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""XML descendent axis property [VB]"", ""XML axis [VB], descendent"", ""descendent axis property [VB]"", ""XML [VB], accessing""]"]
+helpviewer_keywords: ["XML descendent axis property [VB]", "XML axis [VB], descendent", "descendent axis property [VB]", "XML [VB], accessing"]
 ms.assetid: aabfa258-4112-4e7e-bab9-403f96072ef7
 caps.latest.revision: 19
 author: dotnet-bot

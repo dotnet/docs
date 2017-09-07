@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ReDim", "vb.Preserve"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""fixed-length strings [VB], declaring"", ""ReDim statement [VB], syntax"", ""dynamic arrays [VB], ReDim statement"", ""arrays [VB], reallocating"", ""arrays [VB], reinitializing"", ""arrays [VB], dimensions"", ""scalars, and arrays"", ""scalars"", ""declarations [VB], dynamic arrays"", ""variables [VB], scalar"", ""ReDim statement [VB]"", ""data types [VB], assigning"", ""As keyword [VB], in ReDim statement"", ""To keyword [VB], ReDim statement"", ""arrays [VB], declaring"", ""Preserve keyword [VB], ReDim statement"", ""storage [VB], allocating"", ""arrays [VB], and scalars"", ""declaration statements [VB]"", ""scalar variables [VB]""]"]
+helpviewer_keywords: ["fixed-length strings [VB], declaring", "ReDim statement [VB], syntax", "dynamic arrays [VB], ReDim statement", "arrays [VB], reallocating", "arrays [VB], reinitializing", "arrays [VB], dimensions", "scalars, and arrays", "scalars", "declarations [VB], dynamic arrays", "variables [VB], scalar", "ReDim statement [VB]", "data types [VB], assigning", "As keyword [VB], in ReDim statement", "To keyword [VB], ReDim statement", "arrays [VB], declaring", "Preserve keyword [VB], ReDim statement", "storage [VB], allocating", "arrays [VB], and scalars", "declaration statements [VB]", "scalar variables [VB]"]
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
 caps.latest.revision: 25
 author: dotnet-bot

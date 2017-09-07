@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""doc compiler option [VB]"", ""-doc compiler option [VB]"", ""/doc compiler option [VB]""]"]
+helpviewer_keywords: ["doc compiler option [VB]", "-doc compiler option [VB]", "/doc compiler option [VB]"]
 ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
 caps.latest.revision: 18
 author: dotnet-bot

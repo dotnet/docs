@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.sbyte"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""numbers [VB], whole"", ""whole numbers"", ""integral data types [VB]"", ""integer numbers"", ""numbers [VB], integer"", ""integers [VB], data types"", ""integers [VB], types"", ""data types [VB], integral"", ""SByte data type""]"]
+helpviewer_keywords: ["numbers [VB], whole", "whole numbers", "integral data types [VB]", "integer numbers", "numbers [VB], integer", "integers [VB], data types", "integers [VB], types", "data types [VB], integral", "SByte data type"]
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
 caps.latest.revision: 18
 author: "rpetrusha"

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""custom log listeners"", ""My.Application.Log object, custom log listeners""]"]
+helpviewer_keywords: ["custom log listeners", "My.Application.Log object, custom log listeners"]
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
 caps.latest.revision: 19
 author: dotnet-bot

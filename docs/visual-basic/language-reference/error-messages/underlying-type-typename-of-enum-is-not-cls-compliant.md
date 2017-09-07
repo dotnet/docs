@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vbc40032", "bc40032"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""BC40032""]"]
+helpviewer_keywords: ["BC40032"]
 ms.assetid: 32bf1949-fd73-456c-a323-bf1ffe1320ed
 caps.latest.revision: 8
 author: dotnet-bot

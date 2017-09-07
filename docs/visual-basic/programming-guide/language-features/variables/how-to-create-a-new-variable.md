@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Dim statement [VB]"", ""variables [VB], creating""]"]
+helpviewer_keywords: ["Dim statement [VB]", "variables [VB], creating"]
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
 caps.latest.revision: 29
 author: dotnet-bot

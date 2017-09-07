@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["StructureConstraint", "vb.StructureConstraint", "ClassConstraint", "vb.ClassConstraint"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""class constraint"", ""constraints, Visual Basic generic types"", ""generic parameters"", ""generics [VB], constraints"", ""generics [VB], type list"", ""structure constraint"", ""constraints, in type parameters"", ""generics [VB], generic types"", ""parameters [VB], type"", ""constraints, Structure keyword"", ""type parameters [VB], constraints"", ""types [VB], generic"", ""parameters [VB], generic"", ""generics [VB], type parameters"", ""type parameters"", ""constraints, Class keyword""]"]
+helpviewer_keywords: ["class constraint", "constraints, Visual Basic generic types", "generic parameters", "generics [VB], constraints", "generics [VB], type list", "structure constraint", "constraints, in type parameters", "generics [VB], generic types", "parameters [VB], type", "constraints, Structure keyword", "type parameters [VB], constraints", "types [VB], generic", "parameters [VB], generic", "generics [VB], type parameters", "type parameters", "constraints, Class keyword"]
 ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
 caps.latest.revision: 33
 author: dotnet-bot

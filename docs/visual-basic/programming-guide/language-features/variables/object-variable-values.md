@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""object variables [VB], values"", ""values [VB], of object variables"", ""data types [VB], object variable"", ""variables [VB], object""]"]
+helpviewer_keywords: ["object variables [VB], values", "values [VB], of object variables", "data types [VB], object variable", "variables [VB], object"]
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
 caps.latest.revision: 18
 author: dotnet-bot

@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Interface"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""interface statement [VB]"", ""interfaces [VB], interface definition""]"]
+helpviewer_keywords: ["interface statement [VB]", "interfaces [VB], interface definition"]
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
 caps.latest.revision: 26
 author: dotnet-bot

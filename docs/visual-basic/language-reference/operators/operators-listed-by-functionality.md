@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operators [VB]""]"]
+helpviewer_keywords: ["operators [VB]"]
 ms.assetid: d1fb027c-872b-4ccc-afc8-2380e3f65d4a
 caps.latest.revision: 8
 author: dotnet-bot

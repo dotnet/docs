@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.AnonymousType"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""anonymous types [VB], about anonymous types"", ""anonymous types [VB]"", ""types [VB], anonymous""]"]
+helpviewer_keywords: ["anonymous types [VB], about anonymous types", "anonymous types [VB]", "types [VB], anonymous"]
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
 caps.latest.revision: 46
 author: dotnet-bot

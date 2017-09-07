@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryTake"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Take statement [VB]"", ""queries [VB], Take"", ""Take clause [VB]""]"]
+helpviewer_keywords: ["Take statement [VB]", "queries [VB], Take", "Take clause [VB]"]
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
 caps.latest.revision: 15
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""serial ports, retrieving strings"", ""strings [VB], retrieving from serial ports"", ""My.Resources object""]"]
+helpviewer_keywords: ["serial ports, retrieving strings", "strings [VB], retrieving from serial ports", "My.Resources object"]
 ms.assetid: 8371ce2c-e1c7-476b-a86d-9afc2614b6b7
 caps.latest.revision: 21
 author: dotnet-bot

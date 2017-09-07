@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryJoinIn", "vb.QueryJoin", "vb.QueryJoinOn"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [VB], Join"", ""Join statement [VB]"", ""Join clause [VB]""]"]
+helpviewer_keywords: ["queries [VB], Join", "Join statement [VB]", "Join clause [VB]"]
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
 caps.latest.revision: 19
 author: dotnet-bot

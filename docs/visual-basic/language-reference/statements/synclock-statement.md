@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.SyncLock", "SyncLock"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""threading [VB], locks"", ""SyncLock statement [VB]"", ""locks, threads""]"]
+helpviewer_keywords: ["threading [VB], locks", "SyncLock statement [VB]", "locks, threads"]
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
 caps.latest.revision: 17
 author: dotnet-bot

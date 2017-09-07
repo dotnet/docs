@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""data types [VB], character"", ""String data type [VB], character data types"", ""character data types [VB]"", ""Char data type [VB], character data types"", ""data types [VB], choosing""]"]
+helpviewer_keywords: ["data types [VB], character", "String data type [VB], character data types", "character data types [VB]", "Char data type [VB], character data types", "data types [VB], choosing"]
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
 caps.latest.revision: 23
 author: dotnet-bot

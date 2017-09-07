@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""RectangleShape control [VB], topic list"", ""OvalShape control [VB], topic list"", ""Shape control [VB]"", ""Line control [VB], topic list""]"]
+helpviewer_keywords: ["RectangleShape control [VB], topic list", "OvalShape control [VB], topic list", "Shape control [VB]", "Line control [VB], topic list"]
 ms.assetid: 29ee3a5f-920f-4677-85bc-bd7425ab57e8
 caps.latest.revision: 9
 author: dotnet-bot

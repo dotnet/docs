@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""interoperability, COM and .NET framework objects"", ""COM interop [VB]"", ""shared components""]"]
+helpviewer_keywords: ["interoperability, COM and .NET framework objects", "COM interop [VB]", "shared components"]
 ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d
 caps.latest.revision: 15
 author: dotnet-bot

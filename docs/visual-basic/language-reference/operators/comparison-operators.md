@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.<>", "vb.>=", "vb.<=", "vb.>", "vb.<"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""greater than or equal to operator [VB]"", "">= operator [VB]"", ""= operator [VB]"", ""< operator [VB]"", ""less than operator [VB]"", ""relational operators [VB], syntax"", ""Like operator [VB]"", ""<> operator [VB]"", ""> operator [VB]"", ""equal operator [VB]"", ""less than or equal to operator [VB]"", ""symbols, operators"", ""greater than operator [VB]"", ""comparing values [VB]"", ""operators [VB], relational"", ""string comparison [VB]"", ""not equal to comparison operator [VB]"", ""<= operator [VB]"", ""operators [VB], comparison"", ""Is operator [VB]"", ""comparison operators [VB], Visual Basicl""]"]
+helpviewer_keywords: ["greater than or equal to operator [VB]", ">= operator [VB]", "= operator [VB]", "< operator [VB]", "less than operator [VB]", "relational operators [VB], syntax", "Like operator [VB]", "<> operator [VB]", "> operator [VB]", "equal operator [VB]", "less than or equal to operator [VB]", "symbols, operators", "greater than operator [VB]", "comparing values [VB]", "operators [VB], relational", "string comparison [VB]", "not equal to comparison operator [VB]", "<= operator [VB]", "operators [VB], comparison", "Is operator [VB]", "comparison operators [VB], Visual Basicl"]
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
 caps.latest.revision: 20
 author: dotnet-bot

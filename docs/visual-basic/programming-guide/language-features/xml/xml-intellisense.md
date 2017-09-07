@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, XML"", ""XML IntelliSense [VB]"", ""XML [VB], IntelliSense"", ""IntelliSense [VB], XML""]"]
+helpviewer_keywords: ["Visual Basic code, XML", "XML IntelliSense [VB]", "XML [VB], IntelliSense", "IntelliSense [VB], XML"]
 ms.assetid: 59506ce9-d64e-417e-90fc-e9fe19f0a8fa
 caps.latest.revision: 27
 author: dotnet-bot

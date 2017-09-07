@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Async"]
-helpviewer_keywords: ["[""Async [VB]"", ""Async keyword [VB]""]"]
+helpviewer_keywords: ["Async [VB]", "Async keyword [VB]"]
 ms.assetid: 1be8b4b5-9689-41b5-bd33-b906bfd53bc5
 caps.latest.revision: 37
 author: dotnet-bot

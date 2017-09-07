@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Web services [VB], My.WebServices object"", ""My.WebServices object"", ""applications [VB], Web services""]"]
+helpviewer_keywords: ["Web services [VB], My.WebServices object", "My.WebServices object", "applications [VB], Web services"]
 ms.assetid: 8ad5405b-e771-42b1-82d3-ce97af2cea9e
 caps.latest.revision: 12
 author: dotnet-bot

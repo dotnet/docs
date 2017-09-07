@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["VisualBasic"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""run-time libraries, Visual Basic"", ""libraries, Visual Basic run-time"", ""Microsoft.VisualBasic namespace"", ""members [VB], Visual Basic run-time library""]"]
+helpviewer_keywords: ["run-time libraries, Visual Basic", "libraries, Visual Basic run-time", "Microsoft.VisualBasic namespace", "members [VB], Visual Basic run-time library"]
 ms.assetid: f5e82c6e-3500-452b-bdb8-78f0d5477604
 caps.latest.revision: 16
 author: dotnet-bot

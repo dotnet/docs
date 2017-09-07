@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], arguments"", ""procedures [VB], parameters"", ""procedure arguments"", ""arguments [VB], passing by reference"", ""Visual Basic code, procedures"", ""arguments [VB], ByVal"", ""arguments [VB], passing by value"", ""procedure parameters"", ""procedures [VB], calling"", ""arguments [VB], ByRef"", ""arguments [VB], changing value""]"]
+helpviewer_keywords: ["procedures [VB], arguments", "procedures [VB], parameters", "procedure arguments", "arguments [VB], passing by reference", "Visual Basic code, procedures", "arguments [VB], ByVal", "arguments [VB], passing by value", "procedure parameters", "procedures [VB], calling", "arguments [VB], ByRef", "arguments [VB], changing value"]
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227
 caps.latest.revision: 14
 author: dotnet-bot

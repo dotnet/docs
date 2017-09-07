@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""language reference"", ""Visual Basic code, language reference""]"]
+helpviewer_keywords: ["language reference", "Visual Basic code, language reference"]
 ms.assetid: df6e7c50-5f3e-4381-98ed-ba5c3e9fe228
 caps.latest.revision: 21
 author: dotnet-bot

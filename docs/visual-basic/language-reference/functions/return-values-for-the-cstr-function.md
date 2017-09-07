@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""times [VB], CStr Function return values"", ""type conversion [VB]"", ""dates [VB], CStr Function return values"", ""CStr function"", ""strings [VB], return value"", ""Date data type [VB], converting"", ""dates [VB]"", ""String data type [VB], converting""]"]
+helpviewer_keywords: ["times [VB], CStr Function return values", "type conversion [VB]", "dates [VB], CStr Function return values", "CStr function", "strings [VB], return value", "Date data type [VB], converting", "dates [VB]", "String data type [VB], converting"]
 ms.assetid: 3aa744e7-1419-45d5-85e3-e5abc2953673
 caps.latest.revision: 14
 author: dotnet-bot

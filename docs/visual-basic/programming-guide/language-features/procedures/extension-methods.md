@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ExtensionMethods"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""extending data types [VB]"", ""extension methods [VB]""]"]
+helpviewer_keywords: ["extending data types [VB]", "extension methods [VB]"]
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
 caps.latest.revision: 41
 author: dotnet-bot

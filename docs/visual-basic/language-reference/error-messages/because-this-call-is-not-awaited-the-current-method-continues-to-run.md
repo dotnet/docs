@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["bc42358", "vbc42358"]
-helpviewer_keywords: ["[""BC42358""]"]
+helpviewer_keywords: ["BC42358"]
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
 caps.latest.revision: 8
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.<<="]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operator <<="", ""assignment statements [VB], compound"", ""<<= operator [VB]"", ""statements [VB], compound assignment"", ""operator<<="", ""compound assignment statements [VB]""]"]
+helpviewer_keywords: ["operator <<=", "assignment statements [VB], compound", "<<= operator [VB]", "statements [VB], compound assignment", "operator<<=", "compound assignment statements [VB]"]
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
 caps.latest.revision: 17
 author: dotnet-bot

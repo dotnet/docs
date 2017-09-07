@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Region", "vb.#Region"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic compiler, compiler directives"", ""#region directive"", ""region directive (#region)"", ""#Region keyword [VB]""]"]
+helpviewer_keywords: ["Visual Basic compiler, compiler directives", "#region directive", "region directive (#region)", "#Region keyword [VB]"]
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
 caps.latest.revision: 14
 author: dotnet-bot

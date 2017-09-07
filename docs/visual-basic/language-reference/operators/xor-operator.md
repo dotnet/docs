@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Xor"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""exclusive OR operator [VB]"", ""logical exclusion"", ""operators [VB], exclusive or"", ""exclusion operator [VB]"", ""operators [VB], bitwise"", ""bitwise operators [VB], XOR operator"", ""Xor operator [VB]"", ""Xor keyword [VB]"", ""bitwise comparison [VB]""]"]
+helpviewer_keywords: ["exclusive OR operator [VB]", "logical exclusion", "operators [VB], exclusive or", "exclusion operator [VB]", "operators [VB], bitwise", "bitwise operators [VB], XOR operator", "Xor operator [VB]", "Xor keyword [VB]", "bitwise comparison [VB]"]
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
 caps.latest.revision: 17
 author: dotnet-bot

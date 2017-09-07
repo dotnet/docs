@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""main compiler option [VB]"", ""/main compiler option [VB]"", ""-main compiler option [VB]""]"]
+helpviewer_keywords: ["main compiler option [VB]", "/main compiler option [VB]", "-main compiler option [VB]"]
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
 caps.latest.revision: 19
 author: dotnet-bot

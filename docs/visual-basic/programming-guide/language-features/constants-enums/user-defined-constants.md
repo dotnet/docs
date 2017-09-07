@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""constants [VB], circular references"", ""Const statement [VB], user-defined constants"", ""user-defined constants [VB]"", ""scope [VB], constants"", ""constants [VB], user-defined"", ""circular references between constants [VB]""]"]
+helpviewer_keywords: ["constants [VB], circular references", "Const statement [VB], user-defined constants", "user-defined constants [VB]", "scope [VB], constants", "constants [VB], user-defined", "circular references between constants [VB]"]
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
 caps.latest.revision: 19
 author: dotnet-bot

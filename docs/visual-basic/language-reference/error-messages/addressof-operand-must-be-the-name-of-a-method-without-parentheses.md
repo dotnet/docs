@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vbc30577", "bc30577"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""BC30577""]"]
+helpviewer_keywords: ["BC30577"]
 ms.assetid: c2c55640-5c61-4e66-97a4-4322020c6001
 caps.latest.revision: 10
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Function procedures"", ""return values [VB], function procedures"", ""Visual Basic code, procedures"", ""procedures [VB], calling"", ""procedures [VB], Function procedures"", ""syntax [VB], function procedures""]"]
+helpviewer_keywords: ["Function procedures", "return values [VB], function procedures", "Visual Basic code, procedures", "procedures [VB], calling", "procedures [VB], Function procedures", "syntax [VB], function procedures"]
 ms.assetid: 1b9f632c-553b-4cb6-920a-ded117ead8c0
 caps.latest.revision: 27
 author: dotnet-bot

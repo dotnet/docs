@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""delaysign compiler option [VB]"", ""/delaysign compiler option [VB]"", ""-delaysign compiler option [VB]""]"]
+helpviewer_keywords: ["delaysign compiler option [VB]", "/delaysign compiler option [VB]", "-delaysign compiler option [VB]"]
 ms.assetid: c76e61a4-1884-4252-9fb2-377f99caa690
 caps.latest.revision: 19
 author: dotnet-bot

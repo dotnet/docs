@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.String"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""strings [VB], character"", ""strings [VB], fixed-length"", ""string keyword [VB]"", ""fixed-length strings [VB], string data type"", ""literals [VB], string"", ""text [VB], String data type"", ""$ identifier type character"", ""String data type"", ""fixed-length strings"", ""string literals [VB]"", ""data types [VB], assigning"", ""String literals [VB]"", ""identifier type characters [VB], $""]"]
+helpviewer_keywords: ["strings [VB], character", "strings [VB], fixed-length", "string keyword [VB]", "fixed-length strings [VB], string data type", "literals [VB], string", "text [VB], String data type", "$ identifier type character", "String data type", "fixed-length strings", "string literals [VB]", "data types [VB], assigning", "String literals [VB]", "identifier type characters [VB], $"]
 ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
 caps.latest.revision: 19
 author: dotnet-bot

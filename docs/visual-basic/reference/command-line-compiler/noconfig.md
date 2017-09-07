@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""noconfig compiler option [VB]"", ""-noconfig compiler option [VB]"", ""/noconfig compiler option [VB]""]"]
+helpviewer_keywords: ["noconfig compiler option [VB]", "-noconfig compiler option [VB]", "/noconfig compiler option [VB]"]
 ms.assetid: a7405067-bd21-4171-adf4-a126fa3ad6c3
 caps.latest.revision: 15
 author: dotnet-bot

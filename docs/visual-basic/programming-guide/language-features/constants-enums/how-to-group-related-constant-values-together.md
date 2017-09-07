@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""enumerations [VB], constants"", ""constants [VB], grouping together""]"]
+helpviewer_keywords: ["enumerations [VB], constants", "constants [VB], grouping together"]
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
 caps.latest.revision: 17
 author: dotnet-bot

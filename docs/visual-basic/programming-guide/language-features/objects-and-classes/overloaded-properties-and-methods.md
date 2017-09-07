@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""properties [VB], overloading"", ""methods [VB], overloading"", ""shadowing"", ""names [VB], multiple procedures with same"", ""procedures [VB], mulltiples with same name"", ""classes [VB], properties"", ""classes [VB], methods"", ""method overloading"", ""Overloads keyword [VB], overloaded members""]"]
+helpviewer_keywords: ["properties [VB], overloading", "methods [VB], overloading", "shadowing", "names [VB], multiple procedures with same", "procedures [VB], mulltiples with same name", "classes [VB], properties", "classes [VB], methods", "method overloading", "Overloads keyword [VB], overloaded members"]
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
 caps.latest.revision: 12
 author: dotnet-bot

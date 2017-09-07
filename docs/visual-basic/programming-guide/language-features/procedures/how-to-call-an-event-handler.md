@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, procedures"", ""event handlers, calling"", ""event handlers"", ""procedures [VB], event handlers"", ""procedures [VB], calling""]"]
+helpviewer_keywords: ["Visual Basic code, procedures", "event handlers, calling", "event handlers", "procedures [VB], event handlers", "procedures [VB], calling"]
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
 caps.latest.revision: 19
 author: dotnet-bot

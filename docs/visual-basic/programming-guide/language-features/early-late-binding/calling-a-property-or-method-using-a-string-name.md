@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""passing operators [VB]"", ""strings [VB], passing new operators as"", ""objects [VB], setting properties"", ""setting properties, object properties at run time"", ""method calls [VB], strings"", ""methods [VB], calling with string names"", ""calling methods [VB], string names"", ""properties [VB], setting at run time"", ""CallByName function""]"]
+helpviewer_keywords: ["passing operators [VB]", "strings [VB], passing new operators as", "objects [VB], setting properties", "setting properties, object properties at run time", "method calls [VB], strings", "methods [VB], calling with string names", "calling methods [VB], string names", "properties [VB], setting at run time", "CallByName function"]
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
 caps.latest.revision: 17
 author: dotnet-bot

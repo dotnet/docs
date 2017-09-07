@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""examples [VB], moving files and directories"", ""I/O [VB], deleting folders"", ""I/O [VB], moving directories"", ""I/O [VB], copying directories"", ""examples [VB], creating files and directories"", ""I/O [VB], copying folders"", ""I/O [VB], moving folders"", ""examples [VB], copying files and directories"", ""I/O [VB], deleting directories"", ""I/O [VB], copying files"", ""examples [VB], renaming files and directories"", ""I/O [VB], creating folders"", ""I/O [VB], renaming files"", ""I/O [VB], deleting files"", ""I/O [VB], creating directories"", ""I/O [VB], creating files"", ""I/O [VB], renaming directories"", ""I/O [VB], renaming folders"", ""I/O [VB], moving files""]"]
+helpviewer_keywords: ["examples [VB], moving files and directories", "I/O [VB], deleting folders", "I/O [VB], moving directories", "I/O [VB], copying directories", "examples [VB], creating files and directories", "I/O [VB], copying folders", "I/O [VB], moving folders", "examples [VB], copying files and directories", "I/O [VB], deleting directories", "I/O [VB], copying files", "examples [VB], renaming files and directories", "I/O [VB], creating folders", "I/O [VB], renaming files", "I/O [VB], deleting files", "I/O [VB], creating directories", "I/O [VB], creating files", "I/O [VB], renaming directories", "I/O [VB], renaming folders", "I/O [VB], moving files"]
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
 caps.latest.revision: 14
 author: dotnet-bot

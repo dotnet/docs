@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Assembly", "vb.AssemblyAttribute", "Assembly"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Assembly modifier"", ""Assembly keyword [VB]"", ""attribute blocks, Assembly keyword""]"]
+helpviewer_keywords: ["Assembly modifier", "Assembly keyword [VB]", "attribute blocks, Assembly keyword"]
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
 caps.latest.revision: 15
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["My.MyWpfExtension.Windows"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My object"", ""My namespace"", ""My feature"", ""Visual Basic, programming in""]"]
+helpviewer_keywords: ["My object", "My namespace", "My feature", "Visual Basic, programming in"]
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
 caps.latest.revision: 26
 author: dotnet-bot

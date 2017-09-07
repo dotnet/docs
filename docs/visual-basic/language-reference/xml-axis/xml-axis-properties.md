@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""XML axis properties [VB]"", ""Visual Basic code, XML"", ""XML axis [VB]"", ""XML [VB], accessing""]"]
+helpviewer_keywords: ["XML axis properties [VB]", "Visual Basic code, XML", "XML axis [VB]", "XML [VB], accessing"]
 ms.assetid: 7e400e20-5d1e-4d22-a65c-9df79d5c1621
 caps.latest.revision: 9
 author: dotnet-bot

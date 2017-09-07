@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], parameters"", ""procedure overloading, indefinite number of parameters"", ""procedures [VB], defining"", ""Visual Basic code, procedures"", ""procedure parameters"", ""procedures [VB], overloading"", ""procedures [VB], multiple versions""]"]
+helpviewer_keywords: ["procedures [VB], parameters", "procedure overloading, indefinite number of parameters", "procedures [VB], defining", "Visual Basic code, procedures", "procedure parameters", "procedures [VB], overloading", "procedures [VB], multiple versions"]
 ms.assetid: c7042de2-2422-4039-94e8-ac298896af69
 caps.latest.revision: 18
 author: dotnet-bot

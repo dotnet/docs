@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""early binding [VB]"", ""declarations [VB], class"", ""classes [VB], declaring"", ""binding [VB], late and early"", ""object variables [VB], declaring"", ""variables [VB], object"", ""declaring variables [VB], object variables"", ""declaring classes [VB]"", ""late binding [VB]""]"]
+helpviewer_keywords: ["early binding [VB]", "declarations [VB], class", "classes [VB], declaring", "binding [VB], late and early", "object variables [VB], declaring", "variables [VB], object", "declaring variables [VB], object variables", "declaring classes [VB]", "late binding [VB]"]
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
 caps.latest.revision: 33
 author: dotnet-bot

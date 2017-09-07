@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""domain names [VB], retrieving"", ""data [VB], accessing user data"", ""My.User object [VB], tasks"", ""user data [VB], domain"", ""user names [VB], retrieving"", ""user data [VB], accessing"", ""login names [VB]"", ""examples [VB], accessing user data""]"]
+helpviewer_keywords: ["domain names [VB], retrieving", "data [VB], accessing user data", "My.User object [VB], tasks", "user data [VB], domain", "user names [VB], retrieving", "user data [VB], accessing", "login names [VB]", "examples [VB], accessing user data"]
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
 caps.latest.revision: 17
 author: dotnet-bot

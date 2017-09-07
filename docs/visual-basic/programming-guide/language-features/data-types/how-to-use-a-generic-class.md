@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""type parameters [VB], defining"", ""data type arguments [VB], defining"", ""arguments [VB], data types"", ""Of keyword [VB], using"", ""generic parameters"", ""data type parameters"", ""generics [VB], about generics"", ""data types [VB], as parameters"", ""data types [VB], as arguments"", ""parameters [VB], type"", ""types [VB], generic"", ""parameters [VB], generic"", ""generics [VB], creating generic types"", ""data type arguments"", ""parameters [VB], data type"", ""data type parameters [VB], defining"", ""type arguments [VB], defining"", ""arguments [VB], type""]"]
+helpviewer_keywords: ["type parameters [VB], defining", "data type arguments [VB], defining", "arguments [VB], data types", "Of keyword [VB], using", "generic parameters", "data type parameters", "generics [VB], about generics", "data types [VB], as parameters", "data types [VB], as arguments", "parameters [VB], type", "types [VB], generic", "parameters [VB], generic", "generics [VB], creating generic types", "data type arguments", "parameters [VB], data type", "data type parameters [VB], defining", "type arguments [VB], defining", "arguments [VB], type"]
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
 caps.latest.revision: 24
 author: dotnet-bot

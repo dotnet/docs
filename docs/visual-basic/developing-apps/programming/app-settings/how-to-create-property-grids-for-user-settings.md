@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Settings object [VB], creating property grids for user settings"", ""user settings [VB], creating property grids"", ""property grids [VB], creating for user settings"", ""property grids""]"]
+helpviewer_keywords: ["My.Settings object [VB], creating property grids for user settings", "user settings [VB], creating property grids", "property grids [VB], creating for user settings", "property grids"]
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
 caps.latest.revision: 13
 author: dotnet-bot

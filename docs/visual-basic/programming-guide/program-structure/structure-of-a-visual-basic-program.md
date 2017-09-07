@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""conditional compilation [VB], Visual Basic"", ""program structure, Visual Basic"", ""procedures [VB], structure"", ""Visual Basic code, program structure""]"]
+helpviewer_keywords: ["conditional compilation [VB], Visual Basic", "program structure, Visual Basic", "procedures [VB], structure", "Visual Basic code, program structure"]
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
 caps.latest.revision: 17
 author: dotnet-bot

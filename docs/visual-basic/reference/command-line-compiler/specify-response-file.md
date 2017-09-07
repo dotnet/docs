@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""@ (Specify Response File) compiler option [VB]""]"]
+helpviewer_keywords: ["@ (Specify Response File) compiler option [VB]"]
 ms.assetid: a6847eaa-e5f9-4303-9421-45b55484b9ca
 caps.latest.revision: 15
 author: dotnet-bot

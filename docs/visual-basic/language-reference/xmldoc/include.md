@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""include XML tag"", ""<include> XML tag""]"]
+helpviewer_keywords: ["include XML tag", "<include> XML tag"]
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
 caps.latest.revision: 11
 author: dotnet-bot

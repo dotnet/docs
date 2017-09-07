@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""control flow [VB], loops"", ""For keyword [VB], loop structures"", ""loops"", ""loop structures [VB]"", ""statements [VB], loop"", ""Do statement [VB], Do loops"", ""conditional statements [VB], loop structures""]"]
+helpviewer_keywords: ["control flow [VB], loops", "For keyword [VB], loop structures", "loops", "loop structures [VB]", "statements [VB], loop", "Do statement [VB], Do loops", "conditional statements [VB], loop structures"]
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
 caps.latest.revision: 18
 author: dotnet-bot

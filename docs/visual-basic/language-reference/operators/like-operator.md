@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["Like", "vb.Like"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""similar to"", ""pattern matching"", ""Like operator [VB]"", ""? symbol, wildcard character"", ""string comparison [VB], Like operator"", ""strings [VB], comparing"", ""comparison operators [VB]"", ""symbols, wildcard"", ""wildcards, Like operator"", ""strings [VB], matching"", ""string comparison [VB], sorting data"", ""data [VB], sorting"", ""text [VB], comparing"", ""operators [VB], pattern-matching"", ""data [VB], string comparisons"", ""string comparison [VB], Like operators""]"]
+helpviewer_keywords: ["similar to", "pattern matching", "Like operator [VB]", "? symbol, wildcard character", "string comparison [VB], Like operator", "strings [VB], comparing", "comparison operators [VB]", "symbols, wildcard", "wildcards, Like operator", "strings [VB], matching", "string comparison [VB], sorting data", "data [VB], sorting", "text [VB], comparing", "operators [VB], pattern-matching", "data [VB], string comparisons", "string comparison [VB], Like operators"]
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
 caps.latest.revision: 18
 author: dotnet-bot

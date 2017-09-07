@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/codepage compiler option [VB]"", ""codepage compiler option [VB]"", ""-codepage compiler option [VB]""]"]
+helpviewer_keywords: ["/codepage compiler option [VB]", "codepage compiler option [VB]", "-codepage compiler option [VB]"]
 ms.assetid: be36ec33-6800-4505-838c-4124564f5cc9
 caps.latest.revision: 17
 author: dotnet-bot

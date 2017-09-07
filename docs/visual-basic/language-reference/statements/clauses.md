@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""clauses [VB]""]"]
+helpviewer_keywords: ["clauses [VB]"]
 ms.assetid: 5e89f5f3-d129-4ed1-8857-30cd71cff95e
 caps.latest.revision: 8
 author: dotnet-bot

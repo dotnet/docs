@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], defining"", ""Visual Basic code, procedures"", ""Visual Basic code, properties"", ""properties [VB]""]"]
+helpviewer_keywords: ["procedures [VB], defining", "Visual Basic code, procedures", "Visual Basic code, properties", "properties [VB]"]
 ms.assetid: 4d229712-6be8-4c5c-bac5-06995ce9185a
 caps.latest.revision: 15
 author: dotnet-bot

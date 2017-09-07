@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.<<"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""bit shift operators [VB]"", ""<< operator [VB]"", ""operator <<, Visual Basic left shift operator""]"]
+helpviewer_keywords: ["bit shift operators [VB]", "<< operator [VB]", "operator <<, Visual Basic left shift operator"]
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
 caps.latest.revision: 15
 author: dotnet-bot

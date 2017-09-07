@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Assign", "vb.="]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""= operator [VB]"", ""= assignment statements [VB]""]"]
+helpviewer_keywords: ["= operator [VB]", "= assignment statements [VB]"]
 ms.assetid: 2dac2e49-86c8-42f8-80c1-458452fb5e29
 caps.latest.revision: 16
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["Overrides", "vb.Overrides"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""properties [VB], redefining"", ""procedures [VB], overriding"", ""procedures [VB], redefining"", ""overriding"", ""Overrides keyword [VB]"", ""overriding, Overrides keyword"", ""properties [VB], overriding""]"]
+helpviewer_keywords: ["properties [VB], redefining", "procedures [VB], overriding", "procedures [VB], redefining", "overriding", "Overrides keyword [VB]", "overriding, Overrides keyword", "properties [VB], overriding"]
 ms.assetid: 9f5e6144-ce10-465e-842b-1a8f8760af90
 caps.latest.revision: 18
 author: dotnet-bot

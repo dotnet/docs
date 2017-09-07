@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""-bugreport compiler option [VB]"", ""bugreport compiler option [VB]"", ""/bugreport compiler option [VB]""]"]
+helpviewer_keywords: ["-bugreport compiler option [VB]", "bugreport compiler option [VB]", "/bugreport compiler option [VB]"]
 ms.assetid: e4325406-8dbd-4b48-b311-9ee0799e48bb
 caps.latest.revision: 22
 author: dotnet-bot

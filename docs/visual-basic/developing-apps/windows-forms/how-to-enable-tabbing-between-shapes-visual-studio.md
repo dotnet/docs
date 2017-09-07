@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Line control [VB], implementing tabbing"", ""Shape control [VB], implementing tabbing""]"]
+helpviewer_keywords: ["Line control [VB], implementing tabbing", "Shape control [VB], implementing tabbing"]
 ms.assetid: 09731b34-3900-4fcb-a9df-ce5280328433
 caps.latest.revision: 14
 author: dotnet-bot

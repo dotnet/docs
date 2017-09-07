@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["OrElse", "vb.OrElse"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""short-circuiting"", ""operators [VB], short-circuiting"", ""operators [VB], disjunction"", ""short-circuit evaluation"", ""OrElse operator [VB]""]"]
+helpviewer_keywords: ["short-circuiting", "operators [VB], short-circuiting", "operators [VB], disjunction", "short-circuit evaluation", "OrElse operator [VB]"]
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
 caps.latest.revision: 15
 author: dotnet-bot

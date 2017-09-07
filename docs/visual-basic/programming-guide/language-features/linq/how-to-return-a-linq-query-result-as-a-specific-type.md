@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [LINQ in Visual Basic], specific type returned"", ""projection [LINQ in Visual Basic]"", ""anonymous types [VB]"", ""querying databases [LINQ]"", ""queries [LINQ in Visual Basic], how-to topics"", ""query samples [VB]""]"]
+helpviewer_keywords: ["queries [LINQ in Visual Basic], specific type returned", "projection [LINQ in Visual Basic]", "anonymous types [VB]", "querying databases [LINQ]", "queries [LINQ in Visual Basic], how-to topics", "query samples [VB]"]
 ms.assetid: 621bb10a-e5d7-44fb-a025-317964b19d92
 caps.latest.revision: 8
 author: dotnet-bot

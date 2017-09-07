@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""LINQ to XML [VB], about LINQ to XML"", ""LINQ [VB], LINQ to XML""]"]
+helpviewer_keywords: ["LINQ to XML [VB], about LINQ to XML", "LINQ [VB], LINQ to XML"]
 ms.assetid: 01c62a79-6d58-468e-84fb-039c05947701
 caps.latest.revision: 17
 author: dotnet-bot

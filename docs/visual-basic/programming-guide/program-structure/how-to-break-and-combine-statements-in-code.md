@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb._"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""colons (:)"", ""line continuation"", ""_ line-continuation character"", "": line separator character"", ""Visual Basic code, line breaks in"", ""Visual Basic code, line breaks"", ""Visual Basic code, line continuation"", ""long lines of code"", ""line terminator"", ""line-continuation sequence"", ""underscores, in code"", ""statements [VB], line continuation in"", ""line breaks, in code"", ""line-continuation character [VB]"", ""Visual Basic code, line continuation in"", ""statements [VB], line breaks in""]"]
+helpviewer_keywords: ["colons (:)", "line continuation", "_ line-continuation character", ": line separator character", "Visual Basic code, line breaks in", "Visual Basic code, line breaks", "Visual Basic code, line continuation", "long lines of code", "line terminator", "line-continuation sequence", "underscores, in code", "statements [VB], line continuation in", "line breaks, in code", "line-continuation character [VB]", "Visual Basic code, line continuation in", "statements [VB], line breaks in"]
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
 caps.latest.revision: 21
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""-errorreport compiler option [VB]"", ""/errorreport compiler option [VB]"", ""errorreport compiler option [VB]""]"]
+helpviewer_keywords: ["-errorreport compiler option [VB]", "/errorreport compiler option [VB]", "errorreport compiler option [VB]"]
 ms.assetid: a7fe83a2-a6d8-460c-8dad-79a8f433f501
 caps.latest.revision: 19
 author: dotnet-bot

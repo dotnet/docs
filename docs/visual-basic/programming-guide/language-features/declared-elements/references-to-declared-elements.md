@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""declared elements [VB]"", ""references [VB], declared elements"", ""qualified names [VB]""]"]
+helpviewer_keywords: ["declared elements [VB]", "references [VB], declared elements", "qualified names [VB]"]
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
 caps.latest.revision: 19
 author: dotnet-bot

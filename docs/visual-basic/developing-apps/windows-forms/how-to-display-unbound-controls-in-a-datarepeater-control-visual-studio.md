@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater, adding unbound controls"", ""DataRepeater"", ""displaying unbound data""]"]
+helpviewer_keywords: ["DataRepeater, adding unbound controls", "DataRepeater", "displaying unbound data"]
 ms.assetid: f234fa40-5a13-4209-930e-7c5f81e86e66
 caps.latest.revision: 8
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.FALSE", "vb.TRUE", "vb.Boolean"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Boolean data type"", ""Boolean values [VB], False keyword"", ""False keyword [VB]"", ""True keyword [VB]"", ""Boolean values [VB], True keyword""]"]
+helpviewer_keywords: ["Boolean data type", "Boolean values [VB], False keyword", "False keyword [VB]", "True keyword [VB]", "Boolean values [VB], True keyword"]
 ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
 caps.latest.revision: 18
 author: dotnet-bot

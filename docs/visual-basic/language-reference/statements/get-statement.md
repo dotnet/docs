@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Get"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Get statement [VB], syntax"", ""Get statement [VB]"", ""properties [VB], read-only"", ""read-only properties"", ""Get keyword [VB]"", ""property procedures [VB], Get statements""]"]
+helpviewer_keywords: ["Get statement [VB], syntax", "Get statement [VB]", "properties [VB], read-only", "read-only properties", "Get keyword [VB]", "property procedures [VB], Get statements"]
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
 caps.latest.revision: 19
 author: dotnet-bot

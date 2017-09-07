@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DataRepeater, customizing"", ""DataRepeater, changing run time appearance""]"]
+helpviewer_keywords: ["DataRepeater, customizing", "DataRepeater, changing run time appearance"]
 ms.assetid: 2af6dfce-760b-489e-b863-8da967f315c3
 caps.latest.revision: 12
 author: dotnet-bot

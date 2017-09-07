@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic, strings"", ""data types [VB], converting"", ""conversions [VB], Visual Basic"", ""string conversion [VB], Visual Basic""]"]
+helpviewer_keywords: ["Visual Basic, strings", "data types [VB], converting", "conversions [VB], Visual Basic", "string conversion [VB], Visual Basic"]
 ms.assetid: 06085ed5-191d-4930-8fbc-da63930da400
 caps.latest.revision: 9
 author: dotnet-bot

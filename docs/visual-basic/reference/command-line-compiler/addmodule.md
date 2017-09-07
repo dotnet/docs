@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""/addmodule compiler option [VB]"", ""addmodule compiler option [VB]"", ""-addmodule compiler option [VB]""]"]
+helpviewer_keywords: ["/addmodule compiler option [VB]", "addmodule compiler option [VB]", "-addmodule compiler option [VB]"]
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
 caps.latest.revision: 14
 author: dotnet-bot

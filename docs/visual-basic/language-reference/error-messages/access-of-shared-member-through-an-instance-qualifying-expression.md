@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vbc42025", "BC42025"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""BC42025""]"]
+helpviewer_keywords: ["BC42025"]
 ms.assetid: db3337e5-c349-42bf-86df-d9c1e00952a5
 caps.latest.revision: 23
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""encryption [VB], strings"", ""strings [VB], encrypting"", ""decryption [VB], strings"", ""strings [VB], decrypting""]"]
+helpviewer_keywords: ["encryption [VB], strings", "strings [VB], encrypting", "decryption [VB], strings", "strings [VB], decrypting"]
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
 caps.latest.revision: 18
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""variables [VB], scope"", ""declared elements [VB], scope"", ""visibility [VB], declared elements"", ""variables [VB], visibility"", ""scope [VB], declared elements"", ""scope [VB], variables"", ""scope [VB], Visual Basic"", ""declared elements [VB], visibility"", ""visibility [VB], variables""]"]
+helpviewer_keywords: ["variables [VB], scope", "declared elements [VB], scope", "visibility [VB], declared elements", "variables [VB], visibility", "scope [VB], declared elements", "scope [VB], variables", "scope [VB], Visual Basic", "declared elements [VB], visibility", "visibility [VB], variables"]
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
 caps.latest.revision: 12
 author: dotnet-bot

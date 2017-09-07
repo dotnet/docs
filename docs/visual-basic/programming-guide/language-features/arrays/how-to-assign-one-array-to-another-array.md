@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""covariance, arrays"", ""arrays [VB], assigning"", ""arrays [VB], covariance""]"]
+helpviewer_keywords: ["covariance, arrays", "arrays [VB], assigning", "arrays [VB], covariance"]
 ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
 caps.latest.revision: 18
 author: dotnet-bot

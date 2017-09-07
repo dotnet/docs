@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""files [VB], moving""]"]
+helpviewer_keywords: ["files [VB], moving"]
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a
 caps.latest.revision: 20
 author: dotnet-bot

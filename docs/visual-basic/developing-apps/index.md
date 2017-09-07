@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic, developing applications"", ""applications [VB]""]"]
+helpviewer_keywords: ["Visual Basic, developing applications", "applications [VB]"]
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
 caps.latest.revision: 26
 author: dotnet-bot

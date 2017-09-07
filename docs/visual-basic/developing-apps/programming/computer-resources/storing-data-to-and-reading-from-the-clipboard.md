@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Clipboard, storing data to (My.Computer.Clipboard)"", ""Clipboard, reading from (My.Computer.Clipboard)"", ""Clipboard"", ""My.Computer.Clipboard object, tasks"", ""data [VB], Clipboard"", ""reading data, from Clipboard""]"]
+helpviewer_keywords: ["Clipboard, storing data to (My.Computer.Clipboard)", "Clipboard, reading from (My.Computer.Clipboard)", "Clipboard", "My.Computer.Clipboard object, tasks", "data [VB], Clipboard", "reading data, from Clipboard"]
 ms.assetid: f690119a-4378-4f7d-b20e-d9377ef49496
 caps.latest.revision: 21
 author: dotnet-bot

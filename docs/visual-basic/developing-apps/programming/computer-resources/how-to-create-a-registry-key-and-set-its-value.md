@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["RegistryKey.CreateSubKey", "RegistryKey.SetValue"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""registry keys [VB], creating"", ""registry [VB], adding values"", ""registry [VB], adding keys"", ""registry keys [VB], setting values"", ""examples [VB], registry""]"]
+helpviewer_keywords: ["registry keys [VB], creating", "registry [VB], adding values", "registry [VB], adding keys", "registry keys [VB], setting values", "examples [VB], registry"]
 ms.assetid: d3e40f74-c283-480c-ab18-e5e9052cd814
 caps.latest.revision: 30
 author: dotnet-bot

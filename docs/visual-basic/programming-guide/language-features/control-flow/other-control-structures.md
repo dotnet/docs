@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""statements [VB], control flow"", ""control structures [VB]""]"]
+helpviewer_keywords: ["statements [VB], control flow", "control structures [VB]"]
 ms.assetid: 24b811f7-98ba-40ec-8dd3-4d528cfa4574
 caps.latest.revision: 19
 author: dotnet-bot

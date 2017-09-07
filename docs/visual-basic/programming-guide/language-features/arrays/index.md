@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Array"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""arrays [VB]"", ""Visual Basic, arrays""]"]
+helpviewer_keywords: ["arrays [VB]", "Visual Basic, arrays"]
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
 caps.latest.revision: 47
 author: dotnet-bot

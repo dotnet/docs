@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Namespace"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""namespaces [VB], root"", ""Namespace statement [VB]"", ""namespaces [VB], nested"", ""declaring namespaces [VB], syntax"", ""namespaces [VB], declaring"", ""root namespaces"", ""declarations [VB], namespaces""]"]
+helpviewer_keywords: ["namespaces [VB], root", "Namespace statement [VB]", "namespaces [VB], nested", "declaring namespaces [VB], syntax", "namespaces [VB], declaring", "root namespaces", "declarations [VB], namespaces"]
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
 caps.latest.revision: 39
 author: dotnet-bot

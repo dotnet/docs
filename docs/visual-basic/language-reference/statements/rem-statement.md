@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.'", "vb.Rem", "Rem", "'"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""REM statement [VB]"", ""comments, Visual Basic code"", ""code comments, Visual Basic"", ""Visual Basic code, comments"", ""' comment marker character [VB]""]"]
+helpviewer_keywords: ["REM statement [VB]", "comments, Visual Basic code", "code comments, Visual Basic", "Visual Basic code, comments", "' comment marker character [VB]"]
 ms.assetid: 34126d7f-e0f9-476d-91e6-b31b398615dc
 caps.latest.revision: 11
 author: dotnet-bot

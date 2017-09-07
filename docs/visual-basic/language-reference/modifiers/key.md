@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.AnonymousKey"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""anonymous types [VB], key"", ""Key [VB]"", ""Key keyword [VB]""]"]
+helpviewer_keywords: ["anonymous types [VB], key", "Key [VB]", "Key keyword [VB]"]
 ms.assetid: 7697a928-7d14-4430-a72a-c9e96e8d6c11
 caps.latest.revision: 22
 author: dotnet-bot

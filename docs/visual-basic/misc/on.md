@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.on", "vb.QueryOn"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""On keyword [VB]""]"]
+helpviewer_keywords: ["On keyword [VB]"]
 ms.assetid: 8619c328-1637-4f41-b466-cbe693f4fe73
 caps.latest.revision: 10
 author: dotnet-bot

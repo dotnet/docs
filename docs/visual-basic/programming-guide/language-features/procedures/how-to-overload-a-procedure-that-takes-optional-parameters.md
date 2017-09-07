@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], parameters"", ""procedure overloading, optional parameters"", ""procedures [VB], defining"", ""Visual Basic code, procedures"", ""procedure parameters"", ""procedures [VB], overloading"", ""procedures [VB], multiple versions""]"]
+helpviewer_keywords: ["procedures [VB], parameters", "procedure overloading, optional parameters", "procedures [VB], defining", "Visual Basic code, procedures", "procedure parameters", "procedures [VB], overloading", "procedures [VB], multiple versions"]
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
 caps.latest.revision: 17
 author: dotnet-bot

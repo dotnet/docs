@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""l compiler option [VB]"", ""EmbedInteropTypes"", ""embed interop types [COM Interop]"", ""-link compiler option [VB]"", ""/link compiler option [VB]"", ""link compiler option [VB]"", ""-l compiler option [VB]"", ""/l compiler option [VB]""]"]
+helpviewer_keywords: ["l compiler option [VB]", "EmbedInteropTypes", "embed interop types [COM Interop]", "-link compiler option [VB]", "/link compiler option [VB]", "link compiler option [VB]", "-l compiler option [VB]", "/l compiler option [VB]"]
 ms.assetid: 1885f24a-86f5-486c-a064-9fb7e455ccec
 caps.latest.revision: 27
 author: dotnet-bot

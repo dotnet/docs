@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Double"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""identifier type characters [VB], #"", ""trailing zeros"", ""real numbers"", ""trailing 0 characters [VB]"", ""0 characters [VB], trailing"", ""literal type characters [VB], R"", ""data types [VB], assigning"", ""Double data type [VB]"", ""# identifier type character"", ""double-precision numbers"", ""floating-point numbers [VB], Double data type"", ""R literal type character [VB]"", ""zeros, trailing"", ""Double data type""]"]
+helpviewer_keywords: ["identifier type characters [VB], #", "trailing zeros", "real numbers", "trailing 0 characters [VB]", "0 characters [VB], trailing", "literal type characters [VB], R", "data types [VB], assigning", "Double data type [VB]", "# identifier type character", "double-precision numbers", "floating-point numbers [VB], Double data type", "R literal type character [VB]", "zeros, trailing", "Double data type"]
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
 caps.latest.revision: 25
 author: dotnet-bot

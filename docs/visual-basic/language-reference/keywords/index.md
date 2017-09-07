@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""reserved keywords, Visual Basic"", ""keywords [VB]"", ""Members [VB], Visual Basic run-time"", ""Visual Basic code, keywords"", ""Visual Basic, language reference"", ""reserved words, Visual Basic keywords"", ""Visual Basic, keywords""]"]
+helpviewer_keywords: ["reserved keywords, Visual Basic", "keywords [VB]", "Members [VB], Visual Basic run-time", "Visual Basic code, keywords", "Visual Basic, language reference", "reserved words, Visual Basic keywords", "Visual Basic, keywords"]
 ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
 caps.latest.revision: 43
 author: dotnet-bot

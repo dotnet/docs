@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], arguments"", ""procedures [VB], argument lists"", ""values [VB], passing to procedures"", ""arguments [VB], passing"", ""procedures [VB], parameters"", ""Visual Basic code, argument lists"", ""Visual Basic code, procedures"", ""parameters [VB], Visual Basic procedures"", ""parameters [VB], lists"", ""arguments [VB], Visual Basic procedures"", ""arguments [VB], procedures"", ""parameter lists [VB]"", ""Visual Basic code, parameter lists"", ""argument lists [VB]"", ""procedures [VB], parameter lists""]"]
+helpviewer_keywords: ["procedures [VB], arguments", "procedures [VB], argument lists", "values [VB], passing to procedures", "arguments [VB], passing", "procedures [VB], parameters", "Visual Basic code, argument lists", "Visual Basic code, procedures", "parameters [VB], Visual Basic procedures", "parameters [VB], lists", "arguments [VB], Visual Basic procedures", "arguments [VB], procedures", "parameter lists [VB]", "Visual Basic code, parameter lists", "argument lists [VB]", "procedures [VB], parameter lists"]
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
 caps.latest.revision: 21
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""moduleassemblyname compiler option [VB]"", ""/moduleassemblyname compiler option [VB]"", ""-moduleassemblyname compiler option [VB]""]"]
+helpviewer_keywords: ["moduleassemblyname compiler option [VB]", "/moduleassemblyname compiler option [VB]", "-moduleassemblyname compiler option [VB]"]
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
 caps.latest.revision: 16
 author: dotnet-bot

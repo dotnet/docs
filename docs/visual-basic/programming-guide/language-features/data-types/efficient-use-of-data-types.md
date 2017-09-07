@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""performance, data type efficiency"", ""data types [VB], weak typing"", ""AscW function [VB], preferred to Asc"", ""data types [VB], using efficiently"", ""optimization [VB], data types"", ""data types [VB], strong typing"", ""strong typing"", ""typing, strong"", ""data types [VB], optimizing"", ""ChrW function [VB], preferred to Chr""]"]
+helpviewer_keywords: ["performance, data type efficiency", "data types [VB], weak typing", "AscW function [VB], preferred to Asc", "data types [VB], using efficiently", "optimization [VB], data types", "data types [VB], strong typing", "strong typing", "typing, strong", "data types [VB], optimizing", "ChrW function [VB], preferred to Chr"]
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
 caps.latest.revision: 16
 author: dotnet-bot

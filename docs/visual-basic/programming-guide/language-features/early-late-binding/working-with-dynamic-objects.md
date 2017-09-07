@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""dynamic objects [VB]""]"]
+helpviewer_keywords: ["dynamic objects [VB]"]
 ms.assetid: bdee2a00-07ff-46f9-86dd-fdac9b99cc97
 caps.latest.revision: 12
 author: dotnet-bot

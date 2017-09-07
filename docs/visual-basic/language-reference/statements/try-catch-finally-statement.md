@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Try...Catch...Finally", "vb.when", "vb.Finally", "vb.Catch", "vb.Try"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Try...Catch...Finally statements"", ""Try statement [VB]"", ""try-catch exception handling, Try...Catch...Finally statements"", ""error handling, while running code"", ""Try statement [VB], Try...Catch...Finally"", ""Finally keyword [VB], Try...Catch...Finally"", ""Catch statement [VB]"", ""When keyword [VB]"", ""Visual Basic code, handling errors while running"", ""structured exception handling, Try...Catch...Finally statements""]"]
+helpviewer_keywords: ["Try...Catch...Finally statements", "Try statement [VB]", "try-catch exception handling, Try...Catch...Finally statements", "error handling, while running code", "Try statement [VB], Try...Catch...Finally", "Finally keyword [VB], Try...Catch...Finally", "Catch statement [VB]", "When keyword [VB]", "Visual Basic code, handling errors while running", "structured exception handling, Try...Catch...Finally statements"]
 ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b
 caps.latest.revision: 69
 author: dotnet-bot

@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Form [VB], printing""]"]
+helpviewer_keywords: ["Form [VB], printing"]
 ms.assetid: df963bf6-3ee1-49f4-8b2e-1d95d1beb0be
 caps.latest.revision: 19
 author: dotnet-bot

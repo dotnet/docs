@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""tuples [VB]""]"]
+helpviewer_keywords: ["tuples [VB]"]
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
 author: "rpetrusha"
 ms.author: "ronpet"

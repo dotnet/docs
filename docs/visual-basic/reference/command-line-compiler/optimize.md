@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""optimize compiler option [VB]"", ""/optimize compiler option [VB]"", ""optimization [VB], enabling"", ""-optimize compiler option [VB]""]"]
+helpviewer_keywords: ["optimize compiler option [VB]", "/optimize compiler option [VB]", "optimization [VB], enabling", "-optimize compiler option [VB]"]
 ms.assetid: fcba4a97-3622-4b87-a891-0f77deab4998
 caps.latest.revision: 15
 author: dotnet-bot

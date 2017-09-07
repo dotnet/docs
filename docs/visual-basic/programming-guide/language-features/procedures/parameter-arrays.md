@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""parameter arrays [VB], about parameter arrays"", ""ParamArray keyword [VB], parameter arrays"", ""Visual Basic code, procedures"", ""parameters [VB], parameter arrays"", ""arguments [VB], parameter arrays"", ""procedures [VB], indefinite number of argument values"", ""arrays [VB], parameter arrays""]"]
+helpviewer_keywords: ["parameter arrays [VB], about parameter arrays", "ParamArray keyword [VB], parameter arrays", "Visual Basic code, procedures", "parameters [VB], parameter arrays", "arguments [VB], parameter arrays", "procedures [VB], indefinite number of argument values", "arrays [VB], parameter arrays"]
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 caps.latest.revision: 26
 author: dotnet-bot

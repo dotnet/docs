@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""data types [VB], Visual Basic""]"]
+helpviewer_keywords: ["data types [VB], Visual Basic"]
 ms.assetid: 4ea2ef2a-3d4d-42d9-9f8f-173a37c96e53
 caps.latest.revision: 14
 author: dotnet-bot

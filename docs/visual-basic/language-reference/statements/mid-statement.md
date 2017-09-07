@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.MidB", "vb.Mid"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""substrings [VB], Mid statement"", ""strings [VB], substrings"", ""Mid statement [VB]"", ""strings [VB], replacing""]"]
+helpviewer_keywords: ["substrings [VB], Mid statement", "strings [VB], substrings", "Mid statement [VB]", "strings [VB], replacing"]
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
 caps.latest.revision: 20
 author: dotnet-bot

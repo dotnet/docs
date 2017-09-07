@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.&"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""And (&) operator"", ""ampersand operator (&)"", ""& operator"", ""concatenation operators [VB], syntax"", ""strings [VB], concatenating""]"]
+helpviewer_keywords: ["And (&) operator", "ampersand operator (&)", "& operator", "concatenation operators [VB], syntax", "strings [VB], concatenating"]
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
 caps.latest.revision: 12
 author: dotnet-bot

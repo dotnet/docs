@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Await"]
-helpviewer_keywords: ["[""Await operator [VB]"", ""Await [VB]""]"]
+helpviewer_keywords: ["Await operator [VB]", "Await [VB]"]
 ms.assetid: 6b1ce283-e92b-4ba7-b081-7be7b3d37af9
 caps.latest.revision: 30
 author: dotnet-bot

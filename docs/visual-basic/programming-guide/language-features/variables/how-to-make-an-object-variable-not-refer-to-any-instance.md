@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Nothing keyword [VB], variable assignment"", ""object variables [VB], null reference""]"]
+helpviewer_keywords: ["Nothing keyword [VB], variable assignment", "object variables [VB], null reference"]
 ms.assetid: e6d30578-bdae-4142-a3ac-a10697bf696a
 caps.latest.revision: 9
 author: dotnet-bot

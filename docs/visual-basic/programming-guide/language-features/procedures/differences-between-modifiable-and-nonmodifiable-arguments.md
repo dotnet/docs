@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedures [VB], arguments"", ""procedure arguments"", ""arguments [VB], nonmodifiable"", ""Visual Basic code, procedures"", ""arguments [VB], modifiable""]"]
+helpviewer_keywords: ["procedures [VB], arguments", "procedure arguments", "arguments [VB], nonmodifiable", "Visual Basic code, procedures", "arguments [VB], modifiable"]
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
 caps.latest.revision: 16
 author: dotnet-bot

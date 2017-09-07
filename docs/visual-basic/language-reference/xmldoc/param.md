@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""param XML tag"", ""<param> XML tag""]"]
+helpviewer_keywords: ["param XML tag", "<param> XML tag"]
 ms.assetid: 4e32e86f-f6f3-4301-b7fc-2f321fb54368
 caps.latest.revision: 14
 author: dotnet-bot

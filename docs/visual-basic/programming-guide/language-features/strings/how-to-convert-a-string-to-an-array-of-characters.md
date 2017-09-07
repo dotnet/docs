@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""character arrays [VB], converting strings"", ""arrays [VB], converting strings to"", ""examples [VB], string conversion"", ""strings [VB], converting to arrays"", ""string conversion [VB], arrays""]"]
+helpviewer_keywords: ["character arrays [VB], converting strings", "arrays [VB], converting strings to", "examples [VB], string conversion", "strings [VB], converting to arrays", "string conversion [VB], arrays"]
 ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
 caps.latest.revision: 7
 author: dotnet-bot

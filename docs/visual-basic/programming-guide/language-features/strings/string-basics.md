@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""strings [VB], Like operator"", ""strings [VB], Visual Basic"", ""strings [VB], regular expressions""]"]
+helpviewer_keywords: ["strings [VB], Like operator", "strings [VB], Visual Basic", "strings [VB], regular expressions"]
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
 caps.latest.revision: 14
 author: dotnet-bot

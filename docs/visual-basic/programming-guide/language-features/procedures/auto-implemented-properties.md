@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.AutoProperty", "vb.AutoImplementedProperty"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""properties [VB], auto-implemented"", ""properties, auto-implemented [VB]"", ""auto-implemented properties [VB]""]"]
+helpviewer_keywords: ["properties [VB], auto-implemented", "properties, auto-implemented [VB]", "auto-implemented properties [VB]"]
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
 caps.latest.revision: 20
 author: dotnet-bot

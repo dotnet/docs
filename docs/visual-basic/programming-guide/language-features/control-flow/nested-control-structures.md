@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Visual Basic code, control flow"", ""control structures [VB], nested"", ""conditional statements [VB], nested"", ""statements [VB], control flow"", ""control flow [VB], nested control statements"", ""structures [VB], nested control"", ""nested control statements [VB]""]"]
+helpviewer_keywords: ["Visual Basic code, control flow", "control structures [VB], nested", "conditional statements [VB], nested", "statements [VB], control flow", "control flow [VB], nested control statements", "structures [VB], nested control", "nested control statements [VB]"]
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 caps.latest.revision: 20
 author: dotnet-bot

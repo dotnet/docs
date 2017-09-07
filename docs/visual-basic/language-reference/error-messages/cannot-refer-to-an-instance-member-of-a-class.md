@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vbc30369", "bc30369"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Shared"", ""BC30369""]"]
+helpviewer_keywords: ["Shared", "BC30369"]
 ms.assetid: 39d9466b-c1f3-4406-91a5-3d6c52d23a3d
 caps.latest.revision: 9
 author: dotnet-bot

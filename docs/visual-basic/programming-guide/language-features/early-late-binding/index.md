@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""early binding [VB]"", ""objects [VB], late-bound"", ""objects [VB], early-bound"", ""objects [VB], late bound"", ""early binding [VB], Visual Basic compiler"", ""binding [VB], late and early"", ""objects [VB], early bound"", ""Visual Basic compiler, early and late binding"", ""late binding [VB]"", ""late binding [VB], Visual Basic compiler""]"]
+helpviewer_keywords: ["early binding [VB]", "objects [VB], late-bound", "objects [VB], early-bound", "objects [VB], late bound", "early binding [VB], Visual Basic compiler", "binding [VB], late and early", "objects [VB], early bound", "Visual Basic compiler, early and late binding", "late binding [VB]", "late binding [VB], Visual Basic compiler"]
 ms.assetid: d6ff7f1e-b94f-4205-ab8d-5cfa91758724
 caps.latest.revision: 10
 author: dotnet-bot

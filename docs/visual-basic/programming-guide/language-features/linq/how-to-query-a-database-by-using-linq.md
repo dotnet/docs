@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""query samples [LINQ]"", ""database querying [LINQ]"", ""queries [LINQ in Visual Basic], database querying"", ""querying databases [LINQ]"", ""queries [LINQ in Visual Basic], how-to topics"", ""query samples [VB]""]"]
+helpviewer_keywords: ["query samples [LINQ]", "database querying [LINQ]", "queries [LINQ in Visual Basic], database querying", "querying databases [LINQ]", "queries [LINQ in Visual Basic], how-to topics", "query samples [VB]"]
 ms.assetid: bcf5e9c3-a236-4399-9a7f-3991eca7cf56
 caps.latest.revision: 12
 author: dotnet-bot

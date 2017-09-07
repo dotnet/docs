@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""DeleteSetting function [VB], increasing performance"", ""My.Computer.Registry object""]"]
+helpviewer_keywords: ["DeleteSetting function [VB], increasing performance", "My.Computer.Registry object"]
 ms.assetid: afd9edf9-ef9b-438b-a390-d71a02dc8203
 caps.latest.revision: 18
 author: dotnet-bot

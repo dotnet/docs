@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryFrom", "vb.QueryFromIn", "vb.QueryFromLet"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [VB], From"", ""From clause [VB]"", ""From statement [VB]""]"]
+helpviewer_keywords: ["queries [VB], From", "From clause [VB]", "From statement [VB]"]
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
 caps.latest.revision: 19
 author: dotnet-bot

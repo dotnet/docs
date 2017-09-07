@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""declarations [VB], enumerations"", ""enumerations [VB], declaring"", ""declaring enumerations [VB]""]"]
+helpviewer_keywords: ["declarations [VB], enumerations", "enumerations [VB], declaring", "declaring enumerations [VB]"]
 ms.assetid: db4ca1c3-f429-4c81-ae81-29e0157b29fd
 caps.latest.revision: 24
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""declaring objects using object initializer"", ""object initializers [VB]"", ""initializers [VB]"", ""Video How tos, Visual Basic""]"]
+helpviewer_keywords: ["declaring objects using object initializer", "object initializers [VB]", "initializers [VB]", "Video How tos, Visual Basic"]
 ms.assetid: 0f53a553-efd6-466d-80bf-6b679e5cd174
 caps.latest.revision: 20
 author: dotnet-bot

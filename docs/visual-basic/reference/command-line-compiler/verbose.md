@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""verbose compiler option [VB]"", ""-verbose compiler option [VB]"", ""/verbose compiler option [VB]""]"]
+helpviewer_keywords: ["verbose compiler option [VB]", "-verbose compiler option [VB]", "/verbose compiler option [VB]"]
 ms.assetid: d1aec0c1-0261-421d-9adc-5b13756100be
 caps.latest.revision: 11
 author: dotnet-bot

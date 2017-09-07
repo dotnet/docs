@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""elementary data types [VB]"", ""data types [VB], elementary""]"]
+helpviewer_keywords: ["elementary data types [VB]", "data types [VB], elementary"]
 ms.assetid: dfad6fe9-2da6-49a4-b0b1-2d7ae0283de5
 caps.latest.revision: 16
 author: dotnet-bot

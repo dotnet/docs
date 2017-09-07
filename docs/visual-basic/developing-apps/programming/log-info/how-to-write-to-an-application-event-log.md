@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Computer.EventLog element"", ""WriteEntry method [VB]"", ""My.Computer.EventLog element"", ""event logs, writing to""]"]
+helpviewer_keywords: ["Computer.EventLog element", "WriteEntry method [VB]", "My.Computer.EventLog element", "event logs, writing to"]
 ms.assetid: cadbc8c1-87af-4746-934e-55b79a4f6e2b
 caps.latest.revision: 21
 author: dotnet-bot

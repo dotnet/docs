@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Computer.Registry object, tasks"", ""registry, writing to"", ""registry, reading""]"]
+helpviewer_keywords: ["My.Computer.Registry object, tasks", "registry, writing to", "registry, reading"]
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
 caps.latest.revision: 21
 author: dotnet-bot

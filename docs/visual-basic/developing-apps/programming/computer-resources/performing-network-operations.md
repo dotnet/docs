@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""network operations, performing"", ""My.Computer.Network object, tasks""]"]
+helpviewer_keywords: ["network operations, performing", "My.Computer.Network object, tasks"]
 ms.assetid: 8ecc47ce-7730-49cd-b21d-3a13477eec6b
 caps.latest.revision: 10
 author: dotnet-bot

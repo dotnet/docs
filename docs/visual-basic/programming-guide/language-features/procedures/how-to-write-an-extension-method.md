@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""extending data types [VB]"", ""writing extension methods [VB]"", ""extension methods [VB]""]"]
+helpviewer_keywords: ["extending data types [VB]", "writing extension methods [VB]", "extension methods [VB]"]
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
 caps.latest.revision: 11
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryGroupByInto", "vb.QueryGroupBy", "vb.QueryGroupRef", "vb.QueryGroupInto", "vb.QueryGroup"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [VB], Group By"", ""Group By statement [VB]"", ""Group By clause [VB]""]"]
+helpviewer_keywords: ["queries [VB], Group By", "Group By statement [VB]", "Group By clause [VB]"]
 ms.assetid: b1b5dcea-6654-473b-a2db-01f7e4c265d7
 caps.latest.revision: 20
 author: dotnet-bot

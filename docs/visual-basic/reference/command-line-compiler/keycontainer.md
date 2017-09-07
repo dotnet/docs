@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""-keycontainer compiler option [VB]"", ""keycontainer compiler option [VB]"", ""/keycontainer compiler option [VB]""]"]
+helpviewer_keywords: ["-keycontainer compiler option [VB]", "keycontainer compiler option [VB]", "/keycontainer compiler option [VB]"]
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
 caps.latest.revision: 16
 author: dotnet-bot

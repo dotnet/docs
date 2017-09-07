@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.WebServices object [VB], developing applications"", ""My.Forms object [VB], developing applications"", ""rapid application development (RAD), My.Forms"", ""rapid application development (RAD), My.WebServices""]"]
+helpviewer_keywords: ["My.WebServices object [VB], developing applications", "My.Forms object [VB], developing applications", "rapid application development (RAD), My.Forms", "rapid application development (RAD), My.WebServices"]
 ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79
 caps.latest.revision: 5
 author: dotnet-bot

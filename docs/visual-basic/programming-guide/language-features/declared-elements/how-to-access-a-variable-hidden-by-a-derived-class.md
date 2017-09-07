@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""qualification [VB], of element names"", ""base classes [VB], accessing elements"", ""element names [VB], qualification"", ""references [VB], declared elements"", ""declared elements [VB], referencing"", ""variables [VB], accessing hidden""]"]
+helpviewer_keywords: ["qualification [VB], of element names", "base classes [VB], accessing elements", "element names [VB], qualification", "references [VB], declared elements", "declared elements [VB], referencing", "variables [VB], accessing hidden"]
 ms.assetid: ae21a8ac-9cd4-4fba-a3ec-ecc4321ef93c
 caps.latest.revision: 20
 author: dotnet-bot

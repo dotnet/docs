@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Partial", "partial"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""structures [VB], partial"", ""classes [VB]"", ""partial, types [VB]"", ""partial, structures"", ""partial, classes [VB]"", ""classes [VB], partial"", ""Partial keyword [VB]"", ""type promotion""]"]
+helpviewer_keywords: ["structures [VB], partial", "classes [VB]", "partial, types [VB]", "partial, structures", "partial, classes [VB]", "classes [VB], partial", "Partial keyword [VB]", "type promotion"]
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
 caps.latest.revision: 36
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""files [VB], binary access"", ""WriteAllBytes method [VB]"", ""binary files [VB], writing in Visual Basic""]"]
+helpviewer_keywords: ["files [VB], binary access", "WriteAllBytes method [VB]", "binary files [VB], writing in Visual Basic"]
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
 caps.latest.revision: 16
 author: dotnet-bot

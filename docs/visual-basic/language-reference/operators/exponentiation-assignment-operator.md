@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.^="]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""assignment statements [VB], compound"", ""statements [VB], compound assignment"", ""^= operator [VB]"", ""compound assignment statements [VB]""]"]
+helpviewer_keywords: ["assignment statements [VB], compound", "statements [VB], compound assignment", "^= operator [VB]", "compound assignment statements [VB]"]
 ms.assetid: 397da132-2d96-4a85-a7bc-f7c730a608c9
 caps.latest.revision: 17
 author: dotnet-bot

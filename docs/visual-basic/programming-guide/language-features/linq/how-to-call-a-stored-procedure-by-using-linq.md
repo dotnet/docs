@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""queries [LINQ in Visual Basic], stored procedure calls"", ""stored procedures sample [VB]"", ""stored procedures [LINQ to SQL]"", ""queries [LINQ in Visual Basic], how-to topics""]"]
+helpviewer_keywords: ["queries [LINQ in Visual Basic], stored procedure calls", "stored procedures sample [VB]", "stored procedures [LINQ to SQL]", "queries [LINQ in Visual Basic], how-to topics"]
 ms.assetid: 6436d384-d1e0-40aa-8afd-451007477260
 caps.latest.revision: 12
 author: dotnet-bot

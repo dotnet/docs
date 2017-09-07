@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""ports, sending strings to"", ""strings [VB], sending to serial ports"", ""My.Computer.Ports object"", ""serial ports, sending strings to""]"]
+helpviewer_keywords: ["ports, sending strings to", "strings [VB], sending to serial ports", "My.Computer.Ports object", "serial ports, sending strings to"]
 ms.assetid: 6ebf46cd-b2d0-4b2c-9a1f-be177b22ad52
 caps.latest.revision: 13
 author: dotnet-bot

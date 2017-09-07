@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""I/O [VB], copying directories"", ""I/O [VB], copying folders"", ""folders [VB], copying"", ""directories [VB], copying""]"]
+helpviewer_keywords: ["I/O [VB], copying directories", "I/O [VB], copying folders", "folders [VB], copying", "directories [VB], copying"]
 ms.assetid: 2a370bd7-10ba-4219-afc4-4519d031eb6c
 caps.latest.revision: 19
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Explicit", "vb.OptionExplicit"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""declaring variables [VB], explicit"", ""forced variable declaration in Option Explicit statement [VB]"", ""Explicit keyword"", ""explicit variable declaration"", ""Option Explicit statement [VB]""]"]
+helpviewer_keywords: ["declaring variables [VB], explicit", "forced variable declaration in Option Explicit statement [VB]", "Explicit keyword", "explicit variable declaration", "Option Explicit statement [VB]"]
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
 caps.latest.revision: 17
 author: dotnet-bot

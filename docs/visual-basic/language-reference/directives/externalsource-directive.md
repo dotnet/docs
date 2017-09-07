@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["#Externalsource", "#ExternalSource", "vb.ExternalSource", "Externalsource", "vb.#ExternalSource", "ExternalSource"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""ExternalSource directive (#ExternalSource)"", ""#ExternalSource directive""]"]
+helpviewer_keywords: ["ExternalSource directive (#ExternalSource)", "#ExternalSource directive"]
 ms.assetid: 243bc6a2-34c3-4eeb-a776-9fd2bf988149
 caps.latest.revision: 160
 author: dotnet-bot

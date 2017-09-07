@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["Array.Sort"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""arrays [VB], sorting"", ""examples [VB], arrays""]"]
+helpviewer_keywords: ["arrays [VB], sorting", "examples [VB], arrays"]
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
 caps.latest.revision: 19
 author: dotnet-bot

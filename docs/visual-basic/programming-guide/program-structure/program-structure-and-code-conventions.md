@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""coding conventions"", ""Visual Basic code, coding conventions"", ""coding conventions [VB], Visual Basic"", ""programs [VB], structure"", ""program structure [VB]"", ""naming conventions [VB], Visual Basic"", ""best practices [VB], coding conventions"", ""conventions [VB], Visual Basic coding"", ""Visual Basic code"", ""programming, Visual Basic coding conventions""]"]
+helpviewer_keywords: ["coding conventions", "Visual Basic code, coding conventions", "coding conventions [VB], Visual Basic", "programs [VB], structure", "program structure [VB]", "naming conventions [VB], Visual Basic", "best practices [VB], coding conventions", "conventions [VB], Visual Basic coding", "Visual Basic code", "programming, Visual Basic coding conventions"]
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
 caps.latest.revision: 21
 author: dotnet-bot

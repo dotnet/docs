@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""listheader XML tag"", ""<item> XML tag"", ""<list> XML tag"", ""<listheader> XML tag"", ""term XML tag"", ""list XML tag"", ""<description> XML tag"", ""description XML tag"", ""item XML tag"", ""<term> XML tag""]"]
+helpviewer_keywords: ["listheader XML tag", "<item> XML tag", "<list> XML tag", "<listheader> XML tag", "term XML tag", "list XML tag", "<description> XML tag", "description XML tag", "item XML tag", "<term> XML tag"]
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
 caps.latest.revision: 12
 author: dotnet-bot

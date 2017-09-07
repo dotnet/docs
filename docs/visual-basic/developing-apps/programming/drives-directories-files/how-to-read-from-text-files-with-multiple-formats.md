@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""TextFieldParser object, reading from a file"", ""TextFieldType enumeration"", ""My.Computer.FileSystem.WriteAllText method, parsing structured text files"", ""WriteAllText method [VB], parsing structured text files"", ""PeekChars method [VB], determining format of text"", ""reading text files [VB], multiple formats"", ""I/O [VB], reading text files"", ""text files [VB], reading""]"]
+helpviewer_keywords: ["TextFieldParser object, reading from a file", "TextFieldType enumeration", "My.Computer.FileSystem.WriteAllText method, parsing structured text files", "WriteAllText method [VB], parsing structured text files", "PeekChars method [VB], determining format of text", "reading text files [VB], multiple formats", "I/O [VB], reading text files", "text files [VB], reading"]
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
 caps.latest.revision: 17
 author: dotnet-bot

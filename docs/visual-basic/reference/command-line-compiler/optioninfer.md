@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["/optioninfer"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""-optioninfer compiler option [VB]"", ""/optioninfer compiler option [VB]"", ""optioninfer compiler option [VB]""]"]
+helpviewer_keywords: ["-optioninfer compiler option [VB]", "/optioninfer compiler option [VB]", "optioninfer compiler option [VB]"]
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
 caps.latest.revision: 19
 author: dotnet-bot

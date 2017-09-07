@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""resources [VB], specifications"", ""Visual Basic code, specifications"", ""specifications, Visual Basic""]"]
+helpviewer_keywords: ["resources [VB], specifications", "Visual Basic code, specifications", "specifications, Visual Basic"]
 ms.assetid: 42c30017-19d0-442e-87a2-850b66ddc3df
 caps.latest.revision: 14
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.And"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""operators [VB], bitwise"", ""logical conjunction"", ""bitwise AND operator [VB]"", ""conjunction operator [VB]"", ""And operator [VB]"", ""bitwise operators [VB], AND operator"", ""operators [VB], conjunction"", ""bitwise comparison [VB]""]"]
+helpviewer_keywords: ["operators [VB], bitwise", "logical conjunction", "bitwise AND operator [VB]", "conjunction operator [VB]", "And operator [VB]", "bitwise operators [VB], AND operator", "operators [VB], conjunction", "bitwise comparison [VB]"]
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
 caps.latest.revision: 12
 author: dotnet-bot

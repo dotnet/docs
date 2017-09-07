@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Main"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Main procedure"", ""Main method [VB]"", ""main function""]"]
+helpviewer_keywords: ["Main procedure", "Main method [VB]", "main function"]
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
 caps.latest.revision: 16
 author: dotnet-bot

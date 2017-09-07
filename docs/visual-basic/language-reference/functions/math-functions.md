@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""math functions, Visual Basic"", ""arithmetic operations, math functions"", ""math routines"", ""Atn function""]"]
+helpviewer_keywords: ["math functions, Visual Basic", "arithmetic operations, math functions", "math routines", "Atn function"]
 ms.assetid: 4d2d82e7-6924-42fe-a4a7-b4dd5bebbd0c
 caps.latest.revision: 23
 author: dotnet-bot

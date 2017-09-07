@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""language reference, .NET Framework"", "".NET Framework, reference"", "".NET Framework class library, reference information""]"]
+helpviewer_keywords: ["language reference, .NET Framework", ".NET Framework, reference", ".NET Framework class library, reference information"]
 ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
 caps.latest.revision: 15
 author: dotnet-bot

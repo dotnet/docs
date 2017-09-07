@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""serial ports"", ""My.Computer.Ports object [VB], tasks""]"]
+helpviewer_keywords: ["serial ports", "My.Computer.Ports object [VB], tasks"]
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 caps.latest.revision: 12
 author: dotnet-bot

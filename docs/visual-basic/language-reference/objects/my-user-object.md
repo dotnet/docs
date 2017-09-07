@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.User property"", ""My.User object""]"]
+helpviewer_keywords: ["My.User property", "My.User object"]
 ms.assetid: caa7462e-2149-4bdb-8850-802b80b93cbf
 caps.latest.revision: 16
 author: dotnet-bot

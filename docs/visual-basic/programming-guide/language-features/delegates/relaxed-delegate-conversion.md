@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""relaxed delegate conversion [VB]"", ""delegates [VB], relaxed conversion"", ""conversions [VB], relaxed delegate""]"]
+helpviewer_keywords: ["relaxed delegate conversion [VB]", "delegates [VB], relaxed conversion", "conversions [VB], relaxed delegate"]
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
 caps.latest.revision: 19
 author: dotnet-bot

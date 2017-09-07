@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""string functions"", ""manipulating strings"", ""strings [VB], manipulating""]"]
+helpviewer_keywords: ["string functions", "manipulating strings", "strings [VB], manipulating"]
 ms.assetid: 5d3197eb-fe66-417e-9e2a-20450660c9c6
 caps.latest.revision: 11
 author: dotnet-bot

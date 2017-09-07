@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""My.Computer.Info object""]"]
+helpviewer_keywords: ["My.Computer.Info object"]
 ms.assetid: 2eb2aa5f-303d-426c-918d-989c8b7b08d0
 caps.latest.revision: 19
 author: dotnet-bot

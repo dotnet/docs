@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Throw"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""structured exception handling, throw statements"", ""try-catch exception handling, throw statements"", ""throw statement [VB], about throw statements"", ""throwing exceptions, throw statement"", ""exception handling, throw statement"", ""On Error statement [VB], throwing exceptions"", ""throwing exceptions"", ""exception handling, unstructured"", ""throw statement [VB]""]"]
+helpviewer_keywords: ["structured exception handling, throw statements", "try-catch exception handling, throw statements", "throw statement [VB], about throw statements", "throwing exceptions, throw statement", "exception handling, throw statement", "On Error statement [VB], throwing exceptions", "throwing exceptions", "exception handling, unstructured", "throw statement [VB]"]
 ms.assetid: a6e07406-5c8a-4498-87a2-8339f3651d62
 caps.latest.revision: 15
 author: dotnet-bot

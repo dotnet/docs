@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""entire form [VB], printing"", ""scrollable form [VB], printing""]"]
+helpviewer_keywords: ["entire form [VB], printing", "scrollable form [VB], printing"]
 ms.assetid: 1196e1cf-b77f-4928-a3e4-85b51ba3787d
 caps.latest.revision: 15
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""procedure calls [VB], returning values"", ""Visual Basic code, procedures"", ""procedures [VB], calling"", ""procedures [VB], returning a value""]"]
+helpviewer_keywords: ["procedure calls [VB], returning values", "Visual Basic code, procedures", "procedures [VB], calling", "procedures [VB], returning a value"]
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
 caps.latest.revision: 15
 author: dotnet-bot

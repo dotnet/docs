@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""names [VB], Visual Basic rules"", ""naming conventions"", ""naming conventions [VB], Visual Basic"", ""Visual Basic code, naming conventions"", ""conventions [VB], Visual Basic coding"", ""names [VB], naming conventions"", ""naming conventions [VB], classes""]"]
+helpviewer_keywords: ["names [VB], Visual Basic rules", "naming conventions", "naming conventions [VB], Visual Basic", "Visual Basic code, naming conventions", "conventions [VB], Visual Basic coding", "names [VB], naming conventions", "naming conventions [VB], classes"]
 ms.assetid: 164949a4-2a7c-4736-9d82-9c3078e2e56c
 caps.latest.revision: 10
 author: dotnet-bot

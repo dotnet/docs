@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""programming [VB], Visual Basic"", ""programming""]"]
+helpviewer_keywords: ["programming [VB], Visual Basic", "programming"]
 ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 caps.latest.revision: 11
 author: dotnet-bot

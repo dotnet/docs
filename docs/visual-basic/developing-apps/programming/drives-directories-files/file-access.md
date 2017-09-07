@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""file access"", ""files [VB], input and output"", ""file access, Visual Basic"", ""files [VB], I/O"", ""file I/O classes"", ""data [VB], accessing from files"", ""files [VB], accessing"", ""file access, using components"", ""My.Computer.FileSystem object, accessing files"", ""I/O [VB]"", ""sequential access""]"]
+helpviewer_keywords: ["file access", "files [VB], input and output", "file access, Visual Basic", "files [VB], I/O", "file I/O classes", "data [VB], accessing from files", "files [VB], accessing", "file access, using components", "My.Computer.FileSystem object, accessing files", "I/O [VB]", "sequential access"]
 ms.assetid: 231533bf-d049-4345-befa-3fb78fe6517d
 caps.latest.revision: 17
 author: dotnet-bot

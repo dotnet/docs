@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Delete method [VB]"", ""files [VB], deleting"", ""files [VB], manipulating"", ""File object""]"]
+helpviewer_keywords: ["Delete method [VB]", "files [VB], deleting", "files [VB], manipulating", "File object"]
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
 caps.latest.revision: 24
 author: dotnet-bot

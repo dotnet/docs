@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""defaults, properties"", ""properties [VB], default"", ""procedures [VB], defining"", ""default properties, in Visual Basic"", ""Visual Basic code, procedures"", ""Visual Basic code, properties"", ""default properties""]"]
+helpviewer_keywords: ["defaults, properties", "properties [VB], default", "procedures [VB], defining", "default properties, in Visual Basic", "Visual Basic code, procedures", "Visual Basic code, properties", "default properties"]
 ms.assetid: 68b4026e-09ef-4613-808e-f6287494ff63
 caps.latest.revision: 23
 author: dotnet-bot

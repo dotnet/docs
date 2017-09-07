@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ParamArray", "ParamArray"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""ParamArray keyword [VB]"", ""ParamArray keyword [VB], syntax""]"]
+helpviewer_keywords: ["ParamArray keyword [VB]", "ParamArray keyword [VB], syntax"]
 ms.assetid: a5f18789-92bd-488f-9c7e-cf3719963635
 caps.latest.revision: 15
 author: dotnet-bot

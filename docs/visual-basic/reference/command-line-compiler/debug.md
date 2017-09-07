@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""debug compiler switches"", ""/debug compiler option [VB]"", ""-debug compiler option [VB]"", ""debug compiler option [VB]""]"]
+helpviewer_keywords: ["debug compiler switches", "/debug compiler option [VB]", "-debug compiler option [VB]", "debug compiler option [VB]"]
 ms.assetid: c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2
 caps.latest.revision: 18
 author: dotnet-bot

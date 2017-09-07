@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""Clipboard"", ""My.Computer.Clipboard object""]"]
+helpviewer_keywords: ["Clipboard", "My.Computer.Clipboard object"]
 ms.assetid: 05d4ede9-1f9a-4495-87f0-77350b8d2e5d
 caps.latest.revision: 29
 author: dotnet-bot

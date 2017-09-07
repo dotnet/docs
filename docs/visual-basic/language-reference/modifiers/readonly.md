@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ReadOnly"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""ReadOnly keyword [VB]"", ""variables [VB], read-only"", ""ReadOnly property"", ""properties [VB], read-only"", ""read-only variables""]"]
+helpviewer_keywords: ["ReadOnly keyword [VB]", "variables [VB], read-only", "ReadOnly property", "properties [VB], read-only", "read-only variables"]
 ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
 caps.latest.revision: 15
 author: dotnet-bot

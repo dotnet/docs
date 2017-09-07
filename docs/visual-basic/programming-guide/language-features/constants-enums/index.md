@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["[""enumerations [VB]"", ""Visual Basic code, constants"", ""constants [VB]"", ""object libraries, Object Browser"", ""Visual Basic code, enumerations"", ""declaring constants [VB], enumerations"", ""naming conventions [VB], constants"", ""Visual Basic code, improving readability with constants""]"]
+helpviewer_keywords: ["enumerations [VB]", "Visual Basic code, constants", "constants [VB]", "object libraries, Object Browser", "Visual Basic code, enumerations", "declaring constants [VB], enumerations", "naming conventions [VB], constants", "Visual Basic code, improving readability with constants"]
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
 caps.latest.revision: 16
 author: dotnet-bot

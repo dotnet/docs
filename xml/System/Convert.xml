@@ -666,7 +666,7 @@
  The valueless character, "=", is used for trailing padding. The end of `s` can consist of zero, one, or two padding characters.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.FromBase64String%2A>method is designed to process a single string that contains all the data to be decoded. To decode base-64 character data from a stream, use the <xref:System.Security.Cryptography.FromBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.FromBase64String%2A> method is designed to process a single string that contains all the data to be decoded. To decode base-64 character data from a stream, use the <xref:System.Security.Cryptography.FromBase64Transform?displayProperty=fullName> class.  
   
    
   
@@ -828,7 +828,7 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offsetIn` and `offsetOut` parameters are zero-based array positions.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.ToBase64CharArray%2A>method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64CharArray%2A> method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
   
    
   
@@ -2503,7 +2503,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToByte%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToByte%2A?displayProperty=fullName> implementation of the underlying type of `value`.  
   
    
   
@@ -3423,7 +3423,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToChar%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToChar%2A?displayProperty=fullName> implementation of the underlying type of `value`.  
   
    
   
@@ -4311,7 +4311,7 @@
   
  This method tries to parse `value` completely and avoid throwing a <xref:System.FormatException>. It completes missing month, day, and year information with the current date. If `value` contains only a date and no time, this method assumes a time of midnight. Any leading, inner, or trailing white-space characters in `value` are ignored.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName>method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -4540,7 +4540,7 @@
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.DateTimeFormatInfo> object. The <xref:System.Globalization.DateTimeFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName>method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -5147,7 +5147,7 @@
    
   
 ## Examples  
- The following example illustrates the use of `ToDecimal`. It attempts to convert a <xref:System.String>to a <xref:System.Decimal>, and throws the possible exceptions that may arise during the conversion.  
+ The following example illustrates the use of `ToDecimal`. It attempts to convert a <xref:System.String> to a <xref:System.Decimal>, and throws the possible exceptions that may arise during the conversion.  
   
  [!code-cpp[System.Convert Snippets#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Convert Snippets/CPP/system.convert snippet.cpp#15)]
  [!code-csharp[System.Convert Snippets#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert Snippets/CS/system.convert snippet.cs#15)]
@@ -5837,7 +5837,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToDouble%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToDouble%2A?displayProperty=fullName> implementation of the underlying type of `value`.  
   
    
   
@@ -7652,7 +7652,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If`value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt32%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If`value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt32%2A?displayProperty=fullName> implementation of the underlying type of `value`.  
   
    
   
@@ -12526,7 +12526,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `value` parameter implements the <xref:System.IConvertible> interface, the method calls the <xref:System.IConvertible.ToString%28System.IFormatProvider%29?displayProperty=fullName>implementation of `value`. Otherwise, if the `value` parameter implements the <xref:System.IFormattable> interface, the method calls its <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>implementation. If `value` implements neither interface, the method calls the `value` parameter's `ToString()` method, and the `provider` parameter is ignored.  
+ If the `value` parameter implements the <xref:System.IConvertible> interface, the method calls the <xref:System.IConvertible.ToString%28System.IFormatProvider%29?displayProperty=fullName> implementation of `value`. Otherwise, if the `value` parameter implements the <xref:System.IFormattable> interface, the method calls its <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> implementation. If `value` implements neither interface, the method calls the `value` parameter's `ToString()` method, and the `provider` parameter is ignored.  
   
  The `provider` parameter is used if the `value` parameter implements the <xref:System.IConvertible> or <xref:System.IFormattable> interface. The most common use of the `provider` parameter is to specify culture-specific information used in the conversion of `value`. For example, if the `value` parameter is a negative decimal number, the `provider` parameter can supply culture-specific information about the notation used for the negative sign and decimal separator. The second example in the next section illustrates a format provider that does not supply culture-sensitive formatting information.  
   
@@ -12538,7 +12538,7 @@
  [!code-csharp[System.Convert.ToString2#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring5.cs#26)]
  [!code-vb[System.Convert.ToString2#26](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring5.vb#26)]  
   
- The following example defines a `Temperature` class that implements the <xref:System.IFormattable> interface but does not implement the <xref:System.IConvertible> interface. Its <xref:System.IFormattable.ToString%2A?displayProperty=fullName>implementation represents the `Temperature` value in Celsius, Fahrenheit, or Kelvin, depending on the format  string. The example also defines a `TemperatureProvider` class that implements <xref:System.IFormatProvider> and provides a randomly generated format string that is used by the <xref:System.IFormattable> implementation of the `Temperature` class.  
+ The following example defines a `Temperature` class that implements the <xref:System.IFormattable> interface but does not implement the <xref:System.IConvertible> interface. Its <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation represents the `Temperature` value in Celsius, Fahrenheit, or Kelvin, depending on the format  string. The example also defines a `TemperatureProvider` class that implements <xref:System.IFormatProvider> and provides a randomly generated format string that is used by the <xref:System.IFormattable> implementation of the `Temperature` class.  
   
  [!code-csharp[System.Convert.ToString2#30](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring_obj30.cs#30)]
  [!code-vb[System.Convert.ToString2#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring_obj30.vb#30)]  

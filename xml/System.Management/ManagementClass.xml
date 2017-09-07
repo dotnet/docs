@@ -1280,8 +1280,8 @@
 ## Examples  
  The following example uses the <xref:System.Management.ManagementClass.GetSubclasses%2A> method to list the subclasses to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
   
- [!code-csharp[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/cs/ManagementClass_GetSubclasses.cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/vb/ManagementClass_GetSubclasses.vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses/cs/ManagementClass_GetSubclasses.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses/vb/ManagementClass_GetSubclasses.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -1319,8 +1319,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then receive the subclasses of the WMI class passed into the constructor.  
   
- [!code-csharp[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/cs/ManagementClass_GetSubclasses-E.cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/vb/ManagementClass_GetSubclasses-E.vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses-E/cs/ManagementClass_GetSubclasses-E.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses-E/vb/ManagementClass_GetSubclasses-E.vb#1)]  
   
  ]]></format>
         </remarks>

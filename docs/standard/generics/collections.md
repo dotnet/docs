@@ -36,7 +36,7 @@ This topic provides an overview of the generic collection classes and other gene
  The <xref:System.Collections.ObjectModel.Collection%601> generic class provides a base class for deriving your own generic collection types. The <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> class provides an easy way to produce a read-only collection from any type that implements the <xref:System.Collections.Generic.IList%601> generic interface. The <xref:System.Collections.ObjectModel.KeyedCollection%602> generic class provides a way to store objects that contain their own keys.  
   
 ## Other Generic Types  
- The <xref:System.Nullable%601>generic structure allows you to use value types as if they could be assigned `null`. This can be useful when working with database queries, where fields that contain value types can be missing. The generic type parameter can be any value type.  
+ The <xref:System.Nullable%601> generic structure allows you to use value types as if they could be assigned `null`. This can be useful when working with database queries, where fields that contain value types can be missing. The generic type parameter can be any value type.  
   
 > [!NOTE]
 >  In C# it is not necessary to use <xref:System.Nullable%601> explicitly because the language has syntax for nullable types.  

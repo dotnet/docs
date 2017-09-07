@@ -824,7 +824,7 @@ Ribbon gallery in a combo box
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
+ You use the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
   
 <a name="dependencyPropertyInfo_FilterItemTemplateSelector"></a>   
 ## Dependency Property Information  

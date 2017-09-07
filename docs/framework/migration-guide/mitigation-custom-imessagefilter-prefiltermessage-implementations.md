@@ -22,7 +22,7 @@ In Windows Forms apps that target versions of the .NET Framework starting with t
   
     -   Adds a message filter by calling the <xref:System.Windows.Forms.Application.AddMessageFilter%2A> method.  
   
-    -   Removes a message filter by calling the <xref:System.Windows.Forms.Application.RemoveMessageFilter%2A>method. method.  
+    -   Removes a message filter by calling the <xref:System.Windows.Forms.Application.RemoveMessageFilter%2A> method. method.  
   
 -   **And** pumps messages by calling the <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> method.  
   

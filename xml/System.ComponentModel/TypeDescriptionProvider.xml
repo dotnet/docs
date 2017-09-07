@@ -487,7 +487,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method reverses the<xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method to convert a reflection type back into a runtime type. Using the <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method is preferred over using the <xref:System.Type.UnderlyingSystemType%2A> property, which was used in earlier versions to return the runtime type.  
+ The <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method reverses the <xref:System.ComponentModel.TypeDescriptionProvider.GetReflectionType%2A> method to convert a reflection type back into a runtime type. Using the <xref:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType%2A> method is preferred over using the <xref:System.Type.UnderlyingSystemType%2A> property, which was used in earlier versions to return the runtime type.  
   
  ]]></format>
         </remarks>

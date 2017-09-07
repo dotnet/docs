@@ -1688,7 +1688,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       </ReturnValue>
       <Docs>
         <summary>Gets the result value of this <see cref="T:System.Threading.Tasks.Task`1" />.</summary>
-        <value>The result value of this <see cref="T:System.Threading.Tasks.Task`1" />, which is the same type as the task's type parameter.</value>
+        <value>The result value of this <see cref="T:System.Threading.Tasks.Task`1" />, which is of the same type as the task's type parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

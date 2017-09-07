@@ -52,7 +52,7 @@
 ### Methods as members of types  
  A method is defined as a type member by using the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A?displayProperty=fullName> method, which returns a <xref:System.Reflection.Emit.MethodBuilder> object.  
   
- The <xref:System.Reflection.Emit.MethodBuilder.DefineParameter%2A> method is used to set the name and parameter attributes of a parameter, or of the return value. The<xref:System.Reflection.Emit.ParameterBuilder> object returned by this method represents a parameter or the return value. The <xref:System.Reflection.Emit.ParameterBuilder> object can be used to set the marshaling, to set the constant value, and to apply custom attributes.  
+ The <xref:System.Reflection.Emit.MethodBuilder.DefineParameter%2A> method is used to set the name and parameter attributes of a parameter, or of the return value. The <xref:System.Reflection.Emit.ParameterBuilder> object returned by this method represents a parameter or the return value. The <xref:System.Reflection.Emit.ParameterBuilder> object can be used to set the marshaling, to set the constant value, and to apply custom attributes.  
   
 ## Attributes  
  Members of the <xref:System.Reflection.MethodAttributes> enumeration define the precise character of a dynamic method:  

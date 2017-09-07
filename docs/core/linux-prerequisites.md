@@ -4,7 +4,7 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, Linux, debian, ubuntu, RHEL, centOS,
 author: jralexander
 ms.author: johalex
-ms.date: 09/01/2017
+ms.date: 09/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -319,7 +319,7 @@ To install .NET Core on Debian 8 or Debian 9 (64 bit):
    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-jessie-prod jessie main" > /etc/apt/sources.list.d/dotnetdev.list'
    ```
    
-5. Extract the .NET Core SDK binaries.
+5. Install .NET Core SDK.
 
    ```bash
    sudo apt-get update
@@ -331,6 +331,13 @@ To install .NET Core on Debian 8 or Debian 9 (64 bit):
    ```bash
    export PATH=$PATH:$HOME/dotnet
    ```
+   
+7. Run the `dotnet --version` command to prove the installation succeeded.
+
+   ```bash
+   dotnet --version
+   ```   
+  
 
 # [.NET Core 1.x](#tab/netcore1x)
 
@@ -358,17 +365,17 @@ To install .NET Core on Debian 8 or Debian 9 (64 bit):
    sudo ln -s /opt/dotnet/dotnet /usr/local/bin
    ```
 
----
-
 6. Run the `dotnet --version` command to prove the installation succeeded.
 
    ```bash
    dotnet --version
    ```
 
+---
+
 ## Install .NET Core for Fedora 24, Fedora 25, or Fedora 26 (64 bit)
 
-To Install .NET Core for Fedora 26, Fedora 25 (.NET Core 2.x) or Fedora 24 (.NET Core 1.x):
+To install .NET Core 2.x on Fedora 26 or Fedora 25, or .NET Core 1.x on Fedora 24:
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
@@ -443,7 +450,7 @@ To Install .NET Core for Fedora 26, Fedora 25 (.NET Core 2.x) or Fedora 24 (.NET
 
 ## Install .NET Core for CentOS 7.1 (64 bit) & Oracle Linux 7.1 (64 bit)
 
-To Install .NET Core for CentOS 7.1 (64 bit) & Oracle Linux 7.1 (64 bit):
+To install .NET Core for CentOS 7.1 (64 bit) & Oracle Linux 7.1 (64 bit):
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
@@ -514,7 +521,7 @@ To Install .NET Core for CentOS 7.1 (64 bit) & Oracle Linux 7.1 (64 bit):
 
 ## Install .NET Core for SUSE Linux Enterprise Server (64 bit)
 
-To Install .NET Core 2.x for SUSE Linux Enterprise Server (SLES) 12 SP2 (64 bit):
+To install .NET Core 2.x for SUSE Linux Enterprise Server (SLES) 12 SP2 (64 bit):
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
@@ -547,7 +554,7 @@ To Install .NET Core 2.x for SUSE Linux Enterprise Server (SLES) 12 SP2 (64 bit)
    
 ## Install .NET Core for openSUSE (64 bit)
 
-To Install .NET Core 2.x for openSUSE or .NET Core 1.x for openSUSE (64 bit):
+To install .NET Core 2.x for openSUSE or .NET Core 1.x for openSUSE (64 bit):
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 

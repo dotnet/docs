@@ -29,7 +29,7 @@
   
  If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `true`, context is established at the channel layer, and all incoming messages on the client and the service have this context property attached by the context channel. If <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is `false` the <xref:System.ServiceModel.Channels.ContextMessageProperty> is used to attach context to an outgoing message on the client or the service at the application layer.  
   
- The <xref:System.ServiceModel.Channels.ContextMessageProperty> can be used on the client or on the service. Alternatively, on the client only, the current context can be obtained or a new context can be set on channel instance using <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> and <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A>properties.  
+ The <xref:System.ServiceModel.Channels.ContextMessageProperty> can be used on the client or on the service. Alternatively, on the client only, the current context can be obtained or a new context can be set on channel instance using <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> and <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A> properties.  
   
  ]]></format>
     </remarks>

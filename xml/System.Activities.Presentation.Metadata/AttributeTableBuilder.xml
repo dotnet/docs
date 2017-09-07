@@ -371,7 +371,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some overrides of <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A>cannot validate that values passed to their parameters represent valid members on classes. <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable%2A> verifies that all custom attribute information corresponds to actual members. This method can take a long time to complete and is not recommended unless validation is explicitly needed.  
+ Some overrides of <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> cannot validate that values passed to their parameters represent valid members on classes. <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.ValidateTable%2A> verifies that all custom attribute information corresponds to actual members. This method can take a long time to complete and is not recommended unless validation is explicitly needed.  
   
  ]]></format>
         </remarks>

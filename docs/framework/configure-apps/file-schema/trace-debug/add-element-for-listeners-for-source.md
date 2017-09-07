@@ -93,7 +93,7 @@ Adds a listener to the `Listeners` collection for a trace source.
 |<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|  
 |<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
 |<xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>|The name of an existing event log source.|  
-|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener>writes to.|  
+|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
 |<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
 |<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
   

@@ -118,7 +118,7 @@
 ## Remarks  
  This method returns an object derived from <xref:System.Text.EncoderFallbackBuffer> that is responsible for performing the fallback operation. For example, of the predefined <xref:System.Text.EncoderFallback> implementations in the .NET Framework, the <xref:System.Text.EncoderReplacementFallback.CreateFallbackBuffer%2A?displayProperty=fullName> method returns an <xref:System.Text.EncoderReplacementFallbackBuffer> object, and the <xref:System.Text.EncoderExceptionFallback.CreateFallbackBuffer%2A?displayProperty=fullName> method returns an <xref:System.Text.EncoderExceptionFallbackBuffer> object.  
   
- The<xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A> method is called by an encoder when it encounters the first character that it is unable to encode. The <xref:System.Text.EncoderFallbackBuffer> object returned by this method provides the fallback implementation and is responsible for returning the byte array that replaces the character or characters that could not be encoded.  
+ The <xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A> method is called by an encoder when it encounters the first character that it is unable to encode. The <xref:System.Text.EncoderFallbackBuffer> object returned by this method provides the fallback implementation and is responsible for returning the byte array that replaces the character or characters that could not be encoded.  
   
  ]]></format>
         </remarks>

@@ -571,7 +571,7 @@
  See <xref:System.Windows.Navigation.NavigationService.LoadCompleted?displayProperty=fullName>.  
   
 > [!NOTE]
->  Listen for events on the navigated content such as the <xref:System.Windows.FrameworkElement.Loaded>event on <xref:System.Windows.Controls.Page> before you access properties of the navigated content.  
+>  Listen for events on the navigated content such as the <xref:System.Windows.FrameworkElement.Loaded> event on <xref:System.Windows.Controls.Page> before you access properties of the navigated content.  
   
  ]]></format>
         </remarks>
@@ -1267,7 +1267,7 @@
   
  Properties stored in <xref:System.Windows.Application.Properties%2A> must be converted to the appropriate type returned.  
   
- The<xref:System.Windows.Application.Properties%2A> property is thread safe and is available from any thread.  
+ The <xref:System.Windows.Application.Properties%2A> property is thread safe and is available from any thread.  
   
    
   

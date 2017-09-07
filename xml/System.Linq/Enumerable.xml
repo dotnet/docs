@@ -79,14 +79,14 @@
 ## Remarks  
  The <xref:System.Linq.Enumerable.Aggregate%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%600%2C%60%600%7D%29> method makes it simple to perform a calculation over a sequence of values. This method works by calling `func` one time for each element in `source` except the first one. Each time `func` is called, <xref:System.Linq.Enumerable.Aggregate%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%600%2C%60%600%7D%29> passes both the element from the sequence and an aggregated value (as the first argument to `func`). The first element of `source` is used as the initial aggregate value. The result of `func` replaces the previous aggregated value. <xref:System.Linq.Enumerable.Aggregate%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%600%2C%60%600%7D%29> returns the final result of `func`.  
   
- This overload of the <xref:System.Linq.Enumerable.Aggregate%2A>methodisn't suitable for all casesbecause it uses the first element of `source` as the initial aggregate value. You should choose another overload if the return value should include only the elements of `source` that meet a certain condition. For example, this overload isn't reliableif you want to calculate the sum of the even numbers in `source`. The result will be incorrect if the first element is odd instead of even.  
+ This overload of the <xref:System.Linq.Enumerable.Aggregate%2A> method isn't suitable for all cases because it uses the first element of `source` as the initial aggregate value. You should choose another overload if the return value should include only the elements of `source` that meet a certain condition. For example, this overload isn't reliableif you want to calculate the sum of the even numbers in `source`. The result will be incorrect if the first element is odd instead of even.  
   
  To simplify common aggregation operations, the standard query operators also include a general purpose count method, <xref:System.Linq.Enumerable.Count%2A>, and four numeric aggregation methods, namely <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Sum%2A>, and <xref:System.Linq.Enumerable.Average%2A>.  
   
    
   
 ## Examples  
- The following code example demonstrates how to reverse the order of words in a string by using<xref:System.Linq.Enumerable.Aggregate%2A>.  
+ The following code example demonstrates how to reverse the order of words in a string by using <xref:System.Linq.Enumerable.Aggregate%2A>.  
   
  [!code-csharp[System.Linq.Enumerable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Enumerable/CS/enumerable.cs#1)]
  [!code-vb[System.Linq.Enumerable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Enumerable/VB/Enumerable.vb#1)]  
@@ -2202,7 +2202,7 @@ From i As Integer In objects
   
  The default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare values of the types that implement the <xref:System.IEquatable%601> generic interface. To compare a custom data type, you need to implement this interface and provide your own <xref:System.Object.GetHashCode%2A> and <xref:System.Object.Equals%2A> methods for the type.  
   
- For an example that uses <xref:System.Collections.Generic.IEqualityComparer%601>to define a custom comparer, see <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29>.  
+ For an example that uses <xref:System.Collections.Generic.IEqualityComparer%601> to define a custom comparer, see <xref:System.Linq.Enumerable.Distinct%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%600%7D%29>.  
   
    
   

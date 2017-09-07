@@ -5798,7 +5798,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Windows.Forms.Form.WindowState%2A>to maximized. The code is called from the <xref:System.Windows.Forms.Form.Shown> event handler after the form has been created.  
+ The following code example demonstrates how to set the <xref:System.Windows.Forms.Form.WindowState%2A> to maximized. The code is called from the <xref:System.Windows.Forms.Form.Shown> event handler after the form has been created.  
   
 ```csharp  
 private void Form1_Shown(object sender, EventArgs e)  

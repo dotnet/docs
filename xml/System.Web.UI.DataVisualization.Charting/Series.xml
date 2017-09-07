@@ -600,7 +600,7 @@ public void CreateSecondLegend()
 |Any shape chart (for example, Pie and Doughnut charts)|No|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Chart> control palette. One color per data point.|  
 |All charts except shape charts|No|First available colors from <xref:System.Web.UI.DataVisualization.Charting.Chart> control palette. One color per data series.|  
 |Any shape chart (for example, Pie and Doughnut charts)|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series> palette. One color per data point.|  
-|All charts except shape charts|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series>palette. One color per data series.|  
+|All charts except shape charts|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series> palette. One color per data series.|  
   
  This <xref:System.Web.UI.DataVisualization.Charting.Series.Palette%2A> property has precedence over the <xref:System.Web.UI.DataVisualization.Charting.Chart.Palette%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object, with respect to the display of data.  
   

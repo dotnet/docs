@@ -92,7 +92,7 @@
  It is to your advantage to use the type-specific implementation of the <xref:System.Collections.Generic.List%601> class instead of using the <xref:System.Collections.ArrayList> class or writing a strongly typed wrapper collection yourself. The reason is your implementation must do what the .NET Framework does for you already, and the common language runtime can share Microsoft intermediate language code and metadata, which your implementation cannot.  
   
 ## F# Considerations  
- The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](http://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the<xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
+ The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](http://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the <xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
   
    
   
@@ -1180,7 +1180,7 @@
    
   
 ## Examples  
- The following example demonstrates the <xref:System.Collections.Generic.List%601.Contains%2A> and <xref:System.Collections.Generic.List%601.Exists%2A>methods on a <xref:System.Collections.Generic.List%601> that contains a simple business object that implements <xref:System.IEquatable%601.Equals%2A>.  
+ The following example demonstrates the <xref:System.Collections.Generic.List%601.Contains%2A> and <xref:System.Collections.Generic.List%601.Exists%2A> methods on a <xref:System.Collections.Generic.List%601> that contains a simple business object that implements <xref:System.IEquatable%601.Equals%2A>.  
   
  [!code-csharp[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/vb/module1.vb#1)]  

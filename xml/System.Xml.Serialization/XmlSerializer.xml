@@ -1717,7 +1717,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
         <param name="stream">The <see cref="T:System.IO.Stream" /> used to write the XML document.</param>
         <param name="o">The <see cref="T:System.Object" /> to serialize.</param>
         <param name="namespaces">The <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> referenced by the object.</param>
-        <summary>Serializes the specified <see cref="T:System.Object" /> and writes the XML document to a file using the specified <see cref="T:System.IO.Stream" />that references the specified namespaces.</summary>
+        <summary>Serializes the specified <see cref="T:System.Object" /> and writes the XML document to a file using the specified <see cref="T:System.IO.Stream" /> that references the specified namespaces.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -2392,6 +2392,8 @@
   
  The `path` parameter may specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, use the <xref:System.IO.Directory.GetCurrentDirectory%2A> method.  
   
+ The returned <xref:System.IO.FileStream> does not support reading. To open a file for both reading and writing, use <xref:System.IO.File.Open%2A>.
+
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    

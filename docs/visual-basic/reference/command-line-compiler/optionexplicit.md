@@ -1,41 +1,19 @@
 ---
 title: "/optionexplicit"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "/optionexplicit"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/optionexplicit compiler option [Visual Basic]"
-  - "optionexplicit compiler option [Visual Basic]"
-  - "-optionexplicit compiler option [Visual Basic]"
+f1_keywords: ["/optionexplicit"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""/optionexplicit compiler option [VB]"", ""optionexplicit compiler option [VB]"", ""-optionexplicit compiler option [VB]""]"]
 ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /optionexplicit
 Causes the compiler to report errors if variables are not declared before they are used.  

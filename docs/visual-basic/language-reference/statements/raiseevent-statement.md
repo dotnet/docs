@@ -1,43 +1,19 @@
 ---
 title: "RaiseEvent Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.RaiseEventMethod"
-  - "vb.RaiseEvent"
-  - "RaiseEvent"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "raising events, RaiseEvent statement"
-  - "RaiseEvent statement"
-  - "event handlers, connecting events to"
+f1_keywords: ["vb.RaiseEventMethod", "vb.RaiseEvent", "RaiseEvent"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""raising events [VB], RaiseEvent statement"", ""RaiseEvent statement [VB]"", ""event handlers, connecting events to""]"]
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # RaiseEvent Statement
 Triggers an event declared at module level within a class, form, or document.  

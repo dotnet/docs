@@ -1,45 +1,19 @@
 ---
 title: "Structure Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Structure"
-  - "Structure"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "user-defined types, Structure statement"
-  - "compound data types"
-  - "Structure keyword"
-  - "Structure statement"
-  - "UDT (user-defined types)"
-  - "types [Visual Basic], user-defined"
+f1_keywords: ["vb.Structure", "Structure"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""user-defined types [VB], Structure statement"", ""compound data types [VB]"", ""Structure keyword [VB]"", ""Structure statement [VB]"", ""UDT (user-defined types)"", ""types [VB], user-defined""]"]
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Structure Statement
 Declares the name of a structure and introduces the definition of the variables, properties, events, and procedures that the structure comprises.  

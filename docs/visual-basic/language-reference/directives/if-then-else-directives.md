@@ -1,51 +1,18 @@
 ---
 title: "#If...Then...#Else Directives"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.#EndIf"
-  - "#End If"
-  - "#Then"
-  - "#ElseIf"
-  - "vb.#ElseIf"
-  - "vb.#Else"
-  - "vb.#If"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, compiling"
-  - "#If directive [Visual Basic]"
-  - "conditional compilation, directives"
-  - "#End if directive [Visual Basic]"
-  - "selective compiling"
-  - "else directive (#else)"
-  - "#Else directive [Visual Basic]"
+f1_keywords: ["vb.#EndIf", "#End If", "#Then", "#ElseIf", "vb.#ElseIf", "vb.#Else", "vb.#If"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Visual Basic code, compiling"", ""#If directive [VB]"", ""conditional compilation [VB], directives"", ""#End if directive [VB]"", ""selective compiling"", ""else directive (#else)"", ""#Else directive [VB]""]"]
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # #If...Then...#Else Directives
 Conditionally compiles selected blocks of Visual Basic code.  

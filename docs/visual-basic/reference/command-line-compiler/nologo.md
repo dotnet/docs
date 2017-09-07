@@ -1,40 +1,18 @@
 ---
 title: "/nologo (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "-nologo compiler option [Visual Basic]"
-  - "banners, suppressing startup"
-  - "nologo compiler option [Visual Basic]"
-  - "/nologo compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""-nologo compiler option [VB]"", ""banners, suppressing startup"", ""nologo compiler option [VB]"", ""/nologo compiler option [VB]""]"]
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /nologo (Visual Basic)
 Suppresses display of the copyright banner and informational messages during compilation.  

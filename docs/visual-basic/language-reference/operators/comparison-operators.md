@@ -1,63 +1,19 @@
 ---
 title: "Comparison Operators (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.<>"
-  - "vb.>="
-  - "vb.<="
-  - "vb.>"
-  - "vb.<"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "greater than or equal to operator [Visual Basic]"
-  - ">= operator [Visual Basic]"
-  - "= operator [Visual Basic]"
-  - "< operator [Visual Basic]"
-  - "less than operator [Visual Basic]"
-  - "relational operators, syntax"
-  - "Like operator [Visual Basic]"
-  - "<> operator [Visual Basic]"
-  - "> operator [Visual Basic]"
-  - "equal operator [Visual Basic]"
-  - "less than or equal to operator [Visual Basic]"
-  - "symbols, operators"
-  - "greater than operator [Visual Basic]"
-  - "comparing values [Visual Basic]"
-  - "operators [Visual Basic], relational"
-  - "string comparison [Visual Basic]"
-  - "not equal to comparison operator [Visual Basic]"
-  - "<= operator [Visual Basic]"
-  - "operators [Visual Basic], comparison"
-  - "Is operator [Visual Basic]"
-  - "comparison operators, Visual Basicl"
+f1_keywords: ["vb.<>", "vb.>=", "vb.<=", "vb.>", "vb.<"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""greater than or equal to operator [VB]"", "">= operator [VB]"", ""= operator [VB]"", ""< operator [VB]"", ""less than operator [VB]"", ""relational operators [VB], syntax"", ""Like operator [VB]"", ""<> operator [VB]"", ""> operator [VB]"", ""equal operator [VB]"", ""less than or equal to operator [VB]"", ""symbols, operators"", ""greater than operator [VB]"", ""comparing values [VB]"", ""operators [VB], relational"", ""string comparison [VB]"", ""not equal to comparison operator [VB]"", ""<= operator [VB]"", ""operators [VB], comparison"", ""Is operator [VB]"", ""comparison operators [VB], Visual Basicl""]"]
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Comparison Operators (Visual Basic)
 The following are the comparison operators defined in Visual Basic.  

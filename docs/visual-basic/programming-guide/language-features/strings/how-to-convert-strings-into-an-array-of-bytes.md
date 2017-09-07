@@ -5,37 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "string conversion, arrays"
-  - "arrays [Visual Basic], converting strings to"
-  - "byte arrays"
-  - "examples [Visual Basic], string conversion"
-  - "arrays [Visual Basic], byte arrays"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""string conversion [VB], arrays"", ""arrays [VB], converting strings to"", ""byte arrays"", ""examples [VB], string conversion"", ""arrays [VB], byte arrays""]"]
 ms.assetid: f477d35c-a3fc-4a30-b1d4-cd0d353aae1d
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Convert Strings into an Array of Bytes in Visual Basic
 This topic shows how to convert a string into an array of bytes.  

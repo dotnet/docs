@@ -2,51 +2,16 @@
 title: "Type List (Visual Basic)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "StructureConstraint"
-  - "vb.StructureConstraint"
-  - "ClassConstraint"
-  - "vb.ClassConstraint"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "class constraint"
-  - "constraints, Visual Basic generic types"
-  - "generic parameters"
-  - "generics [Visual Basic], constraints"
-  - "generics [Visual Basic], type list"
-  - "structure constraint"
-  - "constraints, in type parameters"
-  - "generics [Visual Basic], generic types"
-  - "parameters, type"
-  - "constraints, Structure keyword"
-  - "type parameters, constraints"
-  - "types [Visual Basic], generic"
-  - "parameters, generic"
-  - "generics [Visual Basic], type parameters"
-  - "type parameters"
-  - "constraints, Class keyword"
+f1_keywords: ["StructureConstraint", "vb.StructureConstraint", "ClassConstraint", "vb.ClassConstraint"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""class constraint"", ""constraints, Visual Basic generic types"", ""generic parameters"", ""generics [VB], constraints"", ""generics [VB], type list"", ""structure constraint"", ""constraints, in type parameters"", ""generics [VB], generic types"", ""parameters [VB], type"", ""constraints, Structure keyword"", ""type parameters [VB], constraints"", ""types [VB], generic"", ""parameters [VB], generic"", ""generics [VB], type parameters"", ""type parameters"", ""constraints, Class keyword""]"]
 ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Type List (Visual Basic)
 Specifies the *type parameters* for a *generic* programming element. Multiple parameters are separated by commas. Following is the syntax for one type parameter.  

@@ -1,54 +1,17 @@
 ---
 title: "Derived Math Functions (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "arithmetic operations, derived math functions"
-  - "cosecant function"
-  - "arcsecant function"
-  - "arccotangent function"
-  - "functions [Visual Basic], derived math functions"
-  - "inverse functions"
-  - "math functions, derived"
-  - "derived math functions"
-  - "cotangent function"
-  - "angles"
-  - "secant function"
-  - "trigonometric functions"
-  - "logarithms"
-  - "arccosecant function"
-  - "hyperbolic functions"
-  - "arcsine function"
-  - "degrees"
-  - "arccosine function"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""arithmetic operations, derived math functions"", ""cosecant function"", ""arcsecant function"", ""arccotangent function"", ""functions [VB], derived math functions"", ""inverse functions"", ""math functions, derived"", ""derived math functions"", ""cotangent function"", ""angles"", ""secant function"", ""trigonometric functions"", ""logarithms"", ""arccosecant function"", ""hyperbolic functions"", ""arcsine function"", ""degrees"", ""arccosine function""]"]
 ms.assetid: 63e449d8-9444-44fb-8db1-6d9cf346e2aa
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Derived Math Functions (Visual Basic)
 The following table shows non-intrinsic math functions that can be derived from the intrinsic math functions of the <xref:System.Math?displayProperty=fullName> object. You can access the intrinsic math functions by adding `Imports System.Math` to your file or project.  

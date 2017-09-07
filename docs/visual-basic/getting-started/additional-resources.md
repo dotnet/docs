@@ -1,46 +1,16 @@
 ---
 title: "Additional Resources for Visual Basic Programmers"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic, additional resources"
-  - "Help"
-  - "resources [Visual Basic], additional"
-  - "Help, newsgroups"
-  - "Web sites, Visual Studio"
-  - "webcasts"
-  - "Help, Visual Basic Web sites"
-  - "newsgroups, Visual Studio"
-  - "support, Visual Studio sites"
-  - "Visual Basic, videos"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Visual Basic, additional resources"", ""Help"", ""resources [VB], additional"", ""Help, newsgroups"", ""Web sites, Visual Studio"", ""webcasts"", ""Help, Visual Basic Web sites"", ""newsgroups, Visual Studio"", ""support, Visual Studio sites"", ""Visual Basic, videos""]"]
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Additional Resources for Visual Basic Programmers
 The following web sites provide guidance and can help you find answers to common problems.  

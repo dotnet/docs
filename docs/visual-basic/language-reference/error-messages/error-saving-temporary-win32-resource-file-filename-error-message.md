@@ -1,40 +1,19 @@
 ---
 title: "Error saving temporary Win32 resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "bc30137"
-  - "vbc30137"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC30137"
+f1_keywords: ["bc30137", "vbc30137"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""BC30137""]"]
 ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Error saving temporary Win32 resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;
 The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker reported an error obtaining a file name for use in writing an in-memory resource.  

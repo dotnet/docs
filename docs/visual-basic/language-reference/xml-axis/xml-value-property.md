@@ -1,42 +1,19 @@
 ---
 title: "XML Value Property (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.XmlPropertyExtensionValue"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Value property [Visual Basic]"
-  - "Visual Basic code, accessing XML"
-  - "XML axis [Visual Basic], Value"
-  - "XML Value property [Visual Basic]"
+f1_keywords: ["vb.XmlPropertyExtensionValue"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Value property [VB]"", ""Visual Basic code, accessing XML"", ""XML axis [VB], Value"", ""XML Value property [VB]""]"]
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # XML Value Property (Visual Basic)
 Provides access to the value of the first element of a collection of <xref:System.Xml.Linq.XElement> objects.  

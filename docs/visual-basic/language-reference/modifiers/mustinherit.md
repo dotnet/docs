@@ -1,43 +1,18 @@
 ---
 title: "MustInherit (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "MustInherit"
-  - "vb.MustInherit"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "classes [Visual Basic], abstract"
-  - "MustInherit classes, MustInherit keyword"
-  - "abstract classes, MustInherit class"
-  - "MustInherit keyword"
+f1_keywords: ["MustInherit", "vb.MustInherit"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""classes [VB], abstract"", ""MustInherit classes [VB], MustInherit keyword"", ""abstract classes [VB], MustInherit class"", ""MustInherit keyword [VB]""]"]
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MustInherit (Visual Basic)
 Specifies that a class can be used only as a base class and that you cannot create an object directly from it.  

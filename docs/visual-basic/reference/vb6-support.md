@@ -2,14 +2,10 @@
 title: "Support Statement for Visual Basic 6.0"
 ms.date: "08/28/2017"
 ms.prod: VB
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "VB6 support"
-  - "Visual Basic 6.0 support"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""VB6 support"", ""Visual Basic 6.0 support""]"]
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: "paulyuk"
 ms.author: "paulyuk"

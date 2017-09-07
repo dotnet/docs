@@ -5,46 +5,17 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.global"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "assemblies [Visual Basic], namespaces"
-  - "name collisions"
-  - "Global keyword [Visual Basic]"
-  - "namespace pollution"
-  - "names, avoiding conflicts"
-  - "naming conflicts, namespaces"
-  - "namespaces, assemblies"
-  - "Visual Basic code, namespaces"
-  - "fully qualified names"
-  - "naming conventions, naming conflicts"
-  - "namespaces"
+f1_keywords: ["vb.global"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""assemblies [VB], namespaces"", ""name collisions"", ""Global keyword [VB]"", ""namespace pollution"", ""names [VB], avoiding conflicts"", ""naming conflicts, namespaces"", ""namespaces [VB], assemblies"", ""Visual Basic code, namespaces"", ""fully qualified names [VB]"", ""naming conventions [VB], naming conflicts"", ""namespaces""]"]
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Namespaces in Visual Basic
 Namespaces organize the objects defined in an assembly. Assemblies can contain multiple namespaces, which can in turn contain other namespaces. Namespaces prevent ambiguity and simplify references when using large groups of objects such as class libraries.  

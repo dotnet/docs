@@ -1,45 +1,20 @@
 ---
 title: "Enum Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Enum"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "enumerated constants"
-  - "Enum statement"
-  - "Private keyword, Enum statements"
-  - "Public keyword, in Enum statement"
-  - "variables [Visual Basic], enumeration"
-  - "constants, enumerated"
+f1_keywords: ["vb.Enum"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""enumerated constants [VB]"", ""Enum statement [VB]"", ""Private keyword [VB], Enum statements"", ""Public keyword [VB], in Enum statement"", ""variables [VB], enumeration"", ""constants [VB], enumerated""]"]
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
 caps.latest.revision: 44
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Enum Statement (Visual Basic)
 Declares an enumeration and defines the values of its members.  

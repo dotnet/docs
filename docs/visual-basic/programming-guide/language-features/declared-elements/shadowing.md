@@ -5,47 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "inheritance, shadowing"
-  - "overriding, and shadowing"
-  - "shadowing"
-  - "duplicate names"
-  - "shadowing, by inheritance"
-  - "declared elements, referencing"
-  - "shadowing, by scope"
-  - "declared elements, hiding"
-  - "naming conflicts, shadowing"
-  - "declared elements, shadowing"
-  - "shadowing, and overriding"
-  - "scope, shadowing"
-  - "Shadows keyword, about"
-  - "objects [Visual Basic], names"
-  - "names, shadowing"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""inheritance [VB], shadowing"", ""overriding, and shadowing"", ""shadowing"", ""duplicate names [VB]"", ""shadowing, by inheritance"", ""declared elements [VB], referencing"", ""shadowing, by scope"", ""declared elements [VB], hiding"", ""naming conflicts, shadowing"", ""declared elements [VB], shadowing"", ""shadowing, and overriding"", ""scope [VB], shadowing"", ""Shadows keyword [VB], about"", ""objects [VB], names"", ""names [VB], shadowing""]"]
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Shadowing in Visual Basic
 When two programming elements share the same name, one of them can hide, or *shadow*, the other one. In such a situation, the shadowed element is not available for reference; instead, when your code uses the element name, the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler resolves it to the shadowing element.  

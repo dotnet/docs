@@ -5,38 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "dimensions, arrays"
-  - "arrays [Visual Basic], dimensions"
-  - "arrays [Visual Basic], rectangular"
-  - "arrays [Visual Basic], rank"
-  - "rectangular arrays"
-  - "ranking, arrays"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""dimensions, arrays"", ""arrays [VB], dimensions"", ""arrays [VB], rectangular"", ""arrays [VB], rank"", ""rectangular arrays"", ""ranking, arrays""]"]
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Array Dimensions in Visual Basic
 A *dimension* is a direction in which you can vary the specification of an array's elements. An array that holds the sales total for each day of the month has one dimension (the day of the month). An array that holds the sales total by department for each day of the month has two dimensions (the department number and the day of the month). The number of dimensions an array has is called its *rank*.  

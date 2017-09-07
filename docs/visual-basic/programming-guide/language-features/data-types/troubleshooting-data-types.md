@@ -5,48 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Char data type, converting"
-  - "Decimal data type, conversions"
-  - "data types [Visual Basic], troubleshooting"
-  - "literals, default types"
-  - "type characters, literal"
-  - "Mod operator [Visual Basic], in floating-point operations"
-  - "troubleshooting Visual Basic, data types"
-  - "troubleshooting data types"
-  - "floating-point numbers, precision"
-  - "Boolean data type, converting"
-  - "literal types"
-  - "literal type characters"
-  - "floating-point numbers, imprecision"
-  - "String data type, converting"
-  - "floating-point numbers, comparison"
-  - "floating-point numbers"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Char data type [VB], converting"", ""Decimal data type [VB], conversions"", ""data types [VB], troubleshooting"", ""literals [VB], default types"", ""type characters [VB], literal"", ""Mod operator [VB], in floating-point operations"", ""troubleshooting Visual Basic, data types"", ""troubleshooting data types [VB]"", ""floating-point numbers [VB], precision"", ""Boolean data type [VB], converting"", ""literal types [VB]"", ""literal type characters [VB]"", ""floating-point numbers [VB], imprecision"", ""String data type [VB], converting"", ""floating-point numbers [VB], comparison"", ""floating-point numbers""]"]
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Troubleshooting Data Types (Visual Basic)
 This page lists some common problems that can occur when you perform operations on intrinsic data types.  

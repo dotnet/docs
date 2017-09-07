@@ -1,41 +1,19 @@
 ---
 title: "&lt;&lt; Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.<<"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "bit shift operators"
-  - "<< operator [Visual Basic]"
-  - "operator <<, Visual Basic left shift operator"
+f1_keywords: ["vb.<<"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""bit shift operators [VB]"", ""<< operator [VB]"", ""operator <<, Visual Basic left shift operator""]"]
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;&lt; Operator (Visual Basic)
 Performs an arithmetic left shift on a bit pattern.  

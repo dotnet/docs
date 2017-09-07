@@ -5,42 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "performance, data type efficiency"
-  - "data types [Visual Basic], weak typing"
-  - "AscW function, preferred to Asc"
-  - "data types [Visual Basic], using efficiently"
-  - "optimization, data types"
-  - "data types [Visual Basic], strong typing"
-  - "strong typing"
-  - "typing, strong"
-  - "data types [Visual Basic], optimizing"
-  - "ChrW function, preferred to Chr"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""performance, data type efficiency"", ""data types [VB], weak typing"", ""AscW function [VB], preferred to Asc"", ""data types [VB], using efficiently"", ""optimization [VB], data types"", ""data types [VB], strong typing"", ""strong typing"", ""typing, strong"", ""data types [VB], optimizing"", ""ChrW function [VB], preferred to Chr""]"]
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Efficient Use of Data Types (Visual Basic)
 Undeclared variables and variables declared without a data type are assigned the `Object` data type. This makes it easy to write programs quickly, but it can cause them to execute more slowly.  

@@ -1,50 +1,19 @@
 ---
 title: "Operator Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.operator"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "operators [Visual Basic]"
-  - "procedures, operator"
-  - "Narrowing keyword, conversion operators"
-  - "Visual Basic code, operators"
-  - "Widening keyword, conversion operators"
-  - "syntax, Operator procedures"
-  - "operators [Visual Basic], overloading"
-  - "overloaded operators"
-  - "operator overloading"
-  - "operator procedures"
-  - "Operator statement"
-  - "CType function, Operator statement"
+f1_keywords: ["vb.operator"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""operators [VB]"", ""procedures [VB], operator"", ""Narrowing keyword [VB], conversion operators"", ""Visual Basic code, operators"", ""Widening keyword [VB], conversion operators"", ""syntax [VB], Operator procedures"", ""operators [VB], overloading"", ""overloaded operators [VB]"", ""operator overloading"", ""operator procedures"", ""Operator statement [VB]"", ""CType function [VB], Operator statement""]"]
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Operator Statement
 Declares the operator symbol, operands, and code that define an operator procedure on a class or structure.  

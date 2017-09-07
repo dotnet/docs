@@ -1,44 +1,19 @@
 ---
 title: "Property Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.PropertySet"
-  - "vb.Property"
-  - "vb.PropertyGet"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Property statement"
-  - "default modifier"
-  - "property procedures, Property statements"
-  - "Property keyword"
+f1_keywords: ["vb.PropertySet", "vb.Property", "vb.PropertyGet"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Property statement [VB]"", ""default modifier"", ""property procedures [VB], Property statements"", ""Property keyword [VB]""]"]
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Property Statement
 Declares the name of a property, and the property procedures used to store and retrieve the value of the property.  

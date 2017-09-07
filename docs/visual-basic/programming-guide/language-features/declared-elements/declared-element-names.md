@@ -5,52 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "declared elements, case sensitivity"
-  - "names, Visual Basic rules"
-  - "naming conventions"
-  - "element names"
-  - "declared elements, identifiers"
-  - "declarations, elements"
-  - "declared elements, valid names"
-  - "[] escape characters [Visual Basic]"
-  - "names, elements"
-  - "declaration statements, declared elements"
-  - "declaring elements"
-  - "identifiers, declared elements"
-  - "case sensitivity, declared element names"
-  - "escape characters"
-  - "names, declared elements"
-  - "declared elements, about declared elements"
-  - "escaped names"
-  - "declared elements, names"
-  - "names, naming conventions"
-  - "identifiers, elements"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""declared elements [VB], case sensitivity"", ""names [VB], Visual Basic rules"", ""naming conventions [VB]"", ""element names [VB]"", ""declared elements [VB], identifiers"", ""declarations [VB], elements"", ""declared elements [VB], valid names"", ""[] escape characters [VB]"", ""names [VB], elements"", ""declaration statements [VB], declared elements"", ""declaring elements [VB]"", ""identifiers [VB], declared elements"", ""case sensitivity, declared element names"", ""escape characters [VB]"", ""names [VB], declared elements"", ""declared elements [VB], about declared elements"", ""escaped names [VB]"", ""declared elements [VB], names"", ""names [VB], naming conventions"", ""identifiers [VB], elements""]"]
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Declared Element Names (Visual Basic)
 Every declared element has a name, also called an *identifier*, which is what the code uses to refer to it.  

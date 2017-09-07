@@ -1,54 +1,19 @@
 ---
 title: "If...Then...Else Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.ElseIf"
-  - "vb.Then"
-  - "vb.If"
-  - "vb.EndIf"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "ElseIf statement, If...Then...Else"
-  - "Then statement, If...Then...Else"
-  - "control flow, branching"
-  - "execution, conditional"
-  - "TypeOf...Is expression, and If...Then...Else statements"
-  - "If...Then...Else statements"
-  - "If statement, If...Then...Else"
-  - "If statement"
-  - "Is operator [Visual Basic], in If...Then...Else statements"
-  - "If Operator [Visual Basic]"
-  - "branching, conditional"
-  - "IIf function, and If...Then...Else statements"
-  - "Else statement [Visual Basic]"
+f1_keywords: ["vb.ElseIf", "vb.Then", "vb.If", "vb.EndIf"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""ElseIf statement [VB], If...Then...Else"", ""Then statement [VB], If...Then...Else"", ""control flow [VB], branching"", ""execution [VB], conditional"", ""TypeOf...Is expression, and If...Then...Else statements"", ""If...Then...Else statements"", ""If statement [VB], If...Then...Else"", ""If statement [VB]"", ""Is operator [VB], in If...Then...Else statements"", ""If Operator [VB]"", ""branching [VB], conditional"", ""If function [VB], and If...Then...Else statements"", ""Else statement [VB]""]"]
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # If...Then...Else Statement (Visual Basic)
 Conditionally executes a group of statements, depending on the value of an expression.  

@@ -1,44 +1,18 @@
 ---
 title: "WriteOnly (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "WriteOnly"
-  - "vb.WriteOnly"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "write-only properties"
-  - "WriteOnly keyword"
-  - "sensitive data, protecting"
-  - "properties [Visual Basic], write-only"
-  - "sensitive data"
+f1_keywords: ["WriteOnly", "vb.WriteOnly"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""write-only properties"", ""WriteOnly keyword [VB]"", ""sensitive data, protecting"", ""properties [VB], write-only"", ""sensitive data""]"]
 ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # WriteOnly (Visual Basic)
 Specifies that a property can be written but not read.  

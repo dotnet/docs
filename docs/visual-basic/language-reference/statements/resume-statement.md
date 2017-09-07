@@ -1,48 +1,19 @@
 ---
 title: "Resume Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Resume"
-  - "vb.ResumeNext"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Next statement, Resume"
-  - "Resume Next statement"
-  - "execution, resuming"
-  - "run-time errors, resuming after"
-  - "Resume statement, syntax"
-  - "errors [Visual Basic], resuming after"
-  - "Error statement, and Resume statement"
-  - "execution"
-  - "Resume statement"
+f1_keywords: ["vb.Resume", "vb.ResumeNext"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Next statement [VB], Resume"", ""Resume Next statement [VB]"", ""execution [VB], resuming"", ""run-time errors [VB], resuming after"", ""Resume statement [VB], syntax"", ""errors [VB], resuming after"", ""Error statement [VB], and Resume statement"", ""execution"", ""Resume statement [VB]""]"]
 ms.assetid: e24d058b-1a5c-4274-acb9-7d295d3ea537
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Resume Statement
 Resumes execution after an error-handling routine is finished.  

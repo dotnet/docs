@@ -5,46 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "signatures"
-  - "Overloads keyword"
-  - "hiding by signature"
-  - "Visual Basic code, procedures"
-  - "procedures, signatures for"
-  - "procedures, overloading"
-  - "procedures, multiple versions"
-  - "parameters, lists"
-  - "signatures, procedure"
-  - "parameter lists"
-  - "Visual Basic code, parameter lists"
-  - "Shadows keyword"
-  - "procedure overloading"
-  - "procedures, parameter lists"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""signatures"", ""Overloads keyword [VB]"", ""hiding by signature"", ""Visual Basic code, procedures"", ""procedures [VB], signatures for"", ""procedures [VB], overloading"", ""procedures [VB], multiple versions"", ""parameters [VB], lists"", ""signatures, procedure"", ""parameter lists [VB]"", ""Visual Basic code, parameter lists"", ""Shadows keyword [VB]"", ""procedure overloading"", ""procedures [VB], parameter lists""]"]
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Procedure Overloading (Visual Basic)
 *Overloading* a procedure means defining it in multiple versions, using the same name but different parameter lists. The purpose of overloading is to define several closely related versions of a procedure without having to differentiate them by name. You do this by varying the parameter list.  

@@ -5,41 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "parameters, optional"
-  - "Visual Basic code, procedures"
-  - "procedures, optional arguments"
-  - "optional arguments"
-  - "named arguments, and optional arguments"
-  - "optional parameters"
-  - "Optional keyword, optional arguments"
-  - "arguments [Visual Basic], optional"
-  - "optional arguments, and named arguments"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""parameters [VB], optional"", ""Visual Basic code, procedures"", ""procedures [VB], optional arguments"", ""optional arguments"", ""named arguments [VB], and optional arguments"", ""optional parameters"", ""Optional keyword [VB], optional arguments"", ""arguments [VB], optional"", ""optional arguments [VB], and named arguments""]"]
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Optional Parameters (Visual Basic)
 You can specify that a procedure parameter is optional and no argument has to be supplied for it when the procedure is called. *Optional parameters* are indicated by the `Optional` keyword in the procedure definition. The following rules apply:  

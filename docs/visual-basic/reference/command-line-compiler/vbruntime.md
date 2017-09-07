@@ -1,42 +1,19 @@
 ---
 title: "/vbruntime"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vbruntime"
-  - "/vbruntime"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "vbruntime compiler option [Visual Basic]"
-  - "-vbruntime compiler option [Visual Basic]"
-  - "/vbruntime compiler option [Visual Basic]"
+f1_keywords: ["vbruntime", "/vbruntime"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""vbruntime compiler option [VB]"", ""-vbruntime compiler option [VB]"", ""/vbruntime compiler option [VB]""]"]
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /vbruntime
 Specifies that the compiler should compile without a reference to the Visual Basic Runtime Library, or with a reference to a specific runtime library.  

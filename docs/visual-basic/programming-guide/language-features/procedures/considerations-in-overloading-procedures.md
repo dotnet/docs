@@ -5,54 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "signatures, ParamArray arguments"
-  - "ParamArray keyword, parameter arrays"
-  - "ParamArray keyword, arguments and signatures"
-  - "function overloading, implicit overloads for ParamArray"
-  - "ParamArray keyword, signatures"
-  - "Visual Basic code, procedures"
-  - "arguments [Visual Basic], parameter arrays"
-  - "procedures, overloading"
-  - "parameters, lists"
-  - "function overloading, typeless programming"
-  - "typeless programming"
-  - "function overloading, restrictions"
-  - "arguments [Visual Basic], optional"
-  - "optional arguments, overloading"
-  - "signatures, procedure"
-  - "parameter lists"
-  - "parameter arrays, overloading arguments"
-  - "Visual Basic code, parameter lists"
-  - "procedure overloading, considerations"
-  - "Option Explicit statement"
-  - "restrictions, overloading procedures"
-  - "procedures, parameter lists"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""signatures, ParamArray arguments"", ""ParamArray keyword [VB], parameter arrays"", ""ParamArray keyword [VB], arguments and signatures"", ""function overloading, implicit overloads for ParamArray"", ""ParamArray keyword [VB], signatures"", ""Visual Basic code, procedures"", ""arguments [VB], parameter arrays"", ""procedures [VB], overloading"", ""parameters [VB], lists"", ""function overloading, typeless programming"", ""typeless programming"", ""function overloading, restrictions"", ""arguments [VB], optional"", ""optional arguments [VB], overloading"", ""signatures, procedure"", ""parameter lists [VB]"", ""parameter arrays [VB], overloading arguments"", ""Visual Basic code, parameter lists"", ""procedure overloading, considerations"", ""Option Explicit statement [VB]"", ""restrictions, overloading procedures"", ""procedures [VB], parameter lists""]"]
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Considerations in Overloading Procedures (Visual Basic)
 When you overload a procedure, you must use a different *signature* for each overloaded version. This usually means each version must specify a different parameter list. For more information, see "Different Signature" in [Procedure Overloading](./procedure-overloading.md).  

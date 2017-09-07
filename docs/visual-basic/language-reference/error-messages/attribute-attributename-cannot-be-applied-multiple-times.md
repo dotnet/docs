@@ -1,40 +1,18 @@
 ---
 title: "Attribute &#39;&lt;attributename&gt;&#39; cannot be applied multiple times"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "bc30663"
-  - "vbc30663"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC30663"
+f1_keywords: ["bc30663", "vbc30663"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""BC30663""]"]
 ms.assetid: 3760e7ff-7238-40a1-8676-77d858a64fc0
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Attribute &#39;&lt;attributename&gt;&#39; cannot be applied multiple times
 The attribute can only be applied once. The `AttributeUsage` attribute determines whether an attribute can be applied more than once.  

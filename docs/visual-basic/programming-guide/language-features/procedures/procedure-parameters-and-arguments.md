@@ -5,47 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, argument lists"
-  - "values, passing to procedures"
-  - "arguments [Visual Basic], passing"
-  - "procedures, parameters"
-  - "Visual Basic code, argument lists"
-  - "Visual Basic code, procedures"
-  - "parameters, Visual Basic procedures"
-  - "parameters, lists"
-  - "arguments [Visual Basic], Visual Basic procedures"
-  - "arguments [Visual Basic], procedures"
-  - "parameter lists"
-  - "Visual Basic code, parameter lists"
-  - "argument lists"
-  - "procedures, parameter lists"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""procedures [VB], arguments"", ""procedures [VB], argument lists"", ""values [VB], passing to procedures"", ""arguments [VB], passing"", ""procedures [VB], parameters"", ""Visual Basic code, argument lists"", ""Visual Basic code, procedures"", ""parameters [VB], Visual Basic procedures"", ""parameters [VB], lists"", ""arguments [VB], Visual Basic procedures"", ""arguments [VB], procedures"", ""parameter lists [VB]"", ""Visual Basic code, parameter lists"", ""argument lists [VB]"", ""procedures [VB], parameter lists""]"]
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Procedure Parameters and Arguments (Visual Basic)
 In most cases, a procedure needs some information about the circumstances in which it has been called. A procedure that performs repeated or shared tasks uses different information for each call. This information consists of variables, constants, and expressions that you pass to the procedure when you call it.  

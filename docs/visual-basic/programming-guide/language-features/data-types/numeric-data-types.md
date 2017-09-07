@@ -5,52 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "integral types, Visual Basic"
-  - "Short data type, numeric data types"
-  - "Double data type, numeric data types"
-  - "Long data type, Visual Basic numeric data types"
-  - "numbers, whole"
-  - "fractions"
-  - "numbers"
-  - "whole numbers"
-  - "integer numbers"
-  - "numbers, integer"
-  - "fractional data types"
-  - "mantissas, of fractional numbers"
-  - "mantissas"
-  - "data types [Visual Basic], numeric"
-  - "Integer data type, numeric data types"
-  - "exponent, of fractional numbers"
-  - "integers"
-  - "numeric data types, Visual Basic"
-  - "Single data type, numeric types"
-  - "Decimal data type, numeric data types"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""integral types [VB], Visual Basic"", ""Short data type [VB], numeric data types"", ""Double data type [VB], numeric data types"", ""Long data type [VB], Visual Basic numeric data types"", ""numbers [VB], whole"", ""fractions"", ""numbers"", ""whole numbers"", ""integer numbers"", ""numbers [VB], integer"", ""fractional data types [VB]"", ""mantissas, of fractional numbers"", ""mantissas"", ""data types [VB], numeric"", ""Integer data type [VB], numeric data types"", ""exponent, of fractional numbers"", ""integers [VB]"", ""numeric data types [VB], Visual Basic"", ""Single data type [VB], numeric types"", ""Decimal data type [VB], numeric data types""]"]
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Numeric Data Types (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies several *numeric data types* for handling numbers in various representations. *Integral* types represent only whole numbers (positive, negative, and zero), and *nonintegral* types represent numbers with both integer and fractional parts.  

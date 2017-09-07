@@ -1,39 +1,19 @@
 ---
 title: "Const Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Const"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Const statement [Visual Basic]"
+f1_keywords: ["vb.Const"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Const statement [VB]""]"]
 ms.assetid: 495b318d-b7c5-4198-94f8-0790a541b07a
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Const Statement (Visual Basic)
 Declares and defines one or more constants.  

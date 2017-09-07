@@ -5,40 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "sorting query results, multiple columns"
-  - "sorting data [Visual Basic]"
-  - "sorting data [LINQ in Visual Basic]"
-  - "sorting query results [LINQ in Visual Basic]"
-  - "queries [LINQ in Visual Basic], sorting results"
-  - "querying databases [LINQ]"
-  - "queries [LINQ in Visual Basic], how-to topics"
-  - "query samples [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""sorting query results, multiple columns"", ""sorting data [VB]"", ""sorting data [LINQ in Visual Basic]"", ""sorting query results [LINQ in Visual Basic]"", ""queries [LINQ in Visual Basic], sorting results"", ""querying databases [LINQ]"", ""queries [LINQ in Visual Basic], how-to topics"", ""query samples [VB]""]"]
 ms.assetid: 07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Sort Query Results by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  

@@ -1,46 +1,20 @@
 ---
 title: "Mod Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Mod"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "remainder (Mod operator)"
-  - "division operator, Mod operator"
-  - "modulus operator, Visual Basic"
-  - "Mod operator [Visual Basic]"
-  - "operators [Visual Basic], division"
-  - "arithmetic operators, Mod"
-  - "math operators"
+f1_keywords: ["vb.Mod"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""remainder (Mod operator)"", ""division operator [VB], Mod operator"", ""modulus operator [VB], Visual Basic"", ""Mod operator [VB]"", ""operators [VB], division"", ""arithmetic operators [VB], Mod"", ""math operators [VB]""]"]
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Mod Operator (Visual Basic)
 Divides two numbers and returns only the remainder.  

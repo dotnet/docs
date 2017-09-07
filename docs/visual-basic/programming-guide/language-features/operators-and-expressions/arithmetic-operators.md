@@ -5,42 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "type safety"
-  - "operators [Visual Basic], bitwise"
-  - "operators [Visual Basic], bit-shift"
-  - "bitwise operators"
-  - "bit-shift operators"
-  - "zero, division by zero"
-  - "operators [Visual Basic], arithmetic"
-  - "division, by zero"
-  - "Visual Basic code, operators"
-  - "arithmetic operators, about arithmetic operators"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""type safety"", ""operators [VB], bitwise"", ""operators [VB], bit-shift"", ""bitwise operators [VB]"", ""bit-shift operators [VB]"", ""zero, division by zero"", ""operators [VB], arithmetic"", ""division [VB], by zero"", ""Visual Basic code, operators"", ""arithmetic operators [VB], about arithmetic operators""]"]
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Arithmetic Operators in Visual Basic
 Arithmetic operators are used to perform many of the familiar arithmetic operations that involve the calculation of numeric values represented by literals, variables, other expressions, function and property calls, and constants. Also classified with arithmetic operators are the bit-shift operators, which act at the level of the individual bits of the operands and shift their bit patterns to the left or right.  

@@ -5,39 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Using statement, disposing of system resources"
-  - "Visual Basic code, control flow"
-  - "system resources, disposing of"
-  - "resources [Visual Basic], disposing of system"
-  - "system resources"
-  - "Using statement, Using...End Using"
-  - "Using block"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Using statement [VB], disposing of system resources"", ""Visual Basic code, control flow"", ""system resources, disposing of"", ""resources [VB], disposing of system"", ""system resources"", ""Using statement [VB], Using...End Using"", ""Using block""]"]
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Dispose of a System Resource (Visual Basic)
 You can use a `Using` block to guarantee that the system disposes of a resource when your code exits the block. This is useful if you are using a system resource that consumes a large amount of memory, or that other components also want to use.  

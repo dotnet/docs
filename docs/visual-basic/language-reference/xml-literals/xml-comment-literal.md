@@ -1,42 +1,19 @@
 ---
 title: "XML Comment Literal (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.XmlLiteralComment"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "comment literal [Visual Basic]"
-  - "XML comments, adding [Visual Basic]"
-  - "XML comment literal [Visual Basic]"
-  - "XML literals [Visual Basic], comment"
+f1_keywords: ["vb.XmlLiteralComment"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""comment literal [VB]"", ""XML comments, adding [VB]"", ""XML comment literal [VB]"", ""XML literals [VB], comment""]"]
 ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # XML Comment Literal (Visual Basic)
 A literal representing an <xref:System.Xml.Linq.XComment> object.  

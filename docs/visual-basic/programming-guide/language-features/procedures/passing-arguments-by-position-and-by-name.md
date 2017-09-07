@@ -5,51 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "arguments [Visual Basic], passing by name"
-  - "procedures, arguments"
-  - ":= passing arguments"
-  - "procedure arguments"
-  - "Visual Basic code, procedures"
-  - "named arguments, passing arguments"
-  - "arguments [Visual Basic], passing by position"
-  - "Function procedures, passing arguments"
-  - "named parameters, passing arguments"
-  - "named arguments"
-  - "passing parameters, named parameter arguments"
-  - "passing parameters, by position"
-  - "procedures, calling"
-  - "named parameters"
-  - "Sub procedures, passing arguments"
-  - "argument passing"
-  - "passing parameters, by name"
-  - "argument passing, by position"
-  - "arguments [Visual Basic], listing by name"
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""arguments [VB], passing by name"", ""procedures [VB], arguments"", "":= passing arguments"", ""procedure arguments"", ""Visual Basic code, procedures"", ""named arguments [VB], passing arguments"", ""arguments [VB], passing by position"", ""Function procedures [VB], passing arguments"", ""named parameters [VB], passing arguments"", ""named arguments"", ""passing parameters [VB], named parameter arguments"", ""passing parameters [VB], by position"", ""procedures [VB], calling"", ""named parameters"", ""Sub procedures [VB], passing arguments"", ""argument passing"", ""passing parameters [VB], by name"", ""argument passing, by position"", ""arguments [VB], listing by name""]"]
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Passing Arguments by Position and by Name (Visual Basic)
 When you call a `Sub` or `Function` procedure, you can pass arguments *by position* — in the order in which they appear in the procedure's definition — or you can pass them *by name*, without regard to position.  

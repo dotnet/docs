@@ -1,59 +1,19 @@
 ---
 title: "ReDim Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.ReDim"
-  - "vb.Preserve"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "fixed-length strings, declaring"
-  - "ReDim statement, syntax"
-  - "dynamic arrays, ReDim statement"
-  - "arrays [Visual Basic], reallocating"
-  - "arrays [Visual Basic], reinitializing"
-  - "arrays [Visual Basic], dimensions"
-  - "scalars, and arrays"
-  - "scalars"
-  - "declarations, dynamic arrays"
-  - "variables [Visual Basic], scalar"
-  - "ReDim statement"
-  - "data types [Visual Basic], assigning"
-  - "As keyword, in ReDim statement"
-  - "To keyword, ReDim statement"
-  - "arrays [Visual Basic], declaring"
-  - "Preserve keyword, ReDim statement"
-  - "storage, allocating"
-  - "arrays [Visual Basic], and scalars"
-  - "declaration statements"
-  - "scalar variables"
+f1_keywords: ["vb.ReDim", "vb.Preserve"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""fixed-length strings [VB], declaring"", ""ReDim statement [VB], syntax"", ""dynamic arrays [VB], ReDim statement"", ""arrays [VB], reallocating"", ""arrays [VB], reinitializing"", ""arrays [VB], dimensions"", ""scalars, and arrays"", ""scalars"", ""declarations [VB], dynamic arrays"", ""variables [VB], scalar"", ""ReDim statement [VB]"", ""data types [VB], assigning"", ""As keyword [VB], in ReDim statement"", ""To keyword [VB], ReDim statement"", ""arrays [VB], declaring"", ""Preserve keyword [VB], ReDim statement"", ""storage [VB], allocating"", ""arrays [VB], and scalars"", ""declaration statements [VB]"", ""scalar variables [VB]""]"]
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ReDim Statement (Visual Basic)
 Reallocates storage space for an array variable.  

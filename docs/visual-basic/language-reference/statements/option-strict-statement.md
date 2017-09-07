@@ -1,44 +1,19 @@
 ---
 title: "Option Strict Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Strict"
-  - "vb.OptionStrict"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Strict keyword"
-  - "Option Strict statement"
-  - "conversions, implicit"
-  - "late binding"
-  - "implicit conversions"
+f1_keywords: ["vb.Strict", "vb.OptionStrict"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""Strict keyword [VB]"", ""Option Strict statement [VB]"", ""conversions [VB], implicit"", ""late binding [VB]"", ""implicit conversions [VB]""]"]
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
 caps.latest.revision: 49
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Option Strict Statement
 Restricts implicit data type conversions to only widening conversions, disallows late binding, and disallows implicit typing that results in an `Object` type.  

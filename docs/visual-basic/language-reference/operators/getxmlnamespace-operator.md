@@ -1,41 +1,19 @@
 ---
 title: "GetXmlNamespace Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.GetXmlNamespace"
-  - "GetXmlNamespace"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "GetXmlNamespace operator"
-  - "GetXmlNamespace keyword"
+f1_keywords: ["vb.GetXmlNamespace", "GetXmlNamespace"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["[""GetXmlNamespace operator [VB]"", ""GetXmlNamespace keyword [VB]""]"]
 ms.assetid: d0d28cfd-0755-4896-ae0b-4981aa35517c
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # GetXmlNamespace Operator (Visual Basic)
 Gets the <xref:System.Xml.Linq.XNamespace> object that corresponds to the specified XML namespace prefix.  

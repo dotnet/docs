@@ -110,22 +110,6 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
 
 - Portable
   - `linux-x64`
-- Red Hat Enterprise Linux
-  - `rhel-x64`
-  - `rhel.6-x64` (.NET Core 2.0 or later versions)
-  - `rhel.7-x64`
-  - `rhel.7.1-x64`
-  - `rhel.7.2-x64`
-  - `rhel.7.3-x64` (.NET Core 2.0 or later versions)
-  - `rhel.7.4-x64` (.NET Core 2.0 or later versions)
-- Ubuntu
-  - `ubuntu-x64`
-  - `ubuntu.14.04-x64`
-  - `ubuntu.14.10-x64`
-  - `ubuntu.15.04-x64`
-  - `ubuntu.15.10-x64`
-  - `ubuntu.16.04-x64`
-  - `ubuntu.16.10-x64`
 - CentOS
   - `centos-x64`
   - `centos.7-x64`
@@ -138,6 +122,8 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
   - `fedora.24-x64`
   - `fedora.25-x64` (.NET Core 2.0 or later versions)
   - `fedora.26-x64` (.NET Core 2.0 or later versions)
+- Gentoo (.NET Core 2.0 or later versions)
+  - `gentoo-x64`
 - openSUSE
   - `opensuse-x64`
   - `opensuse.13.2-x64`
@@ -148,11 +134,25 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
   - `ol.7.0-x64`
   - `ol.7.1-x64`
   - `ol.7.2-x64`
+- Red Hat Enterprise Linux
+  - `rhel-x64`
+  - `rhel.6-x64` (.NET Core 2.0 or later versions)
+  - `rhel.7-x64`
+  - `rhel.7.1-x64`
+  - `rhel.7.2-x64`
+  - `rhel.7.3-x64` (.NET Core 2.0 or later versions)
+  - `rhel.7.4-x64` (.NET Core 2.0 or later versions)
 - Tizen (.NET Core 2.0 or later versions)
   - `tizen`
-- Gentoo (.NET Core 2.0 or later versions)
-  - `gentoo-x64`
-- Currently supported Ubuntu derivatives
+- Ubuntu
+  - `ubuntu-x64`
+  - `ubuntu.14.04-x64`
+  - `ubuntu.14.10-x64`
+  - `ubuntu.15.04-x64`
+  - `ubuntu.15.10-x64`
+  - `ubuntu.16.04-x64`
+  - `ubuntu.16.10-x64`
+- Ubuntu derivatives
   - `linuxmint.17-x64`
   - `linuxmint.17.1-x64`
   - `linuxmint.17.2-x64`

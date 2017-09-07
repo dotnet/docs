@@ -1,6 +1,6 @@
 ---
-title: Generics (F#) | Microsoft Docs
-description: Generics (F#)
+title: Generics (F#)
+description: Learn how to use F# generic functions and types, which enable you to write code that works with a variety of types without repeating code.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

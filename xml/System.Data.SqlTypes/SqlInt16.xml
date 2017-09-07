@@ -955,7 +955,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Addition (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator + (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Addition(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Addition(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -989,12 +989,12 @@
         <summary>Computes the sum of the two <see cref="T:System.Data.SqlTypes.SqlInt16" /> operands.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> property contains the sum of the two <see cref="T:System.Data.SqlTypes.SqlInt16" /> operands.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Add%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Add%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_BitwiseAnd (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator &amp; (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_BitwiseAnd(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_BitwiseAnd(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1028,12 +1028,12 @@
         <summary>Computes the bitwise AND of its <see cref="T:System.Data.SqlTypes.SqlInt16" /> operands.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> property contains the results of the bitwise AND.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.BitwiseAnd%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.BitwiseAnd%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_BitwiseOr (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator | (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_BitwiseOr(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_BitwiseOr(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1067,12 +1067,12 @@
         <summary>Computes the bitwise OR of its two <see cref="T:System.Data.SqlTypes.SqlInt16" /> operands.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> property contains the results of the bitwise OR.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.BitwiseOr%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.BitwiseOr%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Division (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator / (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Division(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Division(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1106,12 +1106,12 @@
         <summary>Divides the first <see cref="T:System.Data.SqlTypes.SqlInt16" /> operand by the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> property contains the results of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Divide%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Divide%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Equality (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator == (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Equality(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Equality(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1145,12 +1145,12 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlInt16" /> structures to determine whether they are equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlInt16" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Equals%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Equals%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_ExclusiveOr (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator ^ (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_ExclusiveOr(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_ExclusiveOr(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1184,12 +1184,12 @@
         <summary>Performs a bitwise exclusive-OR operation on the supplied parameters.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> property contains the results of the bitwise XOR.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.S%2A> qlTypes.SqlInt16.Xor(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Xor%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlBoolean x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1224,7 +1224,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlDecimal x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlDecimal x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1259,7 +1259,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlDouble x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlDouble x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1294,7 +1294,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static short op_Explicit (System.Data.SqlTypes.SqlInt16 x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator short (System.Data.SqlTypes.SqlInt16 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int16 op_Explicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlInt16)~System.Int16" />
       <MemberType>Method</MemberType>
@@ -1329,7 +1329,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlInt32 x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlInt32 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1364,7 +1364,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlInt64 x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1399,7 +1399,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlMoney x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlMoney x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1434,7 +1434,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlSingle x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlSingle x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1469,7 +1469,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Explicit (System.Data.SqlTypes.SqlString x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlString x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1504,7 +1504,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt; (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_GreaterThan(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1538,12 +1538,12 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlInt16" /> to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlInt16" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.GreaterThan%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.GreaterThan%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt;= (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1577,12 +1577,12 @@
         <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlInt16" /> structures to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlInt16" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.GreaterThanOrEqual%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.GreaterThanOrEqual%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Implicit (System.Data.SqlTypes.SqlByte x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt16 (System.Data.SqlTypes.SqlByte x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1617,7 +1617,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Implicit (short x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt16 (short x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Implicit(int16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Implicit(System.Int16)~System.Data.SqlTypes.SqlInt16" />
       <MemberType>Method</MemberType>
@@ -1652,7 +1652,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator != (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Inequality(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1686,12 +1686,12 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlInt16" /> structures to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlInt16" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.NotEquals%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.NotEquals%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThan (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt; (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_LessThan(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1725,12 +1725,12 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlInt16" /> to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlInt16" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.LessThan%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.LessThan%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt;= (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_LessThanOrEqual(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1764,12 +1764,12 @@
         <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlInt16" /> structures to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlInt16" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.LessThanOrEqual%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.LessThanOrEqual%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Modulus (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator % (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Modulus(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Modulus(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1803,12 +1803,12 @@
         <summary>Computes the remainder after dividing its first <see cref="T:System.Data.SqlTypes.SqlInt16" /> operand by its second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> contains the remainder.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Mod%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Mod%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Multiply (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator * (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Multiply(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Multiply(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1842,12 +1842,12 @@
         <summary>Computes the product of the two <see cref="T:System.Data.SqlTypes.SqlInt16" /> parameters.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> contains the product of the two parameters.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Multiply%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Multiply%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_OnesComplement (System.Data.SqlTypes.SqlInt16 x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator ~ (System.Data.SqlTypes.SqlInt16 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_OnesComplement(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_OnesComplement(System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1879,12 +1879,12 @@
         <summary>The ~ operator performs a bitwise one's complement operation on its <see cref="T:System.Data.SqlTypes.SqlByte" /> operand.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> property contains the complement of the specified <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.OnesComplement%28System.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.OnesComplement%28System.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_Subtraction (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator - (System.Data.SqlTypes.SqlInt16 x, System.Data.SqlTypes.SqlInt16 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_Subtraction(valuetype System.Data.SqlTypes.SqlInt16 x, valuetype System.Data.SqlTypes.SqlInt16 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_Subtraction(System.Data.SqlTypes.SqlInt16,System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>
@@ -1918,12 +1918,12 @@
         <summary>Subtracts the second <see cref="T:System.Data.SqlTypes.SqlInt16" /> parameter from the first.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure whose <see cref="P:System.Data.SqlTypes.SqlInt16.Value" /> property contains the results of the subtraction.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Subtract%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.Subtract%28System.Data.SqlTypes.SqlInt16%2CSystem.Data.SqlTypes.SqlInt16%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 op_UnaryNegation (System.Data.SqlTypes.SqlInt16 x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt16 operator - (System.Data.SqlTypes.SqlInt16 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt16 op_UnaryNegation(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt16.op_UnaryNegation(System.Data.SqlTypes.SqlInt16)" />
       <MemberType>Method</MemberType>

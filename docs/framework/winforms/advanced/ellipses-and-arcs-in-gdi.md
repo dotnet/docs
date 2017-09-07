@@ -1,5 +1,5 @@
 ---
-title: "Ellipses and Arcs in GDI+ | Microsoft Docs"
+title: "Ellipses and Arcs in GDI+"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

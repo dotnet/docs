@@ -1,5 +1,5 @@
 ---
-title: "Late bound resolution; runtime errors could occur | Microsoft Docs"
+title: "Late bound resolution; runtime errors could occur"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -43,7 +43,7 @@ An object is assigned to a variable declared to be of the [Object Data Type](../
   
  If you declare the variable to be of a specific type, the compiler can perform *early binding* at compile time. This results in improved performance, controlled access to the members of the specific type, and better readability of your code.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42017  
   

@@ -676,7 +676,7 @@
   
  The code example defines an alternative comparer for strings, named `ReverseCompare`, which implements the `IComparer<string>` (`IComparer(Of String)` in Visual Basic, `IComparer<String^>` in Visual C++) generic interface. The comparer calls the <xref:System.String.CompareTo%28System.String%29> method, reversing the order of the comparands so that the strings sort high-to-low instead of low-to-high.  
   
- The array is displayed, sorted, and displayed again. Arrays must be sorted in order to use the<xref:System.Array.BinarySearch%2A> method.  
+ The array is displayed, sorted, and displayed again. Arrays must be sorted in order to use the <xref:System.Array.BinarySearch%2A> method.  
   
 > [!NOTE]
 >  The calls to the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> and <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic methods do not look any different from calls to their nongeneric counterparts, because Visual Basic, C#, and C++ infer the type of the generic type parameter from the type of the first argument. If you use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the Microsoft intermediate language (MSIL), you can see that the generic methods are being called.  
@@ -1566,7 +1566,7 @@
   
 -   When copying from a reference-type or value-type array to an <xref:System.Object> array, an <xref:System.Object> is created to hold each value or reference and then copied. When copying from an <xref:System.Object> array to a reference-type or value-type array and the assignment is not possible, an <xref:System.InvalidCastException> is thrown.  
   
--   If `sourceArray` and `destinationArray` are both reference-type arrays or are both arrays of type <xref:System.Object>, a shallow copy is performed. A shallow copy of an <xref:System.Array> is a new <xref:System.Array>containing references to the same elements as the original <xref:System.Array>. The elements themselves or anything referenced by the elements are not copied. In contrast, a deep copy of an <xref:System.Array> copies the elements and everything directly or indirectly referenced by the elements.  
+-   If `sourceArray` and `destinationArray` are both reference-type arrays or are both arrays of type <xref:System.Object>, a shallow copy is performed. A shallow copy of an <xref:System.Array> is a new <xref:System.Array> containing references to the same elements as the original <xref:System.Array>. The elements themselves or anything referenced by the elements are not copied. In contrast, a deep copy of an <xref:System.Array> copies the elements and everything directly or indirectly referenced by the elements.  
   
  An <xref:System.ArrayTypeMismatchException> is thrown if the arrays are of incompatible types. Type compatibility is defined as follows:  
   
@@ -2048,7 +2048,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike most classes, <xref:System.Array> provides the<xref:System.Array.CreateInstance%2A> method, instead of public constructors, to allow for late bound access.  
+ Unlike most classes, <xref:System.Array> provides the <xref:System.Array.CreateInstance%2A> method, instead of public constructors, to allow for late bound access.  
   
  Reference-type elements are initialized to `null`. Value-type elements are initialized to zero.  
   
@@ -2348,12 +2348,12 @@
    
   
 ## Examples  
- The following example specifies the match conditions for the <xref:System.Array.Exists%2A>method usinglambda expressions to check whether a planet starts with a given letter or whether the planet is found on the given array.  
+ The following example specifies the match conditions for the <xref:System.Array.Exists%2A> method usinglambda expressions to check whether a planet starts with a given letter or whether the planet is found on the given array.  
   
  [!code-csharp[System.Array.Exists#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.exists/cs/exists3.cs#3)]
  [!code-vb[System.Array.Exists#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.exists/vb/exists3.vb#3)]  
   
- The following example uses the <xref:System.Array.Exists%2A> method to indicate whether any names in a string array begin with a specified character. The example instantiates a `StringSearcher` object by passing the string to search for to its class constructor. The `StringSearcher.StartsWith` method has same signature as the <xref:System.Predicate%601> delegate. When the<xref:System.Array.Exists%2A> method is called, each member of the array is passed to the delegate until it returns `true` or iterates all the elements in the array.  
+ The following example uses the <xref:System.Array.Exists%2A> method to indicate whether any names in a string array begin with a specified character. The example instantiates a `StringSearcher` object by passing the string to search for to its class constructor. The `StringSearcher.StartsWith` method has same signature as the <xref:System.Predicate%601> delegate. When the <xref:System.Array.Exists%2A> method is called, each member of the array is passed to the delegate until it returns `true` or iterates all the elements in the array.  
   
  [!code-csharp[System.Array.Exists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.exists/cs/exists1.cs#1)]
  [!code-vb[System.Array.Exists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.exists/vb/exists1.vb#1)]  
@@ -2626,7 +2626,7 @@
 ## Remarks  
  The <xref:System.Array> is searched forward starting at the first element and ending at the last element.  
   
- The<xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of `array` are individually passed to the <xref:System.Predicate%601>.  
+ The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of `array` are individually passed to the <xref:System.Predicate%601>.  
   
  This method is an O(`n`) operation, where `n` is the <xref:System.Array.Length%2A> of `array`.  
   
@@ -4024,7 +4024,7 @@
    
   
 ## Examples  
- The example calls the following three overloads of the <xref:System.Array.IndexOf%2A>method to find the index of a string in a string array:  
+ The example calls the following three overloads of the <xref:System.Array.IndexOf%2A> method to find the index of a string in a string array:  
   
 -   <xref:System.Array.IndexOf%28System.Array%2CSystem.Object%29>, to determine the first occurrence of the string "the" in a string array.  
   
@@ -4393,7 +4393,7 @@
    
   
 ## Examples  
- The following example demonstrates all three generic overloads of the <xref:System.Array.IndexOf%2A> method. An array of strings is created, with one entry that appears twice, at index location 0 and index location 5. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%29> method overload searches the array from the beginning, and finds the first occurrence of the string. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%29> method overload is used to search the array beginning with index location 3 and continuing to the end of the array, and finds the second occurrence of the string. Finally, the <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%2CSystem.Int32%29>method overload is used to search a range of two entries, beginning at index location two; it returns –1 because there are no instances of the search string in that range.  
+ The following example demonstrates all three generic overloads of the <xref:System.Array.IndexOf%2A> method. An array of strings is created, with one entry that appears twice, at index location 0 and index location 5. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%29> method overload searches the array from the beginning, and finds the first occurrence of the string. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%29> method overload is used to search the array beginning with index location 3 and continuing to the end of the array, and finds the second occurrence of the string. Finally, the <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%2CSystem.Int32%29> method overload is used to search a range of two entries, beginning at index location two; it returns –1 because there are no instances of the search string in that range.  
   
  [!code-cpp[Array_IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR/Array_IndexOf/cpp/source.cpp#1)]
  [!code-csharp[Array_IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR/Array_IndexOf/cs/source.cs#1)]
@@ -4581,7 +4581,7 @@
    
   
 ## Examples  
- The following code example shows how to lock an array during the entire enumeration by using the <xref:System.Array.SyncRoot%2A>property.  
+ The following code example shows how to lock an array during the entire enumeration by using the <xref:System.Array.SyncRoot%2A> property.  
   
  [!code-cpp[System.Array.SyncRoot#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Array.SyncRoot/cpp/source.cpp#1)]
  [!code-csharp[System.Array.SyncRoot#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Array.SyncRoot/cs/source.cs#1)]
@@ -5375,7 +5375,7 @@ int[,,] TDArray = new int[1,1,1];
 ## Remarks  
  After a call to this method, the element at `myArray[i]`, where `i` is any index in the array, moves to `myArray[j]`, where `j` equals `(myArray.Length + myArray.GetLowerBound(0)) - (i - myArray.GetLowerBound(0)) - 1`.  
   
- The<xref:System.Array.Reverse%2A> method can be used to reverse a jagged array.  
+ The <xref:System.Array.Reverse%2A> method can be used to reverse a jagged array.  
   
  This method is an O(`n`) operation, where `n` is `length`.  
   
@@ -6860,7 +6860,7 @@ int[,,] TDArray = new int[1,1,1];
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%29> generic method overload and the<xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%29> generic method overload. An array of strings is created, in no particular order.  
+ The following code example demonstrates the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%29> generic method overload and the <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%29> generic method overload. An array of strings is created, in no particular order.  
   
  The array is displayed, sorted, and displayed again.  
   
@@ -7304,7 +7304,7 @@ int[,,] TDArray = new int[1,1,1];
   
  Each key in the `keys`<xref:System.Array> must implement the <xref:System.IComparable%601> generic interface to be capable of comparisons with every other key.  
   
- You can sort if there are more items than keys, but the items that have no corresponding keys will not be sorted. You cannot sort if there are more keys than items; doing this throws an<xref:System.ArgumentException>.  
+ You can sort if there are more items than keys, but the items that have no corresponding keys will not be sorted. You cannot sort if there are more keys than items; doing this throws an <xref:System.ArgumentException>.  
   
  If the sort is not successfully completed, the results are undefined.  
   
@@ -7543,7 +7543,7 @@ int[,,] TDArray = new int[1,1,1];
    
   
 ## Examples  
- The following code example demonstrates the<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%29>, <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29>, [\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%29>, and <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic method overloads, for sorting pairs of arrays that represent keys and values.  
+ The following code example demonstrates the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%29>, <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29>, [\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%29>, and <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic method overloads, for sorting pairs of arrays that represent keys and values.  
   
  The code example defines an alternative comparer for strings, named `ReverseCompare`, which implements the `IComparer<string>` (`IComparer(Of String)` in Visual Basic, `IComparer<String^>` in Visual C++) generic interface. The comparer calls the <xref:System.String.CompareTo%28System.String%29> method, reversing the order of the comparands so that the strings sort high-to-low instead of low-to-high.  
   
@@ -8157,7 +8157,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an<xref:System.Collections.IList> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an <xref:System.Collections.IList> interface.  
   
  ]]></format>
         </remarks>
@@ -8364,7 +8364,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an<xref:System.Collections.IStructuralEquatable>interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface.  
   
  ]]></format>
         </remarks>
@@ -8406,7 +8406,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an<xref:System.Collections.IStructuralEquatable>interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface.  
   
  ]]></format>
         </remarks>

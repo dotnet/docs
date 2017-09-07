@@ -597,7 +597,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Forms.Cursor left, System.Windows.Forms.Cursor right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.Cursor left, System.Windows.Forms.Cursor right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Forms.Cursor left, class System.Windows.Forms.Cursor right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.op_Equality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
       <MemberType>Method</MemberType>
@@ -633,7 +633,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Forms.Cursor left, System.Windows.Forms.Cursor right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.Cursor left, System.Windows.Forms.Cursor right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Forms.Cursor left, class System.Windows.Forms.Cursor right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.op_Inequality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
       <MemberType>Method</MemberType>

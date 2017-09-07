@@ -1,5 +1,5 @@
 ---
-title: "CLR Integration Security in SQL Server | Microsoft Docs"
+title: "CLR Integration Security in SQL Server"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

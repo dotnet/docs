@@ -1,5 +1,5 @@
 ---
-title: "Security-Transparent Code, Level 2 | Microsoft Docs"
+title: "Security-Transparent Code, Level 2"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,7 +26,8 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Security-Transparent Code, Level 2
-<a name="top"></a> [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
+<a name="top"></a>
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Level 2 transparency was introduced in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.  
   
@@ -188,7 +189,7 @@ manager: "wpickett"
  The following properties have been added to the <xref:System.Reflection> namespace to determine whether the type, method, or field is `SecurityCritical`, `SecuritySafeCritical`, or `SecurityTransparent`:  <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A>, and <xref:System.Reflection.MethodBase.IsSecurityTransparent%2A>. Use these properties to determine transparency by using reflection instead of checking for the presence of the attribute. The transparency rules are complex, and checking for the attribute may not be sufficient.  
   
 > [!NOTE]
->  A `SafeCritical` method returns `true` for both <xref:System.Type.IsSecurityCritical%2A>and <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A>, because `SafeCritical` is indeed critical (it has the same capabilities as critical code, but it can be called from transparent code).  
+>  A `SafeCritical` method returns `true` for both <xref:System.Type.IsSecurityCritical%2A> and <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A>, because `SafeCritical` is indeed critical (it has the same capabilities as critical code, but it can be called from transparent code).  
   
  Dynamic methods inherit the transparency of the modules they are attached to; they do not inherit the transparency of the type (if they are attached to a type).  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Call a Procedure that Does Not Return a Value (Visual Basic) | Microsoft Docs"
+title: "How to: Call a Procedure that Does Not Return a Value (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -162,7 +162,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Xaml.AttachableMemberIdentifier left, System.Xaml.AttachableMemberIdentifier right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Xaml.AttachableMemberIdentifier left, System.Xaml.AttachableMemberIdentifier right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xaml.AttachableMemberIdentifier left, class System.Xaml.AttachableMemberIdentifier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.op_Equality(System.Xaml.AttachableMemberIdentifier,System.Xaml.AttachableMemberIdentifier)" />
       <MemberType>Method</MemberType>
@@ -187,7 +187,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xaml.AttachableMemberIdentifier left, System.Xaml.AttachableMemberIdentifier right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Xaml.AttachableMemberIdentifier left, System.Xaml.AttachableMemberIdentifier right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xaml.AttachableMemberIdentifier left, class System.Xaml.AttachableMemberIdentifier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.op_Inequality(System.Xaml.AttachableMemberIdentifier,System.Xaml.AttachableMemberIdentifier)" />
       <MemberType>Method</MemberType>

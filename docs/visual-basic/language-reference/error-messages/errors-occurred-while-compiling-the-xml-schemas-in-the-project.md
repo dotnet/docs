@@ -1,5 +1,5 @@
 ---
-title: "Errors occurred while compiling the XML schemas in the project | Microsoft Docs"
+title: "Errors occurred while compiling the XML schemas in the project"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -54,6 +54,6 @@ Errors occurred while compiling the XML schemas in the project. Because of this,
 -   If no error is identified in your XSD schema, the XML compiler may not have enough information to provide a detailed error message. You may be able to get more detailed error information if you ensure that the XML namespaces for the .xsd files included in your project match the XML namespaces identified for the XML Schema set in Visual Studio.  
   
 ## See Also  
- [Error List Window](https://docs.microsoft.com/visualstudio/ide/reference/error-list-window)   
+ [Error List Window](/visualstudio/ide/reference/error-list-window)   
  [XML IntelliSense in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md)   
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

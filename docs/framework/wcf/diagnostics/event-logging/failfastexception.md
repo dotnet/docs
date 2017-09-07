@@ -1,5 +1,5 @@
 ---
-title: "FailFastException | Microsoft Docs"
+title: "FailFastException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Finding the time zones defined on a local system | Microsoft Docs"
+title: "Finding the time zones defined on a local system"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

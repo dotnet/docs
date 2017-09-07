@@ -1,5 +1,5 @@
 ---
-title: "4015 - MessageQueueRegisterCompleted | Microsoft Docs"
+title: "4015 - MessageQueueRegisterCompleted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

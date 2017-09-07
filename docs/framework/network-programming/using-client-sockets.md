@@ -1,5 +1,5 @@
 ---
-title: "Using Client Sockets | Microsoft Docs"
+title: "Using Client Sockets"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

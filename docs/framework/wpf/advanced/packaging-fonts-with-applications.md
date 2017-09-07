@@ -1,5 +1,5 @@
 ---
-title: "Packaging Fonts with Applications | Microsoft Docs"
+title: "Packaging Fonts with Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -67,7 +67,7 @@ This topic provides an overview of how to package fonts with your              [
   
  The following code example shows how to reference the application's font as a content item—the referenced content item must be in the same directory as the application's assembly files.  
   
- [!code-xml[FontSnippets#FontPackageSnippet8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet8)]  
+ [!code-xaml[FontSnippets#FontPackageSnippet8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet8)]  
   
 <a name="adding_fonts_as_resource_items"></a>   
 ## Adding Fonts as Resource Items  
@@ -90,7 +90,7 @@ This topic provides an overview of how to package fonts with your              [
   
  The following markup example shows how to reference the application's font resources.  
   
- [!code-xml[FontSnippets#FontPackageSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
+ [!code-xaml[FontSnippets#FontPackageSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
   
 ### Referencing Font Resource Items from Code  
  In order to reference font resource items from code, you must supply a two-part font resource reference: the base                          [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)]; and the font location reference. These values are used as the parameters for the                          <xref:System.Windows.Media.FontFamily.%23ctor%2A> method. The following code example shows how to reference the application's font resources in the project subdirectory called                          `resources`.  
@@ -118,7 +118,7 @@ This topic provides an overview of how to package fonts with your              [
   
  Since the application content and font are in the same subdirectory, the font reference is relative to the application content. The following examples show how to reference the application's font resource when the font is in the same directory as the application.  
   
- [!code-xml[FontSnippets#FontPackageSnippet3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/pages/HomePage.xaml#fontpackagesnippet3)]  
+ [!code-xaml[FontSnippets#FontPackageSnippet3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/pages/HomePage.xaml#fontpackagesnippet3)]  
   
  [!code-csharp[FontSnippets#FontPackageSnippet4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/pages/HomePage.xaml.cs#fontpackagesnippet4)]
  [!code-vb[FontSnippets#FontPackageSnippet4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/pages/homepage.xaml.vb#fontpackagesnippet4)]  
@@ -154,7 +154,7 @@ This topic provides an overview of how to package fonts with your              [
 ### Referencing a Font in a Resource Library  
  To reference a font in a resource library from your application, you must prefix the font reference with the name of the library assembly. In this case, the font resource assembly is "FontLibrary". To separate the assembly name from the reference within the assembly, use a ';' character. Adding the "Component" keyword followed by the reference to the font name completes the full reference to the font library's resource. The following code example shows how to reference a font in a resource library assembly.  
   
- [!code-xml[OpenTypeFontsSample#OpenTypeFontsSample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
+ [!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
   
 > [!NOTE]
 >  This SDK contains a set of sample                              [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts that you can use with                              [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see                              [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md).  

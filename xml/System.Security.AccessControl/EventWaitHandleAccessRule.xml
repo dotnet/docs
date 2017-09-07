@@ -49,7 +49,7 @@
    
   
 ## Examples  
- The following code example demonstrates the creation and use of <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow>rule.  
+ The following code example demonstrates the creation and use of <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.EventWaitHandle> object. Examples that attach security objects can be found in <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  
@@ -146,7 +146,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow>rule.  
+ The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.EventWaitHandle> object. Examples that attach security objects can be found in <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  
@@ -206,7 +206,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights%2A> property to display the rights in the set of rules contained in an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow>rule.  
+ The following code example demonstrates the use of the <xref:System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights%2A> property to display the rights in the set of rules contained in an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.EventWaitHandle> object. Examples that attach security objects can be found in <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  

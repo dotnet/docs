@@ -1,0 +1,71 @@
+<Type Name="TransactionVote" FullName="System.EnterpriseServices.TransactionVote">
+  <TypeSignature Language="C#" Value="public enum TransactionVote" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionVote extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionVote" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the values allowed for transaction outcome voting.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.EnterpriseServices.ContextUtil> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration.  
+  
+ [!code-cpp[EnterpriseServices_Transaction#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Transaction/CPP/transaction.cpp#1)]
+ [!code-csharp[EnterpriseServices_Transaction#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Transaction/CS/transaction.cs#1)]
+ [!code-vb[EnterpriseServices_Transaction#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Transaction/VB/transaction.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="Abort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionVote Abort = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionVote.Abort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionVote</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Aborts the current transaction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="Commit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionVote Commit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionVote.Commit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionVote</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Commits the current transaction.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

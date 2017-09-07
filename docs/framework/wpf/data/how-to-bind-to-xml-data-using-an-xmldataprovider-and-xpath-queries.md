@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind to XML Data Using an XMLDataProvider and XPath Queries | Microsoft Docs"
+title: "How to: Bind to XML Data Using an XMLDataProvider and XPath Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,7 +30,7 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
 > [!NOTE]
 >  The root node of the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data has an **xmlns** attribute that sets the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] namespace to an empty string. This is a requirement for applying XPath queries to a data island that is inline within the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page. In this inline case, the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], and thus the data island, inherits the <xref:System.Windows> namespace. Because of this, you need to set the namespace blank to keep XPath queries from being qualified by the <xref:System.Windows> namespace, which would misdirect the queries.  
   
- [!code-xml[XMLDataSource#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource/CS/Window1.xaml#1)]  
+ [!code-xaml[XMLDataSource#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource/CS/Window1.xaml#1)]  
   
  As shown in this example, to create the same binding declaration in attribute syntax you must escape the special characters properly. For more information, see [XML Character Entities and XAML](../../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md).  
   
@@ -52,11 +52,11 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
   
  When you run an **XPath** query, it returns an <xref:System.Xml.XmlNode> or a list of XmlNodes. <xref:System.Xml.XmlNode> is a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] object, which means you can use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to the [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] properties. Consider the previous example again. If the rest of the example stays the same and you change the <xref:System.Windows.Controls.TextBlock> binding to the following, you will see the names of the returned XmlNodes in the <xref:System.Windows.Controls.ListBox>. In this case, the name of all the returned nodes is "*Book*".  
   
- [!code-xml[XmlDataSourceVariation#XmlNodePath](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSourceVariation/CS/Page1.xaml#xmlnodepath)]  
+ [!code-xaml[XmlDataSourceVariation#XmlNodePath](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSourceVariation/CS/Page1.xaml#xmlnodepath)]  
   
  In some applications, embedding the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] as a data island within the source of the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page can be inconvenient because the exact content of the data must be known at compile time. Therefore, obtaining the data from an external [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] file is also supported, as in the following example:  
   
- [!code-xml[XMLDataSource2#XmlFileExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
+ [!code-xaml[XMLDataSource2#XmlFileExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
   
  If the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data resides in a remote [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] file, you would define access to the data by assigning an appropriate [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)] to the <xref:System.Windows.Data.XmlDataProvider.Source%2A> attribute as follows:  
   

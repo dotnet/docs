@@ -1,5 +1,5 @@
 ---
-title: "5001 - DCSerializeWithSurrogateStart | Microsoft Docs"
+title: "5001 - DCSerializeWithSurrogateStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

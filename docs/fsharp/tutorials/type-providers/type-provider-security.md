@@ -1,6 +1,6 @@
 ---
-title: Type Provider Security | Microsoft Docs
-description: Type Provider Security
+title: Type Provider Security
+description: Learn about type provider security in F#, including how to change the trust settings for a type provider.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service | Microsoft Docs"
+title: "How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

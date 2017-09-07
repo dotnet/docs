@@ -1,5 +1,5 @@
 ---
-title: "You must specify a name | Microsoft Docs"
+title: "You must specify a name"
 
 ms.date: "2015-07-20"
 ms.prod: .net

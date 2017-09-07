@@ -1,5 +1,5 @@
 ---
-title: "Cannot create ActiveX Component | Microsoft Docs"
+title: "Cannot create ActiveX Component"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -42,4 +42,4 @@ You tried to place an ActiveX control on a form at design time or add a form to 
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

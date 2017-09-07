@@ -1,5 +1,5 @@
 ---
-title: "Creating and Running a Workflow Instance | Microsoft Docs"
+title: "Creating and Running a Workflow Instance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

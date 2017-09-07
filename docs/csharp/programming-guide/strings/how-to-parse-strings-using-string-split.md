@@ -1,5 +1,5 @@
 ---
-title: "How to: Parse Strings Using String.Split (C# Programming Guide) | Microsoft Docs"
+title: "How to: Parse Strings Using String.Split (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -55,7 +55,7 @@ class TestStringSplit
 {  
     static void Main()  
     {  
-        char[] separatingChars = { "<<", "..." };  
+        string[] separatingChars = { "<<", "..." };  
   
         string text = "one<<two......three<four";  
         System.Console.WriteLine("Original text: '{0}'", text);  

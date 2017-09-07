@@ -56,7 +56,7 @@
 ## Examples  
  In the following example, when the user clicks on the <xref:System.Windows.Documents.Figure>, the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> decreases. Below is the XAML for the sample.  
   
- [!code-xml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
+ [!code-xaml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
   
  Below is the code used to decrease the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure>.  
   
@@ -87,7 +87,7 @@
 ## Examples  
  In the following example, when the user clicks on the <xref:System.Windows.Documents.Figure>, the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> decreases. Below is the XAML for the sample.  
   
- [!code-xml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
+ [!code-xaml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
   
  Below is the code used to decrease the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure>.  
   
@@ -120,7 +120,7 @@
 ## Examples  
  In the following example, when the user clicks on the <xref:System.Windows.Documents.Figure>, the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> decreases. Below is the XAML for the sample.  
   
- [!code-xml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
+ [!code-xaml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
   
  Below is the code used to decrease the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure>.  
   
@@ -330,7 +330,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.FigureLength fl1, System.Windows.FigureLength fl2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.FigureLength fl1, System.Windows.FigureLength fl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.FigureLength fl1, valuetype System.Windows.FigureLength fl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.op_Equality(System.Windows.FigureLength,System.Windows.FigureLength)" />
       <MemberType>Method</MemberType>
@@ -352,12 +352,12 @@
         <returns>
           <see langword="true" /> if <paramref name="fl1" /> and <paramref name="fl2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.FigureLength.Equals%2A?displayProperty=fullName>. ]]> </format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.FigureLength.Equals%2A?displayProperty=fullName>. ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.FigureLength fl1, System.Windows.FigureLength fl2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.FigureLength fl1, System.Windows.FigureLength fl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.FigureLength fl1, valuetype System.Windows.FigureLength fl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.op_Inequality(System.Windows.FigureLength,System.Windows.FigureLength)" />
       <MemberType>Method</MemberType>

@@ -1077,7 +1077,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while accessing the socket.</exception>                       
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while accessing the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="backlog" /> parameter is less than zero or exceeds the maximum number of permitted connections.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Net.Sockets.Socket" /> is null.</exception>
       </Docs>

@@ -370,7 +370,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static string op_Explicit (Microsoft.Build.Utilities.TaskItem taskItemToCast);" />
+      <MemberSignature Language="C#" Value="public static explicit operator string (Microsoft.Build.Utilities.TaskItem taskItemToCast);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Explicit(class Microsoft.Build.Utilities.TaskItem taskItemToCast) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TaskItem.op_Explicit(Microsoft.Build.Utilities.TaskItem)~System.String" />
       <MemberType>Method</MemberType>

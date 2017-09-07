@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ComIntegration.ComIntegrationInstanceReleased | Microsoft Docs"
+title: "System.ServiceModel.ComIntegration.ComIntegrationInstanceReleased"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

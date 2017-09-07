@@ -1,5 +1,5 @@
 ---
-title: "xml:space Handling in XAML | Microsoft Docs"
+title: "xml:space Handling in XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

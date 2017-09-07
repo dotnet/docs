@@ -1,5 +1,5 @@
 ---
-title: "Packaging and deploying custom My extensions (Visual Basic) | Microsoft Docs"
+title: "Packaging and deploying custom My extensions (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -120,4 +120,4 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
  [Extending the My Namespace in Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md)   
  [Extending the Visual Basic Application Model](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)   
  [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)   
- [My Extensions Page, Project Designer](https://docs.microsoft.com/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)
+ [My Extensions Page, Project Designer](/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)

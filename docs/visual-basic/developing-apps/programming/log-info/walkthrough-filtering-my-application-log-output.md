@@ -1,5 +1,5 @@
 ---
-title: "Filtering My.Application.Log Output (Visual Basic) | Microsoft Docs"
+title: "Filtering My.Application.Log Output (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -64,7 +64,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 6.  Close the application.  
   
-     For information on how to view the application's debug output window, see [Output Window](https://docs.microsoft.com/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
+     For information on how to view the application's debug output window, see [Output Window](/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
   
     > [!NOTE]
     >  By default, the application flushes the log-file output when the application closes.  

@@ -1,5 +1,5 @@
 ---
-title: "Editing XML Data using XPathNavigator | Microsoft Docs"
+title: "Editing XML Data using XPathNavigator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

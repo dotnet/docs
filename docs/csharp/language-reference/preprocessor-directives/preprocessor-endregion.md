@@ -1,5 +1,5 @@
 ---
-title: "#endregion (C# Reference) | Microsoft Docs"
+title: "#endregion (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -33,8 +33,8 @@ translation.priority.ht:
 # #endregion (C# Reference)
 `#endregion` marks the end of a [#region](../../../csharp/language-reference/preprocessor-directives/preprocessor-region.md) block. For example:  
   
-```  
-      #region MyClass definition  
+```csharp
+#region MyClass definition  
 class MyClass   
 {  
     static void Main()   

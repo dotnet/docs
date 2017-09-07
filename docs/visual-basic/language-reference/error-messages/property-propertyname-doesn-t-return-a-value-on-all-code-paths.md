@@ -1,5 +1,5 @@
 ---
-title: "Property &#39;&lt;propertyname&gt;&#39; doesn&#39;t return a value on all code paths | Microsoft Docs"
+title: "Property &#39;&lt;propertyname&gt;&#39; doesn&#39;t return a value on all code paths"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -51,7 +51,7 @@ Property '\<propertyname>' doesn't return a value on all code paths. A null refe
   
  If control passes to `Exit Property` or `End Get` and you have not assigned any value to the property name, the `Get` procedure returns the default value of the property's data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42107  
   

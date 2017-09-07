@@ -1,5 +1,5 @@
 ---
-title: "C# Keywords | Microsoft Docs"
+title: "C# Keywords"
 ms.date: "2017-03-07"
 ms.prod: .net
 ms.technology: 

@@ -290,7 +290,8 @@ if (null != principal)
         <param name="info">The serialized data.</param>
         <param name="context">The context for serialization.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsPrincipal" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is **null**.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -491,8 +492,9 @@ if (null != principal)
       <Parameters />
       <Docs>
         <summary>Returns a copy of this instance.</summary>
-        <remarks></remarks>
         <returns>A new copy of the <see cref="T:System.Security.Claims.ClaimsPrincipal" /> object.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateClaimsIdentity">
@@ -523,8 +525,9 @@ if (null != principal)
       <Docs>
         <param name="reader">The binary reader.</param>
         <summary>Creates a new claims identity.</summary>
-        <remarks></remarks>
         <returns>The created claims identity.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -586,8 +589,9 @@ if (null != principal)
       </ReturnValue>
       <Docs>
         <summary>Contains any additional data provided by a derived type. Typically set when calling <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />.</summary>
-        <remarks></remarks>
         <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -700,8 +704,9 @@ if (null != principal)
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Retrieves the first claim that is matched by the specified predicate.</summary>
-        <remarks></remarks>
         <returns>The first matching claim or <see langword="null" /> if no match is found.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -734,8 +739,9 @@ if (null != principal)
       <Docs>
         <param name="type">The claim type to match.</param>
         <summary>Retrieves the first claim with the specified claim type.</summary>
-        <remarks></remarks>
         <returns>The first matching claim or <see langword="null" /> if no match is found.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is **null**.</exception>
       </Docs>
@@ -774,7 +780,8 @@ if (null != principal)
         <param name="info">The object to populate with data.</param>
         <param name="context">The destination for this serialization. Can be <see langword="null" />.</param>
         <summary>Populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with data needed to serialize the current <see cref="T:System.Security.Claims.ClaimsPrincipal" /> object.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -808,9 +815,10 @@ if (null != principal)
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Determines whether any of the claims identities associated with this claims principal contains a claim that is matched by the specified predicate.</summary>
-        <remarks></remarks>
         <returns>
           <see langword="true" /> if a matching claim exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -1049,7 +1057,8 @@ if (null != principal)
       <Docs>
         <param name="writer">The writer to use for data storage.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1084,7 +1093,8 @@ if (null != principal)
         <param name="writer">The writer to use for data storage.</param>
         <param name="userData">Additional data provided by the derived type.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>

@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Hybrid Applications | Microsoft Docs"
+title: "Troubleshooting Hybrid Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

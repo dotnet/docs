@@ -1,5 +1,5 @@
 ---
-title: "Integrated Windows Authentication with Extended Protection | Microsoft Docs"
+title: "Integrated Windows Authentication with Extended Protection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

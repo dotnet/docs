@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting a Windows Forms Composite Control in WPF | Microsoft Docs"
+title: "Walkthrough: Hosting a Windows Forms Composite Control in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -171,15 +171,15 @@ The complete application, showing the control embedded in the WPF application
   
  Replace the XAML in MainWindow.xaml with the following. If you are using Visual Basic, change the class to                          `x:Class="MainWindow"`.  
   
- [!code-xml[WpfHostingWindowsFormsControl#100](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#100)]  
+ [!code-xaml[WpfHostingWindowsFormsControl#100](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#100)]  
   
  The first                          <xref:System.Windows.Controls.StackPanel> element contains several sets of                          <xref:System.Windows.Controls.RadioButton> controls that enable you to modify various default properties of the hosted control. That is followed by a                          <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, which hosts                          `MyControl1`. The final                          <xref:System.Windows.Controls.StackPanel> element contains several                          <xref:System.Windows.Controls.TextBlock> elements that display the data that is returned by the hosted control. The ordering of the elements and the                          <xref:System.Windows.Controls.DockPanel.Dock%2A> and                          <xref:System.Windows.FrameworkElement.Height%2A> attribute settings embed the hosted control into the window with no gaps or distortion.  
   
 #### Hosting the Control  
  The following edited version of the previous XAML focuses on the elements that are needed to host                                  `MyControl1`.  
   
- [!code-xml[WpfHostingWindowsFormsControl#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#101)]  
-[!code-xml[WpfHostingWindowsFormsControl#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#102)]  
+ [!code-xaml[WpfHostingWindowsFormsControl#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#101)]  
+[!code-xaml[WpfHostingWindowsFormsControl#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#102)]  
   
  The                                  `xmlns` namespace mapping attribute creates a reference to the                                  `MyControls` namespace that contains the hosted control. This mapping enables you to represent                                  `MyControl1` in                                  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] as                                  `<mcl:MyControl1>`.  
   

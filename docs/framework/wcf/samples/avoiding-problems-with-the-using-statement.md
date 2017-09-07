@@ -1,5 +1,5 @@
 ---
-title: "Avoiding Problems with the Using Statement | Microsoft Docs"
+title: "Avoiding Problems with the Using Statement"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

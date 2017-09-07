@@ -1,5 +1,5 @@
 ---
-title: "WCF Services and Event Tracing for Windows | Microsoft Docs"
+title: "WCF Services and Event Tracing for Windows"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

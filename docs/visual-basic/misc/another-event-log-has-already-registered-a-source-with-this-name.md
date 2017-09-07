@@ -1,5 +1,5 @@
 ---
-title: "Another event log has already registered a source with this name | Microsoft Docs"
+title: "Another event log has already registered a source with this name"
 
 ms.date: "2015-07-20"
 ms.prod: .net

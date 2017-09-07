@@ -1,5 +1,5 @@
 ---
-title: "Ref Return Values (Visual Basic) | Microsoft Docs"
+title: "Ref Return Values (Visual Basic)"
 ms.custom: ""
 ms.date: "2017-04-28"
 ms.prod: .net

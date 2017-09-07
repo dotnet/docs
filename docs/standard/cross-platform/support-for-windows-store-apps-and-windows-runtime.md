@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Support for Windows Store Apps and Windows Runtime | Microsoft Docs"
+title: ".NET Framework Support for Windows Store Apps and Windows Runtime"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

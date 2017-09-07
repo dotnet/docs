@@ -1,5 +1,5 @@
 ---
-title: "Tracking Events into Event Tracing in Windows | Microsoft Docs"
+title: "Tracking Events into Event Tracing in Windows"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

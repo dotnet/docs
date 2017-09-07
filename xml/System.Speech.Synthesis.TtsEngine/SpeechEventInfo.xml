@@ -363,7 +363,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Speech.Synthesis.TtsEngine.SpeechEventInfo event1, System.Speech.Synthesis.TtsEngine.SpeechEventInfo event2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Speech.Synthesis.TtsEngine.SpeechEventInfo event1, System.Speech.Synthesis.TtsEngine.SpeechEventInfo event2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Speech.Synthesis.TtsEngine.SpeechEventInfo event1, valuetype System.Speech.Synthesis.TtsEngine.SpeechEventInfo event2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.op_Equality(System.Speech.Synthesis.TtsEngine.SpeechEventInfo,System.Speech.Synthesis.TtsEngine.SpeechEventInfo)" />
       <MemberType>Method</MemberType>
@@ -385,12 +385,12 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
         <returns>
           <see langword="true" /> if <paramref name="event1" /> is the same as <paramref name="event2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Equals%28System.Speech.Synthesis.TtsEngine.SpeechEventInfo%2CSystem.Speech.Synthesis.TtsEngine.SpeechEventInfo%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Equals%28System.Speech.Synthesis.TtsEngine.SpeechEventInfo%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Speech.Synthesis.TtsEngine.SpeechEventInfo event1, System.Speech.Synthesis.TtsEngine.SpeechEventInfo event2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Speech.Synthesis.TtsEngine.SpeechEventInfo event1, System.Speech.Synthesis.TtsEngine.SpeechEventInfo event2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.SpeechEventInfo event1, valuetype System.Speech.Synthesis.TtsEngine.SpeechEventInfo event2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.op_Inequality(System.Speech.Synthesis.TtsEngine.SpeechEventInfo,System.Speech.Synthesis.TtsEngine.SpeechEventInfo)" />
       <MemberType>Method</MemberType>
@@ -412,7 +412,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
         <returns>
           <see langword="true" /> if <paramref name="event1" /> is different from <paramref name="event2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Compare%28System.Speech.Synthesis.TtsEngine.SpeechEventInfo%2CSystem.Speech.Synthesis.TtsEngine.SpeechEventInfo%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.SpeechEventInfo.Equals%28System.Speech.Synthesis.TtsEngine.SpeechEventInfo%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

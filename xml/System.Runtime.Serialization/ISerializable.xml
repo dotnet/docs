@@ -46,7 +46,7 @@
   
  As a general design pattern, it would be unusual for a class to be both marked with the serializable attribute and extend <xref:System.MarshalByRefObject>. Developers should think carefully about the possible serialization and remoting scenarios when combining these two characteristics. One example where this might be applicable is with a <xref:System.IO.MemoryStream>. While the base class of <xref:System.IO.MemoryStream> (<xref:System.IO.Stream>) extends from <xref:System.MarshalByRefObject>, it is possible to capture the state of a <xref:System.IO.MemoryStream> and restore it at will. It might, therefore, be meaningful to serialize the state of this stream into a database and restore it at some later point in time. However, when used through remoting, an object of this type would be proxied.  
   
- For more information about serialization of classes that extend <xref:System.MarshalByRefObject>, see <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector>. For more information about implementing <xref:System.Runtime.Serialization.ISerializable>, see [Custom Serialization](~/docs/framework/serialization/custom-serialization.md).  
+ For more information about serialization of classes that extend <xref:System.MarshalByRefObject>, see <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector>. For more information about implementing <xref:System.Runtime.Serialization.ISerializable>, see [Custom Serialization](~/docs/standard/serialization/custom-serialization.md).  
   
    
   

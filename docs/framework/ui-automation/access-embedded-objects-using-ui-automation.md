@@ -1,5 +1,5 @@
 ---
-title: "Access Embedded Objects Using UI Automation | Microsoft Docs"
+title: "Access Embedded Objects Using UI Automation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

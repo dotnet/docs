@@ -1,5 +1,5 @@
 ---
-title: "out (Generic Modifier) (C# Reference) | Microsoft Docs"
+title: "out (Generic Modifier) (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -38,7 +38,7 @@ For generic type parameters, the `out` keyword specifies that the type parameter
   
  A covariant delegate can be assigned another delegate of the same type, but with a more derived generic type parameter.  
   
- For more information, see [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8).  
+ For more information, see [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md).  
   
 ## Example  
  The following example shows how to declare, extend, and implement a covariant generic interface. It also shows how to use implicit conversion for classes that implement a covariant interface.  
@@ -65,6 +65,6 @@ For generic type parameters, the `out` keyword specifies that the type parameter
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [Variance in Generic Interfaces](http://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a)   
+ [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)   
  [in](../../../csharp/language-reference/keywords/in-generic-modifier.md)   
  [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

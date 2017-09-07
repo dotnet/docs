@@ -1,5 +1,5 @@
 ---
-title: "Polling in Console Applications | Microsoft Docs"
+title: "Polling in Console Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Get the Default View of a Data Collection | Microsoft Docs"
+title: "How to: Get the Default View of a Data Collection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,7 +30,7 @@ Views allow the same data collection to be viewed in different ways, depending o
   
  In this example, the root element is a <xref:System.Windows.Controls.StackPanel>. The <xref:System.Windows.FrameworkElement.DataContext%2A> is set to *myDataSource*, which refers to a data provider that is an <xref:System.Collections.ObjectModel.ObservableCollection%601> of *Order* objects.  
   
- [!code-xml[CollectionView#CollectionViewDataContext](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionView/CSharp/Page1.xaml#collectionviewdatacontext)]  
+ [!code-xaml[CollectionView#CollectionViewDataContext](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionView/CSharp/Page1.xaml#collectionviewdatacontext)]  
   
  Alternatively, you can instantiate and bind to your own collection view using the <xref:System.Windows.Data.CollectionViewSource> class. This collection view is only shared by controls that bind to it directly. For an example, see the How to Create a View section in the [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   

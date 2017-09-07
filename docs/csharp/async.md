@@ -1,6 +1,6 @@
 ---
-title: Asynchronous programming | Microsoft Docs
-description: Asynchronous programming
+title: Asynchronous programming
+description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn
@@ -26,7 +26,7 @@ For I/O-bound code, you `await` an operation which returns a `Task` or `Task<T>`
 
 For CPU-bound code, you `await` an operation which is started on a background thread with the `Task.Run` method.
 
-The `await` keyword is where the magic happens, because it yields control to the caller of the method which performed the `await`.  It is what ultimately allows a UI to be responsive, or a service to be elastic.
+The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic.
 
 There are other ways to approach async code than `async` and `await` outlined in the TAP article linked above, but this document will focus on the language-level constructs from this point forward.
 
@@ -68,7 +68,7 @@ private DamageResult CalculateDamageDone()
 
 calculateButton.Clicked += async (o, e) =>
 {
-    // This line will yield control to the UI CalculateDamageDone()
+    // This line will yield control to the UI while CalculateDamageDone()
     // performs its work.  The UI thread is free to perform other work.
     var damageResult = await Task.Run(() => CalculateDamageDone());
     DisplayDamage(damageResult);
@@ -122,7 +122,7 @@ The following examples demonstrate various ways you can write async code in C#. 
 This snippet downloads the HTML from www.dotnetfoundation.org and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
 
 > [!NOTE]
-> You shouldn't ever use regular expressions if you plan on doing actual HTML parsing.  Please using a parsing library if this is your aim in production code.
+> If you plan on doing HTML parsing in production code, don't use regular expressions. Use a parsing library instead.
 
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();

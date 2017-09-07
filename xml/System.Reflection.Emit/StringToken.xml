@@ -90,7 +90,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Emit.StringToken a, System.Reflection.Emit.StringToken b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Emit.StringToken a, System.Reflection.Emit.StringToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Emit.StringToken a, valuetype System.Reflection.Emit.StringToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.StringToken.op_Equality(System.Reflection.Emit.StringToken,System.Reflection.Emit.StringToken)" />
       <MemberType>Method</MemberType>
@@ -113,12 +113,12 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.StringToken.Equals%28System.Reflection.Emit.StringToken%2CSystem.Reflection.Emit.StringToken%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.StringToken.Equals%28System.Reflection.Emit.StringToken%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.StringToken a, System.Reflection.Emit.StringToken b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Emit.StringToken a, System.Reflection.Emit.StringToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.StringToken a, valuetype System.Reflection.Emit.StringToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.StringToken.op_Inequality(System.Reflection.Emit.StringToken,System.Reflection.Emit.StringToken)" />
       <MemberType>Method</MemberType>
@@ -141,7 +141,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflec%2A> tion.Emit.StringToken.Compare(System.Reflection.Emit.StringToken,System.Reflection.Emit.StringToken)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.StringToken.Equals%28System.Reflection.Emit.StringToken%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

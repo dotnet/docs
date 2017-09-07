@@ -1,5 +1,5 @@
 ---
-title: "Auto-Confirm Pattern | Microsoft Docs"
+title: "Auto-Confirm Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

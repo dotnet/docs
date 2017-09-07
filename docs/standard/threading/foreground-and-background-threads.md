@@ -1,5 +1,5 @@
 ---
-title: "Foreground and Background Threads | Microsoft Docs"
+title: "Foreground and Background Threads"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

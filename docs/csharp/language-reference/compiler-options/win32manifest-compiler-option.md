@@ -1,5 +1,5 @@
 ---
-title: "-win32manifest (C# Compiler Options) | Microsoft Docs"
+title: "-win32manifest (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -59,7 +59,7 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
   
 -   You provide a custom manifest that does not specify a requested execution level.  
   
- [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] creates a default .manifest file and stores it in the debug and release directories alongside the executable file. You can add a custom manifest by creating one in any text editor and then adding the file to the project. Alternatively, you can right-click the **Project** icon in **Solution Explorer**, click **Add New Item**, and then click **Application Manifest File**. After you have added your new or existing manifest file, it will appear in the **Manifest** drop down list. For more information, see [Application Page, Project Designer (C#)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-csharp).  
+ [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] creates a default .manifest file and stores it in the debug and release directories alongside the executable file. You can add a custom manifest by creating one in any text editor and then adding the file to the project. Alternatively, you can right-click the **Project** icon in **Solution Explorer**, click **Add New Item**, and then click **Application Manifest File**. After you have added your new or existing manifest file, it will appear in the **Manifest** drop down list. For more information, see [Application Page, Project Designer (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp).  
   
  You can provide the application manifest as a custom post-build step or as part of a Win32 resource file by using the [/nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md) option. Use that same option if you want your application to be subject to file or registry virtualization on Windows Vista. This will prevent the compiler from creating and embedding a default manifest in the portable executable (PE) file.  
   
@@ -86,4 +86,4 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [/nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -23,6 +23,6 @@ public class Example
 }
 // The example displays the following output if run on a system whose current
 // culture is en-US:
-//    3.1417
+//    3.1416
 //    8/18/1974
 // </Snippet1>

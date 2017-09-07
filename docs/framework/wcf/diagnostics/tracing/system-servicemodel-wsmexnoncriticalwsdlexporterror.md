@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.WsmexNonCriticalWsdlExportError | Microsoft Docs"
+title: "System.ServiceModel.WsmexNonCriticalWsdlExportError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

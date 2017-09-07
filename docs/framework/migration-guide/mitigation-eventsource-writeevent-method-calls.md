@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: EventSource.WriteEvent Method Calls | Microsoft Docs"
+title: "Mitigation: EventSource.WriteEvent Method Calls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

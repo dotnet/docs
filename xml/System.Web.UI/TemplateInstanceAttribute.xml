@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Web.UI.TemplateInstanceAttribute> class allows you to mark a template property as one that allows single or multiple instantiations. A template that only allows a single instantiation can have the controls that are contained inside of it referenced. The <xref:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate%2A> property is an example of a property that can be instantiated only one time.  
   
- This <xref:System.Web.UI.TemplateInstanceAttribute> class is optional. If a template property is not extended with a <xref:System.Web.UI.TemplateInstanceAttribute> class, the default value, the <xref:System.Web.UI.TemplateInstanceAttribute.Multiple> field, is used. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ This <xref:System.Web.UI.TemplateInstanceAttribute> class is optional. If a template property is not extended with a <xref:System.Web.UI.TemplateInstanceAttribute> class, the default value, the <xref:System.Web.UI.TemplateInstanceAttribute.Multiple> field, is used. For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

@@ -1,5 +1,5 @@
 ---
-title: "SecurityBindingElement Authentication Modes | Microsoft Docs"
+title: "SecurityBindingElement Authentication Modes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

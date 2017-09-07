@@ -1,5 +1,5 @@
 ---
-title: "Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the base class &#39;&lt;classname&gt;&#39; | Microsoft Docs"
+title: "Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the base class &#39;&lt;classname&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -50,5 +50,5 @@ Reference required to assembly '\<assemblyname>' containing the base class '\<cl
   
 ## See Also  
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [Managing references in a project](https://docs.microsoft.com/visualstudio/ide/managing-references-in-a-project)   
- [Troubleshooting Broken References](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
+ [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

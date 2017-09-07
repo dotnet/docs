@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter::RemapToken Method | Microsoft Docs"
+title: "ISymUnmanagedWriter::RemapToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

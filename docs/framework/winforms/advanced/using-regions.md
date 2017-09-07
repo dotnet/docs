@@ -1,5 +1,5 @@
 ---
-title: "Using Regions | Microsoft Docs"
+title: "Using Regions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

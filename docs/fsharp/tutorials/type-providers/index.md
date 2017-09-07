@@ -1,6 +1,6 @@
 ---
-title: Type Providers | Microsoft Docs
-description: Type Providers
+title: Type Providers
+description: Learn how an F# type provider is a component that provides types, properties, and methods for use in your programs.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

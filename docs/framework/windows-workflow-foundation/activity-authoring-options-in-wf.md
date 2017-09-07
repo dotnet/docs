@@ -1,5 +1,5 @@
 ---
-title: "Activity Authoring Options in WF | Microsoft Docs"
+title: "Activity Authoring Options in WF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

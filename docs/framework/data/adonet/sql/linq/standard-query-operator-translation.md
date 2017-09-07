@@ -1,5 +1,5 @@
 ---
-title: "Standard Query Operator Translation | Microsoft Docs"
+title: "Standard Query Operator Translation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

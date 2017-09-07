@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess::EnumerateObjects Method | Microsoft Docs"
+title: "ICorDebugProcess::EnumerateObjects Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

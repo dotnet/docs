@@ -206,7 +206,7 @@
 ## Remarks  
  Enumerators only enable reading the data in the collection. You cannot use enumerators to modify the underlying collection.  
   
- To begin, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A>raises an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ To begin, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> raises an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
   
  <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
   

@@ -563,7 +563,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.ServiceModel.EndpointAddress address1, System.ServiceModel.EndpointAddress address2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.ServiceModel.EndpointAddress address1, System.ServiceModel.EndpointAddress address2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.ServiceModel.EndpointAddress address1, class System.ServiceModel.EndpointAddress address2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.op_Equality(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointAddress)" />
       <MemberType>Method</MemberType>
@@ -586,7 +586,7 @@
         <returns>
           <see langword="true" /> if the endpoint addresses are equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ServiceModel.EndpointAddress.Equals%28System.ServiceModel.EndpointAddress%2CSystem.ServiceModel.EndpointAddress%29?displayProperty=fullName>  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ServiceModel.EndpointAddress.Equals%2A?displayProperty=fullName>.  
   
 ## Examples  
  [!code-csharp[EndpointAddress#5](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#5)]  
@@ -596,7 +596,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ServiceModel.EndpointAddress address1, System.ServiceModel.EndpointAddress address2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.ServiceModel.EndpointAddress address1, System.ServiceModel.EndpointAddress address2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.ServiceModel.EndpointAddress address1, class System.ServiceModel.EndpointAddress address2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress.op_Inequality(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointAddress)" />
       <MemberType>Method</MemberType>
@@ -619,7 +619,7 @@
         <returns>
           <see langword="true" /> if the endpoint addresses are not equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ServiceModel.EndpointAddress.Compare%28System.ServiceModel.EndpointAddress%2CSystem.ServiceModel.EndpointAddress%29?displayProperty=fullName>  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ServiceModel.EndpointAddress.Equals%2A?displayProperty=fullName>.  
   
 ## Examples  
  [!code-csharp[EndpointAddress#22](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddress/cs/snippets.cs#22)]  

@@ -1,5 +1,5 @@
 ---
-title: "Synchronous Client Socket Example | Microsoft Docs"
+title: "Synchronous Client Socket Example"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -91,7 +91,7 @@ public class SynchronousSocketClient {
         try {  
             // Establish the remote endpoint for the socket.  
             // This example uses port 11000 on the local computer.  
-            IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName())  
+            IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());  
             IPAddress ipAddress = ipHostInfo.AddressList[0];  
             IPEndPoint remoteEP = new IPEndPoint(ipAddress,11000);  
   

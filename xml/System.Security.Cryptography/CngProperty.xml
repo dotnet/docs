@@ -263,7 +263,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.Cryptography.CngProperty left, System.Security.Cryptography.CngProperty right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Cryptography.CngProperty left, System.Security.Cryptography.CngProperty right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Security.Cryptography.CngProperty left, valuetype System.Security.Cryptography.CngProperty right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProperty.op_Equality(System.Security.Cryptography.CngProperty,System.Security.Cryptography.CngProperty)" />
       <MemberType>Method</MemberType>
@@ -300,12 +300,12 @@
 ## Remarks  
  <xref:System.Security.Cryptography.CngProperty> objects are considered equal if their names, values, and options are equivalent. Name comparison is performed in a case-sensitive manner.  
   
- The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Equals%28System.Security.Cryptography.CngProperty%2CSystem.Security.Cryptography.CngProperty%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Equals%28System.Security.Cryptography.CngProperty%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.Cryptography.CngProperty left, System.Security.Cryptography.CngProperty right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Cryptography.CngProperty left, System.Security.Cryptography.CngProperty right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Security.Cryptography.CngProperty left, valuetype System.Security.Cryptography.CngProperty right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngProperty.op_Inequality(System.Security.Cryptography.CngProperty,System.Security.Cryptography.CngProperty)" />
       <MemberType>Method</MemberType>
@@ -342,7 +342,7 @@
 ## Remarks  
  <xref:System.Security.Cryptography.CngProperty> objects are considered equal if their names, values, and options are equivalent. Name comparison is performed in a case-sensitive manner.  
   
- The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Compare%28System.Security.Cryptography.CngProperty%2CSystem.Security.Cryptography.CngProperty%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Equals%28System.Security.Cryptography.CngProperty%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

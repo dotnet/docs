@@ -1,5 +1,5 @@
 ---
-title: "How to: Publish Metadata for a Service Using Code | Microsoft Docs"
+title: "How to: Publish Metadata for a Service Using Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

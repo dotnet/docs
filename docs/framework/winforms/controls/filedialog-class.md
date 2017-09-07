@@ -1,5 +1,5 @@
 ---
-title: "FileDialog Class | Microsoft Docs"
+title: "FileDialog Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

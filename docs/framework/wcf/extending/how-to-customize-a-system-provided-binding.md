@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize a System-Provided Binding | Microsoft Docs"
+title: "How to: Customize a System-Provided Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

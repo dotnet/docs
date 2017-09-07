@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Channel Factory and Use it to Create and Manage Channels | Microsoft Docs"
+title: "How to: Create a Channel Factory and Use it to Create and Manage Channels"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

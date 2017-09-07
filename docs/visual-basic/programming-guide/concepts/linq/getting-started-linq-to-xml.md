@@ -1,5 +1,5 @@
 ---
-title: "Getting Started (LINQ to XML) | Microsoft Docs"
+title: "Getting Started (LINQ to XML)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

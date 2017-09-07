@@ -92,7 +92,7 @@
  It is to your advantage to use the type-specific implementation of the <xref:System.Collections.Generic.List%601> class instead of using the <xref:System.Collections.ArrayList> class or writing a strongly typed wrapper collection yourself. The reason is your implementation must do what the .NET Framework does for you already, and the common language runtime can share Microsoft intermediate language code and metadata, which your implementation cannot.  
   
 ## F# Considerations  
- The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](http://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the<xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
+ The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](http://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the <xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
   
    
   
@@ -881,7 +881,7 @@
    
   
 ## Examples  
- The following example defines a method named `PointFToPoint` that converts a <xref:System.Drawing.PointF> structure to a <xref:System.Drawing.Point> structure. The example then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Drawing.PointF> structures, creates a `Converter\<PointF, Point>` delegate (`Converter(Of PointF, Point)` in Visual Basic) to represent the `PointFToPoint` method, and passes the delegate to the <xref:System.Collections.Generic.List%601.ConvertAll%2A> method. The <xref:System.Collections.Generic.List%601.ConvertAll%2A> method passes each element of the input list to the `PointFToPoint` method and puts the converted elements into a new list of <xref:System.Drawing.Point> structures. Both lists are displayed.  
+ The following example defines a method named `PointFToPoint` that converts a <xref:System.Drawing.PointF> structure to a <xref:System.Drawing.Point> structure. The example then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Drawing.PointF> structures, creates a `Converter\<PointF, Point>` delegate (`Converter(Of PointF, Point)` in Visual Basic) to represent the `PointFToPoint` method, and passes the delegate to the <xref:System.Collections.Generic.List`1.ConvertAll``1*> method. The <xref:System.Collections.Generic.List`1.ConvertAll``1*> method passes each element of the input list to the `PointFToPoint` method and puts the converted elements into a new list of <xref:System.Drawing.Point> structures. Both lists are displayed.  
   
  [!code-cpp[List\`1_ConvertAll#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_ConvertAll/cpp/source.cpp#1)]
  [!code-csharp[List\`1_ConvertAll#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_ConvertAll/cs/source.cs#1)]
@@ -1180,7 +1180,7 @@
    
   
 ## Examples  
- The following example demonstrates the <xref:System.Collections.Generic.List%601.Contains%2A> and <xref:System.Collections.Generic.List%601.Exists%2A>methods on a <xref:System.Collections.Generic.List%601> that contains a simple business object that implements <xref:System.IEquatable%601.Equals%2A>.  
+ The following example demonstrates the <xref:System.Collections.Generic.List%601.Contains%2A> and <xref:System.Collections.Generic.List%601.Exists%2A> methods on a <xref:System.Collections.Generic.List%601> that contains a simple business object that implements <xref:System.IEquatable%601.Equals%2A>.  
   
  [!code-csharp[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/vb/module1.vb#1)]  
@@ -2929,7 +2929,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Overloaded method syntax  
  The  <xref:System.Collections.Generic.List%601.Sort%2A> methods enable you to sort with the default comparer for the object type in the list, or specify a customer sort method.  
   
- [List\<T>.Sort()](xref:System.Collections.Generic.List%601.Sort%28%29)
+ [List\<T>.Sort()](xref:System.Collections.Generic.List`1.Sort*)
  Sorts the elements in the entire list using the default comparer of the object type held in the list.  
   
  [List\<T>.Sort M(Comparison\<T> comparison)](xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29)

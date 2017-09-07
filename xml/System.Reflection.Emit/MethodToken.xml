@@ -108,7 +108,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Emit.MethodToken a, System.Reflection.Emit.MethodToken b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Emit.MethodToken a, System.Reflection.Emit.MethodToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Emit.MethodToken a, valuetype System.Reflection.Emit.MethodToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodToken.op_Equality(System.Reflection.Emit.MethodToken,System.Reflection.Emit.MethodToken)" />
       <MemberType>Method</MemberType>
@@ -131,12 +131,12 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.MethodToken.Equals%28System.Reflection.Emit.MethodToken%2CSystem.Reflection.Emit.MethodToken%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.MethodToken.Equals%28System.Reflection.Emit.MethodToken%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.MethodToken a, System.Reflection.Emit.MethodToken b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Emit.MethodToken a, System.Reflection.Emit.MethodToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.MethodToken a, valuetype System.Reflection.Emit.MethodToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodToken.op_Inequality(System.Reflection.Emit.MethodToken,System.Reflection.Emit.MethodToken)" />
       <MemberType>Method</MemberType>
@@ -159,7 +159,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.MethodToken.Compare%28System.Reflection.Emit.MethodToken%2CSystem.Reflection.Emit.MethodToken%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.MethodToken.Equals%28System.Reflection.Emit.MethodToken%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

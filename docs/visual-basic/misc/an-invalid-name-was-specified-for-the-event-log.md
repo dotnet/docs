@@ -1,5 +1,5 @@
 ---
-title: "An invalid name was specified for the event log | Microsoft Docs"
+title: "An invalid name was specified for the event log"
 
 ms.date: "2015-07-20"
 ms.prod: .net

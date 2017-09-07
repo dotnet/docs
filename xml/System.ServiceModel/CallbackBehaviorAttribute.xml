@@ -227,7 +227,7 @@
  Set <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` to enable exception information to flow back to services for debugging purposes when possible. This is a development-only feature and should not be employed in deployed services. These faults appear to the calling service as <xref:System.ServiceModel.FaultException> objects.  
   
 > [!IMPORTANT]
->  Setting <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A>to `true` enables services to obtain information about internal client callback exceptions; it is only recommended as a way of temporarily debugging a duplex client application.  
+>  Setting <xref:System.ServiceModel.CallbackBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` enables services to obtain information about internal client callback exceptions; it is only recommended as a way of temporarily debugging a duplex client application.  
   
    
   

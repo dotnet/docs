@@ -1,5 +1,5 @@
 ---
-title: "Extended Protection Policy | Microsoft Docs"
+title: "Extended Protection Policy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Deferred versus Immediate Loading | Microsoft Docs"
+title: "Deferred versus Immediate Loading"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

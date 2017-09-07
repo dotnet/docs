@@ -1,5 +1,5 @@
 ---
-title: "CorRegFlags Enumeration | Microsoft Docs"
+title: "CorRegFlags Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -67,7 +67,7 @@
   
  Note, however, that although the <xref:System.ArraySegment%601> structure can be used to divide an array into distinct segments, the segments are not completely independent of one another. The <xref:System.ArraySegment%601.Array%2A> property returns the entire original array, not a copy of the array; therefore, changes made to the array returned by the <xref:System.ArraySegment%601.Array%2A> property are made to the original array. If this is undesirable, you should perform operations on a copy of the array, rather than an <xref:System.ArraySegment%601> object that represents a portion of the array.  
   
- The<xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
+ The <xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
   
 -   Reference the same array.  
   
@@ -591,7 +591,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ArraySegment`1&lt;!T&gt; a, valuetype System.ArraySegment`1&lt;!T&gt; b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})" />
       <MemberType>Method</MemberType>
@@ -642,7 +642,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static ArraySegment&lt;T&gt; op_Implicit (T[] array);" />
+      <MemberSignature Language="C#" Value="public static implicit operator ArraySegment&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ArraySegment`1&lt;!T&gt; op_Implicit(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Implicit(`0[])~System.ArraySegment{`0}" />
       <MemberType>Method</MemberType>
@@ -664,7 +664,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ArraySegment`1&lt;!T&gt; a, valuetype System.ArraySegment`1&lt;!T&gt; b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})" />
       <MemberType>Method</MemberType>

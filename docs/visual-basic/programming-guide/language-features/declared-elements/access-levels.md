@@ -1,5 +1,5 @@
 ---
-title: "Access Levels in Visual Basic | Microsoft Docs"
+title: "Access Levels in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -73,13 +73,13 @@ Friend stringForThisProject As String
  You can use `Friend` only at module, interface, or namespace level. This means you can declare a friend element at the level of a source file or namespace, or inside an interface, module, class, or structure, but not in a procedure.  
   
 ## Protected Friend  
- The `Protected` and `Friend` keywords together in the declaration statement specify that the elements can be accessed either from derived classes or from within the same assembly, or both. The following code shows a sample `Protected``Friend` declaration.  
+ The `Protected` and `Friend` keywords together in the declaration statement specify that the elements can be accessed either from derived classes or from within the same assembly, or both. The following code shows a sample `Protected Friend` declaration.  
   
 ```  
 Protected Friend stringForProjectAndHeirs As String  
 ```  
   
- You can use `Protected``Friend` only at class level, and only when you declare a member of a class. This means you can declare a protected friend element in a class, but not at the level of a source file or namespace, or inside an interface, module, structure, or procedure.  
+ You can use `Protected Friend` only at class level, and only when you declare a member of a class. This means you can declare a protected friend element in a class, but not at the level of a source file or namespace, or inside an interface, module, structure, or procedure.  
   
 ## Private  
  The [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword in the declaration statement specifies that the elements can be accessed only from within the same module, class, or structure. The following code shows a sample `Private` declaration.  

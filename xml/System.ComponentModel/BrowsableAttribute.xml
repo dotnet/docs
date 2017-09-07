@@ -36,7 +36,7 @@
 > [!NOTE]
 >  When you mark a property with `Browsable(true)`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BrowsableAttribute.Yes>. For a property marked with `Browsable(false)`, the value is <xref:System.ComponentModel.BrowsableAttribute.No>. Therefore, when you check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BrowsableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BrowsableAttribute.No?displayProperty=fullName>.  
   
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

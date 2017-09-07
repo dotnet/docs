@@ -1,0 +1,55 @@
+<Type Name="PropertyReleaseMode" FullName="System.EnterpriseServices.PropertyReleaseMode">
+  <TypeSignature Language="C#" Value="public enum PropertyReleaseMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PropertyReleaseMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.PropertyReleaseMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the release mode for the properties in the new shared property group.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Process">
+      <MemberSignature Language="C#" Value="Process" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.PropertyReleaseMode Process = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyReleaseMode.Process" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.PropertyReleaseMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property group is not destroyed until the process in which it was created has terminated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Standard">
+      <MemberSignature Language="C#" Value="Standard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.PropertyReleaseMode Standard = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyReleaseMode.Standard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.PropertyReleaseMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When all clients have released their references on the property group, the property group is automatically destroyed. This is the default COM mode.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

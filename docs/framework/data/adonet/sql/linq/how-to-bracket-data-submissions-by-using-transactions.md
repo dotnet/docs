@@ -1,5 +1,5 @@
 ---
-title: "How to: Bracket Data Submissions by Using Transactions | Microsoft Docs"
+title: "How to: Bracket Data Submissions by Using Transactions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

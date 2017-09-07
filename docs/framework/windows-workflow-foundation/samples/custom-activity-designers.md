@@ -1,5 +1,5 @@
 ---
-title: "Custom Activity Designers | Microsoft Docs"
+title: "Custom Activity Designers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

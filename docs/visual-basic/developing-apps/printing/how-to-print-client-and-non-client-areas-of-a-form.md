@@ -1,5 +1,5 @@
 ---
-title: "How to: Print Client and Non-Client Areas of a Form (Visual Basic) | Microsoft Docs"
+title: "How to: Print Client and Non-Client Areas of a Form (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

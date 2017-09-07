@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Multiple Transforms to an Object | Microsoft Docs"
+title: "How to: Apply Multiple Transforms to an Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,7 +26,7 @@ This example shows how to use a              <xref:System.Windows.Media.Transfor
 ## Example  
  The following example uses a                      <xref:System.Windows.Media.TransformGroup> to apply a                      <xref:System.Windows.Media.ScaleTransform> and a                      <xref:System.Windows.Media.RotateTransform> to a                      <xref:System.Windows.Controls.Button>.  
   
- [!code-xml[Transforms_snip#MultipleTransformExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/MultipleTransformExample.xaml#multipletransformexamplewholepage)]  
+ [!code-xaml[Transforms_snip#MultipleTransformExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/MultipleTransformExample.xaml#multipletransformexamplewholepage)]  
   
  [!code-csharp[Transforms_Procedural_snip#MultipleTransformsCodeExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_Procedural_snip/CSharp/MultipleTransformsExample.cs#multipletransformscodeexamplewholepage)]
  [!code-vb[Transforms_Procedural_snip#MultipleTransformsCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Transforms_Procedural_snip/VisualBasic/MultipleTransformsExample.vb#multipletransformscodeexamplewholepage)]  

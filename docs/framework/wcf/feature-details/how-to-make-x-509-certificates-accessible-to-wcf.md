@@ -1,5 +1,5 @@
 ---
-title: "How to: Make X.509 Certificates Accessible to WCF | Microsoft Docs"
+title: "How to: Make X.509 Certificates Accessible to WCF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

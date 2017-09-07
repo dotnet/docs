@@ -1,5 +1,5 @@
 ---
-title: "Designing and Implementing Custom Activities | Microsoft Docs"
+title: "Designing and Implementing Custom Activities"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

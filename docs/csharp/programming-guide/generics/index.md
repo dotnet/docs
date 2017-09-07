@@ -1,5 +1,5 @@
 ---
-title: "Generics (C# Programming Guide) | Microsoft Docs"
+title: "Generics (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -72,8 +72,6 @@ Generics were added to version 2.0 of the C# language and the common language ru
   
 -   [Generic Delegates](../../../csharp/programming-guide/generics/generic-delegates.md)  
   
--   [default Keyword](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md)  
-  
 -   [Differences Between C++ Templates and C# Generics](../../../csharp/programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md)  
   
 -   [Generics and Reflection](../../../csharp/programming-guide/generics/generics-and-reflection.md)  
@@ -83,7 +81,7 @@ Generics were added to version 2.0 of the C# language and the common language ru
 -   [Generics in the .NET Framework Class Library](../../../csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md)  
   
 ## C# Language Specification  
- For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification.md).  
+ For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
 ## See Also  
  <xref:System.Collections.Generic>   

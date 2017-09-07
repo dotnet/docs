@@ -1,19 +1,22 @@
 ---
-title: Building .NET Core Docker Images | Microsoft Docs
+title: Building .NET Core Docker Images
 description: Understanding Docker images and .NET Core
 keywords: .NET, .NET Core, Docker
 author: spboyer
 ms.author: shboyer
-ms.date: 08/29/2016
+ms.date: 09/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 ---
- 
 
 #Building Docker Images for .NET Core Applications
+
+ 
+> [!IMPORTANT]
+> We are in the process of updating this article for .NET Core 2.0. The following instructions are out of date. We sincerely apologize for any inconvenience!
 
 In order to get an understanding of how to use .NET Core and Docker together, we must first get to know the different Docker images that are offered and when is the right use case for them. Here we will walk through the variations offered, build an ASP.NET Core Web API, use the Yeoman Docker tools to create a debuggable container as well as peek at how Visual Studio Code can assist in the process. 
 
@@ -47,7 +50,7 @@ In addition to the optimized scenarios of development, build and production, we 
 
 - `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:1.0.0-preview2-onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
 
-- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom CoreFX or CoreCLR builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
+- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom CoreFX or CoreCLR builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
 
 Latest versions of each variant:
 
@@ -57,7 +60,7 @@ Latest versions of each variant:
 - `microsoft/dotnet:core-deps`
 
 Here is a list of the images after a `docker pull <imagename>` on a development machine to show the various sizes. Notice, the development/build variant, `microsoft/dotnet:1.0.0-preview2-sdk` is larger as it contains the SDK to develop and build your application. The production variant, `microsoft/dotnet:core` is smaller, as it only contains the .NET Core runtime. 
-The minimal image capable of being used on Linux, `core-deps`, is quite smaller, however your application will need to copy a private copy of the .NET Runtime with it. Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers. 
+The minimal image capable of being used on Linux, `core-deps`, is quite smaller, however your application will need to copy a private copy of the .NET runtime with it. Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers. 
 
 ```
 REPOSITORY          TAG                     IMAGE ID            SIZE
@@ -76,7 +79,8 @@ microsoft/dotnet    1.0.0-core              b8da4a1fd280        253.2 MB
 To build and run, you'll need a few things installed:
 
 - [.NET Core](http://dot.net)
-- [Docker](https://www.docker.com/products/docker) to run your Docker containers locally 
+- [Docker](https://www.docker.com/products/docker) to run your Docker containers locally
+- [Node.js](https://nodejs.org/)
 - [Yeoman generator for ASP.NET](https://github.com/omnisharp/generator-aspnet) for creating the Web API application
 - [Yeoman generator for Docker](http://aka.ms/yodocker) from Microsoft
 

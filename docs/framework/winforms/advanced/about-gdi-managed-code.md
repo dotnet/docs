@@ -1,5 +1,5 @@
 ---
-title: "About GDI+ Managed Code | Microsoft Docs"
+title: "About GDI+ Managed Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

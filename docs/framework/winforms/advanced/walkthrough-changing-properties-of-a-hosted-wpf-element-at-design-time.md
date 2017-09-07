@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Changing Properties of a Hosted WPF Element at Design Time | Microsoft Docs"
+title: "Walkthrough: Changing Properties of a Hosted WPF Element at Design Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

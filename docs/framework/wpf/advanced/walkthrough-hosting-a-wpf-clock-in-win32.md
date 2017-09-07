@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting a WPF Clock in Win32 | Microsoft Docs"
+title: "Walkthrough: Hosting a WPF Clock in Win32"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -219,7 +219,7 @@ HWND clock = ManagedCode::GetHwnd(hDlg, point.x, point.y, width, height);
   
  Here is the markup:  
   
- [!code-xml[Win32Clock#AllClockXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Win32Clock/CS/Clock.xaml#allclockxaml)]  
+ [!code-xaml[Win32Clock#AllClockXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Win32Clock/CS/Clock.xaml#allclockxaml)]  
   
  And here is the accompanying code-behind:  
   

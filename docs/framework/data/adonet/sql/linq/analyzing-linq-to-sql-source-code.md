@@ -1,5 +1,5 @@
 ---
-title: "Analyzing LINQ to SQL Source Code | Microsoft Docs"
+title: "Analyzing LINQ to SQL Source Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides augmented reflection data to support convention-based models.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +29,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Composition.Convention.AttributedModelProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a protected constructor that can only be called from derived classes.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -50,11 +58,12 @@
         <Parameter Name="member" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="member">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type.</param>
+        <param name="member">The member to inspect.</param>
+        <summary>Provides the list of attributes applied to the specified member of the specified type.</summary>
+        <returns>A collection of the attributes applied to the specified member.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -75,11 +84,12 @@
         <Parameter Name="parameter" Type="System.Reflection.ParameterInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type.</param>
+        <param name="parameter">The parameter to inspect.</param>
+        <summary>Provides the list of attributes applied to the specified parameter of the specified type.</summary>
+        <returns>A collection of the attributes applied to the specified parameter.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

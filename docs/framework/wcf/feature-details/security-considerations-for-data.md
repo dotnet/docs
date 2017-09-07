@@ -1,5 +1,5 @@
 ---
-title: "Security Considerations for Data | Microsoft Docs"
+title: "Security Considerations for Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

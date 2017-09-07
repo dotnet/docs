@@ -211,7 +211,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.ComponentModel.Design.Serialization.MemberRelationship left, System.ComponentModel.Design.Serialization.MemberRelationship right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.ComponentModel.Design.Serialization.MemberRelationship left, System.ComponentModel.Design.Serialization.MemberRelationship right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ComponentModel.Design.Serialization.MemberRelationship left, valuetype System.ComponentModel.Design.Serialization.MemberRelationship right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationship.op_Equality(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberType>Method</MemberType>
@@ -241,12 +241,12 @@
         <summary>Tests whether two specified <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are equivalent.</summary>
         <returns>This operator returns <see langword="true" /> if the two <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Equals%28System.ComponentModel.Design.Serialization.MemberRelationship%2CSystem.ComponentModel.Design.Serialization.MemberRelationship%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ComponentModel.Design.Serialization.MemberRelationship left, System.ComponentModel.Design.Serialization.MemberRelationship right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.ComponentModel.Design.Serialization.MemberRelationship left, System.ComponentModel.Design.Serialization.MemberRelationship right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ComponentModel.Design.Serialization.MemberRelationship left, valuetype System.ComponentModel.Design.Serialization.MemberRelationship right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationship.op_Inequality(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberType>Method</MemberType>
@@ -276,7 +276,7 @@
         <summary>Tests whether two specified <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are different.</summary>
         <returns>This operator returns <see langword="true" /> if the two <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are different; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Compare%28System.ComponentModel.Design.Serialization.MemberRelationship%2CSystem.ComponentModel.Design.Serialization.MemberRelationship%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

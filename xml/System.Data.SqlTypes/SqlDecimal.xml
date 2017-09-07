@@ -324,7 +324,6 @@
         <summary>Calculates the sum of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operators.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the sum.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Add%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -652,7 +651,6 @@
         <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Divide%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1223,7 +1221,6 @@
         <summary>The multiplication operator computes the product of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecim%2A> al.Multiply(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1302,7 +1299,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Addition (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal operator + (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Addition(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Addition(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -1336,12 +1333,12 @@
         <summary>Calculates the sum of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operators.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the sum.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Syste%2A> m.Data.SqlTypes.SqlDecimal.Add(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Add(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Division (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal operator / (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Division(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Division(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -1375,12 +1372,12 @@
         <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Sy%2A> stem.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Equality (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator == (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Equality(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Equality(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -1414,12 +1411,12 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operands to determine whether they are equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Equals%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Equals%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlBoolean x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1454,7 +1451,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Data.SqlTypes.SqlDecimal x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator decimal (System.Data.SqlTypes.SqlDecimal x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -1489,7 +1486,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlDouble x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlDouble x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1524,7 +1521,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlSingle x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlSingle x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1559,7 +1556,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (System.Data.SqlTypes.SqlString x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlString x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1594,7 +1591,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Explicit (double x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlDecimal (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Explicit(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Explicit(System.Double)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1629,7 +1626,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt; (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_GreaterThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -1663,12 +1660,12 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structures to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThan%2A> .SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt;= (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -1702,12 +1699,12 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlByte x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlByte x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1742,7 +1739,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt16 x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlInt16 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1777,7 +1774,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt32 x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlInt32 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1812,7 +1809,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlInt64 x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1847,7 +1844,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (System.Data.SqlTypes.SqlMoney x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDecimal (System.Data.SqlTypes.SqlMoney x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1882,7 +1879,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (decimal x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDecimal (decimal x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(valuetype System.Decimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Decimal)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1917,7 +1914,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Implicit (long x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDecimal (long x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Implicit(int64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Implicit(System.Int64)~System.Data.SqlTypes.SqlDecimal" />
       <MemberType>Method</MemberType>
@@ -1952,7 +1949,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator != (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Inequality(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -1986,12 +1983,12 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThan (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt; (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_LessThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -2025,12 +2022,12 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structures to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThan%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThan%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt;= (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_LessThanOrEqual(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -2064,12 +2061,12 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Multiply (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal operator * (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Multiply(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Multiply(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -2103,12 +2100,12 @@
         <summary>The multiplication operator computes the product of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Multiply%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Multiply%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_Subtraction (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal operator - (System.Data.SqlTypes.SqlDecimal x, System.Data.SqlTypes.SqlDecimal y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_Subtraction(valuetype System.Data.SqlTypes.SqlDecimal x, valuetype System.Data.SqlTypes.SqlDecimal y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_Subtraction(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>
@@ -2142,12 +2139,12 @@
         <summary>Calculates the results of subtracting the second <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand from the first.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose Value property contains the results of the subtraction.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Subtract%2A> )?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Subtract(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal op_UnaryNegation (System.Data.SqlTypes.SqlDecimal x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDecimal operator - (System.Data.SqlTypes.SqlDecimal x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDecimal op_UnaryNegation(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDecimal.op_UnaryNegation(System.Data.SqlTypes.SqlDecimal)" />
       <MemberType>Method</MemberType>

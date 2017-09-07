@@ -1,5 +1,5 @@
 ---
-title: "Splitter Control (Windows Forms) | Microsoft Docs"
+title: "Splitter Control (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

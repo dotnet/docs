@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a 3-D Scene | Microsoft Docs"
+title: "How to: Create a 3-D Scene"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -33,7 +33,7 @@ This example shows how to create a 3-D object that looks like a flat sheet of pa
 ## Example  
  The code below shows how to create a 3-D scene in XAML.  
   
- [!code-xml[3DGallery_snip#Basic3DShapeExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/Basic3DShapeExample.xaml#basic3dshapeexamplewholepage)]  
+ [!code-xaml[3DGallery_snip#Basic3DShapeExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/Basic3DShapeExample.xaml#basic3dshapeexamplewholepage)]  
   
 ## Example  
  The code below shows how to create the same 3-D scene in procedural code.  

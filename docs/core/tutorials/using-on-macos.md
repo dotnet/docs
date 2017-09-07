@@ -1,11 +1,11 @@
 ---
-title: Getting started with .NET Core on macOS | Microsoft Docs
+title: Getting started with .NET Core on macOS
 description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
 keywords: .NET, .NET Core, Mac, macOS, Visual Studio Code
 author: bleroy
 ms.author: mairaw
 ms.date: 03/23/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b

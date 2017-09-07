@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess5::GetObject Method | Microsoft Docs"
+title: "ICorDebugProcess5::GetObject Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

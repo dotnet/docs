@@ -1,5 +1,5 @@
 ---
-title: "Load From XAML | Microsoft Docs"
+title: "Load From XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

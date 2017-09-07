@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams | Microsoft Docs"
+title: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,22 +1,20 @@
 ---
-title: dotnet-nuget-push command - .NET Core CLI | Microsoft Docs
-description: The dotnet-nuget-push command pushes a package to the server and publishes it. 
-keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
+title: dotnet nuget push command - .NET Core CLI
+description: The dotnet nuget push command pushes a package to the server and publishes it. 
 author: karann-msft
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 ---
+# dotnet nuget push
 
-# dotnet-nuget push
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-nuget push` - Pushes a package to the server and publishes it.
+`dotnet nuget push` - Pushes a package to the server and publishes it.
 
 ## Synopsis
 
@@ -24,7 +22,7 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 
 ## Description
 
-The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
+The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
 
 ## Arguments
 
@@ -36,7 +34,7 @@ Specify the path to the package and your API key to push the package to the serv
 
 `-h|--help`
 
-Prints out a short help for the command.  
+Prints out a short help for the command.
 
 `-s|--source <SOURCE>`
 
@@ -78,11 +76,11 @@ Pushes *foo.nupkg* to the default push source, providing an API key:
 
 Push *foo.nupkg* to the custom push source `http://customsource`, providing an API key:
 
-`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s http://customsource/` 
+`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s http://customsource/`
 
 Pushes *foo.nupkg* to the default push source:
 
-`dotnet nuget push foo.nupkg` 
+`dotnet nuget push foo.nupkg`
 
 Pushes *foo.symbols.nupkg* to the default symbols source:
 

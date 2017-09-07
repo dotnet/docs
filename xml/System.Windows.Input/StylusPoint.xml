@@ -436,7 +436,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Input.StylusPoint stylusPoint1, System.Windows.Input.StylusPoint stylusPoint2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Input.StylusPoint stylusPoint1, System.Windows.Input.StylusPoint stylusPoint2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Input.StylusPoint stylusPoint1, valuetype System.Windows.Input.StylusPoint stylusPoint2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPoint.op_Equality(System.Windows.Input.StylusPoint,System.Windows.Input.StylusPoint)" />
       <MemberType>Method</MemberType>
@@ -473,7 +473,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Explicit (System.Windows.Input.StylusPoint stylusPoint);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Point (System.Windows.Input.StylusPoint stylusPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Explicit(valuetype System.Windows.Input.StylusPoint stylusPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPoint.op_Explicit(System.Windows.Input.StylusPoint)~System.Windows.Point" />
       <MemberType>Method</MemberType>
@@ -492,18 +492,17 @@
         <summary>Casts the specified <see cref="T:System.Windows.Input.StylusPoint" /> to a <see cref="T:System.Windows.Point" />.</summary>
         <returns>A <see cref="T:System.Windows.Point" /> that contains the same (x,y) coordinates as <paramref name="stylusPoint" />. </returns>
         <remarks>
-           <format type="text/markdown"><![CDATA[The following example demonstrates how to cast a <xref:System.Windows.Input.StylusPoint> to a <xref:System.Windows.Point> object to draw a circle at the beginning of every stroke. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> object called `inkcanvas1` and that the <xref:System.Windows.UIElement.StylusDown> event is connected to the event handler in the example.
+          <format type="text/markdown"><![CDATA[The following example demonstrates how to cast a <xref:System.Windows.Input.StylusPoint> to a <xref:System.Windows.Point> object to draw a circle at the beginning of every stroke. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> object called `inkcanvas1` and that the <xref:System.Windows.UIElement.StylusDown> event is connected to the event handler in the example.
 
            [!code-csharp[PacketSpy#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#13)]
            [!code-vb[PacketSpy#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#13)]  
 
            ]]></format>
-
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Input.StylusPoint stylusPoint1, System.Windows.Input.StylusPoint stylusPoint2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Input.StylusPoint stylusPoint1, System.Windows.Input.StylusPoint stylusPoint2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Input.StylusPoint stylusPoint1, valuetype System.Windows.Input.StylusPoint stylusPoint2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPoint.op_Inequality(System.Windows.Input.StylusPoint,System.Windows.Input.StylusPoint)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Federation and Issued Tokens | Microsoft Docs"
+title: "Federation and Issued Tokens"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax Examples: Join Operators | Microsoft Docs"
+title: "Query Expression Syntax Examples: Join Operators"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Stop a Page from Loading | Microsoft Docs"
+title: "How to: Stop a Page from Loading"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

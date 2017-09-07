@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Localizing a Hybrid Application | Microsoft Docs"
+title: "Walkthrough: Localizing a Hybrid Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -62,7 +62,7 @@ This walkthrough shows you how to localize              [!INCLUDE[TLA2#tla_wincl
   
 2.  Set the content of the                                  <xref:System.Windows.Controls.Button> control using the following code.  
   
-     [!code-xml[LocalizingWpfInWf#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl0.xaml#10)]  
+     [!code-xaml[LocalizingWpfInWf#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl0.xaml#10)]  
   
 3.  In Solution Explorer, double-click                                  **Form1** to open it in the Windows Forms Designer.  
   
@@ -128,7 +128,7 @@ This walkthrough shows you how to localize              [!INCLUDE[TLA2#tla_wincl
   
 3.  In Solution Explorer, double-click                                  **SimpleControl.xaml** to open it in the Code Editor. You will see that the                                  `msbuild` command has added the                                  `Uid` attribute to all the elements. This facilitates localization through the assignment of resource identifiers.  
   
-     [!code-xml[LocalizingWpfInWf#20](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl.xaml#20)]  
+     [!code-xaml[LocalizingWpfInWf#20](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LocalizingWpfInWf/CSharp/SimpleControl.xaml#20)]  
   
 4.  Press F6 to build the solution.  
   

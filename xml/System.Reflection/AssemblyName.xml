@@ -222,7 +222,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
    
   
 ## Examples  
- The following example creates an instance of <xref:System.Reflection.AssemblyName> from a display name. The individual elements of the display name are output to the console as properties of the <xref:System.Reflection.AssemblyName>object.  
+ The following example creates an instance of <xref:System.Reflection.AssemblyName> from a display name. The individual elements of the display name are output to the console as properties of the <xref:System.Reflection.AssemblyName> object.  
   
  [!code-cpp[AssemblyName_Constructor_2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyName_Constructor_2/CPP/source.cpp#1)]
  [!code-csharp[AssemblyName_Constructor_2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyName_Constructor_2/CS/source.cs#1)]

@@ -242,7 +242,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function without parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -303,7 +303,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function with no parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   

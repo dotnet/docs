@@ -1,5 +1,5 @@
 ---
-title: "ICorConfiguration::SetGCHostControl Method | Microsoft Docs"
+title: "ICorConfiguration::SetGCHostControl Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

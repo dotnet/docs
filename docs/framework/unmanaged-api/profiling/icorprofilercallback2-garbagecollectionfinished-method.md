@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback2::GarbageCollectionFinished Method | Microsoft Docs"
+title: "ICorProfilerCallback2::GarbageCollectionFinished Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

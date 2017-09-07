@@ -40,7 +40,7 @@
    
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value incremented or decremented by the control-specific <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange%2A> value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern> control pattern has its value incremented or decremented by the control-specific <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange%2A> value.  
   
  [!code-csharp[UIARangeValuePattern_snip#103LargeChange](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#103largechange)]
  [!code-vb[UIARangeValuePattern_snip#103LargeChange](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#103largechange)]  
@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value incremented or decremented by the control-specific <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange%2A> value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern> control pattern has its value incremented or decremented by the control-specific <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange%2A> value.  
   
  [!code-csharp[UIARangeValuePattern_snip#103LargeChange](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#103largechange)]
  [!code-vb[UIARangeValuePattern_snip#103LargeChange](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#103largechange)]  
@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value set to the control-specific maximum value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern> control pattern has its value set to the control-specific maximum value.  
   
  [!code-csharp[UIARangeValuePattern_snip#104Maximum](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#104maximum)]
  [!code-vb[UIARangeValuePattern_snip#104Maximum](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#104maximum)]  
@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value set to the control-specific minimum value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern> control pattern has its value set to the control-specific minimum value.  
   
  [!code-csharp[UIARangeValuePattern_snip#104Minimum](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#104minimum)]
  [!code-vb[UIARangeValuePattern_snip#104Minimum](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#104minimum)]  
@@ -168,7 +168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value incremented or decremented by the control-specific <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.SmallChange%2A> value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern> control pattern has its value incremented or decremented by the control-specific <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.SmallChange%2A> value.  
   
  [!code-csharp[UIARangeValuePattern_snip#103SmallChange](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#103smallchange)]
  [!code-vb[UIARangeValuePattern_snip#103SmallChange](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#103smallchange)]  

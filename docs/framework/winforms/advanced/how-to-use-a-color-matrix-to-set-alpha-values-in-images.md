@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Color Matrix to Set Alpha Values in Images | Microsoft Docs"
+title: "How to: Use a Color Matrix to Set Alpha Values in Images"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

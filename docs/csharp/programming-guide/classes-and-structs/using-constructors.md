@@ -1,5 +1,5 @@
 ---
-title: "Using Constructors (C# Programming Guide) | Microsoft Docs"
+title: "Using Constructors (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -105,7 +105,7 @@ Console.WriteLine("{0}, {1}", a, b);
   
  [!code-cs[csProgGuideObjects#60](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_9.cs)]  
   
- Constructors can be marked as [public](../../../csharp/language-reference/keywords/public.md), [private](../../../csharp/language-reference/keywords/private.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or `protected``internal`. These access modifiers define how users of the class can construct the class. For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
+ Constructors can be marked as [public](../../../csharp/language-reference/keywords/public.md), [private](../../../csharp/language-reference/keywords/private.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or `protected internal`. These access modifiers define how users of the class can construct the class. For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
   
  A constructor can be declared static by using the [static](../../../csharp/language-reference/keywords/static.md) keyword. Static constructors are called automatically, immediately before any static fields are accessed, and are generally used to initialize static class members. For more information, see [Static Constructors](../../../csharp/programming-guide/classes-and-structs/static-constructors.md).  
   

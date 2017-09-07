@@ -1,5 +1,5 @@
 ---
-title: "XSLT Transformations Over Different Stores | Microsoft Docs"
+title: "XSLT Transformations Over Different Stores"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

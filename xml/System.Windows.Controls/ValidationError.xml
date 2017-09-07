@@ -35,7 +35,7 @@
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> attached property returns a collection of <xref:System.Windows.Controls.ValidationError> objects on the bound element.  
   
- [!code-xml[DataBindingLab#14](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#14)]  
+ [!code-xaml[DataBindingLab#14](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#14)]  
   
  ]]></format>
     </remarks>
@@ -132,7 +132,7 @@
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> attached property returns a collection of <xref:System.Windows.Controls.ValidationError> objects on the bound element.  
   
- [!code-xml[DataBindingLab#14](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#14)]  
+ [!code-xaml[DataBindingLab#14](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#14)]  
   
  ]]></format>
         </remarks>

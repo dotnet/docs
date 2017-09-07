@@ -119,7 +119,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Transactions.TransactionOptions o1, valuetype System.Transactions.TransactionOptions o2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.op_Equality(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)" />
       <MemberType>Method</MemberType>
@@ -150,12 +150,12 @@
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%28System.Transactions.TransactionOptions%2CSystem.Transactions.TransactionOptions%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Transactions.TransactionOptions o1, System.Transactions.TransactionOptions o2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Transactions.TransactionOptions o1, valuetype System.Transactions.TransactionOptions o2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionOptions.op_Inequality(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)" />
       <MemberType>Method</MemberType>
@@ -186,7 +186,7 @@
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Trans%2A> actions.TransactionOptions.Compare(System.Transactions.TransactionOptions,System.Transactions.TransactionOptions)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.TransactionOptions.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

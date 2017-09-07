@@ -321,7 +321,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Equality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
       <MemberType>Method</MemberType>
@@ -349,12 +349,12 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Inequality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
       <MemberType>Method</MemberType>
@@ -382,7 +382,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are unequal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Compare%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

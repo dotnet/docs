@@ -1,22 +1,20 @@
 ---
-title: dotnet-add reference command - .NET Core CLI | Microsoft Docs
-description: The dotnet-add reference command provides a convenient option to add project to project references.
-keywords: dotnet-add, CLI, CLI command, .NET Core
-author: spboyer
+title: dotnet-add reference command - .NET Core CLI
+description: The dotnet add reference command provides a convenient option to add project to project references.
+author: mairaw
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ---
-
 # dotnet-add reference
+
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-add reference` - Adds project-to-project (P2P) references.
+`dotnet add reference` - Adds project-to-project (P2P) references.
 
 ## Synopsis
 
@@ -24,7 +22,7 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the [`<ProjectReference>`](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items) elements are added to the project file.
+The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the [`<ProjectReference>`](/visualstudio/msbuild/common-msbuild-project-items) elements are added to the project file.
 
 ```xml
 <ItemGroup>

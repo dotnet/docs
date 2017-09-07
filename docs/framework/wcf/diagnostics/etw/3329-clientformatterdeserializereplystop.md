@@ -1,5 +1,5 @@
 ---
-title: "3329 - ClientFormatterDeserializeReplyStop | Microsoft Docs"
+title: "3329 - ClientFormatterDeserializeReplyStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

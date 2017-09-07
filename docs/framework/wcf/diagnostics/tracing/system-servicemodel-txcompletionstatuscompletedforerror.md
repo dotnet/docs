@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.TxCompletionStatusCompletedForError | Microsoft Docs"
+title: "System.ServiceModel.TxCompletionStatusCompletedForError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

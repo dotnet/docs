@@ -1,6 +1,6 @@
 ---
-title: Reducing Package Dependencies with project.json | Microsoft Docs
-description: Reducing Package Dependencies with project.json
+title: Reducing Package Dependencies with project.json
+description: Reduce package dependencies when authoring project.json-based libraries.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
@@ -17,7 +17,7 @@ This article covers what you need to know about reducing your package dependenci
 
 ## Why it's Important
 
-.NET Core is a product made up of NuGet packages.  An essential package is the [.NET Standard Library metapackage](https://www.nuget.org/packages/NETStandard.Library), which is a NuGet package composed of other packages.  It provides you with the set of packages that are guaranteed to work on multiple .NET implementations, such as .NET Framework, .NET Core and Xamarin/Mono.
+.NET Core is a product made up of NuGet packages.  An essential package is the [.NETStandard.Library metapackage](https://www.nuget.org/packages/NETStandard.Library), which is a NuGet package composed of other packages.  It provides you with the set of packages that are guaranteed to work on multiple .NET implementations, such as .NET Framework, .NET Core and Xamarin/Mono.
 
 However, there's a good chance that your library won't use every single package it contains.  When authoring a library and distributing it over NuGet, it's a best practice to "trim" your dependencies down to only the packages you actually use.  This results in a smaller overall footprint for NuGet packages.
 

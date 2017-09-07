@@ -1,5 +1,5 @@
 ---
-title: "Layout | Microsoft Docs"
+title: "Layout"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -48,7 +48,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  This layout can be achieved by using the following [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
- [!code-xml[LayoutInformation#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml#1)]  
+ [!code-xaml[LayoutInformation#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml#1)]  
   
  A single <xref:System.Windows.Controls.TextBlock> element is hosted within a <xref:System.Windows.Controls.Grid>. While the text fills only the upper-left corner of the first column, the allocated space for the <xref:System.Windows.Controls.TextBlock> is actually much larger. The bounding box of any <xref:System.Windows.FrameworkElement> can be retrieved by using the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method. The following illustration shows the bounding box for the <xref:System.Windows.Controls.TextBlock> element.  
   

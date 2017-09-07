@@ -1,5 +1,5 @@
 ---
-title: "XAML and Custom Classes for WPF | Microsoft Docs"
+title: "XAML and Custom Classes for WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -58,9 +58,9 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
 ### TypeConverter Enabled Attribute Syntax  
  If you provide a dedicated, attributed type converter at the class level, the applied type conversion enables attribute syntax for any property that needs to instantiate that type. A type converter does not enable object element usage of the type; only the presence of a default constructor for that type enables object element usage. Therefore, properties that are type-converter enabled are generally speaking not usable in property syntax, unless the type itself also supports object element syntax. The exception to this is that you can specify a property element syntax, but have the property element contain a string. That usage is really essentially equivalent to an attribute syntax usage, and such a usage is not common unless there is a need for more robust whitespace handling of the attribute value. For example, the following is a property element usage that takes a string, and the attribute usage equivalent:  
   
- [!code-xml[XamlOvwSupport#GoofyTCPE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe)]  
+ [!code-xaml[XamlOvwSupport#GoofyTCPE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe)]  
   
- [!code-xml[XamlOvwSupport#GoofyTCPE2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe2)]  
+ [!code-xaml[XamlOvwSupport#GoofyTCPE2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe2)]  
   
  Examples of properties where attribute syntax is allowed but property element syntax that contains an object element is disallowed through XAML are various properties that take the <xref:System.Windows.Input.Cursor> type. The <xref:System.Windows.Input.Cursor> class has a dedicated type converter <xref:System.Windows.Input.CursorConverter>, but does not expose a default constructor, so the <xref:System.Windows.FrameworkElement.Cursor%2A> property can only be set through attribute syntax even though the actual <xref:System.Windows.Input.Cursor> type is a reference type.  
   
@@ -108,7 +108,7 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
   
 <a name="XAMLCONtent"></a>   
 ## Declaring XAML Content Properties  
- The XAML language defines the concept of a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] content property. Each class that is usable in object syntax can have exactly one XAML content property. To declare a property to be the XAML content property for your class, apply the <xref:System.Windows.Markup.ContentPropertyAttribute> as part of the class definition. Specify the name of the intended XAML content property as the <xref:System.Windows.Markup.ContentPropertyAttribute.Name%2A> in the attribute. The property is specified as a string by name, not as a reflection construct such as<xref:System.Reflection.PropertyInfo>.  
+ The XAML language defines the concept of a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] content property. Each class that is usable in object syntax can have exactly one XAML content property. To declare a property to be the XAML content property for your class, apply the <xref:System.Windows.Markup.ContentPropertyAttribute> as part of the class definition. Specify the name of the intended XAML content property as the <xref:System.Windows.Markup.ContentPropertyAttribute.Name%2A> in the attribute. The property is specified as a string by name, not as a reflection construct such as <xref:System.Reflection.PropertyInfo>.  
   
  You can specify a collection property to be the XAML content property. This results in a usage for that property whereby the object element can have one or more child elements, without any intervening collection object elements or property element tags. These elements are then treated as the value for the XAML content property and added to the backing collection instance.  
   

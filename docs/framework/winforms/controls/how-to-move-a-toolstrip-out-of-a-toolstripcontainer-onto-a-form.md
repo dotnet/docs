@@ -1,5 +1,5 @@
 ---
-title: "How to: Move a ToolStrip Out of a ToolStripContainer onto a Form | Microsoft Docs"
+title: "How to: Move a ToolStrip Out of a ToolStripContainer onto a Form"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "No files found matching &#39;&lt;filename&gt;&#39; | Microsoft Docs"
+title: "No files found matching &#39;&lt;filename&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

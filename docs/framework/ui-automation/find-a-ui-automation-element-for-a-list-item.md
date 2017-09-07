@@ -1,5 +1,5 @@
 ---
-title: "Find a UI Automation Element for a List Item | Microsoft Docs"
+title: "Find a UI Automation Element for a List Item"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

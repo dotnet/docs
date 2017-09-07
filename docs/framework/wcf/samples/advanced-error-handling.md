@@ -1,5 +1,5 @@
 ---
-title: "Advanced Error Handling | Microsoft Docs"
+title: "Advanced Error Handling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

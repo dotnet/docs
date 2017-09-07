@@ -1,6 +1,6 @@
 ---
-title: Access Control (F#) | Microsoft Docs
-description: Access Control (F#)
+title: Access Control (F#)
+description: Learn how to control access to programming elements, such as types, methods, and functions, in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

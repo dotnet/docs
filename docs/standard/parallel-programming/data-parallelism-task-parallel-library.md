@@ -1,5 +1,5 @@
 ---
-title: "Data Parallelism (Task Parallel Library) | Microsoft Docs"
+title: "Data Parallelism (Task Parallel Library)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

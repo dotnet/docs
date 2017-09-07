@@ -1,5 +1,5 @@
 ---
-title: "How to: Control Ordering in a PLINQ Query | Microsoft Docs"
+title: "How to: Control Ordering in a PLINQ Query"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

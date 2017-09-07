@@ -1,5 +1,5 @@
 ---
-title: "continue (C# Reference) | Microsoft Docs"
+title: "continue (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -47,5 +47,5 @@ The `continue` statement passes control to the next iteration of the enclosing [
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [break Statement](https://docs.microsoft.com/cpp/cpp/break-statement-cpp)   
+ [break Statement](/cpp/cpp/break-statement-cpp)   
  [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

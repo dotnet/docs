@@ -1,5 +1,5 @@
 ---
-title: "How to: Speed Up Small Loop Bodies | Microsoft Docs"
+title: "How to: Speed Up Small Loop Bodies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

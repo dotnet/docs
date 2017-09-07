@@ -1,5 +1,5 @@
 ---
-title: "How to: Host a non-service workflow in IIS | Microsoft Docs"
+title: "How to: Host a non-service workflow in IIS"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

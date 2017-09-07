@@ -1,5 +1,5 @@
 ---
-title: "Interpreting Error Codes Returned by wsatConfig.exe | Microsoft Docs"
+title: "Interpreting Error Codes Returned by wsatConfig.exe"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

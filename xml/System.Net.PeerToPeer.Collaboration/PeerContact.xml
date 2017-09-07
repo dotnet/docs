@@ -1473,7 +1473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property to <xref:System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed>means the remote peer specified by this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> can see the registered applications, objects and presence information for the user or application that owns the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> in which this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object resides.  
+ Setting this property to <xref:System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed> means the remote peer specified by this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> can see the registered applications, objects and presence information for the user or application that owns the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> in which this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object resides.  
   
  This property has no effect on a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> instance that represents the local or "Me" contact, since a contact is always subscribed to itself.  
   

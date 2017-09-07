@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Web.UI.FilterableAttribute> attribute is applied to a property to specify whether the property supports device filtering. When a property supports device filtering, you can override the value of a property for a specific device by specifying a device filter. By default, properties are filterable, so a control developer could prevent device filtering on a property by setting the <xref:System.Web.UI.FilterableAttribute> attribute to `false`. For more information, see [Customizing for Specific Devices](http://msdn.microsoft.com/en-us/a7f55dfa-290b-45f8-bf8f-d5a4540bae61).  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.FilterableAttribute> class, see the <xref:System.Web.UI.FilterableAttribute.%23ctor%2A> constructor.  
   

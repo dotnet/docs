@@ -1,5 +1,5 @@
 ---
-title: "Client Validation | Microsoft Docs"
+title: "Client Validation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -40,13 +40,13 @@ Services frequently publish metadata to enable automatic generation and configur
   
 ### To run the sample across computers  
   
-1.  On the server, in a Visual Studio command prompt run with administrator privileges, type `setup.bat service`. Running `setup.bat`with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
+1.  On the server, in a Visual Studio command prompt run with administrator privileges, type `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
 2.  On the server, edit App.config to reflect the new certificate name. That is, change the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element to the fully-qualified domain name of the computer.  
   
 3.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
-4.  On the client, open a Visual Studio command prompt with administrator privileges, and type `setup.bat client`. Running `setup.bat`with the `client` argument creates a client certificate named Client.com and exports the client certificate to a file named Client.cer.  
+4.  On the client, open a Visual Studio command prompt with administrator privileges, and type `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named Client.com and exports the client certificate to a file named Client.cer.  
   
 5.  In the client.cs file change the address value of the MEX endpoint and the `findValue` for setting the default server certificate to match the new address of your service. You do this by replacing localhost with the fully-qualified domain name of the server. Rebuild.  
   

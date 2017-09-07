@@ -1,5 +1,5 @@
 ---
-title: "How to: Reference .NET Types from COM | Microsoft Docs"
+title: "How to: Reference .NET Types from COM"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -43,7 +43,7 @@
   
  To use the <xref:System.Diagnostics.DebuggableAttribute> with dynamic assemblies using the Reflection Emit <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> methods, emit the <xref:System.Diagnostics.DebuggableAttribute> before calling the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A> methods to ensure that the settings are applied to the entire assembly.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  ]]></format>
     </remarks>

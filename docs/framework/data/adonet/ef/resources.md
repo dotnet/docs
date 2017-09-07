@@ -1,5 +1,5 @@
 ---
-title: "Entity Framework Resources | Microsoft Docs"
+title: "Entity Framework Resources"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

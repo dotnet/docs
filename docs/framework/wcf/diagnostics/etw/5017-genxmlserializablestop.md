@@ -1,5 +1,5 @@
 ---
-title: "5017 - GenXmlSerializableStop | Microsoft Docs"
+title: "5017 - GenXmlSerializableStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

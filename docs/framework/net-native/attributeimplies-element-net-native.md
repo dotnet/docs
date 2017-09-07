@@ -1,5 +1,5 @@
 ---
-title: "&lt;AttributeImplies&gt; Element (.NET Native) | Microsoft Docs"
+title: "&lt;AttributeImplies&gt; Element (.NET Native)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

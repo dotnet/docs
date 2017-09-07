@@ -350,7 +350,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (ConsoleKeyInfo a, ConsoleKeyInfo b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (ConsoleKeyInfo a, ConsoleKeyInfo b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ConsoleKeyInfo a, valuetype System.ConsoleKeyInfo b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.op_Equality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)" />
       <MemberType>Method</MemberType>
@@ -387,12 +387,12 @@
 ## Remarks  
  Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
   
- The equivalent method for this operator is <xref:System.ConsoleKeyInfo.Equals%28System.ConsoleKeyInfo%2CSystem.ConsoleKeyInfo%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.ConsoleKeyInfo.Equals%28System.ConsoleKeyInfo%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (ConsoleKeyInfo a, ConsoleKeyInfo b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (ConsoleKeyInfo a, ConsoleKeyInfo b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ConsoleKeyInfo a, valuetype System.ConsoleKeyInfo b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ConsoleKeyInfo.op_Inequality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)" />
       <MemberType>Method</MemberType>

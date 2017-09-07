@@ -1,5 +1,5 @@
 ---
-title: "Alpha Blending Lines and Fills | Microsoft Docs"
+title: "Alpha Blending Lines and Fills"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

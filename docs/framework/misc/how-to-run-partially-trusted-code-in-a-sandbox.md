@@ -1,5 +1,5 @@
 ---
-title: "How to: Run Partially Trusted Code in a Sandbox | Microsoft Docs"
+title: "How to: Run Partially Trusted Code in a Sandbox"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -121,7 +121,7 @@ AppDomain.CreateDomain( string friendlyName,
   
     -   Use the <xref:System.Activator.CreateInstanceFrom%2A> method to create an instance of a class derived from <xref:System.MarshalByRefObject> in the new <xref:System.AppDomain>.  
   
-     The second method is preferable, because it makes it easier to pass parameters to the new <xref:System.AppDomain> instance. The<xref:System.Activator.CreateInstanceFrom%2A> method provides two important features:  
+     The second method is preferable, because it makes it easier to pass parameters to the new <xref:System.AppDomain> instance. The <xref:System.Activator.CreateInstanceFrom%2A> method provides two important features:  
   
     -   You can use a code base that points to a location that does not contain your assembly.  
   

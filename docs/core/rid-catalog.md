@@ -1,6 +1,6 @@
 ---
 title: .NET Core Runtime IDentifier (RID) catalog
-description: Runtime identifiers (RIDs) identify target platforms where the application runs. Learn more about them and see a list of common RID values.
+description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .NET Core.
 author: mairaw
 ms.author: mairaw
 ms.date: 09/07/2017

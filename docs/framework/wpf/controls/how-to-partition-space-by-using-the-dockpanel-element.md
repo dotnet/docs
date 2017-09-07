@@ -1,5 +1,5 @@
 ---
-title: "How to: Partition Space by Using the DockPanel Element | Microsoft Docs"
+title: "How to: Partition Space by Using the DockPanel Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ The following example creates a simple [!INCLUDE[TLA#tla_ui](../../../../include
  [!code-cpp[DockPanelOvwSample#1](../../../../samples/snippets/cpp/VS_Snippets_Wpf/DockPanelOvwSample/CPP/DockPanel_Ovw_Sample.cpp#1)]
  [!code-csharp[DockPanelOvwSample#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DockPanelOvwSample/CSharp/DockPanel_Ovw_Sample.cs#1)]
  [!code-vb[DockPanelOvwSample#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DockPanelOvwSample/VisualBasic/dockpanel_vb.vb#1)]
- [!code-xml[DockPanelOvwSample#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DockPanelOvwSample/XAML/default.xaml#1)]  
+ [!code-xaml[DockPanelOvwSample#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DockPanelOvwSample/XAML/default.xaml#1)]  
   
 > [!NOTE]
 >  By default, the last child of a <xref:System.Windows.Controls.DockPanel> element fills the remaining unallocated space. If you do not want this behavior, set `LastChildFill="False"`.  

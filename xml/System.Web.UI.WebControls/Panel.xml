@@ -278,7 +278,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> property to indicate which button gets clicked when the <xref:System.Web.UI.WebControls.Panel> control has focus and the user presses the ENTER key. The <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> can be set to the identifier for a <xref:System.Web.UI.WebControls.Button> control or any control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface except a <xref:System.Web.UI.WebControls.LinkButton>control.  
+ Use the <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> property to indicate which button gets clicked when the <xref:System.Web.UI.WebControls.Panel> control has focus and the user presses the ENTER key. The <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> can be set to the identifier for a <xref:System.Web.UI.WebControls.Button> control or any control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface except a <xref:System.Web.UI.WebControls.LinkButton> control.  
   
  If the <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> is set to a control that does not implement the <xref:System.Web.UI.WebControls.IButtonControl> interface, or to a control that is not contained in the <xref:System.Web.UI.WebControls.Panel> control, the <xref:System.Web.UI.WebControls.Panel> control throws an exception while rendering.  
   

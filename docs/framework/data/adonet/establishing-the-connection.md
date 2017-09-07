@@ -1,5 +1,5 @@
 ---
-title: "Establishing the Connection | Microsoft Docs"
+title: "Establishing the Connection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

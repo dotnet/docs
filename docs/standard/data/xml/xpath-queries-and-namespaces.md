@@ -1,5 +1,5 @@
 ---
-title: "XPath Queries and Namespaces | Microsoft Docs"
+title: "XPath Queries and Namespaces"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

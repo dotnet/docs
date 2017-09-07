@@ -621,7 +621,7 @@
    
   
 ## Examples  
- The following example enumerates and displays resource items in an XML file. Initially, <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> is set to `false` to show both data and metadata items as they occur in the resource file. The second enumeration has the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> set to `true` so that resource data elements are returned as <xref:System.Resources.ResXDataNode>objects.  
+ The following example enumerates and displays resource items in an XML file. Initially, <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> is set to `false` to show both data and metadata items as they occur in the resource file. The second enumeration has the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> set to `true` so that resource data elements are returned as <xref:System.Resources.ResXDataNode> objects.  
   
  [!code-cpp[System.Resources.ResXResourceReader Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Resources.ResXResourceReader Example/CPP/useresxdatanodes.cpp#2)]
  [!code-csharp[System.Resources.ResXResourceReader Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Resources.ResXResourceReader Example/CS/useresxdatanodes.cs#2)]

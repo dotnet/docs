@@ -1,5 +1,5 @@
 ---
-title: "/platform (Visual Basic) | Microsoft Docs"
+title: "/platform (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -96,7 +96,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 2.  On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
   
-     For more information, see [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
+     For more information, see [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## Example  
  The following example illustrates how to use the `/platform` compiler option.  

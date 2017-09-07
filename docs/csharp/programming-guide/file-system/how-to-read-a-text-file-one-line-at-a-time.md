@@ -1,5 +1,5 @@
 ---
-title: "How to: Read a Text File One Line at a Time (Visual C#) | Microsoft Docs"
+title: "How to: Read a Text File One Line at a Time (Visual C#)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

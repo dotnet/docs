@@ -1,5 +1,5 @@
 ---
-title: "Names of Type Members | Microsoft Docs"
+title: "Names of Type Members"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Bitmap Effects Overview | Microsoft Docs"
+title: "Bitmap Effects Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -53,7 +53,7 @@ Bitmap effects enable designers and developers to apply visual effects to render
   
  The following example demonstrates how to apply a <xref:System.Windows.Media.Effects.BitmapEffect> in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
- [!code-xml[EffectsGallery_snip#BlurSimpleExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blursimpleexample.xaml#blursimpleexampleinline)]  
+ [!code-xaml[EffectsGallery_snip#BlurSimpleExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blursimpleexample.xaml#blursimpleexampleinline)]  
   
  The following example demonstrates how to apply a <xref:System.Windows.Media.Effects.BitmapEffect> in code.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Insufficient security permissions to set the system time | Microsoft Docs"
+title: "Insufficient security permissions to set the system time"
 
 ms.date: "2015-07-20"
 ms.prod: .net

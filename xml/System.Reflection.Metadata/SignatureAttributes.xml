@@ -17,8 +17,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies additional flags that can be applied to method signatures. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader"/> structure.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="ExplicitThis">
@@ -36,7 +36,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the first explicitly declared parameter that represents the instance pointer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Generic">
@@ -54,7 +54,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A generic method.</summary>
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -72,7 +72,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An instance method.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -90,7 +90,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No flags.</summary>
       </Docs>
     </Member>
   </Members>

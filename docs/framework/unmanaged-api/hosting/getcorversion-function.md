@@ -1,5 +1,5 @@
 ---
-title: "GetCORVersion Function | Microsoft Docs"
+title: "GetCORVersion Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "for (C# Reference) | Microsoft Docs"
+title: "for (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -128,5 +128,5 @@ for (initializer; condition; iterator)
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [for Statement (C++)](https://docs.microsoft.com/cpp/cpp/for-statement-cpp)   
+ [for Statement (C++)](/cpp/cpp/for-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

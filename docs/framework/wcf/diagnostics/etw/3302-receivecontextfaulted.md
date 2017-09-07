@@ -1,5 +1,5 @@
 ---
-title: "3302 - ReceiveContextFaulted | Microsoft Docs"
+title: "3302 - ReceiveContextFaulted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

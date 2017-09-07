@@ -1,5 +1,5 @@
 ---
-title: "Creating Multicasting Applications using the UDP Transport | Microsoft Docs"
+title: "Creating Multicasting Applications using the UDP Transport"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

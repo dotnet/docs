@@ -1,5 +1,5 @@
 ---
-title: "603 - AspNetRoutingService | Microsoft Docs"
+title: "603 - AspNetRoutingService"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Improve Rendering Performance by Caching an Element | Microsoft Docs"
+title: "How to: Improve Rendering Performance by Caching an Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,7 +27,7 @@ Use the <xref:System.Windows.Media.BitmapCache> class to improve rendering perfo
 ## Example  
  The following code example shows how to create a complex element and cache it as a bitmap, which improves performance when the element is animated. The element is a canvas that holds shape geometries with many vertices. A <xref:System.Windows.Media.BitmapCache> with default values is assigned to the <xref:System.Windows.UIElement.CacheMode%2A> of the canvas, and an animation shows the smooth scaling of the cached bitmap.  
   
- [!code-xml[System.Windows.Media.BitmapCache#_BitmapCacheXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachexaml)]  
+ [!code-xaml[System.Windows.Media.BitmapCache#_BitmapCacheXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachexaml)]  
   
 ## See Also  
  <xref:System.Windows.Media.BitmapCache>   

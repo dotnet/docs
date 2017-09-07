@@ -1,5 +1,5 @@
 ---
-title: "3346 - ConnectionReaderSendFault | Microsoft Docs"
+title: "3346 - ConnectionReaderSendFault"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;Uri&gt; Element (Uri Settings) | Microsoft Docs"
+title: "&lt;Uri&gt; Element (Uri Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -61,7 +61,7 @@ Contains settings that specify how the .NET Framework handles web addresses expr
 ## Example  
   
 ### Description  
- The following code example shows a configuration used by the <xref:System.Uri> class to support IRI parsing and IDN names. The example also clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.  
+ The following example shows a configuration used by the <xref:System.Uri> class to support IRI parsing and IDN names. The example also clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.  
   
 ### Code  
   

@@ -292,7 +292,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Int32Rect int32Rect1, valuetype System.Windows.Int32Rect int32Rect2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Equality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
       <MemberType>Method</MemberType>
@@ -318,7 +318,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Int32Rect int32Rect1, valuetype System.Windows.Int32Rect int32Rect2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Inequality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Directories and Files Summary (Visual Basic) | Microsoft Docs"
+title: "Directories and Files Summary (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

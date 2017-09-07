@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Time with the DateTimePicker Control | Microsoft Docs"
+title: "How to: Display Time with the DateTimePicker Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,6 +1,6 @@
 ---
-title: F# Language Reference | Microsoft Docs
-description: F# Language Reference
+title: F# Language Reference
+description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -14,7 +14,7 @@ ms.assetid: b1707be1-7b7c-4fdd-a717-d9c190bc5fb5
 
 # F# Language Reference
 
-This section is a reference to the F# language, a multi-paradigm programming language targeting the .NET platform. The F# language supports functional, object-oriented and imperative programming models.
+This section is a reference to the F# language, a multi-paradigm programming language targeting .NET. The F# language supports functional, object-oriented and imperative programming models.
 
 
 ## F# Tokens

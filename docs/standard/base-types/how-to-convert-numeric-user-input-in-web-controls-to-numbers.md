@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert Numeric User Input in Web Controls to Numbers | Microsoft Docs"
+title: "How to: Convert Numeric User Input in Web Controls to Numbers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "WorkFlow Service Registration Tool (WFServicesReg.exe) | Microsoft Docs"
+title: "WorkFlow Service Registration Tool (WFServicesReg.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

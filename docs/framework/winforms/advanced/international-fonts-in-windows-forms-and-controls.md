@@ -1,5 +1,5 @@
 ---
-title: "International Fonts in Windows Forms and Controls | Microsoft Docs"
+title: "International Fonts in Windows Forms and Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

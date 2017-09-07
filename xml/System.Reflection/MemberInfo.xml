@@ -656,7 +656,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.MemberInfo left, System.Reflection.MemberInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.MemberInfo left, System.Reflection.MemberInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Reflection.MemberInfo left, class System.Reflection.MemberInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfo.op_Equality(System.Reflection.MemberInfo,System.Reflection.MemberInfo)" />
       <MemberType>Method</MemberType>
@@ -690,7 +690,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.MemberInfo left, System.Reflection.MemberInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.MemberInfo left, System.Reflection.MemberInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Reflection.MemberInfo left, class System.Reflection.MemberInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfo.op_Inequality(System.Reflection.MemberInfo,System.Reflection.MemberInfo)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetParamProps Method | Microsoft Docs"
+title: "IMetaDataImport::GetParamProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

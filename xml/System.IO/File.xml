@@ -594,7 +594,7 @@
 ## Examples  
  The following example copies files to the C:\archives\2008 backup folder. It uses the two overloads of the <xref:System.IO.File.Copy%2A> method as follows:  
   
--   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=fullName>method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
+-   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=fullName> method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
   
 -   It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
   
@@ -3138,6 +3138,8 @@
  If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
   
  Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
+
+ If the `destinationBackupFileName` already exists it will be overwritten with the contents of the `destinationFileName` file.
   
    
   
@@ -3228,6 +3230,8 @@
  If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
   
  Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
+
+ If the `destinationBackupFileName` already exists it will be overwritten with the contents of the `destinationFileName` file.
   
    
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Master-Detail Form by Using Two DataRepeater Controls (Visual Studio) | Microsoft Docs"
+title: "How to: Create a Master-Detail Form by Using Two DataRepeater Controls (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -49,7 +49,7 @@ You can display related data by using two or more <xref:Microsoft.VisualBasic.Po
 3.  On the **Data** menu, click **Show Data Sources**.  
   
     > [!NOTE]
-    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources).  
+    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).  
   
 4.  In the **Data Sources** window, select the top-level node for the master table.  
   

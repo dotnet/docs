@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Text Displayed by a Windows Forms Control | Microsoft Docs"
+title: "How to: Set the Text Displayed by a Windows Forms Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -54,7 +54,7 @@ Windows Forms controls usually display some text that is related to the primary 
        GraphicsUnit.Point);  
     ```  
   
-    ```cpp#  
+    ```cpp  
     button1->Text = "Click here to save changes";  
     button1->Font = new System::Drawing::Font("Arial",  
        10, FontStyle::Bold, GraphicsUnit::Point);  
@@ -71,7 +71,7 @@ Windows Forms controls usually display some text that is related to the primary 
     mpMenuItem.Text = "&& Now For Something Completely Different";  
     ```  
   
-    ```cpp#  
+    ```cpp  
     mpMenuItem->Text = "&& Now For Something Completely Different";  
     ```  
   

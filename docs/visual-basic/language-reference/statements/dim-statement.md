@@ -1,5 +1,5 @@
 ---
-title: "Dim Statement (Visual Basic) | Microsoft Docs"
+title: "Dim Statement (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -339,7 +339,7 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
  [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
  [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic)   
+ [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)   
  [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)   
  [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   

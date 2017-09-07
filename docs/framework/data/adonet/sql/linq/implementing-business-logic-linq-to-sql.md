@@ -1,5 +1,5 @@
 ---
-title: "Implementing Business Logic (LINQ to SQL) | Microsoft Docs"
+title: "Implementing Business Logic (LINQ to SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -72,7 +72,7 @@ public partial class MyNorthWindDataContext : System.Data.Linq.DataContext
         #endregion  
 ```  
   
- If you implement the Insert, Update and Delete methods in your partial class, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime will call them instead of its own default methods when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. This enables you to override the default behavior for create / read / update / delete operations. For more information, see [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes).  
+ If you implement the Insert, Update and Delete methods in your partial class, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime will call them instead of its own default methods when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. This enables you to override the default behavior for create / read / update / delete operations. For more information, see [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes).  
   
  The `OnCreated` method is called in the class constructor.  
   
@@ -182,7 +182,7 @@ partial class Customer
   
  [How to: Add validation to entity classes](/visualstudio/data-tools/how-to-add-validation-to-entity-classes)  
   
- [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
+ [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
   
  [Walkthrough: Adding Validation to Entity Classes](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
   

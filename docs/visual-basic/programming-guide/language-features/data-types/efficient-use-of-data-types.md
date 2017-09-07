@@ -1,5 +1,5 @@
 ---
-title: "Efficient Use of Data Types (Visual Basic) | Microsoft Docs"
+title: "Efficient Use of Data Types (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -78,4 +78,4 @@ Protected s As String
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Using IntelliSense](https://docs.microsoft.com/visualstudio/ide/using-intellisense)
+ [Using IntelliSense](/visualstudio/ide/using-intellisense)

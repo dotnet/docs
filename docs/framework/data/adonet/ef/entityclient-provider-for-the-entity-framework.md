@@ -1,5 +1,5 @@
 ---
-title: "EntityClient Provider for the Entity Framework | Microsoft Docs"
+title: "EntityClient Provider for the Entity Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

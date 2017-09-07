@@ -127,7 +127,7 @@
   
  The following example shows setting the <xref:System.Windows.Controls.Viewport3D.Camera%2A> property of a <xref:System.Windows.Controls.Viewport3D> using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. To see the entirety of the code from which this excerpt was taken, see [How to: Create a 3-D Scene](~/docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md).  
   
- [!code-xml[basic3d#Basic3DXAML3DN1](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn1)]  
+ [!code-xaml[basic3d#Basic3DXAML3DN1](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn1)]  
   
  ]]></format>
         </remarks>
@@ -185,7 +185,7 @@
    
   
 ## Examples  
- [!code-xml[hostingwpfusercontrolinwf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
+ [!code-xaml[hostingwpfusercontrolinwf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
   
  ]]></format>
         </remarks>

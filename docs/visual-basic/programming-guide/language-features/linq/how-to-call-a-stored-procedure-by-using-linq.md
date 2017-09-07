@@ -1,5 +1,5 @@
 ---
-title: "How to: Call a Stored Procedure by Using LINQ (Visual Basic) | Microsoft Docs"
+title: "How to: Call a Stored Procedure by Using LINQ (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -94,5 +94,5 @@ Language-Integrated Query (LINQ) makes it easy to access database information, i
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
- [DataContext Methods (O/R Designer)](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)   
+ [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)   
  [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](http://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)

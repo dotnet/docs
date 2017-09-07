@@ -1,5 +1,5 @@
 ---
-title: "Interoperability with Enterprise Services and COM+ Transactions | Microsoft Docs"
+title: "Interoperability with Enterprise Services and COM+ Transactions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

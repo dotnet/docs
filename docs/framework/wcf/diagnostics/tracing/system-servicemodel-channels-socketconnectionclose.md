@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.SocketConnectionClose | Microsoft Docs"
+title: "System.ServiceModel.Channels.SocketConnectionClose"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

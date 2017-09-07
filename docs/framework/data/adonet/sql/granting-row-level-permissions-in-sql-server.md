@@ -1,5 +1,5 @@
 ---
-title: "Granting Row-Level Permissions in SQL Server | Microsoft Docs"
+title: "Granting Row-Level Permissions in SQL Server"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,7 +27,7 @@ In some scenarios, there is a requirement to control access to data at a more gr
   
 -   Enable row-level filtering:  
   
-    -   If you are using SQL Server 2016 or higher, or [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/), create a security policy that adds a predicate on the table restricting the rows returned to those that match either the current database user (using the CURRENT_USER() built-in function) or the current login name (using the SUSER_SNAME() built-in function):  
+    -   If you are using SQL Server 2016 or higher, or [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/), create a security policy that adds a predicate on the table restricting the rows returned to those that match either the current database user (using the CURRENT_USER() built-in function) or the current login name (using the SUSER_SNAME() built-in function):  
   
         ```tsql  
         CREATE SCHEMA Security  

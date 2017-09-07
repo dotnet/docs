@@ -40,7 +40,7 @@
 ## Examples  
  The following example defines a <xref:System.Windows.Controls.GroupBox> control that is titled **My Employee Info**. The control encloses a <xref:System.Windows.Controls.TabControl> and a <xref:System.Windows.Controls.Button> in a <xref:System.Windows.Controls.StackPanel>. The example sets the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> property to a <xref:System.Windows.Controls.Label>.  
   
- [!code-xml[GroupBoxExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupBoxExample/CSharp/Page1.xaml#1)]  
+ [!code-xaml[GroupBoxExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupBoxExample/CSharp/Page1.xaml#1)]  
   
  You must also define an event handler on a code-behind page in order to handle the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event that occurs when a user clicks the **Show Summary** button.  
   

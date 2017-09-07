@@ -1,5 +1,5 @@
 ---
-redirect_url: /dotnet/articles/fsharp/index
+redirect_url: /dotnet/fsharp/index
 ---
 
 # F# Tutorials

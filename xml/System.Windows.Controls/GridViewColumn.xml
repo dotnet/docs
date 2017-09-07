@@ -50,7 +50,7 @@
 ## Examples  
  The following example shows how to define <xref:System.Windows.Controls.GridViewColumn> objects for a <xref:System.Windows.Controls.GridView>.  
   
- [!code-xml[ListViewSnips#GridViewColumnContent](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#gridviewcolumncontent)]  
+ [!code-xaml[ListViewSnips#GridViewColumnContent](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#gridviewcolumncontent)]  
   
  ]]></format>
     </remarks>
@@ -159,9 +159,9 @@
 ## Examples  
  The following example shows how to specify a <xref:System.Windows.DataTemplate> to use to display a <xref:System.Windows.Controls.GridViewColumn>.  
   
- [!code-xml[ListViewTemplate#GridViewCellTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcelltemplate)]  
+ [!code-xaml[ListViewTemplate#GridViewCellTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcelltemplate)]  
   
- [!code-xml[ListViewTemplate#CellTemplateProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#celltemplateproperty)]  
+ [!code-xaml[ListViewTemplate#CellTemplateProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#celltemplateproperty)]  
   
  ]]></format>
         </remarks>
@@ -265,7 +265,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> property.  
   
- [!code-xml[ListViewSnips#GridViewColumnContent](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#gridviewcolumncontent)]  
+ [!code-xaml[ListViewSnips#GridViewColumnContent](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#gridviewcolumncontent)]  
   
  ]]></format>
         </remarks>
@@ -331,7 +331,7 @@
   
  [!code-csharp[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewcolumnproperties)]
  [!code-vb[ListViewCode#GridViewColumnProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewcolumnproperties)]
- [!code-xml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
+ [!code-xaml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
   
  ]]></format>
         </remarks>
@@ -394,7 +394,7 @@
   
  [!code-csharp[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewcolumnproperties)]
  [!code-vb[ListViewCode#GridViewColumnProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewcolumnproperties)]
- [!code-xml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
+ [!code-xaml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
   
  ]]></format>
         </remarks>
@@ -459,15 +459,15 @@
 ## Examples  
  The following example shows how to define a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> that specifies display properties for a column header.  
   
- [!code-xml[ListViewTemplate#GridViewHeaderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheaderstyle)]  
+ [!code-xaml[ListViewTemplate#GridViewHeaderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheaderstyle)]  
   
- [!code-xml[ListViewTemplate#GridViewColumnTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumntemplate)]  
+ [!code-xaml[ListViewTemplate#GridViewColumnTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumntemplate)]  
   
  The following example shows how to define a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> that defines display properties by using a <xref:System.Windows.Controls.ControlTemplate>.  
   
- [!code-xml[ListViewTemplate#GridViewColumnHCTwithControlTemplatePart1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnhctwithcontroltemplatepart1)]  
+ [!code-xaml[ListViewTemplate#GridViewColumnHCTwithControlTemplatePart1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnhctwithcontroltemplatepart1)]  
   
- [!code-xml[ListViewTemplate#GridViewColumnHCTwithControlTemplatePart2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnhctwithcontroltemplatepart2)]  
+ [!code-xaml[ListViewTemplate#GridViewColumnHCTwithControlTemplatePart2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnhctwithcontroltemplatepart2)]  
   
  ]]></format>
         </remarks>
@@ -640,9 +640,9 @@
 ## Examples  
  The following example shows how to specify a template to use to display the header of a <xref:System.Windows.Controls.GridViewColumn>.  
   
- [!code-xml[ListViewTemplate#GridViewHeaderTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheadertemplate)]  
+ [!code-xaml[ListViewTemplate#GridViewHeaderTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheadertemplate)]  
   
- [!code-xml[ListViewTemplate#GridViewColumnTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumntemplate)]  
+ [!code-xaml[ListViewTemplate#GridViewColumnTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumntemplate)]  
   
  ]]></format>
         </remarks>
@@ -901,7 +901,7 @@
   
  [!code-csharp[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewcolumnproperties)]
  [!code-vb[ListViewCode#GridViewColumnProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewcolumnproperties)]
- [!code-xml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
+ [!code-xaml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
   
  ]]></format>
         </remarks>

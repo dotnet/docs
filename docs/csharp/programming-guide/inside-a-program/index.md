@@ -1,5 +1,5 @@
 ---
-title: "Inside a C# Program | Microsoft Docs"
+title: "Inside a C# Program"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -45,7 +45,7 @@ The section discusses the general structure of a C# program, and includes the st
   
 ## Related Sections  
   
--   [Getting Started with C#](../../../csharp/getting-started/getting-started-with-csharp.md)  
+-   [Getting Started with C#](../../../csharp/getting-started/index.md)  
   
 -   [C# Programming Guide](../../../csharp/programming-guide/index.md)  
   

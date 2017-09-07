@@ -1,5 +1,5 @@
 ---
-title: "XSLT Compiler (xsltc.exe) | Microsoft Docs"
+title: "XSLT Compiler (xsltc.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

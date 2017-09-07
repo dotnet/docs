@@ -1,5 +1,5 @@
 ---
-title: "Types of Isolation | Microsoft Docs"
+title: "Types of Isolation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

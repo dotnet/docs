@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Windows Communication Foundation Service Moniker without Registration | Microsoft Docs"
+title: "How to: Use the Windows Communication Foundation Service Moniker without Registration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

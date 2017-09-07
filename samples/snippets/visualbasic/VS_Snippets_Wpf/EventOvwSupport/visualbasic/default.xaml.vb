@@ -12,11 +12,8 @@ Namespace SDKSample
 '<SnippetSimpleHandlerA>      
 	  Private Sub b1SetColor(ByVal sender As Object, ByVal args As RoutedEventArgs)
 		'logic to handle the Click event
-'</SnippetSimpleHandlerA>
-
-'<SnippetSimpleHandlerB>
 	  End Sub
-'</SnippetSimpleHandlerB>
+'</SnippetSimpleHandlerA>
 '<SnippetGroupButtonCodeBehind>
 	  Private Sub CommonClickHandler(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim feSource As FrameworkElement = TryCast(e.Source, FrameworkElement)

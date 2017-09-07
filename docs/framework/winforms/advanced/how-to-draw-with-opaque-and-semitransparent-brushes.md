@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw with Opaque and Semitransparent Brushes | Microsoft Docs"
+title: "How to: Draw with Opaque and Semitransparent Brushes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

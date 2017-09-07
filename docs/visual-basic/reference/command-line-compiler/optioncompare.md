@@ -1,5 +1,5 @@
 ---
-title: "/optioncompare | Microsoft Docs"
+title: "/optioncompare"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -70,7 +70,7 @@ Specifies how string comparisons are made.
 -   See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
   
 ## Example  
- The following code compiles P`rojFile.vb` and uses binary string comparisons.  
+ The following code compiles `ProjFile.vb` and uses binary string comparisons.  
   
 ```  
 vbc /optioncompare:binary projFile.vb  
@@ -83,4 +83,4 @@ vbc /optioncompare:binary projFile.vb
  [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

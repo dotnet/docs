@@ -1,5 +1,5 @@
 ---
-title: "#pragma (C# Reference) | Microsoft Docs"
+title: "#pragma (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -39,7 +39,7 @@ translation.priority.ht:
   
 ## Syntax  
   
-```  
+```csharp
 #pragma pragma-name pragma-arguments  
 ```  
   

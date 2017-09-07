@@ -1,5 +1,5 @@
 ---
-title: "Encrypting Data | Microsoft Docs"
+title: "Encrypting Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an Add-In That Returns a UI | Microsoft Docs"
+title: "How to: Create an Add-In That Returns a UI"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -75,7 +75,7 @@ This example shows how to create an add-in that returns a              [!INCLUDE
 ## Implementing the Add-In  
  With the add-in-side adapter and add-in view created, the add-in (                             `WPFAddIn1.AddIn`) must implement the                              `IWPFAddInView.GetAddInUI` method to return a                              <xref:System.Windows.FrameworkElement> object (a                              <xref:System.Windows.Controls.UserControl> in this example). The implementation of the                              <xref:System.Windows.Controls.UserControl>,                              `AddInUI`, is shown by the following code.  
   
- [!code-xml[SimpleAddInReturnsAUISample#AddInUIMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInReturnsAUISample/CSharp/WPFAddIn1/AddInUI.xaml#addinuimarkup)]  
+ [!code-xaml[SimpleAddInReturnsAUISample#AddInUIMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInReturnsAUISample/CSharp/WPFAddIn1/AddInUI.xaml#addinuimarkup)]  
   
  [!code-csharp[SimpleAddInReturnsAUISample#AddInUICodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInReturnsAUISample/CSharp/WPFAddIn1/AddInUI.xaml.cs#addinuicodebehind)]
  [!code-vb[SimpleAddInReturnsAUISample#AddInUICodeBehind](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleAddInReturnsAUISample/VisualBasic/WPFAddIn1/AddInUI.xaml.vb#addinuicodebehind)]  

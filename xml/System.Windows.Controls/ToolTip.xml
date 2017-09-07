@@ -32,7 +32,7 @@
   
  You can use a <xref:System.Windows.Controls.ToolTip> on multiple elements by defining a <xref:System.Windows.Controls.ToolTip> in a <xref:System.Windows.ResourceDictionary>.  
   
- The properties of the <xref:System.Windows.Controls.ToolTip> class are used to define the position and behavior of the tooltip. Many of these properties are also defined in the <xref:System.Windows.Controls.ToolTipService> class. If the value of one of these properties is specified by both the <xref:System.Windows.Controls.ToolTip> property and the <xref:System.Windows.Controls.ToolTipService>attached property, the value of the <xref:System.Windows.Controls.ToolTipService> property is used. In addition, the <xref:System.Windows.Controls.ToolTipService> class provides properties to set timing behavior. These attached properties are not included in the <xref:System.Windows.Controls.ToolTip> class but can be used by the control.  
+ The properties of the <xref:System.Windows.Controls.ToolTip> class are used to define the position and behavior of the tooltip. Many of these properties are also defined in the <xref:System.Windows.Controls.ToolTipService> class. If the value of one of these properties is specified by both the <xref:System.Windows.Controls.ToolTip> property and the <xref:System.Windows.Controls.ToolTipService> attached property, the value of the <xref:System.Windows.Controls.ToolTipService> property is used. In addition, the <xref:System.Windows.Controls.ToolTipService> class provides properties to set timing behavior. These attached properties are not included in the <xref:System.Windows.Controls.ToolTip> class but can be used by the control.  
   
 ## Customizing the ToolTip Control  
  To apply the same property settings to multiple <xref:System.Windows.Controls.ToolTip> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ToolTip>, see [ToolTip Styles and Templates](~/docs/framework/wpf/controls/tooltip-styles-and-templates.md).  
@@ -49,11 +49,11 @@
   
  The following example shows how to define a tooltip by assigning text to the <xref:System.Windows.FrameworkElement.ToolTip%2A> property.  
   
- [!code-xml[ToolTipSimple#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipSimple/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[ToolTipSimple#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipSimple/CSharp/Pane1.xaml#1)]  
   
  The following example shows how to define a tooltip by assigning a <xref:System.Windows.Controls.ToolTip> object to the <xref:System.Windows.FrameworkElement.ToolTip%2A> property.  
   
- [!code-xml[ToolTipSimple#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipSimple/CSharp/Pane1.xaml#tooltip)]  
+ [!code-xaml[ToolTipSimple#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipSimple/CSharp/Pane1.xaml#tooltip)]  
   
  The following example uses code to generate a <xref:System.Windows.Controls.ToolTip> object. The example creates a <xref:System.Windows.Controls.ToolTip> (`tt`) and associates it with a <xref:System.Windows.Controls.Button>.  
   
@@ -246,7 +246,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.ToolTip.HasDropShadow%2A> property for a <xref:System.Windows.Controls.ToolTip> control.  
   
- [!code-xml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
  ]]></format>
         </remarks>
@@ -314,7 +314,7 @@
 ## Examples  
  The following example shows how to create and position a <xref:System.Windows.Controls.ToolTip>.  
   
- [!code-xml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
  [!code-csharp[ToolTipService#ToolTipCode](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipcode)]
  [!code-vb[ToolTipService#ToolTipCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipcode)]  
@@ -612,7 +612,7 @@
 ## Examples  
  The following example shows how to create and position a <xref:System.Windows.Controls.ToolTip>.  
   
- [!code-xml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
  [!code-csharp[ToolTipService#ToolTipCode](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipcode)]
  [!code-vb[ToolTipService#ToolTipCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipcode)]  
@@ -680,7 +680,7 @@
 ## Examples  
  The following example shows how to create and position a <xref:System.Windows.Controls.ToolTip>.  
   
- [!code-xml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
  [!code-csharp[ToolTipService#ToolTipCode](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipcode)]
  [!code-vb[ToolTipService#ToolTipCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipcode)]  
@@ -751,7 +751,7 @@
 ## Examples  
  The following example shows how to create and position a <xref:System.Windows.Controls.ToolTip>.  
   
- [!code-xml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
  [!code-csharp[ToolTipService#ToolTipCode](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipcode)]
  [!code-vb[ToolTipService#ToolTipCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipcode)]  
@@ -882,7 +882,7 @@
 ## Examples  
  The following example shows how to create and position a <xref:System.Windows.Controls.ToolTip>.  
   
- [!code-xml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
  [!code-csharp[ToolTipService#ToolTipCode](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipcode)]
  [!code-vb[ToolTipService#ToolTipCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipcode)]  

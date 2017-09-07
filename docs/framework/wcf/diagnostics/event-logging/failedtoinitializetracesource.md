@@ -1,5 +1,5 @@
 ---
-title: "FailedToInitializeTraceSource | Microsoft Docs"
+title: "FailedToInitializeTraceSource"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

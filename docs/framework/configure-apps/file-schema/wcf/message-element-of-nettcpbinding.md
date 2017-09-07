@@ -1,5 +1,5 @@
 ---
-title: "&lt;message&gt; element of &lt;netTcpBinding&gt; | Microsoft Docs"
+title: "&lt;message&gt; element of &lt;netTcpBinding&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

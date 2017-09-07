@@ -21,7 +21,7 @@
  The properties whose values are established by this structure are not directly exposed on <xref:System.Windows.Interop.HwndSource> instances when an <xref:System.Windows.Interop.HwndSource> is constructed. However, the values of the <xref:System.Windows.Interop.HwndSourceParameters> structure typically affect general [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] properties such as "Height" and "Width" that might exist in specific hosted objects and their [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)].  
   
 > [!IMPORTANT]
->  Do not construct instances of this structure using the default (parameterless) constructor. An <xref:System.Windows.Interop.HwndSourceParameters> instance that is created by the default constructor results in <xref:System.Windows.Interop.HwndSourceParameters> that cannot be assigned a <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> (even though the <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> property appears to be settable). If such an instance is applied as the parameters for an <xref:System.Windows.Interop.HwndSource> constructor, the resulting <xref:System.Windows.Interop.HwndSource>cannot display a window.  
+>  Do not construct instances of this structure using the default (parameterless) constructor. An <xref:System.Windows.Interop.HwndSourceParameters> instance that is created by the default constructor results in <xref:System.Windows.Interop.HwndSourceParameters> that cannot be assigned a <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> (even though the <xref:System.Windows.Interop.HwndSourceParameters.WindowName%2A> property appears to be settable). If such an instance is applied as the parameters for an <xref:System.Windows.Interop.HwndSource> constructor, the resulting <xref:System.Windows.Interop.HwndSource> cannot display a window.  
   
  ]]></format>
     </remarks>
@@ -323,7 +323,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Interop.HwndSourceParameters a, System.Windows.Interop.HwndSourceParameters b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Interop.HwndSourceParameters a, System.Windows.Interop.HwndSourceParameters b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Interop.HwndSourceParameters a, valuetype System.Windows.Interop.HwndSourceParameters b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSourceParameters.op_Equality(System.Windows.Interop.HwndSourceParameters,System.Windows.Interop.HwndSourceParameters)" />
       <MemberType>Method</MemberType>
@@ -355,7 +355,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Interop.HwndSourceParameters a, System.Windows.Interop.HwndSourceParameters b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Interop.HwndSourceParameters a, System.Windows.Interop.HwndSourceParameters b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Interop.HwndSourceParameters a, valuetype System.Windows.Interop.HwndSourceParameters b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndSourceParameters.op_Inequality(System.Windows.Interop.HwndSourceParameters,System.Windows.Interop.HwndSourceParameters)" />
       <MemberType>Method</MemberType>

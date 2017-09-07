@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Queued Messaging | Microsoft Docs"
+title: "Troubleshooting Queued Messaging"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

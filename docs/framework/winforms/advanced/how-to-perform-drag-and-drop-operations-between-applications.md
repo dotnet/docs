@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform Drag-and-Drop Operations Between Applications | Microsoft Docs"
+title: "How to: Perform Drag-and-Drop Operations Between Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

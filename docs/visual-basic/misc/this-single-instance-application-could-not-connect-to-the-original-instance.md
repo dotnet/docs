@@ -1,5 +1,5 @@
 ---
-title: "This single-instance application could not connect to the original instance | Microsoft Docs"
+title: "This single-instance application could not connect to the original instance"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -55,5 +55,5 @@ This single-instance application could not connect to the original instance. Som
   
 ## See Also  
  [NIB: How to: Specify Instancing Behavior for an Application (Visual Basic)](http://msdn.microsoft.com/en-us/48539ad8-d960-4210-beab-ee65f6c6dc6e)   
- [Debugger Basics](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)   
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

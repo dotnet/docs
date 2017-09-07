@@ -1,5 +1,5 @@
 ---
-title: "WS Reliable Session | Microsoft Docs"
+title: "WS Reliable Session"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

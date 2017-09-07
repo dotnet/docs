@@ -1,5 +1,5 @@
 ---
-title: "-doc (C# Compiler Options) | Microsoft Docs"
+title: "-doc (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -58,7 +58,7 @@ The **/doc** option allows you to place documentation comments in an XML file.
   
  The source code file that contains Main is output first into the XML.  
   
- To use the generated .xml file for use with the [IntelliSense](https://docs.microsoft.com/visualstudio/ide/using-intellisense) feature, let the file name of the .xml file be the same as the assembly you want to support and then make sure the .xml file is in the same directory as the assembly. Thus, when the assembly is referenced in the Visual Studio project, the .xml file is found as well. See [Supplying Code Comments](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments) and for more information.  
+ To use the generated .xml file for use with the [IntelliSense](/visualstudio/ide/using-intellisense) feature, let the file name of the .xml file be the same as the assembly you want to support and then make sure the .xml file is in the same directory as the assembly. Thus, when the assembly is referenced in the Visual Studio project, the .xml file is found as well. See [Supplying Code Comments](/visualstudio/ide/supplying-xml-code-comments) and for more information.  
   
  Unless you compile with [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), `file` will contain \<assembly>\</assembly> tags specifying the name of the file containing the assembly manifest for the output file of the compilation.  
   
@@ -79,4 +79,4 @@ The **/doc** option allows you to place documentation comments in an XML file.
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

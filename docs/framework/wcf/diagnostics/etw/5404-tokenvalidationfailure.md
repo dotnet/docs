@@ -1,5 +1,5 @@
 ---
-title: "5404 - TokenValidationFailure | Microsoft Docs"
+title: "5404 - TokenValidationFailure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

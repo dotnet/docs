@@ -2069,7 +2069,7 @@ class Program {
   
  The `loadOption` parameter allows you to specify how you want the imported data to interact with existing data, and can be any of the values from the <xref:System.Data.LoadOption> enumeration. See the documentation for the <xref:System.Data.DataTable><xref:System.Data.DataTable.Load%2A> method for more information on using this parameter.  
   
- The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A>method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A>method moves on to the next result set within the reader, until there are no more result sets.  
+ The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A> method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A> method moves on to the next result set within the reader, until there are no more result sets.  
   
  The name resolution scheme for this method is the same as that followed by the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method of the <xref:System.Data.Common.DbDataAdapter> class.  
   
@@ -2201,7 +2201,7 @@ class Program {
   
  The `errorHandler` parameter is a <xref:System.Data.FillErrorEventHandler> delegate that refers to a procedure that is called when an error occurs while loading data. The <xref:System.Data.FillErrorEventArgs> parameter passed to the procedure provides properties that allow you to retrieve information about the error that occurred, the current row of data, and the <xref:System.Data.DataTable> being filled. Using this delegate mechanism, rather than a simpler try/catch block, allows you to determine the error, handle the situation, and continue processing if you like. The <xref:System.Data.FillErrorEventArgs> parameter supplies a <xref:System.Data.FillErrorEventArgs.Continue%2A> property: set this property to `true` to indicate that you have handled the error and wish to continue processing; set the property to `false` to indicate that you wish to halt processing. Be aware that setting the property to `false` causes the code that triggered the problem to throw an exception.  
   
- The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A>method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A>method moves on to the next result set within the reader, until there are no more result sets.  
+ The `tables` parameter allows you to specify an array of <xref:System.Data.DataTable> instances, indicating the order of the tables corresponding to each result set loaded from the reader. The <xref:System.Data.DataSet.Load%2A> method fills each supplied <xref:System.Data.DataTable> instance with data from a single result set from the source data reader. After each result set, the <xref:System.Data.DataSet.Load%2A> method moves on to the next result set within the reader, until there are no more result sets.  
   
  The name resolution scheme for this method is the same as that followed by the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method of the <xref:System.Data.Common.DbDataAdapter> class.  
   
@@ -4719,7 +4719,7 @@ class Program {
    
   
 ## Examples  
- The following example creates a <xref:System.IO.FileStream?displayProperty=fullName> object that is used to create a new <xref:System.Xml.XmlTextWriter?displayProperty=fullName>. The <xref:System.Xml.XmlTextWriter> object is used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
+ The following example creates a <xref:System.IO.FileStream?displayProperty=fullName> object that is used to create a new <xref:System.Xml.XmlTextWriter>. The <xref:System.Xml.XmlTextWriter> object is used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
   
  [!code-csharp[Classic WebData DataSet.WriteXml6 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml6 Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXml6 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml6 Example/VB/source.vb#1)]  
@@ -4917,12 +4917,12 @@ class Program {
   
  To write the data to an XML document, use the <xref:System.Data.DataSet.WriteXml%2A> method.  
   
- One class that inherits from the <xref:System.Xml.XmlWriter?displayProperty=fullName> class is the <xref:System.Xml.XmlTextWriter?displayProperty=fullName> class.  
+ One class that inherits from the <xref:System.Xml.XmlWriter?displayProperty=fullName> class is the <xref:System.Xml.XmlTextWriter> class.  
   
    
   
 ## Examples  
- The following example creates a new <xref:System.IO.FileStream?displayProperty=fullName> object with the specified path. The <xref:System.IO.FileStream> object is used to create an <xref:System.Xml.XMLTextWriter?displayProperty=fullName> object. The <xref:System.Data.DataSet.WriteXmlSchema%2A> method is then invoked with the <xref:System.Xml.XmlTextWriter> object to write the schema to the disk.  
+ The following example creates a new <xref:System.IO.FileStream?displayProperty=fullName> object with the specified path. The <xref:System.IO.FileStream> object is used to create an <xref:System.Xml.XmlTextWriter> object. The <xref:System.Data.DataSet.WriteXmlSchema%2A> method is then invoked with the <xref:System.Xml.XmlTextWriter> object to write the schema to the disk.  
   
  [!code-csharp[Classic WebData DataSet.WriteXmlSchema2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema2 Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXmlSchema2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema2 Example/VB/source.vb#1)]  

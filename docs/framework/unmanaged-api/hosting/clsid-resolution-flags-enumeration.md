@@ -1,5 +1,5 @@
 ---
-title: "CLSID_RESOLUTION_FLAGS Enumeration | Microsoft Docs"
+title: "CLSID_RESOLUTION_FLAGS Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

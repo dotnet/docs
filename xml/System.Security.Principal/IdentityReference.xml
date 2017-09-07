@@ -112,7 +112,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.Principal.IdentityReference left, System.Security.Principal.IdentityReference right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Principal.IdentityReference left, System.Security.Principal.IdentityReference right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Principal.IdentityReference left, class System.Security.Principal.IdentityReference right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.op_Equality(System.Security.Principal.IdentityReference,System.Security.Principal.IdentityReference)" />
       <MemberType>Method</MemberType>
@@ -140,12 +140,12 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Equals%28System.Security.Principal.IdentityReference%2CSystem.Security.Principal.IdentityReference%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.Principal.IdentityReference left, System.Security.Principal.IdentityReference right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Principal.IdentityReference left, System.Security.Principal.IdentityReference right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Principal.IdentityReference left, class System.Security.Principal.IdentityReference right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReference.op_Inequality(System.Security.Principal.IdentityReference,System.Security.Principal.IdentityReference)" />
       <MemberType>Method</MemberType>
@@ -173,7 +173,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Compare%28System.Security.Principal.IdentityReference%2CSystem.Security.Principal.IdentityReference%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

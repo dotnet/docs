@@ -1,5 +1,5 @@
 ---
-title: "Like Operator (Visual Basic) | Microsoft Docs"
+title: "Like Operator (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -84,8 +84,8 @@ result = string Like pattern
 |`?`|Any single character|  
 |`*`|Zero or more characters|  
 |`#`|Any single digit (0–9)|  
-|`[` `charlist` `]`|Any single character in `charlist`|  
-|`[!` `charlist` `]`|Any single character not in `charlist`|  
+|`[charlist]`|Any single character in `charlist`|  
+|`[!charlist]`|Any single character not in `charlist`|  
   
 ## Character Lists  
  A group of one or more characters (`charlist`) enclosed in brackets (`[ ]`) can be used to match any single character in `string` and can include almost any character code, including digits.  

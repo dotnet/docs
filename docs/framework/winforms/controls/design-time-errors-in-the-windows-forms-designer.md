@@ -1,5 +1,5 @@
 ---
-title: "Design-Time Errors in the Windows Forms Designer | Microsoft Docs"
+title: "Design-Time Errors in the Windows Forms Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

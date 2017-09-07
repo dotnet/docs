@@ -15,14 +15,14 @@
   <Docs>
     <summary>The base class of web encoders.</summary>
     <remarks>
-    <format type="text/markdown"><![CDATA[ 
+      <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
  TextEncoder subclasses can be used to do HTML encoding, URI encoding, and JavaScript encoding. Instances of such subclasses can be accessed using the <xref:System.Text.Encodings.Web.HtmlEncoder.Default?displayProperty=fullName>, <xref:System.Text.Encodings.Web.UrlEncoder.Default?displayProperty=fullName>, and <xref:System.Text.Encodings.Web.JavaScriptEncoder.Default?displayProperty=fullName> properties.   
 
  The source code for this type is available in the [System.Text.Encodings.Web project](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web) on GitHub. Unit tests that can also serve as code examples are found in the [System.Text.Encodings.Web/tests](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web/tests) folder on GitHub.  
- ]]></format>    
-</remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +38,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Text.Encodings.Web.TextEncoder"/> class.</summary>
-        <remarks></remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.Encodings.Web.TextEncoder" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -63,9 +64,11 @@
         <param name="value">The string to encode.</param>
         <summary>Encodes the supplied string and returns the encoded text as a new string.</summary>
         <returns>The encoded string.</returns>
-        <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="value"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)"/> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter"/> correctly.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)" /> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter" /> correctly.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -89,8 +92,9 @@
       <Docs>
         <param name="output">The stream to which to write the encoded text.</param>
         <param name="value">The string to encode.</param>
-        <summary>Encodes the specified string to a <see cref="T:System.IO.TextWriter"/> object.</summary>
-        <remarks></remarks>
+        <summary>Encodes the specified string to a <see cref="T:System.IO.TextWriter" /> object.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -118,13 +122,18 @@
         <param name="value">The array of characters to encode.</param>
         <param name="startIndex">The array index of the first character to encode.</param>
         <param name="characterCount">The number of characters in the array to encode.</param>
-        <summary>Encodes characters from an array and writes them to a <see cref="T:System.IO.TextWriter"/> object.</summary>
-        <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="output"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)"/> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter"/> correctly.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="value"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex"/> is out of range.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="characterCount"/> is out of range.</exception>
+        <summary>Encodes characters from an array and writes them to a <see cref="T:System.IO.TextWriter" /> object.</summary>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="output" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)" /> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter" /> correctly.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="startIndex" /> is out of range.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="characterCount" /> is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -152,13 +161,18 @@
         <param name="value">The string whose substring is to be encoded.</param>
         <param name="startIndex">The index where the substring starts.</param>
         <param name="characterCount">The number of characters in the substring.</param>
-        <summary>Encodes a substring and writes it to a <see cref="T:System.IO.TextWriter"/> object.</summary>
-        <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="output"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)"/> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter"/> correctly.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="value"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex"/> is out of range.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="characterCount"/> is out of range.</exception>
+        <summary>Encodes a substring and writes it to a <see cref="T:System.IO.TextWriter" /> object.</summary>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="output" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)" /> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter" /> correctly.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="startIndex" /> is out of range.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="characterCount" /> is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindFirstCharacterToEncode">
@@ -189,11 +203,11 @@
       </Parameters>
       <Docs>
         <param name="text">The text buffer to search.</param>
-        <param name="textLength">The number of characters in <paramref name="text"/>.</param>
+        <param name="textLength">The number of characters in <paramref name="text" />.</param>
         <summary>Finds the index of the first character to encode.</summary>
         <returns>The index of the first character to encode.</returns>
         <remarks>
-        <format type="text/markdown"><![CDATA[ 
+          <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
  This helper method is seldom called directly.
@@ -223,7 +237,8 @@
       <Docs>
         <summary>Gets the maximum number of characters that this encoder can generate for each input code point.</summary>
         <value>The maximum number of characters.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryEncodeUnicodeScalar">
@@ -257,16 +272,17 @@
       <Docs>
         <param name="unicodeScalar">A Unicode scalar value.</param>
         <param name="buffer">A pointer to the buffer to which to write the encoded text.</param>
-        <param name="bufferLength">The length of the destination <paramref name="buffer"/> in characters.</param>
-        <param name="numberOfCharactersWritten">When the method returns, indicates the number of characters written to the <paramref name="buffer"/>.</param>
+        <param name="bufferLength">The length of the destination <paramref name="buffer" /> in characters.</param>
+        <param name="numberOfCharactersWritten">When the method returns, indicates the number of characters written to the <paramref name="buffer" />.</param>
         <summary>Encodes a Unicode scalar value and writes it to a buffer.</summary>
-        <returns><see langword="false" /> if <paramref name="bufferLength"/> is too small to fit the encoded text; otherwise, returns <see langword="true" />.</returns>
-        <remarks> 
-        <format type="text/markdown"><![CDATA[ 
+        <returns>
+          <see langword="false" /> if <paramref name="bufferLength" /> is too small to fit the encoded text; otherwise, returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
  This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode%20> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
- ]]></format>        
+ ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -295,8 +311,10 @@
       <Docs>
         <param name="unicodeScalar">A Unicode scalar value.</param>
         <summary>Determines if a given Unicode scalar value will be encoded.</summary>
-        <returns><see langword="true" /> if the <paramref name="unicodeScalar"/> value will be encoded by this encoder; otherwise, returns <see langword="false" />.</returns>
-        <remarks></remarks>
+        <returns>
+          <see langword="true" /> if the <paramref name="unicodeScalar" /> value will be encoded by this encoder; otherwise, returns <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

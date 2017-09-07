@@ -1,5 +1,5 @@
 ---
-title: "Popup Placement Behavior | Microsoft Docs"
+title: "Popup Placement Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -32,7 +32,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
 ## Positioning the Popup  
  The placement of a <xref:System.Windows.Controls.Primitives.Popup> can be relative to a <xref:System.Windows.UIElement> or to the entire screen.  The following example creates four <xref:System.Windows.Controls.Primitives.Popup> controls that are relative to a <xref:System.Windows.UIElement>—in this case, an image. All of the <xref:System.Windows.Controls.Primitives.Popup> controls have the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> property set to `image1`, but each <xref:System.Windows.Controls.Primitives.Popup> has a different value for the placement property.  
   
- [!code-xml[PopupPositionSnippet#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#3)]  
+ [!code-xaml[PopupPositionSnippet#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#3)]  
   
  The following illustration shows the image and the <xref:System.Windows.Controls.Primitives.Popup> controls  
   
@@ -60,7 +60,7 @@ Image with four Popups
   
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>.  The example does not set the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> property on the <xref:System.Windows.Controls.Primitives.Popup>. The default value for <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> is <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom?displayProperty=fullName>, so the <xref:System.Windows.Controls.Primitives.Popup> appears below the <xref:System.Windows.Controls.Canvas>.  
   
- [!code-xml[PopupPositionSnippet#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#1)]  
+ [!code-xaml[PopupPositionSnippet#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#1)]  
   
  The following illustration shows that the <xref:System.Windows.Controls.Primitives.Popup> is positioned relative to the <xref:System.Windows.Controls.Canvas>.  
   
@@ -69,7 +69,7 @@ Popup with no PlacementTarget
   
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>, but this time the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> is set to `ellipse1`, so the popup appears below the <xref:System.Windows.Shapes.Ellipse>.  
   
- [!code-xml[PopupPositionSnippet#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#2)]  
+ [!code-xaml[PopupPositionSnippet#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#2)]  
   
  The following illustration shows that the <xref:System.Windows.Controls.Primitives.Popup> is positioned relative to the <xref:System.Windows.Shapes.Ellipse>.  
   
@@ -84,7 +84,7 @@ Popup with PlacementTarget
   
  The following example creates two <xref:System.Windows.Controls.Canvas> objects, each one containing a <xref:System.Windows.Shapes.Rectangle> and a <xref:System.Windows.Controls.Primitives.Popup>.  In both cases, the target object for the <xref:System.Windows.Controls.Primitives.Popup> is the <xref:System.Windows.Controls.Canvas>. The <xref:System.Windows.Controls.Primitives.Popup> in the first <xref:System.Windows.Controls.Canvas> has the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> set, with its <xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>, <xref:System.Windows.Rect.Width%2A>, and <xref:System.Windows.Rect.Height%2A> properties set to 50, 50, 50, and 100, respectively. The <xref:System.Windows.Controls.Primitives.Popup> in the second <xref:System.Windows.Controls.Canvas> does not have the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> set.  As a result, the first <xref:System.Windows.Controls.Primitives.Popup> is positioned below the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> and the second <xref:System.Windows.Controls.Primitives.Popup> is positioned below the <xref:System.Windows.Controls.Canvas>. Each <xref:System.Windows.Controls.Canvas> also contains a <xref:System.Windows.Shapes.Rectangle> that has the same bounds as the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> for the first <xref:System.Windows.Controls.Primitives.Popup>.  Note that the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> does not create a visible element in the application; the example creates a <xref:System.Windows.Shapes.Rectangle> to represent the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>.  
   
- [!code-xml[PopupPositionSnippet#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#4)]  
+ [!code-xaml[PopupPositionSnippet#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#4)]  
   
  The following illustration shows the result of the preceding example.  
   
@@ -96,7 +96,7 @@ Popup with and without PlacementRectangle
   
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom> (the default), so the target origin is the bottom-left corner of the target area and the popup alignment point is the top-left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
- [!code-xml[PopupPositionSnippet#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]  
+ [!code-xaml[PopupPositionSnippet#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]  
   
  The following illustration shows the result of the preceding example.  
   

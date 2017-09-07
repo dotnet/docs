@@ -1,5 +1,5 @@
 ---
-title: "Emitting User-Code Traces | Microsoft Docs"
+title: "Emitting User-Code Traces"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

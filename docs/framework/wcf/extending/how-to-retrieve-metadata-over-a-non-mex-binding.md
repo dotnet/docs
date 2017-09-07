@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve Metadata Over a non-MEX Binding | Microsoft Docs"
+title: "How to: Retrieve Metadata Over a non-MEX Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

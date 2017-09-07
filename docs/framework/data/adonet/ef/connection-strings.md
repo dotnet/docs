@@ -1,5 +1,5 @@
 ---
-title: "Connection Strings | Microsoft Docs"
+title: "Connection Strings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -101,8 +101,8 @@ Metadata=datadir\metadata\
 Metadata=.\  
 ```  
   
-## Support for the &#124;DataDirectory&#124; Substitution String and the Web Application Root Pperator (~)  
- `DataDirectory` and the ~ operator are used in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>as part of the `Metadata` and `Provider Connection String` keywords. The <xref:System.Data.EntityClient.EntityConnection> forwards the `DataDirectory` and the ~ operator to <xref:System.Data.Metadata.Edm.MetadataWorkspace> and the store provider, respectively.  
+## Support for the &#124;DataDirectory&#124; Substitution String and the Web Application Root Operator (~)  
+ `DataDirectory` and the ~ operator are used in the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> as part of the `Metadata` and `Provider Connection String` keywords. The <xref:System.Data.EntityClient.EntityConnection> forwards the `DataDirectory` and the ~ operator to <xref:System.Data.Metadata.Edm.MetadataWorkspace> and the store provider, respectively.  
   
 |Term|Description|  
 |----------|-----------------|  

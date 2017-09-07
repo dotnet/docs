@@ -39,7 +39,7 @@
 ## Examples  
  The following example creates a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> that contains one <xref:System.Windows.Controls.Grid>. It also contains a <xref:System.Windows.VisualStateGroup> named `CommonStates`, which defines the `MouseOver` and `Normal` states. The <xref:System.Windows.VisualStateGroup> also has a <xref:System.Windows.VisualTransition> that specifies that it takes one half second for the <xref:System.Windows.Controls.Grid> to change from green to red when the user moves the mouse pointer over the <xref:System.Windows.Controls.Button>.  
   
- [!code-xml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
+ [!code-xaml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
   
  ]]></format>
     </remarks>
@@ -152,7 +152,7 @@
 ## Examples  
  The following example creates two <xref:System.Windows.VisualStateGroup> objects that are named `CommonStates` and `FocusStates`. The control will be in exactly one state from each <xref:System.Windows.VisualStateGroup> at all times. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
- [!code-xml[VSMButtonTemplate#5](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#5)]  
+ [!code-xaml[VSMButtonTemplate#5](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#5)]  
   
  ]]></format>
         </remarks>
@@ -179,7 +179,7 @@
 ## Examples  
  The following example creates a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> that contains one <xref:System.Windows.Controls.Grid>. It also contains a <xref:System.Windows.VisualStateGroup> named `CommonStates`, which defines the `MouseOver` and `Normal` states. The <xref:System.Windows.VisualStateGroup> also has a <xref:System.Windows.VisualTransition> that specifies that it takes one half second for the <xref:System.Windows.Controls.Grid> to change from green to red when the user moves the mouse pointer over the <xref:System.Windows.Controls.Button>.  
   
- [!code-xml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
+ [!code-xaml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
   
  ]]></format>
         </remarks>
@@ -211,7 +211,7 @@
 ## Examples  
  The following example creates a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> that contains one <xref:System.Windows.Controls.Grid>. It also contains a <xref:System.Windows.VisualStateGroup> named `CommonStates`, which defines the `MouseOver` and `Normal` states. The <xref:System.Windows.VisualStateGroup> also has a <xref:System.Windows.VisualTransition> that specifies that it takes one half second for the <xref:System.Windows.Controls.Grid> to change from green to red when the user moves the mouse pointer over the <xref:System.Windows.Controls.Button>.  
   
- [!code-xml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
+ [!code-xaml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
   
  ]]></format>
         </remarks>

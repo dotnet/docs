@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate a BorderThickness Value | Microsoft Docs"
+title: "How to: Animate a BorderThickness Value"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

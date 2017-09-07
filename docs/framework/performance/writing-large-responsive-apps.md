@@ -1,5 +1,5 @@
 ---
-title: "Writing Large, Responsive .NET Framework Apps | Microsoft Docs"
+title: "Writing Large, Responsive .NET Framework Apps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -415,7 +415,7 @@ class Compilation { /*...*/
   
  **Fix for example 6**  
   
- To remove the completed <xref:System.Threading.Tasks.Task>allocation, you can cache the Task object with the completed result:  
+ To remove the completed <xref:System.Threading.Tasks.Task> allocation, you can cache the Task object with the completed result:  
   
 ```csharp  
 class Compilation { /*...*/  

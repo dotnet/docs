@@ -1,5 +1,5 @@
 ---
-title: "How to: Define and Reference a Resource | Microsoft Docs"
+title: "How to: Define and Reference a Resource"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ This example shows how to define a resource and reference it by using an attribu
   
  Note that one of the properties within the setters of the `Label` style also references the `MyBrush` resource defined earlier. This is a common technique, but it is important to remember that resources are parsed and entered into a resource dictionary in the order that they are given. Resources are also requested by the order found within the dictionary if you use the [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md) to reference them from within another resource. Make sure that any resource that you reference is defined earlier within the resources collection than where that resource is then requested. If necessary, you can work around the strict creation order of resource refererences by using a [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md) to reference the resource at runtime instead, but you should be aware that this DynamicResource technique has performance consequences. For details, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
   
- [!code-xml[FEResource#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#xaml)]  
+ [!code-xaml[FEResource#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#xaml)]  
   
 ## See Also  
  [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   

@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a method should be called when composition is completed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+The method that this attribute is applied to must be void, parameterless, and either public or internal.
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +40,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.OnImportsSatisfiedAttribute" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

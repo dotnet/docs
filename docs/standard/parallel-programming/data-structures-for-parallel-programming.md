@@ -1,5 +1,5 @@
 ---
-title: "Data Structures for Parallel Programming | Microsoft Docs"
+title: "Data Structures for Parallel Programming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

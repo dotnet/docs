@@ -1,5 +1,5 @@
 ---
-title: "#pragma checksum (C# Reference) | Microsoft Docs"
+title: "#pragma checksum (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -35,7 +35,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
   
 ## Syntax  
   
-```  
+```csharp
 #pragma checksum "filename" "{guid}" "checksum bytes"  
 ```  
   
@@ -60,7 +60,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
   
 ## Example  
   
-```  
+```csharp
 class TestClass  
 {  
     static int Main()  

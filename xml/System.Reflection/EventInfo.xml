@@ -885,7 +885,7 @@ remove_<EventName>(<EventHandlerType> handler)
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.EventInfo left, System.Reflection.EventInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.EventInfo left, System.Reflection.EventInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Reflection.EventInfo left, class System.Reflection.EventInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.op_Equality(System.Reflection.EventInfo,System.Reflection.EventInfo)" />
       <MemberType>Method</MemberType>
@@ -919,7 +919,7 @@ remove_<EventName>(<EventHandlerType> handler)
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.EventInfo left, System.Reflection.EventInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.EventInfo left, System.Reflection.EventInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Reflection.EventInfo left, class System.Reflection.EventInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.EventInfo.op_Inequality(System.Reflection.EventInfo,System.Reflection.EventInfo)" />
       <MemberType>Method</MemberType>

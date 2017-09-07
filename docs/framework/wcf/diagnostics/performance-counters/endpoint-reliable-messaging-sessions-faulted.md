@@ -1,5 +1,5 @@
 ---
-title: "Endpoint: Reliable Messaging Sessions Faulted | Microsoft Docs"
+title: "Endpoint: Reliable Messaging Sessions Faulted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

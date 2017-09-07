@@ -1,6 +1,6 @@
 ---
-title: Records (F#) | Microsoft Docs
-description: Records (F#)
+title: Records (F#)
+description: Learn how F# records represent simple aggregates of named values, optionally with members.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -116,11 +116,15 @@ Like union and structure types, records have structural equality semantics. Clas
 
 If you write the same code with classes, the two class objects would be unequal because the two values would represent two objects on the heap and only the addresses would be compared (unless the class type overrides the `System.Object.Equals` method).
 
+If you need reference equality for records, add the attribute `[<ReferenceEquality>]` above the record.
+
 ## See Also
 [F# Types](fsharp-types.md)
 
 [Classes](classes.md)
 
 [F# Language Reference](index.md)
+
+[Reference-Equality](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/core.referenceequalityattribute-class-%5bfsharp%5d)
 
 [Pattern Matching](pattern-matching.md)

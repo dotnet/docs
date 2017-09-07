@@ -1,6 +1,6 @@
 ---
-title: global.json reference | Microsoft Docs
-description: global.json reference
+title: global.json reference
+description: See the schema for the global.json file, which permits setting the .NET Core tools version.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw

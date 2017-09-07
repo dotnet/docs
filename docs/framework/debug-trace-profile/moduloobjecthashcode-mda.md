@@ -1,5 +1,5 @@
 ---
-title: "moduloObjectHashcode MDA | Microsoft Docs"
+title: "moduloObjectHashcode MDA"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

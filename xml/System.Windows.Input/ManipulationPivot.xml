@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property is a <xref:System.Windows.Input.ManipulationPivot>.  When you set<xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> in an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event, the manipulation will contain rotation data when the user uses one finger during a manipulation.  This is to simulate real-world situations where you can use one finger to rotate an object, such as a piece of paper on a table.  If the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> is `null`, the user must use two fingers to cause rotation.  
+ The <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property is a <xref:System.Windows.Input.ManipulationPivot>. When you set <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> in an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event, the manipulation will contain rotation data when the user uses one finger during a manipulation.  This is to simulate real-world situations where you can use one finger to rotate an object, such as a piece of paper on a table.  If the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> is `null`, the user must use two fingers to cause rotation.  
   
    
   

@@ -1,5 +1,5 @@
 ---
-title: "Choosing a Transport | Microsoft Docs"
+title: "Choosing a Transport"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

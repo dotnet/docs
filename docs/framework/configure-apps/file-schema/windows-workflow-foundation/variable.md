@@ -1,5 +1,5 @@
 ---
-title: "&lt;variable&gt; | Microsoft Docs"
+title: "&lt;variable&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

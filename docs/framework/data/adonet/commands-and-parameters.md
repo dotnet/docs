@@ -1,5 +1,5 @@
 ---
-title: "Commands and Parameters | Microsoft Docs"
+title: "Commands and Parameters"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

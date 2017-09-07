@@ -1,0 +1,110 @@
+<Type Name="TransactionStatus" FullName="System.EnterpriseServices.TransactionStatus">
+  <TypeSignature Language="C#" Value="public enum TransactionStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the transaction status.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.TransactionStatus> is the value returned by <xref:System.EnterpriseServices.ServiceDomain.Leave%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="Aborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus Aborted = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Aborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction is aborted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aborting">
+      <MemberSignature Language="C#" Value="Aborting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus Aborting = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Aborting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction is in the process of aborting.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Commited">
+      <MemberSignature Language="C#" Value="Commited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus Commited = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Commited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction has committed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LocallyOk">
+      <MemberSignature Language="C#" Value="LocallyOk" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus LocallyOk = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.LocallyOk" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction has neither committed nor aborted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoTransaction">
+      <MemberSignature Language="C#" Value="NoTransaction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus NoTransaction = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.NoTransaction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No transactions are being used through <see cref="M:System.EnterpriseServices.ServiceDomain.Enter(System.EnterpriseServices.ServiceConfig)" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

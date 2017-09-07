@@ -1,5 +1,5 @@
 ---
-title: "C# Compiler Options Listed by Category | Microsoft Docs"
+title: "C# Compiler Options Listed by Category"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -49,6 +49,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[/pdb](../../../csharp/language-reference/compiler-options/pdb-compiler-option.md)|Specifies the file name and location of the .pdb file.|  
 |[/platform](../../../csharp/language-reference/compiler-options/platform-compiler-option.md)|Specify the output platform.|  
 |[/preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specify a language for compiler output.|  
+|[/refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|  
+|[/refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|  
 |[/target](../../../csharp/language-reference/compiler-options/target-compiler-option.md)|Specifies the format of the output file using one of five options: [/target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md), [/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md), [/target:library](../../../csharp/language-reference/compiler-options/target-library-compiler-option.md), [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md), or [/target:winmdobj](../../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md).|  
 |/modulename:\<string>|Specify the name of the source module|  
   
@@ -106,7 +108,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[/codepage](../../../csharp/language-reference/compiler-options/codepage-compiler-option.md)|Specifies the code page to use for all source code files in the compilation.|  
 |[/help](../../../csharp/language-reference/compiler-options/help-compiler-option.md)|Lists compiler options to stdout.|  
 |[/highentropyva](../../../csharp/language-reference/compiler-options/highentropyva-compiler-option.md)|Specifies that the executable file supports address space layout randomization (ASLR).|  
-|[/langversion](../../../csharp/language-reference/compiler-options/langversion-compiler-option.md)|Specify language version mode: ISO-1, ISO-2, 3, 4, 5, 6, or Default|  
+|[/langversion](../../../csharp/language-reference/compiler-options/langversion-compiler-option.md)|Specify language version mode: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, or Latest |  
 |[/main](../../../csharp/language-reference/compiler-options/main-compiler-option.md)|Specifies the location of the **Main** method.|  
 |[/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)|Instructs the compiler not to compile with csc.rsp.|  
 |[/nologo](../../../csharp/language-reference/compiler-options/nologo-compiler-option.md)|Suppresses compiler banner information.|  

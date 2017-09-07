@@ -1,5 +1,5 @@
 ---
-title: "UI Automation Support for the Menu Control Type | Microsoft Docs"
+title: "UI Automation Support for the Menu Control Type"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -67,7 +67,7 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.MenuClosedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty> property-changed event.|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty> property-changed event.|Required|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>property-changed event.|Required|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty> property-changed event.|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   

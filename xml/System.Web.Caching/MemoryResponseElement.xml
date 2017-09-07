@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> property must not be `null`, although it can be a zero-length array. If <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A>property is `null`, the <xref:System.Web.Caching.MemoryResponseElement> constructor throws an <xref:System.ArgumentNullException>. If the <xref:System.Web.Caching.MemoryResponseElement.Length%2A> property is less than zero or greater than the size of the value of <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A>property.  
+ The value of <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> property must not be `null`, although it can be a zero-length array. If <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> property is `null`, the <xref:System.Web.Caching.MemoryResponseElement> constructor throws an <xref:System.ArgumentNullException>. If the <xref:System.Web.Caching.MemoryResponseElement.Length%2A> property is less than zero or greater than the size of the value of <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> property.  
   
  ]]></format>
         </remarks>

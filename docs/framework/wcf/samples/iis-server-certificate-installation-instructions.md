@@ -1,5 +1,5 @@
 ---
-title: "Internet Information Services (IIS) Server Certificate Installation Instructions | Microsoft Docs"
+title: "Internet Information Services (IIS) Server Certificate Installation Instructions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "For Further Reading (Parallel Programming) | Microsoft Docs"
+title: "For Further Reading (Parallel Programming)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "1422 - NegotiateTokenAuthenticatorStateCacheExceeded | Microsoft Docs"
+title: "1422 - NegotiateTokenAuthenticatorStateCacheExceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

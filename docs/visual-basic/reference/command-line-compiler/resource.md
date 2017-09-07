@@ -1,5 +1,5 @@
 ---
-title: "/resource (Visual Basic) | Microsoft Docs"
+title: "/resource (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -63,7 +63,7 @@ Embeds a managed resource in an assembly.
   
  The short form of `/resource` is `/res`.  
   
- For information about how to set `/resource` in the Visual Studio IDE, see [Managing Application Resources (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-resources-dotnet).  
+ For information about how to set `/resource` in the Visual Studio IDE, see [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
   
 ## Example  
  The following code compiles `In.vb` and attaches resource file `Rf.resource`.  

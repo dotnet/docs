@@ -1,5 +1,5 @@
 ---
-title: "Common Attributes (C#) | Microsoft Docs"
+title: "Common Attributes (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -51,7 +51,7 @@ This topic describes the attributes that are most commonly used in C# programs.
 -   Assembly manifest attributes  
   
 ### Assembly Identity Attributes  
- Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
+ Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
   
  The following table shows the identity attributes.  
   
@@ -189,16 +189,18 @@ static void DoIfAorB()
   
  To achieve the effect of logically linking symbols by using the AND operator, you can define serial conditional methods. For example, the second method below will execute only if both `A` and `B` are defined:  
   
-```csharp  
-<Conditional("A")>   
-Shared Sub DoIfA()  
-    DoIfAandB()  
-End Sub  
+```csharp
+[Conditional("A")]  
+static void DoIfA()  
+{  
+    DoIfAandB();  
+}  
   
-<Conditional("B")>   
-Shared Sub DoIfAandB()  
-    ' Code to execute when both A and B are defined...  
-End Sub  
+[Conditional("B")]  
+static void DoIfAandB()  
+{  
+    // Code to execute when both A and B are defined...  
+}  
 ```  
   
 ### Using Conditional with Attribute Classes  

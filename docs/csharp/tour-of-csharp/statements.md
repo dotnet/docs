@@ -1,5 +1,5 @@
 ---
-title: C# Statements - A tour of the C# language | Microsoft Docs
+title: C# Statements - A tour of the C# language
 description: You create the actions of a C# program using statements
 keywords: .NET, csharp, statements, syntax
 author: BillWagner

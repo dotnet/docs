@@ -1,5 +1,5 @@
 ---
-title: "How to: Validate DBML and External Mapping Files | Microsoft Docs"
+title: "How to: Validate DBML and External Mapping Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

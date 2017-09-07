@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ServiceHostErrorOnReleasePerformanceCounter | Microsoft Docs"
+title: "System.ServiceModel.ServiceHostErrorOnReleasePerformanceCounter"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

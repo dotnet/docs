@@ -1,5 +1,5 @@
 ---
-title: "5003 - DCDeserializeWithSurrogateStart | Microsoft Docs"
+title: "5003 - DCDeserializeWithSurrogateStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

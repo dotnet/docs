@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugInternalFrame::GetFrameType Method | Microsoft Docs"
+title: "ICorDebugInternalFrame::GetFrameType Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

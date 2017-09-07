@@ -1,5 +1,5 @@
 ---
-title: "3397 - BufferedAsyncWriteStop | Microsoft Docs"
+title: "3397 - BufferedAsyncWriteStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

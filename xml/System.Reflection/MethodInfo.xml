@@ -50,7 +50,7 @@
   
 -   You can determine the method's visibility by retrieving the values of the <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, <xref:System.Reflection.MethodBase.IsPrivate%2A>, and <xref:System.Reflection.MethodBase.IsPublic%2A> properties.  
   
--   You can discover what attributes are applied to the method by retrieving the value of the <xref:System.Reflection.MethodBase.Attributes%2A> property or calling the <xref:System.Reflection.Assembly.GetCustomAttributes%2A>method.  
+-   You can discover what attributes are applied to the method by retrieving the value of the <xref:System.Reflection.MethodBase.Attributes%2A> property or calling the <xref:System.Reflection.Assembly.GetCustomAttributes%2A> method.  
   
 -   You can determine whether the method is a generic method, an open constructed generic method, or a closed constructed generic method, by retrieving the values of the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> and <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> properties.  
   
@@ -649,7 +649,7 @@ public:
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.MethodInfo left, System.Reflection.MethodInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.MethodInfo left, System.Reflection.MethodInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Reflection.MethodInfo left, class System.Reflection.MethodInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.op_Equality(System.Reflection.MethodInfo,System.Reflection.MethodInfo)" />
       <MemberType>Method</MemberType>
@@ -683,7 +683,7 @@ public:
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.MethodInfo left, System.Reflection.MethodInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.MethodInfo left, System.Reflection.MethodInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Reflection.MethodInfo left, class System.Reflection.MethodInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.op_Inequality(System.Reflection.MethodInfo,System.Reflection.MethodInfo)" />
       <MemberType>Method</MemberType>

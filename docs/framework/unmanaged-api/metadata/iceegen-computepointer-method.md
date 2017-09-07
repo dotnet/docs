@@ -1,5 +1,5 @@
 ---
-title: "ICeeGen::ComputePointer Method | Microsoft Docs"
+title: "ICeeGen::ComputePointer Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

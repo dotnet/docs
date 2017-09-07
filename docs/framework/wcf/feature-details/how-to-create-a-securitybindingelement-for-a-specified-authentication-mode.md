@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a SecurityBindingElement for a Specified Authentication Mode | Microsoft Docs"
+title: "How to: Create a SecurityBindingElement for a Specified Authentication Mode"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

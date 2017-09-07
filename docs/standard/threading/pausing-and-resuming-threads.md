@@ -1,5 +1,5 @@
 ---
-title: "Pausing and Resuming Threads | Microsoft Docs"
+title: "Pausing and Resuming Threads"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

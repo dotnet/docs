@@ -1,5 +1,5 @@
 ---
-title: What's New in C# - C# Guide | Microsoft Docs
+title: What's New in C# - C# Guide
 description: How is the C# language evolving
 keywords: C#, Latest Features, What's New, Roslyn
 author: BillWagner
@@ -14,10 +14,19 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 
 # What's new in C# #
 
+This page provides a roadmap of new features in each major release of
+the C# language. The links below provide detailed information on the
+major features added in each release.
+
+> [!IMPORTANT]
+> The C# language relies on types and methods in a *standard library* for some of the features. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from @System.Exception. Similarly, every `catch` is checked to ensure that the type being caught is derived from @System.Exception. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency. 
+
+* [C# 7.1](csharp-7-1.md):
+    - This page describes the latest features in the C# language. This covers C# 7.1, currently available in [Visual Studio 2017 version 15.3](https://www.visualstudio.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
 
 * [C# 7](csharp-7.md):
-    - This page describes the latest features in the C# language. This covers C# 7, currently available in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/).
-
+    - This page describes the features added in C# 7. Theses were added in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/) and [.NET Core 1.0](../../core/whats-new/index.md) and later
+     
 * [C# 6](csharp-6.md):
     - This page describes the features that were added in C# 6. These features are available in Visual Studio 2015 for Windows developers, and on .NET Core 1.0 for developers exploring C# on macOS and Linux.
 
@@ -25,7 +34,7 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
     - This page describes C# Interactive, an interactive Read Eval Print Loop (REPL) that you can use to explore the C# language. You can use it to write code interactively and see it execute immediately, without any compile or build step.
 -->
 * [Cross Platform Support](../../core/index.md):
-    - C#, through .NET Core support, runs on multiple platforms. If you are interested in trying C# on macOS, or on one of the many support Linux distributions, learn more about .NET Core.
+    - C#, through .NET Core support, runs on multiple platforms. If you are interested in trying C# on macOS, or on one of the many supported Linux distributions, learn more about .NET Core.
 
 <!--
 - [.NET Compiler Platform SDK](../roslyn/index.md):

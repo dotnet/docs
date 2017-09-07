@@ -1,5 +1,5 @@
 ---
-title: "Static Class Design | Microsoft Docs"
+title: "Static Class Design"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

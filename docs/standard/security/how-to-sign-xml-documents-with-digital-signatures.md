@@ -1,5 +1,5 @@
 ---
-title: "How to: Sign XML Documents with Digital Signatures | Microsoft Docs"
+title: "How to: Sign XML Documents with Digital Signatures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

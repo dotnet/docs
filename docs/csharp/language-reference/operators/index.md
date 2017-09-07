@@ -1,5 +1,5 @@
 ---
-title: "C# Operators | Microsoft Docs"
+title: "C# Operators"
 ms.date: "2017-03-09"
 ms.prod: .net
 ms.technology: 
@@ -74,7 +74,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [unchecked](../../../csharp/language-reference/keywords/unchecked.md) – disables overflow checking for integer operations.  This is the default compiler behavior.  
   
- [default(T)](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md) – returns the default initialized value of type T, `null` for reference types, zero for numeric types, and zero/`null` filled in members for struct types.  
+ [default(T)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md) – returns the default value of type T, `null` for reference types, zero for numeric types, and zero/`null` filled in members for struct types.  
   
  [delegate](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.  
   
@@ -229,6 +229,6 @@ C# provides many operators, which are symbols that specify which operations (mat
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C#](../../../csharp/csharp.md)   
+ [C#](../../../csharp/index.md)
  [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)

@@ -36,7 +36,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.TabControl> with <xref:System.Windows.Controls.TabItem> elements.  
   
- [!code-xml[TabControl#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControl/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[TabControl#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControl/CSharp/Pane1.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -99,7 +99,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.TabItem.IsSelected%2A> property to select a <xref:System.Windows.Controls.TabItem> programmatically.  
   
- [!code-xml[TabControlStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlStyles/CS/Pane1.xaml#4)]   
+ [!code-xaml[TabControlStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlStyles/CS/Pane1.xaml#4)]   
   
  ]]></format>
         </remarks>

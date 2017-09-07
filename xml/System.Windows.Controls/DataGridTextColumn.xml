@@ -41,7 +41,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.DataGrid> that has customized text columns and uses XML data as the source. The illustration earlier in this topic shows how this code is displayed. For more information about binding to XML data, see [How to: Bind to XML Data Using an XMLDataProvider and XPath Queries](~/docs/framework/wpf/data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md).  
   
- [!code-xml[DataGrid_TextColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_textcolumn/CS/mainwindow.xaml#1)]   
+ [!code-xaml[DataGrid_TextColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_textcolumn/CS/mainwindow.xaml#1)]   
   
  ]]></format>
     </remarks>

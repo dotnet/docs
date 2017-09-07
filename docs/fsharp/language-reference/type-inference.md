@@ -1,6 +1,6 @@
 ---
-title: Type Inference (F#) | Microsoft Docs
-description: Type Inference (F#)
+title: Type Inference (F#)
+description: Learn how the F# compiler infers the types of values, variables, parameters, and return values.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

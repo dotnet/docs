@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::EnumFields Method | Microsoft Docs"
+title: "IMetaDataImport::EnumFields Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

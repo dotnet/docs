@@ -556,7 +556,7 @@
  Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](~/docs/standard/base-types/conversion-tables.md) topic.  
   
 ## Precision in Comparisons  
- The<xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .333333 and the <xref:System.Double> value returned by dividing 1 by 3 are unequal.  
+ The <xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .333333 and the <xref:System.Double> value returned by dividing 1 by 3 are unequal.  
   
  [!code-csharp[System.Double.Epsilon#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.Epsilon/cs/Equals_25051.cs#1)]
  [!code-vb[System.Double.Epsilon#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/Equals_25051.vb#1)]  
@@ -625,7 +625,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .3333 and the <xref:System.Double> returned by dividing 1 by 3 are unequal.  
+ The <xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .3333 and the <xref:System.Double> returned by dividing 1 by 3 are unequal.  
   
  [!code-csharp[System.Double.Epsilon#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double.Epsilon/cs/Equals_25051.cs#3)]
  [!code-vb[System.Double.Epsilon#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/Equals_25051.vb#3)]  
@@ -1160,7 +1160,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (double left, double right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (double left, double right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(float64 left, float64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.op_Equality(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
@@ -1207,7 +1207,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (double left, double right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (double left, double right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(float64 left, float64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.op_GreaterThan(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
@@ -1252,7 +1252,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (double left, double right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (double left, double right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(float64 left, float64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.op_GreaterThanOrEqual(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
@@ -1297,7 +1297,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (double left, double right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (double left, double right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(float64 left, float64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.op_Inequality(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
@@ -1342,7 +1342,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (double left, double right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (double left, double right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(float64 left, float64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.op_LessThan(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
@@ -1387,7 +1387,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (double left, double right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (double left, double right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(float64 left, float64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.op_LessThanOrEqual(System.Double,System.Double)" />
       <MemberType>Method</MemberType>

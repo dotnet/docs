@@ -1,5 +1,5 @@
 ---
-title: "Documenting Your Code with XML (Visual Basic) | Microsoft Docs"
+title: "Documenting Your Code with XML (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -66,7 +66,7 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can document your code using
   
 -   [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)  
   
--   [XML Tools in Visual Studio](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)  
+-   [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
   
 ## See Also  
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)   

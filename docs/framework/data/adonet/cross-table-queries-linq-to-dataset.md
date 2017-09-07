@@ -1,5 +1,5 @@
 ---
-title: "Cross-Table Queries (LINQ to DataSet) | Microsoft Docs"
+title: "Cross-Table Queries (LINQ to DataSet)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

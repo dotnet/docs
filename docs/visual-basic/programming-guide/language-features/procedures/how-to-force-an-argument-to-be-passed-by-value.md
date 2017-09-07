@@ -1,5 +1,5 @@
 ---
-title: "How to: Force an Argument to Be Passed by Value (Visual Basic) | Microsoft Docs"
+title: "How to: Force an Argument to Be Passed by Value (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

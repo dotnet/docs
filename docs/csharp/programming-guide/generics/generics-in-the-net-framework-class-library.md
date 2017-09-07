@@ -1,5 +1,5 @@
 ---
-title: "Generics in the .NET Framework Class Library (C# Programming Guide) | Microsoft Docs"
+title: "Generics in the .NET Framework Class Library (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

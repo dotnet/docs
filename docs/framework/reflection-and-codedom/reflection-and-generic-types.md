@@ -1,5 +1,5 @@
 ---
-title: "Reflection and Generic Types | Microsoft Docs"
+title: "Reflection and Generic Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -106,7 +106,7 @@ Class D(Of V, W)
 End Class  
 ```  
   
-```cpp#  
+```cpp  
 generic<typename T, typename U> ref class B {};  
 generic<typename V, typename W> ref class D : B<int, V> {};  
 ```  

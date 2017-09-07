@@ -43,7 +43,7 @@
   
 -   Determine whether any iteration of the loop has called the <xref:System.Threading.Tasks.ParallelLoopState.Stop%2A> method by retrieving the value of the <xref:System.Threading.Tasks.ParallelLoopState.IsStopped%2A> property. You can use this property to return from iterations of the loop that started before the call to the <xref:System.Threading.Tasks.ParallelLoopState.Stop%2A> method but are still executing.  
   
--   Determine whether any iteration of the loop has called the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A> or <xref:System.Threading.Tasks.ParallelLoopState.Stop%2A>method or has thrown an exception by retrieving the value of the <xref:System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration%2A> property.  
+-   Determine whether any iteration of the loop has called the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A> or <xref:System.Threading.Tasks.ParallelLoopState.Stop%2A> method or has thrown an exception by retrieving the value of the <xref:System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration%2A> property.  
   
 -   Exit from a long-running iteration whose index is greater than the index of an iteration in which Break was called by retrieving the value of the <xref:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration%2A> property.  
   

@@ -1,5 +1,5 @@
 ---
-title: "XAML Overview (WPF) | Microsoft Docs"
+title: "XAML Overview (WPF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -42,7 +42,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  The following example shows how you might create a button as part of a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. This example is just intended to give you a flavor of how XAML represents common [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] programming metaphors (it is not a complete sample).  
   
- [!code-xml[XAMLOvwSupport#DirtSimple](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#dirtsimple)]  
+ [!code-xaml[XAMLOvwSupport#DirtSimple](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#dirtsimple)]  
   
 <a name="xaml_syntax_in_brief"></a>   
 ## XAML Syntax in Brief  
@@ -55,7 +55,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  Object element syntax always starts with an opening angle bracket (\<). This is followed by the name of the type where you want to create an instance. (The name can possibly include a prefix, a concept that will be explained later.) After this, you can optionally declare attributes on the object element. To complete the object element tag, end with a closing angle bracket (>). You can instead use a self-closing form that does not have any content, by completing the tag with a forward slash and closing angle bracket in succession (/>). For example, look at the previously shown markup snippet again:  
   
- [!code-xml[XAMLOvwSupport#DirtSimple](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#dirtsimple)]  
+ [!code-xaml[XAMLOvwSupport#DirtSimple](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#dirtsimple)]  
   
  This specifies two object elements: `<StackPanel>` (with content, and a closing tag later), and `<Button .../>` (the self-closing form, with several attributes). The object elements `StackPanel` and `Button` each map to the name of a class that is defined by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and is part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies. When you specify an object element tag, you create an instruction for XAML processing to create a new instance. Each instance is created by calling the default constructor of the underlying type when parsing and loading the XAML.  
   
@@ -64,7 +64,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  Attribute syntax is the most streamlined property setting syntax and is the most intuitive syntax to use for developers who have used markup languages in the past. For example, the following markup creates a button that has red text and a blue background in addition to display text specified as `Content`.  
   
- [!code-xml[XAMLOvwSupport#BlueRedButton](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#blueredbutton)]  
+ [!code-xaml[XAMLOvwSupport#BlueRedButton](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#blueredbutton)]  
   
 ### Property Element Syntax  
  For some properties of an object element, attribute syntax is not possible, because the object or information necessary to provide the property value cannot be adequately expressed within the quotation mark and string restrictions of attribute syntax. For these cases, a different syntax known as property element syntax can be used.  
@@ -73,7 +73,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  If an attribute syntax is possible, using the attribute syntax is typically more convenient and enables a more compact markup, but that is often just a matter of style, not a technical limitation. The following example shows the same properties being set as in the previous attribute syntax example, but this time by using property element syntax for all properties of the `Button`.  
   
- [!code-xml[XAMLOvwSupport#BlueRedButtonPE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#blueredbuttonpe)]  
+ [!code-xaml[XAMLOvwSupport#BlueRedButtonPE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#blueredbuttonpe)]  
   
 ### Collection Syntax  
  The XAML language includes some optimizations that produce more human-readable markup. One such optimization is that if a particular property takes a collection type, then items that you declare in markup as child elements within that property's value become part of the collection. In this case a collection of child object elements is the value being set to the collection property.  
@@ -156,7 +156,7 @@ This topic describes the features of the XAML language and demonstrates how you 
 ### Attribute Syntax (Events)  
  Attribute syntax can also be used for members that are events rather than properties. In this case, the attribute's name is the name of the event. In the WPF implementation of events for XAML, the attribute's value is the name of a handler that implements that event's delegate. For example, the following markup assigns a handler for the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event to a <xref:System.Windows.Controls.Button> created in markup:  
   
- [!code-xml[XAMLOvwSupport#ButtonWithCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml#buttonwithcodebehind)]  
+ [!code-xaml[XAMLOvwSupport#ButtonWithCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml#buttonwithcodebehind)]  
   
  There is more to events and XAML in WPF than just this example of the attribute syntax. For example, you might wonder what the `ClickHandler` referenced here represents and how it is defined. This will be explained in the upcoming [Events and XAML Code-Behind](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md#events_and_xaml_codebehind) section of this topic.  
   
@@ -174,9 +174,9 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  For example, the following markup sets the value of the <xref:System.Windows.FrameworkElement.Style%2A> property using attribute syntax. The <xref:System.Windows.FrameworkElement.Style%2A> property takes an instance of the <xref:System.Windows.Style> class, which by default could not be instantiated by an attribute syntax string. But in this case, the attribute references a particular markup extension, [StaticResource](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md). When that markup extension is processed, it returns a reference to a style that was previously instantiated as a keyed resource in a resource dictionary.  
   
- [!code-xml[FEResourceSH_snip#XAMLOvwShortResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources)]  
-[!code-xml[FEResourceSH_snip#XAMLOvwShortResources2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources2)]  
-[!code-xml[FEResourceSH_snip#XAMLOvwShortResources3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]  
+ [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources)]  
+[!code-xaml[FEResourceSH_snip#XAMLOvwShortResources2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources2)]  
+[!code-xaml[FEResourceSH_snip#XAMLOvwShortResources3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]  
   
  For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Framework XAML implementations, see [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
@@ -186,11 +186,11 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  The <xref:System.Windows.Thickness> structure is an example of a type that has a type conversion enabled for XAML usages. <xref:System.Windows.Thickness> indicates measurements within a nested rectangle and is used as the value for properties such as <xref:System.Windows.FrameworkElement.Margin%2A>. By placing a type converter on <xref:System.Windows.Thickness>, all properties that use a <xref:System.Windows.Thickness> are easier to specify in XAML because they can be specified as attributes. The following example uses a type conversion and attribute syntax to provide a value for a <xref:System.Windows.FrameworkElement.Margin%2A>:  
   
- [!code-xml[XAMLOvwSupport#MarginTCE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#margintce)]  
+ [!code-xaml[XAMLOvwSupport#MarginTCE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#margintce)]  
   
  The previous attribute syntax example is equivalent to the following more verbose syntax example, where the <xref:System.Windows.FrameworkElement.Margin%2A> is instead set through property element syntax containing a <xref:System.Windows.Thickness> object element. The four key properties of <xref:System.Windows.Thickness> are set as attributes on the new instance:  
   
- [!code-xml[XAMLOvwSupport#MarginVerbose](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#marginverbose)]  
+ [!code-xaml[XAMLOvwSupport#MarginVerbose](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#marginverbose)]  
   
 > [!NOTE]
 >  There are also a limited number of objects where the type conversion is the only public way to set a property to that type without involving a subclass, because the type itself does not have a default constructor. An example is <xref:System.Windows.Input.Cursor>.  
@@ -201,8 +201,8 @@ This topic describes the features of the XAML language and demonstrates how you 
 ## XAML Root Elements and XAML Namespaces  
  A XAML file must have only one root element, in order to be both a well-formed [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] file and a valid XAML file. For typical WPF scenarios, you use a root element that has a prominent meaning in the WPF application model (for example, <xref:System.Windows.Window> or <xref:System.Windows.Controls.Page> for a page, <xref:System.Windows.ResourceDictionary> for an external dictionary, or <xref:System.Windows.Application> for the application definition). The following example shows the root element of a typical XAML file for a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page, with the root element of <xref:System.Windows.Controls.Page>.  
   
- [!code-xml[XAMLOvwSupport#RootOnly](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#rootonly)]  
-[!code-xml[XAMLOvwSupport#RootOnly2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#rootonly2)]  
+ [!code-xaml[XAMLOvwSupport#RootOnly](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#rootonly)]  
+[!code-xaml[XAMLOvwSupport#RootOnly2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#rootonly2)]  
   
  The root element also contains the attributes `xmlns` and `xmlns:x`. These attributes indicate to a XAML processor which XAML namespaces contain the type definitions for backing types that the markup will reference as elements. The `xmlns` attribute specifically indicates the default XAML namespace. Within the default XAML namespace, object elements in the markup can be specified without a prefix. For most [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application scenarios, and for almost all of the examples given in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] sections of the [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)], the default XAML namespace is mapped to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] namespace [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)]. The `xmlns:x` attribute indicates an additional XAML namespace, which maps the XAML language namespace [!INCLUDE[TLA#tla_xamlxmlnsv1](../../../../includes/tlasharptla-xamlxmlnsv1-md.md)].  
   
@@ -256,7 +256,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  In the examples so far, you have seen several buttons, but none of these buttons had any logical behavior associated with them yet. The primary application-level mechanism for adding a behavior for an object element is to use an existing event of the element class, and to write a specific handler for that event that is invoked when that event is raised at run time. The event name and the name of the handler to use are specified in the markup, whereas the code that implements your handler is defined in the code-behind.  
   
- [!code-xml[XAMLOvwSupport#ButtonWithCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml#buttonwithcodebehind)]  
+ [!code-xaml[XAMLOvwSupport#ButtonWithCodeBehind](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml#buttonwithcodebehind)]  
   
  [!code-csharp[XAMLOvwSupport#ButtonWithCodeBehindHandler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page3.xaml.cs#buttonwithcodebehindhandler)]
  [!code-vb[XAMLOvwSupport#ButtonWithCodeBehindHandler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XAMLOvwSupport/VisualBasic/Page1.xaml.vb#buttonwithcodebehindhandler)]  
@@ -278,8 +278,8 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  The following example sets <xref:System.Windows.FrameworkElement.Name%2A> on a <xref:System.Windows.Controls.StackPanel> element. Then, a handler on a <xref:System.Windows.Controls.Button> within that <xref:System.Windows.Controls.StackPanel> references the <xref:System.Windows.Controls.StackPanel> through its instance reference `buttonContainer` as set by <xref:System.Windows.FrameworkElement.Name%2A>.  
   
- [!code-xml[XAMLOvwSupport#NamedE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#namede)]  
-[!code-xml[XAMLOvwSupport#NamedE2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#namede2)]  
+ [!code-xaml[XAMLOvwSupport#NamedE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#namede)]  
+[!code-xaml[XAMLOvwSupport#NamedE2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml#namede2)]  
   
  [!code-csharp[XAMLOvwSupport#NameCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml.cs#namecode)]
  [!code-vb[XAMLOvwSupport#NameCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/XAMLOvwSupport/VisualBasic/Page1.xaml.vb#namecode)]  
@@ -298,7 +298,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  The following example illustrates the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> attached property. The <xref:System.Windows.Controls.DockPanel> class defines the accessors for <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> and therefore owns the attached property. The <xref:System.Windows.Controls.DockPanel> class also includes logic that iterates its child elements and specifically checks each element for a set value of <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName>. If a value is found, that value is used during layout to position the child elements. Use of the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> attached property and this positioning capability is in fact the motivating scenario for the <xref:System.Windows.Controls.DockPanel> class.  
   
- [!code-xml[XAMLOvwSupport#DockAP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#dockap)]  
+ [!code-xaml[XAMLOvwSupport#DockAP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#dockap)]  
   
  In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], most or all the attached properties are also implemented as dependency properties. For details, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md).  
   

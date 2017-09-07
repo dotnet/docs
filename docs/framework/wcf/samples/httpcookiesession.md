@@ -1,5 +1,5 @@
 ---
-title: "HttpCookieSession | Microsoft Docs"
+title: "HttpCookieSession"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Open a File That is Dropped on a RichTextBox Control | Microsoft Docs"
+title: "How to: Open a File That is Dropped on a RichTextBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -32,7 +32,7 @@ In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md
   
  To test this example, drag a text file or a rich text format (RTF) file from Windows Explorer to the <xref:System.Windows.Controls.RichTextBox>. The file will be opened in the <xref:System.Windows.Controls.RichTextBox>. If you press the SHIFT key before the dropping the file, the file will be opened as plain text.  
   
- [!code-xml[DragDropSnippets#RtbXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#rtbxaml)]  
+ [!code-xaml[DragDropSnippets#RtbXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#rtbxaml)]  
   
  [!code-csharp[DragDropSnippets#RtbHandlers](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#rtbhandlers)]
  [!code-vb[DragDropSnippets#RtbHandlers](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#rtbhandlers)]

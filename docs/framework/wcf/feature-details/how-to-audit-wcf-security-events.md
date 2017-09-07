@@ -1,5 +1,5 @@
 ---
-title: "How to: Audit Windows Communication Foundation Security Events | Microsoft Docs"
+title: "How to: Audit Windows Communication Foundation Security Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -41,7 +41,7 @@ manager: "mbaldwin"
   
      The default `SuppressAuditFailure` property is `true`, so that the failure to audit does not affect the application. Otherwise, an exception is thrown. For any successful audit, a verbose trace is written. For any failure to audit, the trace is written at the Error level.  
   
-4.  Delete the existing <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> from the collection of behaviors found in the description of a <xref:System.ServiceModel.ServiceHost>. The behavior collection is accessed by the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> property, which in turn is accessed from the <xref:System.ServiceModel.ServiceHostBase.Description%2A> property. Then add the new <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>to the same collection, as shown in the following code.  
+4.  Delete the existing <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> from the collection of behaviors found in the description of a <xref:System.ServiceModel.ServiceHost>. The behavior collection is accessed by the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> property, which in turn is accessed from the <xref:System.ServiceModel.ServiceHostBase.Description%2A> property. Then add the new <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to the same collection, as shown in the following code.  
   
      [!code-csharp[AuditingSecurityEvents#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#5)]
      [!code-vb[AuditingSecurityEvents#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#5)]  

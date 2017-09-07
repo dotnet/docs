@@ -701,7 +701,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.ECDiffieHellmanCng.ImportParameters%2A> method replaces the existing key that this object is working with by creating a         new <xref:System.Security.Cryptography.CngKey> object. If `parameters` contains only the <xref:System.Security.Cryptography.ECParameters.Q> field, then only a public key is imported.         If `parameters` also contains <xref:System.Security.Cryptography.ECParameters.D>, then a full key pair is be imported.          The `parameter`<xref:System.Security.Cryptography.ECParameters.Curve>value specifies the type of the curve to import.  
+ The <xref:System.Security.Cryptography.ECDiffieHellmanCng.ImportParameters%2A> method replaces the existing key that this object is working with by creating a         new <xref:System.Security.Cryptography.CngKey> object. If `parameters` contains only the <xref:System.Security.Cryptography.ECParameters.Q> field, then only a public key is imported.         If `parameters` also contains <xref:System.Security.Cryptography.ECParameters.D>, then a full key pair is be imported. The `parameter` <xref:System.Security.Cryptography.ECParameters.Curve> value specifies the type of the curve to import.  
   
  ]]></format>
         </remarks>

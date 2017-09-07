@@ -19,7 +19,7 @@
   
  When the `PriceIsAPositiveNumber` and `FutureDateRule` rules run, the values in each <xref:System.Windows.Controls.ValidationRule.Validate%2A> method are strings because the default value of <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is RawProposedValue. Therefore, the rules run before the values are converted to their respective types.  
   
- [!code-xml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
+ [!code-xaml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
   
  The following example shows the `ValidateDateAndPrice`<xref:System.Windows.Controls.ValidationRule.ValidationStep%2A>. In the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method, the `Price` property is of type <xref:System.Double> and the `OfferExpires` property is of type <xref:System.DateTime>. The strings have been converted to their respective types by the time the <xref:System.Windows.Controls.ValidationRule> runs.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Controls with Built-In Owner-Drawing Support | Microsoft Docs"
+title: "Controls with Built-In Owner-Drawing Support"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

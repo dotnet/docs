@@ -1,5 +1,5 @@
 ---
-title: "UI Automation Control Patterns for Clients | Microsoft Docs"
+title: "UI Automation Control Patterns for Clients"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "#pragma warning (C# Reference) | Microsoft Docs"
+title: "#pragma warning (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -36,7 +36,7 @@ translation.priority.mt:
   
 ## Syntax  
   
-```  
+```csharp
 #pragma warning disable warning-list  
 #pragma warning restore warning-list  
 ```  
@@ -52,7 +52,7 @@ translation.priority.mt:
   
 ## Example  
   
-```  
+```csharp
 // pragma_warning.cs  
 using System;  
   

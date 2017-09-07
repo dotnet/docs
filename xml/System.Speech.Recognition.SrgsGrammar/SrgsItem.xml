@@ -352,7 +352,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The property applies only to items whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MinRepeat%2A> and <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MaxRepeat%2A> properties have been explicitly set to non-default values, either by a  constructor for <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>or by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A> method.  
+ The property applies only to items whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MinRepeat%2A> and <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.MaxRepeat%2A> properties have been explicitly set to non-default values, either by a constructor for <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> or by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem.SetRepeat%2A> method.  
   
  ]]></format>
         </remarks>

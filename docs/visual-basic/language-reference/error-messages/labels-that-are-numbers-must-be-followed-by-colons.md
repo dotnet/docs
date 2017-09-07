@@ -1,5 +1,5 @@
 ---
-title: "Labels that are numbers must be followed by colons | Microsoft Docs"
+title: "Labels that are numbers must be followed by colons"
 
 ms.date: "2015-07-20"
 ms.prod: .net

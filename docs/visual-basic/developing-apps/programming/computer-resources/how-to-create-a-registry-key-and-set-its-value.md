@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Registry Key and Set Its Value in Visual Basic | Microsoft Docs"
+title: "How to: Create a Registry Key and Set Its Value in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

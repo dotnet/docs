@@ -1,5 +1,5 @@
 ---
-title: "Including or Importing XML Schemas | Microsoft Docs"
+title: "Including or Importing XML Schemas"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

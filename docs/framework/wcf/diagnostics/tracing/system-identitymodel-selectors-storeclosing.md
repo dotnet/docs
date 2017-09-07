@@ -1,5 +1,5 @@
 ---
-title: "System.IdentityModel.Selectors.StoreClosing | Microsoft Docs"
+title: "System.IdentityModel.Selectors.StoreClosing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

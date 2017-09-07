@@ -1,5 +1,5 @@
 ---
-title: "IHostMemoryManager::NeedsVirtualAddressSpace Method | Microsoft Docs"
+title: "IHostMemoryManager::NeedsVirtualAddressSpace Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

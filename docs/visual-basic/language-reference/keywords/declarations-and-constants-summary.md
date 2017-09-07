@@ -1,5 +1,5 @@
 ---
-title: "Declarations and Constants Summary (Visual Basic) | Microsoft Docs"
+title: "Declarations and Constants Summary (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

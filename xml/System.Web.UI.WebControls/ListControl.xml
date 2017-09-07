@@ -1077,7 +1077,7 @@ if(DropDownList1.Items.FindByValue("2") != null) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.Text%2A> property gets and sets the same value that the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A>e property does.  
+ The <xref:System.Web.UI.WebControls.ListControl.Text%2A> property gets and sets the same value that the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property does.  
   
  The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is commonly used to determine the value of the selected item in the <xref:System.Web.UI.WebControls.ListControl> control. If no item is selected, an empty string ("") is returned.  
   

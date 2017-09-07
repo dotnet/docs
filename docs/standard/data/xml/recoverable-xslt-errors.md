@@ -1,5 +1,5 @@
 ---
-title: "Recoverable XSLT Errors | Microsoft Docs"
+title: "Recoverable XSLT Errors"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

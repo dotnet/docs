@@ -1,5 +1,5 @@
 ---
-title: "Classification of Standard Query Operators by Manner of Execution (Visual Basic) | Microsoft Docs"
+title: "Classification of Standard Query Operators by Manner of Execution (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

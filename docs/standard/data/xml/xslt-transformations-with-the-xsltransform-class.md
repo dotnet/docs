@@ -1,5 +1,5 @@
 ---
-title: "XSLT Transformations with the XslTransform Class | Microsoft Docs"
+title: "XSLT Transformations with the XslTransform Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

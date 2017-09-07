@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: ClaimsIdentity Constructor | Microsoft Docs"
+title: "Mitigation: ClaimsIdentity Constructor"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

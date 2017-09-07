@@ -414,7 +414,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Diagnostics.CounterSample obj1, System.Diagnostics.CounterSample obj2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Diagnostics.CounterSample obj1, System.Diagnostics.CounterSample obj2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Diagnostics.CounterSample obj1, valuetype System.Diagnostics.CounterSample obj2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.op_Equality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
       <MemberType>Method</MemberType>
@@ -445,12 +445,12 @@
 ## Remarks  
  Two <xref:System.Diagnostics.CounterSample> structures are equal if they have identical property values.  
   
- The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Equals%28System.Diagnostics.CounterSample%2CSystem.Diagnostics.CounterSample%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Equals%28System.Diagnostics.CounterSample%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Diagnostics.CounterSample obj1, System.Diagnostics.CounterSample obj2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Diagnostics.CounterSample obj1, System.Diagnostics.CounterSample obj2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Diagnostics.CounterSample obj1, valuetype System.Diagnostics.CounterSample obj2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.op_Inequality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
       <MemberType>Method</MemberType>
@@ -481,7 +481,7 @@
 ## Remarks  
  Two <xref:System.Diagnostics.CounterSample> structures are not equal if any of their property values are different.  
   
- The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Compare%28System.Diagnostics.CounterSample%2CSystem.Diagnostics.CounterSample%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Equals%28System.Diagnostics.CounterSample%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 ---
-title: "Known Folder GUIDs for File Dialog Custom Places | Microsoft Docs"
+title: "Known Folder GUIDs for File Dialog Custom Places"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

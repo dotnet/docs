@@ -32,7 +32,7 @@
 ## Examples  
  The following example shows how to define a <xref:System.Windows.Documents.List> using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
   
- [!code-xml[ListSnippets#_ListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_listxaml)]  
+ [!code-xaml[ListSnippets#_ListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_listxaml)]  
   
  The following example shows how to create and populate a <xref:System.Windows.Documents.List> programmatically.  
   
@@ -45,7 +45,7 @@
   
  The following example shows how to define a nested <xref:System.Windows.Documents.List> (lists within lists) using [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
   
- [!code-xml[ListSnippets#_NestedListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_nestedlistxaml)]  
+ [!code-xaml[ListSnippets#_NestedListXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListSnippets/CSharp/Window1.xaml#_nestedlistxaml)]  
   
  The following figure shows how this example renders.  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Delete Rows From the Database | Microsoft Docs"
+title: "How to: Delete Rows From the Database"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -55,5 +55,5 @@ You can delete rows in a database by removing the corresponding [!INCLUDE[vbtecd
   
 ## See Also  
  [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)   
- [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](https://docs.microsoft.com/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)   
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)   
  [Making and Submitting Data Changes](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)

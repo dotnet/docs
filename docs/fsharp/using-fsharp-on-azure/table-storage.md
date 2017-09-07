@@ -1,5 +1,5 @@
 ---
-title: Get started with Azure Table storage using F# | Microsoft Docs
+title: Get started with Azure Table storage using F#
 description: Store structured data in the cloud using Azure Table storage, a NoSQL data store.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
@@ -22,18 +22,18 @@ You can use Table storage to store flexible datasets, such as user data for web 
 
 This tutorial shows how to write F# code to do some common tasks using Azure Table storage, including creating and deleting a table and inserting, updating, deleting, and querying table data.
 
-For a conceptual overview of table storage, please see [the .NET guide for table storage](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-tables)
+For a conceptual overview of table storage, please see [the .NET guide for table storage](/azure/storage/storage-dotnet-how-to-use-tables)
 
 ## Prerequisites
 
-To use this guide, you must first [create an Azure storage account](https://docs.microsoft.com/azure/storage/storage-create-storage-account).
+To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account).
 You'll also need your storage access key for this account.
 
 ## Create an F# Script and Start F# Interactive
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `tables.fsx`, in your F# development environment.
 
-Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive.
+Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive. Do it again for `Microsoft.WindowsAzure.ConfigurationManager' in order to get the Microsoft.Azure namespace.
 
 ### Add namespace declarations
 
@@ -43,7 +43,7 @@ Add the following `open` statements to the top of the `tables.fsx` file:
 
 ### Get your connection string
 
-You'll need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](https://docs.microsoft.com/azure/storage/storage-configure-connection-string).
+You'll need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](/azure/storage/storage-configure-connection-string).
 
 For the tutorial, you'll enter your connection string in your script, like this:
 

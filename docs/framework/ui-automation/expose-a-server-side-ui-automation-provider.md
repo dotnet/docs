@@ -1,5 +1,5 @@
 ---
-title: "Expose a Server-side UI Automation Provider | Microsoft Docs"
+title: "Expose a Server-side UI Automation Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -198,7 +198,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetadataReader">
-      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MetadataReader GetMetadataReader (System.Reflection.Metadata.MetadataReaderOptions options = System.Reflection.Metadata.MetadataReaderOptions.ApplyWindowsRuntimeProjections, System.Reflection.Metadata.MetadataStringDecoder utf8Decoder = null);" />
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MetadataReader GetMetadataReader (System.Reflection.Metadata.MetadataReaderOptions options = System.Reflection.Metadata.MetadataReaderOptions.Default, System.Reflection.Metadata.MetadataStringDecoder utf8Decoder = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Metadata.MetadataReader GetMetadataReader(valuetype System.Reflection.Metadata.MetadataReaderOptions options, class System.Reflection.Metadata.MetadataStringDecoder utf8Decoder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MetadataReaderProvider.GetMetadataReader(System.Reflection.Metadata.MetadataReaderOptions,System.Reflection.Metadata.MetadataStringDecoder)" />
       <MemberType>Method</MemberType>

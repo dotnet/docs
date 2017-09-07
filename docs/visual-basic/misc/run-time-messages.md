@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Run-Time Messages | Microsoft Docs"
+title: "Visual Basic Run-Time Messages"
 
 ms.date: "2015-07-20"
 ms.prod: .net

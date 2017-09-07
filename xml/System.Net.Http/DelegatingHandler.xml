@@ -23,9 +23,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This application normally instantiate this class and then set the inner handler or provide an inner handler in the constructor.  
+ An application should provide an inner handler either in the constructor or through the <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property before calling <xref:System.Net.Http.DelegatingHandler.SendAsync%2A>; otherwise, an <xref:System.InvalidOperationException> will be thrown.
   
- Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too. This approach allows the creation of handler stacks to process the HTTP response messages.  
+ Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler as well. This approach allows the creation of handler stacks to process the HTTP response messages.  
   
  ]]></format>
     </remarks>

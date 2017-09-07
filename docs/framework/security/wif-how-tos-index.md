@@ -1,5 +1,5 @@
 ---
-title: "WIF How-To&#39;s Index | Microsoft Docs"
+title: "WIF How-To&#39;s Index"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

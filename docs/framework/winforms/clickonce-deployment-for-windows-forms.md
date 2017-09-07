@@ -1,5 +1,5 @@
 ---
-title: "ClickOnce Deployment for Windows Forms | Microsoft Docs"
+title: "ClickOnce Deployment for Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Erase Ink on a Custom Control | Microsoft Docs"
+title: "How to: Erase Ink on a Custom Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

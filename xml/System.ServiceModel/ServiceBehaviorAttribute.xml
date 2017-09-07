@@ -431,7 +431,7 @@ public void MyMethod()
  When enabled, the service automatically returns safer exception information to the caller. These faults appear to the client as <xref:System.ServiceModel.FaultException%601> objects of type <xref:System.ServiceModel.ExceptionDetail>.  
   
 > [!IMPORTANT]
->  Setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A>to `true` enables clients to obtain information about internal service method exceptions; it is only recommended as a way of temporarily debugging a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException%601> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault to obtain the debugging information properly.  
+>  Setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true` enables clients to obtain information about internal service method exceptions; it is only recommended as a way of temporarily debugging a service application. In addition, the WSDL for a method that returns unhandled managed exceptions in this way does not contain the contract for the <xref:System.ServiceModel.FaultException%601> of type <xref:System.ServiceModel.ExceptionDetail>. Clients must expect the possibility of an unknown SOAP fault to obtain the debugging information properly.  
   
  Setting this property to `true` can also be done using an application configuration file and the [\&lt;serviceDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicedebug.md) element, as the following code example shows.  
   

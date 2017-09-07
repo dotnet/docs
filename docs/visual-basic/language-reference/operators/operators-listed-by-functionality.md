@@ -1,5 +1,5 @@
 ---
-title: "Operators Listed by Functionality (Visual Basic) | Microsoft Docs"
+title: "Operators Listed by Functionality (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

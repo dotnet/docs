@@ -1,5 +1,5 @@
 ---
-title: "Event Handling in an XML Document Using the XmlNodeChangedEventArgs | Microsoft Docs"
+title: "Event Handling in an XML Document Using the XmlNodeChangedEventArgs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "ToolStripContainer Control | Microsoft Docs"
+title: "ToolStripContainer Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

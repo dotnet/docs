@@ -1,5 +1,5 @@
 ---
-title: "&lt;proceduresignature1&gt; is not CLS-compliant because it overloads &lt;proceduresignature2&gt; which differs from it only by array of array parameter types or by the rank of the array parameter types | Microsoft Docs"
+title: "&lt;proceduresignature1&gt; is not CLS-compliant because it overloads &lt;proceduresignature2&gt; which differs from it only by array of array parameter types or by the rank of the array parameter types"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -53,7 +53,7 @@ A procedure or property is marked as `<CLSCompliant(True)>` when it overrides an
   
  If you do not apply the <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40035  
   

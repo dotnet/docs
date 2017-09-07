@@ -1,5 +1,5 @@
 ---
-title: "Need property array index | Microsoft Docs"
+title: "Need property array index"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -42,4 +42,4 @@ This property value consists of an array rather than a single value. You did not
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

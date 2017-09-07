@@ -1,5 +1,5 @@
 ---
-title: "ICLRMetaHost::GetVersionFromFile Method | Microsoft Docs"
+title: "ICLRMetaHost::GetVersionFromFile Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

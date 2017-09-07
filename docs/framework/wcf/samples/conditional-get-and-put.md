@@ -1,5 +1,5 @@
 ---
-title: "Conditional Get and Put | Microsoft Docs"
+title: "Conditional Get and Put"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

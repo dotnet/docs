@@ -1,5 +1,5 @@
 ---
-title: "Copying DataSet Contents | Microsoft Docs"
+title: "Copying DataSet Contents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

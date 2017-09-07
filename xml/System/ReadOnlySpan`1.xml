@@ -299,7 +299,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (ReadOnlySpan&lt;T&gt; left, ReadOnlySpan&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (ReadOnlySpan&lt;T&gt; left, ReadOnlySpan&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ReadOnlySpan`1&lt;!T&gt; left, valuetype System.ReadOnlySpan`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.op_Equality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})" />
       <MemberType>Method</MemberType>
@@ -323,7 +323,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; op_Implicit (ArraySegment&lt;T&gt; arraySegment);" />
+      <MemberSignature Language="C#" Value="public static implicit operator ReadOnlySpan&lt;T&gt; (ArraySegment&lt;T&gt; arraySegment);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ReadOnlySpan`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; arraySegment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}" />
       <MemberType>Method</MemberType>
@@ -345,7 +345,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; op_Implicit (T[] array);" />
+      <MemberSignature Language="C#" Value="public static implicit operator ReadOnlySpan&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ReadOnlySpan`1&lt;!T&gt; op_Implicit(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.op_Implicit(`0[])~System.ReadOnlySpan{`0}" />
       <MemberType>Method</MemberType>
@@ -367,7 +367,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (ReadOnlySpan&lt;T&gt; left, ReadOnlySpan&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (ReadOnlySpan&lt;T&gt; left, ReadOnlySpan&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ReadOnlySpan`1&lt;!T&gt; left, valuetype System.ReadOnlySpan`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.op_Inequality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})" />
       <MemberType>Method</MemberType>

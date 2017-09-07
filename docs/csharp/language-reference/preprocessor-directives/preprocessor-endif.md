@@ -1,5 +1,5 @@
 ---
-title: "#endif (C# Reference) | Microsoft Docs"
+title: "#endif (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -33,8 +33,8 @@ translation.priority.ht:
 # #endif (C# Reference)
 `#endif` specifies the end of a conditional directive, which began with the [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive. For example,  
   
-```  
-      #define DEBUG  
+```csharp
+#define DEBUG  
 // ...  
 #if DEBUG  
     Console.WriteLine("Debug version");  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Simulate Mouse and Keyboard Events in Code | Microsoft Docs"
+title: "How to: Simulate Mouse and Keyboard Events in Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "WS-AtomicTransaction Configuration Utility (wsatConfig.exe) | Microsoft Docs"
+title: "WS-AtomicTransaction Configuration Utility (wsatConfig.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

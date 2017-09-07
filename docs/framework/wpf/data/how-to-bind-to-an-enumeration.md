@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind to an Enumeration | Microsoft Docs"
+title: "How to: Bind to an Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -25,7 +25,7 @@ This example shows how to bind to an enumeration by binding to the enumeration's
 ## Example  
  In the following example, the <xref:System.Windows.Controls.ListBox> displays the list of <xref:System.Windows.HorizontalAlignment> enumeration values through data binding. The <xref:System.Windows.Controls.ListBox> and the <xref:System.Windows.Controls.Button> are bound such that you can change the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property value of the <xref:System.Windows.Controls.Button> by selecting a value in the <xref:System.Windows.Controls.ListBox>.  
   
- [!code-xml[BindToEnum#BindToEnum](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BindToEnum/CS/Window1.xaml#bindtoenum)]  
+ [!code-xaml[BindToEnum#BindToEnum](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BindToEnum/CS/Window1.xaml#bindtoenum)]  
   
 ## See Also  
  [Bind to a Method](../../../../docs/framework/wpf/data/how-to-bind-to-a-method.md)   

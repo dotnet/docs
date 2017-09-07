@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- This example shows how to get the <xref:System.ServiceModel.Channels.LocalClientSecuritySettings.MaxCookieCachingTime%2A>value.  
+ This example shows how to get the <xref:System.ServiceModel.Channels.LocalClientSecuritySettings.MaxCookieCachingTime%2A> value.  
   
  [!code-csharp[S_UELocalClientSecuritySettings#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelocalclientsecuritysettings/cs/program.cs#7)]
  [!code-vb[S_UELocalClientSecuritySettings#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelocalclientsecuritysettings/vb/program.vb#7)]  
@@ -427,7 +427,7 @@
   
 -   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A> = `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=fullName> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   
@@ -477,7 +477,7 @@
   
 -   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or  <xref:System.ServiceModel.Description.ClientCredentials.windows%2A> = `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or  <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=fullName> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   

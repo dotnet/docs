@@ -1,5 +1,5 @@
 ---
-title: "How to: Ping a Host | Microsoft Docs"
+title: "How to: Ping a Host"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

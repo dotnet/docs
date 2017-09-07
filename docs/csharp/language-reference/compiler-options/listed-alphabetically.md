@@ -1,5 +1,5 @@
 ---
-title: "C# Compiler Options Listed Alphabetically | Microsoft Docs"
+title: "C# Compiler Options Listed Alphabetically"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -59,7 +59,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |/incremental|Enables incremental compilation [obsolete].|  
 |[/keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md)|Specifies a strong name key container.|  
 |[/keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)|Specifies a strong name key file.|  
-|[/langversion:\<string>](../../../csharp/language-reference/compiler-options/langversion-compiler-option.md)|Specify language version mode: ISO-1, ISO-2, 3, 4, 5, 6, or Default|  
+|[/langversion:\<string>](../../../csharp/language-reference/compiler-options/langversion-compiler-option.md)|Specify language version mode: Default, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, or Latest |  
 |[/lib](../../../csharp/language-reference/compiler-options/lib-compiler-option.md)|Specifies additional directories in which to search for references.|  
 |[/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|  
 |[/linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md)|Links the specified resource to this assembly.|  
@@ -79,6 +79,8 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specifies the language to be used for compiler output.|  
 |[/recurse](../../../csharp/language-reference/compiler-options/recurse-compiler-option.md)|Includes all files in the current directory and subdirectories according to the wildcard specifications.|  
 |[/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)|References metadata from the specified assembly files.|  
+|[/refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|  
+|[/refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|  
 |[/resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md)|Embeds the specified resource.|  
 |/ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|  
 |[/subsystemversion](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|  

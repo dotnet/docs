@@ -1,5 +1,5 @@
 ---
-title: "IdentityModel Exceptions | Microsoft Docs"
+title: "IdentityModel Exceptions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

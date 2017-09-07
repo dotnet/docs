@@ -1,5 +1,5 @@
 ---
-title: "&lt;requiredRuntime&gt; Element | Microsoft Docs"
+title: "&lt;requiredRuntime&gt; Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ ms.author: "markl"
 manager: "markl"
 ---
 # &lt;requiredRuntime&gt; Element
-Specifies that the application supports only version 1.0 of the common language runtime.  
+Specifies that the application supports only version 1.0 of the common language runtime. This element is deprecated and should no longer be used. The [`supportedRuntime`](supportedruntime-element.md) element should be used instead.
   
  \<configuration>  
 \<startup>  

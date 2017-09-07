@@ -836,7 +836,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the method that calls the <xref:System.Reflection.Assembly.GetCallingAssembly%2A> method is expanded inline by the just-in-time (JIT) compiler, or if its caller is expanded inline, the assembly that is returned by <xref:System.Reflection.Assembly.GetCallingAssembly%2A>may differ unexpectedly. For example, consider the following methods and assemblies:  
+ If the method that calls the <xref:System.Reflection.Assembly.GetCallingAssembly%2A> method is expanded inline by the just-in-time (JIT) compiler, or if its caller is expanded inline, the assembly that is returned by <xref:System.Reflection.Assembly.GetCallingAssembly%2A> may differ unexpectedly. For example, consider the following methods and assemblies:  
   
 -   Method `M1` in assembly `A1` calls <xref:System.Reflection.Assembly.GetCallingAssembly%2A>.  
   
@@ -2978,7 +2978,7 @@
   
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
- If you call the [\], Byte\<xref:System.Reflection.Assembly.Load%2A>method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
+ If you call the [\], Byte\<xref:System.Reflection.Assembly.Load%2A> method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
   
  Note that this method overload always creates a new <xref:System.Reflection.Assembly> object with its own mapping.  
   
@@ -3896,7 +3896,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Assembly left, System.Reflection.Assembly right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Assembly left, System.Reflection.Assembly right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Reflection.Assembly left, class System.Reflection.Assembly right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Assembly.op_Equality(System.Reflection.Assembly,System.Reflection.Assembly)" />
       <MemberType>Method</MemberType>
@@ -3930,7 +3930,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Assembly left, System.Reflection.Assembly right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Assembly left, System.Reflection.Assembly right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Reflection.Assembly left, class System.Reflection.Assembly right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Assembly.op_Inequality(System.Reflection.Assembly,System.Reflection.Assembly)" />
       <MemberType>Method</MemberType>

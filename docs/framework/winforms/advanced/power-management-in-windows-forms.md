@@ -1,5 +1,5 @@
 ---
-title: "Power Management in Windows Forms | Microsoft Docs"
+title: "Power Management in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

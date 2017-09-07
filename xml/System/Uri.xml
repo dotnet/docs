@@ -196,7 +196,7 @@ http://myUrl/
         <Parameter Name="uriString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uriString">A URI.</param>
+        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance. Note that an IPv6 address in string form must be enclosed within brackets. For example, "http://[2607:f8b0:400d:c06::69]".</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -393,7 +393,7 @@ http://myUrl/
         <Parameter Name="dontEscape" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="uriString">The URI.</param>
+        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance. Note that an IPv6 address in string form must be enclosed within brackets. For example, "http://[2607:f8b0:400d:c06::69]".</param>
         <param name="dontEscape">
           <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI, with explicit control of character escaping.</summary>
@@ -501,7 +501,7 @@ http://myUrl/
         <Parameter Name="uriKind" Type="System.UriKind" />
       </Parameters>
       <Docs>
-        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance.</param>
+        <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance. Note that an IPv6 address in string form must be enclosed within brackets. For example, "http://[2607:f8b0:400d:c06::69]".</param>
         <param name="uriKind">Specifies whether the URI string is a relative URI, absolute URI, or is indeterminate.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI. This constructor allows you to specify if the URI string is a relative URI, absolute URI, or is indeterminate.</summary>
         <remarks>

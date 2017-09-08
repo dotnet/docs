@@ -41,7 +41,7 @@ This topic discusses support for asynchronous programming in the [!INCLUDE[dnprd
   
  You can now call into asynchronous methods without using callbacks, and without splitting your code across multiple methods or lambda expressions.  
   
- The `async` modifier specifies that a method is asynchronous. When calling an `async` method, a task is returned.  When calling an `await` statement against the task, the current method exits immediately. When the task finishes, execution resumes in the same method.
+ The `async` modifier specifies that a method is asynchronous. When calling an `async` method, a task is returned. When the `await` operator is applied to a task, the current method exits immediately. When the task finishes, execution resumes in the same method.
   
 > [!WARNING]
 >  Asynchronous calls are not supported if an application also uses the `Context Connection` connection string keyword.  

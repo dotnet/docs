@@ -42,7 +42,7 @@ The RID graph or runtime fallback graph is a list of RIDs that are compatible wi
 When NuGet restores packages, it tries to find an exact match for the specified runtime.
 If an exact match is not found, NuGet walks back the graph until it finds the closest compatible system according to the RID graph.
 
-The following example is the actual entry for the `osx.10.11-x64` RID:
+The following example is the actual entry for the `osx.10.12-x64` RID:
 
 ```json
 "osx.10.12-x64": {

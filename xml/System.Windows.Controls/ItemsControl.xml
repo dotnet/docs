@@ -1677,7 +1677,7 @@ ListBox that contains multiple types of objects
   
  [!code-xaml[DataTemplateSelector#ItemTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplateSelector/CSharp/Window1.xaml#itemtemplateselector)]  
   
- The following example shows the implementation of the `AuctionItemDataTemplateSelector` class with an override of the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A>method:  
+ The following example shows the implementation of the `AuctionItemDataTemplateSelector` class with an override of the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method:  
   
  [!code-csharp[DataTemplateSelector#DataTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplateSelector/CSharp/AuctionItemDataTemplateSelector.cs#datatemplateselector)]
  [!code-vb[DataTemplateSelector#DataTemplateSelector](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataTemplateSelector/visualbasic/auctionitemdatatemplateselector.vb#datatemplateselector)]  

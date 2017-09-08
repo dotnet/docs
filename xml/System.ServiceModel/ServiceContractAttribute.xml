@@ -55,7 +55,7 @@
   
  The most flexible approach to creating services is to define service contract interfaces first and then have your service class implement that interface. (This is also the simplest way to build your services if you must implement service contracts that have been defined by others.) Building services directly by marking a class with <xref:System.ServiceModel.ServiceContractAttribute> and its methods with <xref:System.ServiceModel.OperationContractAttribute> works when the service exposes only one contract (but that contract can be exposed by more than one endpoint).  
   
- Use the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A>property to indicate another service contract that, when bound together with the original service contract, define a message exchange that can flow in two ways independently. For details, see <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A>.  
+ Use the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A> property to indicate another service contract that, when bound together with the original service contract, define a message exchange that can flow in two ways independently. For details, see <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A>.  
   
    
   

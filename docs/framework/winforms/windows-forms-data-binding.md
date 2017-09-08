@@ -76,4 +76,4 @@ Data binding in Windows Forms gives you the means to display and make changes to
  [DataGridView Control](../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  Provides a list of topics that demonstrate how to use a bindable datagrid control.  
   
- Also see [Accessing Data in Visual Studio](http://msdn.microsoft.com/library/wzabh8c4\(v=vs.110\)) or [Accessing Data in Visual Studio](http://msdn.microsoft.com/library/wzabh8c4\(v=vs.110\)).
+ Also see [Accessing Data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).

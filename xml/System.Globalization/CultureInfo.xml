@@ -181,7 +181,7 @@
   
 1.  Instantiate a <xref:System.Globalization.CultureInfo> object that represents that culture by calling a <xref:System.Globalization.CultureInfo> class constructor and passing it the name of the culture. The <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor instantiates a  <xref:System.Globalization.CultureInfo> object that reflects user overrides if the new culture is the same as the current Windows culture.   The <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor allows you to specify whether the newly instantiated <xref:System.Globalization.CultureInfo> object reflects user overrides if the new culture is the same as the current Windows culture.  
   
-2.  Assign the <xref:System.Globalization.CultureInfo> object to the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> or<xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property. In addition, for apps running on the version 4.6 or later of the desktop .NET Framework, you can also assign the  <xref:System.Globalization.CultureInfo> object to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property.  
+2.  Assign the <xref:System.Globalization.CultureInfo> object to the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> or <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property. In addition, for apps running on the version 4.6 or later of the desktop .NET Framework, you can also assign the  <xref:System.Globalization.CultureInfo> object to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property.  
   
  The following example retrieves the current culture. If it is anything other than the French (France) culture, it changes the current culture to French (France). Otherwise, it changes the current culture to French (Luxembourg).  
   
@@ -1121,7 +1121,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
 <a name="Explicit"></a>   
 ## Explicitly Setting the Current UI Culture  
- Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], you can change the current UI culture by assigning a <xref:System.Globalization.CultureInfo> object that represents the new culture to the i<xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. The current UI culture can be set to either a specific culture (such as en-US or de-DE) or to a neutral culture (such as en or de). The following example sets the current UI culture to fr-FR or French (France).  
+ Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], you can change the current UI culture by assigning a <xref:System.Globalization.CultureInfo> object that represents the new culture to the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. The current UI culture can be set to either a specific culture (such as en-US or de-DE) or to a neutral culture (such as en or de). The following example sets the current UI culture to fr-FR or French (France).  
   
  [!code-csharp[System.Globalization.CultureInfo.CurrentUICulture#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureinfo.currentuiculture/cs/currentuiculture1.cs#1)]
  [!code-vb[System.Globalization.CultureInfo.CurrentUICulture#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.currentuiculture/vb/currentuiculture1.vb#1)]  
@@ -1682,7 +1682,7 @@ csc /resource:GreetingStrings.resources Example1.cs
 |Vietnamese|vi|en-US|  
 |Vietnamese (Vietnam)|vi-VN|en-US|  
   
- Your application can use<xref:System.Globalization.CultureAndRegionInfoBuilder> to create a replacement for a culture, and that culture can have a console fallback culture of your choosing.  
+ Your application can use <xref:System.Globalization.CultureAndRegionInfoBuilder> to create a replacement for a culture, and that culture can have a console fallback culture of your choosing.  
   
    
   

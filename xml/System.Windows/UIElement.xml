@@ -974,16 +974,16 @@
    
   
 ## Examples  
- This example shows how to define a framework element's<xref:System.Windows.UIElement.Clip%2A>region. To define a clip, use a <xref:System.Windows.Media.Geometry> (for example, an <xref:System.Windows.Media.EllipseGeometry>to set the element's <xref:System.Windows.UIElement.Clip%2A>property. Only the area that is within the region of the geometry will be visible.  
+ This example shows how to define a framework element's <xref:System.Windows.UIElement.Clip%2A> region. To define a clip, use a <xref:System.Windows.Media.Geometry> (for example, an <xref:System.Windows.Media.EllipseGeometry> to set the element's <xref:System.Windows.UIElement.Clip%2A> property. Only the area that is within the region of the geometry will be visible.  
   
- The following example shows an <xref:System.Windows.Controls.Image>element without a defined clip region. Because no clip region is defined, the entire image is displayed.  
+ The following example shows an <xref:System.Windows.Controls.Image> element without a defined clip region. Because no clip region is defined, the entire image is displayed.  
   
  [!code-xaml[ClipPathExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#2)]  
   
  ![An object before applying a clip region](~/add/media/mil-task-clip-region-noclip.png "An object before applying a clip region")  
 Image with No Clip Region  
   
- In the next example, an identical Image is created, except that it has a defined clip region. Only the part of the image that is within the area the <xref:System.Windows.Media.EllipseGeometry>will be displayed.  
+ In the next example, an identical Image is created, except that it has a defined clip region. Only the part of the image that is within the area the <xref:System.Windows.Media.EllipseGeometry> will be displayed.  
   
  [!code-xaml[ClipPathExample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#4)]  
   
@@ -8132,7 +8132,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Windows.UIElement.OnTouchEnter%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchEnter%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchEnter> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnTouchEnter%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnTouchEnter%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchEnter%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchEnter> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnTouchEnter%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -10774,7 +10774,7 @@ Image with an Elliptical Clip Region
    
   
 ## Examples  
- The following example shows how a custom adorner uses the <xref:System.Windows.UIElement.RenderSize%2A> value in order to create and size the rectangle graphic that defines the adorner, as part of its <xref:System.Windows.UIElement.OnRender%2A>implementation.  
+ The following example shows how a custom adorner uses the <xref:System.Windows.UIElement.RenderSize%2A> value in order to create and size the rectangle graphic that defines the adorner, as part of its <xref:System.Windows.UIElement.OnRender%2A> implementation.  
   
  [!code-csharp[AdornersMiscCode#UIElementDesiredSize](~/samples/snippets/csharp/VS_Snippets_Wpf/AdornersMiscCode/CSharp/Window1.xaml.cs#uielementdesiredsize)]
  [!code-vb[AdornersMiscCode#UIElementDesiredSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AdornersMiscCode/visualbasic/window1.xaml.vb#uielementdesiredsize)]  

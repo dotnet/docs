@@ -82,7 +82,7 @@ void _tmain()
 {
 
     // Create a CodeEmitter to handle assembly creation.
-    CodeEmitter ^ e = gcnew CodeEmitter("programMyAss.exe");
+    CodeEmitter ^ e = gcnew CodeEmitter("programAssem.exe");
 
     // Create a new type.
     TypeBuilder^ mainClass = e->CreateType("MainClass");

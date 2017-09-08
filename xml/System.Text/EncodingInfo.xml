@@ -271,7 +271,7 @@
 ## Remarks  
  This property defines the name that is appropriate for passing to <xref:System.Text.Encoding.GetEncoding%2A>. This name is the same as the name represented by the <xref:System.Text.Encoding.WebName%2A> property. When its value is the name of a standard, the actual implementation of the encoding may not conform in full to that standard. Your applications should use <xref:System.Text.EncodingInfo.DisplayName%2A> for a human-readable name.  
   
- The<xref:System.Text.Encoding.GetEncodings%2A> method gets a complete list of supported encodings, uniquely distinguished by code page. If your application retrieves encodings using the <xref:System.Text.EncodingInfo.Name%2A> property, note that some duplicate encodings are retrieved. For more about handling these duplicates, see the description of <xref:System.Text.Encoding.GetEncodings%2A>.  
+ The <xref:System.Text.Encoding.GetEncodings%2A> method gets a complete list of supported encodings, uniquely distinguished by code page. If your application retrieves encodings using the <xref:System.Text.EncodingInfo.Name%2A> property, note that some duplicate encodings are retrieved. For more about handling these duplicates, see the description of <xref:System.Text.Encoding.GetEncodings%2A>.  
   
    
   

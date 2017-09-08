@@ -82,6 +82,6 @@ For more examples, see [Using Nullable Types](../../../csharp/programming-guide/
 ## See Also  
  <xref:System.Nullable>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C#](../../../csharp/csharp.md)   
+ [C#](../../../csharp/index.md)   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [What exactly does 'lifted' mean?](http://go.microsoft.com/fwlink/?LinkId=112382)

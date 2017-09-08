@@ -352,7 +352,7 @@ public String Calculate(String input)
 }  
 ```  
   
- The initial steps parse the input string into left and right operands and an operator character.  In the `foreach` loop, every member of the `operations` collection is examined. These objects are of type <xref:System.Lazy%602>, and their metadata values and exported object can be accessed with the <xref:System.Lazy%602.Metadata%2A> property and the <xref:System.Lazy%601.Value%2A>property respectively. In this case, if the `Symbol` property of the `IOperationData` object is discovered to be a match, the calculator calls the `Operate` method of the `IOperation` object and returns the result.  
+ The initial steps parse the input string into left and right operands and an operator character.  In the `foreach` loop, every member of the `operations` collection is examined. These objects are of type <xref:System.Lazy%602>, and their metadata values and exported object can be accessed with the <xref:System.Lazy%602.Metadata%2A> property and the <xref:System.Lazy%601.Value%2A> property respectively. In this case, if the `Symbol` property of the `IOperationData` object is discovered to be a match, the calculator calls the `Operate` method of the `IOperation` object and returns the result.  
   
  To complete the calculator, you also need a helper method that returns the position of the first non-digit character in a string.  Add the following helper method to the `MySimpleCalculator` class:  
   

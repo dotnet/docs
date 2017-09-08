@@ -1321,7 +1321,7 @@ namespace SampleSynthesis
   
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
   
- The <xref:System.Speech.Synthesis.SpeechSynthesizer>does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods.  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods.  
   
  ]]></format>
         </remarks>
@@ -2323,7 +2323,7 @@ namespace SampleSynthesis
    
   
 ## Examples  
- The following example initializes an instance of <xref:System.Speech.Synthesis.SpeechSynthesizer>and gets information about the current voice.  
+ The following example initializes an instance of <xref:System.Speech.Synthesis.SpeechSynthesizer> and gets information about the current voice.  
   
 ```csharp  
 using System;  

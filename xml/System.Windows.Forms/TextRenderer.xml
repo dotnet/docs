@@ -740,7 +740,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Forms.TextRenderer.MeasureText%2A> and <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods to draw a single line of text in different font styles. To run this example paste the following code in a Windows Form and call `DrawALineOfText` from the form's<xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Windows.Forms.TextRenderer.MeasureText%2A> and <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods to draw a single line of text in different font styles. To run this example paste the following code in a Windows Form and call `DrawALineOfText` from the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Windows.Forms.TextRendererExamples#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/CS/Form1.cs#11)]
  [!code-vb[System.Windows.Forms.TextRendererExamples#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/VB/Form1.vb#11)]  

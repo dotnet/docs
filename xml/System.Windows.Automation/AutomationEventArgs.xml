@@ -34,7 +34,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows how a UI Automation provider might create an<xref:System.Windows.Automation.AutomationEventArgs> and raise the event.  
+ The following code shows how a UI Automation provider might create an <xref:System.Windows.Automation.AutomationEventArgs> and raise the event.  
   
  [!code-csharp[UIAFragmentProvider_snip#122](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#122)]
  [!code-vb[UIAFragmentProvider_snip#122](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#122)]  

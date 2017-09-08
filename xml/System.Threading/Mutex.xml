@@ -292,7 +292,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `name` is not `null` and `initiallyOwned` is `true`, the calling thread owns the named mutex only if `createdNew` is `true` after the call. Otherwise the thread can request the mutex by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>method.  
+ If `name` is not `null` and `initiallyOwned` is `true`, the calling thread owns the named mutex only if `createdNew` is `true` after the call. Otherwise the thread can request the mutex by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method.  
   
  This constructor initializes a <xref:System.Threading.Mutex> object that represents a named system mutex. You can create multiple <xref:System.Threading.Mutex> objects that represent the same named system mutex.  
   

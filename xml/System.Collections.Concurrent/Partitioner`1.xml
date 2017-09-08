@@ -103,7 +103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
+ The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
   
  The <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
   

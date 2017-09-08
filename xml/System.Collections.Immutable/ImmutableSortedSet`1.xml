@@ -51,7 +51,7 @@
 ## Remarks  
  Create a new immutable sorted set that is prepopulated with items by using the <xref:System.Collections.Immutable.ImmutableSortedSet.CreateRange%2A> method. When you manipulate an immutable set with methods such as <xref:System.Collections.Immutable.ImmutableSortedSet%601.Add%2A>, <xref:System.Collections.Immutable.ImmutableSortedSet%601.Reverse%2A> or <xref:System.Collections.Immutable.ImmutableSortedSet%601.Remove%2A>, a copy of the original sorted set is made, manipulations applied and a new immutable sorted set is returned.  
   
- If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A>method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
+ If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A> method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
   
  ]]></format>
     </remarks>
@@ -1831,7 +1831,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A>method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
+ If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A> method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
   
  This is an O(1) operation and results in only a single (small) memory allocation. The mutable collection that is returned is not thread safe.  
   

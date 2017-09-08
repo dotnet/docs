@@ -151,9 +151,9 @@
       <Docs>
         <param name="other">The tuple to compare with this instance.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple`7" /> instance to a specified <see cref="T:System.ValueTuple`7" /> instance.</summary>
-        <returns>A signed integer that indicates the relative position of this instance and                      <paramref name="other" /> in the sort order, as shown in the following able.  
+        <returns>A signed integer that indicates the relative position of this instance and                      <paramref name="other" /> in the sort order, as shown in the following table.  
   
- <list type="table"><listheader><term> Vaue  
+ <list type="table"><listheader><term> Value  
   
  </term><description> Description  
   
@@ -544,9 +544,9 @@
         <param name="other">The object to compare with the current instance.</param>
         <param name="comparer">An object that provides custom rules for comparison.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple`7" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
-        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following table.  
   
- <list type="table"><listheader><term> Vaue  
+ <list type="table"><listheader><term> Value  
   
  </term><description> Description  
   

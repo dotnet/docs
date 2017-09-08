@@ -26,7 +26,7 @@ Specifies an X.509 certificate used to validate a server to a client.
 ## Syntax  
   
 ```xml  
-<certificate encodedValue = "Sring" />  
+<certificate encodedValue = "String" />  
 ```  
   
 ## Attributes and Elements  

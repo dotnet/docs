@@ -48,7 +48,7 @@ Partial Public Class MainWindow : Inherits Window
             images(x) = Task.Factory.StartNew(Function() LoadImage(files(x)))
         Next
 
-        ' When they�ve all been loaded, tile them into a single byte array.
+        ' When they have all been loaded, tile them into a single byte array.
         'var tiledImage = Task.Factory.ContinueWhenAll(
         '        images, (i) >= TileImages(i));
 

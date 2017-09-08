@@ -58,7 +58,7 @@
 > [!NOTE]
 >  When the internal lookup dictionary is used, it contains references to all the items in the collection if `TItem` is a reference type, or copies of all the items in the collection if `TItem` is a value type. Thus, using the lookup dictionary may not be appropriate if `TItem` is a value type.  
   
- You can access an item by its index or key by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A>property. You can add items without a key, but these items can subsequently be accessed only by index.  
+ You can access an item by its index or key by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A> property. You can add items without a key, but these items can subsequently be accessed only by index.  
   
    
   

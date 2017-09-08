@@ -1,5 +1,6 @@
 ---
 title: "Introduction to the C# Language and the .NET Framework"
+description: Learn the basics of C# and .NET. Get an overview of the C# language and .NET ecosystem.
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -82,5 +83,5 @@ C# is an elegant and type-safe object-oriented language that enables developers 
  For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/en-us/d05daf50-00fe-45c7-8383-06fe41697355).  
   
 ## See Also  
- [C#](../../csharp/csharp.md)   
+ [C#](../../csharp/index.md)
  [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

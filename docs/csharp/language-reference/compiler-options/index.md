@@ -48,9 +48,6 @@ The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or
  [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
  Provides steps for running vsvars32.bat  to enable command-line builds.  
   
- [Deployment of C# Applications](../../../csharp/language-reference/compiler-options/app-deployment.md)  
- Describes options for deploying C# applications.  
-  
  [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
  A categorical listing of the compiler options.  
   

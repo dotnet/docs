@@ -266,7 +266,7 @@
    
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value set to the control-specific minimum value.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern> control pattern has its value set to the control-specific minimum value.  
   
  [!code-csharp[UIARangeValuePattern_snip#104Minimum](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#104minimum)]
  [!code-vb[UIARangeValuePattern_snip#104Minimum](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#104minimum)]  

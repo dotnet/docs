@@ -73,7 +73,7 @@
     <namespaceFilter name="System.Web.Compilation">
       <typeFilter name="*" expose="false" />
     </namespaceFilter>
-    <!-- The ASP.NET team only wants these attributes exposed from their namespace. Their logic ecscapes me, but here it is. -->
+    <!-- The ASP.NET team only wants these attributes exposed from their namespace. -->
     <namespaceFilter name="System.Web.UI">
       <typeFilter name="ControlValuePropertyAttribute" expose="true" />
       <typeFilter name="PersistenceModeAttribute" expose="true" />
@@ -103,6 +103,10 @@
       <typeFilter name="GeneratedCodeAttribute" expose="false" />
       <typeFilter name="*" expose="true" />
     </namespaceFilter>
+    <namespaceFilter name="System">
+      <typeFilter name="MonoTODOAttribute" expose="false" />
+      <typeFilter name="*" expose="true" />
+    </namespaceFilter>    
     <namespaceFilter name="*">
       <typeFilter name="*" expose="true" />
     </namespaceFilter>

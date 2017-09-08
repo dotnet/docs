@@ -433,7 +433,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  Some members of the <xref:System.Reflection.TypeAttributes> enumeration are masks that represent a group of values. Each group includes one member whose underlying value is zero. For example, the underlying value of the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> member in the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> group is zero, as is the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> member in the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> group. Because of this, you must use the mask before testing for those values. The example provides an illustration.  
   
 > [!TIP]
->  For most purposes, properties like<xref:System.Type.IsClass%2A>,<xref:System.Type.IsAutoLayout%2A>, and<xref:System.Type.IsSpecialName%2A> are easier to use than type attributes.  
+>  For most purposes, properties like <xref:System.Type.IsClass%2A>,<xref:System.Type.IsAutoLayout%2A>, and <xref:System.Type.IsSpecialName%2A> are easier to use than type attributes.  
   
  If the current <xref:System.Type> represents a constructed generic type, this property returns the attributes of the generic type definition. For example, the attributes returned for `MyGenericClass<int>` (`MyGenericClass(Of Integer)` in Visual Basic) are the attributes of `MyGenericClass<T>` (`MyGenericClass(Of T)` in Visual Basic).  
   
@@ -1240,7 +1240,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
 ## Remarks  
  For example, the fully qualified name of the <xref:System.String> type is `System.String`. Contrast this with the assembly-qualified name returned by the <xref:System.Type.AssemblyQualifiedName%2A> property, which consists of the full name plus the full assembly name.  
   
- If the current type represents a closed generic type, the type arguments in the string returned by the <xref:System.Type.FullName%2A>property are qualified by their full assembly name, even though the string representation of the generic type itself is not qualified by its full assembly name. The following example illustrates the difference in the FullName property for a type that represents generic type definition and one that represents a closed generic type.  
+ If the current type represents a closed generic type, the type arguments in the string returned by the <xref:System.Type.FullName%2A> property are qualified by their full assembly name, even though the string representation of the generic type itself is not qualified by its full assembly name. The following example illustrates the difference in the FullName property for a type that represents generic type definition and one that represents a closed generic type.  
   
  [!code-csharp[System.Type.FullName#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.fullname/cs/fullnameex1.cs#2)]
  [!code-vb[System.Type.FullName#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.fullname/vb/fullnameex1.vb#2)]  
@@ -5842,7 +5842,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
 > [!NOTE]
 >  If `typeName` cannot be found, the call to the <xref:System.Type.GetType%28System.String%29> method returns `null`. It does not throw an exception. To control whether an exception is thrown, call an overload of the <xref:System.Type.GetType%2A> method that has a `throwOnError` parameter.  
   
- <xref:System.Type.GetType%2A>GetType only works on assemblies loaded from disk. If you call <xref:System.Type.GetType%2A> to look up a type defined in a dynamic assembly defined using the <xref:System.Reflection.Emit> services, you might get inconsistent behavior. The behavior depends on whether the dynamic assembly is persistent, that is, created using the `RunAndSave` or `Save` access modes of the <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> enumeration. If the dynamic assembly is persistent and has been written to disk before `GetType` is called, the loader finds the saved assembly on disk, loads that assembly, and retrieves the type from that assembly. If the assembly has not been saved to disk when `GetType` is called, the method returns `null`. `GetType` does not understand transient dynamic assemblies; therefore, calling `GetType` to retrieve a type in a transient dynamic assembly returns `null`.  
+ <xref:System.Type.GetType%2A> only works on assemblies loaded from disk. If you call <xref:System.Type.GetType%2A> to look up a type defined in a dynamic assembly defined using the <xref:System.Reflection.Emit> services, you might get inconsistent behavior. The behavior depends on whether the dynamic assembly is persistent, that is, created using the `RunAndSave` or `Save` access modes of the <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> enumeration. If the dynamic assembly is persistent and has been written to disk before `GetType` is called, the loader finds the saved assembly on disk, loads that assembly, and retrieves the type from that assembly. If the assembly has not been saved to disk when `GetType` is called, the method returns `null`. `GetType` does not understand transient dynamic assemblies; therefore, calling `GetType` to retrieve a type in a transient dynamic assembly returns `null`.  
   
  To use `GetType` on a dynamic module, subscribe to the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event and call `GetType` before saving. Otherwise, you will get two copies of the assembly in memory.  
   
@@ -6237,7 +6237,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Type.GetType%2A> method to obtain a <xref:System.Type> object for a type in another assembly, if the you know its namespace-qualified name. <xref:System.Type.GetType%2A> causes loading of the assembly specified in `typeName`. You can also load an assembly using the <xref:System.Reflection.Assembly.Load%2A>method, and then use the <xref:System.Type.GetType%2A> or <xref:System.Reflection.Assembly.GetTypes%2A> methods of the <xref:System.Reflection.Assembly> class to get <xref:System.Type> objects. If a type is in an assembly known to your program at compile time, it is more efficient to use `typeof` in C#, <xref:System.Type.GetType%2A> in Visual Basic, or `typeid` in C++.  
+ You can use the <xref:System.Type.GetType%2A> method to obtain a <xref:System.Type> object for a type in another assembly, if the you know its namespace-qualified name. <xref:System.Type.GetType%2A> causes loading of the assembly specified in `typeName`. You can also load an assembly using the <xref:System.Reflection.Assembly.Load%2A> method, and then use the <xref:System.Type.GetType%2A> or <xref:System.Reflection.Assembly.GetTypes%2A> methods of the <xref:System.Reflection.Assembly> class to get <xref:System.Type> objects. If a type is in an assembly known to your program at compile time, it is more efficient to use `typeof` in C#, <xref:System.Type.GetType%2A> in Visual Basic, or `typeid` in C++.  
   
  `GetType` only works on assemblies loaded from disk. If you call `GetType` to look up a type defined in a dynamic assembly defined using the <xref:System.Reflection.Emit> services, you might get inconsistent behavior. The behavior depends on whether the dynamic assembly is persistent, that is, created using the `RunAndSave` or `Save` access modes of the <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> enumeration. If the dynamic assembly is persistent and has been written to disk before `GetType` is called, the loader finds the saved assembly on disk, loads that assembly, and retrieves the type from that assembly. If the assembly has not been saved to disk when `GetType` is called, the method returns `null`. `GetType` does not understand transient dynamic assemblies; therefore, calling `GetType` to retrieve a type in a transient dynamic assembly returns `null`.  
   
@@ -8456,7 +8456,7 @@ GetType(Array).IsAssignableFrom(type)
    
   
 ## Examples  
- The following example demonstrates using the<xref:System.Type.IsArray%2A> property.  
+ The following example demonstrates using the <xref:System.Type.IsArray%2A> property.  
   
  [!code-csharp[System.Type.IsArray#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.isarray/cs/isarray2.cs#1)]
  [!code-vb[System.Type.IsArray#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.isarray/vb/isarray2.vb#1)]  
@@ -8661,7 +8661,7 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName>enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=fullName>,<xref:System.Reflection.TypeAttributes?displayProperty=fullName>, and <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration values indicate the way the fields of the type are laid out in memory.  
+ This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=fullName>,<xref:System.Reflection.TypeAttributes?displayProperty=fullName>, and <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration values indicate the way the fields of the type are laid out in memory.  
   
  For dynamic types, you can specify <xref:System.Reflection.TypeAttributes?displayProperty=fullName> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> enumeration value to the type, to let the runtime determine the appropriate way to lay out the class.  
   
@@ -8793,12 +8793,12 @@ GetType(Array).IsAssignableFrom(type)
 ## Remarks  
  This property returns `true` for classes as well as delegates. It returns `false` for value types (for structures and enumerations) even if they are boxed.  
   
- If the current<xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns `true`.If the current <xref:System.Type> represents a constructed generic type, this property returns `true` if the generic type definition is a class definition; that is, it does not define an interface or a value type.  
+ If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns `true`.If the current <xref:System.Type> represents a constructed generic type, this property returns `true` if the generic type definition is a class definition; that is, it does not define an interface or a value type.  
   
 > [!NOTE]
->  This property returns `true` for `Type` instances that represent the <xref:System.Enum> and <xref:System.ValueType> classes. These two classes are the base types for enumerations and value types, respectively, but they are not enumerations or value types themselves. For more information, see the <xref:System.Type.IsValueType%2A>and <xref:System.Type.IsEnum%2A> properties.  
+>  This property returns `true` for `Type` instances that represent the <xref:System.Enum> and <xref:System.ValueType> classes. These two classes are the base types for enumerations and value types, respectively, but they are not enumerations or value types themselves. For more information, see the <xref:System.Type.IsValueType%2A> and <xref:System.Type.IsEnum%2A> properties.  
   
- The <xref:System.Reflection.TypeAttributes?displayProperty=fullName>enumeration value  distinguishes a type declaration as class or interface.However, both classes and value types are marked with the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> attribute. If you retrieve the value of a type's Attributes property and use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> value to determine whether a type is a class instead of a value type, you must also call the <xref:System.Type.IsValueType%2A> property. The example for the <xref:System.Reflection.TypeAttributes> enumeration contains additional information as well as anexample.  
+ The <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration value  distinguishes a type declaration as class or interface.However, both classes and value types are marked with the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> attribute. If you retrieve the value of a type's Attributes property and use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> value to determine whether a type is a class instead of a value type, you must also call the <xref:System.Type.IsValueType%2A> property. The example for the <xref:System.Reflection.TypeAttributes> enumeration contains additional information as well as anexample.  
   
  This property is read-only.  
   
@@ -9185,7 +9185,7 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName>enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, and <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration values indicate the way the fields of the type are laid out in memory.  
+ This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, and <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration values indicate the way the fields of the type are laid out in memory.  
   
  For dynamic types, you can specify <xref:System.Reflection.TypeAttributes?displayProperty=fullName> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> enumeration value to the type, to specify that the offsets at which the fields start are specified explicitly.  
   
@@ -9557,7 +9557,7 @@ GetType(Array).IsAssignableFrom(type)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName>enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, and <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration values indicate the way the fields of the type are laid out in memory.  
+ This property is provided as a convenience. Alternatively, you can use the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration value to select the type layout attributes, and then test whether <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is set. The <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, and <xref:System.Reflection.TypeAttributes?displayProperty=fullName> enumeration values indicate the way the fields of the type are laid out in memory.  
   
  For dynamic types, you can specify <xref:System.Reflection.TypeAttributes?displayProperty=fullName> when you create the type. In code, apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute with the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> enumeration value to the type, to specify that layout is sequential.  
   
@@ -9573,7 +9573,7 @@ GetType(Array).IsAssignableFrom(type)
    
   
 ## Examples  
- The following example creates an instance of a class for which the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>enumeration value in the <xref:System.Runtime.InteropServices.StructLayoutAttribute> class has been set, checks for the <xref:System.Type.IsLayoutSequential%2A> property, and displays the result.  
+ The following example creates an instance of a class for which the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> enumeration value in the <xref:System.Runtime.InteropServices.StructLayoutAttribute> class has been set, checks for the <xref:System.Type.IsLayoutSequential%2A> property, and displays the result.  
   
  [!code-cpp[Type_IsLayoutSequential#1](~/samples/snippets/cpp/VS_Snippets_CLR/Type_IsLayoutSequential/CPP/type_islayoutsequential.cpp#1)]
  [!code-csharp[Type_IsLayoutSequential#1](~/samples/snippets/csharp/VS_Snippets_CLR/Type_IsLayoutSequential/CS/type_islayoutsequential.cs#1)]
@@ -10593,7 +10593,7 @@ GetType(Array).IsAssignableFrom(type)
   
 -   Whether a type is a delegate, that is, whether it derives from either <xref:System.Delegate> or <xref:System.MulticastDelegate>.  
   
- The <xref:System.Type.IsSubclassOf%2A> method cannot be used to determine whether an interface derives from another interface, or whether a class implements an interface. Use the<xref:System.Type.IsAssignableFrom%2A> method for that purpose, as the following example shows.  
+ The <xref:System.Type.IsSubclassOf%2A> method cannot be used to determine whether an interface derives from another interface, or whether a class implements an interface. Use the <xref:System.Type.IsAssignableFrom%2A> method for that purpose, as the following example shows.  
   
  [!code-csharp[System.Type.IsSubclassOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.issubclassof/cs/issubclassof_interface1.cs#1)]
  [!code-vb[System.Type.IsSubclassOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.issubclassof/vb/issubclassof_interface1.vb#1)]  
@@ -11075,7 +11075,7 @@ GetType(Array).IsAssignableFrom(type)
 > [!NOTE]
 >  A constructed type such as `Base<int, V>` is useful when emitting code, but you cannot call the <xref:System.Type.MakeGenericType%2A> method on this type because it is not a generic type definition. To create a closed constructed type that can be instantiated, first call the <xref:System.Type.GetGenericTypeDefinition%2A> method to get a <xref:System.Type> object representing the generic type definition and then call <xref:System.Type.MakeGenericType%2A> with the desired type arguments.  
   
- The <xref:System.Type> object returned by <xref:System.Type.MakeGenericType%2A> is the same as the <xref:System.Type> obtained by calling the <xref:System.Object.GetType%2A> method of the resulting constructed type, or the <xref:System.Object.GetType%2A>method of any constructed type that was created from the same generic type definition using the same type arguments.  
+ The <xref:System.Type> object returned by <xref:System.Type.MakeGenericType%2A> is the same as the <xref:System.Type> obtained by calling the <xref:System.Object.GetType%2A> method of the resulting constructed type, or the <xref:System.Object.GetType%2A> method of any constructed type that was created from the same generic type definition using the same type arguments.  
   
 > [!NOTE]
 >  An array of generic types is not itself a generic type. You cannot call <xref:System.Type.MakeGenericType%2A> on an array type such as `C<T>[]` (`Dim ac() As C(Of T)` in Visual Basic). To construct a closed generic type from `C<T>[]`, call <xref:System.Type.GetElementType%2A> to obtain the generic type definition `C<T>`; call <xref:System.Type.MakeGenericType%2A> on the generic type definition to create the constructed type; and finally call the <xref:System.Type.MakeArrayType%2A> method on the constructed type to create the array type. The same is true of pointer types and `ref` types (`ByRef` in Visual Basic).  
@@ -11237,7 +11237,7 @@ GetType(Array).IsAssignableFrom(type)
   
  If the current <xref:System.Type> represents a constructed generic type, this property applies to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int>` (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   
- If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns<xref:System.Reflection.MemberTypes?displayProperty=fullName>.  
+ If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this property always returns <xref:System.Reflection.MemberTypes?displayProperty=fullName>.  
   
    
   

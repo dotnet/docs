@@ -1168,7 +1168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method closes the connection if it was opened by the Entity Framework. After <xref:System.Data.Objects.ObjectContext.Dispose%2A> is called, operations that require an open connection, such as executing a query or calling the<xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method, will cause an exception. Operations that do not require an open connection, such as composing a query or attaching objects, will not cause an exception. The <xref:System.Data.Objects.ObjectContext.Dispose%2A> method does not close any explicitly opened connections.  
+ This method closes the connection if it was opened by the Entity Framework. After <xref:System.Data.Objects.ObjectContext.Dispose%2A> is called, operations that require an open connection, such as executing a query or calling the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method, will cause an exception. Operations that do not require an open connection, such as composing a query or attaching objects, will not cause an exception. The <xref:System.Data.Objects.ObjectContext.Dispose%2A> method does not close any explicitly opened connections.  
   
  Limiting the scope of an <xref:System.Data.Objects.ObjectContext> within a `using` block (`Using` in Visual Basic) ensures that resources are correctly disposed. For more information, see [Managing Connections and Transactions](http://msdn.microsoft.com/en-us/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
   

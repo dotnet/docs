@@ -144,7 +144,7 @@
  <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> performs synchronous loading and parsing of the <xref:System.Windows.Documents.FixedPage>.  
   
 > [!NOTE]
->  Use the <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A>instead of <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> to avoid thread blocking while the <xref:System.Windows.Documents.FixedPage> loads.  
+>  Use the <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> instead of <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> to avoid thread blocking while the <xref:System.Windows.Documents.FixedPage> loads.  
   
  ]]></format>
         </remarks>

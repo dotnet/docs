@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.NetHttpBinding>is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. Note: WebSockets are only supported on Windows 8. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply and WebSockets for duplex (only on Windows 8). This behavior can be overridden by setting the <xref:System.ServiceModel.Channels.WebSocketTransportUsage> property to one of the following values:  
+ <xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. Note: WebSockets are only supported on Windows 8. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply and WebSockets for duplex (only on Windows 8). This behavior can be overridden by setting the <xref:System.ServiceModel.Channels.WebSocketTransportUsage> property to one of the following values:  
   
 1.  WhenDuplex- This is the default value and behaves as described above.  
   
@@ -25,7 +25,7 @@
   
 3.  Always - This forces WebSockets to be used even for request-reply contracts.  
   
- <xref:System.ServiceModel.NetHttpBinding>supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.  
+ <xref:System.ServiceModel.NetHttpBinding> supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.  
   
  ]]></format>
     </remarks>

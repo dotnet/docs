@@ -2884,7 +2884,7 @@
  [!code-csharp[UIAClient_snip#167](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#167)]
  [!code-vb[UIAClient_snip#167](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#167)]  
   
- The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported>is to be returned instead of a default value.  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
   
  [!code-csharp[UIAClient_snip#168](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#168)]
  [!code-vb[UIAClient_snip#168](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#168)]  

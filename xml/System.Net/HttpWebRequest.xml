@@ -1059,7 +1059,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type of decompression that is used.</summary>
-        <value>A T:System.Net.DecompressionMethods object that indicates the type of decompression that is used.</value>
+        <value>A <see cref="T:System.Net.DecompressionMethods" /> object that indicates the type of decompression that is used.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The object's current state does not allow this property to be set.</exception>
       </Docs>
@@ -3244,9 +3244,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a callback function to validate the server certificate.</summary>
-        <value>A callback function to validate the server certificate.  
-  
- A callback function to validate the server certificate.</value>
+        <value>A callback function to validate the server certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3323,9 +3321,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the request provides support for a <see cref="T:System.Net.CookieContainer" />.</summary>
         <value>
-          <see langword="true" /> if the request provides support for a <see cref="T:System.Net.CookieContainer" />; otherwise, <see langword="false" />.  
-  
- <see langword="true" /> if a <see cref="T:System.Net.CookieContainer" /> is supported; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the request provides support for a <see cref="T:System.Net.CookieContainer" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

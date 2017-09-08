@@ -748,9 +748,7 @@
       <Docs>
         <param name="requestUriString">A URI string that identifies the Internet resource.</param>
         <summary>Initializes a new <see cref="T:System.Net.HttpWebRequest" /> instance for the specified URI string.</summary>
-        <returns>Returns <see cref="T:System.Net.HttpWebRequest" />.  
-  
- An <see cref="T:System.Net.HttpWebRequest" /> instance for the specific URI string.</returns>
+        <returns>An <see cref="T:System.Net.HttpWebRequest" /> instance for the specific URI string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -800,9 +798,7 @@
       <Docs>
         <param name="requestUri">A URI that identifies the Internet resource.</param>
         <summary>Initializes a new <see cref="T:System.Net.HttpWebRequest" /> instance for the specified URI.</summary>
-        <returns>Returns <see cref="T:System.Net.HttpWebRequest" />.  
-  
- An <see cref="T:System.Net.HttpWebRequest" /> instance for the specific URI string.</returns>
+        <returns>An <see cref="T:System.Net.HttpWebRequest" /> instance for the specific URI string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1230,7 +1226,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601>object will complete when the <xref:System.IO.Stream> for writing data to the Internet resource is available.  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete when the <xref:System.IO.Stream> for writing data to the Internet resource is available.  
   
  After you call <xref:System.Net.WebRequest.GetRequestStreamAsync%2A>, make sure you close the request stream before you call <xref:System.Net.WebRequest.GetResponseAsync%2A>.  
   

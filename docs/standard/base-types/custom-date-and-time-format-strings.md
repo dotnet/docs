@@ -350,7 +350,7 @@ A date and time format string defines the text representation of a <xref:System.
   
 -   For a time from an unspecified time zone (a time whose <xref:System.DateTime.Kind%2A?displayProperty=fullName> property equals <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>), the result is equivalent to <xref:System.String.Empty?displayProperty=fullName>.  
   
- For <xref:System.DateTimeOffset> values, the "K" format specifier is equivalent to the "zz" format specifier, and produces a result string containing the <xref:System.DateTimeOffset> value's offset from UTC.  
+ For <xref:System.DateTimeOffset> values, the "K" format specifier is equivalent to the "zzz" format specifier, and produces a result string containing the <xref:System.DateTimeOffset> value's offset from UTC.  
   
  If the "K" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <xref:System.FormatException>. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this topic.  
   

@@ -167,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aborts the Request</summary>
+        <summary>Aborts the request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -847,9 +847,7 @@
       </ReturnValue>
       <Docs>
         <summary>When overridden in a descendant class, gets the factory object derived from the <see cref="T:System.Net.IWebRequestCreate" /> class used to create the <see cref="T:System.Net.WebRequest" /> instantiated for making the request to the specified URI.</summary>
-        <value>Returns <see cref="T:System.Net.IWebRequestCreate" />.  
-  
- The derived <see cref="T:System.Net.WebRequest" /> type returned by the <see cref="M:System.Net.IWebRequestCreate.Create(System.Uri)" /> method.</value>
+        <value>The derived <see cref="T:System.Net.WebRequest" /> type returned by the <see cref="M:System.Net.IWebRequestCreate.Create(System.Uri)" /> method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1227,9 +1225,7 @@
       <Parameters />
       <Docs>
         <summary>When overridden in a descendant class, returns a <see cref="T:System.IO.Stream" /> for writing data to the Internet resource as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1320,9 +1316,7 @@
       <Parameters />
       <Docs>
         <summary>When overridden in a descendant class, returns a response to an Internet request as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

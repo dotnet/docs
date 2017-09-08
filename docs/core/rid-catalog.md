@@ -10,7 +10,7 @@ ms.prod: .net-core
 # .NET Core RID Catalog
 
 RID is short for *Runtime IDentifier*. RID values are used to identify target platforms where the application runs.
-They're used by .NET packages to represent runtime-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.11-x64`.
+They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.11-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
 RIDs can be set in the `<RuntimeIdentifier>` element of your project file. They're also used via the `--runtime` option with the following [.NET Core CLI commands](./tools/index.md):
@@ -45,12 +45,12 @@ If an exact match is not found, NuGet walks back the graph until it finds the cl
 The following example is the actual entry for the `osx.10.11-x64` RID:
 
 ```json
-"osx.10.11-x64": {
-    "#import": [ "osx.10.11", "osx.10.10-x64" ]
+"osx.10.12-x64": {
+    "#import": [ "osx.10.12", "osx.10.11-x64" ]
 }
 ```
 
-The above RID specifies that `osx.10.11-x64` imports `osx.10.10-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.11-x64` in the package. If NuGet cannot find the specific runtime, it can restore packages that specify `osx.10.10-x64` runtimes, for example.
+The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet cannot find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
 
 The following example shows a slightly bigger RID graph also defined in the *runtime.json*  file:
 

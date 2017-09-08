@@ -26,8 +26,8 @@ The following table defines the most common target frameworks, how they're refer
 
 | Target Framework      | Latest Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version | Metapackage |
 | :-------------------: | :------------: | :----------------------------: | :-------------------------------------: | :---------: |
-| .NET Standard         | 2.0.0          | netstandard2.0                 | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
-| .NET Core Application | 2.0.0          | netcoreapp2.0                  | 2.0                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
+| .NET Standard         | 2.0            | netstandard2.0                 | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
+| .NET Core Application | 2.0            | netcoreapp2.0                  | 2.0                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
 | .NET Framework        | 4.7            | net47                          | 2.0                   | N/A |
 
 ## Supported target framework versions

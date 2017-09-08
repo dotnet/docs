@@ -1105,13 +1105,13 @@
   
  The <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method requires some synchronous setup tasks to complete (DNS resolution, proxy detection, and TCP socket connection, for example) before this method becomes asynchronous. As a result, this method should never be called on a user interface (UI) thread because it might take considerable time (up to several minutes depending on network settings) to complete the initial synchronous setup tasks before an exception for an error is thrown or the method succeeds.  
   
- To learn more about the thread pool, see [The Managed Thread Pool](../Topic/The%20Managed%20Thread%20Pool.md).  
+ To learn more about the thread pool, see [The Managed Thread Pool](~/docs/standard/threading/the-managed-thread-pool.md).  
   
 > [!NOTE]
 >  Your application cannot mix synchronous and asynchronous methods for a particular request. If you call the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method, you must use the <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> method to retrieve the response.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -1870,7 +1870,7 @@
 >  You must call the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -1942,7 +1942,7 @@
 >  You must call the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -1999,7 +1999,7 @@
 >  You must call the <xref:System.Net.HttpWebResponse.Close%2A> method to close the stream and release the connection. Failure to do so may cause your application to run out of connections.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2144,7 +2144,7 @@
 >  Your application cannot mix synchronous and asynchronous methods for a particular request. If you call the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method, you must use the <xref:System.Net.HttpWebRequest.GetResponse%2A> method to retrieve the response.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2230,7 +2230,7 @@
 >  Your application cannot mix synchronous and asynchronous methods for a particular request. If you call the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method, you must use the <xref:System.Net.HttpWebRequest.GetResponse%2A> method to retrieve the response.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2306,7 +2306,7 @@
 >  If a <xref:System.Net.WebException> is thrown, use the <xref:System.Net.WebException.Response%2A> and <xref:System.Net.WebException.Status%2A> properties of the exception to determine the response from the server.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  For security reasons, cookies are disabled by default. If you wish to use cookies, use the <xref:System.Net.HttpWebRequest.CookieContainer%2A> property to enable cookies.  
@@ -3015,7 +3015,7 @@
   
 -   The domain suffix of the destination matches the local computer's domain suffix (<xref:System.Net.NetworkInformation.IPGlobalProperties.DomainName%2A>).  
   
- Changing the <xref:System.Net.HttpWebRequest.Proxy%2A> property after the request has been started by calling the <xref:System.Net.HttpWebRequest.GetRequestStream%2A>, <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.HttpWebRequest.GetResponse%2A>, or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> method throws an <xref:System.InvalidOperationException>. For information on the proxy element see [\&lt;defaultProxy\&gt; Element (Network Settings)](../Topic/%3CdefaultProxy%3E%20Element%20\(Network%20Settings\).md).  
+ Changing the <xref:System.Net.HttpWebRequest.Proxy%2A> property after the request has been started by calling the <xref:System.Net.HttpWebRequest.GetRequestStream%2A>, <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.HttpWebRequest.GetResponse%2A>, or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> method throws an <xref:System.InvalidOperationException>. For information on the proxy element see [\&lt;defaultProxy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md).  
   
    
   

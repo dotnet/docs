@@ -710,7 +710,7 @@
  For example, when a URI beginning with `http://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.CreateDefault%2A>. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.CreateDefault%2A> method will return a <xref:System.Net.FileWebRequest>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>

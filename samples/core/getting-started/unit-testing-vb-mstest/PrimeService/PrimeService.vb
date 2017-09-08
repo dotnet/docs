@@ -1,10 +1,3 @@
-Imports System
-Imports System.Diagnostics
-Imports System.Reflection
-Imports System.Runtime.CompilerServices
-Imports System.Security
-Imports System.Security.Permissions
-
 Namespace Prime.Services
     Public Class PrimeService
         Public Function IsPrime(candidate As Integer) As Boolean

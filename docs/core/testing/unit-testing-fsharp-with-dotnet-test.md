@@ -16,7 +16,7 @@ This tutorial takes you through an interactive experience building a sample solu
 Open a shell window. Create a directory called *unit-testing-with-fsharp* to hold the solution.
 Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create a new solution. This
 makes it easier to manage both the class library and the unit test project.
-Inside the solution directory, create a *MathService* directory. The directory structure thus far is shown below:
+Inside the solution directory, create a *MathService* directory. The directory and file structure thus far is shown below:
 
 ```
 /unit-testing-with-fsharp
@@ -31,10 +31,12 @@ module MyMath =
     let sumOfSquares xs = raise (System.NotImplementedException("You haven't written a test yet!"))
 ```
 
+Change the directory back to the *unit-testing-with-fsharp* directory. Run [`dotnet sln add .\MathService\MathService.fsproj`](../tools/dotnet-sln.md)
+to add the class library project to the solution.
+
 ## Creating the test project
 
-Change the directory back to the *unit-testing-with-fsharp* directory. Run [`dotnet sln add .\MathService\MathService.fsproj`](../tools/dotnet-sln.md)
-to add the class library project to the solution. Next, create the *MathService.Tests* directory. The following outline shows the directory structure:
+Next, create the *MathService.Tests* directory. The following outline shows the directory structure:
 
 ```
 /unit-testing-with-fsharp
@@ -61,14 +63,6 @@ The test project requires other packages to create and run unit tests. `dotnet n
 dotnet add reference ../MathService/MathService.fsproj
 ```
 
-Another option is to edit the *PrimeService.Tests.fsproj* file. Directly under the first `<ItemGroup>` node, add another `<ItemGroup>` node with a reference to the library project:
-
-```xml
-<ItemGroup>
-  <ProjectReference Include="..\MathService\MathService.fsproj" />
-</ItemGroup>
-```
-
 You can see the entire file in the [samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-with-fsharp/MathService.Tests/MathService.Tests.fsproj) on GitHub.
 
 You have the following final solution layout:
@@ -84,9 +78,9 @@ You have the following final solution layout:
         MathServiceTests.fsproj
 ```
 
-## Creating the first test
+Execute [`dotnet sln add .\MathService.Tests\MathService.Tests.fsproj`](../tools/dotnet-sln.md) in the *unit-testing-with-fsharp* directory. 
 
-Before building the library or the tests, execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-restore.md) in the *unit-testing-using-dotnet-test* directory. 
+## Creating the first test
 
 The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *Tests.fs* and add the following code:
 
@@ -99,9 +93,9 @@ let ``My test`` () =
 let ``Fail every time`` () = Assert.True(false)
 ```
 
-The `[<Fact>]` attribute denotes a method as a single test. From the *unit-testing-with-fsharp*, execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The xUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
+The `[<Fact>]` attribute denotes a test method that is run by the test runner. From the *unit-testing-with-fsharp*, execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The xUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
-These two tests show the most basic passing and failing tests. `My test` passes, and `Fail every time` fails. Now, create a test for the `sumOfSquares` method. The `sumOfSquares` method returns the sum of the square of all odd integer values that are part of the input sequence. Rather than trying to write all of those functions at once, you can iteratively create tests that validate the functionality. Making each test pass means creating the necessary functionality for the method.
+These two tests show the most basic passing and failing tests. `My test` passes, and `Fail every time` fails. Now, create a test for the `sumOfSquares` method. The `sumOfSquares` method returns the sum of the squares of all odd integer values that are part of the input sequence. Rather than trying to write all of those functions at once, you can iteratively create tests that validate the functionality. Making each test pass means creating the necessary functionality for the method.
 
 The simplest test we can write is to call `sumOfSquares` with all even numbers, where the result should be an empty sequence of integers.  Here's that test:
 
@@ -113,18 +107,18 @@ let ``Sum of evens returns empty collection`` () =
     Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
 ```
 
-Your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `Matservice` class that works:
+Your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `MathService` class that works:
 
 ```csharp
 let sumOfSquares xs =
     Seq.empty<int>
 ```
 
-In the *unit-testing-using-dotnet-test* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs this single test. It passes.
+In the *unit-testing-with-fsharp* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs this single test. It passes.
 
 ## Completing the requirements
 
-Now that you've made one test pass, it's time to write more. The next simple case would be working with a sequence whose only odd number is `1`. The number 1 is easier because the square of 1 is 1. Here's that next test:
+Now that you've made one test pass, it's time to write more. The next simple case works with a sequence whose only odd number is `1`. The number 1 is easier because the square of 1 is 1. Here's that next test:
 
 ```fsharp
 [<Fact>]
@@ -166,4 +160,4 @@ let sumOfSquares xs =
     |> Seq.map square
 ```
 
-You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is part of the normal workflow. You concentrate most of your time and effort on solving the goals of the application.
+You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is part of the normal workflow. You've concentrated most of your time and effort on solving the goals of the application.

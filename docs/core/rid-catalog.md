@@ -118,7 +118,6 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
   - `debian.8-x64`
 - Fedora
   - `fedora-x64`
-  - `fedora.23-x64`
   - `fedora.24-x64`
   - `fedora.25-x64` (.NET Core 2.0 or later versions)
   - `fedora.26-x64` (.NET Core 2.0 or later versions)
@@ -126,7 +125,6 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
   - `gentoo-x64`
 - openSUSE
   - `opensuse-x64`
-  - `opensuse.13.2-x64`
   - `opensuse.42.1-x64`
 - Oracle Linux
   - `ol-x64`

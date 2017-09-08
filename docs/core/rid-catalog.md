@@ -10,7 +10,7 @@ ms.prod: .net-core
 # .NET Core RID Catalog
 
 RID is short for *Runtime IDentifier*. RID values are used to identify target platforms where the application runs.
-They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.11-x64`.
+They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
 RIDs can be set in the `<RuntimeIdentifier>` element of your project file. They're also used via the `--runtime` option with the following [.NET Core CLI commands](./tools/index.md):

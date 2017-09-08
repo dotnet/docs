@@ -3,7 +3,7 @@ title: Target frameworks
 description: Learn about target frameworks for .NET Core apps and libraries.
 author: richlander
 ms.author: mairaw
-ms.date: 08/30/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard

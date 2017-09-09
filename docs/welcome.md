@@ -51,7 +51,7 @@ Additionally, you can browse the [.NET API reference](/dotnet/api).
 
 ## Open source
 
-ihis documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation.  Additionally, much of .NET itself is open source:
+This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation.  Additionally, much of .NET itself is open source:
 
 - [.NET Core Home](https://github.com/dotnet/core)
 - [.NET Libraries](https://github.com/dotnet/corefx)

@@ -46,7 +46,7 @@
         runat="server"/>
       <br/>
       
-      <%-- <Snippet2> --%>
+      <!-- <Snippet2> -->
       <asp:ListView ID="ContactsListView" 
         DataSourceID="ContactsDataSource" 
         DataKeyNames="ContactID"
@@ -100,7 +100,7 @@
           </tr>
         </InsertItemTemplate>
       </asp:ListView>
-      <%-- </Snippet2> --%>
+      <!-- </Snippet2> -->
 
       <!-- This example uses Microsoft SQL Server and connects      -->
       <!-- to the AdventureWorks sample database. Use an ASP.NET    -->

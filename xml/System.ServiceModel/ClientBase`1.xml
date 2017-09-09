@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor when there is more than one target endpoint in the application configuration file. This value is the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
+ Use this constructor when there is more than one target endpoint in the application configuration file. This value is the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
   
  ]]></format>
         </remarks>
@@ -258,7 +258,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file. The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file. The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
   
  ]]></format>
         </remarks>
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>
@@ -318,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>
@@ -374,7 +374,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>
@@ -406,7 +406,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>

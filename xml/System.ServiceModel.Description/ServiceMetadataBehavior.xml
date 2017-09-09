@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> object to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A?displayProperty=fullName> collection (or the [\&lt;serviceMetadata\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) element in an application configuration file) to enable or disable the publication of service metadata. However, adding the behavior to a service is not sufficient to enable metadata publication:  
+ Add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> object to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A?displayProperty=fullName> collection (or the [&lt;serviceMetadata&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) element in an application configuration file) to enable or disable the publication of service metadata. However, adding the behavior to a service is not sufficient to enable metadata publication:  
   
 -   To enable WS-Transfer GET metadata retrieval, you must also add an endpoint to your service in which the contract is `IMetadataExchange`. For an example, see [How to: Publish Metadata for a Service Using Code](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md). The `IMetadataExchange` endpoint can be configured as can any other endpoint.  
   
@@ -28,7 +28,7 @@
   
  The address of the `IMetadataExchange` endpoint follows the normal rules regarding the combination of base addresses and endpoint addresses. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Publishing Metadata](~/docs/framework/wcf/feature-details/publishing-metadata.md).  
   
- To enable the publication of metadata using a configuration file, add the [\&lt;serviceMetadata\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) element to the [\&lt;serviceBehaviors\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) element and associate the element with the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) element for which you want to publish metadata. For an example, see [How to: Publish Metadata for a Service Using a Configuration File](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md). The class has the following members:  
+ To enable the publication of metadata using a configuration file, add the [&lt;serviceMetadata&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) element to the [&lt;serviceBehaviors&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) element and associate the element with the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) element for which you want to publish metadata. For an example, see [How to: Publish Metadata for a Service Using a Configuration File](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md). The class has the following members:  
   
 -   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property specifies whether metadata is returned for HTTP/GET requests.  
   

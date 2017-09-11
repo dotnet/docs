@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection> class defines the settings that are available in the `memoryCache` section of a configuration file. In this section, the `namedCaches` element is used to configure a default instance of the cache and to configure any additional named instances.  
   
- For more information, see [\&lt;memoryCache\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md).  
+ For more information, see [&lt;memoryCache&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md).  
   
  ]]></format>
     </remarks>
@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file. For more information about configuration options that are related to this property, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+ The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file. For more information about configuration options that are related to this property, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
   
  ]]></format>
         </remarks>

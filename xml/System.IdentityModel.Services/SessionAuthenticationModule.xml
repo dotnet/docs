@@ -26,7 +26,7 @@
   
  For more complicated scenarios, you can derive from <xref:System.IdentityModel.Services.SessionAuthenticationModule> to implement a custom SAM. To this end, many of the methods that are invoked during <xref:System.IdentityModel.Services.SessionAuthenticationModule.OnAuthenticateRequest%2A> and <xref:System.IdentityModel.Services.SessionAuthenticationModule.SignOut%2A> are exposed so that you can provide custom behavior at specific stages of the session processing lifecycle.  
   
- You can add the SAM to the ASP.NET pipeline in a configuration file by adding it to the HTTP modules under either the `<system.webServer>` element for IIS version 7 and later or under the `<system.web>` element for versions prior to IIS 7. The cookie handler used by the SAM can be configured with the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
+ You can add the SAM to the ASP.NET pipeline in a configuration file by adding it to the HTTP modules under either the `<system.webServer>` element for IIS version 7 and later or under the `<system.web>` element for versions prior to IIS 7. The cookie handler used by the SAM can be configured with the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
   
    
   
@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A> property is initialized by the <xref:System.IdentityModel.Services.SessionAuthenticationModule.InitializePropertiesFromConfiguration%2A> method. This method initializes the property based on the cookie handler specified on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. You can set the cookie handler in a configuration file through the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
+ The <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A> property is initialized by the <xref:System.IdentityModel.Services.SessionAuthenticationModule.InitializePropertiesFromConfiguration%2A> method. This method initializes the property based on the cookie handler specified on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. You can set the cookie handler in a configuration file through the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
   
  ]]></format>
         </remarks>
@@ -276,7 +276,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Initializes the <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A> property from the handler specified in configuration by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration?displayProperty=fullName> object that is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. You can specify the cookie handler in a configuration file through the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
+ Initializes the <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A> property from the handler specified in configuration by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration?displayProperty=fullName> object that is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. You can specify the cookie handler in a configuration file through the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
   
  ]]></format>
         </remarks>
@@ -608,7 +608,7 @@
 ## Remarks  
  The <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived> event is raised from within the <xref:System.IdentityModel.Services.SessionAuthenticationModule.OnAuthenticateRequest%2A> method after a session token (<xref:System.IdentityModel.Tokens.SessionSecurityToken>) has been successfully read from the session cookie.  
   
- You can use this event to modify properties of the session token before it is passed further along the pipeline and is used to authenticate the entity making the request (user). One of the most common scenarios involves modifying the session expiration time (accessible through the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ValidTo%2A?displayProperty=fullName> property) to override the session expiration time set in configuration through the `lifetime` attribute of the [\&lt;sessionTokenRequirement\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element. By modifying this property on each request, you can implement a sliding session; that is, a session in which the lifetime is extended each time the user accesses the site.  
+ You can use this event to modify properties of the session token before it is passed further along the pipeline and is used to authenticate the entity making the request (user). One of the most common scenarios involves modifying the session expiration time (accessible through the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ValidTo%2A?displayProperty=fullName> property) to override the session expiration time set in configuration through the `lifetime` attribute of the [&lt;sessionTokenRequirement&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element. By modifying this property on each request, you can implement a sliding session; that is, a session in which the lifetime is extended each time the user accesses the site.  
   
  In an event handler, you can access the token through the <xref:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.SessionToken%2A?displayProperty=fullName> property. After modifying the token, you can ensure that it is written back to the cookie by setting the <xref:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.ReissueCookie%2A?displayProperty=fullName> to `true`. Finally, the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived> event is a cancelable event, and you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs> to abort further processing of the request.  
   

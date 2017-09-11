@@ -4397,7 +4397,7 @@
 ## Remarks  
  Use this method to load a local assembly that the operating system has flagged as having been loaded from the Web (for example, a temporary file that was downloaded from the Internet or intranet). Before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], such assemblies were automatically loaded into a sandboxed application domain. Starting with the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], they are loaded with full trust.  
   
- As an alternative to using this method, you can apply the [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) in your application configuration file. This causes the common language runtime to revert to the security policy of the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)].  
+ As an alternative to using this method, you can apply the [&lt;NetFx40_LegacySecurityPolicy&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) in your application configuration file. This causes the common language runtime to revert to the security policy of the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)].  
   
 > [!CAUTION]
 >  If you use either of these solutions, you must be certain that it is safe to load `assemblyFile` with full trust.  

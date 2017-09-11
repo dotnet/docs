@@ -24,7 +24,7 @@
   
  Several properties are exposed by the <xref:System.IdentityModel.Services.CookieHandler> class that specify default behavior and properties for the session cookie. The <xref:System.IdentityModel.Services.CookieHandler.Name%2A>, <xref:System.IdentityModel.Services.CookieHandler.Domain%2A>, and <xref:System.IdentityModel.Services.CookieHandler.Path%2A> properties supply the base name for the cookie, the domain in which it is valid and the path under which it is stored on the client. The <xref:System.IdentityModel.Services.CookieHandler.HideFromClientScript%2A> property specifies whether the cookie is accessible to client-side scripts. The <xref:System.IdentityModel.Services.CookieHandler.RequireSsl%2A> property specifies whether the cookie should be transmitted only over secure (HTTPS) connections. If set, the <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property is used to set the expiration time for persistent sessions, that is for sessions that remain valid even after the browser is closed. All of these properties have equivalent properties that are typically set on the underlying <xref:System.Web.HttpCookie> object (or objects) by the "core" methods of the handler. For more information see the documentation for each property.  
   
- The cookie handler that is used by the SAM can be specified in configuration through the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element. The cookie handler set by this element can be modified in an event delegate for the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event or it can be set or accessed directly through the <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A?displayProperty=fullName> property.  
+ The cookie handler that is used by the SAM can be specified in configuration through the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element. The cookie handler set by this element can be modified in an event delegate for the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event or it can be set or accessed directly through the <xref:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler%2A?displayProperty=fullName> property.  
   
    
   
@@ -258,7 +258,7 @@
 ## Remarks  
  Corresponds to the <xref:System.Web.HttpCookie.Domain%2A?displayProperty=fullName> property.  
   
- The property can be initialized by specifying the `domain` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `domain` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -288,7 +288,7 @@
   
  This property corresponds to the <xref:System.Web.HttpCookie.HttpOnly%2A?displayProperty=fullName> property.  
   
- The property can be initialized by specifying the `hideFromScript` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `hideFromScript` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -339,7 +339,7 @@
 ## Remarks  
  This property corresponds to the <xref:System.Web.HttpCookie.Name%2A?displayProperty=fullName> property.  
   
- The property can be initialized by specifying the `name` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `name` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -367,7 +367,7 @@
 ## Remarks  
  This property corresponds to the <xref:System.Web.HttpCookie.Path%2A?displayProperty=fullName> property.  
   
- The property can be initialized by specifying the `path` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `path` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -397,7 +397,7 @@
   
  This property is used to set the <xref:System.Web.HttpCookie.Expires%2A?displayProperty=fullName> property.  
   
- The property can be initialized by specifying the `persistentSessionLifetime` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `persistentSessionLifetime` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>
@@ -574,7 +574,7 @@
   
  This property corresponds to the <xref:System.Web.HttpCookie.Secure%2A?displayProperty=fullName> property.  
   
- The property can be initialized by specifying the `requireSSL` attribute on the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
+ The property can be initialized by specifying the `requireSSL` attribute on the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element in configuration.  
   
  ]]></format>
         </remarks>

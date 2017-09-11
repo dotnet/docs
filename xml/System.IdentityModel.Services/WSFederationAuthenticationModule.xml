@@ -28,7 +28,7 @@
   
 -   Claims-based identity for ASP.NET applications. During authentication, the WSFAM builds a principal from the claims in the security token sent by the STS and sets this claims principal as the thread principal. You can then use this principal to make further authorization, presentation, and logic decisions about the user it represents in your code.  
   
- The WSFAM exposes several properties that provide default message parameters to use on WS-Federation sign-in and sign-out requests. These properties are typically initialized from the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element in a configuration file. The most important of these properties are:  
+ The WSFAM exposes several properties that provide default message parameters to use on WS-Federation sign-in and sign-out requests. These properties are typically initialized from the [&lt;wsFederation&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element in a configuration file. The most important of these properties are:  
   
 -   The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.Issuer%2A> property, which specifies the address of the security token service (STS) to which to send WS-Federation sign-in and sign-out requests.  
   
@@ -830,7 +830,7 @@
 ## Remarks  
  Module properties are initialized using the equivalent properties of the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> object specified by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.WsFederationConfiguration%2A?displayProperty=fullName> property.  
   
- You can specify settings in a configuration file through the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
+ You can specify settings in a configuration file through the [&lt;wsFederation&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
   
  ]]></format>
         </remarks>
@@ -942,7 +942,7 @@
   
 5.  Raises the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenValidated> event. You can cancel further processing or modify the claims principal in a handler for this event.  
   
-6.  Uses the configured session authentication module (SAM) to create a <xref:System.IdentityModel.Tokens.SessionSecurityToken> object. (The configured SAM is the <xref:System.IdentityModel.Services.SessionAuthenticationModule> object returned by the <xref:System.IdentityModel.Services.FederatedAuthentication.SessionAuthenticationModule%2A?displayProperty=fullName> property.) The session token is created by using the claims principal returned in step 5. The <xref:System.IdentityModel.Tokens.SessionSecurityToken.ValidFrom%2A?displayProperty=fullName> and <xref:System.IdentityModel.Tokens.SessionSecurityToken.ValidTo%2A?displayProperty=fullName> properties are set by using the <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties of the <xref:System.IdentityModel.Tokens.SecurityToken> returned in step 3 and are validated against the current time and the token lifetime specified by either the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime%2A> or the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenLifetime%2A> property of the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> object in the token handler collection being used by WSFAM. The token lifetime on the session token handler can be specified in configuration through the [\&lt;sessionTokenRequirement\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element. Note: The <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property on the cookie handler configured for the SAM is not used.  
+6.  Uses the configured session authentication module (SAM) to create a <xref:System.IdentityModel.Tokens.SessionSecurityToken> object. (The configured SAM is the <xref:System.IdentityModel.Services.SessionAuthenticationModule> object returned by the <xref:System.IdentityModel.Services.FederatedAuthentication.SessionAuthenticationModule%2A?displayProperty=fullName> property.) The session token is created by using the claims principal returned in step 5. The <xref:System.IdentityModel.Tokens.SessionSecurityToken.ValidFrom%2A?displayProperty=fullName> and <xref:System.IdentityModel.Tokens.SessionSecurityToken.ValidTo%2A?displayProperty=fullName> properties are set by using the <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties of the <xref:System.IdentityModel.Tokens.SecurityToken> returned in step 3 and are validated against the current time and the token lifetime specified by either the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime%2A> or the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenLifetime%2A> property of the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> object in the token handler collection being used by WSFAM. The token lifetime on the session token handler can be specified in configuration through the [&lt;sessionTokenRequirement&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element. Note: The <xref:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime%2A> property on the cookie handler configured for the SAM is not used.  
   
 7.  Calls the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SetPrincipalAndWriteSessionToken%2A> method with the session token to write the session cookie. The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SetPrincipalAndWriteSessionToken%2A> method first raises the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SessionSecurityTokenCreated> event. You can change properties on the session token or change whether the cookie should be persisted in a handler for this event. After the event is raised, the method then writes the cookie using the SAM.  
   
@@ -2093,7 +2093,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, this property is initialized from the `signOutQueryString` attribute of the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element in the configuration file. It is intended to contain any application-specific parameters to be sent in a WS-Federation sign-out request. To remove these parameters, you can set the property to an empty string.  
+ By default, this property is initialized from the `signOutQueryString` attribute of the [&lt;wsFederation&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element in the configuration file. It is intended to contain any application-specific parameters to be sent in a WS-Federation sign-out request. To remove these parameters, you can set the property to an empty string.  
   
  The WSFAM does not use this property directly; however, you can pass it to the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.GetFederationPassiveSignOutUrl%2A> method to create a complete WS-Federation sign-out URL that can then be used by your code.  
   
@@ -2121,7 +2121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, this property is initialized from the `signOutReply` attribute of the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element in the configuration file. It is intended to represent the wreply parameter in a WS-Federation sign-out request.  
+ By default, this property is initialized from the `signOutReply` attribute of the [&lt;wsFederation&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element in the configuration file. It is intended to represent the wreply parameter in a WS-Federation sign-out request.  
   
  The wreply parameter is optional. If the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutReply%2A> property is set to `null` or an empty string, the wreply parameter is not included in the sign-out request.  
   

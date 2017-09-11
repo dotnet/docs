@@ -15,9 +15,9 @@ manager: "wpickett"
 
 # "Runtime Changes in the .NET Framework | Microsoft Docs"
 
-[!include[introduction](../../../includes/migration-guide/runtime/introduction.md)]
+[!include[introduction](../../../../includes/migration-guide/runtime/introduction.md)]
 
 ## Usage
 Select the .NET Framework you are currently targeting and then the .NET Framework you wish to migrate to:
 
-[!include[versionselector](../../../includes/migration-guide/runtime/versionselector.md)]
+[!include[versionselector](../../../../includes/migration-guide/runtime/versionselector.md)]

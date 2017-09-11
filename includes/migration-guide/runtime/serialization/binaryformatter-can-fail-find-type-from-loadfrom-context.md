@@ -1,0 +1,11 @@
+### BinaryFormatter can fail to find type from LoadFrom context
+
+|   |   |
+|---|---|
+|Details|As of .NET Framework 4.5, a number of <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> changes may cause differences in deserialization when using <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=name> to deserialize types that had been loaded in the LoadFrom context. These changes are due to the new ways <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> now loads a type which causes different behavior when a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=name> attempts to deserialize to that type later on. The default serialization binder does not automatically search the LoadFrom context, although it may have worked in some circumstances based on the old behavior of XmlSerializer. Due to the changes, when a type is being loaded from an assembly loaded in a different context, a <xref:System.IO.FileNotFoundException?displayProperty=name> may be thrown.|
+|Suggestion|If this exception is seen, the <code>Binder</code> property of the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=name> can be set to a custom binder that will find the correct type.<pre><code>var formatter = new BinaryFormatter { Binder = new TypeFinderBinder() }</code></pre>And then the custom binder:<pre><code>public class TypeFinderBinder : SerializationBinder<br />{<br />private static readonly string s_assemblyName = Assembly.GetExecutingAssembly().FullName;<br /><br />public override Type BindToType(string assemblyName, string typeName)<br />{<br />return Type.GetType(String.Format(CultureInfo.InvariantCulture, &quot;{0}, {1}&quot;, typeName, s_assemblyName));<br />}<br />}</code></pre>|
+|Scope|Edge|
+|Version|4.5|
+|Type|Runtime|
+|Affected APIs|<ul><li><xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=fullName></li><li><xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=fullName></li><li><xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream%2CSystem.Runtime.Remoting.Messaging.HeaderHandler)?displayProperty=fullName></li></ul>|
+

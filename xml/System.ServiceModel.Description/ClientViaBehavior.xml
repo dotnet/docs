@@ -24,7 +24,7 @@
   
  Use this behavior when the immediate network destination is not the intended processor of the message to enable multiple-hop conversations when the calling application does not necessarily know the ultimate destination or when the destination `Via` header is not an address.  
   
- You can also set this value using the [\&lt;clientVia\&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
+ You can also set this value using the [&lt;clientVia&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
   
  ]]></format>
     </remarks>
@@ -164,7 +164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also set this value using the [\&lt;clientVia\&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
+ You can also set this value using the [&lt;clientVia&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
   
  ]]></format>
         </remarks>

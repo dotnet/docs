@@ -197,7 +197,7 @@
   
  Regardless of the <xref:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject%2A> setting, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always processes known data (both in and out) and does not throw exceptions when extra data comes in.  
   
- You can use the [\&lt;callbackDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element to set this property in a client application configuration file.  
+ You can use the [&lt;callbackDebug&gt;](~/docs/framework/configure-apps/file-schema/wcf/callbackdebug.md) element to set this property in a client application configuration file.  
   
  ]]></format>
         </remarks>
@@ -261,7 +261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A> property set a limit on the number of items in an object graph that are serialized. You can also use the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer.md) element to set this value in a client application configuration file.  
+ Use the <xref:System.ServiceModel.ServiceBehaviorAttribute.MaxItemsInObjectGraph%2A> property set a limit on the number of items in an object graph that are serialized. You can also use the [&lt;dataContractSerializer&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer.md) element to set this value in a client application configuration file.  
   
  ]]></format>
         </remarks>

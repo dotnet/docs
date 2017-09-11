@@ -371,7 +371,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property gathers the information necessary about a page's UI hierarchy and passes it to the page's [\&lt;trace\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) property. When you enable tracing, either for a page or for your application, this information is displayed in the `Control Tree` section of the trace output. Trace output for a page is appended to the end of the page; while trace output for an application can be viewed from the trace viewer (trace.axd file) which is stored in the application's root directory. For more information about tracing, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
+ This property gathers the information necessary about a page's UI hierarchy and passes it to the page's [&lt;trace&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) property. When you enable tracing, either for a page or for your application, this information is displayed in the `Control Tree` section of the trace output. Trace output for a page is appended to the end of the page; while trace output for an application can be viewed from the trace viewer (trace.axd file) which is stored in the application's root directory. For more information about tracing, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
  ]]></format>
         </remarks>

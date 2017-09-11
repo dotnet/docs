@@ -39,7 +39,7 @@
   
 -   Programmatically add the custom endpoint behavior to the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property prior to the opening of the service host (in a service application) or the channel factory (in a client application).  
   
--   Configure the behavior using an application configuration file. For details, see [\&lt;behaviorExtensions\&gt;](~/docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md).  
+-   Configure the behavior using an application configuration file. For details, see [&lt;behaviorExtensions&gt;](~/docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md).  
   
  To perform the service customization task for which it is intended, the <xref:System.ServiceModel.Description.IEndpointBehavior> object must be added to the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A?displayProperty=fullName> property prior to the construction of the service runtime, which occurs when <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method is called on <xref:System.ServiceModel.ServiceHost?displayProperty=fullName>. To perform a client customization task, the <xref:System.ServiceModel.Description.IEndpointBehavior> object must be added to the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A?displayProperty=fullName> property before calling the <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=fullName> method or the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method on <xref:System.ServiceModel.ChannelFactory%601>.  
   

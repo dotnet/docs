@@ -35,7 +35,7 @@
   
  You can make text substitutions in the body of the e-mail message by passing to the <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method an <xref:System.Collections.IDictionary> instance that maps strings to their replacements.  
   
- The <xref:System.Net.Mail.MailMessage> object created by the <xref:System.Web.UI.WebControls.MailDefinition> class is sent using the <xref:System.Net.Mail.SmtpClient.Send%2A> method of the <xref:System.Net.Mail.SmtpClient> class. To be able to send e-mail, you must configure an SMTP mail server in your Web.config file. For more information, see the [\&lt;smtp\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md).  
+ The <xref:System.Net.Mail.MailMessage> object created by the <xref:System.Web.UI.WebControls.MailDefinition> class is sent using the <xref:System.Net.Mail.SmtpClient.Send%2A> method of the <xref:System.Net.Mail.SmtpClient> class. To be able to send e-mail, you must configure an SMTP mail server in your Web.config file. For more information, see the [&lt;smtp&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md).  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.MailDefinition> class does not support data binding. Properties of the <xref:System.Web.UI.WebControls.MailDefinition> class cannot be bound to data using the `<%#   %>` data-binding expression syntax.  

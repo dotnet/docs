@@ -143,12 +143,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the &lt;<see langword="service" />&gt; configuration element.</summary>
-        <value>The name of the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element used to configure the service.</value>
+        <value>The name of the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element used to configure the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This name is not coupled to our configuration model. This is used by service host base to wire up the service. The configuration name is a required string attribute for the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element.  
+ This name is not coupled to our configuration model. This is used by service host base to wire up the service. The configuration name is a required string attribute for the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element.  
   
    
   

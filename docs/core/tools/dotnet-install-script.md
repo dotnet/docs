@@ -4,7 +4,7 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 08/28/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -138,17 +138,13 @@ macOS/Linux:
 
 `./dotnet-install.sh --shared-runtime --version 1.1.0`
 
-#### Windows obtain one-liner example
+#### Windows 'obtain-script and install' one-liner example
 
-```
-@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&([scriptblock]::Create((Invoke-WebRequest -useb 'https://dot.net/v1/dotnet-install.ps1'))) <additional installation-script args>"
-```
+`@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&([scriptblock]::Create((Invoke-WebRequest -useb 'https://dot.net/v1/dotnet-install.ps1'))) <additional install-script args>"`
 
-#### OSX/Linux obtain one-liner
+#### macOS/Linux 'obtain-script and install' one-liner example
 
-```
-curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional installation-script args>
-```
+`curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>`
 
 ## See also
 

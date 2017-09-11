@@ -1285,7 +1285,75 @@
 ## Remarks  
  The <xref:System.Web.HttpServerUtility.UrlTokenDecode%2A> method converts a URL string token, which encodes binary data as base 64 digits, to its equivalent byte array representation. Use the <xref:System.Web.HttpServerUtility.UrlTokenDecode%2A> method to decode tokens transmitted on the URL and encoded by using the <xref:System.Web.HttpServerUtility.UrlTokenEncode%2A>.  
   
+ The <xref:System.Web.HttpServerUtility.UrlTokenDecode%2A> method will return an empty byte array if the `input` para        <summary>Do not use; intended only for browser compatibility. Use <see cref="M:System.Web.HttpServerUtility.UrlEncode(System.String)" />.</summary>
+        <returns>The URL encoded text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlTokenDecode">
+      <MemberSignature Language="C#" Value="public static byte[] UrlTokenDecode (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] UrlTokenDecode(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtility.UrlTokenDecode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The URL string token to decode.</param>
+        <summary>Decodes a URL string token to its equivalent byte array using base 64 digits.</summary>
+        <returns>The byte array containing the decoded URL string token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpServerUtility.UrlTokenDecode%2A> method converts a URL string token, which encodes binary data as base 64 digits, to its equivalent byte array representation. Use the <xref:System.Web.HttpServerUtility.UrlTokenDecode%2A> method to decode tokens transmitted on the URL and encoded by using the <xref:System.Web.HttpServerUtility.UrlTokenEncode%2A>.  
+  
  The <xref:System.Web.HttpServerUtility.UrlTokenDecode%2A> method will return an empty byte array if the `input` parameter has a length of less than one.  
+
+ The <xref:System.Web.HttpServerUtility.UrlTokenDecode%2A> method will return null if the 'input' parameter has an invalid format.
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlTokenEncode">
+      <MemberSignature Language="C#" Value="public static string UrlTokenEncode (byte[] input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlTokenEncode(unsigned int8[] input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtility.UrlTokenEncode(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="input">The byte array to encode.</param>
+        <summary>Encodes a byte array into its equivalent string representation using base 64 digits, which is usable for transmission on the URL.</summary>
+        <returns>The string containing the encoded token if the byte array *length* is greater than one; otherwise, an empty string ("").</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpServerUtility.UrlTokenEncode%2A> method converts a byte array into an equivalent string representation encoded with base 64 digits. The resulting string token can be transmitted on the URL.  
+  
+ The <xref:System.Web.HttpServerUtility.UrlTokenEncode%2A> will return an empty string if the `input` parameter has a length of less than one.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullExceptionmeter has a length of less than one.  
   
  ]]></format>
         </remarks>

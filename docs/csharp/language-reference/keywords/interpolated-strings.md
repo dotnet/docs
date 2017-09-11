@@ -45,7 +45,7 @@ Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours);
 The structure of an interpolated string is:  
   
 ```  
-$"<text> {<interpolated-expression> [,<field-width>] [<:format-string>] } <text> ..."  
+$"<text> {<interpolated-expression> [,<field-width>] [:<format-string>] } <text> ..."  
 ```  
 
 where: 

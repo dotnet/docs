@@ -138,6 +138,18 @@ macOS/Linux:
 
 `./dotnet-install.sh --shared-runtime --version 1.1.0`
 
+#### Windows obtain one-liner example
+
+```
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&([scriptblock]::Create((Invoke-WebRequest -useb 'https://dot.net/v1/dotnet-install.ps1'))) <additional installation-script args>"
+```
+
+#### OSX/Linux obtain one-liner
+
+```
+curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional installation-script args>
+```
+
 ## See also
 
 [.NET Core releases](https://github.com/dotnet/core/releases)   

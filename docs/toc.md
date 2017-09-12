@@ -189,6 +189,7 @@
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [Get Started](csharp/getting-started/)
+## [Quick Starts](csharp/quick-starts/)
 ## [Tutorials](csharp/tutorials/)
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level

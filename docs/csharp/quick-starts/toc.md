@@ -1,6 +1,6 @@
-# [Interactive Tutorial](index.md)
-## [Hello world](hello-world.md)
-## [Working with numbers](working-with-numbers.md)
+# [Quick Starts](index.md)
+## [Hello world](hello-world)
+## [Working with numbers](working-with-numbers)
 <!--
   Plan for an outline:
   Working with Numbers would be:

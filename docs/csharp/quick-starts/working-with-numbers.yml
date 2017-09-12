@@ -1,30 +1,33 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Hello C#
+title: Working with numbers
 metadata:
-  title:  Hello C#. Your first introduction to the C# language.
-  description: This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
+  title:  Working with numbers. Using number types in C#.
+  description: This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
   audience: Developer
   level: Beginner
-  nextTutorialHref: working-with-numbers
-  nextTutorialTitle: Working with numbers in C#
+  nextTutorialHref: branching-and-loops
+  nextTutorialTitle: Branches and loops in C#
   displayType: two-column
   interactive: csharp
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
-- title: Run your first c# program
+    This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+- title: Exploring integer math
   durationInMinutes: 2
   content: |
     Run the following code in the interactive window (type the following line in the window on the right and click the 'Run' button):
 
     ```csharp
-    Console.WriteLine("Hello World!");
+    int a = 5;
+    int b = 4;
+    int c = a  + b;
+    Console.WriteLine(c);
     ```
 
     Congratulations! You've run your first C# program. Now, replace the two lines above with these:
-- title: Declare and use variables
+- title: Order of operations
   durationInMinutes: 3
   content: |
     Your first program printed the `string` "Hello World!" on
@@ -36,8 +39,11 @@ items:
     use run the same code with different values. Let's try it.
 
     ```csharp
-    string firstName = "Bill";
-    Console.WriteLine(firstName);
+    int a = 5;
+    int b = 4;
+    int c = 2;
+    int d = a  + b * c;
+    Console.WriteLine(d);
     ```
 
     Those lines declare a variable, `name` and assigns it a value, "Bill". Then, it
@@ -47,10 +53,11 @@ items:
     the name to one of your friends. Add these two lines in the interactive window above:
 
     ```csharp
-    string firstName = "Bill";
-    Console.WriteLine(firstName);
-    firstName = "Maria";
-    Console.WriteLine(firstName);
+    int a = 5;
+    int b = 4;
+    int c = 2;
+    int d = (a  + b) * c;
+    Console.WriteLine(d);
     ```
 
     Notice that the same line of code prints two different messages, based on
@@ -60,11 +67,12 @@ items:
     that now.  Modify the last line to the following:
 
     ```csharp
-    Console.WriteLine("Hello " + firstName);
+    int d = (a  + b) / c;
+    Console.WriteLine(d);
     ```
 
     Click 'Run' again to see the results.
-- title: Work with strings
+- title: integer limits
   durationInMinutes: 4
   content: |
     Your last edit was our first look at what you can do with strings. Let's explore more.
@@ -72,61 +80,107 @@ items:
     The `+`, when applied to strings, creates a new string with the text from the first followed by the text from the second. This is referred to as *string concatenation*. You can combine any number of strings, including string variables.  Try this:
 
     ```csharp
-    string firstName = "Maria";
-    string aFriend = "Sage";
-    Console.WriteLine("My friends are " + firstName + " and " + aFriend);
+    int a = 5;
+    int b = 4;
+    int c = 2;
+    int d = (a  + b) % c;
+    Console.WriteLine(d);
+    ```
+
+    Try:
+
+    ```csharp
+    int a = 19;
+    int b = 23;
+    int c = 8;
+    int d = (a  + b) % c;
+    Console.WriteLine(d);
+    ```
+    
+    Talk about ranges:
+
+    ```csharp
+    int max = int.MaxValue;
+    int min = int.MinValue;
+    Console.WriteLine($"The range of integers is {min} to {max}");
     ```
 
     As you explore more with strings, you can find the length of a string using `Length`.  Add the following code at the bottom of the interactive window:
 
     ```csharp
-    Console.WriteLine("The name " + firstName + " has " + firstName.Length + " letters");
-    Console.WriteLine("The name " + aFriend + " has " + aFriend.Length + " letters");
+    int max = int.MaxValue;
+    int min = int.MinValue;
+    Console.WriteLine($"The range of integers is {min} to {max}");
+    int what = max + 3;
+    Console.WriteLine($"an example of overflow: {what}");
     ```
-
+    
     > [!TIP]
     > This is a good time to explore on your own. You've learned that `Console.WriteLine()`
     > writes text to the screen. You've learned how to declare variables and
     > concatenate strings together. Experiment in the interactive window. Write
     > some more messages yourself. Build strings using the `+` operator.
-- title: Do more with strings
+
+
+- title: Thinking about doubles
   durationInMinutes: 4
   content: |
     Another useful method is Trim, and related methods TrimStart and TrimEnd. These methods remove leading and trailing spaces:
 
     ```csharp
-    string message = "      Hello World!       ";
-    Console.WriteLine("[" + message + "]");
+    double a = 5;
+    double b = 4;
+    double c = 2;
+    double d = (a  + b) / c;
+    Console.WriteLine(d);
+    ```
 
-    string trimmedMessage = message.TrimStart();
-    Console.WriteLine("[" + trimmedMessage + "]");
+    Try:
 
-    trimmedMessage = message.TrimEnd();
-    Console.WriteLine("[" + trimmedMessage + "]");
-
-    trimmedMessage = message.Trim();
-    Console.WriteLine("[" + trimmedMessage + "]");
+    ```csharp
+    double a = 19;
+    double b = 23;
+    double c = 8;
+    double d = (a  + b) / c;
+    Console.WriteLine(d);
     ```
 
     This sample reinforces a couple important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the Trim methods returns a new string, but does not change the original message.
 
     Other methods perform more general edits on a string. You've probably used a search and replace command in an editor or word processor. The Replace method substitutes a replacement string for all occurences of a sub-string in a string. Try it for yourself. Add this code above:
 
+    Talk about ranges:
+
     ```csharp
-    string message = "Hello World!";
-    Console.WriteLine(message);
-    message = message.Replace("Hello", "Greetings");
-    Console.WriteLine(message);
+    double max = double.MaxValue;
+    double min = double.MinValue;
+    Console.WriteLine($"The range of double is {min} to {max}");
     ```
 
     Two other useful methods make a string ALL CAPS or all lower case. Try this code above:
 
     ```csharp
-    string message = "Hello World!";
-    Console.WriteLine(message);
-    Console.WriteLine(message.ToUpper());
-    Console.WriteLine(message.ToLower());
+    double d = 0;
+    double increment = 0.1;
+    for (int i = 0; i < 1000; i++)
+    {
+      d += increment;
+      if (i % 50 == 0)
+          Console.WriteLine(d);
+    }
     ```
+
+    ```csharp
+    double d = 0;
+    double increment = 0.1;
+    for (int i = 0; i < 1000; i++)
+    {
+      d = i * increment;
+      if (i % 50 == 0)
+          Console.WriteLine(d);
+    }
+    ```
+    
 - title: Search strings
   durationInMinutes: 4
   content: |

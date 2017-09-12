@@ -41,7 +41,7 @@ You can read about those combinations in these walkthroughs:
 * Create unit tests using [*XUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-dotnet-test.md).
 * Create unit tests using [*MSTest* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-mstest.md).
 
-You can choose different languages for your class libraries and your unit test libraries. You can learn how by mixing and matching the walk-throughs referenced above.
+You can choose different languages for your class libraries and your unit test libraries. You can learn how by mixing and matching the walkthroughs referenced above.
 
 * If you are using Visual Studio, just see [Live Unit Testing in .NET Core](~/visualstudio/test/live-unit-testing)
 * For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](selective-unit-tests.md), or [including and excluding tests with Visual Studio](~/visualstudio/test/live-unit-testing#including-and-excluding-test-projects-and-test-methods).

@@ -66,9 +66,9 @@ Setting this property to `false` will override implicit inclusion and the behavi
 
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 
-`<EnableDefaultCompileItems>` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob which also applies to \*.cs items. Because of that, `Solution Explorer` will continue show \*.cs items as part of the project, included as `None` items. In a similar way, you can use `<EnableDefaultNoneItems>` to disable the implicit `None` glob.
+`<EnableDefaultCompileItems>` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob, which also applies to \*.cs items. Because of that, **Solution Explorer** will continue show \*.cs items as part of the project, included as `None` items. In a similar way, you can use `<EnableDefaultNoneItems>` to disable the implicit `None` glob.
 
-If you would like to disable **all implicit globs**, you can set the `<EnableDefaultItems>` to `false`:
+To disable **all implicit globs**, you can set the `<EnableDefaultItems>` property to `false` as in the following example:
 ```xml
 <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>

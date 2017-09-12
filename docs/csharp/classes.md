@@ -68,7 +68,7 @@ In the following example, a public class that contains a single field, a method,
 [!code-csharp[Class Example](../../samples/snippets/csharp/concepts/classes/class-example.cs)]  
   
 ## C# language specification  
-For more information, see the [C# language specification](https://msdn.microsoft.com/library/ms228593.aspx). The language specification is the definitive source for C# syntax and usage.
+For more information, see the [C# language specification](https://msdn.microsoft.com/library/ms228593.aspx). The language specification is the definitive source for C# syntax and usage.  
   
 ## See also  
 [C# programming guide](https://msdn.microsoft.com/library/67ef8sbd.aspx)   

@@ -291,7 +291,7 @@ An iterator performs a custom iteration over a collection, such as a list or an 
 
 The return type of an iterator can be @System.Collections.IEnumerable, @System.Collections.Generic.IEnumerable%601, @System.Collections.IEnumerator, or @System.Collections.Generic.IEnumerator%601.
 
-For more information, see [Iterators](https://msdn.microsoft.com/library/mt639331.aspx).
+For more information, see [Iterators](https://msdn.microsoft.com/library/mt639331.aspx).  
 
 ## See also ##
 

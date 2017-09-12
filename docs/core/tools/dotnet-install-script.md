@@ -138,11 +138,13 @@ macOS/Linux:
 
 `./dotnet-install.sh --shared-runtime --version 1.1.0`
 
-#### Windows 'obtain-script and install' one-liner example
+Obtain script and install .NET Core CLI one-liner examples:
+
+Windows:
 
 `@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&([scriptblock]::Create((Invoke-WebRequest -useb 'https://dot.net/v1/dotnet-install.ps1'))) <additional install-script args>"`
 
-#### macOS/Linux 'obtain-script and install' one-liner example
+macOS/Linux:
 
 `curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>`
 

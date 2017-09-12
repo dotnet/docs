@@ -13,7 +13,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This enumeration allows control of HTTP cookies when communicating with the server.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
         <ReturnType>System.Net.Http.CookieUsePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value indicates that no cookies are sent to the server by the client.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseInternalCookieStoreOnly">
@@ -52,7 +52,7 @@
         <ReturnType>System.Net.Http.CookieUsePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value indicates that cookies are handled internally which optimizes performance. Accessing, adding and deleting cookies is not allowed when this value is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseSpecifiedCookieContainer">
@@ -71,7 +71,7 @@
         <ReturnType>System.Net.Http.CookieUsePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value indicates that cookies are managed manually using a <see cref="T:System.Net.CookieContainer" /> type.</summary>
       </Docs>
     </Member>
   </Members>

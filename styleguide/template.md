@@ -347,13 +347,23 @@ function fancyAlert(arg) {
 
 ## Videos
 
+Currently, OPS can embed both Channel 9 and youtube videos with the following syntax:
+
 ### Channel 9
 
-<iframe src="https://channel9.msdn.com/Shows/On-NET/Shipping-NET-Core-RC2--Tools-Preview-1/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO <channel9_video_link>]
+
+For example:
+
+> [!VIDEO https://channel9.msdn.com/Series/A-Nonexistent-Video/03/player]
 
 ### YouTube
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO <youtube_video_link>]
+
+For example:
+
+> [!VIDEO https://www.youtube.com/embed/ZZZz9_Zzz9z]
 
 ## docs.microsoft extensions
 

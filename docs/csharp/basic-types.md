@@ -29,7 +29,7 @@ The information stored in a type can include the following:
   
 -   The kinds of operations that are permitted.  
   
-The compiler uses type information to make sure thatlanguage-reference/keywords/int.md all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [int](language-reference/keywords/int.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](language-reference/keywords/bool.md), the compiler generates an error, as shown in the following example:  
+The compiler uses type information to make sure that all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [int](language-reference/keywords/int.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](language-reference/keywords/bool.md), the compiler generates an error, as shown in the following example:  
   
 [!code-csharp[Type Safety](../../samples/snippets/csharp/concepts/basic-types/type-safety.cs)]  
   

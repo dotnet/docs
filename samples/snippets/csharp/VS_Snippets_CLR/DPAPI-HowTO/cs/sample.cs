@@ -88,10 +88,10 @@ public class MemoryProtectionSample
 
     public static void EncryptInMemoryData(byte[] Buffer, MemoryProtectionScope Scope )
     {
-        if (Buffer.Length <= 0)
-            throw new ArgumentException("Buffer");
         if (Buffer == null)
             throw new ArgumentNullException("Buffer");
+        if (Buffer.Length <= 0)
+            throw new ArgumentException("Buffer");
         
 
         // Encrypt the data in memory. The result is stored in the same same array as the original data.

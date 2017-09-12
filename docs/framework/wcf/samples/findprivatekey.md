@@ -19,7 +19,7 @@ It can be difficult to find the location and name of the private key file associ
 > [!IMPORTANT]
 > FindPrivateKey is a sample that needs to be compiled prior to use. See the [To build the FindPrivateKey project](#to-build-the-findprivatekey-project) section for instructions on how to build the FindPrivateKey tool.
 
-X.509 certificates are installed by an Administrator or any user in the machine. However, the certificate may be accessed by a service running under a different account. For example, the ASPNET on Windows clients or the NETWORK SERVICE accounts on Windows Server machines.
+X.509 certificates are installed by an Administrator or any user in the machine. However, the certificate may be accessed by a service running under a different account. For example, the ASPNET account on Windows clients or the NETWORK SERVICE account on Windows Server machines.
 
 This account may not have access to the private key file because the certificate was not installed by it originally. The FindPrivateKey tool gives you the location of a given X.509 Certificate's private key file. You can add permissions or remove permissions to this file once you know the location of the particular X.509 certificates' private key file.
 

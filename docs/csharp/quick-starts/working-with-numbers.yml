@@ -2,8 +2,8 @@
 documentType: Tutorial
 title: Working with numbers
 metadata:
-  title:  Working with numbers. Using number types in C#.
-  description: This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+  title:  Working with numbers in C#
+  description: This tutorial teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
   audience: Developer
   level: Beginner
   nextTutorialHref: branching-and-loops
@@ -13,44 +13,70 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+    This tutorial teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 - title: Exploring integer math
   durationInMinutes: 2
   content: |
     Run the following code in the interactive window (type the following line in the window on the right and click the 'Run' button):
 
     ```csharp
-    int a = 5;
-    int b = 4;
-    int c = a  + b;
+    int a = 18;
+    int b = 6;
+    int c = a + b;
     Console.WriteLine(c);
     ```
 
-    Congratulations! You've run your first C# program. Now, replace the two lines above with these:
-- title: Order of operations
+    You've just seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a positive or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
+
+    - `-` for subtraction
+    - `*` for multiplication
+    - `/` for division.
+
+    > [!TIP]
+    > Throughout this tutorial, you can try explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
+
+    Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the 'Run' button.
+
+    Subtraction:
+
+    ```csharp
+    int c = a - b;
+    ```
+
+    Multiplication:
+
+    ```csharp
+    int c = a * b;
+    ```
+
+    Division: 
+
+    ```csharp
+    int c = a / b;
+    ```
+    
+    You can also experiment by performing multiple mathematics operations in the same line, if you'd like.
+
+- title: Exploring order of operations
   durationInMinutes: 3
   content: |
-    Your first program printed the `string` "Hello World!" on
-    a screen. The rest of this lesson explores working with
-    the `string` type, which represents text in C#.
-
-    Your first program is limited to printing one message. You can write more
-    useful programs by using **variables**. A **variable** is a symbol you can
-    use run the same code with different values. Let's try it.
+    The C# language defines the precedence of different mathematics operations
+    so that the rules are consistent with the rules you learned in mathematics.
+    Multiplication and division take precedence over addition and subtraction.
+    Explore that by running the following code in the interactive window:
 
     ```csharp
     int a = 5;
     int b = 4;
     int c = 2;
-    int d = a  + b * c;
+    int d = a + b * c;
     Console.WriteLine(d);
     ```
 
-    Those lines declare a variable, `name` and assigns it a value, "Bill". Then, it
-    prints out the name.
+    The output demonstrates that the multiplication is performed before the addition.
 
-    You can assign different values to any variable you declare. You can change
-    the name to one of your friends. Add these two lines in the interactive window above:
+    You can enforce the order of operation by adding parentheses around
+    the operation or operations you want performed first:
 
     ```csharp
     int a = 5;
@@ -60,72 +86,76 @@ items:
     Console.WriteLine(d);
     ```
 
-    Notice that the same line of code prints two different messages, based on
-    the value stored in the `firstName` variable.
-
-    You may have also noticed the "Hello" was missing in the last two messages. Let's fix
-    that now.  Modify the last line to the following:
+    Explore more by combining many different operations. Try something like this:
 
     ```csharp
+    int d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+    ```
+
+    You may have noticed an interesting behavior for integers. Integer
+    division always produces an integer result, even when the mathematic
+    result would include a decimal or fraction portion.
+
+    If you haven't seen this behavior, try the following:
+
+    ```csharp
+    int a = 7;
+    int b = 4;
+    int c = 3;
     int d = (a  + b) / c;
     Console.WriteLine(d);
     ```
 
     Click 'Run' again to see the results.
-- title: integer limits
+- title: Integer precision and limits
   durationInMinutes: 4
   content: |
-    Your last edit was our first look at what you can do with strings. Let's explore more.
-
-    The `+`, when applied to strings, creates a new string with the text from the first followed by the text from the second. This is referred to as *string concatenation*. You can combine any number of strings, including string variables.  Try this:
+    That last sample showed you that integer division truncates the result.
+    You can get the **remainder** by using the **modulo** operator, the `%` character:
 
     ```csharp
-    int a = 5;
+    int a = 7;
     int b = 4;
-    int c = 2;
-    int d = (a  + b) % c;
-    Console.WriteLine(d);
+    int c = 3;
+    int d = (a  + b) / c;
+    int e = (a + b) % c;
+    Console.WriteLine("quotient: " + d);
+    Console.WriteLine("remainder: " + e);
     ```
 
-    Try:
-
-    ```csharp
-    int a = 19;
-    int b = 23;
-    int c = 8;
-    int d = (a  + b) % c;
-    Console.WriteLine(d);
-    ```
+    The C# integer type differs from mathematical integers in one other
+    way: the `int` type has minimum and maximum limits. Run this code
+    in the interactive window to see those limits:
     
-    Talk about ranges:
-
     ```csharp
     int max = int.MaxValue;
     int min = int.MinValue;
-    Console.WriteLine($"The range of integers is {min} to {max}");
+    Console.WriteLine("The range of integers is " + min + " to " + max);
     ```
 
-    As you explore more with strings, you can find the length of a string using `Length`.  Add the following code at the bottom of the interactive window:
+    You get 
 
     ```csharp
     int max = int.MaxValue;
     int min = int.MinValue;
     Console.WriteLine($"The range of integers is {min} to {max}");
     int what = max + 3;
-    Console.WriteLine($"an example of overflow: {what}");
+    Console.WriteLine("an example of overflow: " + what);
     ```
     
-    > [!TIP]
-    > This is a good time to explore on your own. You've learned that `Console.WriteLine()`
-    > writes text to the screen. You've learned how to declare variables and
-    > concatenate strings together. Experiment in the interactive window. Write
-    > some more messages yourself. Build strings using the `+` operator.
+    Notice that the answer is very close to the minimum (negative) integer.
+    The addition operation **overflowed** the allowed values for integers.
 
+    There are other numeric types with different limits and precision that you
+    would use when the `int` type does not meet your needs. Let's example those next.
 
-- title: Thinking about doubles
+- title: Working with the double type.
   durationInMinutes: 4
   content: |
-    Another useful method is Trim, and related methods TrimStart and TrimEnd. These methods remove leading and trailing spaces:
+    The `double` numeric type represents a double-precision floating point
+    number. Those terms may be new to you. A **floating point** number is
+    useful to represent non-integral numbers that may be very large, or small
+    in magnitude. Try the code below in the interactive window and see what the result is.
 
     ```csharp
     double a = 5;
@@ -135,7 +165,8 @@ items:
     Console.WriteLine(d);
     ```
 
-    Try:
+    Notice that the answer includes the decimal portion of the quotient. Try a slightly
+    more complicted expression with doubles:
 
     ```csharp
     double a = 19;
@@ -145,78 +176,60 @@ items:
     Console.WriteLine(d);
     ```
 
-    This sample reinforces a couple important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the Trim methods returns a new string, but does not change the original message.
-
-    Other methods perform more general edits on a string. You've probably used a search and replace command in an editor or word processor. The Replace method substitutes a replacement string for all occurences of a sub-string in a string. Try it for yourself. Add this code above:
-
-    Talk about ranges:
+    The range of a double value is much greater than integer values. Try the following
+    code in the interactive window:
 
     ```csharp
     double max = double.MaxValue;
     double min = double.MinValue;
-    Console.WriteLine($"The range of double is {min} to {max}");
+    Console.WriteLine("The range of double is " + min + " to " + max);
     ```
 
-    Two other useful methods make a string ALL CAPS or all lower case. Try this code above:
+    These values are printed out to represent scientific notation. The number to
+    the left of the `E` is the signifant. The number to the right is the exponent,
+    as a power of 10. Internally, these numbers are represented similarly, but in 
+    a binary form. One part represents the significant binary digits.
+    Another part represents where to place the binary point (analogous to a decimal point) relative to
+    those significant digits.
+
+    Just like decimal numbers in math, doubles in C# can have rounding error. Try this code:
 
     ```csharp
-    double d = 0;
-    double increment = 0.1;
-    for (int i = 0; i < 1000; i++)
-    {
-      d += increment;
-      if (i % 50 == 0)
-          Console.WriteLine(d);
-    }
-    ```
-
-    ```csharp
-    double d = 0;
-    double increment = 0.1;
-    for (int i = 0; i < 1000; i++)
-    {
-      d = i * increment;
-      if (i % 50 == 0)
-          Console.WriteLine(d);
-    }
+    double third = 1.0 / 3.0;
+    Console.WriteLine(third);
     ```
     
-- title: Search strings
+    You know that `0.3` repeating is not exactly the same as `1/3`.
+
+- title: Fixed point types
   durationInMinutes: 4
   content: |
-    The other part of a *search and replace* operation is to find text in a
-    sring. You can use the the `Contains` method for searching. It
-    tells you if a method contains a sub-string inside it. Try the following
-    code to explore `Contains`:
+    You've seen the basic numeric types in C#: integers and doubles.  There is one
+    other type to learn: the `decimal` type. The `decimal` type has a smaller
+    range, but greater precision than `double`. Let's take a look:
 
     ```csharp
-    string message = "You say goodbye, and I say hello";
-    Console.WriteLine(message.Contains("goodbye"));
-    Console.WriteLine(message.Contains("greetings"));
+    decimal min = decimal.MinValue;
+    decimal max = decimal.MaxValue;
+    Console.WriteLine("the range of the decimal type is " + min + " to " + max);
     ```
-
-    The `Contains` method returns a **boolean** value which tells you if the
-    string you sought was found. A **boolean** stores either a `true` or a
-    `false` value. You'll learn more about **boolean** values
-    in a later lesson.
 
     ***Challenge***
 
-    There are two similar methods, `StartsWith` and `EndsWith` that also search for sub-strings in a string. These find a sub-string at the beginning or the
-    end of the string. Try to modify the sample above to use `StartsWith` and
-    `EndsWith` instead of `Contains`.
+    Now that you've seen the different numeric types, write code that calculates
+    the area of a circle whose radius is 2.50 inches. Remember that the area of a circle
+    is the radius squared multiplied by PI. One hint: C# contains a constant
+    for PI: `Math.PI` that you can use for that value. 
+
 - title: Complete challenge
   durationInMinutes: 1
   content: |
     Did you come up with something like this?
 
     ```csharp
-    string message = "You say goodbye, and I say hello";
-    Console.WriteLine(message.StartsWith("You"));
-    Console.WriteLine(message.StartsWith("goodbye"));
-
-    Console.WriteLine(message.EndsWith("hello"));
-    Console.WriteLine(message.EndsWith("goodbye"));
+    double radius = 2.50;
+    double area = Math.PI * radius * radius;
+    Console.WriteLine(area);
     ```
 - content: |
-    You've completed the "Hello C#" tutorial.
+    You've completed the "working with numbers" tutorial.

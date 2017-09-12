@@ -17,7 +17,7 @@ ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
 
 .NET Core 2.0 supports [.NET Standard 2.0](../../standard/net-standard.md). The libraries used to demonstrate unit testing in this section rely on .NET Standard and will work in other project types as well.
 
-Beginning with .NET Core 2.0, there are unit test project templates for VB.NET and F# as well as C#.
+Beginning with .NET Core 2.0, there are unit test project templates for Visual Basic and F# as well as C#.
 
 ## Getting Started with Testing
 
@@ -43,7 +43,7 @@ You can read about those combinations in these walkthroughs:
 
 You can choose different languages for your class libraries and your unit test libraries. You can learn how by mixing and matching the walkthroughs referenced above.
 
-* If you are using Visual Studio, just see [Live Unit Testing in .NET Core](~/visualstudio/test/live-unit-testing)
-* For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](selective-unit-tests.md), or [including and excluding tests with Visual Studio](~/visualstudio/test/live-unit-testing#including-and-excluding-test-projects-and-test-methods).
+* If you are using Visual Studio, just see [Live Unit Testing in .NET Core](/visualstudio/test/live-unit-testing)
+* For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](selective-unit-tests.md), or [including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#including-and-excluding-test-projects-and-test-methods).
 * The XUnit team has written a tutorial that shows
 [how to use xUnit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).

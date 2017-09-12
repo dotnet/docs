@@ -1,5 +1,5 @@
 ---
-title: Unit testing VB in .NET Core using dotnet test and MSTest
+title: Unit testing Visual Basic in .NET Core using dotnet test and MSTest
 description: Learn unit test concepts in .NET Core through an interactive experience building a sample Visual Basic solution step-by-step using MSTest.
 author: billwagner
 ms.author: wiwagn
@@ -89,7 +89,7 @@ Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.vbproj`](../too
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.vb* from the *PrimeService.Tests* directory and create a new VB file named *PrimeService_IsPrimeShould.VB*. Add the following code:
+The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.vb* from the *PrimeService.Tests* directory and create a new Visaul Basic file named *PrimeService_IsPrimeShould.VB*. Add the following code:
 
 ```vb
 Imports Microsoft.VisualStudio.TestTools.UnitTesting

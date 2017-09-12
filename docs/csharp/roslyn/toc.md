@@ -47,3 +47,5 @@
 ## How to guides
 <!-- Look at the samples, and determinine which 
     are "How To" vs. Samples. -->
+
+<!-- Reference and resources -->

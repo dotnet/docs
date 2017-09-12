@@ -351,19 +351,29 @@ Currently, OPS can embed both Channel 9 and youtube videos with the following sy
 
 ### Channel 9
 
+```markdown
 > [!VIDEO <channel9_video_link>]
+```
 
-For example:
+To get the video's correct URL, select the **Embed** tab below the video frame, and copy the URL from the `<iframe>` element. For example:
 
+```markdown
 > [!VIDEO https://channel9.msdn.com/Series/A-Nonexistent-Video/03/player]
+```
 
 ### YouTube
 
+To get the video's correct URL, right-click on the video, select **Copy Embed Code**, and copy the URL from the `<iframe>` element.
+
+```markdown
 > [!VIDEO <youtube_video_link>]
+```
 
 For example:
 
+```markdown
 > [!VIDEO https://www.youtube.com/embed/ZZZz9_Zzz9z]
+```
 
 ## docs.microsoft extensions
 

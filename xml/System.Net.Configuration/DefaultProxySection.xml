@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the [\&lt;defaultProxy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md) configuration element.  
+ This class corresponds to the [&lt;defaultProxy&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md) configuration element.  
   
  This class is used to access information about the Web proxy server used for requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes. The following table describes the configuration elements contained in the <xref:System.Net.Configuration.DefaultProxySection> configuration section.  
   

@@ -57,7 +57,7 @@
 ## Version Information  
  This exception is thrown in the .NET Framework 2.0 and later versions. In earlier versions of the .NET Framework, an access violation in unmanaged code or unsafe managed code is represented by a <xref:System.NullReferenceException> in managed code. A <xref:System.NullReferenceException> is also thrown when a null reference is dereferenced in verifiable managed code, an occurrence that does not involve data corruption, and there is no way to distinguish between the two situations in versions 1.0 or 1.1.  
   
- Administrators can allow selected applications to revert to the behavior of the .NET Framework version 1.1. Place the following line in the [\&lt;runtime\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the configuration file for the application:  
+ Administrators can allow selected applications to revert to the behavior of the .NET Framework version 1.1. Place the following line in the [&lt;runtime&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the configuration file for the application:  
   
 ```  
 <legacyNullReferenceExceptionPolicy enabled = "1"/>  

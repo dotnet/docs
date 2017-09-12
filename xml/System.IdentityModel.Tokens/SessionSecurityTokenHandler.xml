@@ -37,7 +37,7 @@
   
  For more information about using sessions in Web farm scenarios, see [WIF and Web Farms](~/docs/framework/security/wif-and-web-farms.md).  
   
- The <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> is included in the default token handler collection; however, you can replace it with a custom session token handler by first specifying a [\&lt;remove\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/remove.md) element under the [\&lt;securityTokenHandlers\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlers.md) element to remove the default handler from the collection and then adding your custom token handler using the [\&lt;add\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md) element. By default, you can specify the default token lifetime by including the [\&lt;sessionTokenRequirement\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element under the `<add>` element. You can design a custom token handler to take custom configuration elements under the `<add>` element by overriding the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.LoadCustomConfiguration%2A> method to provide the logic to process them.  
+ The <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> is included in the default token handler collection; however, you can replace it with a custom session token handler by first specifying a [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/remove.md) element under the [&lt;securityTokenHandlers&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlers.md) element to remove the default handler from the collection and then adding your custom token handler using the [&lt;add&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md) element. By default, you can specify the default token lifetime by including the [&lt;sessionTokenRequirement&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element under the `<add>` element. You can design a custom token handler to take custom configuration elements under the `<add>` element by overriding the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.LoadCustomConfiguration%2A> method to provide the logic to process them.  
   
    
   
@@ -441,7 +441,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Called by the configuration infrastructure to initialize the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> instance. Initializes the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenLifetime%2A> property from the `lifetime` attribute of the [\&lt;sessionTokenRequirement\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element in the configuration file.  
+ Called by the configuration infrastructure to initialize the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> instance. Initializes the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenLifetime%2A> property from the `lifetime` attribute of the [&lt;sessionTokenRequirement&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element in the configuration file.  
   
  ]]></format>
         </remarks>
@@ -624,7 +624,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, if the [\&lt;sessionTokenRequirement\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element is specified in the configuration file, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenLifetime%2A> property is initialized to the value of the `lifetime` attribute by the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.LoadCustomConfiguration%2A> method.  
+ By default, if the [&lt;sessionTokenRequirement&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/sessiontokenrequirement.md) element is specified in the configuration file, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenLifetime%2A> property is initialized to the value of the `lifetime` attribute by the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.LoadCustomConfiguration%2A> method.  
   
  ]]></format>
         </remarks>

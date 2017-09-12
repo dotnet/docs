@@ -35,7 +35,7 @@
   
  A <xref:System.CodeDom.Compiler.CodeDomProvider> implementation typically provides code generation and/or code compilation interfaces for generating code and managing compilation for a single programming language. Several languages are supported by <xref:System.CodeDom.Compiler.CodeDomProvider> implementations that ship with the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)]. These languages include C#, Visual Basic, C++, and JScript. Developers or compiler vendors can implement the <xref:System.CodeDom.Compiler.ICodeGenerator> and <xref:System.CodeDom.Compiler.ICodeCompiler> interfaces and provide a <xref:System.CodeDom.Compiler.CodeDomProvider> that extends CodeDOM support to other programming languages.  
   
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) provides a mechanism for developers and compiler vendors to add configuration settings for additional <xref:System.CodeDom.Compiler.CodeDomProvider> implementations.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) provides a mechanism for developers and compiler vendors to add configuration settings for additional <xref:System.CodeDom.Compiler.CodeDomProvider> implementations.  
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider> class provides static methods to discover and enumerate the <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method returns the settings for all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method returns the settings for a specific <xref:System.CodeDom.Compiler.CodeDomProvider> implementation, based on the programming language name. The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns an instance of a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a specific language.  
   
@@ -483,7 +483,7 @@
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A>. If you pass an unsupported language name to <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> is thrown.  
   
- The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method can be used to determine all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer, including additional implementations provided by developers and compiler vendors that are identified in the [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config).  
+ The <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method can be used to determine all <xref:System.CodeDom.Compiler.CodeDomProvider> implementations on a computer, including additional implementations provided by developers and compiler vendors that are identified in the [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config).  
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A> method returns an instance of a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a specific language.  
   
@@ -934,7 +934,7 @@
  Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> method to enumerate the language provider settings on a computer.  
   
 > [!NOTE]
->  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the default language providers supplied by the .NET Framework are not specified in the [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) compiler configuration section and cannot be removed, so this method returns information about the default providers and any specified in the configuration file.  
+>  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the default language providers supplied by the .NET Framework are not specified in the [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) compiler configuration section and cannot be removed, so this method returns information about the default providers and any specified in the configuration file.  
   
    
   
@@ -983,7 +983,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. For information about machine configuration files, see the Machine Configuration Files section in [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f). The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method searches each provider configuration element for the specified language name. The returned <xref:System.CodeDom.Compiler.CompilerInfo> instance contains the configured language provider and compiler settings.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. For information about machine configuration files, see the Machine Configuration Files section in [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f). The <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A> method searches each provider configuration element for the specified language name. The returned <xref:System.CodeDom.Compiler.CompilerInfo> instance contains the configured language provider and compiler settings.  
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method checks whether at least one provider implementation supports a specific language. You can validate a language name using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A>. This prevents throwing a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> when you access the <xref:System.CodeDom.Compiler.CompilerInfo> instance for an unsupported language name.  
   
@@ -1073,7 +1073,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> method searches each provider configuration element for the specified file name extension.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> method searches each provider configuration element for the specified file name extension.  
   
  The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method checks whether at least one provider implementation supports a specific file name extension. You can validate a file name extension using <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> before passing it to <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A>. This prevents <xref:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension%2A> from throwing a <xref:System.Configuration.ConfigurationException?displayProperty=fullName> for an unsupported file name extension.  
   
@@ -1170,7 +1170,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method searches the provider configuration elements for the specified file name extension.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension%2A> method searches the provider configuration elements for the specified file name extension.  
   
  File name extensions are case-insensitive.  
   
@@ -1223,7 +1223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [\&lt;system.codedom\&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method searches the provider configuration elements for the specified language name.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file (Machine.config) contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. The <xref:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage%2A> method searches the provider configuration elements for the specified language name.  
   
  Language names are case-insensitive.  
   

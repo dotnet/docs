@@ -122,7 +122,7 @@
       </Parameters>
       <Docs>
         <param name="federationConfigurationName">The name of the <see langword="&lt;federationConfiguration&gt;" /> element from which to load the configuration.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class from the [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element with the specified name.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> class from the [&lt;federationConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -176,7 +176,7 @@
 ## Remarks  
  Specifies the cookie handler that is used to read and write session cookies by the SAM.  
   
- When initialized from a configuration file, this property is set by the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;cookieHandler&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
   
  ]]></format>
         </remarks>
@@ -214,7 +214,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Defines the name of the default [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element from which settings should be loaded. This is an empty string as the default element is unnamed.</summary>
+        <summary>Defines the name of the default [&lt;federationConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element from which settings should be loaded. This is an empty string as the default element is unnamed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;identityConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;identityConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element.  
   
  ]]></format>
         </remarks>
@@ -353,7 +353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Corresponds to the `name` attribute of a [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element.  
+ Corresponds to the `name` attribute of a [&lt;federationConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element.  
   
  ]]></format>
         </remarks>
@@ -378,7 +378,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;serviceCertificate\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;serviceCertificate&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md) element.  
   
  ]]></format>
         </remarks>
@@ -403,7 +403,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When initialized from a configuration file, this property is set by the [\&lt;wsFederation\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
+ When initialized from a configuration file, this property is set by the [&lt;wsFederation&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation.md) element.  
   
  ]]></format>
         </remarks>

@@ -198,7 +198,7 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
   
 <a name="pointsyntax"></a>   
 ## Point Syntax  
- Describes the x- and y-coordinates of a point.  
+ Describes the x- and y-coordinates of a point where (0,0) is the top left corner.
   
 |Syntax|  
 |------------|  

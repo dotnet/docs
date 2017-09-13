@@ -347,7 +347,7 @@ function fancyAlert(arg) {
 
 ## Videos
 
-Currently, OPS can embed both Channel 9 and youtube videos with the following syntax:
+Currently, you can embed both Channel 9 and YouTube videos with the following syntax:
 
 ### Channel 9
 
@@ -358,7 +358,7 @@ Currently, OPS can embed both Channel 9 and youtube videos with the following sy
 To get the video's correct URL, select the **Embed** tab below the video frame, and copy the URL from the `<iframe>` element. For example:
 
 ```markdown
-> [!VIDEO https://channel9.msdn.com/Series/A-Nonexistent-Video/03/player]
+> [!VIDEO https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released/player]
 ```
 
 ### YouTube
@@ -372,7 +372,7 @@ To get the video's correct URL, right-click on the video, select **Copy Embed Co
 For example:
 
 ```markdown
-> [!VIDEO https://www.youtube.com/embed/ZZZz9_Zzz9z]
+> [!VIDEO https://www.youtube.com/embed/Q2mMbjw6cLA]
 ```
 
 ## docs.microsoft extensions

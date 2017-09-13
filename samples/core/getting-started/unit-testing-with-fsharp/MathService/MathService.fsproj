@@ -4,5 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
-</Project>
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+  </ItemGroup>
 
+</Project>

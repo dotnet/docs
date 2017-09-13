@@ -114,7 +114,10 @@
     ```  
   
      Using the `<AppContextSwitchOverrides>` element to define a configuration setting has application scope; that is, it affects only the application.  
-  
+
+    > [!NOTE]    
+    > For information on the switches defined by the .NET Framework, see the [<AppContextSwitchOverrides> element](../../docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md).
+
 -   By adding a string value whose name is the name of the switch to the `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` key in the registry. Its value must be the string representation of a <xref:System.Boolean> that can be parsed by the <xref:System.Boolean.Parse%2A?displayProperty=fullName> method; that is, it must be "True", "true", "False", or "false". If the runtime encounters any other value, it ignores the switch.  
   
      Using the registry to define an <xref:System.AppContext> switch has machine scope; that is, it affects every application running on the machine.  
@@ -135,15 +138,15 @@
  To restore the method's previous behavior and prevent the exception, you can add the `Switch.System.IO.UseLegacyPathHandling` switch to the application configuration file for the example:  
   
 ```xml  
-  
 <configuration>  
     <runtime>  
         <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=true" />    
     </runtime>  
 </configuration>  
-  
 ```  
-  
+## See also
+[AppContext switch](../../docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md)
+
  ]]></format>
     </remarks>
   </Docs>

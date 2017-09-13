@@ -75,10 +75,10 @@ namespace Statements
             do 
             {
                 s = Console.ReadLine();
-                if (string.IsNullOrEmpty(s)) 
-                    Console.WriteLine(s);
+                Console.WriteLine(s);
             } while (!string.IsNullOrEmpty(s));
         }
+        
 
         static void ForStatement(string[] args)
         {

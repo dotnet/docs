@@ -27,12 +27,12 @@ C# version 1.0 looked stripped of features, compared to today. You'd find yourse
 
 Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005.
 
-- [Generics](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/)
+- [Generics](../programming-guide/generics/)
 - [Partial types](https://www.dotnetperls.com/partial)
 - [Anonymous methods](https://www.tutorialspoint.com/csharp/csharp_anonymous_methods.htm)
-- [Nullable types](./csharp/programming-guide/nullable-types/)
+- [Nullable types](../programming-guide/nullable-types/)
 - [Iterators](https://msdn.microsoft.com/en-us/library/65zzykke(v=vs.100).aspx)
-- [Covariance and contravariance](./programming-guide/concepts/covariance-contravariance/)
+- [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/)
 
 While C# may have started as a pretty generic Object-Oriented (OO) language, C# Version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a big way.
 

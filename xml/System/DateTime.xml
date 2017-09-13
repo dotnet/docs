@@ -2092,7 +2092,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the constants in the <xref:System.DayOfWeek> enumeration ranges from <xref:System.DayOfWeek?displayProperty=fullName> to <xref:System.DayOfWeek?displayProperty=fullName>. If cast to an integer, its value ranges from zero (which indicates <xref:System.DayOfWeek?displayProperty=fullName>) to six (which indicates <xref:System.DayOfWeek?displayProperty=fullName>).  
+ The value of the constants in the <xref:System.DayOfWeek> enumeration ranges from <xref:System.DayOfWeek.Sunday?displayProperty=fullName> to <xref:System.DayOfWeek.Saturday?displayProperty=fullName>. If cast to an integer, its value ranges from zero (which indicates <xref:System.DayOfWeek.Sunday?displayProperty=fullName>) to six (which indicates <xref:System.DayOfWeek.Saturday?displayProperty=fullName>).  
   
  The <xref:System.DateTime.DayOfWeek%2A> property returns an enumerated constant; it does not reflect a system's regional and language settings. To retrieve a string representing a localized weekday name for a particular date, call one of the overloads of the <xref:System.DateTime.ToString%2A> method that includes a `format` parameter and pass it either the `ddd` or `dddd` custom format strings. For details, see [How to: Extract the Day of the Week from a Specific Date](~/docs/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md).  
   
@@ -3635,11 +3635,11 @@ juillet 2009
  [!code-csharp[System.DateTime.Now#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.datetime.now/cs/now1.cs#2)]
  [!code-vb[System.DateTime.Now#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.datetime.now/vb/now1.vb#2)]  
   
- The resolution of this property depends on the system timer, which is approximately 15 milliseconds on Windows systems.As a result, repeated calls to the <xref:System.DateTime.Now%2A> property in a short time interval, such as in a loop, may return the same value.  
+ The resolution of this property depends on the system timer, which depends on the underlying operating system. It tends to be between 0.5 and 15 milliseconds. As a result, repeated calls to the <xref:System.DateTime.Now%2A> property in a short time interval, such as in a loop, may return the same value.  
   
  The <xref:System.DateTime.Now%2A> property is frequently used to measure performance. However, because of its low resolution, it is not suitable for use as a benchmarking tool. A better alternative is to use the <xref:System.Diagnostics.Stopwatch> class.  
   
- Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property returns <xref:System.DateTimeKind?displayProperty=fullName>.  
+ Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property returns <xref:System.DateTimeKind.Local?displayProperty=fullName>.  
   
 > [!NOTE]
 >  You can also use the <xref:System.DateTimeOffset.Now%2A?displayProperty=fullName> property to retrieve the current local date and time. It allows a local time to be expressed unambiguously as a single point in time, which in turn makes that time value portable across computers.  
@@ -7008,18 +7008,11 @@ An object that is equivalent to the date and time contained in `s`.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resolution of this property depends on the system timer.  
-  
-|System|Approximate Resolution|  
-|------------|----------------------------|  
-|Windows NT 3.5 and later|10 milliseconds|  
-|Windows 98|55 milliseconds|  
-  
- Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property returns <xref:System.DateTimeKind?displayProperty=fullName>.  
-  
- An alternative to using <xref:System.DateTime.UtcNow%2A> is <xref:System.DateTimeOffset.UtcNow%2A?displayProperty=fullName>. While the former indicates that a date and time value is Coordinated Universal Time (UTC) by assigning <xref:System.DateTimeKind?displayProperty=fullName> to its <xref:System.DateTime.Kind%2A> property, the latter assigns the date and time value the UTC time's offset (equal to <xref:System.TimeSpan.Zero?displayProperty=fullName>).  
-  
-   
+ The resolution of this property depends on the system timer, which depends on the underlying operating system. It tends to be between 0.5 and 15 milliseconds.
+
+ Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property returns <xref:System.DateTimeKind.Utc?displayProperty=fullName>.
+
+ An alternative to using <xref:System.DateTime.UtcNow%2A> is <xref:System.DateTimeOffset.UtcNow%2A?displayProperty=fullName>. While the former indicates that a date and time value is Coordinated Universal Time (UTC) by assigning <xref:System.DateTimeKind.Utc?displayProperty=fullName> to its <xref:System.DateTime.Kind%2A> property, the latter assigns the date and time value the UTC time's offset (equal to <xref:System.TimeSpan.Zero?displayProperty=fullName>).
   
 ## Examples  
  The following example uses the <xref:System.DateTime.SpecifyKind%2A> method to demonstrate how the <xref:System.DateTime.Kind%2A> property influences the <xref:System.DateTime.ToLocalTime%2A> and <xref:System.DateTime.ToUniversalTime%2A> conversion methods.  

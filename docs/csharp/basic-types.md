@@ -49,10 +49,10 @@ The types of method parameters and return values are specified in the method sig
   
 After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](language-reference/keywords/int.md) and then assign it a Boolean value of [true](language-reference/keywords/true.md). However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code. 
 
-For more information, see [Casting and type conversions](programming-guide/types.md).
+For more information, see [Casting and type conversions](programming-guide/types/casting-and-type-conversions.md).
  
 ## Built-in types
-C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in **string** and **object** types. These are available for you to use in any C# program. For a more information about the built-in types, see [Reference table for types](language-reference/keywords/reference-tables-for-types).  
+C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in **string** and **object** types. These are available for you to use in any C# program. For a more information about the built-in types, see [Reference table for types](language-reference/keywords/reference-tables-for-types.md).  
   
 ## Custom types  
 You use the [struct](language-reference/keywords/class.md), [class](language-reference/keywords/class.md), [interface](language-reference/keywords/interface.md), and [enum](language-reference/keywords/enum.md) constructs to create your own custom types. The .NET Framework class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. 

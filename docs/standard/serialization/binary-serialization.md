@@ -73,6 +73,7 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.Collections.Specialized.StringDictionary?displayProperty=fullName>   
 - <xref:System.Collections.Stack?displayProperty=fullName>   
 - <xref:System.ComponentModel.BindingList%601?displayProperty=fullName>   
+- <xref:System.DBNull?displayProperty=fullName> (available in .NET Core 2.0.2 and later versions)   
 - <xref:System.Data.DataSet?displayProperty=fullName>   
 - <xref:System.Data.DataTable?displayProperty=fullName>   
 - <xref:System.Data.PropertyCollection?displayProperty=fullName>   

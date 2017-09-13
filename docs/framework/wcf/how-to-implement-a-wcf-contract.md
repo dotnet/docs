@@ -78,7 +78,7 @@ This is the second of six tasks required to create a basic [!INCLUDE[indigo1](..
     }  
     ```  
   
-    ```vbnet
+    ```vb
     ‘Service1.vb  
     Imports System  
     Imports System.ServiceModel  
@@ -203,7 +203,7 @@ namespace GettingStartedLib
 }  
 ```  
   
-```vbnet
+```vb
 ‘IService.vb  
 Imports System  
 Imports System.ServiceModel  
@@ -225,7 +225,7 @@ Namespace GettingStartedLib
 End Namespace  
 ```  
   
-```vbnet
+```vb
 Imports System  
 Imports System.ServiceModel  
   

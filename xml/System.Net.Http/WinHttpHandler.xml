@@ -22,7 +22,7 @@
 ## Remarks  
  <xref:System.Net.Http.WinHttpHandler> is similar to other existing classes such as <xref:System.Net.Http.HttpClientHandler>. <xref:System.Net.Http.WinHttpHandler> provides a handler underneath an <xref:System.Net.Http.HttpClient> instance and is used to send HTTP requests out to a server and receive server responses.  
   
- <xref:System.Net.Http.WinHttpHandler> is designed to be used primarily in server environments by ASP.NET 5 and other .NET applications that communicate with HTTP servers. <xref:System.Net.Http.WinHttpHandler> also provides developers with more granular control over the application's HTTP communication than the <xref:System.Net.Http.HttpClientHandler> class. This allows developers to implement more advanced HTTP scenarios or modify system defaults (for example, proxy settings, timeouts and server SSL certificate validation).  
+ <xref:System.Net.Http.WinHttpHandler> is designed to be used primarily in server environments by ASP.NET Core and other .NET applications that communicate with HTTP servers. <xref:System.Net.Http.WinHttpHandler> also provides developers with more granular control over the application's HTTP communication than the <xref:System.Net.Http.HttpClientHandler> class. This allows developers to implement more advanced HTTP scenarios or modify system defaults (for example, proxy settings, timeouts and server SSL certificate validation).  
   
  <xref:System.Net.Http.WinHttpHandler> is not intended to be a replacement for <xref:System.Net.Http.HttpClientHandler>, it is a more advanced version provided for scenarios where <xref:System.Net.Http.HttpClientHandler> is insufficient for developers. <xref:System.Net.Http.WinHttpHandler> is implemented as a thin wrapper on the WinHTTP interface of Windows and is only supported on Windows systems.  
   
@@ -156,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for this property is ClientCertificateOption.Manual.  
+ The default value for this property is <xref:System.Net.Http.ClientCertificateOption.Manual?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for this property is null.  
+ The default value for this property is `null`.  
   
  ]]></format>
         </remarks>
@@ -240,7 +240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default for this property is CookieUsePolicy.UseInternalCookieStoreOnly. If this value is set to CookieUsePolicy.UseSpecifiedCookieContainer, then a container object must be initialized and assigned to the <xref:System.Net.Http.WinHttpHandler.CookieContainer%2A> property. Otherwise, an exception will be thrown when trying to send a request.  
+ The default for this property is <xref:System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly?displayProperty=fullName>. If this value is set to <xref:System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer?displayProperty=fullName>, then a container object must be initialized and assigned to the <xref:System.Net.Http.WinHttpHandler.CookieContainer%2A> property. Otherwise, an exception will be thrown when trying to send a request.  
   
  ]]></format>
         </remarks>
@@ -268,7 +268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for this property is CredentialCache.DefaultCredentials.  
+ The default value for this property is <xref:System.Net.CredentialCache.DefaultCredentials?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -315,12 +315,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum number of allowed HTTP redirects.</summary>
-        <value>To be added.</value>
+        <value>The maximum number of allowed HTTP redirects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for this property is 50. This value only applies if <xref:System.Net.Http.WinHttpHandler.AutomaticRedirection%2A> is set to true.  
+ The default value for this property is 50. This value only applies if <xref:System.Net.Http.WinHttpHandler.AutomaticRedirection%2A> is set to `true`.  
   
  ]]></format>
         </remarks>
@@ -343,7 +343,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum number of TCP connections allowed to a single server.</summary>
-        <value>To be added.</value>
+        <value>The maximum number of TCP connections allowed to a single server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -371,7 +371,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum amount of data that can be drained from responses in bytes.</summary>
-        <value>To be added.</value>
+        <value>The maximum amount of data that can be drained from responses in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -399,7 +399,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum size of the header portion from the server response in bytes.</summary>
-        <value>To be added.</value>
+        <value>The maximum size of the header portion from the server response in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -504,7 +504,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the timeout for receiving the data portion of a response from the server.</summary>
-        <value>To be added.</value>
+        <value>The timeout for receiving the data portion of a response from the server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -532,7 +532,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the timeout for receiving the headers of a response from the server.</summary>
-        <value>To be added.</value>
+        <value>The timeout for receiving the headers of a response from the server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -587,7 +587,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the timeout for sending a request.</summary>
-        <value>To be added.</value>
+        <value>The timeout for sending a request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -643,7 +643,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the credentials to be used by the client to authenticate to the server.</summary>
-        <value>To be added.</value>
+        <value>The credentials to be used by the client to authenticate to the server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -671,7 +671,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the collection of TLS/SSL protocols supported by the client.</summary>
-        <value>To be added.</value>
+        <value>The collection of TLS/SSL protocols supported by the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

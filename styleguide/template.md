@@ -347,13 +347,33 @@ function fancyAlert(arg) {
 
 ## Videos
 
+Currently, you can embed both Channel 9 and YouTube videos with the following syntax:
+
 ### Channel 9
 
-<iframe src="https://channel9.msdn.com/Shows/On-NET/Shipping-NET-Core-RC2--Tools-Preview-1/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+```markdown
+> [!VIDEO <channel9_video_link>]
+```
+
+To get the video's correct URL, select the **Embed** tab below the video frame, and copy the URL from the `<iframe>` element. For example:
+
+```markdown
+> [!VIDEO https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released/player]
+```
 
 ### YouTube
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
+To get the video's correct URL, right-click on the video, select **Copy Embed Code**, and copy the URL from the `<iframe>` element.
+
+```markdown
+> [!VIDEO <youtube_video_link>]
+```
+
+For example:
+
+```markdown
+> [!VIDEO https://www.youtube.com/embed/Q2mMbjw6cLA]
+```
 
 ## docs.microsoft extensions
 

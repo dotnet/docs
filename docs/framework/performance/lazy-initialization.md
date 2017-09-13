@@ -78,13 +78,13 @@ manager: "wpickett"
   
 |Thread safety of the object|`LazyThreadSafetyMode` `mode` parameter|Boolean `isThreadSafe` parameter|No thread safety parameters|  
 |---------------------------------|---------------------------------------------|--------------------------------------|---------------------------------|  
-|Fully thread-safe; only one thread at a time tries to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode>|`true`|Yes.|  
-|Not thread-safe.|<xref:System.Threading.LazyThreadSafetyMode>|`false`|Not applicable.|  
-|Fully thread-safe; threads race to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode>|Not applicable.|Not applicable.|  
+|Fully thread-safe; only one thread at a time tries to initialize the value.|<xref:System.Threading.ExecutionAndPublication>|`true`|Yes.|  
+|Not thread-safe.|<xref:System.Threading.LazyThreadSafetyMode.None>|`false`|Not applicable.|  
+|Fully thread-safe; threads race to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>|Not applicable.|Not applicable.|  
   
- As the table shows, specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> for the `mode` parameter is the same as specifying `true` for the `isThreadSafe` parameter, and specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> is the same as specifying `false`.  
+ As the table shows, specifying <xref:System.Threading.ExecutionAndPublication?displayProperty=fullName> for the `mode` parameter is the same as specifying `true` for the `isThreadSafe` parameter, and specifying <xref:System.Threading.None?displayProperty=fullName> is the same as specifying `false`.  
   
- Specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> allows multiple threads to attempt to initialize the <xref:System.Lazy%601> instance. Only one thread can win this race, and all the other threads receive the value that was initialized by the successful thread. If an exception is thrown on a thread during initialization, that thread does not receive the value set by the successful thread. Exceptions are not cached, so a subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property can result in successful initialization. This differs from the way exceptions are treated in other modes, which is described in the following section. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
+ Specifying <xref:System.Threading.PublicationOnly?displayProperty=fullName> allows multiple threads to attempt to initialize the <xref:System.Lazy%601> instance. Only one thread can win this race, and all the other threads receive the value that was initialized by the successful thread. If an exception is thrown on a thread during initialization, that thread does not receive the value set by the successful thread. Exceptions are not cached, so a subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property can result in successful initialization. This differs from the way exceptions are treated in other modes, which is described in the following section. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
   
 <a name="ExceptionsInLazyObjects"></a>   
 ## Exceptions in Lazy Objects  

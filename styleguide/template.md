@@ -25,7 +25,6 @@ This dotnet/docs template contains examples of Markdown syntax, as well as guida
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
-
 ## Metadata 
 
 The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
@@ -33,14 +32,14 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - You **must** have a space between the colon (:) and the value for a metadata element.
 - If an optional metadata element doesn't have a value, comment out the element with a # or remove it (don't leave it blank or use "na"). If you're adding a value to an element that was commented out, be sure to remove the #.
 - Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **title**: Appears in search engine results. The title shouldn't be identical to the title in your H1 heading and it should contain 60 characters or less.
-- **description**: Sumamrizes the content of the article. Usually shown in the search results page but it isn't used for search ranking. Its lenght should be 115-145 characters including spaces.  
-- **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not their alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases. 
+- **title**: Appears in search engine results. The title shouldn't be identical to the title in your H1 heading, and it should contain 60 characters or less.
+- **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.  
+- **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases. 
 - **ms.topic**: The topic type. The most common value is `article`. Other common values used are `get-started-article`, `managed-reference`, and `reference`.
 - **ms.devlang** defines the language filter displayed for the topic. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb and xml.
 - **ms.prod**: Product identification used for BI purposes. Possible values are `.net-core` for topics on the .NET Core Guide, `.net-framework` for topics on the .NET Framework Guide and `.net` for all other topics.
-- **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary. So ask a member of the team for guidance.
-- **helpviewer_keywords**: Entries are used for offline books index (functionality in Visual Studio).
+- **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
+- **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
 
 ## Basic Markdown, GFM, and special characters
 
@@ -126,18 +125,20 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ### Links to APIs
 
-The build system has some extensions that allow us to link to .NET Core APIs without having to use external links.  
-When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
+The build system has some extensions that allow us to link to .NET APIs without having to use external links.  
+When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code. 
+
+The UID equates to the fully qualified class and member name. If you add a \* after the UID, the link then represents the overload page and not a specific API. For example, you can use that when you want to link to the [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) page in a generic way instead of a specific overload such as [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_).
 
 You can use one of the following syntax:
 
 1. Auto-link: `<xref:UID>` or `<xref:UID?displayProperty=fullName>`
 
- The displayProperty query parameter produces a fully qualified link text. Default behavior is to produce a link text that shows only the member or type name.
+ The `displayProperty` query parameter produces a fully qualified link text. By default, link text shows only the member or type name.
  
-2. Markdown link: `[link_text](xref:UID)`
+2. Markdown link: `[link text](xref:UID)`
 
- Use only when the auto-link behavior is not the desired display. 
+ Use when you want to customize the link text displayed. 
 
 Examples:
 - `<xref:System.String>` renders as [String](https://docs.microsoft.com/dotnet/api/system.string)
@@ -146,7 +147,7 @@ Examples:
 
 For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
 
-> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to view the source for the API page you want to link to and find the ms.assetid value. Individual overloads values are not shown on the source. We're working on having a better system in the future.
+> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to view the source for the API page you want to link to and find the ms.assetid value. Individual overload values are not shown in the source. We're working on having a better system in the future.
 
 When the UID contains the special characters \`, \# or \*, the UID value needs to be HTML encoded as `%60`, `%23` and `%2A` respectively. You'll sometimes see parentheses encoded but it's not a requirement.
 

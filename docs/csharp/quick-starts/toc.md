@@ -1,23 +1,4 @@
 # [Quick Starts](index.md)
 ## [Hello world](hello-world)
 ## [Working with numbers](working-with-numbers)
-<!--
-  Plan for an outline:
-  Working with Numbers would be:
-  . Simple math operations.
-  . Add 0.01 iteratively (explain loops)
-  . Explain rounding error. Use the ruler analogy
-  . Survey of methods in System.Math.
-
-## booleans
-## Methods
-## Loops
-## Branching
-
-
-## C# program structure
-## Classes
-## Interfaces
-## Structs, Tuples
-## LINQ
--->
+## [Branches and looping]](branches-and-loops)

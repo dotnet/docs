@@ -36,6 +36,17 @@ how computers store numbers and how to perform calculations with different
 number types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#.
 
-This lesson assumes no prior programming knowledge, or knowledge of C#.
+This lesson assumes that you have finished the [Hello world](hello-world) tutorial.
 
-## More Lessons coming soon
+## [Branches and loops](branches-and-loops)
+
+The [Branches and loops](branches-and-loops) lesson teaches the basics of selecting
+different paths of code based on the values stored in variables. You'll learn the
+basics of control flow, which is the basics of how programs make decisions and choose
+different actions.
+
+This beginner lesson assumes that you have finished the [Hello World](hello-world) and
+[Working with numbers](working-with-numbers) lessons.
+
+## Download and install
+

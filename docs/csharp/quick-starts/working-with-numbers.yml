@@ -33,7 +33,7 @@ items:
     - `/` for division.
 
     > [!TIP]
-    > Throughout this tutorial, you can try explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
+    > Throughout this tutorial, you can explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
 
     Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the 'Run' button.
 
@@ -61,7 +61,7 @@ items:
   durationInMinutes: 3
   content: |
     The C# language defines the precedence of different mathematics operations
-    so that the rules are consistent with the rules you learned in mathematics.
+    with rules consistent with the rules you learned in mathematics.
     Multiplication and division take precedence over addition and subtraction.
     Explore that by running the following code in the interactive window:
 
@@ -75,7 +75,7 @@ items:
 
     The output demonstrates that the multiplication is performed before the addition.
 
-    You can enforce the order of operation by adding parentheses around
+    You can force a different order of operation by adding parentheses around
     the operation or operations you want performed first:
 
     ```csharp
@@ -133,21 +133,22 @@ items:
     Console.WriteLine("The range of integers is " + min + " to " + max);
     ```
 
-    You get 
+    If a calculation produces a value that exceeds those limits, you
+    have an **underflow** or **overflow** condition. The answer appears
+    to wrap from one limit to the other. Add these two lines to the interactive
+    window to see an example:
 
     ```csharp
-    int max = int.MaxValue;
-    int min = int.MinValue;
-    Console.WriteLine($"The range of integers is {min} to {max}");
     int what = max + 3;
     Console.WriteLine("an example of overflow: " + what);
     ```
     
-    Notice that the answer is very close to the minimum (negative) integer.
+    Notice that the answer is very close to the minimum (negative) integer. It's
+    the same as `min + 2`. 
     The addition operation **overflowed** the allowed values for integers.
 
     There are other numeric types with different limits and precision that you
-    would use when the `int` type does not meet your needs. Let's example those next.
+    would use when the `int` type does not meet your needs. Let's explore those next.
 
 - title: Working with the double type.
   durationInMinutes: 4
@@ -155,7 +156,10 @@ items:
     The `double` numeric type represents a double-precision floating point
     number. Those terms may be new to you. A **floating point** number is
     useful to represent non-integral numbers that may be very large, or small
-    in magnitude. Try the code below in the interactive window and see what the result is.
+    in magnitude. **Double-precision** means that these numbers are stored
+    using greater precision than **single-precision**. On modern computers,
+    it is more common to use double precision than single precision numbers.
+    Let's explore. Try the code below in the interactive window and see the result.
 
     ```csharp
     double a = 5;
@@ -192,7 +196,7 @@ items:
     Another part represents where to place the binary point (analogous to a decimal point) relative to
     those significant digits.
 
-    Just like decimal numbers in math, doubles in C# can have rounding error. Try this code:
+        Just like decimal numbers in math, doubles in C# can have rounding error. Try this code:
 
     ```csharp
     double third = 1.0 / 3.0;
@@ -201,18 +205,44 @@ items:
     
     You know that `0.3` repeating is not exactly the same as `1/3`.
 
+        ***Challenge***
+
+    Try other calculations with large numbers, small numbers, multiplication
+    and division using the `double` type.  Try more complicated calculations.
+
+
 - title: Fixed point types
   durationInMinutes: 4
   content: |
     You've seen the basic numeric types in C#: integers and doubles.  There is one
     other type to learn: the `decimal` type. The `decimal` type has a smaller
-    range, but greater precision than `double`. Let's take a look:
+    range, but greater precision than `double`. The term **fixed point** means
+    that the decimal point (or binary point) does not move. Let's take a look:
 
     ```csharp
     decimal min = decimal.MinValue;
     decimal max = decimal.MaxValue;
     Console.WriteLine("the range of the decimal type is " + min + " to " + max);
     ```
+
+    Notice that the range is smaller than the `double` type. You can see the greater
+    precision with the decimal type by trying the following code:
+
+    ```csharp
+    double a = 1.0;
+    double b = 3.0;
+    Console.WriteLine(a / b);
+
+    decimal c = 1.0M;
+    decimal d = 3.0M;
+    Console.WriteLine(c / d);
+    ```
+
+    The `M` suffix on the numbers is how you indicate that a constant should use the
+    `decimal` type.
+
+    Notice that the math done using the decimal type has more digits to the right
+    of the decimal point. 
 
     ***Challenge***
 
@@ -231,5 +261,4 @@ items:
     double area = Math.PI * radius * radius;
     Console.WriteLine(area);
     ```
-- content: |
     You've completed the "working with numbers" tutorial.

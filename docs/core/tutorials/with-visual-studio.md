@@ -4,7 +4,7 @@ description: Learn how to build a simple .NET Core console application with C# u
 keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: BillWagner
 ms.author: wiwagn
-ms.date: 08/07/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -56,7 +56,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 
 Enhance your application to prompt the user for their name and display it along with the date and time. To modify and test the program, do the following:
 
-1. Enter the following C# code in the code window immediately after the opening bracket that follows the `public static void Main(string[] args)` line and before the first closing bracket:
+1. Enter the following C# code in the code window immediately after the opening bracket that follows the `static void Main(string[] args)` line and before the first closing bracket:
 
    [!code-csharp[GettingStarted#1](../../../samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
 

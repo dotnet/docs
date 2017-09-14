@@ -1348,7 +1348,7 @@ http://myUrl/
 ## Remarks  
  For IPv6 addresses, the brackets ([]) are removed and the <xref:System.Net.IPAddress.ScopeId%2A> property is set, if one was specified when this instance was constructed.
 
-If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then DnsSafeHost returns an escaped string. Unescape any escaped string returned from ```DnsSafeHost``` before using that string for DNS resolution (see the Example). If you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then DnsSafeHost returns an unescaped string.
+If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then DnsSafeHost returns an escaped string. Unescape any escaped string returned from `DnsSafeHost` before using that string for DNS resolution (see the Example). If you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then DnsSafeHost returns an unescaped string.
   
  The <xref:System.Uri.DnsSafeHost%2A> property is dependent on configuration settings, as discussed later in this topic. Configuration settings cannot be changed by Windows Store applications, which can lead to inconsistent results when using <xref:System.Uri.DnsSafeHost%2A>. The <xref:System.Uri.IdnHost%2A> property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current *app.config* settings might be.  
   

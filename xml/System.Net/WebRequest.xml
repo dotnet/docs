@@ -835,7 +835,7 @@
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This API supports .NET infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1606,7 +1606,7 @@
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This API supports .NET infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

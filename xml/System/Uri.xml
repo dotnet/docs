@@ -1340,13 +1340,15 @@ http://myUrl/
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an unescaped host name that is safe to use for DNS resolution.</summary>
-        <value>A <see cref="T:System.String" /> that contains the unescaped host part of the URI that is suitable for DNS resolution; or the original unescaped host string, if it is already suitable for resolution.</value>
+        <summary>Gets a host name that, after being unescaped if necessary, is safe to use for DNS resolution (see Remarks).</summary>
+        <value>A <see cref="T:System.String" /> that contains the host part of the URI in a format suitable for DNS resolution; or the original host string, if it is already suitable for resolution.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For IPv6 addresses, the brackets ([]) are removed and the <xref:System.Net.IPAddress.ScopeId%2A> property is set, if one was specified when this instance was constructed.  
+ For IPv6 addresses, the brackets ([]) are removed and the <xref:System.Net.IPAddress.ScopeId%2A> property is set, if one was specified when this instance was constructed.
+
+If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then DnsSafeHost returns an escaped string. You should unescape any escaped string returned from DnsSafeHost before using that string for DNS resolution (see the Example). Be aware that if you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then DnsSafeHost returns an unescaped string.
   
  The <xref:System.Uri.DnsSafeHost%2A> property is dependent on configuration settings, as discussed later in this topic. Configuration settings cannot be changed by Windows Store applications, which can lead to inconsistent results when using <xref:System.Uri.DnsSafeHost%2A>. The <xref:System.Uri.IdnHost%2A> property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current app.config settings might be.  
   
@@ -1399,7 +1401,9 @@ http://myUrl/
  [!code-cpp[NCLUriEnhancements#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLUriEnhancements/CPP/nclurienhancements.cpp#4)]
  [!code-csharp[NCLUriEnhancements#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLUriEnhancements/CS/nclurienhancements.cs#4)]
  [!code-vb[NCLUriEnhancements#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLUriEnhancements/VB/nclurienhancements.vb#4)]  
-  
+
+ Use the <xref:System.Uri.UnescapeDataString%2A> method to unescape the host name before resolving it (for example, you can resolve it by calling the <xref:System.Net.Dns.GetHostEntry%2A> method).
+
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This instance represents a relative URI, and this property is valid only for absolute URIs.</exception>
@@ -2173,7 +2177,7 @@ http://myUrl/
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The RFC 3490 compliant International Domain Name of the host, using Punycode as appropriate.</summary>
+        <summary>The RFC 3490 compliant International Domain Name of the host, using Punycode as appropriate. This string, after being unescaped if necessary, is safe to use for DNS resolution (see Remarks).</summary>
         <value>Returns the hostname, formatted with Punycode according to the IDN standard.<see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2181,8 +2185,11 @@ http://myUrl/
 ## Remarks  
  This property is provided for the use of lower-level networking protocols that require the domain name in Punycode form. If your code does not require that specific format, use <xref:System.Uri.Host%2A> for the hostname.  
   
- The deprecated <xref:System.Uri.DnsSafeHost%2A> property is dependent on app.config settings, which cannot be changed by Windows Store applications. This property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current app.config settings might be.  
-  
+ The deprecated <xref:System.Uri.DnsSafeHost%2A> property is dependent on app.config settings, which cannot be changed by Windows Store applications. IdnHost is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current app.config settings might be.  
+
+ If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then IdnHost returns an escaped string. You should unescape any escaped string returned from IdnHost before using that string for DNS resolution. Be aware that if you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then IdnHost returns an unescaped string.
+
+
  ]]></format>
         </remarks>
       </Docs>

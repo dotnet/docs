@@ -555,7 +555,7 @@
 ## Remarks  
  The <xref:System.Net.WebRequest.Create%2A> method returns a descendant of the <xref:System.Net.WebRequest> class determined at run time as the closest registered match for `requestUri`.  
   
- For example, when a URI beginning with `http://` or `https://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.Create%2A>. If a URI beginning with `ftp://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FileWebRequest> instance. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FileWebRequest> instance.  
+ For example, when a URI beginning with `http://` or `https://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.Create%2A>. If a URI beginning with `ftp://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FtpWebRequest> instance. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.Create%2A> method will return a <xref:System.Net.FileWebRequest> instance.  
   
  The pre-registered reserve types already registered include the following:  
   

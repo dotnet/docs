@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.WebRequest> is the `abstract` base class for the .NET Framework's request/response model for accessing data from the Internet. An application that uses the request/response model can request data from the Internet in a protocol-agnostic manner, in which the application works with instances of the <xref:System.Net.WebRequest> class while protocol-specific descendant classes carry out the details of the request.  
+ <xref:System.Net.WebRequest> is the `abstract` base class for .NET's request/response model for accessing data from the Internet. An application that uses the request/response model can request data from the Internet in a protocol-agnostic manner, in which the application works with instances of the <xref:System.Net.WebRequest> class while protocol-specific descendant classes carry out the details of the request.  
   
  Requests are sent from an application to a particular URI, such as a Web page on a server. The URI determines the proper descendant class to create from a list of <xref:System.Net.WebRequest> descendants registered for the application. <xref:System.Net.WebRequest> descendants are typically registered to handle a specific protocol, such as HTTP or FTP, but can be registered to handle a request to a specific server or path on a server.  
   
@@ -567,7 +567,7 @@
   
 -   `file://`  
   
- The .NET Framework includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
+ .NET includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
   
  The <xref:System.Net.WebRequest.Create%2A> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.WebRequest>.  
   
@@ -651,7 +651,7 @@
   
 -   `file://`  
   
- The .NET Framework includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
+ .NET includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/en-us/e993b7c3-087f-45d8-9c02-9dded936d804).  
@@ -710,7 +710,7 @@
  For example, when a URI beginning with `http://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.CreateDefault%2A>. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.CreateDefault%2A> method will return a <xref:System.Net.FileWebRequest>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in .NET](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -759,7 +759,7 @@
   
  The <xref:System.Net.WebRequest.CreateHttp%28System.String%29> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.HttpWebRequest>. If the method is successful, the <xref:System.Net.HttpWebRequest.AllowReadStreamBuffering%2A> property on the returned <xref:System.Net.HttpWebRequest> instance is set to `false`.  
   
- The .NET Framework includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.String%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
+ .NET includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.String%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
   
  ]]></format>
         </remarks>
@@ -809,7 +809,7 @@
   
  The <xref:System.Net.WebRequest.CreateHttp%28System.Uri%29> method uses the `requestUri` parameter to create a new <xref:System.Net.HttpWebRequest> instance. If the method is successful, the <xref:System.Net.HttpWebRequest.AllowReadStreamBuffering%2A> property on the returned <xref:System.Net.HttpWebRequest> instance is set to `false`.  
   
- The .NET Framework includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.Uri%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
+ .NET includes support for the `http://` and  `https://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method. The <xref:System.Net.WebRequest.Create%28System.Uri%29> method can be used to create a descendant of the <xref:System.Net.WebRequest> class for other schemes.  
   
  ]]></format>
         </remarks>
@@ -835,7 +835,7 @@
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+          <AttributeName>System.Obsolete("This API supports .NET infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1606,7 +1606,7 @@
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+          <AttributeName>System.Obsolete("This API supports .NET infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

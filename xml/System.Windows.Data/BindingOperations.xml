@@ -280,9 +280,9 @@ You may want to use the collection on multiple threads.   For example, you wan
  
 To use a collection on multiple threads, one of which is the UI thread that owns the <xref:System.Windows.Controls.ItemsControl>, you must do the following:
 
-1. Choose a synchronization mechanism.
+1. Instantiate an object to lock when accessing the collection.
 
-1. Synchronize all access from the application to the collection using that mechanism.
+1. Synchronize all access from the application to the collection by locking that object.
 
 1. Call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object)> to inform WPF that you are using a simple lock mechanism.
 
@@ -345,9 +345,7 @@ The net effect is that you can change the collection on any thread, and those c
 
 A WPF application can display a collection of data using an <xref:System.Windows.Controls.ItemsControl> or one of its subclasses (<xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.TreeView>, <xref:System.Windows.Controls.ListView>, etc.). WPF channels all its access to the collection through a subclass of <xref:System.Windows.Data.CollectionView>. Both the <xref:System.Windows.Controls.ItemsControl> and the <xref:System.Windows.Data.CollectionView> have affinity to the thread on which the <xref:System.Windows.Controls.ItemsControl> was created, meaning that using them on a different thread is forbidden and throws an exception. In effect, this restriction applies to the collection as well.
  
-You may want to use the collection on multiple threads.   For example, you want to update the collection (add or remove items) on a "data-gathering" thread, while displaying the results on a "user interface" thread, so that the UI remains responsive while data-gathering is happening. In such a situation, you are responsible for ensuring synchronized ("thread-safe") access to the collection.   This is typically done using either a simple lock mechanism or a more elaborate synchronization mechanism such as semaphores, reset events, etc. 
- 
-While you must synchronize your application's access to the collection, you must also guarantee that access from WPF (specifically from <xref:System.Windows.Data.CollectionView>) participates in the same synchronization mechanism.  You do this by calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.
+You may want to use the collection on multiple threads.   For example, you want to update the collection (add or remove items) on a "data-gathering" thread, while displaying the results on a "user interface" thread, so that the UI remains responsive while data-gathering is happening. In such a situation, you are responsible for ensuring synchronized ("thread-safe") access to the collection and for guaranteeing that access from WPF (specifically from <xref:System.Windows.Data.CollectionView>) participates in the same synchronization mechanism. By calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)> method, you can do this by using a synchronization mechanism such as a semaphores, a reset event, etc. 
  
 To use a collection on multiple threads, one of which is the UI thread that owns the <xref:System.Windows.Controls.ItemsControl>, you must do the following:
 
@@ -355,7 +353,7 @@ To use a collection on multiple threads, one of which is the UI thread that owns
 
 1. Synchronize all access from the application to the collection using that mechanism.
 
-1. Call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)> overload to inform WPF of a mechanism other than simple locking.
+1. Call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)> overload to inform WPF that you are using a mechanism other than simple locking.
 
    - The call must occur on the UI thread.
 

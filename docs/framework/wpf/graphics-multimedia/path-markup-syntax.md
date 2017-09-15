@@ -101,9 +101,12 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
 |Term|Description|  
 |----------|-----------------|  
 |*endPoint*|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The end point of the line.|  
-  
+
+An uppercase                  `L` indicates that                  `endPoint` is an absolute value; a lowercase                  `l` indicates that                  `endPoint` is an offset to the previous point, or (0,0) if none exists.
+
 ### Horizontal Line Command  
- Creates a horizontal line between the current point and the specified x-coordinate.                          `H 90` is an example of a valid horizontal line command.  
+ Creates a horizontal line between the current point and the specified x-coordinate.                          `H 90` is an example of a valid horizontal line command.
+
   
 |Syntax|  
 |------------|  
@@ -113,8 +116,11 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
 |----------|-----------------|  
 |*x*|<xref:System.Double?displayProperty=fullName><br /><br /> The x-coordinate of the end point of the line.|  
   
+An uppercase                  `H` indicates that                  `x` is an absolute value; a lowercase                  `h` indicates that                  `x` is an offset to the previous point, or (0,0) if none exists.
+  
 ### Vertical Line Command  
- Creates a vertical line between the current point and the specified y-coordinate.                          `v 90` is an example of a valid vertical line command.  
+ Creates a vertical line between the current point and the specified y-coordinate.                          `v 90` is an example of a valid vertical line command.
+
   
 |Syntax|  
 |------------|  
@@ -123,7 +129,9 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
 |Term|Description|  
 |----------|-----------------|  
 |*y*|<xref:System.Double?displayProperty=fullName><br /><br /> The y-coordinate of the end point of the line.|  
-  
+
+An uppercase                  `V` indicates that                  `y` is an absolute value; a lowercase                  `v` indicates that                  `y` is an offset to the previous point, or (0,0) if none exists.  
+    
 ### Cubic Bezier Curve Command  
  Creates a cubic Bezier curve between the current point and the specified end point by using the two specified control points (                         `controlPoint`1 and                          `controlPoint`2).                          `C 100,200 200,400 300,200` is an example of a valid curve command.  
   
@@ -195,7 +203,7 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
 |Syntax|  
 |------------|  
 |`Z`<br /><br /> - or -<br /><br /> `z`|  
-  
+
 <a name="pointsyntax"></a>   
 ## Point Syntax  
  Describes the x- and y-coordinates of a point where (0,0) is the top left corner.

@@ -27,9 +27,9 @@ programming or the C# language.
 In the [Hello world](hello-world) lesson, you'll create the most basic
 C#. You'll explore the `string` type and how to work with text.
 
-## [Working with numbers](working-with-numbers)
+## [Numbers in C#](numbers-in-csharp)
 
-In the [Working with numbers](working-with-numbers) lesson, you'll learn
+In the [numbers in C#](numbers-in-csharp) lesson, you'll learn
 how computers store numbers and how to perform calculations with different
 number types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#.
@@ -44,7 +44,7 @@ basics of control flow, which is the basics of how programs make decisions and c
 different actions.
 
 This beginner lesson assumes that you have finished the [Hello World](hello-world) and
-[Working with numbers](working-with-numbers) lessons.
+[Numbers in C#](numbers-in-csharp) lessons.
 
 ## Download and install
 

@@ -6,18 +6,18 @@ metadata:
   description: In this tutorial about branches and loops, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
-  nextTutorialHref: working-with-collections
-  nextTutorialTitle: Working with Collections in C#
+  nextTutorialHref: collections-in-csharp
+  nextTutorialTitle: Collections in C#
   displayType: two-column
   interactive: csharp
 items:
 - durationInMinutes: 1
   content: |
     This tutorial teaches you about how to write code that examines variables and changes execution path based on those variables. You'll write C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
-- title: Making decisions using the if statement
+- title: Make decisions using the if statement
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following lines in the window on the right and click the 'Run' button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the 'Run' button:
 
     ```csharp
     int a = 5;
@@ -32,10 +32,10 @@ items:
     int b = 3;
     ```
 
-    Because the answer is less than 10, nothing is printed. You've only
-    created one of the possible branches for an `if` statement: the true branch.
+    Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only
+    written one of the possible branches for an `if` statement: the true branch.
 
-- title: If and else work together.
+- title: Make if and else work together
   durationInMinutes: 3
   content: |
     
@@ -60,10 +60,12 @@ items:
     Because indentation is not significant, you need to use `{` and `}` to
     indicate when you want more than one statement to be part of the block
     that executes conditionally. C# programmers typically use those braces
-    on all `if` and `else` clauses. This example is the same as what you
-    just created:
+    on all `if` and `else` clauses. The following example is the same as what you
+    just created. Try it.
 
     ```csharp
+    int a = 5;
+    int b = 3;
     if (a + b > 10)
     {
         Console.WriteLine("The answer is greater than 10");
@@ -81,6 +83,9 @@ items:
     You can test more complicated conditions:
 
     ```csharp
+    int a = 5;
+    int b = 3;
+    int c = 4;
     if ((a + b + c > 10) && (a > b))
     {
         Console.WriteLine("The answer is greater than 10");
@@ -94,12 +99,15 @@ items:
     ```
     
     The `&&` represents "and". It means both conditions must be true to execute
-    the first statement.  These examples also show that you can have multiple
+    the statement in the true branch.  These examples also show that you can have multiple
     statements in each conditional branch, provided you enclose them in `{` and `}`.
     
     You can also use  `||` to represent "or":
 
     ```csharp
+    int a = 5;
+    int b = 3;
+    int c = 4;
     if ((a + b + c > 10) || (a > b))
     {
         Console.WriteLine("The answer is greater than 10");
@@ -112,10 +120,10 @@ items:
     }
     ```
 
-- title: Repeating operations using loops
+- title: use loops to repeat operations
   durationInMinutes: 4
   content: |
-    The other important concept to create larger programs is **loops**. You'll
+    Another important concept to create larger programs is **loops**. You'll
     use loops to repeat statements that you want executed more than once. Try
     this code in the interactive window:
 
@@ -156,14 +164,14 @@ items:
     } while (counter < 10);
     ```
     
-    This `do` loop and the earlier `while` loop are the same. 
+    This `do` loop and the earlier `while` loop work the same. 
     
     Let's move on to one last loop statement.
 
-- title: Working with the `for` loop.
+- title: Work with the `for` loop.
   durationInMinutes: 4
   content: |
-    The final common looping statement that you'll see in C# code is the
+    Another common loop statement that you'll see in C# code is the
     `for` loop. Try this code in the interactive window:
 
     ```csharp
@@ -173,18 +181,19 @@ items:
     } 
     ```
 
-    This does the same as the `while` loop and the `do` loop you've
+    This does the same work as the `while` loop and the `do` loop you've
     already used. The `for` statement has three parts that control
     how it works. 
 
     The first part is the **for initializer**: `for counter = 0;` declares
-    that `counter` as the loop variable, and sets its initial value to `0`.
+    that `counter` is the loop variable, and sets its initial value to `0`.
 
     The middle part is the **for condition**: `counter < 10` declares that this
     `for` loop continues to execute as long as the value of counter is less than 10.
 
     The final part is the **for iterator**: `counter++` specifies how to modify the loop
-    variable after executing the block following the `for` statement.
+    variable after executing the block following the `for` statement. Here, it specirifies
+    that `counter` should be incremented by 1 each time the block executes.
 
     Experiment with these yourself. Try each of the following:
 
@@ -193,9 +202,9 @@ items:
     - Change the iterator to add a value other than 1 to `counter`.
 
     When you're done, let's move on to write some code yourself to
-    use what you;ve learned.
+    use what you've learned.
 
-- title: Try it yourself
+- title: Challenge yourself
   durationInMinutes: 12
   content: |
     Now that you've seen the `if` statement and the looping
@@ -225,4 +234,10 @@ items:
     }
     Console.WriteLine("The sum is " + sum);
     ```
-    You've completed the "looping and branching" tutorial.
+    You've completed the "branches and loops" tutorial. You can learn more about these concepts in these topics:
+
+    [If and else statement](../language-reference/keywords/if-else.md)   
+    [While statement](../language-reference/keywords/while.md)   
+    [Do statement](../language-reference/keywords/do.md)   
+    [For statement](../language-reference/keywords/for.md)   
+

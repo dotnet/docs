@@ -3,11 +3,11 @@ documentType: Tutorial
 title: Hello C#
 metadata:
   title:  Hello C#. Your first introduction to the C# language.
-  description: In this tutorial, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
+  description: In this tutorial, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
-  nextTutorialHref: working-with-numbers
-  nextTutorialTitle: Working with numbers in C#
+  nextTutorialHref: numbers-in-csharp
+  nextTutorialTitle: numbers in C#
   displayType: two-column
   interactive: csharp
 items:
@@ -17,7 +17,7 @@ items:
 - title: Run your first C# program
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following line in the window on the right and click the 'Run' button:
+    Run the following code in the interactive window. To do that, type code block in the interactive window and click the 'Run' button:
 
     ```csharp
     Console.WriteLine("Hello World!");
@@ -113,7 +113,7 @@ items:
     Console.WriteLine("[" + trimmedMessage + "]");
     ```
 
-    This sample reinforces a couple important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the Trim methods returns a new string, but does not change the original message.
+    This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the Trim methods returns a new string, but does not change the original message.
 
     Other methods perform more general edits on a string. You've probably used a search and replace command in an editor or word processor. The `Replace` method does something similar in a `string`. It searches for a substring, and replaces it with different text. The `Replace` method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code above:
 

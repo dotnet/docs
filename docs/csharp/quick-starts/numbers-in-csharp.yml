@@ -1,12 +1,12 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Working with numbers
+title: Numbers in C#
 metadata:
-  title:  Working with numbers in C#
+  title:  numbers in C#
   description: In this tutorial about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
-  nextTutorialHref: branching-and-loops
+  nextTutorialHref: branches-and-loops
   nextTutorialTitle: Branches and loops in C#
   displayType: two-column
   interactive: csharp
@@ -14,10 +14,10 @@ items:
 - durationInMinutes: 1
   content: |
     This tutorial teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
-- title: Exploring integer math
+- title: Explore integer math
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following lines in the window on the right and click the 'Run' button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the 'Run' button:
 
     ```csharp
     int a = 18;
@@ -30,7 +30,7 @@ items:
 
     - `-` for subtraction
     - `*` for multiplication
-    - `/` for division.
+    - `/` for division
 
     > [!TIP]
     > Throughout this tutorial, you can explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
@@ -57,7 +57,7 @@ items:
     
     You can also experiment by performing multiple mathematics operations in the same line, if you'd like.
 
-- title: Exploring order of operations
+- title: Explore order of operations
   durationInMinutes: 3
   content: |
     The C# language defines the precedence of different mathematics operations
@@ -93,7 +93,7 @@ items:
     ```
 
     You may have noticed an interesting behavior for integers. Integer
-    division always produces an integer result, even when the mathematic
+    division always produces an integer result, even when the mathematical
     result would include a decimal or fraction portion.
 
     If you haven't seen this behavior, try the following:
@@ -107,7 +107,7 @@ items:
     ```
 
     Click 'Run' again to see the results.
-- title: Integer precision and limits
+- title: Explore integer precision and limits
   durationInMinutes: 4
   content: |
     That last sample showed you that integer division truncates the result.
@@ -150,7 +150,7 @@ items:
     There are other numeric types with different limits and precision that you
     would use when the `int` type does not meet your needs. Let's explore those next.
 
-- title: Working with the double type.
+- title: Work with the double type
   durationInMinutes: 4
   content: |
     The `double` numeric type represents a double-precision floating point
@@ -170,7 +170,7 @@ items:
     ```
 
     Notice that the answer includes the decimal portion of the quotient. Try a slightly
-    more complicted expression with doubles:
+    more complicated expression with doubles:
 
     ```csharp
     double a = 19;
@@ -190,13 +190,13 @@ items:
     ```
 
     These values are printed out to represent scientific notation. The number to
-    the left of the `E` is the signifant. The number to the right is the exponent,
+    the left of the `E` is the significant. The number to the right is the exponent,
     as a power of 10. Internally, these numbers are represented similarly, but in 
     a binary form. One part represents the significant binary digits.
     Another part represents where to place the binary point (analogous to a decimal point) relative to
     those significant digits.
 
-        Just like decimal numbers in math, doubles in C# can have rounding error. Try this code:
+    Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
 
     ```csharp
     double third = 1.0 / 3.0;
@@ -211,7 +211,7 @@ items:
     and division using the `double` type.  Try more complicated calculations.
 
 
-- title: Fixed point types
+- title: Work with fixed point types
   durationInMinutes: 4
   content: |
     You've seen the basic numeric types in C#: integers and doubles.  There is one
@@ -241,7 +241,7 @@ items:
     The `M` suffix on the numbers is how you indicate that a constant should use the
     `decimal` type.
 
-    Notice that the math done using the decimal type has more digits to the right
+    Notice that the math using the decimal type has more digits to the right
     of the decimal point. 
 
     ***Challenge***
@@ -261,4 +261,11 @@ items:
     double area = Math.PI * radius * radius;
     Console.WriteLine(area);
     ```
-    You've completed the "working with numbers" tutorial.
+    You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in this topics:
+
+    [Integral Types Table](../language-reference/keywords/integral-types-table.md)   
+    [Floating-Point Types Table](../language-reference/keywords/floating-point-types-table.md)   
+    [Built-In Types Table](../language-reference/keywords/built-in-types-table.md)   
+    [Implicit Numeric Conversions Table](../language-reference/keywords/implicit-numeric-conversions-table.md)   
+    [Explicit Numeric Conversions Table](../language-reference/keywords/explicit-numeric-conversions-table.md)
+

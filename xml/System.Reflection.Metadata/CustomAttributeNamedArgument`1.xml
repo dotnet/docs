@@ -17,7 +17,8 @@
   <Docs>
     <typeparam name="TType">The type used to represent types of values decoded from the custom attribute signature.</typeparam>
     <summary>Represents a named argument decoded from a custom attribute signature.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,7 +43,8 @@
         <param name="type">The type of the argument.</param>
         <param name="value">The value of the argument.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.CustomAttributeNamedArgument`1" /> structure using the specified name, kind, type, and value.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Kind">
@@ -61,7 +63,8 @@
       <Docs>
         <summary>Gets the kind of argument.</summary>
         <value>The argument kind.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -80,7 +83,8 @@
       <Docs>
         <summary>Gets the name of the argument.</summary>
         <value>The argument name.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -99,7 +103,8 @@
       <Docs>
         <summary>Gets the type of the argument.</summary>
         <value>The argument type.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -118,7 +123,8 @@
       <Docs>
         <summary>Gets the value of the argument.</summary>
         <value>An object containing the argument value.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

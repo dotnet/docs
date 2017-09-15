@@ -45,6 +45,3 @@ different actions.
 
 This beginner lesson assumes that you have finished the [Hello World](hello-world) and
 [Numbers in C#](numbers-in-csharp) lessons.
-
-## Download and install
-

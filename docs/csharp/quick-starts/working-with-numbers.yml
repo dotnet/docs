@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Working with numbers
 metadata:
   title:  Working with numbers in C#
-  description: This tutorial teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+  description: In this tutorial about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
   nextTutorialHref: branching-and-loops
@@ -17,7 +17,7 @@ items:
 - title: Exploring integer math
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window (type the following line in the window on the right and click the 'Run' button):
+    Run the following code in the interactive window. To do that, type the following lines in the window on the right and click the 'Run' button:
 
     ```csharp
     int a = 18;

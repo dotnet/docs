@@ -3,7 +3,7 @@ documentType: Tutorial
 title: Hello C#
 metadata:
   title:  Hello C#. Your first introduction to the C# language.
-  description: This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
+  description: In this tutorial, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
   nextTutorialHref: working-with-numbers
@@ -14,37 +14,40 @@ items:
 - durationInMinutes: 1
   content: |
     This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
-- title: Run your first c# program
+- title: Run your first C# program
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window (type the following line in the window on the right and click the 'Run' button):
+    Run the following code in the interactive window. To do that, type the following line in the window on the right and click the 'Run' button:
 
     ```csharp
     Console.WriteLine("Hello World!");
     ```
 
-    Congratulations! You've run your first C# program. Now, replace the two lines above with these:
+    Congratulations! You've run your first C# program. It is a simple program that prints the message "Hello World!".
+    Let's move on and explore more.
+    
+    Now, replace the two lines above with these:
 - title: Declare and use variables
   durationInMinutes: 3
   content: |
     Your first program printed the `string` "Hello World!" on
-    a screen. The rest of this lesson explores working with
+    the screen. The rest of this lesson explores working with
     the `string` type, which represents text in C#.
 
     Your first program is limited to printing one message. You can write more
     useful programs by using **variables**. A **variable** is a symbol you can
-    use run the same code with different values. Let's try it.
+    use to run the same code with different values. Let's try it!
 
     ```csharp
     string firstName = "Bill";
     Console.WriteLine(firstName);
     ```
 
-    Those lines declare a variable, `name` and assigns it a value, "Bill". Then, it
+    The first line declare a variable, `name` and assigns it a value, "Bill". The second line
     prints out the name.
 
     You can assign different values to any variable you declare. You can change
-    the name to one of your friends. Add these two lines in the interactive window above:
+    the name to one of your friends. Add these lines in the interactive window:
 
     ```csharp
     string firstName = "Bill";
@@ -56,8 +59,8 @@ items:
     Notice that the same line of code prints two different messages, based on
     the value stored in the `firstName` variable.
 
-    You may have also noticed the "Hello" was missing in the last two messages. Let's fix
-    that now.  Modify the last line to the following:
+    You may have also noticed that the word "Hello" was missing in the last two messages. Let's fix
+    that now.  Modify the lines that print the message to the following:
 
     ```csharp
     Console.WriteLine("Hello " + firstName);
@@ -69,7 +72,7 @@ items:
   content: |
     Your last edit was our first look at what you can do with strings. Let's explore more.
 
-    The `+`, when applied to strings, creates a new string with the text from the first followed by the text from the second. This is referred to as *string concatenation*. You can combine any number of strings, including string variables.  Try this:
+    The `+` is called an operator in C#. When applied to strings, creates a new string with the text from the first followed by the text from the second. This is referred to as *string concatenation*. You can combine any number of strings, including string variables.  Try this:
 
     ```csharp
     string firstName = "Maria";
@@ -77,7 +80,7 @@ items:
     Console.WriteLine("My friends are " + firstName + " and " + aFriend);
     ```
 
-    As you explore more with strings, you can find the length of a string using `Length`.  Add the following code at the bottom of the interactive window:
+    As you explore more with strings, you can find the length of a string using `Length`. `Length` is a **property** of a string and it retuns the number of characters in that string. Add the following code at the bottom of the interactive window:
 
     ```csharp
     Console.WriteLine("The name " + firstName + " has " + firstName.Length + " letters");
@@ -92,7 +95,9 @@ items:
 - title: Do more with strings
   durationInMinutes: 4
   content: |
-    Another useful method is Trim, and related methods TrimStart and TrimEnd. These methods remove leading and trailing spaces:
+    You've been using a **method**, `Console.WriteLine` to print messages. A **method** is a block of code that implements some action. It has a name, so you can access it. 
+    
+    The `string` type has many useful methods. Let's explore the `Trim` method, and related methods `TrimStart` and `TrimEnd`. These methods remove leading and trailing spaces:
 
     ```csharp
     string message = "      Hello World!       ";
@@ -110,7 +115,7 @@ items:
 
     This sample reinforces a couple important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the Trim methods returns a new string, but does not change the original message.
 
-    Other methods perform more general edits on a string. You've probably used a search and replace command in an editor or word processor. The Replace method substitutes a replacement string for all occurences of a sub-string in a string. Try it for yourself. Add this code above:
+    Other methods perform more general edits on a string. You've probably used a search and replace command in an editor or word processor. The `Replace` method does something similar in a `string`. It searches for a substring, and replaces it with different text. The `Replace` method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code above:
 
     ```csharp
     string message = "Hello World!";
@@ -119,7 +124,7 @@ items:
     Console.WriteLine(message);
     ```
 
-    Two other useful methods make a string ALL CAPS or all lower case. Try this code above:
+    Two other useful methods make a string ALL CAPS or all lower case. Try the following code:
 
     ```csharp
     string message = "Hello World!";
@@ -131,12 +136,12 @@ items:
   durationInMinutes: 4
   content: |
     The other part of a *search and replace* operation is to find text in a
-    sring. You can use the the `Contains` method for searching. It
-    tells you if a method contains a sub-string inside it. Try the following
+    string. You can use the the `Contains` method for searching. It
+    tells you if a string contains a substring inside it. Try the following
     code to explore `Contains`:
 
     ```csharp
-    string message = "You say goodbye, and I say hello";
+    string message = "You say goodbye, and I say hello.";
     Console.WriteLine(message.Contains("goodbye"));
     Console.WriteLine(message.Contains("greetings"));
     ```
@@ -149,15 +154,15 @@ items:
     ***Challenge***
 
     There are two similar methods, `StartsWith` and `EndsWith` that also search for sub-strings in a string. These find a sub-string at the beginning or the
-    end of the string. Try to modify the sample above to use `StartsWith` and
-    `EndsWith` instead of `Contains`.
+    end of the string. Try to modify the previous sample to use `StartsWith` and
+    `EndsWith` instead of `Contains`. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
 - title: Complete challenge
   durationInMinutes: 1
   content: |
     Did you come up with something like this?
 
     ```csharp
-    string message = "You say goodbye, and I say hello";
+    string message = "You say goodbye, and I say hello.";
     Console.WriteLine(message.StartsWith("You"));
     Console.WriteLine(message.StartsWith("goodbye"));
 
@@ -168,4 +173,4 @@ items:
     You've completed the "Hello C#" tutorial.
 
     You can learn more about working with the `string` type in the
-    [C# Programming Guide](../programming-guide/index.md) topic on [strings](../programming-guide/strings/index.md)
+    [C# Programming Guide](../programming-guide/index.md) topic on [strings](../programming-guide/strings/index.md).

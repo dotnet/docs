@@ -10,24 +10,22 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ---
-# Quick starts
+# C# Quick starts #
 
 Welcome to the C# Quick starts. These start with interactive lessons
-that you can run in your browser. As you get more experience, the later
-quick starts run on your local machine creating larger C# programs.
-In these lessons, you'll explore the C# language.
+that you can run in your browser. 
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
 numbers, and booleans. It's all interactive, and you'll be writing code
-within minutes. These first lessons assumes no prior knowledge of
+within minutes. These first lessons assume no prior knowledge of
 programming or the C# language.
 
 
 ## [Hello world](hello-world)
 
 In the [Hello world](hello-world) lesson, you'll create the most basic
-C#. You'll explore the`string` type and how to work with text.
+C#. You'll explore the `string` type and how to work with text.
 
 ## [Working with numbers](working-with-numbers)
 

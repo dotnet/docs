@@ -92,6 +92,15 @@
     <permission cref="T:System.Net.WebPermission">to access the requested URI or any URI that the request is redirected to. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpWebRequest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -1826,6 +1835,16 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not equal to -1 and is less than zero.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndGetRequestStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Ends an asynchronous request for a <see cref="T:System.IO.Stream" /> object to use to write data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndGetRequestStream">
       <MemberSignature Language="C#" Value="public override System.IO.Stream EndGetRequestStream (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream EndGetRequestStream(class System.IAsyncResult asyncResult) cil managed" />
@@ -2052,12 +2071,10 @@
         <summary>Gets or sets the value of the <see langword="Expect" /> HTTP header.</summary>
         <value>The contents of the <see langword="Expect" /> HTTP header. The default value is <see langword="null" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The value for this property is stored in <see cref="T:System.Net.WebHeaderCollection" />. If WebHeaderCollection is set, the property value is lost.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <see langword="Expect" /> is set to a string that contains "100-continue" as a substring.</exception>
@@ -2103,6 +2120,16 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetRequestStream">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object to use to write request data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetRequestStream">
       <MemberSignature Language="C#" Value="public override System.IO.Stream GetRequestStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetRequestStream() cil managed" />
@@ -3578,12 +3605,10 @@
         <summary>Gets or sets the value of the <see langword="User-agent" /> HTTP header.</summary>
         <value>The value of the <see langword="User-agent" /> HTTP header. The default value is <see langword="null" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The value for this property is stored in <see cref="T:System.Net.WebHeaderCollection" />. If WebHeaderCollection is set, the property value is lost.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3598,34 +3623,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EndGetRequestStream">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Requests</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Ends an asynchronous request for a <see cref="T:System.IO.Stream" /> object to use to write data.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetRequestStream">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.IO.Stream" /> object to use to write request data.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebRequest" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

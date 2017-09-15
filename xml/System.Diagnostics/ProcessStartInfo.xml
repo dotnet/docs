@@ -1147,7 +1147,7 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.PlatformNotSupportedException">An attempt to set the value on Universal Windows Platform (UWP) apps occurs.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">An attempt to set the value to <see langword="true" /> on Universal Windows Platform (UWP) apps occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Verb">

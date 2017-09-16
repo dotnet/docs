@@ -40,21 +40,20 @@ Public Class Temperature : Implements IFormattable
    Public Overloads Function ToString(format As String, provider As IFormatProvider) As String _  
       Implements IFormattable.ToString
 
-      ' Handle null or empty arguments.
-      If String.IsNullOrEmpty(format) Then format = "G"
-      ' Remove any white space and convert to uppercase.
+      If String.IsNullOrEmpty(format) Then
+         format = "G"
+      End If
       format = format.Trim().ToUpperInvariant()
 
-      If provider Is Nothing Then provider = NumberFormatInfo.CurrentInfo
+      If provider Is Nothing Then
+         provider = NumberFormatInfo.CurrentInfo
+      End If
             
       Select Case format
-         ' Convert temperature to Fahrenheit and return string.
          Case "F"
             Return Me.Fahrenheit.ToString("N2", provider) & "°F"
-         ' Convert temperature to Kelvin and return string.
          Case "K"
             Return Me.Kelvin.ToString("N2", provider) & "K"
-         ' Return temperature in Celsius.
          Case "C", "G"
             Return Me.Celsius.ToString("N2", provider) & "°C"
          Case Else
@@ -67,11 +66,11 @@ End Class
 ' <Snippet13>
 Public Module Example
    Public Sub Main()
-      Dim temp1 As New Temperature(22d)
+      Dim Temp As New Temperature(22d)
       Console.WriteLine(Convert.ToString(temp1, New CultureInfo("ja-JP")))
-      Console.WriteLine("Temperature: {0:K}", temp1)
-      Console.WriteLine("Temperature: {0:F}", temp1)
-      Console.WriteLine(String.Format(New CultureInfo("fr-FR"), "Temperature: {0:F}", temp1)) 
+      Console.WriteLine("Temperature: {0:K}", Temp)
+      Console.WriteLine("Temperature: {0:F}", Temp)
+      Console.WriteLine(String.Format(New CultureInfo("fr-FR"), "Temperature: {0:F}", Temp)) 
    End Sub
 End Module
 ' The example displays the following output:

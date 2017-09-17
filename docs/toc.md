@@ -66,7 +66,6 @@
 ## [What's new in .NET Core](core/whats-new/index.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
-### [Get Started with C# and Visual Studio Code](core/tutorials/with-visual-studio-code.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
 ### [Getting started with .NET Core on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs.md)
 ### [Building a complete .NET Core solution on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs-full-solution.md)

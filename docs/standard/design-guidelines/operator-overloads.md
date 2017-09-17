@@ -64,9 +64,9 @@ Operator overloads allow framework types to appear as if they were built-in lang
 |`%`|`op_Modulus`|`Mod or Remainder`|  
 |`^`|`op_ExclusiveOr`|`Xor`|  
 |`& (binary)`|`op_BitwiseAnd`|`BitwiseAnd`|  
-|`&#124;`|`op_BitwiseOr`|`BitwiseOr`|  
+|<code>&#124;</code>|`op_BitwiseOr`|`BitwiseOr`|  
 |`&&`|`op_LogicalAnd`|`And`|  
-|`&#124;&#124;`|`op_LogicalOr`|`Or`|  
+|<code>&#124;&#124;</code>|`op_LogicalOr`|`Or`|  
 |`=`|`op_Assign`|`Assign`|  
 |`<<`|`op_LeftShift`|`LeftShift`|  
 |`>>`|`op_RightShift`|`RightShift`|  
@@ -85,7 +85,7 @@ Operator overloads allow framework types to appear as if they were built-in lang
 |`%=`|`op_ModulusAssignment`|`Mod`|  
 |`+=`|`op_AdditionAssignment`|`Add`|  
 |`&=`|`op_BitwiseAndAssignment`|`BitwiseAnd`|  
-|`&#124;=`|`op_BitwiseOrAssignment`|`BitwiseOr`|  
+|<code>&#124;=</code>|`op_BitwiseOrAssignment`|`BitwiseOr`|  
 |`,`|`op_Comma`|`Comma`|  
 |`/=`|`op_DivisionAssignment`|`Divide`|  
 |`--`|`op_Decrement`|`Decrement`|  

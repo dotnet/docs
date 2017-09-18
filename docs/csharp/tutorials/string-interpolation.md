@@ -49,6 +49,8 @@ This command will create a barebones .NET core project with a project file, *int
 
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
 
+[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+
 ## Intro to String Interpolation
 
 With `System.String.Format`, you specify "placeholders" in a string that are replaced by the parameters following the string. For instance:

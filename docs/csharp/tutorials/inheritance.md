@@ -30,6 +30,8 @@ To create and run the examples in this tutorial, you use the [dotnet](../../core
 1. Enter the [dotnet restore](../../core/tools/dotnet-restore.md) command from the command line to load or restore the project's dependencies.
 1. Enter the [dotnet run](../../core/tools/dotnet-run.md) command to compile and execute the example.
 
+* Starting with **.NET Core 2.0**, the `dotnet restore` command executes automatically when a new project is created and when `dotnet run` is executed.
+
 ## Background: What is inheritance?
 
 *Inheritance* is one of the fundamental attributes of object-oriented programming. It allows you to define a child class that reuses (inherits), extends, or modifies the behavior of a parent class. The class whose members are inherited is called the *base class*. The class that inherits the members of the base class is called the *derived class*.

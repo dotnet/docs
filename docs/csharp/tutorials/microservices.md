@@ -119,6 +119,7 @@ all the dependencies, you build the application:
 ```console
 dotnet build
 ```
+[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
 
 And once you build the application, you run it from the command line:
 
@@ -345,6 +346,8 @@ COPY . .
 # RUN dotnet restore
 RUN dotnet publish -c Release -o out
 ```
+
+[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
 
 This will copy the project file from the  current directory to the docker VM, and restore
 all the packages. Using the dotnet CLI means that the Docker image must include the

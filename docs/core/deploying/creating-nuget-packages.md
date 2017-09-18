@@ -62,4 +62,4 @@ And now you have the necessary files to publish a NuGet package!
 It is important to note that at no point is the `dotnet publish` command involved.  The `dotnet publish` command is for deploying applications with all of their dependencies in the same bundle -  not for generating a NuGet package to be distributed and consumed via NuGet.
 
 <a name="dotnet-restore-note"></a>
-**Note:** As of Dot Net Core 2.0, it is not necessary to run `dotnet restore` becase it is run implicitly as part of `dotnet build` or `dotnet run`. It is still a valid command in certain scenarios where doing an explicit restore makes sense. One example being [continuous integration builds in Visual Studio Team Services](https://www.visualstudio.com/team-services/support/build-deploy-asp-net-core-app-azure/).
+[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]

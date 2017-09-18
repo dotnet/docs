@@ -4,7 +4,7 @@ description: Learn how to create and debug your first .NET Core application in C
 keywords: C#, Get Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: mairaw
-ms.date: 8/01/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -37,7 +37,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
     * Alternatively, you can select **File** > **Open Folder** from the main menu to open your project folder.
 
 2. Initialize a C# project:
-    * Open the Integrated Terminal from Visual Studio Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick). Alternatively, you can select **View** > **Integrated Terminal** from the main menu.
+    * Open the Integrated Terminal from Visual Studio Code by selecting **View** > **Integrated Terminal** from the main menu.
     * In the terminal window, type `dotnet new console`.
     * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written, along with a C# project file named `HelloWorld.csproj`.
 
@@ -45,11 +45,11 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
 3. Resolve the build assets:
 
-    * For **.NET Core 1.1**, type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
+    * For **.NET Core 1.x**, type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
 
    ![The dotnet restore command](media/with-visual-studio-code/dotnetrestore.png)
 
-    * For **.NET Core 2.0**, this step is optional. The `dotnet restore` command executes automatically when a new project is created.
+    * Starting with **.NET Core 2.0**, this step is optional. The `dotnet restore` command executes automatically when a new project is created.
 
 4. Run the "Hello World" program:
 

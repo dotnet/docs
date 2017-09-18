@@ -4,7 +4,7 @@ Imports System.Globalization
 Public Module NumericLibrary
     Public Function ParseInteger(value As String) As (Success As Boolean, Number As Int32)
         Dim number As Integer
-        Return (Int32.TryParse(value, NumberStyles.Any, Nothing, number), number)
+        Return (Int32.TryParse(value, NumberStyles.Any, CultureInfo.InvariantCulture, number), number)
     End Function
 End Module
 ' </Snippet2>

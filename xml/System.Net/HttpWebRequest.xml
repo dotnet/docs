@@ -1642,7 +1642,7 @@
   
  Supported authentication schemes include Digest, Negotiate, Kerberos, NTLM, and Basic.  
   
-   
+ For security reasons, when automatically following redirects, store the credentials that you want to be included in the redirect in a <xref:System.Net.CredentialCache> and assign it to this property. This property will automatically be set to `null` upon redirection if it contains anything except a <xref:System.Net.CredentialCache>. Having this property value be automatically set to `null` under those conditions prevents credentials from being sent to any unintended destination.
   
 ## Examples  
  The following code example sets the credentials for a request.  

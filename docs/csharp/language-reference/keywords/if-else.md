@@ -48,18 +48,18 @@ An `if` statement identifies which statement to run based on the value of a `Boo
 // if-else statement  
 if (condition)  
 {  
-    then-statement;  
+    // then-statement; 
 }  
 else  
 {  
-    else-statement;  
+    // else-statement;  
 }  
 // Next statement in the program.  
   
 // if statement without an else  
 if (condition)  
 {  
-    then-statement;  
+    // then-statement;  
 }  
 // Next statement in the program.  
 ```  

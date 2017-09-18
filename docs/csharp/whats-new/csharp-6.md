@@ -97,7 +97,7 @@ public class Student
 
     public void ChangeName(string newLastName)
     {
-        // Generates CS 0200: Property or indexer cannot be assigned to -- it is read only
+        // Generates CS0200: Property or indexer cannot be assigned to -- it is read only
         LastName = newLastName;
     }
 }
@@ -140,7 +140,7 @@ as read only properties, as shown here.
 The body of a lot of members that we write consist of only one statement
 that can be represented as an expression. You can reduce that syntax by
 writing an expression-bodied member instead. It works for methods and
-read-only properties." For example, an override of `ToString()` is often
+read-only properties. For example, an override of `ToString()` is often
 a great candidate:
 
 [!code-csharp[ToStringExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#ToStringExpressionMember)]

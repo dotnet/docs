@@ -64,7 +64,7 @@ auto-properties. C# 6 improves the auto-properties capabilities so that you can 
 them in more scenarios. You won't need to fall back on the more verbose syntax of
 declaring and manipulating the backing field by hand so often.
 
-The new syntax addresses scenarios for read only properties, and for initializing
+The new syntax addresses scenarios for read-only properties, and for initializing
 the variable storage behind an auto-property.
 
 ### Read-only auto-properties
@@ -131,7 +131,7 @@ is part of the property declaration, making it easier to equate the
 storage allocation with public interface for `Student` objects.
 
 Property Initializers can be used with read/write properties as well
-as read only properties, as shown here.
+as read-only properties, as shown here.
 
 [!code-csharp[ReadWriteInitialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
 
@@ -145,7 +145,7 @@ a great candidate:
 
 [!code-csharp[ToStringExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#ToStringExpressionMember)]
 
-You can also use expression-bodied members in read only properties as well:
+You can also use expression-bodied members in read-only properties as well:
 
 [!code-csharp[FullNameExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 

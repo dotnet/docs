@@ -30,8 +30,12 @@ items:
     int b = 3;
     ```
 
-    Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only
+    Click the *Run* button again. Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only
     written one of the possible branches for an `if` statement: the true branch.
+
+    This first sample shows the power of `if` and boolean types. A *boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped. 
+
+    This process of checking conditions and executing statements based on those conditions is very powerful. Let's explore more.
 
 - title: Make if and else work together
   durationInMinutes: 3
@@ -49,6 +53,8 @@ items:
         Console.WriteLine("The answer is not greater than 10");
     ```
 
+    The statement following the `else` keyword executes only when the condition being tested is `false`. Combining `if` and `else` with boolean conditions provides all the power you need.s
+    
     > [!IMPORTANT]
     > The indentation under the `if` and `else` statements is for human readers.
     > The C# language doesn't treat indentation or whitespace as significant. 

@@ -63,7 +63,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 -   For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
   
--   For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+-   For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](https://docs.microsoft.com/dotnet/standard/using-linq).  
   
 -   To find the latest articles and resources from the Visual C# team, see the [Visual C# Developer Center](http://go.microsoft.com/fwlink/?LinkId=47811).  
   
@@ -80,7 +80,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  In addition to the run time services, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library extensively to handle common "plumbing" chores.  
   
- For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/en-us/d05daf50-00fe-45c7-8383-06fe41697355).  
+ For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](https://docs.microsoft.com/dotnet/standard/get-started).  
   
 ## See Also  
  [C#](../../csharp/index.md)

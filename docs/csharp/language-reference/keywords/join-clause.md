@@ -99,11 +99,11 @@ The `join` clause is useful for associating elements from different source seque
 ## See Also  
  [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
- [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)   
+ [Join Operations](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/join-operations)   
  [group clause](../../../csharp/language-reference/keywords/group-clause.md)   
  [How to: Perform Left Outer Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md)   
  [How to: Perform Inner Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md)   
  [How to: Perform Grouped Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)   
  [How to: Order the Results of a Join Clause](../../../csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)   
  [How to: Join by Using Composite Keys](../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)   
- [How to: Install Sample Databases](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e)
+ [How to: Install Sample Databases](https://docs.microsoft.com/sql/analysis-services/install-sample-data-and-projects)

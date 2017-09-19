@@ -54,12 +54,12 @@ class Account
 }  
 ```  
   
- For more information, see [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4).  
+ For more information, see [Thread Synchronization](https://docs.microsoft.com//dotnet/csharp/programming-guide/concepts/threading/thread-synchronization).  
   
 ## Remarks  
  The `lock` keyword ensures that one thread does not enter a critical section of code while another thread is in the critical section. If another thread tries to enter a locked code, it will wait, block, until the object is released.  
   
- The section [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c) discusses threading.  
+ The section [Threading](https://docs.microsoft.com//dotnet/csharp/programming-guide/concepts/threading/) discusses threading.  
   
  The `lock` keyword calls <xref:System.Threading.Monitor.Enter%2A> at the start of the block and <xref:System.Threading.Monitor.Exit%2A> at the end of the block. A <xref:System.Threading.ThreadInterruptedException> is thrown if <xref:System.Threading.Thread.Interrupt%2A> interrupts a thread that is waiting to enter a `lock` statement.  
   
@@ -93,10 +93,10 @@ class Account
  <xref:System.Threading.Mutex>   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
+ [Threading](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/threading/)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)   
  @System.Threading.Monitor   
  [Interlocked Operations](../../../standard/threading/interlocked-operations.md)   
  [AutoResetEvent](../../../standard/threading/autoresetevent.md)   
- [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4)
+ [Thread Synchronization](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/threading/thread-synchronization)

@@ -94,9 +94,9 @@ items:
 - title: Do more with strings
   durationInMinutes: 4
   content: |
-    You've been using a **method**, <xref:System.Console.WriteLine>, to print messages. A **method** is a block of code that implements some action. It has a name, so you can access it. 
+    You've been using a **method**, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, to print messages. A **method** is a block of code that implements some action. It has a name, so you can access it. 
     
-    The `string` type has many useful methods. Let's explore the <xref:System.String.Trim> method, and related methods <xref:System.String.TrimStart> and <xref:System.String.TrimEnd>. These methods remove leading and trailing spaces:
+    The `string` type has many useful methods. Let's explore the <xref:System.String.Trim%2A> method, and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A>. These methods remove leading and trailing spaces:
 
     ```csharp
     string message = "      Hello World!       ";
@@ -114,7 +114,7 @@ items:
 
     This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string, but does not change the original message.
 
-    There are other methods available to work with a string. For example, you've probably used a search and replace command in an editor or word processor. The <xref:System.String.Replace> method does something similar in a `string`. It searches for a substring, and replaces it with different text. The <xref:System.String.Replace> method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code:
+    There are other methods available to work with a string. For example, you've probably used a search and replace command in an editor or word processor. The <xref:System.String.Replace%2A> method does something similar in a `string`. It searches for a substring, and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code:
 
     ```csharp
     string message = "Hello World!";
@@ -135,9 +135,9 @@ items:
   durationInMinutes: 4
   content: |
     The other part of a *search and replace* operation is to find text in a
-    string. You can use the  <xref:System.String.Contains> method for searching. It
+    string. You can use the  <xref:System.String.Contains%2A> method for searching. It
     tells you if a string contains a substring inside it. Try the following
-    code to explore <xref:System.String.Contains>:
+    code to explore <xref:System.String.Contains%2A>:
 
     ```csharp
     string message = "You say goodbye, and I say hello";
@@ -145,16 +145,16 @@ items:
     Console.WriteLine(message.Contains("greetings"));
     ```
 
-    The <xref:System.String.Contains> method returns a **boolean** value which tells you if the
+    The <xref:System.String.Contains%2A> method returns a **boolean** value which tells you if the
     string you were searcbj for was found. A **boolean** stores either a `true` or a
     `false` value. You'll learn more about **boolean** values
     in a later lesson.
 
     ***Challenge***
 
-    There are two similar methods, <xref:System.String.StartsWith> and <xref:System.String.EndsWith> that also search for sub-strings in a string. These find a substring at the beginning or the
-    end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith> and
-    <xref:System.String.EndsWith> instead of <xref:System.String.Contains>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
+    There are two similar methods, <xref:System.String.StartsWith%2A> and <xref:System.String.EndsWith%2A> that also search for sub-strings in a string. These find a substring at the beginning or the
+    end of the string. Try to modify the previous sample to use <xref:System.String.StartsWith%2A> and
+    <xref:System.String.EndsWith%2A> instead of <xref:System.String.Contains%2A>. Search for "You" or "goodbye" at the beginning of a string. Search for "hello" or "goodbye" at the end of a string.
 
     > [!Note]
     > Watch your punctuation when you test for the text at the end of the string. If the string

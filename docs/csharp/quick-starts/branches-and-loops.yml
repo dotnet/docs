@@ -51,7 +51,7 @@ items:
 
     > [!IMPORTANT]
     > The indentation under the `if` and `else` statements is for human readers.
-    > The C# language does not treat indentation or whitespace as significant. 
+    > The C# language doesn't treat indentation or whitespace as significant. 
     > The statement following the `if` or `else` keyword will be executed based
     > on the condition.
 
@@ -118,7 +118,7 @@ items:
     }
     ```
 
-- title: use loops to repeat operations
+- title: Use loops to repeat operations
   durationInMinutes: 4
   content: |
     Another important concept to create larger programs is **loops**. You'll
@@ -147,7 +147,7 @@ items:
     > false as you execute the code. Otherwise, you create an
     > **infinite loop** where your program never ends. Let's
     > not demonstrate that, because the engine that runs your
-    > code will timeout and you'll see no output from your program.
+    > code will time out and you'll see no output from your program.
 
     The `while` loop tests the condition before executing the code
     following the `while`. The `do` ... `while` loop executes the 
@@ -166,7 +166,7 @@ items:
     
     Let's move on to one last loop statement.
 
-- title: Work with the `for` loop.
+- title: Work with the for loop
   durationInMinutes: 4
   content: |
     Another common loop statement that you'll see in C# code is the
@@ -190,28 +190,27 @@ items:
     `for` loop continues to execute as long as the value of counter is less than 10.
 
     The final part is the **for iterator**: `counter++` specifies how to modify the loop
-    variable after executing the block following the `for` statement. Here, it specirifies
+    variable after executing the block following the `for` statement. Here, it specifies
     that `counter` should be incremented by 1 each time the block executes.
 
     Experiment with these yourself. Try each of the following:
 
     - Change the initializer to start at a different value.
     - Change the condition to stop at a different value.
-    - Change the iterator to add a value other than 1 to `counter`.
 
     When you're done, let's move on to write some code yourself to
     use what you've learned.
 
-- title: Challenge yourself
+- title: Combining branches and loops
   durationInMinutes: 12
   content: |
     Now that you've seen the `if` statement and the looping
-    constructs in the C# language. See if you can write C# to
-    find the some of all integers 1 through 20 that are divisible
+    constructs in the C# language, see if you can write C# code to
+    find the sum of all integers 1 through 20 that are divisible
     by 3.  Here are a few hints:
     
-    - The `%` operator will give you the remainder of a division operation.
-    - The `if` statement will give you the condition to see if a number should be part of the sum.
+    - The `%` operator gives you the remainder of a division operation.
+    - The `if` statement givesx you the condition to see if a number should be part of the sum.
     - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
     Try it yourself. Then check how you did.
@@ -232,6 +231,10 @@ items:
     }
     Console.WriteLine("The sum is " + sum);
     ```
+
+- title: Next steps
+  durationInMinutes: 1
+  content: |
     You've completed the "branches and loops" tutorial. You can learn more about these concepts in these topics:
 
     [If and else statement](../language-reference/keywords/if-else.md)   

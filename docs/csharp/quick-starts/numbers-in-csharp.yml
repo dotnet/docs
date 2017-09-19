@@ -86,7 +86,7 @@ items:
     Console.WriteLine(d);
     ```
 
-    Explore more by combining many different operations. Try something like this:
+    Explore more by combining many different operations. Replace the fourth line above with something like this:
 
     ```csharp
     int d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
@@ -148,7 +148,7 @@ items:
     The addition operation **overflowed** the allowed values for integers.
 
     There are other numeric types with different limits and precision that you
-    would use when the `int` type does not meet your needs. Let's explore those next.
+    would use when the `int` type doesn't meet your needs. Let's explore those next.
 
 - title: Work with the double type
   durationInMinutes: 4
@@ -159,7 +159,7 @@ items:
     in magnitude. **Double-precision** means that these numbers are stored
     using greater precision than **single-precision**. On modern computers,
     it is more common to use double precision than single precision numbers.
-    Let's explore. Try the code below in the interactive window and see the result.
+    Let's explore. Try the following code in the interactive window and see the result.
 
     ```csharp
     double a = 5;
@@ -205,7 +205,7 @@ items:
     
     You know that `0.3` repeating is not exactly the same as `1/3`.
 
-        ***Challenge***
+    ***Challenge***
 
     Try other calculations with large numbers, small numbers, multiplication
     and division using the `double` type.  Try more complicated calculations.
@@ -217,12 +217,12 @@ items:
     You've seen the basic numeric types in C#: integers and doubles.  There is one
     other type to learn: the `decimal` type. The `decimal` type has a smaller
     range, but greater precision than `double`. The term **fixed point** means
-    that the decimal point (or binary point) does not move. Let's take a look:
+    that the decimal point (or binary point) doesn't move. Let's take a look:
 
     ```csharp
     decimal min = decimal.MinValue;
     decimal max = decimal.MaxValue;
-    Console.WriteLine("the range of the decimal type is " + min + " to " + max);
+    Console.WriteLine("The range of the decimal type is " + min + " to " + max);
     ```
 
     Notice that the range is smaller than the `double` type. You can see the greater
@@ -261,7 +261,13 @@ items:
     double area = Math.PI * radius * radius;
     Console.WriteLine(area);
     ```
-    You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in this topics:
+
+    Try some other formulas if you would like.
+
+- title: Next steps
+  durationInMinutes: 1
+  content: |
+    You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in the following topics:
 
     [Integral Types Table](../language-reference/keywords/integral-types-table.md)   
     [Floating-Point Types Table](../language-reference/keywords/floating-point-types-table.md)   

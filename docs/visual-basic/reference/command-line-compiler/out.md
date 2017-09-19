@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["/out compiler option [VB]", "-out compiler option [VB]", "out compiler option [VB]"]
+helpviewer_keywords: ["/out compiler option [Visual Basic]", "-out compiler option [Visual Basic]", "out compiler option [Visual Basic]"]
 ms.assetid: 9f148c15-0909-4cb8-a2db-777f8a8b45ae
 caps.latest.revision: 17
 author: dotnet-bot

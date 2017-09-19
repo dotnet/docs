@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["/? compiler option [VB]", "-help compiler option [VB]", "/help compiler option [VB]", "help compiler option [VB]", "-? compiler option [VB]", "? compiler option [VB]"]
+helpviewer_keywords: ["/? compiler option [Visual Basic]", "-help compiler option [Visual Basic]", "/help compiler option [Visual Basic]", "help compiler option [Visual Basic]", "-? compiler option [Visual Basic]", "? compiler option [Visual Basic]"]
 ms.assetid: eb984aa5-ac98-4d0b-a0d2-24238d7bc8dc
 caps.latest.revision: 11
 author: dotnet-bot

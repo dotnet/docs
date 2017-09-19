@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic, walkthroughs", "examples [VB]", "Visual Basic code, walkthroughs", "walkthroughs [VB]"]
+helpviewer_keywords: ["Visual Basic, walkthroughs", "examples [Visual Basic]", "Visual Basic code, walkthroughs", "walkthroughs [Visual Basic]"]
 ms.assetid: e4e1f849-e1ce-4cf7-8483-d9b4c4887a8e
 caps.latest.revision: 18
 author: dotnet-bot

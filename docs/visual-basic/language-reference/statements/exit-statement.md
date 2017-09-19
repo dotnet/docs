@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Exit"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["execution [VB], ending", "files [VB], closing", "programs [VB], quitting", "code, exiting", "Exit statement [VB]", "program termination", "execution [VB], stopping"]
+helpviewer_keywords: ["execution [Visual Basic], ending", "files [Visual Basic], closing", "programs [Visual Basic], quitting", "code, exiting", "Exit statement [Visual Basic]", "program termination", "execution [Visual Basic], stopping"]
 ms.assetid: 760bfb32-5c3f-4bdb-a432-9a6001c92db7
 caps.latest.revision: 19
 author: dotnet-bot

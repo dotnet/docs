@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Set"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["property procedures [VB], Set statements", "Set statement [VB]", "Set statement [VB], syntax", "write-only properties", "properties [VB], write-only"]
+helpviewer_keywords: ["property procedures [Visual Basic], Set statements", "Set statement [Visual Basic]", "Set statement [Visual Basic], syntax", "write-only properties", "properties [Visual Basic], write-only"]
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
 caps.latest.revision: 16
 author: dotnet-bot

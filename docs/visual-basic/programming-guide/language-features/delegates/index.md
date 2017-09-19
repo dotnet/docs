@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["delegates [VB]", "Visual Basic code, delegates"]
+helpviewer_keywords: ["delegates [Visual Basic]", "Visual Basic code, delegates"]
 ms.assetid: 410b60dc-5e60-4ec0-bfae-426755a2ee28
 caps.latest.revision: 10
 author: dotnet-bot

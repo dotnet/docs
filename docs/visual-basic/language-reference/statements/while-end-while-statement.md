@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.While", "vb.While...EndWhile"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["While statement [VB], While...End While", "While statement [VB]", "While...End While statements [VB]"]
+helpviewer_keywords: ["While statement [Visual Basic], While...End While", "While statement [Visual Basic]", "While...End While statements [Visual Basic]"]
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
 caps.latest.revision: 22
 author: dotnet-bot

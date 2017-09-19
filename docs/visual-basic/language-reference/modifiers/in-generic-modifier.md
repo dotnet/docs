@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.VarianceIn"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["contravariance, In keyword [VB]", "In keyword [VB]"]
+helpviewer_keywords: ["contravariance, In keyword [Visual Basic]", "In keyword [Visual Basic]"]
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
 caps.latest.revision: 19
 author: dotnet-bot

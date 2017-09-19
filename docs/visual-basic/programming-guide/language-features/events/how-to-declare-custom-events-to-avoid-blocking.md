@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["declaring events [VB], custom", "events [VB], custom", "custom events [VB]"]
+helpviewer_keywords: ["declaring events [Visual Basic], custom", "events [Visual Basic], custom", "custom events [Visual Basic]"]
 ms.assetid: 998b6a90-67c5-4d2c-8b11-366d3e355505
 caps.latest.revision: 12
 author: dotnet-bot

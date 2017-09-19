@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["LINQ to XML [VB], manipulating XML", "Visual Basic code, XML", "XML [VB], manipulating"]
+helpviewer_keywords: ["LINQ to XML [Visual Basic], manipulating XML", "Visual Basic code, XML", "XML [Visual Basic], manipulating"]
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
 caps.latest.revision: 5
 author: dotnet-bot

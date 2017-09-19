@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Set statement [VB], Property procedures", "Visual Basic code, procedures", "return values [VB], Property procedures", "syntax [VB], Property procedures", "procedures [VB], property", "Visual Basic code, properties", "procedures [VB], calling", "properties [VB], custom", "property procedures", "Get statement [VB], property procedures"]
+helpviewer_keywords: ["Set statement [Visual Basic], Property procedures", "Visual Basic code, procedures", "return values [Visual Basic], Property procedures", "syntax [Visual Basic], Property procedures", "procedures [Visual Basic], property", "Visual Basic code, properties", "procedures [Visual Basic], calling", "properties [Visual Basic], custom", "property procedures", "Get statement [Visual Basic], property procedures"]
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
 caps.latest.revision: 22
 author: dotnet-bot

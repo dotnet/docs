@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ushort"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["numbers [VB], whole", "literal type characters [VB], US", "whole numbers", "integral data types [VB]", "integer numbers", "numbers [VB], integer", "integers [VB], data types", "integers [VB], types", "data types [VB], integral", "UShort data type", "US literal type characters [VB]"]
+helpviewer_keywords: ["numbers [Visual Basic], whole", "literal type characters [Visual Basic], US", "whole numbers", "integral data types [Visual Basic]", "integer numbers", "numbers [Visual Basic], integer", "integers [Visual Basic], data types", "integers [Visual Basic], types", "data types [Visual Basic], integral", "UShort data type", "US literal type characters [Visual Basic]"]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
 caps.latest.revision: 16
 author: "rpetrusha"

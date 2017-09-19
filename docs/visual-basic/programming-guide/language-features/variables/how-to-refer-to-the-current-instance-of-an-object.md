@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["variables [VB], object", "objects [VB], referring to current instance", "instances, referring to current", "current instance", "object variables [VB]"]
+helpviewer_keywords: ["variables [Visual Basic], object", "objects [Visual Basic], referring to current instance", "instances, referring to current", "current instance", "object variables [Visual Basic]"]
 ms.assetid: 7f9b2c77-03cd-428f-adc2-b18070226e7c
 caps.latest.revision: 14
 author: dotnet-bot

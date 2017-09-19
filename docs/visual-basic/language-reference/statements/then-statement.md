@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Then keyword [VB]"]
+helpviewer_keywords: ["Then keyword [Visual Basic]"]
 ms.assetid: 41fdb422-d222-4c10-b5b0-c421c79e9070
 caps.latest.revision: 10
 author: dotnet-bot

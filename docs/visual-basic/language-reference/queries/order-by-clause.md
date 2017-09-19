@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryOrderBy", "vb.QueryAscending", "vb.QueryDescending"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["queries [VB], Order By", "Order By clause [VB]", "Order By statement [VB]"]
+helpviewer_keywords: ["queries [Visual Basic], Order By", "Order By clause [Visual Basic]", "Order By statement [Visual Basic]"]
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
 caps.latest.revision: 16
 author: dotnet-bot

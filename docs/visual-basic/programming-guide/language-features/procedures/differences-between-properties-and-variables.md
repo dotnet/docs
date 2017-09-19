@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["property values [VB]", "variables [VB]", "Visual Basic code, procedures", "values [VB], properties", "variables [VB], definition", "Visual Basic code, variables", "Visual Basic code, properties", "properties [VB], values", "properties [VB], defined", "variables [VB], and properties", "properties [VB], and variables"]
+helpviewer_keywords: ["property values [Visual Basic]", "variables [Visual Basic]", "Visual Basic code, procedures", "values [Visual Basic], properties", "variables [Visual Basic], definition", "Visual Basic code, variables", "Visual Basic code, properties", "properties [Visual Basic], values", "properties [Visual Basic], defined", "variables [Visual Basic], and properties", "properties [Visual Basic], and variables"]
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
 caps.latest.revision: 14
 author: dotnet-bot

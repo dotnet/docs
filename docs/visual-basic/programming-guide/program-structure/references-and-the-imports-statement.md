@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["assemblies [VB], namespaces", "references [VB], assembly", "namespaces [VB], assemblies", "referencing assemblies", "Imports statement [VB], referencing assemblies", "assemblies [VB], references"]
+helpviewer_keywords: ["assemblies [Visual Basic], namespaces", "references [Visual Basic], assembly", "namespaces [Visual Basic], assemblies", "referencing assemblies", "Imports statement [Visual Basic], referencing assemblies", "assemblies [Visual Basic], references"]
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
 caps.latest.revision: 12
 author: dotnet-bot

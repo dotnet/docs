@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["drives", "drives, processing", "Visual Basic code, file access", "files [VB], processing", "files [VB], accessing", "directories [Visual Studio], processing"]
+helpviewer_keywords: ["drives", "drives, processing", "Visual Basic code, file access", "files [Visual Basic], processing", "files [Visual Basic], accessing", "directories [Visual Studio], processing"]
 ms.assetid: f1db14c8-a4fd-4d0b-8323-c7cb29d688c2
 caps.latest.revision: 15
 author: dotnet-bot

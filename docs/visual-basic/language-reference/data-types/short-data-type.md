@@ -9,7 +9,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 f1_keywords: ["vb.Short"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["numbers [VB], whole", "whole numbers", "integral data types [VB]", "integer numbers", "numbers [VB], integer", "integers [VB], data types", "integers [VB], types", "data types [VB], integral", "S literal type character [VB]", "Short data type", "literal type characters [VB], S"]
+helpviewer_keywords: ["numbers [Visual Basic], whole", "whole numbers", "integral data types [Visual Basic]", "integer numbers", "numbers [Visual Basic], integer", "integers [Visual Basic], data types", "integers [Visual Basic], types", "data types [Visual Basic], integral", "S literal type character [Visual Basic]", "Short data type", "literal type characters [Visual Basic], S"]
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 author: "rpetrusha"
 ms.author: "ronpet"

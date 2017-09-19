@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Select", "vb.Case"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Select statement [VB]", "Case statement [VB]", "Select...Case statements", "conditional statements [VB], Select Case", "control flow [VB], branching", "Else keyword [VB], in Select...Case statements", "execution [VB], conditional", "To keyword [VB], in Select...Case statements", "Select Case statement [VB], Select...Case", "Select statement [VB], Select...Case", "Is operator [VB], in Select...Case statements", "branching [VB], conditional", "Case Else statement [VB], Select...Case", "End keyword [VB], Select Case statements", "Case statement [VB], Select...Case"]
+helpviewer_keywords: ["Select statement [Visual Basic]", "Case statement [Visual Basic]", "Select...Case statements", "conditional statements [Visual Basic], Select Case", "control flow [Visual Basic], branching", "Else keyword [Visual Basic], in Select...Case statements", "execution [Visual Basic], conditional", "To keyword [Visual Basic], in Select...Case statements", "Select Case statement [Visual Basic], Select...Case", "Select statement [Visual Basic], Select...Case", "Is operator [Visual Basic], in Select...Case statements", "branching [Visual Basic], conditional", "Case Else statement [Visual Basic], Select...Case", "End keyword [Visual Basic], Select Case statements", "Case statement [Visual Basic], Select...Case"]
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
 caps.latest.revision: 15
 author: dotnet-bot

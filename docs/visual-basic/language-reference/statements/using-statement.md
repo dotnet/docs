@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.using"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["resource disposal", "Try...Catch...Finally statements, equivalent to Using statement", "resources [VB], disposing", "Using statement [VB]"]
+helpviewer_keywords: ["resource disposal", "Try...Catch...Finally statements, equivalent to Using statement", "resources [Visual Basic], disposing", "Using statement [Visual Basic]"]
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
 caps.latest.revision: 36
 author: dotnet-bot

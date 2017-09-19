@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["sdkpath", "/sdkpath"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["-sdkpath compiler option [VB]", "/sdkpath compiler option [VB]", "sdkpath compiler option [VB]"]
+helpviewer_keywords: ["-sdkpath compiler option [Visual Basic]", "/sdkpath compiler option [Visual Basic]", "sdkpath compiler option [Visual Basic]"]
 ms.assetid: fec8a3f1-b791-4a37-8af7-344859f8212d
 caps.latest.revision: 15
 author: dotnet-bot

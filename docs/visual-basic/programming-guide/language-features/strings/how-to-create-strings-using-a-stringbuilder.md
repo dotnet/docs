@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["StringBuilder class", "strings [VB], using StringBuilder"]
+helpviewer_keywords: ["StringBuilder class", "strings [Visual Basic], using StringBuilder"]
 ms.assetid: 9c042880-aa16-432e-9ccb-cd00abda9ae3
 caps.latest.revision: 9
 author: dotnet-bot

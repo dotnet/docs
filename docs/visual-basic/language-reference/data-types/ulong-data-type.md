@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ulong"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["numbers [VB], whole", "whole numbers", "integral data types [VB]", "integer numbers", "numbers [VB], integer", "integers [VB], data types", "integers [VB], types", "data types [VB], integral", "literal type characters [VB], UL", "ULong data type", "UL literal type characters [VB]"]
+helpviewer_keywords: ["numbers [Visual Basic], whole", "whole numbers", "integral data types [Visual Basic]", "integer numbers", "numbers [Visual Basic], integer", "integers [Visual Basic], data types", "integers [Visual Basic], types", "data types [Visual Basic], integral", "literal type characters [Visual Basic], UL", "ULong data type", "UL literal type characters [Visual Basic]"]
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
 caps.latest.revision: 21
 author: "rpetrusha"

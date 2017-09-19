@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.is"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["comparison operators [VB]", "equivalent objects", "TypeOf...Is expression", "Is operator [VB]"]
+helpviewer_keywords: ["comparison operators [Visual Basic]", "equivalent objects", "TypeOf...Is expression", "Is operator [Visual Basic]"]
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
 caps.latest.revision: 12
 author: dotnet-bot

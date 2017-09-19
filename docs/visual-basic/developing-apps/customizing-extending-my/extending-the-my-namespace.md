@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.AddingMyExtensions"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["My namespace [VB], customizing", "My namespace", "My namespace [VB], extending"]
+helpviewer_keywords: ["My namespace [Visual Basic], customizing", "My namespace", "My namespace [Visual Basic], extending"]
 ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
 caps.latest.revision: 13
 author: dotnet-bot

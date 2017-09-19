@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["declared elements [VB], lifetime", "access levels, declared elements", "declared elements [VB], scope", "visibility [VB], declared elements", "elements [VB], programming", "scope [VB], declared elements", "lifetime [VB], declared elements", "declared elements [VB], access level", "data types [VB], declared elements", "declared elements [VB], visibility"]
+helpviewer_keywords: ["declared elements [Visual Basic], lifetime", "access levels, declared elements", "declared elements [Visual Basic], scope", "visibility [Visual Basic], declared elements", "elements [Visual Basic], programming", "scope [Visual Basic], declared elements", "lifetime [Visual Basic], declared elements", "declared elements [Visual Basic], access level", "data types [Visual Basic], declared elements", "declared elements [Visual Basic], visibility"]
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
 caps.latest.revision: 16
 author: dotnet-bot

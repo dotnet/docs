@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ByVal", "ByVal"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["ByVal keyword [VB], contexts", "ByVal keyword [VB]"]
+helpviewer_keywords: ["ByVal keyword [Visual Basic], contexts", "ByVal keyword [Visual Basic]"]
 ms.assetid: 1eaf4e58-b305-4785-9e3d-e416b9c75598
 caps.latest.revision: 14
 author: dotnet-bot

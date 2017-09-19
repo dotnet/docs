@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Line control [VB], overview", "Shape control [VB], overview", "lines, drawing", "shapes, drawing"]
+helpviewer_keywords: ["Line control [Visual Basic], overview", "Shape control [Visual Basic], overview", "lines, drawing", "shapes, drawing"]
 ms.assetid: 5c4e8b1a-0733-4020-af6c-f582f4026728
 caps.latest.revision: 6
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Web connections [VB]", "IsAvailable property [VB], about IsAvailable", "connections [VB], checking status", "connection status [VB]"]
+helpviewer_keywords: ["Web connections [Visual Basic]", "IsAvailable property [Visual Basic], about IsAvailable", "connections [Visual Basic], checking status", "connection status [Visual Basic]"]
 ms.assetid: 4d9ee8ab-9a6f-4279-ace4-b75afc976a74
 caps.latest.revision: 26
 author: dotnet-bot

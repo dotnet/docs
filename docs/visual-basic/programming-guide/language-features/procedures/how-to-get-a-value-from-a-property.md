@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["property values [VB]", "Visual Basic code, procedures", "values [VB], properties", "Visual Basic code, properties", "properties [VB], values"]
+helpviewer_keywords: ["property values [Visual Basic]", "Visual Basic code, procedures", "values [Visual Basic], properties", "Visual Basic code, properties", "properties [Visual Basic], values"]
 ms.assetid: 3954423e-6ab7-4a4c-b55c-a8d27be47891
 caps.latest.revision: 11
 author: dotnet-bot

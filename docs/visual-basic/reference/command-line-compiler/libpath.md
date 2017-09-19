@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["libpath compiler option [VB]", "/libpath compiler option [VB]", "-libpath compiler option [VB]"]
+helpviewer_keywords: ["libpath compiler option [Visual Basic]", "/libpath compiler option [Visual Basic]", "-libpath compiler option [Visual Basic]"]
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
 caps.latest.revision: 16
 author: dotnet-bot

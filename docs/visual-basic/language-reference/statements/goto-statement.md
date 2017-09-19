@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.GoTo"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["GoTo statement [VB]", "control flow [VB], branching", "unconditional branching [VB]", "branching [VB]", "branching [VB], unconditional", "branching [VB], conditional", "conditional statements [VB], GoTo statement", "GoTo statement [VB], syntax"]
+helpviewer_keywords: ["GoTo statement [Visual Basic]", "control flow [Visual Basic], branching", "unconditional branching [Visual Basic]", "branching [Visual Basic]", "branching [Visual Basic], unconditional", "branching [Visual Basic], conditional", "conditional statements [Visual Basic], GoTo statement", "GoTo statement [Visual Basic], syntax"]
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
 caps.latest.revision: 19
 author: dotnet-bot

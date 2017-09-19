@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["queries [LINQ in Visual Basic], writing", "LINQ [VB], walkthroughs", "LINQ [VB], writing queries", "writing LINQ queries [VB]"]
+helpviewer_keywords: ["queries [LINQ in Visual Basic], writing", "LINQ [Visual Basic], walkthroughs", "LINQ [Visual Basic], writing queries", "writing LINQ queries [Visual Basic]"]
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
 caps.latest.revision: 70
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Compare", "vb.OptionCompare"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["case sensitivity, Option Compare statement", "Compare keyword [VB]", "binary comparison [VB]", "strings [VB], returning from functions", "binary comparison [VB], Option Compare statement", "strings [VB], comparing", "string comparison [VB], Option Compare statement", "Text keyword [VB], Option Compare statement", "Binary keyword [VB], Option Compare statement", "string comparison [VB], sorting data", "Option Compare statement [VB]", "text [VB], comparing"]
+helpviewer_keywords: ["case sensitivity, Option Compare statement", "Compare keyword [Visual Basic]", "binary comparison [Visual Basic]", "strings [Visual Basic], returning from functions", "binary comparison [Visual Basic], Option Compare statement", "strings [Visual Basic], comparing", "string comparison [Visual Basic], Option Compare statement", "Text keyword [Visual Basic], Option Compare statement", "Binary keyword [Visual Basic], Option Compare statement", "string comparison [Visual Basic], sorting data", "Option Compare statement [Visual Basic]", "text [Visual Basic], comparing"]
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
 caps.latest.revision: 37
 author: dotnet-bot

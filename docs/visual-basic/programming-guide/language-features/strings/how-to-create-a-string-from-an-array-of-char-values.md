@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["examples [VB], arrays", "examples [VB], Char data type"]
+helpviewer_keywords: ["examples [Visual Basic], arrays", "examples [Visual Basic], Char data type"]
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
 caps.latest.revision: 10
 author: dotnet-bot

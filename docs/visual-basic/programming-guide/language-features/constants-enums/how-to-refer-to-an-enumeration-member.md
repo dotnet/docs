@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["enumerations [VB], referring to", "values [VB], associating constant values with names", "enumeration members", "constants [VB], enumerated"]
+helpviewer_keywords: ["enumerations [Visual Basic], referring to", "values [Visual Basic], associating constant values with names", "enumeration members", "constants [Visual Basic], enumerated"]
 ms.assetid: bbb5c3cc-7cdb-4814-8d6a-a6d91546ed1e
 caps.latest.revision: 13
 author: dotnet-bot

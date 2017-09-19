@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ImplementsClause"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["interface implementation [VB], reimplementation", "interface members [VB], reimplementation", "interface members [VB], Implements keyword", "interface members", "members [VB], reimplementation", "interface implementation [VB], Implements keyword", "interface members [VB], implementing", "Implements keyword [VB]", "Implements statement [VB], about Implements", "members [VB], implementing", "members [VB], Implements keyword", "reimplementation"]
+helpviewer_keywords: ["interface implementation [Visual Basic], reimplementation", "interface members [Visual Basic], reimplementation", "interface members [Visual Basic], Implements keyword", "interface members", "members [Visual Basic], reimplementation", "interface implementation [Visual Basic], Implements keyword", "interface members [Visual Basic], implementing", "Implements keyword [Visual Basic]", "Implements statement [Visual Basic], about Implements", "members [Visual Basic], implementing", "members [Visual Basic], Implements keyword", "reimplementation"]
 ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
 caps.latest.revision: 15
 author: dotnet-bot

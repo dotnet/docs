@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.isfalse"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["AndAlso operator [VB]", "IsFalse operator [VB]"]
+helpviewer_keywords: ["AndAlso operator [Visual Basic]", "IsFalse operator [Visual Basic]"]
 ms.assetid: 37fc9dbf-e5cc-4570-b93f-7213447974df
 caps.latest.revision: 14
 author: dotnet-bot

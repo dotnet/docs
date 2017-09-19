@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["event logs, shutdown", "My.Application.Log object, logging", "Startup event [VB]", "event logs, startup", "Shutdown event [VB]", "My.Log object, logging"]
+helpviewer_keywords: ["event logs, shutdown", "My.Application.Log object, logging", "Startup event [Visual Basic]", "event logs, startup", "Shutdown event [Visual Basic]", "My.Log object, logging"]
 ms.assetid: 67624d05-cddf-48b7-8c36-5c99baa4c621
 caps.latest.revision: 16
 author: dotnet-bot

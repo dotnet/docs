@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.#Const", "#vb.Const", "#Const"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["#Const directive", "conditional compilation [VB], directives", "Const directive (#Const)", "Visual Basic compiler, compiler directives", "constants [VB], Const directive", "constants [VB], declaring", "Const statement [VB], directive (#Const)", "declaring constants [VB], #const directive"]
+helpviewer_keywords: ["#Const directive", "conditional compilation [Visual Basic], directives", "Const directive (#Const)", "Visual Basic compiler, compiler directives", "constants [Visual Basic], Const directive", "constants [Visual Basic], declaring", "Const statement [Visual Basic], directive (#Const)", "declaring constants [Visual Basic], #const directive"]
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
 caps.latest.revision: 17
 author: dotnet-bot

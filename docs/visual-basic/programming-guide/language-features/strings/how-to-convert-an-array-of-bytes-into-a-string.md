@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["string conversion [VB], arrays", "byte arrays [VB], converting to strings", "examples [VB], strings", "arrays [VB], converting to strings"]
+helpviewer_keywords: ["string conversion [Visual Basic], arrays", "byte arrays [Visual Basic], converting to strings", "examples [Visual Basic], strings", "arrays [Visual Basic], converting to strings"]
 ms.assetid: d0dc8317-9ab3-4324-99f7-3f5788c0e72a
 caps.latest.revision: 9
 author: dotnet-bot

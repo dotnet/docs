@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["/optionstrict"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["-optionstrict compiler option [VB]", "optionstrict compiler option [VB]", "/optionstrict compiler option [VB]"]
+helpviewer_keywords: ["-optionstrict compiler option [Visual Basic]", "optionstrict compiler option [Visual Basic]", "/optionstrict compiler option [Visual Basic]"]
 ms.assetid: c7b10086-0fa4-49db-b3c8-4ae0db5957da
 caps.latest.revision: 17
 author: dotnet-bot

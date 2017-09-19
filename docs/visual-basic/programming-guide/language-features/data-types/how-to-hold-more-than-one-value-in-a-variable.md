@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["classes [VB], composite data types", "composite types [VB]", "composite data types [VB]", "data types [VB], composite", "arrays [VB], composite data types", "structures [VB], composite data types", "arrays [VB], compilation errors", "types [VB], composite"]
+helpviewer_keywords: ["classes [Visual Basic], composite data types", "composite types [Visual Basic]", "composite data types [Visual Basic]", "data types [Visual Basic], composite", "arrays [Visual Basic], composite data types", "structures [Visual Basic], composite data types", "arrays [Visual Basic], compilation errors", "types [Visual Basic], composite"]
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
 caps.latest.revision: 16
 author: dotnet-bot

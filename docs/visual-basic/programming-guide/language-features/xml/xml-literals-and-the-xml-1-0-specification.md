@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML literals [VB], XML 1.0 specification"]
+helpviewer_keywords: ["XML literals [Visual Basic], XML 1.0 specification"]
 ms.assetid: 46f046e5-293c-41a3-b893-4e5f6e32e78a
 caps.latest.revision: 13
 author: dotnet-bot

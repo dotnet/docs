@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Const"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Const statement [VB]"]
+helpviewer_keywords: ["Const statement [Visual Basic]"]
 ms.assetid: 495b318d-b7c5-4198-94f8-0790a541b07a
 caps.latest.revision: 28
 author: dotnet-bot

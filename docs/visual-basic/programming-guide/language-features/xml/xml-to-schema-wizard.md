@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["vb.XmlToSchemaWizard"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML IntelliSense [VB]", "XML [VB], IntelliSense", "IntelliSense [VB], XML", "XML schemas, creating"]
+helpviewer_keywords: ["XML IntelliSense [Visual Basic]", "XML [Visual Basic], IntelliSense", "IntelliSense [Visual Basic], XML", "XML schemas, creating"]
 ms.assetid: 98c495ba-8f37-4517-a0db-aa738611ab76
 caps.latest.revision: 16
 author: dotnet-bot

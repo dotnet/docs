@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Class"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["class modules", "Class statement [VB]", "classes [VB], fields", "fields [VB], of classes", "class types [VB], class statements", "classes [VB], creating", "classes [VB], data members", "data members [VB], of classes"]
+helpviewer_keywords: ["class modules", "Class statement [Visual Basic]", "classes [Visual Basic], fields", "fields [Visual Basic], of classes", "class types [Visual Basic], class statements", "classes [Visual Basic], creating", "classes [Visual Basic], data members", "data members [Visual Basic], of classes"]
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
 caps.latest.revision: 29
 author: dotnet-bot

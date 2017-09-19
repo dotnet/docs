@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["variables [VB], comparing values", "Visual Basic code, operators", "Visual Basic code, expressions", "comparison operators [VB], comparing expressions", "numeric expressions", "operators [VB], comparison", "expressions [VB], comparing"]
+helpviewer_keywords: ["variables [Visual Basic], comparing values", "Visual Basic code, operators", "Visual Basic code, expressions", "comparison operators [Visual Basic], comparing expressions", "numeric expressions", "operators [Visual Basic], comparison", "expressions [Visual Basic], comparing"]
 ms.assetid: 60da0c76-9458-4afc-97e9-44a7939c064c
 caps.latest.revision: 9
 author: dotnet-bot

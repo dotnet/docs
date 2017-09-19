@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["& operator [VB], concatenation", "concatenation operators [VB]", "operators [VB], concatenation", "Visual Basic code, operators", "+ operator [VB], concatenation", "concatenation operators [VB], Visual Basic strings"]
+helpviewer_keywords: ["& operator [Visual Basic], concatenation", "concatenation operators [Visual Basic]", "operators [Visual Basic], concatenation", "Visual Basic code, operators", "+ operator [Visual Basic], concatenation", "concatenation operators [Visual Basic], Visual Basic strings"]
 ms.assetid: e59908c3-89e0-41ae-933d-3e8826c16a04
 caps.latest.revision: 18
 author: dotnet-bot

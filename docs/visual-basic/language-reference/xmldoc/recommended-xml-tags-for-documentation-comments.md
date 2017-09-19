@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlDocComment"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["tags, XML", "XML comments, recommended tags [VB]", "comments, recommended XML tags"]
+helpviewer_keywords: ["tags, XML", "XML comments, recommended tags [Visual Basic]", "comments, recommended XML tags"]
 ms.assetid: 294e0736-ff1e-498e-af83-6db71ed41a72
 caps.latest.revision: 14
 author: dotnet-bot

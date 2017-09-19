@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["target compiler options [VB]", "-target compiler options [VB]", "/target compiler options [VB]"]
+helpviewer_keywords: ["target compiler options [Visual Basic]", "-target compiler options [Visual Basic]", "/target compiler options [Visual Basic]"]
 ms.assetid: e0954147-548b-461f-9c4b-a8f88845616c
 caps.latest.revision: 29
 author: dotnet-bot

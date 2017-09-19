@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["troubleshooting [VB], variables", "variables [VB], troubleshooting"]
+helpviewer_keywords: ["troubleshooting [Visual Basic], variables", "variables [Visual Basic], troubleshooting"]
 ms.assetid: 928a2dc8-e565-4ae4-8ba3-80cc0cb50090
 caps.latest.revision: 20
 author: dotnet-bot

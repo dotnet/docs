@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.)", "vb.(", "vb.colon", "vb.!", "vb..", "vb.:"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["special characters [VB], in code", "parentheses, using in code", "colons (:)", "period character in code", "dot operator (.)", "dictionary access operator [VB]", "concatenation operators [VB], special characters in code", "concatenation operators [VB], vs. addition operator", "! operator", "separators, using in code", "operators [VB], dictionary access", ": separator character", "member access operator [VB]", "addition operator [VB]", "operators [VB], member access", ". operator", "exclamation points", "separators", "exclamation point operator (!)", "Visual Basic code, special characters"]
+helpviewer_keywords: ["special characters [Visual Basic], in code", "parentheses, using in code", "colons (:)", "period character in code", "dot operator (.)", "dictionary access operator [Visual Basic]", "concatenation operators [Visual Basic], special characters in code", "concatenation operators [Visual Basic], vs. addition operator", "! operator", "separators, using in code", "operators [Visual Basic], dictionary access", ": separator character", "member access operator [Visual Basic]", "addition operator [Visual Basic]", "operators [Visual Basic], member access", ". operator", "exclamation points", "separators", "exclamation point operator (!)", "Visual Basic code, special characters"]
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
 caps.latest.revision: 21
 author: dotnet-bot

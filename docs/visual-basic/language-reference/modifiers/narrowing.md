@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.narrowing"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["conversions [VB], type", "type conversion [VB]", "conversions [VB], data type", "Narrowing keyword [VB]", "data type conversion [VB]"]
+helpviewer_keywords: ["conversions [Visual Basic], type", "type conversion [Visual Basic]", "conversions [Visual Basic], data type", "Narrowing keyword [Visual Basic]", "data type conversion [Visual Basic]"]
 ms.assetid: a207ee91-aca4-4771-b4e2-713f029bf2bb
 caps.latest.revision: 10
 author: dotnet-bot

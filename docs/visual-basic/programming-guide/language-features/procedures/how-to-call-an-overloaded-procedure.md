@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic code, procedures", "procedures [VB], overloading", "procedures [VB], calling", "procedures [VB], multiple versions", "procedure calls [VB], overloaded"]
+helpviewer_keywords: ["Visual Basic code, procedures", "procedures [Visual Basic], overloading", "procedures [Visual Basic], calling", "procedures [Visual Basic], multiple versions", "procedure calls [Visual Basic], overloaded"]
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
 caps.latest.revision: 12
 author: dotnet-bot

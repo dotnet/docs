@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["AddressOf operator [VB]", "delegates [VB], passing procedures"]
+helpviewer_keywords: ["AddressOf operator [Visual Basic]", "delegates [Visual Basic], passing procedures"]
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
 caps.latest.revision: 9
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.istrue"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["IsTrue operator [VB]", "OrElse operator [VB]"]
+helpviewer_keywords: ["IsTrue operator [Visual Basic]", "OrElse operator [Visual Basic]"]
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
 caps.latest.revision: 17
 author: dotnet-bot

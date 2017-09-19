@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ImportsXmlns"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML namespace [VB], importing", "imports [VB]", "Imports statement [VB]", "namespaces [VB], importing"]
+helpviewer_keywords: ["XML namespace [Visual Basic], importing", "imports [Visual Basic]", "Imports statement [Visual Basic]", "namespaces [Visual Basic], importing"]
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
 caps.latest.revision: 18
 author: dotnet-bot

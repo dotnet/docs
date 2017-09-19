@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["files [VB], writing to", "text, writing to files", "writing to files [VB]", "examples [VB], text files"]
+helpviewer_keywords: ["files [Visual Basic], writing to", "text, writing to files", "writing to files [Visual Basic]", "examples [Visual Basic], text files"]
 ms.assetid: 304956eb-530d-4df7-b48f-9b4d1f2581a0
 caps.latest.revision: 19
 author: dotnet-bot

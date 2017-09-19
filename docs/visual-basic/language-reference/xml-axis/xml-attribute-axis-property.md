@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlPropertyAttributeAxis"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["attribute axis property [VB]", "Visual Basic code, accessing XML", "XML attribute axis property [VB]", "XML axis [VB], attribute", "XML [VB], accessing"]
+helpviewer_keywords: ["attribute axis property [Visual Basic]", "Visual Basic code, accessing XML", "XML attribute axis property [Visual Basic]", "XML axis [Visual Basic], attribute", "XML [Visual Basic], accessing"]
 ms.assetid: 7a4777e1-0618-4de9-9510-fb9ace2bf4db
 caps.latest.revision: 23
 author: dotnet-bot

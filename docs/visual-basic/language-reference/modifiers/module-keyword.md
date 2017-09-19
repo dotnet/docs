@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ModuleAttribute"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Module keyword [VB]", "Module modifier", "attribute blocks, Module keyword"]
+helpviewer_keywords: ["Module keyword [Visual Basic]", "Module modifier", "attribute blocks, Module keyword"]
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 caps.latest.revision: 13
 author: dotnet-bot

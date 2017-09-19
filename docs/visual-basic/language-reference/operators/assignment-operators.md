@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["assignment operators [VB], Visual Basic", "operators [VB], assignment", "= assignment statements [VB]", "assignment operators [VB]"]
+helpviewer_keywords: ["assignment operators [Visual Basic], Visual Basic", "operators [Visual Basic], assignment", "= assignment statements [Visual Basic]", "assignment operators [Visual Basic]"]
 ms.assetid: 43b7e40c-b7af-45f6-b100-198a90f2561e
 caps.latest.revision: 11
 author: dotnet-bot

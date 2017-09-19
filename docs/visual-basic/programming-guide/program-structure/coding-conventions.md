@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["coding conventions [VB], Visual Basic", "examples [VB], coding conventions", "Visual Basic code, conventions"]
+helpviewer_keywords: ["coding conventions [Visual Basic], Visual Basic", "examples [Visual Basic], coding conventions", "Visual Basic code, conventions"]
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
 caps.latest.revision: 48
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Do", "vb.Loop", "vb.Until"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["conditional statements [VB], Do�Loop", "while statement [VB], Do...Loop", "execution [VB], conditional", "Do loops", "Until keyword [VB], Do...Loop statement", "Do...Loop statement", "instructions, repeating", "Do statement [VB]", "Exit statement [VB], in Do...Loop statements", "loop structures [VB], Do�Loop statements", "do-while statements [VB]", "loops, exiting", "Loop keyword [VB], Do...Loop statement"]
+helpviewer_keywords: ["conditional statements [Visual Basic], Do�Loop", "while statement [Visual Basic], Do...Loop", "execution [Visual Basic], conditional", "Do loops", "Until keyword [Visual Basic], Do...Loop statement", "Do...Loop statement", "instructions, repeating", "Do statement [Visual Basic]", "Exit statement [Visual Basic], in Do...Loop statements", "loop structures [Visual Basic], Do�Loop statements", "do-while statements [Visual Basic]", "loops, exiting", "Loop keyword [Visual Basic], Do...Loop statement"]
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
 caps.latest.revision: 37
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["/nowin32manifest compiler option [VB]", "nowin32manifest compiler option [VB]", "-nowin32manifest compiler option [VB]"]
+helpviewer_keywords: ["/nowin32manifest compiler option [Visual Basic]", "nowin32manifest compiler option [Visual Basic]", "-nowin32manifest compiler option [Visual Basic]"]
 ms.assetid: c0528aae-83b3-4425-99f0-19448e9843e3
 caps.latest.revision: 7
 author: dotnet-bot

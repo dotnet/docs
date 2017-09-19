@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["declared elements [VB], scope", "visibility [VB], declared elements", "Partial keyword [VB], unexpected results with type promotion", "scope [VB], declared elements", "scope [VB], Visual Basic", "type promotion", "declared elements [VB], visibility"]
+helpviewer_keywords: ["declared elements [Visual Basic], scope", "visibility [Visual Basic], declared elements", "Partial keyword [Visual Basic], unexpected results with type promotion", "scope [Visual Basic], declared elements", "scope [Visual Basic], Visual Basic", "type promotion", "declared elements [Visual Basic], visibility"]
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
 caps.latest.revision: 17
 author: dotnet-bot

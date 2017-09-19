@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["sorting query results, multiple columns", "sorting data [VB]", "sorting data [LINQ in Visual Basic]", "sorting query results [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], sorting results", "querying databases [LINQ]", "queries [LINQ in Visual Basic], how-to topics", "query samples [VB]"]
+helpviewer_keywords: ["sorting query results, multiple columns", "sorting data [Visual Basic]", "sorting data [LINQ in Visual Basic]", "sorting query results [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], sorting results", "querying databases [LINQ]", "queries [LINQ in Visual Basic], how-to topics", "query samples [Visual Basic]"]
 ms.assetid: 07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e
 caps.latest.revision: 5
 author: dotnet-bot

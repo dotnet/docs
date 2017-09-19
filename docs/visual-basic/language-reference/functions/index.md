@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic, functions", "functions [VB]"]
+helpviewer_keywords: ["Visual Basic, functions", "functions [Visual Basic]"]
 ms.assetid: d86fc51f-f46e-4941-8ae2-6262da3d2688
 caps.latest.revision: 14
 author: dotnet-bot

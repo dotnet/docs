@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.#EndIf", "#End If", "#Then", "#ElseIf", "vb.#ElseIf", "vb.#Else", "vb.#If"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic code, compiling", "#If directive [VB]", "conditional compilation [VB], directives", "#End if directive [VB]", "selective compiling", "else directive (#else)", "#Else directive [VB]"]
+helpviewer_keywords: ["Visual Basic code, compiling", "#If directive [Visual Basic]", "conditional compilation [Visual Basic], directives", "#End if directive [Visual Basic]", "selective compiling", "else directive (#else)", "#Else directive [Visual Basic]"]
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
 caps.latest.revision: 14
 author: dotnet-bot

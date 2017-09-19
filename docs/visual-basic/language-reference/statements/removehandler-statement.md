@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.RemoveHandlerMethod", "vb.RemoveHandler", "RemoveHandler"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["RemoveHandler keyword [VB]", "RemoveHandler statement [VB]"]
+helpviewer_keywords: ["RemoveHandler keyword [Visual Basic]", "RemoveHandler statement [Visual Basic]"]
 ms.assetid: 647cd825-e877-4910-b4f1-8d168beebe6a
 caps.latest.revision: 14
 author: dotnet-bot

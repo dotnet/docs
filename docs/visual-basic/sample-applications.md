@@ -5,7 +5,7 @@ ms.prod: .net
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic, samples", "sample applications [VB]"]
+helpviewer_keywords: ["Visual Basic, samples", "sample applications [Visual Basic]"]
 ms.assetid: 09c6bc12-25fd-4359-a5fc-8dab8dddbfd2
 caps.latest.revision: 40
 author: dotnet-bot

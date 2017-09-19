@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlLiteralComment"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["comment literal [VB]", "XML comments, adding [VB]", "XML comment literal [VB]", "XML literals [VB], comment"]
+helpviewer_keywords: ["comment literal [Visual Basic]", "XML comments, adding [Visual Basic]", "XML comment literal [Visual Basic]", "XML literals [Visual Basic], comment"]
 ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
 caps.latest.revision: 19
 author: dotnet-bot

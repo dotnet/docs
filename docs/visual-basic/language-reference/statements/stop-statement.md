@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Stop"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["breakpoints, Stop statements", "Stop statements [VB], syntax", "Stop statements [VB]", "execution [VB], suspending", "processing, interrupting", "processes, interrupting", "execution [VB], stopping"]
+helpviewer_keywords: ["breakpoints, Stop statements", "Stop statements [Visual Basic], syntax", "Stop statements [Visual Basic]", "execution [Visual Basic], suspending", "processing, interrupting", "processes, interrupting", "execution [Visual Basic], stopping"]
 ms.assetid: c9a9fde0-d649-4662-9bef-bd0146ebc2a7
 caps.latest.revision: 9
 author: dotnet-bot

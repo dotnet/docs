@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["I/O [VB], appending to files", "I/O [VB], My.Computer.FileSystem.WriteAllText method", "I/O [VB], WriteAllText method"]
+helpviewer_keywords: ["I/O [Visual Basic], appending to files", "I/O [Visual Basic], My.Computer.FileSystem.WriteAllText method", "I/O [Visual Basic], WriteAllText method"]
 ms.assetid: bbbd7fb5-f169-41a9-b53f-520ea9613913
 caps.latest.revision: 13
 author: dotnet-bot

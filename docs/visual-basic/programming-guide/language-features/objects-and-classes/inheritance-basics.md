@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["derived classes [VB], inheritance", "MyClass keyword [VB], using", "MyBase keyword [VB], using", "Inherits statement [VB], inheritance", "overriding, Overridable keyword", "MustInherit keyword [VB], using", "Overrides keyword [VB], using", "inheritance", "MustInherit classes [VB]", "MustOverride keyword [VB], using", "classes [VB], derived", "NotInheritable keyword [VB], using", "base classes [VB], extending properties and methods [VB]", "NotOverridable keyword [VB], using", "base classes [VB], inheritance", "abstract classes [VB], inheritance", "overriding, Overrides keyword"]
+helpviewer_keywords: ["derived classes [Visual Basic], inheritance", "MyClass keyword [Visual Basic], using", "MyBase keyword [Visual Basic], using", "Inherits statement [Visual Basic], inheritance", "overriding, Overridable keyword", "MustInherit keyword [Visual Basic], using", "Overrides keyword [Visual Basic], using", "inheritance", "MustInherit classes [Visual Basic]", "MustOverride keyword [Visual Basic], using", "classes [Visual Basic], derived", "NotInheritable keyword [Visual Basic], using", "base classes [Visual Basic], extending properties and methods [Visual Basic]", "NotOverridable keyword [Visual Basic], using", "base classes [Visual Basic], inheritance", "abstract classes [Visual Basic], inheritance", "overriding, Overrides keyword"]
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
 caps.latest.revision: 23
 author: dotnet-bot

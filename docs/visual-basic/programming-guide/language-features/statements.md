@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["variables [VB], declaring", "colons (:) [VB]", "constants [VB], defining", "underlines", "constants [VB], statements", "blue underline [VB]", "procedures [VB], statements", "variables [VB], assigning", "line breaks [VB], in code", "executable statements [VB]", "variables [VB], defining", "statements [VB], about statements"]
+helpviewer_keywords: ["variables [Visual Basic], declaring", "colons (:) [Visual Basic]", "constants [Visual Basic], defining", "underlines", "constants [Visual Basic], statements", "blue underline [Visual Basic]", "procedures [Visual Basic], statements", "variables [Visual Basic], assigning", "line breaks [Visual Basic], in code", "executable statements [Visual Basic]", "variables [Visual Basic], defining", "statements [Visual Basic], about statements"]
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
 caps.latest.revision: 30
 author: dotnet-bot

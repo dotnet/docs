@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-helpviewer_keywords: ["lambda expressions [VB], sub expression", "Sub Expression [VB]", "subroutines [VB], sub expressions"]
+helpviewer_keywords: ["lambda expressions [Visual Basic], sub expression", "Sub Expression [Visual Basic]", "subroutines [Visual Basic], sub expressions"]
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
 caps.latest.revision: 6
 author: dotnet-bot

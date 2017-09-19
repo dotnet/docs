@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlLiteralProcessingInstruction"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML literals [VB], processing instruction", "XML processing instruction literal [VB]", "processing instruction literal [VB]"]
+helpviewer_keywords: ["XML literals [Visual Basic], processing instruction", "XML processing instruction literal [Visual Basic]", "processing instruction literal [Visual Basic]"]
 ms.assetid: cef4f7f8-0011-4f64-8602-795077ad4f15
 caps.latest.revision: 19
 author: dotnet-bot

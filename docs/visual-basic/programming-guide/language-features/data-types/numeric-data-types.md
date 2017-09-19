@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["integral types [VB], Visual Basic", "Short data type [VB], numeric data types", "Double data type [VB], numeric data types", "Long data type [VB], Visual Basic numeric data types", "numbers [VB], whole", "fractions", "numbers", "whole numbers", "integer numbers", "numbers [VB], integer", "fractional data types [VB]", "mantissas, of fractional numbers", "mantissas", "data types [VB], numeric", "Integer data type [VB], numeric data types", "exponent, of fractional numbers", "integers [VB]", "numeric data types [VB], Visual Basic", "Single data type [VB], numeric types", "Decimal data type [VB], numeric data types"]
+helpviewer_keywords: ["integral types [Visual Basic], Visual Basic", "Short data type [Visual Basic], numeric data types", "Double data type [Visual Basic], numeric data types", "Long data type [Visual Basic], Visual Basic numeric data types", "numbers [Visual Basic], whole", "fractions", "numbers", "whole numbers", "integer numbers", "numbers [Visual Basic], integer", "fractional data types [Visual Basic]", "mantissas, of fractional numbers", "mantissas", "data types [Visual Basic], numeric", "Integer data type [Visual Basic], numeric data types", "exponent, of fractional numbers", "integers [Visual Basic]", "numeric data types [Visual Basic], Visual Basic", "Single data type [Visual Basic], numeric types", "Decimal data type [Visual Basic], numeric data types"]
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
 caps.latest.revision: 25
 author: dotnet-bot

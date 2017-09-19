@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["troubleshooting Visual Basic, procedures", "procedures [VB], troubleshooting", "Visual Basic code, procedures", "troubleshooting procedures", "procedures [VB], about procedures"]
+helpviewer_keywords: ["troubleshooting Visual Basic, procedures", "procedures [Visual Basic], troubleshooting", "Visual Basic code, procedures", "troubleshooting procedures", "procedures [Visual Basic], about procedures"]
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
 caps.latest.revision: 17
 author: dotnet-bot

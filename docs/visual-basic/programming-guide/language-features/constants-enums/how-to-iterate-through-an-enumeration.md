@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["arrays [VB], iterating", "enumerations [VB], iterating", "ListBox control [Windows Forms], populating from an enumeration"]
+helpviewer_keywords: ["arrays [Visual Basic], iterating", "enumerations [Visual Basic], iterating", "ListBox control [Windows Forms], populating from an enumeration"]
 ms.assetid: e5aa10eb-cfcd-4a3b-8e76-f06b8f2002be
 caps.latest.revision: 20
 author: dotnet-bot

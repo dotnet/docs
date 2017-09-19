@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["reference data types [VB]", "reference types [VB]", "value types [VB]", "value data types [VB]", "types [VB]", "data types [VB], value types", "data types [VB], reference types"]
+helpviewer_keywords: ["reference data types [Visual Basic]", "reference types [Visual Basic]", "value types [Visual Basic]", "value data types [Visual Basic]", "types [Visual Basic]", "data types [Visual Basic], value types", "data types [Visual Basic], reference types"]
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
 caps.latest.revision: 14
 author: dotnet-bot

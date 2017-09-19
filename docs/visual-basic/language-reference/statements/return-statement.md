@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Return"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Return statement [VB], syntax", "control flow [VB], returning control to expressions", "Return statement [VB]", "expressions [VB], returning control to"]
+helpviewer_keywords: ["Return statement [Visual Basic], syntax", "control flow [Visual Basic], returning control to expressions", "Return statement [Visual Basic]", "expressions [Visual Basic], returning control to"]
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
 caps.latest.revision: 15
 author: dotnet-bot

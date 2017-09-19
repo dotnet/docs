@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic code, procedures", "overload resolution", "procedures [VB], overloading", "procedures [VB], calling", "procedure overloading, overload resolution", "signatures, procedure", "overloads, resolution"]
+helpviewer_keywords: ["Visual Basic code, procedures", "overload resolution", "procedures [Visual Basic], overloading", "procedures [Visual Basic], calling", "procedure overloading, overload resolution", "signatures, procedure", "overloads, resolution"]
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 caps.latest.revision: 21
 author: dotnet-bot

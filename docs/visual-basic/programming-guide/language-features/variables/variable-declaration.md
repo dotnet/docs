@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["variables [VB], declaring", "member variables [VB], declarations", "Dim statement [VB], variable declaration", "declaring variables [VB]", "variables [VB], scope", "variables [VB], data types", "data types [VB], variable declarations", "lifetime [VB], variables", "variables [VB], lifetime", "access levels, variables", "scope [VB], declaration statements", "variables [VB], access level", "local variables [VB], declarations", "scope [VB], variables"]
+helpviewer_keywords: ["variables [Visual Basic], declaring", "member variables [Visual Basic], declarations", "Dim statement [Visual Basic], variable declaration", "declaring variables [Visual Basic]", "variables [Visual Basic], scope", "variables [Visual Basic], data types", "data types [Visual Basic], variable declarations", "lifetime [Visual Basic], variables", "variables [Visual Basic], lifetime", "access levels, variables", "scope [Visual Basic], declaration statements", "variables [Visual Basic], access level", "local variables [Visual Basic], declarations", "scope [Visual Basic], variables"]
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
 caps.latest.revision: 31
 author: dotnet-bot

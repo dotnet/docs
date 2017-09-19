@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["VB.StartPage.WhatsNew"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["new features, Visual Basic", "what's new [VB]", "Visual Basic, what's new"]
+helpviewer_keywords: ["new features, Visual Basic", "what's new [Visual Basic]", "Visual Basic, what's new"]
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
 caps.latest.revision: 145
 author: rpetrusha

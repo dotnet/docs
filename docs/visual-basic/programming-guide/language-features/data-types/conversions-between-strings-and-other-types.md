@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["data type conversion [VB], string", "conversions [VB], type", "string conversion [VB]", "conversions [VB], data type", "type conversion [VB], string", "regional options"]
+helpviewer_keywords: ["data type conversion [Visual Basic], string", "conversions [Visual Basic], type", "string conversion [Visual Basic]", "conversions [Visual Basic], data type", "type conversion [Visual Basic], string", "regional options"]
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
 caps.latest.revision: 16
 author: dotnet-bot

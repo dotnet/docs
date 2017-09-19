@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["declarations [VB], events", "events [VB], walkthroughs", "declaring events [VB], walkthroughs", "events [VB], declaring", "events [VB], raising", "raising events [VB], walkthroughs"]
+helpviewer_keywords: ["declarations [Visual Basic], events", "events [Visual Basic], walkthroughs", "declaring events [Visual Basic], walkthroughs", "events [Visual Basic], declaring", "events [Visual Basic], raising", "raising events [Visual Basic], walkthroughs"]
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
 caps.latest.revision: 16
 author: dotnet-bot

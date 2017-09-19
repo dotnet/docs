@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["control flow [VB]", "enumerable interfaces", "loop structures [VB], optimizing performance", "control flow [VB]"]
+helpviewer_keywords: ["control flow [Visual Basic]", "enumerable interfaces", "loop structures [Visual Basic], optimizing performance", "control flow [Visual Basic]"]
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
 caps.latest.revision: 15
 author: dotnet-bot

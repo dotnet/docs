@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Enum"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["enumerated constants [VB]", "Enum statement [VB]", "Private keyword [VB], Enum statements", "Public keyword [VB], in Enum statement", "variables [VB], enumeration", "constants [VB], enumerated"]
+helpviewer_keywords: ["enumerated constants [Visual Basic]", "Enum statement [Visual Basic]", "Private keyword [Visual Basic], Enum statements", "Public keyword [Visual Basic], in Enum statement", "variables [Visual Basic], enumeration", "constants [Visual Basic], enumerated"]
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
 caps.latest.revision: 44
 author: dotnet-bot

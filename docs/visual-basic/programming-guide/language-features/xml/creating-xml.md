@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML [VB], creating", "LINQ to XML [VB], creating XML", "XML literals [VB], creating"]
+helpviewer_keywords: ["XML [Visual Basic], creating", "LINQ to XML [Visual Basic], creating XML", "XML literals [Visual Basic], creating"]
 ms.assetid: 8ae29ec5-e5fb-4137-9df5-60a288df7045
 caps.latest.revision: 24
 author: dotnet-bot

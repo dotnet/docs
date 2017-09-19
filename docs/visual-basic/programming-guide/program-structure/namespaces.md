@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.global"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["assemblies [VB], namespaces", "name collisions", "Global keyword [VB]", "namespace pollution", "names [VB], avoiding conflicts", "naming conflicts, namespaces", "namespaces [VB], assemblies", "Visual Basic code, namespaces", "fully qualified names [VB]", "naming conventions [VB], naming conflicts", "namespaces"]
+helpviewer_keywords: ["assemblies [Visual Basic], namespaces", "name collisions", "Global keyword [Visual Basic]", "namespace pollution", "names [Visual Basic], avoiding conflicts", "naming conflicts, namespaces", "namespaces [Visual Basic], assemblies", "Visual Basic code, namespaces", "fully qualified names [Visual Basic]", "naming conventions [Visual Basic], naming conflicts", "namespaces"]
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
 caps.latest.revision: 27
 author: dotnet-bot

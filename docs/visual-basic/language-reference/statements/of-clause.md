@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["Of", "vb.Of", "vb.of"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Of keyword [VB]", "arguments [VB], data types", "constraints, Visual Basic generic types", "generic parameters", "generics [VB], constraints", "parameters [VB], type", "types [VB], generic", "parameters [VB], generic", "type parameters", "data type arguments"]
+helpviewer_keywords: ["Of keyword [Visual Basic]", "arguments [Visual Basic], data types", "constraints, Visual Basic generic types", "generic parameters", "generics [Visual Basic], constraints", "parameters [Visual Basic], type", "types [Visual Basic], generic", "parameters [Visual Basic], generic", "type parameters", "data type arguments"]
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
 caps.latest.revision: 17
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Event", "vb.Custom"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Event statement [VB]", "declaring events [VB], syntax", "Public keyword [VB], Event statements", "Custom keyword [VB]", "declarations [VB], events", "event keyword [VB]", "WithEvents keyword [VB], Event statements", "events [VB], declaring", "ByVal keyword [VB], Event statements", "events [VB], custom", "ByRef keyword [VB], Event statements", "declaring user-defined events"]
+helpviewer_keywords: ["Event statement [Visual Basic]", "declaring events [Visual Basic], syntax", "Public keyword [Visual Basic], Event statements", "Custom keyword [Visual Basic]", "declarations [Visual Basic], events", "event keyword [Visual Basic]", "WithEvents keyword [Visual Basic], Event statements", "events [Visual Basic], declaring", "ByVal keyword [Visual Basic], Event statements", "events [Visual Basic], custom", "ByRef keyword [Visual Basic], Event statements", "declaring user-defined events"]
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
 caps.latest.revision: 33
 author: dotnet-bot

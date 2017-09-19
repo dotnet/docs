@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["nostdlib compiler option [VB]", "-nostdlib compiler option [VB]", "/nostdlib compiler option [VB]"]
+helpviewer_keywords: ["nostdlib compiler option [Visual Basic]", "-nostdlib compiler option [Visual Basic]", "/nostdlib compiler option [Visual Basic]"]
 ms.assetid: 140381b8-dc96-4ad5-ae11-792c9ed0be4d
 caps.latest.revision: 18
 author: dotnet-bot

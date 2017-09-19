@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["I/O [VB], walkthroughs", "text files [VB], writing to", "reading text files [VB]", "text, writing to files", "files [VB], searching", "StreamReader class, walkthroughs", "files [VB], accessing", "I/O [VB], writing text to files", "writing to files [VB], walkthroughs", "StreamWriter class, walkthroughs", "text files [VB], reading", "I/O [VB], reading text from files"]
+helpviewer_keywords: ["I/O [Visual Basic], walkthroughs", "text files [Visual Basic], writing to", "reading text files [Visual Basic]", "text, writing to files", "files [Visual Basic], searching", "StreamReader class, walkthroughs", "files [Visual Basic], accessing", "I/O [Visual Basic], writing text to files", "writing to files [Visual Basic], walkthroughs", "StreamWriter class, walkthroughs", "text files [Visual Basic], reading", "I/O [Visual Basic], reading text from files"]
 ms.assetid: 7d2109eb-f98a-4389-b43d-30f384aaa7d5
 caps.latest.revision: 18
 author: dotnet-bot

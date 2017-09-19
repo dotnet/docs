@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Using statement [VB], disposing of system resources", "Visual Basic code, control flow", "system resources, disposing of", "resources [VB], disposing of system", "system resources", "Using statement [VB], Using...End Using", "Using block"]
+helpviewer_keywords: ["Using statement [Visual Basic], disposing of system resources", "Visual Basic code, control flow", "system resources, disposing of", "resources [Visual Basic], disposing of system", "system resources", "Using statement [Visual Basic], Using...End Using", "Using block"]
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
 caps.latest.revision: 15
 author: dotnet-bot

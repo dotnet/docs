@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["modems [VB], dialing", "serial ports [VB], dialing", "My.Computer.Ports object"]
+helpviewer_keywords: ["modems [Visual Basic], dialing", "serial ports [Visual Basic], dialing", "My.Computer.Ports object"]
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
 caps.latest.revision: 19
 author: dotnet-bot

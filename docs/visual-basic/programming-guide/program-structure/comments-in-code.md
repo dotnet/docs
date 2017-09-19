@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Uncomment button", "REM statement [VB]", "comments, in code", "comments, Visual Basic code", "Comment button", "buttons, Uncomment", "buttons, Comment", "code comments, Visual Basic", "Visual Basic code, comments", "comments", "code comments"]
+helpviewer_keywords: ["Uncomment button", "REM statement [Visual Basic]", "comments, in code", "comments, Visual Basic code", "Comment button", "buttons, Uncomment", "buttons, Comment", "code comments, Visual Basic", "Visual Basic code, comments", "comments", "code comments"]
 ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
 caps.latest.revision: 17
 author: dotnet-bot

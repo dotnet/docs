@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["collection initializers [VB]"]
+helpviewer_keywords: ["collection initializers [Visual Basic]"]
 ms.assetid: c858db10-424d-47e0-92cd-e08087cc5ebc
 caps.latest.revision: 8
 author: dotnet-bot

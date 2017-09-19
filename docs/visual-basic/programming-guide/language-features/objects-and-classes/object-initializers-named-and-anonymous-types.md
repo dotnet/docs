@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.ObjectInitializer"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["object initializers [VB]", "anonymous types [VB], object initializers", "initializing properties [VB]", "initializers [VB]", "named types [VB]"]
+helpviewer_keywords: ["object initializers [Visual Basic]", "anonymous types [Visual Basic], object initializers", "initializing properties [Visual Basic]", "initializers [Visual Basic]", "named types [Visual Basic]"]
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
 caps.latest.revision: 27
 author: dotnet-bot

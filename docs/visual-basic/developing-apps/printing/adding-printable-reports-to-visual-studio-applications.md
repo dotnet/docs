@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["printing [Visual Studio], reports", "reports [VB], printing in Visual Studio"]
+helpviewer_keywords: ["printing [Visual Studio], reports", "reports [Visual Basic], printing in Visual Studio"]
 ms.assetid: 93928405-ef41-495e-bce2-9d43d5a7080a
 caps.latest.revision: 27
 author: dotnet-bot

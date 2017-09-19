@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["My.Application object [VB], Visual Basic application model", "Visual Basic application model"]
+helpviewer_keywords: ["My.Application object [Visual Basic], Visual Basic application model", "Visual Basic application model"]
 ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
 caps.latest.revision: 30
 author: dotnet-bot

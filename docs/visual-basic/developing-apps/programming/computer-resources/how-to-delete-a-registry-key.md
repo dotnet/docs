@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.DeleteSetting"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["GetSetting function [VB]", "registry [VB], deleting values", "GetAllSettings function", "registry keys [VB], deleting", "registry [VB], deleting keys", "examples [VB], registry"]
+helpviewer_keywords: ["GetSetting function [Visual Basic]", "registry [Visual Basic], deleting values", "GetAllSettings function", "registry keys [Visual Basic], deleting", "registry [Visual Basic], deleting keys", "examples [Visual Basic], registry"]
 ms.assetid: ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2
 caps.latest.revision: 28
 author: dotnet-bot

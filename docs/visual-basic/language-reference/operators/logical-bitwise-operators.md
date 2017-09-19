@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["operators [VB], logical", "logical operators [VB], Visual Basic"]
+helpviewer_keywords: ["operators [Visual Basic], logical", "logical operators [Visual Basic], Visual Basic"]
 ms.assetid: 55de4889-7679-4859-8063-bee15abca53f
 caps.latest.revision: 13
 author: dotnet-bot

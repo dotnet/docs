@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["declarations [VB], enumerations", "Imports statement [VB], namespace declarations", "declaring namespaces [VB], enumerations", "name collisions", "ambiguous names [VB], enumerations", "enumerations [VB], name qualification", "names [VB], avoiding conflicts", "namespaces [VB], declaring", "naming conflicts, enumerations", "naming conflicts, qualifying names", "declaring enumerations", "references [VB], enumeration members", "naming conventions [VB], naming conflicts", "declarations [VB], namespaces"]
+helpviewer_keywords: ["declarations [Visual Basic], enumerations", "Imports statement [Visual Basic], namespace declarations", "declaring namespaces [Visual Basic], enumerations", "name collisions", "ambiguous names [Visual Basic], enumerations", "enumerations [Visual Basic], name qualification", "names [Visual Basic], avoiding conflicts", "namespaces [Visual Basic], declaring", "naming conflicts, enumerations", "naming conflicts, qualifying names", "declaring enumerations", "references [Visual Basic], enumeration members", "naming conventions [Visual Basic], naming conflicts", "declarations [Visual Basic], namespaces"]
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
 caps.latest.revision: 20
 author: dotnet-bot

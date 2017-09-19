@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["testing, objects", "objects [VB], comparing", "object variables [VB], determining identity"]
+helpviewer_keywords: ["testing, objects", "objects [Visual Basic], comparing", "object variables [Visual Basic], determining identity"]
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
 caps.latest.revision: 19
 author: dotnet-bot

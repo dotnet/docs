@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["operators [VB], concatenation", "concatenation operators [VB], Visual Basic strings"]
+helpviewer_keywords: ["operators [Visual Basic], concatenation", "concatenation operators [Visual Basic], Visual Basic strings"]
 ms.assetid: d787368b-3713-47ff-bce8-f112720a673a
 caps.latest.revision: 10
 author: dotnet-bot

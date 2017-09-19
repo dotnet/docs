@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Step", "vb.Next", "vb.To", "vb.for"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["infinite loops", "Next keyword [VB], For...Next statements", "For keyword [VB], For...Next statements", "Step keyword [VB], For...Next statements", "operator overloading, For...Next statement", "To keyword [VB], For...Next statements", "endless loops", "loops, endless", "instructions, repeating", "Next statement [VB], For...Next", "For...Next statements", "loop structures [VB], For...Next", "loops, infinite", "Exit statement [VB], For...Next statements", "For statement [VB]"]
+helpviewer_keywords: ["infinite loops", "Next keyword [Visual Basic], For...Next statements", "For keyword [Visual Basic], For...Next statements", "Step keyword [Visual Basic], For...Next statements", "operator overloading, For...Next statement", "To keyword [Visual Basic], For...Next statements", "endless loops", "loops, endless", "instructions, repeating", "Next statement [Visual Basic], For...Next", "For...Next statements", "loop structures [Visual Basic], For...Next", "loops, infinite", "Exit statement [Visual Basic], For...Next statements", "For statement [Visual Basic]"]
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
 caps.latest.revision: 64
 author: dotnet-bot

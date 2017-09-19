@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["sections compiler option [VB]", "alignment compiler option [VB]", "-filealign compiler option [VB]", "section alignment", "/filealign compiler option [VB]", "filealign compiler option [VB]"]
+helpviewer_keywords: ["sections compiler option [Visual Basic]", "alignment compiler option [Visual Basic]", "-filealign compiler option [Visual Basic]", "section alignment", "/filealign compiler option [Visual Basic]", "filealign compiler option [Visual Basic]"]
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
 caps.latest.revision: 14
 author: dotnet-bot

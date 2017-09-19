@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["parameters [VB], optional", "Visual Basic code, procedures", "procedures [VB], optional arguments", "optional arguments", "named arguments [VB], and optional arguments", "optional parameters", "Optional keyword [VB], optional arguments", "arguments [VB], optional", "optional arguments [VB], and named arguments"]
+helpviewer_keywords: ["parameters [Visual Basic], optional", "Visual Basic code, procedures", "procedures [Visual Basic], optional arguments", "optional arguments", "named arguments [Visual Basic], and optional arguments", "optional parameters", "Optional keyword [Visual Basic], optional arguments", "arguments [Visual Basic], optional", "optional arguments [Visual Basic], and named arguments"]
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
 caps.latest.revision: 18
 author: dotnet-bot

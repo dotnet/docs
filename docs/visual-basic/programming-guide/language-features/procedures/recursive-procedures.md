@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic code, procedures", "procedures [VB], that call themselves", "procedures [VB], recursive", "procedures [VB], calling", "recursive procedures", "functions [VB], calling recursively", "recursion"]
+helpviewer_keywords: ["Visual Basic code, procedures", "procedures [Visual Basic], that call themselves", "procedures [Visual Basic], recursive", "procedures [Visual Basic], calling", "recursive procedures", "functions [Visual Basic], calling recursively", "recursion"]
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
 caps.latest.revision: 13
 author: dotnet-bot

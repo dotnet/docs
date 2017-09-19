@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["warnaserror compiler option [VB]", "/warnaserror compiler option [VB]", "-warnaserror compiler option [VB]"]
+helpviewer_keywords: ["warnaserror compiler option [Visual Basic]", "/warnaserror compiler option [Visual Basic]", "-warnaserror compiler option [Visual Basic]"]
 ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
 caps.latest.revision: 18
 author: dotnet-bot

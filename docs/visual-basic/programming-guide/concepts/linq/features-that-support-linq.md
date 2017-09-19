@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic, LINQ features", "LINQ [VB], features supporting LINQ"]
+helpviewer_keywords: ["Visual Basic, LINQ features", "LINQ [Visual Basic], features supporting LINQ"]
 ms.assetid: c821bb50-b6f6-4cf9-8aba-2717e465bd3a
 caps.latest.revision: 51
 author: dotnet-bot

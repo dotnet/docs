@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["/rootnamespace", "rootnamespace"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["/rootnamespace compiler option [VB]", "-rootnamespace compiler option [VB]", "rootnamespace compiler option [VB]"]
+helpviewer_keywords: ["/rootnamespace compiler option [Visual Basic]", "-rootnamespace compiler option [Visual Basic]", "rootnamespace compiler option [Visual Basic]"]
 ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
 caps.latest.revision: 13
 author: dotnet-bot

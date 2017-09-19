@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML [VB], loading", "LINQ to XML [VB], loading XML from files"]
+helpviewer_keywords: ["XML [Visual Basic], loading", "LINQ to XML [Visual Basic], loading XML from files"]
 ms.assetid: 2b02dcec-4cca-4575-b4ad-89ceb87b984c
 caps.latest.revision: 13
 author: dotnet-bot

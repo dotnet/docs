@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["inheritance [VB], shadowing", "overriding, and shadowing", "shadowing", "duplicate names [VB]", "shadowing, by inheritance", "declared elements [VB], referencing", "shadowing, by scope", "declared elements [VB], hiding", "naming conflicts, shadowing", "declared elements [VB], shadowing", "shadowing, and overriding", "scope [VB], shadowing", "Shadows keyword [VB], about", "objects [VB], names", "names [VB], shadowing"]
+helpviewer_keywords: ["inheritance [Visual Basic], shadowing", "overriding, and shadowing", "shadowing", "duplicate names [Visual Basic]", "shadowing, by inheritance", "declared elements [Visual Basic], referencing", "shadowing, by scope", "declared elements [Visual Basic], hiding", "naming conflicts, shadowing", "declared elements [Visual Basic], shadowing", "shadowing, and overriding", "scope [Visual Basic], shadowing", "Shadows keyword [Visual Basic], about", "objects [Visual Basic], names", "names [Visual Basic], shadowing"]
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
 caps.latest.revision: 24
 author: dotnet-bot

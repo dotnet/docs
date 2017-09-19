@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.CType"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["expression conversion results", "explicit data type conversions [VB]", "CType function", "conversions [VB], expression"]
+helpviewer_keywords: ["expression conversion results", "explicit data type conversions [Visual Basic]", "CType function", "conversions [Visual Basic], expression"]
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
 caps.latest.revision: 22
 author: dotnet-bot

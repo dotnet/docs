@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["variables [VB], initializing", "arrays [VB], variables", "arrays [VB], initializing", "arrays [VB], declaring"]
+helpviewer_keywords: ["variables [Visual Basic], initializing", "arrays [Visual Basic], variables", "arrays [Visual Basic], initializing", "arrays [Visual Basic], declaring"]
 ms.assetid: aadd7a60-7ca4-4608-b986-091f19e7fc10
 caps.latest.revision: 42
 author: dotnet-bot

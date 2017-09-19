@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["My.Settings object [VB], persisting user settings", "persistence [VB], persisting user settings [VB]", "user settings [VB], persisting"]
+helpviewer_keywords: ["My.Settings object [Visual Basic], persisting user settings", "persistence [Visual Basic], persisting user settings [Visual Basic]", "user settings [Visual Basic], persisting"]
 ms.assetid: 0e5e6415-b6e2-4602-9be0-a65fa167d007
 caps.latest.revision: 15
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.PropertySet", "vb.Property", "vb.PropertyGet"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Property statement [VB]", "default modifier", "property procedures [VB], Property statements", "Property keyword [VB]"]
+helpviewer_keywords: ["Property statement [Visual Basic]", "default modifier", "property procedures [Visual Basic], Property statements", "Property keyword [Visual Basic]"]
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
 caps.latest.revision: 41
 author: dotnet-bot

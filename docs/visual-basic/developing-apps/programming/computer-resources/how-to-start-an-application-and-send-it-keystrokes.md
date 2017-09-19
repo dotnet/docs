@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["keystrokes, sending", "Shell command example [VB]", "processes, starting and sending keystrokes", "SendKeys.SendWait examples"]
+helpviewer_keywords: ["keystrokes, sending", "Shell command example [Visual Basic]", "processes, starting and sending keystrokes", "SendKeys.SendWait examples"]
 ms.assetid: f1303184-fce4-44fb-88b4-aac5f42d5d77
 caps.latest.revision: 15
 author: dotnet-bot

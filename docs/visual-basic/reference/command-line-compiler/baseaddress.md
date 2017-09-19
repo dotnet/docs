@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["/baseaddress", "baseaddress"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["-baseaddress compiler option [VB]", "/baseaddress compiler option [VB]", "baseaddress compiler option [VB]"]
+helpviewer_keywords: ["-baseaddress compiler option [Visual Basic]", "/baseaddress compiler option [Visual Basic]", "baseaddress compiler option [Visual Basic]"]
 ms.assetid: c982bcf2-46e5-47a2-bc8f-a5cc32b7dc47
 caps.latest.revision: 16
 author: dotnet-bot

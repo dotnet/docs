@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.With"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["With keyword [VB]", "loop structures [VB], and With...End With statements", "execution [VB], on object", "instructions, repeating", "With...End With statements [VB]", "With statement [VB]", "With statement [VB], nesting", "objects [VB], accessing", "With block", "End keyword [VB], With...End With statements"]
+helpviewer_keywords: ["With keyword [Visual Basic]", "loop structures [Visual Basic], and With...End With statements", "execution [Visual Basic], on object", "instructions, repeating", "With...End With statements [Visual Basic]", "With statement [Visual Basic]", "With statement [Visual Basic], nesting", "objects [Visual Basic], accessing", "With block", "End keyword [Visual Basic], With...End With statements"]
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
 caps.latest.revision: 34
 author: dotnet-bot

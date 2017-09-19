@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.NotOverridable", "NotOverridable"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["sealed methods [VB]", "NotOverridable keyword [VB]", "properties [VB], redefining", "elements [VB], sealed", "sealed [elements VB]", "procedures [VB], overriding", "procedures [VB], redefining", "overriding", "methods [VB], sealed", "properties [VB], overriding"]
+helpviewer_keywords: ["sealed methods [Visual Basic]", "NotOverridable keyword [Visual Basic]", "properties [Visual Basic], redefining", "elements [Visual Basic], sealed", "sealed [elements VB]", "procedures [Visual Basic], overriding", "procedures [Visual Basic], redefining", "overriding", "methods [Visual Basic], sealed", "properties [Visual Basic], overriding"]
 ms.assetid: 66ec6984-f5f5-4857-b362-6a3907aaf9e0
 caps.latest.revision: 15
 author: dotnet-bot

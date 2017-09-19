@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-helpviewer_keywords: ["exceptions, types", "errors [VB], types", "errors [VB], logic", "errors [VB], syntax", "logic errors [VB], Visual Basic", "run-time errors [VB], types of errors", "syntax errors [VB], Visual Basic"]
+helpviewer_keywords: ["exceptions, types", "errors [Visual Basic], types", "errors [Visual Basic], logic", "errors [Visual Basic], syntax", "logic errors [Visual Basic], Visual Basic", "run-time errors [Visual Basic], types of errors", "syntax errors [Visual Basic], Visual Basic"]
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
 caps.latest.revision: 13
 author: dotnet-bot

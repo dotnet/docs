@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["files [VB]", "directories [VB], Visual Basic", "files [VB], summary"]
+helpviewer_keywords: ["files [Visual Basic]", "directories [Visual Basic], Visual Basic", "files [Visual Basic], summary"]
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
 caps.latest.revision: 15
 author: dotnet-bot

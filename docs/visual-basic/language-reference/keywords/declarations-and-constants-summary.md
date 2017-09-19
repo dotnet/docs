@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["constants [VB]", "declaring constants [VB], keywords", "declarations [VB], Visual Basic language elements"]
+helpviewer_keywords: ["constants [Visual Basic]", "declaring constants [Visual Basic], keywords", "declarations [Visual Basic], Visual Basic language elements"]
 ms.assetid: 79d64f3e-941d-4d39-bc5b-79f225d5be6e
 caps.latest.revision: 14
 author: dotnet-bot

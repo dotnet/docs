@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlPropertyExtensionIndexer"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic code, accessing XML", "XML extension indexer [VB]", "extension indexer [VB]", "XML [VB], accessing"]
+helpviewer_keywords: ["Visual Basic code, accessing XML", "XML extension indexer [Visual Basic]", "extension indexer [Visual Basic]", "XML [Visual Basic], accessing"]
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
 caps.latest.revision: 22
 author: dotnet-bot

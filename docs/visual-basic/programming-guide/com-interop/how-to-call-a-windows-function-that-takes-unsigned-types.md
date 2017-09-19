@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Windows functions [VB], calling", "unsigned data types [VB]", "UShort data type [VB], using", "functions [VB], calling Windows functions", "ULong data type [VB], using", "UInteger data type [VB], using", "data types [VB], using", "unsigned types [VB]", "data types [VB], unsigned", "data types [VB], numeric", "unsigned types [VB], using"]
+helpviewer_keywords: ["Windows functions [Visual Basic], calling", "unsigned data types [Visual Basic]", "UShort data type [Visual Basic], using", "functions [Visual Basic], calling Windows functions", "ULong data type [Visual Basic], using", "UInteger data type [Visual Basic], using", "data types [Visual Basic], using", "unsigned types [Visual Basic]", "data types [Visual Basic], unsigned", "data types [Visual Basic], numeric", "unsigned types [Visual Basic], using"]
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
 caps.latest.revision: 18
 author: dotnet-bot

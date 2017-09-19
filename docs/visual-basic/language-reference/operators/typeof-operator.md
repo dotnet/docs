@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["TypeOf", "vb.TypeOf"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["types [VB], compatible", "comparison operators [VB]", "TypeOf...Is expression", "data types [VB], compatible", "TypeOf operator [VB]", "compatible data types [VB]"]
+helpviewer_keywords: ["types [Visual Basic], compatible", "comparison operators [Visual Basic]", "TypeOf...Is expression", "data types [Visual Basic], compatible", "TypeOf operator [Visual Basic]", "compatible data types [Visual Basic]"]
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
 caps.latest.revision: 11
 author: dotnet-bot

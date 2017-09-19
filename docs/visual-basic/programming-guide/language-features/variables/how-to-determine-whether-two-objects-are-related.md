@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["inheritance [VB], Visual Basic objects", "objects [VB], inheritance", "object variables [VB], determining relation"]
+helpviewer_keywords: ["inheritance [Visual Basic], Visual Basic objects", "objects [Visual Basic], inheritance", "object variables [Visual Basic], determining relation"]
 ms.assetid: da002e3f-6616-4bad-a229-f842d06652bb
 caps.latest.revision: 7
 author: dotnet-bot

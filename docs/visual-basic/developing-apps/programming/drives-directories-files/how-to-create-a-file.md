@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["text files [VB], creating", "files [VB], creating"]
+helpviewer_keywords: ["text files [Visual Basic], creating", "files [Visual Basic], creating"]
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
 caps.latest.revision: 15
 author: dotnet-bot

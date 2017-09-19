@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.+"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["arithmetic operators [VB], addition", "+ operator", "concatenation operators [VB], syntax", "strings [VB], concatenating", "sum operator [VB]"]
+helpviewer_keywords: ["arithmetic operators [Visual Basic], addition", "+ operator", "concatenation operators [Visual Basic], syntax", "strings [Visual Basic], concatenating", "sum operator [Visual Basic]"]
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
 caps.latest.revision: 26
 author: dotnet-bot

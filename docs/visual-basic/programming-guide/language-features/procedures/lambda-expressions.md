@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.LambdaFunction"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["functions [VB], lambda expressions", "lambda expressions [VB]", "expressions [VB], lambda", "inline functions [VB]"]
+helpviewer_keywords: ["functions [Visual Basic], lambda expressions", "lambda expressions [Visual Basic]", "expressions [Visual Basic], lambda", "inline functions [Visual Basic]"]
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
 caps.latest.revision: 52
 author: dotnet-bot

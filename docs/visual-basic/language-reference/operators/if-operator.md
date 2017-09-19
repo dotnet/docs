@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.IfOperator", "IfOperator"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["ternary operators [VB]", "conditional execution", "If expressions [VB]", "conditional operator [VB]", "If Operator [VB]"]
+helpviewer_keywords: ["ternary operators [Visual Basic]", "conditional execution", "If expressions [Visual Basic]", "conditional operator [Visual Basic]", "If Operator [Visual Basic]"]
 ms.assetid: dd56c9df-7cd4-442c-9ba6-20c70ee44c8f
 caps.latest.revision: 19
 author: dotnet-bot

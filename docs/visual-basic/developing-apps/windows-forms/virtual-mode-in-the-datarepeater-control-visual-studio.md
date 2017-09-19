@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["virtual data binding [VB]", "DataRepeater", "DataRepeater, virtual mode"]
+helpviewer_keywords: ["virtual data binding [Visual Basic]", "DataRepeater", "DataRepeater, virtual mode"]
 ms.assetid: 5fb805dc-2d8b-4139-b1e3-86e4c2667221
 caps.latest.revision: 13
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["arithmetic operators [VB], precedence", "operator precedence", "logical operators [VB], precedence", "operators [VB], associativity", "operators [VB], resolution", "associativity of operators [VB]", "operators [VB], precedence", "precedence [VB], of operators", "comparison operators [VB], precedence", "math operators [VB]", "order of precedence"]
+helpviewer_keywords: ["arithmetic operators [Visual Basic], precedence", "operator precedence", "logical operators [Visual Basic], precedence", "operators [Visual Basic], associativity", "operators [Visual Basic], resolution", "associativity of operators [Visual Basic]", "operators [Visual Basic], precedence", "precedence [Visual Basic], of operators", "comparison operators [Visual Basic], precedence", "math operators [Visual Basic]", "order of precedence"]
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
 caps.latest.revision: 18
 author: dotnet-bot

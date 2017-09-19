@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["API calls [VB]", "Windows API, calling", "API calls [VB], platform invoke", "calls [VB], stored procedures"]
+helpviewer_keywords: ["API calls [Visual Basic]", "Windows API, calling", "API calls [Visual Basic], platform invoke", "calls [Visual Basic], stored procedures"]
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 caps.latest.revision: 14
 author: dotnet-bot

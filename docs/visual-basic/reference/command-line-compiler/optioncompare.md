@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["/optioncompare"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["optioncompare compiler option [VB]", "-optioncompare compiler option [VB]", "/optioncompare compiler option [VB]"]
+helpviewer_keywords: ["optioncompare compiler option [Visual Basic]", "-optioncompare compiler option [Visual Basic]", "/optioncompare compiler option [Visual Basic]"]
 ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
 caps.latest.revision: 17
 author: dotnet-bot

@@ -6,7 +6,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["title bar [VB], printing", "printing", "borders [VB], printing", "entire form", "non-client area [VB], printing"]
+helpviewer_keywords: ["title bar [Visual Basic], printing", "printing", "borders [Visual Basic], printing", "entire form", "non-client area [Visual Basic], printing"]
 ms.assetid: 856bb0e4-dbc3-47e2-81cd-4b376cf07757
 caps.latest.revision: 17
 author: dotnet-bot

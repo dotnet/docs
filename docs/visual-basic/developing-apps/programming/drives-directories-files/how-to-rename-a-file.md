@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["I/O [VB], renaming files", "files [VB], renaming"]
+helpviewer_keywords: ["I/O [Visual Basic], renaming files", "files [Visual Basic], renaming"]
 ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
 caps.latest.revision: 21
 author: dotnet-bot

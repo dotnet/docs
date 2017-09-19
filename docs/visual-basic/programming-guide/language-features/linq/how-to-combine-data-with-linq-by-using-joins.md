@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["queries [LINQ in Visual Basic], joins", "joins [LINQ in Visual Basic]", "Join clause [LINQ in Visual Basic]", "Group Join clause [VB]", "joining [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], how-to topics"]
+helpviewer_keywords: ["queries [LINQ in Visual Basic], joins", "joins [LINQ in Visual Basic]", "Join clause [LINQ in Visual Basic]", "Group Join clause [Visual Basic]", "joining [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], how-to topics"]
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
 caps.latest.revision: 13
 author: dotnet-bot

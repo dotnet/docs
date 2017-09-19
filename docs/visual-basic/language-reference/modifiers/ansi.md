@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Ansi"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Declare statement [VB], marshaling strings", "ANSI, Visual Basic", "ANSI"]
+helpviewer_keywords: ["Declare statement [Visual Basic], marshaling strings", "ANSI, Visual Basic", "ANSI"]
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
 caps.latest.revision: 13
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["short-circuiting", "Boolean expressions", "logical operators [VB], Boolean expressions", "operators [VB], logical", "AndAlso operator [VB]", "Not operator [VB], Boolean expressions", "Xor operator [VB], Boolean expressions", "And operator [VB], logical operators", "logical operators [VB]", "expressions [VB], Boolean", "Or operator [VB], logical operators", "Visual Basic code, operators", "short-circuiting, logical operators", "logical operators [VB], short-circuiting", "Visual Basic code, expressions", "logical operators [VB], binary", "OrElse operator [VB]", "logical operators [VB], unary"]
+helpviewer_keywords: ["short-circuiting", "Boolean expressions", "logical operators [Visual Basic], Boolean expressions", "operators [Visual Basic], logical", "AndAlso operator [Visual Basic]", "Not operator [Visual Basic], Boolean expressions", "Xor operator [Visual Basic], Boolean expressions", "And operator [Visual Basic], logical operators", "logical operators [Visual Basic]", "expressions [Visual Basic], Boolean", "Or operator [Visual Basic], logical operators", "Visual Basic code, operators", "short-circuiting, logical operators", "logical operators [Visual Basic], short-circuiting", "Visual Basic code, expressions", "logical operators [Visual Basic], binary", "OrElse operator [Visual Basic]", "logical operators [Visual Basic], unary"]
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
 caps.latest.revision: 22
 author: dotnet-bot

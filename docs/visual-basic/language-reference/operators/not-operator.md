@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Not"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Boolean expressions, negating", "operators [VB], bitwise", "negation operator [VB]", "inverse bit values in variables [VB]", "bitwise operators [VB], NOT operator", "bitwise comparison [VB]", "Not operator [VB]", "logical negation", "operators [VB], negation"]
+helpviewer_keywords: ["Boolean expressions, negating", "operators [Visual Basic], bitwise", "negation operator [Visual Basic]", "inverse bit values in variables [Visual Basic]", "bitwise operators [Visual Basic], NOT operator", "bitwise comparison [Visual Basic]", "Not operator [Visual Basic]", "logical negation", "operators [Visual Basic], negation"]
 ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
 caps.latest.revision: 11
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Optional", "vb.optional"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Optional keyword [VB], contexts", "Optional keyword [VB]"]
+helpviewer_keywords: ["Optional keyword [Visual Basic], contexts", "Optional keyword [Visual Basic]"]
 ms.assetid: 4571ce88-a539-4115-b230-54eb277c6aa7
 caps.latest.revision: 14
 author: dotnet-bot

@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Single"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Single data type", "F literal type character [VB]", "trailing zeros", "real numbers", "literal type characters [VB], F", "trailing 0 characters [VB]", "identifier type characters [VB], !", "single-precision numbers", "! identifier type character", "0 characters [VB], trailing", "data types [VB], assigning", "floating-point numbers [VB], Single data type", "numbers [VB], real", "zeros, trailing", "numbers [VB], floating point"]
+helpviewer_keywords: ["Single data type", "F literal type character [Visual Basic]", "trailing zeros", "real numbers", "literal type characters [Visual Basic], F", "trailing 0 characters [Visual Basic]", "identifier type characters [Visual Basic], !", "single-precision numbers", "! identifier type character", "0 characters [Visual Basic], trailing", "data types [Visual Basic], assigning", "floating-point numbers [Visual Basic], Single data type", "numbers [Visual Basic], real", "zeros, trailing", "numbers [Visual Basic], floating point"]
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
 caps.latest.revision: 15
 author: dotnet-bot

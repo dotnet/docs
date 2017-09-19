@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vbruntime", "/vbruntime"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["vbruntime compiler option [VB]", "-vbruntime compiler option [VB]", "/vbruntime compiler option [VB]"]
+helpviewer_keywords: ["vbruntime compiler option [Visual Basic]", "-vbruntime compiler option [Visual Basic]", "/vbruntime compiler option [Visual Basic]"]
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
 caps.latest.revision: 17
 author: dotnet-bot

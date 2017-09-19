@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["average operator [LINQ in Visual Basic]", "aggregate operator [LINQ in Visual Basic]", "aggregate queries", "queries [LINQ in Visual Basic], sum results", "Aggregate clause [VB]", "sum operator [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], aggregate queries", "queries [LINQ in Visual Basic], counting results", "querying databases [LINQ]", "queries [LINQ in Visual Basic], how-to topics", "query samples [VB]", "count operator [LINQ in Visual Basic]"]
+helpviewer_keywords: ["average operator [LINQ in Visual Basic]", "aggregate operator [LINQ in Visual Basic]", "aggregate queries", "queries [LINQ in Visual Basic], sum results", "Aggregate clause [Visual Basic]", "sum operator [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], aggregate queries", "queries [LINQ in Visual Basic], counting results", "querying databases [LINQ]", "queries [LINQ in Visual Basic], how-to topics", "query samples [Visual Basic]", "count operator [LINQ in Visual Basic]"]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
 caps.latest.revision: 9
 author: dotnet-bot

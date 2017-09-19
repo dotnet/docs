@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.XmlLiteralElement"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML element literal [VB]", "element literal [VB]", "XML literals [VB], element"]
+helpviewer_keywords: ["XML element literal [Visual Basic]", "element literal [Visual Basic]", "XML literals [Visual Basic], element"]
 ms.assetid: 95039642-7893-48b7-b23f-45a6c55d8f67
 caps.latest.revision: 32
 author: dotnet-bot

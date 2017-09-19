@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["procedure parameters [VB], defining data types for", "procedures [VB], parameters", "procedures [VB], defining", "Visual Basic code, procedures", "procedure parameters [VB], defining"]
+helpviewer_keywords: ["procedure parameters [Visual Basic], defining data types for", "procedures [Visual Basic], parameters", "procedures [Visual Basic], defining", "Visual Basic code, procedures", "procedure parameters [Visual Basic], defining"]
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
 caps.latest.revision: 15
 author: dotnet-bot

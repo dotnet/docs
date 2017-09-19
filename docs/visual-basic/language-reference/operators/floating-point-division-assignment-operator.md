@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb./="]
 dev_langs: ["VB"]
-helpviewer_keywords: ["assignment statements [VB], compound", "statements [VB], compound assignment", "/= operator [VB]", "operator /=", "compound assignment statements [VB]"]
+helpviewer_keywords: ["assignment statements [Visual Basic], compound", "statements [Visual Basic], compound assignment", "/= operator [Visual Basic]", "operator /=", "compound assignment statements [Visual Basic]"]
 ms.assetid: a1e22d0e-8380-4761-9da1-84fb51c34821
 caps.latest.revision: 23
 author: dotnet-bot

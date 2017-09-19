@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["procedures [VB], arguments", "procedures [VB], parameters", "parameters [VB], and arguments", "procedure arguments", "Visual Basic code, procedures", "arguments [VB], and parameters", "procedure parameters", "parameters [VB], definition"]
+helpviewer_keywords: ["procedures [Visual Basic], arguments", "procedures [Visual Basic], parameters", "parameters [Visual Basic], and arguments", "procedure arguments", "Visual Basic code, procedures", "arguments [Visual Basic], and parameters", "procedure parameters", "parameters [Visual Basic], definition"]
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
 caps.latest.revision: 18
 author: dotnet-bot

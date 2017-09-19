@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["registry keys [VB], determining if a value exists in", "My.Computer.Registry object, examples", "registry, determining if values exist", "registry keys [VB], reading from", "registry, reading"]
+helpviewer_keywords: ["registry keys [Visual Basic], determining if a value exists in", "My.Computer.Registry object, examples", "registry, determining if values exist", "registry keys [Visual Basic], reading from", "registry, reading"]
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
 caps.latest.revision: 31
 author: dotnet-bot

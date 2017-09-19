@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["command line [VB], compilers", "compilation [VB], command-line", "command-line compilers", "compiling source code, from command line", "Visual Basic compiler, sample command lines"]
+helpviewer_keywords: ["command line [Visual Basic], compilers", "compilation [Visual Basic], command-line", "command-line compilers", "compiling source code, from command line", "Visual Basic compiler, sample command lines"]
 ms.assetid: 5bfbb487-5f47-4267-969a-39dfb917beeb
 caps.latest.revision: 14
 author: dotnet-bot

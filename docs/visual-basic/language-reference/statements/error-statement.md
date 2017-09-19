@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.error"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Error statement [VB], syntax", "Error statement [VB]", "Error keyword [VB]", "run-time errors [VB], codes", "errors [VB], simulating"]
+helpviewer_keywords: ["Error statement [Visual Basic], syntax", "Error statement [Visual Basic]", "Error keyword [Visual Basic]", "run-time errors [Visual Basic], codes", "errors [Visual Basic], simulating"]
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
 caps.latest.revision: 10
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["conversions [VB], type", "variables [VB], changing data type", "casting", "conversions [VB], data type", "type conversion [VB], implicit conversions", "CType function [VB], conversions", "casting, data types", "data type conversion [VB], explicit", "type conversion [VB], explicit conversions", "data types [VB], casting", "conversions [VB], implicit", "explicit data type conversions [VB]", "conversions [VB]", "changing data types [VB]", "conversions [VB], explicit", "data type conversion [VB], implicit", "implicit data type conversions [VB]"]
+helpviewer_keywords: ["conversions [Visual Basic], type", "variables [Visual Basic], changing data type", "casting", "conversions [Visual Basic], data type", "type conversion [Visual Basic], implicit conversions", "CType function [Visual Basic], conversions", "casting, data types", "data type conversion [Visual Basic], explicit", "type conversion [Visual Basic], explicit conversions", "data types [Visual Basic], casting", "conversions [Visual Basic], implicit", "explicit data type conversions [Visual Basic]", "conversions [Visual Basic]", "changing data types [Visual Basic]", "conversions [Visual Basic], explicit", "data type conversion [Visual Basic], implicit", "implicit data type conversions [Visual Basic]"]
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
 caps.latest.revision: 25
 author: dotnet-bot

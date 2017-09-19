@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Long"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["identifier type characters [VB], &", "numbers [VB], whole", "whole numbers", "integral data types [VB]", "& identifier type character", "integer numbers", "literal type characters [VB], L", "numbers [VB], integer", "integers [VB], data types", "L literal type character [VB]", "integers [VB], types", "Long keyword [VB]", "data types [VB], integral", "data types [VB], assigning", "Long data type"]
+helpviewer_keywords: ["identifier type characters [Visual Basic], &", "numbers [Visual Basic], whole", "whole numbers", "integral data types [Visual Basic]", "& identifier type character", "integer numbers", "literal type characters [Visual Basic], L", "numbers [Visual Basic], integer", "integers [Visual Basic], data types", "L literal type character [Visual Basic]", "integers [Visual Basic], types", "Long keyword [Visual Basic]", "data types [Visual Basic], integral", "data types [Visual Basic], assigning", "Long data type"]
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
 author: "rpetrusha"
 ms.author: "ronpet"

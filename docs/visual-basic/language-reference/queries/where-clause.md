@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QueryWhere"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Where statement [VB]", "queries [VB], Where", "Where clause [VB]"]
+helpviewer_keywords: ["Where statement [Visual Basic]", "queries [Visual Basic], Where", "Where clause [Visual Basic]"]
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
 caps.latest.revision: 18
 author: dotnet-bot

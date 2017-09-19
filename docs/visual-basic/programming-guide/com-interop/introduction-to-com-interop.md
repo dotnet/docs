@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["interop assemblies", "COM interop [VB], about COM interop"]
+helpviewer_keywords: ["interop assemblies", "COM interop [Visual Basic], about COM interop"]
 ms.assetid: 8bd62e68-383d-407f-998b-29aa0ce0fd67
 caps.latest.revision: 12
 author: dotnet-bot

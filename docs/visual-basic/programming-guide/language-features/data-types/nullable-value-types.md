@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Nullable"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["nullable types [VB]", "? [VB]", "types [VB], nullable", "nullable types [VB]", "data types [VB], nullable"]
+helpviewer_keywords: ["nullable types [Visual Basic]", "? [Visual Basic]", "types [Visual Basic], nullable", "nullable types [Visual Basic]", "data types [Visual Basic], nullable"]
 ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
 caps.latest.revision: 23
 author: dotnet-bot

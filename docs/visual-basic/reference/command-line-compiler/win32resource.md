@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["/win32resource", "win32resource"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["/win32resource compiler option [VB]", "-win32resource compiler option [VB]", "win32resource compiler option [VB]"]
+helpviewer_keywords: ["/win32resource compiler option [Visual Basic]", "-win32resource compiler option [Visual Basic]", "win32resource compiler option [Visual Basic]"]
 ms.assetid: e226946d-19ce-4cc9-91f5-aed24f77aa2b
 caps.latest.revision: 13
 author: dotnet-bot

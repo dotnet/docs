@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Visual Basic code, enumerations", "enumerations [VB], about enumerations"]
+helpviewer_keywords: ["Visual Basic code, enumerations", "enumerations [Visual Basic], about enumerations"]
 ms.assetid: b42a38ee-5e77-4f99-a037-e3a127ead89c
 caps.latest.revision: 12
 author: dotnet-bot

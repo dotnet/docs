@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["arrays [VB], converting type", "type conversion [VB], arrays", "conversions [VB], type", "arrays [VB], data types", "conversions [VB], data type", "object arrays [VB], converting type", "data type conversion [VB], array conversions", "conversions [VB], array types", "object arrays"]
+helpviewer_keywords: ["arrays [Visual Basic], converting type", "type conversion [Visual Basic], arrays", "conversions [Visual Basic], type", "arrays [Visual Basic], data types", "conversions [Visual Basic], data type", "object arrays [Visual Basic], converting type", "data type conversion [Visual Basic], array conversions", "conversions [Visual Basic], array types", "object arrays"]
 ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
 caps.latest.revision: 14
 author: dotnet-bot

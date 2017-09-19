@@ -7,7 +7,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Date"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Date data type", "dates [VB], Visual Basic data types", "times [VB], Date data type", "Date literals [VB]", "data values [VB]", "times [VB], Visual Basic data types", "dates [VB], Date data type", "data types [VB], assigning", "literals [VB], Date", "# specifier for Date literals"]
+helpviewer_keywords: ["Date data type", "dates [Visual Basic], Visual Basic data types", "times [Visual Basic], Date data type", "Date literals [Visual Basic]", "data values [Visual Basic]", "times [Visual Basic], Visual Basic data types", "dates [Visual Basic], Date data type", "data types [Visual Basic], assigning", "literals [Visual Basic], Date", "# specifier for Date literals"]
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
 caps.latest.revision: 22
 author: dotnet-bot

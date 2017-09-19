@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["errors [VB]", "error messages", "trappable errors", "errors [VB], trappable"]
+helpviewer_keywords: ["errors [Visual Basic]", "error messages", "trappable errors", "errors [Visual Basic], trappable"]
 ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
 caps.latest.revision: 19
 author: dotnet-bot

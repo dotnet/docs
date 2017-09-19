@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["file names [VB], validating", "strings [VB], validating", "Boolean values [VB]", "paths, validating"]
+helpviewer_keywords: ["file names [Visual Basic], validating", "strings [Visual Basic], validating", "Boolean values [Visual Basic]", "paths, validating"]
 ms.assetid: f673462d-57b7-4120-b13a-6a7592f7ab2c
 caps.latest.revision: 7
 author: dotnet-bot

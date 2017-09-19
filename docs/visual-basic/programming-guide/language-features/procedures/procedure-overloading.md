@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["signatures", "Overloads keyword [VB]", "hiding by signature", "Visual Basic code, procedures", "procedures [VB], signatures for", "procedures [VB], overloading", "procedures [VB], multiple versions", "parameters [VB], lists", "signatures, procedure", "parameter lists [VB]", "Visual Basic code, parameter lists", "Shadows keyword [VB]", "procedure overloading", "procedures [VB], parameter lists"]
+helpviewer_keywords: ["signatures", "Overloads keyword [Visual Basic]", "hiding by signature", "Visual Basic code, procedures", "procedures [Visual Basic], signatures for", "procedures [Visual Basic], overloading", "procedures [Visual Basic], multiple versions", "parameters [Visual Basic], lists", "signatures, procedure", "parameter lists [Visual Basic]", "Visual Basic code, parameter lists", "Shadows keyword [Visual Basic]", "procedure overloading", "procedures [Visual Basic], parameter lists"]
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
 caps.latest.revision: 24
 author: dotnet-bot

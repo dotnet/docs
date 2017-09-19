@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.^"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["raising numbers to powers", "^ operator [VB], exponention", "square operator [VB]", "^ operator [VB]", "exponentiation operator [VB]", "exponent", "numbers [VB], rasing", "powers", "arithmetic operators [VB], exponentiation"]
+helpviewer_keywords: ["raising numbers to powers", "^ operator [Visual Basic], exponention", "square operator [Visual Basic]", "^ operator [Visual Basic]", "exponentiation operator [Visual Basic]", "exponent", "numbers [Visual Basic], rasing", "powers", "arithmetic operators [Visual Basic], exponentiation"]
 ms.assetid: d89a1ca8-83da-4784-a87b-a9d7dceb3f62
 caps.latest.revision: 14
 author: dotnet-bot

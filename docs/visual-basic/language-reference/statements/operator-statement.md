@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.operator"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["operators [VB]", "procedures [VB], operator", "Narrowing keyword [VB], conversion operators", "Visual Basic code, operators", "Widening keyword [VB], conversion operators", "syntax [VB], Operator procedures", "operators [VB], overloading", "overloaded operators [VB]", "operator overloading", "operator procedures", "Operator statement [VB]", "CType function [VB], Operator statement"]
+helpviewer_keywords: ["operators [Visual Basic]", "procedures [Visual Basic], operator", "Narrowing keyword [Visual Basic], conversion operators", "Visual Basic code, operators", "Widening keyword [Visual Basic], conversion operators", "syntax [Visual Basic], Operator procedures", "operators [Visual Basic], overloading", "overloaded operators [Visual Basic]", "operator overloading", "operator procedures", "Operator statement [Visual Basic]", "CType function [Visual Basic], Operator statement"]
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
 caps.latest.revision: 28
 author: dotnet-bot

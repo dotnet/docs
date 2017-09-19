@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.directCast", "directCast"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["DirectCast keyword [VB]"]
+helpviewer_keywords: ["DirectCast keyword [Visual Basic]"]
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
 caps.latest.revision: 23
 author: dotnet-bot

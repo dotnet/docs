@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["classes [VB], vs. structures", "structures [VB]", "classes [VB]", "structures [VB], compared to classes", "structures [VB], structure variables", "structure variables [VB]"]
+helpviewer_keywords: ["classes [Visual Basic], vs. structures", "structures [Visual Basic]", "classes [Visual Basic]", "structures [Visual Basic], compared to classes", "structures [Visual Basic], structure variables", "structure variables [Visual Basic]"]
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
 caps.latest.revision: 21
 author: dotnet-bot

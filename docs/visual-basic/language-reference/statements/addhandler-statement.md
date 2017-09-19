@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.AddHandlerMethod", "addhandler", "vb.addhandler"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["AddHandler statement [VB]"]
+helpviewer_keywords: ["AddHandler statement [Visual Basic]"]
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
 caps.latest.revision: 15
 author: dotnet-bot

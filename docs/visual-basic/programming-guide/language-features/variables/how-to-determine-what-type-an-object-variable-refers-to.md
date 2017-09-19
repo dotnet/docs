@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["TypeOf operator [VB], determining object variable type", "variables [VB], object", "object variables [VB], determining type"]
+helpviewer_keywords: ["TypeOf operator [Visual Basic], determining object variable type", "variables [Visual Basic], object", "object variables [Visual Basic], determining type"]
 ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
 caps.latest.revision: 13
 author: dotnet-bot

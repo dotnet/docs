@@ -6,7 +6,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Delegate"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["delegate keyword [VB]", "Delegate statement [VB]"]
+helpviewer_keywords: ["delegate keyword [Visual Basic]", "Delegate statement [Visual Basic]"]
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 caps.latest.revision: 27
 author: dotnet-bot

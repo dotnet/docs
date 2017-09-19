@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["operator procedures [VB], calling", "procedures [VB], operator", "procedures [VB], calling", "examples [VB], CType", "syntax [VB], Operator procedures", "operators [VB], overloading", "return values [VB], Operator procedures", "operator overloading"]
+helpviewer_keywords: ["operator procedures [Visual Basic], calling", "procedures [Visual Basic], operator", "procedures [Visual Basic], calling", "examples [Visual Basic], CType", "syntax [Visual Basic], Operator procedures", "operators [Visual Basic], overloading", "return values [Visual Basic], Operator procedures", "operator overloading"]
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
 caps.latest.revision: 21
 author: dotnet-bot

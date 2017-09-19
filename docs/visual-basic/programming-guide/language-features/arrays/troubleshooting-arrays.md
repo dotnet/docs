@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["troubleshooting arrays", "arrays [VB], initialization errors", "troubleshooting Visual Basic, arrays", "arrays [VB], compilation errors", "arrays [VB], declaration errors", "arrays [VB], troubleshooting"]
+helpviewer_keywords: ["troubleshooting arrays", "arrays [Visual Basic], initialization errors", "troubleshooting Visual Basic, arrays", "arrays [Visual Basic], compilation errors", "arrays [Visual Basic], declaration errors", "arrays [Visual Basic], troubleshooting"]
 ms.assetid: f4e971c7-c0a4-4ed7-a77a-8d71039f266f
 caps.latest.revision: 17
 author: dotnet-bot

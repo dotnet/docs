@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["My.Settings object [VB], application settings", "examples [VB], application settings"]
+helpviewer_keywords: ["My.Settings object [Visual Basic], application settings", "examples [Visual Basic], application settings"]
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
 caps.latest.revision: 15
 author: dotnet-bot

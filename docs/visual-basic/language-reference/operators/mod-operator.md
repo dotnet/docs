@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Mod"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["remainder (Mod operator)", "division operator [VB], Mod operator", "modulus operator [VB], Visual Basic", "Mod operator [VB]", "operators [VB], division", "arithmetic operators [VB], Mod", "math operators [VB]"]
+helpviewer_keywords: ["remainder (Mod operator)", "division operator [Visual Basic], Mod operator", "modulus operator [Visual Basic], Visual Basic", "Mod operator [Visual Basic]", "operators [Visual Basic], division", "arithmetic operators [Visual Basic], Mod", "math operators [Visual Basic]"]
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
 caps.latest.revision: 22
 author: dotnet-bot

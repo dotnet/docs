@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.QuerySkipWhile"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["Skip While statement [VB]", "Skip While clause [VB]", "queries [VB], Skip While"]
+helpviewer_keywords: ["Skip While statement [Visual Basic]", "Skip While clause [Visual Basic]", "queries [Visual Basic], Skip While"]
 ms.assetid: 5dee8350-7520-4f1a-b00d-590cacd572d6
 caps.latest.revision: 16
 author: dotnet-bot

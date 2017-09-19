@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["dimensions, arrays", "arrays [VB], dimensions", "arrays [VB], rectangular", "arrays [VB], rank", "rectangular arrays", "ranking, arrays"]
+helpviewer_keywords: ["dimensions, arrays", "arrays [Visual Basic], dimensions", "arrays [Visual Basic], rectangular", "arrays [Visual Basic], rank", "rectangular arrays", "ranking, arrays"]
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
 caps.latest.revision: 22
 author: dotnet-bot

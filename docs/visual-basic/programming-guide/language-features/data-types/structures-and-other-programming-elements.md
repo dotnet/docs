@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["structures [VB], arrays", "procedures [VB], structures as arguments to", "objects [VB], structure elements", "arrays [VB], structure elements", "nested structures [VB]"]
+helpviewer_keywords: ["structures [Visual Basic], arrays", "procedures [Visual Basic], structures as arguments to", "objects [Visual Basic], structure elements", "arrays [Visual Basic], structure elements", "nested structures [Visual Basic]"]
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
 caps.latest.revision: 13
 author: dotnet-bot

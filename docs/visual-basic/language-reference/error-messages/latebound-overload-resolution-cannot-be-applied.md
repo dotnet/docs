@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vbc30933", "bc30933"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["overload resolution [VB], with late-bound argument", "BC30933"]
+helpviewer_keywords: ["overload resolution [Visual Basic], with late-bound argument", "BC30933"]
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
 caps.latest.revision: 11
 author: dotnet-bot

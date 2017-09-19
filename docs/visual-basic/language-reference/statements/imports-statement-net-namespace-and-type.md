@@ -8,7 +8,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 f1_keywords: ["vb.Imports", "imports"]
 dev_langs: ["VB"]
-helpviewer_keywords: ["declared element names [VB], qualification", "imports [VB]", "Imports statement [VB]", "aliases [VB], Imports statement", "container elements [VB]", "namespaces [VB], importing", "Imports statement [VB], syntax", "import aliases [VB]", "aliases [VB], import", "declared elements [VB], container elements"]
+helpviewer_keywords: ["declared element names [Visual Basic], qualification", "imports [Visual Basic]", "Imports statement [Visual Basic]", "aliases [Visual Basic], Imports statement", "container elements [Visual Basic]", "namespaces [Visual Basic], importing", "Imports statement [Visual Basic], syntax", "import aliases [Visual Basic]", "aliases [Visual Basic], import", "declared elements [Visual Basic], container elements"]
 ms.assetid: 7062f8aa-d890-4232-9eed-92836e13fb6e
 caps.latest.revision: 40
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["XML axis [VB], child", "child axis property [VB]", "XML child axis property [VB]", "XML [VB], accessing"]
+helpviewer_keywords: ["XML axis [Visual Basic], child", "child axis property [Visual Basic]", "XML child axis property [Visual Basic]", "XML [Visual Basic], accessing"]
 ms.assetid: 6689eb36-c471-469f-a82d-099ab8197b25
 caps.latest.revision: 18
 author: dotnet-bot

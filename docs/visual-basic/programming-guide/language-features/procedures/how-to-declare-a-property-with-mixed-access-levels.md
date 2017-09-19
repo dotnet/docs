@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["access levels, properties", "procedures [VB], defining", "Visual Basic code, procedures", "mixed access levels", "Visual Basic code, properties", "properties [VB], access levels", "Property statement [VB], declaring mixed access levels"]
+helpviewer_keywords: ["access levels, properties", "procedures [Visual Basic], defining", "Visual Basic code, procedures", "mixed access levels", "Visual Basic code, properties", "properties [Visual Basic], access levels", "Property statement [Visual Basic], declaring mixed access levels"]
 ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
 caps.latest.revision: 16
 author: dotnet-bot

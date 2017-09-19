@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 dev_langs: ["VB"]
-helpviewer_keywords: ["Into keyword [VB]"]
+helpviewer_keywords: ["Into keyword [Visual Basic]"]
 ms.assetid: e1534550-8f4b-4978-b043-fad7b8fd79ac
 caps.latest.revision: 6
 author: dotnet-bot

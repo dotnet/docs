@@ -4,7 +4,7 @@ description: Learn C# in your browser
 keywords: C#, Get Started, Lessons, Interactive
 author: billwagner
 ms.author: wiwagn
-ms.date: 06/01/2017
+ms.date: 09/18s/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -29,7 +29,7 @@ C#. You'll explore the `string` type and how to work with text.
 
 ## [Numbers in C#](numbers-in-csharp)
 
-In the [numbers in C#](numbers-in-csharp) lesson, you'll learn
+In the [Numbers in C#](numbers-in-csharp) lesson, you'll learn
 how computers store numbers and how to perform calculations with different
 number types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#.

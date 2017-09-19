@@ -15,13 +15,13 @@ items:
 - title: Make decisions using the if statement
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the 'Run' button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the *Run* button:
 
     ```csharp
     int a = 5;
     int b = 6;
     if (a + b > 10)
-        Console.WriteLine("The answer is greater than 10");
+        Console.WriteLine("The answer is greater than 10.");
     ```
 
     Modify the declaration of `b` so that the sum is less than 10: 

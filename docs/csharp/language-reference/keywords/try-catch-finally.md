@@ -35,7 +35,7 @@ translation.priority.ht:
 # try-catch-finally (C# Reference)
 A common usage of `catch` and `finally` together is to obtain and use resources in a `try` block, deal with exceptional circumstances in a `catch` block, and release the resources in the `finally` block.  
   
- For more information and examples on re-throwing exceptions, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [Throwing Exceptions](https://msdn.microsoft.com/library/xhcbs8fz). For more information about the `finally` block, see [try-finally](../../../csharp/language-reference/keywords/try-finally.md).  
+ For more information and examples on re-throwing exceptions, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [Throwing Exceptions](https://docs.microsoft.com/dotnet/standard/exceptions/). For more information about the `finally` block, see [try-finally](../../../csharp/language-reference/keywords/try-finally.md).  
   
 ## Example  
  [!code-cs[csrefKeywordsExceptions#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch-finally_1.cs)]  
@@ -50,5 +50,5 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
  [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)   
  [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
  [throw](../../../csharp/language-reference/keywords/throw.md)   
- [How to: Explicitly Throw Exceptions](https://msdn.microsoft.com/library/xhcbs8fz)   
+ [How to: Explicitly Throw Exceptions](https://docs.microsoft.com/dotnet/standard/exceptions/how-to-explicitly-throw-exceptions)   
  [using Statement](../../../csharp/language-reference/keywords/using-statement.md)

@@ -50,9 +50,9 @@ This option causes the compiler to reserve space in the output file so that a di
   
  When you request a fully signed assembly, the compiler hashes the file that contains the manifest (assembly metadata) and signs that hash with the private key. The resulting digital signature is stored in the file that contains the manifest. When an assembly is delay signed, the compiler does not compute and store the signature, but reserves space in the file so the signature can be added later.  
   
- For example, using **/delaysign+** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly using the [Assembly Linker](https://msdn.microsoft.com/library/c405shex) utility.  
+ For example, using **/delaysign+** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly using the [Assembly Linker](https://docs.microsoft.com/dotnet/framework/tools/al-exe-assembly-linker) utility.  
   
- For more information, see [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617) and [Delay Signing an Assembly](../../../framework/app-domains/delay-sign-assembly.md).  
+ For more information, see [Creating and Using Strong-Named Assemblies](https://docs.microsoft.com/dotnet/framework/app-domains/create-and-use-strong-named-assemblies) and [Delay Signing an Assembly](../../../framework/app-domains/delay-sign-assembly.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

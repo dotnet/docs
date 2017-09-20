@@ -19,45 +19,45 @@ What did the language look like in its earliest incarnations? And how has it evo
 
 When you go back and look, C# version 1.0 looked a lot like Java. As [part of its stated design goals for ECMA](http://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
 
-But if you look back on C# 1.0 now, you'd find yourself a little dizzy. It lacked the built-in async capabilities and some of the slick functionality around generics that we take for granted. As a matter of fact, it lacked generics altogether.  And [LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/linq/)? Not available yet. That would take some years to come out.
+But if you look back on C# 1.0 now, you'd find yourself a little dizzy. It lacked the built-in async capabilities and some of the slick functionality around generics that we take for granted. As a matter of fact, it lacked generics altogether.  And [LINQ](../linq/)? Not available yet. That would take some years to come out.
 
 C# version 1.0 looked stripped of features, compared to today. You'd find yourself writing some verbose code. But yet, you have to start somewhere. C# version 1.0 was a viable alternative to Java on the Windows platform.
 
 ## C# version 2.0
 
-Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005.
+Now things start to get interesting. Let's take a look at some major features of C# 2.0, released in 2005, along with Visual Studio 2005:
 
 - [Generics](../programming-guide/generics/)
-- [Partial types](https://www.dotnetperls.com/partial)
-- [Anonymous methods](https://www.tutorialspoint.com/csharp/csharp_anonymous_methods.htm)
+- [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods#partial-classes)
+- [Anonymous methods](../programming-guide/statements-expressions-operators/anonymous-methods)
 - [Nullable types](../programming-guide/nullable-types/)
-- [Iterators](https://msdn.microsoft.com/en-us/library/65zzykke(v=vs.100).aspx)
+- [Iterators](../programming-guide/concepts/iterators)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/)
 
-While C# may have started as a pretty generic Object-Oriented (OO) language, C# Version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a big way.
+While C# may have started as a pretty generic Object-Oriented (OO) language, C# version 2.0 changed that in a hurry. Once they had their feet under them, they went after some serious developer pain points. And they went after them in a big way.
 
 With generics, you have types and methods that can operate on an arbitrary type while still retaining type safety. So, for instance, having a <xref:System.Collections.Generic.List%601> lets you have `List<string>` or `List<int>` and perform type safe operations on those strings or integers while you iterate through them. This is better than creating `ListInt` inheritors or casting from `Object` for every operation.
 
-C# Version 2.0 brought iterators. To put it succinctly, this lets you iterate through the items in a `List` (or other Enumerable types) with a `foreach` loop. Having this as a first class part of the language dramatically enhanced readability of the language and people's ability to reason about the code.
+C# version 2.0 brought iterators. To put it succinctly, this lets you iterate through the items in a `List` (or other Enumerable types) with a `foreach` loop. Having this as a first-class part of the language dramatically enhanced readability of the language and people's ability to reason about the code.
 
 And yet, C# continued to play a bit of catch-up with Java. Java had already released versions that included generics and iterators. But that would soon change as the languages continued to evolve apart.
 
 ## C# version 3.0
 
-C# Version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with C# Version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version.
+C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with C# version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
-- [Auto implemented properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)
-- [Anonymous types](http://www.c-sharpcorner.com/UploadFile/ff2f08/anonymous-types-in-C-Sharp/)
-- [Query expressions](https://docs.microsoft.com/en-us/dotnet/csharp/linq/query-expression-basics)
+- [Auto implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties)
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types)
+- [Query expressions](../linq/query-expression-basics)
 - [Lambda expression](https://www.daedtech.com/introduction-to-c-lambda-expressions/)
 - [Expression trees](https://blogs.msdn.microsoft.com/charlie/2008/01/31/expression-tree-basics/)
 - [Extension methods](https://www.codeproject.com/Tips/709310/Extension-Method-In-Csharp)
 
 In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. It's generally thought that C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
 
-A more nuanced view examines expression tress, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented with a fairly revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object Oriented / Functional language.
+A more nuanced view examines expression tress, lambda expressions, and anonymous types as the foundation upon which LINQ is constructed. But, in either case, C# 3.0 presented a revolutionary concept. C# 3.0 had begun to lay the groundwork for turning C# into a hybrid Object Oriented / Functional language.
 
-Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made it look as though that list of ints had gotten a whole lot smarter.
+Specifically, you could now write SQL-style, declarative queries to perform operations on collections, among other things. Instead of writing a `for` loop to compute the average of a list of integers, you could now do that as simply as `list.Average()`. The combination of query expressions and extension methods made it look as though that list of integers had gotten a whole lot smarter.
 
 It took time for people to really grasp and integrate the concept, but they gradually did. And now, years later, code is much more concise, simple, and functional.
 
@@ -65,11 +65,11 @@ It took time for people to really grasp and integrate the concept, but they grad
 
 C# Version 4.0 would have had a difficult time living up to the groundbreaking status of version 3.0. With version 3.0, C# had moved the language firmly out from the shadow of Java and into prominence. The language was quickly becoming elegant.
 
-The next version did introduce some interesting new features.
+The next version did introduce some interesting new features:
 
-- [Dynamic binding](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic)
-- [Named/optional arguments](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)
-- [Generic covariant and contravariant](https://docs.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance)
+- [Dynamic binding](../language-reference/keywords/dynamic)
+- [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments)
+- [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance)
 - [Embedded interop types](https://stackoverflow.com/questions/20514240/whats-the-difference-setting-embed-interop-types-true-and-false-in-visual-studi)
 
 Embedded interop types alleviated a deployment pain. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
@@ -80,9 +80,9 @@ This gives you the potential for errors but also great power within the language
 
 ## C# version 5.0
 
-C# Version 5.0 was a very focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept.  Here is the major features list.
+C# Version 5.0 was a very focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept.  Here is the major features list:
 
-- [Asynchronous members](https://msdn.microsoft.com/library/hh191443(vs.110).aspx)
+- [Asynchronous members](../async)
 - [Caller info attributes](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
 The caller info attribute lets you easily retrieve information about the context in which you're running without resorting to a ton of boilerplate reflection code. It has many uses in diagnostics and logging tasks.
@@ -91,16 +91,16 @@ But `async` and `await` are the real stars of this release. When these features 
 
 ## C# version 6.0
 
-With versions 3.0 and 5.0, C# had added some impressive features in an Object Oriented language. (Version 2.0 did as well, but it was fast following Java with those language features.) With version 6.0, it would go away from doing a dominant killer feature and instead release many features that delighted users of the language. Here are some of them.
+With versions 3.0 and 5.0, C# had added some impressive features in an object oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many features that delighted users of the language. Here are some of them:
 
-- [Static imports](http://geekswithblogs.net/BlackRabbitCoder/archive/2015/04/16/c.net-little-wonders-static-using-statements-in-c-6.aspx)
+- [Static imports](../language-reference/keywords/using-static)
 - [Exception filters](https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/)
 - [Property initializers](http://geekswithblogs.net/WinAZ/archive/2015/06/30/whatrsquos-new-in-c-6.0-auto-property-initializers.aspx)
 - [Expression bodied members](https://lostechies.com/jimmybogard/2015/12/17/c-6-feature-review-expression-bodied-function-members/)
 - [Null propagator](https://davefancher.com/2014/08/14/c-6-0-null-propagation-operator/)
-- [String interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interpolated-strings)
+- [String interpolation](../language-reference/keywords/interpolated-strings)
 - [nameof operator](https://stackoverflow.com/questions/31695900/what-is-the-purpose-of-nameof)
-- [Dictionary initializer](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer)
+- [Dictionary initializer](../csharp/programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer)
 
 Each of these features is interesting in its own right. But if you look at them altogether, you see an interesting pattern. In this version, C# eliminated language boilerplate to make code more terse and readable. So for fans of clean, simple code, this language version was a huge win.
 
@@ -112,10 +112,10 @@ The most recent major version is C# version 7.0. This version has some evolution
 
 - [Out variables](http://www.c-sharpcorner.com/article/out-variables-in-c-sharp-7-0/)
 - [Tuples and deconstruction](https://www.thomaslevesque.com/2016/08/23/tuple-deconstruction-in-c-7/)
-- [Pattern matching](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#pattern-matching)
+- [Pattern matching](./csharp-7#pattern-matching)
 - [Local functions](http://www.infoworld.com/article/3182416/application-development/c-7-in-depth-exploring-local-functions.html)
-- [Expanded expression bodied members](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#more-expression-bodied-members)
-- [Ref locals and returns](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#ref-locals-and-returns)
+- [Expanded expression bodied members](./csharp-7#more-expression-bodied-members)
+- [Ref locals and returns](./csharp-7#ref-locals-and-returns)
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
 

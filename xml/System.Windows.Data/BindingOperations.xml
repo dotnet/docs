@@ -369,7 +369,14 @@ To use a collection on multiple threads, one of which is the UI thread that owns
 
 In return, WPF provides the following behavior:
 
-- The <xref:System.Windows.Data.CollectionView> accesses the collection using the given synchronization mechanism.
+- The <xref:System.Windows.Data.CollectionView> accesses the collection by calling the registered <xref:System.Windows.Data.CollectionSynchronizationCallback> with the following arguments:
+
+   - `collection`: the collection of interest.
+   - `context`: the registered context object.
+   - `accessMethod`: a delegate that performs the actual access.
+   - `writeAccess`: `true` if the delegate will modify the collection; `false` otherwise.
+
+   Your <xref:System.Windows.Data.CollectionSynchronizationCallback> should establish synchronization on the collection (using the `context` object and the `writeAccess` value, as appropriate), call the `accessMethod`, then release synchronization.
 
 - The <xref:System.Windows.Data.CollectionView> maintains a "shadow copy" of the collection for use on the UI thread.
 

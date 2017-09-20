@@ -68,7 +68,7 @@ End Class
 Public Module Example
    Public Sub Main()
       Dim temp1 As New Temperature(22d)
-      System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US")
+      CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US")
       Console.WriteLine(Convert.ToString(temp1, New CultureInfo("ja-JP")))
       Console.WriteLine("Temperature: {0:K}", temp1)
       Console.WriteLine("Temperature: {0:F}", temp1)

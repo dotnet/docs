@@ -37,7 +37,7 @@ Contains cryptography settings.
   
 ```xml  
       <cryptographySettings>   
-</crytopgraphySettings>  
+</cryptographySettings>  
 ```  
   
 ## Attributes and Elements  

@@ -60,7 +60,7 @@ This topic contains two examples that illustrate the <xref:System.Threading.Task
   
 ## Compiling the Code  
   
--   Cut and paste this code into a Visual Studio 2010 project.  
+-   Copy and paste this code into a Visual Studio 2010 project.  
   
 ## See Also  
  <xref:System.Threading.Tasks.Parallel.For%2A>   

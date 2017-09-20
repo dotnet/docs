@@ -69,7 +69,7 @@ public class Example
 {
    public static void Main()
    {
-      System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
+      CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
       Temperature temp1 = new Temperature(22m);
       Console.WriteLine(Convert.ToString(temp1, new CultureInfo("ja-JP")));
       Console.WriteLine("Temperature: {0:K}", temp1);

@@ -17,8 +17,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies additional flags that can be applied to method signatures. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader"/> structure.</summary>
-    <remarks></remarks>
+    <summary>Specifies additional flags that can be applied to method signatures. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader" /> structure.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExplicitThis">

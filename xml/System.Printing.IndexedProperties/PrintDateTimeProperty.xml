@@ -94,16 +94,16 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed)</ReturnType>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
@@ -116,7 +116,29 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) (System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
       <MemberType>Method</MemberType>
@@ -125,10 +147,252 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed)</ReturnType>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator ValueType modopt(System.DateTime) (System.Printing.IndexedProperties.PrintDateTimeProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueType modopt(System.DateTime)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintDateTimeProperty" />
       </Parameters>
       <Docs>
         <param name="attribRef">To be added.</param>

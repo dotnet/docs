@@ -63,7 +63,7 @@ It took time for people to really grasp and integrate the concept, but they grad
 
 ## C# version 4.0
 
-C# Version 4.0 would have had a difficult time living up to the groundbreaking status of version 3.0. With version 3.0, C# had moved the language firmly out from the shadow of Java and into prominence. The language was quickly becoming elegant.
+C# version 4.0 would have had a difficult time living up to the groundbreaking status of version 3.0. With version 3.0, C# had moved the language firmly out from the shadow of Java and into prominence. The language was quickly becoming elegant.
 
 The next version did introduce some interesting new features:
 
@@ -74,13 +74,13 @@ The next version did introduce some interesting new features:
 
 Embedded interop types alleviated a deployment pain. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
 
-The major feature was the introduction of the `dynamic` keyword. The `dynamic` keyword introduced into C# Version 4.0 the ability to override the compiler on compile-time typing. By using the dynamic keyword, you can create constructs similar to dynamically typed languages like JavaScript. You can create a `dynamic x = "a string"` and then add six to it, leaving it up to the runtime to sort out what should happen next.
+The major feature was the introduction of the `dynamic` keyword. The `dynamic` keyword introduced into C# version 4.0 the ability to override the compiler on compile-time typing. By using the dynamic keyword, you can create constructs similar to dynamically typed languages like JavaScript. You can create a `dynamic x = "a string"` and then add six to it, leaving it up to the runtime to sort out what should happen next.
 
 This gives you the potential for errors but also great power within the language.
 
 ## C# version 5.0
 
-C# Version 5.0 was a very focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept.  Here is the major features list:
+C# version 5.0 was a very focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept.  Here is the major features list:
 
 - [Asynchronous members](../async.md)
 - [Caller info attributes](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)

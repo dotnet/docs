@@ -1,12 +1,8 @@
 ---
 title: "Collections and Data Structures"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "grouping data in collections"
@@ -91,15 +87,9 @@ Similar data can often be handled more efficiently when stored and manipulated a
 <a name="BKMK_Reference"></a>   
 ## Reference  
  <xref:System.Array?displayProperty=fullName>  
-  
  <xref:System.Collections?displayProperty=fullName>  
-  
  <xref:System.Collections.Concurrent?displayProperty=fullName>  
-  
  <xref:System.Collections.Generic?displayProperty=fullName>  
-  
  <xref:System.Collections.Specialized?displayProperty=fullName>  
-  
  <xref:System.Linq?displayProperty=fullName>  
-  
- System.Collections.Immutable
+ <xref:System.Collections.Immutable>

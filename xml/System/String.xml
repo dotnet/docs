@@ -567,36 +567,36 @@
   
  For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
   
- `String(Char[]`  `value` `)`  
+ `String(Char[] value)`  
  Initializes the new instance to the value indicated by an array of Unicode characters. This constructor copies Unicode characters([example](#Ctor2_Example)).  
   
- `String(Char[]`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
+ `String(Char[] value, Int32 startIndex, Int32 length)`  
  Initializes the new instance to the value indicated by an array of Unicode characters, a starting character position within that array, and a length ([example](#Ctor3_Example)).  
   
- `String(Char`  `c` `, Int32`  `count` `)`  
+ `String(Char c, Int32 count)`  
  Initializes the new instance to the value indicated by a specified Unicode character repeated a specified number of times ([example](#Ctor3_Example)).  
   
- `String(char*`  `value` `)`  
+ `String(char* value)`  
  **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of Unicode characters that is terminated by a null character (U+0000 or '\0'). ([example](#Ctor4_Example)).  
   
  Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
   
- `String(char*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
+ `String(char* value, Int32 startIndex, Int32 length)`  
  **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of Unicode characters, a starting character position within that array, and a length. The constructor copies the Unicode characters from `value` starting at index `startIndex` and ending at index `startIndex` + `length` – 1 ([example](#Ctor5_Example)).  
   
  Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
   
- `String(SByte*`  `value` `)`  
+ `String(SByte* value)`  
  **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>). The constructor processes characters from `value` starting from the location specified by the pointer until a null character (0x00) is reached ([example](#Ctor6_Example)).  
   
  Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
   
- `String(SByte*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `)`  
+ `String(SByte* value, Int32 startIndex, Int32 length)`  
  **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, and a length.  The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>). The constructor processes characters from value starting at `startIndex` and ending at `startIndex` + `length` – 1 ([example](#Ctor6_Example)).  
   
  Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
   
- `String(SByte*`  `value` `, Int32`  `startIndex` `, Int32`  `length` `, Encoding`  `enc` `)`  
+ `String(SByte* value, Int32 startIndex, Int32 length, Encoding enc)`  
  **(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, a length, and an <xref:System.Text.Encoding> object.  
   
  Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.  
@@ -4324,19 +4324,19 @@
 ## Overloaded method syntax  
  For additional guidance on choosing an overload, see [Which method do I call?](#FTaskList)  
   
- `String String.Format(String`  `format` `, Object`  `arg0` `)`  
+ `String String.Format(String format, Object arg0)`  
  Replaces the format items with the string representation of a specified object ([example](#Format1_Example)).  
   
- `String String.Format(String`  `format` `, Object`  `arg0` `, Object`  `arg1` `)`  
+ `String String.Format(String format, Object arg0, Object arg1)`  
  Replaces the format items with the string representation of two specified objects ([example](#Format2_Example)).  
   
- `String String.Format(String`  `format` `, Object`  `arg0` `, Object`  `arg1` `, Object`  `arg2` `)`  
+ `String String.Format(String format, Object arg0, Object arg1, Object arg2)`  
  Replaces the format items with the string representation of three specified objects ([example](#Format3_Example)).  
   
- `String String.Format(String`  `format` `, params Object[]`  `args` `)`  
+ `String String.Format(String format, params Object[] args)`  
  Replaces the format items with the string representations of corresponding objects in a specified array ([example](#Format4_Example)).  
   
- `String String.Format(IFormatProvider`  `provider` `, String`  `format` `, params Object[]`  `args` `)`  
+ `String String.Format(IFormatProvider provider, String format, params Object[] args)`  
  Replaces the format items with the string representation of corresponding objects in a specified array, and uses the specified culture-specific formatting information ([example](#Format5_Example)) or custom formatting information ([example](#Format6_Example)).  
   
 <a name="Format_Params"></a>   

@@ -77,7 +77,7 @@ While you might visualize a [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] project 
   
 -   You cannot use a `WithEvents` variable as an object variable. That is, you cannot declare it as `Object`—you must specify the class name when you declare the variable.  
   
--   Because shared eventsare not tied to class instances, you cannot use `WithEvents` to declaratively handle shared events. Similarly, you cannot use `WithEvents` or `Handles` to handle events from a `Structure`. In both cases, you can use the `AddHandler` statement to handle those events.  
+-   Because shared events are not tied to class instances, you cannot use `WithEvents` to declaratively handle shared events. Similarly, you cannot use `WithEvents` or `Handles` to handle events from a `Structure`. In both cases, you can use the `AddHandler` statement to handle those events.  
   
 -   You cannot create arrays of `WithEvents` variables.  
   

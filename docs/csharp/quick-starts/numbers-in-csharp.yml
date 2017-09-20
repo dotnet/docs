@@ -15,7 +15,7 @@ items:
   content: |
     This tutorial teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 - title: Explore integer math
-  durationInMinutes: 2
+  durationInMinutes: 4
   content: |
     Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the *Run* button:
 
@@ -58,7 +58,7 @@ items:
     You can also experiment by performing multiple mathematics operations in the same line, if you'd like.
 
     > [!TIP]
-    > As you explore C# (or any programming language) you will
+    > As you explore C# (or any programming language), you'll
     > make mistakes when you write code. The **compiler** will
     > find those errors and report them to you. When the output
     > contains error messages, look closely at the example code,
@@ -66,7 +66,7 @@ items:
     > That exercise will help you learn the structure of C# code.     
 
 - title: Explore order of operations
-  durationInMinutes: 3
+  durationInMinutes: 7
   content: |
     The C# language defines the precedence of different mathematics operations
     with rules consistent with the rules you learned in mathematics.
@@ -116,7 +116,7 @@ items:
 
     Click 'Run' again to see the results.
 - title: Explore integer precision and limits
-  durationInMinutes: 4
+  durationInMinutes: 5
   content: |
     That last sample showed you that integer division truncates the result.
     You can get the **remainder** by using the **modulo** operator, the `%` character:
@@ -154,12 +154,14 @@ items:
     Notice that the answer is very close to the minimum (negative) integer. It's
     the same as `min + 2`. 
     The addition operation **overflowed** the allowed values for integers.
+    The answer is a very large negative number because an overflow "wraps around"
+    from the largest possible integer value to the smallest.
 
     There are other numeric types with different limits and precision that you
     would use when the `int` type doesn't meet your needs. Let's explore those next.
 
 - title: Work with the double type
-  durationInMinutes: 4
+  durationInMinutes: 5
   content: |
     The `double` numeric type represents a double-precision floating point
     number. Those terms may be new to you. A **floating point** number is
@@ -220,7 +222,7 @@ items:
 
 
 - title: Work with fixed point types
-  durationInMinutes: 4
+  durationInMinutes: 8
   content: |
     You've seen the basic numeric types in C#: integers and doubles.  There is one
     other type to learn: the `decimal` type. The `decimal` type has a smaller
@@ -272,8 +274,6 @@ items:
 
     Try some other formulas if you would like.
 
-- title: Next steps
-  durationInMinutes: 1
   content: |
     You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in the following topics:
 

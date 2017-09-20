@@ -34,7 +34,7 @@ items:
     the `string` type, which represents text in C#.
 
     > [!TIP]
-    > As you explore C# (or any programming language) you will
+    > As you explore C# (or any programming language), you'll
     > make mistakes when you write code. The **compiler** will
     > find those errors and report them to you. When the output
     > contains error messages, look closely at the example code,
@@ -75,7 +75,7 @@ items:
 
     Click 'Run' again to see the results.
 - title: Work with strings
-  durationInMinutes: 4
+  durationInMinutes: 5
   content: |
     Your last edit was our first look at what you can do with strings. Let's explore more.
 
@@ -100,7 +100,7 @@ items:
     > concatenate strings together. Experiment in the interactive window. Write
     > some more messages yourself. Build strings using the `+` operator.
 - title: Do more with strings
-  durationInMinutes: 4
+  durationInMinutes: 5
   content: |
     You've been using a **method**, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, to print messages. A **method** is a block of code that implements some action. It has a name, so you can access it. 
     
@@ -140,7 +140,7 @@ items:
     Console.WriteLine(message.ToLower());
     ```
 - title: Search strings
-  durationInMinutes: 4
+  durationInMinutes: 10
   content: |
     The other part of a *search and replace* operation is to find text in a
     string. You can use the  <xref:System.String.Contains%2A> method for searching. It
@@ -169,7 +169,7 @@ items:
     > ends with a period, you must check for a string that ends with a period.
 
 - title: Complete challenge
-  durationInMinutes: 1
+  durationInMinutes: 3
   content: |
     Did you come up with something like this?
 

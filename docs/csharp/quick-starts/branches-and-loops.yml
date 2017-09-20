@@ -13,7 +13,7 @@ items:
   content: |
     This tutorial teaches you about how to write code that examines variables and changes execution path based on those variables. You'll write C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 - title: Make decisions using the if statement
-  durationInMinutes: 2
+  durationInMinutes: 4
   content: |
     Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the *Run* button:
 
@@ -34,7 +34,7 @@ items:
     written one of the possible branches for an `if` statement: the true branch.
 
     > [!TIP]
-    > As you explore C# (or any programming language) you will
+    > As you explore C# (or any programming language), you'll
     > make mistakes when you write code. The **compiler** will
     > find those errors and report them to you. When the output
     > contains error messages, look closely at the example code,
@@ -46,7 +46,7 @@ items:
     This process of checking conditions and executing statements based on those conditions is very powerful. Let's explore more.
 
 - title: Make if and else work together
-  durationInMinutes: 3
+  durationInMinutes: 10
   content: |
     
     To execute different code in both the true and false branches, you 
@@ -67,7 +67,8 @@ items:
     > The indentation under the `if` and `else` statements is for human readers.
     > The C# language doesn't treat indentation or whitespace as significant. 
     > The statement following the `if` or `else` keyword will be executed based
-    > on the condition.
+    > on the condition. All the samples in this tutorial follow a common
+    > practice to indent lines based on execution.
 
     Because indentation is not significant, you need to use `{` and `}` to
     indicate when you want more than one statement to be part of the block
@@ -133,7 +134,7 @@ items:
     ```
 
 - title: Use loops to repeat operations
-  durationInMinutes: 4
+  durationInMinutes: 6
   content: |
     Another important concept to create larger programs is **loops**. You'll
     use loops to repeat statements that you want executed more than once. Try
@@ -181,7 +182,7 @@ items:
     Let's move on to one last loop statement.
 
 - title: Work with the for loop
-  durationInMinutes: 4
+  durationInMinutes: 5
   content: |
     Another common loop statement that you'll see in C# code is the
     `for` loop. Try this code in the interactive window:
@@ -246,8 +247,6 @@ items:
     Console.WriteLine("The sum is " + sum);
     ```
 
-- title: Next steps
-  durationInMinutes: 1
   content: |
     You've completed the "branches and loops" tutorial. You can learn more about these concepts in these topics:
 

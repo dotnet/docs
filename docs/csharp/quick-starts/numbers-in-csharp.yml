@@ -2,7 +2,7 @@
 documentType: Tutorial
 title: Numbers in C#
 metadata:
-  title:  numbers in C#
+  title:  Numbers in C#
   description: In this tutorial about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
@@ -17,7 +17,7 @@ items:
 - title: Explore integer math
   durationInMinutes: 4
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the *Run* button:
+    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
 
     ```csharp
     int a = 18;
@@ -35,7 +35,7 @@ items:
     > [!TIP]
     > Throughout this tutorial, you can explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
 
-    Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the 'Run' button.
+    Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the **Run** button.
 
     Subtraction:
 
@@ -114,7 +114,7 @@ items:
     Console.WriteLine(d);
     ```
 
-    Click 'Run' again to see the results.
+    Click **Run** again to see the results.
 - title: Explore integer precision and limits
   durationInMinutes: 5
   content: |
@@ -148,7 +148,7 @@ items:
 
     ```csharp
     int what = max + 3;
-    Console.WriteLine("an example of overflow: " + what);
+    Console.WriteLine("An example of overflow: " + what);
     ```
     
     Notice that the answer is very close to the minimum (negative) integer. It's
@@ -169,7 +169,7 @@ items:
     in magnitude. **Double-precision** means that these numbers are stored
     using greater precision than **single-precision**. On modern computers,
     it is more common to use double precision than single precision numbers.
-    Let's explore. Try the following code in the interactive window and see the result.
+    Let's explore. Try the following code in the interactive window and see the result:
 
     ```csharp
     double a = 5;
@@ -272,7 +272,7 @@ items:
     Console.WriteLine(area);
     ```
 
-    Try some other formulas if you would like.
+    Try some other formulas if you'd like.
 
   content: |
     You've completed the "Numbers in C#" tutorial. You can learn more about numbers in C# in the following topics:

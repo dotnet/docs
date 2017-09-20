@@ -36,7 +36,7 @@ The C# guide provides a wealth of information about the C# language. This site h
 
 There are several sections in the C# Guide. You can read them in order, or jump directly to what interests you the most. Some of the sections are heavily focused on the language. Others provide end-to-end scenarios that demonstrate a few of the types of programs you can create using C# and the .NET Framework.
 
-* [Getting Started](getting-started/index.mds):
+* [Getting Started](getting-started/index.md):
     - This section covers what you need to install for a C# development environment on your preferred platform. The different topics under this section explain how to create your first C# program in different supported environments.
 
 * [Tutorials](tutorials/index.md):

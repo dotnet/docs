@@ -17,7 +17,7 @@ items:
 - title: Run your first C# program
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type code block in the interactive window and click the *Run* button:
+    Run the following code in the interactive window. To do that, type code block in the interactive window and click the **Run** button:
 
     ```csharp
     Console.WriteLine("Hello World!");
@@ -47,11 +47,11 @@ items:
     code you've written in the interactive window with the following code:
 
     ```csharp
-    string firstFriend = "Bill";
-    Console.WriteLine(firstFriend);
+    string aFriend = "Bill";
+    Console.WriteLine(aFriend);
     ```
 
-    The first line declares a variable, `name` and assigns it a value, "Bill". The second line
+    The first line declares a variable, `aFriend` and assigns it a value, "Bill". The second line
     prints out the name.
 
     You can assign different values to any variable you declare. You can change
@@ -59,21 +59,21 @@ items:
     following the code you've already added:
 
     ```csharp
-    firstFriend = "Maria";
-    Console.WriteLine(firstFriend);
+    aFriend = "Maria";
+    Console.WriteLine(aFriend);
     ```
 
     Notice that the same line of code prints two different messages, based on
-    the value stored in the `firstFriend` variable.
+    the value stored in the `aFriend` variable.
 
     You may have also noticed that the word "Hello" was missing in the last two messages. Let's fix
     that now.  Modify the lines that print the message to the following:
 
     ```csharp
-    Console.WriteLine("Hello " + firstFriend);
+    Console.WriteLine("Hello " + aFriend);
     ```
 
-    Click 'Run' again to see the results.
+    Click **Run** again to see the results.
 - title: Work with strings
   durationInMinutes: 5
   content: |
@@ -81,7 +81,7 @@ items:
 
     The `+` is called an operator in C#. When applied to strings like `firstString + secondString`, a new string is created with the text from the first followed by the text from the second. This is referred to as *string concatenation*. You can combine any number of strings, including string variables.  Try this:
 
-    ```csharps
+    ```csharp
     string firstFriend = "Maria";
     string secondFriend = "Sage";
     Console.WriteLine("My friends are " + firstFriend + " and " + secondFriend);
@@ -91,7 +91,7 @@ items:
 
     ```csharp
     Console.WriteLine("The name " + firstFriend + " has " + firstFriend.Length + " letters.");
-    Console.WriteLine("The name " + secondFriend + " has " + secondFriends.Length + " letters.");
+    Console.WriteLine("The name " + secondFriend + " has " + secondFriend.Length + " letters.");
     ```
 
     > [!TIP]
@@ -154,7 +154,7 @@ items:
     ```
 
     The <xref:System.String.Contains%2A> method returns a **boolean** value which tells you if the
-    string you were searcbj for was found. A **boolean** stores either a `true` or a
+    string you were searching for was found. A **boolean** stores either a `true` or a
     `false` value. You'll learn more about **boolean** values
     in a later lesson.
 

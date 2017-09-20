@@ -36,7 +36,7 @@ This topic discusses criteria for choosing among the three main transports that 
   
  The HTTP protocol is not connection-based—once the response is sent, no state is maintained. To handle multiple-page transactions, the application must persist any necessary state.  
   
- In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the HTTP transport binding is optimized for interoperability with legacy non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] systems. If all communicating parties are using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the TCP-based or named pipes-based bindings are faster. [!INCLUDE[crdefault](../../../../includes/crabout-md.md)] <xref:System.ServiceModel.NetTcpBinding> and <xref:System.ServiceModel.NetNamedPipeBinding>.  
+ In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the HTTP transport binding is optimized for interoperability with legacy non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] systems. If all communicating parties are using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the TCP-based or named pipes-based bindings are faster. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.NetTcpBinding> and <xref:System.ServiceModel.NetNamedPipeBinding>.  
   
 ### When to Use the TCP Transport  
  TCP is a connection-based, stream-oriented delivery service with end-to-end error detection and correction. *Connection-based* means that a communication session between hosts is established before exchanging data. A host is any device on a TCP/IP network identified by a logical IP address.  

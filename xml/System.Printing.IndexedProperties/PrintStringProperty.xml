@@ -113,8 +113,8 @@
     </Member>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static implicit operator string (System.Printing.IndexedProperties.PrintStringProperty attributeRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Implicit(class System.Printing.IndexedProperties.PrintStringProperty attributeRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStringProperty.op_Implicit(System.Printing.IndexedProperties.PrintStringProperty)~System.String" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Implicit(class System.Printing.IndexedProperties.PrintStringProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStringProperty.op_Implicit(System.Printing.IndexedProperties.PrintStringProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -134,9 +134,9 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator string (System.Printing.IndexedProperties.PrintStringProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Implicit(class System.Printing.IndexedProperties.PrintStringProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStringProperty.op_Implicit(System.Printing.IndexedProperties.PrintStringProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.String" />
+      <MemberSignature Language="C#" Value="public static implicit operator string (System.Printing.IndexedProperties.PrintStringProperty attributeRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Implicit(class System.Printing.IndexedProperties.PrintStringProperty attributeRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStringProperty.op_Implicit(System.Printing.IndexedProperties.PrintStringProperty)~System.String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -146,7 +146,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintStringProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+        <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintStringProperty" />
       </Parameters>
       <Docs>
         <param name="attributeRef">To be added.</param>

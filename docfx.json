@@ -114,7 +114,7 @@
         "api/**.yml": "managed-reference",
         "_csharplang/spec/*.md": "language-reference"
      },
-      "langs": {
+      "dev_langs": {
         "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"],
         "api/**.yml": ["csharp", "vb", "cpp"]
       },

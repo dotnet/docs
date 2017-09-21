@@ -64,7 +64,7 @@ This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE
  This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Compiling the Code  
- This example requires a reference to the <xref:System?displayProperty=fullName> namespace.  
+ This example requires a reference to the <xref:System?displayProperty=nameWithType> namespace.  
   
 ## Robust Programming  
  This example assumes the modem is connected to COM1. We recommend that your code allow the user to select the desired serial port from a list of available ports. For more information, see [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md).  
@@ -75,7 +75,7 @@ This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Ports>   
- <xref:System.IO.Ports.SerialPort?displayProperty=fullName>   
+ <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType>   
  [How to: Send Strings to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-send-strings-to-serial-ports.md)   
  [How to: Receive Strings From Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-receive-strings-from-serial-ports.md)   
  [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)

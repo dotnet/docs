@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.6.2|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object)?displayProperty=fullName></li><li><xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object%2CSystem.Windows.Controls.DataGridColumn)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object)?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object%2CSystem.Windows.Controls.DataGridColumn)?displayProperty=nameWithType></li></ul>|
 

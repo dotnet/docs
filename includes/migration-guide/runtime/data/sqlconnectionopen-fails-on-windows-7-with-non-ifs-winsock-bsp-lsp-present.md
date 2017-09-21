@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=fullName></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0083</li></ul>|
 

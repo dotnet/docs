@@ -27,7 +27,7 @@ You can dynamically populate the menu item collection of a <xref:System.Windows.
 ## Example  
  The following code example demonstrates how to dynamically add items to a <xref:System.Windows.Forms.ContextMenuStrip> control. The example also shows how to reuse the same <xref:System.Windows.Forms.ContextMenuStrip> for three different controls on the form.  
   
- In the example, an <xref:System.Windows.Forms.ToolStripDropDown.Opening> event handler populates the menu item collection. The <xref:System.Windows.Forms.ToolStripDropDown.Opening> event handler examines the <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ToolStripItem.OwnerItem%2A?displayProperty=fullName> properties and adds a <xref:System.Windows.Forms.ToolStripItem> describing the source control.  
+ In the example, an <xref:System.Windows.Forms.ToolStripDropDown.Opening> event handler populates the menu item collection. The <xref:System.Windows.Forms.ToolStripDropDown.Opening> event handler examines the <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ToolStripItem.OwnerItem%2A?displayProperty=nameWithType> properties and adds a <xref:System.Windows.Forms.ToolStripItem> describing the source control.  
   
  [!code-csharp[System.Windows.Forms.ToolStrip.Misc#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#1)]
  [!code-vb[System.Windows.Forms.ToolStrip.Misc#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#1)]  

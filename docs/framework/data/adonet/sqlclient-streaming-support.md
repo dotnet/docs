@@ -34,7 +34,7 @@ Streaming support between [!INCLUDE[ssNoVersion](../../../../includes/ssnoversio
   
 1.  <xref:System.Data.SqlClient.SqlDataReader.IsDBNullAsync%2A>  
   
-2.  <xref:System.Data.SqlClient.SqlDataReader.GetFieldValue%2A?displayProperty=fullName>  
+2.  <xref:System.Data.SqlClient.SqlDataReader.GetFieldValue%2A?displayProperty=nameWithType>  
   
 3.  <xref:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync%2A>  
   

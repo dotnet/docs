@@ -76,7 +76,7 @@ When you have an object variable that refers to an object, you often want to wor
   
 #### To access members of an object for which you do not know the type at compile time  
   
-1.  Declare the object variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). (Declaring a variable as `Object` is the same as declaring it as <xref:System.Object?displayProperty=fullName>.)  
+1.  Declare the object variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). (Declaring a variable as `Object` is the same as declaring it as <xref:System.Object?displayProperty=nameWithType>.)  
   
     ```  
     Dim someControl As Object  

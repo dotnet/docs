@@ -232,7 +232,7 @@ using MarqueeControlLibrary;
   
  Common features of the two controls are factored into an interface called `IMarqueeWidget`. This allows the `MarqueeControl` to discover any Marquee-related child controls and give them special treatment.  
   
- To implement the periodic animation feature, you will use <xref:System.ComponentModel.BackgroundWorker> objects from the <xref:System.ComponentModel?displayProperty=fullName> namespace. You could use <xref:System.Windows.Forms.Timer> objects, but when many `IMarqueeWidget` objects are present, the single UI thread may be unable to keep up with the animation.  
+ To implement the periodic animation feature, you will use <xref:System.ComponentModel.BackgroundWorker> objects from the <xref:System.ComponentModel?displayProperty=nameWithType> namespace. You could use <xref:System.Windows.Forms.Timer> objects, but when many `IMarqueeWidget` objects are present, the single UI thread may be unable to keep up with the animation.  
   
 #### To create a child control for your custom control  
   
@@ -519,7 +519,7 @@ using MarqueeControlLibrary;
   
 2.  Drag two <xref:System.Windows.Forms.Panel> controls from the **Toolbox** onto the `LightShapeSelectionControl`. Name them `squarePanel` and `circlePanel`. Arrange them side by side. Set the <xref:System.Windows.Forms.Control.Size%2A> property of both <xref:System.Windows.Forms.Panel> controls to (60, 60). Set the <xref:System.Windows.Forms.Control.Location%2A> property of the `squarePanel` control to (8, 10). Set the <xref:System.Windows.Forms.Control.Location%2A> property of the `circlePanel` control to (80, 10). Finally, set the <xref:System.Windows.Forms.Control.Size%2A> property of the `LightShapeSelectionControl` to (150, 80).  
   
-3.  Open the `LightShapeSelectionControl` source file in the **Code Editor**. At the top of the file, import the <xref:System.Windows.Forms.Design?displayProperty=fullName> namespace:  
+3.  Open the `LightShapeSelectionControl` source file in the **Code Editor**. At the top of the file, import the <xref:System.Windows.Forms.Design?displayProperty=nameWithType> namespace:  
   
 ```vb  
 Imports System.Windows.Forms.Design  

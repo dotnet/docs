@@ -29,7 +29,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # dangerousThreadingAPI MDA
-The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName> method is called on a thread other than the current thread.  
+The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> method is called on a thread other than the current thread.  
   
 ## Symptoms  
  An application is unresponsive or hangs indefinitely. System or application data might be left in an unpredictable state temporarily or even after an application has been shut down. Some operations are not completing as expected.  

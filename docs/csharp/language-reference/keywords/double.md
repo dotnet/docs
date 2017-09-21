@@ -36,7 +36,7 @@ The `double` keyword signifies a simple type that stores 64-bit floating-point v
   
 |Type|Approximate range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=fullName>|  
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=nameWithType>|  
   
 ## Literals  
  By default, a real numeric literal on the right side of the assignment operator is treated as `double`. However, if you want an integer number to be treated as `double`, use the suffix d or D, for example:  

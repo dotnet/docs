@@ -18,13 +18,13 @@ ms.author: dotnetcontent
 
 ---
 # How to: Find Preceding Siblings (XPath-LINQ to XML) (Visual Basic)
-This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] child <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> axis.  
+This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] child <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=nameWithType> axis.  
   
  The XPath expression is:  
   
  `preceding-sibling::*`  
   
- Note that the results of both <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> and <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> are in document order.  
+ Note that the results of both <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> and <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=nameWithType> are in document order.  
   
 ## Example  
  The following example finds the `FullAddress` element, and then retrieves the previous elements using the `preceding-sibling` axis.  

@@ -43,11 +43,11 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`. For C#, the event handlers must be connected to the corresponding events.  
   
--   References to the <xref:System?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.CellStateChanged?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.CellStateChanged?displayProperty=nameWithType>   
  [Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/programming-with-cells-rows-and-columns-in-the-datagrid.md)   
  [Walkthrough: Validating Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)

@@ -22,7 +22,7 @@ manager: "wpickett"
 # Inferring an XML Schema
 Describes how to use the Schema Object Model (SOM) <xref:System.Xml.Schema.XmlSchemaInference> class to infer an XML Schema definition language (XSD) schema from the structure of an XML document.  
   
- The Schema Object Model (SOM) <xref:System.Xml.Schema.XmlSchemaInference> class in the <xref:System.Xml.Schema?displayProperty=fullName> namespace allows you to infer an XML Schema definition language (XSD) schema from the structure of an XML document. The <xref:System.Xml.Schema.XmlSchemaInference> class outputs an XML schema that can validate the XML document.  
+ The Schema Object Model (SOM) <xref:System.Xml.Schema.XmlSchemaInference> class in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace allows you to infer an XML Schema definition language (XSD) schema from the structure of an XML document. The <xref:System.Xml.Schema.XmlSchemaInference> class outputs an XML schema that can validate the XML document.  
   
 ## In This Section  
  [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)  

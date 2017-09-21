@@ -93,7 +93,7 @@ You can use the `My.Application.Log` and `My.Log` objects to write information a
      After you configure the event log listener for an assembly, it receives all messages that `My.Applcation.Log` writes from that assembly.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
+ <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>   
  [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)   

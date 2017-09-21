@@ -61,9 +61,9 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
 |COR_E_APPDOMAINUNLOADED|The application domain has been unloaded or does not exist.|  
   
 ## Remarks  
- Statistics are updated only after a full, blocking garbage collection; that is, a collection that includes all generations and that stops the application while collection occurs. For example, the <xref:System.GC.Collect?displayProperty=fullName> method overload performs a full, blocking collection. Concurrent garbage collection occurs in the background and does not block the application.  
+ Statistics are updated only after a full, blocking garbage collection; that is, a collection that includes all generations and that stops the application while collection occurs. For example, the <xref:System.GC.Collect?displayProperty=nameWithType> method overload performs a full, blocking collection. Concurrent garbage collection occurs in the background and does not block the application.  
   
- The `GetCurrentSurvived` method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=fullName> property.  
+ The `GetCurrentSurvived` method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=nameWithType> property.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

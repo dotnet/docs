@@ -54,7 +54,7 @@ This section explains how to perform tasks that involve writing to files.
  Demonstrates how to create and write to a new text file in the **My Documents** directory.  
   
  [How to: Write Text to Files with a StreamWriter](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md)  
- Demonstrates how to write to a file with a <xref:System.IO.StreamWriter?displayProperty=fullName> object.  
+ Demonstrates how to write to a file with a <xref:System.IO.StreamWriter?displayProperty=nameWithType> object.  
   
 ## Reference  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  

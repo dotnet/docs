@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Data.Objects.ObjectContext.Translate%60%601(System.Data.Common.DbDataReader)?displayProperty=fullName></li><li><xref:System.Data.Objects.ObjectContext.Translate%60%601(System.Data.Common.DbDataReader%2CSystem.String%2CSystem.Data.Objects.MergeOption)?displayProperty=fullName></li><li><xref:System.Data.Objects.ObjectContext.ExecuteStoreQuery%60%601(System.String%2CSystem.Object%5B%5D)?displayProperty=fullName></li><li><xref:System.Data.Objects.ObjectContext.ExecuteStoreQuery%60%601(System.String%2CSystem.String%2CSystem.Data.Objects.MergeOption%2CSystem.Object%5B%5D)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Data.Objects.ObjectContext.Translate%60%601(System.Data.Common.DbDataReader)?displayProperty=nameWithType></li><li><xref:System.Data.Objects.ObjectContext.Translate%60%601(System.Data.Common.DbDataReader%2CSystem.String%2CSystem.Data.Objects.MergeOption)?displayProperty=nameWithType></li><li><xref:System.Data.Objects.ObjectContext.ExecuteStoreQuery%60%601(System.String%2CSystem.Object%5B%5D)?displayProperty=nameWithType></li><li><xref:System.Data.Objects.ObjectContext.ExecuteStoreQuery%60%601(System.String%2CSystem.String%2CSystem.Data.Objects.MergeOption%2CSystem.Object%5B%5D)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0041</li></ul>|
 

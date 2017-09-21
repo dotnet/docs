@@ -29,7 +29,7 @@ This topic presents an example that opens an Office Open XML document, and retri
   
  For a detailed tutorial that explains how this example works, see [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md).  
   
- This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```csharp  
 public static class LocalExtensions  

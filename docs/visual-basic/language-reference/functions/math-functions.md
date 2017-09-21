@@ -38,10 +38,10 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Math Functions (Visual Basic)
-The methods of the <xref:System.Math?displayProperty=fullName> class provide trigonometric, logarithmic, and other common mathematical functions.  
+The methods of the <xref:System.Math?displayProperty=nameWithType> class provide trigonometric, logarithmic, and other common mathematical functions.  
   
 ## Remarks  
- The following table lists methods of the <xref:System.Math?displayProperty=fullName> class. You can use these in a Visual Basic program.  
+ The following table lists methods of the <xref:System.Math?displayProperty=nameWithType> class. You can use these in a Visual Basic program.  
   
 |.NET Framework method|Description|  
 |---------------------------|-----------------|  
@@ -72,7 +72,7 @@ The methods of the <xref:System.Math?displayProperty=fullName> class provide tri
 |<xref:System.Math.Tanh%2A>|Returns the hyperbolic tangent of the specified angle.|  
 |<xref:System.Math.Truncate%2A>|Calculates the integral part of a specified `Decimal` or `Double` number.|  
   
- To use these functions without qualification, import the <xref:System.Math?displayProperty=fullName> namespace into your project by adding the following code to the top of your source file:  
+ To use these functions without qualification, import the <xref:System.Math?displayProperty=nameWithType> namespace into your project by adding the following code to the top of your source file:  
   
 ```  
 Imports System.Math  

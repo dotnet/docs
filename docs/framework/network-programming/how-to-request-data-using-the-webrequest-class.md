@@ -73,7 +73,7 @@ The following procedure describes the steps used to request a resource from a se
     ```  
   
     > [!NOTE]
-    >  After you are finished with a <xref:System.Net.WebResponse> object, you must close it by calling the <xref:System.Net.WebResponse.Close%2A> method. Alternatively, if you have gotten the response stream from the response object, you can close the stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method. If you do not close either the response or the stream, your application can run out of connections to the server and become unable to process additional requests.  
+    >  After you are finished with a <xref:System.Net.WebResponse> object, you must close it by calling the <xref:System.Net.WebResponse.Close%2A> method. Alternatively, if you have gotten the response stream from the response object, you can close the stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method. If you do not close either the response or the stream, your application can run out of connections to the server and become unable to process additional requests.  
   
 4.  You can access the properties of the **WebResponse** or cast the **WebResponse** to a protocol-specific instance to read protocol-specific properties. For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebResponse>, cast the **WebResponse** to a **HttpWebResponse** reference. The following code example shows how to display the status information sent with a response.  
   

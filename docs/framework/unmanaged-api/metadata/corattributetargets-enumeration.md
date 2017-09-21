@@ -90,7 +90,7 @@ typedef enum CorAttributeTargets
 ## Remarks  
  The `CorAttributeTargets` enumeration values can be combined with a bitwise OR operation to get the preferred combination.  
   
- The `CorAttributeTargets` parallels the managed <xref:System.AttributeTargets?displayProperty=fullName> enumeration.  
+ The `CorAttributeTargets` parallels the managed <xref:System.AttributeTargets?displayProperty=nameWithType> enumeration.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -75,7 +75,7 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
   
      The configuration file initializes the settings for the trace source at the time the application is initialized. The application can dynamically change the properties set by the configuration file to override any settings specified by the user. For example, you might want to ensure that critical messages are always sent to a text file, regardless of the current configuration settings. The example code demonstrates how to override configuration file settings to ensure that critical messages are output to the trace listeners.  
   
-     Changing the configuration file settings while the application is executing does not change the initial settings. To change the settings, you must either restart the application or programmatically refresh the application by using the <xref:System.Diagnostics.Trace.Refresh%2A?displayProperty=fullName> method.  
+     Changing the configuration file settings while the application is executing does not change the initial settings. To change the settings, you must either restart the application or programmatically refresh the application by using the <xref:System.Diagnostics.Trace.Refresh%2A?displayProperty=nameWithType> method.  
   
 ### To initialize trace sources, listeners, and filters without a configuration file  
   

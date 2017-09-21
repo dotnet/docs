@@ -59,7 +59,7 @@ name2=value2
   
  The resource file format of .txt and .restext files is identical. The .restext file extension merely serves to make text files immediately identifiable as text-based resource files.  
   
- String resources appear as *name/value* pairs, where *name* is a string that identifies the resource, and *value* is the resource string that is returned when you pass *name* to a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>. *name* and *value* must be separated by an equal sign (=). For example:  
+ String resources appear as *name/value* pairs, where *name* is a string that identifies the resource, and *value* is the resource string that is returned when you pass *name* to a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType>. *name* and *value* must be separated by an equal sign (=). For example:  
   
 ```  
 FileMenuName=File  
@@ -71,7 +71,7 @@ HelpMenuName=Help
 > [!CAUTION]
 >  Do not use resource files to store passwords, security-sensitive information, or private data.  
   
- Empty strings (that is, a resource whose value is <xref:System.String.Empty?displayProperty=fullName>) are permitted in text files. For example:  
+ Empty strings (that is, a resource whose value is <xref:System.String.Empty?displayProperty=nameWithType>) are permitted in text files. For example:  
   
 ```  
 EmptyString=  
@@ -169,13 +169,13 @@ greeting=Hello, {0}!
   
 <a name="ResourcesFiles"></a>   
 ## Resources in .resources Files  
- You can use the <xref:System.Resources.ResourceWriter?displayProperty=fullName> class to programmatically create a binary resource (.resources) file directly from code. You can also use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to create a .resources file from a text file or a .resx file. The .resources file can contain binary data (byte arrays) and object data in addition to string data. Programmatically creating a .resources file requires the following steps:  
+ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithType> class to programmatically create a binary resource (.resources) file directly from code. You can also use [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to create a .resources file from a text file or a .resx file. The .resources file can contain binary data (byte arrays) and object data in addition to string data. Programmatically creating a .resources file requires the following steps:  
   
 1.  Create a <xref:System.Resources.ResourceWriter> object with a unique file name. You can do this by specifying either a file name or a file stream to a <xref:System.Resources.ResourceWriter> class constructor.  
   
-2.  Call one of the overloads of the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=fullName> method for each named resource to add to the file. The resource can be a string, an object, or a collection of binary data (a byte array).  
+2.  Call one of the overloads of the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=nameWithType> method for each named resource to add to the file. The resource can be a string, an object, or a collection of binary data (a byte array).  
   
-3.  Call the <xref:System.Resources.ResourceWriter.Close%2A?displayProperty=fullName> method to write the resources to the file and to close the <xref:System.Resources.ResourceWriter> object.  
+3.  Call the <xref:System.Resources.ResourceWriter.Close%2A?displayProperty=nameWithType> method to write the resources to the file and to close the <xref:System.Resources.ResourceWriter> object.  
   
 > [!NOTE]
 >  Do not use resource files to store passwords, security-sensitive information, or private data.  

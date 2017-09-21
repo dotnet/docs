@@ -30,7 +30,7 @@ With virtual mode, you can manage the interaction between the <xref:System.Windo
   
  Because unbound columns are outside the data source, they are ignored by the data source's sorting operations. Therefore, when you enable sorting in mixed mode, you must manage the unbound data in a local cache and implement virtual mode to let the <xref:System.Windows.Forms.DataGridView> control interact with it.  
   
- For more information about using virtual mode to maintain the values in unbound columns, see the examples in the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A?displayProperty=fullName> property and <xref:System.Windows.Forms.DataGridViewComboBoxColumn?displayProperty=fullName> class reference topics.  
+ For more information about using virtual mode to maintain the values in unbound columns, see the examples in the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A?displayProperty=nameWithType> property and <xref:System.Windows.Forms.DataGridViewComboBoxColumn?displayProperty=nameWithType> class reference topics.  
   
 ## Replacing Bound Mode  
  If bound mode does not meet your performance needs, you can manage all your data in a custom cache through virtual-mode event handlers. For example, you can use virtual mode to implement a just-in-time data loading mechanism that retrieves only as much data from a networked database as is necessary for optimal performance. This scenario is particularly useful when working with large amounts of data over a slow network connection or with client machines that have a limited amount of RAM or storage space.  

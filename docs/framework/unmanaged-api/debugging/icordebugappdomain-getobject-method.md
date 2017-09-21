@@ -46,10 +46,10 @@ HRESULT GetObject (
  [out] A pointer to the address of an ICorDebugValue interface object that represents the CLR application domain.  
   
 ## Return Value  
- If a managed <xref:System.AppDomain?displayProperty=fullName> object hasn't been constructed for this application domain, the method returns `S_FALSE` and places `NULL` in `*ppObject`.  
+ If a managed <xref:System.AppDomain?displayProperty=nameWithType> object hasn't been constructed for this application domain, the method returns `S_FALSE` and places `NULL` in `*ppObject`.  
   
 ## Remarks  
- Each application domain in a process may have a managed <xref:System.AppDomain?displayProperty=fullName> object in the runtime that represents it. This function gets an ICorDebugValue interface object that corresponds to this managed <xref:System.AppDomain?displayProperty=fullName> object.  
+ Each application domain in a process may have a managed <xref:System.AppDomain?displayProperty=nameWithType> object in the runtime that represents it. This function gets an ICorDebugValue interface object that corresponds to this managed <xref:System.AppDomain?displayProperty=nameWithType> object.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

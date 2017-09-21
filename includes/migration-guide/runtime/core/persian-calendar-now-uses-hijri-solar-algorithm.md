@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.6|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Globalization.PersianCalendar?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Globalization.PersianCalendar?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0134</li></ul>|
 

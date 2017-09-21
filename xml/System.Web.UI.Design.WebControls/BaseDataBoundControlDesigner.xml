@@ -419,7 +419,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add or remove properties from the **Properties** grid.  
   
  For the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class, the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.PreFilterProperties%2A> shadows the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the control. It makes a copy of the attribute array of the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A>, and then adds these attributes to the shadowed property. It sets the <xref:System.ComponentModel.BrowsableAttribute.Browsable%2A> attribute of the shadowed <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property to `false` unless the <xref:System.ComponentModel.BrowsableAttribute.Browsable%2A> attribute of the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSourceID%2A> property of the control is already set to `true`.  
   

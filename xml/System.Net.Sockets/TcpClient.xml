@@ -240,7 +240,7 @@
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.%23ctor%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -328,7 +328,7 @@
 ## Remarks  
  <xref:System.Net.Sockets.TcpClient.Available%2A> is a way to determine whether data is queued for reading. If data is available, call <xref:System.Net.Sockets.NetworkStream.Read%2A> to get the data. The available data is the total amount of data queued in the network buffer for reading. If no data is queued in the network buffer, <xref:System.Net.Sockets.TcpClient.Available%2A> returns 0.  
   
- If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.TcpClient.Available%2A> may throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+ If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.TcpClient.Available%2A> may throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
   
    
   
@@ -653,7 +653,7 @@
  Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPEndPoint>. Before you call <xref:System.Net.Sockets.TcpClient.Connect%2A> you must create an instance of the <xref:System.Net.IPEndPoint> class using an IP address and a port number. Use this <xref:System.Net.IPEndPoint> as the `remoteEP` parameter. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md)  
@@ -710,7 +710,7 @@
  Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -769,7 +769,7 @@
  This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call the <xref:System.Net.Sockets.TcpClient.Connect%2A> method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -830,7 +830,7 @@
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.Connect%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -895,7 +895,7 @@
  Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -951,7 +951,7 @@
  This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call this method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1010,7 +1010,7 @@
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.ConnectAsync%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1181,7 +1181,7 @@
  This method blocks until the operation is complete. To perform this operation synchronously, use a <xref:System.Net.Sockets.TcpClient.Connect%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
   
    
   
@@ -1277,7 +1277,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Net.Sockets.TcpClient> class finalizer closes the TCP connection and releases all managed resources associated with the <xref:System.Net.Sockets.TcpClient>. These resources include the underlying <xref:System.Net.Sockets.Socket> used for connecting with the remote host, and the <xref:System.Net.Sockets.NetworkStream> used to send and receive data. The finalizer does not release any unmanaged resources.  
   
@@ -1325,7 +1325,7 @@
 >  You must close the <xref:System.Net.Sockets.NetworkStream> when you are through sending and receiving data. Closing <xref:System.Net.Sockets.TcpClient> does not release the <xref:System.Net.Sockets.NetworkStream>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1481,7 +1481,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.TcpClient.ReceiveBufferSize%2A> property gets or sets the number of bytes that you are expecting to store in the receive buffer for each read operation. This property actually manipulates the network buffer space allocated for receiving incoming data.  
   
- Your network buffer should be at least as large as your application buffer to ensure that the desired data will be available when you call the <xref:System.Net.Sockets.NetworkStream.Read%2A?displayProperty=fullName> method. Use the <xref:System.Net.Sockets.TcpClient.ReceiveBufferSize%2A> property to set this size. If your application will be receiving bulk data, you should pass the <xref:System.Net.Sockets.NetworkStream.Read%2A> method a very large application buffer.  
+ Your network buffer should be at least as large as your application buffer to ensure that the desired data will be available when you call the <xref:System.Net.Sockets.NetworkStream.Read%2A?displayProperty=nameWithType> method. Use the <xref:System.Net.Sockets.TcpClient.ReceiveBufferSize%2A> property to set this size. If your application will be receiving bulk data, you should pass the <xref:System.Net.Sockets.NetworkStream.Read%2A> method a very large application buffer.  
   
  If the network buffer is smaller than the amount of data you request in the <xref:System.Net.Sockets.NetworkStream.Read%2A> method, you will not be able to retrieve the desired amount of data in one read operation. This incurs the overhead of additional calls to the <xref:System.Net.Sockets.NetworkStream.Read%2A> method.  
   
@@ -1576,7 +1576,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.SendBufferSize%2A> property gets or sets the number of bytes that you are expecting to send in each call to the <xref:System.Net.Sockets.NetworkStream.Write%2A?displayProperty=fullName> method. This property actually manipulates the network buffer space allocated for send operation.  
+ The <xref:System.Net.Sockets.TcpClient.SendBufferSize%2A> property gets or sets the number of bytes that you are expecting to send in each call to the <xref:System.Net.Sockets.NetworkStream.Write%2A?displayProperty=nameWithType> method. This property actually manipulates the network buffer space allocated for send operation.  
   
  Your network buffer should be at least as large as your application buffer to ensure that the desired data will be stored and sent in one operation. Use the <xref:System.Net.Sockets.TcpClient.SendBufferSize%2A> property to set this size. If your application will be sending bulk data, you should pass the <xref:System.Net.Sockets.NetworkStream.Write%2A> method a very large application buffer.  
   

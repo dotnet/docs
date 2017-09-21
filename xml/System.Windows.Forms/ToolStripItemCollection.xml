@@ -316,7 +316,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -416,7 +416,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=nameWithType> property.  
   
  If <xref:System.Windows.Forms.ToolStripItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
   
@@ -599,7 +599,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

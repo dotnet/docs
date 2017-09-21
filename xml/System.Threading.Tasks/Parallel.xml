@@ -97,12 +97,12 @@
    
   
 ## Examples  
- The following example executes up to 100 iterations of a loop in parallel. Each iteration pauses for a random interval from 1 to 1,000 milliseconds. A randomly generated value determines on which iteration of the loop the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=fullName> method is called. As the output from the example shows, no iterations whose index is greater than the <xref:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration%2A?displayProperty=fullName> property value start after the call to the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=fullName> method.  
+ The following example executes up to 100 iterations of a loop in parallel. Each iteration pauses for a random interval from 1 to 1,000 milliseconds. A randomly generated value determines on which iteration of the loop the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=nameWithType> method is called. As the output from the example shows, no iterations whose index is greater than the <xref:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration%2A?displayProperty=nameWithType> property value start after the call to the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Threading.Tasks.ParallelLoopState#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.parallelloopstate/cs/break1.cs#2)]
  [!code-vb[System.Threading.Tasks.ParallelLoopState#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.parallelloopstate/vb/break1.vb#2)]  
   
- Because iterations of the loop are still likely to be executing when the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=fullName> method is called, each iteration calls the <xref:System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration%2A?displayProperty=fullName> property to check whether another iteration has called the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=fullName> method. If  the property value is `true`, the iteration checks the value of the <xref:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration%2A?displayProperty=fullName> property and, if it is greater than the current iteration's index value, returns immediately.  
+ Because iterations of the loop are still likely to be executing when the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=nameWithType> method is called, each iteration calls the <xref:System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration%2A?displayProperty=nameWithType> property to check whether another iteration has called the <xref:System.Threading.Tasks.ParallelLoopState.Break%2A?displayProperty=nameWithType> method. If  the property value is `true`, the iteration checks the value of the <xref:System.Threading.Tasks.ParallelLoopState.LowestBreakIteration%2A?displayProperty=nameWithType> property and, if it is greater than the current iteration's index value, returns immediately.  
   
  ]]></format>
         </remarks>
@@ -431,7 +431,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=fullName> method with a <xref:System.Threading.Tasks.ParallelOptions> object:  
+ The following example shows how to use the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method with a <xref:System.Threading.Tasks.ParallelOptions> object:  
   
  [!code-csharp[System.Threading.Tasks.Parallel#03](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.parallel/cs/parallelfor.cs#03)]
  [!code-vb[System.Threading.Tasks.Parallel#03](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.parallel/vb/parallelfor.vb#03)]  
@@ -560,7 +560,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  If `fromInclusive` is greater than or equal to `toExclusive`, then the method returns immediately without performing any iterations.  
   
@@ -629,7 +629,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  If `fromInclusive` is greater than or equal to `toExclusive`, then the method returns immediately without performing any iterations.  
   
@@ -700,7 +700,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple threads; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  If `fromInclusive` is greater than or equal to `toExclusive`, then the method returns immediately without performing any iterations.  
   
@@ -783,7 +783,7 @@
   
  The `localInit` delegate is invoked once for each thread that participates in the loop's execution and returns the initial local state for each of those threads. These initial states are passed to the first `body` invocations on each thread. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each thread returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per thread to perform a final action on each thread's local state. This delegate might be invoked concurrently on multiple threads; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  If `fromInclusive` is greater than or equal to `toExclusive`, then the method returns immediately without performing any iterations.  
   
@@ -846,7 +846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -905,7 +905,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -964,12 +964,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
    
   
 ## Examples  
- The following example shows how to implement a range partitioner for use with <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName>:  
+ The following example shows how to implement a range partitioner for use with <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>:  
   
  [!code-csharp[System.Threading.Tasks.Parallel_RangePartitioners#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.parallel_rangepartitioners/cs/rangepartitioner.cs#01)]
  [!code-vb[System.Threading.Tasks.Parallel_RangePartitioners#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.parallel_rangepartitioners/vb/rangepart.vb#01)]  
@@ -1194,7 +1194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -1261,7 +1261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -1324,7 +1324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -1572,7 +1572,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  ]]></format>
         </remarks>
@@ -1642,7 +1642,7 @@
   
  The `localInit` delegate is invoked once for each thread that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  ]]></format>
         </remarks>
@@ -1712,7 +1712,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task’s local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  ]]></format>
         </remarks>
@@ -1781,7 +1781,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per thread to perform a final action on each task’s local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
    
   
@@ -1860,7 +1860,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each thread returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task’s local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  ]]></format>
         </remarks>
@@ -1934,7 +1934,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  ]]></format>
         </remarks>
@@ -2012,7 +2012,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per thread to perform a final action on each task’s local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  ]]></format>
         </remarks>
@@ -2089,7 +2089,7 @@
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per thread to perform a final action on each task’s local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
- The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
+ The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method may use more tasks than threads over the lifetime of its execution, as existing tasks complete and are replaced by new tasks. This gives the underlying <xref:System.Threading.Tasks.TaskScheduler> object the chance to add, change, or remove threads that service the loop.  
   
  ]]></format>
         </remarks>

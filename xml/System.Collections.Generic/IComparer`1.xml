@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface is used with the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName> and <xref:System.Collections.Generic.List%601.BinarySearch%2A?displayProperty=fullName> methods. It provides a way to customize the sort order of a collection. Classes that implement this interface include the <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602> generic classes.  
+ This interface is used with the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> and <xref:System.Collections.Generic.List%601.BinarySearch%2A?displayProperty=nameWithType> methods. It provides a way to customize the sort order of a collection. Classes that implement this interface include the <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602> generic classes.  
   
  The default implementation of this interface is the <xref:System.Collections.Generic.Comparer%601> class. The <xref:System.StringComparer> class implements this interface for type <xref:System.String>.  
   

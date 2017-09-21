@@ -97,12 +97,12 @@
  The constructor for the <xref:System.Windows.Forms.DataGridViewTextBoxColumn> class initializes this property to a newly created <xref:System.Windows.Forms.DataGridViewTextBoxCell>.  
   
 > [!CAUTION]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
+>  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=nameWithType> method).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md).  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#120)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#120)]
@@ -178,7 +178,7 @@
   
  The <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> value does not prevent you from sorting a column programmatically, although other restrictions may apply. For more information, see the <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
   
- A <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=fullName> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
+ A <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=nameWithType> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
   
    
   

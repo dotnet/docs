@@ -403,7 +403,7 @@
 ## Remarks  
  An <xref:System.Net.HttpListener> indicates that it requires authentication using the <xref:System.Net.HttpListener.AuthenticationSchemes%2A> property or by specifying an <xref:System.Net.AuthenticationSchemeSelector> delegate using the <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
   
- To determine the client's login name and authentication information, check the <xref:System.Security.Principal.IPrincipal.Identity%2A?displayProperty=fullName> property in the object returned by this property.  
+ To determine the client's login name and authentication information, check the <xref:System.Security.Principal.IPrincipal.Identity%2A?displayProperty=nameWithType> property in the object returned by this property.  
   
    
   

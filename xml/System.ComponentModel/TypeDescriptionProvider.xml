@@ -163,9 +163,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IServiceProvider> specified by the `provider` parameter is passed in by the <xref:System.ComponentModel.TypeDescriptor.CreateInstance%2A?displayProperty=fullName> method of the <xref:System.ComponentModel.TypeDescriptor> class. If `provider` is not `null`, the service provider can be used by the type description provider to obtain additional context about the creation call.  
+ The <xref:System.IServiceProvider> specified by the `provider` parameter is passed in by the <xref:System.ComponentModel.TypeDescriptor.CreateInstance%2A?displayProperty=nameWithType> method of the <xref:System.ComponentModel.TypeDescriptor> class. If `provider` is not `null`, the service provider can be used by the type description provider to obtain additional context about the creation call.  
   
- The <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method is `virtual` and, by default, returns the result of the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method if `provider` is `null`. If `provider` is `null`, this method will invoke the <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method of the parent provider.  
+ The <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method is `virtual` and, by default, returns the result of the <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> method if `provider` is `null`. If `provider` is `null`, this method will invoke the <xref:System.ComponentModel.TypeDescriptionProvider.CreateInstance%2A> method of the parent provider.  
   
  ]]></format>
         </remarks>

@@ -1008,7 +1008,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
   
@@ -1212,7 +1212,7 @@
 ## Remarks  
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
@@ -1264,7 +1264,7 @@
 ## Remarks  
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
@@ -1525,7 +1525,7 @@
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
   

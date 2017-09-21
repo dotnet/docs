@@ -33,9 +33,9 @@
 ## Remarks  
  This interface is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Reflection.ConstructorInfo?displayProperty=fullName> class discovers the attributes of a class constructor and provides access to constructor metadata.  
+ The <xref:System.Reflection.ConstructorInfo?displayProperty=nameWithType> class discovers the attributes of a class constructor and provides access to constructor metadata.  
   
- The <xref:System.Runtime.InteropServices._ConstructorInfo?displayProperty=fullName> interface preserves the vtable order of the <xref:System.Reflection.ConstructorInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ The <xref:System.Runtime.InteropServices._ConstructorInfo?displayProperty=nameWithType> interface preserves the vtable order of the <xref:System.Reflection.ConstructorInfo?displayProperty=nameWithType> class members that can be accessed by unmanaged COM objects.  
   
  ]]></format>
     </remarks>

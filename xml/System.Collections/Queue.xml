@@ -62,7 +62,7 @@
   
  <xref:System.Collections.Queue> accepts `null` as a valid value and allows duplicate elements.  
   
- For the generic version of this collection, see <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>  
+ For the generic version of this collection, see <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType>  
   
    
   
@@ -375,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Queue.Count%2A>.  
   

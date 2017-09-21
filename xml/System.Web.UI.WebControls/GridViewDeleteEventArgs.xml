@@ -94,7 +94,7 @@
   
  The <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary is automatically populated with the name/value pairs of the field or fields specified in the <xref:System.Web.UI.WebControls.GridView.DataKeyNames%2A> property. If multiple fields form the primary key, a separate entry is added to the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary for each key field.  
   
- To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -160,7 +160,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> property is automatically populated with the name/value pairs of the non-key fields for the row. To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> property is automatically populated with the name/value pairs of the non-key fields for the row. To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object in the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  The primary key field or fields are not included in this dictionary. To access the values of the primary key field or fields, use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> property.  

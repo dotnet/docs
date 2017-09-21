@@ -305,7 +305,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The event data that the parameter `e` provides contains an <xref:System.Windows.DependencyPropertyChangedEventArgs.OldValue%2A?displayProperty=fullName> and a <xref:System.Windows.Ink.PropertyDataChangedEventArgs.NewValue%2A?displayProperty=fullName>. The <xref:System.Windows.DependencyPropertyChangedEventArgs.OldValue%2A?displayProperty=fullName> is set to the item that was previously selected, or is set to `null` if there is no previously selected item. Similarly, the <xref:System.Windows.Ink.PropertyDataChangedEventArgs.NewValue%2A?displayProperty=fullName> is set to the newly selected item, or is set to `null` if no new item is selected.  
+ The event data that the parameter `e` provides contains an <xref:System.Windows.DependencyPropertyChangedEventArgs.OldValue%2A?displayProperty=nameWithType> and a <xref:System.Windows.Ink.PropertyDataChangedEventArgs.NewValue%2A?displayProperty=nameWithType>. The <xref:System.Windows.DependencyPropertyChangedEventArgs.OldValue%2A?displayProperty=nameWithType> is set to the item that was previously selected, or is set to `null` if there is no previously selected item. Similarly, the <xref:System.Windows.Ink.PropertyDataChangedEventArgs.NewValue%2A?displayProperty=nameWithType> is set to the newly selected item, or is set to `null` if no new item is selected.  
   
  ]]></format>
         </remarks>

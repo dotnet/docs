@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Data.Services.DataService%601?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Data.Services.DataService%601?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0029</li></ul>|
 

@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.7|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Net.Security.SslStream?displayProperty=fullName></li><li><xref:System.Net.WebRequest?displayProperty=fullName></li><li><xref:System.Net.HttpWebRequest?displayProperty=fullName></li><li><xref:System.Net.FtpWebRequest?displayProperty=fullName></li><li><xref:System.Net.Mail.SmtpClient?displayProperty=fullName></li><li><xref:System.Net.Http?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Net.Security.SslStream?displayProperty=nameWithType></li><li><xref:System.Net.WebRequest?displayProperty=nameWithType></li><li><xref:System.Net.HttpWebRequest?displayProperty=nameWithType></li><li><xref:System.Net.FtpWebRequest?displayProperty=nameWithType></li><li><xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType></li><li><xref:System.Net.Http?displayProperty=nameWithType></li></ul>|
 

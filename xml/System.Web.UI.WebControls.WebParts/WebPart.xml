@@ -1544,7 +1544,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=fullName> method has the same purpose as the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty?displayProperty=fullName> method, which is to set a flag indicating that control state data has been changed (personalized) on a server control during an HTTP `GET` request. The difference between these methods is that the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=fullName> method is used for server controls that do not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, but are placed within <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones to participate in Web Parts applications.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=nameWithType> method has the same purpose as the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty?displayProperty=nameWithType> method, which is to set a flag indicating that control state data has been changed (personalized) on a server control during an HTTP `GET` request. The difference between these methods is that the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=nameWithType> method is used for server controls that do not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, but are placed within <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones to participate in Web Parts applications.  
   
  ]]></format>
         </remarks>

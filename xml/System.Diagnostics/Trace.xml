@@ -64,7 +64,7 @@
    
   
 ## Examples  
- The following example uses <xref:System.Diagnostics.Trace> to indicate the beginning and the end of a program's execution. The example also uses the <xref:System.Diagnostics.Trace.Indent%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Unindent%2A?displayProperty=fullName> methods to distinguish the tracing output. For a more complete example of the use of <xref:System.Diagnostics.Trace>, see [How to: Add Trace Statements to Application Code](~/docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md).  
+ The following example uses <xref:System.Diagnostics.Trace> to indicate the beginning and the end of a program's execution. The example also uses the <xref:System.Diagnostics.Trace.Indent%2A?displayProperty=nameWithType> and <xref:System.Diagnostics.Trace.Unindent%2A?displayProperty=nameWithType> methods to distinguish the tracing output. For a more complete example of the use of <xref:System.Diagnostics.Trace>, see [How to: Add Trace Statements to Application Code](~/docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md).  
   
  [!code-cpp[Classic Trace Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Trace Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Trace Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Trace Example/CS/source.cs#1)]
@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
   
  Typically, the <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29> evaluates the condition. If the result is `false`, it sends a failure message to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   
@@ -122,7 +122,7 @@
 > [!NOTE]
 >  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
- You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=fullName> property. The configuration file should be formatted as follows:  
+ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
 ```  
 <configuration>  
@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
   
  Typically, the <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%29> evaluates the condition. If the result is `false`, it sends the specified diagnostic message to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   
@@ -197,7 +197,7 @@
 > [!NOTE]
 >  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
- You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=fullName> property. The configuration file should be formatted as follows:  
+ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
 ```  
 <configuration>  
@@ -265,7 +265,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. The <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
   
  Typically, the <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%2CSystem.String%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Trace.Assert%2A> evaluates the condition. If the result is `false`, it sends the specified diagnostic message and detailed message to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   
@@ -274,7 +274,7 @@
 > [!NOTE]
 >  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
- You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=fullName> property. The configuration file should be formatted as follows:  
+ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
 ```  
 <configuration>  
@@ -1282,9 +1282,9 @@ End of list of errors
  This method calls the <xref:System.Diagnostics.TraceListener.Write%2A> method of the trace listener.  
   
 > [!NOTE]
->  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property.  
+>  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property.  
   
- By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property. To use the <xref:System.Diagnostics.Trace?displayProperty=fullName> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
+ By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property. To use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
   
    
   
@@ -1345,9 +1345,9 @@ End of list of errors
  This method calls the <xref:System.Diagnostics.TraceListener.Write%2A> method of the trace listener.  
   
 > [!NOTE]
->  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property.  
+>  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property.  
   
- By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property. To use the <xref:System.Diagnostics.Trace?displayProperty=fullName> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
+ By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property. To use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
   
    
   
@@ -1412,9 +1412,9 @@ End of list of errors
  This method calls the <xref:System.Diagnostics.TraceListener.Write%2A> method of the trace listener.  
   
 > [!NOTE]
->  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property.  
+>  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property.  
   
- By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property. To use the <xref:System.Diagnostics.Trace?displayProperty=fullName> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
+ By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property. To use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
   
    
   
@@ -1479,9 +1479,9 @@ End of list of errors
  This method calls the <xref:System.Diagnostics.TraceListener.Write%2A> method of the trace listener.  
   
 > [!NOTE]
->  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property.  
+>  ASP.NET supplies tracing functionality tailored for Web pages. To write trace messages in ASP.NET pages, use the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property.  
   
- By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=fullName> property. To use the <xref:System.Diagnostics.Trace?displayProperty=fullName> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
+ By default, in code associated with an ASP.NET Web page, the statement `Trace.Write("...")` is a call to the <xref:System.Web.TraceContext.Write%2A> method of the <xref:System.Web.UI.Page.Trace%2A?displayProperty=nameWithType> property. To use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType> class in Web pages, you must include the namespace, for example, `System.Diagnostics.Trace.Write("...")`.  
   
    
   

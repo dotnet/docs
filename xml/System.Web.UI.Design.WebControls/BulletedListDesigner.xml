@@ -66,7 +66,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A?displayProperty=fullName> method to filter the set of events that the control it is designing will expose through the <xref:System.ComponentModel.TypeDescriptor> object.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A?displayProperty=nameWithType> method to filter the set of events that the control it is designing will expose through the <xref:System.ComponentModel.TypeDescriptor> object.  
   
  For the <xref:System.Web.UI.WebControls.BulletedList> control, the <xref:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents%2A> method removes the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event from the list that is exposed by the designer.  
   

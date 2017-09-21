@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You usually will not create instances of <xref:System.Diagnostics.EventLogEntry> directly when working with the <xref:System.Diagnostics.EventLog> class. The <xref:System.Diagnostics.EventLog.Entries%2A> member of the <xref:System.Diagnostics.EventLog> class contains a collection of <xref:System.Diagnostics.EventLogEntry> instances, which you iterate over when reading by using the <xref:System.Diagnostics.EventLogEntryCollection.Item%2A?displayProperty=fullName> class index member.  
+ You usually will not create instances of <xref:System.Diagnostics.EventLogEntry> directly when working with the <xref:System.Diagnostics.EventLog> class. The <xref:System.Diagnostics.EventLog.Entries%2A> member of the <xref:System.Diagnostics.EventLog> class contains a collection of <xref:System.Diagnostics.EventLogEntry> instances, which you iterate over when reading by using the <xref:System.Diagnostics.EventLogEntryCollection.Item%2A?displayProperty=nameWithType> class index member.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -101,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each application (event source) can define its own numbered categories and the text strings to which they are mapped. The Event Viewer can use the category to filter events in the log. The categories must be numbered consecutively beginning with the number 1. The category number is specified by the <xref:System.Diagnostics.EventInstance.CategoryId%2A?displayProperty=fullName> property. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string. For more information, see <xref:System.Diagnostics.EventInstance>.  
+ Each application (event source) can define its own numbered categories and the text strings to which they are mapped. The Event Viewer can use the category to filter events in the log. The categories must be numbered consecutively beginning with the number 1. The category number is specified by the <xref:System.Diagnostics.EventInstance.CategoryId%2A?displayProperty=nameWithType> property. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string. For more information, see <xref:System.Diagnostics.EventInstance>.  
   
  ]]></format>
         </remarks>

@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
    
   
@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
   
@@ -175,7 +175,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
   
@@ -254,7 +254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.OrderedDictionary> collection must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

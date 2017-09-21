@@ -246,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Dispose` behavior for a <xref:System.Xaml.XamlXmlWriter> can be influenced by its writer settings, especially by <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A?displayProperty=fullName>.  
+ The `Dispose` behavior for a <xref:System.Xaml.XamlXmlWriter> can be influenced by its writer settings, especially by <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -484,7 +484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The input `value` may be `null`, which supports explicitly writing out null as a serialized value. This behavior uses the <xref:System.Xaml.XamlLanguage.Null%2A?displayProperty=fullName> definition as <xref:System.Xaml.XamlXmlWriter.WriteStartObject%2A> input and then immediately calls <xref:System.Xaml.XamlXmlWriter.WriteEndObject%2A>.  
+ The input `value` may be `null`, which supports explicitly writing out null as a serialized value. This behavior uses the <xref:System.Xaml.XamlLanguage.Null%2A?displayProperty=nameWithType> definition as <xref:System.Xaml.XamlXmlWriter.WriteStartObject%2A> input and then immediately calls <xref:System.Xaml.XamlXmlWriter.WriteEndObject%2A>.  
   
  ]]></format>
         </remarks>

@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method.  
+ This method overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -367,7 +367,7 @@
 ## Remarks  
  The public key token is represented by the last 8 bytes of the SHA-1 hash of the public key under which the application is signed.  
   
- For more information, see <xref:System.Reflection.AssemblyName.GetPublicKeyToken%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Reflection.AssemblyName.GetPublicKeyToken%2A?displayProperty=nameWithType>.  
   
    
   
@@ -410,7 +410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -444,7 +444,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.Version?displayProperty=fullName>.  
+ For more information, see <xref:System.Version?displayProperty=nameWithType>.  
   
    
   

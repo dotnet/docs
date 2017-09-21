@@ -204,10 +204,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.WebControls.TableRowCollection> into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index.  
+ Use this method to copy the contents of the <xref:System.Web.UI.WebControls.TableRowCollection> into the specified <xref:System.Array?displayProperty=nameWithType>, starting at the specified index.  
   
 > [!NOTE]
->  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName>.  
+>  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=nameWithType>.  
   
    
   
@@ -274,21 +274,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object that can be iterated through easily to get each item in the <xref:System.Web.UI.WebControls.TableRowCollection>.  
+ Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> implemented object that can be iterated through easily to get each item in the <xref:System.Web.UI.WebControls.TableRowCollection>.  
   
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property to get the item currently pointed to in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator back to the initial position.  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator back to the initial position.  
   
 > [!NOTE]
->  The <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method must be called after creating a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object or using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  The <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method must be called after creating a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> implemented object or using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableRowCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object that is iterated through to display the items in the table.  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TableRowCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> implemented object that is iterated through to display the items in the table.  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic TableRowCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TableRowCollection.GetEnumerator Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic TableRowCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TableRowCollection.GetEnumerator Example/VB/sourcevb.aspx#1)]  -->  
@@ -380,9 +380,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from <xref:System.Collections.ICollection?displayProperty=fullName> and is overridden to always return `false`.  
+ This property is derived from <xref:System.Collections.ICollection?displayProperty=nameWithType> and is overridden to always return `false`.  
   
- For more information on the <xref:System.Web.UI.WebControls.TableCellCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.TableCellCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -518,7 +518,7 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Web.UI.WebControls.TableRowCollection> itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.TableCellCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.TableCellCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -547,7 +547,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.TableRowCollection.Add%2A?displayProperty=fullName> method to add an element to a <xref:System.Web.UI.WebControls.TableRowCollection> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.TableRowCollection.Add%2A?displayProperty=nameWithType> method to add an element to a <xref:System.Web.UI.WebControls.TableRowCollection> object.  
   
  The <xref:System.Web.UI.WebControls.TableRowCollection.System%23Collections%23IList%23Add%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.TableRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   
@@ -725,7 +725,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.TableRowCollection.Remove%2A?displayProperty=fullName> method to remove an element from a <xref:System.Web.UI.WebControls.TableRowCollection> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.TableRowCollection.Remove%2A?displayProperty=nameWithType> method to remove an element from a <xref:System.Web.UI.WebControls.TableRowCollection> object.  
   
  The <xref:System.Web.UI.WebControls.TableRowCollection.System%23Collections%23IList%23Remove%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.TableRowCollection> instance is cast to an <xref:System.Collections.IList> interface.  
   

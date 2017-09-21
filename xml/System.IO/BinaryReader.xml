@@ -713,7 +713,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
   
- If the integer will fit in seven bits, the integer takes only one byte of space. The integer is expected to have been written through <xref:System.IO.BinaryWriter.Write7BitEncodedInt%2A?displayProperty=fullName>.  
+ If the integer will fit in seven bits, the integer takes only one byte of space. The integer is expected to have been written through <xref:System.IO.BinaryWriter.Write7BitEncodedInt%2A?displayProperty=nameWithType>.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   

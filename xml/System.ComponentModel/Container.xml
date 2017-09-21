@@ -385,7 +385,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of this method returns the current instance of the class if `service` is an <xref:System.ComponentModel.IContainer>; otherwise, it returns `null`. You can override this method to provide a custom implementation to return a service object. For more information, see the <xref:System.IServiceProvider.GetService%2A?displayProperty=fullName> method.  
+ The default implementation of this method returns the current instance of the class if `service` is an <xref:System.ComponentModel.IContainer>; otherwise, it returns `null`. You can override this method to provide a custom implementation to return a service object. For more information, see the <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

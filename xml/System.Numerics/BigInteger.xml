@@ -69,7 +69,7 @@
   
  These methods enable you to instantiate a <xref:System.Numerics.BigInteger> object whose value is in the range of one of the existing numeric types only. You can instantiate a <xref:System.Numerics.BigInteger> object whose value can exceed the range of the existing numeric types in one of three ways:  
   
--   You can use the `new` keyword and provide a byte array of any size to the <xref:System.Numerics.BigInteger.%23ctor%2A?displayProperty=fullName> constructor. For example:  
+-   You can use the `new` keyword and provide a byte array of any size to the <xref:System.Numerics.BigInteger.%23ctor%2A?displayProperty=nameWithType> constructor. For example:  
   
      [!code-csharp[System.Numerics.BigInteger.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class/cs/BigInteger_Examples.cs#4)]
      [!code-vb[System.Numerics.BigInteger.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class/vb/BigInteger_Examples.vb#4)]  
@@ -79,7 +79,7 @@
      [!code-csharp[System.Numerics.BigInteger.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class/cs/BigInteger_Examples.cs#5)]
      [!code-vb[System.Numerics.BigInteger.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class/vb/BigInteger_Examples.vb#5)]  
   
--   You can call a `static` (`Shared` in Visual Basic) <xref:System.Numerics.BigInteger> method that performs some operation on a numeric expression and returns a calculated <xref:System.Numerics.BigInteger> result. The following example does this by cubing <xref:System.UInt64.MaxValue?displayProperty=fullName> and assigning the result to a <xref:System.Numerics.BigInteger>.  
+-   You can call a `static` (`Shared` in Visual Basic) <xref:System.Numerics.BigInteger> method that performs some operation on a numeric expression and returns a calculated <xref:System.Numerics.BigInteger> result. The following example does this by cubing <xref:System.UInt64.MaxValue?displayProperty=nameWithType> and assigning the result to a <xref:System.Numerics.BigInteger>.  
   
      [!code-csharp[System.Numerics.BigInteger.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class/cs/BigInteger_Examples.cs#6)]
      [!code-vb[System.Numerics.BigInteger.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class/vb/BigInteger_Examples.vb#6)]  
@@ -129,7 +129,7 @@
  [!code-csharp[System.Numerics.BigInteger.Class.ByteAndHex#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/cs/ByteAndHex_Examples.cs#1)]
  [!code-vb[System.Numerics.BigInteger.Class.ByteAndHex#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/vb/ByteAndHex_Examples.vb#1)]  
   
- To instantiate a <xref:System.Numerics.BigInteger> value from a byte array that represents a value of some other integral type, you can pass the integral value to the <xref:System.BitConverter.GetBytes%2A?displayProperty=fullName> method, and then pass the resulting byte array to the <xref:System.Numerics.BigInteger.%23ctor%28System.Byte%5B%5D%29> constructor. The following example instantiates a <xref:System.Numerics.BigInteger> value from a byte array that represents an <xref:System.Int16> value.  
+ To instantiate a <xref:System.Numerics.BigInteger> value from a byte array that represents a value of some other integral type, you can pass the integral value to the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> method, and then pass the resulting byte array to the <xref:System.Numerics.BigInteger.%23ctor%28System.Byte%5B%5D%29> constructor. The following example instantiates a <xref:System.Numerics.BigInteger> value from a byte array that represents an <xref:System.Int16> value.  
   
  [!code-csharp[System.Numerics.BigInteger.Class.ByteAndHex#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/cs/ByteAndHex_Examples.cs#2)]
  [!code-vb[System.Numerics.BigInteger.Class.ByteAndHex#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/vb/ByteAndHex_Examples.vb#2)]  
@@ -144,9 +144,9 @@
  [!code-csharp[System.Numerics.BigInteger.Class.ByteAndHex#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/cs/ByteAndHex_Examples.cs#4)]
  [!code-vb[System.Numerics.BigInteger.Class.ByteAndHex#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/vb/ByteAndHex_Examples.vb#4)]  
   
- However, you may need to add this additional zero-value byte to byte arrays that are created dynamically by the developer or that are returned by methods that convert unsigned integers to byte arrays (such as <xref:System.BitConverter.GetBytes%28System.UInt16%29?displayProperty=fullName>, <xref:System.BitConverter.GetBytes%28System.UInt32%29?displayProperty=fullName>, and <xref:System.BitConverter.GetBytes%28System.UInt64%29?displayProperty=fullName>).  
+ However, you may need to add this additional zero-value byte to byte arrays that are created dynamically by the developer or that are returned by methods that convert unsigned integers to byte arrays (such as <xref:System.BitConverter.GetBytes%28System.UInt16%29?displayProperty=nameWithType>, <xref:System.BitConverter.GetBytes%28System.UInt32%29?displayProperty=nameWithType>, and <xref:System.BitConverter.GetBytes%28System.UInt64%29?displayProperty=nameWithType>).  
   
- When parsing a hexadecimal string, the <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName> and <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> methods assume that if the most significant bit of the first byte in the string is set, or if the first hexadecimal digit of the string represents the lower four bits of a byte value, the value is represented by using two's complement representation. For example, both "FF01" and "F01" represent the decimal value -255. To differentiate positive from negative values, positive values should include a leading zero. The relevant overloads of the <xref:System.Numerics.BigInteger.ToString%2A> method, when they are passed the "X" format string, add a leading zero to the returned hexadecimal string for positive values. This makes it possible to round-trip <xref:System.Numerics.BigInteger> values by using the <xref:System.Numerics.BigInteger.ToString%2A> and <xref:System.Numerics.BigInteger.Parse%2A> methods, as the following example shows.  
+ When parsing a hexadecimal string, the <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType> and <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> methods assume that if the most significant bit of the first byte in the string is set, or if the first hexadecimal digit of the string represents the lower four bits of a byte value, the value is represented by using two's complement representation. For example, both "FF01" and "F01" represent the decimal value -255. To differentiate positive from negative values, positive values should include a leading zero. The relevant overloads of the <xref:System.Numerics.BigInteger.ToString%2A> method, when they are passed the "X" format string, add a leading zero to the returned hexadecimal string for positive values. This makes it possible to round-trip <xref:System.Numerics.BigInteger> values by using the <xref:System.Numerics.BigInteger.ToString%2A> and <xref:System.Numerics.BigInteger.Parse%2A> methods, as the following example shows.  
   
  [!code-csharp[System.Numerics.BigInteger.Class.ByteAndHex#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/cs/ByteAndHex_Examples.cs#5)]
  [!code-vb[System.Numerics.BigInteger.Class.ByteAndHex#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Class.ByteAndHex/vb/ByteAndHex_Examples.vb#5)]  
@@ -201,19 +201,19 @@
 |Hexadecimal string|E8D4A51000|  
 |Byte array (lowest index first)|00 10 A5 D4 E8 00|  
   
- Most methods that convert numeric values to byte arrays, such as <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=fullName> and <xref:System.BitConverter.GetBytes%2A?displayProperty=fullName>, return byte arrays in little-endian order.  
+ Most methods that convert numeric values to byte arrays, such as <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=nameWithType> and <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType>, return byte arrays in little-endian order.  
   
  The constructor expects positive values in the byte array to use sign-and-magnitude representation, and negative values to use two's complement representation. In other words, if the highest-order bit of the highest-order byte in `value` is set, the resulting <xref:System.Numerics.BigInteger> value is negative. Depending on the source of the byte array, this may cause a positive value to be misinterpreted as a negative value. Byte arrays are typically generated in the following ways:  
   
--   By calling the <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=fullName> method. Because this method returns a byte array with the highest-order bit of the highest-order byte in the array set to zero for positive values, there is no chance of misinterpreting a positive value as negative. Unmodified byte arrays created by the <xref:System.Numerics.BigInteger.ToByteArray%2A> method always successfully round-trip when they are passed to the <xref:System.Numerics.BigInteger.%23ctor%28System.Byte%5B%5D%29> constructor.  
+-   By calling the <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=nameWithType> method. Because this method returns a byte array with the highest-order bit of the highest-order byte in the array set to zero for positive values, there is no chance of misinterpreting a positive value as negative. Unmodified byte arrays created by the <xref:System.Numerics.BigInteger.ToByteArray%2A> method always successfully round-trip when they are passed to the <xref:System.Numerics.BigInteger.%23ctor%28System.Byte%5B%5D%29> constructor.  
   
--   By calling the <xref:System.BitConverter.GetBytes%2A?displayProperty=fullName> method and passing it a signed integer as a parameter. Because signed integers handle both sign-and-magnitude representation and two's complement representation, there is no chance of misinterpreting a positive value as negative.  
+-   By calling the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> method and passing it a signed integer as a parameter. Because signed integers handle both sign-and-magnitude representation and two's complement representation, there is no chance of misinterpreting a positive value as negative.  
   
--   By calling the <xref:System.BitConverter.GetBytes%2A?displayProperty=fullName> method and passing it an unsigned integer as a parameter. Because unsigned integers are represented by their magnitude only, positive values can be misinterpreted as negative values. To prevent this misinterpretation, you can add a zero-byte value to the end of the array. The example in the next section provides an illustration.  
+-   By calling the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> method and passing it an unsigned integer as a parameter. Because unsigned integers are represented by their magnitude only, positive values can be misinterpreted as negative values. To prevent this misinterpretation, you can add a zero-byte value to the end of the array. The example in the next section provides an illustration.  
   
 -   By creating a byte array either dynamically or statically without necessarily calling any of the previous methods, or by modifying an existing byte array. To prevent positive values from being misinterpreted as negative values, you can add a zero-byte value to the end of the array.  
   
- If `value` is an empty <xref:System.Byte> array, the new <xref:System.Numerics.BigInteger> object is initialized to a value of <xref:System.Numerics.BigInteger.Zero%2A?displayProperty=fullName>. If `value` is `null`, the constructor throws an <xref:System.ArgumentNullException>.  
+ If `value` is an empty <xref:System.Byte> array, the new <xref:System.Numerics.BigInteger> object is initialized to a value of <xref:System.Numerics.BigInteger.Zero%2A?displayProperty=nameWithType>. If `value` is `null`, the constructor throws an <xref:System.ArgumentNullException>.  
   
    
   
@@ -645,7 +645,7 @@
 |`value` >= 0|`value`|  
 |`value` < 0|`value` * -1|  
   
- The <xref:System.Numerics.BigInteger.Abs%2A> method is equivalent to the <xref:System.Math.Abs%2A?displayProperty=fullName> method for the primitive numeric types.  
+ The <xref:System.Numerics.BigInteger.Abs%2A> method is equivalent to the <xref:System.Math.Abs%2A?displayProperty=nameWithType> method for the primitive numeric types.  
   
    
   
@@ -883,17 +883,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload of the <xref:System.Numerics.BigInteger.CompareTo%2A> method implements the <xref:System.IComparable%601.CompareTo%2A?displayProperty=fullName> method. It is used by generic collection objects to order the items in the collection.  
+ This overload of the <xref:System.Numerics.BigInteger.CompareTo%2A> method implements the <xref:System.IComparable%601.CompareTo%2A?displayProperty=nameWithType> method. It is used by generic collection objects to order the items in the collection.  
   
    
   
 ## Examples  
- The following example illustrates the use of the <xref:System.Numerics.BigInteger.CompareTo%28System.Numerics.BigInteger%29> method to order a list of `StarInfo` objects. Each `StarInfo` object provides information about a star's name and its distance from the Earth in miles. `StarInfo` implements the <xref:System.IComparable%601> interface, which enables `StarInfo` objects to be sorted by generic collection classes. Its <xref:System.IComparable%601.CompareTo%2A?displayProperty=fullName> implementation just wraps a call to <xref:System.Numerics.BigInteger.CompareTo%28System.Numerics.BigInteger%29>.  
+ The following example illustrates the use of the <xref:System.Numerics.BigInteger.CompareTo%28System.Numerics.BigInteger%29> method to order a list of `StarInfo` objects. Each `StarInfo` object provides information about a star's name and its distance from the Earth in miles. `StarInfo` implements the <xref:System.IComparable%601> interface, which enables `StarInfo` objects to be sorted by generic collection classes. Its <xref:System.IComparable%601.CompareTo%2A?displayProperty=nameWithType> implementation just wraps a call to <xref:System.Numerics.BigInteger.CompareTo%28System.Numerics.BigInteger%29>.  
   
  [!code-csharp[System.Numerics.BigInteger.CompareTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.CompareTo/cs/Example1.cs#1)]
  [!code-vb[System.Numerics.BigInteger.CompareTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.CompareTo/vb/Example1.vb#1)]  
   
- The following code then instantiates four `StarInfo` objects and stores them in a generic <xref:System.Collections.Generic.List%601> object. After the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName> method is called, `StarInfo` objects are displayed in order of their distance from the Earth.  
+ The following code then instantiates four `StarInfo` objects and stores them in a generic <xref:System.Collections.Generic.List%601> object. After the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method is called, `StarInfo` objects are displayed in order of their distance from the Earth.  
   
  [!code-csharp[System.Numerics.BigInteger.CompareTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.CompareTo/cs/Example1.cs#2)]
  [!code-vb[System.Numerics.BigInteger.CompareTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.CompareTo/vb/Example1.vb#2)]  
@@ -952,7 +952,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload of the <xref:System.Numerics.BigInteger.CompareTo%2A> method implements the <xref:System.IComparable.CompareTo%2A?displayProperty=fullName> method. It is used by non-generic collection objects to order the items in the collection.  
+ This overload of the <xref:System.Numerics.BigInteger.CompareTo%2A> method implements the <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> method. It is used by non-generic collection objects to order the items in the collection.  
   
  The `obj` parameter must be one of the following:  
   
@@ -1128,7 +1128,7 @@
   
  The sign of the returned `remainder` value is the same as the sign of the `dividend` parameter.  
   
- The behavior of the <xref:System.Numerics.BigInteger.DivRem%2A> method is identical to that of the <xref:System.Math.DivRem%2A?displayProperty=fullName> method.  
+ The behavior of the <xref:System.Numerics.BigInteger.DivRem%2A> method is identical to that of the <xref:System.Math.DivRem%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -1180,7 +1180,7 @@
 ## Remarks  
  If `other` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the method is called.  
   
- To determine the relationship between the two objects instead of just testing for equality, call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method.  
+ To determine the relationship between the two objects instead of just testing for equality, call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method.  
   
    
   
@@ -1231,7 +1231,7 @@
 ## Remarks  
  This method implements the <xref:System.IEquatable%601> interface and performs slightly better than <xref:System.Numerics.BigInteger.Equals%28System.Object%29> because it does not have to convert the `other` parameter to a <xref:System.Numerics.BigInteger> object.  
   
- To determine the relationship between the two <xref:System.Numerics.BigInteger> objects instead of just testing for equality, call the <xref:System.Numerics.BigInteger.CompareTo%28System.Numerics.BigInteger%29?displayProperty=fullName> method.  
+ To determine the relationship between the two <xref:System.Numerics.BigInteger> objects instead of just testing for equality, call the <xref:System.Numerics.BigInteger.CompareTo%28System.Numerics.BigInteger%29?displayProperty=nameWithType> method.  
   
    
   
@@ -1340,7 +1340,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To determine the relationship between the two objects instead of just testing for equality, call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method.  
+ To determine the relationship between the two objects instead of just testing for equality, call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method.  
   
    
   
@@ -1490,7 +1490,7 @@ value % 2 == 0;
 value Mod 2 = 0  
 ```  
   
- If the value of the current <xref:System.Numerics.BigInteger> object is <xref:System.Numerics.BigInteger.Zero%2A?displayProperty=fullName>, the property returns `true`.  
+ If the value of the current <xref:System.Numerics.BigInteger> object is <xref:System.Numerics.BigInteger.Zero%2A?displayProperty=nameWithType>, the property returns `true`.  
   
  ]]></format>
         </remarks>
@@ -1659,12 +1659,12 @@ value Mod 2 = 0
   
  To calculate the base 10 logarithm of a <xref:System.Numerics.BigInteger> value, call the <xref:System.Numerics.BigInteger.Log10%2A> method. To calculate the logarithm of a number in another base, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%2CSystem.Double%29> method.  
   
- You can find the square root of a number by calling the <xref:System.Numerics.BigInteger.Log%2A> method along with the <xref:System.Math.Exp%2A?displayProperty=fullName> method. Note that the result is <xref:System.Double.PositiveInfinity?displayProperty=fullName> if the result is greater than <xref:System.Double.MaxValue?displayProperty=fullName>. The following example calculates the square root of each element in an array of <xref:System.Numerics.BigInteger> values.  
+ You can find the square root of a number by calling the <xref:System.Numerics.BigInteger.Log%2A> method along with the <xref:System.Math.Exp%2A?displayProperty=nameWithType> method. Note that the result is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> if the result is greater than <xref:System.Double.MaxValue?displayProperty=nameWithType>. The following example calculates the square root of each element in an array of <xref:System.Numerics.BigInteger> values.  
   
  [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)]
  [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]
   
- This method corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=fullName> method for the primitive numeric types.  
+ This method corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=nameWithType> method for the primitive numeric types.  
   
  ]]></format>
         </remarks>
@@ -1713,20 +1713,20 @@ value Mod 2 = 0
 |`value` parameter|`baseValue` parameter|Return value|  
 |-----------------------|---------------------------|------------------|  
 |`value` > 0|(0 < `baseValue` < 1) -or-(`baseValue` > 1)|logbaseValue(`value`)|  
-|`value` < 0|(any value)|<xref:System.Double?displayProperty=fullName>|  
-|(any value)|`baseValue` < 0|<xref:System.Double?displayProperty=fullName>|  
-|`value` != 1|`baseValue` = 0|<xref:System.Double?displayProperty=fullName>|  
-|`value` != 1|`baseValue` = <xref:System.Double?displayProperty=fullName>|<xref:System.Double?displayProperty=fullName>|  
-|(any value)|`baseValue` = <xref:System.Double?displayProperty=fullName>|<xref:System.Double?displayProperty=fullName>|  
-|(any value)|`baseValue` = 1|<xref:System.Double?displayProperty=fullName>|  
-|`value` = 0|0 < `baseValue` < 1|<xref:System.Double?displayProperty=fullName>|  
-|`value` = 0|`baseValue` > 1|<xref:System.Double.PositiveInfinity?displayProperty=fullName>|  
+|`value` < 0|(any value)|<xref:System.Double?displayProperty=nameWithType>|  
+|(any value)|`baseValue` < 0|<xref:System.Double?displayProperty=nameWithType>|  
+|`value` != 1|`baseValue` = 0|<xref:System.Double?displayProperty=nameWithType>|  
+|`value` != 1|`baseValue` = <xref:System.Double?displayProperty=nameWithType>|<xref:System.Double?displayProperty=nameWithType>|  
+|(any value)|`baseValue` = <xref:System.Double?displayProperty=nameWithType>|<xref:System.Double?displayProperty=nameWithType>|  
+|(any value)|`baseValue` = 1|<xref:System.Double?displayProperty=nameWithType>|  
+|`value` = 0|0 < `baseValue` < 1|<xref:System.Double?displayProperty=nameWithType>|  
+|`value` = 0|`baseValue` > 1|<xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|  
 |`value` = 1|`baseValue` = 0|0|  
-|`value` = 1|`baseValue` = <xref:System.Double.PositiveInfinity?displayProperty=fullName>|0|  
+|`value` = 1|`baseValue` = <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>|0|  
   
  To calculate the base 10 logarithm of a <xref:System.Numerics.BigInteger> value, call the <xref:System.Numerics.BigInteger.Log10%2A> method. To calculate the natural logarithm of a number, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%29> method.  
   
- This method corresponds to the <xref:System.Math.Log%2A?displayProperty=fullName> method for the primitive numeric types.  
+ This method corresponds to the <xref:System.Math.Log%2A?displayProperty=nameWithType> method for the primitive numeric types.  
   
  ]]></format>
         </remarks>
@@ -1773,12 +1773,12 @@ value Mod 2 = 0
 |Sign of value parameter|Return value|  
 |-----------------------------|------------------|  
 |Positive|The base 10 log of `value`; that is, log10`value`.|  
-|Zero|<xref:System.Double?displayProperty=fullName>.|  
-|Negative|<xref:System.Double?displayProperty=fullName>.|  
+|Zero|<xref:System.Double?displayProperty=nameWithType>.|  
+|Negative|<xref:System.Double?displayProperty=nameWithType>.|  
   
- To calculate the natural logarithm of a <xref:System.Numerics.BigInteger> value, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%29?displayProperty=fullName> method. To calculate the logarithm of a number in another base, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%2CSystem.Double%29?displayProperty=fullName> method.  
+ To calculate the natural logarithm of a <xref:System.Numerics.BigInteger> value, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%29?displayProperty=nameWithType> method. To calculate the logarithm of a number in another base, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%2CSystem.Double%29?displayProperty=nameWithType> method.  
   
- This method corresponds to the <xref:System.Math.Log10%2A?displayProperty=fullName> method for the primitive numeric types.  
+ This method corresponds to the <xref:System.Math.Log10%2A?displayProperty=nameWithType> method for the primitive numeric types.  
   
  ]]></format>
         </remarks>
@@ -1820,7 +1820,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method corresponds to the <xref:System.Math.Max%2A?displayProperty=fullName> method for primitive numeric types.  
+ This method corresponds to the <xref:System.Math.Max%2A?displayProperty=nameWithType> method for primitive numeric types.  
   
    
   
@@ -1869,7 +1869,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method corresponds to the <xref:System.Math.Min%2A?displayProperty=fullName> method for primitive numeric types.  
+ This method corresponds to the <xref:System.Math.Min%2A?displayProperty=nameWithType> method for primitive numeric types.  
   
    
   
@@ -2328,7 +2328,7 @@ value Mod 2 = 0
   
  Because <xref:System.Numerics.BigInteger> objects are immutable, the <xref:System.Numerics.BigInteger.op_Decrement%2A> operator creates a new <xref:System.Numerics.BigInteger> object whose value is one less than the <xref:System.Numerics.BigInteger> object represented by `value`. This means that repeated calls to <xref:System.Numerics.BigInteger.op_Decrement%2A> may be expensive.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2379,7 +2379,7 @@ value Mod 2 = 0
   
  Languages that do not support custom operators and operator overloading can call the <xref:System.Numerics.BigInteger.Divide%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Divide%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Divide%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates an array of <xref:System.Numerics.BigInteger> values. It then uses each element as the quotient in a division operation that uses the <xref:System.Numerics.BigInteger.Divide%2A> method, the division operator (/), and the <xref:System.Numerics.BigInteger.DivRem%2A> method.  
@@ -2434,11 +2434,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#4)]
  [!code-vb[System.Numerics.BigInteger.Operators#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#4)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName> instance method instead.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType> instance method instead.  
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2483,11 +2483,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#5)]
  [!code-vb[System.Numerics.BigInteger.Operators#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#5)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName> instance method instead.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType> instance method instead.  
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2537,9 +2537,9 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#19)]
  [!code-vb[System.Numeric.BigInteger.Class#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#19)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> instance method instead.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=nameWithType> instance method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2589,7 +2589,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#6)]
  [!code-vb[System.Numerics.BigInteger.Operators#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#6)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=fullName> instance method instead.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=nameWithType> instance method instead.  
   
  ]]></format>
         </remarks>
@@ -2641,7 +2641,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#7)]
  [!code-vb[System.Numerics.BigInteger.Operators#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#7)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=fullName> instance method instead.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=nameWithType> instance method instead.  
   
  ]]></format>
         </remarks>
@@ -2739,7 +2739,7 @@ value Mod 2 = 0
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Decimal> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.   
 
- For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Decimal%29?displayProperty=fullName>.
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Decimal%29?displayProperty=nameWithType>.
 
 
 ## Examples
@@ -2789,7 +2789,7 @@ value Mod 2 = 0
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Double> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
 
- For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Double%29?displayProperty=fullName>.
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Double%29?displayProperty=nameWithType>.
 
 
 ## Examples
@@ -2955,9 +2955,9 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDbl` in Visual Basic) is used.   
 
- Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Double> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Double.MinValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Double.MaxValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.PositiveInfinity?displayProperty=fullName>.
+ Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Double> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Double.MinValue?displayProperty=nameWithType>, the resulting <xref:System.Double> value is <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Double.MaxValue?displayProperty=nameWithType>, the resulting <xref:System.Double> value is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.
  
- The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Double> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Double> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Double> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Double> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Double.MaxValue?displayProperty=fullName>.   
+ The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Double> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Double> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Double> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=nameWithType> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Double> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Double.MaxValue?displayProperty=nameWithType>.   
     
  [!code-csharp[System.Numerics.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#4)]   
  [!code-vb[System.Numerics.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#4)]   
@@ -3234,9 +3234,9 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss or a loss of precision. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSng` in Visual Basic) is used. Otherwise, they display a compiler error.    
 
- Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Single> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Single.MinValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Single.MaxValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.PositiveInfinity?displayProperty=fullName>.
+ Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Single> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Single.MinValue?displayProperty=nameWithType>, the resulting <xref:System.Single> value is <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Single.MaxValue?displayProperty=nameWithType>, the resulting <xref:System.Single> value is <xref:System.Single.PositiveInfinity?displayProperty=nameWithType>.
 
- The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Single> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Single> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Single> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Single> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Single.MaxValue?displayProperty=fullName>.   
+ The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Single> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Single> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Single> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=nameWithType> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Single> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Single.MaxValue?displayProperty=nameWithType>.   
     
  [!code-csharp[System.Numerics.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#5)]   
  [!code-vb[System.Numerics.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#5)]   
@@ -3467,7 +3467,7 @@ value Mod 2 = 0
  
  The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Single> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
 
- For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Single%29?displayProperty=fullName>.
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Single%29?displayProperty=nameWithType>.
 
 
 ## Examples
@@ -3530,13 +3530,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#9)]
  [!code-vb[System.Numerics.BigInteger.Operators#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#9)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> instance method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> instance method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#10)]  
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3581,13 +3581,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#11)]
  [!code-vb[System.Numerics.BigInteger.Operators#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#11)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#12)]  
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3637,11 +3637,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#20)]
  [!code-vb[System.Numeric.BigInteger.Class#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#20)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName> method instead. They can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType> method instead. They can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numeric.BigInteger.Class#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#21)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3691,7 +3691,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#13)]
  [!code-vb[System.Numerics.BigInteger.Operators#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#13)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#14)]  
   
@@ -3745,7 +3745,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#15)]
  [!code-vb[System.Numerics.BigInteger.Operators#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#15)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThan%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#16)]  
   
@@ -3794,13 +3794,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#17)]
  [!code-vb[System.Numerics.BigInteger.Operators#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#17)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#18)]  
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3845,13 +3845,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#19)]
  [!code-vb[System.Numerics.BigInteger.Operators#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#19)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#20)]  
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3901,11 +3901,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#22)]
  [!code-vb[System.Numeric.BigInteger.Class#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#22)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Compare%2A?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Compare%2A?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numeric.BigInteger.Class#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#23)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3955,11 +3955,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#21)]
  [!code-vb[System.Numerics.BigInteger.Operators#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#21)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#22)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4009,11 +4009,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#23](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#23)]
  [!code-vb[System.Numerics.BigInteger.Operators#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#23)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_GreaterThanOrEqual%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#24)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4052,7 +4052,7 @@ value Mod 2 = 0
 ## Remarks  
  Any fractional part of the `value` parameter is truncated before conversion.
 
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=nameWithType>.   
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Byte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4096,7 +4096,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=nameWithType>.   
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4140,7 +4140,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=nameWithType>.  
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4184,7 +4184,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int64%29?displayProperty=fullName>.   
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int64%29?displayProperty=nameWithType>.   
  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4235,7 +4235,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=nameWithType>.   
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.SByte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4286,7 +4286,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=fullName>.   
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=nameWithType>.   
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4337,7 +4337,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=fullName>.   
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=nameWithType>.   
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4388,7 +4388,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt64%29?displayProperty=fullName>.   
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt64%29?displayProperty=nameWithType>.   
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
    
@@ -4442,7 +4442,7 @@ value Mod 2 = 0
   
  Because <xref:System.Numerics.BigInteger> objects are immutable, the <xref:System.Numerics.BigInteger.op_Increment%2A> operator creates a new <xref:System.Numerics.BigInteger> object whose value is one more than the <xref:System.Numerics.BigInteger> object represented by `value`. Therefore, repeated calls to <xref:System.Numerics.BigInteger.op_Increment%2A> may be expensive.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Add%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Add%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4489,9 +4489,9 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can test for inequality by using one of the following techniques:  
   
--   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> instance method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and a signed long integer value.  
+-   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> instance method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and a signed long integer value.  
   
--   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName> instance method and reversing its value.  
+-   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType> instance method and reversing its value.  
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
@@ -4542,13 +4542,13 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can test for inequality by using one of the following techniques:  
   
--   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and a signed long integer value.  
+-   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and a signed long integer value.  
   
--   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName> method and reversing its value.  
+-   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=nameWithType> method and reversing its value.  
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4600,11 +4600,11 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can test for inequality by using one of the following techniques:  
   
--   Calling the <xref:System.Numerics.BigInteger.Compare%2A?displayProperty=fullName> method, which indicates the relationship between two <xref:System.Numerics.BigInteger> objects.  
+-   Calling the <xref:System.Numerics.BigInteger.Compare%2A?displayProperty=nameWithType> method, which indicates the relationship between two <xref:System.Numerics.BigInteger> objects.  
   
--   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method and reversing its value.  
+-   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=nameWithType> method and reversing its value.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4656,9 +4656,9 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can test for inequality by using one of the following techniques:  
   
--   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and an unsigned long integer value.  
+-   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and an unsigned long integer value.  
   
--   Calling the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=fullName> method and reversing its value.  
+-   Calling the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=nameWithType> method and reversing its value.  
   
  ]]></format>
         </remarks>
@@ -4712,9 +4712,9 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can test for inequality by using one of the following techniques:  
   
--   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and an unsigned long integer value.  
+-   Calling the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method, which indicates the relationship between a <xref:System.Numerics.BigInteger> and an unsigned long integer value.  
   
--   Calling the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=fullName> method and reversing its value.  
+-   Calling the <xref:System.Numerics.BigInteger.Equals%28System.UInt64%29?displayProperty=nameWithType> method and reversing its value.  
   
  ]]></format>
         </remarks>
@@ -4813,13 +4813,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#31)]
  [!code-vb[System.Numerics.BigInteger.Operators#31](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#31)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#32](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#32)]  
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4864,13 +4864,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#33)]
  [!code-vb[System.Numerics.BigInteger.Operators#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#33)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#34)]  
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4920,11 +4920,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#27](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#27)]
  [!code-vb[System.Numeric.BigInteger.Class#27](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#27)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Compare%2A?displayProperty=fullName> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Compare%2A?displayProperty=nameWithType> method instead. Some languages can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numeric.BigInteger.Class#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#28)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4974,11 +4974,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#35](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#35)]
  [!code-vb[System.Numerics.BigInteger.Operators#35](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#35)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#36](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#36)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5028,11 +5028,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#37](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#37)]
  [!code-vb[System.Numerics.BigInteger.Operators#37](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#37)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThan%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#38](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#38)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5077,13 +5077,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#39](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#39)]
  [!code-vb[System.Numerics.BigInteger.Operators#39](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#39)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.Int64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#40](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#40)]  
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5128,13 +5128,13 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#41](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#41)]
  [!code-vb[System.Numerics.BigInteger.Operators#41](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#41)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.Numerics.BigInteger%2CSystem.Int64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#42](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#42)]  
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5188,7 +5188,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#30)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5238,11 +5238,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#43](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#43)]
  [!code-vb[System.Numerics.BigInteger.Operators#43](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#43)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.Numerics.BigInteger%2CSystem.UInt64%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#44](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#44)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5292,11 +5292,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#45](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/Operator1.cs#45)]
  [!code-vb[System.Numerics.BigInteger.Operators#45](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#45)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType> method instead. They can also call the <xref:System.Numerics.BigInteger.op_LessThanOrEqual%28System.UInt64%2CSystem.Numerics.BigInteger%29> method directly, as the following example shows.  
   
  [!code-vb[System.Numerics.BigInteger.Operators#46](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#46)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5345,11 +5345,11 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#31)]
  [!code-vb[System.Numeric.BigInteger.Class#31](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#31)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Remainder%2A?displayProperty=fullName> method instead.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Remainder%2A?displayProperty=nameWithType> method instead.  
   
  The sign of the value returned by the modulus operation depends on the sign of `dividend`: If `dividend` is positive, the modulus operation returns a positive result; if it is negative, the modulus operation returns a negative result. The behavior of the modulus operation with <xref:System.Numerics.BigInteger> values is identical to the modulus operation with other integral types.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Remainder%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Remainder%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="divisor" /> is 0 (zero).</exception>
@@ -5400,7 +5400,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#11)]
  [!code-vb[System.Numeric.BigInteger.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#11)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5495,7 +5495,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numerics.BigInteger.Operators#48](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/cs/RightShift1.cs#48)]
  [!code-vb[System.Numerics.BigInteger.Operators#48](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#48)]  
   
- If `shift` is greater than or equal to the number of bits in a positive <xref:System.Numerics.BigInteger> value, the result of the right-shift operation is <xref:System.Numerics.BigInteger.Zero%2A?displayProperty=fullName>. If `shift` is greater than the number of bits in a negative <xref:System.Numerics.BigInteger> value, the result of the right-shift operation is <xref:System.Numerics.BigInteger.MinusOne%2A?displayProperty=fullName>.  
+ If `shift` is greater than or equal to the number of bits in a positive <xref:System.Numerics.BigInteger> value, the result of the right-shift operation is <xref:System.Numerics.BigInteger.Zero%2A?displayProperty=nameWithType>. If `shift` is greater than the number of bits in a negative <xref:System.Numerics.BigInteger> value, the result of the right-shift operation is <xref:System.Numerics.BigInteger.MinusOne%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -5546,9 +5546,9 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#14)]
  [!code-vb[System.Numeric.BigInteger.Class#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#14)]  
   
- Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Subtract%2A?displayProperty=fullName> method instead.  
+ Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Subtract%2A?displayProperty=nameWithType> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5592,7 +5592,7 @@ value Mod 2 = 0
 ## Remarks  
  The <xref:System.Numerics.BigInteger.op_UnaryNegation%2A> method defines the operation of the unary negation operator (or the additive inverse operator) for <xref:System.Numerics.BigInteger> values. The operation produces a value that results in 0 (zero) when it is added to the original number. Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Negate%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Negate%28System.Numerics.BigInteger%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Negate%28System.Numerics.BigInteger%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example illustrates three different ways to negate the value of a <xref:System.Numerics.BigInteger> object.  
@@ -5695,16 +5695,16 @@ value Mod 2 = 0
 |Element|Description|  
 |-------------|-----------------|  
 |*ws*|Optional white space.|  
-|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=fullName> properties of the current culture.|  
+|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties of the current culture.|  
 |*digits*|A sequence of digits ranging from 0 to 9. Any leading zeros are ignored.|  
   
 > [!NOTE]
->  The string specified by the `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
+>  The string specified by the `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
- The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo?displayProperty=fullName> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName>. To parse a string by using the formatting information of a specific culture, use the <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.IFormatProvider%29> method.  
+ The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>. To parse a string by using the formatting information of a specific culture, use the <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.IFormatProvider%29> method.  
   
 > [!IMPORTANT]
->  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
+>  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
    
   
@@ -5763,7 +5763,7 @@ value Mod 2 = 0
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[.*fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=fullName>, the `value` parameter may contain the following elements:  
+ If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, the `value` parameter may contain the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -5771,16 +5771,16 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the current culture. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
-|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |`NumberStyles` value|Elements permitted in `value` in addition to digits|  
 |--------------------------|---------------------------------------------------------|  
@@ -5800,9 +5800,9 @@ value Mod 2 = 0
 |<xref:System.Globalization.NumberStyles.Any>|All elements. However, `value` cannot represent a hexadecimal number.|  
   
 > [!IMPORTANT]
->  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
+>  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -5880,14 +5880,14 @@ value Mod 2 = 0
 |Element|Description|  
 |-------------|-----------------|  
 |*ws*|Optional white space.|  
-|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=fullName> properties of the <xref:System.Globalization.NumberFormatInfo> object that is returned by the `provider` object's <xref:System.IFormatProvider.GetFormat%2A> method.|  
+|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties of the <xref:System.Globalization.NumberFormatInfo> object that is returned by the `provider` object's <xref:System.IFormatProvider.GetFormat%2A> method.|  
 |*digits*|A sequence of digits ranging from 0 to 9. Any leading zeros are ignored.|  
   
 > [!NOTE]
->  The string specified by the `value` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
+>  The string specified by the `value` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
 > [!IMPORTANT]
->  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
+>  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information. When the <xref:System.Numerics.BigInteger.Parse%28System.String%2CSystem.IFormatProvider%29> method is invoked, it calls the `provider` parameter's <xref:System.IFormatProvider.GetFormat%2A> method and passes it a <xref:System.Type> object that represents the <xref:System.Globalization.NumberFormatInfo> type. The <xref:System.IFormatProvider.GetFormat%2A> method then returns the <xref:System.Globalization.NumberFormatInfo> object that provides information about the format of the `value` parameter. There are three ways to use the `provider` parameter to supply custom formatting information to the parse operation:  
   
@@ -5902,7 +5902,7 @@ value Mod 2 = 0
    
   
 ## Examples  
- The following examples show two ways to define the tilde (~) as a negative sign for formatting <xref:System.Numerics.BigInteger> values. Note that to display the <xref:System.Numerics.BigInteger> values in the same format as the original strings, your code must call the <xref:System.Numerics.BigInteger.ToString%28System.IFormatProvider%29?displayProperty=fullName> method and pass it the <xref:System.Globalization.NumberFormatInfo> object that provides formatting information.  
+ The following examples show two ways to define the tilde (~) as a negative sign for formatting <xref:System.Numerics.BigInteger> values. Note that to display the <xref:System.Numerics.BigInteger> values in the same format as the original strings, your code must call the <xref:System.Numerics.BigInteger.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method and pass it the <xref:System.Globalization.NumberFormatInfo> object that provides formatting information.  
   
  The first example defines a class that implements <xref:System.IFormatProvider> and uses the <xref:System.IFormatProvider.GetFormat%2A> method to return the <xref:System.Globalization.NumberFormatInfo> object that provides formatting information.  
   
@@ -5970,7 +5970,7 @@ value Mod 2 = 0
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[*.fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=fullName>, the `value` parameter may include the following elements:  
+ If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>, the `value` parameter may include the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -5978,16 +5978,16 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the culture indicated by the `provider` parameter. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the culture indicated by the `provider` parameter. The current culture's currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
-|*,*|A culture-specific group separator symbol. The group separator symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture designated by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific group separator symbol. The group separator symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture designated by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |NumberStyles value|Elements permitted in value in addition to digits|  
 |------------------------|-------------------------------------------------------|  
@@ -6007,9 +6007,9 @@ value Mod 2 = 0
 |<xref:System.Globalization.NumberStyles.Any>|All elements. However, `value` cannot represent a hexadecimal number.|  
   
 > [!IMPORTANT]
->  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
+>  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -6098,7 +6098,7 @@ value Mod 2 = 0
 ## Remarks  
  The <xref:System.Numerics.BigInteger.Pow%2A> method returns 1 if the value of the exponent parameter is 0, or if the values of both the `value` and `exponent` parameters are 0. If `exponent` is 1, the <xref:System.Numerics.BigInteger.Pow%2A> method returns `value`. If `value` is negative, the method returns a negative result.  
   
- This method corresponds to the <xref:System.Math.Pow%2A?displayProperty=fullName> method for primitive numeric types.  
+ This method corresponds to the <xref:System.Math.Pow%2A?displayProperty=nameWithType> method for primitive numeric types.  
   
    
   
@@ -6220,7 +6220,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.BigInteger.Sign%2A> property is equivalent to the <xref:System.Math.Sign%2A?displayProperty=fullName> method for the primitive numeric types.  
+ The <xref:System.Numerics.BigInteger.Sign%2A> property is equivalent to the <xref:System.Math.Sign%2A?displayProperty=nameWithType> method for the primitive numeric types.  
   
  ]]></format>
         </remarks>
@@ -6333,7 +6333,7 @@ value Mod 2 = 0
   
  Negative values are written to the array using two's complement representation in the most compact form possible. For example, -1 is represented as a single byte whose value is `0xFF` instead of as an array with multiple elements, such as `0xFF`, `0xFF` or `0xFF`, `0xFF`, `0xFF`, `0xFF`.  
   
- Because two's complement representation always interprets the highest-order bit of the last byte in the array (the byte at position <xref:System.Array.Length%2A?displayProperty=fullName>`- 1`) as the sign bit, the method returns a byte array with an extra element whose value is zero to disambiguate positive values that could otherwise be interpreted as having their sign bits set. For example, the value 120 or `0x78` is represented as a single-byte array: `0x78`. However, 128, or `0x80`, is represented as a two-byte array: `0x80`, `0x00`.  
+ Because two's complement representation always interprets the highest-order bit of the last byte in the array (the byte at position <xref:System.Array.Length%2A?displayProperty=nameWithType>`- 1`) as the sign bit, the method returns a byte array with an extra element whose value is zero to disambiguate positive values that could otherwise be interpreted as having their sign bits set. For example, the value 120 or `0x78` is represented as a single-byte array: `0x78`. However, 128, or `0x80`, is represented as a two-byte array: `0x80`, `0x00`.  
   
  You can round-trip a <xref:System.Numerics.BigInteger> value by storing it to a byte array and then restoring it using the <xref:System.Numerics.BigInteger.%23ctor%28System.Byte%5B%5D%29> constructor.  
   
@@ -6450,7 +6450,7 @@ value Mod 2 = 0
 |A specific format|Default (current) culture|<xref:System.Numerics.BigInteger.ToString%28System.String%29>|  
 |A specific format|A specific culture|<xref:System.Numerics.BigInteger.ToString%28System.String%2CSystem.IFormatProvider%29>|  
   
- The `provider` parameter is an <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string returned by this method. If `provider` is `null`, the <xref:System.Numerics.BigInteger> value is formatted using the <xref:System.Globalization.NumberFormatInfo> object of the current culture. The only property of the <xref:System.Globalization.NumberFormatInfo> object that controls the string representation of the <xref:System.Numerics.BigInteger> value using the general format specifier is <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName>, which defines the character that represents the negative sign.  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string returned by this method. If `provider` is `null`, the <xref:System.Numerics.BigInteger> value is formatted using the <xref:System.Globalization.NumberFormatInfo> object of the current culture. The only property of the <xref:System.Globalization.NumberFormatInfo> object that controls the string representation of the <xref:System.Numerics.BigInteger> value using the general format specifier is <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType>, which defines the character that represents the negative sign.  
   
  The `provider` parameter can be one of the following:  
   
@@ -6513,7 +6513,7 @@ value Mod 2 = 0
 |Round-trip ("R") format|A specific culture|<xref:System.Numerics.BigInteger.ToString%28System.IFormatProvider%29>|  
 |A specific format|A specific culture|<xref:System.Numerics.BigInteger.ToString%28System.String%2CSystem.IFormatProvider%29>|  
   
- The `format` parameter can be any valid [standard numeric string](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [custom numeric format strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.Numerics.BigInteger> object is formatted with the round-trip format specifier ("R"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid [standard numeric string](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [custom numeric format strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.Numerics.BigInteger> object is formatted with the round-trip format specifier ("R"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
@@ -6580,7 +6580,7 @@ value Mod 2 = 0
 |Round-trip ("R") format|A specific culture|<xref:System.Numerics.BigInteger.ToString%28System.IFormatProvider%29>|  
 |A specific format|Default (current) culture|<xref:System.Numerics.BigInteger.ToString%28System.String%29>|  
   
- The `format` parameter can be any valid  [standard numeric string](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [custom numeric format strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.Numerics.BigInteger> object is formatted with the round-trip format specifier ("R"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid  [standard numeric string](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [custom numeric format strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.Numerics.BigInteger> object is formatted with the round-trip format specifier ("R"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
@@ -6659,15 +6659,15 @@ value Mod 2 = 0
 |Element|Description|  
 |-------------|-----------------|  
 |*ws*|Optional white space.|  
-|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=fullName> properties of the current culture.|  
+|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties of the current culture.|  
 |*digits*|A sequence of decimal digits ranging from 0 to 9.|  
   
 > [!NOTE]
 >  The string specified by the `value` parameter cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
- The `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `value`, call the <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29> method.  
+ The `value` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `value`, call the <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29> method.  
   
- The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object for the current culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName>.  
+ The `value` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object for the current culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>.  
   
  This overload interprets all digits in the `value` parameter as decimal digits. To parse the string representation of a hexadecimal number, call the <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29> overload instead.  
   
@@ -6739,18 +6739,18 @@ value Mod 2 = 0
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|Optional white space. White space can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, or at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `value` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `value` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `value` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `value` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  
 |------------------------------------------|-------------------------------------------------------|  
@@ -6770,9 +6770,9 @@ value Mod 2 = 0
 |<xref:System.Globalization.NumberStyles.Any>|All elements. However, `value` cannot represent a hexadecimal number.|  
   
 > [!IMPORTANT]
->  If you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
+>  If you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=nameWithType> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  

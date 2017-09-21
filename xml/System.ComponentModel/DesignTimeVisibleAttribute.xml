@@ -33,7 +33,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.DesignTimeVisibleAttribute> is a hint to the Designer. The Designer will ignore this attribute for components that have a UI presence. It can only be applied to classes.  
   
- The <xref:System.ComponentModel.DesignTimeVisibleAttribute> is most useful when you have a control that accepts child components. For example, the <xref:System.Windows.Forms.TreeView?displayProperty=fullName> control's node items should not appear in the component tray because they are drawn by the <xref:System.Windows.Forms.TreeView?displayProperty=fullName> control.  
+ The <xref:System.ComponentModel.DesignTimeVisibleAttribute> is most useful when you have a control that accepts child components. For example, the <xref:System.Windows.Forms.TreeView?displayProperty=nameWithType> control's node items should not appear in the component tray because they are drawn by the <xref:System.Windows.Forms.TreeView?displayProperty=nameWithType> control.  
   
  ]]></format>
     </remarks>

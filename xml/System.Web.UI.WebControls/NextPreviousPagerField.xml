@@ -210,7 +210,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to the <xref:System.Web.UI.WebControls.DataPagerField> object that is passed in the `newField` parameter.  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to the <xref:System.Web.UI.WebControls.DataPagerField> object that is passed in the `newField` parameter.  
   
  ]]></format>
         </remarks>
@@ -249,7 +249,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.NextPreviousPagerField.CreateDataPagers%2A> method is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=fullName> method to create the UI controls for the pager field, such as the Previous and Next buttons.  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.CreateDataPagers%2A> method is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=nameWithType> method to create the UI controls for the pager field, such as the Previous and Next buttons.  
   
  ]]></format>
         </remarks>
@@ -451,7 +451,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.NextPreviousPagerField.HandleEvent%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> method. It is called to handle events that occur in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object when one of the buttons inside the control is clicked.  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.HandleEvent%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=nameWithType> method. It is called to handle events that occur in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object when one of the buttons inside the control is clicked.  
   
  The <xref:System.Web.UI.WebControls.NextPreviousPagerField.HandleEvent%2A> method examines the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object that is contained in the `e` parameter, and then performs the appropriate action.  
   
@@ -459,10 +459,10 @@
   
 |Button|CommandName value|Action|  
 |------------|-----------------------|------------|  
-|First page|<xref:System.Web.UI.WebControls.DataControlCommands.FirstPageCommandArgument?displayProperty=fullName>|Navigates to the first page of data.|  
-|Previous page|<xref:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument?displayProperty=fullName>|Navigates to the previous page of data.|  
-|Next page|<xref:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument?displayProperty=fullName>|Navigates to the next page of data.|  
-|Last page|<xref:System.Web.UI.WebControls.DataControlCommands.LastPageCommandArgument?displayProperty=fullName>|Navigates to the last page of data.|  
+|First page|<xref:System.Web.UI.WebControls.DataControlCommands.FirstPageCommandArgument?displayProperty=nameWithType>|Navigates to the first page of data.|  
+|Previous page|<xref:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument?displayProperty=nameWithType>|Navigates to the previous page of data.|  
+|Next page|<xref:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument?displayProperty=nameWithType>|Navigates to the next page of data.|  
+|Last page|<xref:System.Web.UI.WebControls.DataControlCommands.LastPageCommandArgument?displayProperty=nameWithType>|Navigates to the last page of data.|  
   
  ]]></format>
         </remarks>

@@ -165,7 +165,7 @@
   
  In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode.Single> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=fullName> and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=nameWithType> and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
  ]]></format>
         </remarks>
@@ -436,7 +436,7 @@
 ## Remarks  
  Use this property to provide the user interface thread affinity that some applications require. For example, a Windows Forms application may be registered as a singleton service object. In this case, all calls into the service must run on the Windows Forms thread. The default case, in which <xref:System.ServiceModel.ServiceBehaviorAttribute.UseSynchronizationContext%2A> is set to `true`, synchronizes all calls to the service to run on the user interface thread.  
   
- Note that the thread used is the current synchronization thread when <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A?displayProperty=fullName> or <xref:System.ServiceModel.DuplexClientBase%601.CreateChannel%2A?displayProperty=fullName> is called. In the case of an Windows Forms application, this means that these calls should occur after a call to the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName> method.  
+ Note that the thread used is the current synchronization thread when <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.DuplexClientBase%601.CreateChannel%2A?displayProperty=nameWithType> is called. In the case of an Windows Forms application, this means that these calls should occur after a call to the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
   
    
   

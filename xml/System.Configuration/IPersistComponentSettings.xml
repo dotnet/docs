@@ -203,13 +203,13 @@
   
  The following general rules apply to the use of <xref:System.Configuration.IPersistComponentSettings.SettingsKey%2A>:  
   
--   A control, like any class, may contain zero or more application settings classes, derived from <xref:System.Configuration.ApplicationSettingsBase>. Each settings class contains its own <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A?displayProperty=fullName> property, which helps disambiguate multiple instances of that class.  
+-   A control, like any class, may contain zero or more application settings classes, derived from <xref:System.Configuration.ApplicationSettingsBase>. Each settings class contains its own <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A?displayProperty=nameWithType> property, which helps disambiguate multiple instances of that class.  
   
 -   A control should separate its per-instance data and its shared data into different settings classes.  
   
 -   For a control with any per-instance configuration data, the `get` accessor of the <xref:System.Configuration.IPersistComponentSettings.SettingsKey%2A> property should default to the <xref:System.Windows.Forms.Control.Name%2A> of the control. In most cases the name of the control will be unique within an application. If the control contains only shared configuration data, `get` should default to `null`.  
   
--   The `set` accessor for this property should be implemented to distinguish between settings classes containing per-instance and shared configuration data. For each settings class containing per-instance data, `set` should just pass-through to the <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A?displayProperty=fullName> property of the settings class. For settings classes containing shared data, `set` should perform no action for that settings class.  
+-   The `set` accessor for this property should be implemented to distinguish between settings classes containing per-instance and shared configuration data. For each settings class containing per-instance data, `set` should just pass-through to the <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A?displayProperty=nameWithType> property of the settings class. For settings classes containing shared data, `set` should perform no action for that settings class.  
   
  ]]></format>
         </remarks>

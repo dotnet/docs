@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Drawing.Imaging.EncoderParameter.%23ctor(System.Drawing.Imaging.Encoder%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Drawing.Imaging.EncoderParameter.%23ctor(System.Drawing.Imaging.Encoder%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0024</li></ul>|
 

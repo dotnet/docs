@@ -995,7 +995,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If an exception occurs during the read operation, it will be set as the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=fullName> of the property of the returned task.  
+ If an exception occurs during the read operation, it will be set as the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> of the property of the returned task.  
   
  ]]></format>
         </remarks>
@@ -1291,7 +1291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If an exception occurs during the write operation, it will be set as the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=fullName> of the property of the returned task.  
+ If an exception occurs during the write operation, it will be set as the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> of the property of the returned task.  
   
  ]]></format>
         </remarks>

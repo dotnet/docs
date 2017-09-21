@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Remoting.Activation.UrlAttribute> is passed in the activation attributes array as a parameter to <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> when creating activated objects with the <xref:System.Activator.CreateInstance%2A> method.  
+ The <xref:System.Runtime.Remoting.Activation.UrlAttribute> is passed in the activation attributes array as a parameter to <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> when creating activated objects with the <xref:System.Activator.CreateInstance%2A> method.  
   
  For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the default <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ This method overrides the default <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

@@ -80,7 +80,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the <xref:Microsoft.VisualBasic.ApplicationServices.WebUser> object, this property wraps the <xref:System.Web.HttpContext.User%2A> property of the <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName> property.  
+ In the <xref:Microsoft.VisualBasic.ApplicationServices.WebUser> object, this property wraps the <xref:System.Web.HttpContext.User%2A> property of the <xref:System.Web.HttpContext.Current%2A?displayProperty=nameWithType> property.  
   
  For more detailed information, see the <xref:Microsoft.VisualBasic.ApplicationServices.User.CurrentPrincipal%2A> property.  
   

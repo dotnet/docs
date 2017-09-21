@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.InvalidMessageContractException> is thrown when custom attribute usage results in the generation of an invalid service description. For example, if a <xref:System.ServiceModel.MessageContractAttribute?displayProperty=fullName> type has multiple parts with the same name, or a method has multiple parameters with the same name.  
+ The <xref:System.ServiceModel.InvalidMessageContractException> is thrown when custom attribute usage results in the generation of an invalid service description. For example, if a <xref:System.ServiceModel.MessageContractAttribute?displayProperty=nameWithType> type has multiple parts with the same name, or a method has multiple parameters with the same name.  
   
    
   

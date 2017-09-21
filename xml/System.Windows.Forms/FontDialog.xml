@@ -387,7 +387,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A hook procedure is a mechanism by which a function can intercept events before they reach an application. When you override the <xref:System.Windows.Forms.CommonDialog.HookProc%2A?displayProperty=fullName> method for a <xref:System.Windows.Forms.CommonDialog> class, the operating system invokes your override of the function to post operating system messages to the window.  
+ A hook procedure is a mechanism by which a function can intercept events before they reach an application. When you override the <xref:System.Windows.Forms.CommonDialog.HookProc%2A?displayProperty=nameWithType> method for a <xref:System.Windows.Forms.CommonDialog> class, the operating system invokes your override of the function to post operating system messages to the window.  
   
    
   
@@ -651,7 +651,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to apply the selections in a <xref:System.Windows.Forms.FontDialog> to the text in a <xref:System.Windows.Forms.RichTextBox>. In the event handler that displays the dialog box, the example initializes the <xref:System.Windows.Forms.FontDialog.ShowApply%2A> property to `true` and then displays the <xref:System.Windows.Forms.FontDialog>. In the <xref:System.Windows.Forms.FontDialog.Apply> event handler, the <xref:System.Windows.Forms.FontDialog.Font%2A> property is assigned to the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property.  
+ The following code example shows how to apply the selections in a <xref:System.Windows.Forms.FontDialog> to the text in a <xref:System.Windows.Forms.RichTextBox>. In the event handler that displays the dialog box, the example initializes the <xref:System.Windows.Forms.FontDialog.ShowApply%2A> property to `true` and then displays the <xref:System.Windows.Forms.FontDialog>. In the <xref:System.Windows.Forms.FontDialog.Apply> event handler, the <xref:System.Windows.Forms.FontDialog.Font%2A> property is assigned to the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[FontDialog.ShowApply#1](~/samples/snippets/cpp/VS_Snippets_Winforms/FontDialog.ShowApply/CPP/form1.cpp#1)]
  [!code-csharp[FontDialog.ShowApply#1](~/samples/snippets/csharp/VS_Snippets_Winforms/FontDialog.ShowApply/CS/form1.cs#1)]

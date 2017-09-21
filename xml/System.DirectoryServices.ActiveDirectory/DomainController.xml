@@ -147,7 +147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.GlobalCatalog.DisableGlobalCatalog%2A?displayProperty=fullName> method is used to demote the domain controller from a global catalog server.  
+ The <xref:System.DirectoryServices.ActiveDirectory.GlobalCatalog.DisableGlobalCatalog%2A?displayProperty=nameWithType> method is used to demote the domain controller from a global catalog server.  
   
  ]]></format>
         </remarks>
@@ -756,7 +756,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a destructive operation because it causes the role to be taken without the cooperation of the server that currently holds the role. The <xref:System.DirectoryServices.ActiveDirectory.DomainController.TransferRoleOwnership%2A?displayProperty=fullName> method should be used instead whenever possible.  
+ This method is a destructive operation because it causes the role to be taken without the cooperation of the server that currently holds the role. The <xref:System.DirectoryServices.ActiveDirectory.DomainController.TransferRoleOwnership%2A?displayProperty=nameWithType> method should be used instead whenever possible.  
   
  ]]></format>
         </remarks>

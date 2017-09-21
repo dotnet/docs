@@ -668,7 +668,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TreeNode.DataPath%2A> property value is commonly used when calling the <xref:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView%2A?displayProperty=fullName> method to provide the path to the data bound to the current node. This method then returns a <xref:System.Web.UI.HierarchicalDataSourceView?displayProperty=fullName> object that contains the data at the specified path.  
+ The <xref:System.Web.UI.WebControls.TreeNode.DataPath%2A> property value is commonly used when calling the <xref:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView%2A?displayProperty=nameWithType> method to provide the path to the data bound to the current node. This method then returns a <xref:System.Web.UI.HierarchicalDataSourceView?displayProperty=nameWithType> object that contains the data at the specified path.  
   
  The value of this property is stored in view state.  
   
@@ -1472,9 +1472,9 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView> control allows you to display a check box next to a node's image. Use the <xref:System.Web.UI.WebControls.TreeNode.ShowCheckBox%2A> property to show or hide the check box for the current node.  
   
- Although the <xref:System.Web.UI.WebControls.TreeNode.ShowCheckBox%2A> property can be used to display check boxes, it is more common to use the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.TreeView> control. The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A?displayProperty=fullName> property, however, affects every node type specified by the property; therefore, the <xref:System.Web.UI.WebControls.TreeNode.ShowCheckBox%2A?displayProperty=fullName> property is often used to override that setting for an individual node.  
+ Although the <xref:System.Web.UI.WebControls.TreeNode.ShowCheckBox%2A> property can be used to display check boxes, it is more common to use the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.TreeView> control. The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A?displayProperty=nameWithType> property, however, affects every node type specified by the property; therefore, the <xref:System.Web.UI.WebControls.TreeNode.ShowCheckBox%2A?displayProperty=nameWithType> property is often used to override that setting for an individual node.  
   
- Since the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A?displayProperty=fullName> property is a tri-state property, the following C# code snippet causes a compile error:  
+ Since the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A?displayProperty=nameWithType> property is a tri-state property, the following C# code snippet causes a compile error:  
   
 ```  
 protected void TreeView1_SelectedNodeChanged(object sender, EventArgs e)  

@@ -26,7 +26,7 @@
   
  To set message queue permissions for a trustee, create a new instance of the <xref:System.Messaging.AccessControlEntry.Trustee%2A> class and pass it into an overload of the <xref:System.Messaging.MessageQueueAccessControlEntry.%23ctor%2A> constructor. Specify the message queue access rights either by passing an instance of <xref:System.Messaging.MessageQueueAccessRights> into the constructor or by setting the <xref:System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights%2A> property on an existing <xref:System.Messaging.MessageQueueAccessControlEntry> instance.  
   
- You can then pass the <xref:System.Messaging.MessageQueueAccessControlEntry> instance directly to the <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName> method, or alternately add the entry to an instance of <xref:System.Messaging.AccessControlList> before calling <xref:System.Messaging.MessageQueue.SetPermissions%2A>.  
+ You can then pass the <xref:System.Messaging.MessageQueueAccessControlEntry> instance directly to the <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=nameWithType> method, or alternately add the entry to an instance of <xref:System.Messaging.AccessControlList> before calling <xref:System.Messaging.MessageQueue.SetPermissions%2A>.  
   
  ]]></format>
     </remarks>
@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights%2A> property enables you to specify Message Queuing object-specific rights such as receiving, peeking, or writing messages, or setting queue properties. The value of this property is set by the <xref:System.Messaging.MessageQueueAccessControlEntry.%23ctor%2A> constructor, but you can change it at any time before using this instance of <xref:System.Messaging.MessageQueueAccessControlEntry> in a call to <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName>.  
+ The <xref:System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights%2A> property enables you to specify Message Queuing object-specific rights such as receiving, peeking, or writing messages, or setting queue properties. The value of this property is set by the <xref:System.Messaging.MessageQueueAccessControlEntry.%23ctor%2A> constructor, but you can change it at any time before using this instance of <xref:System.Messaging.MessageQueueAccessControlEntry> in a call to <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

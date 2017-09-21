@@ -365,7 +365,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.ScrollBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
+ As implemented in the <xref:System.Windows.Forms.ScrollBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> value.  
   
  ]]></format>
         </remarks>
@@ -656,7 +656,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property is set relative to the size of the <xref:System.Windows.Forms.PictureBox>.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
@@ -707,7 +707,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.Maximum%2A> property is set to the size of the <xref:System.Drawing.Image> plus the size of the scrollbar if it is visible plus an adjustment factor of the size of the <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
@@ -750,7 +750,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.Minimum%2A> property is set to 0.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  
@@ -1180,7 +1180,7 @@
   
  In this example, the <xref:System.Windows.Forms.ScrollBar.SmallChange%2A> property is set relative to the size of the <xref:System.Windows.Forms.PictureBox>.  
   
- You must add references to the <xref:System.Drawing?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> namespaces to run this example.  
+ You must add references to the <xref:System.Drawing?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces to run this example.  
   
 > [!NOTE]
 >  For instructions about how to run this example in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416).  

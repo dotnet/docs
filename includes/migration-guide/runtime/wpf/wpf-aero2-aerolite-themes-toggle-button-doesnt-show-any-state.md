@@ -7,5 +7,5 @@
 |Scope|Major|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.Controls.Primitives.ToggleButton?displayProperty=fullName></li><li><xref:System.Windows.Controls.Primitives.ToggleButton.%23ctor?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Controls.Primitives.ToggleButton?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.Primitives.ToggleButton.%23ctor?displayProperty=nameWithType></li></ul>|
 

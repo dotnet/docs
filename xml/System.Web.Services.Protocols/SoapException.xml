@@ -543,7 +543,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Client` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Client` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ClientFaultCode> field. SOAP 1.2 names the fault code `Sender`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Client` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Client` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ClientFaultCode> field. SOAP 1.2 names the fault code `Sender`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
@@ -574,7 +574,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `MustUnderstand` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `MustUnderstand` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.MustUnderstandFaultCode?displayProperty=fullName> field. SOAP 1.2 names the fault code the same; however it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.MustUnderstandFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `MustUnderstand` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `MustUnderstand` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.MustUnderstandFaultCode?displayProperty=nameWithType> field. SOAP 1.2 names the fault code the same; however it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.MustUnderstandFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
@@ -605,7 +605,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Server` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Server` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ServerFaultCode> field. SOAP 1.2 names the fault code `Receiver`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `Server` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `Server` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.ServerFaultCode> field. SOAP 1.2 names the fault code `Receiver`, which is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.ReceiverFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>
@@ -636,7 +636,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `VersionMismatch` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `VersionMismatch` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.VersionMismatchFaultCode?displayProperty=fullName> field. SOAP 1.2 names the fault code the same; however, it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.VersionMismatchFaultCode?displayProperty=fullName> field.  
+ Recipients of a <xref:System.Web.Services.Protocols.SoapException> can use this method to determine whether the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property is functionally equivalent to the `VersionMismatch` SOAP fault code defined in SOAP 1.1 regardless of the version of the SOAP protocol used. Versions of the SOAP protocol later than 1.1 might use different names or namespaces for the `VersionMismatch` SOAP fault code defined in SOAP version 1.1, which is represented by the <xref:System.Web.Services.Protocols.SoapException.VersionMismatchFaultCode?displayProperty=nameWithType> field. SOAP 1.2 names the fault code the same; however, it is scoped by a different XML namespace and is represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.VersionMismatchFaultCode?displayProperty=nameWithType> field.  
   
  ]]></format>
         </remarks>

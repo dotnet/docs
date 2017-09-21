@@ -45,7 +45,7 @@
   
  The signing of a dynamic assembly using <xref:System.Reflection.AssemblyName.KeyPair%2A> is not effective until the assembly is saved to disk. So, strong names will not work with transient dynamic assemblies.  
   
- To get an <xref:System.Reflection.Emit.AssemblyBuilder> object, use the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName> method.  
+ To get an <xref:System.Reflection.Emit.AssemblyBuilder> object, use the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method.  
   
 ## Reflection emit dynamic assembly scenarios  
  The following are some things to consider when using the <xref:System.Reflection.Emit.AssemblyBuilder> class to create dynamic assemblies.  
@@ -62,26 +62,26 @@
 ### Dynamic assembly access modes  
  Dynamic assemblies can be created using one of the following access modes:  
   
--   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName>  
+-   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=nameWithType>  
   
      The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is transient. The dynamic assembly can only be used to execute the emitted code.  
   
--   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName>  
+-   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=nameWithType>  
   
      The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is persistable but cannot be executed until the saved portable executable (PE) file has been loaded from disk.  
   
--   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName>  
+-   <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=nameWithType>  
   
      The dynamic assembly represented by an <xref:System.Reflection.Emit.AssemblyBuilder> object is persistable, but can also be executed before and/or after the assembly is saved to disk.  
   
- The access mode must be specified by providing the appropriate <xref:System.Reflection.Emit.AssemblyBuilderAccess> value in the call to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=fullName> method when the dynamic assembly is defined and cannot be changed later. The runtime uses the access mode of a dynamic assembly to optimize the assembly's internal representation.  
+ The access mode must be specified by providing the appropriate <xref:System.Reflection.Emit.AssemblyBuilderAccess> value in the call to the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicAssembly%2A?displayProperty=nameWithType> method when the dynamic assembly is defined and cannot be changed later. The runtime uses the access mode of a dynamic assembly to optimize the assembly's internal representation.  
   
    
   
 ## Examples  
  The following code example shows how to define a dynamic assembly with one module. The module in the example assembly contains one type, `MyDynamicType`, which has a private field, a property that gets and sets the private field, constructors that initialize the private field, and a method that multiplies a user-supplied number by the private field value and returns the result.  
   
- <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) or used in another program.  
+ <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=nameWithType> is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) or used in another program.  
   
  [!code-cpp[AssemblyBuilderClass#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilderClass/cpp/24895.cpp#1)]
  [!code-csharp[AssemblyBuilderClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilderClass/cs/24895.cs#1)]
@@ -139,7 +139,7 @@
  The specified resource file must be in the directory where the assembly will be saved.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -208,7 +208,7 @@
  The specified resource file must be in the directory where the assembly will be saved.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -263,7 +263,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get the absolute path to the loaded manifest-containing file, use the <xref:System.Reflection.Assembly.Location%2A?displayProperty=fullName> property.  
+ To get the absolute path to the loaded manifest-containing file, use the <xref:System.Reflection.Assembly.Location%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -389,7 +389,7 @@
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -460,7 +460,7 @@
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -524,7 +524,7 @@
 ## Remarks  
  To define a persistable dynamic module, this assembly needs to be created with the <xref:System.Reflection.Emit.AssemblyBuilderAccess.Save> or the <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave> attribute.  
   
- If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
+ If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
   
  In an assembly with only one module, that module should contain the assembly manifest.  
   
@@ -532,7 +532,7 @@
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -604,7 +604,7 @@
 ## Remarks  
  To define a persistable dynamic module, this assembly needs to be created with the <xref:System.Reflection.Emit.AssemblyBuilderAccess.Save> or the <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave> attribute.  
   
- If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
+ If you want the module to contain the assembly manifest, `name` should be the same as the name of the assembly (that is, the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property of the <xref:System.Reflection.AssemblyName> used to create the dynamic assembly) and `fileName` should be the same as the filename you specify when you save the assembly.  
   
  In an assembly with only one module, that module should contain the assembly manifest.  
   
@@ -612,7 +612,7 @@
 >  To suppress optimizations when debugging dynamic modules, apply the <xref:System.Diagnostics.DebuggableAttribute> attribute to the dynamic assembly before calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A>. Create an instance of <xref:System.Diagnostics.DebuggableAttribute> with the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations> flag and apply it using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method. The attribute must be applied to the dynamic assembly. It has no effect if applied to the module.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -689,7 +689,7 @@
  The runtime calls the <xref:System.Resources.ResourceWriter.Close%2A> method when the dynamic assembly is saved.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -764,7 +764,7 @@
  The runtime calls the <xref:System.Resources.ResourceWriter.Close%2A> method when the dynamic assembly is saved.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -858,7 +858,7 @@
  An assembly can be associated with only one unmanaged resource. This means that calling <xref:System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource%2A> or <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A> after either one of the methods was called previously will throw the System.ArgumentException. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -920,7 +920,7 @@
  The information is inferred from the `AssemblyName` object used to define this dynamic assembly. This assembly's custom attributes override information specified in the `AssemblyName` object.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -980,7 +980,7 @@
  The structure of the version resource includes data that identifies the version, language, and distribution of the file. Installation programs use the functions in the file installation library (VER.DLL) to retrieve the version information resource from a file and to extract the version information blocks from the resource.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -1173,7 +1173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=nameWithType> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
   
  ]]></format>
         </remarks>
@@ -1569,7 +1569,7 @@
 ## Remarks  
  This method does not return a complete list of referenced assemblies. For example, if you apply a custom attribute to the <xref:System.Reflection.Emit.AssemblyBuilder>, the assembly in which the attribute was defined is included in the list returned by this method. However, if you use a <xref:System.Type> object to specify the type of a method parameter, that type is not included.  
   
- To get a complete list of referenced assemblies, save the assembly, load it into another application domain, and call the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=fullName> method.  
+ To get a complete list of referenced assemblies, save the assembly, load it into another application domain, and call the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1925,10 +1925,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To emit a dynamic assembly in the reflection-only context, specify <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> when you create the <xref:System.Reflection.Emit.AssemblyBuilder>. If a dynamic assembly is emitted in the reflection-only context, its code cannot be executed.  
+ To emit a dynamic assembly in the reflection-only context, specify <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=nameWithType> when you create the <xref:System.Reflection.Emit.AssemblyBuilder>. If a dynamic assembly is emitted in the reflection-only context, its code cannot be executed.  
   
 > [!NOTE]
->  After you have saved a dynamic assembly to disk, you can use the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=fullName> method to load the completed assembly into the reflection-only context. However, the assembly can no longer be modified.  
+>  After you have saved a dynamic assembly to disk, you can use the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> method to load the completed assembly into the reflection-only context. However, the assembly can no longer be modified.  
   
  ]]></format>
         </remarks>
@@ -2034,7 +2034,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `imageFileMachine` and `portableExecutableKind` are incompatible, `imageFileMachine` takes precedence over `portableExecutableKind`. No exception is thrown. For example, if you specify <xref:System.Reflection.ImageFileMachine?displayProperty=fullName> with <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName>, <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName> is ignored.  
+ If `imageFileMachine` and `portableExecutableKind` are incompatible, `imageFileMachine` takes precedence over `portableExecutableKind`. No exception is thrown. For example, if you specify <xref:System.Reflection.ImageFileMachine?displayProperty=nameWithType> with <xref:System.Reflection.PortableExecutableKinds?displayProperty=nameWithType>, <xref:System.Reflection.PortableExecutableKinds?displayProperty=nameWithType> is ignored.  
   
  This method saves all non-transient dynamic modules defined in this dynamic assembly. Transient dynamic modules are not saved. The assembly file name can be the same as the name of one of the module. If so, the assembly manifest is stored within that module. `assemblyFileName` can be different from the names of all of the modules contained within the assembly. If so, the assembly file contains only the assembly manifest.  
   
@@ -2094,7 +2094,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] always enforces level 2 transparency (<xref:System.Security.SecurityRuleSet?displayProperty=fullName>) for the dynamic assemblies it generates.  
+ The [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] always enforces level 2 transparency (<xref:System.Security.SecurityRuleSet?displayProperty=nameWithType>) for the dynamic assemblies it generates.  
   
  ]]></format>
         </remarks>
@@ -2133,7 +2133,7 @@
 >  <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> cannot be used to set declarative security attributes. Use one of the overloads of <xref:System.AppDomain.DefineDynamicAssembly%2A> that takes required, optional, and refused permissions.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -2195,7 +2195,7 @@
 >  <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> cannot be used to set declarative security attributes. Use one of the overloads of <xref:System.AppDomain.DefineDynamicAssembly%2A> that takes required, optional, and refused permissions.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -2271,7 +2271,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>

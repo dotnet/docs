@@ -20,14 +20,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can access any of the properties and methods of the <xref:System.Web.UI.ControlCollection> class through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> property. Since the <xref:System.Web.UI.Control> class is the base class for all ASP.NET server controls, all server controls inherit this property.  
+ You can access any of the properties and methods of the <xref:System.Web.UI.ControlCollection> class through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> property. Since the <xref:System.Web.UI.Control> class is the base class for all ASP.NET server controls, all server controls inherit this property.  
   
  For more information about collections, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
   
    
   
 ## Examples  
- The following code example overrides the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method to create two controls, both instances of the custom class named `ChildControl`, which has a string property named `Message`. When created, the two controls are added to the <xref:System.Web.UI.ControlCollection>. The <xref:System.Web.UI.ControlCollection.Add%2A> method is called on each of these controls to add them to the class that contains this version of <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName>. The <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true` so that these controls will not be created again unnecessarily.  
+ The following code example overrides the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType> method to create two controls, both instances of the custom class named `ChildControl`, which has a string property named `Message`. When created, the two controls are added to the <xref:System.Web.UI.ControlCollection>. The <xref:System.Web.UI.ControlCollection.Add%2A> method is called on each of these controls to add them to the class that contains this version of <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType>. The <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true` so that these controls will not be created again unnecessarily.  
   
  [!code-csharp[Control_Sample_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_Sample_1/CS/control_sample.cs#1)]
  [!code-vb[Control_Sample_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_Sample_1/VB/control_sample.vb#1)]  
@@ -165,12 +165,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to empty a custom control's <xref:System.Web.UI.ControlCollection> when you override the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> and <xref:System.Web.UI.Control.DataBind%2A> methods. Do this when you develop composite, templated controls or templated data-bound controls.  
+ Use this method to empty a custom control's <xref:System.Web.UI.ControlCollection> when you override the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType> and <xref:System.Web.UI.Control.DataBind%2A> methods. Do this when you develop composite, templated controls or templated data-bound controls.  
   
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method, and using the <xref:System.Web.UI.ControlCollection.Clear%2A> method to delete all child controls previously in the <xref:System.Web.UI.ControlCollection> object. In this case, you must do this so that outdated objects in your control's <xref:System.Web.UI.ControlCollection> are not displayed inappropriately.  
+ The following code example demonstrates overriding the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType> method, and using the <xref:System.Web.UI.ControlCollection.Clear%2A> method to delete all child controls previously in the <xref:System.Web.UI.ControlCollection> object. In this case, you must do this so that outdated objects in your control's <xref:System.Web.UI.ControlCollection> are not displayed inappropriately.  
   
  [!code-csharp[TemplatedDataBoundControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl/CS/templatedataboundcontrol.cs#2)]
  [!code-vb[TemplatedDataBoundControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl/VB/templatedataboundcontrol.vb#2)]  
@@ -254,7 +254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.ControlCollection.Count%2A> property to iterate through a control's <xref:System.Web.UI.ControlCollection> object. The use of the <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> property verifies that the control has child controls. If <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> returns `false`, the remaining code does not run.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.ControlCollection.Count%2A> property to iterate through a control's <xref:System.Web.UI.ControlCollection> object. The use of the <xref:System.Web.UI.Control.HasControls%2A?displayProperty=nameWithType> property verifies that the control has child controls. If <xref:System.Web.UI.Control.HasControls%2A?displayProperty=nameWithType> returns `false`, the remaining code does not run.  
   
  [!code-csharp[Classic Control.HasControls Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Control.HasControls Example/CS/source.cs#1)]
  [!code-vb[Classic Control.HasControls Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Control.HasControls Example/VB/source.vb#1)]  

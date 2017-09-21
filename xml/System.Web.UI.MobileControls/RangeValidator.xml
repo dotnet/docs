@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The minimum and maximum values of the range are provided either directly or by reference to another control. This class behaves identically to the <xref:System.Web.UI.WebControls.RangeValidator?displayProperty=fullName> control.  
+ The minimum and maximum values of the range are provided either directly or by reference to another control. This class behaves identically to the <xref:System.Web.UI.WebControls.RangeValidator?displayProperty=nameWithType> control.  
   
  By default, <xref:System.Web.UI.MobileControls.Command> controls on a form raise validator controls on the form to perform validation when the form is submitted to the server. To disable automatic validation, set the <xref:System.Web.UI.MobileControls.Command.CausesValidation%2A> property on the <xref:System.Web.UI.MobileControls.Command> to `false`.  
   

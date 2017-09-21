@@ -37,7 +37,7 @@ translation.priority.ht:
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
-|`sbyte`|-128 to 127|Signed 8-bit integer|<xref:System.SByte?displayProperty=fullName>|  
+|`sbyte`|-128 to 127|Signed 8-bit integer|<xref:System.SByte?displayProperty=nameWithType>|  
   
 ## Literals  
 
@@ -54,7 +54,7 @@ Starting with C# 7, you can also use the underscore character, `_`, as a digit s
 
 [!code-cs[SByteSeparator](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#SByteS)]  
 
-If the integer literal is outside the range of `sbyte` (that is, if it is less than <xref:System.SByte.MinValue?displayProperty=fullName> or greater than <xref:System.SByte.MaxValue?displayProperty=fullName>, a compilation error occurs. When an integer literal has no suffix, its type is the first of these types in which its value can be represented: [int](int.md), [uint](uint.md), [long](long.md), [ulong](ulong.md). This means that, in this example, the numeric literals `0x9A` and `0b10011010` are interpreted as 32-bit signed integers with a value of 156, which exceeds <xref:System.SByte.MaxValue?displayProperty=fullName>. Because of this, the casting operator is needed, and the assignment must occur in an [unchecked](unchecked.md) context. 
+If the integer literal is outside the range of `sbyte` (that is, if it is less than <xref:System.SByte.MinValue?displayProperty=nameWithType> or greater than <xref:System.SByte.MaxValue?displayProperty=nameWithType>, a compilation error occurs. When an integer literal has no suffix, its type is the first of these types in which its value can be represented: [int](int.md), [uint](uint.md), [long](long.md), [ulong](ulong.md). This means that, in this example, the numeric literals `0x9A` and `0b10011010` are interpreted as 32-bit signed integers with a value of 156, which exceeds <xref:System.SByte.MaxValue?displayProperty=nameWithType>. Because of this, the casting operator is needed, and the assignment must occur in an [unchecked](unchecked.md) context. 
 
 ## Compiler overload resolution
 

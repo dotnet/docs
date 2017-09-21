@@ -63,10 +63,10 @@ Data binding in Windows Forms gives you the means to display and make changes to
  Also see [Interfaces Related to Data Binding](http://msdn.microsoft.com/library/41e17s4b\(v=vs.110\)), [How to: Navigate Data in Windows Forms](http://msdn.microsoft.com/library/b63ha24w\(v=vs.110\)), [How to: Create a Simple-Bound Control on a Windows Form](http://msdn.microsoft.com/library/sw223a62\(v=vs.110\)).  
   
 ## Reference  
- <xref:System.Windows.Forms.Binding?displayProperty=fullName>  
+ <xref:System.Windows.Forms.Binding?displayProperty=nameWithType>  
  Describes the class that represents the binding between a bindable component and a data source.  
   
- <xref:System.Windows.Forms.BindingSource?displayProperty=fullName>  
+ <xref:System.Windows.Forms.BindingSource?displayProperty=nameWithType>  
  Describes the class that encapsulates a data source for binding to controls.  
   
 ## Related Sections  

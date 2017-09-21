@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name of a `<federationConfiguration>` element is specified through its `name` attribute (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=fullName> property).  
+ The name of a `<federationConfiguration>` element is specified through its `name` attribute (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=nameWithType> property).  
   
  ]]></format>
         </remarks>

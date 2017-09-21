@@ -176,7 +176,7 @@ object. These two headers are checked by the GitHub server code, and are necessa
 information from GitHub.
 
 After you've configured the @System.Net.Http.HttpClient, you make a web request and retrieve the response. In
-this first version, you use the <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=fullname> convenience method. This convenience method
+this first version, you use the <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> convenience method. This convenience method
 starts a task that makes the web request, and then when the request returns, it reads the
 response stream and extracts the content from the stream. The body of the response is returned
 as a @System.String. The string is available when the task completes. 
@@ -247,7 +247,7 @@ language that are being used in the second line above. The argument to @System.R
 up to now, you've only seen them as part of an assignment statement.
 
 Secondly, the `as` operator converts from the compile time type of `object` to `List<repo>`. 
-The declaration of @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) declares that it returns an object of type <xref:System.Object?displayProperty=fullName>. @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) will return the type you specified when you constructed it (`List<repo>` in
+The declaration of @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) declares that it returns an object of type <xref:System.Object?displayProperty=nameWithType>. @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) will return the type you specified when you constructed it (`List<repo>` in
 this tutorial). If the conversion does not succeed, the `as` operator evaluates to `null`,
 instead of throwing an exception.
 

@@ -32,17 +32,17 @@
 > [!NOTE]
 >  Windows access control security is meaningful only for named system semaphores. If a <xref:System.Threading.Semaphore> object represents a local semaphore, access control is irrelevant.  
   
- To get a list of the audit rules currently applied to a named semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.SemaphoreSecurity> object, and then use its <xref:System.Security.AccessControl.CommonObjectSecurity.GetAuditRules%2A> method to obtain a collection of <xref:System.Security.AccessControl.SemaphoreAuditRule> objects.  
+ To get a list of the audit rules currently applied to a named semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> method to get a <xref:System.Security.AccessControl.SemaphoreSecurity> object, and then use its <xref:System.Security.AccessControl.CommonObjectSecurity.GetAuditRules%2A> method to obtain a collection of <xref:System.Security.AccessControl.SemaphoreAuditRule> objects.  
   
  <xref:System.Security.AccessControl.SemaphoreAuditRule> objects do not map one-to-one with access control entries in the underlying discretionary access control list (DACL). When you get the set of all audit rules for a semaphore, the set contains the minimum number of rules currently required to express all the access control entries.  
   
 > [!NOTE]
 >  The underlying access control entries change as you apply and remove rules. The information in rules is merged if possible, to maintain the smallest number of access control entries. Thus, when you read the current list of rules, it might not look exactly like the list of all the rules you have added.  
   
- Use <xref:System.Security.AccessControl.SemaphoreAuditRule> objects to specify access rights to be audited for a user or group. To apply a rule to a named system semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.SemaphoreSecurity> object. Modify the <xref:System.Security.AccessControl.SemaphoreSecurity> object by using its methods to add the rule, and then use the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method to reattach the security object.  
+ Use <xref:System.Security.AccessControl.SemaphoreAuditRule> objects to specify access rights to be audited for a user or group. To apply a rule to a named system semaphore, use the <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=nameWithType> method to get the <xref:System.Security.AccessControl.SemaphoreSecurity> object. Modify the <xref:System.Security.AccessControl.SemaphoreSecurity> object by using its methods to add the rule, and then use the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method to reattach the security object.  
   
 > [!IMPORTANT]
->  Changes you make to a <xref:System.Security.AccessControl.SemaphoreSecurity> object do not affect the access levels of the named semaphore until you call the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named semaphore.  
+>  Changes you make to a <xref:System.Security.AccessControl.SemaphoreSecurity> object do not affect the access levels of the named semaphore until you call the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method to assign the altered security object to the named semaphore.  
   
  <xref:System.Security.AccessControl.SemaphoreAuditRule> objects are immutable. Security for a semaphore is modified using the methods of the <xref:System.Security.AccessControl.SemaphoreSecurity> class to add or remove rules; as you do this, the underlying access control entries are modified.  
   
@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create an <xref:System.Security.Principal.NTAccount> object from a string representing a user or group name, use the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=fullName> constructor.  
+ To create an <xref:System.Security.Principal.NTAccount> object from a string representing a user or group name, use the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=nameWithType> constructor.  
   
  ]]></format>
         </remarks>

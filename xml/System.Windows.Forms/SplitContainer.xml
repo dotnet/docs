@@ -415,7 +415,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.SplitContainer.BackgroundImageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.SplitContainer.BackgroundImageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.SplitContainer> named `SplitContainer1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.SplitContainer.BackgroundImageChanged> event.  
   
@@ -731,7 +731,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can dock a <xref:System.Windows.Forms.SplitContainer> to any edge of its container, or you can dock a <xref:System.Windows.Forms.SplitContainer> to all edges of the container so that the <xref:System.Windows.Forms.SplitContainer> entirely fills the container. For example, set this property to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName> to attach the left edge of the <xref:System.Windows.Forms.SplitContainer> to the left edge of its container. Controls are docked in z-order.  
+ You can dock a <xref:System.Windows.Forms.SplitContainer> to any edge of its container, or you can dock a <xref:System.Windows.Forms.SplitContainer> to all edges of the container so that the <xref:System.Windows.Forms.SplitContainer> entirely fills the container. For example, set this property to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType> to attach the left edge of the <xref:System.Windows.Forms.SplitContainer> to the left edge of its container. Controls are docked in z-order.  
   
 > [!NOTE]
 >  The z-order corresponds to the depth dimension of the screen, and the x-order and y-order corresponds to the horizontal and vertical dimensions, respectively. Z-order defines which object appears in front of which, in cases where controls or windows can overlap or occupy the same space on the screen. A control or window at the top of the z-order appears on top of all other controls or windows and is referenced by an index of 0 in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property. A control or window at the bottom of the z-order appears underneath all other controls or windows and is referenced by an index of `(Controls.Count-1)` in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property.  
@@ -1703,7 +1703,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called during message preprocessing to handle dialog box key characters, such as TAB, LEFT ARROW, RIGHT ARROW, UP ARROW, and DOWN ARROW. Keys that include the ALT or CONTROL modifiers are not handled. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A?displayProperty=fullName> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form?displayProperty=fullName> class overrides this method to perform actual processing of dialog box keys. The run time calls this method only when the control is hosted in a Windows Forms application or as an ActiveX control.  
+ This method is called during message preprocessing to handle dialog box key characters, such as TAB, LEFT ARROW, RIGHT ARROW, UP ARROW, and DOWN ARROW. Keys that include the ALT or CONTROL modifiers are not handled. This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A?displayProperty=nameWithType> method indicates that the control is not processing the key. The <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=nameWithType> simply sends the character to the parent's <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=nameWithType> method, or returns `false` if the control has no parent. The <xref:System.Windows.Forms.Form?displayProperty=nameWithType> class overrides this method to perform actual processing of dialog box keys. The run time calls this method only when the control is hosted in a Windows Forms application or as an ActiveX control.  
   
  ]]></format>
         </remarks>

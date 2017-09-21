@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This abstract class provides no operations; however, it is the base class from which all classes that represent SAML statements derive. For example, the <xref:System.IdentityModel.Tokens.Saml2AttributeStatement> class, which represents a SAML Attribute Statement, derives from this class. This class is also used to declare collections of SAML Statements in classes as in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A?displayProperty=fullName> property.  
+ This abstract class provides no operations; however, it is the base class from which all classes that represent SAML statements derive. For example, the <xref:System.IdentityModel.Tokens.Saml2AttributeStatement> class, which represents a SAML Attribute Statement, derives from this class. This class is also used to declare collections of SAML Statements in classes as in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A?displayProperty=nameWithType> property.  
   
  For more information about the StatementAbstractType, see the SAML V2.0 Core specification.  
   

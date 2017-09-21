@@ -230,7 +230,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.PreFilterProperties%2A> method creates design-time properties to shadow the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> properties of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control so that they appear in the **Properties** grid of the visual designer.  
   

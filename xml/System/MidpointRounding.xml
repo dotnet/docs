@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.MidpointRounding> with appropriate overloads of <xref:System.Math.Round%2A?displayProperty=fullName> to provide more control of the rounding process.  
+ Use <xref:System.MidpointRounding> with appropriate overloads of <xref:System.Math.Round%2A?displayProperty=nameWithType> to provide more control of the rounding process.  
   
  A rounding operation takes an original number with an implicit or specified precision; examines the next digit, which is at that precision plus one; and returns the nearest number with the same precision as the original number. For positive numbers, if the next digit is from 0 through 4, the nearest number is toward negative infinity. If the next digit is from 6 through 9, the nearest number is toward positive infinity. For negative numbers, if the next digit is from 0 through 4, the nearest number is toward positive infinity. If the next digit is from 6 through 9, the nearest number is toward negative infinity.  
   

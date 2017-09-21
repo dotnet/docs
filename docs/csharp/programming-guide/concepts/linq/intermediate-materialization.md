@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 
 ---
 # Intermediate Materialization (C#)
-If you are not careful, in some situations you can drastically alter the memory and performance profile of your application by causing premature materialization of collections in your queries. Some standard query operators cause materialization of their source collection before yielding a single element. For example, <xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=fullName> first iterates through its entire source collection, then sorts all items, and then finally yields the first item. This means that it is expensive to get the first item of an ordered collection; each item thereafter is not expensive. This makes sense: It would be impossible for that query operator to do otherwise.  
+If you are not careful, in some situations you can drastically alter the memory and performance profile of your application by causing premature materialization of collections in your queries. Some standard query operators cause materialization of their source collection before yielding a single element. For example, <xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType> first iterates through its entire source collection, then sorts all items, and then finally yields the first item. This means that it is expensive to get the first item of an ordered collection; each item thereafter is not expensive. This makes sense: It would be impossible for that query operator to do otherwise.  
   
 ## Example  
  This example alters the previous example. The `AppendString` method calls <xref:System.Linq.Enumerable.ToList%2A> before iterating through the source. This causes materialization.  

@@ -35,7 +35,7 @@ Concatenation refers to the operation of appending one sequence to another.
   
 |Method Name|Description|C# Query Expression Syntax|More Information|  
 |-----------------|-----------------|---------------------------------|----------------------|  
-|Concat|Concatenates two sequences to form one sequence.|Not applicable.|<xref:System.Linq.Enumerable.Concat%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Concat%2A?displayProperty=fullName>|  
+|Concat|Concatenates two sequences to form one sequence.|Not applicable.|<xref:System.Linq.Enumerable.Concat%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Concat%2A?displayProperty=nameWithType>|  
   
 ## See Also  
  <xref:System.Linq>   

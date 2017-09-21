@@ -44,18 +44,18 @@ Collection types are the common variations of data collections, such as hash tab
 |[Generics](../../../docs/standard/generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
   
 ## Reference  
- <xref:System.Collections?displayProperty=fullName>  
+ <xref:System.Collections?displayProperty=nameWithType>  
   
- <xref:System.Collections.Generic?displayProperty=fullName>  
+ <xref:System.Collections.Generic?displayProperty=nameWithType>  
   
- <xref:System.Collections.ICollection?displayProperty=fullName>  
+ <xref:System.Collections.ICollection?displayProperty=nameWithType>  
   
- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>  
+ <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType>  
   
- <xref:System.Collections.IList?displayProperty=fullName>  
+ <xref:System.Collections.IList?displayProperty=nameWithType>  
   
- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>  
+ <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType>  
   
- <xref:System.Collections.IDictionary?displayProperty=fullName>  
+ <xref:System.Collections.IDictionary?displayProperty=nameWithType>  
   
- <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>
+ <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>

@@ -75,7 +75,7 @@ Grid
   
 <a name="autolay_grids_issharedsizescope"></a>   
 ## Automatic Layout and Grids Using the IsSharedSizeScope Property  
- A                  <xref:System.Windows.Controls.Grid> element is useful in localizable applications to create controls that adjust to fit content. However, at times you want controls to maintain a particular size regardless of content. For example, if you have "OK", "Cancel" and "Browse" buttons you probably do not want the buttons sized to fit the content. In this case the                  <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A?displayProperty=fullName> attached property is useful for sharing the same sizing among multiple grid elements. The following example demonstrates how to share column and row sizing data between multiple                  <xref:System.Windows.Controls.Grid> elements.  
+ A                  <xref:System.Windows.Controls.Grid> element is useful in localizable applications to create controls that adjust to fit content. However, at times you want controls to maintain a particular size regardless of content. For example, if you have "OK", "Cancel" and "Browse" buttons you probably do not want the buttons sized to fit the content. In this case the                  <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A?displayProperty=nameWithType> attached property is useful for sharing the same sizing among multiple grid elements. The following example demonstrates how to share column and row sizing data between multiple                  <xref:System.Windows.Controls.Grid> elements.  
   
  [!code-xaml[gridIssharedsizescopeProp#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml#2)]  
   

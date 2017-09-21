@@ -325,7 +325,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Design.MaskDescriptor.ValidatingType%2A> property is used to validate the input string after the mask has been applied to it. It directly corresponds to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.MaskedTextBox> class.  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor.ValidatingType%2A> property is used to validate the input string after the mask has been applied to it. It directly corresponds to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.MaskedTextBox> class.  
   
  ]]></format>
         </remarks>

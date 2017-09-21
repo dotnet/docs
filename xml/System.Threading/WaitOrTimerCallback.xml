@@ -42,7 +42,7 @@
 ## Remarks  
  <xref:System.Threading.WaitOrTimerCallback> represents a callback method that you want to execute when a registered wait handle times out or is signaled. Create the delegate by passing your callback method to the <xref:System.Threading.WaitOrTimerCallback> constructor. Your method must have the signature shown here.  
   
- Create the registered wait handle by passing the <xref:System.Threading.WaitOrTimerCallback> delegate and a <xref:System.Threading.WaitHandle> to <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A?displayProperty=fullName>. Your callback method executes each time the <xref:System.Threading.WaitHandle> times out or is signaled.  
+ Create the registered wait handle by passing the <xref:System.Threading.WaitOrTimerCallback> delegate and a <xref:System.Threading.WaitHandle> to <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A?displayProperty=nameWithType>. Your callback method executes each time the <xref:System.Threading.WaitHandle> times out or is signaled.  
   
   
 > [!NOTE]

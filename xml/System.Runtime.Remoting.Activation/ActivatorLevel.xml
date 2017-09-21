@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The design of activators allows for more than one activator to participate in the activation process, and additional activators can be added to the chain by using <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A?displayProperty=fullName>. Because each activator is responsible for calling the next one in the chain, an activator can position itself anywhere in the chain. The <xref:System.Runtime.Remoting.Activation.ActivatorLevel> enumerator helps activators find the appropriate position in the chain.  
+ The design of activators allows for more than one activator to participate in the activation process, and additional activators can be added to the chain by using <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A?displayProperty=nameWithType>. Because each activator is responsible for calling the next one in the chain, an activator can position itself anywhere in the chain. The <xref:System.Runtime.Remoting.Activation.ActivatorLevel> enumerator helps activators find the appropriate position in the chain.  
   
  ]]></format>
     </remarks>

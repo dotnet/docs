@@ -39,7 +39,7 @@
 ## Remarks  
  An instance of the <xref:System.Web.UI.WebControls.ListControl> abstract class cannot be created directly. Instead, this class is inherited by other classes, such as the <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.DropDownList>, <xref:System.Web.UI.WebControls.ListBox>, and <xref:System.Web.UI.WebControls.RadioButtonList> classes, to provide common basic functionality.  
   
- The properties of the <xref:System.Web.UI.WebControls.ListControl> class allow you to specify the source of the data to populate the list control. Use the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property to specify the data source to bind to the list control. If the data source contains more than one table, use the <xref:System.Web.UI.WebControls.DataBoundControl.DataMember%2A> property to specify the table to use. You can bind different fields in the data source to the <xref:System.Web.UI.WebControls.ListItem.Text%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.ListItem.Value%2A?displayProperty=fullName> properties of the items in the list control by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties, respectively. The text displayed for each item in the list control can by formatted by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextFormatString%2A> property.  
+ The properties of the <xref:System.Web.UI.WebControls.ListControl> class allow you to specify the source of the data to populate the list control. Use the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property to specify the data source to bind to the list control. If the data source contains more than one table, use the <xref:System.Web.UI.WebControls.DataBoundControl.DataMember%2A> property to specify the table to use. You can bind different fields in the data source to the <xref:System.Web.UI.WebControls.ListItem.Text%2A?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.ListItem.Value%2A?displayProperty=nameWithType> properties of the items in the list control by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties, respectively. The text displayed for each item in the list control can by formatted by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextFormatString%2A> property.  
   
  All items displayed in the list control are stored in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection. You can programmatically specify or determine the index of a selected item in the list control by using the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property. The properties of the selected item can be accessed by using the <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> property.  
   
@@ -715,7 +715,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.PerformSelect%2A> method calls the <xref:System.Web.UI.WebControls.ListControl.PerformDataBinding%2A> method after data is retrieved to bind data to elements of the data-bound control. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.ListControl.PerformSelect%2A> method calls the <xref:System.Web.UI.WebControls.ListControl.PerformDataBinding%2A> method after data is retrieved to bind data to elements of the data-bound control. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1081,7 +1081,7 @@ if(DropDownList1.Items.FindByValue("2") != null) {
   
  The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is commonly used to determine the value of the selected item in the <xref:System.Web.UI.WebControls.ListControl> control. If no item is selected, an empty string ("") is returned.  
   
- You can also use the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to select an item in the <xref:System.Web.UI.WebControls.ListControl> control by setting it with the value of the item. If no items in the <xref:System.Web.UI.WebControls.ListControl> control contain the specified value, an <xref:System.ArgumentOutOfRangeException?displayProperty=fullName> exception is thrown.  
+ You can also use the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to select an item in the <xref:System.Web.UI.WebControls.ListControl> control by setting it with the value of the item. If no items in the <xref:System.Web.UI.WebControls.ListControl> control contain the specified value, an <xref:System.ArgumentOutOfRangeException?displayProperty=nameWithType> exception is thrown.  
   
  Control developers can override the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to support features that are not related to the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property.  
   

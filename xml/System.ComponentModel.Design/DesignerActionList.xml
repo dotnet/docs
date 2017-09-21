@@ -100,7 +100,7 @@
 ## Remarks  
  If the property value is set to `true`, the component with which this <xref:System.ComponentModel.Design.DesignerActionList> is associated will automatically expand and display the smart tag panel when the component is created.  
   
- You can opt out of this behavior by setting the <xref:System.Windows.Forms.Design.DesignerOptions.ObjectBoundSmartTagAutoShow%2A?displayProperty=fullName> property to `false`.  
+ You can opt out of this behavior by setting the <xref:System.Windows.Forms.Design.DesignerOptions.ObjectBoundSmartTagAutoShow%2A?displayProperty=nameWithType> property to `false`.  
   
    
   

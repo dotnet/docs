@@ -75,10 +75,10 @@ Holds signed IEEE 64-bit (8-byte) double-precision floating-point numbers that r
     Dim num# = 3  
     ```  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Double?displayProperty=fullName> structure.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Double?displayProperty=nameWithType> structure.  
   
 ## See Also  
- <xref:System.Double?displayProperty=fullName>   
+ <xref:System.Double?displayProperty=nameWithType>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)   
  [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)   

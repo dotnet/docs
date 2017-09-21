@@ -55,7 +55,7 @@
    
   
 ## Examples  
- The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
+ The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=nameWithType> property.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=fullName>.  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -306,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A?displayProperty=fullName>.  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -333,7 +333,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=fullName>. For issues related to one-way operations, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md).  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=nameWithType>. For issues related to one-way operations, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md).  
   
  ]]></format>
         </remarks>
@@ -360,7 +360,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName>.  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -386,7 +386,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Name%2A?displayProperty=fullName>.  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.Name%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -417,7 +417,7 @@
    
   
 ## Examples  
- The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=fullName> property.  
+ The following code example shows an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> inserting a custom parameter inspector into each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A?displayProperty=nameWithType> property.  
   
  [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
  [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
@@ -465,7 +465,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=fullName>.  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

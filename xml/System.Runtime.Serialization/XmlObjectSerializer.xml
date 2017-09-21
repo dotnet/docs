@@ -572,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a virtual method, and has a default implementation that delegates writing to the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%28System.Xml.XmlDictionaryWriter%2CSystem.Object%29?displayProperty=fullName> overload.  
+ This is a virtual method, and has a default implementation that delegates writing to the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%28System.Xml.XmlDictionaryWriter%2CSystem.Object%29?displayProperty=nameWithType> overload.  
   
  ]]></format>
         </remarks>

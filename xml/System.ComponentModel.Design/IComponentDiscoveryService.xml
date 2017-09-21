@@ -76,7 +76,7 @@
   
  When you pass in a value for the `designerHost` parameter, type resolution is scoped to `designerHost`. This means that if there is a <xref:System.Drawing.Design.ToolboxItem> whose type is on disk, and not in the global assembly cache, its type will fail to load through `designerHost`.  
   
- If you pass in `null` for `designerHost`, it returns all types that can be queried from the global assembly cache or the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method.  
+ If you pass in `null` for `designerHost`, it returns all types that can be queried from the global assembly cache or the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method.  
   
    
   

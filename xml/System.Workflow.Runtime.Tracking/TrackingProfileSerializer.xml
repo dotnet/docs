@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses the tracking profile XSD contained in <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A?displayProperty=fullName> to serialize <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects into valid XML documents and to deserialize valid XML documents into <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> performs validation during both serialization and deserialization and, if necessary, throws an appropriate exception.  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses the tracking profile XSD contained in <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A?displayProperty=nameWithType> to serialize <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects into valid XML documents and to deserialize valid XML documents into <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> performs validation during both serialization and deserialization and, if necessary, throws an appropriate exception.  
   
  An XML document provides a convenient format in which to store a tracking profile. It also provides a non-programmatic way of authoring tracking profiles. The out-of-box <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> to serialize and deserialize the tracking profiles that are stored in its database.  
   

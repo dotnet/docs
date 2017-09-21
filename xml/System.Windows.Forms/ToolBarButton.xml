@@ -180,7 +180,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify a <xref:System.Windows.Forms.ContextMenu> to be displayed when the drop-down button is clicked. This property is not used unless the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property value is set to <xref:System.Windows.Forms.ToolBarButtonStyle?displayProperty=fullName>.  
+ You can specify a <xref:System.Windows.Forms.ContextMenu> to be displayed when the drop-down button is clicked. This property is not used unless the <xref:System.Windows.Forms.ToolBarButton.Style%2A> property value is set to <xref:System.Windows.Forms.ToolBarButtonStyle?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Although the <xref:System.Windows.Forms.ToolBarButton.DropDownMenu%2A> property is defined as a <xref:System.Windows.Forms.Menu> type, you must assign it a <xref:System.Windows.Forms.ContextMenu> for it to display properly. If you are creating your own <xref:System.Windows.Forms.MenuItem> derived class you must assign that object to a <xref:System.Windows.Forms.ContextMenu> and assign the <xref:System.Windows.Forms.ContextMenu> to the <xref:System.Windows.Forms.ToolBarButton.DropDownMenu%2A> property.  

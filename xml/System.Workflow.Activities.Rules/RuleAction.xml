@@ -225,7 +225,7 @@ namespace LogRuleAction
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Workflow.Activities.Rules.RuleAction> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
+ If the <xref:System.Workflow.Activities.Rules.RuleAction> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=nameWithType> will contain the list of errors encountered.  
   
  ]]></format>
         </remarks>

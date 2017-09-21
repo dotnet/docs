@@ -26,7 +26,7 @@
   
  A new empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is created by using the <xref:System.IO.Packaging.Package.%23ctor%2A> constructor.  
   
- An existing [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is opened by using the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName> method.  
+ An existing [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is opened by using the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=nameWithType> method.  
   
  A <xref:System.Windows.Documents.FixedDocumentSequence> root is added to an empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> by calling the <xref:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence%2A> method.  
   

@@ -1138,7 +1138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=fullName>.  
+ This property has no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1273,14 +1273,14 @@
   
 These data point properties include: 
 
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A?displayProperty=fullName>
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A?displayProperty=fullName>
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Url%2A?displayProperty=fullName>
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.PostBackValue%2A?displayProperty=fullName>
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Label%2A?displayProperty=fullName>
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A?displayProperty=fullName>
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A?displayProperty=fullName>
-- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A?displayProperty=fullName>, which are the names of the custom properties.  
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Url%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.PostBackValue%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Label%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A?displayProperty=nameWithType>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A?displayProperty=nameWithType>, which are the names of the custom properties.  
   
  ]]></format>
         </remarks>
@@ -2048,7 +2048,7 @@ These data point properties include:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=fullName>.  
+ This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=nameWithType>.  
   
  When you render a chart image using the image tag method, a chart image is generated and then saved to disk at the server, in a format that is determined by the <xref:System.Web.UI.DataVisualization.Charting.ChartImageType> property.  
   

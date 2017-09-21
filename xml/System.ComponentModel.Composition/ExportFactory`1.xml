@@ -41,7 +41,7 @@ Public myData As String = "Example Data."
 Public Property theData As ExportFactory(Of String)  
 ```  
   
- The <xref:System.ComponentModel.Composition.ExportFactory%601.CreateExport%2A?displayProperty=fullName> method returns an <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> object, which has two pieces. The <xref:System.ComponentModel.Composition.ExportLifetimeContext%601.Value%2A?displayProperty=fullName> property provides access to the created part. Calling the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601.Dispose%2A> method of the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> object cleans up the created part and all of its dependencies, thereby allowing the part's lifetime to be managed without reference to the container that created it.  
+ The <xref:System.ComponentModel.Composition.ExportFactory%601.CreateExport%2A?displayProperty=nameWithType> method returns an <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> object, which has two pieces. The <xref:System.ComponentModel.Composition.ExportLifetimeContext%601.Value%2A?displayProperty=nameWithType> property provides access to the created part. Calling the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601.Dispose%2A> method of the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> object cleans up the created part and all of its dependencies, thereby allowing the part's lifetime to be managed without reference to the container that created it.  
   
  ]]></format>
     </remarks>

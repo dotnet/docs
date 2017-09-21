@@ -458,7 +458,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Input.StylusPoint" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Input.StylusPoint.Equals%28System.Windows.Input.StylusPoint%2CSystem.Windows.Input.StylusPoint%29?displayProperty=fullName>  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Input.StylusPoint.Equals%28System.Windows.Input.StylusPoint%2CSystem.Windows.Input.StylusPoint%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example checks two <xref:System.Windows.Input.StylusPoint> objects for equality. Because the <xref:System.Windows.Input.StylusPoint.X%2A>, <xref:System.Windows.Input.StylusPoint.Y%2A>, and <xref:System.Windows.Input.StylusPoint.PressureFactor%2A> properties on `point1` and `point2` are set to the same value, the "The two StylusPoint objects are equal." Message appears.  

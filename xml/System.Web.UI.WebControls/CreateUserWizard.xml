@@ -113,7 +113,7 @@
   
 <a name="formatting_using_layout_templates"></a>   
 ## Formatting Using Layout Templates  
- The <xref:System.Web.UI.WebControls.CreateUserWizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the layout template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.CreateUserWizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the layout template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=nameWithType> property.  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
@@ -984,7 +984,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A?displayProperty=fullName> property determines the appearance of the **Continue** button in the <xref:System.Web.UI.WebControls.CreateUserWizard> control, but you can override these settings using the  <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle%2A> property. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `ContinueButtonStyle-ForeColor`). You can set the property programmatically in the form `Property.Subproperty` (for example, `ContinueButtonStyle.ForeColor`).  
+ The <xref:System.Web.UI.WebControls.Wizard.NavigationButtonStyle%2A?displayProperty=nameWithType> property determines the appearance of the **Continue** button in the <xref:System.Web.UI.WebControls.CreateUserWizard> control, but you can override these settings using the  <xref:System.Web.UI.WebControls.CreateUserWizard.ContinueButtonStyle%2A> property. This property is read-only; however, you can set the properties of the <xref:System.Web.UI.WebControls.Style> object it returns. You can set these properties declaratively in the form `Property-Subproperty`, where `Subproperty` represents a property of the <xref:System.Web.UI.WebControls.Style> class (for example, `ContinueButtonStyle-ForeColor`). You can set the property programmatically in the form `Property.Subproperty` (for example, `ContinueButtonStyle.ForeColor`).  
   
  Common settings include custom background color, text color, and font properties.  
   

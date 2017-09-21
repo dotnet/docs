@@ -287,7 +287,7 @@ newGrammar.SpeechRecognized +=
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Recognition.SemanticValue.Confidence%2A?displayProperty=fullName> property, which returns a measure of the correctness of semantic parsing, should not be confused with the <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A?displayProperty=fullName> property, which returns a measure of the accuracy of speech recognition.  
+ The <xref:System.Speech.Recognition.SemanticValue.Confidence%2A?displayProperty=nameWithType> property, which returns a measure of the correctness of semantic parsing, should not be confused with the <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A?displayProperty=nameWithType> property, which returns a measure of the accuracy of speech recognition.  
   
    
   

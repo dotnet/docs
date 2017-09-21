@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessage%28System.ServiceModel.Channels.Message%29?displayProperty=fullName> method overwrites the value of the `ContextMessageProperty` property if a value is already set.  
+ The <xref:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessage%28System.ServiceModel.Channels.Message%29?displayProperty=nameWithType> method overwrites the value of the `ContextMessageProperty` property if a value is already set.  
   
  ]]></format>
         </remarks>

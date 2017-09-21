@@ -82,7 +82,7 @@ Same-apartment marshaling process
  If you plan to export a managed server, be aware that the COM client determines the apartment of the server. A managed server called by a COM client initialized in an MTA must ensure thread safety.  
   
 ### Managed Clients and COM Servers  
- The default setting for managed client apartments is MTA; however, the application type of the .NET client can change the default setting. For example, a [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] client apartment setting is STA. You can use the <xref:System.STAThreadAttribute?displayProperty=fullName>, the <xref:System.MTAThreadAttribute?displayProperty=fullName>, the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=fullName> property, or the <xref:System.Web.UI.Page.AspCompatMode%2A?displayProperty=fullName> property to examine and change the apartment setting of a managed client.  
+ The default setting for managed client apartments is MTA; however, the application type of the .NET client can change the default setting. For example, a [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] client apartment setting is STA. You can use the <xref:System.STAThreadAttribute?displayProperty=nameWithType>, the <xref:System.MTAThreadAttribute?displayProperty=nameWithType>, the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType> property, or the <xref:System.Web.UI.Page.AspCompatMode%2A?displayProperty=nameWithType> property to examine and change the apartment setting of a managed client.  
   
  The author of the component sets the thread affinity of a COM server. The following table shows the combinations of apartment settings for .NET clients and COM servers. It also shows the resulting marshaling requirements for the combinations.  
   
@@ -168,6 +168,6 @@ Remote calls across firewalls using SOAP or the TcpChannel class
   
 <a name="reference"></a>   
 ## Reference  
- <xref:System.Runtime.InteropServices?displayProperty=fullName>  
+ <xref:System.Runtime.InteropServices?displayProperty=nameWithType>  
   
  [Back to top](#top)

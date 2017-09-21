@@ -37,7 +37,7 @@ By default, users can edit the contents of the current <xref:System.Windows.Form
   
 ### To change the edit mode of a DataGridView control  
   
--   Set the <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=fullName> property to the appropriate <xref:System.Windows.Forms.DataGridViewEditMode> enumeration.  
+-   Set the <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType> property to the appropriate <xref:System.Windows.Forms.DataGridViewEditMode> enumeration.  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#067](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#067)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#067](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#067)]  
@@ -51,5 +51,5 @@ By default, users can edit the contents of the current <xref:System.Windows.Form
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType>   
  [Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)

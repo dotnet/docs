@@ -1366,7 +1366,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
   
- This method is equivalent to <xref:System.IO.File.GetCreationTime%2A?displayProperty=fullName>.  
+ This method is equivalent to <xref:System.IO.File.GetCreationTime%2A?displayProperty=nameWithType>.  
   
  If the directory described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
   
@@ -2351,7 +2351,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
   
- This method is identical to <xref:System.IO.File.GetLastAccessTime%2A?displayProperty=fullName>.  
+ This method is identical to <xref:System.IO.File.GetLastAccessTime%2A?displayProperty=nameWithType>.  
   
  If the directory described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
   

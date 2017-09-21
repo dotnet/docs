@@ -33,9 +33,9 @@ Operator overloads allow framework types to appear as if they were built-in lang
   
  **✓ CONSIDER** defining operator overloads in a type that should feel like a primitive type.  
   
- For example, <xref:System.String?displayProperty=fullName> has `operator==` and `operator!=` defined.  
+ For example, <xref:System.String?displayProperty=nameWithType> has `operator==` and `operator!=` defined.  
   
- **✓ DO** define operator overloads in structs that represent numbers (such as <xref:System.Decimal?displayProperty=fullName>).  
+ **✓ DO** define operator overloads in structs that represent numbers (such as <xref:System.Decimal?displayProperty=nameWithType>).  
   
  **X DO NOT** be cute when defining operator overloads.  
   
@@ -95,7 +95,7 @@ Operator overloads allow framework types to appear as if they were built-in lang
 |`~`|`op_OnesComplement`|`OnesComplement`|  
   
 ### Overloading Operator ==  
- Overloading `operator ==` is quite complicated. The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ Overloading `operator ==` is quite complicated. The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
 ### Conversion Operators  
  Conversion operators are unary operators that allow conversion from one type to another. The operators must be defined as static members on either the operand or the return type. There are two types of conversion operators: implicit and explicit.  
@@ -114,7 +114,7 @@ Operator overloads allow framework types to appear as if they were built-in lang
   
  It is very difficult for end users to understand what is happening, because they might not be aware that a conversion is taking place.  
   
- **✓ DO** throw <xref:System.InvalidCastException?displayProperty=fullName> if a call to a cast operator results in a lossy conversion and the contract of the operator does not allow lossy conversions.  
+ **✓ DO** throw <xref:System.InvalidCastException?displayProperty=nameWithType> if a call to a cast operator results in a lossy conversion and the contract of the operator does not allow lossy conversions.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   

@@ -208,7 +208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=fullName> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+ The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=nameWithType> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
   
  ]]></format>
         </remarks>
@@ -233,7 +233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=fullName> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+ The data source can be accessed using the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property of the designer or the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A?displayProperty=nameWithType> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
   
  ]]></format>
         </remarks>
@@ -338,7 +338,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  For controls that are derived from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class, the <xref:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.PreFilterProperties%2A> method creates design-time properties to shadow the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID%2A> properties.  
   

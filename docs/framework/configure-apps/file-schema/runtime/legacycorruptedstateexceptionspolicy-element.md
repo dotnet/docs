@@ -71,7 +71,7 @@ Specifies whether the common language runtime allows managed code to catch acces
   
  -or-  
   
--   Apply the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> attribute to the method that contains the exceptions `catch` block.  
+-   Apply the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=nameWithType> attribute to the method that contains the exceptions `catch` block.  
   
  This configuration element is available only in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)] and later.  
   

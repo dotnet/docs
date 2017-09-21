@@ -43,7 +43,7 @@ The syntax of `throw` is:
 ```csharp
 throw [e]
 ```
-where `e` is an instance of a class derived from <xref:System.Exception?displayProperty=fullName>. The following example uses the `throw` statement to throw an @System.IndexOutOfRangeException if the argument passed to a method named `GetNumber` does not correspond to a valid index of an internal array.
+where `e` is an instance of a class derived from <xref:System.Exception?displayProperty=nameWithType>. The following example uses the `throw` statement to throw an @System.IndexOutOfRangeException if the argument passed to a method named `GetNumber` does not correspond to a valid index of an internal array.
 
 [!code-cs[csrefKeyword#1](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#1)]  
 

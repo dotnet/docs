@@ -213,7 +213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the designer's <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> property causes the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A?displayProperty=fullName> property of the associated control to be set. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String>, indicating a new data source is to be defined, a **Create Data Source** dialog box is displayed. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String> indicating there is no data source, the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> is set to an empty string ("").  
+ Setting the designer's <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> property causes the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A?displayProperty=nameWithType> property of the associated control to be set. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String>, indicating a new data source is to be defined, a **Create Data Source** dialog box is displayed. If the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSourceID%2A> is set to a <xref:System.String> indicating there is no data source, the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> is set to an empty string ("").  
   
  ]]></format>
         </remarks>
@@ -301,7 +301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=fullName> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is defined by the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> and <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> properties. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
+ The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=nameWithType> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is defined by the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource%2A> and <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataMember%2A> properties. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
   
  ]]></format>
         </remarks>
@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=fullName> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is specified by the `selectedDataSource` parameter. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
+ The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetDesignTimeDataSource%2A?displayProperty=nameWithType> method attempts to construct a <xref:System.Data.DataTable> object from the data source that is specified by the `selectedDataSource` parameter. If this is not possible, it creates a <xref:System.Data.DataTable> from dummy data.  
   
  ]]></format>
         </remarks>
@@ -387,7 +387,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=fullName> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of the associated control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
+ The <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=nameWithType> method to construct a data source from the object that is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property of the associated control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class.  
   
  ]]></format>
         </remarks>
@@ -740,7 +740,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  For controls that are derived from the <xref:System.Web.UI.WebControls.BaseDataList> class, the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.PreFilterProperties%2A> creates design-time properties to shadow the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A>, <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A>, <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A>, and <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> properties.  
   

@@ -14,7 +14,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Defines the interface used to inspect and add state to channels when they are first created. This can be used to track all outstanding sessions, for instance, so the service can send messages on them. Add service channel initializers to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers%2A?displayProperty=fullName> collection. Add client channel initializers to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.ChannelInitializers%2A?displayProperty=fullName> collection.  
+ Defines the interface used to inspect and add state to channels when they are first created. This can be used to track all outstanding sessions, for instance, so the service can send messages on them. Add service channel initializers to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ChannelInitializers%2A?displayProperty=nameWithType> collection. Add client channel initializers to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.ChannelInitializers%2A?displayProperty=nameWithType> collection.  
   
  ]]></format>
     </remarks>

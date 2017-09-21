@@ -295,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=fullName> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=nameWithType> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=nameWithType> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
   
  As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   
@@ -364,12 +364,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be easily iterated through to get each item in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. To get the item currently pointed to in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item. If you need to move the enumerator back to the beginning of the collection, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be easily iterated through to get each item in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. To get the item currently pointed to in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item. If you need to move the enumerator back to the beginning of the collection, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  After you create an enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  After you create an enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
- As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to create an <xref:System.Array?displayProperty=fullName> object that can be used to access the items in the collection. Another alternative is to use a `foreach` or `For Each` structure to iterate through the collection.  
+ As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to create an <xref:System.Array?displayProperty=nameWithType> object that can be used to access the items in the collection. Another alternative is to use a `foreach` or `For Each` structure to iterate through the collection.  
   
    
   
@@ -443,9 +443,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.TreeNodeCollection> is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false`.  
+ The <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.TreeNodeCollection> is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> class and is overridden to always return `false`.  
   
- For more information on the <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -599,11 +599,11 @@
  Synchronizing code must perform operations on the <xref:System.Web.UI.WebControls.TreeNodeCollection.SyncRoot%2A> object of the <xref:System.Web.UI.WebControls.TreeNodeCollection>, not directly on the <xref:System.Web.UI.WebControls.TreeNodeCollection> itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
   
 > [!NOTE]
->  The object returned in this implementation is the <xref:System.Collections.ArrayList?displayProperty=fullName> object used to store the <xref:System.Web.UI.WebControls.TreeNode> objects in the collection.  
+>  The object returned in this implementation is the <xref:System.Collections.ArrayList?displayProperty=nameWithType> object used to store the <xref:System.Web.UI.WebControls.TreeNode> objects in the collection.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -633,7 +633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=fullName> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=nameWithType> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=nameWithType> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
   
  As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   

@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.Media.GlyphRun.ComputeInkBoundingBox?displayProperty=fullName></li><li><xref:System.Windows.Media.FormattedText.Extent?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Media.GlyphRun.ComputeInkBoundingBox?displayProperty=nameWithType></li><li><xref:System.Windows.Media.FormattedText.Extent?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0114</li></ul>|
 

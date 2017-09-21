@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example defines a `PhoneService` enumeration that represents forms of communication provided by a telephone company. It initializes three variables representing the service provided to three different households, and then indicates which households have no service, which households have only cell phone service, and which households have both cell phone and land line service. Finally, it implicitly calls the <xref:System.Enum.ToString%28System.String%29?displayProperty=fullName> method to display the types of service provided to each household.  
+ The following example defines a `PhoneService` enumeration that represents forms of communication provided by a telephone company. It initializes three variables representing the service provided to three different households, and then indicates which households have no service, which households have only cell phone service, and which households have both cell phone and land line service. Finally, it implicitly calls the <xref:System.Enum.ToString%28System.String%29?displayProperty=nameWithType> method to display the types of service provided to each household.  
   
  [!code-cpp[System.FlagsAttribute#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.FlagsAttribute/CPP/flags1.cpp#2)]
  [!code-csharp[System.FlagsAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.FlagsAttribute/CS/flags1.cs#2)]

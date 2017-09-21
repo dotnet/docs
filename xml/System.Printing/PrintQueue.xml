@@ -323,7 +323,7 @@
 ## Remarks  
  Unless the queue is paused or in an error state, the job prints when it reaches the top of the queue, so this is a printing function.  
   
- Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
+ Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=nameWithType> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
   
  ]]></format>
         </remarks>
@@ -363,7 +363,7 @@
   
  In the print queue's [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)], the job has the name "Print System Document". To give the job a different name, use the <xref:System.Printing.PrintQueue.AddJob%28System.String%29> overload.  
   
- Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
+ Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=nameWithType> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
   
    
   
@@ -412,7 +412,7 @@
 > [!CAUTION]
 >  If the <xref:System.Printing.PrintSystemJobInfo.JobStream%2A> is not closed with <xref:System.IO.Stream.Close%2A> before the end of the thread in which <xref:System.Printing.PrintQueue.AddJob%2A> is called, then an <xref:System.InvalidOperationException> is thrown when that thread ends because the spooler thread cannot gain control over the <xref:System.IO.Stream> object.  
   
- Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
+ Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=nameWithType> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
   
    
   
@@ -506,7 +506,7 @@
 > [!NOTE]
 >  You cannot apply the <xref:System.STAThreadAttribute> to any method except `Main` and you cannot use <xref:System.Threading.Thread.SetApartmentState%2A> for the `Main` thread.  
   
- Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
+ Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=nameWithType> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
   
    
   
@@ -1086,7 +1086,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can also use the <xref:System.Printing.PrintSystemJobInfo.Get%2A?displayProperty=fullName> method for the same purpose.  
+ You can also use the <xref:System.Printing.PrintSystemJobInfo.Get%2A?displayProperty=nameWithType> method for the same purpose.  
   
    
   

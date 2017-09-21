@@ -251,9 +251,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `ensureIsUpToDate` parameter value is set to `true`, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload behaves like the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload. Both overloads return a current build dependency set if one exists, otherwise they return `null`.  
+ If the `ensureIsUpToDate` parameter value is set to `true`, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=nameWithType> method overload behaves like the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=nameWithType> method overload. Both overloads return a current build dependency set if one exists, otherwise they return `null`.  
   
- However, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload includes the option to return any build dependency set that is available, even an outdated one. If the `ensureIsUpToDate` parameter value is set to `false`, the method will return any available build dependency set.  
+ However, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=nameWithType> method overload includes the option to return any build dependency set that is available, even an outdated one. If the `ensureIsUpToDate` parameter value is set to `false`, the method will return any available build dependency set.  
   
  ]]></format>
         </remarks>

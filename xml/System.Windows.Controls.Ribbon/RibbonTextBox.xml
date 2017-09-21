@@ -859,7 +859,7 @@ Ribbon text box controls
 ## Remarks  
  This method overrides the default behavior and enables the keyboard focus visual when this control gets keyboard focus.  
   
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A?displayProperty=fullName> property) of the <xref:System.Windows.UIElement.GotKeyboardFocus> event data.  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A?displayProperty=nameWithType> property) of the <xref:System.Windows.UIElement.GotKeyboardFocus> event data.  
   
  ]]></format>
         </remarks>
@@ -931,7 +931,7 @@ Ribbon text box controls
 ## Remarks  
  This method overrides the default behavior and disables the keyboard focus visual when this control loses keyboard focus.  
   
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A?displayProperty=fullName> property) of the <xref:System.Windows.UIElement.LostKeyboardFocus> event data.  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A?displayProperty=nameWithType> property) of the <xref:System.Windows.UIElement.LostKeyboardFocus> event data.  
   
  ]]></format>
         </remarks>
@@ -1258,7 +1258,7 @@ Ribbon text box controls
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipDescription"></a>   
 ## Dependency Property Information  
@@ -1320,7 +1320,7 @@ Enhanced ToolTip
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
 ## Dependency Property Information  
@@ -1382,7 +1382,7 @@ Enhanced ToolTip
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
 ## Dependency Property Information  
@@ -1444,7 +1444,7 @@ Enhanced ToolTip
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
 ## Dependency Property Information  
@@ -1506,7 +1506,7 @@ Enhanced ToolTip
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
 ## Dependency Property Information  
@@ -1568,7 +1568,7 @@ Enhanced ToolTip
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipTitle"></a>   
 ## Dependency Property Information  

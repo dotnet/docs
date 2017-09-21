@@ -171,10 +171,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataKeyArray.GetEnumerator%2A> method to get an enumerator that can be iterated through linearly to access each item in the collection. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection. To move the enumerator to its initial position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Web.UI.WebControls.DataKeyArray.GetEnumerator%2A> method to get an enumerator that can be iterated through linearly to access each item in the collection. To access the item at the current position in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection. To move the enumerator to its initial position, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
->  When you initially get the enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  When you initially get the enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
    
   
@@ -242,7 +242,7 @@
 > [!NOTE]
 >  This property has been overridden to always return `false` to indicate that the <xref:System.Web.UI.WebControls.DataKeyArray> object is not thread safe.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataKeyArray.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataKeyArray.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -306,7 +306,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DataKeyArray.SyncRoot%2A> property to get an object that can be used to synchronize access to the collection. The object returned in this implementation is the <xref:System.Web.UI.WebControls.DataKeyArray> object itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataKeyArray.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataKeyArray.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -336,10 +336,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of the <xref:System.Web.UI.WebControls.DataKeyArray.System%23Collections%23ICollection%23CopyTo%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataKeyArray> class to copy the items in the <xref:System.Web.UI.WebControls.DataKeyArray> collection into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index. The <xref:System.Array?displayProperty=fullName> can then be used to access the items in the collection.  
+ This implementation of the <xref:System.Web.UI.WebControls.DataKeyArray.System%23Collections%23ICollection%23CopyTo%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataKeyArray> class to copy the items in the <xref:System.Web.UI.WebControls.DataKeyArray> collection into the specified <xref:System.Array?displayProperty=nameWithType>, starting at the specified index. The <xref:System.Array?displayProperty=nameWithType> can then be used to access the items in the collection.  
   
 > [!NOTE]
->  You must use a zero-based <xref:System.Array?displayProperty=fullName> for the `array` parameter.  
+>  You must use a zero-based <xref:System.Array?displayProperty=nameWithType> for the `array` parameter.  
   
  ]]></format>
         </remarks>

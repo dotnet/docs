@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This setting influences the logic of <xref:System.Xaml.XamlXmlWriter.Dispose%2A?displayProperty=fullName>, which calls `Close` on the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter> when <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `true`; or it calls <xref:System.Xaml.XamlXmlWriter.Flush%2A> (again tied to the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter>) if <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `false`.  
+ This setting influences the logic of <xref:System.Xaml.XamlXmlWriter.Dispose%2A?displayProperty=nameWithType>, which calls `Close` on the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter> when <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `true`; or it calls <xref:System.Xaml.XamlXmlWriter.Flush%2A> (again tied to the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter>) if <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `false`.  
   
  ]]></format>
         </remarks>

@@ -49,7 +49,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<assert>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/assert-element.md)|Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method; also specifies the name of the file to write messages to.|  
+|[\<assert>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/assert-element.md)|Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method; also specifies the name of the file to write messages to.|  
 |[\<performanceCounters>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/performancecounters-element.md)|Specifies the size of the global memory shared by performance counters.|  
 |[\<sharedListeners>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md)|Contains listeners that any source or trace element can reference. Listeners identified as shared listeners can be added to sources or traces by name.|  
 |[\<sources>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sources-element.md)|Specifies trace sources that initiate tracing messages.|  

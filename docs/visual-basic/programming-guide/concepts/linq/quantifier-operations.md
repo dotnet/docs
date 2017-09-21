@@ -35,9 +35,9 @@ Quantifier operations return a <xref:System.Boolean> value that indicates whethe
   
 |Method Name|Description|Visual Basic Query Expression Syntax|More Information|  
 |-----------------|-----------------|------------------------------------------|----------------------|  
-|All|Determines whether all the elements in a sequence satisfy a condition.|`Aggregate … In … Into All(…)`|<xref:System.Linq.Enumerable.All%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.All%2A?displayProperty=fullName>|  
-|Any|Determines whether any elements in a sequence satisfy a condition.|`Aggregate … In … Into Any()`|<xref:System.Linq.Enumerable.Any%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Any%2A?displayProperty=fullName>|  
-|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Contains%2A?displayProperty=fullName>|  
+|All|Determines whether all the elements in a sequence satisfy a condition.|`Aggregate … In … Into All(…)`|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|  
+|Any|Determines whether any elements in a sequence satisfy a condition.|`Aggregate … In … Into Any()`|<xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Any%2A?displayProperty=nameWithType>|  
+|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Contains%2A?displayProperty=nameWithType>|  
   
 ## Query Expression Syntax Examples  
  These examples use the `Aggregate` clause in Visual Basic as part of the filtering condition in a LINQ query.  

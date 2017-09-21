@@ -28,13 +28,13 @@
   
  There are four extensible objects in [!INCLUDE[indigo1](~/includes/indigo1-md.md)]:  
   
--   <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName>  
+-   <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.InstanceContext?displayProperty=fullName>  
+-   <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.IContextChannel?displayProperty=fullName>  
+-   <xref:System.ServiceModel.IContextChannel?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.OperationContext?displayProperty=fullName>  
+-   <xref:System.ServiceModel.OperationContext?displayProperty=nameWithType>  
   
  For a discussion about how to create extension to work with these objects, see [Extensible Objects](~/docs/framework/wcf/extending/extensible-objects.md).  
   

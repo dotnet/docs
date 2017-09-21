@@ -66,15 +66,15 @@
   
 <a name="Core"></a>   
 ## [!INCLUDE[net_core](~/includes/net-core-md.md)] Notes  
- In the .NET Framework on the desktop, the <xref:System.Diagnostics.Process> class by default uses <xref:System.Console> encodings, which are typically code page encodings, for the input, output, and error streams. For example code, on systems whose culture is English (United States), code page 437 is the default encoding for the <xref:System.Console> class. However, [!INCLUDE[net_core](~/includes/net-core-md.md)] may make only a limited subset of these encodings available. If this is the case, it uses <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> as the default encoding.  
+ In the .NET Framework on the desktop, the <xref:System.Diagnostics.Process> class by default uses <xref:System.Console> encodings, which are typically code page encodings, for the input, output, and error streams. For example code, on systems whose culture is English (United States), code page 437 is the default encoding for the <xref:System.Console> class. However, [!INCLUDE[net_core](~/includes/net-core-md.md)] may make only a limited subset of these encodings available. If this is the case, it uses <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> as the default encoding.  
   
  If a <xref:System.Diagnostics.Process> object depends on specific code page encodings, you can still make them available by doing the following *before* you call any <xref:System.Diagnostics.Process> methods:  
   
 1.  Add a reference to the System.Text.Encoding.CodePages.dll assembly to your project.  
   
-2.  Retrieve the <xref:System.Text.EncodingProvider> object from the <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=fullName> property.  
+2.  Retrieve the <xref:System.Text.EncodingProvider> object from the <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=nameWithType> property.  
   
-3.  Pass the <xref:System.Text.EncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=fullName> method to make the additional encodings supported by the encoding provider available.  
+3.  Pass the <xref:System.Text.EncodingProvider> object to the <xref:System.Text.Encoding.RegisterProvider%2A?displayProperty=nameWithType> method to make the additional encodings supported by the encoding provider available.  
   
  The <xref:System.Diagnostics.Process> class will then automatically use the default system encoding rather than UTF8, provided that you have registered the encoding provider before calling any <xref:System.Diagnostics.Process> methods.  
   
@@ -137,7 +137,7 @@
   
  If you use a `static` overload of the <xref:System.Diagnostics.Process.Start%2A> method to start a new system process, the method creates a new <xref:System.Diagnostics.Process> component and associates it with the process.  
   
- When the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=fullName> property is set to its default value, `true`, you can start applications and documents in a way that is similar to using the `Run` dialog box of the Windows `Start` menu. When <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=fullName> is `false`, you can start only executables.  
+ When the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=nameWithType> property is set to its default value, `true`, you can start applications and documents in a way that is similar to using the `Run` dialog box of the Windows `Start` menu. When <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=nameWithType> is `false`, you can start only executables.  
   
  Any executable file that you can call from the command line can be started in one of two ways: by setting the appropriate members of the <xref:System.Diagnostics.Process.StartInfo%2A> property and calling the <xref:System.Diagnostics.Process.Start%2A> method with no parameters, or by passing the appropriate parameter to the `static`<xref:System.Diagnostics.Process.Start%2A> member.  
   
@@ -265,7 +265,7 @@
   
 2.  Set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardError%2A> to `true`.  
   
-3.  Add your event handler to the <xref:System.Diagnostics.Process.ErrorDataReceived> event. The event handler must match the <xref:System.Diagnostics.DataReceivedEventHandler?displayProperty=fullName> delegate signature.  
+3.  Add your event handler to the <xref:System.Diagnostics.Process.ErrorDataReceived> event. The event handler must match the <xref:System.Diagnostics.DataReceivedEventHandler?displayProperty=nameWithType> delegate signature.  
   
 4.  Start the <xref:System.Diagnostics.Process>.  
   
@@ -345,7 +345,7 @@
   
 2.  Set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput%2A> to `true`.  
   
-3.  Add your event handler to the <xref:System.Diagnostics.Process.OutputDataReceived> event. The event handler must match the <xref:System.Diagnostics.DataReceivedEventHandler?displayProperty=fullName> delegate signature.  
+3.  Add your event handler to the <xref:System.Diagnostics.Process.OutputDataReceived> event. The event handler must match the <xref:System.Diagnostics.DataReceivedEventHandler?displayProperty=nameWithType> delegate signature.  
   
 4.  Start the <xref:System.Diagnostics.Process>.  
   
@@ -1815,7 +1815,7 @@ The following code example creates a process that prints a file. It sets the <xr
  You can view statistical data and process information for processes running on remote computers but you cannot call <xref:System.Diagnostics.Process.Start%2A>, <xref:System.Diagnostics.Process.CloseMainWindow%2A>, or <xref:System.Diagnostics.Process.Kill%2A> on remote computers.  
   
 > [!NOTE]
->  When the associated process is executing on the local machine, this property returns a period (".") for the machine name. You should use the <xref:System.Environment.MachineName%2A?displayProperty=fullName> property to get the correct machine name.  
+>  When the associated process is executing on the local machine, this property returns a period (".") for the machine name. You should use the <xref:System.Environment.MachineName%2A?displayProperty=nameWithType> property to get the correct machine name.  
   
    
   
@@ -3573,7 +3573,7 @@ The following code example creates a process that prints a file. It sets the <xr
  When a <xref:System.Diagnostics.Process> writes text to its standard error stream, that text is normally displayed on the console. By redirecting the <xref:System.Diagnostics.Process.StandardError%2A> stream, you can manipulate or suppress the error output of a process. For example, you can filter the text, format it differently, or write the output to both the console and a designated log file.  
   
 > [!NOTE]
->  To use <xref:System.Diagnostics.Process.StandardError%2A>, you must set <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=fullName> to `false`, and you must set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardError%2A?displayProperty=fullName> to `true`. Otherwise, reading from the <xref:System.Diagnostics.Process.StandardError%2A> stream throws an exception.  
+>  To use <xref:System.Diagnostics.Process.StandardError%2A>, you must set <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=nameWithType> to `false`, and you must set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardError%2A?displayProperty=nameWithType> to `true`. Otherwise, reading from the <xref:System.Diagnostics.Process.StandardError%2A> stream throws an exception.  
   
  The redirected <xref:System.Diagnostics.Process.StandardError%2A> stream can be read synchronously or asynchronously. Methods such as <xref:System.IO.StreamReader.Read%2A>, <xref:System.IO.StreamReader.ReadLine%2A>, and <xref:System.IO.StreamReader.ReadToEnd%2A> perform synchronous read operations on the error output stream of the process. These synchronous read operations do not complete until the associated <xref:System.Diagnostics.Process> writes to its <xref:System.Diagnostics.Process.StandardError%2A> stream, or closes the stream.  
   
@@ -3684,7 +3684,7 @@ p.WaitForExit();
  A <xref:System.Diagnostics.Process> can read input text from its standard input stream, typically the keyboard. By redirecting the <xref:System.Diagnostics.Process.StandardInput%2A> stream, you can programmatically specify the input. For example, instead of using keyboard input, you can provide text from the contents of a designated file or output from another application.  
   
 > [!NOTE]
->  To use <xref:System.Diagnostics.Process.StandardInput%2A>, you must set <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=fullName> to `false`, and you must set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardInput%2A?displayProperty=fullName> to `true`. Otherwise, writing to the <xref:System.Diagnostics.Process.StandardInput%2A> stream throws an exception.  
+>  To use <xref:System.Diagnostics.Process.StandardInput%2A>, you must set <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=nameWithType> to `false`, and you must set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardInput%2A?displayProperty=nameWithType> to `true`. Otherwise, writing to the <xref:System.Diagnostics.Process.StandardInput%2A> stream throws an exception.  
   
    
   
@@ -3744,7 +3744,7 @@ p.WaitForExit();
  When a <xref:System.Diagnostics.Process> writes text to its standard stream, that text is normally displayed on the console. By redirecting the <xref:System.Diagnostics.Process.StandardOutput%2A> stream, you can manipulate or suppress the output of a process. For example, you can filter the text, format it differently, or write the output to both the console and a designated log file.  
   
 > [!NOTE]
->  To use <xref:System.Diagnostics.Process.StandardOutput%2A>, you must set <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=fullName> to `false`, and you must set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput%2A?displayProperty=fullName> to `true`. Otherwise, reading from the <xref:System.Diagnostics.Process.StandardOutput%2A> stream throws an exception.  
+>  To use <xref:System.Diagnostics.Process.StandardOutput%2A>, you must set <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A?displayProperty=nameWithType> to `false`, and you must set <xref:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput%2A?displayProperty=nameWithType> to `true`. Otherwise, reading from the <xref:System.Diagnostics.Process.StandardOutput%2A> stream throws an exception.  
   
  The redirected <xref:System.Diagnostics.Process.StandardOutput%2A> stream can be read synchronously or asynchronously. Methods such as <xref:System.IO.StreamReader.Read%2A>, <xref:System.IO.StreamReader.ReadLine%2A>, and <xref:System.IO.StreamReader.ReadToEnd%2A> perform synchronous read operations on the output stream of the process. These synchronous read operations do not complete until the associated <xref:System.Diagnostics.Process> writes to its <xref:System.Diagnostics.Process.StandardOutput%2A> stream, or closes the stream.  
   
@@ -4014,7 +4014,7 @@ p.WaitForExit();
   
  Starting a process by specifying its file name is similar to typing the information in the `Run` dialog box of the Windows `Start` menu. Therefore, the file name does not need to represent an executable file. It can be of any file type for which the extension has been associated with an application installed on the system. For example the file name can have a .txt extension if you have associated text files with an editor, such as Notepad, or it can have a .doc if you have associated.doc files with a word processing tool, such as Microsoft Word. Similarly, in the same way that the `Run` dialog box can accept an executable file name with or without the .exe extension, the .exe extension is optional in the `fileName` parameter. For example, you can set the `fileName` parameter to either "Notepad.exe" or "Notepad".  
   
- This overload does not allow command-line arguments for the process. If you need to specify one or more command-line arguments for the process, use the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=fullName> or <xref:System.Diagnostics.Process.Start%28System.String%2CSystem.String%29?displayProperty=fullName> overloads.  
+ This overload does not allow command-line arguments for the process. If you need to specify one or more command-line arguments for the process, use the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=nameWithType> or <xref:System.Diagnostics.Process.Start%28System.String%2CSystem.String%29?displayProperty=nameWithType> overloads.  
   
  Unlike the other overloads, the overload of <xref:System.Diagnostics.Process.Start%2A> that has no parameters is not a `static` member. Use that overload when you have already created a <xref:System.Diagnostics.Process> instance, specified start information (including the file name), and want to start a process resource and associate it with the existing <xref:System.Diagnostics.Process> instance. Use one of the `static` overloads when you want to create a new <xref:System.Diagnostics.Process> component rather than start a process for an existing component. Both this overload and the overload that has no parameters allow you to specify the file name of the process resource to start.  
   
@@ -4309,7 +4309,7 @@ p.WaitForExit();
   
  If the file name involves a nonexecutable file, such as a .doc file, you can include a verb specifying what action to take on the file. For example, you could set the <xref:System.Diagnostics.ProcessStartInfo.Verb%2A> to "Print" for a file ending in the .doc extension. The file name specified in the <xref:System.Diagnostics.ProcessStartInfo.FileName%2A> property does not need to have an extension if you manually enter a value for the <xref:System.Diagnostics.ProcessStartInfo.Verb%2A> property. However, if you use the <xref:System.Diagnostics.ProcessStartInfo.Verbs%2A> property to determine what verbs are available, you must include the extension.  
   
- You can change the parameters specified in the <xref:System.Diagnostics.Process.StartInfo%2A> property up to the time that you call the <xref:System.Diagnostics.Process.Start%2A> method on the process. After you start the process, changing the <xref:System.Diagnostics.Process.StartInfo%2A> values does not affect or restart the associated process. If you call the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29> method with the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A?displayProperty=fullName> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A?displayProperty=fullName> properties set, the unmanaged `CreateProcessWithLogonW` function is called, which starts the process in a new window even if the <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow%2A> property value is `true` or the <xref:System.Diagnostics.ProcessStartInfo.WindowStyle%2A> property value is <xref:System.Diagnostics.ProcessWindowStyle.Hidden>.  
+ You can change the parameters specified in the <xref:System.Diagnostics.Process.StartInfo%2A> property up to the time that you call the <xref:System.Diagnostics.Process.Start%2A> method on the process. After you start the process, changing the <xref:System.Diagnostics.Process.StartInfo%2A> values does not affect or restart the associated process. If you call the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29> method with the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A?displayProperty=nameWithType> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A?displayProperty=nameWithType> properties set, the unmanaged `CreateProcessWithLogonW` function is called, which starts the process in a new window even if the <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow%2A> property value is `true` or the <xref:System.Diagnostics.ProcessStartInfo.WindowStyle%2A> property value is <xref:System.Diagnostics.ProcessWindowStyle.Hidden>.  
   
  If you did not use the <xref:System.Diagnostics.Process.Start%2A> method to start a process, the <xref:System.Diagnostics.Process.StartInfo%2A> property does not reflect the parameters used to start the process. For example, if you use <xref:System.Diagnostics.Process.GetProcesses%2A> to get an array of processes running on the computer, the <xref:System.Diagnostics.Process.StartInfo%2A> property of each <xref:System.Diagnostics.Process> does not contain the original file name or arguments used to start the process.  
   
@@ -4832,7 +4832,7 @@ p.WaitForExit();
 ## Remarks  
  <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29> makes the current thread wait until the associated process terminates. It should be called after all other methods are called on the process. To avoid blocking the current thread, use the <xref:System.Diagnostics.Process.Exited> event.  
   
- This method instructs the <xref:System.Diagnostics.Process> component to wait a finite amount of time for the process to exit. If the associated process does not exit by the end of the interval because the request to terminate is denied, `false` is returned to the calling procedure. You can specify a negative number (<xref:System.Threading.Timeout.Infinite>) for `milliseconds`, and <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29?displayProperty=fullName> will behave the same as the <xref:System.Diagnostics.Process.WaitForExit> overload. If you pass 0 (zero) to the method, it returns `true` only if the process has already exited; otherwise, it immediately returns `false`.  
+ This method instructs the <xref:System.Diagnostics.Process> component to wait a finite amount of time for the process to exit. If the associated process does not exit by the end of the interval because the request to terminate is denied, `false` is returned to the calling procedure. You can specify a negative number (<xref:System.Threading.Timeout.Infinite>) for `milliseconds`, and <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29?displayProperty=nameWithType> will behave the same as the <xref:System.Diagnostics.Process.WaitForExit> overload. If you pass 0 (zero) to the method, it returns `true` only if the process has already exited; otherwise, it immediately returns `false`.  
   
 > [!NOTE]
 >  In the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions, if `milliseconds` was -1, the <xref:System.Diagnostics.Process.WaitForExit%28System.Int32%29> overload waited for <xref:System.Int32.MaxValue> milliseconds (approximately 24 days), not indefinitely.  

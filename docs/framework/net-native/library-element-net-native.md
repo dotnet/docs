@@ -40,7 +40,7 @@ Defines the assembly that contains types and type members whose metadata is avai
   
 |Value|Description|  
 |-----------|-----------------|  
-|*assembly_name*|The simple name of the assembly, without its file extension. This attribute corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property. For example, the name of an assembly named Extensions.dll is "Extensions". See the Remarks section for a special form of *assembly_name* that supports conditional inclusion of metadata from the assembly.|  
+|*assembly_name*|The simple name of the assembly, without its file extension. This attribute corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property. For example, the name of an assembly named Extensions.dll is "Extensions". See the Remarks section for a special form of *assembly_name* that supports conditional inclusion of metadata from the assembly.|  
   
 ### Child Elements  
   

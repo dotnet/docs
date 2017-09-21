@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Delegates (Visual Basic)
-Delegates are objects that refer to methods. They are sometimes described as *type-safe function pointers* because they are similar to function pointers used in other programming languages. But unlike function pointers, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] delegates are a reference type based on the class <xref:System.Delegate?displayProperty=fullName>. Delegates can reference both shared methods — methods that can be called without a specific instance of a class — and instance methods.  
+Delegates are objects that refer to methods. They are sometimes described as *type-safe function pointers* because they are similar to function pointers used in other programming languages. But unlike function pointers, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] delegates are a reference type based on the class <xref:System.Delegate?displayProperty=nameWithType>. Delegates can reference both shared methods — methods that can be called without a specific instance of a class — and instance methods.  
   
 ## Delegates and Events  
  Delegates are useful in situations where you need an intermediary between a calling procedure and the procedure being called. For example, you might want an object that raises events to be able to call different event handlers under different circumstances. Unfortunately, the object raising the events cannot know ahead of time which event handler is handling a specific event. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] lets you dynamically associate event handlers with events by creating a delegate for you when you use the `AddHandler` statement. At run time, the delegate forwards calls to the appropriate event handler.  

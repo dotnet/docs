@@ -389,7 +389,7 @@
 ## Remarks  
  If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
   
- If the object type is not supported, the method writes the value of the object's <xref:System.Object.ToString%2A?displayProperty=fullName> method in the payload. For a list of supported object types, see the Remarks for the <xref:System.Diagnostics.Eventing.EventProvider> class.  
+ If the object type is not supported, the method writes the value of the object's <xref:System.Object.ToString%2A?displayProperty=nameWithType> method in the payload. For a list of supported object types, see the Remarks for the <xref:System.Diagnostics.Eventing.EventProvider> class.  
   
    
   

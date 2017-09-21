@@ -22,10 +22,10 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] metadata system is a
   
 ## In This Section  
  [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md)  
- Describes how to implement and use the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=fullName> interface to embed custom policy assertions in WSDL documents.  
+ Describes how to implement and use the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> interface to embed custom policy assertions in WSDL documents.  
   
  [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)  
- Describes how to implement and use the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=fullName> interface to read and respond to custom policy assertions in WSDL documents.  
+ Describes how to implement and use the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface to read and respond to custom policy assertions in WSDL documents.  
   
  [Publishing and Retrieving Metadata Over a Custom Binding](../../../../docs/framework/wcf/extending/publishing-and-retrieving-metadata-over-a-custom-binding.md)  
  Describes how to exchange metadata over custom bindings.

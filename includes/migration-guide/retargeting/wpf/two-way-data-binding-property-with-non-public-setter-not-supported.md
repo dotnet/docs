@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.5.1|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Windows.Data.BindingMode.TwoWay?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Data.BindingMode.TwoWay?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0129</li></ul>|
 

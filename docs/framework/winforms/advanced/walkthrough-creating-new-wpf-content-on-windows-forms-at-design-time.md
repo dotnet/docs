@@ -56,7 +56,7 @@ This topic shows you how to create a Windows Presentation Foundation (WPF) contr
  Creating a new WPF control and adding it to your project is as easy as adding any other item to your project. The Windows Forms Designer works with a particular kind of control named *composite control*, or *user control*. For more information about WPF user controls, see <xref:System.Windows.Controls.UserControl>.  
   
 > [!NOTE]
->  The <xref:System.Windows.Controls.UserControl?displayProperty=fullName> type for WPF is distinct from the user control type provided by Windows Forms, which is also named <xref:System.Windows.Forms.UserControl?displayProperty=fullName>.  
+>  The <xref:System.Windows.Controls.UserControl?displayProperty=nameWithType> type for WPF is distinct from the user control type provided by Windows Forms, which is also named <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>.  
   
 #### To create a new WPF control  
   
@@ -76,12 +76,12 @@ This topic shows you how to create a Windows Presentation Foundation (WPF) contr
   
 3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-4.  From the **Toolbox**, drag a <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control onto the design surface.  
+4.  From the **Toolbox**, drag a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control onto the design surface.  
   
 5.  In the **Properties** window, set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
   
     > [!NOTE]
-    >  In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control is used here for illustrative purposes only.  
+    >  In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control is used here for illustrative purposes only.  
   
 6.  Build the project.  
   

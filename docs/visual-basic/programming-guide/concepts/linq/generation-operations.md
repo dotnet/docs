@@ -31,10 +31,10 @@ Generation refers to creating a new sequence of values.
   
 |Method Name|Description|Visual Basic Query Expression Syntax|More Information|  
 |-----------------|-----------------|------------------------------------------|----------------------|  
-|DefaultIfEmpty|Replaces an empty collection with a default valued singleton collection.|Not applicable.|<xref:System.Linq.Enumerable.DefaultIfEmpty%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.DefaultIfEmpty%2A?displayProperty=fullName>|  
-|Empty|Returns an empty collection.|Not applicable.|<xref:System.Linq.Enumerable.Empty%2A?displayProperty=fullName>|  
-|Range|Generates a collection that contains a sequence of numbers.|Not applicable.|<xref:System.Linq.Enumerable.Range%2A?displayProperty=fullName>|  
-|Repeat|Generates a collection that contains one repeated value.|Not applicable.|<xref:System.Linq.Enumerable.Repeat%2A?displayProperty=fullName>|  
+|DefaultIfEmpty|Replaces an empty collection with a default valued singleton collection.|Not applicable.|<xref:System.Linq.Enumerable.DefaultIfEmpty%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.DefaultIfEmpty%2A?displayProperty=nameWithType>|  
+|Empty|Returns an empty collection.|Not applicable.|<xref:System.Linq.Enumerable.Empty%2A?displayProperty=nameWithType>|  
+|Range|Generates a collection that contains a sequence of numbers.|Not applicable.|<xref:System.Linq.Enumerable.Range%2A?displayProperty=nameWithType>|  
+|Repeat|Generates a collection that contains one repeated value.|Not applicable.|<xref:System.Linq.Enumerable.Repeat%2A?displayProperty=nameWithType>|  
   
 ## See Also  
  <xref:System.Linq>   

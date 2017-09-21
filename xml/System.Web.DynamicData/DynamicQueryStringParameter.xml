@@ -24,7 +24,7 @@
   
  For primary keys, you can simply add a <xref:System.Web.DynamicData.DynamicQueryStringParameter> object without supplying any other parameters. Dynamic Data will generate the parameters for the primary key or keys. For foreign keys or Boolean columns, you must set the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property to the name of the column you want to filter.  
   
- In order to use the <xref:System.Web.DynamicData.DynamicQueryStringParameter> class, you must add a <xref:System.Web.DynamicData.DynamicDataManager> control to the page and you must register the data-bound control with the <xref:System.Web.DynamicData.DynamicDataManager> control by using the <xref:System.Web.DynamicData.DynamicDataManager.RegisterControl%2A?displayProperty=fullName> method.  
+ In order to use the <xref:System.Web.DynamicData.DynamicQueryStringParameter> class, you must add a <xref:System.Web.DynamicData.DynamicDataManager> control to the page and you must register the data-bound control with the <xref:System.Web.DynamicData.DynamicDataManager> control by using the <xref:System.Web.DynamicData.DynamicDataManager.RegisterControl%2A?displayProperty=nameWithType> method.  
   
  See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.DynamicQueryStringParameter).  
   

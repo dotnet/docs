@@ -124,7 +124,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs.RelatedObject%2A> property enables the programmer to associate an object to an instance of the <xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs> class.  
   
- For the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event, the <xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs.RelatedObject%2A> property should always reference the <xref:System.ComponentModel.Component?displayProperty=fullName> that the <xref:System.ComponentModel.Design.DesignerActionListCollection> is associated with.  
+ For the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event, the <xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs.RelatedObject%2A> property should always reference the <xref:System.ComponentModel.Component?displayProperty=nameWithType> that the <xref:System.ComponentModel.Design.DesignerActionListCollection> is associated with.  
   
  ]]></format>
         </remarks>

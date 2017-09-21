@@ -35,8 +35,8 @@ Filtering refers to the operation of restricting the result set to contain only 
   
 |Method Name|Description|C# Query Expression Syntax|More Information|  
 |-----------------|-----------------|---------------------------------|----------------------|  
-|OfType|Selects values, depending on their ability to be cast to a specified type.|Not applicable.|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=fullName>|  
-|Where|Selects values that are based on a predicate function.|`where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=fullName>|  
+|OfType|Selects values, depending on their ability to be cast to a specified type.|Not applicable.|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|  
+|Where|Selects values that are based on a predicate function.|`where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=nameWithType>|  
   
 ## Query Expression Syntax Example  
  The following example uses the `where` clause to filter from an array those strings that have a specific length.  

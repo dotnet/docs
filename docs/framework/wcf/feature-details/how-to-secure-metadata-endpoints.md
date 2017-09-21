@@ -91,9 +91,9 @@ Metadata for a service can contain sensitive information about your application 
 ## Compiling the Code  
  The code example uses the following namespaces:  
   
--   <xref:System.ServiceModel?displayProperty=fullName>  
+-   <xref:System.ServiceModel?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Description?displayProperty=fullName>  
+-   <xref:System.ServiceModel.Description?displayProperty=nameWithType>  
   
 ## See Also  
  <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>   

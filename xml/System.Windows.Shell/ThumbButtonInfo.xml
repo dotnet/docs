@@ -22,7 +22,7 @@
 ## Remarks  
  The [!INCLUDE[win7](~/includes/win7-md.md)] taskbar provides enhanced functionality that enables you to use the taskbar button to communicate status to a user and expose common tasks when the window is minimized or hidden. You can add buttons to the taskbar thumbnail to provide access to common tasks without switching to the application window. For example, Windows Media Player provides Play, Pause, Forward, and Back buttons that you can use to control media playback from the taskbar thumbnail when the application is minimized.  
   
- The <xref:System.Windows.Shell.ThumbButtonInfo> class contains properties that describe how the [!INCLUDE[win7](~/includes/win7-md.md)] shell displays the buttons in the taskbar thumbnail. It provides a managed wrapper around the native Windows API. <xref:System.Windows.Shell.ThumbButtonInfo> objects are contained in the <xref:System.Windows.Shell.TaskbarItemInfo.ThumbButtonInfos%2A?displayProperty=fullName> collection.  
+ The <xref:System.Windows.Shell.ThumbButtonInfo> class contains properties that describe how the [!INCLUDE[win7](~/includes/win7-md.md)] shell displays the buttons in the taskbar thumbnail. It provides a managed wrapper around the native Windows API. <xref:System.Windows.Shell.ThumbButtonInfo> objects are contained in the <xref:System.Windows.Shell.TaskbarItemInfo.ThumbButtonInfos%2A?displayProperty=nameWithType> collection.  
   
  The enhanced taskbar functionality is not available in versions of Windows earlier than [!INCLUDE[win7](~/includes/win7-md.md)]. In [!INCLUDE[win7](~/includes/win7-md.md)], some functionality might not be available depending on the user's settings. For example, buttons are only shown in the taskbar thumbnail when [!INCLUDE[TLA#tla_aero](~/includes/tlasharptla-aero-md.md)] is enabled. Your application should provide alternate ways of interacting with the user that are not dependent on the enhanced taskbar functionality.  
   
@@ -107,7 +107,7 @@ Windows Taskbar Thumb Buttons
    
   
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=nameWithType> command. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
  [!code-xaml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
   
@@ -252,7 +252,7 @@ Windows Taskbar Thumb Buttons
    
   
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. The tooltip descriptive text is **Stop**. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=nameWithType> command. The tooltip descriptive text is **Stop**. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
  [!code-xaml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
   
@@ -302,7 +302,7 @@ Windows Taskbar Thumb Buttons
    
   
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. It is configured to close when the button is clicked. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=nameWithType> command. It is configured to close when the button is clicked. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
  [!code-xaml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
   
@@ -353,7 +353,7 @@ Windows Taskbar Thumb Buttons
    
   
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. The button image is a dark gray square defined in XAML as a static resource. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=nameWithType> command. The button image is a dark gray square defined in XAML as a static resource. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
  [!code-xaml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
   

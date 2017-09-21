@@ -145,7 +145,7 @@ End Try
   
  A task returned by an Async method may end in a faulted state, indicating that it completed due to an unhandled exception. A task may also end in a canceled state, which results in an `OperationCanceledException` being thrown out of the await expression. To catch either type of exception, place the `Await` expression that's associated with the task in a `Try` block, and catch the exception in the `Catch` block. An example is provided later in this topic.  
   
- A task can be in a faulted state because multiple exceptions were responsible for its faulting. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>. When you await such a task, the caught exception is only one of the exceptions, and you can't predict which exception will be caught. An example is provided later in this topic.  
+ A task can be in a faulted state because multiple exceptions were responsible for its faulting. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>. When you await such a task, the caught exception is only one of the exceptions, and you can't predict which exception will be caught. An example is provided later in this topic.  
   
  An `Await` expression can't be inside a `Catch` block or `Finally` block.  
   
@@ -197,7 +197,7 @@ End Try
  [!code-vb[csAsyncExceptions#1](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_7.vb)]  
   
 ## Example  
- The following example illustrates exception handling where multiple tasks can result in multiple exceptions. The `Try` block has the `Await` expression for the task that <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> returned. The task is complete when the three tasks to which <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> is applied are complete.  
+ The following example illustrates exception handling where multiple tasks can result in multiple exceptions. The `Try` block has the `Await` expression for the task that <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> returned. The task is complete when the three tasks to which <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> is applied are complete.  
   
  Each of the three tasks causes an exception. The `Catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that `Task.WhenAll` returned.  
   

@@ -44,16 +44,16 @@ The `DataGridView` control provides several features that let you change how use
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
- <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property.  
   
- <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event.  
   
- <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DataError> event.  
   
- <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.CellValidating> event.  
   
 ## Related Sections  

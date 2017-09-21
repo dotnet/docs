@@ -292,7 +292,7 @@ To use a collection on multiple threads, one of which is the UI thread that owns
 
 1. Ensure that a change to the collection and the notification of that change (through <xref:System.Collections.Specialized.INotifyCollectionChanged>) are atomic; no access from other threads can intervene.  (This is usually free. For instance, <xref:System.Collections.ObjectModel.ObservableCollection%601> guarantees this, provided that all changes are protected by synchronization.)
 
-1. If you call <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A%>, that call must also occur on the UI thread.
+1. If you call <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, that call must also occur on the UI thread.
 
 1. If you want to use the same collection on multiple UI threads, you must call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> (and <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, if needed) separately on each UI thread.
 
@@ -361,7 +361,7 @@ To use a collection on multiple threads, one of which is the UI thread that owns
 
 1. Ensure that a change to the collection and the notification of that change (through <xref:System.Collections.Specialized.INotifyCollectionChanged>) are atomic; no access from other threads can intervene.  (This is usually free. For instance, <xref:System.Collections.ObjectModel.ObservableCollection%601> guarantees this, provided that all changes are protected by synchronization.)
 
-1. If you call <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A%>, that call must also occur on the UI thread.
+1. If you call <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, that call must also occur on the UI thread.
 
 1. If you want to use the same collection on multiple UI threads, you must call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> (and <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, if needed) separately on each UI thread.
 

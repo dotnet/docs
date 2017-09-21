@@ -130,8 +130,10 @@
         "_csharplang/spec/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference"
      },
+      "langs": {
+        "api/**.yml": ["csharp", "vb", "cpp"]
+      },
       "dev_langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"],
         "docs/core/**/**.md": ["csharp"],
         "docs/csharp/**/**.md": ["csharp"],
         "docs/framework/**/**.md": ["csharp", "vb"],

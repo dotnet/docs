@@ -163,7 +163,7 @@
 ## Remarks  
  When using the `Credentials` property, a XML Web service client must instantiate a class implementing <xref:System.Net.ICredentials>, such as <xref:System.Net.NetworkCredential>, and then set the client credentials specific to the authentication mechanism. The <xref:System.Net.NetworkCredential> class can be used to set authentication credentials using the basic, digest, NTLM and Kerberos authentication mechanisms.  
   
- When the <xref:System.Web.Services.Protocols.WebClientProtocol.Credentials%2A> property is set to <xref:System.Net.CredentialCache.DefaultCredentials%2A?displayProperty=fullName> then the client negotiates with the server to do Kerberos and/or NTLM authentication depending on how the server is configured.  
+ When the <xref:System.Web.Services.Protocols.WebClientProtocol.Credentials%2A> property is set to <xref:System.Net.CredentialCache.DefaultCredentials%2A?displayProperty=nameWithType> then the client negotiates with the server to do Kerberos and/or NTLM authentication depending on how the server is configured.  
   
    
   
@@ -393,7 +393,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the <xref:System.Web.Services.Protocols.WebClientProtocol.Timeout%2A> property to <xref:System.Threading.Timeout.Infinite?displayProperty=fullName> indicates that the request does not time out. Even though an XML Web service client can set the <xref:System.Web.Services.Protocols.WebClientProtocol.Timeout%2A> property to not time out, the Web server can still cause the request to time out on the server side.  
+ Setting the <xref:System.Web.Services.Protocols.WebClientProtocol.Timeout%2A> property to <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> indicates that the request does not time out. Even though an XML Web service client can set the <xref:System.Web.Services.Protocols.WebClientProtocol.Timeout%2A> property to not time out, the Web server can still cause the request to time out on the server side.  
   
    
   

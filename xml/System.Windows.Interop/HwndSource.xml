@@ -66,7 +66,7 @@
   
  **Window Procedures**  
   
- The <xref:System.Windows.Interop.HwndSource> class implements its own window procedure. This window procedure is used to process important window messages, such as those related to layout, rendering, and input. However, you can also hook the window procedure for your own use. You can specify your own hook during construction by setting the <xref:System.Windows.Interop.HwndSourceParameters.HwndSourceHook%2A?displayProperty=fullName> property, or you can also use <xref:System.Windows.Interop.HwndSource.AddHook%2A> and <xref:System.Windows.Interop.HwndSource.RemoveHook%2A> to add and remove hooks after the window is created. The hooks are called by last-in first-out order, which enables your hooks to execute before the built-in processing. The actual hooks are held by a weak reference. Therefore, make sure that you manage the lifetime of your hook delegate.  
+ The <xref:System.Windows.Interop.HwndSource> class implements its own window procedure. This window procedure is used to process important window messages, such as those related to layout, rendering, and input. However, you can also hook the window procedure for your own use. You can specify your own hook during construction by setting the <xref:System.Windows.Interop.HwndSourceParameters.HwndSourceHook%2A?displayProperty=nameWithType> property, or you can also use <xref:System.Windows.Interop.HwndSource.AddHook%2A> and <xref:System.Windows.Interop.HwndSource.RemoveHook%2A> to add and remove hooks after the window is created. The hooks are called by last-in first-out order, which enables your hooks to execute before the built-in processing. The actual hooks are held by a weak reference. Therefore, make sure that you manage the lifetime of your hook delegate.  
   
  For more information about <xref:System.Windows.Interop.HwndSource> and other interoperation classes, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
   
@@ -896,7 +896,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can be set only in the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29?displayProperty=fullName> constructor by using the <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A?displayProperty=fullName> property.  
+ This property can be set only in the <xref:System.Windows.Interop.HwndSource.%23ctor%28System.Windows.Interop.HwndSourceParameters%29?displayProperty=nameWithType> constructor by using the <xref:System.Windows.Interop.HwndSourceParameters.RestoreFocusMode%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

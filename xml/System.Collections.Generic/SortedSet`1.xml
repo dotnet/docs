@@ -709,7 +709,7 @@
 ## Remarks  
  The `memberEqualityComparer` and the current <xref:System.Collections.Generic.SortedSet%601> must have the same definition of equality.  
   
- You can use the comparer returned by this method in the <xref:System.Collections.Generic.SortedSet%601.%23ctor%28System.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=fullName> constructor to create a hash table of individual sets.  
+ You can use the comparer returned by this method in the <xref:System.Collections.Generic.SortedSet%601.%23ctor%28System.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=nameWithType> constructor to create a hash table of individual sets.  
   
    
   

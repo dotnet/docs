@@ -542,7 +542,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Module.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> and <xref:System.Reflection.Module.GetCustomAttributes%2A?displayProperty=nameWithType> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
   
  ]]></format>
         </remarks>
@@ -1098,7 +1098,7 @@
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
- A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+ A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.  
   
    
   
@@ -1180,7 +1180,7 @@
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
- A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+ A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.  
   
    
   
@@ -1267,7 +1267,7 @@
 > [!NOTE]
 >  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
- A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+ A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.  
   
    
   
@@ -1788,7 +1788,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
@@ -1898,7 +1898,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
@@ -1977,7 +1977,7 @@
   
 -   Case 5: The generic method `GM1` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. The context for this method has no enclosing generic type or generic method.  
   
- For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
+ For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=nameWithType> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
   
  The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
   
@@ -2034,7 +2034,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
@@ -2058,7 +2058,7 @@
   
 -   Case 5: The generic method `GM1<Tgm1>` is called, specifying <xref:System.Int32> and <xref:System.Object> for the type arguments of the generic type and the generic method, respectively. The context for this method has no enclosing generic type or generic method.  
   
- For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=fullName> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
+ For each case, the example first constructs a <xref:System.Reflection.MethodInfo> that represents the called method, and then resolves the token using the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, using the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> and <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> methods to get the values for the `genericTypeArguments` and `genericMethodArguments` parameters. This technique works in all cases, because the methods return <xref:System.Type.EmptyTypes?displayProperty=nameWithType> for non-generic contexts. The example compares the resolved <xref:System.Reflection.MethodInfo> with the constructed <xref:System.Reflection.MethodInfo>.  
   
  The example then attempts to use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%29> method overload to resolve the token. This works in cases 3, 4, and 5, because the method calls do not depend on the generic context. In cases 1 and 2, an exception is thrown because there is insufficient information to resolve the token.  
   
@@ -2252,7 +2252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  

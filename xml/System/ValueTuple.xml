@@ -796,7 +796,7 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple>t> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface. The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple> object.  
+ This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple>t> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface. The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=nameWithType> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple> object.  
   
  ]]></format>
         </remarks>

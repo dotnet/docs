@@ -35,14 +35,14 @@
 ## Remarks  
  The <xref:System.DayOfWeek> enumeration represents the day of the week in calendars that have seven days per week. The value of the constants in this enumeration ranges from Sunday to Saturday. If cast to an integer, its value ranges from zero (which indicates Sunday) to six (which indicates Saturday).  
   
- This enumeration is useful when it is desirable to have a strongly typed specification of the day of the week. For example, this enumeration is the type of the property value for the <xref:System.DateTime.DayOfWeek%2A?displayProperty=fullName> property.  
+ This enumeration is useful when it is desirable to have a strongly typed specification of the day of the week. For example, this enumeration is the type of the property value for the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> property.  
   
- The members of the <xref:System.DayOfWeek.Saturday?displayProperty=fullName> enumeration are not localized. To return the localized name of the day of the week, call the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> or the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method with either the "ddd" or "dddd" format strings. The former format string produces the abbreviated weekday name; the latter produces the full weekday name.  
+ The members of the <xref:System.DayOfWeek.Saturday?displayProperty=nameWithType> enumeration are not localized. To return the localized name of the day of the week, call the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> or the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method with either the "ddd" or "dddd" format strings. The former format string produces the abbreviated weekday name; the latter produces the full weekday name.  
   
    
   
 ## Examples  
- The following example demonstrates the <xref:System.DateTime.DayOfWeek%2A?displayProperty=fullName> property and the <xref:System.DayOfWeek> enumeration.  
+ The following example demonstrates the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> property and the <xref:System.DayOfWeek> enumeration.  
   
  [!code-cpp[DateTime.DayOfWeek#1](~/samples/snippets/cpp/VS_Snippets_CLR/DateTime.DayOfWeek/CPP/dow.cpp#1)]
  [!code-csharp[DateTime.DayOfWeek#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime.DayOfWeek/CS/dow.cs#1)]

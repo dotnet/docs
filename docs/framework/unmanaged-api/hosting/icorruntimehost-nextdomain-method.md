@@ -47,7 +47,7 @@ HRESULT NextDomain (
  [in] The enumerator that was obtained through a call to [EnumDomains](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-enumdomains-method.md).  
   
  `pAppDomain`  
- [out] An interface pointer to the <xref:System._AppDomain?displayProperty=fullName> type that represents the next domain in the enumeration, or null, if no more domains exist.  
+ [out] An interface pointer to the <xref:System._AppDomain?displayProperty=nameWithType> type that represents the next domain in the enumeration, or null, if no more domains exist.  
   
 ## Return Value  
   

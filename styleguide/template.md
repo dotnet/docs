@@ -132,7 +132,7 @@ The UID equates to the fully qualified class and member name. If you add a \* af
 
 You can use one of the following syntax:
 
-1. Auto-link: `<xref:UID>` or `<xref:UID?displayProperty=fullName>`
+1. Auto-link: `<xref:UID>` or `<xref:UID?displayProperty=nameWithType>`
 
  The `displayProperty` query parameter produces a fully qualified link text. By default, link text shows only the member or type name.
  
@@ -142,7 +142,7 @@ You can use one of the following syntax:
 
 Examples:
 - `<xref:System.String>` renders as [String](https://docs.microsoft.com/dotnet/api/system.string)
-- `<xref:System.String?displayProperty=fullName>` renders as [System.String](https://docs.microsoft.com/dotnet/api/system.string)
+- `<xref:System.String?displayProperty=nameWithType>` renders as [System.String](https://docs.microsoft.com/dotnet/api/system.string)
 - `[String class](xref:System.String)` renders as [String class](https://docs.microsoft.com/dotnet/api/system.string)
 
 For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).

@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> property specifies the maximum number of sessions a <xref:System.ServiceModel.ServiceHost> object can accept. It is important to understand that sessions in this case does not mean only channels that support reliable sessions (for example, <xref:System.ServiceModel.NetNamedPipeBinding?displayProperty=fullName> supports sessions but does not include reliable sessions).  
+ The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> property specifies the maximum number of sessions a <xref:System.ServiceModel.ServiceHost> object can accept. It is important to understand that sessions in this case does not mean only channels that support reliable sessions (for example, <xref:System.ServiceModel.NetNamedPipeBinding?displayProperty=nameWithType> supports sessions but does not include reliable sessions).  
   
  Each listener object can have one pending channel session that does not count against the value of <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> until [!INCLUDE[indigo2](~/includes/indigo2-md.md)] accepts the channel session and begins processing messages on it. This property is most useful in scenarios that make use of sessions.  
   

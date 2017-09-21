@@ -125,7 +125,7 @@ http://myUrl/
   
  Enabling IDN will convert all Unicode labels in a domain name to their Punycode equivalents. Punycode names contain only ASCII characters and always start with the xn-- prefix. The reason for this is to support existing DNS servers on the Internet, since most DNS servers only support ASCII characters (see RFC 3940).  
   
- Enabling IRI and IDN affects the value of the <xref:System.Uri.DnsSafeHost%2A?displayProperty=fullName> property. Enabling IRI and IDN can also change the behavior of the <xref:System.Uri.Equals%2A>, <xref:System.Uri.OriginalString%2A>, <xref:System.Uri.GetComponents%2A>, and <xref:System.Uri.IsWellFormedOriginalString%2A> methods.  
+ Enabling IRI and IDN affects the value of the <xref:System.Uri.DnsSafeHost%2A?displayProperty=nameWithType> property. Enabling IRI and IDN can also change the behavior of the <xref:System.Uri.Equals%2A>, <xref:System.Uri.OriginalString%2A>, <xref:System.Uri.GetComponents%2A>, and <xref:System.Uri.IsWellFormedOriginalString%2A> methods.  
   
  There are three possible values for IDN depending on the DNS servers that are used:  
   
@@ -143,13 +143,13 @@ http://myUrl/
   
  When IRI parsing is enabled (iriParsing enabled = `true`) normalization and character checking are done according to the latest IRI rules in RFC 3986 and RFC 3987. When IRI parsing is disabled, normalization and character checking are performed according to RFC 2396 and RFC 2732 (for IPv6 literals).  In versions of the .NET Framework before version 4.5, the default value is `false`. In .NET Framework version 4.5 and newer, the default value is `true`, and the enabled state of IRI parsing cannot be modified by settings in a *.config* file.  
   
- IRI and IDN processing in the <xref:System.Uri> class can also be controlled using the <xref:System.Configuration.IriParsingElement?displayProperty=fullName>, <xref:System.Configuration.IdnElement?displayProperty=fullName>, and <xref:System.Configuration.UriSection?displayProperty=fullName> configuration setting classes. The <xref:System.Configuration.IriParsingElement?displayProperty=fullName> setting enables or disables IRI processing in the <xref:System.Uri> class. The <xref:System.Configuration.IdnElement?displayProperty=fullName> setting enables or disables IDN processing in the <xref:System.Uri> class. The <xref:System.Configuration.IriParsingElement?displayProperty=fullName> setting also indirectly controls IDN. IRI processing must be enabled for IDN processing to be possible. If IRI processing is disabled, then IDN processing will be set to the default setting where the .NET Framework 2.0 behavior is used for compatibility and IDN names are not used.  
+ IRI and IDN processing in the <xref:System.Uri> class can also be controlled using the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>, <xref:System.Configuration.IdnElement?displayProperty=nameWithType>, and <xref:System.Configuration.UriSection?displayProperty=nameWithType> configuration setting classes. The <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> setting enables or disables IRI processing in the <xref:System.Uri> class. The <xref:System.Configuration.IdnElement?displayProperty=nameWithType> setting enables or disables IDN processing in the <xref:System.Uri> class. The <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> setting also indirectly controls IDN. IRI processing must be enabled for IDN processing to be possible. If IRI processing is disabled, then IDN processing will be set to the default setting where the .NET Framework 2.0 behavior is used for compatibility and IDN names are not used.  
   
- The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=fullName> and <xref:System.Configuration.IdnElement?displayProperty=fullName> will be read once when the first <xref:System.Uri?displayProperty=fullName> class is constructed. Changes to configuration settings after that time are ignored.  
+ The configuration setting for the <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType> and <xref:System.Configuration.IdnElement?displayProperty=nameWithType> will be read once when the first <xref:System.Uri?displayProperty=nameWithType> class is constructed. Changes to configuration settings after that time are ignored.  
   
- The <xref:System.GenericUriParser?displayProperty=fullName> class has also been extended to allow creating a customizable parser that supports IRI and IDN. The behavior of a <xref:System.GenericUriParser?displayProperty=fullName> object is specified by passing a bitwise combination of the values available in the <xref:System.GenericUriParserOptions?displayProperty=fullName> enumeration to the <xref:System.GenericUriParser?displayProperty=fullName> constructor. The <xref:System.GenericUriParserOptions?displayProperty=fullName> type indicates the parser supports the parsing rules specified in RFC 3987 for International Resource Identifiers (IRI). Whether IRI is used is dictated by the configuration values previously discussed.  
+ The <xref:System.GenericUriParser?displayProperty=nameWithType> class has also been extended to allow creating a customizable parser that supports IRI and IDN. The behavior of a <xref:System.GenericUriParser?displayProperty=nameWithType> object is specified by passing a bitwise combination of the values available in the <xref:System.GenericUriParserOptions?displayProperty=nameWithType> enumeration to the <xref:System.GenericUriParser?displayProperty=nameWithType> constructor. The <xref:System.GenericUriParserOptions?displayProperty=nameWithType> type indicates the parser supports the parsing rules specified in RFC 3987 for International Resource Identifiers (IRI). Whether IRI is used is dictated by the configuration values previously discussed.  
   
- The <xref:System.GenericUriParserOptions?displayProperty=fullName> type indicates the parser supports Internationalized Domain Name (IDN) parsing (IDN) of host names. Whether IDN is used is dictated by the configuration values previously discussed.  
+ The <xref:System.GenericUriParserOptions?displayProperty=nameWithType> type indicates the parser supports Internationalized Domain Name (IDN) parsing (IDN) of host names. Whether IDN is used is dictated by the configuration values previously discussed.  
   
 ## Performance Considerations  
  If you use a *Web.config *file that contains URIs to initialize your application, additional time is required to process the URIs if their scheme identifiers are nonstandard. In such a case, initialize the affected parts of your application when the URIs are needed, not at start time.  
@@ -1306,7 +1306,7 @@ http://myUrl/
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If both `uri1` and `uri2` are `null`, this method returns 0. When comparing URI values, a relative URI is always less than an absolute URI, and a non-null URI is always greater than a null URI. For cases where both `uri1` and `uri2` are not `null` and are both relative URIs or both absolute URIs, the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method performs the comparison.  
+ If both `uri1` and `uri2` are `null`, this method returns 0. When comparing URI values, a relative URI is always less than an absolute URI, and a non-null URI is always greater than a null URI. For cases where both `uri1` and `uri2` are not `null` and are both relative URIs or both absolute URIs, the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method performs the comparison.  
   
  ]]></format>
         </remarks>
@@ -2743,7 +2743,7 @@ If you used an escaped string to construct this instance (for example, "http://[
 |The string is an absolute URI that is missing a slash before the path.|file://c:/directory/filename|  
 |The string contains unescaped backslashes even if they are treated as forward slashes.|http:\\\host/path/file|  
 |The string represents a hierarchical absolute <xref:System.Uri> and does not contain "://".|www.contoso.com/path/file|  
-|The parser for the <xref:System.Uri.Scheme%2A?displayProperty=fullName> indicates that the original string was not well-formed.|The example depends on the scheme of the URI.|  
+|The parser for the <xref:System.Uri.Scheme%2A?displayProperty=nameWithType> indicates that the original string was not well-formed.|The example depends on the scheme of the URI.|  
   
  By default, the string used to construct this <xref:System.Uri> are considered well-formed in accordance with RFC 2396 and RFC 2732.  
   
@@ -3585,7 +3585,7 @@ If you used an escaped string to construct this instance (for example, "http://[
  The string returned by this method does not contain port information when the port is the default port for the scheme.  
   
 > [!NOTE]
->  The string returned by the <xref:System.Uri.ToString%2A> method may contain control characters, which can corrupt the state of a console application. You can use the <xref:System.Uri.GetComponents%2A> method with the <xref:System.UriFormat?displayProperty=fullName> format to remove control characters from the returned string.  
+>  The string returned by the <xref:System.Uri.ToString%2A> method may contain control characters, which can corrupt the state of a console application. You can use the <xref:System.Uri.GetComponents%2A> method with the <xref:System.UriFormat?displayProperty=nameWithType> format to remove control characters from the returned string.  
   
    
   

@@ -87,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlTextWriter.%23ctor%2A> overload of the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%2CSystem.String%29> constructor uses `tabString` when indentation of a line is necessary. It calls the <xref:System.IO.TextWriter.%23ctor%28System.IFormatProvider%29?displayProperty=fullName> base constructor to initialize the new instance.  
+ The <xref:System.Web.UI.HtmlTextWriter.%23ctor%2A> overload of the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%2CSystem.String%29> constructor uses `tabString` when indentation of a line is necessary. It calls the <xref:System.IO.TextWriter.%23ctor%28System.IFormatProvider%29?displayProperty=nameWithType> base constructor to initialize the new instance.  
   
    
   
@@ -529,7 +529,7 @@ alert('Hello');
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of the <xref:System.Web.UI.HtmlTextWriter.Close%2A> method calls the <xref:System.IO.TextWriter.Close%2A?displayProperty=fullName> base method.  
+ This implementation of the <xref:System.Web.UI.HtmlTextWriter.Close%2A> method calls the <xref:System.IO.TextWriter.Close%2A?displayProperty=nameWithType> base method.  
   
  Following a call to the <xref:System.Web.UI.HtmlTextWriter.Close%2A> method, any operations on the <xref:System.Web.UI.HtmlTextWriter> object might throw exceptions because all its resources have been released.  
   
@@ -1402,7 +1402,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use a custom Web server control, derived from the <xref:System.Web.UI.WebControls.WebControl> class, that overrides the <xref:System.Web.UI.Control.Render%2A> method. It uses the <xref:System.Web.UI.HtmlTextWriter> class to write a `<font>` element. After it writes the opening tag of the element, it uses the <xref:System.Web.UI.HtmlTextWriter.InnerWriter%2A> property to write the string `"<br> The time on the server:"` and concatenates this string with the value of the <xref:System.DateTime.Now%2A?displayProperty=fullName> property.  
+ The following code example shows how to use a custom Web server control, derived from the <xref:System.Web.UI.WebControls.WebControl> class, that overrides the <xref:System.Web.UI.Control.Render%2A> method. It uses the <xref:System.Web.UI.HtmlTextWriter> class to write a `<font>` element. After it writes the opening tag of the element, it uses the <xref:System.Web.UI.HtmlTextWriter.InnerWriter%2A> property to write the string `"<br> The time on the server:"` and concatenates this string with the value of the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[HtmlTextWriter_Properties#3](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Properties/CPP/htmltextwriter_properties1.cpp#3)]
  [!code-csharp[HtmlTextWriter_Properties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Properties/CS/htmltextwriter_properties1.cs#3)]
@@ -2561,7 +2561,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example demonstrates an overridden version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method in a class that derives from the <xref:System.Web.UI.HtmlTextWriter> class. The code example checks whether the element to render is a `<label>` element by calling the <xref:System.String.Compare%2A?displayProperty=fullName> method, and then passing the <xref:System.Web.UI.HtmlTextWriter.TagName%2A> property value and a string, `"label"`, as the parameter arguments. If a `<label>` element is about to be rendered, the opening tag of a `<font>` element, with a `color` attribute set to `red`, is rendered before the `<label>` element's opening tag. If the element to render is not a `<label>` element, the base class's version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method is called.  
+ The following code example demonstrates an overridden version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method in a class that derives from the <xref:System.Web.UI.HtmlTextWriter> class. The code example checks whether the element to render is a `<label>` element by calling the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and then passing the <xref:System.Web.UI.HtmlTextWriter.TagName%2A> property value and a string, `"label"`, as the parameter arguments. If a `<label>` element is about to be rendered, the opening tag of a `<font>` element, with a `color` attribute set to `red`, is rendered before the `<label>` element's opening tag. If the element to render is not a `<label>` element, the base class's version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method is called.  
   
  [!code-cpp[HtmlTextWriter_Methods4#1](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods4/CPP/htmltextwriter_methods4.cpp#1)]
  [!code-csharp[HtmlTextWriter_Methods4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods4/CS/htmltextwriter_methods4.cs#1)]
@@ -2755,7 +2755,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=fullName> field.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=nameWithType> field.  
   
  This code example generates the following markup:  
   
@@ -2855,7 +2855,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property.  
   
  This code example generates the following markup:  
   
@@ -2901,7 +2901,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=fullName> field, which is the smallest possible value of the <xref:System.Single> structure.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=nameWithType> field, which is the smallest possible value of the <xref:System.Single> structure.  
   
  This code example generates the following markup:  
   
@@ -3722,7 +3722,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=fullName> field.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=nameWithType> field.  
   
  This code example generates the following markup:  
   
@@ -3822,7 +3822,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property to a control.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property to a control.  
   
  [!code-csharp[MarkupTextWriter_Methods1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods1/CS/boldedrendering.cs#4)]
  [!code-vb[MarkupTextWriter_Methods1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods1/VB/boldedrendering.vb#4)]  
@@ -3858,7 +3858,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=fullName> field, which is the smallest possible value of the <xref:System.Single> structure.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=nameWithType> field, which is the smallest possible value of the <xref:System.Single> structure.  
   
  This code example generates the following markup:  
   

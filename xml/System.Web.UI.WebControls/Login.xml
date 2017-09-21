@@ -1846,7 +1846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Login.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=fullName> method to pass events from child controls to the page hierarchy.  
+ The <xref:System.Web.UI.WebControls.Login.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=nameWithType> method to pass events from child controls to the page hierarchy.  
   
  If the current event is posted by the <xref:System.Web.UI.WebControls.Login> control Login button, the <xref:System.Web.UI.WebControls.Login> control attempts to log in to the Web site. Otherwise, the event is passed up the page control hierarchy.  
   
@@ -2016,7 +2016,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Login.OnPreRender%2A> method implements the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=fullName> method to notify the <xref:System.Web.UI.WebControls.Login> control to perform any necessary prerendering steps before saving view state and rendering content.  
+ The <xref:System.Web.UI.WebControls.Login.OnPreRender%2A> method implements the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=nameWithType> method to notify the <xref:System.Web.UI.WebControls.Login> control to perform any necessary prerendering steps before saving view state and rendering content.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   

@@ -62,7 +62,7 @@ Holds values that can be only `True` or `False`. The keywords `True` and `False`
   
 -   **Type Characters.** `Boolean` has no literal type character or identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Boolean?displayProperty=fullName> structure.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Boolean?displayProperty=nameWithType> structure.  
   
 ## Example  
  In the following example, `runningVB` is a `Boolean` variable, which stores a simple yes/no setting.  
@@ -76,7 +76,7 @@ End If
 ```  
   
 ## See Also  
- <xref:System.Boolean?displayProperty=fullName>   
+ <xref:System.Boolean?displayProperty=nameWithType>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   

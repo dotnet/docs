@@ -38,19 +38,19 @@ A [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:Syst
  Describes how to tile an image in a shape.  
   
 ## Reference  
- <xref:System.Drawing.Brush?displayProperty=fullName>  
+ <xref:System.Drawing.Brush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members  
   
- <xref:System.Drawing.SolidBrush?displayProperty=fullName>  
+ <xref:System.Drawing.SolidBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members  
   
- <xref:System.Drawing.TextureBrush?displayProperty=fullName>  
+ <xref:System.Drawing.TextureBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members.  
   
- <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=fullName>  
+ <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members.  
   
- <xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=fullName>  
+ <xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=nameWithType>  
  Describes this class and contains links to all of its members.  
   
 ## Related Sections  

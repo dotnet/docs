@@ -29,9 +29,9 @@ A dependency property (DP) is a regular property that stores its value in a prop
 ## Dependency Property Design  
  **✓ DO** inherit from <xref:System.Windows.DependencyObject>, or one of its subtypes, when implementing dependency properties. The type provides a very efficient implementation of a property store and automatically supports WPF data binding.  
   
- **✓ DO** provide a regular CLR property and public static read-only field storing an instance of <xref:System.Windows.DependencyProperty?displayProperty=fullName> for each dependency property.  
+ **✓ DO** provide a regular CLR property and public static read-only field storing an instance of <xref:System.Windows.DependencyProperty?displayProperty=nameWithType> for each dependency property.  
   
- **✓ DO** implement dependency properties by calling instance methods <xref:System.Windows.DependencyObject.GetValue%2A?displayProperty=fullName> and <xref:System.Windows.DependencyObject.SetValue%2A?displayProperty=fullName>.  
+ **✓ DO** implement dependency properties by calling instance methods <xref:System.Windows.DependencyObject.GetValue%2A?displayProperty=nameWithType> and <xref:System.Windows.DependencyObject.SetValue%2A?displayProperty=nameWithType>.  
   
  **✓ DO** name the dependency property static field by suffixing the name of the property with "Property."  
   
@@ -48,7 +48,7 @@ A dependency property (DP) is a regular property that stores its value in a prop
 ## Attached Dependency Property Design  
  Dependency properties described in the preceding section represent intrinsic properties of the declaring type; for example, the `Text` property is a property of `TextButton`, which declares it. A special kind of dependency property is the attached dependency property.  
   
- A classic example of an attached property is the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=fullName> property. The property represents Button’s (not Grid’s) column position, but it is only relevant if the Button is contained in a Grid, and so it's "attached" to Buttons by Grids.  
+ A classic example of an attached property is the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> property. The property represents Button’s (not Grid’s) column position, but it is only relevant if the Button is contained in a Grid, and so it's "attached" to Buttons by Grids.  
   
 ```  
 <Grid>  

@@ -41,5 +41,5 @@ An array subscript is not valid because it falls outside the allowable range. Th
 -   Change the subscript so it falls within the valid range.  
   
 ## See Also  
- <xref:System.Array.GetUpperBound%2A?displayProperty=fullName>   
+ <xref:System.Array.GetUpperBound%2A?displayProperty=nameWithType>   
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

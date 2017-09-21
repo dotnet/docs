@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertFrom%2A?displayProperty=fullName> method converts an <xref:System.String.Empty?displayProperty=fullName> string or the string "Infinite" to the value 0. Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
+ The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertFrom%2A?displayProperty=nameWithType> method converts an <xref:System.String.Empty?displayProperty=nameWithType> string or the string "Infinite" to the value 0. Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
   
  ]]></format>
         </remarks>

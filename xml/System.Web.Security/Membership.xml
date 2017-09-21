@@ -1056,7 +1056,7 @@
 ## Remarks  
  The <xref:System.Web.Security.Membership.GetUser%2A> method retrieves the user information from the data source and creates a <xref:System.Web.Security.MembershipUser> object populated with the returned data. If you use one of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that does not take a `username` parameter, <xref:System.Web.Security.Membership.GetUser%2A> returns the information for the current logged-on membership user. The current logged-on membership user is identified by the <xref:System.Security.Principal.IIdentity.Name%2A> of the user in the current <xref:System.Web.HttpContext>.  
   
- You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
+ You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
   
    
   
@@ -1136,7 +1136,7 @@
   
  If you use one of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that does not take a `username` parameter, <xref:System.Web.Security.Membership.GetUser%2A> returns the information for the current logged-on membership user. The current logged-on membership user is identified by the <xref:System.Security.Principal.IIdentity.Name%2A> of the user in the current <xref:System.Web.HttpContext>.  
   
- You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=fullName> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
+ You can also specify whether you want <xref:System.Web.Security.Membership.GetUser%2A> to update the last-activity date/time stamp for the user being retrieved with the `userIsOnline` parameter. Of the <xref:System.Web.Security.Membership.GetUser%2A> overloads that do not take a `userIsOnline` parameter, <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> implicitly updates the last-activity date/time stamp for the user. <xref:System.Web.Security.Membership.GetUser%2A?displayProperty=nameWithType> and <xref:System.Web.Security.Membership.GetUser%2A> do not.  
   
    
   

@@ -33,7 +33,7 @@ The following code example demonstrates how to configure a <xref:System.Windows.
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   
--   References to the <xref:System?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   

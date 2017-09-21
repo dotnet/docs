@@ -319,7 +319,7 @@
   
  If there is no error message or if it is an empty string (""), then no error message is returned. The name of the inner exception and the stack trace are returned only if they are not a null reference (`Nothing` in Visual Basic).  
   
- This method overrides <xref:System.Exception.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Exception.ToString%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

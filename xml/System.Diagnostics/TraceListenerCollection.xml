@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.TraceListenerCollection> list is used to specify the output listeners for the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> and the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName> collections. You cannot create an instance of this class.  
+ The <xref:System.Diagnostics.TraceListenerCollection> list is used to specify the output listeners for the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> and the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType> collections. You cannot create an instance of this class.  
   
  This list is thread-safe, however the methods used to access the list and the enumerator do not take synchronization locks. Instead, the collection is copied, the copy is modified, and a reference is set to the copy of the collection. Methods like <xref:System.Diagnostics.TraceListenerCollection.Add%2A>, <xref:System.Diagnostics.TraceListenerCollection.Remove%2A>, and <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> modify the elements in the collection.  
   
@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that writes to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+ The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that writes to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic Trace.Listeners Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Trace.Listeners Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Trace.Listeners Example/CS/source.cs#1)]
@@ -84,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that outputs to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>.  
+ The following example creates a <xref:System.Diagnostics.TextWriterTraceListener> that outputs to the console screen. The code then adds the new listener to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceListenerCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceListenerCollection.Add Example/CS/source.cs#1)]

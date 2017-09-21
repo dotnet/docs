@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Load XML from a File (Visual Basic)
-This topic shows how to load XML from a URI by using the <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=fullName> method.  
+This topic shows how to load XML from a URI by using the <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType> method.  
   
 ## Example  
  The following example shows how to load an XML document from a file. The following example loads books.xml and outputs the XML tree to the console.  

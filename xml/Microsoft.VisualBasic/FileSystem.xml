@@ -4748,7 +4748,7 @@ Result = GetAttr(FName) And vbArchive
   
  The leftmost print position on an output line is always 1. When you use the `Print` or `PrintLine` functions to print to files, the rightmost print position is the current width of the output file, which you can set using the `FileWidth` function.  
   
- The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName>.  
+ The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Make sure your tabular columns are wide enough to contain wide letters.  
@@ -4795,7 +4795,7 @@ Result = GetAttr(FName) And vbArchive
   
  The leftmost print position on an output line is always 1. When you use the `Print` or `PrintLine` functions to print to files, the rightmost print position is the current width of the output file, which you can set using the `FileWidth` function.  
   
- The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName>.  
+ The `TAB` function can also be used with the `WriteLine` function. It cannot be used with <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Make sure your tabular columns are wide enough to contain wide letters.  

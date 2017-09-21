@@ -163,7 +163,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property specifies the navigation options to display for the user-account-creation step of the <xref:System.Web.UI.WebControls.CreateUserWizard> control.  
   
- The <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property determines which of the <xref:System.Web.UI.WebControls.Wizard> control's navigation buttons are displayed on the <xref:System.Web.UI.WebControls.CreateUserWizardStep> control. For more information, see the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property determines which of the <xref:System.Web.UI.WebControls.Wizard> control's navigation buttons are displayed on the <xref:System.Web.UI.WebControls.CreateUserWizardStep> control. For more information, see the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A?displayProperty=nameWithType> property.  
   
 > [!CAUTION]
 >  If you attempt to change the <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property to any value other than the <xref:System.Web.UI.WebControls.WizardStepType.Auto> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration, an <xref:System.InvalidOperationException> will be thrown.  

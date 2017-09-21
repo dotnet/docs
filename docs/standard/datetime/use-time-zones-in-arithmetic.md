@@ -34,7 +34,7 @@ Ordinarily, when you perform date and time arithmetic using <xref:System.DateTim
 
 3. Perform the arithmetic operation on the UTC time.
 
-4. Convert the time from UTC to the original time's associated time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method.
+4. Convert the time from UTC to the original time's associated time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method.
 
 ## Example
 

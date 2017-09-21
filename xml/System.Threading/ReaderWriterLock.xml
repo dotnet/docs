@@ -53,7 +53,7 @@
   
  If the time-out interval expires and the lock request has not been granted, the method returns control to the calling thread by throwing an <xref:System.ApplicationException>. A thread can catch this exception and determine what action to take next.  
   
- Time-outs are expressed in milliseconds. If you use a <xref:System.TimeSpan?displayProperty=fullName> to specify the time-out, the value used is the total number of whole milliseconds represented by the <xref:System.TimeSpan>. The following table shows the valid time-out values in milliseconds.  
+ Time-outs are expressed in milliseconds. If you use a <xref:System.TimeSpan?displayProperty=nameWithType> to specify the time-out, the value used is the total number of whole milliseconds represented by the <xref:System.TimeSpan>. The following table shows the valid time-out values in milliseconds.  
   
 |Value|Description|  
 |-----------|-----------------|  

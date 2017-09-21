@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataListDesigner.GetDesignTimeHtml%2A> method. It alters the appearance of the control on the design surface if the control's <xref:System.Web.UI.WebControls.WebControl.Enabled%2A?displayProperty=fullName> property is `true`.  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataListDesigner.GetDesignTimeHtml%2A> method. It alters the appearance of the control on the design surface if the control's <xref:System.Web.UI.WebControls.WebControl.Enabled%2A?displayProperty=nameWithType> property is `true`.  
   
  The code uses `Try...Catch...Finally` syntax to do the following:  
   

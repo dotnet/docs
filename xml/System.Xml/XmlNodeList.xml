@@ -40,9 +40,9 @@
   
  `XmlNodeList` is returned by the following properties and methods.  
   
--   <xref:System.Xml.XmlNode.ChildNodes%2A?displayProperty=fullName> - Returns an `XmlNodeList` containing all the children of the node.  
+-   <xref:System.Xml.XmlNode.ChildNodes%2A?displayProperty=nameWithType> - Returns an `XmlNodeList` containing all the children of the node.  
   
--   <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> - Returns an `XmlNodeList` containing a collection of nodes matching the XPath query.  
+-   <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> - Returns an `XmlNodeList` containing a collection of nodes matching the XPath query.  
   
 -   `GetElementsByTagName` - Returns an `XmlNodeList` containing a list of all descendant elements that match the specified name. This method is available in both the <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlElement> classes.  
   

@@ -529,7 +529,7 @@
  You can use this property to provide different text alignment settings for the text displayed in each <xref:System.Windows.Forms.ColumnHeader>.  
   
 > [!NOTE]
->  Due to a limitation in the underlying control, this property has no effect on the first column in the <xref:System.Windows.Forms.ListView> control, which is always aligned to the left. To work around this limitation in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], you can handle the <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=fullName> event and paint the column header yourself.  
+>  Due to a limitation in the underlying control, this property has no effect on the first column in the <xref:System.Windows.Forms.ListView> control, which is always aligned to the left. To work around this limitation in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], you can handle the <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=nameWithType> event and paint the column header yourself.  
   
    
   

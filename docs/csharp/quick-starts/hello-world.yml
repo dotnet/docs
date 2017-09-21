@@ -102,7 +102,7 @@ items:
 - title: Do more with strings
   durationInMinutes: 5
   content: |
-    You've been using a **method**, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, to print messages. A **method** is a block of code that implements some action. It has a name, so you can access it. 
+    You've been using a **method**, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, to print messages. A **method** is a block of code that implements some action. It has a name, so you can access it. 
     
     The `string` type has many useful methods. Let's explore the <xref:System.String.Trim%2A> method, and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A>. These methods remove leading and trailing spaces:
 

@@ -42,7 +42,7 @@ manager: "wpickett"
  Locks give control of a resource to one thread at a time, or to a specified number of threads. A thread that requests an exclusive lock when the lock is in use blocks until the lock becomes available.  
   
 ### Exclusive Locks  
- The simplest form of locking is the `lock` statement in C# and the `SyncLock` statement in Visual Basic, which controls access to a block of code. Such a block is frequently referred to as a critical section. The `lock` statement is implemented by using the <xref:System.Threading.Monitor.Enter%2A?displayProperty=fullName> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=fullName> methods, and it uses `try…catch…finally` block to ensure that the lock is released.  
+ The simplest form of locking is the `lock` statement in C# and the `SyncLock` statement in Visual Basic, which controls access to a block of code. Such a block is frequently referred to as a critical section. The `lock` statement is implemented by using the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType> methods, and it uses `try…catch…finally` block to ensure that the lock is released.  
   
  In general, using the `lock` or `SyncLock` statement to protect small blocks of code, never spanning more than a single method, is the best way to use the <xref:System.Threading.Monitor> class. Although powerful, the <xref:System.Threading.Monitor> class is prone to orphan locks and deadlocks.  
   
@@ -96,7 +96,7 @@ manager: "wpickett"
   
  For a conceptual overview, see [Semaphore and SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md).  
   
- <xref:System.Threading.SemaphoreSlim?displayProperty=fullName> is a lightweight semaphore for synchronization within a single process boundary.  
+ <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> is a lightweight semaphore for synchronization within a single process boundary.  
   
  [Back to top](#top)  
   
@@ -116,7 +116,7 @@ manager: "wpickett"
 #### Event Wait Handles  
  Event wait handles include the <xref:System.Threading.EventWaitHandle> class and its derived classes, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent>. Threads are released from an event wait handle when the event wait handle is signaled by calling its <xref:System.Threading.EventWaitHandle.Set%2A> method or by using the <xref:System.Threading.WaitHandle.SignalAndWait%2A> method.  
   
- Event wait handles either reset themselves automatically, like a turnstile that allows only one thread through each time it is signaled, or must be reset manually, like a gate that is closed until signaled and then open until someone closes it. As their names imply, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent> represent the former and latter, respectively. <xref:System.Threading.ManualResetEventSlim?displayProperty=fullName> is a lightweight event for synchronization within a single process boundary.  
+ Event wait handles either reset themselves automatically, like a turnstile that allows only one thread through each time it is signaled, or must be reset manually, like a gate that is closed until signaled and then open until someone closes it. As their names imply, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent> represent the former and latter, respectively. <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> is a lightweight event for synchronization within a single process boundary.  
   
  An <xref:System.Threading.EventWaitHandle> can represent either type of event, and can be either local or global. The derived classes <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent> are always local.  
   
@@ -138,19 +138,19 @@ manager: "wpickett"
 ## Lightweight Synchronization Types  
  Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you can use synchronization primitives that provide fast performance by avoiding expensive reliance on Win32 kernel objects such as wait handles whenever possible. In general, you should use these types when wait times are short and only when the original synchronization types have been tried and found to be unsatisfactory. The lightweight types cannot be used in scenarios that require cross-process communication.  
   
--   <xref:System.Threading.SemaphoreSlim?displayProperty=fullName> is a lightweight version of <xref:System.Threading.Semaphore?displayProperty=fullName>.  
+-   <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> is a lightweight version of <xref:System.Threading.Semaphore?displayProperty=nameWithType>.  
   
--   <xref:System.Threading.ManualResetEventSlim?displayProperty=fullName> is a lightweight version of <xref:System.Threading.ManualResetEvent?displayProperty=fullName>.  
+-   <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> is a lightweight version of <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>.  
   
--   <xref:System.Threading.CountdownEvent?displayProperty=fullName> represents an event that becomes signaled when its count is zero.  
+-   <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> represents an event that becomes signaled when its count is zero.  
   
--   <xref:System.Threading.Barrier?displayProperty=fullName> enables multiple threads to synchronize with one another without requiring control by a master thread. A barrier prevents each thread from continuing until all threads have reached a specified point.  
+-   <xref:System.Threading.Barrier?displayProperty=nameWithType> enables multiple threads to synchronize with one another without requiring control by a master thread. A barrier prevents each thread from continuing until all threads have reached a specified point.  
   
  [Back to top](#top)  
   
 <a name="spinwait"></a>   
 ## SpinWait  
- Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you can use the <xref:System.Threading.SpinWait?displayProperty=fullName> structure when a thread has to wait for an event to be signaled or a condition to be met, but when the actual wait time is expected to be less than the waiting time required by using a wait handle or by otherwise blocking the current thread. By using <xref:System.Threading.SpinWait>, you can specify a short period of time to spin while waiting, and then yield (for example, by waiting or sleeping) only if the condition was not met in the specified time.  
+ Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you can use the <xref:System.Threading.SpinWait?displayProperty=nameWithType> structure when a thread has to wait for an event to be signaled or a condition to be met, but when the actual wait time is expected to be less than the waiting time required by using a wait handle or by otherwise blocking the current thread. By using <xref:System.Threading.SpinWait>, you can specify a short period of time to spin while waiting, and then yield (for example, by waiting or sleeping) only if the condition was not met in the specified time.  
   
  [Back to top](#top)  
   

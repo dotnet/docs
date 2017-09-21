@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.Dictionary%602.Enumerator.Current%2A?displayProperty=fullName> property returns an instance of this type.  
+ The <xref:System.Collections.Generic.Dictionary%602.Enumerator.Current%2A?displayProperty=nameWithType> property returns an instance of this type.  
   
  The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of a collection based on <xref:System.Collections.Generic.IDictionary%602> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.Generic.KeyValuePair%602>. For example:  
   

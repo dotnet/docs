@@ -108,7 +108,7 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
   
 ### To change the level at which a listener writes a trace message  
   
-1.  The configuration file initializes the settings for the trace source at the time the application is initialized. To change those settings you must change the configuration file and restart the application or programmatically refresh the application using the <xref:System.Diagnostics.Trace.Refresh%2A?displayProperty=fullName> method. The application can dynamically change the properties set by the configuration file to override any settings specified by the user.  For example, you might want to assure that critical messages are always sent to a text file, regardless of the current configuration settings.  
+1.  The configuration file initializes the settings for the trace source at the time the application is initialized. To change those settings you must change the configuration file and restart the application or programmatically refresh the application using the <xref:System.Diagnostics.Trace.Refresh%2A?displayProperty=nameWithType> method. The application can dynamically change the properties set by the configuration file to override any settings specified by the user.  For example, you might want to assure that critical messages are always sent to a text file, regardless of the current configuration settings.  
   
     ```  
     using System;  

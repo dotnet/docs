@@ -512,7 +512,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
    
   
@@ -611,7 +611,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
  This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.RegionInfo.Equals%2A> method.  
   
@@ -862,9 +862,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.Int32%29?displayProperty=fullName> constructor that takes a culture identifier parameter, the <xref:System.Globalization.RegionInfo.Name%2A> property value is one of the two-letter codes defined in ISO 3166 for the country/region and is formatted in uppercase. For example, the two-letter code for the United States is "US".  
+ If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor that takes a culture identifier parameter, the <xref:System.Globalization.RegionInfo.Name%2A> property value is one of the two-letter codes defined in ISO 3166 for the country/region and is formatted in uppercase. For example, the two-letter code for the United States is "US".  
   
- If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.String%29?displayProperty=fullName> constructor and is passed a full culture name such as "en-US", the <xref:System.Globalization.RegionInfo.Name%2A> property value is a full culture name and not just the region name.  
+ If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor and is passed a full culture name such as "en-US", the <xref:System.Globalization.RegionInfo.Name%2A> property value is a full culture name and not just the region name.  
   
    
   
@@ -1058,7 +1058,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
  This method returns the value of the <xref:System.Globalization.RegionInfo.Name%2A> property.  
   

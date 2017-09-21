@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.6.2|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor?displayProperty=nameWithType></li></ul>|
 

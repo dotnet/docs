@@ -439,7 +439,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri%2A> normalizes `partUri` by case-folding to uppercase (<xref:System.String.ToUpperInvariant%2A?displayProperty=fullName>) and returning the result.  
+ <xref:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri%2A> normalizes `partUri` by case-folding to uppercase (<xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType>) and returning the result.  
   
  ]]></format>
         </remarks>

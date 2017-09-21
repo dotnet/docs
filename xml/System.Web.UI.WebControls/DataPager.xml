@@ -62,7 +62,7 @@
 ## Introduction  
  The <xref:System.Web.UI.WebControls.DataPager> class is used to page data and to display navigation controls for data-bound controls that implement the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface. (An example of a control that implements the interface is the <xref:System.Web.UI.WebControls.ListView> control.)  
   
- You can associate the <xref:System.Web.UI.WebControls.DataPager> control with the data-bound control by using the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property. Alternatively, you can put the <xref:System.Web.UI.WebControls.DataPager> control inside the data-bound control hierarchy. For example, in the <xref:System.Web.UI.WebControls.ListView> control, you can put the <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> template.  
+ You can associate the <xref:System.Web.UI.WebControls.DataPager> control with the data-bound control by using the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property. Alternatively, you can put the <xref:System.Web.UI.WebControls.DataPager> control inside the data-bound control hierarchy. For example, in the <xref:System.Web.UI.WebControls.ListView> control, you can put the <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> template.  
   
  You can customize the number of items that are displayed for each page of data by changing the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A> property. You can also change the way a page is submitted to the server by setting the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A> property.  
   
@@ -277,7 +277,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPager.ConnectToEvents%2A> method specifies the <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A> method as the handler for the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable?displayProperty=fullName> event of the control specified in `container`. The `container` parameter must contain a data-bound control that implements the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface, such as a <xref:System.Web.UI.WebControls.ListView> control.  
+ The <xref:System.Web.UI.WebControls.DataPager.ConnectToEvents%2A> method specifies the <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A> method as the handler for the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable?displayProperty=nameWithType> event of the control specified in `container`. The `container` parameter must contain a data-bound control that implements the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface, such as a <xref:System.Web.UI.WebControls.ListView> control.  
   
 > [!NOTE]
 >  This method is primarily used by control developers to extend the <xref:System.Web.UI.WebControls.DataPager> control.  
@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A> method is used by the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A> property and by the <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A> method to create the <xref:System.Web.UI.WebControls.DataPagerField> objects that are contained by the <xref:System.Web.UI.WebControls.DataPager.Fields%2A> property. This method calls the <xref:System.Web.UI.WebControls.DataPagerField.CreateDataPagers%2A?displayProperty=fullName> method to create the user interface (UI) controls for each field in the collection.  
+ The <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A> method is used by the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A> property and by the <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A> method to create the <xref:System.Web.UI.WebControls.DataPagerField> objects that are contained by the <xref:System.Web.UI.WebControls.DataPager.Fields%2A> property. This method calls the <xref:System.Web.UI.WebControls.DataPagerField.CreateDataPagers%2A?displayProperty=nameWithType> method to create the user interface (UI) controls for each field in the collection.  
   
  The pager fields are created in the <xref:System.Web.UI.WebControls.DataPager> control in the order that the pager fields appear in the <xref:System.Web.UI.WebControls.DataPager.Fields%2A> collection. The following table shows the pager field classes that derive from the <xref:System.Web.UI.WebControls.DataPagerField> class and that can be created in the <xref:System.Web.UI.WebControls.DataPager> control.  
   
@@ -461,7 +461,7 @@
 ## Remarks  
  The data-bound control retrieved by this method references a data source object that contains the data that the <xref:System.Web.UI.WebControls.DataPager> control pages. For the <xref:System.Web.UI.WebControls.DataPager> control to be able to page this data, the data-bound control must implement the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface.  
   
- The <xref:System.Web.UI.WebControls.DataPager.FindPageableItemContainer%2A> method checks whether the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property is set to the ID of a data-bound control. If the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property is not set, the <xref:System.Web.UI.WebControls.DataPager.FindPageableItemContainer%2A> method goes up the stack of naming containers to look for a data-bound control. For example, if the <xref:System.Web.UI.WebControls.DataPager> control is inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> template of a <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property does not have to be set. This is because the <xref:System.Web.UI.WebControls.DataPager.FindPageableItemContainer%2A> method can automatically find the <xref:System.Web.UI.WebControls.ListView> control by examining the control tree.  
+ The <xref:System.Web.UI.WebControls.DataPager.FindPageableItemContainer%2A> method checks whether the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property is set to the ID of a data-bound control. If the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property is not set, the <xref:System.Web.UI.WebControls.DataPager.FindPageableItemContainer%2A> method goes up the stack of naming containers to look for a data-bound control. For example, if the <xref:System.Web.UI.WebControls.DataPager> control is inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> template of a <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property does not have to be set. This is because the <xref:System.Web.UI.WebControls.DataPager.FindPageableItemContainer%2A> method can automatically find the <xref:System.Web.UI.WebControls.ListView> control by examining the control tree.  
   
  ]]></format>
         </remarks>
@@ -686,7 +686,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable?displayProperty=fullName> event when the total number of records in its underlying data source is available. The <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A> method is a handler for this event and is responsible for updating the page-related properties and recreating the pager field objects.  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable?displayProperty=nameWithType> event when the total number of records in its underlying data source is available. The <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A> method is a handler for this event and is responsible for updating the page-related properties and recreating the pager field objects.  
   
  ]]></format>
         </remarks>
@@ -727,7 +727,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property to specify the <xref:System.Web.UI.Control.ID%2A> of the control that contains the data that will be paged by the <xref:System.Web.UI.WebControls.DataPager> control. The specified control must implement the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface and must use the same naming container as the <xref:System.Web.UI.WebControls.DataPager> control. An example of a control that you can specify is the <xref:System.Web.UI.WebControls.ListView> control.  
   
- If this property is an empty string or `null`, the <xref:System.Web.UI.WebControls.DataPager> control checks whether its container control implements the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface. For example, in the <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property does not have to be set if you put the <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> template. This is because the <xref:System.Web.UI.WebControls.DataPager> control can automatically find the <xref:System.Web.UI.WebControls.ListView> control by examining the control tree.  
+ If this property is an empty string or `null`, the <xref:System.Web.UI.WebControls.DataPager> control checks whether its container control implements the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface. For example, in the <xref:System.Web.UI.WebControls.ListView> control, the <xref:System.Web.UI.WebControls.DataPager.PagedControlID%2A> property does not have to be set if you put the <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> template. This is because the <xref:System.Web.UI.WebControls.DataPager> control can automatically find the <xref:System.Web.UI.WebControls.ListView> control by examining the control tree.  
   
  The value of this property is stored in view state.  
   
@@ -954,7 +954,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPager.RenderContents%2A> method calls the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method to render its contents.  
+ The <xref:System.Web.UI.WebControls.DataPager.RenderContents%2A> method calls the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method to render its contents.  
   
 > [!NOTE]
 >  This method is primarily used by control developers to extend the <xref:System.Web.UI.WebControls.DataPager> control.  
@@ -1047,7 +1047,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPager.SetPageProperties%2A> method sets new values for the <xref:System.Web.UI.WebControls.DataPager.StartRowIndex%2A> and <xref:System.Web.UI.WebControls.DataPager.MaximumRows%2A> properties. It also invokes the <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A?displayProperty=fullName> method to update the page-related properties in the associated data-bound control.  
+ The <xref:System.Web.UI.WebControls.DataPager.SetPageProperties%2A> method sets new values for the <xref:System.Web.UI.WebControls.DataPager.StartRowIndex%2A> and <xref:System.Web.UI.WebControls.DataPager.MaximumRows%2A> properties. It also invokes the <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A?displayProperty=nameWithType> method to update the page-related properties in the associated data-bound control.  
   
  ]]></format>
         </remarks>
@@ -1193,7 +1193,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPager.TagKey%2A> property returns an HTML element that is used by the <xref:System.Web.UI.WebControls.DataPager.RenderBeginTag%2A> method to write the appropriate markup for the <xref:System.Web.UI.WebControls.DataPager> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.DataPager.TagKey%2A> property returns an HTML element that is used by the <xref:System.Web.UI.WebControls.DataPager.RenderBeginTag%2A> method to write the appropriate markup for the <xref:System.Web.UI.WebControls.DataPager> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  This property is primarily used by control developers to extend the <xref:System.Web.UI.WebControls.DataPager> control.  

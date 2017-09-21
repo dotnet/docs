@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.Forms.TableLayoutControlCollection.Add(System.Windows.Forms.Control%2CSystem.Int32%2CSystem.Int32)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Forms.TableLayoutControlCollection.Add(System.Windows.Forms.Control%2CSystem.Int32%2CSystem.Int32)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0098</li></ul>|
 

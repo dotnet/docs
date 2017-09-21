@@ -148,7 +148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Returns a collection of index values for image lists associated with the <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A?displayProperty=fullName> property of the `context` parameter. If an <xref:System.Windows.Forms.ImageList> is not found, then the parent of the component will be searched for such a list.  
+ Returns a collection of index values for image lists associated with the <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A?displayProperty=nameWithType> property of the `context` parameter. If an <xref:System.Windows.Forms.ImageList> is not found, then the parent of the component will be searched for such a list.  
   
  Typically the <xref:System.Windows.Forms.ImageIndexConverter.GetStandardValuesSupported%2A> method is called to before an attempt is made to use the <xref:System.Windows.Forms.ImageIndexConverter.GetStandardValues%2A> and <xref:System.Windows.Forms.ImageIndexConverter.GetStandardValuesExclusive%2A> methods.  
   

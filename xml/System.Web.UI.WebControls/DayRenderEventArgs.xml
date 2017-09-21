@@ -27,7 +27,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the cell.  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the cell.  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  -->  
@@ -134,7 +134,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically control the cell being rendered in the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- You can customize the contents of a cell by dynamically adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
+ You can customize the contents of a cell by dynamically adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
   
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can add only static controls, such as <xref:System.Web.UI.LiteralControl>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
@@ -142,7 +142,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically change the background color of the days in the displayed month to yellow. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically change the background color of the days in the displayed month to yellow. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/VB/sourcevb.aspx#1)]  -->  

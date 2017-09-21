@@ -122,7 +122,7 @@ manager: "wpickett"
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/MainWindow.xaml.cs#rectangleopacityfadeexamplecode_101)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_101](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/MainWindow.xaml.vb#rectangleopacityfadeexamplecode_101)]  
   
-2.  The                                  <xref:System.Windows.Media.Animation.Storyboard> has to know where to apply the animation. Use the                                  <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=fullName> attached property to specify the object to animate. The following shows how to set the target name of the                                  <xref:System.Windows.Media.Animation.DoubleAnimation> to                                  `MyRectangle` in XAML.  
+2.  The                                  <xref:System.Windows.Media.Animation.Storyboard> has to know where to apply the animation. Use the                                  <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=nameWithType> attached property to specify the object to animate. The following shows how to set the target name of the                                  <xref:System.Windows.Media.Animation.DoubleAnimation> to                                  `MyRectangle` in XAML.  
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_6)]  
   

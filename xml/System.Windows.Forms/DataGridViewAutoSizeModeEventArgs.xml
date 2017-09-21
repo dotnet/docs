@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When implementing a source for <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged?displayProperty=fullName> events, pass in `true` for `previousModeAutoSized` if the <xref:System.Windows.Forms.DataGridView> already had an automatic resizing mode and the new mode is different. Otherwise, pass in `false` for `previousModeAutoSized`.  
+ When implementing a source for <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged?displayProperty=nameWithType> events, pass in `true` for `previousModeAutoSized` if the <xref:System.Windows.Forms.DataGridView> already had an automatic resizing mode and the new mode is different. Otherwise, pass in `false` for `previousModeAutoSized`.  
   
  ]]></format>
         </remarks>
@@ -79,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs> class is used with the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged?displayProperty=fullName> events, so this property relates specifically to the previous state of either the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A?displayProperty=fullName> property  
+ The <xref:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs> class is used with the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged?displayProperty=nameWithType> events, so this property relates specifically to the previous state of either the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A?displayProperty=nameWithType> property  
   
    
   

@@ -1387,7 +1387,7 @@
   
 -   The user enters or exits template editing mode for the control.  
   
- The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=fullName> event. Classes deriving from <xref:System.Web.UI.Design.ControlDesigner> override the <xref:System.Web.UI.Design.ControlDesigner.OnClick%2A> method to process events that are raised when the user clicks a control.  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=nameWithType> event. Classes deriving from <xref:System.Web.UI.Design.ControlDesigner> override the <xref:System.Web.UI.Design.ControlDesigner.OnClick%2A> method to process events that are raised when the user clicks a control.  
   
  The <xref:System.Web.UI.Design.ControlDesigner.OnClick%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1539,7 +1539,7 @@
   
 -   The user enters or exits template editing mode for the control.  
   
- The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=fullName> event. Classes deriving from <xref:System.Web.UI.Design.ControlDesigner> should set the <xref:System.Web.UI.Design.ViewFlags?displayProperty=fullName> value and override the <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method to process events that are raised when the design host draws the control on the design surface.  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=nameWithType> event. Classes deriving from <xref:System.Web.UI.Design.ControlDesigner> should set the <xref:System.Web.UI.Design.ViewFlags?displayProperty=nameWithType> value and override the <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method to process events that are raised when the design host draws the control on the design surface.  
   
  The <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

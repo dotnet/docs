@@ -31,7 +31,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # ICorRuntimeHost::CreateDomainSetup Method
-Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSetup?displayProperty=fullName> instance. `IAppDomainSetup` provides methods to configure aspects of an application domain before it is created.  
+Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. `IAppDomainSetup` provides methods to configure aspects of an application domain before it is created.  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ HRESULT CreateDomainSetup (
   
 #### Parameters  
  `pAppDomainSetup`  
- [out] An interface pointer to an <xref:System.AppDomainSetup?displayProperty=fullName> instance. This parameter is typed as `IUnknown`, so callers should generally call `QueryInterface` on this pointer to obtain an interface pointer of type `IAppDomainSetup`.  
+ [out] An interface pointer to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. This parameter is typed as `IUnknown`, so callers should generally call `QueryInterface` on this pointer to obtain an interface pointer of type `IAppDomainSetup`.  
   
 ## Return Value  
   
@@ -70,5 +70,5 @@ HRESULT CreateDomainSetup (
  <xref:System._AppDomain>   
  <xref:System.AppDomain>   
  <xref:System.AppDomainSetup>   
- <xref:System.IAppDomainSetup?displayProperty=fullName>   
+ <xref:System.IAppDomainSetup?displayProperty=nameWithType>   
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

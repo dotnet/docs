@@ -51,7 +51,7 @@ try
 }  
 ```  
   
- Although the `catch` clause can be used without arguments to catch any type of exception, this usage is not recommended. In general, you should only catch those exceptions that you know how to recover from. Therefore, you should always specify an object argument derived from <xref:System.Exception?displayProperty=fullName> For example:  
+ Although the `catch` clause can be used without arguments to catch any type of exception, this usage is not recommended. In general, you should only catch those exceptions that you know how to recover from. Therefore, you should always specify an object argument derived from <xref:System.Exception?displayProperty=nameWithType> For example:  
   
 ```csharp  
 catch (InvalidCastException e)   
@@ -144,7 +144,7 @@ static void Main()
   
  To catch the exception, await the task in a `try` block, and catch the exception in the associated `catch` block. For an example, see the "Example" section.  
   
- A task can be in a faulted state because multiple exceptions occurred in the awaited async method. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>. When you await such a task, only one of the exceptions is caught, and you can't predict which exception will be caught. For an example, see the "Example" section.  
+ A task can be in a faulted state because multiple exceptions occurred in the awaited async method. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>. When you await such a task, only one of the exceptions is caught, and you can't predict which exception will be caught. For an example, see the "Example" section.  
   
 ## Example  
  In the following example, the `try` block contains a call to the `ProcessString` method that may cause an exception. The `catch` clause contains the exception handler that just displays a message on the screen. When the `throw` statement is called from inside `MyMethod`, the system looks for the `catch` statement and displays the message `Exception caught`.  
@@ -170,9 +170,9 @@ static void Main()
  [!code-cs[csAsyncExceptions#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_3.cs)]  
   
 ## Example  
- The following example illustrates exception handling where multiple tasks can result in multiple exceptions. The `try` block awaits the task that's returned by a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>. The task is complete when the three tasks to which WhenAll is applied are complete.  
+ The following example illustrates exception handling where multiple tasks can result in multiple exceptions. The `try` block awaits the task that's returned by a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>. The task is complete when the three tasks to which WhenAll is applied are complete.  
   
- Each of the three tasks causes an exception. The `catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that was returned by <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>.  
+ Each of the three tasks causes an exception. The `catch` block iterates through the exceptions, which are found in the `Exception.InnerExceptions` property of the task that was returned by <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>.  
   
  [!code-cs[csAsyncExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_4.cs)]  
   

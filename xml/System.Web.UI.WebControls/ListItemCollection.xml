@@ -32,9 +32,9 @@
   
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.ListItem> from the collection, using array notation.  
   
--   Use the <xref:System.Web.UI.WebControls.ListItemCollection.CopyTo%2A> method to copy the contents of the collection to a <xref:System.Array?displayProperty=fullName> object, which can then be used to get items from the collection.  
+-   Use the <xref:System.Web.UI.WebControls.ListItemCollection.CopyTo%2A> method to copy the contents of the collection to a <xref:System.Array?displayProperty=nameWithType> object, which can then be used to get items from the collection.  
   
--   Use the <xref:System.Web.UI.WebControls.ListItemCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> implemented object, which can then be used to get items from the collection.  
+-   Use the <xref:System.Web.UI.WebControls.ListItemCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> implemented object, which can then be used to get items from the collection.  
   
 -   Use `foreach` (C#) or `For Each` (Visual Basic) to iterate through the collection.  
   
@@ -295,10 +295,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.WebControls.ListItemCollection> into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index.  
+ Use this method to copy the contents of the <xref:System.Web.UI.WebControls.ListItemCollection> into the specified <xref:System.Array?displayProperty=nameWithType>, starting at the specified index.  
   
 > [!NOTE]
->  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName>.  
+>  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=nameWithType>.  
   
    
   
@@ -433,16 +433,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> that can be iterated through to get each <xref:System.Web.UI.WebControls.ListItem> object in the <xref:System.Web.UI.WebControls.ListItemCollection>.  
+ Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> that can be iterated through to get each <xref:System.Web.UI.WebControls.ListItem> object in the <xref:System.Web.UI.WebControls.ListItemCollection>.  
   
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property to get the item currently pointed to in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator back to the initial position.  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator back to the initial position.  
   
 > [!NOTE]
->  After you create a <xref:System.Collections.IEnumerator?displayProperty=fullName> object or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  After you create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> object or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
    
   
@@ -589,9 +589,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from <xref:System.Collections.ICollection?displayProperty=fullName> and is overridden to always return `false`.  
+ This property is derived from <xref:System.Collections.ICollection?displayProperty=nameWithType> and is overridden to always return `false`.  
   
- For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -755,7 +755,7 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Web.UI.WebControls.ListItemCollection> object itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.SelectedDatesCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>

@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.6|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext(System.Collections.Generic.IList%7BSystem.IdentityModel.Policy.IAuthorizationPolicy%7D)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext(System.Collections.Generic.IList%7BSystem.IdentityModel.Policy.IAuthorizationPolicy%7D)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0138</li></ul>|
 

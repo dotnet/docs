@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the current <xref:System.AppDomainManager> has a reference to a <xref:System.Threading.HostExecutionContextManager> in its <xref:System.AppDomainManager.HostExecutionContextManager%2A> property, then the common language runtime calls the manager every time a call to the <xref:System.Threading.ExecutionContext.Run%2A?displayProperty=fullName> method occurs, to allow the host to participate in the flow of the execution context.  
+ If the current <xref:System.AppDomainManager> has a reference to a <xref:System.Threading.HostExecutionContextManager> in its <xref:System.AppDomainManager.HostExecutionContextManager%2A> property, then the common language runtime calls the manager every time a call to the <xref:System.Threading.ExecutionContext.Run%2A?displayProperty=nameWithType> method occurs, to allow the host to participate in the flow of the execution context.  
   
  ]]></format>
     </remarks>
@@ -175,7 +175,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A> method sets the host execution context for the current <xref:System.Threading.HostExecutionContext>.  A <xref:System.Threading.HostExecutionContext> that has been used as the argument to another <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A> method call cannot be passed in as the parameter for this method. Instead, use the <xref:System.Threading.HostExecutionContext.CreateCopy%2A?displayProperty=fullName> method to create a copy of a <xref:System.Threading.HostExecutionContext> object and then use the copy to set the host execution context.  
+ The <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A> method sets the host execution context for the current <xref:System.Threading.HostExecutionContext>.  A <xref:System.Threading.HostExecutionContext> that has been used as the argument to another <xref:System.Threading.HostExecutionContextManager.SetHostExecutionContext%2A> method call cannot be passed in as the parameter for this method. Instead, use the <xref:System.Threading.HostExecutionContext.CreateCopy%2A?displayProperty=nameWithType> method to create a copy of a <xref:System.Threading.HostExecutionContext> object and then use the copy to set the host execution context.  
   
  Call the <xref:System.Threading.HostExecutionContextManager.Revert%2A> method using the object returned by this method to restore the <xref:System.Threading.HostExecutionContext> to its previous state.  
   

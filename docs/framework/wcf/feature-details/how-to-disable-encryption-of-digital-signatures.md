@@ -21,7 +21,7 @@ By default, a message is signed and the signature is digitally encrypted. This i
  Therefore, disable encryption of the signature only when the value of the content is low or the set of possible content values is large and nondeterministic, and the performance gain is more important than mitigating the attack described above.  
   
 > [!NOTE]
->  If there is nothing in the message that is encrypted, the signature element is not encrypted, even when the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=fullName> or <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=fullName> property is set to <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature>. This behavior occurs even with system-provided bindings; all system-provided bindings have the message protection order set to `SignBeforeEncryptAndEncryptSignature`. However, the Web Services Description Language (WSDL) [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates will still contain the `<sp:EncryptSignature>` assertion.  
+>  If there is nothing in the message that is encrypted, the signature element is not encrypted, even when the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature>. This behavior occurs even with system-provided bindings; all system-provided bindings have the message protection order set to `SignBeforeEncryptAndEncryptSignature`. However, the Web Services Description Language (WSDL) [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates will still contain the `<sp:EncryptSignature>` assertion.  
   
 ### To disable digital signing  
   
@@ -29,7 +29,7 @@ By default, a message is signed and the signature is digitally encrypted. This i
   
 2.  Add either an <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> or a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> to the binding collection.  
   
-3.  Set the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=fullName> property to <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>, or set the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=fullName> property to <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>.  
+3.  Set the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>, or set the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>.  
   
 ## See Also  
  [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)

@@ -112,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.TableLayoutSettings.ColumnStyles%2A> property to access the style properties of specific columns. The order of the styles in a <xref:System.Windows.Forms.TableLayoutColumnStyleCollection?displayProperty=fullName> matches the order of the corresponding columns in the layout table.  
+ Use the <xref:System.Windows.Forms.TableLayoutSettings.ColumnStyles%2A> property to access the style properties of specific columns. The order of the styles in a <xref:System.Windows.Forms.TableLayoutColumnStyleCollection?displayProperty=nameWithType> matches the order of the corresponding columns in the layout table.  
   
  ]]></format>
         </remarks>
@@ -384,7 +384,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.TableLayoutSettings.RowStyles%2A> property to access the style properties of specific rows. The order of the styles in a <xref:System.Windows.Forms.TableLayoutRowStyleCollection?displayProperty=fullName> matches the order of the corresponding rows in the layout table.  
+ Use the <xref:System.Windows.Forms.TableLayoutSettings.RowStyles%2A> property to access the style properties of specific rows. The order of the styles in a <xref:System.Windows.Forms.TableLayoutRowStyleCollection?displayProperty=nameWithType> matches the order of the corresponding rows in the layout table.  
   
  ]]></format>
         </remarks>

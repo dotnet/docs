@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the queue.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the queue.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
   
@@ -623,7 +623,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -750,7 +750,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -795,7 +795,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
   
@@ -852,7 +852,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -894,7 +894,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -976,7 +976,7 @@ finally {
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   

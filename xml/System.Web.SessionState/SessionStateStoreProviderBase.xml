@@ -198,7 +198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SessionState.SessionStateStoreProviderBase.Dispose%2A?displayProperty=fullName> method is called when the <xref:System.Web.SessionState.SessionStateModule.Dispose%2A?displayProperty=fullName> method executes at the closing of the application domain. Classes that inherit the <xref:System.Web.SessionState.SessionStateStoreProviderBase> class can use this method to free any resources no longer in use.  
+ The <xref:System.Web.SessionState.SessionStateStoreProviderBase.Dispose%2A?displayProperty=nameWithType> method is called when the <xref:System.Web.SessionState.SessionStateModule.Dispose%2A?displayProperty=nameWithType> method executes at the closing of the application domain. Classes that inherit the <xref:System.Web.SessionState.SessionStateStoreProviderBase> class can use this method to free any resources no longer in use.  
   
    
   

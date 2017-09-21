@@ -91,11 +91,11 @@
   
  To ensure that the names are constructed correctly, use the following properties:  
   
--   <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>  
   
--   <xref:System.Reflection.AssemblyName.FullName%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.AssemblyName.FullName%2A?displayProperty=nameWithType>  
   
--   <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName>  
+-   <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>  
   
  You can also get the name by using the `/l` option with the [Gacutil.exe (Global Assembly Cache Tool)](~/docs/framework/tools/gacutil-exe-gac-tool.md)  
   
@@ -308,12 +308,12 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.CodeBase%2A?displayProperty=fullName> property.  
+ When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.CodeBase%2A?displayProperty=nameWithType> property.  
   
  If the assembly was loaded as a byte array, this property returns the location of the caller of the <xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%29> method overload, not the location of the loaded assembly.  
   
 > [!NOTE]
->  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
+>  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
   
    
   
@@ -550,7 +550,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
   
  Writing your own code to parse display names is not recommended. Instead, pass the display name to the <xref:System.Reflection.AssemblyName.%23ctor%2A> constructor, which parses it and populates the appropriate fields of the new <xref:System.Reflection.AssemblyName>.  
   
- When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property.  
+ When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -779,7 +779,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=fullName> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> in this situation.  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> in this situation.  
   
    
   
@@ -951,7 +951,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture?displayProperty=fullName> for reference assemblies.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture?displayProperty=nameWithType> for reference assemblies.  
   
  ]]></format>
         </remarks>
@@ -1328,7 +1328,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All components of the version must be integers greater than or equal to zero. Metadata restricts the major, minor, build, and revision components for an assembly to a maximum value of <xref:System.UInt16.MaxValue?displayProperty=fullName> - 1. If a component exceeds this value, no error is thrown; however, in a dynamic assembly, that component is zero.  
+ All components of the version must be integers greater than or equal to zero. Metadata restricts the major, minor, build, and revision components for an assembly to a maximum value of <xref:System.UInt16.MaxValue?displayProperty=nameWithType> - 1. If a component exceeds this value, no error is thrown; however, in a dynamic assembly, that component is zero.  
   
    
   
@@ -1385,7 +1385,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
  <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> information indicates, for example, that the assembly cannot execute side-by-side with other versions due to conflicts over a device driver.  
   
- Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility?displayProperty=fullName>, and is not used by the loader. This property is reserved for a future feature.  
+ Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility?displayProperty=nameWithType>, and is not used by the loader. This property is reserved for a future feature.  
   
  ]]></format>
         </remarks>

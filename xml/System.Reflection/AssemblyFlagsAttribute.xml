@@ -39,14 +39,14 @@
 ## Remarks  
  The <xref:System.Reflection.AssemblyNameFlags> enumeration describes the assembly characteristics that can be set using this attribute.  
   
- To access the flags that have been specified for an assembly, use the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyName> object, then use the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyNameFlags> value.  
+ To access the flags that have been specified for an assembly, use the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=nameWithType> property to obtain an <xref:System.Reflection.AssemblyName> object, then use the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=nameWithType> property to obtain an <xref:System.Reflection.AssemblyNameFlags> value.  
   
- To specify <xref:System.Reflection.AssemblyNameFlags> flags for a dynamic assembly, set the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> object that you pass to the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName> method.  
+ To specify <xref:System.Reflection.AssemblyNameFlags> flags for a dynamic assembly, set the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=nameWithType> property of the <xref:System.Reflection.AssemblyName> object that you pass to the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method.  
   
    
   
 ## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
+ The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
  [!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
@@ -127,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
+ The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
  [!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
@@ -217,7 +217,7 @@
    
   
 ## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
+ The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
  [!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]

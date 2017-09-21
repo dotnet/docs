@@ -134,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although it is not specifically a service provider, you can use the <xref:System.Xaml.XamlReader> delegate that is returned from <xref:System.Xaml.XamlNodeList.GetReader%2A?displayProperty=fullName> in a service mode, where you cast it to <xref:System.Xaml.IXamlIndexingReader>. In that mode you can get and set the index values for <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A?displayProperty=fullName>. In this manner, the set mode enables skipping nodes without using the standard `Read` and `Skip`.  
+ Although it is not specifically a service provider, you can use the <xref:System.Xaml.XamlReader> delegate that is returned from <xref:System.Xaml.XamlNodeList.GetReader%2A?displayProperty=nameWithType> in a service mode, where you cast it to <xref:System.Xaml.IXamlIndexingReader>. In that mode you can get and set the index values for <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A?displayProperty=nameWithType>. In this manner, the set mode enables skipping nodes without using the standard `Read` and `Skip`.  
   
  ]]></format>
         </remarks>

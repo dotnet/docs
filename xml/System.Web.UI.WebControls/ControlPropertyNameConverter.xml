@@ -19,7 +19,7 @@
  The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter> class derives from the <xref:System.ComponentModel.StringConverter> class and provides a list of property names for display in a property grid control in design-time environments.  
   
 > [!CAUTION]
->  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+>  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=nameWithType> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
   
  ]]></format>
     </remarks>
@@ -41,7 +41,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is not intended to be called directly. You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ This constructor is not intended to be called directly. You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=nameWithType> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
   
  ]]></format>
         </remarks>

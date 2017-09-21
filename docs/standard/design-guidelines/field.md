@@ -44,7 +44,7 @@ The principle of encapsulation is one of the most important notions in object-or
   
  **X DO NOT** assign instances of mutable types to `readonly` fields.  
   
- A mutable type is a type with instances that can be modified after they are instantiated. For example, arrays, most collections, and streams are mutable types, but <xref:System.Int32?displayProperty=fullName>, <xref:System.Uri?displayProperty=fullName>, and <xref:System.String?displayProperty=fullName> are all immutable. The read-only modifier on a reference type field prevents the instance stored in the field from being replaced, but it does not prevent the field’s instance data from being modified by calling members changing the instance.  
+ A mutable type is a type with instances that can be modified after they are instantiated. For example, arrays, most collections, and streams are mutable types, but <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Uri?displayProperty=nameWithType>, and <xref:System.String?displayProperty=nameWithType> are all immutable. The read-only modifier on a reference type field prevents the instance stored in the field from being replaced, but it does not prevent the field’s instance data from being modified by calling members changing the instance.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   

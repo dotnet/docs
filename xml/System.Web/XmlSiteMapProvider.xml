@@ -321,7 +321,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class overrides the inherited <xref:System.Web.XmlSiteMapProvider.Clear%2A> method to provide additional state cleanup beyond the basic <xref:System.Web.StaticSiteMapProvider.Clear%2A?displayProperty=fullName> implementation, including clearing its child provider tracking and the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property tracking mechanisms.  
+ The <xref:System.Web.XmlSiteMapProvider> class overrides the inherited <xref:System.Web.XmlSiteMapProvider.Clear%2A> method to provide additional state cleanup beyond the basic <xref:System.Web.StaticSiteMapProvider.Clear%2A?displayProperty=nameWithType> implementation, including clearing its child provider tracking and the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property tracking mechanisms.  
   
  ]]></format>
         </remarks>
@@ -698,7 +698,7 @@
 ## Remarks  
  The <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property calls the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method to retrieve the top-level node in the site map. Therefore, any exceptions that occur for the <xref:System.Web.XmlSiteMapProvider.BuildSiteMap%2A> method can also occur when accessing the <xref:System.Web.XmlSiteMapProvider.RootNode%2A> property.  
   
- The <xref:System.Web.SiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes permit only one root <xref:System.Web.SiteMapNode> object in a site map. The <xref:System.Web.XmlSiteMapProvider> class overrides the abstract <xref:System.Web.SiteMapProvider.RootNode%2A?displayProperty=fullName> property and provides a simple implementation to track the root node.  
+ The <xref:System.Web.SiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes permit only one root <xref:System.Web.SiteMapNode> object in a site map. The <xref:System.Web.XmlSiteMapProvider> class overrides the abstract <xref:System.Web.SiteMapProvider.RootNode%2A?displayProperty=nameWithType> property and provides a simple implementation to track the root node.  
   
  ]]></format>
         </remarks>

@@ -191,7 +191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method is a helper function that is used to create an array of data types supported by the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class. The array is often searched to determine the index of a desired data type. The index is then passed to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method to create an <xref:System.Object?displayProperty=fullName> of the corresponding data type.  
+ The <xref:System.Web.UI.WebControls.SubMenuStyleCollection.GetKnownTypes%2A> method is a helper function that is used to create an array of data types supported by the <xref:System.Web.UI.WebControls.SubMenuStyleCollection> class. The array is often searched to determine the index of a desired data type. The index is then passed to the <xref:System.Web.UI.WebControls.SubMenuStyleCollection.CreateKnownType%2A> method to create an <xref:System.Object?displayProperty=nameWithType> of the corresponding data type.  
   
 > [!NOTE]
 >  This method is used only by control developers.  

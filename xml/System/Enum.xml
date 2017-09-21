@@ -131,14 +131,14 @@
  [!code-csharp[System.Enum.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/classconversion1.cs#7)]
  [!code-vb[System.Enum.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/classconversion1.vb#7)]  
   
- Although the <xref:System.Enum> class provides explicit interface implementations of the <xref:System.IConvertible> interface for converting from an enumeration value to an integral type, you should use the methods of the <xref:System.Convert> class, such as <xref:System.Convert.ToInt32%2A>, to perform these conversions. The following example illustrates how you can use the <xref:System.Enum.GetUnderlyingType%2A> method along with the <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method to convert an enumeration value to its underlying type. Note that this example does not require the underlying type of the enumeration to be known at compile time.  
+ Although the <xref:System.Enum> class provides explicit interface implementations of the <xref:System.IConvertible> interface for converting from an enumeration value to an integral type, you should use the methods of the <xref:System.Convert> class, such as <xref:System.Convert.ToInt32%2A>, to perform these conversions. The following example illustrates how you can use the <xref:System.Enum.GetUnderlyingType%2A> method along with the <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method to convert an enumeration value to its underlying type. Note that this example does not require the underlying type of the enumeration to be known at compile time.  
   
  [!code-csharp[System.Enum.Class#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/classconversion2.cs#8)]
  [!code-vb[System.Enum.Class#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/classconversion2.vb#8)]  
   
 <a name="parsing"></a>   
 ### Parsing enumeration values  
- The <xref:System.Enum.Parse%2A> and <xref:System.Enum.TryParse%2A> methods allow you to convert the string representation of an enumeration value to that value. The string representation can be either the name or the underlying value of an enumeration constant. Note that the parsing methods will successfully convert string representations of numbers that are not members of a particular enumeration if the strings can be converted to a value of the enumeration's underlying type. To prevent this, the <xref:System.Enum.IsDefined%2A> method can be called to ensure that the result of the parsing method is a valid enumeration value. The example illustrates this approach and demonstrates calls to both the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> and <xref:System.Enum.TryParse%60%601%28System.String%2C%60%600%40%29?displayProperty=fullName> methods. Note that the non-generic parsing method returns an object that you may have to cast (in C#) or convert (in Visual Basic) to the appropriate enumeration type.  
+ The <xref:System.Enum.Parse%2A> and <xref:System.Enum.TryParse%2A> methods allow you to convert the string representation of an enumeration value to that value. The string representation can be either the name or the underlying value of an enumeration constant. Note that the parsing methods will successfully convert string representations of numbers that are not members of a particular enumeration if the strings can be converted to a value of the enumeration's underlying type. To prevent this, the <xref:System.Enum.IsDefined%2A> method can be called to ensure that the result of the parsing method is a valid enumeration value. The example illustrates this approach and demonstrates calls to both the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> and <xref:System.Enum.TryParse%60%601%28System.String%2C%60%600%40%29?displayProperty=nameWithType> methods. Note that the non-generic parsing method returns an object that you may have to cast (in C#) or convert (in Visual Basic) to the appropriate enumeration type.  
   
  [!code-csharp[System.Enum.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/classparse1.cs#9)]
  [!code-vb[System.Enum.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/classparse1.vb#9)]  
@@ -369,7 +369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Enum.Equals%28System.Object%29?displayProperty=fullName> method overrides <xref:System.ValueType.Equals%28System.Object%29?displayProperty=fullName> to define how enumeration members are evaluated for equality.  
+ The <xref:System.Enum.Equals%28System.Object%29?displayProperty=nameWithType> method overrides <xref:System.ValueType.Equals%28System.Object%29?displayProperty=nameWithType> to define how enumeration members are evaluated for equality.  
   
    
   
@@ -707,7 +707,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Enum> structure enables values to be represented as named constants. The data type of the enumeration's values is known as its underlying type. For example, the underlying type of the <xref:System.DayOfWeek> enumeration, which consists of constants that represent each day of the week (<xref:System.DayOfWeek?displayProperty=fullName>, <xref:System.DayOfWeek?displayProperty=fullName>, and so on), is <xref:System.Int32>.  
+ The <xref:System.Enum> structure enables values to be represented as named constants. The data type of the enumeration's values is known as its underlying type. For example, the underlying type of the <xref:System.DayOfWeek> enumeration, which consists of constants that represent each day of the week (<xref:System.DayOfWeek?displayProperty=nameWithType>, <xref:System.DayOfWeek?displayProperty=nameWithType>, and so on), is <xref:System.Int32>.  
   
    
   
@@ -773,7 +773,7 @@
   
  The <xref:System.Enum.GetValues%2A> method returns an array that contains a value for each member of the `enumType` enumeration. If multiple members have the same value, the returned array includes duplicate values. In this case, calling the <xref:System.Enum.GetName%2A> method with each value in the returned array does not restore the unique names assigned to members that have duplicate values. To retrieve all the names of enumeration members successfully, call the <xref:System.Enum.GetNames%2A> method.  
   
- The <xref:System.Enum.GetValues%2A> method cannot be invoked by using reflection in a reflection-only context. Instead, you can retrieve the value of all enumeration members by using the <xref:System.Type.GetFields%2A?displayProperty=fullName> method to get an array of <xref:System.Reflection.FieldInfo> objects that represent enumeration members and then call the <xref:System.Reflection.FieldInfo.GetRawConstantValue%2A?displayProperty=fullName> method on each element of the array. The following example illustrates this technique. It requires that you define the following enumeration in an assembly named Enumerations.dll:  
+ The <xref:System.Enum.GetValues%2A> method cannot be invoked by using reflection in a reflection-only context. Instead, you can retrieve the value of all enumeration members by using the <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method to get an array of <xref:System.Reflection.FieldInfo> objects that represent enumeration members and then call the <xref:System.Reflection.FieldInfo.GetRawConstantValue%2A?displayProperty=nameWithType> method on each element of the array. The following example illustrates this technique. It requires that you define the following enumeration in an assembly named Enumerations.dll:  
   
  [!code-csharp[System.Enum.GetValues#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.getvalues/cs/getvalues_reflectiononly.cs#2)]
  [!code-vb[System.Enum.GetValues#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.getvalues/vb/getvalues_reflectiononly.vb#2)]  

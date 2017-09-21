@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.CatalogPart.OnPreRender%2A> method calls the base <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=fullName> method, and ensures that an instance of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class has been created.  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPart.OnPreRender%2A> method calls the base <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=nameWithType> method, and ensures that an instance of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class has been created.  
   
  ]]></format>
         </remarks>

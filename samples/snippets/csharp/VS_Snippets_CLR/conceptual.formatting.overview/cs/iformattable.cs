@@ -69,6 +69,7 @@ public class Example
 {
    public static void Main()
    {
+      CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
       Temperature temp1 = new Temperature(22m);
       Console.WriteLine(Convert.ToString(temp1, new CultureInfo("ja-JP")));
       Console.WriteLine("Temperature: {0:K}", temp1);
@@ -78,7 +79,7 @@ public class Example
 }
 // The example displays the following output:
 //       22.00°C
-//       Temperature: 295.15°K
+//       Temperature: 295.15K
 //       Temperature: 71.60°F
 //       Temperature: 71,60°F
 // </Snippet13>

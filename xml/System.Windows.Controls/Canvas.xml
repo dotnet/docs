@@ -22,7 +22,7 @@
   
  The <xref:System.Windows.Controls.Panel.ZIndex%2A> property determines the order in which child elements that share the same coordinate space appear. A higher <xref:System.Windows.Controls.Panel.ZIndex%2A> value for one child element indicates that this element will appear above another child element that has a lower value.  
   
- If you specify them, the attached properties <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=fullName> take priority over the <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=fullName> properties.  
+ If you specify them, the attached properties <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=nameWithType> take priority over the <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType> properties.  
   
  Child elements of a <xref:System.Windows.Controls.Canvas> are always given the full size that they desire. As a result, vertical alignment and horizontal alignment have no effect inside a <xref:System.Windows.Controls.Canvas>.  
   

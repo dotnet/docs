@@ -43,5 +43,5 @@ You can return a task from a method, and then wait on or continue from that task
  [!code-vb[TPL_UnWrap#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_unwrap/vb/snippet04.vb#04)]  
   
 ## See Also  
- <xref:System.Threading.Tasks.TaskExtensions?displayProperty=fullName>   
+ <xref:System.Threading.Tasks.TaskExtensions?displayProperty=nameWithType>   
  [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)

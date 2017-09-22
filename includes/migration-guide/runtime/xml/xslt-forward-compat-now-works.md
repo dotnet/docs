@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType></li></ul>|
 

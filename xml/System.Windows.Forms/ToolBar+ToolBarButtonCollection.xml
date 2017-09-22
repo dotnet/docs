@@ -130,7 +130,7 @@
    
   
 ## Examples  
- The following code example adds a new <xref:System.Windows.Forms.ToolBarButton> control to an existing <xref:System.Windows.Forms.ToolBar> with existing buttons. The toolbar button will be added to the end of the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=fullName> collection.  
+ The following code example adds a new <xref:System.Windows.Forms.ToolBarButton> control to an existing <xref:System.Windows.Forms.ToolBar> with existing buttons. The toolbar button will be added to the end of the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection.  
   
  [!code-cpp[Classic ToolBar.ToolBarButtonCollection.Add Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ToolBar.ToolBarButtonCollection.Add Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ToolBar.ToolBarButtonCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ToolBar.ToolBarButtonCollection.Add Example/CS/source.cs#1)]
@@ -382,7 +382,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method gives you easy access to the index value of the <xref:System.Windows.Forms.ToolBarButton> in the collection. The index value allows you to easily determine which <xref:System.Windows.Forms.ToolBarButton> was clicked on the <xref:System.Windows.Forms.ToolBar>. The <xref:System.Windows.Forms.ToolBarButton> clicked can be determined by evaluating the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.IndexOf%2A> value of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A?displayProperty=fullName> property.  
+ This method gives you easy access to the index value of the <xref:System.Windows.Forms.ToolBarButton> in the collection. The index value allows you to easily determine which <xref:System.Windows.Forms.ToolBarButton> was clicked on the <xref:System.Windows.Forms.ToolBar>. The <xref:System.Windows.Forms.ToolBarButton> clicked can be determined by evaluating the <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection.IndexOf%2A> value of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A?displayProperty=nameWithType> property.  
   
    
   

@@ -1212,7 +1212,7 @@
 ## Remarks  
  `HasErrors` returns `true` if any <xref:System.Data.DataColumn> object in the row contains an error, or if the <xref:System.Data.DataRow.RowError%2A> property of the <xref:System.Data.DataRow> is not an empty string.  
   
- When validating data, you can set an error on any column in a row. Such a column, when displayed in the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control, is marked with a red exclamation point to signal to the user that the column is in error.  
+ When validating data, you can set an error on any column in a row. Such a column, when displayed in the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control, is marked with a red exclamation point to signal to the user that the column is in error.  
   
  Use <xref:System.Data.DataRow.SetColumnError%2A> to set an error on any column.  
   

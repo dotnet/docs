@@ -337,7 +337,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The data context is retrieved from a new context that is instantiated by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method. For more information, see the <xref:System.Web.DynamicData.MetaTable?displayProperty=fullName> class overview.  
+ The data context is retrieved from a new context that is instantiated by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=nameWithType> method. For more information, see the <xref:System.Web.DynamicData.MetaTable?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -460,7 +460,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the <xref:System.Data.Linq.DataContext?displayProperty=fullName> class overview.  
+ For more information, see the <xref:System.Data.Linq.DataContext?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -520,7 +520,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property defaults to the value of the <xref:System.Web.DynamicData.MetaTable.Name%2A> property. You can customize the value of this property by using the <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> attribute.  
+ The value of this property defaults to the value of the <xref:System.Web.DynamicData.MetaTable.Name%2A> property. You can customize the value of this property by using the <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=nameWithType> attribute.  
   
  ]]></format>
         </remarks>
@@ -573,7 +573,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -602,7 +602,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -633,7 +633,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -666,7 +666,7 @@ End Class
 ## Remarks  
  The action path is a URL for an action for a specific entity. The action path contains the primary-key column names, which can be used for query-string filters.  
   
- For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -697,7 +697,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -730,7 +730,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -763,7 +763,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -1052,7 +1052,7 @@ End Function
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `context` parameter is `null`, this method creates a new context by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=fullName> method.  
+ If the `context` parameter is `null`, this method creates a new context by calling the <xref:System.Web.DynamicData.MetaTable.CreateContext%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1224,7 +1224,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -1249,7 +1249,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the <xref:System.Data.Linq.Mapping.MetaModel?displayProperty=fullName> class overview.  
+ For more information, see the <xref:System.Data.Linq.Mapping.MetaModel?displayProperty=nameWithType> class overview.  
   
  ]]></format>
         </remarks>
@@ -1416,7 +1416,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify sort order by using the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute?displayProperty=fullName> attribute.  
+ You can specify sort order by using the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute?displayProperty=nameWithType> attribute.  
   
  ]]></format>
         </remarks>

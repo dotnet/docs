@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Constants (C# Programming Guide)
-Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the [const](../../../csharp/language-reference/keywords/const.md) modifier. Only the C# built-in types (excluding <xref:System.Object?displayProperty=fullName>) may be declared as `const`. For a list of the built-in types, see [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md). User-defined types, including classes, structs, and arrays, cannot be `const`. Use the [readonly](../../../csharp/language-reference/keywords/readonly.md) modifier to create a class, struct, or array that is initialized one time at runtime (for example in a constructor) and thereafter cannot be changed.  
+Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the [const](../../../csharp/language-reference/keywords/const.md) modifier. Only the C# built-in types (excluding <xref:System.Object?displayProperty=nameWithType>) may be declared as `const`. For a list of the built-in types, see [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md). User-defined types, including classes, structs, and arrays, cannot be `const`. Use the [readonly](../../../csharp/language-reference/keywords/readonly.md) modifier to create a class, struct, or array that is initialized one time at runtime (for example in a constructor) and thereafter cannot be changed.  
   
  C# does not support `const` methods, properties, or events.  
   

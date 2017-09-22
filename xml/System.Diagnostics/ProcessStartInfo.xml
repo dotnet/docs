@@ -664,7 +664,7 @@
  For more information about secure strings and an example of how to obtain a password to set this property, see the <xref:System.Security.SecureString> class.  
   
 > [!NOTE]
->  If you provide a value for the <xref:System.Diagnostics.ProcessStartInfo.Password%2A> property, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=fullName> method is called.  
+>  If you provide a value for the <xref:System.Diagnostics.ProcessStartInfo.Password%2A> property, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
@@ -1077,7 +1077,7 @@ p.WaitForExit();
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.ProcessStartInfo.WorkingDirectory%2A> property must be set if <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> and <xref:System.Diagnostics.ProcessStartInfo.Password%2A> are provided. If the property is not set, the default working directory is %SYSTEMROOT%\system32.  
   
- If the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=fullName> method is called.  
+ If the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> property must be `false`, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
@@ -1119,7 +1119,7 @@ p.WaitForExit();
       <Docs>
         <summary>Gets or sets a value indicating whether to use the operating system shell to start the process.</summary>
         <value>
-          <see langword="true" /> if the shell should be used when starting the process; <see langword="false" /> if the process should be created directly from the executable file. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the shell should be used when starting the process; <see langword="false" /> if the process should be created directly from the executable file. The default is <see langword="true" /> on .NET Framework apps and <see langword="false" /> on .NET Core apps.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1127,7 +1127,7 @@ p.WaitForExit();
  Setting this property to `false` enables you to redirect input, output, and error streams.  
   
 > [!NOTE]
->  <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> must be `false` if the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=fullName> method is called.  
+>  <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> must be `false` if the <xref:System.Diagnostics.ProcessStartInfo.UserName%2A> property is not `null` or an empty string, or an <xref:System.InvalidOperationException> will be thrown when the <xref:System.Diagnostics.Process.Start%28System.Diagnostics.ProcessStartInfo%29?displayProperty=nameWithType> method is called.  
   
  When you use the operating system shell to start processes, you can start any document (which is any registered file type associated with an executable that has a default open action) and perform operations on the file, such as printing, by using the <xref:System.Diagnostics.Process> object. When <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> is `false`, you can start only executables by using the <xref:System.Diagnostics.Process> object.  
   
@@ -1147,6 +1147,7 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">An attempt to set the value to <see langword="true" /> on Universal Windows Platform (UWP) apps occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Verb">

@@ -236,7 +236,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PageSettings> class measures <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=fullName> in hundredths of an inch, but the <xref:System.Windows.Forms.PageSetupDialog> allows users to set margins in inches or millimeters depending on the culture settings for the system running the application.  
+ The <xref:System.Drawing.Printing.PageSettings> class measures <xref:System.Drawing.Printing.PageSettings.Margins%2A?displayProperty=nameWithType> in hundredths of an inch, but the <xref:System.Windows.Forms.PageSetupDialog> allows users to set margins in inches or millimeters depending on the culture settings for the system running the application.  
   
  In the .NET Framework version 2.0, you should set this property to `true` if your application could be used in cultures that measure document margins in millimeters. If you are doing this conversion yourself, as was required in versions of the .NET Framework earlier than version 2.0, you should use the default value of `false`.  
   

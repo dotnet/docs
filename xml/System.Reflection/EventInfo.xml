@@ -57,7 +57,7 @@
   
  The event model works equally well for single-cast and multicast delegates. When the delegate's invoke method is called, only a single object will have a method called on it. A multicast modifier can be applied to a delegate declaration, which allows multiple methods to be called when the invoke method of the delegate is called.  
   
- Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=fullName> on `EventInfo` when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=fullName> to inherit custom attributes.  
+ Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=nameWithType> on `EventInfo` when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=nameWithType> to inherit custom attributes.  
   
    
   
@@ -155,7 +155,7 @@
 ## Examples  
  The following code example shows how to load an assembly, create an instance of a type from the assembly, create an event handler using a dynamic assembly, and hook up the dynamic event handler. All actions are performed using late binding.  
   
- The code example loads System.dll and creates an instance of the <xref:System.Timers.Timer?displayProperty=fullName> class. The example uses the <xref:System.Type.GetEvent%2A?displayProperty=fullName> method to get the <xref:System.Timers.Timer.Elapsed> event, and the <xref:System.Reflection.EventInfo.EventHandlerType%2A> property to get the delegate type for the event.  
+ The code example loads System.dll and creates an instance of the <xref:System.Timers.Timer?displayProperty=nameWithType> class. The example uses the <xref:System.Type.GetEvent%2A?displayProperty=nameWithType> method to get the <xref:System.Timers.Timer.Elapsed> event, and the <xref:System.Reflection.EventInfo.EventHandlerType%2A> property to get the delegate type for the event.  
   
  The code example gets a <xref:System.Reflection.MethodInfo> for the `Invoke` method of the delegate type, and from the <xref:System.Reflection.MethodInfo> obtains the signature of the delegate. The code example then creates a dynamic assembly with one module containing a single type named `Handler`, and gives the type a `static` method (`Shared` method in Visual Basic) named `DynamicHandler` that will be used to handle the event.  
   
@@ -878,7 +878,7 @@ remove_<EventName>(<EventHandlerType> handler)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=fullName> only when a given member is an event.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=nameWithType> only when a given member is an event.  
   
  ]]></format>
         </remarks>

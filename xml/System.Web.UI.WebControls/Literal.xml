@@ -42,7 +42,7 @@
   
 <a name="introduction"></a>   
 ## Introduction  
- Use the <xref:System.Web.UI.WebControls.Literal?displayProperty=fullName> control to reserve a location on the Web page to display text. The <xref:System.Web.UI.WebControls.Literal> control is similar to the <xref:System.Web.UI.WebControls.Label> control, except the <xref:System.Web.UI.WebControls.Literal> control does not allow you to apply a style to the displayed text. You can programmatically control the text displayed in the control by setting the <xref:System.Web.UI.WebControls.Literal.Text%2A> property.  
+ Use the <xref:System.Web.UI.WebControls.Literal?displayProperty=nameWithType> control to reserve a location on the Web page to display text. The <xref:System.Web.UI.WebControls.Literal> control is similar to the <xref:System.Web.UI.WebControls.Label> control, except the <xref:System.Web.UI.WebControls.Literal> control does not allow you to apply a style to the displayed text. You can programmatically control the text displayed in the control by setting the <xref:System.Web.UI.WebControls.Literal.Text%2A> property.  
   
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input.  

@@ -24,7 +24,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Writing Custom Attributes
-To design your own custom attributes, you do not need to master many new concepts. If you are familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are essentially traditional classes that derive directly or indirectly from <xref:System.Attribute?displayProperty=fullName>. Just like traditional classes, custom attributes contain methods that store and retrieve data.  
+To design your own custom attributes, you do not need to master many new concepts. If you are familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are essentially traditional classes that derive directly or indirectly from <xref:System.Attribute?displayProperty=nameWithType>. Just like traditional classes, custom attributes contain methods that store and retrieve data.  
   
  The primary steps to properly design custom attribute classes are as follows:  
   
@@ -46,7 +46,7 @@ To design your own custom attributes, you do not need to master many new concept
  [!code-csharp[Conceptual.Attributes.Usage#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#5)]
  [!code-vb[Conceptual.Attributes.Usage#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#5)]  
   
- The <xref:System.AttributeUsageAttribute?displayProperty=fullName> has three members that are important for the creation of custom attributes: [AttributeTargets](#cpconwritingcustomattributesanchor1), [Inherited](#cpconwritingcustomattributesanchor2), and [AllowMultiple](#cpconwritingcustomattributesanchor3).  
+ The <xref:System.AttributeUsageAttribute?displayProperty=nameWithType> has three members that are important for the creation of custom attributes: [AttributeTargets](#cpconwritingcustomattributesanchor1), [Inherited](#cpconwritingcustomattributesanchor2), and [AllowMultiple](#cpconwritingcustomattributesanchor3).  
   
 <a name="cpconwritingcustomattributesanchor1"></a>   
 ### AttributeTargets Member  
@@ -60,7 +60,7 @@ To design your own custom attributes, you do not need to master many new concept
   
 <a name="cpconwritingcustomattributesanchor2"></a>   
 ### Inherited Property  
- The <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=fullName> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a **true** (the default) or **false** flag. For example, in the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited%2A> value of **true**, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited%2A> value of **false**.  
+ The <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a **true** (the default) or **false** flag. For example, in the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited%2A> value of **true**, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited%2A> value of **false**.  
   
  [!code-cpp[Conceptual.Attributes.Usage#7](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#7)]
  [!code-csharp[Conceptual.Attributes.Usage#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#7)]
@@ -80,7 +80,7 @@ To design your own custom attributes, you do not need to master many new concept
   
 <a name="cpconwritingcustomattributesanchor3"></a>   
 ### AllowMultiple Property  
- The <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName> property indicates whether multiple instances of your attribute can exist on an element. If set to **true**, multiple instances are allowed; if set to **false** (the default), only one instance is allowed.  
+ The <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property indicates whether multiple instances of your attribute can exist on an element. If set to **true**, multiple instances are allowed; if set to **false** (the default), only one instance is allowed.  
   
  In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.AllowMultiple%2A> value of **false**, while `YourAttribute` has a value of **true**.  
   
@@ -155,6 +155,6 @@ To design your own custom attributes, you do not need to master many new concept
  The first example shows the attribute applied with only the required named parameters, while the second example shows the attribute applied with both the required and optional parameters.  
   
 ## See Also  
- <xref:System.Attribute?displayProperty=fullName>   
+ <xref:System.Attribute?displayProperty=nameWithType>   
  <xref:System.AttributeUsageAttribute>   
  [Attributes](../../../docs/standard/attributes/index.md)

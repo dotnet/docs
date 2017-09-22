@@ -241,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.CommandField.CausesValidation%2A> property to specify whether validation is performed when a button in a <xref:System.Web.UI.WebControls.CommandField> field is clicked. When this property is set to `true`, by default all validation controls on the page are validated. To limit validation to only a certain group of validation controls, create a validation group and then set the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to the validation group's name. For more information on validation groups, see <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A?displayProperty=fullName>.  
+ Use the <xref:System.Web.UI.WebControls.CommandField.CausesValidation%2A> property to specify whether validation is performed when a button in a <xref:System.Web.UI.WebControls.CommandField> field is clicked. When this property is set to `true`, by default all validation controls on the page are validated. To limit validation to only a certain group of validation controls, create a validation group and then set the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to the validation group's name. For more information on validation groups, see <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A?displayProperty=nameWithType>.  
   
    
   
@@ -280,7 +280,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CommandField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.CommandField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the method.  
+ The <xref:System.Web.UI.WebControls.CommandField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current <xref:System.Web.UI.WebControls.CommandField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the method.  
   
  ]]></format>
         </remarks>
@@ -306,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CommandField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to create an empty <xref:System.Web.UI.WebControls.CommandField> object to copy the properties of the current <xref:System.Web.UI.WebControls.CommandField> object to.  
+ The <xref:System.Web.UI.WebControls.CommandField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to create an empty <xref:System.Web.UI.WebControls.CommandField> object to copy the properties of the current <xref:System.Web.UI.WebControls.CommandField> object to.  
   
  ]]></format>
         </remarks>

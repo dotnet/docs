@@ -43,7 +43,7 @@ Provides properties and methods for manipulating the registry.
  For more information, see [Reading from and Writing to the Registry](../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md).  
   
 > [!NOTE]
->  You can also manipulate the registry by using methods of the <xref:Microsoft.Win32.Registry?displayProperty=fullName> class.  
+>  You can also manipulate the registry by using methods of the <xref:Microsoft.Win32.Registry?displayProperty=nameWithType> class.  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.MyServices>  

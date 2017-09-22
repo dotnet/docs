@@ -40,7 +40,7 @@ The <xref:System.Net> classes support a variety of client authentication mechani
   
  The **CredentialCache** class stores a collection of credentials for various Web resources. When the <xref:System.Net.CredentialCache.GetCredential%2A> method is called, **CredentialCache** returns the proper set of credentials, as determined by the URI of the Web resource and the requested authentication scheme. Applications that use a variety of Internet resources with different authentication schemes benefit from using the **CredentialCache** class, since it stores all the credentials and provides them as requested.  
   
- When an Internet resource requests authentication, the <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName> method sends the <xref:System.Net.WebRequest> to the **AuthenticationManager** along with the request for credentials. The request is then authenticated according to the following process:  
+ When an Internet resource requests authentication, the <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=nameWithType> method sends the <xref:System.Net.WebRequest> to the **AuthenticationManager** along with the request for credentials. The request is then authenticated according to the following process:  
   
 1.  The **AuthenticationManager** calls the <xref:System.Net.IAuthenticationModule.Authenticate%2A> method on each of the registered authentication modules in the order they were registered. The **AuthenticationManager** uses the first module that does not return **null** to carry out the authentication process. The details of the process vary depending on the type of authentication module involved.  
   

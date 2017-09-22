@@ -147,7 +147,7 @@
 ## Remarks  
  The default implementation returns `false` to indicate that the key identifier clause cannot be read.  
   
- A derived class checks the element that the reader is referring to in order to determine whether the instance can deserialize a key identifier clause. This is typically accomplished through a call to the <xref:System.Xml.XmlReader.IsStartElement%2A?displayProperty=fullName> method with the appropriate element and namespace strings specified. If you override <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadKeyIdentifierClause%2A>, you must also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadKeyIdentifierClause%2A> method to provide the logic to deserialize the key identifier clause.  
+ A derived class checks the element that the reader is referring to in order to determine whether the instance can deserialize a key identifier clause. This is typically accomplished through a call to the <xref:System.Xml.XmlReader.IsStartElement%2A?displayProperty=nameWithType> method with the appropriate element and namespace strings specified. If you override <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadKeyIdentifierClause%2A>, you must also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadKeyIdentifierClause%2A> method to provide the logic to deserialize the key identifier clause.  
   
  ]]></format>
         </remarks>
@@ -179,7 +179,7 @@
 ## Remarks  
  The default implementation always returns `false`.  
   
- If you override this method, you must also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=fullName> method to provide the logic to deserialize the token.  
+ If you override this method, you must also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=nameWithType> method to provide the logic to deserialize the token.  
   
  ]]></format>
         </remarks>
@@ -211,7 +211,7 @@
 ## Remarks  
  The default implementation always returns `false`.  
   
- A derived class checks the element that the reader is referring to in order to determine whether the instance can deserialize a security token. This is typically accomplished through a call to the <xref:System.Xml.XmlReader.IsStartElement%2A> method with the appropriate element and namespace strings specified. If you override <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadKeyIdentifierClause%2A>, you must also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=fullName> method or the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=fullName> method to provide the logic to deserialize the key identifier clause.  
+ A derived class checks the element that the reader is referring to in order to determine whether the instance can deserialize a security token. This is typically accomplished through a call to the <xref:System.Xml.XmlReader.IsStartElement%2A> method with the appropriate element and namespace strings specified. If you override <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadKeyIdentifierClause%2A>, you must also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=nameWithType> method or the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=nameWithType> method to provide the logic to deserialize the key identifier clause.  
   
    
   
@@ -343,7 +343,7 @@
 ## Remarks  
  The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property is typically set by the configuration infrastructure from the [&lt;securityTokenHandlerConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element in the configuration file during application start up.  
   
- In derived classes, you use the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property to access configuration settings; for example, the issuer name registry to use in the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method can be accessed from the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry%2A?displayProperty=fullName> property of the configuration object.  
+ In derived classes, you use the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property to access configuration settings; for example, the issuer name registry to use in the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method can be accessed from the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry%2A?displayProperty=nameWithType> property of the configuration object.  
   
  ]]></format>
         </remarks>
@@ -509,7 +509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Type> of the token processed by the current instance is accessed through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.TokenType%2A> property. The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.GetTokenTypeIdentifiers%2A> method returns the set of acceptable identifiers that can be used in messages to refer to the token type. For example, the URI value used in the `<wst:TokenType>` element under the `<wst:RequestSecurityToken>` element to request a specific kind of token (represented by the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.TokenType%2A?displayProperty=fullName> property in the object model).  
+ The <xref:System.Type> of the token processed by the current instance is accessed through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.TokenType%2A> property. The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.GetTokenTypeIdentifiers%2A> method returns the set of acceptable identifiers that can be used in messages to refer to the token type. For example, the URI value used in the `<wst:TokenType>` element under the `<wst:RequestSecurityToken>` element to request a specific kind of token (represented by the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.TokenType%2A?displayProperty=nameWithType> property in the object model).  
   
    
   
@@ -578,7 +578,7 @@
 ## Remarks  
  By default this method throws a <xref:System.NotImplementedException> exception.  
   
- Override this method to provide the logic to deserialize a key identifier clause from XML. If you override this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadKeyIdentifierClause%2A?displayProperty=fullName> method.  
+ Override this method to provide the logic to deserialize a key identifier clause from XML. If you override this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadKeyIdentifierClause%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -613,7 +613,7 @@
   
  By default this method throws a <xref:System.NotImplementedException> exception.  
   
- Override this method to provide functionality that can deserialize a security token from a string. If you override, this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A?displayProperty=fullName> method.  
+ Override this method to provide functionality that can deserialize a security token from a string. If you override, this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -648,7 +648,7 @@
   
  By default this method throws a <xref:System.NotImplementedException> exception.  
   
- Override this method to provide the logic to deserialize a security token from XML. If you override this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A?displayProperty=fullName> method. Typically, in derived classes, if the method cannot deserialize the token from the referenced XML, it throws an <xref:System.Xml.XmlException>.  
+ Override this method to provide the logic to deserialize a security token from XML. If you override this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A?displayProperty=nameWithType> method. Typically, in derived classes, if the method cannot deserialize the token from the referenced XML, it throws an <xref:System.Xml.XmlException>.  
   
    
   
@@ -692,9 +692,9 @@
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
   
- The default implementation ignores the `tokenResolver` parameter and delegates the call to the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=fullName> method.  
+ The default implementation ignores the `tokenResolver` parameter and delegates the call to the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A?displayProperty=nameWithType> method.  
   
- Override this method to provide the logic to deserialize a security token from XML. If you override this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A?displayProperty=fullName> method. Typically, in derived classes, if the method cannot deserialize the token from the referenced XML, it throws an <xref:System.Xml.XmlException>.  
+ Override this method to provide the logic to deserialize a security token from XML. If you override this method, you should also override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A?displayProperty=nameWithType> method. Typically, in derived classes, if the method cannot deserialize the token from the referenced XML, it throws an <xref:System.Xml.XmlException>.  
   
  ]]></format>
         </remarks>
@@ -817,9 +817,9 @@
   
  The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method is called by the infrastructure to validate and extract the claims from the deserialized security token. These claims are returned in the collection of <xref:System.Security.Claims.ClaimsIdentity> objects returned by the method. In the typical case, this collection will contain a single identity.  
   
- In derived classes, validation typically includes validating the intended audience specified in the token against the audience URIs specified in the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.AudienceRestriction%2A?displayProperty=fullName> property of the token handler configuration object specified on the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. These URIs are typically set in the configuration file under the [&lt;audienceUris&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/audienceuris.md) element. If the audience cannot be validated, an <xref:System.IdentityModel.Tokens.AudienceUriValidationFailedException> exception should be thrown.  
+ In derived classes, validation typically includes validating the intended audience specified in the token against the audience URIs specified in the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.AudienceRestriction%2A?displayProperty=nameWithType> property of the token handler configuration object specified on the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. These URIs are typically set in the configuration file under the [&lt;audienceUris&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/audienceuris.md) element. If the audience cannot be validated, an <xref:System.IdentityModel.Tokens.AudienceUriValidationFailedException> exception should be thrown.  
   
- When processing the token, the issuer is typically validated by passing the issuer token to one of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> methods on the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> object that is configured for the handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. The issuer name registry is typically configured through the [&lt;issuerNameRegistry&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element in the configuration file. The <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns the name of the issuer. This name should be used to set the <xref:System.Security.Claims.Claim.Issuer%2A?displayProperty=fullName> property in claims contained in the token. If the issuer name registry does not contain an entry for the issuer token, <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns `null`. In this case a <xref:System.IdentityModel.Tokens.SecurityTokenException> is typically thrown in derived classes, but this behavior is up to the designer of the class.  
+ When processing the token, the issuer is typically validated by passing the issuer token to one of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> methods on the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> object that is configured for the handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. The issuer name registry is typically configured through the [&lt;issuerNameRegistry&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element in the configuration file. The <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns the name of the issuer. This name should be used to set the <xref:System.Security.Claims.Claim.Issuer%2A?displayProperty=nameWithType> property in claims contained in the token. If the issuer name registry does not contain an entry for the issuer token, <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns `null`. In this case a <xref:System.IdentityModel.Tokens.SecurityTokenException> is typically thrown in derived classes, but this behavior is up to the designer of the class.  
   
    
   

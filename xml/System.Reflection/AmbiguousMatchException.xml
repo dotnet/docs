@@ -39,7 +39,7 @@
 ## Remarks  
  `AmbiguousMatchException` uses the HRESULT COR_E_AMBIGUOUSMATCH which has the value 0x8000211D.  
   
- An `AmbiguousMatchException` is thrown when a member is invoked late-bound and multiple overloads satisfy the binding criteria, or when more than one member matches the binding criteria passed to a reflection method that can return only a single result (for example, <xref:System.Type.GetMethod%2A?displayProperty=fullName> or <xref:System.Type.GetProperty%2A?displayProperty=fullName>).  
+ An `AmbiguousMatchException` is thrown when a member is invoked late-bound and multiple overloads satisfy the binding criteria, or when more than one member matches the binding criteria passed to a reflection method that can return only a single result (for example, <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> or <xref:System.Type.GetProperty%2A?displayProperty=nameWithType>).  
   
  ]]></format>
     </remarks>

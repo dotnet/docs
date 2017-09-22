@@ -87,7 +87,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 -   If there was an error during execution of the asynchronous operation, the results should not be accessible. Ensure that accessing any property in the <xref:System.ComponentModel.AsyncCompletedEventArgs> when <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> is not `null` raises the exception referenced by <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A>. The <xref:System.ComponentModel.AsyncCompletedEventArgs> class provides the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A> method for this purpose.  
   
--   Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A?displayProperty=fullName> method to perform this verification.  
+-   Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A?displayProperty=nameWithType> method to perform this verification.  
   
 ### Progress Reporting  
   
@@ -111,7 +111,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 -   In the case of cancellation, set the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag in the <xref:System.ComponentModel.AsyncCompletedEventArgs> object.  
   
--   Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A?displayProperty=fullName> method to perform this verification.  
+-   Ensure that any attempt to access the result raises an <xref:System.InvalidOperationException> stating that the operation was canceled. Use the <xref:System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary%2A?displayProperty=nameWithType> method to perform this verification.  
   
 -   Ensure that calls to a cancellation method always return successfully, and never raise an exception. In general, a client is not notified as to whether an operation is truly cancelable at any given time, and is not notified as to whether a previously issued cancellation has succeeded. However, the application will always be given notification when a cancellation succeeded, because the application takes part in the completion status.  
   
@@ -119,7 +119,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 ### Errors and Exceptions  
   
--   Catch any exceptions that occur in the asynchronous operation and set the value of the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=fullName> property to that exception.  
+-   Catch any exceptions that occur in the asynchronous operation and set the value of the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> property to that exception.  
   
 ### Threading and Contexts  
  For correct operation of your class, it is critical that the client's event handlers are invoked on the proper thread or context for the given application model, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] and Windows Forms applications. Two important helper classes are provided to ensure that your asynchronous class behaves correctly under any application model: <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager>.  
@@ -129,7 +129,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
  To report progress, incremental results, and completion to the client, call the <xref:System.ComponentModel.AsyncOperation.Post%2A> and <xref:System.ComponentModel.AsyncOperation.OperationCompleted%2A> methods on the <xref:System.ComponentModel.AsyncOperation>. <xref:System.ComponentModel.AsyncOperation> is responsible for marshaling calls to the client's event handlers to the proper thread or context.  
   
 > [!NOTE]
->  You can circumvent these rules if you explicitly want to go against the policy of the application model, but still benefit from the other advantages of using the Event-based Asynchronous Pattern. For example, you may want a class operating in Windows Forms to be free threaded. You can create a free threaded class, as long as developers understand the implied restrictions. Console applications do not synchronize the execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls. This can cause `ProgressChanged` events to be raised out of order. If you wish to have serialized execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls, implement and install a <xref:System.Threading.SynchronizationContext?displayProperty=fullName> class.  
+>  You can circumvent these rules if you explicitly want to go against the policy of the application model, but still benefit from the other advantages of using the Event-based Asynchronous Pattern. For example, you may want a class operating in Windows Forms to be free threaded. You can create a free threaded class, as long as developers understand the implied restrictions. Console applications do not synchronize the execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls. This can cause `ProgressChanged` events to be raised out of order. If you wish to have serialized execution of <xref:System.ComponentModel.AsyncOperation.Post%2A> calls, implement and install a <xref:System.Threading.SynchronizationContext?displayProperty=nameWithType> class.  
   
  For more information about using <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager> to enable your asynchronous operations, see [Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
   

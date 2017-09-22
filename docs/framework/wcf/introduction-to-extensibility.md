@@ -54,9 +54,9 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] application model is de
  To create channels that support custom transports or protocol functionality, see [Extending the Channel Layer](../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
   
 ### Extending the Service Hosting System  
- To modify the service-wide application model, you must extend <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName> class. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Extending ServiceHost and the Service Model Layer](../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+ To modify the service-wide application model, you must extend <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType> class. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Extending ServiceHost and the Service Model Layer](../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
   
- To modify the relationship between the hosting application domain and the service host, you must extend the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=fullName> class. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Extending Hosting Using ServiceHostFactory](../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md).  
+ To modify the relationship between the hosting application domain and the service host, you must extend the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> class. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Extending Hosting Using ServiceHostFactory](../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md).  
   
 ## See Also  
  [Extending WCF](../../../docs/framework/wcf/extending/extending-wcf.md)

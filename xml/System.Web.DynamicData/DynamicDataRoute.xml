@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of possible action names, see <xref:System.Web.DynamicData.PageAction?displayProperty=fullName>. If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the route will apply to all actions.  
+ For a list of possible action names, see <xref:System.Web.DynamicData.PageAction?displayProperty=nameWithType>. If you do not set this property when you create an instance of <xref:System.Web.DynamicData.DynamicDataRoute>, the route will apply to all actions.  
   
  ]]></format>
         </remarks>
@@ -223,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.DynamicDataRoute.RouteHandler%2A> property is identical to the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=fullName> property. It is provided as a strongly typed version of the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=fullName> property for coding convenience.  
+ The <xref:System.Web.DynamicData.DynamicDataRoute.RouteHandler%2A> property is identical to the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=nameWithType> property. It is provided as a strongly typed version of the <xref:System.Web.Routing.Route.RouteHandler%2A?displayProperty=nameWithType> property for coding convenience.  
   
  ]]></format>
         </remarks>

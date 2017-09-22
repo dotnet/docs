@@ -80,7 +80,7 @@ public static IEnumerable Enumerate()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the returned type is <xref:System.Object?displayProperty=fullName>, then the output should be treated as a value of type <xref:System.Object?displayProperty=fullName>.  
+ If the returned type is <xref:System.Object?displayProperty=nameWithType>, then the output should be treated as a value of type <xref:System.Object?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

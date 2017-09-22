@@ -962,7 +962,7 @@ namespace SampleRecognition
 ## Remarks  
  Each speech recognizer has an algorithm to distinguish between silence and speech. The recognizer classifies as background noise any non-silence input that does not match the initial rule of any of the recognizer's loaded and enabled speech recognition grammars. If the recognizer receives only background noise and silence within the babble timeout interval, then the recognizer finalizes that recognition operation.  
   
--   For asynchronous recognition operations, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout%2A?displayProperty=fullName> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=fullName> property is `null`.  
+-   For asynchronous recognition operations, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout%2A?displayProperty=nameWithType> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=nameWithType> property is `null`.  
   
 -   For synchronous recognition operations and emulation, the recognizer returns `null`, instead of a valid <xref:System.Speech.Recognition.RecognitionResult>.  
   
@@ -2088,7 +2088,7 @@ private static void ListGrammars(SpeechRecognitionEngine recognizer)
 ## Remarks  
  Each speech recognizer has an algorithm to distinguish between silence and speech. If the recognizer input is silence during the initial silence timeout period, then the recognizer finalizes that recognition operation.  
   
--   For asynchronous recognition operations and emulation, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout%2A?displayProperty=fullName> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=fullName> property is `null`.  
+-   For asynchronous recognition operations and emulation, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout%2A?displayProperty=nameWithType> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=nameWithType> property is `null`.  
   
 -   For synchronous recognition operations and emulation, the recognizer returns `null`, instead of a valid <xref:System.Speech.Recognition.RecognitionResult>.  
   

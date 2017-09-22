@@ -56,7 +56,7 @@ This topic shows how to use              <xref:System.Windows.Media.Animation.St
   
 <a name="applyanimationswithastoryboard"></a>   
 ## How to Apply Animations with a Storyboard  
- To use a <xref:System.Windows.Media.Animation.Storyboard> to organize and apply animations, you add the animations as child timelines of the <xref:System.Windows.Media.Animation.Storyboard>. The <xref:System.Windows.Media.Animation.Storyboard> class provides the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=fullName> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A?displayProperty=fullName> attached properties. You set these properties on an animation to specify its target object and property.  
+ To use a <xref:System.Windows.Media.Animation.Storyboard> to organize and apply animations, you add the animations as child timelines of the <xref:System.Windows.Media.Animation.Storyboard>. The <xref:System.Windows.Media.Animation.Storyboard> class provides the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=nameWithType> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A?displayProperty=nameWithType> attached properties. You set these properties on an animation to specify its target object and property.  
   
  To apply animations to their targets, you begin the <xref:System.Windows.Media.Animation.Storyboard> using a trigger action or a method. In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use a <xref:System.Windows.Media.Animation.BeginStoryboard> object with an <xref:System.Windows.EventTrigger>, <xref:System.Windows.Trigger>, or <xref:System.Windows.DataTrigger>. In code, you can also use the  <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method.  
   
@@ -79,7 +79,7 @@ This topic shows how to use              <xref:System.Windows.Media.Animation.St
   
 <a name="targetingelementsandfreezables"></a>   
 ## Targeting Framework Elements, Framework Content Elements, and Freezables  
- The previous section mentioned that, for an animation to find its target, it must know the target's name and the property to animate. Specifying the property to animate is straight forward: simply set <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A?displayProperty=fullName> with the name of the property to animate.  You specify the name of the object whose property you want to animate by setting the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=fullName> property on the animation.  
+ The previous section mentioned that, for an animation to find its target, it must know the target's name and the property to animate. Specifying the property to animate is straight forward: simply set <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A?displayProperty=nameWithType> with the name of the property to animate.  You specify the name of the object whose property you want to animate by setting the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=nameWithType> property on the animation.  
   
  For the <xref:System.Windows.Setter.TargetName%2A> property to work, the targeted object must have a name. Assigning a name to a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is different than assigning a name to a <xref:System.Windows.Freezable> object.  
   

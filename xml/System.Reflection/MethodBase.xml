@@ -228,7 +228,7 @@
   
  Similarly, the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A> property parameter returns `true` for any constructor in an open type, even though constructors cannot have type parameters of their own.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=fullName> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=fullName> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=nameWithType> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -304,7 +304,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the currently executing method is defined on a generic type, the <xref:System.Reflection.MethodInfo> that is returned by <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> is obtained from the generic type definition (that is, <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A?displayProperty=fullName> returns `true`). Therefore, it does not reflect the type arguments that were used when the method was called. For example, if a method `M()` is defined on a generic type `C<T>` (`C(Of T)` in Visual Basic), and <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> is called from `C<string>.M()`, then <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> returns `C<T>.M()` (`C(Of T).M()` in Visual Basic).  
+ If the currently executing method is defined on a generic type, the <xref:System.Reflection.MethodInfo> that is returned by <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> is obtained from the generic type definition (that is, <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A?displayProperty=nameWithType> returns `true`). Therefore, it does not reflect the type arguments that were used when the method was called. For example, if a method `M()` is defined on a generic type `C<T>` (`C(Of T)` in Visual Basic), and <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> is called from `C<string>.M()`, then <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> returns `C<T>.M()` (`C(Of T).M()` in Visual Basic).  
   
  If the currently executing method is a generic method, <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> returns the generic method definition. If the generic method is defined on a generic type, the <xref:System.Reflection.MethodInfo> is obtained from the generic type definition.  
   
@@ -372,7 +372,7 @@
   
  Generic constructors are not supported in the .NET Framework version 2.0. This property throws <xref:System.NotSupportedException> if not overridden in a derived class, so an exception is thrown if the current instance is of type <xref:System.Reflection.ConstructorInfo>.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=fullName> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=fullName> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=nameWithType> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -452,12 +452,12 @@
    
   
 ## Examples  
- The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method.  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method.  
   
  The <xref:System.Reflection.MethodBody.LocalVariables%2A> property is used to obtain a list of <xref:System.Reflection.LocalVariableInfo> objects and display their types and index order. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of exception-handling clauses.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=fullName> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  [!code-cpp[MethodBody#1](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#1)]
  [!code-csharp[MethodBody#1](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#1)]
@@ -713,7 +713,7 @@
 ## Remarks  
  This is a convenience method that calls the <xref:System.Reflection.MethodBase.Invoke%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method overload, passing <xref:System.Reflection.BindingFlags.Default> for `invokeAttr` and `null` for `binder` and `culture`.  
   
- If the invoked method throws an exception, the <xref:System.Exception.GetBaseException%2A?displayProperty=fullName> method returns the exception.  
+ If the invoked method throws an exception, the <xref:System.Exception.GetBaseException%2A?displayProperty=nameWithType> method returns the exception.  
   
  To invoke a static method using its <xref:System.Reflection.MethodInfo> object, pass `null` for `obj`.  
   
@@ -721,7 +721,7 @@
 >  If this method overload is used to invoke an instance constructor, the object supplied for `obj` is reinitialized; that is, all instance initializers are executed. The return value is `null`. If a class constructor is invoked, the class is reinitialized; that is, all class initializers are executed. The return value is `null`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -840,14 +840,14 @@
  If the invoked method throws an exception, `TargetInvocationException.GetException` returns the exception. This implementation throws a `NotSupportedException`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
 ## Examples  
- The following example demonstrates all members of the <xref:System.Reflection.Binder?displayProperty=fullName> class using an overload of <xref:System.Type.InvokeMember%2A?displayProperty=fullName>. The private method `CanConvertFrom` finds compatible types for a given type. For another example of invoking members in a custom binding scenario, see [Dynamically Loading and Using Types](~/docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
+ The following example demonstrates all members of the <xref:System.Reflection.Binder?displayProperty=nameWithType> class using an overload of <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>. The private method `CanConvertFrom` finds compatible types for a given type. For another example of invoking members in a custom binding scenario, see [Dynamically Loading and Using Types](~/docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
   
  [!code-cpp[Binder_1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Binder_1/CPP/binder.cpp#1)]
  [!code-csharp[Binder_1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Binder_1/CS/binder.cs#1)]
@@ -961,7 +961,7 @@
 ## Remarks  
  The actual visibility of a method is limited by the visibility of its type. The <xref:System.Reflection.MethodBase.IsAssembly%2A> property might be `true` for a method, but if it is a method of a private nested type then the method is not visible outside the containing type.  
   
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=fullName> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
   
    
   
@@ -969,7 +969,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -1021,7 +1021,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Reflection.MethodBase.IsConstructor%2A> property returns `false` for a <xref:System.Reflection.Emit.ConstructorBuilder> object in a dynamic type, unless the <xref:System.Reflection.MethodAttributes?displayProperty=fullName> flag was included in the `attributes` parameter when the constructor was defined. Omitting the <xref:System.Reflection.MethodAttributes.RTSpecialName> flag does not affect the correctness of the emitted constructor.  
+>  The <xref:System.Reflection.MethodBase.IsConstructor%2A> property returns `false` for a <xref:System.Reflection.Emit.ConstructorBuilder> object in a dynamic type, unless the <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> flag was included in the `attributes` parameter when the constructor was defined. Omitting the <xref:System.Reflection.MethodAttributes.RTSpecialName> flag does not affect the correctness of the emitted constructor.  
   
  ]]></format>
         </remarks>
@@ -1062,7 +1062,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=fullName> if the only visibility modifier is `protected`. This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the only visibility modifier is `protected`. This property is `false` for methods that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property to identify such methods.  
   
    
   
@@ -1070,7 +1070,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -1115,7 +1115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=fullName> if the visibility modifier is `protected private` in C++. Methods with this visibility cannot be defined in Visual Basic or C#.  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the visibility modifier is `protected private` in C++. Methods with this visibility cannot be defined in Visual Basic or C#.  
   
    
   
@@ -1123,7 +1123,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -1168,11 +1168,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a type member has <xref:System.Reflection.MethodAttributes?displayProperty=fullName> visibility, it can be called from any member in a derived class or any member in the same assembly, but not from any other type.  
+ If a type member has <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility, it can be called from any member in a derived class or any member in the same assembly, but not from any other type.  
   
  The actual visibility of a method is limited by the visibility of its type. The <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A> property might be `true` for a method, but if it is a method of a private nested type then the method is not visible outside the containing type.  
   
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=fullName> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
   
    
   
@@ -1180,7 +1180,7 @@
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
@@ -1286,7 +1286,7 @@
 > [!NOTE]
 >  Generics are not supported by default; this property returns `false` if not overridden in a derived class. Generic constructors are not supported in the .NET Framework version 2.0, so this property returns `false` if the current instance is of type <xref:System.Reflection.ConstructorInfo>.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=fullName> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=fullName> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=nameWithType> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1333,16 +1333,16 @@
   
 -   For each <xref:System.Type> object in the array returned by the <xref:System.Reflection.MethodBase.GetGenericArguments%2A> method:  
   
-    -   The <xref:System.Type.IsGenericParameter%2A?displayProperty=fullName> property is `true`.  
+    -   The <xref:System.Type.IsGenericParameter%2A?displayProperty=nameWithType> property is `true`.  
   
-    -   The <xref:System.Type.DeclaringMethod%2A?displayProperty=fullName> property returns the current instance.  
+    -   The <xref:System.Type.DeclaringMethod%2A?displayProperty=nameWithType> property returns the current instance.  
   
-    -   The <xref:System.Type.GenericParameterPosition%2A?displayProperty=fullName> property is the same as the position of the <xref:System.Type> object in the array.  
+    -   The <xref:System.Type.GenericParameterPosition%2A?displayProperty=nameWithType> property is the same as the position of the <xref:System.Type> object in the array.  
   
 > [!NOTE]
 >  Generics are not supported by default; this property returns `false` if not overridden in a derived class. Generic constructors are not supported in the .NET Framework version 2.0, so this property returns `false` if the current instance is of type <xref:System.Reflection.ConstructorInfo>.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=fullName> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=fullName> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A?displayProperty=nameWithType> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1532,7 +1532,7 @@
  Using these properties is much simpler than examining the security annotations of an assembly and its types and members, checking the current trust level, and attempting to duplicate the runtime's rules.  
   
 > [!IMPORTANT]
->  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
+>  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
  For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
@@ -1580,7 +1580,7 @@
  Using these properties is much simpler than examining the security annotations of an assembly and its types and members, checking the current trust level, and attempting to duplicate the runtime's rules.  
   
 > [!IMPORTANT]
->  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
+>  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
  For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
@@ -1622,7 +1622,7 @@
  The <xref:System.Reflection.MethodBase.IsSecurityCritical%2A>, <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A>, and <xref:System.Reflection.MethodBase.IsSecurityTransparent%2A> properties report the transparency level of the method or constructor at its current trust level, as determined by the common language runtime (CLR). Using these properties is much simpler than examining the security annotations of an assembly and its types and members, checking the current trust level, and attempting to duplicate the runtime's rules.  
   
 > [!IMPORTANT]
->  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
+>  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
  For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
@@ -1772,7 +1772,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
   
  If `IsVirtual` is `false` or `IsFinal` is `true`, then the method cannot be overridden.  
   
- You can determine whether the current method overrides a method in a base class by calling the <xref:System.Reflection.MethodInfo.GetBaseDefinition%2A?displayProperty=fullName> method. The following example implements an `IsOverride` method that does this.  
+ You can determine whether the current method overrides a method in a base class by calling the <xref:System.Reflection.MethodInfo.GetBaseDefinition%2A?displayProperty=nameWithType> method. The following example implements an `IsOverride` method that does this.  
   
  [!code-csharp[system.reflection.methodinfo.getbasedefinition#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.methodinfo.getbasedefinition/cs/IsOverride1.cs#2)]
  [!code-vb[system.reflection.methodinfo.getbasedefinition#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.methodinfo.getbasedefinition/vb/IsOverride1.vb#2)]  

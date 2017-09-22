@@ -29,7 +29,7 @@ To parallelize an operation on a data source, one of the essential steps is to *
  The TPL partitioners also support a dynamic number of partitions. This means they can create partitions on-the-fly, for example, when the <xref:System.Threading.Tasks.Parallel.ForEach%2A> loop spawns a new task. This feature enables the partitioner to scale together with the loop itself. Dynamic partitioners are also inherently load-balancing. When you create a custom partitioner, you must support dynamic partitioning to be consumable from a <xref:System.Threading.Tasks.Parallel.ForEach%2A> loop.  
   
 ### Configuring Load Balancing Partitioners for PLINQ  
- Some overloads of the <xref:System.Collections.Concurrent.Partitioner.Create%2A?displayProperty=fullName> method let you create a partitioner for an array or <xref:System.Collections.IList> source and specify whether it should attempt to balance the workload among the threads. When the partitioner is configured to load-balance, chunk partitioning is used, and the elements are handed off to each partition in small chunks as they are requested. This approach helps ensure that all partitions have elements to process until the entire loop or query is completed. An additional overload can be used to provide load-balancing partitioning of any <xref:System.Collections.IEnumerable> source.  
+ Some overloads of the <xref:System.Collections.Concurrent.Partitioner.Create%2A?displayProperty=nameWithType> method let you create a partitioner for an array or <xref:System.Collections.IList> source and specify whether it should attempt to balance the workload among the threads. When the partitioner is configured to load-balance, chunk partitioning is used, and the elements are handed off to each partition in small chunks as they are requested. This approach helps ensure that all partitions have elements to process until the entire loop or query is completed. An additional overload can be used to provide load-balancing partitioning of any <xref:System.Collections.IEnumerable> source.  
   
  In general, load balancing requires the partitions to request elements relatively frequently from the partitioner. By contrast, a partitioner that does static partitioning can assign the elements to each partitioner all at once by using either range or chunk partitioning. This requires less overhead than load balancing, but it might take longer to execute if one thread ends up with significantly more work than the others. By default when it is passed an IList or an array, PLINQ always uses range partitioning without load balancing. To enable load balancing for PLINQ, use the `Partitioner.Create` method, as shown in the following example.  
   
@@ -63,7 +63,7 @@ To parallelize an operation on a data source, one of the essential steps is to *
 ## Custom Partitioners  
  In some scenarios, it might be worthwhile or even required to implement your own partitioner. For example, you might have a custom collection class that you can partition more efficiently than the default partitioners can, based on your knowledge of the internal structure of the class. Or, you may want to create range partitions of varying sizes based on your knowledge of how long it will take to process elements at different locations in the source collection.  
   
- To create a basic custom partitioner, derive a class from <xref:System.Collections.Concurrent.Partitioner%601?displayProperty=fullName> and override the virtual methods, as described in the following table.  
+ To create a basic custom partitioner, derive a class from <xref:System.Collections.Concurrent.Partitioner%601?displayProperty=nameWithType> and override the virtual methods, as described in the following table.  
   
 |||  
 |-|-|  
@@ -71,7 +71,7 @@ To parallelize an operation on a data source, one of the essential steps is to *
 |<xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A>|Return `true` if you implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, otherwise, `false`.|  
 |<xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>|If <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> is `true`, this method can optionally be called instead of <xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A>.|  
   
- If the results must be sortable or you require indexed access into the elements, then derive from <xref:System.Collections.Concurrent.OrderablePartitioner%601?displayProperty=fullName> and override its virtual methods as described in the following table.  
+ If the results must be sortable or you require indexed access into the elements, then derive from <xref:System.Collections.Concurrent.OrderablePartitioner%601?displayProperty=nameWithType> and override its virtual methods as described in the following table.  
   
 |||  
 |-|-|  
@@ -85,14 +85,14 @@ To parallelize an operation on a data source, one of the essential steps is to *
 |Method/Property|IList / Array without Load Balancing|IList / Array with Load Balancing|IEnumerable|  
 |----------------------|-------------------------------------------|----------------------------------------|-----------------|  
 |<xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderablePartitions%2A>|Uses range partitioning|Uses chunk partitioning optimized for Lists for the partitionCount specified|Uses chunk partitioning by creating a static number of partitions.|  
-|<xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A?displayProperty=fullName>|Throws not-supported exception|Uses chunk partitioning optimized for Lists and dynamic partitions|Uses chunk partitioning by creating a dynamic number of partitions.|  
+|<xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A?displayProperty=nameWithType>|Throws not-supported exception|Uses chunk partitioning optimized for Lists and dynamic partitions|Uses chunk partitioning by creating a dynamic number of partitions.|  
 |<xref:System.Collections.Concurrent.OrderablePartitioner%601.KeysOrderedInEachPartition%2A>|Returns `true`|Returns `true`|Returns `true`|  
 |<xref:System.Collections.Concurrent.OrderablePartitioner%601.KeysOrderedAcrossPartitions%2A>|Returns `true`|Returns `false`|Returns `false`|  
 |<xref:System.Collections.Concurrent.OrderablePartitioner%601.KeysNormalized%2A>|Returns `true`|Returns `true`|Returns `true`|  
 |<xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A>|Returns `false`|Returns `true`|Returns `true`|  
   
 ### Dynamic Partitions  
- If you intend the partitioner to be used in a <xref:System.Threading.Tasks.Parallel.ForEach%2A> method, you must be able to return a dynamic number of partitions. This means that the partitioner can supply an enumerator for a new partition on-demand at any time during loop execution. Basically, whenever the loop adds a new parallel task, it requests a new partition for that task. If you require the data to be orderable, then derive from <xref:System.Collections.Concurrent.OrderablePartitioner%601?displayProperty=fullName> so that each item in each partition is assigned a unique index.  
+ If you intend the partitioner to be used in a <xref:System.Threading.Tasks.Parallel.ForEach%2A> method, you must be able to return a dynamic number of partitions. This means that the partitioner can supply an enumerator for a new partition on-demand at any time during loop execution. Basically, whenever the loop adds a new parallel task, it requests a new partition for that task. If you require the data to be orderable, then derive from <xref:System.Collections.Concurrent.OrderablePartitioner%601?displayProperty=nameWithType> so that each item in each partition is assigned a unique index.  
   
  For more information, and an example, see [How to: Implement Dynamic Partitions](../../../docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   

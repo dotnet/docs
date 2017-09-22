@@ -24,9 +24,9 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Performing Culture-Insensitive String Operations in Collections
-There are classes and members in the <xref:System.Collections> namespace that provide culture-sensitive behavior by default. The default constructors for the <xref:System.Collections.CaseInsensitiveComparer> and <xref:System.Collections.CaseInsensitiveHashCodeProvider> classes initialize a new instance using the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> property. All overloads of the <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=fullName> method create a new instance of the <xref:System.Collections.Hashtable> class using the `Thread.CurrentCulture` property by default. Overloads of the <xref:System.Collections.ArrayList.Sort%2A?displayProperty=fullName> method perform culture-sensitive sorts by default using `Thread.CurrentCulture`. Sorting and lookup in a <xref:System.Collections.SortedList> can be affected by `Thread.CurrentCulture` when strings are used as the keys. Follow the usage recommendations provided in this section to obtain culture-insensitive results from these classes and methods in the `Collections` namespace.  
+There are classes and members in the <xref:System.Collections> namespace that provide culture-sensitive behavior by default. The default constructors for the <xref:System.Collections.CaseInsensitiveComparer> and <xref:System.Collections.CaseInsensitiveHashCodeProvider> classes initialize a new instance using the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property. All overloads of the <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType> method create a new instance of the <xref:System.Collections.Hashtable> class using the `Thread.CurrentCulture` property by default. Overloads of the <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType> method perform culture-sensitive sorts by default using `Thread.CurrentCulture`. Sorting and lookup in a <xref:System.Collections.SortedList> can be affected by `Thread.CurrentCulture` when strings are used as the keys. Follow the usage recommendations provided in this section to obtain culture-insensitive results from these classes and methods in the `Collections` namespace.  
   
- **Note** Passing <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to a comparison method does perform a culture-insensitive comparison. However, it does not cause a non-linguistic comparison, for example, for file paths, registry keys, and environment variables. Neither does it support security decisions based on the comparison result. For a non-linguistic comparison or support for result-based security decisions, the application should use a comparison method that accepts a <xref:System.StringComparison> value. The application should then pass <xref:System.StringComparison>.  
+ **Note** Passing <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to a comparison method does perform a culture-insensitive comparison. However, it does not cause a non-linguistic comparison, for example, for file paths, registry keys, and environment variables. Neither does it support security decisions based on the comparison result. For a non-linguistic comparison or support for result-based security decisions, the application should use a comparison method that accepts a <xref:System.StringComparison> value. The application should then pass <xref:System.StringComparison>.  
   
 ## Using the CaseInsensitiveComparer and CaseInsensitiveHashCodeProvider Classes  
  The default constructors for `CaseInsensitiveHashCodeProvider` and `CaseInsensitiveComparer` initialize a new instance of the class using the `Thread.CurrentCulture`, resulting in culture-sensitive behavior. The following code example demonstrates the constructor for a `Hashtable` that is culture-sensitive because it uses the default constructors for `CaseInsensitiveHashCodeProvider` and `CaseInsensitiveComparer`.  
@@ -39,7 +39,7 @@ internalHashtable = New Hashtable(CaseInsensitiveHashCodeProvider.Default, CaseI
 internalHashtable = new Hashtable(CaseInsensitiveHashCodeProvider.Default, CaseInsensitiveComparer.Default);  
 ```  
   
- If you want to create a culture-insensitive `Hashtable` using the `CaseInsensitiveComparer` and `CaseInsensitiveHashCodeProvider` classes, initialize new instances of these classes using the constructors that accept a `culture` parameter. For the `culture` parameter, specify <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>. The following code example demonstrates the constructor for a culture-insensitive `Hashtable`.  
+ If you want to create a culture-insensitive `Hashtable` using the `CaseInsensitiveComparer` and `CaseInsensitiveHashCodeProvider` classes, initialize new instances of these classes using the constructors that accept a `culture` parameter. For the `culture` parameter, specify <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>. The following code example demonstrates the constructor for a culture-insensitive `Hashtable`.  
   
 ```vb  
 internalHashtable = New Hashtable(New  
@@ -135,9 +135,9 @@ internal class InvariantComparer : IComparer
 ## See Also  
  <xref:System.Collections.CaseInsensitiveComparer>   
  <xref:System.Collections.CaseInsensitiveHashCodeProvider>   
- <xref:System.Collections.ArrayList.Sort%2A?displayProperty=fullName>   
+ <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType>   
  <xref:System.Collections.SortedList>   
  <xref:System.Collections.Hashtable>   
  <xref:System.Collections.IComparer>   
  [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)   
- <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=fullName>
+ <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType>

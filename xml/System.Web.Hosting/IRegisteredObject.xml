@@ -15,7 +15,7 @@
 ## Remarks  
  Objects must implement the <xref:System.Web.Hosting.IRegisteredObject> interface in order to register with the hosting environment and have their lifetime managed by the hosting environment.  
   
- You can create an instance of a registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=fullName> method on the application manager. The application manager returns the newly created object to the caller, which can then call a type-specific method on the object. During startup, the registered object should call the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A?displayProperty=fullName> method to complete registration of the object.  
+ You can create an instance of a registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=nameWithType> method on the application manager. The application manager returns the newly created object to the caller, which can then call a type-specific method on the object. During startup, the registered object should call the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A?displayProperty=nameWithType> method to complete registration of the object.  
   
  When the application manager needs to stop a registered object, it will call the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method.  
   
@@ -48,7 +48,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The application manager will call the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method to ask a registered object to unregister. During processing of the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method, the registered object must call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A?displayProperty=fullName> method.  
+ The application manager will call the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method to ask a registered object to unregister. During processing of the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method, the registered object must call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is first called with the `immediate` parameter set to `false`. The object can either complete processing, call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method, and then return or it can return immediately and complete processing asynchronously before calling the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method.  
   

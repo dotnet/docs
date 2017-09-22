@@ -252,7 +252,7 @@ Quantifiers specify how many instances of a character, group, or character class
 ## Quantifiers and Empty Matches  
  The quantifiers `*`, `+`, and `{`*n*`,`*m*`}` and their lazy counterparts never repeat after an empty match when the minimum number of captures has been found. This rule prevents quantifiers from entering infinite loops on empty subexpression matches when the maximum number of possible group captures is infinite or near infinite.  
   
- For example, the following code shows the result of a call to the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> method with the regular expression pattern `(a?)*`, which matches zero or one "a" character zero or more times. Note that the single capturing group captures each "a" as well as <xref:System.String.Empty?displayProperty=fullName>, but that there is no second empty match, because the first empty match causes the quantifier to stop repeating.  
+ For example, the following code shows the result of a call to the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> method with the regular expression pattern `(a?)*`, which matches zero or one "a" character zero or more times. Note that the single capturing group captures each "a" as well as <xref:System.String.Empty?displayProperty=nameWithType>, but that there is no second empty match, because the first empty match causes the quantifier to stop repeating.  
   
  [!code-csharp[RegularExpressions.Quantifiers.EmptyMatch#1](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/cs/emptymatch1.cs#1)]
  [!code-vb[RegularExpressions.Quantifiers.EmptyMatch#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/vb/emptymatch1.vb#1)]  
@@ -263,9 +263,9 @@ Quantifiers specify how many instances of a character, group, or character class
 |-------------|-----------------|  
 |`(a\1`|Either match "a" along with the value of the first captured group …|  
 |`&#124;(?(1)`|… or test whether the first captured group has been defined. (Note that the `(?(1)` construct does not define a capturing group.)|  
-|`\1))`|If the first captured group exists, match its value. If the group does not exist, the group will match <xref:System.String.Empty?displayProperty=fullName>.|  
+|`\1))`|If the first captured group exists, match its value. If the group does not exist, the group will match <xref:System.String.Empty?displayProperty=nameWithType>.|  
   
- The first regular expression tries to match this pattern between zero and two times; the second, exactly two times. Because the first pattern reaches its minimum number of captures with its first capture of <xref:System.String.Empty?displayProperty=fullName>, it never repeats to try to match `a\1`; the `{0,2}` quantifier allows only empty matches in the last iteration. In contrast, the second regular expression does match "a" because it evaluates `a\1` a second time; the minimum number of iterations, 2, forces the engine to repeat after an empty match.  
+ The first regular expression tries to match this pattern between zero and two times; the second, exactly two times. Because the first pattern reaches its minimum number of captures with its first capture of <xref:System.String.Empty?displayProperty=nameWithType>, it never repeats to try to match `a\1`; the `{0,2}` quantifier allows only empty matches in the last iteration. In contrast, the second regular expression does match "a" because it evaluates `a\1` a second time; the minimum number of iterations, 2, forces the engine to repeat after an empty match.  
   
  [!code-csharp[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/cs/emptymatch4.cs#2)]
  [!code-vb[RegularExpressions.Quantifiers.EmptyMatch#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.quantifiers.emptymatch/vb/emptymatch4.vb#2)]  

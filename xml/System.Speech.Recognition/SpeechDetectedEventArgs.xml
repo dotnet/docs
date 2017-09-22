@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected?displayProperty=fullName> events. The handler initializes a display every time speech is detected and displays status information, including audio position.  
+ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected?displayProperty=nameWithType> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected?displayProperty=nameWithType> events. The handler initializes a display every time speech is detected and displays status information, including audio position.  
   
 ```  
 _recognizer.SpeechDetected +=  
@@ -64,7 +64,7 @@ _recognizer.SpeechDetected +=
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected?displayProperty=fullName> events. The handler initializes a display each time speech is detected and displays status information, including audio position.  
+ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected?displayProperty=nameWithType> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected?displayProperty=nameWithType> events. The handler initializes a display each time speech is detected and displays status information, including audio position.  
   
 ```  
 _recognizer.SpeechDetected +=  

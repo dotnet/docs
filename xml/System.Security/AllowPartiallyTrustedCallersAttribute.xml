@@ -50,7 +50,7 @@
   
  When the APTCA attribute is present, all other security checks function as intended, including any class-level or method-level declarative security attributes that are present. This attribute blocks only the implicit, fully trusted caller demand.  
   
- This is not a declarative security attribute, but a regular attribute (it derives from <xref:System.Attribute?displayProperty=fullName>, not from <xref:System.Security.Permissions.SecurityAttribute?displayProperty=fullName>).  
+ This is not a declarative security attribute, but a regular attribute (it derives from <xref:System.Attribute?displayProperty=nameWithType>, not from <xref:System.Security.Permissions.SecurityAttribute?displayProperty=nameWithType>).  
   
  For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
   
@@ -159,7 +159,7 @@
     [assembly: AllowPartiallyTrustedCallers(PartialTrustVisibilityLevel=NotVisibleByDefault)]  
     ```  
   
-     The assembly has been audited for partial trust, but it is not visible to partial-trust code by default. To make the assembly visible to partial-trust code, add it to the <xref:System.AppDomainSetup.PartialTrustVisibleAssemblies%2A?displayProperty=fullName> property.  
+     The assembly has been audited for partial trust, but it is not visible to partial-trust code by default. To make the assembly visible to partial-trust code, add it to the <xref:System.AppDomainSetup.PartialTrustVisibleAssemblies%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

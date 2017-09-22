@@ -19,7 +19,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # How to: Load Assemblies into an Application Domain
-There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the <xref:System.Reflection.Assembly?displayProperty=fullName> class. Other ways assemblies can be loaded include:  
+There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the <xref:System.Reflection.Assembly?displayProperty=nameWithType> class. Other ways assemblies can be loaded include:  
   
 -   The <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class loads an assembly given its file location. Loading assemblies with this method uses a different load context.  
   
@@ -32,7 +32,7 @@ There are several ways to load an assembly into an application domain. The recom
   
 -   The <xref:System.Type.GetType%2A> method of the <xref:System.Type> class can load assemblies.  
   
--   The <xref:System.AppDomain.Load%2A> method of the <xref:System.AppDomain?displayProperty=fullName> class can load assemblies, but is primarily used for COM interoperability. It should not be used to load assemblies into an application domain other than the application domain from which it is called.  
+-   The <xref:System.AppDomain.Load%2A> method of the <xref:System.AppDomain?displayProperty=nameWithType> class can load assemblies, but is primarily used for COM interoperability. It should not be used to load assemblies into an application domain other than the application domain from which it is called.  
   
 > [!NOTE]
 >  Starting with the .NET Framework version 2.0, the runtime will not load an assembly that was compiled with a version of the .NET Framework that has a higher version number than the currently loaded runtime. This applies to the combination of the major and minor components of the version number.  

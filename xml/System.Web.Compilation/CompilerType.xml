@@ -112,9 +112,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Compilation.CompilerType.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.Compilation.CompilerType.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
- <xref:System.Web.Compilation.CompilerType.Equals%2A> compares two instances based on their <xref:System.Web.Compilation.CompilerType.CodeDomProviderType%2A>, <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=fullName>, <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=fullName>, and <xref:System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation%2A?displayProperty=fullName> properties.  
+ <xref:System.Web.Compilation.CompilerType.Equals%2A> compares two instances based on their <xref:System.Web.Compilation.CompilerType.CodeDomProviderType%2A>, <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=nameWithType>, <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=nameWithType>, and <xref:System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation%2A?displayProperty=nameWithType> properties.  
   
  ]]></format>
         </remarks>
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Compilation.CompilerType.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.Compilation.CompilerType.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  <xref:System.Web.Compilation.CompilerType.GetHashCode%2A> generates the same hash code for two objects that are equal according to the <xref:System.Web.Compilation.CompilerType.Equals%2A> method.  
   

@@ -1574,7 +1574,7 @@
    
   
 ## Examples  
- This example retrieves a <xref:System.IO.FileInfo?displayProperty=fullName> object for the file `MyLogFile.log` and uses it to report the file's full name, last access time, and length.  
+ This example retrieves a <xref:System.IO.FileInfo?displayProperty=nameWithType> object for the file `MyLogFile.log` and uses it to report the file's full name, last access time, and length.  
   
  [!code-vb[VbRefFile#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefFile/VB/Class1.vb#1)]  
   

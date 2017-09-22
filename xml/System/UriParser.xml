@@ -423,7 +423,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Uri> constructors and <xref:System.Uri.TryCreate%2A?displayProperty=fullName> use <xref:System.UriParser.Resolve%2A> to construct a URI from `baseUri` and `relativeUri`.  
+ <xref:System.Uri> constructors and <xref:System.Uri.TryCreate%2A?displayProperty=nameWithType> use <xref:System.UriParser.Resolve%2A> to construct a URI from `baseUri` and `relativeUri`.  
   
  If a parsing error occurs, the returned string for the resolved relative <xref:System.Uri> is null.  
   

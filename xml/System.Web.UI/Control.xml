@@ -78,7 +78,7 @@
    
   
 ## Examples  
- The following example demonstrates a custom server control that derives from the <xref:System.Web.UI.Control> class. The `InnerContent` class overrides the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method, checks to see if the class has any child controls on the page and determines whether the first child of the control is a literal control. If both of these conditions are met, the overridden method writes the HTML string \<H2>Your Message:, the contents of the literal control, and a closing \</H2> tag to the Web Forms page.  
+ The following example demonstrates a custom server control that derives from the <xref:System.Web.UI.Control> class. The `InnerContent` class overrides the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method, checks to see if the class has any child controls on the page and determines whether the first child of the control is a literal control. If both of these conditions are met, the overridden method writes the HTML string \<H2>Your Message:, the contents of the literal control, and a closing \</H2> tag to the Web Forms page.  
   
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -186,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unless you override it, this method automatically adds <xref:System.Web.UI.LiteralControl> objects to the server control's <xref:System.Web.UI.ControlCollection> object. This collection is accessible through <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> property.  
+ Unless you override it, this method automatically adds <xref:System.Web.UI.LiteralControl> objects to the server control's <xref:System.Web.UI.ControlCollection> object. This collection is accessible through <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -877,7 +877,7 @@ span#ProductIDLabel { background-color: white; }
    
   
 ## Examples  
- The following example overrides the <xref:System.Web.UI.Control.DataBind%2A> method in a custom ASP.NET server control. It begins by calling the base <xref:System.Web.UI.Control.OnDataBinding%2A> method and then uses the <xref:System.Web.UI.ControlCollection.Clear%2A?displayProperty=fullName> method to delete all the child controls and the <xref:System.Web.UI.Control.ClearChildViewState%2A> method to delete any saved view-state settings for those child controls. Finally, the <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true` and the control is instructed to track any changes to the view state of the newly created controls with the <xref:System.Web.UI.Control.TrackViewState%2A> method. This is a common technique when binding data to a control to ensure that new data does not conflict with data stored from a previous <xref:System.Web.UI.Control.DataBind%2A> method call.  
+ The following example overrides the <xref:System.Web.UI.Control.DataBind%2A> method in a custom ASP.NET server control. It begins by calling the base <xref:System.Web.UI.Control.OnDataBinding%2A> method and then uses the <xref:System.Web.UI.ControlCollection.Clear%2A?displayProperty=nameWithType> method to delete all the child controls and the <xref:System.Web.UI.Control.ClearChildViewState%2A> method to delete any saved view-state settings for those child controls. Finally, the <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true` and the control is instructed to track any changes to the view state of the newly created controls with the <xref:System.Web.UI.Control.TrackViewState%2A> method. This is a common technique when binding data to a control to ensure that new data does not conflict with data stored from a previous <xref:System.Web.UI.Control.DataBind%2A> method call.  
   
  [!code-csharp[Control_StateManagement#6](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_StateManagement/CS/control_state.cs#6)]
  [!code-vb[Control_StateManagement#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_StateManagement/VB/control_state.vb#6)]  
@@ -909,12 +909,12 @@ span#ProductIDLabel { background-color: white; }
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=fullName> method in a scenario when your custom control overrides the <xref:System.Web.UI.Control.DataBind%2A> method and implements the <xref:System.Web.UI.IDataItemContainer> interface. In this scenario, the custom control calls the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=fullName> method with `raiseOnDataBinding` set to `false` to ensure that the base class's <xref:System.Web.UI.Control.DataBind%2A> method gets called.  
+ Use the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=nameWithType> method in a scenario when your custom control overrides the <xref:System.Web.UI.Control.DataBind%2A> method and implements the <xref:System.Web.UI.IDataItemContainer> interface. In this scenario, the custom control calls the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=nameWithType> method with `raiseOnDataBinding` set to `false` to ensure that the base class's <xref:System.Web.UI.Control.DataBind%2A> method gets called.  
   
- The <xref:System.Web.UI.Control.DataBind?displayProperty=fullName> method invokes the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=fullName> method with `raiseOnDataBinding` set to `true`.  
+ The <xref:System.Web.UI.Control.DataBind?displayProperty=nameWithType> method invokes the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=nameWithType> method with `raiseOnDataBinding` set to `true`.  
   
 > [!NOTE]
->  Calling the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=fullName> method with `raiseOnDataBinding` set to `false` causes any child controls to be data bound with the <xref:System.Web.UI.Control.DataBind?displayProperty=fullName> method.  
+>  Calling the <xref:System.Web.UI.Control.DataBind%28System.Boolean%29?displayProperty=nameWithType> method with `raiseOnDataBinding` set to `false` causes any child controls to be data bound with the <xref:System.Web.UI.Control.DataBind?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1487,7 +1487,7 @@ span#ProductIDLabel { background-color: white; }
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1516,12 +1516,12 @@ span#ProductIDLabel { background-color: white; }
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName> method. This method converts the object that is passed in `routeParameters` to a <xref:System.Web.Routing.RouteValueDictionary> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor.  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType> method. This method converts the object that is passed in `routeParameters` to a <xref:System.Web.Routing.RouteValueDictionary> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=nameWithType> constructor.  
   
    
   
 ## Examples  
- The following example shows how to call the <xref:System.Web.UI.Control.GetRouteUrl%2A?displayProperty=fullName> method to get the URL of a route that has parameters that are named `productid` and `category`. This example assumes that you have created a <xref:System.Web.UI.WebControls.HyperLink> control that is named `HyperLink1`.  
+ The following example shows how to call the <xref:System.Web.UI.Control.GetRouteUrl%2A?displayProperty=nameWithType> method to get the URL of a route that has parameters that are named `productid` and `category`. This example assumes that you have created a <xref:System.Web.UI.WebControls.HyperLink> control that is named `HyperLink1`.  
   
 ```vb  
 HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(  
@@ -1560,7 +1560,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName> method.  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType> method.  
   
    
   
@@ -1606,7 +1606,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName> method. This method converts the object that is passed in `routeParameters` to a <xref:System.Web.Routing.RouteValueDictionary> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor.  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType> method. This method converts the object that is passed in `routeParameters` to a <xref:System.Web.Routing.RouteValueDictionary> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=nameWithType> constructor.  
   
    
   
@@ -1652,7 +1652,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName> method.  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%28System.Web.Routing.RequestContext%2CSystem.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=nameWithType> method.  
   
    
   
@@ -1981,7 +1981,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
    
   
 ## Examples  
- The following example overrides the <xref:System.Web.UI.Control.DataBind%2A> method in a custom ASP.NET server control. It begins by calling the base <xref:System.Web.UI.Control.OnDataBinding%2A> method and then uses the `ControlCollection` object. <xref:System.Web.UI.ControlCollection.Clear%2A?displayProperty=fullName> method to delete all the child controls and the <xref:System.Web.UI.Control.ClearChildViewState%2A> method to delete any saved view-state settings for those child controls. Finally, the <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true`. The control then uses the <xref:System.Web.UI.Control.IsTrackingViewState%2A> property to determine whether view-state change tracking is enabled for the control. If it is not enabled, the <xref:System.Web.UI.Control.TrackViewState%2A> method is called.  
+ The following example overrides the <xref:System.Web.UI.Control.DataBind%2A> method in a custom ASP.NET server control. It begins by calling the base <xref:System.Web.UI.Control.OnDataBinding%2A> method and then uses the `ControlCollection` object. <xref:System.Web.UI.ControlCollection.Clear%2A?displayProperty=nameWithType> method to delete all the child controls and the <xref:System.Web.UI.Control.ClearChildViewState%2A> method to delete any saved view-state settings for those child controls. Finally, the <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true`. The control then uses the <xref:System.Web.UI.Control.IsTrackingViewState%2A> property to determine whether view-state change tracking is enabled for the control. If it is not enabled, the <xref:System.Web.UI.Control.TrackViewState%2A> method is called.  
   
  [!code-csharp[Control_StateManagement#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_StateManagement/CS/control_state.cs#4)]
  [!code-vb[Control_StateManagement#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_StateManagement/VB/control_state.vb#4)]  
@@ -2530,7 +2530,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
    
   
 ## Examples  
- The following example overrides the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method. It uses the <xref:System.Web.UI.Page> property to access the <xref:System.Web.UI.Page.IsPostBack%2A?displayProperty=fullName> property and determine whether the page that contains this control has just been loaded for the first time or is the result of a postback.  
+ The following example overrides the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method. It uses the <xref:System.Web.UI.Page> property to access the <xref:System.Web.UI.Page.IsPostBack%2A?displayProperty=nameWithType> property and determine whether the page that contains this control has just been loaded for the first time or is the result of a postback.  
   
  [!code-csharp[Control_Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_Sample/CS/controlclass_samples.cs#1)]
  [!code-vb[Control_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_Sample/VB/controlclass_samples.vb#1)]  
@@ -2639,7 +2639,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
    
   
 ## Examples  
- The following code example demonstrate how to create a custom class, `ChildControl`, overriding the <xref:System.Web.UI.WebControls.Button.OnClick%2A?displayProperty=fullName> method to call the <xref:System.Web.UI.Control.RaiseBubbleEvent%2A> method that sends the <xref:System.Web.UI.WebControls.Button.Click?displayProperty=fullName> event to its parent ASP.NET server control. When the user clicks a button in an ASP.NET page that includes an instance of `ChildControl`, it raises the <xref:System.Web.UI.Control.OnBubbleEvent%2A> method on the parent control that contains the instance of `ChildControl` and writes the string "The ChildControl class OnClick method is called" to the page.  
+ The following code example demonstrate how to create a custom class, `ChildControl`, overriding the <xref:System.Web.UI.WebControls.Button.OnClick%2A?displayProperty=nameWithType> method to call the <xref:System.Web.UI.Control.RaiseBubbleEvent%2A> method that sends the <xref:System.Web.UI.WebControls.Button.Click?displayProperty=nameWithType> event to its parent ASP.NET server control. When the user clicks a button in an ASP.NET page that includes an instance of `ChildControl`, it raises the <xref:System.Web.UI.Control.OnBubbleEvent%2A> method on the parent control that contains the instance of `ChildControl` and writes the string "The ChildControl class OnClick method is called" to the page.  
   
  [!code-csharp[System.Web.UI.Control.RaiseBubbleEvent_OnBubbleEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Control.RaiseBubbleEvent_OnBubbleEvent/CS/bubble.cs#2)]
  [!code-vb[System.Web.UI.Control.RaiseBubbleEvent_OnBubbleEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Control.RaiseBubbleEvent_OnBubbleEvent/VB/bubble.vb#2)]  
@@ -2704,7 +2704,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Web.UI.Control.Render%2A> method. The <xref:System.Web.UI.Control.HasControls%2A> method is used to determine whether the server control has any child controls stored in its <xref:System.Web.UI.ControlCollection> object, which is accessible through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> property. If <xref:System.Web.UI.Control.HasControls%2A> returns true and the first server control in the collection is literal text, then the literal text is appended to an HTML string.  
+ The following code example demonstrates overriding the <xref:System.Web.UI.Control.Render%2A> method. The <xref:System.Web.UI.Control.HasControls%2A> method is used to determine whether the server control has any child controls stored in its <xref:System.Web.UI.ControlCollection> object, which is accessible through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> property. If <xref:System.Web.UI.Control.HasControls%2A> returns true and the first server control in the collection is literal text, then the literal text is appended to an HTML string.  
   
  [!code-csharp[Classic Control.Render Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Control.Render Example/CS/source.cs#1)]
  [!code-vb[Classic Control.Render Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Control.Render Example/VB/source.vb#1)]  
@@ -3591,7 +3591,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a <xref:System.Web.UI.Control> instance is part of a control template, the <xref:System.Web.UI.Control.TemplateControl%2A> property contains a reference to the containing control. For more information, see the <xref:System.Web.UI.TemplateControl?displayProperty=fullName> documentation.  
+ When a <xref:System.Web.UI.Control> instance is part of a control template, the <xref:System.Web.UI.Control.TemplateControl%2A> property contains a reference to the containing control. For more information, see the <xref:System.Web.UI.TemplateControl?displayProperty=nameWithType> documentation.  
   
  ]]></format>
         </remarks>
@@ -3631,7 +3631,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
    
   
 ## Examples  
- The following example uses the <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property twice. The first time it is used in a <xref:System.Web.UI.Control.MapPathSecure%2A?displayProperty=fullName> method call to obtain the path to the directory in which the control resides. The second time it is in a <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName> method call to obtain the list of all the files contained within that directory.  
+ The following example uses the <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property twice. The first time it is used in a <xref:System.Web.UI.Control.MapPathSecure%2A?displayProperty=nameWithType> method call to obtain the path to the directory in which the control resides. The second time it is in a <xref:System.IO.Directory.GetFiles%2A?displayProperty=nameWithType> method call to obtain the list of all the files contained within that directory.  
   
  [!code-csharp[Control_TemplateSourceDirectory#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_TemplateSourceDirectory/CS/control_templatesourcedirectory.cs#2)]
  [!code-vb[Control_TemplateSourceDirectory#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_TemplateSourceDirectory/VB/control_templatesourcedirectory.vb#2)]  
@@ -3661,7 +3661,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
 ## Remarks  
  This method is called automatically at the end of the <xref:System.Web.UI.Control.Init> event in the server control's lifecycle.  
   
- Invoke this method when you develop templated data-bound controls. This method alerts ASP.NET to monitor changes to a server control's view state, which is required when you override the <xref:System.Web.UI.Control.DataBind%2A?displayProperty=fullName> method.  
+ Invoke this method when you develop templated data-bound controls. This method alerts ASP.NET to monitor changes to a server control's view state, which is required when you override the <xref:System.Web.UI.Control.DataBind%2A?displayProperty=nameWithType> method.  
   
    
   

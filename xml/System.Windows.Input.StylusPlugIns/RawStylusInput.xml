@@ -208,7 +208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.Timestamp%2A> property is the value of the <xref:System.Environment.TickCount%2A?displayProperty=fullName> property at which the stylus event occurred.  
+ The value of the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.Timestamp%2A> property is the value of the <xref:System.Environment.TickCount%2A?displayProperty=nameWithType> property at which the stylus event occurred.  
   
  ]]></format>
         </remarks>

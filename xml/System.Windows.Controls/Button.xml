@@ -16,11 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.Button> class inherits directly from the <xref:System.Windows.Controls.Primitives.ButtonBase?displayProperty=fullName> class.  
+ The <xref:System.Windows.Controls.Button> class inherits directly from the <xref:System.Windows.Controls.Primitives.ButtonBase?displayProperty=nameWithType> class.  
   
  **Content Model:** <xref:System.Windows.Controls.Button> is a <xref:System.Windows.Controls.ContentControl>. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A>.  
   
- Handle the <xref:System.Windows.Controls.Primitives.ButtonBase.Click?displayProperty=fullName> event to respond when the user clicks a <xref:System.Windows.Controls.Button>.  
+ Handle the <xref:System.Windows.Controls.Primitives.ButtonBase.Click?displayProperty=nameWithType> event to respond when the user clicks a <xref:System.Windows.Controls.Button>.  
   
  The <xref:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown%2A> method marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonDown> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
   

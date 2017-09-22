@@ -1029,7 +1029,7 @@
 ## Remarks  
  This method is invoked whenever <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> is called.  
   
- This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1080,7 +1080,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1208,7 +1208,7 @@
 ## Remarks  
  This method is called when the <xref:System.Windows.FrameworkElement.IsInitialized%2A> property is `true`.  
   
- This method overrides <xref:System.Windows.FrameworkElement.OnInitialized%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.FrameworkElement.OnInitialized%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView> object raises the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event when the control has obtained the total number of records of the underlying data source object. The <xref:System.Web.UI.WebControls.DataPager> control provides an event handler for this event named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>. This event handler initializes page-related properties and creates the <xref:System.Web.UI.WebControls.DataPagerField> objects that are defined in the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> collection.  
+ The <xref:System.Web.UI.WebControls.ListView> object raises the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event when the control has obtained the total number of records of the underlying data source object. The <xref:System.Web.UI.WebControls.DataPager> control provides an event handler for this event named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>. This event handler initializes page-related properties and creates the <xref:System.Web.UI.WebControls.DataPagerField> objects that are defined in the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=nameWithType> collection.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is primarily used by control developers.  

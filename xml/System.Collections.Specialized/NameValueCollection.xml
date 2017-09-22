@@ -40,7 +40,7 @@
   
  The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
   
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
+ In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
   
  `null` is allowed as a key or as a value.  
   
@@ -669,7 +669,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.Count%2A>.  
   

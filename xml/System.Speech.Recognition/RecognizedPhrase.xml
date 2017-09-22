@@ -42,7 +42,7 @@
    
   
 ## Examples  
- The following example shows a handler for a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>, or <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event and some of the information associated with the <xref:System.Speech.Recognition.RecognitionResult> object. The <xref:System.Speech.Recognition.RecognitionResult> class derives from the <xref:System.Speech.Recognition.RecognizedPhrase> class.  
+ The following example shows a handler for a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=nameWithType>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=nameWithType>, or <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=nameWithType> event and some of the information associated with the <xref:System.Speech.Recognition.RecognitionResult> object. The <xref:System.Speech.Recognition.RecognitionResult> class derives from the <xref:System.Speech.Recognition.RecognizedPhrase> class.  
   
 ```csharp  
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  
@@ -137,7 +137,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
    
   
 ## Examples  
- The following example shows a handler for a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>, or <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event. The example shows information associated with the <xref:System.Speech.Recognition.RecognitionResult> object, some of which is derived from <xref:System.Speech.Recognition.RecognizedPhrase>. The handler displays confidence scores for a recognized phrase as well as for recognition alternates.  
+ The following example shows a handler for a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=nameWithType>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=nameWithType>, or <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=nameWithType> event. The example shows information associated with the <xref:System.Speech.Recognition.RecognitionResult> object, some of which is derived from <xref:System.Speech.Recognition.RecognizedPhrase>. The handler displays confidence scores for a recognized phrase as well as for recognition alternates.  
   
 ```csharp  
 void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)  

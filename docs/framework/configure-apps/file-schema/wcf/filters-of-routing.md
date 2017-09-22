@@ -61,4 +61,4 @@ None
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=fullName>
+<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>

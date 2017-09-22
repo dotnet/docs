@@ -29,9 +29,9 @@ An <xref:System.Xml.XPath.XPathExpression> object represents a compiled XPath qu
   
  Once compiled, the <xref:System.Xml.XPath.XPathExpression> object may be used as input to the following <xref:System.Xml.XPath.XPathNavigator> class methods depending on the type returned from the XPath query.  
   
--   <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=fullName>  
+-   <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=fullName>  
+-   <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=nameWithType>  
   
 -   <xref:System.Xml.XPath.XPathNavigator.Matches%2A>  
   

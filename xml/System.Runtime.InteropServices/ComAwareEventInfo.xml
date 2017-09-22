@@ -30,11 +30,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, compilers will automatically embed calls to the <xref:System.Runtime.InteropServices.ComAwareEventInfo.AddEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=fullName> and <xref:System.Runtime.InteropServices.ComAwareEventInfo.RemoveEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=fullName> methods instead of using regular add handler and remove handler methods for events. This occurs if the interface that the corresponding event is defined on needs to be embedded.  
+ Normally, compilers will automatically embed calls to the <xref:System.Runtime.InteropServices.ComAwareEventInfo.AddEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.ComAwareEventInfo.RemoveEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=nameWithType> methods instead of using regular add handler and remove handler methods for events. This occurs if the interface that the corresponding event is defined on needs to be embedded.  
   
  You can specify this by embedding the entire assembly that contains the interface by using the **/link** option on the compilers or by setting the **Embed Interop Types** property to `True` in Visual Studio.  
   
- The <xref:System.Runtime.InteropServices.ComAwareEventInfo> type derives from the <xref:System.Reflection.EventInfo> class and overrides the <xref:System.Reflection.EventInfo.AddEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=fullName> and <xref:System.Reflection.EventInfo.RemoveEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=fullName> methods.  
+ The <xref:System.Runtime.InteropServices.ComAwareEventInfo> type derives from the <xref:System.Reflection.EventInfo> class and overrides the <xref:System.Reflection.EventInfo.AddEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=nameWithType> and <xref:System.Reflection.EventInfo.RemoveEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=nameWithType> methods.  
   
  ]]></format>
     </remarks>
@@ -112,9 +112,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Reflection.EventInfo.AddEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=fullName> method except that it allows you to attach events to COM objects.  
+ This method is similar to the <xref:System.Reflection.EventInfo.AddEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=nameWithType> method except that it allows you to attach events to COM objects.  
   
- If `target` is a COM object, this method adds a delegate to an event by using the <xref:System.Runtime.InteropServices.ComEventsHelper.Combine%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=fullName> method.  
+ If `target` is a COM object, this method adds a delegate to an event by using the <xref:System.Runtime.InteropServices.ComEventsHelper.Combine%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=nameWithType> method.  
   
  <xref:System.Runtime.InteropServices.ComAwareEventInfo.AddEventHandler%2A> facilitates registering COM event sinks that forward calls to corresponding managed delegates. It requires the following information:  
   
@@ -126,7 +126,7 @@
   
 -   The delegate that would be invoked when the COM object triggers the corresponding event (`handler`).  
   
- <xref:System.Runtime.InteropServices.ComAwareEventInfo.AddEventHandler%2A> looks up the corresponding COM source interface (specified as the first parameter of the <xref:System.Runtime.InteropServices.ComEventInterfaceAttribute.%23ctor%28System.Type%2CSystem.Type%29?displayProperty=fullName> constructor). It then looks up a method on the source interface whose name is identical to the event name. The value of `GuidAttribute` on the source interface is the GUID that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Combine%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=fullName>; the value of `DispIDAttribute` on the method is the DispID value that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Combine%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=fullName>.  
+ <xref:System.Runtime.InteropServices.ComAwareEventInfo.AddEventHandler%2A> looks up the corresponding COM source interface (specified as the first parameter of the <xref:System.Runtime.InteropServices.ComEventInterfaceAttribute.%23ctor%28System.Type%2CSystem.Type%29?displayProperty=nameWithType> constructor). It then looks up a method on the source interface whose name is identical to the event name. The value of `GuidAttribute` on the source interface is the GUID that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Combine%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=nameWithType>; the value of `DispIDAttribute` on the method is the DispID value that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Combine%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -237,7 +237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Reflection.EventInfo.GetAddMethod%2A?displayProperty=fullName> method.  
+ This method calls the <xref:System.Reflection.EventInfo.GetAddMethod%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -534,9 +534,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Reflection.EventInfo.RemoveEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=fullName> method, except that it allows you to detach events from COM objects.  
+ This method is similar to the <xref:System.Reflection.EventInfo.RemoveEventHandler%28System.Object%2CSystem.Delegate%29?displayProperty=nameWithType> method, except that it allows you to detach events from COM objects.  
   
- If `target` is a COM object, this method releases a delegate to an event by using the <xref:System.Runtime.InteropServices.ComEventsHelper.Remove%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=fullName> method.  
+ If `target` is a COM object, this method releases a delegate to an event by using the <xref:System.Runtime.InteropServices.ComEventsHelper.Remove%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=nameWithType> method.  
   
  <xref:System.Runtime.InteropServices.ComAwareEventInfo.RemoveEventHandler%2A> facilitates unregistering COM event sinks that forward calls to corresponding managed delegates. It requires the following information:  
   
@@ -548,7 +548,7 @@
   
 -   The delegate that would be invoked when the COM object triggers the corresponding event (`handler`).  
   
- <xref:System.Runtime.InteropServices.ComAwareEventInfo.RemoveEventHandler%2A> looks up the corresponding COM source interface (specified as the first parameter of the <xref:System.Runtime.InteropServices.ComEventInterfaceAttribute.%23ctor%28System.Type%2CSystem.Type%29?displayProperty=fullName> constructor). It then it looks up a method on the source interface whose name is identical to the event name. The value of `GuidAttribute` on the source interface is the GUID that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Remove%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=fullName>; the value of `DispIDAttribute` on the method is the DispID value that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Remove%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=fullName>.  
+ <xref:System.Runtime.InteropServices.ComAwareEventInfo.RemoveEventHandler%2A> looks up the corresponding COM source interface (specified as the first parameter of the <xref:System.Runtime.InteropServices.ComEventInterfaceAttribute.%23ctor%28System.Type%2CSystem.Type%29?displayProperty=nameWithType> constructor). It then it looks up a method on the source interface whose name is identical to the event name. The value of `GuidAttribute` on the source interface is the GUID that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Remove%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=nameWithType>; the value of `DispIDAttribute` on the method is the DispID value that is passed to <xref:System.Runtime.InteropServices.ComEventsHelper.Remove%28System.Object%2CSystem.Guid%2CSystem.Int32%2CSystem.Delegate%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

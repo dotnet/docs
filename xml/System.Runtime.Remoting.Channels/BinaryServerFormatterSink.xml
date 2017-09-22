@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The request stream propagates from the server transport sink through the server channel sinks until it reaches the appropriate formatter sink. The formatter sink deserializes the message and passes it through the pipeline. A special dispatch sink is inserted at the end of the channel sink chain by the <xref:System.Runtime.Remoting.Channels.ChannelServices.CreateServerChannelSinkChain%2A?displayProperty=fullName> method, which is called by server channels to create the server channel sink chains. When the message reaches the dispatch sink, the dispatch sink passes the message to the remoting infrastructure.  
+ The request stream propagates from the server transport sink through the server channel sinks until it reaches the appropriate formatter sink. The formatter sink deserializes the message and passes it through the pipeline. A special dispatch sink is inserted at the end of the channel sink chain by the <xref:System.Runtime.Remoting.Channels.ChannelServices.CreateServerChannelSinkChain%2A?displayProperty=nameWithType> method, which is called by server channels to create the server channel sink chains. When the message reaches the dispatch sink, the dispatch sink passes the message to the remoting infrastructure.  
   
  The following table shows the sink configuration properties that can be specified for the current sink provider.  
   

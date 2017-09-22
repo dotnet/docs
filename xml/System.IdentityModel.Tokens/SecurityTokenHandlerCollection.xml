@@ -208,7 +208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method invokes the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%28System.String%29?displayProperty=fullName> method on the token handlers (<xref:System.IdentityModel.Tokens.SecurityTokenHandler>) in the collection to determine whether the token can be read.  
+ The method invokes the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%28System.String%29?displayProperty=nameWithType> method on the token handlers (<xref:System.IdentityModel.Tokens.SecurityTokenHandler>) in the collection to determine whether the token can be read.  
   
  ]]></format>
         </remarks>

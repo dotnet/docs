@@ -25,9 +25,9 @@
   
  Unlike a <xref:System.Windows.Forms.DataGridViewColumn>, a <xref:System.Windows.Forms.DataGridViewRow> physically contains a collection of all of the cells in that row. You can access this collection through the <xref:System.Windows.Forms.DataGridViewRow.Cells%2A> property.  
   
- The <xref:System.Windows.Forms.DataGridViewRow> class is used to access the individual cell elements, as well as to adjust the appearance and behavior of the row user interface (UI), such as height and cell style. Typically, you will want all rows or most rows in the control to share the same characteristics. To set cell styles for all rows in the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName> property. To set styles for alternating rows, use the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName> property. For more information about cell styles, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md). You can also use the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=fullName> property to define a row that will be used as a basis for all rows added to the control.  
+ The <xref:System.Windows.Forms.DataGridViewRow> class is used to access the individual cell elements, as well as to adjust the appearance and behavior of the row user interface (UI), such as height and cell style. Typically, you will want all rows or most rows in the control to share the same characteristics. To set cell styles for all rows in the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType> property. To set styles for alternating rows, use the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType> property. For more information about cell styles, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md). You can also use the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=nameWithType> property to define a row that will be used as a basis for all rows added to the control.  
   
- The <xref:System.Windows.Forms.DataGridView> control will share <xref:System.Windows.Forms.DataGridViewRow> objects across multiple data rows whenever possible to avoid performance penalties. Unless you are working with large amounts of data and experiencing performance issues, you can typically ignore row sharing. A shared row is indicated by an <xref:System.Windows.Forms.DataGridViewBand.Index%2A> property value of -1. Some members of the <xref:System.Windows.Forms.DataGridViewRow> class cannot be used with shared rows, but you can unshare a row by accessing it through the <xref:System.Windows.Forms.DataGridViewRowCollection.Item%2A?displayProperty=fullName> property. Rows can also become unshared in other ways. To access a row without unsharing it, use the <xref:System.Windows.Forms.DataGridViewRowCollection.SharedRow%2A?displayProperty=fullName> method. When working with large amounts of data, you should be aware of how rows are shared and unshared to avoid performance penalties. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+ The <xref:System.Windows.Forms.DataGridView> control will share <xref:System.Windows.Forms.DataGridViewRow> objects across multiple data rows whenever possible to avoid performance penalties. Unless you are working with large amounts of data and experiencing performance issues, you can typically ignore row sharing. A shared row is indicated by an <xref:System.Windows.Forms.DataGridViewBand.Index%2A> property value of -1. Some members of the <xref:System.Windows.Forms.DataGridViewRow> class cannot be used with shared rows, but you can unshare a row by accessing it through the <xref:System.Windows.Forms.DataGridViewRowCollection.Item%2A?displayProperty=nameWithType> property. Rows can also become unshared in other ways. To access a row without unsharing it, use the <xref:System.Windows.Forms.DataGridViewRowCollection.SharedRow%2A?displayProperty=nameWithType> method. When working with large amounts of data, you should be aware of how rows are shared and unshared to avoid performance penalties. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -270,7 +270,7 @@
 ## Remarks  
  This property indicates the shortcut menu that is displayed when the user right-clicks the row unless the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event or the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property overrides the shortcut menu for the specific cell that was clicked.  
   
- When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property raises the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property returns the previously specified value or its default value of `null`.  
+ When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property raises the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=nameWithType> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property returns the previously specified value or its default value of `null`.  
   
  Handling the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
@@ -281,7 +281,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger code example provided in the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip%2A?displayProperty=nameWithType> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger code example provided in the <xref:System.Windows.Forms.DataGridViewColumn> class.  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#130](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#130)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#130](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#130)]
@@ -505,7 +505,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in this row, the styles specified through the <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName> properties, but are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in this row, the styles specified through the <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType> properties, but are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=nameWithType> property.  
   
  For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
@@ -729,7 +729,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Frozen%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.Frozen%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Frozen%2A?displayProperty=nameWithType> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.Frozen%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#7)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#7)]
@@ -922,7 +922,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The header cell of a row is typically used to display a row label. Users can also click the row header to select the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode?displayProperty=fullName>.  
+ The header cell of a row is typically used to display a row label. Users can also click the row header to select the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode?displayProperty=nameWithType>.  
   
    
   
@@ -1003,11 +1003,11 @@
   
 -   <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A>  
   
--   <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName> (for rows with odd index number)  
+-   <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=nameWithType> (for rows with odd index number)  
   
--   <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>  
   
  For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
@@ -1143,7 +1143,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control calls this method to paint the row.  
   
- Calling this method raises the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event. If a handler for the event does not set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`, this method also calls the <xref:System.Windows.Forms.DataGridViewRow.PaintHeader%2A> and <xref:System.Windows.Forms.DataGridViewRow.PaintCells%2A> methods and raises the <xref:System.Windows.Forms.DataGridView.RowPostPaint?displayProperty=fullName> event.  
+ Calling this method raises the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=nameWithType> event. If a handler for the event does not set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> property to `true`, this method also calls the <xref:System.Windows.Forms.DataGridViewRow.PaintHeader%2A> and <xref:System.Windows.Forms.DataGridViewRow.PaintCells%2A> methods and raises the <xref:System.Windows.Forms.DataGridView.RowPostPaint?displayProperty=nameWithType> event.  
   
  ]]></format>
         </remarks>
@@ -1198,7 +1198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control calls this method to paint the cells in the row except when a handler for the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event sets the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`. For more information, see <xref:System.Windows.Forms.DataGridViewRow.Paint%2A>.  
+ The <xref:System.Windows.Forms.DataGridView> control calls this method to paint the cells in the row except when a handler for the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=nameWithType> event sets the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> property to `true`. For more information, see <xref:System.Windows.Forms.DataGridViewRow.Paint%2A>.  
   
  ]]></format>
         </remarks>
@@ -1250,7 +1250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control calls this method to paint the row header except when a handler for the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event sets the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`. For more information, see <xref:System.Windows.Forms.DataGridViewRow.Paint%2A>.  
+ The <xref:System.Windows.Forms.DataGridView> control calls this method to paint the row header except when a handler for the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=nameWithType> event sets the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> property to `true`. For more information, see <xref:System.Windows.Forms.DataGridViewRow.Paint%2A>.  
   
  ]]></format>
         </remarks>
@@ -1290,14 +1290,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A> property affects the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=fullName> property of each cell in the row.  
+ The <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A> property affects the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=nameWithType> property of each cell in the row.  
   
- Setting this property has no effect if the value of the <xref:System.Windows.Forms.DataGridView.ReadOnly%2A?displayProperty=fullName> property is `true`.  
+ Setting this property has no effect if the value of the <xref:System.Windows.Forms.DataGridView.ReadOnly%2A?displayProperty=nameWithType> property is `true`.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A?displayProperty=nameWithType> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#11](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#11)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#11)]
@@ -1336,7 +1336,7 @@
   
  If the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property is <xref:System.Windows.Forms.DataGridViewTriState.False>, the user will not be able to manually adjust the row height.  
   
- By default, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value is based on the <xref:System.Windows.Forms.DataGridView.AllowUserToResizeRows%2A?displayProperty=fullName> property value. If you explicitly set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.True> or <xref:System.Windows.Forms.DataGridViewTriState.False>, however, the control value is ignored. Set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.NotSet> to restore the value-inheritance behavior.  
+ By default, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value is based on the <xref:System.Windows.Forms.DataGridView.AllowUserToResizeRows%2A?displayProperty=nameWithType> property value. If you explicitly set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.True> or <xref:System.Windows.Forms.DataGridViewTriState.False>, however, the control value is ignored. Set <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState.NotSet> to restore the value-inheritance behavior.  
   
  Because <xref:System.Windows.Forms.DataGridViewTriState.NotSet> restores the value inheritance, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property will never return a <xref:System.Windows.Forms.DataGridViewTriState.NotSet> value unless the row has not been added to a <xref:System.Windows.Forms.DataGridView> control. If you need to determine whether the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value of a row is inherited or has been specified explicitly, check its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property. If the <xref:System.Windows.Forms.DataGridViewElement.State%2A> value includes the <xref:System.Windows.Forms.DataGridViewElementStates.ResizableSet> flag, the <xref:System.Windows.Forms.DataGridViewRow.Resizable%2A> property value is not inherited.  
   
@@ -1517,12 +1517,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to hide a row from view while keeping the row in the <xref:System.Windows.Forms.DataGridView>. To completely remove a row, use the <xref:System.Windows.Forms.DataGridViewRowCollection.Remove%2A?displayProperty=fullName> method.  
+ Use this property to hide a row from view while keeping the row in the <xref:System.Windows.Forms.DataGridView>. To completely remove a row, use the <xref:System.Windows.Forms.DataGridViewRowCollection.Remove%2A?displayProperty=nameWithType> method.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Visible%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.Visible%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Visible%2A?displayProperty=nameWithType> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRow.Visible%2A> property of the <xref:System.Windows.Forms.DataGridViewRow> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#9)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#9)]

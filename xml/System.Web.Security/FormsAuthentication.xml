@@ -916,7 +916,7 @@
   
  The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method does not clear the forms-authentication cookie. You can use the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method in conjunction with the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method to log one user out and allow a different user to log in.  
   
- Unlike the <xref:System.Web.HttpResponse.Redirect%2A?displayProperty=fullName> method, this method does not end the request by calling <xref:System.Web.HttpResponse.End%2A?displayProperty=fullName>. This means that code that follows the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method call will run.  
+ Unlike the <xref:System.Web.HttpResponse.Redirect%2A?displayProperty=nameWithType> method, this method does not end the request by calling <xref:System.Web.HttpResponse.End%2A?displayProperty=nameWithType>. This means that code that follows the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method call will run.  
   
    
   

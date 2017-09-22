@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This constructor is an O(1) operation.  
   
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
   
@@ -503,7 +503,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
   
@@ -544,7 +544,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
   
@@ -585,7 +585,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  Derived classes can provide a synchronized version of the <xref:System.Collections.Specialized.ListDictionary> using the <xref:System.Collections.Specialized.ListDictionary.SyncRoot%2A> property.  
   

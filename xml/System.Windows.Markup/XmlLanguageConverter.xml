@@ -132,7 +132,7 @@
 ## Remarks  
  The `source` value must be a string, otherwise an exception is thrown. If the conversion is successful, the return value is a <xref:System.Windows.Markup.XmlLanguage>.  
   
- Internally, this method calls <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A?displayProperty=fullName>. See <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A> for additional exception information.  
+ Internally, this method calls <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A?displayProperty=nameWithType>. See <xref:System.Windows.Markup.XmlLanguage.GetLanguage%2A> for additional exception information.  
   
  ]]></format>
         </remarks>

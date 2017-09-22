@@ -40,13 +40,13 @@
 ## Remarks  
  Derive from this class to provide a custom implementation of the <xref:System.Collections.Generic.IComparer%601> interface for use with collection classes such as the <xref:System.Collections.Generic.SortedList%602> and <xref:System.Collections.Generic.SortedDictionary%602> generic classes.  
   
- The difference between deriving from the <xref:System.Collections.Generic.Comparer%601> class and implementing the <xref:System.IComparable?displayProperty=fullName> interface is as follows:  
+ The difference between deriving from the <xref:System.Collections.Generic.Comparer%601> class and implementing the <xref:System.IComparable?displayProperty=nameWithType> interface is as follows:  
   
--   To specify how two objects should be compared by default, implement the <xref:System.IComparable?displayProperty=fullName> interface in your class. This ensures that sort operations will use the default comparison code that you provided.  
+-   To specify how two objects should be compared by default, implement the <xref:System.IComparable?displayProperty=nameWithType> interface in your class. This ensures that sort operations will use the default comparison code that you provided.  
   
 -   To define a comparer to use instead of the default comparer, derive from the <xref:System.Collections.Generic.Comparer%601> class. You can then use this comparer in sort operations that take a comparer as a parameter.  
   
- The object returned by the <xref:System.Collections.Generic.Comparer%601.Default%2A> property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the <xref:System.Collections.Generic.Comparer%601.Default%2A> property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
+ The object returned by the <xref:System.Collections.Generic.Comparer%601.Default%2A> property uses the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, the <xref:System.Collections.Generic.Comparer%601.Default%2A> property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=nameWithType> interface.  
   
    
   
@@ -231,7 +231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.Comparer%601> returned by this property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, this property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
+ The <xref:System.Collections.Generic.Comparer%601> returned by this property uses the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface, this property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=nameWithType> interface.  
   
    
   

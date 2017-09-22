@@ -64,13 +64,13 @@ The `DataGridView` control is used to display data from a variety of external da
  Describes how to display data from two related database tables so that the values shown in one `DataGridView` control depend on the currently selected row in another control.  
   
  [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md)  
- Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event to change the appearance of cells depending on their values.  
+ Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event to change the appearance of cells depending on their values.  
   
 ## Reference  
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
- <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property.  
   
  <xref:System.Windows.Forms.BindingSource>  

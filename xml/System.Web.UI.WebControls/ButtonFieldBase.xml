@@ -171,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current object that is derived from the <xref:System.Web.UI.WebControls.ButtonFieldBase> class to the <xref:System.Web.UI.WebControls.DataControlField> object that is passed in the `newField` parameter.  
+ The <xref:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current object that is derived from the <xref:System.Web.UI.WebControls.ButtonFieldBase> class to the <xref:System.Web.UI.WebControls.DataControlField> object that is passed in the `newField` parameter.  
   
  ]]></format>
         </remarks>
@@ -253,7 +253,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation%2A> property must be set to `true` for the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to have an effect.  
   
- For more information on validation groups, see <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A?displayProperty=fullName>.  
+ For more information on validation groups, see <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A?displayProperty=nameWithType>.  
   
  The value of this property is stored in view state.  
   

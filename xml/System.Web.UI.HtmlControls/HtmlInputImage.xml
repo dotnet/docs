@@ -33,7 +33,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control to create a button that displays an image. You can programmatically control the action associated with the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control by providing an event handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event.  
   
- The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=fullName> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=fullName> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object that is passed as a parameter to the user-defined event handler.  
+ The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=nameWithType> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=nameWithType> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=nameWithType> object that is passed as a parameter to the user-defined event handler.  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputImage>, see the <xref:System.Web.UI.HtmlControls.HtmlInputImage.%23ctor%2A> constructor.  
   
@@ -365,7 +365,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event is raised when the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
   
- The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=fullName> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=fullName> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object. The <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object is passed as a parameter to the user-defined event handler.  
+ The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=nameWithType> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=nameWithType> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=nameWithType> object. The <xref:System.Web.UI.ImageClickEventArgs?displayProperty=nameWithType> object is passed as a parameter to the user-defined event handler.  
   
 > [!NOTE]
 >  The origin (0, 0) is located at the upper-left corner of the image.  

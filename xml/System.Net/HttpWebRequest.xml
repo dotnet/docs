@@ -32,7 +32,7 @@
 ## Remarks  
  The <xref:System.Net.HttpWebRequest> class provides support for the properties and methods defined in <xref:System.Net.WebRequest> and for additional properties and methods that enable the user to interact directly with servers using HTTP.  
   
- Do not use the <xref:System.Net.HttpWebRequest.%23ctor%2A> constructor. Use the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method to initialize new <xref:System.Net.HttpWebRequest> objects. If the scheme for the Uniform Resource Identifier (URI) is `http://` or `https://`, <xref:System.Net.WebRequest.Create%2A> returns an <xref:System.Net.HttpWebRequest> object.  
+ Do not use the <xref:System.Net.HttpWebRequest.%23ctor%2A> constructor. Use the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method to initialize new <xref:System.Net.HttpWebRequest> objects. If the scheme for the Uniform Resource Identifier (URI) is `http://` or `https://`, <xref:System.Net.WebRequest.Create%2A> returns an <xref:System.Net.HttpWebRequest> object.  
   
  The <xref:System.Net.HttpWebRequest.GetResponse%2A> method makes a synchronous request to the resource specified in the <xref:System.Net.HttpWebRequest.RequestUri%2A> property and returns an <xref:System.Net.HttpWebResponse> that contains the response object. The response data can be received by using the stream returned by <xref:System.Net.HttpWebResponse.GetResponseStream%2A>. If the response object or the response stream is closed, remaining data will be forfeited. The remaining data will be drained and the socket will be re-used for subsequent requests when closing the response object or stream if the following conditions hold: it's a keep-alive or pipelined request, only a small amount of data needs to be received, or the remaining data is received in a small time interval. If none of the mentioned conditions hold or the drain time is exceeded, the socket will be closed. For keep-alive or pipelined connections, we strongly recommend that the application reads the streams until EOF. This ensures that the socket will be re-used for subsequent requests resulting in better performance and less resources used.  
   
@@ -40,7 +40,7 @@
   
  For client authentication with <xref:System.Net.HttpWebRequest>, the client certificate must be installed in the My certificate store of the current user.  
   
- The <xref:System.Net.HttpWebRequest> class throws a <xref:System.Net.WebException> when errors occur while accessing a resource. The <xref:System.Net.WebException.Status%2A?displayProperty=fullName> property contains a <xref:System.Net.WebExceptionStatus> value that indicates the source of the error. When <xref:System.Net.WebException.Status%2A?displayProperty=fullName> is <xref:System.Net.WebExceptionStatus.ProtocolError?displayProperty=fullName>, the <xref:System.Net.WebException.Response%2A> property contains the <xref:System.Net.HttpWebResponse> received from the resource.  
+ The <xref:System.Net.HttpWebRequest> class throws a <xref:System.Net.WebException> when errors occur while accessing a resource. The <xref:System.Net.WebException.Status%2A?displayProperty=nameWithType> property contains a <xref:System.Net.WebExceptionStatus> value that indicates the source of the error. When <xref:System.Net.WebException.Status%2A?displayProperty=nameWithType> is <xref:System.Net.WebExceptionStatus.ProtocolError?displayProperty=nameWithType>, the <xref:System.Net.WebException.Response%2A> property contains the <xref:System.Net.HttpWebResponse> received from the resource.  
   
  <xref:System.Net.HttpWebRequest> exposes common HTTP header values sent to the Internet resource as properties, set by methods, or set by the system; the following table contains a complete list. You can set other headers in the <xref:System.Net.HttpWebRequest.Headers%2A> property as name/value pairs. Note that servers and caches may change or add headers during the request.  
   
@@ -62,7 +62,7 @@
 |User-Agent|Set by the <xref:System.Net.HttpWebRequest.UserAgent%2A> property.|  
   
 > [!NOTE]
->  <xref:System.Net.HttpWebRequest> is registered automatically. You do not need to call the <xref:System.Net.WebRequest.RegisterPrefix%2A> method to register <xref:System.Net.HttpWebRequest?displayProperty=fullName> before using URIs beginning with `http://` or `https://`.  
+>  <xref:System.Net.HttpWebRequest> is registered automatically. You do not need to call the <xref:System.Net.WebRequest.RegisterPrefix%2A> method to register <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> before using URIs beginning with `http://` or `https://`.  
   
  The local computer or application config file may specify that a default proxy be used. If the <xref:System.Net.HttpWebRequest.Proxy%2A> property is specified, then the proxy settings from the <xref:System.Net.HttpWebRequest.Proxy%2A> property override the local computer or application config file and the <xref:System.Net.HttpWebRequest> instance will use the proxy settings specified. If no proxy is specified in a config file and the <xref:System.Net.HttpWebRequest.Proxy%2A> property is unspecified, the <xref:System.Net.HttpWebRequest> class uses the proxy settings inherited from Internet Explorer on the local computer. If there are no proxy settings in Internet Explorer, the request is sent directly to the server.  
   
@@ -322,7 +322,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a byte range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a byte range header to the request.  
   
  If `range` is positive, the `range` parameter specifies the starting point of the range. The server should start sending data from the `range` parameter specified to the end of the data in the HTTP entity.  
   
@@ -396,7 +396,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a byte range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a byte range header to the request.  
   
  If `range` is positive, the `range` parameter specifies the starting point of the range. The server should start sending data from the `range` parameter specified to the end of the data in the HTTP entity.  
   
@@ -462,7 +462,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a byte range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a byte range header to the request.  
   
  Since all HTTP entities are represented in HTTP messages as sequences of bytes, the concept of a byte range is meaningful for any HTTP entity. However, not all clients and servers need to support byte-range operations.  
   
@@ -540,7 +540,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a byte range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a byte range header to the request.  
   
  Since all HTTP entities are represented in HTTP messages as sequences of bytes, the concept of a byte range is meaningful for any HTTP entity. However, not all clients and servers need to support byte-range operations.  
   
@@ -608,7 +608,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a Range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a Range header to the request.  
   
  If `range` is positive, the `range` parameter specifies the starting point of the range. The server should start sending data from the `range` parameter specified to the end of the data in the HTTP entity.  
   
@@ -678,7 +678,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a Range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a Range header to the request.  
   
  If `range` is positive, the `range` parameter specifies the starting point of the range. The server should start sending data from the `range` parameter specified to the end of the data in the HTTP entity.  
   
@@ -750,7 +750,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a Range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a Range header to the request.  
   
  Since all HTTP entities are represented in HTTP messages as sequences of bytes, the concept of a byte range is meaningful for any HTTP entity. However, not all clients and servers need to support byte-range operations.  
   
@@ -826,7 +826,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=fullName> method adds a Range header to the request.  
+ The <xref:System.Net.HttpWebRequest.AddRange%2A?displayProperty=nameWithType> method adds a Range header to the request.  
   
  Since all HTTP entities are represented in HTTP messages as sequences of bytes, the concept of a byte range is meaningful for any HTTP entity. However, not all clients and servers need to support byte-range operations.  
   
@@ -945,7 +945,7 @@
   
  If <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A> is set to `false`, all responses with an HTTP status code from 300 to 399 is returned to the application.  
   
- The Authorization header is cleared on auto-redirects and <xref:System.Net.HttpWebRequest> automatically tries to re-authenticate to the redirected location. In practice, this means that an application can't put custom authentication information into the Authorization header if it is possible to encounter redirection. Instead, the application must implement and register a custom authentication module. The <xref:System.Net.AuthenticationManager?displayProperty=fullName> and related class are used to implement a custom authentication module. The <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=fullName> method registers a custom authentication module.  
+ The Authorization header is cleared on auto-redirects and <xref:System.Net.HttpWebRequest> automatically tries to re-authenticate to the redirected location. In practice, this means that an application can't put custom authentication information into the Authorization header if it is possible to encounter redirection. Instead, the application must implement and register a custom authentication module. The <xref:System.Net.AuthenticationManager?displayProperty=nameWithType> and related class are used to implement a custom authentication module. The <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=nameWithType> method registers a custom authentication module.  
   
    
   
@@ -1505,7 +1505,7 @@
 ## Remarks  
  The <xref:System.Net.HttpWebRequest.ContinueDelegate%2A> property specifies the callback method to call when the client receives a 100-Continue response.  
   
- When the <xref:System.Net.HttpWebRequest.ContinueDelegate%2A> property is set, the client calls the delegate whenever protocol responses of type <xref:System.Net.HttpStatusCode.Continue?displayProperty=fullName> (100) are received. This is useful if you want the client to display the status of the data being received from the Internet resource.  
+ When the <xref:System.Net.HttpWebRequest.ContinueDelegate%2A> property is set, the client calls the delegate whenever protocol responses of type <xref:System.Net.HttpStatusCode.Continue?displayProperty=nameWithType> (100) are received. This is useful if you want the client to display the status of the data being received from the Internet resource.  
   
  ]]></format>
         </remarks>
@@ -1683,20 +1683,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the Date header is `null`, then the return value will be set to <xref:System.DateTime.MinValue?displayProperty=fullName>.  
+ If the Date header is `null`, then the return value will be set to <xref:System.DateTime.MinValue?displayProperty=nameWithType>.  
   
- The <xref:System.Net.HttpWebRequest.Date%2A> property is a standard <xref:System.DateTime?displayProperty=fullName> object and can contain a <xref:System.DateTimeKind?displayProperty=fullName> field of <xref:System.DateTimeKind.Local?displayProperty=fullName>, <xref:System.DateTimeKind.Utc?displayProperty=fullName>, or <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>. Any kind of time can be set when using the <xref:System.Net.HttpWebRequest.Date%2A> property. If <xref:System.DateTimeKind.Unspecified?displayProperty=fullName> is set or retrieved, the <xref:System.Net.HttpWebRequest.Date%2A> property is assumed to be <xref:System.DateTimeKind.Local?displayProperty=fullName> (local time).  
+ The <xref:System.Net.HttpWebRequest.Date%2A> property is a standard <xref:System.DateTime?displayProperty=nameWithType> object and can contain a <xref:System.DateTimeKind?displayProperty=nameWithType> field of <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. Any kind of time can be set when using the <xref:System.Net.HttpWebRequest.Date%2A> property. If <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType> is set or retrieved, the <xref:System.Net.HttpWebRequest.Date%2A> property is assumed to be <xref:System.DateTimeKind.Local?displayProperty=nameWithType> (local time).  
   
  The classes in the <xref:System.Net> namespace always write it out the <xref:System.Net.HttpWebRequest.Date%2A> property on the wire during transmission in standard form using GMT (Utc) format.  
   
- If the <xref:System.Net.HttpWebRequest.Date%2A> property is set to <xref:System.DateTime.MinValue?displayProperty=fullName>, then the `Date` HTTP header is removed from the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
+ If the <xref:System.Net.HttpWebRequest.Date%2A> property is set to <xref:System.DateTime.MinValue?displayProperty=nameWithType>, then the `Date` HTTP header is removed from the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
   
- If the <xref:System.Net.HttpWebRequest.Date%2A> property is <xref:System.DateTime.MinValue?displayProperty=fullName>, this indicates that the `Date` HTTP header is not included in the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
+ If the <xref:System.Net.HttpWebRequest.Date%2A> property is <xref:System.DateTime.MinValue?displayProperty=nameWithType>, this indicates that the `Date` HTTP header is not included in the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
   
 > [!NOTE]
 >  The value for this property is stored in <xref:System.Net.WebHeaderCollection>. If WebHeaderCollection is set, the property value is lost.  
   
- If the <xref:System.Net.HttpWebRequest.Date%2A> is set and an attempt is made to send a <xref:System.Net.HttpWebRequest> with no body, then a <xref:System.Net.ProtocolViolationException?displayProperty=fullName> will be thrown by the <xref:System.Net.HttpWebRequest.BeginGetResponse%2A>, <xref:System.Net.HttpWebRequest.GetResponse%2A>, and <xref:System.Net.HttpWebRequest.EndGetResponse%2A> methods.  
+ If the <xref:System.Net.HttpWebRequest.Date%2A> is set and an attempt is made to send a <xref:System.Net.HttpWebRequest> with no body, then a <xref:System.Net.ProtocolViolationException?displayProperty=nameWithType> will be thrown by the <xref:System.Net.HttpWebRequest.BeginGetResponse%2A>, <xref:System.Net.HttpWebRequest.GetResponse%2A>, and <xref:System.Net.HttpWebRequest.EndGetResponse%2A> methods.  
   
  ]]></format>
         </remarks>
@@ -1736,7 +1736,7 @@
 ## Remarks  
  Setting this property registers the specified policy for the HTTP and HTTPS schemes. This policy is used for this request if:  
   
- There is no <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property specified for this request.  
+ There is no <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=nameWithType> property specified for this request.  
   
  \- or -  
   
@@ -1859,13 +1859,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> method completes an asynchronous request for a stream that was started by the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> method completes an asynchronous request for a stream that was started by the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  You must set the value of the <xref:System.Net.HttpWebRequest.ContentLength%2A> property before writing data to the stream.  
   
 > [!CAUTION]
->  You must call the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
+>  You must call the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1929,7 +1929,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> method completes an asynchronous request for a stream that was started by the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method and outputs the <xref:System.Net.TransportContext> associated with the stream. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> method completes an asynchronous request for a stream that was started by the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method and outputs the <xref:System.Net.TransportContext> associated with the stream. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> method.  
   
  Some applications that use integrated Windows authentication with extended protection may need to be able to query the transport layer used by <xref:System.Net.HttpWebRequest> in order to retrieve the channel binding token (CBT) from the underlying TLS channel. The <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method provides access to this information for HTTP methods which have a request body (`POST` and `PUT` requests). This is only needed if the application is implementing its own authentication and needs access to the CBT.  
   
@@ -1937,7 +1937,7 @@
 >  If an application needs to set the value of the <xref:System.Net.HttpWebRequest.ContentLength%2A> property, then this must be done before retrieving the stream and writing data to it.  
   
 > [!CAUTION]
->  You must call the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
+>  You must call the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2132,11 +2132,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method returns a stream to use to send data for the <xref:System.Net.HttpWebRequest>. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method returns a stream to use to send data for the <xref:System.Net.HttpWebRequest>. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> method.  
   
  If an application needs to set the value of the <xref:System.Net.HttpWebRequest.ContentLength%2A> property, then this must be done before retrieving the stream.  
   
- You must call the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
+ You must call the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
   
 > [!NOTE]
 >  Your application cannot mix synchronous and asynchronous methods for a particular request. If you call the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method, you must use the <xref:System.Net.HttpWebRequest.GetResponse%2A> method to retrieve the response.  
@@ -2216,13 +2216,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method returns a stream to use to send data for the <xref:System.Net.HttpWebRequest> and outputs the <xref:System.Net.TransportContext> associated with the stream. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method returns a stream to use to send data for the <xref:System.Net.HttpWebRequest> and outputs the <xref:System.Net.TransportContext> associated with the stream. After the <xref:System.IO.Stream> object has been returned, you can send data with the <xref:System.Net.HttpWebRequest> by using the <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> method.  
   
  Some applications that use integrated Windows authentication with extended protection may need to be able to query the transport layer used by <xref:System.Net.HttpWebRequest> in order to retrieve the channel binding token (CBT) from the underlying TLS channel. The <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method provides access to this information for HTTP methods which have a request body (`POST` and `PUT` requests). This is only needed if the application is implementing its own authentication and needs access to the CBT.  
   
  If an application needs to set the value of the <xref:System.Net.HttpWebRequest.ContentLength%2A> property, then this must be done before retrieving the stream.  
   
- You must call the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
+ You must call the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method to close the stream and release the connection for reuse. Failure to close the stream causes your application to run out of connections.  
   
 > [!NOTE]
 >  Your application cannot mix synchronous and asynchronous methods for a particular request. If you call the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method, you must use the <xref:System.Net.HttpWebRequest.GetResponse%2A> method to retrieve the response.  
@@ -2531,13 +2531,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is a standard <xref:System.DateTime?displayProperty=fullName> object and can contain a <xref:System.DateTimeKind?displayProperty=fullName> field of <xref:System.DateTimeKind.Local?displayProperty=fullName>, <xref:System.DateTimeKind.Utc?displayProperty=fullName>, or <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>. Any kind of time can be set when using the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property. If <xref:System.DateTimeKind.Unspecified?displayProperty=fullName> is set or retrieved, the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is assumed to be <xref:System.DateTimeKind.Local?displayProperty=fullName> (local time).  
+ The <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is a standard <xref:System.DateTime?displayProperty=nameWithType> object and can contain a <xref:System.DateTimeKind?displayProperty=nameWithType> field of <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. Any kind of time can be set when using the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property. If <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType> is set or retrieved, the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is assumed to be <xref:System.DateTimeKind.Local?displayProperty=nameWithType> (local time).  
   
  The classes in the <xref:System.Net> namespace always write it out the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property on the wire during transmission in standard form using GMT (Utc) format.  
   
- If the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is set to <xref:System.DateTime.MinValue?displayProperty=fullName>, then the `If-Modified-Since` HTTP header is removed from the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
+ If the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is set to <xref:System.DateTime.MinValue?displayProperty=nameWithType>, then the `If-Modified-Since` HTTP header is removed from the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
   
- If the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is <xref:System.DateTime.MinValue?displayProperty=fullName>, this indicates that the `If-Modified-Since` HTTP header is not included in the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
+ If the <xref:System.Net.HttpWebRequest.IfModifiedSince%2A> property is <xref:System.DateTime.MinValue?displayProperty=nameWithType>, this indicates that the `If-Modified-Since` HTTP header is not included in the <xref:System.Net.HttpWebRequest.Headers%2A> property and the <xref:System.Net.WebHeaderCollection>.  
   
 > [!NOTE]
 >  The value for this property is stored in <xref:System.Net.WebHeaderCollection>. If WebHeaderCollection is set, the property value is lost.  
@@ -2999,7 +2999,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.HttpWebRequest.Proxy%2A> property identifies the <xref:System.Net.WebProxy> object to use to process requests to Internet resources. To specify that no proxy should be used, set the <xref:System.Net.HttpWebRequest.Proxy%2A> property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.HttpWebRequest.Proxy%2A> property identifies the <xref:System.Net.WebProxy> object to use to process requests to Internet resources. To specify that no proxy should be used, set the <xref:System.Net.HttpWebRequest.Proxy%2A> property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A?displayProperty=nameWithType> method.  
   
  The local computer or application config file may specify that a default proxy be used. If the <xref:System.Net.HttpWebRequest.Proxy%2A> property is specified, then the proxy settings from the <xref:System.Net.HttpWebRequest.Proxy%2A> property override the local computer or application config file and the <xref:System.Net.HttpWebRequest> instance will use the proxy settings specified. If no proxy is specified in a config file and the <xref:System.Net.HttpWebRequest.Proxy%2A> property is unspecified, the <xref:System.Net.HttpWebRequest> class uses the proxy settings inherited from Internet Explorer on the local computer. If there are no proxy settings in Internet Explorer, the request is sent directly to the server.  
   
@@ -3157,7 +3157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Uri> object passed to <xref:System.Net.HttpWebRequest> by the call to <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName>.  
+ The <xref:System.Uri> object passed to <xref:System.Net.HttpWebRequest> by the call to <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType>.  
   
  Following a redirection header does not change the <xref:System.Net.HttpWebRequest.RequestUri%2A> property. To get the actual URI that responded to the request, examine the <xref:System.Net.HttpWebRequest.Address%2A> property.  
   
@@ -3283,7 +3283,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.ServicePoint.Address%2A?displayProperty=fullName> property may be different from <xref:System.Net.HttpWebRequest.Address%2A?displayProperty=fullName> if the request is redirected.  
+ The <xref:System.Net.ServicePoint.Address%2A?displayProperty=nameWithType> property may be different from <xref:System.Net.HttpWebRequest.Address%2A?displayProperty=nameWithType> if the request is redirected.  
   
    
   
@@ -3392,7 +3392,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.HttpWebRequest.Timeout%2A> is the number of milliseconds that a subsequent synchronous request made with the <xref:System.Net.HttpWebRequest.GetResponse%2A> method waits for a response, and the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method waits for a stream. The <xref:System.Net.HttpWebRequest.Timeout%2A> applies to the entire request and response, not individually to the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> and <xref:System.Net.HttpWebRequest.GetResponse%2A> method calls. If the resource is not returned within the time-out period, the request throws a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus.Timeout?displayProperty=fullName>.  
+ <xref:System.Net.HttpWebRequest.Timeout%2A> is the number of milliseconds that a subsequent synchronous request made with the <xref:System.Net.HttpWebRequest.GetResponse%2A> method waits for a response, and the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> method waits for a stream. The <xref:System.Net.HttpWebRequest.Timeout%2A> applies to the entire request and response, not individually to the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> and <xref:System.Net.HttpWebRequest.GetResponse%2A> method calls. If the resource is not returned within the time-out period, the request throws a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus.Timeout?displayProperty=nameWithType>.  
   
  The <xref:System.Net.HttpWebRequest.Timeout%2A> property must be set before the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> or <xref:System.Net.HttpWebRequest.GetResponse%2A> method is called. Changing the <xref:System.Net.HttpWebRequest.Timeout%2A> property after calling the <xref:System.Net.HttpWebRequest.GetRequestStream%2A> or <xref:System.Net.HttpWebRequest.GetResponse%2A> method has no effect  
   

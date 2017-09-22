@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.6|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=nameWithType></li></ul>|
 

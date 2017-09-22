@@ -15,9 +15,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.AddIn.Contract.RemoteArgumentKind> enumeration is used by the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A?displayProperty=fullName> property.  
+ The <xref:System.AddIn.Contract.RemoteArgumentKind> enumeration is used by the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A?displayProperty=nameWithType> property.  
   
- An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+ An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=nameWithType> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
   
  ]]></format>
     </remarks>

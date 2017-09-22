@@ -42,7 +42,7 @@ The `await` operator is applied to a task in an asynchronous method to insert a 
 The task to which the `await` operator is applied typically is returned by a call to a method that implements the [Task-Based Asynchronous Pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md). They include methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, and `System.Threading.Tasks.ValueType<TResult>` objects.  
 
   
- In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=fullName> method returns a `Task<byte[]>`. The task is a promise to produce the actual byte array when the task is complete. The `await` operator suspends execution until the work of the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> method is complete. In the meantime, control is returned to the caller of `GetPageSizeAsync`. When the task finishes execution, the `await` expression evaluates to a byte array.  
+ In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method returns a `Task<byte[]>`. The task is a promise to produce the actual byte array when the task is complete. The `await` operator suspends execution until the work of the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> method is complete. In the meantime, control is returned to the caller of `GetPageSizeAsync`. When the task finishes execution, the `await` expression evaluates to a byte array.  
 
 [!code-cs[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await1.cs)]  
 
@@ -73,16 +73,16 @@ If you await a task-returning async method that causes an exception, the `await`
   
 If you await a task-returning async method that's canceled, the `await` operator rethrows an <xref:System.OperationCanceledException>.  
   
-A single task that is in a faulted state can reflect multiple exceptions. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>. When you await such a task, the await operation rethrows only one of the exceptions. However, you can't predict which of the exceptions is rethrown.  
+A single task that is in a faulted state can reflect multiple exceptions. For example, the task might be the result of a call to <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>. When you await such a task, the await operation rethrows only one of the exceptions. However, you can't predict which of the exceptions is rethrown.  
   
 For examples of error handling in async methods, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md).  
   
 ## Example  
-The following example returns the total number of characters in the pages whose URLs are passed to it as command line arguments. The example calls the `GetPageLengthsAsync` method, which is marked with the `async` keyword. The `GetPageLengthsAsync` method in turn uses the `await` keyword to await calls to the <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=fullName> method.  
+The following example returns the total number of characters in the pages whose URLs are passed to it as command line arguments. The example calls the `GetPageLengthsAsync` method, which is marked with the `async` keyword. The `GetPageLengthsAsync` method in turn uses the `await` keyword to await calls to the <xref:System.Net.Http.HttpClient.GetStringAsync%2A?displayProperty=nameWithType> method.  
 
 [!code-cs[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await2.cs)]  
 
-Because the use of `async` and `await` in an application entry point is not supported, we cannot apply the `async` attribute to the `Main` method, nor can we await the `GetPageLengthsAsync` method call. We can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=fullName> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method. 
+Because the use of `async` and `await` in an application entry point is not supported, we cannot apply the `async` attribute to the `Main` method, nor can we await the `GetPageLengthsAsync` method call. We can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. 
 
 ## See also  
 [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)   

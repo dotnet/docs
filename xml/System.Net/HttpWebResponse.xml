@@ -38,7 +38,7 @@
 > [!NOTE]
 >  Do not confuse <xref:System.Net.HttpWebResponse> with the <xref:System.Web.HttpResponse> class that is used in ASP.NET applications and whose methods and properties are exposed through ASP.NET's intrinsic `Response` object.  
   
- You should never directly create an instance of the <xref:System.Net.HttpWebResponse> class. Instead, use the instance returned by a call to <xref:System.Net.HttpWebRequest.GetResponse%2A?displayProperty=fullName>. You must call either the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or the <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=fullName> method to close the response and release the connection for reuse. It is not necessary to call both <xref:System.IO.Stream.Close%2A?displayProperty=fullName> and <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=fullName>, but doing so does not cause an error.  
+ You should never directly create an instance of the <xref:System.Net.HttpWebResponse> class. Instead, use the instance returned by a call to <xref:System.Net.HttpWebRequest.GetResponse%2A?displayProperty=nameWithType>. You must call either the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or the <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType> method to close the response and release the connection for reuse. It is not necessary to call both <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> and <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType>, but doing so does not cause an error.  
   
  Common header information returned from the Internet resource is exposed as properties of the class. See the following table for a complete list. Other headers can be read from the <xref:System.Net.HttpWebResponse.Headers%2A> property as name/value pairs.  
   
@@ -211,7 +211,7 @@
 ## Remarks  
  The <xref:System.Net.HttpWebResponse.Close%2A> method closes the response stream and releases the connection to the resource for reuse by other requests.  
   
- You must call either the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or the <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. It is not necessary to call both <xref:System.IO.Stream.Close%2A?displayProperty=fullName> and <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=fullName>, but doing so does not cause an error. Failure to close the stream can cause your application to run out of connections.  
+ You must call either the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or the <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType> method to close the stream and release the connection for reuse. It is not necessary to call both <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> and <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType>, but doing so does not cause an error. Failure to close the stream can cause your application to run out of connections.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -581,7 +581,7 @@
  The <xref:System.Net.HttpWebResponse.GetResponseStream%2A> method returns the data stream from the requested Internet resource.  
   
 > [!NOTE]
->  You must call either the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or the  <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=fullName> method to close the stream and release the connection for reuse. It is not necessary to call both <xref:System.IO.Stream.Close%2A?displayProperty=fullName> and <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=fullName>, but doing so does not cause an error. Failure to close the stream will cause your application to run out of connections.  
+>  You must call either the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> or the  <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType> method to close the stream and release the connection for reuse. It is not necessary to call both <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> and <xref:System.Net.HttpWebResponse.Close%2A?displayProperty=nameWithType>, but doing so does not cause an error. Failure to close the stream will cause your application to run out of connections.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -861,7 +861,7 @@
   
  The <xref:System.Net.HttpWebResponse.ResponseUri%2A> property will use the Content-Location header if present.  
   
- Applications that need to access the last redirected <xref:System.Net.HttpWebResponse.ResponseUri%2A> should use the <xref:System.Net.HttpWebRequest.Address%2A?displayProperty=fullName> property rather than <xref:System.Net.HttpWebResponse.ResponseUri%2A>, since the use of <xref:System.Net.HttpWebResponse.ResponseUri%2A> property may open security vulnerabilities.  
+ Applications that need to access the last redirected <xref:System.Net.HttpWebResponse.ResponseUri%2A> should use the <xref:System.Net.HttpWebRequest.Address%2A?displayProperty=nameWithType> property rather than <xref:System.Net.HttpWebResponse.ResponseUri%2A>, since the use of <xref:System.Net.HttpWebResponse.ResponseUri%2A> property may open security vulnerabilities.  
   
    
   

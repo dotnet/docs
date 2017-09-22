@@ -84,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is an implementation of the abstract <xref:System.ComponentModel.Design.Serialization.DesignerLoader.BeginLoad%2A?displayProperty=fullName> method. You do not need to override this method in your own class. The <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.BeginLoad%2A> method performs the following actions:  
+ This is an implementation of the abstract <xref:System.ComponentModel.Design.Serialization.DesignerLoader.BeginLoad%2A?displayProperty=nameWithType> method. You do not need to override this method in your own class. The <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.BeginLoad%2A> method performs the following actions:  
   
 -   It verifies that the design surface has not already loaded.  
   

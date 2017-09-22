@@ -87,7 +87,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to construct a <xref:System.Windows.Forms.StatusBar> and use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+ The following code example demonstrates how to construct a <xref:System.Windows.Forms.StatusBar> and use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=nameWithType> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
   
  To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
   
@@ -342,7 +342,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.StatusBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
+ As implemented in the <xref:System.Windows.Forms.StatusBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> value.  
   
  ]]></format>
         </remarks>
@@ -478,7 +478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle.OwnerDraw>.  
+ You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=nameWithType> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle.OwnerDraw>.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -900,7 +900,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=nameWithType> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
   
  To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
   
@@ -1027,7 +1027,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=fullName>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=fullName> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A>, <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.StatusBarPanel.Width%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A?displayProperty=nameWithType> members and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
   
  To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
   

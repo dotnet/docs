@@ -5,6 +5,8 @@
 ### [Docker containers, images, and registries](introduction-to-containers-and-docker/docker-containers-images,-and-registries.md)
 ## [Introduction to the Docker application lifecycle](the-Docker-application-lifecycle/index.md)
 ### [Containers as the foundation for DevOps collaboration](the-Docker-application-lifecycle/containers-foundation-for-devops-collaboration.md)
+## [Introduction to the microsoft platform and tools for containerized apps](the-microsoft-platform-tools-containerized-apps/index.md)
+
 
 
 # [designing and developing containerized apps using docker and microsoft azure](designing-and-developing-containerized-apps-using-docker-and-microsoft-azure/)

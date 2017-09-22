@@ -4,7 +4,7 @@ description: Learn about the differences between existing and .NET Core csproj f
 keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 05/24/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet

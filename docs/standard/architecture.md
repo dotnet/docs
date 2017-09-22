@@ -10,11 +10,11 @@ ms.technology: dotnet
 ---
 # .NET Architecture Guidance
 
-## [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](./architecture-containerized-liefecycle/)
+## [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](./architecture-containerized-liefecycle/index.md)
 
 This guide is an introduction to the recommended end to end lifecycle processes you'll use to develop, validate, and deploy containerized Docker applications using Visual Studio and Microsoft Azure.
 
-## [Architecting Container and Microservice Based Applications](./microservices-architecture/)
+## [Architecting Container and Microservice Based Applications](microservices-architecture/index.md)
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
 

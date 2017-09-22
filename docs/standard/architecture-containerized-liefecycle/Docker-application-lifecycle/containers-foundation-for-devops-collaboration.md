@@ -64,4 +64,4 @@ Here are some of the most important benefits provided by a solid DevOps workflow
 
 >[!div class="step-by-step"]
 [Previous] (index.md)
-[Next] (../introduction-to-the-microsoft-platform-and/index.md)
+[Next] (../Microsoft-platform-tools-containerized-apps/index.md)

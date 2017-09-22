@@ -69,5 +69,5 @@ documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/](https:
 
 
 >[!div class="step-by-step"]
-[Previous] (inner-loop-development-workflow-for-docker-apps.md)
+[Previous] (docker-apps-inner-loop-workflow.md)
 [Next] (set-up-windows-containers-with-powershell.md)

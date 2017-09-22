@@ -55,4 +55,4 @@ Thus, Microsoft offers a complete foundation for an end-to-end containerized Doc
 
 >[!div class="step-by-step"]
 [Previous] (../Docker-application-lifecycle/containers-foundation-for-devops-collaboration.md)
-[Next] (../designing-and-developing-containerized-apps-using-docker-and-microsoft-azure/index.md)
+[Next] (../design-develop-containerized-apps/index.md)

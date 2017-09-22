@@ -36,15 +36,15 @@ translation.priority.ht:
 # How to: Get Information About Files, Folders, and Drives  (C# Programming Guide)
 In the .NET Framework, you can access file system information by using the following classes:  
   
--   <xref:System.IO.FileInfo?displayProperty=fullName>  
+-   <xref:System.IO.FileInfo?displayProperty=nameWithType>  
   
--   <xref:System.IO.DirectoryInfo?displayProperty=fullName>  
+-   <xref:System.IO.DirectoryInfo?displayProperty=nameWithType>  
   
--   <xref:System.IO.DriveInfo?displayProperty=fullName>  
+-   <xref:System.IO.DriveInfo?displayProperty=nameWithType>  
   
--   <xref:System.IO.Directory?displayProperty=fullName>  
+-   <xref:System.IO.Directory?displayProperty=nameWithType>  
   
--   <xref:System.IO.File?displayProperty=fullName>  
+-   <xref:System.IO.File?displayProperty=nameWithType>  
   
  The <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> classes represent a file or directory and contain properties that expose many of the file attributes that are supported by the NTFS file system. They also contain methods for opening, closing, moving, and deleting files and folders. You can create instances of these classes by passing a string that represents the name of the file, folder, or drive in to the constructor:  
   
@@ -52,9 +52,9 @@ In the .NET Framework, you can access file system information by using the follo
 System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");  
 ```  
   
- You can also obtain the names of files, folders, or drives by using calls to <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=fullName>, <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName>, and <xref:System.IO.DriveInfo.RootDirectory%2A?displayProperty=fullName>.  
+ You can also obtain the names of files, folders, or drives by using calls to <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=nameWithType>, <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=nameWithType>, and <xref:System.IO.DriveInfo.RootDirectory%2A?displayProperty=nameWithType>.  
   
- The <xref:System.IO.Directory?displayProperty=fullName> and <xref:System.IO.File?displayProperty=fullName> classes provide static methods for retrieving information about directories and files.  
+ The <xref:System.IO.Directory?displayProperty=nameWithType> and <xref:System.IO.File?displayProperty=nameWithType> classes provide static methods for retrieving information about directories and files.  
   
 ## Example  
  The following example shows various ways to access information about files and folders.  
@@ -75,6 +75,6 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
  If the application does not have sufficient permissions to read the specified file, the `Exists` method returns `false` regardless of whether a path exists; the method does not throw an exception.  
   
 ## See Also  
- <xref:System.IO?displayProperty=fullName>   
+ <xref:System.IO?displayProperty=nameWithType>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

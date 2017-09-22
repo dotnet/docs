@@ -75,9 +75,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified directory." This message takes into account the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified directory." This message takes into account the current system culture.  
   
- The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
+ The <xref:System.Exception.InnerException%2A?displayProperty=nameWithType> property of the new instance is initialized to `null`.  
   
    
   
@@ -121,9 +121,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance using `message`.  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new instance using `message`.  
   
- The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
+ The <xref:System.Exception.InnerException%2A?displayProperty=nameWithType> property of the new instance is initialized to `null`.  
   
  ]]></format>
         </remarks>

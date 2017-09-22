@@ -820,7 +820,7 @@
   
  The <xref:System.Net.WebProxy.GetDefaultProxy%2A> method does not pick up any dynamic settings that are generated from scripts run by Internet Explorer, from automatic configuration entries, or from DHCP or DNS lookups.  
   
- Applications should use the <xref:System.Net.WebRequest.DefaultWebProxy%2A?displayProperty=fullName> property and the <xref:System.Net.WebRequest.GetSystemWebProxy%2A?displayProperty=fullName> method instead of the <xref:System.Net.WebProxy.GetDefaultProxy%2A> method.  
+ Applications should use the <xref:System.Net.WebRequest.DefaultWebProxy%2A?displayProperty=nameWithType> property and the <xref:System.Net.WebRequest.GetSystemWebProxy%2A?displayProperty=nameWithType> method instead of the <xref:System.Net.WebProxy.GetDefaultProxy%2A> method.  
   
    
   

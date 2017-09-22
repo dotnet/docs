@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.DataTemplate.%23ctor?displayProperty=fullName></li><li><xref:System.Windows.DataTemplate.%23ctor(System.Object)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.DataTemplate.%23ctor?displayProperty=nameWithType></li><li><xref:System.Windows.DataTemplate.%23ctor(System.Object)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0003</li></ul>|
 

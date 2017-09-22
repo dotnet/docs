@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewTextBoxCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display a single string of editable text-based information. The currently selected <xref:System.Windows.Forms.DataGridViewTextBoxCell> hosts a <xref:System.Windows.Forms.DataGridViewTextBoxEditingControl> control in which the user can edit the cell's value (assuming the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> property of the <xref:System.Windows.Forms.DataGridViewTextBoxCell> is set to `false`).  
   
- The <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewTextBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewTextBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ The <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A?displayProperty=nameWithType> is initialized to a new <xref:System.Windows.Forms.DataGridViewTextBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewTextBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
   
  The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
   
@@ -140,7 +140,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl%2A> method initializes the hosted editing control as described in the base <xref:System.Windows.Forms.DataGridViewCell.InitializeEditingControl%2A?displayProperty=fullName> method. For every invocation, this method also sets the following visual attributes of the editing control:  
+ The <xref:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl%2A> method initializes the hosted editing control as described in the base <xref:System.Windows.Forms.DataGridViewCell.InitializeEditingControl%2A?displayProperty=nameWithType> method. For every invocation, this method also sets the following visual attributes of the editing control:  
   
 -   The <xref:System.Windows.Forms.TextBoxBase.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle.None>.  
   
@@ -357,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.Control.Enter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnEnter%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.Control.Enter?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -393,7 +393,7 @@
 ## Remarks  
  Resets the instance's click state to ensure that leaving then re-entering the cell requires a double click to start edit mode.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -426,7 +426,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewTextBoxCell.OnMouseClick%2A> determines whether the mouse click is part of a double click that starts an edit session.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>

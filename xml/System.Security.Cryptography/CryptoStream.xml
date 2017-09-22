@@ -237,7 +237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method wraps a call to the type's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation.  
+ This method wraps a call to the type's <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation.  
   
  Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoStream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md)  
   

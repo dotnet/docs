@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `<cookieHandler>` element is a child element of the `<federatedAuthentication>` element; the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A?displayProperty=fullName> property is set to an instance of the <xref:System.IdentityModel.Services.CookieHandlerElement> class. The `<cookieHandler>` element is used to configure the cookie handler used by the Session Authentication Module (SAM), which is represented by the <xref:System.IdentityModel.Services.SessionAuthenticationModule> class.  
+ The `<cookieHandler>` element is a child element of the `<federatedAuthentication>` element; the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A?displayProperty=nameWithType> property is set to an instance of the <xref:System.IdentityModel.Services.CookieHandlerElement> class. The `<cookieHandler>` element is used to configure the cookie handler used by the Session Authentication Module (SAM), which is represented by the <xref:System.IdentityModel.Services.SessionAuthenticationModule> class.  
   
  A cookie handler can be configured in one of the following ways:  
   
@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is equivalent to the `<chunkedCookieHandler>` child element of the `<cookieHandler>` element. It specifies a chunked cookie handler, an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class, to use. If it is set, the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property should be set to either <xref:System.IdentityModel.Services.CookieHandlerMode.Default> or <xref:System.IdentityModel.Services.CookieHandlerMode.Chunked>. If the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property is set to either of these values but the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property is not set, a chunked cookie handler with the default chunk size (<xref:System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize?displayProperty=fullName>) is configured.  
+ This property is equivalent to the `<chunkedCookieHandler>` child element of the `<cookieHandler>` element. It specifies a chunked cookie handler, an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class, to use. If it is set, the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property should be set to either <xref:System.IdentityModel.Services.CookieHandlerMode.Default> or <xref:System.IdentityModel.Services.CookieHandlerMode.Chunked>. If the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property is set to either of these values but the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property is not set, a chunked cookie handler with the default chunk size (<xref:System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize?displayProperty=nameWithType>) is configured.  
   
  Either the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property or the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property may be set, but not both.  
   

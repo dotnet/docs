@@ -2480,7 +2480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Web.UI.WebControls.WebControl.RenderEndTag%2A?displayProperty=fullName> to render <xref:System.Web.UI.WebControls.Menu> submenus and the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property.  
+ This method overrides <xref:System.Web.UI.WebControls.WebControl.RenderEndTag%2A?displayProperty=nameWithType> to render <xref:System.Web.UI.WebControls.Menu> submenus and the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.Menu> control.  
@@ -2517,7 +2517,7 @@
   
  In ASP.NET 3.5 and earlier versions, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `table` elements and inline styles to specify the appearance of the menu in a browser. In ASP.NET 4 and later versions, by default the <xref:System.Web.UI.WebControls.Menu> control uses HTML `listitem` elements and cascading style sheet (CSS) styles.  
   
- If you do not set this property, the <xref:System.Web.UI.WebControls.Menu> control renders markup that is appropriate to the ASP.NET version that is indicated by the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=fullName> property. The <xref:System.Web.UI.WebControls.Menu> control uses the following rules:  
+ If you do not set this property, the <xref:System.Web.UI.WebControls.Menu> control renders markup that is appropriate to the ASP.NET version that is indicated by the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=nameWithType> property. The <xref:System.Web.UI.WebControls.Menu> control uses the following rules:  
   
 -   If the value of the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property is `3.5`, the <xref:System.Web.UI.WebControls.Menu> control uses HTML `table` elements and inline styles.  
   

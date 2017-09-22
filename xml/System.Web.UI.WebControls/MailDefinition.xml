@@ -197,9 +197,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent using the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent using the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method.  
   
- The <xref:System.Web.Mail.MailMessage.BodyFormat%2A> property must be set to indicate whether the mail message should be formatted as plain text (<xref:System.Web.Mail.MailFormat?displayProperty=fullName>) or HTML (<xref:System.Web.Mail.MailFormat?displayProperty=fullName>).  
+ The <xref:System.Web.Mail.MailMessage.BodyFormat%2A> property must be set to indicate whether the mail message should be formatted as plain text (<xref:System.Web.Mail.MailFormat?displayProperty=nameWithType>) or HTML (<xref:System.Web.Mail.MailFormat?displayProperty=nameWithType>).  
   
  The `recipients` parameter contains a comma-separated list of recipients of the e-mail message. If the `recipients` parameter contains an improperly formatted Internet e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
   
@@ -266,7 +266,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent with the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.CreateMailMessage%2A> method creates a new <xref:System.Net.Mail.MailMessage> object that can be sent with the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method.  
   
  The `recipients` parameter contains a comma-separated list of recipients of the e-mail message. If the `recipients` parameter contains an improperly formatted Internet e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
   
@@ -369,7 +369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property contains the e-mail address of the sender of the e-mail message. If the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property is left blank, or contains an improperly formed e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=fullName> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
+ The <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property contains the e-mail address of the sender of the e-mail message. If the <xref:System.Web.UI.WebControls.MailDefinition.From%2A> property is left blank, or contains an improperly formed e-mail address, the <xref:System.Net.Mail.SmtpClient.Send%2A?displayProperty=nameWithType> method throws an <xref:System.Web.HttpException> exception and the e-mail message is not sent.  
   
    
   

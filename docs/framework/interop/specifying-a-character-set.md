@@ -25,7 +25,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Specifying a Character Set
-The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=fullName> field controls string marshaling and determines how platform invoke finds function names in a DLL. This topic describes both behaviors.  
+The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field controls string marshaling and determines how platform invoke finds function names in a DLL. This topic describes both behaviors.  
   
  Some APIs export two versions of functions that take string arguments: narrow (ANSI) and wide (Unicode). The Win32 API, for instance, includes the following entry-point names for the **MessageBox** function:  
   
@@ -48,7 +48,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
 -   Name matching  
   
-     When the <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=fullName> field is **true**, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails when it cannot locate the exact spelling.  
+     When the <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=nameWithType> field is **true**, as it is by default in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], platform invoke searches only for the name you specify. For example, if you specify **MessageBox**, platform invoke searches for **MessageBox** and fails when it cannot locate the exact spelling.  
   
      When the **ExactSpelling** field is **false**, as it is by default in C++ and C#, platform invoke searches for the unmangled alias first (**MessageBox**), then the mangled name (**MessageBoxA**) if the unmangled alias is not found. Notice that ANSI name-matching behavior differs from Unicode name-matching behavior.  
   
@@ -71,7 +71,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
 ## Specifying a Character Set in Visual Basic  
  The following example declares the **MessageBox** function three times, each time with different character-set behavior. You can specify character-set behavior in Visual Basic by adding the **Ansi**, **Unicode**, or **Auto** keyword to the declaration statement.  
   
- If you omit the character-set keyword, as is done in the first declaration statement, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=fullName> field defaults to the ANSI character set. The second and third statements in the example explicitly specify a character set with a keyword.  
+ If you omit the character-set keyword, as is done in the first declaration statement, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field defaults to the ANSI character set. The second and third statements in the example explicitly specify a character set with a keyword.  
   
 ```vb  
 Imports System.Runtime.InteropServices  
@@ -92,7 +92,7 @@ End Class
 ```  
   
 ## Specifying a Character Set in C# and C++  
- The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=fullName> field identifies the underlying character set as ANSI or Unicode. The character set controls how string arguments to a method should be marshaled. Use one of the following forms to indicate the character set:  
+ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field identifies the underlying character set as ANSI or Unicode. The character set controls how string arguments to a method should be marshaled. Use one of the following forms to indicate the character set:  
   
 ```csharp  
 [DllImport("dllname", CharSet=CharSet.Ansi)]  

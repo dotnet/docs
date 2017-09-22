@@ -62,7 +62,7 @@
   
  You can use the <xref:System.Windows.Forms.MaskedTextBox.MaskFull%2A> property to verify whether or not the user has entered all of the required input. The <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property will always retrieve the user's input formatted according to the mask and the <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> property.  
   
- The <xref:System.Windows.Forms.MaskedTextBox> control actually defers all mask processing to the <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> class specified by the <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property. This standard provider supports all Unicode characters except for surrogates and vertically combined characters; however, the <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> property can be used to restrict input to the characters sets a-z, A-Z, and 0-9.  
+ The <xref:System.Windows.Forms.MaskedTextBox> control actually defers all mask processing to the <xref:System.ComponentModel.MaskedTextProvider?displayProperty=nameWithType> class specified by the <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property. This standard provider supports all Unicode characters except for surrogates and vertically combined characters; however, the <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> property can be used to restrict input to the characters sets a-z, A-Z, and 0-9.  
   
  Masks do not necessarily guarantee that a user's input will represent a valid value for a given type; for example, -9 could be entered for an age in years. You can verify that a user's input represents a valid value by assigning an instance of that value's type to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property. You can detect whether the user removes focus from <xref:System.Windows.Forms.MaskedTextBox> when it contains an invalid value by monitoring for the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event. If type validation succeeds, the object representing the value will be available through the <xref:System.Windows.Forms.TypeValidationEventArgs.ReturnValue%2A> property of the <xref:System.Windows.Forms.TypeValidationEventArgs> parameter.  
   
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `maskedTextProvider` parameter defines the masking language used by <xref:System.Windows.Forms.MaskedTextBox>. It is responsible for parsing the mask and determining whether user input conforms to the current mask position. You can derive a new class from <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> to define your own custom masking language, and use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.ComponentModel.MaskedTextProvider%29> constructor to replace the standard <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName>.  
+ The `maskedTextProvider` parameter defines the masking language used by <xref:System.Windows.Forms.MaskedTextBox>. It is responsible for parsing the mask and determining whether user input conforms to the current mask position. You can derive a new class from <xref:System.ComponentModel.MaskedTextProvider?displayProperty=nameWithType> to define your own custom masking language, and use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.ComponentModel.MaskedTextProvider%29> constructor to replace the standard <xref:System.ComponentModel.MaskedTextProvider?displayProperty=nameWithType>.  
   
  If you want to use the default masking language and supply your own input mask, you do not need to use this constructor. Instead, you can either use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.String%29> constructor, or use the default constructor then set the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
@@ -169,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.String%29> constructor uses the standard <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> with the input `mask` to parse user input into the <xref:System.Windows.Forms.MaskedTextBox>.  
+ The <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.String%29> constructor uses the standard <xref:System.ComponentModel.MaskedTextProvider?displayProperty=nameWithType> with the input `mask` to parse user input into the <xref:System.Windows.Forms.MaskedTextBox>.  
   
  If you assign a new mask to the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property, it will override the value set by this constructor.  
   
@@ -859,7 +859,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged> event.  
   
@@ -1014,7 +1014,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.MaskChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.MaskChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.MaskChanged> event.  
   
@@ -1083,7 +1083,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property defines the mask-parsing engine and the masking language used by the <xref:System.Windows.Forms.MaskedTextBox> control. The default provider is the <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> class; however, a custom provider can be specified using the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.ComponentModel.MaskedTextProvider%29> constructor.  
+ The <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property defines the mask-parsing engine and the masking language used by the <xref:System.Windows.Forms.MaskedTextBox> control. The default provider is the <xref:System.ComponentModel.MaskedTextProvider?displayProperty=nameWithType> class; however, a custom provider can be specified using the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.ComponentModel.MaskedTextProvider%29> constructor.  
   
  <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> cannot be set directly. However, setting some of the properties of <xref:System.Windows.Forms.MaskedTextBox>—such as <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>, <xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A>, <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A>, and <xref:System.Windows.Forms.MaskedTextBox.Culture%2A>—may internally cause the creation of a new <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A>.  
   
@@ -1169,7 +1169,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event.  
   
@@ -2091,7 +2091,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TextAlignChanged> event.  
   
@@ -2182,7 +2182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This version of the <xref:System.Windows.Forms.MaskedTextBox.ToString%2A> method calls the base class implementation of this method, <xref:System.Windows.Forms.TextBoxBase.ToString%2A?displayProperty=fullName>, then appends the input string after processing by the mask. This method honors properties that alter the appearance of the formatted string, with the following exceptions:  
+ This version of the <xref:System.Windows.Forms.MaskedTextBox.ToString%2A> method calls the base class implementation of this method, <xref:System.Windows.Forms.TextBoxBase.ToString%2A?displayProperty=nameWithType>, then appends the input string after processing by the mask. This method honors properties that alter the appearance of the formatted string, with the following exceptions:  
   
 -   The returned string always includes prompt and literal characters, regardless of the values of the <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> property.  
   
@@ -2210,7 +2210,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MaskedTextBox> control will optionally validate user input against the type defined by its <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=fullName> property. When this property is not `null`, the following series of events occurs:  
+ The <xref:System.Windows.Forms.MaskedTextBox> control will optionally validate user input against the type defined by its <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=nameWithType> property. When this property is not `null`, the following series of events occurs:  
   
 1.  The validation sequence begins when one of the following occurs:  
   
@@ -2228,7 +2228,7 @@
   
 5.  If the event is not canceled in step 3, the standard control validation event <xref:System.Windows.Forms.Control.Validated> is raised.  
   
- If the <xref:System.Windows.Forms.TypeValidationEventArgs.Cancel%2A> property is set to `true` in the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler, the event will be canceled and the <xref:System.Windows.Forms.MaskedTextBox> control retains focus, unless the subsequent <xref:System.Windows.Forms.Control.Validating> event sets its version of the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=fullName> property back to `false`.  
+ If the <xref:System.Windows.Forms.TypeValidationEventArgs.Cancel%2A> property is set to `true` in the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler, the event will be canceled and the <xref:System.Windows.Forms.MaskedTextBox> control retains focus, unless the subsequent <xref:System.Windows.Forms.Control.Validating> event sets its version of the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=nameWithType> property back to `false`.  
   
    
   

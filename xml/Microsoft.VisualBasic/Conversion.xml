@@ -1950,7 +1950,7 @@ Val("&HFFFF") 
 ```  
   
 > [!NOTE]
->  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When different decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=fullName> when converting a string to a `Double`.  
+>  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When different decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`.  
   
 > [!NOTE]
 >  An <xref:System.InvalidCastException> exception might be raised in response to certain uncommon number formats. For example, the following code raises this exception.  
@@ -2024,7 +2024,7 @@ Val("&HFFFF") 
 ```  
   
 > [!NOTE]
->  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=fullName> when converting a string to a `Double`.  
+>  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`.  
   
 > [!NOTE]
 >  An <xref:System.InvalidCastException> exception might be raised in response to certain uncommon number formats. For example, the following code raises this exception.  
@@ -2098,7 +2098,7 @@ Val("&HFFFF") 
 ```  
   
 > [!NOTE]
->  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=fullName> when converting a string to a `Double`.  
+>  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`.  
   
 > [!NOTE]
 >  An <xref:System.InvalidCastException> exception might be raised in response to certain uncommon number formats. For example, the following code raises this exception.  

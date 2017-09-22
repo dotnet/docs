@@ -93,7 +93,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 With versions 3.0 and 5.0, C# had added some impressive features in an object oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many features that delighted users of the language. Here are some of them:
 
-- [Static imports](../language-reference/keywords/using-static)
+- [Static imports](../language-reference/keywords/using-static.md)
 - [Exception filters](https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/)
 - [Property initializers](http://geekswithblogs.net/WinAZ/archive/2015/06/30/whatrsquos-new-in-c-6.0-auto-property-initializers.aspx)
 - [Expression bodied members](https://lostechies.com/jimmybogard/2015/12/17/c-6-feature-review-expression-bodied-function-members/)

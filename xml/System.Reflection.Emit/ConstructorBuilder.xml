@@ -43,9 +43,9 @@
   
  If you use <xref:System.Reflection.Emit.ConstructorBuilder> to define a constructor for your dynamic type, a default constructor is not provided. You have the following options for providing a default constructor in addition to the constructor you defined:  
   
--   If you want a default constructor that simply calls the default constructor of the base class, you can use the <xref:System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor%2A?displayProperty=fullName> method to create one (and optionally restrict access to it). Do not provide an implementation for this default constructor. If you do, an exception is thrown when you try to use the constructor. No exception is thrown when the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> method is called.  
+-   If you want a default constructor that simply calls the default constructor of the base class, you can use the <xref:System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor%2A?displayProperty=nameWithType> method to create one (and optionally restrict access to it). Do not provide an implementation for this default constructor. If you do, an exception is thrown when you try to use the constructor. No exception is thrown when the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> method is called.  
   
--   If you want a default constructor that does something more than simply calling the default constructor of the base class, or that calls another constructor of the base class, or that does something else entirely, you must use the <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A?displayProperty=fullName> method to create a <xref:System.Reflection.Emit.ConstructorBuilder>, and provide your own implementation.  
+-   If you want a default constructor that does something more than simply calling the default constructor of the base class, or that calls another constructor of the base class, or that does something else entirely, you must use the <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A?displayProperty=nameWithType> method to create a <xref:System.Reflection.Emit.ConstructorBuilder>, and provide your own implementation.  
   
    
   
@@ -520,7 +520,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is not supported until after the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> method has been called. In the .NET Framework versions 1.0 and 1.1, <xref:System.InvalidOperationException> is thrown. In the .NET Framework version 2.0, <xref:System.NotSupportedException> is thrown.  
+ This property is not supported until after the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> method has been called. In the .NET Framework versions 1.0 and 1.1, <xref:System.InvalidOperationException> is thrown. In the .NET Framework version 2.0, <xref:System.NotSupportedException> is thrown.  
   
    
   

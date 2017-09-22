@@ -161,7 +161,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the user requests a valid <xref:System.ComponentModel.License>, the user must give the context in which the <xref:System.ComponentModel.License> is valid to the <xref:System.ComponentModel.LicenseProvider.GetLicense%2A?displayProperty=fullName> method. The <xref:System.ComponentModel.LicenseContext> returned by this property should be passed to all <xref:System.ComponentModel.LicenseProvider> classes.  
+ When the user requests a valid <xref:System.ComponentModel.License>, the user must give the context in which the <xref:System.ComponentModel.License> is valid to the <xref:System.ComponentModel.LicenseProvider.GetLicense%2A?displayProperty=nameWithType> method. The <xref:System.ComponentModel.LicenseContext> returned by this property should be passed to all <xref:System.ComponentModel.LicenseProvider> classes.  
   
  ]]></format>
         </remarks>

@@ -31,7 +31,7 @@
   
  To have the derived button control display an image, set the <xref:System.Windows.Forms.ButtonBase.Image%2A> property or the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> and <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> properties. The image can be aligned on the button control by setting the <xref:System.Windows.Forms.ButtonBase.ImageAlign%2A> property. Likewise, to align the <xref:System.Windows.Forms.Control.Text%2A> displayed on the button control, set the <xref:System.Windows.Forms.ButtonBase.TextAlign%2A> property.  
   
- The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=fullName>, the user's operating system determines the appearance of the control.  
+ The <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property determines the style and appearance of the control. If the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType>, the user's operating system determines the appearance of the control.  
   
  ]]></format>
     </remarks>
@@ -150,7 +150,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ButtonBase.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ButtonBase.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ButtonBase>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.CheckBox>. Then name the instance `ButtonBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ButtonBase.AutoSizeChanged> event.  
   
@@ -236,7 +236,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.ButtonBase> class, this property always returns the `Disable` value of <xref:System.Windows.Forms.ImeMode?displayProperty=fullName>.  
+ As implemented in the <xref:System.Windows.Forms.ButtonBase> class, this property always returns the `Disable` value of <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -365,7 +365,7 @@
    
   
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=fullName> namespace is included.  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace is included.  
   
  [!code-cpp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CS/source.cs#1)]
@@ -437,7 +437,7 @@
    
   
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=fullName> namespace is included.  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace is included.  
   
  [!code-cpp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CS/source.cs#1)]
@@ -474,7 +474,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=fullName> namespace is included.  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace is included.  
   
  [!code-cpp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CS/source.cs#1)]
@@ -524,7 +524,7 @@
  When the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> or <xref:System.Windows.Forms.ButtonBase.ImageList%2A> properties are set, the <xref:System.Windows.Forms.ButtonBase.Image%2A> property is set to its default value, `null`.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property value is changed to `null`, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property returns its default value, -1. However, the assigned <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value is retained internally and used when another <xref:System.Windows.Forms.ImageList> object is assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property. If the new <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property has an <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A?displayProperty=fullName> property value that is less than or equal to the value assigned to the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property minus one (to account for the collection being a zero-based index), the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property value is adjusted to one less than the <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A> property value. For example, consider a button control whose <xref:System.Windows.Forms.ImageList> has three images and whose <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property is set to 2. If a new <xref:System.Windows.Forms.ImageList> that has only two images is assigned to the button, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value changes to 1.  
+>  If the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property value is changed to `null`, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property returns its default value, -1. However, the assigned <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value is retained internally and used when another <xref:System.Windows.Forms.ImageList> object is assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property. If the new <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property has an <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A?displayProperty=nameWithType> property value that is less than or equal to the value assigned to the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property minus one (to account for the collection being a zero-based index), the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property value is adjusted to one less than the <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A> property value. For example, consider a button control whose <xref:System.Windows.Forms.ImageList> has three images and whose <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property is set to 2. If a new <xref:System.Windows.Forms.ImageList> that has only two images is assigned to the button, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value changes to 1.  
   
    
   
@@ -612,7 +612,7 @@
  When the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> or <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property is set, the <xref:System.Windows.Forms.ButtonBase.Image%2A> property is set `null`, which is its default value.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property value is changed to `null`, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property returns its default value, -1. However, the assigned <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value is retained internally and used when another <xref:System.Windows.Forms.ImageList> is assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property. If the new <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property has an <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A?displayProperty=fullName> property value that is less than or equal to the value assigned to the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property minus one (because the collection is a zero-based index), the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property value is adjusted to one less than the <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A> property value. For example, consider a button control whose <xref:System.Windows.Forms.ImageList> has three images and whose <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property is set to 2. If a new <xref:System.Windows.Forms.ImageList> that has only two images is assigned to the button, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value changes to 1.  
+>  If the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property value is changed to `null`, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property returns its default value, -1. However, the assigned <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value is retained internally and used when another <xref:System.Windows.Forms.ImageList> is assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property. If the new <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.ButtonBase.ImageList%2A> property has an <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A?displayProperty=nameWithType> property value that is less than or equal to the value assigned to the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property minus one (because the collection is a zero-based index), the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property value is adjusted to one less than the <xref:System.Windows.Forms.ImageList.ImageCollection.Count%2A> property value. For example, consider a button control whose <xref:System.Windows.Forms.ImageList> has three images and whose <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property is set to 2. If a new <xref:System.Windows.Forms.ImageList> that has only two images is assigned to the button, the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> value changes to 1.  
   
    
   
@@ -1217,7 +1217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=fullName> namespace is included.  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Button> and sets some of its common properties. The result will be a flat button with text on the left and an image on the right. This code requires that you have a bitmap image named `MyBitMap.bmp` stored in the `C:\Graphics` directory, and that a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace is included.  
   
  [!code-cpp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ButtonBase.FlatStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ButtonBase.FlatStyle Example/CS/source.cs#1)]
@@ -1282,7 +1282,7 @@
 ## Remarks  
  The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
   
- The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
+ The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=nameWithType> method with a parameter of `true`.  
   
  ]]></format>
         </remarks>

@@ -246,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Application.GetEnvironmentVariable` method returns the environment variable with the name `name`. This method is similar to <xref:System.Environment.GetEnvironmentVariable%28System.String%29?displayProperty=fullName>, except that this method raises an exception if the environment variable specified by `name` does not exist.  
+ The `My.Application.GetEnvironmentVariable` method returns the environment variable with the name `name`. This method is similar to <xref:System.Environment.GetEnvironmentVariable%28System.String%29?displayProperty=nameWithType>, except that this method raises an exception if the environment variable specified by `name` does not exist.  
   
 ## Availability by Project Type  
   

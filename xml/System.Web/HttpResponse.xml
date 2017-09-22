@@ -52,7 +52,7 @@
  When the three rectangles and the string that appears inside them are drawn, the <xref:System.Drawing.Bitmap> is saved to the <xref:System.IO.Stream> object that is associated with the <xref:System.Web.HttpResponse.OutputStream%2A> property and its format is set to JPEG. The code calls the <xref:System.Drawing.Image.Dispose%2A> and <xref:System.Drawing.Graphics.Dispose%2A> methods to release the resources used by the two drawing objects. Lastly, the code calls the <xref:System.Web.HttpResponse.Flush%2A> method to send the buffered response to the requesting client.  
   
 > [!NOTE]
->  In code, the <xref:System.Web.HttpResponse> object is referred to by the keyword `Response`. For example, `Response.Clear()` refers to the <xref:System.Web.HttpResponse.Clear%2A?displayProperty=fullName> method. The <xref:System.Web.UI.Page> class has a property that is named <xref:System.Web.UI.Page.Response%2A> that exposes the current instance of <xref:System.Web.HttpResponse>.  
+>  In code, the <xref:System.Web.HttpResponse> object is referred to by the keyword `Response`. For example, `Response.Clear()` refers to the <xref:System.Web.HttpResponse.Clear%2A?displayProperty=nameWithType> method. The <xref:System.Web.UI.Page> class has a property that is named <xref:System.Web.UI.Page.Response%2A> that exposes the current instance of <xref:System.Web.HttpResponse>.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse_Samples1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/CS/responsesamplescs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse_Samples1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Samples1/VB/responsesamplesvb.aspx#1)]  -->  
@@ -895,11 +895,11 @@
   
 -   Ensure that you don't call into this API outside the bounds of a single request, because ASP.NET will dispose of the cancellation token at the end of the request. There is no guarantee that the token will ever transition to a canceled state before it is disposed. For example, if the request finishes without the client having disconnected, the token will be disposed without having first been canceled.  
   
--   Do not wait on the <xref:System.Threading.CancellationToken.WaitHandle%2A?displayProperty=fullName>, as this defeats the purpose of an asynchronous notification and can cause deadlocks.  
+-   Do not wait on the <xref:System.Threading.CancellationToken.WaitHandle%2A?displayProperty=nameWithType>, as this defeats the purpose of an asynchronous notification and can cause deadlocks.  
   
--   Do not call the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=fullName> overloads which invoke the callback on the original <xref:System.Threading.SynchronizationContext> object.  
+-   Do not call the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=nameWithType> overloads which invoke the callback on the original <xref:System.Threading.SynchronizationContext> object.  
   
--   Do not use the <xref:System.Web.HttpContext> object or other non-thread-safe ASP.NET intrinsic objects from within the callback provided to the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=fullName> method. The callback may be running concurrently with other ASP.NET or application code.  
+-   Do not use the <xref:System.Web.HttpContext> object or other non-thread-safe ASP.NET intrinsic objects from within the callback provided to the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=nameWithType> method. The callback may be running concurrently with other ASP.NET or application code.  
   
 -   Keep the callback methods short-running and non-blocking.  
   
@@ -1024,7 +1024,7 @@
 ## Remarks  
  ASP.NET includes two intrinsic cookie collections. The collection accessed through the <xref:System.Web.HttpRequest.Cookies%2A> collection of <xref:System.Web.HttpRequest> contains cookies transmitted by the client to the server in the `Cookie` header. The collection accessed through the <xref:System.Web.HttpResponse.Cookies%2A> collection of <xref:System.Web.HttpResponse> contains new cookies created on the server and transmitted to the client in the `Set-Cookie` header.  
   
- After you add a cookie by using the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=fullName> collection, the cookie is immediately available in the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=fullName> collection, even if the response has not been sent to the client.  
+ After you add a cookie by using the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=nameWithType> collection, the cookie is immediately available in the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=nameWithType> collection, even if the response has not been sent to the client.  
   
    
   
@@ -1388,7 +1388,7 @@
   
 -   The connection to the client was terminated. This can occur if the <xref:System.Web.HttpResponse.Close%2A> method was invoked, or if the client stopped execution of the Web page or browsed to another page.  
   
--   The <xref:System.Web.HttpWorkerRequest> object that is handling the request is `null` or the <xref:System.Web.HttpWorkerRequest.IsClientConnected%2A?displayProperty=fullName> method returns `false`. If a custom <xref:System.Web.HttpWorkerRequest> object handles the request, then the <xref:System.Web.HttpWorkerRequest.IsClientConnected%2A?displayProperty=fullName> method might be set based on custom criteria. For example, the custom worker request might force a time-out after a period of time.  
+-   The <xref:System.Web.HttpWorkerRequest> object that is handling the request is `null` or the <xref:System.Web.HttpWorkerRequest.IsClientConnected%2A?displayProperty=nameWithType> method returns `false`. If a custom <xref:System.Web.HttpWorkerRequest> object handles the request, then the <xref:System.Web.HttpWorkerRequest.IsClientConnected%2A?displayProperty=nameWithType> method might be set based on custom criteria. For example, the custom worker request might force a time-out after a period of time.  
   
    
   
@@ -1475,7 +1475,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the .NET Framework version 2.0, when you use the <xref:System.IO.Stream.Write%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method of the IO stream returned by the <xref:System.Web.HttpResponse.OutputStream%2A> property, the following exceptions might be thrown:  
+ Starting with the .NET Framework version 2.0, when you use the <xref:System.IO.Stream.Write%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method of the IO stream returned by the <xref:System.Web.HttpResponse.OutputStream%2A> property, the following exceptions might be thrown:  
   
 -   <xref:System.ArgumentOutOfRangeException>, if the `offset` or `count` parameter is negative or if the `buffer` parameter's length minus the `offset` parameter is less than or equal to zero.  
   
@@ -1619,7 +1619,7 @@
 ## Remarks  
  Calling <xref:System.Web.HttpResponse.Redirect%2A> is equivalent to calling <xref:System.Web.HttpResponse.Redirect%2A> with the second parameter set to `true`.  
   
- <xref:System.Web.HttpResponse.Redirect%2A> calls <xref:System.Web.HttpResponse.End%2A> which throws a <xref:System.Threading.ThreadAbortException> exception upon completion. This exception has a detrimental effect on Web application performance. Therefore, we recommend that instead of this overload you use the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29?displayProperty=fullName> overload and pass `false` for the `endResponse` parameter, and then call the <xref:System.Web.HttpApplication.CompleteRequest%2A> method. For more information, see the <xref:System.Web.HttpResponse.End%2A> method.  
+ <xref:System.Web.HttpResponse.Redirect%2A> calls <xref:System.Web.HttpResponse.End%2A> which throws a <xref:System.Threading.ThreadAbortException> exception upon completion. This exception has a detrimental effect on Web application performance. Therefore, we recommend that instead of this overload you use the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> overload and pass `false` for the `endResponse` parameter, and then call the <xref:System.Web.HttpApplication.CompleteRequest%2A> method. For more information, see the <xref:System.Web.HttpResponse.End%2A> method.  
   
 > [!NOTE]
 >  For mobile pages only, if your application relies on cookieless sessions, or might receive requests from mobile devices that require cookieless sessions, using a tilde (~) in a path can result in creating a new session and potentially losing session data. To set a property on a mobile control with a path such as "~/path", resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> "~/path" before assigning it to the property.  
@@ -1816,7 +1816,7 @@ Response.End();
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=nameWithType> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=nameWithType> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method is then called to determine the URL.  
   
  ASP.NET performs the redirection by returning a 302 HTTP status code.  
   
@@ -1865,7 +1865,7 @@ Response.RedirectToRoute(
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method converts the route name that is passed in `routeName` to a URL by using the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+ This method converts the route name that is passed in `routeName` to a URL by using the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method.  
   
  ASP.NET performs the redirection by returning a 302 HTTP status code.  
   
@@ -1912,7 +1912,7 @@ Response.RedirectToRoute("Products");
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method to determine the URL.  
+ This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method to determine the URL.  
   
  ASP.NET performs the redirection by returning a 302 HTTP status code.  
   
@@ -1963,7 +1963,7 @@ Response.RedirectToRoute(
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=nameWithType> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=nameWithType> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method is then called to determine the URL.  
   
  ASP.NET performs the redirection by returning a 302 HTTP status code.  
   
@@ -2014,7 +2014,7 @@ Response.RedirectToRoute("Product",
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is called to determine the URL.  
+ The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method is called to determine the URL.  
   
  ASP.NET performs the redirection by returning a 302 HTTP status code.  
   
@@ -2063,7 +2063,7 @@ Response.RedirectToRoute("Product",
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.RedirectPermanent%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=nameWithType> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=nameWithType> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method is then called to determine the URL.  
   
  ASP.NET performs the redirection by returning a 301 HTTP status code.  
   
@@ -2112,7 +2112,7 @@ Response.RedirectToRoutePermanent(
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.RedirectPermanent%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method converts the route name that is passed in `routeName` to a URL by using the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+ This method converts the route name that is passed in `routeName` to a URL by using the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method.  
   
  ASP.NET performs the redirection by returning a 301 HTTP status code.  
   
@@ -2159,7 +2159,7 @@ Response.RedirectToRoutePermanent("Products");
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method to determine the URL.  
+ This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method to determine the URL.  
   
  ASP.NET performs the redirection by returning a 301 HTTP status code.  
   
@@ -2210,7 +2210,7 @@ Response.RedirectToRoutePermanent(
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.RedirectPermanent%2A> method with the second parameter set to `false`.  
   
- This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=fullName> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=fullName> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method is then called to determine the URL.  
+ This method converts the object that is passed in `routeValues` to a <xref:System.Web.Routing.RouteValueDictionary?displayProperty=nameWithType> object by using the <xref:System.Web.Routing.RouteValueDictionary.%23ctor%28System.Object%29?displayProperty=nameWithType> constructor. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method is then called to determine the URL.  
   
  ASP.NET performs the redirection by returning a 301 HTTP status code.  
   
@@ -2261,7 +2261,7 @@ Response.RedirectToRoutePermanent("Product",
 ## Remarks  
  This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.HttpResponse.Redirect%28System.String%2CSystem.Boolean%29> method with the second parameter set to `false`.  
   
- This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method to determine the URL.  
+ This method calls the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method to determine the URL.  
   
  ASP.NET performs the redirection by returning a 301 HTTP status code.  
   
@@ -2526,7 +2526,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the value of the <xref:System.Web.HttpWorkerRequest.SupportsAsyncFlush%2A?displayProperty=fullName> property.  
+ This property returns the value of the <xref:System.Web.HttpWorkerRequest.SupportsAsyncFlush%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

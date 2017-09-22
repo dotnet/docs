@@ -34,7 +34,7 @@ Enables the host to specify the application domain manager that will be used to 
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetAppDomainManagerType Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setappdomainmanagertype-method.md)|Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=fullName> class, of the application domain manager that will be used to initialize the default application domain.|  
+|[SetAppDomainManagerType Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setappdomainmanagertype-method.md)|Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=nameWithType> class, of the application domain manager that will be used to initialize the default application domain.|  
 |[SetPropertiesForDefaultAppDomain Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setpropertiesfordefaultappdomain-method.md)|Sets properties that will be used to initialize the default application domain.|  
   
 ## Remarks  

@@ -311,7 +311,7 @@
 ## Remarks  
  The events for this instance can differ from the set of events that the class provides. For example, if the component is site-based, the site can add or remove additional events.  
   
- Implementors can return <xref:System.ComponentModel.EventDescriptorCollection?displayProperty=fullName> if no properties are specified. This method should never return `null`.  
+ Implementors can return <xref:System.ComponentModel.EventDescriptorCollection?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
   
  ]]></format>
         </remarks>
@@ -390,7 +390,7 @@
 ## Remarks  
  The properties for this instance can differ from the set of properties that the class provides. For example, if the component is sited, the site can add or remove additional properties.  
   
- Implementers can return <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> if no properties are specified. This method should never return `null`.  
+ Implementers can return <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=nameWithType> if no properties are specified. This method should never return `null`.  
   
  ]]></format>
         </remarks>
@@ -472,7 +472,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner%2A> method retrieves the object that contains the property member that is described by <xref:System.ComponentModel.PropertyDescriptor> parameter. Typically, this object is required for the <xref:System.ComponentModel.PropertyDescriptor.GetValue%2A?displayProperty=fullName> and <xref:System.ComponentModel.PropertyDescriptor.SetValue%2A?displayProperty=fullName> methods.  
+ The <xref:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner%2A> method retrieves the object that contains the property member that is described by <xref:System.ComponentModel.PropertyDescriptor> parameter. Typically, this object is required for the <xref:System.ComponentModel.PropertyDescriptor.GetValue%2A?displayProperty=nameWithType> and <xref:System.ComponentModel.PropertyDescriptor.SetValue%2A?displayProperty=nameWithType> methods.  
   
  This method should return an object that you can use as follows:  
   

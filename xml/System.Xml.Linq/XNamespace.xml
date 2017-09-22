@@ -29,7 +29,7 @@
 ## Remarks  
  This class represents the XML construct of namespaces.  
   
- Every <xref:System.Xml.Linq.XName> contains an <xref:System.Xml.Linq.XNamespace>. Even if an element is not in a namespace, the element's <xref:System.Xml.Linq.XName> still contains a namespace, <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=fullName>. The <xref:System.Xml.Linq.XName.Namespace%2A?displayProperty=fullName> property is guaranteed to not be `null`.  
+ Every <xref:System.Xml.Linq.XName> contains an <xref:System.Xml.Linq.XNamespace>. Even if an element is not in a namespace, the element's <xref:System.Xml.Linq.XName> still contains a namespace, <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=nameWithType>. The <xref:System.Xml.Linq.XName.Namespace%2A?displayProperty=nameWithType> property is guaranteed to not be `null`.  
   
 ## Creating an XNamespace Object  
  The most common way to create an <xref:System.Xml.Linq.XNamespace> object is to simply assign a string to it. You can then combine the namespace with a local name by using the override of the addition operator. The following example shows this idiom:  

@@ -54,13 +54,13 @@
 ## Remarks  
  <xref:System.Collections.Generic.Stack%601> is implemented as an array.  
   
- Stacks and queues are useful when you need temporary storage for information; that is, when you might want to discard an element after retrieving its value. Use <xref:System.Collections.Generic.Queue%601> if you need to access the information in the same order that it is stored in the collection. Use <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> if you need to access the information in reverse order.  
+ Stacks and queues are useful when you need temporary storage for information; that is, when you might want to discard an element after retrieving its value. Use <xref:System.Collections.Generic.Queue%601> if you need to access the information in the same order that it is stored in the collection. Use <xref:System.Collections.Generic.Stack%601?displayProperty=nameWithType> if you need to access the information in reverse order.  
   
- Use the <xref:System.Collections.Concurrent.ConcurrentStack%601?displayProperty=fullName> and <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=fullName> types when you need to access the collection from multiple threads concurrently.  
+ Use the <xref:System.Collections.Concurrent.ConcurrentStack%601?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType> types when you need to access the collection from multiple threads concurrently.  
   
- A common use for <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> is to preserve variable states during calls to other procedures.  
+ A common use for <xref:System.Collections.Generic.Stack%601?displayProperty=nameWithType> is to preserve variable states during calls to other procedures.  
   
- Three main operations can be performed on a <xref:System.Collections.Generic.Stack%601?displayProperty=fullName> and its elements:  
+ Three main operations can be performed on a <xref:System.Collections.Generic.Stack%601?displayProperty=nameWithType> and its elements:  
   
 -   <xref:System.Collections.Generic.Stack%601.Push%2A> inserts an element at the top of the <xref:System.Collections.Stack>.  
   
@@ -347,7 +347,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
   
@@ -536,7 +536,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -782,7 +782,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -827,7 +827,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>.  
   
@@ -884,7 +884,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  In the rare case where enumerations contend with write accesses, you must lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -926,7 +926,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -1008,7 +1008,7 @@ finally {
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   

@@ -61,14 +61,14 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
 -   **Application model namespaces**  
   
-     Namespaces belonging to a single application model are very often used together, but they are almost never used with namespaces of other application models. For example, the <xref:System.Windows.Forms?displayProperty=fullName> namespace is very rarely used together with the <xref:System.Web.UI?displayProperty=fullName> namespace. The following is a list of well-known application model namespace groups:  
+     Namespaces belonging to a single application model are very often used together, but they are almost never used with namespaces of other application models. For example, the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace is very rarely used together with the <xref:System.Web.UI?displayProperty=nameWithType> namespace. The following is a list of well-known application model namespace groups:  
   
      `System.Windows*`   
      `System.Web.UI*`  
   
      **X DO NOT** give the same name to types in namespaces within a single application model.  
   
-     For example, do not add a type named `Page` to the <xref:System.Web.UI.Adapters?displayProperty=fullName> namespace, because the <xref:System.Web.UI?displayProperty=fullName> namespace already contains a type named `Page`.  
+     For example, do not add a type named `Page` to the <xref:System.Web.UI.Adapters?displayProperty=nameWithType> namespace, because the <xref:System.Web.UI?displayProperty=nameWithType> namespace already contains a type named `Page`.  
   
 -   **Infrastructure namespaces**  
   
@@ -80,7 +80,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
      **X DO NOT** give types names that would conflict with any type in the Core namespaces.  
   
-     For example, never use `Stream` as a type name. It would conflict with <xref:System.IO.Stream?displayProperty=fullName>, a very commonly used type.  
+     For example, never use `Stream` as a type name. It would conflict with <xref:System.IO.Stream?displayProperty=nameWithType>, a very commonly used type.  
   
 -   **Technology namespace groups**  
   

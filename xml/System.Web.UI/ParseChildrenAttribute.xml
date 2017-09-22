@@ -195,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the allowed control type is `null`, meaning that it has not been specified, the default type, which is a <xref:System.Web.UI.Control?displayProperty=fullName> control, is returned.  
+ If the allowed control type is `null`, meaning that it has not been specified, the default type, which is a <xref:System.Web.UI.Control?displayProperty=nameWithType> control, is returned.  
   
    
   

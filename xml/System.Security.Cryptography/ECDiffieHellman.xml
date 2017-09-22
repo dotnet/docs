@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- curve must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method.  
+ curve must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
+ `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=nameWithType> method. Parameters over implicit curves are not supported.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -428,7 +428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method) and must not be implicit.  
+ `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method) and must not be implicit.  
   
  Characteristic-2 curves are not supported on Windows.  
   
@@ -461,7 +461,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=fullName> method. Parameters over implicit curves are not supported.  
+ `parameters` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECParameters.Validate%2A?displayProperty=nameWithType> method. Parameters over implicit curves are not supported.  
   
  Characteristic-2 curves are not supported on Windows.  
   

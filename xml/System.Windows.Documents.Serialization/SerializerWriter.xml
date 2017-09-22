@@ -158,7 +158,7 @@
 ## Remarks  
  `documentSequencePT` or `documentPT` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given print tickets for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given print tickets for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
    
   
@@ -406,7 +406,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -452,7 +452,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -498,7 +498,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -544,7 +544,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -590,7 +590,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -825,7 +825,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -896,7 +896,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -967,7 +967,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -1038,7 +1038,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -1107,7 +1107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  The output <xref:System.IO.Stream> of the write operation is normally specified as a parameter to the constructor of the derived class that implements <xref:System.Windows.Documents.Serialization.SerializerWriter>.  
   
@@ -1148,7 +1148,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
   
@@ -1191,7 +1191,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
   
@@ -1234,7 +1234,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
   
@@ -1277,7 +1277,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
   
@@ -1320,7 +1320,7 @@
 ## Remarks  
  `printTicket` can be `null` if there are no preferred print settings.  
   
- This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=fullName> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ This method does not validate or modify the given `printTicket` for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A?displayProperty=nameWithType> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
   
  `userState` is passed to the <xref:System.Windows.Documents.Serialization.WritingCompletedEventHandler> when the <xref:System.Windows.Documents.Serialization.SerializerWriter.WritingCompleted> event occurs.  
   

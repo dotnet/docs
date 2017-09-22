@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can get a collection of <xref:System.ServiceModel.Dispatcher.FaultContractInfo> objects by accessing the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A?displayProperty=fullName> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.FaultContractInfos%2A?displayProperty=fullName> properties. The <xref:System.ServiceModel.Dispatcher.FaultContractInfo> class exposes the action of the SOAP fault and the detail type that is serialized into the SOAP fault.  
+ You can get a collection of <xref:System.ServiceModel.Dispatcher.FaultContractInfo> objects by accessing the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.FaultContractInfos%2A?displayProperty=nameWithType> properties. The <xref:System.ServiceModel.Dispatcher.FaultContractInfo> class exposes the action of the SOAP fault and the detail type that is serialized into the SOAP fault.  
   
  ]]></format>
     </remarks>

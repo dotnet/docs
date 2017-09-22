@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Control.CreateControlCollection%2A?displayProperty=fullName> method is normally used to create a <xref:System.Web.UI.ControlCollection?displayProperty=fullName> object for storing the child controls of a Web Server control. In this implementation of the method, an <xref:System.Web.UI.EmptyControlCollection?displayProperty=fullName> collection is always returned to indicate that child controls are not allowed.  
+ The <xref:System.Web.UI.Control.CreateControlCollection%2A?displayProperty=nameWithType> method is normally used to create a <xref:System.Web.UI.ControlCollection?displayProperty=nameWithType> object for storing the child controls of a Web Server control. In this implementation of the method, an <xref:System.Web.UI.EmptyControlCollection?displayProperty=nameWithType> collection is always returned to indicate that child controls are not allowed.  
   
  ]]></format>
         </remarks>
@@ -354,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.HiddenField.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType> object.  
   
  ]]></format>
         </remarks>

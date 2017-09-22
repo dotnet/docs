@@ -18,7 +18,7 @@
 ## Remarks  
  This class is primarily used by designer applications. These applications may need to report the dependency property characteristics through property windows or other tools used for editing property values.  
   
- In order to check a specific property to determine whether it has <xref:System.ComponentModel.DependencyPropertyDescriptor> available to serve as a <xref:System.ComponentModel.PropertyDescriptor>, call either <xref:System.ComponentModel.DependencyPropertyDescriptor.FromProperty%28System.ComponentModel.PropertyDescriptor%29?displayProperty=fullName>, or <xref:System.ComponentModel.DependencyPropertyDescriptor.FromName%2A?displayProperty=fullName>. If either method returns `null`, then the property is not a dependency property. If the method returns a valid <xref:System.ComponentModel.DependencyPropertyDescriptor> , then the property is a dependency property.  
+ In order to check a specific property to determine whether it has <xref:System.ComponentModel.DependencyPropertyDescriptor> available to serve as a <xref:System.ComponentModel.PropertyDescriptor>, call either <xref:System.ComponentModel.DependencyPropertyDescriptor.FromProperty%28System.ComponentModel.PropertyDescriptor%29?displayProperty=nameWithType>, or <xref:System.ComponentModel.DependencyPropertyDescriptor.FromName%2A?displayProperty=nameWithType>. If either method returns `null`, then the property is not a dependency property. If the method returns a valid <xref:System.ComponentModel.DependencyPropertyDescriptor> , then the property is a dependency property.  
   
  ]]></format>
     </remarks>

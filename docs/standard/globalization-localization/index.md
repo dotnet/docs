@@ -61,7 +61,7 @@ Developing a [world-ready application](http://msdn.microsoft.com/goglobal/bb9784
  Describes the best practices to follow for globalization, localization, and developing world-ready ASP.NET applications.  
   
 ## Reference  
- <xref:System.Globalization?displayProperty=fullName> namespace  
+ <xref:System.Globalization?displayProperty=nameWithType> namespace  
  Contains classes that define culture-related information, including the language, the country/region, the calendars in use, the format patterns for dates, currency, and numbers, and the sort order for strings.  
   
  <xref:System.Resources> namespace  

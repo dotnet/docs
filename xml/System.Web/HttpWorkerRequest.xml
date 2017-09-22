@@ -2778,7 +2778,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you are implementing your own hosting environment, you may to override this property to return the location of your environment's root configuration file. An example of this is the <xref:System.Web.Hosting.SimpleWorkerRequest> class which provides a simple implementation of the <xref:System.Web.HttpWorkerRequest>. The <xref:System.Web.Hosting.SimpleWorkerRequest.RootWebConfigPath%2A?displayProperty=fullName> property of <xref:System.Web.Hosting.SimpleWorkerRequest> class overrides the <xref:System.Web.HttpWorkerRequest.RootWebConfigPath%2A> property of <xref:System.Web.HttpWorkerRequest> class.  
+ If you are implementing your own hosting environment, you may to override this property to return the location of your environment's root configuration file. An example of this is the <xref:System.Web.Hosting.SimpleWorkerRequest> class which provides a simple implementation of the <xref:System.Web.HttpWorkerRequest>. The <xref:System.Web.Hosting.SimpleWorkerRequest.RootWebConfigPath%2A?displayProperty=nameWithType> property of <xref:System.Web.Hosting.SimpleWorkerRequest> class overrides the <xref:System.Web.HttpWorkerRequest.RootWebConfigPath%2A> property of <xref:System.Web.HttpWorkerRequest> class.  
   
  ]]></format>
         </remarks>

@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Description.MessageDescription> is loaded from a class marked by the <xref:System.ServiceModel.MessageContractAttribute?displayProperty=fullName>, the <xref:System.ServiceModel.Description.MessagePartDescription.MemberInfo%2A> property contains the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> or the <xref:System.Reflection.FieldInfo?displayProperty=fullName> from which the part was loaded.  
+ If the <xref:System.ServiceModel.Description.MessageDescription> is loaded from a class marked by the <xref:System.ServiceModel.MessageContractAttribute?displayProperty=nameWithType>, the <xref:System.ServiceModel.Description.MessagePartDescription.MemberInfo%2A> property contains the <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType> or the <xref:System.Reflection.FieldInfo?displayProperty=nameWithType> from which the part was loaded.  
   
  ]]></format>
         </remarks>

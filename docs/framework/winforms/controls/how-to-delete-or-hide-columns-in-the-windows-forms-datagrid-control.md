@@ -39,7 +39,7 @@ manager: "wpickett"
   
 1.  In the declarations area of your form, declare a new instance of the <xref:System.Windows.Forms.DataGridTableStyle> class.  
   
-2.  Set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=fullName> property to the table in your data source that you want to apply the style to. The following example uses the <xref:System.Windows.Forms.DataGrid.DataMember%2A?displayProperty=fullName> property, which it assumes is already set.  
+2.  Set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A?displayProperty=nameWithType> property to the table in your data source that you want to apply the style to. The following example uses the <xref:System.Windows.Forms.DataGrid.DataMember%2A?displayProperty=nameWithType> property, which it assumes is already set.  
   
 3.  Add the new <xref:System.Windows.Forms.DataGridTableStyle> object to the datagrid's table styles collection.  
   
@@ -86,7 +86,7 @@ manager: "wpickett"
   
 1.  In the declarations area of your form, declare a new instance of the <xref:System.Windows.Forms.DataGridTableStyle> class.  
   
-2.  Set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property of the <xref:System.Windows.Forms.DataGridTableStyle> to the table in your data source that you want to apply the style to. The following code example uses the <xref:System.Windows.Forms.DataGrid.DataMember%2A?displayProperty=fullName> property, which it assumes is already set.  
+2.  Set the <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property of the <xref:System.Windows.Forms.DataGridTableStyle> to the table in your data source that you want to apply the style to. The following code example uses the <xref:System.Windows.Forms.DataGrid.DataMember%2A?displayProperty=nameWithType> property, which it assumes is already set.  
   
 3.  Add the new <xref:System.Windows.Forms.DataGridTableStyle> object to the datagrid's table styles collection.  
   

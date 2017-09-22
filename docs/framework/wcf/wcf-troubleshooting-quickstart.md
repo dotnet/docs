@@ -172,7 +172,7 @@ public class MyServiceHost : ServiceHost
   
 <a name="BKMK_q88"></a>   
 ## I changed the first parameter of an operation from uppercase to lowercase; now my client throws an exception. What's happening?  
- The value of the parameter names in the operation signature are part of the contract and are case-sensitive. Use the <xref:System.ServiceModel.MessageParameterAttribute?displayProperty=fullName> attribute when you need to distinguish between the local parameter name and the metadata that describes the operation for client applications.  
+ The value of the parameter names in the operation signature are part of the contract and are case-sensitive. Use the <xref:System.ServiceModel.MessageParameterAttribute?displayProperty=nameWithType> attribute when you need to distinguish between the local parameter name and the metadata that describes the operation for client applications.  
   
 <a name="BKMK_q99"></a>   
 ## I’m using one of my tracing tools and I get an EndpointNotFoundException. What’s happening?  

@@ -30,7 +30,7 @@
   
 -   To catch SOAP faults on a client when the faults are not part of the service contract.  
   
- Throw <xref:System.ServiceModel.FaultException> objects when you want the string to be passed to the constructor and retrieved by the client by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=fullName> method. If you specify a fault contract of type <xref:System.ServiceModel.FaultException%601?displayProperty=fullName> where the type parameter is <xref:System.String?displayProperty=fullName>, the string value is available as the <xref:System.ServiceModel.FaultException%601.Detail%2A?displayProperty=fullName> property and not by calling <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=fullName>.  
+ Throw <xref:System.ServiceModel.FaultException> objects when you want the string to be passed to the constructor and retrieved by the client by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType> method. If you specify a fault contract of type <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is <xref:System.String?displayProperty=nameWithType>, the string value is available as the <xref:System.ServiceModel.FaultException%601.Detail%2A?displayProperty=nameWithType> property and not by calling <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType>.  
   
  For details, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
@@ -319,7 +319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=fullName> is returned where the type parameter is the matching candidate type.  
+ The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> is returned where the type parameter is the matching candidate type.  
   
  ]]></format>
         </remarks>
@@ -359,7 +359,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=fullName> is returned where the type parameter is the matching candidate type.  
+ The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> is returned where the type parameter is the matching candidate type.  
   
  ]]></format>
         </remarks>

@@ -745,7 +745,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Application.OpenForms` property gets a collection of all the application's open forms. The behavior is identical to the <xref:System.Windows.Forms.Application.OpenForms%2A?displayProperty=fullName> property.  
+ The `My.Application.OpenForms` property gets a collection of all the application's open forms. The behavior is identical to the <xref:System.Windows.Forms.Application.OpenForms%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  The `My.Application.OpenForms` property returns all open forms, regardless of which thread opened them. You should check the <xref:System.Windows.Forms.Control.InvokeRequired%2A> property of each form before accessing it; otherwise, it might throw an <xref:System.InvalidOperationException> exception.  

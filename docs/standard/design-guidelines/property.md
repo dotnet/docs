@@ -50,7 +50,7 @@ Although properties are technically very similar to methods, they are quite diff
 ### Indexed Property Design  
  An indexed property is a special property that can have parameters and can be called with special syntax similar to array indexing.  
   
- Indexed properties are commonly referred to as indexers. Indexers should be used only in APIs that provide access to items in a logical collection. For example, a string is a collection of characters, and the indexer on <xref:System.String?displayProperty=fullName> was added to access its characters.  
+ Indexed properties are commonly referred to as indexers. Indexers should be used only in APIs that provide access to items in a logical collection. For example, a string is a collection of characters, and the indexer on <xref:System.String?displayProperty=nameWithType> was added to access its characters.  
   
  **✓ CONSIDER** using indexers to provide access to data stored in an internal array.  
   
@@ -60,7 +60,7 @@ Although properties are technically very similar to methods, they are quite diff
   
  If the design requires multiple parameters, reconsider whether the property really represents an accessor to a logical collection. If it does not, use methods instead. Consider starting the method name with `Get` or `Set`.  
   
- **X AVOID** indexers with parameter types other than <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.String?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, or an enum.  
+ **X AVOID** indexers with parameter types other than <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Int64?displayProperty=nameWithType>, <xref:System.String?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType>, or an enum.  
   
  If the design requires other types of parameters, strongly reevaluate whether the API really represents an accessor to a logical collection. If it does not, use a method. Consider starting the method name with `Get` or `Set`.  
   

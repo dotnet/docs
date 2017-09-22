@@ -459,7 +459,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
   
    
   
@@ -520,7 +520,7 @@
 ## Remarks  
  A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
   
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
   
    
   
@@ -581,7 +581,7 @@
 ## Remarks  
  A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
   
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
   
    
   
@@ -778,7 +778,7 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Ceiling%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Decimal%29> method.  
+ The following example illustrates the <xref:System.Math.Ceiling%28System.Decimal%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Floor%28System.Decimal%29> method.  
   
  [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
  [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
@@ -832,7 +832,7 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
+ The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
   
  [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
  [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
@@ -1187,7 +1187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `d`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `d`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
  Acceptable values of `d` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside this range, the <xref:System.Math.Cos%2A> method returns `d` unchanged rather than throwing an exception.  
   
@@ -1244,7 +1244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   
@@ -1527,7 +1527,7 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Floor%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Decimal%29> method.  
+ The following example illustrates the <xref:System.Math.Floor%28System.Decimal%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Ceiling%28System.Decimal%29> method.  
   
  [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
  [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
@@ -1581,7 +1581,7 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
+ The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
   
  [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
  [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
@@ -3184,7 +3184,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double?displayProperty=fullName>, <xref:System.Double?displayProperty=fullName>, and <xref:System.Double?displayProperty=fullName>.  
+ The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double?displayProperty=nameWithType>, <xref:System.Double?displayProperty=nameWithType>, and <xref:System.Double?displayProperty=nameWithType>.  
   
 |Parameters|Return value|  
 |----------------|------------------|  
@@ -3288,7 +3288,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 |`d`|<xref:System.Decimal>|A number to be rounded.|  
 |`a`<br /><br /> -or-<br /><br /> `value`|<xref:System.Double>|A double-precision floating-point number to be rounded.|  
 |`decimals`<br /><br /> -or-<br /><br /> `digits`|<xref:System.Int32>|The number of fractional digits in the return value. For <xref:System.Decimal> values, it can range from 0 to 28. For <xref:System.Double> values, it can range from 0 to 15. Note that 15 is the maximum number of integral and fractional digits supported by the <xref:System.Double> type.<br /><br /> Default value: 0, which rounds to an integer|  
-|`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding?displayProperty=fullName>|  
+|`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding?displayProperty=nameWithType>|  
   
 <a name="Returns"></a>   
 ## Return value  
@@ -3298,7 +3298,7 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
 > [!WARNING]
 >  When rounding midpoint values, the rounding algorithm performs an equality test. Because of problems of binary representation and precision in the floating-point format, the value returned by the method can be unexpected. For more information, see [Rounding and precision](#Precision).  
   
- If an overload with a <xref:System.Double> parameter is called with <xref:System.Double.NaN?displayProperty=fullName>, the method returns <xref:System.Double.NaN?displayProperty=fullName>. If it is called with <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, respectively.  
+ If an overload with a <xref:System.Double> parameter is called with <xref:System.Double.NaN?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>. If it is called with <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
   
 <a name="Exceptions"></a>   
 ## Exceptions  
@@ -3332,12 +3332,12 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
  The <xref:System.Math.Round%2A> method supports two rounding conventions for handling midpoint values:  
   
  **Rounding away from zero**  
- Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
   
  Rounding away from zero is the most widely known form of rounding.  
   
  **Rounding to nearest, or banker's rounding**  
- Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
   
  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   
@@ -4373,7 +4373,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
  Acceptable values of `a` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside of this range, the <xref:System.Math.Sin%2A> method returns `a` unchanged rather than throwing an exception.  
   
@@ -4430,7 +4430,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   
@@ -4549,7 +4549,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   
@@ -4604,7 +4604,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   

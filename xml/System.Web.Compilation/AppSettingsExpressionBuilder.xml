@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called when an expression of the form `<%$ AppSettings: someApplicationSetting %>` is encountered in a no-compile page. It retrieves the appropriate value from the key/value pairs in the `<appSettings>` section of the Web.config file. This method overrides <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> by calling the <xref:System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting%2A> method with the <xref:System.Web.UI.BoundPropertyEntry.Expression%2A> property as the `key` parameter, the <xref:System.Web.UI.PropertyEntry.Name%2A> property on the <xref:System.Web.UI.PropertyEntry.PropertyInfo%2A?displayProperty=fullName> property as the `propertyName` parameter, and the <xref:System.Type> of the `target` parameter as the `targetType` parameter.  
+ This method is called when an expression of the form `<%$ AppSettings: someApplicationSetting %>` is encountered in a no-compile page. It retrieves the appropriate value from the key/value pairs in the `<appSettings>` section of the Web.config file. This method overrides <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> by calling the <xref:System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting%2A> method with the <xref:System.Web.UI.BoundPropertyEntry.Expression%2A> property as the `key` parameter, the <xref:System.Web.UI.PropertyEntry.Name%2A> property on the <xref:System.Web.UI.PropertyEntry.PropertyInfo%2A?displayProperty=nameWithType> property as the `propertyName` parameter, and the <xref:System.Type> of the `target` parameter as the `targetType` parameter.  
   
  ]]></format>
         </remarks>

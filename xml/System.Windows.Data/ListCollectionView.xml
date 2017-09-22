@@ -221,7 +221,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `true` if the edited item implements the <xref:System.ComponentModel.IEditableObject?displayProperty=fullName> interface. If <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `false`, call <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> to cause the view to exit the edit state and provide logic to revert the changes on the object that was edited.  
+ <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `true` if the edited item implements the <xref:System.ComponentModel.IEditableObject?displayProperty=nameWithType> interface. If <xref:System.Windows.Data.ListCollectionView.CanCancelEdit%2A> is `false`, call <xref:System.Windows.Data.ListCollectionView.CancelEdit%2A> to cause the view to exit the edit state and provide logic to revert the changes on the object that was edited.  
   
  ]]></format>
         </remarks>

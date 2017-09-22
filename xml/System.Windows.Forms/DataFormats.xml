@@ -63,11 +63,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -93,11 +93,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -125,11 +125,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -157,11 +157,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
    
   
@@ -201,11 +201,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -233,11 +233,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -348,11 +348,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to indicate the CF_HTML clipboard data type. For more information about this format, see [HTML Clipboard Format](http://go.microsoft.com/fwlink/?LinkId=198813).  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -378,11 +378,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -413,11 +413,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -443,11 +443,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -475,11 +475,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -505,11 +505,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -537,11 +537,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -569,11 +569,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  For more information about the RTF format, see the Rich Text Format specification in the MSDN library at http://msdn.microsoft.com/library.  
   
@@ -601,11 +601,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
 > [!NOTE]
 >  The serializable format is specific to Windows Forms only and will not be recognized by applications created outside of Windows Forms.  
@@ -634,11 +634,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
 > [!NOTE]
 >  The string class format is specific to Windows Forms only and will not be recognized by applications created outside of Windows Forms.  
@@ -678,11 +678,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -708,11 +708,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
    
   
@@ -749,11 +749,11 @@
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -779,11 +779,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
    
   
@@ -818,11 +818,11 @@
 ## Remarks  
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
- When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName> methods.  
+ When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   
- To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName> methods.  
+ To see if an object of this type exists, use this field as the format for the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType> methods.  
   
- To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName> methods.  
+ To get an object of this type, use this as the format for the <xref:System.Windows.Forms.IDataObject.GetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>

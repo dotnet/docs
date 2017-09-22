@@ -57,11 +57,11 @@
   
 -   <xref:System.Windows.Forms.TabControl.Selected>  
   
- The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl>, but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection.  
+ The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl>, but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=nameWithType> collection.  
   
  In [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
   
- The following events are not raised for the <xref:System.Windows.Forms.TabControl> class unless there is at least one <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection: <xref:System.Windows.Forms.Control.Click?displayProperty=fullName>, <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseHover?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=fullName> and <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName>. If there is at least one <xref:System.Windows.Forms.TabPage> in the collection, and the user interacts with the tab control's header (where the <xref:System.Windows.Forms.TabPage> names appear), the <xref:System.Windows.Forms.TabControl> raises the appropriate event. However, if the user interaction is within the <xref:System.Windows.Forms.Control.ClientRectangle%2A> of the tab page, the <xref:System.Windows.Forms.TabPage> raises the appropriate event.  
+ The following events are not raised for the <xref:System.Windows.Forms.TabControl> class unless there is at least one <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=nameWithType> collection: <xref:System.Windows.Forms.Control.Click?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseDown?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseUp?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseHover?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType>. If there is at least one <xref:System.Windows.Forms.TabPage> in the collection, and the user interacts with the tab control's header (where the <xref:System.Windows.Forms.TabPage> names appear), the <xref:System.Windows.Forms.TabControl> raises the appropriate event. However, if the user interaction is within the <xref:System.Windows.Forms.Control.ClientRectangle%2A> of the tab page, the <xref:System.Windows.Forms.TabPage> raises the appropriate event.  
   
  Controls contained in a <xref:System.Windows.Forms.TabPage> are not created until the tab page is shown, and any data bindings in these controls are not activated until the tab page is shown.  
   
@@ -489,7 +489,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Deselected> event.  
   
@@ -535,7 +535,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Deselecting> event.  
   
@@ -1834,7 +1834,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event.  
   
@@ -1952,7 +1952,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected> event.  
   
@@ -2021,14 +2021,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this event occurs, you can check the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property to determine its new value. Alternatively, you can handle the <xref:System.Windows.Forms.TabControl.Selected> event and use the <xref:System.Windows.Forms.TabControlEventArgs.TabPageIndex%2A?displayProperty=fullName> property to determine the index of the selected tab page.  
+ When this event occurs, you can check the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property to determine its new value. Alternatively, you can handle the <xref:System.Windows.Forms.TabControl.Selected> event and use the <xref:System.Windows.Forms.TabControlEventArgs.TabPageIndex%2A?displayProperty=nameWithType> property to determine the index of the selected tab page.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event.  
   
@@ -2118,7 +2118,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selecting> event.  
   

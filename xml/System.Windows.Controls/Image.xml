@@ -230,7 +230,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -314,7 +314,7 @@
 <a name="xamlValues_Source"></a>   
 ## XAML Values  
  *imageUri*  
- <xref:System.String?displayProperty=fullName>  
+ <xref:System.String?displayProperty=nameWithType>  
   
  A [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the image file.  
   

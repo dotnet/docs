@@ -320,7 +320,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  If a <xref:System.Web.UI.WebControls.Login.LayoutTemplate%2A> property has been defined for the <xref:System.Web.UI.WebControls.Login> control, the <xref:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties%2A> sets the <xref:System.ComponentModel.BrowsableAttribute> attribute of properties that do not apply when templated to `false` so those properties do not appear in the **Properties** grid.  
   

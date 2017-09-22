@@ -24,7 +24,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.ParametersCallback> delegate represents the method to call for retrieving row data from a provider based on a parameter from the consumer.  
   
- The <xref:System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData%2A?displayProperty=fullName> method contains a <xref:System.Web.UI.WebControls.WebParts.ParametersCallback> delegate parameter. The <xref:System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData%2A> method is used in the <xref:System.Web.UI.WebControls.WebParts.RowToParametersTransformer> class to retrieve row data for transformation.  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData%2A?displayProperty=nameWithType> method contains a <xref:System.Web.UI.WebControls.WebParts.ParametersCallback> delegate parameter. The <xref:System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData%2A> method is used in the <xref:System.Web.UI.WebControls.WebParts.RowToParametersTransformer> class to retrieve row data for transformation.  
   
  ]]></format>
     </remarks>

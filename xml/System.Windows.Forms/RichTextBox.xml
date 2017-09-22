@@ -43,7 +43,7 @@
  Applications that already use <xref:System.Windows.Forms.TextBox> controls can easily be adapted to make use of <xref:System.Windows.Forms.RichTextBox> controls. However, the <xref:System.Windows.Forms.RichTextBox> control does not have the same 64K character capacity limit of the <xref:System.Windows.Forms.TextBox> control. The <xref:System.Windows.Forms.RichTextBox> is typically used to provide text manipulation and display features similar to word processing applications such as Microsoft Word.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.TextBoxBase.Undo%2A?displayProperty=fullName> method does not work with the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.Forms.Control.TextChanged> events.  
+>  The <xref:System.Windows.Forms.TextBoxBase.Undo%2A?displayProperty=nameWithType> method does not work with the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.Forms.Control.TextChanged> events.  
   
    
   
@@ -486,7 +486,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.ContentsResized> event.  
   
@@ -586,7 +586,7 @@
    
   
 ## Examples  
- The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=fullName> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
+ The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
   
  [!code-cpp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CS/source.cs#1)]
@@ -646,7 +646,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.DragEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.DragEnter> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.DragEnter> event.  
   
@@ -1296,7 +1296,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.HScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.HScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.HScroll> event.  
   
@@ -1330,7 +1330,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ImeChange> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.ImeChange> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.ImeChange> event.  
   
@@ -1395,7 +1395,7 @@
    
   
 ## Examples  
- The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=fullName> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
+ The following code example contains an event handler for the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event. The event handler processes link clicks within the document of a <xref:System.Windows.Forms.RichTextBox> control and launches an instance of the default browser (using the <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> method), displaying the page for the link that was clicked. This example requires that the event handler has been connected to the <xref:System.Windows.Forms.RichTextBox.LinkClicked> event for a <xref:System.Windows.Forms.RichTextBox>.  
   
  [!code-cpp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RichTextBox.LinkClicked Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RichTextBox.LinkClicked Example/CS/source.cs#1)]
@@ -1485,7 +1485,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=fullName>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=fullName>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=nameWithType> members.  
   
  This is a complete example that is ready to run when you copy it to your project.  
   
@@ -1971,7 +1971,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this method to paste data from the clipboard into the control. This version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method is different from the <xref:System.Windows.Forms.TextBoxBase.Paste%2A?displayProperty=fullName> method as it enables you to paste only text in a specified Clipboard format. You can use the <xref:System.Windows.Forms.RichTextBox.CanPaste%2A> method to determine whether the data within the Clipboard is in the specified Clipboard format. You can then call this version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method to ensure that the paste operation is made with the appropriate data format.  
+ You can use this method to paste data from the clipboard into the control. This version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method is different from the <xref:System.Windows.Forms.TextBoxBase.Paste%2A?displayProperty=nameWithType> method as it enables you to paste only text in a specified Clipboard format. You can use the <xref:System.Windows.Forms.RichTextBox.CanPaste%2A> method to determine whether the data within the Clipboard is in the specified Clipboard format. You can then call this version of the <xref:System.Windows.Forms.RichTextBox.Paste%2A> method to ensure that the paste operation is made with the appropriate data format.  
   
    
   
@@ -2037,7 +2037,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.Protected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.Protected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.Protected> event.  
   
@@ -2348,7 +2348,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=fullName>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=fullName>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=nameWithType> members.  
   
  This is a complete example that is ready to run when you copy it to your project.  
   
@@ -2681,7 +2681,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event.  
   
@@ -3291,7 +3291,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.VScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RichTextBox.VScroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RichTextBox> named `RichTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RichTextBox.VScroll> event.  
   

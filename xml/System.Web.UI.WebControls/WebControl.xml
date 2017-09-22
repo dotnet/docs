@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebControl> class using the specified <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> value.  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebControl> class using the specified <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType> value.  
   
  The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.WebControl>.  
   
@@ -233,7 +233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To render attributes and styles for a Web Server control on the client, you typically call the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods to insert each attribute and style individually to the <xref:System.Web.UI.HtmlTextWriter> output stream. To simplify the process, this method encapsulates all calls to the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods for every attribute and style associated with the Web server control. All attributes and styles are inserted into the <xref:System.Web.UI.HtmlTextWriter> output stream in a single method call. This method is typically overridden by control developers in derived classes to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for the class.  
+ To render attributes and styles for a Web Server control on the client, you typically call the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=nameWithType> methods to insert each attribute and style individually to the <xref:System.Web.UI.HtmlTextWriter> output stream. To simplify the process, this method encapsulates all calls to the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=nameWithType> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=nameWithType> methods for every attribute and style associated with the Web server control. All attributes and styles are inserted into the <xref:System.Web.UI.HtmlTextWriter> output stream in a single method call. This method is typically overridden by control developers in derived classes to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for the class.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method cannot be used to insert client script. To use client script, see the <xref:System.Web.UI.ClientScriptManager> class.  
@@ -364,7 +364,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property to specify the background color of the Web server control. This property is set using a <xref:System.Drawing.Color?displayProperty=fullName> object.  
+ Use the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property to specify the background color of the Web server control. This property is set using a <xref:System.Drawing.Color?displayProperty=nameWithType> object.  
   
 > [!NOTE]
 >  This property will render for only certain controls. For example, <xref:System.Web.UI.WebControls.Table>, <xref:System.Web.UI.WebControls.Panel>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Calendar>, and <xref:System.Web.UI.WebControls.ValidationSummary> will render this property. It will also work for <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList> and <xref:System.Web.UI.WebControls.DataList> if their `RepeatLayout` property is `RepeatLayout.Table`, not `RepeatLayout.Flow`.  
@@ -1464,9 +1464,9 @@ void Application_Start(object sender, EventArgs e)
  When you use Visual Studio to upgrade a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the `controlRenderingCompatibilityVersion` attribute in the Web.config file (which sets the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property) to the earlier version number. Because the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property always returns `true` when the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property is lower than 4.0, this causes Web controls to render HTML for disabled controls as they did in the earlier version. If you want an upgraded Web site to render HTML using the algorithm introduced in ASP.NET 4, you can change or remove the `controlRenderingCompatibilityVersion` attribute. For more information, see the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property.  
   
 ## Setting a Disabled Appearance By Using CSS  
- If the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property of a control is `false` and the control is disabled, ASP.NET sets the `class` attribute of the rendered HTML element to the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property. The default value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property is "aspNetDisabled".  
+ If the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property of a control is `false` and the control is disabled, ASP.NET sets the `class` attribute of the rendered HTML element to the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=nameWithType> property. The default value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=nameWithType> property is "aspNetDisabled".  
   
- To provide a disabled appearance for disabled controls, you must define a CSS rule for the class that is represented by the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property.  
+ To provide a disabled appearance for disabled controls, you must define a CSS rule for the class that is represented by the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=nameWithType> property.  
   
  The HTML element that is rendered for a control might have more than one value in its `class` attribute if there is a value in its <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property. For more information, see the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property.  
   

@@ -42,7 +42,7 @@
    
   
 ## Examples  
- The following code sample demonstrates how to implement properties in a dynamic type using a `PropertyBuilder` obtained via <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A?displayProperty=fullName> to create the property framework and an associated <xref:System.Reflection.Emit.MethodBuilder> to implement the IL logic within the property.  
+ The following code sample demonstrates how to implement properties in a dynamic type using a `PropertyBuilder` obtained via <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A?displayProperty=nameWithType> to create the property framework and an associated <xref:System.Reflection.Emit.MethodBuilder> to implement the IL logic within the property.  
   
  [!code-cpp[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/CPP/source.cpp#1)]
  [!code-csharp[System.Reflection.Emit.PropertyBuilder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.PropertyBuilder Example/CS/source.cs#1)]
@@ -911,7 +911,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=fullName>.  
+ To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -955,7 +955,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=fullName>.  
+ To set the value of a property, reflect on the property's parent type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>, retrieve the <xref:System.Reflection.PropertyInfo> object from the type, and call <xref:System.Reflection.PropertyInfo.SetValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

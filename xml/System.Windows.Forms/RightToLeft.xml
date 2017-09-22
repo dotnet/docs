@@ -20,7 +20,7 @@
  When you retrieve the value of the `RightToLeft` property from <xref:System.Windows.Forms.ContextMenu>, <xref:System.Windows.Forms.MainMenu>, and <xref:System.Windows.Forms.ProgressBar> you will get the value of <xref:System.Windows.Forms.RightToLeft> you assigned. In contrast, if you are deriving your own class from <xref:System.Windows.Forms.Control>, and you assign a value of `Inherit` to the <xref:System.Windows.Forms.Control.RightToLeft%2A> property, the value returned will be the setting of the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the parent control. If there is no parent control, it will return a value of `No`. Otherwise, it will return a value of `Yes` or `No`, depending on the value that you assigned to the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of your derived class.  
   
 > [!NOTE]
->  For more information about how enabling right-to-left alignment affects Windows Forms controls, see the <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> property.  
+>  For more information about how enabling right-to-left alignment affects Windows Forms controls, see the <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>

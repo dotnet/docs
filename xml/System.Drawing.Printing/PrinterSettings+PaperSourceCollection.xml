@@ -20,9 +20,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PaperSourceCollection> contains <xref:System.Drawing.Printing.PaperSource> instances that represents the paper source trays through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PaperSourceCollection> contains <xref:System.Drawing.Printing.PaperSource> instances that represents the paper source trays through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
   
- Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PaperSource> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A> collection.  
+ Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=nameWithType> property to a valid <xref:System.Drawing.Printing.PaperSource> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A> collection.  
   
    
   

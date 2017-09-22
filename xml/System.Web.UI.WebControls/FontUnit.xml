@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Equals%2A> method to determine whether the specified <xref:System.Object?displayProperty=fullName> is equivalent to the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from. For the specified <xref:System.Object?displayProperty=fullName> to be equivalent, the object must be a <xref:System.Web.UI.WebControls.FontUnit> that contains the same values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> and <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> properties as the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from.  
+ Use the <xref:System.Web.UI.WebControls.FontUnit.Equals%2A> method to determine whether the specified <xref:System.Object?displayProperty=nameWithType> is equivalent to the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from. For the specified <xref:System.Object?displayProperty=nameWithType> to be equivalent, the object must be a <xref:System.Web.UI.WebControls.FontUnit> that contains the same values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> and <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> properties as the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from.  
   
  ]]></format>
         </remarks>
@@ -495,7 +495,7 @@
 ## Remarks  
  For the <xref:System.Web.UI.WebControls.FontUnit> objects to be equivalent, each object must have the same values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> and <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> properties.  
   
- The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -549,7 +549,7 @@
 ## Remarks  
  For the <xref:System.Web.UI.WebControls.FontUnit> objects to be not equal to each other, each object must either have different values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property or the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
   
- The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -578,21 +578,21 @@
 ## Remarks  
  Use the static <xref:System.Web.UI.WebControls.FontUnit.Parse%2A> method to convert the specified string to its <xref:System.Web.UI.WebControls.FontUnit> equivalent.  
   
- If the value of the `s` parameter is not `null`, not <xref:System.String?displayProperty=fullName>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ If the value of the `s` parameter is not `null`, not <xref:System.String?displayProperty=nameWithType>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
   
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|The <xref:System.Web.UI.WebControls.FontSize> enumeration equivalent of the `s` parameter.|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
   
- If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=nameWithType>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
   
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.AsUnit`|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> object with its <xref:System.Web.UI.WebControls.Unit.Value%2A> property initialized with the `s` parameter in the current thread's culture.|  
   
- If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=fullName>, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
   
 |Property|Initial Value|  
 |--------------|-------------------|  
@@ -638,21 +638,21 @@
 ## Remarks  
  Use the static <xref:System.Web.UI.WebControls.FontUnit.Parse%2A> method to convert the specified string and culture to its <xref:System.Web.UI.WebControls.FontUnit> equivalent.  
   
- If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=nameWithType>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
   
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|The <xref:System.Web.UI.WebControls.FontSize> enumeration equivalent of the `s` parameter.|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
   
- If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=nameWithType>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
   
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.AsUnit`|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> object with its <xref:System.Web.UI.WebControls.Unit.Value%2A> property initialized with the `s` parameter in the specified culture.|  
   
- If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=fullName>, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
   
 |Property|Initial Value|  
 |--------------|-------------------|  
@@ -827,7 +827,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit> object using a culture-specific format provider for any numeric values that are in the string.  
   
- If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize.AsUnit> value, the returned string is the string equivalent of the unit value that is contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. The numeric portion of the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> value is formatted using the specified `formatProvider`. In other words, when the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize.AsUnit> value, the returned string representation is generated using the <xref:System.Web.UI.WebControls.Unit.ToString%28System.IFormatProvider%29?displayProperty=fullName> method on the unit object that is stored in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
+ If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize.AsUnit> value, the returned string is the string equivalent of the unit value that is contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. The numeric portion of the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> value is formatted using the specified `formatProvider`. In other words, when the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize.AsUnit> value, the returned string representation is generated using the <xref:System.Web.UI.WebControls.Unit.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method on the unit object that is stored in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
   
  If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
   

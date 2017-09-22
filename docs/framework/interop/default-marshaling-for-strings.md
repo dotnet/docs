@@ -24,7 +24,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Default Marshaling for Strings
-Both the <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> classes have similar marshaling behavior.  
+Both the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes have similar marshaling behavior.  
   
  Strings are marshaled as a COM-style `BSTR` type or as a null-terminated string (a character array that ends with a null character). The characters within the string can be marshaled as Unicode (the default on Windows systems) or ANSI.  
   

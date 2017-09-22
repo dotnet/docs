@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Search Strings Using String Methods (C# Programming Guide)
-The [string](../../../csharp/language-reference/keywords/string.md) type, which is an alias for the <xref:System.String?displayProperty=fullName> class, provides a number of useful methods for searching the contents of a string.  
+The [string](../../../csharp/language-reference/keywords/string.md) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string.  
   
 ## Example  
  The following example uses the <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>, <xref:System.String.StartsWith%2A>, and <xref:System.String.EndsWith%2A> methods to search the strings.  

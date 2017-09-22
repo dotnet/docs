@@ -38,33 +38,33 @@
 ## Remarks  
  These enumeration values are returned by the following properties:  
   
--   <xref:System.Type.MemberType%2A?displayProperty=fullName>.  
+-   <xref:System.Type.MemberType%2A?displayProperty=nameWithType>.  
   
--   <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName>.  
+-   <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>.  
   
--   <xref:System.Reflection.ConstructorInfo?displayProperty=fullName>.  
+-   <xref:System.Reflection.ConstructorInfo?displayProperty=nameWithType>.  
   
--   <xref:System.Reflection.EventInfo?displayProperty=fullName>.  
+-   <xref:System.Reflection.EventInfo?displayProperty=nameWithType>.  
   
--   <xref:System.Reflection.FieldInfo?displayProperty=fullName>.  
+-   <xref:System.Reflection.FieldInfo?displayProperty=nameWithType>.  
   
--   <xref:System.Reflection.MethodInfo?displayProperty=fullName>.  
+-   <xref:System.Reflection.MethodInfo?displayProperty=nameWithType>.  
   
--   <xref:System.Reflection.PropertyInfo?displayProperty=fullName>.  
+-   <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType>.  
   
  To obtain the <xref:System.Reflection.MemberTypes> value for a type:  
   
 1.  Get a <xref:System.Type> object that represents that type.  
   
-2.  Retrieve the value of the <xref:System.Type.MemberType%2A?displayProperty=fullName> property.  
+2.  Retrieve the value of the <xref:System.Type.MemberType%2A?displayProperty=nameWithType> property.  
   
  To get the <xref:System.Reflection.MemberTypes> values for the members of a type.:  
   
 1.  Get a <xref:System.Type> object that represents that type.  
   
-2.  Retrieve the <xref:System.Reflection.MemberInfo> array that represents the members of that type by calling the <xref:System.Type.GetMembers%2A?displayProperty=fullName> method.  
+2.  Retrieve the <xref:System.Reflection.MemberInfo> array that represents the members of that type by calling the <xref:System.Type.GetMembers%2A?displayProperty=nameWithType> method.  
   
-3.  Retrieve the value of the From the <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName> property for each member in the array.  A `switch` statement in C# or `Select Case` statement in Visual Basic is typically used to process member types.  
+3.  Retrieve the value of the From the <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType> property for each member in the array.  A `switch` statement in C# or `Select Case` statement in Visual Basic is typically used to process member types.  
   
  <xref:System.Reflection.MemberTypes> matches CorTypeAttr as defined in the corhdr.h file.  
   

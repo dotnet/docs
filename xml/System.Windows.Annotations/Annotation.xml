@@ -311,7 +311,7 @@
 ## Remarks  
   
 > [!NOTE]
->  <xref:System.Windows.Annotations.Annotation.CreationTime%2A> returns             <xref:System.DateTime?displayProperty=fullName> if the annotation was incorrectly created by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation.  
+>  <xref:System.Windows.Annotations.Annotation.CreationTime%2A> returns             <xref:System.DateTime?displayProperty=nameWithType> if the annotation was incorrectly created by using the default <xref:System.Windows.Annotations.Annotation> constructor without parameters.  An <xref:System.Windows.Annotations.Annotation> constructor with parameters should be used to correctly instantiate a new annotation.  
   
  ]]></format>
         </remarks>

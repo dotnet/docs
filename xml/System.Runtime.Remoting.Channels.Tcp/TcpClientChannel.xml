@@ -31,7 +31,7 @@
   
  By default, the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> class uses a binary formatter to serialize all messages.  
   
- A <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.%23ctor%2A>.  
+ A <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel.%23ctor%2A>.  
   
    
   

@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `XmlAttributeCollection` extends the <xref:System.Xml.XmlNamedNodeMap> class by adding strongly typed helper methods. You can use this class to add, remove, or modify attributes in the collection. `XmlAttributeCollection` is returned by the <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=fullName> property.  
+ `XmlAttributeCollection` extends the <xref:System.Xml.XmlNamedNodeMap> class by adding strongly typed helper methods. You can use this class to add, remove, or modify attributes in the collection. `XmlAttributeCollection` is returned by the <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -294,7 +294,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM). It is equivalent to calling <xref:System.Xml.XmlNamedNodeMap.Item%2A?displayProperty=fullName>.  
+ This property is a Microsoft extension to the Document Object Model (DOM). It is equivalent to calling <xref:System.Xml.XmlNamedNodeMap.Item%2A?displayProperty=nameWithType>.  
   
    
   

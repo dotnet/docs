@@ -194,7 +194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create an object ID, implementations of <xref:System.AddIn.Contract.ISerializableObjectContract> can use the <xref:System.Runtime.Serialization.ObjectIDGenerator?displayProperty=fullName> class.  
+ To create an object ID, implementations of <xref:System.AddIn.Contract.ISerializableObjectContract> can use the <xref:System.Runtime.Serialization.ObjectIDGenerator?displayProperty=nameWithType> class.  
   
  ]]></format>
         </remarks>

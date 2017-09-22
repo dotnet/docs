@@ -65,7 +65,7 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
   
 |Term|Description|  
 |----------|-----------------|  
-|*fillRule*|<xref:System.Windows.Media.FillRule?displayProperty=fullName><br /><br /> Specifies whether the                                          <xref:System.Windows.Media.StreamGeometry> uses the                                          <xref:System.Windows.Media.FillRule.EvenOdd> or                                          <xref:System.Windows.Media.FillRule.Nonzero><xref:System.Windows.Media.PathGeometry.FillRule%2A>.<br /><br /> -   `F0` specifies the                                                  <xref:System.Windows.Media.FillRule.EvenOdd> fill rule.<br />-   `F1` specifies the                                                  <xref:System.Windows.Media.FillRule.Nonzero> fill rule.<br /><br /> If you omit this command, the subpath uses the default behavior, which is                                          <xref:System.Windows.Media.FillRule.EvenOdd>. If you specify this command, you must place it first.|  
+|*fillRule*|<xref:System.Windows.Media.FillRule?displayProperty=nameWithType><br /><br /> Specifies whether the                                          <xref:System.Windows.Media.StreamGeometry> uses the                                          <xref:System.Windows.Media.FillRule.EvenOdd> or                                          <xref:System.Windows.Media.FillRule.Nonzero><xref:System.Windows.Media.PathGeometry.FillRule%2A>.<br /><br /> -   `F0` specifies the                                                  <xref:System.Windows.Media.FillRule.EvenOdd> fill rule.<br />-   `F1` specifies the                                                  <xref:System.Windows.Media.FillRule.Nonzero> fill rule.<br /><br /> If you omit this command, the subpath uses the default behavior, which is                                          <xref:System.Windows.Media.FillRule.EvenOdd>. If you specify this command, you must place it first.|  
 |*figureDescription*|A figure composed of a move command, draw commands, and an optional close command.<br /><br /> `moveCommand` `drawCommands`  `[` `closeCommand` `]`|  
 |*moveCommand*|A move command that specifies the start point of the figure. See the                                          [Move Command](#themovecommand) section.|  
 |*drawCommands*|One or more drawing commands that describe the figure's contents. See the                                          [Draw Commands](#drawcommands) section.|  
@@ -81,7 +81,7 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
   
 |Term|Description|  
 |----------|-----------------|  
-|*startPoint*|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The start point of a new figure.|  
+|*startPoint*|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The start point of a new figure.|  
   
  An uppercase                  `M` indicates that                  `startPoint` is an absolute value; a lowercase                  `m` indicates that                  `startPoint` is an offset to the previous point, or (0,0) if none exists. If you list multiple points after the move command, a line is drawn to those points though you specified the line command.  
   
@@ -100,7 +100,7 @@ Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](.
   
 |Term|Description|  
 |----------|-----------------|  
-|*endPoint*|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The end point of the line.|  
+|*endPoint*|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The end point of the line.|  
 
 An uppercase                  `L` indicates that                  `endPoint` is an absolute value; a lowercase                  `l` indicates that                  `endPoint` is an offset to the previous point, or (0,0) if none exists.
 
@@ -114,7 +114,7 @@ An uppercase                  `L` indicates that                  `endPoint` is 
   
 |Term|Description|  
 |----------|-----------------|  
-|*x*|<xref:System.Double?displayProperty=fullName><br /><br /> The x-coordinate of the end point of the line.|  
+|*x*|<xref:System.Double?displayProperty=nameWithType><br /><br /> The x-coordinate of the end point of the line.|  
   
 An uppercase                  `H` indicates that                  `x` is an absolute value; a lowercase                  `h` indicates that                  `x` is an offset to the previous point, or (0,0) if none exists.
   
@@ -128,7 +128,7 @@ An uppercase                  `H` indicates that                  `x` is an abso
   
 |Term|Description|  
 |----------|-----------------|  
-|*y*|<xref:System.Double?displayProperty=fullName><br /><br /> The y-coordinate of the end point of the line.|  
+|*y*|<xref:System.Double?displayProperty=nameWithType><br /><br /> The y-coordinate of the end point of the line.|  
 
 An uppercase                  `V` indicates that                  `y` is an absolute value; a lowercase                  `v` indicates that                  `y` is an offset to the previous point, or (0,0) if none exists.  
     
@@ -141,9 +141,9 @@ An uppercase                  `V` indicates that                  `y` is an abso
   
 |Term|Description|  
 |----------|-----------------|  
-|`controlPoint`1|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The first control point of the curve, which determines the starting tangent of the curve.|  
-|`controlPoint`2|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The second control point of the curve, which determines the ending tangent of the curve.|  
-|`endPoint`|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The point to which the curve is drawn.|  
+|`controlPoint`1|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The first control point of the curve, which determines the starting tangent of the curve.|  
+|`controlPoint`2|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The second control point of the curve, which determines the ending tangent of the curve.|  
+|`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the curve is drawn.|  
   
 ### Quadratic Bezier Curve Command  
  Creates a quadratic Bezier curve between the current point and the specified end point by using the specified control point (                         `controlPoint`).                          `q 100,200 300,200` is an example of a valid quadratic Bezier curve command.  
@@ -154,8 +154,8 @@ An uppercase                  `V` indicates that                  `y` is an abso
   
 |Term|Description|  
 |----------|-----------------|  
-|`controlPoint`|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The control point of the curve, which determines the starting and ending tangents of the curve.|  
-|`endPoint`|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The point to which the curve is drawn.|  
+|`controlPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The control point of the curve, which determines the starting and ending tangents of the curve.|  
+|`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the curve is drawn.|  
   
 ### Smooth cubic Bezier curve Command  
  Creates a cubic Bezier curve between the current point and the specified end point. The first control point is assumed to be the reflection of the second control point of the previous command relative to the current point. If there is no previous command or if the previous command was not a cubic Bezier curve command or a smooth cubic Bezier curve command, assume the first control point is coincident with the current point. The second control point, the control point for the end of the curve, is specified by                          `controlPoint`2. For example,                          `S 100,200 200,300` is a valid smooth cubic Bezier curve command.  
@@ -166,8 +166,8 @@ An uppercase                  `V` indicates that                  `y` is an abso
   
 |Term|Description|  
 |----------|-----------------|  
-|`controlPoint`2|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The control point of the curve, which determines the ending tangent of the curve.|  
-|`endPoint`|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The point to which the curve is drawn.|  
+|`controlPoint`2|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The control point of the curve, which determines the ending tangent of the curve.|  
+|`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the curve is drawn.|  
   
 ### Smooth quadratic Bezier curve Command  
  Creates a quadratic Bezier curve between the current point and the specified end point. The control point is assumed to be the reflection of the control point of the previous command relative to the current point. If there is no previous command or if the previous command was not a quadratic Bezier curve command or a smooth quadratic Bezier curve command, the control point is coincident with the current point.  
@@ -178,8 +178,8 @@ An uppercase                  `V` indicates that                  `y` is an abso
   
 |Term|Description|  
 |----------|-----------------|  
-|`controlPoint`|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The control point of the curve, which determines the starting and tangent of the curve.|  
-|`endPoint`|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The point to which the curve is drawn.|  
+|`controlPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The control point of the curve, which determines the starting and tangent of the curve.|  
+|`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the curve is drawn.|  
   
 ### Elliptical Arc Command  
  Creates an elliptical arc between the current point and the specified end point.  
@@ -190,11 +190,11 @@ An uppercase                  `V` indicates that                  `y` is an abso
   
 |Term|Description|  
 |----------|-----------------|  
-|`size`|<xref:System.Windows.Size?displayProperty=fullName><br /><br /> The x- and y-radius of the arc.|  
-|`rotationAngle`|<xref:System.Double?displayProperty=fullName><br /><br /> The rotation of the ellipse, in degrees.|  
+|`size`|<xref:System.Windows.Size?displayProperty=nameWithType><br /><br /> The x- and y-radius of the arc.|  
+|`rotationAngle`|<xref:System.Double?displayProperty=nameWithType><br /><br /> The rotation of the ellipse, in degrees.|  
 |`isLargeArcFlag`|Set to 1 if the angle of the arc should be 180 degrees or greater; otherwise, set to 0.|  
 |`sweepDirectionFlag`|Set to 1 if the arc is drawn in a positive-angle direction; otherwise, set to 0.|  
-|`endPoint`|<xref:System.Windows.Point?displayProperty=fullName><br /><br /> The point to which the arc is drawn.|  
+|`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the arc is drawn.|  
   
 <a name="closecommand"></a>   
 ## The Close Command  
@@ -214,21 +214,21 @@ An uppercase                  `V` indicates that                  `y` is an abso
   
 |Term|Description|  
 |----------|-----------------|  
-|`x`|<xref:System.Double?displayProperty=fullName><br /><br /> The x-coordinate of the point.|  
-|`y`|<xref:System.Double?displayProperty=fullName><br /><br /> The y-coordinate of the point.|  
+|`x`|<xref:System.Double?displayProperty=nameWithType><br /><br /> The x-coordinate of the point.|  
+|`y`|<xref:System.Double?displayProperty=nameWithType><br /><br /> The y-coordinate of the point.|  
   
 <a name="specialvalues"></a>   
 ## Special Values  
  Instead of a standard numerical value, you can also use the following special values. These values are case-sensitive.  
   
  Infinity  
- Represents                          <xref:System.Double.PositiveInfinity?displayProperty=fullName>.  
+ Represents                          <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.  
   
  -Infinity  
- Represents                          <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ Represents                          <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  NaN  
- Represents                          <xref:System.Double.NaN?displayProperty=fullName>.  
+ Represents                          <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
  You may also use scientific notation. For example,                  `+1.e17` is a valid value.  
   

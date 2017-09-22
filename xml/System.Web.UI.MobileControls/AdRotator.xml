@@ -39,7 +39,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.AdRotator> class uses the same configuration file as the Web Forms <xref:System.Web.UI.WebControls.AdRotator> class. The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=fullName> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=fullName> control, plus it adds mobile capability. The displayed advertisement changes whenever the page is refreshed.  
+ The <xref:System.Web.UI.MobileControls.AdRotator> class uses the same configuration file as the Web Forms <xref:System.Web.UI.WebControls.AdRotator> class. The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=nameWithType> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=nameWithType> control, plus it adds mobile capability. The displayed advertisement changes whenever the page is refreshed.  
   
  The <xref:System.Web.UI.MobileControls.AdRotator.AdvertisementFile%2A> property specifies the location of an XML file that contains advertisement information. This file must reside within the application domain. For security purposes, XML files should be in the App_Data folder, which is configured to not allow users direct access to XML files. If the <xref:System.Web.UI.MobileControls.AdRotator.AdvertisementFile%2A> property is empty, the <xref:System.Web.UI.MobileControls.AdRotator> control generates a single break tag as a placeholder. This is useful when you do not want to display an advertisement.  
   
@@ -87,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=fullName> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=fullName> control, plus it adds mobile capability.  
+ The <xref:System.Web.UI.MobileControls.AdRotator?displayProperty=nameWithType> mobile control exposes many of the same properties and events as the <xref:System.Web.UI.WebControls.AdRotator?displayProperty=nameWithType> control, plus it adds mobile capability.  
   
  ]]></format>
         </remarks>
@@ -169,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The file format and file name restrictions conform to those described for the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A?displayProperty=fullName> property.  
+ The file format and file name restrictions conform to those described for the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

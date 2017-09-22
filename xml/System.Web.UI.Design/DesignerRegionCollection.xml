@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Design.ControlDesigner> class, and any derived class, uses the <xref:System.Web.UI.Design.DesignerRegionCollection> class to contain and enumerate the designer regions for the control in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
   
- For example, the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method can be used to define and add regions to the collection.  
+ For example, the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType> method can be used to define and add regions to the collection.  
   
  Use the <xref:System.Web.UI.Design.DesignerRegionCollection.Owner%2A> property to access the control designer object that contains the designer region collection. Use the <xref:System.Web.UI.Design.DesignerRegionCollection> methods and properties to examine and maintain the <xref:System.Web.UI.Design.DesignerRegion> objects that are in the collection.  
   
@@ -557,7 +557,7 @@
 ## Remarks  
  Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
   
- Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
+ Lock the collection by using the <xref:System.Web.UI.Design.DesignerRegionCollection.SyncRoot%2A> method during the whole enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

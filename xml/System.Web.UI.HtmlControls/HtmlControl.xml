@@ -126,11 +126,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to programmatically access the attributes of the HTML server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property.  
+ Use this property to programmatically access the attributes of the HTML server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property.  
   
  HTML attributes are treated by the .NET Framework as properties on the HTML server control to which they belong.  
   
- For additional information on the attributes collection, see the <xref:System.Web.UI.AttributeCollection?displayProperty=fullName> class.  
+ For additional information on the attributes collection, see the <xref:System.Web.UI.AttributeCollection?displayProperty=nameWithType> class.  
   
    
   
@@ -231,7 +231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method to access an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method's `name` parameter is case-insensitive.  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method to access an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property. HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method's `name` parameter is case-insensitive.  
   
  ]]></format>
         </remarks>
@@ -287,7 +287,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method writes the <xref:System.Web.UI.Control.ID%2A?displayProperty=fullName> attribute of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method writes the <xref:System.Web.UI.Control.ID%2A?displayProperty=nameWithType> attribute of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
   
@@ -349,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method to set an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property.  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method to set an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property.  
   
  HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method's `name` parameter is case-insensitive.  
   
@@ -386,7 +386,7 @@
 ## Remarks  
  Use this property to programmatically access the style properties of the HTML server control.  
   
- For additional information on the CSS style collection, see the <xref:System.Web.UI.CssStyleCollection?displayProperty=fullName> class.  
+ For additional information on the CSS style collection, see the <xref:System.Web.UI.CssStyleCollection?displayProperty=nameWithType> class.  
   
    
   

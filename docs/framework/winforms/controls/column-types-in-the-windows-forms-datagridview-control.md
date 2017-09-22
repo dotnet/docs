@@ -59,23 +59,23 @@ The <xref:System.Windows.Forms.DataGridView> control uses several column types t
   
  The automatic population of an image column from a data source works with byte arrays in a variety of image formats, including all formats supported by the <xref:System.Drawing.Image> class and the OLE Picture format used by Microsoft® Access and the Northwind sample database.  
   
- Populating an image column manually is useful when you want to provide the functionality of a <xref:System.Windows.Forms.DataGridViewButtonColumn>, but with a customized appearance. You can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event to respond to clicks within an image cell.  
+ Populating an image column manually is useful when you want to provide the functionality of a <xref:System.Windows.Forms.DataGridViewButtonColumn>, but with a customized appearance. You can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event to respond to clicks within an image cell.  
   
  Populating the cells of an image column in a handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting> event is useful when you want to provide images for calculated values or values in non-image formats. For example, you may have a "Risk" column with string values such as `"high"`, `"middle"`, and `"low"` that you want to display as icons. Alternately, you may have an "Image" column that contains the locations of images that must be loaded rather than the binary content of the images.  
   
 ## DataGridViewButtonColumn  
  With the <xref:System.Windows.Forms.DataGridViewButtonColumn>, you can display a column of cells that contain buttons. This is useful when you want to provide an easy way for your users to perform actions on particular records, such as placing an order or displaying child records in a separate window.  
   
- Button columns are not generated automatically when data-binding a <xref:System.Windows.Forms.DataGridView> control. To use button columns, you must create them manually and add them to the collection returned by the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property.  
+ Button columns are not generated automatically when data-binding a <xref:System.Windows.Forms.DataGridView> control. To use button columns, you must create them manually and add them to the collection returned by the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=nameWithType> property.  
   
- You can respond to user clicks in button cells by handling the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event.  
+ You can respond to user clicks in button cells by handling the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event.  
   
 ## DataGridViewComboBoxColumn  
  With the <xref:System.Windows.Forms.DataGridViewComboBoxColumn>, you can display a column of cells that contain drop-down list boxes. This is useful for data entry in fields that can only contain particular values, such as the Category column of the Products table in the Northwind sample database.  
   
  You can populate the drop-down list used for all cells the same way you would populate a <xref:System.Windows.Forms.ComboBox> drop-down list, either manually through the collection returned by the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A> property, or by binding it to a data source through the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A>, <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayMember%2A>, and <xref:System.Windows.Forms.DataGridViewComboBoxColumn.ValueMember%2A> properties. For more information, see [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md).  
   
- You can bind the actual cell values to the data source used by the <xref:System.Windows.Forms.DataGridView> control by setting the <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A> property of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn?displayProperty=fullName>.  
+ You can bind the actual cell values to the data source used by the <xref:System.Windows.Forms.DataGridView> control by setting the <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A> property of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn?displayProperty=nameWithType>.  
   
  Combo box columns are not generated automatically when data-binding a <xref:System.Windows.Forms.DataGridView> control. To use combo box columns, you must create them manually and add them to the collection returned by the <xref:System.Windows.Forms.DataGridView.Columns%2A> property.  
   

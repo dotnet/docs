@@ -31,7 +31,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.MaskedTextBox> control contains a mask, composed of literal characters and formatting elements, that it tests all user input against. Instead of permanently associating a specific mask-parsing engine with <xref:System.Windows.Forms.MaskedTextBox>, Windows Forms provides it as a separate service, represented by the <xref:System.ComponentModel.MaskedTextProvider> class, which defines the syntax of the masking language discussed in the documentation for the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
- Many of the members of the <xref:System.Windows.Forms.MaskedTextBox> class refer their implementation to similarly named members of the associated <xref:System.ComponentModel.MaskedTextProvider>. For example, the <xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.MaskedTextBox> class refers all access to the <xref:System.ComponentModel.MaskedTextProvider.PromptChar%2A> of the <xref:System.ComponentModel.MaskedTextProvider> class.  
+ Many of the members of the <xref:System.Windows.Forms.MaskedTextBox> class refer their implementation to similarly named members of the associated <xref:System.ComponentModel.MaskedTextProvider>. For example, the <xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.MaskedTextBox> class refers all access to the <xref:System.ComponentModel.MaskedTextProvider.PromptChar%2A> of the <xref:System.ComponentModel.MaskedTextProvider> class.  
   
  The mask-parsing engine used by <xref:System.ComponentModel.MaskedTextProvider> is modeled after the Masked Edit control included in Microsoft Visual Basic version 6. Its masking language is described in the documentation for the <xref:System.ComponentModel.MaskedTextProvider.Mask%2A> property.  
   
@@ -78,7 +78,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=fullName> constructor:  
+ Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=nameWithType> constructor:  
   
  `MaskedTextProvider(mask , null, true, '_', '\0', false)`  
   
@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=fullName> constructor:  
+ Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=nameWithType> constructor:  
   
  `MaskedTextProvider(mask , null, true, '_', '\0', restrictToASCII)`  
   
@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=fullName> constructor:  
+ Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=nameWithType> constructor:  
   
  `MaskedTextProvider(mask , culture, true, '_', '\0', false)`  
   
@@ -196,7 +196,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=fullName> constructor:  
+ Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=nameWithType> constructor:  
   
  `MaskedTextProvider(mask , null, allowPromptAsInput, '_', passwordChar, false)`  
   
@@ -237,7 +237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=fullName> constructor:  
+ Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=nameWithType> constructor:  
   
  `MaskedTextProvider(mask , culture, true, '_', '\0', restrictToAscii)`  
   
@@ -280,7 +280,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=fullName> constructor:  
+ Use of this constructor is exactly equivalent to the following call to the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%28System.String%2CSystem.Globalization.CultureInfo%2CSystem.Boolean%2CSystem.Char%2CSystem.Char%2CSystem.Boolean%29?displayProperty=nameWithType> constructor:  
   
  `MaskedTextProvider(mask , culture, allowPromptAsInput, '_', passwordChar, false)`  
   
@@ -327,7 +327,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor represents the most general overloaded form. The `mask` parameter must conform to the masking language defined by the <xref:System.ComponentModel.MaskedTextProvider> class, which is detailed in the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.MaskedTextBox> class.  
+ This constructor represents the most general overloaded form. The `mask` parameter must conform to the masking language defined by the <xref:System.ComponentModel.MaskedTextProvider> class, which is detailed in the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.MaskedTextBox> class.  
   
  Because neutral cultures cannot be queried for culture-specific information, the <xref:System.ComponentModel.MaskedTextProvider.%23ctor%2A> constructor will use the <xref:System.Globalization.CultureInfo.GetCultures%2A> method to search for the first non-neutral culture to use to determine the proper separator characters.  
   
@@ -2053,7 +2053,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.MaskedTextProvider.MaskCompleted%2A> property checks only required input elements. To determine whether all required and optional input elements have been entered, use the <xref:System.Windows.Forms.MaskedTextBox.MaskFull%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.MaskedTextBox> class instead.  
+ The <xref:System.ComponentModel.MaskedTextProvider.MaskCompleted%2A> property checks only required input elements. To determine whether all required and optional input elements have been entered, use the <xref:System.Windows.Forms.MaskedTextBox.MaskFull%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.MaskedTextBox> class instead.  
   
  The current value of the <xref:System.ComponentModel.MaskedTextProvider.Mask%2A> property determines which formatting elements are considered required and which are optional.  
   

@@ -252,7 +252,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
   
      For cultures such as Japanese that have multiple eras, the `DateDiff` method does not return a difference in years if the difference spans two or more eras. Instead, you can calculate the difference in values returned by the <xref:System.DateTime.Year%2A> property, as shown in the following example: `date2.Year - date1.Year`.  
   
--   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
+-   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
   
      [!code-vb[VbVbalrFunctions#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#61)]  
   
@@ -363,7 +363,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
   
      For cultures such as Japanese that have multiple eras, the `DateDiff` method does not return a difference in years if the difference spans two or more eras. Instead, you can calculate the difference in values returned by the <xref:System.DateTime.Year%2A> property, as shown in the following example: `date2.Year - date1.Year`.  
   
--   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=fullName> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
+-   **Other Intervals.** Since every `Date` value is supported by a <xref:System.DateTime> structure, its methods give you additional options in finding time intervals. For example, you can use the `Subtract` method in either of its overloaded forms: <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a <xref:System.TimeSpan> from a `Date` variable to return another `Date` value, and <xref:System.DateTime.Subtract%2A?displayProperty=nameWithType> subtracts a `Date` value to return a <xref:System.TimeSpan>. You can time a process to find out how many milliseconds it takes, as the following example shows.  
   
      [!code-vb[VbVbalrFunctions#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#61)]  
   
@@ -812,7 +812,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  [!code-vb[VbVbalrFunctions#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#30)]  
   
- `Day` is qualified to distinguish it from the <xref:System.Windows.Forms.Day?displayProperty=fullName> enumeration.  
+ `Day` is qualified to distinguish it from the <xref:System.Windows.Forms.Day?displayProperty=nameWithType> enumeration.  
   
  ]]></format>
         </remarks>
@@ -1104,7 +1104,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
   
  [!code-vb[VbVbalrTimerProperty#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTimerProperty/VB/Form1.vb#1)]  
   
- Note that you must qualify the `Timer` property with the <xref:Microsoft.VisualBasic?displayProperty=fullName> namespace, because `Timer` is also a defined class in the <xref:System.Threading?displayProperty=fullName>, <xref:System.Timers?displayProperty=fullName>, and <xref:System.Windows.Forms?displayProperty=fullName> namespaces.  
+ Note that you must qualify the `Timer` property with the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace, because `Timer` is also a defined class in the <xref:System.Threading?displayProperty=nameWithType>, <xref:System.Timers?displayProperty=nameWithType>, and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces.  
   
  ]]></format>
         </remarks>
@@ -1156,7 +1156,7 @@ MsgBox(TimeSerial(23, 75, 0))
   
  If the values of the arguments result in a negative calculated time, the date information is set to 1/1/0001 and the time information is adjusted to be between 00:00:00 and 23:59:59. However, if the calculated time is less than negative 24 hours, an <xref:System.ArgumentOutOfRangeException> error occurs.  
   
- Since every `Date` value is supported by a <xref:System.DateTime?displayProperty=fullName> structure, its methods give you additional options in assembling a `Date` value. For example, you can employ one of the overloaded <xref:System.DateTime.%23ctor%2A> constructors to populate a `Date` variable using the desired combination of components. The following example sets `newDateTime` to May 6, 1978 at one tenth of a second before 8:30 in the morning:  
+ Since every `Date` value is supported by a <xref:System.DateTime?displayProperty=nameWithType> structure, its methods give you additional options in assembling a `Date` value. For example, you can employ one of the overloaded <xref:System.DateTime.%23ctor%2A> constructors to populate a `Date` variable using the desired combination of components. The following example sets `newDateTime` to May 6, 1978 at one tenth of a second before 8:30 in the morning:  
   
 ```vb  
 Dim newDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)  

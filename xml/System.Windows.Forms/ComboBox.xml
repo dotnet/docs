@@ -660,7 +660,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is used by an owner-drawn <xref:System.Windows.Forms.ComboBox>. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.ComboBox>. If you have a variable sized item (when the <xref:System.Windows.Forms.ComboBox.DrawMode%2A?displayProperty=fullName> property is set to the `OwnerDrawVariable` value of <xref:System.Windows.Forms.DrawMode?displayProperty=fullName>), before drawing an item, the <xref:System.Windows.Forms.ComboBox.MeasureItem> event is raised. You can create an event handler for the <xref:System.Windows.Forms.ComboBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.ComboBox.DrawItem> event.  
+ This event is used by an owner-drawn <xref:System.Windows.Forms.ComboBox>. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.ComboBox>. If you have a variable sized item (when the <xref:System.Windows.Forms.ComboBox.DrawMode%2A?displayProperty=nameWithType> property is set to the `OwnerDrawVariable` value of <xref:System.Windows.Forms.DrawMode?displayProperty=nameWithType>), before drawing an item, the <xref:System.Windows.Forms.ComboBox.MeasureItem> event is raised. You can create an event handler for the <xref:System.Windows.Forms.ComboBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.ComboBox.DrawItem> event.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -773,7 +773,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ComboBox.DropDownClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ComboBox.DropDownClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ComboBox> named `ComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ComboBox.DropDownClosed> event.  
   
@@ -887,7 +887,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ComboBox.DropDownStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ComboBox.DropDownStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ComboBox> named `ComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ComboBox.DropDownStyleChanged> event.  
   
@@ -1408,7 +1408,7 @@
   
  Although the <xref:System.Windows.Forms.ComboBox> is typically used to display text items, you can add any object to the <xref:System.Windows.Forms.ComboBox>. Typically, the representation of an object in the <xref:System.Windows.Forms.ComboBox> is the string returned by that object's <xref:System.Object.ToString%2A> method. If you want to have a member of the object displayed instead, choose the member that will be displayed by setting the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property to the name of the appropriate member. You can also choose a member of the object that will represent the value returned by the object by setting the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property. For more information, see <xref:System.Windows.Forms.ListControl>.  
   
- For more information about the tasks that can be performed with the item collection, see the <xref:System.Windows.Forms.ComboBox.ObjectCollection?displayProperty=fullName> class reference topics.  
+ For more information about the tasks that can be performed with the item collection, see the <xref:System.Windows.Forms.ComboBox.ObjectCollection?displayProperty=nameWithType> class reference topics.  
   
    
   
@@ -3182,7 +3182,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ComboBox.TextUpdate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ComboBox.TextUpdate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ComboBox> named `ComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ComboBox.TextUpdate> event.  
   
@@ -3241,7 +3241,7 @@
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. Refer to the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values. Actual constant values can be found in the Windows.h header file included in the Platform SDK (Core SDK section) download, which is also available in the MSDN library at http://msdn.microsoft.com/library.  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. Refer to the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values. Actual constant values can be found in the Windows.h header file included in the Platform SDK (Core SDK section) download, which is also available in the MSDN library at http://msdn.microsoft.com/library.  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]

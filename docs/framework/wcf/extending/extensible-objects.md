@@ -40,7 +40,7 @@ where T : IExtensibleObject<T>
   
  It is valid for implementations to restrict when they may be added and removed from an owner. For example, you can disallow removal entirely, disallowing adding or removing extensions when the owner or extension are in a certain state, disallow adding to multiple owners concurrently, or allow only a single addition followed by a single remove.  
   
- <xref:System.ServiceModel.IExtension%601> does not imply any interactions with other standard managed interfaces. Specifically, the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method on the owner object does not normally detach its extensions.  
+ <xref:System.ServiceModel.IExtension%601> does not imply any interactions with other standard managed interfaces. Specifically, the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method on the owner object does not normally detach its extensions.  
   
  When an extension is added to the collection, <xref:System.ServiceModel.IExtension%601.Attach%2A> is called before it goes into the collection. When an extension is removed from the collection, <xref:System.ServiceModel.IExtension%601.Detach%2A> is called after it is removed. This means (assuming appropriate synchronization) an extension can count on only being found in the collection while it is between <xref:System.ServiceModel.IExtension%601.Attach%2A> and <xref:System.ServiceModel.IExtension%601.Detach%2A>.  
   
@@ -52,7 +52,7 @@ where T : IExtensibleObject<T>
   
  The second scenario uses the <xref:System.ServiceModel.IExtension%601.Attach%2A> and <xref:System.ServiceModel.IExtension%601.Detach%2A> properties to enable an object to participate in custom behavior, such as registering for events, watching state transitions, and so on.  
   
- The <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of the <xref:System.ServiceModel.IExtension%601> objects that allow for retrieving the <xref:System.ServiceModel.IExtension%601> by its type. <xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A?displayProperty=fullName> returns the most recently added object that is an <xref:System.ServiceModel.IExtension%601> of that type.  
+ The <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of the <xref:System.ServiceModel.IExtension%601> objects that allow for retrieving the <xref:System.ServiceModel.IExtension%601> by its type. <xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A?displayProperty=nameWithType> returns the most recently added object that is an <xref:System.ServiceModel.IExtension%601> of that type.  
   
 ### Extensible Objects in Windows Communication Foundation  
  There are four extensible objects in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]:  

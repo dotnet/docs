@@ -292,7 +292,7 @@
   
 -   The <xref:System.Web.UI.WebControls.ValidationSummary.ForeColor%2A> property is not already set.  
   
--   The <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=fullName> property indicates an ASP.NET version earlier than 4. By default, in ASP.NET 4 and later versions, validator controls do not display error messages in red. For information about how to control the visual appearance of validator controls, see [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+-   The <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=nameWithType> property indicates an ASP.NET version earlier than 4. By default, in ASP.NET 4 and later versions, validator controls do not display error messages in red. For information about how to control the visual appearance of validator controls, see [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  ]]></format>
         </remarks>
@@ -531,7 +531,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

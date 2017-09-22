@@ -72,13 +72,13 @@ Enums are a special kind of value type. There are two kinds of enums: simple enu
   
  **✓ DO** name flag enums with plural nouns or noun phrases and simple enums with singular nouns or noun phrases.  
   
- **X DO NOT** extend <xref:System.Enum?displayProperty=fullName> directly.  
+ **X DO NOT** extend <xref:System.Enum?displayProperty=nameWithType> directly.  
   
- <xref:System.Enum?displayProperty=fullName> is a special type used by the CLR to create user-defined enumerations. Most programming languages provide a programming element that gives you access to this functionality. For example, in C# the `enum` keyword is used to define an enumeration.  
+ <xref:System.Enum?displayProperty=nameWithType> is a special type used by the CLR to create user-defined enumerations. Most programming languages provide a programming element that gives you access to this functionality. For example, in C# the `enum` keyword is used to define an enumeration.  
   
 <a name="design"></a>   
 ### Designing Flag Enums  
- **✓ DO** apply the <xref:System.FlagsAttribute?displayProperty=fullName> to flag enums. Do not apply this attribute to simple enums.  
+ **✓ DO** apply the <xref:System.FlagsAttribute?displayProperty=nameWithType> to flag enums. Do not apply this attribute to simple enums.  
   
  **✓ DO** use powers of two for the flag enum values so they can be freely combined using the bitwise OR operation.  
   

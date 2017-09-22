@@ -94,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaColumn.ApplyFormatInEditMode%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+ The <xref:System.Web.DynamicData.MetaColumn.ApplyFormatInEditMode%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode%2A?displayProperty=nameWithType> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
   
  ]]></format>
         </remarks>
@@ -189,7 +189,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaColumn.ConvertEmptyStringToNull%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+ The <xref:System.Web.DynamicData.MetaColumn.ConvertEmptyStringToNull%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull%2A?displayProperty=nameWithType> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
   
  ]]></format>
         </remarks>
@@ -214,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaColumn.DataFormatString%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+ The <xref:System.Web.DynamicData.MetaColumn.DataFormatString%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A?displayProperty=nameWithType> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
   
  ]]></format>
         </remarks>
@@ -282,7 +282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaColumn.Description%2A> property verifies if a <xref:System.ComponentModel.DescriptionAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DescriptionAttribute.Description%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.DynamicData.MetaColumn.Description%2A> property verifies if a <xref:System.ComponentModel.DescriptionAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DescriptionAttribute.Description%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -717,7 +717,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaColumn.NullDisplayText%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+ The <xref:System.Web.DynamicData.MetaColumn.NullDisplayText%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText%2A?displayProperty=nameWithType> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
   
  ]]></format>
         </remarks>
@@ -834,7 +834,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaColumn.Scaffold%2A> property indicates whether a data field should be displayed when it is automatically generated by ASP.NET Dynamic Data. This property verifies if a <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute is applied to the data field and returns the value of the <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.Scaffold%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute is not applied to the data field, Dynamic Data uses the following rules to determine whether to display the column:  
+ The <xref:System.Web.DynamicData.MetaColumn.Scaffold%2A> property indicates whether a data field should be displayed when it is automatically generated by ASP.NET Dynamic Data. This property verifies if a <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute is applied to the data field and returns the value of the <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.Scaffold%2A?displayProperty=nameWithType> property. If a <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute is not applied to the data field, Dynamic Data uses the following rules to determine whether to display the column:  
   
 -   If a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is applied to the data field, the data field is displayed. This rule overrides all the other rules.  
   
@@ -972,7 +972,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is not applied to the data field, the <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property returns an empty string.  
+ The <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A?displayProperty=nameWithType> property. If a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is not applied to the data field, the <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property returns an empty string.  
   
  ]]></format>
         </remarks>

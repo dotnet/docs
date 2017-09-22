@@ -54,4 +54,4 @@ Represents a routing table that contains a list of filters to evaluate messages 
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing tables.|  
   
 ## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=fullName>    
+ <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>    

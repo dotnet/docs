@@ -78,7 +78,7 @@ This is the second of six tasks required to create a basic [!INCLUDE[indigo1](..
     }  
     ```  
   
-    ```  
+    ```vb
     ‘Service1.vb  
     Imports System  
     Imports System.ServiceModel  
@@ -128,7 +128,7 @@ This is the second of six tasks required to create a basic [!INCLUDE[indigo1](..
 ## Example  
  The following code shows both the interface that defines the contract and the implementation of the interface.  
   
-```  
+```csharp
 // IService1.cs  
 using System;  
 using System.Collections.Generic;  
@@ -154,7 +154,7 @@ namespace GettingStartedLib
 }  
 ```  
   
-```  
+```csharp
 // Service1.cs  
 using System;  
 using System.Collections.Generic;  
@@ -203,7 +203,7 @@ namespace GettingStartedLib
 }  
 ```  
   
-```  
+```vb
 ‘IService.vb  
 Imports System  
 Imports System.ServiceModel  
@@ -225,7 +225,7 @@ Namespace GettingStartedLib
 End Namespace  
 ```  
   
-```  
+```vb
 Imports System  
 Imports System.ServiceModel  
   

@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> method overrides the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=fullName> method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> is used primarily by control developers.  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> method overrides the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=nameWithType> method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender%2A> is used primarily by control developers.  
   
    
   
@@ -275,7 +275,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlInputButton.RaisePostBackEvent%2A> method is used by the <xref:System.Web.UI.HtmlControls.HtmlInputButton> control, when it is clicked, to raise a <xref:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick> event.  
   
- If the <xref:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation%2A> property is `true`, the <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName> method is called using the group of controls specified in the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup%2A> property.  
+ If the <xref:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation%2A> property is `true`, the <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> method is called using the group of controls specified in the <xref:System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup%2A> property.  
   
  This method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputButton> control.  
   
@@ -305,7 +305,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> method overrides the base <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A?displayProperty=fullName>.method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> is used primarily by control developers.  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> method overrides the base <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A?displayProperty=nameWithType>.method. <xref:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes%2A> is used primarily by control developers.  
   
    
   

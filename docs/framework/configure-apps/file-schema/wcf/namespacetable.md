@@ -58,4 +58,4 @@ None
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.NamespaceElementCollection?displayProperty=fullName>
+<xref:System.ServiceModel.Routing.Configuration.NamespaceElementCollection?displayProperty=nameWithType>

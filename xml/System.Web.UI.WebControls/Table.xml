@@ -526,7 +526,7 @@
  <!-- TODO: review snippet reference [!code-csharp[Classic Table Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/sourcevb.aspx#1)]  -->  
   
- The following code example demonstrates how to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
+ The following code example demonstrates how to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic Table Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/source2cs.aspx#2)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Table Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/source2vb.aspx#2)]  -->  
@@ -579,7 +579,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by control developers to insert the appropriate attributes and styles into the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.Table> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=fullName>.  
+ This method is used primarily by control developers to insert the appropriate attributes and styles into the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.Table> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=nameWithType>.  
   
    
   
@@ -1082,7 +1082,7 @@
    
   
 ## Examples  
- The following example demonstrates how use the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
+ The following example demonstrates how use the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an. aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
@@ -1114,7 +1114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1142,7 +1142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.Table.RaisePostBackEvent%2A?displayProperty=fullName> method to raise an event for the <xref:System.Web.UI.WebControls.Table> control when a form is posted back to the server.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.Table.RaisePostBackEvent%2A?displayProperty=nameWithType> method to raise an event for the <xref:System.Web.UI.WebControls.Table> control when a form is posted back to the server.  
   
  This method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Table> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
   

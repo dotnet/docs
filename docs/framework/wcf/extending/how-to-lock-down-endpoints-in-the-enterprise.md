@@ -47,7 +47,7 @@ Large enterprises often require that applications are developed in compliance wi
   
 2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](http://msdn.microsoft.com/library/ex0ss12c\(v=vs.110\).aspx).  
   
-3.  Use the <xref:System.Configuration?displayProperty=fullName> namespace types to:  
+3.  Use the <xref:System.Configuration?displayProperty=nameWithType> namespace types to:  
   
     1.  Add the extension to the [\<behaviorExtensions>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md) section using a fully-qualified type name and lock the element.  
   

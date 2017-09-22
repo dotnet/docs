@@ -20,11 +20,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.IPEndPointCollection> class is derived from the <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> class.  
+ The <xref:System.Net.IPEndPointCollection> class is derived from the <xref:System.Collections.ObjectModel.Collection%601?displayProperty=nameWithType> class.  
   
  The <xref:System.Net.IPEndPoint> class contains the host and local or remote port information needed by an application to connect to a service on a host. By combining the host's IP address and port number of a service, the <xref:System.Net.IPEndPoint> class forms a connection point to a service.  
   
- The <xref:System.Net.IPEndPointCollection> class is used by classes in the <xref:System.Net.PeerToPeer?displayProperty=fullName> namespace.  
+ The <xref:System.Net.IPEndPointCollection> class is used by classes in the <xref:System.Net.PeerToPeer?displayProperty=nameWithType> namespace.  
   
  ]]></format>
     </remarks>
@@ -78,7 +78,7 @@
   
  If `index` is equal to current count of items in the <xref:System.Net.IPEndPointCollection> , then the `item` is added to the end of <xref:System.Net.IPEndPointCollection>.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A?displayProperty=fullName>.  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

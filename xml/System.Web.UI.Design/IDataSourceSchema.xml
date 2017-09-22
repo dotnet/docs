@@ -41,7 +41,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A class that implements the <xref:System.Web.UI.Design.IDataSourceSchema.GetViews%2A> method returns an array of objects that implement the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface. For example, in the array returned by the <xref:System.Web.UI.Design.DataSetSchema.GetViews%2A?displayProperty=fullName> method, each element of the array is a <xref:System.Web.UI.Design.DataSetViewSchema> object that implements <xref:System.Web.UI.Design.IDataSourceViewSchema>.  
+ A class that implements the <xref:System.Web.UI.Design.IDataSourceSchema.GetViews%2A> method returns an array of objects that implement the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface. For example, in the array returned by the <xref:System.Web.UI.Design.DataSetSchema.GetViews%2A?displayProperty=nameWithType> method, each element of the array is a <xref:System.Web.UI.Design.DataSetViewSchema> object that implements <xref:System.Web.UI.Design.IDataSourceViewSchema>.  
   
  ]]></format>
         </remarks>

@@ -105,7 +105,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 -   Define a <xref:System.Windows.DependencyProperty> identifier named `ValueProperty` as a `public` `static` `readonly` field.  
   
--   Register the property name with the property system, by calling <xref:System.Windows.DependencyProperty.Register%2A?displayProperty=fullName>, to specify the following:  
+-   Register the property name with the property system, by calling <xref:System.Windows.DependencyProperty.Register%2A?displayProperty=nameWithType>, to specify the following:  
   
     -   The name of the property.  
   
@@ -139,7 +139,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
 -   Define a <xref:System.Windows.RoutedEvent> identifier named `ValueChangedEvent` as a `public` `static` `readonly` field.  
   
--   Register the routed event by calling the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A?displayProperty=fullName> method. The example specifies the following information when it calls <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>:  
+-   Register the routed event by calling the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A?displayProperty=nameWithType> method. The example specifies the following information when it calls <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>:  
   
     -   The name of the event is `ValueChanged`.  
   

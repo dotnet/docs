@@ -71,7 +71,7 @@ This sample demonstrates how [!INCLUDE[indigo1](../../../../includes/indigo1-md.
 ### Installing operation formatters  
  Operation behaviors that specify formatters are unique. One such behavior is always implemented by default for every operation to create the necessary operation formatter. However, these behaviors look like just another operation behavior; they are not identifiable by any other attribute. To install a replacement behavior, the implementation must look for specific formatter behaviors that are installed by the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] type loader by default and either replace it or add a compatible behavior to run after the default behavior.  
   
- These operation formatters behaviors can be set up programmatically prior to calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=fullName> or by specifying an operation behavior that is executed after the default one. However, it cannot easily be set up by an endpoint behavior (and therefore by configuration) because the behavior model does not allow a behavior to replace other behaviors or otherwise modify the description tree.  
+ These operation formatters behaviors can be set up programmatically prior to calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType> or by specifying an operation behavior that is executed after the default one. However, it cannot easily be set up by an endpoint behavior (and therefore by configuration) because the behavior model does not allow a behavior to replace other behaviors or otherwise modify the description tree.  
   
  On the client:  
   

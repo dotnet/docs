@@ -398,9 +398,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a value is not specified in the configuration file, the <xref:System.Net.ServicePointManager.EncryptionPolicy%2A> property defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>. This is applied to an SSL/TLS session on this <xref:System.Net.ServicePointManager> instance.  
+ If a value is not specified in the configuration file, the <xref:System.Net.ServicePointManager.EncryptionPolicy%2A> property defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>. This is applied to an SSL/TLS session on this <xref:System.Net.ServicePointManager> instance.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -758,7 +758,7 @@
 ## Remarks  
 This property selects the version of the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocol to use for new connections; existing connections aren't changed.  
   
-Starting with the .NET Framework 4.7, the default value of this property is <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=fullName>. This allows .NET Framework networking APIs based on <xref:System.Net.Security.SslStream> (such as FTP, HTTP, and SMTP) to inherit the default security protocols from the operating system or from any custom configurations performed by a system administrator. For information about which SSL/TLS protocols are enabled by default on each version of the Windows operating system, see  [Protocols in TLS/SSL (Schannel SSP)](https://msdn.microsoft.com/library/windows/desktop/mt808159.aspx).
+Starting with the .NET Framework 4.7, the default value of this property is <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=nameWithType>. This allows .NET Framework networking APIs based on <xref:System.Net.Security.SslStream> (such as FTP, HTTP, and SMTP) to inherit the default security protocols from the operating system or from any custom configurations performed by a system administrator. For information about which SSL/TLS protocols are enabled by default on each version of the Windows operating system, see  [Protocols in TLS/SSL (Schannel SSP)](https://msdn.microsoft.com/library/windows/desktop/mt808159.aspx).
  
 For versions of the .NET Framework through the .NET Framework 4.6.2, no default value is listed for this property. The security landscape changes constantly, and default protocols and protection levels are changed over time in order to avoid known weaknesses. Defaults vary depending on individual machine configuration, installed software, and applied patches.  
   

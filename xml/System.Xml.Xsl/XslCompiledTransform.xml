@@ -723,7 +723,7 @@ xslt.Load(typeof(bookOrders));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is populated after a successful call to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. It contains information derived from the `xsl:output` element of a compiled style sheet. This <xref:System.Xml.XmlWriterSettings> object can be passed to the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> method to create the <xref:System.Xml.XmlWriter> object to which you want to output.  
+ This property is populated after a successful call to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. It contains information derived from the `xsl:output` element of a compiled style sheet. This <xref:System.Xml.XmlWriterSettings> object can be passed to the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType> method to create the <xref:System.Xml.XmlWriter> object to which you want to output.  
   
    
   

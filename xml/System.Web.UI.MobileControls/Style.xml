@@ -135,10 +135,10 @@
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|No alignment is set for the specified object.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|Aligns to the left.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|Aligns to the center.|  
-|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=fullName>|Aligns to the right.|  
+|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|No alignment is set for the specified object.|  
+|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|Aligns to the left.|  
+|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|Aligns to the center.|  
+|<xref:System.Web.UI.MobileControls.Alignment?displayProperty=nameWithType>|Aligns to the right.|  
   
  ]]></format>
         </remarks>
@@ -187,11 +187,11 @@
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=fullName>|The size of the font.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=fullName>|Whether the font is bold.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=fullName>|Whether the font is italic.|  
-|<xref:System.Web.UI.MobileControls.Style.ForeColor%2A?displayProperty=fullName>|The foreground color.|  
-|<xref:System.Web.UI.MobileControls.Style.BackColor%2A?displayProperty=fullName>|The background color.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=nameWithType>|The size of the font.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=nameWithType>|Whether the font is bold.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=nameWithType>|Whether the font is italic.|  
+|<xref:System.Web.UI.MobileControls.Style.ForeColor%2A?displayProperty=nameWithType>|The foreground color.|  
+|<xref:System.Web.UI.MobileControls.Style.BackColor%2A?displayProperty=nameWithType>|The background color.|  
   
  ]]></format>
         </remarks>
@@ -382,10 +382,10 @@
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=fullName>|Whether the font is bold.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=fullName>|Whether the font is italic.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Name%2A?displayProperty=fullName>|An identifier for this font instance.|  
-|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=fullName>|The font size.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Bold%2A?displayProperty=nameWithType>|Whether the font is bold.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Italic%2A?displayProperty=nameWithType>|Whether the font is italic.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Name%2A?displayProperty=nameWithType>|An identifier for this font instance.|  
+|<xref:System.Web.UI.MobileControls.FontInfo.Size%2A?displayProperty=nameWithType>|The font size.|  
   
  ]]></format>
         </remarks>
@@ -996,9 +996,9 @@
   
 |Enumeration|Value|Description|  
 |-----------------|-----------|-----------------|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=fullName>|0|No size is set for the specified object. This is the default value.|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=fullName>|1|Wrap to the next line.|  
-|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=fullName>|2|The text is not wrapped to the next line.|  
+|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=nameWithType>|0|No size is set for the specified object. This is the default value.|  
+|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=nameWithType>|1|Wrap to the next line.|  
+|<xref:System.Web.UI.MobileControls.Wrapping?displayProperty=nameWithType>|2|The text is not wrapped to the next line.|  
   
  ]]></format>
         </remarks>

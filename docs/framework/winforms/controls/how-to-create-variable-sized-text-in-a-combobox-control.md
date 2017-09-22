@@ -71,7 +71,7 @@ End Sub
     > [!NOTE]
     >  This technique is also applicable to the <xref:System.Windows.Forms.ListBox> control — you can substitute a <xref:System.Windows.Forms.ListBox> for the <xref:System.Windows.Forms.ComboBox>.  
   
--   References to the <xref:System.Windows.Forms?displayProperty=fullName> and <xref:System.Drawing?displayProperty=fullName> namespaces.  
+-   References to the <xref:System.Windows.Forms?displayProperty=nameWithType> and <xref:System.Drawing?displayProperty=nameWithType> namespaces.  
   
 ## See Also  
  <xref:System.Windows.Forms.ComboBox.DrawItem>   

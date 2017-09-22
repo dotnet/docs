@@ -78,7 +78,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DataGridColumn.DesignMode%2A> property to programmatically determine whether the column is in design mode.  
   
- For more information about design mode, see <xref:System.ComponentModel.ISite.DesignMode%2A?displayProperty=fullName>.  
+ For more information about design mode, see <xref:System.ComponentModel.ISite.DesignMode%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -483,7 +483,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the properties of a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class change, the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged%2A?displayProperty=fullName> method should be called.  
+ When the properties of a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class change, the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged%2A?displayProperty=nameWithType> method should be called.  
   
  ]]></format>
         </remarks>
@@ -695,7 +695,7 @@
  Use the <xref:System.Web.UI.WebControls.DataGridColumn.ToString%2A> method to get the string representation of the column.  
   
 > [!NOTE]
->  This method is inherited from the <xref:System.Object?displayProperty=fullName> class and is not applicable to the <xref:System.Web.UI.WebControls.DataGridColumn> class.  
+>  This method is inherited from the <xref:System.Object?displayProperty=nameWithType> class and is not applicable to the <xref:System.Web.UI.WebControls.DataGridColumn> class.  
   
  ]]></format>
         </remarks>
@@ -720,7 +720,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataGridColumn.TrackViewState%2A> method to track view-state changes on the server control so they can be stored in the server control's <xref:System.Web.UI.StateBag?displayProperty=fullName> object. This allows a column to perform custom view-state management.  
+ Use the <xref:System.Web.UI.WebControls.DataGridColumn.TrackViewState%2A> method to track view-state changes on the server control so they can be stored in the server control's <xref:System.Web.UI.StateBag?displayProperty=nameWithType> object. This allows a column to perform custom view-state management.  
   
  ]]></format>
         </remarks>
@@ -745,7 +745,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataGridColumn.ViewState%2A> property to retrieve the <xref:System.Web.UI.StateBag?displayProperty=fullName> object that allows a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class to store its properties. The state of each property is automatically managed.  
+ Use the <xref:System.Web.UI.WebControls.DataGridColumn.ViewState%2A> property to retrieve the <xref:System.Web.UI.StateBag?displayProperty=nameWithType> object that allows a column derived from the <xref:System.Web.UI.WebControls.DataGridColumn> class to store its properties. The state of each property is automatically managed.  
   
  ]]></format>
         </remarks>

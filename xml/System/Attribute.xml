@@ -256,7 +256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A match is determined in the same way described in the Return Value section of <xref:System.Type.IsAssignableFrom%2A?displayProperty=fullName>.  
+ A match is determined in the same way described in the Return Value section of <xref:System.Type.IsAssignableFrom%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Starting with the .NET Framework version 2.0, this method returns security attributes on types, methods, and constructors if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  

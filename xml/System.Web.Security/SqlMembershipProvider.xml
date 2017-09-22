@@ -401,7 +401,7 @@
   
 -   The `passwordQuestion` parameter is longer than 256 characters.  
   
--   The `providerUserKey` parameter set to an object of a type other than <xref:System.Guid?displayProperty=fullName>.  
+-   The `providerUserKey` parameter set to an object of a type other than <xref:System.Guid?displayProperty=nameWithType>.  
   
 -   The `providerUserKey` parameter is a duplicate of an existing user key.  
   

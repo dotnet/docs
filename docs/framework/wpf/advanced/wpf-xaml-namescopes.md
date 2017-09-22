@@ -101,7 +101,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
  <xref:System.Windows.FrameworkTemplate> and <xref:System.Windows.Style> implement <xref:System.Windows.Markup.INameScope> through explicit interface definitions. The explicit implementations allow these XAML namescopes to behave conventionally when they are accessed through the <xref:System.Windows.Markup.INameScope> interface, which is how XAML namescopes are communicated by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] internal processes. But the explicit interface definitions are not part of the conventional API surface of <xref:System.Windows.FrameworkTemplate> and <xref:System.Windows.Style>, because you seldom need to call the <xref:System.Windows.Markup.INameScope> methods on <xref:System.Windows.FrameworkTemplate> and <xref:System.Windows.Style> directly, and instead would use other API such as <xref:System.Windows.FrameworkElement.GetTemplateChild%2A>.  
   
- The following classes define their own XAML namescope, by using the <xref:System.Windows.NameScope?displayProperty=fullName> helper class and connecting to its XAML namescope implementation through the <xref:System.Windows.NameScope.NameScope%2A?displayProperty=fullName> attached property:  
+ The following classes define their own XAML namescope, by using the <xref:System.Windows.NameScope?displayProperty=nameWithType> helper class and connecting to its XAML namescope implementation through the <xref:System.Windows.NameScope.NameScope%2A?displayProperty=nameWithType> attached property:  
   
 -   <xref:System.Windows.FrameworkElement>  
   

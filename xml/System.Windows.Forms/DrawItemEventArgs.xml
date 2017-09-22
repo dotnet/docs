@@ -105,14 +105,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=fullName>.  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=nameWithType>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
  [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
@@ -273,14 +273,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=fullName>.  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=nameWithType>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
  [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
@@ -336,7 +336,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the <xref:System.Windows.Forms.Control.ControlCollection.Item%2A> value of the item being drawn in the <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=fullName>. This property can return -1 if itemswere removed from the list.  
+ This property returns the <xref:System.Windows.Forms.Control.ControlCollection.Item%2A> value of the item being drawn in the <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=nameWithType>. This property can return -1 if itemswere removed from the list.  
   
    
   
@@ -374,9 +374,9 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
  [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  

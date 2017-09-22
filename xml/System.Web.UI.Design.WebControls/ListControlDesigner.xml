@@ -126,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner> base class, the <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataBind%2A> method sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> properties of the <xref:System.Web.UI.WebControls.DataBoundControl> object to reference the design-time data source, then calls the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A?displayProperty=fullName> method, and then restores the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> properties to their original values.  
+ For the <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner> base class, the <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataBind%2A> method sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> properties of the <xref:System.Web.UI.WebControls.DataBoundControl> object to reference the design-time data source, then calls the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A?displayProperty=nameWithType> method, and then restores the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> properties to their original values.  
   
  For the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class, however, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataBind%2A> method has no functionality, because <xref:System.Web.UI.WebControls.ListItem> objects were just added to the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
   
@@ -412,7 +412,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  For controls that are derived from the <xref:System.Web.UI.WebControls.ListControl> object, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.PreFilterProperties%2A> adds the <xref:System.Web.UI.Design.DataFieldConverter> attribute to the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties of the associated control.  
   

@@ -35,11 +35,11 @@ The Windows Forms <xref:System.Windows.Forms.Timer> is a component that raises a
  Describes how to react to timed intervals in your Windows-based applications.  
   
 ## Reference  
- <xref:System.Windows.Forms.Timer?displayProperty=fullName> class  
+ <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> class  
  Provides reference information on the class, used for Windows Forms timers, and its members.  
   
- <xref:System.Timers.Timer?displayProperty=fullName> class  
- Provides reference information on the <xref:System.Timers.Timer?displayProperty=fullName> class that is used by server-based timers.  
+ <xref:System.Timers.Timer?displayProperty=nameWithType> class  
+ Provides reference information on the <xref:System.Timers.Timer?displayProperty=nameWithType> class that is used by server-based timers.  
   
 ## Related Sections  
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  

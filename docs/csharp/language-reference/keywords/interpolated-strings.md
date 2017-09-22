@@ -45,7 +45,7 @@ Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours);
 The structure of an interpolated string is:  
   
 ```  
-$"<text> {<interpolated-expression> [,<field-width>] [<:format-string>] } <text> ..."  
+$"<text> {<interpolated-expression> [,<field-width>] [:<format-string>] } <text> ..."  
 ```  
 
 where: 
@@ -88,7 +88,7 @@ There are three implicit type conversions from an interpolated string:
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- <xref:System.IFormattable?displayProperty=fullName>   
- <xref:System.FormattableString?displayProperty=fullName>   
+ <xref:System.IFormattable?displayProperty=nameWithType>   
+ <xref:System.FormattableString?displayProperty=nameWithType>   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

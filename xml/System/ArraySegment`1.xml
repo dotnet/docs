@@ -75,7 +75,7 @@
   
 -   Have the same number of elements.  
   
- If you want to retrieve an element by its index in the <xref:System.ArraySegment%601> object, you must cast it to an <xref:System.Collections.Generic.IList%601> object and retrieve it or modify it by using the <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName> property. The following example retrieves the element in an <xref:System.ArraySegment%601> object that delimits a section of a string array.  
+ If you want to retrieve an element by its index in the <xref:System.ArraySegment%601> object, you must cast it to an <xref:System.Collections.Generic.IList%601> object and retrieve it or modify it by using the <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType> property. The following example retrieves the element in an <xref:System.ArraySegment%601> object that delimits a section of a string array.  
   
  [!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
  [!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
@@ -637,7 +637,7 @@
   
 -   They have the same number of elements.  
   
- The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -710,7 +710,7 @@
   
 -   They have a different number of elements.  
   
- The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

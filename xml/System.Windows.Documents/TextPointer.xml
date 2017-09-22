@@ -151,7 +151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify a positive value to delete characters that follow the current position (as in <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>); specify a negative value to delete characters that precede the current position (as in <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>).  
+ Specify a positive value to delete characters that follow the current position (as in <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>); specify a negative value to delete characters that precede the current position (as in <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>).  
   
  The number of characters actually deleted may be less than the number specified by `count`.  This happens in cases where `count` specifies more characters than exist to be deleted.  
   
@@ -299,7 +299,7 @@
   
  If the <xref:System.Windows.Documents.TextPointer> already points to a valid insertion position, but the closing tag for a non-empty formatting sequence directly follows that position in the given direction, then the <xref:System.Windows.Documents.TextPointer> returned by this method is adjusted to point to the insertion position just after the close of the formatting sequence. For example, consider the markup sequence `<Bold>a</Bold>b`. Note that there are two insertion positions between the letters `a` and `b` — one that precedes the closing `Bold` tag, and one directly following the closing `Bold` tag. If <xref:System.Windows.Documents.TextPointer.GetInsertionPosition%2A> is called on a <xref:System.Windows.Documents.TextPointer> to the position directly after the letter `a` and before of the closing `Bold` tag, and with a `direction` of <xref:System.Windows.Documents.LogicalDirection.Forward>, the returned <xref:System.Windows.Documents.TextPointer> is adjusted to point to the position just before the letter `b`, after the closing `Bold` tag. A similar adjustment is made for opening formatting tags when working in the opposite logical direction. This method is intended to provide a means of disambiguation between insertion positions in similar cases.  
   
- This method can also be used to be selective about insertion points when a sequence of structural tags is involved. For example, when at a position between closing and opening paragraph tags, the direction parameter can be used to select the closest insertion point at the beginning of the following paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>) or at the end of the preceding paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>).  
+ This method can also be used to be selective about insertion points when a sequence of structural tags is involved. For example, when at a position between closing and opening paragraph tags, the direction parameter can be used to select the closest insertion point at the beginning of the following paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>) or at the end of the preceding paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>).  
   
  If the pointer is already at insertion position, and there are no adjacent formatting tags in the specified `direction`, the returned <xref:System.Windows.Documents.TextPointer> points to the same position as the calling <xref:System.Windows.Documents.TextPointer>.  
   
@@ -652,7 +652,7 @@
 ## Examples  
  The following example demonstrates a use for this method. The example uses the <xref:System.Windows.Documents.TextPointer.GetTextInRun%2A> method to implement a simple text extractor.  The method returns a string concatenation of all text between two specified <xref:System.Windows.Documents.TextPointer> instances.  
   
- While the example can be used to extract any text between two <xref:System.Windows.Documents.TextPointer> instances, it is intended for illustrative purposes only, and should not be used in production code.  Use the <xref:System.Windows.Documents.TextRange.Text%2A?displayProperty=fullName> property instead.  
+ While the example can be used to extract any text between two <xref:System.Windows.Documents.TextPointer> instances, it is intended for illustrative purposes only, and should not be used in production code.  Use the <xref:System.Windows.Documents.TextRange.Text%2A?displayProperty=nameWithType> property instead.  
   
  [!code-csharp[TextPointer_Snippets#_TextPointer_GetTextInRun](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textpointer_gettextinrun)]
  [!code-vb[TextPointer_Snippets#_TextPointer_GetTextInRun](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textpointer_gettextinrun)]  

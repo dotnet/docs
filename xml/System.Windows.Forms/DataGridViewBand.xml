@@ -544,7 +544,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A> property affects the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=fullName> property of each cell in the band. For example, if the <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A> property of a <xref:System.Windows.Forms.DataGridViewRow> changes, then the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=fullName> property of all cells in the row will change.  
+ The <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A> property affects the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=nameWithType> property of each cell in the band. For example, if the <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A> property of a <xref:System.Windows.Forms.DataGridViewRow> changes, then the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=nameWithType> property of all cells in the row will change.  
   
    
   
@@ -710,7 +710,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method. The returned string contains the class's name and <xref:System.Windows.Forms.DataGridViewBand.Index%2A> property.  
+ This method overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method. The returned string contains the class's name and <xref:System.Windows.Forms.DataGridViewBand.Index%2A> property.  
   
  ]]></format>
         </remarks>

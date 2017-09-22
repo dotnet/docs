@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly%2A> calls <xref:System.EnterpriseServices.RegistrationHelper.InstallAssembly%2A?displayProperty=fullName>, which performs the following steps:  
+ <xref:System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly%2A> calls <xref:System.EnterpriseServices.RegistrationHelper.InstallAssembly%2A?displayProperty=nameWithType>, which performs the following steps:  
   
 1.  Registration of the assembly.  
   

@@ -41,7 +41,7 @@
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
- You can use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method to request ownership of a mutex. The calling thread blocks until one of the following occurs:  
+ You can use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType> method to request ownership of a mutex. The calling thread blocks until one of the following occurs:  
   
 -   The mutex is signaled to indicate that it is not owned. When this happens, the <xref:System.Threading.WaitHandle.WaitOne%2A> method returns `true`, and the calling thread assumes ownership of the mutex and accesses the resource protected by the mutex. When it has finished accessing the resource, the thread must call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method to release ownership of the mutex. The first example in the Examples section illustrates this pattern.  
   
@@ -51,7 +51,7 @@
   
  The thread that owns a mutex can request the same mutex in repeated calls to <xref:System.Threading.WaitHandle.WaitOne%2A> without blocking its execution. However, the thread must call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method the same number of times to release ownership of the mutex.  
   
- Because the <xref:System.Threading.Mutex> class inherits from <xref:System.Threading.WaitHandle>, you can also call the static <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=fullName> and <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=fullName> methods to synchronize access to a protected resource.  
+ Because the <xref:System.Threading.Mutex> class inherits from <xref:System.Threading.WaitHandle>, you can also call the static <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=nameWithType> and <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType> methods to synchronize access to a protected resource.  
   
  If a thread terminates while owning a mutex, the mutex is said to be abandoned. The state of the mutex is set to signaled, and the next waiting thread gets ownership. Beginning in version 2.0 of the .NET Framework, an <xref:System.Threading.AbandonedMutexException> is thrown in the next thread that acquires the abandoned mutex. Before version 2.0 of the .NET Framework, no exception was thrown.  
   
@@ -220,7 +220,7 @@
   
  This constructor initializes a <xref:System.Threading.Mutex> object that represents a named system mutex. You can create multiple <xref:System.Threading.Mutex> objects that represent the same named system mutex.  
   
- If the named mutex has already been created with access control security, and the caller does not have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName>, an exception is thrown. To open an existing named mutex with only those permissions needed for synchronizing thread activities, see the <xref:System.Threading.Mutex.OpenExisting%2A> method.  
+ If the named mutex has already been created with access control security, and the caller does not have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType>, an exception is thrown. To open an existing named mutex with only those permissions needed for synchronizing thread activities, see the <xref:System.Threading.Mutex.OpenExisting%2A> method.  
   
  If you specify `null` or an empty string for `name`, a local mutex is created, as if you had called the <xref:System.Threading.Mutex.%23ctor%28System.Boolean%29> constructor. In this case, `createdNew` is always `true`.  
   
@@ -296,7 +296,7 @@
   
  This constructor initializes a <xref:System.Threading.Mutex> object that represents a named system mutex. You can create multiple <xref:System.Threading.Mutex> objects that represent the same named system mutex.  
   
- If the named mutex has already been created with access control security, and the caller does not have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> rights, an exception is thrown. To open an existing named mutex with only those permissions needed for synchronizing thread activities, see the <xref:System.Threading.Mutex.OpenExisting%2A> method.  
+ If the named mutex has already been created with access control security, and the caller does not have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> rights, an exception is thrown. To open an existing named mutex with only those permissions needed for synchronizing thread activities, see the <xref:System.Threading.Mutex.OpenExisting%2A> method.  
   
  If you specify `null` or an empty string for `name`, a local mutex is created, as if you had called the <xref:System.Threading.Mutex.%23ctor%28System.Boolean%29> constructor. In this case, `createdNew` is always `true`.  
   
@@ -367,7 +367,7 @@
 > [!NOTE]
 >  The caller has full control over the newly created <xref:System.Threading.Mutex> object even if `mutexSecurity` denies or fails to grant some access rights to the current user. However, if the current user attempts to get another <xref:System.Threading.Mutex> object to represent the same named mutex, using either a constructor or the <xref:System.Threading.Mutex.OpenExisting%2A> method, Windows access control security is applied.  
   
- If the named mutex has already been created with access control security, and the caller does not have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName>, an exception is thrown. To open an existing named mutex with only those permissions needed for synchronizing thread activities, see the <xref:System.Threading.Mutex.OpenExisting%2A> method.  
+ If the named mutex has already been created with access control security, and the caller does not have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType>, an exception is thrown. To open an existing named mutex with only those permissions needed for synchronizing thread activities, see the <xref:System.Threading.Mutex.OpenExisting%2A> method.  
   
  If you specify `null` or an empty string for `name`, a local mutex is created, as if you had called the <xref:System.Threading.Mutex.%23ctor%28System.Boolean%29> constructor. In this case, `createdNew` is always `true`.  
   
@@ -421,9 +421,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.Mutex.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>, <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>, and <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>.  
+ The <xref:System.Threading.Mutex.GetAccessControl%2A> method uses the following combination of flags (combined using the bitwise OR operation) to search for permissions: <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>, and <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>.  
   
- The user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> to call this method, and the mutex must have been opened with <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName>.  
+ The user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> to call this method, and the mutex must have been opened with <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType>.  
   
    
   
@@ -488,9 +488,9 @@
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.Mutex> object, even though the objects that are returned represent the same named system mutex.  
   
- This method overload is equivalent to calling the <xref:System.Threading.Mutex.OpenExisting%28System.String%2CSystem.Security.AccessControl.MutexRights%29> method overload and specifying <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> and <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> rights, combined by using the bitwise OR operation.  
+ This method overload is equivalent to calling the <xref:System.Threading.Mutex.OpenExisting%28System.String%2CSystem.Security.AccessControl.MutexRights%29> method overload and specifying <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> and <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> rights, combined by using the bitwise OR operation.  
   
- Specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag allows a thread to wait on the mutex, and specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag allows a thread to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
+ Specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag allows a thread to wait on the mutex, and specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
   
  This method does not request ownership of the mutex.  
   
@@ -551,7 +551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `rights` parameter must include the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag to allow threads to wait on the mutex, and the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag to allow threads to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag to allow threads to wait on the mutex, and the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
   
  The <xref:System.Threading.Mutex.OpenExisting%2A> method tries to open an existing named mutex. If the system mutex does not exist, this method throws an exception instead of creating the system object. To create the system mutex when it does not already exist, use one of the <xref:System.Threading.Mutex.%23ctor%2A> constructors that has a `name` parameter.  
   
@@ -676,7 +676,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> rights to call this method, and the mutex must have been opened with <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName>.  
+ The user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> rights to call this method, and the mutex must have been opened with <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType>.  
   
    
   
@@ -748,7 +748,7 @@
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.Mutex> object, even though the objects that are returned represent the same named system mutex.  
   
- This method overload is equivalent to calling the <xref:System.Threading.Mutex.TryOpenExisting%28System.String%2CSystem.Security.AccessControl.MutexRights%2CSystem.Threading.Mutex%40%29> method overload and specifying <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> and <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag allows a thread to wait on the mutex, and specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag allows a thread to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
+ This method overload is equivalent to calling the <xref:System.Threading.Mutex.TryOpenExisting%28System.String%2CSystem.Security.AccessControl.MutexRights%2CSystem.Threading.Mutex%40%29> method overload and specifying <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> and <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> rights, combined by using the bitwise OR operation. Specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag allows a thread to wait on the mutex, and specifying the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag allows a thread to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
   
  This method does not request ownership of the mutex.  
   
@@ -800,7 +800,7 @@
   
  If you are uncertain whether a named mutex exists, use this method overload instead of the <xref:System.Threading.Mutex.OpenExisting%28System.String%2CSystem.Security.AccessControl.MutexRights%29> method overload, which throws an exception if the mutex does not exist.  
   
- The `rights` parameter must include the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag to allow threads to wait on the mutex, and the <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> flag to allow threads to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
+ The `rights` parameter must include the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag to allow threads to wait on the mutex, and the <xref:System.Security.AccessControl.MutexRights?displayProperty=nameWithType> flag to allow threads to call the <xref:System.Threading.Mutex.ReleaseMutex%2A> method.  
   
  Multiple calls to this method that use the same value for `name` do not necessarily return the same <xref:System.Threading.Mutex> object, even though the objects that are returned represent the same named system mutex.  
   

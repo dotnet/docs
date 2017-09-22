@@ -28,7 +28,7 @@ manager: "wpickett"
  Provides detailed information about .NET regular expressions, including language elements, regular expression behavior, and examples.  
   
  [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
- Describes string operations provided by the <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.  
+ Describes string operations provided by the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.  
   
 ## Related Sections  
  [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)  

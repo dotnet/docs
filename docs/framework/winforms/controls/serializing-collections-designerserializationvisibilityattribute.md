@@ -45,7 +45,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
   
 2.  Rename `UserControl1` to `SerializationDemoControl`. For more information, see [How to: Rename Identifiers](http://msdn.microsoft.com/en-us/2430f732-2b70-4516-8cf6-a7bb71cc9724).  
   
-3.  In the **Properties** window, set the value of the <xref:System.Windows.Forms.Padding.All%2A?displayProperty=fullName> property to `10`.  
+3.  In the **Properties** window, set the value of the <xref:System.Windows.Forms.Padding.All%2A?displayProperty=nameWithType> property to `10`.  
   
 4.  Place a <xref:System.Windows.Forms.TextBox> control in the `SerializationDemoControl`.  
   

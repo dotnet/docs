@@ -177,7 +177,7 @@ string label = "Colors used in the map";
 var pair = (count, label); // element names are "count" and "label"
 ```
 
-You can learn more about this feature in the [Tuples](../tuples.md)) topic.
+You can learn more about this feature in the [Tuples](../tuples.md) topic.
 
 ## Reference assembly generation
 

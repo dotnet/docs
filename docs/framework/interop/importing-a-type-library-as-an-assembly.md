@@ -59,7 +59,7 @@ COM type definitions usually reside in a type library. In contrast, CLS-complian
   
      The Type Library Importer provides command-line options to adjust metadata in the resulting interop file, imports types from an existing type library, and generates an interop assembly and a namespace. For instructions, see [How to: Generate Interop Assemblies from Type Libraries](../../../docs/framework/interop/how-to-generate-interop-assemblies-from-type-libraries.md).  
   
--   <xref:System.Runtime.InteropServices.TypeLibConverter?displayProperty=fullName> class  
+-   <xref:System.Runtime.InteropServices.TypeLibConverter?displayProperty=nameWithType> class  
   
      This class provides methods to convert coclasses and interfaces in a type library to metadata within an assembly. It produces the same metadata output as Tlbimp.exe. However, unlike Tlbimp.exe, the <xref:System.Runtime.InteropServices.TypeLibConverter> class can convert an in-memory type library to metadata.  
   

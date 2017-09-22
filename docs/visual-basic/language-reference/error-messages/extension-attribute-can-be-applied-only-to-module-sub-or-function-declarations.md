@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &#39;Extension&#39; attribute can be applied only to &#39;Module&#39;, &#39;Sub&#39;, or &#39;Function&#39; declarations
-The only way to extend a data type in Visual Basic is to define an extension method inside a standard module. The extension method can be a `Sub` procedure or a `Function` procedure. All extension methods must be marked with the extension attribute, `<Extension()>`, from the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace. Optionally, a module that contains an extension method may be marked in the same way. No other use of the extension attribute is valid.  
+The only way to extend a data type in Visual Basic is to define an extension method inside a standard module. The extension method can be a `Sub` procedure or a `Function` procedure. All extension methods must be marked with the extension attribute, `<Extension()>`, from the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace. Optionally, a module that contains an extension method may be marked in the same way. No other use of the extension attribute is valid.  
   
  **Error ID:** BC36550  
   

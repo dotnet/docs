@@ -22,7 +22,7 @@ Authors of the types that support type converter and markup extension usages mus
   
 <a name="obtaining_services"></a>   
 ## Obtaining Services  
- As an implementer of a value converter, you often need access to some type of context in which the value converter is applied. This context might include information such as the active XAML schema context, access to the type mapping system that the XAML schema context and XAML object writer provide, and so on. The services available for a markup extension or type converter implementation are communicated through the context parameters that are part of the signature of each virtual method. In every case, you have <xref:System.IServiceProvider> implemented in the context, and can call <xref:System.IServiceProvider.GetService%2A?displayProperty=fullName> to request a service.  
+ As an implementer of a value converter, you often need access to some type of context in which the value converter is applied. This context might include information such as the active XAML schema context, access to the type mapping system that the XAML schema context and XAML object writer provide, and so on. The services available for a markup extension or type converter implementation are communicated through the context parameters that are part of the signature of each virtual method. In every case, you have <xref:System.IServiceProvider> implemented in the context, and can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType> to request a service.  
   
 <a name="services_for_a_markup_extension"></a>   
 ## Services for a Markup Extension  
@@ -81,7 +81,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
 ### IServiceProvider  
  **Reference documentation**: <xref:System.IServiceProvider>  
   
- **Relevant to:** Basic operation of a service-based infrastructure in the .NET Framework so that you can call <xref:System.IServiceProvider.GetService%2A?displayProperty=fullName>.  
+ **Relevant to:** Basic operation of a service-based infrastructure in the .NET Framework so that you can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType>.  
   
 ### ITypeDescriptorContext  
  **Reference documentation**: <xref:System.ComponentModel.ITypeDescriptorContext>  
@@ -102,7 +102,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  **Service API:**  <xref:System.Windows.Markup.IXamlTypeResolver.Resolve%2A>  
   
- Can influence the XAML-to-CLR type mapping that is necessary when the XAML writer constructs a CLR object in an object graph. <xref:System.Windows.Markup.IXamlTypeResolver.Resolve%2A> processes a potentially prefix-qualified string that corresponds to a XAML type name (<xref:System.Xaml.XamlType.Name%2A?displayProperty=fullName>), and returns a CLR <xref:System.Type>. Resolving types is typically heavily dependent on XAML schema context. Only the XAML schema context is aware of considerations such as which assemblies are loaded, and which of these assemblies can or should be accessed for type resolution.  
+ Can influence the XAML-to-CLR type mapping that is necessary when the XAML writer constructs a CLR object in an object graph. <xref:System.Windows.Markup.IXamlTypeResolver.Resolve%2A> processes a potentially prefix-qualified string that corresponds to a XAML type name (<xref:System.Xaml.XamlType.Name%2A?displayProperty=nameWithType>), and returns a CLR <xref:System.Type>. Resolving types is typically heavily dependent on XAML schema context. Only the XAML schema context is aware of considerations such as which assemblies are loaded, and which of these assemblies can or should be accessed for type resolution.  
   
 ### IUriContext  
  **Reference documentation**: <xref:System.Windows.Markup.IUriContext>  

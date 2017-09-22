@@ -89,9 +89,9 @@
   
  You can control the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control by programmatically adding attributes to the `<td>` and `<tr>` tags rendered by the control on the browser. Attributes can be programmatically added by providing code in the event handler for the <xref:System.Web.UI.WebControls.DataGrid.OnItemCreated%2A> or <xref:System.Web.UI.WebControls.DataGrid.OnItemDataBound%2A> event.  
   
- To add an attribute to the `<td>` tag, first get the <xref:System.Web.UI.WebControls.TableCell> object that represents the cell in the <xref:System.Web.UI.WebControls.DataGrid> control you want to add the attribute to. The <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection for the <xref:System.Web.UI.WebControls.DataGridItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> object passed into the event handler can be used to get the desired <xref:System.Web.UI.WebControls.TableCell> object. You can then use the <xref:System.Web.UI.AttributeCollection.Add%2A?displayProperty=fullName> method of the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection for the <xref:System.Web.UI.WebControls.TableCell> object to add attributes to the `<td>` tag.  
+ To add an attribute to the `<td>` tag, first get the <xref:System.Web.UI.WebControls.TableCell> object that represents the cell in the <xref:System.Web.UI.WebControls.DataGrid> control you want to add the attribute to. The <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection for the <xref:System.Web.UI.WebControls.DataGridItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> object passed into the event handler can be used to get the desired <xref:System.Web.UI.WebControls.TableCell> object. You can then use the <xref:System.Web.UI.AttributeCollection.Add%2A?displayProperty=nameWithType> method of the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection for the <xref:System.Web.UI.WebControls.TableCell> object to add attributes to the `<td>` tag.  
   
- To add an attribute to the `<tr>` tag, first get the <xref:System.Web.UI.WebControls.DataGridItem> object that represents the row in the <xref:System.Web.UI.WebControls.DataGrid> control you want to add the attribute to. The <xref:System.Web.UI.WebControls.DataGridItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> object passed into the event handler can be used to get the desired <xref:System.Web.UI.WebControls.DataGridItem> object. You can then use the <xref:System.Web.UI.AttributeCollection.Add%2A?displayProperty=fullName> method of the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection for the <xref:System.Web.UI.WebControls.DataGridItem> object to add attributes to the `<tr>` tag.  
+ To add an attribute to the `<tr>` tag, first get the <xref:System.Web.UI.WebControls.DataGridItem> object that represents the row in the <xref:System.Web.UI.WebControls.DataGrid> control you want to add the attribute to. The <xref:System.Web.UI.WebControls.DataGridItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> object passed into the event handler can be used to get the desired <xref:System.Web.UI.WebControls.DataGridItem> object. You can then use the <xref:System.Web.UI.AttributeCollection.Add%2A?displayProperty=nameWithType> method of the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection for the <xref:System.Web.UI.WebControls.DataGridItem> object to add attributes to the `<tr>` tag.  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
@@ -599,10 +599,10 @@
   
 |Data Type|Description|  
 |---------------|-----------------|  
-|Primitives|A primitive data type, such as <xref:System.Int32?displayProperty=fullName>, <xref:System.Char>, <xref:System.Double>, and so on. For a complete list, see <xref:System.Type.IsPrimitive%2A?displayProperty=fullName>.|  
-|String|A <xref:System.String?displayProperty=fullName> object.|  
-|DateTime|A <xref:System.DateTime?displayProperty=fullName> object.|  
-|Decimal|A <xref:System.Decimal?displayProperty=fullName> object.|  
+|Primitives|A primitive data type, such as <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Char>, <xref:System.Double>, and so on. For a complete list, see <xref:System.Type.IsPrimitive%2A?displayProperty=nameWithType>.|  
+|String|A <xref:System.String?displayProperty=nameWithType> object.|  
+|DateTime|A <xref:System.DateTime?displayProperty=nameWithType> object.|  
+|Decimal|A <xref:System.Decimal?displayProperty=nameWithType> object.|  
   
 > [!NOTE]
 >  Explicitly declared columns may be used in conjunction with auto-generated columns. When using both, explicitly declared columns will be rendered first, followed by the auto-generated columns. Auto-generated columns are not added to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection.  

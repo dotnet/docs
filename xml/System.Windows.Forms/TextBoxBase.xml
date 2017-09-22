@@ -116,7 +116,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.AcceptsTabChanged> event.  
   
@@ -482,7 +482,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.BorderStyleChanged> event.  
   
@@ -1134,7 +1134,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.HideSelectionChanged> event.  
   
@@ -1234,7 +1234,7 @@
    
   
 ## Examples  
- The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to extract all strings of text from a multiline text box control and displays them using the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=fullName> method. This example requires that a <xref:System.Windows.Forms.TextBox> control has been created, named `textBox1`, and that it has been filled with lines of text.  
+ The following code example uses <xref:System.Windows.Forms.TextBox>, a derived class, to extract all strings of text from a multiline text box control and displays them using the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method. This example requires that a <xref:System.Windows.Forms.TextBox> control has been created, named `textBox1`, and that it has been filled with lines of text.  
   
  [!code-cpp[Classic TextBoxBase.Lines Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBoxBase.Lines Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TextBoxBase.Lines Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBoxBase.Lines Example/CS/source.cs#1)]
@@ -1360,7 +1360,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event.  
   
@@ -1404,7 +1404,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MouseClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MouseClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.MouseClick> event.  
   
@@ -1450,7 +1450,7 @@
   
  The following can be used as newline characters:  
   
--   <xref:System.Environment.NewLine%2A?displayProperty=fullName>  
+-   <xref:System.Environment.NewLine%2A?displayProperty=nameWithType>  
   
 -   ControlChars.CrLf  
   
@@ -1467,11 +1467,11 @@
 > [!NOTE]
 >  This property is set to `false` by default for all derived classes, with the exception of the <xref:System.Windows.Forms.RichTextBox> control.  
   
- For a <xref:System.Windows.Forms.RichTextBox> control, the <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> property affects whether or not the control will automatically resize, as follows:  
+ For a <xref:System.Windows.Forms.RichTextBox> control, the <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=nameWithType> property affects whether or not the control will automatically resize, as follows:  
   
--   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=fullName> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> is set to `true`, <xref:System.Windows.Forms.RichTextBox> will not automatically resize.  
+-   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=nameWithType> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=nameWithType> is set to `true`, <xref:System.Windows.Forms.RichTextBox> will not automatically resize.  
   
--   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=fullName> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=fullName> is set to `false`, <xref:System.Windows.Forms.RichTextBox> will automatically resize.  
+-   If <xref:System.Windows.Forms.RichTextBox.AutoSize%2A?displayProperty=nameWithType> is set to `true` and <xref:System.Windows.Forms.RichTextBox.Multiline%2A?displayProperty=nameWithType> is set to `false`, <xref:System.Windows.Forms.RichTextBox> will automatically resize.  
   
    
   
@@ -1509,7 +1509,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MultilineChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.MultilineChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.MultilineChanged> event.  
   
@@ -2133,7 +2133,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBoxBase.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.TextBoxBase>, such as a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.TextBoxBase>. Then name the instance `TextBoxBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBoxBase.ReadOnlyChanged> event.  
   
@@ -2211,7 +2211,7 @@
 >  You can programmatically move the caret within the text box by setting the `start` parameter to the position within the text box where you want the caret to move to and set the `length` parameter to a value of zero (0). The text box must have focus in order for the caret to be moved.  
   
 > [!NOTE]
->  If this method is called without any parameters, an alternative method is used. This alternative method inherits from the <xref:System.Windows.Forms.Control> class. When called, it sets the input focus to the control and selects the contents of the control. For more information, see the <xref:System.Windows.Forms.Control.Select%2A?displayProperty=fullName> method.  
+>  If this method is called without any parameters, an alternative method is used. This alternative method inherits from the <xref:System.Windows.Forms.Control> class. When called, it sets the input focus to the control and selects the contents of the control. For more information, see the <xref:System.Windows.Forms.Control.Select%2A?displayProperty=nameWithType> method.  
   
    
   

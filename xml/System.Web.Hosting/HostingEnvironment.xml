@@ -614,15 +614,15 @@
   
  To use a registered object, follow these steps:  
   
-1.  Create a new instance of your registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=fullName> method.  
+1.  Create a new instance of your registered object by calling the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A?displayProperty=nameWithType> method.  
   
 2.  Call a type-specific method to initialize your new object. In the initialization method, call the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method to add the object to the list of registered objects.  
   
-3.  Call the <xref:System.Web.Hosting.ApplicationManager.GetObject%2A?displayProperty=fullName> method to return the registered object when required.  
+3.  Call the <xref:System.Web.Hosting.ApplicationManager.GetObject%2A?displayProperty=nameWithType> method to return the registered object when required.  
   
-4.  When you wish to stop your object, call the <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=fullName> method. The <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=fullName> method in turn calls the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=fullName> method.  
+4.  When you wish to stop your object, call the <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=nameWithType> method. The <xref:System.Web.Hosting.ApplicationManager.StopObject%2A?displayProperty=nameWithType> method in turn calls the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=nameWithType> method.  
   
-5.  In the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=fullName> method, have your object call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method.  
+5.  In the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A?displayProperty=nameWithType> method, have your object call the <xref:System.Web.Hosting.HostingEnvironment.UnregisterObject%2A> method.  
   
    
   

@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the user has enabled the <xref:System.Windows.Forms.SystemInformation.HighContrast%2A> mode, this property is set to <xref:System.Drawing.SystemColors.WindowFrame%2A?displayProperty=fullName>; otherwise, it is set to <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=fullName>.  
+ If the user has enabled the <xref:System.Windows.Forms.SystemInformation.HighContrast%2A> mode, this property is set to <xref:System.Drawing.SystemColors.WindowFrame%2A?displayProperty=nameWithType>; otherwise, it is set to <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -163,7 +163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
+ If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=nameWithType> color; otherwise, the color's luminosity value is decreased.  
   
  ]]></format>
         </remarks>
@@ -194,7 +194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
+ If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlDark%2A?displayProperty=nameWithType> color; otherwise, the color's luminosity value is decreased.  
   
  ]]></format>
         </remarks>
@@ -223,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to the <xref:System.Drawing.SystemColors.ControlDarkDark%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is increased.  
+ If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to the <xref:System.Drawing.SystemColors.ControlDarkDark%2A?displayProperty=nameWithType> color; otherwise, the color's luminosity value is increased.  
   
  ]]></format>
         </remarks>
@@ -349,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Border3DStyle?displayProperty=fullName> style is used by default to draw the border.  
+ The <xref:System.Windows.Forms.Border3DStyle?displayProperty=nameWithType> style is used by default to draw the border.  
   
    
   
@@ -468,7 +468,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Border3DStyle?displayProperty=fullName> style is used by default to draw the border.  
+ The <xref:System.Windows.Forms.Border3DStyle?displayProperty=nameWithType> style is used by default to draw the border.  
   
    
   
@@ -662,7 +662,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=fullName> method and the <xref:System.Windows.Forms.CaptionButton> enumeration. To run this example, paste the following code in a form containing a Button named `Button1`. The form should import the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the button's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.ControlPaint.DrawCaptionButton%2A?displayProperty=nameWithType> method and the <xref:System.Windows.Forms.CaptionButton> enumeration. To run this example, paste the following code in a form containing a Button named `Button1`. The form should import the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces. Ensure the button's <xref:System.Windows.Forms.Control.Paint> event is associated with the event handler in this example.  
   
  [!code-cpp[System.Windows.Forms.ControlPaintMembers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ControlPaintMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CS/form1.cs#1)]
@@ -887,7 +887,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ControlPaint.DrawFocusRectangle%2A> method and the <xref:System.Windows.Forms.Control.Handle%2A?displayProperty=fullName> property. To run this example, paste the following code in a form. Add two buttons named `Button1` and `Button2` to the form and ensure all events are connected to their event handlers.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ControlPaint.DrawFocusRectangle%2A> method and the <xref:System.Windows.Forms.Control.Handle%2A?displayProperty=nameWithType> property. To run this example, paste the following code in a form. Add two buttons named `Button1` and `Button2` to the form and ensure all events are connected to their event handlers.  
   
  [!code-cpp[System.Windows.Forms.ControlPaint1#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaint1/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.ControlPaint1#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaint1/CS/form1.cs#2)]
@@ -930,7 +930,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ControlPaint.DrawFocusRectangle%2A> method and the <xref:System.Windows.Forms.Control.Handle%2A?displayProperty=fullName> property. To run this example, paste the following code in a form. Add two buttons named `Button1` and Button2 to the form and ensure all events are connected to their event handlers.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ControlPaint.DrawFocusRectangle%2A> method and the <xref:System.Windows.Forms.Control.Handle%2A?displayProperty=nameWithType> property. To run this example, paste the following code in a form. Add two buttons named `Button1` and Button2 to the form and ensure all events are connected to their event handlers.  
   
  [!code-cpp[System.Windows.Forms.ControlPaint1#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaint1/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.ControlPaint1#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaint1/CS/form1.cs#2)]
@@ -1098,7 +1098,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=nameWithType> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>
@@ -1134,7 +1134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=nameWithType> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>
@@ -1172,7 +1172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to true, you call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=nameWithType> property is set to true, you call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>
@@ -1214,7 +1214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=fullName> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
+ When owner-drawing <xref:System.Windows.Forms.MenuItem> controls, you need to verify property values to determine the correct glyph to draw or remove. For example, when the <xref:System.Windows.Forms.MenuItem.Checked%2A?displayProperty=nameWithType> property is set to `true`, you must call the <xref:System.Windows.Forms.MenuGlyph.Checkmark> value of <xref:System.Windows.Forms.MenuGlyph> to draw a check mark on the <xref:System.Windows.Forms.MenuItem>.  
   
  ]]></format>
         </remarks>
@@ -1365,7 +1365,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Control.RectangleToScreen%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.PointToScreen%2A?displayProperty=fullName>, and the <xref:System.Windows.Forms.ControlPaint.DrawReversibleFrame%2A> members. To run the example, paste the following code in a form called `Form1` containing several controls. This example requires that the mouse events are connected to the event handlers defined in the example.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Control.RectangleToScreen%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.PointToScreen%2A?displayProperty=nameWithType>, and the <xref:System.Windows.Forms.ControlPaint.DrawReversibleFrame%2A> members. To run the example, paste the following code in a form called `Form1` containing several controls. This example requires that the mouse events are connected to the event handlers defined in the example.  
   
  [!code-cpp[System.Windows.Forms.RectangleToScreen#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.RectangleToScreen/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.RectangleToScreen#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.RectangleToScreen/CS/form1.cs#2)]
@@ -1408,7 +1408,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ControlPaint.DrawReversibleLine%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Control.PointToScreen%2A?displayProperty=fullName> methods. To run the example, paste the following code in a form. Add a button named `Button3` to the form and ensure all events are connected to their event handlers.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ControlPaint.DrawReversibleLine%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.PointToScreen%2A?displayProperty=nameWithType> methods. To run the example, paste the following code in a form. Add a button named `Button3` to the form and ensure all events are connected to their event handlers.  
   
  [!code-cpp[System.Windows.Forms.ControlPaint1#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaint1/CPP/form1.cpp#3)]
  [!code-csharp[System.Windows.Forms.ControlPaint1#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaint1/CS/form1.cs#3)]
@@ -1742,7 +1742,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlLight%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
+ If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlLight%2A?displayProperty=nameWithType> color; otherwise, the color's luminosity value is decreased.  
   
  ]]></format>
         </remarks>
@@ -1773,7 +1773,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlLight%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is decreased.  
+ If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to a <xref:System.Drawing.SystemColors.ControlLight%2A?displayProperty=nameWithType> color; otherwise, the color's luminosity value is decreased.  
   
  ]]></format>
         </remarks>
@@ -1802,7 +1802,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to the <xref:System.Drawing.SystemColors.ControlLightLight%2A?displayProperty=fullName> color; otherwise, the color's luminosity value is increased.  
+ If the specified <xref:System.Drawing.Color> is one of the <xref:System.Drawing.SystemColors>, the color is converted to the <xref:System.Drawing.SystemColors.ControlLightLight%2A?displayProperty=nameWithType> color; otherwise, the color's luminosity value is increased.  
   
  ]]></format>
         </remarks>

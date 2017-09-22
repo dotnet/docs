@@ -21,9 +21,9 @@
   
  <xref:System.ServiceModel.Description.IWsdlExportExtension> does not export custom policy assertions even though [!INCLUDE[indigo1](~/includes/indigo1-md.md)] exports custom binding policy assertions to the appropriate element inside WSDL. If you want to export custom policy assertions, implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface.  
   
- The metadata publication process begins by calling <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoints%2A?displayProperty=fullName> which in turn calls <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%2A?displayProperty=fullName> for each endpoint.  
+ The metadata publication process begins by calling <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoints%2A?displayProperty=nameWithType> which in turn calls <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%2A?displayProperty=nameWithType> for each endpoint.  
   
- The endpoint is exported by first exporting its contract.When exporting a contract the <xref:System.ServiceModel.Description.WsdlExporter?displayProperty=fullName> calls the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A?displayProperty=fullName> method on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations on the contract, and operation behaviors for that contract. Operations that use wildcard actions are not exported in metadata, so <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations on operation behaviors for these operations are not exported.  
+ The endpoint is exported by first exporting its contract.When exporting a contract the <xref:System.ServiceModel.Description.WsdlExporter?displayProperty=nameWithType> calls the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A?displayProperty=nameWithType> method on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations on the contract, and operation behaviors for that contract. Operations that use wildcard actions are not exported in metadata, so <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations on operation behaviors for these operations are not exported.  
   
  After exporting the contract, the port and binding are exported and exported policy expressions are attached.  
   

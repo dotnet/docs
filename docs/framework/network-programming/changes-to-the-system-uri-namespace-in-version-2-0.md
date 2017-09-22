@@ -19,7 +19,7 @@ ms.author: "markl"
 manager: "markl"
 ---
 # Changes to the System.Uri namespace in Version 2.0
-Several changes were made to the <xref:System.Uri?displayProperty=fullName> class. These changes fixed incorrect behavior, enhanced usability, and enhanced security.  
+Several changes were made to the <xref:System.Uri?displayProperty=nameWithType> class. These changes fixed incorrect behavior, enhanced usability, and enhanced security.  
   
 ## Obsolete and Deprecated Members  
  Constructors:  
@@ -79,4 +79,4 @@ Several changes were made to the <xref:System.Uri?displayProperty=fullName> clas
 -   URI path compression is fixed so that a broken URI cannot traverse the file system above the root.  
   
 ## See Also  
- <xref:System.Uri?displayProperty=fullName>
+ <xref:System.Uri?displayProperty=nameWithType>

@@ -69,7 +69,7 @@ The .NET Framework for Windows Store apps is a subset of the full .NET Framework
 -   Use the [AsRandomAccessStream](../../../docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md) method, as shown in the following example.  
   
     > [!IMPORTANT]
-    >  Ensure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek%2A?displayProperty=fullName> property to determine this.  
+    >  Ensure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek%2A?displayProperty=nameWithType> property to determine this.  
   
      To run this example, you must create a Windows Store XAML app that targets the .NET Framework 4.5.1 and contains a text block named `TextBlock2` and a button named `Button2`. The button click event must be associated with the `button2_Click` method shown in this example.  
   

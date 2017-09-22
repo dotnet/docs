@@ -113,13 +113,13 @@ A string is an object of type <xref:System.String> whose value is text. Internal
  [!code-cs[csProgGuideStrings#8](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_9.cs)]  
   
 ## Null Strings and Empty Strings  
- An empty string is an instance of a <xref:System.String?displayProperty=fullName> object that contains zero characters. Empty strings are used often in various programming scenarios to represent a blank text field. You can call methods on empty strings because they are valid <xref:System.String?displayProperty=fullName> objects. Empty strings are initialized as follows:  
+ An empty string is an instance of a <xref:System.String?displayProperty=nameWithType> object that contains zero characters. Empty strings are used often in various programming scenarios to represent a blank text field. You can call methods on empty strings because they are valid <xref:System.String?displayProperty=nameWithType> objects. Empty strings are initialized as follows:  
   
 ```  
 string s = String.Empty;  
 ```  
   
- By contrast, a null string does not refer to an instance of a <xref:System.String?displayProperty=fullName> object and any attempt to call a method on a null string causes a <xref:System.NullReferenceException>. However, you can use null strings in concatenation and comparison operations with other strings. The following examples illustrate some cases in which a reference to a null string does and does not cause an exception to be thrown:  
+ By contrast, a null string does not refer to an instance of a <xref:System.String?displayProperty=nameWithType> object and any attempt to call a method on a null string causes a <xref:System.NullReferenceException>. However, you can use null strings in concatenation and comparison operations with other strings. The following examples illustrate some cases in which a reference to a null string does and does not cause an exception to be thrown:  
   
  [!code-cs[csProgGuideStrings#27](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_10.cs)]  
   
@@ -146,8 +146,8 @@ string s = String.Empty;
 |[How to: Search Strings Using String Methods](../../../csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md)|Explains how to use specific methods to search strings.|  
 |[How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)|Explains how to use regular expressions to search strings.|  
 |[How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
-|[How to: Convert a String to a DateTime](../../../csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=fullName> object.|  
-|[Basic String Operations](https://msdn.microsoft.com/library/a292he7t)|Provides links to topics that use <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> methods to perform basic string operations.|  
+|[How to: Convert a String to a DateTime](../../../csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=nameWithType> object.|  
+|[Basic String Operations](https://msdn.microsoft.com/library/a292he7t)|Provides links to topics that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.|  
 |[Parsing Strings](https://msdn.microsoft.com/library/b4w53z0y)|Describes how to insert characters or empty spaces into a string.|  
 |[Comparing Strings](https://msdn.microsoft.com/library/fbh501kz)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
 |[Using the StringBuilder Class](../../../standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  

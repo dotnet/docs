@@ -218,7 +218,7 @@
  By default, this field is set to `false` (disabled). To enable the switch, assign this field the value of `true`. To disable the switch, assign the value to `false`.  The value of this property is determined by the value of the base class property <xref:System.Diagnostics.Switch.SwitchSetting%2A>.  
   
 > [!NOTE]
->  This method uses the <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> flag to prevent being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=fullName> permission. If your code can be called from partially trusted code, do not pass the user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation.  
+>  This method uses the <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> flag to prevent being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass the user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation.  
   
    
   

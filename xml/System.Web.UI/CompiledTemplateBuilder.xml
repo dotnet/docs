@@ -75,7 +75,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.TemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%2A?displayProperty=fullName> method. It is used by ASP.NET to create the control hierarchy of the template and is not meant to be used directly in your code.  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.TemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%2A?displayProperty=nameWithType> method. It is used by ASP.NET to create the control hierarchy of the template and is not meant to be used directly in your code.  
   
  ]]></format>
         </remarks>

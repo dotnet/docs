@@ -52,7 +52,7 @@ WMIClass [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  
- Mgmtclassgen.exe uses the <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=fullName> method. Therefore, you can use any custom code provider to generate code in managed languages other than C#, Visual Basic, and JScript.  
+ Mgmtclassgen.exe uses the <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType> method. Therefore, you can use any custom code provider to generate code in managed languages other than C#, Visual Basic, and JScript.  
   
  Note that generated classes are bound to the schema for which they are generated. If the underlying schema changes, you must regenerate the class if you want it to reflect changes to the schema.  
   
@@ -158,7 +158,7 @@ public class App
   
 ## See Also  
  <xref:System.Management>   
- <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=fullName>   
- <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=fullName>   
+ <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>   
+ <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>   
  [Tools](../../../docs/framework/tools/index.md)   
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

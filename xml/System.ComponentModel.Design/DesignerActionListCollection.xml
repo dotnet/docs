@@ -35,7 +35,7 @@
   
  The designer infrastructure constructs a panel by creating a smart tag panel, whose constructor takes two parameters of type <xref:System.ComponentModel.Design.DesignerActionListCollection>. The collections of lists, which contain the pulled and pushed items, are merged into one panel.  
   
- Because it derives from the <xref:System.Collections.CollectionBase?displayProperty=fullName> class, <xref:System.ComponentModel.Design.DesignerActionListCollection> uses an internal <xref:System.Collections.ArrayList> to store its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
+ Because it derives from the <xref:System.Collections.CollectionBase?displayProperty=nameWithType> class, <xref:System.ComponentModel.Design.DesignerActionListCollection> uses an internal <xref:System.Collections.ArrayList> to store its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
   
    
   
@@ -298,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
+ Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=nameWithType> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
   
  ]]></format>
         </remarks>
@@ -331,7 +331,7 @@
 ## Remarks  
  If the `index` parameter is equal to the value of the <xref:System.Collections.CollectionBase.Count%2A> property, the new element is added to the end of the collection.  
   
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Because lists maintain contiguous elements, the elements that follow the insertion point move down to accommodate the new element. This rearrangement changes the index of the elements after the insertion point.  
+ Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=nameWithType> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Because lists maintain contiguous elements, the elements that follow the insertion point move down to accommodate the new element. This rearrangement changes the index of the elements after the insertion point.  
   
  ]]></format>
         </remarks>
@@ -506,7 +506,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Since lists maintain contiguous elements, the elements that follow the removal point move up to occupy the vacated spot. This rearrangement changes the index of the elements after the removal point.  
+ Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=nameWithType> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Since lists maintain contiguous elements, the elements that follow the removal point move up to occupy the vacated spot. This rearrangement changes the index of the elements after the removal point.  
   
  ]]></format>
         </remarks>

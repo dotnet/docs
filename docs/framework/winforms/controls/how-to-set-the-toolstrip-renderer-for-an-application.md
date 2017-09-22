@@ -38,9 +38,9 @@ You can customize the appearance of your <xref:System.Windows.Forms.ToolStrip> c
 [!code-csharp[System.Windows.Forms.ToolStrip.Misc#70](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#70)]
 [!code-vb[System.Windows.Forms.ToolStrip.Misc#70](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#70)]  
   
- Set the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> property to apply a custom renderer to all the <xref:System.Windows.Forms.ToolStrip> controls in your application.  
+ Set the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=nameWithType> property to apply a custom renderer to all the <xref:System.Windows.Forms.ToolStrip> controls in your application.  
   
- Set the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=fullName> property to apply a custom renderer to an individual <xref:System.Windows.Forms.ToolStrip> control.  
+ Set the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=nameWithType> property to apply a custom renderer to an individual <xref:System.Windows.Forms.ToolStrip> control.  
   
 ## Compiling the Code  
  This example requires:  

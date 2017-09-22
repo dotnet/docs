@@ -195,7 +195,7 @@ Visual C# has features that simplify access to Office API objects. The new featu
  [!code-cs[csProgGuideOfficeHowTo#18](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_17.cs)]  
   
 ## See Also  
- <xref:System.Type.Missing?displayProperty=fullName>   
+ <xref:System.Type.Missing?displayProperty=nameWithType>   
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   

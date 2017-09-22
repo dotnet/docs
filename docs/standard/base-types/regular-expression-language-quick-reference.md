@@ -219,7 +219,7 @@ manager: "wpickett"
 |`#` [to end of line]|X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.|`(?x)\bA\w+\b#Matches words starting with A`|  
   
 ## See Also  
- <xref:System.Text.RegularExpressions?displayProperty=fullName>   
+ <xref:System.Text.RegularExpressions?displayProperty=nameWithType>   
  <xref:System.Text.RegularExpressions.Regex>   
  [Regular Expressions](regular-expressions.md)   
  [Regular Expression Classes](the-regular-expression-object-model.md)   

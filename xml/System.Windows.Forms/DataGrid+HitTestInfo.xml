@@ -57,7 +57,7 @@
    
   
 ## Examples  
- The following example prints the numbers of the clicked row and column by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
+ The following example prints the numbers of the clicked row and column by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
   
  [!code-cpp[Classic DataGrid.HitTestInfo.Column Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Column Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.HitTestInfo.Column Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Column Example/CS/source.cs#1)]
@@ -154,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Other parts of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>, such as the <xref:System.Windows.Forms.DataGrid.HitTestType.Caption>, can return useful information. If the part of the grid has no function (such as the gray area behind a sparsely populated grid table), the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Nowhere> field is returned.  
+ Other parts of the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>, such as the <xref:System.Windows.Forms.DataGrid.HitTestType.Caption>, can return useful information. If the part of the grid has no function (such as the gray area behind a sparsely populated grid table), the <xref:System.Windows.Forms.DataGrid.HitTestInfo.Nowhere> field is returned.  
   
    
   
@@ -193,7 +193,7 @@
    
   
 ## Examples  
- The following example prints the number of the clicked row and column by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
+ The following example prints the number of the clicked row and column by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
   
  [!code-cpp[Classic DataGrid.HitTestInfo.Row Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Row Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.HitTestInfo.Row Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Row Example/CS/source.cs#1)]
@@ -223,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example prints the type, row number, and column number when the user clicks the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>.  
+ The following example prints the type, row number, and column number when the user clicks the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic DataGrid.HitTestInfo.ToString Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.ToString Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.HitTestInfo.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.ToString Example/CS/source.cs#1)]
@@ -252,7 +252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example prints the clicked part of the grid by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
+ The following example prints the clicked part of the grid by calling the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method from within the <xref:System.Windows.Forms.Control.MouseDown> event of a <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control. This returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object.  
   
  [!code-cpp[Classic DataGrid.HitTestInfo.Type Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Type Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DataGrid.HitTestInfo.Type Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGrid.HitTestInfo.Type Example/CS/source.cs#1)]

@@ -60,7 +60,7 @@
   
 |Property|Value|  
 |--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The "reset" literal string.|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=nameWithType>|The "reset" literal string.|  
   
    
   
@@ -97,7 +97,7 @@
   
 |Property|Value|  
 |--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The value of the `type` parameter.|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=nameWithType>|The value of the `type` parameter.|  
   
  Setting the `type` parameter to a value not recognized as a valid HTML `<input>` element results in a default HTML `<input>` element as a single-line text input field.  
   

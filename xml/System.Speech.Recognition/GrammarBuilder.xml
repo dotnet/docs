@@ -1499,7 +1499,7 @@ namespace SampleRecognition
 ## Remarks  
  The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/en-us/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
- For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=fullName>.  
+ For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=nameWithType>.  
   
    
   
@@ -1998,7 +1998,7 @@ private static Grammar CreateCitiesGrammar2()
    
   
 ## Examples  
- The following example creates a grammar that accepts password input as a wildcard. The example attaches a <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event handler to the grammar that validates the password input.  
+ The following example creates a grammar that accepts password input as a wildcard. The example attaches a <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=nameWithType> event handler to the grammar that validates the password input.  
   
 ```csharp  
 private Grammar CreatePasswordGrammar()  
@@ -2264,7 +2264,7 @@ private static Grammar CreatePizzaGrammar()
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.Choices%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.Choices%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2308,7 +2308,7 @@ private static Grammar CreatePizzaGrammar()
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
@@ -2382,7 +2382,7 @@ private Grammar CreateColorGrammar()
 > [!IMPORTANT]
 >  When you combine <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances, make sure you avoid creating duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of a <xref:System.Speech.Recognition.SemanticValue> object. The speech recognizer can throw an exception if it encounters these circumstances. For more information about building a speech recognition grammar that contains semantic information, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2423,7 +2423,7 @@ private Grammar CreateColorGrammar()
   
  This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.String%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.String%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2464,7 +2464,7 @@ private Grammar CreateColorGrammar()
   
  This method accepts the objects listed above for the `builder` parameter. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> operators.  
   
- The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.String%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.String%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  

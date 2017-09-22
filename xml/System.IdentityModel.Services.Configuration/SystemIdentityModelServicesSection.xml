@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The unnamed `<federationConfiguration>` element does not have its `name` attribute set (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=fullName> property is `null`).  
+ The unnamed `<federationConfiguration>` element does not have its `name` attribute set (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=nameWithType> property is `null`).  
   
  ]]></format>
         </remarks>

@@ -23,7 +23,7 @@
  Do not grant <xref:System.Diagnostics.EventLogPermission> to partially trusted code. The ability to read and write the event log enables code to perform actions such as issuing event log messages in the name of another application.  
   
 > [!NOTE]
->  If the event source that is specified by the <xref:System.Diagnostics.EventLog.Source%2A?displayProperty=fullName> property for the event log does not exist, a new event source is created. To create an event source in Windows Vista and later versions of Windows, or Windows Server 2003, you must have administrative privileges.  
+>  If the event source that is specified by the <xref:System.Diagnostics.EventLog.Source%2A?displayProperty=nameWithType> property for the event log does not exist, a new event source is created. To create an event source in Windows Vista and later versions of Windows, or Windows Server 2003, you must have administrative privileges.  
 >   
 >  The reason for this requirement is that all event logs, including security, must be searched to determine whether the event source is unique. Starting with Windows Vista, users do not have permission to access the security log; therefore, a <xref:System.Security.SecurityException> is thrown.  
 >   

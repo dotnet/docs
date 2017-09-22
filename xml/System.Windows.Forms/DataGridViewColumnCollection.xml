@@ -399,7 +399,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewColumnCollection> named `DataGridViewColumnCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event.  
   
@@ -434,7 +434,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
+ The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -999,9 +999,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
+ The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=nameWithType> property.  
   
- To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+ To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=nameWithType> event handler.  
   
    
   
@@ -1068,7 +1068,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+ To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=nameWithType> event handler.  
   
  ]]></format>
         </remarks>
@@ -1127,7 +1127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+ To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=nameWithType> event handler.  
   
  ]]></format>
         </remarks>

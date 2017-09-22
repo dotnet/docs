@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripLabel> class to create a label that can render text and images that can implement the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=fullName> properties. The <xref:System.Windows.Forms.ToolStripLabel> also has many properties that enable it to display one or more hyperlinks, and other properties that modify the appearance and behavior of hyperlinks.  
+ Use the <xref:System.Windows.Forms.ToolStripLabel> class to create a label that can render text and images that can implement the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=nameWithType> properties. The <xref:System.Windows.Forms.ToolStripLabel> also has many properties that enable it to display one or more hyperlinks, and other properties that modify the appearance and behavior of hyperlinks.  
   
  The <xref:System.Windows.Forms.ToolStripLabel> is like a <xref:System.Windows.Forms.ToolStripButton> that does not get focus by default and that does not render as pushed or highlighted.  
   

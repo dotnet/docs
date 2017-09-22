@@ -154,7 +154,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RadioButton.AppearanceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.RadioButton.AppearanceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.RadioButton> named `RadioButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.RadioButton.AppearanceChanged> event.  
   
@@ -233,7 +233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how the <xref:System.Windows.Forms.RadioButton.CheckAlign%2A> property can be changed at run time. The check box portion of a <xref:System.Windows.Forms.RadioButton> is moved to the right or left of the text when the <xref:System.Windows.Forms.RadioButton.Checked%2A> value changes. This example requires that a <xref:System.Windows.Forms.RadioButton> control has been instantiated on a form and that a reference to the <xref:System.Drawing?displayProperty=fullName> namespace has been included.  
+ The following code example demonstrates how the <xref:System.Windows.Forms.RadioButton.CheckAlign%2A> property can be changed at run time. The check box portion of a <xref:System.Windows.Forms.RadioButton> is moved to the right or left of the text when the <xref:System.Windows.Forms.RadioButton.Checked%2A> value changes. This example requires that a <xref:System.Windows.Forms.RadioButton> control has been instantiated on a form and that a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace has been included.  
   
  [!code-cpp[Classic RadioButton.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RadioButton.CheckAlign Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RadioButton.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RadioButton.CheckAlign Example/CS/source.cs#1)]
@@ -308,7 +308,7 @@
    
   
 ## Examples  
- The following code example demonstrates how the <xref:System.Windows.Forms.RadioButton.CheckAlign%2A> property can be changed at run time. The check box portion of a <xref:System.Windows.Forms.RadioButton> is moved to the right or left of the text when the <xref:System.Windows.Forms.RadioButton.Checked%2A> value changes. This example requires that a <xref:System.Windows.Forms.RadioButton> control has been instantiated on a form and that a reference to the <xref:System.Drawing?displayProperty=fullName> namespace has been included.  
+ The following code example demonstrates how the <xref:System.Windows.Forms.RadioButton.CheckAlign%2A> property can be changed at run time. The check box portion of a <xref:System.Windows.Forms.RadioButton> is moved to the right or left of the text when the <xref:System.Windows.Forms.RadioButton.Checked%2A> value changes. This example requires that a <xref:System.Windows.Forms.RadioButton> control has been instantiated on a form and that a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace has been included.  
   
  [!code-cpp[Classic RadioButton.CheckAlign Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RadioButton.CheckAlign Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RadioButton.CheckAlign Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RadioButton.CheckAlign Example/CS/source.cs#1)]
@@ -479,7 +479,7 @@
    
   
 ## Examples  
- The following code example demonstrates how the <xref:System.Windows.Forms.RadioButton.CheckAlign%2A> property can be changed at run time. The check box portion of a <xref:System.Windows.Forms.RadioButton> is moved to the right or left of the text when the <xref:System.Windows.Forms.RadioButton.Checked%2A> value changes. This example requires that a <xref:System.Windows.Forms.RadioButton> control has been instantiated on a form and that a reference to the <xref:System.Drawing?displayProperty=fullName> namespace has been included.  
+ The following code example demonstrates how the <xref:System.Windows.Forms.RadioButton.CheckAlign%2A> property can be changed at run time. The check box portion of a <xref:System.Windows.Forms.RadioButton> is moved to the right or left of the text when the <xref:System.Windows.Forms.RadioButton.Checked%2A> value changes. This example requires that a <xref:System.Windows.Forms.RadioButton> control has been instantiated on a form and that a reference to the <xref:System.Drawing?displayProperty=nameWithType> namespace has been included.  
   
  [!code-cpp[Classic RadioButton.OnCheckedChanged Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RadioButton.OnCheckedChanged Example/CPP/source.cpp#1)]
  [!code-csharp[Classic RadioButton.OnCheckedChanged Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RadioButton.OnCheckedChanged Example/CS/source.cs#1)]

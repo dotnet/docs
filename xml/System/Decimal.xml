@@ -764,11 +764,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.Decimal.CompareTo%2A?displayProperty=fullName> method because it does not have to convert the `value` parameter to an object.  
+ This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface and performs slightly better than the <xref:System.Decimal.CompareTo%2A?displayProperty=nameWithType> method because it does not have to convert the `value` parameter to an object.  
   
  Depending on your programming language, it might be possible to code a <xref:System.Decimal.CompareTo%2A> method where the parameter type has fewer bits (is narrower) than the instance type. This is possible because some programming languages perform an implicit widening conversion that represents the parameter as a type with as many bits as the instance.  
   
- For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the parameter as an <xref:System.Int32> object, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=fullName> method to compare the values of the <xref:System.Int32> instance and the <xref:System.Int32> parameter representation.  
+ For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the parameter as an <xref:System.Int32> object, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=nameWithType> method to compare the values of the <xref:System.Int32> instance and the <xref:System.Int32> parameter representation.  
   
  Consult your programming language's documentation to determine whether its compiler performs implicit widening conversions on numeric types.  
   
@@ -960,11 +960,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.IEquatable%601?displayProperty=fullName> interface, and performs slightly better than <xref:System.Decimal.Equals%2A> because it does not have to convert the `value` parameter to an object.  
+ This method implements the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, and performs slightly better than <xref:System.Decimal.Equals%2A> because it does not have to convert the `value` parameter to an object.  
   
  If `value` has fewer bits (is narrower) than the instance type, some programming languages perform an implicit widening conversion that transforms the value of the parameter into a value with more bits.  
   
- For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the value of the parameter as an <xref:System.Int32> object, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=fullName> method to compare the <xref:System.Int32> instance and parameter representation.  
+ For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the value of the parameter as an <xref:System.Int32> object, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=nameWithType> method to compare the <xref:System.Int32> instance and parameter representation.  
   
  Consult your programming language's documentation to determine whether its compiler performs implicit widening conversions on numeric types.  
   
@@ -1667,7 +1667,7 @@
   
  If the language you're using doesn't support custom operators, call the <xref:System.Decimal.Add%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Decimal.Add%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Add%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
       </Docs>
@@ -1776,7 +1776,7 @@
   
  If the language you're using doesn't support custom operators, call the <xref:System.Decimal.Divide%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Decimal.Divide%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Divide%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="d2" /> is zero.</exception>
@@ -1834,7 +1834,7 @@
   
  If the language you're using doesn't support custom operators, call the <xref:System.Decimal.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Decimal.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1874,7 +1874,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Byte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToByte%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToByte%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Byte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToByte%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToByte%28System.Decimal%29?displayProperty=nameWithType> method.
  
 
 ## Examples 
@@ -1979,7 +1979,7 @@
 ## Remarks  
  This operation can result in a loss of precision, because a double-precision floating-point number has fewer significant digits than a <xref:System.Decimal>.
  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Double>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Double> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToDouble%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToDouble%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Double>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Double> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToDouble%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToDouble%28System.Decimal%29?displayProperty=nameWithType> method.
  
 
 ## Examples
@@ -2030,7 +2030,7 @@
   
 ## Remarks  
 
- This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int16> value by using C#, Visual Basic, and C++. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt16%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt16%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int16> value by using C#, Visual Basic, and C++. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt16%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToInt16%28System.Decimal%29?displayProperty=nameWithType> method.
  
 
 ## Examples
@@ -2082,7 +2082,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int32> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt32%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt32%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int32> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt32%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToInt32%28System.Decimal%29?displayProperty=nameWithType> method.
  
 
 ## Examples
@@ -2134,7 +2134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt64%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt64%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt64%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToInt64%28System.Decimal%29?displayProperty=nameWithType> method.
  
 ## Examples
  The following example converts <xref:System.Decimal> numbers to <xref:System.Int64> values by using the explicit <xref:System.Decimal> to <xref:System.Int64> conversion operator.
@@ -2192,7 +2192,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.SByte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> and an <xref:System.SByte> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSByte%28System.Decimal%29?displayProperty=fullName> method or the <xref:System.Convert.ToSByte%28System.Decimal%29?displayProperty=fullName> method.   
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.SByte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> and an <xref:System.SByte> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSByte%28System.Decimal%29?displayProperty=nameWithType> method or the <xref:System.Convert.ToSByte%28System.Decimal%29?displayProperty=nameWithType> method.   
 
 
 ## Examples 
@@ -2246,7 +2246,7 @@
 ## Remarks  
  This operation can result in a loss of precision, because a single-precision floating-point number has fewer significant digits than a <xref:System.Decimal>.
 
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Single>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Single> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSingle%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToSingle%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Single>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Single> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSingle%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToSingle%28System.Decimal%29?displayProperty=nameWithType> method.
  
 
 ## Examples
@@ -2303,7 +2303,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt16> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt16%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt16%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt16> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt16%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToUInt16%28System.Decimal%29?displayProperty=nameWithType> method.
  
 
 ## Examples
@@ -2362,7 +2362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt32> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt32%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt32%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt32> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt32%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToUInt32%28System.Decimal%29?displayProperty=nameWithType> method.
 
 
 ## Examples
@@ -2421,7 +2421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt64%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt64%28System.Decimal%29?displayProperty=fullName> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt64%28System.Decimal%29?displayProperty=nameWithType> or the <xref:System.Convert.ToUInt64%28System.Decimal%29?displayProperty=nameWithType> method.
 
 
 ## Examples 
@@ -2595,7 +2595,7 @@
   
  [!code-vb[System.Decimal.Operators#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators/vb/greaterthan2.vb#9)]  
   
- The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2652,7 +2652,7 @@
   
  [!code-vb[System.Decimal.Operators#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators/vb/greaterthanorequal2.vb#11)]  
   
- The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3263,7 +3263,7 @@
   
 -   Calling the <xref:System.Decimal.Equals%2A> method and reversing its value.  
   
- The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3320,7 +3320,7 @@
   
  [!code-vb[System.Decimal.Operators#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators/vb/lessthan2.vb#16)]  
   
- The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3377,7 +3377,7 @@
   
  [!code-vb[System.Decimal.Operators#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators/vb/lessthanorequal2.vb#18)]  
   
- The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Compare%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3428,7 +3428,7 @@
   
  The sign of the value return by the modulus operation depends on the sign of dividend. If dividend is positive, the modulus operation returns a positive result; if it is negative, the modulus operation returns a negative result.  
   
- The equivalent method for this operator is <xref:System.Decimal.Remainder%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Remainder%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="d2" /> is <see langword="zero" />.</exception>
@@ -3485,7 +3485,7 @@
   
  If the language you're using doesn't support custom operators, call the <xref:System.Decimal.Multiply%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Decimal.Multiply%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Multiply%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
       </Docs>
@@ -3540,7 +3540,7 @@
   
  If the language you're using doesn't support custom operators, call the <xref:System.Decimal.Subtract%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Decimal.Subtract%28System.Decimal%2CSystem.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Subtract%28System.Decimal%2CSystem.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The return value is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
       </Docs>
@@ -3583,7 +3583,7 @@
 ## Remarks  
  The <xref:System.Decimal.op_UnaryPlus%2A> method defines the operation of the unary negation operator (or the additive inverse operator) for <xref:System.Decimal> values. The operation produces a value that results in 0 (zero) when it is added to the original number. Languages that do not support custom operators can call the <xref:System.Decimal.Negate%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Decimal.Negate%28System.Decimal%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Decimal.Negate%28System.Decimal%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3680,9 +3680,9 @@
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use either the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName> or the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+ Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use either the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType> or the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
- Parameter `s` is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other culture, use the <xref:System.Decimal.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> or <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+ Parameter `s` is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other culture, use the <xref:System.Decimal.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> or <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
  If necessary, the value of `s` is rounded using rounding to nearest.  
   
@@ -3748,7 +3748,7 @@
 ## Remarks  
  The `style` parameter defines the style elements (such as thousands separators, white space, and currency symbols) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. The following <xref:System.Globalization.NumberStyles> members are not supported:  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=fullName>  
+-   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
   
 -   <xref:System.Globalization.NumberStyles.HexNumber>  
   
@@ -3760,14 +3760,14 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
-|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
   
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
@@ -3792,7 +3792,7 @@
   
  A <xref:System.Decimal> has 29 digits of precision. If `s` represents a number that has more than 29 digits, but has a fractional part and is within the range of <xref:System.Decimal.MaxValue> and <xref:System.Decimal.MinValue>, the number is rounded, not truncated, to 29 digits using rounding to nearest.  
   
- If a separator is encountered in the `s` parameter during a parse operation, `styles` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName> values, and the applicable currency or number decimal and group separators are the same, the parse operation assumes that the separator is a decimal separator rather than a group separator. For more information about separators, see <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A>, and <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>.  
+ If a separator is encountered in the `s` parameter during a parse operation, `styles` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> values, and the applicable currency or number decimal and group separators are the same, the parse operation assumes that the separator is a decimal separator rather than a group separator. For more information about separators, see <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A>, and <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>.  
   
    
   
@@ -3873,7 +3873,7 @@
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in parsing. If `provider` is `null`, the thread current culture is used.  
   
@@ -3884,7 +3884,7 @@
    
   
 ## Examples  
- The following example is the button click event handler of a Web form. It uses the array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=fullName> property to determine the user's locale. It then instantiates a <xref:System.Globalization.CultureInfo> object that corresponds to that locale. The <xref:System.Globalization.NumberFormatInfo> object that belongs to that <xref:System.Globalization.CultureInfo> object is then passed to the <xref:System.Decimal.Parse%28System.String%2CSystem.IFormatProvider%29> method to convert the user's input to a <xref:System.Decimal> value.  
+ The following example is the button click event handler of a Web form. It uses the array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property to determine the user's locale. It then instantiates a <xref:System.Globalization.CultureInfo> object that corresponds to that locale. The <xref:System.Globalization.NumberFormatInfo> object that belongs to that <xref:System.Globalization.CultureInfo> object is then passed to the <xref:System.Decimal.Parse%28System.String%2CSystem.IFormatProvider%29> method to convert the user's input to a <xref:System.Decimal> value.  
   
  [!code-csharp[ParseMethod#3](~/samples/snippets/csharp/VS_Snippets_CLR/ParseMethod/cs/Default.aspx.cs#3)]
  [!code-vb[ParseMethod#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParseMethod/vb/Default.aspx.vb#3)]  
@@ -3941,7 +3941,7 @@
 ## Remarks  
  The `style` parameter defines the allowable format of the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. The following <xref:System.Globalization.NumberStyles> members are not supported:  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=fullName>  
+-   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
   
 -   <xref:System.Globalization.NumberStyles.HexNumber>  
   
@@ -3953,14 +3953,14 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
-|*,*|A culture-specific thousands separator symbol. The thousands separator of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific thousands separator symbol. The thousands separator of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture defined by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*fractional-digits*|A sequence of digits ranging from 0 to 9. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
   
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
@@ -4093,7 +4093,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called *round half to even* or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction. It is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding?displayProperty=fullName>.  
+ The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called *round half to even* or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction. It is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding?displayProperty=nameWithType>.  
   
    
   
@@ -4147,7 +4147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding?displayProperty=fullName>.When `d` is exactly halfway between two rounded values, the result is the rounded value that has an even digit in the far right decimal position. For example, when rounded to two decimals, the value 2.345 becomes 2.34 and the value 2.355 becomes 2.36. This process is known as *rounding toward even*, or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction.  
+ This method is equivalent to calling the <xref:System.Decimal.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding?displayProperty=nameWithType>.When `d` is exactly halfway between two rounded values, the result is the rounded value that has an even digit in the far right decimal position. For example, when rounded to two decimals, the value 2.345 becomes 2.34 and the value 2.355 becomes 2.36. This process is known as *rounding toward even*, or *banker's rounding*. It minimizes rounding errors that result from consistently rounding a midpoint value in a single direction.  
   
    
   
@@ -4200,12 +4200,12 @@
  In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 7.5 is a midpoint value if it is to be rounded to an integer. For midpoint values, the nearest value can't be easily identified without a rounding convention, which is specified by the `mode` argument. The <xref:System.Decimal.Round%2A> method supports two rounding conventions for handling midpoint values.  
   
  Rounding away from zero.  
- Midpoint values are rounded to the next number away from zero. For example, 3.5 rounds to 4, 4.5 rounds to 5, -3.5 rounds to -4, and -4.5 rounds to -5. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the next number away from zero. For example, 3.5 rounds to 4, 4.5 rounds to 5, -3.5 rounds to -4, and -4.5 rounds to -5. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
   
  Rounding away from zero is the most widely known form of rounding.  
   
  Rounding to even, or banker's rounding  
- Midpoint values are rounded to the nearest even number. For example, both 3.5 and 4.5 round to 4, and both -3.5 and -4.5 round to -4. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the nearest even number. For example, both 3.5 and 4.5 round to 4, and both -3.5 and -4.5 round to -4. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
   
  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   
@@ -4270,12 +4270,12 @@
  In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 3.47500 is a midpoint value if it is to be rounded two decimal places, and 7.500 is a midpoint value if it is to be rounded to an integer. In these cases, the nearest value can't be easily identified without a rounding convention, which is specified by the `mode` argument. The <xref:System.Decimal.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29> method supports two rounding conventions for handling midpoint values.  
   
  Rounding away from zero.  
- Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
   
  Rounding away from zero is the most widely known form of rounding.  
   
  Rounding to even, or banker's rounding  
- Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=nameWithType> enumeration member.  
   
  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   
@@ -4431,7 +4431,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.Decimal%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.Decimal%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -4471,7 +4471,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToByte%2A?displayProperty=fullName> method or the <xref:System.Convert.ToByte%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToByte%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToByte%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -4620,7 +4620,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToDouble%2A?displayProperty=fullName> method or the <xref:System.Convert.ToDouble%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToDouble%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToDouble%2A?displayProperty=nameWithType> method.  
   
  Because a <xref:System.Double> has fewer significant digits than a <xref:System.Decimal>, this operation may produce round-off errors.  
   
@@ -4662,7 +4662,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToInt16%2A?displayProperty=fullName> method or the <xref:System.Convert.ToInt16%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToInt16%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToInt16%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Decimal> value is rounded toward zero to the nearest integer value.  
   
@@ -4705,7 +4705,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToInt32%2A?displayProperty=fullName> method or the <xref:System.Convert.ToInt32%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToInt32%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Decimal> value is rounded toward zero to the nearest integer value.  
   
@@ -4748,7 +4748,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToInt64%2A?displayProperty=fullName> method or the <xref:System.Convert.ToInt64%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToInt64%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToInt64%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -4789,7 +4789,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToSByte%2A?displayProperty=fullName> method or the <xref:System.Convert.ToSByte%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToSByte%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToSByte%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -4830,7 +4830,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToSingle%2A?displayProperty=fullName> method or the <xref:System.Convert.ToSingle%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToSingle%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToSingle%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -4872,7 +4872,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method instead.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method instead.  
   
  ]]></format>
         </remarks>
@@ -4915,7 +4915,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToUInt16%2A?displayProperty=fullName> method or the <xref:System.Convert.ToUInt16%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToUInt16%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToUInt16%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -4956,7 +4956,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToUInt32%2A?displayProperty=fullName> method or the <xref:System.Convert.ToUInt32%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToUInt32%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToUInt32%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Decimal> value is rounded toward zero to the nearest integer value.  
   
@@ -4999,7 +4999,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToUInt64%2A?displayProperty=fullName> method or the <xref:System.Convert.ToUInt64%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Decimal> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call either the <xref:System.Decimal.ToUInt64%2A?displayProperty=nameWithType> method or the <xref:System.Convert.ToUInt64%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Decimal> value is rounded toward zero to the nearest integer value.  
   
@@ -5604,9 +5604,9 @@
   
 -   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
- The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.NumberFormatInfo> object or a <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the thread current culture is used.  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.NumberFormatInfo> object or a <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the thread current culture is used.  
   
- To convert a <xref:System.Decimal> value to its string representation using a specified culture and a specific format string, call the <xref:System.Decimal.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+ To convert a <xref:System.Decimal> value to its string representation using a specified culture and a specific format string, call the <xref:System.Decimal.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
    
   
@@ -5752,7 +5752,7 @@
   
 -   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
- The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the thread current culture is used.  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the thread current culture is used.  
   
    
   
@@ -6048,7 +6048,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload differs from the <xref:System.Decimal.Parse%28System.String%29?displayProperty=fullName> method by returning a Boolean value that indicates whether the parse operation succeeded instead of returning the parsed numeric value. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be successfully parsed.  
+ This overload differs from the <xref:System.Decimal.Parse%28System.String%29?displayProperty=nameWithType> method by returning a Boolean value that indicates whether the parse operation succeeded instead of returning the parsed numeric value. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be successfully parsed.  
   
  Parameter `s` contains a number of the form:  
   
@@ -6065,9 +6065,9 @@
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Decimal%40%29?displayProperty=fullName> method overload.  
+ Parameter `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Decimal.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Decimal%40%29?displayProperty=nameWithType> method overload.  
   
- Parameter `s` is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other specified culture, use the <xref:System.Decimal.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Decimal%40%29?displayProperty=fullName> method overload.  
+ Parameter `s` is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other specified culture, use the <xref:System.Decimal.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Decimal%40%29?displayProperty=nameWithType> method overload.  
   
  If necessary, the value of `s` is rounded using rounding to nearest.  
   
@@ -6078,7 +6078,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Decimal.TryParse%28System.String%2CSystem.Decimal%40%29?displayProperty=fullName> method to convert the string representations of numeric values to <xref:System.Decimal> values. It assumes that en-US is the current culture.  
+ The following example uses the <xref:System.Decimal.TryParse%28System.String%2CSystem.Decimal%40%29?displayProperty=nameWithType> method to convert the string representations of numeric values to <xref:System.Decimal> values. It assumes that en-US is the current culture.  
   
  [!code-csharp[System.Decimal.TryParse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Decimal.TryParse/cs/TryParse.cs#1)]
  [!code-vb[System.Decimal.TryParse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Decimal.TryParse/vb/TryParse.vb#1)]  
@@ -6130,13 +6130,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload differs from the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method by returning a Boolean value that indicates whether the parse operation succeeded instead of returning the parsed numeric value. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be successfully parsed.  
+ This overload differs from the <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method by returning a Boolean value that indicates whether the parse operation succeeded instead of returning the parsed numeric value. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be successfully parsed.  
   
  The `style` parameter defines the allowable format of the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. The following <xref:System.Globalization.NumberStyles> members are not supported:  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=fullName>  
+-   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=fullName>  
+-   <xref:System.Globalization.NumberStyles?displayProperty=nameWithType>  
   
  Depending on the value of style, the `s` parameter may include the following elements:  
   
@@ -6146,14 +6146,14 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. It can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> or <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag. It can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> or <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> flag.|  
 |*sign*|An optional sign.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
 |*.*|A culture-specific decimal point symbol.|  
 |*fractional-digits*|A sequence of digits ranging from 0 to 9.|  
   
- The `style` parameter specifies the permitted format of the `s` parameter, and can be one or more <xref:System.Globalization.NumberStyles> enumerated constants combined using a bitwise OR operation. If `style` is null, `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style.  
+ The `style` parameter specifies the permitted format of the `s` parameter, and can be one or more <xref:System.Globalization.NumberStyles> enumerated constants combined using a bitwise OR operation. If `style` is null, `s` is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> style.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in parsing. If `provider` is `null`, the thread current culture is used.  
   

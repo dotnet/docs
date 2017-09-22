@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.ButtonFieldBase>-derived object to the <xref:System.Web.UI.WebControls.DataControlField> object that was created by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current <xref:System.Web.UI.WebControls.ButtonFieldBase>-derived object to the <xref:System.Web.UI.WebControls.DataControlField> object that was created by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

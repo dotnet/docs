@@ -2102,7 +2102,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataAdapter> instance is cast to an <xref:System.ICloneable> interface.  
   
- For more information, see <xref:System.ICloneable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.ICloneable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

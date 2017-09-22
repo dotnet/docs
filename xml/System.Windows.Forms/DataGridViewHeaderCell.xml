@@ -59,7 +59,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Forms.DataGridViewHeaderCell> is like a button in that it can be clicked to set states, such as sorting or performing row-level selection. The <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> property uses <xref:System.Windows.Forms.ButtonState?displayProperty=fullName> values to provide buttonlike visual states.  
+ A <xref:System.Windows.Forms.DataGridViewHeaderCell> is like a button in that it can be clicked to set states, such as sorting or performing row-level selection. The <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> property uses <xref:System.Windows.Forms.ButtonState?displayProperty=nameWithType> values to provide buttonlike visual states.  
   
  ]]></format>
         </remarks>
@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.Frozen%2A> property is `true` if the cell belongs to a frozen row or column, or if the cell is the top-left header cell. A cell, row, or column is frozen when its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property has a value of <xref:System.Windows.Forms.DataGridViewElementStates?displayProperty=fullName>  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.Frozen%2A> property is `true` if the cell belongs to a frozen row or column, or if the cell is the top-left header cell. A cell, row, or column is frozen when its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property has a value of <xref:System.Windows.Forms.DataGridViewElementStates?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -350,7 +350,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method.  
+ For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method.  
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
@@ -384,7 +384,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method.  
+ For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method.  
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseEnterUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
@@ -421,7 +421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method.  
+ For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method.  
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
@@ -455,7 +455,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method.  
+ For information about enabling visual styles, see the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method.  
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
@@ -487,9 +487,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Pushed> if the cell is clicked with the left mouse button and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Pushed> if the cell is clicked with the left mouse button and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=nameWithType> property.  
   
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -520,9 +520,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Pushed> if the left mouse button is pressed when the pointer enters the cell and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Pushed> if the left mouse button is pressed when the pointer enters the cell and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=nameWithType> property.  
   
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseEnter%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -553,9 +553,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Normal> if it was in another state and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Normal> if it was in another state and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=nameWithType> property.  
   
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseLeave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseLeave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -586,9 +586,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Normal> if the left mouse button was released and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A> method sets the <xref:System.Windows.Forms.DataGridViewHeaderCell.ButtonState%2A> to <xref:System.Windows.Forms.ButtonState.Normal> if the left mouse button was released and visual styles are enabled for headers. For more information about visual styles for headers, see the <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A?displayProperty=nameWithType> property.  
   
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>

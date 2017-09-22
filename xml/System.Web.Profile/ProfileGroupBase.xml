@@ -284,7 +284,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property to retrieve or set grouped property values of the user profile for your application. Returned values are typed as <xref:System.Object> and must be cast as the specific object type when retrieved. For strongly typed access to profile property values, you can access the property by name as a member of a group of the <xref:System.Web.HttpContext.Profile%2A?displayProperty=fullName> property, for example, `Profile.Address.City`.  
+ You can use this property to retrieve or set grouped property values of the user profile for your application. Returned values are typed as <xref:System.Object> and must be cast as the specific object type when retrieved. For strongly typed access to profile property values, you can access the property by name as a member of a group of the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property, for example, `Profile.Address.City`.  
   
    
   

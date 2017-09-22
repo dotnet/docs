@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `value` can be any primitive numeric type (that is, a numeric type whose <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property returns `true`.  
+ `value` can be any primitive numeric type (that is, a numeric type whose <xref:System.Type.IsPrimitive%2A?displayProperty=nameWithType> property returns `true`.  
   
  ]]></format>
         </remarks>
@@ -146,7 +146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The array must contain at least [Vector(T) Constructor (T\<xref:System.Numerics.Vector%601.Count%2A?displayProperty=fullName> elements from the specified index.  
+ The array must contain at least [Vector(T) Constructor (T\<xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> elements from the specified index.  
   
  ]]></format>
         </remarks>
@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The copy operation begins at index 0 of `destination`. The destination array must have at least <xref:System.Numerics.Vector%601.Count%2A?displayProperty=fullName> elements.  
+ The copy operation begins at index 0 of `destination`. The destination array must have at least <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> elements.  
   
  ]]></format>
         </remarks>
@@ -1343,7 +1343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>
@@ -1380,7 +1380,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>
@@ -1419,7 +1419,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>

@@ -182,17 +182,17 @@ In              [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.m
   
  The types of                  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files that are commonly configured as                  [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`Page` items have one of the following as their root element:  
   
--   <xref:System.Windows.Window?displayProperty=fullName>  
+-   <xref:System.Windows.Window?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.Page?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Page?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.PageFunction%601?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.PageFunction%601?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ResourceDictionary?displayProperty=fullName>  
+-   <xref:System.Windows.ResourceDictionary?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Documents.FlowDocument?displayProperty=fullName>  
+-   <xref:System.Windows.Documents.FlowDocument?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.UserControl?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.UserControl?displayProperty=nameWithType>  
   
 <a name="Absolute_vs_Relative_Pack_URIs"></a>   
 ## Absolute vs. Relative Pack URIs  
@@ -265,17 +265,17 @@ In              [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.m
 ## Programming with Pack URIs  
  Many                  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] classes implement properties that can be set with pack                  [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)], including:  
   
--   <xref:System.Windows.Application.StartupUri%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Application.StartupUri%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.Frame.Source%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Frame.Source%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationWindow.Source%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationWindow.Source%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Window.Icon%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Window.Icon%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.Image.Source%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Image.Source%2A?displayProperty=nameWithType>  
   
  These properties can be set from both markup and code. This section demonstrates the basic constructions for both and then shows examples of common scenarios.  
   
@@ -346,7 +346,7 @@ TextBox userProvidedUriTextBox = new TextBox();
 Uri uri = new Uri(userProvidedUriTextBox.Text, UriKind.RelativeOrAbsolute);  
 ```  
   
- Table 3 illustrates the various relative pack                          [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in code by using                          <xref:System.Uri?displayProperty=fullName>.  
+ Table 3 illustrates the various relative pack                          [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in code by using                          <xref:System.Uri?displayProperty=nameWithType>.  
   
  Table 3: Absolute Pack URIs in Code  
   
@@ -362,7 +362,7 @@ Uri uri = new Uri(userProvidedUriTextBox.Text, UriKind.RelativeOrAbsolute);
 |Site of origin file|`Uri uri = new Uri("pack://siteoforigin:,,,/SOOFile.xaml", UriKind.Absolute);`|  
 |Site of origin file in subfolder|`Uri uri = new Uri("pack://siteoforigin:,,,/Subfolder/SOOFile.xaml", UriKind.Absolute);`|  
   
- Table 4 illustrates the various relative pack                          [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in code using                          <xref:System.Uri?displayProperty=fullName>.  
+ Table 4 illustrates the various relative pack                          [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in code using                          <xref:System.Uri?displayProperty=nameWithType>.  
   
  Table 4: Relative Pack URIs in Code  
   

@@ -60,7 +60,7 @@
   
 -   You can instantiate a <xref:System.Reflection.MethodInfo> object that represents a constructed generic method from one that represents a generic method definition by calling the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method.  
   
- You can instantiate a <xref:System.Reflection.MethodInfo> instances by calling the <xref:System.Type.GetMethods%2A?displayProperty=fullName> or <xref:System.Type.GetMethod%2A?displayProperty=fullName> method, or by calling the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=fullName> method of a <xref:System.Reflection.MethodInfo> object that represents a generic method definition.  
+ You can instantiate a <xref:System.Reflection.MethodInfo> instances by calling the <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> or <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method, or by calling the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method of a <xref:System.Reflection.MethodInfo> object that represents a generic method definition.  
   
  For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property.  
   
@@ -267,7 +267,7 @@
   
 1.  Get a <xref:System.Type> object that represents the type (the class or structure) that contains the property. If you are working with an object (an instance of a type), you can call its <xref:System.Object.GetType%2A> method. Otherwise, you can use the C#  operator or the Visual Basic  operator, as the example illustrates.  
   
-2.  Get a <xref:System.Reflection.MethodInfo> object that represents the method in which you're interested. You can do this by getting an array of all methods from the <xref:System.Type.GetMethods%2A?displayProperty=fullName> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.MethodInfo> object that represents the method directly by calling the <xref:System.Type.GetMethod%28System.String%29?displayProperty=fullName> method and specifying the method name.  
+2.  Get a <xref:System.Reflection.MethodInfo> object that represents the method in which you're interested. You can do this by getting an array of all methods from the <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.MethodInfo> object that represents the method directly by calling the <xref:System.Type.GetMethod%28System.String%29?displayProperty=nameWithType> method and specifying the method name.  
   
 3.  Call the <xref:System.Reflection.MethodInfo.GetBaseDefinition%2A> method to get the value of the <xref:System.Reflection.MethodInfo> object that represents the base method definition.  
   
@@ -331,7 +331,7 @@
   
 -   If the current method is an open constructed method (that is, the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property returns `true`) in which specific types have been assigned to some type parameters and type parameters of enclosing generic types have been assigned to other type parameters, the array contains both types and type parameters. Use the <xref:System.Type.IsGenericParameter%2A> property to tell them apart. For a demonstration of this scenario, see the code example for the <xref:System.Reflection.MethodInfo.ContainsGenericParameters%2A> property.  
   
- For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=fullName> property.  
+ For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod%2A> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -631,7 +631,7 @@ public:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=fullName>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=fullName> only when a given member is a method.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=nameWithType> only when a given member is a method.  
   
  To get the `MemberType` property, first get the class `Type`. From the `Type`, get the `MethodInfo`. From the `MethodInfo`, get the `MemberType`.  
   

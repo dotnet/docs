@@ -156,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for this property is <xref:System.Net.Http.ClientCertificateOption.Manual?displayProperty=fullName>.  
+ The default value for this property is <xref:System.Net.Http.ClientCertificateOption.Manual?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -240,7 +240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default for this property is <xref:System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly?displayProperty=fullName>. If this value is set to <xref:System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer?displayProperty=fullName>, then a container object must be initialized and assigned to the <xref:System.Net.Http.WinHttpHandler.CookieContainer%2A> property. Otherwise, an exception will be thrown when trying to send a request.  
+ The default for this property is <xref:System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly?displayProperty=nameWithType>. If this value is set to <xref:System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer?displayProperty=nameWithType>, then a container object must be initialized and assigned to the <xref:System.Net.Http.WinHttpHandler.CookieContainer%2A> property. Otherwise, an exception will be thrown when trying to send a request.  
   
  ]]></format>
         </remarks>
@@ -268,7 +268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for this property is <xref:System.Net.CredentialCache.DefaultCredentials?displayProperty=fullName>.  
+ The default value for this property is <xref:System.Net.CredentialCache.DefaultCredentials?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

@@ -353,7 +353,7 @@
  The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method checks the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property for the page. If the <xref:System.Web.UI.MobileControls.Form.Action%2A> property is not empty, the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property for the active form is set to `false`. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method calls the base <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnPreRender%2A> method before exiting.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.MobileControls.MobileControl.Form%2A?displayProperty=fullName> property inherits from the <xref:System.Web.UI.MobileControls.Panel?displayProperty=fullName> class, which provides the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property.  
+>  The <xref:System.Web.UI.MobileControls.MobileControl.Form%2A?displayProperty=nameWithType> property inherits from the <xref:System.Web.UI.MobileControls.Panel?displayProperty=nameWithType> class, which provides the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property.  
   
  ]]></format>
         </remarks>

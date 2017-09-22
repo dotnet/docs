@@ -64,5 +64,5 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=fullName>      
- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=fullName>    
+ <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>      
+ <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>    

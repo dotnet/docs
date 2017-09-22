@@ -68,7 +68,7 @@
   
  The <xref:System.Collections.Generic.List%601> class uses both an equality comparer and an ordering comparer.  
   
--   Methods such as <xref:System.Collections.Generic.List%601.Contains%2A>, <xref:System.Collections.Generic.List%601.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and <xref:System.Collections.Generic.Dictionary%602.Remove%2A> use an equality comparer for the list elements. The default equality comparer for type `T` is determined as follows. If type `T` implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%28%600%29> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>.  
+-   Methods such as <xref:System.Collections.Generic.List%601.Contains%2A>, <xref:System.Collections.Generic.List%601.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and <xref:System.Collections.Generic.Dictionary%602.Remove%2A> use an equality comparer for the list elements. The default equality comparer for type `T` is determined as follows. If type `T` implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%28%600%29> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.  
   
 -   Methods such as <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> use an ordering comparer for the list elements. The default comparer for type `T` is determined as follows.  If type `T` implements the <xref:System.IComparable%601> generic interface, then the default comparer is the <xref:System.IComparable%601.CompareTo%28%600%29> method of that interface; otherwise, if type `T` implements the nongeneric <xref:System.IComparable> interface, then the default comparer is the <xref:System.IComparable.CompareTo%28System.Object%29> method of that interface. If type `T` implements neither interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.  
   
@@ -87,7 +87,7 @@
   
  If a value type is used for type `T`, the compiler generates an implementation of the <xref:System.Collections.Generic.List%601> class specifically for that value type. That means a list element of a <xref:System.Collections.Generic.List%601> object does not have to be boxed before the element can be used, and after about 500 list elements are created the memory saved not boxing list elements is greater than the memory used to generate the class implementation.  
   
- Make certain the value type used for type `T` implements the <xref:System.IEquatable%601> generic interface. If not, methods such as <xref:System.Collections.Generic.List%601.Contains%2A> must call the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, which boxes the affected list element. If the value type implements the <xref:System.IComparable> interface and you own the source code, also implement the <xref:System.IComparable%601> generic interface to prevent the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods from boxing list elements. If you do not own the source code, pass an <xref:System.Collections.Generic.IComparer%601> object to the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods  
+ Make certain the value type used for type `T` implements the <xref:System.IEquatable%601> generic interface. If not, methods such as <xref:System.Collections.Generic.List%601.Contains%2A> must call the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, which boxes the affected list element. If the value type implements the <xref:System.IComparable> interface and you own the source code, also implement the <xref:System.IComparable%601> generic interface to prevent the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods from boxing list elements. If you do not own the source code, pass an <xref:System.Collections.Generic.IComparer%601> object to the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods  
   
  It is to your advantage to use the type-specific implementation of the <xref:System.Collections.Generic.List%601> class instead of using the <xref:System.Collections.ArrayList> class or writing a strongly typed wrapper collection yourself. The reason is your implementation must do what the .NET Framework does for you already, and the common language runtime can share Microsoft intermediate language code and metadata, which your implementation cannot.  
   
@@ -478,7 +478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
  The <xref:System.Collections.Generic.List%601> must already be sorted according to the comparer implementation; otherwise, the result is incorrect.  
   
@@ -550,7 +550,7 @@
   
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are compared to the specified value using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws <xref:System.InvalidOperationException>.  
   
  The <xref:System.Collections.Generic.List%601> must already be sorted according to the comparer implementation; otherwise, the result is incorrect.  
   
@@ -627,7 +627,7 @@
   
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are compared to the specified value using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws <xref:System.InvalidOperationException>.  
   
  The <xref:System.Collections.Generic.List%601> must already be sorted according to the comparer implementation; otherwise, the result is incorrect.  
   
@@ -815,7 +815,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality by using the default equality comparer, as defined by the object's implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method for `T` (the type of values in the list).  
+ This method determines equality by using the default equality comparer, as defined by the object's implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method for `T` (the type of values in the list).  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -827,7 +827,7 @@
  [!code-csharp[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/vb/module1.vb#1)]  
   
- The following example contains a list of complex objects of type `Cube`. The `Cube` class implements the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method so that two cubes are considered equal if their dimensions are the same. In this example, the <xref:System.Collections.Generic.List%601.Contains%2A> method returns `true`, because a cube that has the specified dimensions is already in the collection.  
+ The following example contains a list of complex objects of type `Cube`. The `Cube` class implements the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method so that two cubes are considered equal if their dimensions are the same. In this example, the <xref:System.Collections.Generic.List%601.Contains%2A> method returns `true`, because a cube that has the specified dimensions is already in the collection.  
   
  [!code-csharp[System.Collections.Generic.List.Contains#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.contains/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.Contains#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.contains/vb/program.vb#1)]  
@@ -926,7 +926,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
@@ -983,7 +983,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
@@ -1046,7 +1046,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
@@ -1940,7 +1940,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -2049,7 +2049,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched forward starting at the first element and ending at the last element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2104,7 +2104,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched forward starting at `index` and ending at the last element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from `index` to the end of the <xref:System.Collections.Generic.List%601>.  
   
@@ -2163,7 +2163,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched forward starting at `index` and ending at `index` plus `count` minus 1, if `count` is greater than 0.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
@@ -2426,7 +2426,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched backward starting at the last element and ending at the first element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2481,7 +2481,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched backward starting at `index` and ending at the first element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from the beginning of the <xref:System.Collections.Generic.List%601> to `index`.  
   
@@ -2540,7 +2540,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched backward starting at `index` and ending at `index` minus `count` plus 1, if `count` is greater than 0.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
@@ -2602,7 +2602,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If type `T` implements the <xref:System.IEquatable%601> generic interface, the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ If type `T` implements the <xref:System.IEquatable%601> generic interface, the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2836,7 +2836,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements.  
+ This method uses <xref:System.Array.Reverse%2A?displayProperty=nameWithType> to reverse the order of the elements.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2888,7 +2888,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements.  
+ This method uses <xref:System.Array.Reverse%2A?displayProperty=nameWithType> to reverse the order of the elements.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2936,7 +2936,7 @@ Public Function StartsWith(e As Employee) As Boolean
  Sorts the elements in the entire list using the specified comparer.  
   
  [List\<T>.Sort(IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29)
- Sorts the elements in the entire list using the specified <xref:System.Comparison%601?displayProperty=fullName>.  
+ Sorts the elements in the entire list using the specified <xref:System.Comparison%601?displayProperty=nameWithType>.  
   
  [List\<T>.Sort(Int32 index, Int32 count, IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Int32,System.Int32,System.Collections.Generic.IComparer%7B%600%7D%29)
  Sorts the elements in a range of elements in list using the specified comparer.  
@@ -2954,7 +2954,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
 |Exception|Condition|  
 |---------------|---------------|  
-|<xref:System.InvalidOperationException>|`comparer` is not specified or `null`, and the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> cannot find implementation of the <xref:System.IComparable%601?displayProperty=fullName> generic interface or the <xref:System.IComparable?displayProperty=fullName> interface for type T.|  
+|<xref:System.InvalidOperationException>|`comparer` is not specified or `null`, and the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> cannot find implementation of the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface or the <xref:System.IComparable?displayProperty=nameWithType> interface for type T.|  
 |<xref:System.ArgumentNullException>|`comparison` is `null`.|  
 |<xref:System.ArgumentException>|The implementation of `comparison` or `comparer` caused an error during the sort. For example, `comparison` might not return 0 when comparing an item with itself.<br /><br /> -or-<br /><br /> `index` and `count` do not specify a valid range in the <xref:System.Collections.Generic.List%601>.|  
 |<xref:System.ArgumentOutOfRangeException>|`index` is less than 0 or `count` is less than 0.|  
@@ -2993,9 +2993,9 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
- This method uses the <xref:System.Array.Sort%2A?displayProperty=fullName> method, which applies the introspective sort as follows:  
+ This method uses the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm.  
   
@@ -3068,9 +3068,9 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are sorted using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
- This method uses the <xref:System.Array.Sort%2A?displayProperty=fullName> method, which applies the introspective sort as follows:  
+ This method uses the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm.  
   
@@ -3141,7 +3141,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  If `comparison` is `null`, an <xref:System.ArgumentNullException> is thrown.  
   
- This method uses <xref:System.Array.Sort%2A?displayProperty=fullName>, which applies the introspective sort as follows:  
+ This method uses <xref:System.Array.Sort%2A?displayProperty=nameWithType>, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
@@ -3217,9 +3217,9 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are sorted using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
- This method uses <xref:System.Array.Sort%2A?displayProperty=fullName>, which applies the introspective sort as follows:  
+ This method uses <xref:System.Array.Sort%2A?displayProperty=nameWithType>, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
@@ -3350,7 +3350,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -3395,7 +3395,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3452,7 +3452,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  In the rare case where enumeration contends with write accesses, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -3494,7 +3494,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -3579,7 +3579,7 @@ finally
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -3664,7 +3664,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3706,7 +3706,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3923,7 +3923,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3964,7 +3964,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The elements are copied using <xref:System.Array.Copy%2A?displayProperty=fullName>, which is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ The elements are copied using <xref:System.Array.Copy%2A?displayProperty=nameWithType>, which is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   

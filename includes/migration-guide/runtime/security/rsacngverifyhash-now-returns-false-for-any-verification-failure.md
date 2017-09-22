@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.6.2|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Security.Cryptography.RSACng.VerifyHash(System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Cryptography.HashAlgorithmName%2CSystem.Security.Cryptography.RSASignaturePadding)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Security.Cryptography.RSACng.VerifyHash(System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Cryptography.HashAlgorithmName%2CSystem.Security.Cryptography.RSASignaturePadding)?displayProperty=nameWithType></li></ul>|
 

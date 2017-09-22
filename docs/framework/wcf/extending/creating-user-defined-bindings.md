@@ -41,10 +41,10 @@ There are several ways to create bindings not provided by the system:
   
 |Layer|Options|Required|  
 |-----------|-------------|--------------|  
-|Transaction Flow|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement?displayProperty=fullName>|No|  
-|Reliability|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=fullName>|No|  
-|Security|<xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=fullName>|No|  
-|Composite Duplex|<xref:System.ServiceModel.Channels.CompositeDuplexBindingElement?displayProperty=fullName>|No|  
+|Transaction Flow|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement?displayProperty=nameWithType>|No|  
+|Reliability|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType>|No|  
+|Security|<xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=nameWithType>|No|  
+|Composite Duplex|<xref:System.ServiceModel.Channels.CompositeDuplexBindingElement?displayProperty=nameWithType>|No|  
 |Encoding|Text, Binary, MTOM, Custom|Yes*|  
 |Transport|TCP, Named Pipes, HTTP, HTTPS, MSMQ, Custom|Yes|  
   

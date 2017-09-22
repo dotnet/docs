@@ -31,7 +31,7 @@
 ## Remarks  
  The <xref:System.Net.FileWebRequest> class implements the <xref:System.Net.WebRequest>`abstract` base class for Uniform Resource Identifiers (URIs) that use the `file://` scheme to request local files.  
   
- Do not use the <xref:System.Net.FileWebRequest.%23ctor%2A> constructor. Use the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method to initialize new instances of the <xref:System.Net.FileWebRequest> class. If the URI scheme is `file://`, the <xref:System.Net.WebRequest.Create%2A> method returns a <xref:System.Net.FileWebRequest> object.  
+ Do not use the <xref:System.Net.FileWebRequest.%23ctor%2A> constructor. Use the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method to initialize new instances of the <xref:System.Net.FileWebRequest> class. If the URI scheme is `file://`, the <xref:System.Net.WebRequest.Create%2A> method returns a <xref:System.Net.FileWebRequest> object.  
   
  The <xref:System.Net.FileWebRequest.GetResponse%2A> method makes a synchronous request for the file specified in the <xref:System.Net.FileWebRequest.RequestUri%2A> property and returns a <xref:System.Net.FileWebResponse> object that contains the response. You can make an asynchronous request for the file using the <xref:System.Net.FileWebRequest.BeginGetResponse%2A> and <xref:System.Net.FileWebRequest.EndGetResponse%2A> methods.  
   

@@ -390,7 +390,7 @@ private static Grammar CreateSrgsDocumentGrammar()
   
  An SRGS grammar can define a root rule. To create a <xref:System.Speech.Recognition.Grammar> object from a string and specify a root rule, use the <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor.  
   
- To create a <xref:System.Speech.Recognition.Grammar> object that specifies a base URI to use to resolve relative rule references, open the file in a file stream and use the <xref:System.Speech.Recognition.Grammar.%23ctor%2A?displayProperty=fullName> constructor.  
+ To create a <xref:System.Speech.Recognition.Grammar> object that specifies a base URI to use to resolve relative rule references, open the file in a file stream and use the <xref:System.Speech.Recognition.Grammar.%23ctor%2A?displayProperty=nameWithType> constructor.  
   
    
   
@@ -1537,7 +1537,7 @@ private static void DumpGrammarStatus(Grammar item)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The speech recognizer also raises a `SpeechRecognized`  event when it recognizes input. The <xref:System.Speech.Recognition.Grammar> object's <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event is raised prior to the speech recognizer's `SpeechRecognized` event . For more information, see the <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> events.  
+ The speech recognizer also raises a `SpeechRecognized`  event when it recognizes input. The <xref:System.Speech.Recognition.Grammar> object's <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event is raised prior to the speech recognizer's `SpeechRecognized` event . For more information, see the <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=nameWithType>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=nameWithType>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> events.  
   
  Any tasks specific to a particular grammar should always be handled by handlers for the <xref:System.Speech.Recognition.Grammar> object's <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event.  
   

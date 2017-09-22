@@ -102,11 +102,11 @@
   
 <a name="binding_to_data"></a>   
 ## Binding to Data  
- The <xref:System.Web.UI.WebControls.FormView> control can be bound to a data source control (such as <xref:System.Web.UI.WebControls.SqlDataSource>, <xref:System.Web.UI.WebControls.ObjectDataSource>, or <xref:System.Web.UI.WebControls.AccessDataSource>) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, <xref:System.Collections.Generic.List%601?displayProperty=fullName>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.FormView> control to the appropriate data source type:  
+ The <xref:System.Web.UI.WebControls.FormView> control can be bound to a data source control (such as <xref:System.Web.UI.WebControls.SqlDataSource>, <xref:System.Web.UI.WebControls.ObjectDataSource>, or <xref:System.Web.UI.WebControls.AccessDataSource>) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.FormView> control to the appropriate data source type:  
   
 -   To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The <xref:System.Web.UI.WebControls.FormView> control automatically binds to the specified data source control and can take advantage of the data source control's capabilities to perform inserting, updating, deleting, and paging functionality. This is the preferred method to bind to data.  
   
--   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.FormView> control does not provide built-in inserting, updating, deleting, and paging functionality. You need to provide this functionality by using the appropriate event.  
+-   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.FormView> control does not provide built-in inserting, updating, deleting, and paging functionality. You need to provide this functionality by using the appropriate event.  
   
  For more information on data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
@@ -354,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormView> class. To dynamically add a <xref:System.Web.UI.WebControls.FormView> control to a page, create a new <xref:System.Web.UI.WebControls.FormView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormView> class. To dynamically add a <xref:System.Web.UI.WebControls.FormView> control to a page, create a new <xref:System.Web.UI.WebControls.FormView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
   
    
   
@@ -393,7 +393,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FormView> control has built-in paging capabilities, which allow a user to navigate to a different record in the data source. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=fullName> interface or a data source that supports paging capability.  
+ The <xref:System.Web.UI.WebControls.FormView> control has built-in paging capabilities, which allow a user to navigate to a different record in the data source. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface or a data source that supports paging capability.  
   
  To enable the paging feature, set the <xref:System.Web.UI.WebControls.FormView.AllowPaging%2A> property to `true`. You can determine the total number of items in the underlying data source by using the <xref:System.Web.UI.WebControls.FormView.PageCount%2A> property. To determine the index of the currently displayed item, use the <xref:System.Web.UI.WebControls.FormView.PageIndex%2A> property.  
   
@@ -3029,7 +3029,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=fullName> method is used by the control to optionally handle events passed up through the control hierarchy by the <xref:System.Web.UI.Control.RaiseBubbleEvent%2A> method. It determines whether to handle an event by examining the properties of the <xref:System.EventArgs> object contained in the `e` parameter. When an event needs to be handled, the method performs the appropriate action. Other events are ignored and passed up the control hierarchy. This method indicates whether to pass the event further up the control hierarchy through its return value.  
+ The <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=nameWithType> method is used by the control to optionally handle events passed up through the control hierarchy by the <xref:System.Web.UI.Control.RaiseBubbleEvent%2A> method. It determines whether to handle an event by examining the properties of the <xref:System.EventArgs> object contained in the `e` parameter. When an event needs to be handled, the method performs the appropriate action. Other events are ignored and passed up the control hierarchy. This method indicates whether to pass the event further up the control hierarchy through its return value.  
   
  The <xref:System.Web.UI.WebControls.FormView> control overrides the base implementation of this method to perform the appropriate action when one of the buttons recognized by the control is clicked. The following table lists the command buttons that the <xref:System.Web.UI.WebControls.FormView> control recognizes.  
   
@@ -4115,7 +4115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to save the state of the <xref:System.Web.UI.WebControls.FormView> control properties that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property is set to `false`.  
+ This method is used to save the state of the <xref:System.Web.UI.WebControls.FormView> control properties that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property is set to `false`.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.FormView> control.  

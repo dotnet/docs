@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Your implementation of the <xref:System.ComponentModel.IBindingListView.Filter%2A> property should exhibit the following behavior when the <xref:System.ComponentModel.IBindingListView.Filter%2A> property is set: The data source returns only the items that meet the filter criteria when the list is accessed by item index or when the list is enumerated. The definition of the filter string is dependent on the data-source implementation, but the behavior associated with setting the filter should be modeled on <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName>.  
+ Your implementation of the <xref:System.ComponentModel.IBindingListView.Filter%2A> property should exhibit the following behavior when the <xref:System.ComponentModel.IBindingListView.Filter%2A> property is set: The data source returns only the items that meet the filter criteria when the list is accessed by item index or when the list is enumerated. The definition of the filter string is dependent on the data-source implementation, but the behavior associated with setting the filter should be modeled on <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

@@ -151,7 +151,7 @@ Ordinarily, inheritance is used to express an "is a" relationship between a base
 > [!NOTE]
 > A class or struct can implement one more interfaces. While interface implementation is often presented as a workaround for single inheritance or as a way of using inheritance with structs, it is intended to express a different relationship (a "can do" relationship) between an interface and its implementing type than inheritance. An interface defines a subset of functionality (such as the ability to test for equality, to compare or sort objects, or to support culture-sensitive parsing and formatting) that the interface makes available to its implementing types.
 
-Note that "is a" also expresses the relationship between a type and a specific instantiation of that type. In the following example, `Automobile` is a class that has three unique read-only properties: `Make`, the manufacturer of the automobile; `Model`, the kind of automobile; and `Year`, its year of manufacture. Our `Automobile` class also has a constructor whose arguments are assigned to the property values, and it overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method to produce a string that uniquely identifies the `Automobile` instance rather than the `Automobile` class.
+Note that "is a" also expresses the relationship between a type and a specific instantiation of that type. In the following example, `Automobile` is a class that has three unique read-only properties: `Make`, the manufacturer of the automobile; `Model`, the kind of automobile; and `Year`, its year of manufacture. Our `Automobile` class also has a constructor whose arguments are assigned to the property values, and it overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to produce a string that uniquely identifies the `Automobile` instance rather than the `Automobile` class.
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/is-a.cs#1)]
 
@@ -228,7 +228,7 @@ The following example shows the source code for the `Publication` class, as well
 
 - An override of the `ToString` method
 
-  If a type does not override the <xref:System.Object.ToString%2A?displayProperty=fullName> method, it returns the fully qualified name of the type, which is of little use in differentiating one instance from another. The `Publication` class overrides <xref:System.Object.ToString%2A?displayProperty=fullName> to return the value of the `Title` property.
+  If a type does not override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, it returns the fully qualified name of the type, which is of little use in differentiating one instance from another. The `Publication` class overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType> to return the value of the `Title` property.
 
 The following figure illustrates the relationship between our base `Publication` class and its implicitly inherited <xref:System.Object> class.
 
@@ -258,11 +258,11 @@ In addition to the members that it inherits from `Publication`, the `Book` class
 
 - A `SetPrice` method, which sets the values of the `bookPrice` and `ISOCurrencySymbol` fields. These are the values returned by the `Price` and `Currency` properties.
 
-- Overrides to the `ToString` method (inherited from `Publication`) and the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> and <xref:System.Object.GetHashCode%2A> methods (inherited from <xref:System.Object>).
+- Overrides to the `ToString` method (inherited from `Publication`) and the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> and <xref:System.Object.GetHashCode%2A> methods (inherited from <xref:System.Object>).
 
-  Unless it is overridden, the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method tests for reference equality. That is, two object variables are considered to be equal if they refer to the same object. In the case of the `Book` class, on the other hand, two `Book` objects should be equal if they have the same ISBN.
+  Unless it is overridden, the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method tests for reference equality. That is, two object variables are considered to be equal if they refer to the same object. In the case of the `Book` class, on the other hand, two `Book` objects should be equal if they have the same ISBN.
 
-  When you override the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, you must also override the <xref:System.Object.GetHashCode%2A> method, which returns a value that the runtime uses to store items in hashed collections for efficient retrieval. The hash code should return a value that's consistent with the test for equality. Since we've overridden <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> to return `true` if the ISBN properties of two `Book` objects are equal, we return the hash code computed by calling the <xref:System.String.GetHashCode%2A> method of the string returned by the `ISBN` property.
+  When you override the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, you must also override the <xref:System.Object.GetHashCode%2A> method, which returns a value that the runtime uses to store items in hashed collections for efficient retrieval. The hash code should return a value that's consistent with the test for equality. Since we've overridden <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> to return `true` if the ISBN properties of two `Book` objects are equal, we return the hash code computed by calling the <xref:System.String.GetHashCode%2A> method of the string returned by the `ISBN` property.
 
 The following figure illustrates the relationship between the `Book` class and `Publication`, its base class.
 
@@ -279,7 +279,7 @@ In the previous example, we defined a base class that provided an implementation
 
 For example, each closed two-dimensional geometric shape includes two properties: area, the inner extent of the shape; and perimeter, or the distance along the edges of the shape. The way in which these properties are calculated, however, depends completely on the specific shape. The formula for calculating the perimeter (or circumference) of a circle, for example, is very different from that of a triangle.
 
-The following example defines an abstract base class named `Shape` that defines two properties: `Area` and `Perimeter`. Note that, in addition to marking the class with the [abstract](../language-reference/keywords/abstract.md) keyword, each instance member is also marked with the [abstract](../language-reference/keywords/abstract.md) keyword. In this case, `Shape` also overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method to return the name of the type, rather than its fully qualified name. And it defines two static members, `GetArea` and `GetPerimeter`, that allow callers to easily retrieve the area and perimeter of an instance of any derived class. When we pass an instance of a derived class to either of these methods, the runtime calls the method override of the derived class.
+The following example defines an abstract base class named `Shape` that defines two properties: `Area` and `Perimeter`. Note that, in addition to marking the class with the [abstract](../language-reference/keywords/abstract.md) keyword, each instance member is also marked with the [abstract](../language-reference/keywords/abstract.md) keyword. In this case, `Shape` also overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to return the name of the type, rather than its fully qualified name. And it defines two static members, `GetArea` and `GetPerimeter`, that allow callers to easily retrieve the area and perimeter of an instance of any derived class. When we pass an instance of a derived class to either of these methods, the runtime calls the method override of the derived class.
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#1)]
 

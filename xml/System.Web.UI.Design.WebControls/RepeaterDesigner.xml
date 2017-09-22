@@ -367,7 +367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=fullName> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> property.  
+ The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=nameWithType> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> property.  
   
  ]]></format>
         </remarks>

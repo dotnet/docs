@@ -49,7 +49,7 @@ For control authors, the .NET Framework provides a wealth of control authoring t
  Shows how to use the smart tag feature on Windows Forms controls.  
   
  [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](../../../../docs/framework/winforms/controls/serializing-collections-designerserializationvisibilityattribute.md)  
- Shows how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=fullName> attribute to serialize a collection.  
+ Shows how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=nameWithType> attribute to serialize a collection.  
   
  [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)  
  Shows how to debug the design-time behavior of a Windows Forms control.  
@@ -91,10 +91,10 @@ For control authors, the .NET Framework provides a wealth of control authoring t
  Shows how to diagnose and fix common issues that can occur when you author a custom component or control.  
   
 ## Reference  
- <xref:System.Windows.Forms.Control?displayProperty=fullName>  
+ <xref:System.Windows.Forms.Control?displayProperty=nameWithType>  
  Describes this class and has links to all of its members.  
   
- <xref:System.Windows.Forms.UserControl?displayProperty=fullName>  
+ <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>  
  Describes this class and has links to all of its members.  
   
 ## Related Sections  

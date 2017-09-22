@@ -16,12 +16,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration defines the security modes that the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=fullName> supports.  
+ This enumeration defines the security modes that the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType> supports.  
   
    
   
 ## Examples  
- The following code shows how to set <xref:System.ServiceModel.WSDualHttpSecurity.Mode%2A?displayProperty=fullName> to a member of this enumeration.  
+ The following code shows how to set <xref:System.ServiceModel.WSDualHttpSecurity.Mode%2A?displayProperty=nameWithType> to a member of this enumeration.  
   
  [!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
  [!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  

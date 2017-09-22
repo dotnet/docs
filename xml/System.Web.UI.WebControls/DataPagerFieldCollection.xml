@@ -18,11 +18,11 @@
 ## Remarks  
  You can use the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class to programmatically manage a set of <xref:System.Web.UI.WebControls.DataPagerField> objects. Note that it is more typical to define these fields declaratively instead of programmatically.  
   
- You can access the properties and methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class through the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> property. You can add, insert, and remove <xref:System.Web.UI.WebControls.DataPagerField> objects by using the appropriate methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class. To programmatically retrieve <xref:System.Web.UI.WebControls.DataPagerField> objects from a collection, do one of following:  
+ You can access the properties and methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class through the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=nameWithType> property. You can add, insert, and remove <xref:System.Web.UI.WebControls.DataPagerField> objects by using the appropriate methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class. To programmatically retrieve <xref:System.Web.UI.WebControls.DataPagerField> objects from a collection, do one of following:  
   
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.DataPagerField> object from the collection.  
   
--   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create an object that implements <xref:System.Collections.IEnumerator?displayProperty=fullName>, which you can then use to get items from the collection.  
+-   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create an object that implements <xref:System.Collections.IEnumerator?displayProperty=nameWithType>, which you can then use to get items from the collection.  
   
  The <xref:System.Web.UI.StateManagedCollection.Count%2A> property gets the total number of items in the collection. It is typically used to determine the upper bound of the collection. You can add items and remove items in the collection by using the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Add%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
   

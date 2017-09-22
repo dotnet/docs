@@ -25,7 +25,7 @@ The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in 
 ## Discretionary Behaviors  
  The following table lists each of the discretionary behaviors allowed by the XSLT 1.0 recommendation, and how these behaviors are handled by the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
--   Recover indicates that the <xref:System.Xml.Xsl.XslCompiledTransform> class will recover from this error. The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered?displayProperty=fullName> event can be used to report any events from the XSLT processor.  
+-   Recover indicates that the <xref:System.Xml.Xsl.XslCompiledTransform> class will recover from this error. The <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered?displayProperty=nameWithType> event can be used to report any events from the XSLT processor.  
   
 -   Error indicates that an exception is raised for this condition.  
   

@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.Data.DesignerDataParameter> class is one of several types that represent the schema of a data store at design-time. These schema items are made available to controls by designers implementing the <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface. Controls access schema objects by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema%2A> method of the interface.  
   
- The <xref:System.ComponentModel.Design.Data.DesignerDataParameter> class represents the parameters required to call a stored procedure in the data store. The <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure.Parameters%2A?displayProperty=fullName> property contains a collection of <xref:System.ComponentModel.Design.Data.DesignerDataParameter> objects.  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataParameter> class represents the parameters required to call a stored procedure in the data store. The <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure.Parameters%2A?displayProperty=nameWithType> property contains a collection of <xref:System.ComponentModel.Design.Data.DesignerDataParameter> objects.  
   
  ]]></format>
     </remarks>

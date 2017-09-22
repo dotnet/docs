@@ -39,8 +39,8 @@ The following examples show how to read text synchronously and asynchronously fr
   
 ## See Also  
  <xref:System.IO.StreamReader>   
- <xref:System.IO.File.OpenText%2A?displayProperty=fullName>   
- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName>   
+ <xref:System.IO.File.OpenText%2A?displayProperty=nameWithType>   
+ <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>   
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)   
  [NIB: How to: Create a Directory Listing](http://msdn.microsoft.com/en-us/4d2772b1-b991-4532-a8a6-6ef733277e69)   
  [Quickstart: Reading and writing files](http://msdn.microsoft.com/library/windows/apps/hh758325.aspx)   

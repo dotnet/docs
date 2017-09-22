@@ -189,7 +189,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BoundField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.BoundField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the method.  
+ The <xref:System.Web.UI.WebControls.BoundField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current <xref:System.Web.UI.WebControls.BoundField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the method.  
   
  ]]></format>
         </remarks>
@@ -215,7 +215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BoundField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to create an empty <xref:System.Web.UI.WebControls.BoundField> object to copy the properties of the current <xref:System.Web.UI.WebControls.BoundField> object to.  
+ The <xref:System.Web.UI.WebControls.BoundField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to create an empty <xref:System.Web.UI.WebControls.BoundField> object to copy the properties of the current <xref:System.Web.UI.WebControls.BoundField> object to.  
   
  ]]></format>
         </remarks>
@@ -333,7 +333,7 @@
 |`G`|General date/time pattern (long time).|Format: `{0:G}`<br /><br /> 6/15/2009 1:45:30 PM -> 6/15/2009 1:45:30 PM|  
 |`M` or `m`|Month/day pattern.|Format: `{0:M}`<br /><br /> 6/15/2009 1:45:30 PM -> June 15|  
 |`O` or `o`|Round-trip date/time pattern.|Format: `{0:o}`<br /><br /> 6/15/2009 1:45:30 PM -> 2009-06-15T13:45:30.0900000|  
-|`R` or `r`|RFC1123 pattern (for information, see <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A?displayProperty=fullName>).|Format: `{0:R}`<br /><br /> 6/15/2009 1:45:30 PM -> Mon, 15 Jun 2009 20:45:30 GMT|  
+|`R` or `r`|RFC1123 pattern (for information, see <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A?displayProperty=nameWithType>).|Format: `{0:R}`<br /><br /> 6/15/2009 1:45:30 PM -> Mon, 15 Jun 2009 20:45:30 GMT|  
 |`s`|Sortable date/time pattern.|Format: `{0:s}`<br /><br /> 6/15/2009 1:45:30 PM -> 2009-06-15T13:45:30|  
 |`t`|Short time pattern.|Format: `{0:t}`<br /><br /> 6/15/2009 1:45:30 PM -> 1:45 PM|  
 |`T`|Long time pattern.|Format: `{0:T}`<br /><br /> 6/15/2009 1:45:30 PM -> 1:45:30 PM|  
@@ -396,7 +396,7 @@
 > [!NOTE]
 >  This method is used primarily by control developers.  
   
- This method does not have a return value. Instead, the field values are returned by reference through the <xref:System.Collections.IDictionary?displayProperty=fullName> object passed in for the `dictionary` parameter. After the method has been called, iterate through the <xref:System.Collections.IDictionary?displayProperty=fullName> object to access the field values.  
+ This method does not have a return value. Instead, the field values are returned by reference through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object passed in for the `dictionary` parameter. After the method has been called, iterate through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object to access the field values.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TableCell> object contains read-only field values, you must pass in `true` for the `includeReadOnly` parameter to include those values.  

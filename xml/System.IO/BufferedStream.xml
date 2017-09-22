@@ -927,7 +927,7 @@
 ## Remarks  
  If `offset` is negative, the new position will precede the position specified by `origin` by the number of bytes specified by `offset`. If `offset` is 0, the new position will be the position specified by `origin`. If `offset` is positive, the new position will follow the position specified by `origin` by the number of bytes specified by `offset`.  
   
- When a <xref:System.IO.BufferedStream> object is the base stream for a <xref:System.IO.StreamReader> object, calling the <xref:System.IO.BufferedStream.Seek%2A> method can cause the position of the stream to no longer match the position of the internal buffer in the reader. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A?displayProperty=fullName> method; however, this method slows performance and should be called only when absolutely necessary.  
+ When a <xref:System.IO.BufferedStream> object is the base stream for a <xref:System.IO.StreamReader> object, calling the <xref:System.IO.BufferedStream.Seek%2A> method can cause the position of the stream to no longer match the position of the internal buffer in the reader. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A?displayProperty=nameWithType> method; however, this method slows performance and should be called only when absolutely necessary.  
   
  Seeking to any location beyond the length of the stream is supported.  
   

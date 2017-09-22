@@ -119,7 +119,7 @@
   
  The <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> dictionary is automatically populated with the name/value pairs of the field or fields that are specified in the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A> property. If the primary key contains multiple fields, a separate entry is added to the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> dictionary for each key field.  
   
- To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -151,7 +151,7 @@
   
  The <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> property is automatically populated with the name/value pairs of the non-key fields in the item. A separate entry is added to the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> property for each key field in the item.  
   
- To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

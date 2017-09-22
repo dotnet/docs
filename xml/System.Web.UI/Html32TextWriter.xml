@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> field is passed in `tagKey` and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.GetTagName%2A> method returns the `table` element.  
+ If the <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=nameWithType> field is passed in `tagKey` and the <xref:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution%2A> property is `true`, the <xref:System.Web.UI.Html32TextWriter.GetTagName%2A> method returns the `table` element.  
   
  ]]></format>
         </remarks>

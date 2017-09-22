@@ -85,10 +85,10 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A>|The value of the `adProperties` parameter if the `adProperties` parameter is not `null`; otherwise, an empty <xref:System.Collections.IDictionary?displayProperty=fullName>.|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the alternate text; otherwise, <xref:System.String.Empty?displayProperty=fullName>.|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the URL of the image to display; otherwise, <xref:System.String.Empty?displayProperty=fullName>.|  
-|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the URL to navigate to; otherwise, <xref:System.String.Empty?displayProperty=fullName>.|  
+|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A>|The value of the `adProperties` parameter if the `adProperties` parameter is not `null`; otherwise, an empty <xref:System.Collections.IDictionary?displayProperty=nameWithType>.|  
+|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.AlternateText%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the alternate text; otherwise, <xref:System.String.Empty?displayProperty=nameWithType>.|  
+|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the URL of the image to display; otherwise, <xref:System.String.Empty?displayProperty=nameWithType>.|  
+|<xref:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl%2A>|If the `adProperties` parameter is not `null`, the value in the `adProperties` parameter that represents the URL to navigate to; otherwise, <xref:System.String.Empty?displayProperty=nameWithType>.|  
   
  ]]></format>
         </remarks>
@@ -113,9 +113,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> property to get a <xref:System.Collections.IDictionary?displayProperty=fullName> object that contains the advertisement properties for the currently displayed advertisement. The keys and values of the <xref:System.Collections.IDictionary?displayProperty=fullName> object are of type <xref:System.String?displayProperty=fullName>.  
+ Use the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> property to get a <xref:System.Collections.IDictionary?displayProperty=nameWithType> object that contains the advertisement properties for the currently displayed advertisement. The keys and values of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object are of type <xref:System.String?displayProperty=nameWithType>.  
   
- The <xref:System.Web.UI.WebControls.AdRotator> control randomly selects an advertisement each time the control is displayed on the Web page. The attributes for the selected advertisement are extracted from the advertisement XML file and stored in a <xref:System.Collections.IDictionary?displayProperty=fullName> object. When the <xref:System.Web.UI.WebControls.AdRotator> control creates a new instance of the <xref:System.Web.UI.WebControls.AdCreatedEventArgs> class, the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> property gets initialized with the <xref:System.Collections.IDictionary?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.AdRotator> control randomly selects an advertisement each time the control is displayed on the Web page. The attributes for the selected advertisement are extracted from the advertisement XML file and stored in a <xref:System.Collections.IDictionary?displayProperty=nameWithType> object. When the <xref:System.Web.UI.WebControls.AdRotator> control creates a new instance of the <xref:System.Web.UI.WebControls.AdCreatedEventArgs> class, the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> property gets initialized with the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object.  
   
  Custom attributes about an advertisement, such as an advertisement caption, can also be included in the advertisement XML file. Use this property in the <xref:System.Web.UI.WebControls.AdRotator.OnAdCreated%2A> event handler to get the custom attributes.  
   

@@ -19,7 +19,7 @@
  The <xref:System.Web.UI.HtmlControls.HtmlForm> control is a container for server controls on a Web Forms page. All server controls that post back to the server must be placed between the opening and closing tags of an <xref:System.Web.UI.HtmlControls.HtmlForm> control.  
   
 > [!NOTE]
->  ASP.NET allows only a single <xref:System.Web.UI.HtmlControls.HtmlForm> control to be active on a Web Forms page. If there is more than one active <xref:System.Web.UI.HtmlControls.HtmlForm> control on a Web Forms page, the common language runtime will throw an <xref:System.Web.HttpException?displayProperty=fullName> exception when you request the page. You can, however, use a <xref:System.Web.UI.WebControls.MultiView> control where each <xref:System.Web.UI.WebControls.View> object contains one <xref:System.Web.UI.HtmlControls.HtmlForm> control, because only one <xref:System.Web.UI.WebControls.View> is active at any given time.  
+>  ASP.NET allows only a single <xref:System.Web.UI.HtmlControls.HtmlForm> control to be active on a Web Forms page. If there is more than one active <xref:System.Web.UI.HtmlControls.HtmlForm> control on a Web Forms page, the common language runtime will throw an <xref:System.Web.HttpException?displayProperty=nameWithType> exception when you request the page. You can, however, use a <xref:System.Web.UI.WebControls.MultiView> control where each <xref:System.Web.UI.WebControls.View> object contains one <xref:System.Web.UI.HtmlControls.HtmlForm> control, because only one <xref:System.Web.UI.WebControls.View> is active at any given time.  
   
  You can control the behavior of the <xref:System.Web.UI.HtmlControls.HtmlForm> control by setting its properties. To specify the encoding type for the form's data, set the <xref:System.Web.UI.HtmlControls.HtmlForm.Enctype%2A> property. The method (`GET` or `POST`) that a browser uses to post form data to the server for processing is specified by setting the <xref:System.Web.UI.HtmlControls.HtmlForm.Method%2A> property.  
   
@@ -130,7 +130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To prevent naming conflicts when multiple instances of a control are rendered, [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] automatically generates a unique <xref:System.Web.UI.HtmlControls.HtmlForm.ClientID%2A> value for each control on a page. For more information, see the <xref:System.Web.UI.Control.ClientID%2A?displayProperty=fullName> property.  
+ To prevent naming conflicts when multiple instances of a control are rendered, [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] automatically generates a unique <xref:System.Web.UI.HtmlControls.HtmlForm.ClientID%2A> value for each control on a page. For more information, see the <xref:System.Web.UI.Control.ClientID%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -436,10 +436,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlForm.OnPreRender%2A> method is called just prior to rendering the <xref:System.Web.UI.HtmlControls.HtmlForm> control. If the <xref:System.Web.UI.Page.SmartNavigation%2A?displayProperty=fullName> property is set to `true`, the <xref:System.Web.UI.HtmlControls.HtmlForm.OnPreRender%2A> method registers the smart navigation script file reference so that it gets rendered.  
+ The <xref:System.Web.UI.HtmlControls.HtmlForm.OnPreRender%2A> method is called just prior to rendering the <xref:System.Web.UI.HtmlControls.HtmlForm> control. If the <xref:System.Web.UI.Page.SmartNavigation%2A?displayProperty=nameWithType> property is set to `true`, the <xref:System.Web.UI.HtmlControls.HtmlForm.OnPreRender%2A> method registers the smart navigation script file reference so that it gets rendered.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.Page.SmartNavigation%2A?displayProperty=fullName> property has been deprecated in ASP.NET version 2.0.  
+>  The <xref:System.Web.UI.Page.SmartNavigation%2A?displayProperty=nameWithType> property has been deprecated in ASP.NET version 2.0.  
   
  ]]></format>
         </remarks>
@@ -540,7 +540,7 @@
  The <xref:System.Web.UI.HtmlControls.HtmlForm.RenderChildren%2A> method renders client script to ensure that the browser focus is set to the control specified in the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus%2A> property.  
   
 > [!NOTE]
->  A control specified by the <xref:System.Web.UI.Page.SetFocus%2A?displayProperty=fullName> property takes precedence over a control specified by the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus%2A> property.  
+>  A control specified by the <xref:System.Web.UI.Page.SetFocus%2A?displayProperty=nameWithType> property takes precedence over a control specified by the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus%2A> property.  
   
  ]]></format>
         </remarks>

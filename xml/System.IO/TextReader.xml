@@ -49,7 +49,7 @@
    
   
 ## Examples  
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. The <xref:System.IO.StreamReader> class derives from <xref:System.IO.TextReader> and provides implementations of the members for reading from a stream. The following example shows how to read all the characters in a file by using the <xref:System.IO.StreamReader.ReadAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method. It checks whether each character is a letter, digit, or white space before adding the character to an instance of the <xref:System.Text.StringBuilder> class.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. The <xref:System.IO.StreamReader> class derives from <xref:System.IO.TextReader> and provides implementations of the members for reading from a stream. The following example shows how to read all the characters in a file by using the <xref:System.IO.StreamReader.ReadAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. It checks whether each character is a letter, digit, or white space before adding the character to an instance of the <xref:System.Text.StringBuilder> class.  
   
  [!code-csharp[System.IO.StreamReader#42](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamReader/CS/example42.cs#42)]
  [!code-vb[System.IO.StreamReader#42](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamReader/VB/example42.vb#42)]  
@@ -126,12 +126,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of `Close` calls the <xref:System.IO.StringReader.Dispose%28System.Boolean%29?displayProperty=fullName> method and passes it a `true` value.  
+ This implementation of `Close` calls the <xref:System.IO.StringReader.Dispose%28System.Boolean%29?displayProperty=nameWithType> method and passes it a `true` value.  
   
- Flushing the text reader will not flush its underlying encoder unless you explicitly call `Close`. Setting the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> property to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
+ Flushing the text reader will not flush its underlying encoder unless you explicitly call `Close`. Setting the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> property to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
   
 > [!NOTE]
->  In derived classes, do not override the <xref:System.IO.TextReader.Close%2A> method. Instead, override the <xref:System.IO.TextReader.Dispose%28System.Boolean%29?displayProperty=fullName> method to add code for releasing resources.  
+>  In derived classes, do not override the <xref:System.IO.TextReader.Close%2A> method. Instead, override the <xref:System.IO.TextReader.Dispose%28System.Boolean%29?displayProperty=nameWithType> method to add code for releasing resources.  
   
  ]]></format>
         </remarks>
@@ -320,7 +320,7 @@
   
  The current position of the <xref:System.IO.TextReader> is not changed by this operation. The returned value is -1 if no more characters are available. The default implementation returns -1.  
   
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.Peek%2A> method, see the <xref:System.IO.StreamReader.Peek%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.Peek%2A> method, see the <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -363,7 +363,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.Read%2A> method, see the <xref:System.IO.StreamReader.Read%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.Read%2A> method, see the <xref:System.IO.StreamReader.Read%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -415,7 +415,7 @@
 ## Remarks  
  This method returns after either `count` characters are read or the end of the file is reached. <xref:System.IO.TextReader.ReadBlock%2A> is a blocking version of this method.  
   
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.Read%2A> method, see the <xref:System.IO.StreamReader.Read%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.Read%2A> method, see the <xref:System.IO.StreamReader.Read%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -477,7 +477,7 @@
 ## Remarks  
  The task completes after either the number of characters specified by the `count` parameter are read or the end of the file is reached.  
   
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadAsync%2A> method, see the <xref:System.IO.StreamReader.ReadAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadAsync%2A> method, see the <xref:System.IO.StreamReader.ReadAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -642,13 +642,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A line is defined as a sequence of characters followed by a carriage return (0x000d), a line feed (0x000a), a carriage return followed by a line feed, <xref:System.Environment.NewLine%2A?displayProperty=fullName>, or the end-of-stream marker. The string that is returned does not contain the terminating carriage return or line feed. The return value is `null` if the end of the input stream has been reached.  
+ A line is defined as a sequence of characters followed by a carriage return (0x000d), a line feed (0x000a), a carriage return followed by a line feed, <xref:System.Environment.NewLine%2A?displayProperty=nameWithType>, or the end-of-stream marker. The string that is returned does not contain the terminating carriage return or line feed. The return value is `null` if the end of the input stream has been reached.  
   
  If the method throws an <xref:System.OutOfMemoryException> exception, the reader's position in the underlying <xref:System.IO.Stream> is advanced by the number of characters the method was able to read, but the characters that were already read into the internal <xref:System.IO.TextReader.ReadLine%2A> buffer are discarded. Because the position of the reader in the stream cannot be changed, the characters that were already read are unrecoverable and can be accessed only by reinitializing the <xref:System.IO.TextReader> object. If the initial position within the stream is unknown or the stream does not support seeking, the underlying <xref:System.IO.Stream> also needs to be reinitialized.  
   
  To avoid such a situation and produce robust code you should use the <xref:System.IO.TextReader.Read%2A> method and store the read characters in a preallocated buffer.  
   
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadLine%2A> method, see the <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadLine%2A> method, see the <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -698,9 +698,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadLineAsync%2A> method, see the <xref:System.IO.StreamReader.ReadLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadLineAsync%2A> method, see the <xref:System.IO.StreamReader.ReadLineAsync%2A?displayProperty=nameWithType> method.  
   
- If the current <xref:System.IO.TextReader> represents the standard input stream returned by the <xref:System.Console.In%2A?displayProperty=fullName> property, the <xref:System.IO.TextReader.ReadLineAsync%2A> method executes synchronously rather than asynchronously.  
+ If the current <xref:System.IO.TextReader> represents the standard input stream returned by the <xref:System.Console.In%2A?displayProperty=nameWithType> property, the <xref:System.IO.TextReader.ReadLineAsync%2A> method executes synchronously rather than asynchronously.  
   
  ]]></format>
         </remarks>
@@ -748,7 +748,7 @@
   
  To avoid such a situation and produce robust code you should use the <xref:System.IO.TextReader.Read%2A> method and store the read characters in a preallocated buffer.  
   
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadToEnd%2A> method, see the <xref:System.IO.StreamReader.ReadToEnd%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadToEnd%2A> method, see the <xref:System.IO.StreamReader.ReadToEnd%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -804,7 +804,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadToEndAsync%2A> method, see the <xref:System.IO.StreamReader.ReadToEndAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextReader> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextReader.ReadToEndAsync%2A> method, see the <xref:System.IO.StreamReader.ReadToEndAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

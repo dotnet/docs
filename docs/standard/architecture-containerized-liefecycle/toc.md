@@ -19,13 +19,13 @@
 ### [Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)](design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
 ## [docker application devops workflow with microsoft tools](docker-devops-workflow/index.md)
 ### [Steps in the outer-loop DevOps workflow for a Docker application](docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
+## [Run, manage, and monitoring Docker production environments](run-manage-monitor-docker-environments/index.md)
+### [Run composed and microservices-based applications in production environments](run-manage-monitor-docker-environments/run-microservices-based-applications-in-production.md)
+### [Manage production Docker environments](run-manage-monitor-docker-environments/manage-production-docker-environments.md)
+### [Monitor containerized application services](run-manage-monitor-docker-environments/monitor-containerized-application-services.md)
 
 
 
 
-
-# [designing and developing containerized apps using docker and microsoft azure](designing-and-developing-containerized-apps-using-docker-and-microsoft-azure/)
-# [docker application devops workflow with microsoft tools](docker-application-devops-workflow-with-microsoft-tools/)
-# [running](running/)
 
 ## [Key takeaways](key-takeaways/index.md)

@@ -17,6 +17,10 @@
 ### [Inner-loop development workflow for Docker apps](design-develop-containerized-apps/docker-apps-inner-loop-workflow.md)
 ### [Using Visual Studio Tools for Docker (Visual Studio on Windows)](design-develop-containerized-apps/visual-studio-tools-for-docker.md)
 ### [Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)](design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
+## [docker application devops workflow with microsoft tools](docker-devops-workflow/index.md)
+### [Steps in the outer-loop DevOps workflow for a Docker application](docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
+
+
 
 
 

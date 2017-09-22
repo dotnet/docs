@@ -1973,7 +1973,7 @@ These data point properties include:
       </Docs>
     </Member>
     <Member MemberName="HitTest">
-      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.HitTestResult[] HitTest (int x, int y, bool ignoreTransparent, System.Web.UI.DataVisualization.Charting.ChartElementType[] requestedElement);" />
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.HitTestResult[] HitTest (int x, int y, bool ignoreTransparent, params System.Web.UI.DataVisualization.Charting.ChartElementType[] requestedElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.HitTestResult[] HitTest(int32 x, int32 y, bool ignoreTransparent, valuetype System.Web.UI.DataVisualization.Charting.ChartElementType[] requestedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean,System.Web.UI.DataVisualization.Charting.ChartElementType[])" />
       <MemberType>Method</MemberType>

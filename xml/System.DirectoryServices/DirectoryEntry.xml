@@ -677,7 +677,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (string methodName, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (string methodName, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(string methodName, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.Invoke(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -754,7 +754,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       </Docs>
     </Member>
     <Member MemberName="InvokeSet">
-      <MemberSignature Language="C#" Value="public void InvokeSet (string propertyName, object[] args);" />
+      <MemberSignature Language="C#" Value="public void InvokeSet (string propertyName, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvokeSet(string propertyName, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.InvokeSet(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

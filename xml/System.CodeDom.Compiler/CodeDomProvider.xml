@@ -83,7 +83,7 @@
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromDom">
-      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom (System.CodeDom.Compiler.CompilerParameters options, System.CodeDom.CodeCompileUnit[] compilationUnits);" />
+      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom (System.CodeDom.Compiler.CompilerParameters options, params System.CodeDom.CodeCompileUnit[] compilationUnits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom(class System.CodeDom.Compiler.CompilerParameters options, class System.CodeDom.CodeCompileUnit[] compilationUnits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])" />
       <MemberType>Method</MemberType>
@@ -130,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromFile">
-      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile (System.CodeDom.Compiler.CompilerParameters options, string[] fileNames);" />
+      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile (System.CodeDom.Compiler.CompilerParameters options, params string[] fileNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile(class System.CodeDom.Compiler.CompilerParameters options, string[] fileNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberType>Method</MemberType>
@@ -177,7 +177,7 @@
       </Docs>
     </Member>
     <Member MemberName="CompileAssemblyFromSource">
-      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource (System.CodeDom.Compiler.CompilerParameters options, string[] sources);" />
+      <MemberSignature Language="C#" Value="public virtual System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource (System.CodeDom.Compiler.CompilerParameters options, params string[] sources);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource(class System.CodeDom.Compiler.CompilerParameters options, string[] sources) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
       <MemberType>Method</MemberType>

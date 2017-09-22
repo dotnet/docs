@@ -98,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SrgsItem (System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
+      <MemberSignature Language="C#" Value="public SrgsItem (params System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsElement[])" />
       <MemberType>Constructor</MemberType>
@@ -173,7 +173,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SrgsItem (int min, int max, System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
+      <MemberSignature Language="C#" Value="public SrgsItem (int min, int max, params System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 min, int32 max, class System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32,System.Int32,System.Speech.Recognition.SrgsGrammar.SrgsElement[])" />
       <MemberType>Constructor</MemberType>

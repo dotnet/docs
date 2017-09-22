@@ -207,7 +207,7 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public virtual int Add (object[] values);" />
+      <MemberSignature Language="C#" Value="public virtual int Add (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowCollection.Add(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -514,7 +514,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public virtual void AddRange (System.Windows.Forms.DataGridViewRow[] dataGridViewRows);" />
+      <MemberSignature Language="C#" Value="public virtual void AddRange (params System.Windows.Forms.DataGridViewRow[] dataGridViewRows);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Windows.Forms.DataGridViewRow[] dataGridViewRows) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowCollection.AddRange(System.Windows.Forms.DataGridViewRow[])" />
       <MemberType>Method</MemberType>
@@ -1206,7 +1206,7 @@
       </Docs>
     </Member>
     <Member MemberName="Insert">
-      <MemberSignature Language="C#" Value="public virtual void Insert (int rowIndex, object[] values);" />
+      <MemberSignature Language="C#" Value="public virtual void Insert (int rowIndex, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 rowIndex, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowCollection.Insert(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1533,7 +1533,7 @@
       </Docs>
     </Member>
     <Member MemberName="InsertRange">
-      <MemberSignature Language="C#" Value="public virtual void InsertRange (int rowIndex, System.Windows.Forms.DataGridViewRow[] dataGridViewRows);" />
+      <MemberSignature Language="C#" Value="public virtual void InsertRange (int rowIndex, params System.Windows.Forms.DataGridViewRow[] dataGridViewRows);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertRange(int32 rowIndex, class System.Windows.Forms.DataGridViewRow[] dataGridViewRows) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowCollection.InsertRange(System.Int32,System.Windows.Forms.DataGridViewRow[])" />
       <MemberType>Method</MemberType>

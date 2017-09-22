@@ -331,7 +331,7 @@
       </Docs>
     </Member>
     <Member MemberName="DefineGenericParameters">
-      <MemberSignature Language="C#" Value="public System.Reflection.Emit.GenericTypeParameterBuilder[] DefineGenericParameters (string[] names);" />
+      <MemberSignature Language="C#" Value="public System.Reflection.Emit.GenericTypeParameterBuilder[] DefineGenericParameters (params string[] names);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Emit.GenericTypeParameterBuilder[] DefineGenericParameters(string[] names) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodBuilder.DefineGenericParameters(System.String[])" />
       <MemberType>Method</MemberType>
@@ -1153,7 +1153,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakeGenericMethod">
-      <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo MakeGenericMethod (Type[] typeArguments);" />
+      <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo MakeGenericMethod (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodInfo MakeGenericMethod(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodBuilder.MakeGenericMethod(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -1649,7 +1649,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetParameters">
-      <MemberSignature Language="C#" Value="public void SetParameters (Type[] parameterTypes);" />
+      <MemberSignature Language="C#" Value="public void SetParameters (params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParameters(class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodBuilder.SetParameters(System.Type[])" />
       <MemberType>Method</MemberType>

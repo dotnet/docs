@@ -98,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStrip (System.Windows.Forms.ToolStripItem[] items);" />
+      <MemberSignature Language="C#" Value="public ToolStrip (params System.Windows.Forms.ToolStripItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.#ctor(System.Windows.Forms.ToolStripItem[])" />
       <MemberType>Constructor</MemberType>

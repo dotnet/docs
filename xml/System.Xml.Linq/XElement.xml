@@ -857,7 +857,7 @@ Console.WriteLine(root)
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public XElement (System.Xml.Linq.XName name, object[] content);" />
+      <MemberSignature Language="C#" Value="public XElement (System.Xml.Linq.XName name, params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name, object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -5397,7 +5397,7 @@ Console.WriteLine(root)
       </Docs>
     </Member>
     <Member MemberName="ReplaceAll">
-      <MemberSignature Language="C#" Value="public void ReplaceAll (object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceAll (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceAll(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAll(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5640,7 +5640,7 @@ Console.WriteLine(root)
       </Docs>
     </Member>
     <Member MemberName="ReplaceAttributes">
-      <MemberSignature Language="C#" Value="public void ReplaceAttributes (object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceAttributes (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceAttributes(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])" />
       <MemberType>Method</MemberType>

@@ -1884,7 +1884,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
-      <MemberSignature Language="C#" Value="public override Type MakeGenericType (Type[] typeArguments);" />
+      <MemberSignature Language="C#" Value="public override Type MakeGenericType (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type MakeGenericType(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.EnumBuilder.MakeGenericType(System.Type[])" />
       <MemberType>Method</MemberType>

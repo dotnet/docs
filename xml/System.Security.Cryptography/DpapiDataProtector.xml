@@ -27,7 +27,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DpapiDataProtector (string appName, string primaryPurpose, string[] specificPurpose);" />
+      <MemberSignature Language="C#" Value="public DpapiDataProtector (string appName, string primaryPurpose, params string[] specificPurpose);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appName, string primaryPurpose, string[] specificPurpose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DpapiDataProtector.#ctor(System.String,System.String,System.String[])" />
       <MemberType>Constructor</MemberType>

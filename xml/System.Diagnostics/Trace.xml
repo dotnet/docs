@@ -900,7 +900,7 @@ End of list of errors
       </Docs>
     </Member>
     <Member MemberName="TraceError">
-      <MemberSignature Language="C#" Value="public static void TraceError (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void TraceError (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceError(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceError(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -994,7 +994,7 @@ End of list of errors
       </Docs>
     </Member>
     <Member MemberName="TraceInformation">
-      <MemberSignature Language="C#" Value="public static void TraceInformation (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void TraceInformation (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceInformation(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceInformation(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1088,7 +1088,7 @@ End of list of errors
       </Docs>
     </Member>
     <Member MemberName="TraceWarning">
-      <MemberSignature Language="C#" Value="public static void TraceWarning (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void TraceWarning (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TraceWarning(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Trace.TraceWarning(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

@@ -61,7 +61,7 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (System.Web.Caching.CacheDependency[] dependencies);" />
+      <MemberSignature Language="C#" Value="public void Add (params System.Web.Caching.CacheDependency[] dependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Caching.CacheDependency[] dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.AggregateCacheDependency.Add(System.Web.Caching.CacheDependency[])" />
       <MemberType>Method</MemberType>

@@ -84,7 +84,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public virtual void AddRange (System.Windows.Forms.DataGridViewCell[] dataGridViewCells);" />
+      <MemberSignature Language="C#" Value="public virtual void AddRange (params System.Windows.Forms.DataGridViewCell[] dataGridViewCells);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Windows.Forms.DataGridViewCell[] dataGridViewCells) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellCollection.AddRange(System.Windows.Forms.DataGridViewCell[])" />
       <MemberType>Method</MemberType>

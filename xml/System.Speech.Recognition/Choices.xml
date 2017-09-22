@@ -165,7 +165,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Choices (System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
+      <MemberSignature Language="C#" Value="public Choices (params System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberType>Constructor</MemberType>
@@ -237,7 +237,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Choices (string[] phrases);" />
+      <MemberSignature Language="C#" Value="public Choices (params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>
@@ -307,7 +307,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
+      <MemberSignature Language="C#" Value="public void Add (params System.Speech.Recognition.GrammarBuilder[] alternateChoices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberType>Method</MemberType>
@@ -384,7 +384,7 @@ public Grammar CreatePhonePhrase()
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (string[] phrases);" />
+      <MemberSignature Language="C#" Value="public void Add (params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.String[])" />
       <MemberType>Method</MemberType>

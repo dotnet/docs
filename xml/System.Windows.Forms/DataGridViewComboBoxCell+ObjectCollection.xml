@@ -76,7 +76,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public void AddRange (object[] items);" />
+      <MemberSignature Language="C#" Value="public void AddRange (params object[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(object[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection.AddRange(System.Object[])" />
       <MemberType>Method</MemberType>

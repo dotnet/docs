@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator Type (System.Printing.IndexedProperties.PrintSystemTypeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Type (System.Printing.IndexedProperties.PrintSystemTypeProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Type op_Implicit(class System.Printing.IndexedProperties.PrintSystemTypeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintSystemTypeProperty.op_Implicit(System.Printing.IndexedProperties.PrintSystemTypeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Type" />
       <MemberType>Method</MemberType>
@@ -128,7 +128,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintSystemTypeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintSystemTypeProperty" />
       </Parameters>
       <Docs>
         <param name="attribRef">To be added.</param>

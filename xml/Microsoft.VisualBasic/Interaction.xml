@@ -185,7 +185,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       </Docs>
     </Member>
     <Member MemberName="CallByName">
-      <MemberSignature Language="C#" Value="public static object CallByName (object ObjectRef, string ProcName, Microsoft.VisualBasic.CallType UseCallType, object[] Args);" />
+      <MemberSignature Language="C#" Value="public static object CallByName (object ObjectRef, string ProcName, Microsoft.VisualBasic.CallType UseCallType, params object[] Args);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CallByName(object ObjectRef, string ProcName, valuetype Microsoft.VisualBasic.CallType UseCallType, object[] Args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -240,7 +240,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       </Docs>
     </Member>
     <Member MemberName="Choose">
-      <MemberSignature Language="C#" Value="public static object Choose (double Index, object[] Choice);" />
+      <MemberSignature Language="C#" Value="public static object Choose (double Index, params object[] Choice);" />
       <MemberSignature Language="ILAsm" Value=".method public static object Choose(float64 Index, object[] Choice) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Choose(System.Double,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1215,7 +1215,7 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static object Switch (object[] VarExpr);" />
+      <MemberSignature Language="C#" Value="public static object Switch (params object[] VarExpr);" />
       <MemberSignature Language="ILAsm" Value=".method public static object Switch(object[] VarExpr) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Switch(System.Object[])" />
       <MemberType>Method</MemberType>

@@ -244,7 +244,7 @@ Console.WriteLine(xmlTree)
       </Docs>
     </Member>
     <Member MemberName="AddAfterSelf">
-      <MemberSignature Language="C#" Value="public void AddAfterSelf (object[] content);" />
+      <MemberSignature Language="C#" Value="public void AddAfterSelf (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddAfterSelf(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -556,7 +556,7 @@ Console.WriteLine(xmlTree)
       </Docs>
     </Member>
     <Member MemberName="AddBeforeSelf">
-      <MemberSignature Language="C#" Value="public void AddBeforeSelf (object[] content);" />
+      <MemberSignature Language="C#" Value="public void AddBeforeSelf (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2865,7 +2865,7 @@ Console.WriteLine(xmlTree)
       </Docs>
     </Member>
     <Member MemberName="ReplaceWith">
-      <MemberSignature Language="C#" Value="public void ReplaceWith (object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceWith (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReplaceWith(System.Object[])" />
       <MemberType>Method</MemberType>

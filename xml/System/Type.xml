@@ -11021,7 +11021,7 @@ GetType(Array).IsAssignableFrom(type)
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
-      <MemberSignature Language="C#" Value="public virtual Type MakeGenericType (Type[] typeArguments);" />
+      <MemberSignature Language="C#" Value="public virtual Type MakeGenericType (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type MakeGenericType(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Type.MakeGenericType(System.Type[])" />
       <MemberType>Method</MemberType>

@@ -3903,7 +3903,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WaitAll">
-      <MemberSignature Language="C#" Value="public static void WaitAll (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static void WaitAll (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WaitAll(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4196,7 +4196,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WaitAny">
-      <MemberSignature Language="C#" Value="public static int WaitAny (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static int WaitAny (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 WaitAny(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WaitAny(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4493,7 +4493,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAll">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WhenAll (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WhenAll (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WhenAll(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAll(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4630,7 +4630,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAll&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TResult[]&gt; WhenAll&lt;TResult&gt; (System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TResult[]&gt; WhenAll&lt;TResult&gt; (params System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TResult[]&gt; WhenAll&lt;TResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TResult&gt;[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAll``1(System.Threading.Tasks.Task{``0}[])" />
       <MemberType>Method</MemberType>
@@ -4746,7 +4746,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAny">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&gt; WhenAny (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&gt; WhenAny (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Threading.Tasks.Task&gt; WhenAny(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4846,7 +4846,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAny&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; WhenAny&lt;TResult&gt; (System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; WhenAny&lt;TResult&gt; (params System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Threading.Tasks.Task`1&lt;!!TResult&gt;&gt; WhenAny&lt;TResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TResult&gt;[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAny``1(System.Threading.Tasks.Task{``0}[])" />
       <MemberType>Method</MemberType>

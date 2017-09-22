@@ -2053,7 +2053,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
-      <MemberSignature Language="C#" Value="public override Type MakeGenericType (Type[] typeArguments);" />
+      <MemberSignature Language="C#" Value="public override Type MakeGenericType (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type MakeGenericType(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.MakeGenericType(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -2389,7 +2389,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetInterfaceConstraints">
-      <MemberSignature Language="C#" Value="public void SetInterfaceConstraints (Type[] interfaceConstraints);" />
+      <MemberSignature Language="C#" Value="public void SetInterfaceConstraints (params Type[] interfaceConstraints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInterfaceConstraints(class System.Type[] interfaceConstraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.GenericTypeParameterBuilder.SetInterfaceConstraints(System.Type[])" />
       <MemberType>Method</MemberType>

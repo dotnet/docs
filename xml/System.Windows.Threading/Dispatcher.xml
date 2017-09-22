@@ -89,7 +89,7 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="BeginInvoke">
-      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperation BeginInvoke (Delegate method, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperation BeginInvoke (Delegate method, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Threading.DispatcherOperation BeginInvoke(class System.Delegate method, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.BeginInvoke(System.Delegate,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -216,7 +216,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
-      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperation BeginInvoke (Delegate method, System.Windows.Threading.DispatcherPriority priority, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperation BeginInvoke (Delegate method, System.Windows.Threading.DispatcherPriority priority, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Threading.DispatcherOperation BeginInvoke(class System.Delegate method, valuetype System.Windows.Threading.DispatcherPriority priority, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.BeginInvoke(System.Delegate,System.Windows.Threading.DispatcherPriority,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -349,7 +349,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
-      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperation BeginInvoke (System.Windows.Threading.DispatcherPriority priority, Delegate method, object arg, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperation BeginInvoke (System.Windows.Threading.DispatcherPriority priority, Delegate method, object arg, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Threading.DispatcherOperation BeginInvoke(valuetype System.Windows.Threading.DispatcherPriority priority, class System.Delegate method, object arg, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority,System.Delegate,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -803,7 +803,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(class System.Delegate method, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.Invoke(System.Delegate,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -922,7 +922,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, TimeSpan timeout, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, TimeSpan timeout, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(class System.Delegate method, valuetype System.TimeSpan timeout, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.Invoke(System.Delegate,System.TimeSpan,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -963,7 +963,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, System.Windows.Threading.DispatcherPriority priority, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, System.Windows.Threading.DispatcherPriority priority, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(class System.Delegate method, valuetype System.Windows.Threading.DispatcherPriority priority, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.Invoke(System.Delegate,System.Windows.Threading.DispatcherPriority,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1130,7 +1130,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, TimeSpan timeout, System.Windows.Threading.DispatcherPriority priority, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, TimeSpan timeout, System.Windows.Threading.DispatcherPriority priority, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(class System.Delegate method, valuetype System.TimeSpan timeout, valuetype System.Windows.Threading.DispatcherPriority priority, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.Invoke(System.Delegate,System.TimeSpan,System.Windows.Threading.DispatcherPriority,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1173,7 +1173,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (System.Windows.Threading.DispatcherPriority priority, Delegate method, object arg, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (System.Windows.Threading.DispatcherPriority priority, Delegate method, object arg, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(valuetype System.Windows.Threading.DispatcherPriority priority, class System.Delegate method, object arg, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority,System.Delegate,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1285,7 +1285,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (System.Windows.Threading.DispatcherPriority priority, TimeSpan timeout, Delegate method, object arg, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (System.Windows.Threading.DispatcherPriority priority, TimeSpan timeout, Delegate method, object arg, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(valuetype System.Windows.Threading.DispatcherPriority priority, valuetype System.TimeSpan timeout, class System.Delegate method, object arg, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority,System.TimeSpan,System.Delegate,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>

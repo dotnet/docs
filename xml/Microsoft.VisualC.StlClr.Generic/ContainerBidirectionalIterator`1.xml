@@ -205,7 +205,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@)" />
       <MemberType>Method</MemberType>
@@ -214,7 +214,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -227,7 +227,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -236,7 +236,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -327,7 +327,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@)" />
       <MemberType>Method</MemberType>
@@ -336,7 +336,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -349,7 +349,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -358,7 +358,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />

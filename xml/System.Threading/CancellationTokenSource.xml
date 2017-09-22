@@ -368,7 +368,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateLinkedTokenSource">
-      <MemberSignature Language="C#" Value="public static System.Threading.CancellationTokenSource CreateLinkedTokenSource (System.Threading.CancellationToken[] tokens);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.CancellationTokenSource CreateLinkedTokenSource (params System.Threading.CancellationToken[] tokens);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.CancellationTokenSource CreateLinkedTokenSource(valuetype System.Threading.CancellationToken[] tokens) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken[])" />
       <MemberType>Method</MemberType>

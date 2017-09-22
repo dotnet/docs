@@ -128,7 +128,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AggregateException (Exception[] innerExceptions);" />
+      <MemberSignature Language="C#" Value="public AggregateException (params Exception[] innerExceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception[] innerExceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AggregateException.#ctor(System.Exception[])" />
       <MemberType>Constructor</MemberType>
@@ -340,7 +340,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AggregateException (string message, Exception[] innerExceptions);" />
+      <MemberSignature Language="C#" Value="public AggregateException (string message, params Exception[] innerExceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception[] innerExceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AggregateException.#ctor(System.String,System.Exception[])" />
       <MemberType>Constructor</MemberType>

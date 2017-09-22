@@ -1261,7 +1261,7 @@
       </Docs>
     </Member>
     <Member MemberName="FindInFiles">
-      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; FindInFiles (string directory, string containsText, bool ignoreCase, Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] fileWildcards);" />
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; FindInFiles (string directory, string containsText, bool ignoreCase, Microsoft.VisualBasic.FileIO.SearchOption searchType, params string[] fileWildcards);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; FindInFiles(string directory, string containsText, bool ignoreCase, valuetype Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] fileWildcards) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.FindInFiles(System.String,System.String,System.Boolean,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -1384,7 +1384,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetDirectories">
-      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetDirectories (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards);" />
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetDirectories (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, params string[] wildcards);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; GetDirectories(string directory, valuetype Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetDirectories(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -1654,7 +1654,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetFiles">
-      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetFiles (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards);" />
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; GetFiles (string directory, Microsoft.VisualBasic.FileIO.SearchOption searchType, params string[] wildcards);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; GetFiles(string directory, valuetype Microsoft.VisualBasic.FileIO.SearchOption searchType, string[] wildcards) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2378,7 +2378,7 @@
       </Docs>
     </Member>
     <Member MemberName="OpenTextFieldParser">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, int[] fieldWidths);" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, params int[] fieldWidths);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser(string file, int32[] fieldWidths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.OpenTextFieldParser(System.String,System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -2440,7 +2440,7 @@
       </Docs>
     </Member>
     <Member MemberName="OpenTextFieldParser">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, string[] delimiters);" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser (string file, params string[] delimiters);" />
       <MemberSignature Language="ILAsm" Value=".method public instance class Microsoft.VisualBasic.FileIO.TextFieldParser OpenTextFieldParser(string file, string[] delimiters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.FileSystemProxy.OpenTextFieldParser(System.String,System.String[])" />
       <MemberType>Method</MemberType>

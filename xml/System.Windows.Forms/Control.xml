@@ -1024,7 +1024,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginInvoke (Delegate method, object[] args);" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginInvoke (Delegate method, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginInvoke(class System.Delegate method, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.BeginInvoke(System.Delegate,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5874,7 +5874,7 @@ MyControl.Font = New Font(MyControl.Font, _
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(class System.Delegate method, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.Invoke(System.Delegate,System.Object[])" />
       <MemberType>Method</MemberType>

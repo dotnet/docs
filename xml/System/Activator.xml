@@ -551,7 +551,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, object[] args);" />
+      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Object[])" />
       <MemberType>Method</MemberType>

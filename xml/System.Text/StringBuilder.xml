@@ -1827,7 +1827,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2014,7 +2014,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(class System.IFormatProvider provider, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2493,7 +2493,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2523,7 +2523,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, string[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2553,7 +2553,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2583,7 +2583,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, string[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.String[])" />
       <MemberType>Method</MemberType>

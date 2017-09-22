@@ -293,7 +293,7 @@
       </Docs>
     </Member>
     <Member MemberName="Assert">
-      <MemberSignature Language="C#" Value="public static void Assert (bool condition, string message, string detailMessageFormat, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void Assert (bool condition, string message, string detailMessageFormat, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Assert(bool condition, string message, string detailMessageFormat, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -875,7 +875,7 @@ End of list of errors
       </Docs>
     </Member>
     <Member MemberName="Print">
-      <MemberSignature Language="C#" Value="public static void Print (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void Print (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Print(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debug.Print(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1719,7 +1719,7 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public static void WriteLine (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void WriteLine (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debug.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

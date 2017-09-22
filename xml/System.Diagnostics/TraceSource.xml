@@ -580,7 +580,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public void TraceData (System.Diagnostics.TraceEventType eventType, int id, object[] data);" />
+      <MemberSignature Language="C#" Value="public void TraceData (System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceData(valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -763,7 +763,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public void TraceEvent (System.Diagnostics.TraceEventType eventType, int id, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public void TraceEvent (System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceEvent(valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -890,7 +890,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceInformation">
-      <MemberSignature Language="C#" Value="public void TraceInformation (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public void TraceInformation (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceInformation(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceInformation(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

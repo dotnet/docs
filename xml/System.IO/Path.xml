@@ -196,7 +196,7 @@
       </Docs>
     </Member>
     <Member MemberName="Combine">
-      <MemberSignature Language="C#" Value="public static string Combine (string[] paths);" />
+      <MemberSignature Language="C#" Value="public static string Combine (params string[] paths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string[] paths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.Combine(System.String[])" />
       <MemberType>Method</MemberType>

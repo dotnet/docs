@@ -1013,7 +1013,7 @@
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
-      <MemberSignature Language="C#" Value="public object InvokeMember (string methodName, object[] parameter);" />
+      <MemberSignature Language="C#" Value="public object InvokeMember (string methodName, params object[] parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeMember(string methodName, object[] parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.InvokeMember(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

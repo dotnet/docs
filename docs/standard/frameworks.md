@@ -3,7 +3,7 @@ title: Target frameworks
 description: Learn about target frameworks for .NET Core apps and libraries.
 author: richlander
 ms.author: mairaw
-ms.date: 09/07/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -24,11 +24,11 @@ For package-based target frameworks (for example, .NET Standard and .NET Core), 
 
 The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. 
 
-| Target Framework      | Latest Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version | Metapackage |
-| :-------------------: | :------------: | :----------------------------: | :-------------------------------------: | :---------: |
-| .NET Standard         | 2.0            | netstandard2.0                 | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
-| .NET Core Application | 2.0            | netcoreapp2.0                  | 2.0                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
-| .NET Framework        | 4.7            | net47                          | 2.0                   | N/A |
+| Target Framework      | Latest Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version |
+| :-------------------: | :------------: | :----------------------------: | :-------------------------------------: |
+| .NET Standard         | 2.0            | netstandard2.0                 | N/A                                     |
+| .NET Core Application | 2.0            | netcoreapp2.0                  | 2.0                                     |
+| .NET Framework        | 4.7            | net47                          | 2.0                                     |
 
 ## Supported target framework versions
 

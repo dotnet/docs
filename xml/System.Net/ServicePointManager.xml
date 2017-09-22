@@ -804,6 +804,12 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
  An application can set the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> property to a method to use for custom validation by the client of the server certificate. When doing custom validation, the `sender` parameter passed to the <xref:System.Net.Security.RemoteCertificateValidationCallback> can be a host string name or an object derived from <xref:System.Net.WebRequest> (<xref:System.Net.HttpWebRequest>, for example) depending on the <xref:System.Net.ServicePointManager.CertificatePolicy%2A> property.  
   
  When custom validation is not used, the certificate name is compared with host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of "https://www.contoso.com/default.hmtl", the default behavior is for the client to check the certificate against www.contoso.com.  
+
+ Despite being a multicast delegate, only the value returned from the last executed event handler is considered authoritive. 
+
+ In combination with the <xref:System.Net.ServicePointManager%2A> being a static shared across threads, the callback is an attack vector for malicious
+ code on components using HTTPS based validation to protect intellectual property of the component owner. In such scenarios component
+ developers can instantiate a temporary <xref:System.AppDomain%2A> during security critical phases.
   
  ]]></format>
         </remarks>

@@ -30,4 +30,4 @@ Private image registries, either hosted on-premises or in the cloud, are recomme
 
 >[!div class="step-by-step"]
 [Previous] (docker-terminology.md)
-[Next] (../the-Docker-application-lifecycle/index.md)
+[Next] (../Docker-application-lifecycle/index.md)

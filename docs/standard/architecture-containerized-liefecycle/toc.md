@@ -6,6 +6,17 @@
 ## [Introduction to the Docker application lifecycle](the-Docker-application-lifecycle/index.md)
 ### [Containers as the foundation for DevOps collaboration](the-Docker-application-lifecycle/containers-foundation-for-devops-collaboration.md)
 ## [Introduction to the microsoft platform and tools for containerized apps](the-microsoft-platform-tools-containerized-apps/index.md)
+## [Design and develop containerized apps using docker and microsoft azure](design-develop-containerized-apps/index.md)
+### [Design Docker applications](design-develop-containerized-apps/design-docker-applications.md)
+### [Common container design principles](design-develop-containerized-apps/common-container-design-principles.md)
+### [Monolithic applications](design-develop-containerized-apps/monolithic-applications.md)
+### [State and data in Docker applications](design-develop-containerized-apps/state-and-data-in-docker-applications.md)
+### [SOA applications](design-develop-containerized-apps/soa-applications.md)
+### [Orchestrating microservices and multicontainer applications for high scalability and availability](design-develop-containerized-apps/orchestrat-high-scalability-availability.md)
+### [Development environment for Docker apps](design-develop-containerized-apps/docker-apps-development-environment.md)
+### [Inner-loop development workflow for Docker apps](design-develop-containerized-apps/docker-apps-inner-loop-workflow.md)
+### [Using Visual Studio Tools for Docker (Visual Studio on Windows)](design-develop-containerized-apps/visual-studio-tools-for-docker.md)
+### [Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)](design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
 
 
 

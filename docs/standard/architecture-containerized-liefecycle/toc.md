@@ -23,9 +23,4 @@
 ### [Run composed and microservices-based applications in production environments](run-manage-monitor-docker-environments/run-microservices-based-applications-in-production.md)
 ### [Manage production Docker environments](run-manage-monitor-docker-environments/manage-production-docker-environments.md)
 ### [Monitor containerized application services](run-manage-monitor-docker-environments/monitor-containerized-application-services.md)
-
-
-
-
-
 ## [Key takeaways](key-takeaways/index.md)

@@ -352,7 +352,7 @@
   
  If the <xref:System.Net.WebClient> class is being used in a middle tier application, such as an ASP.NET application, the <xref:System.Net.CredentialCache.DefaultCredentials%2A> belong to the account running the ASP page (the server-side credentials). Typically, you would set this property to the credentials of the client on whose behalf the request is made.  
   
-   
+ For security reasons, when automatically following redirects, store the credentials that you want to be included in the redirect in a <xref:System.Net.CredentialCache> and assign it to this property. This property will automatically be set to `null` upon redirection if it contains anything except a <xref:System.Net.CredentialCache>. Having this property value be automatically set to `null` under those conditions prevents credentials from being sent to any unintended destination.
   
 ## Examples  
  The following code example uses the user's system credentials to authenticate a request.  

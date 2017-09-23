@@ -106,7 +106,7 @@
      [!code-csharp[System.Single.Structure#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/precisionlist4a.cs#17)]
      [!code-vb[System.Single.Structure#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/PrecisionList4a.vb#17)]  
   
-     In this case, the values can be successfully round-tripped by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.  
+     In this case, the values can be successfully round-tripped by using the "G9" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.  
   
      [!code-csharp[System.Single.Structure#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/PrecisionList5a.cs#18)]
      [!code-vb[System.Single.Structure#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/PrecisionList5a.vb#18)]  
@@ -125,7 +125,7 @@
  [!code-csharp[System.Single.Structure#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/comparison1.cs#9)]
  [!code-vb[System.Single.Structure#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/comparison1.vb#9)]  
   
- Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals%28System.Single%29> method indicates that they are not equal. Using the "R" standard format string to return a result string that displays all the significant digits of each <xref:System.Single> value shows that the second value is .0000000000001 less than the first.  
+ Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals%28System.Single%29> method indicates that they are not equal. Using the "G9" standard format string to return a result string that displays all the significant digits of each <xref:System.Single> value shows that the second value is .0000000000001 less than the first.  
   
  [!code-csharp[System.Single.Structure#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/comparison2.cs#10)]
  [!code-vb[System.Single.Structure#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/comparison2.vb#10)]  

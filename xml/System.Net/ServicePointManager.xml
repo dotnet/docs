@@ -807,9 +807,11 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
 
  Despite being a multicast delegate, only the value returned from the last-executed event handler is considered authoritive. 
 
- In combination with the <xref:System.Net.ServicePointManager%2A> being a static shared across threads, the callback is an attack vector for malicious
- code on components using HTTPS-based validation to protect intellectual property of the component owner. In such scenarios component
- developers can instantiate a temporary <xref:System.AppDomain%2A> during security-critical phases.
+ As <xref:System.Net.ServicePointManager> is shared across threads, malicious code 
+ within your application can override the default settings or settings you have explicitly set. 
+ Always use code, libraries, and NuGet packages that you trust in your project. As 
+ a developer of NuGet packages and libraries consider wrapping security-critical code 
+ in a <xref:System.AppDomain%2A>.
   
  ]]></format>
         </remarks>

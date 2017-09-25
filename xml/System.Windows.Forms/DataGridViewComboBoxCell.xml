@@ -20,7 +20,7 @@
   
  Unlike the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.Forms.DataGridViewComboBoxCell> does not have <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> properties. Instead, selecting a value from a drop-down list sets the cell <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property.  
   
- The <xref:System.Windows.Forms.DataGridViewComboBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewComboBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewComboBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ The <xref:System.Windows.Forms.DataGridViewComboBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate%2A?displayProperty=nameWithType> is initialized to a new <xref:System.Windows.Forms.DataGridViewComboBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewComboBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
   
  The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
   
@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically this property will be set for an entire column of cells through the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A?displayProperty=fullName> property.  
+ Typically this property will be set for an entire column of cells through the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A?displayProperty=nameWithType> property.  
   
  If possible, set <xref:System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A> to a source containing only the possible selections, like a column of selections. Then the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayMember%2A> property doesn't need to be set. But if the source is more complicated, set <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayMember%2A> to the name of the property or column from which to retrieve possible selections.  
   
@@ -151,7 +151,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#40)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#40)]
@@ -215,7 +215,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayMember%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayMember%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#40)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#40)]
@@ -325,7 +325,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DropDownWidth%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DropDownWidth%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#40)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#40)]
@@ -394,7 +394,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#40)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#40)]
@@ -429,7 +429,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -529,15 +529,15 @@
   
 -   `value` is present in the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A> or the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A> collection.  
   
--   `value` is `null` or <xref:System.DBNull.Value?displayProperty=fullName>.  
+-   `value` is `null` or <xref:System.DBNull.Value?displayProperty=nameWithType>.  
   
--   `value` is <xref:System.String.Empty?displayProperty=fullName> and the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ValueType%2A> property value represents the <xref:System.String> type.  
+-   `value` is <xref:System.String.Empty?displayProperty=nameWithType> and the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ValueType%2A> property value represents the <xref:System.String> type.  
   
- If `value` is not valid, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If `value` is not valid, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
- If `value` is valid or there is a handler for the <xref:System.Windows.Forms.DataGridView.DataError> event and it does not set the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event occurs.  
+ If `value` is valid or there is a handler for the <xref:System.Windows.Forms.DataGridView.DataError> event and it does not set the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event occurs.  
   
- A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object. This can result in an additional <xref:System.Windows.Forms.DataGridView.DataError> event.  
+ A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object. This can result in an additional <xref:System.Windows.Forms.DataGridView.DataError> event.  
   
  If formatting is successful, this method returns the formatted value for display in the <xref:System.Windows.Forms.DataGridView> control.  
   
@@ -600,7 +600,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewComboBoxCell.InitializeEditingControl%2A> method initializes the hosted <xref:System.Windows.Forms.ComboBox> control as described in the base <xref:System.Windows.Forms.DataGridViewCell.InitializeEditingControl%2A?displayProperty=fullName> method. In addition, for every invocation, <xref:System.Windows.Forms.DataGridViewComboBoxCell.InitializeEditingControl%2A> does the following:  
+ The <xref:System.Windows.Forms.DataGridViewComboBoxCell.InitializeEditingControl%2A> method initializes the hosted <xref:System.Windows.Forms.ComboBox> control as described in the base <xref:System.Windows.Forms.DataGridViewCell.InitializeEditingControl%2A?displayProperty=nameWithType> method. In addition, for every invocation, <xref:System.Windows.Forms.DataGridViewComboBoxCell.InitializeEditingControl%2A> does the following:  
   
 -   Sets the visual properties of the hosted <xref:System.Windows.Forms.ComboBox> control, such as <xref:System.Windows.Forms.ComboBox.MaxDropDownItems%2A>, <xref:System.Windows.Forms.ComboBox.DropDownWidth%2A>, and <xref:System.Windows.Forms.ComboBox.FlatStyle%2A>, to match the corresponding properties of the current cell.  
   
@@ -647,14 +647,14 @@
   
  If the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DataSource%2A> property is set, then the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A> property cannot be used.  
   
- The formatted value of the cell must always be one of the values in the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A> collection or an error will occur and the cell value will revert to the first item in the collection. You can customize this behavior by handling the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> events.  
+ The formatted value of the cell must always be one of the values in the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A> collection or an error will occur and the cell value will revert to the first item in the collection. You can customize this behavior by handling the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> events.  
   
  Setting this property to a value other than the value of the parent column's <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A> property will force the row to become unshared, allocating extra memory. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#30](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#30)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#30)]
@@ -725,7 +725,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.MaxDropDownItems%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.MaxDropDownItems%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#30](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#30)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#30)]
@@ -986,7 +986,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Sorted%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Sorted%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#30](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#30)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#30)]
@@ -1053,7 +1053,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.ValueMember%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.ValueMember%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#40)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#40)]

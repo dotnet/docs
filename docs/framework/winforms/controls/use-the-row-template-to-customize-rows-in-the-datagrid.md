@@ -21,7 +21,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use the Row Template to Customize Rows in the Windows Forms DataGridView Control
-The <xref:System.Windows.Forms.DataGridView> control uses the row template as a basis for all rows that it adds to the control either through data binding or when you call the <xref:System.Windows.Forms.DataGridViewRowCollection.Add%2A?displayProperty=fullName> method without specifying an existing row to use.  
+The <xref:System.Windows.Forms.DataGridView> control uses the row template as a basis for all rows that it adds to the control either through data binding or when you call the <xref:System.Windows.Forms.DataGridViewRowCollection.Add%2A?displayProperty=nameWithType> method without specifying an existing row to use.  
   
  The row template gives you greater control over the appearance and behavior of rows than the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> property provides. With the row template, you can set any <xref:System.Windows.Forms.DataGridViewRow> properties, including <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A>.  
   
@@ -32,7 +32,7 @@ The <xref:System.Windows.Forms.DataGridView> control uses the row template as a 
   
 ### To use the row template  
   
--   Set properties on the object retrieved from the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=fullName> property.  
+-   Set properties on the object retrieved from the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=nameWithType> property.  
   
      [!code-cpp[System.Windows.Forms.DataGridView.RowTemplate#1](../../../../samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.RowTemplate/CPP/datagridviewrowtemplate.cpp#1)]
      [!code-csharp[System.Windows.Forms.DataGridView.RowTemplate#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.RowTemplate/CS/datagridviewrowtemplate.cs#1)]
@@ -43,12 +43,12 @@ The <xref:System.Windows.Forms.DataGridView> control uses the row template as a 
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   
--   References to the <xref:System?displayProperty=fullName>, <xref:System.Drawing?displayProperty=fullName>, and <xref:System.Windows.Forms?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Drawing?displayProperty=nameWithType>, and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
  <xref:System.Windows.Forms.DataGridViewCellStyle>   
  <xref:System.Windows.Forms.DataGridViewRow>   
- <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=nameWithType>   
  [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)   
  [Cell Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md)

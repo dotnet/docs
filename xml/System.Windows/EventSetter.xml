@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Event setters invoke the specified event handlers in response to routed events, which apply to all elements that reference the <xref:System.Windows.Style> rather than requiring you to attach instance handlers to each individual element. Only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> support <xref:System.Windows.EventSetter> objects.  
+ Event setters invoke the specified event handlers in response to routed events, which apply to all elements that reference the <xref:System.Windows.Style> rather than requiring you to attach instance handlers to each individual element. Only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> support <xref:System.Windows.EventSetter> objects.  
   
  You can only declare event setters for events that are routed events. You can declare event setters for routed events with a direct routing strategy, bubbling events, or tunneling events.  
   
@@ -28,7 +28,7 @@
   
  Event setters may also come from <xref:System.Windows.Style.BasedOn%2A> styles. The event setter handlers from the style specified as <xref:System.Windows.Style.BasedOn%2A> will be invoked after the handlers on the immediate style.  
   
- Note that only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects. Triggers (<xref:System.Windows.TriggerBase> and derived classes) do not support <xref:System.Windows.EventSetter>.  
+ Note that only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects. Triggers (<xref:System.Windows.TriggerBase> and derived classes) do not support <xref:System.Windows.EventSetter>.  
   
    
   

@@ -27,13 +27,13 @@
 ## Remarks  
  The <xref:System.Data.NoNullAllowedException> is thrown when invoking the following methods or properties when you try to insert a null value into a column where <xref:System.Data.DataColumn.AllowDBNull%2A> is set to `false`.  
   
--   <xref:System.Data.DataRowCollection.Add%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Add%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataTable.LoadDataRow%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataTable.LoadDataRow%2A?displayProperty=nameWithType>  
   
  ]]></format>
     </remarks>

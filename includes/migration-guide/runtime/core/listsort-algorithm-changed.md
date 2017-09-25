@@ -7,5 +7,5 @@
 |Scope|Transparent|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName></li><li><xref:System.Collections.Generic.List%601.Sort(System.Collections.Generic.IComparer%7B%600%7D)?displayProperty=fullName></li><li><xref:System.Collections.Generic.List%601.Sort(System.Comparison%7B%600%7D)?displayProperty=fullName></li><li><xref:System.Collections.Generic.List%601.Sort(System.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%600%7D)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Collections.Generic.List%601.Sort?displayProperty=nameWithType></li><li><xref:System.Collections.Generic.List%601.Sort(System.Collections.Generic.IComparer%7B%600%7D)?displayProperty=nameWithType></li><li><xref:System.Collections.Generic.List%601.Sort(System.Comparison%7B%600%7D)?displayProperty=nameWithType></li><li><xref:System.Collections.Generic.List%601.Sort(System.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%600%7D)?displayProperty=nameWithType></li></ul>|
 

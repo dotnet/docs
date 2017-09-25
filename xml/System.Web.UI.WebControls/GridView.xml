@@ -128,11 +128,11 @@
   
 <a name="binding_to_data"></a>   
 ## Binding to Data  
- The <xref:System.Web.UI.WebControls.GridView> control can be bound to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, <xref:System.Collections.Generic.List%601?displayProperty=fullName>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.GridView> control to the appropriate data source type:  
+ The <xref:System.Web.UI.WebControls.GridView> control can be bound to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.GridView> control to the appropriate data source type:  
   
 -   To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.GridView> control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The <xref:System.Web.UI.WebControls.GridView> control automatically binds to the specified data source control and can take advantage of the data source control's capabilities to perform sorting, updating, deleting, and paging. This is the preferred method to bind to data.  
   
--   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.GridView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.GridView> control does not provide built-in sort, update, delete, and paging functionality. You need to provide this functionality by using the appropriate event.  
+-   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.GridView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.GridView> control does not provide built-in sort, update, delete, and paging functionality. You need to provide this functionality by using the appropriate event.  
   
  For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
@@ -579,7 +579,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridView> class. To dynamically add a <xref:System.Web.UI.WebControls.GridView> control to a page, create a new <xref:System.Web.UI.WebControls.GridView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridView> class. To dynamically add a <xref:System.Web.UI.WebControls.GridView> control to a page, create a new <xref:System.Web.UI.WebControls.GridView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
   
    
   
@@ -651,7 +651,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Instead of displaying all the records in the data source at the same time, the <xref:System.Web.UI.WebControls.GridView> control can automatically break the records up into pages. If the data source supports the paging capability, the <xref:System.Web.UI.WebControls.GridView> control can take advantage of that and provide built-in paging functionality. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=fullName> interface or a data source that supports paging capability.  
+ Instead of displaying all the records in the data source at the same time, the <xref:System.Web.UI.WebControls.GridView> control can automatically break the records up into pages. If the data source supports the paging capability, the <xref:System.Web.UI.WebControls.GridView> control can take advantage of that and provide built-in paging functionality. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface or a data source that supports paging capability.  
   
  To enable the paging feature, set the <xref:System.Web.UI.WebControls.GridView.AllowPaging%2A> property to `true`. By default, the <xref:System.Web.UI.WebControls.GridView> control displays 10 records on a page at a time. You can change the number of records displayed on a page by setting the <xref:System.Web.UI.WebControls.GridView.PageSize%2A> property. To determine the total number of pages required to display the data source contents, use the <xref:System.Web.UI.WebControls.GridView.PageCount%2A> property. You can determine the index of the currently displayed page by using the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property.  
   
@@ -1444,7 +1444,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In order to use ASP.NET Dynamic Data features in a page, you must add a <xref:System.Web.DynamicData.DynamicDataManager> control to the page. This enables ASP.NET Dynamic Data features for data-bound controls in a page, such as <xref:System.Web.UI.WebControls.GridView> control. To enable an individual <xref:System.Web.UI.WebControls.GridView> control to use Dynamic Data features, you must associate it with the <xref:System.Web.DynamicData.DynamicDataManager> control by calling the <xref:System.Web.DynamicData.DynamicDataManager.RegisterControl%2A?displayProperty=fullName> method during the `Page_Init` event. This method automatically sets the <xref:System.Web.UI.WebControls.GridView.ColumnsGenerator%2A> property to the <xref:System.Web.DynamicData.DynamicDataManager> object.  
+ In order to use ASP.NET Dynamic Data features in a page, you must add a <xref:System.Web.DynamicData.DynamicDataManager> control to the page. This enables ASP.NET Dynamic Data features for data-bound controls in a page, such as <xref:System.Web.UI.WebControls.GridView> control. To enable an individual <xref:System.Web.UI.WebControls.GridView> control to use Dynamic Data features, you must associate it with the <xref:System.Web.DynamicData.DynamicDataManager> control by calling the <xref:System.Web.DynamicData.DynamicDataManager.RegisterControl%2A?displayProperty=nameWithType> method during the `Page_Init` event. This method automatically sets the <xref:System.Web.UI.WebControls.GridView.ColumnsGenerator%2A> property to the <xref:System.Web.DynamicData.DynamicDataManager> object.  
   
  ]]></format>
         </remarks>
@@ -2743,37 +2743,37 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.IsBindableType%2A> method is a helper method that is commonly used by control developers to programmatically determine whether the specified data type can be bound to a column in a <xref:System.Web.UI.WebControls.GridView> control. The following data types can be bound to a column in a <xref:System.Web.UI.WebControls.GridView> control:  
   
--   <xref:System.Boolean?displayProperty=fullName>  
+-   <xref:System.Boolean?displayProperty=nameWithType>  
   
--   <xref:System.Byte?displayProperty=fullName>  
+-   <xref:System.Byte?displayProperty=nameWithType>  
   
--   <xref:System.Char?displayProperty=fullName>  
+-   <xref:System.Char?displayProperty=nameWithType>  
   
--   <xref:System.DateTime?displayProperty=fullName>  
+-   <xref:System.DateTime?displayProperty=nameWithType>  
   
--   <xref:System.Decimal?displayProperty=fullName>  
+-   <xref:System.Decimal?displayProperty=nameWithType>  
   
--   <xref:System.Double?displayProperty=fullName>  
+-   <xref:System.Double?displayProperty=nameWithType>  
   
--   <xref:System.Guid?displayProperty=fullName>  
+-   <xref:System.Guid?displayProperty=nameWithType>  
   
--   <xref:System.Int16?displayProperty=fullName>  
+-   <xref:System.Int16?displayProperty=nameWithType>  
   
--   <xref:System.Int32?displayProperty=fullName>  
+-   <xref:System.Int32?displayProperty=nameWithType>  
   
--   <xref:System.Int64?displayProperty=fullName>  
+-   <xref:System.Int64?displayProperty=nameWithType>  
   
--   <xref:System.SByte?displayProperty=fullName>  
+-   <xref:System.SByte?displayProperty=nameWithType>  
   
--   <xref:System.Single?displayProperty=fullName>  
+-   <xref:System.Single?displayProperty=nameWithType>  
   
--   <xref:System.String?displayProperty=fullName>  
+-   <xref:System.String?displayProperty=nameWithType>  
   
--   <xref:System.UInt16?displayProperty=fullName>  
+-   <xref:System.UInt16?displayProperty=nameWithType>  
   
--   <xref:System.UInt32?displayProperty=fullName>  
+-   <xref:System.UInt32?displayProperty=nameWithType>  
   
--   <xref:System.UInt64?displayProperty=fullName>  
+-   <xref:System.UInt64?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -2801,7 +2801,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to load the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property is set to `false`.  
+ This method is used to load the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property is set to `false`.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.GridView> control.  
@@ -2864,7 +2864,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.GridView.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=fullName> method to pass events from child controls to the page hierarchy.  
+ The <xref:System.Web.UI.WebControls.GridView.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=nameWithType> method to pass events from child controls to the page hierarchy.  
   
  ]]></format>
         </remarks>
@@ -4089,7 +4089,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.GridView.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.GridView.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType> object.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.GridView> control.  
@@ -4630,7 +4630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to save the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property is set to `false`.  
+ This method is used to save the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property is set to `false`.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.GridView> control.  

@@ -555,7 +555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeView.%23ctor%2A> constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TreeView> class. To add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically, create a new <xref:System.Web.UI.WebControls.TreeView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
+ Use the <xref:System.Web.UI.WebControls.TreeView.%23ctor%2A> constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TreeView> class. To add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically, create a new <xref:System.Web.UI.WebControls.TreeView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
   
    
   
@@ -874,7 +874,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView> control does not support embedding of child controls. This method has been overridden to prevent the addition of child controls and always returns an <xref:System.Web.UI.EmptyControlCollection?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.TreeView> control does not support embedding of child controls. This method has been overridden to prevent the addition of child controls and always returns an <xref:System.Web.UI.EmptyControlCollection?displayProperty=nameWithType> object.  
   
  ]]></format>
         </remarks>
@@ -2527,7 +2527,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The page passes the value of the `eventArgument` parameter to the <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> method of the control that implements the <xref:System.Web.UI.IPostBackEventHandler?displayProperty=fullName> interface. This <xref:System.Web.UI.WebControls.TreeView> control also renders the HTML element that causes the postback event to occur. If the control renders client-side script to post back to the server, the argument from the script is passed in the `eventArgument` parameter. If the postback event is caused by a simple submit to the server, the `eventArgument` parameter is `null`.  
+ The page passes the value of the `eventArgument` parameter to the <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> method of the control that implements the <xref:System.Web.UI.IPostBackEventHandler?displayProperty=nameWithType> interface. This <xref:System.Web.UI.WebControls.TreeView> control also renders the HTML element that causes the postback event to occur. If the control renders client-side script to post back to the server, the argument from the script is passed in the `eventArgument` parameter. If the postback event is caused by a simple submit to the server, the `eventArgument` parameter is `null`.  
   
  The <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> method provides the functionality for many events that are implemented by HTML and Web server controls.  
   

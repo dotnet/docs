@@ -186,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method overrides the base class's <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A?displayProperty=fullName> method and sets the value of the <xref:System.Web.UI.TemplateBuilder.Text%2A> property.  
+ The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method overrides the base class's <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A?displayProperty=nameWithType> method and sets the value of the <xref:System.Web.UI.TemplateBuilder.Text%2A> property.  
   
  ]]></format>
         </remarks>

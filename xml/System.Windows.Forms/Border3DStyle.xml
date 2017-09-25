@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A?displayProperty=fullName> method and the <xref:System.Windows.Forms.Border3DStyle> enumeration. To run this example paste the following code in a form that imports the System.Windows.Forms and System.Drawing namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event-handling method in this example.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A?displayProperty=nameWithType> method and the <xref:System.Windows.Forms.Border3DStyle> enumeration. To run this example paste the following code in a form that imports the System.Windows.Forms and System.Drawing namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event-handling method in this example.  
   
  [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CS/form1.cs#2)]

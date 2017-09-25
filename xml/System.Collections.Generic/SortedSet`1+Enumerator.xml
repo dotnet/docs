@@ -57,7 +57,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  ]]></format>
     </remarks>

@@ -73,7 +73,7 @@ HRESULT SetPriority (
   
 -   THREAD_PRIORITY_TIME_CRITICAL  
   
- The CLR calls `SetPriority` when the value of the <xref:System.Threading.Thread.Priority%2A?displayProperty=fullName> is modified by user code. A host can define its own algorithms for thread priority assignment, and is free to ignore this request.  
+ The CLR calls `SetPriority` when the value of the <xref:System.Threading.Thread.Priority%2A?displayProperty=nameWithType> is modified by user code. A host can define its own algorithms for thread priority assignment, and is free to ignore this request.  
   
 > [!NOTE]
 >  `SetPriority` does not report whether the thread priority level was changed. Call [IHostTask::GetPriority](../../../../docs/framework/unmanaged-api/hosting/ihosttask-getpriority-method.md) to determine the value of the task's thread priority level.  

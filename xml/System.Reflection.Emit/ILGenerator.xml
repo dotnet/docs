@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Reflection.Emit.ILGenerator> is used to generate method bodies for methods and constructors in dynamic assemblies (represented by the <xref:System.Reflection.Emit.MethodBuilder> and <xref:System.Reflection.Emit.ConstructorBuilder> classes) and for standalone dynamic methods (represented by the <xref:System.Reflection.Emit.DynamicMethod> class). To obtain an <xref:System.Reflection.Emit.ILGenerator>, use the <xref:System.Reflection.Emit.ConstructorBuilder.GetILGenerator%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.MethodBuilder.GetILGenerator%2A?displayProperty=fullName> methods.  
+ <xref:System.Reflection.Emit.ILGenerator> is used to generate method bodies for methods and constructors in dynamic assemblies (represented by the <xref:System.Reflection.Emit.MethodBuilder> and <xref:System.Reflection.Emit.ConstructorBuilder> classes) and for standalone dynamic methods (represented by the <xref:System.Reflection.Emit.DynamicMethod> class). To obtain an <xref:System.Reflection.Emit.ILGenerator>, use the <xref:System.Reflection.Emit.ConstructorBuilder.GetILGenerator%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Emit.MethodBuilder.GetILGenerator%2A?displayProperty=nameWithType> methods.  
   
  MSIL is used as input to a just-in-time (JIT) compiler.  
   
@@ -955,7 +955,7 @@
   
  The location of `meth` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
   
- If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=fullName> property must be `true`.  
+ If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=nameWithType> property must be `true`.  
   
  ]]></format>
         </remarks>
@@ -1255,7 +1255,7 @@
 ## Remarks  
  Use <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
   
- If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=fullName> flag.  
+ If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=nameWithType> flag.  
   
  ]]></format>
         </remarks>
@@ -1291,7 +1291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of `localBuilder` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+ The type of `localBuilder` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -1341,7 +1341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of `fld` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+ The type of `fld` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method.  
   
    
   

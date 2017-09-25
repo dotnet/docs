@@ -38,7 +38,7 @@
  The classes associated with the <xref:System.DirectoryServices.DirectoryEntry> component can be used with any of the Active Directory Domain Services service providers. Some of the current providers are Internet Information Services (IIS), Lightweight Directory Access Protocol (LDAP), Novell NetWare Directory Service (NDS), and WinNT.  
   
 > [!NOTE]
->  It is assumed that you have a general understanding of Active Directory Domain Services before using this class. For more information, see the <xref:System.DirectoryServices?displayProperty=fullName> namespace overview.  
+>  It is assumed that you have a general understanding of Active Directory Domain Services before using this class. For more information, see the <xref:System.DirectoryServices?displayProperty=nameWithType> namespace overview.  
   
  ]]></format>
     </remarks>
@@ -484,7 +484,7 @@ int main()
   
 ## Security  
   
--   Use <xref:System.DirectoryServices.DirectoryServicesPermission> for deleting entries from the Active Directory Domain Services hierarchy. Associated enumeration: <xref:System.DirectoryServices.DirectoryServicesPermissionAccess?displayProperty=fullName>.  
+-   Use <xref:System.DirectoryServices.DirectoryServicesPermission> for deleting entries from the Active Directory Domain Services hierarchy. Associated enumeration: <xref:System.DirectoryServices.DirectoryServicesPermissionAccess?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1061,7 +1061,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
 ## Remarks  
  Use this property to cast the native Active Directory Domain Services object, which implements the IADs interface, when you want to use a COM interface. For more information about the IADs interface, see the topic [IADs](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
   
- This object is for advanced scenarios that cannot be accomplished with the <xref:System.DirectoryServices?displayProperty=fullName> classes alone. To use it, you need to import one of the COM interfaces from the IADs family, then cast this property to that interface.  
+ This object is for advanced scenarios that cannot be accomplished with the <xref:System.DirectoryServices?displayProperty=nameWithType> classes alone. To use it, you need to import one of the COM interfaces from the IADs family, then cast this property to that interface.  
   
  ]]></format>
         </remarks>

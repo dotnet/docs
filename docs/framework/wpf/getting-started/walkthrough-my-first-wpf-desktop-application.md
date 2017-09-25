@@ -223,7 +223,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 -   <xref:System.Windows.Controls.Button> (to click to view the expense report for the person that is selected in the list). 
   
- Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=fullName> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md). 
+ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md). 
   
 1. Open ExpenseItHome.xaml. 
   
@@ -250,7 +250,7 @@ For more information about installing the latest version of Visual Studio, see [
   
     [!code-xaml[ExpenseIt#11b](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt5/ExpenseItHome.xaml#11b)]  
   
-4. Move the controls to the second column by setting <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=fullName> to 1. Move each control down a row, by increasing the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=fullName> by 1. 
+4. Move the controls to the second column by setting <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> to 1. Move each control down a row, by increasing the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> by 1. 
   
     [!code-xaml[ExpenseIt#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt5/ExpenseItHome.xaml#12)]  
   
@@ -312,7 +312,7 @@ For more information about installing the latest version of Visual Studio, see [
   
 1. Open Application.xaml or App.xaml. 
   
-2. Add the following XAML between the <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> tags:  
+2. Add the following XAML between the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> tags:  
   
     [!code-xaml[ExpenseIt#18](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt7/App.xaml#18)]  
   
@@ -330,7 +330,7 @@ For more information about installing the latest version of Visual Studio, see [
   
     -  `buttonStyle`: To format the <xref:System.Windows.Controls.Button> on ExpenseItHome.xaml. 
   
-     Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md). 
+     Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] application, see [Use Application Resources](../../../../docs/framework/wpf/advanced/how-to-use-application-resources.md). 
   
 3. Open ExpenseItHome.xaml. 
   

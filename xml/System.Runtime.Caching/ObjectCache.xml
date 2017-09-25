@@ -545,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.GetValues%2A?displayProperty=fullName> method overload is like the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload, but lets you pass the named region by using optional parameter syntax that is supported by managed languages such as C#.  
+ The <xref:System.Runtime.Caching.ObjectCache.GetValues%2A?displayProperty=nameWithType> method overload is like the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload, but lets you pass the named region by using optional parameter syntax that is supported by managed languages such as C#.  
   
  This method is a virtual method because the <xref:System.Runtime.Caching.ObjectCache> class provides a default implementation that passes the `params` array to the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload.  
   

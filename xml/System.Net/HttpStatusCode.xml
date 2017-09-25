@@ -29,7 +29,7 @@
 ## Remarks  
  The <xref:System.Net.HttpStatusCode> enumeration contains the values of the status codes defined in RFC 2616 for HTTP 1.1.  
   
- The status of an HTTP request is contained in the <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=fullName> property.  
+ The status of an HTTP request is contained in the <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, Ambiguous will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Ambiguous will cause an exception to be thrown.  
   
  Ambiguous is a synonym for MultipleChoices.  
   
@@ -336,7 +336,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, Found will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Found will cause an exception to be thrown.  
   
  Found is a synonym for Redirect.  
   
@@ -614,7 +614,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, MultipleChoices will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, MultipleChoices will cause an exception to be thrown.  
   
  MultipleChoices is a synonym for Ambiguous.  
   
@@ -960,7 +960,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, Redirect will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Redirect will cause an exception to be thrown.  
   
  Redirect is a synonym for Found.  
   
@@ -998,7 +998,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, RedirectKeepVerb will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, RedirectKeepVerb will cause an exception to be thrown.  
   
  RedirectKeepVerb is a synonym for TemporaryRedirect.  
   
@@ -1036,7 +1036,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, RedirectMethod will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, RedirectMethod will cause an exception to be thrown.  
   
  RedirectMethod is a synonym for SeeOther.  
   
@@ -1214,7 +1214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, SeeOther will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, SeeOther will cause an exception to be thrown.  
   
  SeeOther is a synonym for RedirectMethod.  
   
@@ -1308,7 +1308,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=fullName> property is `false`, TemporaryRedirect will cause an exception to be thrown.  
+ If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, TemporaryRedirect will cause an exception to be thrown.  
   
  TemporaryRedirect is a synonym for RedirectKeepVerb.  
   

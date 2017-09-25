@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=fullName> attached property specifies the amount of space in which a <xref:System.Windows.Controls.VirtualizingPanel> virtualizes the items before or after the view port (the area in which items are visible).  You can specify uniform cache length my creating a <xref:System.Windows.Controls.VirtualizationCacheLength> by using the constructor that takes a single parameter.  You can use the constructor that takes two parameters to specify different values for the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
+ The <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=nameWithType> attached property specifies the amount of space in which a <xref:System.Windows.Controls.VirtualizingPanel> virtualizes the items before or after the view port (the area in which items are visible).  You can specify uniform cache length my creating a <xref:System.Windows.Controls.VirtualizationCacheLength> by using the constructor that takes a single parameter.  You can use the constructor that takes two parameters to specify different values for the <xref:System.Windows.Controls.VirtualizationCacheLength.CacheBeforeViewport%2A> and <xref:System.Windows.Controls.VirtualizationCacheLength.CacheAfterViewport%2A> properties.  
   
  ]]></format>
     </remarks>

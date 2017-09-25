@@ -56,7 +56,7 @@ This article provides tips for improving the performance of large .NET Framework
 ### Boxing  
  [Boxing](~/docs/csharp/programming-guide/types/boxing-and-unboxing.md) occurs when value types that normally live on the stack or in data structures are wrapped in an object.  That is, you allocate an object to hold the data, and then return a pointer to the object.  The .NET Framework sometimes boxes values due to the signature of a method or the type of a storage location.  Wrapping a value type in an object causes memory allocation.  Many boxing operations can contribute megabytes or gigabytes of allocations to your app, which means that your app will cause more GCs. The .NET Framework and the language compilers avoid boxing when possible, but sometimes it happens when you least expect it.  
   
- To see boxing in PerfView, open a trace and look at GC Heap Alloc Stacks under your app’s process name (remember, PerfView reports on all processes).  If you see types like <xref:System.Int32?displayProperty=fullName> and <xref:System.Char?displayProperty=fullName> under allocations, you are boxing value types.  Choosing one of these types will show the stacks and functions in which they are boxed.  
+ To see boxing in PerfView, open a trace and look at GC Heap Alloc Stacks under your app’s process name (remember, PerfView reports on all processes).  If you see types like <xref:System.Int32?displayProperty=nameWithType> and <xref:System.Char?displayProperty=nameWithType> under allocations, you are boxing value types.  Choosing one of these types will show the stacks and functions in which they are boxed.  
   
  **Example 1: string methods and value type arguments**  
   
@@ -129,7 +129,7 @@ public class BoxingExample
 ((int)color).GetHashCode()  
 ```  
   
- Another common source of boxing on enumeration types is the <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=fullName> method.  The argument passed to <xref:System.Enum.HasFlag%28System.Enum%29> has to be boxed.  In most cases, replacing calls to <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=fullName> with a bitwise test is simpler and allocation-free.  
+ Another common source of boxing on enumeration types is the <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=nameWithType> method.  The argument passed to <xref:System.Enum.HasFlag%28System.Enum%29> has to be boxed.  In most cases, replacing calls to <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=nameWithType> with a bitwise test is simpler and allocation-free.  
   
  Keep the first performance fact in mind (that is, don’t prematurely optimize) and don’t start rewriting all your code in this way.    Be aware of these boxing costs, but change your code only after profiling your app and finding the hot spots.  
   
@@ -328,7 +328,7 @@ var predicate = new Func<Symbol, bool>(l.Evaluate);
   
  The two `new` allocations (one for the environment class and one for the delegate) are explicit now.  
   
- Now look at the call to `FirstOrDefault`. This extension method on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> type incurs an allocation too.  Because `FirstOrDefault` takes an <xref:System.Collections.Generic.IEnumerable%601> object as its first argument, you can expand the call to the following code (simplified a bit for discussion):  
+ Now look at the call to `FirstOrDefault`. This extension method on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> type incurs an allocation too.  Because `FirstOrDefault` takes an <xref:System.Collections.Generic.IEnumerable%601> object as its first argument, you can expand the call to the following code (simplified a bit for discussion):  
   
 ```csharp  
 // Expanded return symbols.FirstOrDefault(predicate) ...  

@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.ConstraintCollection> is accessed through the <xref:System.Data.DataTable.Constraints%2A?displayProperty=fullName> property.  
+ The <xref:System.Data.ConstraintCollection> is accessed through the <xref:System.Data.DataTable.Constraints%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Data.ConstraintCollection> can contain both <xref:System.Data.UniqueConstraint> and <xref:System.Data.ForeignKeyConstraint> objects for the <xref:System.Data.DataTable>. A <xref:System.Data.UniqueConstraint> object makes sure that data in a specific column is always unique to preserve the data integrity. The <xref:System.Data.ForeignKeyConstraint> determines what will occur in related tables when data in the <xref:System.Data.DataTable> is either updated or deleted. For example, if a row is deleted, the <xref:System.Data.ForeignKeyConstraint> will determine whether the related rows are also deleted (a cascade), or some other course of action.  
   

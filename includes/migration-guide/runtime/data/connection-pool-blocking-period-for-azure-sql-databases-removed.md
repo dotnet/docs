@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.6.2|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=fullName></li><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=fullName></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType></li></ul>|
 

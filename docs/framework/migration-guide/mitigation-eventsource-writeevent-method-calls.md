@@ -16,7 +16,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Mitigation: EventSource.WriteEvent Method Calls
-The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] enforces a contract between an ETW event method in a class that is derived from <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName> and  the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method of its base class. The ETW event method must pass the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method the event ID followed by the same arguments that were passed to the event method.  
+The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] enforces a contract between an ETW event method in a class that is derived from <xref:System.Diagnostics.Tracing.EventSource?displayProperty=nameWithType> and  the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method of its base class. The ETW event method must pass the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method the event ID followed by the same arguments that were passed to the event method.  
   
 ## Impact  
  An ETW event method defined in the following way breaks the contract:  

@@ -215,7 +215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method calls the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method to generate the markup for the design-time rendering of the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A?displayProperty=fullName> method also populates `regions` with a <xref:System.Web.UI.Design.DesignerRegion> object for each clickable or selectable region of the design-time rendering.  
+ The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType> method calls the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType> method to generate the markup for the design-time rendering of the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml%2A?displayProperty=nameWithType> method also populates `regions` with a <xref:System.Web.UI.Design.DesignerRegion> object for each clickable or selectable region of the design-time rendering.  
   
  For the <xref:System.Web.UI.WebControls.DetailsView>, the first cell in each row is selectable; all the cells in the rows are clickable.  
   
@@ -368,7 +368,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the `Properties` grid.  
+ Control designers use methods derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the `Properties` grid.  
   
  For the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.Design.WebControls.DetailsViewDesigner.PreFilterProperties%2A> method sets the <xref:System.ComponentModel.BrowsableAttribute> object of the <xref:System.Web.UI.WebControls.DetailsView.Fields%2A> property to `false` when the control is in template mode. This ensures that a column that is in template mode cannot be deleted using the `Fields` dialog box.  
   

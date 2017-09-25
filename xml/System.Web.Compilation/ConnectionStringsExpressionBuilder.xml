@@ -211,7 +211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.ConfigurationManager.ConnectionStrings%2A?displayProperty=fullName> property returns a collection of connection string values. The <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName%2A> method returns the provider for the value from this collection that is associated with the connection string name.  
+ The <xref:System.Configuration.ConfigurationManager.ConnectionStrings%2A?displayProperty=nameWithType> property returns a collection of connection string values. The <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName%2A> method returns the provider for the value from this collection that is associated with the connection string name.  
   
  ]]></format>
         </remarks>

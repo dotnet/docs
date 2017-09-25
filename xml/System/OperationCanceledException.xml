@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the task that was canceled had an associated cancellation token, it is returned by the <xref:System.OperationCanceledException.CancellationToken%2A> property, and the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token is set to `true`.  
+ If the task that was canceled had an associated cancellation token, it is returned by the <xref:System.OperationCanceledException.CancellationToken%2A> property, and the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=nameWithType> property of the token is set to `true`.  
   
  ]]></format>
     </remarks>
@@ -378,7 +378,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the token is associated with a canceled operation, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token returns `true`.  
+ If the token is associated with a canceled operation, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=nameWithType> property of the token returns `true`.  
   
  ]]></format>
         </remarks>

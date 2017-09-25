@@ -28,7 +28,7 @@ manager: "wpickett"
 This section describes the standard exceptions provided by the Framework and the details of their usage. The list is by no means exhaustive. Please refer to the .NET Framework reference documentation for usage of other Framework exception types.  
   
 ## Exception and SystemException  
- **X DO NOT** throw <xref:System.Exception?displayProperty=fullName> or <xref:System.SystemException?displayProperty=fullName>.  
+ **X DO NOT** throw <xref:System.Exception?displayProperty=nameWithType> or <xref:System.SystemException?displayProperty=nameWithType>.  
   
  **X DO NOT** catch `System.Exception` or `System.SystemException` in framework code, unless you intend to rethrow.  
   

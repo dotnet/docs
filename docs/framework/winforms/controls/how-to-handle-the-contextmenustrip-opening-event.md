@@ -32,7 +32,7 @@ You can customize the behavior of your <xref:System.Windows.Forms.ContextMenuStr
  [!code-csharp[System.Windows.Forms.ToolStrip.Misc#42](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#42)]
  [!code-vb[System.Windows.Forms.ToolStrip.Misc#42](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#42)]  
   
- Set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=fullName> property to `true` to prevent the menu from opening.  
+ Set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=nameWithType> property to `true` to prevent the menu from opening.  
   
 ## See Also  
  <xref:System.Windows.Forms.ContextMenuStrip>   

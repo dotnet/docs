@@ -150,7 +150,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -199,7 +199,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -399,7 +399,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Media.Imaging.CroppedBitmap> with a <xref:System.Windows.Media.Imaging.CroppedBitmap.SourceRect%2A> set to <xref:System.Windows.Int32Rect.Empty%2A?displayProperty=fullName> will render the entire image.  
+ A <xref:System.Windows.Media.Imaging.CroppedBitmap> with a <xref:System.Windows.Media.Imaging.CroppedBitmap.SourceRect%2A> set to <xref:System.Windows.Int32Rect.Empty%2A?displayProperty=nameWithType> will render the entire image.  
   
  A rectangle that is not fully within the bounds of the bitmap will not render.  
   

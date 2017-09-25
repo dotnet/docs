@@ -27,7 +27,7 @@
 ## Remarks  
  This class also contains methods to get the post-schema-validation infoset (PSVI) of a validated XML node.  
   
- When you validate an <xref:System.Xml.Linq.XDocument>, <xref:System.Xml.Linq.XElement>, or <xref:System.Xml.Linq.XAttribute>, you can also optionally populate the XML tree with the post-schema-validation infoset. PSVI information is added as an annotation of type <xref:System.Xml.Schema.XmlSchemaInfo?displayProperty=fullName>.  
+ When you validate an <xref:System.Xml.Linq.XDocument>, <xref:System.Xml.Linq.XElement>, or <xref:System.Xml.Linq.XAttribute>, you can also optionally populate the XML tree with the post-schema-validation infoset. PSVI information is added as an annotation of type <xref:System.Xml.Schema.XmlSchemaInfo?displayProperty=nameWithType>.  
   
    
   
@@ -821,7 +821,7 @@ lang did not validate
   
  There are two steps to populating the XML tree with the PSVI.  
   
-1.  First, an annotation is added to all nodes in the tree to enable you to call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=fullName> or <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=fullName> on an element or attribute in the tree.  
+1.  First, an annotation is added to all nodes in the tree to enable you to call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=nameWithType> or <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=nameWithType> on an element or attribute in the tree.  
   
 2.  Second, default elements and attributes defined in the XSD are added to the XML tree. By calling one of the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> methods, you can determine if a specific element or attribute was added from the XSD as a default element or attribute.  
   
@@ -1410,7 +1410,7 @@ child1 did not validate
 ## Remarks  
  You can use this method to validate that an <xref:System.Xml.Linq.XAttribute> conforms to a schema. You typically use this method when you have modified an attribute, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate just the attribute.  
   
- If `addSchemaInfo` is `true`, this method populates the attribute with the post-schema-validation infoset (PSVI). After you have populated the XML tree with the PSVI, you can call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=fullName> on the validated attribute. This is useful if you are writing code that relies on data returned by <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A>.  
+ If `addSchemaInfo` is `true`, this method populates the attribute with the post-schema-validation infoset (PSVI). After you have populated the XML tree with the PSVI, you can call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=nameWithType> on the validated attribute. This is useful if you are writing code that relies on data returned by <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A>.  
   
  If you pass `null` for `validationEventHandler`, then this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
   

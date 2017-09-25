@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.6.2|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols?displayProperty=fullName></li><li><xref:System.ServiceModel.TcpTransportSecurity.SslProtocols?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols?displayProperty=nameWithType></li><li><xref:System.ServiceModel.TcpTransportSecurity.SslProtocols?displayProperty=nameWithType></li></ul>|
 

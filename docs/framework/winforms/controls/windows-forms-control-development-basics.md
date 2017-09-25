@@ -22,11 +22,11 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms Control Development Basics
-A Windows Forms control is a class that derives directly or indirectly from <xref:System.Windows.Forms.Control?displayProperty=fullName>. The following list describes common scenarios for developing Windows Forms controls:  
+A Windows Forms control is a class that derives directly or indirectly from <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. The following list describes common scenarios for developing Windows Forms controls:  
   
 -   Combining existing controls to author a composite control.  
   
-     Composite controls encapsulate a user interface that can be reused as a control. An example of a composite control is a control that consists of a text box and a reset button. Visual designers offer rich support for creating composite controls. To author a composite control, derive from <xref:System.Windows.Forms.UserControl?displayProperty=fullName>. The base class <xref:System.Windows.Forms.UserControl> provides keyboard routing for child controls and enables child controls to work as a group. For more information, see [Developing a Composite Windows Forms Control](../../../../docs/framework/winforms/controls/developing-a-composite-windows-forms-control.md).  
+     Composite controls encapsulate a user interface that can be reused as a control. An example of a composite control is a control that consists of a text box and a reset button. Visual designers offer rich support for creating composite controls. To author a composite control, derive from <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>. The base class <xref:System.Windows.Forms.UserControl> provides keyboard routing for child controls and enables child controls to work as a group. For more information, see [Developing a Composite Windows Forms Control](../../../../docs/framework/winforms/controls/developing-a-composite-windows-forms-control.md).  
   
 -   Extending an existing control to customize it or to add to its functionality.  
   

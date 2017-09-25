@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.6.1|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Windows.Forms.Application.FilterMessage(System.Windows.Forms.Message%40)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Forms.Application.FilterMessage(System.Windows.Forms.Message%40)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0144</li></ul>|
 

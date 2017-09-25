@@ -422,7 +422,7 @@
 ## Remarks  
  Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
   
- Lock the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot%2A> method during the entire enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
+ Lock the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot%2A> method during the entire enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -697,7 +697,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>

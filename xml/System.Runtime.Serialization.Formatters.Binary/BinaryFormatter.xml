@@ -120,7 +120,7 @@
 |Property Type|Condition|  
 |-------------------|---------------|  
 |<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.SurrogateSelector%2A>|`null`|  
-|<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Context%2A>|A <xref:System.Runtime.Serialization.StreamingContext> with a value that indicates that serialized data can be transmitted to or received from any of the other contexts. (<xref:System.Runtime.Serialization.StreamingContextStates?displayProperty=fullName>)|  
+|<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Context%2A>|A <xref:System.Runtime.Serialization.StreamingContext> with a value that indicates that serialized data can be transmitted to or received from any of the other contexts. (<xref:System.Runtime.Serialization.StreamingContextStates?displayProperty=nameWithType>)|  
   
    
   
@@ -663,7 +663,7 @@
 ## Remarks  
  Headers are used only for specific remoting applications.  
   
- This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=fullName> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserialize%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A>.  
+ This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserialize%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A>.  
   
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   
@@ -716,7 +716,7 @@
 ## Remarks  
  Details about the caller object are not sent to the remote object during the method call. Instead, these details are obtained from the original method call that is passed to the current method in the `methodCallMessage` parameter.  
   
- This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=fullName> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserializeMethodResponse%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A>.  
+ This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> permission. Do not use this method if your code can be called from partially trusted code. In partially trusted scenarios, use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A> instead. In full trust scenarios, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.UnsafeDeserializeMethodResponse%2A> provides better performance than <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.DeserializeMethodResponse%2A>.  
   
  For successful deserialization, the current position in the stream must be at the beginning of the object graph.  
   

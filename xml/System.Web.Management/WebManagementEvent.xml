@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=nameWithType> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
  The <xref:System.Web.Management.WebManagementEvent> is the base class for all the ASP.NET health-monitoring event types. It uses the <xref:System.Web.Management.WebProcessInformation> class to obtain process information that is available to its derived classes.  
   

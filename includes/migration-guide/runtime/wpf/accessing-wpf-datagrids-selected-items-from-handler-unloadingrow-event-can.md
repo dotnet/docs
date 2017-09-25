@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.Controls.DataGrid.UnloadingRow?displayProperty=fullName></li><li><xref:System.Windows.Controls.DataGrid.UnloadingRowDetails?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Controls.DataGrid.UnloadingRow?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.UnloadingRowDetails?displayProperty=nameWithType></li></ul>|
 

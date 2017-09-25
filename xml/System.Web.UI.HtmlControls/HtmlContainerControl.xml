@@ -162,7 +162,7 @@
  To provide automatic HTML encoding and decoding, use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property.  
   
 > [!NOTE]
->  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=fullName>.  
+>  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   
@@ -217,7 +217,7 @@
  To prevent automatic HTML encoding and decoding, use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property.  
   
 > [!NOTE]
->  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=fullName>.  
+>  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method overrides the <xref:System.Web.UI.HtmlControls.HtmlControl.Render%2A?displayProperty=fullName> method to render the opening tag, child controls, and closing tag of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method overrides the <xref:System.Web.UI.HtmlControls.HtmlControl.Render%2A?displayProperty=nameWithType> method to render the opening tag, child controls, and closing tag of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
   

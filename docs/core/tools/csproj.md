@@ -4,7 +4,7 @@ description: Learn about the differences between existing and .NET Core csproj f
 keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 05/24/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -65,6 +65,15 @@ In order to get around this error, you can either remove the explicit `Compile` 
 Setting this property to `false` will override implicit inclusion and the behavior will revert back to the previous SDKs where you had to specify the default globs in your project. 
 
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
+
+`<EnableDefaultCompileItems>` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob, which also applies to \*.cs items. Because of that, **Solution Explorer** will continue show \*.cs items as part of the project, included as `None` items. In a similar way, you can use `<EnableDefaultNoneItems>` to disable the implicit `None` glob.
+
+To disable **all implicit globs**, you can set the `<EnableDefaultItems>` property to `false` as in the following example:
+```xml
+<PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+</PropertyGroup>
+```
 
 ### Recommendation
 With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (for example, runtime and NuGet packaging).

@@ -43,7 +43,7 @@ HRESULT UnloadDomain (
   
 #### Parameters  
  `pAppDomain`  
- [in] A pointer of type <xref:System._AppDomain?displayProperty=fullName> that represents the domain to be unloaded.  
+ [in] A pointer of type <xref:System._AppDomain?displayProperty=nameWithType> that represents the domain to be unloaded.  
   
 ## Return Value  
   

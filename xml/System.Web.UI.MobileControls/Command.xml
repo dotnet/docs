@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a <xref:System.Web.UI.MobileControls.Command> control is activated, it raises the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. For more information, see the "Device-Specific Rendering" and "Device-Specific Behavior" sections in <xref:System.Web.UI.MobileControls.Command?displayProperty=fullName>.  
+ When a <xref:System.Web.UI.MobileControls.Command> control is activated, it raises the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. For more information, see the "Device-Specific Rendering" and "Device-Specific Behavior" sections in <xref:System.Web.UI.MobileControls.Command?displayProperty=nameWithType>.  
   
    
   
@@ -248,14 +248,14 @@
 ## Remarks  
  Access the two available types through the <xref:System.Web.UI.MobileControls.CommandFormat> enumeration.  
   
- <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName> (default)  
+ <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=nameWithType> (default)  
  The command is rendered as a button.  
   
- <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName>  
+ <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=nameWithType>  
  The command is rendered as a link.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.MobileControls.Command.Format%2A> property supports the <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName> value only on devices that support JavaScript as indicated by the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A?displayProperty=fullName> property.  
+>  The <xref:System.Web.UI.MobileControls.Command.Format%2A> property supports the <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=nameWithType> value only on devices that support JavaScript as indicated by the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -358,7 +358,7 @@
 ## Remarks  
  When an <xref:System.Web.UI.MobileControls.Command.ItemCommand> event handler is defined, the <xref:System.Web.UI.MobileControls.Command> control notifies the handler when an item event is generated through user interaction.  
   
- Unlike the <xref:System.Web.UI.MobileControls.Command.Click> event, the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event is bubbled up to the parent controls. The <xref:System.Web.UI.MobileControls.Command.ItemCommand> event rendering is device-specific and is discussed in detail in the "Device-Specific Behavior" section of <xref:System.Web.UI.MobileControls.Command?displayProperty=fullName>.  
+ Unlike the <xref:System.Web.UI.MobileControls.Command.Click> event, the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event is bubbled up to the parent controls. The <xref:System.Web.UI.MobileControls.Command.ItemCommand> event rendering is device-specific and is discussed in detail in the "Device-Specific Behavior" section of <xref:System.Web.UI.MobileControls.Command?displayProperty=nameWithType>.  
   
  The <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event is raised after an <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. In a scenario where you repeat the same set of actions each time a command button is clicked, you can use either the <xref:System.Web.UI.MobileControls.Command.CommandName%2A> or <xref:System.Web.UI.MobileControls.Command.CommandArgument%2A> property of the <xref:System.Web.UI.MobileControls.Command> control to identify which command button the user clicked.  
   
@@ -400,7 +400,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method.  
+ This method is called by the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  Different devices might provide their data back to the calling server in different ways.  
@@ -611,7 +611,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.Command> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler?displayProperty=fullName> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.Command> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>

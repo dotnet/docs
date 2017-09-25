@@ -76,9 +76,9 @@ Specifies the compiler configuration attributes for a language provider.
 |[\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)|Container for compiler configuration elements; contains zero or more `<compiler>` elements.|  
   
 ## Remarks  
- Each `<compiler>` element specifies the compiler configuration attributes for a specific language provider. The provider extends the <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=fullName> class for a specific language; the `<compiler>` element defines the compiler and code generator settings for the language provider.  
+ Each `<compiler>` element specifies the compiler configuration attributes for a specific language provider. The provider extends the <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> class for a specific language; the `<compiler>` element defines the compiler and code generator settings for the language provider.  
   
- The .NET Framework defines the initial compiler settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=fullName> method to programmatically enumerate language provider and compiler configuration settings on a computer.  
+ The .NET Framework defines the initial compiler settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.  
   
  Compiler elements in the application or Web configuration file can supplement or override the settings in the machine configuration file. If more than one provider implementation is configured for the same language name or the same file extension, the last matching configuration overrides any previous configured providers for that language name or file extension.  
   

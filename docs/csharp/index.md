@@ -22,7 +22,9 @@ ms.author: "wiwagn"
 The C# guide provides a wealth of information about the C# language. This site has many different audiences. Depending on your experience with programming, or with the C# language and .NET, you may wish to explore different sections of this guide.
 
 * For brand-new developers:
-    - Start with our [tutorials](tutorials/index.md) section. These tutorials show you how to create C# programs from scratch. The tutorials provide a step-by-step process to create programs. You'll learn the language concepts, and how to build C# programs on your own. If you prefer reading overview information first, try our [tour of the C# language](tour-of-csharp/index.md). It explains the concepts of the C# language. After reading this, you'll have a basic understanding of the language, and be ready to try the tutorials, or build something on your own.
+    - Start with our [Quick starts](quick-starts/index.md) section. These let you explore
+    the C# language interactively in your browser. From there, you can move on to our
+    [tutorials](tutorials/index.md) section. These tutorials show you how to create C# programs from scratch. The tutorials provide a step-by-step process to create programs. You'll learn the language concepts, and how to build C# programs on your own. If you prefer reading overview information first, try our [tour of the C# language](tour-of-csharp/index.md). It explains the concepts of the C# language. After reading this, you'll have a basic understanding of the language, and be ready to try the tutorials, or build something on your own.
 
 * For developers new to C#: 
     - If you've done development before, but are new to C#, read the [tour of the C# language](tour-of-csharp/index.md). You will learn the basic syntax and structure for the language, and you can use the language tour to contrast C# with other languages you've used. You can also browse the [tutorials](tutorials/index.md) to try basic C# programs.

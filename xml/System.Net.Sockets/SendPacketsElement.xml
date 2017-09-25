@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SendPacketsElement> class is used to enhance the <xref:System.Net.Sockets.Socket> class for use by server applications that use asynchronous network I/O to achieve the highest performance. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement> class is used to enhance the <xref:System.Net.Sockets.Socket> class for use by server applications that use asynchronous network I/O to achieve the highest performance. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=nameWithType> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
     </remarks>
@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=nameWithType> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.String%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a filename of a file. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.String%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a filename of a file. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=nameWithType> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=nameWithType> method.  
   
  Universal Naming Convention (UNC) paths are supported by the `filepath` parameter. If the file is in the current working directory, no path information needs to be specified.  
   
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=nameWithType> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.String%2CSystem.Int32%2CSystem.Int32%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a filename of a file. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.String%2CSystem.Int32%2CSystem.Int32%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a filename of a file. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=nameWithType> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=nameWithType> method.  
   
  Universal Naming Convention (UNC) paths are supported by the `filepath` parameter. If the file is in the current working directory, no path information needs to be specified.  
   
@@ -230,7 +230,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a byte array of data. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=nameWithType> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -275,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a filename of a file. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=fullName> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SendPacketsElement.%23ctor%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%29> constructor initializes a new instance of the <xref:System.Net.Sockets.SendPacketsElement> class with a filename of a file. The <xref:System.Net.Sockets.SendPacketsElement> class is used with the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements%2A?displayProperty=nameWithType> property to get or set a data buffer or file to be sent using the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=nameWithType> method.  
   
  Universal Naming Convention (UNC) paths are supported by the `filepath` parameter. If the file is in the current working directory, no path information needs to be specified.  
   

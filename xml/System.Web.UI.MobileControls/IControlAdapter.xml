@@ -236,7 +236,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.IControlAdapter.OnLoad%2A> method is inherited from the control's parent. If the control is a MobileControl control, then this method is inherited from the <xref:System.Web.UI.Control?displayProperty=fullName> class; if the control is a <xref:System.Web.UI.MobileControls.MobilePage> control, then this method is inherited from the <xref:System.Web.UI.Page?displayProperty=fullName> class.  
+ The <xref:System.Web.UI.MobileControls.IControlAdapter.OnLoad%2A> method is inherited from the control's parent. If the control is a MobileControl control, then this method is inherited from the <xref:System.Web.UI.Control?displayProperty=nameWithType> class; if the control is a <xref:System.Web.UI.MobileControls.MobilePage> control, then this method is inherited from the <xref:System.Web.UI.Page?displayProperty=nameWithType> class.  
   
  ]]></format>
         </remarks>

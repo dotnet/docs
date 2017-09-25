@@ -44,7 +44,7 @@ The `DataGridView` control provides you with a variety of options for configurin
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
- <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property.  
   
  <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A>  

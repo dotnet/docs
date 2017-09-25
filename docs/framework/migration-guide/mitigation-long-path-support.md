@@ -22,7 +22,7 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
 ## Impact  
  Apps recompiled to target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] and that previously threw a <xref:System.IO.PathTooLongException> automatically because a path exceeded 260 characters will now throw a <xref:System.IO.PathTooLongException> only under the following conditions:  
   
--   The length of the path is greater than  <xref:System.Int16.MaxValue?displayProperty=fullName> (32,767) characters.  
+-   The length of the path is greater than  <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32,767) characters.  
   
 -   The operating system returns `COR_E_PATHTOOLONG` or its equivalent.  
   

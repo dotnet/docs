@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Web.HttpRequest.ContentEncoding?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Web.HttpRequest.ContentEncoding?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0043</li></ul>|
 

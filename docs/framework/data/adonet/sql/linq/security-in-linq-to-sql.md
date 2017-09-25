@@ -35,7 +35,7 @@ Security risks are always present when you connect to a database. Although LINQ 
   
 -   Secure connection strings with passwords and minimize passing around connection strings.  
   
--   Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=fullName> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=fullName> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
+-   Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=nameWithType> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
   
 -   Minimize lifetimes and touch points for all connection strings.  
   

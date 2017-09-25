@@ -42,7 +42,7 @@ A picture or graphic is one of the values that you can display in a row of data.
   
 -   An embedded icon resource named `tree.ico`.  
   
--   References to the <xref:System?displayProperty=fullName>, <xref:System.Windows.Forms?displayProperty=fullName>, and <xref:System.Drawing?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   

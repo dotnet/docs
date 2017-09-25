@@ -68,6 +68,7 @@ End Class
 Public Module Example
    Public Sub Main()
       Dim temp1 As New Temperature(22d)
+      CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US")
       Console.WriteLine(Convert.ToString(temp1, New CultureInfo("ja-JP")))
       Console.WriteLine("Temperature: {0:K}", temp1)
       Console.WriteLine("Temperature: {0:F}", temp1)
@@ -76,7 +77,7 @@ Public Module Example
 End Module
 ' The example displays the following output:
 '       22.00°C
-'       Temperature: 295.15°K
+'       Temperature: 295.15K
 '       Temperature: 71.60°F
 '       Temperature: 71,60°F
 ' </Snippet13>

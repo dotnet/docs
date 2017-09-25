@@ -34,14 +34,14 @@
   
  Volatile memory operations are for special cases of synchronization, where normal locking is not an acceptable alternative. Under normal circumstances, the C# `lock` statement, the Visual Basic `SyncLock` statement, and the <xref:System.Threading.Monitor> class provide the easiest and least error-prone way of synchronizing access to data, and the <xref:System.Lazy%601> class provides a simple way to write lazy initialization code without directly using double-checked locking.  
   
- The <xref:System.Threading.Volatile.Read%2A?displayProperty=fullName> and <xref:System.Threading.Volatile.Write%2A?displayProperty=fullName> methods enable functionality that is not supported in languages. For example:  
+ The <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> methods enable functionality that is not supported in languages. For example:  
   
 -   Some languages, such as Visual Basic, do not recognize the concept of volatile memory operations. The <xref:System.Threading.Volatile> class provides that functionality in such languages.  
   
     > [!NOTE]
-    >  Calling one of these methods affects only a single memory access. To provide effective synchronization for a field, all access to the field must use <xref:System.Threading.Volatile.Read%2A?displayProperty=fullName> and <xref:System.Threading.Volatile.Write%2A?displayProperty=fullName>.  
+    >  Calling one of these methods affects only a single memory access. To provide effective synchronization for a field, all access to the field must use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType>.  
   
--   In C#, using the `volatile` modifier on a field guarantees that every access to that field uses the <xref:System.Threading.Volatile.Read%2A?displayProperty=fullName> and <xref:System.Threading.Volatile.Write%2A?displayProperty=fullName> methods, but the `volatile` modifier cannot be applied to array elements. The <xref:System.Threading.Volatile.Read%2A?displayProperty=fullName> and <xref:System.Threading.Volatile.Write%2A?displayProperty=fullName> methods can be used on array elements.  
+-   In C#, using the `volatile` modifier on a field guarantees that every access to that field uses the <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> methods, but the `volatile` modifier cannot be applied to array elements. The <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> methods can be used on array elements.  
   
  ]]></format>
     </remarks>

@@ -16,12 +16,12 @@ public class Circle
       get { return 2 * Radius; }
    }
 
-   public double Area
+   public double Circumference
    {
       get { return 2 * Radius * PI; }      
    }
 
-   public double Circumference
+   public double Area
    {
       get { return PI * Pow(Radius, 2); }
    }

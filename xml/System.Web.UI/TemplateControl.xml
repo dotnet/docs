@@ -327,7 +327,7 @@
 ## Remarks  
  The value of `expression` must evaluate to a public property.  
   
- The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
@@ -1189,7 +1189,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
    
   
@@ -1244,7 +1244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
@@ -1276,7 +1276,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
@@ -1310,7 +1310,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>
@@ -1340,7 +1340,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
    
   
@@ -1394,7 +1394,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=nameWithType> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
   
  ]]></format>
         </remarks>

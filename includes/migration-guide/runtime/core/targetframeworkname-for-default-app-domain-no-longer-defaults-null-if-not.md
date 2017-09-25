@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.6|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0075B</li><li>CD0075A</li></ul>|
 

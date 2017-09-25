@@ -53,7 +53,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Type.GetFields%2A?displayProperty=fullName> method to get the field-related information from the <xref:System.Reflection.FieldInfo> class, and then displays field attributes.  
+ The following example uses the <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method to get the field-related information from the <xref:System.Reflection.FieldInfo> class, and then displays field attributes.  
   
  [!code-cpp[FieldInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldInfo/CPP/fieldinfo.cpp#1)]
  [!code-csharp[FieldInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldInfo/CS/fieldinfo.cs#1)]
@@ -319,7 +319,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Type.GetFields%2A?displayProperty=fullName> method to get <xref:System.Reflection.FieldInfo> objects for the fields of a type, gets a <xref:System.RuntimeFieldHandle> structure for each field, and then retrieves the <xref:System.Reflection.FieldInfo> objects from the handles using this overload of the <xref:System.Reflection.FieldInfo.GetFieldFromHandle%2A> method.  
+ The following code example uses the <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method to get <xref:System.Reflection.FieldInfo> objects for the fields of a type, gets a <xref:System.RuntimeFieldHandle> structure for each field, and then retrieves the <xref:System.Reflection.FieldInfo> objects from the handles using this overload of the <xref:System.Reflection.FieldInfo.GetFieldFromHandle%2A> method.  
   
  [!code-cpp[FieldInfo_GetFieldFromHandle#1](~/samples/snippets/cpp/VS_Snippets_CLR/FieldInfo_GetFieldFromHandle/CPP/fieldinfo_getfieldfromhandle.cpp#1)]
  [!code-csharp[FieldInfo_GetFieldFromHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/FieldInfo_GetFieldFromHandle/CS/fieldinfo_getfieldfromhandle.cs#1)]
@@ -383,7 +383,7 @@
   
  Implementations are compatible in some cases. For example, a single implementation is shared by all types that are constructed from a particular generic type definition by using reference types for the generic type arguments. For example, `MyType<string>`, `MyType<object>`, and `MyType<ArrayList>` all share the same implementation. In this situation, the <xref:System.Reflection.FieldInfo> object that is returned represents a field on the type that `declaringType` specifies, regardless of the original source of `handle`. This practice is not recommended, because it works only if the generic type arguments of the constructed type are reference types.  
   
- If a generic argument is a value type, the runtime type handle of the constructed type is not compatible with runtime field handles from constructions that have a reference type in the same generic parameter position, or that have a different value type in that position. In that case, the only way to use the <xref:System.Reflection.FieldInfo.GetFieldFromHandle%28System.RuntimeFieldHandle%2CSystem.RuntimeTypeHandle%29?displayProperty=fullName> overload is to ensure that `declaringType` is the runtime type handle for the constructed type that `handle` belongs to.  
+ If a generic argument is a value type, the runtime type handle of the constructed type is not compatible with runtime field handles from constructions that have a reference type in the same generic parameter position, or that have a different value type in that position. In that case, the only way to use the <xref:System.Reflection.FieldInfo.GetFieldFromHandle%28System.RuntimeFieldHandle%2CSystem.RuntimeTypeHandle%29?displayProperty=nameWithType> overload is to ensure that `declaringType` is the runtime type handle for the constructed type that `handle` belongs to.  
   
    
   
@@ -617,7 +617,7 @@
 >  Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked through reflection whenever the code is fully trusted.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -737,7 +737,7 @@
 ## Remarks  
  The actual visibility of a field is limited by the visibility of its type. The <xref:System.Reflection.FieldInfo.IsAssembly%2A> property might be `true` for a field, but if it is a field of a private nested type then the field is not visible outside the containing type.  
   
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=fullName> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
   
    
   
@@ -745,7 +745,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -790,7 +790,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=fullName> if the only visibility modifier is `protected`. This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the only visibility modifier is `protected`. This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
   
    
   
@@ -798,7 +798,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -845,7 +845,7 @@
 ## Remarks  
  If a field has <xref:System.Reflection.FieldAttributes.FamANDAssem> level visibility, it can be called from any member in a derived class that is also in the same assembly, but not from any other type.  
   
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=fullName> if the visibility modifier is `protected private` in C++. Fields with this visibility cannot be defined in Visual Basic or C#.  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the visibility modifier is `protected private` in C++. Fields with this visibility cannot be defined in Visual Basic or C#.  
   
    
   
@@ -853,7 +853,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -902,7 +902,7 @@
   
  The actual visibility of a field is limited by the visibility of its type. The <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property might be `true` for a field, but if it is a field of a private nested type then the field is not visible outside the containing type.  
   
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=fullName> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
   
    
   
@@ -910,7 +910,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=fullName> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -957,9 +957,9 @@
 ## Remarks  
  If the returned value is `true`, the field can only be initialized, and is read-only thereafter.  
   
- To get the `IsInitOnly` property, first get the class `Type`. From the `Type`, get the `FieldInfo`. From the `FieldInfo`, get the `IsInitOnly` property. To access a non-public field, combine <xref:System.Reflection.BindingFlags?displayProperty=fullName> with either or both of <xref:System.Reflection.BindingFlags?displayProperty=fullName> and <xref:System.Reflection.BindingFlags?displayProperty=fullName> in the `GetField` method.  
+ To get the `IsInitOnly` property, first get the class `Type`. From the `Type`, get the `FieldInfo`. From the `FieldInfo`, get the `IsInitOnly` property. To access a non-public field, combine <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> with either or both of <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in the `GetField` method.  
   
- The `IsInitOnly` property is set when the <xref:System.Reflection.FieldAttributes?displayProperty=fullName> attribute is set.  
+ The `IsInitOnly` property is set when the <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> attribute is set.  
   
    
   
@@ -1254,7 +1254,7 @@
  Using these properties is much simpler than examining the security annotations of an assembly and its types and members, checking the current trust level, and attempting to duplicate the runtime's rules.  
   
 > [!IMPORTANT]
->  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
+>  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
  For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
@@ -1302,7 +1302,7 @@
  Using these properties is much simpler than examining the security annotations of an assembly and its types and members, checking the current trust level, and attempting to duplicate the runtime's rules.  
   
 > [!IMPORTANT]
->  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
+>  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
  For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
@@ -1350,7 +1350,7 @@
  Using these properties is much simpler than examining the security annotations of an assembly and its types and members, checking the current trust level, and attempting to duplicate the runtime's rules.  
   
 > [!IMPORTANT]
->  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
+>  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
  For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
@@ -1502,7 +1502,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=fullName> only when a given member is a field.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=nameWithType> only when a given member is a field.  
   
    
   
@@ -1641,7 +1641,7 @@
 >  Fully trusted code has the permissions that are needed to access and invoke private constructors, methods, fields, and properties using reflection.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1728,7 +1728,7 @@
 >  Fully trusted code has the permissions that are needed to access and invoke private constructors, methods, fields, and properties using reflection.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1785,7 +1785,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   

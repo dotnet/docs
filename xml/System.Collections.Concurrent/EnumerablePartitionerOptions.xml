@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Out-of-the-box partitioners are created with a set of default behaviors. For example, by default, some form of buffering and chunking will be used to achieve optimal performance in the common scenario where an <xref:System.Collections.Generic.IEnumerable%601> implementation is fast and non-blocking. These behaviors can be overridden by this enumeration by using the <xref:System.Collections.Concurrent.Partitioner.Create%2A?displayProperty=fullName> method.  
+ Out-of-the-box partitioners are created with a set of default behaviors. For example, by default, some form of buffering and chunking will be used to achieve optimal performance in the common scenario where an <xref:System.Collections.Generic.IEnumerable%601> implementation is fast and non-blocking. These behaviors can be overridden by this enumeration by using the <xref:System.Collections.Concurrent.Partitioner.Create%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
     </remarks>

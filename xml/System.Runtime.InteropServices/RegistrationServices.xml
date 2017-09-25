@@ -158,7 +158,7 @@
 ## Remarks  
  `RegisterAssembly` adds the appropriate registry entries for the types in the specified assembly. This method also calls any registration functions found in the assembly.  
   
- Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> to get an assembly.  
+ Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> to get an assembly.  
   
  ]]></format>
         </remarks>

@@ -522,7 +522,7 @@ Loop
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Xml.XmlNamespaceManager.LookupPrefix%2A> method when writing an attribute. It uses the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=fullName> method to start the attribute, looks up the prefix for the `urn:samples` namespace URI, and then uses that prefix in the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=fullName> when writing the `ISBN` attribute:  
+ The following example shows how to use the <xref:System.Xml.XmlNamespaceManager.LookupPrefix%2A> method when writing an attribute. It uses the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=nameWithType> method to start the attribute, looks up the prefix for the `urn:samples` namespace URI, and then uses that prefix in the <xref:System.Xml.XmlWriter.WriteStartAttribute%2A?displayProperty=nameWithType> when writing the `ISBN` attribute:  
   
 ```vb  
 Dim prefix As String = nsMgr.LookupPrefix("urn:samples")  

@@ -992,7 +992,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property determines the optional content of trace output. The property can be set in the configuration file or programmatically during execution to include additional data specifically for a section of code. For example, you can set the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for the console trace listener to <xref:System.Diagnostics.TraceOptions?displayProperty=fullName> to add call stack information to the trace output.  
+ The <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property determines the optional content of trace output. The property can be set in the configuration file or programmatically during execution to include additional data specifically for a section of code. For example, you can set the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for the console trace listener to <xref:System.Diagnostics.TraceOptions?displayProperty=nameWithType> to add call stack information to the trace output.  
   
  The <xref:System.Diagnostics.TraceOptions> enumeration is not used by the following classes and methods:  
   

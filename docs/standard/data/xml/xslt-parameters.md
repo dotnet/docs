@@ -35,11 +35,11 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
   
 |W3C type|Equivalent .NET class (type)|XPath or XSLT type|  
 |--------------|------------------------------------|------------------------|  
-|`String`|<xref:System.String?displayProperty=fullName>|XPath|  
-|`Boolean`|<xref:System.Boolean?displayProperty=fullName>|XPath|  
-|`Number`|<xref:System.Double?displayProperty=fullName>|XPath|  
-|`Result Tree Fragment`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=fullName>|XSLT|  
-|`Node*`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=fullName>|XPath|  
+|`String`|<xref:System.String?displayProperty=nameWithType>|XPath|  
+|`Boolean`|<xref:System.Boolean?displayProperty=nameWithType>|XPath|  
+|`Number`|<xref:System.Double?displayProperty=nameWithType>|XPath|  
+|`Result Tree Fragment`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=nameWithType>|XSLT|  
+|`Node*`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=nameWithType>|XPath|  
 |`Node Set`|<xref:System.Xml.XPath.XPathNodeIterator><br /><br /> **XPathNavigator[]**|XPath|  
   
  *This is equivalent to a node set that contains a single node.  

@@ -154,7 +154,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.Focusable%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.Focusable%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.Focusable%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.Focusable%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -258,7 +258,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsEnabled%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsEnabled%2A?displayProperty=fullName>) make this property read/write and establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsEnabled%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsEnabled%2A?displayProperty=nameWithType>) make this property read/write and establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -286,7 +286,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsKeyboardFocused%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsKeyboardFocused%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsKeyboardFocused%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsKeyboardFocused%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -314,7 +314,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsKeyboardFocusWithin%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsKeyboardFocusWithin%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -342,7 +342,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsMouseCaptured%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsMouseCaptured%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsMouseCaptured%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsMouseCaptured%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -370,7 +370,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsMouseDirectlyOver%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsMouseDirectlyOver%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsMouseDirectlyOver%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsMouseDirectlyOver%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -398,7 +398,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsMouseOver%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsMouseOver%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsMouseOver%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsMouseOver%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -426,7 +426,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsStylusCaptured%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsStylusCaptured%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsStylusCaptured%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsStylusCaptured%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -454,7 +454,7 @@
 ## Remarks  
  This interface is not intended for public implementation. For more information, see remarks for the <xref:System.Windows.IInputElement> interface.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsStylusDirectlyOver%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsStylusDirectlyOver%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsStylusDirectlyOver%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsStylusDirectlyOver%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>
@@ -484,7 +484,7 @@
   
  Some core classes that implement <xref:System.Windows.IInputElement>, such as <xref:System.Windows.UIElement>, also implement an event that tracks changes to this property. However, this interface does not include such an event as part of its contract.  
   
- Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsStylusOver%2A?displayProperty=fullName> and <xref:System.Windows.UIElement.IsStylusOver%2A?displayProperty=fullName>) establish this property as a dependency property.  
+ Existing implementations in the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] core (see <xref:System.Windows.ContentElement.IsStylusOver%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.IsStylusOver%2A?displayProperty=nameWithType>) establish this property as a dependency property.  
   
  ]]></format>
         </remarks>

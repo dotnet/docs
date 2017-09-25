@@ -133,10 +133,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index of the array.  
+ Use this method to copy the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection into the specified <xref:System.Array?displayProperty=nameWithType>, starting at the specified index of the array.  
   
 > [!NOTE]
->  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName>.  
+>  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=nameWithType>.  
   
    
   
@@ -203,21 +203,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object that can be iterated through to retrieve the contents of each item in the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
+ Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object that can be iterated through to retrieve the contents of each item in the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property to get the item currently pointed to in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the initial position.  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the initial position.  
   
 > [!NOTE]
->  The <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method must be called after creating the <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object, or after using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  The <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method must be called after creating the <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object, or after using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object. The object is then iterated through to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object. The object is then iterated through to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection.  
   
  <!-- TODO: review snippet reference [!code-csharp[HtmlTableCellCollectionienumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCellCollectionienumerator/CS/htmltablecellcollectionienumeratorcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[HtmlTableCellCollectionienumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCellCollectionienumerator/VB/htmltablecellcollectionienumeratorvb.aspx#1)]  -->  
@@ -310,9 +310,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from <xref:System.Collections.ICollection?displayProperty=fullName> and is overridden to always return `false` to indicate that access to the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection is not synchronized (not thread safe).  
+ This property is derived from <xref:System.Collections.ICollection?displayProperty=nameWithType> and is overridden to always return `false` to indicate that access to the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> collection is not synchronized (not thread safe).  
   
- For more information on the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
@@ -458,7 +458,7 @@
 ## Remarks  
  The object returned in this implementation is the current instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection> class.  
   
- For more information on the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.HtmlControls.HtmlTableCellCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>

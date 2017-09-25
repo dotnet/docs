@@ -352,7 +352,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent%2A> property allows another component to lend its smart tag panel items to the current list. For example, a user control might aggregate the items from one of its constituent standard controls.  
   
- This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=fullName> property.  
+ This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

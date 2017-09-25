@@ -66,9 +66,9 @@
   
 -   If the style sheet was loaded from a Uniform Resource Identifier (URI), the URI is used to create the evidence. This evidence includes the URI along with its site and zone.  
   
--   If the style sheet was loaded using another source, you can provide evidence by passing a <xref:System.Security.Policy.Evidence?displayProperty=fullName> object to the <xref:System.Xml.Xsl.XslTransform.Load%2A> method. Otherwise, the script assembly has full trust.  
+-   If the style sheet was loaded using another source, you can provide evidence by passing a <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> object to the <xref:System.Xml.Xsl.XslTransform.Load%2A> method. Otherwise, the script assembly has full trust.  
   
- Semi-trusted callers: `UnmanagedCode` permission is required to compile the embedded script. `ControlEvidence` permission is required to provide <xref:System.Security.Policy.Evidence> to the <xref:System.Xml.Xsl.XslTransform.Load%2A> method. A <xref:System.Security.SecurityException> is thrown if the caller does not have the necessary permissions. See <xref:System.Security.Permissions.SecurityPermission?displayProperty=fullName> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+ Semi-trusted callers: `UnmanagedCode` permission is required to compile the embedded script. `ControlEvidence` permission is required to provide <xref:System.Security.Policy.Evidence> to the <xref:System.Xml.Xsl.XslTransform.Load%2A> method. A <xref:System.Security.SecurityException> is thrown if the caller does not have the necessary permissions. See <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
  The `msxsl:script` element has the following requirements:  
   
@@ -220,7 +220,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
    
   
@@ -288,12 +288,12 @@
   
  The style sheet loads from the current node of the <xref:System.Xml.XmlReader> through all its children. This enables you to use a portion of a document as the style sheet. After the <xref:System.Xml.Xsl.XslTransform.Load%2A> method returns, the <xref:System.Xml.XmlReader> is positioned on the next node after the end of the style sheet. If the end of the document is reached, the <xref:System.Xml.XmlReader> is positioned at the end of file (EOF).  
   
- If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=fullName> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
+ If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=nameWithType> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
   
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
    
   
@@ -362,7 +362,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -414,7 +414,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -468,7 +468,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
    
   
@@ -543,12 +543,12 @@
   
  After the <xref:System.Xml.Xsl.XslTransform.Load%2A> method returns, the <xref:System.Xml.XmlReader> is positioned on the next node after the end of the style sheet. If the end of the document is reached, the <xref:System.Xml.XmlReader> is positioned at the end of file (EOF).  
   
- If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=fullName> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
+ If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=nameWithType> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
   
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -600,7 +600,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -654,7 +654,7 @@
  If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29>. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
 > [!NOTE]
->  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> for more information.  
+>  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=nameWithType> for more information.  
   
  ]]></format>
         </remarks>
@@ -705,7 +705,7 @@
   
  After the <xref:System.Xml.Xsl.XslTransform.Load%2A> method returns, the <xref:System.Xml.XmlReader> is positioned on the next node after the end of the style sheet. If the end of the document is reached, the <xref:System.Xml.XmlReader> is positioned at the end of file (EOF).  
   
- If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=fullName> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
+ If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=nameWithType> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
   
  For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
@@ -714,7 +714,7 @@
     
   
 ## Examples  
- The following example performs an XSLT transformation where `xsltReader` is an <xref:System.Xml.XmlReader> containing a style sheet and `secureURL` is a trusted URL that can be used to create <xref:System.Security.Policy.Evidence>. The <xref:System.Xml.XmlSecureResolver.CreateEvidenceForUrl%2A?displayProperty=fullName> method is used to create <xref:System.Security.Policy.Evidence> which is applied to the style sheet.  
+ The following example performs an XSLT transformation where `xsltReader` is an <xref:System.Xml.XmlReader> containing a style sheet and `secureURL` is a trusted URL that can be used to create <xref:System.Security.Policy.Evidence>. The <xref:System.Xml.XmlSecureResolver.CreateEvidenceForUrl%2A?displayProperty=nameWithType> method is used to create <xref:System.Security.Policy.Evidence> which is applied to the style sheet.  
   
  [!code-cpp[XslTransform.Load4#1](~/samples/snippets/cpp/VS_Snippets_Data/XslTransform.Load4/CPP/trans_ev.cpp#1)]
  [!code-csharp[XslTransform.Load4#1](~/samples/snippets/csharp/VS_Snippets_Data/XslTransform.Load4/CS/trans_ev.cs#1)]

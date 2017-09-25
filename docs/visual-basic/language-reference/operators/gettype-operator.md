@@ -56,7 +56,7 @@ GetType(typename)
   
 -   Any Visual Basic data type, such as `Boolean` or `Date`.  
   
--   Any .NET Framework class, structure, module, or interface, such as <xref:System.ArgumentException?displayProperty=fullName> or <xref:System.Double?displayProperty=fullName>.  
+-   Any .NET Framework class, structure, module, or interface, such as <xref:System.ArgumentException?displayProperty=nameWithType> or <xref:System.Double?displayProperty=nameWithType>.  
   
 -   Any class, structure, module, or interface defined by your application.  
   
@@ -66,11 +66,11 @@ GetType(typename)
   
 -   Any enumeration defined by Visual Basic, the .NET Framework, or your application.  
   
- If you want to get the type object of an object variable, use the <xref:System.Type.GetType%2A?displayProperty=fullName> method.  
+ If you want to get the type object of an object variable, use the <xref:System.Type.GetType%2A?displayProperty=nameWithType> method.  
   
  The `GetType` operator can be useful in the following circumstances:  
   
--   You must access the metadata for a type at run time. The <xref:System.Type> object supplies metadata such as type members and deployment information. You need this, for example, to reflect over an assembly. For more information, see <xref:System.Reflection?displayProperty=fullName>.  
+-   You must access the metadata for a type at run time. The <xref:System.Type> object supplies metadata such as type members and deployment information. You need this, for example, to reflect over an assembly. For more information, see <xref:System.Reflection?displayProperty=nameWithType>.  
   
 -   You want to compare two object references to see if they refer to instances of the same type. If they do, `GetType` returns references to the same <xref:System.Type> object.  
   

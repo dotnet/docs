@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor uses the <xref:System.IO.TextWriter> stream as the recipient of the tracing or debugging output. Its <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("", or <xref:System.String.Empty?displayProperty=fullName>).  
+ This constructor uses the <xref:System.IO.TextWriter> stream as the recipient of the tracing or debugging output. Its <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("", or <xref:System.String.Empty?displayProperty=nameWithType>).  
   
    
   

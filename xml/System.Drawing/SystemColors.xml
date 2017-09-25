@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Better performance is achieved by using the properties of the <xref:System.Drawing.SystemPens> or <xref:System.Drawing.SystemBrushes> classes rather than creating a new pen or brush based on a value from <xref:System.Drawing.SystemColors>. For example, if you wanted to get a brush for the face color of a 3-D element, use the <xref:System.Drawing.SystemBrushes.Control%2A?displayProperty=fullName> property because it gets a brush that already exists, whereas calling the <xref:System.Drawing.SolidBrush.%23ctor%2A> constructor with a parameter value of <xref:System.Drawing.SystemColors.Control%2A?displayProperty=fullName> will create a new brush.  
+ Better performance is achieved by using the properties of the <xref:System.Drawing.SystemPens> or <xref:System.Drawing.SystemBrushes> classes rather than creating a new pen or brush based on a value from <xref:System.Drawing.SystemColors>. For example, if you wanted to get a brush for the face color of a 3-D element, use the <xref:System.Drawing.SystemBrushes.Control%2A?displayProperty=nameWithType> property because it gets a brush that already exists, whereas calling the <xref:System.Drawing.SolidBrush.%23ctor%2A> constructor with a parameter value of <xref:System.Drawing.SystemColors.Control%2A?displayProperty=nameWithType> will create a new brush.  
   
    
   

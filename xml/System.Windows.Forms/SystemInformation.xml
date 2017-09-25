@@ -2042,7 +2042,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Size.Width%2A?displayProperty=fullName> value of this property indicates the default width for a button on a menu-bar, in pixels. The <xref:System.Drawing.Size.Height%2A?displayProperty=fullName> value of this property indicates the height of a menu bar, in pixels.  
+ The <xref:System.Drawing.Size.Width%2A?displayProperty=nameWithType> value of this property indicates the default width for a button on a menu-bar, in pixels. The <xref:System.Drawing.Size.Height%2A?displayProperty=nameWithType> value of this property indicates the height of a menu bar, in pixels.  
   
    
   
@@ -3761,7 +3761,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SystemInformation.WorkingArea%2A> property indicates the bounds of the screen that can be used by applications. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.  
   
- <xref:System.Windows.Forms.SystemInformation.WorkingArea%2A> always returns the work area of the primary monitor. If you need the work area of a monitor in a multiple display environment, you can call one of the overloads of <xref:System.Windows.Forms.Screen.GetWorkingArea%2A?displayProperty=fullName>.  
+ <xref:System.Windows.Forms.SystemInformation.WorkingArea%2A> always returns the work area of the primary monitor. If you need the work area of a monitor in a multiple display environment, you can call one of the overloads of <xref:System.Windows.Forms.Screen.GetWorkingArea%2A?displayProperty=nameWithType>.  
   
    
   

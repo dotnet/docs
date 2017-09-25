@@ -104,7 +104,7 @@
 ## Remarks  
  The visual designer host uses the <xref:System.Web.UI.Design.ExpressionEditor.EvaluateExpression%2A> method to evaluate an expression and provide the design-time value for an associated control property.  
   
- The visual designer uses the <xref:System.Web.Compilation.ExpressionBuilder.ParseExpression%2A?displayProperty=fullName> method to parse the expression string at design time, and then calls the <xref:System.Web.UI.Design.ExpressionEditor.EvaluateExpression%2A> method with the parsed expression data. The visual designer uses the evaluated expression result to assign control property values that are rendered on the design surface.  
+ The visual designer uses the <xref:System.Web.Compilation.ExpressionBuilder.ParseExpression%2A?displayProperty=nameWithType> method to parse the expression string at design time, and then calls the <xref:System.Web.UI.Design.ExpressionEditor.EvaluateExpression%2A> method with the parsed expression data. The visual designer uses the evaluated expression result to assign control property values that are rendered on the design surface.  
   
  ]]></format>
         </remarks>
@@ -273,7 +273,7 @@
   
  Classes deriving from the <xref:System.Web.UI.Design.ExpressionEditor> class optionally can override the <xref:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet%2A> method to provide a custom expression editor sheet. A custom expression editor sheet can allow design-time input for multiple properties, which are combined together to form the expression string.  
   
- For example, the <xref:System.Web.UI.Design.ResourceExpressionEditor> class derives from the <xref:System.Web.UI.Design.ExpressionEditor> class and provides an implementation for evaluating and associating a resource string reference with a control property at design time. The <xref:System.Web.Compilation.ResourceExpressionBuilder> class is associated with the expression prefix `Resources` and the <xref:System.Web.UI.Design.ResourceExpressionEditor> implementation. The <xref:System.Web.UI.Design.ResourceExpressionEditor.GetExpressionEditorSheet%2A?displayProperty=fullName> method returns a <xref:System.Web.UI.Design.ResourceExpressionEditorSheet>, which defines the individual properties that form a resource reference expression.  
+ For example, the <xref:System.Web.UI.Design.ResourceExpressionEditor> class derives from the <xref:System.Web.UI.Design.ExpressionEditor> class and provides an implementation for evaluating and associating a resource string reference with a control property at design time. The <xref:System.Web.Compilation.ResourceExpressionBuilder> class is associated with the expression prefix `Resources` and the <xref:System.Web.UI.Design.ResourceExpressionEditor> implementation. The <xref:System.Web.UI.Design.ResourceExpressionEditor.GetExpressionEditorSheet%2A?displayProperty=nameWithType> method returns a <xref:System.Web.UI.Design.ResourceExpressionEditorSheet>, which defines the individual properties that form a resource reference expression.  
   
  ]]></format>
         </remarks>

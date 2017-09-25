@@ -262,7 +262,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Packaging.PackageDigitalSignature.TimeFormat%2A> property specifies the format of the date.  The format of the <xref:System.IO.Packaging.PackageDigitalSignature.SigningTime%2A> string is based on the <xref:System.IO.Packaging.PackageDigitalSignatureManager.TimeFormat%2A?displayProperty=fullName> property in effect when the signature was created.  
+ The <xref:System.IO.Packaging.PackageDigitalSignature.TimeFormat%2A> property specifies the format of the date.  The format of the <xref:System.IO.Packaging.PackageDigitalSignature.SigningTime%2A> string is based on the <xref:System.IO.Packaging.PackageDigitalSignatureManager.TimeFormat%2A?displayProperty=nameWithType> property in effect when the signature was created.  
   
  <xref:System.IO.Packaging.PackageDigitalSignature.SigningTime%2A> is based on the system time of the computer where the signing took place.  
   

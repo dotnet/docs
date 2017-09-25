@@ -98,10 +98,10 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
 -   **Type Characters.** Appending the identifier type character `$` to any identifier forces it to the `String` data type. `String` has no literal type character. However, the compiler treats literals enclosed in quotation marks (`" "`) as `String`.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.String?displayProperty=fullName> class.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.String?displayProperty=nameWithType> class.  
   
 ## See Also  
- <xref:System.String?displayProperty=fullName>   
+ <xref:System.String?displayProperty=nameWithType>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)   
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   

@@ -20,7 +20,7 @@
   
  <xref:System.Windows.Markup.XamlTypeMapper> can be used to provide the XAML parser with custom mapping information through a more direct technique than the application of <xref:System.Windows.Markup.XmlnsDefinitionAttribute> values on the assembly code. This might be useful for consolidation of all CLR namespaces in an assembly, or for referencing types that are XAML-ready in an existing assembly without having to recompile it just to add <xref:System.Windows.Markup.XmlnsDefinitionAttribute> attributing.  
   
- You typically create a <xref:System.Windows.Markup.XamlTypeMapper> instance in order to specify the <xref:System.Windows.Markup.ParserContext.XamlTypeMapper%2A> property value for a <xref:System.Windows.Markup.ParserContext>. The <xref:System.Windows.Markup.ParserContext> in turn can be used as the context for a <xref:System.Windows.Markup.XamlReader.Load%28System.IO.Stream%2CSystem.Windows.Markup.ParserContext%29?displayProperty=fullName> call.  
+ You typically create a <xref:System.Windows.Markup.XamlTypeMapper> instance in order to specify the <xref:System.Windows.Markup.ParserContext.XamlTypeMapper%2A> property value for a <xref:System.Windows.Markup.ParserContext>. The <xref:System.Windows.Markup.ParserContext> in turn can be used as the context for a <xref:System.Windows.Markup.XamlReader.Load%28System.IO.Stream%2CSystem.Windows.Markup.ParserContext%29?displayProperty=nameWithType> call.  
   
 ## Default Mapper  
  You can obtain a default mapper using the <xref:System.Windows.Markup.XamlTypeMapper.DefaultMapper%2A> static property. The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used.  

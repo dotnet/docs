@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Methods and types that are marked with this attribute can be used in calls to <xref:System.Diagnostics.Contracts.Contract?displayProperty=fullName> methods. Pure methods do not make any visible state changes. This attribute is not enforced by the current analysis tools; you should use this attribute only if you are sure that the methods are pure.  
+ Methods and types that are marked with this attribute can be used in calls to <xref:System.Diagnostics.Contracts.Contract?displayProperty=nameWithType> methods. Pure methods do not make any visible state changes. This attribute is not enforced by the current analysis tools; you should use this attribute only if you are sure that the methods are pure.  
   
  ]]></format>
     </remarks>

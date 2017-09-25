@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerator> to create tools or to modify the default contract generation process using an <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName>.  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerator> to create tools or to modify the default contract generation process using an <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType>.  
   
    
   
@@ -200,7 +200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=fullName> property.  
+ Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -231,7 +231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=fullName> property.  
+ Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -285,7 +285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to specify various options for code generation. This enumeration has a <xref:System.FlagsAttribute?displayProperty=fullName> attribute that allows a bitwise combination of its member values.  
+ Use this property to specify various options for code generation. This enumeration has a <xref:System.FlagsAttribute?displayProperty=nameWithType> attribute that allows a bitwise combination of its member values.  
   
  ]]></format>
         </remarks>

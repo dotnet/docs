@@ -45,7 +45,7 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
   
 4.  Expand the **Other Data Sources** and **Project Data Sources** nodes if they are not already expanded, and then select the data source to bind the control to.  
   
-5.  If your data source contains more than one member, such as if you have created a <xref:System.Data.DataSet?displayProperty=fullName> that contains multiple tables, expand the data source, and then select the specific member to bind to.  
+5.  If your data source contains more than one member, such as if you have created a <xref:System.Data.DataSet?displayProperty=nameWithType> that contains multiple tables, expand the data source, and then select the specific member to bind to.  
   
 6.  To create a master/detail relationship, in the **Choose Data Source** drop-down window for a second <xref:System.Windows.Forms.DataGridView> control, expand the <xref:System.Windows.Forms.BindingSource> created for the parent table, and then select the related child table from the list shown.  
   
@@ -55,8 +55,8 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
  <xref:System.Windows.Forms.BindingSource>   
- <xref:System.Windows.Forms.DataGridView.DataMember%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.DataMember%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>   
  [How to: Connect to Data in a Database](http://msdn.microsoft.com/library/6c56e54e-8834-4297-85aa-cc1a443ba556)   
  [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/add-and-remove-columns-in-the-datagrid-using-the-designer.md)   
  [How to: Change the Order of Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/change-the-order-of-columns-in-the-datagrid-using-the-designer.md)   

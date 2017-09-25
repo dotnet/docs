@@ -74,7 +74,7 @@ public class MyObject
 </MyClass>  
 ```  
   
- If a schema includes an element that is optional (minOccurs = '0'), or if the schema includes a default value, you have two options. One option is to use <xref:System.ComponentModel.DefaultValueAttribute?displayProperty=fullName> to specify the default value, as shown in the following code.  
+ If a schema includes an element that is optional (minOccurs = '0'), or if the schema includes a default value, you have two options. One option is to use <xref:System.ComponentModel.DefaultValueAttribute?displayProperty=nameWithType> to specify the default value, as shown in the following code.  
   
 ```vb  
 Public Class PurchaseOrder  
@@ -135,9 +135,9 @@ public class OptionalOrder
 ## Dynamically Generated Assemblies  
  To increase performance, the XML serialization infrastructure dynamically generates assemblies to serialize and deserialize specified types. The infrastructure finds and reuses those assemblies. This behavior occurs only when using the following constructors:  
   
- <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%29?displayProperty=fullName>  
+ <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%29?displayProperty=nameWithType>  
   
- <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.String%29?displayProperty=fullName>  
+ <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.String%29?displayProperty=nameWithType>  
   
  If you use any of the other constructors, multiple versions of the same assembly are generated and never unloaded, which results in a memory leak and poor performance. The easiest solution is to use one of the previously mentioned two constructors. Otherwise, you must cache the assemblies in a <xref:System.Collections.Hashtable>, as shown in the following example.  
   

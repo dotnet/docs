@@ -111,7 +111,7 @@
 ## Remarks  
  The returned proxy object points to an endpoint served by the specified well-known object. No messages are sent over the network until a method is called on the proxy.  
   
- The `data` object is used to communicate information to the channel, and is passed to the <xref:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink%2A?displayProperty=fullName> method.  
+ The `data` object is used to communicate information to the channel, and is passed to the <xref:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -311,7 +311,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This determines the method base from the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.TypeName%2A>, <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodName%2A>, and <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodSignature%2A> properties of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> and is used by classes implementing the <xref:System.Runtime.Remoting.Messaging.IMethodMessage> interface. Consumers of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> classes should reference the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodBase%2A?displayProperty=fullName> property.  
+ This determines the method base from the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.TypeName%2A>, <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodName%2A>, and <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodSignature%2A> properties of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> and is used by classes implementing the <xref:System.Runtime.Remoting.Messaging.IMethodMessage> interface. Consumers of <xref:System.Runtime.Remoting.Messaging.IMethodMessage> classes should reference the <xref:System.Runtime.Remoting.Messaging.IMethodMessage.MethodBase%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

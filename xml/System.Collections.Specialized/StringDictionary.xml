@@ -39,7 +39,7 @@
   
  The key is handled in a case-insensitive manner; it is translated to lowercase before it is used with the string dictionary.  
   
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
+ In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
   
    
   
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values of the elements of the StringDictionary are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The values of the elements of the StringDictionary are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.Specialized.StringDictionary.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.StringDictionary.Count%2A>.  
   
@@ -341,7 +341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.StringDictionary.CopyTo%2A> copies objects that can be typecast to <xref:System.Collections.DictionaryEntry?displayProperty=fullName>. <xref:System.Collections.DictionaryEntry> contains both the key and the value.  
+ <xref:System.Collections.Specialized.StringDictionary.CopyTo%2A> copies objects that can be typecast to <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType>. <xref:System.Collections.DictionaryEntry> contains both the key and the value.  
   
  The elements copied to the <xref:System.Array> are sorted in the same order that the enumerator iterates through the <xref:System.Collections.Specialized.StringDictionary>.  
   

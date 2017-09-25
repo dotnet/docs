@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can get an array of <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects by using the <xref:System.Reflection.Emit.TypeBuilder.DefineGenericParameters%2A?displayProperty=fullName> method to add type parameters to a dynamic type, thus making it a generic type, or by using the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=fullName> method to add type parameters to a dynamic method. Use the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects to add constraints to the type parameters. Constraints are of three kinds:  
+ You can get an array of <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects by using the <xref:System.Reflection.Emit.TypeBuilder.DefineGenericParameters%2A?displayProperty=nameWithType> method to add type parameters to a dynamic type, thus making it a generic type, or by using the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=nameWithType> method to add type parameters to a dynamic method. Use the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> objects to add constraints to the type parameters. Constraints are of three kinds:  
   
 -   The base type constraint specifies that any type assigned to the generic type parameter must derive from a particular base type. Set this constraint by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetBaseTypeConstraint%2A> method.  
   
@@ -36,7 +36,7 @@
   
 -   Special constraints specify that any type assigned to the generic type parameter must have a default constructor, must be a reference type, or must be a value type. Set the special constraints for a type parameter by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method.  
   
- Interface constraints and special constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameters, you can use its <xref:System.Type> object to reflect the constraints. Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method to get the type parameters, and for each type parameter use the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=fullName> method to get the base type constraint and interface constraints, and the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=fullName> property to get the special constraints.  
+ Interface constraints and special constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameters, you can use its <xref:System.Type> object to reflect the constraints. Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method to get the type parameters, and for each type parameter use the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=nameWithType> method to get the base type constraint and interface constraints, and the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=nameWithType> property to get the special constraints.  
   
    
   
@@ -2253,7 +2253,7 @@
 ## Remarks  
  To retrieve the base type constraint use the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.BaseType%2A> property.  
   
- Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameter and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method. For each type parameter, get the base type constraint and interface constraints by using the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=fullName> method, and get the special constraints by using the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=fullName> property.  
+ Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameter and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method. For each type parameter, get the base type constraint and interface constraints by using the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=nameWithType> method, and get the special constraints by using the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -2371,7 +2371,7 @@
 ## Remarks  
  Special constraints can specify that any type assigned to the generic type parameter must have a default constructor, must be a reference type, or must be a value type.  
   
- Special constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameters and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method. To get the special constraints for each type parameter, use the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=fullName> property.  
+ Special constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameters and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method. To get the special constraints for each type parameter, use the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Reflection.GenericParameterAttributes> enumeration values that refer to the variance characteristics of a type parameter are relevant only in languages that support covariance and contravariance, such as Microsoft intermediate language (MSIL). Visual Basic and C# currently do not support covariance and contravariance.  
   
@@ -2427,7 +2427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Interface constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameters and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method. For each type parameter, get the base type constraint and interface constraints by using the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=fullName> method.  
+ Interface constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameters and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method. For each type parameter, get the base type constraint and interface constraints by using the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=nameWithType> method.  
   
    
   

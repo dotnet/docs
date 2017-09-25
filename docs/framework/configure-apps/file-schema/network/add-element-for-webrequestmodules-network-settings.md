@@ -67,7 +67,7 @@ Adds a custom Web request module to the application.
 ## Remarks  
  The `prefix` attribute defines the URI prefix that uses the specified Web request module. Web request modules are typically registered to handle a specific protocol, such as HTTP or FTP, but can be registered to handle a request to a specific server or path on a server.  
   
- The Web request module is created when a URI matching prefix is passed to the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method.  
+ The Web request module is created when a URI matching prefix is passed to the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method.  
   
  The value for the `prefix` attribute should be the leading characters of a valid UR --for example, "http", or "http://www.contoso.com".  
   

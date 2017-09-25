@@ -26,13 +26,13 @@
   
 2.  Place `<asp:TreeNodeBinding>` elements between the opening and closing `<DataBindings>` tags for each tree node binding that you want to specify.  
   
- You can programmatically manage a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> by adding and removing <xref:System.Web.UI.WebControls.TreeNodeBinding> objects. To add a <xref:System.Web.UI.WebControls.TreeNodeBinding> object to the collection, use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Add%2A> or <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert%2A> method. To remove nodes from the collection, use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove%2A>, <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt%2A>, or <xref:System.Web.UI.StateManagedCollection.Clear%2A?displayProperty=fullName> method.  
+ You can programmatically manage a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> by adding and removing <xref:System.Web.UI.WebControls.TreeNodeBinding> objects. To add a <xref:System.Web.UI.WebControls.TreeNodeBinding> object to the collection, use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Add%2A> or <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert%2A> method. To remove nodes from the collection, use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove%2A>, <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt%2A>, or <xref:System.Web.UI.StateManagedCollection.Clear%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> class supports several ways to access the items in the collection:  
   
 -   Use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Item%2A> indexer to retrieve a <xref:System.Web.UI.WebControls.TreeNode> object directly at a specific zero-based index.  
   
--   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A?displayProperty=fullName> method to create an enumerator that can be used to iterate through the collection.  
+-   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A?displayProperty=nameWithType> method to create an enumerator that can be used to iterate through the collection.  
   
    
   

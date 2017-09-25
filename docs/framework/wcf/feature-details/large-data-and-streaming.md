@@ -125,7 +125,7 @@ class MyData
  The effect on the MTOM encoding is the same whether you use an explicit data contract, as shown in the preceding example, use a parameter list in an operation, have nested data contracts, or transfer a data contract object inside a collection. Byte arrays are always candidates for optimization and are optimized if the optimization thresholds are being met.  
   
 > [!NOTE]
->  You should not be using <xref:System.IO.Stream?displayProperty=fullName> derived types inside of data contracts. Stream data should be communicated using the streaming model, explained in the following "Streaming Data" section.  
+>  You should not be using <xref:System.IO.Stream?displayProperty=nameWithType> derived types inside of data contracts. Stream data should be communicated using the streaming model, explained in the following "Streaming Data" section.  
   
 ## Streaming Data  
  When you have a large amount of data to transfer, the streaming transfer mode in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is a feasible alternative to the default behavior of buffering and processing messages in memory in their entirety.  

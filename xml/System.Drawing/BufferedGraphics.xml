@@ -27,7 +27,7 @@
 > [!NOTE]
 >  The simplest way to use double buffering is to set the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> control style flag on a control using the <xref:System.Windows.Forms.Control.SetStyle%2A> method. Setting the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> flag for a control redirects all painting for the control through a default graphics buffer, without requiring any additional code. This flag is set to `true` by default.  
   
- The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property.  
+ The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=nameWithType> property.  
   
  The <xref:System.Drawing.BufferedGraphics.Graphics%2A> property can be used for drawing to the graphics buffer. This property provides access to the <xref:System.Drawing.Graphics> object that draws to the graphics buffer allocated for this <xref:System.Drawing.BufferedGraphics> object.  
   

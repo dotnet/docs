@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.6|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.AppDomainSetup.DynamicBase?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.AppDomainSetup.DynamicBase?displayProperty=nameWithType></li></ul>|
 

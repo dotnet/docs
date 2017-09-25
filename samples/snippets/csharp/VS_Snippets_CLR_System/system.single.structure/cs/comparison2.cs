@@ -11,7 +11,7 @@ public class Example
       value2 = ((float) Math.Sqrt(value2)) / 3.51f;
       Console.WriteLine("{0} = {1}: {2}\n", 
                         value1, value2, value1.Equals(value2)); 
-      Console.WriteLine("{0:R} = {1:R}", value1, value2); 
+      Console.WriteLine("{0:G9} = {1:G9}", value1, value2); 
    }
 }
 // The example displays the following output:

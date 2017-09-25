@@ -80,7 +80,7 @@
   
  Key objects must be immutable as long as they are used as keys in the <xref:System.Collections.Generic.SortedList%602>. Every key in a <xref:System.Collections.Generic.SortedList%602> must be unique. A key cannot be `null`, but a value can be, if the type of values in the list, `TValue`, is a reference type.  
   
- <xref:System.Collections.Generic.SortedList%602> requires a comparer implementation to sort and to perform comparisons.  The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=fullName>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> implementation in a constructor overload that accepts a `comparer` parameter.  
+ <xref:System.Collections.Generic.SortedList%602> requires a comparer implementation to sort and to perform comparisons.  The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=nameWithType>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation in a constructor overload that accepts a `comparer` parameter.  
   
  The capacity of a <xref:System.Collections.Generic.SortedList%602> is the number of elements the <xref:System.Collections.Generic.SortedList%602> can hold. As elements are added to a <xref:System.Collections.Generic.SortedList%602>, the capacity is automatically increased as required by reallocating the internal array. The capacity can be decreased by calling <xref:System.Collections.Generic.SortedList%602.TrimExcess%2A> or by setting the <xref:System.Collections.Generic.SortedList%602.Capacity%2A> property explicitly. Decreasing the capacity reallocates memory and copies all the elements in the <xref:System.Collections.Generic.SortedList%602>.  
   
@@ -148,7 +148,7 @@
   
  This constructor uses the default value for the initial capacity of the <xref:System.Collections.Generic.SortedList%602>. To set the initial capacity, use the <xref:System.Collections.Generic.SortedList%602.%23ctor%28System.Int32%29> constructor. If the final size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.SortedList%602>.  
   
- This constructor uses the default comparer for `TKey`. To specify a comparer, use the <xref:System.Collections.Generic.SortedList%602.%23ctor%28System.Collections.Generic.IComparer%7B%600%7D%29> constructor. The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=fullName>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> implementation in a constructor overload that accepts a `comparer` parameter.  
+ This constructor uses the default comparer for `TKey`. To specify a comparer, use the <xref:System.Collections.Generic.SortedList%602.%23ctor%28System.Collections.Generic.IComparer%7B%600%7D%29> constructor. The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=nameWithType>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation in a constructor overload that accepts a `comparer` parameter.  
   
  This constructor is an O(1) operation.  
   
@@ -251,7 +251,7 @@
   
  The capacity of the new <xref:System.Collections.Generic.SortedList%602> is set to the number of elements in `dictionary`, so no resizing takes place while the list is being populated.  
   
- This constructor uses the default comparer for `TKey`. To specify a comparer, use the <xref:System.Collections.Generic.SortedList%602.%23ctor%28System.Collections.Generic.IDictionary%7B%600%2C%601%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29> constructor. The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=fullName>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> implementation in a constructor overload that accepts a `comparer` parameter.  
+ This constructor uses the default comparer for `TKey`. To specify a comparer, use the <xref:System.Collections.Generic.SortedList%602.%23ctor%28System.Collections.Generic.IDictionary%7B%600%2C%601%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29> constructor. The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=nameWithType>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation in a constructor overload that accepts a `comparer` parameter.  
   
  If the data in `dictionary` are sorted, this constructor is an O(`n`) operation, where `n` is the number of elements in `dictionary`. Otherwise it is an O(`n`*`n`) operation.  
   
@@ -308,7 +308,7 @@
   
  The capacity can be decreased by calling <xref:System.Collections.Generic.SortedList%602.TrimExcess%2A> or by setting the <xref:System.Collections.Generic.SortedList%602.Capacity%2A> property explicitly. Decreasing the capacity reallocates memory and copies all the elements in the <xref:System.Collections.Generic.SortedList%602>.  
   
- This constructor uses the default comparer for `TKey`. To specify a comparer, use the <xref:System.Collections.Generic.SortedList%602.%23ctor%28System.Int32%2CSystem.Collections.Generic.IComparer%7B%600%7D%29> constructor. The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=fullName>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> implementation in a constructor overload that accepts a `comparer` parameter.  
+ This constructor uses the default comparer for `TKey`. To specify a comparer, use the <xref:System.Collections.Generic.SortedList%602.%23ctor%28System.Int32%2CSystem.Collections.Generic.IComparer%7B%600%7D%29> constructor. The default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the key type `TKey` implements <xref:System.IComparable?displayProperty=nameWithType>.  If the key type `TKey` does not implement either interface, you can specify a <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation in a constructor overload that accepts a `comparer` parameter.  
   
  This constructor is an O(`n`) operation, where `n` is `capacity`.  
   
@@ -713,7 +713,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> for the value type `TValue`.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the value type `TValue` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the value type `TValue` implements <xref:System.IComparable?displayProperty=fullName>.  If the value type `TValue` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> for the value type `TValue`.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the value type `TValue` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the value type `TValue` implements <xref:System.IComparable?displayProperty=nameWithType>.  If the value type `TValue` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.Generic.SortedList%602.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedList%602.Count%2A>.  
   
@@ -806,7 +806,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -888,7 +888,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> for the value type `TValue`.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the value type `TValue` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether the value type `TValue` implements <xref:System.IComparable?displayProperty=fullName>.  If the value type `TValue` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> for the value type `TValue`.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the value type `TValue` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether the value type `TValue` implements <xref:System.IComparable?displayProperty=nameWithType>.  If the value type `TValue` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.Generic.SortedList%602.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedList%602.Count%2A>.  
   
@@ -1458,7 +1458,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedList%602.Count%2A>.  
   
@@ -1514,7 +1514,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -1555,7 +1555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -1633,9 +1633,9 @@ finally {
    
   
 ## Examples  
- The following code example shows how to access the <xref:System.Collections.Generic.SortedList%602> class through the <xref:System.Collections.IDictionary?displayProperty=fullName> interface. The code example creates an empty <xref:System.Collections.Generic.SortedList%602> of strings with string keys and uses the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method throws an <xref:System.ArgumentException> when attempting to add a duplicate key, or when a key or value of the wrong data type is supplied.  
+ The following code example shows how to access the <xref:System.Collections.Generic.SortedList%602> class through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface. The code example creates an empty <xref:System.Collections.Generic.SortedList%602> of strings with string keys and uses the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method to add some elements. The example demonstrates that the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method throws an <xref:System.ArgumentException> when attempting to add a duplicate key, or when a key or value of the wrong data type is supplied.  
   
- The code example demonstrates the use of several other members of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ The code example demonstrates the use of several other members of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  [!code-csharp[Generic.SortedList.IDictionary#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.SortedList.IDictionary/CS/source.cs#1)]
  [!code-vb[Generic.SortedList.IDictionary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.SortedList.IDictionary/VB/source.vb#1)]  
@@ -1697,7 +1697,7 @@ finally {
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Contains%2A> method of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedList%602>. The example demonstrates that the method returns `false` if a key of the wrong data type is supplied.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Contains%2A> method of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedList%602>. The example demonstrates that the method returns `false` if a key of the wrong data type is supplied.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1758,14 +1758,14 @@ finally {
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
    
   
 ## Examples  
- The following code example shows how to enumerate the key/value pairs in the sorted list by using the `foreach` statement (`For Each` in Visual Basic, `for each` in C++), which hides the use of the enumerator. In particular, note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
+ The following code example shows how to enumerate the key/value pairs in the sorted list by using the `foreach` statement (`For Each` in Visual Basic, `for each` in C++), which hides the use of the enumerator. In particular, note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1906,9 +1906,9 @@ finally {
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A> property (the indexer in C#) of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedList%602>, and ways the property differs from the <xref:System.Collections.Generic.SortedList%602.Item%2A?displayProperty=fullName> property.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A> property (the indexer in C#) of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedList%602>, and ways the property differs from the <xref:System.Collections.Generic.SortedList%602.Item%2A?displayProperty=nameWithType> property.  
   
- The example shows that, like the <xref:System.Collections.Generic.SortedList%602.Item%2A?displayProperty=fullName> property, the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=fullName> property can change the value associated with an existing key and can be used to add a new key/value pair if the specified key is not in the sorted list. The example also shows that unlike the <xref:System.Collections.Generic.SortedList%602.Item%2A?displayProperty=fullName> property, the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=fullName> property does not throw an exception if `key` is not in the sorted list, returning a null reference instead. Finally, the example demonstrates that getting the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=fullName> property returns a null reference if `key` is not the correct data type, and that setting the property throws an exception if `key` is not the correct data type.  
+ The example shows that, like the <xref:System.Collections.Generic.SortedList%602.Item%2A?displayProperty=nameWithType> property, the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=nameWithType> property can change the value associated with an existing key and can be used to add a new key/value pair if the specified key is not in the sorted list. The example also shows that unlike the <xref:System.Collections.Generic.SortedList%602.Item%2A?displayProperty=nameWithType> property, the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=nameWithType> property does not throw an exception if `key` is not in the sorted list, returning a null reference instead. Finally, the example demonstrates that getting the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Item%2A?displayProperty=nameWithType> property returns a null reference if `key` is not the correct data type, and that setting the property throws an exception if `key` is not the correct data type.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -1968,7 +1968,7 @@ finally {
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.IDictionary.Keys%2A> property of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the keys in the dictionary. The example also shows how to enumerate the key/value pairs in the sorted list; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
+ The following code example shows how to use the <xref:System.Collections.IDictionary.Keys%2A> property of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the keys in the dictionary. The example also shows how to enumerate the key/value pairs in the sorted list; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -2022,7 +2022,7 @@ finally {
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Remove%2A> of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedList%602>.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Remove%2A> of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedList%602>.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -2075,7 +2075,7 @@ finally {
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Values%2A> property of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedList%602>, to list the values in the sorted list. The example also shows how to enumerate the key/value pairs in the sorted list; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
+ The following code example shows how to use the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Values%2A> property of the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface with a <xref:System.Collections.Generic.SortedList%602>, to list the values in the sorted list. The example also shows how to enumerate the key/value pairs in the sorted list; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedList%602.System%23Collections%23IDictionary%23Add%2A> method.  
   
@@ -2136,7 +2136,7 @@ finally {
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   

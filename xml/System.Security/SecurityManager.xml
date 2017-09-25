@@ -142,7 +142,7 @@
 ## Remarks  
   
 > [!NOTE]
->  In the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the host evidence in `evidence` must contain <xref:System.Security.Policy.Zone?displayProperty=fullName> evidence.  
+>  In the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the host evidence in `evidence` must contain <xref:System.Security.Policy.Zone?displayProperty=nameWithType> evidence.  
 >   
 >  The following table shows the permission sets that are returned for each zone.  
   

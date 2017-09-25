@@ -183,7 +183,7 @@
  You can disable other standard browser features by setting the <xref:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled%2A> and <xref:System.Windows.Forms.WebBrowser.IsWebBrowserContextMenuEnabled%2A> properties to `false`.  
   
 > [!NOTE]
->  This property is not related to the <xref:System.Windows.Forms.Control.AllowDrop%2A?displayProperty=fullName> property and does not cause drag-and-drop events such as the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> event to occur for the control.  
+>  This property is not related to the <xref:System.Windows.Forms.Control.AllowDrop%2A?displayProperty=nameWithType> property and does not cause drag-and-drop events such as the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType> event to occur for the control.  
   
    
   
@@ -602,7 +602,7 @@
 ## Remarks  
  Use this property when you want to access the contents of a Web page displayed in the <xref:System.Windows.Forms.WebBrowser> control through the HTML document object model (DOM). This is useful, for example, when you want to use Web-based controls in your Windows Forms application.  
   
- You can use this property, in combination with the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property, to implement two-way communication between a Web page displayed in the <xref:System.Windows.Forms.WebBrowser> control and your application. Use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=fullName> method to call script methods implemented in a Web page from your client application code. Your scripting code can access your application through the `window.external` object, which is a built-in DOM object provided for host access, and which maps to an object that you specify for the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property.  
+ You can use this property, in combination with the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property, to implement two-way communication between a Web page displayed in the <xref:System.Windows.Forms.WebBrowser> control and your application. Use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=nameWithType> method to call script methods implemented in a Web page from your client application code. Your scripting code can access your application through the `window.external` object, which is a built-in DOM object provided for host access, and which maps to an object that you specify for the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property.  
   
  To access the contents of a Web page as a string, use the <xref:System.Windows.Forms.WebBrowser.DocumentText%2A> property. To access the contents of a Web page as a <xref:System.IO.Stream>, use the <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> property.  
   
@@ -749,7 +749,7 @@
  Use this property when you want to manipulate the contents of an HTML page displayed in the <xref:System.Windows.Forms.WebBrowser> control using string processing tools. You can use this property, for example, to load pages from a database or to analyze pages using regular expressions. When you set this property, the <xref:System.Windows.Forms.WebBrowser> control automatically navigates to the about:blank URL before loading the specified text. This means that the <xref:System.Windows.Forms.WebBrowser.Navigating>, <xref:System.Windows.Forms.WebBrowser.Navigated>, and <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> events occur when you set this property, and the value of the <xref:System.Windows.Forms.WebBrowser.Url%2A> property is no longer meaningful.  
   
 > [!NOTE]
->  This property contains the text of the current document, even if another document has been requested. If you set the value of this property and then immediately retrieve it again, the value retrieved may be different than the value set if the <xref:System.Windows.Forms.WebBrowser> control has not had time to load the new content. You can retrieve the new value in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler. Alternatively, you can block the thread until the document is loaded by calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method in a loop until the <xref:System.Windows.Forms.WebBrowser.DocumentText%2A> property returns the value that you originally set it to.  
+>  This property contains the text of the current document, even if another document has been requested. If you set the value of this property and then immediately retrieve it again, the value retrieved may be different than the value set if the <xref:System.Windows.Forms.WebBrowser> control has not had time to load the new content. You can retrieve the new value in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler. Alternatively, you can block the thread until the document is loaded by calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method in a loop until the <xref:System.Windows.Forms.WebBrowser.DocumentText%2A> property returns the value that you originally set it to.  
   
  To access the contents of a Web page as a <xref:System.IO.Stream>, use the <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> property. You can also access the page contents using the HTML document object model (DOM) through the <xref:System.Windows.Forms.WebBrowser.Document%2A> property.  
   
@@ -923,7 +923,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property with the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event to implement an indicator in the user interface of your application similar to the lock icon in Internet Explorer. When the current document is not encrypted, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=fullName>. When the <xref:System.Windows.Forms.WebBrowser> control displays a Web page containing multiple frames with content of different encryption levels, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=fullName>. When the encryption level is unknown, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=fullName>. Other values indicate the type of encryption present. To mimic the behavior of the lock icon in Internet Explorer, display the encryption type in a ToolTip that appears when the mouse pointer hovers over the indicator.  
+ You can use this property with the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event to implement an indicator in the user interface of your application similar to the lock icon in Internet Explorer. When the current document is not encrypted, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=nameWithType>. When the <xref:System.Windows.Forms.WebBrowser> control displays a Web page containing multiple frames with content of different encryption levels, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=nameWithType>. When the encryption level is unknown, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=nameWithType>. Other values indicate the type of encryption present. To mimic the behavior of the lock icon in Internet Explorer, display the encryption type in a ToolTip that appears when the mouse pointer hovers over the indicator.  
   
  ]]></format>
         </remarks>
@@ -962,7 +962,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event.  
   
@@ -997,7 +997,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.FileDownload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.FileDownload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.FileDownload> event.  
   
@@ -1222,7 +1222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property is `true`, you can use the <xref:System.Windows.Forms.WebBrowser.Stop%2A> method to halt the current navigation before the new document is fully loaded. Use the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property to determine the exact navigation state of the <xref:System.Windows.Forms.WebBrowser> control. The <xref:System.Windows.Forms.WebBrowser.IsBusy%2A> property value is false when the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property value is <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>.  
+ If this property is `true`, you can use the <xref:System.Windows.Forms.WebBrowser.Stop%2A> method to halt the current navigation before the new document is fully loaded. Use the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property to determine the exact navigation state of the <xref:System.Windows.Forms.WebBrowser> control. The <xref:System.Windows.Forms.WebBrowser.IsBusy%2A> property value is false when the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property value is <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1717,7 +1717,7 @@
   
 -   <xref:System.Windows.Forms.WebBrowser.GoSearch%2A>  
   
- You can handle the <xref:System.Windows.Forms.WebBrowser.Navigating> event to cancel navigation if certain conditions have not been met, for example, when the user has not completely filled out a form. To cancel navigation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs> object passed to the event handler to `true`. You can also use this object to retrieve the URL of the new document through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url%2A?displayProperty=fullName> property. If the new document will be displayed in a Web page frame, you can retrieve the name of the frame through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName%2A?displayProperty=fullName> property.  
+ You can handle the <xref:System.Windows.Forms.WebBrowser.Navigating> event to cancel navigation if certain conditions have not been met, for example, when the user has not completely filled out a form. To cancel navigation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs> object passed to the event handler to `true`. You can also use this object to retrieve the URL of the new document through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url%2A?displayProperty=nameWithType> property. If the new document will be displayed in a Web page frame, you can retrieve the name of the frame through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName%2A?displayProperty=nameWithType> property.  
   
  Handle the <xref:System.Windows.Forms.WebBrowser.Navigated> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control finishes navigation and has begun loading the document at the new location. Handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control finishes loading the new document.  
   
@@ -1767,7 +1767,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.NewWindow> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.NewWindow> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.NewWindow> event.  
   
@@ -1810,7 +1810,7 @@
   
  You can set this property to any COM-visible object for which you want its public properties and methods available to scripting code. You can make a class COM-visible by marking it with the <xref:System.Runtime.InteropServices.ComVisibleAttribute>.  
   
- To call functions defined in your Web page from your client application code, use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=fullName> method of the <xref:System.Windows.Forms.HtmlDocument> object you can retrieve from the <xref:System.Windows.Forms.WebBrowser.Document%2A> property.  
+ To call functions defined in your Web page from your client application code, use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.HtmlDocument> object you can retrieve from the <xref:System.Windows.Forms.WebBrowser.Document%2A> property.  
   
    
   
@@ -2328,14 +2328,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use a handler for this event to implement a navigation progress bar similar to the one in Internet Explorer. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.CurrentProgress%2A?displayProperty=fullName> property to determine the number of bytes that have been downloaded successfully. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.MaximumProgress%2A?displayProperty=fullName> property to determine the total number of bytes available for downloading.  
+ You can use a handler for this event to implement a navigation progress bar similar to the one in Internet Explorer. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.CurrentProgress%2A?displayProperty=nameWithType> property to determine the number of bytes that have been downloaded successfully. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.MaximumProgress%2A?displayProperty=nameWithType> property to determine the total number of bytes available for downloading.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.ProgressChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.ProgressChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.ProgressChanged> event.  
   
@@ -2376,7 +2376,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property to retrieve the specific state of the <xref:System.Windows.Forms.WebBrowser> control when you need more information than the <xref:System.Windows.Forms.WebBrowser.IsBusy%2A> property provides.  
   
- When the <xref:System.Windows.Forms.WebBrowser> control does not contain a document, the value of this property is <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>. Other values indicate the control state when it navigates to a new document. These values include <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>, <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>, <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>, and <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>.  
+ When the <xref:System.Windows.Forms.WebBrowser> control does not contain a document, the value of this property is <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=nameWithType>. Other values indicate the control state when it navigates to a new document. These values include <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=nameWithType>, <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=nameWithType>, <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=nameWithType>, and <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2447,7 +2447,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.WebBrowser> control stores recently visited Web pages in a cache on the local hard disk. Each page can specify an expiration date indicating how long it will remain in the cache. When the control navigates to a page, it saves time by displaying a cached version, if one is available, rather than downloading the page again. The <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method forces the <xref:System.Windows.Forms.WebBrowser> control to reload the current page. The type of reload depends on the <xref:System.Windows.Forms.WebBrowserRefreshOption> value specified. If you call the <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method with the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=fullName> value, the latest version of the document is downloaded. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=fullName> value, the latest version is downloaded only if the current document has expired. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=fullName> value, the server sends a copy of the document stored in its own cache.  
+ The <xref:System.Windows.Forms.WebBrowser> control stores recently visited Web pages in a cache on the local hard disk. Each page can specify an expiration date indicating how long it will remain in the cache. When the control navigates to a page, it saves time by displaying a cached version, if one is available, rather than downloading the page again. The <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method forces the <xref:System.Windows.Forms.WebBrowser> control to reload the current page. The type of reload depends on the <xref:System.Windows.Forms.WebBrowserRefreshOption> value specified. If you call the <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method with the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=nameWithType> value, the latest version of the document is downloaded. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=nameWithType> value, the latest version is downloaded only if the current document has expired. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=nameWithType> value, the server sends a copy of the document stored in its own cache.  
   
 > [!NOTE]
 >  A document refresh simply reloads the current page, so the <xref:System.Windows.Forms.WebBrowser.Navigating>, <xref:System.Windows.Forms.WebBrowser.Navigated>, and <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> events do not occur when you call the <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method.  
@@ -2485,12 +2485,12 @@
  Set this property to `false` to debug Web pages that you display in the <xref:System.Windows.Forms.WebBrowser> control. This is useful when you use the control to add Web-based controls and scripting code to your application. It is less useful when you use the control as a generic browser. When you have finished debugging your application, set this property to `true` to suppress script errors.  
   
 > [!NOTE]
->  When <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> is set to `true`, the <xref:System.Windows.Forms.WebBrowser> control hides all its dialog boxes that originate from the underlying ActiveX control, not just script errors. Occasionally you might need to suppress script errors while displaying dialog boxes such as those used for browser security settings and user login. In this case, set <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> to `false` and suppress script errors in a handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=fullName> event. For more information, see the code example in this topic.  
+>  When <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> is set to `true`, the <xref:System.Windows.Forms.WebBrowser> control hides all its dialog boxes that originate from the underlying ActiveX control, not just script errors. Occasionally you might need to suppress script errors while displaying dialog boxes such as those used for browser security settings and user login. In this case, set <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> to `false` and suppress script errors in a handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=nameWithType> event. For more information, see the code example in this topic.  
   
    
   
 ## Examples  
- The following code example demonstrates how to suppress script errors without suppressing other dialog boxes. In the example, the <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> property is set to `false` to ensure that dialog boxes are displayed. A handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=fullName> event suppresses the error. This event is only accessible when a document is finished loading, so the handler is attached in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler.  
+ The following code example demonstrates how to suppress script errors without suppressing other dialog boxes. In the example, the <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> property is set to `false` to ensure that dialog boxes are displayed. A handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=nameWithType> event suppresses the error. This event is only accessible when a document is finished loading, so the handler is attached in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler.  
   
  [!code-csharp[WebBrowserMisc#40](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#40)]
  [!code-vb[WebBrowserMisc#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#40)]  

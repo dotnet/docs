@@ -126,7 +126,7 @@
 ## Remarks  
  This property specifies how many simultaneous connections are allowed between the local computer and the remote computer. The remote computer is specified using the <xref:System.Net.Configuration.ConnectionManagementElement.Address%2A> property.  
   
- The <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property is per <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName>. If an application is not changing <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName> from the default, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property applies to the entire application domain. If only a single application domain is running in your application, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property setting is application-wide.  
+ The <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property is per <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=nameWithType>. If an application is not changing <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=nameWithType> from the default, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property applies to the entire application domain. If only a single application domain is running in your application, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property setting is application-wide.  
   
  ]]></format>
         </remarks>

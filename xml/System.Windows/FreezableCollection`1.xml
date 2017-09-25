@@ -200,7 +200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method shadows the inherited <xref:System.Windows.Media.Animation.Animatable.Clone%2A?displayProperty=fullName> method with a strongly typed implementation for convenience.  
+ This method shadows the inherited <xref:System.Windows.Media.Animation.Animatable.Clone%2A?displayProperty=nameWithType> method with a strongly typed implementation for convenience.  
   
  ]]></format>
         </remarks>
@@ -257,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method shadows the inherited <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName> method with a strongly typed implementation for convenience.  
+ This method shadows the inherited <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType> method with a strongly typed implementation for convenience.  
   
  ]]></format>
         </remarks>

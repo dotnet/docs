@@ -370,7 +370,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is set by the `controlRenderingCompatibilityVersion` attribute of the `pages` element in the Web.config file. The value of this property is the default value for the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=fullName> property. For information about how it is used, see the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=fullName> property.  
+ This value is set by the `controlRenderingCompatibilityVersion` attribute of the `pages` element in the Web.config file. The value of this property is the default value for the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=nameWithType> property. For information about how it is used, see the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

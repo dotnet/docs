@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HyperLinkField.CopyProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.HyperLinkField> object to another.  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.CopyProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current <xref:System.Web.UI.WebControls.HyperLinkField> object to another.  
   
  ]]></format>
         </remarks>
@@ -143,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HyperLinkField.CreateField%2A> method is called by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to create a new instance of the <xref:System.Web.UI.WebControls.HyperLinkField> class.  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.CreateField%2A> method is called by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to create a new instance of the <xref:System.Web.UI.WebControls.HyperLinkField> class.  
   
  ]]></format>
         </remarks>
@@ -679,7 +679,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HyperLinkField.ValidateSupportsCallback%2A> method overrides the default <xref:System.Web.UI.WebControls.DataControlField.ValidateSupportsCallback%2A?displayProperty=fullName> method to indicate that controls contained in the <xref:System.Web.UI.WebControls.HyperLinkField> object support callbacks.  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.ValidateSupportsCallback%2A> method overrides the default <xref:System.Web.UI.WebControls.DataControlField.ValidateSupportsCallback%2A?displayProperty=nameWithType> method to indicate that controls contained in the <xref:System.Web.UI.WebControls.HyperLinkField> object support callbacks.  
   
  ]]></format>
         </remarks>

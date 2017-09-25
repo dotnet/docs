@@ -299,7 +299,7 @@
  By default, a <xref:System.Web.DynamicData.DynamicField> object displays null values as empty strings. To display a different value, set the <xref:System.Web.DynamicData.DynamicField.NullDisplayText%2A> property.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.Parameter> object of the data source control that the parent control of <xref:System.Web.DynamicData.DynamicField> object is bound to also has a property named <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A?displayProperty=fullName>. This property performs the same function. Make sure that both properties are set appropriately.  
+>  The <xref:System.Web.UI.WebControls.Parameter> object of the data source control that the parent control of <xref:System.Web.DynamicData.DynamicField> object is bound to also has a property named <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A?displayProperty=nameWithType>. This property performs the same function. Make sure that both properties are set appropriately.  
   
  ]]></format>
         </remarks>
@@ -456,7 +456,7 @@
   
  By default, the formatting string is applied to the field value only when the data-bound control that contains the <xref:System.Web.DynamicData.DynamicField> object is in read-only mode. To apply the formatting string to the field value while in edit mode, set the <xref:System.Web.DynamicData.DynamicField.ApplyFormatInEditMode%2A> property to `true`.  
   
- The display format that you specify using the <xref:System.Web.DynamicData.DynamicField.DataFormatString%2A> property is specific to this instance of the <xref:System.Web.DynamicData.DynamicField> class. You can also change the display format for a data field across the entire application by applying the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> to your data model and setting the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A?displayProperty=fullName> named parameter in the constructor. For more information, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
+ The display format that you specify using the <xref:System.Web.DynamicData.DynamicField.DataFormatString%2A> property is specific to this instance of the <xref:System.Web.DynamicData.DynamicField> class. You can also change the display format for a data field across the entire application by applying the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> to your data model and setting the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A?displayProperty=nameWithType> named parameter in the constructor. For more information, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
   
  ]]></format>
         </remarks>
@@ -712,7 +712,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.DynamicData.DynamicField.SortExpression%2A> property tries to use the value of the <xref:System.Web.DynamicData.MetaColumn.SortExpression%2A?displayProperty=fullName> property of the column object that is associated with the <xref:System.Web.DynamicData.DynamicField> object by setting the <xref:System.Web.DynamicData.DynamicField.DataField%2A> property.  
+ The <xref:System.Web.DynamicData.DynamicField.SortExpression%2A> property tries to use the value of the <xref:System.Web.DynamicData.MetaColumn.SortExpression%2A?displayProperty=nameWithType> property of the column object that is associated with the <xref:System.Web.DynamicData.DynamicField> object by setting the <xref:System.Web.DynamicData.DynamicField.DataField%2A> property.  
   
  The <xref:System.Web.UI.WebControls.DataControlField.OnFieldChanged%2A> method is called to raise a state change event when the <xref:System.Web.DynamicData.DynamicField.SortExpression%2A> property is set.  
   

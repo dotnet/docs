@@ -317,9 +317,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that identifies the domain to use when starting the process.</summary>
-        <value>The Active Directory domain to use when starting the process. The domain property is primarily of interest to users within enterprise environments that use Active Directory.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that identifies the domain to use when starting the process. If this value is <see langword="null" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UserName" /> property must be specified in UPN format. </summary>
+        <value>The Active Directory domain to use when starting the process. If this value is <see langword="null" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UserName" /> property must be specified in UPN format. </value>
+        <remarks>This property is primarily of interest to users within enterprise environments that use Active Directory.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Environment">
@@ -1067,8 +1067,8 @@ p.WaitForExit();
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user name to be used when starting the process.</summary>
-        <value>The user name to use when starting the process.</value>
+        <summary>Gets or sets the user name to use when starting the process. If you use the UPN format, <paramref name="user" />@<paramref name="DNS_domain_name" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</summary>
+        <value>The user name to use when starting the process. If you use the UPN format, <paramref name="user" />@<paramref name="DNS_domain_name" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

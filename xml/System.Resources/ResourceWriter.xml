@@ -178,7 +178,7 @@
 ## Remarks  
  The resource is not written until <xref:System.Resources.ResourceWriter.Generate%2A> is called.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Byte%5B%5D%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Byte%5B%5D%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -229,9 +229,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=fullName> property for `value`.  
+ You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=nameWithType> property for `value`.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -291,7 +291,7 @@
   
  The resource is not written until the <xref:System.Resources.ResourceWriter.Generate%2A> method is called.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Object%29> method by calling the <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Object%29> method by calling the <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -347,7 +347,7 @@
 ## Remarks  
  The resource is not written until <xref:System.Resources.ResourceWriter.Generate%2A> is called.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.String%29> method by calling the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.String%29> method by calling the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -402,9 +402,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=fullName> property for `value`.  
+ You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=nameWithType> property for `value`.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%2CSystem.Boolean%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%2CSystem.Boolean%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -478,7 +478,7 @@
   
      `Extensions.Person, Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null`  
   
- A parallel method for reading resource data written with the <xref:System.Resources.ResourceWriter.AddResourceData%2A> method is <xref:System.Resources.ResourceReader.GetResourceData%2A?displayProperty=fullName>.  
+ A parallel method for reading resource data written with the <xref:System.Resources.ResourceWriter.AddResourceData%2A> method is <xref:System.Resources.ResourceReader.GetResourceData%2A?displayProperty=nameWithType>.  
   
    
   

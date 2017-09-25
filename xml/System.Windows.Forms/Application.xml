@@ -328,7 +328,7 @@
   
  If you call <xref:System.Windows.Forms.Application.DoEvents%2A> in your code, your application can handle the other events. For example, if you have a form that adds data to a <xref:System.Windows.Forms.ListBox> and add <xref:System.Windows.Forms.Application.DoEvents%2A> to your code, your form repaints when another window is dragged over it. If you remove <xref:System.Windows.Forms.Application.DoEvents%2A> from your code, your form will not repaint until the click event handler of the button is finished executing. For more information on messaging, see [User Input in Windows Forms](~/docs/framework/winforms/user-input-in-windows-forms.md).  
   
- Unlike Visual Basic 6.0, the <xref:System.Windows.Forms.Application.DoEvents%2A> method does not call the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method.  
+ Unlike Visual Basic 6.0, the <xref:System.Windows.Forms.Application.DoEvents%2A> method does not call the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method.  
   
  Typically, you use this method in a loop to process messages.  
   
@@ -343,7 +343,7 @@
 > [!NOTE]
 >  In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], if you add an <xref:System.Windows.Forms.OpenFileDialog> to your form by using a drag operation, you will have to modify the following `InitializeOpenFileDialog` method by removing the line that creates a new instance of <xref:System.Windows.Forms.OpenFileDialog>.  
   
- The example also requires that the <xref:System.Windows.Forms.Control.Click?displayProperty=fullName> event of the <xref:System.Windows.Forms.Button> control and the <xref:System.Windows.Forms.FileDialog.FileOk> event of the <xref:System.Windows.Forms.OpenFileDialog> are connected to the event handlers defined in the example. When the example is running, display the dialog box by clicking the button.  
+ The example also requires that the <xref:System.Windows.Forms.Control.Click?displayProperty=nameWithType> event of the <xref:System.Windows.Forms.Button> control and the <xref:System.Windows.Forms.FileDialog.FileOk> event of the <xref:System.Windows.Forms.OpenFileDialog> are connected to the event handlers defined in the example. When the example is running, display the dialog box by clicking the button.  
   
  [!code-cpp[System.Windows.Forms.FileDialog#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CPP/filedialogform.cpp#1)]
  [!code-csharp[System.Windows.Forms.FileDialog#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CS/filedialogform.cs#1)]
@@ -375,7 +375,7 @@
  This method enables visual styles for the application. Visual styles are the colors, fonts, and other visual elements that form an operating system theme. Controls will draw with visual styles if the control and the operating system support it. To have an effect, <xref:System.Windows.Forms.Application.EnableVisualStyles> must be called before creating any controls in the application; typically, <xref:System.Windows.Forms.Application.EnableVisualStyles> is the first line in the `Main` function. A separate manifest is not required to enable visual styles when calling <xref:System.Windows.Forms.Application.EnableVisualStyles>.  
   
 > [!NOTE]
->  Prior to the .NET Framework 2.0, the `FlatStyle` property of some controls, such as controls that derive from <xref:System.Windows.Forms.ButtonBase>, had to be set to <xref:System.Windows.Forms.FlatStyle?displayProperty=fullName> in order for the controls to be drawn with visual styles. In applications written with the .NET Framework 2.0, this is no longer necessary.  
+>  Prior to the .NET Framework 2.0, the `FlatStyle` property of some controls, such as controls that derive from <xref:System.Windows.Forms.ButtonBase>, had to be set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType> in order for the controls to be drawn with visual styles. In applications written with the .NET Framework 2.0, this is no longer necessary.  
   
 > [!NOTE]
 >  This method will have no effect for controls hosted in Internet Explorer.  
@@ -423,7 +423,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.EnterThreadModal> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.EnterThreadModal> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a Windows Forms and ensure that the event handler is associated with the <xref:System.Windows.Forms.Application.EnterThreadModal> event.  
   
@@ -611,7 +611,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.Idle> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.Idle> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a Windows Form and make sure that the event handler is associated with the <xref:System.Windows.Forms.Application.Idle> event.  
   
@@ -652,7 +652,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.LeaveThreadModal> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.LeaveThreadModal> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a Windows Forms and ensure that the event handler is associated with the <xref:System.Windows.Forms.Application.LeaveThreadModal> event.  
   
@@ -1020,7 +1020,7 @@
 |The operating system supports visual styles|To verify this condition separately, use the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class.|  
 |The user has enabled visual styles in the operating system|To verify this condition separately, use the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class.|  
 |Visual styles are enabled in the application|Visual styles can be enabled in an application by calling the <xref:System.Windows.Forms.Application.EnableVisualStyles> method or by using an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls.|  
-|Visual styles are being used to draw the client area of application windows|To verify this condition separately, use the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class and verify that it has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=fullName> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=fullName>.|  
+|Visual styles are being used to draw the client area of application windows|To verify this condition separately, use the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class and verify that it has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType>.|  
   
  ]]></format>
         </remarks>
@@ -1228,7 +1228,7 @@
 ## Examples  
   
 > [!IMPORTANT]
->  To set the default value for `UseCompatibleTextRendering` in [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)] or later, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A?displayProperty=fullName>.  
+>  To set the default value for `UseCompatibleTextRendering` in [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)] or later, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A?displayProperty=nameWithType>.  
   
  In [!INCLUDE[csprcslong](~/includes/csprcslong-md.md)] or later, a call to <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A> is automatically generated in the Program.cs file. To change the text rendering default, modify the generated code.  
   
@@ -1462,7 +1462,7 @@ static class Program
  You can change whether this callback is used for unhandled Windows Forms thread exceptions by setting <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A>. To catch exceptions that occur in threads not created and owned by Windows Forms, use the <xref:System.AppDomain.UnhandledException> event handler.  
   
 > [!NOTE]
->  To guarantee that no activations of this event are missed, you must attach a handler before you call <xref:System.Windows.Application.Run%2A?displayProperty=fullName>.  
+>  To guarantee that no activations of this event are missed, you must attach a handler before you call <xref:System.Windows.Application.Run%2A?displayProperty=nameWithType>.  
   
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
@@ -1509,7 +1509,7 @@ static class Program
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.ThreadExit> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Application.ThreadExit> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a Windows Forms and ensure that the event handler is associated with the <xref:System.Windows.Forms.Application.ThreadExit> event.  
   
@@ -1666,7 +1666,7 @@ static class Program
    
   
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property to one of the <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=fullName> values within the <xref:System.Windows.Forms.Control.Click> event handler for a <xref:System.Windows.Forms.Button> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=fullName> enumeration.  
+ The following code example sets the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property to one of the <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType> values within the <xref:System.Windows.Forms.Control.Click> event handler for a <xref:System.Windows.Forms.Button> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType> enumeration.  
   
  [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleState#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/cpp/visualstylestate.cpp#10)]
  [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleState#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/CS/visualstylestate.cs#10)]

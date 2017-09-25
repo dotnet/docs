@@ -234,7 +234,7 @@
         <returns>
           <see langword="true" /> if the <see cref="P:System.Windows.Forms.BindingMemberInfo.BindingMember" /> strings for <paramref name="a" /> and <paramref name="b" /> are equal; otherwise <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.BindingMemberInfo.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.BindingMemberInfo.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
         <returns>
           <see langword="true" /> if the <see cref="P:System.Windows.Forms.BindingMemberInfo.BindingMember" /> strings for <paramref name="a" /> and <paramref name="b" /> are not equal; otherwise <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.BindingMemberInfo.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.BindingMemberInfo.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

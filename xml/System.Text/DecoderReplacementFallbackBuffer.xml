@@ -27,7 +27,7 @@
 ## Remarks  
  It might not be possible to convert an encoded byte sequence to an equivalent character if no suitable decoding exists. A common reason for a decoding to fail is that the conversion operation uses a code page that cannot represent the character to decode.  
   
- If the input byte sequence cannot be converted to an output character, a <xref:System.Text.DecoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the output character. The replacement string initializes the value of the <xref:System.Text.DecoderReplacementFallback> object, and the value of the <xref:System.Text.DecoderReplacementFallback> object initializes the value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object. The value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation uses the replacement fallback buffer to emit a replacement string instead of a decoded character, then continues to process the remainder of the input.  
+ If the input byte sequence cannot be converted to an output character, a <xref:System.Text.DecoderReplacementFallback?displayProperty=nameWithType> object provides a replacement string that is substituted for the output character. The replacement string initializes the value of the <xref:System.Text.DecoderReplacementFallback> object, and the value of the <xref:System.Text.DecoderReplacementFallback> object initializes the value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object. The value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation uses the replacement fallback buffer to emit a replacement string instead of a decoded character, then continues to process the remainder of the input.  
   
  ]]></format>
     </remarks>
@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> and <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> to obtain each character of the replacement fallback buffer.  
+ The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=nameWithType> and <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> to obtain each character of the replacement fallback buffer.  
   
  ]]></format>
         </remarks>

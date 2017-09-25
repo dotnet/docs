@@ -74,32 +74,32 @@
 ## Retrieving Version Information  
  <xref:System.Version> objects are most frequently used to store version information about some system or application component (such as the operating system), the common language runtime, the current application's executable, or a particular assembly. The following examples illustrate some of the most common scenarios:  
   
--   Retrieving the operating system version. The following example uses the <xref:System.OperatingSystem.Version%2A?displayProperty=fullName> property to retrieve the version number of the operating system.  
+-   Retrieving the operating system version. The following example uses the <xref:System.OperatingSystem.Version%2A?displayProperty=nameWithType> property to retrieve the version number of the operating system.  
   
      [!code-csharp[System.Version.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/GettingVersions1.cs#1)]
      [!code-vb[System.Version.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/GettingVersions1.vb#1)]  
   
--   Retrieving the version of the common language runtime. The following example uses the <xref:System.Environment.Version%2A?displayProperty=fullName> property to retrieve version information about the common language runtime.  
+-   Retrieving the version of the common language runtime. The following example uses the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to retrieve version information about the common language runtime.  
   
      [!code-csharp[System.Version.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/GettingVersions1.cs#2)]
      [!code-vb[System.Version.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/GettingVersions1.vb#2)]  
   
--   Retrieving the current application's assembly version. The following example uses the <xref:System.Reflection.Assembly.GetEntryAssembly%2A?displayProperty=fullName> method to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the application executable and then retrieves its assembly version number.  
+-   Retrieving the current application's assembly version. The following example uses the <xref:System.Reflection.Assembly.GetEntryAssembly%2A?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the application executable and then retrieves its assembly version number.  
   
      [!code-csharp[System.Version.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/currentapp.cs#5)]
      [!code-vb[System.Version.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/currentapp.vb#5)]  
   
--   Retrieving the current assembly's assembly version. The following example uses the <xref:System.Type.Assembly%2A?displayProperty=fullName> property to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the assembly that contains the application entry point, and then retrieves its version information.  
+-   Retrieving the current assembly's assembly version. The following example uses the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the assembly that contains the application entry point, and then retrieves its version information.  
   
      [!code-csharp[System.Version.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/currentassem.cs#4)]
      [!code-vb[System.Version.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/currentassem.vb#4)]  
   
--   Retrieving the version of a specific assembly. The following example uses the <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=fullName> method to obtain a reference to an <xref:System.Reflection.Assembly> object that has a particular file name, and then retrieves its version information. Note that several other methods also exist to instantiate an <xref:System.Reflection.Assembly> object by file name or by strong name.  
+-   Retrieving the version of a specific assembly. The following example uses the <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that has a particular file name, and then retrieves its version information. Note that several other methods also exist to instantiate an <xref:System.Reflection.Assembly> object by file name or by strong name.  
   
      [!code-csharp[System.Version.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/specificassem.cs#3)]
      [!code-vb[System.Version.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/specificassem.vb#3)]  
   
--   Retrieving the Publish Version of a ClickOnce application. The following example uses the <xref:System.Deployment.Application.ApplicationDeployment.CurrentVersion%2A?displayProperty=fullName> property to display an application's Publish Version. Note that its successful execution requires the example's application identity to be set. This is handled automatically by the Visual Studio Publish Wizard.  
+-   Retrieving the Publish Version of a ClickOnce application. The following example uses the <xref:System.Deployment.Application.ApplicationDeployment.CurrentVersion%2A?displayProperty=nameWithType> property to display an application's Publish Version. Note that its successful execution requires the example's application identity to be set. This is handled automatically by the Visual Studio Publish Wizard.  
   
      [!code-csharp[System.Version.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/clickonce.cs#7)]
      [!code-vb[System.Version.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/clickonce.vb#7)]  
@@ -121,7 +121,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Reflection.AssemblyVersionAttribute> attribute to assign a version number to an assembly. At compile time, this version information is stored with the assembly's metadata. At run time, the example retrieves the value of the <xref:System.Type.Assembly%2A?displayProperty=fullName> property on a type found in the assembly to get a reference to the executing assembly, and it retrieves the assembly's version information from the <xref:System.Reflection.AssemblyName.Version%2A> property of the <xref:System.Reflection.AssemblyName> object returned by the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=fullName> method.  
+ The following example uses the <xref:System.Reflection.AssemblyVersionAttribute> attribute to assign a version number to an assembly. At compile time, this version information is stored with the assembly's metadata. At run time, the example retrieves the value of the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property on a type found in the assembly to get a reference to the executing assembly, and it retrieves the assembly's version information from the <xref:System.Reflection.AssemblyName.Version%2A> property of the <xref:System.Reflection.AssemblyName> object returned by the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Version.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/example1.cs#6)]
  [!code-vb[System.Version.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/example1.vb#6)]  
@@ -595,7 +595,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface, and performs slightly better than the <xref:System.Version.CompareTo%2A> method because it does not have to unbox the `value` parameter.  
+ This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface, and performs slightly better than the <xref:System.Version.CompareTo%2A> method because it does not have to unbox the `value` parameter.  
   
  The components of `Version` in decreasing order of importance are: major, minor, build, and revision. An unknown component is assumed to be older than any known component. For example:  
   
@@ -961,7 +961,7 @@
         <returns>
           <see langword="true" /> if <paramref name="v1" /> equals <paramref name="v2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1001,7 +1001,7 @@
         <returns>
           <see langword="true" /> if <paramref name="v1" /> is greater than <paramref name="v2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1041,7 +1041,7 @@
         <returns>
           <see langword="true" /> if <paramref name="v1" /> is greater than or equal to <paramref name="v2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1081,7 +1081,7 @@
         <returns>
           <see langword="true" /> if <paramref name="v1" /> does not equal <paramref name="v2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1121,7 +1121,7 @@
         <returns>
           <see langword="true" /> if <paramref name="v1" /> is less than <paramref name="v2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="v1" /> is <see langword="null" />.</exception>
@@ -1163,7 +1163,7 @@
         <returns>
           <see langword="true" /> if <paramref name="v1" /> is less than or equal to <paramref name="v2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Version.CompareTo%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="v1" /> is <see langword="null" />.</exception>
@@ -1454,7 +1454,7 @@ major.minor[.build[.revision]]
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Version.TryParse%2A> method is similar to the <xref:System.Version.Parse%2A> method, except that it does not throw an exception if the conversion fails. Instead, it returns `false` if `input` is null, has fewer than two or more than four components, has at least one component that is not an integer, has at least one component that is less than zero, or has at least one component that is greater than <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The <xref:System.Version.TryParse%2A> method is similar to the <xref:System.Version.Parse%2A> method, except that it does not throw an exception if the conversion fails. Instead, it returns `false` if `input` is null, has fewer than two or more than four components, has at least one component that is not an integer, has at least one component that is less than zero, or has at least one component that is greater than <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
  For the parse operation to succeed, the `input` parameter must be in the following format:  
   

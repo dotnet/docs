@@ -135,7 +135,7 @@
 ## Remarks  
  Because <xref:System.Windows.Media.PathSegment> objects derive from <xref:System.Windows.Freezable>, they are copied when they are used. Therefore, you might not be able to later retrieve or remove the <xref:System.Windows.Media.PathSegment> you added to the collection using the original <xref:System.Windows.Media.PathSegment> object; the <xref:System.Windows.Media.PathSegment> in the collection is a copy of the original <xref:System.Windows.Media.PathSegment> and is considered a different <xref:System.Windows.Media.PathSegment> than the one you added.  
   
- Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -196,7 +196,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -245,7 +245,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -511,7 +511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -549,7 +549,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>

@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of this <xref:System.Diagnostics.EventLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName>, <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName>, or <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=fullName> collections to send output from tracing or debugging to an <xref:System.Diagnostics.EventLog>. You can add the instance in your code or specify it in the application configuration file. To add an <xref:System.Diagnostics.EventLogTraceListener> using an application configuration file, edit the file that corresponds to the name of your application or the app.config file in a [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] project. In this file, insert an element for a <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName> type.  
+ An instance of this <xref:System.Diagnostics.EventLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType>, or <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=nameWithType> collections to send output from tracing or debugging to an <xref:System.Diagnostics.EventLog>. You can add the instance in your code or specify it in the application configuration file. To add an <xref:System.Diagnostics.EventLogTraceListener> using an application configuration file, edit the file that corresponds to the name of your application or the app.config file in a [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] project. In this file, insert an element for a <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> type.  
   
- The following example adds a <xref:System.Diagnostics.EventLogTraceListener> object named `myListener` to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. The `initializeData` parameter specifies the name of the event log source that is to be passed to the <xref:System.Diagnostics.EventLogTraceListener.%23ctor%28System.String%29> constructor.  
+ The following example adds a <xref:System.Diagnostics.EventLogTraceListener> object named `myListener` to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection. The `initializeData` parameter specifies the name of the event log source that is to be passed to the <xref:System.Diagnostics.EventLogTraceListener.%23ctor%28System.String%29> constructor.  
   
 ```  
 <configuration>  
@@ -53,7 +53,7 @@
    
   
 ## Examples  
- The following example creates a trace listener that sends output to an event log. First, the code creates a new <xref:System.Diagnostics.EventLogTraceListener> that uses the source `myEventLogSource`. Next, `myTraceListener` is added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. Finally, the example sends a line of output to the <xref:System.Diagnostics.Trace.Listeners%2A> object.  
+ The following example creates a trace listener that sends output to an event log. First, the code creates a new <xref:System.Diagnostics.EventLogTraceListener> that uses the source `myEventLogSource`. Next, `myTraceListener` is added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection. Finally, the example sends a line of output to the <xref:System.Diagnostics.Trace.Listeners%2A> object.  
   
  [!code-cpp[Classic EventLogTraceListener Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic EventLogTraceListener Example/CPP/source.cpp#1)]
  [!code-csharp[Classic EventLogTraceListener Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic EventLogTraceListener Example/CS/source.cs#1)]

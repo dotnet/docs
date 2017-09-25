@@ -26,7 +26,7 @@
    
   
 ## Examples  
- The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=fullName> as the second argument opens the application in normal size and gives it the focus.  
+ The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
   
 ```  
 Dim procID As Integer  
@@ -1152,7 +1152,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
  The return value of the `Shell` function depends on whether the program named in `PathName` is still executing when `Shell` returns. If you set `Wait` to `True` and the program finishes before the timeout expires, `Shell` returns zero. If the timeout expires, or if you omit `Wait` or set it to `False`, `Shell` returns the process ID of the program. The process ID is a unique number that identifies the running program.  
   
 ## Failure to Start  
- If the `Shell` function cannot start the named program, a <xref:System.IO.FileNotFoundException> error occurs. This can happen, for example, when you attempt to run a 16-bit program, such as `command.com`, from an application using <xref:System.Windows.Forms?displayProperty=fullName>. For a workaround, you can run a 32-bit program that calls the desired 16-bit program. In the case of `command.com`, you can run `cmd.exe` as an alternative.  
+ If the `Shell` function cannot start the named program, a <xref:System.IO.FileNotFoundException> error occurs. This can happen, for example, when you attempt to run a 16-bit program, such as `command.com`, from an application using <xref:System.Windows.Forms?displayProperty=nameWithType>. For a workaround, you can run a 32-bit program that calls the desired 16-bit program. In the case of `command.com`, you can run `cmd.exe` as an alternative.  
   
 ## Waiting for Completion  
  By default, the `Shell` function runs the program asynchronously. This means that a program started with the `Shell` function might not finish executing before the statements following the `Shell` function are executed. If you want to wait for the program to finish before you continue, set `Wait` to `True`.  
@@ -1200,7 +1200,7 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
    
   
 ## Examples  
- The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=fullName> as the second argument opens the application in normal size and gives it the focus.  
+ The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=nameWithType> as the second argument opens the application in normal size and gives it the focus.  
   
  [!code-vb[VbVbalrFunctions#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#47)]  
   

@@ -277,7 +277,7 @@ Caption Text<br>
  The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control changes values between posts to the server. This allows you to create a custom event handler that performs a specific set of instructions (such as data validation) when the event is raised.  
   
 > [!NOTE]
->  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event to work correctly. To enable view state for all controls on the Web Forms page, set the <xref:System.Web.UI.Page.EnableViewState%2A?displayProperty=fullName> property to `true`. You can also enable view state for an individual control by setting the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property to `true`.  
+>  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event to work correctly. To enable view state for all controls on the Web Forms page, set the <xref:System.Web.UI.Page.EnableViewState%2A?displayProperty=nameWithType> property to `true`. You can also enable view state for an individual control by setting the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property to `true`.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
@@ -391,7 +391,7 @@ Caption Text<br>
  The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control changes value between posts to the server. This allows you to create a custom event handler that performs a specific set of instructions (such as data validation) when the event is raised.  
   
 > [!NOTE]
->  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event to work correctly. To enable view state for all controls on the Web Forms page, set the <xref:System.Web.UI.Page.EnableViewState%2A?displayProperty=fullName> property to `true`. You can also enable view state for an individual control by setting the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property to `true`.  
+>  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event to work correctly. To enable view state for all controls on the Web Forms page, set the <xref:System.Web.UI.Page.EnableViewState%2A?displayProperty=nameWithType> property to `true`. You can also enable view state for an individual control by setting the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property to `true`.  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   

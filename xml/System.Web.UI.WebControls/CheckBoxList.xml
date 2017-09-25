@@ -930,7 +930,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.CheckBoxList> object changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.CheckBoxList> object changes.  
   
  The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23IPostBackDataHandler%23RaisePostDataChangedEvent%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
@@ -966,7 +966,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.GetItemStyle%2A?displayProperty=fullName> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.GetItemStyle%2A?displayProperty=nameWithType> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
  The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23GetItemStyle%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
@@ -1007,9 +1007,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasFooter%2A?displayProperty=fullName> property to determine if a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a footer section.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasFooter%2A?displayProperty=nameWithType> property to determine if a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a footer section.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasFooter%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasFooter%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>
@@ -1038,9 +1038,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasHeader%2A?displayProperty=fullName> property to determine a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a heading section.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasHeader%2A?displayProperty=nameWithType> property to determine a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a heading section.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasHeader%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasHeader%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>
@@ -1069,9 +1069,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasSeparators%2A?displayProperty=fullName> property to determine whether a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a separator.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.HasSeparators%2A?displayProperty=nameWithType> property to determine whether a <xref:System.Web.UI.WebControls.CheckBoxList> object contains a separator.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasSeparators%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23HasSeparators%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>
@@ -1108,7 +1108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RenderItem%2A?displayProperty=fullName> method to render items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RenderItem%2A?displayProperty=nameWithType> method to render items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
  The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RenderItem%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
@@ -1148,9 +1148,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount%2A?displayProperty=fullName> property to determine the number of items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount%2A?displayProperty=nameWithType> property to determine the number of items in a <xref:System.Web.UI.WebControls.CheckBoxList> object.  
   
- The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RepeatedItemCount%2A?displayProperty=fullName> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+ The <xref:System.Web.UI.WebControls.CheckBoxList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RepeatedItemCount%2A?displayProperty=nameWithType> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.CheckBoxList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
  ]]></format>
         </remarks>

@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewImageCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display an <xref:System.Drawing.Image> or an <xref:System.Drawing.Icon>, depending on the value of the <xref:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon%2A> property. Typically, the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> property of a <xref:System.Windows.Forms.DataGridViewImageCell> is set to `true` to indicate that the user cannot edit the cell contents.  
   
- The <xref:System.Windows.Forms.DataGridViewImageColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewImageColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewImageCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewImageCell>, set the column's <xref:System.Windows.Forms.DataGridViewImageColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ The <xref:System.Windows.Forms.DataGridViewImageColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewImageColumn.CellTemplate%2A?displayProperty=nameWithType> is initialized to a new <xref:System.Windows.Forms.DataGridViewImageCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewImageCell>, set the column's <xref:System.Windows.Forms.DataGridViewImageColumn.CellTemplate%2A> property to the cell to use as a pattern.  
   
  The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
   
@@ -205,7 +205,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewImageColumn.Description%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewImageColumn.Description%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#20)]
  [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#20)]
@@ -264,7 +264,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -360,11 +360,11 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control calls this method to convert a cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewImageCell.FormattedValueType%2A> property. The control passes the cell value to this method in the `value` parameter.  
   
- If the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value, this method returns the value of the <xref:System.Windows.Forms.DataGridViewImageCell.Description%2A> property for copying to the Clipboard. Otherwise, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event occurs.  
+ If the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value, this method returns the value of the <xref:System.Windows.Forms.DataGridViewImageCell.Description%2A> property for copying to the Clipboard. Otherwise, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event occurs.  
   
- A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object.  
+ A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
  If formatting is successful and the type of the formatted value matches the value of the <xref:System.Windows.Forms.DataGridViewImageCell.FormattedValueType%2A> property, this method returns the formatted value. Otherwise, this method returns a standard error graphic in the type indicated by the <xref:System.Windows.Forms.DataGridViewImageCell.FormattedValueType%2A> property.  
   
@@ -571,7 +571,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When retrieving this property, if the <xref:System.Windows.Forms.DataGridViewImageCell.ValueType%2A> for the cell has not been set, then the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A?displayProperty=fullName> for the owning column is used, if it exists. If no owning column exists, the default value type is used, which is the <xref:System.Drawing.Image> type if the <xref:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon%2A> property is set to `false` and the <xref:System.Drawing.Icon> type otherwise.  
+ When retrieving this property, if the <xref:System.Windows.Forms.DataGridViewImageCell.ValueType%2A> for the cell has not been set, then the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A?displayProperty=nameWithType> for the owning column is used, if it exists. If no owning column exists, the default value type is used, which is the <xref:System.Drawing.Image> type if the <xref:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon%2A> property is set to `false` and the <xref:System.Drawing.Icon> type otherwise.  
   
  The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> is the actual data object contained in the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property is the formatted representation of this object. The <xref:System.Windows.Forms.DataGridViewImageCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewImageCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
   

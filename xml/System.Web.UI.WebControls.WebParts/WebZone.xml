@@ -159,7 +159,7 @@
  The text in the <xref:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText%2A> property appears when there are no controls in a zone, and the zone is in one of the personalization modes, such as edit, design, or catalog mode.  
   
 > [!NOTE]
->  When a zone enters one of the personalization modes that would allow personalization changes to be made to the zone's contents, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control sets the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AllowPageDesign%2A?displayProperty=fullName> property value to `true` on the display mode object referenced in its <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A?displayProperty=fullName> property.  
+>  When a zone enters one of the personalization modes that would allow personalization changes to be made to the zone's contents, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control sets the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AllowPageDesign%2A?displayProperty=nameWithType> property value to `true` on the display mode object referenced in its <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A?displayProperty=nameWithType> property.  
   
    
   

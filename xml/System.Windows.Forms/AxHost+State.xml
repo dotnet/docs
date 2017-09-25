@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.AxHost.State> can be retrieved using the <xref:System.Windows.Forms.AxHost.OcxState%2A?displayProperty=fullName> property, or by reading the control's state from a data stream.  
+ The <xref:System.Windows.Forms.AxHost.State> can be retrieved using the <xref:System.Windows.Forms.AxHost.OcxState%2A?displayProperty=nameWithType> property, or by reading the control's state from a data stream.  
   
  For more information, see the documentation for `IPersistStream` and `IPersistPropertyBag` in the MSDN library. `IPersistStream` can be found in the interface reference section of the COM SDK documentation, and `IPersistPropertyBag` can be found in the COM Fundamentals interface reference section of the COM SDK documentation.  
   

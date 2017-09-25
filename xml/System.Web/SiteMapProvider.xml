@@ -40,7 +40,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to write a class that implements the abstract <xref:System.Web.SiteMapProvider> class. This example includes only a sample <xref:System.Web.SiteMapProvider> and a sample text file that works with it. To run the example you also need an entry in the Web.config file and an .aspx page. You can find these in the documentation for the <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A?displayProperty=fullName> property.  
+ The following code example demonstrates how to write a class that implements the abstract <xref:System.Web.SiteMapProvider> class. This example includes only a sample <xref:System.Web.SiteMapProvider> and a sample text file that works with it. To run the example you also need an entry in the Web.config file and an .aspx page. You can find these in the documentation for the <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A?displayProperty=nameWithType> property.  
   
  The example uses a comma-delimited file that follows an expected structure to load sitemap information. The first line of the file represents the root node of the sitemap, and subsequent lines are subnodes. Each subnode identifies its parent node by URL. An example of a file that meets these criteria is shown below.  
   
@@ -138,7 +138,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Classes deriving from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.AddNode%2A> method and provide logic for adding a <xref:System.Web.SiteMapNode> object with a specified parent to the node collection that is maintained by the site map provider. For example, the <xref:System.Web.XmlSiteMapProvider.AddNode%2A?displayProperty=fullName> method adds the <xref:System.Web.SiteMapNode> object that is specified by `node` to the <xref:System.Web.SiteMapNodeCollection> collection that is maintained by the <xref:System.Web.XmlSiteMapProvider> object and creates a parent/child relationship between the <xref:System.Web.SiteMapNode> object that is specified by `node` and `parentNode`. The default implementation of the <xref:System.Web.SiteMapProvider.AddNode%2A> method throws a <xref:System.NotImplementedException> exception.  
+ Classes deriving from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.AddNode%2A> method and provide logic for adding a <xref:System.Web.SiteMapNode> object with a specified parent to the node collection that is maintained by the site map provider. For example, the <xref:System.Web.XmlSiteMapProvider.AddNode%2A?displayProperty=nameWithType> method adds the <xref:System.Web.SiteMapNode> object that is specified by `node` to the <xref:System.Web.SiteMapNodeCollection> collection that is maintained by the <xref:System.Web.XmlSiteMapProvider> object and creates a parent/child relationship between the <xref:System.Web.SiteMapNode> object that is specified by `node` and `parentNode`. The default implementation of the <xref:System.Web.SiteMapProvider.AddNode%2A> method throws a <xref:System.NotImplementedException> exception.  
   
  ]]></format>
         </remarks>
@@ -311,7 +311,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SiteMapProvider> implementation returns `null` in all cases. Classes that derive from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method to provide lookup functionality based on a unique key (instead of a URL, which is used by the <xref:System.Web.SiteMapProvider.FindSiteMapNode%2A> method). Implement the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method if your site map provider implementation uses the <xref:System.Web.SiteMapNode.Key%2A?displayProperty=fullName> property of a <xref:System.Web.SiteMapNode> object as a primary identifier in a site map structure.  
+ The <xref:System.Web.SiteMapProvider> implementation returns `null` in all cases. Classes that derive from the <xref:System.Web.SiteMapProvider> class can override the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method to provide lookup functionality based on a unique key (instead of a URL, which is used by the <xref:System.Web.SiteMapProvider.FindSiteMapNode%2A> method). Implement the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method if your site map provider implementation uses the <xref:System.Web.SiteMapNode.Key%2A?displayProperty=nameWithType> property of a <xref:System.Web.SiteMapNode> object as a primary identifier in a site map structure.  
   
  The <xref:System.Web.StaticSiteMapProvider> class provides an implementation that handles searching for site map nodes that do not define a URL.  
   

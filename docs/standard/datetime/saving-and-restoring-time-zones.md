@@ -42,7 +42,7 @@ Saving and restoring a time zone by serializing and deserializing time zone data
 
 * You can serialize a <xref:System.TimeZoneInfo> object by calling that object's <xref:System.TimeZoneInfo.ToSerializedString%2A> method. The method takes no parameters and returns a string that contains time zone information.
 
-* You can deserialize a <xref:System.TimeZoneInfo> object from a serialized string by passing that string to the `static` (`Shared` in Visual Basic) <xref:System.TimeZoneInfo.FromSerializedString%2A?displayProperty=fullName> method.
+* You can deserialize a <xref:System.TimeZoneInfo> object from a serialized string by passing that string to the `static` (`Shared` in Visual Basic) <xref:System.TimeZoneInfo.FromSerializedString%2A?displayProperty=nameWithType> method.
 
 ## Serialization and deserialization scenarios
 

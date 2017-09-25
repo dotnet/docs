@@ -1,12 +1,9 @@
 ---
 title: "Attributed Programming Model Overview (MEF)"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["dotnet-clr"]
-ms.tgt_pltfrm: ""
+ms.technology: 
+  - "dotnet-clr"
 ms.topic: "article"
 helpviewer_keywords: ["MEF, attributed programming model", "attributed programming model [MEF]"]
 ms.assetid: 49b787ff-2741-4836-ad51-c3017dc592d4
@@ -956,4 +953,4 @@ public class PartSeven
   
 ## See Also  
  [Channel 9 Video: Open Up Your Applications with the Managed Extensibility Framework](http://channel9.msdn.com/events/TechEd/NorthAmerica/2009/DTL328)   
- [Channel 9 Video: Mnaaged Extensibility Framework (MEF) 2.0](http://channel9.msdn.com/posts/NET-45-Oleg-Lvovitch-and-Kevin-Ransom-Managed-Extensibility-Framework-MEF-20)
+ [Channel 9 Video: Managed Extensibility Framework (MEF) 2.0](http://channel9.msdn.com/posts/NET-45-Oleg-Lvovitch-and-Kevin-Ransom-Managed-Extensibility-Framework-MEF-20)

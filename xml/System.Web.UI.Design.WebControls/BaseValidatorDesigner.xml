@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designer objects use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the properties grid.  
+ Control designer objects use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the properties grid.  
   
  ]]></format>
         </remarks>

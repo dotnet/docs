@@ -555,7 +555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the constructor of a finished type, you can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the constructor of a finished type, you can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -590,7 +590,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
+ As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
   
  The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
   
@@ -633,7 +633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> on the returned <xref:System.Type>.  
+ As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> on the returned <xref:System.Type>.  
   
  The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
   
@@ -726,7 +726,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the event of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the event of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -758,7 +758,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -793,7 +793,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type to retrieve the events.  
+ As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type to retrieve the events.  
   
  ]]></format>
         </remarks>
@@ -830,7 +830,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -865,7 +865,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  The <xref:System.Reflection.Emit.EnumBuilder.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
   
@@ -942,7 +942,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -982,7 +982,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the interface mapping types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the interface mapping types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1014,7 +1014,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1052,7 +1052,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the member of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the member of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1087,7 +1087,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the members of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the members of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1159,7 +1159,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the methods of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the methods of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1200,7 +1200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the nested type of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the nested type of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1237,7 +1237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the nested types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the nested types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1272,7 +1272,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As a workaround, to retrieve the properties of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ As a workaround, to retrieve the properties of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -1418,7 +1418,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  ]]></format>
         </remarks>
@@ -2326,7 +2326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> and use reflection on the retrieved type.  
   
  Use this handle to access the underlying metadata handle.  
   

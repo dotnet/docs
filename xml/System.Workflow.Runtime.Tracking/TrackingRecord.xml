@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Certain kinds of tracking events emitted by a workflow instance have event data associated with them. If a tracking event has event data associated with it, the runtime tracking infrastructure puts the event data in <xref:System.Workflow.Runtime.Tracking.TrackingRecord.EventArgs%2A> property of the derived class. For example, when a workflow instance is terminated, the runtime tracking infrastructure sends a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> with <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A?displayProperty=fullName> set to a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs> that contains information about the reason for the termination.  
+ Certain kinds of tracking events emitted by a workflow instance have event data associated with them. If a tracking event has event data associated with it, the runtime tracking infrastructure puts the event data in <xref:System.Workflow.Runtime.Tracking.TrackingRecord.EventArgs%2A> property of the derived class. For example, when a workflow instance is terminated, the runtime tracking infrastructure sends a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> with <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A?displayProperty=nameWithType> set to a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs> that contains information about the reason for the termination.  
   
  ]]></format>
         </remarks>

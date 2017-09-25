@@ -141,7 +141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The format of this string follows the conventions of the run-time <xref:System.String.Format%2A?displayProperty=fullName> method. If you leave this property set to its default value, the data is converted by using the default `ToString` converter.  
+ The format of this string follows the conventions of the run-time <xref:System.String.Format%2A?displayProperty=nameWithType> method. If you leave this property set to its default value, the data is converted by using the default `ToString` converter.  
   
  ]]></format>
         </remarks>

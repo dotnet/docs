@@ -50,7 +50,7 @@
   
 <a name="Introduction"></a>   
 ## Introduction  
- Use the <xref:System.Web.UI.WebControls.Calendar> control to display a single month of a calendar on a Web page. The control allows you to select dates and move to the next or previous month. The <xref:System.Web.UI.WebControls.Calendar> control supports all the <xref:System.Globalization.Calendar?displayProperty=fullName> types in the <xref:System.Globalization> namespace. Apart from the Gregorian calendar, this also includes calendars that use different year and month systems, such as the Hjiri calendar.  
+ Use the <xref:System.Web.UI.WebControls.Calendar> control to display a single month of a calendar on a Web page. The control allows you to select dates and move to the next or previous month. The <xref:System.Web.UI.WebControls.Calendar> control supports all the <xref:System.Globalization.Calendar?displayProperty=nameWithType> types in the <xref:System.Globalization> namespace. Apart from the Gregorian calendar, this also includes calendars that use different year and month systems, such as the Hjiri calendar.  
   
  You can specify whether the <xref:System.Web.UI.WebControls.Calendar> control allows you to select a single day, week, or entire month by setting the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property.  
   
@@ -547,14 +547,14 @@
  Although data binding is not supported for the <xref:System.Web.UI.WebControls.Calendar> control, it is possible to modify the content and formatting of the individual date cells. Before the <xref:System.Web.UI.WebControls.Calendar> control is displayed on the Web page, it creates and assembles the components that make up the control. The <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised when each date cell in the <xref:System.Web.UI.WebControls.Calendar> control is created. You can control the contents and formatting of a date cell when it is created by providing code in the event handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event. For more information on customizing the contents of a date cell, see <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A>.  
   
 > [!NOTE]
->  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=fullName>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
+>  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
  For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
 ## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the cell.  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the cell.  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  -->  
@@ -898,10 +898,10 @@
   
  The event handler receives a <xref:System.Web.UI.WebControls.DayRenderEventArgs> object that contains event data. The <xref:System.Web.UI.WebControls.DayRenderEventArgs> object contains two properties that you can use to programmatically control the format of the date cell. The <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property represents the cell being rendered, while the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property represents the date to render in the cell.  
   
- You can also customize the contents of a cell by dynamically adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
+ You can also customize the contents of a cell by dynamically adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
   
 > [!NOTE]
->  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=fullName>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
+>  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
@@ -910,7 +910,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the cell.  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the cell.  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  -->  
@@ -1271,7 +1271,7 @@
   
  The <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> property and the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> collection are closely related. When the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.Day`, a mode that allows only a single date selection, <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> and `SelectedDates[0]` have the same value and `SelectedDates.Count` equals 1. When the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeek` or `CalendarSelectionMode.DayWeekMonth`, modes that allows multiple date selections, <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> and `SelectedDates[0]` have the same value.  
   
- The <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> property is set using a <xref:System.DateTime?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> property is set using a <xref:System.DateTime?displayProperty=nameWithType> object.  
   
  When the user selects a date on the <xref:System.Web.UI.WebControls.Calendar> control, the <xref:System.Web.UI.WebControls.Calendar.SelectionChanged> event is raised. The <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> property is updated to the selected date. The <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> collection is also updated to contain just this date.  
   
@@ -1321,7 +1321,7 @@
   
  The <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> property and the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> collection are closely related. When the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.Day`, a mode that allows only a single date selection, <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> and `SelectedDates[0]` have the same value and `SelectedDates.Count` equals 1. When the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeek` or `CalendarSelectionMode.DayWeekMonth`, modes that allows multiple date selections, <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> and `SelectedDates[0]` have the same value.  
   
- The <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> property stores a collection of <xref:System.DateTime?displayProperty=fullName> objects.  
+ The <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> property stores a collection of <xref:System.DateTime?displayProperty=nameWithType> objects.  
   
  When the user selects a week or month on the <xref:System.Web.UI.WebControls.Calendar> control, the <xref:System.Web.UI.WebControls.Calendar.SelectionChanged> event is raised. The selected dates are added to the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> collection, replacing the previous contents. The range of dates are sorted in ascending order by date. The <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> property is also updated to contain the first date in the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> collection.  
   
@@ -1817,7 +1817,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2016,7 +2016,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Calendar.TodaysDate%2A> property to determine today's date. You can also use this property to programmatically set the value for today's date on the <xref:System.Web.UI.WebControls.Calendar> control. This property is set using a <xref:System.DateTime?displayProperty=fullName> object.  
+ Use the <xref:System.Web.UI.WebControls.Calendar.TodaysDate%2A> property to determine today's date. You can also use this property to programmatically set the value for today's date on the <xref:System.Web.UI.WebControls.Calendar> control. This property is set using a <xref:System.DateTime?displayProperty=nameWithType> object.  
   
 > [!NOTE]
 >  This date might need to be adjusted to accommodate users who are in a different time zone.  
@@ -2116,7 +2116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property to programmatically set the month to display on the <xref:System.Web.UI.WebControls.Calendar> control. The specified date can be any date in the month you want to display, although it is common to use the first date in the month. This property is set using a <xref:System.DateTime?displayProperty=fullName> object.  
+ Use the <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property to programmatically set the month to display on the <xref:System.Web.UI.WebControls.Calendar> control. The specified date can be any date in the month you want to display, although it is common to use the first date in the month. This property is set using a <xref:System.DateTime?displayProperty=nameWithType> object.  
   
  The <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property is updated before the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised. You can provide a custom <xref:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged%2A> event handler to set the <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property and override the automatically generated value.  
   

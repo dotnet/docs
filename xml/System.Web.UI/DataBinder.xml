@@ -362,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method invokes the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method, and then uses the <xref:System.String.Format%2A?displayProperty=fullName> method to format the result as specified in the `format` parameter. A .NET Framework format string (like those used by <xref:System.String.Format%2A?displayProperty=fullName>) converts the <xref:System.Object> instance returned by the data-binding expression to a <xref:System.String> object.  
+ The <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method invokes the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method, and then uses the <xref:System.String.Format%2A?displayProperty=nameWithType> method to format the result as specified in the `format` parameter. A .NET Framework format string (like those used by <xref:System.String.Format%2A?displayProperty=nameWithType>) converts the <xref:System.Object> instance returned by the data-binding expression to a <xref:System.String> object.  
   
  Exceptions that are thrown for the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method apply to the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method as well.  
   

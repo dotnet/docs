@@ -105,10 +105,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the unique identifier name for an <xref:System.Web.UI.HtmlControls.HtmlInputControl>. In this implementation, the `get` accessor returns the value of the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property. However, the `set` accessor does not assign a value to this property.  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the unique identifier name for an <xref:System.Web.UI.HtmlControls.HtmlInputControl>. In this implementation, the `get` accessor returns the value of the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=nameWithType> property. However, the `set` accessor does not assign a value to this property.  
   
 > [!NOTE]
->  The `set` accessor does not assign a value to this property because the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property must have the same value as the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property for most controls to work properly.  
+>  The `set` accessor does not assign a value to this property because the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property must have the same value as the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=nameWithType> property for most controls to work properly.  
   
  Classes that inherit from the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class can override this implementation, if necessary.  
   

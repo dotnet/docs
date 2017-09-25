@@ -84,7 +84,7 @@
   
  If `highlightBrush` is `null`, the default highlight brush of the given annotation `service` is used.  
   
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateHighlightForSelection%2A>.  
+ The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=nameWithType> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateHighlightForSelection%2A>.  
   
  ]]></format>
         </remarks>
@@ -130,7 +130,7 @@
   
  `author` can be specified as `null` in which case no author is defined.  
   
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateInkStickyNoteForSelection%2A>.  
+ The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=nameWithType> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateInkStickyNoteForSelection%2A>.  
   
  ]]></format>
         </remarks>
@@ -172,7 +172,7 @@
   
  `author` can be specified as `null` in which case no author is defined.  
   
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateTextStickyNoteForSelection%2A>.  
+ The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=nameWithType> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateTextStickyNoteForSelection%2A>.  
   
  ]]></format>
         </remarks>
@@ -207,7 +207,7 @@
 ## Remarks  
  If the viewer control associated with the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> contains no user selection or the user selection does not wholly contain any ink sticky note annotations, <xref:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection%2A> performs no operation.  
   
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection%2A>.  
+ The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=nameWithType> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection%2A>.  
   
  ]]></format>
         </remarks>
@@ -241,7 +241,7 @@
 ## Remarks  
  If the viewer control associated with the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> contains no user selection or the user selection does not wholly contain any text sticky note annotations, <xref:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection%2A> performs no operation.  
   
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection%2A>.  
+ The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=nameWithType> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection%2A>.  
   
  ]]></format>
         </remarks>

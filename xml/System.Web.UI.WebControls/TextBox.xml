@@ -307,7 +307,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by control developers to insert the additional attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.TextBox> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=fullName>.  
+ This method is used primarily by control developers to insert the additional attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.TextBox> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=nameWithType>.  
   
    
   
@@ -393,7 +393,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To assist with data entry, Microsoft Internet Explorer 5 and later and some other browsers support a feature referred to as AutoComplete. AutoComplete monitors a text box and creates a list of values entered by the user. When the user returns to the text box at a later time, the list is displayed. Instead of retyping a previously entered value, the user can simply select the value from this list. Use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property to control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control. The <xref:System.Web.UI.WebControls.AutoCompleteType?displayProperty=fullName> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
+ To assist with data entry, Microsoft Internet Explorer 5 and later and some other browsers support a feature referred to as AutoComplete. AutoComplete monitors a text box and creates a list of values entered by the user. When the user returns to the text box at a later time, the list is displayed. Instead of retyping a previously entered value, the user can simply select the value from this list. Use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property to control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control. The <xref:System.Web.UI.WebControls.AutoCompleteType?displayProperty=nameWithType> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
   
 > [!NOTE]
 >  Not all browsers support the AutoComplete feature. Check with your browser to determine compatibility.  

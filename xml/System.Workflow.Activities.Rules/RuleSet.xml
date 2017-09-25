@@ -253,7 +253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Workflow.Activities.Rules.RuleSet> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> contains the list of errors encountered.  
+ If the <xref:System.Workflow.Activities.Rules.RuleSet> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=nameWithType> contains the list of errors encountered.  
   
  ]]></format>
         </remarks>

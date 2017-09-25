@@ -426,7 +426,7 @@
   
  For Document nodes, `BaseURI` returns the location of the XML document. For example, if the `XmlDocument` was loaded using the following call doc.Load("http://server/mydata.xml"), the `BaseURI` for the document node is http://server/mydata.xml. However, if the <xref:System.Xml.XmlDocument.Load%2A> method is redirected by server to a different URI, `BaseURI` returns the original URI passed to the `Load` method.  
   
- This property is a Microsoft extension to the Document Object Model (DOM). For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
+ This property is a Microsoft extension to the Document Object Model (DOM). For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -471,7 +471,7 @@
 ## Remarks  
  This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
   
- If `deep` is `true`, the cloned node includes all the child nodes, otherwise only the `XmlDocument` node is cloned. See the <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName> method to see how this method behaves on other node types.  
+ If `deep` is `true`, the cloned node includes all the child nodes, otherwise only the `XmlDocument` node is cloned. See the <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=nameWithType> method to see how this method behaves on other node types.  
   
    
   
@@ -1180,7 +1180,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
    
   
 ## Examples  
- See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
+ See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=nameWithType> for an example using this method.  
   
  ]]></format>
         </remarks>
@@ -1223,7 +1223,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
    
   
 ## Examples  
- See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=fullName> for an example using this method.  
+ See <xref:System.Xml.XmlNode.CreateNavigator%2A?displayProperty=nameWithType> for an example using this method.  
   
  ]]></format>
         </remarks>
@@ -1968,7 +1968,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  The nodes are placed in the order in which they would be encountered in the document.  
   
 > [!NOTE]
->  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=nameWithType> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
   
    
   
@@ -2028,7 +2028,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
  The nodes are placed in the order in which they would be encountered in the document tree.  
   
 > [!NOTE]
->  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=nameWithType> method instead of the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method.  
   
  ]]></format>
         </remarks>
@@ -2414,7 +2414,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
- This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=fullName> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](~/docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md).  
+ This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=nameWithType> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](~/docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md).  
   
  ]]></format>
         </remarks>
@@ -3235,7 +3235,7 @@ while (reader.MoveToNextAttribute())
 }  
 ```  
   
- `ReadNode` does consume the attribute value though, which means after calling `ReadNode` on an attribute, <xref:System.Xml.XmlReader.ReadAttributeValue%2A?displayProperty=fullName> returns `false`.  
+ `ReadNode` does consume the attribute value though, which means after calling `ReadNode` on an attribute, <xref:System.Xml.XmlReader.ReadAttributeValue%2A?displayProperty=nameWithType> returns `false`.  
   
    
   
@@ -3297,7 +3297,7 @@ while (reader.MoveToNextAttribute())
 ## Remarks  
  White space is preserved only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
   
- The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
+ The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
   
  When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
   
@@ -3397,7 +3397,7 @@ doc.Save(Console.Out);
 ## Remarks  
  White space is preserved in the output file only if <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> is set to `true`.  
   
- The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
+ The XmlDeclaration of the current `XmlDocument` object determines the encoding attribute in the saved document. The value of the encoding attribute is taken from the <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property. If the `XmlDocument` does not have an XmlDeclaration, or if the XmlDeclaration does not have an encoding attribute, the saved document will not have one either.  
   
  When the document is saved, xmlns attributes are generated to persist the node identity (local name + namespace URI) correctly. For example, the following C# code  
   
@@ -3730,7 +3730,7 @@ doc.Save(Console.Out);
 ## Remarks  
  This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlDocument.InnerXml%2A> property.  
   
- The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
+ The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
   
    
   
@@ -3782,7 +3782,7 @@ doc.Save(Console.Out);
 ## Remarks  
  This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A> property.  
   
- The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=fullName> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
+ The <xref:System.Xml.XmlDeclaration.Encoding%2A?displayProperty=nameWithType> property determines the encoding that is written out. If the `Encoding` property does not have a value, the `XmlDocument` is written out without an encoding attribute.  
   
    
   
@@ -3827,7 +3827,7 @@ doc.Save(Console.Out);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `XmlResolver` can be used to load DTDs or expand entity references. Using the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=fullName> property, you can set credentials on the `XmlResolver` to access resources stored on a secure network resource.  
+ The `XmlResolver` can be used to load DTDs or expand entity references. Using the <xref:System.Xml.XmlResolver.Credentials%2A?displayProperty=nameWithType> property, you can set credentials on the `XmlResolver` to access resources stored on a secure network resource.  
   
 -   If the document was not loaded using an <xref:System.Xml.XmlReader> (that is, if it was loaded using a stream, file, and so on) the `XmlResolver` on the `XmlDocument` is always used.  
   

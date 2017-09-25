@@ -410,7 +410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called when a control that implements the <xref:System.Web.UI.IPostBackDataHandler?displayProperty=fullName> interface has its own <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A> method invoked.  
+ This method is called when a control that implements the <xref:System.Web.UI.IPostBackDataHandler?displayProperty=nameWithType> interface has its own <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A> method invoked.  
   
 > [!NOTE]
 >  Different devices might provide their data back to the calling server in different ways. An example is the difference between how WML and HTML report back the results of a <xref:System.Web.UI.MobileControls.SelectionList>  
@@ -541,7 +541,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnLoad%2A> method is inherited from the control's parent. If the control is a mobile server control, this method is inherited from the <xref:System.Web.UI.Control?displayProperty=fullName> class; if the control is a <xref:System.Web.UI.MobileControls.MobilePage>, this method is inherited from the <xref:System.Web.UI.Page?displayProperty=fullName> class.  
+ The <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnLoad%2A> method is inherited from the control's parent. If the control is a mobile server control, this method is inherited from the <xref:System.Web.UI.Control?displayProperty=nameWithType> class; if the control is a <xref:System.Web.UI.MobileControls.MobilePage>, this method is inherited from the <xref:System.Web.UI.Page?displayProperty=nameWithType> class.  
   
  ]]></format>
         </remarks>

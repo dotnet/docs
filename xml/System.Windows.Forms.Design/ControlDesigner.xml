@@ -1265,20 +1265,20 @@
 ## Remarks  
  This method is called for each message the control would usually receive. This allows the designer to preprocess messages before optionally routing them to the control.  
   
- To send the message to the control’s <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName> method, call <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> on the control's designer.  
+ To send the message to the control’s <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType> method, call <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> on the control's designer.  
   
 > [!NOTE]
 >  The designer filters messages, so some messages will not be sent to the control. For example, mouse messages are intercepted by the designer. If this is not the behavior you want, call <xref:System.Windows.Forms.Design.ControlDesigner.DefWndProc%2A> instead.  
   
- Pass `m` as a parameter. Optionally, you can alter or create a new <xref:System.Windows.Forms.Message?displayProperty=fullName> to pass to the control's method.  
+ Pass `m` as a parameter. Optionally, you can alter or create a new <xref:System.Windows.Forms.Message?displayProperty=nameWithType> to pass to the control's method.  
   
  The following table shows the flow of messages.  
   
 |Without a designer|With a designer|  
 |------------------------|---------------------|  
-|USER32<br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=fullName><br /><br /> USER32|USER32<br /><br /> `Control.Designer.` <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A><br /><br /> <xref:System.Windows.Forms.Design.ControlDesigner.DefWndProc%2A><br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=fullName><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=fullName><br /><br /> USER32|  
+|USER32<br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=nameWithType><br /><br /> USER32|USER32<br /><br /> `Control.Designer.` <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A><br /><br /> <xref:System.Windows.Forms.Design.ControlDesigner.DefWndProc%2A><br /><br /> <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType><br /><br /> <xref:System.Windows.Forms.Control.DefWndProc%2A?displayProperty=nameWithType><br /><br /> USER32|  
   
- The designer intercepts messages by replacing the <xref:System.Windows.Forms.Control.WindowTarget%2A?displayProperty=fullName> property on the control. Usually, <xref:System.Windows.Forms.Control.WindowTarget%2A> points to the <xref:System.Windows.Forms.NativeWindow> contained within the control. During design time, the designer replaces this with its own window target, and caches the original value.  
+ The designer intercepts messages by replacing the <xref:System.Windows.Forms.Control.WindowTarget%2A?displayProperty=nameWithType> property on the control. Usually, <xref:System.Windows.Forms.Control.WindowTarget%2A> points to the <xref:System.Windows.Forms.NativeWindow> contained within the control. During design time, the designer replaces this with its own window target, and caches the original value.  
   
  ]]></format>
         </remarks>

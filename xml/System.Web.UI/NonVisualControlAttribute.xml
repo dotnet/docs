@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field, or passing `true` to the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor.  
+ A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field, or passing `true` to the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor.  
   
    
   
@@ -224,7 +224,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field is equivalent to creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor and passing `true` as the parameter value.  
+ The <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field is equivalent to creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor and passing `true` as the parameter value.  
   
  ]]></format>
         </remarks>
@@ -248,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.NonVisualControlAttribute.Visual> field is equivalent to creating an instance of the attribute using the default <xref:System.Web.UI.NonVisualControlAttribute.%23ctor?displayProperty=fullName> constructor, or creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor and passing `false` as the parameter value.  
+ The <xref:System.Web.UI.NonVisualControlAttribute.Visual> field is equivalent to creating an instance of the attribute using the default <xref:System.Web.UI.NonVisualControlAttribute.%23ctor?displayProperty=nameWithType> constructor, or creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor and passing `false` as the parameter value.  
   
  ]]></format>
         </remarks>

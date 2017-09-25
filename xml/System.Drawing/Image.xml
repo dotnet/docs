@@ -1056,9 +1056,9 @@
    
   
 ## Examples  
- The following code example demonstrates how to read and display the metadata in an image file using the <xref:System.Drawing.Imaging.PropertyItem?displayProperty=fullName> class and the <xref:System.Drawing.Image.PropertyItems%2A> property.  
+ The following code example demonstrates how to read and display the metadata in an image file using the <xref:System.Drawing.Imaging.PropertyItem?displayProperty=nameWithType> class and the <xref:System.Drawing.Image.PropertyItems%2A> property.  
   
- This example is designed to be used a Windows Form that imports the <xref:System.Drawing.Imaging?displayProperty=fullName> namespace. Paste the code into the form and change the path to `fakePhoto.jpg` to point to an image file on your system. Call the `ExtractMetaData` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ This example is designed to be used a Windows Form that imports the <xref:System.Drawing.Imaging?displayProperty=nameWithType> namespace. Paste the code into the form and change the path to `fakePhoto.jpg` to point to an image file on your system. Call the `ExtractMetaData` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-cpp[System.Drawing.ImageExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#6)]
  [!code-csharp[System.Drawing.ImageExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#6)]

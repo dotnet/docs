@@ -14,7 +14,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on a <xref:System.ServiceModel.Channels.BindingElement?displayProperty=fullName> object to write statements about endpoint capabilities or requirements into the WSDL information exposed by a particular endpoint. Typically the binding element is one that implements some feature, but this is not required. To load your policy exporter from a configuration file, implement a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=fullName> that returns the policy exporter <xref:System.ServiceModel.Channels.BindingElement> object.  
+ Implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on a <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType> object to write statements about endpoint capabilities or requirements into the WSDL information exposed by a particular endpoint. Typically the binding element is one that implements some feature, but this is not required. To load your policy exporter from a configuration file, implement a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=nameWithType> that returns the policy exporter <xref:System.ServiceModel.Channels.BindingElement> object.  
   
  The policy exporter is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to use policy assertions to communicate to clients the existence of that custom binding requirement or endpoint capability.  
   
@@ -34,7 +34,7 @@
  [!code-csharp[CustomPolicySample#14](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/policyexporter.cs#14)]
  [!code-vb[CustomPolicySample#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/policyexporter.vb#14)]  
   
- The following code example shows a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=fullName> implementation that enables the preceding policy exporter to be loaded from an application configuration file.  
+ The following code example shows a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=nameWithType> implementation that enables the preceding policy exporter to be loaded from an application configuration file.  
   
  [!code-csharp[CustomPolicySample#15](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/policyexporter.cs#15)]
  [!code-vb[CustomPolicySample#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/policyexporter.vb#15)]  
@@ -85,7 +85,7 @@
  [!code-csharp[CustomPolicySample#14](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/policyexporter.cs#14)]
  [!code-vb[CustomPolicySample#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/policyexporter.vb#14)]  
   
- The following code example shows a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=fullName> implementation that enables the preceding policy exporter to be loaded from an application configuration file.  
+ The following code example shows a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=nameWithType> implementation that enables the preceding policy exporter to be loaded from an application configuration file.  
   
  [!code-csharp[CustomPolicySample#15](~/samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/policyexporter.cs#15)]
  [!code-vb[CustomPolicySample#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/policyexporter.vb#15)]  

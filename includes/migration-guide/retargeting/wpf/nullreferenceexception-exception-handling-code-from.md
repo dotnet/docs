@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.7|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Windows.Media.ImageSourceConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Media.ImageSourceConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object)?displayProperty=nameWithType></li></ul>|
 

@@ -243,7 +243,7 @@
 ## Remarks  
  The specified array must be of a compatible type.  
   
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count%2A>.  
   

@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Activities.Statements.InvokeMethod.Parameters?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Activities.Statements.InvokeMethod.Parameters?displayProperty=nameWithType></li></ul>|
 

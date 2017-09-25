@@ -18,11 +18,11 @@
 ## Remarks  
  All event data (trace or debug) from the source event is written to the ETW subsystem as a string. The data elements are delimited using a comma. To specify a different delimiter, use the <xref:System.Diagnostics.Eventing.EventProviderTraceListener.Delimiter%2A> property.  
   
- Adding the listener to <xref:System.Diagnostics.TraceSource?displayProperty=fullName> registers the provider with the ETW subsystem. You must create an ETW trace session using the Logman.exe executable program (or something similar) to write the events to a log file.  
+ Adding the listener to <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> registers the provider with the ETW subsystem. You must create an ETW trace session using the Logman.exe executable program (or something similar) to write the events to a log file.  
   
  You do not need a manifest to consume events from the listener because the event data is a single string.  
   
- When you call the <xref:System.Diagnostics.TraceSource?displayProperty=fullName> methods to write events, you pass a <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration value. The enumeration contains both level and keyword values. When you enable a trace listener provider from an ETW session, the level value that you specify can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration values:  
+ When you call the <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> methods to write events, you pass a <xref:System.Diagnostics.TraceEventType?displayProperty=nameWithType> enumeration value. The enumeration contains both level and keyword values. When you enable a trace listener provider from an ETW session, the level value that you specify can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=nameWithType> enumeration values:  
   
 -   Critical (value is 1)  
   
@@ -34,7 +34,7 @@
   
 -   Warning (value is 4)  
   
- The keyword value that you specify for the session can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration values:  
+ The keyword value that you specify for the session can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=nameWithType> enumeration values:  
   
 -   Resume (value is 2,048)  
   
@@ -186,7 +186,7 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
   
  You do not need a manifest to consume events from the listener because the event data is a single string.  
   
- The delimiter applies to event data written using the <xref:System.Diagnostics.TraceSource.TraceData%2A?displayProperty=fullName> method.  
+ The delimiter applies to event data written using the <xref:System.Diagnostics.TraceSource.TraceData%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

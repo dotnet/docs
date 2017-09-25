@@ -1870,7 +1870,7 @@
 ## Remarks  
  Exception string: The specified element could not be saved.  
   
- Thrown by the <xref:Microsoft.JScript.Vsa.IJSVsaEngine.SaveSourceState*> method and <xref:Microsoft.JScript.Vsa.IJSVsaPersistSite.SaveElement*> methods when a call to the `SaveElement` method fails. The `InnerException` property of the <xref:System.Exception> class is set to the actual exception thrown by the underlying code (for example, an out of disk space exception). For more information, see <xref:System.Exception.InnerException%2A?displayProperty=fullName>. The `SaveSourceState` method returns the `SaveElementFailed` exception from the `SaveElement` method back to the caller.  
+ Thrown by the <xref:Microsoft.JScript.Vsa.IJSVsaEngine.SaveSourceState*> method and <xref:Microsoft.JScript.Vsa.IJSVsaPersistSite.SaveElement*> methods when a call to the `SaveElement` method fails. The `InnerException` property of the <xref:System.Exception> class is set to the actual exception thrown by the underlying code (for example, an out of disk space exception). For more information, see <xref:System.Exception.InnerException%2A?displayProperty=nameWithType>. The `SaveSourceState` method returns the `SaveElementFailed` exception from the `SaveElement` method back to the caller.  
   
  ]]></format>
         </remarks>

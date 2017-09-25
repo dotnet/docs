@@ -70,37 +70,37 @@
  An eight-digit hexadecimal number. The first two digits specify the color's <xref:System.Windows.Media.Color.A%2A> value, the next two specify its <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `FF0000FF`.  
   
  *scA*  
- <xref:System.Single?displayProperty=fullName>  
+ <xref:System.Single?displayProperty=nameWithType>  
   
  The color's <xref:System.Windows.Media.Color.ScA%2A> value.  
   
  *scR*  
- <xref:System.Single?displayProperty=fullName>  
+ <xref:System.Single?displayProperty=nameWithType>  
   
  The color's <xref:System.Windows.Media.Color.ScR%2A> value.  
   
  *scG*  
- <xref:System.Single?displayProperty=fullName>  
+ <xref:System.Single?displayProperty=nameWithType>  
   
  The color's <xref:System.Windows.Media.Color.ScG%2A> value.  
   
  *scB*  
- <xref:System.Single?displayProperty=fullName>  
+ <xref:System.Single?displayProperty=nameWithType>  
   
  The color's <xref:System.Windows.Media.Color.ScB%2A> value.  
   
  *profileUri*  
- <xref:System.Uri?displayProperty=fullName>  
+ <xref:System.Uri?displayProperty=nameWithType>  
   
  The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.  
   
  *alphaValue*  
- <xref:System.Single?displayProperty=fullName>  
+ <xref:System.Single?displayProperty=nameWithType>  
   
  The alpha channel color value. The value range is 0.0 to 1.0.  
   
  *colorValue*  
- <xref:System.Single?displayProperty=fullName>  
+ <xref:System.Single?displayProperty=nameWithType>  
   
  A comma-delimited list of three to eight values that represent the color channels of the color profile. The value range is 0.0 to 1.0.  
   
@@ -692,7 +692,7 @@
 ## Remarks  
  <xref:System.Windows.Media.Color> structures are added together by adding the alpha, red, green, and blue channels of the first color to the alpha, red, green, and blue channels of the second color.  For example, the alpha channel of `color1` and the alpha channel of `color2` are added together to produce the alpha channel of the resulting color.  The same is done with the red, green, and blue channels to produce the red, green, and blue channels of the new color.  
   
- The equivalent method for this operator is <xref:System.Windows.Media.Color.Add%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Add%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -726,7 +726,7 @@
   
  The <xref:System.Windows.Media.Color.AreClose%2A> method uses a fuzzy equality algorithm that compensates for this floating-point arithmetic error by returning `true` for a comparison of two <xref:System.Windows.Media.Color> structures that are practically identical, but whose values may differ by a minuscule amount.  
   
- The equivalent method for this operator is <xref:System.Windows.Media.Color.Equals%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Equals%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -760,7 +760,7 @@
   
  The <xref:System.Windows.Media.Color.AreClose%2A> method uses a fuzzy equality algorithm that compensates for this floating-point arithmetic error by returning `true` for a comparison of two <xref:System.Windows.Media.Color> structures that are practically identical, but whose values may differ by a minuscule amount.  
   
- The equivalent method for this operator is <xref:System.Windows.Media.Color.Equals%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Equals%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -786,7 +786,7 @@
         <summary>Multiplies the alpha, red, blue, and green channels of the specified <see cref="T:System.Windows.Media.Color" /> structure by the specified value.</summary>
         <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the multiplication operation.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Media.Color.Multiply%28System.Windows.Media.Color%2CSystem.Single%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Media.Color.Multiply%28System.Windows.Media.Color%2CSystem.Single%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -817,7 +817,7 @@
 ## Remarks  
  <xref:System.Windows.Media.Color> structures are subtracted from one another by subtracting the alpha, red, green, and blue channels of the second color from the alpha, red, green, and blue channels of the first color.  For example, the alpha channel of `color2` is subtracted from  the alpha channel of `color1` to produce the alpha channel of the resulting <xref:System.Windows.Media.Color> structure.  The same is done with the red, green, and blue channels to produce the red, green, and blue channels of the new <xref:System.Windows.Media.Color> structure.  
   
- The equivalent method for this operator is <xref:System.Windows.Media.Color.Subtract%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Subtract%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

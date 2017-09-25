@@ -33,7 +33,7 @@
 ## Remarks  
  This interface is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- This interface preserves the vtable order of the <xref:System.Reflection.FieldInfo?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ This interface preserves the vtable order of the <xref:System.Reflection.FieldInfo?displayProperty=nameWithType> class members that can be accessed by unmanaged COM objects.  
   
  ]]></format>
     </remarks>

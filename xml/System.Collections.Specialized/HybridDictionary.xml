@@ -34,7 +34,7 @@
   
  If the initial size of the collection is greater than the optimal size for a <xref:System.Collections.Specialized.ListDictionary>, the collection is stored in a <xref:System.Collections.Hashtable> to avoid the overhead of copying elements from the <xref:System.Collections.Specialized.ListDictionary> to a <xref:System.Collections.Hashtable>.  
   
- The constructor accepts a Boolean parameter that allows the user to specify whether the collection ignores the case when comparing strings. If the collection is case-sensitive, it uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName>. If the collection is case-insensitive, it performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. By default, the collection is case-sensitive. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ The constructor accepts a Boolean parameter that allows the user to specify whether the collection ignores the case when comparing strings. If the collection is case-sensitive, it uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>. If the collection is case-insensitive, it performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. By default, the collection is case-sensitive. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>.  
   
  A key cannot be null, but a value can.  
   
@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName> as the comparer.  
+ By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType> as the comparer.  
   
  The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.HybridDictionary> must be unique.  
   
@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>.  
   
  This constructor is an O(1) operation.  
   
@@ -177,7 +177,7 @@
 ## Remarks  
  If the initial size of the collection is greater than the optimal size for a <xref:System.Collections.Specialized.ListDictionary>, the collection is stored in a <xref:System.Collections.Hashtable> to avoid the overhead of copying elements from the <xref:System.Collections.Specialized.ListDictionary> to the <xref:System.Collections.Hashtable>.  
   
- By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName> as the comparer.  
+ By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType> as the comparer.  
   
  The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.HybridDictionary> must be unique.  
   
@@ -220,7 +220,7 @@
 ## Remarks  
  If the initial size of the collection is greater than the optimal size for a <xref:System.Collections.Specialized.ListDictionary>, the collection is stored in a <xref:System.Collections.Hashtable> to avoid the overhead of copying elements from the <xref:System.Collections.Specialized.ListDictionary> to the <xref:System.Collections.Hashtable>.  
   
- If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>.  
   
  This constructor is an O(`n`) operation, where `n` is `initialSize`.  
   
@@ -584,7 +584,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
   
@@ -625,7 +625,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
   
@@ -666,7 +666,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  Derived classes can provide a synchronized version of the <xref:System.Collections.Specialized.HybridDictionary> using the <xref:System.Collections.Specialized.HybridDictionary.SyncRoot%2A> property.  
   

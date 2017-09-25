@@ -52,7 +52,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a <xref:System.Windows.Forms.MaskedTextBox?displayProperty=fullName> control. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML](~/docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf-by-using-xaml.md).  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML](~/docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf-by-using-xaml.md).  
   
  [!code-xaml[HostingWfInWpfWithXaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#1)]  
   
@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.BackgroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=fullName> properties of the hosted control.  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.BackgroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=nameWithType> properties of the hosted control.  
   
  For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Background%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
@@ -337,7 +337,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call the <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method to forward all keyboard messages when a <xref:System.Windows.Forms.Form?displayProperty=fullName> is opened modelessly. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method installs a message filter that is required for modeless forms to function correctly when opened by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. You need to call this method only once for a particular <xref:System.Windows.Forms.Integration.WindowsFormsHost> instance.  
+ Call the <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method to forward all keyboard messages when a <xref:System.Windows.Forms.Form?displayProperty=nameWithType> is opened modelessly. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method installs a message filter that is required for modeless forms to function correctly when opened by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. You need to call this method only once for a particular <xref:System.Windows.Forms.Integration.WindowsFormsHost> instance.  
   
  ]]></format>
         </remarks>
@@ -365,7 +365,7 @@
 ## Remarks  
  This property setting affects only those controls whose template uses the property as a parameter. It has no effect on other controls.  
   
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontFamily"></a>   
 ## XAML Attribute Usage  
@@ -427,7 +427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontSize"></a>   
 ## XAML Attribute Usage  
@@ -489,7 +489,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontStyle"></a>   
 ## XAML Attribute Usage  
@@ -551,7 +551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=nameWithType> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontWeight"></a>   
 ## XAML Attribute Usage  
@@ -613,7 +613,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.ForeColor%2A?displayProperty=fullName> property of the hosted control. For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Foreground%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.ForeColor%2A?displayProperty=nameWithType> property of the hosted control. For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Foreground%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_Foreground"></a>   
 ## XAML Attribute Usage  

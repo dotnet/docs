@@ -445,7 +445,7 @@ manager: "wpickett"
     …  
     ```  
   
-     Using an integer instead of a string for an ID can be more efficient. If the same string is being repeated thousands of times, consider string interning. For more information about string interning, see the reference topic for the <xref:System.String.Intern%2A?displayProperty=fullName> method.  
+     Using an integer instead of a string for an ID can be more efficient. If the same string is being repeated thousands of times, consider string interning. For more information about string interning, see the reference topic for the <xref:System.String.Intern%2A?displayProperty=nameWithType> method.  
   
 <a name="ObjRef"></a>   
 ##### To determine references to objects  
@@ -491,7 +491,7 @@ manager: "wpickett"
     GC.Collect();  
     ```  
   
-     If the test resolves the problem, this means that the garbage collector was not reclaiming objects, because the finalizers for those objects had been suspended. The <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=fullName> method enables the finalizers to complete their tasks, and fixes the problem.  
+     If the test resolves the problem, this means that the garbage collector was not reclaiming objects, because the finalizers for those objects had been suspended. The <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=nameWithType> method enables the finalizers to complete their tasks, and fixes the problem.  
   
 <a name="Finalize"></a>   
 ##### To determine whether there are objects waiting to be finalized  

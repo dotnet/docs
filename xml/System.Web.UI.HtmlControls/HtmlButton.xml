@@ -245,7 +245,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlButton.RaisePostBackEvent%2A> method is used by the <xref:System.Web.UI.HtmlControls.HtmlButton> control, when it is clicked, to raise a <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event.  
   
- If the <xref:System.Web.UI.HtmlControls.HtmlButton.CausesValidation%2A> property is `true`, the <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName> method is called using the group of controls specified in the <xref:System.Web.UI.HtmlControls.HtmlButton.ValidationGroup%2A> property.  
+ If the <xref:System.Web.UI.HtmlControls.HtmlButton.CausesValidation%2A> property is `true`, the <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> method is called using the group of controls specified in the <xref:System.Web.UI.HtmlControls.HtmlButton.ValidationGroup%2A> property.  
   
  This method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlButton> control.  
   
@@ -275,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlButton.RenderAttributes%2A> method writes the `onclick` attribute of the rendered <xref:System.Web.UI.HtmlControls.HtmlButton> control, and then calls the base <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.HtmlControls.HtmlButton.RenderAttributes%2A> method writes the `onclick` attribute of the rendered <xref:System.Web.UI.HtmlControls.HtmlButton> control, and then calls the base <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlButton.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlButton> control.  
   

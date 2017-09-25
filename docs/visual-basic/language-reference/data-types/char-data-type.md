@@ -73,14 +73,14 @@ charVar = "Z"C
   
 -   **Interop Considerations.** If you interface with components not written for the .NET Framework, for example Automation or COM objects, remember that character types have a different data width (8 bits) in other environments. If you pass an 8-bit argument to such a component, declare it as `Byte` instead of `Char` in your new Visual Basic code.  
   
--   **Widening.** The `Char` data type widens to `String`. This means you can convert `Char` to `String` and will not encounter a <xref:System.OverflowException?displayProperty=fullName> error.  
+-   **Widening.** The `Char` data type widens to `String`. This means you can convert `Char` to `String` and will not encounter a <xref:System.OverflowException?displayProperty=nameWithType> error.  
   
 -   **Type Characters.** Appending the literal type character `C` to a single-character string literal forces it to the `Char` data type. `Char` has no identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Char?displayProperty=fullName> structure.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Char?displayProperty=nameWithType> structure.  
   
 ## See Also  
- <xref:System.Char?displayProperty=fullName>   
+ <xref:System.Char?displayProperty=nameWithType>   
  <xref:Microsoft.VisualBasic.Strings.Asc%2A>   
  <xref:Microsoft.VisualBasic.Strings.AscW%2A>   
  <xref:Microsoft.VisualBasic.Strings.Chr%2A>   

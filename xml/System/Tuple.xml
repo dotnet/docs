@@ -43,7 +43,7 @@
   
 -   To return multiple values from a method without using `out` parameters (in C#) or `ByRef` parameters (in Visual Basic).  
   
--   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=fullName> method has a single parameter that lets you supply one value to the method that the thread executes at startup time. If you supply a <xref:System.Tuple%603> object as the method argument, you can supply the thread’s startup routine with three items of data.  
+-   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup time. If you supply a <xref:System.Tuple%603> object as the method argument, you can supply the thread’s startup routine with three items of data.  
   
  The <xref:System.Tuple> class does not itself represent a tuple. Instead, it is a class that provides static methods for creating instances of the tuple types that are supported by the .NET Framework. It provides helper methods that you can call to instantiate tuple objects without having to explicitly specify the type of each tuple component.  
   
@@ -57,7 +57,7 @@
  [!code-csharp[System.Tuple.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple.class/cs/example1.cs#2)]
  [!code-vb[System.Tuple.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple.class/vb/example1.vb#2)]  
   
- The <xref:System.Tuple.Create%2A> helper methods directly support the creation of tuple objects that have from one to eight components (that is, singletons through octuples). Although there is no practical limit to the number of components a tuple may have, helper methods are not available to create a tuple with nine or more components. To create such a tuple, you must call the <xref:System.Tuple%608.%23ctor%2A?displayProperty=fullName> constructor.  
+ The <xref:System.Tuple.Create%2A> helper methods directly support the creation of tuple objects that have from one to eight components (that is, singletons through octuples). Although there is no practical limit to the number of components a tuple may have, helper methods are not available to create a tuple with nine or more components. To create such a tuple, you must call the <xref:System.Tuple%608.%23ctor%2A?displayProperty=nameWithType> constructor.  
   
 > [!NOTE]
 >  For additional information and examples that use tuples, see the documentation for the individual tuple types in the .NET Framework. These are listed in the See Also section at the end of this topic.  
@@ -239,7 +239,7 @@
  [!code-csharp[System.Tuple.Create#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple.create/cs/create1.cs#5)]
  [!code-vb[System.Tuple.Create#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple.create/vb/create1.vb#5)]  
   
- This code is equivalent to the following call to the <xref:System.Tuple%603.%23ctor%2A?displayProperty=fullName> class constructor.  
+ This code is equivalent to the following call to the <xref:System.Tuple%603.%23ctor%2A?displayProperty=nameWithType> class constructor.  
   
  [!code-csharp[System.Tuple.Create#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple.create/cs/create1.cs#6)]
  [!code-vb[System.Tuple.Create#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple.create/vb/create1.vb#6)]  
@@ -305,7 +305,7 @@
  [!code-csharp[System.Tuple.Create#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple.create/cs/create1.cs#7)]
  [!code-vb[System.Tuple.Create#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple.create/vb/create1.vb#7)]  
   
- This code is equivalent to the following call to the <xref:System.Tuple%604.%23ctor%2A?displayProperty=fullName> class constructor.  
+ This code is equivalent to the following call to the <xref:System.Tuple%604.%23ctor%2A?displayProperty=nameWithType> class constructor.  
   
  [!code-csharp[System.Tuple.Create#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple.create/cs/create1.cs#8)]
  [!code-vb[System.Tuple.Create#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple.create/vb/create1.vb#8)]  
@@ -607,7 +607,7 @@
  <xref:System.Tuple.Create%2A> is a helper method that you can call to instantiate an 8-tuple without having to explicitly specify the types of its components.  
   
 > [!NOTE]
->  You must call the  <xref:System.Tuple%608.%23ctor%2A?displayProperty=fullName> constructor to create a tuple with nine or more components unless your language provides a special syntax for this purpose. The static (`Shared` in Visual Basic) methods of the <xref:System.Tuple> class cannot be used to create a tuple with nine or more components.  
+>  You must call the  <xref:System.Tuple%608.%23ctor%2A?displayProperty=nameWithType> constructor to create a tuple with nine or more components unless your language provides a special syntax for this purpose. The static (`Shared` in Visual Basic) methods of the <xref:System.Tuple> class cannot be used to create a tuple with nine or more components.  
   
    
   

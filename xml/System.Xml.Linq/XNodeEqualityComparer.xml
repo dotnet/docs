@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The purpose of this class is to implement <xref:System.Collections.IEqualityComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>. Classes that require identity (such as <xref:System.Collections.Generic.Dictionary%602> ) require an instance of a class that implements one of these interfaces.  
+ The purpose of this class is to implement <xref:System.Collections.IEqualityComparer?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType>. Classes that require identity (such as <xref:System.Collections.Generic.Dictionary%602> ) require an instance of a class that implements one of these interfaces.  
   
  ]]></format>
     </remarks>

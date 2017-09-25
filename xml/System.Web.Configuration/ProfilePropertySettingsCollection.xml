@@ -363,7 +363,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of <xref:System.Web.Configuration.ProfilePropertySettingsCollection.OnDeserializeUnrecognizedElement%2A> throws specialized errors if the element name is either "clear" or "group".  After checking for these conditions, the method then explicitly calls its base implementation, the <xref:System.Configuration.ConfigurationElementCollection.OnDeserializeUnrecognizedElement%2A?displayProperty=fullName> method.  
+ This implementation of <xref:System.Web.Configuration.ProfilePropertySettingsCollection.OnDeserializeUnrecognizedElement%2A> throws specialized errors if the element name is either "clear" or "group".  After checking for these conditions, the method then explicitly calls its base implementation, the <xref:System.Configuration.ConfigurationElementCollection.OnDeserializeUnrecognizedElement%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

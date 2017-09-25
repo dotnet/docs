@@ -51,7 +51,7 @@
   
 -   By calling the <xref:System.Globalization.SortVersion.%23ctor%2A> constructor, which instantiates a new <xref:System.Globalization.SortVersion> object based on a version number and sort ID. This constructor is most useful when recreating a <xref:System.Globalization.SortVersion> object from saved data.  
   
--   By retrieving the value of the <xref:System.Globalization.CompareInfo.Version%2A?displayProperty=fullName> property. This property provides information about the Unicode version used by the .NET Framework on which the application is running.  
+-   By retrieving the value of the <xref:System.Globalization.CompareInfo.Version%2A?displayProperty=nameWithType> property. This property provides information about the Unicode version used by the .NET Framework on which the application is running.  
   
  The <xref:System.Globalization.SortVersion> class has two properties, <xref:System.Globalization.SortVersion.FullVersion%2A> and <xref:System.Globalization.SortVersion.SortId%2A>, that indicate the Unicode version and the specific culture used for string comparison. The <xref:System.Globalization.SortVersion.FullVersion%2A> property is an arbitrary numeric value that reflects the Unicode version used for string comparison, and the <xref:System.Globalization.SortVersion.SortId%2A> property is an arbitrary <xref:System.Guid> that reflects the culture whose conventions are used for string comparison. The values of these two properties are important only when you compare two <xref:System.Globalization.SortVersion> objects by using the <xref:System.Globalization.SortVersion.Equals%2A> method, the <xref:System.Globalization.SortVersion.op_Equality%2A> operator, or the <xref:System.Globalization.SortVersion.op_Inequality%2A> operator.  
   

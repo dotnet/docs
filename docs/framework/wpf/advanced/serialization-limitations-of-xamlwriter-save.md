@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XamlWriter.Save, serialization limitations of"
-  - "limitations of XamlWriter.Save"
-  - "serialization limitations of XamlWriter.Save"
+helpviewer_keywords: ["XamlWriter.Save, serialization limitations of", "limitations of XamlWriter.Save", "serialization limitations of XamlWriter.Save"]
 ms.assetid: f86acc91-2b67-4039-8555-505734491d36
 caps.latest.revision: 10
 author: dotnet-bot

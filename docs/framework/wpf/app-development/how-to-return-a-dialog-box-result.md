@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dialog boxes, returning results"
+helpviewer_keywords: ["dialog boxes, returning results"]
 ms.assetid: 4c5cf286-746b-4052-934d-d80cbf8acba3
 caps.latest.revision: 4
 author: dotnet-bot

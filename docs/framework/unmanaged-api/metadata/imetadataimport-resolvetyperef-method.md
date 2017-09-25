@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.ResolveTypeRef"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::ResolveTypeRef"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ResolveTypeRef method [.NET Framework metadata]"
-  - "IMetaDataImport::ResolveTypeRef method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.ResolveTypeRef"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::ResolveTypeRef"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ResolveTypeRef method [.NET Framework metadata]", "IMetaDataImport::ResolveTypeRef method [.NET Framework metadata]"]
 ms.assetid: 556bccfb-61bc-4761-b1d5-de4b1c18a38f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

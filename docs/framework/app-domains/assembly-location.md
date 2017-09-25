@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "locating assemblies"
-  - "assemblies [.NET Framework], location"
+helpviewer_keywords: ["locating assemblies", "assemblies [.NET Framework], location"]
 ms.assetid: 9f1f41a7-2954-49d3-a2c0-62b6ef4d40ab
 caps.latest.revision: 7
 author: "rpetrusha"

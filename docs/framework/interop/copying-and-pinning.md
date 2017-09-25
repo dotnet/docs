@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "pinning, interop marshaling"
-  - "copying, interop marshaling"
-  - "interop marshaling, copying"
-  - "interop marshaling, pinning"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["pinning, interop marshaling", "copying, interop marshaling", "interop marshaling, copying", "interop marshaling, pinning"]
 ms.assetid: 0059f576-e460-4e70-b257-668870e420b8
 caps.latest.revision: 8
 author: "rpetrusha"

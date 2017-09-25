@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "applying mathematical formulas to animations [WPF]"
-  - "applying easing functions to animations [WPF]"
-  - "mathematical formulas [WPF], applying to animations"
-  - "animations [WPF], realistic movement"
-  - "easing functions [WPF]"
-  - "customizing easing functions [WPF]"
-  - "easing functions [WPF], definition"
-  - "easing functions [WPF], customizing"
-  - "animations [WPF], applying"
+helpviewer_keywords: ["applying mathematical formulas to animations [WPF]", "applying easing functions to animations [WPF]", "mathematical formulas [WPF], applying to animations", "animations [WPF], realistic movement", "easing functions [WPF]", "customizing easing functions [WPF]", "easing functions [WPF], definition", "easing functions [WPF], customizing", "animations [WPF], applying"]
 ms.assetid: 075b9c2b-82c4-43fa-b3cd-de0b6236eb38
 caps.latest.revision: 10
 author: dotnet-bot

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "event handling [Windows Forms]"
-  - "Windows Forms controls, event handling"
-  - "Windows Forms, event handling"
-  - "events [Windows Forms], event handlers"
-  - "event handlers [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["event handling [Windows Forms]", "Windows Forms controls, event handling", "Windows Forms, event handling", "events [Windows Forms], event handlers", "event handlers [Windows Forms]"]
 ms.assetid: 6514e530-c6b8-489c-a8d2-eda7b7072701
 caps.latest.revision: 22
 author: dotnet-bot

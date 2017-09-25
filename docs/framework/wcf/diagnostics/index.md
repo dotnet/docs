@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation, diagnostics"
-  - "Windows Communication Foundation, administration"
-  - "diagnostics [WCF]"
-  - "WCF, diagnostics"
-  - "administration [WCF]"
-  - "WCF, administration"
+helpviewer_keywords: ["Windows Communication Foundation, diagnostics", "Windows Communication Foundation, administration", "diagnostics [WCF]", "WCF, diagnostics", "administration [WCF]", "WCF, administration"]
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
 caps.latest.revision: 19
 author: "Erikre"

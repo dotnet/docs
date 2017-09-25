@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls [WPF], DockPanel"
-  - "DockPanel control, partitioning space"
-  - "partitioning space"
+helpviewer_keywords: ["controls [WPF], DockPanel", "DockPanel control, partitioning space", "partitioning space"]
 ms.assetid: a219b9e5-b205-4438-89b5-0a137ac463ab
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetVersionFromProcess"
-api_location: 
-  - "mscoree.dll"
-  - "mscoreei.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "GetVersionFromProcess"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetVersionFromProcess function [.NET Framework hosting]"
+api_name: ["GetVersionFromProcess"]
+api_location: ["mscoree.dll", "mscoreei.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["GetVersionFromProcess"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetVersionFromProcess function [.NET Framework hosting]"]
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

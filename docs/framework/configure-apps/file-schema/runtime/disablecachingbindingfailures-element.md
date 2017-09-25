@@ -5,23 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCachingBindingFailures"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCachingBindingFailures"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework],caching binding failures"
-  - "caching assembly binding failures"
-  - "<disableCachingBindingFailures> element"
-  - "disableCachingBindingFailures element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCachingBindingFailures", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCachingBindingFailures"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["assemblies [.NET Framework], caching binding failures", "caching assembly binding failures", "<disableCachingBindingFailures> element", "disableCachingBindingFailures element"]
 ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
 caps.latest.revision: 14
 author: "rpetrusha"

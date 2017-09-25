@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugProcess5::EnableNGenPolicy"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugProcess5::EnableNGENPolicy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugProcess5::EnableNGENPolicy method [.NET Framework debugging]"
-  - "EnableNGENPolicy method, ICorDebugProcess5 interface [.NET Framework debugging]"
+api_name: ["ICorDebugProcess5::EnableNGenPolicy"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugProcess5::EnableNGENPolicy"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugProcess5::EnableNGENPolicy method [.NET Framework debugging]", "EnableNGENPolicy method, ICorDebugProcess5 interface [.NET Framework debugging]"]
 ms.assetid: 3b8e15ca-3c72-4685-a937-da4c739cb9e9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

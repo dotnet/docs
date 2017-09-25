@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.GetTypeRefProps"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::GetTypeRefProps"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataImport::GetTypeRefProps method [.NET Framework metadata]"
-  - "GetTypeRefProps method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.GetTypeRefProps"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::GetTypeRefProps"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataImport::GetTypeRefProps method [.NET Framework metadata]", "GetTypeRefProps method [.NET Framework metadata]"]
 ms.assetid: 01837955-ce1e-4068-b338-fd473bd77d1d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

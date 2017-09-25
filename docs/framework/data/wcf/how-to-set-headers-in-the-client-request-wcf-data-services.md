@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, customizing requests"
+helpviewer_keywords: ["WCF Data Services, customizing requests"]
 ms.assetid: 3d55168d-5901-4f48-8117-6c93da3ab5ae
 caps.latest.revision: 2
 author: "Erikre"

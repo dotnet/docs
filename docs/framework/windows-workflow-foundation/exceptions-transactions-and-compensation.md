@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], error handling"
+helpviewer_keywords: ["programming [WF], error handling"]
 ms.assetid: 694db4f9-7387-4b13-8f9f-b923b18c7490
 caps.latest.revision: 12
 author: "Erikre"

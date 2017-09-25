@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "row groups, manipulating through RowGroups property"
-  - "RowGroups property, manipulating row groups"
-  - "documents, manipulating row groups through RowGroups property"
-  - "properties, RowGroups, manipulating row groups"
+helpviewer_keywords: ["row groups, manipulating through RowGroups property", "RowGroups property, manipulating row groups", "documents, manipulating row groups through RowGroups property", "properties, RowGroups, manipulating row groups"]
 ms.assetid: ea61440f-08ae-44ed-b314-5716aaaae3ed
 caps.latest.revision: 9
 author: dotnet-bot

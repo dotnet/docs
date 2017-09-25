@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo3.GetStringLayout2 Method"
-api_location: 
-  - "Mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo3::GetStringLayout2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo3::GetStringLayout2 method [.NET Framework profiling]"
-  - "GetStringLayout2 method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo3.GetStringLayout2 Method"]
+api_location: ["Mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo3::GetStringLayout2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo3::GetStringLayout2 method [.NET Framework profiling]", "GetStringLayout2 method [.NET Framework profiling]"]
 ms.assetid: 1a268496-ee51-4d84-8700-ee56fd0c499d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

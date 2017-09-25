@@ -7,9 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Forms Add configuration element"
-  - "configuring Windows Forms applications"
+helpviewer_keywords: ["Windows Forms Add configuration element", "configuring Windows Forms applications"]
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
 caps.latest.revision: 10
 author: "rpetrusha"

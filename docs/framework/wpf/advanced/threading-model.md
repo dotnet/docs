@@ -5,27 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "text on buttons, updating"
-  - "message processing, nested"
-  - "blocking operations"
-  - "Dispatcher class"
-  - "Common Language Runtime (CLR), locking mechanism"
-  - "locking mechanism of Common Language Runtime (CLR)"
-  - "threading model"
-  - "classes, DependencyObject"
-  - "Word, spelling checking"
-  - "button text, updating"
-  - "spelling checking in Word"
-  - "asynchronous behavior, exposing"
-  - "DependencyObject class"
-  - "nested message processing"
-  - "classes, Dispatcher"
-  - "reentrancy"
+helpviewer_keywords: ["text on buttons, updating", "message processing, nested", "blocking operations", "Common Language Runtime (CLR), locking mechanism", "locking mechanism of Common Language Runtime (CLR)", "threading model", "Word, spelling checking", "button text, updating", "spelling checking in Word", "asynchronous behavior, exposing", "nested message processing", "reentrancy"]
 ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
 caps.latest.revision: 33
 author: dotnet-bot

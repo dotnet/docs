@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "namedCaches element"
-  - "caching [.NET Framework], configuration"
-  - "<namedCaches> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["namedCaches element", "caching [.NET Framework], configuration", "<namedCaches> element"]
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
 caps.latest.revision: 14
 author: "mcleblanc"

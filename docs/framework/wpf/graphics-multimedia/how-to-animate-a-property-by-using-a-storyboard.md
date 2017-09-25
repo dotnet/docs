@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, Storyboards"
-  - "Storyboards, animation"
+helpviewer_keywords: ["animation, Storyboards", "Storyboards, animation"]
 ms.assetid: f4a314e9-1da2-4367-85fc-1232487efa7a
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "key pairs for strong-named assemblies"
-  - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
-  - "cryptographic key pairs"
-  - "snk files (key pair files)"
-  - "public-private key pairs"
-  - ".snk files"
-  - "strong-named assemblies, key pairs"
+helpviewer_keywords: ["key pairs for strong-named assemblies", "signing assemblies", "assemblies [.NET Framework], signing", "cryptographic key pairs", "snk files (key pair files)", "public-private key pairs", ".snk files", "strong-named assemblies, key pairs"]
 ms.assetid: 05026813-f3bd-4d7c-9e0b-fc588eb3d114
 caps.latest.revision: 16
 author: "rpetrusha"

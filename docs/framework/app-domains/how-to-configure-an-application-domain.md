@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "application domains, configuring"
-  - "ApplicationBase property"
+helpviewer_keywords: ["application domains, configuring", "ApplicationBase property"]
 ms.assetid: 07ea8438-7a34-49f0-a7e8-3d6ff7e4a482
 caps.latest.revision: 9
 author: "rpetrusha"

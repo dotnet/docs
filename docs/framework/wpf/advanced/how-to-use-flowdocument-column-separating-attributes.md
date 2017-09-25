@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "FlowDocument column-separating attributes"
-  - "column-separating attributes"
-  - "documents, FlowDocument column-separating attributes"
+helpviewer_keywords: ["FlowDocument column-separating attributes", "column-separating attributes", "documents, FlowDocument column-separating attributes"]
 ms.assetid: c7a822f8-aeca-45bd-a258-2852ff28005c
 caps.latest.revision: 5
 author: dotnet-bot

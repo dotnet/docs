@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "forms, rounded"
-  - "Windows Forms, custom shapes"
-  - "Windows Forms, shaped"
-  - "shaped forms"
-  - "forms, changing the shape of"
-  - "forms, circular"
-  - "forms, nonrectangular"
-  - "Windows Forms, nonrectangular shape"
-  - "Windows Forms, rounded"
-  - "Windows Forms, circular"
-  - "forms, custom shapes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["forms, rounded", "Windows Forms, custom shapes", "Windows Forms, shaped", "shaped forms", "forms, changing the shape of", "forms, circular", "forms, nonrectangular", "Windows Forms, nonrectangular shape", "Windows Forms, rounded", "Windows Forms, circular", "forms, custom shapes"]
 ms.assetid: 6e6041e0-8e67-4487-b1e9-e410dbd1ef6c
 caps.latest.revision: 8
 author: dotnet-bot

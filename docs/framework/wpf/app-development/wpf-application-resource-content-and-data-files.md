@@ -5,22 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF application, files"
-  - "loose resources [WPF]"
-  - "content files [WPF]"
-  - "Site of Origin files [WPF]"
-  - "resource files [WPF]"
-  - "remote files [WPF]"
-  - "embedded resources [WPF]"
-  - "files [WPF]"
-  - "referencing application files [WPF]"
-  - "application development [WPF], files"
-  - "application management [WPF]"
+helpviewer_keywords: ["WPF application, files", "loose resources [WPF]", "content files [WPF]", "Site of Origin files [WPF]", "resource files [WPF]", "remote files [WPF]", "embedded resources [WPF]", "files [WPF]", "referencing application files [WPF]", "application development [WPF], files", "application management [WPF]"]
 ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 caps.latest.revision: 25
 author: dotnet-bot

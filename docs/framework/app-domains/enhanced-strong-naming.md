@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "strong-named assemblies"
-  - "strong naming [.NET Framework], enhanced"
+helpviewer_keywords: ["strong-named assemblies", "strong naming [.NET Framework], enhanced"]
 ms.assetid: 6cf17a82-62a1-4f6d-8d5a-d7d06dec2bb5
 caps.latest.revision: 11
 author: "rpetrusha"

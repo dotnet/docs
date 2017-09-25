@@ -2,15 +2,9 @@
 title: "Delay Signing an Assembly"
 ms.date: "07/31/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "deferring assembly signing"
-  - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
-  - "strong-named assemblies, delaying assembly signing"
-  - "partial assembly signing"
+helpviewer_keywords: ["deferring assembly signing", "signing assemblies", "assemblies [.NET Framework], signing", "strong-named assemblies, delaying assembly signing", "partial assembly signing"]
 ms.assetid: 9d300e17-5bf1-4360-97da-2aa55efd9070
 caps.latest.revision: 15
 author: "rpetrusha"

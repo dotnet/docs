@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "adorners [WPF], about adorners"
+helpviewer_keywords: ["adorners [WPF], about adorners"]
 ms.assetid: 33d4c5c2-2daf-4e45-ba9a-5b673e2b8280
 caps.latest.revision: 35
 author: dotnet-bot

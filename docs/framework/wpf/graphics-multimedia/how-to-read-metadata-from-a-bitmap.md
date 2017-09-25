@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "bitmaps, reading metadata from"
-  - "image metadata"
-  - "metadata, in images"
-  - "metadata, reading from a bitmap"
+helpviewer_keywords: ["bitmaps, reading metadata from", "image metadata", "metadata, in images", "metadata, reading from a bitmap"]
 ms.assetid: 920784ed-d96b-43e6-92d4-5dea5228f628
 caps.latest.revision: 5
 author: dotnet-bot

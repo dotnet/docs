@@ -5,28 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "named permission sets, code access security"
-  - "call stacks"
-  - "malicious code"
-  - "stack walk"
-  - "security [.NET Framework], code access security"
-  - "permissions [.NET Framework], code access security"
-  - "trusted code"
-  - "mobile code security"
-  - "unmanaged code, code access security"
-  - "granting permissions, code access security"
-  - "user authentication, code access security"
-  - "code access security"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["named permission sets, code access security", "call stacks", "malicious code", "stack walk", "security [.NET Framework], code access security", "permissions [.NET Framework], code access security", "trusted code", "mobile code security", "unmanaged code, code access security", "granting permissions, code access security", "user authentication, code access security", "code access security"]
 ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
 caps.latest.revision: 25
 author: "mairaw"

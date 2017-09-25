@@ -7,18 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "maximum staleness"
-  - "freshness of cached resources"
-  - "time, cached resources"
-  - "maximum age policy"
-  - "staleness of cached resources"
-  - "age of cached resources"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["maximum staleness", "freshness of cached resources", "time, cached resources", "maximum age policy", "staleness of cached resources", "age of cached resources"]
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
 caps.latest.revision: 11
 author: "mcleblanc"

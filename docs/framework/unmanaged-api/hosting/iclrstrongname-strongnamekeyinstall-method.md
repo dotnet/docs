@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName.StrongNameKeyInstall"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRStrongName::StrongNameKeyInstall"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRStrongName::StrongNameKeyInstall method [.NET Framework hosting]"
-  - "StrongNameKeyInstall method, ICLRStrongName interface [.NET Framework hosting]"
+api_name: ["ICLRStrongName.StrongNameKeyInstall"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRStrongName::StrongNameKeyInstall"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRStrongName::StrongNameKeyInstall method [.NET Framework hosting]", "StrongNameKeyInstall method, ICLRStrongName interface [.NET Framework hosting]"]
 ms.assetid: 5c15cf3b-164c-49d1-8e57-e42949d55acf
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

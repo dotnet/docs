@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged API reference [.NET Framework], fusion"
-  - "native API reference [.NET Framework], fusion"
-  - "fusion [.NET Framework], using the unmanaged API"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged API reference [.NET Framework], fusion", "native API reference [.NET Framework], fusion", "fusion [.NET Framework], using the unmanaged API"]
 ms.assetid: f8f20967-ea17-4900-bf05-87a078095fe6
 caps.latest.revision: 8
 author: "rpetrusha"

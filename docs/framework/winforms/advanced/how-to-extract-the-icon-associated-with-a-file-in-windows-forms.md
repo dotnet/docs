@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "displaying a file name and its file type icon in a ListView control [Windows Forms]"
-  - "file name extension icons [Windows Forms], displaying in a ListView"
-  - "extracting icons associated with a file type [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["displaying a file name and its file type icon in a ListView control [Windows Forms]", "file name extension icons [Windows Forms], displaying in a ListView", "extracting icons associated with a file type [Windows Forms]"]
 ms.assetid: 88e2ad8b-c34f-415a-84f2-dad756b5c928
 caps.latest.revision: 5
 author: dotnet-bot

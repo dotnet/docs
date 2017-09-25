@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "marshaling, run-time errors"
-  - "marshaling MDA"
-  - "managed debugging assistants (MDAs), marshaling"
-  - "MDAs (managed debugging assistants), marshaling"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["marshaling, run-time errors", "marshaling MDA", "managed debugging assistants (MDAs), marshaling", "MDAs (managed debugging assistants), marshaling"]
 ms.assetid: 5433b1f8-b0e5-40c9-a49a-0e5bd213363d
 caps.latest.revision: 12
 author: "mairaw"

@@ -7,17 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Internet, connections"
-  - "connections [.NET Framework], grouping"
-  - "WebRequest class, connection grouping"
-  - "network resources, connections"
-  - "connection pooling"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Internet, connections", "connections [.NET Framework], grouping", "WebRequest class, connection grouping", "network resources, connections", "connection pooling"]
 ms.assetid: 2ec502e8-4ba0-4c22-9410-f28eaf4eee63
 caps.latest.revision: 7
 author: "mcleblanc"

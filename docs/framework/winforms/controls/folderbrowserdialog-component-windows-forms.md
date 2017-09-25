@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "folders [Windows Forms], browsing"
-  - "FolderBrowserDialog component [Windows Forms]"
-  - "browsing folders"
-  - "directories [Windows Forms], browsing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["folders [Windows Forms], browsing", "FolderBrowserDialog component [Windows Forms]", "browsing folders", "directories [Windows Forms], browsing"]
 ms.assetid: d71a0c5e-898a-4eea-be74-93bdf50d1852
 caps.latest.revision: 11
 author: dotnet-bot

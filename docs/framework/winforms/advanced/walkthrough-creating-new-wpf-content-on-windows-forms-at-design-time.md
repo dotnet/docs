@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "interoperability, WPF and Windows Forms"
-  - "WPF content, hosting in Windows Forms"
-  - "hosting WPF content in Windows Forms"
-  - "ElementHost control"
-  - "WPF user control, hosting in Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["interoperability, WPF and Windows Forms", "WPF content, hosting in Windows Forms", "hosting WPF content in Windows Forms", "ElementHost control", "WPF user control, hosting in Windows Forms"]
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
 caps.latest.revision: 20
 author: dotnet-bot

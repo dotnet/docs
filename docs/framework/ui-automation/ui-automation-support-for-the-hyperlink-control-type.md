@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Hyperlink control type"
-  - "UI Automation, Hyperlink control type"
-  - "control types, Hyperlink"
+helpviewer_keywords: ["Hyperlink control type", "UI Automation, Hyperlink control type", "control types, Hyperlink"]
 ms.assetid: 110cceea-5932-4955-a1a6-13afc51422b2
 caps.latest.revision: 22
 author: "Xansky"

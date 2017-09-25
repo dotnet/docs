@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "custom context menus, positioning"
-  - "positioning custom context menus"
-  - "RichTextBox control, positioning custom context menus"
-  - "context menus, positioning"
+helpviewer_keywords: ["custom context menus, positioning", "positioning custom context menus", "RichTextBox control, positioning custom context menus", "context menus, positioning"]
 ms.assetid: bf77c930-a546-4573-9a56-9af345ba189a
 caps.latest.revision: 7
 author: dotnet-bot

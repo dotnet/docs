@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DTELErrorList"
-  - "WhyDTELPage"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "errors [Windows Forms Designer]"
-  - "design-time errors [Windows Forms Designer]"
+f1_keywords: ["DTELErrorList", "WhyDTELPage"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["errors [Windows Forms Designer]", "design-time errors [Windows Forms Designer]"]
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
 caps.latest.revision: 16
 author: dotnet-bot

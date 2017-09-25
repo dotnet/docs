@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "binding failure"
-  - "binding, failures"
-  - "MDAs (managed debugging assistants), binding failures"
-  - "assemblies [.NET Framework], binding failures"
-  - "managed debugging assistants (MDAs), binding failures"
-  - "BindingFailure MDA"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["binding failure", "binding, failures", "MDAs (managed debugging assistants), binding failures", "assemblies [.NET Framework], binding failures", "managed debugging assistants (MDAs), binding failures", "BindingFailure MDA"]
 ms.assetid: 26ada5af-175c-4576-931a-9f07fa1723e9
 caps.latest.revision: 13
 author: "mairaw"

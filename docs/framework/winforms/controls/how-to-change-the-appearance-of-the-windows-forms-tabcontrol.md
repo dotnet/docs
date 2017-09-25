@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "icons, displaying on tabs"
-  - "TabControl control [Windows Forms], changing page appearance"
-  - "tabs, controlling appearance"
-  - "buttons, displaying tabs as"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["icons, displaying on tabs", "TabControl control [Windows Forms], changing page appearance", "tabs, controlling appearance", "buttons, displaying tabs as"]
 ms.assetid: 7c6cc443-ed62-4d26-b94d-b8913b44f773
 caps.latest.revision: 16
 author: dotnet-bot

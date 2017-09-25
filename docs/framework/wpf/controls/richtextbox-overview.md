@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, RichTextBox"
-  - "RichTextBox control [WPF], about RichTextBox control"
+helpviewer_keywords: ["controls, RichTextBox", "RichTextBox control [WPF], about RichTextBox control"]
 ms.assetid: c94548b2-c1e9-4b62-b10c-dd8740eb23d8
 caps.latest.revision: 11
 author: dotnet-bot

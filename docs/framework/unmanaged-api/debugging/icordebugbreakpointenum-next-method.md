@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugBreakpointEnum.Next"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugBreakpointEnum::Next"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Next method, ICorDebugBreakpointEnum interface [.NET Framework debugging]"
-  - "ICorDebugBreakpointEnum::Next method [.NET Framework debugging]"
+api_name: ["ICorDebugBreakpointEnum.Next"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugBreakpointEnum::Next"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Next method, ICorDebugBreakpointEnum interface [.NET Framework debugging]", "ICorDebugBreakpointEnum::Next method [.NET Framework debugging]"]
 ms.assetid: 2e6bbaea-79ba-448c-a0e3-7c90fc7c2939
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

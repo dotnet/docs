@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "pens, setting width"
-  - "pens, setting alignment"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["pens, setting width", "pens, setting alignment"]
 ms.assetid: a202af36-4d31-4401-a126-b232f51db581
 caps.latest.revision: 16
 author: dotnet-bot

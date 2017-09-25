@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dynamic language runtime"
-  - "IronPython"
-  - "DLR"
-  - "IronRuby"
+helpviewer_keywords: ["dynamic language runtime", "IronPython", "DLR", "IronRuby"]
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
 caps.latest.revision: 26
 author: "rpetrusha"

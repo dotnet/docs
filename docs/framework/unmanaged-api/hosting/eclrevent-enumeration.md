@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "EClrEvent"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "EClrEvent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EClrEvent enumeration [.NET Framework hosting]"
+api_name: ["EClrEvent"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["EClrEvent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EClrEvent enumeration [.NET Framework hosting]"]
 ms.assetid: 7c36a7c2-75a2-4971-bc23-abf54c812154
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

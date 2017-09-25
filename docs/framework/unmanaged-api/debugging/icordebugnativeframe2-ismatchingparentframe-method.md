@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugNativeFrame2.IsMatchingParentFrame Method"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugNativeFrame2::IsMatchingParentFrame"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsMatchingParentFrame method [.NET Framework debugging]"
-  - "ICorDebugNativeFrame2::IsMatchingParentFrame method [.NET Framework debugging]"
+api_name: ["ICorDebugNativeFrame2.IsMatchingParentFrame Method"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugNativeFrame2::IsMatchingParentFrame"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsMatchingParentFrame method [.NET Framework debugging]", "ICorDebugNativeFrame2::IsMatchingParentFrame method [.NET Framework debugging]"]
 ms.assetid: d2ca20db-df22-4528-a0dd-a09ea62c8998
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

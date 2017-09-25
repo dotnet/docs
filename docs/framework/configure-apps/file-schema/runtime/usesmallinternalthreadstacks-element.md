@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "UseSmallInternalThreadStacks element"
-  - "<UseSmallInternalThreadStacks> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["UseSmallInternalThreadStacks element", "<UseSmallInternalThreadStacks> element"]
 ms.assetid: 1e3f6ec0-1cac-4e1c-9c81-17d948ae5874
 caps.latest.revision: 8
 author: "rpetrusha"

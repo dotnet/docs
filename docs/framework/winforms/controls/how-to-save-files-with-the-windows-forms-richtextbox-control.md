@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "saving files"
-  - "RTF files, saving in RichTextBox control"
-  - "examples [Windows Forms], text boxes"
-  - "saving files, RichTextBox control"
-  - "files, saving with RichTextBox control"
-  - "RichTextBox control [Windows Forms], saving files"
-  - ".rtf files, saving in RichTextBox control"
-  - "text files, saving from RichTextBox control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["saving files", "RTF files, saving in RichTextBox control", "examples [Windows Forms], text boxes", "saving files, RichTextBox control", "files, saving with RichTextBox control", "RichTextBox control [Windows Forms], saving files", ".rtf files, saving in RichTextBox control", "text files, saving from RichTextBox control"]
 ms.assetid: 4a58ec19-84d1-4383-9110-298c06adcfca
 caps.latest.revision: 15
 author: dotnet-bot

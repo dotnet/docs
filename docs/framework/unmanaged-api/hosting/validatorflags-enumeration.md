@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ValidatorFlags"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ValidatorFlags"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ValidatorFlags enumeration [.NET Framework hosting]"
+api_name: ["ValidatorFlags"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ValidatorFlags"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ValidatorFlags enumeration [.NET Framework hosting]"]
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

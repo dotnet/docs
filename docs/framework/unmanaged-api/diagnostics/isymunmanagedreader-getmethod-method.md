@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedReader.GetMethod"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedReader::GetMethod"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetMethod method, ISymUnmanagedReader interface [.NET Framework debugging]"
-  - "ISymUnmanagedReader::GetMethod method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedReader.GetMethod"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedReader::GetMethod"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetMethod method, ISymUnmanagedReader interface [.NET Framework debugging]", "ISymUnmanagedReader::GetMethod method [.NET Framework debugging]"]
 ms.assetid: ae6cfb29-bc2c-4606-af86-1d32ebd31020
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

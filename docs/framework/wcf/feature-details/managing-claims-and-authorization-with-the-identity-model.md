@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "authorization [WCF]"
-  - "WCF security"
-  - "claims [WCF], managing with the Identity Model"
-  - "claims [WCF]"
-  - "authorization [WCF], managing with the Identity Model"
+helpviewer_keywords: ["authorization [WCF]", "WCF security", "claims [WCF], managing with the Identity Model", "claims [WCF]", "authorization [WCF], managing with the Identity Model"]
 ms.assetid: 099defbb-5d35-434e-9336-1a49b9ec7663
 caps.latest.revision: 20
 author: "Erikre"

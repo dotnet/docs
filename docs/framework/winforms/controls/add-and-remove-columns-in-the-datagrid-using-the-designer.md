@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vs.DataGridViewAddColumnDialog"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], adding columns"
-  - "DataGridView control [Windows Forms], removing columns"
+f1_keywords: ["vs.DataGridViewAddColumnDialog"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], adding columns", "DataGridView control [Windows Forms], removing columns"]
 ms.assetid: 9e709f35-0a8c-4e7e-b4c4-bacb7a834077
 caps.latest.revision: 17
 author: dotnet-bot

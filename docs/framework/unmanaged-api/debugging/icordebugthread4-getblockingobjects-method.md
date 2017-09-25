@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugThread4.GetBlockingObjects Method"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugThread4::GetBlockingObjects"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetBlockingObjects method [.NET Framework debugging]"
-  - "ICorDebugThread4::GetBlockingObjects method [.NET Framework debugging]"
+api_name: ["ICorDebugThread4.GetBlockingObjects Method"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugThread4::GetBlockingObjects"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetBlockingObjects method [.NET Framework debugging]", "ICorDebugThread4::GetBlockingObjects method [.NET Framework debugging]"]
 ms.assetid: a7e6c54e-7be9-4e52-bbb4-95f52458e8e4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

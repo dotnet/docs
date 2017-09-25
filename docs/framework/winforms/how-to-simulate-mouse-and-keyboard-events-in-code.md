@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "keyboards, event simulation"
-  - "user input, simulating"
-  - "SendKeys, using"
-  - "mouse clicks, simulating"
-  - "mouse, event simulation"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["keyboards, event simulation", "user input, simulating", "SendKeys, using", "mouse clicks, simulating", "mouse, event simulation"]
 ms.assetid: 6abcb67e-3766-4af2-9590-bf5dabd17e41
 caps.latest.revision: 14
 author: dotnet-bot

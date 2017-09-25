@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "user controls [Windows Forms], method implementation"
-  - "custom controls [Windows Forms], overloading methods"
-  - "custom controls [Windows Forms], method implementation"
-  - "methods [Windows Forms]"
-  - "methods [Windows Forms], custom controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["user controls [Windows Forms], method implementation", "custom controls [Windows Forms], overloading methods", "custom controls [Windows Forms], method implementation", "methods [Windows Forms]", "methods [Windows Forms], custom controls"]
 ms.assetid: 35d14fca-4bb4-4a27-8211-1f7a98ea27de
 caps.latest.revision: 11
 author: dotnet-bot

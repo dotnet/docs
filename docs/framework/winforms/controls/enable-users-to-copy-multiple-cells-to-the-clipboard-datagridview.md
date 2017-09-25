@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "cells, copying to Clipboard"
-  - "DataGridView control [Windows Forms], copying multiple cells"
-  - "data grids, copying multiple cells"
-  - "Clipboard, copying multiple cells"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["cells, copying to Clipboard", "DataGridView control [Windows Forms], copying multiple cells", "data grids, copying multiple cells", "Clipboard, copying multiple cells"]
 ms.assetid: fd0403b2-d0e3-4ae0-839c-0f737e1eb4a9
 caps.latest.revision: 14
 author: dotnet-bot

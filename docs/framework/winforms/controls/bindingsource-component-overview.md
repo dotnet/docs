@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, data binding"
-  - "controls [Windows Forms], binding to data"
-  - "BindingSource component [Windows Forms], about BindingSource component"
-  - "data binding, BindingSource component"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, data binding", "controls [Windows Forms], binding to data", "BindingSource component [Windows Forms], about BindingSource component", "data binding, BindingSource component"]
 ms.assetid: be838caf-fcb0-4b68-827f-58b2c04b747f
 caps.latest.revision: 26
 author: dotnet-bot

@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], global assembly cache"
-  - "global assembly cache, benefits"
-  - "ACLs [.NET Framework]"
-  - "GAC (global assembly cache), benefits"
-  - "access control lists [.NET Framework]"
+helpviewer_keywords: ["assemblies [.NET Framework], global assembly cache", "global assembly cache, benefits", "ACLs [.NET Framework]", "GAC (global assembly cache), benefits", "access control lists [.NET Framework]"]
 ms.assetid: 8a18e5c2-d41d-49ef-abcb-7c27e2469433
 caps.latest.revision: 12
 author: "rpetrusha"

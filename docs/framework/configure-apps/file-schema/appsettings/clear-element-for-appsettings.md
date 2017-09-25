@@ -2,19 +2,11 @@
 title: "&lt;clear&gt; element for &lt;appSettings&gt;"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/clear"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "clear Element"
-  - "<clear> Element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/clear"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["clear Element", "<clear> Element"]
 ms.assetid: 6d18c7be-27db-438b-8fb5-765d396b0b7b
 author: "guardrex"
 ms.author: "mairaw"

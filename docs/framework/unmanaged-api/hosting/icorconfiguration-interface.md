@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorConfiguration"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorConfiguration"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorConfiguration interface [.NET Framework hosting]"
+api_name: ["ICorConfiguration"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorConfiguration"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorConfiguration interface [.NET Framework hosting]"]
 ms.assetid: aaf96116-372b-4538-afb1-9e0fcdac1f98
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

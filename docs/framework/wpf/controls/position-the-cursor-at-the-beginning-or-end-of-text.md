@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "positioning cursor"
-  - "TextBox control, positioning cursor"
-  - "cursor, positioning"
+helpviewer_keywords: ["positioning cursor", "TextBox control, positioning cursor", "cursor, positioning"]
 ms.assetid: c771a0b8-c6b4-4240-aecd-a21d0ba51a2e
 caps.latest.revision: 12
 author: dotnet-bot

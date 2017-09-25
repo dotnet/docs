@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hosting WPF content in Win32 window"
-  - "HWND interop [WPF]"
-  - "Win32 code, WPF interoperation"
-  - "interoperability [WPF], Win32"
+helpviewer_keywords: ["hosting WPF content in Win32 window", "HWND interop [WPF]", "Win32 code, WPF interoperation", "interoperability [WPF], Win32"]
 ms.assetid: 0ffbde0d-701d-45a3-a6fa-dd71f4d9772e
 caps.latest.revision: 26
 author: dotnet-bot

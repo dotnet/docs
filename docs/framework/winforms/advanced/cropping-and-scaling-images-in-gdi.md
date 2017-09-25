@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "GDI+, scaling images"
-  - "GDI+, cropping images"
-  - "images [Windows Forms], cropping"
-  - "compressing data, images"
-  - "images [Windows Forms], expansion"
-  - "images [Windows Forms], scaling"
-  - "rectangles, source"
-  - "rectangles, destination"
-  - "images [Windows Forms], compression"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["GDI+, scaling images", "GDI+, cropping images", "images [Windows Forms], cropping", "compressing data, images", "images [Windows Forms], expansion", "images [Windows Forms], scaling", "rectangles, source", "rectangles, destination", "images [Windows Forms], compression"]
 ms.assetid: ad5daf26-005f-45bc-a2af-e0e97777a21a
 caps.latest.revision: 13
 author: dotnet-bot

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "callback function"
-  - "platform invoke, calling unmanaged functions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["callback function", "platform invoke, calling unmanaged functions"]
 ms.assetid: c0aa8533-3b3b-42e8-9f60-84919793098c
 caps.latest.revision: 6
 author: "rpetrusha"

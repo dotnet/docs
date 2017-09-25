@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "PrintDocument component [Windows Forms]"
-  - "printing [Windows Forms], documents"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["PrintDocument component [Windows Forms]", "printing [Windows Forms], documents"]
 ms.assetid: 5af6a51d-66f6-43cd-a8cd-d64eb18fe7e7
 caps.latest.revision: 13
 author: dotnet-bot

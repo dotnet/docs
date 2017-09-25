@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRDebugManager.SetConnectionTasks"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRDebugManager::SetConnectionTasks"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetConnectionTasks method [.NET Framework hosting]"
-  - "ICLRDebugManager::SetConnectionTasks method [.NET Framework hosting]"
+api_name: ["ICLRDebugManager.SetConnectionTasks"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRDebugManager::SetConnectionTasks"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetConnectionTasks method [.NET Framework hosting]", "ICLRDebugManager::SetConnectionTasks method [.NET Framework hosting]"]
 ms.assetid: b38bbc9a-872c-41a9-b8c3-ca011d25456a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

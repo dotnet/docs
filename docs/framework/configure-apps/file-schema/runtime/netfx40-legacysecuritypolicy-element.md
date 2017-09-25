@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<NetFx40_LegacySecurityPolicy> element"
-  - "NetFx40_LegacySecurityPolicy element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<NetFx40_LegacySecurityPolicy> element", "NetFx40_LegacySecurityPolicy element"]
 ms.assetid: 07132b9c-4a72-4710-99d7-e702405e02d4
 caps.latest.revision: 21
 author: "rpetrusha"

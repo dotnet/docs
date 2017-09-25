@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "encoding image formats"
-  - "decoding JPEG images"
-  - "encoding JPEG images"
-  - "decoding image formats"
-  - "JPEG decoding"
-  - "JPEG encoding"
+helpviewer_keywords: ["encoding image formats", "decoding JPEG images", "encoding JPEG images", "decoding image formats", "JPEG decoding", "JPEG encoding"]
 ms.assetid: b8cfde37-9f68-4911-a05e-51d8d7bdec7b
 caps.latest.revision: 9
 author: dotnet-bot

@@ -5,21 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dependency properties [WPF], change events"
-  - "property value changes [WPF]"
-  - "change events [WPF], property"
-  - "events [WPF], change in property values"
-  - "creating property triggers [WPF]"
-  - "property change events [WPF], types of"
-  - "property change events [WPF]"
-  - "property triggers [WPF]"
-  - "identifying changed property events [WPF]"
-  - "property triggers [WPF], definition of"
+helpviewer_keywords: ["dependency properties [WPF], change events", "property value changes [WPF]", "change events [WPF], property", "events [WPF], change in property values", "creating property triggers [WPF]", "property change events [WPF], types of", "property change events [WPF]", "property triggers [WPF]", "identifying changed property events [WPF]", "property triggers [WPF], definition of"]
 ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
 caps.latest.revision: 10
 author: dotnet-bot

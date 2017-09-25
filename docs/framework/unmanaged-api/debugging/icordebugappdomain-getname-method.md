@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugAppDomain.GetName"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugAppDomain::GetName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugAppDomain::GetName method [.NET Framework debugging]"
-  - "GetName method, ICorDebugAppDomain interface [.NET Framework debugging]"
+api_name: ["ICorDebugAppDomain.GetName"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugAppDomain::GetName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugAppDomain::GetName method [.NET Framework debugging]", "GetName method, ICorDebugAppDomain interface [.NET Framework debugging]"]
 ms.assetid: 02c596d7-00b0-4e2c-856b-5425158fcefd
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

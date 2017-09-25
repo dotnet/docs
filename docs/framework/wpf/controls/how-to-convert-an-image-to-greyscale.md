@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "FormatConvertedBitmap class"
-  - "images, converting to grayscale"
-  - "converting, images to grayscale"
-  - "classes, FormatConvertedBitmap"
-  - "grayscale, converting images to"
+helpviewer_keywords: ["images, converting to grayscale", "converting, images to grayscale", "grayscale, converting images to"]
 ms.assetid: 77935ff0-4500-4307-9710-96999dcf579f
 caps.latest.revision: 8
 author: dotnet-bot

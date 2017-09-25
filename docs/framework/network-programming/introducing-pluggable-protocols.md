@@ -7,31 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "data requests, pluggable protocols"
-  - "WebRequest class, pluggable protocols"
-  - "response to Internet request, pluggable protocols"
-  - "URI"
-  - "Windows Sockets"
-  - "request/response model"
-  - "sending data, pluggable protocols"
-  - "pluggable protocols"
-  - "WebClient class, about WebClient class"
-  - "pluggable protocols, about pluggable protocols"
-  - "Internet, pluggable protocols"
-  - "path identifiers"
-  - "Uniform Resource Identifier"
-  - "application development [.NET Framework], pluggable protocols"
-  - "requesting data from Internet, pluggable protocols"
-  - "receiving data, pluggable protocols"
-  - "protocols, pluggable"
-  - "server identifiers"
-  - "scheme identifiers"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["data requests, pluggable protocols", "WebRequest class, pluggable protocols", "response to Internet request, pluggable protocols", "URI", "Windows Sockets", "request/response model", "sending data, pluggable protocols", "pluggable protocols", "WebClient class, about WebClient class", "pluggable protocols, about pluggable protocols", "Internet, pluggable protocols", "path identifiers", "Uniform Resource Identifier", "application development [.NET Framework], pluggable protocols", "requesting data from Internet, pluggable protocols", "receiving data, pluggable protocols", "protocols, pluggable", "server identifiers", "scheme identifiers"]
 ms.assetid: 4b48e22d-e4e5-48f0-be80-d549bda97415
 caps.latest.revision: 12
 author: "mcleblanc"

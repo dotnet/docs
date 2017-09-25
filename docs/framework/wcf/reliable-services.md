@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF [WCF], reliable messaging"
-  - "Windows Communication Foundation [WCF], reliable messaging"
-  - "WCF [WCF], reliable sessions"
-  - "Windows Communication Foundation [WCF], reliable sessions"
-  - "service contracts [WCF], reliable services"
+helpviewer_keywords: ["WCF [WCF], reliable messaging", "Windows Communication Foundation [WCF], reliable messaging", "WCF [WCF], reliable sessions", "Windows Communication Foundation [WCF], reliable sessions", "service contracts [WCF], reliable services"]
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
 caps.latest.revision: 8
 author: "Erikre"

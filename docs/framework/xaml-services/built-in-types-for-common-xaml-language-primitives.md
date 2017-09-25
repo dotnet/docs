@@ -5,23 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML language primitives [XAML Services]"
-  - "XAML [XAML Services], built-in types"
-  - "x:String [XAML Services]"
-  - "x:TimeSpan [XAML Services]"
-  - "x:Byte [XAML Services]"
-  - "x:Double [XAML Services]"
-  - "XAML [XAML Services], types"
-  - "x:Uri [XAML Services]"
-  - "XAML built-in types [XAML Services]"
-  - "x:Int64 [XAML Services]"
-  - "x:Single [XAML Services]"
-  - "x:Int32 [XAML Services]"
+helpviewer_keywords: ["XAML language primitives [XAML Services]", "XAML [XAML Services], built-in types", "x:String [XAML Services]", "x:TimeSpan [XAML Services]", "x:Byte [XAML Services]", "x:Double [XAML Services]", "XAML [XAML Services], types", "x:Uri [XAML Services]", "XAML built-in types [XAML Services]", "x:Int64 [XAML Services]", "x:Single [XAML Services]", "x:Int32 [XAML Services]"]
 ms.assetid: 11de2f08-5b95-4989-b5ec-5178eb968184
 caps.latest.revision: 11
 author: "wadepickett"

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorPublishProcessEnum"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorPublishProcessEnum"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorPublishProcessEnum interface [.NET Framework debugging]"
+api_name: ["ICorPublishProcessEnum"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorPublishProcessEnum"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorPublishProcessEnum interface [.NET Framework debugging]"]
 ms.assetid: aac8fcf9-ac09-437c-bd5c-2fda14ae1007
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

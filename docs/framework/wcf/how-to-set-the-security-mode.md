@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Mode property"
-  - "WCF, security mode"
-  - "WCF, security"
+helpviewer_keywords: ["WCF, security mode", "WCF, security"]
 ms.assetid: 6e01dd9f-b5dd-4474-b24c-06e124de4ff7
 caps.latest.revision: 22
 author: "BrucePerlerMS"

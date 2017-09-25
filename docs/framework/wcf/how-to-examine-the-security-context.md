@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ServiceSecurityContext class"
-  - "WCF, security"
-  - "Claimset class"
+helpviewer_keywords: ["WCF, security"]
 ms.assetid: 389b5a57-4175-4bc0-ada0-fc750d51149f
 caps.latest.revision: 13
 author: "BrucePerlerMS"

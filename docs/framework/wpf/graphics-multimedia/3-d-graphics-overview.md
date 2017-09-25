@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "3-D graphics"
-  - "graphics [WPF], 3-D"
+helpviewer_keywords: ["3-D graphics", "graphics [WPF], 3-D"]
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 caps.latest.revision: 21
 author: dotnet-bot

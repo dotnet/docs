@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ink data, adding custom data"
-  - "InkCanvas, displaying"
+helpviewer_keywords: ["ink data, adding custom data", "InkCanvas, displaying"]
 ms.assetid: f02aac6f-3436-4f7c-b6ea-0452cba5332c
 caps.latest.revision: 5
 author: dotnet-bot

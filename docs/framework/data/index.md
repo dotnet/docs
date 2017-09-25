@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - ".NET Framework, data access"
-  - "data access [.NET Framework], about .NET Framework data access"
-  - "data [.NET Framework], accessing"
+helpviewer_keywords: [".NET Framework, data access", "data access [.NET Framework], about .NET Framework data access", "data [.NET Framework], accessing"]
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
 caps.latest.revision: 17
 author: "Erikre"

@@ -7,14 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "WebRequest class, sending data to a host"
-  - "Sending data to a host, using WebRequest class"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["WebRequest class, sending data to a host", "Sending data to a host, using WebRequest class"]
 ms.assetid: 66686878-38ac-4aa6-bf42-ffb568ffc459
 caps.latest.revision: 12
 author: "mcleblanc"

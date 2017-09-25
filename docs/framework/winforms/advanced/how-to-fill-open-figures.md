@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "open figures, filling"
-  - "figures, filling"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["open figures, filling", "figures, filling"]
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950
 caps.latest.revision: 15
 author: dotnet-bot

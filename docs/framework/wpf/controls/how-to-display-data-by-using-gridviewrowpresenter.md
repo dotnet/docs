@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "displaying data with GridViewRowPresenter"
-  - "GridViewRowPresenter"
+helpviewer_keywords: ["displaying data with GridViewRowPresenter", "GridViewRowPresenter"]
 ms.assetid: bdb785a5-a262-44d5-a517-ea14383e5f70
 caps.latest.revision: 9
 author: dotnet-bot

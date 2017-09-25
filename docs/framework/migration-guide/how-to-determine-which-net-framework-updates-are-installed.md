@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "updates, determining for .NET Framework"
-  - ".NET Framework, determining updates"
+helpviewer_keywords: ["updates, determining for .NET Framework", ".NET Framework, determining updates"]
 ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
 caps.latest.revision: 6
 author: "mairaw"

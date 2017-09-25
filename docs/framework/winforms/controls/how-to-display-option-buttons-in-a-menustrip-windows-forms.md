@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MenuStrip [Windows Forms], displaying option buttons"
-  - "displaying option buttons, MenuStrip [Windows Forms]"
-  - "option buttons [Windows Forms], displaying in MenuStrip"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MenuStrip [Windows Forms], displaying option buttons", "displaying option buttons, MenuStrip [Windows Forms]", "option buttons [Windows Forms], displaying in MenuStrip"]
 ms.assetid: 8b596af2-9ff8-4f7b-93d7-cba830e167f4
 caps.latest.revision: 9
 author: dotnet-bot

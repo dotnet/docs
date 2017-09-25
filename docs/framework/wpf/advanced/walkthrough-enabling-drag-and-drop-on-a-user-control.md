@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "walkthrough [WPF], drag-and-drop"
-  - "drag-and-drop [WPF], walkthrough"
+helpviewer_keywords: ["walkthrough [WPF], drag-and-drop", "drag-and-drop [WPF], walkthrough"]
 ms.assetid: cc844419-1a77-4906-95d9-060d79107fc7
 caps.latest.revision: 7
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged coclasses [.NET Framework], debugging"
-  - "debugging coclasses [.NET Framework]"
-  - "coclasses [.NET Framework debugging]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged coclasses [.NET Framework], debugging", "debugging coclasses [.NET Framework]", "coclasses [.NET Framework debugging]"]
 ms.assetid: 94f94159-108e-436c-99e7-dff3beeb2503
 caps.latest.revision: 11
 author: "rpetrusha"

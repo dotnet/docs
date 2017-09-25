@@ -7,9 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WF [WF], guide to"
-  - "Windows Workflow Foundation [WF], guide to"
+helpviewer_keywords: ["WF [WF], guide to", "Windows Workflow Foundation [WF], guide to"]
 ms.assetid: a75025be-f225-430f-90cf-98f7022db436
 caps.latest.revision: 14
 author: "Erikre"

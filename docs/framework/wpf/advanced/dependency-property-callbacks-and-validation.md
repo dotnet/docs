@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dependency properties, validation"
-  - "coerce value callbacks"
-  - "callbacks, validation"
-  - "dependency properties, callbacks"
-  - "validation of dependency properties"
+helpviewer_keywords: ["dependency properties, validation", "coerce value callbacks", "callbacks, validation", "dependency properties, callbacks", "validation of dependency properties"]
 ms.assetid: 48db5fb2-da7f-49a6-8e81-3540e7b25825
 caps.latest.revision: 17
 author: dotnet-bot

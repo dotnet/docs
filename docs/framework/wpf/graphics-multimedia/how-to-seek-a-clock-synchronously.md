@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "clocks, seeking synchronously"
-  - "seeking clocks synchronously"
+helpviewer_keywords: ["clocks, seeking synchronously", "seeking clocks synchronously"]
 ms.assetid: e5b7529b-b7d0-40d2-9e1d-fa4b5e736e96
 caps.latest.revision: 4
 author: dotnet-bot

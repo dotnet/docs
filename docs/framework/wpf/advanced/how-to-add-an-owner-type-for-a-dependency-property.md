@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "classes, adding as owners of dependency properties"
-  - "dependency properties, adding classes as owners of"
+helpviewer_keywords: ["classes, adding as owners of dependency properties", "dependency properties, adding classes as owners of"]
 ms.assetid: edcce050-0576-4edb-a31a-3f909637b452
 caps.latest.revision: 11
 author: dotnet-bot

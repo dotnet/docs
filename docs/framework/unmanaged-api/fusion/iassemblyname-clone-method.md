@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyName.Clone"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyName::Clone"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Clone method, IAssemblyName interface [.NET Framework fusion]"
-  - "IAssemblyName::Clone method [.NET Framework fusion]"
+api_name: ["IAssemblyName.Clone"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyName::Clone"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Clone method, IAssemblyName interface [.NET Framework fusion]", "IAssemblyName::Clone method [.NET Framework fusion]"]
 ms.assetid: 7b345e08-5e16-4e3d-a044-4e19d0892943
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

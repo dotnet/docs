@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.GetNativeCallConvFromSig"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::GetNativeCallConvFromSig"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetNativeCallConvFromSig method [.NET Framework metadata]"
-  - "IMetaDataImport::GetNativeCallConvFromSig method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.GetNativeCallConvFromSig"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::GetNativeCallConvFromSig"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetNativeCallConvFromSig method [.NET Framework metadata]", "IMetaDataImport::GetNativeCallConvFromSig method [.NET Framework metadata]"]
 ms.assetid: 50e04026-4d4a-47d9-96c1-f4677d6d938b
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

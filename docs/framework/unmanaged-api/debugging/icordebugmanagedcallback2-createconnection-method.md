@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback2.CreateConnection"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback2::CreateConnection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateConnection method [.NET Framework debugging]"
-  - "ICorDebugManagedCallback2::CreateConnection method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback2.CreateConnection"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback2::CreateConnection"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateConnection method [.NET Framework debugging]", "ICorDebugManagedCallback2::CreateConnection method [.NET Framework debugging]"]
 ms.assetid: 49e647be-9d63-4250-9d11-704e2a400d1b
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

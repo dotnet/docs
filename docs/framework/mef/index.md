@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Managed Extensibility Framework, overview"
-  - "MEF, overview"
+helpviewer_keywords: ["Managed Extensibility Framework, overview", "MEF, overview"]
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
 caps.latest.revision: 31
 author: "rpetrusha"

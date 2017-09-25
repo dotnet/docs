@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hosting global static functions [.NET Framework], version 4"
-  - "global static functions [.NET Framework hosting], version 4"
-  - ".NET Framework 4, hosting global static functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["hosting global static functions [.NET Framework], version 4", "global static functions [.NET Framework hosting], version 4", ".NET Framework 4, hosting global static functions"]
 ms.assetid: 07a1a6e1-db73-4555-81df-bc4054c51492
 caps.latest.revision: 13
 author: "rpetrusha"

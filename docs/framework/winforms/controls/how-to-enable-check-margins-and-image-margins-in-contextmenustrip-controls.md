@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms]"
-  - "ShowCheckMargin property [Windows Forms]"
-  - "ShowImageMargin property [Windows Forms]"
-  - "ToolStrip control [Windows Forms]"
-  - "MenuStrip control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms]", "ShowCheckMargin property [Windows Forms]", "ShowImageMargin property [Windows Forms]", "ToolStrip control [Windows Forms]", "MenuStrip control [Windows Forms]"]
 ms.assetid: eb584e71-59da-4012-aaca-dbe1c7c7a156
 caps.latest.revision: 10
 author: dotnet-bot

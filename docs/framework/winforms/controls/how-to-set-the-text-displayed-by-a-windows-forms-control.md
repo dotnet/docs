@@ -5,27 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, captions"
-  - "Button control [Windows Forms], button text"
-  - "StdFont object and CommandButton caption"
-  - "captions, Windows Forms controls"
-  - "Text property, Windows Forms control"
-  - "Button control [Windows Forms], text display"
-  - "labels, adding to CommandButton control"
-  - "buttons, text"
-  - "captions, setting"
-  - "text"
-  - "examples [Windows Forms], controls"
-  - "text, Windows Forms controls"
-  - "controls [Windows Forms], captions"
-  - "forms, captions"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, captions", "Button control [Windows Forms], button text", "StdFont object and CommandButton caption", "captions, Windows Forms controls", "Text property, Windows Forms control", "Button control [Windows Forms], text display", "labels, adding to CommandButton control", "buttons, text", "captions, setting", "text", "examples [Windows Forms], controls", "text, Windows Forms controls", "controls [Windows Forms], captions", "forms, captions"]
 ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
 caps.latest.revision: 18
 author: dotnet-bot

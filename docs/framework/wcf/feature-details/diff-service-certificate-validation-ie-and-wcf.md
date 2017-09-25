@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "service certificate validation [WCF]"
-  - "certificates [WCF], service certificate validation"
+helpviewer_keywords: ["service certificate validation [WCF]", "certificates [WCF], service certificate validation"]
 ms.assetid: 9dffcab2-70a9-40f0-99fd-d3a0b296028f
 caps.latest.revision: 7
 author: "Erikre"

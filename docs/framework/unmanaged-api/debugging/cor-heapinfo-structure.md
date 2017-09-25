@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_HEAPINFO"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_HEAPINFO"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_HEAPINFO structure [.NET Framework debugging]"
+api_name: ["COR_HEAPINFO"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_HEAPINFO"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_HEAPINFO structure [.NET Framework debugging]"]
 ms.assetid: bfb2cd39-3e0b-4d51-ba0c-f009755c1456
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

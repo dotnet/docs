@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Service applications, creating"
-  - "templates, Windows Service"
+helpviewer_keywords: ["Windows Service applications, creating", "templates, Windows Service"]
 ms.assetid: 0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff
 caps.latest.revision: 18
 author: "ghogen"

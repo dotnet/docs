@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "newline"
-  - "end of line"
-  - "ScrollBars property, in TextBox control"
-  - "CRLF"
-  - "WordWrap property"
-  - "MultiLine property in TextBox control"
-  - "line-feed"
-  - "TextBox control [Windows Forms], viewing multiple lines"
-  - "carriage return"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["newline", "end of line", "ScrollBars property, in TextBox control", "CRLF", "MultiLine property in TextBox control", "line-feed", "TextBox control [Windows Forms], viewing multiple lines", "carriage return"]
 ms.assetid: 43173201-0b74-4067-a472-605029ca5f35
 caps.latest.revision: 10
 author: dotnet-bot

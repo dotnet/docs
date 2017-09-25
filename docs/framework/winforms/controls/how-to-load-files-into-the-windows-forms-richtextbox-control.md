@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "text boxes, displaying files"
-  - "examples [Windows Forms], text boxes"
-  - ".rtf files, opening in RichTextBox control"
-  - "RTF files, opening in RichTextBox control"
-  - "text files, displaying in RichTextBox control"
-  - ".rtf files, displaying in RichTextBox control"
-  - "RichTextBox control [Windows Forms], opening files"
-  - "RTF files, displaying in RichTextBox control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["text boxes, displaying files", "examples [Windows Forms], text boxes", ".rtf files, opening in RichTextBox control", "RTF files, opening in RichTextBox control", "text files, displaying in RichTextBox control", ".rtf files, displaying in RichTextBox control", "RichTextBox control [Windows Forms], opening files", "RTF files, displaying in RichTextBox control"]
 ms.assetid: c03451be-f285-4428-a71a-c41e002cc919
 caps.latest.revision: 13
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "AppDomainSetup object"
-  - "retrieving setup information"
-  - "application domains, retrieving setup information"
+helpviewer_keywords: ["AppDomainSetup object", "retrieving setup information", "application domains, retrieving setup information"]
 ms.assetid: 5cdb12ae-1e37-4a62-8ec7-93d6dcc6e8d9
 caps.latest.revision: 10
 author: "rpetrusha"

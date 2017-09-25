@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - ".NET Framework, reducing system restarts"
-  - "installing .NET Framework"
-  - "installation [.NET Framework]"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: [".NET Framework, reducing system restarts", "installing .NET Framework", "installation [.NET Framework]"]
 ms.assetid: 7aa8cb72-dee9-4716-ac54-b17b9ae8218f
 caps.latest.revision: 18
 author: "mairaw"

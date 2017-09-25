@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugModule2.ApplyChanges"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugModule2::ApplyChanges"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ApplyChanges method [.NET Framework debugging]"
-  - "ICorDebugModule2::ApplyChanges method [.NET Framework debugging]"
+api_name: ["ICorDebugModule2.ApplyChanges"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugModule2::ApplyChanges"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ApplyChanges method [.NET Framework debugging]", "ICorDebugModule2::ApplyChanges method [.NET Framework debugging]"]
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

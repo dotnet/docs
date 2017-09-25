@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "addresses [WCF]"
-  - "Windows Communication Foundation [WCF], addresses"
-  - "WCF [WCF], addresses"
+helpviewer_keywords: ["addresses [WCF]", "Windows Communication Foundation [WCF], addresses", "WCF [WCF], addresses"]
 ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
 caps.latest.revision: 18
 author: "Erikre"

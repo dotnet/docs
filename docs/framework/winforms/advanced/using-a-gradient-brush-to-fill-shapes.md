@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "brushes, gradient brushes"
-  - "gradient brushes"
-  - "examples [Windows Forms], gradient brushes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["brushes, gradient brushes", "gradient brushes", "examples [Windows Forms], gradient brushes"]
 ms.assetid: 2c6037b9-05bd-44c0-a22a-19584b722524
 caps.latest.revision: 11
 author: dotnet-bot

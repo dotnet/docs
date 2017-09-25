@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStripControlHost class"
-  - "ToolStrip control [Windows Forms], wrapping controls"
-  - "toolbars [Windows Forms], wrapping controls"
-  - "ToolStrip control [Windows Forms], hosting controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms], wrapping controls", "toolbars [Windows Forms], wrapping controls", "ToolStrip control [Windows Forms], hosting controls"]
 ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
 caps.latest.revision: 15
 author: dotnet-bot

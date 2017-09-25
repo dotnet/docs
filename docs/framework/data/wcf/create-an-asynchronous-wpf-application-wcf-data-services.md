@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, asynchronous operations"
+helpviewer_keywords: ["WCF Data Services, asynchronous operations"]
 ms.assetid: 834614df-1427-4839-b0be-90f68e5afffd
 caps.latest.revision: 2
 author: "Erikre"

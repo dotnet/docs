@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "TrackBar"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "sliders, about sliders"
-  - "TrackBar control [Windows Forms], about TrackBar control"
-  - "slider controls, about slider controls"
+f1_keywords: ["TrackBar"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["sliders, about sliders", "TrackBar control [Windows Forms], about TrackBar control", "slider controls, about slider controls"]
 ms.assetid: 95910ecb-8a4c-4776-89fa-206c89ed6973
 caps.latest.revision: 7
 author: dotnet-bot

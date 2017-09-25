@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "RelativeSource"
-helpviewer_keywords: 
-  - "RelativeSource markup extensions"
-  - "XAML, RelativeSource markup extension"
+f1_keywords: ["RelativeSource"]
+helpviewer_keywords: ["RelativeSource markup extensions", "XAML, RelativeSource markup extension"]
 ms.assetid: 26be4721-49b5-4717-a92e-7d54ad0d3a81
 caps.latest.revision: 18
 author: dotnet-bot

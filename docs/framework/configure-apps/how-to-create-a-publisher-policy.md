@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "publisher policy assembly"
-  - "publisher policy files"
-  - "GAC (global assembly cache), publisher policy assembly"
-  - "global assembly cache, publisher policy assembly"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["publisher policy assembly", "publisher policy files", "GAC (global assembly cache), publisher policy assembly", "global assembly cache, publisher policy assembly"]
 ms.assetid: 8046bc5d-2fa9-4277-8a5e-6dcc96c281d9
 caps.latest.revision: 15
 author: "mcleblanc"

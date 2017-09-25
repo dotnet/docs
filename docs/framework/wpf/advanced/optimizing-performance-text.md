@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "rendering text"
-  - "hyperlinks"
-  - "formatted text [WPF]"
-  - "text, performance"
-  - "glyphs"
+helpviewer_keywords: ["rendering text", "hyperlinks", "formatted text [WPF]", "text, performance", "glyphs"]
 ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 caps.latest.revision: 10
 author: dotnet-bot

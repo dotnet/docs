@@ -5,28 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "importing type library"
-  - "type metadata"
-  - "custom wrappers"
-  - "metadata"
-  - "exposing COM components to .NET Framework"
-  - "Type Library Importer"
-  - "interoperation with unmanaged code, importing type library"
-  - "interoperation with unmanaged code, exposing COM components"
-  - "type libraries"
-  - "TypeLibConverter class, importing type library as assembly"
-  - "COM interop, importing type library"
-  - "COM interop, exposing COM components"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["importing type library", "type metadata", "custom wrappers", "metadata", "exposing COM components to .NET Framework", "Type Library Importer", "interoperation with unmanaged code, importing type library", "interoperation with unmanaged code, exposing COM components", "type libraries", "TypeLibConverter class, importing type library as assembly", "COM interop, importing type library", "COM interop, exposing COM components"]
 ms.assetid: d1898229-cd40-426e-a275-f3eb65fbc79f
 caps.latest.revision: 14
 author: "rpetrusha"

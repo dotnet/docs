@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Explorer-style applications, walkthroughs"
-  - "TreeView control [Windows Forms], ListView controls used with"
-  - "ListView control [Windows Forms], TreeView controls used with"
-  - "Explorer-style applications"
-  - "TreeView control [Windows Forms], using for explorer-style interface"
-  - "ListView control [Windows Forms], explorer style interface"
-  - "ListView control [Windows Forms], explorer-style interface"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Explorer-style applications, walkthroughs", "TreeView control [Windows Forms], ListView controls used with", "ListView control [Windows Forms], TreeView controls used with", "Explorer-style applications", "TreeView control [Windows Forms], using for explorer-style interface", "ListView control [Windows Forms], explorer style interface", "ListView control [Windows Forms], explorer-style interface"]
 ms.assetid: 9e5e7721-19e2-4890-b273-a43589fe99ff
 caps.latest.revision: 19
 author: dotnet-bot

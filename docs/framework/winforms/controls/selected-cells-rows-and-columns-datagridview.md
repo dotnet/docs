@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "selection, DataGridView control [Windows Forms]"
-  - "DataGridView control [Windows Forms], getting selection"
-  - "getting selection, DataGridView control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["selection, DataGridView control [Windows Forms]", "DataGridView control [Windows Forms], getting selection", "getting selection, DataGridView control [Windows Forms]"]
 ms.assetid: d93c4b5b-498e-49bc-982a-2229d61778e4
 caps.latest.revision: 17
 author: dotnet-bot

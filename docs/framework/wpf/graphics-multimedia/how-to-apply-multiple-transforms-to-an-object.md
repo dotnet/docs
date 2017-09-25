@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "grouping Transform objects"
-  - "Transform objects, grouping"
-  - "graphics, grouping Transform objects"
-  - "TransformGroup"
+helpviewer_keywords: ["grouping Transform objects", "Transform objects, grouping", "graphics, grouping Transform objects", "TransformGroup"]
 ms.assetid: 98cd1921-12bc-4bf5-8193-529228fb7402
 caps.latest.revision: 11
 author: dotnet-bot

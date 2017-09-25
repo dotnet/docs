@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ListView control [Windows Forms], populating"
-  - "list views, adding list items"
-  - "ListView control [Windows Forms], adding list items"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ListView control [Windows Forms], populating", "list views, adding list items", "ListView control [Windows Forms], adding list items"]
 ms.assetid: 1b35a80a-edd8-495f-a807-a28c4aae52c6
 caps.latest.revision: 13
 author: dotnet-bot

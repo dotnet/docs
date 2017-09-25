@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStripProfessionalRenderer class [Windows Forms]"
-  - "ToolStripRenderer class [Windows Forms]"
-  - "toolbars [Windows Forms], walkthroughs"
-  - "ToolStrip control [Windows Forms], creating professionally styled controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStripProfessionalRenderer class [Windows Forms]", "ToolStripRenderer class [Windows Forms]", "toolbars [Windows Forms], walkthroughs", "ToolStrip control [Windows Forms], creating professionally styled controls"]
 ms.assetid: b52339ae-f1d3-494e-996e-eb455614098a
 caps.latest.revision: 9
 author: dotnet-bot

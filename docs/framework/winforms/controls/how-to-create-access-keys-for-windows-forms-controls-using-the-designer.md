@@ -5,25 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], access keys"
-  - "Button control [Windows Forms], access keys"
-  - "dialog box controls, mnemonics"
-  - "access keys, creating for controls"
-  - "mnemonics, adding to dialog box controls"
-  - "ampersand character in shortcut key"
-  - "Windows Forms controls, access keys"
-  - "examples [Windows Forms], controls"
-  - "Text property, specifying access keys for controls"
-  - "keyboard shortcuts, creating for controls"
-  - "access keys, Windows Forms"
-  - "ALT key"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], access keys", "Button control [Windows Forms], access keys", "dialog box controls, mnemonics", "access keys, creating for controls", "mnemonics, adding to dialog box controls", "ampersand character in shortcut key", "Windows Forms controls, access keys", "examples [Windows Forms], controls", "Text property, specifying access keys for controls", "keyboard shortcuts, creating for controls", "access keys, Windows Forms", "ALT key"]
 ms.assetid: 4c374c4c-4ca9-4a68-ac96-9dc3ab0f518a
 caps.latest.revision: 5
 author: dotnet-bot

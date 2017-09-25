@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "profiling enumerations [.NET Framework]"
-  - "enumerations [.NET Framework profiling]"
-  - "unmanaged enumerations [.NET Framework], profiling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["profiling enumerations [.NET Framework]", "enumerations [.NET Framework profiling]", "unmanaged enumerations [.NET Framework], profiling"]
 ms.assetid: 8d5f9570-9853-4ce8-8101-df235d5b258e
 caps.latest.revision: 21
 author: "mairaw"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "setting Typography attributes"
-  - "Typography attribute, setting"
+helpviewer_keywords: ["setting Typography attributes", "Typography attribute, setting"]
 ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
 caps.latest.revision: 3
 author: dotnet-bot

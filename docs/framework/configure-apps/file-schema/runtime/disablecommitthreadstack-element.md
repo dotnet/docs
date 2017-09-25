@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCommitThreadStack"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCommitThreadStack"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<disableCommitThreadStack> element"
-  - "disableCommitThreadStack element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCommitThreadStack", "http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCommitThreadStack"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<disableCommitThreadStack> element", "disableCommitThreadStack element"]
 ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
 caps.latest.revision: 8
 author: "rpetrusha"

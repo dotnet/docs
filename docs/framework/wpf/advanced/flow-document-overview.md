@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "documents, flow documents"
-  - "content schema"
-  - "flow content elements [WPF], flow documents"
-  - "flow documents"
+helpviewer_keywords: ["documents, flow documents", "content schema", "flow content elements [WPF], flow documents", "flow documents"]
 ms.assetid: ef236a50-d44f-43c8-ba7c-82b0c733c0b7
 caps.latest.revision: 39
 author: dotnet-bot

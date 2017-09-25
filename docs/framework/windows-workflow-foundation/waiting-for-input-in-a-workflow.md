@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], bookmarks"
+helpviewer_keywords: ["programming [WF], bookmarks"]
 ms.assetid: 50a007c5-8ab7-4b9a-a7ec-1b7e2f4930fe
 caps.latest.revision: 4
 author: "Erikre"

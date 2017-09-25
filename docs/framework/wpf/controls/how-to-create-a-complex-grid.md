@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "calendar, creating"
-  - "monthly calendar, creating"
-  - "Grid control, creating, complex grid"
+helpviewer_keywords: ["calendar, creating", "monthly calendar, creating", "Grid control, creating, complex grid"]
 ms.assetid: 4ce3040a-a156-4364-9596-98ca1eca5550
 caps.latest.revision: 10
 author: dotnet-bot

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "duplex contracts [WCF]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["duplex contracts [WCF]"]
 ms.assetid: 746a9d64-f21c-426c-b85d-972e916ec6c5
 caps.latest.revision: 18
 author: "Erikre"

@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "text content, extracting"
-  - "RichTextBox control, extracting text content"
-  - "content, extracting"
-  - "extracting text content"
+helpviewer_keywords: ["text content, extracting", "RichTextBox control, extracting text content", "content, extracting", "extracting text content"]
 ms.assetid: f13c093f-1a05-45b3-ac8f-c9ea5e4a11c5
 caps.latest.revision: 7
 author: dotnet-bot

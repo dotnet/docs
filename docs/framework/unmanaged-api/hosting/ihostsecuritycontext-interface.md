@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostSecurityContext"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostSecurityContext"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostSecurityContext interface [.NET Framework hosting]"
+api_name: ["IHostSecurityContext"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostSecurityContext"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostSecurityContext interface [.NET Framework hosting]"]
 ms.assetid: 88e2eac0-8ccb-404f-abbc-287d55159842
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

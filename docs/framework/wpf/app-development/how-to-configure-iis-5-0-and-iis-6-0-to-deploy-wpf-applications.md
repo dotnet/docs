@@ -5,21 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "MIME types, registering"
-  - "adjusting content expiration setting"
-  - "registering file extensions"
-  - "deploying applications"
-  - "applications, deploying"
-  - "Web servers, configuring to deploy WPF applications"
-  - "configuring Web servers to deploy WPF applications"
-  - "content expiration setting, adjusting"
-  - "file extensions, registering"
-  - "registering MIME types"
+helpviewer_keywords: ["MIME types, registering", "adjusting content expiration setting", "registering file extensions", "deploying applications", "applications, deploying", "Web servers, configuring to deploy WPF applications", "configuring Web servers to deploy WPF applications", "content expiration setting, adjusting", "file extensions, registering", "registering MIME types"]
 ms.assetid: c6e8c2cb-9ba2-4e75-a0d5-180ec9639433
 caps.latest.revision: 18
 author: dotnet-bot

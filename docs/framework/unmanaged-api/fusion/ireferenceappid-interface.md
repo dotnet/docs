@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IReferenceAppId"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IReferenceAppId"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IReferenceAppId interface [.NET Framework fusion]"
+api_name: ["IReferenceAppId"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IReferenceAppId"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IReferenceAppId interface [.NET Framework fusion]"]
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

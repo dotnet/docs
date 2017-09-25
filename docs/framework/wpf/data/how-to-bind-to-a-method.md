@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data binding, binding to methods using ObjectDataProvider"
-  - "binding, to methods"
-  - "ObjectDataProvider class"
-  - "classes, ObjectDataProvider"
-  - "methods, binding to"
+helpviewer_keywords: ["data binding, binding to methods using ObjectDataProvider", "binding, to methods", "methods, binding to"]
 ms.assetid: 5f55e71e-2182-42a0-88d1-700cc1427a7a
 caps.latest.revision: 10
 author: dotnet-bot

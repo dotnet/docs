@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "EnumCustomAttributes"
-  - "IALink.EnumCustomAttributes"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "EnumCustomAttributes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EnumCustomAttributes method"
+api_name: ["EnumCustomAttributes", "IALink.EnumCustomAttributes"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["EnumCustomAttributes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EnumCustomAttributes method"]
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "service behaviors, concurency sample"
-  - "Concurrency Sample [Windows Communication Foundation]"
+helpviewer_keywords: ["service behaviors, concurency sample", "Concurrency Sample [Windows Communication Foundation]"]
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
 caps.latest.revision: 32
 author: "Erikre"

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, locking"
-  - "controls [Windows Forms], locking"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, locking", "controls [Windows Forms], locking"]
 ms.assetid: 94efe0d2-c14e-4d14-b903-63ea9b07e290
 caps.latest.revision: 11
 author: dotnet-bot

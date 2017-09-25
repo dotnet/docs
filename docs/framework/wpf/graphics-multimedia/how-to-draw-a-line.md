@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "drawing, lines"
-  - "graphics [WPF], lines"
-  - "lines, drawing"
+helpviewer_keywords: ["drawing, lines", "graphics [WPF], lines", "lines, drawing"]
 ms.assetid: 0513ee01-6b27-4bb3-85f3-3a3e6710d80e
 caps.latest.revision: 7
 author: dotnet-bot

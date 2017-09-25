@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "hit tests, using regions"
-  - "regions, hit testing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["hit tests, using regions", "regions, hit testing"]
 ms.assetid: 3a4c07cb-a40a-4d14-ad35-008f531910a8
 caps.latest.revision: 14
 author: dotnet-bot

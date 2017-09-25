@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "drawings, composite"
-  - "composite drawings"
-  - "classes, DrawingGroup"
-  - "graphics, composite drawings"
-  - "DrawingGroup class"
+helpviewer_keywords: ["drawings, composite", "composite drawings", "graphics, composite drawings"]
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
 caps.latest.revision: 9
 author: dotnet-bot

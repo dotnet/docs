@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo3.GetFunctionLeave3Info Method"
-api_location: 
-  - "Mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo3::GetFunctionLeave3Info"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetFunctionLeave3Info method [.NET Framework profiling]"
-  - "ICorProfilerInfo3::GetFunctionLeave3Info method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo3.GetFunctionLeave3Info Method"]
+api_location: ["Mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo3::GetFunctionLeave3Info"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetFunctionLeave3Info method [.NET Framework profiling]", "ICorProfilerInfo3::GetFunctionLeave3Info method [.NET Framework profiling]"]
 ms.assetid: df7083d2-fd43-44c7-9ce5-912c25cef0ff
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

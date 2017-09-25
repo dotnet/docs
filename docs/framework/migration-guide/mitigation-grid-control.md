@@ -7,11 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "retargeting changes"
-  - ".NET Framework 4.7 retargeting changes"
-  - "WPF retargeting changes"
-  - "Grid control retargeting changes"
+helpviewer_keywords: ["retargeting changes", ".NET Framework 4.7 retargeting changes", "WPF retargeting changes", "Grid control retargeting changes"]
 ms.assetid: 707c064d-85e9-4ea1-aefb-e42b60b88679
 caps.latest.revision: 4
 author: "rpetrusha"

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], cell styles"
-  - "cells, styles"
-  - "data grids, cell styles"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], cell styles", "cells, styles", "data grids, cell styles"]
 ms.assetid: 1aaaca43-5340-447e-99c0-9177d9776aa1
 caps.latest.revision: 17
 author: dotnet-bot

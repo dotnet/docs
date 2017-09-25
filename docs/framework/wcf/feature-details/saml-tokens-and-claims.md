@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF, federation"
-  - "federation"
-  - "issued tokens"
-  - "SAML token"
+helpviewer_keywords: ["WCF, federation", "federation", "issued tokens", "SAML token"]
 ms.assetid: 930b6e34-9eab-4e95-826c-4e06659bb977
 caps.latest.revision: 10
 author: "Erikre"

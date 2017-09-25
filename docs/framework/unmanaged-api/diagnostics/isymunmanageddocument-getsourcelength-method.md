@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedDocument.GetSourceLength"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedDocument::GetSourceLength"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetSourceLength method [.NET Framework debugging]"
-  - "ISymUnmanagedDocument::GetSourceLength method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedDocument.GetSourceLength"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedDocument::GetSourceLength"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetSourceLength method [.NET Framework debugging]", "ISymUnmanagedDocument::GetSourceLength method [.NET Framework debugging]"]
 ms.assetid: e087dbbb-f4fb-4fbe-8292-e4f1a14d0df2
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

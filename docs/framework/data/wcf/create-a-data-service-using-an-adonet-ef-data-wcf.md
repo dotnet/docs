@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, providers"
-  - "WCF Data Services, Entity Framework"
+helpviewer_keywords: ["WCF Data Services, providers", "WCF Data Services, Entity Framework"]
 ms.assetid: 6d11fec8-0108-42f5-8719-2a7866d04428
 caps.latest.revision: 4
 author: "Erikre"

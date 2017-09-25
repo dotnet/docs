@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DoubleBuffered property"
-  - "flicker, reducing in Windows Forms"
-  - "graphics, reducing double-buffered flicker"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["flicker, reducing in Windows Forms", "graphics, reducing double-buffered flicker"]
 ms.assetid: 91083d3a-653f-4f15-a467-0f37b2aa39d6
 caps.latest.revision: 11
 author: dotnet-bot

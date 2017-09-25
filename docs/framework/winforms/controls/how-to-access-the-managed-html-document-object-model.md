@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "HTML DOM, accessing"
-  - "managed HTML DOM, accessing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["HTML DOM, accessing", "managed HTML DOM, accessing"]
 ms.assetid: 40fa5cd5-1ed8-42f6-a93f-9ac01608bbeb
 caps.latest.revision: 12
 author: dotnet-bot

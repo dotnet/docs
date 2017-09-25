@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "SecAnnotate.exe"
-  - "Security Annotator tool"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["SecAnnotate.exe", "Security Annotator tool"]
 ms.assetid: 8104d208-7813-4a1d-8a75-58f9a7bcb8c9
 caps.latest.revision: 22
 author: "rpetrusha"

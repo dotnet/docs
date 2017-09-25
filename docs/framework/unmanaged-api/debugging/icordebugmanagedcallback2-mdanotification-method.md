@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback2.MDANotification"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback2::MDANotification"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MDANotification method [.NET Framework debugging]"
-  - "ICorDebugManagedCallback2::MDANotification method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback2.MDANotification"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback2::MDANotification"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MDANotification method [.NET Framework debugging]", "ICorDebugManagedCallback2::MDANotification method [.NET Framework debugging]"]
 ms.assetid: 93f79627-bd31-4f4f-b95d-46a032a52fe4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

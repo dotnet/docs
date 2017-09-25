@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "platform invoke, marshaling data"
-  - "data marshaling, platform invoke"
-  - "marshaling, platform invoke"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["platform invoke, marshaling data", "data marshaling, platform invoke", "marshaling, platform invoke"]
 ms.assetid: dc5c76cf-7b12-406f-b79c-d1a023ec245d
 caps.latest.revision: 13
 author: "rpetrusha"

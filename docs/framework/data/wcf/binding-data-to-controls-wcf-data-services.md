@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "client applications, WCF Data Services"
-  - "WCF Data Services, client library"
-  - "data binding, WCF Data Services"
+helpviewer_keywords: ["client applications, WCF Data Services", "WCF Data Services, client library", "data binding, WCF Data Services"]
 ms.assetid: b32e1d49-c214-4cb1-867e-88fbb3d08c8d
 caps.latest.revision: 3
 author: "Erikre"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "versioning, WCF Data Services"
-  - "versioning [WCF Data Services]"
-  - "WCF Data Services, versioning"
+helpviewer_keywords: ["versioning, WCF Data Services", "versioning [WCF Data Services]", "WCF Data Services, versioning"]
 ms.assetid: e3e899cc-7f25-4f67-958f-063f01f79766
 caps.latest.revision: 9
 author: "Erikre"

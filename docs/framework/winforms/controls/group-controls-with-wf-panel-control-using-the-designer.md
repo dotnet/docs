@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Panel control [Windows Forms], grouping controls"
-  - "controls [Windows Forms], grouping"
-  - "Windows Forms controls, grouping"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Panel control [Windows Forms], grouping controls", "controls [Windows Forms], grouping", "Windows Forms controls, grouping"]
 ms.assetid: 7e1cd708-fdb1-49d8-9ca2-5640b276bf2e
 caps.latest.revision: 9
 author: dotnet-bot

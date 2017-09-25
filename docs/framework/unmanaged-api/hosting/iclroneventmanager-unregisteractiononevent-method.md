@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLROnEventManager.UnregisterActionOnEvent"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLROnEventManager::UnregisterActionOnEvent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UnRegisterActionOnEvent method [.NET Framework hosting]"
-  - "ICLROnEventManager::UnRegisterActionOnEvent method [.NET Framework hosting]"
+api_name: ["ICLROnEventManager.UnregisterActionOnEvent"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLROnEventManager::UnregisterActionOnEvent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UnRegisterActionOnEvent method [.NET Framework hosting]", "ICLROnEventManager::UnRegisterActionOnEvent method [.NET Framework hosting]"]
 ms.assetid: 4c02ec37-cdf0-46b2-890e-235092741236
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

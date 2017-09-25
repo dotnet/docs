@@ -5,16 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IALink2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IALink2 interface"
+f1_keywords: ["IALink2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IALink2 interface"]
 ms.assetid: fba62a55-36bd-401e-bcd2-5be8e2d34891
 caps.latest.revision: 7
 author: "mairaw"

@@ -5,26 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "unmanaged code, debugging"
-  - "transitioning threads unmanaged to managed code"
-  - "reentrancy MDA"
-  - "reentrancy without an orderly transition"
-  - "managed debugging assistants (MDAs), reentrancy"
-  - "illegal reentrancy"
-  - "MDAs (managed debugging assistants), reentrancy"
-  - "threading [.NET Framework], managed debugging assistants"
-  - "managed code, debugging"
-  - "native debugging, MDAs"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["unmanaged code, debugging", "transitioning threads unmanaged to managed code", "reentrancy MDA", "reentrancy without an orderly transition", "managed debugging assistants (MDAs), reentrancy", "illegal reentrancy", "MDAs (managed debugging assistants), reentrancy", "threading [.NET Framework], managed debugging assistants", "managed code, debugging", "native debugging, MDAs"]
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
 caps.latest.revision: 8
 author: "mairaw"

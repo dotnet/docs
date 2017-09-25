@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "IsAdditive property"
-  - "animation"
+helpviewer_keywords: ["animation"]
 ms.assetid: b89a82be-b03d-481e-a8d3-cc513d09ca00
 caps.latest.revision: 13
 author: dotnet-bot

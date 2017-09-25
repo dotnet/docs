@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Padding property [Windows Forms]"
-  - "layout [Windows Forms], margins and padding"
-  - "Windows Forms, layout"
-  - "Margin property [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Padding property [Windows Forms]", "layout [Windows Forms], margins and padding", "Windows Forms, layout", "Margin property [Windows Forms]"]
 ms.assetid: 3781b5a1-3085-4072-bed0-44670c23ffdc
 caps.latest.revision: 5
 author: dotnet-bot

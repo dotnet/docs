@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF class library"
-  - "class library"
-  - "Windows Presentation Foundation class library"
+helpviewer_keywords: ["WPF class library", "class library", "Windows Presentation Foundation class library"]
 ms.assetid: dcb35927-00ad-4141-a1ab-a7a524dd3f10
 caps.latest.revision: 10
 author: dotnet-bot

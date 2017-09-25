@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRGCManager.Collect"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRGCManager::Collect"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRGCManager::Collect method [.NET Framework hosting]"
-  - "Collect method, ICLRGCManager interface [.NET Framework hosting]"
+api_name: ["ICLRGCManager.Collect"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRGCManager::Collect"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRGCManager::Collect method [.NET Framework hosting]", "Collect method, ICLRGCManager interface [.NET Framework hosting]"]
 ms.assetid: 0c6cbbea-c27c-4695-bda3-17c1910d8ddb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

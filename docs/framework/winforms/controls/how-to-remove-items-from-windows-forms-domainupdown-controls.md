@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DomainUpDown control [Windows Forms], removing items from"
-  - "spin button control, removing items"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DomainUpDown control [Windows Forms], removing items from", "spin button control, removing items"]
 ms.assetid: e70f5cbc-b497-41a9-975a-344c00e56ed2
 caps.latest.revision: 13
 author: dotnet-bot

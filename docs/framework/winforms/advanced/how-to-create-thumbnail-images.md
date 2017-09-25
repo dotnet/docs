@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "thumbnail images, creating"
-  - "images [Windows Forms], creating thumbnails"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["thumbnail images, creating", "images [Windows Forms], creating thumbnails"]
 ms.assetid: e956242a-1e5b-4217-a3cf-5f3fb45d00ba
 caps.latest.revision: 20
 author: dotnet-bot

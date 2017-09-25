@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter.SetScopeRange"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter::SetScopeRange"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetScopeRange method [.NET Framework debugging]"
-  - "ISymUnmanagedWriter::SetScopeRange method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter.SetScopeRange"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter::SetScopeRange"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetScopeRange method [.NET Framework debugging]", "ISymUnmanagedWriter::SetScopeRange method [.NET Framework debugging]"]
 ms.assetid: d4d98676-444b-46ca-bfe6-0d827385cd22
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

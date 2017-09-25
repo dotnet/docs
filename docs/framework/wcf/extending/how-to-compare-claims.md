@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "claims [WCF], comparing"
-  - "claims [WCF]"
+helpviewer_keywords: ["claims [WCF], comparing", "claims [WCF]"]
 ms.assetid: 0c4ec84d-53df-408f-8953-9bc437f56c28
 caps.latest.revision: 13
 author: "Erikre"

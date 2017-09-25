@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Increment method"
-  - "Value property"
-  - "PerformStep method"
-  - "Step property"
-  - "ProgressBar control [Windows Forms], setting value displayed"
-  - "progress controls, setting value displayed"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ProgressBar control [Windows Forms], setting value displayed", "progress controls, setting value displayed"]
 ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 caps.latest.revision: 14
 author: dotnet-bot

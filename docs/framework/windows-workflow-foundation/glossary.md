@@ -7,9 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Workflow Foundation [WF], glossary"
-  - "WF [WF], glossary"
+helpviewer_keywords: ["Windows Workflow Foundation [WF], glossary", "WF [WF], glossary"]
 ms.assetid: ab682b2f-3779-45ca-b831-b7c03d7dbb3a
 caps.latest.revision: 259
 author: "Erikre"

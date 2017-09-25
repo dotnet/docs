@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WCF [WCF], concepts"
-  - "concepts [WCF]"
-  - "fundamentals [WCF]"
-  - "Windows Communication Foundation [WCF], concepts"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WCF [WCF], concepts", "concepts [WCF]", "fundamentals [WCF]", "Windows Communication Foundation [WCF], concepts"]
 ms.assetid: 3e7e0afd-7913-499d-bafb-eac7caacbc7a
 caps.latest.revision: 39
 author: "Erikre"

@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "troubleshooting [WPF], animation"
-  - "animations [WPF], FillBehavior property"
-  - "troubleshooting animation [WPF]"
-  - "animating objects [WPF], troubleshooting"
-  - "animation tips and tricks [WPF]"
-  - "tips and tricks [WPF], animation"
-  - "performance troubleshooting [WPF], animation"
-  - "animations [WPF], use of system resources"
+helpviewer_keywords: ["troubleshooting [WPF], animation", "animations [WPF], FillBehavior property", "troubleshooting animation [WPF]", "animating objects [WPF], troubleshooting", "animation tips and tricks [WPF]", "tips and tricks [WPF], animation", "performance troubleshooting [WPF], animation", "animations [WPF], use of system resources"]
 ms.assetid: e467796b-d5d4-45a6-a108-8c5d7ff69a0f
 caps.latest.revision: 12
 author: dotnet-bot

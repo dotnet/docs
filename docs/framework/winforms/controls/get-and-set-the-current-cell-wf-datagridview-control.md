@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], getting current cell"
-  - "DataGridView control [Windows Forms], setting current cell"
-  - "cells, getting and setting current"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], getting current cell", "DataGridView control [Windows Forms], setting current cell", "cells, getting and setting current"]
 ms.assetid: b0e41e57-493a-4bd0-9376-a6f76723540c
 caps.latest.revision: 14
 author: dotnet-bot

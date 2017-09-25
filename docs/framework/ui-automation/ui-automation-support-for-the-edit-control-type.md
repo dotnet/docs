@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, Edit"
-  - "Edit control type"
-  - "UI Automation, Edit control type"
+helpviewer_keywords: ["control types, Edit", "Edit control type", "UI Automation, Edit control type"]
 ms.assetid: 6db9d231-c0a0-4e17-910e-ac80357f774f
 caps.latest.revision: 29
 author: "Xansky"

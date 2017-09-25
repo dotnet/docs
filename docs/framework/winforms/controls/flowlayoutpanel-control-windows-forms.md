@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "FlowLayoutPanel control [Windows Forms]"
-  - "layout [Windows Forms]"
-  - "Windows Forms, arranging contents"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["FlowLayoutPanel control [Windows Forms]", "layout [Windows Forms]", "Windows Forms, arranging contents"]
 ms.assetid: 630c9305-9ecf-4f99-94f9-ddf06de82713
 caps.latest.revision: 15
 author: dotnet-bot

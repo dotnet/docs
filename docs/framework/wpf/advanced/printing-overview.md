@@ -5,25 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "PrintTicket class"
-  - "classes, PrintCapabilities"
-  - "classes, PrintQueue"
-  - "classes, PrintTicket"
-  - "print path, XPS"
-  - "classes, PrintServer"
-  - "printers, XPSDrv-based"
-  - "printing"
-  - "PrintQueue class PrintServer class"
-  - "XML Paper Specification (XPS) file format"
-  - "XPS (XML Paper Specification) file format"
-  - "XPSDrv-based printers"
-  - "PrintCapabilities class"
-  - "GDI print path"
+helpviewer_keywords: ["print path, XPS", "printers, XPSDrv-based", "printing", "PrintQueue class PrintServer class", "XML Paper Specification (XPS) file format", "XPS (XML Paper Specification) file format", "XPSDrv-based printers", "GDI print path"]
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 caps.latest.revision: 35
 author: dotnet-bot

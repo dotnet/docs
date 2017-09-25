@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "strong-name bypass feature"
-  - "strong-named assemblies, loading into trusted application domains"
+helpviewer_keywords: ["strong-name bypass feature", "strong-named assemblies, loading into trusted application domains"]
 ms.assetid: 234e088c-3b11-495a-8817-e0962be79d82
 caps.latest.revision: 30
 author: "rpetrusha"

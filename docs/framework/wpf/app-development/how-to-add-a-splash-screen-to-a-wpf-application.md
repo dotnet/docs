@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF, splash screen"
-  - "startup window [WPF]"
-  - "SplashScreen class [WPF]"
-  - "splash screen [WPF]"
+helpviewer_keywords: ["WPF, splash screen", "startup window [WPF]", "SplashScreen class [WPF]", "splash screen [WPF]"]
 ms.assetid: d70a25c4-5fb9-4c27-b01d-b1b8ef39b3fd
 caps.latest.revision: 14
 author: dotnet-bot

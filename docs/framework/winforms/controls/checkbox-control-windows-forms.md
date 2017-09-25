@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "checked list items, Windows Forms controls"
-  - "CheckBox control [Windows Forms]"
-  - "list controls, Windows Forms"
-  - "list items, Windows Forms controls that display"
-  - "checked list items"
-  - "check boxes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["checked list items, Windows Forms controls", "CheckBox control [Windows Forms]", "list controls, Windows Forms", "list items, Windows Forms controls that display", "checked list items", "check boxes"]
 ms.assetid: 0719d798-c307-40d3-9040-72a62679c227
 caps.latest.revision: 11
 author: dotnet-bot

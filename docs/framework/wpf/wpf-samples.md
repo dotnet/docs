@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF samples"
-  - "samples [WPF]"
+helpviewer_keywords: ["WPF samples", "samples [WPF]"]
 ms.assetid: 1fc53e12-dfe5-476e-be13-fc3714aaf640
 caps.latest.revision: 24
 author: dotnet-bot

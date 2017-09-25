@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultFtpCachePolicy"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching/defaultFtpCachePolicy"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<defaultFtpCachePolicy> element"
-  - "defaultFtpCachePolicy element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultFtpCachePolicy", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching/defaultFtpCachePolicy"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<defaultFtpCachePolicy> element", "defaultFtpCachePolicy element"]
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
 caps.latest.revision: 13
 author: "mcleblanc"

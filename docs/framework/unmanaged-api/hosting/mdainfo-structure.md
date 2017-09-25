@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "MDAInfo"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "MDAInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MDAInfo structure [.NET Framework hosting]"
+api_name: ["MDAInfo"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["MDAInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MDAInfo structure [.NET Framework hosting]"]
 ms.assetid: fb8c14f7-d461-43d1-8b47-adb6723b9b93
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

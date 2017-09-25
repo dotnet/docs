@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "services, creating"
-  - "Windows Service applications, creating"
+helpviewer_keywords: ["services, creating", "Windows Service applications, creating"]
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
 caps.latest.revision: 21
 author: "ghogen"

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "lazy initialization in .NET, how to perform"
+helpviewer_keywords: ["lazy initialization in .NET, how to perform"]
 ms.assetid: 8cd68620-dcc3-4f20-8835-c728a6820e71
 caps.latest.revision: 10
 author: "rpetrusha"

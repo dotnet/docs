@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "quaternions"
-  - "animation, 3-D translations, with quaternions"
-  - "3-D translations, animating, with quaternions"
+helpviewer_keywords: ["quaternions", "animation, 3-D translations, with quaternions", "3-D translations, animating, with quaternions"]
 ms.assetid: adca9cb1-066b-4de8-abbb-6b4007579ee7
 caps.latest.revision: 5
 author: dotnet-bot

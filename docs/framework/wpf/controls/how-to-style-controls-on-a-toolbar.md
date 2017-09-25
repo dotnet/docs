@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "styling controls on toolbar"
-  - "toolbars"
-  - "customizing controls on toolbar"
+helpviewer_keywords: ["styling controls on toolbar", "toolbars", "customizing controls on toolbar"]
 ms.assetid: ba6ae056-d6a9-4c24-90f8-467ab0bc0b1a
 caps.latest.revision: 4
 author: dotnet-bot

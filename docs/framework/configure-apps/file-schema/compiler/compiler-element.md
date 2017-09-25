@@ -5,23 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#compiler"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom/compilers/compiler"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "compiler configuration elements, <compiler> element"
-  - "<compiler> element"
-  - "compiler configuration attributes"
-  - "compiler element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#compiler", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom/compilers/compiler"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["compiler configuration elements, <compiler> element", "<compiler> element", "compiler configuration attributes", "compiler element"]
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 caps.latest.revision: 20
 author: "mcleblanc"

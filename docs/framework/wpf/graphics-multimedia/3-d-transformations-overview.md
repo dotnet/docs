@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "3-D transformations"
-  - "transformations, 3-D"
+helpviewer_keywords: ["3-D transformations", "transformations, 3-D"]
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
 caps.latest.revision: 18
 author: dotnet-bot

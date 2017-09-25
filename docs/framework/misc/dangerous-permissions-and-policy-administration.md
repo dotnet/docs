@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "permissions [.NET Framework], policy administration"
-  - "security [.NET Framework], dangerous permissions"
-  - "code security, dangerous permissions"
-  - "secure coding, dangerous permissions"
-  - "permissions [.NET Framework], dangerous"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["permissions [.NET Framework], policy administration", "security [.NET Framework], dangerous permissions", "code security, dangerous permissions", "secure coding, dangerous permissions", "permissions [.NET Framework], dangerous"]
 ms.assetid: 1929e854-23a0-4bb1-94be-e8aa3b609e32
 caps.latest.revision: 11
 author: "mairaw"

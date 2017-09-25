@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.ControlCTrap"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::ControlCTrap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugManagedCallback::ControlCTrap method [.NET Framework debugging]"
-  - "ControlCTrap method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.ControlCTrap"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::ControlCTrap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugManagedCallback::ControlCTrap method [.NET Framework debugging]", "ControlCTrap method [.NET Framework debugging]"]
 ms.assetid: 0500854e-2121-43d9-a028-64312da35258
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

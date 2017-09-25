@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "context menus"
-  - "ContextMenuStrip control [Windows Forms]"
-  - "shortcut menus"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["context menus", "ContextMenuStrip control [Windows Forms]", "shortcut menus"]
 ms.assetid: 76e070b2-65d7-457f-8300-d104e4e01e5e
 caps.latest.revision: 9
 author: dotnet-bot

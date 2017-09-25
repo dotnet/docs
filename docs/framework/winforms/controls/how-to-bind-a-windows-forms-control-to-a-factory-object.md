@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], binding"
-  - "factory objects, binding to"
-  - "BindingSource component [Windows Forms], binding to a factory object"
-  - "BindingSource component [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], binding", "factory objects, binding to", "BindingSource component [Windows Forms], binding to a factory object", "BindingSource component [Windows Forms], examples"]
 ms.assetid: 7d59af89-ff82-41d8-a48a-f1fbae788b0d
 caps.latest.revision: 12
 author: dotnet-bot

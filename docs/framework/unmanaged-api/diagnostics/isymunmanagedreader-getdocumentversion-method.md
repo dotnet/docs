@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedReader.GetDocumentVersion"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedReader::GetDocumentVersion"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetDocumentVersion method [.NET Framework debugging]"
-  - "ISymUnmanagedReader::GetDocumentVersion method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedReader.GetDocumentVersion"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedReader::GetDocumentVersion"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetDocumentVersion method [.NET Framework debugging]", "ISymUnmanagedReader::GetDocumentVersion method [.NET Framework debugging]"]
 ms.assetid: a51f1f64-e084-44c5-830c-2222da5a6bbf
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

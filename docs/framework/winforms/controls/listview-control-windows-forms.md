@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "lists"
-  - "checked list items, Windows Forms controls"
-  - "user interface, creating"
-  - "lists, items with icons"
-  - "icons, listing with items"
-  - "list views"
-  - "ListView control [Windows Forms]"
-  - "list controls, List view"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["lists", "checked list items, Windows Forms controls", "user interface, creating", "lists, items with icons", "icons, listing with items", "list views", "ListView control [Windows Forms]", "list controls, List view"]
 ms.assetid: 9f71cf5c-82da-488a-a04e-ef52c0817187
 caps.latest.revision: 15
 author: dotnet-bot

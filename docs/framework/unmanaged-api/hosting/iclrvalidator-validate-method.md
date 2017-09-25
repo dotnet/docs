@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRValidator.Validate"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRValidator::Validate"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Validate method, ICLRValidator interface [.NET Framework hosting]"
-  - "ICLRValidator::Validate method [.NET Framework hosting]"
+api_name: ["ICLRValidator.Validate"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRValidator::Validate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Validate method, ICLRValidator interface [.NET Framework hosting]", "ICLRValidator::Validate method [.NET Framework hosting]"]
 ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

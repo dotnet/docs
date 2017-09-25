@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "interop marshaling, default"
-  - "interoperation with unmanaged code, marshaling"
-  - "marshaling behavior"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["interop marshaling, default", "interoperation with unmanaged code, marshaling", "marshaling behavior"]
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 caps.latest.revision: 15
 author: "rpetrusha"

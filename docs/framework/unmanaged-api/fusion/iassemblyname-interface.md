@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyName"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAssemblyName interface [.NET Framework fusion]"
+api_name: ["IAssemblyName"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAssemblyName interface [.NET Framework fusion]"]
 ms.assetid: f7f8e605-6b67-4151-936f-f04ecd671d90
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

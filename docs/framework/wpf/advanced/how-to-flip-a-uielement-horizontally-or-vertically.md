@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "flipping UIElements"
-  - "UIElements, flipping"
+helpviewer_keywords: ["flipping UIElements", "UIElements, flipping"]
 ms.assetid: 02c6730f-65c0-40d5-a553-4cb663721882
 caps.latest.revision: 4
 author: dotnet-bot

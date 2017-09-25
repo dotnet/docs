@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "images [Windows Forms], removing from ImageList component"
-  - "images [Windows Forms], storing for controls"
-  - "ImageList component [Windows Forms], adding images"
-  - "ImageList component [Windows Forms], removing images"
-  - "images [Windows Forms], adding to ImageList component"
-  - "images [Windows Forms], displaying with controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["images [Windows Forms], removing from ImageList component", "images [Windows Forms], storing for controls", "ImageList component [Windows Forms], adding images", "ImageList component [Windows Forms], removing images", "images [Windows Forms], adding to ImageList component", "images [Windows Forms], displaying with controls"]
 ms.assetid: c5eacc56-f769-4e2e-bfb7-f756620913db
 caps.latest.revision: 15
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugFunction.GetCurrentVersionNumber"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugFunction::GetCurrentVersionNumber"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetCurrentVersionNumber method [.NET Framework debugging]"
-  - "ICorDebugFunction::GetCurrentVersionNumber method [.NET Framework debugging]"
+api_name: ["ICorDebugFunction.GetCurrentVersionNumber"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugFunction::GetCurrentVersionNumber"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetCurrentVersionNumber method [.NET Framework debugging]", "ICorDebugFunction::GetCurrentVersionNumber method [.NET Framework debugging]"]
 ms.assetid: c3af1575-cbe6-457a-bc08-c53460edcbc8
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

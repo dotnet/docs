@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, resizing cells automatically"
-  - "cells, resizing automatically"
-  - "DataGridView control [Windows Forms], resizing cells"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids, resizing cells automatically", "cells, resizing automatically", "DataGridView control [Windows Forms], resizing cells"]
 ms.assetid: 1d68934d-a04c-4b12-9e66-c856c6828131
 caps.latest.revision: 19
 author: dotnet-bot

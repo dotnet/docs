@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged API reference [.NET Framework], debugging"
-  - "debugging [.NET Framework], using the unmanaged API"
-  - "native API reference [.NET Framework], debugging"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged API reference [.NET Framework], debugging", "debugging [.NET Framework], using the unmanaged API", "native API reference [.NET Framework], debugging"]
 ms.assetid: f0bf70be-42ef-4c46-8709-1694b5f99018
 caps.latest.revision: 20
 author: "rpetrusha"

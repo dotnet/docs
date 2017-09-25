@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "LinkLabel properties"
-  - "LinkLabel control [Windows Forms], changing appearance of links"
-  - "links, changing appearance"
-  - "examples [Windows Forms], LinkLabel control"
-  - "LinkLabel control [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["LinkLabel properties", "LinkLabel control [Windows Forms], changing appearance of links", "links, changing appearance", "examples [Windows Forms], LinkLabel control", "LinkLabel control [Windows Forms], examples"]
 ms.assetid: fdc5854f-5162-4457-8cbe-1042feb2d132
 caps.latest.revision: 11
 author: dotnet-bot

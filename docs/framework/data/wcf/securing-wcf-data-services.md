@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "securing application [WCF Data Services]"
-  - "WCF Data Services, security"
+helpviewer_keywords: ["securing application [WCF Data Services]", "WCF Data Services, security"]
 ms.assetid: 99fc2baa-a040-4549-bc4d-f683d60298af
 caps.latest.revision: 9
 author: "Erikre"

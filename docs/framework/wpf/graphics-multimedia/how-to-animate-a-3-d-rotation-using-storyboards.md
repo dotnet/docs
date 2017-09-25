@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Storyboards"
-  - "3-D translations, animating, with Storyboards"
-  - "animation, 3-D translations, with Storyboards"
+helpviewer_keywords: ["Storyboards", "3-D translations, animating, with Storyboards", "animation, 3-D translations, with Storyboards"]
 ms.assetid: 1020e44e-e21e-49a8-be53-53cbc1910e83
 caps.latest.revision: 11
 author: dotnet-bot

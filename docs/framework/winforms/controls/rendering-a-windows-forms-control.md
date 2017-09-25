@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Windows Forms], rendering"
-  - "OnPaintBackground method, invoking in Windows Forms custom controls"
-  - "custom controls [Windows Forms], graphics resources"
-  - "custom controls [Windows Forms], invalidation and painting"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Windows Forms], rendering", "OnPaintBackground method, invoking in Windows Forms custom controls", "custom controls [Windows Forms], graphics resources", "custom controls [Windows Forms], invalidation and painting"]
 ms.assetid: aae8e1e6-4786-432b-a15e-f4c44760d302
 caps.latest.revision: 12
 author: dotnet-bot

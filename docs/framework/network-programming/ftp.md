@@ -7,13 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "FTP"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["FTP"]
 ms.assetid: 9b43f8b4-89d7-46a7-89fc-71aca916dd32
 caps.latest.revision: 9
 author: "mcleblanc"

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "Windows 10"
-  - "Windows 8"
-helpviewer_keywords: 
-  - "profiling API"
-  - "profiling API [.NET Framework]"
-  - "profiling managed code"
-  - "profiling managed code [Windows Store Apps]"
+applies_to: ["Windows 10", "Windows 8"]
+helpviewer_keywords: ["profiling API", "profiling API [.NET Framework]", "profiling managed code", "profiling managed code [Windows Store Apps]"]
 ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
 caps.latest.revision: 8
 author: "rpetrusha"

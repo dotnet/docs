@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback2.RootReferences2"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback2::RootReferences2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RootReferences2 method [.NET Framework profiling]"
-  - "ICorProfilerCallback2::RootReferences2 method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback2.RootReferences2"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback2::RootReferences2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RootReferences2 method [.NET Framework profiling]", "ICorProfilerCallback2::RootReferences2 method [.NET Framework profiling]"]
 ms.assetid: 55a2f907-d216-42eb-8f2f-e5d59c2eebd6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

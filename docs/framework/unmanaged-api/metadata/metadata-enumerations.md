@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "enumerations [.NET Framework metadata]"
-  - "metadata enumerations [.NET Framework]"
-  - "unmanaged enumerations [.NET Framework], metadata"
+dev_langs: ["C++"]
+helpviewer_keywords: ["enumerations [.NET Framework metadata]", "metadata enumerations [.NET Framework]", "unmanaged enumerations [.NET Framework], metadata"]
 ms.assetid: 711ab251-cfdb-4280-aaa6-9bc1b341cdc3
 caps.latest.revision: 27
 author: "mairaw"

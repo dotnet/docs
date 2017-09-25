@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "HTML"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Astoria"
-  - "WCF Data Services, getting started"
+dev_langs: ["HTML", "VB", "CSharp", "C++"]
+helpviewer_keywords: ["Astoria", "WCF Data Services, getting started"]
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
 caps.latest.revision: 6
 author: "Erikre"

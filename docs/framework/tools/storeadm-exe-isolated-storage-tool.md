@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Storeadm.exe"
-  - "listing stores for current user"
-  - "Isolated Storage tool"
-  - "stores, current user"
-  - "removing stores"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Storeadm.exe", "listing stores for current user", "Isolated Storage tool", "stores, current user", "removing stores"]
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
 caps.latest.revision: 17
 author: "mairaw"

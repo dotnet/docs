@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Storyboards, controlling after start"
+helpviewer_keywords: ["Storyboards, controlling after start"]
 ms.assetid: 040f13f0-69f9-4ab5-be2b-079f4f80c7c0
 caps.latest.revision: 6
 author: dotnet-bot

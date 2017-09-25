@@ -5,29 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], reflection"
-  - "EventInfo class, reflection"
-  - "common language runtime, reflection"
-  - "FieldInfo class, reflection"
-  - "ParameterInfo class, reflection"
-  - "ConstructorInfo class, reflection"
-  - "Assembly class, reflection"
-  - "value types, reflection"
-  - "reflection, about reflection"
-  - "modules, reflection"
-  - "runtime, reflection"
-  - "Module class, reflection"
-  - "MethodInfo class, reflection"
-  - "PropertyInfo class, reflection"
-  - "type browsers"
-  - "reflection"
-  - "discovering type information at run time"
-  - "type system, reflection"
+helpviewer_keywords: ["assemblies [.NET Framework], reflection", "EventInfo class, reflection", "common language runtime, reflection", "FieldInfo class, reflection", "ParameterInfo class, reflection", "ConstructorInfo class, reflection", "Assembly class, reflection", "value types, reflection", "reflection, about reflection", "modules, reflection", "runtime, reflection", "Module class, reflection", "MethodInfo class, reflection", "PropertyInfo class, reflection", "type browsers", "reflection", "discovering type information at run time", "type system, reflection"]
 ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
 caps.latest.revision: 19
 author: "rpetrusha"

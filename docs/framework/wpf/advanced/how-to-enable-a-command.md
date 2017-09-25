@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "CommandBindings"
-  - "commanding"
+helpviewer_keywords: ["CommandBindings", "commanding"]
 ms.assetid: d8016266-58d9-48f7-8298-a86b7ed49fbd
 caps.latest.revision: 14
 author: dotnet-bot

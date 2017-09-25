@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "border thickness, animating changes to"
-  - "animation, changes to border thickness"
+helpviewer_keywords: ["border thickness, animating changes to", "animation, changes to border thickness"]
 ms.assetid: fd021978-f74b-4e7b-a7f7-3987dcad9e0f
 caps.latest.revision: 8
 author: dotnet-bot

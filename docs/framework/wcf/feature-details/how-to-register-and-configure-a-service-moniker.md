@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "COM [WCF], configure service monikers"
-  - "COM [WCF], register service monikers"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["COM [WCF], configure service monikers", "COM [WCF], register service monikers"]
 ms.assetid: e5e16c80-8a8e-4eef-af53-564933b651ef
 caps.latest.revision: 20
 author: "Erikre"

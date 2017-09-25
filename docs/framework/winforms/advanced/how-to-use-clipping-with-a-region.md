@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "regions, clipping"
-  - "regions, restricting drawing surface"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["regions, clipping", "regions, restricting drawing surface"]
 ms.assetid: 43d121b4-e14c-4901-b25c-2d6c25ba4e29
 caps.latest.revision: 14
 author: dotnet-bot

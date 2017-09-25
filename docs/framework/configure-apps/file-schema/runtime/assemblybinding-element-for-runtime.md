@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<assemblyBinding> element"
-  - "assemblyBinding element"
-  - "container tags, <assemblyBinding> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<assemblyBinding> element", "assemblyBinding element", "container tags, <assemblyBinding> element"]
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
 caps.latest.revision: 13
 author: "rpetrusha"

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "RunDll32ShimW"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "RunDll32ShimW"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RunDll32ShimW function [.NET Framework hosting]"
+api_name: ["RunDll32ShimW"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["RunDll32ShimW"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RunDll32ShimW function [.NET Framework hosting]"]
 ms.assetid: 9ea07b57-96e2-44df-8711-8fe6c119087f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

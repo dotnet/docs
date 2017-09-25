@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "transactions [WCF], enabling flow"
+helpviewer_keywords: ["transactions [WCF], enabling flow"]
 ms.assetid: a03f5041-5049-43f4-897c-e0292d4718f7
 caps.latest.revision: 17
 author: "Erikre"

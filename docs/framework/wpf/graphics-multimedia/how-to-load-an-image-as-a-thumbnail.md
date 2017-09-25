@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "loading images as thumbnails"
-  - "images, loading as thumbnails"
-  - "thumbnails, loading images as"
+helpviewer_keywords: ["loading images as thumbnails", "images, loading as thumbnails", "thumbnails, loading images as"]
 ms.assetid: 02e055a0-54df-499a-b8b6-ab6ff7535cff
 caps.latest.revision: 5
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTaskManager.EnterRuntime"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTaskManager::EnterRuntime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostTaskManager::EnterRuntime method [.NET Framework hosting]"
-  - "EnterRuntime method [.NET Framework hosting]"
+api_name: ["IHostTaskManager.EnterRuntime"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTaskManager::EnterRuntime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostTaskManager::EnterRuntime method [.NET Framework hosting]", "EnterRuntime method [.NET Framework hosting]"]
 ms.assetid: 1aa7a4b1-636a-4f5e-b834-b406d72f7120
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

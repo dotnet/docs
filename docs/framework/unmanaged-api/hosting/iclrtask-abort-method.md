@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask.Abort"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask::Abort"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRTask::Abort method [.NET Framework hosting]"
-  - "Abort method, ICLRTask interface [.NET Framework hosting]"
+api_name: ["ICLRTask.Abort"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask::Abort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRTask::Abort method [.NET Framework hosting]", "Abort method, ICLRTask interface [.NET Framework hosting]"]
 ms.assetid: b3594b5f-2e41-4e36-9096-3586276a138c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

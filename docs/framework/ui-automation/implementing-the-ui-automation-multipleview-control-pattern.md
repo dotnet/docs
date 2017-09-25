@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, MultipleView control pattern"
-  - "MultipleView control pattern"
-  - "control patterns, MultipleView"
+helpviewer_keywords: ["UI Automation, MultipleView control pattern", "MultipleView control pattern", "control patterns, MultipleView"]
 ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
 caps.latest.revision: 15
 author: "Xansky"

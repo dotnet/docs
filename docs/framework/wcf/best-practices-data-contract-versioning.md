@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "data contracts"
-  - "service contracts"
-  - "best practices [WCF], data contract versioning"
-  - "Windows Communication Foundation, data contracts"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["data contracts", "service contracts", "best practices [WCF], data contract versioning", "Windows Communication Foundation, data contracts"]
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
 caps.latest.revision: 24
 author: "Erikre"

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "choosing transports [WCF]"
+helpviewer_keywords: ["choosing transports [WCF]"]
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
 caps.latest.revision: 25
 author: "Erikre"

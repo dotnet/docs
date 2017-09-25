@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "highlights"
-  - "documents, annotations"
-  - "sticky notes"
+helpviewer_keywords: ["highlights", "documents, annotations", "sticky notes"]
 ms.assetid: 716bf474-29bd-4c74-84a4-8e0744bdad62
 caps.latest.revision: 17
 author: dotnet-bot

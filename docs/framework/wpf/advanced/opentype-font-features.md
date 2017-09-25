@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "fonts, OpenType"
-  - "typography, OpenType font technology"
-  - "OpenType font technology"
+helpviewer_keywords: ["fonts, OpenType", "typography, OpenType font technology", "OpenType font technology"]
 ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
 caps.latest.revision: 38
 author: dotnet-bot

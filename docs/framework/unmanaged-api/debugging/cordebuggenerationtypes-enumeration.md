@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorDebugGenerationTypes"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorDebugGenerationTypes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorDebugGenerationTypes enumeration [.NET Framework debugging]"
+api_name: ["CorDebugGenerationTypes"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorDebugGenerationTypes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorDebugGenerationTypes enumeration [.NET Framework debugging]"]
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"

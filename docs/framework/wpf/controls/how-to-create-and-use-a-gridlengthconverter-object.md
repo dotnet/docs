@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Grid control, creating, GridLengthConverter objects"
+helpviewer_keywords: ["Grid control, creating, GridLengthConverter objects"]
 ms.assetid: 5ab75911-e36a-4825-80e4-081c57e8e182
 caps.latest.revision: 10
 author: dotnet-bot

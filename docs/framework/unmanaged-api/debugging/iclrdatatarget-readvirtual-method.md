@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRDataTarget.ReadVirtual"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRDataTarget::ReadVirtual"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ReadVirtual method, ICLRDataTarget interface [.NET Framework debugging]"
-  - "ICLRDataTarget::ReadVirtual method [.NET Framework debugging]"
+api_name: ["ICLRDataTarget.ReadVirtual"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRDataTarget::ReadVirtual"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ReadVirtual method, ICLRDataTarget interface [.NET Framework debugging]", "ICLRDataTarget::ReadVirtual method [.NET Framework debugging]"]
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "proxy extensions [WCF]"
+helpviewer_keywords: ["proxy extensions [WCF]"]
 ms.assetid: 1328c61c-06e5-455f-9ebd-ceefb59d3867
 caps.latest.revision: 17
 author: "Erikre"

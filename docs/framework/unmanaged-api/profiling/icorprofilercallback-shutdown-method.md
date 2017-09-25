@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback.Shutdown"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback::Shutdown"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerCallback::Shutdown method [.NET Framework profiling]"
-  - "Shutdown method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback.Shutdown"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback::Shutdown"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerCallback::Shutdown method [.NET Framework profiling]", "Shutdown method [.NET Framework profiling]"]
 ms.assetid: 1ea194f0-a331-4855-a2ce-37393b8e5f84
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

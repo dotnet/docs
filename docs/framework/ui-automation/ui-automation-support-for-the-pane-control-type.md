@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, Pane control type"
-  - "Pane control type"
-  - "control types, Pane"
+helpviewer_keywords: ["UI Automation, Pane control type", "Pane control type", "control types, Pane"]
 ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
 caps.latest.revision: 25
 author: "Xansky"

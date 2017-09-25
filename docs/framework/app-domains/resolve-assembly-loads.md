@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], resolving loads"
-  - "application domains, loading assemblies"
-  - "resolving assembly loads"
-  - "assemblies [.NET Framework], loading"
-  - "application domains, resolving assembly loads"
+helpviewer_keywords: ["assemblies [.NET Framework], resolving loads", "application domains, loading assemblies", "resolving assembly loads", "assemblies [.NET Framework], loading", "application domains, resolving assembly loads"]
 ms.assetid: 5099e549-f4fd-49fb-a290-549edd456c6a
 caps.latest.revision: 10
 author: "rpetrusha"

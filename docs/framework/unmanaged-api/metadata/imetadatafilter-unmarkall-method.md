@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataFilter.UnmarkAll"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataFilter::UnmarkAll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataFilter::UnmarkAll method [.NET Framework metadata]"
-  - "UnmarkAll method [.NET Framework metadata]"
+api_name: ["IMetaDataFilter.UnmarkAll"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataFilter::UnmarkAll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataFilter::UnmarkAll method [.NET Framework metadata]", "UnmarkAll method [.NET Framework metadata]"]
 ms.assetid: a04d91dc-690f-4de8-8c97-55c69a8503b4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

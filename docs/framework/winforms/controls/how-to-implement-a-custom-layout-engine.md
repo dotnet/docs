@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "layout engines, custom"
-  - "TableLayoutPanel control [Windows Forms], layout engine"
-  - "layout engines, implementing"
-  - "FlowLayoutPanel control [Windows Forms], layout engine"
-  - "LayoutEngine class"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["layout engines, custom", "TableLayoutPanel control [Windows Forms], layout engine", "layout engines, implementing", "FlowLayoutPanel control [Windows Forms], layout engine"]
 ms.assetid: f91aa91c-29f4-4089-95ca-5d48b774b00e
 caps.latest.revision: 7
 author: dotnet-bot

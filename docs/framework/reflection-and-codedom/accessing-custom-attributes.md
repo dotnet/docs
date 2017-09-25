@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "custom attributes, accessibility"
-  - "attributes [.NET Framework], accessing"
-  - "reflection, custom attributes"
+helpviewer_keywords: ["custom attributes, accessibility", "attributes [.NET Framework], accessing", "reflection, custom attributes"]
 ms.assetid: 1d8e3398-00d8-47d5-a084-214f9859d3d7
 caps.latest.revision: 15
 author: "rpetrusha"

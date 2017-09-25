@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IValidator.FormatEventInfo"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "FormatEventInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IValidator::FormatEventInfo method [.NET Framework hosting]"
-  - "FormatEventInfo method, IValidator interface [.NET Framework hosting]"
+api_name: ["IValidator.FormatEventInfo"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["FormatEventInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IValidator::FormatEventInfo method [.NET Framework hosting]", "FormatEventInfo method, IValidator interface [.NET Framework hosting]"]
 ms.assetid: 4c0c7477-05ba-461b-b21b-cbfba95f1db1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

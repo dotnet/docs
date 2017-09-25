@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "media, features"
-  - "video effects"
-  - "sound effects"
-  - "animation, features"
-  - "graphics features"
-  - "transition effects"
+helpviewer_keywords: ["media, features", "video effects", "sound effects", "animation, features", "graphics features", "transition effects"]
 ms.assetid: 1817d9dc-3d6c-46cb-afc8-63b0bae35e37
 caps.latest.revision: 30
 author: dotnet-bot

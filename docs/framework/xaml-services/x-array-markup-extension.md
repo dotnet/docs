@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "x:Array"
-  - "xArray"
-helpviewer_keywords: 
-  - "x:Array [XAML Services]"
-  - "XAML [XAML Services], x:Array markup extension"
+f1_keywords: ["x:Array", "xArray"]
+helpviewer_keywords: ["x:Array [XAML Services]", "XAML [XAML Services], x:Array markup extension"]
 ms.assetid: c5358e14-d24c-44c7-b5eb-6062a4fd981c
 caps.latest.revision: 20
 author: "wadepickett"

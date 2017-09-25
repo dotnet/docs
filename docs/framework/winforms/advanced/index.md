@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, enhancing"
-  - "Windows Forms, adding features"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, enhancing", "Windows Forms, adding features"]
 ms.assetid: 733d1219-d6ad-4256-a55b-9eccf47f5a06
 caps.latest.revision: 13
 author: dotnet-bot

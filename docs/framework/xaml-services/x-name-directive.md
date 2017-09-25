@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "x:Name"
-  - "xName"
-  - "Name"
-helpviewer_keywords: 
-  - "x:Name attribute [XAML Services]"
-  - "XAML [XAML Services], x:Name attribute"
-  - "Name attribute in XAML [XAML Services]"
+f1_keywords: ["x:Name", "xName", "Name"]
+helpviewer_keywords: ["x:Name attribute [XAML Services]", "XAML [XAML Services], x:Name attribute", "Name attribute in XAML [XAML Services]"]
 ms.assetid: b7e61222-e8cf-48d2-acd0-6df3b7685d48
 caps.latest.revision: 27
 author: "wadepickett"

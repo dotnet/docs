@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRMetaHost.EnumerateLoadedRuntimes"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRMetaHost::EnumerateLoadedRuntimes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EnumerateLoadedRuntimes method [.NET Framework hosting]"
-  - "ICLRMetaHost::EnumerateLoadedRuntimes method [.NET Framework hosting]"
+api_name: ["ICLRMetaHost.EnumerateLoadedRuntimes"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRMetaHost::EnumerateLoadedRuntimes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EnumerateLoadedRuntimes method [.NET Framework hosting]", "ICLRMetaHost::EnumerateLoadedRuntimes method [.NET Framework hosting]"]
 ms.assetid: 22fc0a3f-dce4-4766-9a3c-9fab15f4b4ca
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

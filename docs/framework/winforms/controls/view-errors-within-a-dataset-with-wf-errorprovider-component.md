@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "errors [Windows Forms], dataset errors"
-  - "error messages, viewing in datasets"
-  - "ErrorProvider component [Windows Forms], dataset errors"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["errors [Windows Forms], dataset errors", "error messages, viewing in datasets", "ErrorProvider component [Windows Forms], dataset errors"]
 ms.assetid: cbae023f-d651-4210-bdea-bcc5f037e321
 caps.latest.revision: 11
 author: dotnet-bot

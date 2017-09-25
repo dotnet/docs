@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TextDecoration class"
-  - "classes, TextDecoration"
-  - "Hyperlink control type"
+helpviewer_keywords: ["Hyperlink control type"]
 ms.assetid: 3996cfe6-1dac-4835-aeb3-c719ce9cfee5
 caps.latest.revision: 5
 author: dotnet-bot

@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-  - "dotnet-clr"
+ms.technology: ["dotnet-bcl", "dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "JIT compiler, 64-bit"
-  - "JIT compilation, 64-bit"
-  - "RyuJIT compiler"
+helpviewer_keywords: ["JIT compiler, 64-bit", "JIT compilation, 64-bit", "RyuJIT compiler"]
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
 caps.latest.revision: 6
 author: "rpetrusha"

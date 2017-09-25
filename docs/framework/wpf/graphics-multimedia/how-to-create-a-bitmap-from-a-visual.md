@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "bitmaps, rendering from visuals"
-  - "visuals, rendering to bitmaps"
+helpviewer_keywords: ["bitmaps, rendering from visuals", "visuals, rendering to bitmaps"]
 ms.assetid: 103fc7f5-7306-4026-9d61-2005e79959f3
 caps.latest.revision: 5
 author: dotnet-bot

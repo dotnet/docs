@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, GroupBox"
-  - "GroupBox control, creating templates"
+helpviewer_keywords: ["controls, GroupBox", "GroupBox control, creating templates"]
 ms.assetid: 85a4d1a7-4753-4f4a-b26d-14fa10c1ddb5
 caps.latest.revision: 9
 author: dotnet-bot

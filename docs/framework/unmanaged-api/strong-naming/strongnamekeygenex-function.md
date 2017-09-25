@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "StrongNameKeyGenEx"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "StrongNameKeyGenEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameKeyGenEx function [.NET Framework strong naming]"
+api_name: ["StrongNameKeyGenEx"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["StrongNameKeyGenEx"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameKeyGenEx function [.NET Framework strong naming]"]
 ms.assetid: 36bd10b9-9857-45f3-8d3b-0da091d6169e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

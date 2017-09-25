@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "color tables, remapping colors with"
-  - "custom colors, creating with color remap table"
-  - "color remap tables, using"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["color tables, remapping colors with", "custom colors, creating with color remap table", "color remap tables, using"]
 ms.assetid: 977df1ce-8665-42d4-9fb1-ef7f0ff63419
 caps.latest.revision: 14
 author: dotnet-bot

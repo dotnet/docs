@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debugging enumerations [.NET Framework]"
-  - "unmanaged enumerations [.NET Framework], debugging"
-  - "enumerations [.NET Framework debugging]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["debugging enumerations [.NET Framework]", "unmanaged enumerations [.NET Framework], debugging", "enumerations [.NET Framework debugging]"]
 ms.assetid: 3af9f584-f1b4-4154-aeaa-8fce7c9f8b50
 caps.latest.revision: 27
 author: "rpetrusha"

@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "layout [Windows Forms]"
-  - "TableLayoutPanel control [Windows Forms], best practices"
-  - "forms, best practices"
-  - "AutoSize property, TableLayoutPanel control"
-  - "controls [Windows Forms],sizing"
-  - "TableLayoutPanel control [Windows Forms],AutoSize behavior"
-  - "layout [Windows Forms],AutoSize"
-  - "layout [Windows Forms], best practices"
-  - "best practices, TableLayoutPanel control"
-  - "sizing, automatic"
-  - "automatic sizing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["layout [Windows Forms]", "TableLayoutPanel control [Windows Forms], best practices", "forms, best practices", "AutoSize property, TableLayoutPanel control", "controls [Windows Forms], sizing", "TableLayoutPanel control [Windows Forms], AutoSize behavior", "layout [Windows Forms], AutoSize", "layout [Windows Forms], best practices", "best practices, TableLayoutPanel control", "sizing, automatic", "automatic sizing"]
 ms.assetid: b6706efb-d7a4-45ec-8cf4-08fa993e3afb
 caps.latest.revision: 11
 author: dotnet-bot

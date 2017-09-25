@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "StreamWriter class, data buffering problems"
-  - "managed debugging assistants (MDAs), StreamWriter data buffering"
-  - "buffers, StreamWriter problems"
-  - "MDAs (managed debugging assistants), StreamWriter data buffering"
-  - "StreamWriter buffered data lost"
-  - "data buffering problems"
-  - "streamWriterBufferedDataLost MDA"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["StreamWriter class, data buffering problems", "managed debugging assistants (MDAs), StreamWriter data buffering", "buffers, StreamWriter problems", "MDAs (managed debugging assistants), StreamWriter data buffering", "StreamWriter buffered data lost", "data buffering problems", "streamWriterBufferedDataLost MDA"]
 ms.assetid: 6e5c07be-bc5b-437a-8398-8779e23126ab
 caps.latest.revision: 8
 author: "mairaw"

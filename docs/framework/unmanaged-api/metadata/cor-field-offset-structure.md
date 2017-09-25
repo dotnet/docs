@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_FIELD_OFFSET"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_FIELD_OFFSET"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_FIELD_OFFSET structure [.NET Framework metadata]"
+api_name: ["COR_FIELD_OFFSET"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_FIELD_OFFSET"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_FIELD_OFFSET structure [.NET Framework metadata]"]
 ms.assetid: cced5298-277f-4a5a-8ecf-a0050c1096ea
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -7,20 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "automatic proxy detections"
-  - "Web Proxy Auto-Discovery"
-  - "Web proxy"
-  - "detecting proxies automatically"
-  - "WebProxy class, automatic proxy detections"
-  - "proxies, automatically detecting"
-  - "network"
-  - "WPAD (Web Proxy Auto-Discovery)"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["automatic proxy detections", "Web Proxy Auto-Discovery", "Web proxy", "detecting proxies automatically", "WebProxy class, automatic proxy detections", "proxies, automatically detecting", "network", "WPAD (Web Proxy Auto-Discovery)"]
 ms.assetid: fcd9c3bd-93de-4c92-8ff3-837327ad18de
 caps.latest.revision: 18
 author: "mcleblanc"

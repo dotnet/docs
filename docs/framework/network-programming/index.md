@@ -7,16 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Networking"
-  - "Internet"
-  - "Internet, .NET Framework Internet services"
-  - "Network Resources"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Networking", "Internet", "Internet, .NET Framework Internet services", "Network Resources"]
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
 caps.latest.revision: 24
 author: "mcleblanc"

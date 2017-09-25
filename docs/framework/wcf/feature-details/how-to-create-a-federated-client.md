@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF, federation"
-  - "federation"
+helpviewer_keywords: ["WCF, federation", "federation"]
 ms.assetid: 56ece47e-98bf-4346-b92b-fda1fc3b4d9c
 caps.latest.revision: 21
 author: "Erikre"

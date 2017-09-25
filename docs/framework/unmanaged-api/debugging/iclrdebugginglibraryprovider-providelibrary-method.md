@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRDebuggingLibraryProvider.ProvideLibrary Method"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRDebuggingLibraryProvider::ProvideLibrary"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ProvideLibrary method [.NET Framework debugging]"
-  - "ICLRDebuggingLibraryProvider::ProvideLibrary method [.NET Framework debugging]"
+api_name: ["ICLRDebuggingLibraryProvider.ProvideLibrary Method"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRDebuggingLibraryProvider::ProvideLibrary"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ProvideLibrary method [.NET Framework debugging]", "ICLRDebuggingLibraryProvider::ProvideLibrary method [.NET Framework debugging]"]
 ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

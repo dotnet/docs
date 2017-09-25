@@ -5,27 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "EnumerateCLRs"
-api_location: 
-  - "dbgshim.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "EnumerateCLRs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debugging API [Silverlight]"
-  - "Silverlight, debugging"
-  - "EnumerateCLRs function"
+api_name: ["EnumerateCLRs"]
+api_location: ["dbgshim.dll"]
+api_type: ["COM"]
+f1_keywords: ["EnumerateCLRs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["debugging API [Silverlight]", "Silverlight, debugging", "EnumerateCLRs function"]
 ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

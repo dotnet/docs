@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "EContextType"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "EContextType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EContextType enumeration [.NET Framework hosting]"
+api_name: ["EContextType"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["EContextType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EContextType enumeration [.NET Framework hosting]"]
 ms.assetid: 92b926a9-b87e-408a-9036-df7b752c9492
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

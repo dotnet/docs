@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mscorlib"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "mscorlib element"
-  - "<mscorlib> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#mscorlib", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["mscorlib element", "<mscorlib> element"]
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
 caps.latest.revision: 13
 author: "mcleblanc"

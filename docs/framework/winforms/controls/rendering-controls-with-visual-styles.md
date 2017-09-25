@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "professional appearance, rendering Windows Forms controls"
-  - "themes, XP visual styles in Window Forms"
-  - "custom controls [Windows Forms], rendering"
-  - "custom controls [Windows Forms], painting"
-  - "visual themes, rendering Windows Forms controls"
-  - "user controls [Windows Forms], painting"
-  - "visual styles, rendering Windows Forms controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["professional appearance, rendering Windows Forms controls", "themes, XP visual styles in Window Forms", "custom controls [Windows Forms], rendering", "custom controls [Windows Forms], painting", "visual themes, rendering Windows Forms controls", "user controls [Windows Forms], painting", "visual styles, rendering Windows Forms controls"]
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
 caps.latest.revision: 19
 author: dotnet-bot

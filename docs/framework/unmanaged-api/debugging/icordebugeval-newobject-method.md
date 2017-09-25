@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugEval.NewObject"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugEval::NewObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NewObject method [.NET Framework debugging]"
-  - "ICorDebugEval::NewObject method [.NET Framework debugging]"
+api_name: ["ICorDebugEval.NewObject"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugEval::NewObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["NewObject method [.NET Framework debugging]", "ICorDebugEval::NewObject method [.NET Framework debugging]"]
 ms.assetid: ce3025e8-defa-4c5e-8298-f49d71fa5736
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

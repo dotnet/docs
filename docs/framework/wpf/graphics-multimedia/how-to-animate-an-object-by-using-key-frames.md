@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, objects with key frames"
-  - "key frames, animating objects with"
+helpviewer_keywords: ["animation, objects with key frames", "key frames, animating objects with"]
 ms.assetid: b1f15ba9-cac7-4cea-8699-5c6b55c05c5e
 caps.latest.revision: 8
 author: dotnet-bot

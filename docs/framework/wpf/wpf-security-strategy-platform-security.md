@@ -5,22 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "platform security model"
-  - "Common Language Runtime (CLR) security features"
-  - "operating system security model"
-  - "Internet Explorer security features"
-  - "Security-Critical method"
-  - "CLR security features"
-  - "security model"
-  - "security model, platform"
-  - "WPF, about security model"
-  - "Windows Presentation Foundation, about security model"
-  - "security model, operating system"
+helpviewer_keywords: ["platform security model", "Common Language Runtime (CLR) security features", "operating system security model", "Internet Explorer security features", "Security-Critical method", "CLR security features", "security model", "security model, platform", "WPF, about security model", "Windows Presentation Foundation, about security model", "security model, operating system"]
 ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
 caps.latest.revision: 30
 author: dotnet-bot

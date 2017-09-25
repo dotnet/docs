@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "strong-named assemblies, compile-time references"
-  - "compile-time assembly referencing"
-  - "assemblies [.NET Framework], strong-named"
-  - "assembly binding, strong-named"
+helpviewer_keywords: ["strong-named assemblies, compile-time references", "compile-time assembly referencing", "assemblies [.NET Framework], strong-named", "assembly binding, strong-named"]
 ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
 caps.latest.revision: 14
 author: "rpetrusha"

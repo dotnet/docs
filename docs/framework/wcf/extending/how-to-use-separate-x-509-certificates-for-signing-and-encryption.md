@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF, extensibility"
-  - "ClientCredentials class"
-  - "ClientCredentialsSecurityTokenManager class"
+helpviewer_keywords: ["WCF, extensibility"]
 ms.assetid: 0b06ce4e-7835-4d82-8baf-d525c71a0e49
 caps.latest.revision: 11
 author: "Erikre"

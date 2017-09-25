@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "OpenFileDialog"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "OpenFileDialog component, about OpenFileDialog"
-  - "Open File dialog box, displaying in Windows Forms"
+f1_keywords: ["OpenFileDialog"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["OpenFileDialog component, about OpenFileDialog", "Open File dialog box, displaying in Windows Forms"]
 ms.assetid: cd717300-46b6-4f82-8207-b218fa7fa407
 caps.latest.revision: 10
 author: dotnet-bot

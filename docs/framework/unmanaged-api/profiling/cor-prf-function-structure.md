@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_PRF_FUNCTION"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_PRF_FUNCTION"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_PRF_FUNCTION structure [.NET Framework profiling]"
+api_name: ["COR_PRF_FUNCTION"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_PRF_FUNCTION"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_PRF_FUNCTION structure [.NET Framework profiling]"]
 ms.assetid: 8bb5acf5-cf4b-4ccb-93f1-46db1f3f8bf3
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

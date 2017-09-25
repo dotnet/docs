@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "converting, bound data"
-  - "data binding, converting bound data"
-  - "binding data, converting bound data"
+helpviewer_keywords: ["converting, bound data", "data binding, converting bound data", "binding data, converting bound data"]
 ms.assetid: b00aaa19-c6df-4c3b-a9fd-88a0b488df2b
 caps.latest.revision: 11
 author: dotnet-bot

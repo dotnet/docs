@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataTables.GetStringHeapSize"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataTables::GetStringHeapSize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataTables::GetStringHeapSize method [.NET Framework metadata]"
-  - "GetStringHeapSize method [.NET Framework metadata]"
+api_name: ["IMetaDataTables.GetStringHeapSize"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataTables::GetStringHeapSize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataTables::GetStringHeapSize method [.NET Framework metadata]", "GetStringHeapSize method [.NET Framework metadata]"]
 ms.assetid: ed8f6335-81f5-4c09-81a9-2a909fc530c9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

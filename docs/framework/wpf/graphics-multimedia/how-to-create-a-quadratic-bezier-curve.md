@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Bezier curves, creating"
-  - "quadratic Bezier curves, creating"
-  - "graphics [WPF], quadratic Bezier curves"
+helpviewer_keywords: ["Bezier curves, creating", "quadratic Bezier curves, creating", "graphics [WPF], quadratic Bezier curves"]
 ms.assetid: cd8fca4a-504e-4fd8-92ea-2969065a6e02
 caps.latest.revision: 8
 author: dotnet-bot

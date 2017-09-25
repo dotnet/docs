@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "load balancing [WCF]"
+helpviewer_keywords: ["load balancing [WCF]"]
 ms.assetid: 148e0168-c08d-4886-8769-776d0953b80f
 caps.latest.revision: 7
 author: "Erikre"

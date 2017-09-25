@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], global assembly cache"
-  - "Gacutil.exe"
-  - "global assembly cache, removing assemblies"
-  - "strong-named assemblies, global assembly cache"
-  - "removing assemblies from global assembly cache"
-  - "deleting assemblies in global assembly cache"
-  - "Global Assembly Cache tool"
-  - "GAC (global assembly cache), removing assemblies"
+helpviewer_keywords: ["assemblies [.NET Framework], global assembly cache", "Gacutil.exe", "global assembly cache, removing assemblies", "strong-named assemblies, global assembly cache", "removing assemblies from global assembly cache", "deleting assemblies in global assembly cache", "Global Assembly Cache tool", "GAC (global assembly cache), removing assemblies"]
 ms.assetid: acdcc588-b458-436d-876c-726de68244c1
 caps.latest.revision: 14
 author: "rpetrusha"

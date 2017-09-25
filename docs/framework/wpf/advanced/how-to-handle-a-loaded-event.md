@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML, Loaded events"
-  - "events, Loaded"
-  - "Loaded events"
+helpviewer_keywords: ["XAML, Loaded events", "events, Loaded", "Loaded events"]
 ms.assetid: 0cf8d003-8441-4df4-807a-6db09347e829
 caps.latest.revision: 12
 author: dotnet-bot

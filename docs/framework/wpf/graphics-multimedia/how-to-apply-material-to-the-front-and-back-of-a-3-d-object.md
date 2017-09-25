@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "3-D objects, applying Material class"
-  - "Material class, applying to both sides of 3-D object"
-  - "classes, Material"
+helpviewer_keywords: ["3-D objects, applying Material class", "Material class, applying to both sides of 3-D object", "classes, Material"]
 ms.assetid: d93c8ad6-4939-4d29-9544-4d16d98093c1
 caps.latest.revision: 5
 author: dotnet-bot

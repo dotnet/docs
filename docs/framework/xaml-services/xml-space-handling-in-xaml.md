@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML [XAML Services], xml:space attribute"
-  - "XAML [XAML Services], whitespace processing"
-  - "xml:space attribute [XAML Services]"
-  - "whitespace processing [XAML Services]"
+helpviewer_keywords: ["XAML [XAML Services], xml:space attribute", "XAML [XAML Services], whitespace processing", "xml:space attribute [XAML Services]", "whitespace processing [XAML Services]"]
 ms.assetid: 5e1814f0-5b30-43d5-8c88-dede335a89d7
 caps.latest.revision: 15
 author: "wadepickett"

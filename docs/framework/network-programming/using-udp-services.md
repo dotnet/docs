@@ -7,23 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "protocols, UDP"
-  - "network resources, UDP"
-  - "requesting data from Internet, UDP"
-  - "UDP"
-  - "receiving data, UDP"
-  - "Internet, UDP"
-  - "broadcasting messages to multiple addresses"
-  - "data requests, UDP"
-  - "UdpClient class, about UdpClient class"
-  - "sending data, UDP"
-  - "application protocols, UDP"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["protocols, UDP", "network resources, UDP", "requesting data from Internet, UDP", "UDP", "receiving data, UDP", "Internet, UDP", "broadcasting messages to multiple addresses", "data requests, UDP", "UdpClient class, about UdpClient class", "sending data, UDP", "application protocols, UDP"]
 ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
 caps.latest.revision: 15
 author: "mcleblanc"

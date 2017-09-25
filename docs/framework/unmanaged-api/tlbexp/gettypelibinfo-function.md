@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetTypeLibInfo"
-api_location: 
-  - "TlbRef.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "GetTypeLibInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetTypeLibInfo function [.NET Framework]"
+api_name: ["GetTypeLibInfo"]
+api_location: ["TlbRef.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["GetTypeLibInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetTypeLibInfo function [.NET Framework]"]
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

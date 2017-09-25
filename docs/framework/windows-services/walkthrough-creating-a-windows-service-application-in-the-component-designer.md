@@ -2,12 +2,9 @@
 title: "Walkthrough: Creating a Windows Service Application in the Component Designer"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Service applications, walkthroughs"
-  - "Windows Service applications, creating"
+helpviewer_keywords: ["Windows Service applications, walkthroughs", "Windows Service applications, creating"]
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 caps.latest.revision: 57
 author: "ghogen"

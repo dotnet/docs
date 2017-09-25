@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "BitmapImage class"
-  - "bitmap images"
-  - "Transforms"
+helpviewer_keywords: ["bitmap images", "Transforms"]
 ms.assetid: 5c042f8d-d569-45e4-ab32-868b89759bf2
 caps.latest.revision: 5
 author: dotnet-bot

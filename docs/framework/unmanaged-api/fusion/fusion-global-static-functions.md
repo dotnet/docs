@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged global static functions [.NET Framework], fusion"
-  - "fusion global static functions [.NET Framework]"
-  - "global static functions [.NET Framework fusion]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged global static functions [.NET Framework], fusion", "fusion global static functions [.NET Framework]", "global static functions [.NET Framework fusion]"]
 ms.assetid: 229b2188-9168-4b44-a987-e1f515494688
 caps.latest.revision: 14
 author: "rpetrusha"

@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UIElements, transparency"
-  - "opacity, of UIElements"
-  - "transparency of UIElements"
-  - "UIElements, opacity"
+helpviewer_keywords: ["UIElements, transparency", "opacity, of UIElements", "transparency of UIElements", "UIElements, opacity"]
 ms.assetid: a49fc8d6-7b32-4f28-9122-39b632a19b4b
 caps.latest.revision: 10
 author: dotnet-bot

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "attached properties [WPF Designer]"
+helpviewer_keywords: ["attached properties [WPF Designer]"]
 ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
 caps.latest.revision: 28
 author: dotnet-bot

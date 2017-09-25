@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "PrintPreviewControl"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "print preview"
-  - "PrintPreviewControl control"
+f1_keywords: ["PrintPreviewControl"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["print preview", "PrintPreviewControl control"]
 ms.assetid: 4513c6c7-5e9b-4f4c-82ca-00f993a26955
 caps.latest.revision: 13
 author: dotnet-bot

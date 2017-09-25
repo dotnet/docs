@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "keyed collections [Windows Forms]"
-  - "collections, accessing with keys"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["keyed collections [Windows Forms]", "collections, accessing with keys"]
 ms.assetid: b9b79b8b-d9bf-4f8c-b9d6-9578bc3219d3
 caps.latest.revision: 6
 author: dotnet-bot

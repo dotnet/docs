@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Web hosted service"
-  - "IIS Hosting Using Inline Code Sample [Windows Communication Foundation]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Web hosted service", "IIS Hosting Using Inline Code Sample [Windows Communication Foundation]"]
 ms.assetid: 56fe3687-a34b-4661-8e30-b33770f413fa
 caps.latest.revision: 40
 author: "Erikre"

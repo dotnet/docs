@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "queues [WCF]. grouping messages"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["queues [WCF]. grouping messages"]
 ms.assetid: 63b23b36-261f-4c37-99a2-cc323cd72a1a
 caps.latest.revision: 30
 author: "Erikre"

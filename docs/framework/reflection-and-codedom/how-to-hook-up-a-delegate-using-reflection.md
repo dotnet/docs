@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "events [.NET Framework], adding event handlers with reflection"
-  - "reflection, adding event-handler delegates"
-  - "delegates [.NET Framework], adding event handlers with reflection"
+helpviewer_keywords: ["events [.NET Framework], adding event handlers with reflection", "reflection, adding event-handler delegates", "delegates [.NET Framework], adding event handlers with reflection"]
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
 caps.latest.revision: 12
 author: "rpetrusha"

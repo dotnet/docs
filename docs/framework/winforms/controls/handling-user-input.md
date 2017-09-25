@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Windows Forms], user input using code"
-  - "custom controls [Windows Forms], keyboard events using code"
-  - "custom controls [Windows Forms], mouse events using code"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Windows Forms], user input using code", "custom controls [Windows Forms], keyboard events using code", "custom controls [Windows Forms], mouse events using code"]
 ms.assetid: d9b12787-86f6-4022-8e0f-e12d312c4af2
 caps.latest.revision: 8
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, strings with key frames"
-  - "strings, animating with key frames"
-  - "key frames, animating strings with"
+helpviewer_keywords: ["animation, strings with key frames", "strings, animating with key frames", "key frames, animating strings with"]
 ms.assetid: c62bc9fd-c09a-4227-bce0-0a1ab82049dd
 caps.latest.revision: 9
 author: dotnet-bot

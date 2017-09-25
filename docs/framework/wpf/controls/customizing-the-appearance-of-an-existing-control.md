@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control contract [WPF]"
-  - "controls [WPF], visual structure changes"
-  - "ControlTemplate [WPF], customizing for existing controls"
-  - "skinning controls [WPF]"
-  - "controls [WPF], appearance specified by state"
-  - "templates [WPF], custom for existing controls"
+helpviewer_keywords: ["control contract [WPF]", "controls [WPF], visual structure changes", "ControlTemplate [WPF], customizing for existing controls", "skinning controls [WPF]", "controls [WPF], appearance specified by state", "templates [WPF], custom for existing controls"]
 ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
 caps.latest.revision: 12
 author: dotnet-bot

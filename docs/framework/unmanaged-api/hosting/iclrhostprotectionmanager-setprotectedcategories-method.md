@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRHostProtectionManager.SetProtectedCategories"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRHostProtectionManager::SetProtectedCategories"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetProtectedCategories method [.NET Framework hosting]"
-  - "ICLRHostProtectionManager::SetProtectedCategories method [.NET Framework hosting]"
+api_name: ["ICLRHostProtectionManager.SetProtectedCategories"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRHostProtectionManager::SetProtectedCategories"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetProtectedCategories method [.NET Framework hosting]", "ICLRHostProtectionManager::SetProtectedCategories method [.NET Framework hosting]"]
 ms.assetid: fa21dc7b-5da7-440b-b59e-9180e5181f9d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

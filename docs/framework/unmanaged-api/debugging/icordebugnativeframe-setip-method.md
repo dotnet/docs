@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugNativeFrame.SetIP"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugNativeFrame::SetIP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugNativeFrame::SetIP method [.NET Framework debugging]"
-  - "SetIP method, ICorDebugNativeFrame interface [.NET Framework debugging]"
+api_name: ["ICorDebugNativeFrame.SetIP"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugNativeFrame::SetIP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugNativeFrame::SetIP method [.NET Framework debugging]", "SetIP method, ICorDebugNativeFrame interface [.NET Framework debugging]"]
 ms.assetid: 57784a51-c76d-48f8-9392-584d0e1946d9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Self hosted service"
-  - "Self Host Sample [Windows Communication Foundation]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Self hosted service", "Self Host Sample [Windows Communication Foundation]"]
 ms.assetid: 05e68661-1ddf-4abf-a899-9bb1b8272a5b
 caps.latest.revision: 38
 author: "Erikre"

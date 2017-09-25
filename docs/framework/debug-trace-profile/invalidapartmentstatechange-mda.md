@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), invalid apartment state"
-  - "managed debugging assistants (MDAs), invalid apartment state"
-  - "InvalidApartmentStateChange MDA"
-  - "invalid apartment state changes"
-  - "threading [.NET Framework], apartment states"
-  - "apartment states"
-  - "threading [.NET Framework], managed debugging assistants"
-  - "COM apartment states"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), invalid apartment state", "managed debugging assistants (MDAs), invalid apartment state", "InvalidApartmentStateChange MDA", "invalid apartment state changes", "threading [.NET Framework], apartment states", "apartment states", "threading [.NET Framework], managed debugging assistants", "COM apartment states"]
 ms.assetid: e56fb9df-5286-4be7-b313-540c4d876cd7
 caps.latest.revision: 12
 author: "mairaw"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostAssemblyManager.GetAssemblyStore"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostAssemblyManager::GetAssemblyStore"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostAssemblyManager::GetAssemblyStore method [.NET Framework hosting]"
-  - "GetAssemblyStore method [.NET Framework hosting]"
+api_name: ["IHostAssemblyManager.GetAssemblyStore"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostAssemblyManager::GetAssemblyStore"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostAssemblyManager::GetAssemblyStore method [.NET Framework hosting]", "GetAssemblyStore method [.NET Framework hosting]"]
 ms.assetid: d0f74593-9bb1-4a11-8096-e29734b20698
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

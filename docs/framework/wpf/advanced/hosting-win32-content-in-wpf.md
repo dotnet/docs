@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "interoperability [WPF], tutorials"
-  - "Win32 code, WPF interoperation"
-  - "interoperability [WPF], Win32"
+helpviewer_keywords: ["interoperability [WPF], tutorials", "Win32 code, WPF interoperation", "interoperability [WPF], Win32"]
 ms.assetid: 3cc8644a-34f3-4082-9ddc-77623e4df2d8
 caps.latest.revision: 7
 author: dotnet-bot

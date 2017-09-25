@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "allowing metadata requests while authorizing [WCF]"
+helpviewer_keywords: ["allowing metadata requests while authorizing [WCF]"]
 ms.assetid: 90cec34f-b619-452b-a056-8b1c0de49d05
 caps.latest.revision: 9
 author: "Erikre"

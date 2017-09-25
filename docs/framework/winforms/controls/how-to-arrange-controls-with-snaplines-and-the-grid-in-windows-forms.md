@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "GridSize"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "snap to grid, Windows Forms Designer"
-  - "Windows Forms, grid options in designer"
-  - "controls [Windows Forms], aligning"
+f1_keywords: ["GridSize"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["snap to grid, Windows Forms Designer", "Windows Forms, grid options in designer", "controls [Windows Forms], aligning"]
 ms.assetid: bb54bce5-880f-4a36-af68-8cf92058dc1c
 caps.latest.revision: 10
 author: dotnet-bot

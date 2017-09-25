@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "runtime information events [.NET Framework]"
-  - "ETW, runtime information events"
+helpviewer_keywords: ["runtime information events [.NET Framework]", "ETW, runtime information events"]
 ms.assetid: 68b4edbc-7f3b-45f6-ab75-4fd066d6af9a
 caps.latest.revision: 6
 author: "mairaw"

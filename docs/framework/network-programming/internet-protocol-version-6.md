@@ -7,17 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "IPv6, improvements"
-  - "IPv4"
-  - "IPv6"
-  - "Internet Protocol version 6, improvements"
-  - "Internet Protocol version 6"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["IPv6, improvements", "IPv4", "IPv6", "Internet Protocol version 6, improvements", "Internet Protocol version 6"]
 ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
 caps.latest.revision: 11
 author: "mcleblanc"

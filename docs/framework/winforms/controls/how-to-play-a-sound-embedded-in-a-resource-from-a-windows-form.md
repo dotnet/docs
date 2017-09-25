@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "sounds, playing from resources"
-  - "resources [Windows Forms], playing sounds"
-  - "playing sounds, from resources"
-  - "SoundPlayer class, playing sounds from resources"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["sounds, playing from resources", "resources [Windows Forms], playing sounds", "playing sounds, from resources", "SoundPlayer class, playing sounds from resources"]
 ms.assetid: 7d148bb6-8a1e-47d7-a08d-35828d2e688f
 caps.latest.revision: 17
 author: dotnet-bot

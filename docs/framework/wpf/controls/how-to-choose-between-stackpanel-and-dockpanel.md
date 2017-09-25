@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls [WPF], DockPanel"
-  - "DockPanel control, StackPanel control compared to"
-  - "StackPanel control, DockPanel control compared to"
-  - "controls [WPF], StackPanel"
+helpviewer_keywords: ["controls [WPF], DockPanel", "DockPanel control, StackPanel control compared to", "StackPanel control, DockPanel control compared to", "controls [WPF], StackPanel"]
 ms.assetid: f9239086-451f-42e6-81f7-ef89ef349742
 caps.latest.revision: 9
 author: dotnet-bot

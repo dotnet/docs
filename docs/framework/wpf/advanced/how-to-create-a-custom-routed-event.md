@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "creating, routed events"
-  - "routed events, creating"
-  - "events, routing"
+helpviewer_keywords: ["creating, routed events", "routed events, creating", "events, routing"]
 ms.assetid: b79f459a-1c3f-4045-b2d4-1659cc8eaa3c
 caps.latest.revision: 13
 author: dotnet-bot

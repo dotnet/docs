@@ -2,15 +2,10 @@
 title: "&lt;supportedRuntime&gt; Element"
 ms.date: "08/19/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/supportedRuntime"
-helpviewer_keywords: 
-  - "supportedRuntime element"
-  - "<supportedRuntime> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/supportedRuntime"]
+helpviewer_keywords: ["supportedRuntime element", "<supportedRuntime> element"]
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 caps.latest.revision: 33
 author: "mcleblanc"

@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "schema runtime settings"
-  - "configuration schema [.NET Framework], runtime settings"
-  - "runtime settings schema"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["schema runtime settings", "configuration schema [.NET Framework], runtime settings", "runtime settings schema"]
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
 caps.latest.revision: 49
 author: "rpetrusha"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, customizing"
-  - "query interceptors [WCF Data Services]"
+helpviewer_keywords: ["WCF Data Services, customizing", "query interceptors [WCF Data Services]"]
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
 caps.latest.revision: 2
 author: "Erikre"

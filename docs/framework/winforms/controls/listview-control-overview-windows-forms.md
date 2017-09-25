@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ListView"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "lists"
-  - "ListView control [Windows Forms], about ListView control"
-  - "list views"
+f1_keywords: ["ListView"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["lists", "ListView control [Windows Forms], about ListView control", "list views"]
 ms.assetid: c9ef56c1-3bb1-4101-9f4e-e95e720f2756
 caps.latest.revision: 12
 author: dotnet-bot

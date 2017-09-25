@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "member info cache creation"
-  - "MemberInfoCacheCreation MDA"
-  - "reflection, run-time errors"
-  - "MDAs (managed debugging assistants), cache"
-  - "cache [.NET Framework], reflection"
-  - "managed debugging assistants (MDAs), cache"
-  - "MemberInfo cache"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["member info cache creation", "MemberInfoCacheCreation MDA", "reflection, run-time errors", "MDAs (managed debugging assistants), cache", "cache [.NET Framework], reflection", "managed debugging assistants (MDAs), cache", "MemberInfo cache"]
 ms.assetid: 5abdad23-1335-4744-8acb-934002c0b6fe
 caps.latest.revision: 8
 author: "mairaw"

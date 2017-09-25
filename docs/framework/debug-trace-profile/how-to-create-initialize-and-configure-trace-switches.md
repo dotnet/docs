@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "trace switches, configuring"
-  - "tracing [.NET Framework], trace switches"
-  - "switches, trace"
-  - "tracing [.NET Framework], enabling or disabling"
-  - "Web.config configuration file, trace switches"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["trace switches, configuring", "tracing [.NET Framework], trace switches", "switches, trace", "tracing [.NET Framework], enabling or disabling", "Web.config configuration file, trace switches"]
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
 caps.latest.revision: 14
 author: "mairaw"

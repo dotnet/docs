@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WCF [WCF], getting started"
-  - "Windows Communication Foundation [WCF], getting started"
-  - "getting started [WCF]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WCF [WCF], getting started", "Windows Communication Foundation [WCF], getting started", "getting started [WCF]"]
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
 caps.latest.revision: 47
 author: "Erikre"

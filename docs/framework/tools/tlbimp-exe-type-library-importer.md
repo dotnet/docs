@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "type libraries [.NET Framework], importing"
-  - "importing type library"
-  - "Tlbimp.exe"
-  - "type definition conversion"
-  - "Type Library Importer"
-  - "type libraries"
-  - "converting type definitions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["type libraries [.NET Framework], importing", "importing type library", "Tlbimp.exe", "type definition conversion", "Type Library Importer", "type libraries", "converting type definitions"]
 ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
 caps.latest.revision: 29
 author: "rpetrusha"

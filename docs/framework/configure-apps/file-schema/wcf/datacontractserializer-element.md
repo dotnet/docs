@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dataContractSerializer element"
-  - "<dataContractSerializer> element"
-  - "DataContractSerializer"
-  - "KnownTypes"
+helpviewer_keywords: ["dataContractSerializer element", "<dataContractSerializer> element", "DataContractSerializer", "KnownTypes"]
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
 caps.latest.revision: 17
 author: "Erikre"

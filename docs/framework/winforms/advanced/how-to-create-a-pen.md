@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "graphics, creating pens"
-  - "pens, creating"
-  - "Pen object"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["graphics, creating pens", "pens, creating", "Pen object"]
 ms.assetid: 7fbea8b7-7ac1-4413-9c17-733a850381e3
 caps.latest.revision: 12
 author: dotnet-bot

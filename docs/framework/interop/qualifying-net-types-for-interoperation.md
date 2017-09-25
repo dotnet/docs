@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "exposing .NET Framework components to COM"
-  - "COM interop, qualifying .NET types"
-  - "qualifying .NET types for interoperation"
-  - "interoperation with unmanaged code, qualifying .NET types"
-  - "interoperation with unmanaged code, exposing .NET Framework components"
-  - "COM interop, exposing COM components"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["exposing .NET Framework components to COM", "COM interop, qualifying .NET types", "qualifying .NET types for interoperation", "interoperation with unmanaged code, qualifying .NET types", "interoperation with unmanaged code, exposing .NET Framework components", "COM interop, exposing COM components"]
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
 caps.latest.revision: 10
 author: "rpetrusha"

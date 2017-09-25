@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugChain.IsManaged"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugChain::IsManaged"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugChain::IsManaged method [.NET Framework debugging]"
-  - "IsManaged method, ICorDebugChain interface [.NET Framework debugging]"
+api_name: ["ICorDebugChain.IsManaged"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugChain::IsManaged"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugChain::IsManaged method [.NET Framework debugging]", "IsManaged method, ICorDebugChain interface [.NET Framework debugging]"]
 ms.assetid: 17b389a0-1a4d-4e8a-8613-9bc1769930f9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

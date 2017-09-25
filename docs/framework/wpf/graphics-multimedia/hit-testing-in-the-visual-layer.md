@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hit testing functionality"
-  - "visual layer, hit testing functionality"
+helpviewer_keywords: ["hit testing functionality", "visual layer, hit testing functionality"]
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
 caps.latest.revision: 42
 author: dotnet-bot

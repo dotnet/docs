@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, Matrix properties with key frames"
-  - "Matrix properties, animating with key frames"
-  - "key frames, animating Matrix properties with"
+helpviewer_keywords: ["animation, Matrix properties with key frames", "Matrix properties, animating with key frames", "key frames, animating Matrix properties with"]
 ms.assetid: b851a4c7-ecb1-420e-9203-83e7afd037fd
 caps.latest.revision: 10
 author: dotnet-bot

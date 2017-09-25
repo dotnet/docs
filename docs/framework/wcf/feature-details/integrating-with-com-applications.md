@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation, COM integration"
-  - "COM [WCF], Windows Communication Foundation integration"
-  - "WCF, reusing code"
-  - "Windows Communication Foundation, reusing code"
-  - "COM [WCF]"
-  - "WCF, COM integration"
+helpviewer_keywords: ["Windows Communication Foundation, COM integration", "COM [WCF], Windows Communication Foundation integration", "WCF, reusing code", "Windows Communication Foundation, reusing code", "COM [WCF]", "WCF, COM integration"]
 ms.assetid: c98bda3e-6779-419e-8e6d-9aa94053026d
 caps.latest.revision: 9
 author: "Erikre"

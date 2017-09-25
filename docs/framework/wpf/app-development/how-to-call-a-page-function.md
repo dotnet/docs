@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "calling page functions"
-  - "page functions, calling"
-  - "functions, calling"
+helpviewer_keywords: ["calling page functions", "page functions, calling", "functions, calling"]
 ms.assetid: a4808397-c6d5-406a-83e0-0091f0c15ae4
 caps.latest.revision: 11
 author: dotnet-bot

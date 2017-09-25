@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], disabling data entry"
-  - "data entry, disabling in grids"
-  - "data grids, disabling data entry"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], disabling data entry", "data entry, disabling in grids", "data grids, disabling data entry"]
 ms.assetid: ef9539ce-539b-404e-84b6-ac282b64b88c
 caps.latest.revision: 14
 author: dotnet-bot

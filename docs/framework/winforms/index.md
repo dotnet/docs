@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms"
-  - "user interface"
-  - "user interface, forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms", "user interface", "user interface, forms"]
 ms.assetid: 627df1e9-b254-41af-bbac-9a4f02810c54
 caps.latest.revision: 25
 author: dotnet-bot

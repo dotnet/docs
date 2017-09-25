@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ink, analyzing"
-  - "analyzing ink"
-  - "ink, AnalysisHintNode objects"
-  - "AnalysisHintNode objects"
+helpviewer_keywords: ["ink, analyzing", "analyzing ink", "ink, AnalysisHintNode objects", "AnalysisHintNode objects"]
 ms.assetid: d4421ed4-77f5-4640-829e-9f1de50b2ff2
 caps.latest.revision: 4
 author: dotnet-bot

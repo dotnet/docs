@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dependency properties, classes as owners"
-  - "dependency properties, metadata"
-  - "classes, owners of dependency properties"
-  - "metadata, dependency properties"
+helpviewer_keywords: ["dependency properties, classes as owners", "dependency properties, metadata", "classes, owners of dependency properties", "metadata, dependency properties"]
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 caps.latest.revision: 27
 author: dotnet-bot

@@ -5,27 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CoreClrDebugProcInfo"
-api_location: 
-  - "mscordbi_macx86.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CoreClrDebugProcInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remote debugging API [Silverlight]"
-  - "CoreClrDebugProcInfo structure"
-  - "Silverlight, remote debugging"
+api_name: ["CoreClrDebugProcInfo"]
+api_location: ["mscordbi_macx86.dll"]
+api_type: ["COM"]
+f1_keywords: ["CoreClrDebugProcInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["remote debugging API [Silverlight]", "CoreClrDebugProcInfo structure", "Silverlight, remote debugging"]
 ms.assetid: 4ddc37da-5c94-4beb-b61c-b54071c0e749
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

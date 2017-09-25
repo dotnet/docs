@@ -7,26 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "time-based cache policies"
-  - "cache synchronization date policy"
-  - "cache [.NET Framework], time-based policies"
-  - "freshness of cached resources"
-  - "time, cached resources"
-  - "maximum age policy"
-  - "synchronization, cache"
-  - "staleness of cached resources"
-  - "default time-based cache policy"
-  - "maximum staleness policy"
-  - "content cache policies"
-  - "expired content"
-  - "minimum freshness policy"
-  - "age of cached resources"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["time-based cache policies", "cache synchronization date policy", "cache [.NET Framework], time-based policies", "freshness of cached resources", "time, cached resources", "maximum age policy", "synchronization, cache", "staleness of cached resources", "default time-based cache policy", "maximum staleness policy", "content cache policies", "expired content", "minimum freshness policy", "age of cached resources"]
 ms.assetid: 74f0bcaf-5c95-40c1-9967-f3bbf1d2360a
 caps.latest.revision: 11
 author: "mcleblanc"

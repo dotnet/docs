@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, Tree"
-  - "Tree control type"
-  - "UI Automation, Tree control type"
+helpviewer_keywords: ["control types, Tree", "Tree control type", "UI Automation, Tree control type"]
 ms.assetid: 312dd04d-a86b-4072-8b12-2beeabdff5e3
 caps.latest.revision: 20
 author: "Xansky"

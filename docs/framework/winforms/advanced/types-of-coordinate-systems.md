@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "transformations, page"
-  - "unit of measure"
-  - "world coordinate system"
-  - "page coordinate system"
-  - "page transformation"
-  - "device coordinate system"
-  - "world transformation"
-  - "coordinate systems"
-  - "transformations, world"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["transformations, page", "unit of measure", "world coordinate system", "page coordinate system", "page transformation", "device coordinate system", "world transformation", "coordinate systems", "transformations, world"]
 ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
 caps.latest.revision: 15
 author: dotnet-bot

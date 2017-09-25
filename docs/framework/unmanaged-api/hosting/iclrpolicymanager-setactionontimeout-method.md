@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRPolicyManager.SetActionOnTimeout"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRPolicyManager::SetActionOnTimeout"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetActionOnTimeout method [.NET Framework hosting]"
-  - "ICLRPolicyManager::SetActionOnTimeout method [.NET Framework hosting]"
+api_name: ["ICLRPolicyManager.SetActionOnTimeout"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRPolicyManager::SetActionOnTimeout"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetActionOnTimeout method [.NET Framework hosting]", "ICLRPolicyManager::SetActionOnTimeout method [.NET Framework hosting]"]
 ms.assetid: 38439fa1-2b99-4fa8-a6ec-08afc0f83b9c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

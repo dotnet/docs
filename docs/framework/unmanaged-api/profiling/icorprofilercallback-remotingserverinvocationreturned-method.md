@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback.RemotingServerInvocationReturned"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback::RemotingServerInvocationReturned"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerCallback::RemotingServerInvocationReturned method [.NET Framework profiling]"
-  - "RemotingServerInvocationReturned method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback.RemotingServerInvocationReturned"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback::RemotingServerInvocationReturned"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerCallback::RemotingServerInvocationReturned method [.NET Framework profiling]", "RemotingServerInvocationReturned method [.NET Framework profiling]"]
 ms.assetid: a4de6805-e159-4280-99e5-3390c86166d0
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

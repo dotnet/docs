@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, querying"
-  - "getting started, WCF Data Services"
-  - "querying the data service [WCF Data Service]"
-  - "WCF Data Services, getting started"
-  - "WCF Data Services, accessing data"
+helpviewer_keywords: ["WCF Data Services, querying", "getting started, WCF Data Services", "querying the data service [WCF Data Service]", "WCF Data Services, getting started", "WCF Data Services, accessing data"]
 ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
 caps.latest.revision: 3
 author: "Erikre"

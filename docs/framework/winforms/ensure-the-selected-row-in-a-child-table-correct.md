@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "master-details view"
-  - "row position [Windows Forms]"
-  - "parent/child view [Windows Forms]"
-  - "resetting child position"
-  - "data binding [.NET Framework], row selection"
-  - "caching [.NET Framework], child position"
-  - "child position"
-  - "master/details view [Windows Forms]"
-  - "child tables row selection"
-  - "current child position"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["master-details view", "row position [Windows Forms]", "parent/child view [Windows Forms]", "resetting child position", "data binding [.NET Framework], row selection", "caching [.NET Framework], child position", "child position", "master/details view [Windows Forms]", "child tables row selection", "current child position"]
 ms.assetid: c5fa2562-43a4-46fa-a604-52d8526a87bd
 caps.latest.revision: 12
 author: dotnet-bot

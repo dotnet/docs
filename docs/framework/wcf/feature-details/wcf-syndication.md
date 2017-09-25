@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "syndication [WCF]"
+helpviewer_keywords: ["syndication [WCF]"]
 ms.assetid: ebf80384-0fc9-4919-a1e8-23ca2a13e300
 caps.latest.revision: 13
 author: "Erikre"

@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mailSettings"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "mailSettings element"
-  - "<mailSettings> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#mailSettings", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["mailSettings element", "<mailSettings> element"]
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
 caps.latest.revision: 20
 author: "mcleblanc"

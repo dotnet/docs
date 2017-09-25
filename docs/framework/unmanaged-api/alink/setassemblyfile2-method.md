@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IALink2.SetAssemblyFile2"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "SetAssemblyFile2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetAssemblyFile2 method"
+api_name: ["IALink2.SetAssemblyFile2"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["SetAssemblyFile2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetAssemblyFile2 method"]
 ms.assetid: eedb9125-1ef1-4000-abfc-7de86e5a1f17
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

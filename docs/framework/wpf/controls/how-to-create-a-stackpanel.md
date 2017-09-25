@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "StackPanel control, creating"
+helpviewer_keywords: ["StackPanel control, creating"]
 ms.assetid: e7ce65cb-720a-4bb6-95b6-286b74488a58
 caps.latest.revision: 12
 author: dotnet-bot

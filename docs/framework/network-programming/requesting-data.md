@@ -7,23 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "sending data"
-  - "WebRequest class, sending and receiving data"
-  - "requesting data from Internet, about requesting data"
-  - "WebClient class, sending and receiving data"
-  - "network, requesting data"
-  - "receiving data"
-  - "sending data, about sending data"
-  - "response to Internet request, about responding to Internet requests"
-  - "data requests"
-  - "receiving data, about receiving data"
-  - "Internet, requesting data"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["sending data", "WebRequest class, sending and receiving data", "requesting data from Internet, about requesting data", "WebClient class, sending and receiving data", "network, requesting data", "receiving data", "sending data, about sending data", "response to Internet request, about responding to Internet requests", "data requests", "receiving data, about receiving data", "Internet, requesting data"]
 ms.assetid: df6f1e1d-6f2a-45dd-8141-4a85c3dafe1d
 caps.latest.revision: 11
 author: "mcleblanc"

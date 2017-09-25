@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged enumerations [.NET Framework], hosting"
-  - "enumerations [.NET Framework hosting]"
-  - "hosting enumerations [.NET Framework]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged enumerations [.NET Framework], hosting", "enumerations [.NET Framework hosting]", "hosting enumerations [.NET Framework]"]
 ms.assetid: e09131eb-1f7d-4f52-ae42-7393e9b62ef6
 caps.latest.revision: 14
 author: "rpetrusha"

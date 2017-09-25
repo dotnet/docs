@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Windows Forms], user-drawn"
-  - "OnPaint method [Windows Forms]"
-  - "user-drawn controls [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Windows Forms], user-drawn", "OnPaint method [Windows Forms]", "user-drawn controls [Windows Forms]"]
 ms.assetid: 034af4b5-457f-4160-a937-22891817faa8
 caps.latest.revision: 14
 author: dotnet-bot

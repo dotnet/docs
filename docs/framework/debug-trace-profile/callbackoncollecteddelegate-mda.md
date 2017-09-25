@@ -5,25 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), garbage collection"
-  - "managed debugging assistants (MDAs), callback on collected delegates"
-  - "MDAs (managed debugging assistants), callback on collected delegates"
-  - "callback on delegate after garbage collection"
-  - "callbackOnCollectedDelegate MDA"
-  - "managed debugging assistants (MDAs), garbage collection"
-  - "call back collected delegates"
-  - "garbage collection, run-time errors"
-  - "delegates [.NET Framework], garbage collection"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), garbage collection", "managed debugging assistants (MDAs), callback on collected delegates", "MDAs (managed debugging assistants), callback on collected delegates", "callback on delegate after garbage collection", "callbackOnCollectedDelegate MDA", "managed debugging assistants (MDAs), garbage collection", "call back collected delegates", "garbage collection, run-time errors", "delegates [.NET Framework], garbage collection"]
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
 caps.latest.revision: 15
 author: "mairaw"

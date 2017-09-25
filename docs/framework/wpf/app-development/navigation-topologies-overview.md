@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "linear topology"
-  - "fixed hierarchical topology"
-  - "fixed linear topology"
-  - "topologies [WPF]"
-  - "navigation topologies [WPF]"
-  - "dynamically-generated topology"
+helpviewer_keywords: ["linear topology", "fixed hierarchical topology", "fixed linear topology", "topologies [WPF]", "navigation topologies [WPF]", "dynamically-generated topology"]
 ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
 caps.latest.revision: 20
 author: dotnet-bot

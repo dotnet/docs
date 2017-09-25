@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], type forwarding"
-  - "type forwarding"
+helpviewer_keywords: ["assemblies [.NET Framework], type forwarding", "type forwarding"]
 ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
 caps.latest.revision: 7
 author: "rpetrusha"

@@ -5,26 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "granting permissions, overriding security checks"
-  - "code access security, overriding security checks"
-  - "overriding security checks"
-  - "security [.NET Framework], overriding security checks"
-  - "security [.NET Framework], assertions"
-  - "asserted permissions"
-  - "Assert method"
-  - "caller security checks"
-  - "permissions [.NET Framework], overriding security checks"
-  - "permissions [.NET Framework], assertions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["granting permissions, overriding security checks", "code access security, overriding security checks", "overriding security checks", "security [.NET Framework], overriding security checks", "security [.NET Framework], assertions", "asserted permissions", "caller security checks", "permissions [.NET Framework], overriding security checks", "permissions [.NET Framework], assertions"]
 ms.assetid: 1e40f4d3-fb7d-4f19-b334-b6076d469ea9
 caps.latest.revision: 20
 author: "mairaw"

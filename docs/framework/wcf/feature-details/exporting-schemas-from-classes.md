@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF, schema import and export"
-  - "schemas [WCF], exporting from classes"
-  - "schemas [WCF]"
-  - "XsdDataContractExporter class"
-  - "XsdDataContractImporter class"
+helpviewer_keywords: ["WCF, schema import and export", "schemas [WCF], exporting from classes", "schemas [WCF]"]
 ms.assetid: bb57b962-70c1-45a9-93d5-e721e340a13f
 caps.latest.revision: 11
 author: "Erikre"

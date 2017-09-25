@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data [Windows Forms], formatting"
-  - "bound controls [Windows Forms], creating"
-  - "bound controls [Windows Forms], formatting data"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data [Windows Forms], formatting", "bound controls [Windows Forms], creating", "bound controls [Windows Forms], formatting data"]
 ms.assetid: d5a56228-899d-41d9-8af8-87b3f4ec2f94
 caps.latest.revision: 10
 author: dotnet-bot

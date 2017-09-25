@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "messages, informational"
-  - "informational messages"
-  - "managed debugging assistants (MDAs), exceptions"
-  - "exception handling, managed debugging assistants"
-  - "MDAs (managed debugging assistants), exceptions"
-  - "ExceptionSwallowedOnCallFromCOM MDA"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["messages, informational", "informational messages", "managed debugging assistants (MDAs), exceptions", "exception handling, managed debugging assistants", "MDAs (managed debugging assistants), exceptions", "ExceptionSwallowedOnCallFromCOM MDA"]
 ms.assetid: 55d6ab12-f251-4aab-aa64-aacbe9d9f974
 caps.latest.revision: 13
 author: "mairaw"

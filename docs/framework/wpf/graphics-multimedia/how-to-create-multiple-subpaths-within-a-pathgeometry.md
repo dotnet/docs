@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, PathGeometry"
-  - "multiple subpaths"
-  - "graphics [WPF], subpaths"
-  - "subpaths"
+helpviewer_keywords: ["multiple subpaths", "graphics [WPF], subpaths", "subpaths"]
 ms.assetid: 104a862c-dde2-4e62-ac87-80660dd1681c
 caps.latest.revision: 9
 author: dotnet-bot

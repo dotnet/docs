@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML [XAML Services], System.Xaml concepts"
-  - "XAML Services in WPF [XAML Services]"
-  - "System.Xaml [XAML Services], conceptual documentation"
+helpviewer_keywords: ["XAML [XAML Services], System.Xaml concepts", "XAML Services in WPF [XAML Services]", "System.Xaml [XAML Services], conceptual documentation"]
 ms.assetid: 0e11f386-808c-4eae-9ba6-029ad7ba2211
 caps.latest.revision: 13
 author: "wadepickett"

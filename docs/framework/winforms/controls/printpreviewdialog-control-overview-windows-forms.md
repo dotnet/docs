@@ -5,16 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "PrintPreviewDialog"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "PrintPreviewDialog control (using designer), about PrintPreviewDialog"
+f1_keywords: ["PrintPreviewDialog"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["PrintPreviewDialog control (using designer), about PrintPreviewDialog"]
 ms.assetid: efd4ee8d-6edd-47ec-88e4-4a4759bd2384
 caps.latest.revision: 14
 author: dotnet-bot

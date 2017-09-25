@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_PUB_ENUMPROCESS"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_PUB_ENUMPROCESS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_PUB_ENUMPROCESS enumeration [.NET Framework debugging]"
+api_name: ["COR_PUB_ENUMPROCESS"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_PUB_ENUMPROCESS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_PUB_ENUMPROCESS enumeration [.NET Framework debugging]"]
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

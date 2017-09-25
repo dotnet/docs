@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "basic programming [WCF]"
-  - "WCF [WCF], basic programming"
-  - "WCF [WCF], programming"
-  - "Windows Communication Foundation [WCF], basic programming"
-  - "Windows Communication Foundation [WCF], programming"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["basic programming [WCF]", "WCF [WCF], basic programming", "WCF [WCF], programming", "Windows Communication Foundation [WCF], basic programming", "Windows Communication Foundation [WCF], programming"]
 ms.assetid: 3ae3d498-f43c-4ecc-8cc0-6cbe36b62593
 caps.latest.revision: 31
 author: "Erikre"

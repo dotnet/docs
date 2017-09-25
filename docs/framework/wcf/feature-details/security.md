@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation, programming"
-  - "security [WCF]"
-  - "Windows Communication Foundation, security"
+helpviewer_keywords: ["Windows Communication Foundation, programming", "security [WCF]", "Windows Communication Foundation, security"]
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
 caps.latest.revision: 21
 author: "BrucePerlerMS"

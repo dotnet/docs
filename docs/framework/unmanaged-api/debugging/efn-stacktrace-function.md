@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "_EFN_StackTrace"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "_EFN_StackTrace"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_EFN_StackTrace function [.NET Framework debugging]"
+api_name: ["_EFN_StackTrace"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["_EFN_StackTrace"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_EFN_StackTrace function [.NET Framework debugging]"]
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, customizing rows"
-  - "DataGridView control [Windows Forms], customizing rows"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids, customizing rows", "DataGridView control [Windows Forms], customizing rows"]
 ms.assetid: 6db61607-7e57-4a84-8d63-9d6a7ed7f9ff
 caps.latest.revision: 13
 author: dotnet-bot

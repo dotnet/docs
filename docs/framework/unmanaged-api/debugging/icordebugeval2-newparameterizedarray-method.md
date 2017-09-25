@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugEval2.NewParameterizedArray"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugEval2::NewParameterizedArray"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugEval2::NewParameterizedArray method [.NET Framework debugging]"
-  - "NewParameterizedArray method [.NET Framework debugging]"
+api_name: ["ICorDebugEval2.NewParameterizedArray"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugEval2::NewParameterizedArray"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugEval2::NewParameterizedArray method [.NET Framework debugging]", "NewParameterizedArray method [.NET Framework debugging]"]
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerModuleEnum.Clone Method"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerModuleEnum::Clone"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Clone method, ICorProfilerModuleEnum interface [.NET Framework profiling]"
-  - "ICorProfilerModuleEnum::Clone method [.NET Framework profiling]"
+api_name: ["ICorProfilerModuleEnum.Clone Method"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerModuleEnum::Clone"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Clone method, ICorProfilerModuleEnum interface [.NET Framework profiling]", "ICorProfilerModuleEnum::Clone method [.NET Framework profiling]"]
 ms.assetid: 7dec7e36-8d88-416d-b437-abf98b76c1df
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

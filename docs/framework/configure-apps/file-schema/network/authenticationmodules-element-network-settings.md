@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#authenticationModules"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "authenticationModules element"
-  - "<authenticationModules> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#authenticationModules", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["authenticationModules element", "<authenticationModules> element"]
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
 caps.latest.revision: 15
 author: "mcleblanc"

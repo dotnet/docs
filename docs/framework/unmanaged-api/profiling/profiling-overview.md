@@ -5,37 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "managed code, profiling API support"
-  - "unmanaged code, combining with managed code in profiling"
-  - "notification threads [.NET Framework profiling]"
-  - "unmanaged code, profiling"
-  - "profiling API [.NET Framework], and COM"
-  - "profiling API [.NET Framework], unmanaged code profiling"
-  - "profilers, writing"
-  - "profiling API [.NET Framework], call stacks"
-  - "code profilers, writing"
-  - "profiling API [.NET Framework], security considerations"
-  - "profiling API [.NET Framework], managed code support"
-  - "common language runtime, profiling"
-  - "profiling API [.NET Framework], notification threads"
-  - "call stacks [.NET Framework profiling]"
-  - "profiling API [.NET Framework], stack depth"
-  - "common language runtime, writing a profiler"
-  - "profiling API [.NET Framework], information retrieval interfaces"
-  - "shadow stacks [.NET Framework profiling]"
-  - "COM, using in the profiling API"
-  - "stack snapshots [.NET Framework profiling]"
-  - "profiling API [.NET Framework], supported features"
-  - "profiling API [.NET Framework], overview"
-  - "security, profiling API considerations"
-  - "stack depth [.NET Framework profiling]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["managed code, profiling API support", "unmanaged code, combining with managed code in profiling", "notification threads [.NET Framework profiling]", "unmanaged code, profiling", "profiling API [.NET Framework], and COM", "profiling API [.NET Framework], unmanaged code profiling", "profilers, writing", "profiling API [.NET Framework], call stacks", "code profilers, writing", "profiling API [.NET Framework], security considerations", "profiling API [.NET Framework], managed code support", "common language runtime, profiling", "profiling API [.NET Framework], notification threads", "call stacks [.NET Framework profiling]", "profiling API [.NET Framework], stack depth", "common language runtime, writing a profiler", "profiling API [.NET Framework], information retrieval interfaces", "shadow stacks [.NET Framework profiling]", "COM, using in the profiling API", "stack snapshots [.NET Framework profiling]", "profiling API [.NET Framework], supported features", "profiling API [.NET Framework], overview", "security, profiling API considerations", "stack depth [.NET Framework profiling]"]
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
 caps.latest.revision: 27
 author: "mairaw"

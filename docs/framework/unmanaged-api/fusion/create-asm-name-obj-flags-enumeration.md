@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CREATE_ASM_NAME_OBJ_FLAGS"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CREATE_ASM_NAME_OBJ_FLAGS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CREATE_ASM_NAME_OBJ_FLAGS enumeration [.NET Framework fusion]"
+api_name: ["CREATE_ASM_NAME_OBJ_FLAGS"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["CREATE_ASM_NAME_OBJ_FLAGS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CREATE_ASM_NAME_OBJ_FLAGS enumeration [.NET Framework fusion]"]
 ms.assetid: a5ed2fd0-c7d2-4603-aaca-5d0caad92675
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -7,27 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "debugging [.NET Framework], network tracing"
-  - "methods, network tracing"
-  - "Networking"
-  - "trace enabled debugging"
-  - "network tracing, about network tracing"
-  - "network tracing"
-  - "network, network tracing"
-  - "traffic tracing"
-  - "tracing [.NET Framework], network"
-  - "deploying applications [.NET Framework], network traffic"
-  - "capturing network traffic"
-  - "Internet, network tracing"
-  - "Network Resources"
-  - "output, network tracing"
-  - "method invocations"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["debugging [.NET Framework], network tracing", "methods, network tracing", "Networking", "trace enabled debugging", "network tracing, about network tracing", "network tracing", "network, network tracing", "traffic tracing", "tracing [.NET Framework], network", "deploying applications [.NET Framework], network traffic", "capturing network traffic", "Internet, network tracing", "Network Resources", "output, network tracing", "method invocations"]
 ms.assetid: e993b7c3-087f-45d8-9c02-9dded936d804
 caps.latest.revision: 9
 author: "mcleblanc"

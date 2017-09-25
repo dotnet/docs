@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "calendars, displaying dates in bold"
-  - "examples [Windows Forms], calendar controls"
-  - "GetDayBold event"
-  - "MonthCalendar control [Windows Forms], dates displayed in bold"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["calendars, displaying dates in bold", "examples [Windows Forms], calendar controls", "GetDayBold event", "MonthCalendar control [Windows Forms], dates displayed in bold"]
 ms.assetid: 8b20db5b-8118-4825-90e8-2c45c186ac7d
 caps.latest.revision: 13
 author: dotnet-bot

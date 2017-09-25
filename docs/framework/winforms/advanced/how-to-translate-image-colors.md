@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "bitmaps [Windows Forms], changing colors"
-  - "images [Windows Forms], changing colors"
-  - "image colors [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["bitmaps [Windows Forms], changing colors", "images [Windows Forms], changing colors", "image colors [Windows Forms]"]
 ms.assetid: 2106fb9a-4d60-4dcf-9220-9f189a6c4d19
 caps.latest.revision: 13
 author: dotnet-bot

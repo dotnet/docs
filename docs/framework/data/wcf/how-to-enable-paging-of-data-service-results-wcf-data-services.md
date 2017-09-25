@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "paging output [WCF Data Services]"
+helpviewer_keywords: ["paging output [WCF Data Services]"]
 ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635
 caps.latest.revision: 2
 author: "Erikre"

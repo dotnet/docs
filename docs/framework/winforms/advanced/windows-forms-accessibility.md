@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, accessibility"
-  - "accessibility, Windows Forms controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, accessibility", "accessibility, Windows Forms controls"]
 ms.assetid: 23a3f168-ebc0-4f23-9efc-799109aa4a2d
 caps.latest.revision: 5
 author: dotnet-bot

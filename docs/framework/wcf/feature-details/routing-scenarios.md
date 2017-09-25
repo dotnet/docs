@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "rounting [WCF], scenarios"
+helpviewer_keywords: ["rounting [WCF], scenarios"]
 ms.assetid: ec22f308-665a-413e-9f94-7267cb665dab
 caps.latest.revision: 7
 author: "wadepickett"

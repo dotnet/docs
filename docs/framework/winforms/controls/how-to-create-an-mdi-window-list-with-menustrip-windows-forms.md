@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDI, creating window lists"
-  - "MenuStrip control [Windows Forms], creating window lists"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MDI, creating window lists", "MenuStrip control [Windows Forms], creating window lists"]
 ms.assetid: 04fb414b-811f-4a83-aab6-b4a24646dec5
 caps.latest.revision: 16
 author: dotnet-bot

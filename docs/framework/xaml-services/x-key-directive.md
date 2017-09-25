@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xKey"
-  - "Key"
-  - "x:Key"
-helpviewer_keywords: 
-  - "x:Key attribute [XAML Services]"
-  - "Key attribute in XAML [XAML Services]"
-  - "XAML [XAML Services], x:Key attribute"
+f1_keywords: ["xKey", "Key", "x:Key"]
+helpviewer_keywords: ["x:Key attribute [XAML Services]", "Key attribute in XAML [XAML Services]", "XAML [XAML Services], x:Key attribute"]
 ms.assetid: 1985cd45-f197-42d5-b75e-886add64b248
 caps.latest.revision: 25
 author: "wadepickett"

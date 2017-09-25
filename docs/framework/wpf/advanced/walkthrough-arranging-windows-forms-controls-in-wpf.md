@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hybrid applications [WPF interoperability]"
-  - "arranging controls"
+helpviewer_keywords: ["hybrid applications [WPF interoperability]", "arranging controls"]
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
 caps.latest.revision: 31
 author: dotnet-bot

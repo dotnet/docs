@@ -5,24 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#sharedListeners"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<sharedListeners> element"
-  - "listeners"
-  - "shared listeners"
-  - "trace listeners, <sharedListeners> element"
-  - "sharedListeners element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#sharedListeners", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<sharedListeners> element", "listeners", "shared listeners", "trace listeners, <sharedListeners> element", "sharedListeners element"]
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
 caps.latest.revision: 10
 author: "mcleblanc"

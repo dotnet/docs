@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XmlDataProvider, binding to XML data"
-  - "data binding, binding to XML data using XmlDataProvider queries"
-  - "binding, to XML data using XmlDataProvider queries"
+helpviewer_keywords: ["XmlDataProvider, binding to XML data", "data binding, binding to XML data using XmlDataProvider queries", "binding, to XML data using XmlDataProvider queries"]
 ms.assetid: 7dcd018f-16aa-4870-8e47-c1b4ea31e574
 caps.latest.revision: 22
 author: dotnet-bot

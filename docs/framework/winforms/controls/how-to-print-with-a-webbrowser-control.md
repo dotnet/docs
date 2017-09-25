@@ -5,20 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "WebBrowser.Print"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "printing [Windows Forms], Web pages"
-  - "WebBrowser control [Windows Forms], examples"
-  - "WebBrowser control [Windows Forms], printing from"
-  - "Web pages, printing"
-  - "examples [Windows Forms], WebBrowser control"
+f1_keywords: ["WebBrowser.Print"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["printing [Windows Forms], Web pages", "WebBrowser control [Windows Forms], examples", "WebBrowser control [Windows Forms], printing from", "Web pages, printing", "examples [Windows Forms], WebBrowser control"]
 ms.assetid: 3fb2a305-64ce-4b6c-9258-5330d3f21b6c
 caps.latest.revision: 14
 author: dotnet-bot

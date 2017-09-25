@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo2.GetContextStaticAddress"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo2::GetContextStaticAddress"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetContextStaticAddress method [.NET Framework profiling]"
-  - "ICorProfilerInfo2::GetContextStaticAddress method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo2.GetContextStaticAddress"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo2::GetContextStaticAddress"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetContextStaticAddress method [.NET Framework profiling]", "ICorProfilerInfo2::GetContextStaticAddress method [.NET Framework profiling]"]
 ms.assetid: 2b374116-0972-416a-8cf5-79213129be9a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "pictures, setting display"
-  - "examples [Windows Forms], PictureBox control"
-  - "bitmaps [Windows Forms], displaying in PictureBox control [Windows Forms]"
-  - "PictureBox control [Windows Forms], adding images"
-  - "images [Windows Forms], adding with PictureBox control [Windows Forms]"
-  - "PictureBox control [Windows Forms], adding pictures"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["pictures, setting display", "examples [Windows Forms], PictureBox control", "bitmaps [Windows Forms], displaying in PictureBox control [Windows Forms]", "PictureBox control [Windows Forms], adding images", "images [Windows Forms], adding with PictureBox control [Windows Forms]", "PictureBox control [Windows Forms], adding pictures"]
 ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
 caps.latest.revision: 14
 author: dotnet-bot

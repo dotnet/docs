@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ITypeNameBuilder.OpenGenericArgument"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "OpenGenericArgument"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ITypeNameBuilder::OpenGenericArgument method [.NET Framework hosting]"
-  - "OpenGenericArgument method [.NET Framework hosting]"
+api_name: ["ITypeNameBuilder.OpenGenericArgument"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["OpenGenericArgument"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ITypeNameBuilder::OpenGenericArgument method [.NET Framework hosting]", "OpenGenericArgument method [.NET Framework hosting]"]
 ms.assetid: 476feeac-e8e9-46cf-9f8d-be103181d0ab
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

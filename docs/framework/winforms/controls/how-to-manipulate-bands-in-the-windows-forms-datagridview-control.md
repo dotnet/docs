@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, manipulating bands"
-  - "bands, manipulating in Windows Forms"
-  - "DataGridView control [Windows Forms], manipulating bands"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids, manipulating bands", "bands, manipulating in Windows Forms", "DataGridView control [Windows Forms], manipulating bands"]
 ms.assetid: 1ea3470e-480f-4edc-bcbd-51373eca3856
 caps.latest.revision: 9
 author: dotnet-bot

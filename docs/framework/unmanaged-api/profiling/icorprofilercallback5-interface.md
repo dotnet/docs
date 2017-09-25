@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback5"
-api_location: 
-  - "Mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback5"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerCallback5 interface [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback5"]
+api_location: ["Mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback5"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerCallback5 interface [.NET Framework profiling]"]
 ms.assetid: 61d2e9ef-5f1f-4771-8847-239616e35d84
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

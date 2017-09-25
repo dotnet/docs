@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "OnDeserializedAttribute [WCF]"
-  - "OnDeserializingAttribute [WCF]"
-  - "OnSerializingAttribute [WCF]"
-  - "serialization [WCF], setting default values"
-  - "OnSerializedAttribute [WCF]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["OnDeserializedAttribute [WCF]", "OnDeserializingAttribute [WCF]", "OnSerializingAttribute [WCF]", "serialization [WCF], setting default values", "OnSerializedAttribute [WCF]"]
 ms.assetid: aa4a3a6f-05ec-4efd-bdbf-2181e13e6468
 caps.latest.revision: 17
 author: "Erikre"

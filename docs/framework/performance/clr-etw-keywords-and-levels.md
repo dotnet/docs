@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "CLR ETW keywords"
-  - "CLR ETW levels"
-  - "ETW, CLR keywords"
-  - "ETW, CLR levels"
+helpviewer_keywords: ["CLR ETW keywords", "CLR ETW levels", "ETW, CLR keywords", "ETW, CLR levels"]
 ms.assetid: fdf5856d-516b-4042-849d-911c4518a6cb
 caps.latest.revision: 15
 author: "mairaw"

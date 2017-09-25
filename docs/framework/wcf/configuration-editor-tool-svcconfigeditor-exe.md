@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "configuration files, creating"
-  - "configuration files"
-  - "Configuration file"
-  - "configuration file schema"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["configuration files, creating", "configuration files", "Configuration file", "configuration file schema"]
 ms.assetid: 2db21a57-5f64-426f-89df-fb0dc2d2def5
 caps.latest.revision: 45
 author: "Erikre"

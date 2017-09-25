@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "typography, ClearType technology"
-  - "ClearType, technology"
+helpviewer_keywords: ["typography, ClearType technology", "ClearType, technology"]
 ms.assetid: 7e2392e0-75dc-463d-a716-908772782431
 caps.latest.revision: 13
 author: dotnet-bot

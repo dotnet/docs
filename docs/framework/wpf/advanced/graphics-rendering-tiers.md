@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "graphics, performance"
-  - "rendering graphics"
-  - "rendering tiers"
-  - "graphics rendering tiers"
-  - "graphics, rendering tiers"
+helpviewer_keywords: ["graphics, performance", "rendering graphics", "rendering tiers", "graphics rendering tiers", "graphics, rendering tiers"]
 ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
 caps.latest.revision: 44
 author: dotnet-bot

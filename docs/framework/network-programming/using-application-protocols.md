@@ -7,22 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "application protocols, types"
-  - "protocols, application"
-  - "downloading Internet resources, application protocols"
-  - "sending data, application protocols"
-  - "Internet, application protocols"
-  - "network resources, application protocols"
-  - "response to Internet request, application protocols"
-  - "application protocols"
-  - "receiving data, application protocols"
-  - "requesting data from Internet, application protocols"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["application protocols, types", "protocols, application", "downloading Internet resources, application protocols", "sending data, application protocols", "Internet, application protocols", "network resources, application protocols", "response to Internet request, application protocols", "application protocols", "receiving data, application protocols", "requesting data from Internet, application protocols"]
 ms.assetid: 3aab4bcc-8397-4e1a-a1b6-bbd837a21430
 caps.latest.revision: 11
 author: "mcleblanc"

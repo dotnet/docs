@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedDocumentWriter.SetSource"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedDocumentWriter::SetSource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedDocumentWriter::SetSource method [.NET Framework debugging]"
-  - "SetSource method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedDocumentWriter.SetSource"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedDocumentWriter::SetSource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedDocumentWriter::SetSource method [.NET Framework debugging]", "SetSource method [.NET Framework debugging]"]
 ms.assetid: ea5b9d9f-ff06-4bd3-8de5-6435343aba59
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

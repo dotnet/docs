@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Service Transaction Behavior Sample [Windows Communication Foundation]"
+helpviewer_keywords: ["Service Transaction Behavior Sample [Windows Communication Foundation]"]
 ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
 caps.latest.revision: 28
 author: "Erikre"

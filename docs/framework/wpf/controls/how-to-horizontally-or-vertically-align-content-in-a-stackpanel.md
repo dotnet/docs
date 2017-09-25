@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "StackPanel control, content alignment"
-  - "content alignment"
-  - "aligning, content"
+helpviewer_keywords: ["StackPanel control, content alignment", "content alignment", "aligning, content"]
 ms.assetid: c1e8f962-72c8-4e7a-8670-7a2d7e021791
 caps.latest.revision: 9
 author: dotnet-bot

@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "provideroption"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<provideroption> element"
-  - "providerOptions"
-  - "provideroption element"
+f1_keywords: ["provideroption"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<provideroption> element", "providerOptions", "provideroption element"]
 ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
 caps.latest.revision: 22
 author: "mcleblanc"

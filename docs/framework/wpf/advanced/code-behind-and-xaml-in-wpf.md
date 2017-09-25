@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML, code-behind"
-  - "code-behind files, XAML"
+helpviewer_keywords: ["XAML, code-behind", "code-behind files, XAML"]
 ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
 caps.latest.revision: 14
 author: dotnet-bot

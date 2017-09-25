@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "datasets [Windows Forms], moving through"
-  - "BindingNavigator control [Windows Forms], moving through datasets"
-  - "examples [Windows Forms], BindingNavigator control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["datasets [Windows Forms], moving through", "BindingNavigator control [Windows Forms], moving through datasets", "examples [Windows Forms], BindingNavigator control"]
 ms.assetid: 146d97be-3d97-400e-accb-860bbf47729d
 caps.latest.revision: 13
 author: dotnet-bot

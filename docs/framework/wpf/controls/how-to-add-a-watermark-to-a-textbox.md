@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "displaying a background image inside a text box to aid user input [WPF]"
-  - "aid usability of a TextBox using a background image [WPF]"
+helpviewer_keywords: ["displaying a background image inside a text box to aid user input [WPF]", "aid usability of a TextBox using a background image [WPF]"]
 ms.assetid: df89bdd8-a0fb-45e0-b312-dd53332d01a8
 caps.latest.revision: 5
 author: dotnet-bot

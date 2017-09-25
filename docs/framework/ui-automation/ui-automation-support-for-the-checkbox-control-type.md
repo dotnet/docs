@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "CheckBox control type"
-  - "control types, CheckBox"
-  - "UI Automation, CheckBox control type"
+helpviewer_keywords: ["CheckBox control type", "control types, CheckBox", "UI Automation, CheckBox control type"]
 ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
 caps.latest.revision: 31
 author: "Xansky"

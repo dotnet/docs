@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "colors, transforming with color matrices"
-  - "colors, shearing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["colors, transforming with color matrices", "colors, shearing"]
 ms.assetid: 0a424171-5b8b-45c4-afef-e9720a6c3e22
 caps.latest.revision: 13
 author: dotnet-bot

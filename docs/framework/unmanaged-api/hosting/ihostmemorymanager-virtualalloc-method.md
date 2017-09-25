@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostMemoryManager.VirtualAlloc"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostMemoryManager::VirtualAlloc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VirtualAlloc method [.NET Framework hosting]"
-  - "IHostMemoryManager::VirtualAlloc method [.NET Framework hosting]"
+api_name: ["IHostMemoryManager.VirtualAlloc"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostMemoryManager::VirtualAlloc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["VirtualAlloc method [.NET Framework hosting]", "IHostMemoryManager::VirtualAlloc method [.NET Framework hosting]"]
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

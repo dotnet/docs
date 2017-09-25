@@ -7,11 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "retargeting changes"
-  - ".NET Framework 4.7 retargeting changes"
-  - "CspParameters.ParentWindowHandle"
-  - "CspParameters.ParentWindowHandle retargeting change"
+helpviewer_keywords: ["retargeting changes", ".NET Framework 4.7 retargeting changes", "CspParameters.ParentWindowHandle", "CspParameters.ParentWindowHandle retargeting change"]
 ms.assetid: 33264333-71d6-4d43-8827-9c98878cfea7
 caps.latest.revision: 5
 author: "rpetrusha"

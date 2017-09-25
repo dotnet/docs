@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "tables, exposing content of"
-  - "UI Automation, exposing content of tables"
-  - "exposing content of tables using UI Automation"
+helpviewer_keywords: ["tables, exposing content of", "UI Automation, exposing content of tables", "exposing content of tables using UI Automation"]
 ms.assetid: ac3c5eaa-49c7-4653-b83e-532e2a2604a2
 caps.latest.revision: 12
 author: "Xansky"

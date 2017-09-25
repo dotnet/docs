@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CeeSectionAttr"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CeeSectionAttr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CeeSectionAttr enumeration [.NET Framework metadata]"
+api_name: ["CeeSectionAttr"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["CeeSectionAttr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CeeSectionAttr enumeration [.NET Framework metadata]"]
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

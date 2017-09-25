@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ListView controls, MouseDoubleClick event"
+helpviewer_keywords: ["ListView controls, MouseDoubleClick event"]
 ms.assetid: 81b39369-655a-4585-ac58-4640e5bb8fed
 caps.latest.revision: 6
 author: dotnet-bot

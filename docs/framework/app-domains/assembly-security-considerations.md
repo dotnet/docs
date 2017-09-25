@@ -5,23 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], security"
-  - "signcodes"
-  - "names [.NET Framework], assemblies"
-  - "strong-named assemblies, security considerations"
-  - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
-  - "granting permissions, assemblies"
-  - "assemblies [.NET Framework], strong-named"
-  - "names [.NET Framework], strong names"
-  - "permissions [.NET Framework], assemblies"
-  - "security [.NET Framework], assemblies"
-  - "integrity with assemblies"
+helpviewer_keywords: ["assemblies [.NET Framework], security", "signcodes", "names [.NET Framework], assemblies", "strong-named assemblies, security considerations", "signing assemblies", "assemblies [.NET Framework], signing", "granting permissions, assemblies", "assemblies [.NET Framework], strong-named", "names [.NET Framework], strong names", "permissions [.NET Framework], assemblies", "security [.NET Framework], assemblies", "integrity with assemblies"]
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
 caps.latest.revision: 14
 author: "rpetrusha"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "brushes, painting with radial gradients"
-  - "radial gradients, painting with"
-  - "painting, with radial gradients"
+helpviewer_keywords: ["brushes, painting with radial gradients", "radial gradients, painting with", "painting, with radial gradients"]
 ms.assetid: b5d0fc8a-8986-4796-b003-a75b41a48928
 caps.latest.revision: 9
 author: dotnet-bot

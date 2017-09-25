@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo3.GetModuleInfo2"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo3::GetModuleInfo2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo3::GetModuleInfo2 method [.NET Framework profiling]"
-  - "GetModuleInfo2 method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo3.GetModuleInfo2"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo3::GetModuleInfo2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo3::GetModuleInfo2 method [.NET Framework profiling]", "GetModuleInfo2 method [.NET Framework profiling]"]
 ms.assetid: f1f6b8f3-dcfc-49e8-be76-ea50ea90d5a7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

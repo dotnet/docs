@@ -2,19 +2,11 @@
 title: "&lt;configSections&gt; element for &lt;configuration&gt;"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "configSections Element"
-  - "<configSections> Element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["configSections Element", "<configSections> Element"]
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
 author: "guardrex"
 ms.author: "mairaw"

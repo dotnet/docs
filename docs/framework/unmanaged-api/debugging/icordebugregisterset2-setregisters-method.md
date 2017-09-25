@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugRegisterSet2.SetRegisters"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugRegisterSet2::SetRegisters"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugRegisterSet2::SetRegisters method [.NET Framework debugging]"
-  - "SetRegisters method, ICorDebugRegisterSet2 interface [.NET Framework debugging]"
+api_name: ["ICorDebugRegisterSet2.SetRegisters"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugRegisterSet2::SetRegisters"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugRegisterSet2::SetRegisters method [.NET Framework debugging]", "SetRegisters method, ICorDebugRegisterSet2 interface [.NET Framework debugging]"]
 ms.assetid: fe0ac7e7-c9e1-4ec1-9f4e-1c56d63d73ac
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

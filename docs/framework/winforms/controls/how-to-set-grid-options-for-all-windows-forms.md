@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "snap to grid, Windows Forms Designer"
-  - "grids, options in Windows Forms"
-  - "snaplines, Windows Forms Designer"
-  - "Windows Forms, grid options in designer"
-  - "Windows Forms Designer"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["snap to grid, Windows Forms Designer", "grids, options in Windows Forms", "snaplines, Windows Forms Designer", "Windows Forms, grid options in designer", "Windows Forms Designer"]
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
 caps.latest.revision: 10
 author: dotnet-bot

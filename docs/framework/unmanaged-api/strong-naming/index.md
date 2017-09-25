@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strong naming [.NET Framework], using the unmanaged API"
-  - "native API reference [.NET Framework], strong naming"
-  - "unmanaged API reference [.NET Framework], strong naming"
+dev_langs: ["C++"]
+helpviewer_keywords: ["strong naming [.NET Framework], using the unmanaged API", "native API reference [.NET Framework], strong naming", "unmanaged API reference [.NET Framework], strong naming"]
 ms.assetid: 428c68b6-a7b4-44be-b280-75905f46612c
 caps.latest.revision: 9
 author: "rpetrusha"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "properties, UI Automation clients"
-  - "UI Automation, client properties"
+helpviewer_keywords: ["properties, UI Automation clients", "UI Automation, client properties"]
 ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
 caps.latest.revision: 17
 author: "Xansky"

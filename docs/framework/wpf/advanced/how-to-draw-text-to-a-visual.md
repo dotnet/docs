@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "typography, drawing text to visuals"
-  - "visuals, drawing text to"
-  - "text, drawing to visuals"
-  - "drawing, text to visuals"
+helpviewer_keywords: ["typography, drawing text to visuals", "visuals, drawing text to", "text, drawing to visuals", "drawing, text to visuals"]
 ms.assetid: fee4003c-e8a6-46ec-babd-2c7f4231a101
 caps.latest.revision: 11
 author: dotnet-bot

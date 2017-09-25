@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "user controls [Windows Forms], exposing constituent controls"
-  - "controls [Windows Forms], constituent"
-  - "custom controls [Windows Forms], exposing properties"
-  - "constituent controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["user controls [Windows Forms], exposing constituent controls", "controls [Windows Forms], constituent", "custom controls [Windows Forms], exposing properties", "constituent controls"]
 ms.assetid: 5c1ec98b-aa48-4823-986e-4712551cfdf1
 caps.latest.revision: 13
 author: dotnet-bot

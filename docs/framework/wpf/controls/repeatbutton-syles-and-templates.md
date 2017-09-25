@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "RepeatButton [WPF], styles and templates"
-  - "styles [WPF], RepeatButton"
-  - "templates [WPF], RepeatButton"
-  - "parts [WPF], RepeatButton"
-  - "ControlTemplate [WPF], RepeatButton"
-  - "states [WPF], RepeatButton"
+helpviewer_keywords: ["RepeatButton [WPF], styles and templates", "styles [WPF], RepeatButton", "templates [WPF], RepeatButton", "parts [WPF], RepeatButton", "ControlTemplate [WPF], RepeatButton", "states [WPF], RepeatButton"]
 ms.assetid: fd340743-f44f-4990-9077-085301469670
 caps.latest.revision: 9
 author: dotnet-bot

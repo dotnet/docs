@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedReader.UpdateSymbolStore"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedReader::UpdateSymbolStore"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UpdateSymbolStore method [.NET Framework debugging]"
-  - "ISymUnmanagedReader::UpdateSymbolStore method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedReader.UpdateSymbolStore"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedReader::UpdateSymbolStore"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UpdateSymbolStore method [.NET Framework debugging]", "ISymUnmanagedReader::UpdateSymbolStore method [.NET Framework debugging]"]
 ms.assetid: 4a17d723-86b9-4f27-bd0d-b70c3259011c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

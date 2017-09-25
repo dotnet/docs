@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "focus events, changing element color for"
-  - "colors of elements, changing"
-  - "elements, changing color of"
+helpviewer_keywords: ["focus events, changing element color for", "colors of elements, changing", "elements, changing color of"]
 ms.assetid: 7e246802-3625-47a7-ae9d-c8a2a40fd040
 caps.latest.revision: 10
 author: dotnet-bot

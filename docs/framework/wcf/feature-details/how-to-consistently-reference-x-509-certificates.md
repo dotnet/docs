@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "certificates [WCF], referencing X.509 certificates"
+helpviewer_keywords: ["certificates [WCF], referencing X.509 certificates"]
 ms.assetid: a6de1c63-e450-4640-ad08-ad7302dbfbfc
 caps.latest.revision: 6
 author: "Erikre"

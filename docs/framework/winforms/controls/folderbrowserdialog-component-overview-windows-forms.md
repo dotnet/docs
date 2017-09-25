@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "FolderBrowserDialog"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "FolderBrowserDialog component [Windows Forms], about FolderBrowserDialog"
-  - "directories [Windows Forms], enabling browsing in applications"
-  - "folders [Windows Forms], enabling browsing in applications"
+f1_keywords: ["FolderBrowserDialog"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["FolderBrowserDialog component [Windows Forms], about FolderBrowserDialog", "directories [Windows Forms], enabling browsing in applications", "folders [Windows Forms], enabling browsing in applications"]
 ms.assetid: 796b622c-3ba9-4356-93bb-e217fc52f2c7
 caps.latest.revision: 9
 author: dotnet-bot

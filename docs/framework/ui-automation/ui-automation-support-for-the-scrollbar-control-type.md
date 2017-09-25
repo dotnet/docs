@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, Scroll Bar control type"
-  - "control types, Scroll Bar"
-  - "Scroll Bar control type"
+helpviewer_keywords: ["UI Automation, Scroll Bar control type", "control types, Scroll Bar", "Scroll Bar control type"]
 ms.assetid: 329891d7-b609-49e6-920a-09ea8a627d07
 caps.latest.revision: 24
 author: "Xansky"

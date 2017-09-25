@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter.OpenScope"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter::OpenScope"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OpenScope method, ISymUnmanagedWriter interface [.NET Framework debugging]"
-  - "ISymUnmanagedWriter::OpenScope method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter.OpenScope"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter::OpenScope"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OpenScope method, ISymUnmanagedWriter interface [.NET Framework debugging]", "ISymUnmanagedWriter::OpenScope method [.NET Framework debugging]"]
 ms.assetid: dbea0644-3873-4329-90b8-624163e87467
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

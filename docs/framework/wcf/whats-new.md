@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF [WCF], what's new"
-  - "Windows Communication Foundation [WCF], what's new"
+helpviewer_keywords: ["WCF [WCF], what's new", "Windows Communication Foundation [WCF], what's new"]
 ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
 caps.latest.revision: 35
 author: "Erikre"

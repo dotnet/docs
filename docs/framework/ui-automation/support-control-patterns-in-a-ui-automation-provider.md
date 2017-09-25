@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control patterns, supporting in UI Automation provider"
-  - "UI Automation, supporting control patterns in provider"
+helpviewer_keywords: ["control patterns, supporting in UI Automation provider", "UI Automation, supporting control patterns in provider"]
 ms.assetid: 0d635c35-ffa8-4dc8-bbc9-12fcd5445776
 caps.latest.revision: 13
 author: "Xansky"

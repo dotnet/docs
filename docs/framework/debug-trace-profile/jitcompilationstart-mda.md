@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "JIT compilation"
-  - "MDAs (managed debugging assistants), JIT compilation"
-  - "JitCompilationStart MDA"
-  - "managed debugging assistants (MDAs), JIT compilation"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["JIT compilation", "MDAs (managed debugging assistants), JIT compilation", "JitCompilationStart MDA", "managed debugging assistants (MDAs), JIT compilation"]
 ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
 caps.latest.revision: 11
 author: "mairaw"

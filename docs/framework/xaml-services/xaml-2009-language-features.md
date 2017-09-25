@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML 2009 [XAML Services]"
-  - "XAML [XAML Services], XAML 2009"
+helpviewer_keywords: ["XAML 2009 [XAML Services]", "XAML [XAML Services], XAML 2009"]
 ms.assetid: f6bb18d8-c86a-4549-8862-323e6b32a8dd
 caps.latest.revision: 11
 author: "wadepickett"

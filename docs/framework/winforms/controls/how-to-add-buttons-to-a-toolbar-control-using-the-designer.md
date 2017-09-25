@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms], adding buttons"
-  - "ToolBar control [Windows Forms], adding buttons"
-  - "ToolBar control [Windows Forms], adding separators"
-  - "examples [Windows Forms], toolbars"
-  - "ToolBar control [Windows Forms], adding drop-down menus"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms], adding buttons", "ToolBar control [Windows Forms], adding buttons", "ToolBar control [Windows Forms], adding separators", "examples [Windows Forms], toolbars", "ToolBar control [Windows Forms], adding drop-down menus"]
 ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
 caps.latest.revision: 8
 author: dotnet-bot

@@ -5,29 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "StrongNameTokenFromPublicKey"
-api_location: 
-  - "mscoree.dll"
-  - "mscorsn.dll"
-  - "clr.dll"
-  - "mscorwks.dll"
-  - "mscoreei.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "StrongNameTokenFromPublicKey"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameTokenFromPublicKey function [.NET Framework strong naming]"
+api_name: ["StrongNameTokenFromPublicKey"]
+api_location: ["mscoree.dll", "mscorsn.dll", "clr.dll", "mscorwks.dll", "mscoreei.dll"]
+api_type: ["COM"]
+f1_keywords: ["StrongNameTokenFromPublicKey"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameTokenFromPublicKey function [.NET Framework strong naming]"]
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "interop marshaling, arrays"
-  - "arrays, interop marshaling"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["interop marshaling, arrays", "arrays, interop marshaling"]
 ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
 caps.latest.revision: 19
 author: "rpetrusha"

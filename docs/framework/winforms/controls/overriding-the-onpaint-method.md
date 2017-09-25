@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Paint event, handling in Windows Forms custom control"
-  - "OnPaint method, overriding in Windows Forms custom controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Paint event, handling in Windows Forms custom control", "OnPaint method, overriding in Windows Forms custom controls"]
 ms.assetid: e9ca2723-0107-4540-bb21-4f5ffb4a9906
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,15 +5,10 @@ ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-helpviewer_keywords: 
-  - ".NET Framework redistributable package, downloading"
-  - ".NET Framework, installing"
-  - "installing .NET Framework"
-  - "installation [.NET Framework]"
+helpviewer_keywords: [".NET Framework redistributable package, downloading", ".NET Framework, installing", "installing .NET Framework", "installation [.NET Framework]"]
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 caps.latest.revision: 165
 author: "rpetrusha"

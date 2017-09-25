@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "interoperation with unmanaged code, compiling"
-  - "COM interop, compiling"
-  - "exposing COM components to .NET Framework"
-  - "compiling interop projects"
-  - "interoperation with unmanaged code, exposing COM components"
-  - "COM interop, exposing COM components"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["interoperation with unmanaged code, compiling", "COM interop, compiling", "exposing COM components to .NET Framework", "compiling interop projects", "interoperation with unmanaged code, exposing COM components", "COM interop, exposing COM components"]
 ms.assetid: 6fcf6588-5e25-41af-b4ae-780974f2c3df
 caps.latest.revision: 16
 author: "rpetrusha"

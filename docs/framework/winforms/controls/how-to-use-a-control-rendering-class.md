@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "professional appearance, rendering Windows Forms controls"
-  - "visual themes, applying to Windows Forms controls"
-  - "visual styles, rendering Windows Forms controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["professional appearance, rendering Windows Forms controls", "visual themes, applying to Windows Forms controls", "visual styles, rendering Windows Forms controls"]
 ms.assetid: c0125e34-cd74-4c35-818c-3e40f462b0a3
 caps.latest.revision: 8
 author: dotnet-bot

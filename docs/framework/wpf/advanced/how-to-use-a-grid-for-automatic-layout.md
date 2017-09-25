@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "grids, automatic layout"
-  - "automatic layout, grid use"
+helpviewer_keywords: ["grids, automatic layout", "automatic layout, grid use"]
 ms.assetid: ab9de407-e0c1-4047-bdf0-24951bf73879
 caps.latest.revision: 13
 author: dotnet-bot

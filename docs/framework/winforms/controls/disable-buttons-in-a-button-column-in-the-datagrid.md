@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, disabling buttons"
-  - "buttons, disabling in button columns"
-  - "DataGridView control [Windows Forms], disabling button cells"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids, disabling buttons", "buttons, disabling in button columns", "DataGridView control [Windows Forms], disabling button cells"]
 ms.assetid: 5c344d01-013a-4a6b-8f8d-62ec9321d81e
 caps.latest.revision: 15
 author: dotnet-bot

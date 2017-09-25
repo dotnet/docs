@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "creating an add-in that is a UI [WPF]"
-  - "add-ins [WPF], UI"
-  - "creating UI add-ins [WPF]"
-  - "UI add-ins [WPF], creating"
-  - "implementing UI add-ins [WPF]"
-  - "pipeline segments [WPF], creating add-ins"
+helpviewer_keywords: ["creating an add-in that is a UI [WPF]", "add-ins [WPF], UI", "creating UI add-ins [WPF]", "UI add-ins [WPF], creating", "implementing UI add-ins [WPF]", "pipeline segments [WPF], creating add-ins"]
 ms.assetid: 86375525-282b-4039-8352-8680051a10ea
 caps.latest.revision: 8
 author: dotnet-bot

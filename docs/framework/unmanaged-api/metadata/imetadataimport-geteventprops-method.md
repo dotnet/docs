@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.GetEventProps"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::GetEventProps"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataImport::GetEventProps method [.NET Framework metadata]"
-  - "GetEventProps method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.GetEventProps"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::GetEventProps"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataImport::GetEventProps method [.NET Framework metadata]", "GetEventProps method [.NET Framework metadata]"]
 ms.assetid: 5eaf3b4a-92b7-4d5b-97e0-1e83721e0052
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

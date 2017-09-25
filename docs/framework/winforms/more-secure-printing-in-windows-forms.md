@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, printing"
-  - "PrintingPermission class, Windows Forms security"
-  - "printing [Windows Forms], security"
-  - "security [Windows Forms], printing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, printing", "PrintingPermission class, Windows Forms security", "printing [Windows Forms], security", "security [Windows Forms], printing"]
 ms.assetid: 48fd36ac-872f-4de0-902a-e52969cd4367
 caps.latest.revision: 9
 author: dotnet-bot

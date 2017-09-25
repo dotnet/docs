@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo.GetFunctionFromIP"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo::GetFunctionFromIP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetFunctionFromIP method [.NET Framework profiling]"
-  - "ICorProfilerInfo::GetFunctionFromIP method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo.GetFunctionFromIP"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo::GetFunctionFromIP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetFunctionFromIP method [.NET Framework profiling]", "ICorProfilerInfo::GetFunctionFromIP method [.NET Framework profiling]"]
 ms.assetid: f069802a-198f-46dd-9f09-4f77adffc9ba
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

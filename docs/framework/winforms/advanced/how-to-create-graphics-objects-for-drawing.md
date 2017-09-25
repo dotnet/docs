@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "graphics [Windows Forms], creating"
-  - "Graphics class"
-  - "images [Windows Forms], creating"
-  - "GDI+, creating images"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["graphics [Windows Forms], creating", "images [Windows Forms], creating", "GDI+, creating images"]
 ms.assetid: 162861f9-f050-445e-8abb-b2c43a918b8b
 caps.latest.revision: 17
 author: dotnet-bot

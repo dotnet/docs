@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "performance counters [WCF]"
+helpviewer_keywords: ["performance counters [WCF]"]
 ms.assetid: f559b2bd-ed83-4988-97a1-e88f06646609
 caps.latest.revision: 37
 author: "Erikre"

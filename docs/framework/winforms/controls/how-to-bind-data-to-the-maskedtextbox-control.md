@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MaskedTextBox control [Windows Forms]"
-  - "data binding, MaskedTextBox control [Windows Forms]"
-  - "MaskedTextBox control [Windows Forms], binding data"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MaskedTextBox control [Windows Forms]", "data binding, MaskedTextBox control [Windows Forms]", "MaskedTextBox control [Windows Forms], binding data"]
 ms.assetid: 34b29f07-e8df-48d4-b08b-53fcca524708
 caps.latest.revision: 12
 author: dotnet-bot

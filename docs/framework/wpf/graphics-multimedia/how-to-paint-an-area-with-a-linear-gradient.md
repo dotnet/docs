@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "linear gradients, painting with"
-  - "brushes, painting with linear gradients"
-  - "painting, with linear gradients"
+helpviewer_keywords: ["linear gradients, painting with", "brushes, painting with linear gradients", "painting, with linear gradients"]
 ms.assetid: 00e0cd04-48c0-4ec5-850e-d321beb37a34
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "StatusBar control [Windows Forms], panel size"
-  - "status bars, setting panel size"
-  - "panels, setting size in status bars"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["StatusBar control [Windows Forms], panel size", "status bars, setting panel size", "panels, setting size in status bars"]
 ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
 caps.latest.revision: 14
 author: dotnet-bot

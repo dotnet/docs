@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "menu items, removing from MDI drop-down menus"
-  - "MenuStrip control [Windows Forms], merging"
-  - "MenuStrip control [Windows Forms], removing"
-  - "MDI, merging menu items"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["menu items, removing from MDI drop-down menus", "MenuStrip control [Windows Forms], merging", "MenuStrip control [Windows Forms], removing", "MDI, merging menu items"]
 ms.assetid: bdafe60d-82ee-45bc-97fe-eeefca6e54c1
 caps.latest.revision: 12
 author: dotnet-bot

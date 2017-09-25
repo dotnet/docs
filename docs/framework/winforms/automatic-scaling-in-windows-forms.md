@@ -2,15 +2,10 @@
 title: "Automatic Scaling in Windows Forms"
 ms.date: "06/15/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "scalability, automatic in Windows Forms"
-  - "Windows Forms, automatic scaling"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["scalability, automatic in Windows Forms", "Windows Forms, automatic scaling"]
 ms.assetid: 68fad25b-afbc-44bd-8e1b-966fc43507a4
 caps.latest.revision: 9
 author: dotnet-bot

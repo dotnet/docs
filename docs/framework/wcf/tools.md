@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WCF, tools"
-  - "Windows Communication Foundation, tools"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WCF, tools", "Windows Communication Foundation, tools"]
 ms.assetid: 399a47b4-bfea-434b-8e83-f76b5063d79d
 caps.latest.revision: 34
 author: "Erikre"

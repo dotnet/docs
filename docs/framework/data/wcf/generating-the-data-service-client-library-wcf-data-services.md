@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "client applications, WCF Data Services"
-  - "WCF Data Services, client library"
-  - "Add Service Reference dialog box"
+helpviewer_keywords: ["client applications, WCF Data Services", "WCF Data Services, client library", "Add Service Reference dialog box"]
 ms.assetid: 314077c1-ac10-47e1-bed4-940b5462359d
 caps.latest.revision: 2
 author: "Erikre"

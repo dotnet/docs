@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "signatures, platform invoke"
-  - "stack depth"
-  - "platform invoke stack imbalance"
-  - "MDAs (managed debugging assistants), platform invoke"
-  - "platform invoke, run-time errors"
-  - "PInvokeStackImbalance MDA"
-  - "managed debugging assistants (MDAs), platform invoke"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["signatures, platform invoke", "stack depth", "platform invoke stack imbalance", "MDAs (managed debugging assistants), platform invoke", "platform invoke, run-time errors", "PInvokeStackImbalance MDA", "managed debugging assistants (MDAs), platform invoke"]
 ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
 caps.latest.revision: 16
 author: "mairaw"

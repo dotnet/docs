@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, duration"
-  - "Timelines, description"
-  - "duration of animations"
+helpviewer_keywords: ["animation, duration", "Timelines, description", "duration of animations"]
 ms.assetid: 155034ef-7d00-4416-a73c-b1713992d2eb
 caps.latest.revision: 8
 author: dotnet-bot

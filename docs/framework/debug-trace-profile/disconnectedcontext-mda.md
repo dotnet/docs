@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "DisconnectedContext MDA"
-  - "MDAs (managed debugging assistants), disconnected context"
-  - "dead context"
-  - "transitioning disconnected apartment or context"
-  - "context disconnections"
-  - "managed debugging assistants (MDAs), disconnected context"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["DisconnectedContext MDA", "MDAs (managed debugging assistants), disconnected context", "dead context", "transitioning disconnected apartment or context", "context disconnections", "managed debugging assistants (MDAs), disconnected context"]
 ms.assetid: 1887d31d-7006-4491-93b3-68fd5b05f71d
 caps.latest.revision: 14
 author: "mairaw"

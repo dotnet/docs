@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], binding multiple"
-  - "controls [Windows Forms], synchronizing with data source"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], binding multiple", "controls [Windows Forms], synchronizing with data source"]
 ms.assetid: c2f0ecc6-11e6-4c2c-a1ca-0759630c451e
 caps.latest.revision: 8
 author: dotnet-bot

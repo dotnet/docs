@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "handling faults [WCF]"
+helpviewer_keywords: ["handling faults [WCF]"]
 ms.assetid: a9696563-d404-4905-942d-1e0834c26dea
 caps.latest.revision: 22
 author: "Erikre"

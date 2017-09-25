@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "bitmaps [Windows Forms], displaying in Windows Forms"
-  - "bitmaps [Windows Forms], loading in Windows Forms applications"
-  - "images [Windows Forms], displaying on Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["bitmaps [Windows Forms], displaying in Windows Forms", "bitmaps [Windows Forms], loading in Windows Forms applications", "images [Windows Forms], displaying on Windows Forms"]
 ms.assetid: 5bc558d7-b326-4050-a834-b8600da0de95
 caps.latest.revision: 17
 author: dotnet-bot

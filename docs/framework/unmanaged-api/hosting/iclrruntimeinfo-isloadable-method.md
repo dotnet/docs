@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRRuntimeInfo.IsLoadable"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRRuntimeInfo::IsLoadable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsLoadable method [.NET Framework hosting]"
-  - "ICLRRuntimeInfo::IsLoadable method [.NET Framework hosting]"
+api_name: ["ICLRRuntimeInfo.IsLoadable"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRRuntimeInfo::IsLoadable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsLoadable method [.NET Framework hosting]", "ICLRRuntimeInfo::IsLoadable method [.NET Framework hosting]"]
 ms.assetid: 205ca53b-e78e-49b2-9a46-2a7823e96b8c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

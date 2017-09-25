@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], basic features"
-  - "columns [Windows Forms], DataGridView control"
-  - "data grids, examples"
-  - "DataGridView control [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], basic features", "columns [Windows Forms], DataGridView control", "data grids, examples", "DataGridView control [Windows Forms], examples"]
 ms.assetid: 78085f26-d5d2-4b75-813e-e932b72fd06f
 caps.latest.revision: 12
 author: dotnet-bot

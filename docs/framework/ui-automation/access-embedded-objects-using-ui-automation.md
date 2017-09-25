@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "embedded objects, accessing"
-  - "accessing embedded objects"
-  - "UI Automation, accessing embedded objects"
+helpviewer_keywords: ["embedded objects, accessing", "accessing embedded objects", "UI Automation, accessing embedded objects"]
 ms.assetid: a5b513ec-7fa6-4460-869f-c18ff04f7cf2
 caps.latest.revision: 17
 author: "Xansky"

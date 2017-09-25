@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "BindingNavigator control [Windows Forms], navigating data"
-  - "data [Windows Forms], navigating"
-  - "data navigation"
-  - "examples [Windows Forms], BindingNavigator control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["BindingNavigator control [Windows Forms], navigating data", "data [Windows Forms], navigating", "data navigation", "examples [Windows Forms], BindingNavigator control"]
 ms.assetid: 0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb
 caps.latest.revision: 18
 author: dotnet-bot

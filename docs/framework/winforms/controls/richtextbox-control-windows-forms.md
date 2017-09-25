@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "text boxes"
-  - "RichTextBox control [Windows Forms]"
-  - "rich edit controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["text boxes", "RichTextBox control [Windows Forms]", "rich edit controls"]
 ms.assetid: 3225f2ef-c6d9-4bd4-9d3e-2219e58edbf2
 caps.latest.revision: 12
 author: dotnet-bot

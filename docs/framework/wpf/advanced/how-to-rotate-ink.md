@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ink, rotating"
-  - "rotating ink"
+helpviewer_keywords: ["ink, rotating", "rotating ink"]
 ms.assetid: fac36cc9-dd01-41ca-9bde-9d33e3790bbe
 caps.latest.revision: 5
 author: dotnet-bot

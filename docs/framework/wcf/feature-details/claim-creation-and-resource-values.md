@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "claims [WCF], creation and resource values"
+helpviewer_keywords: ["claims [WCF], creation and resource values"]
 ms.assetid: 30431f76-cbe7-4bad-bad7-8e43e23a82d4
 caps.latest.revision: 6
 author: "Erikre"

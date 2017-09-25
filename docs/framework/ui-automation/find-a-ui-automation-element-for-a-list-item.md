@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "list items, finding elements for"
-  - "elements, finding for list items"
-  - "UI Automation, finding elements for List items"
+helpviewer_keywords: ["list items, finding elements for", "elements, finding for list items", "UI Automation, finding elements for List items"]
 ms.assetid: c326ad2b-2144-4f64-ae4c-d850c74f95c5
 caps.latest.revision: 5
 author: "Xansky"

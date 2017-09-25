@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "lists, enabling searching"
-  - "list views, enabling searching"
-  - "ListView control [Windows Forms], adding search capabilities"
-  - "searching, adding search capabilities to ListView control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["lists, enabling searching", "list views, enabling searching", "ListView control [Windows Forms], adding search capabilities", "searching, adding search capabilities to ListView control"]
 ms.assetid: 557782d9-b705-4bab-b496-9938afddac82
 caps.latest.revision: 8
 author: dotnet-bot

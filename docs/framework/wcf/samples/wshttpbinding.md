@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WS Profile binding"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WS Profile binding"]
 ms.assetid: 22d85b19-0135-4141-9179-a0e9c343ad73
 caps.latest.revision: 39
 author: "Erikre"

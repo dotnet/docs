@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask.GetMemStats"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask::GetMemStats"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRTask::GetMemStats method [.NET Framework hosting]"
-  - "GetMemStats method [.NET Framework hosting]"
+api_name: ["ICLRTask.GetMemStats"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask::GetMemStats"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRTask::GetMemStats method [.NET Framework hosting]", "GetMemStats method [.NET Framework hosting]"]
 ms.assetid: c9e07657-1682-4c30-a336-f8658ff1a125
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drop-down lists, Windows Forms"
-  - "list controls, Windows Forms"
-  - "combo boxes, Windows Forms controls"
-  - "combo boxes"
-  - "list items, Windows Forms controls that display"
-  - "drop-down lists, ComboBox control"
-  - "ComboBox control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drop-down lists, Windows Forms", "list controls, Windows Forms", "combo boxes, Windows Forms controls", "combo boxes", "list items, Windows Forms controls that display", "drop-down lists, ComboBox control", "ComboBox control [Windows Forms]"]
 ms.assetid: 86a1bbc3-0469-4290-91c5-99ff61b739ff
 caps.latest.revision: 11
 author: dotnet-bot

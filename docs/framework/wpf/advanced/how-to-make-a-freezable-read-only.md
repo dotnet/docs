@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Freezable objects, making read-only"
+helpviewer_keywords: ["Freezable objects, making read-only"]
 ms.assetid: 6c544b7d-d3c9-4736-aa90-4b8728234ccb
 caps.latest.revision: 6
 author: dotnet-bot

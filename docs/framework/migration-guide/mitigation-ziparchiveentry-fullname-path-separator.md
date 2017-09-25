@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-  - "dotnet-clr"
+ms.technology: ["dotnet-bcl", "dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "application compatibility"
-  - ",NET Framework application compatibility"
-  - ".NET Framework 4.6.1"
-  - ".NET Framework 4.6.1 retargeting changes"
-  - "retargeting changes"
+helpviewer_keywords: ["application compatibility", ", NET Framework application compatibility", ".NET Framework 4.6.1", ".NET Framework 4.6.1 retargeting changes", "retargeting changes"]
 ms.assetid: 8d575722-4fb6-49a2-8a06-f72d62dc3766
 caps.latest.revision: 9
 author: "rpetrusha"

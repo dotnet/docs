@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "tracing [.NET Framework]"
-  - "debugging [.NET Framework], instrumentation"
-  - "performance monitoring, instrumentation"
-  - "instrumentation, about instrumentation"
-  - "tracing [.NET Framework], about tracing"
-  - "performance monitoring, tracing code"
-  - "Trace class, instrumentation for .NET applications"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["tracing [.NET Framework]", "debugging [.NET Framework], instrumentation", "performance monitoring, instrumentation", "instrumentation, about instrumentation", "tracing [.NET Framework], about tracing", "performance monitoring, tracing code", "Trace class, instrumentation for .NET applications"]
 ms.assetid: 773b6fc4-9013-4322-b728-5dec7a72e743
 caps.latest.revision: 21
 author: "mairaw"

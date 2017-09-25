@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "lines, custom"
-  - "lines, drawing"
-  - "lines, dashed"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["lines, custom", "lines, drawing", "lines, dashed"]
 ms.assetid: cd0ed96a-cce4-47b9-b58a-3bae2e3d1bee
 caps.latest.revision: 16
 author: dotnet-bot

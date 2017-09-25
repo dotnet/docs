@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "flicker, reducing by manually managing graphics"
-  - "graphics, managing buffered"
-  - "BufferedGraphicsContext class"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["flicker, reducing by manually managing graphics", "graphics, managing buffered"]
 ms.assetid: 4c2a90ee-bbbe-4ff6-9170-1b06c195c918
 caps.latest.revision: 8
 author: dotnet-bot

@@ -7,21 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Networking"
-  - "SSL"
-  - "Secure Sockets Layer"
-  - "requesting data from Internet, Secure Sockets Layer"
-  - "sending data, Secure Sockets Layer"
-  - "Network Resources"
-  - "data requests, Secure Sockets Layer"
-  - "receiving data, Secure Sockets Layer"
-  - "Internet, Secure Sockets Layer"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Networking", "SSL", "Secure Sockets Layer", "requesting data from Internet, Secure Sockets Layer", "sending data, Secure Sockets Layer", "Network Resources", "data requests, Secure Sockets Layer", "receiving data, Secure Sockets Layer", "Internet, Secure Sockets Layer"]
 ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
 caps.latest.revision: 14
 author: "mcleblanc"

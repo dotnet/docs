@@ -5,13 +5,10 @@ ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - ".NET Framework, troubleshooting blocked installations"
-  - "blocked .NET Framework installations, troubleshooting"
+helpviewer_keywords: [".NET Framework, troubleshooting blocked installations", "blocked .NET Framework installations, troubleshooting"]
 ms.assetid: c3fdfbc1-ed99-4202-a2b0-8c4f1646385d
 caps.latest.revision: 57
 author: "rpetrusha"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "thread pool events [.NET Framework]"
-  - "ETW, thread pool events (CLR)"
+helpviewer_keywords: ["thread pool events [.NET Framework]", "ETW, thread pool events (CLR)"]
 ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
 caps.latest.revision: 8
 author: "mairaw"

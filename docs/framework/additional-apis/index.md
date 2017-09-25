@@ -5,15 +5,10 @@ ms.date: "04/12/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Additional class libraries"
-  - "Additional managed libraries"
-  - ".NET Framework out-of-band releases"
-  - "out-of-band releases"
+helpviewer_keywords: ["Additional class libraries", "Additional managed libraries", ".NET Framework out-of-band releases", "out-of-band releases"]
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
 caps.latest.revision: 12
 author: "mairaw"

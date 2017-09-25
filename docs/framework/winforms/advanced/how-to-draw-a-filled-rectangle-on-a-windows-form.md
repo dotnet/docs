@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Graphics.FillRectangle"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drawing, rectangles"
-  - "rectangles, drawing"
-  - "drawing rectangles"
+f1_keywords: ["Graphics.FillRectangle"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drawing, rectangles", "rectangles, drawing", "drawing rectangles"]
 ms.assetid: d656a93c-987d-4809-aafd-493fe17450f0
 caps.latest.revision: 11
 author: dotnet-bot

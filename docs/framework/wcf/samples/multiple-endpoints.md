@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Multiple EndPoints"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Multiple EndPoints"]
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412
 caps.latest.revision: 31
 author: "Erikre"

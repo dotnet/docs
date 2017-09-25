@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "federation [WCF], and trust"
+helpviewer_keywords: ["federation [WCF], and trust"]
 ms.assetid: 4bdec4f2-f8a2-4512-bdcf-14ef54b5877a
 caps.latest.revision: 12
 author: "Erikre"

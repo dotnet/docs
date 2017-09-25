@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugUnmanagedCallback.DebugEvent"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugUnmanagedCallback::DebugEvent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DebugEvent method [.NET Framework debugging]"
-  - "ICorDebugUnmanagedCallback::DebugEvent method [.NET Framework debugging]"
+api_name: ["ICorDebugUnmanagedCallback.DebugEvent"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugUnmanagedCallback::DebugEvent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DebugEvent method [.NET Framework debugging]", "ICorDebugUnmanagedCallback::DebugEvent method [.NET Framework debugging]"]
 ms.assetid: be9cab04-65ec-44d5-a39a-f90709fdd043
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

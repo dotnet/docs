@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms]"
-  - "custom controls [Windows Forms], creating simple controls using code"
-  - "Control class, Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms]", "custom controls [Windows Forms], creating simple controls using code", "Control class, Windows Forms"]
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
 caps.latest.revision: 17
 author: dotnet-bot

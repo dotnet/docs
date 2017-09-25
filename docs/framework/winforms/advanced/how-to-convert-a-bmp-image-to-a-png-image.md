@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "BMP images, converting to PNG"
-  - "image formats, converting between"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["BMP images, converting to PNG", "image formats, converting between"]
 ms.assetid: 9d4a692d-73ac-4ce3-9e05-9ec321e8fbd6
 caps.latest.revision: 10
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "GetCustomUI method"
-  - "custom error messages [WPF]"
+helpviewer_keywords: ["custom error messages [WPF]"]
 ms.assetid: e55180fc-35bb-4f80-a136-772b5eb3e4e5
 caps.latest.revision: 6
 author: dotnet-bot

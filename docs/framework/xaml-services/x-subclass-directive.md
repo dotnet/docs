@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Subclass"
-  - "xSubclass"
-  - "x:Subclass"
-helpviewer_keywords: 
-  - "x:Subclass attribute [XAML Services]"
-  - "XAML [XAML Services], x:Subclass attribute"
-  - "Subclass attribute in XAML [XAML Services]"
+f1_keywords: ["Subclass", "xSubclass", "x:Subclass"]
+helpviewer_keywords: ["x:Subclass attribute [XAML Services]", "XAML [XAML Services], x:Subclass attribute", "Subclass attribute in XAML [XAML Services]"]
 ms.assetid: 99f66072-8107-4362-ab99-8171dc83b469
 caps.latest.revision: 20
 author: "wadepickett"

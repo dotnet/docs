@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "hosting services [WCF]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["hosting services [WCF]"]
 ms.assetid: 192be927-6be2-4fda-98f0-e513c4881acc
 caps.latest.revision: 31
 author: "Erikre"

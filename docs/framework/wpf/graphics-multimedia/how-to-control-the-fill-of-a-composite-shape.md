@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "shapes, composite, controlling fill"
-  - "composite shapes, controlling fill"
-  - "graphics [WPF], composite shapes"
-  - "fill, controlling"
+helpviewer_keywords: ["shapes, composite, controlling fill", "composite shapes, controlling fill", "graphics [WPF], composite shapes", "fill, controlling"]
 ms.assetid: c1c94575-9eca-48a5-a49a-2ec65259f229
 caps.latest.revision: 11
 author: dotnet-bot

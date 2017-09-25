@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IDebuggerInfo.IsDebuggerAttached"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IsDebuggerAttached"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDebuggerInfo::IsDebuggerAttached method [.NET Framework hosting]"
-  - "IsDebuggerAttached method, IDebuggerInfo interface [.NET Framework hosting]"
+api_name: ["IDebuggerInfo.IsDebuggerAttached"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IsDebuggerAttached"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDebuggerInfo::IsDebuggerAttached method [.NET Framework hosting]", "IsDebuggerAttached method, IDebuggerInfo interface [.NET Framework hosting]"]
 ms.assetid: 6e21872f-602f-411a-a423-bff5cdf27000
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

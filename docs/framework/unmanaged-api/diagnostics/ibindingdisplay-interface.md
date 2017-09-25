@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IBindingDisplay"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IBindingDisplay"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IBindingDisplay interface [.NET Framework debugging]"
+api_name: ["IBindingDisplay"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["IBindingDisplay"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IBindingDisplay interface [.NET Framework debugging]"]
 ms.assetid: 3367166f-31fe-43d0-8107-2e786f984e50
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

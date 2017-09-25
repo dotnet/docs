@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data [Windows Forms], managing large data sets"
-  - "DataGridView control [Windows Forms], virtual mode"
-  - "virtual mode, walkthroughs"
-  - "DataGridView control [Windows Forms], large data sets"
-  - "walkthroughs [Windows Forms], DataGridView control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data [Windows Forms], managing large data sets", "DataGridView control [Windows Forms], virtual mode", "virtual mode, walkthroughs", "DataGridView control [Windows Forms], large data sets", "walkthroughs [Windows Forms], DataGridView control"]
 ms.assetid: 74eb5276-5ab8-4ce0-8005-dae751d85f7c
 caps.latest.revision: 14
 author: dotnet-bot

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MenuStrip control [Windows Forms]"
-  - "menus"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MenuStrip control [Windows Forms]", "menus"]
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6
 caps.latest.revision: 21
 author: dotnet-bot

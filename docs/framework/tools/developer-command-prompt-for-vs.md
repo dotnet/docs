@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "command prompt, Windows SDK"
-  - "Visual Studio command prompt"
-  - "command prompt, Visual Studio"
-  - "SDK command prompt"
-  - "tools [.NET Framework], setting environment variables"
-  - "environment variables, setting for tools"
-  - "developer command prompt"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["command prompt, Windows SDK", "Visual Studio command prompt", "command prompt, Visual Studio", "SDK command prompt", "tools [.NET Framework], setting environment variables", "environment variables, setting for tools", "developer command prompt"]
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 caps.latest.revision: 45
 author: "mairaw"

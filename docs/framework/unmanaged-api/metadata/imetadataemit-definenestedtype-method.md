@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.DefineNestedType"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::DefineNestedType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataEmit::DefineNestedType method [.NET Framework metadata]"
-  - "DefineNestedType method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.DefineNestedType"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::DefineNestedType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataEmit::DefineNestedType method [.NET Framework metadata]", "DefineNestedType method [.NET Framework metadata]"]
 ms.assetid: 1e994de6-4628-459c-b967-b34be1e9fe4f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

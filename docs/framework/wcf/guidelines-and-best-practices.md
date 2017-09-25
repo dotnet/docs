@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WCF, guidelines"
-  - "best practices [WCF], application design"
-  - "Windows Communication Foundation, best practices"
-  - "WCF, best practices"
-  - "Windows Communication Foundation, guidelines"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WCF, guidelines", "best practices [WCF], application design", "Windows Communication Foundation, best practices", "WCF, best practices", "Windows Communication Foundation, guidelines"]
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
 caps.latest.revision: 18
 author: "Erikre"

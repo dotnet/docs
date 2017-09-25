@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], making invisible at run time"
-  - "invisible controls"
-  - "user controls [Windows Forms], invisible"
-  - "custom controls [Windows Forms], invisible"
-  - "run time, making controls invisible"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], making invisible at run time", "invisible controls", "user controls [Windows Forms], invisible", "custom controls [Windows Forms], invisible", "run time, making controls invisible"]
 ms.assetid: 69eb2e72-32f5-4f79-a157-c2c5f60c1628
 caps.latest.revision: 13
 author: dotnet-bot

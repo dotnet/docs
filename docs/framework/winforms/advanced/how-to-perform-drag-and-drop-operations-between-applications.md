@@ -5,14 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drag and drop, between applications"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drag and drop, between applications"]
 ms.assetid: fa347436-2b12-4dd6-8507-59d7241f6a06
 caps.latest.revision: 11
 author: dotnet-bot

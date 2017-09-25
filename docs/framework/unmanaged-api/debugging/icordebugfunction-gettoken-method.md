@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugFunction.GetToken"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugFunction::GetToken"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugFunction::GetToken method [.NET Framework debugging]"
-  - "GetToken method, ICorDebugFunction interface [.NET Framework debugging]"
+api_name: ["ICorDebugFunction.GetToken"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugFunction::GetToken"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugFunction::GetToken method [.NET Framework debugging]", "GetToken method, ICorDebugFunction interface [.NET Framework debugging]"]
 ms.assetid: c6bbf479-062e-48e9-9c70-0f92e293e36a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

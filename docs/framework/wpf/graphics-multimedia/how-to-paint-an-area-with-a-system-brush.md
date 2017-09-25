@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "system brushes, painting with"
-  - "painting, with system brushes"
-  - "brushes, painting with system brushes"
+helpviewer_keywords: ["system brushes, painting with", "painting, with system brushes", "brushes, painting with system brushes"]
 ms.assetid: 5141a763-9235-42cb-a6bb-afc75513eac7
 caps.latest.revision: 9
 author: dotnet-bot

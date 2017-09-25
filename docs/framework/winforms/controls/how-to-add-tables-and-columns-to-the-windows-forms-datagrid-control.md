@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "columns [Windows Forms], adding to DataGrid control"
-  - "tables [Windows Forms], adding to DataGrid control"
-  - "DataGrid control [Windows Forms], adding tables and columns"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["columns [Windows Forms], adding to DataGrid control", "tables [Windows Forms], adding to DataGrid control", "DataGrid control [Windows Forms], adding tables and columns"]
 ms.assetid: 2fe661b9-aa06-49b9-a314-a0d3cbfdcb4d
 caps.latest.revision: 15
 author: dotnet-bot

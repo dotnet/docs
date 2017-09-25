@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls [WPF], improving performance"
-  - "container recycling"
-  - "user interface virtualization"
+helpviewer_keywords: ["controls [WPF], improving performance", "container recycling", "user interface virtualization"]
 ms.assetid: 45a31c43-ea8a-4546-96c8-0631b9934179
 caps.latest.revision: 22
 author: dotnet-bot

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorValidatorModuleType"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorValidatorModuleType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorValidatorModuleType enumeration [.NET Framework metadata]"
+api_name: ["CorValidatorModuleType"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorValidatorModuleType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorValidatorModuleType enumeration [.NET Framework metadata]"]
 ms.assetid: 748f1ab2-fbcb-4f55-89ec-8d23d81ebc80
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

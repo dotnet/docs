@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStripMenuItems, disabling in designer"
-  - "MenuStrip control [Windows Forms], disabling menu items in designer"
-  - "menu items, disabling"
-  - "menus, disabling items"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStripMenuItems, disabling in designer", "MenuStrip control [Windows Forms], disabling menu items in designer", "menu items, disabling", "menus, disabling items"]
 ms.assetid: 985e311e-7d67-4205-b5a3-d045b68a4a03
 caps.latest.revision: 7
 author: dotnet-bot

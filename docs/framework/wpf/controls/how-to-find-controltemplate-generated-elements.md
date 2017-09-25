@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ControlTemplates [WPF], finding elements"
-  - "finding ControlTemplate elements"
+helpviewer_keywords: ["ControlTemplates [WPF], finding elements", "finding ControlTemplate elements"]
 ms.assetid: d7b25447-ceff-4bb4-9be5-fd7c40ef00af
 caps.latest.revision: 6
 author: dotnet-bot

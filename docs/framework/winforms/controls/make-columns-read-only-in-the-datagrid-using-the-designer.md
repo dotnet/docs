@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, columns"
-  - "DataGridView control [Windows Forms], read-only columns"
-  - "data [Windows Forms], displaying"
-  - "columns [Windows Forms], read-only"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, columns", "DataGridView control [Windows Forms], read-only columns", "data [Windows Forms], displaying", "columns [Windows Forms], read-only"]
 ms.assetid: b4ef7a75-ab33-4ee3-b2cf-201530e454e9
 caps.latest.revision: 17
 author: dotnet-bot

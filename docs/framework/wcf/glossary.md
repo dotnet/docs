@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation [WCF], glossary"
-  - "WCF [WCF], glossary"
+helpviewer_keywords: ["Windows Communication Foundation [WCF], glossary", "WCF [WCF], glossary"]
 ms.assetid: 39cd36f4-8a28-4d0b-a830-98d55c9d30ae
 caps.latest.revision: 243
 author: "Erikre"

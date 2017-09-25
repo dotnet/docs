@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), invalid variant"
-  - "VARIANT type errors"
-  - "InvalidVariant MDA"
-  - "invalid VARIANT types"
-  - "managed debugging assistants (MDAs), invalid variant"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), invalid variant", "VARIANT type errors", "InvalidVariant MDA", "invalid VARIANT types", "managed debugging assistants (MDAs), invalid variant"]
 ms.assetid: d273e070-d1b1-4a53-a9c7-7af837b04a3d
 caps.latest.revision: 11
 author: "mairaw"

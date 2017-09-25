@@ -5,14 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "mouse, capture"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["mouse, capture"]
 ms.assetid: 8911d4b0-a4f8-4f93-8246-371aebd27d0c
 caps.latest.revision: 8
 author: dotnet-bot

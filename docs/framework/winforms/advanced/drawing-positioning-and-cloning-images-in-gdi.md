@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "raster images"
-  - "images [Windows Forms], positioning"
-  - "drawing, images"
-  - "drawing, raster images"
-  - "images [Windows Forms], cloning"
-  - "images [Windows Forms], drawing"
-  - "GDI+, drawing images"
-  - "GDI+, cloning images"
-  - "GDI+, positioning images"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["raster images", "images [Windows Forms], positioning", "drawing, images", "drawing, raster images", "images [Windows Forms], cloning", "images [Windows Forms], drawing", "GDI+, drawing images", "GDI+, cloning images", "GDI+, positioning images"]
 ms.assetid: 09f0c07a-19c0-43b4-90a2-862a10545ce8
 caps.latest.revision: 15
 author: dotnet-bot

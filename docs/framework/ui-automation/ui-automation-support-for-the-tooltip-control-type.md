@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, ToolTip control type"
-  - "ToolTip control type"
-  - "control types, ToolTip"
+helpviewer_keywords: ["UI Automation, ToolTip control type", "ToolTip control type", "control types, ToolTip"]
 ms.assetid: c3779d78-3164-43ae-8dae-bfaeafffdd65
 caps.latest.revision: 22
 author: "Xansky"

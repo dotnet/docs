@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, ExpandCollapse control pattern"
-  - "ExpandCollapse control pattern"
-  - "control patterns, ExpandCollapse"
+helpviewer_keywords: ["UI Automation, ExpandCollapse control pattern", "ExpandCollapse control pattern", "control patterns, ExpandCollapse"]
 ms.assetid: 1dbabb8c-0d68-47c1-a35e-1c01cb01af26
 caps.latest.revision: 25
 author: "Xansky"

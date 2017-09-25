@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, ContextMenu"
-  - "ContextMenu controls [WPF], about ContextMenu controls"
+helpviewer_keywords: ["controls, ContextMenu", "ContextMenu controls [WPF], about ContextMenu controls"]
 ms.assetid: 16909c42-799a-4561-91e0-7d69dcfeea91
 caps.latest.revision: 25
 author: dotnet-bot

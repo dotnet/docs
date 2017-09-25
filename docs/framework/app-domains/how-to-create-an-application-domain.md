@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "application domains, creating"
+helpviewer_keywords: ["application domains, creating"]
 ms.assetid: ba1fa43e-49f5-47d9-bd7f-3024af16f4ba
 caps.latest.revision: 9
 author: "rpetrusha"

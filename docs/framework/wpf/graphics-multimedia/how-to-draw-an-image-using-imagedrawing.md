@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ImageDrawing class"
-  - "drawing, images"
-  - "graphics, drawing images"
-  - "classes, ImageDrawing"
-  - "images, drawing"
+helpviewer_keywords: ["drawing, images", "graphics, drawing images", "images, drawing"]
 ms.assetid: df28ab41-25fb-4ab3-b51d-7f695b24f55e
 caps.latest.revision: 7
 author: dotnet-bot

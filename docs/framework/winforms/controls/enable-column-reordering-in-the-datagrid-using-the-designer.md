@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], column order"
-  - "Windows Forms, columns"
-  - "columns [Windows Forms], reordering"
-  - "data [Windows Forms], displaying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], column order", "Windows Forms, columns", "columns [Windows Forms], reordering", "data [Windows Forms], displaying"]
 ms.assetid: d82bd69c-6799-4439-a32c-91139c5901d1
 caps.latest.revision: 14
 author: dotnet-bot

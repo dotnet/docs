@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "context menus, for background processes"
-  - "NotifyIcon component, associating shortcut menus"
-  - "shortcut menus, for background processes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["context menus, for background processes", "NotifyIcon component, associating shortcut menus", "shortcut menus, for background processes"]
 ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
 caps.latest.revision: 19
 author: dotnet-bot

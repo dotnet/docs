@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "resource files, .resx files"
-  - ".resx files"
+helpviewer_keywords: ["resource files, .resx files", ".resx files"]
 ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
 caps.latest.revision: 12
 author: "rpetrusha"

@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "states [WPF], DataGrid"
-  - "ControlTemplate [WPF], DataGrid"
-  - "DataGrid [WPF], styles and templates"
-  - "templates [WPF], DataGrid"
-  - "styles [WPF], DataGrid"
-  - "parts [WPF], DataGrid"
+helpviewer_keywords: ["states [WPF], DataGrid", "ControlTemplate [WPF], DataGrid", "DataGrid [WPF], styles and templates", "templates [WPF], DataGrid", "styles [WPF], DataGrid", "parts [WPF], DataGrid"]
 ms.assetid: 9cb31d63-f148-4d25-b079-816e73f988c7
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ColorDialog"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "color dialog box, about color dialog box"
-  - "ColorDialog component, about ColorDialog"
+f1_keywords: ["ColorDialog"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["color dialog box, about color dialog box", "ColorDialog component, about ColorDialog"]
 ms.assetid: 6dbdd8f0-f697-4728-bb09-7ea156f6d800
 caps.latest.revision: 11
 author: dotnet-bot

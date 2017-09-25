@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStrip control [Windows Forms], creating"
-  - "toolbars [Windows Forms], creating"
-  - "toolbars [Windows Forms], adding items"
-  - "ToolStrip control [Windows Forms], adding standard items"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms], creating", "toolbars [Windows Forms], creating", "toolbars [Windows Forms], adding items", "ToolStrip control [Windows Forms], adding standard items"]
 ms.assetid: 028deb1a-acf8-4911-979a-ba8431cd9d82
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,14 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "transformations, order signficance"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["transformations, order signficance"]
 ms.assetid: 37d5f9dc-a5cf-4475-aa5d-34d714e808a9
 caps.latest.revision: 13
 author: dotnet-bot

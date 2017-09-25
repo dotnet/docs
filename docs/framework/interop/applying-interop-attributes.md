@@ -5,26 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "design-time attributes"
-  - ".NET Framework, exposing components to COM"
-  - "attributes [.NET Framework], design-time functionality"
-  - "conversion-tool attributes"
-  - "attributes [.NET Framework], interop-specific"
-  - "attributes [.NET Framework], conversion-tool"
-  - "interoperation with unmanaged code, applying attributes"
-  - "interoperation with unmanaged code, exposing .NET Framework components"
-  - "COM interop, exposing COM components"
-  - "COM interop, applying attributes"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["design-time attributes", ".NET Framework, exposing components to COM", "attributes [.NET Framework], design-time functionality", "conversion-tool attributes", "attributes [.NET Framework], interop-specific", "attributes [.NET Framework], conversion-tool", "interoperation with unmanaged code, applying attributes", "interoperation with unmanaged code, exposing .NET Framework components", "COM interop, exposing COM components", "COM interop, applying attributes"]
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
 caps.latest.revision: 10
 author: "rpetrusha"

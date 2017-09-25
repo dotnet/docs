@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "service behaviors, metadata publishing sample"
-  - "Metadata Publishing Behaviors Sample [Windows Communication Foundation]"
+helpviewer_keywords: ["service behaviors, metadata publishing sample", "Metadata Publishing Behaviors Sample [Windows Communication Foundation]"]
 ms.assetid: 78c13633-d026-4814-910e-1c801cffdac7
 caps.latest.revision: 23
 author: "Erikre"

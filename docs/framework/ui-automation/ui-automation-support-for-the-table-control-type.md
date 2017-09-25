@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TableControl type"
-  - "control types, Table"
-  - "UI Automation, Table control type"
+helpviewer_keywords: ["TableControl type", "control types, Table", "UI Automation, Table control type"]
 ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
 caps.latest.revision: 21
 author: "Xansky"

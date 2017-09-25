@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugStackWalk"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugStackWalk"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugStackWalk interface [.NET Framework debugging]"
+api_name: ["ICorDebugStackWalk"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugStackWalk"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugStackWalk interface [.NET Framework debugging]"]
 ms.assetid: 16d695e8-975d-431b-8421-e9e6c3e3f476
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

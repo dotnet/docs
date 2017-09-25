@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTaskManager.SetCLRTaskManager"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTaskManager::SetCLRTaskManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostTaskManager::SetCLRTaskManager method [.NET Framework hosting]"
-  - "SetCLRTaskManager method [.NET Framework hosting]"
+api_name: ["IHostTaskManager.SetCLRTaskManager"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTaskManager::SetCLRTaskManager"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostTaskManager::SetCLRTaskManager method [.NET Framework hosting]", "SetCLRTaskManager method [.NET Framework hosting]"]
 ms.assetid: ec90ee83-bd4b-408b-9274-62a923ab86a1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

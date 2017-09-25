@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugProcess5.EnumerateGCReferences"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugProcess5::EnumerateGCReferences"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EnumerateGCReferences method, ICorDebugProcess5 interface [.NET Framework debugging]"
-  - "ICorDebugProcess5::EnumerateGCReferences method [.NET Framework debugging]"
+api_name: ["ICorDebugProcess5.EnumerateGCReferences"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugProcess5::EnumerateGCReferences"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EnumerateGCReferences method, ICorDebugProcess5 interface [.NET Framework debugging]", "ICorDebugProcess5::EnumerateGCReferences method [.NET Framework debugging]"]
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

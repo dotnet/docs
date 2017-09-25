@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Button control [Windows Forms], images"
-  - "Windows Forms controls, images"
-  - "controls [Windows Forms], images"
-  - "images [Windows Forms], Windows Forms controls"
-  - "examples [Windows Forms], controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Button control [Windows Forms], images", "Windows Forms controls, images", "controls [Windows Forms], images", "images [Windows Forms], Windows Forms controls", "examples [Windows Forms], controls"]
 ms.assetid: 9445af8f-4f62-48b0-a3f6-068058964b9f
 caps.latest.revision: 11
 author: dotnet-bot

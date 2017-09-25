@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, providers"
-  - "providers, UI Automation"
+helpviewer_keywords: ["UI Automation, providers", "providers, UI Automation"]
 ms.assetid: 859557b8-51e1-4d15-92e8-318d2dcdb2f7
 caps.latest.revision: 38
 author: "Xansky"

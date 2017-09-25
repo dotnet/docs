@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostMemoryManager.CreateMAlloc"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostMemoryManager::CreateMAlloc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateAlloc method [.NET Framework hosting]"
-  - "IHostMemoryManager::CreateMAlloc method [.NET Framework hosting]"
+api_name: ["IHostMemoryManager.CreateMAlloc"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostMemoryManager::CreateMAlloc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateAlloc method [.NET Framework hosting]", "IHostMemoryManager::CreateMAlloc method [.NET Framework hosting]"]
 ms.assetid: 9ee6e052-bef7-4350-9e4f-edfffd99ad6f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

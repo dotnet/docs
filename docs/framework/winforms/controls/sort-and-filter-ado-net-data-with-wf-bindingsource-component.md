@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "sorting data"
-  - "data sorting, ADO.NET"
-  - "data [Windows Forms], filtering"
-  - "BindingSource component [Windows Forms], sorting and filtering data"
-  - "filtering [Windows Forms], ADO.NET"
-  - "data [Windows Forms], sorting"
-  - "ADO.NET [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["sorting data", "data sorting, ADO.NET", "data [Windows Forms], filtering", "BindingSource component [Windows Forms], sorting and filtering data", "filtering [Windows Forms], ADO.NET", "data [Windows Forms], sorting", "ADO.NET [Windows Forms]"]
 ms.assetid: 6c206daf-d706-4602-9dbe-435343052063
 caps.latest.revision: 15
 author: dotnet-bot

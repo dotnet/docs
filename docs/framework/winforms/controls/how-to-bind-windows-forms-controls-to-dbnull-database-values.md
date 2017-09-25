@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "BindingSource component [Windows Forms], binding to DBNull values"
-  - "examples [Windows Forms], BindingSource component"
-  - "controls [Windows Forms], binding to DBNull values"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["BindingSource component [Windows Forms], binding to DBNull values", "examples [Windows Forms], BindingSource component", "controls [Windows Forms], binding to DBNull values"]
 ms.assetid: 96494e6f-5f40-4f83-af97-bbd7192c2af8
 caps.latest.revision: 17
 author: dotnet-bot

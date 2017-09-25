@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback2.DestroyConnection"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback2::DestroyConnection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DestroyConnection method [.NET Framework debugging]"
-  - "ICorDebugManagedCallback2::DestroyConnection method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback2.DestroyConnection"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback2::DestroyConnection"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DestroyConnection method [.NET Framework debugging]", "ICorDebugManagedCallback2::DestroyConnection method [.NET Framework debugging]"]
 ms.assetid: cf7940e9-4558-4319-925c-09f6c98c8fcd
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

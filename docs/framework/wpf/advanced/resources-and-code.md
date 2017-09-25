@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "keys, using objects as"
-  - "resources, accessing from procedural code"
-  - "procedural code, creating resources with"
-  - "procedural code, accessing resources from"
-  - "resources, creating with procedural code"
+helpviewer_keywords: ["keys, using objects as", "resources, accessing from procedural code", "procedural code, creating resources with", "procedural code, accessing resources from", "resources, creating with procedural code"]
 ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
 caps.latest.revision: 14
 author: dotnet-bot

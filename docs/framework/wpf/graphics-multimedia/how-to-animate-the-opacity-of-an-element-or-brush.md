@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "opacity, animating"
-  - "animation, Opacity property"
+helpviewer_keywords: ["opacity, animating", "animation, Opacity property"]
 ms.assetid: 572af23b-39dd-48d1-9db5-4bca56a4b3d3
 caps.latest.revision: 8
 author: dotnet-bot

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "LoadTypeLibWithResolver"
-api_location: 
-  - "TlbRef.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "LoadTypeLibWithResolver"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LoadTypeLibWithResolver function [.NET Framework]"
+api_name: ["LoadTypeLibWithResolver"]
+api_location: ["TlbRef.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["LoadTypeLibWithResolver"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LoadTypeLibWithResolver function [.NET Framework]"]
 ms.assetid: 7123a89b-eb9b-463a-a552-a081e33b0a3a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "WPF user control [Windows Forms], hosting in a layout panel"
-  - "WPF content [Windows Forms],arranging at design time"
-  - "Windows Forms, arranging WPF content at design time"
-  - "WPF content, hosting in Windows Forms"
-  - "Windows Forms, anchoring and docking WPF content"
-  - "interoperability [WPF]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["WPF user control [Windows Forms], hosting in a layout panel", "WPF content [Windows Forms], arranging at design time", "Windows Forms, arranging WPF content at design time", "WPF content, hosting in Windows Forms", "Windows Forms, anchoring and docking WPF content", "interoperability [WPF]"]
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
 caps.latest.revision: 20
 author: dotnet-bot

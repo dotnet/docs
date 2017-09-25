@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName.StrongNameSignatureVerificationFromImage"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRStrongName::StrongNameSignatureVerificationFromImage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRStrongName::StrongNameSignatureVerificationFromImage method [.NET Framework hosting]"
-  - "StrongNameSignatureVerificationFromImage method, ICLRStrongName interface [.NET Framework hosting]"
+api_name: ["ICLRStrongName.StrongNameSignatureVerificationFromImage"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRStrongName::StrongNameSignatureVerificationFromImage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRStrongName::StrongNameSignatureVerificationFromImage method [.NET Framework hosting]", "StrongNameSignatureVerificationFromImage method, ICLRStrongName interface [.NET Framework hosting]"]
 ms.assetid: da91c138-ee30-4fd4-a040-464d97d7e41a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

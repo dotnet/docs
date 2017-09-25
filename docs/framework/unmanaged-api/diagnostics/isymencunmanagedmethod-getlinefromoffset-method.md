@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymENCUnmanagedMethod.GetLineFromOffset"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymENCUnmanagedMethod::GetLineFromOffset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetLineFromOffset method [.NET Framework debugging]"
-  - "ISymENCUnmanagedMethod::GetLineFromOffset method [.NET Framework debugging]"
+api_name: ["ISymENCUnmanagedMethod.GetLineFromOffset"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymENCUnmanagedMethod::GetLineFromOffset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetLineFromOffset method [.NET Framework debugging]", "ISymENCUnmanagedMethod::GetLineFromOffset method [.NET Framework debugging]"]
 ms.assetid: cc09bad2-fb34-4d13-a521-6ec7b1a1d915
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

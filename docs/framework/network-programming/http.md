@@ -7,22 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "protocols, HTTP"
-  - "sending data, HTTP"
-  - "HttpWebResponse class, sending and receiving data"
-  - "HTTP"
-  - "receiving data, HTTP"
-  - "application protocols, HTTP"
-  - "Internet, HTTP"
-  - "network resources, HTTP"
-  - "HTTP, about HTTP"
-  - "HttpWebRequest class, sending and receiving data"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["protocols, HTTP", "sending data, HTTP", "HttpWebResponse class, sending and receiving data", "HTTP", "receiving data, HTTP", "application protocols, HTTP", "Internet, HTTP", "network resources, HTTP", "HTTP, about HTTP", "HttpWebRequest class, sending and receiving data"]
 ms.assetid: 985fe5d8-eb71-4024-b361-41fbdc1618d8
 caps.latest.revision: 10
 author: "mcleblanc"

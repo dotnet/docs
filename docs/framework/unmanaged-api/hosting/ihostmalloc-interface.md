@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostMAlloc"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostMAlloc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostMAlloc interface [.NET Framework hosting]"
+api_name: ["IHostMAlloc"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostMAlloc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostMAlloc interface [.NET Framework hosting]"]
 ms.assetid: e3c6643b-6fc7-4a99-959d-4b7b4e63fdee
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

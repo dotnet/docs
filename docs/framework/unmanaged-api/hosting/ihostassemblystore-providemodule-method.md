@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostAssemblyStore.ProvideModule"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostAssemblyStore::ProvideModule"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostAssemblyStore::ProvideModule method [.NET Framework hosting]"
-  - "ProvideModule method [.NET Framework hosting]"
+api_name: ["IHostAssemblyStore.ProvideModule"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostAssemblyStore::ProvideModule"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostAssemblyStore::ProvideModule method [.NET Framework hosting]", "ProvideModule method [.NET Framework hosting]"]
 ms.assetid: f42e3dd0-c88e-4748-b6c0-4c515a633180
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataTables2"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataTables2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataTables2 interface [.NET Framework metadata]"
+api_name: ["IMetaDataTables2"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataTables2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataTables2 interface [.NET Framework metadata]"]
 ms.assetid: c788bb7c-0212-4b6d-b840-22e8c8829028
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

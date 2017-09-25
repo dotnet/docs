@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "IScrollInfo interface"
-  - "scrolling methods"
-  - "ScrollViewer control, scrolling methods"
+helpviewer_keywords: ["IScrollInfo interface", "scrolling methods", "ScrollViewer control, scrolling methods"]
 ms.assetid: 4708cc65-6510-45f8-82e6-30b0d3e30045
 caps.latest.revision: 11
 author: dotnet-bot

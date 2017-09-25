@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "transparent"
-  - "SecurityTreatAsSafeAttribute"
-  - "SecurityTransparentAttribute"
-  - "SecurityCriticalAttribute"
-  - "security-transparent code"
-  - "security [.NET Framework], security-transparent code"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["transparent", "SecurityTreatAsSafeAttribute", "SecurityTransparentAttribute", "SecurityCriticalAttribute", "security-transparent code", "security [.NET Framework], security-transparent code"]
 ms.assetid: 5fd8f46d-3961-46a7-84af-2eb1f48e75cf
 caps.latest.revision: 32
 author: "mairaw"

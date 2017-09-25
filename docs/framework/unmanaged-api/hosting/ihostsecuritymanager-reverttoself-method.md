@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostSecurityManager.RevertToSelf"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostSecurityManager::RevertToSelf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RevertToSelf method [.NET Framework hosting]"
-  - "IHostSecurityManager::RevertToSelf method [.NET Framework hosting]"
+api_name: ["IHostSecurityManager.RevertToSelf"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostSecurityManager::RevertToSelf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RevertToSelf method [.NET Framework hosting]", "IHostSecurityManager::RevertToSelf method [.NET Framework hosting]"]
 ms.assetid: 189f28f8-f9a1-4192-aedc-91084e4f8b99
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

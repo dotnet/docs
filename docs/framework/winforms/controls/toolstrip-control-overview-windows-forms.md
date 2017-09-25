@@ -5,19 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Toolstrip"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStrip control [Windows Forms], about ToolStrip control"
-  - "toolbars [Windows Forms], what's new in Windows Forms"
-  - "toolbars [Windows Forms]"
-  - "what's new [Windows Forms], toolbars"
+f1_keywords: ["Toolstrip"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms], about ToolStrip control", "toolbars [Windows Forms], what's new in Windows Forms", "toolbars [Windows Forms]", "what's new [Windows Forms], toolbars"]
 ms.assetid: 81d067ed-297c-4dad-90de-1bcac15336ec
 caps.latest.revision: 17
 author: dotnet-bot

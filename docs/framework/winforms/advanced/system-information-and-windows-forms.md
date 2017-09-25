@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "domain names, retrieving"
-  - "SystemInformation class [Windows Forms]"
-  - "user names, retrieving"
-  - "system information [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["domain names, retrieving", "SystemInformation class [Windows Forms]", "user names, retrieving", "system information [Windows Forms]"]
 ms.assetid: 30cf43a3-8cb2-4ff3-862b-6c34576616a8
 caps.latest.revision: 7
 author: dotnet-bot

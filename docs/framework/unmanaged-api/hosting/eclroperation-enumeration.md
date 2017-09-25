@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "EClrOperation"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "EClrOperation"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EClrOperation enumeration [.NET Framework hosting]"
+api_name: ["EClrOperation"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["EClrOperation"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EClrOperation enumeration [.NET Framework hosting]"]
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

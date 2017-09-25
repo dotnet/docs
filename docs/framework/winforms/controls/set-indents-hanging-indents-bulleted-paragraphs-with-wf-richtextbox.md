@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "text boxes, setting indents"
-  - ".rtf files, formatting in RichTextBox control"
-  - "examples [Windows Forms], text boxes"
-  - "RTF files, formatting in RichTextBox control"
-  - "RichTextBox control [Windows Forms], setting indents and bullets"
-  - "text boxes, bullets"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["text boxes, setting indents", ".rtf files, formatting in RichTextBox control", "examples [Windows Forms], text boxes", "RTF files, formatting in RichTextBox control", "RichTextBox control [Windows Forms], setting indents and bullets", "text boxes, bullets"]
 ms.assetid: abfb40e6-5642-4691-8ec1-9d9ae91688dc
 caps.latest.revision: 12
 author: dotnet-bot

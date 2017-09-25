@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "access keys, control for"
-  - "controls, text wrapping"
-  - "wrapping text"
-  - "keys, control for"
-  - "controls, access keys"
-  - "text wrapping"
+helpviewer_keywords: ["access keys, control for", "controls, text wrapping", "wrapping text", "keys, control for", "controls, access keys", "text wrapping"]
 ms.assetid: 205099d9-2551-4302-a25e-a15af9f67e04
 caps.latest.revision: 22
 author: dotnet-bot

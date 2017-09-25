@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "visible classes"
-  - "managed debugging assistants (MDAs), COM visible classes"
-  - "nonComVisibleBaseClass MDA"
-  - "COM visible classes"
-  - "QueryInterface call failures"
-  - "MDAs (managed debugging assistants), COM visible classes"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["visible classes", "managed debugging assistants (MDAs), COM visible classes", "nonComVisibleBaseClass MDA", "COM visible classes", "QueryInterface call failures", "MDAs (managed debugging assistants), COM visible classes"]
 ms.assetid: 9ec1af27-604b-477e-9ee2-e833eb10d3ce
 caps.latest.revision: 9
 author: "mairaw"

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Windows Communication Foundation, sessions and instances"
-  - "WCF, sessions and instances"
-  - "sessions and instances [WCF]"
-helpviewer_keywords: 
-  - "instances [WCF]"
-  - "sessions [WCF]"
+f1_keywords: ["Windows Communication Foundation, sessions and instances", "WCF, sessions and instances", "sessions and instances [WCF]"]
+helpviewer_keywords: ["instances [WCF]", "sessions [WCF]"]
 ms.assetid: 143951b3-3aa0-4540-b4b7-d33e77e874a1
 caps.latest.revision: 15
 author: "Erikre"

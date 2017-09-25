@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "WebBrowser control [Windows Forms], creating an HTML document viewer"
-  - "document viewers"
-  - "Windows Forms, creating document viewers"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["WebBrowser control [Windows Forms], creating an HTML document viewer", "document viewers", "Windows Forms, creating document viewers"]
 ms.assetid: 6a6338fe-f7ee-4f5e-9d8f-0465c57e9039
 caps.latest.revision: 12
 author: dotnet-bot

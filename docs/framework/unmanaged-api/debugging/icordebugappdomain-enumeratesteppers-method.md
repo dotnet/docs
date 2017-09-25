@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugAppDomain.EnumerateSteppers"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugAppDomain::EnumerateSteppers"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugAppDomain::EnumerateSteppers method [.NET Framework debugging]"
-  - "EnumerateSteppers method [.NET Framework debugging]"
+api_name: ["ICorDebugAppDomain.EnumerateSteppers"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugAppDomain::EnumerateSteppers"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugAppDomain::EnumerateSteppers method [.NET Framework debugging]", "EnumerateSteppers method [.NET Framework debugging]"]
 ms.assetid: 3f3c4503-570e-44c1-ae6a-a3c6b840c732
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

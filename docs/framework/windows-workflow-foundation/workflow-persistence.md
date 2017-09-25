@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], persistence"
+helpviewer_keywords: ["programming [WF], persistence"]
 ms.assetid: 39e69d1f-b771-4c16-9e18-696fa43b65b2
 caps.latest.revision: 26
 author: "Erikre"

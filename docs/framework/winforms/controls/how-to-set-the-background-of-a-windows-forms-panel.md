@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "background colors, Windows Forms Panel controls"
-  - "background images, Windows Forms Panel controls"
-  - "Panel control [Windows Forms], background"
-  - "colors, Windows Forms Panel controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["background colors, Windows Forms Panel controls", "background images, Windows Forms Panel controls", "Panel control [Windows Forms], background", "colors, Windows Forms Panel controls"]
 ms.assetid: 096cbd8d-45cc-47b8-b1ef-a27f60ea8be0
 caps.latest.revision: 13
 author: dotnet-bot

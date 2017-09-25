@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyName.Finalize"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyName::Finalize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Finalize method [.NET Framework fusion]"
-  - "IAssemblyName::Finalize method [.NET Framework fusion]"
+api_name: ["IAssemblyName.Finalize"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyName::Finalize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Finalize method [.NET Framework fusion]", "IAssemblyName::Finalize method [.NET Framework fusion]"]
 ms.assetid: 610e792d-98ef-411f-90b0-5b9a3813f547
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

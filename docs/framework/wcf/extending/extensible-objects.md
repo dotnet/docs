@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "extensible objects [WCF]"
+helpviewer_keywords: ["extensible objects [WCF]"]
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
 caps.latest.revision: 11
 author: "Erikre"

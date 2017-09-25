@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit2.SaveDeltaToStream"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit2::SaveDeltaToStream"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataEmit2::SaveDeltaToStream method [.NET Framework metadata]"
-  - "SaveDeltaToStream method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit2.SaveDeltaToStream"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit2::SaveDeltaToStream"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataEmit2::SaveDeltaToStream method [.NET Framework metadata]", "SaveDeltaToStream method [.NET Framework metadata]"]
 ms.assetid: ecd786e8-f9a4-4190-a6ef-af18e8c6d654
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

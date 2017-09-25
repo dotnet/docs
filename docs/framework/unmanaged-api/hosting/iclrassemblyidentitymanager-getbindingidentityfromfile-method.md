@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRAssemblyIdentityManager.GetBindingIdentityFromFile"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRAssemblyIdentityManager::GetBindingIdentityFromFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetBindingIdentityFromFile method [.NET Framework hosting]"
-  - "ICLRAssemblyIdentityManager::GetBindingIdentifyFromFile method [.NET Framework hosting]"
+api_name: ["ICLRAssemblyIdentityManager.GetBindingIdentityFromFile"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRAssemblyIdentityManager::GetBindingIdentityFromFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetBindingIdentityFromFile method [.NET Framework hosting]", "ICLRAssemblyIdentityManager::GetBindingIdentifyFromFile method [.NET Framework hosting]"]
 ms.assetid: 7797562d-7b4c-4bd9-8b93-f35e0e2869e4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "OpenFileDialog component, opening files"
-  - "OpenFile method"
-  - "OpenFile method, OpenFileDialog component"
-  - "files, opening with OpenFileDialog component"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["OpenFileDialog component, opening files", "OpenFile method, OpenFileDialog component", "files, opening with OpenFileDialog component"]
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 caps.latest.revision: 21
 author: dotnet-bot

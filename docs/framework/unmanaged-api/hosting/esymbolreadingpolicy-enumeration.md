@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ESymbolReadingPolicy"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ESymbolReadingPolicy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ESymbolReadingPolicy enumeration [.NET Framework hosting]"
+api_name: ["ESymbolReadingPolicy"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ESymbolReadingPolicy"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ESymbolReadingPolicy enumeration [.NET Framework hosting]"]
 ms.assetid: 4dc6c80d-b694-480b-a378-d5b18420ce17
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

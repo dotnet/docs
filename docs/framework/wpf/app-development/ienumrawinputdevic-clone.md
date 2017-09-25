@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Clone method"
+helpviewer_keywords: ["Clone method"]
 ms.assetid: 2a6a1900-aa55-45fa-9382-241d569a2dc4
 caps.latest.revision: 5
 author: dotnet-bot

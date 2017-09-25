@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "applications, extending glass frames into"
-  - "graphics, extending glass frames into applications"
-  - "extending glass frames into applications"
-  - "glass frames, extending into applications"
+helpviewer_keywords: ["applications, extending glass frames into", "graphics, extending glass frames into applications", "extending glass frames into applications", "glass frames, extending into applications"]
 ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
 caps.latest.revision: 12
 author: dotnet-bot

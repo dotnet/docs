@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "application domains, loading assemblies"
-  - "loading assemblies"
+helpviewer_keywords: ["application domains, loading assemblies", "loading assemblies"]
 ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
 caps.latest.revision: 16
 author: "rpetrusha"

@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "procedural code in lieu of XAML"
-  - "gradient brush, animating colors of"
-  - "XAML, procedural code in lieu of"
-  - "animation, gradient brush colors"
-  - "brushes, animating colors of"
+helpviewer_keywords: ["procedural code in lieu of XAML", "gradient brush, animating colors of", "XAML, procedural code in lieu of", "animation, gradient brush colors", "brushes, animating colors of"]
 ms.assetid: 760332dd-594a-475d-865b-01659db8cab7
 caps.latest.revision: 10
 author: dotnet-bot

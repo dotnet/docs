@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML, international user interface"
-  - "XAML, globalization"
-  - "international user interface, XAML"
-  - "globalization"
+helpviewer_keywords: ["XAML, international user interface", "XAML, globalization", "international user interface, XAML", "globalization"]
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
 caps.latest.revision: 35
 author: dotnet-bot

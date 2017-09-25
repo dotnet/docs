@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStrip control [Windows Forms], custom rendering"
-  - "toolbars [Windows Forms], rendering"
-  - "examples [Windows Forms], toolbars"
-  - "ToolStrip control [Windows Forms], rendering"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms], custom rendering", "toolbars [Windows Forms], rendering", "examples [Windows Forms], toolbars", "ToolStrip control [Windows Forms], rendering"]
 ms.assetid: 88a804ba-679f-4ba3-938a-0dc396199c5b
 caps.latest.revision: 16
 author: dotnet-bot

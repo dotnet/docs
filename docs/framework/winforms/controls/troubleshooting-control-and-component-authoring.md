@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "troubleshooting components"
-  - "troubleshooting controls"
-  - "controls [Windows Forms], troubleshooting"
-  - "components [Windows Forms], troubleshooting"
-  - "Windows Forms controls, debugging"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["troubleshooting components", "troubleshooting controls", "controls [Windows Forms], troubleshooting", "components [Windows Forms], troubleshooting", "Windows Forms controls, debugging"]
 ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
 caps.latest.revision: 22
 author: dotnet-bot

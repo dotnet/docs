@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Code"
-  - "x:Code"
-  - "xCode"
-helpviewer_keywords: 
-  - "Code directive in XAML [XAML Services]"
-  - "x:Code XAML directive element [XAML Services]"
-  - "XAML [XAML Services], x:Code directive element"
+f1_keywords: ["Code", "x:Code", "xCode"]
+helpviewer_keywords: ["Code directive in XAML [XAML Services]", "x:Code XAML directive element [XAML Services]", "XAML [XAML Services], x:Code directive element"]
 ms.assetid: 87986b13-1a2e-4830-ae36-15f9dc5629e8
 caps.latest.revision: 19
 author: "wadepickett"

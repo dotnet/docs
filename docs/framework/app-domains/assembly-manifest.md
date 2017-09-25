@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assembly manifest"
-  - "dynamic assemblies, assembly manifest"
-  - "metadata, assembly manifest"
-  - "culture, assembly manifest"
-  - "assemblies [.NET Framework], metadata"
+helpviewer_keywords: ["assembly manifest", "dynamic assemblies, assembly manifest", "metadata, assembly manifest", "culture, assembly manifest", "assemblies [.NET Framework], metadata"]
 ms.assetid: 8e40fab9-549d-4731-aec2-ffa47a382de0
 caps.latest.revision: 7
 author: "rpetrusha"

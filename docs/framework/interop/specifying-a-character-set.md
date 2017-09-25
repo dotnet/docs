@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "platform invoke, attribute fields"
-  - "attribute fields in platform invoke, CharSet"
-  - "CharSet field"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["platform invoke, attribute fields", "attribute fields in platform invoke, CharSet", "CharSet field"]
 ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
 caps.latest.revision: 10
 author: "rpetrusha"

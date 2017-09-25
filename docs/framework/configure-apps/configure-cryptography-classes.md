@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "configuration files [.NET Framework], cryptography"
-  - "cryptographic algorithms"
-  - "security [.NET Framework], encryption"
-  - "cryptography, classes"
-  - ".NET Framework application configuration, cryptography"
-  - "default cryptography"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["configuration files [.NET Framework], cryptography", "cryptographic algorithms", "security [.NET Framework], encryption", "cryptography, classes", ".NET Framework application configuration, cryptography", "default cryptography"]
 ms.assetid: eee3ccb8-2c0d-4f35-b38d-6892a46c14e5
 caps.latest.revision: 9
 author: "mcleblanc"

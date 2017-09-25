@@ -7,21 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Networking"
-  - "global proxy instances"
-  - "data requests, proxy instances"
-  - "sending data, proxy instances"
-  - "Web proxy"
-  - "receiving data, proxy instances"
-  - "requesting data from Internet, proxy instances"
-  - "Internet, proxy instances"
-  - "Network Resources"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Networking", "global proxy instances", "data requests, proxy instances", "sending data, proxy instances", "Web proxy", "receiving data, proxy instances", "requesting data from Internet, proxy instances", "Internet, proxy instances", "Network Resources"]
 ms.assetid: cbf46f63-ce28-486d-b827-ec0f1a9d8319
 caps.latest.revision: 8
 author: "mcleblanc"

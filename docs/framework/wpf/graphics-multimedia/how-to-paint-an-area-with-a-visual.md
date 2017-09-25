@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "painting"
-  - "visuals, painting with"
-  - "brushes, painting with visuals"
+helpviewer_keywords: ["painting", "visuals, painting with", "brushes, painting with visuals"]
 ms.assetid: 35f92996-1d03-4542-acc4-3469dcf09492
 caps.latest.revision: 9
 author: dotnet-bot

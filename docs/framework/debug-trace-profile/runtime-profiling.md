@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "performance counters"
-  - "common language runtime, profiling"
-  - "Perfmon.exe"
-  - "System Monitor"
-  - "profiling"
-  - "runtime, profiling"
-  - "profiling applications"
-  - "Performance Console"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["performance counters", "common language runtime, profiling", "Perfmon.exe", "System Monitor", "profiling", "runtime, profiling", "profiling applications", "Performance Console"]
 ms.assetid: ccd68284-f3a8-47b8-bc3f-92e5fe3a1640
 caps.latest.revision: 22
 author: "rpetrusha"

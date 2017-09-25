@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "best practices [WCF], security"
+helpviewer_keywords: ["best practices [WCF], security"]
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
 caps.latest.revision: 19
 author: "BrucePerlerMS"

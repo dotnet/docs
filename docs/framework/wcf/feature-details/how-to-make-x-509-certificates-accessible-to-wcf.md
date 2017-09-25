@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "X.509 certificates [WCF]"
-  - "certificates [WCF], making X.509 certificates accessible to WCF"
-  - "X.509 certificates [WCF], making accessible to WCF"
+helpviewer_keywords: ["X.509 certificates [WCF]", "certificates [WCF], making X.509 certificates accessible to WCF", "X.509 certificates [WCF], making accessible to WCF"]
 ms.assetid: a54e407c-c2b5-4319-a648-60e43413664b
 caps.latest.revision: 7
 author: "Erikre"

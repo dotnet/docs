@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls [WPF], DatePicker"
-  - "DatePicker control [WPF]"
+helpviewer_keywords: ["controls [WPF], DatePicker", "DatePicker control [WPF]"]
 ms.assetid: 619765c8-8d25-4315-aec2-79aea08fed9f
 caps.latest.revision: 4
 author: dotnet-bot

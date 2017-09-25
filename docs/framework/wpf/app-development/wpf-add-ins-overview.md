@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "add-ins and XAML browser applications [WPF]"
-  - "add-ins overview [WPF]"
-  - "add-ins [WPF], performance"
-  - "add-ins [WPF], benefits"
-  - ".NET Framework add-in model [WPF]"
-  - "add-ins [WPF], user interface"
-  - "add-ins and the user interface [WPF]"
-  - "add-ins [WPF], architecture"
-  - "add-ins [WPF], limitations"
+helpviewer_keywords: ["add-ins and XAML browser applications [WPF]", "add-ins overview [WPF]", "add-ins [WPF], performance", "add-ins [WPF], benefits", ".NET Framework add-in model [WPF]", "add-ins [WPF], user interface", "add-ins and the user interface [WPF]", "add-ins [WPF], architecture", "add-ins [WPF], limitations"]
 ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 caps.latest.revision: 36
 author: dotnet-bot

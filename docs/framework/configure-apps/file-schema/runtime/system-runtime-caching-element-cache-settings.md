@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<system.runtime.caching> element"
-  - "caching [.NET Framework], configuration"
-  - "system.runtime.caching element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<system.runtime.caching> element", "caching [.NET Framework], configuration", "system.runtime.caching element"]
 ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
 caps.latest.revision: 10
 author: "rpetrusha"

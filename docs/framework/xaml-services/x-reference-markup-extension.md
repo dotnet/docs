@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "x:Reference markup extension [XAML Services]"
-  - "XAML [XAML Services], x:Reference Markup Extension"
-  - "Reference markup extension [XAML Services]"
+helpviewer_keywords: ["x:Reference markup extension [XAML Services]", "XAML [XAML Services], x:Reference Markup Extension", "Reference markup extension [XAML Services]"]
 ms.assetid: 2982e68b-d26b-4aa3-826a-34c57a9c5199
 caps.latest.revision: 8
 author: "wadepickett"

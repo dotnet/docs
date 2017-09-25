@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "graphics, performance"
-  - "hardware rendering pipeline"
-  - "rendering tiers"
-  - "graphics rendering tiers"
-  - "graphics, rendering tiers"
-  - "software rendering pipeline"
+helpviewer_keywords: ["graphics, performance", "hardware rendering pipeline", "rendering tiers", "graphics rendering tiers", "graphics, rendering tiers", "software rendering pipeline"]
 ms.assetid: bfb89bae-7aab-4cac-a26c-a956eda8fce2
 caps.latest.revision: 6
 author: dotnet-bot

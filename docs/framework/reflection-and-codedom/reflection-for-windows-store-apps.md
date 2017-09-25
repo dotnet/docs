@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "reflection, Windows Store apps"
-  - ".NET for Windows Store apps, TypeInfo class"
+helpviewer_keywords: ["reflection, Windows Store apps", ".NET for Windows Store apps, TypeInfo class"]
 ms.assetid: 0d07090c-9b47-4ecc-81d1-29d539603c9b
 caps.latest.revision: 20
 author: "mairaw"

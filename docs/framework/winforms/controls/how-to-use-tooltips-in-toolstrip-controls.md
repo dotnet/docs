@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStrip control [Windows Forms], adding tooltips"
-  - "toolbars [Windows Forms], adding tooltips"
-  - "tooltips [Windows Forms], adding"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms], adding tooltips", "toolbars [Windows Forms], adding tooltips", "tooltips [Windows Forms], adding"]
 ms.assetid: c5d86024-a7c5-44ee-8b3f-2daf53d80d3e
 caps.latest.revision: 7
 author: dotnet-bot

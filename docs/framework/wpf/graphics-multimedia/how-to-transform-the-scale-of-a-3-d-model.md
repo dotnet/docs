@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "scaling, 3-D objects"
-  - "3-D objects, scaling"
+helpviewer_keywords: ["scaling, 3-D objects", "3-D objects, scaling"]
 ms.assetid: f3fdfe33-f7dc-44b0-84a5-e43b89947f35
 caps.latest.revision: 3
 author: dotnet-bot

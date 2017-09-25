@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugModule.IsInMemory"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugModule::IsInMemory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsInMemory method [.NET Framework debugging]"
-  - "ICorDebugModule::IsInMemory method [.NET Framework debugging]"
+api_name: ["ICorDebugModule.IsInMemory"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugModule::IsInMemory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsInMemory method [.NET Framework debugging]", "ICorDebugModule::IsInMemory method [.NET Framework debugging]"]
 ms.assetid: 89940711-98e7-4aa6-bffc-5e39e91e1b7d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

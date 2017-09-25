@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Code Document Object Model, graphs"
-  - "Code Document Object Model, creating classes"
-  - "graphing with CodeDOM"
-  - "CodeDOM, creating classes"
-  - "CodeDOM, graphs"
+helpviewer_keywords: ["Code Document Object Model, graphs", "Code Document Object Model, creating classes", "graphing with CodeDOM", "CodeDOM, creating classes", "CodeDOM, graphs"]
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
 caps.latest.revision: 10
 author: "rpetrusha"

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "tabs, removing from pages"
-  - "TabPage control"
-  - "TabPage control [Windows Forms], adding and removing tabs"
-  - "tabs, adding to pages"
-  - "tab pages"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["tabs, removing from pages", "TabPage control", "TabPage control [Windows Forms], adding and removing tabs", "tabs, adding to pages", "tab pages"]
 ms.assetid: 480633db-413a-45d2-9c8f-0427cc13adbe
 caps.latest.revision: 7
 author: dotnet-bot

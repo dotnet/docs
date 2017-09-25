@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IALink.EmitAssemblyCustomAttribute"
-  - "EmitAssemblyCustomAttribute"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "EmitAssemblyCustomAttribute"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EmitAssemblyCustomAttribute method"
+api_name: ["IALink.EmitAssemblyCustomAttribute", "EmitAssemblyCustomAttribute"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["EmitAssemblyCustomAttribute"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EmitAssemblyCustomAttribute method"]
 ms.assetid: b72f5409-79af-4fa7-90a7-7630eec170f1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

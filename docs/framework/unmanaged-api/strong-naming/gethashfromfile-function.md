@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetHashFromFile"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "GetHashFromFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetHashFromFile function [.NET Framework strong naming]"
+api_name: ["GetHashFromFile"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["GetHashFromFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetHashFromFile function [.NET Framework strong naming]"]
 ms.assetid: b3c526a4-8fb4-4ad6-b6af-42ce9c06492e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

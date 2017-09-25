@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugAppDomain.Attach"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugAppDomain::Attach"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugAppDomain::Attach method [.NET Framework debugging]"
-  - "Attach method [.NET Framework debugging]"
+api_name: ["ICorDebugAppDomain.Attach"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugAppDomain::Attach"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugAppDomain::Attach method [.NET Framework debugging]", "Attach method [.NET Framework debugging]"]
 ms.assetid: 0358b84a-4236-4c34-945b-4babff7df570
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

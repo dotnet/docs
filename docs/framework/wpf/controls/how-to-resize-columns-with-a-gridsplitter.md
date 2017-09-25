@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "grid columns, resizing"
-  - "GridSplitter control, resizing grid columns"
-  - "resizing grid columns"
+helpviewer_keywords: ["grid columns, resizing", "GridSplitter control, resizing grid columns", "resizing grid columns"]
 ms.assetid: 47b20fe6-7adc-4aa6-9693-b4e184eef74b
 caps.latest.revision: 13
 author: dotnet-bot

@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "process boundaries for isolation"
-  - "application isolation"
-  - "application domains, about"
-  - "common language runtime, application domains"
-  - "application domains"
-  - "runtime, application domains"
-  - "isolation between applications"
-  - "code, verification process"
-  - "verification testing code"
+helpviewer_keywords: ["process boundaries for isolation", "application isolation", "application domains, about", "common language runtime, application domains", "application domains", "runtime, application domains", "isolation between applications", "code, verification process", "verification testing code"]
 ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
 caps.latest.revision: 18
 author: "rpetrusha"

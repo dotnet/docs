@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], adding rows for new records"
-  - "rows, new records"
-  - "DataGridView control [Windows Forms], data entry"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], adding rows for new records", "rows, new records", "DataGridView control [Windows Forms], data entry"]
 ms.assetid: 6110f1ea-9794-442c-a98a-f104a1feeaf4
 caps.latest.revision: 14
 author: dotnet-bot

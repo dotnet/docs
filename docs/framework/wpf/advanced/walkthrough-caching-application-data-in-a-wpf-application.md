@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "walkthroughs [WPF], caching"
-  - "caching [.NET Framework]"
-  - "caching [WPF]"
+helpviewer_keywords: ["walkthroughs [WPF], caching", "caching [.NET Framework]", "caching [WPF]"]
 ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
 caps.latest.revision: 25
 author: dotnet-bot

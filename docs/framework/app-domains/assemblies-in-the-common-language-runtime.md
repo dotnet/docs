@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dynamic assemblies"
-  - "security [.NET Framework], boundaries"
-  - "boundaries of assemblies"
-  - "assemblies [.NET Framework], about"
-  - "assemblies [.NET Framework], boundaries"
-  - "reference scope boundaries"
-  - "assemblies [.NET Framework]"
-  - "version boundaries"
-  - "type boundaries"
+helpviewer_keywords: ["dynamic assemblies", "security [.NET Framework], boundaries", "boundaries of assemblies", "assemblies [.NET Framework], about", "assemblies [.NET Framework], boundaries", "reference scope boundaries", "assemblies [.NET Framework]", "version boundaries", "type boundaries"]
 ms.assetid: 2cfebe19-7436-49f1-bd99-3c4019f0b676
 caps.latest.revision: 15
 author: "rpetrusha"

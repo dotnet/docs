@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorDebugInternalFrameType"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorDebugInternalFrameType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorDebugInternalFrameType enumeration [.NET Framework debugging]"
+api_name: ["CorDebugInternalFrameType"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorDebugInternalFrameType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorDebugInternalFrameType enumeration [.NET Framework debugging]"]
 ms.assetid: e4412dc2-c338-4cfb-94d8-f682095dd2b1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

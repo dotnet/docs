@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "custom controls, erasing ink on"
-  - "ink, erasing on custom control"
+helpviewer_keywords: ["custom controls, erasing ink on", "ink, erasing on custom control"]
 ms.assetid: d88c50f9-b4d8-4962-a28b-67d6a15a5fe0
 caps.latest.revision: 4
 author: dotnet-bot

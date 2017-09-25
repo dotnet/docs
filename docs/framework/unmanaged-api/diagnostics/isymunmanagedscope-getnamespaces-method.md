@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedScope.GetNamespaces"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedScope::GetNamespaces"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetNamespaces method, ISymUnmanagedScope interface [.NET Framework debugging]"
-  - "ISymUnmanagedScope::GetNamespaces method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedScope.GetNamespaces"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedScope::GetNamespaces"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetNamespaces method, ISymUnmanagedScope interface [.NET Framework debugging]", "ISymUnmanagedScope::GetNamespaces method [.NET Framework debugging]"]
 ms.assetid: c44b0440-04bd-460a-84fb-41afecf44503
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

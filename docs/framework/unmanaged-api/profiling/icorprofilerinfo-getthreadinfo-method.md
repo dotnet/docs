@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo.GetThreadInfo"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo::GetThreadInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo::GetThreadInfo method [.NET Framework profiling]"
-  - "GetThreadInfo method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo.GetThreadInfo"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo::GetThreadInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo::GetThreadInfo method [.NET Framework profiling]", "GetThreadInfo method [.NET Framework profiling]"]
 ms.assetid: fc994fef-65c9-432a-84cb-66c8141147e7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

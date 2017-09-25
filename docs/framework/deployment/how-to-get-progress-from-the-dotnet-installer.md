@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "progress information, .NET Framework installer"
-  - ".NET Framework, installing"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["progress information, .NET Framework installer", ".NET Framework, installing"]
 ms.assetid: 0a1a3ba3-7e46-4df2-afd3-f3a8237e1c4f
 caps.latest.revision: 30
 author: "mairaw"

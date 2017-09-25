@@ -5,23 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/clear"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#clear"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "clear element, authenticationModules"
-  - "<authenticationModules>, clear element"
-  - "<clear> element, authenticationModules"
-  - "authenticationModules, clear element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/clear", "http://schemas.microsoft.com/.NetConfiguration/v2.0#clear"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["clear element, authenticationModules", "<authenticationModules>, clear element", "<clear> element, authenticationModules", "authenticationModules, clear element"]
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 caps.latest.revision: 13
 author: "mcleblanc"

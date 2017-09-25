@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "WPF [.NET Framework Client Profile]"
-  - "WCF [.NET Framework Client Profile]"
-  - "Windows Forms [.NET Framework Client Profile]"
-  - "client profile [.NET Framework Client Profile]"
-  - "profile [.NET Framework Client Profile]"
-  - ".NET Framework Client Profile"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["WPF [.NET Framework Client Profile]", "WCF [.NET Framework Client Profile]", "Windows Forms [.NET Framework Client Profile]", "client profile [.NET Framework Client Profile]", "profile [.NET Framework Client Profile]", ".NET Framework Client Profile"]
 ms.assetid: f0219919-1f02-4588-8704-327a62fd91f1
 caps.latest.revision: 44
 author: "mairaw"

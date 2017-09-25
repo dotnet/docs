@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged enumerations [.NET Framework], diagnostics symbol store"
-  - "unmanaged enumerations [.NET Framework], debugging"
-  - "diagnostics symbol store enumerations [.NET Framework]"
-  - "enumerations [.NET Framework debugging]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged enumerations [.NET Framework], diagnostics symbol store", "unmanaged enumerations [.NET Framework], debugging", "diagnostics symbol store enumerations [.NET Framework]", "enumerations [.NET Framework debugging]"]
 ms.assetid: 57d68c70-aba1-4bad-a13f-6d0c55f43746
 caps.latest.revision: 5
 author: "mairaw"

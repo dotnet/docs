@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "service behaviors, defaults"
-  - "Default Service Behavior Sample [Windows Communication Foundation]"
+helpviewer_keywords: ["service behaviors, defaults", "Default Service Behavior Sample [Windows Communication Foundation]"]
 ms.assetid: 442d4f71-c64e-4c62-816a-a66c38e7d3ec
 caps.latest.revision: 28
 author: "Erikre"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedMethod.GetOffset"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedMethod::GetOffset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetOffset method, ISymUnmanagedMethod interface [.NET Framework debugging]"
-  - "ISymUnmanagedMethod::GetOffset method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedMethod.GetOffset"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedMethod::GetOffset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetOffset method, ISymUnmanagedMethod interface [.NET Framework debugging]", "ISymUnmanagedMethod::GetOffset method [.NET Framework debugging]"]
 ms.assetid: 8bf3cb62-89bf-4159-ad53-de606aba89e8
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

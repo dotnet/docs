@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "custom-rendering ink"
-  - "classes, Stroke"
-  - "classes, DynamicRenderer"
-  - "ink, custom-rendering"
-  - "InkCanvas class"
-  - "Stroke class"
-  - "DynamicRenderer class"
-  - "classes, InkCanvas"
+helpviewer_keywords: ["custom-rendering ink", "ink, custom-rendering", "classes, InkCanvas"]
 ms.assetid: 65c978a7-0ee0-454f-ac7f-b1bd2efecac5
 caps.latest.revision: 10
 author: dotnet-bot

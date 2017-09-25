@@ -5,21 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "fonts, baseline"
-  - "text, decorations"
-  - "fonts, underline"
-  - "fonts, overline"
-  - "strikethrough type"
-  - "fonts, strikethrough"
-  - "overline type"
-  - "underline type"
-  - "typography, text decorations"
-  - "baseline type"
+helpviewer_keywords: ["fonts, baseline", "text, decorations", "fonts, underline", "fonts, overline", "strikethrough type", "fonts, strikethrough", "overline type", "underline type", "typography, text decorations", "baseline type"]
 ms.assetid: cf3cb4e7-782a-4be7-b2d4-e0935e21e4e0
 caps.latest.revision: 9
 author: dotnet-bot

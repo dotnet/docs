@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms Designer, interoperability with WPF"
-  - "interoperability [WPF]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms Designer, interoperability with WPF", "interoperability [WPF]"]
 ms.assetid: 03c85dce-26ad-44cd-bc1d-8e0cb56de096
 caps.latest.revision: 7
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataGrid [WPF], displaying data from SQL Server"
-  - "controls [WPF], DataGrid"
+helpviewer_keywords: ["DataGrid [WPF], displaying data from SQL Server", "controls [WPF], DataGrid"]
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
 caps.latest.revision: 13
 author: dotnet-bot

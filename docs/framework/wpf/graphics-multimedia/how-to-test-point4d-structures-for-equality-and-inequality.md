@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "inequality, testing Point4D structures for"
-  - "equality, testing Point4D structures for"
-  - "testing, Point4D structures for equality"
-  - "Point4D structures, testing for inequality"
-  - "testing, Point4D structures for inequality"
-  - "Point4D structures, testing for equality"
+helpviewer_keywords: ["inequality, testing Point4D structures for", "equality, testing Point4D structures for", "testing, Point4D structures for equality", "Point4D structures, testing for inequality", "testing, Point4D structures for inequality", "Point4D structures, testing for equality"]
 ms.assetid: e004a67e-db7f-4af8-a31f-e6b2a44ccf34
 caps.latest.revision: 8
 author: dotnet-bot

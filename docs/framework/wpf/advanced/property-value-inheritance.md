@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "inheritance, property values"
-  - "value inheritance"
-  - "properties, value inheritance"
+helpviewer_keywords: ["inheritance, property values", "value inheritance", "properties, value inheritance"]
 ms.assetid: d7c338f9-f2bf-48ed-832c-7be58ac390e4
 caps.latest.revision: 16
 author: dotnet-bot

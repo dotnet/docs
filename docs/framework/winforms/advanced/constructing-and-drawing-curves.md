@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drawing, curves"
-  - "examples [Windows Forms], drawing curves"
-  - "curves, drawing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drawing, curves", "examples [Windows Forms], drawing curves", "curves, drawing"]
 ms.assetid: 76e92623-4130-4644-b867-faca58bdb3a2
 caps.latest.revision: 14
 author: dotnet-bot

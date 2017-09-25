@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Graphics.FillEllipse"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ellipses, drawing"
-  - "circles, drawing"
-  - "circular shapes"
-  - "drawing, ellipses"
-  - "shapes, drawing"
-  - "forms, drawing ellipses"
+f1_keywords: ["Graphics.FillEllipse"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ellipses, drawing", "circles, drawing", "circular shapes", "drawing, ellipses", "shapes, drawing", "forms, drawing ellipses"]
 ms.assetid: 781db806-950d-4c5b-b022-493f7fd0c4a8
 caps.latest.revision: 10
 author: dotnet-bot

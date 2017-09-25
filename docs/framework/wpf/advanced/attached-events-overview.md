@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "handling attached events [WPF]"
-  - "defining attached events as routed events [WPF]"
-  - "attached events [WPF], scenarios for"
-  - "attached events vs. routed events [WPF]"
-  - "backing attached events with routed events [WPF]"
-  - "attached events [WPF], definition"
+helpviewer_keywords: ["handling attached events [WPF]", "defining attached events as routed events [WPF]", "attached events [WPF], scenarios for", "attached events vs. routed events [WPF]", "backing attached events with routed events [WPF]", "attached events [WPF], definition"]
 ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
 caps.latest.revision: 11
 author: dotnet-bot

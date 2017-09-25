@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, Header control type"
-  - "Header control type"
-  - "control types, Header"
+helpviewer_keywords: ["UI Automation, Header control type", "Header control type", "control types, Header"]
 ms.assetid: d2e48891-2dbe-409e-8655-2f753908e29b
 caps.latest.revision: 20
 author: "Xansky"

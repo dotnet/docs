@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "HTML"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "WCF Data Services, client library"
-  - "DataServiceQuery class, about DataServiceQuery class"
-  - "DataServiceContext class, about DataServiceContext class"
+dev_langs: ["HTML", "VB", "CSharp", "C++"]
+helpviewer_keywords: ["WCF Data Services, client library", "DataServiceQuery class, about DataServiceQuery class", "DataServiceContext class, about DataServiceContext class"]
 ms.assetid: 21075e50-8917-413e-a8ea-35a0f6e65aa5
 caps.latest.revision: 4
 author: "Erikre"

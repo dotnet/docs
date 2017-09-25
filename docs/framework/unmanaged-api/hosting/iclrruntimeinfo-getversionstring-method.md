@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRRuntimeInfo.GetVersionString"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRRuntimeInfo::GetVersionString"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRRuntimeInfo::GetVersionString method [.NET Framework hosting]"
-  - "GetVersionString method, ICLRRuntimeInfo interface [.NET Framework hosting]"
+api_name: ["ICLRRuntimeInfo.GetVersionString"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRRuntimeInfo::GetVersionString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRRuntimeInfo::GetVersionString method [.NET Framework hosting]", "GetVersionString method, ICLRRuntimeInfo interface [.NET Framework hosting]"]
 ms.assetid: 98b097ef-2276-4dd9-8551-b03c972e8179
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

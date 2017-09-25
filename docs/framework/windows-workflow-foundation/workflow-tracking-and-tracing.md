@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], tracking and tracing"
+helpviewer_keywords: ["programming [WF], tracking and tracing"]
 ms.assetid: b965ded6-370a-483d-8790-f794f65b137e
 caps.latest.revision: 16
 author: "Erikre"

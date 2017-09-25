@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "managed debugging assistants (MDAs), interface pointer not marshalable"
-  - "interface pointer not marshalable MDA"
-  - "MDAs (managed debugging assistants), interface pointer not marshalable"
-  - "marshaling, run-time errors"
-  - "managed debugging assistants (MDAs), marshaling"
-  - "marshalable interface pointers"
-  - "MDAs (managed debugging assistants), marshaling"
-  - "notMarshalable MDA"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["managed debugging assistants (MDAs), interface pointer not marshalable", "interface pointer not marshalable MDA", "MDAs (managed debugging assistants), interface pointer not marshalable", "marshaling, run-time errors", "managed debugging assistants (MDAs), marshaling", "marshalable interface pointers", "MDAs (managed debugging assistants), marshaling", "notMarshalable MDA"]
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
 caps.latest.revision: 11
 author: "mairaw"

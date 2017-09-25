@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "documents, manipulating table columns"
-  - "properties, Columns, manipulating table columns"
-  - "tables, manipulating columns"
-  - "Columns property"
+helpviewer_keywords: ["documents, manipulating table columns", "properties, Columns, manipulating table columns", "tables, manipulating columns", "Columns property"]
 ms.assetid: 3f8884f4-7e1f-456b-be06-fbd3cf469bf3
 caps.latest.revision: 6
 author: dotnet-bot

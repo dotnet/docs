@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drawing, lines"
-  - "lines, texture"
-  - "drawing lines, texture"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drawing, lines", "lines, texture", "drawing lines, texture"]
 ms.assetid: dc9118cc-f3c2-42e5-8173-f46d41d18fd5
 caps.latest.revision: 12
 author: dotnet-bot

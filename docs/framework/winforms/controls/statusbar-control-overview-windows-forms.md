@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "StatusBar"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "StatusBar control [Windows Forms], about StatusBar control"
-  - "status bars"
+f1_keywords: ["StatusBar"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["StatusBar control [Windows Forms], about StatusBar control", "status bars"]
 ms.assetid: b7b9852c-633d-4416-bb2e-94852b989c6c
 caps.latest.revision: 11
 author: dotnet-bot

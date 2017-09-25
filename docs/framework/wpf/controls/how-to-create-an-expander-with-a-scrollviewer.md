@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls [WPF], Expander"
-  - "ScrollViewer control, with Expander control"
-  - "Expander control, creating"
-  - "controls [WPF], ScrollViewer"
+helpviewer_keywords: ["controls [WPF], Expander", "ScrollViewer control, with Expander control", "Expander control, creating", "controls [WPF], ScrollViewer"]
 ms.assetid: 2ad124d2-2406-4157-aaf2-64e067298f01
 caps.latest.revision: 13
 author: dotnet-bot

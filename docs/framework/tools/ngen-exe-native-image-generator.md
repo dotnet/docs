@@ -5,27 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Native Image Generator"
-  - "images [.NET Framework], native"
-  - "side-by-side execution, native images"
-  - "assemblies [.NET Framework], native image"
-  - "Ngen.exe"
-  - "native image generation"
-  - "native image cache"
-  - "publisher policy applied for native images"
-  - "invalid images"
-  - "BypassNGenAttribute"
-  - "System.Runtime.BypassNGenAttribute"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Native Image Generator", "images [.NET Framework], native", "side-by-side execution, native images", "assemblies [.NET Framework], native image", "Ngen.exe", "native image generation", "native image cache", "publisher policy applied for native images", "invalid images"]
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 caps.latest.revision: 57
 author: "rpetrusha"

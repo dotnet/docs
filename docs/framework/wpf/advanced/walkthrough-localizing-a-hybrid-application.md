@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "localization [WPF interoperability]"
-  - "hybrid applications [WPF interoperability]"
+helpviewer_keywords: ["localization [WPF interoperability]", "hybrid applications [WPF interoperability]"]
 ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
 caps.latest.revision: 17
 author: dotnet-bot

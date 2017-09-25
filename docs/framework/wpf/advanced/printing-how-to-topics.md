@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "printing"
-  - "print system management"
+helpviewer_keywords: ["printing", "print system management"]
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
 caps.latest.revision: 10
 author: dotnet-bot

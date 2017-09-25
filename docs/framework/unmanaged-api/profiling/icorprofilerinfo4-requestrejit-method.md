@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo4.RequestReJIT"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo4::RequestReJIT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RequestReJIT method, ICorProfilerInfo4 interface [.NET Framework profiling]"
-  - "ICorProfilerInfo4::RequestReJIT method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo4.RequestReJIT"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo4::RequestReJIT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RequestReJIT method, ICorProfilerInfo4 interface [.NET Framework profiling]", "ICorProfilerInfo4::RequestReJIT method [.NET Framework profiling]"]
 ms.assetid: 781ed736-f30c-4816-920e-3552e36542c6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

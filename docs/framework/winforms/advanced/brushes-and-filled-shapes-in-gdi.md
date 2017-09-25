@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "brushes, GDI+"
-  - "filled shapes, GDI+"
-  - "shapes, GDI+"
-  - "GDI+, brushes"
-  - "GDI+, filled shapes"
-  - "gradient brushes"
-  - "brushes, gradient"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["brushes, GDI+", "filled shapes, GDI+", "shapes, GDI+", "GDI+, brushes", "GDI+, filled shapes", "gradient brushes", "brushes, gradient"]
 ms.assetid: e863e2a7-0294-4130-99b6-f1ea3201e7cd
 caps.latest.revision: 15
 author: dotnet-bot

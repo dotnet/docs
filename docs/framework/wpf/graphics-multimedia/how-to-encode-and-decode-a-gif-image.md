@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "encoding GIF images"
-  - "encoding image formats"
-  - "decoding GIF images"
-  - "decoding image formats"
-  - "GIF decoding"
-  - "GIF encoding"
+helpviewer_keywords: ["encoding GIF images", "encoding image formats", "decoding GIF images", "decoding image formats", "GIF decoding", "GIF encoding"]
 ms.assetid: 9cdd9ec7-71eb-444b-b9e3-991958461163
 caps.latest.revision: 7
 author: dotnet-bot

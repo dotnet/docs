@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ListView controls, displaying contents with GridView"
-  - "GridView, displaying ListView contents"
+helpviewer_keywords: ["ListView controls, displaying contents with GridView", "GridView, displaying ListView contents"]
 ms.assetid: 5bc1e767-ab46-4f14-bd41-3d5d39e1d000
 caps.latest.revision: 9
 author: dotnet-bot

@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/httpWebRequest"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#httpWebRequest"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<httpWebRequest> element"
-  - "httpWebRequest element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/httpWebRequest", "http://schemas.microsoft.com/.NetConfiguration/v2.0#httpWebRequest"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<httpWebRequest> element", "httpWebRequest element"]
 ms.assetid: 52acd9d2-5bdc-4dc4-9c2a-f0a476ccbb31
 caps.latest.revision: 18
 author: "mcleblanc"

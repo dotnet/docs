@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo3.GetFunctionTailcall3Info Method"
-api_location: 
-  - "Mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo3::GetFunctionTailcall3Info"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo3::GetFunctionTailcall3Info method [.NET Framework profiling]"
-  - "GetFunctionTailcall3Info method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo3.GetFunctionTailcall3Info Method"]
+api_location: ["Mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo3::GetFunctionTailcall3Info"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo3::GetFunctionTailcall3Info method [.NET Framework profiling]", "GetFunctionTailcall3Info method [.NET Framework profiling]"]
 ms.assetid: afdb5ac9-5bf5-4b91-b7cb-f81db23d7da3
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TabControl type"
-  - "UI Automation, Tab control type"
-  - "control types, Tab"
+helpviewer_keywords: ["TabControl type", "UI Automation, Tab control type", "control types, Tab"]
 ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
 caps.latest.revision: 20
 author: "Xansky"

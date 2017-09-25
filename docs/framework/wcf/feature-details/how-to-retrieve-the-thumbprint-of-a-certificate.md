@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "certificates [WCF], retrieving thumbprint"
+helpviewer_keywords: ["certificates [WCF], retrieving thumbprint"]
 ms.assetid: da3101aa-78cd-4c34-9652-d1f24777eeab
 caps.latest.revision: 15
 author: "Erikre"

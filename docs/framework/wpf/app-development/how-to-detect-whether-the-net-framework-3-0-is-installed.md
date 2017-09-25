@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WinFX Runtime user-agent string"
-  - "presence of WPT, detecting"
-  - "detecting WPF presence"
+helpviewer_keywords: ["WinFX Runtime user-agent string", "presence of WPT, detecting", "detecting WPF presence"]
 ms.assetid: 7f71d652-1749-4379-945a-aa2e3994cb43
 caps.latest.revision: 12
 author: dotnet-bot

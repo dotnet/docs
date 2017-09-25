@@ -5,31 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "commands [Windows Forms], grouping on menus"
-  - "check marks, adding to menus"
-  - "ToolStripMenuItems, displaying access keys"
-  - "menus, grouping commands"
-  - "menu items, displaying shortcut keys"
-  - "ToolStripMenuItems"
-  - "separators, displaying on menus"
-  - "menu items, showing separators"
-  - "menu items, adding check marks"
-  - "ToolStripMenuItems, adding check marks"
-  - "menu items, adding images"
-  - "ToolStripSeparators, displaying on MenuStrips"
-  - "menu items, displaying access keys"
-  - "ToolStripMenuItems, displaying shortcut keys"
-  - "ToolStripMenuItems, adding images"
-  - "keyboard shortcuts, displaying on menus"
-  - "images [Windows Forms], adding to menus"
-  - "ToolStripMenuItems, showing separator bars"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["commands [Windows Forms], grouping on menus", "check marks, adding to menus", "ToolStripMenuItems, displaying access keys", "menus, grouping commands", "menu items, displaying shortcut keys", "ToolStripMenuItems", "separators, displaying on menus", "menu items, showing separators", "menu items, adding check marks", "ToolStripMenuItems, adding check marks", "menu items, adding images", "ToolStripSeparators, displaying on MenuStrips", "menu items, displaying access keys", "ToolStripMenuItems, displaying shortcut keys", "ToolStripMenuItems, adding images", "keyboard shortcuts, displaying on menus", "images [Windows Forms], adding to menus", "ToolStripMenuItems, showing separator bars"]
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
 caps.latest.revision: 10
 author: dotnet-bot

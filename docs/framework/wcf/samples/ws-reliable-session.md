@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Reliable session"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Reliable session"]
 ms.assetid: 86e914f2-060b-432b-bd17-333695317745
 caps.latest.revision: 30
 author: "Erikre"

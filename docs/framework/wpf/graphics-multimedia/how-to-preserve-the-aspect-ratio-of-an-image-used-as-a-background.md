@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "aspect ratios of background images, preserving"
-  - "brushes, preserving aspect ratios of background images"
-  - "background images, preserving aspect ratios"
+helpviewer_keywords: ["aspect ratios of background images, preserving", "brushes, preserving aspect ratios of background images", "background images, preserving aspect ratios"]
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
 caps.latest.revision: 16
 author: dotnet-bot

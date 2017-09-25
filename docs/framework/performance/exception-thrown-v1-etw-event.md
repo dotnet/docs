@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ExceptionThrown_V1 event [.NET Framework]"
-  - "ETW, ExceptionThrown_V1 event (CLR)"
+helpviewer_keywords: ["ExceptionThrown_V1 event [.NET Framework]", "ETW, ExceptionThrown_V1 event (CLR)"]
 ms.assetid: 0d3da389-6b7b-40f6-a877-fac546d6019c
 caps.latest.revision: 6
 author: "mairaw"

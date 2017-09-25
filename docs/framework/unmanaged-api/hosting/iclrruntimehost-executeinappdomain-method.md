@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRRuntimeHost.ExecuteInAppDomain"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRRuntimeHost::ExecuteInAppDomain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRRuntimeHost::ExecuteInAppDomain method [.NET Framework hosting]"
-  - "ExecuteInAppDomain method [.NET Framework hosting]"
+api_name: ["ICLRRuntimeHost.ExecuteInAppDomain"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRRuntimeHost::ExecuteInAppDomain"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRRuntimeHost::ExecuteInAppDomain method [.NET Framework hosting]", "ExecuteInAppDomain method [.NET Framework hosting]"]
 ms.assetid: e2b0e2db-3fae-4b56-844e-d30a125a660c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

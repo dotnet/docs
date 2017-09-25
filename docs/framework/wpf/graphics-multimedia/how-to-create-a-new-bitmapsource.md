@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "creating new BitmapSource objects"
-  - "BitmapSource objects, creating"
+helpviewer_keywords: ["creating new BitmapSource objects", "BitmapSource objects, creating"]
 ms.assetid: 0adf447e-014f-4ceb-97b2-f21affe6d55b
 caps.latest.revision: 5
 author: dotnet-bot

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "data contracts [WCF], known types"
-  - "KnownTypeAttribute [WCF]"
-  - "KnownTypes [WCF]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["data contracts [WCF], known types", "KnownTypeAttribute [WCF]", "KnownTypes [WCF]"]
 ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
 caps.latest.revision: 42
 author: "Erikre"

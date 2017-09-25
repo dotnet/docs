@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedSymbolSearchInfo.GetSearchPathLength"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetSearchPathLength method [.NET Framework debugging]"
-  - "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedSymbolSearchInfo.GetSearchPathLength"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedSymbolSearchInfo::GetSearchPathLength"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetSearchPathLength method [.NET Framework debugging]", "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength method [.NET Framework debugging]"]
 ms.assetid: 274e73cf-8333-47ba-ac12-70214e2b0112
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

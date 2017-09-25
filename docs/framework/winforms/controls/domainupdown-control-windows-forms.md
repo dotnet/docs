@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DomainUpDown control [Windows Forms]"
-  - "spin button control, up-down controls"
-  - "up-down controls"
-  - "spin button control"
-  - "up-down controls, spin button controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DomainUpDown control [Windows Forms]", "spin button control, up-down controls", "up-down controls", "spin button control", "up-down controls, spin button controls"]
 ms.assetid: fb7cf017-e931-4a95-9d21-8caee4ee122a
 caps.latest.revision: 6
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName.StrongNameGetPublicKey"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRStrongName::StrongNameGetPublicKey"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameGetPublicKey method, ICLRStrongName interface [.NET Framework hosting]"
-  - "ICLRStrongName::StrongNameGetPublicKey method [.NET Framework hosting]"
+api_name: ["ICLRStrongName.StrongNameGetPublicKey"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRStrongName::StrongNameGetPublicKey"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameGetPublicKey method, ICLRStrongName interface [.NET Framework hosting]", "ICLRStrongName::StrongNameGetPublicKey method [.NET Framework hosting]"]
 ms.assetid: a31dcaa9-a404-4c1d-8cc7-081827c52935
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

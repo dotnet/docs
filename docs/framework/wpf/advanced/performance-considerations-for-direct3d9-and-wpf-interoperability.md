@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF, Direct3D9 interop performance"
-  - "Direct3D9 [WPF interoperability], performance"
+helpviewer_keywords: ["WPF, Direct3D9 interop performance", "Direct3D9 [WPF interoperability], performance"]
 ms.assetid: ea8baf91-12fe-4b44-ac4d-477110ab14dd
 caps.latest.revision: 19
 author: dotnet-bot

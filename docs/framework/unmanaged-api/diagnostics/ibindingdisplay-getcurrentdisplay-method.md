@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IBindingDisplay.GetCurrentDisplay"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IBindingDisplay::GetCurrentDisplay"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IBindingDisplay::GetCurrentDisplay method [.NET Framework debugging]"
-  - "GetCurrentDisplay method [.NET Framework debugging]"
+api_name: ["IBindingDisplay.GetCurrentDisplay"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["IBindingDisplay::GetCurrentDisplay"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IBindingDisplay::GetCurrentDisplay method [.NET Framework debugging]", "GetCurrentDisplay method [.NET Framework debugging]"]
 ms.assetid: d28eeea4-c4e0-40d4-91de-198d98cfa13c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], metafiles"
-  - "metafiles, displaying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], metafiles", "metafiles, displaying"]
 ms.assetid: 60af1714-f148-4d85-a739-0557965ffa73
 caps.latest.revision: 15
 author: dotnet-bot

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interfaces [.NET Framework hosting], version 1"
-  - ".NET Framework 1.1, hosting interfaces"
-  - "hosting interfaces [.NET Framework], version 1"
-  - ".NET Framework 1.0, hosting interfaces"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interfaces [.NET Framework hosting], version 1", ".NET Framework 1.1, hosting interfaces", "hosting interfaces [.NET Framework], version 1", ".NET Framework 1.0, hosting interfaces"]
 ms.assetid: 7b3d2755-cbab-4160-bc69-eb85791e38c7
 caps.latest.revision: 11
 author: "rpetrusha"

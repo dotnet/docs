@@ -5,18 +5,11 @@ ms.date: "09/07/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "COM interop, data marshaling"
-  - "marshaling data, COM interop"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["COM interop, data marshaling", "marshaling data, COM interop"]
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

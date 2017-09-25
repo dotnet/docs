@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.GetCustomAttributeProps"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::GetCustomAttributeProps"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetCustomAttributeProps method [.NET Framework metadata]"
-  - "IMetaDataImport::GetCustomAttributeProps method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.GetCustomAttributeProps"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::GetCustomAttributeProps"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetCustomAttributeProps method [.NET Framework metadata]", "IMetaDataImport::GetCustomAttributeProps method [.NET Framework metadata]"]
 ms.assetid: 6eefb243-a281-41c1-bcdc-7e17513bc446
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

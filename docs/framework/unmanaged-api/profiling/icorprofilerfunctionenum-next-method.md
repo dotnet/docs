@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerFunctionEnum.Next Method"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerFunctionEnum::Next"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerFunctionEnum::Next method [.NET Framework profiling]"
-  - "Next method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"
+api_name: ["ICorProfilerFunctionEnum.Next Method"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerFunctionEnum::Next"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerFunctionEnum::Next method [.NET Framework profiling]", "Next method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"]
 ms.assetid: 5ed4aa83-ce56-4b9f-9237-5da7587787fe
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

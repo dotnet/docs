@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugProcess.GetID"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugProcess::GetID"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetID method, ICorDebugProcess interface [.NET Framework debugging]"
-  - "ICorDebugProcess::GetID method [.NET Framework debugging]"
+api_name: ["ICorDebugProcess.GetID"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugProcess::GetID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetID method, ICorDebugProcess interface [.NET Framework debugging]", "ICorDebugProcess::GetID method [.NET Framework debugging]"]
 ms.assetid: b0ba8453-fa7e-4c14-93e5-335409cd4a47
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

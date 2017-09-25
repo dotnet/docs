@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ImageList component [Windows Forms], adding images"
-  - "ImageList component [Windows Forms], removing images"
-  - "images [Windows Forms], adding to ImageList component"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ImageList component [Windows Forms], adding images", "ImageList component [Windows Forms], removing images", "images [Windows Forms], adding to ImageList component"]
 ms.assetid: 5699b244-e37c-4d20-bc35-7441e55c1e3a
 caps.latest.revision: 7
 author: dotnet-bot

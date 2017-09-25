@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "colors, adding to shapes"
-  - "shapes, filling"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["colors, adding to shapes", "shapes, filling"]
 ms.assetid: 06088b31-bac9-4ef3-9ebe-06c2c764d6df
 caps.latest.revision: 14
 author: dotnet-bot

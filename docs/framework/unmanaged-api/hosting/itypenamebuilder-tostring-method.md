@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ITypeNameBuilder.ToString"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ToString"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ToString method [.NET Framework hosting]"
-  - "ITypeNameBuilder::ToString method [.NET Framework hosting]"
+api_name: ["ITypeNameBuilder.ToString"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ToString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ToString method [.NET Framework hosting]", "ITypeNameBuilder::ToString method [.NET Framework hosting]"]
 ms.assetid: 6372aca7-869a-4af6-ba2b-0eb1047ef5c0
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

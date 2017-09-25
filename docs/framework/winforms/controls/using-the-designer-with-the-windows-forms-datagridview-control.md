@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "tables [Windows Forms]"
-  - "DataGridView control [Windows Forms], designer support"
-  - "formatting [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["tables [Windows Forms]", "DataGridView control [Windows Forms], designer support", "formatting [Windows Forms]"]
 ms.assetid: b66057a6-5983-4864-b4e7-8cbc88a7010c
 caps.latest.revision: 9
 author: dotnet-bot

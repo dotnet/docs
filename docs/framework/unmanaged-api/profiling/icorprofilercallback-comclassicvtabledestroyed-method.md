@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback.COMClassicVTableDestroyed"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback::COMClassicVTableDestroyed"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerCallback::COMClassicVTableDestroyed method [.NET Framework profiling]"
-  - "COMClassicVTableDestroyed method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback.COMClassicVTableDestroyed"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback::COMClassicVTableDestroyed"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerCallback::COMClassicVTableDestroyed method [.NET Framework profiling]", "COMClassicVTableDestroyed method [.NET Framework profiling]"]
 ms.assetid: 29da20ca-bf39-4356-8099-d9c3ac3423a9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

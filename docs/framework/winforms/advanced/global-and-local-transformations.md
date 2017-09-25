@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "matrices, using transformations"
-  - "transformations, global"
-  - "transformations, local"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["matrices, using transformations", "transformations, global", "transformations, local"]
 ms.assetid: b601d66d-d572-4f11-9d2e-92f0dc8893f3
 caps.latest.revision: 13
 author: dotnet-bot

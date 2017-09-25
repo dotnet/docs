@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, Button"
-  - "UI Automation, Button control type"
-  - "Button control type"
+helpviewer_keywords: ["control types, Button", "UI Automation, Button control type", "Button control type"]
 ms.assetid: 057c983a-da83-4c50-86c7-26fe381076a6
 caps.latest.revision: 34
 author: "Xansky"

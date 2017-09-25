@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "metafiles, about metafiles"
-  - "bitmaps [Windows Forms], about bitmaps"
-  - "images [Windows Forms], about images"
-  - "Windows Forms, images"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["metafiles, about metafiles", "bitmaps [Windows Forms], about bitmaps", "images [Windows Forms], about images", "Windows Forms, images"]
 ms.assetid: 7152b45b-a55c-49bc-8c78-ae002a844f71
 caps.latest.revision: 16
 author: dotnet-bot

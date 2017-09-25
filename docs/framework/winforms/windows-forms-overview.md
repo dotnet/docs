@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "smart clients"
-  - "Windows Forms, about Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["smart clients", "Windows Forms, about Windows Forms"]
 ms.assetid: 3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4
 caps.latest.revision: 34
 author: dotnet-bot

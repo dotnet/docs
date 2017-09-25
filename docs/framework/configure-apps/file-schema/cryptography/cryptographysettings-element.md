@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptographySettings"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "cryptographySettings element"
-  - "<cryptographySettings> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings", "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptographySettings"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["cryptographySettings element", "<cryptographySettings> element"]
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
 caps.latest.revision: 11
 author: "mcleblanc"

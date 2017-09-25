@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedReaderSymbolSearchInfo.GetSymbolSearchInfo"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetSymbolSearchInfo method [.NET Framework debugging]"
-  - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedReaderSymbolSearchInfo.GetSymbolSearchInfo"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetSymbolSearchInfo method [.NET Framework debugging]", "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo method [.NET Framework debugging]"]
 ms.assetid: 40fcdbc5-3bb2-41e9-b995-40984c209a7f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

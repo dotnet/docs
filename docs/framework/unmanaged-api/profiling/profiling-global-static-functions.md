@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "global static functions [.NET Framework profiling]"
-  - "profiling global static functions [.NET Framework]"
-  - "unmanaged global static functions [.NET Framework], profiling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["global static functions [.NET Framework profiling]", "profiling global static functions [.NET Framework]", "unmanaged global static functions [.NET Framework], profiling"]
 ms.assetid: 08a13a57-dc49-488d-b937-31e3051fda97
 caps.latest.revision: 14
 author: "mairaw"

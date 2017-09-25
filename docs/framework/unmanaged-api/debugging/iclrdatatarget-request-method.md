@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRDataTarget.Request"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRDataTarget::Request"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRDataTarget::Request method [.NET Framework debugging]"
-  - "Request method [.NET Framework debugging]"
+api_name: ["ICLRDataTarget.Request"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRDataTarget::Request"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRDataTarget::Request method [.NET Framework debugging]", "Request method [.NET Framework debugging]"]
 ms.assetid: 4723bd1c-eddb-4ed2-897a-010024a47e01
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

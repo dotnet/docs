@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ToolStripStatusLabel"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStripStatusLabel control [Windows Forms], aboutToolStripStatusLabel control"
-  - "status bars"
+f1_keywords: ["ToolStripStatusLabel"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStripStatusLabel control [Windows Forms], aboutToolStripStatusLabel control", "status bars"]
 ms.assetid: 0b9c991e-a9fa-4609-9e1b-caadaef93821
 caps.latest.revision: 4
 author: dotnet-bot

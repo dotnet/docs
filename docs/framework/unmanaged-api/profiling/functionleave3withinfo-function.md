@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "FunctionLeave3WithInfo"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "FunctionLeave3WithInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FunctionLeave3WithInfo function [.NET Framework profiling]"
+api_name: ["FunctionLeave3WithInfo"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["FunctionLeave3WithInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FunctionLeave3WithInfo function [.NET Framework profiling]"]
 ms.assetid: 5fa68a67-ced6-41c6-a2c0-467060fd0692
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

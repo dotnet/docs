@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Custom Place to dialog box"
-  - "adding Custom Place to dialog box"
-  - "CustomPlaces collection"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Custom Place to dialog box", "adding Custom Place to dialog box", "CustomPlaces collection"]
 ms.assetid: 63f6469b-59cd-40f6-9e61-8b5831856780
 caps.latest.revision: 13
 author: dotnet-bot

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "graphics [Windows Forms]"
-  - "graphics, using in Windows Forms"
-  - "GDI+, using in managed code"
-  - "drawing [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["graphics [Windows Forms]", "graphics, using in Windows Forms", "GDI+, using in managed code", "drawing [Windows Forms]"]
 ms.assetid: 362532c5-1a06-4257-bdc8-723461009ede
 caps.latest.revision: 22
 author: dotnet-bot

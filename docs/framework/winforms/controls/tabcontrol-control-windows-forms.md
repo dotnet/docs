@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "TabControl control [Windows Forms]"
-  - "tab controls"
-  - "tab controls, creating"
-  - "multipage dialog boxes"
-  - "dialog boxes, creating multipage"
-  - "property pages, creating"
-  - "tab dialog boxes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["TabControl control [Windows Forms]", "tab controls", "tab controls, creating", "multipage dialog boxes", "dialog boxes, creating multipage", "property pages, creating", "tab dialog boxes"]
 ms.assetid: 915091af-93ac-4d3d-8283-738dd2d21ea7
 caps.latest.revision: 14
 author: dotnet-bot

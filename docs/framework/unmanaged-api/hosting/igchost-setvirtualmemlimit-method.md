@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IGCHost.SetVirtualMemLimit"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "SetVirtualMemLimit"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IGCHost::SetVirtualMemLimit method [.NET Framework hosting]"
-  - "SetVirtualMemLimit method [.NET Framework hosting]"
+api_name: ["IGCHost.SetVirtualMemLimit"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["SetVirtualMemLimit"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IGCHost::SetVirtualMemLimit method [.NET Framework hosting]", "SetVirtualMemLimit method [.NET Framework hosting]"]
 ms.assetid: c7e7c2d0-e58c-4650-b40c-47b2be2cda45
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

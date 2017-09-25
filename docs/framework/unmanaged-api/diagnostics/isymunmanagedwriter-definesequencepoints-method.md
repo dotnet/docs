@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter.DefineSequencePoints"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter::DefineSequencePoints"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DefineSequencePoints method [.NET Framework debugging]"
-  - "ISymUnmanagedWriter::DefineSequencePoints method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter.DefineSequencePoints"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter::DefineSequencePoints"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DefineSequencePoints method [.NET Framework debugging]", "ISymUnmanagedWriter::DefineSequencePoints method [.NET Framework debugging]"]
 ms.assetid: 64202baf-be6b-40ba-8162-8cc6c0c9b8e1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

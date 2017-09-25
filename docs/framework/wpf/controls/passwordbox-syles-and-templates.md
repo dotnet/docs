@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "styles [WPF], PasswordBox"
-  - "templates [WPF], PasswordBox"
-  - "ControlTemplate [WPF], PasswordBox"
-  - "states [WPF], PasswordBox"
-  - "PasswordBox [WPF], styles and templates"
-  - "parts [WPF], PasswordBox"
+helpviewer_keywords: ["styles [WPF], PasswordBox", "templates [WPF], PasswordBox", "ControlTemplate [WPF], PasswordBox", "states [WPF], PasswordBox", "PasswordBox [WPF], styles and templates", "parts [WPF], PasswordBox"]
 ms.assetid: deb52107-959f-4a60-b303-d21a0a933060
 caps.latest.revision: 8
 author: dotnet-bot

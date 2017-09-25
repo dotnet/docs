@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF XAML [XAML Services], migration to System.Xaml"
-  - "XAML [XAML Services], System.Xaml and WPF"
-  - "System.Xaml [XAML Services], types migrated from WPF"
+helpviewer_keywords: ["WPF XAML [XAML Services], migration to System.Xaml", "XAML [XAML Services], System.Xaml and WPF", "System.Xaml [XAML Services], types migrated from WPF"]
 ms.assetid: d79dabf5-a2ec-4e8d-a37a-67c4ba8a2b91
 caps.latest.revision: 14
 author: "wadepickett"

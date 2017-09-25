@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedVariable.GetSignature"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedVariable::GetSignature"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetSignature method, ISymUnmanagedVariable interface [.NET Framework debugging]"
-  - "ISymUnmanagedVariable::GetSignature method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedVariable.GetSignature"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedVariable::GetSignature"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetSignature method, ISymUnmanagedVariable interface [.NET Framework debugging]", "ISymUnmanagedVariable::GetSignature method [.NET Framework debugging]"]
 ms.assetid: 78c1ba28-a410-4360-805c-23a95408964a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Composition Analysis Tool [MEF]"
-  - "MEF, Composition Analysis Tool"
-  - "Mefx [MEF], Composition Analysis Tool"
+helpviewer_keywords: ["Composition Analysis Tool [MEF]", "MEF, Composition Analysis Tool", "Mefx [MEF], Composition Analysis Tool"]
 ms.assetid: c48a7f93-83bb-4a06-aea0-d8e7bd1502ad
 caps.latest.revision: 8
 author: "rpetrusha"

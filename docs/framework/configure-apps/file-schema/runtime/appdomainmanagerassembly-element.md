@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<appDomainManagerAssembly> element"
-  - "appDomainManagerAssembly element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<appDomainManagerAssembly> element", "appDomainManagerAssembly element"]
 ms.assetid: c7c56e39-a700-44f5-b94e-411bfce339d9
 caps.latest.revision: 7
 author: "rpetrusha"

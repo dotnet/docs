@@ -5,15 +5,10 @@ ms.date: "05/19/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:
-  - "dotnet-clr"
-  - "app-compat"
+ms.technology: ["dotnet-clr", "app-compat"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords:
-  - "application compatibility"
-  - ".NET Framework application compatibility"
-  - ".NET Framework changes"
+helpviewer_keywords: ["application compatibility", ".NET Framework application compatibility", ".NET Framework changes"]
 caps.latest.revision: 19
 ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
 author: "rpetrusha"

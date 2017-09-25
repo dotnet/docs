@@ -5,36 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "events, ContentRendered"
-  - "events, Deactivated"
-  - "events, Unloaded"
-  - "Activated events"
-  - "events, Loaded"
-  - "Application objects, lifetime events"
-  - "events, Activated"
-  - "ContentRendered events"
-  - "NavigationWindow class"
-  - "Deactivated events"
-  - "classes, NavigationWindow"
-  - "Frame class"
-  - "events, Initialized"
-  - "events, Closing"
-  - "Unloaded events"
-  - "exit events"
-  - "objects' lifetime events"
-  - "Loaded events"
-  - "Closing events"
-  - "events, Closed"
-  - "Initialized events"
-  - "Closed events"
-  - "classes, Frame"
-  - "startup events"
-  - "lifetime events of objects"
+helpviewer_keywords: ["events, ContentRendered", "events, Deactivated", "events, Unloaded", "Activated events", "events, Loaded", "Application objects, lifetime events", "events, Activated", "ContentRendered events", "Deactivated events", "events, Initialized", "events, Closing", "Unloaded events", "exit events", "objects' lifetime events", "Loaded events", "Closing events", "events, Closed", "Initialized events", "Closed events", "startup events", "lifetime events of objects"]
 ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
 caps.latest.revision: 19
 author: dotnet-bot

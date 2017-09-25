@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "StrongNameGetBlobFromImage"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "StrongNameGetBlobFromImage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameGetBlobFromImage function [.NET Framework strong naming]"
+api_name: ["StrongNameGetBlobFromImage"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["StrongNameGetBlobFromImage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameGetBlobFromImage function [.NET Framework strong naming]"]
 ms.assetid: 1de658e6-da32-4d01-9097-6f43c92222e1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

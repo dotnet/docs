@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hosting services [WCF], IIS"
+helpviewer_keywords: ["hosting services [WCF], IIS"]
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
 caps.latest.revision: 13
 author: "Erikre"

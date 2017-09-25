@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "clients [WCF], architecture"
+helpviewer_keywords: ["clients [WCF], architecture"]
 ms.assetid: f60d9bc5-8ade-4471-8ecf-5a07a936c82d
 caps.latest.revision: 17
 author: "Erikre"

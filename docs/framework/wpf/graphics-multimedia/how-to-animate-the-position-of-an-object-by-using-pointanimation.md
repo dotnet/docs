@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "PointAnimation class"
-  - "graphics [WPF], animation"
-  - "classes, PointAnimation"
-  - "animation, PointAnimation"
+helpviewer_keywords: ["graphics [WPF], animation", "animation, PointAnimation"]
 ms.assetid: 42310977-cc90-438a-8a47-0345898e01be
 caps.latest.revision: 10
 author: dotnet-bot

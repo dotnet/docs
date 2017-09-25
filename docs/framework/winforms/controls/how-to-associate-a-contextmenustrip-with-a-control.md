@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "context menus, relating"
-  - "ContextMenuStrips, associating with controls"
-  - "context menus, associating with controls"
-  - "ContextMenuStrips, relating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["context menus, relating", "ContextMenuStrips, associating with controls", "context menus, associating with controls", "ContextMenuStrips, relating"]
 ms.assetid: 6fc40a42-5d69-427f-aa30-0a146193226b
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "cells, detecting changes"
-  - "DataGridView control [Windows Forms], detecting changes in cells"
-  - "data grids, detecting changes in cells"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["cells, detecting changes", "DataGridView control [Windows Forms], detecting changes in cells", "data grids, detecting changes in cells"]
 ms.assetid: 7fa44d01-97f4-4ccb-a149-bc72628d2c36
 caps.latest.revision: 13
 author: dotnet-bot

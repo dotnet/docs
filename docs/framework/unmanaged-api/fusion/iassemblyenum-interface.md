@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyEnum"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyEnum"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAssemblyEnum interface [.NET Framework fusion]"
+api_name: ["IAssemblyEnum"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyEnum"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAssemblyEnum interface [.NET Framework fusion]"]
 ms.assetid: 634ef9f9-e94b-4776-a9e1-866df9a76c8f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

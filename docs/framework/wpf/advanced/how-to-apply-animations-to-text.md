@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "typography, animations"
-  - "animation, text"
+helpviewer_keywords: ["typography, animations", "animation, text"]
 ms.assetid: eec3d26c-0a21-420f-8012-671621c47089
 caps.latest.revision: 13
 author: dotnet-bot

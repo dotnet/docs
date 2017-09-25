@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "GDI+, using managed interface"
-  - "graphics, class structure"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["GDI+, using managed interface", "graphics, class structure"]
 ms.assetid: 010a1e46-656b-40a1-8d5d-87aa05ee1243
 caps.latest.revision: 11
 author: dotnet-bot

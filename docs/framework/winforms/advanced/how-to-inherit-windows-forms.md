@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "inherited forms, creating at run-time"
-  - "inheritance, forms"
-  - "Windows Forms, inheritance"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["inherited forms, creating at run-time", "inheritance, forms", "Windows Forms, inheritance"]
 ms.assetid: cb3e1c0f-3d2a-4cdc-b0d1-c92eae567ffb
 caps.latest.revision: 15
 author: dotnet-bot

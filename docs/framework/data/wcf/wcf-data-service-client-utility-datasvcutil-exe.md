@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, generating client data classes"
-  - "WCF Data Services, client library"
-  - "WCF Data Services, consuming"
+helpviewer_keywords: ["WCF Data Services, generating client data classes", "WCF Data Services, client library", "WCF Data Services, consuming"]
 ms.assetid: 9d0af606-929b-4c03-b307-3ef5f705afce
 caps.latest.revision: 2
 author: "Erikre"

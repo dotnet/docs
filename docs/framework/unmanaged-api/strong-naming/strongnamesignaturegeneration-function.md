@@ -5,23 +5,15 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "StrongNameSignatureGeneration"
-api_location: 
-  - "mscoree.dll"
-  - "mscorsn.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "StrongNameSignatureGeneration"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameSignatureGeneration function [.NET Framework strong naming]"
+api_name: ["StrongNameSignatureGeneration"]
+api_location: ["mscoree.dll", "mscorsn.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["StrongNameSignatureGeneration"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameSignatureGeneration function [.NET Framework strong naming]"]
 ms.assetid: 839b765c-3e41-44ce-bf1b-dc10453db18e
 caps.latest.revision: 19
 author: "rpetrusha"

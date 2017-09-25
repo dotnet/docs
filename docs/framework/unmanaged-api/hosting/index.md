@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged API reference [.NET Framework], hosting"
-  - "native API reference [.NET Framework], hosting"
-  - "hosting [.NET Framework], using the unmanaged API"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged API reference [.NET Framework], hosting", "native API reference [.NET Framework], hosting", "hosting [.NET Framework], using the unmanaged API"]
 ms.assetid: 14295c28-1da8-408b-a656-9584abcd9896
 caps.latest.revision: 14
 author: "rpetrusha"

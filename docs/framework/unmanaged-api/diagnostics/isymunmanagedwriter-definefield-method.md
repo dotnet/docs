@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter.DefineField"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter::DefineField"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedWriter::DefineField method [.NET Framework debugging]"
-  - "DefineField method, ISymUnmanagedWriter interface [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter.DefineField"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter::DefineField"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedWriter::DefineField method [.NET Framework debugging]", "DefineField method, ISymUnmanagedWriter interface [.NET Framework debugging]"]
 ms.assetid: c6a1f797-dbf4-40f5-ab99-d9b4bfb26148
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

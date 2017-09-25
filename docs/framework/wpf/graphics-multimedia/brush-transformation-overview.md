@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "brushes, transformation properties"
-  - "properties, transformation"
-  - "transformation properties of brushes"
+helpviewer_keywords: ["brushes, transformation properties", "properties, transformation", "transformation properties of brushes"]
 ms.assetid: 8b9bfc09-12fd-4cd5-b445-99949f27bc39
 caps.latest.revision: 12
 author: dotnet-bot

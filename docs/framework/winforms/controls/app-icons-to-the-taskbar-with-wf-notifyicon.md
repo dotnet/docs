@@ -5,19 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "TrayIcon"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "status area icons"
-  - "icons, adding to taskbar"
-  - "NotifyIcon component"
-  - "taskbar, adding icons"
+f1_keywords: ["TrayIcon"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["status area icons", "icons, adding to taskbar", "NotifyIcon component", "taskbar, adding icons"]
 ms.assetid: d28c0fe6-aaf2-4df7-ad74-928d861a8510
 caps.latest.revision: 11
 author: dotnet-bot

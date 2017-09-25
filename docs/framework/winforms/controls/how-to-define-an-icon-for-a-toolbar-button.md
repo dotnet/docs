@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms], adding icons to buttons"
-  - "buttons [Windows Forms], icons"
-  - "examples [Windows Forms], toolbars"
-  - "images [Windows Forms], toolbar buttons"
-  - "icons [Windows Forms], toolbar buttons"
-  - "ToolBar control [Windows Forms], adding icons to buttons"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms], adding icons to buttons", "buttons [Windows Forms], icons", "examples [Windows Forms], toolbars", "images [Windows Forms], toolbar buttons", "icons [Windows Forms], toolbar buttons", "ToolBar control [Windows Forms], adding icons to buttons"]
 ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
 caps.latest.revision: 14
 author: dotnet-bot

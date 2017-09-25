@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "visual objects in Win32 code"
-  - "Win32 code, visual objects in"
-  - "hosting, visual objects in Win32 code"
+helpviewer_keywords: ["visual objects in Win32 code", "Win32 code, visual objects in", "hosting, visual objects in Win32 code"]
 ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 caps.latest.revision: 17
 author: dotnet-bot

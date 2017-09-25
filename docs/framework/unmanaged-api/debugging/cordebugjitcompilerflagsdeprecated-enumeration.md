@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorDebugJITCompilerFlagsDeprecated"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorDebugJITCompilerFlagsDeprecated"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorDebugJITCompilerFlagsDeprecated enumeration [.NET Framework debugging]"
+api_name: ["CorDebugJITCompilerFlagsDeprecated"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorDebugJITCompilerFlagsDeprecated"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorDebugJITCompilerFlagsDeprecated enumeration [.NET Framework debugging]"]
 ms.assetid: af15e2ca-6be1-472b-bd36-03644a1e3ddd
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

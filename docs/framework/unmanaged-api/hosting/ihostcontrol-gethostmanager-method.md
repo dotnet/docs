@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostControl.GetHostManager"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostControl::GetHostManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetHostManager method [.NET Framework hosting]"
-  - "IHostControl::GetHostManager method [.NET Framework hosting]"
+api_name: ["IHostControl.GetHostManager"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostControl::GetHostManager"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetHostManager method [.NET Framework hosting]", "IHostControl::GetHostManager method [.NET Framework hosting]"]
 ms.assetid: 0fa34bca-ed18-4626-9e78-d33684d18edb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "AssemblyAttributesGoHereS"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "AssemblyAttributesGoHereS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AssemblyAttributesGoHereS type"
-  - "Alink API, AssemblyAttributesGoHereS type"
+api_name: ["AssemblyAttributesGoHereS"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["AssemblyAttributesGoHereS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AssemblyAttributesGoHereS type", "Alink API, AssemblyAttributesGoHereS type"]
 ms.assetid: 4e817f35-a2bc-4403-9e6f-f731e6b9fe23
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

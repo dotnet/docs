@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "configuration [WCF], interoperable services"
+helpviewer_keywords: ["configuration [WCF], interoperable services"]
 ms.assetid: 91b70a21-8f5c-4679-808c-2ed5fa6b2013
 caps.latest.revision: 8
 author: "Erikre"

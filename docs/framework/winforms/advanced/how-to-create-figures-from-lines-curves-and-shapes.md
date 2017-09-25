@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "figures, creating from shapes"
-  - "figures, creating from lines"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["figures, creating from shapes", "figures, creating from lines"]
 ms.assetid: 82fd56c7-b443-4765-9b7c-62ce030656ec
 caps.latest.revision: 14
 author: dotnet-bot

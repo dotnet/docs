@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "ThrowUnobservedTaskExceptions element"
-  - "<ThrowUnobservedTaskExceptions> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["ThrowUnobservedTaskExceptions element", "<ThrowUnobservedTaskExceptions> element"]
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
 caps.latest.revision: 6
 author: "rpetrusha"

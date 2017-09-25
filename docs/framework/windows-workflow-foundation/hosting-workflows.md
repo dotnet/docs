@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], hosting workflows"
+helpviewer_keywords: ["programming [WF], hosting workflows"]
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
 caps.latest.revision: 15
 author: "Erikre"

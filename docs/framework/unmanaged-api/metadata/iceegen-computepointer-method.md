@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICeeGen.ComputePointer"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICeeGen::ComputePointer"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICeeGen::ComputePointer method [.NET Framework metadata]"
-  - "ComputePointer method [.NET Framework metadata]"
+api_name: ["ICeeGen.ComputePointer"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICeeGen::ComputePointer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICeeGen::ComputePointer method [.NET Framework metadata]", "ComputePointer method [.NET Framework metadata]"]
 ms.assetid: b6b95c04-0f2c-4fcc-a8bc-3b1dcbdba731
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataObject class [WPF], storing multiple formats"
-  - "DataFormats class [WPF], storing multiple formats"
-  - "drag-and-drop [WPF], storing multiple formats"
+helpviewer_keywords: ["DataObject class [WPF], storing multiple formats", "DataFormats class [WPF], storing multiple formats", "drag-and-drop [WPF], storing multiple formats"]
 ms.assetid: 941ace29-29c4-4c26-b75b-ea7d06aa0d69
 caps.latest.revision: 6
 author: dotnet-bot

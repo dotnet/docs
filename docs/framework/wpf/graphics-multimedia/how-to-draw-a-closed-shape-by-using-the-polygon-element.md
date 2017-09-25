@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "graphics, Polygon elements"
-  - "closed shapes, drawing with Polygon elements"
-  - "Polygon elements"
-  - "drawing, closed shapes with Polygon elements"
+helpviewer_keywords: ["graphics, Polygon elements", "closed shapes, drawing with Polygon elements", "Polygon elements", "drawing, closed shapes with Polygon elements"]
 ms.assetid: 4b0ca008-29ce-48dd-8bc3-f3a20ffca6a6
 caps.latest.revision: 7
 author: dotnet-bot

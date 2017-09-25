@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "JIT tracing events [.NET Framework]"
-  - "ETW, JIT tracing events (CLR)"
+helpviewer_keywords: ["JIT tracing events [.NET Framework]", "ETW, JIT tracing events (CLR)"]
 ms.assetid: 926adde2-c123-452e-bf4f-4b977bf06ffb
 caps.latest.revision: 8
 author: "mairaw"

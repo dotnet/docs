@@ -2,12 +2,9 @@
 title: "Install the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10"
 ms.date: "05/26/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - ".NET Framework 3.5, installing on Windows 8"
-  - "Windows 8, installing .NET Framework 3.5"
+helpviewer_keywords: [".NET Framework 3.5, installing on Windows 8", "Windows 8, installing .NET Framework 3.5"]
 ms.assetid: 3eab3eb4-4573-42ac-98f8-36fb2c22c7d5
 caps.latest.revision: 69
 author: "mairaw"

@@ -2,19 +2,11 @@
 title: "&lt;remove&gt; element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/remove"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "remove Element"
-  - "<remove> Element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/remove"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["remove Element", "<remove> Element"]
 ms.assetid: 8d8af7f5-26c9-4db9-bbe4-b2a4e6949568
 author: "guardrex"
 ms.author: "mairaw"

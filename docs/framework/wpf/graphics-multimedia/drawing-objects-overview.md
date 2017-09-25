@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ImageDrawing objects"
-  - "GlyphRunDrawing objects"
-  - "GeometryDrawing objects"
-  - "drawings, about drawings"
-  - "Drawing objects"
-  - "DrawingGroup objects"
+helpviewer_keywords: ["ImageDrawing objects", "GlyphRunDrawing objects", "GeometryDrawing objects", "drawings, about drawings", "Drawing objects", "DrawingGroup objects"]
 ms.assetid: 9b5ce5c0-e204-4320-a7a8-0b2210d62f88
 caps.latest.revision: 25
 author: dotnet-bot

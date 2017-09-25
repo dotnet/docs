@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "INotifySource2.SetNotifyFilter"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "INotifySource2::SetNotifyFilter"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "INotifySource2::SetNotifyFilter method [.NET Framework debugging]"
-  - "SetNotifyFilter method [.NET Framework debugging]"
+api_name: ["INotifySource2.SetNotifyFilter"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["INotifySource2::SetNotifyFilter"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["INotifySource2::SetNotifyFilter method [.NET Framework debugging]", "SetNotifyFilter method [.NET Framework debugging]"]
 ms.assetid: 6351fc92-b126-4af6-9bf3-0a8ce92845fc
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

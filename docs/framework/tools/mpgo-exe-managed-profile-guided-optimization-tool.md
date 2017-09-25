@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Mpgo.exe"
-  - "training scenarios, generating profiles with"
-  - "Managed Profile Guided Optimization Tool"
-  - "Ngen.exe"
-  - "Ngen.exe, profilers and native images"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Mpgo.exe", "training scenarios, generating profiles with", "Managed Profile Guided Optimization Tool", "Ngen.exe", "Ngen.exe, profilers and native images"]
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
 caps.latest.revision: 31
 author: "mairaw"

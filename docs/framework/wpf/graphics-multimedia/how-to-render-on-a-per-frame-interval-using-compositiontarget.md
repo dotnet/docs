@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "CompositionTarget objects, rendering per frame"
-  - "rendering per frame using CompositionTarget objects"
+helpviewer_keywords: ["CompositionTarget objects, rendering per frame", "rendering per frame using CompositionTarget objects"]
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d
 caps.latest.revision: 12
 author: dotnet-bot

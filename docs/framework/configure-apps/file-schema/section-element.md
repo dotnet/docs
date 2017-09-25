@@ -2,20 +2,11 @@
 title: "&lt;section&gt; element"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/section"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup/section"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "section Element"
-  - "<section> Element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/section", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup/section"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["section Element", "<section> Element"]
 ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
 author: "guardrex"
 ms.author: "mairaw"

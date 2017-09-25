@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback.RuntimeThreadSuspended"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback::RuntimeThreadSuspended"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RuntimeThreadSuspended method [.NET Framework profiling]"
-  - "ICorProfilerCallback::RuntimeThreadSuspended method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback.RuntimeThreadSuspended"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback::RuntimeThreadSuspended"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RuntimeThreadSuspended method [.NET Framework profiling]", "ICorProfilerCallback::RuntimeThreadSuspended method [.NET Framework profiling]"]
 ms.assetid: de830a8b-6ee1-4900-ace3-4237108f6b12
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

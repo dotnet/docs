@@ -2,13 +2,9 @@
 title: "How to: Create a Windows Forms application from the command line"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Forms, application development from command line"
-  - "Windows Forms, getting started"
-  - "Windows Forms, creating basic form"
+helpviewer_keywords: ["Windows Forms, application development from command line", "Windows Forms, getting started", "Windows Forms, creating basic form"]
 ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
 caps.latest.revision: 10
 author: dotnet-bot

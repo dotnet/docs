@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ServiceInstaller class, Windows Service applications"
-  - "Service class, Windows Service applications"
-  - "Windows Service applications"
-  - "Windows NT services"
-  - "ServiceProcessInstaller class, Windows Service applications"
-  - "services"
-  - ".NET applications, Windows applications"
+helpviewer_keywords: ["ServiceInstaller class, Windows Service applications", "Service class, Windows Service applications", "Windows Service applications", "Windows NT services", "ServiceProcessInstaller class, Windows Service applications", "services", ".NET applications, Windows applications"]
 ms.assetid: ba72d648-9553-4849-b829-069ad5ea014b
 caps.latest.revision: 18
 author: "ghogen"

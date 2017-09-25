@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "XML Reader"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["XML Reader"]
 ms.assetid: 60e5848d-7d9c-4ea5-bed9-22758c9ac16c
 caps.latest.revision: 32
 author: "Erikre"

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "loadFromRemoteSources element"
-  - "<loadFromRemoteSources> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["loadFromRemoteSources element", "<loadFromRemoteSources> element"]
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 caps.latest.revision: 31
 author: "rpetrusha"

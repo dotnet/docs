@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Web services, binding controls"
-  - "BindingSource component [Windows Forms], binding to a Web service"
-  - "examples [Windows Forms], BindingSource component"
-  - "controls [Windows Forms], binding to Web service"
-  - "BindingSource component [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Web services, binding controls", "BindingSource component [Windows Forms], binding to a Web service", "examples [Windows Forms], BindingSource component", "controls [Windows Forms], binding to Web service", "BindingSource component [Windows Forms], examples"]
 ms.assetid: ee261207-4573-4cb9-a8cb-5185037e0fba
 caps.latest.revision: 26
 author: dotnet-bot

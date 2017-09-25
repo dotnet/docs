@@ -5,23 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/add"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<bypasslist>, add element"
-  - "bypasslist, add element"
-  - "<add> element, bypasslist"
-  - "add element, bypasslist"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/add", "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<bypasslist>, add element", "bypasslist, add element", "<add> element, bypasslist", "add element, bypasslist"]
 ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
 caps.latest.revision: 17
 author: "mcleblanc"

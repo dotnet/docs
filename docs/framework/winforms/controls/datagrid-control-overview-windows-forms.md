@@ -5,32 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DataGrid"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "datasets [Windows Forms], binding to DataGrid control"
-  - "data binding, DataGrid control"
-  - "columns [Windows Forms], DataGrid control"
-  - "data sources, binding to DataGrid control"
-  - "tables [Windows Forms], binding to DataGrid control"
-  - "DataGrid control [Windows Forms], data binding"
-  - "DataGrid control [Windows Forms], about DataGrid control"
-  - "parent tables in DataGrid control"
-  - "tables [Windows Forms], displaying in DataGrid control"
-  - "data grids, about data grids"
-  - "multiple tables in DataGrid control"
-  - "data [Windows Forms], resorting"
-  - "data [Windows Forms], navigating"
-  - "bound controls, DataGrid control"
-  - "data-bound controls, DataGrid"
-  - "parent table navigation in DataGrid"
-  - "child tables, DataGrid control"
+f1_keywords: ["DataGrid"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["datasets [Windows Forms], binding to DataGrid control", "data binding, DataGrid control", "columns [Windows Forms], DataGrid control", "data sources, binding to DataGrid control", "tables [Windows Forms], binding to DataGrid control", "DataGrid control [Windows Forms], data binding", "DataGrid control [Windows Forms], about DataGrid control", "parent tables in DataGrid control", "tables [Windows Forms], displaying in DataGrid control", "data grids, about data grids", "multiple tables in DataGrid control", "data [Windows Forms], resorting", "data [Windows Forms], navigating", "bound controls, DataGrid control", "data-bound controls, DataGrid", "parent table navigation in DataGrid", "child tables, DataGrid control"]
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
 caps.latest.revision: 22
 author: dotnet-bot

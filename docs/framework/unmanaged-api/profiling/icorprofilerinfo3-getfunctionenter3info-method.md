@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo3.GetFunctionEnter3Info Method"
-api_location: 
-  - "Mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo3::GetFunctionEnter3Info"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetFunctionEnter3Info method [.NET Framework profiling]"
-  - "ICorProfilerInfo3::GetFunctionEnter3Info method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo3.GetFunctionEnter3Info Method"]
+api_location: ["Mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo3::GetFunctionEnter3Info"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetFunctionEnter3Info method [.NET Framework profiling]", "ICorProfilerInfo3::GetFunctionEnter3Info method [.NET Framework profiling]"]
 ms.assetid: 542c7c65-dd56-4651-b76f-5db2465e4a15
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

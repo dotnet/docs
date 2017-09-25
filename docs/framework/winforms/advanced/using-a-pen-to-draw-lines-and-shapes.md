@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "pens"
-  - "examples [Windows Forms], drawing lines and shapes"
-  - "examples [Windows Forms], pens"
-  - "drawing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["pens", "examples [Windows Forms], drawing lines and shapes", "examples [Windows Forms], pens", "drawing"]
 ms.assetid: 8a7542ab-3e9e-443f-8405-2d6053528e20
 caps.latest.revision: 14
 author: dotnet-bot

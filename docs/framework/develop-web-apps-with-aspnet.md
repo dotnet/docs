@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-webforms"
+ms.technology: ["dotnet-webforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ASP.NET"
-  - ".NET Framework, ASP.NET"
-  - "dynamic Web applications [ASP.NET]"
+helpviewer_keywords: ["ASP.NET", ".NET Framework, ASP.NET", "dynamic Web applications [ASP.NET]"]
 ms.assetid: b7861df0-690a-4a58-bd12-f9d0123e40df
 caps.latest.revision: 14
 author: "tdykstra"

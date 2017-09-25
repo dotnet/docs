@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls [WPF], Calendar"
-  - "Calendar control [WPF]"
+helpviewer_keywords: ["controls [WPF], Calendar", "Calendar control [WPF]"]
 ms.assetid: ee844e4a-eefe-48e2-bd0d-1d82cc5e960b
 caps.latest.revision: 4
 author: dotnet-bot

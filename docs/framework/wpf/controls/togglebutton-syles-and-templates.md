@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "states [WPF], ToggleButton"
-  - "ToggleButton [WPF], styles and templates"
-  - "ControlTemplate [WPF], ToggleButton"
-  - "styles [WPF], ToggleButton"
-  - "templates [WPF], ToggleButton"
-  - "parts [WPF], ToggleButton"
+helpviewer_keywords: ["states [WPF], ToggleButton", "ToggleButton [WPF], styles and templates", "ControlTemplate [WPF], ToggleButton", "styles [WPF], ToggleButton", "templates [WPF], ToggleButton", "parts [WPF], ToggleButton"]
 ms.assetid: 54f23f30-4bcb-4f09-8ce4-376a13a255a1
 caps.latest.revision: 9
 author: dotnet-bot

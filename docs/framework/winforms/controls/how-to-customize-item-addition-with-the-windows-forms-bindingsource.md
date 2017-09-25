@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], creating new items"
-  - "BindingSource component [Windows Forms], customizing item addition with"
-  - "examples [Windows Forms], BindingSource component"
-  - "BindingSource component [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], creating new items", "BindingSource component [Windows Forms], customizing item addition with", "examples [Windows Forms], BindingSource component", "BindingSource component [Windows Forms], examples"]
 ms.assetid: 1aae11fc-6fb2-4cb9-b3d0-e0638fe77ef0
 caps.latest.revision: 14
 author: dotnet-bot

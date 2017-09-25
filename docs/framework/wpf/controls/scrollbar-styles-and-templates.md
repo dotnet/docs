@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "styles [WPF], ScrollBar"
-  - "ControlTemplate [WPF], ScrollBar"
-  - "states [WPF], ScrollBar"
-  - "ScrollBar [WPF], styles and templates"
-  - "templates [WPF], ScrollBar"
-  - "parts [WPF], ScrollBar"
+helpviewer_keywords: ["styles [WPF], ScrollBar", "ControlTemplate [WPF], ScrollBar", "states [WPF], ScrollBar", "ScrollBar [WPF], styles and templates", "templates [WPF], ScrollBar", "parts [WPF], ScrollBar"]
 ms.assetid: 066ea45a-e27d-43b0-adfe-cce6934c22f5
 caps.latest.revision: 18
 author: dotnet-bot

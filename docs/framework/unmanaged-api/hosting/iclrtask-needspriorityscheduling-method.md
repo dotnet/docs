@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask.NeedsPriorityScheduling"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask::NeedsPriorityScheduling"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRTask::NeedsPriorityScheduling method [.NET Framework hosting]"
-  - "NeedsPriorityScheduling method [.NET Framework hosting]"
+api_name: ["ICLRTask.NeedsPriorityScheduling"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask::NeedsPriorityScheduling"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRTask::NeedsPriorityScheduling method [.NET Framework hosting]", "NeedsPriorityScheduling method [.NET Framework hosting]"]
 ms.assetid: 9c9db3f3-26bf-4317-88de-5eb926a22a1d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

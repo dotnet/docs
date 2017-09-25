@@ -7,25 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "authentication [.NET Framework], NTLM"
-  - "authentication [.NET Framework], Kerberos"
-  - "user authentication, Kerberos"
-  - "user authentication, NTLM"
-  - "Kerberos authentication"
-  - "receiving data, authentication"
-  - "NTLM authentication"
-  - "Internet, authentication"
-  - "client authentication, Kerberos"
-  - "sending data, authentication"
-  - "network resources, authentication"
-  - "classes [.NET Framework], authentication"
-  - "client authentication, NTLM"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["authentication [.NET Framework], NTLM", "authentication [.NET Framework], Kerberos", "user authentication, Kerberos", "user authentication, NTLM", "Kerberos authentication", "receiving data, authentication", "NTLM authentication", "Internet, authentication", "client authentication, Kerberos", "sending data, authentication", "network resources, authentication", "classes [.NET Framework], authentication", "client authentication, NTLM"]
 ms.assetid: 9ef65560-f596-4469-bcce-f4d5407b55cd
 caps.latest.revision: 9
 author: "mcleblanc"

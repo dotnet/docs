@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ControlTemplate [WPF], TabControl"
-  - "TabControl [WPF], styles and templates"
-  - "parts [WPF], TabControl"
-  - "styles [WPF], TabControl"
-  - "states [WPF], TabControl"
-  - "templates [WPF], TabControl"
+helpviewer_keywords: ["ControlTemplate [WPF], TabControl", "TabControl [WPF], styles and templates", "parts [WPF], TabControl", "styles [WPF], TabControl", "states [WPF], TabControl", "templates [WPF], TabControl"]
 ms.assetid: f6b19a30-f10e-4fa1-96ce-f17a54092ab6
 caps.latest.revision: 18
 author: dotnet-bot

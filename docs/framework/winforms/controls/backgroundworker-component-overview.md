@@ -5,23 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "BackgroundWorker"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "BackgroundWorker component"
-  - "background tasks"
-  - "Asynchronous Pattern"
-  - "forms, multithreading"
-  - "components [Windows Forms], asynchronous"
-  - "forms, background operations"
-  - "threading [Windows Forms], background operations"
-  - "background operations"
+f1_keywords: ["BackgroundWorker"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["BackgroundWorker component", "background tasks", "Asynchronous Pattern", "forms, multithreading", "components [Windows Forms], asynchronous", "forms, background operations", "threading [Windows Forms], background operations", "background operations"]
 ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62
 caps.latest.revision: 13
 author: dotnet-bot

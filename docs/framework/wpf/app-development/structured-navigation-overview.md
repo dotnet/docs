@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "structured navigation [WPF]"
+helpviewer_keywords: ["structured navigation [WPF]"]
 ms.assetid: 025d30ef-fec5-436d-ad7a-5d5483331c26
 caps.latest.revision: 43
 author: dotnet-bot

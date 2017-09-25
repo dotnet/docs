@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "routing [WCF], message filters"
+helpviewer_keywords: ["routing [WCF], message filters"]
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
 caps.latest.revision: 8
 author: "wadepickett"

@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "views [.NET Framework], add-in pipeline"
-  - "host-side adapters for add-ins [.NET Framework]"
-  - "add-in pipeline [.NET Framework], creating"
-  - "add-in-side adapter [.NET Framework]"
-  - "contracts for add-in pipelines [.NET Framework]"
+helpviewer_keywords: ["views [.NET Framework], add-in pipeline", "host-side adapters for add-ins [.NET Framework]", "add-in pipeline [.NET Framework], creating", "add-in-side adapter [.NET Framework]", "contracts for add-in pipelines [.NET Framework]"]
 ms.assetid: 694a33c5-a040-450d-aed5-ac49fc88ce61
 caps.latest.revision: 32
 author: "rpetrusha"

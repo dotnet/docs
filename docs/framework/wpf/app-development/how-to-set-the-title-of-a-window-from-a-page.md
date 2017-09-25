@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "windows, setting title from a page"
-  - "title of window, setting from a page"
-  - "pages, setting window title from"
+helpviewer_keywords: ["windows, setting title from a page", "title of window, setting from a page", "pages, setting window title from"]
 ms.assetid: fecf0d19-3eb6-4f8c-a44f-ff1b6f2b34b3
 caps.latest.revision: 5
 author: dotnet-bot

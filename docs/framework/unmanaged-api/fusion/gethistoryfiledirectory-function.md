@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetHistoryFileDirectory"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "GetHistoryFileDirectory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetHistoryFileDirectory function [.NET Framework fusion]"
+api_name: ["GetHistoryFileDirectory"]
+api_location: ["fusion.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["GetHistoryFileDirectory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetHistoryFileDirectory function [.NET Framework fusion]"]
 ms.assetid: 93232222-926e-42ac-b85d-8a6d33977672
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

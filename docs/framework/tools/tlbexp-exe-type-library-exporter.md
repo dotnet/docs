@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "exporting type library [.NET Framework]"
-  - "exporter tool [.NET Framework]"
-  - "Tlbexp.exe"
-  - "Type Library Exporter"
-  - "type libraries [.NET Framework], exporting"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["exporting type library [.NET Framework]", "exporter tool [.NET Framework]", "Tlbexp.exe", "Type Library Exporter", "type libraries [.NET Framework], exporting"]
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
 caps.latest.revision: 35
 author: "rpetrusha"

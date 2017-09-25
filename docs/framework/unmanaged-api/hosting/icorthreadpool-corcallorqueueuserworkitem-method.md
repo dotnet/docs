@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorThreadpool.CorCallOrQueueUserWorkItem"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorCallOrQueueUserWorkItem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorThreadpool::CorCallOrQueueUserWorkItem method [.NET Framework hosting]"
-  - "CorCallOrQueueUserWorkItem method [.NET Framework hosting]"
+api_name: ["ICorThreadpool.CorCallOrQueueUserWorkItem"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorCallOrQueueUserWorkItem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorThreadpool::CorCallOrQueueUserWorkItem method [.NET Framework hosting]", "CorCallOrQueueUserWorkItem method [.NET Framework hosting]"]
 ms.assetid: a2081223-84ca-4331-a8d3-9352f422f3e7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

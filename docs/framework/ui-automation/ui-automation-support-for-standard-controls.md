@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, UI Automation support for"
-  - "UI Automation, support for standard controls"
+helpviewer_keywords: ["controls, UI Automation support for", "UI Automation, support for standard controls"]
 ms.assetid: 3770ea8a-2655-4add-9c59-fe0610ad5084
 caps.latest.revision: 11
 author: "Xansky"

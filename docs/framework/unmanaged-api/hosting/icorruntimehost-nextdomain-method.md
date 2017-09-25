@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorRuntimeHost.NextDomain"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorRuntimeHost::NextDomain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorRuntimeHost::NextDomain method [.NET Framework hosting]"
-  - "NextDomain method [.NET Framework hosting]"
+api_name: ["ICorRuntimeHost.NextDomain"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorRuntimeHost::NextDomain"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorRuntimeHost::NextDomain method [.NET Framework hosting]", "NextDomain method [.NET Framework hosting]"]
 ms.assetid: fe07a05b-f6d6-44b5-ab01-b9a6eb15c350
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exporter tool [.NET Framework]"
-  - "TlbRef.dll"
-  - "Tlbexp.exe"
-  - "Type Library Exporter"
+dev_langs: ["C++"]
+helpviewer_keywords: ["exporter tool [.NET Framework]", "TlbRef.dll", "Tlbexp.exe", "Type Library Exporter"]
 ms.assetid: 5c0a3d14-5f26-4267-94a9-82c30f8db09a
 caps.latest.revision: 11
 author: "rpetrusha"

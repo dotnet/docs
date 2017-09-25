@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "expose a server-side UI Automation provider"
-  - "UI Automation, server-side provider, exposing"
-  - "server-side UI Automation provider, exposing"
+helpviewer_keywords: ["expose a server-side UI Automation provider", "UI Automation, server-side provider, exposing", "server-side UI Automation provider, exposing"]
 ms.assetid: 55d419c0-2201-4101-90c9-2888df4dbb47
 caps.latest.revision: 20
 author: "Xansky"

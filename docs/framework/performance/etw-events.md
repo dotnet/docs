@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - ".NET Framework ETW events"
-  - "ETW events in the .NET Framework"
+helpviewer_keywords: [".NET Framework ETW events", "ETW events in the .NET Framework"]
 ms.assetid: d186276f-6afb-4dfd-bf3c-4251edc2c299
 caps.latest.revision: 9
 author: "mairaw"

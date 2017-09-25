@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "AutoSize property, TableLayoutPanel control"
-  - "controls [Windows Forms], sizing"
-  - "localizing forms"
-  - "layout [Windows Forms],AutoSize"
-  - "sizing, automatic"
-  - "TableLayoutPanel control [Windows Forms], AutoSize behavior"
-  - "automatic sizing"
-  - "AutoSizeMode property"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["AutoSize property, TableLayoutPanel control", "controls [Windows Forms], sizing", "localizing forms", "layout [Windows Forms], AutoSize", "sizing, automatic", "TableLayoutPanel control [Windows Forms], AutoSize behavior", "automatic sizing", "AutoSizeMode property"]
 ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
 caps.latest.revision: 8
 author: dotnet-bot

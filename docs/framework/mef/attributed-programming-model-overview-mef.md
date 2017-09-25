@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "MEF, attributed programming model"
-  - "attributed programming model [MEF]"
+helpviewer_keywords: ["MEF, attributed programming model", "attributed programming model [MEF]"]
 ms.assetid: 49b787ff-2741-4836-ad51-c3017dc592d4
 caps.latest.revision: 24
 author: "rpetrusha"

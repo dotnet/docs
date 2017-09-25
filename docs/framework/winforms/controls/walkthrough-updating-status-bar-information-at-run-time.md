@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "status bars, updating at run time"
-  - "status bars, refreshing panels"
-  - "StatusBar control [Windows Forms], refreshing panels"
-  - "panels, refreshing status bar"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["status bars, updating at run time", "status bars, refreshing panels", "StatusBar control [Windows Forms], refreshing panels", "panels, refreshing status bar"]
 ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
 caps.latest.revision: 18
 author: dotnet-bot

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ServiceController.Pause"
-helpviewer_keywords: 
-  - "Windows Service applications, pausing"
-  - "pausing Windows Service applications"
+f1_keywords: ["ServiceController.Pause"]
+helpviewer_keywords: ["Windows Service applications, pausing", "pausing Windows Service applications"]
 ms.assetid: eddb9409-942b-46b6-a2ce-fbd4c65f2790
 caps.latest.revision: 17
 author: "ghogen"

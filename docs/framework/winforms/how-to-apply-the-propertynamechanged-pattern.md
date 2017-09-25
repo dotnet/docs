@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Windows Forms], property changes (using code)"
-  - "data binding, custom controls"
-  - "PropertyNameChanged pattern, applying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Windows Forms], property changes (using code)", "data binding, custom controls", "PropertyNameChanged pattern, applying"]
 ms.assetid: aa47ddf6-5223-40c4-833f-a78992194836
 caps.latest.revision: 5
 author: dotnet-bot

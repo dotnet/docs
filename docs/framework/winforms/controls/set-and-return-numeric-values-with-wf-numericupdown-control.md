@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "numeric values, Windows Forms"
-  - "Windows Forms, numeric values"
-  - "Windows Forms controls, NumericUpDown"
-  - "NumericUpDown control [Windows Forms], setting and returning values"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["numeric values, Windows Forms", "Windows Forms, numeric values", "Windows Forms controls, NumericUpDown", "NumericUpDown control [Windows Forms], setting and returning values"]
 ms.assetid: 5bd8f8cd-4c12-49ea-9cc3-2a647d064689
 caps.latest.revision: 14
 author: dotnet-bot

@@ -5,26 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "collections [Windows Forms], binding to"
-  - "OLE DB providers, Windows Forms"
-  - "DataColumn class"
-  - "DataTable class, binding and Windows Forms"
-  - "Windows Forms, data binding"
-  - "DataView class, binding and Windows Forms"
-  - "DataViewManager class, binding and Windows Forms"
-  - "Windows Forms, source data"
-  - "arrays [Windows Forms]"
-  - "data sources [Windows Forms]"
-  - "data providers [Windows Forms]"
-  - "DataSet class, binding and Windows Forms"
-  - "data [Windows Forms], data providers"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["collections [Windows Forms], binding to", "OLE DB providers, Windows Forms", "DataTable class, binding and Windows Forms", "Windows Forms, data binding", "DataView class, binding and Windows Forms", "DataViewManager class, binding and Windows Forms", "Windows Forms, source data", "arrays [Windows Forms]", "data sources [Windows Forms]", "data providers [Windows Forms]", "DataSet class, binding and Windows Forms", "data [Windows Forms], data providers"]
 ms.assetid: 3d2c43f6-462b-4d35-9c86-13e9afe012e1
 caps.latest.revision: 15
 author: dotnet-bot

@@ -5,24 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Designer_GenerateMember"
-  - "Designer_Modifiers"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "GenerateMember property"
-  - "Modifiers property"
-  - "base forms"
-  - "inheritance, forms"
-  - "inherited forms, Windows Forms"
-  - "inherited forms"
-  - "form inheritance"
-  - "Windows Forms, inheritance"
+f1_keywords: ["Designer_GenerateMember", "Designer_Modifiers"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["base forms", "inheritance, forms", "inherited forms, Windows Forms", "inherited forms", "form inheritance", "Windows Forms, inheritance"]
 ms.assetid: 3381a5e4-e1a3-44e2-a765-a0b758937b85
 caps.latest.revision: 9
 author: dotnet-bot

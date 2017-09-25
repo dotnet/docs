@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "text, retrieving"
-  - "TextBox control, retrieving text"
-  - "retrieving text"
+helpviewer_keywords: ["text, retrieving", "TextBox control, retrieving text", "retrieving text"]
 ms.assetid: d5793172-1e11-4a39-9be0-73f336ed858d
 caps.latest.revision: 10
 author: dotnet-bot

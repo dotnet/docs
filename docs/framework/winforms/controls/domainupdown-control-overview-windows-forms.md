@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DomainUpDown"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "spin button control, about spin button"
-  - "DomainUpDown control [Windows Forms], about DomainUpDown control"
+f1_keywords: ["DomainUpDown"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["spin button control, about spin button", "DomainUpDown control [Windows Forms], about DomainUpDown control"]
 ms.assetid: 3f40f9c1-20ad-4331-b9b5-b0127eb36eb3
 caps.latest.revision: 11
 author: dotnet-bot

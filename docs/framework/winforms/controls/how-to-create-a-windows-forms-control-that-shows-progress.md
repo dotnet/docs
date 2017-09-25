@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], progress tracking"
-  - "controls [Windows Forms], creating"
-  - "progress, reporting [Windows Forms]"
-  - "FlashTrackBar custom control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], progress tracking", "controls [Windows Forms], creating", "progress, reporting [Windows Forms]", "FlashTrackBar custom control"]
 ms.assetid: 24c5a2e3-058c-4b8d-a217-c06e6a130c2f
 caps.latest.revision: 6
 author: dotnet-bot

@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "master-details lists"
-  - "data [Windows Forms], data binding"
-  - "reports, Windows Forms"
-  - "lookup tables, data binding"
-  - "data [Windows Forms], complex data binding"
-  - "data binding, Windows Forms"
-  - "bound controls, Windows Forms"
-  - "data [Windows Forms], simple data binding"
-  - "Windows Forms controls, data binding"
-  - "data-bound controls, Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["master-details lists", "data [Windows Forms], data binding", "reports, Windows Forms", "lookup tables, data binding", "data [Windows Forms], complex data binding", "data binding, Windows Forms", "bound controls, Windows Forms", "data [Windows Forms], simple data binding", "Windows Forms controls, data binding", "data-bound controls, Windows Forms"]
 ms.assetid: 419aac5e-819b-4aad-88b0-73a2f8c0bd27
 caps.latest.revision: 20
 author: dotnet-bot

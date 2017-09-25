@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "parts [WPF], Frame"
-  - "templates [WPF], Frame"
-  - "ControlTemplate [WPF], Frame"
-  - "Frame [WPF], styles and templates"
-  - "states [WPF], Frame"
-  - "styles [WPF], Frame"
+helpviewer_keywords: ["parts [WPF], Frame", "templates [WPF], Frame", "ControlTemplate [WPF], Frame", "Frame [WPF], styles and templates", "states [WPF], Frame", "styles [WPF], Frame"]
 ms.assetid: a01c32e2-c951-46a0-a82f-2614ca241f0b
 caps.latest.revision: 12
 author: dotnet-bot

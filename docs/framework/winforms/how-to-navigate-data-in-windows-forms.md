@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "cursors, data sources"
-  - "data sources, Windows Forms"
-  - "Windows Forms, navigating"
-  - "CurrencyManager class, navigating Windows Forms data"
-  - "data [Windows Forms], navigating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["cursors, data sources", "data sources, Windows Forms", "Windows Forms, navigating", "CurrencyManager class, navigating Windows Forms data", "data [Windows Forms], navigating"]
 ms.assetid: 97360f7b-b181-4084-966a-4c62518f735b
 caps.latest.revision: 12
 author: dotnet-bot

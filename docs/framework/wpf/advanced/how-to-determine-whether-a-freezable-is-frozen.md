@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "IsFrozen property"
-  - "Freezable objects, determining if frozen"
+helpviewer_keywords: ["Freezable objects, determining if frozen"]
 ms.assetid: 92e58baa-ee12-4a9e-ac3a-ca458807a8b2
 caps.latest.revision: 6
 author: dotnet-bot

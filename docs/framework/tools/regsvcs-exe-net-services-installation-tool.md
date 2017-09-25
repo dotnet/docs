@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Regsvcs.exe"
-  - ".NET Services Installation tool"
-  - "loading assemblies"
-  - "assemblies [.NET Framework], registering"
-  - "type libraries"
-  - "registering assemblies"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Regsvcs.exe", ".NET Services Installation tool", "loading assemblies", "assemblies [.NET Framework], registering", "type libraries", "registering assemblies"]
 ms.assetid: 5220fe58-5aaf-4e8e-8bc3-b78c63025804
 caps.latest.revision: 21
 author: "rpetrusha"

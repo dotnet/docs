@@ -7,24 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Cache If Available policy"
-  - "reload policy"
-  - "location-based cache policies"
-  - "Cache Only policy"
-  - "local cache"
-  - "intermediate cache"
-  - "No Cache No Store policy"
-  - "cache [.NET Framework], location-based policies"
-  - "Revalidate policy"
-  - "freshness of cached resources"
-  - "Cache Or Next Cache Only policy"
-  - "Refresh policy"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Cache If Available policy", "reload policy", "location-based cache policies", "Cache Only policy", "local cache", "intermediate cache", "No Cache No Store policy", "cache [.NET Framework], location-based policies", "Revalidate policy", "freshness of cached resources", "Cache Or Next Cache Only policy", "Refresh policy"]
 ms.assetid: e41d7f1a-0a6a-4dee-97d1-c6a8b6a07fc2
 caps.latest.revision: 12
 author: "mcleblanc"

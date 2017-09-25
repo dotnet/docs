@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drawing, lines"
-  - "lines, drawing"
-  - "pens, drawing lines"
-  - "drawing lines, line caps"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drawing, lines", "lines, drawing", "pens, drawing lines", "drawing lines, line caps"]
 ms.assetid: eb68c3e1-c400-4886-8a04-76978a429cb6
 caps.latest.revision: 16
 author: dotnet-bot

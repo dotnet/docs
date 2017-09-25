@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, 3-D translations, with key frames (Rotation3DAnimation)"
-  - "key frames, Rotation3DAnimation"
-  - "3-D translations, animating, with key frames (Rotation3DAnimation)"
+helpviewer_keywords: ["animation, 3-D translations, with key frames (Rotation3DAnimation)", "key frames, Rotation3DAnimation", "3-D translations, animating, with key frames (Rotation3DAnimation)"]
 ms.assetid: 6f671b95-7f30-4836-9a4f-aeb7dc30121f
 caps.latest.revision: 8
 author: dotnet-bot

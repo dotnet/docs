@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "accessibility, Windows applications"
-  - "Windows applications, accessibility"
-  - "applications [Windows Forms], accessibility"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["accessibility, Windows applications", "Windows applications, accessibility", "applications [Windows Forms], accessibility"]
 ms.assetid: 654c7f2f-1586-480b-9f12-9d9b8f5cc32b
 caps.latest.revision: 15
 author: dotnet-bot

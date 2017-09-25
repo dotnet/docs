@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataDispenser.OpenScope"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataDispenser::OpenScope"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataDispenser::OpenScope method [.NET Framework metadata]"
-  - "OpenScope method, IMetaDataDispenser interface [.NET Framework metadata]"
+api_name: ["IMetaDataDispenser.OpenScope"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataDispenser::OpenScope"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataDispenser::OpenScope method [.NET Framework metadata]", "OpenScope method, IMetaDataDispenser interface [.NET Framework metadata]"]
 ms.assetid: 65063ad5-e0d9-4c01-8f8b-9a5950109fa6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

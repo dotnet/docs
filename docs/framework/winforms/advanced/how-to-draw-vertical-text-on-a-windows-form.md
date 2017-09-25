@@ -5,20 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "StringFormat.FormatFlags"
-  - "Graphics.DrawString"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "text [Windows Forms], drawing vertical"
-  - "strings [Windows Forms], drawing vertical"
-  - "text [Windows Forms], drawing"
-  - "text [Windows Forms], vertical text"
+f1_keywords: ["StringFormat.FormatFlags", "Graphics.DrawString"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["text [Windows Forms], drawing vertical", "strings [Windows Forms], drawing vertical", "text [Windows Forms], drawing", "text [Windows Forms], vertical text"]
 ms.assetid: 717a6131-00f6-4373-b574-9894e8317799
 caps.latest.revision: 10
 author: dotnet-bot

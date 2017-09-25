@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, Document"
-  - "Document control type"
-  - "UI Automation, Document control type"
+helpviewer_keywords: ["control types, Document", "Document control type", "UI Automation, Document control type"]
 ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 caps.latest.revision: 27
 author: "Xansky"

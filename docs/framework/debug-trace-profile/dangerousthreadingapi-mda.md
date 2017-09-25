@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "suspending threads"
-  - "DangerousThreadingAPI MDA"
-  - "managed debugging assistants (MDAs), dangerous threading operations"
-  - "threading [.NET Framework], suspending"
-  - "MDAs (managed debugging assistants), dangerous threading operations"
-  - "Suspend method"
-  - "threading [.NET Framework], managed debugging assistants"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["suspending threads", "DangerousThreadingAPI MDA", "managed debugging assistants (MDAs), dangerous threading operations", "threading [.NET Framework], suspending", "MDAs (managed debugging assistants), dangerous threading operations", "threading [.NET Framework], managed debugging assistants"]
 ms.assetid: 3e5efbc5-92e4-4229-b31f-ce368a1adb96
 caps.latest.revision: 10
 author: "mairaw"

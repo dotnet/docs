@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "clients [WCF], security considerations"
+helpviewer_keywords: ["clients [WCF], security considerations"]
 ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
 caps.latest.revision: 22
 author: "BrucePerlerMS"

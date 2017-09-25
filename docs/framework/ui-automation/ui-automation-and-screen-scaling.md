@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "scaling, screens"
-  - "screens, scaling"
-  - "UI (user interface), automation"
-  - "UI Automation"
+helpviewer_keywords: ["scaling, screens", "screens, scaling", "UI (user interface), automation", "UI Automation"]
 ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
 caps.latest.revision: 16
 author: "Xansky"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedScope.GetChildren"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedScope::GetChildren"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedScope::GetChildren method [.NET Framework debugging]"
-  - "GetChildren method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedScope.GetChildren"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedScope::GetChildren"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedScope::GetChildren method [.NET Framework debugging]", "GetChildren method [.NET Framework debugging]"]
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

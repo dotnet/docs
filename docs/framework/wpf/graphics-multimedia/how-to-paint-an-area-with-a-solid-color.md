@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "solid colors, painting with"
-  - "brushes, painting with solid colors"
-  - "painting, with solid colors"
+helpviewer_keywords: ["solid colors, painting with", "brushes, painting with solid colors", "painting, with solid colors"]
 ms.assetid: 5d27d8a7-4bd7-4063-bdf3-2c5c0f19f9d3
 caps.latest.revision: 11
 author: dotnet-bot

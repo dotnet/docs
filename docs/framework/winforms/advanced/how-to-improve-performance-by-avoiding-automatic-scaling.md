@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "automatic scaling"
-  - "images [Windows Forms], improving performance"
-  - "images [Windows Forms], using without automatic scaling"
-  - "performance, improving image"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["automatic scaling", "images [Windows Forms], improving performance", "images [Windows Forms], using without automatic scaling", "performance, improving image"]
 ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
 caps.latest.revision: 14
 author: dotnet-bot

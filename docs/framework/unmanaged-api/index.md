@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "runtime, unmanaged APIs"
-  - "common language runtime, unmanaged APIs"
-  - "native API reference [.NET Framework]"
-  - "unmanaged API reference [.NET Framework]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["runtime, unmanaged APIs", "common language runtime, unmanaged APIs", "native API reference [.NET Framework]", "unmanaged API reference [.NET Framework]"]
 ms.assetid: 9aa000ee-c04c-492c-ae4f-83ecdf4fdbbe
 caps.latest.revision: 24
 author: "rpetrusha"

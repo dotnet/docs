@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "INotifySink2.OnSyncCallOut"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "INotifySink2::OnSyncCallOut"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "INotifySink2::OnSyncCallOut method [.NET Framework debugging]"
-  - "OnSyncCallOut method [.NET Framework debugging]"
+api_name: ["INotifySink2.OnSyncCallOut"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["INotifySink2::OnSyncCallOut"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["INotifySink2::OnSyncCallOut method [.NET Framework debugging]", "OnSyncCallOut method [.NET Framework debugging]"]
 ms.assetid: 97f15656-8677-4079-8553-a1d8603355d6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

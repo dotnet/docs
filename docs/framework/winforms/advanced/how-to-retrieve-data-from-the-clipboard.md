@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "pasting Clipboard data"
-  - "Clipboard, retrieving data"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["pasting Clipboard data", "Clipboard, retrieving data"]
 ms.assetid: 99612537-2c8a-449f-aab5-2b3b28d656e7
 caps.latest.revision: 12
 author: dotnet-bot

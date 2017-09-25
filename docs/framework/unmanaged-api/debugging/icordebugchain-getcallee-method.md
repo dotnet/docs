@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugChain.GetCallee"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugChain::GetCallee method"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugChain::GetCallee method [.NET Framework debugging]"
-  - "GetCallee method, ICorDebugChain interface [.NET Framework debugging]"
+api_name: ["ICorDebugChain.GetCallee"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugChain::GetCallee method"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugChain::GetCallee method [.NET Framework debugging]", "GetCallee method, ICorDebugChain interface [.NET Framework debugging]"]
 ms.assetid: 19560c79-abdc-4bdf-a5fe-eb362a59edc0
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data binding, templates"
-  - "binding data, templates"
-  - "templates, data"
-  - "data templates"
+helpviewer_keywords: ["data binding, templates", "binding data, templates", "templates, data", "data templates"]
 ms.assetid: 0f4d9f8c-0230-4013-bd7b-e8e7fed01b4a
 caps.latest.revision: 25
 author: dotnet-bot

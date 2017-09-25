@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - ".NET Framework 4.5, obsolete types"
-  - "types, obsolete in .NET Framework 4.5"
-  - "obsolete types [.NET Framework]"
+helpviewer_keywords: [".NET Framework 4.5, obsolete types", "types, obsolete in .NET Framework 4.5", "obsolete types [.NET Framework]"]
 ms.assetid: e636d024-0fac-45eb-b721-25a8c0ceca8f
 caps.latest.revision: 41
 author: "rpetrusha"

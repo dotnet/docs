@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "styles [WPF], RadioButton"
-  - "RadioButton [WPF], styles and templates"
-  - "ControlTemplate [WPF], RadioButton"
-  - "states [WPF], RadioButton"
-  - "templates [WPF], RadioButton"
-  - "parts [WPF], RadioButton"
+helpviewer_keywords: ["styles [WPF], RadioButton", "RadioButton [WPF], styles and templates", "ControlTemplate [WPF], RadioButton", "states [WPF], RadioButton", "templates [WPF], RadioButton", "parts [WPF], RadioButton"]
 ms.assetid: 9acf93f7-dd2f-4010-8ce0-1edd81c52ae2
 caps.latest.revision: 17
 author: dotnet-bot

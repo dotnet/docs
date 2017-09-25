@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugClass2.GetParameterizedType"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugClass2::GetParameterizedType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetParameterizedType method [.NET Framework debugging]"
-  - "ICorDebugClass2::GetParameterizedType method [.NET Framework debugging]"
+api_name: ["ICorDebugClass2.GetParameterizedType"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugClass2::GetParameterizedType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetParameterizedType method [.NET Framework debugging]", "ICorDebugClass2::GetParameterizedType method [.NET Framework debugging]"]
 ms.assetid: 94b591c4-9302-4af2-a510-089496afb036
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

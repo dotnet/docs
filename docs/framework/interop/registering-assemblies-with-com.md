@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "COM interop, registering assemblies"
-  - "unregistering assemblies"
-  - "interoperation with unmanaged code, registering assemblies"
-  - "registering assemblies"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["COM interop, registering assemblies", "unregistering assemblies", "interoperation with unmanaged code, registering assemblies", "registering assemblies"]
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
 caps.latest.revision: 11
 author: "rpetrusha"

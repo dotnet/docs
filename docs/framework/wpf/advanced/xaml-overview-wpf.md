@@ -5,24 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "user interfaces [XAML]"
-  - "classes [XAML]"
-  - "root element [XAML]"
-  - "XAML [WPF], about XAML"
-  - "base classes [XAML]"
-  - "routed events"
-  - "code-behind files [WPF], XAML"
-  - "collection properties [XAML]"
-  - "events [XAML]"
-  - "property element [XAML]"
-  - "content models [XAML]"
-  - "Extensible Application Markup Language (see XAML)"
-  - "attribute syntax [XAML]"
+helpviewer_keywords: ["user interfaces [XAML]", "classes [XAML]", "root element [XAML]", "XAML [WPF], about XAML", "base classes [XAML]", "routed events", "code-behind files [WPF], XAML", "collection properties [XAML]", "events [XAML]", "property element [XAML]", "content models [XAML]", "Extensible Application Markup Language (see XAML)", "attribute syntax [XAML]"]
 ms.assetid: a80db4cd-dd0f-479f-a45f-3740017c22e4
 caps.latest.revision: 57
 author: dotnet-bot

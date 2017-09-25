@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName2"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRStrongName2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRStrongName2 interface [.NET Framework hosting]"
+api_name: ["ICLRStrongName2"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRStrongName2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRStrongName2 interface [.NET Framework hosting]"]
 ms.assetid: 9f098a74-201e-4628-a468-8dee9ab99b4a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

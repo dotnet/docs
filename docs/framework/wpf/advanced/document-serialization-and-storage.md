@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "serialization of documents"
-  - "storage of documents"
-  - "documents, storage"
-  - "documents, serialization"
+helpviewer_keywords: ["serialization of documents", "storage of documents", "documents, storage", "documents, serialization"]
 ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 caps.latest.revision: 24
 author: dotnet-bot

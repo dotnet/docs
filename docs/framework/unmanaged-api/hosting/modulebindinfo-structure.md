@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ModuleBindInfo"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ModuleBindInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ModuleBindInfo structure [.NET Framework hosting]"
+api_name: ["ModuleBindInfo"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ModuleBindInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ModuleBindInfo structure [.NET Framework hosting]"]
 ms.assetid: 632d4adc-dbc9-4ce8-9397-abc3285c1c69
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

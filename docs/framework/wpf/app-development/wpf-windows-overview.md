@@ -5,34 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML, displaying content via"
-  - "XAML pages, displaying"
-  - "creating, windows"
-  - "content, displaying via XAML"
-  - "window objects"
-  - "hosting, applications"
-  - "managing windows"
-  - "dialog boxes"
-  - "Page object"
-  - "NavigationWindow objects"
-  - "applications, hosting"
-  - "content, displaying"
-  - "events"
-  - "content, displaying via procedural code"
-  - "modal windows"
-  - "procedural code, displaying content via"
-  - "displaying content via procedural code"
-  - "window management"
-  - "displaying content"
-  - "window events"
-  - "windows"
-  - "modal dialog boxes"
-  - "displaying XAML pages"
+helpviewer_keywords: ["XAML, displaying content via", "XAML pages, displaying", "creating, windows", "content, displaying via XAML", "window objects", "hosting, applications", "managing windows", "dialog boxes", "Page object", "NavigationWindow objects", "applications, hosting", "content, displaying", "events", "content, displaying via procedural code", "modal windows", "procedural code, displaying content via", "displaying content via procedural code", "window management", "displaying content", "window events", "windows", "modal dialog boxes", "displaying XAML pages"]
 ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
 caps.latest.revision: 65
 author: dotnet-bot

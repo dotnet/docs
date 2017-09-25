@@ -5,29 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ListView control [Windows Forms], lack of Unicode support"
-  - "DateTimePicker control [Windows Forms], lack of Unicode support"
-  - "TrackBar control [Windows Forms], lack of Unicode support"
-  - "ImageList component [Windows Forms], lack of Unicode support"
-  - "Unicode [Windows Forms]"
-  - "ToolBar control [Windows Forms], lack of Unicode support"
-  - "international applications [Windows Forms], character display"
-  - "StatusBar control [Windows Forms], lack of Unicode support"
-  - "MonthCalendar control [Windows Forms], lack of Unicode support"
-  - "international characters"
-  - "TabControl control [Windows Forms], lack of Unicode support"
-  - "Windows Forms, encoding"
-  - "TreeView control [Windows Forms], lack of Unicode support"
-  - "ProgressBar control [Windows Forms], Unicode-enabled forms"
-  - "localization [Windows Forms], character sets"
-  - "globalization [Windows Forms], character sets"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ListView control [Windows Forms], lack of Unicode support", "DateTimePicker control [Windows Forms], lack of Unicode support", "TrackBar control [Windows Forms], lack of Unicode support", "ImageList component [Windows Forms], lack of Unicode support", "Unicode [Windows Forms]", "ToolBar control [Windows Forms], lack of Unicode support", "international applications [Windows Forms], character display", "StatusBar control [Windows Forms], lack of Unicode support", "MonthCalendar control [Windows Forms], lack of Unicode support", "international characters", "TabControl control [Windows Forms], lack of Unicode support", "Windows Forms, encoding", "TreeView control [Windows Forms], lack of Unicode support", "ProgressBar control [Windows Forms], Unicode-enabled forms", "localization [Windows Forms], character sets", "globalization [Windows Forms], character sets"]
 ms.assetid: 22e8965d-a712-42b3-8167-3ee346bd70f9
 caps.latest.revision: 9
 author: dotnet-bot

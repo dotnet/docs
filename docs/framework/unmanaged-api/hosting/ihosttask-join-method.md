@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTask.Join"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTask::Join"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostTask::Join method [.NET Framework hosting]"
-  - "Join method, IHostTask interface [.NET Framework hosting]"
+api_name: ["IHostTask.Join"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTask::Join"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostTask::Join method [.NET Framework hosting]", "Join method, IHostTask interface [.NET Framework hosting]"]
 ms.assetid: 2cffcc52-19e0-4ced-a440-fc7375078ac9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

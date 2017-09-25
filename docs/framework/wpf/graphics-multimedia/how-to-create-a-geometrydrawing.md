@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "shapes, renderable"
-  - "renderable shapes"
-  - "GeometryDrawing class"
-  - "graphics, GeometryDrawing class"
-  - "classes, GeometryDrawing"
+helpviewer_keywords: ["shapes, renderable", "renderable shapes", "graphics, GeometryDrawing class", "classes, GeometryDrawing"]
 ms.assetid: 11d3c096-91ba-4d41-9bba-aeac0db70f97
 caps.latest.revision: 8
 author: dotnet-bot

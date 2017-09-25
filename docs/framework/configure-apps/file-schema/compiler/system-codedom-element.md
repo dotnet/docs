@@ -5,22 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.codedom"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "compiler configuration elements, <system.codedom> element"
-  - "system.codedom element"
-  - "<system.codedom> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom", "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.codedom"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["compiler configuration elements, <system.codedom> element", "system.codedom element", "<system.codedom> element"]
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
 caps.latest.revision: 17
 author: "mcleblanc"

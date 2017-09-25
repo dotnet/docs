@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "configuration [WCF], securing services"
-  - "WCF security"
-  - "WCF, security"
+helpviewer_keywords: ["configuration [WCF], securing services", "WCF security", "WCF, security"]
 ms.assetid: f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620
 caps.latest.revision: 28
 author: "BrucePerlerMS"

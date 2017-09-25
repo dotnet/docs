@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Multithreaded Windows Forms Control sample [Windows Forms]"
-  - "custom controls [Windows Forms], multithreading"
-  - "threading [Windows Forms], custom controls"
-  - "custom controls [Windows Forms], samples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Multithreaded Windows Forms Control sample [Windows Forms]", "custom controls [Windows Forms], multithreading", "threading [Windows Forms], custom controls", "custom controls [Windows Forms], samples"]
 ms.assetid: 7fe3956f-5b8f-4f78-8aae-c9eb0b28f13a
 caps.latest.revision: 14
 author: dotnet-bot

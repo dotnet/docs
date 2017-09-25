@@ -5,27 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "initializing trace listeners"
-  - "configuration files [.NET Framework], trace listeners"
-  - "app.config files, trace listeners"
-  - "levels of writing trace messages"
-  - "trace listeners, TraceSource class"
-  - "application configuration files, trace listeners"
-  - "filters, trace listeners"
-  - "TraceSource class, trace listeners"
-  - "trace listeners, creating"
-  - "trace listeners, filters"
-  - "trace listeners, initializing"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["initializing trace listeners", "configuration files [.NET Framework], trace listeners", "app.config files, trace listeners", "levels of writing trace messages", "trace listeners, TraceSource class", "application configuration files, trace listeners", "filters, trace listeners", "TraceSource class, trace listeners", "trace listeners, creating", "trace listeners, filters", "trace listeners, initializing"]
 ms.assetid: 21dc2169-947d-453a-b0e2-3dac3ba0cc9f
 caps.latest.revision: 9
 author: "mairaw"

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XmlSerializer [WCF], using"
+helpviewer_keywords: ["XmlSerializer [WCF], using"]
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
 caps.latest.revision: 26
 author: "Erikre"

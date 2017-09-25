@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "bindings, clearing"
-  - "clearing bindings"
-  - "data binding, clearing bindings"
+helpviewer_keywords: ["bindings, clearing", "clearing bindings", "data binding, clearing bindings"]
 ms.assetid: 73962a93-32a9-4bcd-9240-bcfbb239093a
 caps.latest.revision: 12
 author: dotnet-bot

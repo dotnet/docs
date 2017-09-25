@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hosted pages in browser"
-  - "pages, hosted in browser"
+helpviewer_keywords: ["hosted pages in browser", "pages, hosted in browser"]
 ms.assetid: 737e0f26-8371-49b4-9579-70879e51e1aa
 caps.latest.revision: 7
 author: dotnet-bot

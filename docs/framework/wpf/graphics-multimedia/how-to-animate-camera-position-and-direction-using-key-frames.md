@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, camera direction with key frames"
-  - "key frames, animating camera direction"
-  - "animation, camera position with key frames"
-  - "camera position, animating with key frames"
-  - "key frames, animating camera position"
-  - "camera direction, animating with key frames"
+helpviewer_keywords: ["animation, camera direction with key frames", "key frames, animating camera direction", "animation, camera position with key frames", "camera position, animating with key frames", "key frames, animating camera position", "camera direction, animating with key frames"]
 ms.assetid: 5753024e-0057-454d-947f-43ea686879c7
 caps.latest.revision: 5
 author: dotnet-bot

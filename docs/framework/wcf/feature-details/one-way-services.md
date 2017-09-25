@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation [WCF], one-way service contracts"
-  - "WCF [WCF], one-way service contracts"
-  - "service contracts [WCF], defining one-way"
+helpviewer_keywords: ["Windows Communication Foundation [WCF], one-way service contracts", "WCF [WCF], one-way service contracts", "service contracts [WCF], defining one-way"]
 ms.assetid: 19053a36-4492-45a3-bfe6-0365ee0205a3
 caps.latest.revision: 18
 author: "Erikre"

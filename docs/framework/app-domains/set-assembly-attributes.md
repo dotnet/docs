@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], attributes"
-  - "assembly binding, attributes"
-  - "assembly manifest, attributes"
+helpviewer_keywords: ["assemblies [.NET Framework], attributes", "assembly binding, attributes", "assembly manifest, attributes"]
 ms.assetid: 36a98a81-b5b5-4c19-912a-11f91eff7f4e
 caps.latest.revision: 13
 author: "rpetrusha"

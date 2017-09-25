@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "troubleshooting service applications"
-  - "services, troubleshooting"
-  - "services, debugging"
-  - "Windows NT services, troubleshooting"
-  - "troubleshooting NT services"
-  - "Windows Service applications, troubleshooting"
+helpviewer_keywords: ["troubleshooting service applications", "services, troubleshooting", "services, debugging", "Windows NT services, troubleshooting", "troubleshooting NT services", "Windows Service applications, troubleshooting"]
 ms.assetid: 45c48e2e-b97d-44bc-8896-14f328e0ce33
 caps.latest.revision: 8
 author: "ghogen"

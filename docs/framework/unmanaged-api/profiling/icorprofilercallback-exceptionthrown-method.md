@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback.ExceptionThrown"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback::ExceptionThrown"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ExceptionThrown method [.NET Framework profiling]"
-  - "ICorProfilerCallback::ExceptionThrown method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback.ExceptionThrown"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback::ExceptionThrown"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ExceptionThrown method [.NET Framework profiling]", "ICorProfilerCallback::ExceptionThrown method [.NET Framework profiling]"]
 ms.assetid: f1a23f3b-ac21-4905-8abf-8ea59f15af53
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

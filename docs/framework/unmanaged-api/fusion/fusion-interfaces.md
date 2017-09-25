@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interfaces [.NET Framework fusion]"
-  - "fusion interfaces [.NET Framework]"
-  - "unmanaged interfaces [.NET Framework], fusion"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interfaces [.NET Framework fusion]", "fusion interfaces [.NET Framework]", "unmanaged interfaces [.NET Framework], fusion"]
 ms.assetid: e2cf98b7-40c1-4f74-86c7-8a76dd9da677
 caps.latest.revision: 10
 author: "rpetrusha"

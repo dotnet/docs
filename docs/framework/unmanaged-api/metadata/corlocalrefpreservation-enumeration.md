@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorLocalRefPreservation"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorLocalRefPreservation"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorLocalRefPreservation enumeration [.NET Framework metadata]"
+api_name: ["CorLocalRefPreservation"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorLocalRefPreservation"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorLocalRefPreservation enumeration [.NET Framework metadata]"]
 ms.assetid: 44757163-1228-4213-a4c4-d4de503cc75d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

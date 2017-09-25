@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dispatcher extensions [WCF]"
+helpviewer_keywords: ["dispatcher extensions [WCF]"]
 ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
 caps.latest.revision: 16
 author: "Erikre"

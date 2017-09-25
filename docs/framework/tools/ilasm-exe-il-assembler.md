@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSIL generators"
-  - "metadata, MSIL Assembler"
-  - "MSIL Assembler"
-  - "portable executable files, MSIL Assembler"
-  - "PE files, MSIL Assembler"
-  - "MSIL"
-  - "Ilasm.exe"
-  - "verifying MSIL performance"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MSIL generators", "metadata, MSIL Assembler", "MSIL Assembler", "portable executable files, MSIL Assembler", "PE files, MSIL Assembler", "MSIL", "Ilasm.exe", "verifying MSIL performance"]
 ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
 caps.latest.revision: 41
 author: "rpetrusha"

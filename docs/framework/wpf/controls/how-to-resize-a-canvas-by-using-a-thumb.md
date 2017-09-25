@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "resizing Canvas control"
-  - "controls, Thumb"
-  - "controls, Canvas"
-  - "Thumb control"
-  - "Canvas control"
+helpviewer_keywords: ["resizing Canvas control", "controls, Thumb", "controls, Canvas", "Thumb control", "Canvas control"]
 ms.assetid: 7dc9f435-726c-4d4d-be41-eb24cfe17bef
 caps.latest.revision: 14
 author: dotnet-bot

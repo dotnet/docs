@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "creating a touch-sensitive application [WPF]"
-  - "touchscreen applications [WPF], creating"
-  - "touch-sensitive applications [WPF], creating"
-  - "creating a touchscreen application [WPF]"
+helpviewer_keywords: ["creating a touch-sensitive application [WPF]", "touchscreen applications [WPF], creating", "touch-sensitive applications [WPF], creating", "creating a touchscreen application [WPF]"]
 ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 caps.latest.revision: 9
 author: dotnet-bot

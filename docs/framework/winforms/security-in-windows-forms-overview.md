@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "code access security, Windows Forms"
-  - "permissions, Windows Forms"
-  - "Windows Forms, security"
-  - "security [Windows Forms], about security"
-  - "access control, Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["code access security, Windows Forms", "permissions, Windows Forms", "Windows Forms, security", "security [Windows Forms], about security", "access control, Windows Forms"]
 ms.assetid: 4810dc9f-ea23-4ce1-8ea1-657f0ff1d820
 caps.latest.revision: 16
 author: dotnet-bot

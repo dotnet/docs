@@ -5,25 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "corrupted CLR"
-  - "fatal execution error"
-  - "terminated processes"
-  - "unexpected terminations"
-  - "fatal errors"
-  - "MDAs (managed debugging assistants), fatal errors"
-  - "process termination"
-  - "FatalExecutionEngineError MDA"
-  - "managed debugging assistants (MDAs), fatal errors"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["corrupted CLR", "fatal execution error", "terminated processes", "unexpected terminations", "fatal errors", "MDAs (managed debugging assistants), fatal errors", "process termination", "FatalExecutionEngineError MDA", "managed debugging assistants (MDAs), fatal errors"]
 ms.assetid: 8b559e44-2393-4e4e-8160-7558d37a4a89
 caps.latest.revision: 11
 author: "mairaw"

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IDebuggerInfo"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IDebuggerInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDebuggerInfo interface [.NET Framework hosting]"
+api_name: ["IDebuggerInfo"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IDebuggerInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDebuggerInfo interface [.NET Framework hosting]"]
 ms.assetid: 9395a8a0-ffb9-475f-8da6-890999ae4bb6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

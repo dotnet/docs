@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF [WCF], extensibility"
-  - "Windows Communication Foundation [WCF], extensibility"
-  - "extensibility [WCF]"
+helpviewer_keywords: ["WCF [WCF], extensibility", "Windows Communication Foundation [WCF], extensibility", "extensibility [WCF]"]
 ms.assetid: ef56c251-d63c-4b3f-944f-b0c67bfb0f68
 caps.latest.revision: 7
 author: "Erikre"

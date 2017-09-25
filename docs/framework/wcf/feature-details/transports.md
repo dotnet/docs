@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "transports [WCF]"
-  - "WCF, transports"
-  - "Windows Communication Foundation, transports"
+helpviewer_keywords: ["transports [WCF]", "WCF, transports", "Windows Communication Foundation, transports"]
 ms.assetid: 005c894b-af70-48aa-a1c1-c99338083c27
 caps.latest.revision: 18
 author: "Erikre"

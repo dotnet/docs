@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, ControlTemplates"
-  - "ControlTemplates, animating within"
+helpviewer_keywords: ["animation, ControlTemplates", "ControlTemplates, animating within"]
 ms.assetid: 97abb5d9-4dc7-4085-a011-54bd8bcb497b
 caps.latest.revision: 6
 author: dotnet-bot

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "UserControl class, creating composite controls"
-  - "user controls [Windows Forms], creating"
-  - "user controls [Windows Forms], inheriting from"
-  - "composite controls, creating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["UserControl class, creating composite controls", "user controls [Windows Forms], creating", "user controls [Windows Forms], inheriting from", "composite controls, creating"]
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Label control [Windows Forms]"
-  - "links, adding to Windows Forms"
-  - "Windows Forms, adding links"
-  - "Web page link control"
-  - "LinkLabel control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Label control [Windows Forms]", "links, adding to Windows Forms", "Windows Forms, adding links", "Web page link control", "LinkLabel control [Windows Forms]"]
 ms.assetid: af1fd04e-e126-4fd7-9a4e-13b49010c5ca
 caps.latest.revision: 12
 author: dotnet-bot

@@ -7,20 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "formatting [.NET Framework], network tracing"
-  - "network tracing, configuring"
-  - "level attribute"
-  - "app.config files, network tracing"
-  - "configuration files [.NET Framework], network tracing"
-  - "protocol-level trace output"
-  - "application configuration files, network tracing"
-  - "sockets, trace output"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["formatting [.NET Framework], network tracing", "network tracing, configuring", "level attribute", "app.config files, network tracing", "configuration files [.NET Framework], network tracing", "protocol-level trace output", "application configuration files, network tracing", "sockets, trace output"]
 ms.assetid: 5ef9fe4b-8d3d-490e-9259-1d014b2181af
 caps.latest.revision: 23
 author: "mcleblanc"

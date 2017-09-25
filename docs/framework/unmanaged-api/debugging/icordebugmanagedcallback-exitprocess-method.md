@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.ExitProcess"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::ExitProcess"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ExitProcess method, ICorDebugManagedCallback interface [.NET Framework debugging]"
-  - "ICorDebugManagedCallback::ExitProcess method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.ExitProcess"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::ExitProcess"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ExitProcess method, ICorDebugManagedCallback interface [.NET Framework debugging]", "ICorDebugManagedCallback::ExitProcess method [.NET Framework debugging]"]
 ms.assetid: 63a7d47a-0d54-4e29-9767-9f09feaa38b7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

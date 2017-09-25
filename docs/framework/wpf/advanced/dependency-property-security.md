@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "wrappers, access"
-  - "wrappers, security"
-  - "dependency properties, security"
-  - "security, wrappers"
-  - "validation, dependency properties"
-  - "dependency properties, access"
-  - "security, dependency properties"
+helpviewer_keywords: ["wrappers, access", "wrappers, security", "dependency properties, security", "security, wrappers", "validation, dependency properties", "dependency properties, access", "security, dependency properties"]
 ms.assetid: d10150ec-90c5-4571-8d35-84bafa2429a4
 caps.latest.revision: 8
 author: dotnet-bot

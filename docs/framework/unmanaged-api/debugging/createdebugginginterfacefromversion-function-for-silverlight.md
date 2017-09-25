@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CreateDebuggingInterfaceFromVersion"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateDebuggingInterfaceFromVersion function"
-  - "debugging API [Silverlight]"
-  - "Silverlight, debugging"
+f1_keywords: ["CreateDebuggingInterfaceFromVersion"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateDebuggingInterfaceFromVersion function", "debugging API [Silverlight]", "Silverlight, debugging"]
 ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 caps.latest.revision: 4
 author: "rpetrusha"

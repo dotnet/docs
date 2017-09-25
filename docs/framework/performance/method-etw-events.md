@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ETW, method events (CLR)"
-  - "method events [.NET Framework]"
+helpviewer_keywords: ["ETW, method events (CLR)", "method events [.NET Framework]"]
 ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
 caps.latest.revision: 9
 author: "mairaw"

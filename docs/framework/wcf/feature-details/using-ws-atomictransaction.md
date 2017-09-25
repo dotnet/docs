@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WS-AT protocol [WCF]"
+helpviewer_keywords: ["WS-AT protocol [WCF]"]
 ms.assetid: 04a4c200-0af0-4c5d-a3d9-87cb7339e054
 caps.latest.revision: 14
 author: "Erikre"

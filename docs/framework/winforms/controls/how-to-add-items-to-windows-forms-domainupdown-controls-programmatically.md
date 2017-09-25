@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "spin button control, adding items"
-  - "DomainUpDown control [Windows Forms], adding items to"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["spin button control, adding items", "DomainUpDown control [Windows Forms], adding items to"]
 ms.assetid: fd31d314-33eb-4181-90f8-d32ed0c4e072
 caps.latest.revision: 14
 author: dotnet-bot

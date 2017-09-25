@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF applications, deployment"
-  - "deployment [WPF], applications"
+helpviewer_keywords: ["WPF applications, deployment", "deployment [WPF], applications"]
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 caps.latest.revision: 27
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "mapping properties"
-  - "WindowsFormsHost element property mapping"
+helpviewer_keywords: ["mapping properties", "WindowsFormsHost element property mapping"]
 ms.assetid: 74809167-bf8e-48b7-a2e7-b4ea08bc7d8c
 caps.latest.revision: 21
 author: dotnet-bot

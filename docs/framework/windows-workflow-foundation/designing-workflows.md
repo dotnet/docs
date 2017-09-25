@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], designing workflows"
+helpviewer_keywords: ["programming [WF], designing workflows"]
 ms.assetid: 41f727b5-b142-4c1b-b046-492b96135ae6
 caps.latest.revision: 15
 author: "Erikre"

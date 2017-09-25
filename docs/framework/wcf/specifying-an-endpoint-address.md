@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "endpoints [WCF], addressing"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["endpoints [WCF], addressing"]
 ms.assetid: ac24f5ad-9558-4298-b168-c473c68e819b
 caps.latest.revision: 41
 author: "Erikre"

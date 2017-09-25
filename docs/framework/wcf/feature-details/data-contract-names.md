@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "data contracts [WCF], naming"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["data contracts [WCF], naming"]
 ms.assetid: 31f87e6c-247b-48f5-8e94-b9e1e33d8d09
 caps.latest.revision: 27
 author: "Erikre"

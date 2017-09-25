@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "validating data, Windows Forms"
-  - "data [Windows Forms], validation"
-  - "DataGridView control [Windows Forms], data validation"
-  - "data grids, validating data"
-  - "data validation, Windows Forms"
-  - "walkthroughs [Windows Forms], DataGridView control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["validating data, Windows Forms", "data [Windows Forms], validation", "DataGridView control [Windows Forms], data validation", "data grids, validating data", "data validation, Windows Forms", "walkthroughs [Windows Forms], DataGridView control"]
 ms.assetid: a4f1d015-2969-430c-8ea2-b612d179c290
 caps.latest.revision: 22
 author: dotnet-bot

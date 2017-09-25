@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "GCCpuGroup element"
-  - "<GCCpuGroup> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["GCCpuGroup element", "<GCCpuGroup> element"]
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
 caps.latest.revision: 9
 author: "rpetrusha"

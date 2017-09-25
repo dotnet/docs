@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "inheritance, forms"
-  - "Inheritance Picker dialog box"
-  - "inherited forms, creating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["inheritance, forms", "Inheritance Picker dialog box", "inherited forms, creating"]
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "image encoders, using"
-  - "image decoders, using"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["image encoders, using", "image decoders, using"]
 ms.assetid: 0e838ea1-4e7e-4334-b882-ab25df607b8b
 caps.latest.revision: 7
 author: dotnet-bot

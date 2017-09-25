@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "native compilation"
-  - ".NET and native code"
-  - "compilation with .NET Native"
-  - ".NET Native"
-  - "C# and native compilation"
+helpviewer_keywords: ["native compilation", ".NET and native code", "compilation with .NET Native", ".NET Native", "C# and native compilation"]
 ms.assetid: 47cd5648-9469-4b1d-804c-43cc04384045
 caps.latest.revision: 27
 author: "rpetrusha"

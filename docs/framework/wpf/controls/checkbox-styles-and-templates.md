@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "states [WPF], CheckBox"
-  - "templates [WPF], CheckBox"
-  - "parts [WPF], CheckBox"
-  - "ControlTemplate [WPF], CheckBox"
-  - "CheckBox [WPF], styles and templates"
-  - "styles [WPF], CheckBox"
+helpviewer_keywords: ["states [WPF], CheckBox", "templates [WPF], CheckBox", "parts [WPF], CheckBox", "ControlTemplate [WPF], CheckBox", "CheckBox [WPF], styles and templates", "styles [WPF], CheckBox"]
 ms.assetid: bfdaec96-d101-4d3d-864d-c27e6b621d03
 caps.latest.revision: 18
 author: dotnet-bot

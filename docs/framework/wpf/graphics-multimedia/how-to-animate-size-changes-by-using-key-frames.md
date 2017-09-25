@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "key frames, animating size changes with"
-  - "animation, size changes with key frames"
-  - "size changes, animating with key frames"
+helpviewer_keywords: ["key frames, animating size changes with", "animation, size changes with key frames", "size changes, animating with key frames"]
 ms.assetid: 86bd2950-d4c9-4ec4-aa8d-7dc3ccadded4
 caps.latest.revision: 10
 author: dotnet-bot

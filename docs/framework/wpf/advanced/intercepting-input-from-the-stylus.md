@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "architecture, System.Windows.Input.StylusPlugIns"
-  - "StylusPlugIns architecture"
-  - "InkCanvas, adding plug-ins to"
-  - "System.Windows.Input.StylusPlugIns architecture"
-  - "plug-ins, stylus"
+helpviewer_keywords: ["architecture, "StylusPlugIns architecture", "InkCanvas, adding plug-ins to", "System.Windows.Input.StylusPlugIns architecture", "plug-ins, stylus"]
 ms.assetid: 791bb2f0-4e5c-4569-ac3c-211996808d44
 caps.latest.revision: 11
 author: dotnet-bot

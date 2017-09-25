@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "calendar controls"
-  - "MonthCalendar control [Windows Forms]"
-  - "dates, controls"
-  - "calendars"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["calendar controls", "MonthCalendar control [Windows Forms]", "dates, controls", "calendars"]
 ms.assetid: 051c6518-e0ca-426b-855c-f9bf70972970
 caps.latest.revision: 11
 author: dotnet-bot

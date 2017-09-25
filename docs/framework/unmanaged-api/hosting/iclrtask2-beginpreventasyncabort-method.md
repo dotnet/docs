@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask2.BeginPreventAsyncAbort"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask2::BeginPreventAsyncAbort"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRTask2::BeginPreventAsyncAbort method [.NET Framework hosting]"
-  - "BeginPreventAsyncAbort method [.NET Framework hosting]"
+api_name: ["ICLRTask2.BeginPreventAsyncAbort"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask2::BeginPreventAsyncAbort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRTask2::BeginPreventAsyncAbort method [.NET Framework hosting]", "BeginPreventAsyncAbort method [.NET Framework hosting]"]
 ms.assetid: 75754c2f-38c7-4707-85fe-559db4542729
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

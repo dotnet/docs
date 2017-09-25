@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Button controls [WPF], creating"
+helpviewer_keywords: ["Button controls [WPF], creating"]
 ms.assetid: 607a193c-4098-4dd8-8dc0-51256cec2020
 caps.latest.revision: 13
 author: dotnet-bot

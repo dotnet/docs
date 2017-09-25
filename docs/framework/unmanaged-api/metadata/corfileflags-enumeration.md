@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorFileFlags"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorFileFlags"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorFileFlags enumeration [.NET Framework metadata]"
+api_name: ["CorFileFlags"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorFileFlags"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorFileFlags enumeration [.NET Framework metadata]"]
 ms.assetid: d16703fd-518f-412e-92cb-74433d11032e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

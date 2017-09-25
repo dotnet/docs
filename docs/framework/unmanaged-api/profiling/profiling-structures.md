@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "profiling structures [.NET Framework]"
-  - "unmanaged structures [.NET Framework], profiling"
-  - "structures [.NET Framework profiling]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["profiling structures [.NET Framework]", "unmanaged structures [.NET Framework], profiling", "structures [.NET Framework profiling]"]
 ms.assetid: 750385f2-f365-41b1-939f-ca2f2ff9b466
 caps.latest.revision: 27
 author: "mairaw"

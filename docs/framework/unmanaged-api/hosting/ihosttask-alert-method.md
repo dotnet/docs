@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTask.Alert"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTask::Alert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostTask::Alert method [.NET Framework hosting]"
-  - "Alert method, IHostTask interface [.NET Framework hosting]"
+api_name: ["IHostTask.Alert"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTask::Alert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostTask::Alert method [.NET Framework hosting]", "Alert method, IHostTask interface [.NET Framework hosting]"]
 ms.assetid: 5245d4b5-b6c3-48df-9cb9-8caf059f43fb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

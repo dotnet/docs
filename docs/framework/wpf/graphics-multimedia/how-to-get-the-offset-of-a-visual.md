@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "getting offset values from visual objects"
-  - "offset values, retrieving from visual objects"
-  - "visual objects, retrieving offset values from"
-  - "retrieving offset values from visual objects"
+helpviewer_keywords: ["getting offset values from visual objects", "offset values, retrieving from visual objects", "visual objects, retrieving offset values from", "retrieving offset values from visual objects"]
 ms.assetid: 889a1dd6-1b11-445a-b351-fbb04c53ee34
 caps.latest.revision: 6
 author: dotnet-bot

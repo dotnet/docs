@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "interoperation with unmanaged code, HRESULTs"
-  - "exceptions, HRESULTs"
-  - "interoperation with unmanaged code, exceptions"
-  - "HRESULTs"
-  - "COM interop, HRESULTs"
-  - "COM interop, exceptions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["interoperation with unmanaged code, HRESULTs", "exceptions, HRESULTs", "interoperation with unmanaged code, exceptions", "HRESULTs", "COM interop, HRESULTs", "COM interop, exceptions"]
 ms.assetid: 610b364b-2761-429d-9c4a-afbc3e66f1b9
 caps.latest.revision: 8
 author: "rpetrusha"

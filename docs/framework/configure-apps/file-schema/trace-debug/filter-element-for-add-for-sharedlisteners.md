@@ -5,23 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add/filter"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "filter element for <add> for <sharedListeners>"
-  - "initializeData attribute"
-  - "<filter> element for <add> for <sharedListeners>"
-  - "filters, trace listeners"
-  - "trace listeners, filters"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add/filter"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["filter element for <add> for <sharedListeners>", "initializeData attribute", "<filter> element for <add> for <sharedListeners>", "filters, trace listeners", "trace listeners, filters"]
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
 caps.latest.revision: 7
 author: "mcleblanc"

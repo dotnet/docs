@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids"
-  - "datasets [Windows Forms], user interface"
-  - "DataGrid control [Windows Forms]"
-  - "datasets [Windows Forms], displaying in DataGrid control"
-  - "displaying data, on forms"
-  - "data [Windows Forms], displaying on Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids", "datasets [Windows Forms], user interface", "DataGrid control [Windows Forms]", "datasets [Windows Forms], displaying in DataGrid control", "displaying data, on forms", "data [Windows Forms], displaying on Windows Forms"]
 ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
 caps.latest.revision: 20
 author: dotnet-bot

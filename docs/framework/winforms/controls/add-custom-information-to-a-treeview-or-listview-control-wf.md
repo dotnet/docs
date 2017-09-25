@@ -5,20 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ListItem"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], TreeView control"
-  - "Tag property"
-  - "examples [Windows Forms], ListView control"
-  - "ListView control [Windows Forms], adding custom information"
-  - "TreeView control [Windows Forms], adding custom information"
+f1_keywords: ["ListItem"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], TreeView control", "examples [Windows Forms], ListView control", "ListView control [Windows Forms], adding custom information", "TreeView control [Windows Forms], adding custom information"]
 ms.assetid: 68be11de-1d5b-430e-901f-cfbe48d14b19
 caps.latest.revision: 13
 author: dotnet-bot

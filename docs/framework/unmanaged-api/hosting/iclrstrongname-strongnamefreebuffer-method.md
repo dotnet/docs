@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName.StrongNameFreeBuffer"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRStrongName::StrongNameFreeBuffer"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameFreeBuffer method, ICLRStrongName interface [.NET Framework hosting]"
-  - "ICLRStrongName::StrongNameFreeBuffer method [.NET Framework hosting]"
+api_name: ["ICLRStrongName.StrongNameFreeBuffer"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRStrongName::StrongNameFreeBuffer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameFreeBuffer method, ICLRStrongName interface [.NET Framework hosting]", "ICLRStrongName::StrongNameFreeBuffer method [.NET Framework hosting]"]
 ms.assetid: 6148c508-bd1d-4a37-85c3-06ecb09cc857
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

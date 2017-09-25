@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Bezier splines, drawing"
-  - "drawing, Bezier splines"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Bezier splines, drawing", "drawing, Bezier splines"]
 ms.assetid: f4f3fe30-f0a6-4743-ac91-11310cebea9f
 caps.latest.revision: 15
 author: dotnet-bot

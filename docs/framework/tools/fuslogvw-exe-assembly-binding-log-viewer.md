@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "failed assembly binds"
-  - "Fuslogvw.exe"
-  - "displaying failed assembly bind details"
-  - "assemblies [.NET Framework], failed assembly binds"
-  - "locating assemblies"
-  - "Assembly Binding Log Viewer"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["failed assembly binds", "Fuslogvw.exe", "displaying failed assembly bind details", "assemblies [.NET Framework], failed assembly binds", "locating assemblies", "Assembly Binding Log Viewer"]
 ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
 caps.latest.revision: 35
 author: "rpetrusha"

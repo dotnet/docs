@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [.NET Framework], platform invoke"
-  - "unmanaged functions"
-  - "COM interop, platform invoke"
-  - "platform invoke, examples"
-  - "interoperation with unmanaged code, platform invoke"
-  - "DLL functions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["examples [.NET Framework], platform invoke", "unmanaged functions", "COM interop, platform invoke", "platform invoke, examples", "interoperation with unmanaged code, platform invoke", "DLL functions"]
 ms.assetid: 15926806-f0b7-487e-93a6-4e9367ec689f
 caps.latest.revision: 10
 author: "rpetrusha"

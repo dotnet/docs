@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "profiling [.NET Framework], using the unmanaged API"
-  - "native API reference [.NET Framework], profiling"
-  - "unmanaged API reference [.NET Framework], profiling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["profiling [.NET Framework], using the unmanaged API", "native API reference [.NET Framework], profiling", "unmanaged API reference [.NET Framework], profiling"]
 ms.assetid: 14c68e84-657e-49c2-aa8b-4978dbaf4454
 caps.latest.revision: 20
 author: "mairaw"

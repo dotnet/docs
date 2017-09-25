@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedDocument.GetSourceRange"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedDocument::GetSourceRange"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedDocument::GetSourceRange method [.NET Framework debugging]"
-  - "GetSourceRange method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedDocument.GetSourceRange"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedDocument::GetSourceRange"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedDocument::GetSourceRange method [.NET Framework debugging]", "GetSourceRange method [.NET Framework debugging]"]
 ms.assetid: 20fefee7-1040-41ba-93dc-bd42f68b90c2
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

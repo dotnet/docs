@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hosting Windows Forms control in WPF"
+helpviewer_keywords: ["hosting Windows Forms control in WPF"]
 ms.assetid: 1aef42cb-4cfb-44b4-9a7a-c02632d3d9c7
 caps.latest.revision: 34
 author: dotnet-bot

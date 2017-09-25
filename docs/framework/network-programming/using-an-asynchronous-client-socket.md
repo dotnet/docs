@@ -7,23 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "application protocols, sockets"
-  - "sending data, sockets"
-  - "data requests, sockets"
-  - "asynchronous client sockets"
-  - "Socket class, asynchronous client sockets"
-  - "requesting data from Internet, sockets"
-  - "sockets, asynchronous client sockets"
-  - "receiving data, sockets"
-  - "protocols, sockets"
-  - "Internet, sockets"
-  - "client sockets"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["application protocols, sockets", "sending data, sockets", "data requests, sockets", "asynchronous client sockets", "Socket class, asynchronous client sockets", "requesting data from Internet, sockets", "sockets, asynchronous client sockets", "receiving data, sockets", "protocols, sockets", "Internet, sockets", "client sockets"]
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
 caps.latest.revision: 14
 author: "mcleblanc"

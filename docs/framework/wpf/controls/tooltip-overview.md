@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ToolTip control, about ToolTip control"
-  - "controls, ToolTip"
+helpviewer_keywords: ["ToolTip control, about ToolTip control", "controls, ToolTip"]
 ms.assetid: f06c1603-e9cb-4809-8a62-234607fc52f7
 caps.latest.revision: 22
 author: dotnet-bot

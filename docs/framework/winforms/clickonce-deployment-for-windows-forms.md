@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ClickOnce deployment [Windows Forms]"
-  - "Windows Forms, ClickOnce deployment"
-  - "walkthroughs [Windows Forms], ClickOnce deployment"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ClickOnce deployment [Windows Forms]", "Windows Forms, ClickOnce deployment", "walkthroughs [Windows Forms], ClickOnce deployment"]
 ms.assetid: 1451fce9-1965-4a03-b4d3-831b5fe4ad66
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "enforceFIPSPolicy element"
-  - "FIPS"
-  - "<enforceFIPSPolicy> element"
-  - "Federal Information Processing Standards (FIPS)"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["enforceFIPSPolicy element", "FIPS", "<enforceFIPSPolicy> element", "Federal Information Processing Standards (FIPS)"]
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
 caps.latest.revision: 7
 author: "rpetrusha"

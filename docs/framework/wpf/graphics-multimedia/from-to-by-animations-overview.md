@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, From/to/by"
-  - "From/to/by animation"
+helpviewer_keywords: ["animation, From/to/by", "From/to/by animation"]
 ms.assetid: 516fce0a-e7f8-49b8-b018-53b3d409a8a3
 caps.latest.revision: 17
 author: dotnet-bot

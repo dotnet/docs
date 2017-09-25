@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.CreateAppDomain"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::CreateAppDomain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateAppDomain method [.NET Framework debugging]"
-  - "ICorDebugManagedCallback::CreateAppDomain method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.CreateAppDomain"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::CreateAppDomain"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateAppDomain method [.NET Framework debugging]", "ICorDebugManagedCallback::CreateAppDomain method [.NET Framework debugging]"]
 ms.assetid: 48d410d7-6749-4125-a8fd-f9562c7088e9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

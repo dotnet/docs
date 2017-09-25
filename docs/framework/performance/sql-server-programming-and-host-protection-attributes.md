@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "SQL Server [.NET Framework]"
-  - "permission sets, SQL Server"
-  - "SQL Server Programming and Host Protection Attributes"
-  - "managed code, SQL Server"
-  - "reliability [.NET Framework]"
-  - "writing reliable code"
-  - "hosts, reliability"
-  - "host protection attributes"
-  - "HostProtectionAttribute class, reliability"
+helpviewer_keywords: ["SQL Server [.NET Framework]", "permission sets, SQL Server", "SQL Server Programming and Host Protection Attributes", "managed code, SQL Server", "reliability [.NET Framework]", "writing reliable code", "hosts, reliability", "host protection attributes", "HostProtectionAttribute class, reliability"]
 ms.assetid: 7dfa36b4-e773-4c75-a3ff-ff1af3ce4c4f
 caps.latest.revision: 13
 author: "mairaw"

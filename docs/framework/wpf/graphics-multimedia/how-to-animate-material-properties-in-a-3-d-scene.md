@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Material properties, animating in 3-D scenes"
-  - "animation, Material properties in 3-D scenes"
-  - "3-D scenes, animating Material properties"
+helpviewer_keywords: ["Material properties, animating in 3-D scenes", "animation, Material properties in 3-D scenes", "3-D scenes, animating Material properties"]
 ms.assetid: 229fd6eb-7401-4992-b0c9-8b28de230c0f
 caps.latest.revision: 9
 author: dotnet-bot

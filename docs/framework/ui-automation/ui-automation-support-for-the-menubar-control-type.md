@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, Menu Bar control type"
-  - "control types, Menu Bar"
-  - "Menu Bar control type"
+helpviewer_keywords: ["UI Automation, Menu Bar control type", "control types, Menu Bar", "Menu Bar control type"]
 ms.assetid: c1202b21-c1f0-4560-853c-7b99bd73ad97
 caps.latest.revision: 22
 author: "Xansky"

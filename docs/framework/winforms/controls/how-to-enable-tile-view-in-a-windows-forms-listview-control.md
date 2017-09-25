@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "tile view feature"
-  - "tiling"
-  - "Windows Forms, controls"
-  - "ListView control [Windows Forms], tile view"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["tile view feature", "tiling", "Windows Forms, controls", "ListView control [Windows Forms], tile view"]
 ms.assetid: c20e67a3-2d94-413d-9fcf-ecbd0fe251da
 caps.latest.revision: 23
 author: dotnet-bot

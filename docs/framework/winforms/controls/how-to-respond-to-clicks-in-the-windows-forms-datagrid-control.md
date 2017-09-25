@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Click event, monitoring in DataGrid controls"
-  - "DataGrid control [Windows Forms], examples"
-  - "DataGrid control [Windows Forms], returning clicked cell value"
-  - "cells, location in DataGrid"
-  - "examples [Windows Forms], DataGrid control"
-  - "DataGrid control [Windows Forms], click events"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Click event, monitoring in DataGrid controls", "DataGrid control [Windows Forms], examples", "DataGrid control [Windows Forms], returning clicked cell value", "cells, location in DataGrid", "examples [Windows Forms], DataGrid control", "DataGrid control [Windows Forms], click events"]
 ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
 caps.latest.revision: 11
 author: dotnet-bot

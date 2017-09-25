@@ -5,23 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "deploying applications [.NET Framework], resources"
-  - "resource files, deploying"
-  - "resource files, packaging"
-  - "application resources, packaging"
-  - "localization"
-  - "versioning satellite assemblies"
-  - "retrieving localized resources"
-  - "application resources, deploying"
-  - "packaging application resources"
-  - "versioning resources"
-  - "translating resources into languages"
-  - "localizing resources"
+helpviewer_keywords: ["deploying applications [.NET Framework], resources", "resource files, deploying", "resource files, packaging", "application resources, packaging", "localization", "versioning satellite assemblies", "retrieving localized resources", "application resources, deploying", "packaging application resources", "versioning resources", "translating resources into languages", "localizing resources"]
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
 caps.latest.revision: 22
 author: "rpetrusha"

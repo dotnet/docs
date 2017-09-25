@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ProgressBar"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ProgressBar control [Windows Forms], about ProgressBar control"
-  - "progress controls, about progress controls"
+f1_keywords: ["ProgressBar"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ProgressBar control [Windows Forms], about ProgressBar control", "progress controls, about progress controls"]
 ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
 caps.latest.revision: 13
 author: dotnet-bot

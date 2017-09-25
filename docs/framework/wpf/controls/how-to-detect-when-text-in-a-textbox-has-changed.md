@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TextBox control, detecting text change"
-  - "text change, detecting"
-  - "detecting text change"
+helpviewer_keywords: ["TextBox control, detecting text change", "text change, detecting", "detecting text change"]
 ms.assetid: 1c39ee14-e37f-49fb-a0d1-a9824ca13584
 caps.latest.revision: 10
 author: dotnet-bot

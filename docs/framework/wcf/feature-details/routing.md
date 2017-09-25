@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "routing [WCF]"
-  - "WCF [WCF], routing"
-  - "Windows communication Foundation [WCF], routing"
+helpviewer_keywords: ["routing [WCF]", "WCF [WCF], routing", "Windows communication Foundation [WCF], routing"]
 ms.assetid: bd56516c-420d-4c4e-97f9-f72d28d149a9
 caps.latest.revision: 7
 author: "wadepickett"

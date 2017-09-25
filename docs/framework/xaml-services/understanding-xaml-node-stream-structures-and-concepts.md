@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML node streams [XAML Services]"
-  - "nodes [XAML Services], XAML node stream"
-  - "XAML [XAML Services], XAML node streams"
+helpviewer_keywords: ["XAML node streams [XAML Services]", "nodes [XAML Services], XAML node stream", "XAML [XAML Services], XAML node streams"]
 ms.assetid: 7c11abec-1075-474c-9d9b-778e5dab21c3
 caps.latest.revision: 14
 author: "wadepickett"

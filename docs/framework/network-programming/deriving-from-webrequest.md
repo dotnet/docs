@@ -7,19 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "WebRequest class, pluggable protocols"
-  - "protocol-specific request handler"
-  - "sending data, pluggable protocols"
-  - "pluggable protocols, class criteria"
-  - "Internet, pluggable protocols"
-  - "receiving data, pluggable protocols"
-  - "protocols, pluggable"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["WebRequest class, pluggable protocols", "protocol-specific request handler", "sending data, pluggable protocols", "pluggable protocols, class criteria", "Internet, pluggable protocols", "receiving data, pluggable protocols", "protocols, pluggable"]
 ms.assetid: 9810c177-973e-43d7-823c-14960bd625ea
 caps.latest.revision: 9
 author: "mcleblanc"

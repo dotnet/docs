@@ -5,25 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "role-based security [.NET Framework], client application services"
-  - "client application services"
-  - "credentials [.NET Framework]"
-  - "Windows-based applications, client application services"
-  - "application settings, client application services"
-  - "profiles [ASP.NET], client application services"
-  - "logins [client application services]"
-  - "sharing information and functionality [client application services]"
-  - "Web settings [client application services]"
-  - "authentication [ASP.NET], client application services"
-  - "ASP.NET services, client application services"
-  - "client applications, ASP.NET services"
-  - "roles [.NET Framework], client application services"
-  - "client application services, about client application services"
+helpviewer_keywords: ["role-based security [.NET Framework], client application services", "client application services", "credentials [.NET Framework]", "Windows-based applications, client application services", "application settings, client application services", "profiles [ASP.NET], client application services", "logins [client application services]", "sharing information and functionality [client application services]", "Web settings [client application services]", "authentication [ASP.NET], client application services", "ASP.NET services, client application services", "client applications, ASP.NET services", "roles [.NET Framework], client application services", "client application services, about client application services"]
 ms.assetid: 1487d8df-089e-4f21-abfb-a791a652b58e
 caps.latest.revision: 14
 author: dotnet-bot

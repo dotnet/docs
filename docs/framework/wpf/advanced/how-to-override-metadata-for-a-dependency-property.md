@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "metadata, overriding for dependency properties"
-  - "dependency properties, overriding metadata for"
-  - "overriding metadata for dependency properties"
+helpviewer_keywords: ["metadata, overriding for dependency properties", "dependency properties, overriding metadata for", "overriding metadata for dependency properties"]
 ms.assetid: f90f026e-60d8-428a-933d-edf0dba4441f
 caps.latest.revision: 15
 author: dotnet-bot

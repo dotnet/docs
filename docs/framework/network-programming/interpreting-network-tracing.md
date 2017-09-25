@@ -7,18 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "TraceMode attribute"
-  - "hexidecimal data, network tracing output"
-  - "network tracing, analyzing"
-  - "protocolonly"
-  - "text, network tracing output"
-  - "includehex"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["TraceMode attribute", "hexidecimal data, network tracing output", "network tracing, analyzing", "protocolonly", "text, network tracing output", "includehex"]
 ms.assetid: ad22b4b8-00af-4778-9cca-cb609ce1f8ff
 caps.latest.revision: 9
 author: "mcleblanc"

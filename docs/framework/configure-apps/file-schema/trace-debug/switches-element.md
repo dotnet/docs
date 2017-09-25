@@ -5,22 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#switches"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<switches> element"
-  - "switches element"
-  - "trace switches, <switches> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches", "http://schemas.microsoft.com/.NetConfiguration/v2.0#switches"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<switches> element", "switches element", "trace switches, <switches> element"]
 ms.assetid: 4cf36786-b89a-40e2-a0f1-86bb9b783343
 caps.latest.revision: 11
 author: "mcleblanc"

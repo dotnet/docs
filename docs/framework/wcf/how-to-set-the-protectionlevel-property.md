@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF, security"
-  - "ProtectionLevel property"
+helpviewer_keywords: ["WCF, security", "ProtectionLevel property"]
 ms.assetid: 3d4e8f80-0f9e-4a26-9899-beb6584e78df
 caps.latest.revision: 10
 author: "Erikre"

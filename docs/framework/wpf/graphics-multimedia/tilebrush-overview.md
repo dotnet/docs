@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TileBrush"
-  - "brushes, TileBrush"
+helpviewer_keywords: ["TileBrush", "brushes, TileBrush"]
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
 caps.latest.revision: 16
 author: dotnet-bot

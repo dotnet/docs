@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, ActiveX controls"
-  - "ActiveX controls [Windows Forms], hosting"
-  - "Windows Forms, ActiveX controls"
-  - "Windows Forms, hosting ActiveX controls"
-  - "ActiveX controls [Windows Forms], adding"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, ActiveX controls", "ActiveX controls [Windows Forms], hosting", "Windows Forms, ActiveX controls", "Windows Forms, hosting ActiveX controls", "ActiveX controls [Windows Forms], adding"]
 ms.assetid: 2509302d-a74e-484f-9890-2acdbfa67a68
 caps.latest.revision: 10
 author: dotnet-bot

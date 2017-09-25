@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "impersonation [WCF]"
-  - "delegation [WCF]"
+helpviewer_keywords: ["impersonation [WCF]", "delegation [WCF]"]
 ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
 caps.latest.revision: 40
 author: "Erikre"

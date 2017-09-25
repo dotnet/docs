@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "configuring apps to support .NET Framework 4"
-  - ".NET Framework 4, configuring apps"
-  - ".NET Framework 4.5, configuring apps"
+helpviewer_keywords: ["configuring apps to support .NET Framework 4", ".NET Framework 4, configuring apps", ".NET Framework 4.5, configuring apps"]
 ms.assetid: 63c6b9a8-0088-4077-9aa3-521ab7290f79
 caps.latest.revision: 14
 author: "mairaw"

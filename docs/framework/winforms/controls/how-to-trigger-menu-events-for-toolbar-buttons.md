@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], toolbars"
-  - "ToolBar control [Windows Forms], click event handlers"
-  - "ToolBar control [Windows Forms], coding button click events"
-  - "toolbars [Windows Forms], click event handlers"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], toolbars", "ToolBar control [Windows Forms], click event handlers", "ToolBar control [Windows Forms], coding button click events", "toolbars [Windows Forms], click event handlers"]
 ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
 caps.latest.revision: 16
 author: dotnet-bot

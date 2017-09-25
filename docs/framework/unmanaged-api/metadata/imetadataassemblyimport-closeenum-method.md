@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataAssemblyImport.CloseEnum"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataAssemblyImport::CloseEnum"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CloseEnum method, IMetaDataAssemblyImport interface [.NET Framework metadata]"
-  - "IMetaDataAssemblyImport::CloseEnum method [.NET Framework metadata]"
+api_name: ["IMetaDataAssemblyImport.CloseEnum"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataAssemblyImport::CloseEnum"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CloseEnum method, IMetaDataAssemblyImport interface [.NET Framework metadata]", "IMetaDataAssemblyImport::CloseEnum method [.NET Framework metadata]"]
 ms.assetid: c9df4087-12b3-46d9-b075-9067dd7805df
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

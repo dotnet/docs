@@ -7,17 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Internet, asynchronous access"
-  - "Networking"
-  - "asynchronous requests, Internet resources"
-  - "Network Resources"
-  - "WebRequest class, asynchronous access"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Internet, asynchronous access", "Networking", "asynchronous requests, Internet resources", "Network Resources", "WebRequest class, asynchronous access"]
 ms.assetid: 735d3fce-f80c-437f-b02c-5c47f5739674
 caps.latest.revision: 12
 author: "mcleblanc"

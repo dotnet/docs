@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "styles [WPF], ListBox"
-  - "templates [WPF], ListBox"
-  - "states [WPF], ListBox"
-  - "ControlTemplate [WPF], ListBox"
-  - "parts [WPF], ListBox"
-  - "ListBox [WPF], styles and templates"
+helpviewer_keywords: ["styles [WPF], ListBox", "templates [WPF], ListBox", "states [WPF], ListBox", "ControlTemplate [WPF], ListBox", "parts [WPF], ListBox", "ListBox [WPF], styles and templates"]
 ms.assetid: fc5764cb-c27b-495b-88d4-d969a8213ccb
 caps.latest.revision: 22
 author: dotnet-bot

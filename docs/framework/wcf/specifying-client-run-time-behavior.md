@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "behaviors [WCF], system-provided client"
+helpviewer_keywords: ["behaviors [WCF], system-provided client"]
 ms.assetid: d16d3405-be70-4edb-8f62-b5f614ddeca5
 caps.latest.revision: 8
 author: "Erikre"

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], data entry"
-  - "data entry, DataGridView control"
-  - "data grids, data entry"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], data entry", "data entry, DataGridView control", "data grids, data entry"]
 ms.assetid: 4a6d4676-d4e7-4b0e-9c22-50ce65ffe0d6
 caps.latest.revision: 11
 author: dotnet-bot

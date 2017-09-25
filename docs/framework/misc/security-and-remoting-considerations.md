@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "code security, remoting"
-  - "remoting, security"
-  - "security [.NET Framework], remoting"
-  - "secure coding, remoting"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["code security, remoting", "remoting, security", "security [.NET Framework], remoting", "secure coding, remoting"]
 ms.assetid: 125d2ab8-55a4-4e5f-af36-a7d401a37ab0
 caps.latest.revision: 10
 author: "mairaw"

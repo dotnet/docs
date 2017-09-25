@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "parts [WPF], ToolTip"
-  - "styles [WPF], ToolTip"
-  - "states [WPF], ToolTip"
-  - "ToolTip [WPF], styles and templates"
-  - "ControlTemplate [WPF], ToolTip"
-  - "templates [WPF], ToolTip"
+helpviewer_keywords: ["parts [WPF], ToolTip", "styles [WPF], ToolTip", "states [WPF], ToolTip", "ToolTip [WPF], styles and templates", "ControlTemplate [WPF], ToolTip", "templates [WPF], ToolTip"]
 ms.assetid: 405fe385-4de9-49ee-a448-d8f4d1f740dd
 caps.latest.revision: 14
 author: dotnet-bot

@@ -140,7 +140,7 @@
       </Docs>
     </Member>
     <Member MemberName="Defer">
-      <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject Defer (System.Dynamic.DynamicMetaObject[] args);" />
+      <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject Defer (params System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject Defer(class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])" />
       <MemberType>Method</MemberType>
@@ -181,7 +181,7 @@
       </Docs>
     </Member>
     <Member MemberName="Defer">
-      <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject Defer (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
+      <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject Defer (System.Dynamic.DynamicMetaObject target, params System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject Defer(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberType>Method</MemberType>

@@ -463,7 +463,7 @@
       </Docs>
     </Member>
     <Member MemberName="FindHeader">
-      <MemberSignature Language="C#" Value="public int FindHeader (string name, string ns, string[] actors);" />
+      <MemberSignature Language="C#" Value="public int FindHeader (string name, string ns, params string[] actors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindHeader(string name, string ns, string[] actors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.FindHeader(System.String,System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -716,7 +716,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetHeader&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public T GetHeader&lt;T&gt; (string name, string ns, string[] actors);" />
+      <MemberSignature Language="C#" Value="public T GetHeader&lt;T&gt; (string name, string ns, params string[] actors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetHeader&lt;T&gt;(string name, string ns, string[] actors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.String,System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -829,7 +829,7 @@
       </Docs>
     </Member>
     <Member MemberName="HaveMandatoryHeadersBeenUnderstood">
-      <MemberSignature Language="C#" Value="public bool HaveMandatoryHeadersBeenUnderstood (string[] actors);" />
+      <MemberSignature Language="C#" Value="public bool HaveMandatoryHeadersBeenUnderstood (params string[] actors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HaveMandatoryHeadersBeenUnderstood(string[] actors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaders.HaveMandatoryHeadersBeenUnderstood(System.String[])" />
       <MemberType>Method</MemberType>

@@ -102,7 +102,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public void AddRange (System.ServiceModel.Channels.BindingElement[] elements);" />
+      <MemberSignature Language="C#" Value="public void AddRange (params System.ServiceModel.Channels.BindingElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.ServiceModel.Channels.BindingElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.AddRange(System.ServiceModel.Channels.BindingElement[])" />
       <MemberType>Method</MemberType>

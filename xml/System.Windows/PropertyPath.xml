@@ -77,7 +77,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PropertyPath (string path, object[] pathParameters);" />
+      <MemberSignature Language="C#" Value="public PropertyPath (string path, params object[] pathParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, object[] pathParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PropertyPath.#ctor(System.String,System.Object[])" />
       <MemberType>Constructor</MemberType>

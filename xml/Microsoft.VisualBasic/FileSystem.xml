@@ -426,7 +426,7 @@
       </Docs>
     </Member>
     <Member MemberName="FileClose">
-      <MemberSignature Language="C#" Value="public static void FileClose (int[] FileNumbers);" />
+      <MemberSignature Language="C#" Value="public static void FileClose (params int[] FileNumbers);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileClose(int32[] FileNumbers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -4255,7 +4255,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="Print">
-      <MemberSignature Language="C#" Value="public static void Print (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void Print (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Print(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4322,7 +4322,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="PrintLine">
-      <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void PrintLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4944,7 +4944,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public static void Write (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void Write (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Write(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5012,7 +5012,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void WriteLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>

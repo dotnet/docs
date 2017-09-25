@@ -755,7 +755,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDomain">
-      <MemberSignature Language="C#" Value="public static AppDomain CreateDomain (string friendlyName, System.Security.Policy.Evidence securityInfo, AppDomainSetup info, System.Security.PermissionSet grantSet, System.Security.Policy.StrongName[] fullTrustAssemblies);" />
+      <MemberSignature Language="C#" Value="public static AppDomain CreateDomain (string friendlyName, System.Security.Policy.Evidence securityInfo, AppDomainSetup info, System.Security.PermissionSet grantSet, params System.Security.Policy.StrongName[] fullTrustAssemblies);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AppDomain CreateDomain(string friendlyName, class System.Security.Policy.Evidence securityInfo, class System.AppDomainSetup info, class System.Security.PermissionSet grantSet, class System.Security.Policy.StrongName[] fullTrustAssemblies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.CreateDomain(System.String,System.Security.Policy.Evidence,System.AppDomainSetup,System.Security.PermissionSet,System.Security.Policy.StrongName[])" />
       <MemberType>Method</MemberType>
@@ -3635,7 +3635,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(class System.Reflection.AssemblyName assemblyName, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.Reflection.AssemblyName,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3756,7 +3756,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(string assemblyName, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3820,7 +3820,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, System.Security.Policy.Evidence assemblySecurity, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (System.Reflection.AssemblyName assemblyName, System.Security.Policy.Evidence assemblySecurity, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(class System.Reflection.AssemblyName assemblyName, class System.Security.Policy.Evidence assemblySecurity, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.Reflection.AssemblyName,System.Security.Policy.Evidence,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3887,7 +3887,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteAssemblyByName">
-      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, System.Security.Policy.Evidence assemblySecurity, string[] args);" />
+      <MemberSignature Language="C#" Value="public int ExecuteAssemblyByName (string assemblyName, System.Security.Policy.Evidence assemblySecurity, params string[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteAssemblyByName(string assemblyName, class System.Security.Policy.Evidence assemblySecurity, string[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomain.ExecuteAssemblyByName(System.String,System.Security.Policy.Evidence,System.String[])" />
       <MemberType>Method</MemberType>

@@ -751,7 +751,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       </Docs>
     </Member>
     <Member MemberName="Fill">
-      <MemberSignature Language="C#" Value="public int Fill (int startRecord, int maxRecords, System.Data.DataTable[] dataTables);" />
+      <MemberSignature Language="C#" Value="public int Fill (int startRecord, int maxRecords, params System.Data.DataTable[] dataTables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Fill(int32 startRecord, int32 maxRecords, class System.Data.DataTable[] dataTables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Int32,System.Int32,System.Data.DataTable[])" />
       <MemberType>Method</MemberType>

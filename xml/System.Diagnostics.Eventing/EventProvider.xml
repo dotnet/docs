@@ -355,7 +355,7 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteEvent">
-      <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload);" />
+      <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, params object[] eventPayload);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -652,7 +652,7 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
       </Docs>
     </Member>
     <Member MemberName="WriteTransferEvent">
-      <MemberSignature Language="C#" Value="public bool WriteTransferEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, Guid relatedActivityId, object[] eventPayload);" />
+      <MemberSignature Language="C#" Value="public bool WriteTransferEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, Guid relatedActivityId, params object[] eventPayload);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteTransferEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, valuetype System.Guid relatedActivityId, object[] eventPayload) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Guid,System.Object[])" />
       <MemberType>Method</MemberType>

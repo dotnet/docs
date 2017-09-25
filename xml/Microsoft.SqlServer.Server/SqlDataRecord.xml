@@ -47,7 +47,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlDataRecord (Microsoft.SqlServer.Server.SqlMetaData[] metaData);" />
+      <MemberSignature Language="C#" Value="public SqlDataRecord (params Microsoft.SqlServer.Server.SqlMetaData[] metaData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Server.SqlMetaData[] metaData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.#ctor(Microsoft.SqlServer.Server.SqlMetaData[])" />
       <MemberType>Constructor</MemberType>
@@ -2945,7 +2945,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetValues">
-      <MemberSignature Language="C#" Value="public virtual int SetValues (object[] values);" />
+      <MemberSignature Language="C#" Value="public virtual int SetValues (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetValues(System.Object[])" />
       <MemberType>Method</MemberType>

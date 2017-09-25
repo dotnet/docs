@@ -473,7 +473,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateRef">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbRefExpression CreateRef (this System.Data.Metadata.Edm.EntitySet entitySet, System.Data.Common.CommandTrees.DbExpression[] keyValues);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbRefExpression CreateRef (this System.Data.Metadata.Edm.EntitySet entitySet, params System.Data.Common.CommandTrees.DbExpression[] keyValues);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression CreateRef(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Data.Common.CommandTrees.DbExpression[] keyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef(System.Data.Metadata.Edm.EntitySet,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberType>Method</MemberType>
@@ -535,7 +535,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateRef">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbRefExpression CreateRef (this System.Data.Metadata.Edm.EntitySet entitySet, System.Data.Metadata.Edm.EntityType entityType, System.Data.Common.CommandTrees.DbExpression[] keyValues);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbRefExpression CreateRef (this System.Data.Metadata.Edm.EntitySet entitySet, System.Data.Metadata.Edm.EntityType entityType, params System.Data.Common.CommandTrees.DbExpression[] keyValues);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbRefExpression CreateRef(class System.Data.Metadata.Edm.EntitySet entitySet, class System.Data.Metadata.Edm.EntityType entityType, class System.Data.Common.CommandTrees.DbExpression[] keyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.CreateRef(System.Data.Metadata.Edm.EntitySet,System.Data.Metadata.Edm.EntityType,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberType>Method</MemberType>
@@ -1246,7 +1246,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambdaExpression Invoke (this System.Data.Common.CommandTrees.DbLambda lambda, System.Data.Common.CommandTrees.DbExpression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambdaExpression Invoke (this System.Data.Common.CommandTrees.DbLambda lambda, params System.Data.Common.CommandTrees.DbExpression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambdaExpression Invoke(class System.Data.Common.CommandTrees.DbLambda lambda, class System.Data.Common.CommandTrees.DbExpression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke(System.Data.Common.CommandTrees.DbLambda,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberType>Method</MemberType>
@@ -1306,7 +1306,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Invoke (this System.Data.Metadata.Edm.EdmFunction function, System.Data.Common.CommandTrees.DbExpression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Invoke (this System.Data.Metadata.Edm.EdmFunction function, params System.Data.Common.CommandTrees.DbExpression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Invoke(class System.Data.Metadata.Edm.EdmFunction function, class System.Data.Common.CommandTrees.DbExpression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Invoke(System.Data.Metadata.Edm.EdmFunction,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberType>Method</MemberType>
@@ -1574,7 +1574,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Lambda (System.Data.Common.CommandTrees.DbExpression body, System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Lambda (System.Data.Common.CommandTrees.DbExpression body, params System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Lambda(class System.Data.Common.CommandTrees.DbExpression body, class System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Lambda(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbVariableReferenceExpression[])" />
       <MemberType>Method</MemberType>
@@ -2023,7 +2023,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbNewInstanceExpression New (this System.Data.Metadata.Edm.TypeUsage instanceType, System.Data.Common.CommandTrees.DbExpression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbNewInstanceExpression New (this System.Data.Metadata.Edm.TypeUsage instanceType, params System.Data.Common.CommandTrees.DbExpression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbNewInstanceExpression New(class System.Data.Metadata.Edm.TypeUsage instanceType, class System.Data.Common.CommandTrees.DbExpression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.New(System.Data.Metadata.Edm.TypeUsage,System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberType>Method</MemberType>
@@ -2090,7 +2090,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       </Docs>
     </Member>
     <Member MemberName="NewCollection">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbNewInstanceExpression NewCollection (System.Data.Common.CommandTrees.DbExpression[] elements);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbNewInstanceExpression NewCollection (params System.Data.Common.CommandTrees.DbExpression[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbNewInstanceExpression NewCollection(class System.Data.Common.CommandTrees.DbExpression[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewCollection(System.Data.Common.CommandTrees.DbExpression[])" />
       <MemberType>Method</MemberType>

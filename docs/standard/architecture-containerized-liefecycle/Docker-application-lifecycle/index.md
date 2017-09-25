@@ -13,5 +13,5 @@ The life cycle of containerized applications is a journey that begins with the d
 
 
 >[!div class="step-by-step"]
-[Previous] (../introduction-to-containers-and-docker/docker-containers-images-and-registries.md)
+[Previous] (../docker-containers-images-and-registries.md)
 [Next] (containers-foundation-for-devops-collaboration.md)

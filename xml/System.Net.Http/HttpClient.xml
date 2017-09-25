@@ -207,6 +207,7 @@ public class GoodController : ApiController
         <param name="disposeHandler">
           <see langword="true" /> if the inner handler should be disposed of by [HttpClient.Dispose](xref:System.Net.Http.HttpMessageInvoker.Dispose), <see langword="false" /> if you intend to reuse the inner handler.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with a specific handler.</summary>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>

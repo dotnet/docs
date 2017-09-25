@@ -13,7 +13,8 @@
   </Base>
   <Docs>
     <summary>Specifies constants that define type codes used in signature encoding.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Array">
@@ -31,7 +32,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a generalized <see cref="System.Array"/> in signatures.</summary>
+        <summary>Represents a generalized <see cref="System.Array" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -49,7 +50,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.Boolean"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.Boolean" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="ByReference">
@@ -85,7 +86,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.Byte"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.Byte" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -103,7 +104,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.Char"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.Char" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -121,7 +122,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.Double"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.Double" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="FunctionPointer">
@@ -211,7 +212,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an <see cref="System.Int16"/> in signatures.</summary>
+        <summary>Represents an <see cref="System.Int16" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -229,7 +230,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an <see cref="System.Int32"/> in signatures.</summary>
+        <summary>Represents an <see cref="System.Int32" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -247,7 +248,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an <see cref="System.Int64"/> in signatures.</summary>
+        <summary>Represents an <see cref="System.Int64" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntPtr">
@@ -265,7 +266,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an <see cref="System.IntPtr"/> in signatures.</summary>
+        <summary>Represents an <see cref="System.IntPtr" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -301,7 +302,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an <see cref="System.Object"/> in signatures.</summary>
+        <summary>Represents an <see cref="System.Object" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="OptionalModifier">
@@ -391,7 +392,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an <see cref="System.SByte"/> in signatures.</summary>
+        <summary>Represents an <see cref="System.SByte" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sentinel">
@@ -427,7 +428,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.Single"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.Single" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -445,7 +446,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.String"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.String" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="SZArray">
@@ -463,7 +464,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a single dimensional <see cref="System.Array"/> with a lower bound of 0.</summary>
+        <summary>Represents a single dimensional <see cref="System.Array" /> with a lower bound of 0.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypedReference">
@@ -499,7 +500,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Precedes a type <see cref="EntityHandle"/> in signatures.</summary>
+        <summary>Precedes a type <see cref="EntityHandle" /> in signatures.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -525,7 +526,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.UInt16"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.UInt16" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -543,7 +544,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.UInt32"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.UInt32" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -561,7 +562,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.UInt64"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.UInt64" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="UIntPtr">
@@ -579,7 +580,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="System.UIntPtr"/> in signatures.</summary>
+        <summary>Represents a <see cref="System.UIntPtr" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Void">
@@ -597,7 +598,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents <see cref="System.Void"/> in signatures.</summary>
+        <summary>Represents <see cref="System.Void" /> in signatures.</summary>
       </Docs>
     </Member>
   </Members>

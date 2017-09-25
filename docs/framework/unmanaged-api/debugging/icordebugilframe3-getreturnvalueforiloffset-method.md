@@ -45,7 +45,7 @@ HRESULT GetReturnValueForILOffset(
  A pointer to the address of an "ICorDebugValue" interface object that provides information about the return value of a function call.  
   
 ## Remarks  
- This method is used along with the [ICorDebugCode3::GetReturnValueLiveOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-getreturnvalueliveoffset-method.md) method to get the return value of a method. It is particularly useful in the case of methods whose return values are ignored, as in the following two code examples. The first example calls the <xref:System.Int32.TryParse%2A?displayProperty=fullName> method, but ignores the method's return value.  
+ This method is used along with the [ICorDebugCode3::GetReturnValueLiveOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-getreturnvalueliveoffset-method.md) method to get the return value of a method. It is particularly useful in the case of methods whose return values are ignored, as in the following two code examples. The first example calls the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method, but ignores the method's return value.  
   
  [!code-csharp[Unmanaged.Debugging.MRV#1](../../../../samples/snippets/csharp/VS_Snippets_CLR/unmanaged.debugging.mrv/cs/mrv1.cs#1)]
  [!code-vb[Unmanaged.Debugging.MRV#1](../../../../samples/snippets/visualbasic/VS_Snippets_CLR/unmanaged.debugging.mrv/vb/mrv1.vb#1)]  

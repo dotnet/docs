@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To convert a <xref:System.Drawing.PointF> to a <xref:System.Drawing.Point>, use <xref:System.Drawing.Point.Round%2A?displayProperty=fullName> or <xref:System.Drawing.Point.Truncate%2A?displayProperty=fullName>.  
+ To convert a <xref:System.Drawing.PointF> to a <xref:System.Drawing.Point>, use <xref:System.Drawing.Point.Round%2A?displayProperty=nameWithType> or <xref:System.Drawing.Point.Truncate%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -365,7 +365,7 @@
 ## Remarks  
  The <xref:System.Drawing.PointF.op_Addition%2A> operator adds the <xref:System.Drawing.SizeF.Width%2A> of the specified size to the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> to the y-coordinate of the <xref:System.Drawing.PointF>.  
   
- The equivalent method for this operator is <xref:System.Drawing.PointF.Add%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Drawing.PointF.Add%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Addition%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `opAdditionExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
@@ -534,7 +534,7 @@
 ## Remarks  
  The <xref:System.Drawing.PointF.op_Subtraction%2A> operator subtracts the <xref:System.Drawing.SizeF.Width%2A> of the specified size from the x-coordinate of the <xref:System.Drawing.PointF> and the <xref:System.Drawing.SizeF.Height%2A> from the y-coordinate of the <xref:System.Drawing.PointF>.  
   
- The equivalent method for this operator is <xref:System.Drawing.PointF.Subtract%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Drawing.PointF.Subtract%28System.Drawing.PointF%2CSystem.Drawing.SizeF%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Drawing.PointF.op_Subtraction%2A> operator. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `opSubtractionExample`, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  

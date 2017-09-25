@@ -50,13 +50,13 @@
   
 -   Credentials for authentication, if required by the SMTP server. See the <xref:System.Net.Mail.SmtpClient.Credentials%2A> property.  
   
--   The e-mail address of the sender. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `from` parameter. Also see the <xref:System.Net.Mail.MailMessage.From%2A?displayProperty=fullName> property.  
+-   The e-mail address of the sender. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `from` parameter. Also see the <xref:System.Net.Mail.MailMessage.From%2A?displayProperty=nameWithType> property.  
   
--   The e-mail address or addresses of the recipients. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `recipient` parameter. Also see the <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=fullName> property.  
+-   The e-mail address or addresses of the recipients. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `recipient` parameter. Also see the <xref:System.Net.Mail.MailMessage.To%2A?displayProperty=nameWithType> property.  
   
--   The message content. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `body` parameter. Also see the <xref:System.Net.Mail.MailMessage.Body%2A?displayProperty=fullName> property.  
+-   The message content. See the <xref:System.Net.Mail.SmtpClient.Send%2A> and <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods that take a `body` parameter. Also see the <xref:System.Net.Mail.MailMessage.Body%2A?displayProperty=nameWithType> property.  
   
- To include an attachment with an e-mail message, first create the attachment by using the <xref:System.Net.Mail.Attachment> class, and then add it to the message by using the <xref:System.Net.Mail.MailMessage.Attachments%2A?displayProperty=fullName> property. Depending on the e-mail reader used by the recipients and the file type of the attachment, some recipients might not be able to read the attachment. For clients that cannot display the attachment in its original form, you can specify alternate views by using the <xref:System.Net.Mail.MailMessage.AlternateViews%2A?displayProperty=fullName> property.  
+ To include an attachment with an e-mail message, first create the attachment by using the <xref:System.Net.Mail.Attachment> class, and then add it to the message by using the <xref:System.Net.Mail.MailMessage.Attachments%2A?displayProperty=nameWithType> property. Depending on the e-mail reader used by the recipients and the file type of the attachment, some recipients might not be able to read the attachment. For clients that cannot display the attachment in its original form, you can specify alternate views by using the <xref:System.Net.Mail.MailMessage.AlternateViews%2A?displayProperty=nameWithType> property.  
   
  You can use the application or machine configuration files to specify default host, port, and credentials values for all <xref:System.Net.Mail.SmtpClient> objects. For more information, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md).  
   
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `host` parameter is used to initialize the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> property. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties are initialized by using the settings in the application or machine configuration files. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=fullName>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files.  
+ The `host` parameter is used to initialize the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> property. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties are initialized by using the settings in the application or machine configuration files. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=nameWithType>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files.  
   
  For more information about using the application and machine configuration files, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using <xref:System.Net.Mail.SmtpClient> constructors or properties, this information overrides the configuration file settings.  
   
@@ -205,7 +205,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `host` and `port` parameters set the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties, respectively. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=fullName>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files. If `port` is zero, <xref:System.Net.Mail.SmtpClient.Port%2A> is initialized using the settings in the application or machine configuration files. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> property is initialized using the settings in the application or machine configuration files.  
+ The `host` and `port` parameters set the value of the <xref:System.Net.Mail.SmtpClient.Host%2A> and <xref:System.Net.Mail.SmtpClient.Port%2A> properties, respectively. If `host` is `null` or equal to <xref:System.String.Empty?displayProperty=nameWithType>, <xref:System.Net.Mail.SmtpClient.Host%2A> is initialized using the settings in the application or machine configuration files. If `port` is zero, <xref:System.Net.Mail.SmtpClient.Port%2A> is initialized using the settings in the application or machine configuration files. The <xref:System.Net.Mail.SmtpClient.Credentials%2A> property is initialized using the settings in the application or machine configuration files.  
   
  For more information about using the application and machine configuration files, see [&lt;mailSettings&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md). If information is specified using <xref:System.Net.Mail.SmtpClient> constructors or properties, this information overrides the configuration file settings.  
   

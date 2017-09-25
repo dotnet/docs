@@ -56,7 +56,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=fullName> class to assign a GUID to an interface and to a user-defined class. It retrieves the value of the GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A> method, and compares it with two other GUIDs to determine whether they are equal.  
+ The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=nameWithType> class to assign a GUID to an interface and to a user-defined class. It retrieves the value of the GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A> method, and compares it with two other GUIDs to determine whether they are equal.  
   
  [!code-cpp[Guid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Guid/CPP/Guids.cpp#1)]
  [!code-csharp[Guid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Guid/CS/Guids.cs#1)]
@@ -439,7 +439,7 @@
   
  If two GUIDs have equal values for a component, the method compares the next component. When it finds a component whose values are unequal, it returns the result.  
   
- This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.Guid.CompareTo%2A?displayProperty=fullName> method because it does not have to convert the `value` parameter to a <xref:System.Guid> value.  
+ This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface and performs slightly better than the <xref:System.Guid.CompareTo%2A?displayProperty=nameWithType> method because it does not have to convert the `value` parameter to a <xref:System.Guid> value.  
   
    
   
@@ -522,7 +522,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute> attribute to assign a GUID to a class. It retrieves the value of this GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> method and passing the <xref:System.Runtime.InteropServices.GuidAttribute.Value%2A> property of the returned <xref:System.Runtime.InteropServices.GuidAttribute> object to the <xref:System.Guid.Parse%2A> method. Then it compares that GUID with an array of values.  
+ The following example uses the <xref:System.Runtime.InteropServices.GuidAttribute> attribute to assign a GUID to a class. It retrieves the value of this GUID by calling the <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType> method and passing the <xref:System.Runtime.InteropServices.GuidAttribute.Value%2A> property of the returned <xref:System.Runtime.InteropServices.GuidAttribute> object to the <xref:System.Guid.Parse%2A> method. Then it compares that GUID with an array of values.  
   
  [!code-csharp[System.Guid.CompareTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.guid.compareto/cs/compareto1.cs#2)]
  [!code-vb[System.Guid.CompareTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.guid.compareto/vb/compareto1.vb#2)]  
@@ -564,7 +564,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can compare a GUID with the value of the <xref:System.Guid.Empty?displayProperty=fullName> field to determine whether a GUID is non-zero. The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=fullName> to determine whether they consist exclusively of zeros.  
+ You can compare a GUID with the value of the <xref:System.Guid.Empty?displayProperty=nameWithType> field to determine whether a GUID is non-zero. The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=nameWithType> to determine whether they consist exclusively of zeros.  
   
  [!code-csharp[System.Guid.Empty#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.guid.empty/cs/empty.cs#1)]
  [!code-vb[System.Guid.Empty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.guid.empty/vb/empty.vb#1)]  
@@ -726,7 +726,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenient `static` method that you can call to get a new <xref:System.Guid>. The method wraps a call to the Windows [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568.aspx) function. The returned <xref:System.Guid> is guaranteed to not equal <xref:System.Guid?displayProperty=fullName>.  
+ This is a convenient `static` method that you can call to get a new <xref:System.Guid>. The method wraps a call to the Windows [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568.aspx) function. The returned <xref:System.Guid> is guaranteed to not equal <xref:System.Guid?displayProperty=nameWithType>.  
   
    
   
@@ -776,10 +776,10 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=fullName>  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=nameWithType>  
   
 ## Examples  
- The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=fullName> to determine whether they consist exclusively of zeros.  
+ The following example uses the <xref:System.Guid.op_Equality%2A> operator to compare two GUID values with <xref:System.Guid.Empty?displayProperty=nameWithType> to determine whether they consist exclusively of zeros.  
   
  [!code-csharp[System.Guid.Empty#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.guid.empty/cs/empty.cs#1)]
  [!code-vb[System.Guid.Empty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.guid.empty/vb/empty.vb#1)]  
@@ -824,7 +824,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Guid.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1156,7 +1156,7 @@
 |`P`|32 digits separated by hyphens, enclosed in parentheses:<br /><br /> (00000000-0000-0000-0000-000000000000)|  
 |`X`|Four hexadecimal values enclosed in braces, where the fourth value is a subset of eight hexadecimal values that is also enclosed in braces:<br /><br /> {0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}}|  
   
- The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=fullName> method on the returned string.  
+ The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method on the returned string.  
   
  ]]></format>
         </remarks>
@@ -1214,9 +1214,9 @@
 |`P`|32 digits separated by hyphens, enclosed in parentheses:<br /><br /> (00000000-0000-0000-0000-000000000000)|  
 |`X`|Four hexadecimal values enclosed in braces, where the fourth value is a subset of eight hexadecimal values that is also enclosed in braces:<br /><br /> {0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}}|  
   
- The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=fullName> method on the returned string.  
+ The hexadecimal digits a through f are lowercase in the returned string. To convert them to uppercase, call the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method on the returned string.  
   
- Because the `provider` parameter is ignored, you cannot use it to provide a custom formatting solution. To represent a <xref:System.Guid> value as a string in a format that isn't supported by the standard GUID format strings, call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method with a `provider` object that implements both the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces. For more information, see the "Custom Formatting with ICustomFormatter" section in the [Formatting Types](~/docs/standard/base-types/formatting-types.md) article.  
+ Because the `provider` parameter is ignored, you cannot use it to provide a custom formatting solution. To represent a <xref:System.Guid> value as a string in a format that isn't supported by the standard GUID format strings, call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method with a `provider` object that implements both the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces. For more information, see the "Custom Formatting with ICustomFormatter" section in the [Formatting Types](~/docs/standard/base-types/formatting-types.md) article.  
   
  ]]></format>
         </remarks>

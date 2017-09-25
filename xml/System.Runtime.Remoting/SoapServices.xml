@@ -800,7 +800,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The SOAPAction of the specified method is contained in the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.SoapAction%2A?displayProperty=fullName> property, or is read off the wire. The current method associates the SOAPAction with the <xref:System.Reflection.MethodBase> for use in channel sinks.  
+ The SOAPAction of the specified method is contained in the <xref:System.Runtime.Remoting.Metadata.SoapMethodAttribute.SoapAction%2A?displayProperty=nameWithType> property, or is read off the wire. The current method associates the SOAPAction with the <xref:System.Reflection.MethodBase> for use in channel sinks.  
   
  The SOAPAction HTTP request header field indicates the intent of the SOAP HTTP request. The value is a URI identifying the intent. SOAP places no restrictions on the format or specificity of the URI or that it is resolvable. An HTTP client must use this header field when issuing a SOAP HTTP request.  
   

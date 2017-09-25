@@ -374,7 +374,7 @@
         <summary>Increments the reverse iterator by the given number of elements. The integer parameter is specified on the right side of the addition operator.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%601.Add%28Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%601.Add%28Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -796,7 +796,7 @@
         <summary>Determines the difference between two iterators.</summary>
         <returns>The difference (number of elements) between the two iterators.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%601.Subtract%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%601.Subtract%28Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator%7B%600%7D%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -822,7 +822,7 @@
         <summary>Decrements the iterator by the given number of elements. The integer parameter is specified on the right side of the subtraction operator.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%601.Subtract%28Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%601.Subtract%28Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator%7B%600%7D%40%2CSystem.Int32%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

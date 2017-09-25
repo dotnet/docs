@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.7|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Security.Cryptography.CspParameters.ParentWindowHandle?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Security.Cryptography.CspParameters.ParentWindowHandle?displayProperty=nameWithType></li></ul>|
 

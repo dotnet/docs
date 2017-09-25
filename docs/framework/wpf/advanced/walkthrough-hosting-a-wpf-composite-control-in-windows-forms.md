@@ -231,9 +231,9 @@ WPF composite control hosted in a Windows Forms application
   
 2.  Enlarge the form to accommodate the controls.  
   
-3.  In the upper-right corner of the form, add a                                  <xref:System.Windows.Forms.Panel?displayProperty=fullName> control to hold the                                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
+3.  In the upper-right corner of the form, add a                                  <xref:System.Windows.Forms.Panel?displayProperty=nameWithType> control to hold the                                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
   
-4.  Add the following                                  <xref:System.Windows.Forms.GroupBox?displayProperty=fullName> controls to the form.  
+4.  Add the following                                  <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> controls to the form.  
   
     |Name|Text|  
     |----------|----------|  
@@ -245,7 +245,7 @@ WPF composite control hosted in a Windows Forms application
     |groupBox6|Font Weight|  
     |groupBox7|Data from control|  
   
-5.  Add the following                                  <xref:System.Windows.Forms.RadioButton?displayProperty=fullName> controls to the                                  <xref:System.Windows.Forms.GroupBox?displayProperty=fullName> controls.  
+5.  Add the following                                  <xref:System.Windows.Forms.RadioButton?displayProperty=nameWithType> controls to the                                  <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> controls.  
   
     |GroupBox|Name|Text|  
     |--------------|----------|----------|  
@@ -266,7 +266,7 @@ WPF composite control hosted in a Windows Forms application
     |groupBox6|radioWeightOriginal|Original|  
     |groupBox6|radioWeightBold|Bold|  
   
-6.  Add the following                                  <xref:System.Windows.Forms.Label?displayProperty=fullName> controls to the last                                  <xref:System.Windows.Forms.GroupBox?displayProperty=fullName>. These controls display the data returned by the                                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
+6.  Add the following                                  <xref:System.Windows.Forms.Label?displayProperty=nameWithType> controls to the last                                  <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>. These controls display the data returned by the                                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
   
     |GroupBox|Name|Text|  
     |--------------|----------|----------|  
@@ -291,7 +291,7 @@ WPF composite control hosted in a Windows Forms application
   
 1.  Create a new                                  <xref:System.Windows.Forms.Integration.ElementHost> object.  
   
-2.  Set the control's                                  <xref:System.Windows.Forms.Control.Dock%2A> property to                                  <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=fullName>.  
+2.  Set the control's                                  <xref:System.Windows.Forms.Control.Dock%2A> property to                                  <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=nameWithType>.  
   
 3.  Add the                                  <xref:System.Windows.Forms.Integration.ElementHost> control to the                                  <xref:System.Windows.Forms.Panel> control's                                  <xref:System.Windows.Forms.Control.Controls%2A> collection.  
   

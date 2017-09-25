@@ -338,7 +338,7 @@
   
  Subtree readers can call <xref:System.Xaml.XamlReader.Skip%2A>, with behavior restrictions. For more information, see the "Subtree Readers" section in <xref:System.Xaml.XamlReader>, or see <xref:System.Xaml.XamlReader.ReadSubtree%2A>.  
   
- The node tree behavior of <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=fullName> is based on the XML equivalent <xref:System.Xml.XmlReader.Skip%2A?displayProperty=fullName>. Based on the <xref:System.Xml.XmlReader.Skip%2A?displayProperty=fullName> behavior equivalence, <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=fullName> skips the node and its subtree, not just the single entry node.  
+ The node tree behavior of <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=nameWithType> is based on the XML equivalent <xref:System.Xml.XmlReader.Skip%2A?displayProperty=nameWithType>. Based on the <xref:System.Xml.XmlReader.Skip%2A?displayProperty=nameWithType> behavior equivalence, <xref:System.Xaml.XamlReader.Skip%2A?displayProperty=nameWithType> skips the node and its subtree, not just the single entry node.  
   
  ]]></format>
         </remarks>

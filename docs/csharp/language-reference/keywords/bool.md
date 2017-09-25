@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # bool (C# Reference)
-The `bool` keyword is an alias of <xref:System.Boolean?displayProperty=fullName>. It is used to declare variables to store the Boolean values, [true](../../../csharp/language-reference/keywords/true.md) and [false](../../../csharp/language-reference/keywords/false.md).  
+The `bool` keyword is an alias of <xref:System.Boolean?displayProperty=nameWithType>. It is used to declare variables to store the Boolean values, [true](../../../csharp/language-reference/keywords/true.md) and [false](../../../csharp/language-reference/keywords/false.md).  
   
 > [!NOTE]
 >  If you require a Boolean variable that can also have a value of `null`, use `bool?`. For more information, see [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md).  

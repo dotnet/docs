@@ -789,7 +789,7 @@
   
  (This usage is required because the event implementation on <xref:System.Windows.FrameworkElement> that exposes the underlying service event does not map the <xref:System.Windows.FrameworkElement.ContextMenuOpening> identifier such that you can use it in triggers).  
   
- <xref:System.Windows.Controls.ContextMenu> itself is a <xref:System.Windows.FrameworkElement> derived class, but this event will not be raised from the context menu being opened as a source. The event is raised from the element that "owns" the context menu as a property and is only raised when a user attempts to open a context menu in the UI. It is possible for <xref:System.Windows.Controls.ContextMenu> itself to have a <xref:System.Windows.FrameworkElement.ContextMenu%2A> property, but you should avoid this scenario (for details, see <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName>).  
+ <xref:System.Windows.Controls.ContextMenu> itself is a <xref:System.Windows.FrameworkElement> derived class, but this event will not be raised from the context menu being opened as a source. The event is raised from the element that "owns" the context menu as a property and is only raised when a user attempts to open a context menu in the UI. It is possible for <xref:System.Windows.Controls.ContextMenu> itself to have a <xref:System.Windows.FrameworkElement.ContextMenu%2A> property, but you should avoid this scenario (for details, see <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>).  
   
  The <xref:System.Windows.Controls.ContextMenu> class itself also has a similar event (<xref:System.Windows.Controls.ContextMenu.Opened>) but <xref:System.Windows.Controls.ContextMenu.Opened> does not provide you the opportunity to cancel the user action.  
   
@@ -1468,7 +1468,7 @@
 ## Remarks  
  Checking the return value for `null` is a technique you can use to determine whether a property has an active binding.  
   
- This method is really just a convenience wrapper around the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=fullName> method. <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> passes the current instance and the `dp` parameter to <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=fullName>.  
+ This method is really just a convenience wrapper around the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=nameWithType> method. <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> passes the current instance and the `dp` parameter to <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1528,7 +1528,7 @@
 ## Remarks  
  Margins will be subtracted from the `layoutSlotSize` as part of layout system behavior.  
   
- A returned null reference indicates that no clipping will occur. The default implementation always returns `null` when <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`. This method overrides <xref:System.Windows.UIElement.GetLayoutClip%2A?displayProperty=fullName>. The <xref:System.Windows.FrameworkElement> implementation uses <xref:System.Windows.FrameworkElement.MaxHeight%2A> and <xref:System.Windows.FrameworkElement.MaxWidth%2A> in its calculations. Several subclasses of <xref:System.Windows.FrameworkElement> override this method again. <xref:System.Windows.Documents.Adorner.GetLayoutClip%2A?displayProperty=fullName>, overrides to always return `null` because adorners are often deliberately outside the ordinary bounds. <xref:System.Windows.Controls.Canvas.GetLayoutClip%2A?displayProperty=fullName> and <xref:System.Windows.Controls.InkPresenter.GetLayoutClip%2A?displayProperty=fullName> return `null` if <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`.  
+ A returned null reference indicates that no clipping will occur. The default implementation always returns `null` when <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`. This method overrides <xref:System.Windows.UIElement.GetLayoutClip%2A?displayProperty=nameWithType>. The <xref:System.Windows.FrameworkElement> implementation uses <xref:System.Windows.FrameworkElement.MaxHeight%2A> and <xref:System.Windows.FrameworkElement.MaxWidth%2A> in its calculations. Several subclasses of <xref:System.Windows.FrameworkElement> override this method again. <xref:System.Windows.Documents.Adorner.GetLayoutClip%2A?displayProperty=nameWithType>, overrides to always return `null` because adorners are often deliberately outside the ordinary bounds. <xref:System.Windows.Controls.Canvas.GetLayoutClip%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.InkPresenter.GetLayoutClip%2A?displayProperty=nameWithType> return `null` if <xref:System.Windows.UIElement.ClipToBounds%2A> is `false`.  
   
  ]]></format>
         </remarks>
@@ -1560,9 +1560,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Templates in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] have a self-contained namescope. This is because templates are re-used, and any name defined in a template cannot remain unique when multiple instances of a control each instantiate its template. Call the <xref:System.Windows.FrameworkElement.GetTemplateChild%2A> method to return references to objects that come from the template after it is instantiated. You cannot use the <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> method to find items from templates because <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> acts in a more general scope, and there is no connection between the <xref:System.Windows.Controls.ControlTemplate> class itself and the instantiated template once it is applied.  
+ Templates in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] have a self-contained namescope. This is because templates are re-used, and any name defined in a template cannot remain unique when multiple instances of a control each instantiate its template. Call the <xref:System.Windows.FrameworkElement.GetTemplateChild%2A> method to return references to objects that come from the template after it is instantiated. You cannot use the <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=nameWithType> method to find items from templates because <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=nameWithType> acts in a more general scope, and there is no connection between the <xref:System.Windows.Controls.ControlTemplate> class itself and the instantiated template once it is applied.  
   
- <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=fullName> supplies the same function as this method. <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=fullName> is public instead of protected, and it uses correct name-scoping considerations that allow it to access the template within an element and find named items within it. Use <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=fullName> when you need to get an element outside of its parent control.  
+ <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=nameWithType> supplies the same function as this method. <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=nameWithType> is public instead of protected, and it uses correct name-scoping considerations that allow it to access the template within an element and find named items within it. Use <xref:System.Windows.FrameworkTemplate.FindName%2A?displayProperty=nameWithType> when you need to get an element outside of its parent control.  
   
  ]]></format>
         </remarks>
@@ -1588,7 +1588,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.UIElement.GetUIParentCore%2A?displayProperty=fullName>. The default <xref:System.Windows.FrameworkElement> implementation returns the expected single visual parent, which is the same result as getting the <xref:System.Windows.FrameworkElement.Parent%2A> value. Derived class implementations might return alternate parent relationships.  
+ This method overrides <xref:System.Windows.UIElement.GetUIParentCore%2A?displayProperty=nameWithType>. The default <xref:System.Windows.FrameworkElement> implementation returns the expected single visual parent, which is the same result as getting the <xref:System.Windows.FrameworkElement.Parent%2A> value. Derived class implementations might return alternate parent relationships.  
   
  ]]></format>
         </remarks>
@@ -1669,13 +1669,13 @@
   
  If this element is a child element within some other element, then setting this property to a value is really only a suggested value. The layout system as well as the particular layout logic of the parent element will use the value as a nonbinding input during the layout process. In practical terms, a <xref:System.Windows.FrameworkElement> is almost always the child element of something else; even when you set the <xref:System.Windows.FrameworkElement.Height%2A> on <xref:System.Windows.Window>. (For <xref:System.Windows.Window>, that value is used when the underlying application model establishes the basic rendering assumptions that create the Hwnd that hosts the application.)  
   
- In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=fullName>. This is how you specify auto sizing behavior in code. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the height available to it. Note however that specific controls frequently supply default values through their default theme styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
+ In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=nameWithType>. This is how you specify auto sizing behavior in code. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the height available to it. Note however that specific controls frequently supply default values through their default theme styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
   
  The return value of this property is always the same as any value that was set to it. In contrast, the value of the <xref:System.Windows.FrameworkElement.ActualHeight%2A> may vary. This can happen either statically because the layout rejected the suggested size for some reason, or momentarily. The layout system itself works asynchronously relative to the property system's set of <xref:System.Windows.FrameworkElement.Height%2A> and may not have processed that particular sizing property change yet.  
   
  The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set an invalid value, a run-time exception is thrown.  
   
- In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Height%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=fullName> but smaller than <xref:System.Double.MaxValue?displayProperty=fullName>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Height%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
+ In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Height%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=nameWithType> but smaller than <xref:System.Double.MaxValue?displayProperty=nameWithType>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Height%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
   
 <a name="xamlAttributeUsage_Height"></a>   
 ## XAML Attribute Usage  
@@ -1813,7 +1813,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode?displayProperty=fullName> value.  
+ Certain boundaries in the element tree set <xref:System.Windows.FrameworkElement.InheritanceBehavior%2A> to deliberately limit the scope of inheritance behavior, to a force resource lookup to check the application resources, or to prevent a RelativeSource FindAncestor lookup from querying the current element or any further. RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode?displayProperty=nameWithType> value.  
   
  If you want your derived class to set this property, you should do so within the static constructor or in other initialization routines.  
   
@@ -2481,7 +2481,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=fullName> to connect the  WPF core-level and WPF framework-level layout measure implementations. The <xref:System.Windows.FrameworkElement> implementation seals the method. To adjust the measure pass layout behavior of any element that builds on the WPF framework-level, override <xref:System.Windows.FrameworkElement.MeasureOverride%2A> instead. To adjust the measure pass layout behavior of an element that deliberately does not build on the WPF framework-level or use <xref:System.Windows.FrameworkElement>, override <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=nameWithType> to connect the  WPF core-level and WPF framework-level layout measure implementations. The <xref:System.Windows.FrameworkElement> implementation seals the method. To adjust the measure pass layout behavior of any element that builds on the WPF framework-level, override <xref:System.Windows.FrameworkElement.MeasureOverride%2A> instead. To adjust the measure pass layout behavior of an element that deliberately does not build on the WPF framework-level or use <xref:System.Windows.FrameworkElement>, override <xref:System.Windows.UIElement.MeasureCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -2736,7 +2736,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation overrides <xref:System.Windows.UIElement.MoveFocus%2A?displayProperty=fullName> and seals the method.  
+ This implementation overrides <xref:System.Windows.UIElement.MoveFocus%2A?displayProperty=nameWithType> and seals the method.  
   
    
   
@@ -3575,7 +3575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=fullName>, which passes the current instance as the <xref:System.Windows.DependencyObject>, and creates a new <xref:System.Windows.Data.Binding> based on the provided `path` parameter. This signature is more convenient if you are establishing a simple default binding. If you need to specify any binding properties to non-default conditions, or want to use a <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding>,you should use the <xref:System.Windows.FrameworkElement.SetBinding%28System.Windows.DependencyProperty%2CSystem.Windows.Data.BindingBase%29> signature.  
+ This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>, which passes the current instance as the <xref:System.Windows.DependencyObject>, and creates a new <xref:System.Windows.Data.Binding> based on the provided `path` parameter. This signature is more convenient if you are establishing a simple default binding. If you need to specify any binding properties to non-default conditions, or want to use a <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding>,you should use the <xref:System.Windows.FrameworkElement.SetBinding%28System.Windows.DependencyProperty%2CSystem.Windows.Data.BindingBase%29> signature.  
   
    
   
@@ -3614,7 +3614,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=fullName>, which passes the current instance as the <xref:System.Windows.DependencyObject>.  
+ This method is a convenience method for calling <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>, which passes the current instance as the <xref:System.Windows.DependencyObject>.  
   
  ]]></format>
         </remarks>
@@ -4164,7 +4164,7 @@
  A string that becomes the display text for the <xref:System.Windows.FrameworkElement.ToolTip%2A>.  
   
  *toolTipObjectContent*  
- Some object, provided in object element form, that should be used as the content for the <xref:System.Windows.FrameworkElement> . Typically this would be a <xref:System.Windows.FrameworkElement> or some other element that creates layout compositing for the <xref:System.Windows.FrameworkElement.ToolTip%2A>, eventually containing text content within the compositing. In this usage, the <xref:System.Windows.Controls.ToolTip> element is created implicitly from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the *toolTipObjectContent* content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName> property.  
+ Some object, provided in object element form, that should be used as the content for the <xref:System.Windows.FrameworkElement> . Typically this would be a <xref:System.Windows.FrameworkElement> or some other element that creates layout compositing for the <xref:System.Windows.FrameworkElement.ToolTip%2A>, eventually containing text content within the compositing. In this usage, the <xref:System.Windows.Controls.ToolTip> element is created implicitly from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the *toolTipObjectContent* content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=nameWithType> property.  
   
  <`ToolTip` .../>  
  See <xref:System.Windows.Controls.ToolTip>.  
@@ -4761,9 +4761,9 @@
   
  The return value of this property is always the same as any value that was set to it. In contrast, the value of the <xref:System.Windows.FrameworkElement.ActualWidth%2A> may vary. The layout may have rejected the suggested size for some reason. Also, the layout system itself works asynchronously relative to the property system set of <xref:System.Windows.FrameworkElement.Width%2A> and may not have processed that particular sizing property change yet.  
   
- In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=fullName>. This is how you specify auto sizing behavior. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the width available to it. Note however that specific controls frequently supply default values in their default styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
+ In addition to acceptable <xref:System.Double> values, this property can also be <xref:System.Double.NaN?displayProperty=nameWithType>. This is how you specify auto sizing behavior. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] you set the value to the string "Auto" (case insensitive) to enable the auto sizing behavior. Auto sizing behavior implies that the element will fill the width available to it. Note however that specific controls frequently supply default values in their default styles that will disable the auto sizing behavior unless it is specifically re-enabled.  
   
- In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Width%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=fullName> but smaller than <xref:System.Double.MaxValue?displayProperty=fullName>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Width%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
+ In addition to the validation check, there is a nondeterministic upper value bound for <xref:System.Windows.FrameworkElement.Width%2A> that is enforced by the layout system (this is a very large number, larger than <xref:System.Single.MaxValue?displayProperty=nameWithType> but smaller than <xref:System.Double.MaxValue?displayProperty=nameWithType>). If you exceed this bound, the element will not render, and no exception is thrown. Do not set <xref:System.Windows.FrameworkElement.Width%2A> to a value that is significantly larger than the maximum size of any possible visual display, or you may exceed this nondeterministic upper bound.  
   
 <a name="xamlAttributeUsage_Width"></a>   
 ## XAML Attribute Usage  

@@ -37,7 +37,7 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
 -   Under certain conditions, the comparison of <xref:System.UInt16> values with their high bit set is incorrect if optimization is enabled.  
   
--   Under certain conditions, particularly when initializing array values, memory initialization by the <xref:System.Reflection.Emit.OpCodes.Initblk?displayProperty=fullName> IL instruction may initialize memory with an incorrect value. This can result either in an unhandled exception or incorrect output.  
+-   Under certain conditions, particularly when initializing array values, memory initialization by the <xref:System.Reflection.Emit.OpCodes.Initblk?displayProperty=nameWithType> IL instruction may initialize memory with an incorrect value. This can result either in an unhandled exception or incorrect output.  
   
 -   Under certain rare conditions, a conditional bit test can return the incorrect <xref:System.Boolean> value or throw an exception if compiler optimizations are enabled.  
   

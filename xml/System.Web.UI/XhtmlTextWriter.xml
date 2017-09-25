@@ -35,7 +35,7 @@
   
 -   The <xref:System.IO.TextWriter> instance.  
   
--   The value of the <xref:System.Web.UI.HtmlTextWriter.DefaultTabString?displayProperty=fullName> property, which defines the default line indentation that is used by the XHTML text writer.  
+-   The value of the <xref:System.Web.UI.HtmlTextWriter.DefaultTabString?displayProperty=nameWithType> property, which defines the default line indentation that is used by the XHTML text writer.  
   
  This code example also shows how to override the <xref:System.Web.UI.XhtmlTextWriter.OnAttributeRender%2A> and <xref:System.Web.UI.XhtmlTextWriter.OnStyleAttributeRender%2A> methods to filter for text size and color style, respectively. Additionally, it overrides the <xref:System.Web.UI.HtmlTextWriter.BeginRender%2A> and <xref:System.Web.UI.HtmlTextWriter.EndRender%2A> methods to write a text string before and after a control has rendered.  
   
@@ -288,7 +288,7 @@
 ## Examples  
  The following code example is part of a larger example that creates a custom <xref:System.Web.UI.WebControls.Label> control and an adapter that renders the content of the control as XHTML.  
   
- This code example demonstrates how to create a Boolean variable named `attTest` and set it to the return value that results from calling the <xref:System.Web.UI.XhtmlTextWriter.IsValidFormAttribute%2A> method with the parameter value "style". If the <xref:System.Web.UI.XhtmlTextWriter.IsValidFormAttribute%2A> method returns `true`, the styles that are associated with the control are rendered using the <xref:System.Web.UI.HtmlTextWriter.EnterStyle%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.ExitStyle%2A?displayProperty=fullName> methods. If the `attTest` value is `false`, the styles are not rendered. Instead, the page displays the text for the control, a `<br/>` element that is rendered by the <xref:System.Web.UI.XhtmlTextWriter.WriteBreak%2A> method, and a text string informing the user that the XHTML content of the control has rendered conditionally.  
+ This code example demonstrates how to create a Boolean variable named `attTest` and set it to the return value that results from calling the <xref:System.Web.UI.XhtmlTextWriter.IsValidFormAttribute%2A> method with the parameter value "style". If the <xref:System.Web.UI.XhtmlTextWriter.IsValidFormAttribute%2A> method returns `true`, the styles that are associated with the control are rendered using the <xref:System.Web.UI.HtmlTextWriter.EnterStyle%2A?displayProperty=nameWithType> and <xref:System.Web.UI.HtmlTextWriter.ExitStyle%2A?displayProperty=nameWithType> methods. If the `attTest` value is `false`, the styles are not rendered. Instead, the page displays the text for the control, a `<br/>` element that is rendered by the <xref:System.Web.UI.XhtmlTextWriter.WriteBreak%2A> method, and a text string informing the user that the XHTML content of the control has rendered conditionally.  
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.XhtmlTextWriter> class.  
   
@@ -488,7 +488,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to override the inherited <xref:System.Web.UI.HtmlTextWriter.BeginRender%2A?displayProperty=fullName> method to write a text string with the <xref:System.Web.UI.HtmlTextWriter.Write%2A?displayProperty=fullName> method and a `<br/>` element with the <xref:System.Web.UI.XhtmlTextWriter.WriteBreak%2A> method.  
+ The following code example demonstrates how to override the inherited <xref:System.Web.UI.HtmlTextWriter.BeginRender%2A?displayProperty=nameWithType> method to write a text string with the <xref:System.Web.UI.HtmlTextWriter.Write%2A?displayProperty=nameWithType> method and a `<br/>` element with the <xref:System.Web.UI.XhtmlTextWriter.WriteBreak%2A> method.  
   
  [!code-csharp[system.web.ui.xhtmltextwriter_sample2#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.xhtmltextwriter_Sample2/CS/customxhtmltextwriter.cs#4)]
  [!code-vb[system.web.ui.xhtmltextwriter_sample2#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.xhtmltextwriter_Sample2/VB/customxhtmltextwriter.vb#4)]  

@@ -48,8 +48,8 @@ this.webBrowser1.Navigate("http://www.microsoft.com");
   
 ## See Also  
  <xref:System.Windows.Forms.WebBrowser>   
- <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=fullName>   
- <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName>   
- <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=fullName>   
+ <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.WebBrowser.Navigated?displayProperty=nameWithType>   
  [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)   
  [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)

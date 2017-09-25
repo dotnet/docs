@@ -1846,7 +1846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the WebBrowser ActiveX control does not process the key. In this case, this method delegates the call to the base <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=fullName> method.  
+ This method is called during message preprocessing to handle dialog characters, such as TAB, RETURN, ESCAPE, and arrow keys. This method is called only if the WebBrowser ActiveX control does not process the key. In this case, this method delegates the call to the base <xref:System.Windows.Forms.Control.ProcessDialogKey%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

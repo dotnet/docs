@@ -83,7 +83,7 @@ Standalone applications typically have a main window that both displays the main
  [!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
  [!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]  
   
- For more information on the open file dialog box, see                          <xref:Microsoft.Win32.OpenFileDialog?displayProperty=fullName>.  
+ For more information on the open file dialog box, see                          <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  <xref:Microsoft.Win32.OpenFileDialog> can be used to safely retrieve file names by applications running with partial trust (see                              [Security](../../../../docs/framework/wpf/security-wpf.md)).  
@@ -99,7 +99,7 @@ Standalone applications typically have a main window that both displays the main
  [!code-csharp[DialogBoxesOverviewSnippets#SaveFileDialogBoxCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#savefiledialogboxcodebehind)]
  [!code-vb[DialogBoxesOverviewSnippets#SaveFileDialogBoxCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#savefiledialogboxcodebehind)]  
   
- For more information on the save file dialog box, see                          <xref:Microsoft.Win32.SaveFileDialog?displayProperty=fullName>.  
+ For more information on the save file dialog box, see                          <xref:Microsoft.Win32.SaveFileDialog?displayProperty=nameWithType>.  
   
 <a name="Print_Dialog"></a>   
 ### Print Dialog Box  
@@ -112,7 +112,7 @@ Standalone applications typically have a main window that both displays the main
  [!code-csharp[DialogBoxesOverviewSnippets#PrintDialogBoxCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#printdialogboxcodebehind)]
  [!code-vb[DialogBoxesOverviewSnippets#PrintDialogBoxCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#printdialogboxcodebehind)]  
   
- For more information on the print dialog box, see                          <xref:System.Windows.Controls.PrintDialog?displayProperty=fullName>. For detailed discussion of printing in                          [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], see                          [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md).  
+ For more information on the print dialog box, see                          <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>. For detailed discussion of printing in                          [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], see                          [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md).  
   
 <a name="Custom_Dialog_Boxes"></a>   
 ## Custom Dialog Boxes  
@@ -178,7 +178,7 @@ Standalone applications typically have a main window that both displays the main
 [!code-csharp[DialogBoxSample#OpenMarginsDialogCODEBEHIND4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/MainWindow.xaml.cs#openmarginsdialogcodebehind4)]
 [!code-vb[DialogBoxSample#OpenMarginsDialogCODEBEHIND4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxSample/VisualBasic/MainWindow.xaml.vb#openmarginsdialogcodebehind4)]  
   
- Here, the code is passing default information (the current margins) to the dialog box. It is also setting the                                  <xref:System.Windows.Window.Owner%2A?displayProperty=fullName> property with a reference to the window that is showing the dialog box. In general, you should always set the owner for a dialog box to provide window state-related behaviors that are common to all dialog boxes (see                                  [WPF Windows Overview](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md) for more information).  
+ Here, the code is passing default information (the current margins) to the dialog box. It is also setting the                                  <xref:System.Windows.Window.Owner%2A?displayProperty=nameWithType> property with a reference to the window that is showing the dialog box. In general, you should always set the owner for a dialog box to provide window state-related behaviors that are common to all dialog boxes (see                                  [WPF Windows Overview](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md) for more information).  
   
 > [!NOTE]
 >  You must provide an owner to support                                      [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] automation for dialog boxes (see                                      [UI Automation Overview](../../../../docs/framework/ui-automation/ui-automation-overview.md)).  

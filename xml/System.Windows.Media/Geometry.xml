@@ -33,7 +33,7 @@
 ## Remarks  
   
 ## Geometry Compared to Shape  
- The <xref:System.Windows.Shapes.Shape?displayProperty=fullName> class has a <xref:System.Windows.Shapes.Shape.Fill%2A>, <xref:System.Windows.Shapes.Shape.Stroke%2A>, and other rendering properties that <xref:System.Windows.Media.Geometry> and its derived classes lack. The <xref:System.Windows.Shapes.Shape> class is a <xref:System.Windows.FrameworkElement> and therefore participates in the layout system; its derived classes can be used as the content of any element that supports <xref:System.Windows.UIElement> children.  
+ The <xref:System.Windows.Shapes.Shape?displayProperty=nameWithType> class has a <xref:System.Windows.Shapes.Shape.Fill%2A>, <xref:System.Windows.Shapes.Shape.Stroke%2A>, and other rendering properties that <xref:System.Windows.Media.Geometry> and its derived classes lack. The <xref:System.Windows.Shapes.Shape> class is a <xref:System.Windows.FrameworkElement> and therefore participates in the layout system; its derived classes can be used as the content of any element that supports <xref:System.Windows.UIElement> children.  
   
  The <xref:System.Windows.Media.Geometry> class, on the other hand, simply defines the geometry of a shape, and cannot render itself. Because of its simplicity, it has a wider range of uses.  
   
@@ -93,7 +93,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -121,7 +121,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

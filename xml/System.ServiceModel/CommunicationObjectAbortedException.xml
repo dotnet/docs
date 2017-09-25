@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.CommunicationObjectAbortedException> is a derived class of <xref:System.ServiceModel.CommunicationException?displayProperty=fullName> and can occur in correct applications. Because typically the code that calls the <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName> method reports the error condition that caused the call to <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName>, this exception indicates that the call failed but the most useful error information is elsewhere.  
+ <xref:System.ServiceModel.CommunicationObjectAbortedException> is a derived class of <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> and can occur in correct applications. Because typically the code that calls the <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=nameWithType> method reports the error condition that caused the call to <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=nameWithType>, this exception indicates that the call failed but the most useful error information is elsewhere.  
   
  ]]></format>
     </remarks>

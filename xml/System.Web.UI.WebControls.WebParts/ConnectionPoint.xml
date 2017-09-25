@@ -97,7 +97,7 @@
   
  In contrast, <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> objects have their <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.AllowsMultipleConnections%2A> property value set to `false` (by the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> class) because the Web Parts control set by default allows consumer connection points to establish a connection to only one provider at a time.  
   
- You can change the default behavior concerning multiple connections by assigning different values to the <xref:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.AllowsMultipleConnections%2A?displayProperty=fullName> property (for providers) or the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections%2A?displayProperty=fullName> property (for consumers) on the two <xref:System.Attribute> classes used for connection attributes. If you enable consumer connection points to connect to multiple providers at the same time, your code must deal with any resulting synchronization issues.  
+ You can change the default behavior concerning multiple connections by assigning different values to the <xref:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.AllowsMultipleConnections%2A?displayProperty=nameWithType> property (for providers) or the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections%2A?displayProperty=nameWithType> property (for consumers) on the two <xref:System.Attribute> classes used for connection attributes. If you enable consumer connection points to connect to multiple providers at the same time, your code must deal with any resulting synchronization issues.  
   
    
   

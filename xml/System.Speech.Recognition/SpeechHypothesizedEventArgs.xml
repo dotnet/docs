@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized?displayProperty=fullName> events. The handler uses an instance of `SpeechHypothesizedEventArgs` to return and display information about a tentatively recognized phrase.  
+ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized?displayProperty=nameWithType> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized?displayProperty=nameWithType> events. The handler uses an instance of `SpeechHypothesizedEventArgs` to return and display information about a tentatively recognized phrase.  
   
 ```  
 // Create a handler for the SpeechHypothesized event.  

@@ -54,7 +54,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 ### To change the Microsoft Office–style borders to straight  
   
--   Override <xref:System.Windows.Forms.ToolStripProfessionalRenderer.OnRenderToolStripBorder%2A?displayProperty=fullName>, but do not call the base class.  
+-   Override <xref:System.Windows.Forms.ToolStripProfessionalRenderer.OnRenderToolStripBorder%2A?displayProperty=nameWithType>, but do not call the base class.  
   
 > [!NOTE]
 >  There is a version of this method for <xref:System.Windows.Forms.ToolStripRenderer>, <xref:System.Windows.Forms.ToolStripSystemRenderer>, and <xref:System.Windows.Forms.ToolStripProfessionalRenderer>.  
@@ -117,15 +117,15 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 ### To change the rendering for all ToolStrip controls in your application  
   
-1.  Use the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=fullName> property to choose one of the provided renderers.  
+1.  Use the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=nameWithType> property to choose one of the provided renderers.  
   
-2.  Use <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> to assign a custom renderer.  
+2.  Use <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=nameWithType> to assign a custom renderer.  
   
-3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>.  
+3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=nameWithType> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>.  
   
 ### To turn off the Microsoft Office colors for the entire application  
   
--   Set <xref:System.Windows.Forms.ToolStripManager.VisualStylesEnabled%2A?displayProperty=fullName> to `false`.  
+-   Set <xref:System.Windows.Forms.ToolStripManager.VisualStylesEnabled%2A?displayProperty=nameWithType> to `false`.  
   
 ### To turn off the Microsoft Office colors for one ToolStrip control  
   

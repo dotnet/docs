@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The message version can be set using the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion%2A> property. <xref:System.ServiceModel.Channels.MessageVersion> is limited to using certain versions of SOAP and WS-Addressing and is not extensible. So if these versions are not to be used, this property should be overridden to return <xref:System.ServiceModel.Channels.MessageVersion.None%2A?displayProperty=fullName>.  
+ The message version can be set using the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion%2A> property. <xref:System.ServiceModel.Channels.MessageVersion> is limited to using certain versions of SOAP and WS-Addressing and is not extensible. So if these versions are not to be used, this property should be overridden to return <xref:System.ServiceModel.Channels.MessageVersion.None%2A?displayProperty=nameWithType>.  
   
    
   

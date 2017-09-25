@@ -206,12 +206,12 @@
  The auto-scroll margin is the distance between any child controls and the edges of the scrollable parent control. The <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> size is added to the size of any child controls contained in the scrollable control to determine whether or not scroll bars are needed. The <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> property is evaluated when the parent scrollable control is resized or the individual child controls are brought into view, and is used to determine if scroll bars must be displayed. Docked controls are excluded from the calculations that determine if scroll bars must be displayed.  
   
 > [!NOTE]
->  If a docked control's <xref:System.Windows.Forms.Control.Dock%2A> property is set to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName>, the control fills the parent scrollable control and the docked control is ignored when using the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> to determine whether scroll bars are needed.  
+>  If a docked control's <xref:System.Windows.Forms.Control.Dock%2A> property is set to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType>, the control fills the parent scrollable control and the docked control is ignored when using the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> to determine whether scroll bars are needed.  
   
  If the distance from the edge of a child control to the parent scrollable control is less than the value assigned to the <xref:System.Windows.Forms.ScrollableControl.AutoScrollMargin%2A> property and the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`, the appropriate scroll bar is displayed.  
   
 > [!NOTE]
->  We recommend, when docking controls within a scrollable control, that you add a child scrollable control, such as a <xref:System.Windows.Forms.Panel>, to contain any other controls that might require scrolling. You should add the child <xref:System.Windows.Forms.Panel> control to the scrollable control and its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName> and its <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property set to `true`. You should set the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property of the parent scrollable control to `false`.  
+>  We recommend, when docking controls within a scrollable control, that you add a child scrollable control, such as a <xref:System.Windows.Forms.Panel>, to contain any other controls that might require scrolling. You should add the child <xref:System.Windows.Forms.Panel> control to the scrollable control and its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType> and its <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property set to `true`. You should set the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property of the parent scrollable control to `false`.  
   
    
   
@@ -793,7 +793,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ScrollableControl.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ScrollableControl>, such as a <xref:System.Windows.Forms.Panel> or <xref:System.Windows.Forms.ContainerControl>. Then name the instance `ScrollableControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ScrollableControl.Scroll> event.  
   

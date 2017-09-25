@@ -122,7 +122,7 @@
   
  The <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys%2A> dictionary is automatically populated with the name/value pairs of the field or fields specified in the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A> property. If multiple fields form the primary key, a separate entry is added to the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys%2A> dictionary for every key field.  
   
- To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -165,7 +165,7 @@
   
  The <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues%2A> property is automatically populated with the name/value pairs of the revised fields in the item. A separate entry is added to the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues%2A> property for every field in the item.  
   
- To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -205,7 +205,7 @@
   
  The <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.OldValues%2A> property is automatically populated with the original values of all the fields in the item. A separate entry is added to the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.OldValues%2A> property for every field in the item.  
   
- To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object that is contained in the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.OldValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object that is contained in the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.OldValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

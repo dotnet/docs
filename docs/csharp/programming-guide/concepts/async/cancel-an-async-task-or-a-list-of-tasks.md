@@ -66,7 +66,7 @@ You can set up a button that you can use to cancel an async application if you d
         CancellationTokenSource cts;  
     ```  
   
-2.  Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> method to notify `cts` when the user requests cancellation.  
+2.  Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to notify `cts` when the user requests cancellation.  
   
     ```csharp  
     // ***Add an event handler for the Cancel button.  
@@ -88,7 +88,7 @@ You can set up a button that you can use to cancel an async application if you d
         cts = new CancellationTokenSource();  
         ```  
   
-    -   In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=fullName> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.  
+    -   In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.  
   
         ```csharp  
         try  
@@ -109,7 +109,7 @@ You can set up a button that you can use to cancel an async application if you d
         }  
         ```  
   
-4.  In `AccessTheWebAsync`, use the  <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> overload of the `GetAsync` method in the <xref:System.Net.Http.HttpClient> type to download the contents of a website. Pass `ct`, the <xref:System.Threading.CancellationToken> parameter of `AccessTheWebAsync`, as the second argument. The token carries the message if the user chooses the **Cancel** button.  
+4.  In `AccessTheWebAsync`, use the  <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> overload of the `GetAsync` method in the <xref:System.Net.Http.HttpClient> type to download the contents of a website. Pass `ct`, the <xref:System.Threading.CancellationToken> parameter of `AccessTheWebAsync`, as the second argument. The token carries the message if the user chooses the **Cancel** button.  
   
      The following code shows the changes in `AccessTheWebAsync`.  
   

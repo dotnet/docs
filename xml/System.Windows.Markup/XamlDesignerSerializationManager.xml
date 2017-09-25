@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Markup.XamlDesignerSerializationManager> attempts to optimize access to services that are called frequently during the serialization process.  
   
- A <xref:System.Windows.Markup.XamlDesignerSerializationManager> is also used as an input for certain specialized `ShouldSerialize` methods on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] classes such as <xref:System.Windows.Controls.TextBlock.ShouldSerializeInlines%2A?displayProperty=fullName>, and for an overload of <xref:System.Windows.Markup.XamlWriter.Save%2A?displayProperty=fullName>.  
+ A <xref:System.Windows.Markup.XamlDesignerSerializationManager> is also used as an input for certain specialized `ShouldSerialize` methods on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] classes such as <xref:System.Windows.Controls.TextBlock.ShouldSerializeInlines%2A?displayProperty=nameWithType>, and for an overload of <xref:System.Windows.Markup.XamlWriter.Save%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>

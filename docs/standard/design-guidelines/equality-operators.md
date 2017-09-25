@@ -30,7 +30,7 @@ This section discusses overloading equality operators and refers to `operator==`
   
  **X DO NOT** overload one of the equality operators and not the other.  
   
- **✓ DO** ensure that <xref:System.Object.Equals%2A?displayProperty=fullName> and the equality operators have exactly the same semantics and similar performance characteristics.  
+ **✓ DO** ensure that <xref:System.Object.Equals%2A?displayProperty=nameWithType> and the equality operators have exactly the same semantics and similar performance characteristics.  
   
  This often means that `Object.Equals` needs to be overridden when the equality operators are overloaded.  
   

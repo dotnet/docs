@@ -14,7 +14,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.ICertificatePolicy> interface is used to provide custom security certificate validation for an application. The default policy is to allow valid certificates, as well as valid certificates that have expired. To change this policy, implement the <xref:System.Net.ICertificatePolicy> interface with a different policy, and then assign that policy to <xref:System.Net.ServicePointManager.CertificatePolicy%2A?displayProperty=fullName>.  
+ The <xref:System.Net.ICertificatePolicy> interface is used to provide custom security certificate validation for an application. The default policy is to allow valid certificates, as well as valid certificates that have expired. To change this policy, implement the <xref:System.Net.ICertificatePolicy> interface with a different policy, and then assign that policy to <xref:System.Net.ServicePointManager.CertificatePolicy%2A?displayProperty=nameWithType>.  
   
  <xref:System.Net.ICertificatePolicy> uses the Security Support Provider Interface (SSPI). For more information, see the SSPI documentation on MSDN.  
   

@@ -23,7 +23,7 @@ In some cases, when an app uses two or more app domains with different applicati
   
 1.  An app uses two or more app domains with different application bases.  
   
-2.  Some types are explicitly added to the <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> by calling a method such as <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.SetData%2A?displayProperty=fullName> or <xref:System.Runtime.Remoting.Messaging.CallContext.LogicalSetData%2A?displayProperty=fullName>. These types are not marked as serializable and are not stored in the global assembly cache.  
+2.  Some types are explicitly added to the <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> by calling a method such as <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.SetData%2A?displayProperty=nameWithType> or <xref:System.Runtime.Remoting.Messaging.CallContext.LogicalSetData%2A?displayProperty=nameWithType>. These types are not marked as serializable and are not stored in the global assembly cache.  
   
 3.  Later, code running in the non-default app domain tries to read a value from a configuration file or use XML to deserialize an object.  
   

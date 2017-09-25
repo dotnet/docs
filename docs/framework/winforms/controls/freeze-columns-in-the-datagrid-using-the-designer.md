@@ -45,7 +45,7 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=nameWithType>   
  [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/add-and-remove-columns-in-the-datagrid-using-the-designer.md)   
  [How to: Enable Column Reordering in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/enable-column-reordering-in-the-datagrid-using-the-designer.md)   
  [How to: Display Right-to-Left Text in Windows Forms for Globalization](http://msdn.microsoft.com/en-us/f0663385-2354-4c65-8676-706422283b14)   

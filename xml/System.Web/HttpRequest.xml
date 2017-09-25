@@ -538,7 +538,7 @@ End Class
  ASP.NET includes two intrinsic cookie collections. The collection accessed through the <xref:System.Web.HttpRequest.Cookies%2A> collection of <xref:System.Web.HttpRequest> contains cookies transmitted by the client to the server in the `Cookie` header. The collection accessed through the <xref:System.Web.HttpResponse.Cookies%2A> collection of <xref:System.Web.HttpResponse> contains new cookies created on the server and transmitted to the client in the `Set-Cookie` header.  
   
 > [!NOTE]
->  After you add a cookie by using the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=fullName> collection, the cookie is immediately available in the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=fullName> collection, even if the response has not been sent to the client.  
+>  After you add a cookie by using the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=nameWithType> collection, the cookie is immediately available in the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=nameWithType> collection, even if the response has not been sent to the client.  
   
    
   
@@ -1011,7 +1011,7 @@ End Class
 ## Remarks  
  IIS does not maintain a copy of the request after it has been read. Therefore, it is recommended that only the handler for an HTTP request should read the request entity.  
   
- The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload provides IIS with a copy of the request entity if it was previously read by ASP.NET. This method overload is useful for cases where ASP.NET has read the entity request and you want to reuse the existing request data.  
+ The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=nameWithType> method overload provides IIS with a copy of the request entity if it was previously read by ASP.NET. This method overload is useful for cases where ASP.NET has read the entity request and you want to reuse the existing request data.  
   
  ]]></format>
         </remarks>
@@ -1047,7 +1047,7 @@ End Class
 ## Remarks  
  IIS does not maintain a copy of the request after it has been read. Therefore, it is recommended that only the handler for an HTTP request should read the request entity.  
   
- The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload is useful when you want to perform custom processing, such as inserting a different entity body into memory.  
+ The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=nameWithType> method overload is useful when you want to perform custom processing, such as inserting a different entity body into memory.  
   
  ]]></format>
         </remarks>
@@ -1750,11 +1750,11 @@ Dim fullname2 As String = Request("fullname")
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The timeout period can be specified in the Web.config file (see <xref:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout%2A?displayProperty=fullName>) or programmatically (see <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=fullName>). The timeout period is measured from the time the request comes in. If the default timeout of 110 seconds is in effect, the cancellation token will be tripped no earlier than 110 seconds after request processing begins. You can change the <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=fullName> property value, and as long this token hasn't tripped yet, the new timeout value will be respected.  
+ The timeout period can be specified in the Web.config file (see <xref:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout%2A?displayProperty=nameWithType>) or programmatically (see <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=nameWithType>). The timeout period is measured from the time the request comes in. If the default timeout of 110 seconds is in effect, the cancellation token will be tripped no earlier than 110 seconds after request processing begins. You can change the <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=nameWithType> property value, and as long this token hasn't tripped yet, the new timeout value will be respected.  
   
  Currently the token only provides 15 second granularity, which means that if the timeout value is 110 seconds, the token will be tripped sometime between 110 and 125 seconds after request processing begins. The granularity may change in the future.  
   
- Even though this property is thread-safe, there are restrictions on its use. For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=fullName>.  
+ Even though this property is thread-safe, there are restrictions on its use. For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=nameWithType>.  
   
  This property is meaningless if WebSockets request processing has started.  
   

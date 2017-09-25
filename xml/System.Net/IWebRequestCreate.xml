@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.IWebRequestCreate> interface defines the method that <xref:System.Net.WebRequest> descendants must use to register with the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.IWebRequestCreate> interface defines the method that <xref:System.Net.WebRequest> descendants must use to register with the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method.  
   
  Classes that implement the <xref:System.Net.IWebRequestCreate> interface can be registered with the <xref:System.Net.WebRequest> class and associated with a specific URI scheme so that the <xref:System.Net.WebRequest> calls the class's <xref:System.Net.IWebRequestCreate.Create%2A> method when a URI that matches that scheme is requested.  
   

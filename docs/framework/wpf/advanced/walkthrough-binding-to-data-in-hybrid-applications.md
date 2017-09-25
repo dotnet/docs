@@ -110,7 +110,7 @@ Binding a data source to a control is essential for providing users with access 
      [!code-xaml[WPFWithWFAndDatabinding#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFWithWFAndDatabinding/CSharp/WPFWithWFAndDatabinding/Window1.xaml#6)]  
   
 ## Displaying Data by Using Interoperation  
- The orders corresponding to the selected customer are displayed in a                  <xref:System.Windows.Forms.DataGridView?displayProperty=fullName> control named                  `dataGridView1`. The                  `dataGridView1` control is bound to the data source in the code-behind file. A                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> control is the parent of this                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.  
+ The orders corresponding to the selected customer are displayed in a                  <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> control named                  `dataGridView1`. The                  `dataGridView1` control is bound to the data source in the code-behind file. A                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> control is the parent of this                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.  
   
 #### To display data in the DataGridView control  
   
@@ -132,7 +132,7 @@ Binding a data source to a control is essential for providing users with access 
 4.  When you are prompted to choose your database objects, select the                                  `Customers` and                                  `Orders` tables, and name the generated data set                                  `NorthwindDataSet`.  
   
 ## Binding to the Data Source  
- The                  <xref:System.Windows.Forms.BindingSource?displayProperty=fullName> component provides a uniform interface for the application's data source. Binding to the data source is implemented in the code-behind file.  
+ The                  <xref:System.Windows.Forms.BindingSource?displayProperty=nameWithType> component provides a uniform interface for the application's data source. Binding to the data source is implemented in the code-behind file.  
   
 #### To bind to the data source  
   

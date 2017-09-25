@@ -144,7 +144,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control internally calls the <xref:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle%2A> method to determine the appearance of the cell borders. The <xref:System.Windows.Forms.DataGridView> control typically uses the value of the <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A> property for the `dataGridViewAdvancedBorderStyleInput` parameter.  
   
- The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle?displayProperty=fullName> value is not supported as an input style for cells.  
+ The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle?displayProperty=nameWithType> value is not supported as an input style for cells.  
   
    
   
@@ -289,7 +289,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.ColumnIndex%2A> property to determine which columns to check for integer values. In this example, the cells in the `Description` column are ignored when the contents of the selected cells are summed. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.ColumnIndex%2A> property to determine which columns to check for integer values. In this example, the cells in the `Description` column are ignored when the contents of the selected cells are summed. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -326,7 +326,7 @@
   
  This property calls the <xref:System.Windows.Forms.DataGridViewCell.GetContentBounds%2A> method to get its value. For the base <xref:System.Windows.Forms.DataGridViewCell> type, this value is <xref:System.Drawing.Rectangle.Empty>.  
   
- To get the bounding rectangle of the cell rather than the cell contents, use the <xref:System.Windows.Forms.DataGridView.GetCellDisplayRectangle%2A?displayProperty=fullName> method.  
+ To get the bounding rectangle of the cell rather than the cell contents, use the <xref:System.Windows.Forms.DataGridView.GetCellDisplayRectangle%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -428,7 +428,7 @@
 ## Remarks  
  This property indicates the shortcut menu that is typically displayed when the user right-clicks the cell.  
   
- When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property returns the previously specified value or its default value of `null`.  
+ When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=nameWithType> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property returns the previously specified value or its default value of `null`.  
   
  Handling the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
@@ -495,7 +495,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.DefaultNewRowValue%2A> property in the base class <xref:System.Windows.Forms.DataGridViewCell> always returns `null`. However, this property can be overridden in derived cell classes to return other default values.  
   
- The value returned by this property is displayed if the cell is in the row for new records. This value can be overridden by a handler for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=fullName> event when focus enters the row for new records.  
+ The value returned by this property is displayed if the cell is in the row for new records. This value can be overridden by a handler for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType> event when focus enters the row for new records.  
   
    
   
@@ -701,14 +701,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the current value of the cell or editing control if the cell is in edit mode. Otherwise, getting the value of this property converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event, which you can handle to customize the value conversion.  
+ This property returns the current value of the cell or editing control if the cell is in edit mode. Otherwise, getting the value of this property converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event, which you can handle to customize the value conversion.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.EditedFormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the edited value is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.EditedFormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the edited value is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -830,7 +830,7 @@
 ## Remarks  
  The returned rectangle reports client coordinates, in pixels.  
   
- When the <xref:System.Windows.Forms.DataGridView.ShowCellErrors%2A?displayProperty=fullName> property is `false`, the value of this property is <xref:System.Drawing.Rectangle.Empty>.  
+ When the <xref:System.Windows.Forms.DataGridView.ShowCellErrors%2A?displayProperty=nameWithType> property is `false`, the value of this property is <xref:System.Drawing.Rectangle.Empty>.  
   
  This property calls the <xref:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds%2A> method to get its value. For the base <xref:System.Windows.Forms.DataGridViewCell> type, this value is always <xref:System.Drawing.Rectangle.Empty>.  
   
@@ -954,14 +954,14 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property is the actual data object contained by the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is the formatted representation of this object. The <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
   
- Getting the value of this property calls the <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A> method to convert the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event, which you can handle to customize the value conversion.  
+ Getting the value of this property calls the <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A> method to convert the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event, which you can handle to customize the value conversion.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property. In this example, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property is used to determine if the current cell's contents have been edited and not committed and, if the cell has been modified, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is used. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -1007,7 +1007,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
@@ -1084,13 +1084,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A?displayProperty=fullName> method to retrieve a Clipboard-formatted value that represents the cell value.  
+ This method is called by the <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A?displayProperty=nameWithType> method to retrieve a Clipboard-formatted value that represents the cell value.  
   
- The cell value is first retrieved in its display format from the <xref:System.Windows.Forms.DataGridViewCell.GetEditedFormattedValue%2A> method. This may raise the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event to format the value and the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event if formatting is unsuccessful.  
+ The cell value is first retrieved in its display format from the <xref:System.Windows.Forms.DataGridViewCell.GetEditedFormattedValue%2A> method. This may raise the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event to format the value and the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event if formatting is unsuccessful.  
   
  The position-related parameters of this method indicate where this cell is located in the table of data representing the region defined by the selected cells in the <xref:System.Windows.Forms.DataGridView> control. Depending on the cell's position, additional formatting information may be returned by this method along with the display-formatted cell value. For example, the HTML format for a cell in the first column of a row will include the tag that indicates the beginning of a row.  
   
- The supported Clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=fullName>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=fullName>.  
+ The supported Clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=nameWithType>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=nameWithType>.  
   
  For more information, see the <xref:System.Windows.Forms.Clipboard> class.  
   
@@ -1132,7 +1132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=fullName>.  
+ The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1168,7 +1168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=fullName>.  
+ The size of the cell's contents is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=nameWithType>.  
   
  This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ContentBounds%2A> property is read.  
   
@@ -1201,9 +1201,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the current value of the editing cell or editing control if the cell is in edit mode. Otherwise, this method converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event, which you can handle to customize the value conversion.  
+ This method returns the current value of the editing cell or editing control if the cell is in edit mode. Otherwise, this method converts the cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. This raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event, which you can handle to customize the value conversion.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
  Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value.  
   
@@ -1242,7 +1242,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The size of the cell's error icon area is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=fullName>.  
+ The size of the cell's error icon area is computed dynamically when this method is called. The base class implementation always returns <xref:System.Drawing.Rectangle?displayProperty=nameWithType>.  
   
  This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ErrorIconBounds%2A> property is read.  
   
@@ -1307,12 +1307,12 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control calls this method to convert a cell value into an equivalent display value of the type indicated by the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. The control passes the cell value to this method in the `value` parameter.  
   
- This method raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event. A handler for this event can modify both the `value` and `cellStyle` parameters. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object.  
+ This method raises the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event. A handler for this event can modify both the `value` and `cellStyle` parameters. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object.  
   
 > [!NOTE]
->  This method does not convert `value` to the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=fullName> property value for values equal to the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=fullName> property value when <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is set to a value other than <xref:System.DBNull.Value?displayProperty=fullName> or `null`. In this case, you can handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event to display the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property value. For more information, see the code example in <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>.  
+>  This method does not convert `value` to the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=nameWithType> property value for values equal to the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=nameWithType> property value when <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is set to a value other than <xref:System.DBNull.Value?displayProperty=nameWithType> or `null`. In this case, you can handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event to display the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property value. For more information, see the code example in <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>.  
   
- If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
  Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value.  
   
@@ -1348,11 +1348,11 @@
   
 1.  This cell's <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A>  
   
-2.  The owning row's <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=fullName>  
+2.  The owning row's <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=nameWithType>  
   
-3.  The owning column's <xref:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip%2A?displayProperty=fullName>  
+3.  The owning column's <xref:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip%2A?displayProperty=nameWithType>  
   
-4.  The parent table's <xref:System.Windows.Forms.ContextMenuStrip?displayProperty=fullName>  
+4.  The parent table's <xref:System.Windows.Forms.ContextMenuStrip?displayProperty=nameWithType>  
   
  Shortcut menus are Microsoft Windows native resources whose lifetimes are typically directed by the <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A> method or the destructor.  
   
@@ -1711,7 +1711,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is useful when you are working directly with cell instances. Alternatively, you can use the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=fullName> property. You can also handle the <xref:System.Windows.Forms.DataGridView.CellBeginEdit?displayProperty=fullName> event to determine when the user enters edit mode.  
+ This property is useful when you are working directly with cell instances. Alternatively, you can use the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=nameWithType> property. You can also handle the <xref:System.Windows.Forms.DataGridView.CellBeginEdit?displayProperty=nameWithType> event to determine when the user enters edit mode.  
   
  ]]></format>
         </remarks>
@@ -2382,7 +2382,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2410,7 +2410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2438,7 +2438,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentDoubleClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentDoubleClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellContentDoubleClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellContentDoubleClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2484,7 +2484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellDoubleClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellDoubleClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellDoubleClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellDoubleClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2515,7 +2515,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.DataGridView.CellEnter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellEnter%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which an <xref:System.Windows.Forms.DataGridView.CellEnter?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2545,7 +2545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2575,7 +2575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyPress%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyPress> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyPress%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyPress> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2605,7 +2605,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2636,7 +2636,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellLeave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellLeave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2664,7 +2664,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
    
   
@@ -2700,7 +2700,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDoubleClick?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDoubleClick%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDoubleClick?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2728,7 +2728,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2756,7 +2756,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseEnter%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseEnter%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseEnter?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
    
   
@@ -2792,7 +2792,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseLeave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseLeave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
    
   
@@ -2828,7 +2828,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseMove%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseMove?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseMove%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseMove?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -2856,7 +2856,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.DataGridView.OnCellMouseUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.DataGridView.CellMouseUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -3032,7 +3032,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `errorText` parameter signals the existence of an error. If `errorText` is `null` or <xref:System.String?displayProperty=fullName>, the <xref:System.Windows.Forms.DataGridViewCell.PaintErrorIcon%2A> method does nothing.  
+ The `errorText` parameter signals the existence of an error. If `errorText` is `null` or <xref:System.String?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DataGridViewCell.PaintErrorIcon%2A> method does nothing.  
   
  ]]></format>
         </remarks>
@@ -3071,7 +3071,7 @@
   
  The default implementation of this method parses the `formattedValue` parameter using the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style indicated by the `cellStyle` parameter.  
   
- If `formattedValue` is equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, this method returns the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property or `null` if <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is <xref:System.DBNull.Value?displayProperty=fullName> and the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> is a reference type.  
+ If `formattedValue` is equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, this method returns the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property or `null` if <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> is <xref:System.DBNull.Value?displayProperty=nameWithType> and the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> is a reference type.  
   
  If `formattedValue` is not equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, this method parses `formattedValue` using the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property and the specified or default converters.  
   
@@ -3267,7 +3267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> property indicates whether the data displayed by the cell can be edited. You can set <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells, or you can make an entire row or column of cells read-only by setting the <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=fullName> properties. By default, if a cell's parent row or column is set to read-only, the child cells will adopt the same value. You can override this default behavior by setting <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells.  
+ The <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> property indicates whether the data displayed by the cell can be edited. You can set <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells, or you can make an entire row or column of cells read-only by setting the <xref:System.Windows.Forms.DataGridViewRow.ReadOnly%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=nameWithType> properties. By default, if a cell's parent row or column is set to read-only, the child cells will adopt the same value. You can override this default behavior by setting <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A> for individual cells.  
   
  You can navigate to a read-only cell, and you can set a read-only cell to be the current cell.  
   
@@ -3556,9 +3556,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property is displayed as the cell ToolTip when the mouse pointer is over the cell and the property value is not <xref:System.String.Empty>. If the value of this property is <xref:System.String.Empty>, the cell will display a ToolTip containing the value of the cell if the value is truncated in the cell display; otherwise, the cell will not display a ToolTip. You can also prevent the display of a ToolTip by setting the <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A?displayProperty=fullName> property to `false`.  
+ The value of this property is displayed as the cell ToolTip when the mouse pointer is over the cell and the property value is not <xref:System.String.Empty>. If the value of this property is <xref:System.String.Empty>, the cell will display a ToolTip containing the value of the cell if the value is truncated in the cell display; otherwise, the cell will not display a ToolTip. You can also prevent the display of a ToolTip by setting the <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A?displayProperty=nameWithType> property to `false`.  
   
- When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property returns the previously specified value or its default value of <xref:System.String.Empty>.  
+ When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A?displayProperty=nameWithType> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property returns the previously specified value or its default value of <xref:System.String.Empty>.  
   
  Handling the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
@@ -3633,7 +3633,7 @@
   
  The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property is the actual data object contained by the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property is the formatted representation of the data. The <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
   
- When you set the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property, the specified value is not automatically converted from a formatted, display value to an underlying cell value. For example, the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the cell is ignored, so setting <xref:System.Windows.Forms.DataGridViewCell.Value%2A> to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=fullName> does not result in a property value of <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=fullName>.  
+ When you set the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property, the specified value is not automatically converted from a formatted, display value to an underlying cell value. For example, the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the cell is ignored, so setting <xref:System.Windows.Forms.DataGridViewCell.Value%2A> to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=nameWithType> does not result in a property value of <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A?displayProperty=nameWithType>.  
   
    
   
@@ -3676,7 +3676,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property for the cell has not been set, the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A?displayProperty=fullName> property for the owning column is used, if it exists.  
+ If the <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property for the cell has not been set, the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A?displayProperty=nameWithType> property for the owning column is used, if it exists.  
   
  The <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property is the actual data object contained by the cell, whereas the <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property is the formatted representation of the data. The <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> and <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> properties correspond to the data types of these values, respectively.  
   

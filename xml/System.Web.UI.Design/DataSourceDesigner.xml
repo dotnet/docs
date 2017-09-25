@@ -248,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of the <xref:System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml%2A> method returns the result from the base <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%2A?displayProperty=fullName> method.  
+ The default implementation of the <xref:System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml%2A> method returns the result from the base <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

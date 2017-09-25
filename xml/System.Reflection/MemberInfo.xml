@@ -173,7 +173,7 @@
   
 -   If the `Type` object from which this `MemberInfo` object was obtained did not declare this member, the <xref:System.Reflection.MemberInfo.DeclaringType%2A> property will represent one of its base types.  
   
--   If the `MemberInfo` object is a global member (that is, if it was obtained from the <xref:System.Reflection.Module.GetMethods%2A?displayProperty=fullName> method, which returns global methods on a module), the returned <xref:System.Reflection.MemberInfo.DeclaringType%2A> will be `null`.  
+-   If the `MemberInfo` object is a global member (that is, if it was obtained from the <xref:System.Reflection.Module.GetMethods%2A?displayProperty=nameWithType> method, which returns global methods on a module), the returned <xref:System.Reflection.MemberInfo.DeclaringType%2A> will be `null`.  
   
    
   
@@ -263,7 +263,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  In the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if they are stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
@@ -318,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  In the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
@@ -367,7 +367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> and <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
   
  This method gets custom attribute data for types, nested types, and type members, because the <xref:System.Type> class and the classes in the <xref:System.Reflection> namespace that represent type members all derive from <xref:System.Reflection.MemberInfo>.  
   
@@ -445,7 +445,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.IsDefined%2A?displayProperty=fullName> method.  
+ This method ignores the `inherit` parameter for properties and events. To search the inheritance chain for attributes on properties and events, use the appropriate overloads of the <xref:System.Attribute.IsDefined%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  In the .NET Framework version 2.0, this method returns `true` if a type, method, or constructor has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 use this format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
@@ -593,7 +593,7 @@
    
   
 ## Examples  
- The following code example declares a class that inherits <xref:System.Object> and overrides <xref:System.Object.ToString%2A?displayProperty=fullName>. The example obtains <xref:System.Reflection.MethodInfo> objects for the class's `ToString` method and for the inherited <xref:System.Object.GetHashCode%2A> method, and displays the names of the modules in which the two methods are declared.  
+ The following code example declares a class that inherits <xref:System.Object> and overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>. The example obtains <xref:System.Reflection.MethodInfo> objects for the class's `ToString` method and for the inherited <xref:System.Object.GetHashCode%2A> method, and displays the names of the modules in which the two methods are declared.  
   
  [!code-cpp[System.Reflection.MemberInfo.Module#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.MemberInfo.Module/cpp/source.cpp#1)]
  [!code-csharp[System.Reflection.MemberInfo.Module#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.MemberInfo.Module/CS/source.cs#1)]
@@ -753,12 +753,12 @@
 ## Remarks  
  The `ReflectedType` property retrieves the <xref:System.Type> object that was used to obtain this instance of `MemberInfo`. This may differ from the value of the <xref:System.Reflection.MemberInfo.DeclaringType%2A> property if this <xref:System.Reflection.MemberInfo> object represents a member that is inherited from a base class.  
   
- If the `MemberInfo` object is a global member (that is, if it was obtained from the <xref:System.Reflection.Module.GetMethods%2A?displayProperty=fullName> method, which returns global methods on a module), the returned <xref:System.Reflection.MemberInfo.DeclaringType%2A> will be `null`.  
+ If the `MemberInfo` object is a global member (that is, if it was obtained from the <xref:System.Reflection.Module.GetMethods%2A?displayProperty=nameWithType> method, which returns global methods on a module), the returned <xref:System.Reflection.MemberInfo.DeclaringType%2A> will be `null`.  
   
    
   
 ## Examples  
- The following code example shows how the <xref:System.Reflection.MemberInfo.ReflectedType%2A> changes when the member <xref:System.Object.ToString%2A?displayProperty=fullName> is viewed from a <xref:System.Reflection.MemberInfo> obtained from type <xref:System.Object> and from a <xref:System.Reflection.MemberInfo> obtained from the <xref:System.Reflection.MemberInfo> class itself, which inherits <xref:System.Object> but does not override <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ The following code example shows how the <xref:System.Reflection.MemberInfo.ReflectedType%2A> changes when the member <xref:System.Object.ToString%2A?displayProperty=nameWithType> is viewed from a <xref:System.Reflection.MemberInfo> obtained from type <xref:System.Object> and from a <xref:System.Reflection.MemberInfo> obtained from the <xref:System.Reflection.MemberInfo> class itself, which inherits <xref:System.Object> but does not override <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic MemberInfo.ReflectedType Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MemberInfo.ReflectedType Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MemberInfo.ReflectedType Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MemberInfo.ReflectedType Example/CS/source.cs#1)]

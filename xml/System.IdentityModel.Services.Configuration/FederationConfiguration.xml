@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default web applications have a single <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration?displayProperty=fullName> property. The first time the property is accessed a new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is initialized from settings in the configuration file and the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event is raised. You can use the properties and methods exposed by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> class to modify or replace the object initialized from configuration in an event handler. This object is available through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=fullName> property inside the event handler.  
+ By default web applications have a single <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration?displayProperty=nameWithType> property. The first time the property is accessed a new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is initialized from settings in the configuration file and the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=nameWithType> event is raised. You can use the properties and methods exposed by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> class to modify or replace the object initialized from configuration in an event handler. This object is available through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=nameWithType> property inside the event handler.  
   
  ]]></format>
     </remarks>
@@ -57,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The properties in the new instance are initialized by loading settings from the `<system.identityModel.services>` configuration section. This constructor calls the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor with the `loadConfig` parameter `true`.  
+ The properties in the new instance are initialized by loading settings from the `<system.identityModel.services>` configuration section. This constructor calls the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor with the `loadConfig` parameter `true`.  
   
 > [!WARNING]
 >  Before the new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is used by any of the configured HTTP modules, call the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.Initialize%2A> method to ensure that the instance is properly initialized.  
@@ -265,7 +265,7 @@
 ## Remarks  
  This method ensures that the current instance is properly initialized before it is used by the HTTP Modules to process incoming requests. It should only be called once. Check the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property before calling the method. This method sets the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IsInitialized%2A> property is set `true`.  
   
- The default implementation creates a default cookie handler if there is not one already configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property and calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.Initialize%2A?displayProperty=fullName> method on the identity configuration object that is configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration%2A> property. You can override this method to modify this behavior or to provide additional initialization in derived classes.  
+ The default implementation creates a default cookie handler if there is not one already configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property and calls the <xref:System.IdentityModel.Configuration.IdentityConfiguration.Initialize%2A?displayProperty=nameWithType> method on the identity configuration object that is configured through the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.IdentityConfiguration%2A> property. You can override this method to modify this behavior or to provide additional initialization in derived classes.  
   
  This method should be invoked before the class is used by the HTTP Modules to process incoming requests.  
   

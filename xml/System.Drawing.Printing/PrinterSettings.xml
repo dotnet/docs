@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you access a <xref:System.Drawing.Printing.PrinterSettings> through <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A?displayProperty=fullName> or <xref:System.Drawing.Printing.PageSettings.PrinterSettings%2A?displayProperty=fullName> properties to modify printer settings. The most common printer setting is <xref:System.Drawing.Printing.PrinterSettings.PrinterName%2A>, which specifies the printer to print to.  
+ Typically, you access a <xref:System.Drawing.Printing.PrinterSettings> through <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A?displayProperty=nameWithType> or <xref:System.Drawing.Printing.PageSettings.PrinterSettings%2A?displayProperty=nameWithType> properties to modify printer settings. The most common printer setting is <xref:System.Drawing.Printing.PrinterSettings.PrinterName%2A>, which specifies the printer to print to.  
   
  For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you wish to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
   
@@ -63,7 +63,7 @@
 ## Remarks  
  The default constructor initializes all fields to their default values.  
   
- Typically, you do not create an instance of <xref:System.Drawing.Printing.PrinterSettings>, but instead use the <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A?displayProperty=fullName> to set settings for the printer.  
+ Typically, you do not create an instance of <xref:System.Drawing.Printing.PrinterSettings>, but instead use the <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A?displayProperty=nameWithType> to set settings for the printer.  
   
  ]]></format>
         </remarks>
@@ -359,11 +359,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=fullName> property must be set to `true` to enable the user to specify a print range. In addition, the <xref:System.Windows.Forms.PrintDialog> requires the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> to be specified and the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> value to be within that range.  
+ The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=nameWithType> property must be set to `true` to enable the user to specify a print range. In addition, the <xref:System.Windows.Forms.PrintDialog> requires the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> to be specified and the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> value to be within that range.  
   
- During the printing process, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> event, view the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> to determine what should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=fullName>, use the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties to determine what pages should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=fullName>, then specify output only for the selected pages.  
+ During the printing process, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> event, view the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> to determine what should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=nameWithType>, use the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties to determine what pages should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=nameWithType>, then specify output only for the selected pages.  
   
- The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A>, <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> can also be set programmatically, though the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> implementation is the same.  
+ The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A>, <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> can also be set programmatically, though the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> implementation is the same.  
   
  ]]></format>
         </remarks>
@@ -664,7 +664,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Valid rotation values are 90 and 270 degrees. If landscape is not supported, the only valid rotation value is 0 degrees. You set the <xref:System.Drawing.Printing.PageSettings.Landscape%2A?displayProperty=fullName> property to `true` to print a page in landscape format.  
+ Valid rotation values are 90 and 270 degrees. If landscape is not supported, the only valid rotation value is 0 degrees. You set the <xref:System.Drawing.Printing.PageSettings.Landscape%2A?displayProperty=nameWithType> property to `true` to print a page in landscape format.  
   
  ]]></format>
         </remarks>
@@ -714,7 +714,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=fullName> property must be set to `true` to enable the user to specify a print range. When setting the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> or <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> values programmatically, ensure that they are within the range defined by the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> properties, or an exception is thrown when displaying the <xref:System.Windows.Forms.PrintDialog>.  
+ The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=nameWithType> property must be set to `true` to enable the user to specify a print range. When setting the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> or <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> values programmatically, ensure that they are within the range defined by the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> properties, or an exception is thrown when displaying the <xref:System.Windows.Forms.PrintDialog>.  
   
  ]]></format>
         </remarks>
@@ -740,7 +740,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=fullName> property must be set to `true` to enable the user to specify a print range. When setting the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> or <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> values programmatically, ensure that they are within the range defined by the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> properties, or an exception is thrown when displaying the <xref:System.Windows.Forms.PrintDialog>.  
+ The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=nameWithType> property must be set to `true` to enable the user to specify a print range. When setting the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> or <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> values programmatically, ensure that they are within the range defined by the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> properties, or an exception is thrown when displaying the <xref:System.Windows.Forms.PrintDialog>.  
   
  ]]></format>
         </remarks>
@@ -766,9 +766,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> contains <xref:System.Drawing.Printing.PaperSize> instances that represent the paper sizes through the <xref:System.Drawing.Printing.PaperSize.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperKind> values.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PaperSizeCollection> contains <xref:System.Drawing.Printing.PaperSize> instances that represent the paper sizes through the <xref:System.Drawing.Printing.PaperSize.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PaperKind> values.  
   
- Typically, you set a page's paper size through the <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PaperSize> available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A> collection.  
+ Typically, you set a page's paper size through the <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=nameWithType> property to a valid <xref:System.Drawing.Printing.PaperSize> available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A> collection.  
   
  To specify a custom paper size, see the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor.  
   
@@ -804,9 +804,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PaperSourceCollection> contains <xref:System.Drawing.Printing.PaperSource> instances that represent the paper source trays through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PaperSourceCollection> contains <xref:System.Drawing.Printing.PaperSource> instances that represent the paper source trays through the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PaperSourceKind> values.  
   
- Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PaperSource> available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A> collection.  
+ Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PaperSource%2A?displayProperty=nameWithType> property to a valid <xref:System.Drawing.Printing.PaperSource> available through the <xref:System.Drawing.Printing.PrinterSettings.PaperSources%2A> collection.  
   
    
   
@@ -885,9 +885,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection> contains <xref:System.Drawing.Printing.PrinterResolution> instances that represent the printer resolutions supported through the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PrinterResolutionKind> values.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection> contains <xref:System.Drawing.Printing.PrinterResolution> instances that represent the printer resolutions supported through the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PrinterResolutionKind> values.  
   
- Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PrinterResolution> available through the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A> collection.  
+ Typically, you set a page's paper source through the <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=nameWithType> property to a valid <xref:System.Drawing.Printing.PrinterResolution> available through the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A> collection.  
   
  If <xref:System.Drawing.Printing.PrinterResolutionKind> is `Custom`, then use the <xref:System.Drawing.Printing.PrinterResolution.X%2A> and <xref:System.Drawing.Printing.PrinterResolution.Y%2A> properties to determine the custom printer resolution in the horizontal and vertical directions, respectively.  
   
@@ -942,11 +942,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> property is used by the <xref:System.Windows.Forms.PrintDialog>.when the user selects a print range. The default <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is `AllPages`. To enable the user to specify a range of pages to print, the <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=fullName> property must be set to `true`. To enable the user to specify the selected pages to print, the <xref:System.Windows.Forms.PrintDialog.AllowSelection%2A?displayProperty=fullName> property must be set to `true`.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> property is used by the <xref:System.Windows.Forms.PrintDialog>.when the user selects a print range. The default <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is `AllPages`. To enable the user to specify a range of pages to print, the <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=nameWithType> property must be set to `true`. To enable the user to specify the selected pages to print, the <xref:System.Windows.Forms.PrintDialog.AllowSelection%2A?displayProperty=nameWithType> property must be set to `true`.  
   
- During the printing process, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> event, view the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> to determine what should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=fullName>, use the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties to determine what pages should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=fullName>, then specify output only for the selected pages.  
+ During the printing process, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> event, view the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> to determine what should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=nameWithType>, use the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties to determine what pages should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=nameWithType>, then specify output only for the selected pages.  
   
- The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A>, <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> can also be set programmatically, though the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> implementation is the same.  
+ The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A>, <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> can also be set programmatically, though the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> implementation is the same.  
   
  ]]></format>
         </remarks>
@@ -973,10 +973,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PrintToFile%2A> property is used by the <xref:System.Windows.Forms.PrintDialog> when the user selects the **Print to file** option. In such a case, the output port is set to "FILE," causing the Windows printing subsystem to prompt the user for a file name when the <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=fullName> method is called.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PrintToFile%2A> property is used by the <xref:System.Windows.Forms.PrintDialog> when the user selects the **Print to file** option. In such a case, the output port is set to "FILE," causing the Windows printing subsystem to prompt the user for a file name when the <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method is called.  
   
 > [!NOTE]
->  The <xref:System.Drawing.Printing.PrinterSettings.PrintToFile%2A> property is only used by the <xref:System.Windows.Forms.PrintDialog> and cannot be set programmatically. The `Print to file` option only appears on the <xref:System.Windows.Forms.PrintDialog> when the <xref:System.Windows.Forms.PrintDialog.AllowPrintToFile%2A?displayProperty=fullName> property is set to `true`.  
+>  The <xref:System.Drawing.Printing.PrinterSettings.PrintToFile%2A> property is only used by the <xref:System.Windows.Forms.PrintDialog> and cannot be set programmatically. The `Print to file` option only appears on the <xref:System.Windows.Forms.PrintDialog> when the <xref:System.Windows.Forms.PrintDialog.AllowPrintToFile%2A?displayProperty=nameWithType> property is set to `true`.  
   
  ]]></format>
         </remarks>
@@ -1055,7 +1055,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To print using color, and if the printer supports it, set <xref:System.Drawing.Printing.PageSettings.Color%2A?displayProperty=fullName> to `true`.  
+ To print using color, and if the printer supports it, set <xref:System.Drawing.Printing.PageSettings.Color%2A?displayProperty=nameWithType> to `true`.  
   
    
   
@@ -1091,11 +1091,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=fullName> property must be set to `true` to enable the user to specify a print range. In addition, the <xref:System.Windows.Forms.PrintDialog> also requires the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> to be specified and the <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> value to be within that range.  
+ The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties are used by the <xref:System.Windows.Forms.PrintDialog> when the user selects a print range. The <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A?displayProperty=nameWithType> property must be set to `true` to enable the user to specify a print range. In addition, the <xref:System.Windows.Forms.PrintDialog> also requires the <xref:System.Drawing.Printing.PrinterSettings.MinimumPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.MaximumPage%2A> to be specified and the <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> value to be within that range.  
   
- During the printing process, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> event, view the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> to determine what should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=fullName>, use the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties to determine what pages should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=fullName>, then specify output only for the selected pages.  
+ During the printing process, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> event, view the <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> to determine what should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=nameWithType>, use the <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> properties to determine what pages should be printed. If <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> is <xref:System.Drawing.Printing.PrintRange?displayProperty=nameWithType>, then specify output only for the selected pages.  
   
- The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A>, <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> can also be set programmatically, though the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> implementation is the same.  
+ The <xref:System.Drawing.Printing.PrinterSettings.FromPage%2A>, <xref:System.Drawing.Printing.PrinterSettings.ToPage%2A> and <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> can also be set programmatically, though the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=nameWithType> implementation is the same.  
   
  ]]></format>
         </remarks>

@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is intended to be inherited by a user class that provides specific events to be used for ETW. The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=fullName> methods are called to log the events.  
+ This class is intended to be inherited by a user class that provides specific events to be used for ETW. The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> methods are called to log the events.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -366,7 +366,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.Tracing.EventSource> constructors do not throw exceptions. Instead, any exception that is thrown is assigned to the <xref:System.Diagnostics.Tracing.EventSource.ConstructionException%2A> property and logged by the <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=fullName> method.  
+ <xref:System.Diagnostics.Tracing.EventSource> constructors do not throw exceptions. Instead, any exception that is thrown is assigned to the <xref:System.Diagnostics.Tracing.EventSource.ConstructionException%2A> property and logged by the <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1473,7 +1473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `WriteEvent` method provides overloads with combinations of string and integer arguments. If none of these combinations match the parameters for the call, the compiler uses the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%28System.Int32%2CSystem.Object%5B%5D%29?displayProperty=fullName> overload, which is considerably slower than the other overloads. See the overload page for details.  
+ The `WriteEvent` method provides overloads with combinations of string and integer arguments. If none of these combinations match the parameters for the call, the compiler uses the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%28System.Int32%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> overload, which is considerably slower than the other overloads. See the overload page for details.  
   
  In all cases, the `eventid` parameter should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
   
@@ -1770,7 +1770,7 @@ public void Info1(string arg1)
   
 4.  It calls the function, which then determines the type of each argument so it can be serialized for ETW.  
   
- The high overhead for this overload is not significant when tracing low-volume events, because the method is used only when the provider is enabled. However, for high-volume events, the performance overhead can be significant.  You can avoid using <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=fullName> for high-volume payloads by creating a new, faster  overload with the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
+ The high overhead for this overload is not significant when tracing low-volume events, because the method is used only when the provider is enabled. However, for high-volume events, the performance overhead can be significant.  You can avoid using <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> for high-volume payloads by creating a new, faster  overload with the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
   
  `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
   
@@ -2642,7 +2642,7 @@ class AnotherEventSource : EventSource {
   
 1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
   
-2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=nameWithType> property.  
   
 3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
   
@@ -2714,7 +2714,7 @@ class AnotherEventSource : EventSource {
   
 1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
   
-2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode.Send> or <xref:System.Diagnostics.Tracing.EventOpcode.Receive> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=nameWithType> property.  
   
 3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
   

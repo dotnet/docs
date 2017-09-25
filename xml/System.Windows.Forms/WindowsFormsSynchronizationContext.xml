@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the destination thread no longer exists or the value of its <xref:System.Threading.Thread.IsAlive%2A?displayProperty=fullName> property is `false`, the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Send%2A> method raises an <xref:System.ComponentModel.InvalidAsynchronousStateException>. It is up to the caller to determine what further action to take.  
+ If the destination thread no longer exists or the value of its <xref:System.Threading.Thread.IsAlive%2A?displayProperty=nameWithType> property is `false`, the <xref:System.Windows.Forms.WindowsFormsSynchronizationContext.Send%2A> method raises an <xref:System.ComponentModel.InvalidAsynchronousStateException>. It is up to the caller to determine what further action to take.  
   
  ]]></format>
         </remarks>

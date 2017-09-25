@@ -45,7 +45,7 @@ The CodeDOM provides types that represent many common types of source code eleme
  The structure of a CodeDOM graph is like a tree of containers. The top-most, or root, container of each compilable CodeDOM graph is a <xref:System.CodeDom.CodeCompileUnit>. Every element of your source code model must be linked into the graph through a property of a <xref:System.CodeDom.CodeObject> in the graph.  
   
 ### Building a Source Code Model for a Sample Hello World Program  
- The following walkthrough provides an example of how to build a CodeDOM object graph that represents the code for a simple Hello World application. For the complete source code for this code example, see the <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=fullName> topic.  
+ The following walkthrough provides an example of how to build a CodeDOM object graph that represents the code for a simple Hello World application. For the complete source code for this code example, see the <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> topic.  
   
 #### Creating a compile unit  
  The CodeDOM defines an object called a <xref:System.CodeDom.CodeCompileUnit>, which can reference a CodeDOM object graph that models the source code to compile. A **CodeCompileUnit** has properties for storing references to attributes, namespaces, and assemblies.  

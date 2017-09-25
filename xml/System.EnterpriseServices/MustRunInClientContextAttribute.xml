@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the context attributes of the attributed object conflict with those of the context of the creator, a <xref:System.Runtime.InteropServices.COMException?displayProperty=fullName> is thrown when an attempt is made to create the object.  
+ If the context attributes of the attributed object conflict with those of the context of the creator, a <xref:System.Runtime.InteropServices.COMException?displayProperty=nameWithType> is thrown when an attempt is made to create the object.  
   
  For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   

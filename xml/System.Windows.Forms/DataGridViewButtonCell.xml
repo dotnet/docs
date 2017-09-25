@@ -18,9 +18,9 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display a button-like UI.  
   
- <xref:System.Windows.Forms.DataGridViewButtonColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewButtonCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewButtonCell>, set the column's <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ <xref:System.Windows.Forms.DataGridViewButtonColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A?displayProperty=nameWithType> is initialized to a new <xref:System.Windows.Forms.DataGridViewButtonCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewButtonCell>, set the column's <xref:System.Windows.Forms.DataGridViewButtonColumn.CellTemplate%2A> property to the cell to use as a pattern.  
   
- To respond to user button clicks, handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event. In the event handler, you can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=fullName> property to determine whether the click occurred a the button column. You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=fullName> property to determine whether the click occurred in a particular button cell.  
+ To respond to user button clicks, handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=nameWithType> event. In the event handler, you can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=nameWithType> property to determine whether the click occurred a the button column. You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=nameWithType> property to determine whether the click occurred in a particular button cell.  
   
  The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
   
@@ -30,7 +30,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. You can use similar code when working with individual <xref:System.Windows.Forms.DataGridViewButtonCell> objects. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](~/docs/framework/winforms/controls/access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md).  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. You can use similar code when working with individual <xref:System.Windows.Forms.DataGridViewButtonCell> objects. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](~/docs/framework/winforms/controls/access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/CS/form1.cs#100)]
  [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#100)]  
@@ -169,7 +169,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewButtonColumn.FlatStyle%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewButtonColumn.FlatStyle%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#10)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#10)]
@@ -529,7 +529,7 @@
 ## Remarks  
  When activated by the SPACE key, this method updates the cell's user interface (UI).  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -564,7 +564,7 @@
 ## Remarks  
  When activated by the SPACE key, this method updates the cell's user interface (UI) and raises the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A> and <xref:System.Windows.Forms.DataGridView.OnCellContentClick%2A> events on the owning <xref:System.Windows.Forms.DataGridView>.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -598,7 +598,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -631,7 +631,7 @@
 ## Remarks  
  If activated by depressing the left mouse button, this method updates the cell's user interface (UI).  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -664,7 +664,7 @@
 ## Remarks  
  If the cell's button is not in its normal state, this method causes the cell's user interface (UI) to be updated.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseLeave> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseLeave> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -695,7 +695,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
@@ -728,7 +728,7 @@
 ## Remarks  
  If activated by the left mouse button, this method updates the cell's user interface (UI).  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>

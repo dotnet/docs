@@ -557,7 +557,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A `get` request is limited in the amount of data it can post. Some types of postbacks might fail when using a `get` request. The advantage of a `get` request is that all the parameters are specified as part of the URL, and the URL can be cached or saved. The elements of a `post` request are contained within the <xref:System.Web.HttpRequest.Form%2A?displayProperty=fullName>.  
+ A `get` request is limited in the amount of data it can post. Some types of postbacks might fail when using a `get` request. The advantage of a `get` request is that all the parameters are specified as part of the URL, and the URL can be cached or saved. The elements of a `post` request are contained within the <xref:System.Web.HttpRequest.Form%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

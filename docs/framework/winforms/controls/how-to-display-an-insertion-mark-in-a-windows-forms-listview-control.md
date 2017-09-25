@@ -26,7 +26,7 @@ manager: "wpickett"
 The insertion mark in the <xref:System.Windows.Forms.ListView> control shows users the point where dragged items will be inserted. When a user drags an item to a point between two other items, the insertion mark shows the item's expected new location.  
   
 > [!NOTE]
->  The insertion mark feature is available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method. On earlier operating systems, any code relating to the insertion mark has no effect and the insertion mark will not appear. For more information, see <xref:System.Windows.Forms.ListViewInsertionMark>.  
+>  The insertion mark feature is available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to the insertion mark has no effect and the insertion mark will not appear. For more information, see <xref:System.Windows.Forms.ListViewInsertionMark>.  
   
  The following image shows an insertion mark:  
   
@@ -48,7 +48,7 @@ The insertion mark in the <xref:System.Windows.Forms.ListView> control shows use
   
 ## See Also  
  <xref:System.Windows.Forms.ListView>   
- <xref:System.Windows.Forms.ListView.InsertionMark%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.ListView.InsertionMark%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.ListViewInsertionMark>   
  [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)   
  [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)   

@@ -165,7 +165,7 @@
   
  The reader uses the following steps to determine the encoding of the stream:  
   
-1.  Checks the <xref:System.Xml.XmlParserContext.Encoding%2A?displayProperty=fullName> property to determine the encoding.  
+1.  Checks the <xref:System.Xml.XmlParserContext.Encoding%2A?displayProperty=nameWithType> property to determine the encoding.  
   
 2.  If the `Encoding` property is `null`, the reader checks for a byte-order mark at the beginning of the stream.  
   
@@ -2514,7 +2514,7 @@ reader.MoveToAttribute("name");
   
  If the `XmlSchemaCollection` includes an XML schema (XSD) which contains `include` or `import` elements that reference other namespaces, the schemas for these other namespaces are loaded for validation purposes only. Unless these schemas were explicitly added to the schema collection, they will not be accessible using any of the collection methods or properties. For example, if the collection contains the schema file `a.xsd`, which contains a reference to the schema file `b.xsd`, you must add `b.xsd` to the schema collection before you can access it using any of the collection methods or properties.  
   
- When the `XmlSchemaCollection` is accessed using the `Schemas` property, the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A?displayProperty=fullName> method uses the <xref:System.Xml.XmlResolver> specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+ When the `XmlSchemaCollection` is accessed using the `Schemas` property, the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A?displayProperty=nameWithType> method uses the <xref:System.Xml.XmlResolver> specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  The schemas must be added to the `XmlSchemaCollection` before the first `Read` call.  
@@ -2793,7 +2793,7 @@ object obj = vreader.SchemaType;
 > [!NOTE]
 >  If an element reports a validation error, the rest of the content model for that element is not validated, however, its children are validated. The reader only reports the first error for a given element.  
   
- The callback handler can use the <xref:System.Xml.Schema.ValidationEventArgs.Severity%2A?displayProperty=fullName> property to guarantee that an XML instance document is validated against a schema. The `Severity` property allows you to distinguish between validation errors (Severity is equal to XmlSeverityType.Error) that indicate a fatal error, and validation warnings (Severity is equal to XmlSeverityType.Warning) that indicate that no schema information is available.  
+ The callback handler can use the <xref:System.Xml.Schema.ValidationEventArgs.Severity%2A?displayProperty=nameWithType> property to guarantee that an XML instance document is validated against a schema. The `Severity` property allows you to distinguish between validation errors (Severity is equal to XmlSeverityType.Error) that indicate a fatal error, and validation warnings (Severity is equal to XmlSeverityType.Warning) that indicate that no schema information is available.  
   
    
   

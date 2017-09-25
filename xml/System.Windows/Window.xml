@@ -336,7 +336,7 @@
   
  Closing a window causes the <xref:System.Windows.Window.Closing> event to be raised. If the <xref:System.Windows.Window.Closing> event isn't canceled, the following occurs:  
   
--   The <xref:System.Windows.Window> is removed from <xref:System.Windows.Application.Windows%2A?displayProperty=fullName> (if an <xref:System.Windows.Application> object exists).  
+-   The <xref:System.Windows.Window> is removed from <xref:System.Windows.Application.Windows%2A?displayProperty=nameWithType> (if an <xref:System.Windows.Application> object exists).  
   
 -   The <xref:System.Windows.Window> is removed from the owner <xref:System.Windows.Window> if the owner/owned relationship was established before the owned <xref:System.Windows.Window> was shown and after the owner <xref:System.Windows.Window> was opened.  
   
@@ -346,7 +346,7 @@
   
 -   If <xref:System.Windows.Window.ShowDialog%2A> was called to show the <xref:System.Windows.Window>, <xref:System.Windows.Window.ShowDialog%2A> returns.  
   
- Closing a <xref:System.Windows.Window> causes any windows that it owns to be closed. Furthermore, closing a <xref:System.Windows.Window> may cause an application to stop running depending on how the <xref:System.Windows.Application.ShutdownMode%2A?displayProperty=fullName> property is set.  
+ Closing a <xref:System.Windows.Window> causes any windows that it owns to be closed. Furthermore, closing a <xref:System.Windows.Window> may cause an application to stop running depending on how the <xref:System.Windows.Application.ShutdownMode%2A?displayProperty=nameWithType> property is set.  
   
 > [!NOTE]
 >  This method cannot be called when a window is hosted in a browser.  
@@ -695,7 +695,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A window is not closed when it is hidden, and neither the <xref:System.Windows.Window.Closing> nor <xref:System.Windows.Window.Closed> event is raised. Instead, the window's <xref:System.Windows.UIElement.Visibility%2A> property is set to <xref:System.Windows.Visibility?displayProperty=fullName>.  
+ A window is not closed when it is hidden, and neither the <xref:System.Windows.Window.Closing> nor <xref:System.Windows.Window.Closed> event is raised. Instead, the window's <xref:System.Windows.UIElement.Visibility%2A> property is set to <xref:System.Windows.Visibility?displayProperty=nameWithType>.  
   
  If a window is the application's <xref:System.Windows.Application.MainWindow%2A> and the application's <xref:System.Windows.Application.ShutdownMode%2A> is <xref:System.Windows.ShutdownMode.OnMainWindowClose>, the application does not shut down. Likewise, the application does not shut down if a window is the only window and the application's shutdown mode is <xref:System.Windows.ShutdownMode.OnLastWindowClose>.  
   
@@ -1992,7 +1992,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The title of a <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, or [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], can also be set by using <xref:System.Windows.Controls.Page.WindowTitle%2A?displayProperty=fullName>.  
+ The title of a <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, or [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], can also be set by using <xref:System.Windows.Controls.Page.WindowTitle%2A?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_WindowTitle"></a>   
 ## Dependency Property Information  

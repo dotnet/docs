@@ -52,8 +52,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a range that consists of the Alphabetic Presentation Forms (U+FB00-U+FB4F).</summary>
-        <value>a range that consists of the Alphabetic Presentation Forms (U+FB00-U+FB4F).</value>
+        <summary>Gets the Alphabetic Presentation Forms Unicode block (U+FB00-U+FB4F).</summary>
+        <value>The Alphabetic Presentation Forms Unicode block (U+FB00-U+FB4F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Arabic Extended A Unicode block (U+08A0-U+08FF).</summary>
-        <value>The Arabic Extended A Unicode block (U+08A0-U+08FF).</value>
+        <summary>Gets the Arabic Extended-A Unicode block (U+08A0-U+08FF).</summary>
+        <value>The Arabic Extended-A Unicode block (U+08A0-U+08FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Arabic Presentation Forms A Unicode block (U+FB50-U+FDFD).</summary>
-        <value>The Arabic Presentation Forms A Unicode block (U+FB50-U+FDFD).</value>
+        <summary>Gets the Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFD).</summary>
+        <value>The Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFD).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Arabic Presentation Forms B Unicode block (U+FE70-U+FEFF).</summary>
-        <value>The Arabic Presentation Forms B Unicode block (U+FE70-U+FEFF).</value>
+        <summary>Gets the Arabic Presentation Forms-B Unicode block (U+FE70-U+FEFF).</summary>
+        <value>The Arabic Presentation Forms-B Unicode block (U+FE70-U+FEFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,8 +512,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CJK Compatibility Unicode block (U+3300-U+33FF).</summary>
+        <value>The CJK Compatibility Unicode block (U+3300-U+33FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,8 +532,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the CJK Compatibility Unicode block (U+3300-U+33FF).</summary>
-        <value>The CJK Compatibility Unicode block (U+3300-U+33FF).</value>
+        <summary>Gets the CJK Compatibility Forms Unicode block (U+FE30-U+FE4F).</summary>
+        <value>The CJK Compatibility Forms Unicode block (U+FE30-U+FE4F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,8 +552,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the CJK Compatibility Ideographs Unicode block (U+3300-U+33FF).</summary>
-        <value>To be added.</value>
+        <summary>Gets the CJK Compatibility Ideographs Unicode block (U+F900-U+FAD9).</summary>
+        <value>The CJK Compatibility Ideographs Unicode block (U+F900-U+FAD9).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,8 +572,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CJK Radicals Supplement Unicode block (U+2E80-U+2EF3).</summary>
+        <value>The CJK Radicals Supplement Unicode block (U+2E80-U+2EF3).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,8 +592,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CJK Strokes Unicode block (U+31C0-U+31E3).</summary>
+        <value>The CJK Strokes Unicode block (U+31C0-U+31E3).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,8 +612,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CJK Symbols and Punctuation Unicode block (U+3000-U+303F).</summary>
+        <value>The CJK Symbols and Punctuation Unicode block (U+3000-U+303F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -632,8 +632,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CJK Unified Ideographs Unicode block (U+4E00-U+9FCC).</summary>
+        <value>The CJK Unified Ideographs Unicode block (U+4E00-U+9FCC).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -652,8 +652,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CJK Unitied Ideographs Extension A Unicode block (U+3400-U+4DB5).</summary>
+        <value>The CJK Unitied Ideographs Extension A Unicode block (U+3400-U+4DB5).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,8 +692,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1ABE).</summary>
+        <value>The Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1ABE).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -752,8 +752,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Combining Half Marks Unicode block (U+FE20-U+FE2D).</summary>
+        <value>The Combining Half Marks Unicode block (U+FE20-U+FE2D).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -772,8 +772,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Common Indic Forms and Numbers Unicode block (U+A830-U+A839).</summary>
+        <value>The Common Indic Forms and Numbers Unicode block (U+A830-U+A839).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -892,8 +892,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Cyrillic Extended-B Unicode block (U+A640-U+A69F).</summary>
+        <value>The Cyrillic Extended-B Unicode block (U+A640-U+A69F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -952,8 +952,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Devanagari Extended Unicode block (U+A8E0-U+A8FB).</summary>
+        <value>The Devanagari Extended Unicode block (U+A8E0-U+A8FB).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1012,8 +1012,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Enclosed CJK Letters and Months Unicode block (U+3200-U+32FE).</summary>
+        <value>The Enclosed CJK Letters and Months Unicode block (U+3200-U+32FE).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1072,8 +1072,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Ethiopic Extended-A Unicode block (U+AB00-U+AB2E).</summary>
+        <value>The Ethiopic Extended-A Unicode block (U+AB00-U+AB2E).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1292,8 +1292,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Halfwidth and Fullwidth Forms Unicode block (U+FF00-U+FFEE).</summary>
+        <value>The Halfwidth and Fullwidth Forms Unicode block (U+FF00-U+FFEE).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1312,8 +1312,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Hangul Compatibility Jamo Unicode block (U+3131-U+318E).</summary>
+        <value>The Hangul Compatibility Jamo Unicode block (U+3131-U+318E).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1352,8 +1352,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Hangul Jamo Extended-A Unicode block (U+A960-U+A97C).</summary>
+        <value>The Hangul Jamo Extended-A Unicode block (U+A960-U+A97C).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1372,8 +1372,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FB).</summary>
+        <value>The Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FB).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1392,8 +1392,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Hangul Syllables Unicode block (U+AC00-U+D7A3).</summary>
+        <value>The Hangul Syllables Unicode block (U+AC00-U+D7A3).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1452,8 +1452,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Hiragana Unicode block (U+3040-U+309F).</summary>
+        <value>The Hiragana Unicode block (U+3040-U+309F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1472,8 +1472,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Ideographic Description Characters Unicode block (U+2FF0-U+2FFB).</summary>
+        <value>The Ideographic Description Characters Unicode block (U+2FF0-U+2FFB).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1512,8 +1512,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Javanese Unicode block (U+A980-U+A9DF).</summary>
+        <value>The Javanese Unicode block (U+A980-U+A9DF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1532,8 +1532,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Kanbun Unicode block (U+3190-U+319F).</summary>
+        <value>The Kanbun Unicode block (U+3190-U+319F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1552,8 +1552,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Kangxi Radicals Supplement Unicode block (U+2F00-U+2FD5).</summary>
+        <value>The Kangxi Radicals Supplement Unicode block (U+2F00-U+2FD5).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1592,8 +1592,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Katakana Unicode block (U+30A0-U+30FF).</summary>
+        <value>The Katakana Unicode block (U+30A0-U+30FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1612,8 +1612,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Katakana Phonetic Extensions Unicode block (U+31F0-U+31FF).</summary>
+        <value>The Katakana Phonetic Extensions Unicode block (U+31F0-U+31FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1632,8 +1632,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Kayah Li Unicode block (U+A900-U+A92F).</summary>
+        <value>The Kayah Li Unicode block (U+A900-U+A92F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1812,8 +1812,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Latin Extended-D Unicode block (U+A720-U+A7FF).</summary>
+        <value>The Latin Extended-D Unicode block (U+A720-U+A7FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1832,8 +1832,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Latin Extended-E Unicode block (U+AB30-U+AB65).</summary>
+        <value>The Latin Extended-E Unicode block (U+AB30-U+AB65).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1912,8 +1912,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Lisu Unicode block (U+A4D0-U+A4FF).</summary>
+        <value>The Lisu Unicode block (U+A4D0-U+A4FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1992,8 +1992,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Meetei Mayek Unicode block (U+ABC0-U+ABF9).</summary>
+        <value>The Meetei Mayek Unicode block (U+ABC0-U+ABF9).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2012,8 +2012,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Meetei Mayek Extensions Unicode block (U+AAE0-U+AAF6).</summary>
+        <value>The Meetei Mayek Extensions Unicode block (U+AAE0-U+AAF6).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2132,8 +2132,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Modifier Tone Letters Unicode block (U+A700-U+A71F).</summary>
+        <value>The Modifier Tone Letters Unicode block (U+A700-U+A71F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2192,8 +2192,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Myanmar Extended-A Unicode block (U+AA60-U+AA7F).</summary>
+        <value>The Myanmar Extended-A Unicode block (U+AA60-U+AA7F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2212,8 +2212,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Myanmar Extended-B Unicode block (U+A9E0-U+A9FE).</summary>
+        <value>The Myanmar Extended-B Unicode block (U+A9E0-U+A9FE).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2272,8 +2272,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an empty Unicode range. </summary>
+        <value>A Unicode range with no elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2392,8 +2392,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Phags-pa Unicode block (U+A840-U+A877).</summary>
+        <value>The Phags-pa Unicode block (U+A840-U+A877).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2452,8 +2452,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Rejang Unicode block (U+A930-U+A95F).</summary>
+        <value>The Rejang Unicode block (U+A930-U+A95F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2512,8 +2512,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Saurashtra Unicode block (U+A880-U+A8D9).</summary>
+        <value>The Saurashtra Unicode block (U+A880-U+A8D9).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2552,8 +2552,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Small Form Variants Unicode block (U+FE50-U+FE6B).</summary>
+        <value>The Small Form Variants Unicode block (U+FE50-U+FE6B).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2592,8 +2592,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Specials Unicode block (U+FFF9-U+FFFF).</summary>
+        <value>The Specials Unicode block (U+FFF9-U+FFFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2673,7 +2673,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the Supplemental Arrows-A Unicode block (U+27F0-U+27FF).</summary>
-        <value>The Supplemental Arrows-A Unicode block (U+27F0-U+27FF)..</value>
+        <value>The Supplemental Arrows-A Unicode block (U+27F0-U+27FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2752,8 +2752,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Syloti Nagri Unicode block (U+A800-U+A82B).</summary>
+        <value>The Syloti Nagri Unicode block (U+A800-U+A82B).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2872,8 +2872,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Tai Viet Unicode block (U+AA80-U+AADF).</summary>
+        <value>The Tai Viet Unicode block (U+AA80-U+AADF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3052,8 +3052,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Vai Unicode block (U+A500-U+A62B).</summary>
+        <value>The Vai Unicode block (U+A500-U+A62B).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3072,8 +3072,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Variation Selectors Unicode block (U+FE00-U+FE0F).</summary>
+        <value>The Variation Selectors Unicode block (U+FE00-U+FE0F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3112,8 +3112,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Vertical Forms Unicode block (U+FE10-U+FE19).</summary>
+        <value>The Vertical Forms Unicode block (U+FE10-U+FE19).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3132,8 +3132,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Yijing Hexagram Symbols Unicode block (U+4DC0-U+4DFF).</summary>
+        <value>The Yijing Hexagram Symbols Unicode block (U+4DC0-U+4DFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3152,8 +3152,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Yi Radicals Unicode block (U+A490-U+A4C6).</summary>
+        <value>The Yi Radicals Unicode block (U+A490-U+A4C6).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3172,8 +3172,8 @@
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Yi Syllables Unicode block (U+A000-U+A48C).</summary>
+        <value>The Yi Syllables Unicode block (U+A000-U+A48C).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

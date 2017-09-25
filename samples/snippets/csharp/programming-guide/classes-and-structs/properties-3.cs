@@ -7,8 +7,8 @@ public class SaleItem
    
    public SaleItem(string name, decimal cost)
    {
-      this.name = name;
-      this.cost = cost;
+      Name = name;
+      Price = cost;
    }
 
    public string Name 

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["data binding, MultiBinding", "MultiBinding"]
+helpviewer_keywords: ["data binding [WPF], MultiBinding", "Multibinding [WPF]"]
 ms.assetid: b3d06378-b511-4181-95aa-316d60c9229b
 caps.latest.revision: 17
 author: dotnet-bot

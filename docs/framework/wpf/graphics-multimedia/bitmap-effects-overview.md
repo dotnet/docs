@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["bitmap effects"]
+helpviewer_keywords: ["bitmap effects [WPF]"]
 ms.assetid: 23cb338e-4b59-4b52-b294-96431f9c9568
 caps.latest.revision: 34
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["3-D translations, animating, with Rotation3DAnimation", "Rotation3DAnimation", "animation, 3-D translations, with Rotation3DAnimation"]
+helpviewer_keywords: ["3-D translations [WPF], animating [WPF], with Rotation3DAnimation", "Rotation3DAnimation", "animation [WPF], 3-D translations [WPF], with Rotation3DAnimation"]
 ms.assetid: a92223ec-b634-4f5e-8e79-d33bc43ecfb3
 caps.latest.revision: 5
 author: dotnet-bot

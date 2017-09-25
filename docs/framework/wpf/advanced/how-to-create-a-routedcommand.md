@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["creating, RoutedCommand class", "RoutedCommand class, creating"]
+helpviewer_keywords: ["RoutedCommand class [WPF], creating"]
 ms.assetid: aaf6979f-69ab-406f-979f-5766daa85fa0
 caps.latest.revision: 8
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["application gestures, recognizing", "gestures, recognizing"]
+helpviewer_keywords: ["application gestures [WPF], recognizing", "gestures [WPF], recognizing"]
 ms.assetid: d58b740f-5192-4a3e-af59-7aa162e6ca15
 caps.latest.revision: 4
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["XamlWriter.Save, serialization limitations of", "limitations of XamlWriter.Save", "serialization limitations of XamlWriter.Save"]
+helpviewer_keywords: ["XamlWriter.Save [WPF], serialization limitations of", "limitations of XamlWriter.Save", "serialization limitations of XamlWriter.Save"]
 ms.assetid: f86acc91-2b67-4039-8555-505734491d36
 caps.latest.revision: 10
 author: dotnet-bot

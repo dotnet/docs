@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["version, finding"]
+helpviewer_keywords: ["version [WPF], finding"]
 ms.assetid: 99971cef-e218-4f9f-a4c1-350332741860
 caps.latest.revision: 3
 author: dotnet-bot

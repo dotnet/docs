@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["attached properties, registering", "registering attached properties"]
+helpviewer_keywords: ["attached properties [WPF], registering", "registering attached properties [WPF]"]
 ms.assetid: eb47bd94-0451-4f8d-8fb6-95f7812ac05b
 caps.latest.revision: 12
 author: dotnet-bot

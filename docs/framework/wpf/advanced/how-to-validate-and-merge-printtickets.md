@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["merging PrintTickets", "PrintTicket, merging", "validation of PrintTickets", "PrintTicket, validation"]
+helpviewer_keywords: ["merging PrintTickets", "PrintTicket [WPF], merging", "validation of PrintTickets", "PrintTicket [WPF], validation"]
 ms.assetid: 4fe2d501-d0b0-4fef-86af-6ffe6c162532
 caps.latest.revision: 16
 author: dotnet-bot

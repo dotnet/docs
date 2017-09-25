@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["metadata, images", "displaying images", "Imaging API", "image metadata", "converting images", "encoding image formats", "format decoding for images", "painting with images", "stretching images", "images, about imaging", "format encoding for images", "cropping images", "decoding image formats", "rotating images"]
+helpviewer_keywords: ["metadata [WPF], images", "displaying images", "Imaging API", "image metadata", "converting images", "encoding image formats", "format decoding for images", "painting with images", "stretching images", "images [WPF], about imaging", "format encoding for images", "cropping images", "decoding image formats", "rotating images"]
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 caps.latest.revision: 32
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["data binding, binding to ADO.NET data sources", "ADO.NET data sources, binding to", "binding, to ADO.NET data sources"]
+helpviewer_keywords: ["data binding [WPF], binding to ADO.NET data sources", "ADO.NET data sources [WPF], binding to", "binding [WPF], to ADO.NET data sources"]
 ms.assetid: a70c6d7b-7b38-4fdf-b655-4804db7c8315
 caps.latest.revision: 15
 author: dotnet-bot

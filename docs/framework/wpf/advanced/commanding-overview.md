@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["interfaces, ICommandSource", "command library", "commands, definition of", "CommandBindings", "ICommandSource interfaces", "commanding", "CommandManager"]
+helpviewer_keywords: ["interfaces [WPF], ICommandSource", "command library", "commands [WPF], definition of", "CommandBindings", "ICommandSource interfaces", "commanding", "CommandManager"]
 ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
 caps.latest.revision: 35
 author: dotnet-bot

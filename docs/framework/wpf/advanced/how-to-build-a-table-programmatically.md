@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["tables, creating programmatically", "documents, programmatically creating tables", "creating, tables (programmatically)"]
+helpviewer_keywords: ["tables [WPF], creating programmatically", "documents [WPF], programmatically creating tables]
 ms.assetid: e3ca88f3-6e94-4b61-82fc-42104c10b761
 caps.latest.revision: 12
 author: dotnet-bot

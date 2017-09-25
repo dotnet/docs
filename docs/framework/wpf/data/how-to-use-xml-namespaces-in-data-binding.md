@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["XML, namespaces", "data binding, XML namespaces", "namespaces, XML"]
+helpviewer_keywords: ["XML [WPF], namespaces", "data binding [WPF], XML namespaces", "namespaces [WPF], XML"]
 ms.assetid: a47c832f-dc84-48f2-96d5-cde18fc4284b
 caps.latest.revision: 15
 author: dotnet-bot

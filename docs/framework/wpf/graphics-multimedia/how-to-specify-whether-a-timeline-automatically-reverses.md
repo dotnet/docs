@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["AutoReverse property of timelines", "Timelines, AutoReverse property"]
+helpviewer_keywords: ["AutoReverse property of timelines [WPF]", "Timelines [WPF], AutoReverse property"]
 ms.assetid: 1648dd90-1bee-409a-ac69-ac729867f557
 caps.latest.revision: 4
 author: dotnet-bot

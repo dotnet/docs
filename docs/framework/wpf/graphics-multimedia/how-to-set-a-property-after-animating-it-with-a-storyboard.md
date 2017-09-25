@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, changing property values after"]
+helpviewer_keywords: ["animation [WPF], changing property values after"]
 ms.assetid: 79466556-4dbf-40bd-9c1e-a77613b07077
 caps.latest.revision: 8
 author: dotnet-bot

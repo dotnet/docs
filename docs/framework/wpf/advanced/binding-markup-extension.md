@@ -9,7 +9,7 @@ ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["Binding"]
-helpviewer_keywords: ["Binding markup extensions", "XAML, Binding markup extension"]
+helpviewer_keywords: ["Binding markup extensions [WPF]", "XAML [WPF], Binding markup extension"]
 ms.assetid: 83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63
 caps.latest.revision: 23
 author: dotnet-bot

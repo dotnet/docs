@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["brushes, opacity masks", "masks, opacity", "opacity, masks"]
+helpviewer_keywords: ["brushes [WPF], opacity masks", "masks [WPF], opacity", "opacity [WPF], masks"]
 ms.assetid: 22367fab-5f59-4583-abfd-db2bf86eaef7
 caps.latest.revision: 14
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["logical tree", "visual tree", "elements, initializing", "initializing elements"]
+helpviewer_keywords: ["logical tree", "visual tree", "elements [WPF], initializing", "initializing elements"]
 ms.assetid: 7b8dfc9b-46ac-4ce8-b7bb-035734d688b7
 caps.latest.revision: 15
 author: dotnet-bot

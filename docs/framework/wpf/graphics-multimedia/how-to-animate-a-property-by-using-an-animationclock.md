@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, properties, with AnimationClocks", "AnimationClocks"]
+helpviewer_keywords: ["animation [WPF], properties [WPF], with AnimationClocks", "AnimationClocks"]
 ms.assetid: e6542021-714c-4675-9567-04f1c7380834
 caps.latest.revision: 13
 author: dotnet-bot

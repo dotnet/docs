@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["documents, manipulating flow content elements through Blocks property", "flow content elements, manipulating through Blocks property", "properties, Blocks, manipulating flow content elements", "Blocks property, manipulating flow content elements"]
+helpviewer_keywords: ["documents [WPF], manipulating flow content elements through Blocks property", "flow content elements [WPF], manipulating through Blocks property", "properties [WPF], Blocks [WPF], manipulating flow content elements", "Blocks property [WPF], manipulating flow content elements"]
 ms.assetid: aeda4ece-b979-4818-a093-ef938e908751
 caps.latest.revision: 6
 author: dotnet-bot

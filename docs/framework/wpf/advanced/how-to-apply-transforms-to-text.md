@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["typography, rotated text", "typography, scaled text", "skewed text", "typography, translated text", "typography, shadowed text", "rotated text", "translated text", "shadowed text", "transforms in text", "typography, transforms", "scaled text", "typography, skewed text"]
+helpviewer_keywords: ["typography [WPF], rotated text", "typography [WPF], scaled text", "skewed text", "typography [WPF], translated text", "typography [WPF], shadowed text", "rotated text", "translated text", "shadowed text", "transforms in text", "typography [WPF], transforms", "scaled text", "typography [WPF], skewed text"]
 ms.assetid: 0d61678a-4185-4f2a-85c6-c1d020f96fa0
 caps.latest.revision: 7
 author: dotnet-bot

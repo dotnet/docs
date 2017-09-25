@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["geometry classes", "graphics, geometry classes"]
+helpviewer_keywords: ["geometry classes", "graphics [WPF], geometry classes"]
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
 caps.latest.revision: 23
 author: dotnet-bot

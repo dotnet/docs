@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["data binding, sorting data in views", "data binding, grouping data in views", "grouping data in views", "views, sorting data", "views, grouping data", "sorting data in views"]
+helpviewer_keywords: ["data binding [WPF], sorting data in views", "data binding [WPF], grouping data in views", "grouping data in views", "views [WPF], sorting data", "views [WPF], grouping data", "sorting data in views"]
 ms.assetid: f4c43578-01b7-4774-a953-acb95a13b94a
 caps.latest.revision: 18
 author: dotnet-bot

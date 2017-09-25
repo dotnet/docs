@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["creating reflections", "brushes, creating reflections", "reflections, creating"]
+helpviewer_keywords: ["creating reflections", "brushes [WPF], creating reflections", "reflections [WPF], creating"]
 ms.assetid: 4f017e16-ab80-43c7-98df-03b6bddbb203
 caps.latest.revision: 6
 author: dotnet-bot

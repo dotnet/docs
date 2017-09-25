@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["documents, flow documents", "content schema", "flow content elements [WPF], flow documents", "flow documents"]
+helpviewer_keywords: ["documents [WPF], flow documents [WPF], , "content schema", "flow content elements [WPF], flow documents [WPF], , "flow documents"]
 ms.assetid: ef236a50-d44f-43c8-ba7c-82b0c733c0b7
 caps.latest.revision: 39
 author: dotnet-bot

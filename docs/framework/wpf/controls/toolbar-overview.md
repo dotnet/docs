@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["controls, ToolBar", "ToolBar control"]
+helpviewer_keywords: ["controls [WPF], ToolBar", "ToolBar control"]
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 caps.latest.revision: 28
 author: dotnet-bot

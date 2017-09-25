@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["reusing resources", "resources, reusing", "reusing commonly defined objects", "XAML, reusing resources"]
+helpviewer_keywords: ["reusing resources [WPF]", "resources [WPF], reusing", "reusing commonly defined objects [WPF]", "XAML [WPF], reusing resources"]
 ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
 caps.latest.revision: 33
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["pens, defining", "creating, pens"]
+helpviewer_keywords: ["pens [WPF], defining", "creating [WPF], pens"]
 ms.assetid: 7a4f2900-cdf9-49de-84e0-ba5d0ded4d33
 caps.latest.revision: 5
 author: dotnet-bot

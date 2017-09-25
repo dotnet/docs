@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["popups", "Popup control, placing", "placing popups", "positioning popups"]
+helpviewer_keywords: ["popups", "Popup control [WPF], placing", "placing popups", "positioning popups"]
 ms.assetid: fbf642e9-f670-4efd-a7af-a67468a1c8e1
 caps.latest.revision: 14
 author: dotnet-bot

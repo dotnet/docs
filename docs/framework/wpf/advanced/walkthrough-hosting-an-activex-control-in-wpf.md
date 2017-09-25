@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ActiveX controls [WPF interoperability]", "hosting ActiveX controls"]
+helpviewer_keywords: ["ActiveX controls [WPF interoperability]", "hosting ActiveX controls [WPF]"]
 ms.assetid: 1931d292-0dd1-434f-963c-dcda7638d75a
 caps.latest.revision: 30
 author: dotnet-bot

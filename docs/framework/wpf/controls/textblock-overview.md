@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["controls, TextBlock", "TextBlock control"]
+helpviewer_keywords: ["controls [WPF], TextBlock", "TextBlock control"]
 ms.assetid: 24720bca-341a-4b03-8a6b-7a678023b10a
 caps.latest.revision: 6
 author: dotnet-bot

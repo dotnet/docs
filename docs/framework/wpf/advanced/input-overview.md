@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["commands [WPF]", "input [WPF], overview", "keyboard focus [WPF]", "keyboard input [WPF]", "touch events [WPF]", "event routing [WPF]", "touch input [WPF]", "manipulation [WPF]", "logical focus [WPF]", "stylus input [WPF]", "text input [WPF]", "input events [WPF], handling", "WPF, input overview", "manipulation events [WPF]", "mouse input [WPF]", "mouse capture [WPF]", "focus [WPF]", "mouse position [WPF]"]
+helpviewer_keywords: ["commands [WPF]", "input [WPF], overview", "keyboard focus [WPF]", "keyboard input [WPF]", "touch events [WPF]", "event routing [WPF]", "touch input [WPF]", "manipulation [WPF]", "logical focus [WPF]", "stylus input [WPF]", "text input [WPF]", "input events [WPF], handling", "WPF [WPF], input overview", "manipulation events [WPF]", "mouse input [WPF]", "mouse capture [WPF]", "focus [WPF]", "mouse position [WPF]"]
 ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 caps.latest.revision: 50
 author: dotnet-bot

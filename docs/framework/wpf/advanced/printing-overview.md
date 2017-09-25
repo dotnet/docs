@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["print path, XPS", "printers, XPSDrv-based", "printing", "PrintQueue class PrintServer class", "XML Paper Specification (XPS) file format", "XPS (XML Paper Specification) file format", "XPSDrv-based printers", "GDI print path"]
+helpviewer_keywords: ["print path [WPF], XPS", "printers [WPF], XPSDrv-based", "printing", "PrintQueue class PrintServer class", "XML Paper Specification (XPS) file format", "XPS (XML Paper Specification) file format", "XPSDrv-based printers", "GDI print path"]
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 caps.latest.revision: 35
 author: dotnet-bot

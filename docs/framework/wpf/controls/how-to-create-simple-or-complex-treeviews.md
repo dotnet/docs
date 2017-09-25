@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["TreeView control, creating", "Control class, TreeView, creating"]
+helpviewer_keywords: ["TreeView control [WPF], creating", "Control class [WPF], TreeView [WPF], creating"]
 ms.assetid: 1defbb78-b8e7-4c0e-b650-576453ac828d
 caps.latest.revision: 16
 author: dotnet-bot

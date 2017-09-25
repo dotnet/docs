@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["mc XML namespace prefix", "mc:Ignorable attribute", "XML, mc namespace prefix", "XAML, mc:Ignorable attribute", "mc:ProcessContent attribute", "XAML, mc:ProcessContent attribute"]
+helpviewer_keywords: ["mc XML namespace prefix", "mc:Ignorable attribute", "XML [WPF], mc namespace prefix", "XAML [WPF], mc:Ignorable attribute", "mc:ProcessContent attribute", "XAML [WPF], mc:ProcessContent attribute"]
 ms.assetid: acd9a6ef-b7ca-4146-abb6-60f3b366e9ec
 caps.latest.revision: 8
 author: dotnet-bot

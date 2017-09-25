@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["invoking print dialogs", "print dialogs, invoking"]
+helpviewer_keywords: ["invoking print dialogs", "print dialogs [WPF], invoking"]
 ms.assetid: e3a2c84c-74fe-45a4-8501-5813f9dbfed2
 caps.latest.revision: 10
 author: dotnet-bot

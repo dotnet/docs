@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ListBox controls, getting a ListBoxItem", "ListBoxItem"]
+helpviewer_keywords: ["ListBox controls [WPF], getting a ListBoxItem", "ListBoxItem"]
 ms.assetid: da877c6f-5fd8-40cb-8909-225cbfd99aa5
 caps.latest.revision: 9
 author: dotnet-bot

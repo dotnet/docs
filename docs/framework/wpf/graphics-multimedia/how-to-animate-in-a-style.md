@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, properties, within styles", "styles, animating properties within"]
+helpviewer_keywords: ["animation [WPF], properties [WPF], within styles", "styles [WPF], animating properties within"]
 ms.assetid: 6a791f3d-6b1f-4972-a2f9-35880bcfd954
 caps.latest.revision: 9
 author: dotnet-bot

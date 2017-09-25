@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["drawing, lines", "graphics [WPF], lines", "lines, drawing"]
+helpviewer_keywords: ["drawing [WPF], lines", "graphics [WPF], lines", "lines [WPF], drawing"]
 ms.assetid: 0513ee01-6b27-4bb3-85f3-3a3e6710d80e
 caps.latest.revision: 7
 author: dotnet-bot

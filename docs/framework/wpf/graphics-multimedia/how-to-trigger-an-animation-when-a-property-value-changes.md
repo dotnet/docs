@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, starting when property values change", "triggering animation", "Storyboards, starting when property values change"]
+helpviewer_keywords: ["animation [WPF], starting when property values change", "triggering animation", "Storyboards [WPF], starting when property values change"]
 ms.assetid: 12399c21-0300-4f4f-9e3a-d92d9907e5f5
 caps.latest.revision: 7
 author: dotnet-bot

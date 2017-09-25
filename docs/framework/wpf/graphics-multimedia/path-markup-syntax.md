@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["attribute usage in XAML", "XAML, attribute usage", "graphics, PathGeometry class", "XAML, object element usage"]
+helpviewer_keywords: ["attribute usage in XAML", "XAML [WPF], attribute usage", "graphics [WPF], PathGeometry class", "XAML [WPF], object element usage"]
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
 caps.latest.revision: 22
 author: dotnet-bot

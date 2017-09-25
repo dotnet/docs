@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["getting started [WPF]", "introduction [WPF]", "WPF, getting started"]
+helpviewer_keywords: ["getting started [WPF]", "introduction [WPF]", "WPF [WPF], getting started"]
 ms.assetid: 04f91da8-708c-46c7-8172-f1695ec847cd
 caps.latest.revision: 60
 author: dotnet-bot

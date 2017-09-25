@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["localization, applications", "LocBaml tool", "applications, localizing"]
+helpviewer_keywords: ["localization [WPF], applications", "LocBaml tool", "applications [WPF], localizing"]
 ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
 caps.latest.revision: 37
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ToolTip control, positioning", "positioning ToolTip controls"]
+helpviewer_keywords: ["ToolTip control [WPF], positioning", "positioning ToolTip controls [WPF]"]
 ms.assetid: cddf3757-9e5f-4ce3-a6eb-44489cf3804a
 caps.latest.revision: 14
 author: dotnet-bot

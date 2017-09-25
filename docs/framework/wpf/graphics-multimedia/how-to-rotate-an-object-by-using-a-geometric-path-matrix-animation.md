@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["geometric paths, rotating objects by", "rotating objects by geometric paths", "matrix animation"]
+helpviewer_keywords: ["geometric paths [WPF], rotating objects by", "rotating objects by geometric paths", "matrix animation"]
 ms.assetid: 877dc9aa-6bdc-4beb-8772-3efaec32c0f0
 caps.latest.revision: 14
 author: dotnet-bot

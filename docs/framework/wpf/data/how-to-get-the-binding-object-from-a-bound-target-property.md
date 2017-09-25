@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["data binding, getting binding objects from bound target properties", "properties, getting binding objects from"]
+helpviewer_keywords: ["data binding [WPF], getting binding objects from bound target properties", "properties [WPF], getting binding objects from"]
 ms.assetid: 87974c5f-136b-4de7-b07d-9285b62ab123
 caps.latest.revision: 13
 author: dotnet-bot

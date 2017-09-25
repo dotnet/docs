@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["globalization, about globalization", "localization, about localization"]
+helpviewer_keywords: ["globalization [WPF], about globalization", "localization [WPF], about localization"]
 ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
 caps.latest.revision: 39
 author: dotnet-bot

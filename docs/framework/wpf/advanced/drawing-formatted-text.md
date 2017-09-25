@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["text [WPF]", "typography, drawing formatted text", "formatted text [WPF]", "drawing, formatted text"]
+helpviewer_keywords: ["text [WPF]", "typography [WPF], drawing formatted text", "formatted text [WPF]", "drawing [WPF], formatted text"]
 ms.assetid: b1d851c1-331c-4814-9964-6fe769db6f1f
 caps.latest.revision: 14
 author: dotnet-bot

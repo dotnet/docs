@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, rectangles", "rectangles, animating"]
+helpviewer_keywords: ["animation [WPF], rectangles", "rectangles [WPF], animating"]
 ms.assetid: 572ffb95-790d-4ace-adbf-b2ea8a90e75b
 caps.latest.revision: 10
 author: dotnet-bot

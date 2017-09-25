@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["image files, encoding from visuals", "encoding image formats", "visuals, encoding to an image file"]
+helpviewer_keywords: ["image files [WPF], encoding from visuals", "encoding image formats", "visuals [WPF], encoding to an image file"]
 ms.assetid: 2036385b-ea47-4d54-8027-5797f52c8149
 caps.latest.revision: 4
 author: dotnet-bot

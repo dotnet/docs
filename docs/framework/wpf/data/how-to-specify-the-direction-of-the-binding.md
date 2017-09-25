@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["direction of binding", "binding direction", "data binding, direction of binding"]
+helpviewer_keywords: ["direction of binding [WPF]", "binding direction", "data binding [WPF], direction of binding"]
 ms.assetid: 37334478-028b-4514-86c9-1420709f4818
 caps.latest.revision: 21
 author: dotnet-bot

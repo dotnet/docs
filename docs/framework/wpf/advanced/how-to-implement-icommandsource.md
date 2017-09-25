@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ICommandSource interfaces, implementing"]
+helpviewer_keywords: ["ICommandSource interfaces [WPF], implementing"]
 ms.assetid: 7452dd39-6e11-44bf-806a-31d87f3772ac
 caps.latest.revision: 12
 author: dotnet-bot

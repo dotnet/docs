@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["Dock values, setting", "Dock values, getting"]
+helpviewer_keywords: ["Dock values [WPF], setting", "Dock values [WPF], getting"]
 ms.assetid: fcf4ab8a-c7cd-4835-8d04-de1c999ab4a8
 caps.latest.revision: 14
 author: dotnet-bot

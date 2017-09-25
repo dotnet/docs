@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["InkCanvas, binding data to", "binding data, to InkCanvas"]
+helpviewer_keywords: ["InkCanvas [WPF], binding data to", "binding data [WPF], to InkCanvas"]
 ms.assetid: 8d6b4d9e-ea7f-4412-ba83-3feccec5a515
 caps.latest.revision: 4
 author: dotnet-bot

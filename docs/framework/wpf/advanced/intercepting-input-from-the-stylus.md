@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["architecture, "StylusPlugIns architecture", "InkCanvas, adding plug-ins to", "System.Windows.Input.StylusPlugIns architecture", "plug-ins, stylus"]
+helpviewer_keywords: ["architecture [WPF], "StylusPlugIns architecture", "InkCanvas [WPF], adding plug-ins to", "System.Windows.Input.StylusPlugIns architecture", "plug-ins [WPF], stylus"]
 ms.assetid: 791bb2f0-4e5c-4569-ac3c-211996808d44
 caps.latest.revision: 11
 author: dotnet-bot

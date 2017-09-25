@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["data conversion for binding", "binding data, about data binding", "data binding, about data binding", "conversion for data binding"]
+helpviewer_keywords: ["data conversion for binding [WPF]", "binding data [WPF], about data binding", "data binding [WPF], about data binding", "conversion for data binding [WPF]"]
 ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
 caps.latest.revision: 78
 author: dotnet-bot

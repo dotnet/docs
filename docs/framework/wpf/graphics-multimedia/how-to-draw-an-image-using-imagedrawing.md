@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["drawing, images", "graphics, drawing images", "images, drawing"]
+helpviewer_keywords: ["drawing [WPF], images", "graphics [WPF], drawing images", "images [WPF], drawing"]
 ms.assetid: df28ab41-25fb-4ab3-b51d-7f695b24f55e
 caps.latest.revision: 7
 author: dotnet-bot

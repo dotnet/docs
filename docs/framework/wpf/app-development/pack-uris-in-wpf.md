@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["pack URI scheme", "loading embedded resources", "URIs (Uniform Resource Identifiers)", "Uniform Resource Identifiers (URIs)", "loading non-resource files", "application management [WPF]"]
+helpviewer_keywords: ["pack URI scheme", "loading embedded resources [WPF]", "URIs (Uniform Resource Identifiers)", "Uniform Resource Identifiers (URIs)", "loading non-resource files", "application management [WPF]"]
 ms.assetid: 43adb517-21a7-4df3-98e8-09e9cdf764c4
 caps.latest.revision: 35
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["inline templates", "styles, inline", "templates, inline", "inline styles"]
+helpviewer_keywords: ["inline templates [WPF]", "styles [WPF], inline", "templates [WPF], inline", "inline styles"]
 ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
 caps.latest.revision: 5
 author: dotnet-bot

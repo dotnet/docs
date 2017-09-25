@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["highlights", "documents, annotations", "sticky notes"]
+helpviewer_keywords: ["highlights [WPF]", "documents [WPF], annotations", "sticky notes [WPF]"]
 ms.assetid: 716bf474-29bd-4c74-84a4-8e0744bdad62
 caps.latest.revision: 17
 author: dotnet-bot

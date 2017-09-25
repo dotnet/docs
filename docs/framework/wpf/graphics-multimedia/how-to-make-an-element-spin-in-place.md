@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics, spinning elements", "spinning elements"]
+helpviewer_keywords: ["graphics [WPF], spinning elements", "spinning elements"]
 ms.assetid: 1f011976-8b07-4c31-9faf-019e0ddaa24c
 caps.latest.revision: 8
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["functions, getting return values of", "page functions, getting return values of", "return values of page functions", "getting, return values of page functions"]
+helpviewer_keywords: ["functions [WPF], getting return values of", "page functions [WPF], getting return values of", "return values of page functions", "getting [WPF], return values of page functions"]
 ms.assetid: 75470af6-256c-4c46-87e7-705080723a1c
 caps.latest.revision: 8
 author: dotnet-bot

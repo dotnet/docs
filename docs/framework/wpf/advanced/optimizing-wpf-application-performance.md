@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["application rendering, performance", "application optimization", "applications, optimizing", "WPF application, optimizing"]
+helpviewer_keywords: ["application rendering [WPF], performance", "application optimization", "applications [WPF], optimizing", "WPF application [WPF], optimizing"]
 ms.assetid: ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf
 caps.latest.revision: 45
 author: dotnet-bot

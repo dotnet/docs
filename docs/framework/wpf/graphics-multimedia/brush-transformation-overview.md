@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["brushes, transformation properties", "properties, transformation", "transformation properties of brushes"]
+helpviewer_keywords: ["brushes [WPF], transformation properties", "properties [WPF], transformation", "transformation properties of brushes [WPF]"]
 ms.assetid: 8b9bfc09-12fd-4cd5-b445-99949f27bc39
 caps.latest.revision: 12
 author: dotnet-bot

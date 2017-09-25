@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["GridView view mode", "ListView controls, GridView view mode", "controls, ListView"]
+helpviewer_keywords: ["GridView view mode", "ListView controls [WPF], GridView view mode", "controls [WPF], ListView"]
 ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
 caps.latest.revision: 26
 author: dotnet-bot

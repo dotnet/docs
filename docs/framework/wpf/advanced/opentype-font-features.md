@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["fonts, OpenType", "typography, OpenType font technology", "OpenType font technology"]
+helpviewer_keywords: ["fonts [WPF], OpenType", "typography [WPF], OpenType font technology", "OpenType font technology"]
 ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
 caps.latest.revision: 38
 author: dotnet-bot

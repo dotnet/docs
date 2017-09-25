@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["Win32 code, sharing message loops", "message loops [WPF]", "sharing message loops", "interoperability [WPF], Win32"]
+helpviewer_keywords: ["Win32 code [WPF], sharing message loops", "message loops [WPF]", "sharing message loops", "interoperability [WPF], Win32"]
 ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
 caps.latest.revision: 10
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ellipses, drawing", "circles, drawing", "drawing circles", "drawing ellipses", "graphics, drawing circles", "graphics, drawing ellipses"]
+helpviewer_keywords: ["ellipses [WPF], drawing", "circles [WPF], drawing", "drawing circles", "drawing ellipses", "graphics [WPF], drawing circles", "graphics [WPF], drawing ellipses"]
 ms.assetid: 99763b8c-bfc8-44be-8231-8a70daf5481a
 caps.latest.revision: 7
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["Control class, attaching a RoutedCommand", "classes, Control, attaching a RoutedCommand", "RoutedCommand class, attaching to a Control", "classes, RoutedCommand, attaching to a Control"]
+helpviewer_keywords: ["Control class [WPF], attaching a RoutedCommand", "classes [WPF], Control [WPF], attaching a RoutedCommand", "RoutedCommand class [WPF], attaching to a Control", "classes [WPF], RoutedCommand [WPF], attaching to a Control"]
 ms.assetid: dad08f64-700b-46fb-ad3f-fbfee95f0dfe
 caps.latest.revision: 10
 author: dotnet-bot

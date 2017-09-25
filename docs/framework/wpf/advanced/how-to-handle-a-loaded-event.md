@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["XAML, Loaded events", "events, Loaded", "Loaded events"]
+helpviewer_keywords: ["XAML [WPF], Loaded events", "events [WPF], Loaded", "Loaded events [WPF]"]
 ms.assetid: 0cf8d003-8441-4df4-807a-6db09347e829
 caps.latest.revision: 12
 author: dotnet-bot

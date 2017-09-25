@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["accumulating animation values across repeating cycles", "animation, accumulating values across repeating cycles"]
+helpviewer_keywords: ["accumulating animation values across repeating cycles", "animation [WPF], accumulating values across repeating cycles"]
 ms.assetid: 548df369-c7cc-4dab-b569-08b95ced2e7e
 caps.latest.revision: 15
 author: dotnet-bot

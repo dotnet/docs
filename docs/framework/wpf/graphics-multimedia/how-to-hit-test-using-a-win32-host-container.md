@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["hit tests, using Win32 host containers", "visual objects, hit tests on", "Win32 host containers, hit tests using"]
+helpviewer_keywords: ["hit tests [WPF], using Win32 host containers", "visual objects [WPF], hit tests on", "Win32 host containers [WPF], hit tests using"]
 ms.assetid: 9491f7f3-d8ba-4573-a888-2f064d1349dc
 caps.latest.revision: 12
 author: dotnet-bot

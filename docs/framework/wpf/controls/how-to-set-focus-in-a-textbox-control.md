@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["focus, setting", "TextBox control, setting focus"]
+helpviewer_keywords: ["focus [WPF], setting", "TextBox control [WPF], setting focus"]
 ms.assetid: 24b61b45-dc2d-425e-9839-b017af7ab86f
 caps.latest.revision: 11
 author: dotnet-bot

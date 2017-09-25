@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["bitmaps, rendering from visuals", "visuals, rendering to bitmaps"]
+helpviewer_keywords: ["bitmaps [WPF], rendering from visuals", "visuals [WPF], rendering to bitmaps"]
 ms.assetid: 103fc7f5-7306-4026-9d61-2005e79959f3
 caps.latest.revision: 5
 author: dotnet-bot

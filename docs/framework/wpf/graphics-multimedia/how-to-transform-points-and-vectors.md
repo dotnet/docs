@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["Vector objects, transforming", "transforming Point objects", "transforming Vector objects", "graphics, transforming Vector objects", "Point objects, transforming", "graphics, transforming Point objects"]
+helpviewer_keywords: ["Vector objects [WPF], transforming", "transforming Point objects [WPF]", "transforming Vector objects [WPF]", "graphics [WPF], transforming Vector objects [WPF]", "Point objects [WPF], transforming", "graphics [WPF], transforming Point objects [WPF]"]
 ms.assetid: 9fff2742-9162-46be-bc88-310fc3900af4
 caps.latest.revision: 4
 author: dotnet-bot

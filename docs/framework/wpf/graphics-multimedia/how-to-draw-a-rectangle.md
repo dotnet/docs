@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["drawing, rectangles", "graphics [WPF], rectangles", "rectangles, drawing"]
+helpviewer_keywords: ["drawing [WPF], rectangles", "graphics [WPF], rectangles", "rectangles [WPF], drawing"]
 ms.assetid: beeb57ef-fab5-4446-a38a-1588f97b4c2f
 caps.latest.revision: 10
 author: dotnet-bot

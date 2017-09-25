@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["windows, opening", "opening windows"]
+helpviewer_keywords: ["windows [WPF], opening", "opening windows"]
 ms.assetid: 6b91b2bb-fda7-491d-a72e-139dd630a5b0
 caps.latest.revision: 4
 author: dotnet-bot

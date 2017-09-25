@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["Storyboards, seeking", "seeking Storyboards"]
+helpviewer_keywords: ["Storyboards [WPF], seeking", "seeking Storyboards"]
 ms.assetid: 887bb39a-0c2a-4ae8-956d-1d9f6f8ebbfc
 caps.latest.revision: 6
 author: dotnet-bot

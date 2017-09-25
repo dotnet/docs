@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics [WPF], rectangles", "rectangles, creating with RectangleGeometry class"]
+helpviewer_keywords: ["graphics [WPF], rectangles", "rectangles [WPF], creating with RectangleGeometry class"]
 ms.assetid: e40b8a8e-54b8-416b-a9f2-be6dca9fdf0b
 caps.latest.revision: 8
 author: dotnet-bot

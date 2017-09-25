@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["WPF, creating Direct3D9 content", "Direct3D9 [WPF interoperability], creating Direct3D9 content"]
+helpviewer_keywords: ["WPF [WPF], creating Direct3D9 content", "Direct3D9 [WPF interoperability], creating Direct3D9 content"]
 ms.assetid: 286e98bc-1eaa-4b5e-923d-3490a9cca5fc
 caps.latest.revision: 17
 author: dotnet-bot

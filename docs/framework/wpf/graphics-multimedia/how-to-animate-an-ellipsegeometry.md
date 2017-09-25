@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, EllipseGeometry objects", "EllipseGeometry objects, animating", "graphics [WPF], animation"]
+helpviewer_keywords: ["animation [WPF], EllipseGeometry objects [WPF]", "EllipseGeometry objects [WPF], animating", "graphics [WPF], animation"]
 ms.assetid: 767b9b6e-9cb7-482e-b6c2-fee7750c3995
 caps.latest.revision: 12
 author: dotnet-bot

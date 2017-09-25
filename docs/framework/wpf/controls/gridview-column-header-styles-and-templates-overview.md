@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["column headers, customizing", "ListView controls [WPF], GridView column header styles", "controls, ListView", "headers, customizing", "GridView view mode, customizing column headers"]
+helpviewer_keywords: ["column headers [WPF], customizing", "ListView controls [WPF], GridView column header styles", "controls [WPF], ListView", "headers [WPF], customizing", "GridView view mode [WPF], customizing column headers"]
 ms.assetid: 74835674-a39e-4ab5-9418-ad7f6ab7b956
 caps.latest.revision: 12
 author: dotnet-bot

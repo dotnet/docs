@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["typography, about typography"]
+helpviewer_keywords: ["typography [WPF], about typography"]
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 caps.latest.revision: 27
 author: dotnet-bot

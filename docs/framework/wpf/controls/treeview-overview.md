@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["expanding node", "TreeView control, about TreeView control", "Control class, TreeView"]
+helpviewer_keywords: ["expanding node", "TreeView control [WPF], about TreeView control", "Control class [WPF], TreeView"]
 ms.assetid: 62212512-5a5c-4864-949e-b6a6a3a52c02
 caps.latest.revision: 33
 author: dotnet-bot

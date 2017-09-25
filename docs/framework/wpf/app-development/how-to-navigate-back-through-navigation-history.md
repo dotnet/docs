@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["history, navigation, navigating back", "navigation, through navigation history (back)"]
+helpviewer_keywords: ["history [WPF], navigating back", "navigation [WPF], through navigation history (back)"]
 ms.assetid: 9343234b-d864-441d-b8a7-d895cba80a87
 caps.latest.revision: 8
 author: dotnet-bot

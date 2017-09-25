@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["style design for controls", "controls, style design"]
+helpviewer_keywords: ["style design for controls [WPF]", "controls [WPF], style design"]
 ms.assetid: c52dde45-a311-4531-af4c-853371c4d5f4
 caps.latest.revision: 18
 author: dotnet-bot

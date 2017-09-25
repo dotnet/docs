@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics, translations"]
+helpviewer_keywords: ["graphics [WPF], translations"]
 ms.assetid: 461c8273-15df-42f6-8672-89ba22887cc0
 caps.latest.revision: 12
 author: dotnet-bot

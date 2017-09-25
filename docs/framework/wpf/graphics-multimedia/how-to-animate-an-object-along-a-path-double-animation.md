@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, objects along paths (double animation)", "double animation"]
+helpviewer_keywords: ["animation [WPF], objects along paths (double animation)", "double animation"]
 ms.assetid: 5a3c4a99-f303-42ad-a52a-e4794bb1798e
 caps.latest.revision: 12
 author: dotnet-bot

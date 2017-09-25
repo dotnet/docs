@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["localization, attributes", "localization, comments"]
+helpviewer_keywords: ["localization [WPF], attributes", "localization [WPF], comments"]
 ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
 caps.latest.revision: 15
 author: dotnet-bot

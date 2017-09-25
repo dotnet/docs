@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics [WPF], elliptical arcs", "elliptical arcs, creating", "arcs, elliptical"]
+helpviewer_keywords: ["graphics [WPF], elliptical arcs", "elliptical arcs [WPF], creating", "arcs [WPF], elliptical"]
 ms.assetid: 3dcfe502-3485-45de-99fb-d53a1367c484
 caps.latest.revision: 9
 author: dotnet-bot

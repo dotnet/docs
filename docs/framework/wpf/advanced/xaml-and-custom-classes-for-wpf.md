@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["custom classes in XAML", "XAML, custom classes", "classes, custom classes in XAML"]
+helpviewer_keywords: ["custom classes in XAML", "XAML [WPF], custom classes", "classes [WPF], custom classes in XAML"]
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
 caps.latest.revision: 22
 author: dotnet-bot

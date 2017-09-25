@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["overriding the logical tree", "logical tree, overriding"]
+helpviewer_keywords: ["overriding the logical tree", "logical tree [WPF], overriding"]
 ms.assetid: 0ae4d074-8113-4b06-b4fa-e0f39d4967a6
 caps.latest.revision: 9
 author: dotnet-bot

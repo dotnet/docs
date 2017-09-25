@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["constructor patterns for dependency objects", "dependency objects, constructor patterns", "FXCop tool"]
+helpviewer_keywords: ["constructor patterns for dependency objects [WPF]", "dependency objects [WPF], constructor patterns", "FXCop tool"]
 ms.assetid: f704b81c-449a-47a4-ace1-9332e3cc6d60
 caps.latest.revision: 12
 author: dotnet-bot

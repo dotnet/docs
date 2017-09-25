@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["layout, optimizing performance", "design considerations", "layout pass"]
+helpviewer_keywords: ["layout [WPF], optimizing performance", "design considerations", "layout pass"]
 ms.assetid: 005f4cda-a849-448b-916b-38d14d9a96fe
 caps.latest.revision: 8
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics [WPF], shapes", "shapes, creating with StreamGeometry class"]
+helpviewer_keywords: ["graphics [WPF], shapes", "shapes [WPF], creating with StreamGeometry class"]
 ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51
 caps.latest.revision: 9
 author: dotnet-bot

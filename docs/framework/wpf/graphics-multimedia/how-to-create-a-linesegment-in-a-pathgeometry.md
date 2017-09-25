@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["line segments, creating", "graphics [WPF], line segments"]
+helpviewer_keywords: ["line segments [WPF], creating", "graphics [WPF], line segments"]
 ms.assetid: 0155ed47-a20d-49a7-a306-186d8e07fbc4
 caps.latest.revision: 12
 author: dotnet-bot

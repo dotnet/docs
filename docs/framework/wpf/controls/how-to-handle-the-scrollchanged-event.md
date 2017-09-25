@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ScrollViewer control, raising ScrollChanged events", "ScrollChanged events"]
+helpviewer_keywords: ["ScrollViewer control [WPF], raising ScrollChanged events", "ScrollChanged events [WPF]"]
 ms.assetid: 42c695d8-ee28-49d4-80fd-fc71e9be7f29
 caps.latest.revision: 10
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["drawings, composite", "composite drawings", "graphics, composite drawings"]
+helpviewer_keywords: ["drawings [WPF], composite", "composite drawings", "graphics [WPF], composite drawings"]
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
 caps.latest.revision: 9
 author: dotnet-bot

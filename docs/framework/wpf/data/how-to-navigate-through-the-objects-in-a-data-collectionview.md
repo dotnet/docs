@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["CollectionView, navigating through objects", "data binding, navigating through objects in data CollectionView", "navigating through objects in data CollectionView"]
+helpviewer_keywords: ["CollectionView [WPF], navigating through objects", "data binding [WPF], navigating through objects in data CollectionView", "navigating through objects in data CollectionView"]
 ms.assetid: fcd37590-bce1-4ac9-8b74-3b96c7458b8a
 caps.latest.revision: 14
 author: dotnet-bot

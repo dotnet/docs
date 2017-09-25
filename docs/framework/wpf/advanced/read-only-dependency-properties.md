@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["dependency properties, read-only", "read-only dependency properties"]
+helpviewer_keywords: ["dependency properties [WPF], read-only", "read-only dependency properties [WPF]"]
 ms.assetid: f23d6ec9-3780-4c09-a2ff-b2f0a2deddf1
 caps.latest.revision: 8
 author: dotnet-bot

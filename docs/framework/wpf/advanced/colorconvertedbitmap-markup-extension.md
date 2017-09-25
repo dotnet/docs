@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["XAML, ColorConvertedBitmap markup extension", "ColorConvertedBitmap markup extension"]
+helpviewer_keywords: ["XAML [WPF], ColorConvertedBitmap markup extension", "ColorConvertedBitmap markup extension"]
 ms.assetid: 18321c18-c898-4470-93fa-a702b47770c1
 caps.latest.revision: 8
 author: dotnet-bot

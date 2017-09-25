@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["hit testing functionality", "visual layer, hit testing functionality"]
+helpviewer_keywords: ["hit testing functionality", "visual layer [WPF], hit testing functionality"]
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
 caps.latest.revision: 42
 author: dotnet-bot

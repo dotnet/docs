@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["image metadata", "metadata, writing to a bitmap", "metadata, in images", "bitmaps, writing metadata to"]
+helpviewer_keywords: ["image metadata", "metadata [WPF], writing to a bitmap", "metadata [WPF], in images", "bitmaps [WPF], writing metadata to"]
 ms.assetid: 68f0dc4b-c0fe-43be-94f2-9d7399378fb3
 caps.latest.revision: 6
 author: dotnet-bot

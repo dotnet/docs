@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["Windows Presentation Foundation, performance", "performance", "WPF, performance"]
+helpviewer_keywords: ["Windows Presentation Foundation [WPF], performance", "performance", "WPF [WPF], performance"]
 ms.assetid: c649a20f-8b7e-4a38-9b80-74839298d406
 caps.latest.revision: 10
 author: dotnet-bot

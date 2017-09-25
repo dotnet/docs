@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["spacing between paragraphs", "paragraphs, spacing between", "documents, adjusting spacing between paragraphs"]
+helpviewer_keywords: ["spacing between paragraphs", "paragraphs [WPF], spacing between", "documents [WPF], adjusting spacing between paragraphs"]
 ms.assetid: 7cd2f2ac-0e19-4587-bfb6-7f5b18c9536e
 caps.latest.revision: 4
 author: dotnet-bot

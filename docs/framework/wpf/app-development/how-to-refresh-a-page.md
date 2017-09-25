@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["pages, refreshing", "refreshing pages"]
+helpviewer_keywords: ["pages [WPF], refreshing", "refreshing pages"]
 ms.assetid: 06dd1bbd-81c4-40ad-ac0d-7a5b326b1465
 caps.latest.revision: 6
 author: dotnet-bot

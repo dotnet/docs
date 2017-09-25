@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["events, ContentRendered", "events, Deactivated", "events, Unloaded", "Activated events", "events, Loaded", "Application objects, lifetime events", "events, Activated", "ContentRendered events", "Deactivated events", "events, Initialized", "events, Closing", "Unloaded events", "exit events", "objects' lifetime events", "Loaded events", "Closing events", "events, Closed", "Initialized events", "Closed events", "startup events", "lifetime events of objects"]
+helpviewer_keywords: ["events [WPF], ContentRendered", "events [WPF], Deactivated", "events [WPF], Unloaded", "Activated events [WPF]", "events [WPF], Loaded", "Application objects [WPF], lifetime events", "events [WPF], Activated", "ContentRendered events [WPF]", "Deactivated events [WPF]", "events [WPF], Initialized", "events [WPF], Closing", "Unloaded events [WPF]", "exit events [WPF]", "objects' lifetime events [WPF]", "Loaded events [WPF]", "Closing events [WPF]", "events [WPF], Closed", "Initialized events [WPF]", "Closed events [WPF]", "startup events [WPF]", "lifetime events of objects [WPF]"]
 ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
 caps.latest.revision: 19
 author: dotnet-bot

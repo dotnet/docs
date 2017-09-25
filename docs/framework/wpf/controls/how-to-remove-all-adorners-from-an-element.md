@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["adorners, removing"]
+helpviewer_keywords: ["adorners [WPF], removing"]
 ms.assetid: fe5303a3-b76e-4643-aafb-51419032b47b
 caps.latest.revision: 10
 author: dotnet-bot

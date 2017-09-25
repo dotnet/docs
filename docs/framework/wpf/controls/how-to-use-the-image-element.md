@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["controls, Image", "Image control", "rendering images"]
+helpviewer_keywords: ["controls [WPF], Image", "Image control", "rendering images"]
 ms.assetid: 5b92e74b-1b56-4756-ac64-d5e9e08d9854
 caps.latest.revision: 20
 author: dotnet-bot

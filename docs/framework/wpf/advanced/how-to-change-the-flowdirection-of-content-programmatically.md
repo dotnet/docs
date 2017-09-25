@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["FlowDirection property, changing programmatically", "documents, changing FlowDirection property programmatically"]
+helpviewer_keywords: ["FlowDirection property [WPF], changing programmatically", "documents [WPF], changing FlowDirection property programmatically"]
 ms.assetid: 02f5a8ba-f8c0-4e5a-84b9-4c5bf12922a2
 caps.latest.revision: 10
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["properties, attached", "attached properties", "architecture", "unmanaged components", "affinity thread", "classes, System.Windows.Media.Visual", "classes, System.Windows.Controls.Control", "Storyboards", "milcore", "classes, System.Object", "classes, System.Windows.UIElement", "components, unmanaged", "painter's algorithm", "interfaces, INotifyPropertyChange", "CommandBindings", "classes, System.Windows.DependencyObject", "INotifyPropertyChange interface", "classes, System.Threading.DispatcherObject", "data templates", "thread, affinity", "System.Windows.Controls.Control class"]
+helpviewer_keywords: ["properties [WPF], attached", "attached properties [WPF]", "architecture", "unmanaged components", "affinity thread", "Storyboards", "milcore", "components [WPF], unmanaged", "painter's algorithm", "interfaces [WPF], INotifyPropertyChange", "CommandBindings", "data templates [WPF]", "thread [WPF], affinity"]
 ms.assetid: 8579c10b-76ab-4c52-9691-195ce02333c8
 caps.latest.revision: 17
 author: dotnet-bot

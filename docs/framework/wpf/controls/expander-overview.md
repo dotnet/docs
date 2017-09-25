@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["controls, Expander", "Expander control, about Expander control"]
+helpviewer_keywords: ["controls [WPF], Expander", "Expander control [WPF], about Expander control"]
 ms.assetid: 877bf425-0e54-49ec-8fd2-13a211377abb
 caps.latest.revision: 20
 author: dotnet-bot

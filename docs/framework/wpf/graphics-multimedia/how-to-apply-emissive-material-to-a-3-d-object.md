@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["EmissiveMaterial, applying to 3-D objects", "3-D objects, applying EmissiveMaterial"]
+helpviewer_keywords: ["EmissiveMaterial [WPF], applying to 3-D objects", "3-D objects [WPF], applying EmissiveMaterial"]
 ms.assetid: fd442cc2-5adc-487a-ba70-e45ed54bb3b4
 caps.latest.revision: 6
 author: dotnet-bot

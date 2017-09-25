@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["XAML, TypeConverter class"]
+helpviewer_keywords: ["XAML [WPF], TypeConverter class"]
 ms.assetid: f6313e4d-e89d-497d-ac87-b43511a1ae4b
 caps.latest.revision: 13
 author: dotnet-bot

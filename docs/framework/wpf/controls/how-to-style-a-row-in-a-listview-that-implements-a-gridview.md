@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["GridView controls, styling rows", "styling rows in ListViews implementing GridViews", "ListView controls, styling rows with GridViews"]
+helpviewer_keywords: ["GridView controls [WPF], styling rows", "styling rows in ListViews implementing GridViews", "ListView controls [WPF], styling rows with GridViews"]
 ms.assetid: 2e406ba2-70a0-4e62-841f-0934859de76e
 caps.latest.revision: 12
 author: dotnet-bot

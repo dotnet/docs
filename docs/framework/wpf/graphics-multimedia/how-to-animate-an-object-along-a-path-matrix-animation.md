@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["animation, objects along paths (matrix animation)", "matrix animation"]
+helpviewer_keywords: ["animation [WPF], objects along paths (matrix animation)", "matrix animation"]
 ms.assetid: 7000e697-1414-468c-b915-cf66062fc49e
 caps.latest.revision: 16
 author: dotnet-bot

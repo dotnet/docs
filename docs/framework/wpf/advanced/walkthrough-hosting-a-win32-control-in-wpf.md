@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["hosting Win32 control in WPF", "Win32 code, WPF interoperation"]
+helpviewer_keywords: ["hosting Win32 control in WPF", "Win32 code [WPF], WPF interoperation"]
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
 caps.latest.revision: 21
 author: dotnet-bot

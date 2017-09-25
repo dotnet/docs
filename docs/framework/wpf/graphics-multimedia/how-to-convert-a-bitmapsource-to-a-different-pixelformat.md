@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["BitmapSource objects, converting to indexed pixel format", "converting images", "converting, BitmapSource objects to indexed pixel formats", "converting, BitmapSource objects to palettized pixel format", "BitmapSource objects, converting to palettized pixel format"]
+helpviewer_keywords: ["BitmapSource objects [WPF], converting to indexed pixel format", "converting images", "converting [WPF], BitmapSource objects to indexed pixel formats", "converting [WPF], BitmapSource objects to palettized pixel format", "BitmapSource objects [WPF], converting to palettized pixel format"]
 ms.assetid: cd9df1e4-d5dc-4f57-b67b-4ec67e086b33
 caps.latest.revision: 7
 author: dotnet-bot

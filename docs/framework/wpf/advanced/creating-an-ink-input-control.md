@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ink strokes, managing", "managing ink strokes", "ink input control", "input from mouse, accepting", "mouse input, accepting", "ink, rendering", "ink strokes, collecting", "rendering ink", "collecting ink strokes", "DynamicRenderer objects", "StylusPlugIn objects"]
+helpviewer_keywords: ["ink strokes [WPF], managing", "managing ink strokes", "ink input control", "input from mouse [WPF], accepting", "mouse input [WPF], accepting", "ink [WPF], rendering", "ink strokes [WPF], collecting", "rendering ink", "collecting ink strokes", "DynamicRenderer objects [WPF]", "StylusPlugIn objects [WPF]"]
 ms.assetid: c31f3a67-cb3f-4ded-af9e-ed21f6575b26
 caps.latest.revision: 14
 author: dotnet-bot

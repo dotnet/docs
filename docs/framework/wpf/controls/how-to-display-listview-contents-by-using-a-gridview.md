@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ListView controls, displaying contents with GridView", "GridView, displaying ListView contents"]
+helpviewer_keywords: ["ListView controls [WPF], displaying contents with GridView", "GridView [WPF], displaying ListView contents"]
 ms.assetid: 5bc1e767-ab46-4f14-bd41-3d5d39e1d000
 caps.latest.revision: 9
 author: dotnet-bot

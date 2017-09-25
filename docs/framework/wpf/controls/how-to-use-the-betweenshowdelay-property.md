@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ToolTip control, BetweenShowDelay time property", "BetweenShowDelay time property"]
+helpviewer_keywords: ["ToolTip control [WPF], BetweenShowDelay time property", "BetweenShowDelay time property"]
 ms.assetid: 984ea76d-f2a2-4326-a02e-f97ec3d036d6
 caps.latest.revision: 12
 author: dotnet-bot

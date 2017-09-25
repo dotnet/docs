@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["windows objects, setting", "setting windows objects", "windows objects, getting", "getting windows objects"]
+helpviewer_keywords: ["windows objects [WPF], setting", "setting windows objects [WPF]", "windows objects [WPF], getting", "getting windows objects [WPF]"]
 ms.assetid: ec902bc4-4a59-46f5-8ec1-963b46789356
 caps.latest.revision: 8
 author: dotnet-bot

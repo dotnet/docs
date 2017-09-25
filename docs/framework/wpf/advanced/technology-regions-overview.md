@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["window regions", "Win32 code, WPF interoperation", "Win32 code, airspace", "airspace", "interoperability [WPF], airspace", "Win32 code, window regions"]
+helpviewer_keywords: ["window regions", "Win32 code [WPF], WPF interoperation", "Win32 code [WPF], airspace", "airspace", "interoperability [WPF], airspace", "Win32 code [WPF], window regions"]
 ms.assetid: b7cc350f-b9e2-48b1-be14-60f3d853222e
 caps.latest.revision: 12
 author: dotnet-bot

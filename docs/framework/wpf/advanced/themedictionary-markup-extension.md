@@ -9,7 +9,7 @@ ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["ThemeDictionaryExtension", "ThemeDictionary"]
-helpviewer_keywords: ["ThemeDictionary markup extension", "XAML, ThemeDictionary markup extension"]
+helpviewer_keywords: ["ThemeDictionary markup extension", "XAML [WPF], ThemeDictionary markup extension"]
 ms.assetid: aa75e10b-13dd-4989-972d-51bab63a05e2
 caps.latest.revision: 18
 author: dotnet-bot

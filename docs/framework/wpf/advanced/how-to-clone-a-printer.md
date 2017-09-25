@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["print queues", "cloning printers", "printers, cloning", "print queues, cloning", "cloning print queues"]
+helpviewer_keywords: ["print queues", "cloning printers", "printers [WPF], cloning", "print queues [WPF], cloning", "cloning print queues"]
 ms.assetid: dd6997c9-fe04-40f8-88a6-92e3ac0889eb
 caps.latest.revision: 8
 author: dotnet-bot

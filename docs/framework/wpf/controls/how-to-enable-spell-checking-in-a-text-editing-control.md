@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["spellchecking", "real-time spellchecking", "TextBox control, real-time spellchecking", "spelling checker", "checking spelling"]
+helpviewer_keywords: ["spellchecking", "real-time spellchecking", "TextBox control [WPF], real-time spellchecking", "spelling checker", "checking spelling"]
 ms.assetid: 6f953d2b-67e8-4012-84ce-53c0e958da47
 caps.latest.revision: 7
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["application user interface thread", "stylus plug-in", "ink threading model", "ink, rendering", "pen thread", "threading model", "rendering ink", "dynamic rendering thread", "ink collection plug-in", "plug-ins, for ink"]
+helpviewer_keywords: ["application user interface thread", "stylus plug-in", "ink threading model [WPF]", "ink [WPF], rendering", "pen thread", "threading model [WPF]", "rendering ink", "dynamic rendering thread", "ink collection plug-in", "plug-ins [WPF], for ink"]
 ms.assetid: c85fcad1-cb50-4431-847c-ac4145a35c89
 caps.latest.revision: 9
 author: dotnet-bot

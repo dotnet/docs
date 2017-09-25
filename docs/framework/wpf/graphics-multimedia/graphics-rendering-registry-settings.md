@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["rendering graphics, registry settings", "rendering graphics", "rendering graphics, troubleshooting", "troubleshooting graphics rendering", "graphics [WPF], rendering"]
+helpviewer_keywords: ["rendering graphics [WPF], registry settings", "rendering graphics [WPF]", "rendering graphics [WPF], troubleshooting", "troubleshooting graphics rendering", "graphics [WPF], rendering"]
 ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 caps.latest.revision: 18
 author: dotnet-bot

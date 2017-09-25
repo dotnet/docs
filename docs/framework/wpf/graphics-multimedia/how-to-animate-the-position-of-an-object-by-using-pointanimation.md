@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics [WPF], animation", "animation, PointAnimation"]
+helpviewer_keywords: ["graphics [WPF], animation", "animation [WPF], PointAnimation"]
 ms.assetid: 42310977-cc90-438a-8a47-0345898e01be
 caps.latest.revision: 10
 author: dotnet-bot

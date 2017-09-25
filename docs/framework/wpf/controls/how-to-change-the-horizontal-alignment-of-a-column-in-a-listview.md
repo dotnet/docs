@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ListView controls, horizontal alignment"]
+helpviewer_keywords: ["ListView controls [WPF], horizontal alignment [WPF]"]
 ms.assetid: b9573e44-9dad-4d14-939c-7859ca372758
 caps.latest.revision: 4
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["mouse pointer (cursor), cursor type", "cursor (mouse pointer)"]
+helpviewer_keywords: ["mouse pointer [WPF], cursor type", "cursor (mouse pointer)"]
 ms.assetid: 08c945a7-8ab0-4320-acf3-0b4955a344c2
 caps.latest.revision: 14
 author: dotnet-bot

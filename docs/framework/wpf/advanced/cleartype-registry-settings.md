@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ClearType, registry settings", "typography, ClearType registry settings"]
+helpviewer_keywords: ["ClearType [WPF], registry settings", "typography [WPF], ClearType registry settings"]
 ms.assetid: 56f314bb-b30b-4f67-8492-8b8a9fa432ae
 caps.latest.revision: 18
 author: dotnet-bot

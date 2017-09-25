@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["drawings, applying to 3-D models", "3-D models, applying drawings to"]
+helpviewer_keywords: ["drawings [WPF], applying to 3-D models", "3-D models [WPF], applying drawings to"]
 ms.assetid: 68357577-b7fc-446e-8be9-a8cc7df3a350
 caps.latest.revision: 10
 author: dotnet-bot

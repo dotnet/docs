@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics, rendering", "rendering graphics"]
+helpviewer_keywords: ["graphics [WPF], rendering", "rendering graphics [WPF]"]
 ms.assetid: 6dec9657-4d8c-4e46-8c54-40fb80008265
 caps.latest.revision: 51
 author: dotnet-bot

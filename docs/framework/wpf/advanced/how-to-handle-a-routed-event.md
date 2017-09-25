@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["routed events, handling", "bubbling events"]
+helpviewer_keywords: ["routed events [WPF], handling", "bubbling events [WPF]"]
 ms.assetid: 157787b4-f469-4047-8777-5b034145f32e
 caps.latest.revision: 23
 author: dotnet-bot

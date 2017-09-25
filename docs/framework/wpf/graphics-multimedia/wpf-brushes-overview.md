@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["brushes, about brushes"]
+helpviewer_keywords: ["brushes [WPF], about brushes"]
 ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
 caps.latest.revision: 12
 author: dotnet-bot

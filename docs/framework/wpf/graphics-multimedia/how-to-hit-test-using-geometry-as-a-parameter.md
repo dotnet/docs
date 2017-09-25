@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["hit tests, on visual objects using Geometry objects", "visual objects, hit tests on", "Geometry objects, hit tests on visual objects"]
+helpviewer_keywords: ["hit tests [WPF], on visual objects using Geometry objects [WPF]", "visual objects [WPF], hit tests on", "Geometry objects [WPF], hit tests on visual objects [WPF]"]
 ms.assetid: 6c8bdbf2-19e0-4fbb-bf89-c1252b2ebc61
 caps.latest.revision: 8
 author: dotnet-bot

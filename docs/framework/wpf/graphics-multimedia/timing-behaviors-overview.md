@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["timing behaviors", "behaviors, timing"]
+helpviewer_keywords: ["timing behaviors", "behaviors [WPF], timing"]
 ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091
 caps.latest.revision: 20
 author: dotnet-bot

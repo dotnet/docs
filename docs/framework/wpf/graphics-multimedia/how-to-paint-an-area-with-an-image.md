@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["images, painting with", "painting, with images", "brushes, painting with images"]
+helpviewer_keywords: ["images [WPF], painting with", "painting [WPF], with images", "brushes [WPF], painting with images"]
 ms.assetid: 3432c533-1fc7-492d-94ee-0b13d60125ae
 caps.latest.revision: 14
 author: dotnet-bot

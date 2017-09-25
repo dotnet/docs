@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["text content, setting", "TextBox control, setting text content"]
+helpviewer_keywords: ["text content [WPF], setting", "TextBox control [WPF], setting text content"]
 ms.assetid: bcd25fc7-a52f-4453-b802-2c8d2b335ab8
 caps.latest.revision: 13
 author: dotnet-bot

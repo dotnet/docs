@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["graphics, drawings, as image sources", "image sources, drawings", "drawings, as image sources"]
+helpviewer_keywords: ["graphics [WPF], drawings [WPF], as image sources", "image sources [WPF], drawings", "drawings [WPF], as image sources"]
 ms.assetid: dcf71c7b-9e86-4b8e-8e39-0d0ce0389ef4
 caps.latest.revision: 6
 author: dotnet-bot

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["message boxes, opening", "opening message boxes"]
+helpviewer_keywords: ["message boxes [WPF], opening", "opening message boxes"]
 ms.assetid: acaad17f-af43-4eca-a004-f1c9e7c6f292
 caps.latest.revision: 8
 author: dotnet-bot

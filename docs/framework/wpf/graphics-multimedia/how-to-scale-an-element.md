@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["scaling, elements", "graphics, scaling elements"]
+helpviewer_keywords: ["scaling [WPF], elements", "graphics [WPF], scaling elements"]
 ms.assetid: 18158d94-bbe7-4f6a-814e-84d27fa748bf
 caps.latest.revision: 13
 author: dotnet-bot

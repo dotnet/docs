@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["images, converting to grayscale", "converting, images to grayscale", "grayscale, converting images to"]
+helpviewer_keywords: ["images [WPF], converting to grayscale", "converting [WPF], images to grayscale", "grayscale [WPF], converting images to"]
 ms.assetid: 77935ff0-4500-4307-9710-96999dcf579f
 caps.latest.revision: 8
 author: dotnet-bot

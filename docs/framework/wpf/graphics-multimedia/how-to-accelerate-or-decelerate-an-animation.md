@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["decelerating animation", "accelerating animation", "animation, accelerating", "animation, decelerating"]
+helpviewer_keywords: ["decelerating animation", "accelerating animation", "animation [WPF], accelerating", "animation [WPF], decelerating"]
 ms.assetid: 4f383b2c-f94d-4a4e-9a06-f56f5dae95f9
 caps.latest.revision: 8
 author: dotnet-bot

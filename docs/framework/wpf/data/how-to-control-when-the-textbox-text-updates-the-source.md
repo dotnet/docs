@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["source updates, timing of", "data binding, timing of source updates", "timing of source updates"]
+helpviewer_keywords: ["source updates [WPF], timing of", "data binding [WPF], timing of source updates", "timing of source updates"]
 ms.assetid: ffb7b96a-351d-4c68-81e7-054033781c64
 caps.latest.revision: 16
 author: dotnet-bot

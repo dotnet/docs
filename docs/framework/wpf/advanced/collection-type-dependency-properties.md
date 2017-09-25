@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["properties, dependency", "properties, collection-type", "dependency properties", "collection-type properties"]
+helpviewer_keywords: ["properties [WPF], dependency", "properties [WPF], collection-type", "dependency properties [WPF]", "collection-type properties [WPF]"]
 ms.assetid: 99f96a42-3ab7-4f64-a16b-2e10d654e97c
 caps.latest.revision: 10
 author: dotnet-bot

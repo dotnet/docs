@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["ink, collecting", "InkCanvas element", "properties, DrawingAttributes", "collecting digital ink", "digital ink, collecting", "properties, DefaultDrawingAttributes", "DefaultDrawingAttributes property"]
+helpviewer_keywords: ["ink [WPF], collecting", "InkCanvas element [WPF]", "properties [WPF], DrawingAttributes", "collecting digital ink", "digital ink [WPF], collecting", "properties [WPF], DefaultDrawingAttributes", "DefaultDrawingAttributes property [WPF]"]
 ms.assetid: 66a3129d-9577-43eb-acbd-56c147282016
 caps.latest.revision: 11
 author: dotnet-bot

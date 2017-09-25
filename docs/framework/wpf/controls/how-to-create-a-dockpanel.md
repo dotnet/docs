@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["controls, DockPanel", "DockPanel control, creating"]
+helpviewer_keywords: ["controls [WPF], DockPanel", "DockPanel control [WPF], creating"]
 ms.assetid: 9194f663-e279-4f1a-86d7-125a57d05c6f
 caps.latest.revision: 12
 author: dotnet-bot

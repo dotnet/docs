@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: ["Canvas control, setting positioning properties"]
+helpviewer_keywords: ["Canvas control [WPF], setting positioning properties"]
 ms.assetid: 1636b950-2b5a-4507-8a10-c5034cc58b1c
 caps.latest.revision: 10
 author: dotnet-bot

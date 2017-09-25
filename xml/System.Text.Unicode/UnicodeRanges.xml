@@ -14,7 +14,15 @@
   <Interfaces />
   <Docs>
     <summary>Provides static methods that return predefined <see cref="System.Text.Unicode.UnicodeRange" /> instances that correspond to blocks from the Unicode 7.0 specification.</summary>
-    <remarks>To be added.</remarks>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+You use <xref:System.Text.Unicode.UnicodeRanges> properties to retrieve Unicode named ranges, each of which consists of a contiguous block of Unicode code points. Some ranges include undefined code points. For example, in the **Armenian** Unicode block, U+0530, U+0557-U+0558, U+0560, U+0588, and U+058B-058C are undefined. These are not included in the returned <xref:System.Text.UnicodeRange> instance.
+
+Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named ranges in the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF.   
+  ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">

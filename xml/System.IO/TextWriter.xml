@@ -45,7 +45,7 @@
   
  All the `Write` methods of <xref:System.IO.TextWriter> having primitive data types as parameters write out the values as strings.  
   
- By default, a <xref:System.IO.TextWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=fullName> for a thread-safe wrapper.  
+ By default, a <xref:System.IO.TextWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=nameWithType> for a thread-safe wrapper.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using any type that derives from this type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IO.TextWriter.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see Dispose and the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -180,12 +180,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of `Close` calls the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=fullName> method and passes it a `true` value.  
+ This implementation of `Close` calls the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=nameWithType> method and passes it a `true` value.  
   
- Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.TextWriter.Flush%2A> or `Close`. Setting the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> property to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
+ Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.TextWriter.Flush%2A> or `Close`. Setting the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> property to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
   
 > [!NOTE]
->  In derived classes, do not override the <xref:System.IO.TextWriter.Close%2A> method. Instead, override the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=fullName> method to add code for releasing resources.  
+>  In derived classes, do not override the <xref:System.IO.TextWriter.Close%2A> method. Instead, override the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=nameWithType> method to add code for releasing resources.  
   
  ]]></format>
         </remarks>
@@ -574,7 +574,7 @@
 ## Remarks  
  Use `Null` to redirect output to a stream that will not consume any operating system resources.  
   
- When the <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName> methods are invoked on `Null`, the call simply returns, and no data is actually written to any backing store.  
+ When the <xref:System.IO.TextWriter.Write%2A?displayProperty=nameWithType> methods are invoked on `Null`, the call simply returns, and no data is actually written to any backing store.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -661,9 +661,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=fullName> method.  
+ The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=nameWithType> method.  
   
- This method outputs either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
+ This method outputs either <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -851,7 +851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Double.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Double.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -898,7 +898,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -945,7 +945,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1043,7 +1043,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Single.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Single.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1092,7 +1092,7 @@
 ## Remarks  
  This overload is equivalent to the <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload.  
   
- This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If `value` is `null`, nothing is written to the text stream.  
   
@@ -1146,7 +1146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1198,7 +1198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1268,13 +1268,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- . This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ . This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1361,13 +1361,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1506,13 +1506,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1596,13 +1596,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- This method does not search the specified string  for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string  for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1665,7 +1665,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1760,7 +1760,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1815,7 +1815,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1909,9 +1909,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=fullName> method.  
+ The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=nameWithType> method.  
   
- This method outputs either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
+ This method outputs either <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2154,7 +2154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2203,7 +2203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2404,7 +2404,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2458,7 +2458,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2530,9 +2530,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2625,9 +2625,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2773,9 +2773,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2865,9 +2865,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2986,7 +2986,7 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -3090,7 +3090,7 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -3147,7 +3147,7 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

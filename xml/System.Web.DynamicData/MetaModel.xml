@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property provides a simple way to reference the default data-model instance. If the application uses multiple models, you must provide your own way to store references to the additional data models. To find a specific data model, call the <xref:System.Web.DynamicData.MetaModel.GetModel%2A?displayProperty=fullName> method.  
+ This property provides a simple way to reference the default data-model instance. If the application uses multiple models, you must provide your own way to store references to the additional data models. To find a specific data model, call the <xref:System.Web.DynamicData.MetaModel.GetModel%2A?displayProperty=nameWithType> method.  
   
    
   

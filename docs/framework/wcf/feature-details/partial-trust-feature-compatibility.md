@@ -137,9 +137,9 @@ manager: "erikre"
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   
--   <xref:System.Diagnostics.TraceOptions.Callstack?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceOptions.Callstack?displayProperty=nameWithType>  
   
--   <xref:System.Diagnostics.TraceOptions.ProcessId?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceOptions.ProcessId?displayProperty=nameWithType>  
   
  When using tracing in a partial trust environment, ensure that the application has sufficient permissions to store the output of the trace listener. For example, when using the <xref:System.Diagnostics.TextWriterTraceListener> to write trace output to a text file, ensure that the application has the necessary FileIOPermission required to successfully write to the trace file.  
   

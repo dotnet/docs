@@ -57,17 +57,17 @@ manager: "wpickett"
   
 -   [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see                          [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)).  
   
--   Popups (see                          <xref:System.Windows.Controls.Primitives.Popup?displayProperty=fullName>).  
+-   Popups (see                          <xref:System.Windows.Controls.Primitives.Popup?displayProperty=nameWithType>).  
   
 -   Drag and Drop (see                          [Drag and Drop Overview](../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)).  
   
--   Clipboard (see                          <xref:System.Windows.Clipboard?displayProperty=fullName>).  
+-   Clipboard (see                          <xref:System.Windows.Clipboard?displayProperty=nameWithType>).  
   
--   Imaging (see                          <xref:System.Windows.Controls.Image?displayProperty=fullName>).  
+-   Imaging (see                          <xref:System.Windows.Controls.Image?displayProperty=nameWithType>).  
   
--   Serialization (see                          <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName>,                          <xref:System.Windows.Markup.XamlWriter.Save%2A?displayProperty=fullName>).  
+-   Serialization (see                          <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=nameWithType>,                          <xref:System.Windows.Markup.XamlWriter.Save%2A?displayProperty=nameWithType>).  
   
--   Open File Dialog Box (see                          <xref:Microsoft.Win32.OpenFileDialog?displayProperty=fullName>).  
+-   Open File Dialog Box (see                          <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>).  
   
  The following table outlines the                  [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features that are not safe to run within the limits of the Internet zone permission set.  
   
@@ -120,7 +120,7 @@ manager: "wpickett"
   
 <a name="Browser_Host_Detection"></a>   
 ### Browser Host Detection  
- Using                          [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your                          [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] only runs within the Internet zone sandbox, you can use the                          <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=fullName> property, which returns true for                          [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
+ Using                          [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your                          [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] only runs within the Internet zone sandbox, you can use the                          <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for                          [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
   
 > [!NOTE]
 >  <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  

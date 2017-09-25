@@ -31,11 +31,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must call the <xref:System.Runtime.InteropServices.SafeBuffer.Initialize%2A?displayProperty=fullName> method before you use any instance of <xref:System.Runtime.InteropServices.SafeBuffer>. To avoid races when you store an instance of a <xref:System.Runtime.InteropServices.SafeBuffer> object in a static variable, you should use one of the following approaches:  
+ You must call the <xref:System.Runtime.InteropServices.SafeBuffer.Initialize%2A?displayProperty=nameWithType> method before you use any instance of <xref:System.Runtime.InteropServices.SafeBuffer>. To avoid races when you store an instance of a <xref:System.Runtime.InteropServices.SafeBuffer> object in a static variable, you should use one of the following approaches:  
   
 -   Create a lock when publishing the <xref:System.Runtime.InteropServices.SafeBuffer>.  
   
--   Create a local variable, initialize the <xref:System.Runtime.InteropServices.SafeBuffer>, and then assign the <xref:System.Runtime.InteropServices.SafeBuffer> to the static variable, for example, by using the <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=fullName> method.  
+-   Create a local variable, initialize the <xref:System.Runtime.InteropServices.SafeBuffer>, and then assign the <xref:System.Runtime.InteropServices.SafeBuffer> to the static variable, for example, by using the <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  Assignments in a static class constructor are implicitly locked.  
@@ -123,9 +123,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> returns, you should perform bounds checking by verifying that the `pointer` parameter is `null`. If it is not `null`, you must call the <xref:System.Runtime.InteropServices.SafeBuffer.ReleasePointer%2A?displayProperty=fullName> method in a constrained execution region (CER).  
+ When <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> returns, you should perform bounds checking by verifying that the `pointer` parameter is `null`. If it is not `null`, you must call the <xref:System.Runtime.InteropServices.SafeBuffer.ReleasePointer%2A?displayProperty=nameWithType> method in a constrained execution region (CER).  
   
- <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> calls the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A?displayProperty=fullName> method and exposes the pointer. Unlike the <xref:System.Runtime.InteropServices.SafeBuffer.Read%2A> method, it does not change the current position of the pointer.  
+ <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> calls the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A?displayProperty=nameWithType> method and exposes the pointer. Unlike the <xref:System.Runtime.InteropServices.SafeBuffer.Read%2A> method, it does not change the current position of the pointer.  
   
  The following exampledemonstrates how to use the <xref:System.Runtime.InteropServices.SafeBuffer.AcquirePointer%2A> method:  
   

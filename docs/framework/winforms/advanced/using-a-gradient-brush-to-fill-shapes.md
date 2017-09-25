@@ -41,8 +41,8 @@ You can use a gradient brush to fill a shape with a gradually changing color. Fo
  Explains how to use gamma correction with a gradient brush.  
   
 ## Reference  
- <xref:System.Drawing.Drawing2D.LinearGradientBrush?displayProperty=fullName>  
+ <xref:System.Drawing.Drawing2D.LinearGradientBrush?displayProperty=nameWithType>  
  Contains a description of this class and has links to all of its members.  
   
- <xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=fullName>  
+ <xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=nameWithType>  
  Contains a description of this class and has links to all of its members.

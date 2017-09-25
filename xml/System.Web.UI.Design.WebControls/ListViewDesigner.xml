@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=fullName>) are not defined, the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml> method calls the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method to generate the HTML markup.  
+ If the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=nameWithType>) are not defined, the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml> method calls the <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method to generate the HTML markup.  
   
  ]]></format>
         </remarks>
@@ -175,7 +175,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method is used by the designer to render the <xref:System.Web.UI.WebControls.ListView> control at design time if the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=fullName>) are not defined. The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%28System.String%29> method to create a placeholder that displays the type and the ID of the control, and additional instructions for the user.  
+ The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method is used by the designer to render the <xref:System.Web.UI.WebControls.ListView> control at design time if the two required templates for the <xref:System.Web.UI.WebControls.ListView> control (<xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A?displayProperty=nameWithType>) are not defined. The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.GetEmptyDesignTimeHtml%2A> method calls the <xref:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml%28System.String%29> method to create a placeholder that displays the type and the ID of the control, and additional instructions for the user.  
   
  ]]></format>
         </remarks>
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount%2A> property always returns 21. This causes 21 records to be displayed in the design surface for the <xref:System.Web.UI.WebControls.ListView> control. An exception is if there is a <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=fullName> template and the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=fullName> property is set to a value less than 21. In that case, the number of records to display is the value of the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=fullName> property. The maximum number of records that the <xref:System.Web.UI.WebControls.ListView> control will display on the designer surface is 21 records.  
+ The <xref:System.Web.UI.Design.WebControls.ListViewDesigner.SampleRowCount%2A> property always returns 21. This causes 21 records to be displayed in the design surface for the <xref:System.Web.UI.WebControls.ListView> control. An exception is if there is a <xref:System.Web.UI.WebControls.DataPager> control inside the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A?displayProperty=nameWithType> template and the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=nameWithType> property is set to a value less than 21. In that case, the number of records to display is the value of the <xref:System.Web.UI.WebControls.DataPager.PageSize%2A?displayProperty=nameWithType> property. The maximum number of records that the <xref:System.Web.UI.WebControls.ListView> control will display on the designer surface is 21 records.  
   
  ]]></format>
         </remarks>

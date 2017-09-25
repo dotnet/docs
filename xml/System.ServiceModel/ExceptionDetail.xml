@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.ExceptionDetail> class is the type parameter used as the fault detail object when a <xref:System.ServiceModel.FaultException?displayProperty=fullName> is sent by a service as a result of setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> property to `true`.  
+ The <xref:System.ServiceModel.ExceptionDetail> class is the type parameter used as the fault detail object when a <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> is sent by a service as a result of setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true`.  
   
  To send a <xref:System.ServiceModel.ExceptionDetail> object the type must be serializable. For more information on serialization options, see [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
   

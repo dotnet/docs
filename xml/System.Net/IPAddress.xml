@@ -290,7 +290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.Any> field to indicate that a <xref:System.Net.Sockets.Socket> instance must listen for client activity on all network interfaces.  
+ The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=nameWithType> method uses the <xref:System.Net.IPAddress.Any> field to indicate that a <xref:System.Net.Sockets.Socket> instance must listen for client activity on all network interfaces.  
   
  The <xref:System.Net.IPAddress.Any> field is equivalent to 0.0.0.0 in dotted-quad notation.  
   
@@ -694,7 +694,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.IPv6None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.IPv6None> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to ::0 in compact notation.  
+ The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=nameWithType> method uses the <xref:System.Net.IPAddress.IPv6None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.IPv6None> field is equivalent to 0:0:0:0:0:0:0:0 in colon-hexadecimal notation, or to ::0 in compact notation.  
   
    
   
@@ -1219,7 +1219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=fullName> method uses the <xref:System.Net.IPAddress.None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.None> field is equivalent to 255.255.255.255 in dotted-quad notation.  
+ The <xref:System.Net.Sockets.Socket.Bind%2A?displayProperty=nameWithType> method uses the <xref:System.Net.IPAddress.None> field to indicate that a <xref:System.Net.Sockets.Socket> must not listen for client activity. The <xref:System.Net.IPAddress.None> field is equivalent to 255.255.255.255 in dotted-quad notation.  
   
    
   

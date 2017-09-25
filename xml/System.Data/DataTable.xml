@@ -72,7 +72,7 @@
   
  There are many <xref:System.Data.DataTable> events that can be used to determine when changes are made to a table. These include <xref:System.Data.DataTable.RowChanged>, <xref:System.Data.DataTable.RowChanging>, <xref:System.Data.DataTable.RowDeleting>, and <xref:System.Data.DataTable.RowDeleted>. For more information about the events that can be used with a <xref:System.Data.DataTable>, see [Handling DataTable Events](~/docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md).  
   
- When an instance of <xref:System.Data.DataTable> is created, some of the read/write properties are set to initial values. For a list of these values, see the <xref:System.Data.DataTable.%23ctor%2A?displayProperty=fullName> constructor topic.  
+ When an instance of <xref:System.Data.DataTable> is created, some of the read/write properties are set to initial values. For a list of these values, see the <xref:System.Data.DataTable.%23ctor%2A?displayProperty=nameWithType> constructor topic.  
   
 > [!NOTE]
 >  The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> objects inherit from <xref:System.ComponentModel.MarshalByValueComponent>, and support the <xref:System.Runtime.Serialization.ISerializable> interface for .NET Framework remoting. These are the only ADO.NET objects that you can use for .NET Framework remoting.  
@@ -285,7 +285,7 @@
 ## Remarks  
  When <xref:System.Data.DataTable.AcceptChanges%2A> is called, any <xref:System.Data.DataRow> object still in edit mode successfully ends its edits. The <xref:System.Data.DataRowState> also changes: all `Added` and `Modified` rows become `Unchanged`, and `Deleted` rows are removed.  
   
- The <xref:System.Data.DataTable.AcceptChanges%2A> method is generally called on a <xref:System.Data.DataTable> after you attempt to update the <xref:System.Data.DataSet> using the <xref:System.Data.Common.DbDataAdapter.Update%2A?displayProperty=fullName> method.  
+ The <xref:System.Data.DataTable.AcceptChanges%2A> method is generally called on a <xref:System.Data.DataTable> after you attempt to update the <xref:System.Data.DataSet> using the <xref:System.Data.Common.DbDataAdapter.Update%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -490,7 +490,7 @@
 ## Remarks  
  All rows in all tables are removed. An exception is generated if the table has any enforced child relations that would cause child rows to be orphaned.  
   
- If the <xref:System.Data.DataSet> is bound to an <xref:System.Xml.XmlDataDocument>, calling <xref:System.Data.DataSet.Clear%2A?displayProperty=fullName> or <xref:System.Data.DataTable.Clear%2A?displayProperty=fullName> raises the <xref:System.NotSupportedException>. To avoid this situation, traverse each table, removing each row one at a time. When you use <xref:System.Data.DataTable.NewRow%2A> to create new rows, the rows must be processed before you call <xref:System.Data.DataTable.Clear%2A>.  
+ If the <xref:System.Data.DataSet> is bound to an <xref:System.Xml.XmlDataDocument>, calling <xref:System.Data.DataSet.Clear%2A?displayProperty=nameWithType> or <xref:System.Data.DataTable.Clear%2A?displayProperty=nameWithType> raises the <xref:System.NotSupportedException>. To avoid this situation, traverse each table, removing each row one at a time. When you use <xref:System.Data.DataTable.NewRow%2A> to create new rows, the rows must be processed before you call <xref:System.Data.DataTable.Clear%2A>.  
   
    
   
@@ -1235,7 +1235,7 @@ class Program {
   
  `colDate > 1/1/99 AND colDate < 17/1/99`  
   
- For rules on creating expressions for both parameters, see the <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName> property.  
+ For rules on creating expressions for both parameters, see the <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -2194,7 +2194,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.DataTable.Load%2A> method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=fullName> method.  
+ The <xref:System.Data.DataTable.Load%2A> method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Data.DataTable.Load%2A> method must take into account three specific issues when loading the data from an <xref:System.Data.IDataReader> instance: schema, data, and event operations. When working with the schema, the <xref:System.Data.DataTable.Load%2A> method may encounter conditions as described in the following table. The schema operations take place for all imported result sets, even those containing no data.  
   
@@ -2207,7 +2207,7 @@ class Program {
   
  Before considering the behavior of the `Load` method in terms of data operations, consider that each row within a <xref:System.Data.DataTable> maintains both the current value and the original value for each column. These values may be equivalent, or may be different if the data in the row has been changed since filling the `DataTable`.  For more information, see [Row States and Row Versions](~/docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md).  
   
- This version of the `Load` method attempts to preserve the current values in each row, leaving the original value intact. (If you want finer control over the behavior of incoming data, see <xref:System.Data.DataTable.Load%2A?displayProperty=fullName>.) If the existing row and the incoming row contain corresponding primary key values, the row is processed using its current row state value, otherwise it's treated as a new row.  
+ This version of the `Load` method attempts to preserve the current values in each row, leaving the original value intact. (If you want finer control over the behavior of incoming data, see <xref:System.Data.DataTable.Load%2A?displayProperty=nameWithType>.) If the existing row and the incoming row contain corresponding primary key values, the row is processed using its current row state value, otherwise it's treated as a new row.  
   
  In terms of event operations, the <xref:System.Data.DataTable.RowChanging> event occurs before each row is changed, and the <xref:System.Data.DataTable.RowChanged> event occurs after each row has been changed. In each case, the <xref:System.Data.DataRowChangeEventArgs.Action%2A> property of the <xref:System.Data.DataRowChangeEventArgs> instance passed to the event handler contains information about the particular action associated with the event. This action value depends on the state of the row before the load operation. In each case, both events occur, and the action is the same for each. The action may be applied to either the current or original version of each row, or both, depending on the current row state.  
   
@@ -2356,7 +2356,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Load` method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=fullName> method.  
+ The `Load` method consumes the first result set from the loaded <xref:System.Data.IDataReader>, and after successful completion, sets the reader's position to the next result set, if any. When converting data, the `Load` method uses the same conversion rules as the <xref:System.Data.Common.DbDataAdapter.Fill%2A?displayProperty=nameWithType> method.  
   
  The `Load` method must take into account three specific issues when loading the data from an <xref:System.Data.IDataReader> instance: schema, data, and event operations. When working with the schema, the `Load` method may encounter conditions as described in the following table. The schema operations take place for all imported result sets, even those containing no data.  
   
@@ -3570,7 +3570,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.Stream>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=fullName> method, except that in this case, data is loaded only for the current table and its descendants.  
+ The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.Stream>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method, except that in this case, data is loaded only for the current table and its descendants.  
   
  The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema.  
   
@@ -3630,7 +3630,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.TextReader>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=fullName> method, except that in this case, data is loaded only for the current table and its descendants.  
+ The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the supplied <xref:System.IO.TextReader>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method, except that in this case, data is loaded only for the current table and its descendants.  
   
  The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema.  
   
@@ -3690,7 +3690,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the file named in the supplied <xref:System.String>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=fullName> method, except that in this case, data is loaded only for the current table and its descendants.  
+ The current <xref:System.Data.DataTable> and its descendents are loaded with the data from the file named in the supplied <xref:System.String>. The behavior of this method is identical to that of the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method, except that in this case, data is loaded only for the current table and its descendants.  
   
  The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema.  
   

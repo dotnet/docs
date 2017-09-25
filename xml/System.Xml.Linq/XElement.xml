@@ -2154,7 +2154,7 @@ Att1="1"
 ## Remarks  
  Namespace declarations may be persisted as attributes in the XML tree. These special attributes declare namespaces, including default namespaces. This method finds the namespace declaration that declares the default namespace, if there is one, and returns the <xref:System.Xml.Linq.XNamespace> for the default namespace.  
   
- If there is no attribute that declares the default namespace, then this method returns <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=fullName>.  
+ If there is no attribute that declares the default namespace, then this method returns <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=nameWithType>.  
   
  When creating XML trees using C#, even if an XML tree would be serialized with a default namespace, if the namespace is not persisted in the XML tree as an attribute, this method will not report the namespace as the default namespace.  
   
@@ -2695,7 +2695,7 @@ Att3="3"
 ## Remarks  
  If you want to control load options, use the <xref:System.Xml.Linq.XElement.Load%2A> overload that takes <xref:System.Xml.Linq.LoadOptions> as a parameter.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
  If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
   
@@ -2743,7 +2743,7 @@ Att3="3"
 ## Remarks  
  This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -2816,7 +2816,7 @@ Console.WriteLine(xmlTree)
 ## Remarks  
  This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -2894,7 +2894,7 @@ Root
 ## Remarks  
  By creating an <xref:System.Xml.XmlNodeReader> from a DOM document, and then using the <xref:System.Xml.XmlNodeReader> to create an <xref:System.Xml.Linq.XElement>, this method can be used to create a copy of a DOM document in a LINQ to XML tree.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -2991,7 +2991,7 @@ End Using
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
  If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
   
@@ -3055,7 +3055,7 @@ End Using
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -3242,7 +3242,7 @@ Root                1    2
   
  The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -3447,7 +3447,7 @@ PurchaseOrder       2    2
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -4749,7 +4749,7 @@ Element
 ## Remarks  
  This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   
@@ -4833,7 +4833,7 @@ Console.WriteLine(xmlTree)
   
  The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
    
   

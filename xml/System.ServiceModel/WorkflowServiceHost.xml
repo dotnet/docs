@@ -459,7 +459,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the default implementation, <xref:System.ServiceModel.WorkflowServiceHost> calls <xref:System.Workflow.Runtime.WorkflowRuntime.StopRuntime%2A> before calling <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=fullName>. This means the workflow runtime will shut down before the service host closes.  
+ In the default implementation, <xref:System.ServiceModel.WorkflowServiceHost> calls <xref:System.Workflow.Runtime.WorkflowRuntime.StopRuntime%2A> before calling <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=nameWithType>. This means the workflow runtime will shut down before the service host closes.  
   
  ]]></format>
         </remarks>

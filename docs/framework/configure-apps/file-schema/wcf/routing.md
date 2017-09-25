@@ -70,4 +70,4 @@ None
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=fullName>
+<xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>

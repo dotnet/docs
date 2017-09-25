@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An encoder fallback buffer is responsible for receiving and handling characters that an encoder cannot convert to a byte sequence. This method returns an instance of the <xref:System.Text.EncoderExceptionFallbackBuffer> class, which is a subclass of  the <xref:System.Text.EncoderFallbackBuffer> class. An <xref:System.Text.EncoderExceptionFallbackBuffer> object throws an <xref:System.Text.EncoderFallbackException> exception whenever characters are passed to its <xref:System.Text.EncoderExceptionFallbackBuffer.Fallback%2A?displayProperty=fullName> method.  
+ An encoder fallback buffer is responsible for receiving and handling characters that an encoder cannot convert to a byte sequence. This method returns an instance of the <xref:System.Text.EncoderExceptionFallbackBuffer> class, which is a subclass of  the <xref:System.Text.EncoderFallbackBuffer> class. An <xref:System.Text.EncoderExceptionFallbackBuffer> object throws an <xref:System.Text.EncoderFallbackException> exception whenever characters are passed to its <xref:System.Text.EncoderExceptionFallbackBuffer.Fallback%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

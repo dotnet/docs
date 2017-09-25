@@ -85,7 +85,7 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
   
 -   Create a class that derives from the <xref:System.Windows.Controls.InkCanvas>.  
   
--   Assign your customized <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to the <xref:System.Windows.Controls.InkCanvas.DynamicRenderer%2A?displayProperty=fullName> property.  
+-   Assign your customized <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to the <xref:System.Windows.Controls.InkCanvas.DynamicRenderer%2A?displayProperty=nameWithType> property.  
   
 -   Override the <xref:System.Windows.Controls.InkCanvas.OnStrokeCollected%2A> method. In this method, remove the original stroke that was added to the InkCanvas. Then create a custom stroke, add it to the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property, and call the base class with a new <xref:System.Windows.Controls.InkCanvasStrokeCollectedEventArgs> that contains the custom stroke.  
   

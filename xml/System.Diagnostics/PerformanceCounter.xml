@@ -42,7 +42,7 @@
   
  To read from a performance counter, create an instance of the <xref:System.Diagnostics.PerformanceCounter> class, set the <xref:System.Diagnostics.PerformanceCounter.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounter.CounterName%2A>, and, optionally, the <xref:System.Diagnostics.PerformanceCounter.InstanceName%2A> or <xref:System.Diagnostics.PerformanceCounter.MachineName%2A> properties, and then call the <xref:System.Diagnostics.PerformanceCounter.NextValue%2A> method to take a performance counter reading.  
   
- To publish performance counter data, create one or more custom counters using the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=fullName> method, create an instance of the <xref:System.Diagnostics.PerformanceCounter> class, set the <xref:System.Diagnostics.PerformanceCounter.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounter.CounterName%2A> and, optionally, <xref:System.Diagnostics.PerformanceCounter.InstanceName%2A> or <xref:System.Diagnostics.PerformanceCounter.MachineName%2A> properties, and then call the <xref:System.Diagnostics.PerformanceCounter.IncrementBy%2A>, <xref:System.Diagnostics.PerformanceCounter.Increment%2A>, or <xref:System.Diagnostics.PerformanceCounter.Decrement%2A> methods, or set the <xref:System.Diagnostics.PerformanceCounter.RawValue%2A> property to change the value of your custom counter.  
+ To publish performance counter data, create one or more custom counters using the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=nameWithType> method, create an instance of the <xref:System.Diagnostics.PerformanceCounter> class, set the <xref:System.Diagnostics.PerformanceCounter.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounter.CounterName%2A> and, optionally, <xref:System.Diagnostics.PerformanceCounter.InstanceName%2A> or <xref:System.Diagnostics.PerformanceCounter.MachineName%2A> properties, and then call the <xref:System.Diagnostics.PerformanceCounter.IncrementBy%2A>, <xref:System.Diagnostics.PerformanceCounter.Increment%2A>, or <xref:System.Diagnostics.PerformanceCounter.Decrement%2A> methods, or set the <xref:System.Diagnostics.PerformanceCounter.RawValue%2A> property to change the value of your custom counter.  
   
 > [!NOTE]
 >  The <xref:System.Diagnostics.PerformanceCounter.Increment%2A>, <xref:System.Diagnostics.PerformanceCounter.IncrementBy%2A>, and <xref:System.Diagnostics.PerformanceCounter.Decrement%2A> methods use interlocks to update the counter value. This helps keep the counter value accurate in multithreaded or multiprocess scenarios, but also results in a performance penalty. If you do not need the accuracy that interlocked operations provide, you can update the <xref:System.Diagnostics.PerformanceCounter.RawValue%2A> property directly for up to a 5 times performance improvement.  However, in multithreaded scenarios, some updates to the counter value might be ignored, resulting in inaccurate data.  
@@ -821,7 +821,7 @@
 |Track a higher-capacity number of items or operations per second.|`RateOfCountsPerSecond64`|Tracking orders received per second on a site with very high volume.|  
 |Calculate the average time to perform a process or to process an item|`AverageTimer32`|Calculate the average time an order takes to be processed.|  
   
- When you create a counter whose type requires the use of a corresponding base counter, you must declare the counter and the base in the <xref:System.Diagnostics.CounterCreationDataCollection> you pass into the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=fullName> method.  
+ When you create a counter whose type requires the use of a corresponding base counter, you must declare the counter and the base in the <xref:System.Diagnostics.CounterCreationDataCollection> you pass into the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  If the value for the <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A> property is <xref:System.Diagnostics.PerformanceCounterInstanceLifetime.Process> and the performance counter category was created with .NET Framework version 1.0 or 1.1, an <xref:System.InvalidOperationException> is thrown. Performance counter categories created with earlier versions use global shared memory, and the value for <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A> must be <xref:System.Diagnostics.PerformanceCounterInstanceLifetime.Global>. If the category is not used by applications running on versions 1.0 or 1.1 of the .NET Framework, delete and recreate the category.  
@@ -1191,7 +1191,7 @@
 |\|_|  
 |/|_|  
   
- The <xref:System.AppDomain.FriendlyName%2A> property of the <xref:System.AppDomain> object obtained from the <xref:System.AppDomain.CurrentDomain%2A?displayProperty=fullName> property is a common source of instance names that can contain invalid characters.  
+ The <xref:System.AppDomain.FriendlyName%2A> property of the <xref:System.AppDomain> object obtained from the <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> property is a common source of instance names that can contain invalid characters.  
   
    
   

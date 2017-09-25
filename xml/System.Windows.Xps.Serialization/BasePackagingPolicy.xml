@@ -168,7 +168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the list to compose `LinkTarget` elements that can be inserted into the <xref:System.Windows.Documents.PageContent.LinkTargets%2A?displayProperty=fullName> element for the corresponding page. Wrap each string in the list in markup by using the following form:  
+ Use the list to compose `LinkTarget` elements that can be inserted into the <xref:System.Windows.Documents.PageContent.LinkTargets%2A?displayProperty=nameWithType> element for the corresponding page. Wrap each string in the list in markup by using the following form:  
   
  `<LinkTarget Name=\"` *target name* `\" />`, where *target name* is the string.  
   

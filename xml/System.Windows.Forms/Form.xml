@@ -501,7 +501,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.Form.AutoScale%2A> is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=fullName>. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
+>  The <xref:System.Windows.Forms.Form.AutoScale%2A> is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=nameWithType>. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  You can use this property to allow your form and its controls to automatically adjust based on changes in the font. This can be useful in applications where the font might increase or decrease based on the language specified for use by Windows.  
   
@@ -965,10 +965,10 @@
  The two conditions when a form is not disposed on `Close` is when (1) it is part of a multiple-document interface (MDI) application, and the form is not visible; and (2) you have displayed the form using <xref:System.Windows.Forms.Form.ShowDialog%2A>. In these cases, you will need to call <xref:System.Windows.Forms.Form.Dispose%2A> manually to mark all of the form's controls for garbage collection.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=fullName> method.  
+>  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=nameWithType> method.  
   
 > [!CAUTION]
->  Prior to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0, the <xref:System.Windows.Forms.Form.Closed?displayProperty=fullName> and <xref:System.Windows.Forms.Form.Closing?displayProperty=fullName> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  Prior to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0, the <xref:System.Windows.Forms.Form.Closed?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1011,7 +1011,7 @@
  You can use this event to perform tasks such as freeing resources used by the form and to save information entered in the form or to update its parent form.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.Closed?displayProperty=fullName> and <xref:System.Windows.Forms.Form.Closing?displayProperty=fullName> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.Closed?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
  If the form is an MDI parent form, the <xref:System.Windows.Forms.Form.Closing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.Closing> event is raised. In addition, the <xref:System.Windows.Forms.Form.Closed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.Closed> event of the MDI parent form is raised.  
   
@@ -1065,10 +1065,10 @@
  When a form is displayed as a modal dialog box, clicking the **Close** button (the button with an X at the upper-right corner of the form) causes the form to be hidden and the <xref:System.Windows.Forms.Form.DialogResult%2A> property to be set to `DialogResult.Cancel`. You can override the value assigned to the <xref:System.Windows.Forms.Form.DialogResult%2A> property when the user clicks the **Close** button by setting the <xref:System.Windows.Forms.Form.DialogResult%2A> property in an event handler for the <xref:System.Windows.Forms.Form.Closing> event of the form.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=fullName> method.  
+>  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=nameWithType> method.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.Closed?displayProperty=fullName> and <xref:System.Windows.Forms.Form.Closing?displayProperty=fullName> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.Closed?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
  If the form is an MDI parent form, the <xref:System.Windows.Forms.Form.Closing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.Closing> event is raised. In addition, the <xref:System.Windows.Forms.Form.Closed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.Closed> event of the MDI parent form is raised. Canceling the <xref:System.Windows.Forms.Form.Closing> event of an MDI child form does not prevent the <xref:System.Windows.Forms.Form.Closing> event of the MDI parent form from being raised. However, canceling the event will set to `true` the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> that is passed as a parameter to the parent form. To force all MDI parent and child forms to close, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false` in the MDI parent form.  
   
@@ -1223,7 +1223,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Deactivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Deactivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.Deactivate> event.  
   
@@ -1255,7 +1255,7 @@
 ## Remarks  
  An input method editor (IME) is a program that allows users to enter complex characters and symbols, such as Japanese Kanji characters, by using a standard keyboard.  
   
- As implemented in the <xref:System.Windows.Forms.Form> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value. The value of this property is assigned to the <xref:System.Windows.Forms.Control.ImeMode%2A?displayProperty=fullName> property.  
+ As implemented in the <xref:System.Windows.Forms.Form> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=nameWithType> value. The value of this property is assigned to the <xref:System.Windows.Forms.Control.ImeMode%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -1581,7 +1581,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.FormClosed> event.  
   
@@ -1624,7 +1624,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosing> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosing> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.FormClosing> event.  
   
@@ -1783,7 +1783,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.HelpButtonClicked> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.HelpButtonClicked> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.HelpButtonClicked> event.  
   
@@ -1854,7 +1854,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged> event.  
   
@@ -1890,7 +1890,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanging> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanging> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanging> event.  
   
@@ -2043,7 +2043,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to `true`, the form will receive all <xref:System.Windows.Forms.Control.KeyPress>, <xref:System.Windows.Forms.Control.KeyDown>, and <xref:System.Windows.Forms.Control.KeyUp> events. After the form's event handlers have completed processing the keystroke, the keystroke is then assigned to the control with focus. For example, if the <xref:System.Windows.Forms.Form.KeyPreview%2A> property is set to `true` and the currently selected control is a <xref:System.Windows.Forms.TextBox>, after the keystroke is handled by the event handlers of the form the <xref:System.Windows.Forms.TextBox> control will receive the key that was pressed. To handle keyboard events only at the form level and not allow controls to receive keyboard events, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=fullName> property in your form's <xref:System.Windows.Forms.Control.KeyPress> event handler to `true`.  
+ When this property is set to `true`, the form will receive all <xref:System.Windows.Forms.Control.KeyPress>, <xref:System.Windows.Forms.Control.KeyDown>, and <xref:System.Windows.Forms.Control.KeyUp> events. After the form's event handlers have completed processing the keystroke, the keystroke is then assigned to the control with focus. For example, if the <xref:System.Windows.Forms.Form.KeyPreview%2A> property is set to `true` and the currently selected control is a <xref:System.Windows.Forms.TextBox>, after the keystroke is handled by the event handlers of the form the <xref:System.Windows.Forms.TextBox> control will receive the key that was pressed. To handle keyboard events only at the form level and not allow controls to receive keyboard events, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=nameWithType> property in your form's <xref:System.Windows.Forms.Control.KeyPress> event handler to `true`.  
   
  You can use this property to process most keystrokes in your application and either handle the keystroke or call the appropriate control to handle the keystroke. For example, when an application uses function keys, you might want to process the keystrokes at the form level rather than writing code for each control that might receive keystroke events.  
   
@@ -2350,7 +2350,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximizedBoundsChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximizedBoundsChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MaximizedBoundsChanged> event.  
   
@@ -2430,7 +2430,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MaximumSizeChanged> event.  
   
@@ -2466,7 +2466,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MdiChildActivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MdiChildActivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MdiChildActivate> event.  
   
@@ -2651,7 +2651,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuComplete> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuComplete> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MenuComplete> event.  
   
@@ -2692,7 +2692,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuStart> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuStart> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MenuStart> event.  
   
@@ -2839,7 +2839,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MinimumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MinimumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MinimumSizeChanged> event.  
   
@@ -3037,7 +3037,7 @@
  The <xref:System.Windows.Forms.Form.OnFormClosed%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
    
   
@@ -3091,7 +3091,7 @@
  The <xref:System.Windows.Forms.Form.OnClosing%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
    
   
@@ -4329,7 +4329,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.Form.ProcessCmdKey%2A> method overrides the base  
   
- <xref:System.Windows.Forms.ContainerControl.ProcessCmdKey%2A?displayProperty=fullName> implementation to provide additional handling of main menu command keys and MDI accelerators.  
+ <xref:System.Windows.Forms.ContainerControl.ProcessCmdKey%2A?displayProperty=nameWithType> implementation to provide additional handling of main menu command keys and MDI accelerators.  
   
  For information about trapping keystrokes, see "How to trap keystrokes in controls by using Visual C#" and "How to trap keystrokes in .NET controls by using Visual Basic .NET" in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
@@ -4389,7 +4389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method overrides the base <xref:System.Windows.Forms.ContainerControl.ProcessDialogKey%2A?displayProperty=fullName> implementation to provide additional handling of the RETURN and ESCAPE keys in dialog boxes. The method performs no processing on keystrokes that include the ALT or CONTROL modifiers.  
+ The <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method overrides the base <xref:System.Windows.Forms.ContainerControl.ProcessDialogKey%2A?displayProperty=nameWithType> implementation to provide additional handling of the RETURN and ESCAPE keys in dialog boxes. The method performs no processing on keystrokes that include the ALT or CONTROL modifiers.  
   
  ]]></format>
         </remarks>
@@ -4529,7 +4529,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeBegin> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeBegin> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.ResizeBegin> event.  
   
@@ -4567,7 +4567,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeEnd> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeEnd> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.ResizeEnd> event.  
   
@@ -4685,7 +4685,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.RightToLeftLayoutChanged> event.  
   
@@ -5218,7 +5218,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Shown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Shown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.Shown> event.  
   

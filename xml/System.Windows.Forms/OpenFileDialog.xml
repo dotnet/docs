@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following code example creates an <xref:System.Windows.Forms.OpenFileDialog>, sets several properties to define the file extension filter and dialog behavior, and displays the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A?displayProperty=fullName> method. The example requires a form with a <xref:System.Windows.Forms.Button> placed on it and a reference to the <xref:System.IO> namespace added to it.  
+ The following code example creates an <xref:System.Windows.Forms.OpenFileDialog>, sets several properties to define the file extension filter and dialog behavior, and displays the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A?displayProperty=nameWithType> method. The example requires a form with a <xref:System.Windows.Forms.Button> placed on it and a reference to the <xref:System.IO> namespace added to it.  
   
  [!code-cpp[Classic OpenFileDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CPP/source.cpp#1)]
  [!code-csharp[Classic OpenFileDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CS/source.cs#1)]
@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.OpenFileDialog.ReadOnlyChecked%2A> state does not affect the read/write mode that <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A?displayProperty=fullName> uses to open a file selected in the dialog box. <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> will always open the file in read-only mode.  
+ The <xref:System.Windows.Forms.OpenFileDialog.ReadOnlyChecked%2A> state does not affect the read/write mode that <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A?displayProperty=nameWithType> uses to open a file selected in the dialog box. <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> will always open the file in read-only mode.  
   
  The <xref:System.Windows.Forms.OpenFileDialog.ShowReadOnly%2A> property must be set before in order for the read-only check box to appear in the dialog box.  
   

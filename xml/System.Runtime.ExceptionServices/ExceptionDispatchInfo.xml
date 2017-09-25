@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> object stores the stack trace information and Watson information that the exception contains at the point where it is captured. The exception can be thrown at another time and possibly on another thread by calling the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A?displayProperty=fullName> method. The exception is thrown as if it had flowed from the point where it was captured to the point where the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A> method is called.  
+ The <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> object stores the stack trace information and Watson information that the exception contains at the point where it is captured. The exception can be thrown at another time and possibly on another thread by calling the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A?displayProperty=nameWithType> method. The exception is thrown as if it had flowed from the point where it was captured to the point where the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A> method is called.  
   
  <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> cannot be serialized and is not intended to cross application domain boundaries.  
   

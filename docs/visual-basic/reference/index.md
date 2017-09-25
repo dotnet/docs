@@ -51,10 +51,10 @@ This section provides links to reference information about various aspects of [!
  Provides links to the complete [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language specification, which contains detailed information on all aspects of the language.  
   
 ## Reference  
- <xref:Microsoft.VisualBasic.PowerPacks?displayProperty=fullName>  
+ <xref:Microsoft.VisualBasic.PowerPacks?displayProperty=nameWithType>  
  This namespace contains classes for the Visual Basic Power Packs controls. Visual Basic Power Packs controls are additional Windows Forms controls.  
   
- <xref:Microsoft.VisualBasic.PowerPacks.Printing?displayProperty=fullName>  
+ <xref:Microsoft.VisualBasic.PowerPacks.Printing?displayProperty=nameWithType>  
  This namespace provides a component that enables you to print a facsimile of the form as it appears on screen.  
   
 ## Related Sections  

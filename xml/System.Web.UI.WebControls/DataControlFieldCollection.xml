@@ -28,7 +28,7 @@
   
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.DataControlField> object from the collection using array notation.  
   
--   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object, which can then be used to get items from the collection.  
+-   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object, which can then be used to get items from the collection.  
   
  The <xref:System.Web.UI.StateManagedCollection.Count%2A> property specifies the total number of items in the collection, and is commonly used to determine the upper bound of the collection. You can add items to and remove items from the collection using the <xref:System.Web.UI.WebControls.DataControlFieldCollection.Add%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataControlFieldCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.DataControlFieldCollection.RemoveAt%2A> methods.  
   
@@ -163,7 +163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method performs a linear search. It determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method performs a linear search. It determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

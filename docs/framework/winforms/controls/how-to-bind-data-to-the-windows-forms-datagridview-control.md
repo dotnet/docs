@@ -61,7 +61,7 @@ The <xref:System.Windows.Forms.DataGridView> control supports the standard Windo
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.BindingSource>   
  [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)   
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)

@@ -26,15 +26,15 @@
   
  Controls themselves do not necessarily require an adapter. If controls are extended through composition, generally the child control adapters are sufficient.  
   
- Each control has explicit mappings to adapters through the .browser definition files. Thus, any access to the <xref:System.Web.UI.Control.Adapter%2A?displayProperty=fullName> property uses the <xref:System.Web.HttpBrowserCapabilities> object extracted from the browser definition files to perform the lookup for the mapping of the adapter to control.  
+ Each control has explicit mappings to adapters through the .browser definition files. Thus, any access to the <xref:System.Web.UI.Control.Adapter%2A?displayProperty=nameWithType> property uses the <xref:System.Web.HttpBrowserCapabilities> object extracted from the browser definition files to perform the lookup for the mapping of the adapter to control.  
   
  During processing, the .NET Framework intercepts calls to the overridable methods of a control that could be target-specific. If a control adapter is attached, the .NET Framework calls the associated adapter methods.  
   
- The adapter performs rendering for the control through the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method. If overridden, <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> potentially should not call the base class implementation because that performs a call back on the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method. This might cause the rendering to occur twice, once by the adapter and once by the control.  
+ The adapter performs rendering for the control through the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method. If overridden, <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> potentially should not call the base class implementation because that performs a call back on the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method. This might cause the rendering to occur twice, once by the adapter and once by the control.  
   
- The <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> base method calls back on the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method of the control. Thus, if you override <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A>, you should not call the base class implementation unless the rendering you implement is in addition to that provided by <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> of the control.  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> base method calls back on the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method of the control. Thus, if you override <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A>, you should not call the base class implementation unless the rendering you implement is in addition to that provided by <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> of the control.  
   
- You must ensure that the .NET Framework performs interception for adapters of the child controls. You can do this by calling the <xref:System.Web.UI.Adapters.ControlAdapter.RenderChildren%2A> base method, which calls the <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=fullName> method of the control, from your <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> override.  
+ You must ensure that the .NET Framework performs interception for adapters of the child controls. You can do this by calling the <xref:System.Web.UI.Adapters.ControlAdapter.RenderChildren%2A> base method, which calls the <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=nameWithType> method of the control, from your <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> override.  
   
  The <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> methods are called by the control immediately before and after (respectively) the control calls the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method. If pre- and post-rendering are the only browser-specific processing tasks required, using <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> might make it unnecessary to override <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A>. The default behavior of the <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> methods is to call the corresponding methods of the <xref:System.Web.UI.HtmlTextWriter>.  
   
@@ -214,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is a derived control adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> method is overridden, the override is called instead of the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method. Thus, <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> can be used to create a target-specific child control set.  
+ If there is a derived control adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> method is overridden, the override is called instead of the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType> method. Thus, <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> can be used to create a target-specific child control set.  
   
  For more information about combining controls to create a new control, see [Composite Controls](http://msdn.microsoft.com/en-us/fb174677-d845-467c-8bf3-cc096b2490b0).  
   
@@ -284,7 +284,7 @@
   
  An adapter might need to maintain control state information when there are features that need to have state maintained across requests, independent from the state of the associated control. For example, a composite control consisting of a large textual display and a group of <xref:System.Web.UI.WebControls.RadioButton> controls might render as a single view on desktop computer browsers. On other browsers, it might split its rendering—one view for the textual display and the other for the radio button group. The adapter would need to maintain its own target-specific information about the currently active view.  
   
- The <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState%2A> method is called immediately after the <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=fullName> method, in the `LoadState` lifecycle stage. The adapter control state is separate and in addition to the control state of the control.  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState%2A> method is called immediately after the <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=nameWithType> method, in the `LoadState` lifecycle stage. The adapter control state is separate and in addition to the control state of the control.  
   
  ]]></format>
         </remarks>
@@ -316,7 +316,7 @@
   
  An adapter needs to maintain view state information when there is data that must be maintained across requests, independent from the view state of the associated control. For example, a grid control on desktop computer browsers might render as a single view of rows and columns of values. On other browsers, it might split its rendering into multiple separate views, such as a list of rows and details of a single row. The adapter would need to maintain the data for the views that are not currently active in view state.  
   
- The <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState%2A> method is called immediately before the <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=fullName> method in the `LoadState` lifecycle stage. The adapter view state is separate and in addition to the view state of the control.  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState%2A> method is called immediately before the <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=nameWithType> method in the `LoadState` lifecycle stage. The adapter view state is separate and in addition to the view state of the control.  
   
  ]]></format>
         </remarks>
@@ -344,7 +344,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnInit%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnInit%2A?displayProperty=fullName> method.  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnInit%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnInit%2A?displayProperty=nameWithType> method.  
   
  Override <xref:System.Web.UI.Adapters.ControlAdapter.OnInit%2A> to perform target-specific processing in the `Initialize` stage of the control lifecycle. Typically, these are functions that are performed when a control is created.  
   
@@ -386,7 +386,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnLoad%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnLoad%2A?displayProperty=fullName> method.  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnLoad%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnLoad%2A?displayProperty=nameWithType> method.  
   
  Override the <xref:System.Web.UI.Adapters.ControlAdapter.OnLoad%2A> method to perform target-specific processing in the `Load` stage of the control lifecycle. Typically, these are functions that should be performed for each client request.  
   
@@ -419,7 +419,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnPreRender%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=fullName> method.  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnPreRender%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=nameWithType> method.  
   
  Override the <xref:System.Web.UI.Adapters.ControlAdapter.OnPreRender%2A> method to perform target-specific processing in the `PreRender` stage of the control lifecycle. Typically, these are functions that immediately precede rendering of the control output.  
   
@@ -452,7 +452,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnUnload%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnUnload%2A?displayProperty=fullName> method.  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnUnload%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnUnload%2A?displayProperty=nameWithType> method.  
   
  Override the <xref:System.Web.UI.Adapters.ControlAdapter.OnUnload%2A> method to do target-specific processing in the `Unload` stage of the control lifecycle. Typically, these are cleanup functions that precede disposition of the control.  
   
@@ -490,7 +490,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Adapters.ControlAdapter.Page%2A> property provides access to the <xref:System.Web.UI.Page?displayProperty=fullName> object where the control is situated.  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.Page%2A> property provides access to the <xref:System.Web.UI.Page?displayProperty=nameWithType> object where the control is situated.  
   
  ]]></format>
         </remarks>
@@ -523,7 +523,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Adapters.ControlAdapter.PageAdapter%2A> property provides access to the <xref:System.Web.UI.Adapters.PageAdapter?displayProperty=fullName> object for the <xref:System.Web.UI.Page> object where the <xref:System.Web.UI.Control> object associated with the current <xref:System.Web.UI.Adapters.ControlAdapter> object is situated.  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.PageAdapter%2A> property provides access to the <xref:System.Web.UI.Adapters.PageAdapter?displayProperty=nameWithType> object for the <xref:System.Web.UI.Page> object where the <xref:System.Web.UI.Control> object associated with the current <xref:System.Web.UI.Adapters.ControlAdapter> object is situated.  
   
  The <xref:System.Web.UI.Adapters.ControlAdapter.PageAdapter%2A> property can be used to access other items at the page adapter level, such as common target-specific functions that could apply to several control types on the page.  
   
@@ -553,7 +553,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Override the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method to generate target-specific markup to send to the client browser. The <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method is called in place of the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method if a <xref:System.Web.UI.Adapters.ControlAdapter> object is attached to a <xref:System.Web.UI.Control> object.  
+ Override the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method to generate target-specific markup to send to the client browser. The <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method is called in place of the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method if a <xref:System.Web.UI.Adapters.ControlAdapter> object is attached to a <xref:System.Web.UI.Control> object.  
   
  ]]></format>
         </remarks>
@@ -621,7 +621,7 @@
   
  An adapter might need to maintain control state information when there are features that need to have state maintained across requests, independent from the state of the associated control. For example, a composite control consisting of a large textual display and a group of <xref:System.Web.UI.WebControls.RadioButton> controls might render as a single view on desktop computer browsers. On other browsers, it might split its rendering—one view for the textual display and the other for the radio button group. The adapter would need to maintain its own target-specific information about the currently active view.  
   
- The <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState%2A> method is called immediately after the <xref:System.Web.UI.Control.SaveControlState%2A?displayProperty=fullName> method in the `SaveState` lifecycle stage. The adapter control state is separate and in addition to the control state of the control.  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState%2A> method is called immediately after the <xref:System.Web.UI.Control.SaveControlState%2A?displayProperty=nameWithType> method in the `SaveState` lifecycle stage. The adapter control state is separate and in addition to the control state of the control.  
   
  ]]></format>
         </remarks>
@@ -651,7 +651,7 @@
   
  An adapter needs to maintain view state information when there is data that must be maintained across requests, independent from the associated view state of the control. For example, a grid control on desktop computer browsers might render as a single view of rows and columns of values. On other browsers, it might split its rendering into multiple separate views, such as a list of rows and details of a single row. The adapter would need to maintain the data for the views that are not currently active in view state.  
   
- The <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState%2A> method is called immediately before the <xref:System.Web.UI.Control.SaveViewState%2A?displayProperty=fullName> method in the `SaveState` lifecycle stage. The adapter view state is separate and in addition to the view state of the control.  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState%2A> method is called immediately before the <xref:System.Web.UI.Control.SaveViewState%2A?displayProperty=nameWithType> method in the `SaveState` lifecycle stage. The adapter view state is separate and in addition to the view state of the control.  
   
  ]]></format>
         </remarks>

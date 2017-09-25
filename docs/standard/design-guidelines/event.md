@@ -33,7 +33,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
   
  **✓ DO** use the term "raise" for events rather than "fire" or "trigger."  
   
- **✓ DO** use <xref:System.EventHandler%601?displayProperty=fullName> instead of manually creating new delegates to be used as event handlers.  
+ **✓ DO** use <xref:System.EventHandler%601?displayProperty=nameWithType> instead of manually creating new delegates to be used as event handlers.  
   
  **✓ CONSIDER** using a subclass of <xref:System.EventArgs> as the event argument, unless you are absolutely sure the event will never need to carry any data to the event handling method, in which case you can use the `EventArgs` type directly.  
   
@@ -59,7 +59,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
   
  **✓ CONSIDER** raising events that the end user can cancel. This only applies to pre-events.  
   
- Use <xref:System.ComponentModel.CancelEventArgs?displayProperty=fullName> or its subclass as the event argument to allow the end user to cancel events.  
+ Use <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType> or its subclass as the event argument to allow the end user to cancel events.  
   
 ### Custom Event Handler Design  
  There are cases in which `EventHandler<T>` cannot be used, such as when the framework needs to work with earlier versions of the CLR, which did not support Generics. In such cases, you might need to design and develop a custom event handler delegate.  
@@ -70,7 +70,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
   
  **✓ DO** use `object` as the type of the first parameter of the event handler, and call it `sender`.  
   
- **✓ DO** use <xref:System.EventArgs?displayProperty=fullName> or its subclass as the type of the second parameter of the event handler, and call it `e`.  
+ **✓ DO** use <xref:System.EventArgs?displayProperty=nameWithType> or its subclass as the type of the second parameter of the event handler, and call it `e`.  
   
  **X DO NOT** have more than two parameters on event handlers.  
   

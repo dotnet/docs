@@ -48,7 +48,7 @@ HRESULT GetInMemorySymbolsLength(
 ## Return Value  
  The method returns `S_OK` if the length of the memory stream can be determined, even if it is zero (0).  
   
- The method returns `CORPROF_E_MODULE_IS_DYNAMIC` if the method was created using <xref:System.Reflection.Emit?displayProperty=fullName>.  
+ The method returns `CORPROF_E_MODULE_IS_DYNAMIC` if the method was created using <xref:System.Reflection.Emit?displayProperty=nameWithType>.  
   
 ## Remarks  
  If the module has in-memory symbols, the length of the stream is placed in `pCountSymbolBytes`. If the module doesn't have in-memory     symbols, `*pCountSymbolBytes = 0`.  

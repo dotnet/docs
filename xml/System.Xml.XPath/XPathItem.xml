@@ -155,7 +155,7 @@
 ## Remarks  
  If the value of the item is not valid according to its specified schema type, the value of the <xref:System.Xml.XPath.XPathItem.TypedValue%2A> property is equivalent to the value of the <xref:System.Xml.XPath.XPathItem.Value%2A> property.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -279,7 +279,7 @@
   
  The <xref:System.Xml.IXmlNamespaceResolver> object is used to resolve namespace prefixes related to type conversions. For example, when converting an `xs:QName` to an `xs:string`.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -322,7 +322,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsDateTime%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Boolean> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -364,7 +364,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsDateTime%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.DateTime> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -406,7 +406,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsDouble%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Double> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -449,7 +449,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsInt%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Int32> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -492,7 +492,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsLong%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Int64> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -537,7 +537,7 @@
   
  For example, an element of type `xs:int` would have a <xref:System.Xml.XPath.XPathItem.ValueType%2A> of <xref:System.Int32> by default. However, the <xref:System.Xml.XPath.XPathItem.ValueType%2A> could be any one of the valid types that can be mapped to `xs:int`, such as <xref:System.Int16> or <xref:System.Double>.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>

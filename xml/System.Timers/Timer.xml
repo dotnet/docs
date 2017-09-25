@@ -44,18 +44,18 @@
  The <xref:System.Timers.Timer> component is a server-based timer that raises an <xref:System.Timers.Timer.Elapsed> event in your application after the number of milliseconds in the <xref:System.Timers.Timer.Interval%2A> property has elapsed. You can configure the <xref:System.Timers.Timer> object to raise the event just once or repeatedly using the <xref:System.Timers.Timer.AutoReset%2A> property. Typically, a <xref:System.Timers.Timer> object is declared at the class level so that it stays in scope as long as it is needed. You can then handle its <xref:System.Timers.Timer.Elapsed> event to provide regular processing. For example, suppose you have a critical server that must be kept running 24 hours a day, 7 days a week. You could create a service that uses a <xref:System.Timers.Timer> object to periodically check the server and ensure that the system is up and running. If the system is not responding, the service could attempt to restart the server or notify an administrator.  
   
 > [!IMPORTANT]
->  The <xref:System.Timers.Timer> class is available in the .NET Framework only. It is not included in the .NET Standard and is not available in other implementations, such as .NET Core or the Universal Windows Platform. On these implementations, as well as for portability across all .NET implementations, you should use the <xref:System.Threading.Timer?displayProperty=fullName> class instead.  
+>  The <xref:System.Timers.Timer> class is available in the .NET Framework only. It is not included in the .NET Standard and is not available in other implementations, such as .NET Core or the Universal Windows Platform. On these implementations, as well as for portability across all .NET implementations, you should use the <xref:System.Threading.Timer?displayProperty=nameWithType> class instead.  
   
  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
- The server-based <xref:System.Timers.Timer?displayProperty=fullName> class is designed for use with worker threads in a multithreaded environment. Server timers can move among threads to handle the raised <xref:System.Timers.Timer.Elapsed> event, resulting in more accuracy than Windows timers in raising the event on time.  
+ The server-based <xref:System.Timers.Timer?displayProperty=nameWithType> class is designed for use with worker threads in a multithreaded environment. Server timers can move among threads to handle the raised <xref:System.Timers.Timer.Elapsed> event, resulting in more accuracy than Windows timers in raising the event on time.  
   
- The <xref:System.Timers.Timer?displayProperty=fullName> component raises the <xref:System.Timers.Timer.Elapsed> event, based on the value (in milliseconds) of the <xref:System.Timers.Timer.Interval%2A> property. You can handle this event to perform the processing you need. For example, suppose that you have an online sales application that continuously posts sales orders to a database. The service that compiles the instructions for shipping operates on a batch of orders rather than processing each order individually. You could use a <xref:System.Timers.Timer> to start the batch processing every 30 minutes.  
+ The <xref:System.Timers.Timer?displayProperty=nameWithType> component raises the <xref:System.Timers.Timer.Elapsed> event, based on the value (in milliseconds) of the <xref:System.Timers.Timer.Interval%2A> property. You can handle this event to perform the processing you need. For example, suppose that you have an online sales application that continuously posts sales orders to a database. The service that compiles the instructions for shipping operates on a batch of orders rather than processing each order individually. You could use a <xref:System.Timers.Timer> to start the batch processing every 30 minutes.  
   
 > [!IMPORTANT]
 >  The System.Timers.Timer class has the same resolution as the system clock. This means that the <xref:System.Timers.Timer.Elapsed> event will fire at an interval defined by the resolution of the system clock if the <xref:System.Timers.Timer.Interval%2A> property is less than the resolution of the system clock. For more information, see the <xref:System.Timers.Timer.Interval%2A> property.  
   
- When <xref:System.Timers.Timer.AutoReset%2A> is set to `false`, a <xref:System.Timers.Timer?displayProperty=fullName> object raises the <xref:System.Timers.Timer.Elapsed> event only once, after the first <xref:System.Timers.Timer.Interval%2A> has elapsed. To keep raising the <xref:System.Timers.Timer.Elapsed> event regularly at the interval defined by the <xref:System.Timers.Timer.Interval%2A>, set <xref:System.Timers.Timer.AutoReset%2A> to `true`, which is the default value.  
+ When <xref:System.Timers.Timer.AutoReset%2A> is set to `false`, a <xref:System.Timers.Timer?displayProperty=nameWithType> object raises the <xref:System.Timers.Timer.Elapsed> event only once, after the first <xref:System.Timers.Timer.Interval%2A> has elapsed. To keep raising the <xref:System.Timers.Timer.Elapsed> event regularly at the interval defined by the <xref:System.Timers.Timer.Interval%2A>, set <xref:System.Timers.Timer.AutoReset%2A> to `true`, which is the default value.  
   
  The <xref:System.Timers.Timer> component catches and suppresses all exceptions thrown by event handlers for the <xref:System.Timers.Timer.Elapsed> event. This behavior is subject to change in future releases of the .NET Framework. Note, however, that this is not true of event handlers that execute asynchronously and include the `await` operator (in C#)  or the `Await` operator (in Visual Basic). Exceptions thrown in these event handlers are propagated back to the calling thread, as the following example illustrates. For more information on exceptions thrown in asynchronous methods, see   [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
@@ -69,22 +69,22 @@
   
  Even if <xref:System.Timers.Timer.SynchronizingObject%2A> is not `null`, <xref:System.Timers.Timer.Elapsed> events can occur after the <xref:System.Timers.Timer.Dispose%2A> or <xref:System.Timers.Timer.Stop%2A> method has been called or after the <xref:System.Timers.Timer.Enabled%2A> property has been set to `false`, because the signal to raise the <xref:System.Timers.Timer.Elapsed> event is always queued for execution on a thread pool thread. One way to resolve this race condition is to set a flag that tells the event handler for the <xref:System.Timers.Timer.Elapsed> event to ignore subsequent events.  
   
- If you use the <xref:System.Timers.Timer?displayProperty=fullName> class with a user interface element, such as a form or control, without placing the timer on that user interface element, assign the form or control that contains the <xref:System.Timers.Timer> to the <xref:System.Timers.Timer.SynchronizingObject%2A> property, so that the event is marshaled to the user interface thread.  
+ If you use the <xref:System.Timers.Timer?displayProperty=nameWithType> class with a user interface element, such as a form or control, without placing the timer on that user interface element, assign the form or control that contains the <xref:System.Timers.Timer> to the <xref:System.Timers.Timer.SynchronizingObject%2A> property, so that the event is marshaled to the user interface thread.  
   
  For a list of default property values for an instance of <xref:System.Timers.Timer>, see the <xref:System.Timers.Timer.%23ctor%2A> constructor.  
   
 > [!TIP]
 >  Be aware that the .NET Framework Class Library includes four classes named `Timer`, each of which offers different functionality:  
 >   
->  -   <xref:System.Timers.Timer?displayProperty=fullName> (this topic): fires an event at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
-> -   <xref:System.Threading.Timer?displayProperty=fullName>: executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=fullName> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
-> -   <xref:System.Windows.Forms.Timer?displayProperty=fullName>: a Windows Forms component that fires an event at regular intervals. The component has no user interface and is designed for use in a single-threaded environment.  
-> -   <xref:System.Web.UI.Timer?displayProperty=fullName>: an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.  
+>  -   <xref:System.Timers.Timer?displayProperty=nameWithType> (this topic): fires an event at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
+> -   <xref:System.Threading.Timer?displayProperty=nameWithType>: executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=nameWithType> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
+> -   <xref:System.Windows.Forms.Timer?displayProperty=nameWithType>: a Windows Forms component that fires an event at regular intervals. The component has no user interface and is designed for use in a single-threaded environment.  
+> -   <xref:System.Web.UI.Timer?displayProperty=nameWithType>: an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.  
   
    
   
 ## Examples  
- The following example instantiates a `System.Timers.Timer` object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2,000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a `System.Timers.Timer` object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2,000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-csharp[System.Timers.Timer#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer2a.cs#2)]
  [!code-vb[System.Timers.Timer#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer2a.vb#2)]  
@@ -131,7 +131,7 @@
    
   
 ## Examples  
- The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
  [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
@@ -174,7 +174,7 @@
    
   
 ## Examples  
- The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-csharp[System.Timers.Timer#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/AsyncHandlerEx1.cs#3)]
  [!code-vb[System.Timers.Timer#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/AsyncHandlerEx1.vb#3)]  
@@ -391,7 +391,7 @@
    
   
 ## Examples  
- The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
  [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
@@ -456,7 +456,7 @@
    
   
 ## Examples  
- The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
  [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
@@ -566,7 +566,7 @@
    
   
 ## Examples  
- The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   
  [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
  [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
@@ -693,16 +693,16 @@
    
   
 ## Examples  
- The following example instantiates a `System.Timers.Timer` object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2,000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised. When the user presses the Enter key, the application calls the  <xref:System.Timers.Timer.Stop%2A> method before terminating the application.  
+ The following example instantiates a `System.Timers.Timer` object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2,000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised. When the user presses the Enter key, the application calls the  <xref:System.Timers.Timer.Stop%2A> method before terminating the application.  
   
  [!code-csharp[System.Timers.Timer#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer2a.cs#2)]
  [!code-vb[System.Timers.Timer#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer2a.vb#2)]  
   
  The following code example shows one way to prevent the thread that calls the <xref:System.Timers.Timer.Stop%2A> method from continuing until a currently executing <xref:System.Timers.Timer.Elapsed> event ends, and also to prevent two <xref:System.Timers.Timer.Elapsed> events from executing the event handler at the same time (often referred to as reentrancy).  
   
- The example executes 100 test runs. Each time the test is run, the timer is started with an interval of 150 milliseconds. The event handler uses the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method to simulate a task that randomly varies in length from 50 to 200 milliseconds. The test method also starts a control thread that waits for a second and then stops the timer. If an event is being handled when the control thread stops the timer, the control thread must wait until the event is finished before proceeding.  
+ The example executes 100 test runs. Each time the test is run, the timer is started with an interval of 150 milliseconds. The event handler uses the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method to simulate a task that randomly varies in length from 50 to 200 milliseconds. The test method also starts a control thread that waits for a second and then stops the timer. If an event is being handled when the control thread stops the timer, the control thread must wait until the event is finished before proceeding.  
   
- The <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method overload is used to avoid reentrancy and to prevent the control thread from continuing until an executing event ends. The event handler uses the <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29> method to set a control variable to 1, but only if the value is currently zero. This is an atomic operation. If the return value is zero, the control variable has been set to 1 and the event handler proceeds. If the return value is non-zero, the event is simply discarded to avoid reentrancy. (If it were necessary to execute every event, the <xref:System.Threading.Monitor> class would be a better way to synchronize the events.) When the event handler ends, it sets the control variable back to zero. The example records the total number of events that executed, that were discarded because of reentrancy, and that occurred after the <xref:System.Timers.Timer.Stop%2A> method was called.  
+ The <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method overload is used to avoid reentrancy and to prevent the control thread from continuing until an executing event ends. The event handler uses the <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29> method to set a control variable to 1, but only if the value is currently zero. This is an atomic operation. If the return value is zero, the control variable has been set to 1 and the event handler proceeds. If the return value is non-zero, the event is simply discarded to avoid reentrancy. (If it were necessary to execute every event, the <xref:System.Threading.Monitor> class would be a better way to synchronize the events.) When the event handler ends, it sets the control variable back to zero. The example records the total number of events that executed, that were discarded because of reentrancy, and that occurred after the <xref:System.Timers.Timer.Stop%2A> method was called.  
   
  The control thread uses the <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29> method to set the control variable to -1 (minus one), but only if the value is currently zero. If the atomic operation returns non-zero, an event is currently executing. The control thread waits and tries again. The example records the number of times the control thread had to wait for an event to finish.  
   

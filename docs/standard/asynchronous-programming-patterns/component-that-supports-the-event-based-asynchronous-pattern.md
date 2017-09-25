@@ -29,7 +29,7 @@ manager: "wpickett"
 # Walkthrough: Implementing a Component That Supports the Event-based Asynchronous Pattern
 If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing the [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
- This walkthrough illustrates how to create a component that implements the Event-based Asynchronous Pattern. It is implemented using helper classes from the <xref:System.ComponentModel?displayProperty=fullName> namespace, which ensures that the component works correctly under any application model, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], Console applications and Windows Forms applications. This component is also designable with a <xref:System.Windows.Forms.PropertyGrid> control and your own custom designers.  
+ This walkthrough illustrates how to create a component that implements the Event-based Asynchronous Pattern. It is implemented using helper classes from the <xref:System.ComponentModel?displayProperty=nameWithType> namespace, which ensures that the component works correctly under any application model, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], Console applications and Windows Forms applications. This component is also designable with a <xref:System.Windows.Forms.PropertyGrid> control and your own custom designers.  
   
  When you are through, you will have an application that computes prime numbers asynchronously. Your application will have a main user interface (UI) thread and a thread for each prime number calculation. Although testing whether a large number is prime can take a noticeable amount of time, the main UI thread will not be interrupted by this delay, and the form will be responsive during the calculations. You will be able to run as many calculations as you like concurrently and selectively cancel pending calculations.  
   
@@ -63,7 +63,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 #### To define asynchronous events for clients of your component:  
   
-1.  Import the <xref:System.Threading?displayProperty=fullName> and <xref:System.Collections.Specialized?displayProperty=fullName> namespaces at the top of your file.  
+1.  Import the <xref:System.Threading?displayProperty=nameWithType> and <xref:System.Collections.Specialized?displayProperty=nameWithType> namespaces at the top of your file.  
   
      [!code-csharp[System.ComponentModel.AsyncOperationManager#11](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#11)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#11](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#11)]  

@@ -26,7 +26,7 @@
   
 -   **Application-Scope Window, Property, and Resource Management**: <xref:System.Windows.Application.FindResource%2A>, <xref:System.Windows.Application.GetContentStream%2A>, <xref:System.Windows.Application.GetResourceStream%2A>, <xref:System.Windows.Application.LoadComponent%2A>, <xref:System.Windows.Application.MainWindow%2A>, <xref:System.Windows.Application.Properties%2A>, <xref:System.Windows.Application.Resources%2A>, <xref:System.Windows.Application.StartupUri%2A>, <xref:System.Windows.Application.Windows%2A>.  
   
--   **Command-Line Parameter and Exit Code Processing**: <xref:System.Windows.Application.Startup?displayProperty=fullName>, <xref:System.Windows.Application.Exit?displayProperty=fullName>, <xref:System.Windows.Application.Shutdown%2A?displayProperty=fullName>.  
+-   **Command-Line Parameter and Exit Code Processing**: <xref:System.Windows.Application.Startup?displayProperty=nameWithType>, <xref:System.Windows.Application.Exit?displayProperty=nameWithType>, <xref:System.Windows.Application.Shutdown%2A?displayProperty=nameWithType>.  
   
 -   **Navigation**: <xref:System.Windows.Application.FragmentNavigation>, <xref:System.Windows.Application.LoadCompleted>, <xref:System.Windows.Application.Navigated>, <xref:System.Windows.Application.Navigating>, <xref:System.Windows.Application.NavigationProgress>, <xref:System.Windows.Application.NavigationStopped>, <xref:System.Windows.Application.NavigationFailed>, <xref:System.Windows.Application.SetCookie%2A>, <xref:System.Windows.Application.GetCookie%2A>.  
   
@@ -399,7 +399,7 @@
 ## Remarks  
  A navigator is either a <xref:System.Windows.Navigation.NavigationWindow> or a <xref:System.Windows.Controls.Frame>.  
   
- See <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -568,7 +568,7 @@
 ## Remarks  
  A navigator is either a <xref:System.Windows.Navigation.NavigationWindow> or a <xref:System.Windows.Controls.Frame>.  
   
- See <xref:System.Windows.Navigation.NavigationService.LoadCompleted?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.LoadCompleted?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  Listen for events on the navigated content such as the <xref:System.Windows.FrameworkElement.Loaded> event on <xref:System.Windows.Controls.Page> before you access properties of the navigated content.  
@@ -759,7 +759,7 @@
 ## Remarks  
  A navigator is either a <xref:System.Windows.Navigation.NavigationWindow> or a <xref:System.Windows.Controls.Frame>.  
   
- See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -785,7 +785,7 @@
 ## Remarks  
  A navigator is either a <xref:System.Windows.Navigation.NavigationWindow> or a <xref:System.Windows.Controls.Frame>.  
   
- See <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -811,7 +811,7 @@
 ## Remarks  
  A navigator is either a <xref:System.Windows.Navigation.NavigationWindow> or a <xref:System.Windows.Controls.Frame>.  
   
- See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -837,7 +837,7 @@
 ## Remarks  
  A navigator is either a <xref:System.Windows.Navigation.NavigationWindow> or a <xref:System.Windows.Controls.Frame>.  
   
- See <xref:System.Windows.Navigation.NavigationService.NavigationProgress?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationProgress?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -863,7 +863,7 @@
 ## Remarks  
  A navigator is either a <xref:System.Windows.Navigation.NavigationWindow> or a <xref:System.Windows.Controls.Frame>.  
   
- See <xref:System.Windows.Navigation.NavigationService.NavigationStopped?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationStopped?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1368,7 +1368,7 @@
   
 2.  Windows  
   
-3.  <xref:System.Windows.Application.Resources%2A?displayProperty=fullName>  
+3.  <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType>  
   
 4.  System  
   

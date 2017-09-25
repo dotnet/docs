@@ -691,7 +691,7 @@
 ## Remarks  
  The <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> method overwrites the user-scoped settings properties by restoring the currently persisted value of each application settings. This method performs the following actions:  
   
--   It calls the <xref:System.Configuration.IApplicationSettingsProvider.Reset%2A?displayProperty=fullName> method on every settings provider that supports this optional method.  
+-   It calls the <xref:System.Configuration.IApplicationSettingsProvider.Reset%2A?displayProperty=nameWithType> method on every settings provider that supports this optional method.  
   
 -   It calls the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> method to force a refresh of the settings property values.  
   
@@ -933,7 +933,7 @@
 ## Remarks  
  The <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> method performs two actions to assure smooth transition to a new version of an application:  
   
--   It notifies all of the corresponding settings providers of the existence of the upgraded application through a call to their <xref:System.Configuration.IApplicationSettingsProvider.Upgrade%2A?displayProperty=fullName> method, assuming they have implemented the <xref:System.Configuration.IApplicationSettingsProvider> interface. This action is not performed if the settings wrapper class is marked with <xref:System.Configuration.NoSettingsVersionUpgradeAttribute>.  
+-   It notifies all of the corresponding settings providers of the existence of the upgraded application through a call to their <xref:System.Configuration.IApplicationSettingsProvider.Upgrade%2A?displayProperty=nameWithType> method, assuming they have implemented the <xref:System.Configuration.IApplicationSettingsProvider> interface. This action is not performed if the settings wrapper class is marked with <xref:System.Configuration.NoSettingsVersionUpgradeAttribute>.  
   
 -   It reloads the values for all of the application settings.  
   

@@ -26,7 +26,7 @@
   
  When you create an instance of <xref:System.DirectoryServices.DirectorySearcher>, you specify the root you want to retrieve, and an optional list of properties to retrieve. The <xref:System.DirectoryServices.DirectorySearcher.SearchRoot%2A> property enables you to set additional properties to do the following tasks:  
   
--   Cache the search results on the local computer. Set the <xref:System.DirectoryServices.DirectorySearcher.CacheResults%2A> property to `true` to store directory information on the local computer. Updates are made to this local cache and committed to Active Directory Domain Services only when the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A?displayProperty=fullName> method is called.  
+-   Cache the search results on the local computer. Set the <xref:System.DirectoryServices.DirectorySearcher.CacheResults%2A> property to `true` to store directory information on the local computer. Updates are made to this local cache and committed to Active Directory Domain Services only when the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A?displayProperty=nameWithType> method is called.  
   
 -   Specify the length of time to search, using the  <xref:System.DirectoryServices.DirectorySearcher.ServerTimeLimit%2A> property.  
   
@@ -42,7 +42,7 @@
  For a list of initial property values for an instance of the <xref:System.DirectoryServices.DirectorySearcher> class, see the <xref:System.DirectoryServices.DirectorySearcher.%23ctor> constructor.  
   
 > [!NOTE]
->  It is assumed that you have a general understanding of Active Directory Domain Services before using this class. For more information, see the <xref:System.DirectoryServices?displayProperty=fullName> overview.  
+>  It is assumed that you have a general understanding of Active Directory Domain Services before using this class. For more information, see the <xref:System.DirectoryServices?displayProperty=nameWithType> overview.  
   
  ]]></format>
     </remarks>

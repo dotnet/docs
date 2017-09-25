@@ -23,7 +23,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Attributes
-<xref:System.Attribute?displayProperty=fullName> is a base class used to define custom attributes.  
+<xref:System.Attribute?displayProperty=nameWithType> is a base class used to define custom attributes.  
   
  Attributes are annotations that can be added to programming elements such as assemblies, types, members, and parameters. They are stored in the metadata of the assembly and can be accessed at runtime using the reflection APIs. For example, the Framework defines the <xref:System.ObsoleteAttribute>, which can be applied to a type or a member to indicate that the type or member has been deprecated.  
   
@@ -31,7 +31,7 @@ manager: "wpickett"
   
  Some properties of an attribute must be specified when the attribute is applied. These are referred to as the required properties or required arguments, because they are represented as positional constructor parameters. For example, the <xref:System.Diagnostics.ConditionalAttribute.ConditionString%2A> property of the <xref:System.Diagnostics.ConditionalAttribute> is a required property.  
   
- Properties that do not necessarily have to be specified when the attribute is applied are called optional properties (or optional arguments). They are represented by settable properties. Compilers provide special syntax to set these properties when an attribute is applied. For example, the <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=fullName> property represents an optional argument.  
+ Properties that do not necessarily have to be specified when the attribute is applied are called optional properties (or optional arguments). They are represented by settable properties. Compilers provide special syntax to set these properties when an attribute is applied. For example, the <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> property represents an optional argument.  
   
  **✓ DO** name custom attribute classes with the suffix "Attribute."  
   

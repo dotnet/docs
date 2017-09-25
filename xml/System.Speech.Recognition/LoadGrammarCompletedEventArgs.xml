@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of `LoadGrammarCompletedEventArgs` is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object raises its <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted?displayProperty=fullName> or the <xref:System.Speech.Recognition.SpeechRecognizer> object raises its <xref:System.Speech.Recognition.SpeechRecognizer.LoadGrammarCompleted> event. The events are raised when calls to the `LoadGrammarAsync` methods complete.  
+ An instance of `LoadGrammarCompletedEventArgs` is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object raises its <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted?displayProperty=nameWithType> or the <xref:System.Speech.Recognition.SpeechRecognizer> object raises its <xref:System.Speech.Recognition.SpeechRecognizer.LoadGrammarCompleted> event. The events are raised when calls to the `LoadGrammarAsync` methods complete.  
   
  To obtain information about the <xref:System.Speech.Recognition.Grammar> object that was loaded, access the <xref:System.Speech.Recognition.LoadGrammarCompletedEventArgs.Grammar%2A> property in the handler for the event.  
   

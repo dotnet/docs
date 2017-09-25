@@ -108,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of the <xref:System.Web.UI.MobileControls.MobileControl.CreateTemplatedUI%2A> method calls the <xref:System.Web.UI.MobileControls.IControlAdapter.CreateTemplatedUI%2A?displayProperty=fullName> method of the corresponding control adapter, which in turn can either call back the <xref:System.Web.UI.MobileControls.ObjectList.CreateTemplatedItemsList%2A> method or the <xref:System.Web.UI.MobileControls.ObjectList.CreateTemplatedItemDetails%2A> method for the control, or create its own device-specific templated UI.  
+ The default implementation of the <xref:System.Web.UI.MobileControls.MobileControl.CreateTemplatedUI%2A> method calls the <xref:System.Web.UI.MobileControls.IControlAdapter.CreateTemplatedUI%2A?displayProperty=nameWithType> method of the corresponding control adapter, which in turn can either call back the <xref:System.Web.UI.MobileControls.ObjectList.CreateTemplatedItemsList%2A> method or the <xref:System.Web.UI.MobileControls.ObjectList.CreateTemplatedItemDetails%2A> method for the control, or create its own device-specific templated UI.  
   
  ]]></format>
         </remarks>

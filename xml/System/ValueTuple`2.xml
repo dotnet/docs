@@ -595,7 +595,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this method takes the form (*Item1*, *Item2*, where *Item1* and *Item2* represent the values of the <xref:System.ValueTuple%602.Item1> and <xref:System.ValueTuple%602.Item2> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+ The string returned by this method takes the form (*Item1*, *Item2*, where *Item1* and *Item2* represent the values of the <xref:System.ValueTuple%602.Item1> and <xref:System.ValueTuple%602.Item2> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

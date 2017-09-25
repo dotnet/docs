@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+ This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>.  
   
  Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoAPITransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
   

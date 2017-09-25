@@ -19,7 +19,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Contention ETW Events
-Contention events are raised whenever there is contention for <xref:System.Threading.Monitor?displayProperty=fullName> locks or native locks used by the runtime. Contention occurs when a thread is waiting for a lock while another thread possesses the lock.  
+Contention events are raised whenever there is contention for <xref:System.Threading.Monitor?displayProperty=nameWithType> locks or native locks used by the runtime. Contention occurs when a thread is waiting for a lock while another thread possesses the lock.  
   
  The following table shows the keyword under which contention events are raised, and the level of the events. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
   

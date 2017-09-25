@@ -160,7 +160,7 @@ TabControl with different types in the Header property
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Like the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> can be any type. The <xref:System.Windows.Controls.HeaderedContentControl> uses the same logic to display the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> that is described in <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName>.  
+ Like the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> can be any type. The <xref:System.Windows.Controls.HeaderedContentControl> uses the same logic to display the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> that is described in <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_Header"></a>   
 ## Dependency Property Information  
@@ -245,11 +245,11 @@ TabControl with different types in the Header property
    
   
 ## Examples  
- The following example binds a <xref:System.Windows.Controls.TabControl> to a collection of `Student` objects.  The `Student` class has a `Name` property, a collection of `Course` objects, and implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  The example uses <xref:System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A> to put a student's name in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of each <xref:System.Windows.Controls.TabItem> (which inherits from <xref:System.Windows.Controls.HeaderedContentControl>), and the <xref:System.Windows.Controls.TabControl.ContentStringFormat%2A?displayProperty=fullName> to display the course list for each student in the Content of the <xref:System.Windows.Controls.TabItem>.  
+ The following example binds a <xref:System.Windows.Controls.TabControl> to a collection of `Student` objects.  The `Student` class has a `Name` property, a collection of `Course` objects, and implements the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> method to return either the `Name` of the student or a string that lists the student's courses.  The example uses <xref:System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A> to put a student's name in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of each <xref:System.Windows.Controls.TabItem> (which inherits from <xref:System.Windows.Controls.HeaderedContentControl>), and the <xref:System.Windows.Controls.TabControl.ContentStringFormat%2A?displayProperty=nameWithType> to display the course list for each student in the Content of the <xref:System.Windows.Controls.TabItem>.  
   
  [!code-xaml[ContentStringSnippets#TabControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#tabcontrol)]  
   
- The following example implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  
+ The following example implements the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> method to return either the `Name` of the student or a string that lists the student's courses.  
   
  [!code-csharp[ContentStringSnippets#TabControlToString](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml.cs#tabcontroltostring)]
  [!code-vb[ContentStringSnippets#TabControlToString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContentStringSnippets/visualbasic/window1.xaml.vb#tabcontroltostring)]  

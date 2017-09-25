@@ -116,7 +116,7 @@
 ## Remarks  
  Required arguments that are unbound result in validation errors that are displayed at design time.  
   
- The <xref:System.Activities.RuntimeArgument.IsRequired%2A?displayProperty=fullName> is set to `true` if the <xref:System.Activities.RequiredArgumentAttribute?displayProperty=fullName> is applied to an argument.  
+ The <xref:System.Activities.RuntimeArgument.IsRequired%2A?displayProperty=nameWithType> is set to `true` if the <xref:System.Activities.RequiredArgumentAttribute?displayProperty=nameWithType> is applied to an argument.  
   
  Overload groups can be set on arguments through the <xref:System.Activities.OverloadGroupAttribute>.  
   

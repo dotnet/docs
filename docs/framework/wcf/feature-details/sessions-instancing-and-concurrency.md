@@ -21,7 +21,7 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
  This topic describes these settings, how to use them, and the various interactions between them.  
   
 ## Sessions  
- When a service contract sets the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property to <xref:System.ServiceModel.SessionMode.Required?displayProperty=fullName>, that contract is saying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not. If the session ends and a message is sent over the same session-based channel an exception is thrown.  
+ When a service contract sets the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType>, that contract is saying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not. If the session ends and a message is sent over the same session-based channel an exception is thrown.  
   
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions have the following main conceptual features:  
   
@@ -33,7 +33,7 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
   
 -   There is no general data store associated with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] session.  
   
- If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=fullName> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions:  
+ If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sessions:  
   
 -   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions are always server-initiated.  
   
@@ -44,7 +44,7 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
  Client applications and service applications interact with sessions in different ways. Client applications initiate sessions and then receive and process the messages sent within the session. Service applications can use sessions as an extensibility point to add additional behavior. This is done by working directly with the <xref:System.ServiceModel.InstanceContext> or implementing a custom instance context provider.  
   
 ## Instancing  
- The instancing behavior (set by using the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property) controls how the <xref:System.ServiceModel.InstanceContext> is created in response to incoming messages. By default, each <xref:System.ServiceModel.InstanceContext> is associated with one user-defined service object, so (in the default case) setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property also controls the instancing of user-defined service objects. The <xref:System.ServiceModel.InstanceContextMode> enumeration defines the instancing modes.  
+ The instancing behavior (set by using the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property) controls how the <xref:System.ServiceModel.InstanceContext> is created in response to incoming messages. By default, each <xref:System.ServiceModel.InstanceContext> is associated with one user-defined service object, so (in the default case) setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property also controls the instancing of user-defined service objects. The <xref:System.ServiceModel.InstanceContextMode> enumeration defines the instancing modes.  
   
  The following instancing modes are available:  
   
@@ -64,20 +64,20 @@ public class CalculatorService : ICalculatorInstance
 }  
 ```  
   
- And while the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property controls how often the <xref:System.ServiceModel.InstanceContext> is released, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=fullName> and <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A?displayProperty=fullName> properties control when the service object is released.  
+ And while the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property controls how often the <xref:System.ServiceModel.InstanceContext> is released, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A?displayProperty=nameWithType> properties control when the service object is released.  
   
 ### Well-Known Singleton Services  
- One variation on single instance service objects is sometimes useful: you can create a service object yourself and create the service host using that object. To do so, you must also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property to <xref:System.ServiceModel.InstanceContextMode.Single> or an exception is thrown when the service host is opened.  
+ One variation on single instance service objects is sometimes useful: you can create a service object yourself and create the service host using that object. To do so, you must also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.InstanceContextMode.Single> or an exception is thrown when the service host is opened.  
   
- Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=fullName> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default parameterless public constructor).  
+ Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=nameWithType> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default parameterless public constructor).  
   
- Note that when an object is provided to this constructor, some features related to the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=fullName> has no effect when a singleton object instance is provided. Similarly, any other instance-release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=fullName> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=fullName> for all operations.  
+ Note that when an object is provided to this constructor, some features related to the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> has no effect when a singleton object instance is provided. Similarly, any other instance-release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> for all operations.  
   
 ### Sharing InstanceContext Objects  
  You can also control which sessionful channel or call is associated with which <xref:System.ServiceModel.InstanceContext> object by performing that association yourself.  
   
 ## Concurrency  
- Concurrency is the control of the number of threads active in an <xref:System.ServiceModel.InstanceContext> at any one time. This is controlled by using the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=fullName> with the <xref:System.ServiceModel.ConcurrencyMode> enumeration.  
+ Concurrency is the control of the number of threads active in an <xref:System.ServiceModel.InstanceContext> at any one time. This is controlled by using the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=nameWithType> with the <xref:System.ServiceModel.ConcurrencyMode> enumeration.  
   
  The following three concurrency modes are available:  
   
@@ -103,9 +103,9 @@ public class CalculatorService : ICalculatorConcurrency
 ```  
   
 ## Sessions Interact with InstanceContext Settings  
- Sessions and <xref:System.ServiceModel.InstanceContext> interact depending upon the combination of the value of the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property on the service implementation, which controls the association between channels and specific service objects.  
+ Sessions and <xref:System.ServiceModel.InstanceContext> interact depending upon the combination of the value of the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property on the service implementation, which controls the association between channels and specific service objects.  
   
- The following table shows the result of an incoming channel either supporting sessions or not supporting sessions given a service's combination of the values of the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property.  
+ The following table shows the result of an incoming channel either supporting sessions or not supporting sessions given a service's combination of the values of the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property.  
   
 |InstanceContextMode value|<xref:System.ServiceModel.SessionMode.Required>|<xref:System.ServiceModel.SessionMode.Allowed>|<xref:System.ServiceModel.SessionMode.NotAllowed>|  
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|  

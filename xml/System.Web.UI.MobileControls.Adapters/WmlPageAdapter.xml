@@ -252,7 +252,7 @@
 ## Remarks  
  This method is called during postback. It allows a page adapter to handle a postback event by itself.  
   
- Both the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.HandlePagePostBackEvent%2A?displayProperty=fullName> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.HandlePagePostBackEvent%2A> methods return false.  
+ Both the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.HandlePagePostBackEvent%2A?displayProperty=nameWithType> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.HandlePagePostBackEvent%2A> methods return false.  
   
  ]]></format>
         </remarks>

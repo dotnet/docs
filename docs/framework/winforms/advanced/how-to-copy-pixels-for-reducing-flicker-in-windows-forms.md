@@ -69,7 +69,7 @@ private void Form1_Paint(System.Object sender,
   
 ## See Also  
  <xref:System.Drawing.CopyPixelOperation>   
- <xref:System.Drawing.Graphics.FillRectangle%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.Control.OnPaint%2A?displayProperty=fullName>   
+ <xref:System.Drawing.Graphics.FillRectangle%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.Control.OnPaint%2A?displayProperty=nameWithType>   
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)   
  [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)

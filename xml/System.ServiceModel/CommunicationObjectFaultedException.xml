@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.ServiceModel.CommunicationObjectFaultedException> is thrown when a call is made to a faulted communication object. <xref:System.ServiceModel.CommunicationObjectFaultedException> is a derived class of <xref:System.ServiceModel.CommunicationException?displayProperty=fullName> and can occur in correct applications. Because typically the code that calls the <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName> method reports the error condition that caused the call to <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName>, this exception indicates that the call failed but the most useful error information is elsewhere.  
+ A <xref:System.ServiceModel.CommunicationObjectFaultedException> is thrown when a call is made to a faulted communication object. <xref:System.ServiceModel.CommunicationObjectFaultedException> is a derived class of <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> and can occur in correct applications. Because typically the code that calls the <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=nameWithType> method reports the error condition that caused the call to <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=nameWithType>, this exception indicates that the call failed but the most useful error information is elsewhere.  
   
 > [!NOTE]
 >  If an object is faulted with several pending calls, only one call throws a specific exception; the others throw <xref:System.ServiceModel.CommunicationObjectFaultedException>.  

@@ -125,13 +125,13 @@ End Namespace
   
 1.  Iterate through the <xref:System.AppDomain>, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly.  
   
-2.  If the name is qualified, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName> on the qualified name.  
+2.  If the name is qualified, call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.  
   
 3.  If the short name + public key token of a qualified name matches the assembly that the markup was loaded from, return that assembly.  
   
-4.  Use the short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=fullName>.  
+4.  Use the short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
-5.  If the name is unqualified, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>.  
+5.  If the name is unqualified, call <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType>.  
   
  Loose XAML does not use Step 3; there is no loaded-from assembly.  
   

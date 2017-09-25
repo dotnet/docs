@@ -24,7 +24,7 @@
    
   
 ## Examples  
- The following example overrides the <xref:System.Windows.Ink.Stroke.DrawCore%2A?displayProperty=fullName> method to draw a circle at each <xref:System.Windows.Input.StylusPoint> comprising a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method returns the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property returns the stylus points.  
+ The following example overrides the <xref:System.Windows.Ink.Stroke.DrawCore%2A?displayProperty=nameWithType> method to draw a circle at each <xref:System.Windows.Input.StylusPoint> comprising a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method returns the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property returns the stylus points.  
   
  [!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
  [!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  

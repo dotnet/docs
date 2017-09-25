@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderCollection.Add%2A> method first checks for any exceptions (as listed in the Exceptions section), and then calls the <xref:System.Collections.Hashtable.Add%2A?displayProperty=fullName> method. It passes in the object referenced by the `provider` parameter as well as the <xref:System.Configuration.Provider.ProviderBase.Name%2A> property of the provider to be used as the key in the <xref:System.Collections.Hashtable> object.  
+ The <xref:System.Configuration.Provider.ProviderCollection.Add%2A> method first checks for any exceptions (as listed in the Exceptions section), and then calls the <xref:System.Collections.Hashtable.Add%2A?displayProperty=nameWithType> method. It passes in the object referenced by the `provider` parameter as well as the <xref:System.Configuration.Provider.ProviderBase.Name%2A> property of the provider to be used as the key in the <xref:System.Collections.Hashtable> object.  
   
  ]]></format>
         </remarks>
@@ -199,7 +199,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderCollection> class stores its collection in a <xref:System.Collections.Hashtable> object. The <xref:System.Configuration.Provider.ProviderCollection.GetEnumerator%2A?displayProperty=fullName> method calls the <xref:System.Collections.Hashtable.GetEnumerator%2A?displayProperty=fullName> method.  
+ The <xref:System.Configuration.Provider.ProviderCollection> class stores its collection in a <xref:System.Collections.Hashtable> object. The <xref:System.Configuration.Provider.ProviderCollection.GetEnumerator%2A?displayProperty=nameWithType> method calls the <xref:System.Collections.Hashtable.GetEnumerator%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

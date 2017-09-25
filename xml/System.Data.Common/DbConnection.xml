@@ -790,7 +790,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method must be overridden with user-defined behavior. <xref:System.Data.SqlClient.SqlConnection.Open%2A?displayProperty=fullName> will throw an exception if called again without first being closed.  
+ This method must be overridden with user-defined behavior. <xref:System.Data.SqlClient.SqlConnection.Open%2A?displayProperty=nameWithType> will throw an exception if called again without first being closed.  
   
  ]]></format>
         </remarks>

@@ -130,7 +130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by a control when it receives a postback event notification, to check whether the event is adapter-specific. For more information, see <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.HandlePostBackEvent%2A?displayProperty=fullName>.  
+ This method is called by a control when it receives a postback event notification, to check whether the event is adapter-specific. For more information, see <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.HandlePostBackEvent%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

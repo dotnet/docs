@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["graphics [Windows Forms]", "graphics, using in Windows Forms", "GDI+, using in managed code", "drawing [Windows Forms]"]
+helpviewer_keywords: ["graphics [Windows Forms]", "graphics [Windows Forms], using in Windows Forms", "GDI+, using in managed code", "drawing [Windows Forms]"]
 ms.assetid: 362532c5-1a06-4257-bdc8-723461009ede
 caps.latest.revision: 22
 author: dotnet-bot

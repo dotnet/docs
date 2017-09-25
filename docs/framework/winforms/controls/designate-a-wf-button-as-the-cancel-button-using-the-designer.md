@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["buttons, cancel buttons", "Button control [Windows Forms], designating as cancel button"]
+helpviewer_keywords: ["buttons [Windows Forms], cancel buttons", "Button control [Windows Forms], designating as cancel button"]
 ms.assetid: 30e77d9c-d565-4ab5-a84a-62c043af8822
 caps.latest.revision: 13
 author: dotnet-bot

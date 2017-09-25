@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["custom controls [Windows Forms], constituent controls", "constituent controls", "user controls [Windows Forms], constituent controls"]
+helpviewer_keywords: ["custom controls [Windows Forms], constituent controls", "constituent controls [Windows Forms]", "user controls [Windows Forms], constituent controls"]
 ms.assetid: 5565e720-198b-4bbd-a2bd-c447ba641798
 caps.latest.revision: 16
 author: dotnet-bot

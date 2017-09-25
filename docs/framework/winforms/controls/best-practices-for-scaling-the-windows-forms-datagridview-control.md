@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["DataGridView control [Windows Forms], row sharing", "data grids, best practices", "DataGridView control [Windows Forms], shared rows", "DataGridView control [Windows Forms], best practices", "best practices, DataGridView control", "DataGridView control [Windows Forms], scaling"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], row sharing", "data grids [Windows Forms], best practices", "DataGridView control [Windows Forms], shared rows", "DataGridView control [Windows Forms], best practices", "best practices, DataGridView control", "DataGridView control [Windows Forms], scaling"]
 ms.assetid: 8321a8a6-6340-4fd1-b475-fa090b905aaf
 caps.latest.revision: 31
 author: dotnet-bot

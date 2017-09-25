@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["net.ComponentModel.StyleCollectionEditor.TLP.AnchorDock"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["layout [Windows Forms], child controls", "controls [Windows Forms], child", "child controls, anchoring and docking", "TableLayoutPanel control [Windows Forms], child controls"]
+helpviewer_keywords: ["layout [Windows Forms], child controls", "controls [Windows Forms], child", "child controls [Windows Forms], anchoring and docking", "TableLayoutPanel control [Windows Forms], child controls"]
 ms.assetid: 0d267c35-25f1-49b8-8976-c64e8f0ddc0b
 caps.latest.revision: 13
 author: dotnet-bot

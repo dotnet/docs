@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["LinkLabel1_LinkClicked"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["examples [Windows Forms], LinkLabel control", "Web pages, displaying", "linking, to Web pages from forms", "Windows Forms, linking to Web pages", "LinkLabel control [Windows Forms], examples"]
+helpviewer_keywords: ["examples [Windows Forms], LinkLabel control", "Web pages [Windows Forms], displaying", "linking, to Web pages from forms", "Windows Forms, linking to Web pages", "LinkLabel control [Windows Forms], examples"]
 ms.assetid: 477a7398-5971-4de3-b24c-f49f32bdb28a
 caps.latest.revision: 7
 author: dotnet-bot

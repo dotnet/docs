@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["DataGridView control [Windows Forms], formatting data", "data [Windows Forms], formatting in DataGridView control", "data grids, enabling wordwrap", "currency values, formatting in data grids", "data grids, currency values", "data grids, formatting data", "data grids, text alignment", "data grids, date values", "cells, text alignment"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], formatting data", "data [Windows Forms], formatting in DataGridView control", "data grids [Windows Forms], enabling wordwrap", "currency values, formatting in data grids", "data grids [Windows Forms], currency values", "data grids [Windows Forms], formatting data", "data grids [Windows Forms], text alignment", "data grids [Windows Forms], date values", "cells, text alignment"]
 ms.assetid: 8c33543c-9c08-4636-a65a-fdf714a529b7
 caps.latest.revision: 16
 author: dotnet-bot

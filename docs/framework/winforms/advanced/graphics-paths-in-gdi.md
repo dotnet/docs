@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["graphics, paths", "GDI+, drawing paths", "paths, drawing", "drawing, paths"]
+helpviewer_keywords: ["graphics [Windows Forms], paths", "GDI+, drawing paths", "paths, drawing", "drawing, paths"]
 ms.assetid: a5500dec-666c-41fd-9da3-2169dd89c5eb
 caps.latest.revision: 16
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["events [Windows Forms], connecting multiple to single event handler", "event handlers [Windows Forms], connecting events to", "menus, event-handling methods for multiple menu items", "Windows Forms controls, events", "menu items, multicasting event-handling methods"]
+helpviewer_keywords: ["events [Windows Forms], connecting multiple to single event handler", "event handlers [Windows Forms], connecting events to", "menus [Windows Forms], event-handling methods for multiple menu items", "Windows Forms controls, events", "menu items, multicasting event-handling methods"]
 ms.assetid: 5a20749a-41b5-4acc-8eb1-9e5040b0a2c4
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["form inheritance, walkthroughs", "visual inheritance", "inheritance, walkthroughs", "walkthroughs [Windows Forms], visual inheritance", "Windows Forms, inheritance"]
+helpviewer_keywords: ["form inheritance [Windows Forms], walkthroughs", "visual inheritance", "inheritance [Windows Forms], walkthroughs", "walkthroughs [Windows Forms], visual inheritance", "Windows Forms, inheritance"]
 ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591
 caps.latest.revision: 24
 author: dotnet-bot

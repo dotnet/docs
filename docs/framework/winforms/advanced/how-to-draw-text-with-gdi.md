@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["GDI, drawing text [Windows Forms]", "text, drawing with TextRenderer", "drawing, text", "Windows Forms, drawing text with GDI"]
+helpviewer_keywords: ["GDI, drawing text [Windows Forms]", "text [Windows Forms], drawing with TextRenderer", "drawing, text", "Windows Forms, drawing text with GDI"]
 ms.assetid: 2a19fe5d-2ace-451c-94db-01cb1118ef7b
 caps.latest.revision: 10
 author: dotnet-bot

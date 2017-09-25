@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["Windows Forms controls", "Windows Forms controls, creating", "controls [Windows Forms]", "controls [Windows Forms], creating", "user controls [Windows Forms]", "custom controls [Windows Forms]"]
+helpviewer_keywords: ["Windows Forms controls [Windows Forms]", "Windows Forms controls, creating", "controls [Windows Forms]", "controls [Windows Forms], creating", "user controls [Windows Forms]", "custom controls [Windows Forms]"]
 ms.assetid: e5a8e088-7ec8-4fd9-bcb3-9078fd134829
 caps.latest.revision: 22
 author: dotnet-bot

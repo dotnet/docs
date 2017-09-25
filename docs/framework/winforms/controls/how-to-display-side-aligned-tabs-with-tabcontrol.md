@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["tab pages, displaying side-aligned tabs", "tabs, displaying side-aligned tabs", "TabControl control [Windows Forms], displaying side-aligned tabs"]
+helpviewer_keywords: ["tab pages [Windows Forms], displaying side-aligned tabs", "tabs, displaying side-aligned tabs", "TabControl control [Windows Forms], displaying side-aligned tabs"]
 ms.assetid: 110d5abd-3ae3-4ded-95bf-778aaac798a0
 caps.latest.revision: 10
 author: dotnet-bot

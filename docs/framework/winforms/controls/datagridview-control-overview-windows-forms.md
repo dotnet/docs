@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["DataGridView"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["DataGridView control [Windows Forms], about DataGridView control", "grid controls [Windows Forms]", "tables [Windows Forms], displaying in DataGridView control", "tables [Windows Forms], binding to DataGridView control", "columns [Windows Forms], DataGridView control", "bound controls, DataGridView control", "datasets [Windows Forms], binding to DataGridView control", "data grids, about data grids", "data [Windows Forms], resorting", "data [Windows Forms], navigating", "grids [Windows Forms]", "data binding, DataGridView control", "data sources, binding to DataGridView control", "DataGridView control [Windows Forms], data binding"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], about DataGridView control", "grid controls [Windows Forms]", "tables [Windows Forms], displaying in DataGridView control", "tables [Windows Forms], binding to DataGridView control", "columns [Windows Forms], DataGridView control", "bound controls, DataGridView control", "datasets [Windows Forms], binding to DataGridView control", "data grids [Windows Forms], about data grids", "data [Windows Forms], resorting", "data [Windows Forms], navigating", "grids [Windows Forms]", "data binding [Windows Forms], DataGridView control", "data sources, binding to DataGridView control", "DataGridView control [Windows Forms], data binding"]
 ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
 caps.latest.revision: 23
 author: dotnet-bot

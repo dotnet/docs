@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["ContextMenuStrip"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["context menus, ContextMenuStrip control [Windows Forms]", "shortcut menus, ContextMenuStrip control [Windows Forms]", "ContextMenuStrip control [Windows Forms], about ContextMenuStrip control"]
+helpviewer_keywords: ["context menus [Windows Forms], ContextMenuStrip control [Windows Forms]", "shortcut menus [Windows Forms], ContextMenuStrip control [Windows Forms]", "ContextMenuStrip control [Windows Forms], about ContextMenuStrip control"]
 ms.assetid: 9787cdb3-88f1-4198-972f-eefd9524ce39
 caps.latest.revision: 5
 author: dotnet-bot

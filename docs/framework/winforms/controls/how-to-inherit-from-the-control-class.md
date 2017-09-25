@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["inheritance, Windows Forms custom controls", "Control class, inheriting from", "custom controls [Windows Forms], inheritance", "OnPaint method [Windows Forms]", "custom controls [Windows Forms], creating"]
+helpviewer_keywords: ["inheritance [Windows Forms], Windows Forms custom controls", "Control class, inheriting from", "custom controls [Windows Forms], inheritance", "OnPaint method [Windows Forms]", "custom controls [Windows Forms], creating"]
 ms.assetid: 46ba0df3-5cf7-443c-a3b4-a72660172476
 caps.latest.revision: 11
 author: dotnet-bot

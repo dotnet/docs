@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["error handling, examples", "data binding, examples", "examples [Windows Forms], error handling", "error handling, data binding", "data binding, error handling", "BindingSource component [Windows Forms], handling errors and exceptions"]
+helpviewer_keywords: ["error handling, examples", "data binding [Windows Forms], examples", "examples [Windows Forms], error handling", "error handling, data binding", "data binding [Windows Forms], error handling", "BindingSource component [Windows Forms], handling errors and exceptions"]
 ms.assetid: eddc5bad-9513-47df-ab28-f02d8dff7892
 caps.latest.revision: 15
 author: dotnet-bot

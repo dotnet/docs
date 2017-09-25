@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["linear gradients, creating", "gradients, creating linear", "colors, creating linear gradients", "gradients"]
+helpviewer_keywords: ["linear gradients [Windows Forms], creating", "gradients [Windows Forms], creating linear", "colors [Windows Forms], creating linear gradients", "gradients"]
 ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
 caps.latest.revision: 17
 author: dotnet-bot

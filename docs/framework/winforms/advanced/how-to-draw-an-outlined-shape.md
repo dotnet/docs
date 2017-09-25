@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["Graphics.DrawEllipse"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["ellipses, drawing", "circles, drawing", "drawing, shapes", "circular shapes", "forms, drawing circular shapes", "circles", "outlined shapes, examples", "outlined shapes, drawing", "drawing, circular shapes", "shapes, drawing"]
+helpviewer_keywords: ["ellipses [Windows Forms], drawing", "circles [Windows Forms], drawing", "drawing, shapes", "circular shapes", "forms [Windows Forms], drawing circular shapes", "circles", "outlined shapes [Windows Forms], examples", "outlined shapes [Windows Forms], drawing", "drawing, circular shapes", "shapes [Windows Forms], drawing"]
 ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
 caps.latest.revision: 11
 author: dotnet-bot

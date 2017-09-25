@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["forms, MDI", "windows, MDI", "Windows Forms, MDI applications", "MDI"]
+helpviewer_keywords: ["forms [Windows Forms], MDI", "windows, MDI", "Windows Forms, MDI applications", "MDI"]
 ms.assetid: 599faf75-13cf-49cc-ad3c-255545e5cb97
 caps.latest.revision: 11
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["controls [Windows Forms], user controls", "controls [Windows Forms], types of", "composite controls", "extended controls", "controls [Windows Forms], extended", "user controls [Windows Forms]", "custom controls [Windows Forms]", "controls [Windows Forms], composite"]
+helpviewer_keywords: ["controls [Windows Forms], user controls", "controls [Windows Forms], types of", "composite controls [Windows Forms]", "extended controls [Windows Forms]", "controls [Windows Forms], extended", "user controls [Windows Forms]", "custom controls [Windows Forms]", "controls [Windows Forms], composite"]
 ms.assetid: 3cea09e5-4344-4ccb-9858-b66ccac210ff
 caps.latest.revision: 20
 author: dotnet-bot

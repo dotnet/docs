@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["lines, drawing", "pens, drawing lines"]
+helpviewer_keywords: ["lines [Windows Forms], drawing", "pens [Windows Forms], drawing lines"]
 ms.assetid: 0828c331-a438-4bdd-a4d6-3ef1e59e8795
 caps.latest.revision: 16
 author: dotnet-bot

@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["TableLayoutPanel"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["controls [Windows Forms], resizing", "resizable controls", "Windows Forms controls, proportional resizing", "Windows Forms, proportional resizing of controls", "layout [Windows Forms], TableLayoutPanel control", "TableLayoutPanel control [Windows Forms], about TableLayoutPanel control"]
+helpviewer_keywords: ["controls [Windows Forms], resizing", "resizable controls [Windows Forms]", "Windows Forms controls, proportional resizing", "Windows Forms, proportional resizing of controls", "layout [Windows Forms], TableLayoutPanel control", "TableLayoutPanel control [Windows Forms], about TableLayoutPanel control"]
 ms.assetid: 337661c8-61cb-44ee-93e0-3662bddec327
 caps.latest.revision: 11
 author: dotnet-bot

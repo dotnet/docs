@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["TextBox control [Windows Forms], insertion point", "insertion points, TextBox controls", "text boxes, controlling insertion point"]
+helpviewer_keywords: ["TextBox control [Windows Forms], insertion point", "insertion points, TextBox controls", "text boxes [Windows Forms], controlling insertion point"]
 ms.assetid: 5bee7d34-5121-429e-ab1f-d8ff67bc74c1
 caps.latest.revision: 19
 author: dotnet-bot

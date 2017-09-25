@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["Windows Forms controls, NumericUpDown control", "spin button control, up-down controls", "up-down controls, spin button control", "up-down controls", "spin button control", "NumericUpDown control [Windows Forms]"]
+helpviewer_keywords: ["Windows Forms controls, NumericUpDown control", "spin button control, up-down controls", "up-down controls [Windows Forms], spin button control", "up-down controls", "spin button control", "NumericUpDown control [Windows Forms]"]
 ms.assetid: 32b0c20d-4f37-4aea-873d-faded741d2db
 caps.latest.revision: 13
 author: dotnet-bot

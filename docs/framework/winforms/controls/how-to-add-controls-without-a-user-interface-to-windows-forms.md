@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["NonVisualSelection"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["invisible controls", "Windows Forms controls, adding to form", "controls [Windows Forms], nonvisual", "Windows Forms controls, nonvisual", "nonvisual controls"]
+helpviewer_keywords: ["invisible controls [Windows Forms]", "Windows Forms controls, adding to form", "controls [Windows Forms], nonvisual", "Windows Forms controls, nonvisual", "nonvisual controls [Windows Forms]"]
 ms.assetid: 52134d9c-cff6-4eed-8e2b-3d5eb3bd494e
 caps.latest.revision: 12
 author: dotnet-bot

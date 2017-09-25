@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["colors, rotating", "examples [Windows Forms], rotating colors"]
+helpviewer_keywords: ["colors [Windows Forms], rotating", "examples [Windows Forms], rotating colors"]
 ms.assetid: e2e4c300-159c-4f4a-9b56-103b0f7cbc05
 caps.latest.revision: 13
 author: dotnet-bot

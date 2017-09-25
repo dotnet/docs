@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["DataGridView control [Windows Forms], column order", "data grids, reordering columns", "columns [Windows Forms], reordering"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], column order", "data grids [Windows Forms], reordering columns", "columns [Windows Forms], reordering"]
 ms.assetid: cc20eae3-e4db-493f-95ce-a4215e29472a
 caps.latest.revision: 15
 author: dotnet-bot

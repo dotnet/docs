@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data grids, customization", "DataGridView control [Windows Forms], customization"]
+helpviewer_keywords: ["data grids [Windows Forms], customization", "DataGridView control [Windows Forms], customization"]
 ms.assetid: 01ea5d4c-a736-4596-b0e9-a67a1b86e15f
 caps.latest.revision: 12
 author: dotnet-bot

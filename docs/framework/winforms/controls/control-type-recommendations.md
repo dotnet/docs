@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["inheritance, Windows Forms custom controls", "user controls [Windows Forms], when to use", "custom controls [Windows Forms], types", "controls [Windows Forms], creating"]
+helpviewer_keywords: ["inheritance [Windows Forms], Windows Forms custom controls", "user controls [Windows Forms], when to use", "custom controls [Windows Forms], types", "controls [Windows Forms], creating"]
 ms.assetid: 5235fe9d-c36a-4c08-ae76-6cb90b50085e
 caps.latest.revision: 15
 author: dotnet-bot

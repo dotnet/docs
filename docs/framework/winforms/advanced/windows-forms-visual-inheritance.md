@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["base forms", "inheritance, forms", "inherited forms, Windows Forms", "inheritance", "inherited forms", "form inheritance", "Windows Forms, inheritance"]
+helpviewer_keywords: ["base forms", "inheritance [Windows Forms], forms", "inherited forms [Windows Forms], Windows Forms", "inheritance", "inherited forms", "form inheritance", "Windows Forms, inheritance"]
 ms.assetid: 857eb737-3602-4d49-bd8b-f70d33ace345
 caps.latest.revision: 9
 author: dotnet-bot

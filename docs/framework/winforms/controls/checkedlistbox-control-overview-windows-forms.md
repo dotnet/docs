@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["CheckedListBox"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["CheckedListBox control [Windows Forms], about CheckedListBox control", "check marks", "list boxes, about list boxes"]
+helpviewer_keywords: ["CheckedListBox control [Windows Forms], about CheckedListBox control", "check marks", "list boxes [Windows Forms], about list boxes"]
 ms.assetid: e6cff3ce-e2ba-458e-851f-299e8e9c8abf
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["imaging", "graphics, categories", "2-D vector graphics", "vector graphics", "typography"]
+helpviewer_keywords: ["imaging", "graphics [Windows Forms], categories", "2-D vector graphics", "vector graphics", "typography"]
 ms.assetid: 068c0ef3-f6ee-4d58-a7b6-eb2531ead408
 caps.latest.revision: 14
 author: dotnet-bot

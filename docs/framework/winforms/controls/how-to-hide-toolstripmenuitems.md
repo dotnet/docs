@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["ToolStripMenuItems, hiding", "MenuStrip control [Windows Forms], hiding menu items", "menus, hiding menu items", "menu items, hiding", "hiding menu items"]
+helpviewer_keywords: ["ToolStripMenuItems, hiding", "MenuStrip control [Windows Forms], hiding menu items", "menus [Windows Forms], hiding menu items", "menu items, hiding", "hiding menu items"]
 ms.assetid: 418a768f-808a-44cd-8cef-f4e161883621
 caps.latest.revision: 11
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data grids, deleting columns", "DataGrid control [Windows Forms], deleting columns", "data grids, hiding columns", "columns [Windows Forms], hiding", "columns [Windows Forms], deleting in data grids", "DataGrid control [Windows Forms], hiding columns"]
+helpviewer_keywords: ["data grids [Windows Forms], deleting columns", "DataGrid control [Windows Forms], deleting columns", "data grids [Windows Forms], hiding columns", "columns [Windows Forms], hiding", "columns [Windows Forms], deleting in data grids", "DataGrid control [Windows Forms], hiding columns"]
 ms.assetid: bcd0dd96-6687-4c48-b0e1-d5287b93ac91
 caps.latest.revision: 11
 author: dotnet-bot

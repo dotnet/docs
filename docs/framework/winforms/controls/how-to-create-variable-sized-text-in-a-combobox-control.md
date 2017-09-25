@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["text, drawing in combo boxes", "examples [Windows Forms], ComboBox control", "combo boxes, drawing text", "ComboBox control [Windows Forms], examples [C#]", "ComboBox control [Windows Forms], drawing custom text"]
+helpviewer_keywords: ["text [Windows Forms], drawing in combo boxes", "examples [Windows Forms], ComboBox control", "combo boxes [Windows Forms], drawing text", "ComboBox control [Windows Forms], examples [C#]", "ComboBox control [Windows Forms], drawing custom text"]
 ms.assetid: ce39b9ea-e626-49fe-bd5a-f567f6d157df
 caps.latest.revision: 9
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["ContextMenuStrip control [Windows Forms]", "context menus, event handling", "ToolStrip control [Windows Forms]", "event handling, context menus", "shortcut menus, event handling"]
+helpviewer_keywords: ["ContextMenuStrip control [Windows Forms]", "context menus [Windows Forms], event handling", "ToolStrip control [Windows Forms]", "event handling, context menus", "shortcut menus [Windows Forms], event handling"]
 ms.assetid: b661b3dd-7815-4cc2-a1aa-a9a391ab3427
 caps.latest.revision: 5
 author: dotnet-bot

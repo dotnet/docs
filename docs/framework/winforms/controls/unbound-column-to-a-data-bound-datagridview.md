@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["columns [Windows Forms], unbound data", "data grids, adding unbound columns", "DataGridView control [Windows Forms], unbound data"]
+helpviewer_keywords: ["columns [Windows Forms], unbound data", "data grids [Windows Forms], adding unbound columns", "DataGridView control [Windows Forms], unbound data"]
 ms.assetid: f7bdc4d8-ba8e-421b-ad62-82d936f01372
 caps.latest.revision: 14
 author: dotnet-bot

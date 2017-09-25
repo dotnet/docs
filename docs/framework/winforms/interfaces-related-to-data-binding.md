@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data [Windows Forms], data-binding interfaces", "INotifyPropertyChanged interface", "IBindingListView interface", "IList interface, Windows Forms data binding", "IBindingList interface, Windows Forms data binding", "interfaces, Windows Forms data binding", "IEditableObject interface, Windows Forms data binding", "data binding, interfaces", "IDataErrorInfo interface, Windows Forms data binding"]
+helpviewer_keywords: ["data [Windows Forms], data-binding interfaces", "INotifyPropertyChanged interface", "IBindingListView interface", "IList interface, Windows Forms data binding", "IBindingList interface, Windows Forms data binding", "interfaces, Windows Forms data binding", "IEditableObject interface, Windows Forms data binding", "data binding [Windows Forms], interfaces", "IDataErrorInfo interface, Windows Forms data binding"]
 ms.assetid: 14e49a2e-3e46-47ca-b491-70d546333277
 caps.latest.revision: 23
 author: dotnet-bot

@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["checked"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["CheckBox control [Windows Forms], checked state", "check boxes, using to set options", "CheckBox control [Windows Forms], using to set options"]
+helpviewer_keywords: ["CheckBox control [Windows Forms], checked state", "check boxes [Windows Forms], using to set options", "CheckBox control [Windows Forms], using to set options"]
 ms.assetid: 2ac70498-7e3e-4e07-8901-ccabaeb5fd3e
 caps.latest.revision: 13
 author: dotnet-bot

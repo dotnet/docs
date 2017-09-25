@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["font families, constructing", "fonts, constructing"]
+helpviewer_keywords: ["font families, constructing", "fonts [Windows Forms], constructing"]
 ms.assetid: d3a4a223-9492-4b54-9afd-db1c31c3cefd
 caps.latest.revision: 15
 author: dotnet-bot

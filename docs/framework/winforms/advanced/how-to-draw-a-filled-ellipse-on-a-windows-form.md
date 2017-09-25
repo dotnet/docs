@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["Graphics.FillEllipse"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["ellipses, drawing", "circles, drawing", "circular shapes", "drawing, ellipses", "shapes, drawing", "forms, drawing ellipses"]
+helpviewer_keywords: ["ellipses [Windows Forms], drawing", "circles [Windows Forms], drawing", "circular shapes", "drawing, ellipses", "shapes [Windows Forms], drawing", "forms [Windows Forms], drawing ellipses"]
 ms.assetid: 781db806-950d-4c5b-b022-493f7fd0c4a8
 caps.latest.revision: 10
 author: dotnet-bot

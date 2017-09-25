@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["context menus, configuring check and image margins", "ContextMenuStrips, configuring check and image margins", "margins, setting check and image in Windows Forms ContextMenuStrips"]
+helpviewer_keywords: ["context menus [Windows Forms], configuring check and image margins", "ContextMenuStrips, configuring check and image margins", "margins, setting check and image in Windows Forms ContextMenuStrips"]
 ms.assetid: 3391c4c2-0c9e-4aa4-9492-13ff7644bdf2
 caps.latest.revision: 9
 author: dotnet-bot

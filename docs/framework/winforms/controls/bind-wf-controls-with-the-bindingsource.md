@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["controls [Windows Forms], binding", "BindingSource component [Windows Forms], binding controls", "data binding, BindingSource component"]
+helpviewer_keywords: ["controls [Windows Forms], binding", "BindingSource component [Windows Forms], binding controls", "data binding [Windows Forms], BindingSource component"]
 ms.assetid: 391ae170-de5c-40f8-8233-91cb2ee4683a
 caps.latest.revision: 18
 author: dotnet-bot

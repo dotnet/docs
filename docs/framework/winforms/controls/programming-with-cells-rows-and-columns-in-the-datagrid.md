@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data grids, elements", "columns [Windows Forms], data grids", "cells, data grids", "DataGridView control [Windows Forms], programming with grid elements", "rows [Windows Forms], data grids"]
+helpviewer_keywords: ["data grids [Windows Forms], elements", "columns [Windows Forms], data grids", "cells, data grids", "DataGridView control [Windows Forms], programming with grid elements", "rows [Windows Forms], data grids"]
 ms.assetid: 0d76f7e4-4149-42c6-9118-bb37d6669dc5
 caps.latest.revision: 8
 author: dotnet-bot

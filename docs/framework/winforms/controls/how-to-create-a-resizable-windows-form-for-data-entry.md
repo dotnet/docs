@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["TableLayoutPanel control [Windows Forms]", "layout [Windows Forms], resizing", "forms, creating resizable", "Windows Forms, resizable"]
+helpviewer_keywords: ["TableLayoutPanel control [Windows Forms]", "layout [Windows Forms], resizing", "forms [Windows Forms], creating resizable", "Windows Forms, resizable"]
 ms.assetid: babdf198-404c-485d-a914-ed370c6ecd99
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data grids, read-only columns", "DataGridView control [Windows Forms], read-only columns"]
+helpviewer_keywords: ["data grids [Windows Forms], read-only columns", "DataGridView control [Windows Forms], read-only columns"]
 ms.assetid: 2bb73ebb-1a55-4362-9fda-e50574c087d5
 caps.latest.revision: 18
 author: dotnet-bot

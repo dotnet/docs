@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["threading [Windows Forms], forms", "BackgroundWorker component", "background tasks", "forms, multithreading", "components [Windows Forms], asynchronous", "forms, background operations", "background threads", "threading [Windows Forms], background operations", "background operations"]
+helpviewer_keywords: ["threading [Windows Forms], forms", "BackgroundWorker component", "background tasks", "forms [Windows Forms], multithreading", "components [Windows Forms], asynchronous", "forms [Windows Forms], background operations", "background threads", "threading [Windows Forms], background operations", "background operations"]
 ms.assetid: 9f483f93-1613-4be1-a021-b4934e9c78f3
 caps.latest.revision: 12
 author: dotnet-bot

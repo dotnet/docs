@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["container controls, Windows Forms", "layout [Windows Forms], resizing", "layout [Windows Forms], child controls"]
+helpviewer_keywords: ["container controls [Windows Forms], Windows Forms", "layout [Windows Forms], resizing", "layout [Windows Forms], child controls"]
 ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34
 caps.latest.revision: 7
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["text boxes, displaying Web links", "examples [Windows Forms], text boxes", "RichTextBox control [Windows Forms], linking to Web pages"]
+helpviewer_keywords: ["text boxes [Windows Forms], displaying Web links", "examples [Windows Forms], text boxes", "RichTextBox control [Windows Forms], linking to Web pages"]
 ms.assetid: 95089a37-a202-4f7a-94ee-6ee312908851
 caps.latest.revision: 13
 author: dotnet-bot

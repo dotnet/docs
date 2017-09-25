@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data grids, resizing cells to fit content", "cells, resizing to fit contents", "DataGridView control [Windows Forms], resizing cells", "grids, resizing cells to fit content"]
+helpviewer_keywords: ["data grids [Windows Forms], resizing cells to fit content", "cells, resizing to fit contents", "DataGridView control [Windows Forms], resizing cells", "grids [Windows Forms], resizing cells to fit content"]
 ms.assetid: 63d770dc-b3f5-462b-901a-3125b2753792
 caps.latest.revision: 16
 author: dotnet-bot

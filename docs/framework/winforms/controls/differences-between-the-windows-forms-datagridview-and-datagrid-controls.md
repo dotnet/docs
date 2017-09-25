@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data grids", "DataGrid control [Windows Forms], DataGridView control compared", "DataGridView control [Windows Forms], DataGrid control compared"]
+helpviewer_keywords: ["data grids [Windows Forms", "DataGrid control [Windows Forms], DataGridView control compared", "DataGridView control [Windows Forms], DataGrid control compared"]
 ms.assetid: d412c786-140e-4210-8a56-a68467530a55
 caps.latest.revision: 12
 author: dotnet-bot

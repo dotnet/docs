@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["colors, transforming with color matrices", "colors, shearing"]
+helpviewer_keywords: ["colors [Windows Forms], transforming with color matrices", "colors [Windows Forms], shearing"]
 ms.assetid: 0a424171-5b8b-45c4-afef-e9720a6c3e22
 caps.latest.revision: 13
 author: dotnet-bot

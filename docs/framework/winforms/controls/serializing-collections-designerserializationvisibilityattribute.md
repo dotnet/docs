@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["serialization, collections", "standard types, collections", "collections, serializing", "collections, standard types"]
+helpviewer_keywords: ["serialization, collections", "standard types, collections", "collections [Windows Forms], serializing", "collections [Windows Forms], standard types"]
 ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
 caps.latest.revision: 19
 author: dotnet-bot

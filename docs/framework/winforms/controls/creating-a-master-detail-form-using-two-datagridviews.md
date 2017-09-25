@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["DataGridView control [Windows Forms], master/detail form", "parent-child tables, displaying on Windows Forms", "master-details lists, displaying on Windows Forms", "walkthroughs [Windows Forms], DataGridView control"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], master/detail form", "parent-child tables, displaying on Windows Forms", "master-details lists [Windows Forms], displaying on Windows Forms", "walkthroughs [Windows Forms], DataGridView control"]
 ms.assetid: c5fa29e8-47f7-4691-829b-0e697a691f36
 caps.latest.revision: 19
 author: dotnet-bot

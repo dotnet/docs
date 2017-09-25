@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["texture brushes, tiling images with", "images [Windows Forms], filling shapes with", "shapes, tiling with images", "bitmaps [Windows Forms], filling shapes with"]
+helpviewer_keywords: ["texture brushes [Windows Forms], tiling images with", "images [Windows Forms], filling shapes with", "shapes [Windows Forms], tiling with images", "bitmaps [Windows Forms], filling shapes with"]
 ms.assetid: 6d407891-6e5c-4495-a546-3da5604e9fb8
 caps.latest.revision: 14
 author: dotnet-bot

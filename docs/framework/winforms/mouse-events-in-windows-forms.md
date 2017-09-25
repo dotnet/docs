@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["MouseLeave event", "events [Windows Forms], mouse", "Click event, raising order", "Windows Forms controls, click events", "MouseDoubleClick event", "MouseEnter event", "MouseHover event", "MouseDown event", "MouseClick event", "MouseMove event", "mouse, events", "MouseUp event"]
+helpviewer_keywords: ["MouseLeave event", "events [Windows Forms], mouse", "Click event [Windows Forms], raising order", "Windows Forms controls, click events", "MouseDoubleClick event", "MouseEnter event", "MouseHover event", "MouseDown event", "MouseClick event", "MouseMove event", "mouse [Windows Forms], events", "MouseUp event"]
 ms.assetid: 8cf0070d-793b-4876-b09e-d20d28280fab
 caps.latest.revision: 15
 author: dotnet-bot

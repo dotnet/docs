@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["ListView control [Windows Forms], adding column headers", "columns [Windows Forms], adding to ListView controls", "list views, adding columns"]
+helpviewer_keywords: ["ListView control [Windows Forms], adding column headers", "columns [Windows Forms], adding to ListView controls", "list views [Windows Forms], adding columns"]
 ms.assetid: 79174274-12ee-4a5d-80db-6ec02976d010
 caps.latest.revision: 16
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["toolbars [Windows Forms]", "ToolStripPanel control [Windows Forms]", "MDI, creating forms", "multiple document interface forms", "MDI forms", "ToolStrip control [Windows Forms]", "MDI forms, creating", "MDI forms, walkthroughs"]
+helpviewer_keywords: ["toolbars [Windows Forms]", "ToolStripPanel control [Windows Forms]", "MDI, creating forms", "multiple document interface forms", "MDI forms", "ToolStrip control [Windows Forms]", "MDI forms [Windows Forms], creating", "MDI forms [Windows Forms], walkthroughs"]
 ms.assetid: fbab4221-74af-42d0-bbf4-3c97f7b2e544
 caps.latest.revision: 8
 author: dotnet-bot

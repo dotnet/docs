@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["ITypedList interface", "BindingList(Of T) class", "data binding, implementing", "IBindingList interface"]
+helpviewer_keywords: ["ITypedList interface", "BindingList(Of T) class", "data binding [Windows Forms], implementing", "IBindingList interface"]
 ms.assetid: 834cc15c-50bc-4a8b-a610-313d6a217357
 caps.latest.revision: 6
 author: dotnet-bot

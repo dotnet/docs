@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["FlowLayoutPanel"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["forms, dynamic layout", "layout [Windows Forms], dynamic", "Windows Forms, dynamic layout", "FlowLayoutPanel control [Windows Forms], about FlowLayoutPanel control"]
+helpviewer_keywords: ["forms [Windows Forms], dynamic layout", "layout [Windows Forms], dynamic", "Windows Forms, dynamic layout", "FlowLayoutPanel control [Windows Forms], about FlowLayoutPanel control"]
 ms.assetid: 3883e024-f5a0-456d-9c27-b4dfa1cc9045
 caps.latest.revision: 11
 author: dotnet-bot

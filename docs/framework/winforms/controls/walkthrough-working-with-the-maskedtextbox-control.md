@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["input, controlling to ensure validity", "MaskedTextBox control [Windows Forms], walkthroughs", "MaskedTextBox control [Windows Forms], validation", "user input, controlling", "text, controls for input"]
+helpviewer_keywords: ["input [Windows Forms], controlling to ensure validity", "MaskedTextBox control [Windows Forms], walkthroughs", "MaskedTextBox control [Windows Forms], validation", "user input [Windows Forms], controlling", "text [Windows Forms], controls for input"]
 ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
 caps.latest.revision: 16
 author: dotnet-bot

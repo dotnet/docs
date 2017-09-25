@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["Graphics.DrawLine"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["examples [Windows Forms], drawing lines on forms", "drawing, lines", "lines, drawing", "drawing lines"]
+helpviewer_keywords: ["examples [Windows Forms], drawing lines on forms", "drawing, lines", "lines [Windows Forms], drawing", "drawing lines"]
 ms.assetid: 55c1dbeb-75d0-430c-9814-a24b8971ad8c
 caps.latest.revision: 13
 author: dotnet-bot

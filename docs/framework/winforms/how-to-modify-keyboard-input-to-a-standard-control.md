@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["keyboard input, modifying", "modifying keyboard input", "Windows Forms, modifying keyboard input", "keyboards, keyboard input"]
+helpviewer_keywords: ["keyboard input [Windows Forms], modifying", "modifying keyboard input", "Windows Forms, modifying keyboard input", "keyboards, keyboard input"]
 ms.assetid: 626d3712-d866-4988-bcda-a2d5b36ec0ba
 caps.latest.revision: 14
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["graphics, world transformation", "world transformation, examples"]
+helpviewer_keywords: ["graphics [Windows Forms], world transformation", "world transformation, examples"]
 ms.assetid: 1e717711-1361-448e-aa49-0f3ec43110c9
 caps.latest.revision: 10
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["examples [Windows Forms], BindingSource component", "data binding, sharing data across forms", "BindingSource component [Windows Forms], examples", "BindingSource, using with multiple forms"]
+helpviewer_keywords: ["examples [Windows Forms], BindingSource component", "data binding [Windows Forms], sharing data across forms", "BindingSource component [Windows Forms], examples", "BindingSource, using with multiple forms"]
 ms.assetid: a1a49630-db9c-4485-b888-1f62a373a4f7
 caps.latest.revision: 8
 author: dotnet-bot

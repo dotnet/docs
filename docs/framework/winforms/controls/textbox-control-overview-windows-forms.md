@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["TextBox"]
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["TextBox control [Windows Forms], about TextBox controls", "text boxes, adding"]
+helpviewer_keywords: ["TextBox control [Windows Forms], about TextBox controls", "text boxes [Windows Forms], adding"]
 ms.assetid: d1a9c7f5-fa53-480a-a75c-158f8649ea2f
 caps.latest.revision: 11
 author: dotnet-bot

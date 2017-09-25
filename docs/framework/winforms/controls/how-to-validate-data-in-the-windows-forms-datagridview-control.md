@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["data [Windows Forms], validation", "DataGridView control [Windows Forms], data validation", "data grids, validating data", "data validation, Windows Forms"]
+helpviewer_keywords: ["data [Windows Forms], validation", "DataGridView control [Windows Forms], data validation", "data grids [Windows Forms], validating data", "data validation, Windows Forms"]
 ms.assetid: d10aef35-701e-4a3c-a684-2a2ed1aeaca6
 caps.latest.revision: 20
 author: dotnet-bot

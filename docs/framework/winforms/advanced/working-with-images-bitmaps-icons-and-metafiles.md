@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["metafiles, working with", "examples [Windows Forms], bitmaps", "examples [Windows Forms], images", "bitmaps [Windows Forms], working with", "images [Windows Forms], working with", "examples [Windows Forms], metafiles"]
+helpviewer_keywords: ["metafiles [Windows Forms], working with", "examples [Windows Forms], bitmaps", "examples [Windows Forms], images", "bitmaps [Windows Forms], working with", "images [Windows Forms], working with", "examples [Windows Forms], metafiles"]
 ms.assetid: a626d701-bd99-4fd8-b92f-7b8f794e042b
 caps.latest.revision: 17
 author: dotnet-bot

@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["radio buttons, grouping", "controls [Windows Forms], grouping", "Windows Forms controls, grouping", "RadioButton control [Windows Forms], grouping"]
+helpviewer_keywords: ["radio buttons [Windows Forms], grouping", "controls [Windows Forms], grouping", "Windows Forms controls, grouping", "RadioButton control [Windows Forms], grouping"]
 ms.assetid: 58f8fe34-50b7-49d8-a2be-c271be3c6b32
 caps.latest.revision: 11
 author: dotnet-bot

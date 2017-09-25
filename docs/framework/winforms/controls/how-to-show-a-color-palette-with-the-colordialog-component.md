@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["palettes, showing color", "color dialog box, showing color palettes", "colors, allowing users to select", "color palettes, dialog box", "ColorDialog component, showing color palettes", "color palettes, showing in ColorDialog component", "colors, showing palettes"]
+helpviewer_keywords: ["palettes, showing color", "color dialog box, showing color palettes", "colors [Windows Forms], allowing users to select", "color palettes, dialog box", "ColorDialog component [Windows Forms], showing color palettes", "color palettes, showing in ColorDialog component", "colors [Windows Forms], showing palettes"]
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
 caps.latest.revision: 15
 author: dotnet-bot

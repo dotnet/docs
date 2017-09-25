@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["toggle buttons, creating", "examples [Windows Forms], toolbars", "ToolStrip control [Windows Forms], creating toggle buttons"]
+helpviewer_keywords: ["toggle buttons [Windows Forms], creating", "examples [Windows Forms], toolbars", "ToolStrip control [Windows Forms], creating toggle buttons"]
 ms.assetid: d9c197df-4c65-43f2-beee-b68b52b2befc
 caps.latest.revision: 9
 author: dotnet-bot

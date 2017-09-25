@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["saving files", "SaveFileDialog component, saving files", "files, saving", "OpenFile method, saving files with SaveFileDialog component"]
+helpviewer_keywords: ["saving files", "SaveFileDialog component [Windows Forms], saving files", "files [Windows Forms], saving", "OpenFile method, saving files with SaveFileDialog component"]
 ms.assetid: 02e8f409-b83f-4707-babb-e71f6b223d90
 caps.latest.revision: 20
 author: dotnet-bot

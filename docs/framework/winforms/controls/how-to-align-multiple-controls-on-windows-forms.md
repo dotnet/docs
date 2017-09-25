@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["forms, aligning controls", "Windows Forms, aligning controls", "controls [Windows Forms], positioning", "controls [Windows Forms], aligning"]
+helpviewer_keywords: ["forms [Windows Forms], aligning controls", "Windows Forms, aligning controls", "controls [Windows Forms], positioning", "controls [Windows Forms], aligning"]
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
 caps.latest.revision: 11
 author: dotnet-bot

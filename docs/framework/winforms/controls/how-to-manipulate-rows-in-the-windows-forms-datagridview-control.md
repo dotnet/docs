@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["DataGridView control [Windows Forms], manipulating rows", "data grids, manipulating rows", "rows, manipulating on Windows Forms"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], manipulating rows", "data grids [Windows Forms], manipulating rows", "rows, manipulating on Windows Forms"]
 ms.assetid: 522d8944-e073-4488-9673-923f0a8d7214
 caps.latest.revision: 9
 author: dotnet-bot

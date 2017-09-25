@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["picture formats", "images [Windows Forms], displaying on Windows Forms", "pictures, displaying", "forms, displaying images", "PictureBox control [Windows Forms], adding pictures"]
+helpviewer_keywords: ["picture formats", "images [Windows Forms], displaying on Windows Forms", "pictures, displaying", "forms [Windows Forms], displaying images", "PictureBox control [Windows Forms], adding pictures"]
 ms.assetid: 4dc7b973-afb1-4276-8322-20825af96655
 caps.latest.revision: 9
 author: dotnet-bot

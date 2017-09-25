@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["keyboard input", "shift keys", "events [Windows Forms], mouse", "Keys.ControlKey enumeration member", "keys, control keys", "user input, checking for keyboard", "keys, determining last pressed", "keys, shift keys", "keys, modifier keys", "control keys", "keys, alt keys", "alt keys", "Keys.Shift enumeration member", "events [Windows Forms], keyboard", "keyboards, keyboard input", "Keys.Alt enumeration member", "modifier keys"]
+helpviewer_keywords: ["keyboard input", "shift keys", "events [Windows Forms], mouse", "Keys.ControlKey enumeration member", "keys [Windows Forms], control keys", "user input [Windows Forms], checking for keyboard", "keys [Windows Forms], determining last pressed", "keys [Windows Forms], shift keys", "keys [Windows Forms], modifier keys", "control keys", "keys [Windows Forms], alt keys", "alt keys", "Keys.Shift enumeration member", "events [Windows Forms], keyboard", "keyboards, keyboard input", "Keys.Alt enumeration member", "modifier keys"]
 ms.assetid: 1e184048-0ae3-4067-a200-d4ba31dbc2cb
 caps.latest.revision: 16
 author: dotnet-bot

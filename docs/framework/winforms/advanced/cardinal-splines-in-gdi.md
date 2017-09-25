@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["splines, cardinal", "GDI+, cardinal splines", "cardinal splines"]
+helpviewer_keywords: ["splines [Windows Forms], cardinal", "GDI+, cardinal splines", "cardinal splines"]
 ms.assetid: 09b3797a-6294-422d-9adf-a5a0a7695c0c
 caps.latest.revision: 13
 author: dotnet-bot

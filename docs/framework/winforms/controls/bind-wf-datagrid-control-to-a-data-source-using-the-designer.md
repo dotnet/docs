@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["datasets [Windows Forms], binding to DataGrid control", "data binding, DataGrid control", "DataGrid control [Windows Forms], data binding", "bound controls, DataGrid control", "Windows Forms controls, data binding", "bound controls", "data-bound controls, DataGrid"]
+helpviewer_keywords: ["datasets [Windows Forms], binding to DataGrid control", "data binding [Windows Forms], DataGrid control", "DataGrid control [Windows Forms], data binding", "Windows Forms controls, data binding", "bound controls [Windows Forms]"]
 ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
 caps.latest.revision: 15
 author: dotnet-bot

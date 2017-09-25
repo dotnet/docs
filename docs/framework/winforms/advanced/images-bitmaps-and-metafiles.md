@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["metafiles, about metafiles", "bitmaps [Windows Forms], about bitmaps", "images [Windows Forms], about images", "Windows Forms, images"]
+helpviewer_keywords: ["metafiles [Windows Forms], about metafiles", "bitmaps [Windows Forms], about bitmaps", "images [Windows Forms], about images", "Windows Forms, images"]
 ms.assetid: 7152b45b-a55c-49bc-8c78-ae002a844f71
 caps.latest.revision: 16
 author: dotnet-bot

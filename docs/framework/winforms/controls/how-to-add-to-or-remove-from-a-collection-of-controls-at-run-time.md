@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["run time, removing controls", "controls [Windows Forms], adding using collections", "controls collections", "collections, adding items", "run time, adding controls", "controls [Windows Forms], removing using collections"]
+helpviewer_keywords: ["run time, removing controls", "controls [Windows Forms], adding using collections", "controls collections", "collections [Windows Forms], adding items", "run time, adding controls", "controls [Windows Forms], removing using collections"]
 ms.assetid: 771bf895-3d5f-469b-a324-3528f343657e
 caps.latest.revision: 10
 author: dotnet-bot

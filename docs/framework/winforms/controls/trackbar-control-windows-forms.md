@@ -9,7 +9,7 @@ ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["jsharp"]
-helpviewer_keywords: ["sliders", "slider controls", "TrackBar control [Windows Forms]"]
+helpviewer_keywords: ["sliders", "slider controls [Windows Forms]", "TrackBar control [Windows Forms]"]
 ms.assetid: 37d6aee3-7e8a-4a10-a99c-3a6e09199553
 caps.latest.revision: 8
 author: dotnet-bot

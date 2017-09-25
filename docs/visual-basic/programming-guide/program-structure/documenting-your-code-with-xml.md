@@ -5,35 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "XML, documenting code"
-  - "XML comments, Visual Basic"
-  - "Visual Basic code, documenting with XML"
+dev_langs: ["VB"]
+helpviewer_keywords: ["XML, documenting code", "XML comments, Visual Basic", "Visual Basic code, documenting with XML"]
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Documenting Your Code with XML (Visual Basic)
 In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can document your code using XML  

@@ -1,49 +1,18 @@
 ---
 title: "UShort Data Type (Visual Basic)"
-
 ms.date: "2017-04-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.ushort"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "numbers, whole"
-  - "literal type characters, US"
-  - "whole numbers"
-  - "integral data types"
-  - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
-  - "data types [Visual Basic], integral"
-  - "UShort data type"
-  - "US literal type characters"
+f1_keywords: ["vb.ushort"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["numbers [Visual Basic], whole", "literal type characters [Visual Basic], US", "whole numbers", "integral data types [Visual Basic]", "integer numbers", "numbers [Visual Basic], integer", "integers [Visual Basic], data types", "integers [Visual Basic], types", "data types [Visual Basic], integral", "UShort data type", "US literal type characters [Visual Basic]"]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # UShort data type (Visual Basic)
 

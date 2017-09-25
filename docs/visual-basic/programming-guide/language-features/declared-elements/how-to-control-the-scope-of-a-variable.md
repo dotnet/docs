@@ -5,41 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "variables [Visual Basic], scope"
-  - "declared elements, scope"
-  - "visibility, declared elements"
-  - "variables [Visual Basic], visibility"
-  - "scope, declared elements"
-  - "scope, variables"
-  - "scope, Visual Basic"
-  - "declared elements, visibility"
-  - "visibility, variables"
+dev_langs: ["VB"]
+helpviewer_keywords: ["variables [Visual Basic], scope", "declared elements [Visual Basic], scope", "visibility [Visual Basic], declared elements", "variables [Visual Basic], visibility", "scope [Visual Basic], declared elements", "scope [Visual Basic], variables", "scope [Visual Basic], Visual Basic", "declared elements [Visual Basic], visibility", "visibility [Visual Basic], variables"]
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Control the Scope of a Variable (Visual Basic)
 Normally, a variable is in *scope*, or visible for reference, throughout the region in which you declare it. In some cases, the variable's *access level* can influence its scope.  

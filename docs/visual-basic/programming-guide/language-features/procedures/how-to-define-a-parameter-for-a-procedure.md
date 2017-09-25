@@ -5,37 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "procedure parameters, defining data types for"
-  - "procedures, parameters"
-  - "procedures, defining"
-  - "Visual Basic code, procedures"
-  - "procedure parameters, defining"
+dev_langs: ["VB"]
+helpviewer_keywords: ["procedure parameters [Visual Basic], defining data types for", "procedures [Visual Basic], parameters", "procedures [Visual Basic], defining", "Visual Basic code, procedures", "procedure parameters [Visual Basic], defining"]
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Define a Parameter for a Procedure (Visual Basic)
 A *parameter* allows the calling code to pass a value to the procedure when it calls it. You declare each parameter for a procedure the same way you declare a variable, specifying its name and data type. You also specify the passing mechanism, and whether the parameter is optional.  

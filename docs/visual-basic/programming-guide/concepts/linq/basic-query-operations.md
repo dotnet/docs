@@ -5,45 +5,17 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "data sources [LINQ in Visual Basic]"
-  - "Join clause [LINQ in Visual Basic]"
-  - "ordering data [LINQ in Visual Basic]"
-  - "projections [LINQ in Visual Basic]"
-  - "LINQ [Visual Basic], query operations"
-  - "Order By clause [LINQ in Visual Basic]"
-  - "joining data [LINQ in Visual Basic]"
-  - "queries [LINQ in Visual Basic], basic operations"
-  - "selecting data [LINQ in Visual Basic]"
-  - "Group By clause [LINQ in Visual Basic]"
-  - "grouping data [LINQ in Visual Basic]"
-  - "Select clause [LINQ in Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["data sources [LINQ in Visual Basic]", "Join clause [LINQ in Visual Basic]", "ordering data [LINQ in Visual Basic]", "projections [LINQ in Visual Basic]", "LINQ [Visual Basic], query operations", "Order By clause [LINQ in Visual Basic]", "joining data [LINQ in Visual Basic]", "queries [LINQ in Visual Basic], basic operations", "selecting data [LINQ in Visual Basic]", "Group By clause [LINQ in Visual Basic]", "grouping data [LINQ in Visual Basic]", "Select clause [LINQ in Visual Basic]"]
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Basic Query Operations (Visual Basic)
 This topic provides a brief introduction to [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query. For more information, see the following topics:  

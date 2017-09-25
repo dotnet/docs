@@ -1,42 +1,20 @@
 ---
 title: "Skip Clause (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.QuerySkip"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "queries [Visual Basic], Skip"
-  - "Skip statement"
-  - "Skip clause"
+f1_keywords: ["vb.QuerySkip"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["queries [Visual Basic], Skip", "Skip statement [Visual Basic]", "Skip clause [Visual Basic]"]
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Skip Clause (Visual Basic)
 Bypasses a specified number of elements in a collection and then returns the remaining elements.  

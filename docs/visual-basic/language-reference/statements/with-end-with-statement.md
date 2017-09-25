@@ -1,48 +1,19 @@
 ---
 title: "With...End With Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.With"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "With keyword"
-  - "loop structures, and With...End With statements"
-  - "execution, on object"
-  - "instructions, repeating"
-  - "With...End With statements"
-  - "With statement"
-  - "With statement, nesting"
-  - "objects [Visual Basic], accessing"
-  - "With block"
-  - "End keyword, With...End With statements"
+f1_keywords: ["vb.With"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["With keyword [Visual Basic]", "loop structures [Visual Basic], and With...End With statements", "execution [Visual Basic], on object", "instructions, repeating", "With...End With statements [Visual Basic]", "With statement [Visual Basic]", "With statement [Visual Basic], nesting", "objects [Visual Basic], accessing", "With block", "End keyword [Visual Basic], With...End With statements"]
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # With...End With Statement (Visual Basic)
 Executes a series of statements that repeatedly refer to a single object or structure so that the statements can use a simplified syntax when accessing members of the object or structure.  When using a structure, you can only read the values of members or invoke methods, and you get an error if you try to assign values to members of a structure used in a `With...End With` statement.  

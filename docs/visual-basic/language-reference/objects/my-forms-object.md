@@ -1,40 +1,18 @@
 ---
 title: "My.Forms Object"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "My.Forms"
-  - "My.MyProject.Forms"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My.Forms object"
+f1_keywords: ["My.Forms", "My.MyProject.Forms"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["My.Forms object"]
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # My.Forms Object
 Provides properties for accessing an instance of each Windows form declared in the current project.  

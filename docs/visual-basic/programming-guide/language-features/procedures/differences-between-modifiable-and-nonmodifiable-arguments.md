@@ -5,37 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedure arguments"
-  - "arguments [Visual Basic], nonmodifiable"
-  - "Visual Basic code, procedures"
-  - "arguments [Visual Basic], modifiable"
+dev_langs: ["VB"]
+helpviewer_keywords: ["procedures [Visual Basic], arguments", "procedure arguments", "arguments [Visual Basic], nonmodifiable", "Visual Basic code, procedures", "arguments [Visual Basic], modifiable"]
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Differences Between Modifiable and Nonmodifiable Arguments (Visual Basic)
 When you call a procedure, you typically pass one or more arguments to it. Each argument corresponds to an underlying programming element. Both the underlying elements and the arguments themselves can be either modifiable or nonmodifiable.  

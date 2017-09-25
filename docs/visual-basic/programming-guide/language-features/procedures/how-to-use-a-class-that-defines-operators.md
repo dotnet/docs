@@ -5,40 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "operator procedures, calling"
-  - "procedures, operator"
-  - "procedures, calling"
-  - "examples [Visual Basic], CType"
-  - "syntax, Operator procedures"
-  - "operators [Visual Basic], overloading"
-  - "return values, Operator procedures"
-  - "operator overloading"
+dev_langs: ["VB"]
+helpviewer_keywords: ["operator procedures [Visual Basic], calling", "procedures [Visual Basic], operator", "procedures [Visual Basic], calling", "examples [Visual Basic], CType", "syntax [Visual Basic], Operator procedures", "operators [Visual Basic], overloading", "return values [Visual Basic], Operator procedures", "operator overloading"]
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Use a Class that Defines Operators (Visual Basic)
 If you are using a class or structure that defines its own operators, you can access those operators from [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  

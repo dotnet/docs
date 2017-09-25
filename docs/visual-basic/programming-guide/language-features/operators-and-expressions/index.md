@@ -5,39 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "operators [Visual Basic], operands"
-  - "operators [Visual Basic]"
-  - "operands, definition"
-  - "Visual Basic code, operators"
-  - "Visual Basic code, expressions"
-  - "operands"
-  - "expressions [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["operators [Visual Basic], operands", "operators [Visual Basic]", "operands, definition", "Visual Basic code, operators", "Visual Basic code, expressions", "operands", "expressions [Visual Basic]"]
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Operators and Expressions in Visual Basic
 An *operator* is a code element that performs an operation on one or more code elements that hold values. Value elements include variables, constants, literals, properties, returns from `Function` and `Operator` procedures, and expressions.  

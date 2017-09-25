@@ -5,38 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "queries [LINQ in Visual Basic], specific type returned"
-  - "projection [LINQ in Visual Basic]"
-  - "anonymous types [Visual Basic]"
-  - "querying databases [LINQ]"
-  - "queries [LINQ in Visual Basic], how-to topics"
-  - "query samples [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["queries [LINQ in Visual Basic], specific type returned", "projection [LINQ in Visual Basic]", "anonymous types [Visual Basic]", "querying databases [LINQ]", "queries [LINQ in Visual Basic], how-to topics", "query samples [Visual Basic]"]
 ms.assetid: 621bb10a-e5d7-44fb-a025-317964b19d92
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Return a LINQ Query Result as a Specific Type (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries. By default, LINQ queries return a list of objects as an anonymous type. You can also specify that a query return a list of a specific type by using the `Select` clause.  

@@ -1,49 +1,18 @@
 ---
 title: "ULong Data Type (Visual Basic)"
-
 ms.date: "2017-04-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.ulong"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "numbers, whole"
-  - "whole numbers"
-  - "integral data types"
-  - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
-  - "data types [Visual Basic], integral"
-  - "literal type characters, UL"
-  - "ULong data type"
-  - "UL literal type characters"
+f1_keywords: ["vb.ulong"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["numbers [Visual Basic], whole", "whole numbers", "integral data types [Visual Basic]", "integer numbers", "numbers [Visual Basic], integer", "integers [Visual Basic], data types", "integers [Visual Basic], types", "data types [Visual Basic], integral", "literal type characters [Visual Basic], UL", "ULong data type", "UL literal type characters [Visual Basic]"]
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ULong data type (Visual Basic)
 

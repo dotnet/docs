@@ -5,33 +5,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "LINQ to XML [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["LINQ to XML [Visual Basic]"]
 ms.assetid: 954b6e40-1246-4185-a018-4061724fcae9
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # XML in Visual Basic
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides integrated language support that enables it to interact with [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  

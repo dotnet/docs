@@ -1,62 +1,19 @@
 ---
 title: "Sub Statement (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Sub"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Public keyword, Sub statements"
-  - "procedures, creating"
-  - "declaring procedures, Sub statement"
-  - "arguments [Visual Basic], Sub procedures"
-  - "As keyword, Sub statements"
-  - "Optional keyword, Sub statements"
-  - "declarations, procedures"
-  - "Sub keyword"
-  - "Handles keyword, Sub statements"
-  - "Protected Friend keyword"
-  - "ParamArray keyword, Sub statements"
-  - "Implements keyword, Sub statements"
-  - "Sub statement"
-  - "subroutines"
-  - "ByRef keyword, Sub statements"
-  - "Sub procedures, Sub statement"
-  - "recursive procedures"
-  - "Private keyword, Sub statements"
-  - "Friend keyword, Sub statements"
-  - "Exit statement, Sub statements"
-  - "procedures, Sub"
-  - "End keyword, Sub statements"
-  - "ByVal keyword, Sub statements"
-  - "Visual Basic code, Sub procedures"
+f1_keywords: ["vb.Sub"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["Public keyword [Visual Basic], Sub statements", "procedures [Visual Basic], creating", "declaring procedures [Visual Basic], Sub statement", "arguments [Visual Basic], Sub procedures", "As keyword [Visual Basic], Sub statements", "Optional keyword [Visual Basic], Sub statements", "declarations [Visual Basic], procedures", "Sub keyword [Visual Basic]", "Handles keyword [Visual Basic], Sub statements", "Protected Friend keyword [Visual Basic]", "ParamArray keyword [Visual Basic], Sub statements", "Implements keyword [Visual Basic], Sub statements", "Sub statement [Visual Basic]", "subroutines", "ByRef keyword [Visual Basic], Sub statements", "Sub procedures [Visual Basic], Sub statement", "recursive procedures", "Private keyword [Visual Basic], Sub statements", "Friend keyword [Visual Basic], Sub statements", "Exit statement [Visual Basic], Sub statements", "procedures [Visual Basic], Sub", "End keyword [Visual Basic], Sub statements", "ByVal keyword [Visual Basic], Sub statements", "Visual Basic code, Sub procedures"]
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
 caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Sub Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Sub` procedure.  

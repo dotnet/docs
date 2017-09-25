@@ -1,50 +1,19 @@
 ---
 title: "Short Data Type (Visual Basic)"
-
 ms.date: "2014-04-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
 author: "rpetrusha"
 ms.author: "ronpet"
-f1_keywords: 
-  - "vb.Short"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "numbers, whole"
-  - "whole numbers"
-  - "integral data types"
-  - "integer numbers"
-  - "numbers, integer"
-  - "integers, data types"
-  - "integers, types"
-  - "data types [Visual Basic], integral"
-  - "S literal type character"
-  - "Short data type"
-  - "literal type characters, S"
+f1_keywords: ["vb.Short"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["numbers [Visual Basic], whole", "whole numbers", "integral data types [Visual Basic]", "integer numbers", "numbers [Visual Basic], integer", "integers [Visual Basic], data types", "integers [Visual Basic], types", "data types [Visual Basic], integral", "S literal type character [Visual Basic]", "Short data type", "literal type characters [Visual Basic], S"]
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 author: "rpetrusha"
 ms.author: "ronpet"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Short data type (Visual Basic)
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  

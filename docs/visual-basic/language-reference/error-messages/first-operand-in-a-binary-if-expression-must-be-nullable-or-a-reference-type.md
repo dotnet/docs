@@ -1,40 +1,19 @@
 ---
 title: "First operand in a binary &#39;If&#39; expression must be nullable or a reference type"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "bc33107"
-  - "vbc33107"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC33107"
+f1_keywords: ["bc33107", "vbc33107"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["BC33107"]
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # First operand in a binary &#39;If&#39; expression must be nullable or a reference type
 An `If` expression can take either two or three arguments. When you send only two arguments, the first argument must be a reference type or a nullable type. If the first argument evaluates to anything other than `Nothing`, its value is returned. If the first argument evaluates to `Nothing`, the second argument is evaluated and returned.  

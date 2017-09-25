@@ -1,45 +1,18 @@
 ---
 title: "#ExternalSource Directive"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "#Externalsource"
-  - "#ExternalSource"
-  - "vb.ExternalSource"
-  - "Externalsource"
-  - "vb.#ExternalSource"
-  - "ExternalSource"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "ExternalSource directive (#ExternalSource)"
-  - "#ExternalSource directive"
+f1_keywords: ["#Externalsource", "#ExternalSource", "vb.ExternalSource", "Externalsource", "vb.#ExternalSource", "ExternalSource"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["ExternalSource directive (#ExternalSource)", "#ExternalSource directive"]
 ms.assetid: 243bc6a2-34c3-4eeb-a776-9fd2bf988149
 caps.latest.revision: 160
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # #ExternalSource Directive
 Indicates a mapping between specific lines of source code and text external to the source.  

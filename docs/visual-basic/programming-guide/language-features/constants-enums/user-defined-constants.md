@@ -5,38 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "constants, circular references"
-  - "Const statement [Visual Basic], user-defined constants"
-  - "user-defined constants"
-  - "scope, constants"
-  - "constants, user-defined"
-  - "circular references between constants"
+dev_langs: ["VB"]
+helpviewer_keywords: ["constants [Visual Basic], circular references", "Const statement [Visual Basic], user-defined constants", "user-defined constants [Visual Basic]", "scope [Visual Basic], constants", "constants [Visual Basic], user-defined", "circular references between constants [Visual Basic]"]
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # User-Defined Constants (Visual Basic)
 A constant is a meaningful name that takes the place of a number or string that does not change. Constants store values that, as the name implies, remain constant throughout the execution of an application. You can use constants that are defined by the controls or components you work with, or you can create your own. Constants you create yourself are described as *user-defined*.  

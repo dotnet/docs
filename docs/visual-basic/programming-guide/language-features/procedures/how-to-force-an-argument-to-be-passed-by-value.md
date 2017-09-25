@@ -5,43 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
-  - "procedure arguments"
-  - "Visual Basic code, procedures"
-  - "arguments [Visual Basic], ByVal"
-  - "arguments [Visual Basic], passing by value"
-  - "procedure parameters"
-  - "procedures, calling"
-  - "arguments [Visual Basic], in parentheses"
-  - "procedure arguments, in parentheses"
-  - "arguments [Visual Basic], changing value"
+dev_langs: ["VB"]
+helpviewer_keywords: ["procedures [Visual Basic], arguments", "procedures [Visual Basic], parameters", "procedure arguments", "Visual Basic code, procedures", "arguments [Visual Basic], ByVal", "arguments [Visual Basic], passing by value", "procedure parameters", "procedures [Visual Basic], calling", "arguments [Visual Basic], in parentheses", "procedure arguments [Visual Basic], in parentheses", "arguments [Visual Basic], changing value"]
 ms.assetid: 77b4f2d2-1055-4c2f-a521-874d1db86946
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Force an Argument to Be Passed by Value (Visual Basic)
 The procedure declaration determines the passing mechanism. If a parameter is declared [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] expects to pass the corresponding argument by reference. This allows the procedure to change the value of the programming element underlying the argument in the calling code. If you wish to protect the underlying element against such change, you can override the `ByRef` passing mechanism in the procedure call by enclosing the argument name in parentheses. These parentheses are in addition to the parentheses enclosing the argument list in the call.  

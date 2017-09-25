@@ -1,40 +1,19 @@
 ---
 title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "bc32061"
-  - "vbc32061"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC32061"
+f1_keywords: ["bc32061", "vbc32061"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["BC32061"]
 ms.assetid: b17821b7-fa14-4397-a211-6e2a14079f09
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &#39;&lt;expression&gt;&#39; cannot be used as a type constraint
 A constraint list includes an expression that does not represent a valid constraint on a type parameter.  

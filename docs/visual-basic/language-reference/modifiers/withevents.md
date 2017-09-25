@@ -1,40 +1,18 @@
 ---
 title: "WithEvents (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.WithEvents"
-  - "WithEvents"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "WithEvents keyword"
+f1_keywords: ["vb.WithEvents", "WithEvents"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["WithEvents keyword [Visual Basic]"]
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # WithEvents (Visual Basic)
 Specifies that one or more declared member variables refer to an instance of a class that can raise events.  

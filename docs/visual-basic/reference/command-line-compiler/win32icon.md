@@ -1,39 +1,18 @@
 ---
 title: "/win32icon"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "win32icon compiler option [Visual Basic]"
-  - "-win32icon compiler option [Visual Basic]"
-  - "/win32icon compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["win32icon compiler option [Visual Basic]", "-win32icon compiler option [Visual Basic]", "/win32icon compiler option [Visual Basic]"]
 ms.assetid: aecaab01-9353-46c5-941c-6edabd4eff92
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /win32icon
 Inserts an .ico file in the output file. This .ico file represents the output file in **File Explorer**.  

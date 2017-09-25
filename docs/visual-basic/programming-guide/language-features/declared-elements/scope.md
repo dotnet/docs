@@ -5,44 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "module scope"
-  - "scope, levels"
-  - "module level"
-  - "procedures, scope"
-  - "declared elements, scope"
-  - "namespaces, scope"
-  - "scope, declared elements"
-  - "scope, about scope"
-  - "levels of scope"
-  - "block scope"
-  - "scope, Visual Basic"
-  - "procedure scope"
+dev_langs: ["VB"]
+helpviewer_keywords: ["module scope [Visual Basic]", "scope [Visual Basic], levels", "module level", "procedures [Visual Basic], scope", "declared elements [Visual Basic], scope", "namespaces [Visual Basic], scope", "scope [Visual Basic], declared elements", "scope [Visual Basic], about scope", "levels of scope [Visual Basic]", "block scope [Visual Basic]", "scope [Visual Basic], Visual Basic", "procedure scope [Visual Basic]"]
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Scope in Visual Basic
 The *scope* of a declared element is the set of all code that can refer to it without qualifying its name or making it available through an [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md). An element can have scope at one of the following levels:  

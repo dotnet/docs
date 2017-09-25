@@ -1,46 +1,19 @@
 ---
 title: "GoTo Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.GoTo"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "GoTo statement"
-  - "control flow, branching"
-  - "unconditional branching"
-  - "branching"
-  - "branching, unconditional"
-  - "branching, conditional"
-  - "conditional statements, GoTo statement"
-  - "GoTo statement, syntax"
+f1_keywords: ["vb.GoTo"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["GoTo statement [Visual Basic]", "control flow [Visual Basic], branching", "unconditional branching [Visual Basic]", "branching [Visual Basic]", "branching [Visual Basic], unconditional", "branching [Visual Basic], conditional", "conditional statements [Visual Basic], GoTo statement", "GoTo statement [Visual Basic], syntax"]
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # GoTo Statement
 Branches unconditionally to a specified line in a procedure.  

@@ -1,47 +1,19 @@
 ---
 title: "^ Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.^"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "raising numbers to powers"
-  - "^ operator [Visual Basic], exponention"
-  - "square operator"
-  - "^ operator [Visual Basic]"
-  - "exponentiation operator [Visual Basic]"
-  - "exponent"
-  - "numbers, rasing"
-  - "powers"
-  - "arithmetic operators, exponentiation"
+f1_keywords: ["vb.^"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["raising numbers to powers", "^ operator [Visual Basic], exponention", "square operator [Visual Basic]", "^ operator [Visual Basic]", "exponentiation operator [Visual Basic]", "exponent", "numbers [Visual Basic], rasing", "powers", "arithmetic operators [Visual Basic], exponentiation"]
 ms.assetid: d89a1ca8-83da-4784-a87b-a9d7dceb3f62
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ^ Operator (Visual Basic)
 Raises a number to the power of another number.  

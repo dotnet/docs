@@ -5,43 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "property values"
-  - "variables [Visual Basic]"
-  - "Visual Basic code, procedures"
-  - "values, properties"
-  - "variables [Visual Basic], definition"
-  - "Visual Basic code, variables"
-  - "Visual Basic code, properties"
-  - "properties [Visual Basic], values"
-  - "properties [Visual Basic], defined"
-  - "variables [Visual Basic], and properties"
-  - "properties [Visual Basic], and variables"
+dev_langs: ["VB"]
+helpviewer_keywords: ["property values [Visual Basic]", "variables [Visual Basic]", "Visual Basic code, procedures", "values [Visual Basic], properties", "variables [Visual Basic], definition", "Visual Basic code, variables", "Visual Basic code, properties", "properties [Visual Basic], values", "properties [Visual Basic], defined", "variables [Visual Basic], and properties", "properties [Visual Basic], and variables"]
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Differences Between Properties and Variables in Visual Basic
 Variables and properties both represent values that you can access. However, there are differences in storage and implementation.  

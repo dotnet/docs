@@ -5,38 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "& operator [Visual Basic], concatenation"
-  - "concatenation operators"
-  - "operators [Visual Basic], concatenation"
-  - "Visual Basic code, operators"
-  - "+ operator [Visual Basic], concatenation"
-  - "concatenation operators, Visual Basic strings"
+dev_langs: ["VB"]
+helpviewer_keywords: ["& operator [Visual Basic], concatenation", "concatenation operators [Visual Basic]", "operators [Visual Basic], concatenation", "Visual Basic code, operators", "+ operator [Visual Basic], concatenation", "concatenation operators [Visual Basic], Visual Basic strings"]
 ms.assetid: e59908c3-89e0-41ae-933d-3e8826c16a04
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Concatenation Operators in Visual Basic
 Concatenation operators join multiple strings into a single string. There are two concatenation operators, `+` and `&`. Both carry out the basic concatenation operation, as the following example shows.  

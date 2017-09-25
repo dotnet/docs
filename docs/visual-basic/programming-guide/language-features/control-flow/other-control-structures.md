@@ -5,34 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "statements [Visual Basic], control flow"
-  - "control structures"
+dev_langs: ["VB"]
+helpviewer_keywords: ["statements [Visual Basic], control flow", "control structures [Visual Basic]"]
 ms.assetid: 24b811f7-98ba-40ec-8dd3-4d528cfa4574
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Other Control Structures (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides control structures that help you dispose of a resource or reduce the number of times you have to repeat an object reference.  

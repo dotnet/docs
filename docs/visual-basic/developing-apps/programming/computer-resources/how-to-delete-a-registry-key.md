@@ -5,40 +5,16 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.DeleteSetting"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "GetSetting function"
-  - "registry, deleting values"
-  - "GetAllSettings function"
-  - "registry keys, deleting"
-  - "registry, deleting keys"
-  - "examples [Visual Basic], registry"
+f1_keywords: ["vb.DeleteSetting"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["GetSetting function [Visual Basic]", "registry [Visual Basic], deleting values", "GetAllSettings function", "registry keys [Visual Basic], deleting", "registry [Visual Basic], deleting keys", "examples [Visual Basic], registry"]
 ms.assetid: ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Delete a Registry Key in Visual Basic
 The <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> and <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%2CSystem.Boolean%29> methods can be used to delete registry keys.  

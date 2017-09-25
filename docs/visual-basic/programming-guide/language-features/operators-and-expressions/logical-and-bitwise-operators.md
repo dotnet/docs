@@ -5,50 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "short-circuiting"
-  - "Boolean expressions"
-  - "logical operators, Boolean expressions"
-  - "operators [Visual Basic], logical"
-  - "AndAlso operator"
-  - "Not operator [Visual Basic], Boolean expressions"
-  - "Xor operator [Visual Basic], Boolean expressions"
-  - "And operator [Visual Basic], logical operators"
-  - "logical operators"
-  - "expressions [Visual Basic], Boolean"
-  - "Or operator, logical operators"
-  - "Visual Basic code, operators"
-  - "short-circuiting, logical operators"
-  - "logical operators, short-circuiting"
-  - "Visual Basic code, expressions"
-  - "logical operators, binary"
-  - "OrElse operator [Visual Basic]"
-  - "logical operators, unary"
+dev_langs: ["VB"]
+helpviewer_keywords: ["short-circuiting", "Boolean expressions", "logical operators [Visual Basic], Boolean expressions", "operators [Visual Basic], logical", "AndAlso operator [Visual Basic]", "Not operator [Visual Basic], Boolean expressions", "Xor operator [Visual Basic], Boolean expressions", "And operator [Visual Basic], logical operators", "logical operators [Visual Basic]", "expressions [Visual Basic], Boolean", "Or operator [Visual Basic], logical operators", "Visual Basic code, operators", "short-circuiting, logical operators", "logical operators [Visual Basic], short-circuiting", "Visual Basic code, expressions", "logical operators [Visual Basic], binary", "OrElse operator [Visual Basic]", "logical operators [Visual Basic], unary"]
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Logical and Bitwise Operators in Visual Basic
 Logical operators compare `Boolean` expressions and return a `Boolean` result. The `And`, `Or`, `AndAlso`, `OrElse`, and `Xor` operators are *binary* because they take two operands, while the `Not` operator is *unary* because it takes a single operand. Some of these operators can also perform bitwise logical operations on integral values.  

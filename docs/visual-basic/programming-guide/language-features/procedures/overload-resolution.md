@@ -5,39 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, procedures"
-  - "overload resolution"
-  - "procedures, overloading"
-  - "procedures, calling"
-  - "procedure overloading, overload resolution"
-  - "signatures, procedure"
-  - "overloads, resolution"
+dev_langs: ["VB"]
+helpviewer_keywords: ["Visual Basic code, procedures", "overload resolution", "procedures [Visual Basic], overloading", "procedures [Visual Basic], calling", "procedure overloading, overload resolution", "signatures, procedure", "overloads, resolution"]
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Overload Resolution (Visual Basic)
 When the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler encounters a call to a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to call. It does this by performing the following steps:  

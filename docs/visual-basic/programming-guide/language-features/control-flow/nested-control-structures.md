@@ -5,39 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, control flow"
-  - "control structures, nested"
-  - "conditional statements, nested"
-  - "statements [Visual Basic], control flow"
-  - "control flow, nested control statements"
-  - "structures, nested control"
-  - "nested control statements"
+dev_langs: ["VB"]
+helpviewer_keywords: ["Visual Basic code, control flow", "control structures [Visual Basic], nested", "conditional statements [Visual Basic], nested", "statements [Visual Basic], control flow", "control flow [Visual Basic], nested control statements", "structures [Visual Basic], nested control", "nested control statements [Visual Basic]"]
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Nested Control Structures (Visual Basic)
 You can place control statements inside other control statements, for example an `If...Then...Else` block within a `For...Next` loop. A control statement placed inside another control statement is said to be *nested*.  

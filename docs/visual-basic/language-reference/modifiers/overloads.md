@@ -1,43 +1,18 @@
 ---
 title: "Overloads (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Overloads"
-  - "Overloads"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Overloads keyword"
-  - "hiding by signature"
-  - "Shadows keyword"
-  - "signature, hiding by"
+f1_keywords: ["vb.Overloads", "Overloads"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["Overloads keyword [Visual Basic]", "hiding by signature", "Shadows keyword [Visual Basic]", "signature, hiding by"]
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Overloads (Visual Basic)
 Specifies that a property or procedure redeclares one or more existing properties or procedures with the same name.  

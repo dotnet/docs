@@ -1,41 +1,19 @@
 ---
 title: "Let Clause (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.QueryLet"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "queries [Visual Basic], Let"
-  - "Let clause"
-  - "Let statement"
+f1_keywords: ["vb.QueryLet"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["queries [Visual Basic], Let", "Let clause [Visual Basic]", "Let statement [Visual Basic]"]
 ms.assetid: 981aa516-16eb-4c53-b1f1-5aa3e82f316e
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Let Clause (Visual Basic)
 Computes a value and assigns it to a new variable within the query.  

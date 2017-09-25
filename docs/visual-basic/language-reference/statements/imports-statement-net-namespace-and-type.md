@@ -1,49 +1,19 @@
 ---
 title: "Imports Statement (.NET Namespace and Type)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Imports"
-  - "imports"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "declared element names [Visual Basic], qualification"
-  - "imports [Visual Basic]"
-  - "Imports statement [Visual Basic]"
-  - "aliases [Visual Basic], Imports statement"
-  - "container elements [Visual Basic]"
-  - "namespaces [Visual Basic], importing"
-  - "Imports statement [Visual Basic], syntax"
-  - "import aliases [Visual Basic]"
-  - "aliases [Visual Basic], import"
-  - "declared elements [Visual Basic], container elements"
+f1_keywords: ["vb.Imports", "imports"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["declared element names [Visual Basic], qualification", "imports [Visual Basic]", "Imports statement [Visual Basic]", "aliases [Visual Basic], Imports statement", "container elements [Visual Basic]", "namespaces [Visual Basic], importing", "Imports statement [Visual Basic], syntax", "import aliases [Visual Basic]", "aliases [Visual Basic], import", "declared elements [Visual Basic], container elements"]
 ms.assetid: 7062f8aa-d890-4232-9eed-92836e13fb6e
 caps.latest.revision: 40
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Imports Statement (.NET Namespace and Type)
 Enables type names to be referenced without namespace qualification.  

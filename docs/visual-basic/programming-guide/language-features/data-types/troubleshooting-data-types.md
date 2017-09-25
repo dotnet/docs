@@ -5,48 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Char data type, converting"
-  - "Decimal data type, conversions"
-  - "data types [Visual Basic], troubleshooting"
-  - "literals, default types"
-  - "type characters, literal"
-  - "Mod operator [Visual Basic], in floating-point operations"
-  - "troubleshooting Visual Basic, data types"
-  - "troubleshooting data types"
-  - "floating-point numbers, precision"
-  - "Boolean data type, converting"
-  - "literal types"
-  - "literal type characters"
-  - "floating-point numbers, imprecision"
-  - "String data type, converting"
-  - "floating-point numbers, comparison"
-  - "floating-point numbers"
+dev_langs: ["VB"]
+helpviewer_keywords: ["Char data type [Visual Basic], converting", "Decimal data type [Visual Basic], conversions", "data types [Visual Basic], troubleshooting", "literals [Visual Basic], default types", "type characters [Visual Basic], literal", "Mod operator [Visual Basic], in floating-point operations", "troubleshooting Visual Basic, data types", "troubleshooting data types [Visual Basic]", "floating-point numbers [Visual Basic], precision", "Boolean data type [Visual Basic], converting", "literal types [Visual Basic]", "literal type characters [Visual Basic]", "floating-point numbers [Visual Basic], imprecision", "String data type [Visual Basic], converting", "floating-point numbers [Visual Basic], comparison", "floating-point numbers"]
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Troubleshooting Data Types (Visual Basic)
 This page lists some common problems that can occur when you perform operations on intrinsic data types.  

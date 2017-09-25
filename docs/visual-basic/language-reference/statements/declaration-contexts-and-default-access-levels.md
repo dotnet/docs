@@ -1,42 +1,18 @@
 ---
 title: "Declaration Contexts and Default Access Levels (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "module level, defined"
-  - "declaration contexts, Visual Basic"
-  - "procedure level, defined"
-  - "namespace level, defined"
-  - "access levels, Visual Basic"
-  - "access levels, default levels"
+dev_langs: ["VB"]
+helpviewer_keywords: ["module level, defined", "declaration contexts, Visual Basic", "procedure level, defined", "namespace level, defined", "access levels, Visual Basic", "access levels, default levels"]
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Declaration Contexts and Default Access Levels (Visual Basic)
 This topic describes which Visual Basic types can be declared within which other types, and what their access levels default to if not specified.  

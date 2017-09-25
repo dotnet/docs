@@ -1,47 +1,19 @@
 ---
 title: "Xor Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Xor"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "exclusive OR operator"
-  - "logical exclusion"
-  - "operators [Visual Basic], exclusive or"
-  - "exclusion operator"
-  - "operators [Visual Basic], bitwise"
-  - "bitwise operators, XOR operator"
-  - "Xor operator [Visual Basic]"
-  - "Xor keyword"
-  - "bitwise comparison"
+f1_keywords: ["vb.Xor"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["exclusive OR operator [Visual Basic]", "logical exclusion", "operators [Visual Basic], exclusive or", "exclusion operator [Visual Basic]", "operators [Visual Basic], bitwise", "bitwise operators [Visual Basic], XOR operator", "Xor operator [Visual Basic]", "Xor keyword [Visual Basic]", "bitwise comparison [Visual Basic]"]
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Xor Operator (Visual Basic)
 Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusion on two numeric expressions.  

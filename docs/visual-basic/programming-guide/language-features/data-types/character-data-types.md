@@ -5,37 +5,15 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "data types [Visual Basic], character"
-  - "String data type, character data types"
-  - "character data types [Visual Basic]"
-  - "Char data type, character data types"
-  - "data types [Visual Basic], choosing"
+dev_langs: ["VB"]
+helpviewer_keywords: ["data types [Visual Basic], character", "String data type [Visual Basic], character data types", "character data types [Visual Basic]", "Char data type [Visual Basic], character data types", "data types [Visual Basic], choosing"]
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Character Data Types (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides *character data types* to deal with printable and displayable characters. While they both deal with Unicode characters, `Char` holds a single character whereas `String` contains an indefinite number of characters.  

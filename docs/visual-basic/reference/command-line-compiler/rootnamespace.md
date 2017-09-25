@@ -1,42 +1,19 @@
 ---
 title: "/rootnamespace"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "/rootnamespace"
-  - "rootnamespace"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/rootnamespace compiler option [Visual Basic]"
-  - "-rootnamespace compiler option [Visual Basic]"
-  - "rootnamespace compiler option [Visual Basic]"
+f1_keywords: ["/rootnamespace", "rootnamespace"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["/rootnamespace compiler option [Visual Basic]", "-rootnamespace compiler option [Visual Basic]", "rootnamespace compiler option [Visual Basic]"]
 ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # /rootnamespace
 Specifies a namespace for all type declarations.  

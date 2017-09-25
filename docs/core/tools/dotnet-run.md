@@ -3,7 +3,7 @@ title: dotnet run command - .NET Core CLI
 description: The dotnet run command provides a convenient option to run your application from the source code.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 09/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -70,7 +70,7 @@ Builds and runs the app using the specified [framework](../../standard/framework
 
 `--force`
 
-Set this flag to force all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting *project.assets.json*.
+Forces all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting *project.assets.json*.
 
 `-h|--help`
 
@@ -87,7 +87,7 @@ Doesn't build the project before running.
 
 `--no-dependencies`
 
-Set this flag to ignore project to project references and only restore the root project.
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
 
 `--no-launch-profile`
 

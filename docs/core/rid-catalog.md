@@ -80,7 +80,7 @@ There are some considerations about RIDs that you have to keep in mind when work
 To be able to use RIDs, you have to know which RIDs exist. New values are added regularly to the platform.
 For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
 
-.NET Core 2.0 SDK introduces the concept of portable RIDs. They are new values added to the RID graph that aren't tied to a specific version or OS distribution. They're particularly useful when dealing with the multiple Linux distros.
+.NET Core 2.0 SDK introduces the concept of portable RIDs. They are new values added to the RID graph that aren't tied to a specific version or OS distribution. They're particularly useful when dealing with multiple Linux distros.
 
 The following list shows the most common RIDs used for each OS. It doesn't cover `arm` or `corert` values.
 

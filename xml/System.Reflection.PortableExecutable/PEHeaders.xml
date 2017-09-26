@@ -368,7 +368,7 @@
     </Member>
     <Member MemberName="TryGetDirectoryOffset">
       <MemberSignature Language="C#" Value="public bool TryGetDirectoryOffset (System.Reflection.PortableExecutable.DirectoryEntry directory, out int offset);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDirectoryOffset(valuetype System.Reflection.PortableExecutable.DirectoryEntry directory, int32 offset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDirectoryOffset(valuetype System.Reflection.PortableExecutable.DirectoryEntry directory, [out] int32&amp; offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEHeaders.TryGetDirectoryOffset(System.Reflection.PortableExecutable.DirectoryEntry,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

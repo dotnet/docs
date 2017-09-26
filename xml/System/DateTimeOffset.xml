@@ -4415,7 +4415,7 @@ Me.ToUtcDateTime().ToFileTime()
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParse(System.String,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4478,7 +4478,7 @@ Me.ToUtcDateTime().ToFileTime()
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, IFormatProvider formatProvider, System.Globalization.DateTimeStyles styles, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4581,7 +4581,7 @@ Me.ToUtcDateTime().ToFileTime()
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string format, IFormatProvider formatProvider, System.Globalization.DateTimeStyles styles, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4679,7 +4679,7 @@ Me.ToUtcDateTime().ToFileTime()
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string[] formats, IFormatProvider formatProvider, System.Globalization.DateTimeStyles styles, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

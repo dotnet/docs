@@ -185,7 +185,7 @@
     </Member>
     <Member MemberName="accDoDefaultAction">
       <MemberSignature Language="C#" Value="public void accDoDefaultAction (object varChild);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accDoDefaultAction(object varChild) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accDoDefaultAction([in]object varChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accDoDefaultAction(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -339,7 +339,7 @@
     </Member>
     <Member MemberName="accHitTest">
       <MemberSignature Language="C#" Value="public object accHitTest (int xLeft, int yTop);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accHitTest(int32 xLeft, int32 yTop) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accHitTest([in]int32 xLeft, [in]int32 yTop) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accHitTest(System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -418,7 +418,7 @@
     </Member>
     <Member MemberName="accLocation">
       <MemberSignature Language="C#" Value="public void accLocation (out int pxLeft, out int pyTop, out int pcxWidth, out int pcyHeight, object varChild);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accLocation(int32 pxLeft, int32 pyTop, int32 pcxWidth, int32 pcyHeight, object varChild) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accLocation([out] int32&amp; pxLeft, [out] int32&amp; pyTop, [out] int32&amp; pcxWidth, [out] int32&amp; pcyHeight, [in]object varChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -508,7 +508,7 @@
     </Member>
     <Member MemberName="accNavigate">
       <MemberSignature Language="C#" Value="public object accNavigate (int navDir, object varStart);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accNavigate(int32 navDir, object varStart) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accNavigate([in]int32 navDir, [in]object varStart) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accNavigate(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -623,7 +623,7 @@
     </Member>
     <Member MemberName="accSelect">
       <MemberSignature Language="C#" Value="public void accSelect (int flagsSelect, object varChild);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accSelect(int32 flagsSelect, object varChild) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accSelect([in]int32 flagsSelect, [in]object varChild) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accSelect(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

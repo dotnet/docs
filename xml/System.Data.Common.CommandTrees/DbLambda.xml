@@ -67,7 +67,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Common.CommandTrees.DbExpression body, System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Common.CommandTrees.DbExpression body, params System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Common.CommandTrees.DbExpression body, class System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbLambda.Create(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbVariableReferenceExpression[])" />
       <MemberType>Method</MemberType>

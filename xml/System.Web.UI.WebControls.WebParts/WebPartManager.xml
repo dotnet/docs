@@ -2509,7 +2509,7 @@
     </Member>
     <Member MemberName="ImportWebPart">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPart ImportWebPart (System.Xml.XmlReader reader, out string errorMessage);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPart ImportWebPart(class System.Xml.XmlReader reader, string errorMessage) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPart ImportWebPart(class System.Xml.XmlReader reader, [out] string&amp; errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.ImportWebPart(System.Xml.XmlReader,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

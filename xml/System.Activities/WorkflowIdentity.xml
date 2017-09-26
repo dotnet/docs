@@ -233,7 +233,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string identity, out System.Activities.WorkflowIdentity result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string identity, class System.Activities.WorkflowIdentity result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string identity, [out] class System.Activities.WorkflowIdentity&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.TryParse(System.String,System.Activities.WorkflowIdentity@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -3250,7 +3250,7 @@
     </Member>
     <Member MemberName="GetMethodInfoForComSlot">
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo GetMethodInfoForComSlot (Type t, int slot, ref System.Runtime.InteropServices.ComMemberType memberType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo GetMethodInfoForComSlot(class System.Type t, int32 slot, valuetype System.Runtime.InteropServices.ComMemberType memberType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo GetMethodInfoForComSlot(class System.Type t, int32 slot, valuetype System.Runtime.InteropServices.ComMemberType&amp; memberType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot(System.Type,System.Int32,System.Runtime.InteropServices.ComMemberType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4161,7 +4161,7 @@
     </Member>
     <Member MemberName="GetTypeLibVersionForAssembly">
       <MemberSignature Language="C#" Value="public static void GetTypeLibVersionForAssembly (System.Reflection.Assembly inputAssembly, out int majorVersion, out int minorVersion);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetTypeLibVersionForAssembly(class System.Reflection.Assembly inputAssembly, int32 majorVersion, int32 minorVersion) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetTypeLibVersionForAssembly(class System.Reflection.Assembly inputAssembly, [out] int32&amp; majorVersion, [out] int32&amp; minorVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.GetTypeLibVersionForAssembly(System.Reflection.Assembly,System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5205,7 +5205,7 @@
     </Member>
     <Member MemberName="QueryInterface">
       <MemberSignature Language="C#" Value="public static int QueryInterface (IntPtr pUnk, ref Guid iid, out IntPtr ppv);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 QueryInterface(native int pUnk, valuetype System.Guid iid, native int ppv) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 QueryInterface(native int pUnk, valuetype System.Guid&amp; iid, [out] native int&amp; ppv) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.QueryInterface(System.IntPtr,System.Guid@,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5382,7 +5382,7 @@
     </Member>
     <Member MemberName="ReadByte">
       <MemberSignature Language="C#" Value="public static byte ReadByte (object ptr, int ofs);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ReadByte(object ptr, int32 ofs) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ReadByte([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadByte(System.Object,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5567,7 +5567,7 @@
     </Member>
     <Member MemberName="ReadInt16">
       <MemberSignature Language="C#" Value="public static short ReadInt16 (object ptr, int ofs);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16(object ptr, int32 ofs) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ReadInt16([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt16(System.Object,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5762,7 +5762,7 @@
     </Member>
     <Member MemberName="ReadInt32">
       <MemberSignature Language="C#" Value="public static int ReadInt32 (object ptr, int ofs);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32(object ptr, int32 ofs) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ReadInt32([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt32(System.Object,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5955,7 +5955,7 @@
     </Member>
     <Member MemberName="ReadInt64">
       <MemberSignature Language="C#" Value="public static long ReadInt64 (object ptr, int ofs);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64(object ptr, int32 ofs) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ReadInt64([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadInt64(System.Object,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6145,7 +6145,7 @@
     </Member>
     <Member MemberName="ReadIntPtr">
       <MemberSignature Language="C#" Value="public static IntPtr ReadIntPtr (object ptr, int ofs);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReadIntPtr(object ptr, int32 ofs) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReadIntPtr([in]object ptr, int32 ofs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.ReadIntPtr(System.Object,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -7898,7 +7898,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
     </Member>
     <Member MemberName="WriteByte">
       <MemberSignature Language="C#" Value="public static void WriteByte (object ptr, int ofs, byte val);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteByte(object ptr, int32 ofs, unsigned int8 val) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteByte([out] object ptr, int32 ofs, unsigned int8 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteByte(System.Object,System.Int32,System.Byte)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -8199,7 +8199,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
     </Member>
     <Member MemberName="WriteInt16">
       <MemberSignature Language="C#" Value="public static void WriteInt16 (object ptr, int ofs, char val);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16(object ptr, int32 ofs, char val) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16([out] object ptr, int32 ofs, char val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.Object,System.Int32,System.Char)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -8251,7 +8251,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
     </Member>
     <Member MemberName="WriteInt16">
       <MemberSignature Language="C#" Value="public static void WriteInt16 (object ptr, int ofs, short val);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16(object ptr, int32 ofs, int16 val) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt16([out] object ptr, int32 ofs, int16 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt16(System.Object,System.Int32,System.Int16)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -8431,7 +8431,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
     </Member>
     <Member MemberName="WriteInt32">
       <MemberSignature Language="C#" Value="public static void WriteInt32 (object ptr, int ofs, int val);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32(object ptr, int32 ofs, int32 val) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt32([out] object ptr, int32 ofs, int32 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt32(System.Object,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -8611,7 +8611,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
     </Member>
     <Member MemberName="WriteInt64">
       <MemberSignature Language="C#" Value="public static void WriteInt64 (object ptr, int ofs, long val);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64(object ptr, int32 ofs, int64 val) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteInt64([out] object ptr, int32 ofs, int64 val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteInt64(System.Object,System.Int32,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -8793,7 +8793,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
     </Member>
     <Member MemberName="WriteIntPtr">
       <MemberSignature Language="C#" Value="public static void WriteIntPtr (object ptr, int ofs, IntPtr val);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIntPtr(object ptr, int32 ofs, native int val) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteIntPtr([out] object ptr, int32 ofs, native int val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Marshal.WriteIntPtr(System.Object,System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

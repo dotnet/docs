@@ -1274,7 +1274,7 @@
     </Member>
     <Member MemberName="GetFormattedValue">
       <MemberSignature Language="C#" Value="protected virtual object GetFormattedValue (object value, int rowIndex, ref System.Windows.Forms.DataGridViewCellStyle cellStyle, System.ComponentModel.TypeConverter valueTypeConverter, System.ComponentModel.TypeConverter formattedValueTypeConverter, System.Windows.Forms.DataGridViewDataErrorContexts context);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle&amp; cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1939,7 +1939,7 @@
     </Member>
     <Member MemberName="MeasureTextHeight">
       <MemberSignature Language="C#" Value="public static int MeasureTextHeight (System.Drawing.Graphics graphics, string text, System.Drawing.Font font, int maxWidth, System.Windows.Forms.TextFormatFlags flags, out bool widthTruncated);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MeasureTextHeight(class System.Drawing.Graphics graphics, string text, class System.Drawing.Font font, int32 maxWidth, valuetype System.Windows.Forms.TextFormatFlags flags, bool widthTruncated) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MeasureTextHeight(class System.Drawing.Graphics graphics, string text, class System.Drawing.Font font, int32 maxWidth, valuetype System.Windows.Forms.TextFormatFlags flags, [out] bool&amp; widthTruncated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCell.MeasureTextHeight(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32,System.Windows.Forms.TextFormatFlags,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

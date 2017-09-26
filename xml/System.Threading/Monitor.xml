@@ -223,7 +223,7 @@
     </Member>
     <Member MemberName="Enter">
       <MemberSignature Language="C#" Value="public static void Enter (object obj, ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(object obj, bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(object obj, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Enter(System.Object,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -564,7 +564,7 @@
     </Member>
     <Member MemberName="TryEnter">
       <MemberSignature Language="C#" Value="public static void TryEnter (object obj, ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -734,7 +734,7 @@
     </Member>
     <Member MemberName="TryEnter">
       <MemberSignature Language="C#" Value="public static void TryEnter (object obj, int millisecondsTimeout, ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, int32 millisecondsTimeout, bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, int32 millisecondsTimeout, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Int32,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -799,7 +799,7 @@
     </Member>
     <Member MemberName="TryEnter">
       <MemberSignature Language="C#" Value="public static void TryEnter (object obj, TimeSpan timeout, ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, valuetype System.TimeSpan timeout, bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, valuetype System.TimeSpan timeout, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.TimeSpan,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

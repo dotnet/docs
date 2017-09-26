@@ -677,7 +677,7 @@
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (ref System.Printing.PrintDocumentImageableArea documentImageableArea);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Printing.PrintDocumentImageableArea documentImageableArea) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintDocumentImageableArea@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -747,7 +747,7 @@
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (ref double width, ref double height);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(float64 width, float64 height) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(float64&amp; width, float64&amp; height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Double@,System.Double@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -783,7 +783,7 @@
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (string jobDescription, ref System.Printing.PrintDocumentImageableArea documentImageableArea);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(string jobDescription, class System.Printing.PrintDocumentImageableArea documentImageableArea) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(string jobDescription, class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Printing.PrintDocumentImageableArea@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -823,7 +823,7 @@
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (ref System.Printing.PrintDocumentImageableArea documentImageableArea, ref System.Windows.Controls.PageRangeSelection pageRangeSelection, ref System.Windows.Controls.PageRange pageRange);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Printing.PrintDocumentImageableArea documentImageableArea, valuetype System.Windows.Controls.PageRangeSelection pageRangeSelection, valuetype System.Windows.Controls.PageRange pageRange) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea, valuetype System.Windows.Controls.PageRangeSelection&amp; pageRangeSelection, valuetype System.Windows.Controls.PageRange&amp; pageRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintDocumentImageableArea@,System.Windows.Controls.PageRangeSelection@,System.Windows.Controls.PageRange@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -865,7 +865,7 @@
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (string jobDescription, ref System.Printing.PrintDocumentImageableArea documentImageableArea, ref System.Windows.Controls.PageRangeSelection pageRangeSelection, ref System.Windows.Controls.PageRange pageRange);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(string jobDescription, class System.Printing.PrintDocumentImageableArea documentImageableArea, valuetype System.Windows.Controls.PageRangeSelection pageRangeSelection, valuetype System.Windows.Controls.PageRange pageRange) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(string jobDescription, class System.Printing.PrintDocumentImageableArea&amp; documentImageableArea, valuetype System.Windows.Controls.PageRangeSelection&amp; pageRangeSelection, valuetype System.Windows.Controls.PageRange&amp; pageRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Printing.PrintDocumentImageableArea@,System.Windows.Controls.PageRangeSelection@,System.Windows.Controls.PageRange@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

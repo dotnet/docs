@@ -426,7 +426,7 @@
       </Docs>
     </Member>
     <Member MemberName="FileClose">
-      <MemberSignature Language="C#" Value="public static void FileClose (int[] FileNumbers);" />
+      <MemberSignature Language="C#" Value="public static void FileClose (params int[] FileNumbers);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileClose(int32[] FileNumbers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -554,7 +554,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref bool Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, bool Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, bool&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Boolean@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -631,7 +631,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref byte Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, unsigned int8 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, unsigned int8&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Byte@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -708,7 +708,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref char Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, char Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, char&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Char@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -785,7 +785,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref DateTime Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.DateTime Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.DateTime&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.DateTime@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -862,7 +862,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref decimal Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.Decimal Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.Decimal&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Decimal@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -939,7 +939,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref double Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float64 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float64&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Double@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1016,7 +1016,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref short Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int16 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int16&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int16@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1093,7 +1093,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref int Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int32 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int32&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int32@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1170,7 +1170,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref long Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int64 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int64&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int64@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1247,7 +1247,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref float Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float32 Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float32&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Single@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1324,7 +1324,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref ValueType Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.ValueType Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.ValueType&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.ValueType@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1401,7 +1401,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref string Value, long RecordNumber = -1, bool StringIsFixedLength = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, string Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, string&amp; Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.String@,System.Int64,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1480,7 +1480,7 @@
     </Member>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref Array Value, long RecordNumber = -1, bool ArrayIsDynamic = false, bool StringIsFixedLength = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.Array Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.Array&amp; Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Array@,System.Int64,System.Boolean,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1561,7 +1561,7 @@
     </Member>
     <Member MemberName="FileGetObject">
       <MemberSignature Language="C#" Value="public static void FileGetObject (int FileNumber, ref object Value, long RecordNumber = -1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void FileGetObject(int32 FileNumber, object Value, int64 RecordNumber) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGetObject(int32 FileNumber, object&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3129,7 +3129,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref bool Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, bool Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, bool&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3190,7 +3190,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref byte Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, unsigned int8 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, unsigned int8&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Byte@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3251,7 +3251,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref char Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, char Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, char&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Char@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3312,7 +3312,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref DateTime Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.DateTime Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.DateTime&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.DateTime@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3373,7 +3373,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref decimal Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.Decimal Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.Decimal&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Decimal@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3434,7 +3434,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref double Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float64 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float64&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Double@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3495,7 +3495,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref short Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int16 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int16&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int16@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3556,7 +3556,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref int Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int32 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int32&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3617,7 +3617,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref long Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int64 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int64&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3678,7 +3678,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref object Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, object Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, object&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3739,7 +3739,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref float Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float32 Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float32&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Single@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3800,7 +3800,7 @@ Result = GetAttr(FName) And vbArchive
     </Member>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref string Value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, string Value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, string&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4255,7 +4255,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="Print">
-      <MemberSignature Language="C#" Value="public static void Print (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void Print (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Print(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4322,7 +4322,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="PrintLine">
-      <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void PrintLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4944,7 +4944,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public static void Write (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void Write (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Write(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -5012,7 +5012,7 @@ Result = GetAttr(FName) And vbArchive
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void WriteLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>

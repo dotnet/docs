@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StoreItemCollection (string[] filePaths);" />
+      <MemberSignature Language="C#" Value="public StoreItemCollection (params string[] filePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.StoreItemCollection.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>

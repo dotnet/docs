@@ -243,7 +243,7 @@
     </Member>
     <Member MemberName="IsValid">
       <MemberSignature Language="C#" Value="public static bool IsValid (Type type, object instance, out System.ComponentModel.License license);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValid(class System.Type type, object instance, class System.ComponentModel.License license) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValid(class System.Type type, object instance, [out] class System.ComponentModel.License&amp; license) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseManager.IsValid(System.Type,System.Object,System.ComponentModel.License@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

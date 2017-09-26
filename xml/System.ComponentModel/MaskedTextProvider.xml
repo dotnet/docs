@@ -431,7 +431,7 @@
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public bool Add (char input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(char input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(char input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.Char,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -480,7 +480,7 @@
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public bool Add (string input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(string input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -707,7 +707,7 @@
     </Member>
     <Member MemberName="Clear">
       <MemberSignature Language="C#" Value="public void Clear (out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear(valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear([out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Clear(System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1485,7 +1485,7 @@
     </Member>
     <Member MemberName="InsertAt">
       <MemberSignature Language="C#" Value="public bool InsertAt (char input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(char input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(char input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.Char,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1542,7 +1542,7 @@
     </Member>
     <Member MemberName="InsertAt">
       <MemberSignature Language="C#" Value="public bool InsertAt (string input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(string input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(string input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.String,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2208,7 +2208,7 @@
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public bool Remove (out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove([out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Remove(System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2339,7 +2339,7 @@
     </Member>
     <Member MemberName="RemoveAt">
       <MemberSignature Language="C#" Value="public bool RemoveAt (int startPosition, int endPosition, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAt(int32 startPosition, int32 endPosition, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAt(int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.RemoveAt(System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2485,7 +2485,7 @@
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (char input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.Char,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2538,7 +2538,7 @@
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (string input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.String,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2593,7 +2593,7 @@
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (char input, int startPosition, int endPosition, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 startPosition, int32 endPosition, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.Char,System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2648,7 +2648,7 @@
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (string input, int startPosition, int endPosition, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 startPosition, int32 endPosition, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.String,System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2832,7 +2832,7 @@
     </Member>
     <Member MemberName="Set">
       <MemberSignature Language="C#" Value="public bool Set (string input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Set(string input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Set(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Set(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3315,7 +3315,7 @@
     </Member>
     <Member MemberName="VerifyChar">
       <MemberSignature Language="C#" Value="public bool VerifyChar (char input, int position, out System.ComponentModel.MaskedTextResultHint hint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyChar(char input, int32 position, valuetype System.ComponentModel.MaskedTextResultHint hint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyChar(char input, int32 position, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; hint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3456,7 +3456,7 @@
     </Member>
     <Member MemberName="VerifyString">
       <MemberSignature Language="C#" Value="public bool VerifyString (string input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyString(string input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyString(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyString(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

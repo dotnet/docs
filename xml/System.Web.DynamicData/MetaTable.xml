@@ -1443,7 +1443,7 @@ End Sub
     </Member>
     <Member MemberName="TryGetColumn">
       <MemberSignature Language="C#" Value="public bool TryGetColumn (string columnName, out System.Web.DynamicData.MetaColumn column);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetColumn(string columnName, class System.Web.DynamicData.MetaColumn column) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetColumn(string columnName, [out] class System.Web.DynamicData.MetaColumn&amp; column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.TryGetColumn(System.String,System.Web.DynamicData.MetaColumn@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1475,7 +1475,7 @@ End Sub
     </Member>
     <Member MemberName="TryGetTable">
       <MemberSignature Language="C#" Value="public static bool TryGetTable (Type entityType, out System.Web.DynamicData.MetaTable table);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetTable(class System.Type entityType, class System.Web.DynamicData.MetaTable table) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetTable(class System.Type entityType, [out] class System.Web.DynamicData.MetaTable&amp; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.TryGetTable(System.Type,System.Web.DynamicData.MetaTable@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

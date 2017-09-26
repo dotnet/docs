@@ -13,7 +13,8 @@
   </Base>
   <Docs>
     <summary>Specifies values that represent types of metadata constants.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">
@@ -229,7 +230,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="System.String"/> type.</summary>
+        <summary>A <see cref="System.String" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">

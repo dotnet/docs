@@ -1378,7 +1378,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string value, out bool result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string value, bool result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string value, [out] bool&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Boolean.TryParse(System.String,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

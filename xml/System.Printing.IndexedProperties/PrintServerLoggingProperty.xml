@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServerEventLoggingTypes (System.Printing.IndexedProperties.PrintServerLoggingProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServerEventLoggingTypes (System.Printing.IndexedProperties.PrintServerLoggingProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintServerEventLoggingTypes op_Implicit(class System.Printing.IndexedProperties.PrintServerLoggingProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerLoggingProperty.op_Implicit(System.Printing.IndexedProperties.PrintServerLoggingProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintServerEventLoggingTypes" />
       <MemberType>Method</MemberType>
@@ -128,7 +128,7 @@
         <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintServerLoggingProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintServerLoggingProperty" />
       </Parameters>
       <Docs>
         <param name="attribRef">To be added.</param>

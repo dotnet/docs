@@ -59,7 +59,7 @@
     </Member>
     <Member MemberName="GetObject&lt;T&gt;">
       <MemberSignature Language="C#" Value="public void GetObject&lt;T&gt; (ref T obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetObject&lt;T&gt;(!!T obj) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetObject&lt;T&gt;(!!T&amp; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.GetObject``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

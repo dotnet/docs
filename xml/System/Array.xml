@@ -1849,7 +1849,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, int[] lengths);" />
+      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, params int[] lengths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Array CreateInstance(class System.Type elementType, int32[] lengths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -1933,7 +1933,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, long[] lengths);" />
+      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, params long[] lengths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Array CreateInstance(class System.Type elementType, int64[] lengths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int64[])" />
       <MemberType>Method</MemberType>
@@ -3557,7 +3557,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetValue">
-      <MemberSignature Language="C#" Value="public object GetValue (int[] indices);" />
+      <MemberSignature Language="C#" Value="public object GetValue (params int[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(int32[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -3679,7 +3679,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetValue">
-      <MemberSignature Language="C#" Value="public object GetValue (long[] indices);" />
+      <MemberSignature Language="C#" Value="public object GetValue (params long[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(int64[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int64[])" />
       <MemberType>Method</MemberType>
@@ -5191,7 +5191,7 @@ int[,,] TDArray = new int[1,1,1];
     </Member>
     <Member MemberName="Resize&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void Resize&lt;T&gt; (ref T[] array, int newSize);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Resize&lt;T&gt;(!!T[] array, int32 newSize) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Resize&lt;T&gt;(!!T[]&amp; array, int32 newSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Resize``1(``0[]@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5521,7 +5521,7 @@ int[,,] TDArray = new int[1,1,1];
       </Docs>
     </Member>
     <Member MemberName="SetValue">
-      <MemberSignature Language="C#" Value="public void SetValue (object value, int[] indices);" />
+      <MemberSignature Language="C#" Value="public void SetValue (object value, params int[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(object value, int32[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -5659,7 +5659,7 @@ int[,,] TDArray = new int[1,1,1];
       </Docs>
     </Member>
     <Member MemberName="SetValue">
-      <MemberSignature Language="C#" Value="public void SetValue (object value, long[] indices);" />
+      <MemberSignature Language="C#" Value="public void SetValue (object value, params long[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(object value, int64[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int64[])" />
       <MemberType>Method</MemberType>

@@ -49,7 +49,7 @@
       </Docs>
     </Member>
     <Member MemberName="call">
-      <MemberSignature Language="C#" Value="public static object call (object thisob, object thisarg, object[] args);" />
+      <MemberSignature Language="C#" Value="public static object call (object thisob, object thisarg, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object call(object thisob, object thisarg, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionPrototype.call(System.Object,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>

@@ -1453,7 +1453,7 @@ alert('Hello');
     </Member>
     <Member MemberName="IsAttributeDefined">
       <MemberSignature Language="C#" Value="protected bool IsAttributeDefined (System.Web.UI.HtmlTextWriterAttribute key, out string value);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsAttributeDefined(valuetype System.Web.UI.HtmlTextWriterAttribute key, string value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsAttributeDefined(valuetype System.Web.UI.HtmlTextWriterAttribute key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsAttributeDefined(System.Web.UI.HtmlTextWriterAttribute,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1524,7 +1524,7 @@ alert('Hello');
     </Member>
     <Member MemberName="IsStyleAttributeDefined">
       <MemberSignature Language="C#" Value="protected bool IsStyleAttributeDefined (System.Web.UI.HtmlTextWriterStyle key, out string value);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsStyleAttributeDefined(valuetype System.Web.UI.HtmlTextWriterStyle key, string value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsStyleAttributeDefined(valuetype System.Web.UI.HtmlTextWriterStyle key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsStyleAttributeDefined(System.Web.UI.HtmlTextWriterStyle,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3002,7 +3002,7 @@ alert('Hello');
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -3976,7 +3976,7 @@ alert('Hello');
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

@@ -10677,7 +10677,7 @@
     </Member>
     <Member MemberName="MeasureString">
       <MemberSignature Language="C#" Value="public System.Drawing.SizeF MeasureString (string text, System.Drawing.Font font, System.Drawing.SizeF layoutArea, System.Drawing.StringFormat stringFormat, out int charactersFitted, out int linesFilled);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF MeasureString(string text, class System.Drawing.Font font, valuetype System.Drawing.SizeF layoutArea, class System.Drawing.StringFormat stringFormat, int32 charactersFitted, int32 linesFilled) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF MeasureString(string text, class System.Drawing.Font font, valuetype System.Drawing.SizeF layoutArea, class System.Drawing.StringFormat stringFormat, [out] int32&amp; charactersFitted, [out] int32&amp; linesFilled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Graphics.MeasureString(System.String,System.Drawing.Font,System.Drawing.SizeF,System.Drawing.StringFormat,System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

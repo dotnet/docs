@@ -1024,7 +1024,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginInvoke (Delegate method, object[] args);" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginInvoke (Delegate method, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginInvoke(class System.Delegate method, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.BeginInvoke(System.Delegate,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -3127,7 +3127,7 @@
     </Member>
     <Member MemberName="DefWndProc">
       <MemberSignature Language="C#" Value="protected virtual void DefWndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DefWndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DefWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5874,7 +5874,7 @@ MyControl.Font = New Font(MyControl.Font, _
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (Delegate method, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(class System.Delegate method, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.Invoke(System.Delegate,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -11575,7 +11575,7 @@ MyControl.Font = New Font(MyControl.Font, _
     </Member>
     <Member MemberName="PreProcessControlMessage">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.PreProcessControlState PreProcessControlMessage (ref System.Windows.Forms.Message msg);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.PreProcessControlState PreProcessControlMessage(valuetype System.Windows.Forms.Message msg) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.PreProcessControlState PreProcessControlMessage(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.PreProcessControlMessage(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -11602,7 +11602,7 @@ MyControl.Font = New Font(MyControl.Font, _
     </Member>
     <Member MemberName="PreProcessMessage">
       <MemberSignature Language="C#" Value="public virtual bool PreProcessMessage (ref System.Windows.Forms.Message msg);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PreProcessMessage(valuetype System.Windows.Forms.Message msg) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PreProcessMessage(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.PreProcessMessage(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -11669,7 +11669,7 @@ MyControl.Font = New Font(MyControl.Font, _
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected virtual bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -11775,7 +11775,7 @@ MyControl.Font = New Font(MyControl.Font, _
     </Member>
     <Member MemberName="ProcessKeyEventArgs">
       <MemberSignature Language="C#" Value="protected virtual bool ProcessKeyEventArgs (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessKeyEventArgs(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessKeyEventArgs(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ProcessKeyEventArgs(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -11810,7 +11810,7 @@ MyControl.Font = New Font(MyControl.Font, _
     </Member>
     <Member MemberName="ProcessKeyMessage">
       <MemberSignature Language="C#" Value="protected virtual bool ProcessKeyMessage (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessKeyMessage(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessKeyMessage(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ProcessKeyMessage(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -11844,7 +11844,7 @@ MyControl.Font = New Font(MyControl.Font, _
     </Member>
     <Member MemberName="ProcessKeyPreview">
       <MemberSignature Language="C#" Value="protected virtual bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -12390,7 +12390,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
     </Member>
     <Member MemberName="ReflectMessage">
       <MemberSignature Language="C#" Value="protected static bool ReflectMessage (IntPtr hWnd, ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool ReflectMessage(native int hWnd, valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool ReflectMessage(native int hWnd, valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ReflectMessage(System.IntPtr,System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -13436,7 +13436,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
     </Member>
     <Member MemberName="ScaleBitmapLogicalToDevice">
       <MemberSignature Language="C#" Value="public void ScaleBitmapLogicalToDevice (ref System.Drawing.Bitmap logicalBitmap);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleBitmapLogicalToDevice(class System.Drawing.Bitmap logicalBitmap) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleBitmapLogicalToDevice(class System.Drawing.Bitmap&amp; logicalBitmap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.ScaleBitmapLogicalToDevice(System.Drawing.Bitmap@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -15464,7 +15464,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected virtual void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

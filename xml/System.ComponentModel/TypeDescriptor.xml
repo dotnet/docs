@@ -51,7 +51,7 @@
   </Docs>
   <Members>
     <Member MemberName="AddAttributes">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (object instance, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (object instance, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider AddAttributes(object instance, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddAttributes(System.Object,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -105,7 +105,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddAttributes">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (Type type, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider AddAttributes(class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddAttributes(System.Type,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -597,7 +597,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateEvent">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, System.ComponentModel.EventDescriptor oldEventDescriptor, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, System.ComponentModel.EventDescriptor oldEventDescriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor CreateEvent(class System.Type componentType, class System.ComponentModel.EventDescriptor oldEventDescriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateEvent(System.Type,System.ComponentModel.EventDescriptor,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -640,7 +640,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateEvent">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, string name, Type type, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, string name, Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor CreateEvent(class System.Type componentType, string name, class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateEvent(System.Type,System.String,System.Type,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -737,7 +737,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateProperty">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor CreateProperty(class System.Type componentType, class System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateProperty(System.Type,System.ComponentModel.PropertyDescriptor,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -780,7 +780,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateProperty">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, string name, Type type, Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, string name, Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor CreateProperty(class System.Type componentType, string name, class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateProperty(System.Type,System.String,System.Type,System.Attribute[])" />
       <MemberType>Method</MemberType>

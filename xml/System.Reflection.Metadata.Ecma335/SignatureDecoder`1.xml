@@ -41,7 +41,7 @@
     </Member>
     <Member MemberName="DecodeFieldSignature">
       <MemberSignature Language="C#" Value="public TType DecodeFieldSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeFieldSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeFieldSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeFieldSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -63,7 +63,7 @@
     </Member>
     <Member MemberName="DecodeLocalSignature">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeLocalSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeLocalSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeLocalSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeLocalSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -85,7 +85,7 @@
     </Member>
     <Member MemberName="DecodeMethodSignature">
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSignature&lt;TType&gt; DecodeMethodSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!TType&gt; DecodeMethodSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!TType&gt; DecodeMethodSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeMethodSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -107,7 +107,7 @@
     </Member>
     <Member MemberName="DecodeMethodSpecificationSignature">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeMethodSpecificationSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeMethodSpecificationSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeMethodSpecificationSignature(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeMethodSpecificationSignature(System.Reflection.Metadata.BlobReader@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -129,7 +129,7 @@
     </Member>
     <Member MemberName="DecodeType">
       <MemberSignature Language="C#" Value="public TType DecodeType (ref System.Reflection.Metadata.BlobReader blobReader, bool allowTypeSpecifications = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeType(valuetype System.Reflection.Metadata.BlobReader blobReader, bool allowTypeSpecifications) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeType(valuetype System.Reflection.Metadata.BlobReader&amp; blobReader, bool allowTypeSpecifications) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`1.DecodeType(System.Reflection.Metadata.BlobReader@,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

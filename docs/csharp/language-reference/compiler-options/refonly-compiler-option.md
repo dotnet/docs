@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/refonly"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/refonly compiler option [C#]"
   - "-refonly compiler option [C#]"

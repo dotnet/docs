@@ -3,9 +3,6 @@ title: "How to: chunk serialized data"
 ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "chunking serialized data"
   - "data chunking"

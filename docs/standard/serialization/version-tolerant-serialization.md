@@ -3,9 +3,6 @@ title: "Version tolerant serialization"
 ms.date: "08/08/2017"
 ms.prod: ".net"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-  - "VB"
 helpviewer_keywords: 
   - "version tolerant serialization"
   - "serialization, custom serialization"

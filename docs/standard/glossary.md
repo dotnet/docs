@@ -27,13 +27,13 @@ The original ASP.NET implementation that ships with the .NET Framework.
 
 Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations. 
 
-See [ASP.NET](/aspnet/#pivot=aspnet).
+See [ASP.NET documentation](/aspnet/#pivot=aspnet).
 
 ## ASP.NET Core
 
 A cross-platform, high-performance, open source implementation of ASP.NET built on .NET Core.
 
-See [ASP.NET Core](/aspnet/#pivot=core).
+See [ASP.NET Core documentation](/aspnet/#pivot=core).
 
 ## assembly
 

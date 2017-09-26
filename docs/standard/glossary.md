@@ -25,7 +25,7 @@ Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code.
 
 The original ASP.NET implementation that ships with the .NET Framework.
 
-Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. 
+Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations. 
 
 See [ASP.NET](/aspnet/#pivot=aspnet).
 

@@ -13,12 +13,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides static methods that return predefined <see cref="System.Text.Unicode.UnicodeRange" /> instances that correspond to blocks from the Unicode 7.0 specification.</summary>
+    <summary>Provides static properties that return predefined <see cref="System.Text.Unicode.UnicodeRange" /> instances that correspond to blocks from the Unicode specification.</summary>
         <remarks>
       <format type="text/markdown"><![CDATA[  
 ## Remarks  
 
-You use <xref:System.Text.Unicode.UnicodeRanges> properties to retrieve Unicode named ranges, each of which consists of a contiguous block of Unicode code points. Some ranges include undefined code points. For example, in the **Armenian** Unicode block, U+0530, U+0557-U+0558, U+0560, U+0588, and U+058B-058C are undefined. These are not included in the returned <xref:System.Text.UnicodeRange> instance.
+You use <xref:System.Text.Unicode.UnicodeRanges> properties to retrieve Unicode named ranges, each of which consists of a contiguous block of Unicode code points. Some ranges include undefined code points. For example, in the **Armenian** Unicode block (U+0530-U+058F), U+0530, U+0557-U+0558, U+0560, U+0588, and U+058B-058C are undefined. One or more undefined code points can occur at the beginning of a range, at the end of a range, or anywhere in between. 
 
 Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named ranges in the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF.   
   ]]></format>
@@ -120,8 +120,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFD).</summary>
-        <value>The Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFD).</value>
+        <summary>Gets the Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFF).</summary>
+        <value>The Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +180,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Armenian Unicode block (U+0531-U+058F).</summary>
-        <value>The Armenian Unicode block (U+0531-U+058F).</value>
+        <summary>Gets the Armenian Unicode block (U+0530-U+058F).</summary>
+        <value>The Armenian Unicode block (U+0530-U+058F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +220,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Balinese Unicode block (U+1B00-U+1B7C).</summary>
-        <value>The Balinese Unicode block (U+1B00-U+1B7C).</value>
+        <summary>Gets the Balinese Unicode block (U+1B00-U+1B7F).</summary>
+        <value>The Balinese Unicode block (U+1B00-U+1B7F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +240,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Bamum Unicode block (U+A6A0-U+A6F7).</summary>
-        <value>The Bamum Unicode block (U+A6A0-U+A6F7).</value>
+        <summary>Gets the Bamum Unicode block (U+A6A0-U+A6FF).</summary>
+        <value>The Bamum Unicode block (U+A6A0-U+A6FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,8 +280,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Batak Unicode block (U+0021-U+007F).</summary>
-        <value>The Batak Unicode block (U+0021-U+007F).</value>
+        <summary>Gets the Batak Unicode block (U+1BC0-U+1BFF).</summary>
+        <value>The Batak Unicode block (U+1BC0-U+1BFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,8 +300,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Bengali Unicode block (U+0980-U+09FB).</summary>
-        <value>The Bengali Unicode block (U+0980-U+09FB).</value>
+        <summary>Gets the Bengali Unicode block (U+0980-U+09FF).</summary>
+        <value>The Bengali Unicode block (U+0980-U+09FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,8 +340,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Bopomofo Unicode block (U+3105-U+3120).</summary>
-        <value>The Bopomofo Unicode block (U+3105-U+3120).</value>
+        <summary>Gets the Bopomofo Unicode block (U+3100-U+312F).</summary>
+        <value>The Bopomofo Unicode block (U+3105-U+312F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,8 +360,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Bopomofo Extended Unicode block (U+31A0-U+31BA).</summary>
-        <value>The Bopomofo Extended Unicode block (U+31A0-U+31BA).</value>
+        <summary>Gets the Bopomofo Extended Unicode block (U+31A0-U+31BF).</summary>
+        <value>The Bopomofo Extended Unicode block (U+31A0-U+31BF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,8 +440,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Buhid Unicode block (U+1740-U+1753).</summary>
-        <value>The Buhid Unicode block (U+1740-U+1753).</value>
+        <summary>Gets the Buhid Unicode block (U+1740-U+175F).</summary>
+        <value>The Buhid Unicode block (U+1740-U+175F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,8 +480,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Cherokee Unicode block (U+13A0-U+13F4).</summary>
-        <value>The Cherokee Unicode block (U+13A0-U+13F4).</value>
+        <summary>Gets the Cherokee Unicode block (U+13A0-U+13FF).</summary>
+        <value>The Cherokee Unicode block (U+13A0-U+13FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,8 +580,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the CJK Radicals Supplement Unicode block (U+2E80-U+2EF3).</summary>
-        <value>The CJK Radicals Supplement Unicode block (U+2E80-U+2EF3).</value>
+        <summary>Gets the CJK Radicals Supplement Unicode block (U+2E80-U+2EFF).</summary>
+        <value>The CJK Radicals Supplement Unicode block (U+2E80-U+2EFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,8 +600,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the CJK Strokes Unicode block (U+31C0-U+31E3).</summary>
-        <value>The CJK Strokes Unicode block (U+31C0-U+31E3).</value>
+        <summary>Gets the CJK Strokes Unicode block (U+31C0-U+31EF).</summary>
+        <value>The CJK Strokes Unicode block (U+31C0-U+31EF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -700,8 +700,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1ABE).</summary>
-        <value>The Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1ABE).</value>
+        <summary>Gets the Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1AFF).</summary>
+        <value>The Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1AFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -720,8 +720,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Combining Diacritical Marks for Symbols Unicode block (U+20D0-U+20F0).</summary>
-        <value>The Combining Diacritical Marks for Symbols Unicode block (U+20D0-U+20F0).</value>
+        <summary>Gets the Combining Diacritical Marks for Symbols Unicode block (U+20D0-U+20FF).</summary>
+        <value>The Combining Diacritical Marks for Symbols Unicode block (U+20D0-U+20FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -760,8 +760,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Combining Half Marks Unicode block (U+FE20-U+FE2D).</summary>
-        <value>The Combining Half Marks Unicode block (U+FE20-U+FE2D).</value>
+        <summary>Gets the Combining Half Marks Unicode block (U+FE20-U+FE2F).</summary>
+        <value>The Combining Half Marks Unicode block (U+FE20-U+FE2F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,8 +780,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Common Indic Forms and Numbers Unicode block (U+A830-U+A839).</summary>
-        <value>The Common Indic Forms and Numbers Unicode block (U+A830-U+A839).</value>
+        <summary>Gets the Common Indic Number Forms Unicode block (U+A830-U+A83F).</summary>
+        <value>The Common Indic Number Forms Unicode block (U+A830-U+A83F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -800,8 +800,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Control Pictures Unicode block (U+4300-U+2426).</summary>
-        <value>The Control Pictures Unicode block (U+4300-U+2426).</value>
+        <summary>Gets the Control Pictures Unicode block (U+2400-U+243F).</summary>
+        <value>The Control Pictures Unicode block (U+2400-U+243F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -840,8 +840,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Currency Symbols Unicode block (U+20A0-U+20BD).</summary>
-        <value>The Currency Symbols Unicode block (U+20A0-U+20BD).</value>
+        <summary>Gets the Currency Symbols Unicode block (U+20A0-U+20CF).</summary>
+        <value>The Currency Symbols Unicode block (U+20A0-U+20CF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -960,8 +960,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Devanagari Extended Unicode block (U+A8E0-U+A8FB).</summary>
-        <value>The Devanagari Extended Unicode block (U+A8E0-U+A8FB).</value>
+        <summary>Gets the Devanagari Extended Unicode block (U+A8E0-U+A8FF).</summary>
+        <value>The Devanagari Extended Unicode block (U+A8E0-U+A8FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1020,8 +1020,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Enclosed CJK Letters and Months Unicode block (U+3200-U+32FE).</summary>
-        <value>The Enclosed CJK Letters and Months Unicode block (U+3200-U+32FE).</value>
+        <summary>Gets the Enclosed CJK Letters and Months Unicode block (U+3200-U+32FF).</summary>
+        <value>The Enclosed CJK Letters and Months Unicode block (U+3200-U+32FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1060,8 +1060,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Ethipic Extended Unicode block (U+2D80-U+2DDE).</summary>
-        <value>The Ethipic Extended Unicode block (U+2D80-U+2DDE).</value>
+        <summary>Gets the Ethipic Extended Unicode block (U+2D80-U+2DDF).</summary>
+        <value>The Ethipic Extended Unicode block (U+2D80-U+2DDF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1080,8 +1080,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Ethiopic Extended-A Unicode block (U+AB00-U+AB2E).</summary>
-        <value>The Ethiopic Extended-A Unicode block (U+AB00-U+AB2E).</value>
+        <summary>Gets the Ethiopic Extended-A Unicode block (U+AB00-U+AB2F).</summary>
+        <value>The Ethiopic Extended-A Unicode block (U+AB00-U+AB2F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1180,8 +1180,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Georgian Supplement Unicode block (U+2D00-U+2D2D).</summary>
-        <value>The Georgian Supplement Unicode block (U+2D00-U+2D2D).</value>
+        <summary>Gets the Georgian Supplement Unicode block (U+2D00-U+2D2F).</summary>
+        <value>The Georgian Supplement Unicode block (U+2D00-U+2D2F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1200,8 +1200,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Glagolitic Unicode block (U+2C00-U+2C5E).</summary>
-        <value>The Glagolitic Unicode block (U+2C00-U+2C5E).</value>
+        <summary>Gets the Glagolitic Unicode block (U+2C00-U+2C5F).</summary>
+        <value>The Glagolitic Unicode block (U+2C00-U+2C5F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1240,8 +1240,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Greek Extended Unicode block (U+1F00-U+1FFE).</summary>
-        <value>The Greek Extended Unicode block (U+1F00-U+1FFE).</value>
+        <summary>Gets the Greek Extended Unicode block (U+1F00-U+1FFF).</summary>
+        <value>The Greek Extended Unicode block (U+1F00-U+1FFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1260,8 +1260,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Gujarti Unicode block (U+0A81-U+0AF1).</summary>
-        <value>The Gujarti Unicode block (U+0A81-U+0AF1).</value>
+        <summary>Gets the Gujarti Unicode block (U+0A81-U+0AFF).</summary>
+        <value>The Gujarti Unicode block (U+0A81-U+0AFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1280,8 +1280,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Gurmukhi Unicode block (U+0A01-U+0A75).</summary>
-        <value>The Gurmukhi Unicode block (U+0A01-U+0A75).</value>
+        <summary>Gets the Gurmukhi Unicode block (U+0A01-U+0A7F).</summary>
+        <value>The Gurmukhi Unicode block (U+0A01-U+0A7F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1320,8 +1320,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Hangul Compatibility Jamo Unicode block (U+3131-U+318E).</summary>
-        <value>The Hangul Compatibility Jamo Unicode block (U+3131-U+318E).</value>
+        <summary>Gets the Hangul Compatibility Jamo Unicode block (U+3131-U+318F).</summary>
+        <value>The Hangul Compatibility Jamo Unicode block (U+3131-U+318F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1360,8 +1360,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Hangul Jamo Extended-A Unicode block (U+A960-U+A97C).</summary>
-        <value>The Hangul Jamo Extended-A Unicode block (U+A960-U+A97C).</value>
+        <summary>Gets the Hangul Jamo Extended-A Unicode block (U+A960-U+A9F).</summary>
+        <value>The Hangul Jamo Extended-A Unicode block (U+A960-U+A97F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1380,8 +1380,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FB).</summary>
-        <value>The Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FB).</value>
+        <summary>Gets the Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FF).</summary>
+        <value>The Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1400,8 +1400,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Hangul Syllables Unicode block (U+AC00-U+D7A3).</summary>
-        <value>The Hangul Syllables Unicode block (U+AC00-U+D7A3).</value>
+        <summary>Gets the Hangul Syllables Unicode block (U+AC00-U+D7AF).</summary>
+        <value>The Hangul Syllables Unicode block (U+AC00-U+D7AF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1420,8 +1420,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Hanunoo Unicode block (U+1720-U+1736).</summary>
-        <value>The Hanunoo Unicode block (U+1720-U+1736).</value>
+        <summary>Gets the Hanunoo Unicode block (U+1720-U+173F).</summary>
+        <value>The Hanunoo Unicode block (U+1720-U+173F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1440,8 +1440,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Hebrew Unicode block (U+0590-U+05F4).</summary>
-        <value>The Hebrew Unicode block (U+0590-U+05F4).</value>
+        <summary>Gets the Hebrew Unicode block (U+0590-U+05FF).</summary>
+        <value>The Hebrew Unicode block (U+0590-U+05FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1480,8 +1480,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Ideographic Description Characters Unicode block (U+2FF0-U+2FFB).</summary>
-        <value>The Ideographic Description Characters Unicode block (U+2FF0-U+2FFB).</value>
+        <summary>Gets the Ideographic Description Characters Unicode block (U+2FF0-U+2FFF).</summary>
+        <value>The Ideographic Description Characters Unicode block (U+2FF0-U+2FFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1560,8 +1560,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Kangxi Radicals Supplement Unicode block (U+2F00-U+2FD5).</summary>
-        <value>The Kangxi Radicals Supplement Unicode block (U+2F00-U+2FD5).</value>
+        <summary>Gets the Kangxi Radicals Supplement Unicode block (U+2F00-U+2FDF).</summary>
+        <value>The Kangxi Radicals Supplement Unicode block (U+2F00-U+2FDF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1580,8 +1580,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Kannada Unicode block (U+0C81-U+0CF2).</summary>
-        <value>The Kannada Unicode block (U+0C81-U+0CF2).</value>
+        <summary>Gets the Kannada Unicode block (U+0C81-U+0CFF).</summary>
+        <value>The Kannada Unicode block (U+0C81-U+0CFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1660,8 +1660,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Khmer Unicode block (U+1780-U+17F9).</summary>
-        <value>The Khmer Unicode block (U+1780-U+17F9).</value>
+        <summary>Gets the Khmer Unicode block (U+1780-U+17FF).</summary>
+        <value>The Khmer Unicode block (U+1780-U+17FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1700,8 +1700,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Lao Unicode block (U+0E81-U+0EDF).</summary>
-        <value>The Lao Unicode block (U+0E81-U+0EDF).</value>
+        <summary>Gets the Lao Unicode block (U+0E80-U+0EDF).</summary>
+        <value>The Lao Unicode block (U+0E80-U+0EDF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1840,8 +1840,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Latin Extended-E Unicode block (U+AB30-U+AB65).</summary>
-        <value>The Latin Extended-E Unicode block (U+AB30-U+AB65).</value>
+        <summary>Gets the Latin Extended-E Unicode block (U+AB30-U+AB6F).</summary>
+        <value>The Latin Extended-E Unicode block (U+AB30-U+AB6F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1940,8 +1940,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Malayalam Unicode block (U+0D01-U+0D7F).</summary>
-        <value>The Malayalam Unicode block (U+0D01-U+0D7F).</value>
+        <summary>Gets the Malayalam Unicode block (U+0D00-U+0D7F).</summary>
+        <value>The Malayalam Unicode block (U+0D00-U+0D7F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1960,8 +1960,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Mandaic Unicode block (U+0840-U+085E).</summary>
-        <value>The Mandaic Unicode block (U+0840-U+085E).</value>
+        <summary>Gets the Mandaic Unicode block (U+0840-U+085F).</summary>
+        <value>The Mandaic Unicode block (U+0840-U+085F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2000,8 +2000,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Meetei Mayek Unicode block (U+ABC0-U+ABF9).</summary>
-        <value>The Meetei Mayek Unicode block (U+ABC0-U+ABF9).</value>
+        <summary>Gets the Meetei Mayek Unicode block (U+ABC0-U+ABFF).</summary>
+        <value>The Meetei Mayek Unicode block (U+ABC0-U+ABFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2020,8 +2020,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Meetei Mayek Extensions Unicode block (U+AAE0-U+AAF6).</summary>
-        <value>The Meetei Mayek Extensions Unicode block (U+AAE0-U+AAF6).</value>
+        <summary>Gets the Meetei Mayek Extensions Unicode block (U+AAE0-U+AAFF).</summary>
+        <value>The Meetei Mayek Extensions Unicode block (U+AAE0-U+AAFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2100,8 +2100,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Miscellaneous Symbols and Arrows Unicode block (U+2B00-U+2BD1).</summary>
-        <value>The Miscellaneous Symbols and Arrows Unicode block (U+2B00-U+2BD1).</value>
+        <summary>Gets the Miscellaneous Symbols and Arrows Unicode block (U+2B00-U+2BFF).</summary>
+        <value>The Miscellaneous Symbols and Arrows Unicode block (U+2B00-U+2BFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2120,8 +2120,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Miscellaneous Technical Unicode block (U+2300-U+23FA).</summary>
-        <value>The Miscellaneous Technical Unicode block (U+2300-U+23FA).</value>
+        <summary>Gets the Miscellaneous Technical Unicode block (U+2300-U+23FF).</summary>
+        <value>The Miscellaneous Technical Unicode block (U+2300-U+23FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2160,8 +2160,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Mongolian Unicode block (U+1800-U+18AA).</summary>
-        <value>The Mongolian Unicode block (U+1800-U+18AA).</value>
+        <summary>Gets the Mongolian Unicode block (U+1800-U+18AF).</summary>
+        <value>The Mongolian Unicode block (U+1800-U+18AF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2220,8 +2220,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Myanmar Extended-B Unicode block (U+A9E0-U+A9FE).</summary>
-        <value>The Myanmar Extended-B Unicode block (U+A9E0-U+A9FE).</value>
+        <summary>Gets the Myanmar Extended-B Unicode block (U+A9E0-U+A9FF).</summary>
+        <value>The Myanmar Extended-B Unicode block (U+A9E0-U+A9FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2260,8 +2260,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the NKo Unicode block (U+07C0-U+07FA).</summary>
-        <value>The NKo Unicode block (U+07C0-U+07FA).</value>
+        <summary>Gets the NKo Unicode block (U+07C0-U+07FF).</summary>
+        <value>The NKo Unicode block (U+07C0-U+07FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2300,8 +2300,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Number Forms Unicode block (U+2150-U+2189).</summary>
-        <value>The Number Forms Unicode block (U+2150-U+2189).</value>
+        <summary>Gets the Number Forms Unicode block (U+2150-U+218F).</summary>
+        <value>The Number Forms Unicode block (U+2150-U+218F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2320,8 +2320,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Ogham Unicode block (U+1680-U+169C).</summary>
-        <value>The Ogham Unicode block (U+1680-U+169C).</value>
+        <summary>Gets the Ogham Unicode block (U+1680-U+169F).</summary>
+        <value>The Ogham Unicode block (U+1680-U+169F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2360,8 +2360,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Optical Character Recognition Unicode block (U+2440-U+244A).</summary>
-        <value>The Optical Character Recognition Unicode block (U+2440-U+244A).</value>
+        <summary>Gets the Optical Character Recognition Unicode block (U+2440-U+245F).</summary>
+        <value>The Optical Character Recognition Unicode block (U+2440-U+245F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2380,8 +2380,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Oriya Unicode block (U+0B01-U+0B77).</summary>
-        <value>The Oriya Unicode block (U+0B01-U+0B77).</value>
+        <summary>Gets the Oriya Unicode block (U+0B00-U+0B7F).</summary>
+        <value>The Oriya Unicode block (U+0B00-U+0B7F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2400,8 +2400,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Phags-pa Unicode block (U+A840-U+A877).</summary>
-        <value>The Phags-pa Unicode block (U+A840-U+A877).</value>
+        <summary>Gets the Phags-pa Unicode block (U+A840-U+A87F).</summary>
+        <value>The Phags-pa Unicode block (U+A840-U+A87F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2480,8 +2480,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Runic Unicode block (U+16A0-U+16F8).</summary>
-        <value>The Runic Unicode block (U+16A0-U+16F8).</value>
+        <summary>Gets the Runic Unicode block (U+16A0-U+16FF).</summary>
+        <value>The Runic Unicode block (U+16A0-U+16FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2500,8 +2500,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Samaritan Unicode block (U+0800-U+083E).</summary>
-        <value>The Samaritan Unicode block (U+0800-U+083E).</value>
+        <summary>Gets the Samaritan Unicode block (U+0800-U+083F).</summary>
+        <value>The Samaritan Unicode block (U+0800-U+083F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2520,8 +2520,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Saurashtra Unicode block (U+A880-U+A8D9).</summary>
-        <value>The Saurashtra Unicode block (U+A880-U+A8D9).</value>
+        <summary>Gets the Saurashtra Unicode block (U+A880-U+A8DF).</summary>
+        <value>The Saurashtra Unicode block (U+A880-U+A8DF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2540,8 +2540,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Sinhala Unicode block (U+0D81-U+0DF4).</summary>
-        <value>The Sinhala Unicode block (U+0D81-U+0DF4).</value>
+        <summary>Gets the Sinhala Unicode block (U+0D80-U+0DFF).</summary>
+        <value>The Sinhala Unicode block (U+0D80-U+0DFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2560,8 +2560,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Small Form Variants Unicode block (U+FE50-U+FE6B).</summary>
-        <value>The Small Form Variants Unicode block (U+FE50-U+FE6B).</value>
+        <summary>Gets the Small Form Variants Unicode block (U+FE50-U+FE6F).</summary>
+        <value>The Small Form Variants Unicode block (U+FE50-U+FE6F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2600,8 +2600,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Specials Unicode block (U+FFF9-U+FFFF).</summary>
-        <value>The Specials Unicode block (U+FFF9-U+FFFF).</value>
+        <summary>Gets the Specials Unicode block (U+FFF0-U+FFFF).</summary>
+        <value>The Specials Unicode block (U+FFF0-U+FFFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2640,8 +2640,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Sundanese Supplement Unicode block (U+1CC0-U+1CC7).</summary>
-        <value>The Sundanese Supplement Unicode block (U+1CC0-U+1CC7).</value>
+        <summary>Gets the Sundanese Supplement Unicode block (U+1CC0-U+1CCF).</summary>
+        <value>The Sundanese Supplement Unicode block (U+1CC0-U+1CCF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2660,8 +2660,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Superscripts and Subscripts Unicode block (U+2070-U+209C).</summary>
-        <value>The Superscripts and Subscripts Unicode block (U+2070-U+209C).</value>
+        <summary>Gets the Superscripts and Subscripts Unicode block (U+2070-U+209F).</summary>
+        <value>The Superscripts and Subscripts Unicode block (U+2070-U+209F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2740,8 +2740,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Supplemental Punctuation Unicode block (U+2E00-U+2E42).</summary>
-        <value>The Supplemental Punctuation Unicode block (U+2E00-U+2E42).</value>
+        <summary>Gets the Supplemental Punctuation Unicode block (U+2E00-U+2E7F).</summary>
+        <value>The Supplemental Punctuation Unicode block (U+2E00-U+2E7F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2760,8 +2760,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Syloti Nagri Unicode block (U+A800-U+A82B).</summary>
-        <value>The Syloti Nagri Unicode block (U+A800-U+A82B).</value>
+        <summary>Gets the Syloti Nagri Unicode block (U+A800-U+A82F).</summary>
+        <value>The Syloti Nagri Unicode block (U+A800-U+A82F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2800,8 +2800,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Tagalog Unicode block (U+1700-U+1714).</summary>
-        <value>The Tagalog Unicode block (U+1700-U+1714).</value>
+        <summary>Gets the Tagalog Unicode block (U+1700-U+171F).</summary>
+        <value>The Tagalog Unicode block (U+1700-U+171F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2820,8 +2820,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Tagbanwa Unicode block (U+1760-U+1773).</summary>
-        <value>The Tagbanwa Unicode block (U+1760-U+1773).</value>
+        <summary>Gets the Tagbanwa Unicode block (U+1760-U+177F).</summary>
+        <value>The Tagbanwa Unicode block (U+1760-U+177F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2840,8 +2840,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Tai Le Unicode block (U+1950-U+1974).</summary>
-        <value>The Tai Le Unicode block (U+1950-U+1974).</value>
+        <summary>Gets the Tai Le Unicode block (U+1950-U+197F).</summary>
+        <value>The Tai Le Unicode block (U+1950-U+197F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2860,8 +2860,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Tai Tham Unicode block (U+1A20-U+1AAD).</summary>
-        <value>The Tai Tham Unicode block (U+1A20-U+1AAD).</value>
+        <summary>Gets the Tai Tham Unicode block (U+1A20-U+1AAF).</summary>
+        <value>The Tai Tham Unicode block (U+1A20-U+1AAF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2900,7 +2900,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Tamil Unicode block (U+0B82-U+0BFA).</summary>
+        <summary>Gets the Tamil Unicode block (U+0B80-U+0BFF).</summary>
         <value>The Tamil Unicode block (U+0B82-U+0BFA).</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2940,8 +2940,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Thaana Unicode block (U+0780-U+07B1).</summary>
-        <value>The Thaana Unicode block (U+0780-U+07B1).</value>
+        <summary>Gets the Thaana Unicode block (U+0780-U+07BF).</summary>
+        <value>The Thaana Unicode block (U+0780-U+07BF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2960,8 +2960,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Thai Unicode block (U+0E01-U+0E5B).</summary>
-        <value>The Thai Unicode block (U+0E01-U+0E5B).</value>
+        <summary>Gets the Thai Unicode block (U+0E00-U+0E7F).</summary>
+        <value>The Thai Unicode block (U+0E00-U+0E7F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2980,8 +2980,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Tibetan Unicode block (U+0F00-U+0FDA).</summary>
-        <value>The Tibetan Unicode block (U+0F00-U+0FDA).</value>
+        <summary>Gets the Tibetan Unicode block (U+0F00-U+0FFF).</summary>
+        <value>The Tibetan Unicode block (U+0F00-U+0FFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3040,8 +3040,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Unified Canadian Aboriginal Syllabics Extended Unicode block (U+18B0-U+18F5).</summary>
-        <value>The Unified Canadian Aboriginal Syllabics Extended Unicode block (U+18B0-U+18F5).</value>
+        <summary>Gets the Unified Canadian Aboriginal Syllabics Extended Unicode block (U+18B0-U+18FF).</summary>
+        <value>The Unified Canadian Aboriginal Syllabics Extended Unicode block (U+18B0-U+18FF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3060,8 +3060,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Vai Unicode block (U+A500-U+A62B).</summary>
-        <value>The Vai Unicode block (U+A500-U+A62B).</value>
+        <summary>Gets the Vai Unicode block (U+A500-U+A63F).</summary>
+        <value>The Vai Unicode block (U+A500-U+A63F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3100,8 +3100,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Vedic Extensions Unicode block (U+1CD0-U+1CF9).</summary>
-        <value>The Vedic Extensions Unicode block (U+1CD0-U+1CF9).</value>
+        <summary>Gets the Vedic Extensions Unicode block (U+1CD0-U+1CFF).</summary>
+        <value>The Vedic Extensions Unicode block (U+1CD0-U+1CFF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3120,8 +3120,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Vertical Forms Unicode block (U+FE10-U+FE19).</summary>
-        <value>The Vertical Forms Unicode block (U+FE10-U+FE19).</value>
+        <summary>Gets the Vertical Forms Unicode block (U+FE10-U+FE1F).</summary>
+        <value>The Vertical Forms Unicode block (U+FE10-U+FE1F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3160,8 +3160,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Yi Radicals Unicode block (U+A490-U+A4C6).</summary>
-        <value>The Yi Radicals Unicode block (U+A490-U+A4C6).</value>
+        <summary>Gets the Yi Radicals Unicode block (U+A490-U+A4CF).</summary>
+        <value>The Yi Radicals Unicode block (U+A490-U+A4CF).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3180,8 +3180,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Yi Syllables Unicode block (U+A000-U+A48C).</summary>
-        <value>The Yi Syllables Unicode block (U+A000-U+A48C).</value>
+        <summary>Gets the Yi Syllables Unicode block (U+A000-U+A48F).</summary>
+        <value>The Yi Syllables Unicode block (U+A000-U+A48F).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

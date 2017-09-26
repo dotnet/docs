@@ -18,7 +18,10 @@
       <format type="text/markdown"><![CDATA[  
 ## Remarks  
 
-Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF.   
+You use the static <xref:System.Text.Unicode.UnicodeRange.Create%2A> method or the <xref:System.Text.Unicode.UnicodeRange.#ctor%2A> constructor to create a an arbitrary range of Unicode code points. You use the static properties of the <xref:System.Text.Unicode.UnicodeRanges> class retrieve a <xref:System.Text.Unicode.UnicodeRange> instance that contains the code points in a Unicode named range.
+
+Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF. 
+
   ]]></format>
     </remarks>
   </Docs>
@@ -44,7 +47,11 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
         <summary>Creates a new <see cref="System.Text.Unicode.UnicodeRange" /> that includes a specified number of characters starting at a specified Unicode code point.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"> 
-           <paramref name="firstCodePoint" /> lies outside of the Basic Multilingual Plane. 
+
+           <paramref name="firstCodePoint" /> is less than zero. 
+
+-or-
+           <paramref name="firstCodePoint" /> is greater than 0xFFFF. 
 
 -or-           
 
@@ -52,7 +59,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
 
 -or-
 
-<paramref name="firstCodePoint" /> plus <paramref name="length" /> creates a range that extends beyond the Basic Multilingual Plane.
+<paramref name="firstCodePoint" /> plus <paramref name="length" /> is greater than 0xFFFF.
         </exception>    
       </Docs>
     </Member>

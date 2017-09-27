@@ -680,7 +680,7 @@
       </Docs>
     </Member>
     <Member MemberName="ThrowOnInvalidState">
-      <MemberSignature Language="C#" Value="protected static void ThrowOnInvalidState (System.Net.WebSockets.WebSocketState state, System.Net.WebSockets.WebSocketState[] validStates);" />
+      <MemberSignature Language="C#" Value="protected static void ThrowOnInvalidState (System.Net.WebSockets.WebSocketState state, params System.Net.WebSockets.WebSocketState[] validStates);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void ThrowOnInvalidState(valuetype System.Net.WebSockets.WebSocketState state, valuetype System.Net.WebSockets.WebSocketState[] validStates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.WebSocket.ThrowOnInvalidState(System.Net.WebSockets.WebSocketState,System.Net.WebSockets.WebSocketState[])" />
       <MemberType>Method</MemberType>

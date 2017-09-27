@@ -152,7 +152,7 @@
       </Docs>
     </Member>
     <Member MemberName="RemotingTrace">
-      <MemberSignature Language="C#" Value="public static void RemotingTrace (object[] messages);" />
+      <MemberSignature Language="C#" Value="public static void RemotingTrace (params object[] messages);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemotingTrace(object[] messages) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.InternalRemotingServices.RemotingTrace(System.Object[])" />
       <MemberType>Method</MemberType>

@@ -71,7 +71,7 @@
     </Member>
     <Member MemberName="GetDesignTimeData">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.IHierarchicalEnumerable GetDesignTimeData (out bool isSampleData);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchicalEnumerable GetDesignTimeData(bool isSampleData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchicalEnumerable GetDesignTimeData([out] bool&amp; isSampleData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerHierarchicalDataSourceView.GetDesignTimeData(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

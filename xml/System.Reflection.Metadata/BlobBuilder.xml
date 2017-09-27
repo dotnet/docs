@@ -741,7 +741,7 @@
     </Member>
     <Member MemberName="WriteContentTo">
       <MemberSignature Language="C#" Value="public void WriteContentTo (ref System.Reflection.Metadata.BlobWriter destination);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteContentTo(valuetype System.Reflection.Metadata.BlobWriter destination) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteContentTo(valuetype System.Reflection.Metadata.BlobWriter&amp; destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobBuilder.WriteContentTo(System.Reflection.Metadata.BlobWriter@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

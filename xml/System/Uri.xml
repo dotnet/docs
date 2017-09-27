@@ -2018,7 +2018,7 @@ If you used an escaped string to construct this instance (for example, "http://[
     </Member>
     <Member MemberName="HexUnescape">
       <MemberSignature Language="C#" Value="public static char HexUnescape (string pattern, ref int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig char HexUnescape(string pattern, int32 index) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig char HexUnescape(string pattern, int32&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.HexUnescape(System.String,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3603,7 +3603,7 @@ If you used an escaped string to construct this instance (for example, "http://[
     </Member>
     <Member MemberName="TryCreate">
       <MemberSignature Language="C#" Value="public static bool TryCreate (string uriString, UriKind uriKind, out Uri result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(string uriString, valuetype System.UriKind uriKind, class System.Uri result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(string uriString, valuetype System.UriKind uriKind, [out] class System.Uri&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3649,7 +3649,7 @@ If you used an escaped string to construct this instance (for example, "http://[
     </Member>
     <Member MemberName="TryCreate">
       <MemberSignature Language="C#" Value="public static bool TryCreate (Uri baseUri, string relativeUri, out Uri result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, string relativeUri, class System.Uri result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, string relativeUri, [out] class System.Uri&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3695,7 +3695,7 @@ If you used an escaped string to construct this instance (for example, "http://[
     </Member>
     <Member MemberName="TryCreate">
       <MemberSignature Language="C#" Value="public static bool TryCreate (Uri baseUri, Uri relativeUri, out Uri result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, class System.Uri relativeUri, class System.Uri result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(class System.Uri baseUri, class System.Uri relativeUri, [out] class System.Uri&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

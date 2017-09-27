@@ -241,7 +241,7 @@
       </Docs>
     </Member>
     <Member MemberName="Combine">
-      <MemberSignature Language="C#" Value="public static Delegate Combine (Delegate[] delegates);" />
+      <MemberSignature Language="C#" Value="public static Delegate Combine (params Delegate[] delegates);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate Combine(class System.Delegate[] delegates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.Combine(System.Delegate[])" />
       <MemberType>Method</MemberType>
@@ -1534,7 +1534,7 @@
       </Docs>
     </Member>
     <Member MemberName="DynamicInvoke">
-      <MemberSignature Language="C#" Value="public object DynamicInvoke (object[] args);" />
+      <MemberSignature Language="C#" Value="public object DynamicInvoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object DynamicInvoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.DynamicInvoke(System.Object[])" />
       <MemberType>Method</MemberType>

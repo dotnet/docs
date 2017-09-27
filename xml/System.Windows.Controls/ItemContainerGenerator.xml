@@ -294,7 +294,7 @@
     </Member>
     <Member MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext">
       <MemberSignature Language="C#" Value="System.Windows.DependencyObject IItemContainerGenerator.GenerateNext (out bool isNewlyRealized);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(bool isNewlyRealized) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([out] bool&amp; isNewlyRealized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GenerateNext(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

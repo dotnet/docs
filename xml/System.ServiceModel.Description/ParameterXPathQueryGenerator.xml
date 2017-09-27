@@ -17,7 +17,7 @@
   <Members>
     <Member MemberName="CreateFromDataContractSerializer">
       <MemberSignature Language="C#" Value="public static string CreateFromDataContractSerializer (System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, Type type, System.Reflection.MemberInfo[] pathToMember, out System.Xml.XmlNamespaceManager namespaces);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, class System.Type type, class System.Reflection.MemberInfo[] pathToMember, class System.Xml.XmlNamespaceManager namespaces) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, class System.Type type, class System.Reflection.MemberInfo[] pathToMember, [out] class System.Xml.XmlNamespaceManager&amp; namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ParameterXPathQueryGenerator.CreateFromDataContractSerializer(System.Xml.Linq.XName,System.String,System.String,System.Boolean,System.Type,System.Reflection.MemberInfo[],System.Xml.XmlNamespaceManager@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

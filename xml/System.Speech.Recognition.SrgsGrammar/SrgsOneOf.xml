@@ -107,7 +107,7 @@ public void WorldSoccerWinners ()
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SrgsOneOf (System.Speech.Recognition.SrgsGrammar.SrgsItem[] items);" />
+      <MemberSignature Language="C#" Value="public SrgsOneOf (params System.Speech.Recognition.SrgsGrammar.SrgsItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.SrgsGrammar.SrgsItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.#ctor(System.Speech.Recognition.SrgsGrammar.SrgsItem[])" />
       <MemberType>Constructor</MemberType>
@@ -174,7 +174,7 @@ public void WorldSoccerWinners ()
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SrgsOneOf (string[] items);" />
+      <MemberSignature Language="C#" Value="public SrgsOneOf (params string[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>

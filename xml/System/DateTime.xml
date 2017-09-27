@@ -6592,7 +6592,7 @@ An object that is equivalent to the date and time contained in `s`.
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out DateTime result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.DateTime result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] valuetype System.DateTime&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParse(System.String,System.DateTime@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6659,7 +6659,7 @@ An object that is equivalent to the date and time contained in `s`.
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, IFormatProvider provider, System.Globalization.DateTimeStyles styles, out DateTime result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles styles, valuetype System.DateTime result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles styles, [out] valuetype System.DateTime&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6768,7 +6768,7 @@ An object that is equivalent to the date and time contained in `s`.
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string s, string format, IFormatProvider provider, System.Globalization.DateTimeStyles style, out DateTime result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string s, string format, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles style, valuetype System.DateTime result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string s, string format, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles style, [out] valuetype System.DateTime&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6872,7 +6872,7 @@ An object that is equivalent to the date and time contained in `s`.
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string s, string[] formats, IFormatProvider provider, System.Globalization.DateTimeStyles style, out DateTime result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string s, string[] formats, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles style, valuetype System.DateTime result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string s, string[] formats, class System.IFormatProvider provider, valuetype System.Globalization.DateTimeStyles style, [out] valuetype System.DateTime&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -311,7 +311,7 @@
     </Member>
     <Member MemberName="GenerateCode">
       <MemberSignature Language="C#" Value="public string GenerateCode (string virtualPath, string virtualFileString, out System.Collections.IDictionary linePragmasTable);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateCode(string virtualPath, string virtualFileString, class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateCode(string virtualPath, string virtualFileString, [out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCode(System.String,System.String,System.Collections.IDictionary@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -339,7 +339,7 @@
     </Member>
     <Member MemberName="GenerateCodeCompileUnit">
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit (string virtualPath, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out System.Collections.IDictionary linePragmasTable);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters, class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters, [out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.Collections.IDictionary@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -374,7 +374,7 @@
     </Member>
     <Member MemberName="GenerateCodeCompileUnit">
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit (string virtualPath, string virtualFileString, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out System.Collections.IDictionary linePragmasTable);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, string virtualFileString, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters, class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, string virtualFileString, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters, [out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit(System.String,System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.Collections.IDictionary@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -465,7 +465,7 @@
     </Member>
     <Member MemberName="GetCodeDirectoryInformation">
       <MemberSignature Language="C#" Value="public void GetCodeDirectoryInformation (string virtualCodeDir, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out string generatedFilesDir);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCodeDirectoryInformation(string virtualCodeDir, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters, string generatedFilesDir) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCodeDirectoryInformation(string virtualCodeDir, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters, [out] string&amp; generatedFilesDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCodeDirectoryInformation(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -525,7 +525,7 @@
     </Member>
     <Member MemberName="GetCompilerParameters">
       <MemberSignature Language="C#" Value="public void GetCompilerParameters (string virtualPath, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCompilerParameters(string virtualPath, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCompilerParameters(string virtualPath, [out] class System.Type&amp; codeDomProviderType, [out] class System.CodeDom.Compiler.CompilerParameters&amp; compilerParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCompilerParameters(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

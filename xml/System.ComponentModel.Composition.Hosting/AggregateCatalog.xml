@@ -67,7 +67,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AggregateCatalog (System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs);" />
+      <MemberSignature Language="C#" Value="public AggregateCatalog (params System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog[] catalogs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AggregateCatalog.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog[])" />
       <MemberType>Constructor</MemberType>

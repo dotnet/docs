@@ -423,7 +423,7 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
       </Docs>
     </Member>
     <Member MemberName="InvokeScript">
-      <MemberSignature Language="C#" Value="public object InvokeScript (string scriptName, object[] args);" />
+      <MemberSignature Language="C#" Value="public object InvokeScript (string scriptName, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeScript(string scriptName, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.InvokeScript(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1071,7 +1071,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
     </Member>
     <Member MemberName="TranslateAcceleratorCore">
       <MemberSignature Language="C#" Value="protected override bool TranslateAcceleratorCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -312,7 +312,7 @@
       </Docs>
     </Member>
     <Member MemberName="WithParts">
-      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (Type[] partTypes);" />
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (params Type[] partTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithParts(class System.Type[] partTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Type[])" />
       <MemberType>Method</MemberType>

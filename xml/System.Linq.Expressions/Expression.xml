@@ -1196,7 +1196,7 @@
       </Docs>
     </Member>
     <Member MemberName="ArrayAccess">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression ArrayAccess (System.Linq.Expressions.Expression array, System.Linq.Expressions.Expression[] indexes);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression ArrayAccess (System.Linq.Expressions.Expression array, params System.Linq.Expressions.Expression[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.IndexExpression ArrayAccess(class System.Linq.Expressions.Expression array, class System.Linq.Expressions.Expression[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ArrayAccess(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1379,7 +1379,7 @@
       </Docs>
     </Member>
     <Member MemberName="ArrayIndex">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression ArrayIndex (System.Linq.Expressions.Expression array, System.Linq.Expressions.Expression[] indexes);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression ArrayIndex (System.Linq.Expressions.Expression array, params System.Linq.Expressions.Expression[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression ArrayIndex(class System.Linq.Expressions.Expression array, class System.Linq.Expressions.Expression[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ArrayIndex(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1701,7 +1701,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1807,7 +1807,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.ParameterExpression&gt; variables, class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1935,7 +1935,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Type type, class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2060,7 +2060,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Type type, class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.ParameterExpression&gt; variables, class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Type,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2501,7 +2501,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Reflection.MethodInfo method, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Reflection.MethodInfo method, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Reflection.MethodInfo method, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2636,7 +2636,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, System.Reflection.MethodInfo method, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, System.Reflection.MethodInfo method, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Linq.Expressions.Expression instance, class System.Reflection.MethodInfo method, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Linq.Expressions.Expression,System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2808,7 +2808,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, string methodName, Type[] typeArguments, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, string methodName, Type[] typeArguments, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Linq.Expressions.Expression instance, string methodName, class System.Type[] typeArguments, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Linq.Expressions.Expression,System.String,System.Type[],System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2910,7 +2910,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (Type type, string methodName, Type[] typeArguments, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (Type type, string methodName, Type[] typeArguments, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Type type, string methodName, class System.Type[] typeArguments, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Type,System.String,System.Type[],System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -4605,7 +4605,7 @@
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression Dynamic (System.Runtime.CompilerServices.CallSiteBinder binder, Type returnType, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression Dynamic (System.Runtime.CompilerServices.CallSiteBinder binder, Type returnType, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.DynamicExpression Dynamic(class System.Runtime.CompilerServices.CallSiteBinder binder, class System.Type returnType, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -4860,7 +4860,7 @@
       </Docs>
     </Member>
     <Member MemberName="ElementInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ElementInit ElementInit (System.Reflection.MethodInfo addMethod, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ElementInit ElementInit (System.Reflection.MethodInfo addMethod, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ElementInit ElementInit(class System.Reflection.MethodInfo addMethod, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ElementInit(System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -5557,7 +5557,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetActionType">
-      <MemberSignature Language="C#" Value="public static Type GetActionType (Type[] typeArgs);" />
+      <MemberSignature Language="C#" Value="public static Type GetActionType (params Type[] typeArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetActionType(class System.Type[] typeArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.GetActionType(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -5608,7 +5608,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetDelegateType">
-      <MemberSignature Language="C#" Value="public static Type GetDelegateType (Type[] typeArgs);" />
+      <MemberSignature Language="C#" Value="public static Type GetDelegateType (params Type[] typeArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetDelegateType(class System.Type[] typeArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.GetDelegateType(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -5657,7 +5657,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetFuncType">
-      <MemberSignature Language="C#" Value="public static Type GetFuncType (Type[] typeArgs);" />
+      <MemberSignature Language="C#" Value="public static Type GetFuncType (params Type[] typeArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetFuncType(class System.Type[] typeArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.GetFuncType(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -6440,7 +6440,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.InvocationExpression Invoke (System.Linq.Expressions.Expression expression, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.InvocationExpression Invoke (System.Linq.Expressions.Expression expression, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.InvocationExpression Invoke(class System.Linq.Expressions.Expression expression, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Invoke(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -6913,7 +6913,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7012,7 +7012,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, bool tailCall, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, bool tailCall, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Linq.Expressions.Expression body, bool tailCall, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Linq.Expressions.Expression,System.Boolean,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7173,7 +7173,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Type delegateType, class System.Linq.Expressions.Expression body, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Type,System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7330,7 +7330,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, bool tailCall, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, bool tailCall, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Type delegateType, class System.Linq.Expressions.Expression body, bool tailCall, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Type,System.Linq.Expressions.Expression,System.Boolean,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7529,7 +7529,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda&lt;TDelegate&gt;">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.Expression`1&lt;!!TDelegate&gt; Lambda&lt;TDelegate&gt;(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda``1(System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7648,7 +7648,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda&lt;TDelegate&gt;">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, bool tailCall, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, bool tailCall, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.Expression`1&lt;!!TDelegate&gt; Lambda&lt;TDelegate&gt;(class System.Linq.Expressions.Expression body, bool tailCall, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda``1(System.Linq.Expressions.Expression,System.Boolean,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -8419,7 +8419,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MemberInfo member, System.Linq.Expressions.ElementInit[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MemberInfo member, params System.Linq.Expressions.ElementInit[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberListBinding ListBind(class System.Reflection.MemberInfo member, class System.Linq.Expressions.ElementInit[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListBind(System.Reflection.MemberInfo,System.Linq.Expressions.ElementInit[])" />
       <MemberType>Method</MemberType>
@@ -8521,7 +8521,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MethodInfo propertyAccessor, System.Linq.Expressions.ElementInit[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MethodInfo propertyAccessor, params System.Linq.Expressions.ElementInit[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberListBinding ListBind(class System.Reflection.MethodInfo propertyAccessor, class System.Linq.Expressions.ElementInit[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListBind(System.Reflection.MethodInfo,System.Linq.Expressions.ElementInit[])" />
       <MemberType>Method</MemberType>
@@ -8706,7 +8706,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Linq.Expressions.ElementInit[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, params System.Linq.Expressions.ElementInit[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ListInitExpression ListInit(class System.Linq.Expressions.NewExpression newExpression, class System.Linq.Expressions.ElementInit[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpression,System.Linq.Expressions.ElementInit[])" />
       <MemberType>Method</MemberType>
@@ -8773,7 +8773,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Linq.Expressions.Expression[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, params System.Linq.Expressions.Expression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ListInitExpression ListInit(class System.Linq.Expressions.NewExpression newExpression, class System.Linq.Expressions.Expression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -8918,7 +8918,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Reflection.MethodInfo addMethod, System.Linq.Expressions.Expression[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Reflection.MethodInfo addMethod, params System.Linq.Expressions.Expression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ListInitExpression ListInit(class System.Linq.Expressions.NewExpression newExpression, class System.Reflection.MethodInfo addMethod, class System.Linq.Expressions.Expression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpression,System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -9395,7 +9395,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakeDynamic">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression MakeDynamic (Type delegateType, System.Runtime.CompilerServices.CallSiteBinder binder, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression MakeDynamic (Type delegateType, System.Runtime.CompilerServices.CallSiteBinder binder, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.DynamicExpression MakeDynamic(class System.Type delegateType, class System.Runtime.CompilerServices.CallSiteBinder binder, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -9871,7 +9871,7 @@
       </Docs>
     </Member>
     <Member MemberName="MemberBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MemberInfo member, System.Linq.Expressions.MemberBinding[] bindings);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MemberInfo member, params System.Linq.Expressions.MemberBinding[] bindings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberMemberBinding MemberBind(class System.Reflection.MemberInfo member, class System.Linq.Expressions.MemberBinding[] bindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MemberBind(System.Reflection.MemberInfo,System.Linq.Expressions.MemberBinding[])" />
       <MemberType>Method</MemberType>
@@ -9972,7 +9972,7 @@
       </Docs>
     </Member>
     <Member MemberName="MemberBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MethodInfo propertyAccessor, System.Linq.Expressions.MemberBinding[] bindings);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MethodInfo propertyAccessor, params System.Linq.Expressions.MemberBinding[] bindings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberMemberBinding MemberBind(class System.Reflection.MethodInfo propertyAccessor, class System.Linq.Expressions.MemberBinding[] bindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MemberBind(System.Reflection.MethodInfo,System.Linq.Expressions.MemberBinding[])" />
       <MemberType>Method</MemberType>
@@ -10076,7 +10076,7 @@
       </Docs>
     </Member>
     <Member MemberName="MemberInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberInitExpression MemberInit (System.Linq.Expressions.NewExpression newExpression, System.Linq.Expressions.MemberBinding[] bindings);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberInitExpression MemberInit (System.Linq.Expressions.NewExpression newExpression, params System.Linq.Expressions.MemberBinding[] bindings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberInitExpression MemberInit(class System.Linq.Expressions.NewExpression newExpression, class System.Linq.Expressions.MemberBinding[] bindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MemberInit(System.Linq.Expressions.NewExpression,System.Linq.Expressions.MemberBinding[])" />
       <MemberType>Method</MemberType>
@@ -11379,7 +11379,7 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewExpression New(class System.Reflection.ConstructorInfo constructor, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.New(System.Reflection.ConstructorInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -11513,7 +11513,7 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt; arguments, System.Reflection.MemberInfo[] members);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt; arguments, params System.Reflection.MemberInfo[] members);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewExpression New(class System.Reflection.ConstructorInfo constructor, class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.Expression&gt; arguments, class System.Reflection.MemberInfo[] members) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.New(System.Reflection.ConstructorInfo,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},System.Reflection.MemberInfo[])" />
       <MemberType>Method</MemberType>
@@ -11651,7 +11651,7 @@
       </Docs>
     </Member>
     <Member MemberName="NewArrayBounds">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayBounds (Type type, System.Linq.Expressions.Expression[] bounds);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayBounds (Type type, params System.Linq.Expressions.Expression[] bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewArrayExpression NewArrayBounds(class System.Type type, class System.Linq.Expressions.Expression[] bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.NewArrayBounds(System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -11780,7 +11780,7 @@
       </Docs>
     </Member>
     <Member MemberName="NewArrayInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayInit (Type type, System.Linq.Expressions.Expression[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayInit (Type type, params System.Linq.Expressions.Expression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewArrayExpression NewArrayInit(class System.Type type, class System.Linq.Expressions.Expression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.NewArrayInit(System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -13534,7 +13534,7 @@
       </Docs>
     </Member>
     <Member MemberName="Property">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, System.Reflection.PropertyInfo indexer, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, System.Reflection.PropertyInfo indexer, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.IndexExpression Property(class System.Linq.Expressions.Expression instance, class System.Reflection.PropertyInfo indexer, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Property(System.Linq.Expressions.Expression,System.Reflection.PropertyInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -13578,7 +13578,7 @@
       </Docs>
     </Member>
     <Member MemberName="Property">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, string propertyName, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, string propertyName, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.IndexExpression Property(class System.Linq.Expressions.Expression instance, string propertyName, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Property(System.Linq.Expressions.Expression,System.String,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -14449,7 +14449,7 @@
       </Docs>
     </Member>
     <Member MemberName="RuntimeVariables">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.RuntimeVariablesExpression RuntimeVariables (System.Linq.Expressions.ParameterExpression[] variables);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.RuntimeVariablesExpression RuntimeVariables (params System.Linq.Expressions.ParameterExpression[] variables);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.RuntimeVariablesExpression RuntimeVariables(class System.Linq.Expressions.ParameterExpression[] variables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.RuntimeVariables(System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -15027,7 +15027,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Linq.Expressions.Expression,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15088,7 +15088,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.Expression defaultBody, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15191,7 +15191,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.Expression defaultBody, class System.Reflection.MethodInfo comparison, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Reflection.MethodInfo,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15279,7 +15279,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (Type type, System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (Type type, System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Type type, class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.Expression defaultBody, class System.Reflection.MethodInfo comparison, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Type,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Reflection.MethodInfo,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15380,7 +15380,7 @@
       </Docs>
     </Member>
     <Member MemberName="SwitchCase">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchCase SwitchCase (System.Linq.Expressions.Expression body, System.Linq.Expressions.Expression[] testValues);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchCase SwitchCase (System.Linq.Expressions.Expression body, params System.Linq.Expressions.Expression[] testValues);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchCase SwitchCase(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.Expression[] testValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.SwitchCase(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -15681,7 +15681,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryCatch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatch (System.Linq.Expressions.Expression body, System.Linq.Expressions.CatchBlock[] handlers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatch (System.Linq.Expressions.Expression body, params System.Linq.Expressions.CatchBlock[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.TryExpression TryCatch(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.CatchBlock[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryCatch(System.Linq.Expressions.Expression,System.Linq.Expressions.CatchBlock[])" />
       <MemberType>Method</MemberType>
@@ -15733,7 +15733,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryCatchFinally">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatchFinally (System.Linq.Expressions.Expression body, System.Linq.Expressions.Expression finally, System.Linq.Expressions.CatchBlock[] handlers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatchFinally (System.Linq.Expressions.Expression body, System.Linq.Expressions.Expression finally, params System.Linq.Expressions.CatchBlock[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.TryExpression TryCatchFinally(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.Expression finally, class System.Linq.Expressions.CatchBlock[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryCatchFinally(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.CatchBlock[])" />
       <MemberType>Method</MemberType>
@@ -15860,7 +15860,7 @@
     </Member>
     <Member MemberName="TryGetActionType">
       <MemberSignature Language="C#" Value="public static bool TryGetActionType (Type[] typeArgs, out Type actionType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetActionType(class System.Type[] typeArgs, class System.Type actionType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetActionType(class System.Type[] typeArgs, [out] class System.Type&amp; actionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryGetActionType(System.Type[],System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -15896,7 +15896,7 @@
     </Member>
     <Member MemberName="TryGetFuncType">
       <MemberSignature Language="C#" Value="public static bool TryGetFuncType (Type[] typeArgs, out Type funcType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFuncType(class System.Type[] typeArgs, class System.Type funcType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFuncType(class System.Type[] typeArgs, [out] class System.Type&amp; funcType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryGetFuncType(System.Type[],System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

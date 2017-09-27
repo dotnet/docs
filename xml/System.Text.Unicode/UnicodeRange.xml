@@ -85,7 +85,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
         <param name="firstCharacter">The first character in the range.</param>
         <param name="lastCharacter">The last character in the range.</param>
         <summary>Creates a new <see cref="System.Text.Unicode.UnicodeRange" /> instance from a span of characters.</summary>
-        <returns>A range that includes all characters between <param name="firstCharacter"> and <param name="lastCharacter"/>.</returns>
+        <returns>A range that includes all characters between <param name="firstCharacter"/> and <param name="lastCharacter"/>.</returns>
         <remarks>To be added.</remarks>
         <exception cref="System.ArgumentOutOfRangeException"><param name="lastCharacter"/> precedes <param name="firstCharacter" />.
         </exception>

@@ -38,8 +38,10 @@ public class Temperature : IFormattable
    
    public string ToString(string format, IFormatProvider provider)  
    {
+      // Handle null or empty arguments.
       if (String.IsNullOrEmpty(format))
          format = "G";
+      // Remove any white space and covert to uppercase.
       format = format.Trim().ToUpperInvariant();
 
       if (provider == null)
@@ -47,10 +49,13 @@ public class Temperature : IFormattable
             
       switch (format)
       {
+         // Convert temperature to Fahrenheit and return string.
          case "F":
             return this.Fahrenheit.ToString("N2", provider) + "°F";
+         // Convert temperature to Kelvin and return string.
          case "K":
             return this.Kelvin.ToString("N2", provider) + "K";
+         // Return temperature in Celsius.
          case "C":
          case "G":
             return this.Celsius.ToString("N2", provider) + "°C";
@@ -67,11 +72,11 @@ public class Example
    public static void Main()
    {
       CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
-      Temperature temp1 = new Temperature(22m);
-      Console.WriteLine(Convert.ToString(temp1, new CultureInfo("ja-JP")));
-      Console.WriteLine("Temperature: {0:K}", temp1);
-      Console.WriteLine("Temperature: {0:F}", temp1);
-      Console.WriteLine(String.Format(new CultureInfo("fr-FR"), "Temperature: {0:F}", temp1));
+      Temperature temp = new Temperature(22m);
+      Console.WriteLine(Convert.ToString(temp, new CultureInfo("ja-JP")));
+      Console.WriteLine("Temperature: {0:K}", temp);
+      Console.WriteLine("Temperature: {0:F}", temp);
+      Console.WriteLine(String.Format(new CultureInfo("fr-FR"), "Temperature: {0:F}", temp));
    }
 }
 // The example displays the following output:

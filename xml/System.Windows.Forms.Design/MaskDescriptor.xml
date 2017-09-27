@@ -168,7 +168,7 @@
     </Member>
     <Member MemberName="IsValidMaskDescriptor">
       <MemberSignature Language="C#" Value="public static bool IsValidMaskDescriptor (System.Windows.Forms.Design.MaskDescriptor maskDescriptor, out string validationErrorDescription);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidMaskDescriptor(class System.Windows.Forms.Design.MaskDescriptor maskDescriptor, string validationErrorDescription) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidMaskDescriptor(class System.Windows.Forms.Design.MaskDescriptor maskDescriptor, [out] string&amp; validationErrorDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.MaskDescriptor.IsValidMaskDescriptor(System.Windows.Forms.Design.MaskDescriptor,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

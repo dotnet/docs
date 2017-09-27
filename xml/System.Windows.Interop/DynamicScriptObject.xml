@@ -52,7 +52,7 @@
     </Member>
     <Member MemberName="TryGetIndex">
       <MemberSignature Language="C#" Value="public override bool TryGetIndex (System.Dynamic.GetIndexBinder binder, object[] indexes, out object result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetIndex(class System.Dynamic.GetIndexBinder binder, object[] indexes, object result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetIndex(class System.Dynamic.GetIndexBinder binder, object[] indexes, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryGetIndex(System.Dynamic.GetIndexBinder,System.Object[],System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -95,7 +95,7 @@
     </Member>
     <Member MemberName="TryGetMember">
       <MemberSignature Language="C#" Value="public override bool TryGetMember (System.Dynamic.GetMemberBinder binder, out object result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetMember(class System.Dynamic.GetMemberBinder binder, object result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetMember(class System.Dynamic.GetMemberBinder binder, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -130,7 +130,7 @@
     </Member>
     <Member MemberName="TryInvoke">
       <MemberSignature Language="C#" Value="public override bool TryInvoke (System.Dynamic.InvokeBinder binder, object[] args, out object result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryInvoke(class System.Dynamic.InvokeBinder binder, object[] args, object result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryInvoke(class System.Dynamic.InvokeBinder binder, object[] args, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryInvoke(System.Dynamic.InvokeBinder,System.Object[],System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -167,7 +167,7 @@
     </Member>
     <Member MemberName="TryInvokeMember">
       <MemberSignature Language="C#" Value="public override bool TryInvokeMember (System.Dynamic.InvokeMemberBinder binder, object[] args, out object result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryInvokeMember(class System.Dynamic.InvokeMemberBinder binder, object[] args, object result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryInvokeMember(class System.Dynamic.InvokeMemberBinder binder, object[] args, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryInvokeMember(System.Dynamic.InvokeMemberBinder,System.Object[],System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

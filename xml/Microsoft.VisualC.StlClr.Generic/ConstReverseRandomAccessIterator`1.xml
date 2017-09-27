@@ -353,8 +353,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator + (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; , int32 _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator + (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -362,7 +362,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -379,8 +379,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator + (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int _Left, Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; , int32 _Left, class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public static void operator + (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int _Left, Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Left, class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32,Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -393,7 +393,7 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -454,8 +454,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -463,7 +463,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -476,8 +476,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -485,7 +485,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -595,8 +595,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -604,7 +604,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -617,8 +617,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -626,7 +626,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -801,8 +801,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator - (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Subtraction(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; , int32 _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator - (ref Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; , int _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Subtraction(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -810,7 +810,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />

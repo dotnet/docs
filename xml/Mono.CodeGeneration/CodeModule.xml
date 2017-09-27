@@ -59,7 +59,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateClass">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeClass CreateClass (string name, Type baseType, Type[] interfaces);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeClass CreateClass (string name, Type baseType, params Type[] interfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeClass CreateClass(string name, class System.Type baseType, class System.Type[] interfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeModule.CreateClass(System.String,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -92,7 +92,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateClass">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeClass CreateClass (string name, System.Reflection.TypeAttributes attr, Type baseType, Type[] interfaces);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeClass CreateClass (string name, System.Reflection.TypeAttributes attr, Type baseType, params Type[] interfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeClass CreateClass(string name, valuetype System.Reflection.TypeAttributes attr, class System.Type baseType, class System.Type[] interfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeModule.CreateClass(System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])" />
       <MemberType>Method</MemberType>

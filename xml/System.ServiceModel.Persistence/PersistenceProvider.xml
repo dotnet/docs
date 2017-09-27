@@ -404,7 +404,7 @@
     </Member>
     <Member MemberName="EndLoadIfChanged">
       <MemberSignature Language="C#" Value="public virtual bool EndLoadIfChanged (IAsyncResult result, out object instance);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndLoadIfChanged(class System.IAsyncResult result, object instance) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndLoadIfChanged(class System.IAsyncResult result, [out] object&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.EndLoadIfChanged(System.IAsyncResult,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -532,7 +532,7 @@
     </Member>
     <Member MemberName="LoadIfChanged">
       <MemberSignature Language="C#" Value="public virtual bool LoadIfChanged (TimeSpan timeout, object instanceToken, out object instance);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, object instance) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, [out] object&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

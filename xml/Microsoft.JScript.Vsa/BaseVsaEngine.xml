@@ -234,7 +234,7 @@
     </Member>
     <Member MemberName="DoSaveCompiledState">
       <MemberSignature Language="C#" Value="protected abstract void DoSaveCompiledState (out byte[] pe, out byte[] debugInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DoSaveCompiledState(unsigned int8[] pe, unsigned int8[] debugInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DoSaveCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; debugInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaEngine.DoSaveCompiledState(System.Byte[]@,System.Byte[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1032,7 +1032,7 @@
     </Member>
     <Member MemberName="SaveCompiledState">
       <MemberSignature Language="C#" Value="public virtual void SaveCompiledState (out byte[] pe, out byte[] debugInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveCompiledState(unsigned int8[] pe, unsigned int8[] debugInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; debugInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaEngine.SaveCompiledState(System.Byte[]@,System.Byte[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

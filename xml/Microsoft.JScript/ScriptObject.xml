@@ -415,7 +415,7 @@
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public object this[object[] pars] { get; set; }" />
+      <MemberSignature Language="C#" Value="public object this[params object[] pars] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(object[])" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptObject.Item(System.Object[])" />
       <MemberType>Property</MemberType>

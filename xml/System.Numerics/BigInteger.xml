@@ -1084,7 +1084,7 @@
     </Member>
     <Member MemberName="DivRem">
       <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger DivRem (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor, out System.Numerics.BigInteger remainder);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.BigInteger DivRem(valuetype System.Numerics.BigInteger dividend, valuetype System.Numerics.BigInteger divisor, valuetype System.Numerics.BigInteger remainder) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.BigInteger DivRem(valuetype System.Numerics.BigInteger dividend, valuetype System.Numerics.BigInteger divisor, [out] valuetype System.Numerics.BigInteger&amp; remainder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.DivRem(System.Numerics.BigInteger,System.Numerics.BigInteger,System.Numerics.BigInteger@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6614,7 +6614,7 @@ value Mod 2 = 0
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string value, out System.Numerics.BigInteger result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string value, valuetype System.Numerics.BigInteger result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string value, [out] valuetype System.Numerics.BigInteger&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryParse(System.String,System.Numerics.BigInteger@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6687,7 +6687,7 @@ value Mod 2 = 0
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string value, System.Globalization.NumberStyles style, IFormatProvider provider, out System.Numerics.BigInteger result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string value, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, valuetype System.Numerics.BigInteger result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string value, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] valuetype System.Numerics.BigInteger&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Numerics.BigInteger@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -387,7 +387,7 @@
     </Member>
     <Member MemberName="TryGetValues">
       <MemberSignature Language="C#" Value="public bool TryGetValues (string name, out System.Collections.Generic.IEnumerable&lt;string&gt; values);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValues(string name, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValues(string name, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -1140,7 +1140,7 @@
     </Member>
     <Member MemberName="BeginReceive">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1322,7 +1322,7 @@
     </Member>
     <Member MemberName="BeginReceive">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags flags, out System.Net.Sockets.SocketError error, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags flags, valuetype System.Net.Sockets.SocketError error, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags flags, [out] valuetype System.Net.Sockets.SocketError&amp; error, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1412,7 +1412,7 @@
     </Member>
     <Member MemberName="BeginReceiveFrom">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, ref System.Net.EndPoint remote_end, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint remote_end, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint&amp; remote_end, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1520,7 +1520,7 @@
     </Member>
     <Member MemberName="BeginReceiveMessageFrom">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveMessageFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1691,7 +1691,7 @@
     </Member>
     <Member MemberName="BeginSend">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1875,7 +1875,7 @@
     </Member>
     <Member MemberName="BeginSend">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3415,7 +3415,7 @@
     </Member>
     <Member MemberName="EndAccept">
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (out byte[] buffer, IAsyncResult asyncResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(unsigned int8[] buffer, class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept([out] unsigned int8[]&amp; buffer, class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.Byte[]@,System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3482,7 +3482,7 @@
     </Member>
     <Member MemberName="EndAccept">
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (out byte[] buffer, out int bytesTransferred, IAsyncResult asyncResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(unsigned int8[] buffer, int32 bytesTransferred, class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept([out] unsigned int8[]&amp; buffer, [out] int32&amp; bytesTransferred, class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.Byte[]@,System.Int32@,System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3750,7 +3750,7 @@
     </Member>
     <Member MemberName="EndReceive">
       <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult asyncResult, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult asyncResult, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3815,7 +3815,7 @@
     </Member>
     <Member MemberName="EndReceiveFrom">
       <MemberSignature Language="C#" Value="public int EndReceiveFrom (IAsyncResult result, ref System.Net.EndPoint end_point);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult result, class System.Net.EndPoint end_point) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult result, class System.Net.EndPoint&amp; end_point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3884,7 +3884,7 @@
     </Member>
     <Member MemberName="EndReceiveMessageFrom">
       <MemberSignature Language="C#" Value="public int EndReceiveMessageFrom (IAsyncResult asyncResult, ref System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint endPoint, out System.Net.Sockets.IPPacketInformation ipPacketInformation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveMessageFrom(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint endPoint, valuetype System.Net.Sockets.IPPacketInformation ipPacketInformation) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveMessageFrom(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketFlags&amp; socketFlags, class System.Net.EndPoint&amp; endPoint, [out] valuetype System.Net.Sockets.IPPacketInformation&amp; ipPacketInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveMessageFrom(System.IAsyncResult,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4024,7 +4024,7 @@
     </Member>
     <Member MemberName="EndSend">
       <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult asyncResult, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult asyncResult, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5537,7 +5537,7 @@
     </Member>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public int Receive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5708,7 +5708,7 @@
     </Member>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public int Receive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5912,7 +5912,7 @@
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5994,7 +5994,7 @@
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6078,7 +6078,7 @@
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6176,7 +6176,7 @@
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6349,7 +6349,7 @@
     </Member>
     <Member MemberName="ReceiveMessageFrom">
       <MemberSignature Language="C#" Value="public int ReceiveMessageFrom (byte[] buffer, int offset, int size, ref System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, out System.Net.Sockets.IPPacketInformation ipPacketInformation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP, valuetype System.Net.Sockets.IPPacketInformation ipPacketInformation) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags&amp; socketFlags, class System.Net.EndPoint&amp; remoteEP, [out] valuetype System.Net.Sockets.IPPacketInformation&amp; ipPacketInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -7053,7 +7053,7 @@
     </Member>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public int Send (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -7219,7 +7219,7 @@
     </Member>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public int Send (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

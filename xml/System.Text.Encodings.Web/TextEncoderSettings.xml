@@ -63,7 +63,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TextEncoderSettings (System.Text.Unicode.UnicodeRange[] allowedRanges);" />
+      <MemberSignature Language="C#" Value="public TextEncoderSettings (params System.Text.Unicode.UnicodeRange[] allowedRanges);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.Unicode.UnicodeRange[] allowedRanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Unicode.UnicodeRange[])" />
       <MemberType>Constructor</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="AllowCharacters">
-      <MemberSignature Language="C#" Value="public virtual void AllowCharacters (char[] characters);" />
+      <MemberSignature Language="C#" Value="public virtual void AllowCharacters (params char[] characters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AllowCharacters(char[] characters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.AllowCharacters(System.Char[])" />
       <MemberType>Method</MemberType>
@@ -200,7 +200,7 @@
       </Docs>
     </Member>
     <Member MemberName="AllowRanges">
-      <MemberSignature Language="C#" Value="public virtual void AllowRanges (System.Text.Unicode.UnicodeRange[] ranges);" />
+      <MemberSignature Language="C#" Value="public virtual void AllowRanges (params System.Text.Unicode.UnicodeRange[] ranges);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AllowRanges(class System.Text.Unicode.UnicodeRange[] ranges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.AllowRanges(System.Text.Unicode.UnicodeRange[])" />
       <MemberType>Method</MemberType>
@@ -277,7 +277,7 @@
       </Docs>
     </Member>
     <Member MemberName="ForbidCharacters">
-      <MemberSignature Language="C#" Value="public virtual void ForbidCharacters (char[] characters);" />
+      <MemberSignature Language="C#" Value="public virtual void ForbidCharacters (params char[] characters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForbidCharacters(char[] characters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacters(System.Char[])" />
       <MemberType>Method</MemberType>
@@ -335,7 +335,7 @@
       </Docs>
     </Member>
     <Member MemberName="ForbidRanges">
-      <MemberSignature Language="C#" Value="public virtual void ForbidRanges (System.Text.Unicode.UnicodeRange[] ranges);" />
+      <MemberSignature Language="C#" Value="public virtual void ForbidRanges (params System.Text.Unicode.UnicodeRange[] ranges);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForbidRanges(class System.Text.Unicode.UnicodeRange[] ranges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidRanges(System.Text.Unicode.UnicodeRange[])" />
       <MemberType>Method</MemberType>

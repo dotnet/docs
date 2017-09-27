@@ -3595,7 +3595,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out TimeSpan result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.TimeSpan result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] valuetype System.TimeSpan&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.TryParse(System.String,System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3677,7 +3677,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, IFormatProvider formatProvider, out TimeSpan result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.IFormatProvider formatProvider, valuetype System.TimeSpan result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.IFormatProvider formatProvider, [out] valuetype System.TimeSpan&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.TryParse(System.String,System.IFormatProvider,System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3771,7 +3771,7 @@
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string format, IFormatProvider formatProvider, out TimeSpan result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, valuetype System.TimeSpan result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, [out] valuetype System.TimeSpan&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3843,7 +3843,7 @@
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string[] formats, IFormatProvider formatProvider, out TimeSpan result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, valuetype System.TimeSpan result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, [out] valuetype System.TimeSpan&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3917,7 +3917,7 @@
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string format, IFormatProvider formatProvider, System.Globalization.TimeSpanStyles styles, out TimeSpan result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, valuetype System.Globalization.TimeSpanStyles styles, valuetype System.TimeSpan result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, valuetype System.Globalization.TimeSpanStyles styles, [out] valuetype System.TimeSpan&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3990,7 +3990,7 @@
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string[] formats, IFormatProvider formatProvider, System.Globalization.TimeSpanStyles styles, out TimeSpan result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, valuetype System.Globalization.TimeSpanStyles styles, valuetype System.TimeSpan result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, valuetype System.Globalization.TimeSpanStyles styles, [out] valuetype System.TimeSpan&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -209,7 +209,7 @@
     </Member>
     <Member MemberName="Accessibility.IAccessible.accLocation">
       <MemberSignature Language="C#" Value="void IAccessible.accLocation (out int pxLeft, out int pyTop, out int pcxWidth, out int pcyHeight, object childID);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Accessibility.IAccessible.accLocation(int32 pxLeft, int32 pyTop, int32 pcxWidth, int32 pcyHeight, object childID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Accessibility.IAccessible.accLocation([out] int32&amp; pxLeft, [out] int32&amp; pyTop, [out] int32&amp; pcxWidth, [out] int32&amp; pcyHeight, object childID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -472,7 +472,7 @@
     </Member>
     <Member MemberName="Accessibility.IAccessible.get_accHelpTopic">
       <MemberSignature Language="C#" Value="int IAccessible.get_accHelpTopic (out string pszHelpFile, object childID);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Accessibility.IAccessible.get_accHelpTopic(string pszHelpFile, object childID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Accessibility.IAccessible.get_accHelpTopic([out] string&amp; pszHelpFile, object childID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#get_accHelpTopic(System.String@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -884,7 +884,7 @@
     </Member>
     <Member MemberName="GetHelpTopic">
       <MemberSignature Language="C#" Value="public virtual int GetHelpTopic (out string fileName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHelpTopic(string fileName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHelpTopic([out] string&amp; fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.GetHelpTopic(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

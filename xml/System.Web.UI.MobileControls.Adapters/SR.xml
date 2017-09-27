@@ -803,7 +803,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetString">
-      <MemberSignature Language="C#" Value="public static string GetString (string name, object[] args);" />
+      <MemberSignature Language="C#" Value="public static string GetString (string name, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetString(string name, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.SR.GetString(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -833,7 +833,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetString">
-      <MemberSignature Language="C#" Value="public static string GetString (System.Globalization.CultureInfo culture, string name, object[] args);" />
+      <MemberSignature Language="C#" Value="public static string GetString (System.Globalization.CultureInfo culture, string name, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetString(class System.Globalization.CultureInfo culture, string name, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.SR.GetString(System.Globalization.CultureInfo,System.String,System.Object[])" />
       <MemberType>Method</MemberType>

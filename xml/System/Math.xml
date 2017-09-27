@@ -1261,7 +1261,7 @@
     </Member>
     <Member MemberName="DivRem">
       <MemberSignature Language="C#" Value="public static int DivRem (int a, int b, out int result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DivRem(int32 a, int32 b, int32 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DivRem(int32 a, int32 b, [out] int32&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Math.DivRem(System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1313,7 +1313,7 @@
     </Member>
     <Member MemberName="DivRem">
       <MemberSignature Language="C#" Value="public static long DivRem (long a, long b, out long result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 DivRem(int64 a, int64 b, int64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 DivRem(int64 a, int64 b, [out] int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Math.DivRem(System.Int64,System.Int64,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

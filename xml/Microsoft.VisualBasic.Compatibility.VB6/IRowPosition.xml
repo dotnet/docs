@@ -57,7 +57,7 @@
     </Member>
     <Member MemberName="GetRowPosition">
       <MemberSignature Language="C#" Value="public void GetRowPosition (out int hChapter, out int hRow, out int dbPositionFlags);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRowPosition(int32 hChapter, int32 hRow, int32 dbPositionFlags) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRowPosition([out] int32&amp; hChapter, [out] int32&amp; hRow, [out] int32&amp; dbPositionFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.GetRowPosition(System.Int32@,System.Int32@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -89,7 +89,7 @@
     </Member>
     <Member MemberName="GetRowset">
       <MemberSignature Language="C#" Value="public void GetRowset (ref Guid iid, out object rowset);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRowset(valuetype System.Guid iid, object rowset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRowset([in]valuetype System.Guid&amp; iid, [out] object&amp; rowset) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.GetRowset(System.Guid@,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -119,7 +119,7 @@
     </Member>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public void Initialize (object rowset);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Initialize(object rowset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Initialize([in]object rowset) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.Initialize(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -147,7 +147,7 @@
     </Member>
     <Member MemberName="SetRowPosition">
       <MemberSignature Language="C#" Value="public void SetRowPosition (int hChapter, int hRow, int dbPositionFlags);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetRowPosition(int32 hChapter, int32 hRow, int32 dbPositionFlags) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetRowPosition([in]int32 hChapter, [in]int32 hRow, [in]int32 dbPositionFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.SetRowPosition(System.Int32,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

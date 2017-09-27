@@ -54,7 +54,7 @@
     </Member>
     <Member MemberName="GetDefaultSiteNameAndID">
       <MemberSignature Language="C#" Value="public void GetDefaultSiteNameAndID (out string siteName, out string siteID);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDefaultSiteNameAndID(string siteName, string siteID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDefaultSiteNameAndID([out] string&amp; siteName, [out] string&amp; siteID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IConfigMapPath.GetDefaultSiteNameAndID(System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -112,7 +112,7 @@
     </Member>
     <Member MemberName="GetPathConfigFilename">
       <MemberSignature Language="C#" Value="public void GetPathConfigFilename (string siteID, string path, out string directory, out string baseName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPathConfigFilename(string siteID, string path, string directory, string baseName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPathConfigFilename(string siteID, string path, [out] string&amp; directory, [out] string&amp; baseName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IConfigMapPath.GetPathConfigFilename(System.String,System.String,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -206,7 +206,7 @@
     </Member>
     <Member MemberName="ResolveSiteArgument">
       <MemberSignature Language="C#" Value="public void ResolveSiteArgument (string siteArgument, out string siteName, out string siteID);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResolveSiteArgument(string siteArgument, string siteName, string siteID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResolveSiteArgument(string siteArgument, [out] string&amp; siteName, [out] string&amp; siteID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IConfigMapPath.ResolveSiteArgument(System.String,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

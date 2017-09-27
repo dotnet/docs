@@ -2905,7 +2905,7 @@
       </Docs>
     </Member>
     <Member MemberName="Concat">
-      <MemberSignature Language="C#" Value="public static string Concat (object[] args);" />
+      <MemberSignature Language="C#" Value="public static string Concat (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2969,7 +2969,7 @@
       </Docs>
     </Member>
     <Member MemberName="Concat">
-      <MemberSignature Language="C#" Value="public static string Concat (string[] values);" />
+      <MemberSignature Language="C#" Value="public static string Concat (params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String[])" />
       <MemberType>Method</MemberType>
@@ -4685,7 +4685,7 @@ index[,alignment][ :formatString] }
       </Docs>
     </Member>
     <Member MemberName="Format">
-      <MemberSignature Language="C#" Value="public static string Format (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static string Format (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4799,7 +4799,7 @@ index[,alignment][ :formatString] }
       </Docs>
     </Member>
     <Member MemberName="Format">
-      <MemberSignature Language="C#" Value="public static string Format (IFormatProvider provider, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static string Format (IFormatProvider provider, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(class System.IFormatProvider provider, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -6574,7 +6574,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="Join">
-      <MemberSignature Language="C#" Value="public static string Join (char separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public static string Join (char separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(char separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -6604,7 +6604,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="Join">
-      <MemberSignature Language="C#" Value="public static string Join (char separator, string[] value);" />
+      <MemberSignature Language="C#" Value="public static string Join (char separator, params string[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(char separator, string[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.String[])" />
       <MemberType>Method</MemberType>
@@ -6698,7 +6698,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="Join">
-      <MemberSignature Language="C#" Value="public static string Join (string separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public static string Join (string separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -6771,7 +6771,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="Join">
-      <MemberSignature Language="C#" Value="public static string Join (string separator, string[] value);" />
+      <MemberSignature Language="C#" Value="public static string Join (string separator, params string[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string separator, string[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -8810,7 +8810,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </MemberGroup>
     <Member MemberName="Split">
-      <MemberSignature Language="C#" Value="public string[] Split (char[] separator);" />
+      <MemberSignature Language="C#" Value="public string[] Split (params char[] separator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char[] separator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[])" />
       <MemberType>Method</MemberType>
@@ -11387,7 +11387,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="Trim">
-      <MemberSignature Language="C#" Value="public string Trim (char[] trimChars);" />
+      <MemberSignature Language="C#" Value="public string Trim (params char[] trimChars);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Trim(char[] trimChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Trim(System.Char[])" />
       <MemberType>Method</MemberType>
@@ -11495,7 +11495,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="TrimEnd">
-      <MemberSignature Language="C#" Value="public string TrimEnd (char[] trimChars);" />
+      <MemberSignature Language="C#" Value="public string TrimEnd (params char[] trimChars);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimEnd(char[] trimChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimEnd(System.Char[])" />
       <MemberType>Method</MemberType>
@@ -11598,7 +11598,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="TrimStart">
-      <MemberSignature Language="C#" Value="public string TrimStart (char[] trimChars);" />
+      <MemberSignature Language="C#" Value="public string TrimStart (params char[] trimChars);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimStart(char[] trimChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimStart(System.Char[])" />
       <MemberType>Method</MemberType>

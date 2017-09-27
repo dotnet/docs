@@ -1296,7 +1296,7 @@ private static void DumpGrammarStatus(Grammar item)
       </Docs>
     </Member>
     <Member MemberName="LoadLocalizedGrammarFromType">
-      <MemberSignature Language="C#" Value="public static System.Speech.Recognition.Grammar LoadLocalizedGrammarFromType (Type type, object[] onInitParameters);" />
+      <MemberSignature Language="C#" Value="public static System.Speech.Recognition.Grammar LoadLocalizedGrammarFromType (Type type, params object[] onInitParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Speech.Recognition.Grammar LoadLocalizedGrammarFromType(class System.Type type, object[] onInitParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Grammar.LoadLocalizedGrammarFromType(System.Type,System.Object[])" />
       <MemberType>Method</MemberType>

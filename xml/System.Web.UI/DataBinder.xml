@@ -261,7 +261,7 @@
     </Member>
     <Member MemberName="GetDataItem">
       <MemberSignature Language="C#" Value="public static object GetDataItem (object container, out bool foundDataItem);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container, bool foundDataItem) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container, [out] bool&amp; foundDataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetDataItem(System.Object,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

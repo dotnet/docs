@@ -14,7 +14,7 @@ ms.author: "wiwagn"
 ---
 # Interpolated Strings (C# Reference)
 
-Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations. This features is available in C# 6 and newer.
+Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations. This feature is available in C# 6 and later versions.
 
 The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
@@ -39,6 +39,9 @@ where:
 
 - *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a standard date and time format string such as "D" or "d".
 
+> [!IMPORTANT]
+> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compile time error.
+
  You can use an interpolated string anywhere you can use a string literal.  The interpolated string is evaluated each time the code with the interpolated string executes. This allows you to separate the definition and evaluation of an interpolated string.  
   
  To include a curly brace ("{" or "}") in an interpolated string, use two curly braces, "{{" or "}}".  See the Implicit Conversions section for more details.  
@@ -47,7 +50,7 @@ If the interpolated string contains other characters with special meaning in an 
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings4.cs#1)]  
 
-Verbatim interpolated strings use the `@` character in addition to using the `$` character for interpolated strings. You can learn more about verbatim strings in the [string](strings.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
+Verbatim interpolated strings use the `@` character followed by the `$` character. For more information about verbatim strings, see the         [string](strings.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings5.cs#1)]  
 

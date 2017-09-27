@@ -64,7 +64,7 @@ This topic describes how to create a simple workflow service using messaging act
   
      This specifies that the Receive activity receives string parameter and that data is bound to the `msg` variable. Click **OK** to close the **Content Definition** dialog.  
   
-7.  Click the **Define...** link in the **Content** box in the <xref:System.ServiceModel.Activities.SendReply> activity to display the **Content Definition** dialog. Select the **Parameters** radio button, click the **Add new Parameter** link, type `msg` in the **name** textbox, select **String** in the **Type** dropdown list box, and `msg` in the **Value** text box as shown in the following illustration.  
+7.  Click the **Define...** link in the **Content** box in the <xref:System.ServiceModel.Activities.SendReply> activity to display the **Content Definition** dialog. Select the **Parameters** radio button, click the **Add new Parameter** link, type `outMsg` in the **name** textbox, select **String** in the **Type** dropdown list box, and `msg` in the **Value** text box as shown in the following illustration.  
   
      ![Adding Parameters Content](../../../../docs/framework/wcf/feature-details/media/parameterscontent2.jpg "ParametersContent2")  
   

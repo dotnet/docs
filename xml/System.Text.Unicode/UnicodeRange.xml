@@ -48,7 +48,7 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"> 
 
-           <paramref name="firstCodePoint" /> is less than zero. 
+           <paramref name="firstCodePoint" /> is less than zero or greater than 0xFFFF. 
 
 -or-
            <paramref name="firstCodePoint" /> is greater than 0xFFFF. 

@@ -18,13 +18,13 @@
 ## Remarks  
  Use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class to import service metadata. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in [!INCLUDE[indigo1](~/includes/indigo1-md.md)].  
   
- A <xref:System.ServiceModel.Description.MetadataImporter> implementation collects the policy expressions attached to the service metadata in a <xref:System.ServiceModel.Description.PolicyConversionContext?displayProperty=fullName> object. The <xref:System.ServiceModel.Description.MetadataImporter> then processes the policies as part of importing the metadata by calling the implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=fullName> interface in the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=fullName> property.  
+ A <xref:System.ServiceModel.Description.MetadataImporter> implementation collects the policy expressions attached to the service metadata in a <xref:System.ServiceModel.Description.PolicyConversionContext?displayProperty=nameWithType> object. The <xref:System.ServiceModel.Description.MetadataImporter> then processes the policies as part of importing the metadata by calling the implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface in the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> property.  
   
- You can add support for importing new policy assertions to a <xref:System.ServiceModel.Description.MetadataImporter> by adding your own implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=fullName> interface to the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=fullName> property on a <xref:System.ServiceModel.Description.MetadataImporter> instance. Alternatively, you can register your policy import extension in your application configuration file.  
+ You can add support for importing new policy assertions to a <xref:System.ServiceModel.Description.MetadataImporter> by adding your own implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface to the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> property on a <xref:System.ServiceModel.Description.MetadataImporter> instance. Alternatively, you can register your policy import extension in your application configuration file.  
   
- The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=fullName> type is the implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class included with [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=fullName> type imports WSDL metadata with attached policies that are bundled in a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=fullName> object.  
+ The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> type is the implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class included with [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> type imports WSDL metadata with attached policies that are bundled in a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType> object.  
   
- You can add support for importing WSDL extensions by implementing the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> interface and then adding your implementation to the <xref:System.ServiceModel.Description.WsdlImporter.WsdlImportExtensions%2A?displayProperty=fullName> property on your <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=fullName> instance. The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=fullName> can also load implementations of the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> interface registered in your application configuration file.  
+ You can add support for importing WSDL extensions by implementing the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> interface and then adding your implementation to the <xref:System.ServiceModel.Description.WsdlImporter.WsdlImportExtensions%2A?displayProperty=nameWithType> property on your <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> instance. The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> can also load implementations of the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> interface registered in your application configuration file.  
   
 > [!NOTE]
 >  Because the <xref:System.ServiceModel.Description.MetadataImporter> constructor is internal, you cannot derive from <xref:System.ServiceModel.Description.MetadataImporter> in this version.  
@@ -32,7 +32,7 @@
    
   
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=fullName> derived class to import metadata using custom state, checking the <xref:System.ServiceModel.Description.MetadataImporter.Errors%2A> property, compiling imported metadata to managed types and saving the result to a code file.  
+ The following example shows the use of the <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> derived class to import metadata using custom state, checking the <xref:System.ServiceModel.Description.MetadataImporter.Errors%2A> property, compiling imported metadata to managed types and saving the result to a code file.  
   
  [!code-csharp[C_CustomWSDLExtensions#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/client.cs#8)]  
   
@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement the <xref:System.ServiceModel.Description.MetadataImporter.ImportAllEndpoints%2A> method to return all endpoints in the imported metadata. Metadata that has been imported as service endpoints cannot be used to create a runtime or export metadata because the imported endpoints contain no managed type information. To use the metadata to create a client or service runtime or to generate metadata, you must first generate and compile code from the metadata and use that type information to create a new <xref:System.ServiceModel.Description.ContractDescription?displayProperty=fullName> object using <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A>.  
+ Implement the <xref:System.ServiceModel.Description.MetadataImporter.ImportAllEndpoints%2A> method to return all endpoints in the imported metadata. Metadata that has been imported as service endpoints cannot be used to create a runtime or export metadata because the imported endpoints contain no managed type information. To use the metadata to create a client or service runtime or to generate metadata, you must first generate and compile code from the metadata and use that type information to create a new <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> object using <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A>.  
   
  ]]></format>
         </remarks>
@@ -184,7 +184,7 @@
    
   
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.MetadataImporter.State%2A> property to add a custom <xref:System.Runtime.Serialization.XsdDataContractImporter?displayProperty=fullName> to import data structures in a particular way.  
+ The following example shows the use of the <xref:System.ServiceModel.Description.MetadataImporter.State%2A> property to add a custom <xref:System.Runtime.Serialization.XsdDataContractImporter?displayProperty=nameWithType> to import data structures in a particular way.  
   
  [!code-csharp[C_CustomWSDLExtensions#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/client.cs#8)]  
   

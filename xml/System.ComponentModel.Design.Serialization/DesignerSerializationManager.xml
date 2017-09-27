@@ -364,7 +364,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetType%2A> method will search the service provider for an <xref:System.ComponentModel.Design.ITypeResolutionService> and, if available, it will delegate to that service to resolve the type. If an <xref:System.ComponentModel.Design.ITypeResolutionService> is not available, <xref:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetType%2A> will call the <xref:System.Object.GetType%2A?displayProperty=fullName> method.  
+ The <xref:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetType%2A> method will search the service provider for an <xref:System.ComponentModel.Design.ITypeResolutionService> and, if available, it will delegate to that service to resolve the type. If an <xref:System.ComponentModel.Design.ITypeResolutionService> is not available, <xref:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetType%2A> will call the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

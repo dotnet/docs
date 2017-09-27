@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String)?displayProperty=fullName></li><li><xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String%2CSystem.Boolean)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String)?displayProperty=nameWithType></li><li><xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String%2CSystem.Boolean)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0044A</li><li>CD0044B</li></ul>|
 

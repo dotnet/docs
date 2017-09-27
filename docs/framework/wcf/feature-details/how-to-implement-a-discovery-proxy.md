@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # How to: Implement a Discovery Proxy
-This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the discovery feature in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], see [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md). A discovery proxy can be implemented by creating a class that extends the <xref:System.ServiceModel.Discovery.DiscoveryProxy> abstract class. There are a number of other support classes defined and used in this sample. `OnResolveAsyncResult`, `OnFindAsyncResult`, and `AsyncResult`. These classes implement the <xref:System.IAsyncResult> interface. [!INCLUDE[crabout](../../../../includes/crabout-md.md)]<xref:System.IAsyncResult> see [System.IAsyncResult interface](http://go.microsoft.com/fwlink/?LinkId=128519)  
+This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the discovery feature in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], see [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md). A discovery proxy can be implemented by creating a class that extends the <xref:System.ServiceModel.Discovery.DiscoveryProxy> abstract class. There are a number of other support classes defined and used in this sample. `OnResolveAsyncResult`, `OnFindAsyncResult`, and `AsyncResult`. These classes implement the <xref:System.IAsyncResult> interface. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] <xref:System.IAsyncResult> see [System.IAsyncResult interface](xref:System.IAsyncResult).
   
  Implementing a discovery proxy is broken down into three main parts in this topic:  
   
@@ -231,7 +231,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
   
 ### To define the methods that implement the discovery proxy functionality  
   
-1.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement%2A?displayProperty=fullName> method. This method is called when the discovery proxy receives an online announcement message.  
+1.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives an online announcement message.  
   
     ```  
     // OnBeginOnlineAnnouncement method is called when a Hello message is received by the Proxy  
@@ -242,7 +242,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
             }  
     ```  
   
-2.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement%2A?displayProperty=fullName> method. This method is called when the discovery proxy finishes processing an announcement message.  
+2.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an announcement message.  
   
     ```  
     protected override void OnEndOnlineAnnouncement(IAsyncResult result)  
@@ -251,7 +251,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
             }  
     ```  
   
-3.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement%2A?displayProperty=fullName> method. This method is called with the discovery proxy receives an offline announcement message.  
+3.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called with the discovery proxy receives an offline announcement message.  
   
     ```  
     // OnBeginOfflineAnnouncement method is called when a Bye message is received by the Proxy  
@@ -262,7 +262,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
             }  
     ```  
   
-4.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement%2A?displayProperty=fullName> method. This method is called when the discovery proxy finishes processing an offline announcement message.  
+4.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an offline announcement message.  
   
     ```  
     protected override void OnEndOfflineAnnouncement(IAsyncResult result)  
@@ -271,7 +271,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
             }  
     ```  
   
-5.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A?displayProperty=fullName> method. This method is called when the discovery proxy receives a find request.  
+5.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a find request.  
   
     ```  
     // OnBeginFind method is called when a Probe request message is received by the Proxy  
@@ -290,7 +290,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
     }  
     ```  
   
-6.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A?displayProperty=fullName> method. This method is called when the discovery proxy finishes processing a find request.  
+6.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a find request.  
   
     ```  
     protected override void OnEndFind(IAsyncResult result)  
@@ -299,7 +299,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
             }  
     ```  
   
-7.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginResolve%2A?displayProperty=fullName> method. This method is called when the discovery proxy receives a resolve message.  
+7.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a resolve message.  
   
     ```  
     // OnBeginFind method is called when a Resolve request message is received by the Proxy  
@@ -316,7 +316,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
     }  
     ```  
   
-8.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve%2A?displayProperty=fullName> method. This method is called when the discovery proxy finishes processing a resolve message.  
+8.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a resolve message.  
   
     ```  
     protected override EndpointDiscoveryMetadata OnEndResolve(IAsyncResult result)  

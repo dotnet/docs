@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Script.Serialization.SimpleTypeResolver.ResolveType%2A> method calls the <xref:System.Type.GetType%2A?displayProperty=fullName> method to resolve the type.  
+ The <xref:System.Web.Script.Serialization.SimpleTypeResolver.ResolveType%2A> method calls the <xref:System.Type.GetType%2A?displayProperty=nameWithType> method to resolve the type.  
   
  ]]></format>
         </remarks>

@@ -65,7 +65,7 @@ This topic describes the attributes that are most commonly used in Visual Basic 
 |<xref:System.Reflection.AssemblyFlagsAttribute>|Specifies whether an assembly supports side-by-side execution on the same computer, in the same process, or in the same application domain.|  
   
 ### Informational Attributes  
- You can use informational attributes to provide additional company or product information for an assembly. The following table shows the informational attributes defined in the <xref:System.Reflection?displayProperty=fullName> namespace.  
+ You can use informational attributes to provide additional company or product information for an assembly. The following table shows the informational attributes defined in the <xref:System.Reflection?displayProperty=nameWithType> namespace.  
   
 |Attribute|Purpose|  
 |---------------|-------------|  
@@ -78,7 +78,7 @@ This topic describes the attributes that are most commonly used in Visual Basic 
 |<xref:System.CLSCompliantAttribute>|Indicates whether the assembly is compliant with the Common Language Specification (CLS).|  
   
 ### Assembly Manifest Attributes  
- You can use assembly manifest attributes to provide information in the assembly manifest. This includes title, description, default alias, and configuration. The following table shows the assembly manifest attributes defined in the <xref:System.Reflection?displayProperty=fullName> namespace.  
+ You can use assembly manifest attributes to provide information in the assembly manifest. This includes title, description, default alias, and configuration. The following table shows the assembly manifest attributes defined in the <xref:System.Reflection?displayProperty=nameWithType> namespace.  
   
 |Attribute|Purpose|  
 |---------------|-------------|  
@@ -225,7 +225,7 @@ End Class
 ##  <a name="CallerInfo"></a> Caller Info Attributes  
  By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain the file path of the source code, the line number in the source code, and the member name of the caller.  
   
- To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace:  
+ To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace:  
   
 |Attribute|Description|Type|  
 |---|---|---|  

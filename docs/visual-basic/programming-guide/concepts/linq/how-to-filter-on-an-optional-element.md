@@ -115,9 +115,9 @@ Child Four Text
 ```  
   
 ## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=fullName>   
+ <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>   
  [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)   
  [XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)   
  [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)   

@@ -63,11 +63,11 @@ Whether you are writing a new Windows app for Windows 10 or you are migrating an
  **Methods that rely on reflection**  
  In some cases, the use of reflection in code is not obvious. Some common APIs or programming patterns aren't considered part of the reflection API but rely on reflection to execute successfully. This includes the following type instantiation and method construction methods:  
   
--   The <xref:System.Type.MakeGenericType%2A?displayProperty=fullName> method  
+-   The <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> method  
   
--   The <xref:System.Array.CreateInstance%2A?displayProperty=fullName> and <xref:System.Type.MakeArrayType%2A?displayProperty=fullName> methods  
+-   The <xref:System.Array.CreateInstance%2A?displayProperty=nameWithType> and <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType> methods  
   
--   The <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=fullName> method.  
+-   The <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method.  
   
  For more information, see [APIs That Rely on Reflection](../../../docs/framework/net-native/apis-that-rely-on-reflection.md).  
   

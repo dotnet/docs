@@ -42,7 +42,7 @@ Provides a property, event, and methods for interacting with the network to whic
  For more information, see [Performing Network Operations](../../../visual-basic/developing-apps/programming/computer-resources/performing-network-operations.md).  
   
 ## Requirements  
- **Namespace:** <xref:Microsoft.VisualBasic.Devices?displayProperty=fullName>  
+ **Namespace:** <xref:Microsoft.VisualBasic.Devices?displayProperty=nameWithType>  
   
  **Class:** <xref:Microsoft.VisualBasic.Devices.Network>  
   

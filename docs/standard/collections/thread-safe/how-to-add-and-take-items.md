@@ -34,5 +34,5 @@ This example shows how to add and remove items from a <xref:System.Collections.C
  [!code-vb[CDS_BlockingCollection#02](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_blockingcollection/vb/nonblockingbc.vb#02)]  
   
 ## See Also  
- <xref:System.Collections.Concurrent?displayProperty=fullName>   
+ <xref:System.Collections.Concurrent?displayProperty=nameWithType>   
  [BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)

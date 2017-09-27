@@ -45,7 +45,7 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
   
  In the course of converting an app from IL to native code, the .NET Native tool chain performs operations like the following:  
   
--   For certain code paths, it replaces code that relies on reflection and metadata with static native code. For example, if a value type does not override the <xref:System.ValueType.Equals%2A?displayProperty=fullName> method, the default test for equality uses reflection to retrieve <xref:System.Reflection.FieldInfo> objects that represent the value type's fields, then compares the field values of two instances. When compiling to native code, the .NET Native tool chain replaces the reflection code and metadata with a static comparison of the field values.  
+-   For certain code paths, it replaces code that relies on reflection and metadata with static native code. For example, if a value type does not override the <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> method, the default test for equality uses reflection to retrieve <xref:System.Reflection.FieldInfo> objects that represent the value type's fields, then compares the field values of two instances. When compiling to native code, the .NET Native tool chain replaces the reflection code and metadata with a static comparison of the field values.  
   
 -   Where possible, it attempts to eliminate all metadata.  
   

@@ -222,7 +222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IHierarchyData.Type%2A> property does not return the <xref:System.Type?displayProperty=fullName> of the object represented in an <xref:System.Web.UI.IHierarchyData> object. It returns a name used by data-bound controls to differentiate between items in a hierarchy that have different bindable properties.  
+ The <xref:System.Web.UI.IHierarchyData.Type%2A> property does not return the <xref:System.Type?displayProperty=nameWithType> of the object represented in an <xref:System.Web.UI.IHierarchyData> object. It returns a name used by data-bound controls to differentiate between items in a hierarchy that have different bindable properties.  
   
    
   

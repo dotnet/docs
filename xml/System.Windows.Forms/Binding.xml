@@ -76,7 +76,7 @@
   
  Controls that can be simple-bound feature a collection of <xref:System.Windows.Forms.Binding> objects in a <xref:System.Windows.Forms.ControlBindingsCollection>, which you can access through the control's <xref:System.Windows.Forms.Control.DataBindings%2A> property. You add a <xref:System.Windows.Forms.Binding> to the collection by calling the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method, thereby binding a property of the control to a property of an object (or to a property of the current object in a list).  
   
- You can simple-bind to any object that derives from the <xref:System.Windows.Forms.Control?displayProperty=fullName> class, for example, the following Windows controls:  
+ You can simple-bind to any object that derives from the <xref:System.Windows.Forms.Control?displayProperty=nameWithType> class, for example, the following Windows controls:  
   
 -   <xref:System.Windows.Forms.Button>  
   
@@ -187,11 +187,11 @@
   
  When you create a binding to a control's property, the new <xref:System.Windows.Forms.Binding> inspects the events exposed by the bound control and attaches to two particular events:  
   
--   <xref:System.Windows.Forms.Control.Validating?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>  
   
--   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=fullName>)  
+-   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=nameWithType>)  
   
- If you attempt to bind to a property that does not exist, an <xref:System.ArgumentException> will be thrown when the <xref:System.Windows.Forms.Binding> is added to the control's <xref:System.Windows.Forms.Control.DataBindings%2A?displayProperty=fullName> collection.  
+ If you attempt to bind to a property that does not exist, an <xref:System.ArgumentException> will be thrown when the <xref:System.Windows.Forms.Binding> is added to the control's <xref:System.Windows.Forms.Control.DataBindings%2A?displayProperty=nameWithType> collection.  
   
    
   
@@ -288,9 +288,9 @@
   
  When you create a binding to a control's property, the new <xref:System.Windows.Forms.Binding> inspects the events exposed by the bound control and attaches to two particular events:  
   
--   <xref:System.Windows.Forms.Control.Validating?displayProperty=fullName>.  
+-   <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>.  
   
--   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=fullName>)  
+-   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=nameWithType>)  
   
  ]]></format>
         </remarks>
@@ -351,9 +351,9 @@
   
  When you create a binding to a control's property, the new <xref:System.Windows.Forms.Binding> inspects the events exposed by the bound control and attaches to two particular events:  
   
--   <xref:System.Windows.Forms.Control.Validating?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>  
   
--   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=fullName>)  
+-   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=nameWithType>)  
   
  ]]></format>
         </remarks>
@@ -416,9 +416,9 @@
   
  When you create a binding to a control's property, the new <xref:System.Windows.Forms.Binding> inspects the events exposed by the bound control and attaches to two particular events:  
   
--   <xref:System.Windows.Forms.Control.Validating?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>  
   
--   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=fullName>)  
+-   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=nameWithType>)  
   
  ]]></format>
         </remarks>
@@ -483,9 +483,9 @@
   
  When you create a binding to a control's property, the new <xref:System.Windows.Forms.Binding> inspects the events exposed by the bound control and attaches to two particular events:  
   
--   <xref:System.Windows.Forms.Control.Validating?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>  
   
--   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=fullName>)  
+-   An event named *PropertyName*`Changed` (for example, <xref:System.Windows.Forms.Control.BackColorChanged?displayProperty=nameWithType>)  
   
  ]]></format>
         </remarks>
@@ -859,7 +859,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property will override the default formatting behavior, which uses the <xref:System.Windows.Forms.Application.CurrentCulture%2A?displayProperty=fullName> property setting.  
+ Setting this property will override the default formatting behavior, which uses the <xref:System.Windows.Forms.Application.CurrentCulture%2A?displayProperty=nameWithType> property setting.  
   
  ]]></format>
         </remarks>

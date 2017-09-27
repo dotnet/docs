@@ -531,7 +531,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddBeziers">
-      <MemberSignature Language="C#" Value="public void AddBeziers (System.Drawing.Point[] points);" />
+      <MemberSignature Language="C#" Value="public void AddBeziers (params System.Drawing.Point[] points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeziers(valuetype System.Drawing.Point[] points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddBeziers(System.Drawing.Point[])" />
       <MemberType>Method</MemberType>

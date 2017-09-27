@@ -16,11 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You define a tooltip for an element by setting the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property.  The ToolTip property takes one child. The content of the child can vary from a simple text string to more complex content such as a <xref:System.Windows.Controls.StackPanel> that has embedded text and <xref:System.Windows.Controls.Image> elements.  
+ You define a tooltip for an element by setting the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property.  The ToolTip property takes one child. The content of the child can vary from a simple text string to more complex content such as a <xref:System.Windows.Controls.StackPanel> that has embedded text and <xref:System.Windows.Controls.Image> elements.  
   
  You can define tooltip content as a <xref:System.Windows.Controls.ToolTip> object, but this is not required. When you do not define the tooltip content as a <xref:System.Windows.Controls.ToolTip> object, you can use the <xref:System.Windows.Controls.ToolTipService> properties to position and customize the tooltip content. Attached properties of the <xref:System.Windows.Controls.ToolTipService> class are used to determine the placement, behavior, and appearance of a tooltip. These properties are set on the element that defines the tooltip.  
   
- The <xref:System.Windows.Controls.ToolTip> class and the <xref:System.Windows.Controls.ToolTipService> class share many of the same properties that are used to customize a tooltip. If equivalent <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties are both set, the <xref:System.Windows.Controls.ToolTipService> property takes precedence. For example, if both the <xref:System.Windows.Controls.ToolTip.Placement%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property are set for a <xref:System.Windows.Controls.ToolTip?displayProperty=fullName> object, the value of the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property is used.  
+ The <xref:System.Windows.Controls.ToolTip> class and the <xref:System.Windows.Controls.ToolTipService> class share many of the same properties that are used to customize a tooltip. If equivalent <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties are both set, the <xref:System.Windows.Controls.ToolTipService> property takes precedence. For example, if both the <xref:System.Windows.Controls.ToolTip.Placement%2A?displayProperty=nameWithType> property and the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=nameWithType> property are set for a <xref:System.Windows.Controls.ToolTip?displayProperty=nameWithType> object, the value of the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=nameWithType> property is used.  
   
  The following <xref:System.Windows.Controls.ToolTipService> timing properties are only defined for the <xref:System.Windows.Controls.ToolTipService> class and are used by all tooltips:  
   
@@ -1232,14 +1232,14 @@
 ## Remarks  
  The <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event occurs immediately before a tooltip closes.  
   
- This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>.  
+ This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=nameWithType> and <xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=nameWithType>.  
   
  If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Closed> event is also raised when the tooltip closes.  
   
    
   
 ## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event. In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
+ The following example shows how to set an event handler for the <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event. In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=nameWithType>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
   
  [!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
  [!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  
@@ -1271,14 +1271,14 @@
 ## Remarks  
  The <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event occurs immediately before a tooltip opens. This event does not occur if the tooltip is not defined or if the tooltip content is set to null.  
   
- This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>.  
+ This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType> and <xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=nameWithType>.  
   
  If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Opened> event is also raised when the tooltip opens.  
   
    
   
 ## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> event.  In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
+ The following example shows how to set an event handler for the <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType> event.  In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
   
  [!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
  [!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  

@@ -328,7 +328,7 @@
 ## Remarks  
  When creating a <xref:System.Web.UI.WebControls.MenuItemBinding> object, you must specify the criteria for binding. The criteria indicate when a data item should be bound to a menu item. You can specify the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- When the data source contains multiple elements or tables, use the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property to specify the element or table to bind to a menu item. A data member specifies the type of the data item in the underlying data source, but can represent different information depending on the data source. Each data item in a hierarchical data source (represented by a <xref:System.Web.UI.IHierarchyData?displayProperty=fullName> object) exposes a <xref:System.Web.UI.IHierarchyData.Type%2A?displayProperty=fullName> property, which specifies the type of the data item. For example, the data member for an XML element specifies the name of the element. The following <xref:System.Web.UI.WebControls.MenuItemBinding> declaration binds the `<Book>` elements of an <xref:System.Web.UI.WebControls.XmlDataSource> control to all the menu items in the menu, regardless of the location in the hierarchy:  
+ When the data source contains multiple elements or tables, use the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property to specify the element or table to bind to a menu item. A data member specifies the type of the data item in the underlying data source, but can represent different information depending on the data source. Each data item in a hierarchical data source (represented by a <xref:System.Web.UI.IHierarchyData?displayProperty=nameWithType> object) exposes a <xref:System.Web.UI.IHierarchyData.Type%2A?displayProperty=nameWithType> property, which specifies the type of the data item. For example, the data member for an XML element specifies the name of the element. The following <xref:System.Web.UI.WebControls.MenuItemBinding> declaration binds the `<Book>` elements of an <xref:System.Web.UI.WebControls.XmlDataSource> control to all the menu items in the menu, regardless of the location in the hierarchy:  
   
 ```  
 <asp:MenuItemBinding DataMember="Book" TextField="Title" ValueField= "ISBN">  
@@ -622,7 +622,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.MenuItemBinding.Enabled%2A> property to set the <xref:System.Web.UI.WebControls.MenuItem.Enabled%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This setting is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When this property is set to `false`, the menu item is disabled and no pop-out image that indicates child items is displayed. Setting this property to `false` for a menu item essentially makes the menu item the end of that node, where no further levels are shown off of that node.  
+ Use the <xref:System.Web.UI.WebControls.MenuItemBinding.Enabled%2A> property to set the <xref:System.Web.UI.WebControls.MenuItem.Enabled%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This setting is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When this property is set to `false`, the menu item is disabled and no pop-out image that indicates child items is displayed. Setting this property to `false` for a menu item essentially makes the menu item the end of that node, where no further levels are shown off of that node.  
   
  ]]></format>
         </remarks>
@@ -848,7 +848,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrl%2A> property to specify the URL of a custom image to bind to the <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This image is shared with all <xref:System.Web.UI.WebControls.MenuItem> objects to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. The image is displayed next to a menu item's text and can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client's browser supports that format.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrl%2A> property to specify the URL of a custom image to bind to the <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This image is shared with all <xref:System.Web.UI.WebControls.MenuItem> objects to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. The image is displayed next to a menu item's text and can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client's browser supports that format.  
   
 > [!NOTE]
 >  You can override the image for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A> property directly.  
@@ -984,7 +984,7 @@
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrl%2A?displayProperty=fullName> property. This allows you to display the same image in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrl%2A?displayProperty=nameWithType> property. This allows you to display the same image in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrl%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField%2A> property takes precedence.  
@@ -1111,7 +1111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl%2A> property to specify the URL to bind to the <xref:System.Web.UI.WebControls.MenuItem.NavigateUrl%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This URL is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When the user clicks the menu item, the user is taken to the specified URL.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl%2A> property to specify the URL to bind to the <xref:System.Web.UI.WebControls.MenuItem.NavigateUrl%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This URL is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When the user clicks the menu item, the user is taken to the specified URL.  
   
 > [!NOTE]
 >  You can override the URL for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.NavigateUrl%2A> property directly.  
@@ -1247,7 +1247,7 @@
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.NavigateUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl%2A?displayProperty=fullName> property. This allows you to navigate to the same URL from each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.NavigateUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl%2A?displayProperty=nameWithType> property. This allows you to navigate to the same URL from each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField%2A> property takes precedence.  
@@ -1374,7 +1374,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrl%2A> property to specify the URL of a <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This URL is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrl%2A> property to specify the URL of a <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This URL is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  You can override the URL for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A> property directly.  
@@ -1415,14 +1415,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrlField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. When rendered, the <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A> property of each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied contains the corresponding value from the field. The image at the corresponding URL is displayed for each menu item.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrlField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. When rendered, the <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A> property of each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied contains the corresponding value from the field. The image at the corresponding URL is displayed for each menu item.  
   
 > [!NOTE]
 >  You can override the URL for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A> property directly.  
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrl%2A?displayProperty=fullName> property. This allows you to navigate to the same URL from each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.PopOutImageUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrl%2A?displayProperty=nameWithType> property. This allows you to navigate to the same URL from each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrl%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrlField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.PopOutImageUrlField%2A> property takes precedence.  
@@ -1456,7 +1456,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.Selectable%2A> property to set the <xref:System.Web.UI.WebControls.MenuItem.Selectable%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This setting is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When this property is set to `false`, the menu item is not "clickable" but any child items are displayed.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.Selectable%2A> property to set the <xref:System.Web.UI.WebControls.MenuItem.Selectable%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This setting is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When this property is set to `false`, the menu item is not "clickable" but any child items are displayed.  
   
  ]]></format>
         </remarks>
@@ -1533,7 +1533,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.SeparatorImageUrl%2A> property to specify the URL of a <xref:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This URL is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.SeparatorImageUrl%2A> property to specify the URL of a <xref:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This URL is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  You can override the URL for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl%2A> property directly.  
@@ -1581,7 +1581,7 @@
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.SeparatorImageUrl%2A?displayProperty=fullName> property. This allows you to navigate to the same URL from each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.SeparatorImageUrl%2A?displayProperty=nameWithType> property. This allows you to navigate to the same URL from each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.SeparatorImageUrl%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.SeparatorImageUrlField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.SeparatorImageUrlField%2A> property takes precedence.  
@@ -1755,7 +1755,7 @@
  When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to specify the window or frame in which to display the Web content linked to a menu item when that menu item is clicked.  
   
 > [!NOTE]
->  Setting this property overrides the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.Menu> control for the menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. You can selectively override this property by setting the <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=fullName> property of each menu item directly.  
+>  Setting this property overrides the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.Menu> control for the menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. You can selectively override this property by setting the <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=nameWithType> property of each menu item directly.  
   
  Target values must begin with a letter in the range of A through Z (case-insensitive), except for certain special values that begin with an underscore, as shown in the following table.  
   
@@ -1894,9 +1894,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.TargetField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.TargetField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object.  
   
- The <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=fullName> property specifies the window or frame in which to display the Web content linked to a menu item when that menu item is clicked. Values must begin with a letter in the range of A through Z (case-insensitive), except for certain special values that begin with an underscore, as shown in the following table.  
+ The <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=nameWithType> property specifies the window or frame in which to display the Web content linked to a menu item when that menu item is clicked. Values must begin with a letter in the range of A through Z (case-insensitive), except for certain special values that begin with an underscore, as shown in the following table.  
   
 |Target value|Description|  
 |------------------|-----------------|  
@@ -1910,10 +1910,10 @@
 >   
 >  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
- Note that setting this property overrides the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.Menu> control for this menu item. Setting the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=fullName> property to open a new window can make it difficult for users of assistive technology devices to use the page.  
+ Note that setting this property overrides the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.Menu> control for this menu item. Setting the <xref:System.Web.UI.WebControls.Menu.Target%2A?displayProperty=nameWithType> property to open a new window can make it difficult for users of assistive technology devices to use the page.  
   
 > [!NOTE]
->  You can override enabling an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=fullName> property directly.  
+>  You can override enabling an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.Target%2A?displayProperty=nameWithType> property directly.  
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
@@ -1951,7 +1951,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> property to specify the text to bind to the <xref:System.Web.UI.WebControls.MenuItem.Text%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This text is displayed in a menu item and is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> property to specify the text to bind to the <xref:System.Web.UI.WebControls.MenuItem.Text%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This text is displayed in a menu item and is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  You can override the text for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property directly.  
@@ -2093,7 +2093,7 @@
   
  You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
- Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A?displayProperty=fullName> property. This allows you to display the same text in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A?displayProperty=nameWithType> property. This allows you to display the same text in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> property takes precedence.  
@@ -2217,7 +2217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTip%2A> property to specify the text to bind to the <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This ToolTip is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When the user positions the mouse pointer over a menu item, the specified text is displayed.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTip%2A> property to specify the text to bind to the <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This ToolTip is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. When the user positions the mouse pointer over a menu item, the specified text is displayed.  
   
 > [!NOTE]
 >  You can override the ToolTip for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A> property directly.  
@@ -2355,7 +2355,7 @@
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTip%2A?displayProperty=fullName> property. This allows you to display the same ToolTip for each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTip%2A?displayProperty=nameWithType> property. This allows you to display the same ToolTip for each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTip%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTipField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTipField%2A> property takes precedence.  
@@ -2498,7 +2498,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.Value%2A> property to specify the value to bind to the <xref:System.Web.UI.WebControls.MenuItem.Value%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This value is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. The specified value is not displayed in a menu item and is used to store any additional data about a menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied, such as data used for handling postback events.  
+ When the <xref:System.Web.UI.WebControls.Menu> control is bound to a data source, use the <xref:System.Web.UI.WebControls.MenuItemBinding.Value%2A> property to specify the value to bind to the <xref:System.Web.UI.WebControls.MenuItem.Value%2A?displayProperty=nameWithType> property of a <xref:System.Web.UI.WebControls.MenuItem> object. This value is shared with all menu items to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. The specified value is not displayed in a menu item and is used to store any additional data about a menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied, such as data used for handling postback events.  
   
 > [!NOTE]
 >  You can override the value for an individual menu item by setting its <xref:System.Web.UI.WebControls.MenuItem.Value%2A> property directly.  
@@ -2636,7 +2636,7 @@
   
  If the data source contains multiple tables or attributes, you must first establish the binding criteria by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property, the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property, or both.  
   
- Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.Value%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Value%2A?displayProperty=fullName> property. This allows you to specify the same value for each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
+ Instead of using this property to bind the <xref:System.Web.UI.WebControls.MenuItem.Value%2A> property of a <xref:System.Web.UI.WebControls.MenuItem> object to a field, you can also bind it to a static value by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Value%2A?displayProperty=nameWithType> property. This allows you to specify the same value for each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItemBinding.Value%2A> and <xref:System.Web.UI.WebControls.MenuItemBinding.ValueField%2A> properties are both set, the <xref:System.Web.UI.WebControls.MenuItemBinding.ValueField%2A> property takes precedence.  

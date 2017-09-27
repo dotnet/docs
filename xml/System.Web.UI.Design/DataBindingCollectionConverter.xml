@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This type converter calls the base <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName> method for all destination types except <xref:System.String>, for which an empty string ("") is returned.  
+ This type converter calls the base <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=nameWithType> method for all destination types except <xref:System.String>, for which an empty string ("") is returned.  
   
    
   

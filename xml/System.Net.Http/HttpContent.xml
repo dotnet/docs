@@ -543,7 +543,7 @@
     </Member>
     <Member MemberName="TryComputeLength">
       <MemberSignature Language="C#" Value="protected abstract bool TryComputeLength (out long length);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryComputeLength(int64 length) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryComputeLength([out] int64&amp; length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.TryComputeLength(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

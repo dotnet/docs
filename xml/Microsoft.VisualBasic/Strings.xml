@@ -223,7 +223,7 @@
 ## Remarks  
  The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
   
- `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+ `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=nameWithType> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
   
  The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
   
@@ -272,7 +272,7 @@
 ## Remarks  
  The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
   
- `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+ `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=nameWithType> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
   
  The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
   
@@ -440,7 +440,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.String.Format%2A?displayProperty=fullName> method also provides similar functionality.  
+ The <xref:System.String.Format%2A?displayProperty=nameWithType> method also provides similar functionality.  
   
  If you are formatting a nonlocalized numeric string, you should use a user-defined numeric format to ensure that you get the look you want.  
   
@@ -1303,7 +1303,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -1344,7 +1344,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -2752,7 +2752,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
  The `Conversion` argument settings are:  
   
@@ -3015,7 +3015,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -3056,7 +3056,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   

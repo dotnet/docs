@@ -516,7 +516,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataBoundControl> class calls the <xref:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState%2A?displayProperty=fullName> method to set the initialized state of the data-bound control and sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true` if the HTTP request is not a postback.  
+ The <xref:System.Web.UI.WebControls.DataBoundControl> class calls the <xref:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState%2A?displayProperty=nameWithType> method to set the initialized state of the data-bound control and sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true` if the HTTP request is not a postback.  
   
  ]]></format>
         </remarks>
@@ -546,7 +546,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataBoundControl.OnPagePreLoad%2A> method is overridden by the <xref:System.Web.UI.WebControls.DataBoundControl> class to set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A?displayProperty=fullName> property to `true` in cases where the HTTP request is a postback and view state is enabled but the data-bound control has not yet been bound. This scenario is common with controls such as <xref:System.Web.UI.WebControls.Wizard> and <xref:System.Web.UI.WebControls.MultiView>, where the visibility of the control is changed at run time.  
+ The <xref:System.Web.UI.WebControls.DataBoundControl.OnPagePreLoad%2A> method is overridden by the <xref:System.Web.UI.WebControls.DataBoundControl> class to set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A?displayProperty=nameWithType> property to `true` in cases where the HTTP request is a postback and view state is enabled but the data-bound control has not yet been bound. This scenario is common with controls such as <xref:System.Web.UI.WebControls.Wizard> and <xref:System.Web.UI.WebControls.MultiView>, where the visibility of the control is changed at run time.  
   
  ]]></format>
         </remarks>

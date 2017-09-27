@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: 87a76f8a-0b58-4791-90ea-2fe0a30416c9
 ---
 # Query a collection of objects
@@ -26,4 +25,5 @@ This example shows how to perform a simple query over a list of `Student` object
   
 
 ## See also  
- [LINQ Query Expressions](index.md)
+ [LINQ Query Expressions](index.md)   
+ [Interpolated Strings](../language-reference/keywords/interpolated-strings.md)

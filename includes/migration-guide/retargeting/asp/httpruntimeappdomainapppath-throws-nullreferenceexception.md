@@ -7,5 +7,5 @@
 |Scope|Edge|
 |Version|4.6.2|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Web.HttpRuntime.AppDomainAppPath?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Web.HttpRuntime.AppDomainAppPath?displayProperty=nameWithType></li></ul>|
 

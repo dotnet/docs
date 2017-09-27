@@ -1072,7 +1072,7 @@
   
  You can encode a URL using with the <xref:System.Web.HttpUtility.UrlEncode%2A> method or the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method. However, the methods return different results. The <xref:System.Web.HttpUtility.UrlEncode%2A> method converts each space character to a plus character (+). The <xref:System.Web.HttpUtility.UrlPathEncode%2A> method converts each space character into the string "%20", which represents a space in hexadecimal notation. Use the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method when you encode the path portion of a URL in order to guarantee a consistent decoded URL, regardless of which platform or browser performs the decoding.  
   
- The <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method uses UTF-8 encoding by default. Therefore, using the <xref:System.Web.HttpUtility.UrlEncode%2A> method provides the same results as using the <xref:System.Web.HttpUtility.UrlEncode%2A> method and specifying <xref:System.Text.Encoding.UTF8%2A> as the second parameter.  
+ The <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=nameWithType> method uses UTF-8 encoding by default. Therefore, using the <xref:System.Web.HttpUtility.UrlEncode%2A> method provides the same results as using the <xref:System.Web.HttpUtility.UrlEncode%2A> method and specifying <xref:System.Text.Encoding.UTF8%2A> as the second parameter.  
   
  <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses the <xref:System.Web.HttpUtility.UrlEncode%2A> method to encode strings.  
   

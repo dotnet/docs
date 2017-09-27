@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.ApplyFormatInEditMode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.ApplyFormatInEditMode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.ConvertEmptyStringToNull%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.ConvertEmptyStringToNull%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
@@ -187,7 +187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the <xref:System.Web.UI.WebControls.CheckBoxField.CopyProperties%2A> method.  
   
  ]]></format>
         </remarks>
@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to create an empty <xref:System.Web.UI.WebControls.CheckBoxField> object to which the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object can be copied.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to create an empty <xref:System.Web.UI.WebControls.CheckBoxField> object to which the properties of the current <xref:System.Web.UI.WebControls.CheckBoxField> object can be copied.  
   
  ]]></format>
         </remarks>
@@ -285,7 +285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.DataFormatString%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.DataFormatString%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
@@ -326,7 +326,7 @@
 > [!NOTE]
 >  This method is used primarily by control developers.  
   
- This method does not have a return value. Instead, the field values are returned by reference through the <xref:System.Collections.IDictionary?displayProperty=fullName> object passed in for the `dictionary` parameter. After the method has been called, iterate through the <xref:System.Collections.IDictionary?displayProperty=fullName> object to access the field values.  
+ This method does not have a return value. Instead, the field values are returned by reference through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object passed in for the `dictionary` parameter. After the method has been called, iterate through the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object to access the field values.  
   
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.DataControlFieldCell> object contains read-only field values, you must pass in `true` for the `includeReadOnly` parameter to include those values.  
@@ -395,7 +395,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.HtmlEncode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.HtmlEncode%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>
@@ -499,7 +499,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CheckBoxField.NullDisplayText%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=fullName> exception.  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.NullDisplayText%2A> property is inherited from the <xref:System.Web.UI.WebControls.BoundField> class, but is not applicable to the <xref:System.Web.UI.WebControls.CheckBoxField> class. Any attempt to access the value of this property will throw a <xref:System.NotSupportedException?displayProperty=nameWithType> exception.  
   
  ]]></format>
         </remarks>

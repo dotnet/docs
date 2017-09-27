@@ -87,7 +87,7 @@
   
  Pass the <xref:System.AddIn.Hosting.AddInProcess> object obtained with this property to the appropriate <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method overload.  
   
- If you want to activate them in the same domain in an external process you should pass the <xref:System.AddIn.Hosting.AddInEnvironment> object directly to the <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInEnvironment%29?displayProperty=fullName> method overload.  
+ If you want to activate them in the same domain in an external process you should pass the <xref:System.AddIn.Hosting.AddInEnvironment> object directly to the <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInEnvironment%29?displayProperty=nameWithType> method overload.  
   
  ]]></format>
         </remarks>

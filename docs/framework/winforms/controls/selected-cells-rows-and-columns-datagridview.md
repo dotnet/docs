@@ -55,7 +55,7 @@ You can get the selected cells, rows, or columns from a <xref:System.Windows.For
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   
--   References to the <xref:System?displayProperty=fullName>, <xref:System.Windows.Forms?displayProperty=fullName>, and <xref:System.Text?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Text?displayProperty=nameWithType> assemblies.  
   
 ## Robust Programming  
  The collections described in this topic do not perform efficiently when large numbers of cells, rows, or columns are selected. For more information about using these collections with large amounts of data, see [Best Practices for Scaling the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  

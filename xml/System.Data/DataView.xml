@@ -2820,7 +2820,7 @@ New table name: FilteredTable
       </Docs>
     </Member>
     <Member MemberName="ToTable">
-      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (bool distinct, string[] columnNames);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (bool distinct, params string[] columnNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ToTable(bool distinct, string[] columnNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataView.ToTable(System.Boolean,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2904,7 +2904,7 @@ New table name: NewTable
       </Docs>
     </Member>
     <Member MemberName="ToTable">
-      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (string tableName, bool distinct, string[] columnNames);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (string tableName, bool distinct, params string[] columnNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ToTable(string tableName, bool distinct, string[] columnNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataView.ToTable(System.String,System.Boolean,System.String[])" />
       <MemberType>Method</MemberType>

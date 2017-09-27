@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.SelectionRangeConverter> class is specialized to convert between the types <xref:System.String> and <xref:System.Windows.Forms.SelectionRange>. As a result, the <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertFrom%2A> method returns `true` if the `sourceType` parameter is of type <xref:System.String>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=fullName>.  
+ The <xref:System.Windows.Forms.SelectionRangeConverter> class is specialized to convert between the types <xref:System.String> and <xref:System.Windows.Forms.SelectionRange>. As a result, the <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertFrom%2A> method returns `true` if the `sourceType` parameter is of type <xref:System.String>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertTo%2A> method returns `true` if the `destinationType` parameter is of type <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=fullName>.  
+ The <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertTo%2A> method returns `true` if the `destinationType` parameter is of type <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -301,7 +301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of this method does not use the `context` or `value` parameters, but simply refers the call to the TypeDescriptor.<xref:System.ComponentModel.TypeDescriptor.GetProperties%28System.Type%2CSystem.Attribute%5B%5D%29?displayProperty=fullName> method.  
+ The default implementation of this method does not use the `context` or `value` parameters, but simply refers the call to the TypeDescriptor.<xref:System.ComponentModel.TypeDescriptor.GetProperties%28System.Type%2CSystem.Attribute%5B%5D%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

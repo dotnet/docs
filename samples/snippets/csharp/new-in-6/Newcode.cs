@@ -35,7 +35,7 @@ namespace NewStyle
         public ICollection<double> Grades { get; } = new List<double>();
         // </Initialization>
         // <ReadWriteInitialization>
-        public Standing YearInSchool { get; set;} = Standing.Freshman;
+        public Standing YearInSchool { get; set; } = Standing.Freshman;
         // </ReadWriteInitialization>
 
         // <FullNameExpressionMember>

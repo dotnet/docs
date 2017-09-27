@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.6|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=fullName></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=nameWithType></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0078</li></ul>|
 

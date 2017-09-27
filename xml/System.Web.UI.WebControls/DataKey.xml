@@ -25,9 +25,9 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataKey> class is used to represent the primary key for a record in a data-bound control. The primary key for a record can be composed of one of more fields from the data source. Although the <xref:System.Web.UI.WebControls.DataKey> class is not a collection, it can store multiple key field values. The key field values are populated when one of the constructors for the <xref:System.Web.UI.WebControls.DataKey> class is called. You can retrieve a key field value from a <xref:System.Web.UI.WebControls.DataKey> object in the following ways:  
   
--   Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29?displayProperty=fullName> property to retrieve a key field value at a specific index in the <xref:System.Web.UI.WebControls.DataKey> object.  
+-   Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29?displayProperty=nameWithType> property to retrieve a key field value at a specific index in the <xref:System.Web.UI.WebControls.DataKey> object.  
   
--   Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29?displayProperty=fullName> property to retrieve a key field value of a specific field.  
+-   Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29?displayProperty=nameWithType> property to retrieve a key field value of a specific field.  
   
 -   Use the <xref:System.Web.UI.WebControls.DataKey.Value%2A> property to retrieve the value of the key field at index 0 in the <xref:System.Web.UI.WebControls.DataKey> object. This property is often used as a shortcut to retrieve the key value of a record when the primary key contains only one field.  
   

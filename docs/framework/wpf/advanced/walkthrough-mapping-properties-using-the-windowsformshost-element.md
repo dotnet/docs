@@ -151,8 +151,8 @@ This walkthrough shows you how to use the              <xref:System.Windows.Form
 2.  Press F5 to build and run the application. Click the check box to see the effect of the                                  <xref:System.Windows.FrameworkElement.FlowDirection%2A> mapping. When you click the check box, the layout reverses its left-right orientation.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
  [Windows Forms and WPF Property Mapping](../../../../docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md)   
  [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)   

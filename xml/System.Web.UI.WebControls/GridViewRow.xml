@@ -25,7 +25,7 @@
 |Row type|Description|  
 |--------------|-----------------|  
 |`DataRow`|A data row in the <xref:System.Web.UI.WebControls.GridView> control.|  
-|`EmptyDataRow`|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when the <xref:System.Web.UI.WebControls.GridView> control has no records to display and the <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A?displayProperty=fullName> template is not `null`.|  
+|`EmptyDataRow`|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when the <xref:System.Web.UI.WebControls.GridView> control has no records to display and the <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A?displayProperty=nameWithType> template is not `null`.|  
 |`Footer`|The footer row in the <xref:System.Web.UI.WebControls.GridView> control.|  
 |`Header`|The header row in the <xref:System.Web.UI.WebControls.GridView> control.|  
 |`Pager`|A pager row in the <xref:System.Web.UI.WebControls.GridView> control.|  

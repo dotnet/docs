@@ -80,7 +80,7 @@ Holds data in a format you define. The `Structure` statement defines the format.
   
 -   **Type Characters.** Structure data types have no literal type character or identifier type character.  
   
--   **Framework Type.** There is no corresponding type in the .NET Framework. All structures inherit from the .NET Framework class <xref:System.ValueType?displayProperty=fullName>, but no individual structure corresponds to <xref:System.ValueType?displayProperty=fullName>.  
+-   **Framework Type.** There is no corresponding type in the .NET Framework. All structures inherit from the .NET Framework class <xref:System.ValueType?displayProperty=nameWithType>, but no individual structure corresponds to <xref:System.ValueType?displayProperty=nameWithType>.  
   
 ## Example  
  The following paradigm shows the outline of the declaration of a structure.  

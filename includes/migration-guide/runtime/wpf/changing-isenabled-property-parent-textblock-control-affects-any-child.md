@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.6.2|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.UIElement.IsEnabled?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.UIElement.IsEnabled?displayProperty=nameWithType></li></ul>|
 

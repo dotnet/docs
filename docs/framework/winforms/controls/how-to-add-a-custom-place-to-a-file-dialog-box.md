@@ -43,5 +43,5 @@ The default open and save dialog boxes on [!INCLUDE[wiprlhext](../../../../inclu
   
 ## See Also  
  <xref:System.Windows.Forms.FileDialog>   
- <xref:System.Windows.Forms.FileDialogCustomPlacesCollection.Add%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.FileDialogCustomPlacesCollection.Add%2A?displayProperty=nameWithType>   
  [Known Folder GUIDs for File Dialog Custom Places](../../../../docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md)

@@ -61,7 +61,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
-      <MemberSignature Language="C#" Value="protected abstract System.Activities.Presentation.Model.ModelItem CreateItem (Type itemType, System.Activities.Presentation.Model.CreateOptions options, object[] arguments);" />
+      <MemberSignature Language="C#" Value="protected abstract System.Activities.Presentation.Model.ModelItem CreateItem (Type itemType, System.Activities.Presentation.Model.CreateOptions options, params object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem CreateItem(class System.Type itemType, valuetype System.Activities.Presentation.Model.CreateOptions options, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelService.CreateItem(System.Type,System.Activities.Presentation.Model.CreateOptions,System.Object[])" />
       <MemberType>Method</MemberType>

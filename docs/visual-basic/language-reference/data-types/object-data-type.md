@@ -48,7 +48,7 @@ Holds addresses that refer to objects. You can assign any reference type (string
  The default value of `Object` is `Nothing` (a null reference).  
   
 ## Data Types  
- You can assign a variable, constant, or expression of any data type to an `Object` variable. To determine the data type an `Object` variable currently refers to, you can use the <xref:System.Type.GetTypeCode%2A> method of the <xref:System.Type?displayProperty=fullName> class. The following example illustrates this.  
+ You can assign a variable, constant, or expression of any data type to an `Object` variable. To determine the data type an `Object` variable currently refers to, you can use the <xref:System.Type.GetTypeCode%2A> method of the <xref:System.Type?displayProperty=nameWithType> class. The following example illustrates this.  
   
 ```  
 Dim myObject As Object  
@@ -70,13 +70,13 @@ datTyp = Type.GetTypeCode(myObject.GetType())
   
      When you declare an object variable, try to use a specific class type, for example <xref:System.OperatingSystem>, instead of the generalized `Object` type. You should also use the most specific class available, such as <xref:System.Windows.Forms.TextBox> instead of <xref:System.Windows.Forms.Control>, so that you can access its properties and methods. You can usually use the **Classes** list in the **Object Browser** to find available class names.  
   
--   **Widening.** All data types and all reference types widen to the `Object` data type. This means you can convert any type to `Object` without encountering a <xref:System.OverflowException?displayProperty=fullName> error.  
+-   **Widening.** All data types and all reference types widen to the `Object` data type. This means you can convert any type to `Object` without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
   
      However, if you convert between value types and `Object`, Visual Basic performs operations called *boxing* and *unboxing*, which make execution slower.  
   
 -   **Type Characters.** `Object` has no literal type character or identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Object?displayProperty=fullName> class.  
+-   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Object?displayProperty=nameWithType> class.  
   
 ## Example  
  The following example illustrates an `Object` variable pointing to an object instance.  

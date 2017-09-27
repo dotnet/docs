@@ -502,7 +502,7 @@ Various typographic qualities of two different glyph characters
     </Member>
     <Member MemberName="GetCaretCharacterHitFromDistance">
       <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.CharacterHit GetCaretCharacterHitFromDistance (double distance, out bool isInside);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetCaretCharacterHitFromDistance(float64 distance, bool isInside) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetCaretCharacterHitFromDistance(float64 distance, [out] bool&amp; isInside) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetCaretCharacterHitFromDistance(System.Double,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

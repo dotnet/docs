@@ -774,7 +774,7 @@
 ## Examples  
  The following example enumerates the files under a specified directory and uses a LINQ query to return the names of all files that were created before 2009 by checking the value of the <xref:System.IO.FileSystemInfo.CreationTimeUtc%2A> property.  
   
- If you only need the names of the files, use the static <xref:System.IO.Directory> class for better performance. For an example, see the <xref:System.IO.Directory.EnumerateFiles%28System.String%29?displayProperty=fullName> method.  
+ If you only need the names of the files, use the static <xref:System.IO.Directory> class for better performance. For an example, see the <xref:System.IO.Directory.EnumerateFiles%28System.String%29?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.IO.DirectoryInfo.EnumFiles#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumfiles/cs/program.cs#1)]
  [!code-vb[System.IO.DirectoryInfo.EnumFiles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumfiles/vb/module1.vb#1)]  
@@ -1293,7 +1293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method overload is equivalent to calling the <xref:System.IO.Directory.GetAccessControl%2A> method overload and specifying the access control sections <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> (<xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=fullName> in Visual Basic).  
+ Calling this method overload is equivalent to calling the <xref:System.IO.Directory.GetAccessControl%2A> method overload and specifying the access control sections <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> &#124; <xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> (<xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType>`Or`<xref:System.Security.AccessControl.AccessControlSections?displayProperty=nameWithType> in Visual Basic).  
   
  Use the <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for the current file.  
   
@@ -1934,7 +1934,7 @@
 ## Remarks  
  If there are no files or directories in the <xref:System.IO.DirectoryInfo>, this method returns an empty array. This method is not recursive.  
   
- For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=fullName> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
+ For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=nameWithType> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
   
  This method pre-populates the values of the following <xref:System.IO.FileSystemInfo> properties:  
   
@@ -2009,7 +2009,7 @@
   
  This method is not recursive.  
   
- For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=fullName> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
+ For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=nameWithType> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
   
  Wild cards are permitted. For example, the `searchPattern` string "*t" searches for all directory names in `path` ending with the letter "t". The `searchPattern` string "s\*" searches for all directory names in `path` beginning with the letter "s".  
   
@@ -2094,7 +2094,7 @@
   
  Characters other than the wildcard are literal characters. For example, the  string "*t" searches for all names in  ending with the letter "t". ". The `searchPattern` string "s\*" searches for all names in `path` beginning with the letter "s".  
   
- For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=fullName> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
+ For subdirectories, the <xref:System.IO.FileSystemInfo> objects returned by this method can be cast to the derived class <xref:System.IO.DirectoryInfo>. Use the <xref:System.IO.FileAttributes> value returned by the <xref:System.IO.FileSystemInfo.Attributes%2A?displayProperty=nameWithType> property to determine whether the <xref:System.IO.FileSystemInfo> represents a file or a directory.  
   
  This method pre-populates the values of the following <xref:System.IO.FileSystemInfo> properties:  
   

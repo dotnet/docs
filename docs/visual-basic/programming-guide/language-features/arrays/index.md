@@ -253,11 +253,11 @@ Dim prices(3, 4, 5) As Long
 ##  <a name="BKMK_ArrayTypes"></a> Array Types and Other Types  
  Every array has a data type, but it differs from the data type of its elements. There is no single data type for all arrays. Instead, the data type of an array is determined by the number of dimensions, or *rank*, of the array, and the data type of the elements in the array. Two array variables are considered to be of the same data type only when they have the same rank and their elements have the same data type. The lengths of the dimensions in an array do not influence the array data type.  
   
- Every array inherits from the <xref:System.Array?displayProperty=fullName> class, and you can declare a variable to be of type `Array`, but you cannot create an array of type `Array`. Also, the [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md) cannot operate on a variable declared as type `Array`. For these reasons, and for type safety, it is advisable to declare every array as a specific type, such as `Integer` in the preceding example.  
+ Every array inherits from the <xref:System.Array?displayProperty=nameWithType> class, and you can declare a variable to be of type `Array`, but you cannot create an array of type `Array`. Also, the [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md) cannot operate on a variable declared as type `Array`. For these reasons, and for type safety, it is advisable to declare every array as a specific type, such as `Integer` in the preceding example.  
   
  You can find out the data type of either an array or its elements in several ways.  
   
--   You can call the <xref:System.Object.GetType%2A?displayProperty=fullName> method on the variable to receive a <xref:System.Type> object for the run-time type of the variable. The <xref:System.Type> object holds extensive information in its properties and methods.  
+-   You can call the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method on the variable to receive a <xref:System.Type> object for the run-time type of the variable. The <xref:System.Type> object holds extensive information in its properties and methods.  
   
 -   You can pass the variable to the <xref:Microsoft.VisualBasic.Information.TypeName%2A> function to receive a `String` containing the name of run-time type.  
   
@@ -274,12 +274,12 @@ Dim prices(3, 4, 5) As Long
   
  For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.  
   
- If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.  
+ If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.  
   
  For more information about collections, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
 ### Example  
- The following example uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=fullName> to create a list collection of `Customer` objects.  
+ The following example uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> to create a list collection of `Customer` objects.  
   
  [!code-vb[VbVbalrArrays#1](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#1)]  
   

@@ -1221,7 +1221,7 @@
     </Member>
     <Member MemberName="Decompose">
       <MemberSignature Language="C#" Value="public static bool Decompose (System.Numerics.Matrix4x4 matrix, out System.Numerics.Vector3 scale, out System.Numerics.Quaternion rotation, out System.Numerics.Vector3 translation);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Decompose(valuetype System.Numerics.Matrix4x4 matrix, valuetype System.Numerics.Vector3 scale, valuetype System.Numerics.Quaternion rotation, valuetype System.Numerics.Vector3 translation) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Decompose(valuetype System.Numerics.Matrix4x4 matrix, [out] valuetype System.Numerics.Vector3&amp; scale, [out] valuetype System.Numerics.Quaternion&amp; rotation, [out] valuetype System.Numerics.Vector3&amp; translation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Decompose(System.Numerics.Matrix4x4,System.Numerics.Vector3@,System.Numerics.Quaternion@,System.Numerics.Vector3@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1430,7 +1430,7 @@
     </Member>
     <Member MemberName="Invert">
       <MemberSignature Language="C#" Value="public static bool Invert (System.Numerics.Matrix4x4 matrix, out System.Numerics.Matrix4x4 result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Invert(valuetype System.Numerics.Matrix4x4 matrix, valuetype System.Numerics.Matrix4x4 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Invert(valuetype System.Numerics.Matrix4x4 matrix, [out] valuetype System.Numerics.Matrix4x4&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Invert(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

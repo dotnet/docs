@@ -35,7 +35,7 @@
   <Members>
     <Member MemberName="AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt;">
       <MemberSignature Language="C#" Value="public void AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.INotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitOnCompleted&lt;(class System.Runtime.CompilerServices.INotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter awaiter, !!TStateMachine stateMachine) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitOnCompleted&lt;(class System.Runtime.CompilerServices.INotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter&amp; awaiter, !!TStateMachine&amp; stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitOnCompleted``2(``0@,``1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -83,7 +83,7 @@
     </Member>
     <Member MemberName="AwaitUnsafeOnCompleted&lt;TAwaiter,TStateMachine&gt;">
       <MemberSignature Language="C#" Value="public void AwaitUnsafeOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitUnsafeOnCompleted&lt;(class System.Runtime.CompilerServices.ICriticalNotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter awaiter, !!TStateMachine stateMachine) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitUnsafeOnCompleted&lt;(class System.Runtime.CompilerServices.ICriticalNotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter&amp; awaiter, !!TStateMachine&amp; stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted``2(``0@,``1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -290,7 +290,7 @@
     </Member>
     <Member MemberName="Start&lt;TStateMachine&gt;">
       <MemberSignature Language="C#" Value="public void Start&lt;TStateMachine&gt; (ref TStateMachine stateMachine) where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start&lt;(class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TStateMachine stateMachine) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start&lt;(class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TStateMachine&amp; stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

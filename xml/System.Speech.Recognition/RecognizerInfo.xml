@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can obtain identifying information for an initialized recognition engine using <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerInfo%2A?displayProperty=fullName> for a <xref:System.Speech.Recognition.SpeechRecognizer> object or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A?displayProperty=fullName> for a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object.  
+ You can obtain identifying information for an initialized recognition engine using <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerInfo%2A?displayProperty=nameWithType> for a <xref:System.Speech.Recognition.SpeechRecognizer> object or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A?displayProperty=nameWithType> for a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object.  
   
  The information returned in instances of <xref:System.Speech.Recognition.RecognizerInfo> obtained from a <xref:System.Speech.Recognition.SpeechRecognizer> is determined by the settings in the **Speech Properties** member of the **Control Panel**.  
   

@@ -306,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A> method provides no implementation. It is intended to be implemented in a derived class, and should be used to create an instance of the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained in a zone, whenever the hosting Web page enters edit mode. The <xref:System.Web.UI.WebControls.WebParts.EditorZone.CreateEditorParts%2A?displayProperty=fullName> method provides one example of an implementation of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A> method.  
+ The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A> method provides no implementation. It is intended to be implemented in a derived class, and should be used to create an instance of the collection of <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls contained in a zone, whenever the hosting Web page enters edit mode. The <xref:System.Web.UI.WebControls.WebParts.EditorZone.CreateEditorParts%2A?displayProperty=nameWithType> method provides one example of an implementation of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CreateEditorParts%2A> method.  
   
  ]]></format>
         </remarks>

@@ -28,9 +28,9 @@ This example shows how to use the <xref:System.Linq.ParallelEnumerable.Aggregate
  [!code-csharp[PLINQ#31](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#31)]
  [!code-vb[PLINQ#31](../../../samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb/plinqsnippets1.vb#31)]  
   
- This example uses an overload of the Aggregate standard query operator that is unique to PLINQ. This overload takes an extra <xref:System.Func%603?displayProperty=fullName> as the third input parameter. This delegate combines the results from all threads before it performs the final calculation on the aggregated results. In this example we add together the sums from all the threads.  
+ This example uses an overload of the Aggregate standard query operator that is unique to PLINQ. This overload takes an extra <xref:System.Func%603?displayProperty=nameWithType> as the third input parameter. This delegate combines the results from all threads before it performs the final calculation on the aggregated results. In this example we add together the sums from all the threads.  
   
- Note that when a lambda expression body consists of a single expression, the return value of the <xref:System.Func%602?displayProperty=fullName> delegate is the value of the expression.  
+ Note that when a lambda expression body consists of a single expression, the return value of the <xref:System.Func%602?displayProperty=nameWithType> delegate is the value of the expression.  
   
 ## See Also  
  <xref:System.Linq.ParallelEnumerable>   

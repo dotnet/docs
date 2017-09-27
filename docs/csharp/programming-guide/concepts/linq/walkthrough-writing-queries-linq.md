@@ -43,7 +43,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
 ## Create a C# Project  
   
 > [!NOTE]
->  The following instructions are for Visual Studio. If you are using a different development environment, create a console project with a reference to System.Core.dll and a `using` directive for the <xref:System.Linq?displayProperty=fullName> namespace.  
+>  The following instructions are for Visual Studio. If you are using a different development environment, create a console project with a reference to System.Core.dll and a `using` directive for the <xref:System.Linq?displayProperty=nameWithType> namespace.  
   
 #### To create a project in Visual Studio  
   
@@ -59,7 +59,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
      The new project appears in **Solution Explorer**.  
   
-5.  Notice that your project has a reference to System.Core.dll and a `using` directive for the <xref:System.Linq?displayProperty=fullName> namespace.  
+5.  Notice that your project has a reference to System.Core.dll and a `using` directive for the <xref:System.Linq?displayProperty=nameWithType> namespace.  
   
 ## Create an in-Memory Data Source  
  The data source for the queries is a simple list of `Student` objects. Each `Student` record has a first name, last name, and an array of integers that represents their test scores in the class. Copy this code into your project. Note the following characteristics:  

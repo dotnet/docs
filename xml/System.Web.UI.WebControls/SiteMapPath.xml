@@ -67,7 +67,7 @@
   
  The <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> properties are applied to the node that represents the root of the site navigation hierarchy. If a <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A> is defined in addition to the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A>, it is ignored. If a <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> is defined in addition to the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A>, it is merged with the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> to create a merged style. This merged style uses all the elements of the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A>, plus any additional elements of the <xref:System.Web.UI.WebControls.SiteMapPath.NodeStyle%2A> that did not conflict with the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>. Finally, if the currently displayed page is the root page of the site, the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate%2A> and <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> are used instead of the <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate%2A> or <xref:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle%2A>.  
   
- The <xref:System.Web.UI.WebControls.SiteMapPath> control uses the site map provider identified by the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property as its data source for site navigation information. If no provider is specified, it uses the default provider for the site, identified in the <xref:System.Web.SiteMap.Provider%2A?displayProperty=fullName> property. Typically, this is an instance of the default site map provider for ASP.NET, the <xref:System.Web.XmlSiteMapProvider>. If the <xref:System.Web.UI.WebControls.SiteMapPath> control is used within a site but no site map provider is configured, the control throws an <xref:System.Web.HttpException> exception.  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control uses the site map provider identified by the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property as its data source for site navigation information. If no provider is specified, it uses the default provider for the site, identified in the <xref:System.Web.SiteMap.Provider%2A?displayProperty=nameWithType> property. Typically, this is an instance of the default site map provider for ASP.NET, the <xref:System.Web.XmlSiteMapProvider>. If the <xref:System.Web.UI.WebControls.SiteMapPath> control is used within a site but no site map provider is configured, the control throws an <xref:System.Web.HttpException> exception.  
   
 <a name="events"></a>   
 ## Events  
@@ -197,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.SiteMapPath> class. To dynamically add a <xref:System.Web.UI.WebControls.SiteMapPath> control to a page, create a new <xref:System.Web.UI.WebControls.SiteMapPath> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.SiteMapPath> class. To dynamically add a <xref:System.Web.UI.WebControls.SiteMapPath> control to a page, create a new <xref:System.Web.UI.WebControls.SiteMapPath> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
   
    
   
@@ -257,7 +257,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A> method creates <xref:System.Web.UI.WebControls.SiteMapNodeItem> controls, associates them with the corresponding <xref:System.Web.SiteMapNode> objects from the current site map provider, and adds the nodes to the <xref:System.Web.UI.Control.Controls%2A> collection.  
   
- The method begins by finding the <xref:System.Web.SiteMap.CurrentNode%2A?displayProperty=fullName>, and then walks up the hierarchical tree of <xref:System.Web.SiteMapNode> objects, creating a <xref:System.Web.UI.WebControls.SiteMapNodeItem> for each one until the <xref:System.Web.SiteMap.RootNode%2A> is reached. After each <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created, but before it is bound to its corresponding <xref:System.Web.SiteMapNode>, the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method is called. The <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method applies any templates or styles defined for a particular node type and creates and initializes any child controls that the <xref:System.Web.UI.WebControls.SiteMapNodeItem> contains. Finally, the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method adds the child controls of the <xref:System.Web.UI.WebControls.SiteMapNodeItem> to the <xref:System.Web.UI.Control.Controls%2A> collection.  
+ The method begins by finding the <xref:System.Web.SiteMap.CurrentNode%2A?displayProperty=nameWithType>, and then walks up the hierarchical tree of <xref:System.Web.SiteMapNode> objects, creating a <xref:System.Web.UI.WebControls.SiteMapNodeItem> for each one until the <xref:System.Web.SiteMap.RootNode%2A> is reached. After each <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created, but before it is bound to its corresponding <xref:System.Web.SiteMapNode>, the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method is called. The <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method applies any templates or styles defined for a particular node type and creates and initializes any child controls that the <xref:System.Web.UI.WebControls.SiteMapNodeItem> contains. Finally, the <xref:System.Web.UI.WebControls.SiteMapPath.InitializeItem%2A> method adds the child controls of the <xref:System.Web.UI.WebControls.SiteMapNodeItem> to the <xref:System.Web.UI.Control.Controls%2A> collection.  
   
  After each <xref:System.Web.UI.WebControls.SiteMapNodeItem> is initialized, the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method is called. Then the <xref:System.Web.UI.WebControls.SiteMapNodeItem> is bound to its corresponding <xref:System.Web.SiteMapNode>, and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> is called.  
   
@@ -1038,7 +1038,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SiteMapPath> control overrides the <xref:System.Web.UI.WebControls.SiteMapPath.RenderContents%2A> method to perform its accessibility rendering, if the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property is not set to <xref:System.String.Empty?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control overrides the <xref:System.Web.UI.WebControls.SiteMapPath.RenderContents%2A> method to perform its accessibility rendering, if the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property is not set to <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1069,7 +1069,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The node that represents the currently displayed page is the <xref:System.Web.SiteMap.CurrentNode%2A?displayProperty=fullName>. Its <xref:System.Web.SiteMapNode.Title%2A> property specifies the text to display for the current node, and its <xref:System.Web.SiteMapNode.Url%2A> property is used to create a hyperlink. By default, no hyperlink is rendered for the current page to prevent erroneous form posts.  
+ The node that represents the currently displayed page is the <xref:System.Web.SiteMap.CurrentNode%2A?displayProperty=nameWithType>. Its <xref:System.Web.SiteMapNode.Title%2A> property specifies the text to display for the current node, and its <xref:System.Web.SiteMapNode.Url%2A> property is used to create a hyperlink. By default, no hyperlink is rendered for the current page to prevent erroneous form posts.  
   
  The value of this property is stored in view state.  
   
@@ -1298,7 +1298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.SiteMapPath> control uses a <xref:System.Web.SiteMapProvider> as a source for the site map data it renders. If the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property is not set, the <xref:System.Web.UI.WebControls.SiteMapPath> control uses the provider identified by the <xref:System.Web.SiteMap.Provider%2A?displayProperty=fullName> property, which is the default <xref:System.Web.SiteMapProvider> defined for the site in the configuration hierarchy, typically the <xref:System.Web.XmlSiteMapProvider>. Setting the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property directs the <xref:System.Web.UI.WebControls.SiteMapPath> control to render the site map data that the provider defines.  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control uses a <xref:System.Web.SiteMapProvider> as a source for the site map data it renders. If the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property is not set, the <xref:System.Web.UI.WebControls.SiteMapPath> control uses the provider identified by the <xref:System.Web.SiteMap.Provider%2A?displayProperty=nameWithType> property, which is the default <xref:System.Web.SiteMapProvider> defined for the site in the configuration hierarchy, typically the <xref:System.Web.XmlSiteMapProvider>. Setting the <xref:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider%2A> property directs the <xref:System.Web.UI.WebControls.SiteMapPath> control to render the site map data that the provider defines.  
   
  The <xref:System.Web.UI.WebControls.SiteMapPath> control works directly with a <xref:System.Web.SiteMapProvider> and its <xref:System.Web.SiteMapNode> objects to display site map information. Other controls, such as <xref:System.Web.UI.WebControls.Menu> and <xref:System.Web.UI.WebControls.TreeView>, require a data abstraction, provided by the <xref:System.Web.UI.WebControls.SiteMapDataSource> class, to display the same site navigation information.  
   
@@ -1336,7 +1336,7 @@
 ## Remarks  
  <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> is a property that you can set to make a Web page more or less accessible to users of screen readers. Web sites that contain content that repeats on multiple pages, such as controls that display site map data, can provide a mechanism that allows users of screen readers to skip the repeated content so that it is not read aloud.  
   
- The <xref:System.Web.UI.WebControls.SiteMapPath> control provides the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property as a way for the entire control to be skipped by screen readers.  If the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property is set, an invisible image with alternate text is rendered, giving the user the option to jump to the end of the content. Screen readers read the alternate text aloud but the image does not disturb the visual flow of the page. The property is set to "Skip Navigation Links" by default, which makes screen readers skip the control. If you want to disable this behavior, set the property to <xref:System.String.Empty?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control provides the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property as a way for the entire control to be skipped by screen readers.  If the <xref:System.Web.UI.WebControls.SiteMapPath.SkipLinkText%2A> property is set, an invisible image with alternate text is rendered, giving the user the option to jump to the end of the content. Screen readers read the alternate text aloud but the image does not disturb the visual flow of the page. The property is set to "Skip Navigation Links" by default, which makes screen readers skip the control. If you want to disable this behavior, set the property to <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  The value of this property is stored in view state.  
   

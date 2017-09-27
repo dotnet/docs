@@ -116,11 +116,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateDefaultCompilerParameters%2A> method to examine the compiler settings of the <xref:System.CodeDom.Compiler.CompilerInfo> instances returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=fullName> and <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A?displayProperty=fullName> methods.  
+ Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateDefaultCompilerParameters%2A> method to examine the compiler settings of the <xref:System.CodeDom.Compiler.CompilerInfo> instances returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> and <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A?displayProperty=nameWithType> methods.  
   
- The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. Each language provider configuration element can contain optional `compilerOptions` and `warningLevel` attributes. These attributes define the default values for the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=fullName> and <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=fullName> properties.  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. Each language provider configuration element can contain optional `compilerOptions` and `warningLevel` attributes. These attributes define the default values for the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=nameWithType> and <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=nameWithType> properties.  
   
- If the language provider configuration element does not define the `compilerOptions` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=fullName> property value is an empty string (""). If the language provider configuration element does not define the `warningLevel` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=fullName> property value is –1.  
+ If the language provider configuration element does not define the `compilerOptions` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=nameWithType> property value is an empty string (""). If the language provider configuration element does not define the `warningLevel` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=nameWithType> property value is –1.  
   
    
   
@@ -162,7 +162,7 @@
 ## Remarks  
  The <xref:System.CodeDom.Compiler.CompilerInfo.CreateProvider%2A> method returns a <xref:System.CodeDom.Compiler.CodeDomProvider> instance for the current language provider settings.  
   
- Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateProvider%2A> method to get a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a <xref:System.CodeDom.Compiler.CompilerInfo> instance returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=fullName> or <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A?displayProperty=fullName> method.  
+ Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateProvider%2A> method to get a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a <xref:System.CodeDom.Compiler.CompilerInfo> instance returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> or <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -207,7 +207,7 @@
 ## Remarks  
  The <xref:System.CodeDom.Compiler.CompilerInfo.CreateProvider%28System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%29> method returns a <xref:System.CodeDom.Compiler.CodeDomProvider> instance for the current language provider settings and the specified provider options. For information about supported provider options, see the specific CodeDOM provider documentation.  
   
- Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateProvider%28System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%29> method to get a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a <xref:System.CodeDom.Compiler.CompilerInfo> instance returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=fullName> or <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A?displayProperty=fullName> method.  
+ Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateProvider%28System.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%29> method to get a <xref:System.CodeDom.Compiler.CodeDomProvider> implementation for a <xref:System.CodeDom.Compiler.CompilerInfo> instance returned by the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> or <xref:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -244,7 +244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method.  
+ This method overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method.  
   
  The two instances are considered equal if the values of the following properties are equal:  
   
@@ -281,7 +281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. Each configured language provider supports one or more file name extensions. For example, a <xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=fullName> might support the file name extensions ".cs" and ".c#".  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. Each configured language provider supports one or more file name extensions. For example, a <xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=nameWithType> might support the file name extensions ".cs" and ".c#".  
   
    
   
@@ -321,14 +321,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  This method generates the same hash code for two objects that are equal according to the <xref:System.CodeDom.Compiler.CompilerInfo.Equals%2A> method.  
   
    
   
 ## Examples  
- The following code example creates an instance of the <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=fullName> class. The example displays the provider name, hash code, and default file name extension for the new provider instance. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
+ The following code example creates an instance of the <xref:Microsoft.VisualBasic.VBCodeProvider?displayProperty=nameWithType> class. The example displays the provider name, hash code, and default file name extension for the new provider instance. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerInfo> class.  
   
  [!code-cpp[CodeDom_CompilerInfo#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDom_CompilerInfo/CPP/source.cpp#3)]
  [!code-csharp[CodeDom_CompilerInfo#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDom_CompilerInfo/CS/source.cs#3)]
@@ -363,7 +363,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. Each configured language provider supports one or more language names. For example, the <xref:System.CodeDom.Compiler.CompilerInfo> object for a <xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=fullName> might return an array with the language names "c#", "cs", and "csharp".  
+ The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. Each configured language provider supports one or more language names. For example, the <xref:System.CodeDom.Compiler.CompilerInfo> object for a <xref:Microsoft.CSharp.CSharpCodeProvider?displayProperty=nameWithType> might return an array with the language names "c#", "cs", and "csharp".  
   
    
   

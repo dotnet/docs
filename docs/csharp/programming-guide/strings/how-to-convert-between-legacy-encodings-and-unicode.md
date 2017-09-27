@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Convert Between Legacy Encodings and Unicode (C# Programming Guide)
-In C#, all strings in memory are encoded as Unicode (UTF-16). When you bring data from storage into a `string` object, the data is automatically converted to UTF-16. If the data contains only ASCII values from 0 through 127, the conversion requires no extra effort on your part. However, if the source text contains extended ASCII byte values (128 through 255), the extended characters will be interpreted by default according to the current code page. To specify that the source text should be interpreted according to a different code page, use the <xref:System.Text.Encoding?displayProperty=fullName> class as shown in the following example.  
+In C#, all strings in memory are encoded as Unicode (UTF-16). When you bring data from storage into a `string` object, the data is automatically converted to UTF-16. If the data contains only ASCII values from 0 through 127, the conversion requires no extra effort on your part. However, if the source text contains extended ASCII byte values (128 through 255), the extended characters will be interpreted by default according to the current code page. To specify that the source text should be interpreted according to a different code page, use the <xref:System.Text.Encoding?displayProperty=nameWithType> class as shown in the following example.  
   
 ## Example  
  The following example shows how to convert a text file that has been encoded in 8-bit ASCII, interpreting the source text according to Windows Code Page 737.  

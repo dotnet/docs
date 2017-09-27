@@ -227,7 +227,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified length and <xref:System.Globalization.CultureInfo?displayProperty=fullName>. The length is specified in two parts, the length's value and the length's unit type. For example, "200Cm" represents a length of 200 centimeters. You can use any valid CSS-compliant unit expression.  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Unit> structure using the specified length and <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>. The length is specified in two parts, the length's value and the length's unit type. For example, "200Cm" represents a length of 200 centimeters. You can use any valid CSS-compliant unit expression.  
   
  The following table lists the common unit types.  
   
@@ -380,7 +380,7 @@
 ## Remarks  
  Use this operator to compare two <xref:System.Web.UI.WebControls.Unit> objects for equality. For both objects to be equal, they must have the same values for both the <xref:System.Web.UI.WebControls.Unit.Type%2A> and <xref:System.Web.UI.WebControls.Unit.Value%2A> properties.  
   
- The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -434,7 +434,7 @@
 ## Remarks  
  Use this operator to compare two <xref:System.Web.UI.WebControls.Unit> objects for inequality. For the objects to not be equal, they must have different values for the <xref:System.Web.UI.WebControls.Unit.Type%2A> property or the <xref:System.Web.UI.WebControls.Unit.Value%2A> property.  
   
- The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Web.UI.WebControls.Unit.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>

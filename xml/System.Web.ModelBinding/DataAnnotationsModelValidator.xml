@@ -96,7 +96,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetLocalizedString">
-      <MemberSignature Language="C#" Value="protected string GetLocalizedString (string name, object[] arguments);" />
+      <MemberSignature Language="C#" Value="protected string GetLocalizedString (string name, params object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetLocalizedString(string name, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidator.GetLocalizedString(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

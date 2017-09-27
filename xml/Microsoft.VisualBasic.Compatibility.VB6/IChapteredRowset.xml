@@ -34,7 +34,7 @@
   <Members>
     <Member MemberName="AddRefChapter">
       <MemberSignature Language="C#" Value="public void AddRefChapter (int hChapter, out int cRefCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefChapter(int32 hChapter, int32 cRefCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefChapter([in]int32 hChapter, [out] int32&amp; cRefCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IChapteredRowset.AddRefChapter(System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -66,7 +66,7 @@
     </Member>
     <Member MemberName="ReleaseChapter">
       <MemberSignature Language="C#" Value="public void ReleaseChapter (int hChapter, out int cRefCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseChapter(int32 hChapter, int32 cRefCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseChapter([in]int32 hChapter, [out] int32&amp; cRefCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IChapteredRowset.ReleaseChapter(System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -2867,7 +2867,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Thread.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _Thread.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Thread.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Thread.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.System#Runtime#InteropServices#_Thread#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2937,7 +2937,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Thread.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _Thread.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Thread.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Thread.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.System#Runtime#InteropServices#_Thread#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2966,7 +2966,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Thread.Invoke">
       <MemberSignature Language="C#" Value="void _Thread.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Thread.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Thread.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.System#Runtime#InteropServices#_Thread#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3114,7 +3114,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static byte VolatileRead (ref byte address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 VolatileRead(unsigned int8 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 VolatileRead(unsigned int8&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Byte@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3161,7 +3161,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static double VolatileRead (ref double address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 VolatileRead(float64 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 VolatileRead(float64&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Double@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3208,7 +3208,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static short VolatileRead (ref short address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 VolatileRead(int16 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 VolatileRead(int16&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Int16@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3255,7 +3255,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static int VolatileRead (ref int address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 VolatileRead(int32 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 VolatileRead(int32&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3302,7 +3302,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static long VolatileRead (ref long address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 VolatileRead(int64 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 VolatileRead(int64&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3349,7 +3349,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static IntPtr VolatileRead (ref IntPtr address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int VolatileRead(native int address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int VolatileRead(native int&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3396,7 +3396,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static object VolatileRead (ref object address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object VolatileRead(object address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object VolatileRead(object&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3443,7 +3443,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static sbyte VolatileRead (ref sbyte address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int8 VolatileRead(int8 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int8 VolatileRead(int8&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.SByte@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3495,7 +3495,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static float VolatileRead (ref float address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 VolatileRead(float32 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 VolatileRead(float32&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.Single@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3542,7 +3542,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static ushort VolatileRead (ref ushort address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 VolatileRead(unsigned int16 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 VolatileRead(unsigned int16&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UInt16@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3594,7 +3594,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static uint VolatileRead (ref uint address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 VolatileRead(unsigned int32 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 VolatileRead(unsigned int32&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3646,7 +3646,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static ulong VolatileRead (ref ulong address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 VolatileRead(unsigned int64 address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 VolatileRead(unsigned int64&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UInt64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3698,7 +3698,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileRead">
       <MemberSignature Language="C#" Value="public static UIntPtr VolatileRead (ref UIntPtr address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native unsigned int VolatileRead(native unsigned int address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native unsigned int VolatileRead(native unsigned int&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileRead(System.UIntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3750,7 +3750,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref byte address, byte value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int8 address, unsigned int8 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int8&amp; address, unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Byte@,System.Byte)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3798,7 +3798,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref double address, double value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(float64 address, float64 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(float64&amp; address, float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Double@,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3846,7 +3846,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref short address, short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int16 address, int16 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int16&amp; address, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Int16@,System.Int16)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3894,7 +3894,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref int address, int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int32 address, int32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int32&amp; address, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Int32@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3942,7 +3942,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref long address, long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int64 address, int64 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int64&amp; address, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Int64@,System.Int64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3990,7 +3990,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref IntPtr address, IntPtr value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(native int address, native int value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(native int&amp; address, native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.IntPtr@,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4038,7 +4038,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref object address, object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(object address, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(object&amp; address, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Object@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4086,7 +4086,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref sbyte address, sbyte value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int8 address, int8 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(int8&amp; address, int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.SByte@,System.SByte)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4139,7 +4139,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref float address, float value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(float32 address, float32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(float32&amp; address, float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.Single@,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4187,7 +4187,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref ushort address, ushort value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int16 address, unsigned int16 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int16&amp; address, unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UInt16@,System.UInt16)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4240,7 +4240,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref uint address, uint value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int32 address, unsigned int32 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int32&amp; address, unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UInt32@,System.UInt32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4293,7 +4293,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref ulong address, ulong value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int64 address, unsigned int64 value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(unsigned int64&amp; address, unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UInt64@,System.UInt64)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4346,7 +4346,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     </Member>
     <Member MemberName="VolatileWrite">
       <MemberSignature Language="C#" Value="public static void VolatileWrite (ref UIntPtr address, UIntPtr value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(native unsigned int address, native unsigned int value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void VolatileWrite(native unsigned int&amp; address, native unsigned int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Thread.VolatileWrite(System.UIntPtr@,System.UIntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

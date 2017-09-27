@@ -1000,7 +1000,7 @@ batchBlock.Complete();
     </Member>
     <Member MemberName="TryReceive&lt;TOutput&gt;">
       <MemberSignature Language="C#" Value="public static bool TryReceive&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt; source, out TOutput item);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReceive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!!TOutput&gt; source, !!TOutput item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReceive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!!TOutput&gt; source, [out] !!TOutput&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive``1(System.Threading.Tasks.Dataflow.IReceivableSourceBlock{``0},``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

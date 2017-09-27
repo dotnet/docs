@@ -69,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeMethod method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression Call(class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.Exp.Call(Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -100,7 +100,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (System.Reflection.MethodInfo method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (System.Reflection.MethodInfo method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression Call(class System.Reflection.MethodInfo method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.Exp.Call(System.Reflection.MethodInfo,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -131,7 +131,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression Call(class Mono.CodeGeneration.CodeExpression target, class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.Exp.Call(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -164,7 +164,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodInfo method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodInfo method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression Call(class Mono.CodeGeneration.CodeExpression target, class System.Reflection.MethodInfo method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.Exp.Call(Mono.CodeGeneration.CodeExpression,System.Reflection.MethodInfo,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -197,7 +197,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeExpression target, string name, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Mono.CodeGeneration.CodeExpression target, string name, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression Call(class Mono.CodeGeneration.CodeExpression target, string name, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.Exp.Call(Mono.CodeGeneration.CodeExpression,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -230,7 +230,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Type type, string name, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression Call (Type type, string name, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression Call(class System.Type type, string name, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.Exp.Call(System.Type,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -332,7 +332,7 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression New (Type type, Mono.CodeGeneration.CodeExpression[] pars);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeExpression New (Type type, params Mono.CodeGeneration.CodeExpression[] pars);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression New(class System.Type type, class Mono.CodeGeneration.CodeExpression[] pars) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.Exp.New(System.Type,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>

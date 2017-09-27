@@ -577,7 +577,7 @@
     </Member>
     <Member MemberName="GetBounds">
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF GetBounds (ref System.Drawing.GraphicsUnit pageUnit);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetBounds(valuetype System.Drawing.GraphicsUnit pageUnit) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetBounds(valuetype System.Drawing.GraphicsUnit&amp; pageUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.GetBounds(System.Drawing.GraphicsUnit@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

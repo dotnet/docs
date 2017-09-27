@@ -6011,7 +6011,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out decimal result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Decimal result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] valuetype System.Decimal&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.TryParse(System.String,System.Decimal@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6089,7 +6089,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out decimal result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, valuetype System.Decimal result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] valuetype System.Decimal&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Decimal@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

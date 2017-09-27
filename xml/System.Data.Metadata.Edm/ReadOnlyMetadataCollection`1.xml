@@ -158,7 +158,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public virtual bool TryGetValue (string identity, bool ignoreCase, out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string identity, bool ignoreCase, !T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string identity, bool ignoreCase, [out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.TryGetValue(System.String,System.Boolean,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

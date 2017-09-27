@@ -919,7 +919,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetDelimiters">
-      <MemberSignature Language="C#" Value="public void SetDelimiters (string[] delimiters);" />
+      <MemberSignature Language="C#" Value="public void SetDelimiters (params string[] delimiters);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetDelimiters(string[] delimiters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters(System.String[])" />
       <MemberType>Method</MemberType>
@@ -971,7 +971,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetFieldWidths">
-      <MemberSignature Language="C#" Value="public void SetFieldWidths (int[] fieldWidths);" />
+      <MemberSignature Language="C#" Value="public void SetFieldWidths (params int[] fieldWidths);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetFieldWidths(int32[] fieldWidths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths(System.Int32[])" />
       <MemberType>Method</MemberType>

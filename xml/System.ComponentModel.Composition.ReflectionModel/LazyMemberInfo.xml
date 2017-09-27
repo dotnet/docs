@@ -57,7 +57,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LazyMemberInfo (System.Reflection.MemberTypes memberType, System.Reflection.MemberInfo[] accessors);" />
+      <MemberSignature Language="C#" Value="public LazyMemberInfo (System.Reflection.MemberTypes memberType, params System.Reflection.MemberInfo[] accessors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.MemberTypes memberType, class System.Reflection.MemberInfo[] accessors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberTypes,System.Reflection.MemberInfo[])" />
       <MemberType>Constructor</MemberType>

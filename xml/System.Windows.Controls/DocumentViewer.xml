@@ -655,7 +655,7 @@
     </Member>
     <Member MemberName="GetPageViewsCollection">
       <MemberSignature Language="C#" Value="protected override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection (out bool changed);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection(bool changed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection([out] bool&amp; changed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DocumentViewer.GetPageViewsCollection(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

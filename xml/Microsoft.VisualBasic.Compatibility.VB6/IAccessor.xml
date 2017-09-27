@@ -34,7 +34,7 @@
   <Members>
     <Member MemberName="AddRefAccessor">
       <MemberSignature Language="C#" Value="public void AddRefAccessor (int hAccessor, out int cRefCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefAccessor(int32 hAccessor, int32 cRefCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefAccessor([in]int32 hAccessor, [out] int32&amp; cRefCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.AddRefAccessor(System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -66,7 +66,7 @@
     </Member>
     <Member MemberName="CreateAccessor">
       <MemberSignature Language="C#" Value="public void CreateAccessor (int accessorFlags, int cBindings, Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[] bindings, int cbRowSize, out int hAccessor, IntPtr pBindStatus);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void CreateAccessor(int32 accessorFlags, int32 cBindings, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[] bindings, int32 cbRowSize, int32 hAccessor, native int pBindStatus) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void CreateAccessor([in]int32 accessorFlags, [in]int32 cBindings, [in]valuetype Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[] bindings, [in]int32 cbRowSize, [out] int32&amp; hAccessor, [in]native int pBindStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.CreateAccessor(System.Int32,System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[],System.Int32,System.Int32@,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -106,7 +106,7 @@
     </Member>
     <Member MemberName="GetBindings">
       <MemberSignature Language="C#" Value="public void GetBindings (int hAccessor, out int accessorFlags, out int cBindings, out IntPtr rgBindings);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetBindings(int32 hAccessor, int32 accessorFlags, int32 cBindings, native int rgBindings) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetBindings([in]int32 hAccessor, [out] int32&amp; accessorFlags, [out] int32&amp; cBindings, [out] native int&amp; rgBindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.GetBindings(System.Int32,System.Int32@,System.Int32@,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -142,7 +142,7 @@
     </Member>
     <Member MemberName="ReleaseAccessor">
       <MemberSignature Language="C#" Value="public void ReleaseAccessor (int hAccessor, out int cRefCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseAccessor(int32 hAccessor, int32 cRefCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseAccessor([in]int32 hAccessor, [out] int32&amp; cRefCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.ReleaseAccessor(System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

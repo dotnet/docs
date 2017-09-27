@@ -92,7 +92,7 @@
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GenericPair (ref System.Collections.Generic.KeyValuePair&lt;TValue1,TValue2&gt; _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TValue1, !TValue2&gt; _Right) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TValue1, !TValue2&gt;&amp; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(System.Collections.Generic.KeyValuePair{`0,`1}@)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

@@ -245,7 +245,7 @@
     </Member>
     <Member MemberName="InitializeRequest">
       <MemberSignature Language="C#" Value="public bool InitializeRequest (System.Web.HttpContext context, bool suppressAutoDetectRedirect, out bool supportSessionIDReissue);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool InitializeRequest(class System.Web.HttpContext context, bool suppressAutoDetectRedirect, bool supportSessionIDReissue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool InitializeRequest(class System.Web.HttpContext context, bool suppressAutoDetectRedirect, [out] bool&amp; supportSessionIDReissue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.InitializeRequest(System.Web.HttpContext,System.Boolean,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -312,7 +312,7 @@
     </Member>
     <Member MemberName="SaveSessionID">
       <MemberSignature Language="C#" Value="public void SaveSessionID (System.Web.HttpContext context, string id, out bool redirected, out bool cookieAdded);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveSessionID(class System.Web.HttpContext context, string id, bool redirected, bool cookieAdded) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveSessionID(class System.Web.HttpContext context, string id, [out] bool&amp; redirected, [out] bool&amp; cookieAdded) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionIDManager.SaveSessionID(System.Web.HttpContext,System.String,System.Boolean@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

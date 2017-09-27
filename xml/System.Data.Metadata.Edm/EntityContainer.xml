@@ -361,7 +361,7 @@ End Class
     </Member>
     <Member MemberName="TryGetEntitySetByName">
       <MemberSignature Language="C#" Value="public bool TryGetEntitySetByName (string name, bool ignoreCase, out System.Data.Metadata.Edm.EntitySet entitySet);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntitySetByName(string name, bool ignoreCase, class System.Data.Metadata.Edm.EntitySet entitySet) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntitySetByName(string name, bool ignoreCase, [out] class System.Data.Metadata.Edm.EntitySet&amp; entitySet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityContainer.TryGetEntitySetByName(System.String,System.Boolean,System.Data.Metadata.Edm.EntitySet@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -389,7 +389,7 @@ End Class
     </Member>
     <Member MemberName="TryGetRelationshipSetByName">
       <MemberSignature Language="C#" Value="public bool TryGetRelationshipSetByName (string name, bool ignoreCase, out System.Data.Metadata.Edm.RelationshipSet relationshipSet);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetRelationshipSetByName(string name, bool ignoreCase, class System.Data.Metadata.Edm.RelationshipSet relationshipSet) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetRelationshipSetByName(string name, bool ignoreCase, [out] class System.Data.Metadata.Edm.RelationshipSet&amp; relationshipSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EntityContainer.TryGetRelationshipSetByName(System.String,System.Boolean,System.Data.Metadata.Edm.RelationshipSet@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

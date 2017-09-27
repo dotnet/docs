@@ -79,7 +79,7 @@
     </Member>
     <Member MemberName="Remove&lt;TKey,TValue&gt;">
       <MemberSignature Language="C#" Value="public static bool Remove&lt;TKey,TValue&gt; (this System.Collections.Generic.IDictionary&lt;TKey,TValue&gt; dictionary, TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Remove&lt;TKey, TValue&gt;(class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt; dictionary, !!TKey key, !!TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Remove&lt;TKey, TValue&gt;(class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt; dictionary, !!TKey key, [out] !!TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.CollectionExtensions.Remove``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

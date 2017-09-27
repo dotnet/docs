@@ -50,9 +50,9 @@ The default open file limit on macOS may not be sufficient for some .NET Core wo
 
 You can increase this limit by following these steps:
 
-Using a text editor, create a new file `/Library/LaunchDaemons/limit.maxfiles.plist`, and save the file with this content:
+1. Using a text editor, create a new file _/Library/LaunchDaemons/limit.maxfiles.plist_, and save the file with this content:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
         "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -76,13 +76,13 @@ Using a text editor, create a new file `/Library/LaunchDaemons/limit.maxfiles.pl
 </plist>
 ```
 
-In a terminal window, run the following command:
+2. In a terminal window, run the following command:
 
 ```
 echo 'ulimit -n 2048' | sudo tee -a /etc/profile
 ```
 
-Finally, reboot your Mac to apply these settings.
+3. Reboot your Mac to apply these settings.
 
 ## Visual Studio for Mac
 

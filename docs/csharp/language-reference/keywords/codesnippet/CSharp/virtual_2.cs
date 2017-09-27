@@ -68,8 +68,7 @@
             }
         }
         /*
-            Output:
-            Area of Circle   = 28.27
-            Area of Sphere   = 113.10
-            Area of Cylinder = 150.80
+            0
+            0
+            150.80
         */

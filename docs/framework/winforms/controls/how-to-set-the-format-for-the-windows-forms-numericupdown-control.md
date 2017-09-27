@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "NumericUpDown control [Windows Forms], formatting values"
   - "up-down controls, formatting numeric values"

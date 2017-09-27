@@ -9,6 +9,9 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "LineShape control"
   - "lines, drawing"

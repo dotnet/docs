@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "cpp"
 api_name: 
   - "ICorDebugVariableHome"
 api_location: 

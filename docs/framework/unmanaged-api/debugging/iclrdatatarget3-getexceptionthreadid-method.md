@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+- "cpp"
 api_name: 
   - "ICLRDataTarget3.GetExceptionThreadID"
 api_location: 

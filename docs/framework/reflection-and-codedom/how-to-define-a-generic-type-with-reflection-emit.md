@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+- "cpp"
 helpviewer_keywords: 
   - "generics [.NET Framework], reflection emit"
   - "generics [.NET Framework], dynamic types"

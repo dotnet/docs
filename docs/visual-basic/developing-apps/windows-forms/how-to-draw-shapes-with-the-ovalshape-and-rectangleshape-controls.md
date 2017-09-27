@@ -9,6 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "OvalShape control"
   - "shapes, drawing"

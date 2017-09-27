@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+- "cpp"
 helpviewer_keywords: 
   - "progress information, .NET Framework installer"
   - ".NET Framework, installing"

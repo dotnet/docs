@@ -1,6 +1,6 @@
 ---
 title: "Interpolated Strings (C#)"
-ms.date: "09/25/2017"
+ms.date: "09/27/2017"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,7 +14,7 @@ ms.author: "wiwagn"
 ---
 # Interpolated Strings (C# Reference)
 
-Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations.  
+Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations. This features is available in C# 6 and newer.
 
 The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
@@ -46,6 +46,16 @@ where:
 If the interpolated string contains other characters with special meaning in an interpolated string, such as the quotation mark ("), colon (:), or comma (,), they should be escaped if they occur in literal text, or they should be included in an expression delimited by parentheses if they are language elements included in an interpolated expression. The following example escapes quotation marks to include them in the result string, and it uses parentheses to delimit the expression `(age == 1 ? "" : "s")` so that the colon is not interpreted as beginning a format string.
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings4.cs#1)]  
+
+Verbatim interpolated strings use the `@` character in addition to using the `$` character for interpolated strings. You can learn more about verbatim strings in the [string](strings.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
+
+[!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings5.cs#1)]  
+
+The formatting changes are necessary because verbatim strings do not obey `\` escape sequences.
+
+> [!IMPORTANT]
+> The `$` token must appear before the `@` token in a verbatim interpolated string.
+
 
 ## Implicit Conversions  
 

@@ -18,7 +18,7 @@ ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # How to: Audit Windows Communication Foundation Security Events
-[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to log security events to the Windows event log, which can be viewed using the Windows Event Viewer. This topic explains how to set up an application so that it logs security events. [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] auditing, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+[!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to log security events to the Windows event log, which can be viewed using the Windows Event Viewer. This topic explains how to set up an application so that it logs security events. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] auditing, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   
 ### To audit security events in code  
   

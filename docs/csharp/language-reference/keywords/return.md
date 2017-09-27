@@ -39,7 +39,7 @@ The `return` statement terminates execution of the method in which it appears an
  If the return statement is inside a `try` block, the `finally` block, if one exists, will be executed before control returns to the calling method.  
   
 ## Example  
- In the following example, the method `A()` returns the variable `Area` as a [double](../../../csharp/language-reference/keywords/double.md) value.  
+ In the following example, the method `CalculateArea()` returns the local variable `area` as a [double](../../../csharp/language-reference/keywords/double.md) value.  
   
  [!code-cs[csrefKeywordsJump#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/return_1.cs)]  
   

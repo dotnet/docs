@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is equivalent to calling the other <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A?displayProperty=fullName> constructor with a parameter that is `null`.  
+ This constructor is equivalent to calling the other <xref:System.ComponentModel.CustomTypeDescriptor.%23ctor%2A?displayProperty=nameWithType> constructor with a parameter that is `null`.  
   
  All methods of a <xref:System.ComponentModel.CustomTypeDescriptor> created with this constructor will return default values.  
   
@@ -105,10 +105,10 @@
   
 |Method|Default return value|  
 |------------|--------------------------|  
-|<xref:System.ComponentModel.CustomTypeDescriptor.GetAttributes%2A>|An empty attribute collection (<xref:System.ComponentModel.AttributeCollection.Empty?displayProperty=fullName>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetAttributes%2A>|An empty attribute collection (<xref:System.ComponentModel.AttributeCollection.Empty?displayProperty=nameWithType>).|  
 |<xref:System.ComponentModel.CustomTypeDescriptor.GetConverter%2A>|The default <xref:System.ComponentModel.TypeConverter> instance.|  
-|<xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A>|An empty events collection (<xref:System.ComponentModel.EventDescriptorCollection.Empty?displayProperty=fullName>).|  
-|<xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A>|An empty property collection (<xref:System.ComponentModel.PropertyDescriptorCollection.Empty?displayProperty=fullName>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetEvents%2A>|An empty events collection (<xref:System.ComponentModel.EventDescriptorCollection.Empty?displayProperty=nameWithType>).|  
+|<xref:System.ComponentModel.CustomTypeDescriptor.GetProperties%2A>|An empty property collection (<xref:System.ComponentModel.PropertyDescriptorCollection.Empty?displayProperty=nameWithType>).|  
   
  ]]></format>
         </remarks>

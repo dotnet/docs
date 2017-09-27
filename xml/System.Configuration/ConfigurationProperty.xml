@@ -119,7 +119,7 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.  
   
  [!code-csharp[System.Configuration.ConfigurationProperty#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#2)]
  [!code-vb[System.Configuration.ConfigurationProperty#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#2)]  
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
+ The following code example shows how to use <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.  
   
  [!code-csharp[System.Configuration.ConfigurationProperty#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#3)]
  [!code-vb[System.Configuration.ConfigurationProperty#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#3)]  
@@ -201,7 +201,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows the kind of parameters to use when calling the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=fullName> constructor.  
+ The following code example shows the kind of parameters to use when calling the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=nameWithType> constructor.  
   
  [!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
  [!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  
@@ -246,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%2CSystem.String%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%2CSystem.String%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.  
   
  [!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
  [!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  

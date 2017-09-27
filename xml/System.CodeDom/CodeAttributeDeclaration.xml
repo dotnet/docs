@@ -114,7 +114,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeAttributeDeclaration (System.CodeDom.CodeTypeReference attributeType, System.CodeDom.CodeAttributeArgument[] arguments);" />
+      <MemberSignature Language="C#" Value="public CodeAttributeDeclaration (System.CodeDom.CodeTypeReference attributeType, params System.CodeDom.CodeAttributeArgument[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference attributeType, class System.CodeDom.CodeAttributeArgument[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclaration.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeAttributeArgument[])" />
       <MemberType>Constructor</MemberType>
@@ -151,7 +151,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeAttributeDeclaration (string name, System.CodeDom.CodeAttributeArgument[] arguments);" />
+      <MemberSignature Language="C#" Value="public CodeAttributeDeclaration (string name, params System.CodeDom.CodeAttributeArgument[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.CodeDom.CodeAttributeArgument[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclaration.#ctor(System.String,System.CodeDom.CodeAttributeArgument[])" />
       <MemberType>Constructor</MemberType>

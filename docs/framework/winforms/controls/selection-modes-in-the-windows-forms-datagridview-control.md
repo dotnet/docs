@@ -23,7 +23,7 @@ manager: "wpickett"
 # Selection Modes in the Windows Forms DataGridView Control
 Sometimes you want your application to perform actions based on user selections within a <xref:System.Windows.Forms.DataGridView> control. Depending on the actions, you may want to restrict the kinds of selection that are possible. For example, suppose your application can print a report for the currently selected record. In this case, you may want to configure the <xref:System.Windows.Forms.DataGridView> control so that clicking anywhere within a row always selects the entire row, and so that only one row at a time can be selected.  
   
- You can specify the selections allowed by setting the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property to one of the following <xref:System.Windows.Forms.DataGridViewSelectionMode> enumeration values.  
+ You can specify the selections allowed by setting the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType> property to one of the following <xref:System.Windows.Forms.DataGridViewSelectionMode> enumeration values.  
   
 |DataGridViewSelectionMode value|Description|  
 |-------------------------------------|-----------------|  

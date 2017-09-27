@@ -79,7 +79,7 @@ translation.priority.ht:
   
 -   Structure variable declarations cannot specify initializers or initial sizes for arrays; class variable declarations can.  
   
--   Structures implicitly inherit from the <xref:System.ValueType?displayProperty=fullName> class and cannot inherit from any other type; classes can inherit from any class or classes other than <xref:System.ValueType?displayProperty=fullName>.  
+-   Structures implicitly inherit from the <xref:System.ValueType?displayProperty=nameWithType> class and cannot inherit from any other type; classes can inherit from any class or classes other than <xref:System.ValueType?displayProperty=nameWithType>.  
   
 -   Structures are not inheritable; classes are.  
   

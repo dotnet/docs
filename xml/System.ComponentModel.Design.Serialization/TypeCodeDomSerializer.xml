@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.GetInitializeMethod%2A> method returns the method to emit all of the initialization code for the given member. The default implementation returns an empty constructor. If the same method is to be returned for multiple values, the same instance of the method should be returned. You can use the <xref:System.CodeDom.CodeObject.UserData%2A?displayProperty=fullName> dictionary to remember methods you have created. The `typeDecl` parameter can also be used to add infrastructure methods. For example, if you want to emit a separate method for each object, you need a single method that calls all of these methods in turn. This method can be added to the code type declaration as needed.  
+ The <xref:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.GetInitializeMethod%2A> method returns the method to emit all of the initialization code for the given member. The default implementation returns an empty constructor. If the same method is to be returned for multiple values, the same instance of the method should be returned. You can use the <xref:System.CodeDom.CodeObject.UserData%2A?displayProperty=nameWithType> dictionary to remember methods you have created. The `typeDecl` parameter can also be used to add infrastructure methods. For example, if you want to emit a separate method for each object, you need a single method that calls all of these methods in turn. This method can be added to the code type declaration as needed.  
   
  ]]></format>
         </remarks>

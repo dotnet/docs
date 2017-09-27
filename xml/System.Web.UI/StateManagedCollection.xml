@@ -176,7 +176,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A?displayProperty=fullName> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method to return a default instance of the <xref:System.Web.UI.IStateManager> type identified by the provided `index`, which maps to one of the types returned by the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method.  
+ The <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.StateManagedCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A?displayProperty=nameWithType> method. Derived collections override the <xref:System.Web.UI.StateManagedCollection.CreateKnownType%2A> method to return a default instance of the <xref:System.Web.UI.IStateManager> type identified by the provided `index`, which maps to one of the types returned by the <xref:System.Web.UI.StateManagedCollection.GetKnownTypes%2A> method.  
   
    
   

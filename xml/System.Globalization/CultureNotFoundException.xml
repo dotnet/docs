@@ -37,11 +37,11 @@
 ## Remarks  
  A <xref:System.Globalization.CultureNotFoundException> exception is thrown whenever the construction of an invalid culture is eventually attempted within a method. Most commonly, this exception is thrown when a call to one of the following methods fails to create or return a culture:  
   
--   <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=fullName> constructors.  
+-   <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=nameWithType> constructors.  
   
--   The <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method.  
+-   The <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method.  
   
--   The <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName> method.  
+-   The <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=nameWithType> method.  
   
 > [!WARNING]
 >  On Windows 7 and later operating systems, the .NET Framework retrieves culture data from the operating system. The <xref:System.Globalization.CultureNotFoundException> exception is thrown if the operating system is unable to find the culture, and the culture is not a custom culture or a replacement culture.  

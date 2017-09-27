@@ -54,25 +54,25 @@ manager: "wpickett"
   
  Examples of these are:  
   
--   <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.HostSecurityManager.DomainPolicy%2A?displayProperty=fullName>  
+-   <xref:System.Security.HostSecurityManager.DomainPolicy%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.Policy.PolicyLevel.CreateAppDomainLevel%2A?displayProperty=fullName>  
+-   <xref:System.Security.Policy.PolicyLevel.CreateAppDomainLevel%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.SecurityManager.LoadPolicyLevelFromString%2A?displayProperty=fullName>  
+-   <xref:System.Security.SecurityManager.LoadPolicyLevelFromString%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.SecurityManager.LoadPolicyLevelFromFile%2A?displayProperty=fullName>  
+-   <xref:System.Security.SecurityManager.LoadPolicyLevelFromFile%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.SecurityManager.ResolvePolicy%2A?displayProperty=fullName>  
+-   <xref:System.Security.SecurityManager.ResolvePolicy%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.SecurityManager.ResolveSystemPolicy%2A?displayProperty=fullName>  
+-   <xref:System.Security.SecurityManager.ResolveSystemPolicy%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.SecurityManager.ResolvePolicyGroups%2A?displayProperty=fullName>  
+-   <xref:System.Security.SecurityManager.ResolvePolicyGroups%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.SecurityManager.PolicyHierarchy%2A?displayProperty=fullName>  
+-   <xref:System.Security.SecurityManager.PolicyHierarchy%2A?displayProperty=nameWithType>  
   
--   <xref:System.Security.SecurityManager.SavePolicy%2A?displayProperty=fullName>  
+-   <xref:System.Security.SecurityManager.SavePolicy%2A?displayProperty=nameWithType>  
   
 <a name="implicit_use"></a>   
 ## Implicit Use  
@@ -80,27 +80,27 @@ manager: "wpickett"
   
  Here are some examples. The obsolete overloads are those that take <xref:System.Security.Policy.Evidence> as a parameter:  
   
--   <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=fullName>  
+-   <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType>  
   
--   <xref:System.AppDomain.CreateInstanceFrom%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.CreateInstanceFrom%2A?displayProperty=nameWithType>  
   
--   <xref:System.AppDomain.CreateInstanceAndUnwrap%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.CreateInstanceAndUnwrap%2A?displayProperty=nameWithType>  
   
--   <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType>  
   
--   <xref:System.AppDomain.ExecuteAssemblyByName%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.ExecuteAssemblyByName%2A?displayProperty=nameWithType>  
   
--   <xref:System.AppDomain.Load%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
   
--   <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
   
 <a name="errors_and_warnings"></a>   
 ## Errors and Warnings  
- The obsolete types and members produce the following error messages when they are used. Note that the <xref:System.Security.Policy.Evidence?displayProperty=fullName> type itself is not obsolete.  
+ The obsolete types and members produce the following error messages when they are used. Note that the <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> type itself is not obsolete.  
   
  Compile-time warning:  
   
@@ -116,24 +116,24 @@ manager: "wpickett"
 ### Determining an Assembly’s Trust Level  
  CAS policy is often used to determine an assembly’s or application domain’s permission grant set or trust level. The [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] exposes the following useful properties that do not need to resolve security policy:  
   
--   <xref:System.Reflection.Assembly.PermissionSet%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.Assembly.PermissionSet%2A?displayProperty=nameWithType>  
   
--   <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType>  
   
--   <xref:System.AppDomain.PermissionSet%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.PermissionSet%2A?displayProperty=nameWithType>  
   
--   <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName>  
+-   <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType>  
   
 ### Application Domain Sandboxing  
- The <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=fullName> method is typically used for sandboxing the assemblies in an application domain. The [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] exposes members that do not have to use <xref:System.Security.Policy.PolicyLevel> for this purpose. For more information, see [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
+ The <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType> method is typically used for sandboxing the assemblies in an application domain. The [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] exposes members that do not have to use <xref:System.Security.Policy.PolicyLevel> for this purpose. For more information, see [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
   
 ### Determining a Safe or Reasonable Permission Set for Partially Trusted Code  
- Hosts often need to determine the permissions that are appropriate for sandboxing hosted code. Before the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], CAS policy provided a way to do this with the <xref:System.Security.SecurityManager.ResolvePolicy%2A?displayProperty=fullName> method. As a replacement, [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] provides the <xref:System.Security.SecurityManager.GetStandardSandbox%2A?displayProperty=fullName> method, which returns a safe, standard permission set for the provided evidence.  
+ Hosts often need to determine the permissions that are appropriate for sandboxing hosted code. Before the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], CAS policy provided a way to do this with the <xref:System.Security.SecurityManager.ResolvePolicy%2A?displayProperty=nameWithType> method. As a replacement, [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] provides the <xref:System.Security.SecurityManager.GetStandardSandbox%2A?displayProperty=nameWithType> method, which returns a safe, standard permission set for the provided evidence.  
   
 ### Non-Sandboxing Scenarios: Overloads for Assembly Loads  
- The reason for using an assembly load overload might be to use parameters that are not otherwise available, instead of sandboxing the assembly. Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], assembly load overloads that do not require a <xref:System.Security.Policy.Evidence?displayProperty=fullName> object as a parameter, for example, <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.String%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Configuration.Assemblies.AssemblyHashAlgorithm%29?displayProperty=fullName>, enable this scenario.  
+ The reason for using an assembly load overload might be to use parameters that are not otherwise available, instead of sandboxing the assembly. Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], assembly load overloads that do not require a <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> object as a parameter, for example, <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.String%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Configuration.Assemblies.AssemblyHashAlgorithm%29?displayProperty=nameWithType>, enable this scenario.  
   
- If you want to sandbox an assembly, use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> overload.  
+ If you want to sandbox an assembly, use the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> overload.  
   
 <a name="compatibility"></a>   
 ## Compatibility: Using the CAS Policy Legacy Option  

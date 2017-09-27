@@ -19,7 +19,7 @@
  For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and "Implementing a Type Converter".  
   
 > [!NOTE]
->  You should never create an instance of the <xref:System.Windows.Forms.CursorConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=fullName> method. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+>  You should never create an instance of the <xref:System.Windows.Forms.CursorConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=nameWithType> method. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
   
  ]]></format>
     </remarks>

@@ -22,7 +22,7 @@ manager: "wpickett"
 This document describes how to unlink a target dataflow block from its source.  
   
 > [!TIP]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=fullName> namespace) is not distributed with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=nameWithType> namespace) is not distributed with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
   
 ## Example  
  The following example creates three <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> objects, each of which calls the `TrySolution` method to compute a value. This example requires only the result from the first call to `TrySolution` to finish.  

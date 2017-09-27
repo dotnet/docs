@@ -233,7 +233,7 @@
     </Member>
     <Member MemberName="GetNext">
       <MemberSignature Language="C#" Value="protected virtual object GetNext (out long objID);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetNext(int64 objID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetNext([out] int64&amp; objID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.GetNext(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

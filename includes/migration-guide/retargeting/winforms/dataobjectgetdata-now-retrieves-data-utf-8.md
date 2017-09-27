@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5.2|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Windows.DataObject.GetData(System.String)?displayProperty=fullName></li><li><xref:System.Windows.DataObject.GetData(System.Type)?displayProperty=fullName></li><li><xref:System.Windows.DataObject.GetData(System.String%2CSystem.Boolean)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.DataObject.GetData(System.String)?displayProperty=nameWithType></li><li><xref:System.Windows.DataObject.GetData(System.Type)?displayProperty=nameWithType></li><li><xref:System.Windows.DataObject.GetData(System.String%2CSystem.Boolean)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0073</li></ul>|
 

@@ -23,7 +23,7 @@ This topic shows how to open an Office Open XML document and access parts within
 ## Example  
  The following example opens an Office Open XML document, and prints the document part and the style part to the console.  
   
- This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
+ This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
 ```csharp  
 const string fileName = "SampleDoc.docx";  

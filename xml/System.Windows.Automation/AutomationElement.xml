@@ -999,7 +999,7 @@
 ## Remarks  
  <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache for the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
   
- Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=fullName>.  
+ Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=nameWithType>.  
   
  If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, if `ignoreDefaultValue` is `false`, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
   
@@ -1199,7 +1199,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=fullName>.  
+ Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=nameWithType>.  
   
  If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, if `ignoreDefaultValue` is `false`, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
   
@@ -3066,7 +3066,7 @@
     </Member>
     <Member MemberName="TryGetCachedPattern">
       <MemberSignature Language="C#" Value="public bool TryGetCachedPattern (System.Windows.Automation.AutomationPattern pattern, out object patternObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCachedPattern(class System.Windows.Automation.AutomationPattern pattern, object patternObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCachedPattern(class System.Windows.Automation.AutomationPattern pattern, [out] object&amp; patternObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCachedPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3101,7 +3101,7 @@
     </Member>
     <Member MemberName="TryGetClickablePoint">
       <MemberSignature Language="C#" Value="public bool TryGetClickablePoint (out System.Windows.Point pt);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClickablePoint(valuetype System.Windows.Point pt) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClickablePoint([out] valuetype System.Windows.Point&amp; pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetClickablePoint(System.Windows.Point@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3139,7 +3139,7 @@
     </Member>
     <Member MemberName="TryGetCurrentPattern">
       <MemberSignature Language="C#" Value="public bool TryGetCurrentPattern (System.Windows.Automation.AutomationPattern pattern, out object patternObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCurrentPattern(class System.Windows.Automation.AutomationPattern pattern, object patternObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCurrentPattern(class System.Windows.Automation.AutomationPattern pattern, [out] object&amp; patternObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCurrentPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

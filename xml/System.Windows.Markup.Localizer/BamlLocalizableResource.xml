@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Localization comments are authored by the developer to provide rules or hints for localizers. The comments are free-form strings that are extracted from [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] or from localization comments files. To attach comments to an element in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], use the <xref:System.Windows.Localization.Comments%2A?displayProperty=fullName> attached property For more information on this attached property, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
+ Localization comments are authored by the developer to provide rules or hints for localizers. The comments are free-form strings that are extracted from [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] or from localization comments files. To attach comments to an element in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], use the <xref:System.Windows.Localization.Comments%2A?displayProperty=nameWithType> attached property For more information on this attached property, see [Localization Attributes and Comments](~/docs/framework/wpf/advanced/localization-attributes-and-comments.md).  
   
 <a name="xamlTextUsage_Comments"></a>   
 ## XAML Text Usage  

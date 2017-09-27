@@ -527,7 +527,7 @@
     </Member>
     <Member MemberName="OnGettingValue">
       <MemberSignature Language="C#" Value="protected virtual void OnGettingValue (object key, ref object value, out bool canCache);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGettingValue(object key, object value, bool canCache) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGettingValue(object key, object&amp; value, [out] bool&amp; canCache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceDictionary.OnGettingValue(System.Object,System.Object@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

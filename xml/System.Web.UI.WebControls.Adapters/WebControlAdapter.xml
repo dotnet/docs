@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.IsEnabled%2A> property provides access for the adapter and any of its derived classes to the <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=fullName> property. <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=fullName> scans the hierarchy of parent controls and returns `true` only if the Web control and all its parents are enabled.  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.IsEnabled%2A> property provides access for the adapter and any of its derived classes to the <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=nameWithType> property. <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=nameWithType> scans the hierarchy of parent controls and returns `true` only if the Web control and all its parents are enabled.  
   
  ]]></format>
         </remarks>
@@ -144,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> method generates target-specific markup to send to the client browser. <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> is called in place of the <xref:System.Web.UI.WebControls.WebControl.Render%2A?displayProperty=fullName> method if a <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter> object is attached to a <xref:System.Web.UI.WebControls.WebControl> object.  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> method generates target-specific markup to send to the client browser. <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> is called in place of the <xref:System.Web.UI.WebControls.WebControl.Render%2A?displayProperty=nameWithType> method if a <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter> object is attached to a <xref:System.Web.UI.WebControls.WebControl> object.  
   
  ]]></format>
         </remarks>
@@ -216,7 +216,7 @@
   
  Override <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> to generate target-specific inner markup to send to the client browser.  
   
- The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method calls <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=fullName>. The <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=fullName> base method calls <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName>, which in turn calls <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=fullName>. Thus, overrides of <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> should call the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method only if its processing is in addition to, rather than instead of, <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method calls <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=nameWithType>. The <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=nameWithType> base method calls <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType>, which in turn calls <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=nameWithType>. Thus, overrides of <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> should call the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method only if its processing is in addition to, rather than instead of, <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

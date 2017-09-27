@@ -7,5 +7,5 @@
 |Scope|Minor|
 |Version|4.6|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=fullName></li><li><xref:System.Threading.Thread.CurrentCulture?displayProperty=fullName></li><li><xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=fullName></li><li><xref:System.Threading.Thread.CurrentUICulture?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType></li><li><xref:System.Threading.Thread.CurrentCulture?displayProperty=nameWithType></li><li><xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType></li><li><xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType></li></ul>|
 

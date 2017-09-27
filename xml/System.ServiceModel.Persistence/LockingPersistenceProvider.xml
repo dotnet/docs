@@ -452,7 +452,7 @@
     </Member>
     <Member MemberName="LoadIfChanged">
       <MemberSignature Language="C#" Value="public override bool LoadIfChanged (TimeSpan timeout, object instanceToken, out object instance);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, object instance) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, [out] object&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -479,7 +479,7 @@
     </Member>
     <Member MemberName="LoadIfChanged">
       <MemberSignature Language="C#" Value="public virtual bool LoadIfChanged (TimeSpan timeout, object instanceToken, bool lockInstance, out object instance);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, bool lockInstance, object instance) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, bool lockInstance, [out] object&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Boolean,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

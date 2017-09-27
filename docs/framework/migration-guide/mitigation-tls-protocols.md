@@ -16,7 +16,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Mitigation: TLS Protocols
-Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displayProperty=fullName> and <xref:System.Net.Security.SslStream?displayProperty=fullName> classes are allowed to use one of the following three protocols: Tls1.0, Tls1.1, or Tls 1.2. The SSL3.0 protocol and RC4 cipher are not supported.  
+Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType> classes are allowed to use one of the following three protocols: Tls1.0, Tls1.1, or Tls 1.2. The SSL3.0 protocol and RC4 cipher are not supported.  
   
 ## Impact  
  This change affects:  

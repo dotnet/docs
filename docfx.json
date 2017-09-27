@@ -16,7 +16,8 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "src": "docs",
         "dest": ".",
@@ -54,7 +55,8 @@
       },
       {
         "files": [
-          "core/**/*.md"
+          "core/**/*.md",
+          "core/**/*.yml"
         ]
       },
       {
@@ -129,7 +131,8 @@
         "_vblang/spec/*.md": "language-reference"
      },
       "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"]
+        "api/**.yml": ["csharp", "vb", "cpp"],
+        "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
       },
       "ROBOTS": {
         "api/**.yml": "NOINDEX, NOFOLLOW"
@@ -140,6 +143,7 @@
       },
       "ms.technology": {
         "_csharplang/spec/*.md": "devlang-csharp",
+        "csharp/quick-starts/**": "csharp-interactive",
         "_vblang/spec/*.md": "devlang-visual-basic"
       },
       "ms.date": {

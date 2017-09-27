@@ -890,7 +890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Net.Mail.MailMessage.HeadersEncoding%2A> property defaults to <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName>.  
+ The value of the <xref:System.Net.Mail.MailMessage.HeadersEncoding%2A> property defaults to <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType>.  
   
  SMTP messages consist of headers and body parts. The IETF RFCs for SMTP restrict the header and body part names to be ASCII. However, the IETF RFCs allow header and body part values to contain Unicode characters. In any particular value, if non-ASCII characters exist, then the value is encoded using a combination of character encoding (UTF8 or Shift-JIS, for example) followed by byte encoding (<xref:System.Net.Mime.TransferEncoding.Base64> or <xref:System.Net.Mime.TransferEncoding.QuotedPrintable> for example). The result is usually that only ASCII characters are in the network transmission stream.  
   

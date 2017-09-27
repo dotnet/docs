@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=fullName> method to initialize the output cache for a page and its contents at run time.  
+ The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=nameWithType> method to initialize the output cache for a page and its contents at run time.  
   
  ]]></format>
     </remarks>
@@ -225,7 +225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you specify "browser" for this property, the cache entry will be varied by browser type and major version number. If a custom string is entered, you must override the <xref:System.Web.HttpApplication.GetVaryByCustomString%2A?displayProperty=fullName> method in your application's Global.asax file.  
+ If you specify "browser" for this property, the cache entry will be varied by browser type and major version number. If a custom string is entered, you must override the <xref:System.Web.HttpApplication.GetVaryByCustomString%2A?displayProperty=nameWithType> method in your application's Global.asax file.  
   
  ]]></format>
         </remarks>

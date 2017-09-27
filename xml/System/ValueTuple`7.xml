@@ -765,7 +765,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, *Item7*, where *Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, and *Item7* represent the values of the <xref:System.ValueTuple%607.Item1>, <xref:System.ValueTuple%607.Item2>, <xref:System.ValueTuple%607.Item3>, <xref:System.ValueTuple%607.Item4>, <xref:System.ValueTuple%607.Item5>, <xref:System.ValueTuple%607.Item6>, and <xref:System.ValueTuple%607.Item7> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+ The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, *Item7*, where *Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, and *Item7* represent the values of the <xref:System.ValueTuple%607.Item1>, <xref:System.ValueTuple%607.Item2>, <xref:System.ValueTuple%607.Item3>, <xref:System.ValueTuple%607.Item4>, <xref:System.ValueTuple%607.Item5>, <xref:System.ValueTuple%607.Item6>, and <xref:System.ValueTuple%607.Item7> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

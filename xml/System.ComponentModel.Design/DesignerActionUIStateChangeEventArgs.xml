@@ -43,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event, the `relatedObject` parameter always references the <xref:System.ComponentModel.Component?displayProperty=fullName> that the panel is associated with.  
+ For the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event, the `relatedObject` parameter always references the <xref:System.ComponentModel.Component?displayProperty=nameWithType> that the panel is associated with.  
   
  ]]></format>
         </remarks>

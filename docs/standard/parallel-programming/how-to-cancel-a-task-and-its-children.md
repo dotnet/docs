@@ -35,13 +35,13 @@ These examples show how to perform the following tasks:
  [!code-csharp[TPL_Cancellation#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_cancellation/cs/cancel1.cs#04)]
  [!code-vb[TPL_Cancellation#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_cancellation/vb/cancel1.vb#04)]  
   
- The <xref:System.Threading.Tasks.Task?displayProperty=fullName> class is fully integrated with the cancellation model that is based on the <xref:System.Threading.CancellationTokenSource?displayProperty=fullName> and <xref:System.Threading.CancellationToken?displayProperty=fullName> types. For more information, see [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md) and [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md).  
+ The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class is fully integrated with the cancellation model that is based on the <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType> and <xref:System.Threading.CancellationToken?displayProperty=nameWithType> types. For more information, see [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md) and [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md).  
   
 ## See Also  
- <xref:System.Threading.CancellationTokenSource?displayProperty=fullName>   
- <xref:System.Threading.CancellationToken?displayProperty=fullName>   
- <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
- <xref:System.Threading.Tasks.Task%601?displayProperty=fullName>   
+ <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType>   
+ <xref:System.Threading.CancellationToken?displayProperty=nameWithType>   
+ <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>   
+ <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>   
  [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)   
  [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)   
  [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

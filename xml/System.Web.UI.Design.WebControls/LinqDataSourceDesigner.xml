@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method can be called if the <xref:System.Web.UI.Control.Site%2A?displayProperty=fullName> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=fullName> interface. In that case, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property value is `true`.  
+ The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method can be called if the <xref:System.Web.UI.Control.Site%2A?displayProperty=nameWithType> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=nameWithType> interface. In that case, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property value is `true`.  
   
  If the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property is `true`, the **Configure Data Source** menu item is displayed in the **LinqDataSource Tasks** menu of the associated control on the visual designer surface. When this item is selected, the **Configure Data Source** wizard is started.  
   
@@ -112,7 +112,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema%2A> method can be called if all the following conditions are true:  
   
--   The <xref:System.Web.UI.Control.Site%2A?displayProperty=fullName> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=fullName> interface.  
+-   The <xref:System.Web.UI.Control.Site%2A?displayProperty=nameWithType> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=nameWithType> interface.  
   
 -   The <xref:System.Web.UI.WebControls.LinqDataSourceView.ContextTypeName%2A> property contains a value.  
   

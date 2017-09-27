@@ -19,7 +19,7 @@ manager: "wpickett"
 
 *Collectible assemblies* are dynamic assemblies that can be unloaded without unloading the application domain in which they were created. All managed and unmanaged memory used by a collectible assembly and the types it contains can be reclaimed. Information such as the assembly name is removed from internal tables.
 
-To enable unloading, use the <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndCollect?displayProperty=fullName> flag when you create a dynamic assembly. The assembly is transient (that is, it cannot be saved) and is subject to limitations described in the [Restrictions on Collectible Assemblies](#restrictions-on-collectible-assemblies) section. The common language runtime (CLR) unloads a collectible assembly automatically when you release all objects associated with the assembly. In all other respects, collectible assemblies are created and used in the same way as other dynamic assemblies.
+To enable unloading, use the <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndCollect?displayProperty=nameWithType> flag when you create a dynamic assembly. The assembly is transient (that is, it cannot be saved) and is subject to limitations described in the [Restrictions on Collectible Assemblies](#restrictions-on-collectible-assemblies) section. The common language runtime (CLR) unloads a collectible assembly automatically when you release all objects associated with the assembly. In all other respects, collectible assemblies are created and used in the same way as other dynamic assemblies.
 
 ## Lifetime of collectible assemblies
 
@@ -66,7 +66,7 @@ The following restrictions apply to collectible assemblies:
    No COM interfaces can be defined within a collectible assembly, and no instances of types within a collectible assembly can be converted into COM objects. A type in a collectible assembly cannot serve as a COM callable wrapper (CCW) or runtime callable wrapper (RCW). However, types in collectible assemblies can use objects that implement COM interfaces.
 
 - **Platform invoke**   
-   Methods that have the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute will not compile when they are declared in a collectible assembly. The <xref:System.Reflection.Emit.OpCodes.Calli?displayProperty=fullname> instruction cannot be used in the implementation of a type in a collectible assembly, and such types cannot be marshaled to unmanaged code. However, you can call into native code by using an entry point that is declared in a non-collectible assembly.
+   Methods that have the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute will not compile when they are declared in a collectible assembly. The <xref:System.Reflection.Emit.OpCodes.Calli?displayProperty=nameWithType> instruction cannot be used in the implementation of a type in a collectible assembly, and such types cannot be marshaled to unmanaged code. However, you can call into native code by using an entry point that is declared in a non-collectible assembly.
  
 - **Marshaling**   
    Objects (in particular, delegates) that are defined in collectible assemblies cannot be marshaled. This is a restriction on all transient emitted types.

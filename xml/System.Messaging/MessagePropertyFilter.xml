@@ -24,7 +24,7 @@
 ## Remarks  
  Setting the <xref:System.Messaging.MessagePropertyFilter> on a <xref:System.Messaging.MessageQueue> instance controls the set of properties that are retrieved when peeking or receiving a message. The filter is set on the instance of <xref:System.Messaging.MessageQueue> that retrieves the message information. When you set a <xref:System.Messaging.MessagePropertyFilter> Boolean-valued member to `false`, you prevent the information of the associated <xref:System.Messaging.Message> property from being retrieved by the <xref:System.Messaging.MessageQueue>.  
   
- There are several filter properties that are not Boolean values. They are integer values that get or set the default sizes of the <xref:System.Messaging.Message.Body%2A?displayProperty=fullName>, <xref:System.Messaging.Message.Extension%2A?displayProperty=fullName>, or <xref:System.Messaging.Message.Label%2A?displayProperty=fullName>.  
+ There are several filter properties that are not Boolean values. They are integer values that get or set the default sizes of the <xref:System.Messaging.Message.Body%2A?displayProperty=nameWithType>, <xref:System.Messaging.Message.Extension%2A?displayProperty=nameWithType>, or <xref:System.Messaging.Message.Label%2A?displayProperty=nameWithType>.  
   
  Retrieving a limited set of properties helps improve performance because smaller amounts of data are transferred from the queue.  
   
@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.AcknowledgeType%2A> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages requested by the sending application. The type of acknowledgment defines when acknowledgments are returned. Set the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=fullName> property before sending the message to request a specific type of acknowledgment.  
+ The <xref:System.Messaging.Message.AcknowledgeType%2A> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages requested by the sending application. The type of acknowledgment defines when acknowledgments are returned. Set the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=nameWithType> property before sending the message to request a specific type of acknowledgment.  
   
    
   
@@ -151,11 +151,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages the system posts in the administration queue, which determines when acknowledgments are generated.  
+ The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=nameWithType> property of the <xref:System.Messaging.Message> class specifies the type of acknowledgment messages the system posts in the administration queue, which determines when acknowledgments are generated.  
   
  Acknowledgments are returned from the destination queue and posted as messages to the <xref:System.Messaging.Message.AdministrationQueue%2A> specified by the original message. The type of acknowledgment generated depends on what was requested.  
   
- Read the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property when receiving a message from an administration queue to verify the status of the message originally sent to the message queue.  
+ Read the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=nameWithType> property when receiving a message from an administration queue to verify the status of the message originally sent to the message queue.  
   
    
   
@@ -324,7 +324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.AttachSenderId%2A> property of the <xref:System.Messaging.Message> class specifies whether the <xref:System.Messaging.Message.SenderId%2A?displayProperty=fullName> should be or has been attached to the message. The <xref:System.Messaging.Message.SenderId%2A?displayProperty=fullName> is set by Message Queuing and is used by the receiving Queue Manager to verify whether the sender has access rights to a queue.  
+ The <xref:System.Messaging.Message.AttachSenderId%2A> property of the <xref:System.Messaging.Message> class specifies whether the <xref:System.Messaging.Message.SenderId%2A?displayProperty=nameWithType> should be or has been attached to the message. The <xref:System.Messaging.Message.SenderId%2A?displayProperty=nameWithType> is set by Message Queuing and is used by the receiving Queue Manager to verify whether the sender has access rights to a queue.  
   
    
   
@@ -410,7 +410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.AuthenticationProviderName%2A> property of the <xref:System.Messaging.Message> class specifies the name of the cryptographic provider used to generate the digital signature of the message. <xref:System.Messaging.Message.AuthenticationProviderName%2A?displayProperty=fullName> is typically used when working with foreign queues.  
+ The <xref:System.Messaging.Message.AuthenticationProviderName%2A> property of the <xref:System.Messaging.Message> class specifies the name of the cryptographic provider used to generate the digital signature of the message. <xref:System.Messaging.Message.AuthenticationProviderName%2A?displayProperty=nameWithType> is typically used when working with foreign queues.  
   
  A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
   
@@ -596,9 +596,9 @@
 ## Remarks  
  The <xref:System.Messaging.Message.ConnectorType%2A> property of the <xref:System.Messaging.Message> class is required when an application sets a message property that is typically set by Message Queuing. It is used in the following two instances:  
   
--   When a message is passed by a connector application, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=fullName> is required for the sending and receiving applications to interpret the security and acknowledgment properties of the message.  
+-   When a message is passed by a connector application, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=nameWithType> is required for the sending and receiving applications to interpret the security and acknowledgment properties of the message.  
   
--   When sending application-encrypted messages, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=fullName> property informs Message Queuing to use the symmetric key.  
+-   When sending application-encrypted messages, the <xref:System.Messaging.Message.ConnectorType%2A?displayProperty=nameWithType> property informs Message Queuing to use the symmetric key.  
   
    
   
@@ -1354,7 +1354,7 @@
 ## Remarks  
  The <xref:System.Messaging.Message.Recoverable%2A> property of the <xref:System.Messaging.Message> class indicates whether delivery of a message is guaranteed, even if a computer crashes while the message is en route to the destination queue.  
   
- If delivery of a message is guaranteed, the message is stored locally at every step until the message is successfully forwarded to the next computer. Setting <xref:System.Messaging.Message.Recoverable%2A?displayProperty=fullName> to `true` on the message could affect the throughput.  
+ If delivery of a message is guaranteed, the message is stored locally at every step until the message is successfully forwarded to the next computer. Setting <xref:System.Messaging.Message.Recoverable%2A?displayProperty=nameWithType> to `true` on the message could affect the throughput.  
   
    
   
@@ -1526,7 +1526,7 @@
 ## Remarks  
  The <xref:System.Messaging.Message.SenderVersion%2A> property of the <xref:System.Messaging.Message> class specifies the version of Message Queuing used to send the message. The property is important to be aware of when using features like transaction processing, which is only supported by Message Queuing version 2.0 and later, or digital signatures, which are used to authenticate messages sent by version 1.0.  
   
- <xref:System.Messaging.Message.SenderVersion%2A?displayProperty=fullName> is set by the sending queue manager when the message is sent.  
+ <xref:System.Messaging.Message.SenderVersion%2A?displayProperty=nameWithType> is set by the sending queue manager when the message is sent.  
   
    
   
@@ -1668,7 +1668,7 @@
 |<xref:System.Messaging.MessagePropertyFilter.DefaultExtensionSize%2A>|255|  
 |<xref:System.Messaging.MessagePropertyFilter.DefaultLabelSize%2A>|255|  
   
- The <xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A?displayProperty=fullName> property represents a <xref:System.Messaging.MessagePropertyFilter> on which <xref:System.Messaging.MessagePropertyFilter.SetDefaults%2A> has been called.  
+ The <xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A?displayProperty=nameWithType> property represents a <xref:System.Messaging.MessagePropertyFilter> on which <xref:System.Messaging.MessagePropertyFilter.SetDefaults%2A> has been called.  
   
    
   

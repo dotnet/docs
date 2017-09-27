@@ -456,7 +456,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.HashAlgorithmName.ToString%2A> method returns the <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property, if it has been assigned. Otherwise, it returns <xref:System.String.Empty?displayProperty=fullName>.  
+ The <xref:System.Security.Cryptography.HashAlgorithmName.ToString%2A> method returns the <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property, if it has been assigned. Otherwise, it returns <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -22,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.MessageContractAttribute> attribute to specify the structure of the SOAP envelope for a particular message. Your service can then use the message as a parameter or return type in service operations. For information about controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ Use the <xref:System.ServiceModel.MessageContractAttribute> attribute to specify the structure of the SOAP envelope for a particular message. Your service can then use the message as a parameter or return type in service operations. For information about controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
 > [!NOTE]
 >  You cannot use custom message types in your service operation with regular serializable parameters. Either use custom message types or serializable parameters that are not <xref:System.ServiceModel.Channels.Message> objects. For details, see , [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
@@ -30,7 +36,7 @@
  To implement a message contract for a type, annotate it with <xref:System.ServiceModel.MessageContractAttribute> and annotate one or more of the class's fields or properties with <xref:System.ServiceModel.MessageBodyMemberAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, or <xref:System.ServiceModel.MessageHeaderArrayAttribute>.  
   
 > [!NOTE]
->  <xref:System.ServiceModel.MessageParameterAttribute?displayProperty=fullName> is not a message contract attribute and cannot be used in conjunction with <xref:System.ServiceModel.MessageContractAttribute>.  
+>  <xref:System.ServiceModel.MessageParameterAttribute?displayProperty=nameWithType> is not a message contract attribute and cannot be used in conjunction with <xref:System.ServiceModel.MessageContractAttribute>.  
   
  Use the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> properties to specify the value of the `<Action>` element in the SOAP message.  
   
@@ -61,6 +67,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -104,6 +116,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -159,6 +177,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -186,6 +210,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

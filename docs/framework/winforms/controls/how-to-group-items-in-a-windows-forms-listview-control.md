@@ -33,7 +33,7 @@ ListView grouped items
  To enable grouping, you must first create one or more groups either in the designer or programmatically. After a group has been defined, you can assign <xref:System.Windows.Forms.ListView> items to groups. You can also move items from one group to another programmatically.  
   
 > [!NOTE]
->  <xref:System.Windows.Forms.ListView> groups are available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method. On earlier operating systems, any code relating to groups has no effect and the groups will not appear. For more information, see <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName>.  
+>  <xref:System.Windows.Forms.ListView> groups are available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to groups has no effect and the groups will not appear. For more information, see <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType>.  
   
 ### To add groups  
   
@@ -56,14 +56,14 @@ ListView grouped items
   
 ### To assign items to groups or move items between groups  
   
-1.  Set the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=fullName> property of individual items.  
+1.  Set the <xref:System.Windows.Forms.ListViewItem.Group%2A?displayProperty=nameWithType> property of individual items.  
   
      [!code-csharp[System.Windows.Forms.ListViewLegacyTopics#23](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewLegacyTopics/CS/Class1.cs#23)]
      [!code-vb[System.Windows.Forms.ListViewLegacyTopics#23](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewLegacyTopics/VB/Class1.vb#23)]  
   
 ## See Also  
  <xref:System.Windows.Forms.ListView>   
- <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.ListViewGroup>   
  [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)   
  [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)   

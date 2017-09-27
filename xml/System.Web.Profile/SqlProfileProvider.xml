@@ -310,7 +310,7 @@ aspnet_regsql.exe -A p
     </Member>
     <Member MemberName="FindInactiveProfilesByUserName">
       <MemberSignature Language="C#" Value="public override System.Web.Profile.ProfileInfoCollection FindInactiveProfilesByUserName (System.Web.Profile.ProfileAuthenticationOption authenticationOption, string usernameToMatch, DateTime userInactiveSinceDate, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection FindInactiveProfilesByUserName(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, string usernameToMatch, valuetype System.DateTime userInactiveSinceDate, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection FindInactiveProfilesByUserName(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, string usernameToMatch, valuetype System.DateTime userInactiveSinceDate, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -377,7 +377,7 @@ aspnet_regsql.exe -A p
     </Member>
     <Member MemberName="FindProfilesByUserName">
       <MemberSignature Language="C#" Value="public override System.Web.Profile.ProfileInfoCollection FindProfilesByUserName (System.Web.Profile.ProfileAuthenticationOption authenticationOption, string usernameToMatch, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection FindProfilesByUserName(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, string usernameToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection FindProfilesByUserName(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, string usernameToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -442,7 +442,7 @@ aspnet_regsql.exe -A p
     </Member>
     <Member MemberName="GetAllInactiveProfiles">
       <MemberSignature Language="C#" Value="public override System.Web.Profile.ProfileInfoCollection GetAllInactiveProfiles (System.Web.Profile.ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection GetAllInactiveProfiles(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, valuetype System.DateTime userInactiveSinceDate, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection GetAllInactiveProfiles(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, valuetype System.DateTime userInactiveSinceDate, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.GetAllInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -499,7 +499,7 @@ aspnet_regsql.exe -A p
     </Member>
     <Member MemberName="GetAllProfiles">
       <MemberSignature Language="C#" Value="public override System.Web.Profile.ProfileInfoCollection GetAllProfiles (System.Web.Profile.ProfileAuthenticationOption authenticationOption, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection GetAllProfiles(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Profile.ProfileInfoCollection GetAllProfiles(valuetype System.Web.Profile.ProfileAuthenticationOption authenticationOption, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.GetAllProfiles(System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

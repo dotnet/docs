@@ -33,7 +33,7 @@ manager: "markl"
 # Using Streams on the Network
 Network resources are represented in the .NET Framework as streams. By treating streams generically, the .NET Framework offers the following capabilities:  
   
--   A common way to send and receive Web data. Whatever the actual contents of the file — HTML, XML, or anything else — your application will use <xref:System.IO.Stream.Write%2A?displayProperty=fullName> and <xref:System.IO.Stream.Read%2A?displayProperty=fullName> to send and receive data.  
+-   A common way to send and receive Web data. Whatever the actual contents of the file — HTML, XML, or anything else — your application will use <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> to send and receive data.  
   
 -   Compatibility with streams across the .NET Framework. Streams are used throughout the .NET Framework, which has a rich infrastructure for handling them. For example, you can modify an application that reads XML data from a <xref:System.IO.FileStream> to read data from a <xref:System.Net.Sockets.NetworkStream> instead by changing only the few lines of code that initialize the stream. The major differences between the **NetworkStream** class and other streams are that **NetworkStream** is not seekable, the <xref:System.Net.Sockets.NetworkStream.CanSeek%2A> property always returns **false**, and the <xref:System.Net.Sockets.NetworkStream.Seek%2A> and <xref:System.Net.Sockets.NetworkStream.Position%2A> methods throw a <xref:System.NotSupportedException>.  
   

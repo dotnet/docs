@@ -419,7 +419,7 @@
  `pt` is points; 1pt==(96/72) px  
   
  Auto  
- Causes the line height to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
+ Causes the line height to be determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_LineHeight"></a>   
 ## Dependency Property Information  
@@ -440,7 +440,7 @@
   
  ![Screenshot: FlowDocument LineHeight](~/add/media/flowdocument-lineheight.png "Screenshot: FlowDocument LineHeight")  
   
- The following figure shows how the same example renders with the default setting of <xref:System.Windows.Documents.ListItem.LineHeight%2A>=<xref:System.Double.NaN?displayProperty=fullName>.  
+ The following figure shows how the same example renders with the default setting of <xref:System.Windows.Documents.ListItem.LineHeight%2A>=<xref:System.Double.NaN?displayProperty=nameWithType>.  
   
  ![Screenshot: FlowDocument LineHeight default](~/add/media/flowdocument-lineheightdefault.png "Screenshot: FlowDocument LineHeight default")  
   

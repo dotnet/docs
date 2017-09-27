@@ -555,7 +555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ImageButton.GetPostBackOptions%2A> method creates a <xref:System.Web.UI.PostBackOptions> object that represents the <xref:System.Web.UI.WebControls.ImageButton> control's postback behavior. The <xref:System.Web.UI.PostBackOptions> object is then typically passed to the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%28System.Web.UI.PostBackOptions%29?displayProperty=fullName> method, which is used to obtain a reference to a client-side script function that, when invoked, causes the server to postback to the page.  
+ The <xref:System.Web.UI.WebControls.ImageButton.GetPostBackOptions%2A> method creates a <xref:System.Web.UI.PostBackOptions> object that represents the <xref:System.Web.UI.WebControls.ImageButton> control's postback behavior. The <xref:System.Web.UI.PostBackOptions> object is then typically passed to the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%28System.Web.UI.PostBackOptions%29?displayProperty=nameWithType> method, which is used to obtain a reference to a client-side script function that, when invoked, causes the server to postback to the page.  
   
  This method is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.ImageButton> class.  
   
@@ -830,7 +830,7 @@ End Sub
  <!-- TODO: review snippet reference [!code-csharp[ImageButton.PostBackUrlProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/CS/imagebutton.postbackurlpropertycs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[ImageButton.PostBackUrlProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/VB/imagebutton.postbackurlpropertyvb.aspx#1)]  -->  
   
- The following code example demonstrates how to use the <xref:System.Web.UI.Page.PreviousPage%2A?displayProperty=fullName> property to access a value that was posted from another page using the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. This page gets the string that was posted from the previous page and displays it to the user. If you attempt to run this code example directly, you will get an error because the value of the `Text` field will be `null`. Instead, use this code to create a target page and place the file in the same directory as the code for the previous example. The name of the file must correspond to the value specified for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property in the previous example. When you run the code for the previous example, this page will execute automatically when the cross-page post occurs.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.Page.PreviousPage%2A?displayProperty=nameWithType> property to access a value that was posted from another page using the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. This page gets the string that was posted from the previous page and displays it to the user. If you attempt to run this code example directly, you will get an error because the value of the `Text` field will be `null`. Instead, use this code to create a target page and place the file in the same directory as the code for the previous example. The name of the file must correspond to the value specified for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property in the previous example. When you run the code for the previous example, this page will execute automatically when the cross-page post occurs.  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
@@ -919,7 +919,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -951,7 +951,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
  ]]></format>
         </remarks>
@@ -976,7 +976,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ The <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
  ]]></format>
         </remarks>
@@ -1004,7 +1004,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
+ The <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
   
  ]]></format>
         </remarks>

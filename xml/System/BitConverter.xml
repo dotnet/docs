@@ -64,7 +64,7 @@
      [!code-csharp[System.BitConverter.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.BitConverter.Class/CS/networkorder1.cs#4)]
      [!code-vb[System.BitConverter.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.BitConverter.Class/VB/networkorder1.vb#4)]  
   
--   If systems sending and receiving data can have different endianness and the data to be transmitted consists of signed integers, call the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=fullName> method to convert the data to network byte order and the <xref:System.Net.IPAddress.NetworkToHostOrder%2A?displayProperty=fullName> method to convert it to the order required by the recipient.  
+-   If systems sending and receiving data can have different endianness and the data to be transmitted consists of signed integers, call the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=nameWithType> method to convert the data to network byte order and the <xref:System.Net.IPAddress.NetworkToHostOrder%2A?displayProperty=nameWithType> method to convert it to the order required by the recipient.  
   
    
   
@@ -784,7 +784,7 @@
  Different computer architectures store data using different byte orders. "Big-endian" means the most significant byte is on the left end of a word. "Little-endian" means the most significant byte is on the right end of a word.  
   
 > [!NOTE]
->  You can convert from network byte order to the byte order of the host computer without retrieving  the value of the <xref:System.BitConverter.IsLittleEndian?displayProperty=fullName> field by passing a 16-bit, 32-bit, or 64 bit integer to the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=fullName> method.  
+>  You can convert from network byte order to the byte order of the host computer without retrieving  the value of the <xref:System.BitConverter.IsLittleEndian?displayProperty=nameWithType> field by passing a 16-bit, 32-bit, or 64 bit integer to the <xref:System.Net.IPAddress.HostToNetworkOrder%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -1397,7 +1397,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `length` elements from array position `startIndex` are converted. If `length` equals zero, the method returns <xref:System.String?displayProperty=fullName>.  
+ The `length` elements from array position `startIndex` are converted. If `length` equals zero, the method returns <xref:System.String?displayProperty=nameWithType>.  
   
  The order of hexadecimal strings returned by the <xref:System.BitConverter.ToString%2A> method depends on whether the computer architecture is little-endian or big-endian.  
   

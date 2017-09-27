@@ -298,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the contents of the current <xref:System.Web.UI.WebControls.MenuItemCollection> object into the specified zero-based <xref:System.Array?displayProperty=fullName>. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName>, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
+ Use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the contents of the current <xref:System.Web.UI.WebControls.MenuItemCollection> object into the specified zero-based <xref:System.Array?displayProperty=nameWithType>. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=nameWithType>, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
  As an alternative, you can also use the <xref:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   
@@ -479,7 +479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.MenuItemCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.MenuItemCollection> object is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false`.  
+ The <xref:System.Web.UI.WebControls.MenuItemCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.MenuItemCollection> object is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> class and is overridden to always return `false`.  
   
  For more information on the <xref:System.Web.UI.WebControls.MenuItemCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A> property of the <xref:System.Collections.ICollection> interface.  
   

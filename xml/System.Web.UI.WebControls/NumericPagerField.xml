@@ -30,9 +30,9 @@
   
 |Button type|Description|  
 |-----------------|-----------------|  
-|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.Button> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
   
  The controls inside the <xref:System.Web.UI.WebControls.NumericPagerField.NumericButtonCssClass%2A> object are rendered with non-breaking spaces between them. If you want to customize this behavior, you can use the <xref:System.Web.UI.WebControls.NumericPagerField.RenderNonBreakingSpacesBetweenControls%2A> property.  
   
@@ -40,7 +40,7 @@
   
  You can set the text of the next-page button by setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageText%2A> property. You can set the text of the previous-page button by using the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageText%2A> property.  
   
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, you must provide the URL of an image that will be displayed for the next-page and previous page buttons. You do this by setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> properties. In that case, the corresponding text property is used as the alternate text for the image. For example, the text that is specified by the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property is displayed as the alternate text for the next-page image button. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, you must provide the URL of an image that will be displayed for the next-page and previous page buttons. You do this by setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> properties. In that case, the corresponding text property is used as the alternate text for the image. For example, the text that is specified by the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property is displayed as the alternate text for the next-page image button. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
   
    
   
@@ -161,15 +161,15 @@
   
 |Button type value|Description|  
 |-----------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.Button> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
   
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, you must provide the URL of an image for the next-page and previous page buttons. To do this, you can use the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> properties. The corresponding text property is used as the alternate text for the image. For example, the text that is specified by the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property is displayed as the alternate text for the next-page image button. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, you must provide the URL of an image for the next-page and previous page buttons. To do this, you can use the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> properties. The corresponding text property is used as the alternate text for the image. For example, the text that is specified by the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property is displayed as the alternate text for the next-page image button. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
   
  The value of the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is stored in view state.  
   
- If the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=fullName> property is not an empty string or `null`, the <xref:System.Web.UI.WebControls.NumericPagerField> object ignores the value of the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A> property. In that case, the <xref:System.Web.UI.WebControls.HyperLink> control is used to create the buttons.  
+ If the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=nameWithType> property is not an empty string or `null`, the <xref:System.Web.UI.WebControls.NumericPagerField> object ignores the value of the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonCount%2A> property. In that case, the <xref:System.Web.UI.WebControls.HyperLink> control is used to create the buttons.  
   
    
   
@@ -245,7 +245,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.NumericPagerField.CreateDataPagers%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=fullName> method to create the UI controls for the pager field, such as the numeric buttons.  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.CreateDataPagers%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=nameWithType> method to create the UI controls for the pager field, such as the numeric buttons.  
   
  ]]></format>
         </remarks>
@@ -400,7 +400,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.NumericPagerField.HandleEvent%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> method to handle events that occur in the <xref:System.Web.UI.WebControls.NumericPagerField> object when one of the buttons inside the control is clicked.  
+ The <xref:System.Web.UI.WebControls.NumericPagerField.HandleEvent%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=nameWithType> method to handle events that occur in the <xref:System.Web.UI.WebControls.NumericPagerField> object when one of the buttons inside the control is clicked.  
   
  The <xref:System.Web.UI.WebControls.NumericPagerField.HandleEvent%2A> method examines the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object that is contained in the `e` parameter, and then performs the appropriate action.  
   
@@ -409,8 +409,8 @@
 |Button|CommandName value|Action|  
 |------------|-----------------------|------------|  
 |Number|Page number|Navigates to the corresponding page of data.|  
-|Previous page|<xref:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument?displayProperty=fullName>|Displays the previous set of page numbers and navigates to the last page of data in that set.|  
-|Next page|<xref:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument?displayProperty=fullName>|Displays the previous set of page numbers and navigates to the first page of data in that set.|  
+|Previous page|<xref:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument?displayProperty=nameWithType>|Displays the previous set of page numbers and navigates to the last page of data in that set.|  
+|Next page|<xref:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument?displayProperty=nameWithType>|Displays the previous set of page numbers and navigates to the first page of data in that set.|  
   
  ]]></format>
         </remarks>
@@ -449,9 +449,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, use the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property to specify the URL of an image that is displayed for the next-page button. The image can be in any file format that is supported in browser, such as .jpg, .gif, .bmp, and .png.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, use the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property to specify the URL of an image that is displayed for the next-page button. The image can be in any file format that is supported in browser, such as .jpg, .gif, .bmp, and .png.  
   
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to a value other than <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property has no effect.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to a value other than <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, setting the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageImageUrl%2A> property has no effect.  
   
  The value of this property is stored in view state.  
   
@@ -494,7 +494,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, the text specified in the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageText%2A> property is used as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, the text specified in the <xref:System.Web.UI.WebControls.NumericPagerField.NextPageText%2A> property is used as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
   
  The value of this property is stored in view state. It can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
@@ -643,9 +643,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, use the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> property to specify the URL of an image that is displayed for the previous-page button. The image can be in any file format that is supported in browsers, such as .jpg, .gif, .bmp, and .png.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, use the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> property to specify the URL of an image that is displayed for the previous-page button. The image can be in any file format that is supported in browsers, such as .jpg, .gif, .bmp, and .png.  
   
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to a value other than <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, setting the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> property has no effect.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to a value other than <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, setting the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageImageUrl%2A> property has no effect.  
   
  The value of this property is stored in view state.  
   
@@ -688,7 +688,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=fullName>, the text in the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageText%2A> property is used as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
+ When the <xref:System.Web.UI.WebControls.NumericPagerField.ButtonType%2A> property is set to <xref:System.Web.UI.WebControls.ButtonType?displayProperty=nameWithType>, the text in the <xref:System.Web.UI.WebControls.NumericPagerField.PreviousPageText%2A> property is used as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip for the corresponding button.  
   
  The value of this property is stored in view state. It can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   

@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.PostBackOptions> class allows controls to emit client-side script that initiates a postback event. The <xref:System.Web.UI.PostBackOptions> class also provides a reference to the control that initiated the postback event through the <xref:System.Web.UI.PostBackOptions.TargetControl%2A> property. The postback event is created based on the options specified in the <xref:System.Web.UI.PostBackOptions> object passed in to the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.PostBackOptions> class allows controls to emit client-side script that initiates a postback event. The <xref:System.Web.UI.PostBackOptions> class also provides a reference to the control that initiated the postback event through the <xref:System.Web.UI.PostBackOptions.TargetControl%2A> property. The postback event is created based on the options specified in the <xref:System.Web.UI.PostBackOptions> object passed in to the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A?displayProperty=nameWithType> method.  
   
  Normally, a postback to the server is initiated by elements such as a Submit button or an Image button. However, by emitting client-side JavaScript, different controls can initiate a postback event.  
   

@@ -22,7 +22,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Regular Expression Example: Changing Date Formats
-The following code example uses the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=fullName> method to replace dates that have the form *mm*/*dd*/*yy* with dates that have the form *dd*-*mm*-*yy*.  
+The following code example uses the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method to replace dates that have the form *mm*/*dd*/*yy* with dates that have the form *dd*-*mm*-*yy*.  
   
 ## Example  
  [!code-csharp[RegularExpressions.Examples.ChangeDateFormats#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.ChangeDateFormats/cs/Example_ChangeDateFormats1.cs#1)]

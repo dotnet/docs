@@ -23,9 +23,9 @@ The following code example shows how to modify the computer configuration file, 
   
  These settings can also be made in the configuration file for the application, which has precedence over the computer configuration file.  
   
- For .NET Framework version 1.1 and earlier, the value of the **ipv6 enabled** configuration switch specifies whether members of the <xref:System.Net.Dns?displayProperty=fullName> class return IPv6 addresses.  
+ For .NET Framework version 1.1 and earlier, the value of the **ipv6 enabled** configuration switch specifies whether members of the <xref:System.Net.Dns?displayProperty=nameWithType> class return IPv6 addresses.  
   
- For .NET Framework version 2.0 and later, if Windows supports IPv6, then all members of the <xref:System.Net.Dns?displayProperty=fullName> class (for example, the <xref:System.Net.Dns.GetHostEntry%2A?displayProperty=fullName> method), will return IPv6 addresses with one limitation. Obsolete members of the <xref:System.Net.Dns?displayProperty=fullName> class (for example, the <xref:System.Net.Dns.Resolve%2A?displayProperty=fullName> method) will read and recognize the value in the configuration file.  
+ For .NET Framework version 2.0 and later, if Windows supports IPv6, then all members of the <xref:System.Net.Dns?displayProperty=nameWithType> class (for example, the <xref:System.Net.Dns.GetHostEntry%2A?displayProperty=nameWithType> method), will return IPv6 addresses with one limitation. Obsolete members of the <xref:System.Net.Dns?displayProperty=nameWithType> class (for example, the <xref:System.Net.Dns.Resolve%2A?displayProperty=nameWithType> method) will read and recognize the value in the configuration file.  
   
 > [!NOTE]
 >  For .NET Framework version 2.0 and later, IPv6 is enabled by default. For .NET Framework version 1.1 and earlier, IPv6 is disabled by default.  

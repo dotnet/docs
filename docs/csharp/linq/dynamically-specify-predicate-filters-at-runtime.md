@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: 90238470-0767-497c-916c-52d0d16845e0
 ---
 # Dynamically specify predicate filters at runtime

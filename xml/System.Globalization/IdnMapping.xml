@@ -41,7 +41,7 @@
 >   
 >  See [Unicode Technical Standard #46: IDNA Compatibility Processing](http://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.  
   
- The <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=fullName> method normalizes a domain name, converts the normalized name to a representation that consists of displayable Unicode characters in the US-ASCII code point range (U+0020 to U+007E), and prepends an ASCII-compatible encoding (ACE) prefix ("xn--") to each label. The <xref:System.Globalization.IdnMapping.GetUnicode%2A?displayProperty=fullName> method restores the domain name labels converted by the <xref:System.Globalization.IdnMapping.GetAscii%2A> method.  
+ The <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> method normalizes a domain name, converts the normalized name to a representation that consists of displayable Unicode characters in the US-ASCII code point range (U+0020 to U+007E), and prepends an ASCII-compatible encoding (ACE) prefix ("xn--") to each label. The <xref:System.Globalization.IdnMapping.GetUnicode%2A?displayProperty=nameWithType> method restores the domain name labels converted by the <xref:System.Globalization.IdnMapping.GetAscii%2A> method.  
   
  If the string to be converted includes the label separator characters IDEOGRAPHIC FULL STOP (U+3002), FULLWIDTH FULL STOP (U+FF0E), and HALFWIDTH IDEOGRAPHIC FULL STOP (U+FF61), the <xref:System.Globalization.IdnMapping.GetAscii%2A> method converts them to the label separator FULL STOP (period, U+002E). The <xref:System.Globalization.IdnMapping.GetUnicode%2A> method, however, does not restore the original label separator character.  
   
@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.IdnMapping.AllowUnassigned%2A?displayProperty=fullName> and <xref:System.Globalization.IdnMapping.UseStd3AsciiRules%2A?displayProperty=fullName> properties are initialized to `false`. A small subset of ASCII characters other than A-Z, 0-9, the hyphen (-) character (U+002D), and the period (.) character are permitted in domain names, but unassigned Unicode code points are not.  
+ The <xref:System.Globalization.IdnMapping.AllowUnassigned%2A?displayProperty=nameWithType> and <xref:System.Globalization.IdnMapping.UseStd3AsciiRules%2A?displayProperty=nameWithType> properties are initialized to `false`. A small subset of ASCII characters other than A-Z, 0-9, the hyphen (-) character (U+002D), and the period (.) character are permitted in domain names, but unassigned Unicode code points are not.  
   
  ]]></format>
         </remarks>
@@ -504,7 +504,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method.  
+ For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method.  
   
    
   
@@ -560,7 +560,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method.  
+ For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -616,7 +616,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method.  
+ For more information about domain names, labels, and label separators, see the remarks for the <xref:System.Globalization.IdnMapping.GetAscii%28System.String%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

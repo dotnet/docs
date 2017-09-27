@@ -47,7 +47,7 @@
   
  [!code-xaml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
   
- The following example shows the event handlers for the application. When the user clicks the Submit button, the application calls <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> to run each <xref:System.Windows.Controls.ValidationRule> that is associated with the <xref:System.Windows.Data.BindingGroup>. If each <xref:System.Windows.Controls.ValidationRule> succeeds, <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> saves the values to the object and ends the edit transaction. If <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> is successful, the application begins another edit transaction. When a <xref:System.Windows.Controls.ValidationRule> fails, the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event occurs because the application set <xref:System.Windows.Data.BindingGroup.NotifyOnValidationError%2A> to `true` on the <xref:System.Windows.Data.BindingGroup> (in the previous example). `ItemError` handles the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event and displays information about the validation error to the user. The example also handles the <xref:System.Windows.FrameworkElement.Loaded> event for the <xref:System.Windows.Controls.StackPanel> and the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event for the **Cancel** button.  
+ The following example shows the event handlers for the application. When the user clicks the Submit button, the application calls <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> to run each <xref:System.Windows.Controls.ValidationRule> that is associated with the <xref:System.Windows.Data.BindingGroup>. If each <xref:System.Windows.Controls.ValidationRule> succeeds, <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> saves the values to the object and ends the edit transaction. If <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> is successful, the application begins another edit transaction. When a <xref:System.Windows.Controls.ValidationRule> fails, the <xref:System.Windows.Controls.Validation.Error?displayProperty=nameWithType> event occurs because the application set <xref:System.Windows.Data.BindingGroup.NotifyOnValidationError%2A> to `true` on the <xref:System.Windows.Data.BindingGroup> (in the previous example). `ItemError` handles the <xref:System.Windows.Controls.Validation.Error?displayProperty=nameWithType> event and displays information about the validation error to the user. The example also handles the <xref:System.Windows.FrameworkElement.Loaded> event for the <xref:System.Windows.Controls.StackPanel> and the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event for the **Cancel** button.  
   
  [!code-csharp[BindingGroupSnippets#WindowLogic](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml.cs#windowlogic)]
  [!code-vb[BindingGroupSnippets#WindowLogic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindingGroupSnippets/visualbasic/window1.xaml.vb#windowlogic)]  
@@ -97,7 +97,7 @@
 ## Remarks  
  If the sources in the <xref:System.Windows.Data.BindingGroup> support discarding pending changes, you can call <xref:System.Windows.Data.BindingGroup.BeginEdit%2A> to begin the edit transaction, call <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> to save the pending changes, call <xref:System.Windows.Data.BindingGroup.CancelEdit%2A> to discard the pending changes.  
   
- For each object in <xref:System.Windows.Data.BindingGroup.Items%2A> that implements <xref:System.ComponentModel.IEditableObject>, <xref:System.Windows.Data.BindingGroup.BeginEdit%2A> calls <xref:System.ComponentModel.IEditableObject.BeginEdit%2A?displayProperty=fullName>  
+ For each object in <xref:System.Windows.Data.BindingGroup.Items%2A> that implements <xref:System.ComponentModel.IEditableObject>, <xref:System.Windows.Data.BindingGroup.BeginEdit%2A> calls <xref:System.ComponentModel.IEditableObject.BeginEdit%2A?displayProperty=nameWithType>  
   
    
   
@@ -163,7 +163,7 @@
 ## Remarks  
  This method causes the sources to discard the pending changes, if a source object is capable of doing so and end the edit transaction. Then the method updates the target properties with the saved source values.  
   
- For each object in <xref:System.Windows.Data.BindingGroup.Items%2A> that implements <xref:System.ComponentModel.IEditableObject>, <xref:System.Windows.Data.BindingGroup.CancelEdit%2A> calls <xref:System.ComponentModel.IEditableObject.CancelEdit%2A?displayProperty=fullName>  
+ For each object in <xref:System.Windows.Data.BindingGroup.Items%2A> that implements <xref:System.ComponentModel.IEditableObject>, <xref:System.Windows.Data.BindingGroup.CancelEdit%2A> calls <xref:System.ComponentModel.IEditableObject.CancelEdit%2A?displayProperty=nameWithType>  
   
    
   
@@ -226,7 +226,7 @@
 ## Remarks  
  If every <xref:System.Windows.Controls.ValidationRule> succeeds, this method causes the sources to commit the pending changes and end the edit transaction, if a source object is capable of doing so.  
   
- For each object in <xref:System.Windows.Data.BindingGroup.Items%2A> that implements <xref:System.ComponentModel.IEditableObject>, <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> calls <xref:System.ComponentModel.IEditableObject.EndEdit%2A?displayProperty=fullName>  
+ For each object in <xref:System.Windows.Data.BindingGroup.Items%2A> that implements <xref:System.ComponentModel.IEditableObject>, <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> calls <xref:System.ComponentModel.IEditableObject.EndEdit%2A?displayProperty=nameWithType>  
   
    
   
@@ -265,7 +265,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method in the <xref:System.Windows.Controls.ValidationRule.Validate%2A?displayProperty=fullName> method to get the value to be committed to the source. The type of the return value depends on the stage at which the <xref:System.Windows.Controls.ValidationRule> occurs. For example, if a <xref:System.Windows.Controls.TextBox> is data bound to a property of type integer and the <xref:System.Windows.Controls.ValidationRule> that calls <xref:System.Windows.Data.BindingGroup.GetValue%28System.Object%2CSystem.String%29> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.RawProposedValue>, the method returns a string. If the <xref:System.Windows.Controls.ValidationRule> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue>, the method returns whatever type that is returned by the binding's converter. In this example, <xref:System.Windows.Data.BindingGroup.GetValue%28System.Object%2CSystem.String%29> usually returns an integer.  
+ Use this method in the <xref:System.Windows.Controls.ValidationRule.Validate%2A?displayProperty=nameWithType> method to get the value to be committed to the source. The type of the return value depends on the stage at which the <xref:System.Windows.Controls.ValidationRule> occurs. For example, if a <xref:System.Windows.Controls.TextBox> is data bound to a property of type integer and the <xref:System.Windows.Controls.ValidationRule> that calls <xref:System.Windows.Data.BindingGroup.GetValue%28System.Object%2CSystem.String%29> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.RawProposedValue>, the method returns a string. If the <xref:System.Windows.Controls.ValidationRule> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue>, the method returns whatever type that is returned by the binding's converter. In this example, <xref:System.Windows.Data.BindingGroup.GetValue%28System.Object%2CSystem.String%29> usually returns an integer.  
   
    
   
@@ -421,16 +421,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> attached event occurs on the element that has the <xref:System.Windows.Data.BindingGroup>.  
+ The <xref:System.Windows.Controls.Validation.Error?displayProperty=nameWithType> attached event occurs on the element that has the <xref:System.Windows.Data.BindingGroup>.  
   
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Data.BindingGroup> and sets <xref:System.Windows.Data.BindingGroup.NotifyOnValidationError%2A> to `true` so that the application can handle the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event when a <xref:System.Windows.Controls.ValidationRule> fails.  
+ The following example creates a <xref:System.Windows.Data.BindingGroup> and sets <xref:System.Windows.Data.BindingGroup.NotifyOnValidationError%2A> to `true` so that the application can handle the <xref:System.Windows.Controls.Validation.Error?displayProperty=nameWithType> event when a <xref:System.Windows.Controls.ValidationRule> fails.  
   
  [!code-xaml[BindingGroupSnippets#BindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#bindinggroup)]  
   
- The following example handles the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event.  
+ The following example handles the <xref:System.Windows.Controls.Validation.Error?displayProperty=nameWithType> event.  
   
  [!code-csharp[BindingGroupSnippets#ErrorHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml.cs#errorhandler)]
  [!code-vb[BindingGroupSnippets#ErrorHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindingGroupSnippets/visualbasic/window1.xaml.vb#errorhandler)]  
@@ -487,7 +487,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (object item, string propertyName, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(object item, string propertyName, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(object item, string propertyName, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.TryGetValue(System.Object,System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -515,7 +515,7 @@
 ## Remarks  
  <xref:System.Windows.Data.BindingGroup.TryGetValue%2A> returns `false` if there is not a binding for the specified item and property or if the value of the specified property is not available, due to a conversion error or because an earlier validation rule failed.  
   
- Use this method in the <xref:System.Windows.Controls.ValidationRule.Validate%2A?displayProperty=fullName> method to get the value to be committed to the source. The type `value` depends on the stage at which the <xref:System.Windows.Controls.ValidationRule> occurs. For example, if a <xref:System.Windows.Controls.TextBox> is data bound to a property of type integer, `value` is a string if the <xref:System.Windows.Controls.ValidationRule> that calls <xref:System.Windows.Data.BindingGroup.TryGetValue%2A> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.RawProposedValue>. If the <xref:System.Windows.Controls.ValidationRule> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue>, the type of `value` is whatever type that is returned by the binding's converter. In this example, `value` is usually an integer.  
+ Use this method in the <xref:System.Windows.Controls.ValidationRule.Validate%2A?displayProperty=nameWithType> method to get the value to be committed to the source. The type `value` depends on the stage at which the <xref:System.Windows.Controls.ValidationRule> occurs. For example, if a <xref:System.Windows.Controls.TextBox> is data bound to a property of type integer, `value` is a string if the <xref:System.Windows.Controls.ValidationRule> that calls <xref:System.Windows.Data.BindingGroup.TryGetValue%2A> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.RawProposedValue>. If the <xref:System.Windows.Controls.ValidationRule> has its <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> set to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue>, the type of `value` is whatever type that is returned by the binding's converter. In this example, `value` is usually an integer.  
   
    
   

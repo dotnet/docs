@@ -52,7 +52,7 @@ Sometimes it is useful to have data about the characters in your string and the 
   
 ## See Also  
  <xref:System.String.Chars%2A>   
- <xref:System.Globalization.StringInfo?displayProperty=fullName>   
+ <xref:System.Globalization.StringInfo?displayProperty=nameWithType>   
  [How to: Access Characters in Strings](../../../../visual-basic/programming-guide/language-features/strings/how-to-access-characters-in-strings.md)   
  [Converting Between Strings and Other Data Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/converting-between-strings-and-other-data-types.md)   
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

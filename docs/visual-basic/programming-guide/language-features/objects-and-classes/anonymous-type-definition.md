@@ -98,7 +98,7 @@ End Class
   
  Explicitly named properties of an anonymous type cannot conflict with these generated methods. That is, you cannot use `.Equals`, `.GetHashCode`, or `.ToString` to name a property.  
   
- Anonymous type definitions that include at least one key property also implement the <xref:System.IEquatable%601?displayProperty=fullName> interface, where `T` is the type of the anonymous type.  
+ Anonymous type definitions that include at least one key property also implement the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, where `T` is the type of the anonymous type.  
   
 > [!NOTE]
 >  Anonymous type declarations create the same anonymous type only if they occur in the same assembly, their properties have the same names and the same inferred types, the properties are declared in the same order, and the same properties are marked as key properties.  

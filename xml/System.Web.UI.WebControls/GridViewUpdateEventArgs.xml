@@ -96,7 +96,7 @@
   
  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary is automatically populated with the name/value pairs of the field or fields specified in the <xref:System.Web.UI.WebControls.GridView.DataKeyNames%2A> property. If multiple fields form the primary key, a separate entry is added to the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary for each key field.  
   
- To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -136,7 +136,7 @@
   
  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> property is automatically populated with the name/value pairs of the revised non-key fields in the row. A separate entry is added to the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> property for each non-key field in the row.  
   
- To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -176,7 +176,7 @@
   
  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> property is automatically populated with the original values of all the field name/value pairs in the row. A separate entry is added to the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> property for each field in the row.  
   
- To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   

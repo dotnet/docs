@@ -23,24 +23,24 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.CompareValidator> control to compare the value entered by the user in an input control, such as a <xref:System.Web.UI.WebControls.TextBox> control, with the value entered in another input control or a constant value. The <xref:System.Web.UI.WebControls.CompareValidator> control passes validation if the value of the input control matches the criteria specified by the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A>, <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A>, and/or <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> properties.  
   
- You can also use the <xref:System.Web.UI.WebControls.CompareValidator> control to indicate whether the value entered in an input control can be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property.  
+ You can also use the <xref:System.Web.UI.WebControls.CompareValidator> control to indicate whether the value entered in an input control can be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property.  
   
  Specify the input control to validate by setting the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property. If you want to compare a specific input control with another input control, set the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property to specify the control to compare with.  
   
 > [!NOTE]
->  If the value entered in the input control specified by the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property cannot be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property, but the value entered in the input control specified by the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property can be converted, the input control being validated is considered valid. Therefore, you should also place a <xref:System.Web.UI.WebControls.CompareValidator> or <xref:System.Web.UI.WebControls.RangeValidator> control on the input control specified by the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property.  
+>  If the value entered in the input control specified by the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property cannot be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property, but the value entered in the input control specified by the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property can be converted, the input control being validated is considered valid. Therefore, you should also place a <xref:System.Web.UI.WebControls.CompareValidator> or <xref:System.Web.UI.WebControls.RangeValidator> control on the input control specified by the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property.  
   
  Instead of comparing the value of an input control with another input control, you can compare the value of an input control to a constant value. Specify the constant value to compare with by setting the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property.  
   
 > [!NOTE]
->  If the value specified by the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property cannot be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property, an exception is thrown. Be sure to check the data type of a value before programmatically assigning it to the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property.  
+>  If the value specified by the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property cannot be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property, an exception is thrown. Be sure to check the data type of a value before programmatically assigning it to the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property.  
   
 > [!NOTE]
 >  Do not set both the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> and the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property at the same time. You can either compare the value of an input control to another input control, or to a constant value. If both properties are set, the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property takes precedence.  
   
- Use the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A> property to specify the type of comparison to perform, such as greater than, equal to, and so on. If you set the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A> property to `ValidationCompareOperator.DataTypeCheck`, the <xref:System.Web.UI.WebControls.CompareValidator> control ignores the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> and <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> properties and simply indicates whether the value entered in the input control can be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property.  
+ Use the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A> property to specify the type of comparison to perform, such as greater than, equal to, and so on. If you set the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A> property to `ValidationCompareOperator.DataTypeCheck`, the <xref:System.Web.UI.WebControls.CompareValidator> control ignores the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> and <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> properties and simply indicates whether the value entered in the input control can be converted to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property.  
   
- The <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property is used to specify the data type of both comparison values. Both values are automatically converted to this data type before the comparison operation is performed.  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property is used to specify the data type of both comparison values. Both values are automatically converted to this data type before the comparison operation is performed.  
   
 > [!IMPORTANT]
 >  When the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is set to <xref:System.Web.UI.WebControls.ValidationDataType.Date> and the current calendar type is non-Gregorian, the validator performs server-side validation only. The validator client script supports only Gregorian calendars.  
@@ -210,7 +210,7 @@
 > [!NOTE]
 >  Do not set both the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> and the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property at the same time. You can either compare the value of an input control to another input control, or to a constant value. If both properties are set, the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property takes precedence.  
   
- For more information, see <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A?displayProperty=nameWithType>.  
   
 > [!IMPORTANT]
 >  If the control to compare is hidden or is inside a container (such as a <xref:System.Web.UI.WebControls.Panel> control) that is not visible, the validator performs server-side validation only. The validator client script supports only visible controls.  
@@ -304,7 +304,7 @@
 |`GreaterThanEqual`|A comparison for greater than or equal to between the values of the input control being validated and another control, or a constant value.|  
 |`LessThan`|A comparison for less than between the values of the input control being validated and another control, or a constant value.|  
 |`LessThanEqual`|A comparison for less than or equal to between the values of the input control being validated and another control, or a constant value.|  
-|`DataTypeCheck`|A data type comparison of the value entered in the input control being validated and the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property. Validation fails if the value cannot be converted to the specified data type. **Note:**  The <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> and <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> properties are ignored when this operator is used.|  
+|`DataTypeCheck`|A data type comparison of the value entered in the input control being validated and the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property. Validation fails if the value cannot be converted to the specified data type. **Note:**  The <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> and <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> properties are ignored when this operator is used.|  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
@@ -351,7 +351,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property to specify a constant value to compare with the value entered by the user in the input control being validated. If the constant value specified by this property fails to convert to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=fullName> property, an exception is thrown.  
+ Use the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property to specify a constant value to compare with the value entered by the user in the input control being validated. If the constant value specified by this property fails to convert to the data type specified by the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property, an exception is thrown.  
   
 > [!NOTE]
 >  Do not set both the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> and the <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> property at the same time. You can either compare the value of an input control to another input control, or to a constant value. If both properties are set, the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> property takes precedence.  

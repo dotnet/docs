@@ -38,9 +38,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |----------------------|---------------------------|-----------------|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## CalendarItem Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
@@ -63,12 +63,12 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |-|-|-|  
 |Normal State|CommonStates|The default state.|  
 |Disabled State|CommonStates|The state of the calendar when the <xref:System.Windows.UIElement.IsEnabled%2A> property is `false`.|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## CalendarDayButton Parts  
  The <xref:System.Windows.Controls.Primitives.CalendarDayButton> control does not have any named parts.  
@@ -90,13 +90,13 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |Unfocused|FocusStates|The button does not have focus.|  
 |Active|ActiveStates|The button is active.|  
 |Inactive|ActiveStates|The button is inactive.|  
-|RegularDay|DayStates|The button does not represent <xref:System.DateTime.Today%2A?displayProperty=fullName>.|  
-|Today|DayStates|The button represents <xref:System.DateTime.Today%2A?displayProperty=fullName>.|  
+|RegularDay|DayStates|The button does not represent <xref:System.DateTime.Today%2A?displayProperty=nameWithType>.|  
+|Today|DayStates|The button represents <xref:System.DateTime.Today%2A?displayProperty=nameWithType>.|  
 |NormalDay|BlackoutDayStates|The button represents a day that can be selected.|  
 |BlackoutDay|BlackoutDayStates|The button represents a day that cannot be selected.|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## CalendarButton Parts  
  The <xref:System.Windows.Controls.Primitives.CalendarButton> control does not have any named parts.  
@@ -118,9 +118,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |Unfocused|FocusStates|The button does not have focus.|  
 |Active|ActiveStates|The button is active.|  
 |Inactive|ActiveStates|The button is inactive.|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## Calendar ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Calendar> control and associated types.  

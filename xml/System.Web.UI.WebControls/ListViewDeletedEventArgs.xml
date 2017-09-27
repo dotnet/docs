@@ -203,7 +203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property to access the values of the key fields (as specified by the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A?displayProperty=fullName> property) for a deleted item. For example, you can use these values to keep a log of deleted items.  
+ Use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property to access the values of the key fields (as specified by the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A?displayProperty=nameWithType> property) for a deleted item. For example, you can use these values to keep a log of deleted items.  
   
 > [!NOTE]
 >  This property contains only the key fields. To access the non-key fields, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property.  
@@ -249,7 +249,7 @@
  The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The object contains <xref:System.Collections.DictionaryEntry> objects that represent the non-key fields of the deleted item.  
   
 > [!NOTE]
->  This property does not contain the key fields (as specified by the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A?displayProperty=fullName> property) for the deleted item. To access the key fields, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property.  
+>  This property does not contain the key fields (as specified by the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A?displayProperty=nameWithType> property) for the deleted item. To access the key fields, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property.  
   
    
   

@@ -198,7 +198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.SessionState.SessionStateStoreProviderBase.Dispose%2A?displayProperty=fullName> method is called when the <xref:System.Web.SessionState.SessionStateModule.Dispose%2A?displayProperty=fullName> method executes at the closing of the application domain. Classes that inherit the <xref:System.Web.SessionState.SessionStateStoreProviderBase> class can use this method to free any resources no longer in use.  
+ The <xref:System.Web.SessionState.SessionStateStoreProviderBase.Dispose%2A?displayProperty=nameWithType> method is called when the <xref:System.Web.SessionState.SessionStateModule.Dispose%2A?displayProperty=nameWithType> method executes at the closing of the application domain. Classes that inherit the <xref:System.Web.SessionState.SessionStateStoreProviderBase> class can use this method to free any resources no longer in use.  
   
    
   
@@ -244,7 +244,7 @@
     </Member>
     <Member MemberName="GetItem">
       <MemberSignature Language="C#" Value="public abstract System.Web.SessionState.SessionStateStoreData GetItem (System.Web.HttpContext context, string id, out bool locked, out TimeSpan lockAge, out object lockId, out System.Web.SessionState.SessionStateActions actions);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SessionState.SessionStateStoreData GetItem(class System.Web.HttpContext context, string id, bool locked, valuetype System.TimeSpan lockAge, object lockId, valuetype System.Web.SessionState.SessionStateActions actions) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SessionState.SessionStateStoreData GetItem(class System.Web.HttpContext context, string id, [out] bool&amp; locked, [out] valuetype System.TimeSpan&amp; lockAge, [out] object&amp; lockId, [out] valuetype System.Web.SessionState.SessionStateActions&amp; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.GetItem(System.Web.HttpContext,System.String,System.Boolean@,System.TimeSpan@,System.Object@,System.Web.SessionState.SessionStateActions@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -298,7 +298,7 @@
     </Member>
     <Member MemberName="GetItemExclusive">
       <MemberSignature Language="C#" Value="public abstract System.Web.SessionState.SessionStateStoreData GetItemExclusive (System.Web.HttpContext context, string id, out bool locked, out TimeSpan lockAge, out object lockId, out System.Web.SessionState.SessionStateActions actions);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SessionState.SessionStateStoreData GetItemExclusive(class System.Web.HttpContext context, string id, bool locked, valuetype System.TimeSpan lockAge, object lockId, valuetype System.Web.SessionState.SessionStateActions actions) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SessionState.SessionStateStoreData GetItemExclusive(class System.Web.HttpContext context, string id, [out] bool&amp; locked, [out] valuetype System.TimeSpan&amp; lockAge, [out] object&amp; lockId, [out] valuetype System.Web.SessionState.SessionStateActions&amp; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.GetItemExclusive(System.Web.HttpContext,System.String,System.Boolean@,System.TimeSpan@,System.Object@,System.Web.SessionState.SessionStateActions@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

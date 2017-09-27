@@ -146,7 +146,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  In this example, the                          `MarkupAndCodeBehindWindow` is instantiated when the application starts, which occurs when the                          <xref:System.Windows.Application.Startup> event is raised.  
   
- When a window is instantiated, a reference to it is automatically added to a list of windows that is managed by the                          <xref:System.Windows.Application> object (see                          <xref:System.Windows.Application.Windows%2A?displayProperty=fullName>). Additionally, the first window to be instantiated is, by default, set by                          <xref:System.Windows.Application> as the main application window (see                          <xref:System.Windows.Application.MainWindow%2A?displayProperty=fullName>).  
+ When a window is instantiated, a reference to it is automatically added to a list of windows that is managed by the                          <xref:System.Windows.Application> object (see                          <xref:System.Windows.Application.Windows%2A?displayProperty=nameWithType>). Additionally, the first window to be instantiated is, by default, set by                          <xref:System.Windows.Application> as the main application window (see                          <xref:System.Windows.Application.MainWindow%2A?displayProperty=nameWithType>).  
   
  The window is finally opened by calling the                          <xref:System.Windows.Window.Show%2A> method; the result is shown in the following figure.  
   
@@ -227,7 +227,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
  If a background task completes, a window may want to notify the user more urgently by calling                          <xref:System.Windows.Window.Activate%2A> method. If the user is interacting with another application activated when                          <xref:System.Windows.Window.Activate%2A> is called, the window's taskbar button flashes. If a user is interacting with the current application, calling                          <xref:System.Windows.Window.Activate%2A> will bring the window to the foreground.  
   
 > [!NOTE]
->  You can handle application-scope activation using the                              <xref:System.Windows.Application.Activated?displayProperty=fullName> and                              <xref:System.Windows.Application.Deactivated?displayProperty=fullName> events.  
+>  You can handle application-scope activation using the                              <xref:System.Windows.Application.Activated?displayProperty=nameWithType> and                              <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> events.  
   
 <a name="Closing_a_Window"></a>   
 ### Closing a Window  
@@ -359,23 +359,23 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  **For Height Properties:**  
   
-1.  <xref:System.Windows.FrameworkElement.MinHeight%2A?displayProperty=fullName> >  
+1.  <xref:System.Windows.FrameworkElement.MinHeight%2A?displayProperty=nameWithType> >  
   
-2.  <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=fullName> >  
+2.  <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=nameWithType> >  
   
-3.  <xref:System.Windows.SizeToContent.Height?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=fullName> >  
+3.  <xref:System.Windows.SizeToContent.Height?displayProperty=nameWithType>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType> >  
   
-4.  <xref:System.Windows.FrameworkElement.Height%2A?displayProperty=fullName>  
+4.  <xref:System.Windows.FrameworkElement.Height%2A?displayProperty=nameWithType>  
   
  **For Width Properties:**  
   
-1.  <xref:System.Windows.FrameworkElement.MinWidth%2A?displayProperty=fullName> >  
+1.  <xref:System.Windows.FrameworkElement.MinWidth%2A?displayProperty=nameWithType> >  
   
-2.  <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=fullName> >  
+2.  <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=nameWithType> >  
   
-3.  <xref:System.Windows.SizeToContent.Width?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=fullName> >  
+3.  <xref:System.Windows.SizeToContent.Width?displayProperty=nameWithType>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=nameWithType> >  
   
-4.  <xref:System.Windows.FrameworkElement.Width%2A?displayProperty=fullName>  
+4.  <xref:System.Windows.FrameworkElement.Width%2A?displayProperty=nameWithType>  
   
  The order of precedence can also determine the size of a window when it is maximized, which is managed with the                  <xref:System.Windows.Window.WindowState%2A> property.  
   

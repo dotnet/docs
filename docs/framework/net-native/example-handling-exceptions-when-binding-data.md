@@ -43,7 +43,7 @@ Windows_UI_Xaml!DirectUI::PropertyPathListener::ConnectPathStep+0x113
 ```  
   
 ## What was the app doing?  
- At the base of the stack, frames from the [Windows.UI.Xaml](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.aspx) namespace indicate that the XAML rendering engine was running.   The use of the <xref:System.Reflection.PropertyInfo.GetValue%2A?displayProperty=fullName> method indicates a reflection-based lookup of a property’s value on the type whose metadata was removed.  
+ At the base of the stack, frames from the [Windows.UI.Xaml](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.aspx) namespace indicate that the XAML rendering engine was running.   The use of the <xref:System.Reflection.PropertyInfo.GetValue%2A?displayProperty=nameWithType> method indicates a reflection-based lookup of a property’s value on the type whose metadata was removed.  
   
  The first step in providing a metadata directive would be to add `serialize` metadata for the type so that its properties are all accessible:  
   

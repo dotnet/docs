@@ -101,13 +101,13 @@ manager: "wpickett"
 ## Programmatic Resizing  
  When automatic sizing is disabled, you can programmatically set the exact width or height of rows, columns, or headers through the following properties:  
   
--   <xref:System.Windows.Forms.DataGridView.RowHeadersWidth%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataGridView.RowHeadersWidth%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeight%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeight%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.DataGridViewRow.Height%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataGridViewRow.Height%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.DataGridViewColumn.Width%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.DataGridViewColumn.Width%2A?displayProperty=nameWithType>  
   
  You can also programmatically resize rows, columns, and headers to fit their contents using the following methods:  
   
@@ -130,32 +130,32 @@ manager: "wpickett"
  You will typically call the programmatic resizing methods at specific times. For example, you might programmatically resize all columns immediately after loading data, or you might programmatically resize a specific row after a particular cell value has been modified.  
   
 ## Customizing Content-based Sizing Behavior  
- You can customize sizing behaviors when working with derived <xref:System.Windows.Forms.DataGridView> cell, row, and column types by overriding the <xref:System.Windows.Forms.DataGridViewCell.GetPreferredSize%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridViewRow.GetPreferredHeight%2A?displayProperty=fullName>, or <xref:System.Windows.Forms.DataGridViewColumn.GetPreferredWidth%2A?displayProperty=fullName> methods or by calling protected resizing method overloads in a derived <xref:System.Windows.Forms.DataGridView> control. The protected resizing method overloads are designed to work in pairs to achieve an ideal cell height-to-width ratio, avoiding overly wide or tall cells. For example, if you call the `AutoResizeRows(DataGridViewAutoSizeRowsMode,Boolean)` overload of the <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> method and pass in a value of `false` for the <xref:System.Boolean> parameter, the overload will calculate the ideal heights and widths for cells in the row, but it will adjust the row heights only. You must then call the <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> method to adjust the column widths to the calculated ideal.  
+ You can customize sizing behaviors when working with derived <xref:System.Windows.Forms.DataGridView> cell, row, and column types by overriding the <xref:System.Windows.Forms.DataGridViewCell.GetPreferredSize%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewRow.GetPreferredHeight%2A?displayProperty=nameWithType>, or <xref:System.Windows.Forms.DataGridViewColumn.GetPreferredWidth%2A?displayProperty=nameWithType> methods or by calling protected resizing method overloads in a derived <xref:System.Windows.Forms.DataGridView> control. The protected resizing method overloads are designed to work in pairs to achieve an ideal cell height-to-width ratio, avoiding overly wide or tall cells. For example, if you call the `AutoResizeRows(DataGridViewAutoSizeRowsMode,Boolean)` overload of the <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> method and pass in a value of `false` for the <xref:System.Boolean> parameter, the overload will calculate the ideal heights and widths for cells in the row, but it will adjust the row heights only. You must then call the <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> method to adjust the column widths to the calculated ideal.  
   
 ## Content-based Sizing Options  
  The enumerations used by sizing properties and methods have similar values for content-based sizing. With these values, you can limit which cells are used to calculate the preferred sizes. For all sizing enumerations, values with names that refer to displayed cells limit their calculations to cells in displayed rows. Excluding rows is useful to avoid a performance penalty when you are working with a large quantity of rows. You can also restrict calculations to cell values in header or nonheader cells.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.AllowUserToResizeColumns%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AllowUserToResizeRows%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewBand.Resizable%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.RowHeadersWidth%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeight%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewRow.Height%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewColumn.Width%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.AllowUserToResizeColumns%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AllowUserToResizeRows%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridViewBand.Resizable%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.RowHeadersWidth%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeight%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridViewRow.Height%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridViewColumn.Width%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Forms.DataGridViewAutoSizeRowMode>   
  <xref:System.Windows.Forms.DataGridViewAutoSizeRowsMode>   
  <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>   

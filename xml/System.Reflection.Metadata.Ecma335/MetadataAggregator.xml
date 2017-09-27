@@ -65,7 +65,7 @@
     </Member>
     <Member MemberName="GetGenerationHandle">
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Handle GetGenerationHandle (System.Reflection.Metadata.Handle handle, out int generation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Handle GetGenerationHandle(valuetype System.Reflection.Metadata.Handle handle, int32 generation) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Handle GetGenerationHandle(valuetype System.Reflection.Metadata.Handle handle, [out] int32&amp; generation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataAggregator.GetGenerationHandle(System.Reflection.Metadata.Handle,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

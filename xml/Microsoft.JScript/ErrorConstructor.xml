@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.ErrorObject CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ErrorObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ErrorObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -51,7 +51,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public object Invoke (object[] args);" />
+      <MemberSignature Language="C#" Value="public object Invoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorConstructor.Invoke(System.Object[])" />
       <MemberType>Method</MemberType>

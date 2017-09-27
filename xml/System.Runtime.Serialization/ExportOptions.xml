@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A> property is used by the <xref:System.Runtime.Serialization.DataContractSerializer> to include types that can be read in an object graph (set using the <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A?displayProperty=fullName> property).  
+ The <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A> property is used by the <xref:System.Runtime.Serialization.DataContractSerializer> to include types that can be read in an object graph (set using the <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A?displayProperty=nameWithType> property).  
   
  [!INCLUDE[crabout](~/includes/crabout-md.md)] the data contract and known types, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
   

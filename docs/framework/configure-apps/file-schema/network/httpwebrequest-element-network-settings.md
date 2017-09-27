@@ -67,7 +67,7 @@ Customizes Web request parameters.
 |[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
- By default, the .NET Framework strictly enforces RFC 2616 for URI parsing. Some server responses may include control characters in prohibited fields, which will cause the <xref:System.Net.HttpWebRequest.GetResponse?displayProperty=fullName> method to throw a <xref:System.Net.WebException>. If **useUnsafeHeaderParsing** is set to **true**, <xref:System.Net.HttpWebRequest.GetResponse?displayProperty=fullName> will not throw in this case; however, your application will be vulnerable to several forms of URI parsing attacks. The best solution is to change the server so that the response does not include control characters.  
+ By default, the .NET Framework strictly enforces RFC 2616 for URI parsing. Some server responses may include control characters in prohibited fields, which will cause the <xref:System.Net.HttpWebRequest.GetResponse?displayProperty=nameWithType> method to throw a <xref:System.Net.WebException>. If **useUnsafeHeaderParsing** is set to **true**, <xref:System.Net.HttpWebRequest.GetResponse?displayProperty=nameWithType> will not throw in this case; however, your application will be vulnerable to several forms of URI parsing attacks. The best solution is to change the server so that the response does not include control characters.  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  

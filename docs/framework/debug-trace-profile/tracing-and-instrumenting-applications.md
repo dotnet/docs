@@ -29,7 +29,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Tracing and Instrumenting Applications
-Tracing is a way for you to monitor the execution of your application while it is running. You can add tracing and debugging instrumentation to your .NET Framework application when you develop it, and you can use that instrumentation both while you are developing the application and after you have deployed it. You can use the <xref:System.Diagnostics.Trace?displayProperty=fullName>, <xref:System.Diagnostics.Debug?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes to record information about errors and application execution in logs, text files, or other devices for later analysis.  
+Tracing is a way for you to monitor the execution of your application while it is running. You can add tracing and debugging instrumentation to your .NET Framework application when you develop it, and you can use that instrumentation both while you are developing the application and after you have deployed it. You can use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes to record information about errors and application execution in logs, text files, or other devices for later analysis.  
   
  The term *instrumentation* refers to an ability to monitor or measure the level of a product's performance and to diagnose errors. In programming, this means the ability of an application to incorporate:  
   
@@ -120,7 +120,7 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
  You must exercise special care when placing your trace statements for use during run time. You must consider what tracing information is likely to be needed in a deployed application, so that all likely tracing scenarios are adequately covered. Because applications that use tracing vary widely, however, there are no general guidelines for strategic placement of tracing. For more information on placing trace statements, see [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md).  
   
 ## Output from Tracing  
- Trace output is collected by objects called *listeners*. A listener is an object that receives trace output and writes it to an output device (usually a window, log, or text file). When a trace listener is created, it is typically added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection, allowing the listener to receive all trace output.  
+ Trace output is collected by objects called *listeners*. A listener is an object that receives trace output and writes it to an output device (usually a window, log, or text file). When a trace listener is created, it is typically added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection, allowing the listener to receive all trace output.  
   
  Tracing information is always written at least to the default <xref:System.Diagnostics.Trace> output target, the <xref:System.Diagnostics.DefaultTraceListener>. If for some reason you have deleted the <xref:System.Diagnostics.DefaultTraceListener> without adding any other listeners to the <xref:System.Diagnostics.Trace.Listeners%2A> collection, you will not receive any tracing messages. For more information, see [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md).  
   

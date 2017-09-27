@@ -96,7 +96,7 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow Add (object[] values);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow Add (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow Add(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowCollection.Add(System.Object[])" />
       <MemberType>Method</MemberType>

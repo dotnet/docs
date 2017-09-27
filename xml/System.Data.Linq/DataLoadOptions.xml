@@ -206,7 +206,7 @@
     </Member>
     <Member MemberName="GetAssociationCriteria">
       <MemberSignature Language="C#" Value="public bool GetAssociationCriteria (System.Reflection.MemberInfo memberInfo, out System.Linq.Expressions.LambdaExpression associationCriteria);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetAssociationCriteria(class System.Reflection.MemberInfo memberInfo, class System.Linq.Expressions.LambdaExpression associationCriteria) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetAssociationCriteria(class System.Reflection.MemberInfo memberInfo, [out] class System.Linq.Expressions.LambdaExpression&amp; associationCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.GetAssociationCriteria(System.Reflection.MemberInfo,System.Linq.Expressions.LambdaExpression@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

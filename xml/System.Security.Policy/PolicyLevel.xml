@@ -42,7 +42,7 @@
   
  A policy level consists of a set of code groups organized into a single rooted tree (see <xref:System.Security.Policy.CodeGroup>), a set of named permission sets that are referenced by the code groups to specify permissions to be granted to code belonging to the code group, and a list of fully-trusted assemblies.  
   
- Use <xref:System.Security.SecurityManager.PolicyHierarchy%2A?displayProperty=fullName> to enumerate the policy levels.  
+ Use <xref:System.Security.SecurityManager.PolicyHierarchy%2A?displayProperty=nameWithType> to enumerate the policy levels.  
   
  ]]></format>
     </remarks>

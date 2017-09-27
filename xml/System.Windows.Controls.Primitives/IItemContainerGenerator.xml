@@ -49,7 +49,7 @@
     </Member>
     <Member MemberName="GenerateNext">
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject GenerateNext (out bool isNewlyRealized);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DependencyObject GenerateNext(bool isNewlyRealized) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DependencyObject GenerateNext([out] bool&amp; isNewlyRealized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

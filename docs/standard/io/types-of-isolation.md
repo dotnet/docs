@@ -34,7 +34,7 @@ Access to isolated storage is always restricted to the user who created it. To i
   
 -   Assembly identity is the evidence of the assembly. This might come from a cryptographic digital signature, which can be the assembly's [strong name](../../../docs/framework/app-domains/strong-named-assemblies.md), the software publisher of the assembly, or its URL identity. If an assembly has both a strong name and a software publisher identity, then the software publisher identity is used. If the assembly comes from the Internet and is unsigned, the URL identity is used. For more information about assemblies and strong names, see [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md).  
   
--   Roaming stores move with a user that has a roaming user profile. Files are written to a network directory and are downloaded to any computer the user logs into. For more information about roaming user profiles, see <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Roaming?displayProperty=fullName>.  
+-   Roaming stores move with a user that has a roaming user profile. Files are written to a network directory and are downloaded to any computer the user logs into. For more information about roaming user profiles, see <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Roaming?displayProperty=nameWithType>.  
   
  By combining the concepts of user, domain, and assembly identity, isolated storage can isolate data in the following ways, each of which has its own usage scenarios:  
   
@@ -56,7 +56,7 @@ Types of isolated storage
   
 <a name="UserAssembly"></a>   
 ## Isolation by User and Assembly  
- When the assembly that uses the data store needs to be accessible from any application's domain, isolation by user and assembly is appropriate. Typically, in this situation, isolated storage is used to store data that applies across multiple applications and is not tied to any particular application, such as the user's name or license information. To access storage isolated by user and assembly, code must be trusted to transfer information between applications. Typically, isolation by user and assembly is allowed on intranets but not on the Internet. Calling the static <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A?displayProperty=fullName> method and passing in a user and an assembly <xref:System.IO.IsolatedStorage.IsolatedStorageScope> returns storage with this kind of isolation.  
+ When the assembly that uses the data store needs to be accessible from any application's domain, isolation by user and assembly is appropriate. Typically, in this situation, isolated storage is used to store data that applies across multiple applications and is not tied to any particular application, such as the user's name or license information. To access storage isolated by user and assembly, code must be trusted to transfer information between applications. Typically, isolation by user and assembly is allowed on intranets but not on the Internet. Calling the static <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A?displayProperty=nameWithType> method and passing in a user and an assembly <xref:System.IO.IsolatedStorage.IsolatedStorageScope> returns storage with this kind of isolation.  
   
  The following code example retrieves a store that is isolated by user and assembly. The store can be accessed through the `isoFile` object.  
   

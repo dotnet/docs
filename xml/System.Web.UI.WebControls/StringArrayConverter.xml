@@ -21,7 +21,7 @@
  This type converter is used by design-time environments to provide values for display in the property grid control for a specified type.  
   
 > [!NOTE]
->  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+>  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=nameWithType> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
   
  ]]></format>
     </remarks>

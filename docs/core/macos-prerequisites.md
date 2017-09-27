@@ -78,7 +78,7 @@ You can increase this limit by following these steps:
 
 2. In a terminal window, run the following command:
 
-```
+```console
 echo 'ulimit -n 2048' | sudo tee -a /etc/profile
 ```
 

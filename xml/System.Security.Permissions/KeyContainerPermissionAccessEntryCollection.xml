@@ -307,7 +307,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property implements the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property and always returns `false`.  
+ This property implements the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property and always returns `false`.  
   
  ]]></format>
         </remarks>
@@ -412,7 +412,7 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection> object itself.  
   
- For more information on the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>

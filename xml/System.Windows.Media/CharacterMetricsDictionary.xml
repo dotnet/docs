@@ -666,7 +666,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (int key, out System.Windows.Media.CharacterMetrics value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(int32 key, class System.Windows.Media.CharacterMetrics value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(int32 key, [out] class System.Windows.Media.CharacterMetrics&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.TryGetValue(System.Int32,System.Windows.Media.CharacterMetrics@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

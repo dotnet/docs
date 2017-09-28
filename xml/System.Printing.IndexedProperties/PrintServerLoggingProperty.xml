@@ -115,28 +115,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServerEventLoggingTypes (System.Printing.IndexedProperties.PrintServerLoggingProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintServerEventLoggingTypes op_Implicit(class System.Printing.IndexedProperties.PrintServerLoggingProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerLoggingProperty.op_Implicit(System.Printing.IndexedProperties.PrintServerLoggingProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintServerEventLoggingTypes" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintServerLoggingProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />

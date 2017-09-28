@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Return the value <xref:System.Windows.Documents.DocumentPage.Missing?displayProperty=fullName> when calling code requests a page that does not exist; for example, page 2 of a one-page document.  
+ Return the value <xref:System.Windows.Documents.DocumentPage.Missing?displayProperty=nameWithType> when calling code requests a page that does not exist; for example, page 2 of a one-page document.  
   
  There is always just one missing page object. Its <xref:System.Windows.Documents.DocumentPage.Visual%2A> property is `null`. Its <xref:System.Windows.Documents.DocumentPage.Size%2A>, <xref:System.Windows.Documents.DocumentPage.BleedBox%2A>, and <xref:System.Windows.Documents.DocumentPage.ContentBox%2A> properties are all set to special "empty" values.  
   

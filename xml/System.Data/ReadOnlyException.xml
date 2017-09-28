@@ -27,9 +27,9 @@
 ## Remarks  
  The <xref:System.Data.ReadOnlyException> is thrown when you invoke the following methods or properties when you are trying to change the value of a read-only column.  
   
--   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=nameWithType>  
   
  ]]></format>
     </remarks>

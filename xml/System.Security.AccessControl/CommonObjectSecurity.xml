@@ -186,7 +186,7 @@
     </Member>
     <Member MemberName="ModifyAccess">
       <MemberSignature Language="C#" Value="protected override bool ModifyAccess (System.Security.AccessControl.AccessControlModification modification, System.Security.AccessControl.AccessRule rule, out bool modified);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ModifyAccess(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AccessRule rule, bool modified) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ModifyAccess(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AccessRule rule, [out] bool&amp; modified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -227,7 +227,7 @@
     </Member>
     <Member MemberName="ModifyAudit">
       <MemberSignature Language="C#" Value="protected override bool ModifyAudit (System.Security.AccessControl.AccessControlModification modification, System.Security.AccessControl.AuditRule rule, out bool modified);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ModifyAudit(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AuditRule rule, bool modified) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ModifyAudit(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AuditRule rule, [out] bool&amp; modified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

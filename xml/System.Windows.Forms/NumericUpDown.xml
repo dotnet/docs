@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property can be used to increase the speed with which the <xref:System.Windows.Forms.NumericUpDown> moves through a large set of numbers when the user holds the up or down arrow, either with the keyboard or with the mouse. Setting this property will decrease the number of <xref:System.Windows.Forms.NumericUpDown.ValueChanged> events that occur depending on the <xref:System.Windows.Forms.NumericUpDownAcceleration.Increment%2A> and <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A> property values specified for each <xref:System.Windows.Forms.NumericUpDownAcceleration> object in the collection. The <xref:System.Windows.Forms.NumericUpDownAcceleration> objects contained in the collection are sorted by their <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property can be used to increase the speed with which the <xref:System.Windows.Forms.NumericUpDown> moves through a large set of numbers when the user holds the up or down arrow, either with the keyboard or with the mouse. Setting this property will decrease the number of <xref:System.Windows.Forms.NumericUpDown.ValueChanged> events that occur depending on the <xref:System.Windows.Forms.NumericUpDownAcceleration.Increment%2A> and <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A> property values specified for each <xref:System.Windows.Forms.NumericUpDownAcceleration> object in the collection. The <xref:System.Windows.Forms.NumericUpDownAcceleration> objects contained in the collection are sorted by their <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -287,7 +287,7 @@
 ## Remarks  
  When the <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> property is set, the <xref:System.Windows.Forms.NumericUpDown.UpdateEditText%2A> method is called to update the spin box's display to the new format.  
   
- When the <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> property is set to `true`, the <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> property should be set to <xref:System.Int32.MaxValue?displayProperty=fullName> and the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> property should be set to <xref:System.Int32.MinValue?displayProperty=fullName>.  
+ When the <xref:System.Windows.Forms.NumericUpDown.Hexadecimal%2A> property is set to `true`, the <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> property should be set to <xref:System.Int32.MaxValue?displayProperty=nameWithType> and the <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> property should be set to <xref:System.Int32.MinValue?displayProperty=nameWithType>.  
   
    
   
@@ -951,7 +951,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.NumericUpDown.ValueChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.NumericUpDown.ValueChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.NumericUpDown> named `NumericUpDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.NumericUpDown.ValueChanged> event.  
   

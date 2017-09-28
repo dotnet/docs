@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A?displayProperty=fullName> and <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=fullName> properties to get the paper sizes that are available on the printer and to set the paper size for a page, respectively.  
+ This class is used by the <xref:System.Drawing.Printing.PrinterSettings.PaperSizes%2A?displayProperty=nameWithType> and <xref:System.Drawing.Printing.PageSettings.PaperSize%2A?displayProperty=nameWithType> properties to get the paper sizes that are available on the printer and to set the paper size for a page, respectively.  
   
  You can use the <xref:System.Drawing.Printing.PaperSize.%23ctor%2A> constructor to specify a custom paper size. The <xref:System.Drawing.Printing.PaperSize.Width%2A> and <xref:System.Drawing.Printing.PaperSize.Height%2A> property values can be set only for custom <xref:System.Drawing.Printing.PaperSize> objects.  
   
@@ -50,8 +50,8 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=fullName>|  
-|<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=fullName>|  
+|<xref:System.Drawing.Printing.PaperSize.Kind%2A>|<xref:System.Drawing.Printing.PaperKind?displayProperty=nameWithType>|  
+|<xref:System.Drawing.Printing.PaperSize.PaperName%2A>|<xref:System.String.Empty?displayProperty=nameWithType>|  
   
  ]]></format>
         </remarks>

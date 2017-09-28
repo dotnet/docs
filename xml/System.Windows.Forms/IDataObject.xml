@@ -66,7 +66,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -111,7 +111,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -161,7 +161,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -205,7 +205,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType>.  
   
    
   
@@ -249,7 +249,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType>.  
   
    
   
@@ -308,7 +308,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType>.  
   
    
   
@@ -348,7 +348,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=nameWithType>.  
   
    
   
@@ -392,7 +392,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=nameWithType>.  
   
    
   
@@ -433,7 +433,7 @@
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -476,7 +476,7 @@
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -519,7 +519,7 @@
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -563,7 +563,7 @@
 ## Remarks  
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   

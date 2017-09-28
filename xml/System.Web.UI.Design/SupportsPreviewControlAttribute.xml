@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method compares two instances based on the value of their <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> properties.  
   
@@ -153,7 +153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method generates the same hash code for two objects that are equal according to the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method. The hash code is suitable for use in hashing algorithms and data structures, such as hash tables.  
   

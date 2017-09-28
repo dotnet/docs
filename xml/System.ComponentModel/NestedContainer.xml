@@ -206,7 +206,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.ComponentModel.Container.GetService%2A?displayProperty=fullName> method. This implementation only resolves requests for the <xref:System.ComponentModel.INestedContainer> and <xref:System.ComponentModel.IContainer> services.  
+ This method overrides the <xref:System.ComponentModel.Container.GetService%2A?displayProperty=nameWithType> method. This implementation only resolves requests for the <xref:System.ComponentModel.INestedContainer> and <xref:System.ComponentModel.IContainer> services.  
   
  ]]></format>
         </remarks>

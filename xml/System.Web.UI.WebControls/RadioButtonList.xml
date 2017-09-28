@@ -313,7 +313,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
   
- The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method overrides the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=fullName> method of the base <xref:System.Web.UI.Control> class. You should not override this version of the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method overrides the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=nameWithType> method of the base <xref:System.Web.UI.Control> class. You should not override this version of the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -740,7 +740,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
   
- If there are no items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is zero. If there are items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is the same as the <xref:System.Web.UI.WebControls.ListItemCollection.Count%2A?displayProperty=fullName> property on the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
+ If there are no items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is zero. If there are items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is the same as the <xref:System.Web.UI.WebControls.ListItemCollection.Count%2A?displayProperty=nameWithType> property on the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
   
  ]]></format>
         </remarks>
@@ -816,9 +816,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A?displayProperty=fullName> method to process posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A?displayProperty=nameWithType> method to process posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
- The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
  ]]></format>
         </remarks>
@@ -846,7 +846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control changes.  
   
  The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23IPostBackDataHandler%23RaisePostDataChangedEvent%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
@@ -882,7 +882,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.GetItemStyle%2A?displayProperty=fullName> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.GetItemStyle%2A?displayProperty=nameWithType> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
  The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23GetItemStyle%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   
@@ -1008,7 +1008,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A?displayProperty=fullName> method to render items in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A?displayProperty=nameWithType> method to render items in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
   
  The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RenderItem%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
   

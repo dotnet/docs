@@ -168,7 +168,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString%2A> property to provide a custom display format for the URL of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. The specified format is only applied to the URL when the URL is data-bound to a field in a data source. Specify the field to bind to the URL of the hyperlinks in the column by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property.  
   
- For information on the syntax of formatting strings, see <xref:System.String.Format%2A?displayProperty=fullName>.  
+ For information on the syntax of formatting strings, see <xref:System.String.Format%2A?displayProperty=nameWithType>.  
   
    
   
@@ -270,7 +270,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString%2A> property to provide a custom display format for the text caption of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. The specified format is applied to the text caption only when the text caption is data bound to a field in a data source. Specify the field to bind to the text caption of the hyperlinks in the column by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property.  
   
- For information on the syntax of formatting strings, see <xref:System.String.Format%2A?displayProperty=fullName>.  
+ For information on the syntax of formatting strings, see <xref:System.String.Format%2A?displayProperty=nameWithType>.  
   
    
   

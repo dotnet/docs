@@ -638,7 +638,7 @@
    
   
 ## Examples  
- The following code example inserts the sum of two integers into the <xref:System.Web.Caching.Cache?displayProperty=fullName> object using the <xref:System.Web.UI.Page.Cache%2A?displayProperty=fullName> property. It then retrieves the value using the <xref:System.Web.Caching.Cache.Get%2A?displayProperty=fullName> method and writes it to a <xref:System.Web.UI.WebControls.Label> Web server control.  
+ The following code example inserts the sum of two integers into the <xref:System.Web.Caching.Cache?displayProperty=nameWithType> object using the <xref:System.Web.UI.Page.Cache%2A?displayProperty=nameWithType> property. It then retrieves the value using the <xref:System.Web.Caching.Cache.Get%2A?displayProperty=nameWithType> method and writes it to a <xref:System.Web.UI.WebControls.Label> Web server control.  
   
  [!code-csharp[System.Web.Page.Cache_Replacement#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Page.Cache_Replacement/CS/pagecachecs.aspx#1)]
  [!code-vb[System.Web.Page.Cache_Replacement#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Page.Cache_Replacement/VB/pagecachevb.aspx#1)]  
@@ -667,7 +667,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.ClientQueryString%2A> property contains the query string portion of the URL requested by the browser. For example, if the requested URL is "http://www.contoso.com/default.aspx?id=100", the <xref:System.Web.UI.Page.ClientQueryString%2A> property will contain "id=100". The <xref:System.Web.UI.Page.ClientQueryString%2A> property is encoded; use the <xref:System.Web.HttpServerUtility.UrlDecode%2A?displayProperty=fullName> method to decode the query string.  
+ The <xref:System.Web.UI.Page.ClientQueryString%2A> property contains the query string portion of the URL requested by the browser. For example, if the requested URL is "http://www.contoso.com/default.aspx?id=100", the <xref:System.Web.UI.Page.ClientQueryString%2A> property will contain "id=100". The <xref:System.Web.UI.Page.ClientQueryString%2A> property is encoded; use the <xref:System.Web.HttpServerUtility.UrlDecode%2A?displayProperty=nameWithType> method to decode the query string.  
   
  ]]></format>
         </remarks>
@@ -738,7 +738,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you do not set the <xref:System.Web.UI.Page.ClientTarget%2A> property, the <xref:System.Web.HttpBrowserCapabilities> object associated with the <xref:System.Web.UI.Page.Request%2A?displayProperty=fullName> property reflects the capabilities of the client browser. If you do set this property, client browser detection is disabled and the page will use browser capabilities associated with the value (alias) that you provide.  
+ If you do not set the <xref:System.Web.UI.Page.ClientTarget%2A> property, the <xref:System.Web.HttpBrowserCapabilities> object associated with the <xref:System.Web.UI.Page.Request%2A?displayProperty=nameWithType> property reflects the capabilities of the client browser. If you do set this property, client browser detection is disabled and the page will use browser capabilities associated with the value (alias) that you provide.  
   
  The root Web.config configuration file on the Web server computer defines the following default aliases that you can use as shorthand for common user-agent strings:  
   
@@ -865,7 +865,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.Page.Context%2A> property to access the <xref:System.Web.HttpContext.AddError%2A?displayProperty=fullName> and <xref:System.Web.HttpContext.ClearError%2A?displayProperty=fullName> methods and the <xref:System.Web.HttpContext.AllErrors%2A?displayProperty=fullName> property. The example creates three custom exceptions using the <xref:System.Web.HttpContext.AddError%2A> method and uses the <xref:System.Web.HttpContext.AllErrors%2A> property to load these exceptions to an array. It then writes the array to the containing page and uses the <xref:System.Web.HttpContext.ClearError%2A> method to clear all the errors from the <xref:System.Web.UI.Page.Context%2A> property.  
+ The following code example uses the <xref:System.Web.UI.Page.Context%2A> property to access the <xref:System.Web.HttpContext.AddError%2A?displayProperty=nameWithType> and <xref:System.Web.HttpContext.ClearError%2A?displayProperty=nameWithType> methods and the <xref:System.Web.HttpContext.AllErrors%2A?displayProperty=nameWithType> property. The example creates three custom exceptions using the <xref:System.Web.HttpContext.AddError%2A> method and uses the <xref:System.Web.HttpContext.AllErrors%2A> property to load these exceptions to an array. It then writes the array to the containing page and uses the <xref:System.Web.HttpContext.ClearError%2A> method to clear all the errors from the <xref:System.Web.UI.Page.Context%2A> property.  
   
  [!code-csharp[System.Web.UI.Page.Context#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Context/CS/pagecontextcs.aspx#1)]
  [!code-vb[System.Web.UI.Page.Context#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Context/VB/pagecontextvb.aspx#1)]  
@@ -1146,7 +1146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about why you might want to disable view state, see <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName>.  
+ For information about why you might want to disable view state, see <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType>.  
   
  Even if <xref:System.Web.UI.Page.EnableViewState%2A> is `false`, the page might contain a hidden view state field that is used by ASP.NET to detect a postback.  
   
@@ -2089,7 +2089,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call this method before calling <xref:System.Web.UI.Page.RegisterClientScriptBlock%2A?displayProperty=fullName> to avoid unnecessarily assembling the client-side script. This is particularly important if the script requires a large amount of server resources to create.  
+ Call this method before calling <xref:System.Web.UI.Page.RegisterClientScriptBlock%2A?displayProperty=nameWithType> to avoid unnecessarily assembling the client-side script. This is particularly important if the script requires a large amount of server resources to create.  
   
  The <xref:System.Web.UI.Page.IsClientScriptBlockRegistered%2A> method has been deprecated. Use the <xref:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered%2A> method in the <xref:System.Web.UI.ClientScriptManager> class.  
   
@@ -2174,9 +2174,9 @@
    
   
 ## Examples  
- The following example shows how to test the value of the <xref:System.Web.UI.Page.IsPostBack%2A> property when the page is loaded in order to determine whether the page is being rendered for the first time or is responding to a postback. If the page is being rendered for the first time, the code calls the <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName> method.  
+ The following example shows how to test the value of the <xref:System.Web.UI.Page.IsPostBack%2A> property when the page is loaded in order to determine whether the page is being rendered for the first time or is responding to a postback. If the page is being rendered for the first time, the code calls the <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> method.  
   
- The page markup (not shown) contains <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls that display asterisks if no entry is made for a required input field. Calling <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName> causes the asterisks to be displayed immediately when the page is rendered, instead of waiting until the user clicks the Submit button. After a postback, you do not have to call <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName>, because that method is called as part of the <xref:System.Web.UI.Page> life cycle.  
+ The page markup (not shown) contains <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls that display asterisks if no entry is made for a required input field. Calling <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> causes the asterisks to be displayed immediately when the page is rendered, instead of waiting until the user clicks the Submit button. After a postback, you do not have to call <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType>, because that method is called as part of the <xref:System.Web.UI.Page> life cycle.  
   
  [!code-csharp[System.Web.UI.Page.Validate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Validate/CS/validate.cs.aspx#1)]
  [!code-vb[System.Web.UI.Page.Validate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Validate/VB/validate.vb.aspx#1)]  
@@ -2260,7 +2260,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call this method before calling <xref:System.Web.UI.Page.RegisterStartupScript%2A?displayProperty=fullName> to avoid unnecessarily assembling the client-side script. This is particularly important if the script requires a large amount of server resources to create.  
+ Call this method before calling <xref:System.Web.UI.Page.RegisterStartupScript%2A?displayProperty=nameWithType> to avoid unnecessarily assembling the client-side script. This is particularly important if the script requires a large amount of server resources to create.  
   
  The <xref:System.Web.UI.Page.IsStartupScriptRegistered%2A> method has been deprecated. Use the <xref:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered%2A> method in the <xref:System.Web.UI.ClientScriptManager> class.  
   
@@ -2304,7 +2304,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For this property to return `true`, all validation server controls in the current validation group must validate successfully. You should check this property only after you have called the <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName> method, or set the `CausesValidation` property to `true` in the `OnServerClick` event handler for an ASP.NET server control that initiates form processing. These server controls include the <xref:System.Web.UI.WebControls.Button>, <xref:System.Web.UI.HtmlControls.HtmlButton>, <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, <xref:System.Web.UI.WebControls.ImageButton>, and <xref:System.Web.UI.WebControls.LinkButton> classes.  
+ For this property to return `true`, all validation server controls in the current validation group must validate successfully. You should check this property only after you have called the <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> method, or set the `CausesValidation` property to `true` in the `OnServerClick` event handler for an ASP.NET server control that initiates form processing. These server controls include the <xref:System.Web.UI.WebControls.Button>, <xref:System.Web.UI.HtmlControls.HtmlButton>, <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, <xref:System.Web.UI.WebControls.ImageButton>, and <xref:System.Web.UI.WebControls.LinkButton> classes.  
   
  If you force validation of a validation group using the <xref:System.Web.UI.Page.Validate%2A> method, then all validation controls in the specified validation group must validate successfully as well.  
   
@@ -2445,7 +2445,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.LoadPageStateFromPersistenceMedium%2A> method uses the <xref:System.Web.UI.PageStatePersister.Load%2A> method of the <xref:System.Web.UI.PageStatePersister?displayProperty=fullName> object referenced by the <xref:System.Web.UI.Page.PageStatePersister%2A> property to load any saved view-state information for the <xref:System.Web.UI.Page> object.  
+ The <xref:System.Web.UI.Page.LoadPageStateFromPersistenceMedium%2A> method uses the <xref:System.Web.UI.PageStatePersister.Load%2A> method of the <xref:System.Web.UI.PageStatePersister?displayProperty=nameWithType> object referenced by the <xref:System.Web.UI.Page.PageStatePersister%2A> property to load any saved view-state information for the <xref:System.Web.UI.Page> object.  
   
  ASP.NET includes two descendents of the <xref:System.Web.UI.PageStatePersister> class, the <xref:System.Web.UI.HiddenFieldPageStatePersister> class that saves state information in a hidden field included in the ASP.NET page, and the <xref:System.Web.UI.SessionPageStatePersister> class that saves state in the <xref:System.Web.UI.Page.Session%2A> object associated with the request.  
   
@@ -4109,7 +4109,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.SavePageStateToPersistenceMedium%2A> method uses the <xref:System.Web.UI.PageStatePersister.Save%2A> method of the <xref:System.Web.UI.PageStatePersister?displayProperty=fullName> object referenced by the <xref:System.Web.UI.Page.PageStatePersister%2A> property to store view-state and control-state information for the page.  
+ The <xref:System.Web.UI.Page.SavePageStateToPersistenceMedium%2A> method uses the <xref:System.Web.UI.PageStatePersister.Save%2A> method of the <xref:System.Web.UI.PageStatePersister?displayProperty=nameWithType> object referenced by the <xref:System.Web.UI.Page.PageStatePersister%2A> property to store view-state and control-state information for the page.  
   
  ASP.NET includes two descendents of the <xref:System.Web.UI.PageStatePersister> class, the <xref:System.Web.UI.HiddenFieldPageStatePersister> class that saves state information in a hidden field included in the ASP.NET page, and the <xref:System.Web.UI.SessionPageStatePersister> class that saves state in the <xref:System.Web.UI.Page.Session%2A> object associated with the request. Note that when using the <xref:System.Web.UI.SessionPageStatePersister> class the hidden VIEWSTATE field is still rendered as this is used to determine post back.  
   
@@ -4591,7 +4591,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
    
   
 ## Examples  
- The following code example demonstrates accessing the <xref:System.Web.TraceContext.IsEnabled%2A?displayProperty=fullName> property and the <xref:System.Web.TraceContext.Write%2A?displayProperty=fullName> method through the <xref:System.Web.UI.Page.Trace%2A> property. This code calls the <xref:System.Diagnostics.Trace.Write%2A> method only when tracing is enabled for the <xref:System.Web.UI.Page> object. If it is not enabled, this code will not run, which can help reduce overhead for your application.  
+ The following code example demonstrates accessing the <xref:System.Web.TraceContext.IsEnabled%2A?displayProperty=nameWithType> property and the <xref:System.Web.TraceContext.Write%2A?displayProperty=nameWithType> method through the <xref:System.Web.UI.Page.Trace%2A> property. This code calls the <xref:System.Diagnostics.Trace.Write%2A> method only when tracing is enabled for the <xref:System.Web.UI.Page> object. If it is not enabled, this code will not run, which can help reduce overhead for your application.  
   
  [!code-csharp[System.Web.UI.Page.Trace#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Trace/CS/trace1cs.aspx#2)]
  [!code-vb[System.Web.UI.Page.Trace#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Trace/VB/trace1vb.aspx#2)]  
@@ -5082,10 +5082,10 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
   
  To disable validation for any button control on the page, set the button control's `CausesValidation` property to `false`.  
   
- When this method is invoked, it iterates through the validation controls contained in the <xref:System.Web.UI.ValidatorCollection> object associated with the <xref:System.Web.UI.Page.Validators%2A?displayProperty=fullName> property and invokes the validation logic for each validation control in the current validation group. The validation group is determined by the control that posted the page to the server. If no validation group is specified, then no validation group is used.  
+ When this method is invoked, it iterates through the validation controls contained in the <xref:System.Web.UI.ValidatorCollection> object associated with the <xref:System.Web.UI.Page.Validators%2A?displayProperty=nameWithType> property and invokes the validation logic for each validation control in the current validation group. The validation group is determined by the control that posted the page to the server. If no validation group is specified, then no validation group is used.  
   
 > [!NOTE]
->  The behavior of page validation has changed. In [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], controls no longer call the <xref:System.Web.UI.Page.Validate?displayProperty=fullName> method; they use the <xref:System.Web.UI.Page.Validate%28System.String%29?displayProperty=fullName> method instead. If you use the <xref:System.Web.UI.Page.Validate?displayProperty=fullName> method on an [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)] page, validation groups are ignored and all controls are validated.  
+>  The behavior of page validation has changed. In [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], controls no longer call the <xref:System.Web.UI.Page.Validate?displayProperty=nameWithType> method; they use the <xref:System.Web.UI.Page.Validate%28System.String%29?displayProperty=nameWithType> method instead. If you use the <xref:System.Web.UI.Page.Validate?displayProperty=nameWithType> method on an [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)] page, validation groups are ignored and all controls are validated.  
   
    
   
@@ -5213,7 +5213,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 ## Remarks  
  You can use this property to manipulate the methods and properties of the <xref:System.Web.UI.ValidatorCollection> object associated with the current <xref:System.Web.UI.Page> instance. This collection contains all the validation server controls that are contained in a page.  
   
- Calling the <xref:System.Web.UI.Page.Validate%2A?displayProperty=fullName> method causes validation logic to be executed for each validation server control in the current validation group. If any of these controls do not pass, the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=fullName> property returns `false`.  
+ Calling the <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> method causes validation logic to be executed for each validation server control in the current validation group. If any of these controls do not pass, the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=nameWithType> property returns `false`.  
   
  For more information on validation controls, see [ASP.NET Validation Controls](http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef).  
   
@@ -5248,7 +5248,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Controls that are required to be inside `<form runat=server>` tags can call this method before they render so that an error message is shown if they are placed outside the tags. Controls that post back or depend on registered script blocks should call this method in an override of the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method. Pages that have a different way of rendering the server form element can override this method to throw an exception under different conditions.  
+ Controls that are required to be inside `<form runat=server>` tags can call this method before they render so that an error message is shown if they are placed outside the tags. Controls that post back or depend on registered script blocks should call this method in an override of the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method. Pages that have a different way of rendering the server form element can override this method to throw an exception under different conditions.  
   
  Server controls that post back or use client-side script will not work if they are not enclosed in the <xref:System.Web.UI.HtmlControls.HtmlForm> server control (<`form runat="server">`) tags. These controls can call this method when they render to provide a clear error message when they are not enclosed in the <xref:System.Web.UI.HtmlControls.HtmlForm> control.  
   
@@ -5257,7 +5257,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
    
   
 ## Examples  
- The following code example overrides the <xref:System.Web.UI.Page.Render%2A?displayProperty=fullName> method of a custom server control. When this control writes its content to a page, it uses the <xref:System.Web.UI.Page.VerifyRenderingInServerForm%2A> method to make sure that the control appears between the opening and closing tags of an <xref:System.Web.UI.HtmlControls.HtmlForm> control.  
+ The following code example overrides the <xref:System.Web.UI.Page.Render%2A?displayProperty=nameWithType> method of a custom server control. When this control writes its content to a page, it uses the <xref:System.Web.UI.Page.VerifyRenderingInServerForm%2A> method to make sure that the control appears between the opening and closing tags of an <xref:System.Web.UI.HtmlControls.HtmlForm> control.  
   
  [!code-csharp[System.Web.UI.Page_VerifyRenderingInServerForm#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_VerifyRenderingInServerForm/CS/testlinkbutton.cs#3)]
  [!code-vb[System.Web.UI.Page_VerifyRenderingInServerForm#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_VerifyRenderingInServerForm/vb/testlinkbutton.vb#3)]  

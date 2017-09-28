@@ -69,7 +69,7 @@
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
-|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=nameWithType> object contained in the `e` parameter.|  
 |<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A>|Initialized to `false`.|  
 |<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A>|Initialized to `false`.|  
   
@@ -247,7 +247,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property to access the values of the fields for the inserted record. For example, you can use these values to keep a log of inserted records.  
   
- The <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+ The <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
   
 > [!NOTE]
 >  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. The advantage in using the indexer is that it returns field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  

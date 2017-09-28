@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `settings` should specify a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>. The <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A?displayProperty=fullName> for `settings` is returned. This property holds the assembly-qualified type name of the service specified by the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
+ `settings` should specify a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>. The <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A?displayProperty=nameWithType> for `settings` is returned. This property holds the assembly-qualified type name of the service specified by the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
   
  ]]></format>
         </remarks>

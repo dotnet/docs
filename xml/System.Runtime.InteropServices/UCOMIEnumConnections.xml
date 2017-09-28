@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.UCOMIEnumConnections ppenum);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone(class System.Runtime.InteropServices.UCOMIEnumConnections ppenum) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.UCOMIEnumConnections&amp; ppenum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnections.Clone(System.Runtime.InteropServices.UCOMIEnumConnections@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -62,7 +62,7 @@
     </Member>
     <Member MemberName="Next">
       <MemberSignature Language="C#" Value="public int Next (int celt, System.Runtime.InteropServices.CONNECTDATA[] rgelt, out int pceltFetched);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, valuetype System.Runtime.InteropServices.CONNECTDATA[] rgelt, int32 pceltFetched) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, [out] valuetype System.Runtime.InteropServices.CONNECTDATA[] rgelt, [out] int32&amp; pceltFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnections.Next(System.Int32,System.Runtime.InteropServices.CONNECTDATA[],System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

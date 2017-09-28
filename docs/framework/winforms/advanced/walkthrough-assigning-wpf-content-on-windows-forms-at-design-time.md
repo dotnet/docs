@@ -63,15 +63,15 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
   
 3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-4.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
+4.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
   
 5.  Add a second WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl2.xaml`.  
   
 6.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-7.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content 2**.  
+7.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content 2**.  
   
- **Note** In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control is used here for illustrative purposes only.  
+ **Note** In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control is used here for illustrative purposes only.  
   
 1.  Build the project.  
   

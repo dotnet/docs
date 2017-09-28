@@ -48,7 +48,7 @@ private void playSimpleSound()
   
 -   That you replace the file name `"c:\Windows\Media\chimes.wav"` with a valid file name.  
   
--   (C#) A reference to the <xref:System.Media?displayProperty=fullName> namespace.  
+-   (C#) A reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
 ## Robust Programming  
  File operations should be enclosed within appropriate structured exception handling blocks.  

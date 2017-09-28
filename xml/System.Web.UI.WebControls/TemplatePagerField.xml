@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TemplatePagerField.CreateDataPagers%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=fullName> method. The <xref:System.Web.UI.WebControls.TemplatePagerField.CreateDataPagers%2A> method populates the <xref:System.Web.UI.WebControls.DataPagerFieldItem> object that is specified by the `container` parameter with the child controls that are contained in the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerTemplate%2A> template.  
+ The <xref:System.Web.UI.WebControls.TemplatePagerField.CreateDataPagers%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=nameWithType> method. The <xref:System.Web.UI.WebControls.TemplatePagerField.CreateDataPagers%2A> method populates the <xref:System.Web.UI.WebControls.DataPagerFieldItem> object that is specified by the `container` parameter with the child controls that are contained in the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerTemplate%2A> template.  
   
  ]]></format>
         </remarks>
@@ -194,9 +194,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TemplatePagerField.HandleEvent%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> method to handle events that occur in the <xref:System.Web.UI.WebControls.TemplatePagerField> object when a button inside the control is clicked.  
+ The <xref:System.Web.UI.WebControls.TemplatePagerField.HandleEvent%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=nameWithType> method to handle events that occur in the <xref:System.Web.UI.WebControls.TemplatePagerField> object when a button inside the control is clicked.  
   
- The <xref:System.Web.UI.WebControls.TemplatePagerField.HandleEvent%2A> method invokes the <xref:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand%2A> method and examines the <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewStartRowIndex%2A?displayProperty=fullName> property. If <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewStartRowIndex%2A?displayProperty=fullName> has changed, this method invokes the <xref:System.Web.UI.WebControls.DataPager.SetPageProperties%2A?displayProperty=fullName> method to update the page properties of the <xref:System.Web.UI.WebControls.DataPager> control.  
+ The <xref:System.Web.UI.WebControls.TemplatePagerField.HandleEvent%2A> method invokes the <xref:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand%2A> method and examines the <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewStartRowIndex%2A?displayProperty=nameWithType> property. If <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewStartRowIndex%2A?displayProperty=nameWithType> has changed, this method invokes the <xref:System.Web.UI.WebControls.DataPager.SetPageProperties%2A?displayProperty=nameWithType> method to update the page properties of the <xref:System.Web.UI.WebControls.DataPager> control.  
   
  ]]></format>
         </remarks>

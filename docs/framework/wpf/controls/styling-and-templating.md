@@ -107,7 +107,7 @@ manager: "wpickett"
   
 <a name="styling_binding_dynamicresource"></a>   
 ### Bindings, Dynamic Resources, and Event Handlers  
- Note that you can use the `Setter.Value` property to specify a [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md) or a [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md). For more information, see the examples provided for the <xref:System.Windows.Setter.Value%2A?displayProperty=fullName> property.  
+ Note that you can use the `Setter.Value` property to specify a [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md) or a [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md). For more information, see the examples provided for the <xref:System.Windows.Setter.Value%2A?displayProperty=nameWithType> property.  
   
  So far, this overview only discusses the use of setters to set property value. You can also specify event handlers in a style. For more information, see <xref:System.Windows.EventSetter>.  
   

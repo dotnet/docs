@@ -40,7 +40,7 @@
 > [!NOTE]
 >  By default, <xref:System.ServiceProcess.ServiceController.MachineName%2A> is set to the local computer, so you do not need to change it unless you want to set the instance to point to another computer.  
   
- Generally, the service author writes code that customizes the action associated with a specific command. For example, a service can contain code to respond to an <xref:System.ServiceProcess.ServiceBase.OnPause%2A?displayProperty=fullName> command. In that case, the custom processing for the <xref:System.ServiceProcess.ServiceController.Pause%2A> task runs before the system pauses the service.  
+ Generally, the service author writes code that customizes the action associated with a specific command. For example, a service can contain code to respond to an <xref:System.ServiceProcess.ServiceBase.OnPause%2A?displayProperty=nameWithType> command. In that case, the custom processing for the <xref:System.ServiceProcess.ServiceController.Pause%2A> task runs before the system pauses the service.  
   
  The set of commands a service can process depends on its properties; for example, you can set the <xref:System.ServiceProcess.ServiceController.CanStop%2A> property for a service to `false`. This setting renders the `Stop` command unavailable on that particular service; it prevents you from stopping the service from the SCM by disabling the necessary button. If you try to stop the service from your code, the system raises an error and displays the error message "Failed to stop `servicename`."  
   
@@ -95,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.%23ctor%28System.String%29?displayProperty=fullName> constructor to create a <xref:System.ServiceProcess.ServiceController> object that is used to control a sample service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
+ The following example demonstrates the use of the <xref:System.ServiceProcess.ServiceController.%23ctor%28System.String%29?displayProperty=nameWithType> constructor to create a <xref:System.ServiceProcess.ServiceController> object that is used to control a sample service. This example is part of a larger example that is provided for the <xref:System.ServiceProcess.ServiceController> class.  
   
  [!code-csharp[ServiceControllerClass#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceControllerClass/CS/program.cs#2)]
  [!code-vb[ServiceControllerClass#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceControllerClass/VB/program.vb#2)]  
@@ -536,7 +536,7 @@
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.ServiceProcess.ServiceController.ExecuteCommand%28System.Int32%29?displayProperty=fullName> method to execute custom commands in the `SimpleService` service example.  
+ The following code example shows the use of the <xref:System.ServiceProcess.ServiceController.ExecuteCommand%28System.Int32%29?displayProperty=nameWithType> method to execute custom commands in the `SimpleService` service example.  
   
  [!code-csharp[ServiceContoller_ExecuteCommand#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/CS/program.cs#1)]
  [!code-vb[ServiceContoller_ExecuteCommand#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceContoller_ExecuteCommand/VB/module1.vb#1)]  

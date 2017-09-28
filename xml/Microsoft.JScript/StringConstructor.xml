@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.StringObject CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.StringObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.StringObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -51,7 +51,7 @@
       </Docs>
     </Member>
     <Member MemberName="fromCharCode">
-      <MemberSignature Language="C#" Value="public static string fromCharCode (object[] args);" />
+      <MemberSignature Language="C#" Value="public static string fromCharCode (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string fromCharCode(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringConstructor.fromCharCode(System.Object[])" />
       <MemberType>Method</MemberType>

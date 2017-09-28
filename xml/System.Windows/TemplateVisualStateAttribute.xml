@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A> property corresponds to the <xref:System.Windows.VisualStateGroup.Name%2A?displayProperty=fullName> property of a <xref:System.Windows.VisualStateGroup> object. To specify what <xref:System.Windows.VisualStateGroup> a <xref:System.Windows.VisualState> belongs in, set the <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A> property.  
+ The <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A> property corresponds to the <xref:System.Windows.VisualStateGroup.Name%2A?displayProperty=nameWithType> property of a <xref:System.Windows.VisualStateGroup> object. To specify what <xref:System.Windows.VisualStateGroup> a <xref:System.Windows.VisualState> belongs in, set the <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A> property.  
   
    
   
@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.TemplateVisualStateAttribute.Name%2A?displayProperty=fullName> property corresponds to the <xref:System.Windows.VisualState.Name%2A?displayProperty=fullName> property of a <xref:System.Windows.VisualState>. To specify what <xref:System.Windows.VisualState> belongs in a control's <xref:System.Windows.Controls.ControlTemplate>, set the <xref:System.Windows.TemplateVisualStateAttribute.Name%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.TemplateVisualStateAttribute.Name%2A?displayProperty=nameWithType> property corresponds to the <xref:System.Windows.VisualState.Name%2A?displayProperty=nameWithType> property of a <xref:System.Windows.VisualState>. To specify what <xref:System.Windows.VisualState> belongs in a control's <xref:System.Windows.Controls.ControlTemplate>, set the <xref:System.Windows.TemplateVisualStateAttribute.Name%2A?displayProperty=nameWithType> property.  
   
    
   

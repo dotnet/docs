@@ -269,9 +269,9 @@
 ## Remarks  
  The <xref:System.Windows.Forms.Padding.GetHashCode%2A> method uses the <xref:System.Windows.Forms.Padding.Right%2A>, <xref:System.Windows.Forms.Padding.Left%2A>, <xref:System.Windows.Forms.Padding.Top%2A>, and <xref:System.Windows.Forms.Padding.Bottom%2A> values to generate a 32-bit hash code that represents the current <xref:System.Windows.Forms.Padding>.  
   
- A hash code is a number that corresponds to the value of an object (so two objects that have the same value should generate the same hash code). Hash codes are used to sort and store collections of objects. For example, a <xref:System.Collections.Hashtable?displayProperty=fullName> represents a collection of key-and-value pairs that are organized based on the hash code of the key.  
+ A hash code is a number that corresponds to the value of an object (so two objects that have the same value should generate the same hash code). Hash codes are used to sort and store collections of objects. For example, a <xref:System.Collections.Hashtable?displayProperty=nameWithType> represents a collection of key-and-value pairs that are organized based on the hash code of the key.  
   
- For more information on hash codes and hash functions, see the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ For more information on hash codes and hash functions, see the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -366,7 +366,7 @@
   
  This operation is transitive.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Add%28System.Windows.Forms.Padding%2CSystem.Windows.Forms.Padding%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Add%28System.Windows.Forms.Padding%2CSystem.Windows.Forms.Padding%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -398,7 +398,7 @@
 ## Remarks  
  Two <xref:System.Windows.Forms.Padding> objects are equal if the padding values for each of the four edges – <xref:System.Windows.Forms.Padding.Left%2A>, <xref:System.Windows.Forms.Padding.Right%2A>, <xref:System.Windows.Forms.Padding.Top%2A>, and <xref:System.Windows.Forms.Padding.Bottom%2A> – are the same for both objects.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Equals%2A?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -430,7 +430,7 @@
 ## Remarks  
  This operation is the inverse of <xref:System.Windows.Forms.Padding.op_Equality%2A>.  
   
- The equivalent method for this operator is the negation of <xref:System.Windows.Forms.Padding.Equals%2A?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is the negation of <xref:System.Windows.Forms.Padding.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -461,7 +461,7 @@
 ## Remarks  
  A vector subtraction operation is the result of subtracting the padding values for each edge. For example, the <xref:System.Windows.Forms.Padding.Left%2A> property of the result is the difference between the <xref:System.Windows.Forms.Padding.Left%2A> properties of two operands.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Subtract%28System.Windows.Forms.Padding%2CSystem.Windows.Forms.Padding%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Subtract%28System.Windows.Forms.Padding%2CSystem.Windows.Forms.Padding%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -519,7 +519,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Padding.Size%2A> property performs a type conversion from <xref:System.Windows.Forms.Padding> to <xref:System.Drawing.Size?displayProperty=fullName>. The <xref:System.Windows.Forms.Padding.Horizontal%2A> property corresponds to the <xref:System.Drawing.Size.Width%2A?displayProperty=fullName> property, and the <xref:System.Windows.Forms.Padding.Vertical%2A> property corresponds to the <xref:System.Drawing.Size.Height%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.Padding.Size%2A> property performs a type conversion from <xref:System.Windows.Forms.Padding> to <xref:System.Drawing.Size?displayProperty=nameWithType>. The <xref:System.Windows.Forms.Padding.Horizontal%2A> property corresponds to the <xref:System.Drawing.Size.Width%2A?displayProperty=nameWithType> property, and the <xref:System.Windows.Forms.Padding.Vertical%2A> property corresponds to the <xref:System.Drawing.Size.Height%2A?displayProperty=nameWithType> property.  
   
  <xref:System.Windows.Forms.Padding.Size%2A> is convenient for use in many layout calculations.  
   
@@ -603,7 +603,7 @@
 ## Remarks  
  This method returns a string containing the labeled values of the padding for all four edges.  
   
- This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

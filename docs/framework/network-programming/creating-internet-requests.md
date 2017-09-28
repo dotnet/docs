@@ -27,7 +27,7 @@ ms.author: "markl"
 manager: "markl"
 ---
 # Creating Internet Requests
-Applications create <xref:System.Net.WebRequest> instances through the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method. This is a static method that creates a class derived from **WebRequest** based on the URI scheme passed to it.  
+Applications create <xref:System.Net.WebRequest> instances through the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method. This is a static method that creates a class derived from **WebRequest** based on the URI scheme passed to it.  
   
 ## Web, File and FTP Requests  
  The .NET Framework provides the <xref:System.Net.HttpWebRequest> class, which is derived from **WebRequest**, to handle HTTP and HTTPS requests. In most cases, the **WebRequest** class provides all the properties you need to make a request; however, if necessary, you can cast **WebRequest** objects created by the **WebRequest.Create** method to the **HttpWebRequest** type to access the HTTP-specific properties of the request. Similarly, the **HttpWebResponse** object handles the responses from HTTP and HTTPS requests. To access the HTTP-specific properties of the **HttpWebResponse** object, you need to cast **WebResponse** objects to the **HttpWebResponse** type.  

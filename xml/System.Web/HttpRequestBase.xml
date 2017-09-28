@@ -303,7 +303,7 @@
 ## Remarks  
  The <xref:System.Web.HttpRequestBase.CurrentExecutionFilePath%2A> property returns the file path of the currently executing page handler.  
   
- When you redirect a request using either the <xref:System.Web.HttpServerUtility.Execute%2A?displayProperty=fullName> method or the <xref:System.Web.HttpServerUtility.Transfer%2A?displayProperty=fullName> method, the <xref:System.Web.HttpRequestBase.CurrentExecutionFilePath%2A> property returns the path of the page that you are redirecting to (the child page). However, when the client is redirected to another page, the <xref:System.Web.HttpRequestBase.FilePath%2A> property returns the path to the original page.  
+ When you redirect a request using either the <xref:System.Web.HttpServerUtility.Execute%2A?displayProperty=nameWithType> method or the <xref:System.Web.HttpServerUtility.Transfer%2A?displayProperty=nameWithType> method, the <xref:System.Web.HttpRequestBase.CurrentExecutionFilePath%2A> property returns the path of the page that you are redirecting to (the child page). However, when the client is redirected to another page, the <xref:System.Web.HttpRequestBase.FilePath%2A> property returns the path to the original page.  
   
  ]]></format>
         </remarks>
@@ -1047,7 +1047,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

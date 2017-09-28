@@ -119,7 +119,7 @@ This walkthrough demonstrates how to create a custom user control that can parti
   
     -   Packages the Circle data into a <xref:System.Windows.DataObject>. In this case, the Circle control packages three data items; a string representation of its Fill color, a double representation of its height, and a copy of itself.  
   
-    -   Calls the static <xref:System.Windows.DragDrop.DoDragDrop%2A?displayProperty=fullName> method to initiate the drag-and-drop operation. You pass the following three parameters to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method:  
+    -   Calls the static <xref:System.Windows.DragDrop.DoDragDrop%2A?displayProperty=nameWithType> method to initiate the drag-and-drop operation. You pass the following three parameters to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method:  
   
         -   `dragSource` – A reference to this control.  
   

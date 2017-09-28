@@ -48,7 +48,7 @@ This topic shows how to create a time zone without adjustment rules. To create a
 
 4. Instantiate a <xref:System.TimeSpan> object that defines the time zone's offset from UTC. Time zones with times that are later than UTC have a positive offset. Time zones with times that are earlier than UTC have a negative offset.
 
-5. Call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=fullName> method to instantiate the new time zone.
+5. Call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType> method to instantiate the new time zone.
 
 ## Example
 

@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Defines the methods that enable a client application to display a user interface to collect identity information prior to creating the channel.</summary>
@@ -16,29 +20,29 @@
 ## Remarks  
  Implement the <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer> interface to enable a client application to display a user interface that enables the user of the application to create or select the credentials prior to opening a channel.  
   
- To implement <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>, perform the following steps in <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI%2A?displayProperty=fullName>:  
+ To implement <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>, perform the following steps in <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI%2A?displayProperty=nameWithType>:  
   
-1.  Prompt the user and obtain an appropriate <xref:System.Net.NetworkCredential?displayProperty=fullName>.  
+1.  Prompt the user and obtain an appropriate <xref:System.Net.NetworkCredential?displayProperty=nameWithType>.  
   
-2.  Add a custom channel parameter object to the collection returned by the <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.IClientChannel> object with a type parameter of <xref:System.ServiceModel.Channels.ChannelParameterCollection?displayProperty=fullName>. This channel parameter object is used by the custom <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager?displayProperty=fullName> to establish the security tokens for the channel.  
+2.  Add a custom channel parameter object to the collection returned by the <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A?displayProperty=nameWithType> method on the <xref:System.ServiceModel.IClientChannel> object with a type parameter of <xref:System.ServiceModel.Channels.ChannelParameterCollection?displayProperty=nameWithType>. This channel parameter object is used by the custom <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager?displayProperty=nameWithType> to establish the security tokens for the channel.  
   
 3.  Return.  
   
  To insert <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>:  
   
-1.  Override the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.Description.ClientCredentials?displayProperty=fullName> class.  
+1.  Override the <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A?displayProperty=nameWithType> method on the <xref:System.ServiceModel.Description.ClientCredentials?displayProperty=nameWithType> class.  
   
-2.  In that method, determine whether the endpoint requires an <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer> and if so, add the <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer> to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.InteractiveChannelInitializers%2A?displayProperty=fullName> collection.  
+2.  In that method, determine whether the endpoint requires an <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer> and if so, add the <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer> to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.InteractiveChannelInitializers%2A?displayProperty=nameWithType> collection.  
   
- There are two ways application developers can make use of an inserted <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>. The client application can call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=fullName> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=fullName> (or an asynchronous version) prior to opening the channel (the *explicit* approach) or simply call the first operation (the *implicit* approach).  
+ There are two ways application developers can make use of an inserted <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>. The client application can call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=nameWithType> (or an asynchronous version) prior to opening the channel (the *explicit* approach) or simply call the first operation (the *implicit* approach).  
   
  If using the implicit approach, the application must call the first operation on an <xref:System.ServiceModel.ClientBase%601> or <xref:System.ServiceModel.IClientChannel> extension. If it calls anything other than the first operation, an exception is thrown.  
   
  If using the explicit approach, the application must perform the following steps in order:  
   
-1.  Call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=fullName> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=fullName> (or an asynchronous version).  
+1.  Call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=nameWithType> (or an asynchronous version).  
   
-2.  When the initializers have returned, call either the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.IClientChannel> object or on the <xref:System.ServiceModel.IClientChannel> object returned from the <xref:System.ServiceModel.ClientBase%601.InnerChannel%2A?displayProperty=fullName> property.  
+2.  When the initializers have returned, call either the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.IClientChannel> object or on the <xref:System.ServiceModel.IClientChannel> object returned from the <xref:System.ServiceModel.ClientBase%601.InnerChannel%2A?displayProperty=nameWithType> property.  
   
 3.  Call operations.  
   
@@ -60,6 +64,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -78,11 +86,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To implement <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>, perform the following steps in <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI%2A?displayProperty=fullName>:  
+ To implement <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer>, perform the following steps in <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer.BeginDisplayInitializationUI%2A?displayProperty=nameWithType>:  
   
-1.  Prompt the user in what way you see fit and obtain an appropriate <xref:System.Net.NetworkCredential?displayProperty=fullName>.  
+1.  Prompt the user in what way you see fit and obtain an appropriate <xref:System.Net.NetworkCredential?displayProperty=nameWithType>.  
   
-2.  Add a custom channel parameter object to the collection returned by the <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A?displayProperty=fullName> method on the <xref:System.ServiceModel.IClientChannel> object with a type parameter of <xref:System.ServiceModel.Channels.ChannelParameterCollection?displayProperty=fullName>. This channel parameter object is used by the custom <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager?displayProperty=fullName> to establish the security tokens for the channel.  
+2.  Add a custom channel parameter object to the collection returned by the <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A?displayProperty=nameWithType> method on the <xref:System.ServiceModel.IClientChannel> object with a type parameter of <xref:System.ServiceModel.Channels.ChannelParameterCollection?displayProperty=nameWithType>. This channel parameter object is used by the custom <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager?displayProperty=nameWithType> to establish the security tokens for the channel.  
   
 3.  Return.  
   
@@ -99,6 +107,10 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

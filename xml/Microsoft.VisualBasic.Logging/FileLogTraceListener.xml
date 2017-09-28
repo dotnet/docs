@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class provides automated maintenance capabilities to archive log files as needed, on a daily or per-application basis. This automatic archival functionality helps reduce the maintenance responsibilities of developers and administrators.  
   
- An instance of <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=fullName> or <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collections to redirect output from logging to a text file. Instances of this class can also be added to `My.Application.Log` or `My.Log` (for Web applications) in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] applications. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)`.`  
+ An instance of <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> can be added to the <xref:System.Diagnostics.Debug.Listeners%2A?displayProperty=nameWithType> or <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collections to redirect output from logging to a text file. Instances of this class can also be added to `My.Application.Log` or `My.Log` (for Web applications) in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] applications. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)`.`  
   
  The main features of this class are:  
   
@@ -788,7 +788,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object[] data);" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -931,7 +931,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>

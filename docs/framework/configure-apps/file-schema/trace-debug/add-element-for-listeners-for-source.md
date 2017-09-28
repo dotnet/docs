@@ -76,7 +76,7 @@ Adds a listener to the `Listeners` collection for a trace source.
 ## Remarks  
  The listener classes shipped with the .NET Framework derive from the <xref:System.Diagnostics.TraceListener> class.  
   
- If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> property of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and you can remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify a unique name for each trace listener, which allows you to identify and manage individual trace listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=fullName> collection.  
+ If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> property of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and you can remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify a unique name for each trace listener, which allows you to identify and manage individual trace listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=nameWithType> collection.  
   
 > [!NOTE]
 >  Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.  
@@ -90,12 +90,12 @@ Adds a listener to the `Listeners` collection for a trace source.
   
 |Trace listener class|initializeData attribute value|  
 |--------------------------|------------------------------------|  
-|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|  
-|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
-|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>|The name of an existing event log source.|  
-|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
-|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
-|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|  
+|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
+|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|The name of an existing event log source.|  
+|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
+|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
   
 ## Configuration File  
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  

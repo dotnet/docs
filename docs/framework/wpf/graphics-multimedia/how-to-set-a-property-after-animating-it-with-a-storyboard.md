@@ -48,7 +48,7 @@ In some cases, it might appear that you can't change the value of a property aft
  [!code-vb[timingbehaviors_snip#GraphicsMMButton2Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/timingbehaviors_snip/visualbasic/animatethensetpropertyexample.xaml.vb#graphicsmmbutton2handler)]  
   
 ## Remove the entire storyboard  
- By using a <xref:System.Windows.Media.Animation.RemoveStoryboard> trigger or the <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=fullName> method, you tell the storyboard animations to stop affecting their target properties. The difference between this approach and setting the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property is that you can remove the storyboard at anytime, while the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property only has an effect when the animation reaches the end of its active period.  
+ By using a <xref:System.Windows.Media.Animation.RemoveStoryboard> trigger or the <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=nameWithType> method, you tell the storyboard animations to stop affecting their target properties. The difference between this approach and setting the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property is that you can remove the storyboard at anytime, while the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property only has an effect when the animation reaches the end of its active period.  
   
  [!code-xaml[timingbehaviors_snip#GraphicsMMButton3Declaration](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/AnimateThenSetPropertyExample.xaml#graphicsmmbutton3declaration)]  
   
@@ -67,7 +67,7 @@ In some cases, it might appear that you can't change the value of a property aft
   
 ## See Also  
  <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A>   
- <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=fullName>   
+ <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=nameWithType>   
  <xref:System.Windows.Media.Animation.RemoveStoryboard>   
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
  [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)

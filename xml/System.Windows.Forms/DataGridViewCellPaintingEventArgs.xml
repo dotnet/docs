@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.CellPainting> event is raised for each <xref:System.Windows.Forms.DataGridViewCell> that is visible on a <xref:System.Windows.Forms.DataGridView>. To improve performance, set the properties in a <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs> to change the appearance of the cell instead of directly accessing a cell in the <xref:System.Windows.Forms.DataGridView>. If you manually paint the cell, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`. If you do not set <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> to `true`, the cell will paint over your customizations.  
+ The <xref:System.Windows.Forms.DataGridView.CellPainting> event is raised for each <xref:System.Windows.Forms.DataGridViewCell> that is visible on a <xref:System.Windows.Forms.DataGridView>. To improve performance, set the properties in a <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs> to change the appearance of the cell instead of directly accessing a cell in the <xref:System.Windows.Forms.DataGridView>. If you manually paint the cell, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> property to `true`. If you do not set <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> to `true`, the cell will paint over your customizations.  
   
    
   
@@ -108,9 +108,9 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
@@ -204,9 +204,9 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
@@ -267,14 +267,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the current <xref:System.Windows.Forms.DataGridViewCell> is a row header cell, the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> property is the same as the <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.DataGridViewRow>. When the current cell is a data cell, <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> is the same as the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.DataGridViewCell>.  
+ When the current <xref:System.Windows.Forms.DataGridViewCell> is a row header cell, the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> property is the same as the <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.DataGridViewRow>. When the current cell is a data cell, <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> is the same as the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.DataGridViewCell>.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
@@ -307,9 +307,9 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
@@ -451,9 +451,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
@@ -514,9 +514,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  

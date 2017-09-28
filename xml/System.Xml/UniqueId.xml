@@ -417,7 +417,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Xml.UniqueId" />s are equal, or are both <see langword="null" />; <see langword="false" /> if they are not equal, or if only one of them is <see langword="null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Equals%2A?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -546,7 +546,7 @@
     </Member>
     <Member MemberName="TryGetGuid">
       <MemberSignature Language="C#" Value="public bool TryGetGuid (out Guid guid);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGuid(valuetype System.Guid guid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGuid([out] valuetype System.Guid&amp; guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.TryGetGuid(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

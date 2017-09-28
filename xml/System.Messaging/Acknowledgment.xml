@@ -17,11 +17,11 @@
 ## Remarks  
  The <xref:System.Messaging.Acknowledgment> class defines the types of acknowledgment messages that Message Queuing posts in the administration queue and the conditions that cause an acknowledgment message to be sent. Acknowledgment types can be divided broadly into four groups: positive arrival acknowledgments, positive read acknowledgments, negative arrival acknowledgments, and negative read acknowledgments.  
   
- The administration queue associated with message is specified in the <xref:System.Messaging.Message.AdministrationQueue%2A?displayProperty=fullName> property.  
+ The administration queue associated with message is specified in the <xref:System.Messaging.Message.AdministrationQueue%2A?displayProperty=nameWithType> property.  
   
- Message Queuing sets the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property to one of the <xref:System.Messaging.Acknowledgment> enumeration values when it creates an acknowledgment message. The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property value is typically meaningful only when the instance refers to a system-sent acknowledgment message. Reading the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=fullName> property for a message other than an acknowledgment message throws an exception.  
+ Message Queuing sets the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=nameWithType> property to one of the <xref:System.Messaging.Acknowledgment> enumeration values when it creates an acknowledgment message. The <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=nameWithType> property value is typically meaningful only when the instance refers to a system-sent acknowledgment message. Reading the <xref:System.Messaging.Message.Acknowledgment%2A?displayProperty=nameWithType> property for a message other than an acknowledgment message throws an exception.  
   
- Message Queuing does not send an acknowledgment message unless the sending application requests that it do so. Your application makes this request by setting the appropriate value for the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=fullName> property. Message Queuing sends all acknowledgment messages to the administration queue specified in the <xref:System.Messaging.Message.AdministrationQueue%2A> property of the original <xref:System.Messaging.Message>.  
+ Message Queuing does not send an acknowledgment message unless the sending application requests that it do so. Your application makes this request by setting the appropriate value for the <xref:System.Messaging.Message.AcknowledgeType%2A?displayProperty=nameWithType> property. Message Queuing sends all acknowledgment messages to the administration queue specified in the <xref:System.Messaging.Message.AdministrationQueue%2A> property of the original <xref:System.Messaging.Message>.  
   
    
   

@@ -160,7 +160,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is always an <xref:System.Object>. However, the underlying type varies, depending on the type of document referenced. For instance, a <xref:System.IO.Stream> passed into <xref:System.Web.Services.Discovery.SchemaReference.ReadDocument%2A?displayProperty=fullName> returns an instance of <xref:System.Xml.Schema.XmlSchema>.  
+ The return value is always an <xref:System.Object>. However, the underlying type varies, depending on the type of document referenced. For instance, a <xref:System.IO.Stream> passed into <xref:System.Web.Services.Discovery.SchemaReference.ReadDocument%2A?displayProperty=nameWithType> returns an instance of <xref:System.Xml.Schema.XmlSchema>.  
   
    
   

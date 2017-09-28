@@ -51,7 +51,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Derived Math Functions (Visual Basic)
-The following table shows non-intrinsic math functions that can be derived from the intrinsic math functions of the <xref:System.Math?displayProperty=fullName> object. You can access the intrinsic math functions by adding `Imports System.Math` to your file or project.  
+The following table shows non-intrinsic math functions that can be derived from the intrinsic math functions of the <xref:System.Math?displayProperty=nameWithType> object. You can access the intrinsic math functions by adding `Imports System.Math` to your file or project.  
   
 |Function|Derived equivalents|  
 |--------------|-------------------------|  

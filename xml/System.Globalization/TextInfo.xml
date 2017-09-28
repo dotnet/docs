@@ -44,10 +44,10 @@
 ## Remarks  
  A writing system is the collection of scripts and orthographic rules required to represent a language as text. The <xref:System.Globalization.TextInfo> class represents a writing system.  
   
- The application should use the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> property to obtain the <xref:System.Globalization.TextInfo> object for a particular <xref:System.Globalization.CultureInfo> object. If a security decision depends on a string comparison or a case-change operation, the application should use the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> property of the object returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property to ensure that the behavior of the operation is consistent regardless of the operating system culture settings.  
+ The application should use the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> property to obtain the <xref:System.Globalization.TextInfo> object for a particular <xref:System.Globalization.CultureInfo> object. If a security decision depends on a string comparison or a case-change operation, the application should use the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> property of the object returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property to ensure that the behavior of the operation is consistent regardless of the operating system culture settings.  
   
 ## Overrides  
- The user might use the regional and language options portion of Control Panel to override the values associated with the current culture of Windows. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=fullName> property is set to `true`, the property values of the objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> properties are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo>, for example, if the selected calendar is not one of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A>, the results of the methods and the values of the properties are undefined.  
+ The user might use the regional and language options portion of Control Panel to override the values associated with the current culture of Windows. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=nameWithType> property is set to `true`, the property values of the objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> properties are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo>, for example, if the selected calendar is not one of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A>, the results of the methods and the values of the properties are undefined.  
   
  ]]></format>
     </remarks>
@@ -168,9 +168,9 @@
 ## Remarks  
  A <xref:System.Globalization.TextInfo> object is created from a specific culture, and the <xref:System.Globalization.TextInfo.CultureName%2A> property returns the name of that culture.  
   
- The <xref:System.Globalization.TextInfo.CultureName%2A> property always reflects a specific culture rather than a neutral culture. If <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=fullName> has a neutral culture as its value, then the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> has as its value an arbitrary specific culture that uses the same language. For example, the <xref:System.Globalization.CultureInfo.Name%2A> property returns "en" for the English neutral culture, but the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> property might return "en-US" for the English (United States) culture. If the <xref:System.Globalization.TextInfo> object is associated with a specific culture instead of a neutral culture, the value of its <xref:System.Globalization.TextInfo.CultureName%2A> property is always identical to the <xref:System.Globalization.CultureInfo.Name%2A> property value of its associated <xref:System.Globalization.CultureInfo> object.  
+ The <xref:System.Globalization.TextInfo.CultureName%2A> property always reflects a specific culture rather than a neutral culture. If <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=nameWithType> has a neutral culture as its value, then the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> has as its value an arbitrary specific culture that uses the same language. For example, the <xref:System.Globalization.CultureInfo.Name%2A> property returns "en" for the English neutral culture, but the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> property might return "en-US" for the English (United States) culture. If the <xref:System.Globalization.TextInfo> object is associated with a specific culture instead of a neutral culture, the value of its <xref:System.Globalization.TextInfo.CultureName%2A> property is always identical to the <xref:System.Globalization.CultureInfo.Name%2A> property value of its associated <xref:System.Globalization.CultureInfo> object.  
   
- Similarly, the <xref:System.Globalization.TextInfo.CultureName%2A> property never reflects a particular sort. It always corresponds to a default sort order. For example, the default sort order for Spanish (Spain) is the international sort order. If <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=fullName> is es-ES_tradnl (Spanish with the traditional sort order) then the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> is es-ES (Spanish with the default international sort order).  
+ Similarly, the <xref:System.Globalization.TextInfo.CultureName%2A> property never reflects a particular sort. It always corresponds to a default sort order. For example, the default sort order for Spanish (Spain) is the international sort order. If <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=nameWithType> is es-ES_tradnl (Spanish with the traditional sort order) then the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> is es-ES (Spanish with the default international sort order).  
   
  ]]></format>
         </remarks>
@@ -241,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -281,7 +281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
  This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.TextInfo.Equals%2A> method.  
   
@@ -411,11 +411,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Certain predefined culture names and identifiers are used by this and other classes in the <xref:System.Globalization?displayProperty=fullName> namespace, as well as the Windows API. The detailed culture information is defined in the [National Language Support (NLS) API Reference topic at the Go Global Developer Center](http://msdn.microsoft.com/goglobal/bb896001.aspx).  
+ Certain predefined culture names and identifiers are used by this and other classes in the <xref:System.Globalization?displayProperty=nameWithType> namespace, as well as the Windows API. The detailed culture information is defined in the [National Language Support (NLS) API Reference topic at the Go Global Developer Center](http://msdn.microsoft.com/goglobal/bb896001.aspx).  
   
- The <xref:System.Globalization.TextInfo.LCID%2A> property always reflects a specific culture identifier instead of a neutral culture identifier. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> is set to a neutral culture identifier, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> has as its value an arbitrary specific culture identifier that uses the same language. For example, the <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> property returns 0x0009 for the English neutral culture, named "en". However, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> property might return 0x0409 for the English (United States) culture, named en-US.  
+ The <xref:System.Globalization.TextInfo.LCID%2A> property always reflects a specific culture identifier instead of a neutral culture identifier. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> is set to a neutral culture identifier, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> has as its value an arbitrary specific culture identifier that uses the same language. For example, the <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> property returns 0x0009 for the English neutral culture, named "en". However, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> property might return 0x0409 for the English (United States) culture, named en-US.  
   
- Similarly, the <xref:System.Globalization.TextInfo.LCID%2A> property always corresponds to a default sort order, and never reflects a specific sort order. For example, the default sort order for Spanish (Spain) is the international sort order. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> is set to "0x040A" (Spanish with the traditional sort order), the corresponding <xref:System.Globalization.TextInfo.LCID%2A> value is "0x0C0A" (Spanish with the default international sort order).  
+ Similarly, the <xref:System.Globalization.TextInfo.LCID%2A> property always corresponds to a default sort order, and never reflects a specific sort order. For example, the default sort order for Spanish (Spain) is the international sort order. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> is set to "0x040A" (Spanish with the traditional sort order), the corresponding <xref:System.Globalization.TextInfo.LCID%2A> value is "0x0C0A" (Spanish with the default international sort order).  
   
  ]]></format>
         </remarks>
@@ -759,7 +759,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

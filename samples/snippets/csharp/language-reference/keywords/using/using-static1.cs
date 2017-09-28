@@ -15,12 +15,12 @@ public class Circle
       get { return 2 * Radius; }
    }
 
-   public double Area
+   public double Circumference
    {
       get { return 2 * Radius * Math.PI; }      
    }
 
-   public double Circumference
+   public double Area
    {
       get { return Math.PI * Math.Pow(Radius, 2); }
    }

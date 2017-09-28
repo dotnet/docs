@@ -184,7 +184,7 @@
     </Member>
     <Member MemberName="Resolve">
       <MemberSignature Language="C#" Value="public object Resolve (string name, out bool isFullyInitialized);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Resolve(string name, bool isFullyInitialized) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Resolve(string name, [out] bool&amp; isFullyInitialized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameResolver.Resolve(System.String,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

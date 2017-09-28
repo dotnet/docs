@@ -1048,7 +1048,7 @@ validator.ValidateEndElement(null);
   
  The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method.  
   
--   For elements with simple content, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A?displayProperty=fullName> method verifies that the text content of the element is valid according to its data type and returns the parsed typed value. The text content of the element is obtained from the typed content passed as a parameter.  
+-   For elements with simple content, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A?displayProperty=nameWithType> method verifies that the text content of the element is valid according to its data type and returns the parsed typed value. The text content of the element is obtained from the typed content passed as a parameter.  
   
 -   If calls to the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method have been previously made, an <xref:System.InvalidOperationException> is thrown.  
   

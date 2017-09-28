@@ -444,7 +444,7 @@ End Class
   
  On each successive iteration of the `For Each…Next` loop (or the direct call to `IEnumerator.MoveNext`), the next iterator code body resumes after the previous `Yield` statement. It then continues to the next `Yield` statement until the end of the iterator body is reached, or until an `Exit Function` or `Return` statement is encountered.  
   
- Iterators do not support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method. To re-iterate from the start, you must obtain a new iterator.  
+ Iterators do not support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To re-iterate from the start, you must obtain a new iterator.  
   
  For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).  
   

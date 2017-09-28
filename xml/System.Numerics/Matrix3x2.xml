@@ -700,7 +700,7 @@
     </Member>
     <Member MemberName="Invert">
       <MemberSignature Language="C#" Value="public static bool Invert (System.Numerics.Matrix3x2 matrix, out System.Numerics.Matrix3x2 result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Invert(valuetype System.Numerics.Matrix3x2 matrix, valuetype System.Numerics.Matrix3x2 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Invert(valuetype System.Numerics.Matrix3x2 matrix, [out] valuetype System.Numerics.Matrix3x2&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Invert(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

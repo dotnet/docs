@@ -209,7 +209,7 @@
     </Member>
     <Member MemberName="TryGetTarget">
       <MemberSignature Language="C#" Value="public bool TryGetTarget (out T target);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTarget(!T target) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTarget([out] !T&amp; target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.TryGetTarget(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

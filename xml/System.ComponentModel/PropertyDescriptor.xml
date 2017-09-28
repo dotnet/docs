@@ -773,7 +773,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To find the appropriate type, this method first checks the assembly of the type that this <xref:System.ComponentModel.PropertyDescriptor> references. If it does not find the type in the assembly, it calls <xref:System.Type.GetType%2A?displayProperty=fullName>.  
+ To find the appropriate type, this method first checks the assembly of the type that this <xref:System.ComponentModel.PropertyDescriptor> references. If it does not find the type in the assembly, it calls <xref:System.Type.GetType%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1074,15 +1074,15 @@
   
  This method creates a <xref:System.ComponentModel.Design.DesignerTransaction> automatically in the following order:  
   
-1.  The method calls the <xref:System.ComponentModel.Design.IDesignerHost.CreateTransaction%2A?displayProperty=fullName> method to create a new <xref:System.ComponentModel.Design.DesignerTransaction> to represent the changes.  
+1.  The method calls the <xref:System.ComponentModel.Design.IDesignerHost.CreateTransaction%2A?displayProperty=nameWithType> method to create a new <xref:System.ComponentModel.Design.DesignerTransaction> to represent the changes.  
   
-2.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanging%2A?displayProperty=fullName> method to indicate that the transaction has begun and the changes are about to occur.  
+2.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanging%2A?displayProperty=nameWithType> method to indicate that the transaction has begun and the changes are about to occur.  
   
 3.  The method resets the property to the value determined by this method's checking order.  
   
-4.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanged%2A?displayProperty=fullName> method to indicate that the changes have occurred.  
+4.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanged%2A?displayProperty=nameWithType> method to indicate that the changes have occurred.  
   
-5.  The method calls <xref:System.ComponentModel.Design.DesignerTransaction.Commit%2A?displayProperty=fullName> to indicate that the transaction is completed.  
+5.  The method calls <xref:System.ComponentModel.Design.DesignerTransaction.Commit%2A?displayProperty=nameWithType> to indicate that the transaction is completed.  
   
  The purpose of the transaction is to support `Undo` and `Redo` functionality.  
   
@@ -1159,15 +1159,15 @@
   
  This method creates a <xref:System.ComponentModel.Design.DesignerTransaction> automatically in the following order:  
   
-1.  The method calls the <xref:System.ComponentModel.Design.IDesignerHost.CreateTransaction%2A?displayProperty=fullName> method to create a new <xref:System.ComponentModel.Design.DesignerTransaction> to represent the changes.  
+1.  The method calls the <xref:System.ComponentModel.Design.IDesignerHost.CreateTransaction%2A?displayProperty=nameWithType> method to create a new <xref:System.ComponentModel.Design.DesignerTransaction> to represent the changes.  
   
-2.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanging%2A?displayProperty=fullName> method to indicate that the transaction has begun and the changes are about to occur.  
+2.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanging%2A?displayProperty=nameWithType> method to indicate that the transaction has begun and the changes are about to occur.  
   
 3.  The method resets the property to the value determined by this method's checking order.  
   
-4.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanged%2A?displayProperty=fullName> method to indicate that the changes have occurred.  
+4.  The method calls the <xref:System.ComponentModel.Design.IComponentChangeService.OnComponentChanged%2A?displayProperty=nameWithType> method to indicate that the changes have occurred.  
   
-5.  The method calls <xref:System.ComponentModel.Design.DesignerTransaction.Commit%2A?displayProperty=fullName> to indicate that the transaction is complete.  
+5.  The method calls <xref:System.ComponentModel.Design.DesignerTransaction.Commit%2A?displayProperty=nameWithType> to indicate that the transaction is complete.  
   
  The purpose of the transaction is to support `Undo` and `Redo` functionality.  
   

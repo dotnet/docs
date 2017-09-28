@@ -32,9 +32,9 @@ manager: "wpickett"
 ## See Also  
  <xref:System.IO.StreamWriter>   
  <xref:System.IO.StreamReader>   
- <xref:System.IO.File.AppendText%2A?displayProperty=fullName>   
- <xref:System.IO.File.OpenText%2A?displayProperty=fullName>   
- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName>   
+ <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType>   
+ <xref:System.IO.File.OpenText%2A?displayProperty=nameWithType>   
+ <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>   
  [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)   
  [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)   
  [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)   

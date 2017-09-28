@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.6.1|
 |Type|Retargeting|
-|Affected APIs|<ul><li><xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims(System.String%2CSystem.String)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims(System.String%2CSystem.String)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0143</li></ul>|
 

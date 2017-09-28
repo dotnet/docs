@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the static methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=fullName> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=fullName>. These methods are the only useful ways to create an initialized object.  
+ This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the static methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=nameWithType> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=nameWithType>. These methods are the only useful ways to create an initialized object.  
   
 > [!NOTE]
 >  If you are using Microsoft Internet Information Services (IIS) 6.0, process metrics returned by the <xref:System.Web.ProcessInfo> classes are available only if you are running in IIS 5.0 isolation mode. If you are using IIS 6.0 in worker process isolation mode, the ASP.NET process model is disabled and an <xref:System.Web.HttpException> exception is thrown when you access <xref:System.Web.ProcessInfo> members.  
@@ -49,7 +49,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the `static` methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=fullName> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=fullName>. These methods are the only useful ways to create an initialized <xref:System.Web.ProcessInfo> object.  
+ This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the `static` methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=nameWithType> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=nameWithType>. These methods are the only useful ways to create an initialized <xref:System.Web.ProcessInfo> object.  
   
  ]]></format>
         </remarks>
@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the static methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=fullName> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=fullName>. These methods are the only useful ways to create an initialized <xref:System.Web.ProcessInfo> object.  
+ This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the static methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=nameWithType> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=nameWithType>. These methods are the only useful ways to create an initialized <xref:System.Web.ProcessInfo> object.  
   
  ]]></format>
         </remarks>

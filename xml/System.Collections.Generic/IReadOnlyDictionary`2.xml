@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations can vary in how they determine the equality of objects; for example, the class that implements <xref:System.Collections.Generic.IReadOnlyDictionary%602> might use the <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> property, or it might implement the <xref:System.Collections.Generic.IComparer%601> method.  
+ Implementations can vary in how they determine the equality of objects; for example, the class that implements <xref:System.Collections.Generic.IReadOnlyDictionary%602> might use the <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> property, or it might implement the <xref:System.Collections.Generic.IComparer%601> method.  
   
  Implementations can vary in whether they allow `key` to be `null`.  
   
@@ -140,7 +140,7 @@
 ## Remarks  
  This property lets you access a specific element in the collection by using the following syntax: `myCollection[key]` (`myCollection(key)` in Visual Basic).  
   
- Implementations can vary in how they determine the equality of objects: for example, the class that implements <xref:System.Collections.Generic.IReadOnlyDictionary%602> might use the <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> property, or it might implement the <xref:System.Collections.Generic.IComparer%601> method.  
+ Implementations can vary in how they determine the equality of objects: for example, the class that implements <xref:System.Collections.Generic.IReadOnlyDictionary%602> might use the <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> property, or it might implement the <xref:System.Collections.Generic.IComparer%601> method.  
   
  Implementations can vary in whether they allow `key` to be `null`.  
   
@@ -191,7 +191,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

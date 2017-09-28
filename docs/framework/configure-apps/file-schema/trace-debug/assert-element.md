@@ -27,7 +27,7 @@ ms.author: "markl"
 manager: "markl"
 ---
 # &lt;assert&gt; Element
-Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method; also specifies the name of the file to write messages to.  
+Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method; also specifies the name of the file to write messages to.  
   
  \<configuration>  
 \<system.diagnostics>  

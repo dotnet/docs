@@ -296,7 +296,7 @@
     </Member>
     <Member MemberName="ModifyAccessRule">
       <MemberSignature Language="C#" Value="public override bool ModifyAccessRule (System.Security.AccessControl.AccessControlModification modification, System.Security.AccessControl.AccessRule rule, out bool modified);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ModifyAccessRule(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AccessRule rule, bool modified) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ModifyAccessRule(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AccessRule rule, [out] bool&amp; modified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -325,7 +325,7 @@
     </Member>
     <Member MemberName="ModifyAuditRule">
       <MemberSignature Language="C#" Value="public override bool ModifyAuditRule (System.Security.AccessControl.AccessControlModification modification, System.Security.AccessControl.AuditRule rule, out bool modified);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ModifyAuditRule(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AuditRule rule, bool modified) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ModifyAuditRule(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AuditRule rule, [out] bool&amp; modified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

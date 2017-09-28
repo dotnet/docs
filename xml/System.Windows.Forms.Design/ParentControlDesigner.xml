@@ -50,7 +50,7 @@
     </Member>
     <Member MemberName="AddPaddingSnapLines">
       <MemberSignature Language="C#" Value="protected void AddPaddingSnapLines (ref System.Collections.ArrayList snapLines);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddPaddingSnapLines(class System.Collections.ArrayList snapLines) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddPaddingSnapLines(class System.Collections.ArrayList&amp; snapLines) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.AddPaddingSnapLines(System.Collections.ArrayList@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

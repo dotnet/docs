@@ -1509,7 +1509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>
@@ -1549,7 +1549,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>
@@ -1591,7 +1591,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`. The "\<" and ">" characters are used to begin and end the string, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`. The "\<" and ">" characters are used to begin and end the string, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> property followed by a space is used to separate each element.  
   
  ]]></format>
         </remarks>

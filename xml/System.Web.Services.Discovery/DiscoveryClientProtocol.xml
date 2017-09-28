@@ -210,7 +210,7 @@
     </Member>
     <Member MemberName="Download">
       <MemberSignature Language="C#" Value="public System.IO.Stream Download (ref string url);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string url) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string&amp; url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Download(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -243,7 +243,7 @@
     </Member>
     <Member MemberName="Download">
       <MemberSignature Language="C#" Value="public System.IO.Stream Download (ref string url, ref string contentType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string url, string contentType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Download(string&amp; url, string&amp; contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.Download(System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -47,7 +47,7 @@ This section provides reference information for various aspects of the [!INCLUDE
  Summarizes the way that keywords, placeholders, and other elements of the language are formatted in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] documentation.  
   
  [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)  
- Lists the classes and modules of the <xref:Microsoft.VisualBasic?displayProperty=fullName> namespace, with links to their member functions, methods, properties, constants, and enumerations.  
+ Lists the classes and modules of the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace, with links to their member functions, methods, properties, constants, and enumerations.  
   
  [Keywords](../../visual-basic/language-reference/keywords/index.md)  
  Lists all Visual Basic keywords and provides links to more information.  

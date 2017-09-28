@@ -32,7 +32,7 @@ You can use the <xref:System.Media.SoundPlayer> class to play a sound from an em
 ## Compiling the Code  
  This example requires:  
   
- Importing the <xref:System.Media?displayProperty=fullName> namespace.  
+ Importing the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
  Including the sound file as an embedded resource in your project.  
   

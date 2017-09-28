@@ -29,7 +29,7 @@
   
 -   **Iteration Count** - specifies the number of times the simple duration of a <xref:System.Windows.Media.Animation.Timeline> plays. The default iteration count is 1.0, and means the <xref:System.Windows.Media.Animation.Timeline> is active for exactly one of its simple durations. A count of 0.5 specifies that the timeline is active for half of its simple duration, while a count of 2 specifies that the timeline repeats its simple duration twice. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> property.  
   
--   **Duration** - specifies the length of the <xref:System.Windows.Media.Animation.Timeline> object's active duration. For example, a <xref:System.Windows.Media.Animation.Timeline> with a simple <xref:System.Windows.Media.Animation.Timeline.Duration%2A> value of 1 second and a <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> value of 2.5 seconds will run for 2.5 iterations.  
+-   **Duration** - specifies the length of the <xref:System.Windows.Media.Animation.Timeline> object's active duration. For example, a <xref:System.Windows.Media.Animation.Timeline> with a simple <xref:System.Windows.Media.Animation.Timeline.Duration%2A> value of 1 second and a <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=nameWithType> value of 2.5 seconds will run for 2.5 iterations.  
   
 -   **Forever** - the <xref:System.Windows.Media.Animation.Timeline> repeats indefinitely.  
   
@@ -60,32 +60,32 @@
  Items in square brackets (`[` and `]`) are optional.  
   
  *iterationCount*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  A value greater than or equal to 0 that specifies the number of times a timeline should play. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> property.  
   
  *days*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value greater than or equal to 0 that specifies the number of days for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
   
  *hours*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 23 that specifies the number of hours for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
   
  *minutes*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 59 that specifies the number of minutes for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
   
  *seconds*  
- <xref:System.Double?displayProperty=fullName>  
+ <xref:System.Double?displayProperty=nameWithType>  
   
  A value between 0 and 59 that specifies the number of seconds for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
   
  *fractionalSeconds*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value consisting of 1 to 7 digits that represents fractional seconds.  
   
@@ -154,7 +154,7 @@
 ## Remarks  
  To avoid throwing an exception when accessing this property, use the <xref:System.Windows.Media.Animation.RepeatBehavior.HasCount%2A> property first to verify that the <xref:System.Windows.Media.Animation.RepeatBehavior> represents an iteration count, not a repeat duration.  
   
- For more information about making a timeline repeat, see the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A?displayProperty=fullName> property.  
+ For more information about making a timeline repeat, see the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -182,7 +182,7 @@
 ## Remarks  
  To avoid throwing an exception when accessing this property, use the <xref:System.Windows.Media.Animation.RepeatBehavior.HasDuration%2A> property first to verify that the <xref:System.Windows.Media.Animation.RepeatBehavior> represents a repeat duration.  
   
- For more information about making a timeline repeat, see the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A?displayProperty=fullName> property.  
+ For more information about making a timeline repeat, see the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>

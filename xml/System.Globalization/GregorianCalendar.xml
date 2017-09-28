@@ -55,7 +55,7 @@
   
  Each <xref:System.Globalization.CultureInfo> supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application can set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property to a new <xref:System.Globalization.Calendar>.  
   
- <xref:System.Globalization.DateTimeFormatInfo.GetEra%2A> ignores punctuation in abbreviated era names, only if the <xref:System.Globalization.GregorianCalendar> is selected in <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> and the culture uses "A.D." as the era name, that is, "A.D." is equivalent to "AD".  
+ <xref:System.Globalization.DateTimeFormatInfo.GetEra%2A> ignores punctuation in abbreviated era names, only if the <xref:System.Globalization.GregorianCalendar> is selected in <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> and the culture uses "A.D." as the era name, that is, "A.D." is equivalent to "AD".  
   
    
   
@@ -99,7 +99,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.Globalization.GregorianCalendarTypes> value is <xref:System.Globalization.GregorianCalendarTypes.Localized>. If the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> property of the <xref:System.Globalization.CultureInfo> is set to a <xref:System.Globalization.GregorianCalendar> that is created with this constructor, the dates and times are localized in the language associated with the <xref:System.Globalization.CultureInfo>.  
+ The default <xref:System.Globalization.GregorianCalendarTypes> value is <xref:System.Globalization.GregorianCalendarTypes.Localized>. If the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property of the <xref:System.Globalization.CultureInfo> is set to a <xref:System.Globalization.GregorianCalendar> that is created with this constructor, the dates and times are localized in the language associated with the <xref:System.Globalization.CultureInfo>.  
   
    
   
@@ -191,7 +191,7 @@
   
  If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
  [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
@@ -260,7 +260,7 @@
   
  If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
  [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  

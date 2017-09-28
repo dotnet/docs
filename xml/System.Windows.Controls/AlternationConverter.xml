@@ -29,7 +29,7 @@
   
 -   Create an <xref:System.Windows.Controls.AlternationConverter> and add a blue <xref:System.Windows.Media.SolidColorBrush> and a light blue <xref:System.Windows.Media.SolidColorBrush> to its <xref:System.Windows.Controls.AlternationConverter.Values%2A> property.  
   
--   In a <xref:System.Windows.Style> for <xref:System.Windows.Controls.ListBoxItem>, bind the <xref:System.Windows.Controls.Control.Background%2A> property to <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> and assign the converter you created to the <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=fullName> property.  
+-   In a <xref:System.Windows.Style> for <xref:System.Windows.Controls.ListBoxItem>, bind the <xref:System.Windows.Controls.Control.Background%2A> property to <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=nameWithType> and assign the converter you created to the <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=nameWithType> property.  
   
    
   

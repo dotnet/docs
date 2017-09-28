@@ -27,9 +27,9 @@
 ## Remarks  
  The <xref:System.Data.MissingPrimaryKeyException> is thrown when invoking the following methods to access a row in a table that has no primary key.  
   
--   <xref:System.Data.DataRowCollection.Contains%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Contains%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRowCollection.Find%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Find%2A?displayProperty=nameWithType>  
   
  ]]></format>
     </remarks>

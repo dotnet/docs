@@ -62,7 +62,7 @@ You can assign any values to the elements in the enumerator list of an enumerati
 
 You can use an enumeration type to define bit flags, which enables an instance of the enumeration type to store any combination of the values that are defined in the enumerator list. (Of course, some combinations may not be meaningful or allowed in your program code.)
 
-You create a bit flags enum by applying the <xref:System.FlagsAttribute?displayProperty=fullName> attribute and defining the values appropriately so that `AND`, `OR`, `NOT` and `XOR` bitwise operations can be performed on them. In a bit flags enum, include a named constant with a value of zero that means "no flags are set." Do not give a flag a value of zero if it does not mean "no flags are set".
+You create a bit flags enum by applying the <xref:System.FlagsAttribute?displayProperty=nameWithType> attribute and defining the values appropriately so that `AND`, `OR`, `NOT` and `XOR` bitwise operations can be performed on them. In a bit flags enum, include a named constant with a value of zero that means "no flags are set." Do not give a flag a value of zero if it does not mean "no flags are set".
 
 In the following example, another version of the `Day` enum, which is named `Days`, is defined. `Days` has the `Flags` attribute, and each value is assigned the next greater power of 2. This enables you to create a `Days` variable whose value is `Days.Tuesday | Days.Thursday`.
 
@@ -76,19 +76,19 @@ To determine whether a specific flag is set, use a bitwise `AND` operation, as s
 
 [!code-csharp[csProgGuideEnums#7](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#7)]
 
-For more information about what to consider when you define enumeration types with the <xref:System.FlagsAttribute?displayProperty=fullName> attribute, see <xref:System.Enum?displayProperty=fullName>.
+For more information about what to consider when you define enumeration types with the <xref:System.FlagsAttribute?displayProperty=nameWithType> attribute, see <xref:System.Enum?displayProperty=nameWithType>.
 
 ## Using the System.Enum methods to discover and manipulate enum values
 
-All enums are instances of the <xref:System.Enum?displayProperty=fullName> type. You cannot derive new classes from <xref:System.Enum?displayProperty=fullName>, but you can use its methods to discover information about and manipulate values in an enum instance.
+All enums are instances of the <xref:System.Enum?displayProperty=nameWithType> type. You cannot derive new classes from <xref:System.Enum?displayProperty=nameWithType>, but you can use its methods to discover information about and manipulate values in an enum instance.
 
 [!code-csharp[csProgGuideEnums#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#5)]
 
-For more information, see <xref:System.Enum?displayProperty=fullName>.
+For more information, see <xref:System.Enum?displayProperty=nameWithType>.
 
 You can also create a new method for an enum by using an extension method. For more information, see [How to: Create a New Method for an Enumeration](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
 ## See also
- <xref:System.Enum?displayProperty=fullName>   
+ <xref:System.Enum?displayProperty=nameWithType>   
  [C# Programming Guide](../../csharp/programming-guide/index.md)   
  [enum](../../csharp/language-reference/keywords/enum.md)

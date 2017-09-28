@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides extension methods to work with normalized strings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,10 +52,13 @@
         <Parameter Name="value" Type="System.String" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A string.</param>
+        <summary>Indicates whether the specified string is in Unicode normalization form C.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is in normalization form C; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> contains invalid Unicode characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNormalized">
@@ -83,11 +86,14 @@
         <Parameter Name="normalizationForm" Type="System.Text.NormalizationForm" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="normalizationForm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A string.</param>
+        <param name="normalizationForm">A Unicode normalization form.</param>
+        <summary>Indicates whether a string is in a specified Unicode normalization form.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is in normalization form <paramref name="normalizationForm" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> contains invalid Unicode characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="Normalize">
@@ -114,9 +120,9 @@
         <Parameter Name="value" Type="System.String" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to normalize.</param>
+        <summary>Normalizes a string to a Unicode normalization form C.</summary>
+        <returns>A new string whose textual value is the same as <paramref name="value" /> but whose binary representation is in Unicode normalization form C.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,10 +151,10 @@
         <Parameter Name="normalizationForm" Type="System.Text.NormalizationForm" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="normalizationForm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The string to normalize.</param>
+        <param name="normalizationForm">The Unicode normalization form.</param>
+        <summary>Normalizes a string to the specified Unicode normalization form.</summary>
+        <returns>A new string whose textual value is the same as <paramref name="value" /> but whose binary representation is in the <paramref name="normalizationForm" /> normalization form.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

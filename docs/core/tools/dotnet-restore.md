@@ -37,6 +37,8 @@ dotnet restore [-h|--help]
 
 ## Description
 
+[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+
 The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.
 
 In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *NuGet.config* file in the project directory. You also specify additional feeds per invocation at a command prompt.

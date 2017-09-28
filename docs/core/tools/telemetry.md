@@ -34,6 +34,8 @@ Telemetry *is enabled* when using the [.NET Core CLI commands](index.md), such a
 - `dotnet restore`
 - `dotnet run`
 
+[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+
 ## Behavior
 
 The .NET Core CLI Tools telemetry feature is enabled by default. Opt-out of the telemetry feature by setting the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`.

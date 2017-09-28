@@ -45,11 +45,9 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
 3. Resolve the build assets:
 
-    * For **.NET Core 1.1**, type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
-
    ![The dotnet restore command](media/with-visual-studio-code/dotnetrestore.png)
 
-    * For **.NET Core 2.0**, this step is optional. The `dotnet restore` command executes automatically when a new project is created.
+[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
 
 4. Run the "Hello World" program:
 

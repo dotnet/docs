@@ -337,7 +337,7 @@ WORKDIR /app
 # copy csproj and restore as distinct layers
 
 COPY WeatherMicroservice.csproj .
-RUN dotnet restore
+RUN dotnet restore 
 
 # copy and build everything else
 

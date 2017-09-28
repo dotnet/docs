@@ -236,7 +236,7 @@ are stored in a tuple. That creates this version:
 
 [!code-csharp[TupleVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#07_TupleVersion "Refactor to use tuples")]
 
-Visual Studio's Refactoring suport makes it easy to extract the functionality
+Visual Studio's Refactoring support makes it easy to extract the functionality
 for the core statistics into a private method. That gives you a `private static`
 method that returns the tuple type with the three values of `Sum`, `SumOfSquares`, and `Count`:
 

@@ -131,7 +131,8 @@
         "_vblang/spec/*.md": "language-reference"
      },
       "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"]
+        "api/**.yml": ["csharp", "vb", "cpp"],
+        "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
       },
       "ROBOTS": {
         "api/**.yml": "NOINDEX, NOFOLLOW"

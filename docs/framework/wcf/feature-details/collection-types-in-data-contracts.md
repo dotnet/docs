@@ -30,7 +30,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  Additional requirements on collection types, such as having a method called `Add` and a default constructor, are discussed in detail in the following sections. This ensures that collection types can be both serialized and deserialized. This means that some collections are not directly supported, such as the Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> (because it has no default constructor). However, for information about circumventing these restrictions, see the section "Using Collection Interface Types and Read-Only Collections" later in this topic.  
   
- The types contained in collections must be data contract types, or be otherwise serializable. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+ The types contained in collections must be data contract types, or be otherwise serializable. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] what is and what is not considered a valid collection, as well as about how collections are serialized, see the information about serializing collections in the "Advanced Collection Rules" section of this topic.  
   

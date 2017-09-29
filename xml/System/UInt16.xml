@@ -1802,7 +1802,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out ushort result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, unsigned int16 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] unsigned int16&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UInt16.TryParse(System.String,System.UInt16@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1882,7 +1882,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out ushort result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, unsigned int16 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] unsigned int16&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UInt16.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.UInt16@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

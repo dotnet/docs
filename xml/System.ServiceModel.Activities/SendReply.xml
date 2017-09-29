@@ -202,7 +202,7 @@
     </Member>
     <Member MemberName="FromOperationDescription">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Activities.SendReply FromOperationDescription (System.ServiceModel.Description.OperationDescription operation, out System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Activities.SendReply&gt; faultReplies);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Activities.SendReply FromOperationDescription(class System.ServiceModel.Description.OperationDescription operation, class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Activities.SendReply&gt; faultReplies) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Activities.SendReply FromOperationDescription(class System.ServiceModel.Description.OperationDescription operation, [out] class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Activities.SendReply&gt;&amp; faultReplies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReply.FromOperationDescription(System.ServiceModel.Description.OperationDescription,System.Collections.Generic.IEnumerable{System.ServiceModel.Activities.SendReply}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

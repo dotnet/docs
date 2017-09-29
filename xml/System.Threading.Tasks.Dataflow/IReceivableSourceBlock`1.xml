@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="TryReceive">
       <MemberSignature Language="C#" Value="public bool TryReceive (Predicate&lt;TOutput&gt; filter, out TOutput item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceive(class System.Predicate`1&lt;!TOutput&gt; filter, !TOutput item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceive(class System.Predicate`1&lt;!TOutput&gt; filter, [out] !TOutput&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceive(System.Predicate{`0},`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -69,7 +69,7 @@
     </Member>
     <Member MemberName="TryReceiveAll">
       <MemberSignature Language="C#" Value="public bool TryReceiveAll (out System.Collections.Generic.IList&lt;TOutput&gt; items);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveAll(class System.Collections.Generic.IList`1&lt;!TOutput&gt; items) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveAll([out] class System.Collections.Generic.IList`1&lt;!TOutput&gt;&amp; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceiveAll(System.Collections.Generic.IList{`0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

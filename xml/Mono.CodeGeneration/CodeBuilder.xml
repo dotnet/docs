@@ -60,7 +60,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeMethod method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Call(class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.Call(Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -90,7 +90,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public void Call (System.Reflection.MethodInfo method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public void Call (System.Reflection.MethodInfo method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Call(class System.Reflection.MethodInfo method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.Call(System.Reflection.MethodInfo,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -120,7 +120,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Call(class Mono.CodeGeneration.CodeExpression target, class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.Call(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -152,7 +152,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodBase method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodBase method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Call(class Mono.CodeGeneration.CodeExpression target, class System.Reflection.MethodBase method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.Call(Mono.CodeGeneration.CodeExpression,System.Reflection.MethodBase,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -184,7 +184,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeExpression target, string name, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public void Call (Mono.CodeGeneration.CodeExpression target, string name, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Call(class Mono.CodeGeneration.CodeExpression target, string name, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.Call(Mono.CodeGeneration.CodeExpression,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -216,7 +216,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public void Call (Type type, string name, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public void Call (Type type, string name, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Call(class System.Type type, string name, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.Call(System.Type,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -248,7 +248,7 @@
       </Docs>
     </Member>
     <Member MemberName="CallFunc">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeMethod method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression CallFunc(class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.CallFunc(Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -279,7 +279,7 @@
       </Docs>
     </Member>
     <Member MemberName="CallFunc">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (System.Reflection.MethodInfo method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (System.Reflection.MethodInfo method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression CallFunc(class System.Reflection.MethodInfo method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.CallFunc(System.Reflection.MethodInfo,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -310,7 +310,7 @@
       </Docs>
     </Member>
     <Member MemberName="CallFunc">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression CallFunc(class Mono.CodeGeneration.CodeExpression target, class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.CallFunc(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -343,7 +343,7 @@
       </Docs>
     </Member>
     <Member MemberName="CallFunc">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodInfo method, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodInfo method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression CallFunc(class Mono.CodeGeneration.CodeExpression target, class System.Reflection.MethodInfo method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.CallFunc(Mono.CodeGeneration.CodeExpression,System.Reflection.MethodInfo,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -376,7 +376,7 @@
       </Docs>
     </Member>
     <Member MemberName="CallFunc">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeExpression target, string name, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Mono.CodeGeneration.CodeExpression target, string name, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression CallFunc(class Mono.CodeGeneration.CodeExpression target, string name, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.CallFunc(Mono.CodeGeneration.CodeExpression,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -409,7 +409,7 @@
       </Docs>
     </Member>
     <Member MemberName="CallFunc">
-      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Type type, string name, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeExpression CallFunc (Type type, string name, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression CallFunc(class System.Type type, string name, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.CallFunc(System.Type,System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -464,7 +464,7 @@
       </Docs>
     </Member>
     <Member MemberName="ConsoleWriteLine">
-      <MemberSignature Language="C#" Value="public void ConsoleWriteLine (Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public void ConsoleWriteLine (params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConsoleWriteLine(class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.ConsoleWriteLine(Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Method</MemberType>
@@ -492,7 +492,7 @@
       </Docs>
     </Member>
     <Member MemberName="ConsoleWriteLine">
-      <MemberSignature Language="C#" Value="public void ConsoleWriteLine (object[] parameters);" />
+      <MemberSignature Language="C#" Value="public void ConsoleWriteLine (params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConsoleWriteLine(object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.ConsoleWriteLine(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -820,7 +820,7 @@
     </Member>
     <Member MemberName="Foreach">
       <MemberSignature Language="C#" Value="public void Foreach (Type type, out Mono.CodeGeneration.CodeExpression item, Mono.CodeGeneration.CodeExpression array);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Foreach(class System.Type type, class Mono.CodeGeneration.CodeExpression item, class Mono.CodeGeneration.CodeExpression array) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Foreach(class System.Type type, [out] class Mono.CodeGeneration.CodeExpression&amp; item, class Mono.CodeGeneration.CodeExpression array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.Foreach(System.Type,Mono.CodeGeneration.CodeExpression@,Mono.CodeGeneration.CodeExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -588,7 +588,7 @@
     </Member>
     <Member MemberName="SupportsInterface">
       <MemberSignature Language="C#" Value="public virtual IntPtr SupportsInterface (ref Guid iid);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int SupportsInterface(valuetype System.Guid iid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int SupportsInterface(valuetype System.Guid&amp; iid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

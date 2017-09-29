@@ -1281,7 +1281,7 @@
     </Member>
     <Member MemberName="DefWndProc">
       <MemberSignature Language="C#" Value="protected override void DefWndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefWndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.DefWndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3382,7 +3382,7 @@
     </Member>
     <Member MemberName="OnGetDpiScaledSize">
       <MemberSignature Language="C#" Value="protected virtual bool OnGetDpiScaledSize (int deviceDpiOld, int deviceDpiNew, ref System.Drawing.Size desiredSize);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnGetDpiScaledSize(int32 deviceDpiOld, int32 deviceDpiNew, valuetype System.Drawing.Size desiredSize) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnGetDpiScaledSize(int32 deviceDpiOld, int32 deviceDpiNew, valuetype System.Drawing.Size&amp; desiredSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnGetDpiScaledSize(System.Int32,System.Int32,System.Drawing.Size@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4303,7 +4303,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4397,7 +4397,7 @@
     </Member>
     <Member MemberName="ProcessKeyPreview">
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5820,7 +5820,7 @@ End Sub
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

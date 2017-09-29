@@ -47,7 +47,7 @@
   <Members>
     <Member MemberName="EnumRunning">
       <MemberSignature Language="C#" Value="public void EnumRunning (out System.Runtime.InteropServices.ComTypes.IEnumMoniker ppenumMoniker);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumRunning(class System.Runtime.InteropServices.ComTypes.IEnumMoniker ppenumMoniker) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumRunning([out] class System.Runtime.InteropServices.ComTypes.IEnumMoniker&amp; ppenumMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.EnumRunning(System.Runtime.InteropServices.ComTypes.IEnumMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -89,7 +89,7 @@
     </Member>
     <Member MemberName="GetObject">
       <MemberSignature Language="C#" Value="public int GetObject (System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, out object ppunkObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetObject(class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, object ppunkObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetObject(class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, [out] object&amp; ppunkObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetObject(System.Runtime.InteropServices.ComTypes.IMoniker,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -134,7 +134,7 @@
     </Member>
     <Member MemberName="GetTimeOfLastChange">
       <MemberSignature Language="C#" Value="public int GetTimeOfLastChange (System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, out System.Runtime.InteropServices.ComTypes.FILETIME pfiletime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTimeOfLastChange(class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, valuetype System.Runtime.InteropServices.ComTypes.FILETIME pfiletime) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTimeOfLastChange(class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, [out] valuetype System.Runtime.InteropServices.ComTypes.FILETIME&amp; pfiletime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -222,7 +222,7 @@
     </Member>
     <Member MemberName="NoteChangeTime">
       <MemberSignature Language="C#" Value="public void NoteChangeTime (int dwRegister, ref System.Runtime.InteropServices.ComTypes.FILETIME pfiletime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NoteChangeTime(int32 dwRegister, valuetype System.Runtime.InteropServices.ComTypes.FILETIME pfiletime) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NoteChangeTime(int32 dwRegister, valuetype System.Runtime.InteropServices.ComTypes.FILETIME&amp; pfiletime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

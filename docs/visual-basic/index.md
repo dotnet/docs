@@ -10,10 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "programming, Visual Basic"
   - "Visual Basic"
-ms.assetid: 5cc578fe-d9e5-4015-937d-b34b83207072
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -36,7 +34,7 @@ Visual Basic is engineered for productively building type-safe and object-orient
   
  This generation of Visual Basic continues the tradition of giving you a fast and easy way to create .NET Framework-based applications.  
   
- If you don't already have Visual Basic, you can acquire a version of Visual Studio that includes Visual Basic for free from the [Visual Studio](https://www.visualstudio.com/products/free-developer-offers-vs) site.  
+ If you don't already have Visual Basic, you can acquire a version of Visual Studio that includes Visual Basic for free from the [Visual Studio](https://www.visualstudio.com/products/downloads) site.  
   
 ## In This Section  
  [Getting Started](../visual-basic/getting-started/index.md)   

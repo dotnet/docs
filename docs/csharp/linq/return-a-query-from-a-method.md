@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: db220f79-c35b-41f2-886c-cd068672d42d
 
 ---

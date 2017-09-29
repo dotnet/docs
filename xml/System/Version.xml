@@ -1417,7 +1417,7 @@ major.minor[.build[.revision]]
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out Version result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.Version result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class System.Version&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.TryParse(System.String,System.Version@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

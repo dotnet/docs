@@ -45,7 +45,7 @@
   <Members>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.ComTypes.IStream ppstm);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone(class System.Runtime.InteropServices.ComTypes.IStream ppstm) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.ComTypes.IStream&amp; ppstm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Clone(System.Runtime.InteropServices.ComTypes.IStream@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -223,7 +223,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public void Read (byte[] pv, int cb, IntPtr pcbRead);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Read(unsigned int8[] pv, int32 cb, native int pcbRead) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Read([out] unsigned int8[] pv, int32 cb, native int pcbRead) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte[],System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -396,7 +396,7 @@
     </Member>
     <Member MemberName="Stat">
       <MemberSignature Language="C#" Value="public void Stat (out System.Runtime.InteropServices.ComTypes.STATSTG pstatstg, int grfStatFlag);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stat(valuetype System.Runtime.InteropServices.ComTypes.STATSTG pstatstg, int32 grfStatFlag) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stat([out] valuetype System.Runtime.InteropServices.ComTypes.STATSTG&amp; pstatstg, int32 grfStatFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -659,7 +659,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (System.Windows.Markup.XmlLanguage key, out string value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.Windows.Markup.XmlLanguage key, string value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.Windows.Markup.XmlLanguage key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LanguageSpecificStringDictionary.TryGetValue(System.Windows.Markup.XmlLanguage,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

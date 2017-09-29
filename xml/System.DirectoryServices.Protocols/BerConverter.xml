@@ -83,7 +83,7 @@
       </Docs>
     </Member>
     <Member MemberName="Encode">
-      <MemberSignature Language="C#" Value="public static byte[] Encode (string format, object[] value);" />
+      <MemberSignature Language="C#" Value="public static byte[] Encode (string format, params object[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Encode(string format, object[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.BerConverter.Encode(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

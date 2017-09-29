@@ -410,7 +410,7 @@
     </Member>
     <Member MemberName="TryGetProperty&lt;TValue&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetProperty&lt;TValue&gt; (string property, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty&lt;TValue&gt;(string property, !!TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty&lt;TValue&gt;(string property, [out] !!TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.TryGetProperty``1(System.String,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -9,7 +9,7 @@ Module Example
       Dim sw As New StreamWriter(".\Singles.dat")
       Dim values() As Single = { 3.2/1.11, 1.0/3, CSng(Math.PI)  }
       For ctr As Integer = 0 To values.Length - 1
-         sw.Write("{0:R}{1}", values(ctr), 
+         sw.Write("{0:G9}{1}", values(ctr), 
                   If(ctr < values.Length - 1, "|", ""))
       Next      
       sw.Close()

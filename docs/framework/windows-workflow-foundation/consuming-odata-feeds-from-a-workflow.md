@@ -71,7 +71,7 @@ WCF Data Services is a component of the [!INCLUDE[dnprdnshort](../../../includes
  In the following example, a `ListCustomers` activity is defined. This activity queries the sample Northwind data service and returns a `List<Customer>` that contains all of the customers in the Northwind database. The asynchronous work is performed by the `GetCustomers` method. This method queries the service for all customers, and then copies them into a `List<Customer>`. It then checks to see if the results are paged. If so, it queries the service for the next page of results, adds them to the list, and continues until all of the customer data has been retrieved.  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../../../includes/crabout-md.md)]paging in WCF Data Services, see . [How to: Load Paged Results (WCF Data Services)](http://go.microsoft.com/fwlink/?LinkId=193452).  
+>  [!INCLUDE[crabout](../../../includes/crabout-md.md)] paging in WCF Data Services, see . [How to: Load Paged Results (WCF Data Services)](http://go.microsoft.com/fwlink/?LinkId=193452).  
   
  Once all customers are added, the list is returned. The `GetCustomers` method is specified in the activity's <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> override. Since the method has a return value, a `Func<string, List<Customer>>` is created to specify the method.  
   

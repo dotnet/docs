@@ -588,7 +588,7 @@
     </Member>
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="protected virtual object GetValue (System.Web.UI.Control controlContainer, string fieldName, ref System.ComponentModel.PropertyDescriptor cachedDescriptor);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetValue(class System.Web.UI.Control controlContainer, string fieldName, class System.ComponentModel.PropertyDescriptor cachedDescriptor) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetValue(class System.Web.UI.Control controlContainer, string fieldName, class System.ComponentModel.PropertyDescriptor&amp; cachedDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageField.GetValue(System.Web.UI.Control,System.String,System.ComponentModel.PropertyDescriptor@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

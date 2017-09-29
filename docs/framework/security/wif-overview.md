@@ -43,4 +43,4 @@ Windows Identity Foundation 4.5 is a set of .NET Framework classes for implement
   
 -   Step-up Authentication. Authentication requirements for different resources within an application may vary. WIF provides developers the ability to build applications that can require incremental authentication requirements (for example: initial login with Username/Password authentication and then step-up to Smart Card authentication).  
   
- By using WIF, you’ll more easily reap the benefits of the claims-based identity model. For more information, see [Windows Identity Foundation White Paper for Developers](http://go.microsoft.com/fwlink/?LinkId=122266).
+ By using WIF, you’ll more easily reap the benefits of the claims-based identity model. For more information, see [Windows Identity Foundation White Paper for Developers](http://download.microsoft.com/download/7/d/0/7d0b5166-6a8a-418a-addd-95ee9b046994/windowsidentityfoundationwhitepaperfordevelopers-rtw.pdf).

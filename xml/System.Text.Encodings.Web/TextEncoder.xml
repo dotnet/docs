@@ -243,7 +243,7 @@
     </Member>
     <Member MemberName="TryEncodeUnicodeScalar">
       <MemberSignature Language="C#" Value="public abstract bool TryEncodeUnicodeScalar (int unicodeScalar, char* buffer, int bufferLength, out int numberOfCharactersWritten);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryEncodeUnicodeScalar(int32 unicodeScalar, char* buffer, int32 bufferLength, int32 numberOfCharactersWritten) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryEncodeUnicodeScalar(int32 unicodeScalar, char* buffer, int32 bufferLength, [out] int32&amp; numberOfCharactersWritten) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

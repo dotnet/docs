@@ -2116,7 +2116,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public static void Invoke (Action[] actions);" />
+      <MemberSignature Language="C#" Value="public static void Invoke (params Action[] actions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Action[] actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.Invoke(System.Action[])" />
       <MemberType>Method</MemberType>
@@ -2175,7 +2175,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public static void Invoke (System.Threading.Tasks.ParallelOptions parallelOptions, Action[] actions);" />
+      <MemberSignature Language="C#" Value="public static void Invoke (System.Threading.Tasks.ParallelOptions parallelOptions, params Action[] actions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action[] actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.Invoke(System.Threading.Tasks.ParallelOptions,System.Action[])" />
       <MemberType>Method</MemberType>

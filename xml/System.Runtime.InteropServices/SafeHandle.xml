@@ -235,7 +235,7 @@
     </Member>
     <Member MemberName="DangerousAddRef">
       <MemberSignature Language="C#" Value="public void DangerousAddRef (ref bool success);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DangerousAddRef(bool success) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DangerousAddRef(bool&amp; success) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

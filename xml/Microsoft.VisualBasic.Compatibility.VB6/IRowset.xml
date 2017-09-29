@@ -32,7 +32,7 @@
   <Members>
     <Member MemberName="AddRefRows">
       <MemberSignature Language="C#" Value="public void AddRefRows (int cRows, int[] hRows, out int[] refCounts, out int[] rowStatus);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefRows(int32 cRows, int32[] hRows, int32[] refCounts, int32[] rowStatus) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefRows([in]int32 cRows, [in]int32[] hRows, [out] int32[]&amp; refCounts, [out] int32[]&amp; rowStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.AddRefRows(System.Int32,System.Int32[],System.Int32[]@,System.Int32[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -66,7 +66,7 @@
     </Member>
     <Member MemberName="GetData">
       <MemberSignature Language="C#" Value="public void GetData (int hRow, int hAccessor, IntPtr pData);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetData(int32 hRow, int32 hAccessor, native int pData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetData([in]int32 hRow, [in]int32 hAccessor, [in]native int pData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.GetData(System.Int32,System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -98,7 +98,7 @@
     </Member>
     <Member MemberName="GetNextRows">
       <MemberSignature Language="C#" Value="public void GetNextRows (int hChapter, int lRowsOffset, int cRows, out int cRowsObtained, out int[] hRows);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetNextRows(int32 hChapter, int32 lRowsOffset, int32 cRows, int32 cRowsObtained, int32[] hRows) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetNextRows([in]int32 hChapter, [in]int32 lRowsOffset, [in]int32 cRows, [out] int32&amp; cRowsObtained, [out] int32[]&amp; hRows) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.GetNextRows(System.Int32,System.Int32,System.Int32,System.Int32@,System.Int32[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -134,7 +134,7 @@
     </Member>
     <Member MemberName="ReleaseRows">
       <MemberSignature Language="C#" Value="public int ReleaseRows (int cRows, int[] hRows, IntPtr rowOptions, IntPtr rowRefCounts, IntPtr rgRowStatus);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 ReleaseRows(int32 cRows, int32[] hRows, native int rowOptions, native int rowRefCounts, native int rgRowStatus) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 ReleaseRows([in]int32 cRows, [in]int32[] hRows, [in]native int rowOptions, [in]native int rowRefCounts, [in]native int rgRowStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.ReleaseRows(System.Int32,System.Int32[],System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -171,7 +171,7 @@
     </Member>
     <Member MemberName="RestartPosition">
       <MemberSignature Language="C#" Value="public int RestartPosition (int hChapter);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 RestartPosition(int32 hChapter) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 RestartPosition([in]int32 hChapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowset.RestartPosition(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

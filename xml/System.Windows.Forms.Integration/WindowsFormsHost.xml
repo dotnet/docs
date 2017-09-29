@@ -996,7 +996,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override IntPtr WndProc (IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool handled) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool&amp; handled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.WindowsFormsHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -257,7 +257,7 @@
     </Member>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="protected static bool Convert (string text, System.Web.UI.WebControls.ValidationDataType type, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Convert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -296,7 +296,7 @@
     </Member>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="protected static bool Convert (string text, System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Convert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Boolean,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -44,6 +44,46 @@ Download and install the .NET Core SDK from [.NET Downloads](https://www.microso
 
 Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for the version you have installed.
 
+## Increase the maximum open file limit
+
+The default open file limit on macOS may not be sufficient for some .NET Core workloads, such as restoring projects or running unit tests.
+
+You can increase this limit by following these steps:
+
+1. Using a text editor, create a new file _/Library/LaunchDaemons/limit.maxfiles.plist_, and save the file with this content:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+        "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>limit.maxfiles</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>launchctl</string>
+      <string>limit</string>
+      <string>maxfiles</string>
+      <string>2048</string>
+      <string>4096</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ServiceIPC</key>
+    <false/>
+  </dict>
+</plist>
+```
+
+2. In a terminal window, run the following command:
+
+```console
+echo 'ulimit -n 2048' | sudo tee -a /etc/profile
+```
+
+3. Reboot your Mac to apply these settings.
+
 ## Visual Studio for Mac
 
 You can use any editor to develop .NET Core applications using the .NET Core SDK. However, if you want to develop .NET Core applications on a Mac in an integrated development environment, you can use [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/). 

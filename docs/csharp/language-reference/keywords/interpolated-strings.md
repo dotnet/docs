@@ -1,6 +1,6 @@
 ---
 title: "Interpolated Strings (C#)"
-ms.date: "09/25/2017"
+ms.date: "09/27/2017"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,7 +14,7 @@ ms.author: "wiwagn"
 ---
 # Interpolated Strings (C# Reference)
 
-Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations.  
+Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations. This feature is available in C# 6 and later versions.
 
 The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-formatting.md#composite-format-string).  For example, the interpolated string  
   
@@ -39,6 +39,9 @@ where:
 
 - *format-string* is a format string appropriate for the type of object being formatted. For example, for a <xref:System.DateTime> value, it could be a standard date and time format string such as "D" or "d".
 
+> [!IMPORTANT]
+> You cannot have any whitespace between the `$` and the `"` that starts the string. Doing so causes a compile time error.
+
  You can use an interpolated string anywhere you can use a string literal.  The interpolated string is evaluated each time the code with the interpolated string executes. This allows you to separate the definition and evaluation of an interpolated string.  
   
  To include a curly brace ("{" or "}") in an interpolated string, use two curly braces, "{{" or "}}".  See the Implicit Conversions section for more details.  
@@ -46,6 +49,16 @@ where:
 If the interpolated string contains other characters with special meaning in an interpolated string, such as the quotation mark ("), colon (:), or comma (,), they should be escaped if they occur in literal text, or they should be included in an expression delimited by parentheses if they are language elements included in an interpolated expression. The following example escapes quotation marks to include them in the result string, and it uses parentheses to delimit the expression `(age == 1 ? "" : "s")` so that the colon is not interpreted as beginning a format string.
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings4.cs#1)]  
+
+Verbatim interpolated strings use the `@` character followed by the `$` character. For more information about verbatim strings, see the         [string](strings.md) topic. The following code is a modified version of the previous snippet using a verbatim interpolated string:
+
+[!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings5.cs#1)]  
+
+The formatting changes are necessary because verbatim strings do not obey `\` escape sequences.
+
+> [!IMPORTANT]
+> The `$` token must appear before the `@` token in a verbatim interpolated string.
+
 
 ## Implicit Conversions  
 

@@ -8,7 +8,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="https://www.microsoft.com/net/tutorials/csharp/getting-started">
+                <a href="/dotnet/csharp/quick-starts">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

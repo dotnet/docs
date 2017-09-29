@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Windows Forms], property changes (using code)"
-  - "properties [Windows Forms], changes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Windows Forms], property changes (using code)", "properties [Windows Forms], changes"]
 ms.assetid: 268039ec-5aaa-4d76-b902-acccb036c850
 caps.latest.revision: 9
 author: dotnet-bot

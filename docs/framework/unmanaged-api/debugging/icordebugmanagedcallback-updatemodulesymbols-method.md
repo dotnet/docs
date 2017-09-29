@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.UpdateModuleSymbols"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::UpdateModuleSymbols"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UpdateModuleSymbols method [.NET Framework debugging]"
-  - "ICorDebugManagedCallback::UpdateModuleSymbols method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.UpdateModuleSymbols"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::UpdateModuleSymbols"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UpdateModuleSymbols method [.NET Framework debugging]", "ICorDebugManagedCallback::UpdateModuleSymbols method [.NET Framework debugging]"]
 ms.assetid: 0863f644-58e8-45a0-b0c3-a28e99b20938
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

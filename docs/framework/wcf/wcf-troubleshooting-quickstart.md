@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF [WCF], troubleshooting"
-  - "Windows Communication Foundation [WCF], troubleshooting"
+helpviewer_keywords: ["WCF [WCF], troubleshooting", "Windows Communication Foundation [WCF], troubleshooting"]
 ms.assetid: a9ea7a53-f31a-46eb-806e-898e465a4992
 caps.latest.revision: 22
 author: "Erikre"

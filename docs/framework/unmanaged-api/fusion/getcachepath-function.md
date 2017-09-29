@@ -5,27 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetCachePath"
-api_location: 
-  - "fusion.dll"
-  - "clr.dll"
-  - "mscorwks.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "GetCachePath"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetCachePath function [.NET Framework fusion]"
+api_name: ["GetCachePath"]
+api_location: ["fusion.dll", "clr.dll", "mscorwks.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["GetCachePath"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetCachePath function [.NET Framework fusion]"]
 ms.assetid: d977ad29-6619-42e1-b0be-bc25ea950e80
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

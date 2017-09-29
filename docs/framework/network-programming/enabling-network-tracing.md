@@ -7,20 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "trace destinations"
-  - "sending traces to log file"
-  - "trace listeners, network tracing"
-  - "network tracing, enabling"
-  - "CLR Debugger"
-  - "default listeners"
-  - "logs, trace"
-  - "destination for tracing output"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["trace destinations", "sending traces to log file", "trace listeners, network tracing", "network tracing, enabling", "CLR Debugger", "default listeners", "logs, trace", "destination for tracing output"]
 ms.assetid: 5fff458c-51a6-4134-ba47-8a6137ddc41e
 caps.latest.revision: 12
 author: "mcleblanc"

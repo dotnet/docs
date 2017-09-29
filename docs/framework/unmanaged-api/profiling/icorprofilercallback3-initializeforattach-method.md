@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback3.InitializeForAttach Method"
-api_location: 
-  - "Mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback3::InitializeForAttach"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "InitializeForAttach method [.NET Framework profiling]"
-  - "ICorProfilerCallback3::InitializeForAttach method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback3.InitializeForAttach Method"]
+api_location: ["Mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback3::InitializeForAttach"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["InitializeForAttach method [.NET Framework profiling]", "ICorProfilerCallback3::InitializeForAttach method [.NET Framework profiling]"]
 ms.assetid: bed097b3-6d52-46c9-bee7-ac7910b6fc3f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

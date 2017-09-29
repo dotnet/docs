@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debugging API [Silverlight]"
-  - "Silverlight, debugging"
+dev_langs: ["C++"]
+helpviewer_keywords: ["debugging API [Silverlight]", "Silverlight, debugging"]
 ms.assetid: 5e903e04-17d0-4014-ac9a-a43330ec8b1c
 caps.latest.revision: 4
 author: "rpetrusha"

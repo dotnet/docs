@@ -7,23 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "application protocols, sockets"
-  - "Networking"
-  - "sending data, sockets"
-  - "data requests, sockets"
-  - "requesting data from Internet, sockets"
-  - "Socket class, creating sockets"
-  - "Network Resources"
-  - "receiving data, sockets"
-  - "protocols, sockets"
-  - "Internet, sockets"
-  - "sockets, creating"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["application protocols, sockets", "Networking", "sending data, sockets", "data requests, sockets", "requesting data from Internet, sockets", "Socket class, creating sockets", "Network Resources", "receiving data, sockets", "protocols, sockets", "Internet, sockets", "sockets, creating"]
 ms.assetid: c64a049c-5981-43bc-a2dc-1851473589c7
 caps.latest.revision: 7
 author: "mcleblanc"

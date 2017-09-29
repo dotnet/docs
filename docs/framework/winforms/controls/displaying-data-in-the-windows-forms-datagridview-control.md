@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data [Windows Forms], displaying in tabular format"
-  - "data grids, displaying data"
-  - "displaying data, data grids"
-  - "DataGridView control [Windows Forms], displaying data"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data [Windows Forms], displaying in tabular format", "data grids [Windows Forms], displaying data", "displaying data, data grids", "DataGridView control [Windows Forms], displaying data"]
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
 caps.latest.revision: 12
 author: dotnet-bot

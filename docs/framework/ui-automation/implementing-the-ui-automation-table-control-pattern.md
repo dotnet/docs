@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, Table control pattern"
-  - "control patterns, Table"
-  - "TableControl pattern"
+helpviewer_keywords: ["UI Automation, Table control pattern", "control patterns, Table", "TableControl pattern"]
 ms.assetid: 880cd85c-aa8c-4fb5-9369-45491d34bb78
 caps.latest.revision: 19
 author: "Xansky"

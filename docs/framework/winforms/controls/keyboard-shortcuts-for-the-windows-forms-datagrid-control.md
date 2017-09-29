@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "keyboard shortcuts, DataGrid control"
-  - "DataGrid control [Windows Forms], navigation keys"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["keyboard shortcuts, DataGrid control", "DataGrid control [Windows Forms], navigation keys"]
 ms.assetid: a01780f9-20d5-4f5f-808f-c790c9a007a5
 caps.latest.revision: 9
 author: dotnet-bot

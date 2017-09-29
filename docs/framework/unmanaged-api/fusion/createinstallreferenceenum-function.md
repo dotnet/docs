@@ -5,27 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CreateInstallReferenceEnum"
-api_location: 
-  - "fusion.dll"
-  - "clr.dll"
-  - "mscorwks.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "CreateInstallReference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateInstallReference function [.NET Framework fusion]"
+api_name: ["CreateInstallReferenceEnum"]
+api_location: ["fusion.dll", "clr.dll", "mscorwks.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["CreateInstallReference"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateInstallReference function [.NET Framework fusion]"]
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

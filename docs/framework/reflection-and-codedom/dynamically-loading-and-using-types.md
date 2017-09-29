@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "late binding, about late binding"
-  - "early binding"
-  - "dynamically loading and using types"
-  - "implicit late binding"
-  - "reflection, dynamically using types"
+helpviewer_keywords: ["late binding, about late binding", "early binding", "dynamically loading and using types", "implicit late binding", "reflection, dynamically using types"]
 ms.assetid: db985bec-5942-40ec-b13a-771ae98623dc
 caps.latest.revision: 15
 author: "rpetrusha"

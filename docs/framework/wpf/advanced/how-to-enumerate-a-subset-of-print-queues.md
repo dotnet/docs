@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "enumerating, subset of print queues"
-  - "print queues, enumerating subset of"
+helpviewer_keywords: ["enumerating [WPF], subset of print queues", "print queues [WPF], enumerating subset of"]
 ms.assetid: cc4a1b5b-d46f-4c5e-bc26-22c226e4bee0
 caps.latest.revision: 8
 author: dotnet-bot

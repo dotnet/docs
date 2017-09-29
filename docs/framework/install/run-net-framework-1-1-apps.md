@@ -5,13 +5,10 @@ ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows 8, running .NET Framework 1.1 apps"
-  - ".NET Framework 1.1, running on Windows 8"
+helpviewer_keywords: ["Windows 8, running .NET Framework 1.1 apps", ".NET Framework 1.1, running on Windows 8"]
 ms.assetid: fb14e195-fea5-4561-b9a8-60a67283edb9
 caps.latest.revision: 9
 author: "mairaw"

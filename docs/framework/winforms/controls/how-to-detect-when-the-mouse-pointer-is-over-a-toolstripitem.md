@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms], detecting mouse movement"
-  - "ToolStrip control [Windows Forms], detecting mouse movement"
-  - "ToolStripItem class, detecting mouse movement"
-  - "mouse, detecting movement on toolbars"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms], detecting mouse movement", "ToolStrip control [Windows Forms], detecting mouse movement", "ToolStripItem class, detecting mouse movement", "mouse [Windows Forms], detecting movement on toolbars"]
 ms.assetid: d38b5082-aba7-4f6c-841b-bd9714e307fd
 caps.latest.revision: 7
 author: dotnet-bot

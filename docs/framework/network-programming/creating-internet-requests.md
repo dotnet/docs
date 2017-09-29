@@ -7,19 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "WebRequest class, sending and receiving data"
-  - "Networking"
-  - "HttpWebResponse class, sending and receiving data"
-  - "requesting data from Internet, creating requests"
-  - "Network Resources"
-  - "Internet, requesting data"
-  - "data requests, creating requests"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["WebRequest class, sending and receiving data", "Networking", "HttpWebResponse class, sending and receiving data", "requesting data from Internet, creating requests", "Network Resources", "Internet, requesting data", "data requests, creating requests"]
 ms.assetid: faab683e-3f1e-4eee-b5e9-59f7245033d5
 caps.latest.revision: 8
 author: "mcleblanc"

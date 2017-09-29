@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "unexposed members"
-  - "managed HTML DOM, accessing unexposed members"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["unexposed members", "managed HTML DOM, accessing unexposed members"]
 ms.assetid: 762295bd-2355-4aa7-b43c-5bff997a33e6
 caps.latest.revision: 10
 author: dotnet-bot

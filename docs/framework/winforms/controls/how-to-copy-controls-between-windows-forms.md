@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, copying"
-  - "controls [Windows Forms], copying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, copying", "controls [Windows Forms], copying"]
 ms.assetid: 106c1eb2-1fba-4f69-b2ec-9ea3fa182f1e
 caps.latest.revision: 8
 author: dotnet-bot

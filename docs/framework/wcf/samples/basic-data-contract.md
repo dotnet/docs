@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Data Contract"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Data Contract"]
 ms.assetid: b124e9e0-cb73-4ae0-b9c3-e6cdf5eced98
 caps.latest.revision: 37
 author: "Erikre"

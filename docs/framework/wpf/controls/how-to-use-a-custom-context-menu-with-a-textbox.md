@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "context menus, custom"
-  - "menus, custom"
-  - "custom context menus"
-  - "TextBox control, custom content menus"
+helpviewer_keywords: ["context menus [WPF], custom", "menus [WPF], custom", "custom context menus", "TextBox control [WPF], custom content menus"]
 ms.assetid: 842d3cd5-6fa0-4be4-8d90-6c7466213b1c
 caps.latest.revision: 9
 author: dotnet-bot

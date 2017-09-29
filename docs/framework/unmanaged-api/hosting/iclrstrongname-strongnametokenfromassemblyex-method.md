@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName.StrongNameTokenFromAssemblyEx"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRStrongName::StrongNameTokenFromAssemblyEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameTokenFromAssemblyEx method, ICLRStrongName interface [.NET Framework hosting]"
-  - "ICLRStrongName::StrongNameTokenFromAssemblyEx method [.NET Framework hosting]"
+api_name: ["ICLRStrongName.StrongNameTokenFromAssemblyEx"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRStrongName::StrongNameTokenFromAssemblyEx"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameTokenFromAssemblyEx method, ICLRStrongName interface [.NET Framework hosting]", "ICLRStrongName::StrongNameTokenFromAssemblyEx method [.NET Framework hosting]"]
 ms.assetid: 648ea90e-5e60-40a0-a56a-3e61bf2fba7c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

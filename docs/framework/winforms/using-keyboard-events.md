@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "KeyPress event"
-  - "keyboards, keyboard events"
-  - "KeyUp event"
-  - "KeyDown event"
-  - "keyboard events"
-  - "events [Windows Forms], keyboard"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["KeyPress event", "keyboards, keyboard events", "KeyUp event", "KeyDown event", "keyboard events", "events [Windows Forms], keyboard"]
 ms.assetid: d3f3e14b-a459-4ee6-9875-8957e34f8ee9
 caps.latest.revision: 15
 author: dotnet-bot

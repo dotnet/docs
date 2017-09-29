@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, Thumb"
-  - "UI Automation, Thumb control type"
-  - "Thumb control type"
+helpviewer_keywords: ["control types, Thumb", "UI Automation, Thumb control type", "Thumb control type"]
 ms.assetid: 13636338-e320-4355-b071-ede20a3fb1de
 caps.latest.revision: 20
 author: "Xansky"

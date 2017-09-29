@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms]"
-  - "ToolStrip control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms]", "ToolStrip control [Windows Forms]"]
 ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
 caps.latest.revision: 28
 author: dotnet-bot

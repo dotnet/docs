@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "dialog boxes, Windows Forms"
-  - "Windows Forms dialog boxes"
-  - "dialogs, using in Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["dialog boxes [Windows Forms], Windows Forms", "Windows Forms dialog boxes", "dialogs, using in Windows Forms"]
 ms.assetid: d43d022b-451b-490d-9386-dc79d98fbf8a
 caps.latest.revision: 13
 author: dotnet-bot

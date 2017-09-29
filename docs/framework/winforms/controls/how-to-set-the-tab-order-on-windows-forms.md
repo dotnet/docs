@@ -5,20 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "TabStop"
-  - "TabIndex"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "tab order, controls on Windows forms"
-  - "Windows Forms controls, setting tab order"
-  - "controls [Windows Forms], setting tab order"
-  - "Windows Forms, setting tab order"
+f1_keywords: ["TabStop", "TabIndex"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["tab order, controls on Windows forms", "Windows Forms controls, setting tab order", "controls [Windows Forms], setting tab order", "Windows Forms, setting tab order"]
 ms.assetid: 71fa8e76-0472-414b-ad3c-0f90166e0ad7
 caps.latest.revision: 8
 author: dotnet-bot

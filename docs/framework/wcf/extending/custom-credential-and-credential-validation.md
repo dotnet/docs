@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "credentials [WCF], custom"
-  - "credentials [WCF]"
-  - "custom credentials [WCF]"
-  - "credential validation [WCF]"
-  - "credentials [WCF], validation"
+helpviewer_keywords: ["credentials [WCF], custom", "credentials [WCF]", "custom credentials [WCF]", "credential validation [WCF]", "credentials [WCF], validation"]
 ms.assetid: da831bec-e281-4d44-b343-437b5eef688e
 caps.latest.revision: 8
 author: "Erikre"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugFunction2.GetJMCStatus"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugFunction2::GetJMCStatus"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugFunction2::GetJMCStatus method [.NET Framework debugging]"
-  - "GetJMCStatus method [.NET Framework debugging]"
+api_name: ["ICorDebugFunction2.GetJMCStatus"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugFunction2::GetJMCStatus"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugFunction2::GetJMCStatus method [.NET Framework debugging]", "GetJMCStatus method [.NET Framework debugging]"]
 ms.assetid: 840a71ed-bf5a-4f5e-8ed6-762222b34493
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,26 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "debugging [.NET Framework]"
-  - ".NET Framework application configuration, debugging"
-  - "debugging [.NET Framework], .NET Framework application debugging"
-  - "troubleshooting applications [.NET Framework], profiling"
-  - "application development [.NET Framework], debugging"
-  - ".NET Framework application configuration, profiling"
-  - "profiling applications"
-  - "troubleshooting applications [.NET Framework], debugging"
-  - "troubleshooting applications [.NET Framework]"
-  - "application development [.NET Framework], profiling"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["debugging [.NET Framework]", ".NET Framework application configuration, debugging", "debugging [.NET Framework], .NET Framework application debugging", "troubleshooting applications [.NET Framework], profiling", "application development [.NET Framework], debugging", ".NET Framework application configuration, profiling", "profiling applications", "troubleshooting applications [.NET Framework], debugging", "troubleshooting applications [.NET Framework]", "application development [.NET Framework], profiling"]
 ms.assetid: 4a04863e-2475-46f4-bc3f-3c11510c2a4b
 caps.latest.revision: 28
 author: "mairaw"

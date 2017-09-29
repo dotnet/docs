@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "setting, Margin property"
-  - "properties, Margin property"
-  - "Margin property, setting"
+helpviewer_keywords: ["setting [WPF], Margin property", "properties [WPF], Margin property", "Margin property [WPF], setting"]
 ms.assetid: 70ebee01-6f87-4352-8dd4-402c65eaaed6
 caps.latest.revision: 9
 author: dotnet-bot

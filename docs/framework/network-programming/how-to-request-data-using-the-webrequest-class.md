@@ -7,17 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "downloading Internet resources, steps"
-  - "requesting data from Internet, steps"
-  - "WebRequest class, receiving data"
-  - "receiving data, using WebRequest class"
-  - "Internet, requesting data"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["downloading Internet resources, steps", "requesting data from Internet, steps", "WebRequest class, receiving data", "receiving data, using WebRequest class", "Internet, requesting data"]
 ms.assetid: 368b8d0f-dc5e-4469-a8b8-b2adbf5dd800
 caps.latest.revision: 8
 author: "mcleblanc"

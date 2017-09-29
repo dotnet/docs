@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugRemoteTarget.GetHostName"
-api_location: 
-  - "CorDebug.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugRemoteTarget::GetHostName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugRemoteTarget::GetHostName method [.NET Framework debugging]"
-  - "GetHostName method, ICorDebugRemoteTarget interface [.NET Framework debugging]"
+api_name: ["ICorDebugRemoteTarget.GetHostName"]
+api_location: ["CorDebug.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugRemoteTarget::GetHostName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugRemoteTarget::GetHostName method [.NET Framework debugging]", "GetHostName method, ICorDebugRemoteTarget interface [.NET Framework debugging]"]
 ms.assetid: 1c7276f7-7e54-470c-808c-e13745ac07a1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

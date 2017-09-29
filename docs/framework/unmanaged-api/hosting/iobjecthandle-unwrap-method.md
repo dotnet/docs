@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IObjectHandle.Unwrap"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "Unwrap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Unwrap method [.NET Framework hosting]"
-  - "IObjectHandle::Unwrap method [.NET Framework hosting]"
+api_name: ["IObjectHandle.Unwrap"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["Unwrap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Unwrap method [.NET Framework hosting]", "IObjectHandle::Unwrap method [.NET Framework hosting]"]
 ms.assetid: 794c6f8e-ed58-416b-b756-e864f2c958f7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

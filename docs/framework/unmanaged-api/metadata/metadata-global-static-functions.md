@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "global static functions [.NET Framework metadata]"
-  - "unmanaged global static functions [.NET Framework], metadata"
-  - "metadata global static functions [.NET Framework]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["global static functions [.NET Framework metadata]", "unmanaged global static functions [.NET Framework], metadata", "metadata global static functions [.NET Framework]"]
 ms.assetid: d3bbc8a7-b1c7-494f-b1cc-d71cf2ecb1bc
 caps.latest.revision: 16
 author: "mairaw"

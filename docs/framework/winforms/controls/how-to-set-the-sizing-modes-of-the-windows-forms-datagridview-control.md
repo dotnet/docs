@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, setting sizing modes"
-  - "DataGridView control [Windows Forms], sizing modes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids [Windows Forms], setting sizing modes", "DataGridView control [Windows Forms], sizing modes"]
 ms.assetid: e9ad15e6-b4bb-44aa-a767-3738e9db1651
 caps.latest.revision: 16
 author: dotnet-bot

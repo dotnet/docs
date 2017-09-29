@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter3.OpenMethod2"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter3::OpenMethod2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedWriter3::OpenMethod2 method [.NET Framework debugging]"
-  - "OpenMethod2 method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter3.OpenMethod2"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter3::OpenMethod2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedWriter3::OpenMethod2 method [.NET Framework debugging]", "OpenMethod2 method [.NET Framework debugging]"]
 ms.assetid: 025e358c-448f-4423-a2f2-57acf437c8a5
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

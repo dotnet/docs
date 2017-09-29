@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF [WCF], discovery"
-  - "Windows Communication Foundation [WCF], discovery"
-  - "discovery [WCF]"
+helpviewer_keywords: ["WCF [WCF], discovery", "Windows Communication Foundation [WCF], discovery", "discovery [WCF]"]
 ms.assetid: 462c4913-f388-45a9-9042-28ae96a4e735
 caps.latest.revision: 10
 author: "Erikre"

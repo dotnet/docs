@@ -5,22 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requiredRuntime"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/requiredRuntime"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "requiredRuntime element"
-  - "<requiredRuntime> element"
-  - "container tags, <requiredRuntime> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#requiredRuntime", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/requiredRuntime"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["requiredRuntime element", "<requiredRuntime> element", "container tags, <requiredRuntime> element"]
 ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
 caps.latest.revision: 11
 author: "mcleblanc"

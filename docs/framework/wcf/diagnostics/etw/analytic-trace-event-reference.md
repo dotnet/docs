@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "analytic tracing [WCF]. reference"
+helpviewer_keywords: ["analytic tracing [WCF]. reference"]
 ms.assetid: e44540cf-44a1-4efc-b965-7fbfd2131d73
 caps.latest.revision: 50
 author: "Erikre"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "getting started, WPF"
-  - "WPF, getting started"
+helpviewer_keywords: ["getting started [WPF], WPF", "WPF [WPF], getting started"]
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 caps.latest.revision: 71
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedVariable.GetEndOffset"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedVariable::GetEndOffset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedVariable::GetEndOffset method [.NET Framework debugging]"
-  - "GetEndOffset method, ISymUnmanagedVariable interface [.NET Framework debugging]"
+api_name: ["ISymUnmanagedVariable.GetEndOffset"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedVariable::GetEndOffset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedVariable::GetEndOffset method [.NET Framework debugging]", "GetEndOffset method, ISymUnmanagedVariable interface [.NET Framework debugging]"]
 ms.assetid: e5d777c5-d450-4c0f-999c-b3953ee22cfb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

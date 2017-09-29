@@ -5,23 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules/remove"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#remove"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "remove element, webRequestModules"
-  - "webRequestModules, remove element"
-  - "<remove> element, webRequestModules"
-  - "<webRequestModules>, remove element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules/remove", "http://schemas.microsoft.com/.NetConfiguration/v2.0#remove"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["remove element, webRequestModules", "webRequestModules, remove element", "<remove> element, webRequestModules", "<webRequestModules>, remove element"]
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
 caps.latest.revision: 13
 author: "mcleblanc"

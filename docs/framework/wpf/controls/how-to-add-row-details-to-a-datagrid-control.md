@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataTemplate [WPF], DataGrid"
-  - "row details [WPF], DataGrid"
-  - "DataGrid [WPF], row details"
+helpviewer_keywords: ["DataTemplate [WPF], DataGrid", "row details [WPF], DataGrid", "DataGrid [WPF], row details"]
 ms.assetid: 0bdc6f50-9b4c-483f-9df6-a47a1fde998b
 caps.latest.revision: 8
 author: dotnet-bot

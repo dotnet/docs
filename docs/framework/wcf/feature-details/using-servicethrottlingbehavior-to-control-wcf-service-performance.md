@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "behavior [WCF], service performance"
+helpviewer_keywords: ["behavior [WCF], service performance"]
 ms.assetid: f9dc120c-dc24-49d5-930e-b22f5bc73423
 caps.latest.revision: 8
 author: "Erikre"

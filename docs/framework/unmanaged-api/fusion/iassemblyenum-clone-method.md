@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyEnum.Clone"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyEnum::Clone"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Clone method, IAssemblyEnum interface [.NET Framework fusion]"
-  - "IAssemblyEnum::Clone method [.NET Framework fusion]"
+api_name: ["IAssemblyEnum.Clone"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyEnum::Clone"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Clone method, IAssemblyEnum interface [.NET Framework fusion]", "IAssemblyEnum::Clone method [.NET Framework fusion]"]
 ms.assetid: 0014bb66-590c-486c-9ade-f2133905cd99
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugValueBreakpoint"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugValueBreakpoint"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugValueBreakpoint interface [.NET Framework debugging]"
+api_name: ["ICorDebugValueBreakpoint"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugValueBreakpoint"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugValueBreakpoint interface [.NET Framework debugging]"]
 ms.assetid: c02338fe-da6c-467f-9567-70ebb387e901
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -7,17 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "expliciting defining cache behavior"
-  - "location-based cache policies"
-  - "local cache"
-  - "request cache policies"
-  - "cache [.NET Framework], location-based policies"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["expliciting defining cache behavior", "location-based cache policies", "local cache", "request cache policies", "cache [.NET Framework], location-based policies"]
 ms.assetid: 683bb88e-3411-4f46-9686-3411b6ba511c
 caps.latest.revision: 10
 author: "mcleblanc"

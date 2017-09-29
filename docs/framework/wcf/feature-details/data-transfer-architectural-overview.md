@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data transfer [WCF], architectural overview"
+helpviewer_keywords: ["data transfer [WCF], architectural overview"]
 ms.assetid: 343c2ca2-af53-4936-a28c-c186b3524ee9
 caps.latest.revision: 14
 author: "Erikre"

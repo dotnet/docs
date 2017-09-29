@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Data Grid control type"
-  - "control types, Data Grid"
-  - "UI Automation, Data Grid control type"
+helpviewer_keywords: ["Data Grid control type", "control types, Data Grid", "UI Automation, Data Grid control type"]
 ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
 caps.latest.revision: 32
 author: "Xansky"

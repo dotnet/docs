@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ASSEMBLY_INFO"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ASSEMBLY_INFO"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ASSEMBLY_INFO structure [.NET Framework fusion]"
+api_name: ["ASSEMBLY_INFO"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["ASSEMBLY_INFO"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ASSEMBLY_INFO structure [.NET Framework fusion]"]
 ms.assetid: b3cbb47c-457f-4083-8895-49562ca99ab8
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "styles [WPF], Menu"
-  - "ControlTemplate [WPF], Menu"
-  - "Menu [WPF], styles and templates"
-  - "states [WPF], Menu"
-  - "templates [WPF], Menu"
-  - "parts [WPF], Menu"
+helpviewer_keywords: ["styles [WPF], Menu", "ControlTemplate [WPF], Menu", "Menu [WPF], styles and templates", "states [WPF], Menu", "templates [WPF], Menu", "parts [WPF], Menu"]
 ms.assetid: b89da183-9b87-42c6-ac53-731a42c7b09e
 caps.latest.revision: 19
 author: dotnet-bot

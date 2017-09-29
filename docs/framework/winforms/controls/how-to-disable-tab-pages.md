@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "tab pages, hiding in forms"
-  - "TabControl control [Windows Forms], disabling pages"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["tab pages [Windows Forms], hiding in forms", "TabControl control [Windows Forms], disabling pages"]
 ms.assetid: adcc6618-8a34-4ee1-bbe3-47e732de6a59
 caps.latest.revision: 15
 author: dotnet-bot

@@ -7,9 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WF [WF], getting started"
-  - "Windows Workflow Foundation [WF], getting started"
+helpviewer_keywords: ["WF [WF], getting started", "Windows Workflow Foundation [WF], getting started"]
 ms.assetid: c2d3585f-6b1a-4d4f-9865-bd7cd31c5d42
 caps.latest.revision: 21
 author: "Erikre"

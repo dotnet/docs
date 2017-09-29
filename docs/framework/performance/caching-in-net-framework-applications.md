@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ASP.NET caching"
-  - "caching [.NET Framework]"
-  - "caching [ASP.NET]"
+helpviewer_keywords: ["ASP.NET caching", "caching [.NET Framework]", "caching [ASP.NET]"]
 ms.assetid: c4b47ee0-4b82-4124-9bce-818088385e34
 caps.latest.revision: 26
 author: "tdykstra"

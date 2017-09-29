@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, paths"
-  - "path animations"
+helpviewer_keywords: ["animation [WPF], paths", "path animations"]
 ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
 caps.latest.revision: 13
 author: dotnet-bot

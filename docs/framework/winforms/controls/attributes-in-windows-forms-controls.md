@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "attributes [Windows Forms]"
-  - "attributes [Windows Forms], data binding properties"
-  - "attributes [Windows Forms], control properties"
-  - "attributes [Windows Forms], classes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["attributes [Windows Forms]", "attributes [Windows Forms], data binding properties", "attributes [Windows Forms], control properties", "attributes [Windows Forms], classes"]
 ms.assetid: 2c5640e9-6c6c-49d7-a5e4-a768f6be7853
 caps.latest.revision: 15
 author: dotnet-bot

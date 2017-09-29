@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "text boxes, displaying scroll bars"
-  - "scroll bars, displaying in controls"
-  - "RichTextBox control [Windows Forms], displaying scroll bars"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["text boxes [Windows Forms], displaying scroll bars", "scroll bars, displaying in controls", "RichTextBox control [Windows Forms], displaying scroll bars"]
 ms.assetid: cdeb42e1-86e8-410c-ba46-18aec264ef5f
 caps.latest.revision: 9
 author: dotnet-bot

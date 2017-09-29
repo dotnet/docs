@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "changing selections in a text box [WPF]"
-  - "changing selections in a RichTextBox [WPF]"
+helpviewer_keywords: ["changing selections in a text box [WPF]", "changing selections in a RichTextBox [WPF]"]
 ms.assetid: f1213205-1ad7-4cd2-b115-460173cc5aa3
 caps.latest.revision: 5
 author: dotnet-bot

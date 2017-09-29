@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "msmqIntegrationBinding Element"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["msmqIntegrationBinding Element"]
 ms.assetid: edf277f3-e3bf-4ed8-9f55-83b5788430a7
 caps.latest.revision: 34
 author: "Erikre"

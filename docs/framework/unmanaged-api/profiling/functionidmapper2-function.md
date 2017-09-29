@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "FunctionIDMapper2"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "FunctionIDMapper2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FunctionIDMapper2 function [.NET Framework profiling]"
+api_name: ["FunctionIDMapper2"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["FunctionIDMapper2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FunctionIDMapper2 function [.NET Framework profiling]"]
 ms.assetid: 466ad51b-8f0c-41d9-81f7-371aac3374cb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

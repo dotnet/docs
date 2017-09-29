@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "application settings [Windows Forms], run time"
-  - "application settings [Windows Forms], writing user settings"
-  - "application settings [Windows Forms], C#"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["application settings [Windows Forms], run time", "application settings [Windows Forms], writing user settings", "application settings [Windows Forms], C#"]
 ms.assetid: 9d061c7d-b33b-470f-a36d-edccb1d6f9a3
 caps.latest.revision: 6
 author: dotnet-bot

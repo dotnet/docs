@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter2"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedWriter2 interface [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter2"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedWriter2 interface [.NET Framework debugging]"]
 ms.assetid: 8e78faa4-cf43-44fb-a91d-94d6df692a25
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

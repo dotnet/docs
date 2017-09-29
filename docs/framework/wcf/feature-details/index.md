@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "features [WCF]"
-  - "WCF, features"
-  - "Windows Communication Foundation, features"
+helpviewer_keywords: ["features [WCF]", "WCF, features", "Windows Communication Foundation, features"]
 ms.assetid: 9b4368ca-0bd3-40dc-a539-bcd5779cee5f
 caps.latest.revision: 22
 author: "Erikre"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Unload method"
-  - "application domains, unloading"
-  - "unloading application domains"
+helpviewer_keywords: ["application domains, unloading", "unloading application domains"]
 ms.assetid: f356116d-e415-4f7c-a332-6e6a60227192
 caps.latest.revision: 10
 author: "rpetrusha"

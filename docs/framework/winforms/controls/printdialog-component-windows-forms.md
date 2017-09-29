@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "print options, PrintDialog component (using designer)"
-  - "PrintDialog component [Windows Forms]"
-  - "Print dialog box (using designer)"
-  - "printing [Windows Forms], PrintDialog component (using designer)"
-  - "printing [Windows Forms], print options"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["print options, PrintDialog component (using designer)", "PrintDialog component [Windows Forms]", "Print dialog box (using designer)", "printing [Windows Forms], PrintDialog component (using designer)", "printing [Windows Forms], print options"]
 ms.assetid: 09b54db1-d7c7-42fa-b98a-840e6b80a9ad
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, ActiveX controls"
-  - "forms, adding ActiveX controls"
-  - "ActiveX controls [Windows Forms], adding"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, ActiveX controls", "forms [Windows Forms], adding ActiveX controls", "ActiveX controls [Windows Forms], adding"]
 ms.assetid: 54a61e5b-555e-4887-b41e-6244fed271eb
 caps.latest.revision: 10
 author: dotnet-bot

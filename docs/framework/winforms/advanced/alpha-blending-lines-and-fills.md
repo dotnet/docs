@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "lines, adding transparency"
-  - "examples [Windows Forms], alpha blending"
-  - "alpha blending, using with lines"
-  - "alpha blending"
-  - "lines, alpha blending"
-  - "fills, alpha blending"
-  - "alpha blending, using with fills"
-  - "shapes, adding transparency"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["lines [Windows Forms], adding transparency", "examples [Windows Forms], alpha blending", "alpha blending, using with lines", "alpha blending", "lines [Windows Forms], alpha blending", "fills, alpha blending", "alpha blending, using with fills", "shapes [Windows Forms], adding transparency"]
 ms.assetid: 5440f48c-3ac9-44c3-b170-c1c110bdbab8
 caps.latest.revision: 13
 author: dotnet-bot

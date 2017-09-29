@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "first-chance exception notifications"
-  - "exceptions, first chance notifications"
+helpviewer_keywords: ["first-chance exception notifications", "exceptions, first chance notifications"]
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
 caps.latest.revision: 10
 author: "rpetrusha"

@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Help, Windows Forms (using designer)"
-  - "Windows Forms, Help (using designer)"
-  - "HTML Help, Windows Forms (using designer)"
-  - "Help, Windows applications (using designer)"
-  - "forms. Help (using designer)"
-  - "Windows applications, Help (using designer)"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Help, Windows Forms (using designer)", "Windows Forms, Help (using designer)", "HTML Help, Windows Forms (using designer)", "Help, Windows applications (using designer)", "forms. Help (using designer)", "Windows applications, Help (using designer)"]
 ms.assetid: a8563d25-8a75-4bc7-a024-f1870591b50f
 caps.latest.revision: 11
 author: dotnet-bot

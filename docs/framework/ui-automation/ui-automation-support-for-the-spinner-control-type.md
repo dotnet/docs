@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, Spinner control type"
-  - "Spinner control type"
-  - "control types, Spinner"
+helpviewer_keywords: ["UI Automation, Spinner control type", "Spinner control type", "control types, Spinner"]
 ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
 caps.latest.revision: 21
 author: "Xansky"

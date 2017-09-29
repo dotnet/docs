@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "split windows, resizing"
-  - "splitter windows, resizing"
-  - "SplitContainer control [Windows Forms], resizing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["split windows, resizing", "splitter windows, resizing", "SplitContainer control [Windows Forms], resizing"]
 ms.assetid: 9bf73f36-ed2d-4a02-b15a-0770eff4fdfa
 caps.latest.revision: 13
 author: dotnet-bot

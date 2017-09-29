@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "SSL"
-  - "WCF, security mode"
-  - "WCF, security"
+helpviewer_keywords: ["SSL", "WCF, security mode", "WCF, security"]
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
 caps.latest.revision: 18
 author: "Erikre"

@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "SecurityTokenParameters class"
-  - "security [WCF], creating custom tokens"
-  - "WSSecurityTokenSerializer class"
-  - "SecurityToken class"
+helpviewer_keywords: ["security [WCF], creating custom tokens"]
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
 caps.latest.revision: 14
 author: "Erikre"

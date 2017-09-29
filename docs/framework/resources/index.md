@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "deploying applications [.NET Framework], resources"
-  - "application resources"
-  - "resource files"
-  - "satellite assemblies"
-  - "localization"
-  - "packaging application resources"
-  - "localizing resources"
+helpviewer_keywords: ["deploying applications [.NET Framework], resources", "application resources", "resource files", "satellite assemblies", "localization", "packaging application resources", "localizing resources"]
 ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
 caps.latest.revision: 19
 author: "rpetrusha"

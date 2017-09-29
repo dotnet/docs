@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedVariable.GetName"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedVariable::GetName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetName method, ISymUnmanagedVariable interface [.NET Framework debugging]"
-  - "ISymUnmanagedVariable::GetName method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedVariable.GetName"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedVariable::GetName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetName method, ISymUnmanagedVariable interface [.NET Framework debugging]", "ISymUnmanagedVariable::GetName method [.NET Framework debugging]"]
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], TreeView control"
-  - "TreeView control [Windows Forms], node icons"
-  - "ImageList component [Windows Forms], adding images"
-  - "icons, setting for TreeView control"
-  - "tree nodes in TreeView control, icons"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], TreeView control", "TreeView control [Windows Forms], node icons", "ImageList component [Windows Forms], adding images", "icons, setting for TreeView control", "tree nodes in TreeView control, icons"]
 ms.assetid: c14ddcc0-e5a6-4c21-a2d5-6799fd491781
 caps.latest.revision: 18
 author: dotnet-bot

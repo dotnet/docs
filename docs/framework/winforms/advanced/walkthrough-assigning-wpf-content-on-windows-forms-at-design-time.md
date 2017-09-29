@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "WPF content [Windows Forms], assigning at design time"
-  - "ElementHost control, assigning WPF content at design time"
-  - "interoperability [WPF]"
-  - "Windows Forms, content assignments"
-  - "WPF user control, hosting in Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["WPF content [Windows Forms], assigning at design time", "ElementHost control, assigning WPF content at design time", "interoperability [WPF]", "Windows Forms, content assignments", "WPF user control, hosting in Windows Forms"]
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
 caps.latest.revision: 18
 author: dotnet-bot

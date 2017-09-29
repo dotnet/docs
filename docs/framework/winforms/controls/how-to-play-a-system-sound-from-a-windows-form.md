@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "sounds, playing for system events"
-  - "playing sounds, Windows Forms"
-  - "system sounds, playing from Windows Forms"
-  - "playing sounds, system"
-  - "SoundPlayer class, system sounds"
-  - "sounds, playing"
-  - "examples [Windows Forms], sounds"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["sounds, playing for system events", "playing sounds, Windows Forms", "system sounds, playing from Windows Forms", "playing sounds, system", "SoundPlayer class, system sounds", "sounds, playing", "examples [Windows Forms], sounds"]
 ms.assetid: afb206ff-4824-4804-a8d4-185bf5ad8e7c
 caps.latest.revision: 14
 author: dotnet-bot

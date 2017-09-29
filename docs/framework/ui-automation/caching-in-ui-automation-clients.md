@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation caching in clients"
-  - "caching, UI Automation clients"
+helpviewer_keywords: ["UI Automation caching in clients", "caching, UI Automation clients"]
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
 caps.latest.revision: 24
 author: "Xansky"

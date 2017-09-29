@@ -7,15 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "time-based cache policies"
-  - "cache [.NET Framework], time-based policies"
-  - "default time-based cache policy"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["time-based cache policies", "cache [.NET Framework], time-based policies", "default time-based cache policy"]
 ms.assetid: 6bfce066-a2e7-4add-a05e-85c12ec9f07f
 caps.latest.revision: 9
 author: "mcleblanc"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "performance [.NET Framework]"
-  - "reliability [.NET Framework]"
+helpviewer_keywords: ["performance [.NET Framework]", "reliability [.NET Framework]"]
 ms.assetid: c1676cca-3f1a-41ec-b469-9029566074fc
 caps.latest.revision: 20
 author: "mairaw"

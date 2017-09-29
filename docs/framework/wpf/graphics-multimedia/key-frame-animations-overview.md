@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, key-frame"
-  - "key frames [WPF], about key-frame animations"
-  - "multiple animation target values"
+helpviewer_keywords: ["animation [WPF], key-frame", "key frames [WPF], about key-frame animations", "multiple animation target values"]
 ms.assetid: 10028f97-bb63-41fc-b8ad-663dac7ea203
 caps.latest.revision: 29
 author: dotnet-bot

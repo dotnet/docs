@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "splash screen [WPF], startup time"
-  - "WPF, startup time"
-  - "startup time [WPF]"
-  - "application startup [WPF]"
-  - "performance [WPF], startup time"
+helpviewer_keywords: ["splash screen [WPF], startup time", "WPF [WPF], startup time", "startup time [WPF]", "application startup [WPF]", "performance [WPF], startup time"]
 ms.assetid: f0ec58d8-626f-4d8a-9873-c20f95e08b96
 caps.latest.revision: 11
 author: dotnet-bot

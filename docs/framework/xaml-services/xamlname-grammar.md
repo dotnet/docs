@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DottedXamlName grammar [XAML Services]"
-  - "grammar [XAML Services], DottedXamlName"
-  - "grammar [XAML Services], XamlName"
-  - "names in XAML [XAML Services]"
-  - "XamlName grammar [XAML Services]"
+helpviewer_keywords: ["DottedXamlName grammar [XAML Services]", "grammar [XAML Services], DottedXamlName", "grammar [XAML Services], XamlName", "names in XAML [XAML Services]", "XamlName grammar [XAML Services]"]
 ms.assetid: 11e4cada-41d2-494d-9531-0d3df4dfcbe3
 caps.latest.revision: 13
 author: "wadepickett"

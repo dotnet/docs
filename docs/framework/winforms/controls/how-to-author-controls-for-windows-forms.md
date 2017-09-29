@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], creating"
-  - "UserControl class, Windows Forms"
-  - "custom controls [Windows Forms], creating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], creating", "UserControl class, Windows Forms", "custom controls [Windows Forms], creating"]
 ms.assetid: 7570e982-545b-4c3a-a7c7-55581d313400
 caps.latest.revision: 14
 author: dotnet-bot

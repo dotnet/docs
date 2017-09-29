@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TileBrush, alignment of"
-  - "vertical alignment of TileBrushes"
-  - "aligning, TileBrushes"
-  - "horizontal alignment of TileBrushes"
+helpviewer_keywords: ["TileBrush [WPF], alignment of", "vertical alignment of TileBrushes", "aligning [WPF], TileBrushes", "horizontal alignment of Tilebrushes [WPF]"]
 ms.assetid: 65ae89bd-9246-4c9e-bde4-2fb991d4060d
 caps.latest.revision: 14
 author: dotnet-bot

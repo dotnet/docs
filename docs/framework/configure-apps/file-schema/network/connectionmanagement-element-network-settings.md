@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#connectionManagement"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<connectionManagement> element"
-  - "connectionManagement element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement", "http://schemas.microsoft.com/.NetConfiguration/v2.0#connectionManagement"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<connectionManagement> element", "connectionManagement element"]
 ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
 caps.latest.revision: 14
 author: "mcleblanc"

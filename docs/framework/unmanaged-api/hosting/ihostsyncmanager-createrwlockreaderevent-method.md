@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostSyncManager.CreateRWLockReaderEvent"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostSyncManager::CreateRWLockReaderEvent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateRWLockReaderEvent method [.NET Framework hosting]"
-  - "IHostSyncManager::CreateRWLockReaderEvent method [.NET Framework hosting]"
+api_name: ["IHostSyncManager.CreateRWLockReaderEvent"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostSyncManager::CreateRWLockReaderEvent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateRWLockReaderEvent method [.NET Framework hosting]", "IHostSyncManager::CreateRWLockReaderEvent method [.NET Framework hosting]"]
 ms.assetid: 68c4ea19-c47c-45c6-b420-d3a2ba1c2d50
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

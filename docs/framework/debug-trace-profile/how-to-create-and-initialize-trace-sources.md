@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "trace sources"
-  - "initializing trace sources"
-  - "configuration files [.NET Framework], trace sources"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["trace sources", "initializing trace sources", "configuration files [.NET Framework], trace sources"]
 ms.assetid: f88dda6f-5fda-45be-9b3c-745a9b708c4d
 caps.latest.revision: 10
 author: "mairaw"

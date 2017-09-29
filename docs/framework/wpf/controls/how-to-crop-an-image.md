@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "classes, CroppedBitmap"
-  - "CroppedBitmap class"
-  - "images, cropping"
-  - "cropping images"
+helpviewer_keywords: ["images [WPF], cropping", "cropping images"]
 ms.assetid: c6bba109-c6e7-4cf8-bfe6-9cf8d01bb4fc
 caps.latest.revision: 14
 author: dotnet-bot

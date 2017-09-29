@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "global assembly cache, Choose Toolbox Items dialog box"
-  - "AssemblyFoldersEx, Choose Toolbox Items dialog box"
-  - "controls, display in Choose Toolbox Items dialog box"
-  - "assembly folder registration, Choose Toolbox Items dialog box"
-  - "Choose Toolbox Items dialog box, display control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["global assembly cache, Choose Toolbox Items dialog box", "AssemblyFoldersEx, Choose Toolbox Items dialog box", "controls [Windows Forms], display in Choose Toolbox Items dialog box", "assembly folder registration, Choose Toolbox Items dialog box", "Choose Toolbox Items dialog box, display control"]
 ms.assetid: 01ef6eba-d044-40f0-951d-78eff7ebd9a9
 caps.latest.revision: 13
 author: dotnet-bot

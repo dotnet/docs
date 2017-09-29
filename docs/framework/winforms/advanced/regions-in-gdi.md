@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "GDI+, regions"
-  - "drawing, regions"
-  - "regions"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["GDI+, regions", "drawing, regions", "regions"]
 ms.assetid: 52184f9b-16dd-4bbd-85be-029112644ceb
 caps.latest.revision: 15
 author: dotnet-bot

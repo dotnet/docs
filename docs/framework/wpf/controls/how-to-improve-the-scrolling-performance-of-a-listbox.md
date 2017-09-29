@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ListBox control [WPF], reusing item containers"
-  - "ListBox control [WPF], improving scrolling performance"
+helpviewer_keywords: ["ListBox control [WPF], reusing item containers", "ListBox control [WPF], improving scrolling performance"]
 ms.assetid: 1e2bf8f3-c8ce-47f7-a400-a7fe11d1a848
 caps.latest.revision: 8
 author: dotnet-bot

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "queues [WCF]"
+helpviewer_keywords: ["queues [WCF]"]
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
 caps.latest.revision: 17
 author: "Erikre"

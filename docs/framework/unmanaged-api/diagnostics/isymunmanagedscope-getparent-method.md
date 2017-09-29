@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedScope.GetParent"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedScope::GetParent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetParent method [.NET Framework debugging]"
-  - "ISymUnmanagedScope::GetParent method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedScope.GetParent"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedScope::GetParent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetParent method [.NET Framework debugging]", "ISymUnmanagedScope::GetParent method [.NET Framework debugging]"]
 ms.assetid: c7963c87-6ec5-49b3-a5cd-e0fe0c43f9b4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

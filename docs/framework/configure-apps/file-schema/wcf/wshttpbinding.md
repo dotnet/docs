@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "wsHttpBinding Element"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["wsHttpBinding Element"]
 ms.assetid: 0eee8ced-ad68-427d-b95a-97260e98deed
 caps.latest.revision: 30
 author: "Erikre"

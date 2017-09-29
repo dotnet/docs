@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "security [.NET Framework], partially trusted code"
-  - "partially trusted code"
-  - "partial trust"
-  - "AllowPartiallyTrustedCallersAttribute attribute"
-  - "code access security, partially trusted code"
-  - "APTCA"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["security [.NET Framework], partially trusted code", "partially trusted code", "partial trust", "AllowPartiallyTrustedCallersAttribute attribute", "code access security, partially trusted code", "APTCA"]
 ms.assetid: dd66cd4c-b087-415f-9c3e-94e3a1835f74
 caps.latest.revision: 25
 author: "mairaw"

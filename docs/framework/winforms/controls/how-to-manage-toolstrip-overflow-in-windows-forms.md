@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Overflow property"
-  - "ToolStrip control [Windows Forms], managing overflow"
-  - "toolbars [Windows Forms], managing overflow"
-  - "examples [Windows Forms], toolbars"
-  - "CanOverflow property"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms], managing overflow", "toolbars [Windows Forms], managing overflow", "examples [Windows Forms], toolbars", "CanOverflow property"]
 ms.assetid: fa10e0ad-4cbf-4c0d-9082-359c2f855d4e
 caps.latest.revision: 14
 author: dotnet-bot

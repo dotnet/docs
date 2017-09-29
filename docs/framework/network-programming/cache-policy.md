@@ -7,19 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "time-based cache policies"
-  - "location-based cache policies"
-  - "cache [.NET Framework], policies"
-  - "request cache policies"
-  - "freshness of cached resources"
-  - "content cache policies"
-  - "expired content"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["time-based cache policies", "location-based cache policies", "cache [.NET Framework], policies", "request cache policies", "freshness of cached resources", "content cache policies", "expired content"]
 ms.assetid: 1a7e04ec-7872-41c2-96c6-52566dcb412b
 caps.latest.revision: 11
 author: "mcleblanc"

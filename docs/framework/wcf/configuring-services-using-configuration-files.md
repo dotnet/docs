@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "configuring services [WCF]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["configuring services [WCF]"]
 ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
 caps.latest.revision: 29
 author: "Erikre"

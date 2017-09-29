@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo4.GetObjectSize2"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo4::GetObjectSize2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetObjectSize2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
-  - "ICorProfilerInfo4::GetObjectSize2 method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo4.GetObjectSize2"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo4::GetObjectSize2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetObjectSize2 method, ICorProfilerInfo4 interface [.NET Framework profiling]", "ICorProfilerInfo4::GetObjectSize2 method [.NET Framework profiling]"]
 ms.assetid: 4a3e43ed-3ee3-4395-ab14-f78b903be13e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "text, aligning"
-  - "Windows Forms, aligning drawn text"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["text [Windows Forms], aligning", "Windows Forms, aligning drawn text"]
 ms.assetid: 83c10a81-1a90-4b5c-98aa-2c6c4b280079
 caps.latest.revision: 18
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "quotation marks"
-  - "TextBox control [Windows Forms], displaying quotation marks"
-  - "quotation marks, adding to strings in text boxes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["quotation marks", "TextBox control [Windows Forms], displaying quotation marks", "quotation marks, adding to strings in text boxes"]
 ms.assetid: 68bdc3f3-4177-4eab-99cd-cac17a82b515
 caps.latest.revision: 14
 author: dotnet-bot

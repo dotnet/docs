@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "images [Windows Forms], recoloring"
-  - "recoloring images"
-  - "examples [Windows Forms], recoloring images"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["images [Windows Forms], recoloring", "recoloring images", "examples [Windows Forms], recoloring images"]
 ms.assetid: f28c54fd-9c80-4f6f-b242-55f7ffcda84b
 caps.latest.revision: 11
 author: dotnet-bot

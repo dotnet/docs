@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Storyboard syntax"
-  - "syntax, Storyboard"
-  - "Timelines"
+helpviewer_keywords: ["Storyboard syntax [WPF]", "syntax [WPF], Storyboard", "timelines [WPF]"]
 ms.assetid: 1a698c3c-30f1-4b30-ae56-57e8a39811bd
 caps.latest.revision: 31
 author: dotnet-bot

@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data [Windows Forms], binding to controls"
-  - "list boxes, data binding"
-  - "ComboBox control [Windows Forms], data binding"
-  - "data binding, combo boxes"
-  - "ListBox control [Windows Forms], data binding"
-  - "combo boxes, data binding"
-  - "bound controls, combo boxes"
-  - "Windows Forms controls, data binding"
-  - "data-bound controls, Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data [Windows Forms], binding to controls", "list boxes [Windows Forms], data binding", "ComboBox control [Windows Forms], data binding", "data binding [Windows Forms], combo boxes", "ListBox control [Windows Forms], data binding", "combo boxes [Windows Forms], data binding", "bound controls [Windows Forms], combo boxes", "Windows Forms controls, data binding", "data-bound controls [Windows Forms], Windows Forms"]
 ms.assetid: dfd7f081-8bea-4a41-86a3-86a1934828ef
 caps.latest.revision: 15
 author: dotnet-bot

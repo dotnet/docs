@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "painting with a video"
-  - "video, painting with"
-  - "brushes, painting with a video"
+helpviewer_keywords: ["painting with a video", "video [WPF], painting with", "brushes [WPF], painting with a video"]
 ms.assetid: 04dd6600-4a6e-4b43-a93e-21cce7dfbcb8
 caps.latest.revision: 5
 author: dotnet-bot

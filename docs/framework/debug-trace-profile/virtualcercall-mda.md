@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), CER calls"
-  - "virtualCERCall MDA"
-  - "virtual CER calls"
-  - "constrained execution regions"
-  - "CER calls"
-  - "managed debugging assistants (MDAs), CER calls"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), CER calls", "virtualCERCall MDA", "virtual CER calls", "constrained execution regions", "CER calls", "managed debugging assistants (MDAs), CER calls"]
 ms.assetid: 1eb18c7a-f5e0-443f-80fb-67bfbb047da2
 caps.latest.revision: 13
 author: "mairaw"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.EvalComplete"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::EvalComplete"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugManagedCallback::EvalComplete method [.NET Framework debugging]"
-  - "EvalComplete method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.EvalComplete"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::EvalComplete"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugManagedCallback::EvalComplete method [.NET Framework debugging]", "EvalComplete method [.NET Framework debugging]"]
 ms.assetid: f74ab4eb-cd1b-407c-a66d-8ec0d85647f3
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

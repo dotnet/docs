@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "defining custom types [XAML Services]"
+helpviewer_keywords: ["defining custom types [XAML Services]"]
 ms.assetid: c2667cbd-2f46-4a7f-9dfc-53696e35e8e4
 caps.latest.revision: 11
 author: "wadepickett"

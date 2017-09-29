@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "user interface virtualization"
-  - "dependency properties, performance"
-  - "event handlers [WPF]"
-  - "object performance considerations"
-  - "Freezable objects, performance"
+helpviewer_keywords: ["user interface virtualization", "dependency properties [WPF], performance", "event handlers [WPF]", "object performance considerations", "Freezable objects [WPF], performance"]
 ms.assetid: 73aa2f47-1d73-439a-be1f-78dc4ba2b5bd
 caps.latest.revision: 12
 author: dotnet-bot

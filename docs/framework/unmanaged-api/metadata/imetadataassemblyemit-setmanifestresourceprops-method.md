@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataAssemblyEmit.SetManifestResourceProps"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataAssemblyEmit::SetManifestResourceProps"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetManifestResourceProps method [.NET Framework metadata]"
-  - "IMetaDataAssemblyEmit::SetManifestResourceProps method [.NET Framework metadata]"
+api_name: ["IMetaDataAssemblyEmit.SetManifestResourceProps"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataAssemblyEmit::SetManifestResourceProps"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetManifestResourceProps method [.NET Framework metadata]", "IMetaDataAssemblyEmit::SetManifestResourceProps method [.NET Framework metadata]"]
 ms.assetid: ef77efd1-849c-4e51-ba92-7ee3d2bf0339
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

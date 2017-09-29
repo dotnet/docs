@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter.SetUserEntryPoint"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter::SetUserEntryPoint"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedWriter::SetUserEntryPoint method [.NET Framework debugging]"
-  - "SetUserEntryPoint method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter.SetUserEntryPoint"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter::SetUserEntryPoint"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedWriter::SetUserEntryPoint method [.NET Framework debugging]", "SetUserEntryPoint method [.NET Framework debugging]"]
 ms.assetid: d4dcc575-3ac8-4453-9be1-2b24f47363d7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

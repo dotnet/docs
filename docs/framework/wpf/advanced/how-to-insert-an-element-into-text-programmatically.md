@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Text Animation sample"
-  - "elements, inserting into text"
-  - "inserting elements into text"
-  - "TextPointer objects"
-  - "text, inserting elements"
+helpviewer_keywords: ["Text Animation sample", "elements [WPF], inserting into text", "inserting elements into text", "TextPointer objects [WPF]", "text [WPF], inserting elements"]
 ms.assetid: 97bd950a-25ac-4e42-a311-94b6420d4136
 caps.latest.revision: 8
 author: dotnet-bot

@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#nameEntry"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/nameEntry"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<nameEntry> element"
-  - "nameEntry element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#nameEntry", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/nameEntry"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<nameEntry> element", "nameEntry element"]
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
 caps.latest.revision: 14
 author: "mcleblanc"

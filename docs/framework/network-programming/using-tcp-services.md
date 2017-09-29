@@ -7,22 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "requesting data from Internet, TCP"
-  - "receiving data, TCP"
-  - "TcpClient class, about TcpClient class"
-  - "data requests, TCP"
-  - "application protocols, TCP"
-  - "network resources, TCP"
-  - "sending data, TCP"
-  - "TCP"
-  - "protocols, TCP"
-  - "Internet, TCP"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["requesting data from Internet, TCP", "receiving data, TCP", "TcpClient class, about TcpClient class", "data requests, TCP", "application protocols, TCP", "network resources, TCP", "sending data, TCP", "TCP", "protocols, TCP", "Internet, TCP"]
 ms.assetid: d2811830-3bcb-495c-b82d-cda9cf919aad
 caps.latest.revision: 11
 author: "mcleblanc"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "troubleshooting print job problems"
-  - "print jobs, troubleshooting"
-  - "print jobs, diagnosing problems"
+helpviewer_keywords: ["troubleshooting print job problems", "print jobs [WPF], troubleshooting", "print jobs [WPF], diagnosing problems"]
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 caps.latest.revision: 7
 author: dotnet-bot

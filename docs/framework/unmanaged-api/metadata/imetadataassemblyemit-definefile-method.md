@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataAssemblyEmit.DefineFile"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataAssemblyEmit::DefineFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataAssemblyEmit::DefineFile method [.NET Framework metadata]"
-  - "DefineFile method [.NET Framework metadata]"
+api_name: ["IMetaDataAssemblyEmit.DefineFile"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataAssemblyEmit::DefineFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataAssemblyEmit::DefineFile method [.NET Framework metadata]", "DefineFile method [.NET Framework metadata]"]
 ms.assetid: c065aadf-c1ca-4981-bde6-597042cb29c4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

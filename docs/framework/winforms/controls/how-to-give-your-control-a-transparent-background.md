@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "transparent backgrounds, custom controls"
-  - "custom controls [Windows Forms], transparent background"
-  - "transparency, Windows Forms custom controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["transparent backgrounds, custom controls", "custom controls [Windows Forms], transparent background", "transparency, Windows Forms custom controls"]
 ms.assetid: 32433e63-f4e9-4305-9857-6de3edeb944a
 caps.latest.revision: 23
 author: dotnet-bot

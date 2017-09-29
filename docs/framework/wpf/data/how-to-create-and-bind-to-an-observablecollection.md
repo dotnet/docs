@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "classes, ObservableCollection"
-  - "data binding, ObservableCollection class"
-  - "notifications"
+helpviewer_keywords: ["data binding [WPF], ObservableCollection class", "notifications"]
 ms.assetid: 6cf7e275-df76-41c6-a611-53b889b8fd5a
 caps.latest.revision: 13
 author: dotnet-bot

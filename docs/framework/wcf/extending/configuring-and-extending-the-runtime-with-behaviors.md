@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "attaching extensions using behaviors [WCF]"
+helpviewer_keywords: ["attaching extensions using behaviors [WCF]"]
 ms.assetid: 149b99b6-6eb6-4f45-be22-c967279677d9
 caps.latest.revision: 20
 author: "Erikre"

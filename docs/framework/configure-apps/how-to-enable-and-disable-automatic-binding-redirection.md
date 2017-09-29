@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "side-by-side execution, assembly binding redirection"
-  - "assemblies [.NET Framework], binding redirection"
+dev_langs: ["VB", "CSharp", "C++", "jsharp", "VB", "CSharp", "C++"]
+helpviewer_keywords: ["side-by-side execution, assembly binding redirection", "assemblies [.NET Framework], binding redirection"]
 ms.assetid: 5fca42f3-bdce-4b81-a704-61e42c89d3ba
 caps.latest.revision: 17
 author: "mcleblanc"

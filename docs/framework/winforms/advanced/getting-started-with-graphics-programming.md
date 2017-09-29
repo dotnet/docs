@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "graphics, getting started"
-  - "getting started, graphics programming"
-  - "examples [Windows Forms], graphics"
-  - "drawing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["graphics [Windows Forms], getting started", "getting started, graphics programming", "examples [Windows Forms], graphics", "drawing"]
 ms.assetid: eb0f6d6f-9e52-4167-9592-ff4b82fb5869
 caps.latest.revision: 11
 author: dotnet-bot

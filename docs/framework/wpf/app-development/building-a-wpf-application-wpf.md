@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF application, building"
+helpviewer_keywords: ["WPF application [WPF], building"]
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
 caps.latest.revision: 45
 author: dotnet-bot

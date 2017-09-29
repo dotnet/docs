@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Location"
-  - "Location.Y"
-  - "Location.X"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms]"
-  - "controls [Windows Forms], moving"
-  - "snaplines"
-  - "controls [Windows Forms], positioning"
+f1_keywords: ["Location", "Location.Y", "Location.X"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms]", "controls [Windows Forms], moving", "snaplines", "controls [Windows Forms], positioning"]
 ms.assetid: 4693977e-34a4-4f19-8221-68c3120c2b2b
 caps.latest.revision: 18
 author: dotnet-bot

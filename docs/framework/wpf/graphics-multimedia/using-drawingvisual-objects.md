@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "visual layer, DrawingVisual objects"
-  - "DrawingVisual objects in visual layer"
+helpviewer_keywords: ["visual layer [WPF], DrawingVisual objects", "DrawingVisual objects in visual layer"]
 ms.assetid: 0b4e711d-e640-40cb-81c3-8f5c59909b7d
 caps.latest.revision: 17
 author: dotnet-bot

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ledger-like formats"
-  - "DataGridView control [Windows Forms], row style alternation"
-  - "Windows Forms, rows"
-  - "rows, alternating"
-  - "data [Windows Forms], displaying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ledger-like formats", "DataGridView control [Windows Forms], row style alternation", "Windows Forms, rows", "rows, alternating", "data [Windows Forms], displaying"]
 ms.assetid: 02373442-bf94-4470-9f8a-e44c4a9d5b88
 caps.latest.revision: 12
 author: dotnet-bot

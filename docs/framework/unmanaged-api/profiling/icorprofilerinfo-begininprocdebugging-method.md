@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo.BeginInprocDebugging"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo::BeginInprocDebugging"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BeginInprocDebugging method [.NET Framework profiling]"
-  - "ICorProfilerInfo::BeginInprocDebugging method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo.BeginInprocDebugging"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo::BeginInprocDebugging"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BeginInprocDebugging method [.NET Framework profiling]", "ICorProfilerInfo::BeginInprocDebugging method [.NET Framework profiling]"]
 ms.assetid: c5c82c69-99f8-4447-aee0-42cca0a5eb5c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Popup control, specifying custom position"
+helpviewer_keywords: ["Popup control [WPF], specifying custom position"]
 ms.assetid: 28c24f39-d3aa-4ee2-b950-384b4a5dab92
 caps.latest.revision: 9
 author: dotnet-bot

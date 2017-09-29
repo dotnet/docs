@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "colors of elements, changing"
-  - "rollover effect"
-  - "element colors, changing"
+helpviewer_keywords: ["colors of elements [WPF], changing", "rollover effect", "element colors [WPF], changing"]
 ms.assetid: 3b20d028-6f1c-4b25-95d2-fa68cefbdb4c
 caps.latest.revision: 12
 author: dotnet-bot

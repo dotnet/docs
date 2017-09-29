@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], brushes"
-  - "shapes, filling"
-  - "brushes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], brushes", "shapes [Windows Forms], filling", "brushes"]
 ms.assetid: bf8f7fff-5a90-41e8-9051-494449fb2844
 caps.latest.revision: 14
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "printing XPS files programmatically"
-  - "XPS files, printing programmatically"
+helpviewer_keywords: ["printing XPS files programmatically", "XPS files [WPF], printing programmatically"]
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
 caps.latest.revision: 9
 author: dotnet-bot

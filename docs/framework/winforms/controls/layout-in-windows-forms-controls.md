@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "layout [Windows Forms]"
-  - "sizing, automatic [Windows Forms]"
-  - "LayoutEngine class"
-  - "Margin property [Windows Forms]"
-  - "Padding property [Windws Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["layout [Windows Forms]", "sizing, automatic [Windows Forms]", "Margin property [Windows Forms]", "Padding property [Windws Forms]"]
 ms.assetid: 99400e3a-720e-4f56-b68f-89df911a251c
 caps.latest.revision: 7
 author: dotnet-bot

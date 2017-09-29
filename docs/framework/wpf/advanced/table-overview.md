@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "flow content elements [WPF], Table"
-  - "documents, tables"
-  - "tables"
+helpviewer_keywords: ["flow content elements [WPF], Table", "documents [WPF], tables", "tables"]
 ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
 caps.latest.revision: 21
 author: dotnet-bot

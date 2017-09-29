@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRAssemblyIdentityManager.GetBindingIdentityFromStream"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRAssemblyIdentityManager::GetBindingIdentityFromStream"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetBindingIdentityFromStream method [.NET Framework hosting]"
-  - "ICLRAssemblyIdentityManager::GetBindingIdentityFromStream method [.NET Framework hosting]"
+api_name: ["ICLRAssemblyIdentityManager.GetBindingIdentityFromStream"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRAssemblyIdentityManager::GetBindingIdentityFromStream"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetBindingIdentityFromStream method [.NET Framework hosting]", "ICLRAssemblyIdentityManager::GetBindingIdentityFromStream method [.NET Framework hosting]"]
 ms.assetid: 40123b30-a589-46b3-95d3-af7b2b0baa05
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

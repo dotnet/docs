@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRIoCompletionManager.OnComplete"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRIoCompletionManager::OnComplete"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OnComplete method [.NET Framework hosting]"
-  - "ICLRIoCompletionManager::OnComplete method [.NET Framework hosting]"
+api_name: ["ICLRIoCompletionManager.OnComplete"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRIoCompletionManager::OnComplete"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OnComplete method [.NET Framework hosting]", "ICLRIoCompletionManager::OnComplete method [.NET Framework hosting]"]
 ms.assetid: 003f6974-9727-4322-bed5-e330d1224d0b
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

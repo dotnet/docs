@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data serialization [WCF]"
-  - "data transfer [WCF]"
+helpviewer_keywords: ["data serialization [WCF]", "data transfer [WCF]"]
 ms.assetid: 0f03c635-f3e7-4c5c-9463-3cb0135e221e
 caps.latest.revision: 12
 author: "Erikre"

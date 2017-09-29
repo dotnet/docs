@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "tracing [.NET Framework], trace and debug settings schema"
-  - "configuration schema [.NET Framework], trace and debug settings"
-  - "configuration settings [.NET Framework], tracing"
-  - "schema configuration settings"
-  - "configuration settings [.NET Framework], debugging"
-  - "trace listeners, trace and debug settings schema"
-  - "configuration sections [.NET Framework]"
-  - "elements [.NET Framework], trace and debug settings"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["tracing [.NET Framework], trace and debug settings schema", "configuration schema [.NET Framework], trace and debug settings", "configuration settings [.NET Framework], tracing", "schema configuration settings", "configuration settings [.NET Framework], debugging", "trace listeners, trace and debug settings schema", "configuration sections [.NET Framework]", "elements [.NET Framework], trace and debug settings"]
 ms.assetid: 277ca5f6-e1c4-41b6-a47f-3a67ce5b94ac
 caps.latest.revision: 14
 author: "mcleblanc"

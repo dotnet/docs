@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "cryptographic provider [WCF], changing"
-  - "cryptographic provider [WCF]"
+helpviewer_keywords: ["cryptographic provider [WCF], changing", "cryptographic provider [WCF]"]
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
 caps.latest.revision: 7
 author: "Erikre"

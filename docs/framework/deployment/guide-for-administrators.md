@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "administrator's guide, deploying .NET Framework"
-  - "deployment [.NET Framework], administrator's guide"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["administrator's guide, deploying .NET Framework", "deployment [.NET Framework], administrator's guide"]
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
 caps.latest.revision: 40
 author: "mairaw"

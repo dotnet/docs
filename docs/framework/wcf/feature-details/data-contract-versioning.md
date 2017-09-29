@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "versioning [WCF], data contracts"
-  - "versioning [WCF]"
-  - "data contracts [WCF], versioning"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["versioning [WCF], data contracts", "versioning [WCF]", "data contracts [WCF], versioning"]
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
 caps.latest.revision: 35
 author: "Erikre"

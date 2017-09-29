@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "applications [C++], 64-bit"
-  - "64-bit applications [C++]"
-  - "64-bit programming [C++]"
+helpviewer_keywords: ["applications [C++], 64-bit", "64-bit applications [C++]", "64-bit programming [C++]"]
 ms.assetid: fd4026bc-2c3d-4b27-86dc-ec5e96018181
 caps.latest.revision: 53
 author: "rpetrusha"

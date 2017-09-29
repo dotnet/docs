@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRRuntimeInfo.GetProcAddress"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRRuntimeInfo::GetProcAddress"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetProcAddress method [.NET Framework hosting]"
-  - "ICLRRuntimeInfo::GetProcAddress method [.NET Framework hosting]"
+api_name: ["ICLRRuntimeInfo.GetProcAddress"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRRuntimeInfo::GetProcAddress"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetProcAddress method [.NET Framework hosting]", "ICLRRuntimeInfo::GetProcAddress method [.NET Framework hosting]"]
 ms.assetid: a7732bfc-689a-4926-88fd-4f81e6f9ed78
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

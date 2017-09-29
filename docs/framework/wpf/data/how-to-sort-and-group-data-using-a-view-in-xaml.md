@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data binding, grouping data in views in XAML"
-  - "XAML, sorting data in views"
-  - "grouping data in views in XAML"
-  - "data binding, sorting data in views in XAML"
-  - "sorting data in views in XAML"
-  - "XAML, grouping data in views"
-  - "views, sorting data"
-  - "views, grouping data"
+helpviewer_keywords: ["data binding [WPF], grouping data in views in XAML", "XAML [WPF], sorting data in views", "grouping data in views in XAML", "data binding [WPF], sorting data in views in XAML", "sorting data in views in XAML", "XAML [WPF], grouping data in views", "views [WPF], sorting data", "views [WPF], grouping data"]
 ms.assetid: 145c8c3f-dbdd-4d0d-816f-90b35eba7eda
 caps.latest.revision: 15
 author: dotnet-bot

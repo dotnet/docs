@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataAssemblyEmit.SetAssemblyRefProps"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataAssemblyEmit::SetAssemblyRefProps"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetAssemblyRefProps method [.NET Framework metadata]"
-  - "IMetaDataAssemblyEmit::SetAssemblyRefProps method [.NET Framework metadata]"
+api_name: ["IMetaDataAssemblyEmit.SetAssemblyRefProps"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataAssemblyEmit::SetAssemblyRefProps"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetAssemblyRefProps method [.NET Framework metadata]", "IMetaDataAssemblyEmit::SetAssemblyRefProps method [.NET Framework metadata]"]
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

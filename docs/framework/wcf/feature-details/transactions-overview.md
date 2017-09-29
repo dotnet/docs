@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "transactions [WCF]"
-  - "WCF, transactions"
-  - "Windows Communication Foundation, transactions"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["transactions [WCF]", "WCF, transactions", "Windows Communication Foundation, transactions"]
 ms.assetid: c7757854-1207-4019-8b31-552578b7d570
 caps.latest.revision: 16
 author: "Erikre"

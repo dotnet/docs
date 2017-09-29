@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "{}"
-helpviewer_keywords: 
-  - "XAML [XAML Services], quotation mark (\")"
-  - "{} escape sequence [XAML Services]"
-  - "XAML [XAML Services], {} escape sequence"
-  - "XAML [XAML Services], escape sequence"
-  - "quotation mark (\") [XAML Services]"
-  - "escape sequence [XAML Services]"
+f1_keywords: ["{}"]
+helpviewer_keywords: ["XAML [XAML Services], quotation mark (\")", "{} escape sequence [XAML Services]", "XAML [XAML Services], {} escape sequence", "XAML [XAML Services], escape sequence", "quotation mark (\") [XAML Services]", "escape sequence [XAML Services]"]
 ms.assetid: 3ce3e2ad-a868-43f9-9c98-b29561cb146e
 caps.latest.revision: 21
 author: "wadepickett"

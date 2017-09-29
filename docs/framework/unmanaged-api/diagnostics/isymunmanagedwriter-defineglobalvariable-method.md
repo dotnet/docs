@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter.DefineGlobalVariable"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter::DefineGlobalVariable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedWriter::DefineGlobalVariable method [.NET Framework debugging]"
-  - "DefineGlobalVariable method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter.DefineGlobalVariable"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter::DefineGlobalVariable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedWriter::DefineGlobalVariable method [.NET Framework debugging]", "DefineGlobalVariable method [.NET Framework debugging]"]
 ms.assetid: 843c904a-8176-4d8f-bd47-b4d4c29f4c5c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

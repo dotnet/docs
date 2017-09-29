@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo4::InitializeCurrentThread"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo4::InitializeCurrentThread"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo4::InitializeCurrentThread method [.NET Framework profiling]"
-  - "InitializeCurrentThread method, ICorProfilerInfo4 interface [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo4::InitializeCurrentThread"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo4::InitializeCurrentThread"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo4::InitializeCurrentThread method [.NET Framework profiling]", "InitializeCurrentThread method, ICorProfilerInfo4 interface [.NET Framework profiling]"]
 ms.assetid: 18a3335c-8c75-476c-b6de-72c0bfedae5d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

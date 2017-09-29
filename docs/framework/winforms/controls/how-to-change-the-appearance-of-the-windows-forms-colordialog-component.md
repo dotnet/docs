@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ColorDialog component, examples"
-  - "ColorDialog component, formatting appearance"
-  - "color dialog box, configuring appearance"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ColorDialog component [Windows Forms], examples", "ColorDialog component [Windows Forms], formatting appearance", "color dialog box, configuring appearance"]
 ms.assetid: bba4e262-1cd7-4f63-89cf-330a36f7b539
 caps.latest.revision: 13
 author: dotnet-bot

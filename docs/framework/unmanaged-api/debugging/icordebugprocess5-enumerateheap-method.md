@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugProcess5.EnumerateHeap"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugProcess5::EnumerateHeap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EnumerateHeap method, ICorDebugProcess5 interface [.NET Framework debugging]"
-  - "ICorDebugProcess5::EnumerateHeap method [.NET Framework debugging]"
+api_name: ["ICorDebugProcess5.EnumerateHeap"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugProcess5::EnumerateHeap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EnumerateHeap method, ICorDebugProcess5 interface [.NET Framework debugging]", "ICorDebugProcess5::EnumerateHeap method [.NET Framework debugging]"]
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

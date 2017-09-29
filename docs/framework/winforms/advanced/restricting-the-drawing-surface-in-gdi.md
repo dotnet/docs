@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "GDI+, clipping"
-  - "clipping, using GDI+"
-  - "GDI+, restricting drawing surface"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["GDI+, clipping", "clipping, using GDI+", "GDI+, restricting drawing surface"]
 ms.assetid: 8b5f71d9-d2f0-4540-9c41-740f90fd4c26
 caps.latest.revision: 14
 author: dotnet-bot

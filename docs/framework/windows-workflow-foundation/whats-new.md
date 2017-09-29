@@ -7,9 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Workflow Foundation [WF], what's new"
-  - "WF [WF], what's new"
+helpviewer_keywords: ["Windows Workflow Foundation [WF], what's new", "WF [WF], what's new"]
 ms.assetid: 11f96014-001e-41a0-bcc2-d0684a52fa43
 caps.latest.revision: 29
 author: "Erikre"

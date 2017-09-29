@@ -5,14 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "INotifyPropertyChanged interface, implementing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["INotifyPropertyChanged interface, implementing"]
 ms.assetid: eac428af-b43b-46ac-80d9-1a5f88658725
 caps.latest.revision: 8
 author: dotnet-bot

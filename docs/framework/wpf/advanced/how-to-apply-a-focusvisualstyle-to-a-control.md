@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "properties, FocusVisualStyle"
-  - "FocusVisualStyle property"
+helpviewer_keywords: ["properties [WPF], FocusVisualStyle", "FocusVisualStyle property [WPF]"]
 ms.assetid: 363de99e-8ecc-438c-ac4a-f9147432ebd6
 caps.latest.revision: 11
 author: dotnet-bot

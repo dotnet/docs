@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask.SwitchOut"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask::SwitchOut"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRTask::SwitchOut method [.NET Framework hosting]"
-  - "SwitchOut method [.NET Framework hosting]"
+api_name: ["ICLRTask.SwitchOut"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask::SwitchOut"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRTask::SwitchOut method [.NET Framework hosting]", "SwitchOut method [.NET Framework hosting]"]
 ms.assetid: b6fb168c-b24b-4ecf-a390-2b5ba3317ae6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

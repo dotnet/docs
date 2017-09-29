@@ -5,25 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Margin.Bottom"
-  - "Margin.Left"
-  - "Margin.Top"
-  - "Margin.All"
-  - "Margin.Right"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Margin property [Windows Forms], walkthroughs"
-  - "walkthroughs [Windows Forms], layout"
-  - "AutoSize property, walkthroughs"
-  - "Padding property [Windows Forms], walkthroughs"
-  - "layout [Windows Forms], margins and padding"
-  - "Windows Forms, layout"
+f1_keywords: ["Margin.Bottom", "Margin.Left", "Margin.Top", "Margin.All", "Margin.Right"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Margin property [Windows Forms], walkthroughs", "walkthroughs [Windows Forms], layout", "AutoSize property, walkthroughs", "Padding property [Windows Forms], walkthroughs", "layout [Windows Forms], margins and padding", "Windows Forms, layout"]
 ms.assetid: f8ae2a6b-db13-4630-8e25-d104091205c7
 caps.latest.revision: 28
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataAssemblyImport.FindExportedTypeByName"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataAssemblyImport::FindExportedTypeByName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FindExportedTypeByName method [.NET Framework metadata]"
-  - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"
+api_name: ["IMetaDataAssemblyImport.FindExportedTypeByName"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataAssemblyImport::FindExportedTypeByName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FindExportedTypeByName method [.NET Framework metadata]", "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"]
 ms.assetid: 46264b2c-574d-4dde-aafc-77187a104fdd
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

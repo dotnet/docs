@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "generics [.NET Framework], reflection emit"
-  - "generics [.NET Framework], dynamic types"
-  - "reflection emit, generic types"
+helpviewer_keywords: ["generics [.NET Framework], reflection emit", "generics [.NET Framework], dynamic types", "reflection emit, generic types"]
 ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
 caps.latest.revision: 14
 author: "rpetrusha"

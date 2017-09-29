@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-api_name: 
-  - "ICorDebugVariableHome.GetArgumentIndex"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugVariableHome::GetArgumentIndex"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugVariableHome::GetArgumentiIndex method [.NET Framework debugging]"
-  - "GetArgumentIndex method, ICorDebugVariableHome interface [.NET Framework debugging]"
+api_name: ["ICorDebugVariableHome.GetArgumentIndex"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugVariableHome::GetArgumentIndex"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugVariableHome::GetArgumentiIndex method [.NET Framework debugging]", "GetArgumentIndex method, ICorDebugVariableHome interface [.NET Framework debugging]"]
 ms.assetid: e86fcc72-388d-4009-ab21-8f9c3323e9a3
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

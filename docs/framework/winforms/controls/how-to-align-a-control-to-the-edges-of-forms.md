@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Dock property, aligning controls (using code)"
-  - "forms, aligning controls"
-  - "controls [Windows Forms], aligning on forms"
-  - "custom controls [Windows Forms], docking using code"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Dock property, aligning controls (using code)", "forms [Windows Forms], aligning controls", "controls [Windows Forms], aligning on forms", "custom controls [Windows Forms], docking using code"]
 ms.assetid: 5994cb59-242b-4e75-bd0e-62879c34d702
 caps.latest.revision: 16
 author: dotnet-bot

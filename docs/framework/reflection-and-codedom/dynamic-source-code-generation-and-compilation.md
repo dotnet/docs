@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Code Document Object Model"
-  - "System.CodeDom namespace"
-  - "language-independent source code modeling"
-  - "CodeDOM"
-  - "multiple languages supported by CodeDOM"
-  - "source code in multiple languages"
-  - "languages, multiple language support by CodeDOM"
+helpviewer_keywords: ["Code Document Object Model", "language-independent source code modeling", "CodeDOM", "multiple languages supported by CodeDOM", "source code in multiple languages", "languages, multiple language support by CodeDOM"]
 ms.assetid: d077a3e8-bd81-4bdf-b6a3-323857ea30fb
 caps.latest.revision: 15
 author: "rpetrusha"

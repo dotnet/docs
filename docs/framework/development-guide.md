@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - ".NET Framework, development guide"
+helpviewer_keywords: [".NET Framework, development guide"]
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
 caps.latest.revision: 13
 author: "rpetrusha"

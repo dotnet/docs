@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.LogSwitch"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::LogSwitch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LogSwitch method [.NET Framework debugging]"
-  - "ICorDebugManagedCallback::LogSwitch method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.LogSwitch"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::LogSwitch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LogSwitch method [.NET Framework debugging]", "ICorDebugManagedCallback::LogSwitch method [.NET Framework debugging]"]
 ms.assetid: 0ac59d27-783f-4a87-b7a8-baa3ccc54582
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

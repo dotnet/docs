@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStripPanel control [Windows Forms]"
-  - "horizontal space"
-  - "ToolStrip control [Windows Forms], ToolStripPanel"
-  - "tool area [Windows Forms]"
-  - "vertical space"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStripPanel control [Windows Forms]", "horizontal space", "ToolStrip control [Windows Forms], ToolStripPanel", "tool area [Windows Forms]", "vertical space"]
 ms.assetid: aa47af39-1e71-40ee-bb75-2d2478f81bd0
 caps.latest.revision: 6
 author: dotnet-bot

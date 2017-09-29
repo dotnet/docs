@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UIElement class [WPF], displaying content"
-  - "content model [WPF], controls"
-  - "controls [WPF], displaying text"
-  - "content display [WPF], controls"
-  - "controls [WPF], formatting text"
-  - "displaying content [WPF]"
-  - "arbitrary content classes [WPF], content model"
-  - "ContentControl class [WPF], displaying content"
+helpviewer_keywords: ["UIElement class [WPF], displaying content", "content model [WPF], controls", "controls [WPF], displaying text", "content display [WPF], controls", "controls [WPF], formatting text", "displaying content [WPF]", "arbitrary content classes [WPF], content model", "ContentControl class [WPF], displaying content"]
 ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
 caps.latest.revision: 17
 author: dotnet-bot

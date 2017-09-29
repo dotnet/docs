@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "port sharing [WCF]"
-  - "activation services [WCF]"
+helpviewer_keywords: ["port sharing [WCF]", "activation services [WCF]"]
 ms.assetid: c9175af4-c27c-4765-bf45-b8f7528a7282
 caps.latest.revision: 12
 author: "Erikre"

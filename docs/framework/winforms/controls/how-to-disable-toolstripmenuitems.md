@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStripMenuItems, enabling"
-  - "ToolStripMenuItems, disabling"
-  - "menu items, disabling"
-  - "disabling menu items"
-  - "menu items, enabling"
-  - "menus, disabling menu items"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStripMenuItems, enabling", "ToolStripMenuItems, disabling", "menu items, disabling", "disabling menu items", "menu items, enabling", "menus [Windows Forms], disabling menu items"]
 ms.assetid: bcc1da84-50fd-41d2-8475-103b581d5654
 caps.latest.revision: 15
 author: dotnet-bot

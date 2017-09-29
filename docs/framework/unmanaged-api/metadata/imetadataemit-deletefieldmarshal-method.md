@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.DeleteFieldMarshal"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::DeleteFieldMarshal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataEmit::DeleteFieldMarshal method [.NET Framework metadata]"
-  - "DeleteFieldMarshal method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.DeleteFieldMarshal"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::DeleteFieldMarshal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataEmit::DeleteFieldMarshal method [.NET Framework metadata]", "DeleteFieldMarshal method [.NET Framework metadata]"]
 ms.assetid: 7c75aef9-c742-4b33-a14b-56ff94b0f725
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

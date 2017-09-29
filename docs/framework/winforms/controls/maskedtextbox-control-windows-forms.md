@@ -5,19 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MaskedTextBox"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MaskedTextBox control [Windows Forms]"
-  - "user input, validating in Windows Forms"
-  - "validating user input, Windows Forms"
-  - "text boxes, validating user input"
+f1_keywords: ["MaskedTextBox"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MaskedTextBox control [Windows Forms]", "user input [Windows Forms], validating in Windows Forms", "validating user input [Windows Forms], Windows Forms", "text boxes [Windows Forms], validating user input"]
 ms.assetid: 235d6121-027d-481d-8d59-4f6794d15d0c
 caps.latest.revision: 11
 author: dotnet-bot

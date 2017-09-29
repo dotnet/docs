@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "text, trimming"
-  - "documents, trimmng text"
-  - "trimmng text"
+helpviewer_keywords: ["text [WPF], trimming", "documents [WPF], trimmng text", "trimmng text"]
 ms.assetid: dd8c9191-d2be-45fd-9fb4-3c75b65578c5
 caps.latest.revision: 12
 author: dotnet-bot

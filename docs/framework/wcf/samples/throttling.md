@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "service behaviors, throttling sample"
-  - "Throttling Sample [Windows Communication Foundation]"
+helpviewer_keywords: ["service behaviors, throttling sample", "Throttling Sample [Windows Communication Foundation]"]
 ms.assetid: 40bb3582-8ae9-4410-96f0-6c515bfaf47c
 caps.latest.revision: 18
 author: "Erikre"

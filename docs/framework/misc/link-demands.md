@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "security [.NET Framework], demands"
-  - "demanded permissions"
-  - "permissions [.NET Framework], demands"
-  - "granting permissions, demands"
-  - "code access security, demands"
-  - "user demands for permission"
-  - "caller security checks"
-  - "link demands"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["security [.NET Framework], demands", "demanded permissions", "permissions [.NET Framework], demands", "granting permissions, demands", "code access security, demands", "user demands for permission", "caller security checks", "link demands"]
 ms.assetid: a33fd5f9-2de9-4653-a4f0-d9df25082c4d
 caps.latest.revision: 18
 author: "mairaw"

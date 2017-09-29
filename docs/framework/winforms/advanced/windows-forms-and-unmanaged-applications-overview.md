@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "COM [Windows Forms]"
-  - "Windows Forms, unmanaged"
-  - "COM interop"
-  - "ActiveX controls [Windows Forms], about ActiveX controls"
-  - "Windows Forms, interop"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["COM [Windows Forms]", "Windows Forms, unmanaged", "COM interop", "ActiveX controls [Windows Forms], about ActiveX controls", "Windows Forms, interop"]
 ms.assetid: 0a26d99d-8135-4895-8760-c9a2b5f67f14
 caps.latest.revision: 12
 author: dotnet-bot

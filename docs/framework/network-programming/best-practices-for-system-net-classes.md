@@ -7,19 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "sending data, best practices"
-  - "requesting data from Internet, best practices"
-  - "WebRequest class, best practices"
-  - "data requests, best practices"
-  - "WebResponse class, best practices"
-  - "best practices, data requests"
-  - "receiving data, best practices"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["sending data, best practices", "requesting data from Internet, best practices", "WebRequest class, best practices", "data requests, best practices", "WebResponse class, best practices", "best practices, data requests", "receiving data, best practices"]
 ms.assetid: 716decc6-5952-47b7-9c5a-ba6fc5698684
 caps.latest.revision: 9
 author: "mcleblanc"

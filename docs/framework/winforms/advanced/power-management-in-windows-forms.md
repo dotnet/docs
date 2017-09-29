@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "battery states"
-  - "power states"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["battery states", "power states"]
 ms.assetid: ad04a801-5682-4d88-92c5-26eb9cdb209a
 caps.latest.revision: 18
 author: dotnet-bot

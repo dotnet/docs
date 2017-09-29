@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ImageList component [Windows Forms]"
-  - "image controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ImageList component [Windows Forms]", "image controls"]
 ms.assetid: 83b48634-782b-464d-9b7d-568dc6e0bef2
 caps.latest.revision: 12
 author: dotnet-bot

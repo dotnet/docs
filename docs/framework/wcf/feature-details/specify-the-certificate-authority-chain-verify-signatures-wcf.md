@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "certificates [WCF], specifying the certificate authority certificate chain"
-  - "certificates [WCF], verifying signatures"
+helpviewer_keywords: ["certificates [WCF], specifying the certificate authority certificate chain", "certificates [WCF], verifying signatures"]
 ms.assetid: 7c719355-aa41-4567-80d0-5115a8cf73fd
 caps.latest.revision: 6
 author: "Erikre"

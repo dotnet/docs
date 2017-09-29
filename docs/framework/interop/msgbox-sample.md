@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "marshaling, MsgBox sample"
-  - "data marshaling, MsgBox sample"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["marshaling, MsgBox sample", "data marshaling, MsgBox sample"]
 ms.assetid: 9e0edff6-cc0d-4d5c-a445-aecf283d9c3a
 caps.latest.revision: 14
 author: "rpetrusha"

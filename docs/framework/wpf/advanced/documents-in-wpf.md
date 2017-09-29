@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "documents, packaging"
-  - "documents, text layout"
-  - "documents, XPS"
-  - "XPS documents"
-  - "packaging documents"
-  - "documents, controls"
-  - "documents, types of"
-  - "documents, browser-viewable"
-  - "browser-viewable documents"
+helpviewer_keywords: ["documents [WPF], packaging", "documents [WPF], text layout", "documents [WPF], XPS", "XPS documents [WPF], , "packaging documents [WPF], , "documents [WPF], controls", "documents [WPF], types of", "documents [WPF], browser-viewable", "browser-viewable documents [WPF], ]
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 caps.latest.revision: 36
 author: dotnet-bot

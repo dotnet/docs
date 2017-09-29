@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WS Security"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WS Security"]
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03
 caps.latest.revision: 52
 author: "BrucePerlerMS"

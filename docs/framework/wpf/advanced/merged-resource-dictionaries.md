@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "merged resource dictionaries"
-  - "dictionaries, merged resources"
+helpviewer_keywords: ["merged resource dictionaries", "dictionaries [WPF], merged resources"]
 ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 caps.latest.revision: 13
 author: dotnet-bot

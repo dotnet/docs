@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "handwriting recognition"
-  - "recognition of handwriting"
+helpviewer_keywords: ["handwriting recognition", "recognition of handwriting"]
 ms.assetid: f4e8576d-e731-4bac-9818-22e2ae636636
 caps.latest.revision: 11
 author: dotnet-bot

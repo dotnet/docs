@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "unmanaged code, interoperation"
-  - "managed code, interoperation with unmanaged code"
-  - ".NET Framework, interoperation with unmanaged code"
-  - "unmanaged code"
-  - "interoperation with unmanaged code"
-  - "interoperation with unmanaged code, about interoperation"
-  - "components [.NET Framework], interoperation with unmanaged code"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["unmanaged code, interoperation", "managed code, interoperation with unmanaged code", ".NET Framework, interoperation with unmanaged code", "unmanaged code", "interoperation with unmanaged code", "interoperation with unmanaged code, about interoperation", "components [.NET Framework], interoperation with unmanaged code"]
 ms.assetid: ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258
 caps.latest.revision: 15
 author: "rpetrusha"

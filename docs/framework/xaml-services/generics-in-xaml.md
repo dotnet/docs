@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "generics [XAML Services]"
+helpviewer_keywords: ["generics [XAML Services]"]
 ms.assetid: 835bfed7-585c-4216-ae67-b674edab8b92
 caps.latest.revision: 8
 author: "wadepickett"

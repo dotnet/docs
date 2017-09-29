@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, event handling"
-  - "events [Windows Forms], about events"
-  - "delegates [Windows Forms], multicast"
-  - "delegates [Windows Forms], events and"
-  - "multicast event delegates"
-  - "Windows Forms controls, events"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, event handling", "events [Windows Forms], about events", "delegates [Windows Forms], multicast", "delegates [Windows Forms], events and", "multicast event delegates", "Windows Forms controls, events"]
 ms.assetid: 814a6a43-a312-4791-88d8-f75f9a4f8c4c
 caps.latest.revision: 12
 author: dotnet-bot

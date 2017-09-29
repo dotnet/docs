@@ -7,25 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "authentication [.NET Framework], classes"
-  - "Basic authentication"
-  - "authentication [.NET Framework], basic"
-  - "client authentication, basic"
-  - "user authentication, basic"
-  - "authentication [.NET Framework], digest"
-  - "receiving data, authentication"
-  - "client authentication, digest"
-  - "Internet, authentication"
-  - "digest authentication"
-  - "sending data, authentication"
-  - "network resources, authentication"
-  - "user authentication, digest"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["authentication [.NET Framework], classes", "Basic authentication", "authentication [.NET Framework], basic", "client authentication, basic", "user authentication, basic", "authentication [.NET Framework], digest", "receiving data, authentication", "client authentication, digest", "Internet, authentication", "digest authentication", "sending data, authentication", "network resources, authentication", "user authentication, digest"]
 ms.assetid: 8cce2742-8d52-4643-9dd2-64ddf38aa878
 caps.latest.revision: 11
 author: "mcleblanc"

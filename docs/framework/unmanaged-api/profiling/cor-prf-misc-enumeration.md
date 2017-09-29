@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_PRF_MISC"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_PRF_MISC"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_PRF_MISC enumeration [.NET Framework profiling]"
+api_name: ["COR_PRF_MISC"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_PRF_MISC"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_PRF_MISC enumeration [.NET Framework profiling]"]
 ms.assetid: 619bb5de-e309-48b6-a3af-32d935a0ff46
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "graphics, performance"
-  - "drawing, optimizing performance"
-  - "imaging, optimizing performance"
-  - "shapes, optimizing performance"
-  - "2-D graphics"
-  - "images, optimizing performance"
+helpviewer_keywords: ["graphics [WPF], performance", "drawing [WPF], optimizing performance", "imaging [WPF], optimizing performance", "shapes [WPF], optimizing performance", "2-D graphics [WPF]", "images [WPF], optimizing performance"]
 ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
 caps.latest.revision: 8
 author: dotnet-bot

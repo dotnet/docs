@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Freeze attribute"
-  - "Freezable elements"
-  - "PresentationOptions prefix"
+helpviewer_keywords: ["Freeze attribute", "Freezable elements", "PresentationOptions prefix"]
 ms.assetid: 391032dd-2fba-4804-bb8a-3b071797a9f4
 caps.latest.revision: 9
 author: dotnet-bot

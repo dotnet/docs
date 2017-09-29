@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugILFrame.SetIP"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugILFrame::SetIP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetIP method, ICorDebugILFrame interface [.NET Framework debugging]"
-  - "ICorDebugILFrame::SetIP method [.NET Framework debugging]"
+api_name: ["ICorDebugILFrame.SetIP"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugILFrame::SetIP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetIP method, ICorDebugILFrame interface [.NET Framework debugging]", "ICorDebugILFrame::SetIP method [.NET Framework debugging]"]
 ms.assetid: 23f38dc1-85e4-4263-9235-2d05bbb6a833
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

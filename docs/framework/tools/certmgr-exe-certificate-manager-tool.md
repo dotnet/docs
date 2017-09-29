@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "certificates, managing"
-  - "CRLs"
-  - "certificate trust lists"
-  - "Certmgr.exe"
-  - "Certificate Manager tool"
-  - "CTLs"
-  - "certificate revocation lists"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["certificates, managing", "CRLs", "certificate trust lists", "Certmgr.exe", "Certificate Manager tool", "CTLs", "certificate revocation lists"]
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
 caps.latest.revision: 27
 author: "rpetrusha"

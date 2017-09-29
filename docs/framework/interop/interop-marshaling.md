@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "marshaling, COM interop"
-  - "interop marshaling"
-  - "interop marshaling, about interop marshaling"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["marshaling, COM interop", "interop marshaling", "interop marshaling, about interop marshaling"]
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
 caps.latest.revision: 22
 author: "rpetrusha"

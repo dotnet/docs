@@ -5,30 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "code compilers"
-  - "CodeDOM, generating source code"
-  - "Code Document Object Model, graphs"
-  - "templated code generation"
-  - "source code, generating"
-  - "dynamically representing source code"
-  - "generating CodeDOM graphs"
-  - "Code Document Object Model, generating source code"
-  - "translating language to language"
-  - "compiling assemblies"
-  - "generating source code in multiple languages"
-  - "graphing with CodeDOM"
-  - "dynamic compilation"
-  - "assemblies [.NET Framework], CodeDOM"
-  - "source code generation"
-  - "outputting source code by CodeDOM"
-  - "code generators"
-  - "compiling source code, multiple languages"
-  - "CodeDOM, graphs"
+helpviewer_keywords: ["code compilers", "CodeDOM, generating source code", "Code Document Object Model, graphs", "templated code generation", "source code, generating", "dynamically representing source code", "generating CodeDOM graphs", "Code Document Object Model, generating source code", "translating language to language", "compiling assemblies", "generating source code in multiple languages", "graphing with CodeDOM", "dynamic compilation", "assemblies [.NET Framework], CodeDOM", "source code generation", "outputting source code by CodeDOM", "code generators", "compiling source code, multiple languages", "CodeDOM, graphs"]
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
 caps.latest.revision: 20
 author: "rpetrusha"

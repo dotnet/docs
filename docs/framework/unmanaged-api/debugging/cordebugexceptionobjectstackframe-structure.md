@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorDebugExceptionObjectStackFrame"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorDebugExceptionObjectStackFrame"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorDebugExceptionObjectStackFrame structure [.NET Framework debugging]"
+api_name: ["CorDebugExceptionObjectStackFrame"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorDebugExceptionObjectStackFrame"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorDebugExceptionObjectStackFrame structure [.NET Framework debugging]"]
 ms.assetid: 542cdd81-5ae7-4361-b0ef-1ae4775df258
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

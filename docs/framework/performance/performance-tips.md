@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "C# language, performance"
-  - "performance [C#]"
-  - "Visual Basic, performance"
-  - "performance [Visual Basic]"
+helpviewer_keywords: ["C# language, performance", "performance [C#]", "Visual Basic, performance", "performance [Visual Basic]"]
 ms.assetid: ae275793-857d-4102-9095-b4c2a02d57f4
 caps.latest.revision: 36
 author: "BillWagner"

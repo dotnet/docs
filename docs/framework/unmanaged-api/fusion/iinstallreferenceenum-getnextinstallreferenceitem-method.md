@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IInstallReferenceEnum.GetNextInstallReferenceItem"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IInstallReferenceEnum::GetNextInstallReferenceItem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IInstallReferenceEnum::GetNextInstallReferenceItem method [.NET Framework fusion]"
-  - "GetNextInstallReferenceItem method [.NET Framework fusion]"
+api_name: ["IInstallReferenceEnum.GetNextInstallReferenceItem"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IInstallReferenceEnum::GetNextInstallReferenceItem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IInstallReferenceEnum::GetNextInstallReferenceItem method [.NET Framework fusion]", "GetNextInstallReferenceItem method [.NET Framework fusion]"]
 ms.assetid: ce969c9d-6538-4c34-8784-148ffd99fe7a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

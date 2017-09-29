@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<NetFx40_PInvokeStackResilience> element"
-  - "NetFx40_PInvokeStackResilience element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<NetFx40_PInvokeStackResilience> element", "NetFx40_PInvokeStackResilience element"]
 ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
 caps.latest.revision: 8
 author: "rpetrusha"

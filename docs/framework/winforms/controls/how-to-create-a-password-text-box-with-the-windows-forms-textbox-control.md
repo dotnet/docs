@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "TextBox control [Windows Forms], entering passwords"
-  - "password boxes, creating"
-  - "PasswordChar property in text boxes"
-  - "passwords, input mask"
-  - "passwords, password text box"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["TextBox control [Windows Forms], entering passwords", "password boxes [Windows Forms], creating", "PasswordChar property in text boxes", "passwords, input mask", "passwords, password text box"]
 ms.assetid: d105d6b9-3d50-44cd-80d8-2c0e2f486727
 caps.latest.revision: 13
 author: dotnet-bot

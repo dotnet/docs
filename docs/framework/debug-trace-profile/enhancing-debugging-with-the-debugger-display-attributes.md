@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "debugger, display attributes"
-  - "DebuggerTypeProxyAttribute attribute"
-  - "debugging [.NET Framework], debugger display attributes"
-  - "DebuggerDisplayAttribute attribute"
-  - "display attributes for debugger"
-  - "DebuggerBrowsableAttribute attribute"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["debugger, display attributes", "DebuggerTypeProxyAttribute attribute", "debugging [.NET Framework], debugger display attributes", "DebuggerDisplayAttribute attribute", "display attributes for debugger", "DebuggerBrowsableAttribute attribute"]
 ms.assetid: 72bb7aa9-459b-42c4-9163-9312fab4c410
 caps.latest.revision: 7
 author: "mairaw"

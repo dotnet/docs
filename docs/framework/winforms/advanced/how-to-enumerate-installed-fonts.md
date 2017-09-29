@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "fonts, enumerating installed"
-  - "examples [Windows Forms], fonts"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["fonts [Windows Forms], enumerating installed", "examples [Windows Forms], fonts"]
 ms.assetid: 26d74ef5-0f39-4eeb-8d20-00e66e014abe
 caps.latest.revision: 16
 author: dotnet-bot

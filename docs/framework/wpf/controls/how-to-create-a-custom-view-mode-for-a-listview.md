@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ListView controls, creating custom View mode"
+helpviewer_keywords: ["ListView controls [WPF], creating custom View mode"]
 ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
 caps.latest.revision: 13
 author: dotnet-bot

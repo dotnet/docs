@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRErrorReportingManager.BeginCustomDump"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRErrorReportingManager::BeginCustomDump"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRErrorReportingManager::BeginCustomDump method [.NET Framework hosting]"
-  - "BeginCustomDump method"
+api_name: ["ICLRErrorReportingManager.BeginCustomDump"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRErrorReportingManager::BeginCustomDump"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRErrorReportingManager::BeginCustomDump method [.NET Framework hosting]", "BeginCustomDump method"]
 ms.assetid: 93424a87-ba13-4fa1-b4dc-69d44437b7ae
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

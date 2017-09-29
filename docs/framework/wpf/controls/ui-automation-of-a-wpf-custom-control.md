@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "custom controls [WPF], applying UI automation"
-  - "accessibility [WPF], applying to custom controls"
-  - "custom controls [WPF], improving accessibility"
-  - "UI Automation [WPF], using with custom controls"
+helpviewer_keywords: ["custom controls [WPF], applying UI automation", "accessibility [WPF], applying to custom controls", "custom controls [WPF], improving accessibility", "UI Automation [WPF], using with custom controls"]
 ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
 caps.latest.revision: 34
 author: dotnet-bot

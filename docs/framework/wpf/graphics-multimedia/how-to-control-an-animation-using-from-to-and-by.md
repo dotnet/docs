@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "animation, From/to/by"
-  - "basic animation"
-  - "animation, basic animation"
-  - "From/to/by animation"
+helpviewer_keywords: ["animation [WPF], From/to/by", "basic animation", "animation [WPF], basic animation", "From/to/by animation"]
 ms.assetid: 59afba57-6fc1-44c8-987e-8a5f4142adad
 caps.latest.revision: 11
 author: dotnet-bot

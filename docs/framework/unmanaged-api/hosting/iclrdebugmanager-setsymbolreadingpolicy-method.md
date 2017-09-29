@@ -5,27 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRDebugManager.SetSymbolReadingPolicy"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRDebugManager::SetSymbolReadingPolicy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRDebugManager, SetSymbolREadingPolicy method"
-  - "SetSymbolReadingPolicy method [.NET Framework hosting]"
-  - "ICLRDebugManager::SetSymbolReadingPolicy method [.NET Framework hosting]"
+api_name: ["ICLRDebugManager.SetSymbolReadingPolicy"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRDebugManager::SetSymbolReadingPolicy"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRDebugManager, SetSymbolREadingPolicy method", "SetSymbolReadingPolicy method [.NET Framework hosting]", "ICLRDebugManager::SetSymbolReadingPolicy method [.NET Framework hosting]"]
 ms.assetid: bd921fa2-d377-4d79-acfc-64c38d4dcae9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

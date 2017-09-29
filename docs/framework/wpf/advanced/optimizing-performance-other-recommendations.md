@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Terminal Services rendering"
-  - "opacity"
-  - "hit-test objects [WPF]"
-  - "ScrollBarVisibility enumeration"
-  - "brushes, performance"
+helpviewer_keywords: ["Terminal Services rendering", "opacity", "hit-test objects [WPF]", "ScrollBarVisibility enumeration", "brushes [WPF], performance"]
 ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
 caps.latest.revision: 20
 author: dotnet-bot

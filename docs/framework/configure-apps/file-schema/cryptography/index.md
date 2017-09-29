@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "configuration schema [.NET Framework], cryptography"
-  - "elements [.NET Framework], cryptography"
-  - "schema configuration settings"
-  - "cryptography, settings schema"
-  - "cryptography, mapping algorithm names"
-  - "configuration sections [.NET Framework]"
-  - "configuration settings [.NET Framework], cryptography"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["configuration schema [.NET Framework], cryptography", "elements [.NET Framework], cryptography", "schema configuration settings", "cryptography, settings schema", "cryptography, mapping algorithm names", "configuration sections [.NET Framework]", "configuration settings [.NET Framework], cryptography"]
 ms.assetid: 1f55050a-b2a3-4868-a3c0-da20826150f3
 caps.latest.revision: 10
 author: "mcleblanc"

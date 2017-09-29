@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "metadata [WCF], exporting and importing"
+helpviewer_keywords: ["metadata [WCF], exporting and importing"]
 ms.assetid: 614a75bb-e0b0-4c95-b6d8-02cb5e5ddb38
 caps.latest.revision: 19
 author: "Erikre"

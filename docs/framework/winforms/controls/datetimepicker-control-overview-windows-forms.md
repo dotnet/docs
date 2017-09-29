@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DateTimePicker"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DateTimePicker control [Windows Forms], about"
-  - "date and time picker controls"
+f1_keywords: ["DateTimePicker"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DateTimePicker control [Windows Forms], about", "date and time picker controls"]
 ms.assetid: 501af106-e9fc-4efc-b9b3-c9d8dcaf8c5c
 caps.latest.revision: 6
 author: dotnet-bot

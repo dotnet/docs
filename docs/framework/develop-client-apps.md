@@ -5,21 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "client application services"
-  - "applications [Windows Forms]"
-  - "Windows Presentation Foundation, in Visual Studio"
-  - "WPF, in Visual Studio"
-  - "Windows applications"
-  - "rich client applications"
-  - ".NET applications, Windows applications"
-  - "Visual Basic code, creating applications"
-  - "Visual C#, creating applications"
-  - "client/server applications, Windows applications"
+helpviewer_keywords: ["client application services", "applications [Windows Forms]", "Windows Presentation Foundation, in Visual Studio", "WPF, in Visual Studio", "Windows applications", "rich client applications", ".NET applications, Windows applications", "Visual Basic code, creating applications", "Visual C#, creating applications", "client/server applications, Windows applications"]
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
 caps.latest.revision: 24
 author: dotnet-bot

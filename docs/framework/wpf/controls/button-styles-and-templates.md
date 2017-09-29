@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "states [WPF], Button"
-  - "parts [WPF], Button"
-  - "styles [WPF], Button"
-  - "Button [WPF], styles and templates"
-  - "templates [WPF], Button"
-  - "ControlTemplate [WPF], Button"
+helpviewer_keywords: ["states [WPF], Button", "parts [WPF], Button", "styles [WPF], Button", "Button [WPF], styles and templates", "templates [WPF], Button", "ControlTemplate [WPF], Button"]
 ms.assetid: e223c759-f8c4-4717-acfb-b1e40bdf5f3b
 caps.latest.revision: 25
 author: dotnet-bot

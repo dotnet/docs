@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ControlTemplate [WPF], DatePicker"
-  - "DatePicker [WPF], styles and templates"
-  - "templates [WPF], DatePicker"
-  - "parts [WPF], DatePicker"
-  - "styles [WPF], DatePicker"
-  - "states [WPF], DatePicker"
+helpviewer_keywords: ["ControlTemplate [WPF], DatePicker", "DatePicker [WPF], styles and templates", "templates [WPF], DatePicker", "parts [WPF], DatePicker", "styles [WPF], DatePicker", "states [WPF], DatePicker"]
 ms.assetid: c430a657-692f-44bd-a549-2341f92d6115
 caps.latest.revision: 8
 author: dotnet-bot

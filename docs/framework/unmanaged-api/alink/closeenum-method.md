@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CloseEnum"
-  - "IALink.CloseEnum"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CloseEnum"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CloseEnum method"
+api_name: ["CloseEnum", "IALink.CloseEnum"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["CloseEnum"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CloseEnum method"]
 ms.assetid: aa4a091e-13fe-4264-91de-e12f1c767c87
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

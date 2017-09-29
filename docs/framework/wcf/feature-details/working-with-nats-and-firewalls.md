@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "firewalls [WCF]"
-  - "NATs [WCF]"
+helpviewer_keywords: ["firewalls [WCF]", "NATs [WCF]"]
 ms.assetid: 74db0632-1bf0-428b-89c8-bd53b64332e7
 caps.latest.revision: 12
 author: "Erikre"

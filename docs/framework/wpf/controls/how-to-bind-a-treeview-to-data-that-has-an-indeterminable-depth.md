@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TreeView control [WPF], binding to data of indeterminate depth"
+helpviewer_keywords: ["TreeView control [WPF], binding to data of indeterminate depth"]
 ms.assetid: daddcd74-1b0f-4ffd-baeb-ec934c5e0f53
 caps.latest.revision: 10
 author: dotnet-bot

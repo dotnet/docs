@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "security [WCF], auditing events"
+helpviewer_keywords: ["security [WCF], auditing events"]
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
 caps.latest.revision: 19
 author: "BrucePerlerMS"

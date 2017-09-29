@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IGCThreadControl"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IGCThreadControl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IGCThreadControl interface [.NET Framework hosting]"
+api_name: ["IGCThreadControl"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IGCThreadControl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IGCThreadControl interface [.NET Framework hosting]"]
 ms.assetid: 3ff04d75-85ac-4df9-886d-dbaa037c0552
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, Progress Bar"
-  - "ProgressBar control type"
-  - "UI Automation, Progress Bar control type"
+helpviewer_keywords: ["control types, Progress Bar", "ProgressBar control type", "UI Automation, Progress Bar control type"]
 ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
 caps.latest.revision: 21
 author: "Xansky"

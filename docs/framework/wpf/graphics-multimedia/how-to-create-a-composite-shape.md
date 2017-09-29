@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "shapes, composite"
-  - "composite shapes"
-  - "graphics, composite shapes"
+helpviewer_keywords: ["shapes [WPF], composite", "composite shapes", "graphics [WPF], composite shapes"]
 ms.assetid: 8e5c7ef4-d7ed-4c43-afc9-ca01325c300b
 caps.latest.revision: 10
 author: dotnet-bot

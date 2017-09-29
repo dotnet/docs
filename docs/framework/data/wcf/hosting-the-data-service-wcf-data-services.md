@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "HTML"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "WCF Data Services, configuring"
-  - "WCF Data Services, Windows Communication Foundation"
+dev_langs: ["HTML", "VB", "CSharp", "C++"]
+helpviewer_keywords: ["WCF Data Services, configuring", "WCF Data Services, Windows Communication Foundation"]
 ms.assetid: b48f42ce-22ce-4f8d-8f0d-f7ddac9125ee
 caps.latest.revision: 3
 author: "Erikre"

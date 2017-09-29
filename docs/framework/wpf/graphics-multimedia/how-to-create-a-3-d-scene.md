@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "scenes, 3-D"
-  - "creating, 3-D scenes"
-  - "3-D scenes"
+helpviewer_keywords: ["scenes [WPF], 3-D", "3-D scenes"]
 ms.assetid: adb4a598-71a2-4dd5-b677-ea3fc11b78b2
 caps.latest.revision: 10
 author: dotnet-bot

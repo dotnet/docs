@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Toolbox [Windows Forms], adding bitmaps for custom controls"
-  - "custom controls [Windows Forms], Toolbox bitmaps"
-  - "bitmaps [Windows Forms], custom controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Toolbox [Windows Forms], adding bitmaps for custom controls", "custom controls [Windows Forms], Toolbox bitmaps", "bitmaps [Windows Forms], custom controls"]
 ms.assetid: 0ed0840a-616d-41ba-a27d-3573241932ad
 caps.latest.revision: 20
 author: dotnet-bot

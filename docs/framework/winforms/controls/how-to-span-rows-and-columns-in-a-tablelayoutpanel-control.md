@@ -5,20 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "net.ComponentModel.StyleCollectionEditor.TLP.SpanRowsColumns"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "columns [Windows Forms], spanning"
-  - "merging cells"
-  - "TableLayoutPanel control [Windows Forms], spanning rows and columns"
-  - "rows [Windows Forms], spanning"
-  - "cells, merging"
+f1_keywords: ["net.ComponentModel.StyleCollectionEditor.TLP.SpanRowsColumns"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["columns [Windows Forms], spanning", "merging cells", "TableLayoutPanel control [Windows Forms], spanning rows and columns", "rows [Windows Forms], spanning", "cells, merging"]
 ms.assetid: a8a2fdd3-a848-48b0-a4cd-4e85ebded87e
 caps.latest.revision: 8
 author: dotnet-bot

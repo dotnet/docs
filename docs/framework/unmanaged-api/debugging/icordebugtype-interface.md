@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugType"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugType interface [.NET Framework debugging]"
+api_name: ["ICorDebugType"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugType interface [.NET Framework debugging]"]
 ms.assetid: 94e02e31-67ea-4b00-8148-a46740a4571d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

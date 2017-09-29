@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "event handlers, adding"
-  - "XAML, adding event handlers"
+helpviewer_keywords: ["event handlers [WPF], adding", "XAML [WPF], adding event handlers"]
 ms.assetid: 269c61e0-6bd9-4291-9bed-1c5ee66da486
 caps.latest.revision: 16
 author: dotnet-bot

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Save File dialog box"
-  - "SaveFileDialog component"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Save File dialog box", "SaveFileDialog component"]
 ms.assetid: 6f5d9321-37d7-4448-ac4c-a33c42b2a766
 caps.latest.revision: 9
 author: dotnet-bot

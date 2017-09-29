@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], arranging with TableLayoutPanel"
-  - "TableLayoutPanel control [Windows Forms], walkthroughs"
-  - "Windows Forms controls, arranging"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], arranging with TableLayoutPanel", "TableLayoutPanel control [Windows Forms], walkthroughs", "Windows Forms controls, arranging"]
 ms.assetid: d474885e-12cc-4ab7-b997-2a23a643049b
 caps.latest.revision: 28
 author: dotnet-bot

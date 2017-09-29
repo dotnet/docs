@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "extensibility [.NET Framework], add-ins"
-  - "add-ins [.NET Framework]"
-  - "add-ins [.NET Framework], about"
-  - "hosts [.NET Framework], compared to add-ins"
-  - ".NET Framework, add-ins"
-  - "add-in pipeline [.NET Framework], about"
-  - "add-ins [.NET Framework], compared to hosts"
-  - ".NET Framework, extensibility"
-  - "versioning [.NET Framework], add-ins"
+helpviewer_keywords: ["extensibility [.NET Framework], add-ins", "add-ins [.NET Framework]", "add-ins [.NET Framework], about", "hosts [.NET Framework], compared to add-ins", ".NET Framework, add-ins", "add-in pipeline [.NET Framework], about", "add-ins [.NET Framework], compared to hosts", ".NET Framework, extensibility", "versioning [.NET Framework], add-ins"]
 ms.assetid: 8dd45b02-7218-40f9-857d-40d7b98b850b
 caps.latest.revision: 42
 author: "rpetrusha"

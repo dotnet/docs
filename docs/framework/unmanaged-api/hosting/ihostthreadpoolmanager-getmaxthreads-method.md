@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostThreadPoolManager.GetMaxThreads"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostThreadPoolManager::GetMaxThreads"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostThreadPoolManager::GetMaxThreads method [.NET Framework hosting]"
-  - "GetMaxThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
+api_name: ["IHostThreadPoolManager.GetMaxThreads"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostThreadPoolManager::GetMaxThreads"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostThreadPoolManager::GetMaxThreads method [.NET Framework hosting]", "GetMaxThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"]
 ms.assetid: db268876-6178-4a81-aca3-318ee7f96001
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Listener object types"
-  - "listeners"
-  - "Trace class, listeners"
-  - "trace listeners, about trace listeners"
-  - "Listeners collection"
-  - "trace listeners"
-  - "tracing [.NET Framework], trace listeners"
-  - "logs, trace listeners"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Listener object types", "listeners", "Trace class, listeners", "trace listeners, about trace listeners", "Listeners collection", "trace listeners", "tracing [.NET Framework], trace listeners", "logs, trace listeners"]
 ms.assetid: 444b0d33-67ea-4c36-9e94-79c50f839025
 caps.latest.revision: 13
 author: "mairaw"

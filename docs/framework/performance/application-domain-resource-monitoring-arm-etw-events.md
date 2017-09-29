@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ETW, application domain monitoring events"
-  - "application domain monitoring events [.NET Framework]"
+helpviewer_keywords: ["ETW, application domain monitoring events", "application domain monitoring events [.NET Framework]"]
 ms.assetid: d38ff268-a2ee-434e-b504-d570880e0289
 caps.latest.revision: 8
 author: "mairaw"

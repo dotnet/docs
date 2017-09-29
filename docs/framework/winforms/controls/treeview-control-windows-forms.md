@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "checked list items, Windows Forms controls"
-  - "list controls, Windows Forms"
-  - "list items, Windows Forms controls that display"
-  - "TreeView control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["checked list items, Windows Forms controls", "list controls [Windows Forms], Windows Forms", "list items, Windows Forms controls that display", "TreeView control [Windows Forms]"]
 ms.assetid: 879438b4-4eac-45c6-b345-0229c9b21ab0
 caps.latest.revision: 16
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TreeView control [WPF], finding a TreeViewItem"
-  - "TreeViewItem [WPF], finding"
+helpviewer_keywords: ["TreeView control [WPF], finding a TreeViewItem", "TreeViewItem [WPF], finding"]
 ms.assetid: 72ecd40c-3939-4e01-b617-5e9daa6074d9
 caps.latest.revision: 5
 author: dotnet-bot

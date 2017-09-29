@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, List"
-  - "List control type"
-  - "UI Automation, List control type"
+helpviewer_keywords: ["control types, List", "List control type", "UI Automation, List control type"]
 ms.assetid: 0e959fcb-50f2-413b-948d-7167d279bc11
 caps.latest.revision: 20
 author: "Xansky"

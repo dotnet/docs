@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolTip component [Windows Forms], delay values"
-  - "tooltips [Windows Forms], delay values"
-  - "examples [Windows Forms], tooltips"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolTip component [Windows Forms], delay values", "tooltips [Windows Forms], delay values", "examples [Windows Forms], tooltips"]
 ms.assetid: 08979ba7-dd84-477b-ab17-8d06e759be99
 caps.latest.revision: 12
 author: dotnet-bot

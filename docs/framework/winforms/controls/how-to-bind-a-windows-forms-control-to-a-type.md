@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], binding to a type"
-  - "BindingSource component [Windows Forms], binding to a type"
-  - "types [Windows Forms], binding controls to"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], binding to a type", "BindingSource component [Windows Forms], binding to a type", "types [Windows Forms], binding controls to"]
 ms.assetid: 94faeebb-d2bc-45d6-86d7-96a42661b43d
 caps.latest.revision: 19
 author: dotnet-bot

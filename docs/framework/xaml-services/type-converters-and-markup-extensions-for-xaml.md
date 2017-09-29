@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML [XAML Services], type converter services"
-  - "XAML [XAML Services], value converters"
-  - "XAML [XAML Services], markup extension services"
-  - "value converters for XAML [XAML Services]"
-  - "XAML [XAML Services], service context"
+helpviewer_keywords: ["XAML [XAML Services], type converter services", "XAML [XAML Services], value converters", "XAML [XAML Services], markup extension services", "value converters for XAML [XAML Services]", "XAML [XAML Services], service context"]
 ms.assetid: db07a952-05ce-4aa4-b6f9-aac7397d0326
 caps.latest.revision: 13
 author: "wadepickett"

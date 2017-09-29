@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.DefineMethodImpl"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::DefineMethodImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DefineMethodImpl method [.NET Framework metadata]"
-  - "IMetaDataEmit::DefineMethodImpl method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.DefineMethodImpl"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::DefineMethodImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DefineMethodImpl method [.NET Framework metadata]", "IMetaDataEmit::DefineMethodImpl method [.NET Framework metadata]"]
 ms.assetid: 9dcc8b3d-33ee-4c7c-8d6f-322c57b94a0f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugModule.GetBaseAddress"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugModule::GetBaseAddress"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetBaseAddress method [.NET Framework debugging]"
-  - "ICorDebugModule::GetBaseAddress method [.NET Framework debugging]"
+api_name: ["ICorDebugModule.GetBaseAddress"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugModule::GetBaseAddress"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetBaseAddress method [.NET Framework debugging]", "ICorDebugModule::GetBaseAddress method [.NET Framework debugging]"]
 ms.assetid: 26a82815-1982-4eb7-92d1-5c3d318d5be4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

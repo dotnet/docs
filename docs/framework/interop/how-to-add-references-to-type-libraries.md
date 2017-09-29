@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "importing type library"
-  - "interop assemblies, generating"
-  - "type libraries"
-  - "COM interop, importing type library"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["importing type library", "interop assemblies, generating", "type libraries", "COM interop, importing type library"]
 ms.assetid: f5cfa6ba-cc25-4017-82cd-ba7391859113
 caps.latest.revision: 12
 author: "rpetrusha"

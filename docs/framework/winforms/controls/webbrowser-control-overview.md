@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "WebBrowser"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "WebBrowser control [Windows Forms], about"
-  - "Web pages, displaying in applications"
+f1_keywords: ["WebBrowser"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["WebBrowser control [Windows Forms], about", "Web pages [Windows Forms], displaying in applications"]
 ms.assetid: 6e3e1cc2-9c48-4136-9659-e99e4e60b7e9
 caps.latest.revision: 15
 author: dotnet-bot

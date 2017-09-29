@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], object binding"
-  - "data grids, object binding"
-  - "object binding, DataGridView control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], object binding", "data grids [Windows Forms], object binding", "object binding [Windows Forms], DataGridView control"]
 ms.assetid: cb8f29fa-577e-4e2b-883f-3a01c6189b9c
 caps.latest.revision: 12
 author: dotnet-bot

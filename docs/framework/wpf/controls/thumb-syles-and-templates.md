@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "states [WPF], Thumb"
-  - "styles [WPF], Thumb"
-  - "templates [WPF], Thumb"
-  - "Thumb [WPF], styles and templates"
-  - "ControlTemplate [WPF], Thumb"
-  - "parts [WPF], Thumb"
+helpviewer_keywords: ["states [WPF], Thumb", "styles [WPF], Thumb", "templates [WPF], Thumb", "Thumb [WPF], styles and templates", "ControlTemplate [WPF], Thumb", "parts [WPF], Thumb"]
 ms.assetid: 86a49235-62d9-414e-923e-53126e3f930a
 caps.latest.revision: 9
 author: dotnet-bot

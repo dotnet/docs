@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TIFF encoding"
-  - "encoding TIFF images"
-  - "encoding image formats"
-  - "decoding TIFF images"
-  - "decoding image formats"
-  - "TIFF decoding"
+helpviewer_keywords: ["TIFF encoding", "encoding TIFF images", "encoding image formats", "decoding TIFF images", "decoding image formats", "TIFF decoding"]
 ms.assetid: 1dfe3209-fc73-40e6-ad1c-71c1c58b3364
 caps.latest.revision: 5
 author: dotnet-bot

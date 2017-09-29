@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "moving elements"
-  - "elements, moving"
-  - "UI Automation, moving elements"
+helpviewer_keywords: ["moving elements", "elements, moving", "UI Automation, moving elements"]
 ms.assetid: 4042cb44-e27e-4a03-ac36-9be1eed65b47
 caps.latest.revision: 19
 author: "Xansky"

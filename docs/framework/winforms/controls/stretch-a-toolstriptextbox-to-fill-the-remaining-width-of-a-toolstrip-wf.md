@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "text boxes, stretching in ToolStrip control [Windows Forms]"
-  - "ToolStrip control [Windows Forms], stretching a text box"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["text boxes [Windows Forms], stretching in ToolStrip control [Windows Forms]", "ToolStrip control [Windows Forms], stretching a text box"]
 ms.assetid: 0e610fbf-85fe-414c-900c-9704a5dd5cc6
 caps.latest.revision: 6
 author: dotnet-bot

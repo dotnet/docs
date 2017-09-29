@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DynamicResource"
-  - "DynamicResourceExtension"
-helpviewer_keywords: 
-  - "XAML, DynamicResource markup extension"
-  - "DynamicResource markup extensions"
+f1_keywords: ["DynamicResource", "DynamicResourceExtension"]
+helpviewer_keywords: ["XAML [WPF], DynamicResource markup extension", "DynamicResource markup extensions [WPF]"]
 ms.assetid: 7324f243-03af-4c2b-b0db-26ac6cdfcbe4
 caps.latest.revision: 16
 author: dotnet-bot

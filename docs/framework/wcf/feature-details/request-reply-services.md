@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation [WCF], request-reply services"
-  - "contracts [WCF], request-reply services"
-  - "WCF [WCF], request-reply services"
-  - "request-reply contracts [WCF]"
+helpviewer_keywords: ["Windows Communication Foundation [WCF], request-reply services", "contracts [WCF], request-reply services", "WCF [WCF], request-reply services", "request-reply contracts [WCF]"]
 ms.assetid: 2fa710f1-47f4-4598-b063-3ab3bd22ebba
 caps.latest.revision: 7
 author: "Erikre"

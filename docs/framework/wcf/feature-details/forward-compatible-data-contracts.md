@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "data contracts [WCF], forward compatibility"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["data contracts [WCF], forward compatibility"]
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9
 caps.latest.revision: 21
 author: "Erikre"

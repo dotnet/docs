@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRAssemblyReferenceList.IsAssemblyReferenceInList"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRAssemblyReferenceList::IsAssemblyReferenceInList"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRAssemblyReferenceList::IsAssemblyReferenceInList method [.NET Framework hosting]"
-  - "IsAssemblyReferenceInList method [.NET Framework hosting]"
+api_name: ["ICLRAssemblyReferenceList.IsAssemblyReferenceInList"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRAssemblyReferenceList::IsAssemblyReferenceInList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRAssemblyReferenceList::IsAssemblyReferenceInList method [.NET Framework hosting]", "IsAssemblyReferenceInList method [.NET Framework hosting]"]
 ms.assetid: 8a570813-21be-407e-92a6-7ae8de3bc728
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "parts [WPF], ListView"
-  - "states [WPF], ListView"
-  - "ControlTemplate [WPF], ListView"
-  - "styles [WPF], ListView"
-  - "ListView [WPF], styles and templates"
-  - "templates [WPF], ListView"
+helpviewer_keywords: ["parts [WPF], ListView", "states [WPF], ListView", "ControlTemplate [WPF], ListView", "styles [WPF], ListView", "ListView [WPF], styles and templates", "templates [WPF], ListView"]
 ms.assetid: d2387356-2171-4785-822a-7247e024b4ee
 caps.latest.revision: 13
 author: dotnet-bot

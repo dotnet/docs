@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "channel model [WCF]"
+helpviewer_keywords: ["channel model [WCF]"]
 ms.assetid: 07a81e11-3911-4632-90d2-cca99825b5bd
 caps.latest.revision: 10
 author: "Erikre"

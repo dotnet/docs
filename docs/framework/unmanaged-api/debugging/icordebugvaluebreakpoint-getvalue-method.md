@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugValueBreakpoint.GetValue"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugValueBreakpoint::GetValue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetValue method, ICorDebugValueBreakpoint interface [.NET Framework debugging]"
-  - "ICorDebugValueBreakpoint::GetValue method [.NET Framework debugging]"
+api_name: ["ICorDebugValueBreakpoint.GetValue"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugValueBreakpoint::GetValue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetValue method, ICorDebugValueBreakpoint interface [.NET Framework debugging]", "ICorDebugValueBreakpoint::GetValue method [.NET Framework debugging]"]
 ms.assetid: 52a73654-bc47-48b6-b2b1-a4456b10140c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

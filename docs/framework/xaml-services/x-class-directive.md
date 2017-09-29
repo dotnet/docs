@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "x:Class"
-  - "xClass"
-  - "Class"
-helpviewer_keywords: 
-  - "Class attribute in XAML [XAML Services]"
-  - "XAML [XAML Services], x:Class attribute"
-  - "x:Class attribute [XAML Services]"
+f1_keywords: ["x:Class", "xClass", "Class"]
+helpviewer_keywords: ["Class attribute in XAML [XAML Services]", "XAML [XAML Services], x:Class attribute", "x:Class attribute [XAML Services]"]
 ms.assetid: bc4a3d8e-76e2-423e-a5d1-159a023e82ec
 caps.latest.revision: 27
 author: "wadepickett"

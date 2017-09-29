@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "path gradients, creating"
-  - "gradients, creating path"
-  - "graphics paths, creating gradient"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["path gradients [Windows Forms], creating", "gradients [Windows Forms], creating path", "graphics paths, creating gradient"]
 ms.assetid: 1948e834-e104-481c-b71d-d8aa9e4d106e
 caps.latest.revision: 19
 author: dotnet-bot

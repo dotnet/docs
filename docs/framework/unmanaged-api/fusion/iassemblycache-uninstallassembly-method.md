@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyCache.UninstallAssembly"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyCache::UninstallAssembly"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UninstallAssembly method [.NET Framework fusion]"
-  - "IAssemblyCache::UninstallAssembly method [.NET Framework fusion]"
+api_name: ["IAssemblyCache.UninstallAssembly"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyCache::UninstallAssembly"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UninstallAssembly method [.NET Framework fusion]", "IAssemblyCache::UninstallAssembly method [.NET Framework fusion]"]
 ms.assetid: 973b2c44-8dfc-40c1-9035-10f4846627e9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IsFrameworkAssembly"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IsFrameworkAssembly"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsFrameworkAssembly function [.NET Framework fusion]"
+api_name: ["IsFrameworkAssembly"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IsFrameworkAssembly"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsFrameworkAssembly function [.NET Framework fusion]"]
 ms.assetid: b0c6f19b-d4fd-4971-88f0-12ffb5793da3
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "attached properties [WPF Designer]"
-  - "Canvas control, attached properties"
+helpviewer_keywords: ["attached properties [WPF Designer]", "Canvas control [WPF], attached properties"]
 ms.assetid: 48f1d25d-3820-4107-a4cc-d6c1e5664a44
 caps.latest.revision: 13
 author: dotnet-bot

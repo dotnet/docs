@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "FieldModifier attribute in XAML [XAML Services]"
-  - "x:FieldModifier attribute [XAML Services]"
-  - "XAML [XAML Services], x:FieldModifier attribute"
+helpviewer_keywords: ["FieldModifier attribute in XAML [XAML Services]", "x:FieldModifier attribute [XAML Services]", "XAML [XAML Services], x:FieldModifier attribute"]
 ms.assetid: ed427cd4-2f35-4d24-bd2f-0fa7b71ec248
 caps.latest.revision: 15
 author: "wadepickett"

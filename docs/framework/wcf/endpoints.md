@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "endpoints [WCF]"
+helpviewer_keywords: ["endpoints [WCF]"]
 ms.assetid: bd0c310f-dd9f-4081-9be2-3db5909850b6
 caps.latest.revision: 13
 author: "Erikre"

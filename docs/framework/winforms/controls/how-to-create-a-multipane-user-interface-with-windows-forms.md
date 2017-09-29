@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "SplitContainer control [Windows Forms], examples"
-  - "ListView control [Windows Forms], examples"
-  - "RichTextBox control [Windows Forms], examples"
-  - "Panel control [Windows Forms], examples"
-  - "TreeView control [Windows Forms], examples"
-  - "Splitter control [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["SplitContainer control [Windows Forms], examples", "ListView control [Windows Forms], examples", "RichTextBox control [Windows Forms], examples", "Panel control [Windows Forms], examples", "TreeView control [Windows Forms], examples", "Splitter control [Windows Forms], examples"]
 ms.assetid: e79f6bcc-3740-4d1e-b46a-c5594d9b7327
 caps.latest.revision: 20
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged interfaces [.NET Framework], profiling"
-  - "profiling interfaces [.NET Framework]"
-  - "interfaces [.NET Framework profiling]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged interfaces [.NET Framework], profiling", "profiling interfaces [.NET Framework]", "interfaces [.NET Framework profiling]"]
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
 caps.latest.revision: 31
 author: "mairaw"

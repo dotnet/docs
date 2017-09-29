@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostSecurityManager.GetSecurityContext"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostSecurityManager::GetSecurityContext"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetSecurityContext method [.NET Framework hosting]"
-  - "IHostSecurityManager::GetSecurityContext method [.NET Framework hosting]"
+api_name: ["IHostSecurityManager.GetSecurityContext"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostSecurityManager::GetSecurityContext"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetSecurityContext method [.NET Framework hosting]", "IHostSecurityManager::GetSecurityContext method [.NET Framework hosting]"]
 ms.assetid: 958970d6-f6a2-4b84-b32a-f555cbaf8f61
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

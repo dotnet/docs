@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "initializing trace listeners"
-  - "trace listeners, creating"
-  - "trace listeners, initializing"
-  - "tracing [.NET Framework], trace listeners"
-  - "logs, trace listeners"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["initializing trace listeners", "trace listeners, creating", "trace listeners, initializing", "tracing [.NET Framework], trace listeners", "logs, trace listeners"]
 ms.assetid: 21726de1-61ee-4fdc-9dd0-3be49324d066
 caps.latest.revision: 12
 author: "mairaw"

@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "pointers, setting [Windows Forms]"
-  - "mouse pointers"
-  - "mouse cursors"
-  - "mouse pointers, setting [Windows Forms]"
-  - "cursors, setting [Windows Forms]"
-  - "mouse, cursors"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["pointers, setting [Windows Forms]", "mouse pointers", "mouse cursors", "mouse pointers, setting [Windows Forms]", "cursors, setting [Windows Forms]", "mouse, cursors"]
 ms.assetid: c3400d85-de5b-42e8-abc3-d6088d69ee53
 caps.latest.revision: 12
 author: dotnet-bot

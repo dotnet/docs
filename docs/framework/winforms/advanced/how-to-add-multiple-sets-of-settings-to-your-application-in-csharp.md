@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "application settings [Windows Forms], multiple sets"
-  - "application settings [Windows Forms], C#"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["application settings [Windows Forms], multiple sets", "application settings [Windows Forms], C#"]
 ms.assetid: 45007ac6-cf07-4be7-bc38-3f0ef962faf9
 caps.latest.revision: 8
 author: dotnet-bot

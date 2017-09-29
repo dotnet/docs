@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "list items"
-  - "Details view"
-  - "ListView control [Windows Forms], adding ListSubItems"
-  - "subitems"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["list items", "Details view", "ListView control [Windows Forms], adding ListSubItems", "subitems"]
 ms.assetid: e465f044-cde7-4fd9-a687-788a73a0f554
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms], built-in rafting"
-  - "ToolStrip control [Windows Forms], built-in rafting"
-  - "ToolStripContainer control [Windows Forms], adding to Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms], built-in rafting", "ToolStrip control [Windows Forms], built-in rafting", "ToolStripContainer control [Windows Forms], adding to Windows Forms"]
 ms.assetid: d0f55095-a833-453e-be5a-644906d75d54
 caps.latest.revision: 9
 author: dotnet-bot

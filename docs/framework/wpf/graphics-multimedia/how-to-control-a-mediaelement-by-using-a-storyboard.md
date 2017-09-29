@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "multimedia, controlling playback of media with Storyboards"
-  - "controlling playback of media, with Storyboards"
-  - "Storyboards, controlling playback of media with"
-  - "media, controlling playback with Storyboards"
-  - "playback of media, controlling with Storyboards"
+helpviewer_keywords: ["multimedia [WPF], controlling playback of media with Storyboards", "controlling playback of media [WPF], with Storyboards", "Storyboards [WPF], controlling playback of media with", "media [WPF], controlling playback with Storyboards", "playback of media [WPF], controlling with Storyboards"]
 ms.assetid: 6128ca77-b826-4e36-b968-6f237157c543
 caps.latest.revision: 12
 author: dotnet-bot

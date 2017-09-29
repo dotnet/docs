@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "PNG encoding"
-  - "decoding PNG images"
-  - "PNG decoding"
-  - "encoding image formats"
-  - "decoding image formats"
-  - "encoding PNG images"
+helpviewer_keywords: ["PNG encoding", "decoding PNG images", "PNG decoding", "encoding image formats", "decoding image formats", "encoding PNG images"]
 ms.assetid: 3d31d186-af73-47f0-b5a7-c26ae46409a6
 caps.latest.revision: 9
 author: dotnet-bot

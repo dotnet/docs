@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo.GetClassFromToken"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo::GetClassFromToken"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo::GetClassFromToken method [.NET Framework profiling]"
-  - "GetClassFromToken method, ICorProfilerInfo interface [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo.GetClassFromToken"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo::GetClassFromToken"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo::GetClassFromToken method [.NET Framework profiling]", "GetClassFromToken method, ICorProfilerInfo interface [.NET Framework profiling]"]
 ms.assetid: 0afc1197-2a5b-424f-8b82-9cb59a7e00db
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

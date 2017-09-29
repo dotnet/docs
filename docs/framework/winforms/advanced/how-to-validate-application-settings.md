@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "validating application settings"
-  - "application settings, Windows Forms"
-  - "application settings, validating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["validating application settings", "application settings, Windows Forms", "application settings, validating"]
 ms.assetid: 9f145ada-4267-436a-aa4c-c4dcffd0afb7
 caps.latest.revision: 17
 author: dotnet-bot

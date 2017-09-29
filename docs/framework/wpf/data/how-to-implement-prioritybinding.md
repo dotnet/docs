@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "classes, PriorityBinding"
-  - "data binding, PriorityBinding class"
-  - "PriorityBinding class"
+helpviewer_keywords: ["data binding [WPF], PriorityBinding class"]
 ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
 caps.latest.revision: 13
 author: dotnet-bot

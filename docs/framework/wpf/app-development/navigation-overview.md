@@ -5,29 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "loose XAML files [WPF]"
-  - "windows [WPF]"
-  - "Start page [WPF]"
-  - "HTML files [WPF]"
-  - "structured navigation [WPF]"
-  - "fragment navigation [WPF]"
-  - "URIs (Uniform Resource Identifiers)"
-  - "custom objects [WPF]"
-  - "Uniform Resource Identifiers (URIs)"
-  - "pages [WPF]"
-  - "frames [WPF]"
-  - "navigation hosts [WPF]"
-  - "journals [WPF]"
-  - "lifetimes [WPF]"
-  - "retaining content state [WPF]"
-  - "content state [WPF]"
-  - "programmatic navigation [WPF]"
-  - "hyperlinks [WPF]"
+helpviewer_keywords: ["loose XAML files [WPF]", "windows [WPF]", "Start page [WPF]", "HTML files [WPF]", "structured navigation [WPF]", "fragment navigation [WPF]", "URIs (Uniform Resource Identifiers)", "custom objects [WPF]", "Uniform Resource Identifiers (URIs)", "pages [WPF]", "frames [WPF]", "navigation hosts [WPF]", "journals [WPF]", "lifetimes [WPF]", "retaining content state [WPF]", "content state [WPF]", "programmatic navigation [WPF]", "hyperlinks [WPF]"]
 ms.assetid: 86ad2143-606a-4e34-bf7e-51a2594248b8
 caps.latest.revision: 69
 author: dotnet-bot

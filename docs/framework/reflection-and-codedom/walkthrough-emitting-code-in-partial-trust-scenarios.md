@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "reflection emit, anonymously hosted dynamic methods"
-  - "partial trust, reflection"
-  - "partial trust, emitting dynamic methods"
-  - "reflection emit, partial trust scenarios"
-  - "anonymously hosted dynamic methods [.NET Framework]"
-  - "emitting dynamic assemblies,partial trust scenarios"
-  - "reflection emit, dynamic methods"
-  - "dynamic methods"
+helpviewer_keywords: ["reflection emit, anonymously hosted dynamic methods", "partial trust, reflection", "partial trust, emitting dynamic methods", "reflection emit, partial trust scenarios", "anonymously hosted dynamic methods [.NET Framework]", "emitting dynamic assemblies, partial trust scenarios", "reflection emit, dynamic methods", "dynamic methods"]
 ms.assetid: c45be261-2a9d-4c4e-9bd6-27f0931b7d25
 caps.latest.revision: 15
 author: "rpetrusha"

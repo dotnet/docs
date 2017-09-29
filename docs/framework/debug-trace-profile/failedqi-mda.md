@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "failed QueryInterface"
-  - "FailedQI MDA"
-  - "QueryInterface call failures"
-  - "MDAs (managed debugging assistants), failed QueryInterface"
-  - "managed debugging assistants (MDAs), failed QueryInterface"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["failed QueryInterface", "FailedQI MDA", "QueryInterface call failures", "MDAs (managed debugging assistants), failed QueryInterface", "managed debugging assistants (MDAs), failed QueryInterface"]
 ms.assetid: 902dc863-34b3-477c-b433-b8a6bb6133c6
 caps.latest.revision: 15
 author: "mairaw"

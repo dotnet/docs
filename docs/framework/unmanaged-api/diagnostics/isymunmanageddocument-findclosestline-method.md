@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedDocument.FindClosestLine"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedDocument::FindClosestLine"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FindClosestLine method [.NET Framework debugging]"
-  - "ISymUnmanagedDocument::FindClosestLine method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedDocument.FindClosestLine"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedDocument::FindClosestLine"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FindClosestLine method [.NET Framework debugging]", "ISymUnmanagedDocument::FindClosestLine method [.NET Framework debugging]"]
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

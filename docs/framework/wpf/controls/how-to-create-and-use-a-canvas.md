@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, Canvas"
-  - "Canvas control, creating"
-  - "Canvas control, using"
+helpviewer_keywords: ["controls [WPF], Canvas", "Canvas control [WPF], creating", "Canvas control [WPF], using"]
 ms.assetid: 420b9487-9a15-477c-9489-a22a4dec7779
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, GridView"
-  - "controls, ListView"
-  - "ListView controls, sorting GridView columns"
-  - "GridView controls, ListView control"
+helpviewer_keywords: ["controls [WPF], GridView", "controls [WPF], ListView", "ListView controls [WPF], sorting GridView columns", "GridView controls [WPF], ListView control"]
 ms.assetid: 4865d720-d147-40ed-83a7-af7587f8aad8
 caps.latest.revision: 18
 author: dotnet-bot

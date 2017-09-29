@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "events [Windows Forms], order of"
-  - "focus event order"
-  - "application shutdown event order"
-  - "sequence, of events"
-  - "validation events, order of"
-  - "application startup event order"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["events [Windows Forms], order of", "focus event order", "application shutdown event order", "sequence, of events", "validation events, order of", "application startup event order"]
 ms.assetid: e81db09b-4453-437f-b78a-62d7cd5c9829
 caps.latest.revision: 15
 author: dotnet-bot

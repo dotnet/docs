@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "permissions [.NET Framework], reflection"
-  - "MethodInfo parameters"
-  - "reflection, security"
-  - "partial trust,reflection"
-  - "nonpublic members"
-  - "reflection,partial trust"
-  - "link demands"
+helpviewer_keywords: ["permissions [.NET Framework], reflection", "MethodInfo parameters", "reflection, security", "partial trust, reflection", "nonpublic members", "reflection, partial trust", "link demands"]
 ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
 caps.latest.revision: 21
 author: "rpetrusha"

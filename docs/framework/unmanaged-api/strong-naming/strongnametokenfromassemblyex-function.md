@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "StrongNameTokenFromAssemblyEx"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "StrongNameTokenFromAssemblyEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameTokenFromAssemblyEx function [.NET Framework strong naming]"
+api_name: ["StrongNameTokenFromAssemblyEx"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["StrongNameTokenFromAssemblyEx"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameTokenFromAssemblyEx function [.NET Framework strong naming]"]
 ms.assetid: 67a8a9f2-dee3-44b2-a1c0-f307a3bdf90f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

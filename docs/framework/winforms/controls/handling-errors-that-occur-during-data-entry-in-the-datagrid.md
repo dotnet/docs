@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "error handling, DataGridView control"
-  - "data grids, error handling"
-  - "DataGridView control [Windows Forms], error handling"
-  - "data entry, error handling"
-  - "error handling, data entry"
-  - "walkthroughs [Windows Forms], DataGridView control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["error handling, DataGridView control", "data grids [Windows Forms], error handling", "DataGridView control [Windows Forms], error handling", "data entry, error handling", "error handling, data entry", "walkthroughs [Windows Forms], DataGridView control"]
 ms.assetid: 30a68b85-d3af-4946-83c1-1e2d010d0511
 caps.latest.revision: 17
 author: dotnet-bot

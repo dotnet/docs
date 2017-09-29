@@ -5,13 +5,7 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-wpf"
 ms.topic: "article"
-helpviewer_keywords: 
-  - "enabling ink"
-  - "InkCanvas control"
-  - "ink object model"
-  - "tablet pen, events"
-  - "ink, enabling"
-  - "events, tablet pen"
+helpviewer_keywords: ["enabling ink", "InkCanvas control", "ink object model [WPF]", "tablet pen [WPF], events [WPF]", "ink [WPF], enabling", "events [WPF], tablet pen"]
 ms.assetid: 577835be-b145-4226-8570-1d309e9b3901
 caps.latest.revision: 9
 author: dotnet-bot

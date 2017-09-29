@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyCache.CreateAssemblyCacheItem"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyCache::CreateAssemblyCacheItem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAssemblyCache::CreateAssemblyCacheItem method [.NET Framework fusion]"
-  - "CreateAssemblyCacheItem method [.NET Framework fusion]"
+api_name: ["IAssemblyCache.CreateAssemblyCacheItem"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyCache::CreateAssemblyCacheItem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAssemblyCache::CreateAssemblyCacheItem method [.NET Framework fusion]", "CreateAssemblyCacheItem method [.NET Framework fusion]"]
 ms.assetid: 017a7ba5-aaaf-44e2-9cbe-ceebef259df0
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

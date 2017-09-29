@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "security [Windows Forms], file access"
-  - "registry [Windows Forms]"
-  - "data access [Windows Forms]"
-  - "database access (Windows Forms security)"
-  - "data [Windows Forms], secure access"
-  - "file access [Windows Forms]"
-  - "security [Windows Forms], data access"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["security [Windows Forms], file access", "registry [Windows Forms]", "data access [Windows Forms]", "database access (Windows Forms security)", "data [Windows Forms], secure access", "file access [Windows Forms]", "security [Windows Forms], data access"]
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
 caps.latest.revision: 14
 author: dotnet-bot

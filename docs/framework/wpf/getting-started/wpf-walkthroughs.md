@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "walkthroughs [WPF]"
-  - "WPF walkthroughs"
+helpviewer_keywords: ["walkthroughs [WPF]", "WPF walkthroughs"]
 ms.assetid: c29bde96-0389-4aff-a9fb-cd678f66b7f7
 caps.latest.revision: 8
 author: dotnet-bot

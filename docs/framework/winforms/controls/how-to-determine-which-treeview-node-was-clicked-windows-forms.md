@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "TreeNode"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], TreeView control"
-  - "tree nodes in TreeView control, determining node clicked"
-  - "TreeView control [Windows Forms], determining node clicked"
+f1_keywords: ["TreeNode"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], TreeView control", "tree nodes in TreeView control, determining node clicked", "TreeView control [Windows Forms], determining node clicked"]
 ms.assetid: 06a4a191-d918-42af-9f49-956c93eff261
 caps.latest.revision: 12
 author: dotnet-bot

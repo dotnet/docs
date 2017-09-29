@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultProxy"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "defaultProxy element"
-  - "<defaultProxy> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultProxy", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["defaultProxy element", "<defaultProxy> element"]
 ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
 caps.latest.revision: 21
 author: "mcleblanc"

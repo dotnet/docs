@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "timers, event intervals"
-  - "Interval property, limitations"
-  - "timers, Windows-based"
-  - "Timer component [Windows Forms], limitations of Interval property"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["timers, event intervals", "Interval property, limitations", "timers, Windows-based", "Timer component [Windows Forms], limitations of Interval property"]
 ms.assetid: 7e5fb513-77e7-4046-a8e8-aab94e61ca0f
 caps.latest.revision: 10
 author: dotnet-bot

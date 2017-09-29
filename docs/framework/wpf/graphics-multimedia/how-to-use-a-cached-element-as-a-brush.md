@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "BitmapCache [WPF], using"
-  - "cached element [WPF], use as a brush"
-  - "BitmapCacheBrush [WPF], using"
-  - "CacheMode [WPF], using"
+helpviewer_keywords: ["BitmapCache [WPF], using", "cached element [WPF], use as a brush", "BitmapCacheBrush [WPF], using", "CacheMode [WPF], using"]
 ms.assetid: d36e944a-866e-4baf-98c4-fd6a75f6fdd0
 caps.latest.revision: 5
 author: dotnet-bot

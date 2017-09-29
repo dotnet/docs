@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback2.Exception"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback2::Exception"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugManagedCallback2::Exception method [.NET Framework debugging]"
-  - "Exception method, ICorDebugManagedCallback2 interface [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback2.Exception"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback2::Exception"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugManagedCallback2::Exception method [.NET Framework debugging]", "Exception method, ICorDebugManagedCallback2 interface [.NET Framework debugging]"]
 ms.assetid: 78b0f14f-2fae-4e63-8412-4df119ee8468
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

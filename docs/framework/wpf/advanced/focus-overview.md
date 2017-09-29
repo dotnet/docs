@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "applications, focus"
-  - "focus in applications"
+helpviewer_keywords: ["applications [WPF], focus", "focus in applications [WPF]"]
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
 caps.latest.revision: 19
 author: dotnet-bot

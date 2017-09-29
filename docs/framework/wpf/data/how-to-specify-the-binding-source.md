@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "binding data, binding sources"
-  - "data binding, binding source"
-  - "binding sources"
+helpviewer_keywords: ["binding data [WPF], binding sources", "data binding [WPF], binding source", "binding sources"]
 ms.assetid: 55d47757-2648-4a52-987f-b767953f168c
 caps.latest.revision: 16
 author: dotnet-bot

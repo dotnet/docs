@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Timer"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Timer component [Windows Forms], about Timer components"
-  - "timers, about timers"
+f1_keywords: ["Timer"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Timer component [Windows Forms], about Timer components", "timers, about timers"]
 ms.assetid: e672c05b-a8b6-4b26-9e4d-9223aa9e3873
 caps.latest.revision: 9
 author: dotnet-bot

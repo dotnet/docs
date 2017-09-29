@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "RUNTIME_INFO_FLAGS"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "RUNTIME_INFO_FLAGS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RUNTIME_INFO_FLAGS enumeration [.NET Framework hosting]"
+api_name: ["RUNTIME_INFO_FLAGS"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["RUNTIME_INFO_FLAGS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RUNTIME_INFO_FLAGS enumeration [.NET Framework hosting]"]
 ms.assetid: adba37be-f775-4cdb-8919-5746ce694f33
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

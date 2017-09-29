@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "AJAX integration and JSON support [WCF]"
+helpviewer_keywords: ["AJAX integration and JSON support [WCF]"]
 ms.assetid: 3851a8fc-d861-4ac1-873c-96af0343d3a7
 caps.latest.revision: 17
 author: "Erikre"

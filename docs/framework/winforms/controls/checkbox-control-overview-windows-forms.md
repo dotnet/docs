@@ -5,20 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CheckBox"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "bound controls, check boxes"
-  - "CheckBox control [Windows Forms], about CheckBox control"
-  - "data binding, checkbox controls"
-  - "data-bound controls, check boxes"
-  - "check boxes, about check boxes"
+f1_keywords: ["CheckBox"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["CheckBox control [Windows Forms], about CheckBox control", "data binding [Windows Forms], checkbox controls", "check boxes [Windows Forms], about check boxes"]
 ms.assetid: 085a4e0b-9046-473f-b141-d0edddfb2ebb
 caps.latest.revision: 8
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "CodeDOM, generating XML documentation"
-  - "XML documentation, creating using CodeDOM"
-  - "Code Document Object Model, generating XML documentation"
+helpviewer_keywords: ["CodeDOM, generating XML documentation", "XML documentation, creating using CodeDOM", "Code Document Object Model, generating XML documentation"]
 ms.assetid: e3b80484-36b9-41dd-9d21-a2f9a36381dc
 caps.latest.revision: 8
 author: "rpetrusha"

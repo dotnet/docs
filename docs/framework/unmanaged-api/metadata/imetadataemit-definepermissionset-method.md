@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.DefinePermissionSet"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::DefinePermissionSet"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DefinePermissionSet method [.NET Framework metadata]"
-  - "IMetaDataEmit::DefinePermissionSet method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.DefinePermissionSet"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::DefinePermissionSet"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DefinePermissionSet method [.NET Framework metadata]", "IMetaDataEmit::DefinePermissionSet method [.NET Framework metadata]"]
 ms.assetid: 36cffbf7-82ca-4cf9-bf60-50ab491ac2d9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

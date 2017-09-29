@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "PrintDocument"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "PrintDocument component [Windows Forms], about PrintDocument component"
-  - "printing [Windows Forms], PrintDocument component"
+f1_keywords: ["PrintDocument"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["PrintDocument component [Windows Forms], about PrintDocument component", "printing [Windows Forms], PrintDocument component"]
 ms.assetid: b59b4b60-dce5-42ca-8421-3a54a2f7bab0
 caps.latest.revision: 14
 author: dotnet-bot

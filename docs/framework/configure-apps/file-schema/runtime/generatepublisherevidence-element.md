@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "generatePublisherEvidence element"
-  - "<generatePublisherEvidence> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["generatePublisherEvidence element", "<generatePublisherEvidence> element"]
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
 caps.latest.revision: 21
 author: "rpetrusha"

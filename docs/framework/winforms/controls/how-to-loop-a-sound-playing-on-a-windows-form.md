@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "sound loops"
-  - "SoundPlayer class, play looping"
-  - "sounds, looping"
-  - "playing sounds, looping"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["sound loops", "SoundPlayer class, play looping", "sounds, looping", "playing sounds, looping"]
 ms.assetid: ea95dd46-10a3-46c0-8263-4b205f00df7f
 caps.latest.revision: 17
 author: dotnet-bot

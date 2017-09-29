@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "projection [WCF Data Services]"
-  - "WCF Data Services, projection"
-  - "query projection [WCF Data Services]"
-  - "WCF Data Services, querying"
+helpviewer_keywords: ["projection [WCF Data Services]", "WCF Data Services, projection", "query projection [WCF Data Services]", "WCF Data Services, querying"]
 ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
 caps.latest.revision: 3
 author: "Erikre"

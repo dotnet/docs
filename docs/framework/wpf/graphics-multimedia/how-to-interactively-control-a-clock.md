@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controlling clocks interactively"
-  - "clocks, controlling interactively"
+helpviewer_keywords: ["controlling clocks interactively", "clocks [WPF], controlling interactively"]
 ms.assetid: d0b520e0-2f18-4cef-977f-2909e709548a
 caps.latest.revision: 4
 author: dotnet-bot

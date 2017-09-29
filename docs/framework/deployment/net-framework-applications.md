@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "deploying applications [.NET Framework]"
-  - ".NET Framework, deploying apps"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["deploying applications [.NET Framework]", ".NET Framework, deploying apps"]
 ms.assetid: 139d4cb1-5972-40f4-bdd8-1ce68e4dfb80
 caps.latest.revision: 3
 author: "mairaw"

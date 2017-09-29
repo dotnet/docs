@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#servicePointManager"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/servicePointManager"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "servicePointManager element"
-  - "<servicePointManager> element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#servicePointManager", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/servicePointManager"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["servicePointManager element", "<servicePointManager> element"]
 ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
 caps.latest.revision: 16
 author: "mcleblanc"

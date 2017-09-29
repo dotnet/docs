@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.UnloadClass"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::UnloadClass"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugManagedCallback::UnloadClass method [.NET Framework debugging]"
-  - "UnloadClass method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.UnloadClass"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::UnloadClass"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugManagedCallback::UnloadClass method [.NET Framework debugging]", "UnloadClass method [.NET Framework debugging]"]
 ms.assetid: 66a59b18-ce9a-41f4-b23b-4dd6753d6d36
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

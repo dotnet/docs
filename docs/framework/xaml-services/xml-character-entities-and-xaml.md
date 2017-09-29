@@ -5,28 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "&"
-  - "&amp"
-  - "&gt"
-  - "&lt"
-helpviewer_keywords: 
-  - "XAML [XAML Services], special characters"
-  - "ampersand (&) [XAML Services]"
-  - "special characters [XAML Services]"
-  - "apostrophe (') [XAML Services]"
-  - "greater-than (>) character [XAML Services]"
-  - "XAML [XAML Services], quotation mark (\")"
-  - "XAML [XAML Services], apostrophe (')"
-  - "& (ampersand) [XAML Services]"
-  - "XAML [XAML Services], & (ampersand)"
-  - "XAML [XAML Services], escape sequence"
-  - "quotation mark (\") [XAML Services]"
-  - "less-than (<) character [XAML Services]"
+f1_keywords: ["&", "&amp", "&gt", "&lt"]
+helpviewer_keywords: ["XAML [XAML Services], special characters", "ampersand (&) [XAML Services]", "special characters [XAML Services]", "apostrophe (') [XAML Services]", "greater-than (>) character [XAML Services]", "XAML [XAML Services], quotation mark (\")", "XAML [XAML Services], apostrophe (')", "& (ampersand) [XAML Services]", "XAML [XAML Services], & (ampersand)", "XAML [XAML Services], escape sequence", "quotation mark (\") [XAML Services]", "less-than (<) character [XAML Services]"]
 ms.assetid: 6896d0ce-74f7-420a-9ab4-de9bbf390e8d
 caps.latest.revision: 23
 author: "wadepickett"

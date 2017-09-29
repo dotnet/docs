@@ -7,20 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Networking"
-  - "adaptive proxies"
-  - "static proxies"
-  - "Network Resources"
-  - "Internet, proxy configuration"
-  - "proxies"
-  - "network, proxy configuration"
-  - "proxies, configuring"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Networking", "adaptive proxies", "static proxies", "Network Resources", "Internet, proxy configuration", "proxies", "network, proxy configuration", "proxies, configuring"]
 ms.assetid: 353c0a8b-4cee-44f6-8e65-60e286743df9
 caps.latest.revision: 14
 author: "mcleblanc"

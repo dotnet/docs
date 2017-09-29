@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataGrid [WPF], validation"
-  - "validation [WPF], DataGrid"
+helpviewer_keywords: ["DataGrid [WPF], validation", "validation [WPF], DataGrid"]
 ms.assetid: ec6078a8-1e42-4648-b414-f4348e81bda1
 caps.latest.revision: 9
 author: dotnet-bot

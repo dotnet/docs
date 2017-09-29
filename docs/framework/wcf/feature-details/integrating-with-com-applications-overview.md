@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "COM [WCF], integration overview"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["COM [WCF], integration overview"]
 ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
 caps.latest.revision: 17
 author: "Erikre"

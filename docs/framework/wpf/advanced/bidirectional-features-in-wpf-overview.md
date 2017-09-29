@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "FlowDocument property"
-  - "Span elements"
-  - "FlowDirection property"
-  - "bidirectional features"
+helpviewer_keywords: ["Span elements", "bidirectional features"]
 ms.assetid: fd850e25-7dba-408c-b521-8873e51dc968
 caps.latest.revision: 22
 author: dotnet-bot

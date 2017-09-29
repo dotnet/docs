@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "buttons"
+helpviewer_keywords: ["buttons [WPF]"]
 ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
 caps.latest.revision: 13
 author: dotnet-bot

@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ColumnDefinitionCollection class"
-  - "controls, Grid class"
-  - "classes, RowDefinitionCollection"
-  - "classes, ColumnDefinitionCollection"
-  - "RowDefinitionCollection class"
-  - "Grid control, ColumnDefinitionCollection class"
-  - "Grid control, RowDefinitionCollection class"
+helpviewer_keywords: ["controls [WPF], Grid class", "Grid control [WPF], ColumnDefinitionCollection class", "Grid control [WPF], RowDefinitionCollection class"]
 ms.assetid: bfc7160a-45f2-4e17-9961-df414dfb13c5
 caps.latest.revision: 10
 author: dotnet-bot

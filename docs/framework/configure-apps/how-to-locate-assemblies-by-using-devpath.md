@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "DEVPATH"
-  - ".NET Framework application configuration, assemblies"
-  - "application configuration files, specifying assembly's location"
-  - "app.config files, assembly locations"
-  - "locating assemblies"
-  - "assemblies [.NET Framework], location"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["DEVPATH", ".NET Framework application configuration, assemblies", "application configuration files, specifying assembly's location", "app.config files, assembly locations", "locating assemblies", "assemblies [.NET Framework], location"]
 ms.assetid: 44d2eadf-7eec-443c-a2ac-d601fd919e17
 caps.latest.revision: 8
 author: "mcleblanc"

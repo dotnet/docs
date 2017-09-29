@@ -5,16 +5,10 @@ ms.date: "04/07/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-  - "dotnet-clr"
+ms.technology: ["dotnet-bcl", "dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "AppContextSwitchOverrides"
-  - "compatibility switches"
-  - "configuration switches"
-  - "configuration"
+helpviewer_keywords: ["AppContextSwitchOverrides", "compatibility switches", "configuration switches", "configuration"]
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 caps.latest.revision: 16
 author: "rpetrusha"

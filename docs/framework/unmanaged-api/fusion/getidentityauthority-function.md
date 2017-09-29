@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetIdentityAuthority"
-api_location: 
-  - "fusion.dll"
-  - "clr.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "GetIdentityAuthority"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetIdentityAuthority function [.NET Framework fusion]"
+api_name: ["GetIdentityAuthority"]
+api_location: ["fusion.dll", "clr.dll"]
+api_type: ["COM"]
+f1_keywords: ["GetIdentityAuthority"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetIdentityAuthority function [.NET Framework fusion]"]
 ms.assetid: 843cd5ab-d2b7-4ff6-86bd-e68c7a91c098
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

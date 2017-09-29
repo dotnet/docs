@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "extending bindings [WCF]"
+helpviewer_keywords: ["extending bindings [WCF]"]
 ms.assetid: 5e40d306-b3c1-4429-80c4-fbb1d956856c
 caps.latest.revision: 9
 author: "Erikre"

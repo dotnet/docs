@@ -7,10 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Workflow Foundation [WF], programming"
-  - "programming [WF]"
-  - "WF [WF], programming"
+helpviewer_keywords: ["Windows Workflow Foundation [WF], programming", "programming [WF]", "WF [WF], programming"]
 ms.assetid: f62354e2-6a2b-4e8c-a4bc-533fb96267a4
 caps.latest.revision: 16
 author: "Erikre"

@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "managed debugging assistants (MDAs), hashcode modulus"
-  - "Modulo object hash code"
-  - "moduloObjectHashcode MDA"
-  - "hashcode modulus"
-  - "MDAs (managed debugging assistants), hashcode modulus"
-  - "GetHashCode method"
-  - "modulus of hashcodes"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["managed debugging assistants (MDAs), hashcode modulus", "Modulo object hash code", "moduloObjectHashcode MDA", "hashcode modulus", "MDAs (managed debugging assistants), hashcode modulus", "modulus of hashcodes"]
 ms.assetid: b45366ff-2a7a-4b8e-ab01-537b72e9de68
 caps.latest.revision: 10
 author: "mairaw"

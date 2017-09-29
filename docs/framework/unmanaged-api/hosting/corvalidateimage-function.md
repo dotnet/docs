@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "_CorValidateImage"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "_CorValidateImage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CorValidateImage function [.NET Framework hosting]"
+api_name: ["_CorValidateImage"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["_CorValidateImage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CorValidateImage function [.NET Framework hosting]"]
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

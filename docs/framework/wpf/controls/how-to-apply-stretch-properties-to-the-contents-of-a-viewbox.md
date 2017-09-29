@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "StretchDirection properties"
-  - "Stretch properties"
-  - "controls, Viewbox"
-  - "Viewbox control"
+helpviewer_keywords: ["StretchDirection properties [WPF]", "Stretch properties [WPF]", "controls [WPF], Viewbox", "Viewbox control"]
 ms.assetid: b9c22ef4-bce4-4300-9e0c-8260b7db83cc
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML [XAML Services], type converters"
-  - "XAML [XAML Services], TypeConverter"
-  - "type conversion for XAML [XAML Services]"
+helpviewer_keywords: ["XAML [XAML Services], type converters", "XAML [XAML Services], TypeConverter", "type conversion for XAML [XAML Services]"]
 ms.assetid: 51a65860-efcb-4fe0-95a0-1c679cde66b7
 caps.latest.revision: 14
 author: "wadepickett"

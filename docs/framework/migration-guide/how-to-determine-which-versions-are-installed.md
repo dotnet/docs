@@ -2,12 +2,9 @@
 title: "How to: Determine which .NET Framework versions are installed"
 ms.date: "08/09/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "versions, determining for .NET Framework"
-  - ".NET Framework, determining version"
+helpviewer_keywords: ["versions, determining for .NET Framework", ".NET Framework, determining version"]
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
 caps.latest.revision: 62
 author: "rpetrusha"

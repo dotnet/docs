@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo.SetEventMask"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo::SetEventMask"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo::SetEventMask method [.NET Framework profiling]"
-  - "SetEventMask method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo.SetEventMask"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo::SetEventMask"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo::SetEventMask method [.NET Framework profiling]", "SetEventMask method [.NET Framework profiling]"]
 ms.assetid: 44bc0f56-32fa-491e-a62d-52fc96d48125
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

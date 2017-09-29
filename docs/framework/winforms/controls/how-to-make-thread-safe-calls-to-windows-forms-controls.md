@@ -5,22 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "EHInvalidOperation.WinForms.IllegalCrossThreadCall"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "thread safety, calling controls [Windows Forms]"
-  - "calling controls, thread safety [Windows Forms]"
-  - "CheckForIllegalCrossThreadCalls property [Windows Forms]"
-  - "Windows Forms controls, multithreading"
-  - "BackgroundWorker class, examples"
-  - "threading [Windows Forms], cross-thread calls"
-  - "controls [Windows Forms], multithreading"
+f1_keywords: ["EHInvalidOperation.WinForms.IllegalCrossThreadCall"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["thread safety, calling controls [Windows Forms]", "calling controls [Windows Forms], thread safety [Windows Forms]", "CheckForIllegalCrossThreadCalls property [Windows Forms]", "Windows Forms controls [Windows Forms], multithreading", "BackgroundWorker class, examples", "threading [Windows Forms], cross-thread calls", "controls [Windows Forms], multithreading"]
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
 caps.latest.revision: 20
 author: dotnet-bot

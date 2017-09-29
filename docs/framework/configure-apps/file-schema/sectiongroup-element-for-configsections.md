@@ -2,19 +2,11 @@
 title: "&lt;sectionGroup&gt; element for &lt;configSections&gt;"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "sectionGroup Element"
-  - "<sectionGroup> Element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["sectionGroup Element", "<sectionGroup> Element"]
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 author: "guardrex"
 ms.author: "mairaw"

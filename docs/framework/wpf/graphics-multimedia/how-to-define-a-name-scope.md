@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "name scope, defining"
-  - "Storyboards, animating in procedural code"
-  - "animation, Storyboards, in procedural code"
+helpviewer_keywords: ["name scope [WPF], defining", "Storyboards [WPF], animating in procedural code", "animation [WPF], Storyboards [WPF], in procedural code"]
 ms.assetid: 4f361925-6a08-40dc-8231-a61111c6b28b
 caps.latest.revision: 6
 author: dotnet-bot

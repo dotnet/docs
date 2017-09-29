@@ -5,21 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], multifile"
-  - "entry point for assembly"
-  - "compiling assemblies"
-  - "Al.exe"
-  - "command-line compilers"
-  - "assembly manifest, multifile assemblies"
-  - "assemblies [.NET Framework], compiling"
-  - "Assembly Linker"
-  - "code modules"
-  - "multifile assemblies"
+helpviewer_keywords: ["assemblies [.NET Framework], multifile", "entry point for assembly", "compiling assemblies", "Al.exe", "command-line compilers", "assembly manifest, multifile assemblies", "assemblies [.NET Framework], compiling", "Assembly Linker", "code modules", "multifile assemblies"]
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
 caps.latest.revision: 15
 author: "rpetrusha"

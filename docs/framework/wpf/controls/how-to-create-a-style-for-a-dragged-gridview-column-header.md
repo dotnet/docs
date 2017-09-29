@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ListView controls, styling"
+helpviewer_keywords: ["ListView controls [WPF], styling"]
 ms.assetid: 0b999645-0313-4b33-80b9-19ece08b5459
 caps.latest.revision: 10
 author: dotnet-bot

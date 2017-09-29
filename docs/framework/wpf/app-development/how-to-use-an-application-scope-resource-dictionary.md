@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dictionaries, resource"
-  - "resource dictionaries, application-scope"
-  - "application-scope resource dictionaries"
+helpviewer_keywords: ["dictionaries [WPF], resource", "resource dictionaries [WPF], application-scope", "application-scope resource dictionaries"]
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
 caps.latest.revision: 11
 author: dotnet-bot

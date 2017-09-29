@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStrip control [Windows Forms]"
-  - "MenuStrip control [Windows Forms]"
-  - "toolbars [Windows Forms], specifying z-order"
-  - "z-order"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms]", "MenuStrip control [Windows Forms]", "toolbars [Windows Forms], specifying z-order", "z-order"]
 ms.assetid: 8b595429-ba9f-46af-9c55-3d5cc53f7fff
 caps.latest.revision: 11
 author: dotnet-bot

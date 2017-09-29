@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "queues [WCF], best practices"
-  - "best practices [WCF], queued communication"
+helpviewer_keywords: ["queues [WCF], best practices", "best practices [WCF], queued communication"]
 ms.assetid: 446a6383-cae3-4338-b193-a33c14a49948
 caps.latest.revision: 14
 author: "Erikre"

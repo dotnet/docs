@@ -5,34 +5,11 @@ ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - ".NET Framework application configuration, configuration schema"
-  - "machine configuration files"
-  - "application configuration files, schema"
-  - "app.config files, schema"
-  - "schema configuration settings"
-  - "schemas, configuration settings"
-  - "enterprisesec.config files"
-  - "well-formed XML"
-  - "enterprisesec configuration files"
-  - "security.config files"
-  - "security [.NET Framework], configuration files"
-  - "application development [.NET Framework], schema"
-  - "XML tags"
-  - "container tags"
-  - "machine.config files"
-  - "configuration schema [.NET Framework]"
-  - "configuration settings [.NET Framework], applications"
-  - "configuration file reference [.NET Framework]"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: [".NET Framework application configuration, configuration schema", "machine configuration files", "application configuration files, schema", "app.config files, schema", "schema configuration settings", "schemas, configuration settings", "enterprisesec.config files", "well-formed XML", "enterprisesec configuration files", "security.config files", "security [.NET Framework], configuration files", "application development [.NET Framework], schema", "XML tags", "container tags", "machine.config files", "configuration schema [.NET Framework]", "configuration settings [.NET Framework], applications", "configuration file reference [.NET Framework]"]
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
 caps.latest.revision: 20
 author: "mcleblanc"

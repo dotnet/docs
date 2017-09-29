@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Windows Forms], derivation types"
-  - "programming concepts, Windows Forms controls"
-  - "controls [Windows Forms], creating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Windows Forms], derivation types", "programming concepts, Windows Forms controls", "controls [Windows Forms], creating"]
 ms.assetid: 6277bb81-90f7-4c5b-9f4b-b02bb42dd316
 caps.latest.revision: 10
 author: dotnet-bot

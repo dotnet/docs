@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorPublishProcess"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorPublishProcess"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorPublishProcess interface [.NET Framework debugging]"
+api_name: ["ICorPublishProcess"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorPublishProcess"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorPublishProcess interface [.NET Framework debugging]"]
 ms.assetid: 6d1dc41b-8aa2-4889-bb00-1cbccc00c123
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

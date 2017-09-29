@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "NotifyIcon"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "NotifyIcon component, about NotifyIcon component"
-  - "system tray icons, about system tray icons"
-  - "system tray icons, using in Windows Forms"
+f1_keywords: ["NotifyIcon"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["NotifyIcon component [Windows Forms], about NotifyIcon component", "system tray icons, about system tray icons", "system tray icons, using in Windows Forms"]
 ms.assetid: 5b9189fa-d4ae-41a6-9b97-eb1f44bb1a69
 caps.latest.revision: 12
 author: dotnet-bot

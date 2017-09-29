@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], activities"
+helpviewer_keywords: ["programming [WF], activities"]
 ms.assetid: 2a69f32e-007f-47d0-ab96-535311641428
 caps.latest.revision: 11
 author: "Erikre"

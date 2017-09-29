@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data collections, creating views of"
-  - "creating, views of data collections"
-  - "data binding, creating views of data collections"
+helpviewer_keywords: ["data collections [WPF], creating views of", "data binding [WPF], creating views of data collections"]
 ms.assetid: b641e96c-c2f6-42ea-9c5d-bac81176ad65
 caps.latest.revision: 15
 author: dotnet-bot

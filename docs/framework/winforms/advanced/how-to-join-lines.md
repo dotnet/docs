@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "miter line join style"
-  - "bevel line join style"
-  - "Pen class"
-  - "line join"
-  - "drawing, joining lines"
-  - "GraphicsPath object"
-  - "round line join style"
-  - "lines, joining"
-  - "graphics, joining lines"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["miter line join style", "bevel line join style", "line join", "drawing, joining lines", "GraphicsPath object", "round line join style", "lines [Windows Forms], joining", "graphics [Windows Forms], joining lines"]
 ms.assetid: 9fc480c2-3c75-4fd1-8ab5-296a99e820e2
 caps.latest.revision: 14
 author: dotnet-bot

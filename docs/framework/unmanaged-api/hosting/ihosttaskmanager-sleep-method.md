@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTaskManager.Sleep"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTaskManager::Sleep"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostTaskManager::Sleep method [.NET Framework hosting]"
-  - "Sleep method, IHostTaskManager interface [.NET Framework hosting]"
+api_name: ["IHostTaskManager.Sleep"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTaskManager::Sleep"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostTaskManager::Sleep method [.NET Framework hosting]", "Sleep method, IHostTaskManager interface [.NET Framework hosting]"]
 ms.assetid: f67d25f3-9199-4c5f-b1e8-1c819243cfd5
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

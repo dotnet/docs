@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "templates [WPF], Label"
-  - "parts [WPF], Label"
-  - "ControlTemplate [WPF], Label"
-  - "styles [WPF], Label"
-  - "Label [WPF], styles and templates"
-  - "states [WPF], Label"
+helpviewer_keywords: ["templates [WPF], Label", "parts [WPF], Label", "ControlTemplate [WPF], Label", "styles [WPF], Label", "Label [WPF], styles and templates", "states [WPF], Label"]
 ms.assetid: c1d5359a-8e4a-4925-ab3e-e92bf6694859
 caps.latest.revision: 16
 author: dotnet-bot

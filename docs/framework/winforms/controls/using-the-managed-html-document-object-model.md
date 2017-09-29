@@ -5,14 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "managed HTML DOM"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["managed HTML DOM"]
 ms.assetid: a017dd5c-cd7b-47e4-952c-f4f54cb48409
 caps.latest.revision: 6
 author: dotnet-bot

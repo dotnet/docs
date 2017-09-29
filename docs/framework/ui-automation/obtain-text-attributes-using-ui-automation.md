@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "getting, text attributes"
-  - "UI Automation, getting text attributes"
-  - "text attributes, getting"
+helpviewer_keywords: ["getting, text attributes", "UI Automation, getting text attributes", "text attributes, getting"]
 ms.assetid: fdefc6c3-b836-4cfe-8dec-1484bfdc5551
 caps.latest.revision: 13
 author: "Xansky"

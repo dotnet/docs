@@ -5,26 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "brace character"
-  - "Binding markup extensions"
-  - "RelativeSource markup extensions"
-  - "XAML, markup extensions"
-  - "classes, MarkupExtension"
-  - "markup extensions"
-  - "nesting extension syntax"
-  - "curly brace characters ({})"
-  - "MarkupExtension class"
-  - "TemplateBinding markup extensions"
-  - "StaticResource markup extensions"
-  - "literal curly brace characters ({})"
-  - "characters, curly brace"
-  - "DynamicResource markup extensions"
-  - "*Extension class"
+helpviewer_keywords: ["brace character", "Binding markup extensions [WPF]", "RelativeSource markup extensions [WPF]", "XAML [WPF], markup extensions", "markup extensions [WPF]", "nesting extension syntax [WPF]", "curly brace characters ({})", "TemplateBinding markup extensions [WPF]", "StaticResource markup extensions [WPF]", "literal curly brace characters ({})", "characters [WPF], curly brace", "DynamicResource markup extensions [WPF]"]
 ms.assetid: 618dc745-8b14-4886-833f-486d2254bb78
 caps.latest.revision: 26
 author: dotnet-bot

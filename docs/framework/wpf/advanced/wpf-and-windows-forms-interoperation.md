@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Forms [WPF], interoperability with"
-  - "nester interoperation [WPF]"
-  - "Windows Forms, WPF interoperation"
-  - "interoperability [WPF], Windows Forms"
-  - "hybrid control [WPF interoperability]"
+helpviewer_keywords: ["Windows Forms [WPF], interoperability with", "nester interoperation [WPF]", "Windows Forms [WPF], WPF interoperation", "interoperability [WPF], Windows Forms", "hybrid control [WPF interoperability]"]
 ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 caps.latest.revision: 23
 author: dotnet-bot

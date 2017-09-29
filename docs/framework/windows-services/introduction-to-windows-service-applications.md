@@ -5,29 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ServiceController"
-helpviewer_keywords: 
-  - "Windows Service applications, deploying"
-  - "OnStop method"
-  - "OnPause method"
-  - "services, about services"
-  - "Service class, Windows Service applications"
-  - "framework services, creating services"
-  - "ServiceController components, about Windows services"
-  - "Win32OwnProcess service type"
-  - "services, lifetime"
-  - "OnContinue method"
-  - "Windows Service applications, about Windows Service applications"
-  - "services, states"
-  - "service states"
-  - "WaitForStatus method"
-  - "Win32ShareProcess service type"
-  - "Windows Service applications, lifetime"
+f1_keywords: ["ServiceController"]
+helpviewer_keywords: ["Windows Service applications, deploying", "services, about services", "Service class, Windows Service applications", "framework services, creating services", "ServiceController components, about Windows services", "Win32OwnProcess service type", "services, lifetime", "Windows Service applications, about Windows Service applications", "services, states", "service states", "Win32ShareProcess service type", "Windows Service applications, lifetime"]
 ms.assetid: 1b1b5e67-3ff3-40c0-8154-322cfd6ef0ae
 caps.latest.revision: 17
 author: "ghogen"

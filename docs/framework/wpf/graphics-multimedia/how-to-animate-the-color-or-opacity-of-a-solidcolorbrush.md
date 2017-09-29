@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "SolidColorBrush, animating color of"
-  - "colors, animating"
-  - "opacity, animating"
-  - "animation, color of SolidColorBrush"
-  - "animation, opacity of SolidColorBrush"
-  - "SolidColorBrush, animating opacity of"
+helpviewer_keywords: ["SolidColorBrush [WPF], animating color of", "colors [WPF], animating", "opacity [WPF], animating", "animation [WPF], color of SolidColorBrush", "animation [WPF], opacity of SolidColorBrush", "SolidColorBrush [WPF], animating opacity of"]
 ms.assetid: d9154354-843f-4713-bad1-35bb0ba6eaeb
 caps.latest.revision: 11
 author: dotnet-bot

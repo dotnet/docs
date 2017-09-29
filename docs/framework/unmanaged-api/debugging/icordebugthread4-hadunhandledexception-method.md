@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugThread4.HadUnhandledException Method"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugThread4::HadUnhandledException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugThread4::HadUnhandledException method [.NET Framework debugging]"
-  - "HadUnhandledException method [.NET Framework debugging]"
+api_name: ["ICorDebugThread4.HadUnhandledException Method"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugThread4::HadUnhandledException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugThread4::HadUnhandledException method [.NET Framework debugging]", "HadUnhandledException method [.NET Framework debugging]"]
 ms.assetid: 05558daa-39e2-4c38-aeaf-e2aec4a09468
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

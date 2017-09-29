@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostSemaphore"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostSemaphore"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostSemaphore interface [.NET Framework hosting]"
+api_name: ["IHostSemaphore"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostSemaphore"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostSemaphore interface [.NET Framework hosting]"]
 ms.assetid: c0765321-656c-441e-bab5-58176292be1e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

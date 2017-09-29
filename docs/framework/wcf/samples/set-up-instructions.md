@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Samples [WCF], setup"
-  - "Windows Communication Foundation Samples [WCF], setup"
+helpviewer_keywords: ["WCF Samples [WCF], setup", "Windows Communication Foundation Samples [WCF], setup"]
 ms.assetid: 0be7d232-485b-4f6d-9ed0-b4243c907376
 caps.latest.revision: 19
 author: "Erikre"

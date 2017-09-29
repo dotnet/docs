@@ -5,28 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICoreClrDebugTarget.EnumRuntimes"
-api_location: 
-  - "mscordbi_macx86.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICoreClrDebugTarget::EnumRuntimes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remote debugging API [Silverlight]"
-  - "ICorClrDebugTarget::EnumRuntimes method [Silverlight debugging]"
-  - "EnumRuntimes method, ICoreClrDebugTarget interface [Silverlight debugging]"
-  - "Silverlight, remote debugging"
+api_name: ["ICoreClrDebugTarget.EnumRuntimes"]
+api_location: ["mscordbi_macx86.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICoreClrDebugTarget::EnumRuntimes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["remote debugging API [Silverlight]", "ICorClrDebugTarget::EnumRuntimes method [Silverlight debugging]", "EnumRuntimes method, ICoreClrDebugTarget interface [Silverlight debugging]", "Silverlight, remote debugging"]
 ms.assetid: 316df866-442d-40cc-b049-45e8adcb65d1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

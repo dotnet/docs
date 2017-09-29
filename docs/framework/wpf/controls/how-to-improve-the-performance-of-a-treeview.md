@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TreeView control [WPF], improving the performance"
+helpviewer_keywords: ["TreeView control [WPF], improving the performance"]
 ms.assetid: b792c740-cf2b-4da8-8ba8-3d2e5a821874
 caps.latest.revision: 7
 author: dotnet-bot

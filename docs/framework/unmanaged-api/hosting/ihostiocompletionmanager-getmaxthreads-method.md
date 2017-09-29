@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostIoCompletionManager.GetMaxThreads"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostIoCompletionManager::GetMaxThreads"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostIoCompletionManager::GetMaxThreads method [.NET Framework hosting]"
-  - "GetMaxThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
+api_name: ["IHostIoCompletionManager.GetMaxThreads"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostIoCompletionManager::GetMaxThreads"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostIoCompletionManager::GetMaxThreads method [.NET Framework hosting]", "GetMaxThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"]
 ms.assetid: e7a6cadc-2433-4472-a701-58891abcde45
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

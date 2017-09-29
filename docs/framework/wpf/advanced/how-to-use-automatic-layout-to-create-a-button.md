@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Button controls, creating with automatic layout"
-  - "creating, buttons with automatic layout"
-  - "automatic layout, creating buttons"
+helpviewer_keywords: ["Button controls [WPF], creating with automatic layout", "automatic layout [WPF], creating buttons"]
 ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
 caps.latest.revision: 15
 author: dotnet-bot

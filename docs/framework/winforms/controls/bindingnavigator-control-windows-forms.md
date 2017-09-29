@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "BindingNavigator control [Windows Forms]"
-  - "data [Windows Forms], navigating"
-  - "data navigation"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["BindingNavigator control [Windows Forms]", "data [Windows Forms], navigating", "data navigation"]
 ms.assetid: 18c1e2a5-9834-40d3-9b2e-2b545e4e769e
 caps.latest.revision: 19
 author: dotnet-bot

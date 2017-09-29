@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataObject class [WPF], creating"
-  - "data objects [WPF], creating"
-  - "drag-and-drop [WPF], creating data objects"
+helpviewer_keywords: ["DataObject class [WPF], creating", "data objects [WPF], creating", "drag-and-drop [WPF], creating data objects"]
 ms.assetid: 022fa142-717d-4fea-a53c-3b52e9d91aff
 caps.latest.revision: 7
 author: dotnet-bot

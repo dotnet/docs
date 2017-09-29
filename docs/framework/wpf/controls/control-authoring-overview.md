@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, authoring overview"
-  - "authoring overview for controls"
+helpviewer_keywords: ["controls [WPF], authoring overview", "authoring overview for controls [WPF]"]
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 caps.latest.revision: 32
 author: dotnet-bot

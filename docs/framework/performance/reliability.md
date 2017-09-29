@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "SQL Server [.NET Framework]"
-  - "managed code, reliability"
-  - "reliability [.NET Framework]"
-  - "writing reliable code"
-  - "code, reliability"
+helpviewer_keywords: ["SQL Server [.NET Framework]", "managed code, reliability", "reliability [.NET Framework]", "writing reliable code", "code, reliability"]
 ms.assetid: 294aa306-0afe-4cbe-b397-86ba9f1860f8
 caps.latest.revision: 9
 author: "mairaw"

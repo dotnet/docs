@@ -5,20 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "HelpProvider"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "HelpProvider component [Windows Forms], about HelpProvider component"
-  - "Help, adding to Windows applications"
-  - "F1 Help, adding to Windows Forms"
-  - "dialog boxes, context-sensitive Help"
-  - "Windows Forms, context-sensitive Help"
+f1_keywords: ["HelpProvider"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["HelpProvider component [Windows Forms], about HelpProvider component", "Help, adding to Windows applications", "F1 Help, adding to Windows Forms", "dialog boxes [Windows Forms], context-sensitive Help", "Windows Forms, context-sensitive Help"]
 ms.assetid: 6b10c2cc-c577-4cb5-9669-e37b33416af9
 caps.latest.revision: 7
 author: dotnet-bot

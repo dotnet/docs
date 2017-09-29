@@ -7,13 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "cache [.NET Framework], configuring"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["cache [.NET Framework], configuring"]
 ms.assetid: 3f694a1c-de5d-47cf-a6eb-cfc369fb8a9f
 caps.latest.revision: 10
 author: "mcleblanc"

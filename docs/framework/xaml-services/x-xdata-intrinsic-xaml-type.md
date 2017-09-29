@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "x:XData"
-  - "XData"
-  - "xXData"
-helpviewer_keywords: 
-  - "XAML [XAML Services], x:XData directive element"
-  - "XData in XAML [XAML Services]"
-  - "x:XData XAML directive element [XAML Services]"
+f1_keywords: ["x:XData", "XData", "xXData"]
+helpviewer_keywords: ["XAML [XAML Services], x:XData directive element", "XData in XAML [XAML Services]", "x:XData XAML directive element [XAML Services]"]
 ms.assetid: 7ce209c2-621b-4977-b643-565f7e663534
 caps.latest.revision: 17
 author: "wadepickett"

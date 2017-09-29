@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "buttons, default on Windows Forms"
-  - "Accept button on Windows Forms"
-  - "Button control [Windows Forms], designating as default"
-  - "Windows Forms controls, default button on form"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["buttons [Windows Forms], default on Windows Forms", "Accept button on Windows Forms", "Button control [Windows Forms], designating as default", "Windows Forms controls, default button on form"]
 ms.assetid: 22cc9da6-b913-4e04-9554-dee443ac5c3a
 caps.latest.revision: 8
 author: dotnet-bot

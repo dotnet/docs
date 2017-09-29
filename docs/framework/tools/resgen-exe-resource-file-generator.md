@@ -5,28 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "resource files, .resources files"
-  - "resource files, .resx files"
-  - "resx files (resource files)"
-  - ".resources files"
-  - "files, converting"
-  - "Resource File Generator"
-  - ".resx files"
-  - "Resgen.exe"
-  - "resource files, converting"
-  - "converting files, Resource File Generator"
-  - "binary resources files"
-  - "embedding files in runtime binary executable"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["resource files, .resources files", "resource files, .resx files", "resx files (resource files)", ".resources files", "files, converting", "Resource File Generator", ".resx files", "Resgen.exe", "resource files, converting", "converting files, Resource File Generator", "binary resources files", "embedding files in runtime binary executable"]
 ms.assetid: 8ef159de-b660-4bec-9213-c3fbc4d1c6f4
 caps.latest.revision: 46
 author: "rpetrusha"

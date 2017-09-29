@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "HScrollBar"
-  - "VScrollBar"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ScrollBar control [Windows Forms]"
-  - "HScrollBar control [Windows Forms], about HScrollBar"
-  - "VScrollBar control [Windows Forms], about VScrollBar control"
-  - "ScrollBar control [Windows Forms], about ScrollBar control"
-  - "scroll bars, about scroll bars"
+f1_keywords: ["HScrollBar", "VScrollBar"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ScrollBar control [Windows Forms]", "HScrollBar control [Windows Forms], about HScrollBar", "VScrollBar control [Windows Forms], about VScrollBar control", "ScrollBar control [Windows Forms], about ScrollBar control", "scroll bars, about scroll bars"]
 ms.assetid: 8b307679-1cae-41d8-99aa-3d1efd207cd6
 caps.latest.revision: 13
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugAppDomain3.GetCachedWinRTTypesForIIDs"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugAppDomain3::GetCachedWinRTTypesForIIDs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugAppDomain3::GetCachedWinRTTypesForIIDs method, [.NET Framework debugging]"
-  - "GetCachedWinRTTypesForIIDs method, ICorDebugAppDomain3 interface [.NET Framework debugging]"
+api_name: ["ICorDebugAppDomain3.GetCachedWinRTTypesForIIDs"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugAppDomain3::GetCachedWinRTTypesForIIDs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugAppDomain3::GetCachedWinRTTypesForIIDs method, [.NET Framework debugging]", "GetCachedWinRTTypesForIIDs method, ICorDebugAppDomain3 interface [.NET Framework debugging]"]
 ms.assetid: 23682ca0-1bcf-48e6-996e-69f7ba337682
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

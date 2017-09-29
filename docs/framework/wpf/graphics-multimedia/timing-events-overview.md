@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Clock class"
-  - "classes, Clock"
-  - "Timelines"
-  - "timing events"
+helpviewer_keywords: ["timelines [WPF]", "timing events [WPF]"]
 ms.assetid: 597e3280-0867-4359-a97b-5b2f4149e350
 caps.latest.revision: 14
 author: dotnet-bot

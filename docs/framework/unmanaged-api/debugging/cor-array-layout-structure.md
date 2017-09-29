@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_ARRAY_LAYOUT"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_ARRAY_LAYOUT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_DEBUG_IL_TO_NATIVE_MAP structure [.NET Framework debugging]"
+api_name: ["COR_ARRAY_LAYOUT"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_ARRAY_LAYOUT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_DEBUG_IL_TO_NATIVE_MAP structure [.NET Framework debugging]"]
 ms.assetid: aa20ac3d-6f60-4aa2-91c5-f3a86f82eba8
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

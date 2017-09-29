@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "debugging XBAPs that call a Web service [WPF]"
-  - "debugging security exceptions for XBAPs [WPF]"
-  - "security exception for XBAPs [WPF], debugging"
-  - "configuring Visual Studio to debug XAML browser applications [WPF]"
-  - "configuring Visual Studio to debug XBAPs [WPF]"
+helpviewer_keywords: ["debugging XBAPs that call a Web service [WPF]", "debugging security exceptions for XBAPs [WPF]", "security exception for XBAPs [WPF], debugging", "configuring Visual Studio to debug XAML browser applications [WPF]", "configuring Visual Studio to debug XBAPs [WPF]"]
 ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
 caps.latest.revision: 9
 author: dotnet-bot

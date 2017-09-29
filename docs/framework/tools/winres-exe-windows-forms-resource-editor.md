@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Winres.exe"
-  - "Windows Forms Resource Editor"
-  - "localization"
-  - "Windows Forms, localization"
-  - "forms, localizing"
-  - "resx files"
-  - ".resx files"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Winres.exe", "Windows Forms Resource Editor", "localization", "Windows Forms, localization", "forms, localizing", "resx files", ".resx files"]
 ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
 caps.latest.revision: 23
 author: "mairaw"

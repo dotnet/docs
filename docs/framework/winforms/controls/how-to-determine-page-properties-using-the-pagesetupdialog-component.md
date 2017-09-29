@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "page properties"
-  - "page setup"
-  - "PageSetupDialog component"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["page properties", "page setup", "PageSetupDialog component"]
 ms.assetid: 6dae05bc-c0fd-4357-bb93-841a1631d98f
 caps.latest.revision: 14
 author: dotnet-bot

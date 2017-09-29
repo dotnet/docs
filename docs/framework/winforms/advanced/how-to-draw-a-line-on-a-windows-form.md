@@ -5,19 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Graphics.DrawLine"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], drawing lines on forms"
-  - "drawing, lines"
-  - "lines, drawing"
-  - "drawing lines"
+f1_keywords: ["Graphics.DrawLine"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], drawing lines on forms", "drawing, lines", "lines [Windows Forms], drawing", "drawing lines"]
 ms.assetid: 55c1dbeb-75d0-430c-9814-a24b8971ad8c
 caps.latest.revision: 13
 author: dotnet-bot

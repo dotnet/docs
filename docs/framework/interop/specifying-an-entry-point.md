@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "EntryPoint field"
-  - "platform invoke, attribute fields"
-  - "attribute fields in platform invoke, EntryPoint"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["EntryPoint field", "platform invoke, attribute fields", "attribute fields in platform invoke, EntryPoint"]
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
 caps.latest.revision: 9
 author: "rpetrusha"

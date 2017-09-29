@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "OverlappedFreeError MDA"
-  - "overlapped free method call error"
-  - "managed debugging assistants (MDAs), overlapped structures"
-  - "overlapped structures"
-  - "MDAs (managed debugging assistants), overlapped structures"
-  - "freeing overlapped structures"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["OverlappedFreeError MDA", "overlapped free method call error", "managed debugging assistants (MDAs), overlapped structures", "overlapped structures", "MDAs (managed debugging assistants), overlapped structures", "freeing overlapped structures"]
 ms.assetid: b6ab2d48-6eee-4bab-97a3-046b3b0a5470
 caps.latest.revision: 8
 author: "mairaw"

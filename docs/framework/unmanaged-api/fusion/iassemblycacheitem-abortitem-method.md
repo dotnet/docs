@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyCacheItem.AbortItem"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyCacheItem::AbortItem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AbortItem method [.NET Framework fusion]"
-  - "IAssemblyCacheItem::AbortItem method [.NET Framework fusion]"
+api_name: ["IAssemblyCacheItem.AbortItem"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyCacheItem::AbortItem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AbortItem method [.NET Framework fusion]", "IAssemblyCacheItem::AbortItem method [.NET Framework fusion]"]
 ms.assetid: be9f47f1-f532-4603-a192-a73cb7a0c4b2
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

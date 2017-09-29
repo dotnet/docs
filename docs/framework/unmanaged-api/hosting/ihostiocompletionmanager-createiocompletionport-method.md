@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostIoCompletionManager.CreateIoCompletionPort"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostIoCompletionManager::CreateIoCompletionPort"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostIoCompletionManager::CreateIoCompletionPort method [.NET Framework hosting]"
-  - "CreateIoCompletionPort method [.NET Framework hosting]"
+api_name: ["IHostIoCompletionManager.CreateIoCompletionPort"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostIoCompletionManager::CreateIoCompletionPort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostIoCompletionManager::CreateIoCompletionPort method [.NET Framework hosting]", "CreateIoCompletionPort method [.NET Framework hosting]"]
 ms.assetid: 907a2b43-68db-44a7-acac-89e792e7bb3c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

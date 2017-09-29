@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "resizing Windows Forms"
-  - "Windows Forms, resizing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["resizing Windows Forms", "Windows Forms, resizing"]
 ms.assetid: 5d9dd47e-e68c-48c9-a0a3-a9ff34ba009d
 caps.latest.revision: 13
 author: dotnet-bot

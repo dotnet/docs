@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], performance tuning"
-  - "performance, DataGridView control"
-  - "performance tuning, data grids"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], performance tuning", "performance, DataGridView control", "performance tuning, data grids"]
 ms.assetid: 6ccbff28-a0ff-41e4-b601-61b31b61851d
 caps.latest.revision: 9
 author: dotnet-bot

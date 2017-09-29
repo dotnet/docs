@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "structures [.NET Framework metadata]"
-  - "unmanaged structures [.NET Framework], metadata"
-  - "metadata structures [.NET Framework]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["structures [.NET Framework metadata]", "unmanaged structures [.NET Framework], metadata", "metadata structures [.NET Framework]"]
 ms.assetid: 3eeaec36-5e1a-4a62-9de3-ea3942f67d04
 caps.latest.revision: 14
 author: "mairaw"

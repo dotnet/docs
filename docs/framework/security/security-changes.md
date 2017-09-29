@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Allow Partially Trusted Callers attribute"
-  - ".NET Framework 4, security changes"
-  - ".NET Framework security"
-  - "security-transparent code"
-  - "security-critical code"
-  - "code access security, changes"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Allow Partially Trusted Callers attribute", ".NET Framework 4, security changes", ".NET Framework security", "security-transparent code", "security-critical code", "code access security, changes"]
 ms.assetid: 5e87881c-9c13-4b52-8ad1-e34bb46e8aaa
 caps.latest.revision: 52
 author: "mairaw"

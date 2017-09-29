@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "key frames [WPF], timing"
-  - "timing key-fram animation"
+helpviewer_keywords: ["key frames [WPF], timing", "timing key-fram animation"]
 ms.assetid: b059216f-7d4b-4ca8-a019-bc287ee7bf16
 caps.latest.revision: 12
 author: dotnet-bot

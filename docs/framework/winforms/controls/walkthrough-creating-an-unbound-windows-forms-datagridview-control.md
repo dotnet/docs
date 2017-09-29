@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data [Windows Forms], displaying without binding to data source"
-  - "DataGridView control [Windows Forms], unbound data"
-  - "DataGridView control [Windows Forms], displaying data without binding to a data source"
-  - "data [Windows Forms], unbound"
-  - "walkthroughs [Windows Forms], DataGridView control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data [Windows Forms], displaying without binding to data source", "DataGridView control [Windows Forms], unbound data", "DataGridView control [Windows Forms], displaying data without binding to a data source", "data [Windows Forms], unbound", "walkthroughs [Windows Forms], DataGridView control"]
 ms.assetid: 5a8d6afa-1b4b-4b24-8db8-501086ffdebe
 caps.latest.revision: 18
 author: dotnet-bot

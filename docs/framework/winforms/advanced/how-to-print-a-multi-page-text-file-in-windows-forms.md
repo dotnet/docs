@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "printing [Windows Forms], printing multiple pages"
-  - "text, printing Windows Forms"
-  - "Windows Forms, printing text"
-  - "printing [Windows Forms], text"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["printing [Windows Forms], printing multiple pages", "text [Windows Forms], printing Windows Forms", "Windows Forms, printing text", "printing [Windows Forms], text"]
 ms.assetid: 362427f8-03d4-4826-b49f-60ab066ad322
 caps.latest.revision: 24
 author: dotnet-bot

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "application management [WPF]"
+helpviewer_keywords: ["application management [WPF]"]
 ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
 caps.latest.revision: 56
 author: dotnet-bot

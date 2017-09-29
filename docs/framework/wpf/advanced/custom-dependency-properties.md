@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "implementing, wrappers"
-  - "registering properties"
-  - "properties, metadata"
-  - "metadata, for properties"
-  - "custom dependency properties"
-  - "properties, registering"
-  - "wrappers, implementing"
-  - "dependency properties, custom"
+helpviewer_keywords: ["implementing [WPF], wrappers", "registering properties [WPF]", "properties [WPF], metadata", "metadata [WPF], for properties", "custom dependency properties [WPF]", "properties [WPF], registering", "wrappers [WPF], implementing", "dependency properties [WPF], custom"]
 ms.assetid: e6bfcfac-b10d-4f58-9f77-a864c2a2938f
 caps.latest.revision: 25
 author: dotnet-bot

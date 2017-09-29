@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostCrst.Leave"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostCrst::Leave"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostCrst::Leave method [.NET Framework hosting]"
-  - "Leave method [.NET Framework hosting]"
+api_name: ["IHostCrst.Leave"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostCrst::Leave"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostCrst::Leave method [.NET Framework hosting]", "Leave method [.NET Framework hosting]"]
 ms.assetid: dfc51d9e-b36d-4dba-9ea1-4f63fa0601ae
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

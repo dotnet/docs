@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "fonts, international"
-  - "international applications [Windows Forms], character display"
-  - "fonts, globalization considerations"
-  - "localization [Windows Forms], fonts"
-  - "Windows Forms controls, labels"
-  - "font fallback in Windows Forms"
-  - "globalization [Windows Forms], character sets"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["fonts [Windows Forms], international", "international applications [Windows Forms], character display", "fonts [Windows Forms], globalization considerations", "localization [Windows Forms], fonts", "Windows Forms controls, labels", "font fallback in Windows Forms", "globalization [Windows Forms], character sets"]
 ms.assetid: 2c3066df-9bac-479a-82b2-79e484b346a3
 caps.latest.revision: 6
 author: dotnet-bot

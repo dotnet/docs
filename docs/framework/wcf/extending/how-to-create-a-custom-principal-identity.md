@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "IPrincipal"
-  - "IAuthorizationPolicy"
-  - "PrincipalPermissionMode"
-  - "PrincipalPermissionAttribute"
+helpviewer_keywords: ["IPrincipal", "IAuthorizationPolicy", "PrincipalPermissionMode", "PrincipalPermissionAttribute"]
 ms.assetid: c4845fca-0ed9-4adf-bbdc-10812be69b61
 caps.latest.revision: 8
 author: "Erikre"

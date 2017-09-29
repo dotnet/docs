@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "managed debugging assistants (MDAs), handles"
-  - "release handle failed"
-  - "CriticalHandle class, run-time errors"
-  - "releaseHandleFailed MDA"
-  - "ReleaseHandle method"
-  - "SafeHandle class, run-time errors"
-  - "MDAs (managed debugging assistants), handles"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["managed debugging assistants (MDAs), handles", "release handle failed", "CriticalHandle class, run-time errors", "releaseHandleFailed MDA", "SafeHandle class, run-time errors", "MDAs (managed debugging assistants), handles"]
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
 caps.latest.revision: 14
 author: "mairaw"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugFunction.GetILCode"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugFunction::GetILCode"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugFunction::GetILCode method [.NET Framework debugging]"
-  - "GetILCode method [.NET Framework debugging]"
+api_name: ["ICorDebugFunction.GetILCode"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugFunction::GetILCode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugFunction::GetILCode method [.NET Framework debugging]", "GetILCode method [.NET Framework debugging]"]
 ms.assetid: f794dd47-a7cd-47f6-96e9-a41a4dae8e72
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "FillBehavior property for inactive Timelines"
-  - "Timelines, FillBehavior property"
+helpviewer_keywords: ["FillBehavior property for inactive timelines [WPF]", "Timelines [WPF], FillBehavior property"]
 ms.assetid: db805f59-d513-4dac-af15-47005dae3199
 caps.latest.revision: 10
 author: dotnet-bot

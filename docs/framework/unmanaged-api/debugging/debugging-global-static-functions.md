@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "global static functions [.NET Framework debugging]"
-  - "debugging global static functions [.NET Framework]"
-  - "unmanaged global static functions [.NET Framework], debugging"
+dev_langs: ["C++"]
+helpviewer_keywords: ["global static functions [.NET Framework debugging]", "debugging global static functions [.NET Framework]", "unmanaged global static functions [.NET Framework], debugging"]
 ms.assetid: efc64414-77c3-48d0-881a-8594ed416aad
 caps.latest.revision: 11
 author: "rpetrusha"

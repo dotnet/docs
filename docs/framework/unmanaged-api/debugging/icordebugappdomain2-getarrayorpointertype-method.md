@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugAppDomain2.GetArrayOrPointerType"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugAppDomain2::GetArrayOrPointerType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetArrayOrPointerType method [.NET Framework debugging]"
-  - "ICorDebugAppDomain2::GetArrayOrPointerType method [.NET Framework debugging]"
+api_name: ["ICorDebugAppDomain2.GetArrayOrPointerType"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugAppDomain2::GetArrayOrPointerType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetArrayOrPointerType method [.NET Framework debugging]", "ICorDebugAppDomain2::GetArrayOrPointerType method [.NET Framework debugging]"]
 ms.assetid: 97e493f5-3a62-4ec7-b42f-4af57bf71f57
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

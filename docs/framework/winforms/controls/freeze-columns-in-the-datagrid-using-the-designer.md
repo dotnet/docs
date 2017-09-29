@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, columns"
-  - "columns [Windows Forms], freezing"
-  - "DataGridView control [Windows Forms], column freezing"
-  - "data [Windows Forms], displaying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, columns", "columns [Windows Forms], freezing", "DataGridView control [Windows Forms], column freezing", "data [Windows Forms], displaying"]
 ms.assetid: 87412dd2-478f-4751-af87-dafc591fc215
 caps.latest.revision: 17
 author: dotnet-bot

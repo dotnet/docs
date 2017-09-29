@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask.YieldTask"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask::YieldTask"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRTask::YieldTask method [.NET Framework hosting]"
-  - "YieldTask method [.NET Framework hosting]"
+api_name: ["ICLRTask.YieldTask"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask::YieldTask"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRTask::YieldTask method [.NET Framework hosting]", "YieldTask method [.NET Framework hosting]"]
 ms.assetid: b8eb4095-3a8f-4be3-9446-63e9893dce7d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

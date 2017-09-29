@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data binding, updating"
-  - "BindingSource component [Windows Forms], updating data binding"
-  - "examples [Windows Forms], BindingSource component"
-  - "data sources, updating"
-  - "BindingSource component [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data binding [Windows Forms], updating", "BindingSource component [Windows Forms], updating data binding", "examples [Windows Forms], BindingSource component", "data sources, updating", "BindingSource component [Windows Forms], examples"]
 ms.assetid: bd8bd9b2-af8a-4f11-a3d5-54eecbe2400b
 caps.latest.revision: 14
 author: dotnet-bot

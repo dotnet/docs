@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assembly manifest, viewing information"
-  - "Ildasm.exe"
-  - "MSIL Disassembler"
-  - "assemblies [.NET Framework], viewing contents"
-  - "viewing assembly information"
-  - "MSIL"
-  - "viewing MSIL information"
+helpviewer_keywords: ["assembly manifest, viewing information", "Ildasm.exe", "MSIL Disassembler", "assemblies [.NET Framework], viewing contents", "viewing assembly information", "MSIL", "viewing MSIL information"]
 ms.assetid: fb7baaab-4c0d-47ad-8fd3-4591cf834709
 caps.latest.revision: 11
 author: "rpetrusha"

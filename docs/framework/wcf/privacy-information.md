@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation, privacy information"
-  - "WCF, privacy information"
-  - "privacy information [WCF]"
+helpviewer_keywords: ["Windows Communication Foundation, privacy information", "WCF, privacy information", "privacy information [WCF]"]
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
 caps.latest.revision: 34
 author: "Erikre"

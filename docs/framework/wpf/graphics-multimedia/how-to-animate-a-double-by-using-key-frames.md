@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Doubles, animating with key frames"
-  - "animation, Doubles with key frames"
-  - "key frames, animating Doubles with"
+helpviewer_keywords: ["Doubles [WPF], animating with key frames", "animation [WPF], Doubles with key frames", "key frames [WPF], animating Doubles with"]
 ms.assetid: 3a1a7dba-7694-4907-8a2f-3408baebfa82
 caps.latest.revision: 16
 author: dotnet-bot

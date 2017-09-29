@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStripMenuItems, hiding menu items in designer"
-  - "MenuStrip control [Windows Forms], hiding menu items in designer"
-  - "menu items, hiding"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStripMenuItems, hiding menu items in designer", "MenuStrip control [Windows Forms], hiding menu items in designer", "menu items, hiding"]
 ms.assetid: 8f1b057e-3d8a-4f11-88df-935f7b29a836
 caps.latest.revision: 8
 author: dotnet-bot

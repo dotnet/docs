@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "colors, animating with key frames"
-  - "animation, colors with key frames"
-  - "key frames, animating colors with"
+helpviewer_keywords: ["colors [WPF], animating with key frames", "animation [WPF], colors with key frames", "key frames [WPF], animating colors with"]
 ms.assetid: ab04ffa6-4de9-4d5b-a3b4-4e35d5b2ef35
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugStepper.IsActive"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugStepper::IsActive"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsActive method, ICorDebugStepper interface [.NET Framework debugging]"
-  - "ICorDebugStepper::IsActive method [.NET Framework debugging]"
+api_name: ["ICorDebugStepper.IsActive"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugStepper::IsActive"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsActive method, ICorDebugStepper interface [.NET Framework debugging]", "ICorDebugStepper::IsActive method [.NET Framework debugging]"]
 ms.assetid: 8b35e7a9-b40e-40a9-8d8e-b82e823fc575
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

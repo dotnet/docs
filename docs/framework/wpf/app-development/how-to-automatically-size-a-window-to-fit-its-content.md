@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "resizing windows to fit content"
-  - "windows, resizing to fit content"
-  - "sizing windows to fit content"
+helpviewer_keywords: ["resizing windows to fit content", "windows [WPF], resizing to fit content", "sizing windows to fit content"]
 ms.assetid: 333ca72a-c2f3-4414-9303-3fdabaaa1b32
 caps.latest.revision: 5
 author: dotnet-bot

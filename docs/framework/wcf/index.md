@@ -2,12 +2,9 @@
 title: "Windows Communication Foundation"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation [WCF]"
-  - "WCF [WCF]"
+helpviewer_keywords: ["Windows Communication Foundation [WCF]", "WCF [WCF]"]
 ms.assetid: 149348a6-bf82-4ccc-9604-fa7cc88c0749
 caps.latest.revision: 10
 author: "Erikre"

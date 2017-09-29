@@ -5,28 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "permission sets, modifying security policy"
-  - "security policy [.NET Framework], Code Access Security Policy tool"
-  - "enterprise security policy"
-  - "referencing code groups and permission sets"
-  - "user security policy"
-  - "Caspol.exe"
-  - "Code Access Security Policy tool"
-  - "code groups, modifying security policy"
-  - "application development [.NET Framework], security"
-  - "machine security policy"
-  - "security policy [.NET Framework], modifying"
-  - "manually editing security configuration files"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["permission sets, modifying security policy", "security policy [.NET Framework], Code Access Security Policy tool", "enterprise security policy", "referencing code groups and permission sets", "user security policy", "Caspol.exe", "Code Access Security Policy tool", "code groups, modifying security policy", "application development [.NET Framework], security", "machine security policy", "security policy [.NET Framework], modifying", "manually editing security configuration files"]
 ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
 caps.latest.revision: 44
 author: "rpetrusha"

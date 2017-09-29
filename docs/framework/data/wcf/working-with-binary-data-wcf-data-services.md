@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, binary data"
-  - "WCF Data Services, streams"
+helpviewer_keywords: ["WCF Data Services, binary data", "WCF Data Services, streams"]
 ms.assetid: aeccc45c-d5c5-4671-ad63-a492ac8043ac
 caps.latest.revision: 7
 author: "Erikre"

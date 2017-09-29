@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "AutoLog property"
-  - "services, logging information"
-  - "Windows Service applications, logging information about"
-  - "event logs, service applications"
-  - "application event logs, service applications"
-  - "logs, service applications"
+helpviewer_keywords: ["services, logging information", "Windows Service applications, logging information about", "event logs, service applications", "application event logs, service applications", "logs, service applications"]
 ms.assetid: c0d8140f-c055-4d8e-a2e0-37358a550116
 caps.latest.revision: 17
 author: "ghogen"

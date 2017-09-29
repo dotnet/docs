@@ -7,23 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Internet, connections"
-  - "HTTP, classes for connecting"
-  - "requesting data from Internet, connections"
-  - "sending data, connections"
-  - "receiving data, connections"
-  - "ServicePoint class, about ServicePoint class"
-  - "response to Internet request, connections"
-  - "connections [.NET Framework], classes"
-  - "network resources, connections"
-  - "downloading Internet resources, connections"
-  - "ServicePointManager class, about ServicePointManager class"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Internet, connections", "HTTP, classes for connecting", "requesting data from Internet, connections", "sending data, connections", "receiving data, connections", "ServicePoint class, about ServicePoint class", "response to Internet request, connections", "connections [.NET Framework], classes", "network resources, connections", "downloading Internet resources, connections", "ServicePointManager class, about ServicePointManager class"]
 ms.assetid: 9b3d3de7-189f-4f7d-81ae-9c29c441aaaa
 caps.latest.revision: 9
 author: "mcleblanc"

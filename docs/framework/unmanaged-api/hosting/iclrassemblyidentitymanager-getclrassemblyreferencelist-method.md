@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRAssemblyIdentityManager.GetCLRAssemblyReferenceList"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetClrAssemblyReferenceList method [.NET Framework hosting]"
-  - "ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList method [.NET Framework hosting]"
+api_name: ["ICLRAssemblyIdentityManager.GetCLRAssemblyReferenceList"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetClrAssemblyReferenceList method [.NET Framework hosting]", "ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList method [.NET Framework hosting]"]
 ms.assetid: cb5ffae5-287b-4a87-9ca8-7ce3ae0601b7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

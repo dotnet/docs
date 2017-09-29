@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "playing sounds, Windows Forms"
-  - "sounds, playing"
-  - "SoundPlayer class"
-  - "sounds"
-  - "My.Computer.Audio object, playing sounds"
-  - "examples [Windows Forms], sounds"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["playing sounds, Windows Forms", "sounds, playing", "sounds", "My.Computer.Audio object, playing sounds", "examples [Windows Forms], sounds"]
 ms.assetid: 3d3350b7-1ebd-4e05-a738-48ca1160a19d
 caps.latest.revision: 15
 author: dotnet-bot

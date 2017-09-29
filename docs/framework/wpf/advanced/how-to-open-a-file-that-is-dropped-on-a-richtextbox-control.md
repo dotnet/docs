@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "drag-and-drop [WPF], RichTextBox"
-  - "RichTextBox [WPF], drag-and-drop"
-  - "drag-and-drop [WPF], open a dropped file"
+helpviewer_keywords: ["drag-and-drop [WPF], RichTextBox", "RichTextBox [WPF], drag-and-drop", "drag-and-drop [WPF], open a dropped file"]
 ms.assetid: 6bb8bb54-f576-41db-a9a7-24102ddeb490
 caps.latest.revision: 5
 author: dotnet-bot

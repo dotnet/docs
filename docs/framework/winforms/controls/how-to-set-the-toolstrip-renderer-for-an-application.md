@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Renderer property [Windows Forms]"
-  - "ToolStripProfessionalRenderer class [Windows Forms]"
-  - "ToolStrip control [Windows Forms]"
-  - "MenuStrip control [Windows Forms]"
-  - "toolbars [Windows Forms], customizing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Renderer property [Windows Forms]", "ToolStripProfessionalRenderer class [Windows Forms]", "ToolStrip control [Windows Forms]", "MenuStrip control [Windows Forms]", "toolbars [Windows Forms], customizing"]
 ms.assetid: 46acef3e-9844-4ae8-9a2e-3006fe99cadf
 caps.latest.revision: 9
 author: dotnet-bot

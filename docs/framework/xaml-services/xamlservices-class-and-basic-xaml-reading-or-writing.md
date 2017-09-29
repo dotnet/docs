@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML [XAML Services], XamlServices class"
-  - "XamlServices class [XAML Services], how to use"
+helpviewer_keywords: ["XAML [XAML Services], XamlServices class", "XamlServices class [XAML Services], how to use"]
 ms.assetid: 6ac27fad-3687-4d7a-add1-3e90675fdfde
 caps.latest.revision: 11
 author: "wadepickett"

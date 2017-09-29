@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "assembly binding, redirection"
-  - "redirecting assembly binding to earlier version"
-  - "configuration [.NET Framework], applications"
-  - "application configuration [.NET Framework]"
-  - "assemblies [.NET Framework], binding redirection"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["assembly binding, redirection", "redirecting assembly binding to earlier version", "configuration [.NET Framework], applications", "application configuration [.NET Framework]", "assemblies [.NET Framework], binding redirection"]
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
 caps.latest.revision: 26
 author: "mcleblanc"

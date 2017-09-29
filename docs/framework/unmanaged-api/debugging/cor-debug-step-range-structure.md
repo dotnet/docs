@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_DEBUG_STEP_RANGE"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_DEBUG_STEP_RANGE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_DEBUG_STEP_RANGE structure [.NET Framework debugging]"
+api_name: ["COR_DEBUG_STEP_RANGE"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_DEBUG_STEP_RANGE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_DEBUG_STEP_RANGE structure [.NET Framework debugging]"]
 ms.assetid: 8809d00e-beaa-4dcf-b4e8-e89d0a5406b7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

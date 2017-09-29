@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "typography, shadow effects"
-  - "shadow effects in text"
-  - "text, shadowed"
+helpviewer_keywords: ["typography [WPF], shadow effects", "shadow effects in text", "text [WPF], shadowed"]
 ms.assetid: 6ab9c754-6001-4708-b479-5367f2fd1a35
 caps.latest.revision: 22
 author: dotnet-bot

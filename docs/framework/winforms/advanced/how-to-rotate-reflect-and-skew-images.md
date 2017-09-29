@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "images [Windows Forms], reflecting"
-  - "images [Windows Forms], rotating"
-  - "images [Windows Forms], skewing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["images [Windows Forms], reflecting", "images [Windows Forms], rotating", "images [Windows Forms], skewing"]
 ms.assetid: a3bf97eb-63ed-425a-ba07-dcc65efb567c
 caps.latest.revision: 13
 author: dotnet-bot

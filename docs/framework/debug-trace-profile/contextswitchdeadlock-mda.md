@@ -5,25 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "deadlocks [.NET Framework]"
-  - "pumping messages"
-  - "STA message pumping"
-  - "single-threaded COM components"
-  - "MDAs (managed debugging assistants), context switching deadlocks"
-  - "managed debugging assistants (MDAs), context switching deadlocks"
-  - "ContextSwitchDeadlock MDA"
-  - "message pumping"
-  - "context switching deadlocks"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["deadlocks [.NET Framework]", "pumping messages", "STA message pumping", "single-threaded COM components", "MDAs (managed debugging assistants), context switching deadlocks", "managed debugging assistants (MDAs), context switching deadlocks", "ContextSwitchDeadlock MDA", "message pumping", "context switching deadlocks"]
 ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
 caps.latest.revision: 22
 author: "mairaw"

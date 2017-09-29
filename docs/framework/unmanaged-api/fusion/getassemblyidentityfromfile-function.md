@@ -5,27 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetAssemblyIdentityFromFile"
-api_location: 
-  - "fusion.dll"
-  - "clr.dll"
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "GetAssemblyIdentityFromFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetAssemblyIdentityFromFile function [.NET Framework fusion]"
+api_name: ["GetAssemblyIdentityFromFile"]
+api_location: ["fusion.dll", "clr.dll", "mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["GetAssemblyIdentityFromFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetAssemblyIdentityFromFile function [.NET Framework fusion]"]
 ms.assetid: 2c32da53-76c7-4048-84d0-d05207333004
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

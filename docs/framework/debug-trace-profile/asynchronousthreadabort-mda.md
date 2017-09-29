@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "asynchronous thread aborts"
-  - "AsynchronousThreadAbort MDA"
-  - "managed debugging assistants (MDAs), asynchronous thread aborts"
-  - "threading [.NET Framework], managed debugging assistants"
-  - "MDAs (managed debugging assistants), asynchronous thread aborts"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["asynchronous thread aborts", "AsynchronousThreadAbort MDA", "managed debugging assistants (MDAs), asynchronous thread aborts", "threading [.NET Framework], managed debugging assistants", "MDAs (managed debugging assistants), asynchronous thread aborts"]
 ms.assetid: 9ebe40b2-d703-421e-8660-984acc42bfe0
 caps.latest.revision: 10
 author: "mairaw"

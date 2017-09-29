@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_PRF_SUSPEND_REASON"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_PRF_SUSPEND_REASON"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_PRF_SUSPEND_REASON enumeration [.NET Framework profiling]"
+api_name: ["COR_PRF_SUSPEND_REASON"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_PRF_SUSPEND_REASON"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_PRF_SUSPEND_REASON enumeration [.NET Framework profiling]"]
 ms.assetid: 75594833-bed3-47b2-a426-b75c5fe6fbcf
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

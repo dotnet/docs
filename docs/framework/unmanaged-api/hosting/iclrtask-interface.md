@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRTask interface [.NET Framework hosting]"
+api_name: ["ICLRTask"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRTask interface [.NET Framework hosting]"]
 ms.assetid: b3a44df3-578a-4451-b55e-70c8e7695f5e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

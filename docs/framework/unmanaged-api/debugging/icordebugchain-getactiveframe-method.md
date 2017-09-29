@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugChain.GetActiveFrame"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugChain::GetActiveFrame"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugChain::GetActiveFrame method [.NET Framework debugging]"
-  - "GetActiveFrame method, ICorDebugChain interface [.NET Framework debugging]"
+api_name: ["ICorDebugChain.GetActiveFrame"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugChain::GetActiveFrame"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugChain::GetActiveFrame method [.NET Framework debugging]", "GetActiveFrame method, ICorDebugChain interface [.NET Framework debugging]"]
 ms.assetid: 36887017-670b-4f21-b406-8fab956f84a3
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

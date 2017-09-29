@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged API reference [.NET Framework], metadata"
-  - "native API reference [.NET Framework], metadata"
-  - "metadata [.NET Framework], using the unmanaged API"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged API reference [.NET Framework], metadata", "native API reference [.NET Framework], metadata", "metadata [.NET Framework], using the unmanaged API"]
 ms.assetid: 10cfea92-db5e-4bcb-b301-ef029bcf77a3
 caps.latest.revision: 9
 author: "mairaw"

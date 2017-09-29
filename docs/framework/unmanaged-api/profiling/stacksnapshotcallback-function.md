@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "StackSnapshotCallback"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "StackSnapshotCallback"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StackSnapshotCallback function [.NET Framework profiling]"
+api_name: ["StackSnapshotCallback"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["StackSnapshotCallback"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StackSnapshotCallback function [.NET Framework profiling]"]
 ms.assetid: d0f235b2-91fe-4f82-b7d5-e5c64186eea8
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

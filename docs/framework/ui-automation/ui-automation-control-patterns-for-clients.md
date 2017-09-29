@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, control patterns for clients"
-  - "control patterns, UI Automation clients"
+helpviewer_keywords: ["UI Automation, control patterns for clients", "control patterns, UI Automation clients"]
 ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
 caps.latest.revision: 24
 author: "Xansky"

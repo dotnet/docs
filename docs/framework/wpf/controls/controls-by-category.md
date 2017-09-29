@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, listed by category"
+helpviewer_keywords: ["controls [WPF], listed by category"]
 ms.assetid: f8a1f78e-d9fa-4367-9ec6-f084577e83bb
 caps.latest.revision: 18
 author: dotnet-bot

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "in-process side-by-side execution"
-  - "side-by-side execution, in-process"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["in-process side-by-side execution", "side-by-side execution, in-process"]
 ms.assetid: 18019342-a810-4986-8ec2-b933a17c2267
 caps.latest.revision: 25
 author: "mairaw"

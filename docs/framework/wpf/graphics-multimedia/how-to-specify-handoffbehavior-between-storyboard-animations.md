@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Storyboards, handoff behavior between animations"
-  - "animation, handoff behavior between"
+helpviewer_keywords: ["Storyboards [WPF], handoff behavior between animations", "animation [WPF], handoff behavior between"]
 ms.assetid: 97bd6842-929b-49d9-813e-46553ae46472
 caps.latest.revision: 12
 author: dotnet-bot

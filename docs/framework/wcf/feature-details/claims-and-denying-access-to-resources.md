@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "claims [WCF], denying access to resources"
+helpviewer_keywords: ["claims [WCF], denying access to resources"]
 ms.assetid: 145ebb41-680e-4256-b14c-1efb4af1e982
 caps.latest.revision: 8
 author: "Erikre"

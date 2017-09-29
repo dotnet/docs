@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "SPC"
-  - "Software Publisher Certificate Test tool"
-  - "Software Publisher Certificate"
-  - "Cert2spc.exe"
-  - "certificates, Software Publisher's Certificate"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["SPC", "Software Publisher Certificate Test tool", "Software Publisher Certificate", "Cert2spc.exe", "certificates, Software Publisher's Certificate"]
 ms.assetid: be434d7d-9c0d-46e7-8392-58a9b542d11d
 caps.latest.revision: 21
 author: "rpetrusha"

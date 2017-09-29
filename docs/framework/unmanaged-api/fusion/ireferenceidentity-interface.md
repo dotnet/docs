@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IReferenceIdentity"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IReferenceIdentity"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IReferenceIdentity interface [.NET Framework fusion]"
+api_name: ["IReferenceIdentity"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IReferenceIdentity"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IReferenceIdentity interface [.NET Framework fusion]"]
 ms.assetid: 9180ac5a-7019-4716-9f83-8a91d157239a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

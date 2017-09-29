@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "loader events [.NET Framework]"
-  - "ETW, loader events (CLR)"
+helpviewer_keywords: ["loader events [.NET Framework]", "ETW, loader events (CLR)"]
 ms.assetid: cb403cc6-56f8-4609-b467-cdfa09f07909
 caps.latest.revision: 18
 author: "mairaw"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyName.IsEqual"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyName::IsEqual"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsEqual method [.NET Framework fusion]"
-  - "IAssemblyName::IsEqual method [.NET Framework fusion]"
+api_name: ["IAssemblyName.IsEqual"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyName::IsEqual"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsEqual method [.NET Framework fusion]", "IAssemblyName::IsEqual method [.NET Framework fusion]"]
 ms.assetid: 6dfc220f-d0d4-45b3-bfce-5829f817766f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

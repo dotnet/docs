@@ -5,27 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "deploying applications [.NET Framework], interop"
-  - "strong-named assemblies, interop applications"
-  - "unsigned assemblies"
-  - "private assemblies"
-  - "exposing COM components to .NET Framework"
-  - "interoperation with unmanaged code, deploying applications"
-  - "shared assemblies"
-  - "COM interop, deploying applications"
-  - "interoperation with unmanaged code, exposing COM components"
-  - "signed assemblies"
-  - "COM interop, exposing COM components"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["deploying applications [.NET Framework], interop", "strong-named assemblies, interop applications", "unsigned assemblies", "private assemblies", "exposing COM components to .NET Framework", "interoperation with unmanaged code, deploying applications", "shared assemblies", "COM interop, deploying applications", "interoperation with unmanaged code, exposing COM components", "signed assemblies", "COM interop, exposing COM components"]
 ms.assetid: ea8a403e-ae03-4faa-9d9b-02179ec72992
 caps.latest.revision: 10
 author: "rpetrusha"

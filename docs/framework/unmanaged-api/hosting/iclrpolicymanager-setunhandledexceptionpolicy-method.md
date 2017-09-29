@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRPolicyManager.SetUnhandledExceptionPolicy"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRPolicyManager::SetUnhandledExceptionPolicy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRPolicyManager::SetUnhandledExceptionPolicy method [.NET Framework hosting]"
-  - "SetUnhandledExceptionPolicy method [.NET Framework hosting]"
+api_name: ["ICLRPolicyManager.SetUnhandledExceptionPolicy"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRPolicyManager::SetUnhandledExceptionPolicy"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRPolicyManager::SetUnhandledExceptionPolicy method [.NET Framework hosting]", "SetUnhandledExceptionPolicy method [.NET Framework hosting]"]
 ms.assetid: 5268480e-280a-4931-b7a3-dc3ffdf7f78f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

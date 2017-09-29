@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymENCUnmanagedMethod.GetFileNameFromOffset"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymENCUnmanagedMethod::GetFileNameFromOffset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetFileNameFromOffset method [.NET Framework debugging]"
-  - "ISymENCUnmanagedMethod::GetFileNameFromOffset method [.NET Framework debugging]"
+api_name: ["ISymENCUnmanagedMethod.GetFileNameFromOffset"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymENCUnmanagedMethod::GetFileNameFromOffset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetFileNameFromOffset method [.NET Framework debugging]", "ISymENCUnmanagedMethod::GetFileNameFromOffset method [.NET Framework debugging]"]
 ms.assetid: 00e2e194-12f5-436e-a997-2b9d3e844d4f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

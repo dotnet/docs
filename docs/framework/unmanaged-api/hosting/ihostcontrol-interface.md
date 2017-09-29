@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostControl"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostControl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostControl interface [.NET Framework hosting]"
+api_name: ["IHostControl"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostControl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostControl interface [.NET Framework hosting]"]
 ms.assetid: a4ae0d1f-ade9-4b0a-a122-93ed11a5e6b3
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

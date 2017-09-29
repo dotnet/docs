@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "AddImport"
-  - "IALink.AddImport"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "AddImport"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AddImport method"
+api_name: ["AddImport", "IALink.AddImport"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["AddImport"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AddImport method"]
 ms.assetid: 4fedf8a0-08c8-43d0-aa00-20f2a521c991
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

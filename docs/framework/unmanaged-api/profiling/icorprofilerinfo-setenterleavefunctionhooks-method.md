@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo.SetEnterLeaveFunctionHooks"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo::SetEnterLeaveFunctionHooks"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetEnterLeaveFunctionHooks method [.NET Framework profiling]"
-  - "ICorProfilerInfo::SetEnterLeaveFunctionHooks method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo.SetEnterLeaveFunctionHooks"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo::SetEnterLeaveFunctionHooks"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetEnterLeaveFunctionHooks method [.NET Framework profiling]", "ICorProfilerInfo::SetEnterLeaveFunctionHooks method [.NET Framework profiling]"]
 ms.assetid: 72399636-c219-4ffd-8ac8-39432c9d4641
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

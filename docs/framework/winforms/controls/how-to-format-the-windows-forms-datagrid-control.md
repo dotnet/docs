@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "columns [Windows Forms], DataGrid control"
-  - "colors, applying to DataGrid controls"
-  - "DataGrid control [Windows Forms], formatting"
-  - "columns [Windows Forms], formatting in DataGrid control"
-  - "DataGrid control [Windows Forms], default styles"
-  - "tables [Windows Forms], formatting in DataGrid control"
-  - "formatting [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["columns [Windows Forms], DataGrid control", "colors [Windows Forms], applying to DataGrid controls", "DataGrid control [Windows Forms], formatting", "columns [Windows Forms], formatting in DataGrid control", "DataGrid control [Windows Forms], default styles", "tables [Windows Forms], formatting in DataGrid control", "formatting [Windows Forms]"]
 ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
 caps.latest.revision: 14
 author: dotnet-bot

@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "plug-in for Firefox [WPF]"
-  - "detecting Firefox installation [WPF]"
-  - "checking for the Firefox plug-in [WPF]"
-  - "Firefox [WPF], detecting installation"
-  - "detecting whether the WPF plug-in for Firefox is installed [WPF]"
+helpviewer_keywords: ["plug-in for Firefox [WPF]", "detecting Firefox installation [WPF]", "checking for the Firefox plug-in [WPF]", "Firefox [WPF], detecting installation", "detecting whether the WPF plug-in for Firefox is installed [WPF]"]
 ms.assetid: 5f839373-e3fb-44f1-88ad-4a0761f02189
 caps.latest.revision: 9
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Service applications, starting"
-  - "services, starting"
+helpviewer_keywords: ["Windows Service applications, starting", "services, starting"]
 ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
 caps.latest.revision: 16
 author: "ghogen"

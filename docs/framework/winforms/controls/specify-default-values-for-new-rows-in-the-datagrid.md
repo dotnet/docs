@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, default values for new rows"
-  - "DataGridView control [Windows Forms], data entry"
-  - "rows, specifying default values"
-  - "DataGridView control [Windows Forms], default values for new rows"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids [Windows Forms], default values for new rows", "DataGridView control [Windows Forms], data entry", "rows, specifying default values", "DataGridView control [Windows Forms], default values for new rows"]
 ms.assetid: 8d127963-d9f8-4e4e-9f7f-beb66688f1f2
 caps.latest.revision: 12
 author: dotnet-bot

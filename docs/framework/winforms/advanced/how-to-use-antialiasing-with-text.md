@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "strings [Windows Forms], smoothing drawn"
-  - "antialiasing, using with text"
-  - "text [Windows Forms], smoothing"
-  - "text [Windows Forms], antialiasing"
-  - "strings [Windows Forms], antialiasing when drawing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["strings [Windows Forms], smoothing drawn", "antialiasing, using with text", "text [Windows Forms], smoothing", "text [Windows Forms], antialiasing", "strings [Windows Forms], antialiasing when drawing"]
 ms.assetid: 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
 caps.latest.revision: 16
 author: dotnet-bot

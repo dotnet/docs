@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Windows Communication Foundation, endpoints"
-  - "Windows Communication Foundation, configuration"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Windows Communication Foundation, endpoints", "Windows Communication Foundation, configuration"]
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
 caps.latest.revision: 33
 author: "Erikre"

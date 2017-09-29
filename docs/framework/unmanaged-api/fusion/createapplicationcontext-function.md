@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CreateApplicationContext"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "CreateApplicationContext"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateApplicationContext function [.NET Framework fusion]"
+api_name: ["CreateApplicationContext"]
+api_location: ["fusion.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["CreateApplicationContext"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateApplicationContext function [.NET Framework fusion]"]
 ms.assetid: 7bf8a141-b2c0-4058-9885-1cef7dcaa811
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

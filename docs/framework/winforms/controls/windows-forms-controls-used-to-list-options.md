@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, listing options"
-  - "option lists in Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, listing options", "option lists in Windows Forms"]
 ms.assetid: 5bc064c7-bc1f-4b62-8f4b-252f864b118e
 caps.latest.revision: 10
 author: dotnet-bot

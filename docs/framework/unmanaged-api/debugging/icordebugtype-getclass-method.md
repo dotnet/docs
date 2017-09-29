@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugType.GetClass"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugType::GetClass"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugType::GetClass method [.NET Framework debugging]"
-  - "GetClass method, ICorDebugType interface [.NET Framework debugging]"
+api_name: ["ICorDebugType.GetClass"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugType::GetClass"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugType::GetClass method [.NET Framework debugging]", "GetClass method, ICorDebugType interface [.NET Framework debugging]"]
 ms.assetid: 2644f48b-db3c-429f-ae62-76f1c98a1af5
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

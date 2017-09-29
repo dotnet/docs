@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "shortcut menus, adding to TreeView controls"
-  - "TreeView control [Windows Forms], adding shortcut menus"
-  - "tree nodes in TreeView control, shortcut menus"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["shortcut menus [Windows Forms], adding to TreeView controls", "TreeView control [Windows Forms], adding shortcut menus", "tree nodes in TreeView control, shortcut menus"]
 ms.assetid: a23c6752-fd8f-44ad-b781-bab37962fc7c
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - ".NET Framework, version compatibility"
-  - ".NET Framework 4.5, compatibility with earlier versions"
-  - ".NET Framework versions, compatibility"
+helpviewer_keywords: [".NET Framework, version compatibility", ".NET Framework 4.5, compatibility with earlier versions", ".NET Framework versions, compatibility"]
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
 caps.latest.revision: 35
 author: "rpetrusha"

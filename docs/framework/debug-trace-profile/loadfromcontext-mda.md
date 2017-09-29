@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), LoadFrom context"
-  - "managed debugging assistants (MDAs), LoadFrom context"
-  - "LoadFrom context"
-  - "LoadFromContext MDA"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), LoadFrom context", "managed debugging assistants (MDAs), LoadFrom context", "LoadFrom context", "LoadFromContext MDA"]
 ms.assetid: a9b14db1-d3a9-4150-a767-dcf3aea0071a
 caps.latest.revision: 8
 author: "mairaw"

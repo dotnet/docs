@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRGCManager.SetGCStartupLimits"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRGCManager::SetGCStartupLimits"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetGCStartupLimits method, ICLRGCManager interface [.NET Framework hosting]"
-  - "ICLRGCManager::SetGCStartupLimits method [.NET Framework hosting]"
+api_name: ["ICLRGCManager.SetGCStartupLimits"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRGCManager::SetGCStartupLimits"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetGCStartupLimits method, ICLRGCManager interface [.NET Framework hosting]", "ICLRGCManager::SetGCStartupLimits method [.NET Framework hosting]"]
 ms.assetid: 1c8d9959-95b5-4131-be4a-556d97774014
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

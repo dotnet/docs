@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "parts [WPF], ScrollViewer"
-  - "states [WPF], ScrollViewer"
-  - "styles [WPF], ScrollViewer"
-  - "templates [WPF], ScrollViewer"
-  - "ControlTemplate [WPF], ScrollViewer"
-  - "ScrollViewer [WPF], styles and templates"
+helpviewer_keywords: ["parts [WPF], ScrollViewer", "states [WPF], ScrollViewer", "styles [WPF], ScrollViewer", "templates [WPF], ScrollViewer", "ControlTemplate [WPF], ScrollViewer", "ScrollViewer [WPF], styles and templates"]
 ms.assetid: dffdd822-ae69-4946-abaf-710860cd65b2
 caps.latest.revision: 12
 author: dotnet-bot

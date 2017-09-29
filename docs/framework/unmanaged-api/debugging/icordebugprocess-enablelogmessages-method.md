@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugProcess.EnableLogMessages"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugProcess::EnableLogMessages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugProcess::EnableLogMessages method [.NET Framework debugging]"
-  - "EnableLogMessages method [.NET Framework debugging]"
+api_name: ["ICorDebugProcess.EnableLogMessages"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugProcess::EnableLogMessages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugProcess::EnableLogMessages method [.NET Framework debugging]", "EnableLogMessages method [.NET Framework debugging]"]
 ms.assetid: 14a4e5a3-3eaf-4f53-9dd1-762726963a23
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ContextMenuOpening event"
+helpviewer_keywords: ["ContextMenuOpening properties [WPF]"]
 ms.assetid: 789652fb-1951-4217-934a-7843e355adf4
 caps.latest.revision: 7
 author: dotnet-bot

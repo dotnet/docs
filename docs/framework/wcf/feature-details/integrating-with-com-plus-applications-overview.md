@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Windows Communication Foundation, COM+ integration"
-  - "WCF, COM+ integration"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Windows Communication Foundation, COM+ integration", "WCF, COM+ integration"]
 ms.assetid: e481e48f-7096-40eb-9f20-7f0098412941
 caps.latest.revision: 29
 author: "Erikre"

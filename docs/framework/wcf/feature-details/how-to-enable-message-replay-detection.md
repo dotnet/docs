@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF security"
-  - "replay detection [WCF]"
-  - "WCF, custom bindings"
-  - "WCF, security"
+helpviewer_keywords: ["WCF security", "replay detection [WCF]", "WCF, custom bindings", "WCF, security"]
 ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
 caps.latest.revision: 10
 author: "Erikre"

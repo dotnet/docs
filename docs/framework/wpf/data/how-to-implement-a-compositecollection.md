@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "classes, CompositeCollection"
-  - "data binding, CompositeCollection class"
+helpviewer_keywords: ["data binding [WPF], CompositeCollection class"]
 ms.assetid: 0d8fc84c-7920-427f-8ad7-d55ca656c170
 caps.latest.revision: 10
 author: dotnet-bot

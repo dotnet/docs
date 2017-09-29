@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "images [Windows Forms], using with brushes"
-  - "bitmaps [Windows Forms], using texture"
-  - "shapes, filling with images"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["images [Windows Forms], using with brushes", "bitmaps [Windows Forms], using texture", "shapes [Windows Forms], filling with images"]
 ms.assetid: 508da5a6-2433-4d2b-9680-eaeae4e96e3b
 caps.latest.revision: 15
 author: dotnet-bot

@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "menus, shortcut menus"
-  - "Windows Forms, menus"
-  - "pop-up menus"
-  - "ContextMenu component [Windows Forms]"
-  - "menus, context menus"
-  - "context menus, for Windows Forms"
-  - "shortcut menus, ContextMenu component"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["menus [Windows Forms], shortcut menus", "Windows Forms, menus", "pop-up menus", "ContextMenu component [Windows Forms]", "menus [Windows Forms], context menus", "context menus [Windows Forms], for Windows Forms", "shortcut menus [Windows Forms], ContextMenu component"]
 ms.assetid: 9b93ccbc-c0fe-44a2-968e-faac25971831
 caps.latest.revision: 13
 author: dotnet-bot

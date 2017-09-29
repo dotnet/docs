@@ -5,21 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/cryptoClasses"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptoClasses"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<cryptoClasses> element"
-  - "cryptoClasses element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/cryptoClasses", "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptoClasses"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<cryptoClasses> element", "cryptoClasses element"]
 ms.assetid: 290d5f96-946d-4f02-babb-1d31ec0b8295
 caps.latest.revision: 16
 author: "mcleblanc"

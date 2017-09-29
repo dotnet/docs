@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "stack event [.NET Framework]"
-  - "ETW, stack event (CLR)"
+helpviewer_keywords: ["stack event [.NET Framework]", "ETW, stack event (CLR)"]
 ms.assetid: f612fa5b-4b62-4593-a19e-85c9b1018dce
 caps.latest.revision: 5
 author: "mairaw"

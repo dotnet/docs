@@ -5,24 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), reference counting errors"
-  - "exceptions, reference counting errors"
-  - "ReportAvOnComRelease MDA"
-  - "COM release access violations"
-  - "user reference counting errors"
-  - "managed debugging assistants (MDAs), reference counting errors"
-  - "report access violation on Com release"
-  - "reference counting errors"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), reference counting errors", "exceptions, reference counting errors", "ReportAvOnComRelease MDA", "COM release access violations", "user reference counting errors", "managed debugging assistants (MDAs), reference counting errors", "report access violation on Com release", "reference counting errors"]
 ms.assetid: a2b86b63-08b2-4943-b344-3c2cf46ccd31
 caps.latest.revision: 15
 author: "mairaw"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "GC events"
-  - "garbage collection events [.NET Framework]"
-  - "ETW, garbage collection events (CLR)"
+helpviewer_keywords: ["GC events", "garbage collection events [.NET Framework]", "ETW, garbage collection events (CLR)"]
 ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
 caps.latest.revision: 21
 author: "mairaw"

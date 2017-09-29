@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged interfaces [.NET Framework], metadata"
-  - "metadata interfaces [.NET Framework]"
-  - "interfaces (.NET Framework metadata]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged interfaces [.NET Framework], metadata", "metadata interfaces [.NET Framework]", "interfaces (.NET Framework metadata]"]
 ms.assetid: f5cdac93-a28c-48ef-8a19-5773376e9e7c
 caps.latest.revision: 15
 author: "mairaw"

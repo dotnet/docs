@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls [WPF], customizing"
-  - "VisualStateManager [WPF], managing the state of a control"
-  - "ControlTemplate [WPF], customizing appearance"
-  - "controls [WPF], defining the visual structure and behavior of"
-  - "customizing appearance [WPF], ControlTemplate"
-  - "managing control states [WPF], VisualStateManager"
-  - "VisualStateManager [WPF], best practice"
+helpviewer_keywords: ["controls [WPF], customizing", "VisualStateManager [WPF], managing the state of a control", "ControlTemplate [WPF], customizing appearance", "controls [WPF], defining the visual structure and behavior of", "customizing appearance [WPF], ControlTemplate", "managing control states [WPF], VisualStateManager", "VisualStateManager [WPF], best practice"]
 ms.assetid: 9e356d3d-a3d0-4b01-a25f-2d43e4d53fe5
 caps.latest.revision: 10
 author: dotnet-bot

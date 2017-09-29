@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "RelativeBindForResources element"
-  - "<relativeBindForResources> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["RelativeBindForResources element", "<relativeBindForResources> element"]
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
 caps.latest.revision: 7
 author: "rpetrusha"

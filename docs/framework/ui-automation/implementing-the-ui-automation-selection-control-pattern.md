@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Selection control pattern"
-  - "UI Automation, Selection control pattern"
-  - "control patterns, Selection"
+helpviewer_keywords: ["Selection control pattern", "UI Automation, Selection control pattern", "control patterns, Selection"]
 ms.assetid: 449c3068-a5d6-4f66-84c6-1bcc7dd4d209
 caps.latest.revision: 33
 author: "Xansky"

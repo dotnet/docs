@@ -5,22 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/bindingRedirect"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#bindingRedirect"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<bindingRedirect> element"
-  - "container tags, <bindingRedirect> element"
-  - "bindingRedirect element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/bindingRedirect", "http://schemas.microsoft.com/.NetConfiguration/v2.0#bindingRedirect"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<bindingRedirect> element", "container tags, <bindingRedirect> element", "bindingRedirect element"]
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
 caps.latest.revision: 12
 author: "mcleblanc"

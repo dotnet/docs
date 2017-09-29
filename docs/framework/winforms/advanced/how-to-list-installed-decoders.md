@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "image codecs, listing"
-  - "image decoders, listing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["image codecs, listing", "image decoders, listing"]
 ms.assetid: 11417191-8c95-40ca-8024-779e61706fb6
 caps.latest.revision: 8
 author: dotnet-bot

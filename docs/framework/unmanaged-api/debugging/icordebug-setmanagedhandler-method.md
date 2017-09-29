@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebug.SetManagedHandler"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebug::SetManagedHandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebug::SetManagedHandler method [.NET Framework debugging]"
-  - "SetManagedHandler method [.NET Framework debugging]"
+api_name: ["ICorDebug.SetManagedHandler"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebug::SetManagedHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebug::SetManagedHandler method [.NET Framework debugging]", "SetManagedHandler method [.NET Framework debugging]"]
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

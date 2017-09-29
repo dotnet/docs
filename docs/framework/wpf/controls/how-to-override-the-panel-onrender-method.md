@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "overriding OnRender method"
-  - "Panel control, overriding OnRender method"
-  - "OnRender method"
-  - "controls, Panel, overriding OnRender method"
-helpviewer_keywords: 
-  - "overriding OnRender method of Panel control"
-  - "OnRender method, overriding"
-  - "Panel control, overriding OnRender method"
+f1_keywords: ["overriding OnRender method", "Panel control, overriding OnRender method", "OnRender method", "controls, Panel, overriding OnRender method"]
+helpviewer_keywords: ["overriding OnRender method of Panel control", "OnRender method [WPF], overriding", "Panel control [WPF], overriding OnRender method"]
 ms.assetid: 57397834-a085-4e36-90ab-416fad98f341
 caps.latest.revision: 9
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "flicker, reducing by manually rendering graphics"
-  - "graphics [Windows Forms], rendering"
-  - "BufferedGraphics class"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["flicker, reducing by manually rendering graphics", "graphics [Windows Forms], rendering"]
 ms.assetid: 5192295e-bd8e-45f7-8bd6-5c4f6bd21e61
 caps.latest.revision: 10
 author: dotnet-bot

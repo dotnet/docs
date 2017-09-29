@@ -7,23 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "requesting data from Internet, streams"
-  - "Networking"
-  - "response to Internet request, streams"
-  - "network resources, stream capabilities"
-  - "receiving data, stream capabilities"
-  - "Network Resources"
-  - "sending data, stream capabilities"
-  - "downloading Internet resources, streams"
-  - "streams, capabilities"
-  - "Internet, streams"
-  - "streams"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["requesting data from Internet, streams", "Networking", "response to Internet request, streams", "network resources, stream capabilities", "receiving data, stream capabilities", "Network Resources", "sending data, stream capabilities", "downloading Internet resources, streams", "streams, capabilities", "Internet, streams", "streams"]
 ms.assetid: 02b05fba-7235-45ce-94e5-060436ee0875
 caps.latest.revision: 10
 author: "mcleblanc"

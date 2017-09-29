@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Net profile TCP"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Net profile TCP"]
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
 caps.latest.revision: 39
 author: "Erikre"

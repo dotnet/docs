@@ -7,24 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "downloading Internet resources, pluggable protocols"
-  - "WebRequest class, pluggable protocols"
-  - "response to Internet request, pluggable protocols"
-  - "WebResponse class, pluggable protocols"
-  - "sending data, pluggable protocols"
-  - "network resources, pluggable protocols"
-  - "Internet, pluggable protocols"
-  - "programming pluggable protocols"
-  - "pluggable protocols, programming"
-  - "requesting data from Internet, pluggable protocols"
-  - "receiving data, pluggable protocols"
-  - "protocols, pluggable"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["downloading Internet resources, pluggable protocols", "WebRequest class, pluggable protocols", "response to Internet request, pluggable protocols", "WebResponse class, pluggable protocols", "sending data, pluggable protocols", "network resources, pluggable protocols", "Internet, pluggable protocols", "programming pluggable protocols", "pluggable protocols, programming", "requesting data from Internet, pluggable protocols", "receiving data, pluggable protocols", "protocols, pluggable"]
 ms.assetid: 66ef8456-7576-4e97-8956-959b216373db
 caps.latest.revision: 12
 author: "mcleblanc"

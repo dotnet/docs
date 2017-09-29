@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IALink.GetScope"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "GetScope"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetScope method"
+api_name: ["IALink.GetScope"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["GetScope"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetScope method"]
 ms.assetid: e1555328-2c71-4ece-b357-9eb6d3a8efc4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

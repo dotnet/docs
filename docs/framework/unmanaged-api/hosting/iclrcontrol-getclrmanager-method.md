@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRControl.GetCLRManager"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRControl::GetCLRManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetCLRManager method [.NET Framework hosting]"
-  - "ICLRControl::GetCLRManager method [.NET Framework hosting]"
+api_name: ["ICLRControl.GetCLRManager"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRControl::GetCLRManager"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetCLRManager method [.NET Framework hosting]", "ICLRControl::GetCLRManager method [.NET Framework hosting]"]
 ms.assetid: 8a11bfa4-cbb0-4082-82b5-f9fba66c93f5
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

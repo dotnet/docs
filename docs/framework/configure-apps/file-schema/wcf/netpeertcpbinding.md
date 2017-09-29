@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "netPeerBinding element"
+helpviewer_keywords: ["netPeerBinding element"]
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
 caps.latest.revision: 20
 author: "Erikre"

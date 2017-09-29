@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.SetParent"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::SetParent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetParent method [.NET Framework metadata]"
-  - "IMetaDataEmit::SetParent method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.SetParent"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::SetParent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetParent method [.NET Framework metadata]", "IMetaDataEmit::SetParent method [.NET Framework metadata]"]
 ms.assetid: 02a02ff7-ae0e-4692-a20e-372405f23052
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

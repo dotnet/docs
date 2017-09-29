@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "obtaining assembly information"
-  - "assemblies [.NET Framework], obtaining information from"
+helpviewer_keywords: ["obtaining assembly information", "assemblies [.NET Framework], obtaining information from"]
 ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
 caps.latest.revision: 11
 author: "rpetrusha"

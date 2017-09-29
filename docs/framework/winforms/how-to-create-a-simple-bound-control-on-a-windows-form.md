@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data binding, simple data binding"
-  - "Windows Forms controls, data binding"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data binding [Windows Forms], simple data binding", "Windows Forms controls, data binding"]
 ms.assetid: 3bcaded8-0f1a-4cc0-8830-f59be253bf4e
 caps.latest.revision: 9
 author: dotnet-bot

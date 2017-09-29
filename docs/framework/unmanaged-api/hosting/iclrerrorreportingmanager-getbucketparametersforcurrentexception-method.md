@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRErrorReportingManager.GetBucketParametersForCurrentException"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRErrorReportingManager::GetBucketParametersForCurrentException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRErrorReportingManager::GetBucketParametersForCurrentException method [.NET Framework hosting]"
-  - "GetBucketParametersForCurrentException method [.NET Framework hosting]"
+api_name: ["ICLRErrorReportingManager.GetBucketParametersForCurrentException"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRErrorReportingManager::GetBucketParametersForCurrentException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRErrorReportingManager::GetBucketParametersForCurrentException method [.NET Framework hosting]", "GetBucketParametersForCurrentException method [.NET Framework hosting]"]
 ms.assetid: a13ec8a6-8e18-4acb-8054-77f5b1a0e0b9
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

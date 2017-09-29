@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "certificates [WCF], creating temporary certificates"
-  - "temporary certificates [WCF]"
+helpviewer_keywords: ["certificates [WCF], creating temporary certificates", "temporary certificates [WCF]"]
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
 caps.latest.revision: 14
 author: "Erikre"

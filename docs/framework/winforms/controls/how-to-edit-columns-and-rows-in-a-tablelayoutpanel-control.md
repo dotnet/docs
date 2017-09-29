@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "net.ComponentModel.StyleCollectionEditor"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "columns [Windows Forms], editing"
-  - "TableLayoutPanel control [Windows Forms], editing"
-  - "rows [Windows Forms], editing"
+f1_keywords: ["net.ComponentModel.StyleCollectionEditor"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["columns [Windows Forms], editing", "TableLayoutPanel control [Windows Forms], editing", "rows [Windows Forms], editing"]
 ms.assetid: c367ed43-40dc-49eb-9e0f-ba70e83dfec0
 caps.latest.revision: 12
 author: dotnet-bot

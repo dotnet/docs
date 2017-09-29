@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data [Windows Forms], managing large data sets"
-  - "DataGridView control [Windows Forms], virtual mode"
-  - "virtual mode"
-  - "DataGridView control [Windows Forms], large data sets"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data [Windows Forms], managing large data sets", "DataGridView control [Windows Forms], virtual mode", "virtual mode", "DataGridView control [Windows Forms], large data sets"]
 ms.assetid: 98236267-f08e-4918-bcf9-77acf050a3ca
 caps.latest.revision: 15
 author: dotnet-bot

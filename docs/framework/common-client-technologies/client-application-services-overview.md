@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "client application services, classes"
-  - "client application services, about client application services"
+helpviewer_keywords: ["client application services, classes", "client application services, about client application services"]
 ms.assetid: f0a2da13-e282-4fd7-88a1-f9102c9aeab1
 caps.latest.revision: 25
 author: dotnet-bot

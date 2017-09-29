@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "tooltips [Windows Forms]"
-  - "ToolTip component [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["tooltips [Windows Forms]", "ToolTip component [Windows Forms]"]
 ms.assetid: 82e71dc3-0159-4f91-9f22-499224f004a0
 caps.latest.revision: 8
 author: dotnet-bot

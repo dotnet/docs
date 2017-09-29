@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "resources [WPF], packaging string resources"
-  - "packaging string resources"
-  - "ResourceDictionary [WPF]"
-  - "localization [WPF], packaging string resources"
+helpviewer_keywords: ["resources [WPF], packaging string resources", "packaging string resources [WPF]", "ResourceDictionary [WPF]", "localization [WPF], packaging string resources"]
 ms.assetid: 19e7d9a5-20df-4ad3-b157-fe6515902e5e
 caps.latest.revision: 9
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drag and drop"
-  - "drag and drop, Windows Forms"
-  - "Clipboard, Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drag and drop", "drag and drop, Windows Forms", "Clipboard, Windows Forms"]
 ms.assetid: 7cce79b6-5835-46fd-b690-73f12ad368b2
 caps.latest.revision: 14
 author: dotnet-bot

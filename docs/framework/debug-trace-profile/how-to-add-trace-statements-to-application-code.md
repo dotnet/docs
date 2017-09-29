@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "tracing [.NET Framework], conditional writes based on switches"
-  - "trace statements"
-  - "WriteLineIf method"
-  - "tracing [.NET Framework], adding trace statements"
-  - "Assert method, tracing code"
-  - "trace switches, conditional writes based on switches"
-  - "WriteIf method"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["tracing [.NET Framework], conditional writes based on switches", "trace statements", "tracing [.NET Framework], adding trace statements", "Assert method, tracing code", "trace switches, conditional writes based on switches", "WriteIf method"]
 ms.assetid: f3a93fa7-1717-467d-aaff-393e5c9828b4
 caps.latest.revision: 13
 author: "mairaw"

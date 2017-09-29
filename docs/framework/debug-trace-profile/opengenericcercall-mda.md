@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), CER calls"
-  - "open generic CER calls"
-  - "constrained execution regions"
-  - "openGenericCERCall MDA"
-  - "CER calls"
-  - "managed debugging assistants (MDAs), CER calls"
-  - "generics [.NET Framework], open generic CER calls"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), CER calls", "open generic CER calls", "constrained execution regions", "openGenericCERCall MDA", "CER calls", "managed debugging assistants (MDAs), CER calls", "generics [.NET Framework], open generic CER calls"]
 ms.assetid: da3e4ff3-2e67-4668-9720-fa776c97407e
 caps.latest.revision: 13
 author: "mairaw"

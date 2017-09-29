@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Windows Forms], property methods"
-  - "Reset method"
-  - "ShouldPersist method"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Windows Forms], property methods", "ShouldPersist method"]
 ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
 caps.latest.revision: 11
 author: dotnet-bot

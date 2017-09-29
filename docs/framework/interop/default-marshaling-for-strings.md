@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "strings, interop marshaling"
-  - "interop marshaling, strings"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["strings, interop marshaling", "interop marshaling, strings"]
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
 caps.latest.revision: 18
 author: "rpetrusha"

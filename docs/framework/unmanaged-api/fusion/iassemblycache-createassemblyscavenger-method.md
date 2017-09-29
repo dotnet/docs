@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAssemblyCache.CreateAssemblyScavenger"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAssemblyCache::CreateAssemblyScavenger"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateAssemblyScavenger method [.NET Framework fusion]"
-  - "IAssemblyCache::CreateAssemblyScavanger method [.NET Framework fusion]"
+api_name: ["IAssemblyCache.CreateAssemblyScavenger"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAssemblyCache::CreateAssemblyScavenger"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateAssemblyScavenger method [.NET Framework fusion]", "IAssemblyCache::CreateAssemblyScavanger method [.NET Framework fusion]"]
 ms.assetid: e8bb98f1-e477-45d2-8956-ba404137cd2d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

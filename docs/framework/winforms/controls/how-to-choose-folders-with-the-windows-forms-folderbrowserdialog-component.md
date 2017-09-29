@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "directories [Windows Forms], choosing"
-  - "FolderBrowserDialog component [Windows Forms], choosing directories"
-  - "folders [Windows Forms], selecting"
-  - "folders [Windows Forms], choosing"
-  - "directories [Windows Forms], selecting"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["directories [Windows Forms], choosing", "FolderBrowserDialog component [Windows Forms], choosing directories", "folders [Windows Forms], selecting", "folders [Windows Forms], choosing", "directories [Windows Forms], selecting"]
 ms.assetid: 4593670e-7c7d-4661-b46b-4ffb63258adb
 caps.latest.revision: 12
 author: dotnet-bot

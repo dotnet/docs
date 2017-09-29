@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "digital signatures"
-  - "identifiers, mapping object identifiers"
-  - "cryptographic algorithms"
-  - "mapping object identifiers"
-  - "cryptography, mapping object identifiers"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["digital signatures", "identifiers, mapping object identifiers", "cryptographic algorithms", "mapping object identifiers", "cryptography, mapping object identifiers"]
 ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
 caps.latest.revision: 8
 author: "mcleblanc"

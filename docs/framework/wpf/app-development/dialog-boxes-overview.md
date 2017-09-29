@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "modeless dialog boxes"
-  - "dialog boxes"
-  - "message boxes"
-  - "modal dialog boxes"
+helpviewer_keywords: ["modeless dialog boxes", "dialog boxes", "message boxes", "modal dialog boxes"]
 ms.assetid: 0d23d544-a393-4a02-a3aa-d8cd5d3d6511
 caps.latest.revision: 25
 author: dotnet-bot

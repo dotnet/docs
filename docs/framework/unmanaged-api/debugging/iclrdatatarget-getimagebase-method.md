@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRDataTarget.GetImageBase"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRDataTarget::GetImageBase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRDataTarget::GetImageBase method [.NET Framework debugging]"
-  - "GetImageBase method [.NET Framework debugging]"
+api_name: ["ICLRDataTarget.GetImageBase"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRDataTarget::GetImageBase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRDataTarget::GetImageBase method [.NET Framework debugging]", "GetImageBase method [.NET Framework debugging]"]
 ms.assetid: 091c5f32-c160-49e3-a75f-4692e084c8e4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

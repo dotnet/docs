@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "add-in pipeline [.NET Framework], segments"
-  - "activation path for add-ins [.NET Framework]"
-  - "add-in pipeline [.NET Framework], activation path"
-  - "communication pipeline for add-ins [.NET Framework]"
-  - "add-in pipeline [.NET Framework], about"
-  - "add-ins [.NET Framework], pipeline development"
+helpviewer_keywords: ["add-in pipeline [.NET Framework], segments", "activation path for add-ins [.NET Framework]", "add-in pipeline [.NET Framework], activation path", "communication pipeline for add-ins [.NET Framework]", "add-in pipeline [.NET Framework], about", "add-ins [.NET Framework], pipeline development"]
 ms.assetid: 932788f2-b87d-44cf-82f9-04492a8b2722
 caps.latest.revision: 31
 author: "rpetrusha"

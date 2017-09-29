@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "performance, .NET Framework applications"
-  - "performance counters"
-  - "performance monitoring, counters"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["performance, .NET Framework applications", "performance counters", "performance monitoring, counters"]
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 caps.latest.revision: 18
 author: "rpetrusha"

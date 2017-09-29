@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "portable executable files, PEVerify"
-  - "verifying MSIL and metadata"
-  - "PEVerify tool"
-  - "type safety requirements"
-  - "MSIL"
-  - "PEverify.exe"
-  - "PE files, PEVerify"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["portable executable files, PEVerify", "verifying MSIL and metadata", "PEVerify tool", "type safety requirements", "MSIL", "PEverify.exe", "PE files, PEVerify"]
 ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
 caps.latest.revision: 18
 author: "rpetrusha"

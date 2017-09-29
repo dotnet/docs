@@ -5,27 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "data marshaling, classes"
-  - "marshaling, unions"
-  - "marshaling, structures"
-  - "marshaling, samples"
-  - "data marshaling, structures"
-  - "platform invoke, marshaling data"
-  - "marshaling, classes"
-  - "data marshaling, unions"
-  - "data marshaling, samples"
-  - "data marshaling, platform invoke"
-  - "marshaling, platform invoke"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["data marshaling, classes", "marshaling, unions", "marshaling, structures", "marshaling, samples", "data marshaling, structures", "platform invoke, marshaling data", "marshaling, classes", "data marshaling, unions", "data marshaling, samples", "data marshaling, platform invoke", "marshaling, platform invoke"]
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
 caps.latest.revision: 10
 author: "rpetrusha"

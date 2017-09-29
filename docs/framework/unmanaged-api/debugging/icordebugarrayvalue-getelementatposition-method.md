@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugArrayValue.GetElementAtPosition"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugArrayValue::GetElementAtPosition"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetElementAtPosition method [.NET Framework debugging]"
-  - "ICorDebugArrayValue::GetElementAtPosition method [.NET Framework debugging]"
+api_name: ["ICorDebugArrayValue.GetElementAtPosition"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugArrayValue::GetElementAtPosition"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetElementAtPosition method [.NET Framework debugging]", "ICorDebugArrayValue::GetElementAtPosition method [.NET Framework debugging]"]
 ms.assetid: 6fd5eaa4-1997-4910-82f5-3887480db764
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

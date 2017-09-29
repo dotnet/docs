@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "application services host [client application services]"
-  - "client application services, walkthroughs"
+helpviewer_keywords: ["application services host [client application services]", "client application services, walkthroughs"]
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
 caps.latest.revision: 47
 author: dotnet-bot

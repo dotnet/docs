@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Known Folder GUIDs, Custom Places"
-  - "Custom Places, Known Folder GUIDs"
-  - "Windows Vista Known Folder GUIDs, Custom Places"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Known Folder GUIDs, Custom Places", "Custom Places, Known Folder GUIDs", "Windows Vista Known Folder GUIDs, Custom Places"]
 ms.assetid: d8d8b544-8b4d-4da5-ba3a-b05e93244778
 caps.latest.revision: 6
 author: dotnet-bot

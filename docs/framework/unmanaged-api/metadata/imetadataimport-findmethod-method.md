@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.FindMethod"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::FindMethod"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FindMethod method [.NET Framework metadata]"
-  - "IMetaDataImport::FindMethod method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.FindMethod"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::FindMethod"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FindMethod method [.NET Framework metadata]", "IMetaDataImport::FindMethod method [.NET Framework metadata]"]
 ms.assetid: 0f9bde1d-e306-438d-941b-d0925b322304
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

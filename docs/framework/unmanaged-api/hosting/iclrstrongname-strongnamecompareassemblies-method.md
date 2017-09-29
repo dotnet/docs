@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName.StrongNameCompareAssemblies"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRStrongName::StrongNameCompareAssemblies"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRStrongName::StrongNameCompareAssemblies method [.NET Framework hosting]"
-  - "StrongNameCompareAssemblies method, ICLRStrongName interface [.NET Framework hosting]"
+api_name: ["ICLRStrongName.StrongNameCompareAssemblies"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRStrongName::StrongNameCompareAssemblies"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRStrongName::StrongNameCompareAssemblies method [.NET Framework hosting]", "StrongNameCompareAssemblies method, ICLRStrongName interface [.NET Framework hosting]"]
 ms.assetid: b1fb356c-72cf-4aa4-8376-f291a6d97c01
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

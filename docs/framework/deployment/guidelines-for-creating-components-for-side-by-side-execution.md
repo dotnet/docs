@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "side-by-side execution, multiple application versions"
-  - "side-by-side execution, multiple component versions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["side-by-side execution, multiple application versions", "side-by-side execution, multiple component versions"]
 ms.assetid: 5c540161-6e40-42e9-be92-6175aee2c46a
 caps.latest.revision: 9
 author: "rpetrusha"

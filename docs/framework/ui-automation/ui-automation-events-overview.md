@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, providers"
-  - "UI Automation, events"
-  - "clients, UI Automation"
-  - "events, UI Automation"
-  - "providers, UI Automation"
-  - "UI Automation, clients"
+helpviewer_keywords: ["UI Automation, providers", "UI Automation, events", "clients, UI Automation", "events, UI Automation", "providers, UI Automation", "UI Automation, clients"]
 ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
 caps.latest.revision: 22
 author: "Xansky"

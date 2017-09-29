@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "parts [WPF], Slider"
-  - "states [WPF], Slider"
-  - "Slider [WPF], styles and templates"
-  - "styles [WPF], Slider"
-  - "templates [WPF], Slider"
-  - "ControlTemplate [WPF], Slider"
+helpviewer_keywords: ["parts [WPF], Slider", "states [WPF], Slider", "Slider [WPF], styles and templates", "styles [WPF], Slider", "templates [WPF], Slider", "ControlTemplate [WPF], Slider"]
 ms.assetid: d89aa97b-075a-4752-9c41-9679df65c491
 caps.latest.revision: 19
 author: dotnet-bot

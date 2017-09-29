@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "templates [WPF], DocumentViewer"
-  - "DocumentViewer [WPF], styles and templates"
-  - "states [WPF], DocumentViewer"
-  - "ControlTemplate [WPF], DocumentViewer"
-  - "parts [WPF], DocumentViewer"
-  - "styles [WPF], DocumentViewer"
+helpviewer_keywords: ["templates [WPF], DocumentViewer", "DocumentViewer [WPF], styles and templates", "states [WPF], DocumentViewer", "ControlTemplate [WPF], DocumentViewer", "parts [WPF], DocumentViewer", "styles [WPF], DocumentViewer"]
 ms.assetid: 6bd4ff8f-ea6a-4084-ac58-e7a67446ce1c
 caps.latest.revision: 12
 author: dotnet-bot

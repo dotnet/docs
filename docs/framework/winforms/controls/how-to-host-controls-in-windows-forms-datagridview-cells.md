@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], hosting in cells"
-  - "DataGridView control [Windows Forms], hosting controls in cells"
-  - "cells, hosting controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], hosting in cells", "DataGridView control [Windows Forms], hosting controls in cells", "cells, hosting controls"]
 ms.assetid: e79a9d4e-64ec-41f5-93ec-f5492633cbb2
 caps.latest.revision: 10
 author: dotnet-bot

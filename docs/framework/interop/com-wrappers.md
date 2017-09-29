@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "wrapper classes"
-  - "COM interop, COM wrappers"
-  - "COM wrappers"
-  - "COM, wrappers"
-  - "interoperation with unmanaged code, COM wrappers"
-  - "COM callable wrappers"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["wrapper classes", "COM interop, COM wrappers", "COM wrappers", "COM, wrappers", "interoperation with unmanaged code, COM wrappers", "COM callable wrappers"]
 ms.assetid: e56c485b-6b67-4345-8e66-fd21835a6092
 caps.latest.revision: 12
 author: "rpetrusha"

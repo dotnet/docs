@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugHandleValue.Dispose"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugHandleValue::Dispose"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugHandleValue::Dispose method [.NET Framework debugging]"
-  - "Dispose method [.NET Framework debugging]"
+api_name: ["ICorDebugHandleValue.Dispose"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugHandleValue::Dispose"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugHandleValue::Dispose method [.NET Framework debugging]", "Dispose method [.NET Framework debugging]"]
 ms.assetid: c1542811-0a7f-4235-bcfd-b24370d6f24b
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

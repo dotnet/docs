@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, ink selection"
-  - "ink, selecting from custom control"
-  - "custom controls, ink selection"
+helpviewer_keywords: ["controls [WPF], ink selection", "ink [WPF], selecting from custom control", "custom controls [WPF], ink selection"]
 ms.assetid: 5f3a45c6-6d40-4017-9b47-933f134ceba3
 caps.latest.revision: 5
 author: dotnet-bot

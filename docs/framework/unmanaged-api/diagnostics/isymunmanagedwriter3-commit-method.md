@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedWriter3.Commit"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedWriter3::Commit"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Commit method, ISymUnmanagedWriter3 interface [.NET Framework debugging]"
-  - "ISymUnmanagedWriter3::Commit method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedWriter3.Commit"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedWriter3::Commit"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Commit method, ISymUnmanagedWriter3 interface [.NET Framework debugging]", "ISymUnmanagedWriter3::Commit method [.NET Framework debugging]"]
 ms.assetid: f6961922-46ec-4d2c-8369-85f880731f37
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

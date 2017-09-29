@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataFormats class [WPF]"
-  - "drag-and-drop [WPF], data formats present"
-  - "data formats [WPF], determining if present"
+helpviewer_keywords: ["DataFormats class [WPF]", "drag-and-drop [WPF], data formats present", "data formats [WPF], determining if present"]
 ms.assetid: e487a454-c9fc-4e53-aeaa-c458d059ad4c
 caps.latest.revision: 6
 author: dotnet-bot

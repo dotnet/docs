@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "child forms, arranging"
-  - "MDI, arranging child forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["child forms [Windows Forms], arranging", "MDI, arranging child forms"]
 ms.assetid: a0786378-3206-4ccc-898e-7d3b38cc5089
 caps.latest.revision: 11
 author: dotnet-bot

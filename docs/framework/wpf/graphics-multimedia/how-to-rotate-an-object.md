@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "graphics, rotating objects"
-  - "rotating objects"
+helpviewer_keywords: ["graphics [WPF], rotating objects [WPF]", "rotating objects [WPF]"]
 ms.assetid: ee3466cd-e66f-4e8f-8a5a-71d77bc1e390
 caps.latest.revision: 15
 author: dotnet-bot

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data [Windows Forms], sorting in grids"
-  - "data grids, sorting data"
-  - "DataGridView control [Windows Forms], sorting data"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data [Windows Forms], sorting in grids", "data grids [Windows Forms], sorting data", "DataGridView control [Windows Forms], sorting data"]
 ms.assetid: c1d4f24c-d961-4181-809d-5a5caa6122e4
 caps.latest.revision: 9
 author: dotnet-bot

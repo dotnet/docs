@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "selection, modes in DataGridView control"
-  - "DataGridView control [Windows Forms], selection mode"
-  - "data grids, selection mode"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["selection, modes in DataGridView control", "DataGridView control [Windows Forms], selection mode", "data grids [Windows Forms], selection mode"]
 ms.assetid: 2f241643-7f82-4583-8757-03494f63b465
 caps.latest.revision: 12
 author: dotnet-bot

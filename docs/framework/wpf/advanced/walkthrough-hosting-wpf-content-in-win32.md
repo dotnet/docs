@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hosting WPF content in Win32 window"
+helpviewer_keywords: ["hosting WPF content in Win32 window"]
 ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 caps.latest.revision: 24
 author: dotnet-bot

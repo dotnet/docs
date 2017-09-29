@@ -5,26 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "uninstalling server resources"
-  - "removing server resources"
-  - "status information for installation"
-  - "installation progress reports"
-  - "installing server resources"
-  - "Installer tool"
-  - "Installutil.exe"
-  - "files, Installer tool"
-  - "progress information for installation"
-  - "reporting installation progress"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["uninstalling server resources", "removing server resources", "status information for installation", "installation progress reports", "installing server resources", "Installer tool", "Installutil.exe", "files, Installer tool", "progress information for installation", "reporting installation progress"]
 ms.assetid: 3f9d0533-f895-4897-b4ea-528284e0241d
 caps.latest.revision: 40
 author: "rpetrusha"

@@ -7,25 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "protocols, TCP/UDP"
-  - "network resources, TCP/UDP"
-  - "sending data, TCP/UDP"
-  - "TCP/UDP"
-  - "TcpClient class, about TcpClient class"
-  - "application protocols, TCP/UDP"
-  - "receiving data, TCP/UDP"
-  - "TcpListener class, about TcpListener class"
-  - "Socket class, about Socket class"
-  - "UDP"
-  - "data requests, TCP/UDP"
-  - "requesting data from Internet, TCP/UDP"
-  - "Internet, TCP/UDP"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["protocols, TCP/UDP", "network resources, TCP/UDP", "sending data, TCP/UDP", "TCP/UDP", "TcpClient class, about TcpClient class", "application protocols, TCP/UDP", "receiving data, TCP/UDP", "TcpListener class, about TcpListener class", "Socket class, about Socket class", "UDP", "data requests, TCP/UDP", "requesting data from Internet, TCP/UDP", "Internet, TCP/UDP"]
 ms.assetid: df29b4b0-49e8-4923-82b9-13150dfc40f5
 caps.latest.revision: 8
 author: "mcleblanc"

@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "encoding BMP images"
-  - "BMP encoding"
-  - "decoding BMP images"
-  - "encoding image formats"
-  - "BMP decoding"
-  - "decoding image formats"
+helpviewer_keywords: ["encoding BMP images", "BMP encoding", "decoding BMP images", "encoding image formats", "BMP decoding", "decoding image formats"]
 ms.assetid: feb5ef27-28ac-40ab-bfc2-e0456990d32c
 caps.latest.revision: 9
 author: dotnet-bot

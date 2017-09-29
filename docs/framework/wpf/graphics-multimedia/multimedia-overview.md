@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "multimedia"
-  - "media"
+helpviewer_keywords: ["multimedia", "media"]
 ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 caps.latest.revision: 19
 author: dotnet-bot

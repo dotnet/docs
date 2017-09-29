@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "code security, method access"
-  - "secure coding, method access"
-  - "security [.NET Framework], method access"
-  - "method access security"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["code security, method access", "secure coding, method access", "security [.NET Framework], method access", "method access security"]
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
 caps.latest.revision: 16
 author: "mairaw"

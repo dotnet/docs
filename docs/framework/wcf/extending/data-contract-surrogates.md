@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data contracts [WCF], surrogates"
+helpviewer_keywords: ["data contracts [WCF], surrogates"]
 ms.assetid: 8c31134c-46c5-4ed7-94af-bab0ac0dfce5
 caps.latest.revision: 8
 author: "Erikre"

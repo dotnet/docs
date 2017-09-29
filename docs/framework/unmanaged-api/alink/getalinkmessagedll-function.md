@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetALinkMessageDll"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "GetALinkMessageDll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Alink API, GetALinkMessageDll function"
-  - "GetALinkMessageDll function"
+api_name: ["GetALinkMessageDll"]
+api_location: ["alink.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["GetALinkMessageDll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Alink API, GetALinkMessageDll function", "GetALinkMessageDll function"]
 ms.assetid: 67985a22-88a2-4c54-8d99-4bcde9d6213e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

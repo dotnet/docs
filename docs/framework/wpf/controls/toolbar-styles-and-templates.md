@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "states [WPF], ToolBar"
-  - "styles [WPF], ToolBar"
-  - "ControlTemplate [WPF], ToolBar"
-  - "parts [WPF], ToolBar"
-  - "ToolBar [WPF], styles and templates"
-  - "templates [WPF], ToolBar"
+helpviewer_keywords: ["states [WPF], ToolBar", "styles [WPF], ToolBar", "ControlTemplate [WPF], ToolBar", "parts [WPF], ToolBar", "ToolBar [WPF], styles and templates", "templates [WPF], ToolBar"]
 ms.assetid: bd875f46-4690-46f5-81e0-f11a9822484f
 caps.latest.revision: 15
 author: dotnet-bot

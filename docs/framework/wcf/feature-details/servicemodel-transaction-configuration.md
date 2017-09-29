@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "transactions [WCF], ServiceModel configuration"
+helpviewer_keywords: ["transactions [WCF], ServiceModel configuration"]
 ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
 caps.latest.revision: 8
 author: "Erikre"

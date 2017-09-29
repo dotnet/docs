@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "command-line debugger [.NET Framework]"
-  - "MDbg.exe"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["command-line debugger [.NET Framework]", "MDbg.exe"]
 ms.assetid: 28a3f509-07e2-4dbe-81df-874c5e969cc4
 caps.latest.revision: 27
 author: "mairaw"

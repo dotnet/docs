@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "reflection, reflection-only loader context"
-  - "assemblies [.NET Framework], loading for reflection"
-  - "attributes [.NET Framework], retrieving"
-  - "assemblies [.NET Framework], reflection-only loader context"
-  - "reflection-only loader context"
+helpviewer_keywords: ["reflection, reflection-only loader context", "assemblies [.NET Framework], loading for reflection", "attributes [.NET Framework], retrieving", "assemblies [.NET Framework], reflection-only loader context", "reflection-only loader context"]
 ms.assetid: 9818b660-52f5-423d-a9af-e75163aa7068
 caps.latest.revision: 8
 author: "rpetrusha"

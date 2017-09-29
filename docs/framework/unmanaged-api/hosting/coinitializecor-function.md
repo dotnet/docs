@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CoInitializeCor"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "CoInitializeCor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CoInitializeCor function [.NET Framework hosting]"
+api_name: ["CoInitializeCor"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["CoInitializeCor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CoInitializeCor function [.NET Framework hosting]"]
 ms.assetid: 9b9079fb-579e-4141-b3f0-791072dd40dc
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

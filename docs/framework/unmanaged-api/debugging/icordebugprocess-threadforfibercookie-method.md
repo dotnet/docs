@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugProcess.ThreadForFiberCookie"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugProcess::ThreadForFiberCookie"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugProcess::ThreadForFiberCookie method [.NET Framework debugging]"
-  - "ThreadForFiberCookie method [.NET Framework debugging]"
+api_name: ["ICorDebugProcess.ThreadForFiberCookie"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugProcess::ThreadForFiberCookie"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugProcess::ThreadForFiberCookie method [.NET Framework debugging]", "ThreadForFiberCookie method [.NET Framework debugging]"]
 ms.assetid: afe4e97f-bffc-47e1-adad-d6e842487f35
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

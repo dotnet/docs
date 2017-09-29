@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "change notifications, raising"
-  - "BindingSource component [Windows Forms], and IPropertyChange"
-  - "data sources, detecting changes"
-  - "examples [Windows Forms], BindingSource component"
-  - "change notifications"
-  - "INotifyPropertyChanged interface, using with BindingSource"
-  - "BindingSource component [Windows Forms], examples"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["change notifications, raising", "BindingSource component [Windows Forms], and IPropertyChange", "data sources, detecting changes", "examples [Windows Forms], BindingSource component", "change notifications", "INotifyPropertyChanged interface, using with BindingSource", "BindingSource component [Windows Forms], examples"]
 ms.assetid: 7fa2cf51-c09f-4375-adf0-e36c5617f099
 caps.latest.revision: 15
 author: dotnet-bot

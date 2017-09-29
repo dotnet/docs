@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "claims [WCF], finding in a claimset"
-  - "claims [WCF]"
+helpviewer_keywords: ["claims [WCF], finding in a claimset", "claims [WCF]"]
 ms.assetid: a76ce107-aeb3-47d0-bfa9-134c53664e20
 caps.latest.revision: 7
 author: "Erikre"

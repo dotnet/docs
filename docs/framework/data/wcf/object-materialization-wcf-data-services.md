@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, client library"
-  - "WCF Data Services, querying"
+helpviewer_keywords: ["WCF Data Services, client library", "WCF Data Services, querying"]
 ms.assetid: f0dbf7b0-0292-4e31-9ae4-b98288336dc1
 caps.latest.revision: 4
 author: "Erikre"

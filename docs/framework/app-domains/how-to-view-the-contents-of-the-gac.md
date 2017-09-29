@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], global assembly cache"
-  - "global assembly cache, viewing contents"
-  - "viewing assemblies in global assembly cache"
-  - "Gacutil.exe"
-  - "strong-named assemblies, global assembly cache"
-  - "GAC (global assembly cache), viewing contents"
-  - "list of assemblies in global assembly cache"
-  - "Global Assembly Cache tool"
+helpviewer_keywords: ["assemblies [.NET Framework], global assembly cache", "global assembly cache, viewing contents", "viewing assemblies in global assembly cache", "Gacutil.exe", "strong-named assemblies, global assembly cache", "GAC (global assembly cache), viewing contents", "list of assemblies in global assembly cache", "Global Assembly Cache tool"]
 ms.assetid: c5f786a0-969b-4f14-9f02-e77c3384d9af
 caps.latest.revision: 15
 author: "rpetrusha"

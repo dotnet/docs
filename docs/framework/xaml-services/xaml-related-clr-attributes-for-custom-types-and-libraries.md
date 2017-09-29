@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "CLR attributes for custom types [XAML Services]"
+helpviewer_keywords: ["CLR attributes for custom types [XAML Services]"]
 ms.assetid: 5dfb299a-b6e2-41b8-8694-e6ac987547f1
 caps.latest.revision: 8
 author: "wadepickett"

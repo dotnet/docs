@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "DataMemberAttribute"
-  - "DataContractAttribute class"
-  - "data contracts [WCF], creating for a class or structure"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["DataMemberAttribute", "data contracts [WCF], creating for a class or structure"]
 ms.assetid: bc464889-3070-4a2f-91d2-e788a0f686a7
 caps.latest.revision: 25
 author: "Erikre"

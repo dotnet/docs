@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "importing type library"
-  - "COM interop, referencing .NET types"
-  - "interoperation with unmanaged code, referencing .NET types"
-  - "referencing .NET types"
-  - "interoperation with unmanaged code, importing type library"
-  - "type libraries"
-  - "COM interop, importing type library"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["importing type library", "COM interop, referencing .NET types", "interoperation with unmanaged code, referencing .NET types", "referencing .NET types", "interoperation with unmanaged code, importing type library", "type libraries", "COM interop, importing type library"]
 ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
 caps.latest.revision: 7
 author: "rpetrusha"

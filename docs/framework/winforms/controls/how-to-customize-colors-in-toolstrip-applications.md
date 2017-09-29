@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms], customizing colors"
-  - "colors, customizing in ToolStrip controls [Windows Forms]"
-  - "ToolStrip control [Windows Forms], custom colors"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms], customizing colors", "colors [Windows Forms], customizing in ToolStrip controls [Windows Forms]", "ToolStrip control [Windows Forms], custom colors"]
 ms.assetid: e2752fe2-1afb-489e-ab96-b7805acd96bc
 caps.latest.revision: 9
 author: dotnet-bot

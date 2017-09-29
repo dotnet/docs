@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "drag-and-drop [WPF], implementing"
-  - "drag sources [WPF], drag-and-drop"
-  - "data transfer [WPF], drag-and-drop"
-  - "drag-and-drop [WPF], about"
-  - "drag-and-drop [WPF], events"
-  - "drop targets [WPF], drag-and-drop"
+helpviewer_keywords: ["drag-and-drop [WPF], implementing", "drag sources [WPF], drag-and-drop", "data transfer [WPF], drag-and-drop", "drag-and-drop [WPF], about", "drag-and-drop [WPF], events", "drop targets [WPF], drag-and-drop"]
 ms.assetid: 1a5b27b0-0ac5-4cdf-86c0-86ac0271fa64
 caps.latest.revision: 31
 author: dotnet-bot

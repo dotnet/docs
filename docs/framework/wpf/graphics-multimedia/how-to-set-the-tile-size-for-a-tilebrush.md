@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TileBrush, size of tiles"
-  - "Viewport property of TileBrush"
+helpviewer_keywords: ["TileBrush [WPF], size of tilepropertys", "Viewport property of TileBrush"]
 ms.assetid: 04f41090-1b46-4e36-832f-d27d28708b8c
 caps.latest.revision: 15
 author: dotnet-bot

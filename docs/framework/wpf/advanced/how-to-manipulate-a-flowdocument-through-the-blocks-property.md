@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "properties, Blocks, manipulating FlowDocuments"
-  - "documents, manipulating FlowDocuments through Blocks property"
-  - "Blocks property, manipulating FlowDocuments"
-  - "FlowDocuments, manipulating through Blocks property"
+helpviewer_keywords: ["documents [WPF], manipulating FlowDocuments through Blocks property [WPF], , "Blocks property [WPF], manipulating FlowDocuments", "Flowdocuments [WPF], manipulating through Blocks property"]
 ms.assetid: cbb7291e-3f1b-433e-9e16-f4d93ced14e8
 caps.latest.revision: 6
 author: dotnet-bot

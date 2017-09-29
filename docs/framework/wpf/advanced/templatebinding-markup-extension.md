@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "TemplateBinding"
-  - "TemplateBindingExtension"
-helpviewer_keywords: 
-  - "XAML, TemplateBinding markup extension"
-  - "TemplateBinding markup extensions"
+f1_keywords: ["TemplateBinding", "TemplateBindingExtension"]
+helpviewer_keywords: ["XAML [WPF], TemplateBinding markup extension", "TemplateBinding markup extensions [WPF]"]
 ms.assetid: 1d25bbfc-dbc2-499d-9f12-419d23d4ac6a
 caps.latest.revision: 18
 author: dotnet-bot

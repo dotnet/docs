@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "<codeBase> element"
-  - "locating assemblies"
-  - "assemblies [.NET Framework], placement"
-  - "assemblies [.NET Framework], location"
+helpviewer_keywords: ["<codeBase> element", "locating assemblies", "assemblies [.NET Framework], placement", "assemblies [.NET Framework], location"]
 ms.assetid: ff8d48bc-f606-484f-9fe1-d0af264269fb
 caps.latest.revision: 9
 author: "rpetrusha"

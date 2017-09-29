@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "drawing, owner"
-  - "drawing, custom"
-  - "controls [Windows Forms], changing appearance"
-  - "custom drawing"
-  - "owner drawing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["drawing, owner", "drawing, custom", "controls [Windows Forms], changing appearance", "custom drawing", "owner drawing"]
 ms.assetid: 3823d01e-9610-43e6-864d-99f9b7c2b351
 caps.latest.revision: 15
 author: dotnet-bot

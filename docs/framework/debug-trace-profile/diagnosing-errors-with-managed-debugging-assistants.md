@@ -5,42 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "EHMDA"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "run-time error debugging"
-  - "managed code, run-time debugging"
-  - "resource debugging"
-  - "registry, MDAs"
-  - "common language runtime, debugging"
-  - "MDAs (managed debugging assistants)"
-  - "configuration files [.NET Framework], debugging runtime events"
-  - "messages, managed debugging assistants"
-  - "application configuration files, managed debugging assistants"
-  - "debugging [.NET Framework], managed debugging assistants"
-  - "environment variables, MDAs"
-  - "access violation debugging [.NET Framework]"
-  - "diagnostics, managed debugging assistants"
-  - "unmanaged code, run-time debugging"
-  - "default debug output stream"
-  - "memory, debugging"
-  - "app.config files, managed debugging assistants"
-  - "managed debugging assistants (MDAs)"
-  - "debugging [.NET Framework], run-time errors"
-  - "trapping events"
-  - "runtime, error debugging"
-  - "disabling MDAs"
-  - "output, managed debugging assistants"
-  - "errors [.NET Framework], managed debugging assistants"
+f1_keywords: ["EHMDA"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["run-time error debugging", "managed code, run-time debugging", "resource debugging", "registry, MDAs", "common language runtime, debugging", "MDAs (managed debugging assistants)", "configuration files [.NET Framework], debugging runtime events", "messages, managed debugging assistants", "application configuration files, managed debugging assistants", "debugging [.NET Framework], managed debugging assistants", "environment variables, MDAs", "access violation debugging [.NET Framework]", "diagnostics, managed debugging assistants", "unmanaged code, run-time debugging", "default debug output stream", "memory, debugging", "app.config files, managed debugging assistants", "managed debugging assistants (MDAs)", "debugging [.NET Framework], run-time errors", "trapping events", "runtime, error debugging", "disabling MDAs", "output, managed debugging assistants", "errors [.NET Framework], managed debugging assistants"]
 ms.assetid: 76994ee6-9fa9-4059-b813-26578d24427c
 caps.latest.revision: 63
 author: "mairaw"

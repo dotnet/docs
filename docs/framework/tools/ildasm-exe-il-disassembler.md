@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "PE files, MSIL Disassembler"
-  - "portable executable files, MSIL Disassembler"
-  - "Ildasm.exe"
-  - "MSIL Disassembler"
-  - "text files produced by MSIL Disassembler"
-  - "disassembling file for MSIL Assembler input"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["PE files, MSIL Disassembler", "portable executable files, MSIL Disassembler", "Ildasm.exe", "MSIL Disassembler", "text files produced by MSIL Disassembler", "disassembling file for MSIL Assembler input"]
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
 caps.latest.revision: 33
 author: "rpetrusha"

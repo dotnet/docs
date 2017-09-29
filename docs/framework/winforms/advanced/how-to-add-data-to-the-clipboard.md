@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Clipboard, copying data to"
-  - "data [Windows Forms], copying to Clipboard"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Clipboard, copying data to", "data [Windows Forms], copying to Clipboard"]
 ms.assetid: 25152454-0e78-40a9-8a9e-a2a5a274e517
 caps.latest.revision: 14
 author: dotnet-bot

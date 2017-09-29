@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "image columns"
-  - "image columns, Windows Forms"
-  - "DataGridView control [Windows Forms], image columns"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["image columns", "image columns, Windows Forms", "DataGridView control [Windows Forms], image columns"]
 ms.assetid: 8a37aa75-3c6e-4893-91d0-7a5f34bfe287
 caps.latest.revision: 12
 author: dotnet-bot

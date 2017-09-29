@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "toolbars [Windows Forms]"
-  - "ToolStripPanel control [Windows Forms]"
-  - "ToolStrip control [Windows Forms]"
-  - "MenuStrip control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["toolbars [Windows Forms]", "ToolStripPanel control [Windows Forms]", "ToolStrip control [Windows Forms]", "MenuStrip control [Windows Forms]"]
 ms.assetid: 64992ed9-44af-4baf-b45f-863e6ab35711
 caps.latest.revision: 6
 author: dotnet-bot

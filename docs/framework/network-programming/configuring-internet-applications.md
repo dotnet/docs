@@ -7,30 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "downloading Internet resources, default proxy"
-  - "sending data, default proxy"
-  - "receiving data, default proxy"
-  - "downloading Internet resources, configuring Internet applications"
-  - "protocol-specific modules"
-  - "custom authentication modules"
-  - "receiving data, configuring Internet applications"
-  - "configuration settings [.NET Framework], Internet applications"
-  - "requesting data from Internet, configuring Internet applications"
-  - "requesting data from Internet, default proxy"
-  - "response to Internet request, default proxy"
-  - "Internet, configuring Internet applications"
-  - "response to Internet request, configuring Internet applications"
-  - "default proxy"
-  - "network resources, default proxy"
-  - "sending data, configuring Internet applications"
-  - "network resources, configuring Internet applications"
-  - "Internet, default proxy"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["downloading Internet resources, default proxy", "sending data, default proxy", "receiving data, default proxy", "downloading Internet resources, configuring Internet applications", "protocol-specific modules", "custom authentication modules", "receiving data, configuring Internet applications", "configuration settings [.NET Framework], Internet applications", "requesting data from Internet, configuring Internet applications", "requesting data from Internet, default proxy", "response to Internet request, default proxy", "Internet, configuring Internet applications", "response to Internet request, configuring Internet applications", "default proxy", "network resources, default proxy", "sending data, configuring Internet applications", "network resources, configuring Internet applications", "Internet, default proxy"]
 ms.assetid: bb707c72-eed2-4a82-8800-c9e68df2fd4f
 caps.latest.revision: 15
 author: "mcleblanc"

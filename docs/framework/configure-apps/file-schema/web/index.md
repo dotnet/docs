@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Web.config configuration file [ASP.NET]"
-  - "ASP.NET configuration system, Web settings schema"
-  - "schema Web settings"
-  - "Web settings, schema [ASP.NET]"
-  - "configuration files [ASP.NET]"
-  - "configuration schema [.NET Framework], Web settings"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Web.config configuration file [ASP.NET]", "ASP.NET configuration system, Web settings schema", "schema Web settings", "Web settings, schema [ASP.NET]", "configuration files [ASP.NET]", "configuration schema [.NET Framework], Web settings"]
 ms.assetid: ae1ac356-267d-4753-8d7a-7a04eb45a9be
 caps.latest.revision: 6
 author: "mcleblanc"

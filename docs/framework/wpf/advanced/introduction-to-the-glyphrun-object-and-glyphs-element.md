@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "typography, Glyphs element"
-  - "Glyphs elements"
-  - "GlyphRun object"
-  - "text, glyphs"
-  - "glyphs [WPF]"
-  - "typography, GlyphRun object"
+helpviewer_keywords: ["typography [WPF], Glyphs element", "Glyphs elements", "GlyphRun object", "text [WPF], glyphs", "glyphs [WPF]", "typography [WPF], GlyphRun object"]
 ms.assetid: 746ca769-a331-4435-9b95-f72a883b67c1
 caps.latest.revision: 21
 author: dotnet-bot

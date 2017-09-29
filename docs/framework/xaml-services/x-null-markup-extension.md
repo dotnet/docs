@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "NullExtension"
-  - "x:NullExtension"
-  - "x:Null"
-  - "Null"
-  - "xNull"
-helpviewer_keywords: 
-  - "Null markup extension in XAML [XAML Services]"
-  - "x:Null markup extension [XAML Services]"
-  - "XAML [XAML Services], x:Null markup extension"
+f1_keywords: ["NullExtension", "x:NullExtension", "x:Null", "Null", "xNull"]
+helpviewer_keywords: ["Null markup extension in XAML [XAML Services]", "x:Null markup extension [XAML Services]", "XAML [XAML Services], x:Null markup extension"]
 ms.assetid: 2e3ccc21-4996-481d-91b5-3910d8b3bfa3
 caps.latest.revision: 20
 author: "wadepickett"

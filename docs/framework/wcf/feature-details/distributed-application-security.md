@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "distributed application security [WCF]"
-  - "security [WCF], transfer"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["distributed application security [WCF]", "security [WCF], transfer"]
 ms.assetid: 53928a10-e474-46d0-ab90-5f98f8d7b668
 caps.latest.revision: 32
 author: "BrucePerlerMS"

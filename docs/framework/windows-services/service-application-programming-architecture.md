@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ServiceController components, programming architecture"
-  - "ServiceBase class, service states"
-  - "Windows Service applications, code model"
-  - "services, programming architecture"
-  - "ServiceController class"
-  - "services, states"
-  - "ServiceProcessInstaller class, service application code model"
-  - "Windows Service applications, states"
+helpviewer_keywords: ["ServiceController components, programming architecture", "ServiceBase class, service states", "Windows Service applications, code model", "services, programming architecture", "services, states", "ServiceProcessInstaller class, service application code model", "Windows Service applications, states"]
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
 caps.latest.revision: 15
 author: "ghogen"

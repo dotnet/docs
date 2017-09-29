@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ControlTemplate [WPF], GroupBox"
-  - "parts [WPF], GroupBox"
-  - "GroupBox [WPF], styles and templates"
-  - "states [WPF], GroupBox"
-  - "styles [WPF], GroupBox"
-  - "templates [WPF], GroupBox"
+helpviewer_keywords: ["ControlTemplate [WPF], GroupBox", "parts [WPF], GroupBox", "GroupBox [WPF], styles and templates", "states [WPF], GroupBox", "styles [WPF], GroupBox", "templates [WPF], GroupBox"]
 ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 caps.latest.revision: 15
 author: dotnet-bot

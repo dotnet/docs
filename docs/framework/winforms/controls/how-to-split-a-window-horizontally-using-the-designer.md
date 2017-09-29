@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "SplitContainer control [Windows Forms], horizontal splitting"
-  - "split windows, horizontal"
-  - "windows, splitting horizontally"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["SplitContainer control [Windows Forms], horizontal splitting", "split windows, horizontal", "windows, splitting horizontally"]
 ms.assetid: 3872a176-891f-4c70-9779-b2ce85b0b102
 caps.latest.revision: 6
 author: dotnet-bot

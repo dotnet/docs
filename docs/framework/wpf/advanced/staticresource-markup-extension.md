@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "StaticResource"
-  - "StaticResourceExtension"
-helpviewer_keywords: 
-  - "XAML, StaticResource markup extension"
-  - "StaticResource markup extensions"
+f1_keywords: ["StaticResource", "StaticResourceExtension"]
+helpviewer_keywords: ["XAML [WPF], StaticResource markup extension", "StaticResource markup extensions [WPF]"]
 ms.assetid: 97af044c-71f1-4617-9a94-9064b68185d2
 caps.latest.revision: 13
 author: dotnet-bot

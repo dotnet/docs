@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IDENTITY_ATTRIBUTE_BLOB"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IDENTITY_ATTRIBUTE_BLOB"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDENTITY_ATTRIBUTE_BLOB structure [.NET Framework fusion]"
+api_name: ["IDENTITY_ATTRIBUTE_BLOB"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IDENTITY_ATTRIBUTE_BLOB"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDENTITY_ATTRIBUTE_BLOB structure [.NET Framework fusion]"]
 ms.assetid: af14ae5f-d226-47dd-ba90-8fc6e6605d4d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

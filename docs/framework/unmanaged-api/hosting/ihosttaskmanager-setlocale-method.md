@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTaskManager.SetLocale"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTaskManager::SetLocale"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetLocale method, IHostTaskManager interface [.NET Framework hosting]"
-  - "IHostTaskManager::SetLocale method [.NET Framework hosting]"
+api_name: ["IHostTaskManager.SetLocale"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTaskManager::SetLocale"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetLocale method, IHostTaskManager interface [.NET Framework hosting]", "IHostTaskManager::SetLocale method [.NET Framework hosting]"]
 ms.assetid: 747ee407-ee8c-484d-9583-25089236d2d1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

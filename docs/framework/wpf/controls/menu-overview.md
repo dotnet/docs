@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Menu control"
-  - "controls, Menu"
+helpviewer_keywords: ["Menu control", "controls [WPF], Menu"]
 ms.assetid: 67df6de5-db96-4c71-b752-af90729a6537
 caps.latest.revision: 19
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Shape elements, ends"
-  - "Shape elements, caps"
-  - "graphics, Shape caps"
+helpviewer_keywords: ["Shape elements [WPF], ends", "Shape elements [WPF], caps", "graphics [WPF], Shape caps"]
 ms.assetid: f4bf3416-b3d8-4568-b98e-3eda8f6dbf7a
 caps.latest.revision: 8
 author: dotnet-bot

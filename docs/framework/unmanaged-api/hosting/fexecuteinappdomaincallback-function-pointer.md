@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "FExecuteInAppDomainCallback"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "FExecuteInAppDomainCallback"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FExecuteInAppDomainCallback function pointer [.NET Framework hosting]"
+api_name: ["FExecuteInAppDomainCallback"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["FExecuteInAppDomainCallback"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FExecuteInAppDomainCallback function pointer [.NET Framework hosting]"]
 ms.assetid: 2709f18f-3eee-497f-bc33-3ab7a485599b
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, drawing text in a rectangle"
-  - "text [Windows Forms], drawing in a rectangle"
-  - "strings [Windows Forms], drawing in a rectangle"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, drawing text in a rectangle", "text [Windows Forms], drawing in a rectangle", "strings [Windows Forms], drawing in a rectangle"]
 ms.assetid: e1fb432a-dc90-48b5-9b6b-acc14507133d
 caps.latest.revision: 13
 author: dotnet-bot

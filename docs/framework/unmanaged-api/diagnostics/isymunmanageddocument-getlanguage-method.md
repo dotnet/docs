@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedDocument.GetLanguage"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedDocument::GetLanguage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedDocument::GetLanguage method [.NET Framework debugging]"
-  - "GetLanguage method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedDocument.GetLanguage"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedDocument::GetLanguage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedDocument::GetLanguage method [.NET Framework debugging]", "GetLanguage method [.NET Framework debugging]"]
 ms.assetid: c6639418-e9f2-4a99-8ce2-ec9876e0bc79
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

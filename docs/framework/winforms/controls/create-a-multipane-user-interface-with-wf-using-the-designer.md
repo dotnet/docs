@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "user interface, multipane"
-  - "SplitContainer control [Windows Forms], using the designer"
-  - "multipane user interface"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["user interface, multipane", "SplitContainer control [Windows Forms], using the designer", "multipane user interface"]
 ms.assetid: c3f9294d-a26c-4198-9242-f237f55f7573
 caps.latest.revision: 6
 author: dotnet-bot

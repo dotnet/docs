@@ -5,17 +5,12 @@ ms.date: "04/07/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ClientApplicationSettings"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "application settings [Windows Forms]"
-  - "Windows Forms, application settings"
+f1_keywords: ["ClientApplicationSettings"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["application settings [Windows Forms]", "Windows Forms, application settings"]
 ms.assetid: 64090a34-8556-4904-8ea0-20efe9f8c886
 caps.latest.revision: 16
 author: dotnet-bot

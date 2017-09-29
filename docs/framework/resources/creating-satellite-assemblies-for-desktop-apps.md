@@ -5,28 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "deploying applications [.NET Framework], resources"
-  - "resource files, deploying"
-  - "hub-and-spoke resource deployment model"
-  - "resource files, packaging"
-  - "application resources, packaging"
-  - "public keys, obtaining"
-  - "satellite assemblies"
-  - "assemblies [.NET Framework], signing"
-  - "application resources, deploying"
-  - "Al.exe"
-  - "GAC (global assembly cache), satellite assemblies"
-  - "Assembly Linker"
-  - "directory locations for satellite assemblies"
-  - "global assembly cache, satellite assemblies"
-  - "packaging application resources"
-  - "compiling satellite assemblies"
-  - "re-signing assemblies"
+helpviewer_keywords: ["deploying applications [.NET Framework], resources", "resource files, deploying", "hub-and-spoke resource deployment model", "resource files, packaging", "application resources, packaging", "public keys, obtaining", "satellite assemblies", "assemblies [.NET Framework], signing", "application resources, deploying", "Al.exe", "GAC (global assembly cache), satellite assemblies", "Assembly Linker", "directory locations for satellite assemblies", "global assembly cache, satellite assemblies", "packaging application resources", "compiling satellite assemblies", "re-signing assemblies"]
 ms.assetid: 8d5c6044-2919-41d2-8321-274706b295ac
 caps.latest.revision: 11
 author: "rpetrusha"

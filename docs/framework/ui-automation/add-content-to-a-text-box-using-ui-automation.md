@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "adding content to text boxes"
-  - "text boxes, adding content"
-  - "UI Automation, adding content to text boxes"
+helpviewer_keywords: ["adding content to text boxes", "text boxes, adding content", "UI Automation, adding content to text boxes"]
 ms.assetid: 8bdd1a73-1ecb-4a05-a891-a7827ebb767f
 caps.latest.revision: 13
 author: "Xansky"

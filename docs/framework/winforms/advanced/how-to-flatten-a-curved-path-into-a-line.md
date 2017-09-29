@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "graphics, flattening curves into lines"
-  - "curves, flattening"
-  - "Flatten method"
-  - "GraphicsPath object"
-  - "paths, flattening"
-  - "drawing, flattening curves"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["graphics [Windows Forms], flattening curves into lines", "curves, flattening", "GraphicsPath object", "paths, flattening", "drawing, flattening curves"]
 ms.assetid: e654b8de-25f4-4735-9208-42e4514a589c
 caps.latest.revision: 14
 author: dotnet-bot

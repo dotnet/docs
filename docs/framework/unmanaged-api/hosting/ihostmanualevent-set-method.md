@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostManualEvent.Set"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostManualEvent::Set"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Set method, IHostManualEvent interface [.NET Framework hosting]"
-  - "IHostManualEvent::Set method [.NET Framework hosting]"
+api_name: ["IHostManualEvent.Set"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostManualEvent::Set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Set method, IHostManualEvent interface [.NET Framework hosting]", "IHostManualEvent::Set method [.NET Framework hosting]"]
 ms.assetid: e930c174-f71d-4faa-bb59-f0fb3df4d77b
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

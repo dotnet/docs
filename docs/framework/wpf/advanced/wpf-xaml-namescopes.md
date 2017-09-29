@@ -5,23 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "namescopes"
-  - "styles, namescopes in"
-  - "FrameworkElement class"
-  - "templates, namescopes in"
-  - "APIs, name-related"
-  - "classes, FrameworkElement"
-  - "name-related APIs"
-  - "FrameworkContentElement class"
-  - "RegisterName class"
-  - "XAML, namescopes"
-  - "classes, RegisterName"
-  - "classes, FrameworkContentElement"
+helpviewer_keywords: ["namescopes", "styles [WPF], namescopes in", "templates [WPF], namescopes in", "APIs [WPF], name-related", "name-related APIs", "XAML [WPF], namescopes", "classes [WPF], FrameworkContentElement"]
 ms.assetid: 52bbf4f2-15fc-40d4-837b-bb4c21ead7d4
 caps.latest.revision: 19
 author: dotnet-bot

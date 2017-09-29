@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "application settings [Windows Forms], design time"
-  - "application settings [Windows Forms], changing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["application settings [Windows Forms], design time", "application settings [Windows Forms], changing"]
 ms.assetid: 5da91272-ad7e-49e7-9d1f-eb64439a1e4d
 caps.latest.revision: 7
 author: dotnet-bot

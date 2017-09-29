@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ControlTemplate [WPF], StatusBar"
-  - "styles [WPF], StatusBar"
-  - "templates [WPF], StatusBar"
-  - "states [WPF], StatusBar"
-  - "parts [WPF], StatusBar"
-  - "StatusBar [WPF], styles and templates"
+helpviewer_keywords: ["ControlTemplate [WPF], StatusBar", "styles [WPF], StatusBar", "templates [WPF], StatusBar", "states [WPF], StatusBar", "parts [WPF], StatusBar", "StatusBar [WPF], styles and templates"]
 ms.assetid: 9f5e1c25-81eb-4756-a0ac-d9e1fbe33ee2
 caps.latest.revision: 12
 author: dotnet-bot

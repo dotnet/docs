@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Dock property"
-  - "controls [Windows Forms], docking"
-  - "Explorer-style applications, creating"
-  - "Windows Forms controls, filling client area"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], docking", "Explorer-style applications, creating", "Windows Forms controls, filling client area"]
 ms.assetid: bc11f2e4-e90a-4830-b0e2-f43b6e2b8bec
 caps.latest.revision: 12
 author: dotnet-bot

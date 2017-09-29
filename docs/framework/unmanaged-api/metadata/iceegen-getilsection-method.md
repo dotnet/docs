@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICeeGen.GetIlSection"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICeeGen::GetIlSection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetIlSection method [.NET Framework metadata]"
-  - "ICeeGen::GetIlSection method [.NET Framework metadata]"
+api_name: ["ICeeGen.GetIlSection"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICeeGen::GetIlSection"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetIlSection method [.NET Framework metadata]", "ICeeGen::GetIlSection method [.NET Framework metadata]"]
 ms.assetid: 6f2db2ca-203f-4ac3-9530-208642ca385e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

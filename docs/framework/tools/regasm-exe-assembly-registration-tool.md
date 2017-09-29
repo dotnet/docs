@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Assembly Registration tool"
-  - "assemblies [.NET Framework], registering"
-  - "Regasm.exe"
-  - "registering assemblies"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Assembly Registration tool", "assemblies [.NET Framework], registering", "Regasm.exe", "registering assemblies"]
 ms.assetid: e190e342-36ef-4651-a0b4-0e8c2c0281cb
 caps.latest.revision: 20
 author: "rpetrusha"

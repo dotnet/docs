@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IALink.EmbedResource"
-  - "EmbedResource"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "EmbedResource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EmbedResource method"
+api_name: ["IALink.EmbedResource", "EmbedResource"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["EmbedResource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EmbedResource method"]
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

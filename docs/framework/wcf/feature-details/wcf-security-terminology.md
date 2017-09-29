@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "security [WCF], terminology"
-  - "security glossary [WCF]"
-  - "security terms [WCF]"
+helpviewer_keywords: ["security [WCF], terminology", "security glossary [WCF]", "security terms [WCF]"]
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
 caps.latest.revision: 14
 author: "BrucePerlerMS"

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, layering"
-  - "controls [Windows Forms], layering"
-  - "z order"
-  - "controls [Windows Forms], positioning"
-  - "z-order"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, layering", "controls [Windows Forms], layering", "z order", "controls [Windows Forms], positioning", "z-order"]
 ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
 caps.latest.revision: 14
 author: dotnet-bot

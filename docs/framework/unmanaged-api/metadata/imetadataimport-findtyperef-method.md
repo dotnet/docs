@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.FindTypeRef"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::FindTypeRef"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataImport::FindTypeRef method [.NET Framework metadata]"
-  - "FindTypeRef method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.FindTypeRef"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::FindTypeRef"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataImport::FindTypeRef method [.NET Framework metadata]", "FindTypeRef method [.NET Framework metadata]"]
 ms.assetid: 1b2bbf3f-943e-412e-b66c-e802431b055c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

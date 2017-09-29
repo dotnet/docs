@@ -5,25 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), garbage collection"
-  - "GC unmanaged to managed"
-  - "transitioning threads unmanaged to managed code"
-  - "GcUnmanagedToManaged MDA"
-  - "threading [.NET Framework], garbage collection"
-  - "managed debugging assistants (MDAs), garbage collection"
-  - "threading [.NET Framework], managed debugging assistants"
-  - "garbage collection, run-time errors"
-  - "unmanaged to managed garbage collection"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), garbage collection", "GC unmanaged to managed", "transitioning threads unmanaged to managed code", "GcUnmanagedToManaged MDA", "threading [.NET Framework], garbage collection", "managed debugging assistants (MDAs), garbage collection", "threading [.NET Framework], managed debugging assistants", "garbage collection, run-time errors", "unmanaged to managed garbage collection"]
 ms.assetid: 103eb3a3-1cf0-4406-8a9a-a7798fdc22d1
 caps.latest.revision: 14
 author: "mairaw"

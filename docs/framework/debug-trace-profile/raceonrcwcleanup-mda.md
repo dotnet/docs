@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "RCW"
-  - "managed debugging assistants (MDAs), RCWs"
-  - "race on RCW cleanup"
-  - "MDAs (managed debugging assistants), RCWs"
-  - "RaceOnRCWCleanup MDA"
-  - "runtime callable wrappers"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["RCW", "managed debugging assistants (MDAs), RCWs", "race on RCW cleanup", "MDAs (managed debugging assistants), RCWs", "RaceOnRCWCleanup MDA", "runtime callable wrappers"]
 ms.assetid: bee1e9b1-50a8-4c89-9cd9-7dd6b2458187
 caps.latest.revision: 9
 author: "mairaw"

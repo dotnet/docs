@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetAppIdAuthority"
-api_location: 
-  - "fusion.dll"
-  - "clr.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "GetAppIdAuthority"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetAppIdAuthority function [.NET Framework fusion]"
+api_name: ["GetAppIdAuthority"]
+api_location: ["fusion.dll", "clr.dll"]
+api_type: ["COM"]
+f1_keywords: ["GetAppIdAuthority"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetAppIdAuthority function [.NET Framework fusion]"]
 ms.assetid: 9f968dad-0d09-47fb-bebc-94c39a0d16ad
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

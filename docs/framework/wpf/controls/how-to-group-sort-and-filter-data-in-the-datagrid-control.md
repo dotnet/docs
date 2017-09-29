@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataGrid [WPF], sort"
-  - "DataGrid [WPF], group"
-  - "DataGrid [WPF], filter"
+helpviewer_keywords: ["DataGrid [WPF], sort", "DataGrid [WPF], group", "DataGrid [WPF], filter"]
 ms.assetid: 03345e85-89e3-4aec-9ed0-3b80759df770
 caps.latest.revision: 8
 author: dotnet-bot

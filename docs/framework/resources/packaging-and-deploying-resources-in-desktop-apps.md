@@ -5,31 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "deploying applications [.NET Framework], resources"
-  - "resource files, deploying"
-  - "hub-and-spoke resource deployment model"
-  - "resource files, packaging"
-  - "application resources, packaging"
-  - "single resource assembly"
-  - "satellite assemblies"
-  - "default culture for applications"
-  - "names [.NET Framework], resources"
-  - "fallback process for resources"
-  - "grouping cultures"
-  - "application resources, deploying"
-  - "application resources, naming conventions"
-  - "culture, packaging and deploying resources"
-  - "resource files, naming conventions"
-  - "packaging application resources"
-  - "application resources, fallback processes"
-  - "resource files, fallback processes"
-  - "localizing resources"
-  - "neutral cultures"
+helpviewer_keywords: ["deploying applications [.NET Framework], resources", "resource files, deploying", "hub-and-spoke resource deployment model", "resource files, packaging", "application resources, packaging", "single resource assembly", "satellite assemblies", "default culture for applications", "names [.NET Framework], resources", "fallback process for resources", "grouping cultures", "application resources, deploying", "application resources, naming conventions", "culture, packaging and deploying resources", "resource files, naming conventions", "packaging application resources", "application resources, fallback processes", "resource files, fallback processes", "localizing resources", "neutral cultures"]
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
 caps.latest.revision: 26
 author: "rpetrusha"

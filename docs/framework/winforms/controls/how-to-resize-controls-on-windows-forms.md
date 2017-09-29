@@ -5,19 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Size.Height"
-  - "Size.Width"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], resizing"
-  - "size, controls"
-  - "Windows Forms controls, size"
+f1_keywords: ["Size.Height", "Size.Width"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], resizing", "size, controls", "Windows Forms controls, size"]
 ms.assetid: d2dba441-a8c0-4705-b8e8-2e5d86d6e7ec
 caps.latest.revision: 13
 author: dotnet-bot

@@ -7,19 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "time-based cache policies"
-  - "Revalidate policy"
-  - "cache [.NET Framework], time-based policies"
-  - "freshness of cached resources"
-  - "maximum age policy"
-  - "minimum freshness policy"
-  - "age of cached resources"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["time-based cache policies", "Revalidate policy", "cache [.NET Framework], time-based policies", "freshness of cached resources", "maximum age policy", "minimum freshness policy", "age of cached resources"]
 ms.assetid: 6567d451-ecec-496c-95a3-a415b99ba52a
 caps.latest.revision: 9
 author: "mcleblanc"

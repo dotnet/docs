@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Service applications, deploying"
-  - "services, uninstalling"
-  - "services, installing"
-  - "installing Windows Services"
-  - "uninstalling applications, Windows Services"
-  - "installation, Windows Services"
-  - "uninstalling Windows Services"
-  - "installutil.exe tool"
+helpviewer_keywords: ["Windows Service applications, deploying", "services, uninstalling", "services, installing", "installing Windows Services", "uninstalling applications, Windows Services", "installation, Windows Services", "uninstalling Windows Services", "installutil.exe tool"]
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 caps.latest.revision: 19
 author: "ghogen"

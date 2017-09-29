@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "TableLayoutPanel control [Windows Forms]"
-  - "application design, localization"
-  - "Windows Forms, localization"
-  - "localization, Windows Forms layout"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["TableLayoutPanel control [Windows Forms]", "application design, localization", "Windows Forms, localization", "localization, Windows Forms layout"]
 ms.assetid: d13eff2d-701c-4b6e-8838-3885cbfb7223
 caps.latest.revision: 11
 author: dotnet-bot

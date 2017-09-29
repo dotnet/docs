@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, TextBox"
-  - "TextBox control, about TextBox control"
+helpviewer_keywords: ["controls [WPF], TextBox", "TextBox control [WPF], about TextBox control"]
 ms.assetid: 1ba6dc5b-11a7-4247-9213-36c6729ee35f
 caps.latest.revision: 10
 author: dotnet-bot

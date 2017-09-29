@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "saving RichTextBox controls"
-  - "printing RichTextBox controls"
-  - "loading RichTextBox controls"
-  - "RichTextBox control, saving"
-  - "RichTextBox control, printing"
-  - "RichTextBox control, loading"
+helpviewer_keywords: ["saving RichTextBox controls [WPF]", "printing RichTextBox controls [WPF]", "loading RichTextBox controls [WPF]", "RichTextBox control [WPF], saving", "RichTextBox control [WPF], printing", "RichTextBox control [WPF], loading"]
 ms.assetid: ffb113d3-c68a-47ca-8ac0-882283f38326
 caps.latest.revision: 4
 author: dotnet-bot

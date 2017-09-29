@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "authorization [WCF]"
-  - "security [WCF], authorization"
+helpviewer_keywords: ["authorization [WCF]", "security [WCF], authorization"]
 ms.assetid: 8ea0b552-af65-45b0-a157-c6c111b8ce5e
 caps.latest.revision: 15
 author: "Erikre"

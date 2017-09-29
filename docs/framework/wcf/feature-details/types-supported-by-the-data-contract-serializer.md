@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "serialization [WCF], supported types"
+helpviewer_keywords: ["serialization [WCF], supported types"]
 ms.assetid: 7381b200-437a-4506-9556-d77bf1bc3f34
 caps.latest.revision: 24
 author: "Erikre"

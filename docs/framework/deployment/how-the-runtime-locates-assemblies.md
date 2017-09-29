@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "app.config files, assembly locations"
-  - "deploying applications [.NET Framework], assembly locations"
-  - "application configuration files, locating assemblies"
-  - ".NET Framework application deployment, locating assemblies"
-  - "locating assemblies"
-  - "assemblies [.NET Framework], location"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["app.config files, assembly locations", "deploying applications [.NET Framework], assembly locations", "application configuration files, locating assemblies", ".NET Framework application deployment, locating assemblies", "locating assemblies", "assemblies [.NET Framework], location"]
 ms.assetid: 772ac6f4-64d2-4cfb-92fd-58096dcd6c34
 caps.latest.revision: 20
 author: "mairaw"

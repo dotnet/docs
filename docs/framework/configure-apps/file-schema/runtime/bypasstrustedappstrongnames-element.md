@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "strong-name bypass feature"
-  - "bypassTrustedAppStrongNames element"
-  - "strong-named assemblies, loading into trusted application domains"
-  - "<bypassTrustedAppStrongNames> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["strong-name bypass feature", "bypassTrustedAppStrongNames element", "strong-named assemblies, loading into trusted application domains", "<bypassTrustedAppStrongNames> element"]
 ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
 caps.latest.revision: 18
 author: "rpetrusha"

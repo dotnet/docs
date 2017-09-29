@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "AssemblyBindInfo"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "AssemblyBindInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AssemblyBindInfo structure [.NET Framework hosting]"
+api_name: ["AssemblyBindInfo"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["AssemblyBindInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AssemblyBindInfo structure [.NET Framework hosting]"]
 ms.assetid: 6fc01e98-c2e7-49de-ab9f-95937cc89017
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

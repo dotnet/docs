@@ -5,29 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "printing [Windows Forms], page setup"
-  - "margins, page setup options"
-  - "paper orientation"
-  - "print options, PageSetupDialog component"
-  - "page properties"
-  - "printing [Windows Forms], displaying setup dialog boxes"
-  - "portrait orientation"
-  - "headers, printing"
-  - "footers, page setup options"
-  - "landscape orientation"
-  - "page footer"
-  - "page setup"
-  - "Page Setup dialog box"
-  - "PageSetupDialog component"
-  - "page header"
-  - "printing [Windows Forms], headers and footers"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["printing [Windows Forms], page setup", "margins, page setup options", "paper orientation", "print options, PageSetupDialog component", "page properties", "printing [Windows Forms], displaying setup dialog boxes", "portrait orientation", "headers, printing", "footers, page setup options", "landscape orientation", "page footer", "page setup", "Page Setup dialog box", "PageSetupDialog component", "page header", "printing [Windows Forms], headers and footers"]
 ms.assetid: 1c7ccb02-ac62-4fc8-8e4f-c67b01a86802
 caps.latest.revision: 9
 author: dotnet-bot

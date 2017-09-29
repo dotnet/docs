@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control patterns, Window"
-  - "UI Automation, Window control pattern"
-  - "Window control pattern"
+helpviewer_keywords: ["control patterns, Window", "UI Automation, Window control pattern", "Window control pattern"]
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 caps.latest.revision: 21
 author: "Xansky"

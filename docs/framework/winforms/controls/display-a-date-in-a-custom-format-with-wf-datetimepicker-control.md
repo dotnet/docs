@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DateTimePicker control [Windows Forms], display styles"
-  - "examples [Windows Forms], DateTimePicker control"
-  - "dates, displaying in DateTimePicker control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DateTimePicker control [Windows Forms], display styles", "examples [Windows Forms], DateTimePicker control", "dates, displaying in DateTimePicker control"]
 ms.assetid: 39767691-2d2b-46b6-a663-b7901e581a6e
 caps.latest.revision: 14
 author: dotnet-bot

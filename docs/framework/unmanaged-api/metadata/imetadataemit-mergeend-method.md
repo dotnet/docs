@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.MergeEnd"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::MergeEnd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MergeEnd method [.NET Framework metadata]"
-  - "IMetaDataEmit::MergeEnd method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.MergeEnd"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::MergeEnd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MergeEnd method [.NET Framework metadata]", "IMetaDataEmit::MergeEnd method [.NET Framework metadata]"]
 ms.assetid: 2d64315a-1af1-4c60-aedf-f8a781914aea
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

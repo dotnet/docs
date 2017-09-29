@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "queues [WCF], differences in operating systems"
+helpviewer_keywords: ["queues [WCF], differences in operating systems"]
 ms.assetid: aa809d93-d0a3-4ae6-a726-d015cca37c04
 caps.latest.revision: 21
 author: "Erikre"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data contracts [WCF], serializer"
-  - "WCF, data"
-  - "DataContractSerializer"
+helpviewer_keywords: ["data contracts [WCF], serializer", "WCF, data", "DataContractSerializer"]
 ms.assetid: 3d64837e-0a0c-4cc8-90ff-a5c6f313c63a
 caps.latest.revision: 12
 author: "Erikre"

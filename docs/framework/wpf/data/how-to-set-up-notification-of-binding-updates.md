@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "notifications, binding updates"
-  - "data binding, notification of binding updates"
-  - "binding, updates, notifications of"
+helpviewer_keywords: ["notifications [WPF], binding updates", "data binding [WPF], notification of binding updates", "binding [WPF], updates [WPF], notifications of"]
 ms.assetid: 5673073e-dbe1-49da-980a-484a88f9595a
 caps.latest.revision: 15
 author: dotnet-bot

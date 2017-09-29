@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hybrid applications [WPF interoperability]"
-  - "visual styles [Windows Forms]"
+helpviewer_keywords: ["hybrid applications [WPF interoperability]", "visual styles [Windows Forms]"]
 ms.assetid: 95de9b9c-d804-405c-b2d1-49a88c1e0fe1
 caps.latest.revision: 19
 author: dotnet-bot

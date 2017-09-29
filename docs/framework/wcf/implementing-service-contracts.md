@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "implementing service contracts [WCF]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["implementing service contracts [WCF]"]
 ms.assetid: aefb6f56-47e3-4f24-ab0a-9bc07bf9885f
 caps.latest.revision: 17
 author: "Erikre"

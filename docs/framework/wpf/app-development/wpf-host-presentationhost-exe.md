@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WPF Host application"
-  - "PresentationHost.exe"
+helpviewer_keywords: ["WPF Host application", "PresentationHost.exe"]
 ms.assetid: 3215bfa1-722c-4ac8-a7c5-bdd02d30afbd
 caps.latest.revision: 14
 author: dotnet-bot

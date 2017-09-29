@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "reflection emit, dynamic methods"
-  - "dynamic methods"
+helpviewer_keywords: ["reflection emit, dynamic methods", "dynamic methods"]
 ms.assetid: 07d08a99-62c5-4254-bce2-2a75e55a18ab
 caps.latest.revision: 12
 author: "rpetrusha"

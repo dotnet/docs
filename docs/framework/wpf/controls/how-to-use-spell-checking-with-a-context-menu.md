@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "enabling spell checking in a text box [WPF]"
-  - "reenabling spell checking in a text box [WPF]"
-  - "spell checking with a context menu [WPF]"
+helpviewer_keywords: ["enabling spell checking in a text box [WPF]", "reenabling spell checking in a text box [WPF]", "spell checking with a context menu [WPF]"]
 ms.assetid: 61f69a20-2ff3-4056-9060-e32f4483ec5e
 caps.latest.revision: 4
 author: dotnet-bot

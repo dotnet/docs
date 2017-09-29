@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "StrongNameGetBlob"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "StrongNameGetBlob"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameGetBlob function [.NET Framework strong naming]"
+api_name: ["StrongNameGetBlob"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["StrongNameGetBlob"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameGetBlob function [.NET Framework strong naming]"]
 ms.assetid: 15d09166-be00-4696-913f-2c1fbc7ac2e1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

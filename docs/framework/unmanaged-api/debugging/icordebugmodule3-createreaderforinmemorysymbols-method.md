@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugModule3.CreateReaderForInMemorySymbols"
-api_location: 
-  - "CorDebug.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugModule3::CreateReaderForInMemorySymbols"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateReaderForInMemorySymbols method, ICorDebugModule3 interface [.NET Framework debugging]"
-  - "ICorDebugModule3::CreateReaderForInMemorySymbols method [.NET Framework debugging]"
+api_name: ["ICorDebugModule3.CreateReaderForInMemorySymbols"]
+api_location: ["CorDebug.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugModule3::CreateReaderForInMemorySymbols"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateReaderForInMemorySymbols method, ICorDebugModule3 interface [.NET Framework debugging]", "ICorDebugModule3::CreateReaderForInMemorySymbols method [.NET Framework debugging]"]
 ms.assetid: af317171-d66d-4114-89eb-063554c74940
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

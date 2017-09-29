@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IALink.AddFile"
-  - "AddFile"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "AddFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AddFile method"
+api_name: ["IALink.AddFile", "AddFile"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["AddFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AddFile method"]
 ms.assetid: 9e707abb-f905-4568-9356-12aa21d1b11c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

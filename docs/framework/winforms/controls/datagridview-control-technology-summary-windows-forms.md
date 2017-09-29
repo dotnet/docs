@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], about DataGridView control"
-  - "data grids, about data grids"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], about DataGridView control", "data grids [Windows Forms], about data grids"]
 ms.assetid: 094498c3-a126-4a3f-83fe-f69e96c7717b
 caps.latest.revision: 17
 author: dotnet-bot

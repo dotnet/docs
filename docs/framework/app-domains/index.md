@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], programming"
-  - "programming assemblies"
-  - "application domains, programming"
-  - "programming application domains"
+helpviewer_keywords: ["assemblies [.NET Framework], programming", "programming assemblies", "application domains, programming", "programming application domains"]
 ms.assetid: 96d3b8e3-bef8-4da0-9a81-9841e23a94e9
 caps.latest.revision: 11
 author: "rpetrusha"

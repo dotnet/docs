@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "application domains, about"
-  - "common language runtime, application domains"
-  - "runtime, application domains"
+helpviewer_keywords: ["application domains, about", "common language runtime, application domains", "runtime, application domains"]
 ms.assetid: c6d99815-e022-4d2c-9420-1d7ab5b9d504
 caps.latest.revision: 15
 author: "rpetrusha"

@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "HTML"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "service operations [WCF Data Services]"
-  - "WCF Data Services, service operations"
+dev_langs: ["HTML", "VB", "CSharp", "C++"]
+helpviewer_keywords: ["service operations [WCF Data Services]", "WCF Data Services, service operations"]
 ms.assetid: 583a690a-e60f-4990-8991-d6efce069d76
 caps.latest.revision: 3
 author: "Erikre"

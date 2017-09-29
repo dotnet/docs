@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "collection types [WCF], data contracts"
-  - "data contracts [WCF], collection types"
-  - "collection types [WCF]"
+helpviewer_keywords: ["collection types [WCF], data contracts", "data contracts [WCF], collection types", "collection types [WCF]"]
 ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
 caps.latest.revision: 19
 author: "Erikre"

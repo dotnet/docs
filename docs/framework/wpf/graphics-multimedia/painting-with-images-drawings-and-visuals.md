@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "brushes, painting with drawings"
-  - "painting, with drawings"
-  - "painting, with images"
-  - "painting with visuals"
-  - "brushes, painting with images"
-  - "brushes, painting with visuals"
+helpviewer_keywords: ["brushes [WPF], painting with drawings", "painting [WPF], with drawings", "painting [WPF], with images", "painting with visuals", "brushes [WPF], painting with images", "brushes [WPF], painting with visuals"]
 ms.assetid: 779aac3f-8d41-49d8-8130-768244aa2240
 caps.latest.revision: 28
 author: dotnet-bot

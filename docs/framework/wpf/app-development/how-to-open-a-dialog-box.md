@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "opening dialog boxes"
-  - "dialog boxes, opening"
+helpviewer_keywords: ["opening dialog boxes", "dialog boxes [WPF], opening"]
 ms.assetid: 6b1557d2-da98-4ef4-9f68-4089f04ab9ea
 caps.latest.revision: 5
 author: dotnet-bot

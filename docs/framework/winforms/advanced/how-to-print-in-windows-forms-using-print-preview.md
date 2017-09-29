@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "printing [Windows Forms], using print preview"
-  - "printing, with print preview"
-  - "print preview"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["printing [Windows Forms], using print preview", "printing, with print preview", "print preview"]
 ms.assetid: 4a16f7e2-ae10-4485-b0ae-3d558334d0fe
 caps.latest.revision: 10
 author: dotnet-bot

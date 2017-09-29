@@ -5,24 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "code compilers"
-  - "Code Document Object Model"
-  - "Code Document Object Model, graphs"
-  - "types, CodeDOM"
-  - "namespaces [.NET Framework], CodeDOM"
-  - "templated code generation"
-  - "dynamically representing source code"
-  - "source code models"
-  - "CodeDOM"
-  - "graphing with CodeDOM"
-  - "dynamic compilation"
-  - "code generators"
-  - "CodeDOM, graphs"
+helpviewer_keywords: ["code compilers", "Code Document Object Model", "Code Document Object Model, graphs", "types, CodeDOM", "namespaces [.NET Framework], CodeDOM", "templated code generation", "dynamically representing source code", "source code models", "CodeDOM", "graphing with CodeDOM", "dynamic compilation", "code generators", "CodeDOM, graphs"]
 ms.assetid: 0444ddf3-c3f6-44ed-a999-f710d9c3e0cf
 caps.latest.revision: 11
 author: "rpetrusha"

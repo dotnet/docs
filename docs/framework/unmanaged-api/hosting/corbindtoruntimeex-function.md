@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorBindToRuntimeEx"
-api_location: 
-  - "mscoree.dll"
-  - "mscoreei.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "CorBindToRuntimeEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorBindToRuntimeEx function [.NET Framework hosting]"
+api_name: ["CorBindToRuntimeEx"]
+api_location: ["mscoree.dll", "mscoreei.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["CorBindToRuntimeEx"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorBindToRuntimeEx function [.NET Framework hosting]"]
 ms.assetid: aae9fb17-5d01-41da-9773-1b5b5b642d81
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"

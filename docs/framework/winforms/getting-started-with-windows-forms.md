@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Designer_System.Windows.Forms.Design.FormDocumentDesigner"
-  - "vb.wfc.formdesigner"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, getting started"
-  - "getting started, Windows Forms"
+f1_keywords: ["Designer_System.Windows.Forms.Design.FormDocumentDesigner", "vb.wfc.formdesigner"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, getting started", "getting started, Windows Forms"]
 ms.assetid: a031aa58-5027-4082-b590-df7c12c77dec
 caps.latest.revision: 10
 author: dotnet-bot

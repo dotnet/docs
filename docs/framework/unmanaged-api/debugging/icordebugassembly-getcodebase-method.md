@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugAssembly.GetCodeBase"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugAssembly::GetCodeBase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetCodeBase method [.NET Framework debugging]"
-  - "ICorDebugAssembly::GetCodeBase method [.NET Framework debugging]"
+api_name: ["ICorDebugAssembly.GetCodeBase"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugAssembly::GetCodeBase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetCodeBase method [.NET Framework debugging]", "ICorDebugAssembly::GetCodeBase method [.NET Framework debugging]"]
 ms.assetid: 48adc154-9058-4fef-9c43-e9aad80e4dbf
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

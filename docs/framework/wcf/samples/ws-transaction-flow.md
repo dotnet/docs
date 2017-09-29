@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Transactions"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["Transactions"]
 ms.assetid: f8eecbcf-990a-4dbb-b29b-c3f9e3b396bd
 caps.latest.revision: 43
 author: "Erikre"

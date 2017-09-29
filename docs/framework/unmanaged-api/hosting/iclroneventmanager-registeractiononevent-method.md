@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLROnEventManager.RegisterActionOnEvent"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLROnEventManager::RegisterActionOnEvent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLROnEventManager::RegisterActionOnEvent method [.NET Framework hosting]"
-  - "RegisterActionOnEvent method [.NET Framework hosting]"
+api_name: ["ICLROnEventManager.RegisterActionOnEvent"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLROnEventManager::RegisterActionOnEvent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLROnEventManager::RegisterActionOnEvent method [.NET Framework hosting]", "RegisterActionOnEvent method [.NET Framework hosting]"]
 ms.assetid: b944cf49-918d-4c4e-993b-77d097a52550
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

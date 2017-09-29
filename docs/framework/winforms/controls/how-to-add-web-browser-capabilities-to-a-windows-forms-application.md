@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "WebBrowser control [Windows Forms], adding Web browser capabilities to your application"
-  - "WebBrowser control [Windows Forms], examples"
-  - "Web browsers [.NET Framework], adding to Windows Forms"
-  - "examples [Windows Forms], WebBrowser control"
-  - "Windows Forms, adding Web browser functionality"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["WebBrowser control [Windows Forms], adding Web browser capabilities to your application", "WebBrowser control [Windows Forms], examples", "Web browsers [.NET Framework], adding to Windows Forms", "examples [Windows Forms], WebBrowser control", "Windows Forms, adding Web browser functionality"]
 ms.assetid: 3871f072-b57a-435b-9976-e5da28df04a7
 caps.latest.revision: 17
 author: dotnet-bot

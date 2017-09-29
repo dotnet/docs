@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "RichTextBox"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "RichTextBox control [Windows Forms], about RichTextBox control"
-  - "text boxes, about text boxes"
+f1_keywords: ["RichTextBox"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["RichTextBox control [Windows Forms], about RichTextBox control", "text boxes [Windows Forms], about text boxes"]
 ms.assetid: 95081194-3dd4-4b84-9545-dd373e491eca
 caps.latest.revision: 9
 author: dotnet-bot

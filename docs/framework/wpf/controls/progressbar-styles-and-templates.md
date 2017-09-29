@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "parts [WPF], ProgressBar"
-  - "ProgressBar [WPF], styles and templates"
-  - "styles [WPF], ProgressBar"
-  - "ControlTemplate [WPF], ProgressBar"
-  - "templates [WPF], ProgressBar"
-  - "states [WPF], ProgressBar"
+helpviewer_keywords: ["parts [WPF], ProgressBar", "ProgressBar [WPF], styles and templates", "styles [WPF], ProgressBar", "ControlTemplate [WPF], ProgressBar", "templates [WPF], ProgressBar", "states [WPF], ProgressBar"]
 ms.assetid: 935aa600-16e6-4947-a905-37a189a583dd
 caps.latest.revision: 15
 author: dotnet-bot

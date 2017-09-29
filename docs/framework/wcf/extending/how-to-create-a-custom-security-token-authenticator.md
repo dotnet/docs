@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF, authentication"
+helpviewer_keywords: ["WCF, authentication"]
 ms.assetid: 10e245f7-d31e-42e7-82a2-d5780325d372
 caps.latest.revision: 12
 author: "BrucePerlerMS"

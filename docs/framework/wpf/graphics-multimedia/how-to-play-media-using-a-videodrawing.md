@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "VideoDrawing class"
-  - "MediaPlayer class"
-  - "playback of media"
-  - "classes, VideoDrawing"
-  - "classes, MediaPlayer"
+helpviewer_keywords: ["playback of media", "classes [WPF], MediaPlayer"]
 ms.assetid: 165d47ed-22ce-4ded-aa6a-aa9b7467de87
 caps.latest.revision: 6
 author: dotnet-bot

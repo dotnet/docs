@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "certificates [WCF], viewing with the MMC snap-in"
+helpviewer_keywords: ["certificates [WCF], viewing with the MMC snap-in"]
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
 caps.latest.revision: 12
 author: "Erikre"

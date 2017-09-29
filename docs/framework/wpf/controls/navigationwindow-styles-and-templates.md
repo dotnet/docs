@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "states [WPF], NavigationWindow"
-  - "NavigationWindow [WPF], styles and templates"
-  - "ControlTemplate [WPF], NavigationWindow"
-  - "parts [WPF], NavigationWindow"
-  - "styles [WPF], NavigationWindow"
-  - "templates [WPF], NavigationWindow"
+helpviewer_keywords: ["states [WPF], NavigationWindow", "NavigationWindow [WPF], styles and templates", "ControlTemplate [WPF], NavigationWindow", "parts [WPF], NavigationWindow", "styles [WPF], NavigationWindow", "templates [WPF], NavigationWindow"]
 ms.assetid: 3656055e-3222-43c8-b868-fd0c90cc31a3
 caps.latest.revision: 12
 author: dotnet-bot

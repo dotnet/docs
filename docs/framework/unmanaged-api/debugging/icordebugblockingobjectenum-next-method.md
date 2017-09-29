@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugBlockingObjectEnum.Next Method"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugBlockingObjectEnum::Next"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Next method, ICorDebugBlockingObjectEnum interface [.NET Framework debugging]"
-  - "ICorDebugBlockingObjectEnum::Next method [.NET Framework debugging]"
+api_name: ["ICorDebugBlockingObjectEnum.Next Method"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugBlockingObjectEnum::Next"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Next method, ICorDebugBlockingObjectEnum interface [.NET Framework debugging]", "ICorDebugBlockingObjectEnum::Next method [.NET Framework debugging]"]
 ms.assetid: 0121753f-ebea-48d0-aeb2-ed7fda76dc60
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

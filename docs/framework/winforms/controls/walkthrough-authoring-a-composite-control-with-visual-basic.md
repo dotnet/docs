@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "custom controls [Visual Basic]"
-  - "user controls [Visual Basic]"
-  - "UserControl class, walkthroughs"
-  - "user controls [Windows Forms], creating with Visual Basic"
-  - "controls [Windows Forms], composite controls"
-  - "composite controls, creating"
-  - "custom controls [Windows Forms], creating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["custom controls [Visual Basic]", "user controls [Visual Basic]", "UserControl class, walkthroughs", "user controls [Windows Forms], creating with Visual Basic", "controls [Windows Forms], composite controls", "composite controls [Windows Forms], creating", "custom controls [Windows Forms], creating"]
 ms.assetid: f50e270e-4db2-409a-8319-6db6ca5c7daf
 caps.latest.revision: 21
 author: dotnet-bot

@@ -7,15 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "sockets, asynchronous server sockets"
-  - "sockets, code examples"
-  - "asynchronous server sockets"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["sockets, asynchronous server sockets", "sockets, code examples", "asynchronous server sockets"]
 ms.assetid: 13624cd3-f5c5-4950-8cda-31273b1fa6d1
 caps.latest.revision: 10
 author: "mcleblanc"

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "cardinal splines, drawing"
-  - "drawing, cardinal splines"
-  - "graphics, cardinal splines"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["cardinal splines [Windows Forms], drawing", "drawing, cardinal splines", "graphics [Windows Forms], cardinal splines"]
 ms.assetid: a4a41e80-4461-4b47-b6bd-2c5e68881994
 caps.latest.revision: 13
 author: dotnet-bot

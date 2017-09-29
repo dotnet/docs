@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "CCW"
-  - "COM interop, COM wrappers"
-  - "COM wrappers"
-  - "callable wrappers"
-  - "interoperation with unmanaged code, COM wrappers"
-  - "COM callable wrappers"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["CCW", "COM interop, COM wrappers", "COM wrappers", "callable wrappers", "interoperation with unmanaged code, COM wrappers", "COM callable wrappers"]
 ms.assetid: d04be3b5-27b9-4f5b-8469-a44149fabf78
 caps.latest.revision: 10
 author: "rpetrusha"

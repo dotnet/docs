@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRRuntimeHost.Start"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRRuntimeHost::Start"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRRuntimeHost::Start method [.NET Framework hosting]"
-  - "Start method, ICLRRuntimeHost interface [.NET Framework hosting]"
+api_name: ["ICLRRuntimeHost.Start"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRRuntimeHost::Start"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRRuntimeHost::Start method [.NET Framework hosting]", "Start method, ICLRRuntimeHost interface [.NET Framework hosting]"]
 ms.assetid: c0a6dce5-0a8d-42e8-808b-6ca14df9d289
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

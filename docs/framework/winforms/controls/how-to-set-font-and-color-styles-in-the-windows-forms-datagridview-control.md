@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], cell customization"
-  - "data grids, customizing cells"
-  - "data grids, font styles"
-  - "data grids, color styles"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], cell customization", "data grids [Windows Forms], customizing cells", "data grids [Windows Forms], font styles", "data grids [Windows Forms], color styles"]
 ms.assetid: 588f2c57-d963-41b1-9c1d-d02d71818113
 caps.latest.revision: 14
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.SaveToMemory"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::SaveToMemory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataEmit::SaveToMemory method [.NET Framework metadata]"
-  - "SaveToMemory method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.SaveToMemory"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::SaveToMemory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataEmit::SaveToMemory method [.NET Framework metadata]", "SaveToMemory method [.NET Framework metadata]"]
 ms.assetid: d5237628-2675-45ed-a39e-65c0731b6a56
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

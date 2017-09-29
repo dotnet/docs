@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "verifying whether.NET Framework 3.5 is installed [WPF]"
-  - "detecting .NET Framework 3.5 installation [WPF]"
-  - "detecting whether.NET Framework 3.5 is installed [WPF]"
-  - "determining whether.NET Framework 3.5 is installed [WPF]"
+helpviewer_keywords: ["verifying whether.NET Framework 3.5 is installed [WPF]", "detecting .NET Framework 3.5 installation [WPF]", "detecting whether.NET Framework 3.5 is installed [WPF]", "determining whether.NET Framework 3.5 is installed [WPF]"]
 ms.assetid: 8556a9d2-1eb8-48ef-919c-5baf22a2a9a2
 caps.latest.revision: 7
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WS-Metadata Exchange [WCF]"
-  - "WS-Metadata Exchange [WCF], configuring a custom binding"
+helpviewer_keywords: ["WS-Metadata Exchange [WCF]", "WS-Metadata Exchange [WCF], configuring a custom binding"]
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
 caps.latest.revision: 7
 author: "Erikre"

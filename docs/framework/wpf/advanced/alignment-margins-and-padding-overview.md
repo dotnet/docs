@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "margins"
-  - "FrameworkElement class"
-  - "classes, FrameworkElement"
-  - "padding"
-  - "aligning"
+helpviewer_keywords: ["margins [WPF]", "padding [WPF]", "aligning [WPF]"]
 ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
 caps.latest.revision: 22
 author: dotnet-bot

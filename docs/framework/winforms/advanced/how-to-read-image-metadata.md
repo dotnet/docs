@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "metadata, property item"
-  - "metadata, reading image"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["metadata, property item", "metadata, reading image"]
 ms.assetid: 72ec0b31-0be7-444a-9575-1dbcb864e0be
 caps.latest.revision: 15
 author: dotnet-bot

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "wsFederationBinding element"
+helpviewer_keywords: ["wsFederationBinding element"]
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
 caps.latest.revision: 28
 author: "Erikre"

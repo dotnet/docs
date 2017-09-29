@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "finding DataTemplate elements"
-  - "DataTemplate"
+helpviewer_keywords: ["finding DataTemplate elements", "DataTemplate"]
 ms.assetid: bfcd564e-5e9e-451e-8641-a9b5c3cfac90
 caps.latest.revision: 6
 author: dotnet-bot

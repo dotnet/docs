@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_PRF_RUNTIME_TYPE Enumeration"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_PRF_RUNTIME_TYPE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_PRF_RUNTIME_TYPE enumeration [.NET Framework profiling]"
+api_name: ["COR_PRF_RUNTIME_TYPE Enumeration"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_PRF_RUNTIME_TYPE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_PRF_RUNTIME_TYPE enumeration [.NET Framework profiling]"]
 ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

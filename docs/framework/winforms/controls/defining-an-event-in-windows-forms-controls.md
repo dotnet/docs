@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "events [Windows Forms], defining within Windows Forms custom controls"
-  - "custom controls [Windows Forms], events using code"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["events [Windows Forms], defining within Windows Forms custom controls", "custom controls [Windows Forms], events using code"]
 ms.assetid: d89f1096-8061-42e2-a855-a1f053f1940a
 caps.latest.revision: 10
 author: dotnet-bot

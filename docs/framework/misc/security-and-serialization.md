@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "code security, serialization"
-  - "serialization, security"
-  - "secure coding, serialization"
-  - "security [.NET Framework], serialization"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["code security, serialization", "serialization, security", "secure coding, serialization", "security [.NET Framework], serialization"]
 ms.assetid: b921bc94-bd3a-4c91-9ede-2c8d4f78ea9a
 caps.latest.revision: 9
 author: "mairaw"

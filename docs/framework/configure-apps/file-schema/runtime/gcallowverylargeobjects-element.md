@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "gcAllowVeryLargeObjects element"
-  - "<gcAllowVeryLargeObjects> element"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["gcAllowVeryLargeObjects element", "<gcAllowVeryLargeObjects> element"]
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
 caps.latest.revision: 10
 author: "rpetrusha"

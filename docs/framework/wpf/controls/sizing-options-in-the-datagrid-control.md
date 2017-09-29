@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DataGrid control [WPF], sizing"
-  - "size [WPF], DataGrid"
-  - "automatically size DataGrid"
+helpviewer_keywords: ["DataGrid control [WPF], sizing", "size [WPF], DataGrid", "automatically size DataGrid"]
 ms.assetid: 96a0e47e-b010-4302-98ef-2daac446d8db
 caps.latest.revision: 6
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WS-protocols"
-  - "Web services protocols"
-  - "Windows Communication Foundation, Web service protocols"
+helpviewer_keywords: ["WS-protocols", "Web services protocols", "Windows Communication Foundation, Web service protocols"]
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
 caps.latest.revision: 39
 author: "Erikre"

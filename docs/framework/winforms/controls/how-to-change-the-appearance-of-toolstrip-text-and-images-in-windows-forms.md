@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ToolStrip control [Windows Forms], appearance"
-  - "toolbars [Windows Forms], images"
-  - "examples [Windows Forms], toolbars"
-  - "toolbars [Windows Forms], appearance"
-  - "ToolStrip control [Windows Forms], images"
-  - "ToolStrip control [Windows Forms], text"
-  - "toolbars [Windows Forms], text"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ToolStrip control [Windows Forms], appearance", "toolbars [Windows Forms], images", "examples [Windows Forms], toolbars", "toolbars [Windows Forms], appearance", "ToolStrip control [Windows Forms], images", "ToolStrip control [Windows Forms], text", "toolbars [Windows Forms], text"]
 ms.assetid: d62dc9d1-2edd-4dfa-aed7-1335d6e13d86
 caps.latest.revision: 11
 author: dotnet-bot

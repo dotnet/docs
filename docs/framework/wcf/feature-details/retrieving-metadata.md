@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "metadata [WCF], retrieving"
+helpviewer_keywords: ["metadata [WCF], retrieving"]
 ms.assetid: 18d8ba4c-af0f-4827-a50b-4202d767bacc
 caps.latest.revision: 8
 author: "Erikre"

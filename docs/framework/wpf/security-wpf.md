@@ -5,21 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML files [WPF], sandbox behavior"
-  - "browser-hosted application security [WPF]"
-  - "application security [WPF]"
-  - "navigation security [WPF]"
-  - "loose XAML files [WPF], sandbox behavior"
-  - "WPF security"
-  - "WebBrowser control [WPF], security"
-  - "feature controls [WPF], security"
-  - "XBAP security [WPF]"
-  - "Internet Explorer security settings [WPF]"
+helpviewer_keywords: ["XAML files [WPF], sandbox behavior", "browser-hosted application security [WPF]", "application security [WPF]", "navigation security [WPF]", "loose XAML files [WPF], sandbox behavior", "WPF security", "WebBrowser control [WPF], security", "feature controls [WPF], security", "XBAP security [WPF]", "Internet Explorer security settings [WPF]"]
 ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 caps.latest.revision: 38
 author: dotnet-bot

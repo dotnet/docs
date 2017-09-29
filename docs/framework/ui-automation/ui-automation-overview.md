@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, overview"
-  - "user interface, see UI"
-  - "accessibility, UI automation"
+helpviewer_keywords: ["UI Automation, overview", "user interface, see UI", "accessibility, UI automation"]
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
 caps.latest.revision: 35
 author: "Xansky"

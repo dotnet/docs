@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "property mapping [WPF interoperability]"
-  - "Windows Forms [WPF], interoperability with"
-  - "Windows Forms, WPF interoperation"
-  - "interoperability [WPF], Windows Forms"
-  - "WindowsFormsHost element property mapping"
+helpviewer_keywords: ["property mapping [WPF interoperability]", "Windows Forms [WPF], interoperability with", "Windows Forms [WPF], WPF interoperation", "interoperability [WPF], Windows Forms", "WindowsFormsHost element property mapping"]
 ms.assetid: 999d8298-9c04-467d-a453-86e41002057d
 caps.latest.revision: 21
 author: dotnet-bot

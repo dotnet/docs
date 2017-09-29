@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "programming [WF], data model"
+helpviewer_keywords: ["programming [WF], data model"]
 ms.assetid: d5752e51-cfc9-4499-af71-53b6daae9879
 caps.latest.revision: 10
 author: "Erikre"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "full trust, running intranet applications in"
-  - "intranet applications, running in full trust"
-  - "running intranet applications in full trust"
+helpviewer_keywords: ["full trust, running intranet applications in", "intranet applications, running in full trust", "running intranet applications in full trust"]
 ms.assetid: ee13c0a8-ab02-49f7-b8fb-9eab16c6c4f0
 caps.latest.revision: 20
 author: "rpetrusha"

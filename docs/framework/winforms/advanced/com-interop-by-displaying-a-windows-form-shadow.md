@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "COM [Windows Forms]"
-  - "Windows Forms, unmanaged"
-  - "COM interop, calling methods"
-  - "ActiveX controls [Windows Forms], COM interop"
-  - "ShowDialog method"
-  - "Windows Forms, interop"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["COM [Windows Forms]", "Windows Forms, unmanaged", "COM interop, calling methods", "ActiveX controls [Windows Forms], COM interop", "Windows Forms, interop"]
 ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
 caps.latest.revision: 6
 author: dotnet-bot

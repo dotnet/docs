@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugThread.GetDebugState"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugThread::GetDebugState"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetDebugState method [.NET Framework debugging]"
-  - "ICorDebugThread::GetDebugState method [.NET Framework debugging]"
+api_name: ["ICorDebugThread.GetDebugState"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugThread::GetDebugState"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetDebugState method [.NET Framework debugging]", "ICorDebugThread::GetDebugState method [.NET Framework debugging]"]
 ms.assetid: 9be27b0c-1d99-4722-b0d4-40cf6753ce5c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

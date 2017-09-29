@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "documents, changing TextWrapping property programmatically"
-  - "TextWrapping property, changing programmatically"
+helpviewer_keywords: ["documents [WPF], changing TextWrapping property programmatically", "TextWrapping property [WPF], changing programmatically"]
 ms.assetid: 30d25554-4c82-4df9-a8d6-35683a4a13bb
 caps.latest.revision: 10
 author: dotnet-bot

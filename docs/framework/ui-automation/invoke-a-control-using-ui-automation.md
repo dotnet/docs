@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "invoking controls"
-  - "UI Automation, invoking controls"
-  - "controls, invoking"
+helpviewer_keywords: ["invoking controls", "UI Automation, invoking controls", "controls, invoking"]
 ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
 caps.latest.revision: 15
 author: "Xansky"

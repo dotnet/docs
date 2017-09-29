@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "TransportWithMessageCredentials"
+helpviewer_keywords: ["TransportWithMessageCredentials"]
 ms.assetid: 6cc35346-c37a-4859-b82b-946c0ba6e68f
 caps.latest.revision: 11
 author: "BrucePerlerMS"

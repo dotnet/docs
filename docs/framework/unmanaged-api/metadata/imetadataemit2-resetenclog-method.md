@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit2.ResetENCLog"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit2::ResetENCLog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ResetENCLog method [.NET Framework metadata]"
-  - "IMetaDataEmit2::ResetENCLog method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit2.ResetENCLog"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit2::ResetENCLog"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ResetENCLog method [.NET Framework metadata]", "IMetaDataEmit2::ResetENCLog method [.NET Framework metadata]"]
 ms.assetid: 44b9fd76-a022-4e9a-aea3-dec5411a9c22
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

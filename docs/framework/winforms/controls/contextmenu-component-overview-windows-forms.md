@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ContextMenu"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ContextMenu component [Windows Forms], about ContextMenu component"
-  - "context menus, ContextMenu component"
-  - "shortcut menus, ContextMenu component"
+f1_keywords: ["ContextMenu"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ContextMenu component [Windows Forms], about ContextMenu component", "context menus [Windows Forms], ContextMenu component", "shortcut menus [Windows Forms], ContextMenu component"]
 ms.assetid: 49d6398f-d3c4-4679-84fa-1de07b68b05e
 caps.latest.revision: 15
 author: dotnet-bot

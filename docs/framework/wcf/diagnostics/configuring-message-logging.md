@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "message logging [WCF]"
+helpviewer_keywords: ["message logging [WCF]"]
 ms.assetid: 0ff4c857-8f09-4b85-9dc0-89084706e4c9
 caps.latest.revision: 40
 author: "Erikre"

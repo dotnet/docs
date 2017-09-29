@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "creating an add-in that returns a UI [WPF]"
-  - "implementing add-in pipeline segments [WPF]"
-  - "add-in [WPF], returns a UI"
+helpviewer_keywords: ["creating an add-in that returns a UI [WPF]", "implementing add-in pipeline segments [WPF]", "add-in [WPF], returns a UI"]
 ms.assetid: 57f274b7-4c66-4b72-92eb-81939a393776
 caps.latest.revision: 9
 author: dotnet-bot

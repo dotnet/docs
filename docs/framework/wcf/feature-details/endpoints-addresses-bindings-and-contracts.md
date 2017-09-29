@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "endpoints [WCF]"
-  - "Windows Communication Foundation [WCF], endpoints"
-  - "WCF [WCF], endpoints"
+helpviewer_keywords: ["endpoints [WCF]", "Windows Communication Foundation [WCF], endpoints", "WCF [WCF], endpoints"]
 ms.assetid: 9ddc46ee-1883-4291-9926-28848c57e858
 caps.latest.revision: 14
 author: "Erikre"

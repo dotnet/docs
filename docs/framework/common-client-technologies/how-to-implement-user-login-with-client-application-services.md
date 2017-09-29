@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "validating users [client application services]"
-  - "validation [.NET Framework], client application services"
-  - "client application services, authenticate users"
+helpviewer_keywords: ["validating users [client application services]", "validation [.NET Framework], client application services", "client application services, authenticate users"]
 ms.assetid: 5431a671-eb02-4e18-a651-24764fccec9a
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "inheritance, Windows Forms custom controls"
-  - "UserControl class, inheriting from"
-  - "user controls [Windows Forms], creating"
-  - "composite controls, creating"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["inheritance [Windows Forms], Windows Forms custom controls", "UserControl class, inheriting from", "user controls [Windows Forms], creating", "composite controls [Windows Forms], creating"]
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
 caps.latest.revision: 15
 author: dotnet-bot

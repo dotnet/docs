@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGrid control [Windows Forms], examples"
-  - "user input, validating"
-  - "examples [Windows Forms], DataGrid control"
-  - "DataGrid control [Windows Forms], validating input"
-  - "validation, user input"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGrid control [Windows Forms], examples", "user input [Windows Forms], validating", "examples [Windows Forms], DataGrid control", "DataGrid control [Windows Forms], validating input", "validation, user input"]
 ms.assetid: f1e9c3a0-d0a1-4893-a615-b4b0db046c63
 caps.latest.revision: 14
 author: dotnet-bot

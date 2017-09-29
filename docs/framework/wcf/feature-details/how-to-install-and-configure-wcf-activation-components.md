@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "HTTP activation [WCF]"
+helpviewer_keywords: ["HTTP activation [WCF]"]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
 caps.latest.revision: 16
 author: "Erikre"

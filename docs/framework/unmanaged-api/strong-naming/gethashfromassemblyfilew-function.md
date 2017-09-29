@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "GetHashFromAssemblyFileW"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "DLLExport"
-f1_keywords: 
-  - "GetHashFromAssemblyFileW"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetHashFromAssemblyFileW function [.NET Framework strong naming]"
+api_name: ["GetHashFromAssemblyFileW"]
+api_location: ["mscoree.dll"]
+api_type: ["DLLExport"]
+f1_keywords: ["GetHashFromAssemblyFileW"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetHashFromAssemblyFileW function [.NET Framework strong naming]"]
 ms.assetid: d1b2b172-5353-42af-a877-cf653c68ece0
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

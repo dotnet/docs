@@ -7,8 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "extending [WF], Workflow Designer"
+helpviewer_keywords: ["extending [WF], Workflow Designer"]
 ms.assetid: 98135077-0f5d-4d16-9337-01094e843537
 caps.latest.revision: 13
 author: "Erikre"

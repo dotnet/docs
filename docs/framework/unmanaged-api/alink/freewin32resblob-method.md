@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IALink.FreeWin32ResBlob"
-api_location: 
-  - "alink.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "FreeWin32ResBlob"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FreeWin32ResBlob method"
+api_name: ["IALink.FreeWin32ResBlob"]
+api_location: ["alink.dll"]
+api_type: ["COM"]
+f1_keywords: ["FreeWin32ResBlob"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FreeWin32ResBlob method"]
 ms.assetid: d941102b-2679-4c49-b15e-c0fc9c53e11f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

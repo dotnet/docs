@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "security credentials, adding to SOAP messages"
-  - "WCF, security"
+helpviewer_keywords: ["security credentials, adding to SOAP messages", "WCF, security"]
 ms.assetid: 10f51bee-5f92-4c1a-9126-fa5418535d8f
 caps.latest.revision: 8
 author: "Erikre"

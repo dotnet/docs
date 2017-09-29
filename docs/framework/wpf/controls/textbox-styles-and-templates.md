@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ControlTemplate [WPF], TextBox"
-  - "parts [WPF], TextBox"
-  - "states [WPF], TextBox"
-  - "styles [WPF], TextBox"
-  - "templates [WPF], TextBox"
-  - "TextBox [WPF], styles and templates"
+helpviewer_keywords: ["ControlTemplate [WPF], TextBox", "parts [WPF], TextBox", "states [WPF], TextBox", "styles [WPF], TextBox", "templates [WPF], TextBox", "TextBox [WPF], styles and templates"]
 ms.assetid: aa99130c-43a1-450f-9b46-c40ae0db0cca
 caps.latest.revision: 21
 author: dotnet-bot

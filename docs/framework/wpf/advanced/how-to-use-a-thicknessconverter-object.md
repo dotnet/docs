@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "border thickness"
-  - "ThicknessConverter objects"
+helpviewer_keywords: ["border thickness", "ThicknessConverter objects [WPF]"]
 ms.assetid: 52682194-d7fd-499c-8005-73fcc84e7b2c
 caps.latest.revision: 9
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "classes, MatrixTransform"
-  - "MatrixTransform class"
-  - "graphics [WPF], custom Transforms"
+helpviewer_keywords: ["graphics [WPF], custom Transforms"]
 ms.assetid: 919381ca-989f-47cf-86b4-1094060236e4
 caps.latest.revision: 11
 author: dotnet-bot

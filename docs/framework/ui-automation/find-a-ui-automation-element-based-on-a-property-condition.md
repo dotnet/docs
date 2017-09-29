@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "elements, finding by property conditions"
-  - "UI Automation, finding elements by property conditions"
+helpviewer_keywords: ["elements, finding by property conditions", "UI Automation, finding elements by property conditions"]
 ms.assetid: 3acaee5a-6ce8-4c3e-81c8-67e59eb74477
 caps.latest.revision: 19
 author: "Xansky"

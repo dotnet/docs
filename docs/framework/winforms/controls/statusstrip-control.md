@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "StatusStrip control [Windows Forms]"
-  - "status bars"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["StatusStrip control [Windows Forms]", "status bars"]
 ms.assetid: eb1e59da-0a48-4ce5-af7d-13b8e75af4b1
 caps.latest.revision: 12
 author: dotnet-bot

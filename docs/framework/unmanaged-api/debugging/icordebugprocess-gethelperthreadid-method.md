@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugProcess.GetHelperThreadID"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugProcess::GetHelperThreadID"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetHelperThreadID method [.NET Framework debugging]"
-  - "ICorDebugProcess::GetHelperThreadID method [.NET Framework debugging]"
+api_name: ["ICorDebugProcess.GetHelperThreadID"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugProcess::GetHelperThreadID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetHelperThreadID method [.NET Framework debugging]", "ICorDebugProcess::GetHelperThreadID method [.NET Framework debugging]"]
 ms.assetid: 84e1e605-37c1-49a5-8e12-35db85654622
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

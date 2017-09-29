@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "geometric paths, rotating objects by"
-  - "rotating objects by geometric paths"
+helpviewer_keywords: ["geometric paths [WPF], rotating objects by", "rotating objects by geometric paths"]
 ms.assetid: cb31ca4d-f05a-4c6b-9a18-4b6faaf38d45
 caps.latest.revision: 16
 author: dotnet-bot

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control patterns, dock"
-  - "dock control pattern"
-  - "UI Automation, dock control pattern"
+helpviewer_keywords: ["control patterns, dock", "dock control pattern", "UI Automation, dock control pattern"]
 ms.assetid: ea3d2212-7c8e-4dd7-bf08-73141ca2d4fb
 caps.latest.revision: 23
 author: "Xansky"

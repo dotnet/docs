@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "tracing [.NET Framework], trace switches"
-  - "trace switches, about trace switches"
-  - "tracing [.NET Framework], level of detail"
-  - "switches, trace"
-  - "trace switches"
-  - "trace switches, creating custom"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["tracing [.NET Framework], trace switches", "trace switches, about trace switches", "tracing [.NET Framework], level of detail", "switches, trace", "trace switches", "trace switches, creating custom"]
 ms.assetid: 8ab913aa-f400-4406-9436-f45bc6e54fbe
 caps.latest.revision: 16
 author: "mairaw"

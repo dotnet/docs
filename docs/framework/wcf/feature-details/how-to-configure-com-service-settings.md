@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "COM+ [WCF], configuring service settings"
+helpviewer_keywords: ["COM+ [WCF], configuring service settings"]
 ms.assetid: f42a55a8-3af8-4394-9fdd-bf12a93780eb
 caps.latest.revision: 15
 author: "Erikre"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "hybrid applications [WPF interoperability]"
-  - "data binding [WPF interoperability]"
+helpviewer_keywords: ["hybrid applications [WPF interoperability]", "data binding [WPF interoperability]"]
 ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
 caps.latest.revision: 39
 author: dotnet-bot

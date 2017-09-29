@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "trace compiler options"
-  - "trace statements"
-  - "compiling source code, trace statements"
-  - "tracing [.NET Framework], enabling or disabling"
-  - "tracing [.NET Framework], compiling conditionally"
-  - "TRACE directive"
-  - "conditional compilation, tracing code"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["trace compiler options", "trace statements", "compiling source code, trace statements", "tracing [.NET Framework], enabling or disabling", "tracing [.NET Framework], compiling conditionally", "TRACE directive", "conditional compilation, tracing code"]
 ms.assetid: 56d051c3-012c-42c1-9a58-7270edc624aa
 caps.latest.revision: 11
 author: "mairaw"

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data binding, implementing"
-  - "IListSource interface"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data binding [Windows Forms], implementing", "IListSource interface"]
 ms.assetid: 63ce27aa-2e23-4fbd-8228-0c1726f6c421
 caps.latest.revision: 6
 author: dotnet-bot

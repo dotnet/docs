@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, columns"
-  - "columns [Windows Forms], types"
-  - "DataGridView control [Windows Forms], changing column type"
-  - "data [Windows Forms], displaying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, columns", "columns [Windows Forms], types", "DataGridView control [Windows Forms], changing column type", "data [Windows Forms], displaying"]
 ms.assetid: 7f994d45-600d-4190-a187-35803214b40c
 caps.latest.revision: 13
 author: dotnet-bot

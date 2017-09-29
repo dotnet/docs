@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "informational versions"
-  - "version numbers, assemblies"
-  - "assemblies [.NET Framework], versioning"
-  - "resolving assembly binding requests"
-  - "versioning, assemblies"
+helpviewer_keywords: ["informational versions", "version numbers, assemblies", "assemblies [.NET Framework], versioning", "resolving assembly binding requests", "versioning, assemblies"]
 ms.assetid: 775ad4fb-914f-453c-98ef-ce1089b6f903
 caps.latest.revision: 10
 author: "rpetrusha"

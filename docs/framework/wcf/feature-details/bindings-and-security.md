@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "bindings [WCF], security"
-  - "WCF security"
-  - "Windows Communication Foundation, security"
-  - "bindings [WCF]"
+helpviewer_keywords: ["bindings [WCF], security", "WCF security", "Windows Communication Foundation, security", "bindings [WCF]"]
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
 caps.latest.revision: 42
 author: "BrucePerlerMS"

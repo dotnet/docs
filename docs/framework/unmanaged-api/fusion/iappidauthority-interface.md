@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IAppIdAuthority"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IAppIdAuthority"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAppIdAuthority interface [.NET Framework fusion]"
+api_name: ["IAppIdAuthority"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IAppIdAuthority"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAppIdAuthority interface [.NET Framework fusion]"]
 ms.assetid: ec354fa1-1efd-41b0-bc43-b90597b6e253
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

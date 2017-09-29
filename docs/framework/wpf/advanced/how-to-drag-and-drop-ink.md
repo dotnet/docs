@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "dragging ink"
-  - "ink, dragging"
-  - "ink, drag-and-drop"
-  - "ink, dropping"
-  - "drag-and-drop ink"
-  - "dropping ink"
+helpviewer_keywords: ["dragging ink", "ink [WPF], dragging", "ink [WPF], drag-and-drop", "ink [WPF], dropping", "drag-and-drop ink", "dropping ink"]
 ms.assetid: 932dc410-2bf3-4486-ab31-13487ba59f60
 caps.latest.revision: 4
 author: dotnet-bot

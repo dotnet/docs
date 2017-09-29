@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugEval.CallFunction"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugEval::CallFunction"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugEval::CallFunction method [.NET Framework debugging]"
-  - "CallFunction method [.NET Framework debugging]"
+api_name: ["ICorDebugEval.CallFunction"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugEval::CallFunction"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugEval::CallFunction method [.NET Framework debugging]", "CallFunction method [.NET Framework debugging]"]
 ms.assetid: 7f470c5c-e1c0-4d8d-aad8-830f113ae751
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "timing system [WPF]"
-  - "animation [WPF]"
+helpviewer_keywords: ["timing system [WPF]", "animation [WPF]"]
 ms.assetid: 172cd5a8-a333-4c81-9456-fafccc19f382
 caps.latest.revision: 11
 author: dotnet-bot

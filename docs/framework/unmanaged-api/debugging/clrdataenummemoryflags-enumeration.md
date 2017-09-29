@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CLRDataEnumMemoryFlags"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CLRDataEnumMemoryFlags"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CLRDataEnumMemoryFlags enumeration [.NET Framework debugging]"
+api_name: ["CLRDataEnumMemoryFlags"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["CLRDataEnumMemoryFlags"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CLRDataEnumMemoryFlags enumeration [.NET Framework debugging]"]
 ms.assetid: e249f9fc-e24a-4506-903c-92781f6eab7c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

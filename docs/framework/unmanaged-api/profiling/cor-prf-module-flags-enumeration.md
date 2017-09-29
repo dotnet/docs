@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "COR_PRF_MODULE_FLAGS"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "COR_PRF_MODULE_FLAGS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COR_PRF_MODULE_FLAGS enumeration [.NET Framework profiling]"
+api_name: ["COR_PRF_MODULE_FLAGS"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["COR_PRF_MODULE_FLAGS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COR_PRF_MODULE_FLAGS enumeration [.NET Framework profiling]"]
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

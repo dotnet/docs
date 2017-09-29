@@ -5,26 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "unmanaged functions, calling"
-  - "COM interop, DLL functions"
-  - "unmanaged functions"
-  - "COM interop, platform invoke"
-  - "platform invoke, about platform invoke"
-  - "DLL functions, consuming unmanaged"
-  - "interoperation with unmanaged code, DLL functions"
-  - "interoperation with unmanaged code, platform invoke"
-  - "platform invoke"
-  - "DLL functions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["unmanaged functions, calling", "COM interop, DLL functions", "unmanaged functions", "COM interop, platform invoke", "platform invoke, about platform invoke", "DLL functions, consuming unmanaged", "interoperation with unmanaged code, DLL functions", "interoperation with unmanaged code, platform invoke", "platform invoke", "DLL functions"]
 ms.assetid: eca7606e-ebfb-4f47-b8d9-289903fdc045
 caps.latest.revision: 8
 author: "rpetrusha"

@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "BitmapImage class"
-  - "bitmap images"
-  - "XAML, using a BitmapImage in"
+helpviewer_keywords: ["bitmap images", "XAML [WPF], using a BitmapImage in"]
 ms.assetid: 5a5733aa-396d-4d72-b0c3-77f8c25d9a42
 caps.latest.revision: 6
 author: dotnet-bot

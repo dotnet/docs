@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback.ModuleAttachedToAssembly"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback::ModuleAttachedToAssembly"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerCallback::ModuleAttachedToAssembly method [.NET Framework profiling]"
-  - "ModuleAttachedToAssembly method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback.ModuleAttachedToAssembly"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback::ModuleAttachedToAssembly"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerCallback::ModuleAttachedToAssembly method [.NET Framework profiling]", "ModuleAttachedToAssembly method [.NET Framework profiling]"]
 ms.assetid: b595798a-5d40-4cac-ab4f-911c61d2c5d2
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

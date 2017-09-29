@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "x:TypeExtension"
-  - "Type"
-  - "x:Type"
-  - "xType"
-  - "TypeExtension"
-helpviewer_keywords: 
-  - "x:Type markup extension [XAML Services]"
-  - "XAML [XAML Services], x:Type markup extension"
-  - "XAML [XAML Services], TargetType attribute"
-  - "TargetType attribute [XAML Services]"
-  - "Type markup extension in XAML [XAML Services]"
+f1_keywords: ["x:TypeExtension", "Type", "x:Type", "xType", "TypeExtension"]
+helpviewer_keywords: ["x:Type markup extension [XAML Services]", "XAML [XAML Services], x:Type markup extension", "XAML [XAML Services], TargetType attribute", "TargetType attribute [XAML Services]", "Type markup extension in XAML [XAML Services]"]
 ms.assetid: e0e0ce6f-e873-49c7-8ad7-8b840eb353ec
 caps.latest.revision: 27
 author: "wadepickett"

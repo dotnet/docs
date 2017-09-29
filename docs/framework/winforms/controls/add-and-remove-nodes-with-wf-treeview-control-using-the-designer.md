@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], TreeView control"
-  - "TreeView control [Windows Forms], removing nodes"
-  - "tree nodes in TreeView control"
-  - "TreeView control [Windows Forms], adding nodes"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], TreeView control", "TreeView control [Windows Forms], removing nodes", "tree nodes in TreeView control", "TreeView control [Windows Forms], adding nodes"]
 ms.assetid: 35bf1750-045e-4ec5-97cb-b47b0dbdaa2c
 caps.latest.revision: 7
 author: dotnet-bot

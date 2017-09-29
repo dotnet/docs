@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF and ASP.NET"
-  - "WCF, authorization"
-  - "WCF, security"
+helpviewer_keywords: ["WCF and ASP.NET", "WCF, authorization", "WCF, security"]
 ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
 caps.latest.revision: 15
 author: "Erikre"

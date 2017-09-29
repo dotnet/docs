@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IEnumIDENTITY_ATTRIBUTE"
-api_location: 
-  - "fusion.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IEnumIDENTITY_ATTRIBUTE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IEnumIDENTITY_ATTRIBUTE interface [.NET Framework fusion]"
+api_name: ["IEnumIDENTITY_ATTRIBUTE"]
+api_location: ["fusion.dll"]
+api_type: ["COM"]
+f1_keywords: ["IEnumIDENTITY_ATTRIBUTE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IEnumIDENTITY_ATTRIBUTE interface [.NET Framework fusion]"]
 ms.assetid: c2ec2748-e9ae-4e1b-80db-6fcec5cb81a1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataTables.GetBlobHeapSize"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataTables::GetBlobHeapSize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetBlobHeapSize method [.NET Framework metadata]"
-  - "IMetaDataTables::GetBlobHeapSize method [.NET Framework metadata]"
+api_name: ["IMetaDataTables.GetBlobHeapSize"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataTables::GetBlobHeapSize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetBlobHeapSize method [.NET Framework metadata]", "IMetaDataTables::GetBlobHeapSize method [.NET Framework metadata]"]
 ms.assetid: 6330a9ee-8cd5-4299-86f1-b4de2c701a0d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

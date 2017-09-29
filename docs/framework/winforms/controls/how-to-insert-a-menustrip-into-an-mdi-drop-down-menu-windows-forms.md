@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MenuStrip control [Windows Forms], inserting"
-  - "MenuStrip control [Windows Forms], merging"
-  - "MDI, merging menu items"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MenuStrip control [Windows Forms], inserting", "MenuStrip control [Windows Forms], merging", "MDI, merging menu items"]
 ms.assetid: 0fad444e-26d9-49af-8860-044d9c10d608
 caps.latest.revision: 14
 author: dotnet-bot

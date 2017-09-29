@@ -7,21 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "sending data, Internet security"
-  - "protocols, Internet security"
-  - "Network security"
-  - "network resources, Internet security"
-  - "receiving data, Internet security"
-  - "authentication [.NET Framework], Internet security"
-  - "Internet, security"
-  - "security [.NET Framework], Internet"
-  - "permissions [.NET Framework], Internet"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["sending data, Internet security", "protocols, Internet security", "Network security", "network resources, Internet security", "receiving data, Internet security", "authentication [.NET Framework], Internet security", "Internet, security", "security [.NET Framework], Internet", "permissions [.NET Framework], Internet"]
 ms.assetid: afb07899-2707-49ab-a57f-e0caf20d0171
 caps.latest.revision: 10
 author: "mcleblanc"

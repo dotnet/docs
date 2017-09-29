@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "AutoSize property"
-  - "sizing, automatic"
-  - "layout [Windows Forms], AutoSize"
-  - "automatic sizing"
-  - "AutoSizeMode property"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["sizing, automatic", "layout [Windows Forms], AutoSize", "automatic sizing", "AutoSizeMode property"]
 ms.assetid: 62fd82a2-9565-4f65-925b-9d1e66dc4e7d
 caps.latest.revision: 12
 author: dotnet-bot

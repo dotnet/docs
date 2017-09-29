@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "height properties"
-  - "Panel control, height properties of elements"
+helpviewer_keywords: ["height properties [WPF]", "Panel control [WPF], height properties of elements"]
 ms.assetid: 5ab9e781-dbb8-469a-a3c8-cf38ce312647
 caps.latest.revision: 11
 author: dotnet-bot

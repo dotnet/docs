@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.DefineImportMember"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::DefineImportMember"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DefineImportMember method [.NET Framework metadata]"
-  - "IMetaDataEmit::DefineImportMember method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.DefineImportMember"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::DefineImportMember"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DefineImportMember method [.NET Framework metadata]", "IMetaDataEmit::DefineImportMember method [.NET Framework metadata]"]
 ms.assetid: c7dd94c6-335b-46ff-9dfe-505056db5673
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

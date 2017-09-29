@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WDP encoding"
-  - "WDP decoding"
-  - "encoding image formats"
-  - "decoding WDP images"
-  - "decoding image formats"
-  - "encoding WDP images"
+helpviewer_keywords: ["WDP encoding", "WDP decoding", "encoding image formats", "decoding WDP images", "decoding image formats", "encoding WDP images"]
 ms.assetid: 911777d1-516b-49db-a87b-b54e31b18532
 caps.latest.revision: 8
 author: dotnet-bot

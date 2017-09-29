@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assembly manifest, single-file assemblies"
-  - "library assemblies"
-  - "command-line compilers"
-  - "assemblies [.NET Framework], single-file"
-  - "output file name for assemblies"
-  - "code modules"
-  - "single-file assemblies"
+helpviewer_keywords: ["assembly manifest, single-file assemblies", "library assemblies", "command-line compilers", "assemblies [.NET Framework], single-file", "output file name for assemblies", "code modules", "single-file assemblies"]
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
 caps.latest.revision: 10
 author: "rpetrusha"

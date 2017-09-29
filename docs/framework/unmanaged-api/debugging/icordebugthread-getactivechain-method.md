@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugThread.GetActiveChain"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugThread::GetActiveChain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugThread::GetActiveChain method [.NET Framework debugging]"
-  - "GetActiveChain method [.NET Framework debugging]"
+api_name: ["ICorDebugThread.GetActiveChain"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugThread::GetActiveChain"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugThread::GetActiveChain method [.NET Framework debugging]", "GetActiveChain method [.NET Framework debugging]"]
 ms.assetid: f50de1f7-40ef-4949-b542-1d9a61f7bfef
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.EnumMethods"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::EnumMethods"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IMetaDataImport::EnumMethods method [.NET Framework metadata]"
-  - "EnumMethods method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.EnumMethods"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::EnumMethods"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IMetaDataImport::EnumMethods method [.NET Framework metadata]", "EnumMethods method [.NET Framework metadata]"]
 ms.assetid: 8cc3b0c3-d97d-4f71-9e7d-ef2a92b4959a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

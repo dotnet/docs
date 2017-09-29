@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "captions, sizing"
-  - "sizing controls"
-  - "size, controls"
-  - "labels, sizing to fit contents"
-  - "Label control [Windows Forms], sizing to fit contents"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["captions, sizing", "sizing controls", "size, controls", "labels, sizing to fit contents", "Label control [Windows Forms], sizing to fit contents"]
 ms.assetid: 99648964-63b2-438c-980e-d24103ad602b
 caps.latest.revision: 7
 author: dotnet-bot

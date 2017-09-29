@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DataGridView control [Windows Forms], manipulatiing columns"
-  - "columns [Windows Forms], manipulating"
-  - "data grids, manipulating columns"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DataGridView control [Windows Forms], manipulatiing columns", "columns [Windows Forms], manipulating", "data grids [Windows Forms], manipulating columns"]
 ms.assetid: d8cfe6b3-bbab-4182-bec2-0517d9f1eaf6
 caps.latest.revision: 9
 author: dotnet-bot

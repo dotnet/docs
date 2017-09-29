@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorDebugBlockingObject Structure"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorDebugBlockingObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorDebugBlockingObject structure [.NET Framework debugging]"
+api_name: ["CorDebugBlockingObject Structure"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorDebugBlockingObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorDebugBlockingObject structure [.NET Framework debugging]"]
 ms.assetid: 5944edd1-0914-4efa-aba0-d5a277c38b1a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

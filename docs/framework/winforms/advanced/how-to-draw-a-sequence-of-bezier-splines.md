@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "splines, drawing Bezier"
-  - "Bezier splines, drawing sequence of"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["splines [Windows Forms], drawing Bezier", "Bezier splines [Windows Forms], drawing sequence of"]
 ms.assetid: 37a0bedb-20c2-4cf0-91fa-a5509e826b30
 caps.latest.revision: 9
 author: dotnet-bot

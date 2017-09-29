@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "batching messages [WCF]"
+helpviewer_keywords: ["batching messages [WCF]"]
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
 caps.latest.revision: 19
 author: "Erikre"

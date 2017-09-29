@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ISF (Ink Serialized Format)"
-  - "storing ink"
-  - "ink, storing"
-  - "retrieving ink"
-  - "Ink Serialized Format (ISF)"
+helpviewer_keywords: ["ISF (Ink Serialized Format)", "storing ink", "ink [WPF], storing", "retrieving ink", "Ink Serialized Format (ISF)"]
 ms.assetid: a3f6d16b-d682-4680-9965-907332b4d2b8
 caps.latest.revision: 9
 author: dotnet-bot

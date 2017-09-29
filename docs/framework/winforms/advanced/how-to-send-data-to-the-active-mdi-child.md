@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "child forms"
-  - "MDI, sending data to forms"
-  - "Clipboard, pasting"
-  - "Clipboard, getting data from"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["child forms", "MDI, sending data to forms", "Clipboard, pasting", "Clipboard, getting data from"]
 ms.assetid: 1047d2fe-1235-46db-aad9-563aea1d743b
 caps.latest.revision: 12
 author: dotnet-bot

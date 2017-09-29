@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, customizing cells"
-  - "DataGridView control [Windows Forms], customizing cells"
-  - "cells, customizing in DataGridView control"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids [Windows Forms], customizing cells", "DataGridView control [Windows Forms], customizing cells", "cells, customizing in DataGridView control"]
 ms.assetid: 478b20c9-625c-4116-9c5c-5a16e6f4ec67
 caps.latest.revision: 11
 author: dotnet-bot

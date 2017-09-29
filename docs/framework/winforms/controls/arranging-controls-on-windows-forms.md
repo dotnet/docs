@@ -5,17 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VisualSelection"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], positioning"
-  - "Windows Forms controls, positioning on form"
+f1_keywords: ["VisualSelection"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], positioning", "Windows Forms controls, positioning on form"]
 ms.assetid: b2d62ed8-c391-4a7e-b72e-6bbabfca73dc
 caps.latest.revision: 9
 author: dotnet-bot

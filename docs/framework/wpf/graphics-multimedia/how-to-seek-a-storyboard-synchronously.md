@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "seeking Storyboards synchronously"
-  - "Storyboards, seeking synchronously"
+helpviewer_keywords: ["seeking Storyboards synchronously", "Storyboards [WPF], seeking synchronously"]
 ms.assetid: 03e06271-a946-4810-88ea-3fb4cfa9e0f1
 caps.latest.revision: 8
 author: dotnet-bot

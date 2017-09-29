@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IDebuggerThreadControl.StartBlockingForDebugger"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "StartBlockingForDebugger"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDebuggerThreadControl::StartBlockingForDebugger method [.NET Framework hosting]"
-  - "StartBlockingForDebugger method [.NET Framework hosting]"
+api_name: ["IDebuggerThreadControl.StartBlockingForDebugger"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["StartBlockingForDebugger"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDebuggerThreadControl::StartBlockingForDebugger method [.NET Framework hosting]", "StartBlockingForDebugger method [.NET Framework hosting]"]
 ms.assetid: 5c8f11b4-35d3-4c39-9bbd-58b896ba5ba6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

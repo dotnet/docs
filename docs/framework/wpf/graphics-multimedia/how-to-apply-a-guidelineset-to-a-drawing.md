@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "GuidelineSet property, applying to drawings"
-  - "graphics [WPF], GuidelineSet property"
+helpviewer_keywords: ["GuidelineSet property [WPF], applying to drawings", "graphics [WPF], GuidelineSet property"]
 ms.assetid: 45f3e0b4-8820-45a7-b865-b8ea5b17b0c8
 caps.latest.revision: 6
 author: dotnet-bot

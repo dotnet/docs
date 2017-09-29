@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Anchor property, enabling resizable forms"
-  - "Windows Forms controls, screen resolutions"
-  - "resizing forms"
-  - "Windows Forms controls, size"
-  - "screen resolution and control display"
-  - "controls [Windows Forms], anchoring"
-  - "forms, resizing"
-  - "Windows Forms, resizing"
-  - "controls [Windows Forms], positioning"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Anchor property, enabling resizable forms", "Windows Forms controls, screen resolutions", "resizing forms [Windows Forms]", "Windows Forms controls, size", "screen resolution and control display", "controls [Windows Forms], anchoring", "forms [Windows Forms], resizing", "Windows Forms, resizing", "controls [Windows Forms], positioning"]
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d
 caps.latest.revision: 9
 author: dotnet-bot

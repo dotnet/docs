@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "surveying printer status remotely"
-  - "printer status, surveying remotely"
-  - "remotely surveying printer status"
-  - "status, printers, surveying remotely"
+helpviewer_keywords: ["surveying printer status remotely", "printer status [WPF], surveying remotely", "remotely surveying printer status", "status [WPF], printers [WPF], surveying remotely"]
 ms.assetid: d6324759-8292-4c23-9584-9c708887dc94
 caps.latest.revision: 9
 author: dotnet-bot

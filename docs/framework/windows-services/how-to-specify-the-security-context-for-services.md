@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Service applications, security"
-  - "security [Visual Studio], contexts"
-  - "contexts, Visual Studio security"
-  - "security [Visual Studio], service applications"
-  - "ServiceProcessInstaller class, security context"
-  - "services, security"
-  - "ServiceInstaller class, security context"
+helpviewer_keywords: ["Windows Service applications, security", "security [Visual Studio], contexts", "contexts, Visual Studio security", "security [Visual Studio], service applications", "ServiceProcessInstaller class, security context", "services, security", "ServiceInstaller class, security context"]
 ms.assetid: 02187c7b-dbf2-45f2-96c2-e11010225a22
 caps.latest.revision: 10
 author: "ghogen"

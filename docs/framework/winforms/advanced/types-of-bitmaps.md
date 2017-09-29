@@ -5,30 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "jpeg files"
-  - "TIFF files"
-  - "gif files"
-  - "Graphics Interchange Format"
-  - "Joint Photographic Experts Group"
-  - ".jpeg files"
-  - ".gif files"
-  - "graphics [Windows Forms], file formats"
-  - "images [Windows Forms], file formats"
-  - "Portable Network Graphics"
-  - ".bmp files"
-  - "EXIF file format"
-  - "PNG files"
-  - "pictures, file formats"
-  - "Tag Image File Format"
-  - "bitmaps [Windows Forms], file format"
-  - "Exchangeable Image File"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["jpeg files", "TIFF files", "gif files", "Graphics Interchange Format", "Joint Photographic Experts Group", ".jpeg files", ".gif files", "graphics [Windows Forms], file formats", "images [Windows Forms], file formats", "Portable Network Graphics", ".bmp files", "EXIF file format", "PNG files", "pictures, file formats", "Tag Image File Format", "bitmaps [Windows Forms], file format", "Exchangeable Image File"]
 ms.assetid: 6be085a2-2c13-47c8-b80a-c18b32777d8d
 caps.latest.revision: 14
 author: dotnet-bot

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], regions"
-  - "regions, using"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], regions", "regions, using"]
 ms.assetid: 7809295b-870f-4107-a8b5-8386c298acd5
 caps.latest.revision: 11
 author: dotnet-bot

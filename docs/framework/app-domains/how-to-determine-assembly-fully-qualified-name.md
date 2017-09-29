@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "names [.NET Framework], fully qualified type names"
-  - "names [.NET Framework], assemblies"
-  - "assemblies [.NET Framework], names"
+helpviewer_keywords: ["names [.NET Framework], fully qualified type names", "names [.NET Framework], assemblies", "assemblies [.NET Framework], names"]
 ms.assetid: 009dae23-e1f6-4a64-9a9a-32e4c34802b0
 caps.latest.revision: 13
 author: "rpetrusha"

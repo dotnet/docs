@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "debugging extensions"
-  - "SOS debugging extensions"
-  - "SOS.dll"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["debugging extensions", "SOS debugging extensions", "SOS.dll"]
 ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
 caps.latest.revision: 55
 author: "mairaw"

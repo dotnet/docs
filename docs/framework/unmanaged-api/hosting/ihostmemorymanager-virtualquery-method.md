@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostMemoryManager.VirtualQuery"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostMemoryManager::VirtualQuery"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostMemoryManager::VirtualQuery method [.NET Framework hosting]"
-  - "VirtualQuery method [.NET Framework hosting]"
+api_name: ["IHostMemoryManager.VirtualQuery"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostMemoryManager::VirtualQuery"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostMemoryManager::VirtualQuery method [.NET Framework hosting]", "VirtualQuery method [.NET Framework hosting]"]
 ms.assetid: 757af1e6-b9e8-49e7-b5db-342be3aa205f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

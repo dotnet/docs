@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "curves, filling"
-  - "GDI+, curves"
-  - "curves, drawing"
-  - "curves"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["curves, filling", "GDI+, curves", "curves, drawing", "curves"]
 ms.assetid: 08d2cc9a-dc9d-4eed-bcbb-2c8e2ca5d3ae
 caps.latest.revision: 15
 author: dotnet-bot

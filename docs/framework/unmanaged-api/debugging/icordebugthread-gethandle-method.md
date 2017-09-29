@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugThread.GetHandle"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugThread::GetHandle"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetHandle method, ICorDebugThread interface [.NET Framework debugging]"
-  - "ICorDebugThread::GetHandle method [.NET Framework debugging]"
+api_name: ["ICorDebugThread.GetHandle"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugThread::GetHandle"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetHandle method, ICorDebugThread interface [.NET Framework debugging]", "ICorDebugThread::GetHandle method [.NET Framework debugging]"]
 ms.assetid: 172ef8c4-2ead-4cfc-bd2e-dee4fb7191cd
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

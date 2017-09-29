@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XBAP, XAML browser application"
-  - "WPF XAML browser applications (XBAP)"
-  - "XAML browser applications (XBAP)"
-  - "browser-hosted applications [WPF]"
+helpviewer_keywords: ["XBAP [WPF], XAML browser application", "WPF XAML browser applications (XBAP)", "XAML browser applications (XBAP)", "browser-hosted applications [WPF]"]
 ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 caps.latest.revision: 47
 author: dotnet-bot

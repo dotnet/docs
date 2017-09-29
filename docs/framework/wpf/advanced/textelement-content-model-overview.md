@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "documents, flow documents"
-  - "TextElement content model"
-  - "flow content elements [WPF], TextElement content model"
-  - "flow documents"
+helpviewer_keywords: ["documents [WPF], flow documents", "TextElement content model", "flow content elements [WPF], TextElement content model"]
 ms.assetid: d0a7791c-b090-438c-812f-b9d009d83ee9
 caps.latest.revision: 11
 author: dotnet-bot

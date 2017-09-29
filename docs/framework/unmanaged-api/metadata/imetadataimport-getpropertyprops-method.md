@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataImport.GetPropertyProps"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataImport::GetPropertyProps"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetPropertyProps method [.NET Framework metadata]"
-  - "IMetaDataImport::GetPropertyProps method [.NET Framework metadata]"
+api_name: ["IMetaDataImport.GetPropertyProps"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataImport::GetPropertyProps"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetPropertyProps method [.NET Framework metadata]", "IMetaDataImport::GetPropertyProps method [.NET Framework metadata]"]
 ms.assetid: dc0ff3e6-7e7d-4f6c-948d-52b28f5cb78c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

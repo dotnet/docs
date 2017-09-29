@@ -7,10 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WF [WF], extending"
-  - "Windows Workflow Foundation [WF], extending"
-  - "extending [WF]"
+helpviewer_keywords: ["WF [WF], extending", "Windows Workflow Foundation [WF], extending", "extending [WF]"]
 ms.assetid: d6861f28-9c8c-4225-872d-9a80e2e59034
 caps.latest.revision: 10
 author: "Erikre"

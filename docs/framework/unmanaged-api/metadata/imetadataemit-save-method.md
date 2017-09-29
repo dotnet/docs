@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataEmit.Save"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataEmit::Save"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Save method, IMetaDataEmit interface [.NET Framework metadata]"
-  - "IMetaDataEmit::Save method [.NET Framework metadata]"
+api_name: ["IMetaDataEmit.Save"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataEmit::Save"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Save method, IMetaDataEmit interface [.NET Framework metadata]", "IMetaDataEmit::Save method [.NET Framework metadata]"]
 ms.assetid: c1de8400-adfe-4a71-b828-a1d0cc1ea505
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

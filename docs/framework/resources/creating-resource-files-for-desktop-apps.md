@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "resource files, .resources files"
-  - ".resources files"
-  - "application resources, creating files"
-  - "resource files, creating"
+helpviewer_keywords: ["resource files, .resources files", ".resources files", "application resources, creating files", "resource files, creating"]
 ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
 caps.latest.revision: 25
 author: "rpetrusha"

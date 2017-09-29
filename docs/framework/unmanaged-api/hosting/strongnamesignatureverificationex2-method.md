@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRStrongName2.StrongNameSignatureVerificationEx2"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "StrongNameSignatureVerificationEx2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StrongNameSignatureVerificationEx2 method, ICLRStrongName2 interface [.NET Framework hosting]"
-  - "ICLRStrongName2::StrongNameSignatureVerificationEx2 method [.NET Framework hosting]"
+api_name: ["ICLRStrongName2.StrongNameSignatureVerificationEx2"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["StrongNameSignatureVerificationEx2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["StrongNameSignatureVerificationEx2 method, ICLRStrongName2 interface [.NET Framework hosting]", "ICLRStrongName2::StrongNameSignatureVerificationEx2 method [.NET Framework hosting]"]
 ms.assetid: dfd4133f-a074-4db3-a7ee-4f250fe9ad3a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

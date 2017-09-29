@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms]"
-  - "Windows Forms controls, list of"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms]", "Windows Forms controls, list of"]
 ms.assetid: dec51976-eae0-4398-a537-20bca7974722
 caps.latest.revision: 28
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], how-tos"
-  - "application domains, how-tos"
+helpviewer_keywords: ["assemblies [.NET Framework], how-tos", "application domains, how-tos"]
 ms.assetid: 2264054e-712e-47e4-8657-1aa1cfec3e3d
 caps.latest.revision: 6
 author: "rpetrusha"

@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "TableLayoutPanel control [Windows Forms]"
-  - "layout [Windows Forms]"
-  - "controls [Windows Forms],sizing"
-  - "sizing, automatic"
-  - "layout [Windows Forms], TableLayoutPanel control"
-  - "automatic sizing"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["TableLayoutPanel control [Windows Forms]", "layout [Windows Forms]", "controls [Windows Forms], sizing", "sizing, automatic", "layout [Windows Forms], TableLayoutPanel control", "automatic sizing"]
 ms.assetid: f55175c6-424e-4782-a86e-3f79c1550235
 caps.latest.revision: 14
 author: dotnet-bot

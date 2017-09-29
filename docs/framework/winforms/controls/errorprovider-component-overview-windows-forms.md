@@ -5,18 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ErrorProvider"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "errors [Windows Forms], displaying to users"
-  - "error messages, displaying"
-  - "ErrorProvider component [Windows Forms], about ErrorProvider component"
+f1_keywords: ["ErrorProvider"]
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["errors [Windows Forms], displaying to users", "error messages, displaying", "ErrorProvider component [Windows Forms], about ErrorProvider component"]
 ms.assetid: ced189f2-b5c8-46a7-a6f1-37f5af95dc99
 caps.latest.revision: 12
 author: dotnet-bot

@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "examples [Windows Forms], timers"
-  - "timers, event intervals"
-  - "initialization, Timer components"
-  - "timers, Windows-based"
-  - "Timer component [Windows Forms], initializing"
-  - "procedures, specific time intervals"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], timers", "timers, event intervals", "initialization, Timer components", "timers, Windows-based", "Timer component [Windows Forms], initializing", "procedures, specific time intervals"]
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
 caps.latest.revision: 20
 author: dotnet-bot

@@ -5,29 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "exposing .NET Framework components to COM"
-  - "COM interop, packaging assemblies"
-  - "packaging assemblies for COM"
-  - "Tlbexp.exe"
-  - "TypeLibConverter class"
-  - ".NET Services Installation tool"
-  - "Assembly Registration tool"
-  - "Type Library Exporter"
-  - "Reqsvcs.exe"
-  - "interoperation with unmanaged code, exposing .NET Framework components"
-  - "interoperation with unmanaged code, packaging assemblies"
-  - "COM interop, exposing COM components"
-  - "Reqasm.exe"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["exposing .NET Framework components to COM", "COM interop, packaging assemblies", "packaging assemblies for COM", "Tlbexp.exe", ".NET Services Installation tool", "Assembly Registration tool", "Type Library Exporter", "Reqsvcs.exe", "interoperation with unmanaged code, exposing .NET Framework components", "interoperation with unmanaged code, packaging assemblies", "COM interop, exposing COM components", "Reqasm.exe"]
 ms.assetid: 39dc55aa-f2a1-4093-87bb-f1c0edb6e761
 caps.latest.revision: 10
 author: "rpetrusha"

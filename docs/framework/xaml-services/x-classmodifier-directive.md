@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xClassModifier"
-  - "x:ClassModifier"
-  - "ClassModifier"
-helpviewer_keywords: 
-  - "XAML [XAML Services], x:ClassModifier attribute"
-  - "x:ClassModifier attribute [XAML Services]"
-  - "ClassModifier attribute in XAML [XAML Services]"
+f1_keywords: ["xClassModifier", "x:ClassModifier", "ClassModifier"]
+helpviewer_keywords: ["XAML [XAML Services], x:ClassModifier attribute", "x:ClassModifier attribute [XAML Services]", "ClassModifier attribute in XAML [XAML Services]"]
 ms.assetid: ef30ab78-d334-4668-917d-c9f66c3b6aea
 caps.latest.revision: 22
 author: "wadepickett"

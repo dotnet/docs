@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "controls, Popup"
-  - "Popup control [WPF], about Popup control"
+helpviewer_keywords: ["controls [WPF], Popup", "Popup control [WPF], about Popup control"]
 ms.assetid: 774f53ca-bff8-470e-9ce9-3928b4cf3d4c
 caps.latest.revision: 34
 author: dotnet-bot

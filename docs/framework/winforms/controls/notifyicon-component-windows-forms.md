@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "application icons, background processes"
-  - "context menus, for background processes"
-  - "status tray icon"
-  - "system tray icons"
-  - "user interface, for background processes"
-  - "background program icon"
-  - "NotifyIcon component"
-  - "SysTray icons"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["application icons, background processes", "context menus [Windows Forms], for background processes", "status tray icon", "system tray icons", "user interface, for background processes", "background program icon", "NotifyIcon component", "SysTray icons"]
 ms.assetid: 20312268-1d67-494a-8601-5c43b7f1b513
 caps.latest.revision: 9
 author: dotnet-bot

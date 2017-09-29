@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugManagedCallback.EvalException"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugManagedCallback::EvalException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EvalException method [.NET Framework debugging]"
-  - "ICorDebugManagedCallback::EvalException method [.NET Framework debugging]"
+api_name: ["ICorDebugManagedCallback.EvalException"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugManagedCallback::EvalException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EvalException method [.NET Framework debugging]", "ICorDebugManagedCallback::EvalException method [.NET Framework debugging]"]
 ms.assetid: d6036345-18a3-45c1-a302-b1c6f2dced9b
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

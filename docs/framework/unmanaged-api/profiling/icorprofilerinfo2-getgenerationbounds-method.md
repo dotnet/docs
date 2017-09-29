@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo2.GetGenerationBounds"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo2::GetGenerationBounds"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo2::GetGenerationBounds method [.NET Framework profiling]"
-  - "GetGenerationBounds method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo2.GetGenerationBounds"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo2::GetGenerationBounds"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo2::GetGenerationBounds method [.NET Framework profiling]", "GetGenerationBounds method [.NET Framework profiling]"]
 ms.assetid: 9c37185f-d1e0-4a6e-8b99-707f7df61d88
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

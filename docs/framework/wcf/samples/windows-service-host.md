@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "NT Service"
-  - "NT Service Host Sample [Windows Communication Foundation]"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["NT Service", "NT Service Host Sample [Windows Communication Foundation]"]
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
 caps.latest.revision: 40
 author: "Erikre"

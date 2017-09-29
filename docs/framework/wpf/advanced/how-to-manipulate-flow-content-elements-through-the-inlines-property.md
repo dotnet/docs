@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "flow content elements, manipulating through Inlines property"
-  - "documents, manipulating flow Content elements through Inlines property"
-  - "Inlines property, manipulating flow Content elements"
-  - "properties, Inlines, manipulating flow Content elements"
+helpviewer_keywords: ["flow content elements [WPF], manipulating through Inlines property", "documents [WPF], manipulating flow Content elements through Inlines property", "Inlines property [WPF], manipulating flow Content elements", "properties [WPF], Inlines [WPF], manipulating flow Content elements"]
 ms.assetid: 510780d2-3da1-4360-8763-7054bda22ea3
 caps.latest.revision: 13
 author: dotnet-bot

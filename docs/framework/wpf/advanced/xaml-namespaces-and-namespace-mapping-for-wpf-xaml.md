@@ -5,19 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "custom classes, mapping namespaces to"
-  - "XAML, namespaces"
-  - "namespace mapping"
-  - "assemblies, mapping namespaces to"
-  - "mapping namespaces"
-  - "XAML, namespace mapping"
-  - "classes, mapping namespaces to"
-  - "namespaces"
+helpviewer_keywords: ["custom classes [WPF], mapping namespaces to", "XAML [WPF], namespaces", "namespace mapping", "assemblies [WPF], mapping namespaces to", "mapping namespaces", "XAML [WPF], namespace mapping", "classes [WPF], mapping namespaces to", "namespaces"]
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
 caps.latest.revision: 23
 author: dotnet-bot

@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugThread2.GetVolatileOSThreadID"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugThread2::GetVolatileOSThreadID"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetVolatileOSThreadID method [.NET Framework debugging]"
-  - "ICorDebugThread2::GetVolatileOSThreadID method [.NET Framework debugging]"
+api_name: ["ICorDebugThread2.GetVolatileOSThreadID"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugThread2::GetVolatileOSThreadID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetVolatileOSThreadID method [.NET Framework debugging]", "ICorDebugThread2::GetVolatileOSThreadID method [.NET Framework debugging]"]
 ms.assetid: f0922545-c2cf-40c8-9ef6-ca033563e682
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

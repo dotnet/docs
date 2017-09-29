@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "creating, RoutedCommand class"
-  - "classes, RoutedCommand, creating"
-  - "RoutedCommand class, creating"
+helpviewer_keywords: ["RoutedCommand class [WPF], creating"]
 ms.assetid: aaf6979f-69ab-406f-979f-5766daa85fa0
 caps.latest.revision: 8
 author: dotnet-bot

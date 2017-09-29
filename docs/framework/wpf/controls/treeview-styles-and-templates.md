@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ControlTemplate [WPF], TreeView"
-  - "templates [WPF], TreeView"
-  - "parts [WPF], TreeView"
-  - "states [WPF], TreeView"
-  - "styles [WPF], TreeView"
-  - "TreeView [WPF], styles and templates"
+helpviewer_keywords: ["ControlTemplate [WPF], TreeView", "templates [WPF], TreeView", "parts [WPF], TreeView", "states [WPF], TreeView", "styles [WPF], TreeView", "TreeView [WPF], styles and templates"]
 ms.assetid: a49adb77-0202-4caa-b94a-8bb110d7fa9a
 caps.latest.revision: 16
 author: dotnet-bot

@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostPolicyManager"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostPolicyManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostPolicyManager interface [.NET Framework hosting]"
+api_name: ["IHostPolicyManager"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostPolicyManager"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostPolicyManager interface [.NET Framework hosting]"]
 ms.assetid: 8c4aa124-5e00-46d9-b1e8-57ba6574bb0d
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

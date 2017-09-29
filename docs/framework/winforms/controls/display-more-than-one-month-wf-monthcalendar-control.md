@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "calendars, formatting display"
-  - "examples [Windows Forms], calendar controls"
-  - "calendars, multiple months"
-  - "MonthCalendar control [Windows Forms], formatting display"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["calendars, formatting display", "examples [Windows Forms], calendar controls", "calendars, multiple months", "MonthCalendar control [Windows Forms], formatting display"]
 ms.assetid: d197caa2-38a5-4cb4-acc3-562130c2ace3
 caps.latest.revision: 12
 author: dotnet-bot

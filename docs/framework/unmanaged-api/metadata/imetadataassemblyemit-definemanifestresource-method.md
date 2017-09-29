@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IMetaDataAssemblyEmit.DefineManifestResource"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IMetaDataAssemblyEmit::DefineManifestResource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DefineManifestResource method [.NET Framework metadata]"
-  - "IMetaDataAssemblyEmit::DefineManifestResource method [.NET Framework metadata]"
+api_name: ["IMetaDataAssemblyEmit.DefineManifestResource"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IMetaDataAssemblyEmit::DefineManifestResource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DefineManifestResource method [.NET Framework metadata]", "IMetaDataAssemblyEmit::DefineManifestResource method [.NET Framework metadata]"]
 ms.assetid: 27f6d295-0fe9-4cda-b77e-6e7d5c53df09
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,14 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "encoder parameters, determining supported"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["encoder parameters, determining supported"]
 ms.assetid: f47ae459-e3ce-4d41-a140-2f6c6aea3f44
 caps.latest.revision: 9
 author: dotnet-bot

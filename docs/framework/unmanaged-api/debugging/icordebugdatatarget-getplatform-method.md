@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugDataTarget.GetPlatform Method"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugDataTarget::GetPlatform"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetPlatform method [.NET Framework debugging]"
-  - "ICorDebugDataTarget::GetPlatform method [.NET Framework debugging]"
+api_name: ["ICorDebugDataTarget.GetPlatform Method"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugDataTarget::GetPlatform"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetPlatform method [.NET Framework debugging]", "ICorDebugDataTarget::GetPlatform method [.NET Framework debugging]"]
 ms.assetid: 9ee96c9d-7a3d-4129-a6cc-7675c7f2dda4
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

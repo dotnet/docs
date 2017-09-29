@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "splitter windows"
-  - "SplitContainer control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["splitter windows", "SplitContainer control [Windows Forms]"]
 ms.assetid: 2e36f17f-5c39-4fb4-bb09-7ce3ef823402
 caps.latest.revision: 18
 author: dotnet-bot

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, batch requests"
+helpviewer_keywords: ["WCF Data Services, batch requests"]
 ms.assetid: 3b4db7df-bd33-43a1-8ea4-63a18e131f97
 caps.latest.revision: 2
 author: "Erikre"

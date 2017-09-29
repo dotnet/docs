@@ -5,19 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MonthBackColor property"
-  - "TitleForeColor property"
-  - "examples [Windows Forms], calendar controls"
-  - "TrailingForeColor property"
-  - "TitleBackColor property"
-  - "MonthCalendar control [Windows Forms], formatting display"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["examples [Windows Forms], calendar controls", "MonthCalendar control [Windows Forms], formatting display"]
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf
 caps.latest.revision: 17
 author: dotnet-bot

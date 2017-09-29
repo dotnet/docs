@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTaskManager.ReverseLeaveRuntime"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTaskManager::ReverseLeaveRuntime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IHostTaskManager::ReverseLeaveRuntime method [.NET Framework hosting]"
-  - "ReverseLeaveRuntime method [.NET Framework hosting]"
+api_name: ["IHostTaskManager.ReverseLeaveRuntime"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTaskManager::ReverseLeaveRuntime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IHostTaskManager::ReverseLeaveRuntime method [.NET Framework hosting]", "ReverseLeaveRuntime method [.NET Framework hosting]"]
 ms.assetid: 4837d398-16a1-4e32-902c-022cd1aad3ca
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

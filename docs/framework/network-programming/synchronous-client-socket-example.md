@@ -7,15 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "sockets, code examples"
-  - "synchronous client sockets"
-  - "sockets, synchronous client sockets"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["sockets, code examples", "synchronous client sockets", "sockets, synchronous client sockets"]
 ms.assetid: 2c7d5be7-2221-467c-a839-5744ec4d576d
 caps.latest.revision: 8
 author: "mcleblanc"

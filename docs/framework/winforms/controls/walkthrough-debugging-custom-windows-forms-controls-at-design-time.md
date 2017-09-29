@@ -5,22 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "debugging [Visual Studio], walkthroughs"
-  - "custom controls [Windows Forms], walkthroughs"
-  - "visual editors"
-  - "debugging [Visual Studio], Windows Forms"
-  - "custom controls [Windows Forms], debugging"
-  - "designers"
-  - "controls [Windows Forms], debugging"
-  - "walkthroughs [Windows Forms], debugging"
-  - "design-time debugging"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["debugging [Visual Studio], walkthroughs", "custom controls [Windows Forms], walkthroughs", "visual editors", "debugging [Visual Studio], Windows Forms", "custom controls [Windows Forms], debugging", "designers", "controls [Windows Forms], debugging", "walkthroughs [Windows Forms], debugging", "design-time debugging"]
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
 caps.latest.revision: 19
 author: dotnet-bot

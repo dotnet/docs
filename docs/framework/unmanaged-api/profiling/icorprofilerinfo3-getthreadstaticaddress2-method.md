@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerInfo3.GetThreadStaticAddress2 Method"
-api_location: 
-  - "Mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerInfo3::GetThreadStaticAddress2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerInfo3::GetThreadStaticAddress2 method [.NET Framework profiling]"
-  - "GetThreadStaticAddress2 method [.NET Framework profiling]"
+api_name: ["ICorProfilerInfo3.GetThreadStaticAddress2 Method"]
+api_location: ["Mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerInfo3::GetThreadStaticAddress2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerInfo3::GetThreadStaticAddress2 method [.NET Framework profiling]", "GetThreadStaticAddress2 method [.NET Framework profiling]"]
 ms.assetid: a9608861-ae64-4467-8a73-be05ad34beac
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

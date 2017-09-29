@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "data grids, default functionality in DataGridView control"
-  - "DataGridView control [Windows Forms], default functionality"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["data grids [Windows Forms], default functionality in DataGridView control", "DataGridView control [Windows Forms], default functionality"]
 ms.assetid: 4405f697-cad1-4839-9bcd-8ddb09d9f00e
 caps.latest.revision: 10
 author: dotnet-bot

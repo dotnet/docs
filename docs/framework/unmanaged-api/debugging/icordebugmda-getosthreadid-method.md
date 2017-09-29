@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugMDA.GetOSThreadId"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugMDA::GetOSThreadId"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugMDA::GetOSThreadId method [.NET Framework debugging]"
-  - "GetOSThreadId method [.NET Framework debugging]"
+api_name: ["ICorDebugMDA.GetOSThreadId"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugMDA::GetOSThreadId"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugMDA::GetOSThreadId method [.NET Framework debugging]", "GetOSThreadId method [.NET Framework debugging]"]
 ms.assetid: 7ca7c364-ade4-4219-b434-9f6ae2359be6
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

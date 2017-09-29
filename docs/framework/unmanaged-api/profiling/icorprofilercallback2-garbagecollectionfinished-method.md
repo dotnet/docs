@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerCallback2.GarbageCollectionFinished"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerCallback2::GarbageCollectionFinished"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerCallback2::GarbageCollectionFinished method [.NET Framework profiling]"
-  - "GarbageCollectionFinished method [.NET Framework profiling]"
+api_name: ["ICorProfilerCallback2.GarbageCollectionFinished"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerCallback2::GarbageCollectionFinished"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerCallback2::GarbageCollectionFinished method [.NET Framework profiling]", "GarbageCollectionFinished method [.NET Framework profiling]"]
 ms.assetid: 1a5758ea-2354-43c0-92a3-32c9909d64e1
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

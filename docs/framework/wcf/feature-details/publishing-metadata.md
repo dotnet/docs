@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "meatadata [WCF], publishing"
+helpviewer_keywords: ["meatadata [WCF], publishing"]
 ms.assetid: 3a56831a-cabc-45c0-bd02-12e2e9bd7313
 caps.latest.revision: 10
 author: "Erikre"

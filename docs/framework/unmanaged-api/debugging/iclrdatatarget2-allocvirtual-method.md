@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRDataTarget2.AllocVirtual"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRDataTarget2::AllocVirtual"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICLRDataTarget2::AllocVirtual method [.NET Framework debugging]"
-  - "AllocVirtual method [.NET Framework debugging]"
+api_name: ["ICLRDataTarget2.AllocVirtual"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRDataTarget2::AllocVirtual"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICLRDataTarget2::AllocVirtual method [.NET Framework debugging]", "AllocVirtual method [.NET Framework debugging]"]
 ms.assetid: e3226230-964b-47fb-9f53-d6fdbeda1e9e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

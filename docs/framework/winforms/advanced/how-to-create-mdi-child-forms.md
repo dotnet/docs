@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDI, creating forms"
-  - "child forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MDI, creating forms", "child forms"]
 ms.assetid: 164b69bb-2eca-4339-ada3-0679eb2c6dda
 caps.latest.revision: 21
 author: dotnet-bot

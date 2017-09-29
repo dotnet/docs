@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "DateTime XAML syntax [WPF], strings for"
-  - "DateTime XAML syntax [WPF], where used"
-  - "short date format [WPF], DateTime"
-  - "DateTime XAML syntax [WPF]"
-  - "DateTime XAML text [WPF]"
-  - "DateTime XAML syntax [WPF], format strings for"
+helpviewer_keywords: ["DateTime XAML syntax [WPF], strings for", "DateTime XAML syntax [WPF], where used", "short date format [WPF], DateTime", "DateTime XAML syntax [WPF]", "DateTime XAML text [WPF]", "DateTime XAML syntax [WPF], format strings for"]
 ms.assetid: 5901710a-609b-40c8-9d65-f0016cd9090b
 caps.latest.revision: 10
 author: dotnet-bot

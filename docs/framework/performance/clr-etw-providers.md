@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "ETW, CLR providers"
-  - "CLR ETW providers"
+helpviewer_keywords: ["ETW, CLR providers", "CLR ETW providers"]
 ms.assetid: 0beafad4-b2c8-47f4-b342-83411d57a51f
 caps.latest.revision: 7
 author: "mairaw"

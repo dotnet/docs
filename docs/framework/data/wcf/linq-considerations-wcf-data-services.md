@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, LINQ"
-  - "querying the data service [WCF Data Services]"
-  - "WCF Data Services, querying"
+helpviewer_keywords: ["WCF Data Services, LINQ", "querying the data service [WCF Data Services]", "WCF Data Services, querying"]
 ms.assetid: cc4ec9e9-348f-42a6-a78e-1cd40e370656
 caps.latest.revision: 5
 author: "Erikre"

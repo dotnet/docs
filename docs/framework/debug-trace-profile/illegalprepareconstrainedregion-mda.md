@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "PrepareConstrainedRegions method"
-  - "managed debugging assistants (MDAs), illegal PrepareConstrainedRegions"
-  - "try/catch exception handling, managed debugging assistants"
-  - "IllegalPrepareConstrainedRegions MDA"
-  - "MDAs (managed debugging assistants), illegal PrepareConstrainedRegions"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["managed debugging assistants (MDAs), illegal PrepareConstrainedRegions", "try/catch exception handling, managed debugging assistants", "IllegalPrepareConstrainedRegions MDA", "MDAs (managed debugging assistants), illegal PrepareConstrainedRegions"]
 ms.assetid: 2f9b5031-f910-4e01-a196-f89eab313eaf
 caps.latest.revision: 15
 author: "mairaw"

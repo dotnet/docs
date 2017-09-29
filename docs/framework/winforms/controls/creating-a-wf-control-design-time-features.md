@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms controls, creating"
-  - "design-time functionality, Windows Forms"
-  - "DocumentDesigner class [Windows Forms]"
-  - "walkthroughs [Windows Forms], controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms controls, creating", "design-time functionality, Windows Forms", "DocumentDesigner class [Windows Forms]", "walkthroughs [Windows Forms], controls"]
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
 caps.latest.revision: 46
 author: dotnet-bot

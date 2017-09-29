@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugController.HasQueuedCallbacks"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugController::HasQueuedCallbacks"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "HasQueuedCallbacks method [.NET Framework debugging]"
-  - "ICorDebugController::HasQueuedCallbacks method [.NET Framework debugging]"
+api_name: ["ICorDebugController.HasQueuedCallbacks"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugController::HasQueuedCallbacks"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["HasQueuedCallbacks method [.NET Framework debugging]", "ICorDebugController::HasQueuedCallbacks method [.NET Framework debugging]"]
 ms.assetid: 0d6a1cd9-370b-4462-adbf-e3980e897ea7
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

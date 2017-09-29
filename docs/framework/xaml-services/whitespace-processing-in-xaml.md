@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "East Asian characters [XAML Services]"
-  - "XAML [XAML Services], whitespace processing"
-  - "whitespace processing in XAML [XAML Services]"
-  - "characters [XAML Services], East Asian"
+helpviewer_keywords: ["East Asian characters [XAML Services]", "XAML [XAML Services], whitespace processing", "whitespace processing in XAML [XAML Services]", "characters [XAML Services], East Asian"]
 ms.assetid: cc9cc377-7544-4fd0-b65b-117b90bb0b23
 caps.latest.revision: 20
 author: "wadepickett"

@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "margins, setting in MenuStrip controls"
-  - "menus, setting margins"
-  - "MenuStrip control [Windows Forms], configuring check and image margins"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["margins, setting in MenuStrip controls", "menus [Windows Forms], setting margins", "MenuStrip control [Windows Forms], configuring check and image margins"]
 ms.assetid: 45a9075d-4bea-4ce2-9b2c-7619aa39f8ce
 caps.latest.revision: 9
 author: dotnet-bot

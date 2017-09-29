@@ -5,27 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CreateICeeFileGen"
-api_location: 
-  - "mscoree.dll"
-  - "mscorpehost.dll"
-  - "mscorpe.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CreateICeeFileGen"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateICeeFileGen function [.NET Framework hosting]"
+api_name: ["CreateICeeFileGen"]
+api_location: ["mscoree.dll", "mscorpehost.dll", "mscorpe.dll"]
+api_type: ["COM"]
+f1_keywords: ["CreateICeeFileGen"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateICeeFileGen function [.NET Framework hosting]"]
 ms.assetid: e36e1fd8-8456-4359-bdc3-3ec1765f041f
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,22 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/assemblyIdentity"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#assemblyIdentity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<assemblyIdentity> element"
-  - "container tags, <assemblyIdentity> element"
-  - "assemblyIdentity element"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/assemblyIdentity", "http://schemas.microsoft.com/.NetConfiguration/v2.0#assemblyIdentity"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<assemblyIdentity> element", "container tags, <assemblyIdentity> element", "assemblyIdentity element"]
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 caps.latest.revision: 17
 author: "mcleblanc"

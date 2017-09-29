@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedBinder.GetReaderForFile"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedBinder::GetReaderForFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISymUnmanagedBinder::GetReaderForFile method [.NET Framework debugging]"
-  - "GetReaderForFile method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedBinder.GetReaderForFile"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedBinder::GetReaderForFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISymUnmanagedBinder::GetReaderForFile method [.NET Framework debugging]", "GetReaderForFile method [.NET Framework debugging]"]
 ms.assetid: 46c06258-831e-47c8-a50a-8650af6b637e
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

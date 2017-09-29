@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "INotifyConnection2.UnregisterNotifySource"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "INotifyConnection2::UnregisterNotifySource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "INotifyConnection2::UnregisterNotifySource method [.NET Framework debugging]"
-  - "UnregisterNotifySource method [.NET Framework debugging]"
+api_name: ["INotifyConnection2.UnregisterNotifySource"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["INotifyConnection2::UnregisterNotifySource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["INotifyConnection2::UnregisterNotifySource method [.NET Framework debugging]", "UnregisterNotifySource method [.NET Framework debugging]"]
 ms.assetid: 2fc6c715-646f-41fd-9c12-c59b40575269
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

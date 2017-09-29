@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "MenuStrip, merging"
-  - "Merging, automatic menu"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["MenuStrip, merging", "Merging, automatic menu"]
 ms.assetid: 55e32cad-1141-4a56-aa33-d9543ca3d393
 caps.latest.revision: 5
 author: dotnet-bot

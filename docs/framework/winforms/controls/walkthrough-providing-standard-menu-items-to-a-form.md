@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "menu items, standard"
-  - "toolbars [Windows Forms], walkthroughs"
-  - "StatusStrip control [Windows Forms]"
-  - "ToolStrip control [Windows Forms]"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["menu items, standard", "toolbars [Windows Forms], walkthroughs", "StatusStrip control [Windows Forms]", "ToolStrip control [Windows Forms]"]
 ms.assetid: dac37d98-589e-4d6d-9673-6437e8943122
 caps.latest.revision: 7
 author: dotnet-bot

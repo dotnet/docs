@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostTaskManager.CreateTask"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostTaskManager::CreateTask"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateTask method, IHostTaskManager interface [.NET Framework hosting]"
-  - "IHostTaskManager::CreateTask method [.NET Framework hosting]"
+api_name: ["IHostTaskManager.CreateTask"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostTaskManager::CreateTask"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateTask method, IHostTaskManager interface [.NET Framework hosting]", "IHostTaskManager::CreateTask method [.NET Framework hosting]"]
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

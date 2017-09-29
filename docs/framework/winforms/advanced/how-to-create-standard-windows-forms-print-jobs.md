@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "printing [Windows Forms]"
-  - "printing [Windows Forms], creating print jobs"
-  - "printing [Visual Basic], in Windows applications"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["printing [Windows Forms]", "printing [Windows Forms], creating print jobs", "printing [Visual Basic], in Windows applications"]
 ms.assetid: 03342b90-9cfe-40b2-838b-b479a13c5dea
 caps.latest.revision: 17
 author: dotnet-bot

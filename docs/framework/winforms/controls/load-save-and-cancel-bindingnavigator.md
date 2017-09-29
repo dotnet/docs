@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "controls [Windows Forms], manipulating"
-  - "BindingNavigator control [Windows Forms], adding buttons"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["controls [Windows Forms], manipulating", "BindingNavigator control [Windows Forms], adding buttons"]
 ms.assetid: faa33042-186e-4bb2-8798-17ceb987ec62
 caps.latest.revision: 17
 author: dotnet-bot

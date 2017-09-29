@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-api_name: 
-  - "ICorDebugVariableHome.GetOffset"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugVariableHome::GetOffset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugVariableHome::GetOffset method [.NET Framework debugging]"
-  - "GetOffset method, ICorDebugVariableHome interface [.NET Framework debugging]"
+api_name: ["ICorDebugVariableHome.GetOffset"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugVariableHome::GetOffset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugVariableHome::GetOffset method [.NET Framework debugging]", "GetOffset method, ICorDebugVariableHome interface [.NET Framework debugging]"]
 ms.assetid: f025c2e5-3f6c-4be8-9ffe-c8b214617dfe
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"

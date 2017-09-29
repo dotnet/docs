@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "diagnostics [WCF], analytic tracing"
-  - "administration [WCF], analytic tracing"
-  - "analytic tracing [WCF]"
+helpviewer_keywords: ["diagnostics [WCF], analytic tracing", "administration [WCF], analytic tracing", "analytic tracing [WCF]"]
 ms.assetid: 1d518e47-a38d-41e8-93d7-8c3b361f6a56
 caps.latest.revision: 6
 author: "Erikre"

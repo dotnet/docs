@@ -5,20 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "generics [.NET Framework], reflection emit"
-  - "reflection emit, generic types"
-  - "reflection, generic types"
-  - "type arguments"
-  - "generics [.NET Framework], reflection"
-  - "viewing type information"
-  - "type information, viewing"
-  - "types, generic"
-  - "type parameters"
+helpviewer_keywords: ["generics [.NET Framework], reflection emit", "reflection emit, generic types", "reflection, generic types", "type arguments", "generics [.NET Framework], reflection", "viewing type information", "type information, viewing", "types, generic", "type parameters"]
 ms.assetid: f7180fc5-dd41-42d4-8a8e-1b34288e06de
 caps.latest.revision: 16
 author: "rpetrusha"

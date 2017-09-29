@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "base elements"
+helpviewer_keywords: ["base elements"]
 ms.assetid: 2c997092-72c6-4767-bc84-74267f4eee72
 caps.latest.revision: 19
 author: dotnet-bot

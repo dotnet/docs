@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICLRTask.RudeAbort"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICLRTask::RudeAbort"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RudeAbort method, ICLRTask interface [.NET Framework hosting]"
-  - "ICLRTask::RudeAbort method [.NET Framework hosting]"
+api_name: ["ICLRTask.RudeAbort"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICLRTask::RudeAbort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RudeAbort method, ICLRTask interface [.NET Framework hosting]", "ICLRTask::RudeAbort method [.NET Framework hosting]"]
 ms.assetid: b5785468-fcd7-4cc3-8a5d-8796337b53fc
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

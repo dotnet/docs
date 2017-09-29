@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerModuleEnum"
-api_location: 
-  - "mscorwks.cll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerModuleEnum"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorProfilerModuleEnum interface [.NET Framework profiling]"
+api_name: ["ICorProfilerModuleEnum"]
+api_location: ["mscorwks.cll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerModuleEnum"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorProfilerModuleEnum interface [.NET Framework profiling]"]
 ms.assetid: 24d0fcfa-1601-4fba-868f-da8c97303467
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

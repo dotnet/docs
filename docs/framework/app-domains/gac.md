@@ -5,18 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], global assembly cache"
-  - "GAC (global assembly cache)"
-  - "ACLs [.NET Framework]"
-  - "global assembly cache"
-  - "cache [.NET Framework], global assembly cache"
-  - "global assembly cache, about"
-  - "access control lists [.NET Framework]"
+helpviewer_keywords: ["assemblies [.NET Framework], global assembly cache", "GAC (global assembly cache)", "ACLs [.NET Framework]", "global assembly cache", "cache [.NET Framework], global assembly cache", "global assembly cache, about", "access control lists [.NET Framework]"]
 ms.assetid: cf5eacd0-d3ec-4879-b6da-5fd5e4372202
 caps.latest.revision: 13
 author: "rpetrusha"

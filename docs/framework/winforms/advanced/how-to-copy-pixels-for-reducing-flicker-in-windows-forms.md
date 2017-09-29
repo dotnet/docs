@@ -5,20 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "bitblt"
-  - "graphics, copying"
-  - "flicker, reducing in Windows Forms"
-  - "graphics, reducing flicker"
-  - "pixels, copying"
-  - "flicker"
-  - "bit-block transfer"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["bitblt", "graphics [Windows Forms], copying", "flicker, reducing in Windows Forms", "graphics [Windows Forms], reducing flicker", "pixels, copying", "flicker", "bit-block transfer"]
 ms.assetid: 33b76910-13a3-4521-be98-5c097341ae3b
 caps.latest.revision: 13
 author: dotnet-bot

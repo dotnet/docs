@@ -7,24 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "authentication [.NET Framework], classes"
-  - "IAuthenticationModule interface"
-  - "ICredentialLookup interface"
-  - "CredentialCache class, about CredentialCache class"
-  - "receiving data, authentication"
-  - "AuthenticationManager class, about AuthenticationManager class"
-  - "Internet, authentication"
-  - "sending data, authentication"
-  - "network resources, authentication"
-  - "user authentication, classes for authentication"
-  - "NetworkCredential class, about NetworkCredential class"
-  - "client authentication, classes for authentication"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["authentication [.NET Framework], classes", "IAuthenticationModule interface", "ICredentialLookup interface", "CredentialCache class, about CredentialCache class", "receiving data, authentication", "AuthenticationManager class, about AuthenticationManager class", "Internet, authentication", "sending data, authentication", "network resources, authentication", "user authentication, classes for authentication", "NetworkCredential class, about NetworkCredential class", "client authentication, classes for authentication"]
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
 caps.latest.revision: 11
 author: "mcleblanc"

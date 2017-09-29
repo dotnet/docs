@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "side-by-side execution [.NET Framework]"
-  - "assemblies [.NET Framework], side-by-side execution"
+helpviewer_keywords: ["side-by-side execution [.NET Framework]", "assemblies [.NET Framework], side-by-side execution"]
 ms.assetid: e42036ee-7590-47d1-b884-cc856e39bd5d
 caps.latest.revision: 10
 author: "rpetrusha"

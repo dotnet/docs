@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugMDA.GetXML"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugMDA::GetXML"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugMDA::GetXML method [.NET Framework debugging]"
-  - "GetXML method [.NET Framework debugging]"
+api_name: ["ICorDebugMDA.GetXML"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugMDA::GetXML"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugMDA::GetXML method [.NET Framework debugging]", "GetXML method [.NET Framework debugging]"]
 ms.assetid: 29746b24-3766-4255-8813-0426c45e73e5
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

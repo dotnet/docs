@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<clear> element for <namedCaches>"
-  - "clear element for <namedCaches>"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["<clear> element for <namedCaches>", "clear element for <namedCaches>"]
 ms.assetid: ea01a858-65da-4348-800f-5e3df59d4d79
 caps.latest.revision: 11
 author: "mcleblanc"

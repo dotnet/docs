@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], interop"
-  - "COM interop, registration-free COM interop"
-  - "registration-free COM interop"
-  - "manifests [.NET Framework]"
-  - "registration-free activation"
-  - "object activation"
-  - "registration-free COM interop, about registration-free COM interop"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["assemblies [.NET Framework], interop", "COM interop, registration-free COM interop", "registration-free COM interop", "manifests [.NET Framework]", "registration-free activation", "object activation", "registration-free COM interop, about registration-free COM interop"]
 ms.assetid: 90f308b9-82dc-414a-bce1-77e0155e56bd
 caps.latest.revision: 12
 author: "rpetrusha"

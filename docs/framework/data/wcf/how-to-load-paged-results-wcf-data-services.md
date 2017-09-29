@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "WCF Data Services, deferred content"
-  - "WCF Data Services, loading data"
+helpviewer_keywords: ["WCF Data Services, deferred content", "WCF Data Services, loading data"]
 ms.assetid: bb786ea4-f3ef-4ad3-9a41-3a0b7feb6a1f
 caps.latest.revision: 2
 author: "Erikre"

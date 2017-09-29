@@ -7,15 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "cache [.NET Framework], network applications"
-  - "network resources, caching"
-  - "Internet, caching"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["cache [.NET Framework], network applications", "network resources, caching", "Internet, caching"]
 ms.assetid: fc258a40-f370-434f-ae09-4a8cb11ddaeb
 caps.latest.revision: 13
 author: "mcleblanc"

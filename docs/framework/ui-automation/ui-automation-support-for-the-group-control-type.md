@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, Group control type"
-  - "Group control type"
-  - "control types, Group"
+helpviewer_keywords: ["UI Automation, Group control type", "Group control type", "control types, Group"]
 ms.assetid: 18e01bab-01f8-4567-b867-88dce9c4a435
 caps.latest.revision: 27
 author: "Xansky"

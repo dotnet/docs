@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Runtime Metadata Export Tool"
-  - "Winmdexp.exe"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["Windows Runtime Metadata Export Tool", "Winmdexp.exe"]
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d
 caps.latest.revision: 16
 author: "rpetrusha"

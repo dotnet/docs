@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "data contracts [WCF], enumeration types"
+helpviewer_keywords: ["data contracts [WCF], enumeration types"]
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
 caps.latest.revision: 13
 author: "Erikre"

@@ -5,23 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "cleanup operations"
-  - "marshaling, run-time errors"
-  - "managed debugging assistants (MDAs), marshaling"
-  - "MDAs (managed debugging assistants), marshaling"
-  - "marshaling cleanup error"
-  - "MarshalCleanupError MDA"
-  - "memory, cleanup errors"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["cleanup operations", "marshaling, run-time errors", "managed debugging assistants (MDAs), marshaling", "MDAs (managed debugging assistants), marshaling", "marshaling cleanup error", "MarshalCleanupError MDA", "memory, cleanup errors"]
 ms.assetid: 2f5d9e7c-ae51-4155-a435-54347aa1f091
 caps.latest.revision: 12
 author: "mairaw"

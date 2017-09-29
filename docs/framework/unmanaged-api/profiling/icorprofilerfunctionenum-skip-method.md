@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorProfilerFunctionEnum.Skip Method"
-api_location: 
-  - "mscorwks.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorProfilerFunctionEnum::Skip"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Skip method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"
-  - "ICorProfilerFunctionEnum::Skip method [.NET Framework profiling]"
+api_name: ["ICorProfilerFunctionEnum.Skip Method"]
+api_location: ["mscorwks.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorProfilerFunctionEnum::Skip"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Skip method, ICorProfilerFunctionEnum interface [.NET Framework profiling]", "ICorProfilerFunctionEnum::Skip method [.NET Framework profiling]"]
 ms.assetid: 051465b9-e479-494a-804b-c880323b4cbe
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

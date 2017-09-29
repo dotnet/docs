@@ -5,25 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "tunneling events"
-  - "class listeners"
-  - "listeners"
-  - "Preview routed events"
-  - "instance listeners"
-  - "events, bubbling"
-  - "suppressing events"
-  - "routed events, Preview"
-  - "composited controls"
-  - "events, tunneling"
-  - "routed events, marking as handled"
-  - "controls, compositing"
-  - "events, suppressing"
-  - "bubbling events"
+helpviewer_keywords: ["tunneling events [WPF]", "class listeners", "listeners", "Preview routed events [WPF]", "instance listeners", "events [WPF], bubbling", "suppressing events [WPF]", "routed events [WPF], Preview", "composited controls [WPF]", "events [WPF], tunneling", "routed events [WPF], marking as handled", "controls [WPF], compositing", "events [WPF], suppressing", "bubbling events [WPF]"]
 ms.assetid: 5e745508-4861-4b48-b5f6-5fc7ce5289d2
 caps.latest.revision: 19
 author: dotnet-bot

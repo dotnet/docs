@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "polygons"
-  - "drawing, polygons"
-  - "GDI+, polygons"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["polygons", "drawing, polygons", "GDI+, polygons"]
 ms.assetid: a72213d2-d69a-4c2b-a75c-be7b20390c13
 caps.latest.revision: 13
 author: dotnet-bot

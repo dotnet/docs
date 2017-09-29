@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "drag-and-drop [WPF], retrieving data"
-  - "DataFormats class [WPF], retrieving data"
-  - "DataObject class [WPF], retrieving data"
+helpviewer_keywords: ["drag-and-drop [WPF], retrieving data", "DataFormats class [WPF], retrieving data", "DataObject class [WPF], retrieving data"]
 ms.assetid: a625acf3-1144-44cd-add7-456aefc3859f
 caps.latest.revision: 6
 author: dotnet-bot

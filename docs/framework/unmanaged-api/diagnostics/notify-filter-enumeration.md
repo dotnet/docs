@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "NOTIFY_FILTER"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "NOTIFY_FILTER"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NOTIFY_FILTER enumeration [.NET Framework debugging]"
+api_name: ["NOTIFY_FILTER"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["NOTIFY_FILTER"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["NOTIFY_FILTER enumeration [.NET Framework debugging]"]
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

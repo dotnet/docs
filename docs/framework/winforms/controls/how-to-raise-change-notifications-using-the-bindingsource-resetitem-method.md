@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "change notifications, raising"
-  - "data binding, change notifications"
-  - "BindingSource component [Windows Forms], raising change notifications with"
-  - "data sources, detecting changes"
-  - "change notifications"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["change notifications, raising", "data binding [Windows Forms], change notifications", "BindingSource component [Windows Forms], raising change notifications with", "data sources, detecting changes", "change notifications"]
 ms.assetid: ab8b4096-37ff-4e30-aabc-de79a2f2e972
 caps.latest.revision: 11
 author: dotnet-bot

@@ -5,16 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "rendering performance [WPF], caching an element"
-  - "BitmapCache [WPF], improving rendering performance"
-  - "CacheMode [WPF], improving rendering performance"
-  - "performance [WPF], caching an element"
-  - "UIElement [WPF], caching"
+helpviewer_keywords: ["rendering performance [WPF], caching an element", "BitmapCache [WPF], improving rendering performance", "CacheMode [WPF], improving rendering performance", "performance [WPF], caching an element", "UIElement [WPF], caching"]
 ms.assetid: 4739c1fc-60ba-4c46-aba6-f6c1a2688f19
 caps.latest.revision: 7
 author: dotnet-bot

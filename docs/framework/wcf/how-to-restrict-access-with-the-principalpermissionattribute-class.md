@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "PrincipalPermissionAttribute class"
-  - "WCF, authorization"
-  - "WCF, security"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WCF, authorization", "WCF, security"]
 ms.assetid: 5162f5c4-8781-4cc4-9425-bb7620eaeaf4
 caps.latest.revision: 23
 author: "Erikre"

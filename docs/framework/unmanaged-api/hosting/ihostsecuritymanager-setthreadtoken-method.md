@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IHostSecurityManager.SetThreadToken"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IHostSecurityManager::SetThreadToken"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetThreadToken method [.NET Framework hosting]"
-  - "IHostSecurityManager::SetThreadToken method [.NET Framework hosting]"
+api_name: ["IHostSecurityManager.SetThreadToken"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IHostSecurityManager::SetThreadToken"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetThreadToken method [.NET Framework hosting]", "IHostSecurityManager::SetThreadToken method [.NET Framework hosting]"]
 ms.assetid: e951c345-8a86-4587-911b-a1a57bc6428a
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

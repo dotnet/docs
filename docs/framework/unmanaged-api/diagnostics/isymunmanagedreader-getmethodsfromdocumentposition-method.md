@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ISymUnmanagedReader.GetMethodsFromDocumentPosition"
-api_location: 
-  - "diasymreader.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ISymUnmanagedReader::GetMethodsFromDocumentPosition"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetMethodsFromDocumentPosition method [.NET Framework debugging]"
-  - "ISymUnmanagedReader::GetMethodsFromDocumentPosition method [.NET Framework debugging]"
+api_name: ["ISymUnmanagedReader.GetMethodsFromDocumentPosition"]
+api_location: ["diasymreader.dll"]
+api_type: ["COM"]
+f1_keywords: ["ISymUnmanagedReader::GetMethodsFromDocumentPosition"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetMethodsFromDocumentPosition method [.NET Framework debugging]", "ISymUnmanagedReader::GetMethodsFromDocumentPosition method [.NET Framework debugging]"]
 ms.assetid: 83605f1e-e4f3-49e6-859b-f13cad68bb54
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

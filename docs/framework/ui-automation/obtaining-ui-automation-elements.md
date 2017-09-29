@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "UI Automation, obtaining elements"
-  - "elements, UI Automation, obtaining"
+helpviewer_keywords: ["UI Automation, obtaining elements", "elements, UI Automation, obtaining"]
 ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
 caps.latest.revision: 23
 author: "Xansky"

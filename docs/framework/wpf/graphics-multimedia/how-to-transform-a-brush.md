@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "brushes, rotating contents"
-  - "brushes, Transform property"
-  - "rotating contents of Brushes"
+helpviewer_keywords: ["brushes [WPF], rotating contents", "brushes [WPF], Transform property", "rotating contents of brushes [WPF]"]
 ms.assetid: ebada2f9-f01f-4863-9ea2-c2e4e51610f1
 caps.latest.revision: 13
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "running a LINQ query [WPF], bind to results"
-  - "binding to LINQ query results [WPF]"
+helpviewer_keywords: ["running a LINQ query [WPF], bind to results", "binding to LINQ query results [WPF]"]
 ms.assetid: ff2844d9-17ed-4ea6-aab1-5111af0bc684
 caps.latest.revision: 5
 author: dotnet-bot

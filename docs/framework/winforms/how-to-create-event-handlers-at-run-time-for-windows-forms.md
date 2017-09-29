@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, event handling"
-  - "event handlers, creating"
-  - "run time, creating event handlers at"
-  - "examples [Windows Forms], event handling"
-  - "Button control [Windows Forms], event handlers"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, event handling", "event handlers, creating", "run time, creating event handlers at", "examples [Windows Forms], event handling", "Button control [Windows Forms], event handlers"]
 ms.assetid: 2e7c9e1a-61fe-444d-8113-3c5bacf1c8cb
 caps.latest.revision: 15
 author: dotnet-bot

@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms coordinates"
-  - "screen coordinates"
-  - "client coordinates"
-  - "coordinates, Windows Forms"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms coordinates", "screen coordinates", "client coordinates", "coordinates, Windows Forms"]
 ms.assetid: cc06e61f-43b6-4408-a676-2542dcfcd96e
 caps.latest.revision: 5
 author: dotnet-bot

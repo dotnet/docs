@@ -5,21 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MDAs (managed debugging assistants), invalid cookies"
-  - "cookies, invalid"
-  - "managed debugging assistants (MDAs), invalid cookies"
-  - "InvalidGCHandleCookie MDA"
-  - "invalid cookies"
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["MDAs (managed debugging assistants), invalid cookies", "cookies, invalid", "managed debugging assistants (MDAs), invalid cookies", "InvalidGCHandleCookie MDA", "invalid cookies"]
 ms.assetid: 613ad742-3c11-401d-a6b3-893ceb8de4f8
 caps.latest.revision: 8
 author: "mairaw"

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "images, rotating"
-  - "rotating images"
+helpviewer_keywords: ["images [WPF], rotating", "rotating images"]
 ms.assetid: 863fe998-9a6b-490d-bd86-6ef5c9ec6d75
 caps.latest.revision: 9
 author: dotnet-bot

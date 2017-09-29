@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "DesignerAction object model"
-  - "smart tags"
-  - "designer actions"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["DesignerAction object model", "smart tags", "designer actions"]
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
 caps.latest.revision: 15
 author: dotnet-bot

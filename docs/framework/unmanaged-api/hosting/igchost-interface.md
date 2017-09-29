@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IGCHost"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "IGCHost"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IGCHost interface [.NET Framework hosting]"
+api_name: ["IGCHost"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["IGCHost"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IGCHost interface [.NET Framework hosting]"]
 ms.assetid: 9ad70ffd-6963-4ab2-8c84-3d86c3fb8deb
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

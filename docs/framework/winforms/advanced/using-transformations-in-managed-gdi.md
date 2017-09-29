@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "transformations"
-  - "examples [Windows Forms], transformations"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["transformations", "examples [Windows Forms], transformations"]
 ms.assetid: 1f8e18d3-d2f5-460e-a8e3-2da891c301de
 caps.latest.revision: 11
 author: dotnet-bot

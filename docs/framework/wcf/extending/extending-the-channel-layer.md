@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "extending channels [WCF]"
+helpviewer_keywords: ["extending channels [WCF]"]
 ms.assetid: 4238db74-2fb6-4dc8-a326-f58527230810
 caps.latest.revision: 9
 author: "Erikre"

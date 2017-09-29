@@ -2,19 +2,9 @@
 title: "Creating and Using Strong-Named Assemblies"
 ms.date: "08/01/2017"
 ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "strong-name bypass feature"
-  - "strong-named assemblies, about strong-named assemblies"
-  - "strong-named assemblies"
-  - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
-  - "strong-named assemblies, scenarios"
-  - "assemblies [.NET Framework], strong-named"
-  - "strong-named assemblies, loading into trusted application domains"
-  - "assembly binding, strong-named"
+helpviewer_keywords: ["strong-name bypass feature", "strong-named assemblies, about strong-named assemblies", "strong-named assemblies", "signing assemblies", "assemblies [.NET Framework], signing", "strong-named assemblies, scenarios", "assemblies [.NET Framework], strong-named", "strong-named assemblies, loading into trusted application domains", "assembly binding, strong-named"]
 ms.assetid: ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9
 caps.latest.revision: 17
 author: "rpetrusha"

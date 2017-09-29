@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Click event, CheckBox control"
-  - "CheckBox control [Windows Forms], Click events"
-  - "events [Windows Forms], Click events"
-  - "double-clicks"
-  - "check boxes, responding to events"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Click event [Windows Forms], CheckBox control", "CheckBox control [Windows Forms], Click events", "events [Windows Forms], Click events", "double-clicks", "check boxes [Windows Forms], responding to events"]
 ms.assetid: c39f901e-8899-43b6-aa31-939cbf7089fb
 caps.latest.revision: 11
 author: dotnet-bot

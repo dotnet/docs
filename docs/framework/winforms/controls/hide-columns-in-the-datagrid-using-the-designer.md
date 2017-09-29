@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Windows Forms, columns"
-  - "columns [Windows Forms], hiding"
-  - "DataGridView control [Windows Forms], column hiding"
-  - "data [Windows Forms], displaying"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Windows Forms, columns", "columns [Windows Forms], hiding", "DataGridView control [Windows Forms], column hiding", "data [Windows Forms], displaying"]
 ms.assetid: a81c38e6-2527-426a-bcb1-be691403be04
 caps.latest.revision: 14
 author: dotnet-bot

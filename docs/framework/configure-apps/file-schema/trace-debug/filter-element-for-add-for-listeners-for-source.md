@@ -5,22 +5,12 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#filter"
-  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/add/filter"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "initializeData attribute"
-  - "<filter> element for <add> for <listeners> for <source>"
-  - "filter element for <add> for <listeners> for <source>"
+f1_keywords: ["http://schemas.microsoft.com/.NetConfiguration/v2.0#filter", "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/add/filter"]
+dev_langs: ["VB", "CSharp", "C++", "jsharp"]
+helpviewer_keywords: ["initializeData attribute", "<filter> element for <add> for <listeners> for <source>", "filter element for <add> for <listeners> for <source>"]
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
 caps.latest.revision: 7
 author: "mcleblanc"

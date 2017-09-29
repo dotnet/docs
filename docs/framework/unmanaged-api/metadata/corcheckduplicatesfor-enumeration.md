@@ -5,25 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "CorCheckDuplicatesFor"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "CorCheckDuplicatesFor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CorCheckDuplicatesFor enumeration [.NET Framework metadata]"
+api_name: ["CorCheckDuplicatesFor"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["CorCheckDuplicatesFor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CorCheckDuplicatesFor enumeration [.NET Framework metadata]"]
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "window objects, getting"
+helpviewer_keywords: ["window objects [WPF], getting"]
 ms.assetid: f120f06e-993b-4a97-9657-af0d1986981f
 caps.latest.revision: 5
 author: dotnet-bot

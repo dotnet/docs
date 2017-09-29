@@ -5,16 +5,10 @@ ms.date: "08/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "reflection emit"
-  - "dynamic assemblies"
-  - "metadata, emit interfaces"
-  - "reflection emit, overview"
-  - "assemblies [.NET Framework], emitting dynamic assemblies"
+helpviewer_keywords: ["reflection emit", "dynamic assemblies", "metadata, emit interfaces", "reflection emit, overview", "assemblies [.NET Framework], emitting dynamic assemblies"]
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

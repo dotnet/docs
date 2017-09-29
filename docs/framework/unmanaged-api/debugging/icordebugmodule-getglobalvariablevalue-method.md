@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "ICorDebugModule.GetGlobalVariableValue"
-api_location: 
-  - "mscordbi.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "ICorDebugModule::GetGlobalVariableValue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICorDebugModule::GetGlobalVariableValue method [.NET Framework debugging]"
-  - "GetGlobalVariableValue method [.NET Framework debugging]"
+api_name: ["ICorDebugModule.GetGlobalVariableValue"]
+api_location: ["mscordbi.dll"]
+api_type: ["COM"]
+f1_keywords: ["ICorDebugModule::GetGlobalVariableValue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICorDebugModule::GetGlobalVariableValue method [.NET Framework debugging]", "GetGlobalVariableValue method [.NET Framework debugging]"]
 ms.assetid: bbc0881c-6a59-41a0-b5ee-2f3d1b71684c
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

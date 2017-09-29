@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WCF clients [WCF], using"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["WCF clients [WCF], using"]
 ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 caps.latest.revision: 38
 author: "Erikre"

@@ -5,15 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "netTcpBinding Element"
+dev_langs: ["VB", "CSharp"]
+helpviewer_keywords: ["netTcpBinding Element"]
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
 caps.latest.revision: 33
 author: "Erikre"

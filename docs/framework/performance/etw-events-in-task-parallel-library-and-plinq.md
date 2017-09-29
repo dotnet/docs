@@ -5,12 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "tasks, ETW events"
+helpviewer_keywords: ["tasks, ETW events"]
 ms.assetid: 87a9cff5-d86f-4e44-a06e-d12764d0dce2
 caps.latest.revision: 7
 author: "mairaw"

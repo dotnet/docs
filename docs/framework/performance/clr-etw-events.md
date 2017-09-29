@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "CLR ETW events"
-  - "ETW, common language runtime"
-  - "ETW, CLR events"
+helpviewer_keywords: ["CLR ETW events", "ETW, common language runtime", "ETW, CLR events"]
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
 caps.latest.revision: 45
 author: "mairaw"

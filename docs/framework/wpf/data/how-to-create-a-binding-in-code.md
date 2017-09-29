@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "binding data, creating"
-  - "data binding, creating"
+helpviewer_keywords: ["binding data [WPF], creating", "data binding [WPF], creating"]
 ms.assetid: 1a606db9-cf5f-42ed-a1c5-9e4722ec77a0
 caps.latest.revision: 22
 author: dotnet-bot

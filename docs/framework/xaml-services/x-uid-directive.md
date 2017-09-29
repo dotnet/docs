@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "XAML [XAML Services], localizable content attribute"
-  - "XAML [XAML Services], x:Uid attribute"
-  - "x:Uid attribute [XAML Services]"
-  - "Uid attribute [XAML Services]"
+helpviewer_keywords: ["XAML [XAML Services], localizable content attribute", "XAML [XAML Services], x:Uid attribute", "x:Uid attribute [XAML Services]", "Uid attribute [XAML Services]"]
 ms.assetid: 81defade-483b-4a89-b76d-9b25bba34010
 caps.latest.revision: 12
 author: "wadepickett"

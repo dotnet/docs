@@ -5,23 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "names [.NET Framework], fully qualified type names"
-  - "reflection, fully qualified type names"
-  - "names [.NET Framework], assemblies"
-  - "tokens"
-  - "BNF"
-  - "assemblies [.NET Framework], names"
-  - "Backus-Naur form"
-  - "languages, BNF grammar"
-  - "fully qualified type names"
-  - "type names"
-  - "special characters"
-  - "IDENTIFIER"
+helpviewer_keywords: ["names [.NET Framework], fully qualified type names", "reflection, fully qualified type names", "names [.NET Framework], assemblies", "tokens", "BNF", "assemblies [.NET Framework], names", "Backus-Naur form", "languages, BNF grammar", "fully qualified type names", "type names", "special characters", "IDENTIFIER"]
 ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
 caps.latest.revision: 11
 author: "rpetrusha"

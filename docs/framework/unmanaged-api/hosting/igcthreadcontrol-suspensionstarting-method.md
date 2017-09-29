@@ -5,26 +5,17 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-api_name: 
-  - "IGCThreadControl.SuspensionStarting"
-api_location: 
-  - "mscoree.dll"
-api_type: 
-  - "COM"
-f1_keywords: 
-  - "SuspensionStarting"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IGCThreadControl::SuspensionStarting method [.NET Framework hosting]"
-  - "SuspensionStarting method, IGCThreadControl interface [.NET Framework hosting]"
+api_name: ["IGCThreadControl.SuspensionStarting"]
+api_location: ["mscoree.dll"]
+api_type: ["COM"]
+f1_keywords: ["SuspensionStarting"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IGCThreadControl::SuspensionStarting method [.NET Framework hosting]", "SuspensionStarting method, IGCThreadControl interface [.NET Framework hosting]"]
 ms.assetid: 0af312af-98e9-415e-b182-42e80a1aee51
-topic_type: 
-  - "apiref"
+topic_type: ["apiref"]
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

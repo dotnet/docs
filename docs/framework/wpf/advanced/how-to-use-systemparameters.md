@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "SystemParameters class"
-  - "classes, SystemParameters"
+helpviewer_keywords: ["classes [WPF], SystemParameters"]
 ms.assetid: 02e7a5de-94eb-4953-b91c-52e6c872ad5b
 caps.latest.revision: 24
 author: dotnet-bot

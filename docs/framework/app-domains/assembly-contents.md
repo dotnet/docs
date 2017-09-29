@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "assemblies [.NET Framework], multifile"
-  - "assemblies [.NET Framework], single-file"
-  - "single-file assemblies"
-  - "multifile assemblies"
+helpviewer_keywords: ["assemblies [.NET Framework], multifile", "assemblies [.NET Framework], single-file", "single-file assemblies", "multifile assemblies"]
 ms.assetid: 28116714-da77-45f7-826d-fa035d121948
 caps.latest.revision: 8
 author: "rpetrusha"

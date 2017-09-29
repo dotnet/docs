@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "TabPage control"
-  - "tab controls, tab order"
-  - "tab pages, adding controls"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["TabPage control", "tab controls, tab order", "tab pages [Windows Forms], adding controls"]
 ms.assetid: 7ee734e1-e31e-4ed0-bbc0-a7e8a1f20fef
 caps.latest.revision: 7
 author: dotnet-bot

@@ -5,13 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Communication Foundation, extending"
-  - "OperationRequirement class"
+helpviewer_keywords: ["Windows Communication Foundation, extending"]
 ms.assetid: 6214afde-44c1-4bf5-ba07-5ad6493620ea
 caps.latest.revision: 15
 author: "Erikre"

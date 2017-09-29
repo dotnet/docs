@@ -5,17 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
+ms.technology: ["dotnet-wpf"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "classes, RotateTransform"
-  - "graphics, spinning elements"
-  - "classes, DoubleAnimation"
-  - "DoubleAnimation class"
-  - "RotateTransform class"
-  - "spinning elements"
+helpviewer_keywords: ["graphics [WPF], spinning elements", "spinning elements"]
 ms.assetid: 1f011976-8b07-4c31-9faf-019e0ddaa24c
 caps.latest.revision: 8
 author: dotnet-bot

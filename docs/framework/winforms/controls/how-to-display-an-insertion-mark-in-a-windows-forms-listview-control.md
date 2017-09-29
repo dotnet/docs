@@ -5,17 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "ListView control [Windows Forms], drag operations"
-  - "graphics, insertion marks"
-  - "drop and drag, insertion marks"
-  - "insertion marks"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["ListView control [Windows Forms], drag operations", "graphics [Windows Forms], insertion marks", "drop and drag, insertion marks", "insertion marks"]
 ms.assetid: 88d0a15b-25fd-4dc3-a685-297351311940
 caps.latest.revision: 18
 author: dotnet-bot

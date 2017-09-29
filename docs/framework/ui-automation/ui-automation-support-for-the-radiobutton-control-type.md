@@ -5,14 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: ["dotnet-bcl"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "control types, Radio Button"
-  - "UI Automation, Radio Button control type"
-  - "RadioButton control type"
+helpviewer_keywords: ["control types, Radio Button", "UI Automation, Radio Button control type", "RadioButton control type"]
 ms.assetid: 87170464-7857-41f1-bcf7-bb41be31cb53
 caps.latest.revision: 21
 author: "Xansky"

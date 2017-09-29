@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "inclusive-inclusive endpoints"
-  - "coordinate systems"
-  - "graphics, vector graphics"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["inclusive-inclusive endpoints", "coordinate systems", "graphics [Windows Forms], vector graphics"]
 ms.assetid: 0195df81-66be-452d-bb53-5a582ebfdc09
 caps.latest.revision: 16
 author: dotnet-bot

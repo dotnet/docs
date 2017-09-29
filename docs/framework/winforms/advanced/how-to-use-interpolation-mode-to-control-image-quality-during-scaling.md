@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "interpolation mode, controlling image quality"
-  - "images [Windows Forms], scaling"
-  - "images [Windows Forms], controlling quality"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["interpolation mode, controlling image quality", "images [Windows Forms], scaling", "images [Windows Forms], controlling quality"]
 ms.assetid: fde9bccf-8aa5-4b0d-ba4b-788740627b02
 caps.latest.revision: 16
 author: dotnet-bot

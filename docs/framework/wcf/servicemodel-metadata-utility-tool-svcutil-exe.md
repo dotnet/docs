@@ -5,15 +5,10 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "clients [WCF], building"
-  - "endpoints [WCF]"
-  - "Svcutil.exe"
-  - "clients [WCF], consuming services"
+helpviewer_keywords: ["clients [WCF], building", "endpoints [WCF]", "Svcutil.exe", "clients [WCF], consuming services"]
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
 caps.latest.revision: 40
 author: "Erikre"

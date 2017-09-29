@@ -5,18 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
+ms.technology: ["dotnet-winforms"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
-helpviewer_keywords: 
-  - "Help, adding to Windows applications"
-  - "Windows applications, providing Help systems"
-  - "What's This? Help"
-  - "Help, Windows Forms"
-  - "HelpProvider component [Windows Forms], providing Help in Windows applications"
+dev_langs: ["jsharp"]
+helpviewer_keywords: ["Help, adding to Windows applications", "Windows applications, providing Help systems", "What's This? Help", "Help, Windows Forms", "HelpProvider component [Windows Forms], providing Help in Windows applications"]
 ms.assetid: 2a96a278-432c-41fc-9e3c-5bfedf5e1267
 caps.latest.revision: 9
 author: dotnet-bot

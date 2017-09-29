@@ -5,16 +5,11 @@ ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: ["dotnet-clr"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interfaces [.NET Framework hosting]"
-  - "hosting interfaces [.NET Framework]"
-  - "unmanaged interfaces [.NET Framework], hosting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interfaces [.NET Framework hosting]", "hosting interfaces [.NET Framework]", "unmanaged interfaces [.NET Framework], hosting"]
 ms.assetid: cc64cb05-38da-418e-815a-daac8e8e26e5
 caps.latest.revision: 23
 author: "rpetrusha"

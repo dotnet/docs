@@ -40,9 +40,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Set Environment Variables for the Visual Studio Command Line
+
 The VsDevCmd.bat file sets the appropriate environment variables to enable command-line builds. For more information about VsDevCmd.bat, see [Knowledge Base article Q248802](http://go.microsoft.com/fwlink/?LinkId=225042).  
+
+> [!NOTE]
+> The VsDevCmd.bat file is a new file delivered with Visual Studio 2017. Visual Studio 2015 and earlier versions used VSVARS32.bat for the same purpose. 
   
- If the current version of Visual Studio is installed on a computer that also has an earlier version of Visual Studio, you should not run VsDevCmd.bat from different versions in the same Command Prompt window.  
+If the current version of Visual Studio is installed on a computer that also has an earlier version of Visual Studio, you should not run VsDevCmd.bat and VSVARS32.BAT from different versions in the same Command Prompt window.
   
 ### To run VsDevCmd.BAT  
   

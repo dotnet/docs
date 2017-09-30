@@ -1,5 +1,5 @@
 ---
-title: Quick Starts - C# Guide | Microsoft Docs
+title: Quick Starts - C# Guide
 description: Learn C# in your browser
 keywords: C#, Get Started, Lessons, Interactive
 author: billwagner

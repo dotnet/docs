@@ -1,5 +1,5 @@
 ---
-title: "Windows Workflow Foundation (WF) Migration Guidance | Microsoft Docs"
+title: "Windows Workflow Foundation (WF) Migration Guidance"
 ms.date: "06/19/2017"
 ms.prod: ".net-framework"
 ms.topic: "article"

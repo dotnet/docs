@@ -1,6 +1,6 @@
 ---
 title: "Obsolete Members in the .NET Framework"
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""

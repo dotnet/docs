@@ -43,9 +43,7 @@ One of the basic design decisions every framework designer faces is whether to d
   
  As a rule of thumb, the majority of types in a framework should be classes. There are, however, some situations in which the characteristics of a value type make it more appropriate to use structs.  
   
- **✓ CONSIDER** defining a struct instead of a class if instances of the type are small and commonly short-lived or are commonly embedded in other objects.  
-  
- **X AVOID** defining a struct unless the type has all of the following characteristics:  
+ **✓ CONSIDER** defining a struct instead of a class if instances of the type are small and commonly short-lived or are commonly embedded in other objects and if the type has all of the following characteristics:  
   
 -   It logically represents a single value, similar to primitive types (`int`, `double`, etc.).  
   

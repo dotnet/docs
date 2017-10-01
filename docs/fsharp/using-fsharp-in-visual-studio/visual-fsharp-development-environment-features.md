@@ -58,11 +58,11 @@ The following features of the Visual Studiocode and text editors are supported i
 |Go to definition for .NET Framework API|When the cursor is positioned on a .NET Framework API, shows code generated from .NET Framework metadata.|No|
 |Go to definition for user-defined API|When the cursor is on a program entity that you defined, moves the cursor to the location in your code where the entity is defined.|Yes|
 |Go To Line|Enables you to go to a specific line in a file, by line number.|Yes|
-|Navigation bars at top of file|Enables you to jump to locations in code, by, For example, function name.|No|
-|Outlining. See [Outlining](https://msdn.microsoft.com/library/td6a5x4s.aspx).|Enables you to collapse sections of your code to create a more compact view.|No|
+|Navigation bars at top of file|Enables you to jump to locations in code, by, For example, function name.|Yes|
+|Outlining. See [Outlining](https://msdn.microsoft.com/library/td6a5x4s.aspx).|Enables you to collapse sections of your code to create a more compact view.|Yes|
 |Tabify|Converts spaces to tabs.|Yes|
-|Type colorization|Shows defined type names in a special color.|No|
-|Quick Find. See Quick Find, Find and Replace Window.|Enables you to search in a file or project.|Yes, but only to find F# files, not to search within files|
+|Type colorization|Shows defined type names in a special color.|Yes|
+|Quick Find. See Quick Find, Find and Replace Window.|Enables you to search in a file or project.|Yes|
 
 ## IntelliSense Features
 The following table summarizes IntelliSense features supported and not supported in F#. For general information about IntelliSense, see [Using IntelliSense](https://msdn.microsoft.com/library/hcw1s69b.aspx).
@@ -76,7 +76,7 @@ The following table summarizes IntelliSense features supported and not supported
 |Generate code elements|Enables you to generate stub code for a variety of constructs.|No|
 |List Members|When you type the member access operator (.), shows members for a type.|Yes|
 |Organize Usings/Open|Organizes namespaces referenced by **using** statements in C# or **open** directives in F#.|No|
-|Parameter Info|Shows helpful information about parameters as you type a function call.|Yes.|
+|Parameter Info|Shows helpful information about parameters as you type a function call.|Yes|
 |Quick Info|Displays the complete declaration for any identifier in your code.|Yes|
 Refactoring of F# code isn't supported in Visual Studio 2012.
 

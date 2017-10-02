@@ -60,9 +60,6 @@ This section provides reference material about C# keywords, operators, special c
   
 ## Related Sections  
 
- [C# KB articles in the Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?LinkId=70368)  
- Opens a Microsoft search page for Knowledge Base articles that are available on online.  
-  
  [C#](../../csharp/index.md)
  Provides a portal to Visual C# documentation.  
   

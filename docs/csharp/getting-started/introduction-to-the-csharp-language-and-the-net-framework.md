@@ -65,7 +65,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 -   For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](https://docs.microsoft.com/dotnet/standard/using-linq).  
   
--   To find the latest articles and resources from the Visual C# team, see the [Visual C# Developer Center](http://go.microsoft.com/fwlink/?LinkId=47811).  
+-   To find the latest articles and resources from the Visual C# team, see the [Visual Studio Resource Center](https://www.visualstudio.com/).  
   
 ## .NET Framework Platform Architecture  
  C# programs run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.  

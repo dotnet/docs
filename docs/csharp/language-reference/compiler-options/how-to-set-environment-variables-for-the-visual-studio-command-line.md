@@ -46,11 +46,11 @@ The VsDevCmd.bat file sets the appropriate environment variables to enable comma
 > [!NOTE]
 > The VsDevCmd.bat file is a new file delivered with Visual Studio 2017. Visual Studio 2015 and earlier versions used VSVARS32.bat for the same purpose. This file was stored in Program Files\Microsoft Visual Studio\*Version*\Common7\Tools or Program Files (x86)\Microsoft Visual Studio\*Version*\Common7\Tools.
   
-If the current version of Visual Studio is installed on a computer that also has an earlier version of Visual Studio, you should not run VsDevCmd.bat and VSVARS32.BAT from different versions in the same Command Prompt window.
+If the current version of Visual Studio is installed on a computer that also has an earlier version of Visual Studio, you should not run VsDevCmd.bat and VSVARS32.BAT from different versions in the same Command Prompt window. Instead, you should run the command for each version in its own window.
   
 ### To run VsDevCmd.BAT  
   
-1.  From the **Start** menu, open the **Developer Command Prompt for VS2017**.  It's in the **Visual Studio 2017** folder
+1.  From the **Start** menu, open the **Developer Command Prompt for VS2017**.  It's in the **Visual Studio 2017** folder.
   
 2.  Change to the Program Files\Microsoft Visual Studio\*Version*\*Offering*\Common7\Tools or Program Files (x86)\Microsoft Visual Studio\*Version*\*Offering*\Common7\Tools subdirectory of your installation.  (*Version* is *2017* for the current version. *Offering* is one of *Enterprise*, *Professional* or *Community*.)
   

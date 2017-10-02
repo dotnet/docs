@@ -244,7 +244,7 @@ A standard date and time format string uses a single format specifier to define 
   
  The "O" or "o" standard format specifier corresponds to the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffK" custom format string for <xref:System.DateTime> values and to the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffzzz" custom format string for <xref:System.DateTimeOffset> values. In this string, the pairs of single quotation marks that delimit individual characters, such as the hyphens, the colons, and the letter "T", indicate that the individual character is a literal that cannot be changed. The apostrophes do not appear in the output string.  
   
- The O" or "o" standard format specifier (and the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffK"  custom format string) takes advantage of the three ways that ISO 8601 represents time zone information to preserve the <xref:System.DateTime.Kind%2A> property of <xref:System.DateTime> values:  
+ The "O" or "o" standard format specifier (and the "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffK"  custom format string) takes advantage of the three ways that ISO 8601 represents time zone information to preserve the <xref:System.DateTime.Kind%2A> property of <xref:System.DateTime> values:  
   
 -   The time zone component of <xref:System.DateTimeKind.Local?displayProperty=nameWithType> date and time values is an offset from UTC (for example, +01:00, -07:00). All <xref:System.DateTimeOffset> values are also represented in this format.  
   

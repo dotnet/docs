@@ -5,11 +5,11 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
+ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - "versions, determining for .NET Framework"
   - ".NET Framework, determining version"
-ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
-caps.latest.revision: 62
+ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

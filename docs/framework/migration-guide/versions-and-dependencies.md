@@ -1,18 +1,14 @@
 ---
 title: ".NET Framework Versions and Dependencies"
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "05/02/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
-caps.latest.revision: 122
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

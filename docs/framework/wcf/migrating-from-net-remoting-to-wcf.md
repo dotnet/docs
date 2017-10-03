@@ -20,27 +20,27 @@ This article describes how to migrate an application that uses .NET Remoting to 
   
  .NET Remoting is a legacy product that is supported only for backward compatibility. It is not secure across mixed-trust environments because it cannot maintain the separate trust levels between client and server. For example, you should never expose a .NET Remoting endpoint to the Internet or to untrusted clients. We recommend existing Remoting applications be migrated to newer and more secure technologies. If the application’s design uses only HTTP and is RESTful, we recommend ASP.NET Web API. For more information, see ASP.NET Web API. If the application is based on SOAP or requires non-Http protocols such as TCP, we recommend WCF.  
   
--   [Comparing .NET Remoting to WCF](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Compare_Top)  
+-   [Comparing .NET Remoting to WCF](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Compare_Top)  
   
-    -   [Server Implementation Comparison](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Server_Comp)  
+    -   [Server Implementation Comparison](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Server_Comp)  
   
-    -   [Client Implementation Comparison](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Client_Comp)  
+    -   [Client Implementation Comparison](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Client_Comp)  
   
-    -   [Serialization Usage](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Serialization_Usage)  
+    -   [Serialization Usage](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Serialization_Usage)  
   
-    -   [Exception Handling Capabilities](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Exception_Handling)  
+    -   [Exception Handling Capabilities](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Exception_Handling)  
   
-    -   [Security Considerations](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Security_Considerations)  
+    -   [Security Considerations](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Security_Considerations)  
   
--   [Migrating to WCF](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Migrating_Top)  
+-   [Migrating to WCF](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Migrating_Top)  
   
-    -   [Why Migrate from Remoting to WCF?](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Why_Migrate)  
+    -   [Why Migrate from Remoting to WCF?](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Why_Migrate)  
   
-    -   [Migration Recommendations](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Migration_Recommendations)  
+    -   [Migration Recommendations](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Migration_Recommendations)  
   
-    -   [Migration Scenarios](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Migration_Scenarios)  
+    -   [Migration Scenarios](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Migration_Scenarios)  
   
--   [Summary](../../../docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Summary)  
+-   [Summary](~/docs/framework/wcf/migrating-from-net-remoting-to-wcf.md#Summary)  
   
 <a name="Compare_Top"></a>   
 ## Comparing .NET Remoting to WCF  
@@ -132,11 +132,11 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
   
  There are many ways to configure and to host WCF services. This is just one example, known as "self-hosted". For more information, see the following topics:  
   
--   [How to: Define a Service Contract](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)  
+-   [How to: Define a Service Contract](~/docs/framework/wcf/how-to-define-a-wcf-service-contract.md)  
   
--   [Configuring Services Using Configuration Files](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)  
+-   [Configuring Services Using Configuration Files](~/docs/framework/wcf/configuring-services-using-configuration-files.md)  
   
--   [Hosting Services](../../../docs/framework/wcf/hosting-services.md)  
+-   [Hosting Services](~/docs/framework/wcf/hosting-services.md)  
   
 <a name="Client_Comp"></a>   
 ### Client Implementation Comparison  
@@ -176,7 +176,7 @@ Console.WriteLine(String.Format("  Customer {0} {1} received.",
   
  This example shows programming at the channel level because it is most similar to the Remoting example. Also available is the **Add Service Reference** approach in Visual Studio that generates code to simplify client programming. For more information, see the following topics:  
   
--   [Client Channel-Level Programming](../../../docs/framework/wcf/extending/client-channel-level-programming.md)  
+-   [Client Channel-Level Programming](~/docs/framework/wcf/extending/client-channel-level-programming.md)  
   
 -   [How to: Add, Update, or Remove a Service Reference](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)  
   
@@ -244,7 +244,7 @@ public class WCFCustomer
   
  When WCF sends an object across tiers, it serializes only the values and creates a new instance of the object on the other tier. Any interactions with the values of the object occur only locally – they do not communicate with the other tier the way .NET Remoting by-reference objects do. For more information, see the following topics:  
   
--   [Serialization and Deserialization](../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md)  
+-   [Serialization and Deserialization](~/docs/framework/wcf/feature-details/serialization-and-deserialization.md)  
   
 -   [Serialization in Windows Communication Foundation](http://msdn.microsoft.com/magazine/cc163569.aspx)  
   
@@ -318,9 +318,9 @@ catch (FaultException<CustomerServiceFault> fault)
 #### Security in WCF  
  WCF was designed with security in mind, in part to address the kinds of vulnerabilities found in .NET Remoting. WCF offers security at both the transport and message level, and offers many options for authentication, authorization, encryption, and so on. For more information, see the following topics:  
   
--   [Security](../../../docs/framework/wcf/feature-details/security.md)  
+-   [Security](~/docs/framework/wcf/feature-details/security.md)  
   
--   [WCF Security Guidance](http://wcfsecurity.codeplex.com/)  
+-   [WCF Security Guidance](~/docs/dotnet/framework/wcf/feature-details/security-guidance-and-best-practices)  
   
 <a name="Migrating_Top"></a>   
 ## Migrating to WCF  
@@ -344,7 +344,7 @@ catch (FaultException<CustomerServiceFault> fault)
   
 -   **Create the fault contract (optional).** Create the types that will be exchanged between server and client when errors are encountered. Mark these types with [DataContract] and [DataMember] to make them serializable. For all service operations you marked with [OperationContract], also mark them with [FaultContract] to indicate which errors they may return.  
   
--   **Configure and host the service.** Once the service contract has been created, the next step is to configure a binding to expose the service at an endpoint. For more information, see [Endpoints: Addresses, Bindings, and Contracts](../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md).  
+-   **Configure and host the service.** Once the service contract has been created, the next step is to configure a binding to expose the service at an endpoint. For more information, see [Endpoints: Addresses, Bindings, and Contracts](~/docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md).  
   
  Once a Remoting application has been migrated to WCF, it is still important to remove dependencies on .NET Remoting. This ensures that any Remoting vulnerabilities are removed from the application. These steps include the following:  
   
@@ -463,7 +463,7 @@ public class RemotingServer : MarshalByRefObject
         customerServiceHost.Open();  
     ```  
   
-     When this ServiceHost is started, it uses the web.config file to establish the proper contract, binding and endpoint. For more information about configuration files, see [Configuring Services Using Configuration Files](../../../docs/framework/wcf/configuring-services-using-configuration-files.md). This style of starting the server is known as self-hosting. To learn more about other choices for hosting WCF services, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+     When this ServiceHost is started, it uses the web.config file to establish the proper contract, binding and endpoint. For more information about configuration files, see [Configuring Services Using Configuration Files](~/docs/framework/wcf/configuring-services-using-configuration-files.md). This style of starting the server is known as self-hosting. To learn more about other choices for hosting WCF services, see [Hosting Services](~/docs/framework/wcf/hosting-services.md).  
   
 6.  The client project’s app.config must declare matching binding information for the service’s endpoint. The easiest way to do this in Visual Studio is to use **Add Service Reference**, which will automatically update the app.config file. Alternatively, these same changes can be added manually.  
   
@@ -704,7 +704,7 @@ public class RemotingServer : MarshalByRefObject
     > [!NOTE]
     >  This code also illustrates sending a derived type (PremiumCustomer). The service interface expects a Customer object, but the [KnownType] attribute on the Customer class indicated PremiumCustomer was also allowed. WCF will fail any attempt to serialize or deserialize any other type through this service interface.  
   
- Normal WCF exchanges of data are by value. This guarantees that invoking methods on one of these data objects executes only locally – it will not invoke code on the other tier. While it is possible to achieve something like by-reference objects returned *from* the server, it is not possible for a client to pass a by-reference object *to* the server. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service. For more information, see [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md).  
+ Normal WCF exchanges of data are by value. This guarantees that invoking methods on one of these data objects executes only locally – it will not invoke code on the other tier. While it is possible to achieve something like by-reference objects returned *from* the server, it is not possible for a client to pass a by-reference object *to* the server. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service. For more information, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md).  
   
 <a name="Summary"></a>   
 ## Summary  

@@ -325,7 +325,7 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 |5100|The user's computer does not meet system requirements.|
 
 #### Download error codes
- See the following content in the MSDN Library:
+ See the following content in Microsoft Docs:
 
 - [Background Intelligent Transfer Service (BITS) error codes](http://go.microsoft.com/fwlink/?LinkId=180946)
 
@@ -334,7 +334,7 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
 - [WinHttp error codes](http://go.microsoft.com/fwlink/?LinkId=180948)
 
 #### Other error codes
- See the following content in the MSDN Library:
+ See the following content in Microsoft Docs:
 
 - [Windows Installer error codes](http://go.microsoft.com/fwlink/?LinkId=180949)
 

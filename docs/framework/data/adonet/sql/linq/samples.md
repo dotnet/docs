@@ -27,7 +27,7 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
   
--   Search the MSDN Library for specific issues.  
+-   Search for specific issues on Microsoft Docs.  
   
 -   Participate in the [LINQ Forum](http://go.microsoft.com/fwlink/?LinkId=76488), where you can discuss more complex topics in detail with experts.  
   

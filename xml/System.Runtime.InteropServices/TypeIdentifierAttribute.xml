@@ -44,7 +44,7 @@
   
 -   For types that don’t have GUIDs in their type library, it has a constructor that takes two strings (`scope` and `identifier`). These are combined into a GUID and become the key that is used for type equivalence.  
   
- Type equivalence is discussed in the <xref:System.Type.IsEquivalentTo%2A?displayProperty=fullName> topic.  
+ Type equivalence is discussed in the <xref:System.Type.IsEquivalentTo%2A?displayProperty=nameWithType> topic.  
   
  ]]></format>
     </remarks>

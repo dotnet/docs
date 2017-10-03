@@ -120,11 +120,11 @@
   
 <a name="binding_to_data"></a>   
 ## Binding to Data  
- The <xref:System.Web.UI.WebControls.DetailsView> control can be bound to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, <xref:System.Collections.Generic.List%601?displayProperty=fullName>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.DetailsView> control to the appropriate data source type:  
+ The <xref:System.Web.UI.WebControls.DetailsView> control can be bound to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.DetailsView> control to the appropriate data source type:  
   
 -   To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.DetailsView> control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The <xref:System.Web.UI.WebControls.DetailsView> control automatically binds to the specified data source control. This is the preferred method to bind to data.  
   
--   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.DetailsView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method.  
+-   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.DetailsView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method.  
   
  For more information on data binding, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
   
@@ -555,7 +555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.DetailsView> class. To dynamically add a <xref:System.Web.UI.WebControls.DetailsView> control to a page, create a new <xref:System.Web.UI.WebControls.DetailsView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.DetailsView> class. To dynamically add a <xref:System.Web.UI.WebControls.DetailsView> control to a page, create a new <xref:System.Web.UI.WebControls.DetailsView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
   
    
   
@@ -596,7 +596,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView> control has built-in paging capabilities, which allow a user to navigate to a different record in the data source.  
   
- The <xref:System.Web.UI.WebControls.DetailsView> control can perform both user interface (UI) and data source paging. The UI paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=fullName> interface. For each paging operation, the <xref:System.Web.UI.WebControls.DetailsView> control queries the data source for the entire data collection and selects the row to display, essentially discarding the remaining data.  
+ The <xref:System.Web.UI.WebControls.DetailsView> control can perform both user interface (UI) and data source paging. The UI paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface. For each paging operation, the <xref:System.Web.UI.WebControls.DetailsView> control queries the data source for the entire data collection and selects the row to display, essentially discarding the remaining data.  
   
  If a data source implements <xref:System.Web.UI.DataSourceView> and the <xref:System.Web.UI.DataSourceView.CanPage%2A> property returns `true`, the <xref:System.Web.UI.WebControls.DetailsView> control will use data source paging instead of UI paging. In this case, the <xref:System.Web.UI.WebControls.DetailsView> control will query for only the row needed for each paging operation. Thus, data source paging is more efficient than UI paging. Only the <xref:System.Web.UI.WebControls.ObjectDataSourceView> object supports data source paging without modification.  
   
@@ -705,7 +705,7 @@
  When a <xref:System.Web.UI.WebControls.DetailsView> control is bound to an object that inherits from <xref:System.Web.UI.DataSourceView> and the <xref:System.Web.UI.DataSourceView.CanDelete%2A> property returns `true`, the <xref:System.Web.UI.WebControls.DetailsView> control can take advantage of the data source control's capabilities and provide automatic deleting functionality.  
   
 > [!NOTE]
->  For a <xref:System.Web.UI.WebControls.SqlDataSourceView> object to delete data, the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A?displayProperty=fullName> property of the underlying <xref:System.Web.UI.WebControls.SqlDataSource> object must be set with a delete query statement.  
+>  For a <xref:System.Web.UI.WebControls.SqlDataSourceView> object to delete data, the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A?displayProperty=nameWithType> property of the underlying <xref:System.Web.UI.WebControls.SqlDataSource> object must be set with a delete query statement.  
   
  When the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateDeleteButton%2A> property is set to `true`, a <xref:System.Web.UI.WebControls.CommandField> row field with a Delete button is automatically displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. Clicking the Delete button permanently removes that record from the data source.  
   
@@ -761,7 +761,7 @@
  When a data source control that supports updating is bound to a <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> control can take advantage of the data source control's capabilities and provide automatic updating functionality.  
   
 > [!NOTE]
->  For a data source control to update data, its <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A?displayProperty=fullName> property must be set with an update query statement.  
+>  For a data source control to update data, its <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A?displayProperty=nameWithType> property must be set with an update query statement.  
   
  When the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateEditButton%2A> property is set to `true`, a <xref:System.Web.UI.WebControls.CommandField> row field with an Edit button is automatically displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. Clicking the Edit button puts that <xref:System.Web.UI.WebControls.DetailsView> control in edit mode. When in edit mode, each bound field in the control that is not read-only displays the appropriate input control, such as a <xref:System.Web.UI.WebControls.TextBox> control, for the field's data type. This allows the user to modify the field's value.  
   
@@ -828,7 +828,7 @@
  When a data source control that supports inserting is bound to a <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> control can take advantage of the data source control's capabilities and provide automatic inserting functionality.  
   
 > [!NOTE]
->  For a data source control to insert data, its <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A?displayProperty=fullName> property must be set with an insert query statement.  
+>  For a data source control to insert data, its <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A?displayProperty=nameWithType> property must be set with an insert query statement.  
   
  When the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateInsertButton%2A> property is set to `true`, a <xref:System.Web.UI.WebControls.CommandField> row field with a New button is automatically displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. Clicking the New button puts that <xref:System.Web.UI.WebControls.DetailsView> control in insert mode. When in insert mode, each bound field in the control that is not read-only displays the appropriate input control, such as a <xref:System.Web.UI.WebControls.TextBox> control, for the field's data type. This allows the user to enter the field's value for the new record.  
   
@@ -3603,7 +3603,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DetailsView.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=fullName> method to pass events from child controls to the page hierarchy.  
+ The <xref:System.Web.UI.WebControls.DetailsView.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=nameWithType> method to pass events from child controls to the page hierarchy.  
   
  ]]></format>
         </remarks>
@@ -4714,7 +4714,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to save the state of the properties in the <xref:System.Web.UI.WebControls.DetailsView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property is set to `false`.  
+ This method is used to save the state of the properties in the <xref:System.Web.UI.WebControls.DetailsView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property is set to `false`.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.DetailsView> control.  
@@ -4776,7 +4776,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DetailsView.SelectedValue%2A> property to determine the data key value for the current record. To retrieve the actual <xref:System.Web.UI.WebControls.DataKey?displayProperty=fullName> object that represents the data key for the record, use the <xref:System.Web.UI.WebControls.DetailsView.DataKey%2A> property.  
+ Use the <xref:System.Web.UI.WebControls.DetailsView.SelectedValue%2A> property to determine the data key value for the current record. To retrieve the actual <xref:System.Web.UI.WebControls.DataKey?displayProperty=nameWithType> object that represents the data key for the record, use the <xref:System.Web.UI.WebControls.DetailsView.DataKey%2A> property.  
   
  This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f).  
   

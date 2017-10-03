@@ -242,7 +242,7 @@ Console.WriteLine(xmlTree)
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (object[] content);" />
+      <MemberSignature Language="C#" Value="public void Add (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XContainer.Add(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -576,7 +576,7 @@ Console.WriteLine(xmlTree)
       </Docs>
     </Member>
     <Member MemberName="AddFirst">
-      <MemberSignature Language="C#" Value="public void AddFirst (object[] content);" />
+      <MemberSignature Language="C#" Value="public void AddFirst (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFirst(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XContainer.AddFirst(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2218,7 +2218,7 @@ Console.WriteLine(root)
       </Docs>
     </Member>
     <Member MemberName="ReplaceNodes">
-      <MemberSignature Language="C#" Value="public void ReplaceNodes (object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceNodes (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceNodes(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])" />
       <MemberType>Method</MemberType>

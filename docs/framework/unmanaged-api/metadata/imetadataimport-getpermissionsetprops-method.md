@@ -31,7 +31,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # IMetaDataImport::GetPermissionSetProps Method
-Gets the metadata associated with the <xref:System.Security.PermissionSet?displayProperty=fullName> represented by the specified Permission token.  
+Gets the metadata associated with the <xref:System.Security.PermissionSet?displayProperty=nameWithType> represented by the specified Permission token.  
   
 ## Syntax  
   

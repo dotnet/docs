@@ -28,7 +28,7 @@
   
 -   The <xref:System.Web.UI.Adapters.PageAdapter.GetPostBackFormReference%2A> method provides a DHTML code fragment that can be used to reference forms in scripts.  
   
--   The <xref:System.Web.UI.Adapters.PageAdapter.DeterminePostBackMode%2A> method returns a collection of the postback variables if the page is in postback. It is called by the .NET Framework instead of the <xref:System.Web.UI.Page.DeterminePostBackMode%2A?displayProperty=fullName> method if a derived page adapter is present.  
+-   The <xref:System.Web.UI.Adapters.PageAdapter.DeterminePostBackMode%2A> method returns a collection of the postback variables if the page is in postback. It is called by the .NET Framework instead of the <xref:System.Web.UI.Page.DeterminePostBackMode%2A?displayProperty=nameWithType> method if a derived page adapter is present.  
   
 -   The <xref:System.Web.UI.Adapters.PageAdapter.RenderBeginHyperlink%2A> and <xref:System.Web.UI.Adapters.PageAdapter.RenderEndHyperlink%2A> methods are used by control adapters to render hyperlinks if a derived page adapter is present.  
   
@@ -315,9 +315,9 @@
 |Link type|Resulting link|  
 |---------------|--------------------|  
 |Code Entity Reference,cer|<xref:System.Char.ToString%2A>|  
-|Code Entity Reference Qualified, cerq|<xref:System.Char.ToString%2A?displayProperty=fullName>|  
+|Code Entity Reference Qualified, cerq|<xref:System.Char.ToString%2A?displayProperty=nameWithType>|  
 |Code Entity Reference Specific,cers|<xref:System.Char.ToString%28System.Char%29>|  
-|Code Entity Reference Qualified Specific, cerqs|<xref:System.Char.ToString%28System.Char%29?displayProperty=fullName>|  
+|Code Entity Reference Qualified Specific, cerqs|<xref:System.Char.ToString%28System.Char%29?displayProperty=nameWithType>|  
   
  ]]></format>
         </remarks>

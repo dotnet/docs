@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this method to add controls to the form. If you want to add a group of already created controls to the form, use the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A?displayProperty=fullName> method of the <xref:System.Windows.Forms.Control.ControlCollection> class.  
+ You can use this method to add controls to the form. If you want to add a group of already created controls to the form, use the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.Control.ControlCollection> class.  
   
    
   

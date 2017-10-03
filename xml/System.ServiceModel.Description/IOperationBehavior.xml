@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Implements methods that can be used to extend run-time behavior for an operation in either a service or client application.</summary>
@@ -29,26 +35,26 @@
 > [!NOTE]
 >  All of the <xref:System.ServiceModel.Description.IOperationBehavior> methods pass an <xref:System.ServiceModel.Description.OperationDescription> object as a parameter. This parameter is for examination only; if you modify the <xref:System.ServiceModel.Description.OperationDescription> object the execution behavior is undefined.  
   
- <xref:System.ServiceModel.Description.IOperationBehavior> objects are typically used to access the various properties of the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> object in a service application and the <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> object in a client application.  
+ <xref:System.ServiceModel.Description.IOperationBehavior> objects are typically used to access the various properties of the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=nameWithType> object in a service application and the <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=nameWithType> object in a client application.  
   
- Typically, the developer first reviews the extensibility points to determine which customization option suits the application scenario and then implements the customization at the appropriate scope. For example, <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> objects can insert customizations for all messages in an entire service and <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName> objects can insert customizations for all messages across a specific contract, and so on. For a description of the various properties and customizations available, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+ Typically, the developer first reviews the extensibility points to determine which customization option suits the application scenario and then implements the customization at the appropriate scope. For example, <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=nameWithType> objects can insert customizations for all messages in an entire service and <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> objects can insert customizations for all messages across a specific contract, and so on. For a description of the various properties and customizations available, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
   
  Once a customization has been decided upon (and the customization interface implemented if necessary) and the <xref:System.ServiceModel.Description.IOperationBehavior> is the appropriate scope of customization, the customization must be inserted into the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime by implementing <xref:System.ServiceModel.Description.IOperationBehavior> and adding the operation behavior to the runtime.  
   
  There are two ways to add the <xref:System.ServiceModel.Description.IOperationBehavior> to the runtime:  
   
--   Programmatically add the custom operation behavior to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> property prior to the opening of the service host (in a service application) or the channel factory (in a client application).  
+-   Programmatically add the custom operation behavior to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=nameWithType> property prior to the opening of the service host (in a service application) or the channel factory (in a client application).  
   
 -   Add the behavior using a custom attribute.  
   
- To perform the service customization task for which it is intended, the <xref:System.ServiceModel.Description.IOperationBehavior> object must be added to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> property prior to the construction of the service runtime, which occurs when <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method is called on <xref:System.ServiceModel.ServiceHost?displayProperty=fullName>. To perform a client customization task, the <xref:System.ServiceModel.Description.IOperationBehavior> object must be added to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> property before calling the <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=fullName> method or the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method on <xref:System.ServiceModel.ChannelFactory%601>.  
+ To perform the service customization task for which it is intended, the <xref:System.ServiceModel.Description.IOperationBehavior> object must be added to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=nameWithType> property prior to the construction of the service runtime, which occurs when <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method is called on <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>. To perform a client customization task, the <xref:System.ServiceModel.Description.IOperationBehavior> object must be added to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=nameWithType> property before calling the <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> method or the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method on <xref:System.ServiceModel.ChannelFactory%601>.  
   
  Although the operation behavior is designed for easy access to the runtime at the scope of an individual operation, you can access the runtime at a larger scope by accessing the parent runtime object.  
   
    
   
 ## Examples  
- The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=fullName> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> and is therefore usually inserted by an operation behavior.  
+ The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=nameWithType> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=nameWithType> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=nameWithType> and is therefore usually inserted by an operation behavior.  
   
  [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
  [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
@@ -71,6 +77,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -103,6 +115,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -125,7 +143,7 @@
    
   
 ## Examples  
- The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=fullName> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> and is therefore usually inserted by an operation behavior.  
+ The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=nameWithType> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=nameWithType> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=nameWithType> and is therefore usually inserted by an operation behavior.  
   
  [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
  [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
@@ -149,6 +167,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -164,14 +188,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A> method to view, modify, or extend the service runtime across all messages or for a specific operation. For details about what customizations you can do in a service application, see <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> and <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName>.  
+ Implement the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A> method to view, modify, or extend the service runtime across all messages or for a specific operation. For details about what customizations you can do in a service application, see <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=nameWithType> and <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=nameWithType>.  
   
  It is recommended that the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A> method throw a <xref:System.NotImplementedException> exception if the behavior is only intended for use in a client application.  
   
    
   
 ## Examples  
- The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=fullName> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> and is therefore usually inserted by an operation behavior.  
+ The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=nameWithType> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=nameWithType> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=nameWithType> and is therefore usually inserted by an operation behavior.  
   
  [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
  [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
@@ -194,6 +218,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

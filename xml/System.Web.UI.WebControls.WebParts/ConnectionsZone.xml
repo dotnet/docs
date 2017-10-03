@@ -860,7 +860,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the base <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method. It prepares all connection-related objects needed for connections (for example, it retrieves the connection point objects from the available consumer and provider controls), and it creates the various user interface (UI) controls that users interact with in the connection UI to establish a connection.  
+ This method overrides the base <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=nameWithType> method. It prepares all connection-related objects needed for connections (for example, it retrieves the connection point objects from the available consumer and provider controls), and it creates the various user interface (UI) controls that users interact with in the connection UI to establish a connection.  
   
  ]]></format>
         </remarks>
@@ -1470,7 +1470,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the base <xref:System.Web.UI.WebControls.WebParts.ToolZone.OnInit%2A?displayProperty=fullName> method, and adds custom handling to prepare the Web page to display the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+ This method calls the base <xref:System.Web.UI.WebControls.WebParts.ToolZone.OnInit%2A?displayProperty=nameWithType> method, and adds custom handling to prepare the Web page to display the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
   
  ]]></format>
         </remarks>
@@ -1686,7 +1686,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.Render%2A> method updates the connection user interface (UI) with any changes that occurred since the child controls were created or during the prerendering stage, and then calls the base <xref:System.Web.UI.WebControls.CompositeControl.Render%2A?displayProperty=fullName> method to write the contents of the zone to the Web page.  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.Render%2A> method updates the connection user interface (UI) with any changes that occurred since the child controls were created or during the prerendering stage, and then calls the base <xref:System.Web.UI.WebControls.CompositeControl.Render%2A?displayProperty=nameWithType> method to write the contents of the zone to the Web page.  
   
  ]]></format>
         </remarks>
@@ -1714,7 +1714,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The body of a Web Parts control is the portion between its header and footer areas. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderBody%2A> method overrides the rendering of the body region that is done by the base <xref:System.Web.UI.WebControls.WebParts.WebZone.RenderBody%2A?displayProperty=fullName> method.  
+ The body of a Web Parts control is the portion between its header and footer areas. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderBody%2A> method overrides the rendering of the body region that is done by the base <xref:System.Web.UI.WebControls.WebParts.WebZone.RenderBody%2A?displayProperty=nameWithType> method.  
   
  This method adds to the base rendering unique style attributes that apply to a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, and it also renders the appropriate content for the child controls in the connection user interface (UI), based on previous selections made by a user in the UI.  
   
@@ -1744,7 +1744,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method renders the several zone-level verbs that are included with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. As a part of this method, the <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb%2A?displayProperty=fullName> method is also called to render the individual details of each verb.  
+ This method renders the several zone-level verbs that are included with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. As a part of this method, the <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb%2A?displayProperty=nameWithType> method is also called to render the individual details of each verb.  
   
  ]]></format>
         </remarks>

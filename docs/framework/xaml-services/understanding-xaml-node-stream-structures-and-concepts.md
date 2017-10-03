@@ -70,7 +70,7 @@ while (xxr.Read()) {
 }  
 ```  
   
- This basic example of a load path XAML node loop transparently connects the XAML reader and XAML writer, doing nothing different than if you had used <xref:System.Xaml.XamlServices.Parse%2A?displayProperty=fullName>. But this basic structure is then expanded to apply to your reading or writing scenario. Some possible scenarios are as follows:  
+ This basic example of a load path XAML node loop transparently connects the XAML reader and XAML writer, doing nothing different than if you had used <xref:System.Xaml.XamlServices.Parse%2A?displayProperty=nameWithType>. But this basic structure is then expanded to apply to your reading or writing scenario. Some possible scenarios are as follows:  
   
 -   Switch on <xref:System.Xaml.XamlXmlReader.NodeType%2A>. Perform different actions depending on which node type is being read.  
   
@@ -179,7 +179,7 @@ public class GameBoard {
   
  `EndObject` matches `GameBoard`  
   
- Notice that there is no type converter instance in this node stream. But you can get type converter information by calling <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=fullName> on the <xref:System.Xaml.XamlMember> for `BoardSize`. If you have a valid XAML schema context, you can also invoke the converter methods by obtaining an instance from <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>.  
+ Notice that there is no type converter instance in this node stream. But you can get type converter information by calling <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType> on the <xref:System.Xaml.XamlMember> for `BoardSize`. If you have a valid XAML schema context, you can also invoke the converter methods by obtaining an instance from <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>.  
   
 ### Markup Extensions in the XAML Node Stream  
  A markup extension usage is reported in the XAML node stream as an object node within a member, where the object represents a markup extension instance. Thus a markup extension usage is presented more explicitly in the node stream representation than a type converter usage is, and carries more information. <xref:System.Xaml.XamlMember> information could not have told you anything about the markup extension, because the usage is situational and varies in each possible markup case; it is not dedicated and implicit per type or member as is the case with type converters.  

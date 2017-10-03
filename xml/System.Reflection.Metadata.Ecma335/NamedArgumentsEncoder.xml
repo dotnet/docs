@@ -65,7 +65,7 @@
     </Member>
     <Member MemberName="AddArgument">
       <MemberSignature Language="C#" Value="public void AddArgument (bool isField, out System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder type, out System.Reflection.Metadata.Ecma335.NameEncoder name, out System.Reflection.Metadata.Ecma335.LiteralEncoder literal);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArgument(bool isField, valuetype System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder type, valuetype System.Reflection.Metadata.Ecma335.NameEncoder name, valuetype System.Reflection.Metadata.Ecma335.LiteralEncoder literal) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArgument(bool isField, [out] valuetype System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&amp; type, [out] valuetype System.Reflection.Metadata.Ecma335.NameEncoder&amp; name, [out] valuetype System.Reflection.Metadata.Ecma335.LiteralEncoder&amp; literal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder.AddArgument(System.Boolean,System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder@,System.Reflection.Metadata.Ecma335.NameEncoder@,System.Reflection.Metadata.Ecma335.LiteralEncoder@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

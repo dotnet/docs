@@ -124,7 +124,7 @@
   
 <a name="formatting_using_layout_templates"></a>   
 ## Formatting Using Layout Templates  
- The <xref:System.Web.UI.WebControls.Wizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=fullName> property.  
+ The <xref:System.Web.UI.WebControls.Wizard> control lets you specify the layout of the control without requiring you to use an HTML `table` element. Instead, you can use a `LayoutTemplate` element to specify the layout. In the template, you create placeholder controls to indicate where items should be dynamically inserted into the control. (This is similar to how the template model for the <xref:System.Web.UI.WebControls.ListView> control works.) For more information, see the <xref:System.Web.UI.WebControls.Wizard.LayoutTemplate%2A?displayProperty=nameWithType> property.  
   
 <a name="accessibility"></a>   
 ## Accessibility  

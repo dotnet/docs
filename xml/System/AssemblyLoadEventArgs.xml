@@ -85,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property is set by the common language runtime when the <xref:System.AppDomain.AssemblyLoad?displayProperty=fullName> event occurs.  
+ The value of this property is set by the common language runtime when the <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event occurs.  
   
  ]]></format>
         </remarks>

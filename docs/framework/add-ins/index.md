@@ -116,12 +116,12 @@ Add-in pipeline
   
 <a name="reference"></a>   
 ## Reference  
- <xref:System.AddIn?displayProperty=fullName>  
+ <xref:System.AddIn?displayProperty=nameWithType>  
   
- <xref:System.AddIn.Contract?displayProperty=fullName>  
+ <xref:System.AddIn.Contract?displayProperty=nameWithType>  
   
- <xref:System.AddIn.Hosting?displayProperty=fullName>  
+ <xref:System.AddIn.Hosting?displayProperty=nameWithType>  
   
- <xref:System.AddIn.Pipeline?displayProperty=fullName>  
+ <xref:System.AddIn.Pipeline?displayProperty=nameWithType>  
   
  [Back to top](#top)

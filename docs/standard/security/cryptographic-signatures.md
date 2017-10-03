@@ -36,7 +36,7 @@ manager: "wpickett"
 # Cryptographic Signatures
 <a name="top"></a> Cryptographic digital signatures use public key algorithms to provide data integrity. When you sign data with a digital signature, someone else can verify the signature, and can prove that the data originated from you and was not altered after you signed it. For more information about digital signatures, see [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md).  
   
- This topic explains how to generate and verify digital signatures using classes in the <xref:System.Security.Cryptography?displayProperty=fullName> namespace.  
+ This topic explains how to generate and verify digital signatures using classes in the <xref:System.Security.Cryptography?displayProperty=nameWithType> namespace.  
   
 -   [Generating Signatures](#generate)  
   
@@ -145,7 +145,7 @@ RSAKeyInfo.Exponent = ExponentData;
   
  The following example illustrates this process. In this example, `HashValue` and `SignedHashValue` are arrays of bytes provided by a remote party. The remote party has signed the `HashValue` using the SHA1 algorithm, producing the digital signature `SignedHashValue`. The  
   
- <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature%2A?displayProperty=fullName> method verifies that the digital signature is valid and was used to sign the `HashValue`.  
+ <xref:System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature%2A?displayProperty=nameWithType> method verifies that the digital signature is valid and was used to sign the `HashValue`.  
   
 ```vb  
 Dim RSA As New RSACryptoServiceProvider()  

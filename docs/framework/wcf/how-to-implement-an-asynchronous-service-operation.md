@@ -20,9 +20,9 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a service 
   
 ### Implement a service operation asynchronously  
   
-1.  In your service contract, declare an asynchronous method pair according to the .NET asynchronous design guidelines. The `Begin` method takes a parameter, a callback object, and a state object, and returns a <xref:System.IAsyncResult?displayProperty=fullName> and a matching `End` method that takes a <xref:System.IAsyncResult?displayProperty=fullName> and returns the return value. For more information about asynchronous calls, see [Asynchronous Programming Design Patterns](http://go.microsoft.com/fwlink/?LinkId=248221).  
+1.  In your service contract, declare an asynchronous method pair according to the .NET asynchronous design guidelines. The `Begin` method takes a parameter, a callback object, and a state object, and returns a <xref:System.IAsyncResult?displayProperty=nameWithType> and a matching `End` method that takes a <xref:System.IAsyncResult?displayProperty=nameWithType> and returns the return value. For more information about asynchronous calls, see [Asynchronous Programming Design Patterns](http://go.microsoft.com/fwlink/?LinkId=248221).  
   
-2.  Mark the `Begin` method of the asynchronous method pair with the <xref:System.ServiceModel.OperationContractAttribute?displayProperty=fullName> attribute and set the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A?displayProperty=fullName> property to `true`. For example, the following code performs steps 1 and 2.  
+2.  Mark the `Begin` method of the asynchronous method pair with the <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> attribute and set the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A?displayProperty=nameWithType> property to `true`. For example, the following code performs steps 1 and 2.  
   
      [!code-csharp[C_SyncAsyncClient#6](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#6)]
      [!code-vb[C_SyncAsyncClient#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#6)]  
@@ -43,7 +43,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] applications, a service 
   
     3.  An asynchronous `BeginServiceAsyncMethod`/`EndServiceAsyncMethod` operation pair.  
   
-2.  A service implementation using a <xref:System.IAsyncResult?displayProperty=fullName> object.  
+2.  A service implementation using a <xref:System.IAsyncResult?displayProperty=nameWithType> object.  
   
  [!code-csharp[C_SyncAsyncClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#1)]
  [!code-vb[C_SyncAsyncClient#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#1)]  

@@ -51,24 +51,24 @@ You can create [XML Literals](../../../../visual-basic/language-reference/xml-li
   
 -   To populate an XML literal such as an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object from a string, you can use the `Parse` method.  
   
-     The following code example shows the use of the <xref:System.Xml.Linq.XDocument.Parse%28System.String%29?displayProperty=fullName> method to populate an <xref:System.Xml.Linq.XDocument> object with XML from a string.  
+     The following code example shows the use of the <xref:System.Xml.Linq.XDocument.Parse%28System.String%29?displayProperty=nameWithType> method to populate an <xref:System.Xml.Linq.XDocument> object with XML from a string.  
   
      [!code-vb[VbXMLSamples#47](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_2.vb)]  
   
 ### To load XML from a stream  
   
--   To populate an XML literal such as an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object from a stream, you can use the `Load` method or the <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=fullName> method.  
+-   To populate an XML literal such as an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object from a stream, you can use the `Load` method or the <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType> method.  
   
  The following code example shows the use of the <xref:System.Xml.Linq.XNode.ReadFrom%2A> method to populate an <xref:System.Xml.Linq.XDocument> object with XML from an XML stream.  
   
  [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_3.vb)]  
   
 ## See Also  
- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=fullName>   
- <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=fullName>   
+ <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>   
+ <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType>   
  [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)   
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)   
  [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)

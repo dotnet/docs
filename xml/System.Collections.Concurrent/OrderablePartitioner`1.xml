@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
+ The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
   
  The default implementation provides the same behavior as <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A> except that the returned set of partitions does not provide the keys for the elements.  
   
@@ -164,7 +164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
+ The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
   
  Each partition is represented as an enumerator over key-value pairs. The value in the pair is the element itself, and the key is an integer which determines the relative ordering of this element against other elements.  
   

@@ -27,7 +27,7 @@
   
  The <xref:System.Drawing.BufferedGraphicsContext> class provides methods for creating and configuring a graphics buffer. The <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method creates a <xref:System.Drawing.BufferedGraphics>, which is a wrapper for a graphics buffer that also provides methods you can use to write to the buffer and render its contents to an output device.  
   
- You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property. For graphically intensive applications such as animation, you can create a dedicated <xref:System.Drawing.BufferedGraphicsContext> using the constructor, but for most applications the <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property will be sufficient.  
+ You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=nameWithType> property. For graphically intensive applications such as animation, you can create a dedicated <xref:System.Drawing.BufferedGraphicsContext> using the constructor, but for most applications the <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=nameWithType> property will be sufficient.  
   
  For more information on drawing buffered graphics and custom buffering implementations, see [Double Buffered Graphics](~/docs/framework/winforms/advanced/double-buffered-graphics.md) and [How to: Manually Manage Buffered Graphics](~/docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md).  
   

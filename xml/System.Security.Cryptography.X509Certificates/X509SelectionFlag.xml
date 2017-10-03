@@ -15,12 +15,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This flag represents either a single or multiple certificate selection using the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A?displayProperty=fullName> method.  
+ This flag represents either a single or multiple certificate selection using the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A?displayProperty=nameWithType> method.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the selection flag with the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A?displayProperty=fullName> method. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.X509Certificates.X509Store> class. The larger example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate the user selects.  
+ The following code example demonstrates how to use the selection flag with the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A?displayProperty=nameWithType> method. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.X509Certificates.X509Store> class. The larger example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate the user selects.  
   
  [!code-cpp[x509chaintest#2](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#2)]
  [!code-csharp[x509chaintest#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#2)]

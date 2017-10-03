@@ -32,7 +32,7 @@
     </Member>
     <Member MemberName="TryInferReturnType">
       <MemberSignature Language="C#" Value="public virtual bool TryInferReturnType (System.Activities.ActivityWithResult expression, System.Activities.Presentation.EditingContext context, out Type returnType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryInferReturnType(class System.Activities.ActivityWithResult expression, class System.Activities.Presentation.EditingContext context, class System.Type returnType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryInferReturnType(class System.Activities.ActivityWithResult expression, class System.Activities.Presentation.EditingContext context, [out] class System.Type&amp; returnType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionMorphHelper.TryInferReturnType(System.Activities.ActivityWithResult,System.Activities.Presentation.EditingContext,System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -59,7 +59,7 @@
     </Member>
     <Member MemberName="TryMorphExpression">
       <MemberSignature Language="C#" Value="public abstract bool TryMorphExpression (System.Activities.ActivityWithResult expression, bool isLocationExpression, Type newType, System.Activities.Presentation.EditingContext context, out System.Activities.ActivityWithResult newExpression);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMorphExpression(class System.Activities.ActivityWithResult expression, bool isLocationExpression, class System.Type newType, class System.Activities.Presentation.EditingContext context, class System.Activities.ActivityWithResult newExpression) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMorphExpression(class System.Activities.ActivityWithResult expression, bool isLocationExpression, class System.Type newType, class System.Activities.Presentation.EditingContext context, [out] class System.Activities.ActivityWithResult&amp; newExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionMorphHelper.TryMorphExpression(System.Activities.ActivityWithResult,System.Boolean,System.Type,System.Activities.Presentation.EditingContext,System.Activities.ActivityWithResult@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

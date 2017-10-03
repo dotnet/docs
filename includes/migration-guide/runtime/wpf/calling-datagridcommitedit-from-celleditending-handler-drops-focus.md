@@ -7,6 +7,6 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Windows.Controls.DataGrid.CommitEdit?displayProperty=fullName></li><li><xref:System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit%2CSystem.Boolean)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Windows.Controls.DataGrid.CommitEdit?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit%2CSystem.Boolean)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0124</li></ul>|
 

@@ -26,7 +26,7 @@
 |<xref:System.ComponentModel.Design.DesignerCommandSet.ActionLists%2A>|Gets the collection of all the smart tags associated with the designed component. The base implementation simply calls <xref:System.ComponentModel.Design.DesignerCommandSet.GetCommands%2A>.|  
 |<xref:System.ComponentModel.Design.DesignerCommandSet.Verbs%2A>|Gets the collection of all the designer verbs associated with the designed component. The base implementation simply calls <xref:System.ComponentModel.Design.DesignerCommandSet.GetCommands%2A>.|  
   
- A <xref:System.ComponentModel.Design.DesignerCommandSet> should be added as a site-specific service. Externally, a service of this type should first be queried to discover smart tag and designer verb functionality. If this service is not found, then the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A?displayProperty=fullName> property should be used instead. This procedure provides a path for backwards compatibility.  
+ A <xref:System.ComponentModel.Design.DesignerCommandSet> should be added as a site-specific service. Externally, a service of this type should first be queried to discover smart tag and designer verb functionality. If this service is not found, then the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A?displayProperty=nameWithType> property should be used instead. This procedure provides a path for backwards compatibility.  
   
  ]]></format>
     </remarks>

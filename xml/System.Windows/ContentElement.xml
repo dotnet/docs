@@ -531,14 +531,14 @@
   
  If calling <xref:System.Windows.ContentElement.CaptureMouse%2A> returns `true`, then <xref:System.Windows.ContentElement.IsMouseCaptured%2A> is also `true`.  
   
- If calling <xref:System.Windows.ContentElement.CaptureMouse%2A> returns `true`, then the <xref:System.Windows.ContentElement.GotMouseCapture> and <xref:System.Windows.ContentElement.IsMouseCapturedChanged> events are raised, with <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=fullName> in the event data reported as the element where the <xref:System.Windows.ContentElement.CaptureMouse%2A> method is called. If you force capture, you might interfere with existing captures—especially with captures that relate to drag-and-drop with the mouse.  
+ If calling <xref:System.Windows.ContentElement.CaptureMouse%2A> returns `true`, then the <xref:System.Windows.ContentElement.GotMouseCapture> and <xref:System.Windows.ContentElement.IsMouseCapturedChanged> events are raised, with <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=nameWithType> in the event data reported as the element where the <xref:System.Windows.ContentElement.CaptureMouse%2A> method is called. If you force capture, you might interfere with existing captures—especially with captures that relate to drag-and-drop with the mouse.  
   
- To clear mouse capture from all elements, call <xref:System.Windows.Input.Mouse.Capture%2A?displayProperty=fullName> with the `element` parameter provided as `null`.  
+ To clear mouse capture from all elements, call <xref:System.Windows.Input.Mouse.Capture%2A?displayProperty=nameWithType> with the `element` parameter provided as `null`.  
   
    
   
 ## Examples  
- The following example captures the mouse or releases capture, based on whether the mouse is already captured by the element. Note that this example casts the prospective capture target element to the <xref:System.Windows.IInputElement> interface, and is thus initially calling the <xref:System.Windows.IInputElement.CaptureMouse%2A?displayProperty=fullName> method. Casting to <xref:System.Windows.IInputElement> is a technique that is useful if you are unsure whether the element you want to have capture the mouse is a <xref:System.Windows.UIElement> or a <xref:System.Windows.ContentElement>. The interface cast and the interface method call then calls the appropriate type-specific CaptureMouse implementation internally without requiring a trial cast to either <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement>. This same casting technique works for other members that <xref:System.Windows.IInputElement> defines, for instance many of the input-related events, and other input-related methods.  
+ The following example captures the mouse or releases capture, based on whether the mouse is already captured by the element. Note that this example casts the prospective capture target element to the <xref:System.Windows.IInputElement> interface, and is thus initially calling the <xref:System.Windows.IInputElement.CaptureMouse%2A?displayProperty=nameWithType> method. Casting to <xref:System.Windows.IInputElement> is a technique that is useful if you are unsure whether the element you want to have capture the mouse is a <xref:System.Windows.UIElement> or a <xref:System.Windows.ContentElement>. The interface cast and the interface method call then calls the appropriate type-specific CaptureMouse implementation internally without requiring a trial cast to either <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement>. This same casting technique works for other members that <xref:System.Windows.IInputElement> defines, for instance many of the input-related events, and other input-related methods.  
   
  [!code-csharp[ContentElementsSmorgasbord#IsMouseCaptured](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml.cs#ismousecaptured)]
  [!code-vb[ContentElementsSmorgasbord#IsMouseCaptured](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContentElementsSmorgasbord/visualbasic/page1.xaml.vb#ismousecaptured)]  
@@ -683,7 +683,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.DragDrop.DragEnter?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.DragEnter?displayProperty=fullName> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.DragEnter> event are attached to the underlying <xref:System.Windows.DragDrop.DragEnter?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.DragEnter?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.DragEnter?displayProperty=nameWithType> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.DragEnter> event are attached to the underlying <xref:System.Windows.DragDrop.DragEnter?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_DragEnter"></a>   
 ## Routed Event Information  
@@ -746,7 +746,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.DragDrop.DragLeave?displayProperty=fullName> attached event for this class so that <xref:System.Windows.ContentElement.DragLeave?displayProperty=fullName> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.DragLeave> event are attached to the underlying <xref:System.Windows.DragDrop.DragLeave?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.DragLeave?displayProperty=nameWithType> attached event for this class so that <xref:System.Windows.ContentElement.DragLeave?displayProperty=nameWithType> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.DragLeave> event are attached to the underlying <xref:System.Windows.DragDrop.DragLeave?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_DragLeave"></a>   
 ## Routed Event Information  
@@ -811,7 +811,7 @@
 ## Remarks  
  This event occurs even if the drag originates in the element bounds. If the drag starts outside the bounds and then moves inside, this event is also raised, as well as <xref:System.Windows.ContentElement.DragEnter> and related preview events.  
   
- This event creates an alias for the <xref:System.Windows.DragDrop.DragOver?displayProperty=fullName> attached event for this class so that <xref:System.Windows.ContentElement.DragOver?displayProperty=fullName> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.DragOver> event are attached to the underlying <xref:System.Windows.DragDrop.DragOver?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.DragOver?displayProperty=nameWithType> attached event for this class so that <xref:System.Windows.ContentElement.DragOver?displayProperty=nameWithType> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.DragOver> event are attached to the underlying <xref:System.Windows.DragDrop.DragOver?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_DragOver"></a>   
 ## Routed Event Information  
@@ -874,7 +874,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.DragDrop.Drop?displayProperty=fullName> attached event for this class so that <xref:System.Windows.ContentElement.Drop?displayProperty=fullName> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.Drop> event are attached to the underlying <xref:System.Windows.DragDrop.Drop?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.Drop?displayProperty=nameWithType> attached event for this class so that <xref:System.Windows.ContentElement.Drop?displayProperty=nameWithType> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.Drop> event are attached to the underlying <xref:System.Windows.DragDrop.Drop?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_Drop"></a>   
 ## Routed Event Information  
@@ -1133,7 +1133,7 @@
 ## Remarks  
  The <xref:System.Windows.ContentElement.GiveFeedback> event allows the source of a drag event to modify the appearance of the mouse pointer in order to give the user visual feedback during a drag-and-drop operation. The visual feedback reinforces that a drag-and-drop operation is in process.  
   
- This event creates an alias for the <xref:System.Windows.DragDrop.GiveFeedback?displayProperty=fullName> attached event for this class so that <xref:System.Windows.ContentElement.GiveFeedback> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GiveFeedback> event are attached to the underlying <xref:System.Windows.DragDrop.GiveFeedback?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.GiveFeedback?displayProperty=nameWithType> attached event for this class so that <xref:System.Windows.ContentElement.GiveFeedback> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GiveFeedback> event are attached to the underlying <xref:System.Windows.DragDrop.GiveFeedback?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_GiveFeedback"></a>   
 ## Routed Event Information  
@@ -1267,7 +1267,7 @@
   
  Because this event uses bubbling routing, the element that has focus might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that has focus.  
   
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName> attached event for this class so that <xref:System.Windows.ContentElement.GotKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GotKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=nameWithType> attached event for this class so that <xref:System.Windows.ContentElement.GotKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GotKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.GotKeyboardFocus?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_GotKeyboardFocus"></a>   
 ## Routed Event Information  
@@ -1334,7 +1334,7 @@
   
  Because this event uses bubbling routing, the element that has capture might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that has mouse capture.  
   
- This event creates an alias for the <xref:System.Windows.Input.Mouse.GotMouseCapture?displayProperty=fullName> attached event for  this class so that <xref:System.Windows.ContentElement.GotMouseCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GotMouseCapture> event are attached to the underlying <xref:System.Windows.Input.Mouse.GotMouseCapture?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.GotMouseCapture?displayProperty=nameWithType> attached event for  this class so that <xref:System.Windows.ContentElement.GotMouseCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GotMouseCapture> event are attached to the underlying <xref:System.Windows.Input.Mouse.GotMouseCapture?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_GotMouseCapture"></a>   
 ## Routed Event Information  
@@ -1401,7 +1401,7 @@
   
  Because this event uses bubbling routing, the element that has capture might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that has capture.  
   
- This event creates an alias for the  attached event for this class so that <xref:System.Windows.ContentElement.GotStylusCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GotStylusCapture> event are attached to the underlying <xref:System.Windows.Input.Stylus.GotStylusCapture?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the  attached event for this class so that <xref:System.Windows.ContentElement.GotStylusCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.GotStylusCapture> event are attached to the underlying <xref:System.Windows.Input.Stylus.GotStylusCapture?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_GotStylusCapture"></a>   
 ## Routed Event Information  
@@ -1753,7 +1753,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the value that is returned by the attached property <xref:System.Windows.Input.InputMethod.IsInputMethodEnabled%2A?displayProperty=fullName> for the currently enabled input methods (keyboard, speech, and other input devices).  
+ This property returns the value that is returned by the attached property <xref:System.Windows.Input.InputMethod.IsInputMethodEnabled%2A?displayProperty=nameWithType> for the currently enabled input methods (keyboard, speech, and other input devices).  
   
  ]]></format>
         </remarks>
@@ -2508,7 +2508,7 @@
 ## Remarks  
  Key handling interacts with other platform features such as commanding and text composition. The <xref:System.Windows.ContentElement.KeyDown> event is a lower-level text input event that might not behave as expected on certain controls. This is because some controls have control compositing or class handling that provides a higher-level version of text input handling and related events.  
   
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName> attached event for this class so that <xref:System.Windows.ContentElement.KeyDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.KeyDown> event are attached to the underlying <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=nameWithType> attached event for this class so that <xref:System.Windows.ContentElement.KeyDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.KeyDown> event are attached to the underlying <xref:System.Windows.Input.Keyboard.KeyDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_KeyDown"></a>   
 ## Routed Event Information  
@@ -2571,7 +2571,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName> attached event for this class so that  <xref:System.Windows.ContentElement.KeyUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.KeyUp> event are attached to the underlying <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=nameWithType> attached event for this class so that  <xref:System.Windows.ContentElement.KeyUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.KeyUp> event are attached to the underlying <xref:System.Windows.Input.Keyboard.KeyUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_KeyUp"></a>   
 ## Routed Event Information  
@@ -2703,7 +2703,7 @@
 ## Remarks  
  Because this event uses bubbling routing, the element that lost focus might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that lost focus.  
   
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.LostKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.LostKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.LostKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.LostKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.LostKeyboardFocus?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_LostKeyboardFocus"></a>   
 ## Routed Event Information  
@@ -2770,7 +2770,7 @@
   
  Because this event uses bubbling routing, the element that loses capture might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that lost capture.  
   
- This event creates an alias for the <xref:System.Windows.Input.Mouse.LostMouseCapture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.LostMouseCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.LostMouseCapture> event are attached to the underlying <xref:System.Windows.Input.Mouse.LostMouseCapture?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.LostMouseCapture?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.LostMouseCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.LostMouseCapture> event are attached to the underlying <xref:System.Windows.Input.Mouse.LostMouseCapture?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_LostMouseCapture"></a>   
 ## Routed Event Information  
@@ -2837,7 +2837,7 @@
   
  Because this event uses bubbling routing, the element that loses focus might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that lost focus.  
   
- This event creates an alias for the <xref:System.Windows.Input.Stylus.LostStylusCapture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.LostStylusCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.LostStylusCapture> event are attached to the underlying <xref:System.Windows.Input.Stylus.LostStylusCapture?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.LostStylusCapture?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.LostStylusCapture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.LostStylusCapture> event are attached to the underlying <xref:System.Windows.Input.Stylus.LostStylusCapture?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_LostStylusCapture"></a>   
 ## Routed Event Information  
@@ -2951,9 +2951,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.MouseDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseDown> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.MouseDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseDown> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
- The <xref:System.Windows.ContentElement.MouseDown> event is often raised together with either <xref:System.Windows.ContentElement.MouseLeftButtonDown> or <xref:System.Windows.ContentElement.MouseRightButtonDown>, which correspond to a press of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.MouseLeftButtonDown> and <xref:System.Windows.ContentElement.MouseRightButtonDown> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.MouseLeftButtonDown> or <xref:System.Windows.ContentElement.MouseRightButtonDown>.  
+ The <xref:System.Windows.ContentElement.MouseDown> event is often raised together with either <xref:System.Windows.ContentElement.MouseLeftButtonDown> or <xref:System.Windows.ContentElement.MouseRightButtonDown>, which correspond to a press of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.MouseLeftButtonDown> and <xref:System.Windows.ContentElement.MouseRightButtonDown> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.MouseLeftButtonDown> or <xref:System.Windows.ContentElement.MouseRightButtonDown>.  
   
 > [!IMPORTANT]
 >  A few <xref:System.Windows.ContentElement> derived classes that have control-like behavior, for example, <xref:System.Windows.Documents.Hyperlink>, might have inherent class handling for mouse button events. The left mouse button down event is the most likely event to have class handling in a control. The class handling often marks the underlying <xref:System.Windows.Input.Mouse> class event as handled. Once the event is marked handled, other instance handlers that are attached to that element are not ordinarily raised. Any other class or instance handlers that are attached to elements in the bubbling direction towards the root in the UI tree are also not ordinarily raised.  
@@ -3029,7 +3029,7 @@
   
  Although <xref:System.Windows.ContentElement.MouseEnter> tracks when the mouse pointer enters the bounds of an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsMouseOver%2A> property value has changed from `false` to `true` on this element.  
   
- This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseEnter?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.MouseEnter> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseEnter> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseEnter?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseEnter?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.MouseEnter> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseEnter> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseEnter?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_MouseEnter"></a>   
 ## Routed Event Information  
@@ -3094,7 +3094,7 @@
   
  Although <xref:System.Windows.ContentElement.MouseLeave> tracks when the mouse leaves an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsMouseOver%2A> property value has changed from `true` to `false` on this element.  
   
- This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseLeave?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.MouseLeave> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseLeave> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseLeave?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseLeave?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.MouseLeave> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseLeave> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseLeave?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_MouseLeave"></a>   
 ## Routed Event Information  
@@ -3157,9 +3157,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -3233,9 +3233,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -3298,7 +3298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.MouseMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseMove> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseMove?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseMove?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.MouseMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseMove> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseMove?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_MouseMove"></a>   
 ## Routed Event Information  
@@ -3363,9 +3363,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -3432,9 +3432,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -3497,9 +3497,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.MouseUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseUp> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.MouseUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseUp> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
- The <xref:System.Windows.ContentElement.MouseUp> event is often raised together with either <xref:System.Windows.ContentElement.MouseLeftButtonUp> or <xref:System.Windows.ContentElement.MouseRightButtonUp>, which correspond to a release of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.MouseLeftButtonUp> and <xref:System.Windows.ContentElement.MouseRightButtonUp> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.MouseLeftButtonUp> or <xref:System.Windows.ContentElement.MouseRightButtonUp>.  
+ The <xref:System.Windows.ContentElement.MouseUp> event is often raised together with either <xref:System.Windows.ContentElement.MouseLeftButtonUp> or <xref:System.Windows.ContentElement.MouseRightButtonUp>, which correspond to a release of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.MouseLeftButtonUp> and <xref:System.Windows.ContentElement.MouseRightButtonUp> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.MouseLeftButtonUp> or <xref:System.Windows.ContentElement.MouseRightButtonUp>.  
   
 <a name="routedEventInfo_MouseUp"></a>   
 ## Routed Event Information  
@@ -3564,7 +3564,7 @@
 ## Remarks  
  Focus or mouse capture take precedence over where the mouse pointer is; therefore, if you receive the <xref:System.Windows.ContentElement.MouseWheel> event from a focused or captured element, the mouse pointer might actually be over another element.  
   
- This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.MouseWheel> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseWheel> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.MouseWheel> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.MouseWheel> event are attached to the underlying <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_MouseWheel"></a>   
 ## Routed Event Information  
@@ -4463,9 +4463,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event as handled, <xref:System.Windows.ContentElement.OnMouseDown%2A> is not invoked.  
+ Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event as handled, <xref:System.Windows.ContentElement.OnMouseDown%2A> is not invoked.  
   
- If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.MouseLeftButtonDown> and <xref:System.Windows.ContentElement.MouseRightButtonDown>. Either of these events may be raised on the receiving element when <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> is received.  
+ If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.MouseLeftButtonDown> and <xref:System.Windows.ContentElement.MouseRightButtonDown>. Either of these events may be raised on the receiving element when <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> is received.  
   
  If you mark this event as handled in class handling, subevents are still raised; however, they pass the handled state in the event data. If the event is handled in class handling, instance handlers for the subevents are not invoked unless you explicitly use <xref:System.Windows.ContentElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` `true` in order to attach handlers. Class handlers also are not invoked unless those class handlers were registered with the <xref:System.Windows.EventManager.RegisterClassHandler%28System.Type%2CSystem.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> signature with `handledEventsToo` `true`. By handling <xref:System.Windows.ContentElement.OnMouseDown%2A>, you are implying that your class handling accounted for all possible mouse button down actions. This behavior might be unwanted; therefore, use caution when you use this virtual method to mark events as handled.  
   
@@ -4563,9 +4563,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.MouseLeftButtonDown> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseLeftButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.MouseLeftButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.MouseLeftButtonDown> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseLeftButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.MouseLeftButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseLeftButtonDown%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseLeftButtonDown%2A>.  
   
  Alternatively, you can override this method in order to change event handling for a specific mouse state. Whether you choose to call the base implementation depends on your scenario. Failing to call base disables default input handling for that mouse event on ancestor classes that also expect to invoke <xref:System.Windows.ContentElement.OnMouseLeftButtonDown%2A>. For example, you can derive from <xref:System.Windows.Controls.Button> and override <xref:System.Windows.ContentElement.OnMouseLeftButtonDown%2A> in your derived class without calling the base implementation; however, this override disables the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
@@ -4595,9 +4595,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.MouseLeftButtonUp> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseLeftButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.MouseLeftButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.MouseLeftButtonUp> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseLeftButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.MouseLeftButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseLeftButtonUp%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseLeftButtonUp%2A>.  
   
  ]]></format>
         </remarks>
@@ -4657,9 +4657,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.MouseRightButtonDown> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseRightButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.MouseRightButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.MouseRightButtonDown> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseRightButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.MouseRightButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseRightButtonDown%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseRightButtonDown%2A>.  
   
  Alternatively, you can override this method in order to change event handling for a specific mouse state. Whether you choose to call the base implementation depends on your scenario. Failing to call base disables default input handling for that mouse event on ancestor classes that also expect to invoke <xref:System.Windows.ContentElement.OnMouseRightButtonDown%2A>. For example, you can derive from <xref:System.Windows.Controls.Control> and override <xref:System.Windows.ContentElement.OnMouseRightButtonDown%2A> in your derived class without calling base; however, this override disables the context menu services on your control, which are part of the <xref:System.Windows.Controls.Control> default behavior.  
   
@@ -4689,9 +4689,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.MouseRightButtonUp> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseRightButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.MouseRightButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.MouseRightButtonUp> event appears to travel a bubbling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> is the underlying event that is bubble routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseRightButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.MouseRightButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseRightButtonUp%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnMouseRightButtonUp%2A>.  
   
  ]]></format>
         </remarks>
@@ -4719,9 +4719,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> event as handled, <xref:System.Windows.ContentElement.OnMouseUp%2A> is not invoked.  
+ Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> event as handled, <xref:System.Windows.ContentElement.OnMouseUp%2A> is not invoked.  
   
- If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.MouseLeftButtonUp> and <xref:System.Windows.ContentElement.MouseRightButtonUp>. Either of these events might be raised on the receiving element when <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> is received.  
+ If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.MouseLeftButtonUp> and <xref:System.Windows.ContentElement.MouseRightButtonUp>. Either of these events might be raised on the receiving element when <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> is received.  
   
  If you mark this event as handled in class handling, subevents are still raised; however, they pass the handled state in the event data. If the event is handled in class handling, instance handlers for the subevents are not invoked unless you explicitly use <xref:System.Windows.ContentElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` `true` in order to attach handlers. Class handlers also are not invoked unless those class handlers were registered with the <xref:System.Windows.EventManager.RegisterClassHandler%28System.Type%2CSystem.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> signature with `handledEventsToo` `true`. By handling <xref:System.Windows.ContentElement.OnMouseUp%2A>, you are implying that your class handling accounted for all possible mouse button up actions. This behavior might be unwanted; Therefore, use caution when you use this virtual method to mark events as handled.  
   
@@ -5079,9 +5079,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event as handled, <xref:System.Windows.ContentElement.OnPreviewMouseDown%2A> is not invoked.  
+ Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event as handled, <xref:System.Windows.ContentElement.OnPreviewMouseDown%2A> is not invoked.  
   
- If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown>. Either of these events may be raised on the receiving element when <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> is received.  
+ If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown>. Either of these events may be raised on the receiving element when <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> is received.  
   
  If you mark this event as handled in class handling, subevents are still raised; however, they pass the handled state in the event data. If the event is handled in class handling, instance handlers for the subevents are not invoked unless you explicitly use <xref:System.Windows.ContentElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` `true` in order to attach handlers. Class handlers also are not invoked unless those class handlers were registered with the <xref:System.Windows.EventManager.RegisterClassHandler%28System.Type%2CSystem.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> signature with `handledEventsToo` `true`. By handling <xref:System.Windows.ContentElement.OnPreviewMouseDown%2A>, you are implying that your class handling accounted for all possible mouse button down actions. This behavior might be unwanted; Therefore, use caution when you use this virtual method to mark events as handled.  
   
@@ -5119,9 +5119,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseLeftButtonDown%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseLeftButtonDown%2A>.  
   
  Alternatively, you can override this method in order to change event handling for a specific mouse state. Whether you choose to call the base implementation depends on your scenario. Failing to call base disables default input handling for that mouse event on ancestor classes that also expect to invoke <xref:System.Windows.ContentElement.OnPreviewMouseLeftButtonDown%2A>. For example, you can derive from <xref:System.Windows.Controls.Button> and override <xref:System.Windows.ContentElement.OnPreviewMouseLeftButtonDown%2A> in your derived class without calling the base implementation; however, this override disables the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
@@ -5151,9 +5151,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseLeftButtonUp%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseLeftButtonUp%2A>.  
   
  ]]></format>
         </remarks>
@@ -5213,9 +5213,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseRightButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.MouseRightButtonDown>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseRightButtonDown%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseRightButtonDown%2A>.  
   
  Alternatively, you can override this method in order to change event handling for a specific mouse state. Whether you choose to call the base implementation depends on your scenario. Failing to call base disables default input handling for that mouse event on ancestor classes that also expect to invoke <xref:System.Windows.ContentElement.OnPreviewMouseRightButtonDown%2A>. For example, you can derive from <xref:System.Windows.Controls.Control> and override <xref:System.Windows.ContentElement.OnPreviewMouseRightButtonDown%2A> in your derived class without calling base; however, this override disables the context menu services on your control, which are part of the <xref:System.Windows.Controls.Control> default behavior.  
   
@@ -5245,9 +5245,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
+ The <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp> event appears to travel a tunneling route but actually travels in an indirect way. <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> is the underlying event that is tunnel routed, and each <xref:System.Windows.ContentElement> along the event route uses identical handling to raise the direct routed event <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>. Although you can mark the <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp> event as handled for purposes of this element, the handled state does not perpetuate to other elements along the event route. However, you might want to mark the event as handled in order to prevent general instance handlers (those that did not specify `handledEventsToo`) from being invoked.  
   
- The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseRightButtonUp%2A>.  
+ The default implementation for general mouse event handling in <xref:System.Windows.ContentElement> listens for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> and converts it to an appropriate local event. If you want to override this logic, you must create a derived class. In the static constructor of your derived class, register an alternative class handler for <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType>. You cannot change the mouse handling behavior of <xref:System.Windows.ContentElement> by overriding <xref:System.Windows.ContentElement.OnPreviewMouseRightButtonUp%2A>.  
   
  ]]></format>
         </remarks>
@@ -5275,9 +5275,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event as handled, <xref:System.Windows.ContentElement.OnPreviewMouseUp%2A> is not invoked.  
+ Mouse button actions are also handled by a dedicated input manager. Other programming features that rely on mouse button actions, such as input and command bindings, might invoke handlers for the action before it is exposed as a general mouse button action. If these input system features mark the <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event as handled, <xref:System.Windows.ContentElement.OnPreviewMouseUp%2A> is not invoked.  
   
- If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>. Either of these events might be raised on the receiving element when <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> is received.  
+ If you use this class handler to mark the event as handled, you potentially impact the following events: <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>. Either of these events might be raised on the receiving element when <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> is received.  
   
  If you mark this event as handled in class handling, subevents are still raised; however, they pass the handled state in the event data. If the event is handled in class handling, instance handlers for the subevents are not invoked unless you explicitly use <xref:System.Windows.ContentElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` `true` in order to attach handlers. Class handlers also are not invoked unless those class handlers were registered with the <xref:System.Windows.EventManager.RegisterClassHandler%28System.Type%2CSystem.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> signature with `handledEventsToo` `true`. By handling <xref:System.Windows.ContentElement.OnPreviewMouseUp%2A>, you are implying that your class handling accounted for all possible mouse button up actions. This behavior might be unwanted; Therefore, use caution when you use this virtual method to mark events as handled.  
   
@@ -6392,7 +6392,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDragEnter?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDragEnter> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDragEnter> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDragEnter?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDragEnter?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDragEnter> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDragEnter> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDragEnter?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewDragEnter"></a>   
 ## Routed Event Information  
@@ -6455,7 +6455,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDragLeave?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDragLeave> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDragLeave> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDragLeave?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDragLeave?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDragLeave> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDragLeave> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDragLeave?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewDragLeave"></a>   
 ## Routed Event Information  
@@ -6518,7 +6518,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDragOver?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDragOver> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDragOver> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDragOver?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDragOver?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDragOver> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDragOver> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDragOver?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewDragOver"></a>   
 ## Routed Event Information  
@@ -6581,7 +6581,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDrop?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDrop> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDrop> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDrop?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.PreviewDrop?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewDrop> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewDrop> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewDrop?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewDrop"></a>   
 ## Routed Event Information  
@@ -6646,7 +6646,7 @@
 ## Remarks  
  The <xref:System.Windows.ContentElement.PreviewGiveFeedback> event enables the source of a drag event to modify the appearance of the mouse pointer, in order to give the user visual feedback during a drag-and-drop operation.  
   
- This event creates an alias for the <xref:System.Windows.DragDrop.PreviewGiveFeedback?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewGiveFeedback> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewGiveFeedback> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewGiveFeedback?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.PreviewGiveFeedback?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewGiveFeedback> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewGiveFeedback> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewGiveFeedback?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewGiveFeedback"></a>   
 ## Routed Event Information  
@@ -6711,7 +6711,7 @@
 ## Remarks  
  Because this event uses tunneling routing, the element that has focus might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that has focus.  
   
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewGotKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewGotKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewGotKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewGotKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewGotKeyboardFocus"></a>   
 ## Routed Event Information  
@@ -6776,7 +6776,7 @@
 ## Remarks  
  Key handling interacts with other platform features such as commanding and text composition. The <xref:System.Windows.ContentElement.KeyDown> event is a lower-level text input event that might not behave as expected on certain controls. This is because some controls have control compositing or class handling that provides a higher-level version of text input handling and related events.  
   
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewKeyDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewKeyDown> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewKeyDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewKeyDown> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewKeyDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewKeyDown"></a>   
 ## Routed Event Information  
@@ -6841,7 +6841,7 @@
 ## Remarks  
  Key handling interacts with other platform features such as commanding and text composition. The <xref:System.Windows.ContentElement.KeyUp> event is a lower-level text input event that might not behave as expected on certain controls. This is because some controls have control compositing or class handling that provides a higher-level version of text input handling and related events. For details, check the documentation for individual controls.  
   
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewKeyUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewKeyUp> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewKeyUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewKeyUp> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewKeyUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewKeyUp"></a>   
 ## Routed Event Information  
@@ -6906,7 +6906,7 @@
 ## Remarks  
  Because this event uses tunneling routing, the element that lost focus might be a child element instead of the element where the event handler is actually attached. Check the <xref:System.Windows.RoutedEventArgs.Source%2A> in the event data to determine the actual element that lost focus.  
   
- This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus> event are attached to the underlying <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewLostKeyboardFocus"></a>   
 ## Routed Event Information  
@@ -6969,9 +6969,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseDown> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseDown> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
- The <xref:System.Windows.ContentElement.PreviewMouseDown> event is often raised together with either <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown>, which correspond to a press of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown>.  
+ The <xref:System.Windows.ContentElement.PreviewMouseDown> event is often raised together with either <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown>, which correspond to a press of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonDown>.  
   
 <a name="routedEventInfo_PreviewMouseDown"></a>   
 ## Routed Event Information  
@@ -7036,9 +7036,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -7103,9 +7103,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -7170,7 +7170,7 @@
 ## Remarks  
  This event occurs both when the mouse pointer first enters into the element bounds, and also when the mouse pointer moves while still remaining within the element bounds.  
   
- This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseMove> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseMove?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseMove?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseMove> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseMove?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewMouseMove"></a>   
 ## Routed Event Information  
@@ -7235,9 +7235,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -7302,9 +7302,9 @@
 ## Remarks  
  Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
- This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
+ This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
- The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
+ The arguments of this event expose the arguments of the underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event. If that event is marked as handled along the event route, the mouse-button specific events are still raised; however, handlers of the mouse-button specific events must be added by explicitly calling <xref:System.Windows.ContentElement.AddHandler%2A>, with the option to handle events that are already marked as handled, in order to be listeners to the event.  
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
@@ -7367,9 +7367,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseUp> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseUp> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
- The <xref:System.Windows.ContentElement.PreviewMouseUp> event is often raised together with either <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>, which correspond to a press of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>.  
+ The <xref:System.Windows.ContentElement.PreviewMouseUp> event is often raised together with either <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>, which correspond to a press of one of the two standard mouse buttons. <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> and <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp> are also routed events, but they are direct routed events, and the appropriate button-specific event is raised when the <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event reaches this element along the event route. See Remarks for <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> or <xref:System.Windows.ContentElement.PreviewMouseRightButtonUp>.  
   
 <a name="routedEventInfo_PreviewMouseUp"></a>   
 ## Routed Event Information  
@@ -7434,7 +7434,7 @@
 ## Remarks  
  Focus or mouse capture take precedence over where the mouse pointer is; therefore, if you receive this event from a focused or captured element, the mouse pointer might actually be over another element.  
   
- This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseMove> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewMouseMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewMouseMove> event are attached to the underlying <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewMouseWheel"></a>   
 ## Routed Event Information  
@@ -7499,7 +7499,7 @@
 ## Remarks  
  The <xref:System.Windows.ContentElement.PreviewQueryContinueDrag> event enables the drag source to declare whether the drag-and-drop operation should be canceled.  
   
- This event creates an alias for the <xref:System.Windows.DragDrop.PreviewQueryContinueDrag?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewQueryContinueDrag> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewQueryContinueDrag> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewQueryContinueDrag?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.PreviewQueryContinueDrag?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewQueryContinueDrag> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewQueryContinueDrag> event are attached to the underlying <xref:System.Windows.DragDrop.PreviewQueryContinueDrag?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewQueryContinueDrag"></a>   
 ## Routed Event Information  
@@ -7562,7 +7562,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusButtonDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusButtonDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -7627,7 +7627,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusButtonUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusButtonUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -7692,7 +7692,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -7757,7 +7757,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusInAirMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusInAirMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -7822,7 +7822,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusInRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusInRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -7887,7 +7887,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -7952,7 +7952,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusOutOfRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusOutOfRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -8019,7 +8019,7 @@
 ## Remarks  
  For information about stylus gestures, see <xref:System.Windows.Input.SystemGesture>.  
   
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusSystemGesture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusSystemGesture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -8084,7 +8084,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -8153,7 +8153,7 @@
   
  Because of key combinations—either in default keyboards or through input method editors—multiple key events may raise just one text input event.  
   
- This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewTextInput> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewTextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewTextInput> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewTextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_PreviewTextInput"></a>   
 ## Routed Event Information  
@@ -8218,7 +8218,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.ContentElement.PreviewTouchDown> and <xref:System.Windows.ContentElement.TouchDown> events do not occur until a finger touches the screen and moves. Pressing a finger on the screen and holding it without moving it causes the press and hold behavior of a <xref:System.Windows.Input.Stylus>. The press and hold behavior is equivalent to a mouse right-click.  
   
- To cause the <xref:System.Windows.ContentElement.PreviewTouchDown> and <xref:System.Windows.ContentElement.TouchDown> events to occur as soon as a finger touches the screen, set the <xref:System.Windows.Input.Stylus.IsPressAndHoldEnabled%2A?displayProperty=fullName> attached property to `false` for this element.  
+ To cause the <xref:System.Windows.ContentElement.PreviewTouchDown> and <xref:System.Windows.ContentElement.TouchDown> events to occur as soon as a finger touches the screen, set the <xref:System.Windows.Input.Stylus.IsPressAndHoldEnabled%2A?displayProperty=nameWithType> attached property to `false` for this element.  
   
 <a name="routedEventInfo_PreviewTouchDown"></a>   
 ## Routed Event Information  
@@ -8380,7 +8380,7 @@
 ## Remarks  
  The <xref:System.Windows.ContentElement.QueryContinueDrag> event enables the drag source to determine whether the drag-and-drop operation should be canceled.  
   
- This event creates an alias for the <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.QueryContinueDrag> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.QueryContinueDrag> event are attached to the underlying <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.QueryContinueDrag> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.QueryContinueDrag> event are attached to the underlying <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_QueryContinueDrag"></a>   
 ## Routed Event Information  
@@ -8443,7 +8443,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Mouse.QueryCursor?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.QueryCursor> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.QueryCursor> event are attached to the underlying <xref:System.Windows.Input.Mouse.QueryCursor?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Mouse.QueryCursor?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.QueryCursor> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.QueryCursor> event are attached to the underlying <xref:System.Windows.Input.Mouse.QueryCursor?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  The cursor being referred to by this event name is not necessarily the text cursor (sometimes known as the insertion point). Instead, the cursor in this context is the object that declares the onscreen graphical display related to several possible input-related devices or concepts in [!INCLUDE[TLA2#tla_win](~/includes/tla2sharptla-win-md.md)] programming. That object is represented by the <xref:System.Windows.Input.Cursor> class in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input system enables you to change this cursor when it represents the onscreen position of the mouse pointer. You can use predefined values from the <xref:System.Windows.Input.Cursors> enumeration, or you can declare a custom cursor as an image file.  
   
@@ -8759,7 +8759,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusButtonDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusButtonDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -8824,7 +8824,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusButtonUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusButtonUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -8889,7 +8889,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -8958,7 +8958,7 @@
   
  Although <xref:System.Windows.ContentElement.StylusEnter> tracks when the stylus enters the bounds of an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsStylusOver%2A> property value has changed from `false` to `true` on this element.  
   
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusEnter> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusEnter> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusEnter> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusEnter> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9021,7 +9021,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusInAirMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusInAirMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9086,7 +9086,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusInRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusInRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9155,7 +9155,7 @@
   
  Although <xref:System.Windows.ContentElement.StylusLeave> tracks when the stylus leaves the bounds of an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsStylusOver%2A> property value has changed from `true` to `false` on this element.  
   
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusLeave> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusLeave> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusLeave> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusLeave> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9218,7 +9218,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9283,7 +9283,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusOutOfRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusOutOfRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9350,7 +9350,7 @@
 ## Remarks  
  For more information about stylus gestures, see <xref:System.Windows.Input.SystemGesture>.  
   
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusSystemGesture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusSystemGesture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9415,7 +9415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.StylusUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
  Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
@@ -9490,7 +9490,7 @@
   
  Because of key combinations—either in default keyboards or through input method editors—multiple key events might raise just one text input event.  
   
- This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.TextInput> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.TextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=fullName> attached event and receive the same event data instance.  
+ This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.ContentElement.TextInput> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.TextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
 <a name="routedEventInfo_TextInput"></a>   
 ## Routed Event Information  
@@ -9555,7 +9555,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.ContentElement.PreviewTouchDown> and <xref:System.Windows.ContentElement.TouchDown> events do not occur until a finger touches the screen and moves. Pressing a finger on the screen and holding it without moving it causes the press and hold behavior of a <xref:System.Windows.Input.Stylus>. The press and hold behavior is equivalent to a mouse right-click.  
   
- To cause the <xref:System.Windows.ContentElement.PreviewTouchDown> and <xref:System.Windows.ContentElement.TouchDown> events to occur as soon as a finger touches the screen, set the <xref:System.Windows.Input.Stylus.IsPressAndHoldEnabled%2A?displayProperty=fullName> attached property to `false` for this element.  
+ To cause the <xref:System.Windows.ContentElement.PreviewTouchDown> and <xref:System.Windows.ContentElement.TouchDown> events to occur as soon as a finger touches the screen, set the <xref:System.Windows.Input.Stylus.IsPressAndHoldEnabled%2A?displayProperty=nameWithType> attached property to `false` for this element.  
   
 <a name="routedEventInfo_TouchDown"></a>   
 ## Routed Event Information  

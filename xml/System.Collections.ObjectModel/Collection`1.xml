@@ -389,7 +389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Collections.ObjectModel.Collection%601> object is created using the default constructor, this method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list. If type `T` does not implement the <xref:System.IEquatable%601> interface, the <xref:System.Object.Equals%2A> method is used.  
+ If the <xref:System.Collections.ObjectModel.Collection%601> object is created using the default constructor, this method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list. If type `T` does not implement the <xref:System.IEquatable%601> interface, the <xref:System.Object.Equals%2A> method is used.  
   
  If the Collection object is created by passing an <xref:System.Collections.Generic.IList%601> object to the constructor, the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method will be determined by the <xref:System.Collections.Generic.IEqualityComparer%601> interface used by that <xref:System.Collections.Generic.IList%601> object.  
   
@@ -436,7 +436,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.ObjectModel.Collection%601>.  
   
@@ -545,7 +545,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -591,7 +591,7 @@
 ## Remarks  
  The <xref:System.Collections.ObjectModel.Collection%601> is searched forward starting at the first element and ending at the last element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
   
@@ -874,7 +874,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
   
@@ -1157,7 +1157,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
   
@@ -1216,7 +1216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -1260,7 +1260,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -1344,7 +1344,7 @@ finally {
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -1479,7 +1479,7 @@ finally {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable?displayProperty=fullName>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements <xref:System.IComparable?displayProperty=nameWithType>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
   
@@ -1708,7 +1708,7 @@ finally {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable?displayProperty=fullName>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=nameWithType> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements <xref:System.IComparable?displayProperty=nameWithType>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
   

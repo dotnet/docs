@@ -77,7 +77,7 @@ manager: "wpickett"
   
 -   **User Navigation**. The user navigates by clicking a                                  <xref:System.Windows.Documents.Hyperlink> element.  
   
--   **Programmatic Navigation**. The application navigates without involving the user, for example, by setting the                                  <xref:System.Windows.Navigation.NavigationWindow.Source%2A?displayProperty=fullName> property.  
+-   **Programmatic Navigation**. The application navigates without involving the user, for example, by setting the                                  <xref:System.Windows.Navigation.NavigationWindow.Source%2A?displayProperty=nameWithType> property.  
   
 <a name="Browser_Navigation_Security"></a>   
 ### Browser Navigation Security  

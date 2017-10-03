@@ -177,7 +177,7 @@
 ## Remarks  
  In the ASP.NET API, the <xref:System.Web.UI.MobileControls.Calendar.FirstDayOfWeek%2A> enumeration contains every day of the week, with the default value returning the server's local setting for the first day of the week.  
   
- This property functions the same way as the <xref:System.Web.UI.WebControls.Calendar.FirstDayOfWeek%2A?displayProperty=fullName> property.  
+ This property functions the same way as the <xref:System.Web.UI.WebControls.Calendar.FirstDayOfWeek%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -297,7 +297,7 @@
   
  Browsing to the next or previous month will not update this property.  
   
- This property has the same functionality as the ASP.NET <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A?displayProperty=fullName> property.  
+ This property has the same functionality as the ASP.NET <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -438,7 +438,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.ShowDayHeader%2A?displayProperty=fullName> property.  
+ This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.ShowDayHeader%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -507,11 +507,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Calendar.VisibleDate%2A> property is updated after the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged?displayProperty=fullName> event is raised.  
+ The <xref:System.Web.UI.MobileControls.Calendar.VisibleDate%2A> property is updated after the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged?displayProperty=nameWithType> event is raised.  
   
  The date can be any day within the month. Only the month value of the <xref:System.DateTime> object is used.  
   
- This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A?displayProperty=fullName> property.  
+ This property has the same functionality as the Web Forms <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -555,12 +555,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The ASP.NET mobile controls do not duplicate the properties of the ASP.NET Web Forms <xref:System.Web.UI.WebControls.Calendar> control that are not supported on mobile devices. Thus, if you want to use features that are available for the underlying <xref:System.Web.UI.WebControls.Calendar> control, you do so by accessing the <xref:System.Web.UI.WebControls.Calendar?displayProperty=fullName> object through the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property.  
+ The ASP.NET mobile controls do not duplicate the properties of the ASP.NET Web Forms <xref:System.Web.UI.WebControls.Calendar> control that are not supported on mobile devices. Thus, if you want to use features that are available for the underlying <xref:System.Web.UI.WebControls.Calendar> control, you do so by accessing the <xref:System.Web.UI.WebControls.Calendar?displayProperty=nameWithType> object through the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property.  
   
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property to apply formatting that is only available in the underlying <xref:System.Web.UI.WebControls.Calendar?displayProperty=fullName> control. This example is part of a larger code sample for the <xref:System.Web.UI.MobileControls.Calendar> overview.  
+ The following code example uses the <xref:System.Web.UI.MobileControls.Calendar.WebCalendar%2A> property to apply formatting that is only available in the underlying <xref:System.Web.UI.WebControls.Calendar?displayProperty=nameWithType> control. This example is part of a larger code sample for the <xref:System.Web.UI.MobileControls.Calendar> overview.  
   
  [!code-csharp[MobileCalendarExample#10](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCalendarExample/cs/MobileCalendarExample.aspx#10)]
  [!code-vb[MobileCalendarExample#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCalendarExample/vb/MobileCalendarExample.aspx#10)]  

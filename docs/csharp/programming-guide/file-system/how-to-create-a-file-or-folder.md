@@ -42,7 +42,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
 ## Example  
  [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
   
- If the folder already exists, <xref:System.IO.Directory.CreateDirectory%2A> does nothing, and no exception is thrown. However, <xref:System.IO.File.Create%2A?displayProperty=fullName> replaces an existing file with a new file. The example uses an `if`-`else` statement to prevent an existing file from being replaced.  
+ If the folder already exists, <xref:System.IO.Directory.CreateDirectory%2A> does nothing, and no exception is thrown. However, <xref:System.IO.File.Create%2A?displayProperty=nameWithType> replaces an existing file with a new file. The example uses an `if`-`else` statement to prevent an existing file from being replaced.  
   
  By making the following changes in the example, you can specify different outcomes based on whether a file with a certain name already exists. If such a file doesn't exist, the code creates one. If such a file exists, the code appends data to that file.  
   
@@ -90,6 +90,6 @@ You can programmatically create a folder on your computer, create a subfolder, c
  If you don’t have permission to create the folder, the example throws an instance of the <xref:System.UnauthorizedAccessException> class.  
   
 ## See Also  
- <xref:System.IO?displayProperty=fullName>   
+ <xref:System.IO?displayProperty=nameWithType>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

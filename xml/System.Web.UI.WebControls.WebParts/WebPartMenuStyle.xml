@@ -154,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign%2A> property overrides the base property to prevent the alignment from being set, and to add some attributes to the property. The property gets its value from the base <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A?displayProperty=fullName> property value, but does not provide any implementation for the setter, so you cannot set the alignment of the menu content by using this property.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign%2A> property overrides the base property to prevent the alignment from being set, and to add some attributes to the property. The property gets its value from the base <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A?displayProperty=nameWithType> property value, but does not provide any implementation for the setter, so you cannot set the alignment of the menu content by using this property.  
   
  ]]></format>
         </remarks>

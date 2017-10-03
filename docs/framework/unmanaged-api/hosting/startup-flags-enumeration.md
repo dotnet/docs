@@ -78,7 +78,7 @@ typedef enum {
 |`STARTUP_ALWAYSFLOW_IMPERSONATION`|Specifies that managed impersonations and impersonations achieved through platform invoke will flow across asynchronous points. By default, only managed impersonations will flow across asynchronous points.|  
 |`STARTUP_TRIM_GC_COMMIT`|Specifies that garbage collection will use less committed space when system memory is low. See `gcTrimCommitOnLowMemory` in [Optimization for Shared Web Hosting](../../../../docs/standard/garbage-collection/optimization-for-shared-web-hosting.md).|  
 |`STARTUP_ETW`|Specifies that event tracing for Windows (ETW) is enabled for common language runtime events. Beginning with Windows Vista, event tracing is always enabled, so this flag has no effect. See [Controlling .NET Framework Logging](../../../../docs/framework/performance/controlling-logging.md).|  
-|`STARTUP_ARM`|Specifies that application domain resource monitoring is enabled. See the <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=fullName> property and [\<appDomainResourceMonitoring> Element](../../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
+|`STARTUP_ARM`|Specifies that application domain resource monitoring is enabled. See the <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> property and [\<appDomainResourceMonitoring> Element](../../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

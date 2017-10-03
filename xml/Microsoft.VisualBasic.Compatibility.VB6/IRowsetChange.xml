@@ -32,7 +32,7 @@
   <Members>
     <Member MemberName="DeleteRows">
       <MemberSignature Language="C#" Value="public void DeleteRows (int hChapterReserved, int cRows, int[] rghRows, out int[] rgRowStatus);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void DeleteRows(int32 hChapterReserved, int32 cRows, int32[] rghRows, int32[] rgRowStatus) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void DeleteRows([in]int32 hChapterReserved, [in]int32 cRows, [in]int32[] rghRows, [out] int32[]&amp; rgRowStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange.DeleteRows(System.Int32,System.Int32,System.Int32[],System.Int32[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -66,7 +66,7 @@
     </Member>
     <Member MemberName="InsertRow">
       <MemberSignature Language="C#" Value="public void InsertRow (int hChapterReserved, int hAccessor, IntPtr pData, out int hRow);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void InsertRow(int32 hChapterReserved, int32 hAccessor, native int pData, int32 hRow) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void InsertRow([in]int32 hChapterReserved, [in]int32 hAccessor, [in]native int pData, [out] int32&amp; hRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange.InsertRow(System.Int32,System.Int32,System.IntPtr,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -100,7 +100,7 @@
     </Member>
     <Member MemberName="SetData">
       <MemberSignature Language="C#" Value="public void SetData (int hRow, int hAccessor, IntPtr pData);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData(int32 hRow, int32 hAccessor, native int pData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData([in]int32 hRow, [in]int32 hAccessor, [in]native int pData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange.SetData(System.Int32,System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

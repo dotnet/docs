@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -18,7 +24,7 @@
 ## Remarks  
  Any `ProtectionLevel` settings of a transport are ignored if the <xref:System.ServiceModel.SecurityMode> is set to None. [!INCLUDE[crabout](~/includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security and how this property affects general security features, see [Securing Services](~/docs/framework/wcf/securing-services.md) and [Programming WCF Security](~/docs/framework/wcf/feature-details/programming-wcf-security.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] the transport mode, see [Transport Security](~/docs/framework/wcf/feature-details/transport-security.md).  
+ [!INCLUDE[crabout](~/includes/crdefault-md.md)] [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security and how this property affects general security features, see [Securing Services](~/docs/framework/wcf/securing-services.md) and [Programming WCF Security](~/docs/framework/wcf/feature-details/programming-wcf-security.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] the transport mode, see [Transport Security](~/docs/framework/wcf/feature-details/transport-security.md).  
   
  Note that if you choose TransportWithMessageCredential, then the value set in <xref:System.ServiceModel.HttpClientCredentialType> or <xref:System.ServiceModel.TcpClientCredentialType> is ignored.  
   
@@ -44,6 +50,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
@@ -60,6 +72,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
@@ -78,6 +96,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
@@ -94,6 +118,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>

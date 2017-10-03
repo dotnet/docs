@@ -507,7 +507,7 @@
     </Member>
     <Member MemberName="MidStmtStr">
       <MemberSignature Language="C#" Value="public static void MidStmtStr (ref string sDest, int StartPosition, int MaxInsertLength, string sInsert);" />
-      <MemberSignature Language="ILAsm" Value=".method public static void MidStmtStr(string sDest, int32 StartPosition, int32 MaxInsertLength, string sInsert) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static void MidStmtStr(string&amp; sDest, int32 StartPosition, int32 MaxInsertLength, string sInsert) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StringType.MidStmtStr(System.String@,System.Int32,System.Int32,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

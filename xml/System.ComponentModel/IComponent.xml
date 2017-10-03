@@ -48,7 +48,7 @@
   
  You can contain components in a container. In this context, containment refers to logical containment, not visual containment. You can use components and containers in a variety of scenarios, both visual and non visual.  
   
- <xref:System.Windows.Forms.Control?displayProperty=fullName> inherits from <xref:System.ComponentModel.Component>, the default implementation of <xref:System.ComponentModel.IComponent>.  
+ <xref:System.Windows.Forms.Control?displayProperty=nameWithType> inherits from <xref:System.ComponentModel.Component>, the default implementation of <xref:System.ComponentModel.IComponent>.  
   
  A component interacts with its container primarily through a container-provided <xref:System.ComponentModel.ISite>, which is a repository of container-specific per-component information.  
   

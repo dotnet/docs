@@ -45,7 +45,7 @@ public void SampleMethod()
 
 `void` is also used in an unsafe context to declare a pointer to an unknown type. For more information, see [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md).
 
-`void` is an alias for the .NET Framework <xref:System.Void?displayProperty=fullName> type.
+`void` is an alias for the .NET Framework <xref:System.Void?displayProperty=nameWithType> type.
 
 ## C# Language Specification
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

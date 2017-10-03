@@ -209,7 +209,7 @@
     </Member>
     <Member MemberName="Accessibility.IAccessible.accLocation">
       <MemberSignature Language="C#" Value="void IAccessible.accLocation (out int pxLeft, out int pyTop, out int pcxWidth, out int pcyHeight, object childID);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Accessibility.IAccessible.accLocation(int32 pxLeft, int32 pyTop, int32 pcxWidth, int32 pcyHeight, object childID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Accessibility.IAccessible.accLocation([out] int32&amp; pxLeft, [out] int32&amp; pyTop, [out] int32&amp; pcxWidth, [out] int32&amp; pcyHeight, object childID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -472,7 +472,7 @@
     </Member>
     <Member MemberName="Accessibility.IAccessible.get_accHelpTopic">
       <MemberSignature Language="C#" Value="int IAccessible.get_accHelpTopic (out string pszHelpFile, object childID);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Accessibility.IAccessible.get_accHelpTopic(string pszHelpFile, object childID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Accessibility.IAccessible.get_accHelpTopic([out] string&amp; pszHelpFile, object childID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.Accessibility#IAccessible#get_accHelpTopic(System.String@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -884,7 +884,7 @@
     </Member>
     <Member MemberName="GetHelpTopic">
       <MemberSignature Language="C#" Value="public virtual int GetHelpTopic (out string fileName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHelpTopic(string fileName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHelpTopic([out] string&amp; fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.AccessibleObject.GetHelpTopic(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -905,7 +905,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To display help for the <xref:System.Windows.Forms.AccessibleObject> using the Windows Help system, you can pass the file name and topic ID to the appropriate <xref:System.Windows.Forms.Help.ShowHelp%2A?displayProperty=fullName> method of <xref:System.Windows.Forms.Help>.  
+ To display help for the <xref:System.Windows.Forms.AccessibleObject> using the Windows Help system, you can pass the file name and topic ID to the appropriate <xref:System.Windows.Forms.Help.ShowHelp%2A?displayProperty=nameWithType> method of <xref:System.Windows.Forms.Help>.  
   
  ]]></format>
         </remarks>
@@ -1211,12 +1211,12 @@
   
 |Operation|Flag Combination|  
 |---------------|----------------------|  
-|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> **Note:**  This combination will not select the desired control if called from within your own application. It will have the desired effect, however, if called from an external application.|  
-|To select a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName>|  
-|To cancel selection of a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName>|  
-|To simulate SHIFT + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName>|  
-|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on the starting object to set the selection anchor. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName>`OR`<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on the last object.|  
-|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on any object. This flag deselects all selected objects except the one just selected. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on the same object.|  
+|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> **Note:**  This combination will not select the desired control if called from within your own application. It will have the desired effect, however, if called from an external application.|  
+|To select a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
+|To cancel selection of a target item by simulating CTRL + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
+|To simulate SHIFT + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>|  
+|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the starting object to set the selection anchor. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType>`OR`<xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the last object.|  
+|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on any object. This flag deselects all selected objects except the one just selected. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=nameWithType> on the same object.|  
   
    
   
@@ -1326,7 +1326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each field must have a unique name. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that public fields are included in the search.  
+ Each field must have a unique name. The <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> flag specifies that public fields are included in the search.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
   
@@ -1457,7 +1457,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is a match based on the method name, the <xref:System.Reflection.BindingFlags?displayProperty=fullName> enumeration, the kind of type conversion specified by the `binder` parameter, the overload, and the <xref:System.Reflection.ParameterInfo?displayProperty=fullName> that describes the signature of the method.  
+ The return value is a match based on the method name, the <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> enumeration, the kind of type conversion specified by the `binder` parameter, the overload, and the <xref:System.Reflection.ParameterInfo?displayProperty=nameWithType> that describes the signature of the method.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
   

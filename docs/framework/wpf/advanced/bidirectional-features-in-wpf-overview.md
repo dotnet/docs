@@ -200,7 +200,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
 -   Override: Number culture is that of                          <xref:System.Windows.Media.NumberSubstitution.CultureOverride%2A> property.  
   
--   Text: Number culture is the culture of the text run. In markup, this would be                          `xml:lang`, or its alias                          `Language` property (                         <xref:System.Windows.FrameworkElement.Language%2A> or                          <xref:System.Windows.FrameworkContentElement.Language%2A>). Also, it is the default for classes deriving from                          <xref:System.Windows.FrameworkContentElement>. Such classes include                          <xref:System.Windows.Documents.Paragraph?displayProperty=fullName>,                          <xref:System.Windows.Documents.Table?displayProperty=fullName>,                          <xref:System.Windows.Documents.TableCell?displayProperty=fullName> and so forth.  
+-   Text: Number culture is the culture of the text run. In markup, this would be                          `xml:lang`, or its alias                          `Language` property (                         <xref:System.Windows.FrameworkElement.Language%2A> or                          <xref:System.Windows.FrameworkContentElement.Language%2A>). Also, it is the default for classes deriving from                          <xref:System.Windows.FrameworkContentElement>. Such classes include                          <xref:System.Windows.Documents.Paragraph?displayProperty=nameWithType>,                          <xref:System.Windows.Documents.Table?displayProperty=nameWithType>,                          <xref:System.Windows.Documents.TableCell?displayProperty=nameWithType> and so forth.  
   
 -   User: Number culture is the culture of the current thread. This property is the default for all subclasses of                          <xref:System.Windows.FrameworkElement> such as                          <xref:System.Windows.Controls.Page>,                          <xref:System.Windows.Window> and                          <xref:System.Windows.Controls.TextBlock>.  
   
@@ -212,7 +212,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  This property specifies the type of number substitution to perform. It takes one of the following                  <xref:System.Windows.Media.NumberSubstitutionMethod> enumeration values.  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod.AsCulture>: The substitution method is determined based on the number culture's                          <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A?displayProperty=fullName> property. This is the default.  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.AsCulture>: The substitution method is determined based on the number culture's                          <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A?displayProperty=nameWithType> property. This is the default.  
   
 -   <xref:System.Windows.Media.NumberSubstitutionMethod.Context>: If the number culture is an Arabic or Farsi culture, it specifies that the digits depend on the context.  
   

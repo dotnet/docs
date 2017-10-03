@@ -80,7 +80,7 @@
 ## Instantiating a NumberFormatInfo object for the current culture  
  You can instantiate a <xref:System.Globalization.NumberFormatInfo> object for the current thread culture in any of the following ways. In each case, the returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
   
--   By retrieving a <xref:System.Globalization.CultureInfo> object that represents the current thread culture from the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property, and retrieving the <xref:System.Globalization.CultureInfo> object from its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property.  
+-   By retrieving a <xref:System.Globalization.CultureInfo> object that represents the current thread culture from the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, and retrieving the <xref:System.Globalization.CultureInfo> object from its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property.  
   
 -   By retrieving the <xref:System.Globalization.NumberFormatInfo> object returned by the `static` (`Shared` in Visual Basic) <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property.  
   
@@ -95,19 +95,19 @@
   
 -   By retrieving a <xref:System.Globalization.NumberFormatInfo> object in any of the ways illustrated in the previous code example, and calling the <xref:System.Globalization.NumberFormatInfo.Clone%2A> method on the returned <xref:System.Globalization.NumberFormatInfo> object. This creates a copy of the original <xref:System.Globalization.NumberFormatInfo> object, except that its <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property is `false`.  
   
--   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method to create a <xref:System.Globalization.CultureInfo> object that represents the current culture, and then using its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property to retrieve the <xref:System.Globalization.NumberFormatInfo> object.  
+-   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method to create a <xref:System.Globalization.CultureInfo> object that represents the current culture, and then using its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property to retrieve the <xref:System.Globalization.NumberFormatInfo> object.  
   
  The following example illustrates these two ways of instantiating a <xref:System.Globalization.NumberFormatInfo> object, and displays the value of its <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property to illustrate that the object is not read-only.  
   
  [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate2.cs#2)]
  [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate2.vb#2)]  
   
- Note that the Windows operating system allows the user to override some of the <xref:System.Globalization.NumberFormatInfo> property values used in numeric formatting and parsing operations through the **Region and Language** item in Control Panel. For example, a user whose culture is English (United States) might choose to display currency values as 1.1 USD instead of the default of $1.1. The <xref:System.Globalization.NumberFormatInfo> objects retrieved in the ways discussed previously all reflect these user overrides. If this is undesirable, you can create a <xref:System.Globalization.NumberFormatInfo> object that does not reflect user overrides (and that is also read/write rather than read-only) by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=fullName> constructor and supplying a value of `false` for the `useUserOverride` argument. The following example provides an illustration for a system whose current culture is English (United States) and whose currency symbol has been changed from the default of $ to USD.  
+ Note that the Windows operating system allows the user to override some of the <xref:System.Globalization.NumberFormatInfo> property values used in numeric formatting and parsing operations through the **Region and Language** item in Control Panel. For example, a user whose culture is English (United States) might choose to display currency values as 1.1 USD instead of the default of $1.1. The <xref:System.Globalization.NumberFormatInfo> objects retrieved in the ways discussed previously all reflect these user overrides. If this is undesirable, you can create a <xref:System.Globalization.NumberFormatInfo> object that does not reflect user overrides (and that is also read/write rather than read-only) by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor and supplying a value of `false` for the `useUserOverride` argument. The following example provides an illustration for a system whose current culture is English (United States) and whose currency symbol has been changed from the default of $ to USD.  
   
  [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate3.cs#3)]
  [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate3.vb#3)]  
   
- If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=fullName> property is set to `true`, the properties <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars listed by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property), the results of the methods and the values of the properties are undefined.  
+ If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=nameWithType> property is set to `true`, the properties <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars listed by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property), the results of the methods and the values of the properties are undefined.  
   
 <a name="Instantiating_Invariant"></a>   
 ## Instantiating a NumberFormatInfo object for the invariant culture  
@@ -117,7 +117,7 @@
   
 -   By retrieving the value of the <xref:System.Globalization.NumberFormatInfo.InvariantInfo%2A> property. The returned  <xref:System.Globalization.NumberFormatInfo> object is read-only.  
   
--   By retrieving the value of the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
+-   By retrieving the value of the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
   
 -   By calling the parameterless <xref:System.Globalization.NumberFormatInfo.%23ctor%2A> class constructor. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
   
@@ -130,13 +130,13 @@
 ## Instantiating a NumberFormatInfo object for a specific culture  
  A specific culture represents a language that is spoken in a particular country/region. For example, en-US is a specific culture that represents the English language spoken in the United States, and en-CA is a specific culture that represents the English language spoken in Canada. You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of a specific culture in the following ways:  
   
--   By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%28System.String%29?displayProperty=fullName> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
+-   By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%28System.String%29?displayProperty=nameWithType> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
   
 -   By passing a <xref:System.Globalization.CultureInfo> object that represents the culture whose <xref:System.Globalization.NumberFormatInfo> object you want to retrieve to the static <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
   
--   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
+-   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
   
--   By calling one of the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=fullName> class constructors and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
+-   By calling one of the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=nameWithType> class constructors and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
   
  The following example uses these four ways to create a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of the Indonesian (Indonesia) culture. It also indicates whether each object is read-only.  
   
@@ -167,7 +167,7 @@
   
 -   **Cascading changes to property values.** A number of culture-related properties can change at run time, which, in turn, causes <xref:System.Globalization.NumberFormatInfo> data to change. For example, the current culture can be changed either programmatically or through user action. When this happens, the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property changes to an object associated with the current culture.  
   
--   **User preferences.** Users of your application might override some of the values associated with the current system culture through the region and language options in Control Panel. For example, users might choose a different currency symbol or a different decimal separator symbol. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=fullName> property is set to `true` (its default value), the properties of the <xref:System.Globalization.NumberFormatInfo> object are also retrieved from the user settings.  
+-   **User preferences.** Users of your application might override some of the values associated with the current system culture through the region and language options in Control Panel. For example, users might choose a different currency symbol or a different decimal separator symbol. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=nameWithType> property is set to `true` (its default value), the properties of the <xref:System.Globalization.NumberFormatInfo> object are also retrieved from the user settings.  
   
  Starting with the .NET Framework 2.0, all user-overridable properties of a <xref:System.Globalization.NumberFormatInfo> object are initialized when the object is created. There is still a possibility of inconsistency, because neither object creation nor the user override process is atomic, and the relevant values may change during object creation. However, these inconsistencies should be extremely rare.  
   
@@ -176,11 +176,11 @@
 |Source of CultureInfo and NumberFormatInfo object|Reflects user overrides|  
 |-------------------------------------------------------|-----------------------------|  
 |`CultureInfo.CurrentCulture.NumberFormat` property|Yes|  
-|<xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName> property|Yes|  
-|<xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method|Yes|  
-|<xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName> method|No|  
+|<xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType> property|Yes|  
+|<xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method|Yes|  
+|<xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=nameWithType> method|No|  
 |<xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor|Yes|  
-|<xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=fullName> constructor|Depends on value of `useUserOverride` parameter|  
+|<xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor|Depends on value of `useUserOverride` parameter|  
   
  Unless there is a compelling reason to do otherwise, you should respect user overrides when you use the <xref:System.Globalization.NumberFormatInfo> object in client applications to format and parse user input or to display numeric data. For server applications or unattended applications, you should not respect user overrides. However, if you are using the <xref:System.Globalization.NumberFormatInfo> object either explicitly or implicitly to persist numeric data in string form, you should either use a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of the invariant culture, or you should specify a custom numeric format string that you use regardless of culture.  
   
@@ -188,21 +188,21 @@
 ## IFormatProvider, NumberFormatInfo, and numeric formatting  
  A <xref:System.Globalization.NumberFormatInfo> object is used implicitly or explicitly in all numeric formatting operations. These include calls to the following methods:  
   
--   All numeric formatting methods, such as <xref:System.Int32.ToString%2A?displayProperty=fullName>, <xref:System.Double.ToString%2A?displayProperty=fullName>, and <xref:System.Convert.ToString%28System.Int32%29?displayProperty=fullName>.  
+-   All numeric formatting methods, such as <xref:System.Int32.ToString%2A?displayProperty=nameWithType>, <xref:System.Double.ToString%2A?displayProperty=nameWithType>, and <xref:System.Convert.ToString%28System.Int32%29?displayProperty=nameWithType>.  
   
--   The major composite formatting method, <xref:System.String.Format%2A?displayProperty=fullName>.  
+-   The major composite formatting method, <xref:System.String.Format%2A?displayProperty=nameWithType>.  
   
--   Other composite formatting methods, such as <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and <xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+-   Other composite formatting methods, such as <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>.  
   
  All numeric formatting operations make use of an <xref:System.IFormatProvider> implementation. The <xref:System.IFormatProvider> interface includes a single method, <xref:System.IFormatProvider.GetFormat%28System.Type%29>. This is a callback method that is passed a <xref:System.Type> object that represents the type needed to provide formatting information. The method is responsible for returning either an instance of that type or `null`, if it cannot provide an instance of the type. The .NET Framework provides two <xref:System.IFormatProvider> implementations for formatting numbers:  
   
--   The <xref:System.Globalization.CultureInfo> class, which represents a specific culture (or a specific language in a specific country/region). In a numeric formatting operation, the <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=fullName> method returns the <xref:System.Globalization.NumberFormatInfo> object associated with its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property.  
+-   The <xref:System.Globalization.CultureInfo> class, which represents a specific culture (or a specific language in a specific country/region). In a numeric formatting operation, the <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=nameWithType> method returns the <xref:System.Globalization.NumberFormatInfo> object associated with its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property.  
   
--   The <xref:System.Globalization.NumberFormatInfo> class, which provides information about the formatting conventions of its associated culture. The <xref:System.Globalization.NumberFormatInfo.GetFormat%2A?displayProperty=fullName> method returns an instance of itself.  
+-   The <xref:System.Globalization.NumberFormatInfo> class, which provides information about the formatting conventions of its associated culture. The <xref:System.Globalization.NumberFormatInfo.GetFormat%2A?displayProperty=nameWithType> method returns an instance of itself.  
   
- If an <xref:System.IFormatProvider> implementation is not provided to a formatting method explicitly, a <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property that represents the current thread culture is used.  
+ If an <xref:System.IFormatProvider> implementation is not provided to a formatting method explicitly, a <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property that represents the current thread culture is used.  
   
- The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.NumberFormatInfo> class in formatting operations by defining a custom <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method displays the type name of the object requested by the formatting operation. If the interface is requesting a <xref:System.Globalization.NumberFormatInfo> object, this method provides the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method requests a <xref:System.Globalization.NumberFormatInfo> object to provide formatting information, whereas the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.  
+ The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.NumberFormatInfo> class in formatting operations by defining a custom <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method displays the type name of the object requested by the formatting operation. If the interface is requesting a <xref:System.Globalization.NumberFormatInfo> object, this method provides the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method requests a <xref:System.Globalization.NumberFormatInfo> object to provide formatting information, whereas the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.  
   
  [!code-csharp[System.Globalization.NumberFormatInfo.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/formatprovider1.cs#1)]
  [!code-vb[System.Globalization.NumberFormatInfo.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/formatprovider1.vb#1)]  
@@ -211,12 +211,12 @@
   
 <a name="properties"></a>   
 ## Format strings and NumberFormatInfo properties  
- Every formatting operation uses either a standard or a custom numeric format string to produce a result string from a number. In some cases, the use of a format string to produce a result string is explicit, as in the following example. This code calls the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to convert a <xref:System.Decimal> value to a number of different string representations by using the formatting conventions of the en-US culture.  
+ Every formatting operation uses either a standard or a custom numeric format string to produce a result string from a number. In some cases, the use of a format string to produce a result string is explicit, as in the following example. This code calls the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to convert a <xref:System.Decimal> value to a number of different string representations by using the formatting conventions of the en-US culture.  
   
  [!code-csharp[System.Globalization.NumberFormatInfo.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/properties1.cs#2)]
  [!code-vb[System.Globalization.NumberFormatInfo.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/properties1.vb#2)]  
   
- In other cases, the use of a format string is implicit. For example, in the following method calls to the default or parameterless <xref:System.Decimal.ToString?displayProperty=fullName> method, the value of the <xref:System.Decimal> instance is formatted by using the general ("G") format specifier and the conventions of the current culture, which in this case is the en-US culture.  
+ In other cases, the use of a format string is implicit. For example, in the following method calls to the default or parameterless <xref:System.Decimal.ToString?displayProperty=nameWithType> method, the value of the <xref:System.Decimal> instance is formatted by using the general ("G") format specifier and the conventions of the current culture, which in this case is the en-US culture.  
   
  [!code-csharp[System.Globalization.NumberFormatInfo.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/properties2.cs#3)]
  [!code-vb[System.Globalization.NumberFormatInfo.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/properties2.vb#3)]  
@@ -277,7 +277,7 @@
   
  The parsing methods implicitly or explicitly use a <xref:System.Globalization.NumberStyles> enumeration value to determine what style elements (such as group separators, a decimal separator, or a currency symbol) can be present in a string if the parsing operation is to succeed. If a <xref:System.Globalization.NumberStyles> value is not provided in the method call, the default is a <xref:System.Globalization.NumberStyles> value that includes the <xref:System.Globalization.NumberStyles.Float> and <xref:System.Globalization.NumberStyles.AllowThousands> flags, which specifies that the parsed string can include group symbols, a decimal separator, a negative sign, and white-space characters, or it can be the string representation of a number in exponential notation.  
   
- The parsing methods also implicitly or explicitly use a <xref:System.Globalization.NumberFormatInfo> object that defines the specific symbols and patterns that can occur in the string to be parsed. If a <xref:System.Globalization.NumberFormatInfo> object is not provided, the default is the <xref:System.Globalization.NumberFormatInfo> for the current thread culture. For more information about parsing, see the individual parsing methods, such as <xref:System.Int16.Parse%28System.String%29?displayProperty=fullName>, <xref:System.Int32.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName>, <xref:System.Int64.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>, <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName>, <xref:System.Double.TryParse%28System.String%2CSystem.Double%40%29?displayProperty=fullName>, and <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29?displayProperty=fullName>.  
+ The parsing methods also implicitly or explicitly use a <xref:System.Globalization.NumberFormatInfo> object that defines the specific symbols and patterns that can occur in the string to be parsed. If a <xref:System.Globalization.NumberFormatInfo> object is not provided, the default is the <xref:System.Globalization.NumberFormatInfo> for the current thread culture. For more information about parsing, see the individual parsing methods, such as <xref:System.Int16.Parse%28System.String%29?displayProperty=nameWithType>, <xref:System.Int32.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType>, <xref:System.Int64.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>, <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=nameWithType>, <xref:System.Double.TryParse%28System.String%2CSystem.Double%40%29?displayProperty=nameWithType>, and <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29?displayProperty=nameWithType>.  
   
  The following example illustrates the culture-sensitive nature of parsing strings. It tries to parse a string that include thousands separators by using the conventions of the en-US, fr-FR, and invariant cultures. A string that includes the comma as a group separator and the period as a decimal separator fails to parse in the fr-FR culture, and a string with white space as a group separator and a comma as a decimal separator fails to parse in the en-US and invariant cultures.  
   
@@ -917,7 +917,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Format(String, IFormatProvider)` methods supported by the base data types invoke this method when the current <xref:System.Globalization.NumberFormatInfo> is passed as the <xref:System.IFormatProvider> parameter. This method implements <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName>.  
+ The `Format(String, IFormatProvider)` methods supported by the base data types invoke this method when the current <xref:System.Globalization.NumberFormatInfo> is passed as the <xref:System.IFormatProvider> parameter. This method implements <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -964,11 +964,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method of `formatProvider` using <xref:System.Globalization.NumberFormatInfo> as the Type parameter. If `formatProvider` is `null` or if <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> returns `null`, this method returns <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>.  
+ This method uses the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method of `formatProvider` using <xref:System.Globalization.NumberFormatInfo> as the Type parameter. If `formatProvider` is `null` or if <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> returns `null`, this method returns <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>.  
   
  Your application gets a <xref:System.Globalization.NumberFormatInfo> object for a specific culture using one of the following methods:  
   
--   Through the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property.  
+-   Through the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property.  
   
 -   Through the <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method where `provider` is a <xref:System.Globalization.CultureInfo>.  
   

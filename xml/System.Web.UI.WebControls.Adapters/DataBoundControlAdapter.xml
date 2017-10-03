@@ -136,9 +136,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding%2A> method is called in place of the <xref:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding%2A?displayProperty=fullName> method when a <xref:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter> control adapter is attached to a control derived from the <xref:System.Web.UI.WebControls.DataBoundControl> class.  
+ The <xref:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding%2A> method is called in place of the <xref:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding%2A?displayProperty=nameWithType> method when a <xref:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter> control adapter is attached to a control derived from the <xref:System.Web.UI.WebControls.DataBoundControl> class.  
   
- Typically, an override of <xref:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding%2A?displayProperty=fullName> iterates through data, creating distinct names and values when necessary, and saves it to an internal collection. Usually, <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A> or a similar method of the <xref:System.Web.UI.WebControls.DataBoundControl> will populate the user interface or child controls from that internal collection.  
+ Typically, an override of <xref:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding%2A?displayProperty=nameWithType> iterates through data, creating distinct names and values when necessary, and saves it to an internal collection. Usually, <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A> or a similar method of the <xref:System.Web.UI.WebControls.DataBoundControl> will populate the user interface or child controls from that internal collection.  
   
    
   

@@ -19,7 +19,7 @@
   <Members>
     <Member MemberName="Add&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Add&lt;T&gt; (ref T source, int elementOffset);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T source, int32 elementOffset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T&amp; source, int32 elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -48,7 +48,7 @@
     </Member>
     <Member MemberName="Add&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Add&lt;T&gt; (ref T source, IntPtr elementOffset);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T source, native int elementOffset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T&amp; source, native int elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -76,7 +76,7 @@
     </Member>
     <Member MemberName="AddByteOffset&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T AddByteOffset&lt;T&gt; (ref T source, IntPtr byteOffset);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AddByteOffset&lt;T&gt;(!!T source, native int byteOffset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AddByteOffset&lt;T&gt;(!!T&amp; source, native int byteOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -104,7 +104,7 @@
     </Member>
     <Member MemberName="AreSame&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static bool AreSame&lt;T&gt; (ref T left, ref T right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreSame&lt;T&gt;(!!T left, !!T right) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreSame&lt;T&gt;(!!T&amp; left, !!T&amp; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -165,7 +165,7 @@
     </Member>
     <Member MemberName="As&lt;TFrom,TTo&gt;">
       <MemberSignature Language="C#" Value="public static TTo As&lt;TFrom,TTo&gt; (ref TFrom source);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TTo As&lt;TFrom, TTo&gt;(!!TFrom source) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TTo As&lt;TFrom, TTo&gt;(!!TFrom&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.As``2(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -194,7 +194,7 @@
     </Member>
     <Member MemberName="AsPointer&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void* AsPointer&lt;T&gt; (ref T value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void* AsPointer&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void* AsPointer&lt;T&gt;(!!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -250,7 +250,7 @@
     </Member>
     <Member MemberName="ByteOffset&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static IntPtr ByteOffset&lt;T&gt; (ref T origin, ref T target);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ByteOffset&lt;T&gt;(!!T origin, !!T target) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ByteOffset&lt;T&gt;(!!T&amp; origin, !!T&amp; target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.ByteOffset``1(``0@,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -278,7 +278,7 @@
     </Member>
     <Member MemberName="Copy&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void Copy&lt;T&gt; (void* destination, ref T source);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(void* destination, !!T source) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(void* destination, !!T&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -307,7 +307,7 @@
     </Member>
     <Member MemberName="Copy&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void Copy&lt;T&gt; (ref T destination, void* source);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(!!T destination, void* source) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(!!T&amp; destination, void* source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -336,7 +336,7 @@
     </Member>
     <Member MemberName="CopyBlock">
       <MemberSignature Language="C#" Value="public static void CopyBlock (ref byte destination, ref byte source, uint byteCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlock(unsigned int8 destination, unsigned int8 source, unsigned int32 byteCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlock(unsigned int8&amp; destination, unsigned int8&amp; source, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Byte@,System.Byte@,System.UInt32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -388,7 +388,7 @@
     </Member>
     <Member MemberName="CopyBlockUnaligned">
       <MemberSignature Language="C#" Value="public static void CopyBlockUnaligned (ref byte destination, ref byte source, uint byteCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlockUnaligned(unsigned int8 destination, unsigned int8 source, unsigned int32 byteCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlockUnaligned(unsigned int8&amp; destination, unsigned int8&amp; source, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -438,7 +438,7 @@
     </Member>
     <Member MemberName="InitBlock">
       <MemberSignature Language="C#" Value="public static void InitBlock (ref byte startAddress, byte value, uint byteCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlock(unsigned int8 startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlock(unsigned int8&amp; startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Byte@,System.Byte,System.UInt32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -490,7 +490,7 @@
     </Member>
     <Member MemberName="InitBlockUnaligned">
       <MemberSignature Language="C#" Value="public static void InitBlockUnaligned (ref byte startAddress, byte value, uint byteCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlockUnaligned(unsigned int8 startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlockUnaligned(unsigned int8&amp; startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -568,7 +568,7 @@
     </Member>
     <Member MemberName="ReadUnaligned&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T ReadUnaligned&lt;T&gt; (ref byte source);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ReadUnaligned&lt;T&gt;(unsigned int8 source) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ReadUnaligned&lt;T&gt;(unsigned int8&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Byte@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -645,7 +645,7 @@
     </Member>
     <Member MemberName="Subtract&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Subtract&lt;T&gt; (ref T source, int elementOffset);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Subtract&lt;T&gt;(!!T source, int32 elementOffset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Subtract&lt;T&gt;(!!T&amp; source, int32 elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -674,7 +674,7 @@
     </Member>
     <Member MemberName="Subtract&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T Subtract&lt;T&gt; (ref T source, IntPtr elementOffset);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Subtract&lt;T&gt;(!!T source, native int elementOffset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Subtract&lt;T&gt;(!!T&amp; source, native int elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -702,7 +702,7 @@
     </Member>
     <Member MemberName="SubtractByteOffset&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T SubtractByteOffset&lt;T&gt; (ref T source, IntPtr byteOffset);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T SubtractByteOffset&lt;T&gt;(!!T source, native int byteOffset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T SubtractByteOffset&lt;T&gt;(!!T&amp; source, native int byteOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -759,7 +759,7 @@
     </Member>
     <Member MemberName="WriteUnaligned&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void WriteUnaligned&lt;T&gt; (ref byte destination, T value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUnaligned&lt;T&gt;(unsigned int8 destination, !!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUnaligned&lt;T&gt;(unsigned int8&amp; destination, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Byte@,``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

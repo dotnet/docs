@@ -472,7 +472,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.UriBuilder.Fragment%2A> property contains any text following a fragment marker (#) in the URI, including the marker itself. When setting the <xref:System.UriBuilder.Fragment%2A> property, the fragment marker is added to its value. **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
+ The <xref:System.UriBuilder.Fragment%2A> property contains any text following a fragment marker (#) in the URI, including the marker itself. When setting the <xref:System.UriBuilder.Fragment%2A> property, the fragment marker is added to its value. **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=nameWithType> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
   
  **Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Fragment%2A> is greater than 1, retrieve the property value as a string, remove the leading pound sign, append the new query string, and set the property with the combined string.  
   
@@ -525,7 +525,7 @@
   
  The hash codes for <xref:System.Uri> A and B are guaranteed to be the same when A.Equals(B) is `true`.  
   
- This method implements <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ This method implements <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -710,7 +710,7 @@
   
  The query information is escaped according to RFC 2396.  
   
- **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
+ **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=nameWithType> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
   
  **Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Query%2A> is greater than 1, retrieve the property value as a string, remove the leading question mark, append the new query string, and set the property with the combined string.  
   

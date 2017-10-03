@@ -32,7 +32,7 @@
    
   
 ## Examples  
- The following code example shows replacement code for the obsolete <xref:System.Reflection.Emit.UnmanagedMarshal> type. The example emits a single-module assembly named `EmitMarshalAs.dll`, containing a type named `Sample`. The type has a method named `Test`, with one parameter of type <xref:System.String>. The code example applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> with <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> to the parameter.  
+ The following code example shows replacement code for the obsolete <xref:System.Reflection.Emit.UnmanagedMarshal> type. The example emits a single-module assembly named `EmitMarshalAs.dll`, containing a type named `Sample`. The type has a method named `Test`, with one parameter of type <xref:System.String>. The code example applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> with <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> to the parameter.  
   
  You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the emitted assembly and observe that the parameter is marked `marshal(bstr)`.  
   
@@ -228,7 +228,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.InteropServices.UnmanagedType> passed to this method must be a simple native type. None of the following values may be used: <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>, or <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>.  
+ The <xref:System.Runtime.InteropServices.UnmanagedType> passed to this method must be a simple native type. None of the following values may be used: <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType>.  
   
  Only unmanaged marshal constructs can be made using this method.  
   

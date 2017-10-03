@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about this property, see the <xref:System.Windows.Forms.AccessibleObject.Bounds%2A?displayProperty=fullName> property.  
+ For more information about this property, see the <xref:System.Windows.Forms.AccessibleObject.Bounds%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -149,7 +149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The number of child accessible objects that belong to the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject> corresponds to the number of visible columns in the <xref:System.Windows.Forms.DataGridView>. If the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A?displayProperty=fullName> property is `true`, the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.GetChildCount%2A> method includes the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> in the count of child accessible objects.  
+ The number of child accessible objects that belong to the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject> corresponds to the number of visible columns in the <xref:System.Windows.Forms.DataGridView>. If the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A?displayProperty=nameWithType> property is `true`, the <xref:System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.GetChildCount%2A> method includes the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell> in the count of child accessible objects.  
   
  ]]></format>
         </remarks>

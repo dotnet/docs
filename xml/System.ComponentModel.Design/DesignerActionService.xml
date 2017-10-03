@@ -78,7 +78,7 @@
 ## Remarks  
  A service provider is necessary for monitoring selection and component changes. It is expected to support the <xref:System.ComponentModel.Design.IDesignerHost> and <xref:System.ComponentModel.Design.IComponentChangeService> types. The <xref:System.ComponentModel.Design.DesignerActionService> class uses an internal table to manage components and their associated <xref:System.ComponentModel.Design.DesignerActionList> smart tags.  
   
- Typically, component developers will not need to create an instance of this class; instead, they can acquire an existing instance through a call to the <xref:System.ComponentModel.Component.GetService%2A?displayProperty=fullName> method.  
+ Typically, component developers will not need to create an instance of this class; instead, they can acquire an existing instance through a call to the <xref:System.ComponentModel.Component.GetService%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -110,7 +110,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method represents the push model of adding smart tag items. The alternate pull model relies on overriding the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property in the designer for the corresponding component.  
   
- When this method is called, the lists to be added are scanned for any <xref:System.ComponentModel.Design.DesignerActionMethodItem> with the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property set to `true`. These items are added to the list of designer verbs for this component, through a call to the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A?displayProperty=fullName> method.  
+ When this method is called, the lists to be added are scanned for any <xref:System.ComponentModel.Design.DesignerActionMethodItem> with the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property set to `true`. These items are added to the list of designer verbs for this component, through a call to the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A?displayProperty=nameWithType> method.  
   
  Smart tags are managed on a component instance basis. The managed collection may contain duplicate entries.  
   
@@ -147,7 +147,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method represents the push model of adding smart tag items. The alternate pull model relies on overriding the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property in the designer for the corresponding component.  
   
- When this method is called, the lists to be added are scanned for any <xref:System.ComponentModel.Design.DesignerActionMethodItem> with the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property set to `true`. These items are added to the list of designer verbs for this component, through a call to the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A?displayProperty=fullName> method.  
+ When this method is called, the lists to be added are scanned for any <xref:System.ComponentModel.Design.DesignerActionMethodItem> with the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property set to `true`. These items are added to the list of designer verbs for this component, through a call to the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A?displayProperty=nameWithType> method.  
   
  Smart tags are managed on a component instance basis. The managed collection may contain duplicate entries.  
   

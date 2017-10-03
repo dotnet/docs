@@ -33,7 +33,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
   
 -   Simplifies creating a list that supports the <xref:System.ComponentModel.IBindingList> interface by providing list change notification for data sources that do not natively support list change notification.  
   
--   Provides an extensibility point for the <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=fullName> method.  
+-   Provides an extensibility point for the <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=nameWithType> method.  
   
 -   Provides a level of indirection between the data source and the control. This indirection is important when the data source may change at run time.  
   
@@ -143,7 +143,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 -   The <xref:System.ComponentModel.ICancelAddNew.CancelNew%2A> method will roll back the pending addition if the method has not already been committed.  
   
 ### IEnumerable Support  
- The <xref:System.Windows.Forms.BindingSource> component enables binding controls to <xref:System.Collections.IEnumerable> data sources. With this component, you can bind to a data source such as a <xref:System.Data.SqlClient.SqlDataReader?displayProperty=fullName>.  
+ The <xref:System.Windows.Forms.BindingSource> component enables binding controls to <xref:System.Collections.IEnumerable> data sources. With this component, you can bind to a data source such as a <xref:System.Data.SqlClient.SqlDataReader?displayProperty=nameWithType>.  
   
  When an <xref:System.Collections.IEnumerable> data source is assigned to the <xref:System.Windows.Forms.BindingSource> component, the <xref:System.Windows.Forms.BindingSource> creates an <xref:System.ComponentModel.IBindingList> and adds the contents of the <xref:System.Collections.IEnumerable> data source to the list.  
   
@@ -153,7 +153,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
  To support this scenario, the <xref:System.Windows.Forms.BindingSource> component supports binding to a <xref:System.Type>. When you assign a <xref:System.Type> to the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property, the <xref:System.Windows.Forms.BindingSource> component creates an empty <xref:System.ComponentModel.BindingList%601> of <xref:System.Type> items. Any controls you subsequently bind to the <xref:System.Windows.Forms.BindingSource> component will be alerted to the presence of the properties or schema of your type at design time, or at run time. For more information, see [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md).  
   
 ### Static ListBindingHelper Methods  
- The <xref:System.Windows.Forms.BindingContext?displayProperty=fullName>, <xref:System.Windows.Forms.CurrencyManager?displayProperty=fullName>, and <xref:System.Windows.Forms.BindingSource> types all share common logic to generate a list from a `DataSource`/`DataMember` pair. Additionally, this common logic is publicly exposed for use by control authors and other third parties in the following `static` methods:  
+ The <xref:System.Windows.Forms.BindingContext?displayProperty=nameWithType>, <xref:System.Windows.Forms.CurrencyManager?displayProperty=nameWithType>, and <xref:System.Windows.Forms.BindingSource> types all share common logic to generate a list from a `DataSource`/`DataMember` pair. Additionally, this common logic is publicly exposed for use by control authors and other third parties in the following `static` methods:  
   
 -   <xref:System.Windows.Forms.ListBindingHelper.GetListItemProperties%2A>  
   

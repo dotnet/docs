@@ -67,7 +67,7 @@
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
-|<xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=nameWithType> object contained in the `e` parameter.|  
 |<xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled%2A>|Initialized to `false`.|  
   
 > [!NOTE]
@@ -210,7 +210,7 @@
 > [!NOTE]
 >  This property contains only the key fields. To access the non-key fields, use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property.  
   
- The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the key fields of the deleted record.  
+ The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the key fields of the deleted record.  
   
    
   
@@ -248,7 +248,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the item template. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
   
- The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the non-key fields of the deleted record.  
+ The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the non-key fields of the deleted record.  
   
 > [!NOTE]
 >  This property does not contain the key fields (as specified by the <xref:System.Web.UI.WebControls.GridView.DataKeyNames%2A> property) for the deleted record. To access the key fields, use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys%2A> property.  

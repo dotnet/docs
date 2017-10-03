@@ -25,7 +25,7 @@
   
  The default sort mode for this column type is <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable>.  
   
- Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=fullName> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=fullName> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=fullName> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
+ Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellContentClick?displayProperty=nameWithType> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=nameWithType> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=nameWithType> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
   
    
   
@@ -91,9 +91,9 @@
 |--------------|-----------|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A>|A new <xref:System.Windows.Forms.DataGridViewCheckBoxCell> with its <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property initialized to the `threeState` parameter value.|  
 |<xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A>|The value of the `threeState` parameter.|  
-|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=fullName>|<xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=fullName>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=fullName>|  
-|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState?displayProperty=fullName> if `threeState` is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>|<xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
+|The <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property.|<xref:System.Windows.Forms.CheckState?displayProperty=nameWithType> if `threeState` is `true`; otherwise, `false`.|  
   
  ]]></format>
         </remarks>
@@ -129,7 +129,7 @@
  The constructors for the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> class initialize this property to a newly created <xref:System.Windows.Forms.DataGridViewCheckBoxCell>.  
   
 > [!CAUTION]
->  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
+>  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=nameWithType> method).  
   
    
   
@@ -173,8 +173,8 @@
   
 |`DataGridViewCellStyle` property|Default value|  
 |--------------------------------------|-------------------|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=fullName>|  
-|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState?displayProperty=fullName> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=nameWithType>|  
+|<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|<xref:System.Windows.Forms.CheckState?displayProperty=nameWithType> if the initial <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property value is `true`; otherwise, `false`.|  
   
  These values override the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
@@ -261,7 +261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To display the check box cells using visual styles, set this property to <xref:System.Windows.Forms.FlatStyle.System> and call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method before <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName>.  
+ To display the check box cells using visual styles, set this property to <xref:System.Windows.Forms.FlatStyle.System> and call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method before <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType>.  
   
  Getting or setting this property gets or sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle%2A> property of the cell object returned by the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A> property. Setting this property also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   

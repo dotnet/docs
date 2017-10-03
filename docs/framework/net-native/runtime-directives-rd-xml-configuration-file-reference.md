@@ -161,11 +161,11 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
 -   `Serialize`. Controls runtime access to constructors, fields, and properties, to enable type instances to be serialized and serialized by third-party libraries such as the Newtonsoft JSON serializer.  
   
--   `DataContractSerializer`. Controls policy for serialization that uses the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> class.  
+-   `DataContractSerializer`. Controls policy for serialization that uses the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType> class.  
   
--   `DataContractJsonSerializer`. Controls policy for JSON serialization that uses the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> class.  
+-   `DataContractJsonSerializer`. Controls policy for JSON serialization that uses the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType> class.  
   
--   `XmlSerializer`. Controls policy for XML serialization that uses the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> class.  
+-   `XmlSerializer`. Controls policy for XML serialization that uses the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType> class.  
   
 -   `MarshalObject`. Controls policy for marshaling reference types to WinRT and COM.  
   
@@ -390,7 +390,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
 -   If the method is generic, the types over which the method is instantiated are marked with the `Browse` policy.  
   
--   The method can be invoked by `MethodInfo.Invoke`, and delegate creation becomes possible by <xref:System.Reflection.MethodInfo.CreateDelegate%2A?displayProperty=fullName>.  
+-   The method can be invoked by `MethodInfo.Invoke`, and delegate creation becomes possible by <xref:System.Reflection.MethodInfo.CreateDelegate%2A?displayProperty=nameWithType>.  
   
  Applying the `Dynamic` policy to a field involves the following policy changes:  
   
@@ -411,7 +411,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
  Applying the `Activation` policy to a method involves the following policy change:  
   
--   The constructor can be invoked by the <xref:System.Reflection.ConstructorInfo.Invoke%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> methods. For methods, the `Activation` policy affects constructors only.  
+-   The constructor can be invoked by the <xref:System.Reflection.ConstructorInfo.Invoke%2A?displayProperty=nameWithType> and <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> methods. For methods, the `Activation` policy affects constructors only.  
   
  Applying the `Activation` policy to a field has no effect.  
   

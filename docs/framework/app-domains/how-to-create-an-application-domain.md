@@ -20,7 +20,7 @@ manager: "wpickett"
 # How to: Create an Application Domain
 A common language runtime host creates application domains automatically when they are needed. However, you can create your own application domains and load into them those assemblies that you want to manage personally. You can also create application domains from which you execute code.  
   
- You create a new application domain using one of the overloaded **CreateDomain** methods in the <xref:System.AppDomain?displayProperty=fullName> class. You can give the application domain a name and reference it by that name.  
+ You create a new application domain using one of the overloaded **CreateDomain** methods in the <xref:System.AppDomain?displayProperty=nameWithType> class. You can give the application domain a name and reference it by that name.  
   
  The following example creates a new application domain, assigns it the name `MyDomain`, and then prints the name of the host domain and the newly created child application domain to the console.  
   

@@ -78,8 +78,8 @@ obj = obj + 3;
  For more information and examples, see [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md).  
   
 ## See Also  
- <xref:System.Dynamic.ExpandoObject?displayProperty=fullName>   
- <xref:System.Dynamic.DynamicObject?displayProperty=fullName>   
+ <xref:System.Dynamic.ExpandoObject?displayProperty=nameWithType>   
+ <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [object](../../../csharp/language-reference/keywords/object.md)   
  [is](../../../csharp/language-reference/keywords/is.md)   

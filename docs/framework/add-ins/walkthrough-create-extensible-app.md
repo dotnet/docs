@@ -274,7 +274,7 @@ This walkthrough describes how to create a pipeline for an add-in that performs 
   
 8.  In **Solution Explorer**, select the solution and from the **Project** menu choose **Properties**. In the **Solution Property Pages** dialog box, set the **Single Startup Project** to be this host application project.  
   
-9. In the class or module file, use the <xref:System.AddIn.Hosting.AddInStore.Update%2A?displayProperty=fullName> method to update the cache. Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A?displayProperty=fullName> method to get a collection of tokens, and use the <xref:System.AddIn.Hosting.AddInToken.Activate%2A?displayProperty=fullName> method to activate an add-in.  
+9. In the class or module file, use the <xref:System.AddIn.Hosting.AddInStore.Update%2A?displayProperty=nameWithType> method to update the cache. Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A?displayProperty=nameWithType> method to get a collection of tokens, and use the <xref:System.AddIn.Hosting.AddInToken.Activate%2A?displayProperty=nameWithType> method to activate an add-in.  
   
      The following code shows the completed host application.  
   

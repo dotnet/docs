@@ -189,6 +189,7 @@
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [Get Started](csharp/getting-started/)
+## [Quick Starts](csharp/quick-starts/)
 ## [Tutorials](csharp/tutorials/)
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
@@ -197,6 +198,7 @@
 ### [What's new in C# 7.1](csharp/whats-new/csharp-7-1.md)
 ### [What's new in C# 7](csharp/whats-new/csharp-7.md)
 ### [What's new in C# 6](csharp/whats-new/csharp-6.md)
+### [C# Version History](csharp/whats-new/csharp-version-history.md)
 ### [Relationships between language and framework](csharp/whats-new/relationships-between-language-and-library.md)
 <!-- End What's New -->
 <!--## [🔧 C# Interactive](csharp/interactive/)-->

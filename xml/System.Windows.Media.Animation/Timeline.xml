@@ -352,27 +352,27 @@
  Items in square brackets (`[` and `]`) are optional.  
   
  *days*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value greater than or equal to 0 that describes the number of days spanned by this begin time.  
   
  *hours*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 23 that represents the number of hours spanned by this begin time.  
   
  *minutes*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 59 that represents the number of minutes spanned by this begin time.  
   
  *seconds*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 59 that represents the number of seconds spanned by this begin time.  
   
  *fractionalSeconds*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value consisting of 1 to 7 digits that represents fractional seconds.  
   
@@ -430,7 +430,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
   
@@ -460,7 +460,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  Resource references, data bindings, and animations are not copied, but their current values are.  
   
@@ -980,7 +980,7 @@
   
  This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1010,7 +1010,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
   
- For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1171,7 +1171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised by applying a <xref:System.Windows.Media.Animation.RemoveStoryboard> action to a storyboard, using a Storyboard's <xref:System.Windows.Media.Animation.Storyboard.Remove%2A> method, or (when working directly with clocks) calling the <xref:System.Windows.Media.Animation.ClockController.Remove%2A?displayProperty=fullName> method.  
+ This event is raised by applying a <xref:System.Windows.Media.Animation.RemoveStoryboard> action to a storyboard, using a Storyboard's <xref:System.Windows.Media.Animation.Storyboard.Remove%2A> method, or (when working directly with clocks) calling the <xref:System.Windows.Media.Animation.ClockController.Remove%2A?displayProperty=nameWithType> method.  
   
  Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](~/docs/framework/wpf/graphics-multimedia/timing-events-overview.md).  
   
@@ -1200,7 +1200,7 @@
 ## Remarks  
  If an iteration <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> is specified and the timeline's <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property is set to `true`, a single repetition consists of one forward iteration and one backward iteration. A timeline with an <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property set to true an iteration <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> of 2 would play forwards, then backwards, then forwards again, and then backwards again.  
   
- Instead of specifying the number of times a timeline plays, you can also specify the total length of time you want the timeline to play. For a timeline to repeat, this <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> value should be greater than the timeline's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. For example, a timeline with a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of 2 seconds and a <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> of 4 seconds will play twice. If the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> is less than the timeline's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>, the timeline's active period is cut short.  
+ Instead of specifying the number of times a timeline plays, you can also specify the total length of time you want the timeline to play. For a timeline to repeat, this <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=nameWithType> value should be greater than the timeline's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. For example, a timeline with a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of 2 seconds and a <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=nameWithType> of 4 seconds will play twice. If the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=nameWithType> is less than the timeline's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>, the timeline's active period is cut short.  
   
  For more information about repeating timelines, see [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md).  
   

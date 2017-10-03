@@ -41,18 +41,18 @@
 ## Remarks  
  Conventions for comparing and sorting data vary from culture to culture. For example, sort order may be based on phonetics or on the visual representation of characters. In East Asian languages, characters are sorted by the stroke and radical of ideographs. Sorting also depends on the order languages and cultures use for the alphabet. For example, the Danish language has an "Æ" character that it sorts after "Z" in the alphabet. In addition, comparisons may be case-sensitive or case-insensitive, and casing rules may also differ by culture. The <xref:System.Globalization.CompareInfo> class is responsible for maintaining this culture-sensitive string comparison data and for performing culture-sensitive string operations.  
   
- Typically, you do not have to instantiate a <xref:System.Globalization.CompareInfo> object directly, because one is used implicitly by all non-ordinal string comparison operations, including calls to the <xref:System.String.Compare%2A?displayProperty=fullName> method. However, if you do want to retrieve a <xref:System.Globalization.CompareInfo> object, you can do it in one of these ways:  
+ Typically, you do not have to instantiate a <xref:System.Globalization.CompareInfo> object directly, because one is used implicitly by all non-ordinal string comparison operations, including calls to the <xref:System.String.Compare%2A?displayProperty=nameWithType> method. However, if you do want to retrieve a <xref:System.Globalization.CompareInfo> object, you can do it in one of these ways:  
   
--   By retrieving the value of the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=fullName> property for a particular culture.  
+-   By retrieving the value of the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property for a particular culture.  
   
 -   By calling the static <xref:System.Globalization.CompareInfo.GetCompareInfo%2A> method with a culture name. This allows for late-bound access to a <xref:System.Globalization.CompareInfo> object.  
   
 ## Ignored search values  
  Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive comparison. Comparison methods such as <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> do not consider such characters when they perform a culture-sensitive comparison. Ignorable characters include:  
   
--   <xref:System.String.Empty?displayProperty=fullName>. Culture-sensitive comparison methods will always find an empty string at the beginning (index zero) of the string being searched.  
+-   <xref:System.String.Empty?displayProperty=nameWithType>. Culture-sensitive comparison methods will always find an empty string at the beginning (index zero) of the string being searched.  
   
--   A character or string consisting of characters with code points that are not considered in the operation because of comparison options, In particular, the  <xref:System.Globalization.CompareOptions?displayProperty=fullName> and <xref:System.Globalization.CompareOptions?displayProperty=fullName> options produce searches in which symbols and nonspacing combining characters are ignored.  
+-   A character or string consisting of characters with code points that are not considered in the operation because of comparison options, In particular, the  <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> and <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> options produce searches in which symbols and nonspacing combining characters are ignored.  
   
 -   A string with code points that have no linguistic significance. For example, a soft hyphen (U+00AD) is always ignored in a culture-sensitive string comparison.  
   
@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the comparison is performed by using <xref:System.Globalization.CompareOptions?displayProperty=fullName>. If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ By default, the comparison is performed by using <xref:System.Globalization.CompareOptions?displayProperty=nameWithType>. If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
   
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions.Ordinal> or <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> for security comparisons.  
@@ -719,7 +719,7 @@
 ## Remarks  
  Two <xref:System.Globalization.CompareInfo> objects are equal if their <xref:System.Globalization.CompareInfo.LCID%2A> and <xref:System.Globalization.CompareInfo.Name%2A> properties are equal.  
   
- This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
   
@@ -870,7 +870,7 @@
 > [!NOTE]
 >  The behavior of this method is unpredictable. It is recommended for your application to use a version of this method that does not take an assembly input.  
   
- The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=fullName>.  
+ The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -918,7 +918,7 @@
 > [!NOTE]
 >  The behavior of this method is unpredictable. We recommend that you use a version of this method that does not take an assembly input.  
   
- The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=fullName>.  
+ The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -970,7 +970,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
  This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.CompareInfo.Equals%2A> method.  
   
@@ -1152,10 +1152,10 @@
 ## Remarks  
  This method searches the source string from the beginning of the string to the end of the string.  
   
- This overload performs a culture-sensitive search. If `value` represents a precomposed Unicode character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if their Unicode code points are the same, you should call an overload that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value. Unlike <xref:System.Globalization.CompareInfo.IndexOf%2A?displayProperty=fullName>, which performs a culture-sensitive comparison, overloads of the <xref:System.String.IndexOf%2A?displayProperty=fullName> method that search for a character perform an ordinal comparison and overloads that search for a string perform a culture-sensitive comparison.  
+ This overload performs a culture-sensitive search. If `value` represents a precomposed Unicode character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if their Unicode code points are the same, you should call an overload that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value. Unlike <xref:System.Globalization.CompareInfo.IndexOf%2A?displayProperty=nameWithType>, which performs a culture-sensitive comparison, overloads of the <xref:System.String.IndexOf%2A?displayProperty=nameWithType> method that search for a character perform an ordinal comparison and overloads that search for a string perform a culture-sensitive comparison.  
   
 > [!NOTE]
->  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1222,7 +1222,7 @@
  This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should use one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1292,12 +1292,12 @@
 ## Remarks  
  The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
- If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1360,10 +1360,10 @@
 ## Remarks  
  The source string is searched forward starting at `startIndex` and ending at the end of the string.  
   
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1431,12 +1431,12 @@
 ## Remarks  
  The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
  If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1506,7 +1506,7 @@
  This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1582,12 +1582,12 @@
 ## Remarks  
  The source string is searched forward starting at `startIndex` and ending at the end of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
- If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1659,10 +1659,10 @@
 ## Remarks  
  The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
   
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1740,12 +1740,12 @@
 ## Remarks  
  The source string is searched forward starting at `startIndex` and ending at the end of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
  If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1826,7 +1826,7 @@
  This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -1917,12 +1917,12 @@
 ## Remarks  
  The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
- If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2009,12 +2009,12 @@
 ## Remarks  
  The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
  If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2098,7 +2098,7 @@
  Every string starts and ends with an empty substring (""); therefore, if `prefix` is an empty string, this method returns `true`.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2168,10 +2168,10 @@
 ## Remarks  
  Every string starts and ends with an empty substring (""); therefore, if `prefix` is an empty string, this method returns `true`.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2330,7 +2330,7 @@
  Every string starts and ends with an empty substring (""); therefore, if `suffix` is an empty string, this method returns `true`.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2400,10 +2400,10 @@
 ## Remarks  
  Every string starts and ends with an empty substring (""); therefore, if `suffix` is an empty string, this method returns `true`.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2467,10 +2467,10 @@
 ## Remarks  
  The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
   
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2534,10 +2534,10 @@
 ## Remarks  
  The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
   
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value.  
+ This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2607,12 +2607,12 @@
 ## Remarks  
  The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
- If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2675,10 +2675,10 @@
 ## Remarks  
  The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
   
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2746,12 +2746,12 @@
 ## Remarks  
  The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
  If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2818,10 +2818,10 @@
 ## Remarks  
  The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
   
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value.  
+ This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2895,12 +2895,12 @@
 ## Remarks  
  The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
- If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -2972,10 +2972,10 @@
 ## Remarks  
  The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
   
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -3053,12 +3053,12 @@
 ## Remarks  
  The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
  If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -3139,7 +3139,7 @@
  This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions.Ordinal> value.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons .  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons .  
   
    
   
@@ -3230,12 +3230,12 @@
 ## Remarks  
  The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
- If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -3322,12 +3322,12 @@
 ## Remarks  
  The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
   
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ The <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> value is not valid for this method.  
   
  If `options` does not include the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions.Ordinal> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
   
 > [!NOTE]
->  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+>  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions?displayProperty=nameWithType> for security comparisons.  
   
    
   
@@ -3443,7 +3443,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CompareInfo.Name%2A> and <xref:System.Globalization.CultureInfo.Name?displayProperty=fullName> properties can have different values. For example, an <xref:System.Globalization.CompareInfo.LCID%2A> property value of hexadecimal 0x10407 identifies an alternate sort culture that sorts names as they might appear in a German telephone book. The <xref:System.Globalization.CompareInfo.Name%2A> property has a value of "de-de_phoneb", whereas the <xref:System.Globalization.CultureInfo.Name?displayProperty=fullName> property of the associated German (Germany) culture has a value of "de-DE".  
+ The <xref:System.Globalization.CompareInfo.Name%2A> and <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> properties can have different values. For example, an <xref:System.Globalization.CompareInfo.LCID%2A> property value of hexadecimal 0x10407 identifies an alternate sort culture that sorts names as they might appear in a German telephone book. The <xref:System.Globalization.CompareInfo.Name%2A> property has a value of "de-de_phoneb", whereas the <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> property of the associated German (Germany) culture has a value of "de-DE".  
   
    
   
@@ -3529,7 +3529,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method. It returns a string that consists of the class name and the value of the instance <xref:System.Globalization.CompareInfo.Name%2A> property, separated by a hyphen.  
+ This method overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method. It returns a string that consists of the class name and the value of the instance <xref:System.Globalization.CompareInfo.Name%2A> property, separated by a hyphen.  
   
  ]]></format>
         </remarks>

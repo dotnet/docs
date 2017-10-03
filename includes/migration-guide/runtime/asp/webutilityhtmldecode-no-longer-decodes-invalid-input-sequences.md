@@ -7,6 +7,6 @@
 |Scope|Minor|
 |Version|4.5|
 |Type|Runtime|
-|Affected APIs|<ul><li><xref:System.Net.WebUtility.HtmlDecode(System.String)?displayProperty=fullName></li><li><xref:System.Net.WebUtility.HtmlDecode(System.String%2CSystem.IO.TextWriter)?displayProperty=fullName></li><li><xref:System.Net.WebUtility.UrlDecode(System.String)?displayProperty=fullName></li></ul>|
+|Affected APIs|<ul><li><xref:System.Net.WebUtility.HtmlDecode(System.String)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.HtmlDecode(System.String%2CSystem.IO.TextWriter)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.UrlDecode(System.String)?displayProperty=nameWithType></li></ul>|
 |Analyzers|<ul><li>CD0061</li></ul>|
 

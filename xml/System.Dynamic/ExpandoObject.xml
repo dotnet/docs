@@ -42,12 +42,13 @@
   <Docs>
     <summary>Represents an object whose members can be dynamically added and removed at run time.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown">
+        <![CDATA[  
   
 ## Remarks  
  The `ExpandoObject` class enables you to add and delete members of its instances at run time and also to set and get values of these members. This class supports dynamic binding, which enables you to use standard syntax like `sampleObject.sampleMember` instead of more complex syntax like `sampleObject.GetAttribute("sampleMember")`.  
   
- The `ExpandoObject` class implements the standard Dynamic Language Runtime (DLR) interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `ExpandoObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `ExpandoObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](~/docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md) documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site, and [Introducing the ExpandoObject](http://go.microsoft.com/fwlink/?LinkID=169157) on the C# Frequently Asked Questions Web site.  
+ The `ExpandoObject` class implements the standard Dynamic Language Runtime (DLR) interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `ExpandoObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `ExpandoObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](~/docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md), and [Introducing the ExpandoObject](http://go.microsoft.com/fwlink/?LinkID=169157) on the C# Frequently Asked Questions Web site.  
   
  The `ExpandoObject` class is an implementation of the dynamic object concept that enables getting, setting, and invoking members. If you want to define types that have their own dynamic dispatch semantics, use the <xref:System.Dynamic.DynamicObject> class. If you want to define how dynamic objects participate in the interoperability protocol and manage DLR fast dynamic dispatch caching, create your own implementation of the <xref:System.Dynamic.IDynamicMetaObjectProvider> interface.  
   
@@ -162,7 +163,8 @@ End Module
  [!code-csharp[System.Dynamic.ExpandoObject#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.dynamic.expandoobject/cs/program.cs#7)]
  [!code-vb[System.Dynamic.ExpandoObject#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.dynamic.expandoobject/vb/module1.vb#7)]  
   
- ]]></format>
+ ]]>
+      </format>
     </remarks>
   </Docs>
   <Members>
@@ -190,7 +192,10 @@ End Module
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new <see langword="ExpandoObject" /> that does not have members.</summary>
+        <summary>Initializes a new                     
+          <see langword="ExpandoObject" /> that does not have members.
+                
+        </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -727,7 +732,10 @@ End Module
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that iterates through the collection.</summary>
-        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <returns>An                     
+          <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.
+                
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -762,7 +770,10 @@ End Module
       <Docs>
         <param name="parameter">The expression that represents the MetaObject to dispatch to the Dynamic virtual methods.</param>
         <summary>The provided MetaObject will dispatch to the dynamic virtual methods. The object can be encapsulated inside another MetaObject to provide custom behavior for individual actions.</summary>
-        <returns>The object of the <see cref="T:System.Dynamic.DynamicMetaObject" /> type.</returns>
+        <returns>The object of the                     
+          <see cref="T:System.Dynamic.DynamicMetaObject" /> type.
+                
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

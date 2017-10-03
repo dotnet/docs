@@ -24,7 +24,8 @@
   <Docs>
     <summary>Specifies the name of an additional type to associate with a data field.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown">
+        <![CDATA[  
   
 ## Remarks  
  The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute enables you to mark fields by using a type that is more specific than the database intrinsic type. The type name is selected from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration type. For example, a string data field that contains e-mail addresses can be specified as the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> type. This information is then accessed by the field templates to modify how the data field is processed.  
@@ -61,21 +62,14 @@
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)] -->
- <!-- TODO: review snippet reference [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)] -->   
-  
- [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
- [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]  
-  
- To compile and run the example code, you need the following:  
-  
--   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
-  
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
-  
--   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  
- ]]></format>
+ 
+        <!-- TODO: review snippet reference [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)] -->
+        <!-- TODO: review snippet reference [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)] -->      [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
+ [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]     To compile and run the example code, you need the following:    
+-   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.    
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).    
+-   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.     ]]>
+      </format>
     </remarks>
   </Docs>
   <Members>
@@ -99,9 +93,12 @@
       </Parameters>
       <Docs>
         <param name="dataType">The name of the type to associate with the data field.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class by using the specified type name.</summary>
+        <summary>Initializes a new instance of the 
+          <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class by using the specified type name.
+        </summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+            <![CDATA[  
   
 ## Remarks  
  The name is one of the values that are defined by the <xref:System.ComponentModel.DataAnnotations.DataType?displayProperty=fullName> enumeration.  
@@ -114,7 +111,8 @@
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#11)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#11)]  
   
- ]]></format>
+ ]]>
+          </format>
         </remarks>
       </Docs>
     </Member>
@@ -138,17 +136,23 @@
       </Parameters>
       <Docs>
         <param name="customDataType">The name of the custom field template to associate with the data field.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class by using the specified field template name.</summary>
+        <summary>Initializes a new instance of the 
+          <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class by using the specified field template name.
+        </summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+            <![CDATA[  
   
 ## Remarks  
  This method provides an alternative to using the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute.  
   
- ]]></format>
+ ]]>
+          </format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="customDataType" /> is <see langword="null" /> or an empty string ("").</exception>
+          <paramref name="customDataType" /> is 
+          <see langword="null" /> or an empty string ("").
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CustomDataType">
@@ -195,7 +199,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the type that is associated with the data field.</summary>
-        <value>One of the <see cref="T:System.ComponentModel.DataAnnotations.DataType" /> values.</value>
+        <value>One of the 
+          <see cref="T:System.ComponentModel.DataAnnotations.DataType" /> values.
+        </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,12 +252,14 @@
         <summary>Returns the name of the type that is associated with the data field.</summary>
         <returns>The name of the type associated with the data field.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+            <![CDATA[  
   
 ## Remarks  
  The name of the type that is associated with the data field.  
   
- ]]></format>
+ ]]>
+          </format>
         </remarks>
       </Docs>
     </Member>
@@ -280,14 +288,17 @@
         <param name="value">The data field value to validate.</param>
         <summary>Checks that the value of the data field is valid.</summary>
         <returns>
-          <see langword="true" /> always.</returns>
+          <see langword="true" /> always.
+        </returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+            <![CDATA[  
   
 ## Remarks  
  This method implements validation logic that is specific to the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute.  
   
- ]]></format>
+ ]]>
+          </format>
         </remarks>
       </Docs>
     </Member>

@@ -24,7 +24,8 @@
   <Docs>
     <summary>Specifies the column that is displayed in the referred table as a foreign-key column.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown">
+        <![CDATA[  
   
 ## Remarks  
  When a column in a table contains a foreign key, Dynamic Data infers the display value for that column from the referenced table. By default, the first column of the referenced table whose type is string (or text) is used. The <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute enables you to change this default behavior and to specify a different parent table column to use as the column for the foreign key field.  
@@ -61,11 +62,12 @@
   
 -   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.  
   
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](http://go.microsoft.com/fwlink/?LinkId=117483) on the CodePlex site. Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
   
 -   A dynamic data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
   
- ]]></format>
+ ]]>
+      </format>
     </remarks>
   </Docs>
   <Members>
@@ -89,9 +91,12 @@
       </Parameters>
       <Docs>
         <param name="displayColumn">The name of the column to use as the display column.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified column.</summary>
+        <summary>Initializes a new instance of the 
+          <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified column.
+        </summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+            <![CDATA[  
   
 ## Examples  
  The following example shows how to define the parent column to display in a page for the child table as the foreign-key column.  
@@ -99,7 +104,8 @@
  [!code-csharp[System.ComponentModel.DataAnnotations.DisplayColumnAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DisplayColumnAttribute/CS/Address.cs#3)]
  [!code-vb[System.ComponentModel.DataAnnotations.DisplayColumnAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DisplayColumnAttribute/VB/Address.vb#3)]  
   
- ]]></format>
+ ]]>
+          </format>
         </remarks>
       </Docs>
     </Member>
@@ -125,14 +131,18 @@
       <Docs>
         <param name="displayColumn">The name of the column to use as the display column.</param>
         <param name="sortColumn">The name of the column to use for sorting.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display and sort columns.</summary>
+        <summary>Initializes a new instance of the 
+          <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display and sort columns.
+        </summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+            <![CDATA[  
   
 ## Remarks  
  By default, the column specified in `sortColumn` will be sorted in ascending order.  
   
- ]]></format>
+ ]]>
+          </format>
         </remarks>
       </Docs>
     </Member>
@@ -160,10 +170,16 @@
         <param name="displayColumn">The name of the column to use as the display column.</param>
         <param name="sortColumn">The name of the column to use for sorting.</param>
         <param name="sortDescending">
-          <see langword="true" /> to sort in descending order; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display column, and the specified sort column and sort order.</summary>
+          <see langword="true" /> to sort in descending order; otherwise, 
+          <see langword="false" />. The default is 
+          <see langword="false" />.
+        </param>
+        <summary>Initializes a new instance of the 
+          <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display column, and the specified sort column and sort order.
+        </summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown">
+            <![CDATA[  
   
 ## Examples  
  The following example shows how to define the parent column to display in a page for the child table as the foreign-key column. It sets the parent table column for sorting and also sets the sort order.  
@@ -171,7 +187,8 @@
  [!code-csharp[System.ComponentModel.DataAnnotations.DisplayColumnAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DisplayColumnAttribute/CS/Address.cs#2)]
  [!code-vb[System.ComponentModel.DataAnnotations.DisplayColumnAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DisplayColumnAttribute/VB/Address.vb#2)]  
   
- ]]></format>
+ ]]>
+          </format>
         </remarks>
       </Docs>
     </Member>
@@ -244,7 +261,9 @@
       <Docs>
         <summary>Gets a value that indicates whether to sort in descending or ascending order.</summary>
         <value>
-          <see langword="true" /> if the column will be sorted in descending order; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the column will be sorted in descending order; otherwise, 
+          <see langword="false" />.
+        </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

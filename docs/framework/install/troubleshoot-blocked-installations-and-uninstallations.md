@@ -9,6 +9,7 @@ ms.custom: "updateeachrelease"
 helpviewer_keywords: 
   - ".NET Framework, troubleshooting blocked installations"
   - "blocked .NET Framework installations, troubleshooting"
+ms.assetid: c3fdfbc1-ed99-4202-a2b0-8c4f1646385d 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

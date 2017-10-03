@@ -10,6 +10,7 @@ helpviewer_keywords:
   - ".NET Framework, version compatibility"
   - ".NET Framework 4.5, compatibility with earlier versions"
   - ".NET Framework versions, compatibility"
+ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

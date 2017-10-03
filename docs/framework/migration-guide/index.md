@@ -9,6 +9,7 @@ ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
+ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

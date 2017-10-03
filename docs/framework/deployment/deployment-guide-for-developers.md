@@ -14,6 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
+ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

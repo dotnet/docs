@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "obsolete [.NET Framework]"
   - "what's obsolete [.NET Framework]"
   - "deprecated [.NET Framework]"
+ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

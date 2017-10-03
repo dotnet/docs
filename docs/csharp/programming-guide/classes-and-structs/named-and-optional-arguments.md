@@ -50,28 +50,32 @@ translation.priority.ht:
  Named and optional parameters, when used together, enable you to supply arguments for only a few parameters from a list of optional parameters. This capability greatly facilitates calls to COM interfaces such as the Microsoft Office Automation APIs.  
   
 ## Named Arguments  
- Named arguments free you from the need to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that calculates body mass index (BMI) can be called in the standard way by sending arguments for weight and height by position, in the order defined by the function.  
+ Named arguments free you from the need to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & shipping status) can be called in the standard way by sending arguments by position, in the order defined by the function.
   
- `CalculateBMI(123, 64);`  
+ `PrintOrderDetails("Foo", 31, true);`
   
- If you do not remember the order of the parameters but you do know their names, you can send the arguments in either order, weight first or height first.  
+ If you do not remember the order of the parameters but know their names, you can send the arguments in any order.  
   
- `CalculateBMI(weight: 123, height: 64);`  
+ `PrintOrderDetails(orderNum: 31, hasShipped: true, sellerName: "Foo");`
   
- `CalculateBMI(height: 64, weight: 123);`  
+ `PrintOrderDetails(hasShipped: true, sellerName: "Foo", orderNum: 31);`
   
  Named arguments also improve the readability of your code by identifying what each argument represents.  
   
- A named argument can follow positional arguments, as shown here.  
+ Named arguments are valid as long as they're used in the correct position, as shown here.
   
- `CalculateBMI(123, height: 64);`  
+ `PrintOrderDetails("Foo", 31, hasShipped: true);`
   
- However, a positional argument cannot follow a named argument. The following statement causes a compiler error.  
+ `PrintOrderDetails(sellerName: "Foo", orderNum: 31, true);`
   
- `//CalculateBMI(weight: 123, 64);`  
+ However, out-of-order named arguments are invalid. The following statements cause a compiler error.
+
+ `// PrintOrderDetails(31, sellerName: "Foo", true);`
+
+ `// PrintOrderDetails(31, true, sellerName: "Foo");`
   
 ## Example  
- The following code implements the examples from this section.  
+ The following code implements the examples from this section along with some additional ones.  
   
  [!code-cs[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_1.cs)]  
   

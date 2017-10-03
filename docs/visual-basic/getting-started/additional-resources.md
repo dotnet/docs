@@ -62,7 +62,7 @@ The following web sites provide guidance and can help you find answers to common
 |Term|Definition|  
 |----------|----------------|  
 |[Code Gallery](http://code.msdn.microsoft.com/)|Download and share sample applications and other resources with the developer community.|  
-|[CodePlex](http://www.codeplex.com/)|Hosts open source software projects. You can use CodePlex to find open source software or create new projects to share with the world.|  
+|[GitHub](http://www.github.com/)|Hosts open source software projects. You can use GitHub to find open source software or create new projects to share with the world.|  
 |[Visual Basic Code Samples](http://msdn.microsoft.com/vbasic/ms789074)|Provides application, web, and data samples in Visual Basic.|  
   
 ### Forums  

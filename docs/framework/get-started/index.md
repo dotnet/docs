@@ -1,19 +1,15 @@
 ---
 title: "Get started with the .NET Framework"
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, getting started"
   - "getting started [.NET Framework]"
-ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
-caps.latest.revision: 35
+ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

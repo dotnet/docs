@@ -16,11 +16,11 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Generating Data Type Classes from XML
-[!INCLUDE[net_v45](../../../includes/net-v45-md.md)] includes a new feature to generate data type classes from XML. This topic describes how to automatically generate data types for the MSDN Library RSS feed.  
+[!INCLUDE[net_v45](../../../includes/net-v45-md.md)] includes a new feature to generate data type classes from XML. This topic describes how to automatically generate data types for the .NET Blog RSS feed.  
   
-### Obtaining the XML from the MSDN Library RSS feed  
+### Obtaining the XML from the .NET Blog RSS feed  
   
-1.  In Internet Explorer, navigate to the [MSDN RSS feed](http://go.microsoft.com/fwlink/?LinkId=225209).  
+1.  In Internet Explorer, navigate to the [.NET Blog RSS feed](https://blogs.msdn.microsoft.com/dotnet/feed/).  
   
 2.  Right-click the page and select **View Source**.  
   

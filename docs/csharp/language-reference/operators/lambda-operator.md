@@ -107,7 +107,7 @@ An expression body definition provides a member's implementation in a highly con
 ```csharp
 member => expression;
 ```
-where *expression* is a valid expression.
+where *expression* is a valid expression. Note that *expression* can be a *statement expression* only if the member's return type is `void`, or if the member is a constructor or a finalizer.
 
 Expression body definitions for methods and property get statements are supported starting with C# 6. Expression body definitions for constructors, finalizers, property set statements, and indexers are supported starting with C# 7.
 

@@ -46,7 +46,7 @@ The **/win32icon** option inserts an .ico file in the output file, which gives t
  The .ico file that you want to add to your output file.  
   
 ## Remarks  
- An .ico file can be created with the [Resource Compiler](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). The Resource Compiler is invoked when you compile a Visual C++ program; an .ico file is created from the .rc file.  
+ An .ico file can be created with the [Resource Compiler](../../language-reference/compiler-options/resource-compiler-option.md). The Resource Compiler is invoked when you compile a Visual C++ program; an .ico file is created from the .rc file.  
   
  See [/linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) (to reference) or [/resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) (to attach) a .NET Framework resource file. See [/win32res](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md) to import a .res file.  
   

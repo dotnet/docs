@@ -20,7 +20,7 @@ ms.author: "tdykstra"
 manager: "wpickett"
 ---
 # Developing Web Applications with ASP.NET
-ASP.NET is a .NET Framework technology for creating web apps. Documentation for ASP.NET is in the [Web Development](http://go.microsoft.com/fwlink/p/?LinkID=235794) section of Microsoft Docs and on the [www.asp.net website](https://www.asp.net). The following links are provided for your convenience:  
+ASP.NET is a .NET Framework technology for creating web apps. The following links are provided for your convenience:  
   
 -   [ASP.NET and Visual Studio for Web](http://msdn.microsoft.com/library/c3e0fd2f-7a94-47c4-afc0-ecfb7233e15a)  
   

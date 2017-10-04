@@ -91,7 +91,7 @@
 ### [Runtime package store](core/deploying/runtime-store.md)
 ## [Docker](core/docker/index.md)
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
-### [Visual Studio Tools for Docker](core/docker/visual-studio-tools-for-docker.md)
+### [Visual Studio Tools for Docker](/aspnet/core/publishing/visual-studio-tools-for-docker)
 ## [Unit Testing](core/testing/index.md)
 ### [Unit testing with dotnet test and xUnit](core/testing/unit-testing-with-dotnet-test.md)
 ### [Unit testing with dotnet test and MSTest](core/testing/unit-testing-with-mstest.md)

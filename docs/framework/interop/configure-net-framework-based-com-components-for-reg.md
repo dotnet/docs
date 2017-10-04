@@ -86,7 +86,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 5.  Save and name the manifest file. The name of an application manifest is the name of the assembly executable followed by the .manifest extension. For example, the application manifest file name for myComApp.exe is myComApp.exe.manifest.  
   
- You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, search for "Side-by-side Assemblies" in Microsoft Docs.  
+ You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, For more information, see [About Side-by-Side Assemblies](https://msdn.microsoft.com/library/windows/desktop/ff951640.aspx).   
   
 #### To create a component manifest  
   

@@ -20,7 +20,7 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
   
 ## In This Section  
  [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] version of the SampleQueries solution  
- [Sample Queries (Visual Basic)](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)  
+ [Sample Queries (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
  C# version of the SampleQueries solution  
  [LINQ C# Samples Solution](http://msdn.microsoft.com/en-us/23852e6b-b9a9-4a06-aedb-b27a5930ed74)  

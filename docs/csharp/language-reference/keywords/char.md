@@ -33,13 +33,13 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # char (C# Reference)
-The `char` keyword is used to declare an instance of the <xref:System.Char?displayProperty=fullName> structure that the .NET Framework uses to represent a Unicode character. The value of a `Char` object is a 16-bit numeric (ordinal) value.  
+The `char` keyword is used to declare an instance of the <xref:System.Char?displayProperty=nameWithType> structure that the .NET Framework uses to represent a Unicode character. The value of a `Char` object is a 16-bit numeric (ordinal) value.  
   
  Unicode characters are used to represent most of the written languages throughout the world.  
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
-|`char`|U+0000 to U+FFFF|Unicode 16-bit character|<xref:System.Char?displayProperty=fullName>|  
+|`char`|U+0000 to U+FFFF|Unicode 16-bit character|<xref:System.Char?displayProperty=nameWithType>|  
   
 ## Literals  
  Constants of the `char` type can be written as character literals, hexadecimal escape sequence, or Unicode representation. You can also cast the integral character codes. In the following example four `char` variables are initialized with the same character `X`:  
@@ -49,7 +49,7 @@ The `char` keyword is used to declare an instance of the <xref:System.Char?displ
 ## Conversions  
  A `char` can be implicitly converted to [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). However, there are no implicit conversions from other types to the `char` type.  
   
- The <xref:System.Char?displayProperty=fullName> type provides several static methods for working with `char` values.  
+ The <xref:System.Char?displayProperty=nameWithType> type provides several static methods for working with `char` values.  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

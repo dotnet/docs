@@ -130,7 +130,7 @@
 ## Remarks  
  When set, the <xref:System.Web.UI.MobileControls.ObjectList> attempts to render a shortcut to invoke the default command. In HTML, the default rendering in `ListView` displays the first field as a link to the `DetailsView` of the <xref:System.Web.UI.MobileControls.ObjectList>. By setting the <xref:System.Web.UI.MobileControls.ObjectList.DefaultCommand%2A> property, clicking the link invokes the default command. Invoking the default command raises the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event. The <xref:System.Web.UI.MobileControls.Command.CommandName%2A> of the <xref:System.Web.UI.MobileControls.ObjectListCommandEventArgs> object is set to the value of the <xref:System.Web.UI.MobileControls.ListCommandEventArgs.DefaultCommand> property.  
   
- Even if a default command is defined, you should include a command with the same name in the commands collection. If the control cannot render a graphical element that includes a shortcut for the default command, the default command is still available by rendering the <xref:System.Web.UI.MobileControls.ObjectList.Commands%2A?displayProperty=fullName> collection.  
+ Even if a default command is defined, you should include a command with the same name in the commands collection. If the control cannot render a graphical element that includes a shortcut for the default command, the default command is still available by rendering the <xref:System.Web.UI.MobileControls.ObjectList.Commands%2A?displayProperty=nameWithType> collection.  
   
    
   

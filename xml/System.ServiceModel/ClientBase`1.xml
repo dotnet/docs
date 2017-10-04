@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TChannel">
       <Constraints>
@@ -34,9 +40,9 @@
 ## Remarks  
  Extend the <xref:System.ServiceModel.ClientBase%601> class to create a custom [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object that can be used to connect to a service. Typically, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client base class is extended by a tool such as the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) on your behalf. For an example, see the Example section.  
   
- The <xref:System.ServiceModel.ClientBase%601> class can be used quickly and easily by developers who prefer objects to the use of the interfaces and the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> class. In all cases this class wraps or exposes the methods and functionality of the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> class and the <xref:System.ServiceModel.IClientChannel?displayProperty=fullName> interface.  
+ The <xref:System.ServiceModel.ClientBase%601> class can be used quickly and easily by developers who prefer objects to the use of the interfaces and the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. In all cases this class wraps or exposes the methods and functionality of the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class and the <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface.  
   
- As when using the <xref:System.ServiceModel.ServiceHost?displayProperty=fullName> class, you can create the class and modify the endpoint, channel factory, or security information prior to making any calls or calling <xref:System.ServiceModel.ClientBase%601.Open%2A>. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][WCF Client Overview](~/docs/framework/wcf/wcf-client-overview.md) and [Accessing Services Using a WCF Client](~/docs/framework/wcf/accessing-services-using-a-wcf-client.md).  
+ As when using the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> class, you can create the class and modify the endpoint, channel factory, or security information prior to making any calls or calling <xref:System.ServiceModel.ClientBase%601.Open%2A>. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [WCF Client Overview](~/docs/framework/wcf/wcf-client-overview.md) and [Accessing Services Using a WCF Client](~/docs/framework/wcf/accessing-services-using-a-wcf-client.md).  
   
  Special note for Managed C++ users deriving from this class:  
   
@@ -72,7 +78,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use to create a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object from the endpoint information in the application configuration file. The main function of the constructor is to create a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> where the type parameter is the type of the target service contract.  
+ Use to create a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object from the endpoint information in the application configuration file. The main function of the constructor is to create a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> where the type parameter is the type of the target service contract.  
   
  ]]></format>
         </remarks>
@@ -87,6 +93,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -175,6 +187,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
@@ -185,7 +203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor when there is more than one target endpoint in the application configuration file. This value is the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
+ Use this constructor when there is more than one target endpoint in the application configuration file. This value is the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
   
  ]]></format>
         </remarks>
@@ -202,6 +220,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
@@ -258,7 +282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file. The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file. The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
   
  ]]></format>
         </remarks>
@@ -276,6 +300,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpointConfigurationName" Type="System.String" />
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
@@ -288,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>
@@ -306,6 +336,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpointConfigurationName" Type="System.String" />
         <Parameter Name="remoteAddress" Type="System.String" />
@@ -318,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>
@@ -374,7 +410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>
@@ -406,7 +442,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [\&lt;endpoint\&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the name of the endpoint in an application configuration file (The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element) and the specified address.  
   
  ]]></format>
         </remarks>
@@ -424,6 +460,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -434,7 +476,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -468,6 +510,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
@@ -486,6 +534,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ChannelFactory&lt;TChannel&gt;</ReturnType>
@@ -512,6 +566,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ClientCredentials</ReturnType>
@@ -557,7 +617,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -573,6 +633,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
@@ -584,7 +650,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Returns the channel created by the inner channel factory. Exceptions thrown by <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=fullName> can be expected here.  
+ Returns the channel created by the inner channel factory. Exceptions thrown by <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> can be expected here.  
   
  ]]></format>
         </remarks>
@@ -610,7 +676,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call the <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A> method if the inner channel requires user interaction prior to constructing the channel. For example, if a user must enter a username and password to secure the channel, that custom <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer?displayProperty=fullName> can be invoked by calling this method.  
+ Call the <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A> method if the inner channel requires user interaction prior to constructing the channel. For example, if a user must enter a username and password to secure the channel, that custom <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer?displayProperty=nameWithType> can be invoked by calling this method.  
   
  ]]></format>
         </remarks>
@@ -626,6 +692,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
       </ReturnValue>
@@ -636,7 +708,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ClientBase%601.Endpoint%2A> property to obtain the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> object to inspect or modify prior to using the <xref:System.ServiceModel.ClientBase%601> object.  
+ Use the <xref:System.ServiceModel.ClientBase%601.Endpoint%2A> property to obtain the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> object to inspect or modify prior to using the <xref:System.ServiceModel.ClientBase%601> object.  
   
  ]]></format>
         </remarks>
@@ -651,6 +723,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -676,6 +754,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.IClientChannel</ReturnType>
       </ReturnValue>
@@ -686,7 +770,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ClientBase%601.InnerChannel%2A> property to obtain the <xref:System.ServiceModel.IClientChannel?displayProperty=fullName> that is used to connect to the service.  
+ Use the <xref:System.ServiceModel.ClientBase%601.InnerChannel%2A> property to obtain the <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> that is used to connect to the service.  
   
  ]]></format>
         </remarks>
@@ -701,6 +785,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -749,7 +839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -765,6 +855,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
@@ -775,7 +871,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -801,7 +897,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Closes the client object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ Closes the client object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -816,6 +912,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -833,7 +935,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -848,6 +950,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -867,7 +975,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -882,6 +990,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -899,7 +1013,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -914,6 +1028,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -933,10 +1053,30 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Close">
+      <MemberSignature Language="C#" Value="void ICommunicationObject.Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Close">
@@ -948,6 +1088,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -962,7 +1108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -978,6 +1124,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -991,7 +1143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1007,6 +1159,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1020,10 +1178,30 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Open">
+      <MemberSignature Language="C#" Value="void ICommunicationObject.Open ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Open() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Open" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Open">
@@ -1035,6 +1213,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1049,7 +1233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=fullName>.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.CommunicationObject?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

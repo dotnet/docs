@@ -359,7 +359,7 @@ regsvcs Calculator.dll
     </Member>
     <Member MemberName="System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo">
       <MemberSignature Language="C#" Value="void IServicedComponentInfo.GetComponentInfo (ref int infoMask, out string[] infoArray);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(int32 infoMask, string[] infoArray) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(int32&amp; infoMask, [out] string[]&amp; infoArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.System#EnterpriseServices#IServicedComponentInfo#GetComponentInfo(System.Int32@,System.String[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

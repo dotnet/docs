@@ -165,7 +165,7 @@ int wmain(int argc, wchar_t* argv[])
 	}
 	else
 	{
-		printf("Runtime started\b");
+		printf("Runtime started\n");
 	}
 
 

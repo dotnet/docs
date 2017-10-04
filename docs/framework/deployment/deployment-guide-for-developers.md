@@ -1,13 +1,10 @@
 ---
 title: ".NET Framework deployment guide for developers"
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "08/29/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,8 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
-ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
-caps.latest.revision: 108
+ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

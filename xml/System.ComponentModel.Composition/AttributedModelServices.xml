@@ -160,7 +160,7 @@
       </Docs>
     </Member>
     <Member MemberName="ComposeParts">
-      <MemberSignature Language="C#" Value="public static void ComposeParts (this System.ComponentModel.Composition.Hosting.CompositionContainer container, object[] attributedParts);" />
+      <MemberSignature Language="C#" Value="public static void ComposeParts (this System.ComponentModel.Composition.Hosting.CompositionContainer container, params object[] attributedParts);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ComposeParts(class System.ComponentModel.Composition.Hosting.CompositionContainer container, object[] attributedParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.AttributedModelServices.ComposeParts(System.ComponentModel.Composition.Hosting.CompositionContainer,System.Object[])" />
       <MemberType>Method</MemberType>

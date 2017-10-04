@@ -24,11 +24,11 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread
-You can resolve COM interoperability problems by displaying your form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop, which you can create by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName> method.  
+You can resolve COM interoperability problems by displaying your form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop, which you can create by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
   
  To make a Windows Form work correctly from a COM client application, you must run the form on a Windows Forms message loop. To do this, use one of the following approaches:  
   
--   Use the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=fullName> method to display the Windows Form. For more information, see [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](../../../../docs/framework/winforms/advanced/com-interop-by-displaying-a-windows-form-shadow.md).  
+-   Use the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method to display the Windows Form. For more information, see [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](../../../../docs/framework/winforms/advanced/com-interop-by-displaying-a-windows-form-shadow.md).  
   
 -   Display each Windows Form on a separate thread.  
   
@@ -37,7 +37,7 @@ You can resolve COM interoperability problems by displaying your form on a [!INC
  Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](http://msdn.microsoft.com/library/ms233639\(v=vs.110\)).  
   
 ## Example  
- The following code example demonstrates how to display the form on a separate thread and call the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName> method to start a Windows Forms message pump on that thread. To use this approach, you must marshal any calls to the form from the unmanaged application by using the <xref:System.Windows.Forms.Control.Invoke%2A> method.  
+ The following code example demonstrates how to display the form on a separate thread and call the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method to start a Windows Forms message pump on that thread. To use this approach, you must marshal any calls to the form from the unmanaged application by using the <xref:System.Windows.Forms.Control.Invoke%2A> method.  
   
  This approach requires that each instance of a form runs on its own thread by using its own message loop. You cannot have more than one message loop running per thread. Therefore, you cannot change the client application's message loop. However, you can modify the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] component to start a new thread that uses its own message loop.  
   

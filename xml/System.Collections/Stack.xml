@@ -44,7 +44,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the generic version of this collection, see <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>.  
+ For the generic version of this collection, see <xref:System.Collections.Generic.Stack%601?displayProperty=nameWithType>.  
   
  The capacity of a <xref:System.Collections.Stack> is the number of elements the <xref:System.Collections.Stack> can hold. As elements are added to a <xref:System.Collections.Stack>, the capacity is automatically increased as required through reallocation.  
   
@@ -310,7 +310,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ This method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Stack.Count%2A>.  
   

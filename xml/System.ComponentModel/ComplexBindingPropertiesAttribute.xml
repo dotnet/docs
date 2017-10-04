@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> is used to specify the properties used with complex data binding, such as binding based on <xref:System.Collections.IList?displayProperty=fullName>.  
+ The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> is used to specify the properties used with complex data binding, such as binding based on <xref:System.Collections.IList?displayProperty=nameWithType>.  
   
  The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> attribute is specified at the class level. It is inheritable and does not allow multiple attributes on the same class.  
   

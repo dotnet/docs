@@ -248,7 +248,7 @@
 ## Remarks  
  The value of this property is established by one of the following:  
   
--   A constructor parameter (see <xref:System.Xaml.Schema.XamlValueConverter%601.%23ctor%2A?displayProperty=fullName>).  
+-   A constructor parameter (see <xref:System.Xaml.Schema.XamlValueConverter%601.%23ctor%2A?displayProperty=nameWithType>).  
   
 -   Internal logic that processes other constructor inputs and forms a string.  
   

@@ -159,7 +159,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPagerField.CreateDataPagers%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=fullName> method to create the UI controls for the data pager field.  
+ The <xref:System.Web.UI.WebControls.DataPagerField.CreateDataPagers%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=nameWithType> method to create the UI controls for the data pager field.  
   
  ]]></format>
         </remarks>
@@ -239,7 +239,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPagerField.GetQueryStringNavigateUrl%2A> method is used by the <xref:System.Web.UI.WebControls.NumericPagerField> and <xref:System.Web.UI.WebControls.NextPreviousPagerField> pager fields to create the target URL for each button of the pager field. The target URL includes a query string field that contains a name/value pair. The name is the value of the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=fullName> property, and the value represents the value of `pageNumber`.  
+ The <xref:System.Web.UI.WebControls.DataPagerField.GetQueryStringNavigateUrl%2A> method is used by the <xref:System.Web.UI.WebControls.NumericPagerField> and <xref:System.Web.UI.WebControls.NextPreviousPagerField> pager fields to create the target URL for each button of the pager field. The target URL includes a query string field that contains a name/value pair. The name is the value of the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=nameWithType> property, and the value represents the value of `pageNumber`.  
   
  ]]></format>
         </remarks>
@@ -267,7 +267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataPagerField.HandleEvent%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> method to handle events that occur in the pager field object.  
+ The <xref:System.Web.UI.WebControls.DataPagerField.HandleEvent%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=nameWithType> method to handle events that occur in the pager field object.  
   
  ]]></format>
         </remarks>
@@ -397,7 +397,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=fullName> property is not an empty string or `null`, the <xref:System.Web.UI.WebControls.DataPager> control uses the HTTP GET command to navigate through the pages. A query string field that consists of a name/value pair is added to the URL of the page. The <xref:System.Web.UI.WebControls.DataPagerField.QueryStringValue%2A> property retrieves the value of the query string field from the URL of the request. The <xref:System.Web.UI.WebControls.DataPagerField.QueryStringValue%2A> property contains the requested page number.  
+ When the <xref:System.Web.UI.WebControls.DataPager.QueryStringField%2A?displayProperty=nameWithType> property is not an empty string or `null`, the <xref:System.Web.UI.WebControls.DataPager> control uses the HTTP GET command to navigate through the pages. A query string field that consists of a name/value pair is added to the URL of the page. The <xref:System.Web.UI.WebControls.DataPagerField.QueryStringValue%2A> property retrieves the value of the query string field from the URL of the request. The <xref:System.Web.UI.WebControls.DataPagerField.QueryStringValue%2A> property contains the requested page number.  
   
  This property is used by the <xref:System.Web.UI.WebControls.NumericPagerField> and <xref:System.Web.UI.WebControls.NextPreviousPagerField> pager fields to evaluate the index of the first record for the page of data requested. The page properties of the <xref:System.Web.UI.WebControls.DataPager> control are then updated.  
   

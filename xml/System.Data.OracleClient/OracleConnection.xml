@@ -45,7 +45,7 @@
    
   
 ## Examples  
- The following example creates an <xref:System.Data.OracleClient.OracleCommand> and an <xref:System.Data.OracleClient.OracleConnection>. The <xref:System.Data.OracleClient.OracleConnection> is opened and set as the <xref:System.Data.OracleClient.OracleCommand.Connection%2A?displayProperty=fullName> property. The example then calls <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A>, and closes the connection. To accomplish this, the <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A> is passed a connection string and a query string that is an SQL INSERT statement.  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and an <xref:System.Data.OracleClient.OracleConnection>. The <xref:System.Data.OracleClient.OracleConnection> is opened and set as the <xref:System.Data.OracleClient.OracleCommand.Connection%2A?displayProperty=nameWithType> property. The example then calls <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A>, and closes the connection. To accomplish this, the <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A> is passed a connection string and a query string that is an SQL INSERT statement.  
   
  [!code-csharp[Classic WebData OracleConnection#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection/CS/source.cs#1)]
  [!code-vb[Classic WebData OracleConnection#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection/VB/source.vb#1)]  

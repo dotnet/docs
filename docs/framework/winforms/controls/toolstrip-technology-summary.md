@@ -28,7 +28,7 @@ This topic summarizes information about the `ToolStrip` control and the classes 
  The `ToolStrip` control and its associated classes provide a complete solution for creating toolbars, status bars, and menus.  
   
 ## Namespaces  
- <xref:System.Windows.Forms?displayProperty=fullName>  
+ <xref:System.Windows.Forms?displayProperty=nameWithType>  
   
 ## Background  
  With the `ToolStrip` control and its associated classes, you can create advanced toolbar functionality that has consistent and professional appearance and behavior. The `ToolStrip` control and classes offer the following improvements over previous controls:  

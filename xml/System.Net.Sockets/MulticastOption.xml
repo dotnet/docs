@@ -26,11 +26,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a <xref:System.Net.Sockets.MulticastOption> to store the <xref:System.Net.IPAddress> of a multicast group you want to join or drop. Use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method with the following parameters to join a multicast group.  
+ Use a <xref:System.Net.Sockets.MulticastOption> to store the <xref:System.Net.IPAddress> of a multicast group you want to join or drop. Use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType> method with the following parameters to join a multicast group.  
   
 |Parameter|Value|  
 |---------------|-----------|  
-|socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName>|  
+|socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType>|  
 |socketOptionName|<xref:System.Net.Sockets.SocketOptionName.AddMembership>|  
 |object|<xref:System.Net.Sockets.MulticastOption>|  
   

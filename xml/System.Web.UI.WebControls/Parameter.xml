@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor> constructor is initialized with default values for all its properties. The <xref:System.Web.UI.WebControls.Parameter.Name%2A> property is initialized to <xref:System.String.Empty?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
  ]]></format>
         </remarks>
@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
+ A <xref:System.Web.UI.WebControls.Parameter> object created with the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%29> constructor is initialized with the specified `name` and default values for its other properties. The <xref:System.Web.UI.WebControls.Parameter.Type%2A> property is initialized to <xref:System.TypeCode?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.Parameter.Direction%2A> property is initialized to <xref:System.Data.ParameterDirection.Input>, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is initialized to `null`.  
   
    
   
@@ -713,9 +713,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.UI.WebControls.Parameter> object is not contained by a <xref:System.Web.UI.WebControls.ParameterCollection> collection, calling the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method has no effect. If the <xref:System.Web.UI.WebControls.Parameter> object is contained by a <xref:System.Web.UI.WebControls.ParameterCollection> collection, <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> raises the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=fullName> event of the collection.  
+ If the <xref:System.Web.UI.WebControls.Parameter> object is not contained by a <xref:System.Web.UI.WebControls.ParameterCollection> collection, calling the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method has no effect. If the <xref:System.Web.UI.WebControls.Parameter> object is contained by a <xref:System.Web.UI.WebControls.ParameterCollection> collection, <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> raises the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=nameWithType> event of the collection.  
   
- If the <xref:System.Web.UI.WebControls.ParameterCollection> collection is contained by a data source control, the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=fullName> event raises the data source control's <xref:System.Web.UI.IDataSource.DataSourceChanged> event, causing any data-bound controls to rebind.  
+ If the <xref:System.Web.UI.WebControls.ParameterCollection> collection is contained by a data source control, the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=nameWithType> event raises the data source control's <xref:System.Web.UI.IDataSource.DataSourceChanged> event, causing any data-bound controls to rebind.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
@@ -785,7 +785,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Parameter.SetDirty%2A> method is called directly by the <xref:System.Web.UI.WebControls.ParameterCollection.SetDirtyObject%2A?displayProperty=fullName> method, to mark the <xref:System.Web.UI.WebControls.Parameter> object so that its state is recorded in view state.  
+ The <xref:System.Web.UI.WebControls.Parameter.SetDirty%2A> method is called directly by the <xref:System.Web.UI.WebControls.ParameterCollection.SetDirtyObject%2A?displayProperty=nameWithType> method, to mark the <xref:System.Web.UI.WebControls.Parameter> object so that its state is recorded in view state.  
   
  ]]></format>
         </remarks>
@@ -966,7 +966,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Parameter.ToString%2A> method returns the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property of the <xref:System.Web.UI.WebControls.Parameter> object. If the <xref:System.Web.UI.WebControls.Parameter> object has no name, <xref:System.Web.UI.WebControls.Parameter.ToString%2A> returns <xref:System.String.Empty?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.Parameter.ToString%2A> method returns the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property of the <xref:System.Web.UI.WebControls.Parameter> object. If the <xref:System.Web.UI.WebControls.Parameter> object has no name, <xref:System.Web.UI.WebControls.Parameter.ToString%2A> returns <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   

@@ -40,7 +40,7 @@
    
   
 ## Examples  
- The following example shows a stack data structure that implements <xref:System.Collections.Concurrent.IProducerConsumerCollection%601?displayProperty=fullName>.  
+ The following example shows a stack data structure that implements <xref:System.Collections.Concurrent.IProducerConsumerCollection%601?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Collections.Concurrent.IProducerConsumerCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.iproducerconsumercollection/cs/iprodcon.cs#1)]
  [!code-vb[System.Collections.Concurrent.IProducerConsumerCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.iproducerconsumercollection/vb/iprodcon.vb#1)]  
@@ -172,7 +172,7 @@
     </Member>
     <Member MemberName="TryTake">
       <MemberSignature Language="C#" Value="public bool TryTake (out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTake(!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTake([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryTake(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

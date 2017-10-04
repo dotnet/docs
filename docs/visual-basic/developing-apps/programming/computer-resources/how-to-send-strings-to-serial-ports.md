@@ -61,6 +61,6 @@ This topic describes how to use `My.Computer.Ports` to send strings to the compu
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Ports>   
- <xref:System.IO.Ports.SerialPort?displayProperty=fullName>   
+ <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType>   
  [How to: Dial Modems Attached to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)   
  [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)

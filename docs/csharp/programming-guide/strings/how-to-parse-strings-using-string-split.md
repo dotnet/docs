@@ -38,7 +38,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Parse Strings Using String.Split (C# Programming Guide)
-The following code example demonstrates how a string can be parsed using the <xref:System.String.Split%2A?displayProperty=fullName> method. As input, <xref:System.String.Split%2A> takes an array of characters that indicate which characters separate interesting sub strings of the target string.  The function returns an array of the sub strings.  
+The following code example demonstrates how a string can be parsed using the <xref:System.String.Split%2A?displayProperty=nameWithType> method. As input, <xref:System.String.Split%2A> takes an array of characters that indicate which characters separate interesting sub strings of the target string.  The function returns an array of the sub strings.  
   
  This example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters to <xref:System.String.Split%2A>.  Each word in the target string's sentence displays separately from the resulting array of strings.  
   

@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> control that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=nameWithType> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> control that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
   
  ]]></format>
         </remarks>
@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=nameWithType> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
   
    
   
@@ -152,9 +152,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=nameWithType> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
   
- If no `title` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> property return the <xref:System.String.Empty?displayProperty=fullName> field.  
+ If no `title` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> property return the <xref:System.String.Empty?displayProperty=nameWithType> field.  
   
    
   
@@ -204,9 +204,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=nameWithType> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
   
- If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=fullName> field.  
+ If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=nameWithType> field.  
   
    
   
@@ -263,15 +263,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=nameWithType> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
   
  The <xref:System.Collections.Specialized.NameValueCollection> collection of attributes that the <xref:System.Web.SiteMapNode> is created with is available through the <xref:System.Web.SiteMapNode.Attributes%2A> property, and makes it easy to apply additional attributes to a site map node and extend its capabilities without deriving a custom class to do so.  
   
  Supply an <xref:System.Collections.IList> collection of roles to provide a set of roles that can view the node when the <xref:System.Web.SiteMapProvider.SecurityTrimmingEnabled%2A> property returns `true`.  For more information, see <xref:System.Web.SiteMapProvider.SecurityTrimmingEnabled%2A>.  
   
- The <xref:System.Web.XmlSiteMapProvider> provider uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> that is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ The <xref:System.Web.XmlSiteMapProvider> provider uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=nameWithType> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> that is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
   
- If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=fullName> field.  
+ If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=nameWithType> field.  
   
  To programmatically specify resources for localization, either set the value of `implicitResourceKey` to a unique name that will be used to identify localized resources for the node or set `explicitResourceKeys` to a <xref:System.Collections.Specialized.NameValueCollection> collection of `name/value` pairs where `name` is the node property or custom attribute to localize and `value` contains localization values for the node property or custom attribute. The localized values can then be set in the appropriate .resx files. For more information about how to localize the <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Description%2A>, and any custom properties of a <xref:System.Web.SiteMapNode> object, see [How to: Localize Site-Map Data](http://msdn.microsoft.com/library/be63b4a0-fb82-44b4-bdbb-df1d2548cedc). For the syntax requirements of the `explicitResourceKeys` collection, see <xref:System.Collections.Specialized.NameValueCollection>.  
   
@@ -1395,7 +1395,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default site map provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> object that is used by the <xref:System.Web.XmlSiteMapProvider> class must have a unique URL within the scope of the provider.  
+ The <xref:System.Web.XmlSiteMapProvider> class, which is the default site map provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=nameWithType> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> object that is used by the <xref:System.Web.XmlSiteMapProvider> class must have a unique URL within the scope of the provider.  
   
  Leading and trailing white-space characters are ignored.  
   

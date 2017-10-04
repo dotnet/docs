@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
       <Constraints>
@@ -22,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] allows you to extend <xref:System.ServiceModel.IExtensibleObject%601?displayProperty=fullName> objects (the <xref:System.ServiceModel.IContextChannel?displayProperty=fullName>, <xref:System.ServiceModel.ServiceHost?displayProperty=fullName>, <xref:System.ServiceModel.InstanceContext?displayProperty=fullName>, and <xref:System.ServiceModel.OperationContext?displayProperty=fullName> classes) by adding a new state or behavior by using its extensible object pattern. The extensible object pattern is used in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to either extend existing run-time classes with new functionality or to add new state features to an object.  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] allows you to extend <xref:System.ServiceModel.IExtensibleObject%601?displayProperty=nameWithType> objects (the <xref:System.ServiceModel.IContextChannel?displayProperty=nameWithType>, <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>, <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType>, and <xref:System.ServiceModel.OperationContext?displayProperty=nameWithType> classes) by adding a new state or behavior by using its extensible object pattern. The extensible object pattern is used in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to either extend existing run-time classes with new functionality or to add new state features to an object.  
   
  ]]></format>
     </remarks>
@@ -37,6 +43,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -81,6 +93,12 @@ public void Attach(InstanceContext owner)
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -94,9 +112,9 @@ public void Attach(InstanceContext owner)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.IExtension%601.Detach%2A> method to find out when the extension has been removed. An extension can use this to unhook events on the extensible object. An extension can also throw <xref:System.InvalidOperationException?displayProperty=fullName> from this method to indicate that, once added, the extension cannot be removed.  
+ Use the <xref:System.ServiceModel.IExtension%601.Detach%2A> method to find out when the extension has been removed. An extension can use this to unhook events on the extensible object. An extension can also throw <xref:System.InvalidOperationException?displayProperty=nameWithType> from this method to indicate that, once added, the extension cannot be removed.  
   
- Note that this method is not called when the owner object is disposed or closed. If needed, it is up to the extension or the code adding the extension to hook the appropriate <xref:System.ServiceModel.ICommunicationObject?displayProperty=fullName> events or implement the appropriate interfaces (for <xref:System.ServiceModel.OperationContext?displayProperty=fullName>) to observe the lifecycle of the owner.  
+ Note that this method is not called when the owner object is disposed or closed. If needed, it is up to the extension or the code adding the extension to hook the appropriate <xref:System.ServiceModel.ICommunicationObject?displayProperty=nameWithType> events or implement the appropriate interfaces (for <xref:System.ServiceModel.OperationContext?displayProperty=nameWithType>) to observe the lifecycle of the owner.  
   
  ]]></format>
         </remarks>

@@ -27,7 +27,7 @@
   
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.Parameter> object from the collection, by name or using array notation.  
   
--   Use the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName>-implemented object, which can then be used to get items from the collection.  
+-   Use the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType>-implemented object, which can then be used to get items from the collection.  
   
  The <xref:System.Web.UI.StateManagedCollection.Count%2A> property specifies the total number of items in the collection, and is used to determine the upper bound of the collection. You can add and remove items from the collection by using the <xref:System.Web.UI.WebControls.ParameterCollection.Add%2A>, <xref:System.Web.UI.WebControls.ParameterCollection.Insert%2A>, <xref:System.Web.UI.WebControls.ParameterCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.ParameterCollection.RemoveAt%2A> methods.  
   

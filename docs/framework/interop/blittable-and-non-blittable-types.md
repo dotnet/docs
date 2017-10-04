@@ -30,29 +30,29 @@ Most data types have a common representation in both managed and unmanaged memor
   
  The following types from the <xref:System> namespace are blittable types:  
   
--   <xref:System.Byte?displayProperty=fullName>  
+-   <xref:System.Byte?displayProperty=nameWithType>  
   
--   <xref:System.SByte?displayProperty=fullName>  
+-   <xref:System.SByte?displayProperty=nameWithType>  
   
--   <xref:System.Int16?displayProperty=fullName>  
+-   <xref:System.Int16?displayProperty=nameWithType>  
   
--   <xref:System.UInt16?displayProperty=fullName>  
+-   <xref:System.UInt16?displayProperty=nameWithType>  
   
--   <xref:System.Int32?displayProperty=fullName>  
+-   <xref:System.Int32?displayProperty=nameWithType>  
   
--   <xref:System.UInt32?displayProperty=fullName>  
+-   <xref:System.UInt32?displayProperty=nameWithType>  
   
--   <xref:System.Int64?displayProperty=fullName>  
+-   <xref:System.Int64?displayProperty=nameWithType>  
   
--   <xref:System.UInt64?displayProperty=fullName>  
+-   <xref:System.UInt64?displayProperty=nameWithType>  
   
--   <xref:System.IntPtr?displayProperty=fullName>  
+-   <xref:System.IntPtr?displayProperty=nameWithType>  
   
--   <xref:System.UIntPtr?displayProperty=fullName>  
+-   <xref:System.UIntPtr?displayProperty=nameWithType>  
   
--   <xref:System.Single?displayProperty=fullName>  
+-   <xref:System.Single?displayProperty=nameWithType>  
   
--   <xref:System.Double?displayProperty=fullName>  
+-   <xref:System.Double?displayProperty=nameWithType>  
   
  The following complex types are also blittable types:  
   

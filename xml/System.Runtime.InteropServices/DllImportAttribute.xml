@@ -146,7 +146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `true`, best-fit mapping behavior is enabled; otherwise, best-fit mapping is disabled. The <xref:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping> field is `true` by default. Settings for this field override the any level settings for the <xref:System.Runtime.InteropServices.BestFitMappingAttribute?displayProperty=fullName> attribute.  
+ If `true`, best-fit mapping behavior is enabled; otherwise, best-fit mapping is disabled. The <xref:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping> field is `true` by default. Settings for this field override the any level settings for the <xref:System.Runtime.InteropServices.BestFitMappingAttribute?displayProperty=nameWithType> attribute.  
   
  The common language runtime converts to ANSI characters any managed Unicode characters passed to an unmanaged method executing on Windows 98 or Windows Me. Best-fit mapping enables the interop marshaler to provide a close-matching character when no exact match exists. For example, the marshaler converts the Unicode copyright character to 'c' for unmanaged methods that accept ANSI characters. Some characters lack a best-fit representation; these characters are called unmappable. Unmappable characters are usually converted to the default '?' ANSI character.  
   
@@ -344,7 +344,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `false`, the entry point name appended with the letter A is invoked when the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=fullName> field is set to `CharSet.Ansi`, and the entry-point name appended with the letter W is invoked when the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=fullName> field is set to the `CharSet.Unicode`. Typically, managed compilers set this field.  
+ If `false`, the entry point name appended with the letter A is invoked when the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field is set to `CharSet.Ansi`, and the entry-point name appended with the letter W is invoked when the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field is set to the `CharSet.Unicode`. Typically, managed compilers set this field.  
   
  The following table shows the relationship between the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> and <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> fields, based on default values imposed by the programming language. You can override the default setting, but do so with caution.  
   

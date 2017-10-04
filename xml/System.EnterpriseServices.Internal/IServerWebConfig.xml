@@ -29,7 +29,7 @@
   <Members>
     <Member MemberName="AddElement">
       <MemberSignature Language="C#" Value="public void AddElement (string FilePath, string AssemblyName, string TypeName, string ProgId, string Mode, out string Error);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddElement(string FilePath, string AssemblyName, string TypeName, string ProgId, string Mode, string Error) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddElement(string FilePath, string AssemblyName, string TypeName, string ProgId, string Mode, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IServerWebConfig.AddElement(System.String,System.String,System.String,System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -73,7 +73,7 @@
     </Member>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public void Create (string FilePath, string FileRootName, out string Error);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string FilePath, string FileRootName, string Error) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string FilePath, string FileRootName, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IServerWebConfig.Create(System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

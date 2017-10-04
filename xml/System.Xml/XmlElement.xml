@@ -379,7 +379,7 @@
  The nodes are placed in the order in which they would be encountered in a preorder traversal of the <xref:System.Xml.XmlElement> tree.  
   
 > [!NOTE]
->  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlElement.GetElementsByTagName%2A> method.  
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=nameWithType> method instead of the <xref:System.Xml.XmlElement.GetElementsByTagName%2A> method.  
   
    
   
@@ -439,7 +439,7 @@
  The nodes are placed in the order in which they would be encountered in a preorder traversal of the `XmlElement` tree.  
   
 > [!NOTE]
->  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlElement.GetElementsByTagName%2A> method.  
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=nameWithType> method instead of the <xref:System.Xml.XmlElement.GetElementsByTagName%2A> method.  
   
  ]]></format>
         </remarks>

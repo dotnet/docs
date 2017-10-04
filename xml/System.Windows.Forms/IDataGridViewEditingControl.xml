@@ -149,7 +149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.IDataGridViewEditingControl> interface does not define a corresponding `ColumnIndex` property. You can use the <xref:System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView%2A> property to retrieve the parent <xref:System.Windows.Forms.DataGridView> control and use the <xref:System.Windows.Forms.DataGridView.CurrentCellAddress%2A?displayProperty=fullName> property to determine the row and column indexes of the active cell.  
+ The <xref:System.Windows.Forms.IDataGridViewEditingControl> interface does not define a corresponding `ColumnIndex` property. You can use the <xref:System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView%2A> property to retrieve the parent <xref:System.Windows.Forms.DataGridView> control and use the <xref:System.Windows.Forms.DataGridView.CurrentCellAddress%2A?displayProperty=nameWithType> property to determine the row and column indexes of the active cell.  
   
  ]]></format>
         </remarks>

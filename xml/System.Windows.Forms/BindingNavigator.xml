@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator> control represents a standardized way to navigate and manipulate data on a form. In most cases, a <xref:System.Windows.Forms.BindingNavigator> is paired with a <xref:System.Windows.Forms.BindingSource> control to move through data records on a form and interact with them. In these cases, the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is set to the associated <xref:System.Windows.Forms.BindingSource?displayProperty=fullName> component that acts as a data source.  
+ The <xref:System.Windows.Forms.BindingNavigator> control represents a standardized way to navigate and manipulate data on a form. In most cases, a <xref:System.Windows.Forms.BindingNavigator> is paired with a <xref:System.Windows.Forms.BindingSource> control to move through data records on a form and interact with them. In these cases, the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is set to the associated <xref:System.Windows.Forms.BindingSource?displayProperty=nameWithType> component that acts as a data source.  
   
  By default, the <xref:System.Windows.Forms.BindingNavigator> control's user interface (UI) is composed of a series of <xref:System.Windows.Forms.ToolStrip> buttons, text boxes, and static text elements for most common data-related actions, such as adding data, deleting data, and navigating through data. Each of these controls can be retrieved or set through an associated member of the <xref:System.Windows.Forms.BindingNavigator> control. Likewise, there is also a one-to-one correspondence to members within the <xref:System.Windows.Forms.BindingSource> class that programmatically perform the same functionality, as shown in the following table.  
   
@@ -369,7 +369,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> control is a <xref:System.Windows.Forms.ToolStripLabel> that displays the total number of items in the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A>. The <xref:System.Windows.Forms.BindingNavigator.CountItemFormat%2A> property is the format string used to format the count.  
   
- For more information about format strings, see the <xref:System.String.Format%28System.String%2CSystem.Object%29?displayProperty=fullName> method.  
+ For more information about format strings, see the <xref:System.String.Format%28System.String%2CSystem.Object%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -501,7 +501,7 @@
   
  This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
   
- The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move First** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null`, the <xref:System.Windows.Forms.BindingSource.Position%2A?displayProperty=fullName> property is zero, or <xref:System.Windows.Forms.BindingSource.AllowNew%2A> for the related <xref:System.Windows.Forms.BindingSource> is `false`.  
+ The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move First** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null`, the <xref:System.Windows.Forms.BindingSource.Position%2A?displayProperty=nameWithType> property is zero, or <xref:System.Windows.Forms.BindingSource.AllowNew%2A> for the related <xref:System.Windows.Forms.BindingSource> is `false`.  
   
  In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
   
@@ -709,14 +709,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.RefreshItems?displayProperty=fullName> event signals that the navigational UI of the <xref:System.Windows.Forms.BindingNavigator> needs to be updated to reflect the current state of the associated <xref:System.Windows.Forms.BindingSource>.  
+ The <xref:System.Windows.Forms.BindingNavigator.RefreshItems?displayProperty=nameWithType> event signals that the navigational UI of the <xref:System.Windows.Forms.BindingNavigator> needs to be updated to reflect the current state of the associated <xref:System.Windows.Forms.BindingSource>.  
   
  This is the default event for the <xref:System.Windows.Forms.BindingNavigator> class.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingNavigator> named `BindingNavigator1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event.  
   

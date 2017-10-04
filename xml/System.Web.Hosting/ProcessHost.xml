@@ -41,7 +41,7 @@
   <Members>
     <Member MemberName="EnumerateAppDomains">
       <MemberSignature Language="C#" Value="public void EnumerateAppDomains (out System.Web.Hosting.IAppDomainInfoEnum appDomainInfoEnum);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumerateAppDomains(class System.Web.Hosting.IAppDomainInfoEnum appDomainInfoEnum) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumerateAppDomains([out] class System.Web.Hosting.IAppDomainInfoEnum&amp; appDomainInfoEnum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -293,7 +293,7 @@
     </Member>
     <Member MemberName="StartApplication">
       <MemberSignature Language="C#" Value="public void StartApplication (string appId, string appPath, out object runtimeInterface);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartApplication(string appId, string appPath, object runtimeInterface) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartApplication(string appId, string appPath, [out] object&amp; runtimeInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHost.StartApplication(System.String,System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

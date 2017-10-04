@@ -376,7 +376,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=nameWithType> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
   
  The <xref:System.Web.UI.Design.WebControls.LoginViewDesigner.PreFilterProperties%2A> method applies the <xref:System.ComponentModel.BrowsableAttribute> attribute of the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property so that it does not appear in the **Properties** grid.  
   

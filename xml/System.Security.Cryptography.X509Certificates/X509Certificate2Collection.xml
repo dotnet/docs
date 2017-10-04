@@ -373,7 +373,7 @@
 ## Remarks  
  This method performs a linear search; therefore, the average execution time is proportional to the <xref:System.Collections.CollectionBase.Count%2A> property. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
   
- This method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ This method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

@@ -127,7 +127,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 #### To create a Graphics object from an Image  
   
--   Call the <xref:System.Drawing.Graphics.FromImage%2A?displayProperty=fullName> method, supplying the name of the Image variable from which you want to create a <xref:System.Drawing.Graphics> object.  
+-   Call the <xref:System.Drawing.Graphics.FromImage%2A?displayProperty=nameWithType> method, supplying the name of the Image variable from which you want to create a <xref:System.Drawing.Graphics> object.  
   
      The following example shows how to use a <xref:System.Drawing.Bitmap> object:  
   

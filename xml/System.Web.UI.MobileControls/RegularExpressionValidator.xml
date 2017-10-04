@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class behaves identically to the ASP.NET <xref:System.Web.UI.WebControls.RegularExpressionValidator?displayProperty=fullName> control.  
+ This class behaves identically to the ASP.NET <xref:System.Web.UI.WebControls.RegularExpressionValidator?displayProperty=nameWithType> control.  
   
  By default, <xref:System.Web.UI.MobileControls.Command> controls on a form raise validator controls on the form to perform validation when the form is submitted to the server. To disable automatic validation, set the <xref:System.Web.UI.MobileControls.Command.CausesValidation%2A> property on the <xref:System.Web.UI.MobileControls.Command> to `false`.  
   

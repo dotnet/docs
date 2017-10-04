@@ -289,7 +289,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create a multiple-selection <xref:System.Web.UI.MobileControls.SelectionList>, set its <xref:System.Web.UI.MobileControls.SelectionList.SelectType%2A> property to <xref:System.Web.UI.MobileControls.ListSelectType?displayProperty=fullName>.  
+ To create a multiple-selection <xref:System.Web.UI.MobileControls.SelectionList>, set its <xref:System.Web.UI.MobileControls.SelectionList.SelectType%2A> property to <xref:System.Web.UI.MobileControls.ListSelectType?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -391,7 +391,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.SelectionList.LoadPostData%2A> method uses the <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A> method on the <xref:System.Web.UI.MobileControls.IControlAdapter> object referenced by the <xref:System.Web.UI.MobileControls.MobileControl.Adapter%2A> property to load data into the control from the post data sent by the client browser. If there is no device-specific handling for loading the postback data on this control, then the <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A?displayProperty=fullName> method returns `true`.  
+ The <xref:System.Web.UI.MobileControls.SelectionList.LoadPostData%2A> method uses the <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A> method on the <xref:System.Web.UI.MobileControls.IControlAdapter> object referenced by the <xref:System.Web.UI.MobileControls.MobileControl.Adapter%2A> property to load data into the control from the post data sent by the client browser. If there is no device-specific handling for loading the postback data on this control, then the <xref:System.Web.UI.MobileControls.IControlAdapter.LoadPostData%2A?displayProperty=nameWithType> method returns `true`.  
   
  ]]></format>
         </remarks>

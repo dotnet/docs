@@ -511,7 +511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection> object is writable. After modification, the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Save%2A?displayProperty=fullName> method should be called.  
+ The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection> object is writable. After modification, the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Save%2A?displayProperty=nameWithType> method should be called.  
   
  ]]></format>
         </remarks>

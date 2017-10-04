@@ -1,19 +1,15 @@
 ---
 title: "Migration Guide to the .NET Framework 4.7, 4.6, and 4.5 "
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
-ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b
-caps.latest.revision: 56
+ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

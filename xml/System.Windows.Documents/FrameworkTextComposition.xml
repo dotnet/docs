@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Input.TextCompositionEventArgs.TextComposition%2A?displayProperty=fullName> property is a <xref:System.Windows.Documents.FrameworkTextComposition> when the user enters text into a <xref:System.Windows.Controls.TextBox> by using an [!INCLUDE[TLA#tla_ime](~/includes/tlasharptla-ime-md.md)] and the <xref:System.Windows.Input.TextCompositionManager.TextInput>, <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>, or <xref:System.Windows.Input.TextCompositionManager.TextInputStart> event occurs.  
+ The <xref:System.Windows.Input.TextCompositionEventArgs.TextComposition%2A?displayProperty=nameWithType> property is a <xref:System.Windows.Documents.FrameworkTextComposition> when the user enters text into a <xref:System.Windows.Controls.TextBox> by using an [!INCLUDE[TLA#tla_ime](~/includes/tlasharptla-ime-md.md)] and the <xref:System.Windows.Input.TextCompositionManager.TextInput>, <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>, or <xref:System.Windows.Input.TextCompositionManager.TextInputStart> event occurs.  
   
- <xref:System.Windows.Documents.FrameworkTextComposition> is the base class of <xref:System.Windows.Documents.FrameworkRichTextComposition>. The <xref:System.Windows.Documents.FrameworkRichTextComposition> class defines properties that return <xref:System.Windows.Documents.TextPointer> objects to indicate the position of the text composition.  When the user enters text into a <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Input.TextCompositionEventArgs.TextComposition%2A?displayProperty=fullName> is a <xref:System.Windows.Documents.FrameworkRichTextComposition>.  
+ <xref:System.Windows.Documents.FrameworkTextComposition> is the base class of <xref:System.Windows.Documents.FrameworkRichTextComposition>. The <xref:System.Windows.Documents.FrameworkRichTextComposition> class defines properties that return <xref:System.Windows.Documents.TextPointer> objects to indicate the position of the text composition.  When the user enters text into a <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Input.TextCompositionEventArgs.TextComposition%2A?displayProperty=nameWithType> is a <xref:System.Windows.Documents.FrameworkRichTextComposition>.  
   
  ]]></format>
     </remarks>

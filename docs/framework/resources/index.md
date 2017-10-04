@@ -45,17 +45,17 @@ Nearly every production-quality app has to use resources. A resource is any none
  For more information, see the [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) article.  
   
 ## Retrieving Resources  
- At run time, an app loads the appropriate localized resources on a per-thread basis, based on the culture specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. This property value is derived as follows:  
+ At run time, an app loads the appropriate localized resources on a per-thread basis, based on the culture specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property. This property value is derived as follows:  
   
--   By directly assigning a <xref:System.Globalization.CultureInfo> object that represents the localized culture to the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property.  
+-   By directly assigning a <xref:System.Globalization.CultureInfo> object that represents the localized culture to the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> property.  
   
--   If a culture is not explicitly assigned, by retrieving the default thread UI culture from the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=fullName> property.  
+-   If a culture is not explicitly assigned, by retrieving the default thread UI culture from the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> property.  
   
 -   If a default thread UI culture is not explicitly assigned, by retrieving the culture for the current user on the local computer by calling the Windows `GetUserDefaultUILanguage` function.  
   
- For more information about how the current UI culture is set, see the <xref:System.Globalization.CultureInfo> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> reference pages.  
+ For more information about how the current UI culture is set, see the <xref:System.Globalization.CultureInfo> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> reference pages.  
   
- You can then retrieve resources for the current UI culture or for a specific culture by using the <xref:System.Resources.ResourceManager?displayProperty=fullName> class. Although the <xref:System.Resources.ResourceManager> class is most commonly used for retrieving resources in desktop apps, the <xref:System.Resources?displayProperty=fullName> namespace contains additional types that you can use to retrieve resources. These include:  
+ You can then retrieve resources for the current UI culture or for a specific culture by using the <xref:System.Resources.ResourceManager?displayProperty=nameWithType> class. Although the <xref:System.Resources.ResourceManager> class is most commonly used for retrieving resources in desktop apps, the <xref:System.Resources?displayProperty=nameWithType> namespace contains additional types that you can use to retrieve resources. These include:  
   
 -   The <xref:System.Resources.ResourceReader> class, which enables you to enumerate resources embedded in an assembly or stored in a standalone binary .resources file. It is useful when you don't know the precise names of the resources that are available at run time.  
   
@@ -67,7 +67,7 @@ Nearly every production-quality app has to use resources. A resource is any none
   
 ## See Also  
  <xref:System.Globalization.CultureInfo>   
- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>   
+ <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>   
  [Application Essentials](../../../docs/standard/application-essentials.md)   
  [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)   
  [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)   

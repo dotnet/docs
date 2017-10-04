@@ -20,14 +20,14 @@
   
  A <xref:System.Drawing.Imaging.PropertyItem> is not intended to be used as a stand-alone object. A <xref:System.Drawing.Imaging.PropertyItem> object is intended to be used by classes that are derived from <xref:System.Drawing.Image>. A <xref:System.Drawing.Imaging.PropertyItem> object is used to retrieve and to change the metadata of existing image files, not to create the metadata. Therefore, the <xref:System.Drawing.Imaging.PropertyItem> class does not have a defined `Public` constructor, and you cannot create an instance of a <xref:System.Drawing.Imaging.PropertyItem> object.  
   
- To work around the absence of a `Public` constructor, use an existing <xref:System.Drawing.Imaging.PropertyItem> object instead of creating a new instance of the <xref:System.Drawing.Imaging.PropertyItem> class. For more information, see <xref:System.Drawing.Image.GetPropertyItem%2A?displayProperty=fullName>.  
+ To work around the absence of a `Public` constructor, use an existing <xref:System.Drawing.Imaging.PropertyItem> object instead of creating a new instance of the <xref:System.Drawing.Imaging.PropertyItem> class. For more information, see <xref:System.Drawing.Image.GetPropertyItem%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following code example demonstrates how to read and display the metadata in an image file using the <xref:System.Drawing.Imaging.PropertyItem> class and the <xref:System.Drawing.Image.PropertyItems%2A?displayProperty=fullName> property.  
+ The following code example demonstrates how to read and display the metadata in an image file using the <xref:System.Drawing.Imaging.PropertyItem> class and the <xref:System.Drawing.Image.PropertyItems%2A?displayProperty=nameWithType> property.  
   
- This example is designed to be used in a Windows Form that imports the <xref:System.Drawing.Imaging?displayProperty=fullName> namespace. Paste the code into the form and change the path to `fakePhoto.jpg` to point to an image file on your system. Call the `ExtractMetaData` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ This example is designed to be used in a Windows Form that imports the <xref:System.Drawing.Imaging?displayProperty=nameWithType> namespace. Paste the code into the form and change the path to `fakePhoto.jpg` to point to an image file on your system. Call the `ExtractMetaData` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-cpp[System.Drawing.ImageExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#6)]
  [!code-csharp[System.Drawing.ImageExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#6)]

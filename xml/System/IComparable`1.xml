@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface is implemented by types whose values can be ordered or sorted and provides a strongly typed comparison method for ordering members of a generic collection object. For example, one number can be larger than a second number, and one string can appear in alphabetical order before another. It requires that implementing types define a single method, <xref:System.IComparable%601.CompareTo%28%600%29>, that indicates whether the position of the current instance in the sort order is before, after, or the same as a second object of the same type. Typically, the method is not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
+ This interface is implemented by types whose values can be ordered or sorted and provides a strongly typed comparison method for ordering members of a generic collection object. For example, one number can be larger than a second number, and one string can appear in alphabetical order before another. It requires that implementing types define a single method, <xref:System.IComparable%601.CompareTo%28%600%29>, that indicates whether the position of the current instance in the sort order is before, after, or the same as a second object of the same type. Typically, the method is not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=nameWithType> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
   
  Typically, types that provide an <xref:System.IComparable%601> implementation also implement the <xref:System.IEquatable%601> interface. The <xref:System.IEquatable%601> interface defines the <xref:System.IEquatable%601.Equals%2A> method, which determines the equality of instances of the implementing type.  
   
@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IComparable%601.CompareTo%2A> provides a strongly typed comparison method for ordering members of a generic collection object. Because of this, it is usually not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
+ <xref:System.IComparable%601.CompareTo%2A> provides a strongly typed comparison method for ordering members of a generic collection object. Because of this, it is usually not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=nameWithType> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
   
  This method is only a definition and must be implemented by a specific class or value type to have effect. The meaning of the comparisons specified in the Return Values section ("precedes", "occurs in the same position as", and "follows) depends on the particular implementation.  
   

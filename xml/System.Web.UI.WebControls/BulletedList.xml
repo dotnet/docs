@@ -215,7 +215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BulletedList.AddAttributesToRender%2A> method is used primarily by control developers to insert the appropriate attributes and styles into the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream for a <xref:System.Web.UI.WebControls.BulletedList> control.  
+ The <xref:System.Web.UI.WebControls.BulletedList.AddAttributesToRender%2A> method is used primarily by control developers to insert the appropriate attributes and styles into the <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType> output stream for a <xref:System.Web.UI.WebControls.BulletedList> control.  
   
  ]]></format>
         </remarks>
@@ -490,7 +490,7 @@
   
  The <xref:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink> value allows you to display list content as hyperlinks. When clicked, a hyperlink navigates to a URL. Use the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property to specify the URL that a hyperlink navigates to.  
   
- The <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton> field allows you to display list content as links. Use the <xref:System.Web.UI.WebControls.BulletedList.Click?displayProperty=fullName> event to post back to the server when a link button is clicked.  
+ The <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton> field allows you to display list content as links. Use the <xref:System.Web.UI.WebControls.BulletedList.Click?displayProperty=nameWithType> event to post back to the server when a link button is clicked.  
   
  The value of this property is stored in view state.  
   
@@ -709,7 +709,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method renders the list items of a <xref:System.Web.UI.WebControls.BulletedList> control as bullets into the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName>. This method is used primarily by control developers.  
+ This method renders the list items of a <xref:System.Web.UI.WebControls.BulletedList> control as bullets into the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType>. This method is used primarily by control developers.  
   
  ]]></format>
         </remarks>

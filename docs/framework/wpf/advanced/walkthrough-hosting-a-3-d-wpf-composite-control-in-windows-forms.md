@@ -49,7 +49,7 @@ This walkthrough demonstrates how you can create a [!INCLUDE[TLA2#tla_winclient]
   
 3.  Replace the generated code with the following code.  
   
-     This code defines a <xref:System.Windows.Controls.UserControl?displayProperty=fullName> that contains two child controls. The first child control is a <xref:System.Windows.Controls.Label?displayProperty=fullName> control; the second is a <xref:System.Windows.Controls.Viewport3D> control that displays a 3-D cone.  
+     This code defines a <xref:System.Windows.Controls.UserControl?displayProperty=nameWithType> that contains two child controls. The first child control is a <xref:System.Windows.Controls.Label?displayProperty=nameWithType> control; the second is a <xref:System.Windows.Controls.Viewport3D> control that displays a 3-D cone.  
   
      [!code-xaml[HostingWpfUserControlInWf#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
   

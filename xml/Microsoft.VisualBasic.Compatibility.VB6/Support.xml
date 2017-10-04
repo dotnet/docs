@@ -2301,7 +2301,7 @@
       </Docs>
     </Member>
     <Member MemberName="TabLayout">
-      <MemberSignature Language="C#" Value="public static string TabLayout (object[] Args);" />
+      <MemberSignature Language="C#" Value="public static string TabLayout (params object[] Args);" />
       <MemberSignature Language="ILAsm" Value=".method public static string TabLayout(object[] Args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.TabLayout(System.Object[])" />
       <MemberType>Method</MemberType>

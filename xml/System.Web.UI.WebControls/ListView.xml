@@ -123,11 +123,11 @@
   
 <a name="binding_to_a_data_source"></a>   
 ## Binding to a Data Source  
- You can bind the <xref:System.Web.UI.WebControls.ListView> control to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, <xref:System.Collections.Generic.List%601?displayProperty=fullName>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.ListView> control to the appropriate data source type:  
+ You can bind the <xref:System.Web.UI.WebControls.ListView> control to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.ListView> control to the appropriate data source type:  
   
 -   To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.ListView> control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The <xref:System.Web.UI.WebControls.ListView> control automatically binds to the specified data source control and can take advantage of the data source control's capabilities to perform sorting, inserting, updating, deleting, and paging functionality. This is the preferred method to bind to data.  
   
--   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.ListView> control to the data source, and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When you use this technique, the <xref:System.Web.UI.WebControls.ListView> control does not provide built-in sorting, updating, deleting, and paging functionality. You must provide this functionality by using the appropriate event.  
+-   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.ListView> control to the data source, and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When you use this technique, the <xref:System.Web.UI.WebControls.ListView> control does not provide built-in sorting, updating, deleting, and paging functionality. You must provide this functionality by using the appropriate event.  
   
  For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
@@ -315,7 +315,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListView> class. To dynamically add a <xref:System.Web.UI.WebControls.ListView> control to a page, create a new <xref:System.Web.UI.WebControls.ListView> object. Set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as a <xref:System.Web.UI.WebControls.PlaceHolder> control.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListView> class. To dynamically add a <xref:System.Web.UI.WebControls.ListView> control to a page, create a new <xref:System.Web.UI.WebControls.ListView> object. Set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as a <xref:System.Web.UI.WebControls.PlaceHolder> control.  
   
  ]]></format>
         </remarks>
@@ -732,7 +732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Parameter> object of the data source control that the <xref:System.Web.UI.WebControls.ListView> control is bound to also has a property named <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A?displayProperty=fullName>. This property performs the same function. Make sure that both properties are set appropriately.  
+ The <xref:System.Web.UI.WebControls.Parameter> object of the data source control that the <xref:System.Web.UI.WebControls.ListView> control is bound to also has a property named <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A?displayProperty=nameWithType>. This property performs the same function. Make sure that both properties are set appropriately.  
   
  ]]></format>
         </remarks>
@@ -980,7 +980,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.CreateInsertItem%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to create an insert item. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.ListView.CreateInsertItem%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to create an insert item. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  This method is primarily used by control developers to extend the <xref:System.Web.UI.WebControls.ListView> control.  
@@ -1284,7 +1284,7 @@
   
  You can use the <xref:System.Web.UI.WebControls.ListView.SelectedDataKey%2A> property to retrieve the <xref:System.Web.UI.WebControls.DataKey> object for the currently selected item. You can also use the <xref:System.Web.UI.WebControls.ListView.SelectedValue%2A> property to retrieve the data-key value for the currently selected item directly.  
   
- You can use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A?displayProperty=fullName> property to retrieve the <xref:System.Web.UI.WebControls.DataKey> object for the item for which a command button was clicked.  
+ You can use the <xref:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex%2A?displayProperty=nameWithType> property to retrieve the <xref:System.Web.UI.WebControls.DataKey> object for the item for which a command button was clicked.  
   
    
   
@@ -1561,7 +1561,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The empty template is displayed in a <xref:System.Web.UI.WebControls.ListView> control when the data source that is bound to the control does not contain any records and the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>. The template is rendered instead of the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template. If the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to a value other than <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>, the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> template is not rendered.  
+ The empty template is displayed in a <xref:System.Web.UI.WebControls.ListView> control when the data source that is bound to the control does not contain any records and the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>. The template is rendered instead of the <xref:System.Web.UI.WebControls.ListView.LayoutTemplate%2A> template. If the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property is set to a value other than <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>, the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> template is not rendered.  
   
  You can define a custom user interface (UI) for the empty template by using the <xref:System.Web.UI.WebControls.ListView.EmptyDataTemplate%2A> property. To specify a custom template declaratively for the empty template, add and `EmptyDataTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. You can then add the contents of the template to the `EmptyDataTemplate` element.  
   
@@ -2117,7 +2117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListView.InsertItem%2A> property to access the insert item of a <xref:System.Web.UI.WebControls.ListView> control. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=fullName>. The content of an insert item is defined by the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> property.  
+ Use the <xref:System.Web.UI.WebControls.ListView.InsertItem%2A> property to access the insert item of a <xref:System.Web.UI.WebControls.ListView> control. An insert item is a <xref:System.Web.UI.WebControls.ListViewItem> object whose <xref:System.Web.UI.WebControls.ListViewItem.ItemType%2A> is equal to <xref:System.Web.UI.WebControls.ListViewItemType?displayProperty=nameWithType>. The content of an insert item is defined by the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> property.  
   
    
   
@@ -2165,9 +2165,9 @@
   
 |Row type|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the first item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the <xref:System.Web.UI.WebControls.ListView> control.|  
-|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>|Does not render the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the first item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>|Renders the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the <xref:System.Web.UI.WebControls.ListView> control.|  
+|<xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>|Does not render the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.|  
   
    
   
@@ -2313,7 +2313,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method to programmatically insert an item in the data source. This method is typically used to insert an item from outside the <xref:System.Web.UI.WebControls.ListView> control, such as from a different control on the page.  
   
- To use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method, you must define an <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template in the <xref:System.Web.UI.WebControls.ListView> control. You must also set the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property to a value different from <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=fullName>. To specify whether page validation is performed before the insert operation, use the `causesValidation` parameter.  
+ To use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method, you must define an <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template in the <xref:System.Web.UI.WebControls.ListView> control. You must also set the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property to a value different from <xref:System.Web.UI.WebControls.InsertItemPosition?displayProperty=nameWithType>. To specify whether page validation is performed before the insert operation, use the `causesValidation` parameter.  
   
  This method raises the <xref:System.Web.UI.WebControls.ListView.ItemInserted> and <xref:System.Web.UI.WebControls.ListView.ItemInserting> events.  
   
@@ -2655,7 +2655,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.ItemCommand> event is also raised when a button that is listed in the previous table is clicked. However, it is recommended that you use the events listed in the table. The <xref:System.Web.UI.WebControls.ListView.ItemCommand> event is usually used to handle custom operations.  
   
- A <xref:System.Web.UI.WebControls.ListViewCommandEventArgs> object is passed to the event handler, which enables you to determine the command name and command argument of the button that was clicked. To determine the command name, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A?displayProperty=fullName> property. To determine the command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A?displayProperty=fullName> property. To access the control that raised the event, use the <xref:System.Web.UI.WebControls.ListViewCommandEventArgs.CommandSource%2A?displayProperty=fullName> property.  
+ A <xref:System.Web.UI.WebControls.ListViewCommandEventArgs> object is passed to the event handler, which enables you to determine the command name and command argument of the button that was clicked. To determine the command name, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A?displayProperty=nameWithType> property. To determine the command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A?displayProperty=nameWithType> property. To access the control that raised the event, use the <xref:System.Web.UI.WebControls.ListViewCommandEventArgs.CommandSource%2A?displayProperty=nameWithType> property.  
   
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -4306,7 +4306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.PerformDataBinding%2A> method is called after data is retrieved in order to bind the data-bound control to data. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.ListView.PerformDataBinding%2A> method is called after data is retrieved in order to bind the data-bound control to data. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -4420,7 +4420,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView.SaveViewState%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to save the state of the control. For more information, see <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.ListView.SaveViewState%2A> method is a helper method that is called by the <xref:System.Web.UI.WebControls.ListView> control to save the state of the control. For more information, see <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

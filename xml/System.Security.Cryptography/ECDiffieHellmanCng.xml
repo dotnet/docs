@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method and must be either a named or explicit prime.  
+ `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method and must be either a named or explicit prime.  
   
  ]]></format>
         </remarks>
@@ -524,7 +524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=fullName> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+ If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
   
  ]]></format>
         </remarks>
@@ -612,7 +612,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `curve` must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method) and must not be implicit.  
+ `curve` must validate (that is, it must return true when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=nameWithType> method) and must not be implicit.  
   
  Characteristic-2 curves are not supported on Windows.  
   

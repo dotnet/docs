@@ -78,7 +78,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
   
 1.  In managed code on a per-thread basis.  
   
-     You can suppress the flow on a per-thread basis by modifying the <xref:System.Threading.ExecutionContext> and <xref:System.Security.SecurityContext> settings by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=fullName>, <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity%2A?displayProperty=fullName> or <xref:System.Security.SecurityContext.SuppressFlow%2A?displayProperty=fullName> method.  
+     You can suppress the flow on a per-thread basis by modifying the <xref:System.Threading.ExecutionContext> and <xref:System.Security.SecurityContext> settings by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType>, <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity%2A?displayProperty=nameWithType> or <xref:System.Security.SecurityContext.SuppressFlow%2A?displayProperty=nameWithType> method.  
   
 2.  In the call to the unmanaged hosting interface to load the common language runtime (CLR).  
   

@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> class that is set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property contains the settings that are used to initialize the properties of the WS-Federation Authentication Module (WSFAM) and control its behavior. These settings are typically loaded from the `<wsFederation>` element in the configuration file.  
+ An instance of the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> class that is set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> property contains the settings that are used to initialize the properties of the WS-Federation Authentication Module (WSFAM) and control its behavior. These settings are typically loaded from the `<wsFederation>` element in the configuration file.  
   
  ]]></format>
     </remarks>
@@ -43,7 +43,7 @@
 ## Remarks  
  The properties of the new instance are initialized according to the settings of the specified `<wsFederation>` element.  
   
- Some validation is performed on the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> object specified by `federationElement`. Both the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=fullName> property and the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Realm%2A?displayProperty=fullName> property must specify non-null, non-empty values. If the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.RequireHttps%2A?displayProperty=fullName> property is set `true`, the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=fullName> property must specify a URI that has an HTTPS scheme. The <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Freshness%2A?displayProperty=fullName> property cannot be negative. If any of these conditions are not met, an exception is thrown.  
+ Some validation is performed on the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> object specified by `federationElement`. Both the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=nameWithType> property and the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Realm%2A?displayProperty=nameWithType> property must specify non-null, non-empty values. If the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.RequireHttps%2A?displayProperty=nameWithType> property is set `true`, the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=nameWithType> property must specify a URI that has an HTTPS scheme. The <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Freshness%2A?displayProperty=nameWithType> property cannot be negative. If any of these conditions are not met, an exception is thrown.  
   
  ]]></format>
         </remarks>

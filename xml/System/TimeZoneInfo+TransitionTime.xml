@@ -547,7 +547,7 @@
 ## Remarks  
  Two <xref:System.TimeZoneInfo.TransitionTime> objects are equal if they have identical values for each of their six properties. Otherwise, they are unequal.  
   
- The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -588,7 +588,7 @@
 ## Remarks  
  Two <xref:System.TimeZoneInfo.TransitionTime> objects are unequal if they have different values for any of their six properties. Otherwise, they are equal.  
   
- The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>

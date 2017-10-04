@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the `My.User.InitializeWithWindowsUser` method to set the thread's current principal to the Windows user that started the application. The Visual Basic Application Model in a Windows application calls this method at startup by default. In other project types, you must set the thread's current principal by calling this method explicitly or by assigning a value to <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName>.  
+ You can use the `My.User.InitializeWithWindowsUser` method to set the thread's current principal to the Windows user that started the application. The Visual Basic Application Model in a Windows application calls this method at startup by default. In other project types, you must set the thread's current principal by calling this method explicitly or by assigning a value to <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType>.  
   
  In Windows projects, the `My.User` object is based on the thread's current principal; therefore, this method can change the information `My.User` returns. In an ASP.NET application, the `My.User` object is based on the current HTTP request's user identity, and is unaffected by this method.  
   
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the <xref:Microsoft.VisualBasic.ApplicationServices.User> object, this property wraps the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. Override this method in a derived class to provide different behavior. For example, the <xref:Microsoft.VisualBasic.ApplicationServices.WebUser.InternalPrincipal%2A?displayProperty=fullName> property overrides this property.  
+ In the <xref:Microsoft.VisualBasic.ApplicationServices.User> object, this property wraps the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. Override this method in a derived class to provide different behavior. For example, the <xref:Microsoft.VisualBasic.ApplicationServices.WebUser.InternalPrincipal%2A?displayProperty=nameWithType> property overrides this property.  
   
  ]]></format>
         </remarks>

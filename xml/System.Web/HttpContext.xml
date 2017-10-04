@@ -361,12 +361,12 @@
 ## Remarks  
  This property is a static property of the <xref:System.Web.HttpContext> class. The property stores the <xref:System.Web.HttpContext> instance that applies to the current request. The properties of this instance are the non-static properties of the <xref:System.Web.HttpContext> class.  
   
- You can also use the <xref:System.Web.UI.Page.Context%2A?displayProperty=fullName> property to access the <xref:System.Web.HttpContext> object for the current HTTP request.  
+ You can also use the <xref:System.Web.UI.Page.Context%2A?displayProperty=nameWithType> property to access the <xref:System.Web.HttpContext> object for the current HTTP request.  
   
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.HttpContext.Current%2A> property to access the <xref:System.Web.HttpContext.AddError%2A?displayProperty=fullName> and <xref:System.Web.HttpContext.ClearError%2A?displayProperty=fullName> methods and the <xref:System.Web.HttpContext.AllErrors%2A?displayProperty=fullName> property. The example creates three custom exceptions using the <xref:System.Web.HttpContext.AddError%2A> method and uses the <xref:System.Web.HttpContext.AllErrors%2A> property to load these exceptions to an array. It then writes the array to the containing page and uses the <xref:System.Web.HttpContext.ClearError%2A> method to clear all the errors from the <xref:System.Web.UI.Page.Context%2A> property.  
+ The following code example uses the <xref:System.Web.HttpContext.Current%2A> property to access the <xref:System.Web.HttpContext.AddError%2A?displayProperty=nameWithType> and <xref:System.Web.HttpContext.ClearError%2A?displayProperty=nameWithType> methods and the <xref:System.Web.HttpContext.AllErrors%2A?displayProperty=nameWithType> property. The example creates three custom exceptions using the <xref:System.Web.HttpContext.AddError%2A> method and uses the <xref:System.Web.HttpContext.AllErrors%2A> property to load these exceptions to an array. It then writes the array to the containing page and uses the <xref:System.Web.HttpContext.ClearError%2A> method to clear all the errors from the <xref:System.Web.UI.Page.Context%2A> property.  
   
 ```csharp  
 protected void Page_Load(object sender, EventArgs e)  
@@ -1160,7 +1160,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpContext.RewritePath%28System.String%2CSystem.Boolean%29?displayProperty=fullName> method is called by the <xref:System.Web.HttpContext.RewritePath%28System.String%29?displayProperty=fullName> method with the `rebaseClientPath` parameter set to `true`. To ensure that the virtual path that is used to construct paths to resources is not modified, set the `rebaseClientPath` parameter to `false`. A common scenario in which you might want to set `rebaseClientPath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
+ The <xref:System.Web.HttpContext.RewritePath%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method is called by the <xref:System.Web.HttpContext.RewritePath%28System.String%29?displayProperty=nameWithType> method with the `rebaseClientPath` parameter set to `true`. To ensure that the virtual path that is used to construct paths to resources is not modified, set the `rebaseClientPath` parameter to `false`. A common scenario in which you might want to set `rebaseClientPath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
@@ -1329,7 +1329,7 @@ End Sub
   
 -   An ASP.NET application that has session state enabled.  
   
--   A Web Forms page class that has access to the <xref:System.Web.UI.Page.Session%2A?displayProperty=fullName> property, or any class that has access to the <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName> property.  
+-   A Web Forms page class that has access to the <xref:System.Web.UI.Page.Session%2A?displayProperty=nameWithType> property, or any class that has access to the <xref:System.Web.HttpContext.Current%2A?displayProperty=nameWithType> property.  
   
 ```csharp  
 string firstName = "Jeff";  
@@ -1485,7 +1485,7 @@ firstName = DirectCast(context.Session("FirstName"), String)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In handlers and modules that are using the <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=fullName> property to implement cooperative cancellation, you might wish to disable the <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName> behavior that ASP.NET performs by default when a request times out. Setting this property to `false` can help you make sure that cancellation and cleanup routines will run without being interrupted by ASP.NET.  
+ In handlers and modules that are using the <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=nameWithType> property to implement cooperative cancellation, you might wish to disable the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> behavior that ASP.NET performs by default when a request times out. Setting this property to `false` can help you make sure that cancellation and cleanup routines will run without being interrupted by ASP.NET.  
   
  If you set this property to `false`, ASP.NET will not automatically display a "Request timed out" error page when a timeout occurs. The application is responsible for setting the response content appropriately.  
   

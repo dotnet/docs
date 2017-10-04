@@ -46,12 +46,12 @@ When your <xref:System.Windows.Forms.DataGridView> control is set to autogenerat
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` bound to a table that contains `Fax` and `CustomerID` columns, such as the `Customers` table in the Northwind sample database.  
   
--   References to the <xref:System?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewColumnCollection.Remove%2A?displayProperty=fullName>   
- <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A?displayProperty=fullName>   
+ <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridViewColumnCollection.Remove%2A?displayProperty=nameWithType>   
+ <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A?displayProperty=nameWithType>   
  [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)

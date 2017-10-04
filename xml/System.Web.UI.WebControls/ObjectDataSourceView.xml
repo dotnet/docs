@@ -89,7 +89,7 @@
 ## Filtering and Sorting Data  
  Data retrieval is more powerful when you can filter the data dynamically. Filtering is supported only by the <xref:System.Web.UI.WebControls.ObjectDataSource> control if the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> method returns a <xref:System.Data.DataTable> or <xref:System.Data.DataSet> object. You can use the <xref:System.Web.UI.WebControls.ObjectDataSourceView.FilterExpression%2A> and <xref:System.Web.UI.WebControls.ObjectDataSourceView.FilterParameters%2A> properties to apply dynamic filtering to data retrieval. These properties are implemented by the <xref:System.Web.UI.WebControls.ObjectDataSourceView> object and exposed directly by its <xref:System.Web.UI.WebControls.ObjectDataSource> control to data-bound controls and other callers.  
   
- You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.ObjectDataSource> by ordering the data in memory after it is retrieved. Sorting is supported only by the <xref:System.Web.UI.WebControls.ObjectDataSource> control if the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> method returns a <xref:System.Data.DataTable> or <xref:System.Data.DataSet>. The <xref:System.Web.UI.WebControls.ObjectDataSourceView.CanSort%2A> property always returns `true`, because the <xref:System.Web.UI.WebControls.ObjectDataSourceView> cannot determine what type is returned by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> method without calling the method. The <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property syntax is the same as for a <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property.  
+ You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.ObjectDataSource> by ordering the data in memory after it is retrieved. Sorting is supported only by the <xref:System.Web.UI.WebControls.ObjectDataSource> control if the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> method returns a <xref:System.Data.DataTable> or <xref:System.Data.DataSet>. The <xref:System.Web.UI.WebControls.ObjectDataSourceView.CanSort%2A> property always returns `true`, because the <xref:System.Web.UI.WebControls.ObjectDataSourceView> cannot determine what type is returned by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> method without calling the method. The <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property syntax is the same as for a <xref:System.Data.DataView.Sort%2A?displayProperty=nameWithType> property.  
   
 ## Tracking View State  
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementation of the <xref:System.Web.UI.WebControls.ObjectDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
@@ -337,7 +337,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Not converting `null` to the <xref:System.DBNull.Value?displayProperty=fullName> value can result in errors at run time. Use the <xref:System.Web.UI.WebControls.ObjectDataSourceView.ConvertNullToDBNull%2A> property to indicate whether the <xref:System.Web.UI.WebControls.Parameter> values that are passed to an update, insert, or a delete operation are automatically converted from `null` to the <xref:System.DBNull.Value?displayProperty=fullName> value. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.ConvertNullToDBNull?displayProperty=fullName>.  
+ Not converting `null` to the <xref:System.DBNull.Value?displayProperty=nameWithType> value can result in errors at run time. Use the <xref:System.Web.UI.WebControls.ObjectDataSourceView.ConvertNullToDBNull%2A> property to indicate whether the <xref:System.Web.UI.WebControls.Parameter> values that are passed to an update, insert, or a delete operation are automatically converted from `null` to the <xref:System.DBNull.Value?displayProperty=nameWithType> value. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.ConvertNullToDBNull?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -362,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Instead of specifying several parameters that are passed to the `Select`, `Update`, `Insert`, and `Delete` methods, you can create one object that aggregates several items. This one object is passed to the methods, instead of several parameters. For more information see <xref:System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName?displayProperty=fullName>.  
+ Instead of specifying several parameters that are passed to the `Select`, `Update`, `Insert`, and `Delete` methods, you can create one object that aggregates several items. This one object is passed to the methods, instead of several parameters. For more information see <xref:System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1936,7 +1936,7 @@
   
  If the business object that the <xref:System.Web.UI.WebControls.ObjectDataSource> control works with implements more than one method or function with the same name (method overloads), the data source control attempts to invoke the correct one according to a set of conditions, including the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters%2A> collection. If the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters%2A> collection do not match those of the signature of the method specified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> property, the data source throws an exception.  
   
- For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod?displayProperty=fullName>.  
+ For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod?displayProperty=nameWithType>.  
   
    
   
@@ -1969,7 +1969,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters%2A> collection must match the names and types of the parameters that are in the method specified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> property signature. When working with data-bound controls that supply parameters, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, the <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically merges any parameters that are explicitly specified in the collection with those parameters that are provided by the data-bound control. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod?displayProperty=fullName>.  
+ The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectParameters%2A> collection must match the names and types of the parameters that are in the method specified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SelectMethod%2A> property signature. When working with data-bound controls that supply parameters, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, the <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically merges any parameters that are explicitly specified in the collection with those parameters that are provided by the data-bound control. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod?displayProperty=nameWithType>.  
   
    
   
@@ -2288,7 +2288,7 @@
   
  If the business object that the <xref:System.Web.UI.WebControls.ObjectDataSource> object works with implements more than one method or function with the same name (method overloads), the data source control attempts to invoke the correct one according to a set of conditions, including the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection. If the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection do not match those of the signature of the method specified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateMethod%2A> property, the data source throws an exception.  
   
- For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod?displayProperty=fullName>.  
+ For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod?displayProperty=nameWithType>.  
   
  The value of the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateMethod%2A> property is stored in view state.  
   
@@ -2323,7 +2323,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection must match the names and types of the parameters that are in the method specified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateMethod%2A> property signature. The parameter names are affected by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.OldValuesParameterFormatString%2A> property and are case sensitive. When working with data-bound controls that supply parameters, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, the <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically merges any parameters that are explicitly specified in the collection with those parameters that are provided by the data-bound control. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod?displayProperty=fullName>.  
+ The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> collection must match the names and types of the parameters that are in the method specified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateMethod%2A> property signature. The parameter names are affected by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.OldValuesParameterFormatString%2A> property and are case sensitive. When working with data-bound controls that supply parameters, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, the <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically merges any parameters that are explicitly specified in the collection with those parameters that are provided by the data-bound control. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod?displayProperty=nameWithType>.  
   
    
   

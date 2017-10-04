@@ -528,7 +528,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A?displayProperty=fullName> method to process posted data for changes to a <xref:System.Web.UI.WebControls.ListBox> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A?displayProperty=nameWithType> method to process posted data for changes to a <xref:System.Web.UI.WebControls.ListBox> object.  
   
  The <xref:System.Web.UI.WebControls.ListBox.System%23Web%23UI%23IPostBackDataHandler%23LoadPostData%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ListBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
@@ -558,7 +558,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.ListBox> object changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.ListBox> object changes.  
   
  The <xref:System.Web.UI.WebControls.ListBox.System%23Web%23UI%23IPostBackDataHandler%23LoadPostData%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ListBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   

@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=fullName> event lets you cancel changes to the current cell when the new value is not valid. Use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.FormattedValue%2A> property to determine the current value. To determine the state of the current cell, use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.RowIndex%2A> and <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.ColumnIndex%2A> properties to access the cell through the <xref:System.Windows.Forms.DataGridView.Rows%2A?displayProperty=fullName> collection. To cancel the change, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+ The <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=nameWithType> event lets you cancel changes to the current cell when the new value is not valid. Use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.FormattedValue%2A> property to determine the current value. To determine the state of the current cell, use the <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.RowIndex%2A> and <xref:System.Windows.Forms.DataGridViewCellValidatingEventArgs.ColumnIndex%2A> properties to access the cell through the <xref:System.Windows.Forms.DataGridView.Rows%2A?displayProperty=nameWithType> collection. To cancel the change, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- When this event is canceled in data-bound mode, the new value is not pushed to the underlying data source. When this event is canceled in virtual mode, the <xref:System.Windows.Forms.DataGridView.CellValuePushed?displayProperty=fullName> event will not be raised.  
+ When this event is canceled in data-bound mode, the new value is not pushed to the underlying data source. When this event is canceled in virtual mode, the <xref:System.Windows.Forms.DataGridView.CellValuePushed?displayProperty=nameWithType> event will not be raised.  
   
    
   

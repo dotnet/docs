@@ -366,7 +366,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
+ This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=nameWithType> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
   
  Signers whose certificates meet the following conditions will be displayed in the list:  
   
@@ -381,13 +381,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
   
    
   
@@ -434,9 +434,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
   
    
   
@@ -486,13 +486,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>

@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
       <Constraints>
@@ -28,13 +34,13 @@
   
  There are four extensible objects in [!INCLUDE[indigo1](~/includes/indigo1-md.md)]:  
   
--   <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName>  
+-   <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.InstanceContext?displayProperty=fullName>  
+-   <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.IContextChannel?displayProperty=fullName>  
+-   <xref:System.ServiceModel.IContextChannel?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.OperationContext?displayProperty=fullName>  
+-   <xref:System.ServiceModel.OperationContext?displayProperty=nameWithType>  
   
  For a discussion about how to create extension to work with these objects, see [Extensible Objects](~/docs/framework/wcf/extending/extensible-objects.md).  
   
@@ -51,6 +57,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.IExtensionCollection&lt;T&gt;</ReturnType>

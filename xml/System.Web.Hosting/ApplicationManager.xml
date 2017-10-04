@@ -451,7 +451,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method in all application domains managed by this <xref:System.Web.Hosting.ApplicationManager> instance; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method can be called from outside the managed application domains.  
+ Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=nameWithType> method in all application domains managed by this <xref:System.Web.Hosting.ApplicationManager> instance; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method can be called from outside the managed application domains.  
   
  ]]></format>
         </remarks>
@@ -479,7 +479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method for a specific application domain; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method can be called from outside managed application domains.  
+ Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=nameWithType> method for a specific application domain; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method can be called from outside managed application domains.  
   
  ]]></format>
         </remarks>

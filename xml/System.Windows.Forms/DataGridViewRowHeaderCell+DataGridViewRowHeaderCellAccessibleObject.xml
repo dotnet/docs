@@ -106,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.DoDefaultAction%2A> method selects the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect>.  
+ The <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject.DoDefaultAction%2A> method selects the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect>.  
   
  ]]></format>
         </remarks>

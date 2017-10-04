@@ -33,7 +33,7 @@ The XSLT language has a rich set of features that give you a great deal of power
  Extension objects are added using the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method. The FullTrust permission set is required to support extension objects. This ensures that elevation of permissions does not happen when extension object code is executed. Attempting to call the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method without FullTrust permissions results in a security exception being thrown.  
   
 ### Style Sheet Scripts  
- Scripts can be embedded in a style sheet using the `msxsl:script` extension element. Script support is an optional feature on the <xref:System.Xml.Xsl.XslCompiledTransform> class that is disabled by default. Scripting can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A?displayProperty=fullName> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
+ Scripts can be embedded in a style sheet using the `msxsl:script` extension element. Script support is an optional feature on the <xref:System.Xml.Xsl.XslCompiledTransform> class that is disabled by default. Scripting can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
   
 #### Guidelines  
  Enable scripting only when the style sheet comes from a trusted source. If you cannot verify the source of the style sheet, or if the style sheet does not come from a trusted source, pass in `null` for the XSLT settings argument.  
@@ -46,7 +46,7 @@ The XSLT language has a rich set of features that give you a great deal of power
 -   When executing the transformation, the <xref:System.Xml.XmlResolver> is used to resolve the `document()` function.  
   
     > [!NOTE]
-    >  The `document()` function is disabled by default on the <xref:System.Xml.Xsl.XslCompiledTransform> class. This feature can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableDocumentFunction%2A?displayProperty=fullName> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
+    >  The `document()` function is disabled by default on the <xref:System.Xml.Xsl.XslCompiledTransform> class. This feature can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableDocumentFunction%2A?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
   
  The <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> and <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> methods each include overloads that accept an <xref:System.Xml.XmlResolver> as one of its arguments. If an <xref:System.Xml.XmlResolver> is not specified, a default <xref:System.Xml.XmlUrlResolver> with no credentials is used.  
   

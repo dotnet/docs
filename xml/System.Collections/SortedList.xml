@@ -44,7 +44,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the generic version of this collection, see <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>.  
+ For the generic version of this collection, see <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType>.  
   
  A <xref:System.Collections.SortedList> element can be accessed by its key, like an element in any <xref:System.Collections.IDictionary> implementation, or by its index, like an element in any <xref:System.Collections.IList> implementation.  
   
@@ -663,7 +663,7 @@
 ## Remarks  
  The elements of a <xref:System.Collections.SortedList> object are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves.  
   
- <xref:System.Collections.SortedList.Contains%2A> implements <xref:System.Collections.IDictionary.Contains%2A?displayProperty=fullName>. It behaves exactly as <xref:System.Collections.SortedList.ContainsKey%2A>.  
+ <xref:System.Collections.SortedList.Contains%2A> implements <xref:System.Collections.IDictionary.Contains%2A?displayProperty=nameWithType>. It behaves exactly as <xref:System.Collections.SortedList.ContainsKey%2A>.  
   
  This method uses a binary search algorithm; therefore, this method is an O(log `n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
   

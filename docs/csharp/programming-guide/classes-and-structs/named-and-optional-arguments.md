@@ -50,29 +50,33 @@ translation.priority.ht:
  Named and optional parameters, when used together, enable you to supply arguments for only a few parameters from a list of optional parameters. This capability greatly facilitates calls to COM interfaces such as the Microsoft Office Automation APIs.  
   
 ## Named Arguments  
- Named arguments free you from the need to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & shipping status) can be called in the standard way by sending arguments by position, in the order defined by the function.
+ Named arguments free you from the need to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called in the standard way by sending arguments by position, in the order defined by the function.
   
- `PrintOrderDetails("Foo", 31, true);`
+ `PrintOrderDetails("Gift Shop", 31, "Red Mug");`
   
  If you do not remember the order of the parameters but know their names, you can send the arguments in any order.  
   
- `PrintOrderDetails(orderNum: 31, hasShipped: true, sellerName: "Foo");`
+ `PrintOrderDetails(orderNum: 31, productName: "Red Mug", sellerName: "Gift Shop");`
   
- `PrintOrderDetails(hasShipped: true, sellerName: "Foo", orderNum: 31);`
+ `PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);`
   
  Named arguments also improve the readability of your code by identifying what each argument represents.  
   
- Named arguments are valid as long as they're used in the correct position, as shown here.
-  
- `PrintOrderDetails("Foo", 31, hasShipped: true);`
-  
- `PrintOrderDetails(sellerName: "Foo", orderNum: 31, true);`
-  
- However, out-of-order named arguments are invalid. The following statements cause a compiler error.
+ Named arguments, when used with positional arguments, are valid as long as 
 
- `// PrintOrderDetails(31, sellerName: "Foo", true);`
+- they're not followed by any positional arguments, or
 
- `// PrintOrderDetails(31, true, sellerName: "Foo");`
+ `PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");`
+
+- _starting with C# 7.2_, they're used in the correct position.
+
+ `PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");`
+  
+ However, out-of-order named arguments are invalid if they're followed by positional arguments. The following statements cause a compiler error.
+
+ `// PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");`
+
+ `// PrintOrderDetails(31, sellerName: "Gift Shop", "Red Mug");`
   
 ## Example  
  The following code implements the examples from this section along with some additional ones.  

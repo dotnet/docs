@@ -106,4 +106,4 @@ The `join` clause is useful for associating elements from different source seque
  [How to: Perform Grouped Joins](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)   
  [How to: Order the Results of a Join Clause](../../../csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)   
  [How to: Join by Using Composite Keys](../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)   
- [How to: Install Sample Databases](/sql/analysis-services/install-sample-data-and-projects)
+ [How to: Install Sample Databases](/visualstudio/data-tools/installing-database-systems-tools-and-samples)

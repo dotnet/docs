@@ -40,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Set Environment Variables for the Visual Studio Command Line
-The vsvars32.bat file sets the appropriate environment variables to enable command-line builds. For more information about vsvars32.bat, see [Knowledge Base article Q248802](https://support.microsoft.com/en-us/help/248802/you-receive-the-out-of-environment-space-error-message-when-you-execut).  
+The vsvars32.bat file sets the appropriate environment variables to enable command-line builds. For more information about vsvars32.bat, see [Knowledge Base article Q248802](http://go.microsoft.com/fwlink/?LinkId=225042).  
   
  If the current version of Visual Studio is installed on a computer that also has an earlier version of Visual Studio, you should not run vsvars32.bat or vcvars32.bat from different versions in the same Command Prompt window.  
   

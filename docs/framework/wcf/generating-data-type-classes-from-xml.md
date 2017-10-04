@@ -34,7 +34,7 @@ manager: "erikre"
   
 3.  Select **Edit**, **Paste Special**, **Paste XML as Classes**.  
   
-4.  Classes called `rss`, `rssChannel`, `rssChannelImage`, and `rssChannelItem` are created with the necessary members for accessing the elements in the RSS feed.  
+4.  Classes called `link`, `rss`, `rssChannel`, `rssChannelImage`, `rssChannelItem` and `rssChannelItemGuid` are created with the necessary members for accessing the elements in the RSS feed.  
   
 ### Using the generated classes  
   

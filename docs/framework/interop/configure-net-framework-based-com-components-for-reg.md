@@ -46,7 +46,7 @@ Registration-free activation for .NET Framework-based components is only slightl
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
     ```  
   
-     For information about manifest elements and their attributes, search for "Application Manifests Reference" in Microsoft Docs.  
+     For information about manifest elements and their attributes, see [Application Manifests](https://msdn.microsoft.com/library/windows/desktop/aa374191.aspx).  
   
 3.  Identify the owner of the manifest. In the following example, `myComApp` version 1 owns the manifest file.  
   

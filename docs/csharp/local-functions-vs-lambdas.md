@@ -11,7 +11,7 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
 ---
-# Local functions compared to Lambda expressions
+# Local functions compared to lambda expressions
 
 At first glance, [local functions](programming-guide/classes-and-structs/local-functions.md) and [lambda expressions](lambda-expressions.md) are very similar.
 Depending on your needs, local functions may be a much better and simpler

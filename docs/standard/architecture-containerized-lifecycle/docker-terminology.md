@@ -8,7 +8,7 @@ ms.date: 09/21/2017
 ---
 # Docker terminology
 
-This section lists terms and definitions with which you should become familiar with before delving deeper into Docker (for further definitions, see the extensive [glossary](https://docs.docker.com/v1.11/engine/reference/glossary/) provided by Docker at <https://docs.docker.com/v1.11/engine/reference/glossary/>):
+This section lists terms and definitions with which you should become familiar with before delving deeper into Docker (for further definitions, see the extensive [glossary](https://docs.docker.com//glossary/) provided by Docker at <https://docs.docker.com/v1.11/engine/reference/glossary/>:
 
 -   **Container image** A package with all of the dependencies and information needed to create a container. An image includes all of the dependencies (such as frameworks) plus deployment and configuration to be used by a container runtime. Usually, an image derives from multiple base images that are layers stacked one atop the other to form the container's file system. An image is immutable after it has been created.
 
@@ -28,8 +28,7 @@ This section lists terms and definitions with which you should become familiar w
 
 -   **Azure Container Registry** A public resource for working with Docker images and its components in Azure. This provides a registry that is close to your deployments in Azure and that gives you control over access, making it possible to use your Azure Active Directory groups and permissions.
 
--   **Docker Trusted Registry (DTR)** A Docker registry service (from Docker) that you can install on-premises so that it resides within the organization's datacenter and network. It is convenient for private images that should be managed within the enterprise. Docker Trusted Registry is included as part of the Docker Datacenter product. For more information, go to [https://docs.docker.com/\
-    > docker-trusted-registry/overview/](https://docs.docker.com/docker-trusted-registry/overview/).
+-   **Docker Trusted Registry (DTR)** A Docker registry service (from Docker) that you can install on-premises so that it resides within the organization's datacenter and network. It is convenient for private images that should be managed within the enterprise. Docker Trusted Registry is included as part of the Docker Datacenter product. For more information, go to [https://docs.docker.com/docker-trusted-registry/overview/](https://docs.docker.com/docker-trusted-registry/overview/).
 
 -   **Docker Community Edition (CE)** Development tools for Windows and macOS for building, running, and testing containers locally. Docker CE for Windows provides development environments for both Linux and Windows Containers. The Linux Docker host on Windows is based on a [Hyper-V](https://www.microsoft.com/en-us/server-cloud/solutions/virtualization.aspx) VM. The host for Windows Containers is directly based on Windows. Docker CE for Mac is based on the Apple Hypervisor framework and the [xhyve hypervisor](https://github.com/mist64/xhyve), which provides a Linux Docker host VM on Mac OS X. Docker CE for Windows and for Mac replaces Docker Toolbox, which was based on Oracle VirtualBox.
 

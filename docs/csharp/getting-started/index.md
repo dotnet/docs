@@ -68,4 +68,3 @@ The following topics are available:
 
 ## See also
  [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
- [Visual Studio Express Download Center](https://www.visualstudio.com/vs/visual-studio-express/)

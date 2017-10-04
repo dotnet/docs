@@ -21,26 +21,26 @@ numbers, and booleans. It's all interactive, and you'll be writing code
 within minutes. These first lessons assume no prior knowledge of
 programming or the C# language.
 
-## [Hello world](hello-world)
+## [Hello world](hello-world.yml)
 
-In the [Hello world](hello-world) lesson, you'll create the most basic
+In the [Hello world](hello-world.yml) lesson, you'll create the most basic
 C#. You'll explore the `string` type and how to work with text.
 
-## [Numbers in C#](numbers-in-csharp)
+## [Numbers in C#](numbers-in-csharp.yml)
 
-In the [Numbers in C#](numbers-in-csharp) lesson, you'll learn
+In the [Numbers in C#](numbers-in-csharp.yml) lesson, you'll learn
 how computers store numbers and how to perform calculations with different
 number types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#.
 
-This lesson assumes that you have finished the [Hello world](hello-world) tutorial.
+This lesson assumes that you have finished the [Hello world](hello-world.yml) tutorial.
 
-## [Branches and loops](branches-and-loops)
+## [Branches and loops](branches-and-loops.yml)
 
-The [Branches and loops](branches-and-loops) lesson teaches the basics of selecting
+The [Branches and loops](branches-and-loops.yml) lesson teaches the basics of selecting
 different paths of code based on the values stored in variables. You'll learn the
 basics of control flow, which is the basics of how programs make decisions and choose
 different actions.
 
-This beginner lesson assumes that you have finished the [Hello World](hello-world) and
-[Numbers in C#](numbers-in-csharp) lessons.
+This beginner lesson assumes that you have finished the [Hello World](hello-world.yml) and
+[Numbers in C#](numbers-in-csharp.yml) lessons.

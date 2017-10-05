@@ -137,9 +137,9 @@
       "dev_langs": {
         "docs/core/**/**.md": ["csharp"],
         "docs/csharp/**/**.md": ["csharp"],
-        "docs/framework/**/**.md": ["csharp", "vb"],
+        "docs/framework/**/**.md": ["csharp"],
         "docs/fsharp/**/**.md": ["fsharp"],
-        "docs/standard/**/**.md": ["csharp", "vb"],
+        "docs/standard/**/**.md": ["csharp"],
         "docs/visual-basic/**/**.md": ["vb"]
       },
       "ROBOTS": {

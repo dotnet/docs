@@ -8,7 +8,8 @@ ms.date: 08/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-vb
-ms.devlang: vb
+dev_langs:
+- "vb"
 ---
 
 # Building a class library with Visual Basic and .NET Core in Visual Studio 2017

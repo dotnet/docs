@@ -3,6 +3,9 @@ title: "Serialization guidelines"
 ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.topic: "article"
+dev_langs:
+- "csharp"
+- "vb"
 helpviewer_keywords: 
   - "serialization, guidelines"
   - "binary serialization, guidelines"

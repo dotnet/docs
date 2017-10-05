@@ -60,15 +60,15 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. You should save this code in a file named DisplayModeMenuCS.ascx or DisplayModeMenuVB.ascx (depending on which language you are using). For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_CatalogPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/VB/displaymodemenuvb.ascx#5)]  
   
  The second part of the code example is the Web page. The page contains a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control, and within the child `<zonetemplate>` element, each of the three <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls provided with the Web Parts control set is declared. Some attribute are set on the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control, and also in the \<script> section of the page, the attributes on that control are accessed programmatically. The control contains one child control that a user can add to the page:  a standard <xref:System.Web.UI.WebControls.Calendar> control. The <xref:System.Web.UI.WebControls.WebParts.CatalogZone> and <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control will only be visible when the user switches the page to catalog display mode.  
   
  The page also contains a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and within its child `<zonetemplate>` element is an <xref:System.Web.UI.WebControls.AdRotator> control that displays alternating messages from an XML file. If a user closes the control by clicking its close verb when the page is displayed, the control is added to the page catalog, and the user can reopen the control by switching the page into catalog display mode, accessing the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control, and adding back the closed control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/CS/catalogpartcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/VB/catalogpartvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_CatalogPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/CS/catalogpartcs.aspx#1)]
+ [!code-aspx-vb[WebParts_CatalogPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPart_Overview/VB/catalogpartvb.aspx#1)]  
   
  The third part of the code example is the XML file. This file is a source file for the <xref:System.Web.UI.WebControls.AdRotator> control that is declared on the page. The file contains favorite quotations, which the control periodically rotates and displays. Copy the following content into a text editor, and save the file as Quotes.xml.  
   

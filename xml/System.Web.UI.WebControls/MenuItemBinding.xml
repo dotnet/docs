@@ -105,8 +105,8 @@
 ## Examples  
  The following code example demonstrates how to use <xref:System.Web.UI.WebControls.MenuItemBinding> objects to define the relationship between the fields of an <xref:System.Web.UI.WebControls.XmlDataSource> control and the menu items in a <xref:System.Web.UI.WebControls.Menu> control. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -215,8 +215,8 @@
 ## Examples  
  The following code example demonstrates how to use this constructor to dynamically populate the <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection of a <xref:System.Web.UI.WebControls.Menu> control. For this example to work correctly, you must copy the sample XML data below to a file named MenuDepth.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingCtor/CS/menuitembindingctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingCtor/VB/menuitembindingctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingCtor/CS/menuitembindingctorcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingCtor/VB/menuitembindingctorvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -361,8 +361,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.DataMember%2A> property to specify which XML element to bind to the menu items in a <xref:System.Web.UI.WebControls.Menu> control. For this example to work correctly, you must copy the sample XML data below to a file named MenuDataMember.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingDataMember#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingDataMember/CS/menuitembindingdatamembercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingDataMember#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingDataMember/VB/menuitembindingdatamembervb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingDataMember#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingDataMember/CS/menuitembindingdatamembercs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingDataMember#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingDataMember/VB/menuitembindingdatamembervb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -510,8 +510,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.Depth%2A> property to specify the menu depth at which to apply a <xref:System.Web.UI.WebControls.MenuItemBinding> object. For this example to work correctly, you must copy the sample XML data below to a file named MenuDepth.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingDepth#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingDepth/CS/menuitembindingdepthcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingDepth#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingDepth/VB/menuitembindingdepthvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingDepth#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingDepth/CS/menuitembindingdepthcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingDepth#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingDepth/VB/menuitembindingdepthvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -731,8 +731,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.FormatString%2A> property to format the text displayed in the menu items of a <xref:System.Web.UI.WebControls.Menu> control. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -863,8 +863,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrl%2A> property to specify the URL to an image to display next to the text of the menu items. This image is displayed in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -994,8 +994,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.ImageUrlField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A> property of a menu item. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -1126,8 +1126,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrl%2A> property to specify the URL to navigate to when a menu item is clicked. This URL is used in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -1257,8 +1257,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.NavigateUrlField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.NavigateUrl%2A> property of a menu item. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -1780,8 +1780,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.Target%2A> property to specify the window in which to display the Web content associated with a menu item, when that menu item is clicked. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -1970,8 +1970,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> property to specify the text to display in a menu item. This text is displayed in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -2103,8 +2103,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property of a menu item. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -2234,8 +2234,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTip%2A> property to specify the ToolTip to display when the user positions the mouse pointer over a menu item. This ToolTip is displayed for each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -2365,8 +2365,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.ToolTipField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A> property of a menu item. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -2515,8 +2515,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.Value%2A> property to specify a nondisplayed value associated with a menu item. This value is used in each menu item to which the <xref:System.Web.UI.WebControls.MenuItemBinding> object is applied. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBindingText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBindingText/CS/menuitembindingtextcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBindingText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBindingText/VB/menuitembindingtextvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   
@@ -2646,8 +2646,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemBinding.ValueField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.MenuItem.Value%2A> property of a menu item. For this example to work correctly, you must copy the sample XML data below to a file named Menu.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[MenuItemBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemBinding/CS/menuitembindingcs.aspx#1)]
+ [!code-aspx-vb[MenuItemBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemBinding/VB/menuitembindingvb.aspx#1)]  
   
  The following code is sample site map data for the previous example.  
   

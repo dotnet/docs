@@ -176,8 +176,8 @@
 ## Examples  
  The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of a data-bound control is used. In this example, the <xref:System.Web.UI.WebControls.GridView> control is bound to a <xref:System.Data.DataSet> object. After the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property is set, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is called explicitly.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataBind/CS/gridviewdatabindcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataBind/VB/gridviewdatabindvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataBind/CS/gridviewdatabindcs.aspx#1)]
+ [!code-aspx-vb[GridViewDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataBind/VB/gridviewdatabindvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -219,8 +219,8 @@
 ## Examples  
  The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property of a data-bound control is used. The <xref:System.Web.UI.WebControls.GridView> control is associated to the <xref:System.Web.UI.WebControls.SqlDataSource> control by setting its <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property to "AuthorsSqlDataSource", the ID of the <xref:System.Web.UI.WebControls.SqlDataSource> control. When the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property is set (instead of the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property), the data-bound control automatically binds to the data source control at run time.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]
+ [!code-aspx-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  
   
  ]]></format>
         </remarks>

@@ -38,8 +38,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.HttpUtility.UrlEncode%2A>, <xref:System.Web.HttpUtility.UrlDecode%2A> and <xref:System.Web.HttpUtility.ParseQueryString%2A> methods of the <xref:System.Web.HttpUtility> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpUtilityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtilityExample/cs/httputilityexample.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpUtilityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtilityExample/vb/httputilityexample.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpUtilityExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtilityExample/cs/httputilityexample.aspx#1)]
+ [!code-aspx-vb[HttpUtilityExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtilityExample/vb/httputilityexample.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -542,8 +542,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.HttpUtility.ParseQueryString%2A> method. Multiple occurrences of the same query string variable are consolidated in one entry of the returned <xref:System.Collections.Specialized.NameValueCollection>.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpUtility_ParseQueryString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_ParseQueryString/cs/httputility_parsequerystring.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpUtility_ParseQueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_ParseQueryString/vb/httputility_parsequerystring.aspx#1)]  -->  
+ [!code-aspx-csharp[HttpUtility_ParseQueryString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpUtility_ParseQueryString/cs/httputility_parsequerystring.aspx#1)]
+ [!code-aspx-vb[HttpUtility_ParseQueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpUtility_ParseQueryString/vb/httputility_parsequerystring.aspx#1)]  
   
  ]]></format>
         </remarks>

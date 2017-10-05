@@ -47,8 +47,8 @@
 ## Examples  
  The following example demonstrates how to use an <xref:System.Web.UI.WebControls.ImageField> object in a <xref:System.Web.UI.WebControls.GridView> control to display an image.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -82,8 +82,8 @@
 ## Examples  
  The following example demonstrates how to use this constructor to dynamically add an <xref:System.Web.UI.WebControls.ImageField> object to the <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldCtor/CS/ImageFieldCtorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldCtor/VB/ImageFieldCtorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldCtor/CS/ImageFieldCtorcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldCtor/VB/ImageFieldCtorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -128,8 +128,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.AlternateText%2A> property to specify the alternate text for all images displayed in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -260,8 +260,8 @@
 ## Examples  
  The following example code demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataAlternateTextField%2A> property to specify the name of the field from the data source that contains the values to bind to the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property of each image in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -332,8 +332,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataAlternateTextFormatString%2A> property to apply a custom format to the alternate text values for the images in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldAlternateTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldAlternateTextField/CS/ImageFieldAlternateTextFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldAlternateTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldAlternateTextField/VB/ImageFieldAlternateTextFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -376,8 +376,8 @@
 ## Examples  
  The following example code demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property of each image in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -443,8 +443,8 @@
 ## Examples  
  The following example code demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlFormatString%2A> property to apply a custom format to the URL values for the images in an <xref:System.Web.UI.WebControls.ImageField> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldImageUrlFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/CS/ImageFieldImageUrlFormatStringcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldImageUrlFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldImageUrlFormatString/VB/ImageFieldImageUrlFormatStringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -773,8 +773,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.NullDisplayText%2A> property to specify the text to display when the value of the field specified by the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlField%2A> property is `null`.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageField/CS/ImageFieldcs.aspx#1)]
+ [!code-aspx-vb[ImageField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageField/VB/ImageFieldvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -820,8 +820,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.NullImageUrl%2A> property to specify the URL to an alternate image to display when the value of the field specified by the <xref:System.Web.UI.WebControls.ImageField.DataImageUrlField%2A> property is `null`.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldNullImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldNullImageUrl/CS/ImageFieldNullImageUrlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldNullImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldNullImageUrl/VB/ImageFieldNullImageUrlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldNullImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldNullImageUrl/CS/ImageFieldNullImageUrlcs.aspx#1)]
+ [!code-aspx-vb[ImageFieldNullImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldNullImageUrl/VB/ImageFieldNullImageUrlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -896,8 +896,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageField.ReadOnly%2A> property to indicate that the field values that represent the URLs to the images displayed in an <xref:System.Web.UI.WebControls.ImageField> object cannot be modified in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageFieldReadOnly#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldReadOnly/CS/ImageFieldReadOnlycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageFieldReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldReadOnly/VB/ImageFieldReadOnlyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageFieldReadOnly#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageFieldReadOnly/CS/ImageFieldReadOnlycs.aspx#1)]
+ [!code-aspx-vb[ImageFieldReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageFieldReadOnly/VB/ImageFieldReadOnlyvb.aspx#1)]  
   
  ]]></format>
         </remarks>

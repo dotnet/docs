@@ -72,8 +72,8 @@
   
  The second part of the code example shows a Web page that hosts the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Notice that the declarative markup contains two <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls, a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control and an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_Overview/CS/zoneoverviewcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_Overview/VB/zoneoverviewvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_Overview/CS/zoneoverviewcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_Overview/VB/zoneoverviewvb.aspx#1)]  
   
  You can load the page in a browser and switch among the various page display modes to see how the different zones behave. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -123,8 +123,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.BackImageUrl%2A> property. Note that there are two zones in the declarative markup, and the second `<asp:webpartzone>` element is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_BackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/CS/zonebackimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_BackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/VB/zonebackimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_BackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/CS/zonebackimageurlcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_BackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/VB/zonebackimageurlvb.aspx#1)]  
   
  In a browser, you can switch to design mode to see the image in the empty zone. Note that an actual URL for the <xref:System.Web.UI.WebControls.WebParts.WebZone.BackImageUrl%2A> property is not provided in this example. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -166,8 +166,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText%2A> property. Note that there are two zones in the declarative markup, and the second `<asp:webpartzone>` element is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/CS/zoneemptyzonetextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/VB/zoneemptyzonetextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/CS/zoneemptyzonetextcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/VB/zoneemptyzonetextvb.aspx#1)]  
   
  In a browser, you can switch to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText%2A> property displayed in the empty zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -436,8 +436,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property. Note that there are two zones in the declarative markup, and the second `<asp:webpartzone>` element is empty.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_HeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_HeaderText/CS/zoneheadertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_HeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_HeaderText/VB/zoneheadertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_HeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_HeaderText/CS/zoneheadertextcs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_HeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_HeaderText/VB/zoneheadertextvb.aspx#1)]  
   
  In a browser, you can switch the page to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property displayed in the header area of the zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
@@ -632,8 +632,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeStyle%2A> property to set style attributes for the outer borders of Web Parts controls contained in a zone.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/CS/zonepartchromestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/VB/zonepartchromestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/CS/zonepartchromestylecs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_PartChromeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartChromeStyle/VB/zonepartchromestylevb.aspx#1)]  
   
  Note that when you first load the page in a browser, the upper control has its own green border with a width of 2 pixels, as set in the declarative markup for the page. After a user clicks the calendar, the page programmatically changes the borders of both controls in the zone to red, and sets their border width to 4 pixels, yet the upper control retains its original green inner border.  
   
@@ -712,8 +712,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartStyle%2A> property. Note that in the zone referenced in the declarative markup, there is an `<asp:calendar>` element and an `<asp:literal>` element, with both controls acting as Web Parts controls at run time because they are in a zone. After the user clicks a date on the calendar control, the page programmatically uses the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartStyle%2A> property to change the background color of all part controls in the zone to red.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_PartStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartStyle/CS/zonepartstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_PartStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartStyle/VB/zonepartstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_Zone_PartStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_PartStyle/CS/zonepartstylecs.aspx#1)]
+ [!code-aspx-vb[WebParts_Zone_PartStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_PartStyle/VB/zonepartstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>

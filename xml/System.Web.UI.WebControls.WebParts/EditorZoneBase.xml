@@ -51,8 +51,8 @@
   
  The second part of the code example is a Web page that contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. Near the top of the page is a `Register` directive for the user control. The user control tag is declared in the page with a `<uc1:DisplayModeMenu>` element. Notice that below the `<asp:WebPartZone>` element is an `<asp:EditorZone>` element that contains <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls, and has a variety of tags and properties set to determine its appearance and behavior. Most of the code in the page demonstrates the various programmatic uses of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> properties and methods.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorZoneBase_Common#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorZoneBase_Common#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_EditorZoneBase_Common#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#1)]
+ [!code-aspx-vb[WebParts_EditorZoneBase_Common#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#1)]  
   
  The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.EditorZone> class that shows how to work with a number of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase> class members. The custom class derives from <xref:System.Web.UI.WebControls.WebParts.EditorZone> so that it can be used with a zone template in the declarative markup of the Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation; thus, you will notice that the `Register` directive near the top of the Web page does not reference an assembly file. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
@@ -136,8 +136,8 @@
   
  The first part of the code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.ApplyVerb%2A> property declaratively in a Web page. This example customizes the text for the verb.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  
   
  The second part of the example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.ApplyVerb%2A> property programmatically, by using a toggle button to enable or disable it.  
   
@@ -196,8 +196,8 @@
   
  The first part of the code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CancelVerb%2A> property declaratively in a Web page. This example customizes the text for the verb.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  
   
  The second part of the example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.CancelVerb%2A> property programmatically, by using a toggle button to enable or disable it.  
   
@@ -407,8 +407,8 @@
   
  The first part of the code example demonstrates that the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts%2A> property contains references to all the <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are referenced declaratively in the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  
   
  The second part of the code example programmatically accesses the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts%2A> property and lists the ID of each control in a <xref:System.Web.UI.WebControls.Label> control.  
   
@@ -610,8 +610,8 @@
   
  The first part of the code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.OKVerb%2A> property declaratively in a Web page. This example customizes the text for the verb.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_EditorZoneBase_Common#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/CS/editorzonebasecs.aspx#2)]
+ [!code-aspx-vb[WebParts_EditorZoneBase_Common#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZoneBase_Common/VB/editorzonebasevb.aspx#2)]  
   
  The second part of the example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.OKVerb%2A> programmatically, by using a toggle button to enable or disable it.  
   

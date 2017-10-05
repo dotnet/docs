@@ -55,18 +55,18 @@
 ## Examples  
  The following code example demonstrates how to create an <xref:System.Web.UI.HtmlControls.HtmlSelect> control by explicitly declaring the items that appear in the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[htmlselect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/htmlselect/CS/htmlselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[htmlselect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/htmlselect/VB/htmlselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[htmlselect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/htmlselect/CS/htmlselectcs.aspx#1)]
+ [!code-aspx-vb[htmlselect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/htmlselect/VB/htmlselectvb.aspx#1)]  
   
  The following code example demonstrates how to create an <xref:System.Web.UI.HtmlControls.HtmlSelect> control by binding the control to a data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID%2A> property to specify the data source for an <xref:System.Web.UI.HtmlControls.HtmlSelect> control. The <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID%2A> property is set to the <xref:System.Web.UI.Control.ID%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control used to retrieve the data. When the page is loaded, the <xref:System.Web.UI.HtmlControls.HtmlSelect> control automatically binds to the data source specified by the <xref:System.Web.UI.WebControls.SqlDataSource> control and the data is displayed to the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelect.DataSourceID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataSourceID/CS/htmlselect.datasourceidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelect.DataSourceID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataSourceID/VB/htmlselect.datasourceidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelect.DataSourceID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataSourceID/CS/htmlselect.datasourceidcs.aspx#1)]
+ [!code-aspx-vb[HtmlSelect.DataSourceID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataSourceID/VB/htmlselect.datasourceidvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -101,8 +101,8 @@
 ## Examples  
  The following code example demonstrates how to dynamically create an instance of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control and place it on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectCtor/CS/htmlselectctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectCtor/VB/htmlselectctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectCtor/CS/htmlselectctorcs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectCtor/VB/htmlselectctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -137,8 +137,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlSelect.AddParsedSubObject%2A> method in a custom server control so that it always checks that an instance of the <xref:System.Web.UI.WebControls.ListItem> class is added to the <xref:System.Web.UI.HtmlControls.HtmlSelect> selected items collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlSelectAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectAddParsedSubObject/CS/custom_htmlselect_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlSelectAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectAddParsedSubObject/VB/custom_htmlselect_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlSelectAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectAddParsedSubObject/CS/custom_htmlselect_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlSelectAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectAddParsedSubObject/VB/custom_htmlselect_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlSelectAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectAddParsedSubObject/CS/custom_htmlselect_addparsedsubobject.cs#2)]
  [!code-vb[CustomHtmlSelectAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectAddParsedSubObject/VB/custom_htmlselect_addparsedsubobject.vb#2)]  
@@ -174,8 +174,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlSelect.ClearSelection%2A> method in a custom server control so that it always clears all selected items of an <xref:System.Web.UI.HtmlControls.HtmlSelect> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlSelectClearSelection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectClearSelection/CS/custom_htmlselect_clearselectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlSelectClearSelection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectClearSelection/VB/custom_htmlselect_clearselectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlSelectClearSelection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectClearSelection/CS/custom_htmlselect_clearselectioncs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlSelectClearSelection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectClearSelection/VB/custom_htmlselect_clearselectionvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlSelectClearSelection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectClearSelection/CS/custom_htmlselect_clearselection.cs#2)]
  [!code-vb[CustomHtmlSelectClearSelection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectClearSelection/VB/custom_htmlselect_clearselection.vb#2)]  
@@ -246,8 +246,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataMember%2A> property to specify a set of data to bind to the <xref:System.Web.UI.HtmlControls.HtmlSelect> control from a <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSource%2A> property with multiple sets of data.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectDataMember#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataMember/CS/htmlselectdatamemberdscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectDataMember#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataMember/VB/htmlselectdatamemberdsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectDataMember#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataMember/CS/htmlselectdatamemberdscs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectDataMember#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataMember/VB/htmlselectdatamemberdsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -296,8 +296,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSource%2A> property to specify the source of information to bind to the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -340,8 +340,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID%2A> property to specify the data source for an <xref:System.Web.UI.HtmlControls.HtmlSelect> control. The <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID%2A> property is set to the <xref:System.Web.UI.Control.ID%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control used to retrieve the data. When the page is loaded, the <xref:System.Web.UI.HtmlControls.HtmlSelect> control automatically binds to the data source specified by the <xref:System.Web.UI.WebControls.SqlDataSource> control and the data is displayed to the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelect.DataSourceID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataSourceID/CS/htmlselect.datasourceidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelect.DataSourceID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataSourceID/VB/htmlselect.datasourceidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelect.DataSourceID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataSourceID/CS/htmlselect.datasourceidcs.aspx#1)]
+ [!code-aspx-vb[HtmlSelect.DataSourceID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataSourceID/VB/htmlselect.datasourceidvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -383,13 +383,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSource%2A> and <xref:System.Web.UI.HtmlControls.HtmlSelect.DataTextField%2A> properties to specify the field from the data source to bind to the <xref:System.Web.UI.WebControls.ListItem.Text%2A?displayProperty=nameWithType> property of each item in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID%2A> and <xref:System.Web.UI.HtmlControls.HtmlSelect.DataTextField%2A> properties to specify the field from the data source to bind to the <xref:System.Web.UI.WebControls.ListItem.Value%2A?displayProperty=nameWithType> property of each item in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelect.DataValueField2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataValueField2/CS/htmlselect.datavaluefield2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelect.DataValueField2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataValueField2/VB/htmlselect.datavaluefield2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelect.DataValueField2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataValueField2/CS/htmlselect.datavaluefield2cs.aspx#1)]
+ [!code-aspx-vb[HtmlSelect.DataValueField2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataValueField2/VB/htmlselect.datavaluefield2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -430,13 +430,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSource%2A> and <xref:System.Web.UI.HtmlControls.HtmlSelect.DataValueField%2A> properties to specify the field from the data source to bind to the <xref:System.Web.UI.WebControls.ListItem.Value%2A?displayProperty=nameWithType> property of each item in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectDataSource/CS/htmlselectdatasourcecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectDataSource/VB/htmlselectdatasourcevb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID%2A> and <xref:System.Web.UI.HtmlControls.HtmlSelect.DataValueField%2A> properties to specify the field from the data source to bind to the <xref:System.Web.UI.WebControls.ListItem.Value%2A?displayProperty=nameWithType> property of each item in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelect.DataValueField2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataValueField2/CS/htmlselect.datavaluefield2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelect.DataValueField2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataValueField2/VB/htmlselect.datavaluefield2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelect.DataValueField2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelect.DataValueField2/CS/htmlselect.datavaluefield2cs.aspx#1)]
+ [!code-aspx-vb[HtmlSelect.DataValueField2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelect.DataValueField2/VB/htmlselect.datavaluefield2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -621,8 +621,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.Items%2A> collection to iterate through the items in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control and determine which items are selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[htmlselect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/htmlselect/CS/htmlselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[htmlselect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/htmlselect/VB/htmlselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[htmlselect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/htmlselect/CS/htmlselectcs.aspx#1)]
+ [!code-aspx-vb[htmlselect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/htmlselect/VB/htmlselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -740,8 +740,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.Multiple%2A> property to specify whether multiple items can be selected in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectMultiple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectMultiple/CS/htmlselectmultiplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectMultiple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectMultiple/VB/htmlselectmultiplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectMultiple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectMultiple/CS/htmlselectmultiplecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectMultiple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectMultiple/VB/htmlselectmultiplevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -784,8 +784,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.Name%2A> property of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control to select a specific item in the <xref:System.Web.UI.HtmlControls.HtmlSelect.Items%2A> list.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectName/CS/htmlselectnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectName/VB/htmlselectnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectName/CS/htmlselectnamecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectName/VB/htmlselectnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -991,8 +991,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlSelect.OnPreRender%2A> method so that it allows multiple selections in a custom <xref:System.Web.UI.HtmlControls.HtmlSelect> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlSelectOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectOnPreRender/CS/custom_htmlselect_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlSelectOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectOnPreRender/VB/custom_htmlselect_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlSelectOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectOnPreRender/CS/custom_htmlselect_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlSelectOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectOnPreRender/VB/custom_htmlselect_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlSelectOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectOnPreRender/CS/custom_htmlselect_onprerender.cs#2)]
  [!code-vb[CustomHtmlSelectOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectOnPreRender/VB/custom_htmlselect_onprerender.vb#2)]  
@@ -1042,11 +1042,11 @@
 ## Examples  
  The following code example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlSelect.ServerChange> event of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control. The event handler determines whether the selected items are compatible with each other.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectOnServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectOnServerChange/CS/htmlselectonserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectOnServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectOnServerChange/VB/htmlselectonserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectOnServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectOnServerChange/CS/htmlselectonserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectOnServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectOnServerChange/VB/htmlselectonserverchangevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectServerChange/CS/htmlselectserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectServerChange/VB/htmlselectserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectServerChange/CS/htmlselectserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectServerChange/VB/htmlselectserverchangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1111,8 +1111,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlSelect.RenderAttributes%2A> method in a custom server control so that specific title text is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlSelectRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectRenderAttributes/CS/custom_htmlselect_renderattributescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlSelectRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectRenderAttributes/VB/custom_htmlselect_renderattributesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlSelectRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectRenderAttributes/CS/custom_htmlselect_renderattributescs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlSelectRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectRenderAttributes/VB/custom_htmlselect_renderattributesvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlSelectRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectRenderAttributes/CS/custom_htmlselect_renderattributes.cs#2)]
  [!code-vb[CustomHtmlSelectRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectRenderAttributes/VB/custom_htmlselect_renderattributes.vb#2)]  
@@ -1152,8 +1152,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlSelect.RenderChildren%2A> method so that it always displays default option text in a custom <xref:System.Web.UI.HtmlControls.HtmlSelect> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlSelectRenderChildren#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectRenderChildren/CS/custom_htmlselect_renderchildrencs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlSelectRenderChildren#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectRenderChildren/VB/custom_htmlselect_renderchildrenvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlSelectRenderChildren#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectRenderChildren/CS/custom_htmlselect_renderchildrencs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlSelectRenderChildren#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectRenderChildren/VB/custom_htmlselect_renderchildrenvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlSelectRenderChildren#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlSelectRenderChildren/CS/custom_htmlselect_renderchildren.cs#2)]
  [!code-vb[CustomHtmlSelectRenderChildren#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlSelectRenderChildren/VB/custom_htmlselect_renderchildren.vb#2)]  
@@ -1293,8 +1293,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex%2A> property to determine the index of the selected item in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control. The index is then used to retrieve the selected item from the <xref:System.Web.UI.HtmlControls.HtmlSelect.Items%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectSingleSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectSingleSelect/CS/htmlselectsingleselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectSingleSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectSingleSelect/VB/htmlselectsingleselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectSingleSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectSingleSelect/CS/htmlselectsingleselectcs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectSingleSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectSingleSelect/VB/htmlselectsingleselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1358,13 +1358,13 @@
 ## Examples  
  The following code example demonstrates how to specify and code an event handler declaratively for the <xref:System.Web.UI.HtmlControls.HtmlSelect.ServerChange> event of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control. The event handler determines whether the selected items are compatible with each other.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectOnServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectOnServerChange/CS/htmlselectonserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectOnServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectOnServerChange/VB/htmlselectonserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectOnServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectOnServerChange/CS/htmlselectonserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectOnServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectOnServerChange/VB/htmlselectonserverchangevb.aspx#1)]  
   
  The following code example demonstrates how to specify and code an event handler programmatically for the <xref:System.Web.UI.HtmlControls.HtmlSelect.ServerChange> event of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control. The event handler determines whether the selected items are compatible with each other.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectServerChange/CS/htmlselectserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectServerChange/VB/htmlselectserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectServerChange/CS/htmlselectserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectServerChange/VB/htmlselectserverchangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1403,8 +1403,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.Size%2A> property to specify the height (in rows) of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectMultiple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectMultiple/CS/htmlselectmultiplecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectMultiple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectMultiple/VB/htmlselectmultiplevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectMultiple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectMultiple/CS/htmlselectmultiplecs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectMultiple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectMultiple/VB/htmlselectmultiplevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1529,8 +1529,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlSelect.Value%2A> property to get the value of the selected item in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlSelectSingleSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectSingleSelect/CS/htmlselectsingleselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlSelectSingleSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectSingleSelect/VB/htmlselectsingleselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlSelectSingleSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectSingleSelect/CS/htmlselectsingleselectcs.aspx#1)]
+ [!code-aspx-vb[HtmlSelectSingleSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectSingleSelect/VB/htmlselectsingleselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>

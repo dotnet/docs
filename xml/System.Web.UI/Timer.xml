@@ -100,8 +100,8 @@
 > [!NOTE]
 >  In this example, the timer interval is set to 10 seconds so that when you run the example, you do not have to wait a long time to see the results. Because each timer interval causes a postback that causes network traffic, in a production application you should set the interval to the longest time that is still practical for your application.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Controls.Timer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Controls.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Controls.Timer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Controls.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -159,8 +159,8 @@
 ## Examples  
  The following example shows an <xref:System.Web.UI.UpdatePanel> control that displays a randomly generated stock price and the time that the stock price was generated. By default, the <xref:System.Web.UI.Timer> control updates the content in the <xref:System.Web.UI.UpdatePanel> control every 10 seconds. The user can decide to update the stock price every 10 seconds, every 60 seconds, or not at all. When the user decides not to update the stock price, the <xref:System.Web.UI.Timer.Enabled%2A> property is set to `false`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -260,8 +260,8 @@
 ## Examples  
  The following example shows an <xref:System.Web.UI.UpdatePanel> control that displays a randomly generated stock price and the time that the stock price was generated. By default, the <xref:System.Web.UI.Timer> control updates the content in the <xref:System.Web.UI.UpdatePanel> control every 10 seconds. The user can decide to update the stock price every 10 seconds, every 60 seconds, or not at all. The <xref:System.Web.UI.Timer.Interval%2A> property is set to the user's choice.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Controls.Timer.Interval#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer.Interval/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -318,8 +318,8 @@
 ## Examples  
  The following example shows an <xref:System.Web.UI.UpdatePanel> control that displays a randomly generated stock price and the time that the stock price was generated. The <xref:System.Web.UI.Timer> control updates the content in the <xref:System.Web.UI.UpdatePanel> control every 10 seconds. The stock price and the time are set in a handler for the <xref:System.Web.UI.Timer.Tick> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Controls.Timer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Controls.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Controls.Timer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Controls.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -479,8 +479,8 @@
 ## Examples  
  The following example shows an <xref:System.Web.UI.UpdatePanel> control that displays a randomly generated stock price and the time that the stock price was generated. The <xref:System.Web.UI.Timer> control updates the content in the <xref:System.Web.UI.UpdatePanel> control every 10 seconds. The stock price and the time are set in a handler for the <xref:System.Web.UI.Timer.Tick> event.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Controls.Timer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Controls.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Controls.Timer#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Controls.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.Controls.Timer/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>

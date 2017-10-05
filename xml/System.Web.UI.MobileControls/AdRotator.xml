@@ -59,8 +59,8 @@
   
  The `.aspx` file:  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]
+ [!code-aspx-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  
   
  The sample `ads.xml` file (which must be located in the **App_Data** folder):  
   
@@ -239,8 +239,8 @@
   
  The `.aspx` file:  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#1)]
+ [!code-aspx-vb[MobileAdRotatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#1)]  
   
  The sample `ads.xml` file (which must be located in the **App_Data** folder):  
   
@@ -286,8 +286,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.AdRotator.KeywordFilter%2A> property to set the preference from a collection of images in the file referred by the <xref:System.Web.UI.MobileControls.AdRotator.AdvertisementFile%2A> property. For the complete sample code, see the <xref:System.Web.UI.MobileControls.AdRotator> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]
+ [!code-aspx-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -327,8 +327,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.AdRotator.NavigateUrlKey%2A> property to set the target URL for the advertisement. For the complete sample code, see the <xref:System.Web.UI.MobileControls.AdRotator> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  -->  
+ [!code-aspx-csharp[MobileAdRotatorSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileAdRotatorSample/CS/MobileHome.aspx#4)]
+ [!code-aspx-vb[MobileAdRotatorSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileAdRotatorSample/VB/MobileHome.aspx#4)]  
   
  ]]></format>
         </remarks>

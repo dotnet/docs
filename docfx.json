@@ -131,7 +131,8 @@
         "_vblang/spec/*.md": "language-reference"
      },
       "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"]
+        "api/**.yml": ["csharp", "vb", "cpp"],
+        "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"]        
       },
       "dev_langs": {
         "docs/core/**/**.md": ["csharp"],
@@ -156,10 +157,6 @@
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
         "_vblang/spec/*.md": "07/21/2017"
-      },
-      "open_to_public_contributors": {
-        "_csharplang/spec/*.md": false,
-        "_vblang/spec/*.md": false
       }
     },
     "dest": "_site",

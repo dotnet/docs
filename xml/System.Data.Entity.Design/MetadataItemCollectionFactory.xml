@@ -22,7 +22,7 @@
   <Members>
     <Member MemberName="CreateEdmItemCollection">
       <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.EdmItemCollection CreateEdmItemCollection (System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; readers, out System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; errors);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.EdmItemCollection CreateEdmItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; errors) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.EdmItemCollection CreateEdmItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, [out] class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt;&amp; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.MetadataItemCollectionFactory.CreateEdmItemCollection(System.Collections.Generic.IEnumerable{System.Xml.XmlReader},System.Collections.Generic.IList{System.Data.Metadata.Edm.EdmSchemaError}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -46,7 +46,7 @@
     </Member>
     <Member MemberName="CreateEdmItemCollection">
       <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.EdmItemCollection CreateEdmItemCollection (System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; readers, Version targetEntityFrameworkVersion, out System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; errors);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.EdmItemCollection CreateEdmItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Version targetEntityFrameworkVersion, class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; errors) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.EdmItemCollection CreateEdmItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Version targetEntityFrameworkVersion, [out] class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt;&amp; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.MetadataItemCollectionFactory.CreateEdmItemCollection(System.Collections.Generic.IEnumerable{System.Xml.XmlReader},System.Version,System.Collections.Generic.IList{System.Data.Metadata.Edm.EdmSchemaError}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -72,7 +72,7 @@
     </Member>
     <Member MemberName="CreateStorageMappingItemCollection">
       <MemberSignature Language="C#" Value="public static System.Data.Mapping.StorageMappingItemCollection CreateStorageMappingItemCollection (System.Data.Metadata.Edm.EdmItemCollection edmCollection, System.Data.Metadata.Edm.StoreItemCollection storeCollection, System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; readers, out System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; errors);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Mapping.StorageMappingItemCollection CreateStorageMappingItemCollection(class System.Data.Metadata.Edm.EdmItemCollection edmCollection, class System.Data.Metadata.Edm.StoreItemCollection storeCollection, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; errors) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Mapping.StorageMappingItemCollection CreateStorageMappingItemCollection(class System.Data.Metadata.Edm.EdmItemCollection edmCollection, class System.Data.Metadata.Edm.StoreItemCollection storeCollection, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, [out] class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt;&amp; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.MetadataItemCollectionFactory.CreateStorageMappingItemCollection(System.Data.Metadata.Edm.EdmItemCollection,System.Data.Metadata.Edm.StoreItemCollection,System.Collections.Generic.IEnumerable{System.Xml.XmlReader},System.Collections.Generic.IList{System.Data.Metadata.Edm.EdmSchemaError}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -100,7 +100,7 @@
     </Member>
     <Member MemberName="CreateStorageMappingItemCollection">
       <MemberSignature Language="C#" Value="public static System.Data.Mapping.StorageMappingItemCollection CreateStorageMappingItemCollection (System.Data.Metadata.Edm.EdmItemCollection edmCollection, System.Data.Metadata.Edm.StoreItemCollection storeCollection, System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; readers, Version targetEntityFrameworkVersion, out System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; errors);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Mapping.StorageMappingItemCollection CreateStorageMappingItemCollection(class System.Data.Metadata.Edm.EdmItemCollection edmCollection, class System.Data.Metadata.Edm.StoreItemCollection storeCollection, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Version targetEntityFrameworkVersion, class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; errors) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Mapping.StorageMappingItemCollection CreateStorageMappingItemCollection(class System.Data.Metadata.Edm.EdmItemCollection edmCollection, class System.Data.Metadata.Edm.StoreItemCollection storeCollection, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Version targetEntityFrameworkVersion, [out] class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt;&amp; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.MetadataItemCollectionFactory.CreateStorageMappingItemCollection(System.Data.Metadata.Edm.EdmItemCollection,System.Data.Metadata.Edm.StoreItemCollection,System.Collections.Generic.IEnumerable{System.Xml.XmlReader},System.Version,System.Collections.Generic.IList{System.Data.Metadata.Edm.EdmSchemaError}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -130,7 +130,7 @@
     </Member>
     <Member MemberName="CreateStoreItemCollection">
       <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.StoreItemCollection CreateStoreItemCollection (System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; readers, out System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; errors);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.StoreItemCollection CreateStoreItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; errors) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.StoreItemCollection CreateStoreItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, [out] class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt;&amp; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.MetadataItemCollectionFactory.CreateStoreItemCollection(System.Collections.Generic.IEnumerable{System.Xml.XmlReader},System.Collections.Generic.IList{System.Data.Metadata.Edm.EdmSchemaError}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -154,7 +154,7 @@
     </Member>
     <Member MemberName="CreateStoreItemCollection">
       <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.StoreItemCollection CreateStoreItemCollection (System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; readers, Version targetEntityFrameworkVersion, out System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; errors);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.StoreItemCollection CreateStoreItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Version targetEntityFrameworkVersion, class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; errors) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.StoreItemCollection CreateStoreItemCollection(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; readers, class System.Version targetEntityFrameworkVersion, [out] class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt;&amp; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.MetadataItemCollectionFactory.CreateStoreItemCollection(System.Collections.Generic.IEnumerable{System.Xml.XmlReader},System.Version,System.Collections.Generic.IList{System.Data.Metadata.Edm.EdmSchemaError}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

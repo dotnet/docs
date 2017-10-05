@@ -130,7 +130,7 @@ This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../
   
 ##### To use a binding in a client with configuration  
   
-1.  Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
+1.  Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
   
 2.  Replace the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
   

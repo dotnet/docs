@@ -5,14 +5,14 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
+ms.custom: "updateeachrelease"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/supportedRuntime"
 helpviewer_keywords: 
   - "supportedRuntime element"
   - "<supportedRuntime> element"
-ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
-caps.latest.revision: 33
+ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f 
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -50,7 +50,7 @@
     </Member>
     <Member MemberName="Show">
       <MemberSignature Language="C#" Value="public bool Show (string language, string value, ref string newValue);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Show(string language, string value, string newValue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Show(string language, string value, string&amp; newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IIntellisenseBuilder.Show(System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

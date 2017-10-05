@@ -7,6 +7,7 @@ ms.author: wiwagn
 ms.date: 07/13/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
 ---
 # Decision table: .NET frameworks to use for Docker
 

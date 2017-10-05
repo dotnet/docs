@@ -392,7 +392,7 @@
     </Member>
     <Member MemberName="GetTabStops">
       <MemberSignature Language="C#" Value="public float[] GetTabStops (out float firstTabOffset);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32[] GetTabStops(float32 firstTabOffset) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32[] GetTabStops([out] float32&amp; firstTabOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.StringFormat.GetTabStops(System.Single@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -188,7 +188,7 @@
     </Member>
     <Member MemberName="IRR">
       <MemberSignature Language="C#" Value="public static double IRR (ref double[] ValueArray, double Guess = 0.1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static float64 IRR(float64[] ValueArray, float64 Guess) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 IRR(float64[]&amp; ValueArray, float64 Guess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.IRR(System.Double[]@,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -231,7 +231,7 @@
     </Member>
     <Member MemberName="MIRR">
       <MemberSignature Language="C#" Value="public static double MIRR (ref double[] ValueArray, double FinanceRate, double ReinvestRate);" />
-      <MemberSignature Language="ILAsm" Value=".method public static float64 MIRR(float64[] ValueArray, float64 FinanceRate, float64 ReinvestRate) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 MIRR(float64[]&amp; ValueArray, float64 FinanceRate, float64 ReinvestRate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.MIRR(System.Double[]@,System.Double,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -325,7 +325,7 @@
     </Member>
     <Member MemberName="NPV">
       <MemberSignature Language="C#" Value="public static double NPV (double Rate, ref double[] ValueArray);" />
-      <MemberSignature Language="ILAsm" Value=".method public static float64 NPV(float64 Rate, float64[] ValueArray) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 NPV(float64 Rate, float64[]&amp; ValueArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.NPV(System.Double,System.Double[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

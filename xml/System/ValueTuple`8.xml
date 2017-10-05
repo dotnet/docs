@@ -80,7 +80,11 @@
 -   Their fields are mutable rather than read-only.  
   
  The value tuple types provide the runtime implementation that supports [tuples in C#](~/docs/csharp/tuples.md) and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%608> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%60%608%28%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%29?displayProperty=nameWithType> factory method.  
-  
+
+### Serialization and value tuples
+
+The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in the .NET Framework 4.7 and earlier versions. In addition, .NET Standard, including .NET Standard 2.0, does not mandate serialization of <xref:System.ValueTuple%608> instances; whether or not a <xref:System.ValueTuple%608> instance is serializable depends on the individual .NET Standard implementation. To determine whether a <xref:System.ValueTuple%608> type is serializable on a particular .NET implementation, get a <xref:System.Type> object that represents the <xref:System.ValueTuple%608> type and retrieve the value of its <xref:System.Type.IsSerializable%2A> property. For a list of serializable types in .NET Core and the .NET Framework, see [Binary Serialization](~/docs/standard/serialization/binary-serialization.md).
+    
  ]]></format>
     </remarks>
   </Docs>

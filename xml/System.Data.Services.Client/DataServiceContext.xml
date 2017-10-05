@@ -445,7 +445,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginExecuteBatch">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteBatch (AsyncCallback callback, object state, System.Data.Services.Client.DataServiceRequest[] queries);" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteBatch (AsyncCallback callback, object state, params System.Data.Services.Client.DataServiceRequest[] queries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteBatch(class System.AsyncCallback callback, object state, class System.Data.Services.Client.DataServiceRequest[] queries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])" />
       <MemberType>Method</MemberType>
@@ -1277,7 +1277,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteBatch">
-      <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse ExecuteBatch (System.Data.Services.Client.DataServiceRequest[] queries);" />
+      <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse ExecuteBatch (params System.Data.Services.Client.DataServiceRequest[] queries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse ExecuteBatch(class System.Data.Services.Client.DataServiceRequest[] queries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])" />
       <MemberType>Method</MemberType>
@@ -2245,7 +2245,7 @@
     </Member>
     <Member MemberName="TryGetEntity&lt;TEntity&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetEntity&lt;TEntity&gt; (Uri identity, out TEntity entity) where TEntity : class;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntity&lt;class TEntity&gt;(class System.Uri identity, !!TEntity entity) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntity&lt;class TEntity&gt;(class System.Uri identity, [out] !!TEntity&amp; entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.TryGetEntity``1(System.Uri,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2286,7 +2286,7 @@
     </Member>
     <Member MemberName="TryGetUri">
       <MemberSignature Language="C#" Value="public bool TryGetUri (object entity, out Uri identity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetUri(object entity, class System.Uri identity) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetUri(object entity, [out] class System.Uri&amp; identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

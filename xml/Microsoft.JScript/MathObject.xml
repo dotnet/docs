@@ -394,7 +394,7 @@
       </Docs>
     </Member>
     <Member MemberName="max">
-      <MemberSignature Language="C#" Value="public static double max (object x, object y, object[] args);" />
+      <MemberSignature Language="C#" Value="public static double max (object x, object y, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 max(object x, object y, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.max(System.Object,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -432,7 +432,7 @@
       </Docs>
     </Member>
     <Member MemberName="min">
-      <MemberSignature Language="C#" Value="public static double min (object x, object y, object[] args);" />
+      <MemberSignature Language="C#" Value="public static double min (object x, object y, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 min(object x, object y, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MathObject.min(System.Object,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>

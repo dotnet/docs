@@ -137,7 +137,7 @@
     </Member>
     <Member MemberName="TryGetWorkflow">
       <MemberSignature Language="C#" Value="public bool TryGetWorkflow (Guid workflowInstanceId, out System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance workflowInstance);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetWorkflow(valuetype System.Guid workflowInstanceId, class System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance workflowInstance) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetWorkflow(valuetype System.Guid workflowInstanceId, [out] class System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&amp; workflowInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow(System.Guid,System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

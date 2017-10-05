@@ -1,18 +1,14 @@
 ---
 title: "What's new in the .NET Framework"
-ms.custom: ""
+ms.custom: "updateeachrelease"
 ms.date: "05/02/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "what's new [.NET Framework]"
-ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
-caps.latest.revision: 292
+ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa 
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

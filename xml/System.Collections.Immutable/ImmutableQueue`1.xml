@@ -75,7 +75,7 @@
     </Member>
     <Member MemberName="Dequeue">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableQueue&lt;T&gt; Dequeue (out T value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableQueue`1&lt;!T&gt; Dequeue(!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableQueue`1&lt;!T&gt; Dequeue([out] !T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue`1.Dequeue(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

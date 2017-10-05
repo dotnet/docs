@@ -27,7 +27,7 @@
 ## Examples  
  The following Web.config file specifies a user profile that contains a group of properties with a group name of `Address`. The grouped properties generated for the <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> will be preceded by the group name, for example, `Profile.Address.Street`. The second example shows an ASP.NET page that stores and retrieves the configured profile properties.  
   
-```  
+```xml
 <configuration>  
   <connectionStrings>  
     <add name="SqlServices" connectionString=  

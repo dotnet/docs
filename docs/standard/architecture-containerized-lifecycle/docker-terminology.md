@@ -8,7 +8,7 @@ ms.date: 09/21/2017
 ---
 # Docker terminology
 
-This section lists terms and definitions with which you should become familiar with before delving deeper into Docker (for further definitions, see the extensive [glossary](https://docs.docker.com//glossary/) provided by Docker at <https://docs.docker.com/v1.11/engine/reference/glossary/>:
+This section lists terms and definitions with which you should become familiar with before delving deeper into Docker (for further definitions, see the extensive [glossary](https://docs.docker.com/glossary/) provided by Docker at <https://docs.docker.com/glossary/>:
 
 -   **Container image** A package with all of the dependencies and information needed to create a container. An image includes all of the dependencies (such as frameworks) plus deployment and configuration to be used by a container runtime. Usually, an image derives from multiple base images that are layers stacked one atop the other to form the container's file system. An image is immutable after it has been created.
 

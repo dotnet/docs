@@ -9,7 +9,7 @@
 ## [Target Frameworks](standard/frameworks.md)
 ## [.NET Glossary](standard/glossary.md)
 ## [Architecture Guidance](standard/architecture.md)
-### [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](standard/architecture-containerized-lifecycle/)]
+### [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](standard/architecture-containerized-lifecycle/)
 ### [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)

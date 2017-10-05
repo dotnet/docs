@@ -32,7 +32,7 @@
 ' </snippet6>
       %>
 
-<%--</snippet4>--%>
+<!-- </Snippet4> -->
     </form>
 </body>
 </html>

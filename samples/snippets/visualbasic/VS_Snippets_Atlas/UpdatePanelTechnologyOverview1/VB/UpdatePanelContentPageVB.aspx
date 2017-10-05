@@ -1,4 +1,4 @@
-<%--<Snippet3>--%>
+<!-- <Snippet3> -->
 <%@ Page Language="VB" MasterPageFile="MasterVB.master"
     Title="ScriptManager in Content Page" %>
 

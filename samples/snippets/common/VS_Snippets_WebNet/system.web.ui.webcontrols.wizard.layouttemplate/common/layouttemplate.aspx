@@ -57,7 +57,7 @@
 
     </form>
 
-<%--</Snippet1>--%>
+<!-- </Snippet1> -->
 </body>
 </html>
 

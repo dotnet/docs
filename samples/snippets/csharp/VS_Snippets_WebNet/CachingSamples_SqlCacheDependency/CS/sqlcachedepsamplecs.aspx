@@ -1,4 +1,4 @@
-<%--<snippet1>--%>
+<!-- <Snippet1> -->
 <%@ Page Language="C#" Debug="true" %>
 <%@ import Namespace="System.Data.SqlClient" %>
 
@@ -89,4 +89,4 @@
    </form>
 </body>
 </html>
-<%--</snippet1>--%>
+<!-- </Snippet1> -->

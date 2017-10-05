@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <%--<Snippet2>--%>
+    <!-- <Snippet2> -->
 <table>
   <thead>
     <tr>
@@ -28,7 +28,7 @@
     </tr>  
   </tbody>
 </table>
-    <%--</Snippet2>--%>
+    <!-- </Snippet2> -->
     </div>
     </form>
 </body>

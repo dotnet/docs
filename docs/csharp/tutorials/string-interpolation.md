@@ -49,7 +49,7 @@ This command will create a barebones .NET core project with a project file, *int
 
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
 
-[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
 
 ## Intro to String Interpolation
 

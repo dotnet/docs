@@ -62,4 +62,4 @@ And now you have the necessary files to publish a NuGet package!
 It is important to note that at no point is the `dotnet publish` command involved.  The `dotnet publish` command is for deploying applications with all of their dependencies in the same bundle -  not for generating a NuGet package to be distributed and consumed via NuGet.
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]

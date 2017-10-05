@@ -47,7 +47,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
    ![The dotnet restore command](media/with-visual-studio-code/dotnetrestore.png)
 
-[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
 
 4. Run the "Hello World" program:
 

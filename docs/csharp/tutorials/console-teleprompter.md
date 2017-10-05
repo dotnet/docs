@@ -438,4 +438,4 @@ programming model, a tour of the C# language and how C# programs are
 organized and the .NET Core Command Line Interface and tools.
  
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]

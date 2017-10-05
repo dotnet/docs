@@ -40,7 +40,7 @@ Now that you've installed all the tools, create a new .NET Core application. To 
 
 This command will create barebones .NET core project files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
-[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
 
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
 

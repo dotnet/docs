@@ -31,5 +31,5 @@ shows the Windows path. Replace `win10-x64` with your platform's RID from the li
 [supported RIDs](../../../../docs/core/rid-catalog.md).
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](../includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
 

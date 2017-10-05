@@ -160,10 +160,11 @@ The following list shows the most common RIDs used for each OS. It doesn't cover
 
 ## OS X RIDs
 
-- `osx-x64` (.NET Core 2.0 or later versions)
+- `osx-x64` (.NET Core 2.0 or later versions, min version is `osx.10.12-x64`)
 - `osx.10.10-x64`
 - `osx.10.11-x64`
 - `osx.10.12-x64` (.NET Core 1.1 or later versions)
+- `osx.10.13-x64`
 
 ## Android RIDs (.NET Core 2.0 or later versions)
 

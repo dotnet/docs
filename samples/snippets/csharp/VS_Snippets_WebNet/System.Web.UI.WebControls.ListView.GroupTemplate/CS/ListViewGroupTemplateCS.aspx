@@ -22,7 +22,7 @@
         
       <h3>ListView Tiled Layout Example</h3>
       
-      <%-- <Snippet2> --%>
+      <!-- <Snippet2> -->
       <asp:ListView ID="ProductsListView" 
         DataSourceID="ProductsDataSource" 
         GroupItemCount="2"
@@ -89,7 +89,7 @@
           INNER JOIN Production.ProductProductPhoto AS PPF ON P.ProductID = PPF.ProductID 
           INNER JOIN Production.ProductPhoto AS PF ON PPF.ProductPhotoID = PF.ProductPhotoID">
       </asp:SqlDataSource>
-      <%-- </Snippet2> --%>
+      <!-- </Snippet2> -->
       
     </form>
   </body>

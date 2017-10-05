@@ -23,5 +23,5 @@ To build and run the sample, type the following two commands:
 `dotnet run` builds the sample and runs the output assembly.
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
 

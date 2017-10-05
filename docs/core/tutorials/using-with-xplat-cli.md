@@ -161,4 +161,4 @@ Note that the commands and steps shown in this tutorial to run your application 
 [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]

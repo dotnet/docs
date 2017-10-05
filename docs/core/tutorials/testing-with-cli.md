@@ -255,4 +255,4 @@ Testing passes. The pet types' methods return the correct values when talking to
 
 You've learned techniques for organizing and testing projects using xUnit. Go forward with these techniques applying them in your own projects. *Happy coding!*
 
-[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]

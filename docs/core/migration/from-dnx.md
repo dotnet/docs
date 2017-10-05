@@ -186,4 +186,4 @@ Running `dotnet build` will show any eventual build errors, though there shouldn
 building and running properly, you can test it out with the runner. Execute `dotnet <path-to-your-assembly>` and see it run.
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]

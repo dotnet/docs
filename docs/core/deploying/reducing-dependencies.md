@@ -154,4 +154,4 @@ Here's what a trimmed package could look like:
 Now, it has a smaller footprint than if it had depended on the `NETStandard.Library` metapackage.
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]

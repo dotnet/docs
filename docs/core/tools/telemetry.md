@@ -34,7 +34,7 @@ Telemetry *is enabled* when using the [.NET Core CLI commands](index.md), such a
 - `dotnet restore`
 - `dotnet run`
 
-[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
 
 ## Behavior
 

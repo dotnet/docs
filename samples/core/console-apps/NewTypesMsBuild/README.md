@@ -30,4 +30,4 @@ dotnet test
 Note that you must run `dotnet restore` ([see note](#dotnet-restore-note)) in the *src/NewTypesMsBuild* directory before you can run the tests. `dotnet build` will follow the dependency on the `NewTypesMsBuild` project and build both the app and unit tests projects, but it won't restore NuGet packages.
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/include/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]

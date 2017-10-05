@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugCode3.GetReturnValueLiveOffset"
 api_location: 
@@ -33,7 +35,7 @@ For a specified IL offset, gets the native offsets where a breakpoint should be 
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetReturnValueLiveOffset(  
     [in] ULONG32 ILoffset,  
     [in] ULONG32 bufferSize,   

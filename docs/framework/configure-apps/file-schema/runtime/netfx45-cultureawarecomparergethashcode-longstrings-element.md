@@ -29,7 +29,7 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
   
 ## Syntax  
   
-```vb  
+```xml
 <NetFx45_CultureAwareComparerGetHashCode_LongStrings enabled="0|1">  
 ```  
   

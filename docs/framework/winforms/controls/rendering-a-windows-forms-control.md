@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "csharp"
+ - "vb"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], rendering"
   - "OnPaintBackground method, invoking in Windows Forms custom controls"

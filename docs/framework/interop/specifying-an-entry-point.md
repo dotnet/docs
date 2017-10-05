@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs:
-- "cpp"
 helpviewer_keywords: 
   - "EntryPoint field"
   - "platform invoke, attribute fields"

@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugILFrame3.GetReturnValueForILOffset"
 api_location: 
@@ -28,7 +30,7 @@ Gets an "ICorDebugValue" object that encapsulates the return value of a function
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetReturnValueForILOffset(  
     ULONG32 ILoffset,   
     [out] ICorDebugValue **ppReturnValue  

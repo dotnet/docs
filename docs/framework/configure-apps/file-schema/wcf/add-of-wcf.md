@@ -27,10 +27,10 @@ Configure a tracking participant that listens to the tracking records being emit
   
 ## Syntax  
   
-```vb  
-   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
-```  
-  
+```xml
+   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

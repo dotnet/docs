@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "vb"
 f1_keywords: 
   - "LinkLabel1_LinkClicked"
 helpviewer_keywords: 

@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugILCode2.GetInstrumentedILMap"
 api_location: 
@@ -30,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetInstrumentedILMap(  
    [in] ULONG32 cMap,  
    [out] ULONG32 *pcMap,  

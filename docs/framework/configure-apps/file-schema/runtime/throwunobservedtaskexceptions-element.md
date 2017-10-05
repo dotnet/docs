@@ -27,7 +27,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
   
 ## Syntax  
   
-```vb  
+```xml  
 <ThrowUnobservedTaskExceptions  
    enabled="true|false"/>  
 ```  

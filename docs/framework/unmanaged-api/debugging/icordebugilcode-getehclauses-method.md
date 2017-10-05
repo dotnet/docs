@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugILCode.GetEHClauses"
 api_location: 
@@ -30,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetEHClauses(  
    [in] ULONG32 cClauses,  
    [out] ULONG32 * pcClauses,  

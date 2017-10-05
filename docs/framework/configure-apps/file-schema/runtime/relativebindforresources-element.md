@@ -27,7 +27,7 @@ Optimizes the probe for satellite assemblies.
   
 ## Syntax  
   
-```vb  
+```xml
 <relativeBindForResources    
    enabled="true|false" />  
 ```  

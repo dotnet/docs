@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugProcess5.GetTypeID"
 api_location: 
@@ -33,7 +35,7 @@ Converts an object address to a [COR_TYPEID](../../../../docs/framework/unmanage
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT GetTypeID(  
     [in] CORDB_ADDRESS obj,  
     [out] COR_TYPEID *pId  

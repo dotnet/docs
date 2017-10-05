@@ -24,7 +24,7 @@ Specifies whether the runtime distributes managed threads across all CPU groups.
   
 ## Syntax  
   
-```vb  
+```xml
 <Thread_UseAllCpuGroups    
    enabled="true|false"/>  
 ```  

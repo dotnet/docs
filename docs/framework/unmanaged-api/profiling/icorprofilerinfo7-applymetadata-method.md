@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorProfilerInfo7.ApplyMetaData"
 api_location: 
@@ -28,7 +30,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT ApplyMetaData(  
         [in] ModuleID moduleID  
 );  

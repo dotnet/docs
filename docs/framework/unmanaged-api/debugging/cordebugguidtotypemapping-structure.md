@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "CorDebugGuidToTypeMapping"
 api_location: 
@@ -32,7 +34,7 @@ Maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding
   
 ## Syntax  
   
-```vb  
+```cpp
 typedef struct CorDebugGuidToTypeMapping {  
     GUID iid;  
     ICorDebugType *pType;  

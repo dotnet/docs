@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ILCodeKind"
 api_location: 
@@ -30,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 typedef enum ILCodeKind {  
    ILCODE_ORIGINAL_IL = 0x1,  
    ILCODE_REJIT_IL = 0x2,  

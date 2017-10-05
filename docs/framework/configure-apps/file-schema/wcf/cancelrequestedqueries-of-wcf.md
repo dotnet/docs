@@ -28,10 +28,10 @@ Represents a collection of queries that are used to track requests to cancel a c
   
 ## Syntax  
   
-```vb  
+```xml
 <tracking>   <trackingProfile name="Name">       <workflow>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>       </workflow>   </trackingProfile></tracking>  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

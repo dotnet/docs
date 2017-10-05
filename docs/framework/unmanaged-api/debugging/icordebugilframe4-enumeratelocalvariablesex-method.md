@@ -9,6 +9,8 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+dev_langs:
+ - "cpp"
 api_name: 
   - "ICorDebugILFrame4.EnumerateLocalVariablesEx"
 api_location: 
@@ -30,7 +32,7 @@ manager: "wpickett"
   
 ## Syntax  
   
-```vb  
+```cpp
 HRESULT EnumerateLocalVariablesEx(  
    [in] ILCodeKind flags,   
    [out] ICorDebugValueEnum **ppValueEnum  

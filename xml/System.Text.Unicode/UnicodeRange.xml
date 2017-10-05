@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
 ## Remarks  
 
-You use the static <xref:System.Text.Unicode.UnicodeRange.Create%2A> method or the <xref:System.Text.Unicode.UnicodeRange.#ctor%2A> constructor to create a an arbitrary range of Unicode code points. You use the static properties of the <xref:System.Text.Unicode.UnicodeRanges> class retrieve a <xref:System.Text.Unicode.UnicodeRange> instance that contains the code points in a Unicode named range.
+You use the static <xref:System.Text.Unicode.UnicodeRange.Create%2A> method or the <xref:System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)> constructor to create a an arbitrary range of Unicode code points. You use the static properties of the <xref:System.Text.Unicode.UnicodeRanges> class retrieve a <xref:System.Text.Unicode.UnicodeRange> instance that contains the code points in a Unicode named range.
 
 Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF. 
 
@@ -45,12 +45,20 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
         <param name="firstCodePoint">The first code point in the range.</param>
         <param name="length">The number of code points in the range.</param>
         <summary>Creates a new <see cref="System.Text.Unicode.UnicodeRange" /> that includes a specified number of characters starting at a specified Unicode code point.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+        <format type="text/markdown"><![CDATA[  
+## Remarks  
+
+Any undefined code points between `firstCodePoint` and `firstCodePoint` + `length` - 1 are included in the <xref:System.Text.Unicode.UnicodeRange> instance created by calling this constructor.
+
+        ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"> 
 
            <paramref name="firstCodePoint" /> is less than zero or greater than 0xFFFF. 
 
 -or-
+
            <paramref name="firstCodePoint" /> is greater than 0xFFFF. 
 
 -or-           
@@ -85,9 +93,9 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the B
         <param name="firstCharacter">The first character in the range.</param>
         <param name="lastCharacter">The last character in the range.</param>
         <summary>Creates a new <see cref="System.Text.Unicode.UnicodeRange" /> instance from a span of characters.</summary>
-        <returns>A range that includes all characters between <param name="firstCharacter"/> and <param name="lastCharacter"/>.</returns>
+        <returns>A range that includes all characters between <paramref name="firstCharacter"/> and <paramref name="lastCharacter"/>.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="System.ArgumentOutOfRangeException"><param name="lastCharacter"/> precedes <param name="firstCharacter" />.
+        <exception cref="System.ArgumentOutOfRangeException"><paramref name="lastCharacter"/> precedes <paramref name="firstCharacter" />.
         </exception>
       </Docs>
     </Member>

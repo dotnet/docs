@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
 ## Remarks  
 
-You use the static <xref:System.Text.Unicode.UnicodeRange.Create%2A> method or the <xref:System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)> constructor to create a an arbitrary range of Unicode code points. You use the static properties of the <xref:System.Text.Unicode.UnicodeRanges> class retrieve a <xref:System.Text.Unicode.UnicodeRange> instance that contains the code points in a Unicode named range.
+You use the static <xref:System.Text.Unicode.UnicodeRange.Create%2A> method or the <xref:System.Text.Unicode.UnicodeRange.%23ctor%2A> constructor to create a an arbitrary range of Unicode code points. You use the static properties of the <xref:System.Text.Unicode.UnicodeRanges> class to retrieve a <xref:System.Text.Unicode.UnicodeRange> instance that contains the code points in a Unicode named range.
 
 Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF. 
 
@@ -56,10 +56,6 @@ Any undefined code points between `firstCodePoint` and `firstCodePoint` + `lengt
         <exception cref="T:System.ArgumentOutOfRangeException"> 
 
            <paramref name="firstCodePoint" /> is less than zero or greater than 0xFFFF. 
-
--or-
-
-           <paramref name="firstCodePoint" /> is greater than 0xFFFF. 
 
 -or-           
 

@@ -37,4 +37,4 @@ the tests. `dotnet build` will follow the dependency and build both the library 
 tests projects, but it will not restore NuGet packages.
 
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

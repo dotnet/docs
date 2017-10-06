@@ -28,7 +28,7 @@ In previous versions of .NET Core, you had to run the [dotnet restore](../tools/
 
 You can also disable the automatic invocation of `dotnet restore` by passing the `--no-restore` switch to the `new`, `run`, `build`, `publish`, `pack`, and `test` commands. 
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 ### Retargeting to .NET Core 2.0
 

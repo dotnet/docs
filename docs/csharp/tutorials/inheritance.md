@@ -29,7 +29,7 @@ To create and run the examples in this tutorial, you use the [dotnet](../../core
 1. Enter the [dotnet restore](../../core/tools/dotnet-restore.md) command from the command line to load or restore the project's dependencies.
 1. Enter the [dotnet run](../../core/tools/dotnet-run.md) command to compile and execute the example.
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 ## Background: What is inheritance?
 

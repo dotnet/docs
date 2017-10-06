@@ -93,4 +93,4 @@ Add a package using a specific NuGet source:
 `dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json`
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

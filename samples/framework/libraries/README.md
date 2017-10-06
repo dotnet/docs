@@ -14,7 +14,7 @@ To build/use any of these (using `new-library` as an example):
 
 	`$ dotnet restore`
 	
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 	
 		
 4. To build and package the library as a NuGet package, type the following:

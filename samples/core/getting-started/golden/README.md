@@ -51,4 +51,4 @@ as your development editor. The topic walks through all the setup and configurat
 that environment.
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

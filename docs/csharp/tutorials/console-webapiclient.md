@@ -494,4 +494,4 @@ those results. You've also added new packages as dependencies in your project. Y
 the features of the C# language that support object-oriented techniques.
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

@@ -222,4 +222,4 @@ api                 latest               ef17184c8de6        1 hour ago        2
 Using the Docker generator to add the necessary files to our Web API application made the process simple to create the development and production versions of the images.  The tooling is cross platform by also providing a PowerShell script to accomplish the same results on Windows and Visual Studio Code integration providing step through debugging of the application within the container. By understanding the image variants and the target scenarios, you can optimize your inner-loop development process, while achieving optimized images for production deployments.  
 
 <a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md.md)]
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

@@ -58,7 +58,7 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 ## Linux distribution dependencies
 
-The follow are intended to be examples. The exact versions and names may vary slightly on your Linux distribution of choice.
+The following are intended to be examples. The exact versions and names may vary slightly on your Linux distribution of choice.
 
 ### Ubuntu
 

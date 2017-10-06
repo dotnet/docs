@@ -1,10 +1,10 @@
 ---
-title: Purpose  | Microsoft Docs 
-description: .NET Microservices Architecture for Containerized .NET Applications | Purpose 
+title: Purpose | Microsoft Docs 
+description: Architect Modern Web Applications with ASP.NET Core and Azure | Purpose 
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 10/06/2017
 ---
 # Purpose 
 

@@ -73,7 +73,7 @@ Ubuntu distributions require the following libraries installed:
 * zlib1g
 * libicu52 (for 14.X)
 * libicu55 (for 16.X)
-* libicu57 (for (17.X)
+* libicu57 (for 17.X)
 
 ### CentOS
 

@@ -1,0 +1,6 @@
+# [azure hosting recommendations for asp](index.md)
+## [Summary](summary.md)
+## [Web Applications](web-applications.md)
+## [Logical Processes](logical-processes.md)
+## [Data](data.md)
+## [Architecture Recommendations](architecture-recommendations.md)

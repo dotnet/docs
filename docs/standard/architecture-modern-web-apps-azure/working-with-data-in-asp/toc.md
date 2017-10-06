@@ -1,0 +1,8 @@
+# [working with data in asp](index.md)
+## [Summary](summary.md)
+## [Entity Framework Core (for relational databases)](entity-framework-core-(for-relational-databases).md)
+## [EF Core or micro-ORM?](ef-core-or-micro-orm.md)
+## [SQL or NoSQL](sql-or-nosql.md)
+## [Azure DocumentDB](azure-documentdb.md)
+## [Other Persistence Options](other-persistence-options.md)
+## [Caching](caching.md)

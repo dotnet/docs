@@ -25,7 +25,10 @@ items:
 
     Congratulations! You've run your first C# program. It's a simple program that prints the message "Hello World!".
     Let's move on and explore more.
-    
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Declare and use variables
   durationInMinutes: 3
   content: |
@@ -74,6 +77,10 @@ items:
     ```
 
     Click **Run** again to see the results.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Work with strings
   durationInMinutes: 5
   content: |
@@ -99,6 +106,10 @@ items:
     > writes text to the screen. You've learned how to declare variables and
     > concatenate strings together. Experiment in the interactive window. Write
     > some more messages yourself. Build strings using the `+` operator.
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Do more with strings
   durationInMinutes: 5
   content: |
@@ -139,6 +150,10 @@ items:
     Console.WriteLine(message.ToUpper());
     Console.WriteLine(message.ToLower());
     ```
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Search strings
   durationInMinutes: 10
   content: |
@@ -168,6 +183,9 @@ items:
     > Watch your punctuation when you test for the text at the end of the string. If the string
     > ends with a period, you must check for a string that ends with a period.
 
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+
 - title: Complete challenge
   durationInMinutes: 3
   content: |
@@ -181,6 +199,10 @@ items:
     Console.WriteLine(message.EndsWith("hello"));
     Console.WriteLine(message.EndsWith("goodbye"));
     ```
+
+    > [!NOTE]
+    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+    
 - content: |
     You've completed the "Hello C#" tutorial.
 

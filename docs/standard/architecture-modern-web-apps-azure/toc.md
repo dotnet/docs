@@ -1,6 +1,7 @@
-# [front matter](front-matter/)
-# [introduction](introduction/)
-# [characteristics of modern web applications](characteristics-of-modern-web-applications/)
+# [Introduction](index.md)
+## [Purpose](purpose.md)
+## [characteristics of modern web applications](characteristics-of-modern-web-applications.md)
+
 # [choosing between traditional web apps and single page apps](choosing-between-traditional-web-apps-and-single-page-apps/)
 # [architectural principles](architectural-principles/)
 # [common web application architectures](common-web-application-architectures/)

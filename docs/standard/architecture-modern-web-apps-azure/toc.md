@@ -2,9 +2,8 @@
 ## [Purpose](purpose.md)
 ## [Characteristics of modern web applications](characteristics-of-modern-web-applications.md)
 ## [Choose between traditional web apps and single page apps](choose-between-traditional-web-apps-and-single-page-apps.md)
+## [Architectural principles](architectural-principles/)
 
-
-# [architectural principles](architectural-principles/)
 # [common web application architectures](common-web-application-architectures/)
 # [common client side web technologies](common-client-side-web-technologies/)
 # [developing asp](developing-asp/)

@@ -88,4 +88,4 @@ The following decision table summarizes some of the basic factors to consider wh
 
 >[!div class="step-by-step"]
 [Previous] (characteristics-of-modern-web-applications.md)
-[Next](../architectural-principles/index.md)
+[Next](architectural-principles.md)

@@ -1,5 +1,0 @@
-# [choosing between traditional web apps and single page apps](index.md)
-## [Summary](summary.md)
-## [When to choose traditional web apps](when-to-choose-traditional-web-apps.md)
-## [When to choose SPAs](when-to-choose-spas.md)
-## [Decision table – Traditional Web or SPA](decision-table-–-traditional-web-or-spa.md)

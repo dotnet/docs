@@ -39,7 +39,11 @@
 -   The attribute can be applied only one time.  
   
    
-  
+
+        
+        
+        
+        <!-- TODO: Replace or Update example  
 ## Examples  
  The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.DisplayColumnAttribute> attribute. The example performs the following tasks:  
   
@@ -65,7 +69,7 @@
 -   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
   
 -   A dynamic data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  
+  -->
  ]]>
       </format>
     </remarks>
@@ -91,13 +95,15 @@
       </Parameters>
       <Docs>
         <param name="displayColumn">The name of the column to use as the display column.</param>
-        <summary>Initializes a new instance of the 
+        <summary>Initializes a new instance of the                                         
           <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified column.
+                                
         </summary>
         <remarks>
           <format type="text/markdown">
             <![CDATA[  
   
+            
 ## Examples  
  The following example shows how to define the parent column to display in a page for the child table as the foreign-key column.  
   
@@ -131,8 +137,9 @@
       <Docs>
         <param name="displayColumn">The name of the column to use as the display column.</param>
         <param name="sortColumn">The name of the column to use for sorting.</param>
-        <summary>Initializes a new instance of the 
+        <summary>Initializes a new instance of the                                         
           <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display and sort columns.
+                                
         </summary>
         <remarks>
           <format type="text/markdown">
@@ -170,16 +177,19 @@
         <param name="displayColumn">The name of the column to use as the display column.</param>
         <param name="sortColumn">The name of the column to use for sorting.</param>
         <param name="sortDescending">
-          <see langword="true" /> to sort in descending order; otherwise, 
-          <see langword="false" />. The default is 
+          <see langword="true" /> to sort in descending order; otherwise,                                         
+          <see langword="false" />. The default is                                         
           <see langword="false" />.
+                                
         </param>
-        <summary>Initializes a new instance of the 
+        <summary>Initializes a new instance of the                                         
           <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class by using the specified display column, and the specified sort column and sort order.
+                                
         </summary>
         <remarks>
           <format type="text/markdown">
             <![CDATA[  
+
   
 ## Examples  
  The following example shows how to define the parent column to display in a page for the child table as the foreign-key column. It sets the parent table column for sorting and also sets the sort order.  
@@ -261,8 +271,9 @@
       <Docs>
         <summary>Gets a value that indicates whether to sort in descending or ascending order.</summary>
         <value>
-          <see langword="true" /> if the column will be sorted in descending order; otherwise, 
+          <see langword="true" /> if the column will be sorted in descending order; otherwise,                                         
           <see langword="false" />.
+                                
         </value>
         <remarks>To be added.</remarks>
       </Docs>

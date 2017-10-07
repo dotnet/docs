@@ -52,7 +52,7 @@ Type providers are best suited to situations where the schema is stable at runti
 
 
 ## A Simple Type Provider
-The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](https://msdn.microsoft.com/library/#BK_Erased) later in this topic.
+The provider makes available a "type space" that contains erased types, as the following code shows by using F# signature syntax and including only a single erased type, `Type1`. For more information about erased types, see [Details About Erased Provided Types](#details-about-erased-provided-types) later in this topic.
 
 ```fsharp
 namespace Samples.HelloWorldTypeProvider

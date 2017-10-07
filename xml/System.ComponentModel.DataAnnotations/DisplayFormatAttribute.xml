@@ -32,6 +32,7 @@
   
    
   
+        <!-- TODO: Update or Replace the example
 ## Examples  
  See an online example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.ComponentModel.DataAnnotations.DisplayFormatAttribute).  
   
@@ -57,7 +58,7 @@
 -   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running ([!INCLUDE[sqprsqext](~/includes/sqprsqext-md.md)] or [!INCLUDE[ssKatmai_long](~/includes/sskatmai-long-md.md)]).  
   
 -   A data-driven Web site. This enables you to create a data context for the database and the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
-  
+  -->
  ]]>
       </format>
     </remarks>
@@ -80,8 +81,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the 
+        <summary>Initializes a new instance of the           
           <see cref="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" /> class.
+        
         </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,13 +107,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the formatting string that is specified by the 
+        <summary>Gets or sets a value that indicates whether the formatting string that is specified by the           
           <see cref="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" /> property is applied to the field value when the data field is in edit mode.
+        
         </summary>
         <value>
-          <see langword="true" /> if the formatting string applies to the field value in edit mode; otherwise, 
-          <see langword="false" />. The default is 
+          <see langword="true" /> if the formatting string applies to the field value in edit mode; otherwise,           
+          <see langword="false" />. The default is           
           <see langword="false" />.
+        
         </value>
         <remarks>
           <format type="text/markdown">
@@ -152,14 +156,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether empty string values ("") are automatically converted to 
+        <summary>Gets or sets a value that indicates whether empty string values ("") are automatically converted to           
           <see langword="null" /> when the data field is updated in the data source.
+        
         </summary>
         <value>
-          <see langword="true" /> if empty string values are automatically converted to 
-          <see langword="null" />; otherwise, 
-          <see langword="false" />. The default is 
+          <see langword="true" /> if empty string values are automatically converted to           
+          <see langword="null" />; otherwise,           
+          <see langword="false" />. The default is           
           <see langword="true" />.
+        
         </value>
         <remarks>
           <format type="text/markdown">
@@ -259,8 +265,9 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the field should be HTML-encoded.</summary>
         <value>
-          <see langword="true" /> if the field should be HTML-encoded; otherwise, 
+          <see langword="true" /> if the field should be HTML-encoded; otherwise,           
           <see langword="false" />.
+        
         </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,11 +291,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that is displayed for a field when the field's value is 
+        <summary>Gets or sets the text that is displayed for a field when the field's value is           
           <see langword="null" />.
+        
         </summary>
-        <value>The text that is displayed for a field when the field's value is 
+        <value>The text that is displayed for a field when the field's value is           
           <see langword="null" />. The default is an empty string (""), which indicates that this property is not set.
+        
         </value>
         <remarks>
           <format type="text/markdown">

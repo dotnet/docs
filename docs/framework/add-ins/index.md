@@ -39,7 +39,7 @@ manager: "wpickett"
 -   [Reference](#reference)  
   
 > [!NOTE]
->  You can find additional sample code, and customer technology previews of tools for building add-in pipelines, at the [Creating an Extensible Application](~/dotnet/framework/add-ins/walkthrough-create-extensible-app).  
+>  For an example of building an add-in pipeline, see[Creating an Extensible Application](~/dotnet/framework/add-ins/walkthrough-create-extensible-app).  
   
 <a name="addin_model"></a>   
 ## Add-in Model  

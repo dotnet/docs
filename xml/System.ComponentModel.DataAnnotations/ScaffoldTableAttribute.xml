@@ -39,8 +39,8 @@
   
  This class can be used to enable or disable scaffolding of data tables in a data model by applying this attribute to the partial class that represents the table.  
   
-   
-  
+        
+        <!--
 ## Examples  
  The following code example hides the ErrorLog Table in AdventureWorksLT database by applying the scaffold attribute to the ErrorLog partial class that represents the ErrorLog table. The scaffold property is set to `false.`  
   
@@ -77,7 +77,7 @@ End Class
 -   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
   
 -   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
-  
+  -->
  ]]>
       </format>
     </remarks>
@@ -98,10 +98,10 @@ End Class
       </Parameters>
       <Docs>
         <param name="scaffold">The value that specifies whether scaffolding is enabled.</param>
-        <summary>Initializes a new instance of           
-          <see cref="T:System.ComponentModel.DataAnnotations.ScaffoldTableAttribute" /> using the           
+        <summary>Initializes a new instance of                                                             
+          <see cref="T:System.ComponentModel.DataAnnotations.ScaffoldTableAttribute" /> using the                                                             
           <see cref="P:System.ComponentModel.DataAnnotations.ScaffoldTableAttribute.Scaffold" /> property.
-        
+                                                
         </summary>
         <remarks>
           <format type="text/markdown">
@@ -131,9 +131,9 @@ End Class
       <Docs>
         <summary>Gets or sets the value that specifies whether scaffolding is enabled.</summary>
         <value>
-          <see langword="true" />, if scaffolding is enabled; otherwise           
+          <see langword="true" />, if scaffolding is enabled; otherwise                                                             
           <see langword="false" />.
-        
+                                                
         </value>
         <remarks>
           <format type="text/markdown">

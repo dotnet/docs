@@ -24,7 +24,7 @@ The .NET Framework is evolving to accommodate different platforms such as Window
  When you use an OOB feature in your app, your users do not have to install the latest version of the .NET Framework to run your app, because the OOB assemblies deploy with your app package.  
   
 ## How OOB packages are distributed  
- OOB releases for core common language runtime (CLR) components are delivered through the [NuGet Package Manager](https://github.com/nuget/home), which is an open source Visual Studio extension. NuGet enables you to browse and add libraries to your .NET Framework projects easily from the Solution Explorer in Visual Studio. NuGet is included with all editions of Visual Studio starting with Visual Studio 2012. To see if NuGet is installed, look for **Library Package Manager** on the Visual Studio **Tools** menu. If it’s not installed:  
+ OOB releases for core common language runtime (CLR) components are delivered through the [NuGet Package Manager](https://marketplace.visualstudio.com/items?itemName=NuGetTeam.NuGetPackageManager), which is an open source Visual Studio extension. NuGet enables you to browse and add libraries to your .NET Framework projects easily from the Solution Explorer in Visual Studio. NuGet is included with all editions of Visual Studio starting with Visual Studio 2012. To see if NuGet is installed, look for **Library Package Manager** on the Visual Studio **Tools** menu. If it’s not installed:  
   
 1.  On the Visual Studio menu bar, choose **Tools**, **Extensions and Updates** (in Visual Studio 2010, choose **Extension Manager**).  
   

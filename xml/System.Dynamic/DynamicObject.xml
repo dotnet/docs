@@ -109,9 +109,9 @@ Dim sampleObject As Object = New SampleDynamicObject()
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Enables derived types to initialize a new instance of the                     
+        <summary>Enables derived types to initialize a new instance of the                               
           <see cref="T:System.Dynamic.DynamicObject" /> type.
-                
+                        
         </summary>
         <remarks>
           <format type="text/markdown">
@@ -217,18 +217,18 @@ Dim sampleObject As Object = New SampleDynamicObject()
         <Parameter Name="parameter" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="parameter">The expression that represents                     
+        <param name="parameter">The expression that represents                               
           <see cref="T:System.Dynamic.DynamicMetaObject" /> to dispatch to the dynamic virtual methods.
-                
+                        
         </param>
-        <summary>Provides a                     
-          <see cref="T:System.Dynamic.DynamicMetaObject" /> that dispatches to the dynamic virtual methods. The object can be encapsulated inside another                     
+        <summary>Provides a                               
+          <see cref="T:System.Dynamic.DynamicMetaObject" /> that dispatches to the dynamic virtual methods. The object can be encapsulated inside another                               
           <see cref="T:System.Dynamic.DynamicMetaObject" /> to provide custom behavior for individual actions. This method supports the Dynamic Language Runtime infrastructure for language implementers and it is not intended to be used directly from your code.
-                
+                        
         </summary>
-        <returns>An object of the                     
+        <returns>An object of the                               
           <see cref="T:System.Dynamic.DynamicMetaObject" /> type.
-                
+                        
         </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,36 +264,36 @@ Dim sampleObject As Object = New SampleDynamicObject()
         <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="binder">Provides information about the binary operation. The                     
-          <c>binder.Operation</c> property returns an                     
-          <see cref="T:System.Linq.Expressions.ExpressionType" /> object. For example, for the                     
-          <c>sum = first + second</c> statement, where                     
-          <c>first</c> and                     
-          <c>second</c> are derived from the                     
-          <see langword="DynamicObject" /> class,                     
-          <c>binder.Operation</c> returns                     
+        <param name="binder">Provides information about the binary operation. The                               
+          <c>binder.Operation</c> property returns an                               
+          <see cref="T:System.Linq.Expressions.ExpressionType" /> object. For example, for the                               
+          <c>sum = first + second</c> statement, where                               
+          <c>first</c> and                               
+          <c>second</c> are derived from the                               
+          <see langword="DynamicObject" /> class,                               
+          <c>binder.Operation</c> returns                               
           <c>ExpressionType.Add</c>.
-                
+                        
         </param>
-        <param name="arg">The right operand for the binary operation. For example, for the                     
-          <c>sum = first + second</c> statement, where                     
-          <c>first</c> and                     
-          <c>second</c> are derived from the                     
-          <see langword="DynamicObject" /> class,                     
-          <c>arg</c> is equal to                     
+        <param name="arg">The right operand for the binary operation. For example, for the                               
+          <c>sum = first + second</c> statement, where                               
+          <c>first</c> and                               
+          <c>second</c> are derived from the                               
+          <see langword="DynamicObject" /> class,                               
+          <c>arg</c> is equal to                               
           <c>second</c>.
-                
+                        
         </param>
         <param name="result">The result of the binary operation.</param>
-        <summary>Provides implementation for binary operations. Classes derived from the                     
+        <summary>Provides implementation for binary operations. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as addition and multiplication.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -391,30 +391,30 @@ Dim sampleObject As Object = New SampleDynamicObject()
         <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="binder">Provides information about the conversion operation. The                     
-          <c>binder.Type</c> property provides the type to which the object must be converted. For example, for the statement                     
+        <param name="binder">Provides information about the conversion operation. The                               
+          <c>binder.Type</c> property provides the type to which the object must be converted. For example, for the statement                               
           <c>(String)sampleObject</c> in C# (
-                    
-          <c>CType(sampleObject, Type)</c> in Visual Basic), where                     
-          <c>sampleObject</c> is an instance of the class derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
-          <c>binder.Type</c> returns the                     
-          <see cref="T:System.String" /> type. The                     
-          <c>binder.Explicit</c> property provides information about the kind of conversion that occurs. It returns                     
-          <see langword="true" /> for explicit conversion and                     
+                              
+          <c>CType(sampleObject, Type)</c> in Visual Basic), where                               
+          <c>sampleObject</c> is an instance of the class derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
+          <c>binder.Type</c> returns the                               
+          <see cref="T:System.String" /> type. The                               
+          <c>binder.Explicit</c> property provides information about the kind of conversion that occurs. It returns                               
+          <see langword="true" /> for explicit conversion and                               
           <see langword="false" /> for implicit conversion.
-                
+                        
         </param>
         <param name="result">The result of the type conversion operation.</param>
-        <summary>Provides implementation for type conversion operations. Classes derived from the                     
+        <summary>Provides implementation for type conversion operations. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations that convert an object from one type to another.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -490,20 +490,20 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the initialization operation.</param>
-        <param name="args">The arguments that are passed to the object during initialization. For example, for the                     
-          <c>new SampleType(100)</c> operation, where                     
-          <c>SampleType</c> is the type derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
+        <param name="args">The arguments that are passed to the object during initialization. For example, for the                               
+          <c>new SampleType(100)</c> operation, where                               
+          <c>SampleType</c> is the type derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
           <c>args[0]</c> is equal to 100.
-                
+                        
         </param>
         <param name="result">The result of the initialization.</param>
         <summary>Provides the implementation for operations that initialize a new instance of a dynamic object. This method is not intended for use in C# or Visual Basic.</summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -553,10 +553,10 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
         <param name="indexes">The indexes to be deleted.</param>
         <summary>Provides the implementation for operations that delete an object by index. This method is not intended for use in C# or Visual Basic.</summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -604,10 +604,10 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
         <param name="binder">Provides information about the deletion.</param>
         <summary>Provides the implementation for operations that delete an object member. This method is not intended for use in C# or Visual Basic.</summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -655,25 +655,25 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the operation.</param>
-        <param name="indexes">The indexes that are used in the operation. For example, for the                     
+        <param name="indexes">The indexes that are used in the operation. For example, for the                               
           <c>sampleObject[3]</c> operation in C# (
-                    
-          <c>sampleObject(3)</c> in Visual Basic), where                     
-          <c>sampleObject</c> is derived from the                     
-          <see langword="DynamicObject" /> class,                     
+                              
+          <c>sampleObject(3)</c> in Visual Basic), where                               
+          <c>sampleObject</c> is derived from the                               
+          <see langword="DynamicObject" /> class,                               
           <c>indexes[0]</c> is equal to 3.
-                
+                        
         </param>
         <param name="result">The result of the index operation.</param>
-        <summary>Provides the implementation for operations that get a value by index. Classes derived from the                     
+        <summary>Provides the implementation for operations that get a value by index. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for indexing operations.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -729,28 +729,28 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
         <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="binder">Provides information about the object that called the dynamic operation. The                     
-          <c>binder.Name</c> property provides the name of the member on which the dynamic operation is performed. For example, for the                     
-          <c>Console.WriteLine(sampleObject.SampleProperty)</c> statement, where                     
-          <c>sampleObject</c> is an instance of the class derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
-          <c>binder.Name</c> returns "SampleProperty". The                     
+        <param name="binder">Provides information about the object that called the dynamic operation. The                               
+          <c>binder.Name</c> property provides the name of the member on which the dynamic operation is performed. For example, for the                               
+          <c>Console.WriteLine(sampleObject.SampleProperty)</c> statement, where                               
+          <c>sampleObject</c> is an instance of the class derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
+          <c>binder.Name</c> returns "SampleProperty". The                               
           <c>binder.IgnoreCase</c> property specifies whether the member name is case-sensitive.
-                
+                        
         </param>
-        <param name="result">The result of the get operation. For example, if the method is called for a property, you can assign the property value to                     
+        <param name="result">The result of the get operation. For example, if the method is called for a property, you can assign the property value to                               
           <c>result</c>.
-                
+                        
         </param>
-        <summary>Provides the implementation for operations that get member values. Classes derived from the                     
+        <summary>Provides the implementation for operations that get member values. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as getting a value for a property.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -810,23 +810,23 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the invoke operation.</param>
-        <param name="args">The arguments that are passed to the object during the invoke operation. For example, for the                     
-          <c>sampleObject(100)</c> operation, where                     
-          <c>sampleObject</c> is derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
+        <param name="args">The arguments that are passed to the object during the invoke operation. For example, for the                               
+          <c>sampleObject(100)</c> operation, where                               
+          <c>sampleObject</c> is derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
           <c>args[0]</c> is equal to 100.
-                
+                        
         </param>
         <param name="result">The result of the object invocation.</param>
-        <summary>Provides the implementation for operations that invoke an object. Classes derived from the                     
+        <summary>Provides the implementation for operations that invoke an object. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as invoking an object or a delegate.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -884,32 +884,32 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
         <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="binder">Provides information about the dynamic operation. The                     
-          <c>binder.Name</c> property provides the name of the member on which the dynamic operation is performed. For example, for the statement                     
-          <c>sampleObject.SampleMethod(100)</c>, where                     
-          <c>sampleObject</c> is an instance of the class derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
-          <c>binder.Name</c> returns "SampleMethod". The                     
+        <param name="binder">Provides information about the dynamic operation. The                               
+          <c>binder.Name</c> property provides the name of the member on which the dynamic operation is performed. For example, for the statement                               
+          <c>sampleObject.SampleMethod(100)</c>, where                               
+          <c>sampleObject</c> is an instance of the class derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
+          <c>binder.Name</c> returns "SampleMethod". The                               
           <c>binder.IgnoreCase</c> property specifies whether the member name is case-sensitive.
-                
+                        
         </param>
-        <param name="args">The arguments that are passed to the object member during the invoke operation. For example, for the statement                     
-          <c>sampleObject.SampleMethod(100)</c>, where                     
-          <c>sampleObject</c> is derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
+        <param name="args">The arguments that are passed to the object member during the invoke operation. For example, for the statement                               
+          <c>sampleObject.SampleMethod(100)</c>, where                               
+          <c>sampleObject</c> is derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
           <c>args[0]</c> is equal to 100.
-                
+                        
         </param>
         <param name="result">The result of the member invocation.</param>
-        <summary>Provides the implementation for operations that invoke a member. Classes derived from the                     
+        <summary>Provides the implementation for operations that invoke a member. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as calling a method.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -971,33 +971,33 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the operation.</param>
-        <param name="indexes">The indexes that are used in the operation. For example, for the                     
+        <param name="indexes">The indexes that are used in the operation. For example, for the                               
           <c>sampleObject[3] = 10</c> operation in C# (
-                    
-          <c>sampleObject(3) = 10</c> in Visual Basic), where                     
-          <c>sampleObject</c> is derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
+                              
+          <c>sampleObject(3) = 10</c> in Visual Basic), where                               
+          <c>sampleObject</c> is derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
           <c>indexes[0]</c> is equal to 3.
-                
+                        
         </param>
-        <param name="value">The value to set to the object that has the specified index. For example, for the                     
+        <param name="value">The value to set to the object that has the specified index. For example, for the                               
           <c>sampleObject[3] = 10</c> operation in C# (
-                    
-          <c>sampleObject(3) = 10</c> in Visual Basic), where                     
-          <c>sampleObject</c> is derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
+                              
+          <c>sampleObject(3) = 10</c> in Visual Basic), where                               
+          <c>sampleObject</c> is derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
           <c>value</c> is equal to 10.
-                
+                        
         </param>
-        <summary>Provides the implementation for operations that set a value by index. Classes derived from the                     
+        <summary>Provides the implementation for operations that set a value by index. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations that access objects by a specified index.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -1053,31 +1053,31 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="binder">Provides information about the object that called the dynamic operation. The                     
-          <c>binder.Name</c> property provides the name of the member to which the value is being assigned. For example, for the statement                     
-          <c>sampleObject.SampleProperty = "Test"</c>, where                     
-          <c>sampleObject</c> is an instance of the class derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class,                     
-          <c>binder.Name</c> returns "SampleProperty". The                     
+        <param name="binder">Provides information about the object that called the dynamic operation. The                               
+          <c>binder.Name</c> property provides the name of the member to which the value is being assigned. For example, for the statement                               
+          <c>sampleObject.SampleProperty = "Test"</c>, where                               
+          <c>sampleObject</c> is an instance of the class derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class,                               
+          <c>binder.Name</c> returns "SampleProperty". The                               
           <c>binder.IgnoreCase</c> property specifies whether the member name is case-sensitive.
-                
+                        
         </param>
-        <param name="value">The value to set to the member. For example, for                     
-          <c>sampleObject.SampleProperty = "Test"</c>, where                     
-          <c>sampleObject</c> is an instance of the class derived from the                     
-          <see cref="T:System.Dynamic.DynamicObject" /> class, the                     
+        <param name="value">The value to set to the member. For example, for                               
+          <c>sampleObject.SampleProperty = "Test"</c>, where                               
+          <c>sampleObject</c> is an instance of the class derived from the                               
+          <see cref="T:System.Dynamic.DynamicObject" /> class, the                               
           <c>value</c> is "Test".
-                
+                        
         </param>
-        <summary>Provides the implementation for operations that set member values. Classes derived from the                     
+        <summary>Provides the implementation for operations that set member values. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as setting a value for a property.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -1135,25 +1135,25 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
         <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="binder">Provides information about the unary operation. The                     
-          <c>binder.Operation</c> property returns an                     
-          <see cref="T:System.Linq.Expressions.ExpressionType" /> object. For example, for the                     
-          <c>negativeNumber = -number</c> statement, where                     
-          <c>number</c> is derived from the                     
-          <see langword="DynamicObject" /> class,                     
+        <param name="binder">Provides information about the unary operation. The                               
+          <c>binder.Operation</c> property returns an                               
+          <see cref="T:System.Linq.Expressions.ExpressionType" /> object. For example, for the                               
+          <c>negativeNumber = -number</c> statement, where                               
+          <c>number</c> is derived from the                               
+          <see langword="DynamicObject" /> class,                               
           <c>binder.Operation</c> returns "Negate".
-                
+                        
         </param>
         <param name="result">The result of the unary operation.</param>
-        <summary>Provides implementation for unary operations. Classes derived from the                     
+        <summary>Provides implementation for unary operations. Classes derived from the                               
           <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as negation, increment, or decrement.
-                
+                        
         </summary>
         <returns>
-          <see langword="true" /> if the operation is successful; otherwise,                     
-          <see langword="false" />. If this method returns                     
+          <see langword="true" /> if the operation is successful; otherwise,                               
+          <see langword="false" />. If this method returns                               
           <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
-                
+                        
         </returns>
         <remarks>
           <format type="text/markdown">
@@ -1166,7 +1166,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
   
  You can get information about the type of the unary operation by using the `Operation` property of the `binder` parameter.  
   
- If your dynamic object is used only in C# and Visual Basic, the `binder.Operation` property can have one of the following values from the <xref:System.Linq.Expressions.ExpressionType> enumeration. However, in other languages such as IronPython or IronRuby, you can have other values. For more information about <xref:System.Linq.Expressions.ExpressionType>, see [documentation](~/dotnet/api/system.linq.expressions.expressiontype).  
+ For more information, see <xref::System.Linq.Expressions.ExpressionType>.
   
 |Value|Description|C#|Visual Basic|  
 |-----------|-----------------|---------|------------------|  

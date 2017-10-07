@@ -45,11 +45,12 @@
 -   Issue validation errors as appropriate.  
   
  For more information, see [ASP.NET Dynamic Data Guidelines](http://msdn.microsoft.com/en-us/c563bbf3-feb9-484e-81d1-a585f1b0e192).  
-  
- See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.ComponentModel.DataAnnotations.DataTypeAttribute).  
-  
    
-  
+
+        
+        
+        
+        <!-- TODO: Update or Replace the the example  
 ## Examples  
  The following example uses the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to customize the display of the EmailAddress data field. The e-mail addresses are shown as hyperlinks instead of as simple text, which is what Dynamic Data would infer from the intrinsic data type. The example code is in three parts, and it performs the following steps:  
   
@@ -58,16 +59,19 @@
 -   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This indicates to the Text.ascx field template that it should customize the display of e-mail addresses.  
   
 -   It modifies the Text.ascx field template to customize the display of the EmailAddress data fields.  
-  
+ -->
+
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
- [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]  
-  
- 
-        <!-- TODO: review snippet reference [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)] -->
+ [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]    
+
+
+                                        
+        <!-- TODO: review snippet reference 
+        [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)] -->
         <!-- TODO: review snippet reference [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)] -->      [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
- [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]     To compile and run the example code, you need the following:    
--   Visual Studio 2008 Service Pack 1 or Visual Developer 2008 Express Edition Service Pack 1.    
--   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).    
+ [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]     To compile and run the example code, you need the following:     
+-   Any edition of Visual Studio 2010 or later.    
+-   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2014). The samples work with SQL Server 2014 and later versions.    
 -   A data-driven Web site. This enables you to create a data context for the database and to create the class that contains the data field to customize. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.     ]]>
       </format>
     </remarks>
@@ -93,8 +97,9 @@
       </Parameters>
       <Docs>
         <param name="dataType">The name of the type to associate with the data field.</param>
-        <summary>Initializes a new instance of the 
+        <summary>Initializes a new instance of the                                                   
           <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class by using the specified type name.
+                                        
         </summary>
         <remarks>
           <format type="text/markdown">
@@ -136,8 +141,9 @@
       </Parameters>
       <Docs>
         <param name="customDataType">The name of the custom field template to associate with the data field.</param>
-        <summary>Initializes a new instance of the 
+        <summary>Initializes a new instance of the                                                   
           <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> class by using the specified field template name.
+                                        
         </summary>
         <remarks>
           <format type="text/markdown">
@@ -150,9 +156,7 @@
           </format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="customDataType" /> is 
-          <see langword="null" /> or an empty string ("").
-        </exception>
+          <paramref name="customDataType" /> is <see langword="null" /> or an empty string (""). </exception>
       </Docs>
     </Member>
     <Member MemberName="CustomDataType">
@@ -199,8 +203,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the type that is associated with the data field.</summary>
-        <value>One of the 
+        <value>One of the                                                   
           <see cref="T:System.ComponentModel.DataAnnotations.DataType" /> values.
+                                        
         </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,6 +294,7 @@
         <summary>Checks that the value of the data field is valid.</summary>
         <returns>
           <see langword="true" /> always.
+                                        
         </returns>
         <remarks>
           <format type="text/markdown">

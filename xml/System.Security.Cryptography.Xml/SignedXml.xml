@@ -615,7 +615,7 @@
     </Member>
     <Member MemberName="CheckSignatureReturningKey">
       <MemberSignature Language="C#" Value="public bool CheckSignatureReturningKey (out System.Security.Cryptography.AsymmetricAlgorithm signingKey);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignatureReturningKey(class System.Security.Cryptography.AsymmetricAlgorithm signingKey) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignatureReturningKey([out] class System.Security.Cryptography.AsymmetricAlgorithm&amp; signingKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.CheckSignatureReturningKey(System.Security.Cryptography.AsymmetricAlgorithm@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

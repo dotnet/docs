@@ -1,6 +1,6 @@
 ---
 title: "?: Operator (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: "07/20/2015"
 ms.prod: .net
 ms.technology: ["devlang-csharp"]
 ms.topic: "article"
@@ -26,7 +26,7 @@ condition ? first_expression : second_expression;
   
  You can express calculations that might otherwise require an `if-else` construction more concisely by using the conditional operator. For example, the following code uses first an `if` statement and then a conditional operator to classify an integer as positive or negative.  
   
-```  
+```csharp
 int input = Convert.ToInt32(Console.ReadLine());  
 string classify;  
   

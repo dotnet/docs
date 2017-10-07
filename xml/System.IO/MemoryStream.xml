@@ -1054,7 +1054,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1416,7 +1416,7 @@
     </Member>
     <Member MemberName="TryGetBuffer">
       <MemberSignature Language="C#" Value="public virtual bool TryGetBuffer (out ArraySegment&lt;byte&gt; buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetBuffer(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetBuffer([out] valuetype System.ArraySegment`1&lt;unsigned int8&gt;&amp; buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryStream.TryGetBuffer(System.ArraySegment{System.Byte}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

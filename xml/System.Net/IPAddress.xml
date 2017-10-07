@@ -1396,7 +1396,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string ipString, out System.Net.IPAddress address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string ipString, class System.Net.IPAddress address) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string ipString, [out] class System.Net.IPAddress&amp; address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.TryParse(System.String,System.Net.IPAddress@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

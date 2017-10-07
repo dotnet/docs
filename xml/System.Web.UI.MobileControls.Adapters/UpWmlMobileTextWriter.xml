@@ -115,7 +115,7 @@
     </Member>
     <Member MemberName="CalculateFormPostBackUrl">
       <MemberSignature Language="C#" Value="protected override string CalculateFormPostBackUrl (bool externalSubmit, ref bool encode);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string CalculateFormPostBackUrl(bool externalSubmit, bool encode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string CalculateFormPostBackUrl(bool externalSubmit, bool&amp; encode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.UpWmlMobileTextWriter.CalculateFormPostBackUrl(System.Boolean,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -2879,7 +2879,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out double result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, float64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] float64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.TryParse(System.String,System.Double@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2962,7 +2962,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out double result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, float64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] float64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Double.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Double@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

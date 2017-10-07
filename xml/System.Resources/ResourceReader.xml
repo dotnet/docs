@@ -545,7 +545,7 @@ Label11="Mobile Phone:"
     </Member>
     <Member MemberName="GetResourceData">
       <MemberSignature Language="C#" Value="public void GetResourceData (string resourceName, out string resourceType, out byte[] resourceData);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetResourceData(string resourceName, string resourceType, unsigned int8[] resourceData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetResourceData(string resourceName, [out] string&amp; resourceType, [out] unsigned int8[]&amp; resourceData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.GetResourceData(System.String,System.String@,System.Byte[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -179,7 +179,7 @@
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventWaitHandle (bool initialState, System.Threading.EventResetMode mode, string name, out bool createdNew);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, bool createdNew) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, [out] bool&amp; createdNew) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -235,7 +235,7 @@
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventWaitHandle (bool initialState, System.Threading.EventResetMode mode, string name, out bool createdNew, System.Security.AccessControl.EventWaitHandleSecurity eventSecurity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, bool createdNew, class System.Security.AccessControl.EventWaitHandleSecurity eventSecurity) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, valuetype System.Threading.EventResetMode mode, string name, [out] bool&amp; createdNew, class System.Security.AccessControl.EventWaitHandleSecurity eventSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@,System.Security.AccessControl.EventWaitHandleSecurity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -663,7 +663,7 @@
     </Member>
     <Member MemberName="TryOpenExisting">
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, out System.Threading.EventWaitHandle result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, class System.Threading.EventWaitHandle result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, [out] class System.Threading.EventWaitHandle&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Threading.EventWaitHandle@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -728,7 +728,7 @@
     </Member>
     <Member MemberName="TryOpenExisting">
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, System.Security.AccessControl.EventWaitHandleRights rights, out System.Threading.EventWaitHandle result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, valuetype System.Security.AccessControl.EventWaitHandleRights rights, class System.Threading.EventWaitHandle result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, valuetype System.Security.AccessControl.EventWaitHandleRights rights, [out] class System.Threading.EventWaitHandle&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Threading.EventWaitHandle@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

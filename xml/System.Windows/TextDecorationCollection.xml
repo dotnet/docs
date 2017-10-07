@@ -915,7 +915,7 @@
     </Member>
     <Member MemberName="TryRemove">
       <MemberSignature Language="C#" Value="public bool TryRemove (System.Collections.Generic.IEnumerable&lt;System.Windows.TextDecoration&gt; textDecorations, out System.Windows.TextDecorationCollection result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRemove(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.TextDecoration&gt; textDecorations, class System.Windows.TextDecorationCollection result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRemove(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.TextDecoration&gt; textDecorations, [out] class System.Windows.TextDecorationCollection&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollection.TryRemove(System.Collections.Generic.IEnumerable{System.Windows.TextDecoration},System.Windows.TextDecorationCollection@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

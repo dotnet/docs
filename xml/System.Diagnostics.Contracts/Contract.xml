@@ -1228,7 +1228,7 @@
     </Member>
     <Member MemberName="ValueAtReturn&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T ValueAtReturn&lt;T&gt; (out T value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ValueAtReturn&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ValueAtReturn&lt;T&gt;([out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.Contract.ValueAtReturn``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

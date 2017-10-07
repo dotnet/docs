@@ -167,7 +167,7 @@
     </Member>
     <Member MemberName="GetFileOfTypeLib">
       <MemberSignature Language="C#" Value="public static string GetFileOfTypeLib (ref System.Runtime.InteropServices.TYPELIBATTR tlibattr);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileOfTypeLib(valuetype System.Runtime.InteropServices.TYPELIBATTR tlibattr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileOfTypeLib(valuetype System.Runtime.InteropServices.TYPELIBATTR&amp; tlibattr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.GetFileOfTypeLib(System.Runtime.InteropServices.TYPELIBATTR@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

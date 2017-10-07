@@ -61,7 +61,7 @@
     </Member>
     <Member MemberName="Array">
       <MemberSignature Language="C#" Value="public void Array (out System.Reflection.Metadata.Ecma335.SignatureTypeEncoder elementType, out System.Reflection.Metadata.Ecma335.ArrayShapeEncoder arrayShape);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Array(valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder elementType, valuetype System.Reflection.Metadata.Ecma335.ArrayShapeEncoder arrayShape) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Array([out] valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder&amp; elementType, [out] valuetype System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&amp; arrayShape) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Array(System.Reflection.Metadata.Ecma335.SignatureTypeEncoder@,System.Reflection.Metadata.Ecma335.ArrayShapeEncoder@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

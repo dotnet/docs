@@ -1795,7 +1795,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out long result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, int64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Int64.TryParse(System.String,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1876,7 +1876,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out long result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, int64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Int64.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -37,7 +37,7 @@
     </Member>
     <Member MemberName="EvaluatePostOrPrefix">
       <MemberSignature Language="C#" Value="public object EvaluatePostOrPrefix (ref object v);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object EvaluatePostOrPrefix(object v) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object EvaluatePostOrPrefix(object&amp; v) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.PostOrPrefixOperator.EvaluatePostOrPrefix(System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

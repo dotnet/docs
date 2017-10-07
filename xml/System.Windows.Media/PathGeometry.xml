@@ -386,7 +386,7 @@ FillRule Example
     </Member>
     <Member MemberName="GetPointAtFractionLength">
       <MemberSignature Language="C#" Value="public void GetPointAtFractionLength (double progress, out System.Windows.Point point, out System.Windows.Point tangent);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetPointAtFractionLength(float64 progress, valuetype System.Windows.Point point, valuetype System.Windows.Point tangent) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetPointAtFractionLength(float64 progress, [out] valuetype System.Windows.Point&amp; point, [out] valuetype System.Windows.Point&amp; tangent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathGeometry.GetPointAtFractionLength(System.Double,System.Windows.Point@,System.Windows.Point@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

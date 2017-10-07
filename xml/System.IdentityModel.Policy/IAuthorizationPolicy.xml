@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="Evaluate">
       <MemberSignature Language="C#" Value="public bool Evaluate (System.IdentityModel.Policy.EvaluationContext evaluationContext, ref object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.IdentityModel.Policy.EvaluationContext evaluationContext, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.IdentityModel.Policy.EvaluationContext evaluationContext, object&amp; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate(System.IdentityModel.Policy.EvaluationContext,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

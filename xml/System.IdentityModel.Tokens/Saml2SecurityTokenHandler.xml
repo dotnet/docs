@@ -1924,7 +1924,7 @@
     </Member>
     <Member MemberName="TryResolveIssuerToken">
       <MemberSignature Language="C#" Value="protected virtual bool TryResolveIssuerToken (System.IdentityModel.Tokens.Saml2Assertion assertion, System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, out System.IdentityModel.Tokens.SecurityToken token);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryResolveIssuerToken(class System.IdentityModel.Tokens.Saml2Assertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryResolveIssuerToken(class System.IdentityModel.Tokens.Saml2Assertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, [out] class System.IdentityModel.Tokens.SecurityToken&amp; token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.TryResolveIssuerToken(System.IdentityModel.Tokens.Saml2Assertion,System.IdentityModel.Selectors.SecurityTokenResolver,System.IdentityModel.Tokens.SecurityToken@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

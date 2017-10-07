@@ -551,7 +551,7 @@
     </Member>
     <Member MemberName="OnMnemonicCore">
       <MemberSignature Language="C#" Value="protected virtual bool OnMnemonicCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMnemonicCore(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMnemonicCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.OnMnemonicCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -703,7 +703,7 @@
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.OnMnemonic">
       <MemberSignature Language="C#" Value="bool IKeyboardInputSink.OnMnemonic (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.OnMnemonic(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.OnMnemonic(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -806,7 +806,7 @@
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator">
       <MemberSignature Language="C#" Value="bool IKeyboardInputSink.TranslateAccelerator (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -844,7 +844,7 @@
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TranslateChar">
       <MemberSignature Language="C#" Value="bool IKeyboardInputSink.TranslateChar (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateChar(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateChar(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -903,7 +903,7 @@
     </Member>
     <Member MemberName="TranslateAcceleratorCore">
       <MemberSignature Language="C#" Value="protected virtual bool TranslateAcceleratorCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -932,7 +932,7 @@
     </Member>
     <Member MemberName="TranslateCharCore">
       <MemberSignature Language="C#" Value="protected virtual bool TranslateCharCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateCharCore(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TranslateCharCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.TranslateCharCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -993,7 +993,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected virtual IntPtr WndProc (IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool handled) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool&amp; handled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

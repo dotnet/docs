@@ -110,7 +110,7 @@
     </Member>
     <Member MemberName="TryGetLocationReference">
       <MemberSignature Language="C#" Value="public abstract bool TryGetLocationReference (string name, out System.Activities.LocationReference result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetLocationReference(string name, class System.Activities.LocationReference result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetLocationReference(string name, [out] class System.Activities.LocationReference&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.TryGetLocationReference(System.String,System.Activities.LocationReference@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

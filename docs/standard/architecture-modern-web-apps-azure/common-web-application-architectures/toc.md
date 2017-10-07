@@ -1,8 +1,0 @@
-# [common web application architectures](index.md)
-## [Summary](summary.md)
-## [What is a monolithic application?](what-is-a-monolithic-application.md)
-## [All-in-One applications](all-in-one-applications.md)
-## [What are layers?](what-are-layers.md)
-## [Traditional "N-Layer" architecture applications](traditional-"n-layer"-architecture-applications.md)
-## [Clean architecture](clean-architecture.md)
-## [Monolithic Applications and Containers ](monolithic-applications-and-containers-.md)

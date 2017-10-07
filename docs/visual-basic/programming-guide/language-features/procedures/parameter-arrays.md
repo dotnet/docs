@@ -5,39 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "parameter arrays, about parameter arrays"
-  - "ParamArray keyword, parameter arrays"
-  - "Visual Basic code, procedures"
-  - "parameters, parameter arrays"
-  - "arguments [Visual Basic], parameter arrays"
-  - "procedures, indefinite number of argument values"
-  - "arrays [Visual Basic], parameter arrays"
+dev_langs: ["VB"]
+helpviewer_keywords: ["parameter arrays, about parameter arrays", "ParamArray keyword, parameter arrays", "Visual Basic code, procedures", "parameters, parameter arrays", "arguments [Visual Basic], parameter arrays", "procedures, indefinite number of argument values", "arrays [Visual Basic], parameter arrays"]
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Parameter Arrays (Visual Basic)
 Usually, you cannot call a procedure with more arguments than the procedure declaration specifies. When you need an indefinite number of arguments, you can declare a *parameter array*, which allows a procedure to accept an array of values for a parameter. You do not have to know the number of elements in the parameter array when you define the procedure. The array size is determined individually by each call to the procedure.  

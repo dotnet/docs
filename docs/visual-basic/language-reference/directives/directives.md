@@ -1,39 +1,16 @@
 ---
 title: "Directives (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "directives, Visual Basic compiler"
-  - "Visual Basic code, directives"
-  - "directives"
+dev_langs: ["VB"]
+helpviewer_keywords: ["directives, Visual Basic compiler", "Visual Basic code, directives", "directives"]
 ms.assetid: 20d5fe65-490a-4c23-88c2-ee4f490ed762
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Directives (Visual Basic)
 The topics in this section document the Visual Basic source code compiler directives.  

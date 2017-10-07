@@ -2,35 +2,15 @@
 title: "-target:winexe (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "/target:winexe"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "/target compiler options [C#], /target:winexe"
-  - "-target compiler options [C#], /target:winexe"
-  - "target compiler options [C#], /target:winexe"
+f1_keywords: ["/target:winexe"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["/target compiler options [C#], /target:winexe", "-target compiler options [C#], /target:winexe", "target compiler options [C#], /target:winexe"]
 ms.assetid: b5a0619c-8caa-46a5-a743-1cf68408ad7a
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /target:winexe (C# Compiler Options)
 The **/target:winexe** option causes the compiler to create an executable (EXE), Windows program.  

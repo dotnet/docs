@@ -1,52 +1,17 @@
 ---
 title: "Double Data Type (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Double"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "identifier type characters, #"
-  - "trailing zeros"
-  - "real numbers"
-  - "trailing 0 characters"
-  - "0 characters, trailing"
-  - "literal type characters, R"
-  - "data types [Visual Basic], assigning"
-  - "Double data type [Visual Basic]"
-  - "# identifier type character"
-  - "double-precision numbers"
-  - "floating-point numbers, Double data type"
-  - "R literal type character"
-  - "zeros, trailing"
-  - "Double data type"
+f1_keywords: ["vb.Double"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["identifier type characters, #", "trailing zeros", "real numbers", "trailing 0 characters", "0 characters, trailing", "literal type characters, R", "data types [Visual Basic], assigning", "Double data type [Visual Basic]", "# identifier type character", "double-precision numbers", "floating-point numbers, Double data type", "R literal type character", "zeros, trailing", "Double data type"]
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Double Data Type (Visual Basic)
 Holds signed IEEE 64-bit (8-byte) double-precision floating-point numbers that range in value from -1.79769313486231570E+308 through -4.94065645841246544E-324 for negative values and from 4.94065645841246544E-324 through 1.79769313486231570E+308 for positive values. Double-precision numbers store an approximation of a real number.  

@@ -5,22 +5,13 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+dev_langs: ["CSharp"]
 ms.assetid: 25926e5b-fde2-4dc1-86a0-16ead7aa13d2
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Combine and Compare String Collections (LINQ) (C#)
 This example shows how to merge files that contain lines of text and then sort the results. Specifically, it shows how to perform a simple concatenation, a union, and an intersection on the two sets of text lines.  

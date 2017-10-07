@@ -1,38 +1,17 @@
 ---
 title: "Queries (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "queries [Visual Basic]"
-  - "LINQ, queries"
+dev_langs: ["VB"]
+helpviewer_keywords: ["queries [Visual Basic]", "LINQ, queries"]
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Queries (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] enables you to create [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  

@@ -1,42 +1,17 @@
 ---
 title: "/reference (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/reference compiler option [Visual Basic]"
-  - "r compiler option [Visual Basic]"
-  - "-reference compiler option [Visual Basic]"
-  - "/r compiler option [Visual Basic]"
-  - "reference compiler option [Visual Basic]"
-  - "-r compiler option [Visual Basic]"
+dev_langs: ["VB"]
+helpviewer_keywords: ["/reference compiler option [Visual Basic]", "r compiler option [Visual Basic]", "-reference compiler option [Visual Basic]", "/r compiler option [Visual Basic]", "reference compiler option [Visual Basic]", "-r compiler option [Visual Basic]"]
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /reference (Visual Basic)
 Causes the compiler to make type information in the specified assemblies available to the project you are currently compiling.  

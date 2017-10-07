@@ -2,42 +2,15 @@
 title: "How to: Set Environment Variables for the Visual Studio Command Line"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "cs.build.commandline"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "csc.exe, command-line builds"
-  - "Visual C#, command-line builds"
-  - "command-line compilers, Visual C#"
-  - "Vsvars32.bat"
-  - "builds [C#], command-line"
-  - "compilers, invoking from command line"
-  - "Vcvars32.bat file"
-  - "command line [C#], building from"
-  - "Visual C# compiler, enabling"
-  - "compiling source code, from command line"
+f1_keywords: ["cs.build.commandline"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["csc.exe, command-line builds", "Visual C#, command-line builds", "command-line compilers, Visual C#", "Vsvars32.bat", "builds [C#], command-line", "compilers, invoking from command line", "Vcvars32.bat file", "command line [C#], building from", "Visual C# compiler, enabling", "compiling source code, from command line"]
 ms.assetid: 7ec09480-5612-4f6a-8d00-ad90ea9bca5d
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Set Environment Variables for the Visual Studio Command Line
 The vsvars32.bat file sets the appropriate environment variables to enable command-line builds. For more information about vsvars32.bat, see [Knowledge Base article Q248802](http://go.microsoft.com/fwlink/?LinkId=225042).  

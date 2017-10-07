@@ -1,41 +1,16 @@
 ---
 title: "&lt;code&gt; (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "code"
-  - "<code>"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "code XML tag"
-  - "<code> C# XML tag"
+f1_keywords: ["code", "<code>"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["code XML tag", "<code> C# XML tag"]
 ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;code&gt; (C# Programming Guide)
 ## Syntax  

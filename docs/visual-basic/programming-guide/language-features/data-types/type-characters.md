@@ -5,65 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "&H prefix for hexadecimal values"
-  - "hexadecimal literals"
-  - "F literal type character"
-  - "& identifier type character"
-  - "type characters"
-  - "octal literals"
-  - "literals, hexadecimal"
-  - "&O prefix for octal values"
-  - "literals, default types"
-  - "defaults, literal types"
-  - "C literal type character"
-  - "type characters, literal"
-  - "$ identifier type character"
-  - "L literal type character"
-  - "UI literal type characters"
-  - "default literal types"
-  - "D literal type character"
-  - "literals, octal"
-  - "S literal type character"
-  - "! identifier type character"
-  - "US literal type characters"
-  - "% identifier type character"
-  - "data types [Visual Basic], type characters"
-  - "characters, identifier type"
-  - "type characters, identifier"
-  - "# identifier type character"
-  - "identifier type characters"
-  - "literal type characters"
-  - "I literal type character"
-  - "R literal type character"
-  - "@ identifier type character"
-  - "UL literal type characters"
-  - "literal types, default"
+dev_langs: ["VB"]
+helpviewer_keywords: ["&H prefix for hexadecimal values", "hexadecimal literals", "F literal type character", "& identifier type character", "type characters", "octal literals", "literals, hexadecimal", "&O prefix for octal values", "literals, default types", "defaults, literal types", "C literal type character", "type characters, literal", "$ identifier type character", "L literal type character", "UI literal type characters", "default literal types", "D literal type character", "literals, octal", "S literal type character", "! identifier type character", "US literal type characters", "% identifier type character", "data types [Visual Basic], type characters", "characters, identifier type", "type characters, identifier", "# identifier type character", "identifier type characters", "literal type characters", "I literal type character", "R literal type character", "@ identifier type character", "UL literal type characters", "literal types, default"]
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Type characters (Visual Basic)
 

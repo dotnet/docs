@@ -1,39 +1,15 @@
 ---
 title: "How to: Obtain the Address of a Variable (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "variables [C#], address of"
-  - "pointers [C#], & operator"
-  - "pointer expressions [C#], address-of operator"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["variables [C#], address of", "pointers [C#], & operator", "pointer expressions [C#], address-of operator"]
 ms.assetid: 44fe2cd9-a64f-4ef5-be2a-09ce807c0182
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Obtain the Address of a Variable (C# Programming Guide)
 To obtain the address of a unary expression, which evaluates to a fixed variable, use the address-of operator:  

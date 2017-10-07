@@ -1,38 +1,17 @@
 ---
 title: "&lt;c&gt; (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "c XML tag"
-  - "<c> XML tag"
+dev_langs: ["VB"]
+helpviewer_keywords: ["c XML tag", "<c> XML tag"]
 ms.assetid: 36ad5d1b-11f7-4012-8932-41962ac327d1
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;c&gt; (Visual Basic)
 Indicates that text within a description is code.  

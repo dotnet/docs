@@ -1,37 +1,15 @@
 ---
 title: "Using Nullable Types (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "nullable types [C#], about nullable types"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["nullable types [C#], about nullable types"]
 ms.assetid: 0bacbe72-ce15-4b14-83e1-9c14e6380c28
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using Nullable Types (C# Programming Guide)
 Nullable types can represent all the values of an underlying type, and an additional [null](../../../csharp/language-reference/keywords/null.md) value. Nullable types are declared in one of two ways:  

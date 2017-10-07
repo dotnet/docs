@@ -3,39 +3,14 @@ title: "Default values table (C# Reference)"
 descripton: Learn what are the default values of value types returned by the default constructors.
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "constructors [C#], return values"
-  - "keywords [C#], new"
-  - "default constructor [C#]"
-  - "defaults [C#]"
-  - "value types [C#], initializing"
-  - "variables [C#], value types"
-  - "constructors [C#], default constructor"
-  - "types [C#], default constructor return values"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["constructors [C#], return values", "keywords [C#], new", "default constructor [C#]", "defaults [C#]", "value types [C#], initializing", "variables [C#], value types", "constructors [C#], default constructor", "types [C#], default constructor return values"]
 ms.assetid: 4af2c1df-9e3a-48c1-83ac-b192986fc5bc
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Default values table (C# Reference)
 The following table shows the default values of value types returned by the default constructors. Default constructors are invoked by using the `new` operator, as follows:

@@ -1,114 +1,17 @@
 ---
 title: "Type Conversion Functions (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.CUShort"
-  - "vb.csng"
-  - "vb.CDate"
-  - "CByte"
-  - "CSng"
-  - "vb.CDec"
-  - "CBool"
-  - "CStr"
-  - "vb.CULng"
-  - "CDec"
-  - "CVErr"
-  - "CDbl"
-  - "CShort"
-  - "vb.CObj"
-  - "vb.CVErr"
-  - "CULng"
-  - "vb.cdbl"
-  - "vb.cbool"
-  - "CObj"
-  - "CDate"
-  - "CLng"
-  - "vb.cstr"
-  - "vb.cbyte"
-  - "vb.clng"
-  - "vb.CChar"
-  - "CUShort"
-  - "vb.CUInt"
-  - "vb.cint"
-  - "vb.CShort"
-  - "CInt"
-  - "CUInt"
-  - "CChar"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "CDate function"
-  - "CByte function"
-  - "Integer data type, converting"
-  - "string conversion, conversion functions"
-  - "fractions"
-  - "data types [Visual Basic], converting"
-  - "text, converting"
-  - "CDec function"
-  - "Char data type, converting"
-  - "type conversion, functions for"
-  - "Single data type, converting"
-  - "numbers, rounding"
-  - "rounding numbers, type conversion"
-  - "CUShort function"
-  - "Long data type, converting"
-  - "return values, data types"
-  - "single-precision numbers, converting"
-  - "data type conversion, functions for"
-  - "CStr function"
-  - "times, converting"
-  - "CSng function"
-  - "conversions, type conversion functions"
-  - "CBool function"
-  - "CDbl function"
-  - "CUInt function"
-  - "Currency data type, conversion functions"
-  - "numbers, converting"
-  - "Double data type, converting"
-  - "CLng function"
-  - "CSByte function"
-  - "double-precision numbers"
-  - "Decimal data type, converting"
-  - "Boolean data type, converting"
-  - "integers, type conversion functions"
-  - "dates, converting"
-  - "CULng function"
-  - "CInt function"
-  - "Date data type, converting"
-  - "Byte data type, converting"
-  - "String data type, converting"
-  - "CChar function"
-  - "banker's rounding"
-  - "Short data type, converting"
-  - "rounding numbers, banker's rounding"
-  - "type conversion, Visual Basic vs. .NET Framework"
+f1_keywords: ["vb.CUShort", "vb.csng", "vb.CDate", "CByte", "CSng", "vb.CDec", "CBool", "CStr", "vb.CULng", "CDec", "CVErr", "CDbl", "CShort", "vb.CObj", "vb.CVErr", "CULng", "vb.cdbl", "vb.cbool", "CObj", "CDate", "CLng", "vb.cstr", "vb.cbyte", "vb.clng", "vb.CChar", "CUShort", "vb.CUInt", "vb.cint", "vb.CShort", "CInt", "CUInt", "CChar"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["CDate function", "CByte function", "Integer data type, converting", "string conversion, conversion functions", "fractions", "data types [Visual Basic], converting", "text, converting", "CDec function", "Char data type, converting", "type conversion, functions for", "Single data type, converting", "numbers, rounding", "rounding numbers, type conversion", "CUShort function", "Long data type, converting", "return values, data types", "single-precision numbers, converting", "data type conversion, functions for", "CStr function", "times, converting", "CSng function", "conversions, type conversion functions", "CBool function", "CDbl function", "CUInt function", "Currency data type, conversion functions", "numbers, converting", "Double data type, converting", "CLng function", "CSByte function", "double-precision numbers", "Decimal data type, converting", "Boolean data type, converting", "integers, type conversion functions", "dates, converting", "CULng function", "CInt function", "Date data type, converting", "Byte data type, converting", "String data type, converting", "CChar function", "banker's rounding", "Short data type, converting", "rounding numbers, banker's rounding", "type conversion, Visual Basic vs. .NET Framework"]
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Type Conversion Functions (Visual Basic)
 These functions are compiled inline, meaning the conversion code is part of the code that evaluates the expression. Sometimes there is no call to a procedure to accomplish the conversion, which improves performance. Each function coerces an expression to a specific data type.  

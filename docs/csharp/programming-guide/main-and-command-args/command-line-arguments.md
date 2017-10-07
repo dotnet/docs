@@ -1,37 +1,15 @@
 ---
 title: "Command-Line Arguments (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "command-line arguments [C#]"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["command-line arguments [C#]"]
 ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Command-Line Arguments (C# Programming Guide)
 You can send arguments to the `Main` method by defining the method in one of the following ways:  

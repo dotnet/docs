@@ -1,38 +1,15 @@
 ---
 title: "How to: Define Abstract Properties (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "properties [C#], abstract"
-  - "abstract properties [C#]"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["properties [C#], abstract", "abstract properties [C#]"]
 ms.assetid: 672a90eb-47b9-4ae0-9914-af53852fddcb
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Define Abstract Properties (C# Programming Guide)
 The following example shows how to define [abstract](../../../csharp/language-reference/keywords/abstract.md) properties. An abstract property declaration does not provide an implementation of the property accessors -- it declares that the class supports properties, but leaves the accessor implementation to derived classes. The following example demonstrates how to implement the abstract properties inherited from a base class.  

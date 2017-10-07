@@ -5,22 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
+dev_langs: ["VB"]
 ms.assetid: 8c1c9f0c-95dd-4222-9be2-9ec026a13e81
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Query for the Largest File or Files in a Directory Tree (LINQ) (Visual Basic)
 This example shows five queries related to file size in bytes:  

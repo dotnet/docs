@@ -2,34 +2,15 @@
 title: "&amp;&amp; Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "&&_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "&& operator [C#]"
-  - "logical AND operator [C#]"
+f1_keywords: ["&&_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["&& operator [C#]", "logical AND operator [C#]"]
 ms.assetid: 2e4f0a1c-92a3-40f8-8e3b-17b607f20c31
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &amp;&amp; Operator (C# Reference)
 The conditional-AND operator (`&&`) performs a logical-AND of its `bool` operands, but only evaluates its second operand if necessary.  

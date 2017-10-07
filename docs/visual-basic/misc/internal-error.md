@@ -1,36 +1,14 @@
 ---
 title: "Internal error (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vbrID51"
+f1_keywords: ["vbrID51"]
 ms.assetid: 21266dbb-f4a1-4c5d-a646-27909cf53248
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Internal error (Visual Basic)
 An internal malfunction has occurred in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  

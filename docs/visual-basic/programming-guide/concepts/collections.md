@@ -5,22 +5,13 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "get-started-article"
-dev_langs: 
-  - "VB"
+dev_langs: ["VB"]
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Collections (Visual Basic)
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.  

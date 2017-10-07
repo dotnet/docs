@@ -5,22 +5,13 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+dev_langs: ["CSharp"]
 ms.assetid: e5d18fa1-2704-48fe-a44b-1564f97c9e9c
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Build LINQ to XML Examples (C#)
 The various snippets and examples in this documentation use classes and types from a variety of namespaces. When compiling C# code, you need to supply appropriate `using` directives.  

@@ -1,41 +1,16 @@
 ---
 title: "&lt;exception&gt; (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "exception"
-  - "<exception>"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "<exception> C# XML tag"
-  - "exception C# XML tag"
+f1_keywords: ["exception", "<exception>"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["<exception> C# XML tag", "exception C# XML tag"]
 ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;exception&gt; (C# Programming Guide)
 ## Syntax  

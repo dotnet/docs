@@ -1,45 +1,16 @@
 ---
 title: "&lt;list&gt; (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "list"
-  - "<list>"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "list C# XML tag"
-  - "listheader C# XML tag"
-  - "<listheader> C# XML tag"
-  - "item C# XML tag"
-  - "<item> C# XML tag"
-  - "<list> C# XML tag"
+f1_keywords: ["list", "<list>"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["list C# XML tag", "listheader C# XML tag", "<listheader> C# XML tag", "item C# XML tag", "<item> C# XML tag", "<list> C# XML tag"]
 ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;list&gt; (C# Programming Guide)
 ## Syntax  

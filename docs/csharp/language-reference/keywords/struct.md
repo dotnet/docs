@@ -2,34 +2,15 @@
 title: "struct (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "struct_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "struct keyword [C#]"
-  - "structs [C#], struct keyword"
+f1_keywords: ["struct_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["struct keyword [C#]", "structs [C#], struct keyword"]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # struct (C# Reference)
 A `struct` type is a value type that is typically used to encapsulate small groups of related variables, such as the coordinates of a rectangle or the characteristics of an item in an inventory. The following example shows a simple struct declaration:  

@@ -5,22 +5,13 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+dev_langs: ["CSharp"]
 ms.assetid: 9ec89809-41a1-484c-b1e3-6c4ecdca7b8d
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Sample XML Documents (LINQ to XML)
 The following example files are used in the code samples and code snippets throughout the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.  

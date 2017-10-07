@@ -5,36 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "conditional compilation, Visual Basic"
-  - "program structure, Visual Basic"
-  - "procedures, structure"
-  - "Visual Basic code, program structure"
+dev_langs: ["VB"]
+helpviewer_keywords: ["conditional compilation, Visual Basic", "program structure, Visual Basic", "procedures, structure", "Visual Basic code, program structure"]
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Structure of a Visual Basic Program
 A [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program is built up from standard building blocks. A *solution* comprises one or more projects. A *project* in turn can contain one or more assemblies. Each *assembly* is compiled from one or more source files. A *source file* provides the definition and implementation of classes, structures, modules, and interfaces, which ultimately contain all your code.  

@@ -1,45 +1,18 @@
 ---
 title: "Group By Clause (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.QueryGroupByInto"
-  - "vb.QueryGroupBy"
-  - "vb.QueryGroupRef"
-  - "vb.QueryGroupInto"
-  - "vb.QueryGroup"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "queries [Visual Basic], Group By"
-  - "Group By statement"
-  - "Group By clause"
+f1_keywords: ["vb.QueryGroupByInto", "vb.QueryGroupBy", "vb.QueryGroupRef", "vb.QueryGroupInto", "vb.QueryGroup"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["queries [Visual Basic], Group By", "Group By statement", "Group By clause"]
 ms.assetid: b1b5dcea-6654-473b-a2db-01f7e4c265d7
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Group By Clause (Visual Basic)
 Groups the elements of a query result. Can also be used to apply aggregate functions to each group. The grouping operation is based on one or more keys.  

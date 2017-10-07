@@ -1,45 +1,15 @@
 ---
 title: "Types (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "value types [C#]"
-  - "reference types [C#]"
-  - "types [C#]"
-  - "C# language, data types"
-  - "common type system [C#]"
-  - "data types [C#]"
-  - "C# language, types"
-  - "strong typing [C#]"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["value types [C#]", "reference types [C#]", "types [C#]", "C# language, data types", "common type system [C#]", "data types [C#]", "C# language, types", "strong typing [C#]"]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
 caps.latest.revision: 53
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Types (C# Programming Guide)
 ## Types, Variables, and Values  

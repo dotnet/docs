@@ -1,51 +1,18 @@
 ---
 title: "Option Compare Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Compare"
-  - "vb.OptionCompare"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "case sensitivity, Option Compare statement"
-  - "Compare keyword"
-  - "binary comparison"
-  - "strings [Visual Basic], returning from functions"
-  - "binary comparison, Option Compare statement"
-  - "strings [Visual Basic], comparing"
-  - "string comparison [Visual Basic], Option Compare statement"
-  - "Text keyword, Option Compare statement"
-  - "Binary keyword, Option Compare statement"
-  - "string comparison [Visual Basic], sorting data"
-  - "Option Compare statement"
-  - "text [Visual Basic], comparing"
+f1_keywords: ["vb.Compare", "vb.OptionCompare"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["case sensitivity, Option Compare statement", "Compare keyword", "binary comparison", "strings [Visual Basic], returning from functions", "binary comparison, Option Compare statement", "strings [Visual Basic], comparing", "string comparison [Visual Basic], Option Compare statement", "Text keyword, Option Compare statement", "Binary keyword, Option Compare statement", "string comparison [Visual Basic], sorting data", "Option Compare statement", "text [Visual Basic], comparing"]
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Option Compare Statement
 Declares the default comparison method to use when comparing string data.  

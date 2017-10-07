@@ -5,35 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "strings [Visual Basic], Like operator"
-  - "strings [Visual Basic], Visual Basic"
-  - "strings [Visual Basic], regular expressions"
+dev_langs: ["VB"]
+helpviewer_keywords: ["strings [Visual Basic], Like operator", "strings [Visual Basic], Visual Basic", "strings [Visual Basic], regular expressions"]
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # String Basics in Visual Basic
 The `String` data type represents a series of characters (each representing in turn an instance of the `Char` data type). This topic introduces the basic concepts of strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  

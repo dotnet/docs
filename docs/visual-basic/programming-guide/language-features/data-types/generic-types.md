@@ -2,64 +2,14 @@
 title: "Generic Types in Visual Basic (Visual Basic)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "generic interfaces"
-  - "data type arguments, defining"
-  - "generic delegates"
-  - "arguments [Visual Basic], data types"
-  - "Of keyword, using"
-  - "delegates, generic"
-  - "constraints, Visual Basic generic types"
-  - "generic parameters"
-  - "data type parameters"
-  - "procedures, generic"
-  - "generic procedures"
-  - "data types [Visual Basic], generic"
-  - "data types [Visual Basic], as parameters"
-  - "generics [Visual Basic], generic types"
-  - "data types [Visual Basic], as arguments"
-  - "generic classes, Visual Basic"
-  - "parameters, type"
-  - "type arguments"
-  - "interfaces, generic"
-  - "generics [Visual Basic]"
-  - "types [Visual Basic], generic"
-  - "parameters, generic"
-  - "generic structures"
-  - "generic classes"
-  - "type parameters"
-  - "data type arguments"
-  - "structures, generic"
-  - "parameters, data type"
-  - "collections, generic"
-  - "classes [Visual Basic], generic"
-  - "data type parameters, defining"
-  - "type arguments, defining"
-  - "arguments [Visual Basic], type"
+dev_langs: ["VB"]
+helpviewer_keywords: ["generic interfaces", "data type arguments, defining", "generic delegates", "arguments [Visual Basic], data types", "Of keyword, using", "delegates, generic", "constraints, Visual Basic generic types", "generic parameters", "data type parameters", "procedures, generic", "generic procedures", "data types [Visual Basic], generic", "data types [Visual Basic], as parameters", "generics [Visual Basic], generic types", "data types [Visual Basic], as arguments", "generic classes, Visual Basic", "parameters, type", "type arguments", "interfaces, generic", "generics [Visual Basic]", "types [Visual Basic], generic", "parameters, generic", "generic structures", "generic classes", "type parameters", "data type arguments", "structures, generic", "parameters, data type", "collections, generic", "classes [Visual Basic], generic", "data type parameters, defining", "type arguments, defining", "arguments [Visual Basic], type"]
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
 caps.latest.revision: 45
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Generic Types in Visual Basic (Visual Basic)
 A *generic type* is a single programming element that adapts to perform the same functionality for a variety of data types. When you define a generic class or procedure, you do not have to define a separate version for each data type for which you might want to perform that functionality.  

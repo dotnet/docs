@@ -1,36 +1,14 @@
 ---
 title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vbrApplicationLog_ReservedSpaceEncroached"
+f1_keywords: ["vbrApplicationLog_ReservedSpaceEncroached"]
 ms.assetid: 95832e70-4ecc-47aa-90c1-f35c4d468151
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value
 The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not write to the log file because:  

@@ -1,38 +1,15 @@
 ---
 title: "How to: Increment and Decrement Pointers (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "pointers [C#], increment and decrement"
-  - "pointer expressions [C#], increment and decrement"
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["pointers [C#], increment and decrement", "pointer expressions [C#], increment and decrement"]
 ms.assetid: 1b8b9281-44ee-485a-9045-3db38a4b4b89
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Increment and Decrement Pointers (C# Programming Guide)
 Use the increment and the decrement operators, `++` and `--`, to change the pointer location by [sizeof](../../../csharp/language-reference/keywords/sizeof.md) (`pointer-type`) for a pointer of type pointer-type*. The increment and decrement expressions take the following form:  

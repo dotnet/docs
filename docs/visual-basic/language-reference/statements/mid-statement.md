@@ -1,44 +1,18 @@
 ---
 title: "Mid Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.MidB"
-  - "vb.Mid"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "substrings, Mid statement"
-  - "strings [Visual Basic], substrings"
-  - "Mid statement"
-  - "strings [Visual Basic], replacing"
+f1_keywords: ["vb.MidB", "vb.Mid"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["substrings, Mid statement", "strings [Visual Basic], substrings", "Mid statement", "strings [Visual Basic], replacing"]
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Mid Statement
 Replaces a specified number of characters in a `String` variable with characters from another string.  

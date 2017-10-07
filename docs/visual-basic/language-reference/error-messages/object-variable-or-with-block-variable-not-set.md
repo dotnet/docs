@@ -1,38 +1,17 @@
 ---
 title: "Object variable or With block variable not set"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vbrID91"
-dev_langs: 
-  - "VB"
+f1_keywords: ["vbrID91"]
+dev_langs: ["VB"]
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Object variable or With block variable not set
 An invalid object variable is being referenced.   This error can occur for several reasons:  

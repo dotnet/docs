@@ -2,36 +2,15 @@
 title: "=&gt; Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "=>_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "lambda operator [C#]"
-  - "=> operator [C#]"
-  - "lambda expressions [C#], => operator"
+f1_keywords: ["=>_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["lambda operator [C#]", "=> operator [C#]", "lambda expressions [C#], => operator"]
 ms.assetid: 8c899251-dafa-4594-bec7-243b39072880
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # =&gt; Operator (C# Reference)
 The `=>` token is called the lambda operator. It is used in *lambda expressions* to separate the input variables on the left side from the lambda body on the right side. Lambda expressions are inline expressions similar to anonymous methods but more flexible; they are used extensively in LINQ queries that are expressed in method syntax. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  

@@ -1,38 +1,17 @@
 ---
 title: "Await Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb.Await"
-helpviewer_keywords: 
-  - "Await operator [Visual Basic]"
-  - "Await [Visual Basic]"
+f1_keywords: ["vb.Await"]
+helpviewer_keywords: ["Await operator [Visual Basic]", "Await [Visual Basic]"]
 ms.assetid: 6b1ce283-e92b-4ba7-b081-7be7b3d37af9
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Await Operator (Visual Basic)
 You apply the `Await` operator to an operand in an asynchronous method or lambda expression to suspend execution of the method until the awaited task completes. The task represents ongoing work.  

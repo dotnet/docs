@@ -1,39 +1,16 @@
 ---
 title: "Directories and Files Summary (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "files [Visual Basic]"
-  - "directories [Visual Basic], Visual Basic"
-  - "files [Visual Basic], summary"
+dev_langs: ["VB"]
+helpviewer_keywords: ["files [Visual Basic]", "directories [Visual Basic], Visual Basic", "files [Visual Basic], summary"]
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Directories and Files Summary (Visual Basic)
 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  

@@ -2,34 +2,15 @@
 title: "-- Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "--_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "-- operator [C#]"
-  - "decrement operator (--) [C#]"
+f1_keywords: ["--_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["-- operator [C#]", "decrement operator (--) [C#]"]
 ms.assetid: 6b9cfe86-63c7-421f-9379-c9690fea8720
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # -- Operator (C# Reference)
 The decrement operator (`--`) decrements its operand by 1. The decrement operator can appear before or after its operand: `--variable` and `variable--`. The first form is a prefix decrement operation. The result of the operation is the value of the operand "after" it has been decremented. The second form is a postfix decrement operation. The result of the operation is the value of the operand "before" it has been decremented.  

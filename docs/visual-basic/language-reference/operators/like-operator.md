@@ -1,55 +1,18 @@
 ---
 title: "Like Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "Like"
-  - "vb.Like"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "similar to"
-  - "pattern matching"
-  - "Like operator [Visual Basic]"
-  - "? symbol, wildcard character"
-  - "string comparison [Visual Basic], Like operator"
-  - "strings [Visual Basic], comparing"
-  - "comparison operators"
-  - "symbols, wildcard"
-  - "wildcards, Like operator"
-  - "strings [Visual Basic], matching"
-  - "string comparison [Visual Basic], sorting data"
-  - "data [Visual Basic], sorting"
-  - "text [Visual Basic], comparing"
-  - "operators [Visual Basic], pattern-matching"
-  - "data [Visual Basic], string comparisons"
-  - "string comparison [Visual Basic], Like operators"
+f1_keywords: ["Like", "vb.Like"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["similar to", "pattern matching", "Like operator [Visual Basic]", "? symbol, wildcard character", "string comparison [Visual Basic], Like operator", "strings [Visual Basic], comparing", "comparison operators", "symbols, wildcard", "wildcards, Like operator", "strings [Visual Basic], matching", "string comparison [Visual Basic], sorting data", "data [Visual Basic], sorting", "text [Visual Basic], comparing", "operators [Visual Basic], pattern-matching", "data [Visual Basic], string comparisons", "string comparison [Visual Basic], Like operators"]
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Like Operator (Visual Basic)
 Compares a string against a pattern.  

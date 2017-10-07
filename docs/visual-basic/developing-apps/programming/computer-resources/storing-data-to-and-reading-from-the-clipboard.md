@@ -5,38 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Clipboard, storing data to (My.Computer.Clipboard)"
-  - "Clipboard, reading from (My.Computer.Clipboard)"
-  - "Clipboard"
-  - "My.Computer.Clipboard object, tasks"
-  - "data [Visual Basic], Clipboard"
-  - "reading data, from Clipboard"
+dev_langs: ["VB"]
+helpviewer_keywords: ["Clipboard, storing data to (My.Computer.Clipboard)", "Clipboard, reading from (My.Computer.Clipboard)", "Clipboard", "My.Computer.Clipboard object, tasks", "data [Visual Basic], Clipboard", "reading data, from Clipboard"]
 ms.assetid: f690119a-4378-4f7d-b20e-d9377ef49496
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Storing data to and reading from the Clipboard (Visual Basic)
 The Clipboard can be used to store data, such as text and images. Because the Clipboard is shared by all active processes, it can be used to transfer data between them. The `My.Computer.Clipboard` object allows you to easily access the Clipboard and to read from and write to it.  

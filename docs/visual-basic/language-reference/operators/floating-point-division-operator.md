@@ -1,49 +1,18 @@
 ---
 title: "/ Operator (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-f1_keywords: 
-  - "vb./"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "division operator, floating point"
-  - "floating-point numbers, division operator"
-  - "slash (/) operator"
-  - "zero, division by zero"
-  - "operators [Visual Basic], arithmetic"
-  - "arithmetic operators, division"
-  - "division, by zero"
-  - "operators [Visual Basic], division"
-  - "division operator, syntax"
-  - "/ operator [Visual Basic]"
-  - "math operators"
+f1_keywords: ["vb./"]
+dev_langs: ["VB"]
+helpviewer_keywords: ["division operator, floating point", "floating-point numbers, division operator", "slash (/) operator", "zero, division by zero", "operators [Visual Basic], arithmetic", "arithmetic operators, division", "division, by zero", "operators [Visual Basic], division", "division operator, syntax", "/ operator [Visual Basic]", "math operators"]
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # / Operator (Visual Basic)
 Divides two numbers and returns a floating-point result.  

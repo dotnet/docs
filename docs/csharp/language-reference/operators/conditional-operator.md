@@ -2,37 +2,15 @@
 title: "?: Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "?:_CSharpKeyword"
-  - "?_CSharpKeyword"
-  - ":_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "?: operator [C#]"
-  - "conditional operator (?:) [C#]"
+f1_keywords: ["?:_CSharpKeyword", "?_CSharpKeyword", ":_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["?: operator [C#]", "conditional operator (?:) [C#]"]
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ?: Operator (C# Reference)
 The conditional operator (`?:`) returns one of two values depending on the value of a Boolean expression. Following is the syntax for the conditional operator.  

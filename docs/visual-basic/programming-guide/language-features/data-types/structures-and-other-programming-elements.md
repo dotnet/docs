@@ -5,37 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "structures, arrays"
-  - "procedures, structures as arguments to"
-  - "objects [Visual Basic], structure elements"
-  - "arrays [Visual Basic], structure elements"
-  - "nested structures"
+dev_langs: ["VB"]
+helpviewer_keywords: ["structures, arrays", "procedures, structures as arguments to", "objects [Visual Basic], structure elements", "arrays [Visual Basic], structure elements", "nested structures"]
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Structures and Other Programming Elements (Visual Basic)
 You can use structures in conjunction with arrays, objects, and procedures, as well as with each other. The interactions use the same syntax as these elements use individually.  

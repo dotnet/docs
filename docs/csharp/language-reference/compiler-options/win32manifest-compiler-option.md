@@ -2,35 +2,15 @@
 title: "-win32manifest (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "/win32manifest"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "/win32manifest compiler option [C#]"
-  - "win32manifest compiler option [C#]"
-  - "-win32manifest compiler option [C#]"
+f1_keywords: ["/win32manifest"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["/win32manifest compiler option [C#]", "win32manifest compiler option [C#]", "-win32manifest compiler option [C#]"]
 ms.assetid: 9460ea1b-6c9f-44b8-8f73-301b30a01de1
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /win32manifest (C# Compiler Options)
 Use the **/win32manifest** option to specify a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  

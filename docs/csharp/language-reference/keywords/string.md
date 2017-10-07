@@ -2,38 +2,15 @@
 title: "string (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "string"
-  - "string_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "strings [C#], reference"
-  - "@ string literal"
-  - "string literals [C#]"
-  - "string keyword [C#]"
+f1_keywords: ["string", "string_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["strings [C#], reference", "@ string literal", "string literals [C#]", "string keyword [C#]"]
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # string (C# Reference)
 The `string` type represents a sequence of zero or more Unicode characters. `string` is an alias for <xref:System.String> in the .NET Framework.  

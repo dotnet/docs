@@ -2,34 +2,15 @@
 title: "byte (C# Reference)"
 ms.date: "2017-03-14"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "byte"
-  - "byte_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "byte keyword [C#]"
+f1_keywords: ["byte", "byte_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["byte keyword [C#]"]
 ms.assetid: 111f1db9-ca32-4f0e-b497-4783517eda47
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # byte (C# Reference)
 

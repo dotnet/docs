@@ -2,34 +2,15 @@
 title: "/ Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "/_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "/ operator [C#]"
-  - "division operator [C#]"
+f1_keywords: ["/_CSharpKeyword"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["/ operator [C#]", "division operator [C#]"]
 ms.assetid: d155e496-678f-4efa-bebe-2bd08da2c5af
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # / Operator (C# Reference)
 The division operator (`/`) divides its first operand by its second operand. All numeric types have predefined division operators.  

@@ -2,34 +2,15 @@
 title: "unsafe (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "unsafe_CSharpKeyword"
-  - "unsafe"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "unsafe keyword [C#]"
+f1_keywords: ["unsafe_CSharpKeyword", "unsafe"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["unsafe keyword [C#]"]
 ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # unsafe (C# Reference)
 The `unsafe` keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md).  

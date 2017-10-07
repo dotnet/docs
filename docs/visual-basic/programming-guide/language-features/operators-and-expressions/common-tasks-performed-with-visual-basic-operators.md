@@ -5,42 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "operators [Visual Basic], logical"
-  - "operators [Visual Basic], string concatenation"
-  - "operators [Visual Basic], bitwise"
-  - "operators [Visual Basic], bit-shift"
-  - "operators [Visual Basic], arithmetic"
-  - "operators [Visual Basic], string comparison"
-  - "operators [Visual Basic], concatenation"
-  - "Visual Basic code, operators"
-  - "operators [Visual Basic], comparison"
-  - "operators [Visual Basic], short-circuiting logical"
+dev_langs: ["VB"]
+helpviewer_keywords: ["operators [Visual Basic], logical", "operators [Visual Basic], string concatenation", "operators [Visual Basic], bitwise", "operators [Visual Basic], bit-shift", "operators [Visual Basic], arithmetic", "operators [Visual Basic], string comparison", "operators [Visual Basic], concatenation", "Visual Basic code, operators", "operators [Visual Basic], comparison", "operators [Visual Basic], short-circuiting logical"]
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Common Tasks Performed with Visual Basic Operators
 Operators perform many common tasks involving one or more expressions called *operands*.  

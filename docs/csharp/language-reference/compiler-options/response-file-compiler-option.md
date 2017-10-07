@@ -2,34 +2,15 @@
 title: "@ (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "@"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "response files, specifying for compilation [C#]"
-  - "@ compiler option"
+f1_keywords: ["@"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["response files, specifying for compilation [C#]", "@ compiler option"]
 ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # @ (C# Compiler Options)
 The @ option lets you specify a file that contains compiler options and source code files to compile.  

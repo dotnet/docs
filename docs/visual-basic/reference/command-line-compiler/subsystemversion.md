@@ -4,31 +4,13 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-helpviewer_keywords: 
-  - "/subsystemversion compiler option [Visual Basic]"
-  - "-subsystemversion compiler option [Visual Basic]"
-  - "subsystemversion compiler option [Visual Basic]"
+helpviewer_keywords: ["/subsystemversion compiler option [Visual Basic]", "-subsystemversion compiler option [Visual Basic]", "subsystemversion compiler option [Visual Basic]"]
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /subsystemversion (Visual Basic)
 Specifies the minimum version of the subsystem on which the generated executable file can run, thereby determining the versions of Windows on which the executable file can run. Most commonly, this option ensures that the executable file can leverage particular security features that aren’t available with older versions of Windows.  

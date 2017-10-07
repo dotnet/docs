@@ -1,43 +1,16 @@
 ---
 title: "&lt;see&gt; (C# Programming Guide)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
-ms.technology: 
-  - "devlang-csharp"
-
+ms.technology: ["devlang-csharp"]
 ms.topic: "article"
-f1_keywords: 
-  - "<see>"
-  - "see"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "cref [C#], <see> tag"
-  - "<see> C# XML tag"
-  - "cross-references [C#]"
-  - "see C# XML tag"
+f1_keywords: ["<see>", "see"]
+dev_langs: ["CSharp"]
+helpviewer_keywords: ["cref [C#], <see> tag", "<see> C# XML tag", "cross-references [C#]", "see C# XML tag"]
 ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;see&gt; (C# Programming Guide)
 ## Syntax  

@@ -5,36 +5,14 @@ ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-
+ms.technology: ["devlang-visual-basic"]
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "binary files, reading from"
-  - "I/O [Visual Basic], reading from binary files"
-  - "ReadAllBytes method, reading from binary files"
-  - "My.Computer.FileSystem object, reading from binary files"
+dev_langs: ["VB"]
+helpviewer_keywords: ["binary files, reading from", "I/O [Visual Basic], reading from binary files", "ReadAllBytes method, reading from binary files", "My.Computer.FileSystem object, reading from binary files"]
 ms.assetid: d2b1269e-24b6-42e0-9414-ae708db282d8
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Read From Binary Files in Visual Basic
 The `My.Computer.FileSystem` object provides the `ReadAllBytes` method for reading from binary files.  

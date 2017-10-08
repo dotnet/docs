@@ -7,8 +7,7 @@
 ## [Common client side web technologies](common-client-side-web-technologies.md)
 ## [Develop ASP.NET Core MVC Apps](develop-asp-net-core-mvc-apps.md)
 ## [Work with data in asp](work-with-data-in-asp-net-core-apps.md.md)
+## [Test ASP.NET Core MVC Apps](test-asp-net-core-mvc-apps.md)
+## [Development process for azure](development-process-for-azure.md)
 
-
-# [testing asp](testing-asp/)
-# [development process for azure](development-process-for-azure/)
 # [azure hosting recommendations for asp](azure-hosting-recommendations-for-asp/)

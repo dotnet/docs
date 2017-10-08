@@ -5,9 +5,10 @@
 ## [Architectural principles](architectural-principles.md)
 ## [Common web application architectures](common-web-application-architectures.md)
 ## [Common client side web technologies](common-client-side-web-technologies.md)
-## [Develop ASP.NET Core MVC Apps](develop-asp-net-core-mvc-apps)
+## [Develop ASP.NET Core MVC Apps](develop-asp-net-core-mvc-apps.md)
+## [Work with data in asp](work-with-data-in-asp.md)
 
-# [working with data in asp](working-with-data-in-asp/)
+
 # [testing asp](testing-asp/)
 # [development process for azure](development-process-for-azure/)
 # [azure hosting recommendations for asp](azure-hosting-recommendations-for-asp/)

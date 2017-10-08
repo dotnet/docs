@@ -163,4 +163,4 @@ JavaScript frameworks continue to evolve with breakneck speed. Use the considera
 
 >[!div class="step-by-step"]
 [Previous] (common-web-application-architectures.md)
-[Next] (../developing-asp/index.md)
+[Next] (develop-asp-net-core-mvc-apps.md)

@@ -9,5 +9,4 @@
 ## [Work with data in asp](work-with-data-in-asp-net-core-apps.md.md)
 ## [Test ASP.NET Core MVC Apps](test-asp-net-core-mvc-apps.md)
 ## [Development process for azure](development-process-for-azure.md)
-
-# [azure hosting recommendations for asp](azure-hosting-recommendations-for-asp/)
+## [Azure hosting recommendations for ASP.NET web apps](azure-hosting-recommendations-for-asp-net-web-apps.md)

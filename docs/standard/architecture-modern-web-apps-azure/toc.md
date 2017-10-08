@@ -6,7 +6,7 @@
 ## [Common web application architectures](common-web-application-architectures.md)
 ## [Common client side web technologies](common-client-side-web-technologies.md)
 ## [Develop ASP.NET Core MVC Apps](develop-asp-net-core-mvc-apps.md)
-## [Work with data in asp](work-with-data-in-asp.md)
+## [Work with data in asp](work-with-data-in-asp-net-core-apps.md.md)
 
 
 # [testing asp](testing-asp/)

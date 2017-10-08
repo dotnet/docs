@@ -554,4 +554,4 @@ If you're hosting your application on Azure, you can use Microsoft Azure Applica
 
 >[!div class="step-by-step"]
 [Previous] (common-client-side-web-technologies.md)
-[Next] (working-with-data-in-asp/index.md)
+[Next] (work-with-data-in-asp-net-core-apps.md)

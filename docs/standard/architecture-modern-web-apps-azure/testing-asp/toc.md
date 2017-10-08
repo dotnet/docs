@@ -1,7 +1,0 @@
-# [testing asp](index.md)
-## [Summary](summary.md)
-## [Kinds of Automated Tests](kinds-of-automated-tests.md)
-## [Organizing Test Projects](organizing-test-projects.md)
-## [Unit Testing ASP.NET Core Apps](unit-testing-asp.net-core-apps.md)
-## [Integration Testing ASP.NET Core Apps](integration-testing-asp.net-core-apps.md)
-## [Functional Testing ASP.NET Core Apps](functional-testing-asp.net-core-apps.md)

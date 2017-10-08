@@ -2,7 +2,7 @@
 title: Common web application architectures | Microsoft Docs 
 description: Architect modern web applications with ASP.NET Core and Microsoft Azure | common web application architectures
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ---

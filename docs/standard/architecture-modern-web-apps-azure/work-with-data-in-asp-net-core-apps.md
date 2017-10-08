@@ -2,7 +2,7 @@
 title: Work with data in ASP.NET Core Apps | Microsoft Docs 
 description: Architect Modern Web Applications with ASP.NET Core and Azure | working with data in asp
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
 ---

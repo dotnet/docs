@@ -2,7 +2,7 @@
 title: Azure hosting recommendations for ASP.NET Core web apps | Microsoft Docs 
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Azure hosting recommendations for ASP.NET web apps
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
 ---

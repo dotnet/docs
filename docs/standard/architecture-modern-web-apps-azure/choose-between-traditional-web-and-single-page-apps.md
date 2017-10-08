@@ -2,7 +2,7 @@
 title: Choose between traditional web apps and single page apps | Microsoft Docs 
 description: Architect modern web applications with ASP.NET Core and Microsoft Azure
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ---

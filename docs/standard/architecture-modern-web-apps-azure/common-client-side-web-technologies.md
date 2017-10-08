@@ -2,7 +2,7 @@
 title: Common client side web technologies | Microsoft Docs 
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client side web technologies
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
 ---

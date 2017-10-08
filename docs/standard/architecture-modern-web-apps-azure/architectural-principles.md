@@ -1,8 +1,8 @@
 ---
 title: Architectural principles | Microsoft Docs 
-description: Architecting Modern Web Applications with ASP.NET Core and Azure | Architectural principles
+description: Architect Modern Web Applications with ASP.NET Core and Azure | Architectural principles
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ---

@@ -2,7 +2,7 @@
 title: Developing ASP.NET Core MVC Apps | Microsoft Docs 
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/07/2017
 ---

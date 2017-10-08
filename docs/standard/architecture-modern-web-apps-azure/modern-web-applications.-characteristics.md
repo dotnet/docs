@@ -2,7 +2,7 @@
 title: Characteristics of modern web applications | Microsoft Docs 
 description: Architect Modern Web Applications with ASP.NET Core and Azure | characteristics of modern web applications
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
 ---
@@ -31,21 +31,21 @@ This guidance includes a reference application, *eShopOnWeb*, that demonstrates 
 
 ## Cloud-Hosted and Scalable
 
-ASP&period;NET Core is optimized for the cloud (public cloud, private cloud, any cloud) because it is low-memory and high-throughput. The smaller footprint of ASP&period;NET Core applications means you can host more of them on the same hardware, and you pay for fewer resources when using pay-as-you go cloud hosting services. The higher-throughput means you can serve more customers from an application given the same hardware, further reducing the need to invest in servers and hosting infrastructure.
+ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud) because it is low-memory and high-throughput. The smaller footprint of ASP.NET Core applications means you can host more of them on the same hardware, and you pay for fewer resources when using pay-as-you go cloud hosting services. The higher-throughput means you can serve more customers from an application given the same hardware, further reducing the need to invest in servers and hosting infrastructure.
 
 ## Cross Platform
 
-ASP&period;NET Core is cross-platform, and can run on Linux and MacOS as well as Windows. This opens up many new options for both development and deployment of apps built with ASP&period;NET Core. Docker containers, which typically run Linux today, can host ASP&period;NET Core applications, allowing them to take advantage of the benefits of containers and microservices (link to microservices and containers ebook).
+ASP.NET Core is cross-platform, and can run on Linux and MacOS as well as Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers, which typically run Linux today, can host ASP.NET Core applications, allowing them to take advantage of the benefits of containers and microservices (link to microservices and containers ebook).
 
 ## Modular and Loosely Coupled
 
-NuGet packages are first-class citizens in .NET Core, and ASP&period;NET Core apps are composed of many libraries through NuGet. This granularity of functionality helps ensure apps only depend on and deploy functionality they actually require, reducing their footprint and security vulnerability surface area.
+NuGet packages are first-class citizens in .NET Core, and ASP.NET Core apps are composed of many libraries through NuGet. This granularity of functionality helps ensure apps only depend on and deploy functionality they actually require, reducing their footprint and security vulnerability surface area.
 
-ASP&period;NET Core also fully supports dependency injection, both internally and at the application level. Interfaces can have multiple implementations that can be swapped out as needed. Dependency injection allows apps to loosely couple to those interfaces, making them easier to extend, maintain, and test.
+ASP.NET Core also fully supports dependency injection, both internally and at the application level. Interfaces can have multiple implementations that can be swapped out as needed. Dependency injection allows apps to loosely couple to those interfaces, making them easier to extend, maintain, and test.
 
 ## Easily Tested with Automated Tests
 
-ASP&period;NET Core applications support unit testing, and their loose coupling and support for dependency injections makes it easy to swap infrastructure concerns with fake implementations for test purposes. ASP&period;NET Core also ships a TestServer that can be used to host apps in memory. Functional tests can then make requests to this in-memory server, exercising the full application stack (including middleware, routing, model binding, filters, etc.) and receiving a response, all in a fraction of the time it would take to host the app on a real server and make requests through the network layer. These tests are especially easy to write, and valuable, for APIs, which are increasingly important in modern web applications.
+ASP.NET Core applications support unit testing, and their loose coupling and support for dependency injections makes it easy to swap infrastructure concerns with fake implementations for test purposes. ASP.NET Core also ships a TestServer that can be used to host apps in memory. Functional tests can then make requests to this in-memory server, exercising the full application stack (including middleware, routing, model binding, filters, etc.) and receiving a response, all in a fraction of the time it would take to host the app on a real server and make requests through the network layer. These tests are especially easy to write, and valuable, for APIs, which are increasingly important in modern web applications.
 
 ## Traditional and SPA Behaviors Supported
 
@@ -53,22 +53,22 @@ Traditional web applications have involved little client-side behavior, but inst
 
 Single Page Applications (SPAs), by contrast, involve very few dynamically generated server-side page loads (if any). Many SPAs are initialized within a static HTML file which loads the necessary JavaScript libraries to start and run the app. These apps make heavy usage of web APIs for their data needs, and can provide much richer user experiences.
 
-Many web applications involve a combination of traditional web application behavior (typically for content) and SPAs (for interactivity). ASP&period;NET Core supports both MVC and web APIs in the same application, using the same set of tools and underlying framework libraries.
+Many web applications involve a combination of traditional web application behavior (typically for content) and SPAs (for interactivity). ASP.NET Core supports both MVC and web APIs in the same application, using the same set of tools and underlying framework libraries.
 
 ## Simple Development and Deployment
 
-ASP&period;NET Core applications can be written using simple text editors and command line interfaces, or full-featured development environments like Visual Studio. Monolithic applications are typically deployed to a single endpoint. Deployments can easily be automated to occur as part of a continuous integration (CI) and continuous delivery (CD) pipeline. In addition to traditional CI/CD tools, Windows Azure has integrated support for git repositories and can automatically deploy updates as they are made to a specified git branch or tag.
+ASP.NET Core applications can be written using simple text editors and command line interfaces, or full-featured development environments like Visual Studio. Monolithic applications are typically deployed to a single endpoint. Deployments can easily be automated to occur as part of a continuous integration (CI) and continuous delivery (CD) pipeline. In addition to traditional CI/CD tools, Windows Azure has integrated support for git repositories and can automatically deploy updates as they are made to a specified git branch or tag.
 
 ## Traditional ASP.NET and Web Forms
 
 In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust and reliable platform for building web applications. ASP.NET supports MVC and Web API development models, as well as Web Forms, which is well-suited to rich page-based application development and features a rich third-party component ecosystem. Windows Azure has great longstanding support for ASP.NET 4.x applications, and many developers are familiar with this platform.
 
 > ### References – Modern Web Applications
-> - **Introduction to ASP&period;NET Core**  
+> - **Introduction to ASP.NET Core**  
 > <https://docs.microsoft.com/en-us/aspnet/core/>
-> - **Six Key Benefits of ASP&period;NET Core which make it Different and Better**  
+> - **Six Key Benefits of ASP.NET Core which make it Different and Better**  
 > <http://www.trigent.com/blog/six-key-benefits-of-asp-net-core-1-0-which-make-it-different-better/>
-> - **Testing in ASP&period;NET Core**  
+> - **Testing in ASP.NET Core**  
 > <https://docs.microsoft.com/en-us/aspnet/core/testing/>
 
 >[!div class="step-by-step"]

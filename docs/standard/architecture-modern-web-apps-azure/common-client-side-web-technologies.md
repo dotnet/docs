@@ -1,12 +1,43 @@
 ---
-title: JavaScript | Microsoft Docs 
-description: .NET Microservices Architecture for Containerized .NET Applications | JavaScript
+title: Common client side web technologies | Microsoft Docs 
+description: Architecting Modern Web Applications with ASP.NET Core and Azure | common client side web technologies
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 10/07/2017
 ---
-# JavaScript
+# Common Client Side Web Technologies
+
+> "Websites should look good from the inside and out."  
+> _- Paul Cookson_
+
+## Summary
+
+ASP.NET Core applications are web applications and they typically rely on client-side web technologies like HTML, CSS, and JavaScript. By separating the content of the page (the HTML) from its layout and styling (the CSS), and its behavior (via JavaScript), complex web apps can leverage the Separation of Concerns principle. Future changes to the structure, design, or behavior of the application can be made more easily when these concerns are not intertwined.
+
+While HTML and CSS are relatively stable, JavaScript, by means of the application frameworks and utilities developers work with to build web-based applications, is evolving at breakneck speed. This chapter looks at a few ways JavaScript is used by web developers as part of developing applications, as provides a high-level overview of the Angular and React client side libraries.
+
+## HTML
+
+HTML (HyperText Markup Language) is the standard markup language used to create web pages and web applications. Its elements form the building blocks of pages, representing formatted text, images, form inputs, and other structures. When a browser makes a request to a URL, whether fetching a page or an application, the first thing that is returned is an HTML document. This HTML document may reference or include additional information about its look and layout in the form of CSS, or behavior in the form of JavaScript.
+
+## CSS
+
+CSS (Cascading Style Sheets) is used to control the look and layout of HTML elements. CSS styles can be applied directly to an HTML element, defined separately on the same page, or defined in a separate file and referenced by the page. Styles cascade based on how they are used to select a given HTML element. For instance, a style might apply to an entire document, but would be overridden by a style that applied to a particular element. Likewise, an element-specific style would be overridden by a style that applied to a CSS class that was applied to the element, which in turn would be overridden by a style targeting a specific instance of that element (via its id). Figure 7-X
+
+**Figure 7-X.** CSS Specificity rules, in order.
+
+![](./media/image7-1.png)
+
+It's best to keep styles in their own separate stylesheet files, and to use selection-based cascading to implement consistent and reusable styles within the application. Placing style rules within HTML should be avoided, and applying styles to specific individual elements (rather than whole classes of elements, or elements that have had a particular CSS class applied to them) should be the exception, not the rule.
+
+### CSS Preprocessors
+
+CSS stylesheets lack support for conditional logic, variables, and other programming language features. Thus, large stylesheets often include a lot of repetition, as the same color, font, or other setting is applied to many different variations of HTML elements and CSS classes. CSS preprocessors can help your stylesheets follow the [DRY principle](http://deviq.com/don-t-repeat-yourself/) by adding support for variables and logic.
+
+The most popular CSS preprocessors are Sass and LESS. Both extend CSS and are backward compatible with it, meaning that a plain CSS file is a valid Sass or LESS file. Sass is Ruby-based and LESS is JavaScript based, and both typically run as part of your local development process. Both have command line tools available, as well as built-in support in Visual Studio for running them using Gulp or Grunt tasks.
+
+## JavaScript
 
 JavaScript is a dynamic, interpreted programming language that has been standardized in the ECMAScript language specification. It is the programming language of the web. Like CSS, JavaScript can be defined as attributes within HTML elements, as blocks of script within a page, or in separate files. Just like CSS, it's generally recommended to organize JavaScript into separate files, keeping it separated as much as possible from the HTML found on individual web pages or application views.
 
@@ -22,13 +53,13 @@ When working with JavaScript in your web application, there are a few tasks that
 
 You can perform all of these tasks with JavaScript alone, but many libraries exist to make these tasks easier. One of the first and most successful of these libraries is jQuery, which continues to be a popular choice for simplifying these tasks on web pages. For Single Page Applications (SPAs), jQuery doesn't provide many of the desired features that Angular and React offer.
 
-## Legacy Web Apps with jQuery
+### Legacy Web Apps with jQuery
 
 Although ancient by JavaScript framework standards, jQuery continues to be a very commonly used library for working with HTML/CSS and building applications that make AJAX calls to web APIs. However, jQuery operates at the level of the browser document object model (DOM), and by default offers only an imperative, rather than declarative, model.
 
 For example, imagine that if a textbox's value exceeds 10, an element on the page should be made visible. In jQuery, this would typically be implemented by writing an event handler with code that would inspect the textbox's value and set the visibility of the target element based on that value. This is an imperative, code-based approach. Another framework might instead use databinding to bind the visibility of the element to the value of the textbox declaratively. This would not require writing any code, but instead only requires decorating the elements involved with data binding attributes. As client side behaviors grow more complex, data binding approaches frequently result in simpler solutions with less code and conditional complexity.
 
-## jQuery vs a SPA Framework
+### jQuery vs a SPA Framework
 
 | **Factor** | **jQuery** | **Angular**|
 |--------------------------|------------|-------------|
@@ -43,7 +74,7 @@ Most of the features jQuery lacks intrinsically can be added with the addition o
 
 Data binding is a great example of this. In jQuery, it usually only takes one line of code to get the value of a DOM element, or to set an element's value. However, you have to write this code any time you need to change the value of the element, and sometimes this will occur in multiple functions on a page. Another common example is element visibility. In jQuery, there might be many different places where you would write code to control whether certain elements were visible. In each of these cases, when using data binding, no code would need to be written. You would simply bind the value or visibility of the element(s) in question to a *viewmodel* on the page, and changes to that viewmodel would automatically be reflected in the bound elements.
 
-## Angular SPAs
+### Angular SPAs
 
 AngularJS quickly became one of the world's most popular JavaScript frameworks. With Angular 2, the team rebuilt the framework from the ground up (using [TypeScript](https://www.typescriptlang.org/)) and rebranded from AngularJS to simply Angular. Currently on version 4, Angular continues to be a robust framework for building Single Page Applications.
 
@@ -68,7 +99,7 @@ Angular also makes great use of command line interface (CLI) tooling. Getting st
 
 Microsoft has developed a reference application, [eShopOnContainers](http://aka.ms/MicroservicesArchitecture), which includes an Angular SPA implementation. This app includes Angular modules to manage the online store's shopping basket, load and display items from its catalog, and handling order creation. You can view and download the sample application from [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA).
 
-## React
+### React
 
 Unlike Angular, which offers a full Model-View-Controller pattern implementation, React is only concerned with views. It's not a framework, just a library, so to build a SPA you'll need to leverage additional libraries.
 
@@ -88,7 +119,7 @@ If you already know JavaScript, learning React should be easy. There isn't nearl
 
 Because React isn't a full framework, you'll typically want other libraries to handle things like routing, web API calls, and dependency management. The nice thing is, you can pick the best library for each of these, but the disadvantage is that you need to make all of these decisions and verify all of your chosen libraries work well together when you're done. If you want a good starting point, you can use a starter kit like React Slingshot, which prepackages a set of compatible libraries together with React.
 
-## Choosing a SPA Framework
+### Choosing a SPA Framework
 
 When considering which JavaScript framework will work best to support your SPA, keep in mind the following considerations:
 
@@ -131,5 +162,5 @@ JavaScript frameworks continue to evolve with breakneck speed. Use the considera
 > <https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282>
 
 >[!div class="step-by-step"]
-[Previous] (css.md)
+[Previous] (common-web-application-architectures.md)
 [Next] (../developing-asp/index.md)

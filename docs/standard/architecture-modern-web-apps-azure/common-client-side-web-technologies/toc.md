@@ -1,5 +1,0 @@
-# [common client side web technologies](index.md)
-## [Summary](summary.md)
-## [HTML](html.md)
-## [CSS](css.md)
-## [JavaScript](javascript.md)

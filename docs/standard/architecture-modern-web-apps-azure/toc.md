@@ -4,8 +4,9 @@
 ## [Choose between traditional web apps and single page apps](choose-between-traditional-web-apps-and-single-page-apps.md)
 ## [Architectural principles](architectural-principles.md)
 ## [Common web application architectures](common-web-application-architectures.md)
+## [Common client side web technologies](common-client-side-web-technologies.md)
 
-# [common client side web technologies](common-client-side-web-technologies/)
+
 # [developing asp](developing-asp/)
 # [working with data in asp](working-with-data-in-asp/)
 # [testing asp](testing-asp/)

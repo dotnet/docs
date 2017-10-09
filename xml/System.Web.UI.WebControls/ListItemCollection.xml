@@ -45,14 +45,14 @@
 ## Examples  
  The following code example demonstrates creating <xref:System.Web.UI.WebControls.ListItemCollection> objects, adding items to the collections, and removing items from the collections. In the example, the <xref:System.Web.UI.WebControls.ListItemCollection> named `listBoxData` is used as the data source for a <xref:System.Web.UI.WebControls.ListBox> control called `ListBox1`, and the <xref:System.Web.UI.WebControls.ListItemCollection> called `ddBoxData` is used as the data source for a <xref:System.Web.UI.WebControls.DropDownList> control called `DropDownList1`.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListItemCollectionSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItemCollectionSample/CS/listitemcollection2cs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListItemCollectionSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItemCollectionSample/VB/listitemcollection2vb.aspx#4)]  -->  
+ [!code-aspx-csharp[ListItemCollectionSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItemCollectionSample/CS/listitemcollection2cs.aspx#4)]
+ [!code-aspx-vb[ListItemCollectionSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItemCollectionSample/VB/listitemcollection2vb.aspx#4)]  
   
- <!-- TODO: review snippet reference [!code-csharp[ListBoxMultiSelectExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListBoxMultiSelectExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListBoxMultiSelectExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#1)]
+ [!code-aspx-vb[ListBoxMultiSelectExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[ListBoxMultiSelectExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListBoxMultiSelectExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#3)]  -->  
+ [!code-aspx-csharp[ListBoxMultiSelectExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#3)]
+ [!code-aspx-vb[ListBoxMultiSelectExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#3)]  
   
  ]]></format>
     </remarks>
@@ -627,8 +627,8 @@
 ## Examples  
  The following code example demonstrates how to select multiple items from a <xref:System.Web.UI.WebControls.ListBox> control and add the selected items to a <xref:System.Web.UI.WebControls.DataGrid> control. The example uses a `foreach` loop to iterate through the <xref:System.Web.UI.WebControls.ListItem> objects in the <xref:System.Web.UI.WebControls.ListItemCollection> collection of the <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListBoxMultiSelectExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListBoxMultiSelectExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#3)]  -->  
+ [!code-aspx-csharp[ListBoxMultiSelectExample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxMultiSelectExample/CS/listitemcollectioncs.aspx#3)]
+ [!code-aspx-vb[ListBoxMultiSelectExample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxMultiSelectExample/VB/listitemcollectionvb.aspx#3)]  
   
  ]]></format>
         </remarks>

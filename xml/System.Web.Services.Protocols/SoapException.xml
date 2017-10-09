@@ -338,8 +338,8 @@
 ## Examples  
  The following Web Form example calls the `Math` XML Web service method, which throws an exception if a division by zero occurs. When the exception is thrown, the Web Form catches the exception and outputs the exception details, including the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> and <xref:System.Web.Services.Protocols.SoapException.Code%2A> properties, into an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic SoapException.Actor Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic SoapException.Actor Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic SoapException.Actor Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic SoapException.Actor Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  
   
  In order for the preceding Web Form to use the following `Math` Web Service example, a namespace of `MyMath` was specified during the creation of the proxy class.  
   
@@ -412,8 +412,8 @@
 ## Examples  
  The following Web Form example calls the `Math` Web Service method, which throws an exception if a division by zero occurs. Once the exception is thrown, the Web Form catches the exception and outputs the exception details, including the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> and <xref:System.Web.Services.Protocols.SoapException.Code%2A> properties into a <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[classic soapexception.actor example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[classic soapexception.actor example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[classic soapexception.actor example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[classic soapexception.actor example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.aspx#1)]  
   
  In order for the preceding Web Form to use the following `Math` XML Web service example, a namespace of `MyMath` was specified during the creation of the proxy class.  
   

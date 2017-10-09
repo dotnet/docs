@@ -55,13 +55,13 @@
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> element defines the query with a parameter named "@Title" where the value from `DropDownList1` should go. The <xref:System.Web.UI.WebControls.ControlParameter> element specifies that the "@Title" placeholder will be replaced by the value of the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the `DropDownList1` control. The <xref:System.Web.UI.WebControls.ControlParameter> element is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection of the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  
   
  The following example is like the previous one, but uses code instead of markup. When the page loads the first time, the <xref:System.Web.UI.WebControls.DropDownList> control has no selected value, and the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property of the <xref:System.Web.UI.WebControls.Parameter> object is used.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/CS/param1acs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/VB/param1avb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/CS/param1acs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Parameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter_3/VB/param1avb.aspx#1)]  
   
  The following code shows the code-behind class for the page in the previous example.  
   
@@ -286,8 +286,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Parameter.%23ctor%28System.String%2CSystem.TypeCode%2CSystem.String%29> constructor to add update parameter objects to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection of an <xref:System.Web.UI.WebControls.AccessDataSource> control before calling the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_22sql#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -486,8 +486,8 @@
   
  To view the example implementation of the `EmployeeLogic` class and the `GetEmployee` method, see the <xref:System.Web.UI.WebControls.ObjectDataSource> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/CS/objds3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_3/VB/objds3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -528,8 +528,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.Parameter.Direction%2A> properties of <xref:System.Web.UI.WebControls.Parameter> objects when using them as output parameters and return value parameters with a stored procedure. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -687,8 +687,8 @@
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -973,8 +973,8 @@
 ## Examples  
  The following code example demonstrates how to access various properties of a <xref:System.Web.UI.WebControls.Parameter> object, including its <xref:System.Web.UI.WebControls.Parameter.Name%2A> and <xref:System.Web.UI.WebControls.Parameter.Type%2A> properties.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/CS/parametertostringcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/VB/parametertostringvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/CS/parametertostringcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.Parameter.ToString_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Parameter.ToString_1/VB/parametertostringvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1031,8 +1031,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A>, <xref:System.Web.UI.WebControls.Parameter.Type%2A>, and <xref:System.Web.UI.WebControls.Parameter.Direction%2A> properties of <xref:System.Web.UI.WebControls.Parameter> objects when using them as output parameters and return value parameters with a stored procedure. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class overview.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  
   
  ]]></format>
         </remarks>

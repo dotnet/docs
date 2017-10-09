@@ -23,8 +23,8 @@
 ## Examples  
  The following code example gets an array of <xref:System.Web.Hosting.ApplicationInfo> objects from the <xref:System.Web.Hosting.ApplicationManager> object associated with the current process.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]
+ [!code-aspx-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  
   
  ]]></format>
     </remarks>

@@ -62,13 +62,13 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/DisplayModeMenuCS.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/DisplayModeMenuVB.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/DisplayModeMenuCS.ascx#5)]
+ [!code-aspx-vb[WebParts_LayoutEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/DisplayModeMenuVB.ascx#5)]  
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains declarative references to a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control. Note that the page also contains a <xref:System.Web.UI.WebControls.BulletedList> control that is bound to the Pubs database; because this control resides in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone, it functions as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that can be edited by the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#1)]
+ [!code-aspx-vb[WebParts_LayoutEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#1)]  
   
  When you load the page in a browser, you can select **Edit Mode** in the **Display Mode** drop-down list control to switch to edit mode. You can click the verbs menu (the downward arrow) in the title bar of the **Author List WebPart** control, and click **Edit** to begin editing. When the editing UI is visible, you can see the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control, and a button and text box positioned above it. If you make some changes in the editing UI and click the **Apply** button, you can use the **Display Mode** drop-down list control to return the page to browse mode and see the full effect of the editing changes.  
   
@@ -322,8 +322,8 @@
   
  The following code shows how to set the title on a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control declaratively in a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#2)]  -->  
+ [!code-aspx-csharp[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/CS/layouteditorpartcs.aspx#2)]
+ [!code-aspx-vb[WebParts_LayoutEditorPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_LayoutEditorPart_Overview/VB/layouteditorpartvb.aspx#2)]  
   
  The next part of the code example shows how to set the value of the <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart.Title%2A> property programmatically.  
   

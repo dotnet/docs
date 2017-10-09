@@ -108,8 +108,8 @@
 ## Examples  
  The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the delegate iterates through the trace messages and writes them to the response stream; however, you could write the same information to a database or a profiling tool consumer.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -141,8 +141,8 @@
 ## Examples  
  The following code example demonstrates how you can sort a page's trace statements alphabetically by the categories that you have assigned to the statements.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TraceContext.TraceMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TraceContext.TraceMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TraceContext.TraceMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TraceContext.TraceMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -240,8 +240,8 @@
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, different exceptions are traced as errors and warnings. When the page throws an <xref:System.ArgumentException>, it writes a warning message using the <xref:System.Web.TraceContext.Warn%2A> method. When the page throws an <xref:System.InvalidOperationException>, it writes an error message using the <xref:System.Web.TraceContext.Write%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -306,8 +306,8 @@
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, the delegate iterates through the trace messages and writes them as an HTML table; however, you can write the same information to a database or a profiling tool consumer.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_5/CS/form5cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_5/VB/form5vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_5/CS/form5cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_5/VB/form5vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -346,8 +346,8 @@
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, different exceptions are traced as errors and warnings. When the page throws an <xref:System.ArgumentException>, it writes a warning message using the <xref:System.Web.TraceContext.Warn%2A> method. When the page throws an <xref:System.InvalidOperationException>, it writes an error message using the <xref:System.Web.TraceContext.Write%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  
   
  ]]></format>
         </remarks>

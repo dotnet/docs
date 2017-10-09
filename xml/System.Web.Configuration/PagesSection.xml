@@ -219,10 +219,10 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  The following example shows the two forms of method signatures that are automatically attached to page events when <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `true`.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Configuration.PagesSection#50](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/Default.aspx#50)]  -->
+ [!code-aspx-csharp[System.Web.Configuration.PagesSection#50](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/Default.aspx#50)]
  [!code-csharp[System.Web.Configuration.PagesSection#50](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/Default2.aspx.cs#50)]
+ [!code-aspx-vb[System.Web.Configuration.PagesSection#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/Default.aspx#50)]
  [!code-vb[System.Web.Configuration.PagesSection#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/Default2.aspx.vb#50)]
- <!-- TODO: review snippet reference [!code-vb[System.Web.Configuration.PagesSection#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/Default.aspx#50)]  -->  
   
  The following example shows how to explicitly wire up events when <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `false`.  
   

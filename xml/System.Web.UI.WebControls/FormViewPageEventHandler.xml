@@ -36,13 +36,13 @@
 ## Examples  
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventHandler/CS/formviewpageeventhandlercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventHandler/VB/formviewpageeventhandlervb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventHandler/CS/formviewpageeventhandlercs.aspx#1)]
+ [!code-aspx-vb[FormViewPageEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventHandler/VB/formviewpageeventhandlervb.aspx#1)]  
   
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]
+ [!code-aspx-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>

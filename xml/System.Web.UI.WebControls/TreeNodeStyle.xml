@@ -50,8 +50,8 @@
 ## Examples  
  The following code example demonstrates how to control the appearance of the parent nodes in the <xref:System.Web.UI.WebControls.TreeView> control by setting the style properties of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object that is returned from the <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -138,8 +138,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding%2A> property to specify the space above and below the child nodes section of a parent node.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -180,8 +180,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyle.CopyFrom%2A> method to copy the style properties of the specified <xref:System.Web.UI.WebControls.Style> object into the <xref:System.Web.UI.WebControls.TreeNodeStyle> object that calls this method. Notice that every style property is replaced.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyleCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyleCopyFrom/CS/treenodestylecopyfromcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyleCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyleCopyFrom/VB/treenodestylecopyfromvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyleCopyFrom#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyleCopyFrom/CS/treenodestylecopyfromcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyleCopyFrom#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyleCopyFrom/VB/treenodestylecopyfromvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -246,8 +246,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyle.HorizontalPadding%2A> property to control the horizontal space around the text of a node.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -330,8 +330,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyle.MergeWith%2A> method to combine the style properties of the specified <xref:System.Web.UI.WebControls.Style> object with those of the <xref:System.Web.UI.WebControls.TreeNodeStyle> object that calls this method. Notice that only the unset <xref:System.Web.UI.WebControls.TreeNodeStyle> properties are replaced.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyleMergeWith#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyleMergeWith/CS/treenodestylemergewithcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyleMergeWith#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyleMergeWith/VB/treenodestylemergewithvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyleMergeWith#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyleMergeWith/CS/treenodestylemergewithcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyleMergeWith#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyleMergeWith/VB/treenodestylemergewithvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -375,8 +375,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing%2A> property to specify the vertical spacing between a node and its adjacent nodes at the same level in the tree.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -409,8 +409,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyle.Reset%2A> method to return the <xref:System.Web.UI.WebControls.TreeNodeStyle> object to its default state.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyleMergeWith#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyleMergeWith/CS/treenodestylemergewithcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyleMergeWith#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyleMergeWith/VB/treenodestylemergewithvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyleMergeWith#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyleMergeWith/CS/treenodestylemergewithcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyleMergeWith#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyleMergeWith/VB/treenodestylemergewithvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -452,8 +452,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding%2A> property to specify the vertical space around the text of a node.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeStyle/CS/treenodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeStyle/VB/treenodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>

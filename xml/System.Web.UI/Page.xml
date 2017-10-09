@@ -60,15 +60,15 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_Overview/cs/pageexample.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_Overview/vb/pageexample.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_Overview/cs/pageexample.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_Overview/vb/pageexample.aspx#1)]  
   
  You must use the  directive and use the `Inherits` and `CodeFile` attributes to link the code-behind file to the .aspx file. In this example, the `Inherits` attribute indicates the `MyCodeBehind` class and the `CodeFile` attribute indicates the path to the language-specific file that contains the class.  
   
  The following code example demonstrates the single-file page model and how to access the <xref:System.Web.UI.Page.IsPostBack%2A> property and the <xref:System.Web.UI.Page.Response%2A> property of the <xref:System.Web.UI.Page>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page_Overview2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_Overview2/cs/pageexample.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page_Overview2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_Overview2/vb/pageexample.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page_Overview2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_Overview2/cs/pageexample.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page_Overview2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_Overview2/vb/pageexample.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -167,8 +167,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]
+ [!code-aspx-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -224,8 +224,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]
+ [!code-aspx-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -537,8 +537,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.Page.AsyncTimeout%2A> property with the <xref:System.Web.UI.Page.ExecuteRegisteredAsyncTasks%2A> and <xref:System.Web.UI.Page.RegisterAsyncTask%2A> methods. Note the use of beginning, ending, and time-out handlers. In the example, an artificial delay is introduced to demonstrate the situation of an asynchronous task exceeding the allotted time for the task as specified in the <xref:System.Web.UI.Page.AsyncTimeout%2A> property. In a real-world scenario, an asynchronous task could be used to perform database calls or image generation, for example, and the time-out handler provides graceful degradation if the task is not performed in a specified amount of time. Note that the <xref:System.Web.UI.Page.AsyncTimeout%2A> property is set in the page directive.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.aspx#1)]  
   
  [!code-csharp[System.Web.UI.Page.AsyncTimeout#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.cs#2)]
  [!code-vb[System.Web.UI.Page.AsyncTimeout#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.vb#2)]  
@@ -1274,8 +1274,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.Page.AsyncTimeout%2A> property with the <xref:System.Web.UI.Page.ExecuteRegisteredAsyncTasks%2A> and <xref:System.Web.UI.Page.RegisterAsyncTask%2A> methods. Note the use of beginning, ending, and time-out handlers. In the example, an artificial delay is introduced to demonstrate the situation of an asynchronous task exceeding the allotted time for the task as specified in the <xref:System.Web.UI.Page.AsyncTimeout%2A> property. In a real-world scenario, an asynchronous task could be used to perform database calls or image generation, for example, and the time-out handler provides graceful degradation if the task is not performed in a specified amount of time.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.aspx#1)]  
   
  [!code-csharp[System.Web.UI.Page.AsyncTimeout#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.cs#2)]
  [!code-vb[System.Web.UI.Page.AsyncTimeout#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.vb#2)]  
@@ -1350,8 +1350,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.Page.FindControl%2A> method to locate controls inside templates. In this example, two <xref:System.Web.UI.WebControls.Repeater> controls are defined; each shows a different way to catch the <xref:System.Web.UI.WebControls.LinkButton.Click> event of a <xref:System.Web.UI.WebControls.LinkButton> inside the repeater item template.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page_FindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_FindControl/cs/pagefindcontrolcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page_FindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_FindControl/vb/pagefindcontrolvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page_FindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_FindControl/cs/pagefindcontrolcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page_FindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_FindControl/vb/pagefindcontrolvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1734,8 +1734,8 @@
 ## Examples  
  The following code example demonstrates how to access the <xref:System.Web.UI.HtmlControls.HtmlHead> control programmatically using the <xref:System.Web.UI.Page.Header%2A> property. A `title` element and `style` element are added to the `head` element of the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/CS/htmlheadclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/VB/htmlheadclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/CS/htmlheadclasscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/VB/htmlheadclassvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2098,8 +2098,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.Page.RegisterClientScriptBlock%2A> method in conjunction with the <xref:System.Web.UI.Page.IsClientScriptBlockRegistered%2A> method. If the ECMAScript written in the code declaration block has not already been registered, as determined by <xref:System.Web.UI.Page.IsClientScriptBlockRegistered%2A>, then a <xref:System.Web.UI.Page.RegisterClientScriptBlock%2A> call is made.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2269,8 +2269,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.Page.RegisterStartupScript%2A> method in conjunction with the <xref:System.Web.UI.Page.IsStartupScriptRegistered%2A> method. If the ECMAScript written in the code declaration block has not already been registered, as determined by <xref:System.Web.UI.Page.IsStartupScriptRegistered%2A>, then a <xref:System.Web.UI.Page.RegisterStartupScript%2A> call is made.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3267,11 +3267,11 @@
 ## Examples  
  The following example is in two parts. The first is an ASP.NET page that uses the <xref:System.Web.HttpServerUtility.Transfer%2A> method, exposed in the page model as `Server.Transfer("path")`. The second part is the target page, which uses the <xref:System.Web.UI.Page.PreviousPage%2A> property to get the title of the first page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.PreviousPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/CS/Main.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.PreviousPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/VB/Main.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.PreviousPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/CS/Main.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.PreviousPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/VB/Main.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.PreviousPage#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/CS/Notify.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.PreviousPage#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/VB/Notify.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.PreviousPage#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/CS/Notify.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.Page.PreviousPage#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.PreviousPage/VB/Notify.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -3437,8 +3437,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.Page.AsyncTimeout%2A> property with the <xref:System.Web.UI.Page.ExecuteRegisteredAsyncTasks%2A> and <xref:System.Web.UI.Page.RegisterAsyncTask%2A> methods. Note the use of beginning, ending, and time-out handlers. In the example, an artificial delay is introduced to demonstrate the situation of an asynchronous task exceeding the allotted time for the task as specified in the <xref:System.Web.UI.Page.AsyncTimeout%2A> property. In a real-world scenario, an asynchronous task could be used to perform database calls or image generation, for example, and the time-out handler provides graceful degradation if the task is not performed in a specified amount of time.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.AsyncTimeout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.aspx#1)]  
   
  [!code-csharp[System.Web.UI.Page.AsyncTimeout#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/CS/page_asynctask.cs#2)]
  [!code-vb[System.Web.UI.Page.AsyncTimeout#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.AsyncTimeout/vb/page_asynctask.vb#2)]  
@@ -3496,8 +3496,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.Page.RegisterClientScriptBlock%2A> method in conjunction with the <xref:System.Web.UI.Page.IsClientScriptBlockRegistered%2A> method. If the ECMAScript in the code declaration block has not already been registered, as determined by <xref:System.Web.UI.Page.IsClientScriptBlockRegistered%2A>, the <xref:System.Web.UI.Page.RegisterClientScriptBlock%2A> call is made.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3760,8 +3760,8 @@
 ## Examples  
  The following code example demonstrates setting the view-state encryption mode for a <xref:System.Web.UI.Page> object and requesting encryption of the view state through <xref:System.Web.UI.Page.RegisterRequiresViewStateEncryption%2A>. In this example, view state will be encrypted when customer information is retrieved from a database.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/CS/encryptViewState.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/VB/encryptViewState.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/CS/encryptViewState.cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.ViewStateEncryptionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ViewStateEncryptionMode/VB/encryptViewState.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -3816,8 +3816,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.Page.RegisterStartupScript%2A> method in conjunction with the <xref:System.Web.UI.Page.IsStartupScriptRegistered%2A> method. If the ECMAScript written in the code declaration block has not already been registered, as determined by the <xref:System.Web.UI.Page.IsStartupScriptRegistered%2A> method, then a <xref:System.Web.UI.Page.RegisterStartupScript%2A> call is made.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/CS/defaultcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.RegisterClientScriptBlock#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.RegisterClientScriptBlock/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4272,8 +4272,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[PageSetFocus#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageSetFocus/CS/setfocusbyidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[PageSetFocus#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageSetFocus/VB/setfocusbyidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[PageSetFocus#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageSetFocus/CS/setfocusbyidcs.aspx#1)]
+ [!code-aspx-vb[PageSetFocus#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageSetFocus/VB/setfocusbyidvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -4322,8 +4322,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[PageSetFocus#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PageSetFocus/CS/setfocusbycontrolcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[PageSetFocus#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageSetFocus/VB/setfocusbycontrolvb.aspx#2)]  -->  
+ [!code-aspx-csharp[PageSetFocus#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PageSetFocus/CS/setfocusbycontrolcs.aspx#2)]
+ [!code-aspx-vb[PageSetFocus#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageSetFocus/VB/setfocusbycontrolvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -5095,8 +5095,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.Validate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/cs/pagevalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.Validate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/vb/pagevalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.Validate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/cs/pagevalidatecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.Validate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/vb/pagevalidatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -5141,8 +5141,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Page.Validate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/cs/pagevalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Page.Validate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/vb/pagevalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Page.Validate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/cs/pagevalidatecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Page.Validate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/vb/pagevalidatevb.aspx#1)]  
   
  ]]></format>
         </remarks>

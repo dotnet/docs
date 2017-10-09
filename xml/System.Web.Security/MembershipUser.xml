@@ -38,8 +38,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  
   
  ]]></format>
     </remarks>
@@ -176,8 +176,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordcs.aspx#8)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordvb.aspx#8)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordcs.aspx#8)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordvb.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -236,8 +236,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordQuestioncs.aspx#9)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordQuestionvb.aspx#9)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ChangePasswordQuestioncs.aspx#9)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ChangePasswordQuestionvb.aspx#9)]  
   
  ]]></format>
         </remarks>
@@ -307,8 +307,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.CreationDate%2A> property for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -335,8 +335,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.Email%2A> property for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -382,8 +382,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepassword2cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepassword2vb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepassword2cs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepassword2vb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -433,8 +433,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepasswordcs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepasswordvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/retrievepasswordcs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/retrievepasswordvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -529,8 +529,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.IsOnline%2A> property value for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -570,8 +570,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.LastActivityDate%2A> property value for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -636,8 +636,8 @@
 ## Examples  
  The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for the selected user name, including the <xref:System.Web.Security.MembershipUser.LastLoginDate%2A> property value for the membership user.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -672,8 +672,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/login2cs.aspx#7)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/login2vb.aspx#7)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/login2cs.aspx#7)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/login2vb.aspx#7)]  
   
  ]]></format>
         </remarks>
@@ -708,8 +708,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -799,8 +799,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPassword2cs.aspx#6)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPassword2vb.aspx#6)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPassword2cs.aspx#6)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPassword2vb.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -846,8 +846,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUser#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUser/CS/ResetPasswordcs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.MembershipUser#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUser/VB/ResetPasswordvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -937,8 +937,8 @@
 ## Examples  
  The following code example binds the <xref:System.Web.Security.MembershipUser.UserName%2A> property of all the membership users in an application to a <xref:System.Web.UI.WebControls.ListBox> control and uses labels to show specific membership information for a selected user name.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  
   
  ]]></format>
         </remarks>

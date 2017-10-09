@@ -41,13 +41,13 @@
   
  The following code example demonstrates how to populate a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object declaratively. For this example to work correctly, you must copy the XML data that is located at the end of this section to a file called Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewXml#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewXml/CS/treeviewxmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewXml#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewXml/VB/treeviewxmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewXml#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewXml/CS/treeviewxmlcs.aspx#1)]
+ [!code-aspx-vb[TreeViewXml#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewXml/VB/treeviewxmlvb.aspx#1)]  
   
  The following code example demonstrates how to populate a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object programmatically. For this example to work correctly, you must copy the sample XML data that is located at the end of this section to a file called Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCtor/CS/treeviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCtor/VB/treeviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCtor/CS/treeviewctorcs.aspx#1)]
+ [!code-aspx-vb[TreeViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCtor/VB/treeviewctorvb.aspx#1)]  
   
  The following is the XML data for the preceding code examples.  
   
@@ -102,8 +102,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Add%2A> method to add a new <xref:System.Web.UI.WebControls.TreeNodeBinding> object programmatically to a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object. For this example to work correctly, you must copy the XML data that is located at the end of this section to a file called Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeBindingCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/CS/treenodebindingcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeBindingCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/VB/treenodebindingcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeBindingCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/CS/treenodebindingcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeBindingCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/VB/treenodebindingcollectionaddvb.aspx#1)]  
   
  The following is the XML data for the preceding code example.  
   
@@ -192,8 +192,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection to an array.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeBindingCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionCopyTo/CS/treenodebindingcollectioncopytocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeBindingCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionCopyTo/VB/treenodebindingcollectioncopytovb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeBindingCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionCopyTo/CS/treenodebindingcollectioncopytocs.aspx#1)]
+ [!code-aspx-vb[TreeNodeBindingCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionCopyTo/VB/treenodebindingcollectioncopytovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -305,8 +305,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert%2A> method to insert a new <xref:System.Web.UI.WebControls.TreeNodeBinding> object programmatically into a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object. For this example to work correctly, you must copy the XML data that is located at the end of this section to a file called Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeBindingCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/CS/treenodebindingcollectioninsertcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeBindingCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/VB/treenodebindingcollectioninsertvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeBindingCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/CS/treenodebindingcollectioninsertcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeBindingCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/VB/treenodebindingcollectioninsertvb.aspx#1)]  
   
  The following is the XML data for the preceding code example.  
   
@@ -362,8 +362,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Item%2A> indexer to access the items that are in a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object. The <xref:System.Web.UI.WebControls.TreeNodeBinding> object for the third-level nodes is updated programmatically with new values. For this example to work correctly, you must copy the XML data that is located at the end of this section to a file called Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeBindingCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionIndexer/CS/treenodebindingcollectionindexercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeBindingCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionIndexer/VB/treenodebindingcollectionindexervb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeBindingCollectionIndexer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionIndexer/CS/treenodebindingcollectionindexercs.aspx#1)]
+ [!code-aspx-vb[TreeNodeBindingCollectionIndexer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionIndexer/VB/treenodebindingcollectionindexervb.aspx#1)]  
   
  The following is the XML data for the preceding code example.  
   
@@ -482,8 +482,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove%2A> method to remove a <xref:System.Web.UI.WebControls.TreeNodeBinding> object programmatically from a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object. For this example to work correctly, you must copy the XML data that is located at the end of this section to a file called Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeBindingCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/CS/treenodebindingcollectionaddcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeBindingCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/VB/treenodebindingcollectionaddvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeBindingCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/CS/treenodebindingcollectionaddcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeBindingCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionAdd/VB/treenodebindingcollectionaddvb.aspx#1)]  
   
  The following is the XML data for the preceding code example.  
   
@@ -540,8 +540,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt%2A> method to remove a <xref:System.Web.UI.WebControls.TreeNodeBinding> object programmatically from a <xref:System.Web.UI.WebControls.TreeNodeBindingCollection> object. For this example to work correctly, you must copy the XML data that is located at the end of this section to a file called Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeBindingCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/CS/treenodebindingcollectioninsertcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeBindingCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/VB/treenodebindingcollectioninsertvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeBindingCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/CS/treenodebindingcollectioninsertcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeBindingCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeBindingCollectionInsert/VB/treenodebindingcollectioninsertvb.aspx#1)]  
   
  The following is the XML data for the preceding code example.  
   

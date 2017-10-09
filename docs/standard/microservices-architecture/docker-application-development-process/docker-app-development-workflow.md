@@ -178,7 +178,7 @@ You can find the existing images in your local repository by using the docker im
 
 When you are using Visual Studio to create a project with Docker support, you do not explicitly create an image. Instead, the image is created for you when you press F5 and run the dockerized application or service. This step is automatic in Visual Studio, and you will not see it happen, but it is important that you know what is going on underneath.
 
-!(./media/image10.png){width="0.8in" height="0.8in"}
+![](./media/image10.png)
 
 ## Step 4. Define your services in docker-compose.yml when building a multi-container Docker application
 
